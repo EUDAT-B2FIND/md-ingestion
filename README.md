@@ -1,4 +1,5 @@
-Disclaimer: 
+Disclaimer
+----------
 Copyright (c) 2013 Heinrich Widmann (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -12,13 +13,13 @@ THE SOFTWARE.
 md-ingestion
 ============
 
-The python scripts in this directory provide functionality required for
+The python script eudat_jmd_manager.py in this directory provide functionality required for
 ingestion (including OAI harvesting, semantic mapping (see repo 'md-mapping') and uploading to CKAN ) of metadata in the B2FIND portal.
 
 Preconditions
 =============
 
-The sript uses the classes and functions from
+The sript eudat_jmd_manager.py uses the classes and functions from
 
 """EUDAT_JMD.py - classes for JMD management :
   - CKAN_CLIENT  Executes CKAN APIs (interface to CKAN)
@@ -37,11 +38,11 @@ or on systems with no apt-get but yum available :
 
 Usage
 =====
-
 eudat_jmd_manager.py [ OPTIONS ]
 
 
-Description :
+Description
+-----------
 Management of meta data within EUDAT Joint Metadata Domain (JMD), i.e.
 I.  Ingestion of meta data comprising
 - 1. Harvesting of XML files from OAI-PMH MD provider(s)
@@ -105,10 +106,8 @@ These options will be required to upload an dataset to a CKAN database.
 --auth=STRING           Authentification for CKAN APIs (API key, iby default
                         taken from file $HOME/.netrc)
 
-                        
-
-
 Authors
+=======
 
 The Python code were developed by Heinrich Widmann and John Mrziglod (both DKRZ),
 (while the mappimg used was developed by Lari Lampen (MPI-PL)) , before importing into GitHub.
