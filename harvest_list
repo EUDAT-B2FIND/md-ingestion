@@ -1,0 +1,92 @@
+##+++ List of sources for EUDAT JMD ingestion (see script eudat_jmd_manager.py)
+##+++   All lines that are specifiing sources by 
+##+++       - their community
+##+++       - OAI URL (harvest entry point), 
+##+++       - the harvest request (verb: ListIdentifiers or ListRecords),
+##+++       - the MD format or metadataPrefix and
+##+++       - optional the OAI sub set
+##+++    and that are _NOT_ commented out (by # at beginning of source line or 
+##+++                      <# ...\n\n > for multi lines) 
+##+++    will be harvested, converted or/and uploaded by the JMD manager
+##+++    depending on the given mode (option --mode [h|c|u] )
+###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+## community         OAI URL                                verb           metadataPrefix  set
+## -----------------------------------------------------------------------------------
+##%%% ENES : MD Provider c3grid.dkrz.de
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords      iso	iso-wdcc
+##enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-wdcc-doi
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-gkss
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-uni-hh
+##%%% CLARIN CMDI : MD Provider MPI-PL 
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2       ListIdentifiers cmdi
+##%%% CLARIN DC : MD Provider Meertens institute
+clarin	http://www.meertens.knaw.nl/oai/oai_server.php	ListRecords	oai_dc    diddd
+clarin	http://www.meertens.knaw.nl/oai/oai_server.php	ListRecords	oai_dc    sand
+clarin	http://www.meertens.knaw.nl/oai/oai_server.php	ListRecords	oai_dc    heiloo
+clarin	http://www.meertens.knaw.nl/oai/oai_server.php	ListRecords	oai_dc    gtrp
+clarin	http://www.meertens.knaw.nl/oai/oai_server.php	ListRecords	oai_dc    soundbites
+clarin	http://www.meertens.knaw.nl/oai/oai_server.php	ListRecords	oai_dc    liederenbank
+##%%% CLARIN DC : MD Provider CSC !!! Not tested yet !!!
+#clarin  http://metalb.csc.fi/cgi-bin/que    ListIdentifiers olac
+##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
+gbif http://metadata.gbif.org/catalogue/OAIHandler ListIdentifiers eml
+##%%% EUDAT B2SHARE :
+b2share  https://b2share.eudat.eu/oai2d            ListIdentifiers marcxml
+##%%% DataCite : MD Provider is the DataCite.org 
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  TIB.WDCC
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  BL
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE-1
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE-2
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE-5
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE-6
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE-8
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE-9
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE10
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE11
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE12
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE16
+datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE22
+##%%% PANdata, harvested from datacite OAI, subset BL.STFC (only ISIS records)
+pandata   http://oai.datacite.org/oai  ListIdentifiers  oai_dc  BL.STFC
+##%%% CESSDA
+cessda      http://ddaonline.dda.dk/oai-pmh   ListIdentifiers  oai_ddi
+##cessda    http://nesstar.snd.gu.se/oai-pmh  ListIdentifiers  oai_ddi
+##cessda    http://nesstar.ucd.ie/oai-pmh     ListIdentifiers  oai_ddi 
+##cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi polsys 
+##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi hystat
+##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi edu
+##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quant
+##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi pubsys
+##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi docsys
+##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quali
+##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi school
+##%%% NARCIS
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc
+##%%% EISCAT
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc
+##%%% India OAI-URLS
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 1
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 2
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 3
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 4
+indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_1
+indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_2
+indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_3
+indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_4
+## AgInfra
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRGSG
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods OEEULSESTHONIAN
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods TRAGLOR
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods OEFAO
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods OEELLINOGERMANIKI
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods OEENOAT
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRFOODSAFETY
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRFAOERPTOOLKITPRIMSEC
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRFAOIMARK
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRAGRICOM
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRSEAE
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods EDUNHMC
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods FSKN
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRFAOCAPACITYPORTAL
+aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods DIGITALGREEN
