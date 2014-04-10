@@ -50,26 +50,105 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE22
 ##%%% PANdata, harvested from datacite OAI, subset BL.STFC (only ISIS records)
 pandata   http://oai.datacite.org/oai  ListIdentifiers  oai_dc  BL.STFC
 ##%%% CESSDA
-cessda      http://ddaonline.dda.dk/oai-pmh   ListIdentifiers  oai_ddi
+##cessda      http://ddaonline.dda.dk/oai-pmh   ListIdentifiers  oai_ddi
 ##cessda    http://nesstar.snd.gu.se/oai-pmh  ListIdentifiers  oai_ddi
 ##cessda    http://nesstar.ucd.ie/oai-pmh     ListIdentifiers  oai_ddi 
-##cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi polsys 
-##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi hystat
-##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi edu
-##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quant
-##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi pubsys
-##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi docsys
-##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quali
-##cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi school
+cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi polsys 
+cessda http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi hystat
+cessda http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi edu
+cessda http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quant
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi pubsys
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi docsys
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quali
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi school
 ##%%% NARCIS
-narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc
+#narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc thesis
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc oa_publication
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc ec_funded
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc resources
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
 ##%%% EISCAT
-eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc
+##eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:home:jaheikki
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:eiscat
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:enes:cmip5:output1:MPI-M:MPI-ESM-LR:rcp26:mon:ocean:Omon:r1i1p1:v20111119:wfo
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:120212:unprocessed:3T:rfMRI_REST1_LR
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:120212:unprocessed:3T:rfMRI_REST2_LR
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:120212:unprocessed:3T:tfMRI_EMOTION_LR
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:120212:unprocessed:3T:tfMRI_GAMBLING_LR
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:120212:unprocessed:3T:tfMRI_LANGUAGE_RL
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:125525:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:125525:T1w
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:125525:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:125525:.xdlm
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:128632:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:130013:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:137128:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:138231:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  ed-csc:rc:incf:HumanConnectome:Q1:142828:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:143325:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:144226:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:149337:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:150423:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:153429:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:156637:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:159239:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:161731:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:162329:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:167743:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:172332:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:182739:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:191437:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:192439:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:192540:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:194140:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:197550:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:199150:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:199251:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:200614:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:201111:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:210617:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:138231:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:142828:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:143325:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:144226:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:149337:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:150423:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:153429:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:156637:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:159239:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:161731:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:162329:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:167743:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:172332:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:182739:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:191437:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:192439:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:192540:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:194140:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:197550:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:199150:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:199251:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:200614:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:201111:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:210617:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:201111:MNINonLinear
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:210617:unprocessed:3T
+eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:incf:HumanConnectome:Q1:210617:MNINonLinear
+##eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:dixa:test
 ##%%% India OAI-URLS
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 1
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 2
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 3
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 4
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc E-LIS
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc LDL
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc CERES
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc DLIST
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc IFLA
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_1
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_2
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_3

@@ -44,17 +44,8 @@ def main():
 
     # check the version from svn:
     global ManagerVersion
-    ManagerVersion = '0.2.'
-    try:
-        text1 = Popen(["svn", "info", sys.argv[0]], stdout=PIPE).communicate()[0].splitlines()
-        text2 = Popen(["svn", "info","EUDAT_JMD.py"], stdout=PIPE).communicate()[0].splitlines()
-        text1 = text1[9].split(': ')[1]
-        text2 = text2[9].split(': ')[1]
-        ManagerVersion += text1 + " with EUDAT_JMD.py " + text2
-        print('\nVersion: %s' % ManagerVersion)
-    except:
-        print('\nCannot check the version. Change sub version to unknown!')
-        ManagerVersion += 'unknown'
+    ManagerVersion = '0.3'
+    print('\nVersion: %s' % ManagerVersion)
 
     # parse command line options and arguments:
     modes=['h','harvest','c','convert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
@@ -78,7 +69,7 @@ def main():
         print '\n'
     elif (options.epic_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
         print "\n[WARNING] You want to upload datasets to the non-productive host %s with EPIC handling!" % (options.iphost)
-        answer = ''
+        answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
         
@@ -117,15 +108,9 @@ def main():
              f = open(home+'/.netrc','r')
              lines=f.read().splitlines()
              f.close()
-             hostlist = []
 
              l = 0
-             print 'lines %s' % (lines[0])
              for host in lines:
-                print 'host %s' % (host[0])
-                print 'host1 %s' % (host.split()[0])
-                hostlist.append(host.split())
-                print 'hostlist %s' % (hostlist[0][0])
                 if(options.iphost == host.split()[0]):
                    options.auth = host.split()[1]
                    break
@@ -189,7 +174,7 @@ def process(options,pstat,OUT):
     
     ## HARVESTING - Mode:    
     if (pstat['status']['h'] == 'tbd'):
-        HV = HARVESTER(OUT,options.outdir,options.fromdate)
+        HV = HARVESTER(OUT,pstat,options.outdir,options.fromdate)
         
         # start the process harvesting:
         if mode is 'multi':
@@ -269,7 +254,10 @@ def process_harvest(HV, rlist):
         logger.info('\n## Harvesting request %s##' % request)
         
         harveststart = time.time()
-        results = HV.harvest(request)
+        if (request[1].startswith('https')):
+           results = HV.harvest(request)
+        else:
+           results = HV.harvest_sickle(request)
     
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
@@ -283,8 +271,8 @@ def process_convert(CV, rlist):
         
         cstart = time.time()
         
-        #            convert(community ,mdprefix  ,dir                      )
-        results = CV.convert(request[0],request[3],request[2]+'/'+request[4])
+        #            convert(community ,mdprefix  ,absolute path with subset directory       )
+        results = CV.convert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
 
         ctime=time.time()-cstart
         results['time'] = ctime
@@ -386,7 +374,7 @@ def process_upload(UP, rlist, options):
             if (community == 'clarin' and identifier.startswith('mi_')):
                 mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + identifier
             elif (community == 'gbif'):
-                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+identifier+'.xml'
+                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+identifier
 
             jsondata['extras'].append({
                      "key" : "MetaDataAccess",
@@ -432,15 +420,16 @@ def process_upload(UP, rlist, options):
             if (options.epic_check):
                 pid = credentials.prefix + "/eudat-jmd_" + ds
                 checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
+                ManagerVersion2 = ec.getValueFromHandle(pid,"JMDVERSION")
 
                 if (checksum2 == None):
                     logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
                     epicstatus="new"
-                elif ( checksum == checksum2 ):
-                    logger.debug("        |-> Checksum of pid %s not changed" % (pid))
+                elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ):
+                    logger.debug("        |-> ManagerVersion and checksum of pid %s not changed" % (pid))
                     epicstatus="unchanged"
                 else:
-                    logger.debug("        |-> Checksum of pid %s changed" % (pid))
+                    logger.debug("        |-> ManagerVersion or checksum of pid %s changed" % (pid))
                     epicstatus="changed"
                 dsstatus=epicstatus
 
@@ -453,28 +442,37 @@ def process_upload(UP, rlist, options):
 
             upload = 0
             # depending on status from epic handle upload record to JMD
+            logger.info('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
                 logger.info('        |-> %s' % ('No upload required'))
             else:
-                logger.info('        |-> Dataset is [%s]' % (dsstatus))
-                upload = UP.upload(ds,epicstatus,ckanstatus,community,jsondata)
+                upload = UP.upload(ds,dsstatus,community,jsondata)
                 if (upload == 1):
-                    logger.info('        |-> %s' % ('Uploaded successfully'))
+                    logger.info('        |-> Creation of %s record succeed' % dsstatus )
+                elif (upload == 2):
+                    logger.info('        |-> Update of %s record succeed' % dsstatus )
+                    upload=1
                 else:
-                    logger.info('        |-> %s' % ('Upload failed'))
+                    logger.info('        |-> Upload of %s record failed ' % dsstatus )
             
             # update handle in EPIC server                                                                                  
             if (options.epic_check and upload == 1):
+##HEW-T (create EPIC handle as well if upload/date failed !!! :
+##HEW-T            if (options.epic_check): ##HEW and upload == 1):
                 if (epicstatus == "new"):
                     logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                     npid=ec.createHandle(pid,index1,checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
+                    ec.modifyHandle(pid,'COMMUNITY',community)
+                    ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
                 elif (epicstatus == "unchanged"):
                     logger.info("        |-> No action required for %s" % pid)
                 else:
                     logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
                     ec.modifyHandle(pid,'CHECKSUM',checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
+                    ec.modifyHandle(pid,'COMMUNITY',community)
+                    ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
 
             results['count'] +=  upload
             
@@ -686,14 +684,14 @@ def options_parser(modes):
 
     p.add_option('--check_mappings', help="Check all mappings which are stored in './maptables/' for converting the .xml in .json format and choose the mapping table with the best results.", default=None, metavar='BOOLEAN')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", default='', metavar='STRING')
-    p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD-hh-mm-ss).", default=None, metavar='DATE')
+    p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
     p.add_option('--epic_check', 
          help="check and generate handles of CKAN datasets in handle server EPIC and with credentials as specified in given credstore file",
          default=None,metavar='FILE')
     p.add_option('--ckan_check',
          help="check existence and checksum against existing datasets in CKAN database",
          default='False', metavar='BOOLEAN')
-    p.add_option('--outdir', '-d', help="The absolute root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is '/oaidata')",default=os.getcwd()+'/oaidata', metavar='PATH')
+    p.add_option('--outdir', '-d', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",

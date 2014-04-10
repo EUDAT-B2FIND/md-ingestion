@@ -38,12 +38,15 @@ import logging as log
 from oaipmh.client import Client
 from oaipmh.metadata import MetadataRegistry
 from oaipmh.error import NoRecordsMatchError, CannotDisseminateFormatError, XMLSyntaxError, NoMetadataFormatsError, BadVerbError, DatestampError
+import sickle as SickleClass
+from sickle.oaiexceptions import NoRecordsMatch
 
 # needed for UPLOADER and CKAN class:
 import simplejson as json
 import urllib, urllib2
 
 from lxml import etree
+import traceback
 
 ### CKAN_CLIENT - class
 # Provides the method action()
@@ -195,15 +198,16 @@ class CKAN_CLIENT(object):
 
 class HARVESTER(object):
     
-    def __init__ (self, OUT, base_outdir, fromdate):
+    def __init__ (self, OUT, pstat, base_outdir, fromdate):
         self.logger = log.getLogger()
+        self.pstat = pstat
         self.OUT = OUT
         self.base_outdir = base_outdir
 
         # convert 'fromdate' string to datetime object
-        if (fromdate) and ('-' in fromdate):
-            fromdate = list(map(int,fromdate.split('-')))
-            fromdate = datetime.datetime(fromdate[0],fromdate[1],fromdate[2],fromdate[3],fromdate[4],fromdate[5])
+#        if (fromdate) and ('-' in fromdate):
+#            fromdate = list(map(int,fromdate.split('-')))
+#            fromdate = datetime.datetime(fromdate[0],fromdate[1],fromdate[2],fromdate[3],fromdate[4],fromdate[5])
             
         self.fromdate = fromdate
 
@@ -224,8 +228,216 @@ class HARVESTER(object):
         else:
             return True
             
+    
+    def harvest_sickle(self, request):
+    
+        # create a request dictionary:
+        req = {
+            "community" : request[0],
+            "url"   : request[1],
+            "lverb" : request[2],
+            "mdprefix"  : request[3],
+            "mdsubset"  : request[4]   if len(request)>4 else ''
+        }
+   
+        # create dictionary with stats:
+        stats = {
+            "tottcount" : 0,    # total number of all provided datasets
+            "totcount"  : 0,    # total number of all successful harvested datasets
+            "totecount" : 0,    # total number of all failed datasets
+            "totdcount" : 0,    # total number of all deleted datasets
+            
+            "tcount"    : 0,    # number of all provided datasets per subset
+            "count"     : 0,    # number of all successful harvested datasets per subset
+            "ecount"    : 0,    # number of all failed datasets per subset
+            "dcount"    : 0,    # number of all deleted datasets per subset
+            
+            "timestart" : time.time(),  # start time per subset process
+        }
+        
+        # create sickle object:
+        sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=30)
+        
+        # if the number of files in a subset dir is greater than <count_break>
+        # then create a new one with the name <set> + '_' + <count_set>
+        count_break = 5000
+        count_set = 1
+       
+        # set subset:
+        if (not req["mdsubset"]):
+            subset = 'SET'
+        else:
+            subset = req["mdsubset"]
+            
+        if (self.fromdate):
+            subset = subset + '_f' + self.fromdate
+        
+        # make subset dir:
+        subsetdir = '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
+        
+        # Get all files in the current subset directories and put those in the dictionary deleted_metadata
+        deleted_metadata = dict()
+        for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
+            for f in glob.glob(s+'/xml/*.xml'):
+                # save the id as key and the subset as value:
+                deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
+    
+        self.logger.info('    |   | %-4s | %-45s |\n    |%s|' % ('#','OAI Identifier',"-" * 58))
+        try:
+            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,
+                'from':self.fromdate}):
+                
+                stats['tcount'] += 1
+
+                # get the id of the metadata file:
+                id = record.header.identifier
+                
+                xmlfile = subsetdir + '/xml/' + os.path.basename(id) + '.xml'
+                try:
+                    self.logger.info('    | h | %-4d | %-45s |' % (stats['count']+1,id))
+                    self.logger.debug('Harvested XML file written to %s' % xmlfile)
+                        
+                    metadata = record.raw
+                    if (metadata):
+                        metadata = metadata.encode('ascii', 'ignore')
+                    
+                        # make xml dirs:
+                        if (not os.path.isdir(subsetdir+'/xml')):
+                           os.makedirs(subsetdir+'/xml')
+                           
+                        # write metadata in file:
+                        try:
+                            f = open(xmlfile, 'w')
+                            f.write(metadata)
+                            f.close
+                        except IOError, e:
+                            self.logger.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile,e))
+                            stats['ecount'] +=1
+                            continue
+                        
+                        stats['count'] += 1
+                        self.logger.debug('Harvested XML file written to %s' % xmlfile)
+                        
+                        # Need a new subset?
+                        if (stats['count'] == count_break):
+                        
+                            # save the stats of the old subset and get the new subsetdir:
+                            subsetdir, count_set = self.save_subset(
+                                req, stats, subset, subsetdir, count_set)
+                            
+                            self.logger.info('    | subset ( %d records) harvested in %s (if not failed).'% (
+                                stats['count'], subsetdir
+                            ))
+                            
+                            # add all subset stats to total stats and reset the temporal subset stats:
+                            for key in ['tcount', 'ecount', 'count', 'dcount']:
+                                stats['tot'+key] += stats[key]
+                                stats[key] = 0
+                            
+                            # start with a new time:
+                            stats['timestart'] = time.time()
+                    else:
+                        stats['ecount'] += 1
+                        self.logger.warning('    [WARNING] No metadata available for %s' % id)
+                            
+                        
+                except TypeError:
+                    self.logger.error('    [ERROR] TypeError: %s' % e)
+                    stats['ecount']+=1        
+                    continue
+                except Exception as e:
+                    self.logger.error("    [ERROR] %s" % traceback.format_exc())
+                    self.logger.info(metadata)
+                    stats['ecount']+=1
+                    continue
+                else:
+                    # if everything worked then deleted this metadata file from deleted_metadata
+                    if id in deleted_metadata:
+                        del deleted_metadata[id]
+        except TypeError as e:
+            self.logger.error('    [ERROR] Type Error: %s' % e)
+        except NoRecordsMatch as e:
+            self.logger.error('    [ERROR] No Records Match: %s. Request: %s' % (e,','.join(request)))
+        except Exception as e:
+            self.logger.error("    [ERROR] %s" % traceback.format_exc())
+        else:
+            if (len(deleted_metadata) > 0) and self.pstat['status']['d'] == 'tbd':
+                ## delete all files in deleted_metadata and write the subset
+                ## and the id in '<outdir>/delete/<community>-<mdprefix>':
+                self.logger.info('    | These [%d] files were not updated and will be deleted:' % (len(deleted_metadata)))
+                
+                # path to the file with all deleted ids:
+                delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
+                file_content = ''
+                
+                if(os.path.isfile(delete_file)):
+                    try:
+                        f = open(delete_file, 'r')
+                        file_content = f.read()
+                        f.close()
+                    except IOError as (errno, strerror):
+                        self.logger.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
+                        f.close
+                elif (not os.path.exists(self.base_outdir+'/delete')):
+                    os.makedirs(self.base_outdir+'/delete')    
+                
+                # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
+                for id in deleted_metadata:
+                    self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],id))
+                    
+                    xmlfile = deleted_metadata[id]
+                    subset = os.path.dirname(xmlfile).split('/')[-2]
+                    jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+id+'.json'
+                
+                    file_content += '%s\t%s\n' % (subset,id)
+                    stats['totdcount'] += 1
+                    
+                    # remove xml file:
+                    try: 
+                        os.remove(xmlfile)
+                    except OSError, e:
+                        self.logger.error("    [ERROR] Cannot remove xml file: %s" % (e))
+                        stats['totecount'] +=1
+                        
+                    # remove json file:
+                    if (os.path.exists(jsonfile)):
+                        try: 
+                            os.remove(jsonfile)
+                        except OSError, e:
+                            self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
+                            stats['totecount'] +=1
+                
+                # write file_content in delete file:
+                try:
+                    f = open(delete_file, 'w')
+                    f.write(file_content)
+                    f.close()
+                except IOError as (errno, strerror):
+                    self.logger.critical("Cannot write data to '{0}': {1}".format(delete_file, strerror))
+                    f.close
+        
+        
+            # add all subset stats to total stats and reset the temporal subset stats:
+            for key in ['tcount', 'ecount', 'count', 'dcount']:
+                stats['tot'+key] += stats[key]
+            
+            self.logger.info(
+                '## [%d] files provided by %s / %s, [%d] records are harvested, [%d] failed and [%d] are deleted.' 
+                % (
+                    stats['tottcount'],
+                    req['mdprefix'],
+                    req['mdsubset'],
+                    stats['totcount'],
+                    stats['totecount'],
+                    stats['totdcount']
+                ))
+        
+            # save the current subset:
+            if (stats['count'] > 0):
+                self.save_subset(req, stats, subset, subsetdir, count_set)
             
             
+    
     ## harvest(self, request) - method
     # call OAI listrecords or listidentifier+getrecord to retrieve xml records
     # and store metadata records in target directory.
@@ -331,9 +543,9 @@ class HARVESTER(object):
                             del deleted_metadata[id]
  
         except TypeError as e:
-            self.logger.error('    [ERROR] %s' % e)
+            self.logger.error('    [ERROR] Type Error: %s' % e)
         except NoRecordsMatchError as e:
-            self.logger.error('    [ERROR] %s' % e)
+            self.logger.error('    [ERROR] No Records Match: %s' % e)
         except BadVerbError as e:
             self.logger.error('    [ERROR] %s : %s ' % (e,req['lverb']))
         except DatestampError as e:
@@ -669,9 +881,9 @@ class CONVERTER(object):
         elif not os.path.exists(path + '/xml') or not os.listdir(path + '/xml'):
             self.logger.error('[ERROR] The directory "%s/xml" does not exist or no xml files for converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
-        elif not os.path.exists(path + '/json'):
-            self.logger.error('[ERROR] The directory "%s/json" does not exist !' % (path))
-            return results
+        #elif not os.path.exists(path + '/json'):
+        #    self.logger.error('[ERROR] The directory "%s/json" does not exist !' % (path))
+        #    return results
     
         # check mapfile
         mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
@@ -729,7 +941,7 @@ class UPLOADER (object):
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
 
-    def upload(self, ds, epicstatus, ckanstatus, community, jsondata):
+    def upload(self, ds, dsstatus, community, jsondata):
        
         rvalue = 0
         jsondata["name"] = ds
@@ -738,29 +950,34 @@ class UPLOADER (object):
         jsondata["owner_org"]="eudat"
    
         # if the dataset checked as new is not in ckan package_list then create it with package_create:
-        if (epicstatus == 'new' or epicstatus == 'unknown') and (ckanstatus == 'new' or ckanstatus == 'unknown'):
+        if (dsstatus == 'new' or dsstatus == 'unknown') :
             self.logger.debug('\t - Try to create dataset %s' % ds)
             
             results = self.CKAN.action('package_create',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
-                self.logger.debug('\t - Creation failed. Try to update instead of create.')
+                self.logger.debug('\t - Creation failed. Try to update instead.')
                 results = self.CKAN.action('package_update',jsondata)
                 if (results and results['success']):
-                    rvalue = 1
+                    rvalue = 2
                 else:
                     rvalue = 0
         
-        # if the epicstatus is changed or unknown or new (but in the package_list) then update it with package_update:
-        elif (ckanstatus == 'changed' or ckanstatus == 'unknown'):
+        # if the dsstatus is changed then update it with package_update:
+        elif (dsstatus == 'changed'):
             self.logger.debug('\t - Try to update dataset %s' % ds)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
-                rvalue = 1
+                rvalue = 2
             else:
-                rvalue = 0
+                self.logger.debug('\t - Update failed. Try to create instead.')
+                results = self.CKAN.action('package_create',jsondata)
+                if (results and results['success']):
+                    rvalue = 1
+                else:
+                    rvalue = 0
            
         return rvalue
 
@@ -1090,7 +1307,7 @@ class OUTPUT (object):
         
         # write head of the body:
         reshtml.write("\t\t<h1>Results of JMD Ingest workflow</h1>\n")
-        reshtml.write('\t\t<b>Date:</b> %s UTC, <b>Process ID:</b> %s, <b>Processing mode:</b> %s<br />\n\t\t<ol>\n' % (self.start_time, self.jid, options.parallel))
+        reshtml.write('\t\t<b>Date:</b> %s UTC, <b>Process ID:</b> %s, <b>Epic check:</b> %s<br />\n\t\t<ol>\n' % (self.start_time, self.jid, options.epic_check))
         
         i=1
         for proc in pstat['status']:
@@ -1319,8 +1536,6 @@ class OUTPUT (object):
     def print_convert_list(self,community,source,mdprefix,dir,fromdate):
         if (fromdate == None):
            self.convert_list = './convert_list_total'
-        elif (fromdate == 'deleted'):
-           self.convert_list = './delete_list'
         else:
            self.convert_list = './convert_list_' + str(fromdate.date())
         new_entry = '%s\t%s\t%s\t%s\t%s\n' % (community,source,os.path.dirname(dir),mdprefix,os.path.basename(dir))
