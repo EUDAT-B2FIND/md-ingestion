@@ -836,7 +836,9 @@ class HARVESTER(object):
 
 class CONVERTER(object):
 
-    def __init__ (self, OUT, root='converter/java/target/current'):
+##HEW-SVN    def __init__ (self, OUT, root='converter/java/target/current'):
+##HEW-GIT
+    def __init__ (self, OUT, root='../mapper/current'):
         self.logger = log.getLogger()
         self.root = root
         self.OUT = OUT
@@ -849,7 +851,9 @@ class CONVERTER(object):
         self.cp = ".:"+":".join(filter(lambda x: x.endswith('.jar'), os.listdir(root+'/lib')))
         
         # get the java converter name:
-        self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('converter-'), os.listdir(root)))[0]
+##HEW-SVN        self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('converter-'), os.listdir(root)))[0]
+##HEW-GIT
+        self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
 
 
 
