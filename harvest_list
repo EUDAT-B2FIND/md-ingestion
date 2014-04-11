@@ -140,10 +140,10 @@ eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-c
 ##eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:rc:dixa:test
 ##%%% India OAI-URLS
 #sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 1
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 2
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 3
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 4
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 1
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 2
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 3
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 4
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc E-LIS
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc LDL
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc CERES

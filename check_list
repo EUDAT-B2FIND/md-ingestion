@@ -1,0 +1,10 @@
+enes     http://c3grid1.dkrz.de:8080/oai/provider  oaitestdata/enes-iso iso   testset
+clarin   http://corpus1.mpi.nl/ds/oaiprovider/oai2 oaitestdata/clarin-cmdi cmdi  testset
+datacite http://oai.datacite.org/oai    oaitestdata/datacite-oai_dc oai_dc testset
+gbif     http://metadata.gbif.org/catalogue/OAIHandler oaitestdata/gbif-eml eml   testset
+b2share  https://b2share.eudat.eu/oai2d  oaitestdata/b2share-marcxml marcxml testset
+narcis	http://oai.narcis.nl/oai	oaitestdata/narcis-oai_dc	oai_dc	testset
+pandata http://oai.datacite.org/oai    oaitestdata/pandata-oai_dc      oai_dc  testset
+eiscat http://ed-icat-01.csc.fi/cgi-bin/oai-pmh    oaitestdata/eiscat-oai_dc      oai_dc  testset
+cessda http://ddaonline.dda.dk/oai-pmh    oaitestdata/cessda-oai_ddi      oai_ddi  testset
+aginfra	http://54.228.180.124:8080/glnRepo/services/oai	oaitestdata/aginfra-ods	ods	testset

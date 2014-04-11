@@ -375,6 +375,8 @@ def process_upload(UP, rlist, options):
                 mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + identifier
             elif (community == 'gbif'):
                 mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+identifier
+            elif (community == 'sdl'):
+                mdaccess =reqpre+'&identifier=oai::record/'+identifier
 
             jsondata['extras'].append({
                      "key" : "MetaDataAccess",
