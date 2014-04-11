@@ -1,6 +1,6 @@
 Disclaimer
 ----------
-Copyright (c) 2013 Heinrich Widmann (DKRZ)
+Copyright (c) 2014 Heinrich Widmann (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -35,6 +35,9 @@ Or - if this not works for some reason for xml - try
   > sudo apt-get install python-lxml
 or on systems with no apt-get but yum available :
   > sudo yum install python-lxml
+or (if this is not workabl, e.g. on some SuSE distr.) try
+  > sudo zypper install <module>
+
 
 Usage
 =====
@@ -42,7 +45,7 @@ eudat_jmd_manager.py [ OPTIONS ]
 
 
 Description
------------
+===========
 Management of meta data within EUDAT Joint Metadata Domain (JMD), i.e.
 I.  Ingestion of meta data comprising
 - 1. Harvesting of XML files from OAI-PMH MD provider(s)
@@ -106,8 +109,6 @@ These options will be required to upload an dataset to a CKAN database.
 --auth=STRING           Authentification for CKAN APIs (API key, iby default
                         taken from file $HOME/.netrc)
 
-Authors
-=======
 
-The Python code were developed by Heinrich Widmann and John Mrziglod (both DKRZ),
-(while the mappimg used was developed by Lari Lampen (MPI-PL)) , before importing into GitHub.
+
+Heinrich Widmann, 11.4.2014
