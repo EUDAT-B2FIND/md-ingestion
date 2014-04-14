@@ -96,8 +96,9 @@ epiccheck=''
 case $lhost in
   eudat-b1.dkrz.de)
    export JAVA_HOME=/usr/local/jdk1.7.0_25
-   rhost=eudat-b1.dkrz.de
-##   epiccheck="--epic_check credentials_11098"
+   rhost=eudat-b1.dkrz.de:8080
+##
+   epiccheck="--epic_check credentials_11098"
    ckancheck="--ckan_check \"True\""
    ;;
   eudatmd1.dkrz.de) ## b2find.eudat.eu :8000

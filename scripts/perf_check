@@ -1,0 +1,103 @@
+#!/bin/bash
+
+echo " Check uploading and print out info"
+
+lhost=$(hostname)
+WORK=$PWD
+TODAY=`date +\%F`
+YESTERDAY=`date --date='1 day ago' +\%F`
+TWODAGO=`date --date='2 day ago' +\%F`
+WEEK=`date +\%U`
+upload_list="upload_list_${TODAY}"
+##upload_list="upload_list_2014-04-11"
+
+##upload_list="upload_list_datacite_${TODAY}"
+##HEW-!!! upload_list="${WORK}/upload_list_${YESTERDAY}"
+
+
+echo -e "##########################\n Upload jobs according ${upload_list}" 
+echo -e "|- $(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l) jobs to be processed"
+echo -e "|- $(ls DONE/${upload_list}.* 2>/dev/null | wc -l) jobs are sucessfully done"
+echo -e "|- Jobs failed :\n   $(grep -c 'Internal server error' log/${upload_list}.*.err | grep -v ':0' ) "
+echo -e "|- $(ps -elf | grep jmd | grep upload | wc -l) threads are running"
+
+nfiles=0
+
+for file in $(ls ${upload_list}.* DONE/${upload_list}.*)
+do
+  (( nfiles = nfiles + 1))
+  pid=$( ps -elf | grep jmd | grep $file | awk '{print $4}' )
+
+  if [ -z $pid ]
+  then
+     status='stopped'
+  else
+     status="running with PID $pid"
+  fi
+  jobfile=$file
+
+  echo -e "__________________________________________________________________"
+  echo -e "|- Thread #$nfiles :\n |- Jobfile \t $jobfile\n |- Status \t $status"
+  outfile="log/$(basename ${file}).out"
+  errfile="log/$(basename ${file}).err"
+  npfrec=0
+  while read community oaiurl dir mdprefix set 
+  do
+    setdir="${dir}/${set}"
+    ndirrec=$(ls ${setdir}/json/*.json 2>/dev/null | wc -l)
+    echo -e "   |- Community-Set\t${community}\t${set}\t\n    |- #provided records\t$ndirrec "
+    ((npfrec = npfrec + ndirrec)) 
+  done < "$jobfile"
+  echo -e "   |- Total provided records\t $npfrec \n"
+  ((ntotrec = ntotrec + npfrec ))
+
+  echo -e " |- Total processed records        \t $(grep -c '.json' ${outfile} )"
+  echo -e " |- Curr. processed set record      \t $(tail -4 ${outfile} | grep json | awk '{print $4}')"
+  if [ $(grep -c 'Update of unknown record succeed' ${outfile}) -gt 0 ]
+  then
+    echo -e "  |- Update unknown r. succeed \t $(grep -c 'Update of unknown record succeed' ${outfile})"
+  fi
+  if [ $(grep -c 'Creation of unknown record succeed' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- Create unknown r. succeed \t $(grep -c 'Creation of unknown record succeed' ${outfile})"
+  fi
+  if [ $(grep -c 'Creation of new record' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- New created records       \t $(grep -c 'Creation of new record' ${outfile})"
+  fi
+  if [ $(grep -c 'Create a new handle' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- New created handles       \t $(grep -c 'Create a new handle' ${outfile})"
+  fi
+  if [ $(grep -c 'Upload of new record failed' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- Upload of new r. failed \t $(grep -c 'Upload of new record failed' $outfile )"
+  fi
+  if [ $(grep -c 'Upload of changed record failed' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- Upload of changed r. failed \t $(grep -c 'Upload of changed record failed' $outfile )"
+  fi
+  if [ $(grep -c 'Upload of changed record succeed' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- Udated records            \t $(grep -c 'Upload of changed record succeed' $outfile )"
+  fi
+  if [ $(grep -c 'Update checksum' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- Udated handles            \t $(grep -c 'Update checksum' $outfile )"
+  fi
+  if [ $(grep -c 'No upload' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- No action r. for record   \t $(grep -c 'No upload' $outfile )"
+  fi
+  if [ $(grep -c 'No action required' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- No action r. for handle   \t $(grep -c 'No action required' $outfile )"
+  fi
+
+done
+wait
+echo "|->>> \n In total $ntotrec json records provided in dirs of $upload_list \n"
+
+echo "[INFO] End of check of ${upload_list} at $(date)"
+
+exit 0

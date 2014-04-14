@@ -145,10 +145,10 @@ eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-c
 #sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 3
 #sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc 4
 sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc E-LIS
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc LDL
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc CERES
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc DLIST
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc IFLA
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc LDL
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc CERES
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc DLIST
+#sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc IFLA
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_1
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_2
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_3
