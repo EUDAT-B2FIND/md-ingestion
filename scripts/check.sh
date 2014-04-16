@@ -35,7 +35,7 @@ usage() {
   printf "${b}NAME${n}\n\t`basename $0` - check mapping of B2FIND\n\n" 
   printf "${b}SYNOPSIS ${n}\n\t${b}`basename $0`${n}  [${u}OPTION${n}]...  "
   printf "${u}COMMUNITY${n}\n\n" 
-  printf "${b}DESCRIPTION ${n}\n\t checks mapping on sample XML records and upload sucessfully mapped JSON records to test CKAN (VM).\n\n" 
+  printf "${b}DESCRIPTION ${n}\n\t checks mapping on sample XML records and upload sucessfully mapped JSON records to test CKAN (VM). This script has to be called from root directory 'md-ingestion'.\n\n" 
   printf "\t${u}COMMUNITY${n}\n\t\tB2FIND community (by default all communities found in job_file will be processed).\n\n"
   printf "${b}OPTIONS${n}\n"
   printf "\t${b}--help, -h${n}\n\t\tdisplay this built-in help text and exit.\n" 
@@ -45,6 +45,15 @@ usage() {
 }
 
 WORK=$PWD
+
+# test working directory:
+BASE_DIR=$(basename $WORK)
+
+if [ ! $BASE_DIR = 'md-ingestion' ]
+then
+    printf "ERROR: This script has to be called from root directory 'md-ingestion' by\n\t md-ingestion > scripts/check.sh\n"
+    exit
+fi
 
 ## ----------- get options and community name -------------
 
