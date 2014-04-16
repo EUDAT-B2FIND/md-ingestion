@@ -39,7 +39,7 @@ usage() {
   printf "\t${u}COMMUNITY${n}\n\t\tB2FIND community (by default all communities found in job_file will be processed).\n\n"
   printf "${b}OPTIONS${n}\n"
   printf "\t${b}--help, -h${n}\n\t\tdisplay this built-in help text and exit.\n" 
-  printf "\t${b}--mode, -m${n} ${u}MODE${n}\n\t\tprocessing mode, one of ,c or u or a for all (c is default)\n"
+  printf "\t${b}--mode, -m${n} ${u}MODE${n}\n\t\tprocessing mode, one of b, c or u or a for all (c is default)\n"
   printf "\t${b}--joblist, -j JOBLIST${n} ${u}ID${n}\n\t\tfile where the job list is specified (default is check_list).\n"
   exit 1
 }
@@ -87,13 +87,11 @@ logfile="/tmp/jmd_check_$$.log"
 
 [ -d ${WORK} ] || { echo "[ERROR] Can not access working directory ${WORK} !"; exit -1;}
 cd ${WORK}
-testdata_changed=`svn diff oaitestdata | grep 'Index:' | cut -f2 -d' '`
 
 ##cd target/current
 ## if new test data available perform converting and upload
 actionreq="yes"
 msg=''
-[ -n "${testdata_changed}" ] && { msg="$msg [INFO] New or changed test data\n${testdata_changed}\n" ; actionreq="yes";} 
 
 
 ntotrec=0
