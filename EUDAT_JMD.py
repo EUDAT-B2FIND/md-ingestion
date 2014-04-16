@@ -1035,12 +1035,11 @@ class OUTPUT (object):
         if (options.jobdir):
             self.jobdir = options.jobdir
         else:
-            jobdir='log/%s/%s/%s_%s_%s' % (now.split(' ')[0],now.split(' ')[1].split(':')[0],jid,options.mode,options.list)
+            self.jobdir='log/%s/%s/%s_%s_%s' % (now.split(' ')[0],now.split(' ')[1].split(':')[0],jid,options.mode,options.list)
             
-        if not os.path.exists(jobdir):
-            os.makedirs(jobdir)
+        if not os.path.exists(self.jobdir):
+            os.makedirs(self.jobdir)
             
-        self.jobdir = jobdir
         self.convert_list = None
         self.verbose = options.verbose
         
