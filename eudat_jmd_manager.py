@@ -56,28 +56,6 @@ def main():
     # check option 'mode' and generate process list:
     (mode, pstat) = pstat_init(p,modes,options.mode,options.source,options.iphost)
     
-    # check options:
-    if (not(options.epic_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
-        print "\n[WARNING] You want to upload datasets to the productive host %s without EPIC handling!" % (options.iphost)
-        answer = 'Y'
-        while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
-            answer = raw_input("Do you really want to continue? (Y / n) >>> ")
-        
-        if (answer == 'n' or answer == 'N'):
-            exit()
-            
-        print '\n'
-    elif (options.epic_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
-        print "\n[WARNING] You want to upload datasets to the non-productive host %s with EPIC handling!" % (options.iphost)
-        answer = 'Y'
-        while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
-            answer = raw_input("Do you really want to continue? (Y / n) >>> ")
-        
-        if (answer == 'n' or answer == 'N'):
-            exit()
-            
-        print '\n'
-    
     # make jobdir
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     jid = os.getpid()
@@ -126,6 +104,28 @@ def main():
                     "For upload mode valid URL of CKAN instance (option -i) and API key (--auth) must be given" + "\033[0;0m"
             )
             sys.exit(-1)
+            
+    # check options:
+    if (not(options.epic_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
+        print "\n[WARNING] You want to upload datasets to the productive host %s without EPIC handling!" % (options.iphost)
+        answer = 'Y'
+        while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
+            answer = raw_input("Do you really want to continue? (Y / n) >>> ")
+        
+        if (answer == 'n' or answer == 'N'):
+            exit()
+            
+        print '\n'
+    elif (options.epic_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
+        print "\n[WARNING] You want to upload datasets to the non-productive host %s with EPIC handling!" % (options.iphost)
+        answer = 'Y'
+        while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
+            answer = raw_input("Do you really want to continue? (Y / n) >>> ")
+        
+        if (answer == 'n' or answer == 'N'):
+            exit()
+            
+        print '\n'
 
     # write in HTML results file:
     OUT.HTML_print_begin()
@@ -363,6 +363,12 @@ def process_upload(UP, rlist, options):
             # output:
             logger.info('    | u | %-4d | %-50s | %-40s |' % (fcount,filename,ds))
             logger.debug("        |-> identifier: %s\n" % (identifier))
+            
+            ### VALIDATE JSON DATA
+            if (not UP.validate(jsondata)):
+                logger.info("        |-> Upload is aborted\n")
+                results['ecount'] += 1
+                continue
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:
@@ -386,7 +392,6 @@ def process_upload(UP, rlist, options):
             # if there is no title set a default tag:
             if not('title' in jsondata):
                 jsondata['title'] = '[NO TITLE]'
-            
             
             # determine checksum of json record and append
             try:
@@ -545,7 +550,6 @@ def process_delete(OUT, dir, options):
                     continue
                    
                 results['tcount'] += 1
-                
                 subset, identifier = line.split('\t')
          
                 # dataset name uniquely generated from oai identifier

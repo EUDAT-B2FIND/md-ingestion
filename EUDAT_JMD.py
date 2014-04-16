@@ -906,7 +906,6 @@ class CONVERTER(object):
                 path, path, mapfile
             )], stdout=subprocess.PIPE, shell=True)
         (out, err) = proc.communicate()
-        print "program output: ", out
         
         # check output and print it
         self.logger.info(out)
@@ -955,6 +954,37 @@ class UPLOADER (object):
         ptime = time.time() - pstart
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
+    
+    ## validate (UPLOADER object, json data) - method
+    # Validate the json data (e.g. the PublicationTimestamp field)
+    #
+    # Parameters:
+    # -----------
+    # (dict)    json data
+    #
+    # Return Values:
+    # --------------
+    # 1. (boolean) validate result
+    
+    def validate(self, jsondata):
+        result = True
+        errmsg = ''
+        
+        ## check main fields ...
+        
+        # check extra fields ...
+        for extra in jsondata['extras']:
+            # ... PublicationTimestamp
+            if(extra['key'] == 'PublicationTimestamp'):
+                try:
+                    datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
+                except ValueError:
+                    errmsg = "'PublicationTimestamp': Incorrect data format, should be YYYY-MM-DDThh:mm:ssZ"
+                    result = False
+                    break
+        
+        if (not result): self.logger.warning("        [ERROR] JSON field %s" % errmsg)
+        return result
 
     def upload(self, ds, dsstatus, community, jsondata):
        
