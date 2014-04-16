@@ -29,10 +29,11 @@ This is a prototype and not ready for production use.
 
 # system relevant modules:
 import os, glob
-import time, datetime
+import time, datetime, subprocess
 
 # program relevant modules:
 import logging as log
+import re
 
 # needed for HARVESTER class:
 from oaipmh.client import Client
@@ -898,14 +899,24 @@ class CONVERTER(object):
               return results
 
         # run the converter:
-        os.system(
-            'cd "%s"; java -cp lib/%s -jar %s inputdir=%s/xml outputdir=%s mapfile=%s' % (
-                os.getcwd()+'/'+self.root,
-                self.cp,
+        proc = subprocess.Popen(
+            ["cd '%s'; java -cp lib/%s -jar %s inputdir=%s/xml outputdir=%s mapfile=%s"% (
+                os.getcwd()+'/'+self.root, self.cp,
                 self.program,
                 path, path, mapfile
-            )
-        )
+            )], stdout=subprocess.PIPE, shell=True)
+        (out, err) = proc.communicate()
+        print "program output: ", out
+        
+        # check output and print it
+        self.logger.info(out)
+        if err: self.logger.error('[ERROR] ' + err)
+        
+        last_line = out.split('\n')[-2]
+        if ('INFO  Main - ' in last_line):
+            string = last_line.split('INFO  Main ')[1]
+            [results['count'], results['ecount']] = re.findall(r"\d{1,}", string)
+            results['count'] = int(results['count']); results['ecount'] = int(results['ecount'])
         
         # find all .xml files in path/xml:
         results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
