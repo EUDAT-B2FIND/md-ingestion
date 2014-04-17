@@ -32,11 +32,11 @@ from subprocess import call,Popen,PIPE
 import time, datetime
 import simplejson as json
 import copy
-import uuid, hashlib
 
 import logging as log
 import traceback
 
+import hashlib
 
 def main():
     global TimeStart
@@ -324,7 +324,7 @@ def process_upload(UP, rlist, options):
             
             continue
         
-        logger.info('    |   | %-4s | %-50s | %-40s |\n    |%s|' % ('#','filename','id',"-" * 106))
+        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 56))
         
         if (last_community != community and options.ckan_check == 'True'):
             last_community = community
@@ -353,16 +353,24 @@ def process_upload(UP, rlist, options):
                 results['ecount'] += 1
                 continue
 
-            # get file identifier from filename:
-            identifier = os.path.splitext(filename)[0]
-     
-            # dataset name uniquely generated from oai identifier
-            uid = uuid.uuid5(uuid.NAMESPACE_DNS, identifier.encode('ascii','replace'))
-            ds = str(uid)
+            # get dataset name from filename (a uuid generated identifier):
+            ds_id = os.path.splitext(filename)[0]
             
-            # output:
-            logger.info('    | u | %-4d | %-50s | %-40s |' % (fcount,filename,ds))
-            logger.debug("        |-> identifier: %s\n" % (identifier))
+            logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
+            
+            # get OAI identifier from json data extra field 'oai_identifier':
+            oai_id  = None
+            for extra in jsondata['extras']:
+                if(extra['key'] == 'oai_identifier'):
+                    oai_id = extra['value']
+                    break
+                    
+            if (not oai_id):
+                self.logger.error('        [ERROR] has no oai_identifier!')
+                results['ecount'] += 1
+                continue
+            
+            logger.debug("        |-> identifier: %s\n" % (oai_id))
             
             ### VALIDATE JSON DATA
             if (not UP.validate(jsondata)):
@@ -373,16 +381,16 @@ def process_upload(UP, rlist, options):
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:
             reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
-            mdaccess = reqpre + '&identifier=' + identifier
+            mdaccess = reqpre + '&identifier=' + oai_id
             index1 = mdaccess
 
             # exceptions for some communities:
-            if (community == 'clarin' and identifier.startswith('mi_')):
-                mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + identifier
+            if (community == 'clarin' and oai_id.startswith('mi_')):
+                mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
             elif (community == 'gbif'):
-                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+identifier
+                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+oai_id
             elif (community == 'sdl'):
-                mdaccess =reqpre+'&identifier=oai::record/'+identifier
+                mdaccess =reqpre+'&identifier=oai::record/'+oai_id
 
             jsondata['extras'].append({
                      "key" : "MetaDataAccess",
@@ -425,7 +433,7 @@ def process_upload(UP, rlist, options):
             # check against handle server EPIC
             epicstatus="unknown"
             if (options.epic_check):
-                pid = credentials.prefix + "/eudat-jmd_" + ds
+                pid = credentials.prefix + "/eudat-jmd_" + ds_id
                 checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
                 ManagerVersion2 = ec.getValueFromHandle(pid,"JMDVERSION")
 
@@ -443,7 +451,7 @@ def process_upload(UP, rlist, options):
             # check against CKAN database
             ckanstatus = 'unknown'                  
             if (options.ckan_check == 'True'):
-                ckanstatus=UP.check_dataset(ds,checksum)
+                ckanstatus=UP.check_dataset(ds_id,checksum)
                 if (dsstatus == 'unknown'):
                     dsstatus = ckanstatus
 
@@ -453,7 +461,7 @@ def process_upload(UP, rlist, options):
             if ( dsstatus == "unchanged") : # no action required
                 logger.info('        |-> %s' % ('No upload required'))
             else:
-                upload = UP.upload(ds,dsstatus,community,jsondata)
+                upload = UP.upload(ds_id,dsstatus,community,jsondata)
                 if (upload == 1):
                     logger.info('        |-> Creation of %s record succeed' % dsstatus )
                 elif (upload == 2):
@@ -491,7 +499,21 @@ def process_upload(UP, rlist, options):
         # save stats:
         UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
 
+## process_delete (OUT object, dir, options) - method
+# Delete all files in delete/file
+#
+# Parameters:
+# -----------
+# description of parameters
+#
+# Return Values:
+# --------------
+# return values
+
 def process_delete(OUT, dir, options):
+    print "###JM# Don't use this function. It is not up to date."
+    return False
+
     # create CKAN object                       
     CKAN = CKAN_CLIENT(options.iphost,options.auth)
     UP = UPLOADER(CKAN, OUT)
@@ -538,7 +560,7 @@ def process_delete(OUT, dir, options):
             'time':0
         }
 
-        # to gurantee that no deleted metadata information will be lost use a try-except-finally environment:
+        # use a try-except-finally environment to gurantee that no deleted metadata information will be lost:
         try:
             logger.info('    |   | %-4s | %-50s | %-50s |\n    |%s|' % ('#','oai identifier','CKAN identifier',"-" * 116))
             
@@ -686,7 +708,7 @@ def options_parser(modes):
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
-    p.add_option('--mode', metavar=' ' + " | ".join(modes), help='\nThis can be used to do a partial workflow. If you use converting without uploading the data will be stored in .json files. Default is "h-u" which means a totally ingestion with (h)arvesting, (c)onverting and (u)ploading to a CKAN database.', default='h-u')
+    p.add_option('--mode', '-m', metavar=' ' + " | ".join(modes), help='\nThis can be used to do a partial workflow. If you use converting without uploading the data will be stored in .json files. Default is "h-u" which means a totally ingestion with (h)arvesting, (c)onverting and (u)ploading to a CKAN database.', default='h-u')
 
     p.add_option('--check_mappings', help="Check all mappings which are stored in './maptables/' for converting the .xml in .json format and choose the mapping table with the best results.", default=None, metavar='BOOLEAN')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", default='', metavar='STRING')

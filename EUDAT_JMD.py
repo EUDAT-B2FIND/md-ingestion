@@ -36,11 +36,13 @@ import logging as log
 import re
 
 # needed for HARVESTER class:
-from oaipmh.client import Client
-from oaipmh.metadata import MetadataRegistry
-from oaipmh.error import NoRecordsMatchError, CannotDisseminateFormatError, XMLSyntaxError, NoMetadataFormatsError, BadVerbError, DatestampError
+###JM# from oaipmh.client import Client
+###JM# from oaipmh.metadata import MetadataRegistry
+###JM# from oaipmh.error import NoRecordsMatchError, CannotDisseminateFormatError, XMLSyntaxError, NoMetadataFormatsError, BadVerbError, DatestampError
+
 import sickle as SickleClass
 from sickle.oaiexceptions import NoRecordsMatch
+import uuid, hashlib
 
 # needed for UPLOADER and CKAN class:
 import simplejson as json
@@ -280,10 +282,10 @@ class HARVESTER(object):
         deleted_metadata = dict()
         for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
             for f in glob.glob(s+'/xml/*.xml'):
-                # save the id as key and the subset as value:
+                # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
     
-        self.logger.info('    |   | %-4s | %-45s |\n    |%s|' % ('#','OAI Identifier',"-" * 58))
+        self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 103))
         try:
             for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,
                 'from':self.fromdate}):
@@ -291,11 +293,14 @@ class HARVESTER(object):
                 stats['tcount'] += 1
 
                 # get the id of the metadata file:
-                id = record.header.identifier
+                oai_id = record.header.identifier
                 
-                xmlfile = subsetdir + '/xml/' + os.path.basename(id) + '.xml'
+                # generate a uniquely identifier for this dataset:
+                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+                
+                xmlfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
                 try:
-                    self.logger.info('    | h | %-4d | %-45s |' % (stats['count']+1,id))
+                    self.logger.info('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
                     self.logger.debug('Harvested XML file written to %s' % xmlfile)
                         
                     metadata = record.raw
@@ -339,7 +344,7 @@ class HARVESTER(object):
                             stats['timestart'] = time.time()
                     else:
                         stats['ecount'] += 1
-                        self.logger.warning('    [WARNING] No metadata available for %s' % id)
+                        self.logger.warning('    [WARNING] No metadata available for %s' % oai_id)
                             
                         
                 except TypeError:
@@ -353,8 +358,8 @@ class HARVESTER(object):
                     continue
                 else:
                     # if everything worked then deleted this metadata file from deleted_metadata
-                    if id in deleted_metadata:
-                        del deleted_metadata[id]
+                    if uid in deleted_metadata:
+                        del deleted_metadata[uid]
         except TypeError as e:
             self.logger.error('    [ERROR] Type Error: %s' % e)
         except NoRecordsMatch as e:
@@ -364,10 +369,10 @@ class HARVESTER(object):
         else:
             if (len(deleted_metadata) > 0) and self.pstat['status']['d'] == 'tbd':
                 ## delete all files in deleted_metadata and write the subset
-                ## and the id in '<outdir>/delete/<community>-<mdprefix>':
+                ## and the uid in '<outdir>/delete/<community>-<mdprefix>':
                 self.logger.info('    | These [%d] files were not updated and will be deleted:' % (len(deleted_metadata)))
                 
-                # path to the file with all deleted ids:
+                # path to the file with all deleted uids:
                 delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
                 file_content = ''
                 
@@ -383,14 +388,14 @@ class HARVESTER(object):
                     os.makedirs(self.base_outdir+'/delete')    
                 
                 # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
-                for id in deleted_metadata:
-                    self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],id))
+                for uid in deleted_metadata:
+                    self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
                     
-                    xmlfile = deleted_metadata[id]
+                    xmlfile = deleted_metadata[uid]
                     subset = os.path.dirname(xmlfile).split('/')[-2]
-                    jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+id+'.json'
+                    jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+uid+'.json'
                 
-                    file_content += '%s\t%s\n' % (subset,id)
+                    file_content += '%s\t%s\n' % (subset,uid)
                     stats['totdcount'] += 1
                     
                     # remove xml file:
