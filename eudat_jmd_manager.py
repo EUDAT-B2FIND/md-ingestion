@@ -358,25 +358,19 @@ def process_upload(UP, rlist, options):
             
             logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
             
+            ### VALIDATE JSON DATA
+            if (not UP.validate(jsondata)):
+                logger.info("        |-> Upload is aborted\n")
+                results['ecount'] += 1
+                continue
+                
             # get OAI identifier from json data extra field 'oai_identifier':
             oai_id  = None
             for extra in jsondata['extras']:
                 if(extra['key'] == 'oai_identifier'):
                     oai_id = extra['value']
                     break
-                    
-            if (not oai_id):
-                self.logger.error('        [ERROR] has no oai_identifier!')
-                results['ecount'] += 1
-                continue
-            
             logger.debug("        |-> identifier: %s\n" % (oai_id))
-            
-            ### VALIDATE JSON DATA
-            if (not UP.validate(jsondata)):
-                logger.info("        |-> Upload is aborted\n")
-                results['ecount'] += 1
-                continue
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:
@@ -396,10 +390,6 @@ def process_upload(UP, rlist, options):
                      "key" : "MetaDataAccess",
                      "value" : mdaccess
                     })
-                    
-            # if there is no title set a default tag:
-            if not('title' in jsondata):
-                jsondata['title'] = '[NO TITLE]'
             
             # determine checksum of json record and append
             try:
