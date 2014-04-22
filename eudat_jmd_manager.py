@@ -254,10 +254,10 @@ def process_harvest(HV, rlist):
         logger.info('\n## Harvesting request %s##' % request)
         
         harveststart = time.time()
-        if (request[1].startswith('https')):
-           results = HV.harvest(request)
-        else:
-           results = HV.harvest_sickle(request)
+        #if (request[1].startswith('https')):
+        #   results = HV.harvest(request)
+        #else:
+        results = HV.harvest_sickle(request)
     
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
@@ -360,7 +360,7 @@ def process_upload(UP, rlist, options):
             
             ### VALIDATE JSON DATA
             if (not UP.validate(jsondata)):
-                logger.info("        |-> Upload is aborted\n")
+                logger.info("        |-> Upload is aborted")
                 results['ecount'] += 1
                 continue
                 
