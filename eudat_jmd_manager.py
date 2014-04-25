@@ -254,10 +254,10 @@ def process_harvest(HV, rlist):
         logger.info('\n## Harvesting request %s##' % request)
         
         harveststart = time.time()
-        if (request[1].startswith('https')):
-           results = HV.harvest(request)
-        else:
-           results = HV.harvest_sickle(request)
+        #if (request[1].startswith('https')):
+        #   results = HV.harvest(request)
+        #else:
+        results = HV.harvest_sickle(request)
     
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
@@ -364,12 +364,6 @@ def process_upload(UP, rlist, options):
                 if(extra['key'] == 'oai_identifier'):
                     oai_id = extra['value']
                     break
-                    
-            if (not oai_id):
-                self.logger.error('        [ERROR] has no oai_identifier!')
-                results['ecount'] += 1
-                continue
-            
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
             ### VALIDATE JSON DATA
@@ -400,10 +394,6 @@ def process_upload(UP, rlist, options):
                      "key" : "MetaDataAccess",
                      "value" : mdaccess
                     })
-                    
-            # if there is no title set a default tag:
-            if not('title' in jsondata):
-                jsondata['title'] = '[NO TITLE]'
             
             # determine checksum of json record and append
             try:

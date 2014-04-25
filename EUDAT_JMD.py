@@ -83,6 +83,7 @@ class CKAN_CLIENT(object):
 	    }
 	
     def validate_action(self,action):
+        return True
         if (action in self.allowed_action):
             return True
         else:
@@ -105,7 +106,7 @@ class CKAN_CLIENT(object):
 		    print '[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT! Allowed actions are:'
 		    list = self.allowed_action.keys()
 		    print '\n'.join(sorted(list))
-	    elif (self.allowed_action[action] == 1):
+	    else:
 		    return self.__action_api(action, data)
 		
     def __action_api (self, action, data_dict):
@@ -969,26 +970,44 @@ class UPLOADER (object):
     #
     # Return Values:
     # --------------
-    # 1. (boolean) validate result
+    # 1. (boolean) validation result
     
     def validate(self, jsondata):
         result = True
         errmsg = ''
+        must_have_extras = {
+            "oai_identifier":True
+        }
         
         ## check main fields ...
+        if (not('title' in jsondata) or jsondata['title'] == ''):
+            errmsg = "'title': The title is missing"
+            result = False
         
         # check extra fields ...
         for extra in jsondata['extras']:
+            # ... OAI Identifier
+            if(extra['key'] == 'oai_identifier' and extra['value'] == ''):
+                errmsg = "'oai_identifier': The ID is missing"
+                result = False
+            
             # ... PublicationTimestamp
-            if(extra['key'] == 'PublicationTimestamp'):
+            elif(extra['key'] == 'PublicationTimestamp'):
                 try:
                     datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
                 except ValueError:
                     errmsg = "'PublicationTimestamp': Incorrect data format, should be YYYY-MM-DDThh:mm:ssZ"
                     result = False
-                    break
-        
-        if (not result): self.logger.warning("        [ERROR] JSON field %s" % errmsg)
+            
+            if not result: break
+            if extra['key'] in must_have_extras: del must_have_extras[extra['key']]
+                    
+        if (not result):
+            self.logger.warning("        [ERROR] JSON field %s" % errmsg)
+        elif (len(must_have_extras) > 0):
+            self.logger.warning("        [ERROR] JSON extra fields %s are missing" % must_have_extras.keys())
+            result = False
+            
         return result
 
     def upload(self, ds, dsstatus, community, jsondata):
