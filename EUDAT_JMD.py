@@ -28,7 +28,7 @@ This is a prototype and not ready for production use.
 """
 
 # system relevant modules:
-import os, glob
+import os, glob, sys
 import time, datetime, subprocess
 
 # program relevant modules:
@@ -47,6 +47,8 @@ import uuid, hashlib
 # needed for UPLOADER and CKAN class:
 import simplejson as json
 import urllib, urllib2
+import httplib
+from urlparse import urlparse
 
 from lxml import etree
 import traceback
@@ -983,6 +985,9 @@ class UPLOADER (object):
         if (not('title' in jsondata) or jsondata['title'] == ''):
             errmsg = "'title': The title is missing"
             result = False
+        elif ('url' in jsondata and not self.check_url(jsondata['url'])):
+            errmsg = "'url': The source url is broken"
+            result = False
         
         # check extra fields ...
         for extra in jsondata['extras']:
@@ -1052,7 +1057,6 @@ class UPLOADER (object):
 
 
     def delete(self, ds, ckanstatus):
-       
         rvalue = 0
         jsondata = {
             "name" : ds,
@@ -1067,7 +1071,6 @@ class UPLOADER (object):
             if (results and results['success']):
                 rvalue = 1
             else:
-                print results['success']
                 self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
         
         return rvalue
@@ -1082,7 +1085,9 @@ class UPLOADER (object):
             else:
                 ckanstatus="changed"
         return ckanstatus
-
+    
+    def check_url(self,url):
+        return urllib.urlopen(url).getcode() < 400
 
 
 ### OUTPUT - class
