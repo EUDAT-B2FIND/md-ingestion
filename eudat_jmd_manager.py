@@ -358,12 +358,6 @@ def process_upload(UP, rlist, options):
             
             logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
             
-            ### VALIDATE JSON DATA
-            if (not UP.validate(jsondata)):
-                logger.info("        |-> Upload is aborted")
-                results['ecount'] += 1
-                continue
-                
             # get OAI identifier from json data extra field 'oai_identifier':
             oai_id  = None
             for extra in jsondata['extras']:
@@ -371,6 +365,16 @@ def process_upload(UP, rlist, options):
                     oai_id = extra['value']
                     break
             logger.debug("        |-> identifier: %s\n" % (oai_id))
+            
+            ### VALIDATE JSON DATA
+            if (not UP.validate(jsondata)):
+                results['ecount'] += 1
+                extras_counter = 0
+	        for extra in jsondata['extras']:
+		    if(extra['key'] == 'PublicationTimestamp'):
+                       jsondata['extras'].pop(extras_counter)
+		       break
+		    extras_counter  += 1
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:

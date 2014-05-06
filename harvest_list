@@ -50,17 +50,19 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE22
 ##%%% PANdata, harvested from datacite OAI, subset BL.STFC (only ISIS records)
 pandata   http://oai.datacite.org/oai  ListIdentifiers  oai_dc  BL.STFC
 ##%%% CESSDA
-##cessda      http://ddaonline.dda.dk/oai-pmh   ListIdentifiers  oai_ddi
-##cessda    http://nesstar.snd.gu.se/oai-pmh  ListIdentifiers  oai_ddi
-##cessda    http://nesstar.ucd.ie/oai-pmh     ListIdentifiers  oai_ddi 
-cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi polsys 
-cessda http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi hystat
-cessda http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi edu
-cessda http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quant
+cessda    http://ddaonline.dda.dk/oai-pmh   ListIdentifiers  oai_ddi
+cessda    http://nesstar.snd.gu.se/oai-pmh  ListIdentifiers  oai_ddi
+cessda    http://nesstar.ucd.ie/oai-pmh     ListIdentifiers  oai_ddi 
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi polsys 
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi hystat
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi edu
+cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quant
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi pubsys
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi docsys
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quali
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi school
+cessda    http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers  ddi 
+cessda    http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi_3_1
 ##%%% NARCIS
 #narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc thesis
