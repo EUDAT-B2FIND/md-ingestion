@@ -64,7 +64,7 @@ cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi school
 cessda    http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers  ddi 
 cessda    http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi_3_1
 ##%%% NARCIS
-#narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc
+####################################################################################narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc thesis
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc oa_publication
