@@ -972,29 +972,37 @@ class UPLOADER (object):
     #
     # Return Values:
     # --------------
-    # 1. (boolean) validation result
+    # 1. (integer)  validation result:
+    #               0 - critical error occured
+    #               1 - error occured which is not critical
+    #               2 - no error occured
     
     def validate(self, jsondata):
-        result = True
+        status = 2
         errmsg = ''
         must_have_extras = {
-            "oai_identifier":True
+            # "extra_field_name" : (Integer), 0 for critical, 1 for non-critical
+            "oai_identifier":0
         }
         
         ## check main fields ...
         if (not('title' in jsondata) or jsondata['title'] == ''):
             errmsg = "'title': The title is missing"
-            result = False
+            status = 0  # set status
         elif ('url' in jsondata and not self.check_url(jsondata['url'])):
             errmsg = "'url': The source url is broken"
-            result = False
+            if(status > 1): status = 1  # set status
+            
+        if errmsg: self.logger.warning("        [WARNING] field %s" % errmsg)
         
-        # check extra fields ...
+        ## check extra fields ...
+        counter = 0
         for extra in jsondata['extras']:
+            errmsg = ''
             # ... OAI Identifier
             if(extra['key'] == 'oai_identifier' and extra['value'] == ''):
                 errmsg = "'oai_identifier': The ID is missing"
-                result = False
+                status = 0  # set status
             
             # ... PublicationTimestamp
             elif(extra['key'] == 'PublicationTimestamp'):
@@ -1002,18 +1010,23 @@ class UPLOADER (object):
                     datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
                 except ValueError:
                     errmsg = "'PublicationTimestamp': Incorrect data format, should be YYYY-MM-DDThh:mm:ssZ"
-                    result = False
+                    
+                    # delete this field from the jsondata:
+                    jsondata['extras'].pop(counter)
+                    
+                    if(status > 1): status = 1  # set status
             
-            if not result: break
+            # print warning:
+            if errmsg: self.logger.warning("        [WARNING] extra field %s" % errmsg)
+            
+            # delete key from the must have extras dictionary:
             if extra['key'] in must_have_extras: del must_have_extras[extra['key']]
                     
-        if (not result):
-            self.logger.warning("        [ERROR] JSON field %s" % errmsg)
-        elif (len(must_have_extras) > 0):
-            self.logger.warning("        [ERROR] JSON extra fields %s are missing" % must_have_extras.keys())
-            result = False
+        if (len(must_have_extras) > 0):
+            self.logger.warning("        [WARNING] extra fields %s are missing" % must_have_extras.keys())
+            status = min(status,must_have_extras.values())
             
-        return result
+        return status
 
     def upload(self, ds, dsstatus, community, jsondata):
        

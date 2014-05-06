@@ -368,13 +368,9 @@ def process_upload(UP, rlist, options):
             
             ### VALIDATE JSON DATA
             if (not UP.validate(jsondata)):
+                logger.info('        |-> Upload is aborted')
                 results['ecount'] += 1
-                extras_counter = 0
-	        for extra in jsondata['extras']:
-		    if(extra['key'] == 'PublicationTimestamp'):
-                       jsondata['extras'].pop(extras_counter)
-		       break
-		    extras_counter  += 1
+                continue
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:
