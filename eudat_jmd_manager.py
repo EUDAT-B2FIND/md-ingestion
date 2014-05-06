@@ -324,7 +324,7 @@ def process_upload(UP, rlist, options):
             
             continue
         
-        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 56))
+        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
         
         if (last_community != community and options.ckan_check == 'True'):
             last_community = community
