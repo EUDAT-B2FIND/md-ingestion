@@ -290,7 +290,7 @@ class HARVESTER(object):
     
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 103))
         try:
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,
+            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,
                 'from':self.fromdate}):
                 
                 stats['tcount'] += 1
@@ -1100,8 +1100,11 @@ class UPLOADER (object):
         return ckanstatus
     
     def check_url(self,url):
-        return urllib.urlopen(url).getcode() < 400
-
+        try:
+           return urllib.urlopen(url).getcode() < 400
+        except IOError:
+           return False
+    
 
 ### OUTPUT - class
 # Provides methods to create the log and error files and the overview HTML file
