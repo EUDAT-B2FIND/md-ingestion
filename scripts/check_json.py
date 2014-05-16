@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import optparse, os, sys
 import urllib2
 import simplejson as json
