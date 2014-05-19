@@ -50,9 +50,9 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  ANDS.CENTRE22
 ##%%% PANdata, harvested from datacite OAI, subset BL.STFC (only ISIS records)
 pandata   http://oai.datacite.org/oai  ListIdentifiers  oai_dc  BL.STFC
 ##%%% CESSDA
-cessda    http://ddaonline.dda.dk/oai-pmh   ListIdentifiers  oai_ddi
-cessda    http://nesstar.snd.gu.se/oai-pmh  ListIdentifiers  oai_ddi
-cessda    http://nesstar.ucd.ie/oai-pmh     ListIdentifiers  oai_ddi 
+cessda    http://ddaonline.dda.dk/oai-pmh   ListIdentifiers  oai_dc
+cessda    http://nesstar.snd.gu.se/oai-pmh  ListIdentifiers  oai_dc
+cessda    http://nesstar.ucd.ie/oai-pmh     ListIdentifiers  oai_dc 
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi polsys 
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi hystat
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi edu
@@ -61,7 +61,7 @@ cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi pubsys
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi docsys
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi quali
 cessda    http://www.lidata.eu/oaiprovider  ListIdentifiers  ddi school
-cessda    http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers  ddi 
+cessda    http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers  oai_dc 
 cessda    http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi_3_1
 ##%%% NARCIS
 narcis    http://library.wur.nl/oai         ListIdentifiers  oai_dc public
@@ -71,8 +71,7 @@ narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc thesis
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc oa_publication
-narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc ec_funded
-narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc resources
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc ec_fundedresources
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
 >
 ##%%% EISCAT
@@ -175,3 +174,17 @@ aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods ED
 aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods FSKN
 aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods AGLRFAOCAPACITYPORTAL
 aginfra   http://54.228.180.124:8080/glnRepo/services/oai ListIdentifiers ods DIGITALGREEN
+%% ALEPH
+#?aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml
+#?aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml cern:experiment
+#OK aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml collection:DATASETINFN
+#OK 
+aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml collection
+#? aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml cern
+#aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml collection:PUBLICATIONINFN
+#aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml cerncds:SCAN
+#aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml cern:theory
+#aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml collection:PRESENTATIONINFN
+#aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml cerncds
+#aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml cerncds:FULLTEXT
+

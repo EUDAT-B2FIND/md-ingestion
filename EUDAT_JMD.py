@@ -1100,8 +1100,11 @@ class UPLOADER (object):
         return ckanstatus
     
     def check_url(self,url):
-        return urllib.urlopen(url).getcode() < 400
-
+        try:
+           return urllib.urlopen(url).getcode() < 400
+        except IOError:
+           return False
+    
 
 ### OUTPUT - class
 # Provides methods to create the log and error files and the overview HTML file
