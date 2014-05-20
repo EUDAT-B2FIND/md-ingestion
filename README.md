@@ -13,21 +13,21 @@ THE SOFTWARE.
 md-ingestion
 ============
 
-The python script eudat_jmd_manager.py in this directory provide functionality required for
+The python script manager.py in this directory provide functionality required for
 ingestion (including OAI harvesting, semantic mapping (see repo 'md-mapping') and uploading to CKAN ) of metadata in the B2FIND portal.
 
 Preconditions
 =============
 
-The sript eudat_jmd_manager.py uses the classes and functions from
+The sript manager.py uses the classes and functions from
 
-"""EUDAT_JMD.py - classes for JMD management :
+"""B2FIND.py - classes for JMD management :
   - CKAN_CLIENT  Executes CKAN APIs (interface to CKAN)
   - HARVESTER
   - CONVERTER
   - UPLOADER
 
-Install required modules simplejson, sickle and pyoai, e.g. by :
+Install required modules simplejson, sickle and e.g. by :
 
   > sudo pip install <module>
 
@@ -41,7 +41,7 @@ or (if this is not workabl, e.g. on some SuSE distr.) try
 
 Usage
 =====
-eudat_jmd_manager.py [ OPTIONS ]
+manager.py [ OPTIONS ]
 
 
 Description
@@ -112,3 +112,4 @@ These options will be required to upload an dataset to a CKAN database.
 
 
 Heinrich Widmann, 11.4.2014
+John Mrziglod, 20.5.2014
