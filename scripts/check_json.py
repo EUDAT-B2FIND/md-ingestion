@@ -140,7 +140,7 @@ def get_options():
     return p.parse_args()
     
 def update_progress(community,progress):
-    sys.stdout.write('\rProcessing file {0} : [{1}{2}] {3}%'.format(community,'#'*(progress/10), ' '*(10-progress/10), progress))
+    sys.stdout.write('\rProcessing file {0} : [{1}{2}] {3}%              '.format(community,'#'*(progress/10), ' '*(10-progress/10), progress))
     sys.stdout.flush()
 
 if __name__ == "__main__":
