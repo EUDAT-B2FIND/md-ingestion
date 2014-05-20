@@ -3,7 +3,7 @@
 import os, sys, re
 import optparse
 
-from EUDAT_JMD import CKAN_CLIENT
+from B2FIND import CKAN_CLIENT
 
 def main():
     options, args = get_options()
