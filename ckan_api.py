@@ -77,7 +77,7 @@ def call_action(CKAN, options, action, object):
         elif ('list' in object):
             list = object['list']
             
-        list = list.reverse()
+        list.reverse()
             
         print 'Total number of datasets to delete: ' + str(len(list))
         
