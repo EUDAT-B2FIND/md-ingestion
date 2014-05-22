@@ -21,7 +21,7 @@ import simplejson as json
 import optparse
 
 from epicclient import EpicClient,Credentials
-from EUDAT_JMD import CKAN_CLIENT
+from B2FIND import CKAN_CLIENT
 
 
 def main():
