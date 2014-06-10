@@ -75,7 +75,7 @@ def postprocess(dataset,rules):
         # rules can be checked for correctness
         assert(rule.count(',,') == 5),"a double comma should be used to separate items"
         
-        rule = rule.split(',,') # splits the each line of config file 
+        rule = rule.split(',,') # splits  each line of config file 
         groupName = rule[0]
         datasetName = rule[1]
         facetName = rule[2]
