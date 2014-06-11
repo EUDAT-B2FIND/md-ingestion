@@ -131,9 +131,9 @@ def get_options():
         version = "%prog "
     )
    
-    p.add_option('--dir', '-d',  help='\nDirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
-    p.add_option('--outputdir', '-o',  help='\nDirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default='failed')
-    p.add_option('--checklist', '-c',  help='\nDirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default='scripts/checklist', metavar='FILE')
+    p.add_option('--dir', '-d',  help='\nData root directory where recursivly for JSON files (*.json) that have to bechecked, is serach.', default=None)
+    p.add_option('--outputdir', '-o',  help='\nDirectory where names of JSON files, for which check failed, are stored in according log files <FIELDTYPE>_<FIELDNAME>_<CHECKTYPE>, e.g. main_oai_identifier_existence. By default this directory is "failed" .', default='failed')
+    p.add_option('--checklist', '-c',  help='\nConfiguration file where fields and check type can be specified. Default is "scripts/checklist"', default='scripts/checklist', metavar='FILE')
     p.add_option('--show', '-s',  help='\nShow failed files in terminal.', default=False, metavar='BOOLEAN')
     p.add_option('--show_limit',  help='\nThe limit of showed failed files in terminal.', default=20, metavar='INTEGER')
     
