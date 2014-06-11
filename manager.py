@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""eudat_jmd_manager.py
+"""manager.py
   Management of metadata within the EUDAT Joint Metadata Domain (JMD)
   MD Ingestion : Harvest from OAI provider, convert XML (to JSON), semantic mapping of MD schema and upload to JMD portal
 
@@ -25,7 +25,7 @@ harvest                pyoai, lxml    easy_install pyoai, lxml or pip install py
 Modified by  c/o DKRZ 2013   Heinrich Widmann
 """
 
-from EUDAT_JMD import CKAN_CLIENT, HARVESTER, CONVERTER, UPLOADER, OUTPUT
+from B2FIND import CKAN_CLIENT, HARVESTER, CONVERTER, UPLOADER, OUTPUT
 from epicclient import EpicClient,Credentials
 import os, optparse, sys, glob
 from subprocess import call,Popen,PIPE
@@ -669,19 +669,10 @@ def parse_list_file(process,filename,filter=''):
                 exit_program()
                 
         if(process == 'convert' or process == 'upload' or process == 'delete'):
-           if len(reqlist[-1]) != 5:
-                if len(reqlist[-1]) == 4:
-                   print 'xxx 1 %s' % reqlist[-1][1]
-                   reqlist[-1][2]='%s/%s-%s' % ('oaidata',reqlist[-1][0],reqlist[-1][3])
-                   reqlist[-1].append('SET_1')
-                   logger.info('[WARNING] The list file "%s" has only 4 columns in line no. %d! Maybe you use a harvest jobspefication with OAI verb instead directory and without subset-directory given. This entries will automatically reset to %s rsp. %s' % (filename, l, reqlist[-1][2], reqlist[-1][4]))
-                else:
-                   logger.info('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Only 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
-                   exit_program()
-           elif reqlist[-1][2].startswith('List'):
-                   reqlist[-1][2]='%s/%s-%s' % ('oaidata',reqlist[-1][0],reqlist[-1][3])
-                   reqlist[-1][4]='%s_1' % reqlist[-1][4]
-                   logger.info('[WARNING] The list file "%s" seems to have in line no. %d a harvest jobspefication with OAI verb instead data directory in column 3. This entry is automatically replaced to %s and to the OAI subset _1 is appended' %(filename, l, reqlist[-1][2]))
+            if len(reqlist[-1]) != 5:
+                logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Only 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
+                exit_program()
+    
     return reqlist
 
 
