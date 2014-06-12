@@ -284,13 +284,8 @@ class HARVESTER(object):
     
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 103))
         try:
-<<<<<<< HEAD:EUDAT_JMD.py
             for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],
 		'ignore_deleted':True,'from':self.fromdate}):
-=======
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True}):
-                #'from':self.fromdate}):
->>>>>>> 6515443781bf5e1ecd28472fa8e18eeef6fc1de6:B2FIND.py
                 
                 stats['tcount'] += 1
 
