@@ -9,4 +9,4 @@ pandata http://oai.datacite.org/oai    oaitestdata/pandata-oai_dc      oai_dc  t
 eiscat http://ed-icat-01.csc.fi/cgi-bin/oai-pmh    oaitestdata/eiscat-oai_dc      oai_dc  testset
 cessda http://ddaonline.dda.dk/oai-pmh    oaitestdata/cessda-oai_ddi      oai_ddi  testset
 aginfra	http://54.228.180.124:8080/glnRepo/services/oai	oaitestdata/aginfra-ods	ods	testset
-
+aleph   http://www.openaccessrepository.it/oai2d oaitestdata/aleph-marcxml marcxml testset

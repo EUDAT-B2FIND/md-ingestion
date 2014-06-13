@@ -1,4 +1,4 @@
-"""EUDAT_JMD.py - classes for JMD management : 
+"""B2FIND.py - classes for JMD management : 
   - CKAN_CLIENT  Executes CKAN APIs (interface to CKAN)
   - HARVESTER
   - CONVERTER
@@ -171,7 +171,7 @@ class CKAN_CLIENT(object):
         self.logger.debug('\t|-- Action %s\n\t|-- Calling %s\n\t|-- Object %s ' % (action,action_url,data_dict))	
         try:
             request = urllib2.Request(action_url)
-            request.add_header('Authorization', self.api_key)
+            if (self.api_key): request.add_header('Authorization', self.api_key)
             response = urllib2.urlopen(request,data_string)
         except urllib2.HTTPError as e:
             print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action)
@@ -209,12 +209,6 @@ class HARVESTER(object):
         self.pstat = pstat
         self.OUT = OUT
         self.base_outdir = base_outdir
-
-        # convert 'fromdate' string to datetime object
-#        if (fromdate) and ('-' in fromdate):
-#            fromdate = list(map(int,fromdate.split('-')))
-#            fromdate = datetime.datetime(fromdate[0],fromdate[1],fromdate[2],fromdate[3],fromdate[4],fromdate[5])
-            
         self.fromdate = fromdate
 
     def checkURL(self,url): 
@@ -290,8 +284,8 @@ class HARVESTER(object):
     
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 103))
         try:
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,
-                'from':self.fromdate}):
+            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],
+		'ignore_deleted':True,'from':self.fromdate}):
                 
                 stats['tcount'] += 1
 
@@ -1101,10 +1095,10 @@ class UPLOADER (object):
     
     def check_url(self,url):
         try:
-           return urllib.urlopen(url).getcode() < 400
+            return urllib.urlopen(url).getcode() < 400
         except IOError:
-           return False
-    
+            return False
+
 
 ### OUTPUT - class
 # Provides methods to create the log and error files and the overview HTML file
