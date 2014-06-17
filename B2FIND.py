@@ -45,6 +45,7 @@ import httplib
 from urlparse import urlparse
 
 
+"""
 ### CKAN_CLIENT - class
 # Provides methods to call a CKAN API request via urllib2
 #
@@ -63,14 +64,13 @@ from urlparse import urlparse
 #
 # Usage:
 # ------
-"""
+
 # create CKAN object                       
 CKAN = CKAN_CLIENT(iphost,auth)
 
 # call action api:
 CKAN.action('package_create',{"name":"testdata", "title":"empty test object"})
 """
-
 
 class CKAN_CLIENT(object):
 
@@ -81,6 +81,7 @@ class CKAN_CLIENT(object):
 	
     def validate_actionname(self,action):
         return True
+	
 	
 	## action (action, jsondata) - method
 	# Call the api action <action> with the <jsondata> on the CKAN instance which was defined by iphost parameter of CKAN_CLIENT.
@@ -189,7 +190,7 @@ class CKAN_CLIENT(object):
             return out
 
 
-
+"""
 ### HARVESTER - class
 # Provides methods to call a CKAN API request via urllib2
 #
@@ -211,7 +212,7 @@ class CKAN_CLIENT(object):
 #
 # Usage:
 # ------
-"""
+
 # create HARVESTER object                       
 HV = HARVESTER(OUT object,pstat,rootdir,fromdate)
 
@@ -865,7 +866,7 @@ class HARVESTER(object):
         return('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)]), count_set)
 
 
-
+"""
 ### CONVERTER - class
 # Convert XML files to JSON files with Lari's java converter in md-mapper
 #
@@ -885,7 +886,7 @@ class HARVESTER(object):
 #
 # Usage:
 # ------
-"""
+
 # create CONVERTER object:
 CV = CONVERTER(OUT)
 
@@ -984,7 +985,7 @@ class CONVERTER(object):
     
         return results
 
-
+"""
 ### UPLOADER - class
 # Uploads JSON files to CKAN portal and provides more methods for checking a dataset
 #
@@ -1009,7 +1010,7 @@ class CONVERTER(object):
 #
 # Usage:
 # ------
-"""
+
 # create UPLOADER object:
 UP = UPLOADER(CKAN,OUT)
 
@@ -1347,7 +1348,7 @@ class UPLOADER (object):
         except IOError:
             return False
 
-
+"""
 ### OUTPUT - class
 # Initializes the logger class, saves statistics per every subset and creates HTML output file
 #
@@ -1371,8 +1372,8 @@ class UPLOADER (object):
 #
 # Usage:
 # ------
-"""
-usage
+
+## EXAMPLE ##
 """
 
 class OUTPUT (object):
