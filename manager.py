@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """manager.py
-  Management of metadata within the EUDAT Joint Metadata Domain (JMD)
+  Management of metadata within the EUDAT Joint Metadata Domain (B2FIND)
   MD Ingestion : Harvest from OAI provider, convert XML (to JSON), semantic mapping of MD schema and upload to JMD portal
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ), John Mrziglod (DKRZ)
@@ -150,6 +150,17 @@ def main():
 
 
 def process(options,pstat,OUT):
+    ## process (options,pstat,OUT) - function
+    # Starts the specific process routines for harvesting, converting and uploading
+    #
+    # Parameters:
+    # -----------
+    # 1. (OptionsParser object)    
+    #
+    # Return Values:
+    # --------------
+    # return values
+
     
     # set single or multi mode:
     mode = None

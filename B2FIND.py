@@ -474,7 +474,7 @@ class HARVESTER(object):
             
     
     ## DEPRECATED ##
-"""    
+    """    
     ## harvest(self, request) - method
     # call OAI listrecords or listidentifier+getrecord to retrieve xml records
     # and store metadata records in target directory.
@@ -834,7 +834,7 @@ class HARVESTER(object):
             return(False, id, subsetdir, count_set)
         else:
             return(True, id, subsetdir, count_set)
-"""
+    """
 
         
     def save_subset(self, req, stats, subset, subsetdir, count_set):
@@ -1687,7 +1687,7 @@ class OUTPUT (object):
         reshtml.write(head) 
         
         # write head of the body:
-        reshtml.write("\t\t<h1>Results of JMD Ingest workflow</h1>\n")
+        reshtml.write("\t\t<h1>Results of B2FIND ingestion workflow</h1>\n")
         reshtml.write('\t\t<b>Date:</b> %s UTC, <b>Process ID:</b> %s, <b>Epic check:</b> %s<br />\n\t\t<ol>\n' % (self.start_time, self.jid, options.epic_check))
         
         i=1
