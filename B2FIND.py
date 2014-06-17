@@ -1,19 +1,16 @@
-"""B2FIND.py - classes for JMD management : 
-  - CKAN_CLIENT  Executes CKAN APIs (interface to CKAN)
-  - HARVESTER
-  - CONVERTER
-  - UPLOADER
+"""B2FIND.py - classes for B2FIND management : 
+  - CKAN_CLIENT Executes CKAN APIs (interface to CKAN)
+  - HARVESTER   Harvests from a OAI-PMH server
+  - CONVERTER   Converts XML files to JSON files with Lari's converter and by using mapfiles
+  - UPLOADER    
+  - OUTPUT      Initializes the logger class and provides methods for saving log data and for printing those.    
 
 Install required modules simplejson, e.g. by :
 
   > sudo pip install <module>
 
-Or - if this not works for some reason for xml - try
-  
-  > sudo apt-get install python-lxml
 
-
-Copyright (c) 2013 John Mrziglod (DKRZ)
+Copyright (c) 2014 John Mrziglod (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -33,13 +30,10 @@ import time, datetime, subprocess
 
 # program relevant modules:
 import logging as log
+import traceback
 import re
 
 # needed for HARVESTER class:
-###JM# from oaipmh.client import Client
-###JM# from oaipmh.metadata import MetadataRegistry
-###JM# from oaipmh.error import NoRecordsMatchError, CannotDisseminateFormatError, XMLSyntaxError, NoMetadataFormatsError, BadVerbError, DatestampError
-
 import sickle as SickleClass
 from sickle.oaiexceptions import NoRecordsMatch
 import uuid, hashlib
@@ -50,11 +44,33 @@ import urllib, urllib2
 import httplib
 from urlparse import urlparse
 
-from lxml import etree
-import traceback
 
 ### CKAN_CLIENT - class
-# Provides the method action()
+# Provides methods to call a CKAN API request via urllib2
+#
+# Parameters:
+# -----------
+# (URL)     iphost  - URL to CKAN database
+# (string)  auth    - Authentication key for API requests
+#
+# Return Values:
+# --------------
+# 1. CKAN_CLIENT object
+#
+# Public Methods:
+# ---------------
+# .action (action, jsondata) - call the api <action>
+#
+# Usage:
+# ------
+"""
+# create CKAN object                       
+CKAN = CKAN_CLIENT(iphost,auth)
+
+# call action api:
+CKAN.action('package_create',{"name":"testdata", "title":"empty test object"})
+"""
+
 
 class CKAN_CLIENT(object):
 
@@ -62,52 +78,25 @@ class CKAN_CLIENT(object):
 	    self.ip_host = ip_host
 	    self.api_key = api_key
 	    self.logger = log.getLogger()
-
-	    # which api should call for this action?
-	    self.allowed_action = {
-		    'package_create': 1,
-		    'package_update': 1,
-		    'package_owner_org_update': 1,
-		    'package_delete': 1,
-		    'package_delete_all': 1,
-		    'package_activate_all': 1,
-		    'package_show': 1,
-		    'package_list': 1,
-		    'group_show':1,
-		    'group_create':1,
-		    'group_package_show':1,
-		    'group_list':1,
-		    'group_purge':1,
-		    'member_create': 1,
-		    'member_list':1,
-		    'organization_member_create':1,
-		    'bulk_update_delete':1,
-	    }
 	
-    def validate_action(self,action):
+    def validate_actionname(self,action):
         return True
-        if (action in self.allowed_action):
-            return True
-        else:
-            return False
 	
-	## action (CKAN_CLIENT object, action, data) - method
-	# Call the api action <action> on the <CKAN_CLIENT object>.
+	## action (action, jsondata) - method
+	# Call the api action <action> with the <jsondata> on the CKAN instance which was defined by iphost parameter of CKAN_CLIENT.
 	#
 	# Parameters:
 	# -----------
-	# (string)  action - ...
-	# (dict)    data - dictionary with the json data
+	# (string)  action  - Action name of the API v3 of CKAN
+	# (dict)    data    - Dictionary with json data
 	#
 	# Return Values:
 	# --------------
-	# ...
+	# (dict)    response dictionary of CKAN
 	
     def action(self, action, data={}):
-	    if (not self.validate_action(action)):
-		    print '[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT! Allowed actions are:'
-		    list = self.allowed_action.keys()
-		    print '\n'.join(sorted(list))
+	    if (not self.validate_actionname(action)):
+		    print '[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT!'
 	    else:
 		    return self.__action_api(action, data)
 		
@@ -118,6 +107,8 @@ class CKAN_CLIENT(object):
         api_url = "http://{host}/api/rest".format(host=self.ip_host)
         action_url = "{apiurl}/dataset".format(apiurl=api_url)	# default for 'package_create'
 
+        # "package_delete_all", "package_activate_all" and "member_create" are special actions which are not supported by APIv3 of CKAN
+        # special cases:
         if (action == "package_activate_all"):
             if data_dict['group']:
 	            data = self.action('member_list',{"id" : data_dict['group'], "object_type":"package"})
@@ -163,9 +154,11 @@ class CKAN_CLIENT(object):
             }
 
             data_dict	= member_dict
+        # normal case:
         else:
             action_url = "http://{host}/api/3/action/{action}".format(host=self.ip_host,action=action)
 
+        # make json data in conformity with URL standards
         data_string = urllib.quote(json.dumps(data_dict))
 
         self.logger.debug('\t|-- Action %s\n\t|-- Calling %s\n\t|-- Object %s ' % (action,action_url,data_dict))	
@@ -197,10 +190,44 @@ class CKAN_CLIENT(object):
 
 
 
-
-
 ### HARVESTER - class
-# The HARVESTER class provides the method 'harvester()' which can harvest metadata from a OAI-PMH server
+# Provides methods to call a CKAN API request via urllib2
+#
+# Parameters:
+# -----------
+# 1. (OUT object)   OUT   - object of the OUTPUT class
+# 2. (dict)         pstat   - dictionary with the states of every process (was built by main.pstat_init())
+# 3. (path)         rootdir - rootdir where the subdirs will be created and the harvested files will be saved.
+# 4. (string)       fromdate  - filter for harvesting, format: YYYY-MM-DD
+#
+# Return Values:
+# --------------
+# 1. HARVESTER object
+#
+# Public Methods:
+# ---------------
+# .harvest_sickle(request)   - harvest from a source via sickle module
+# [deprecated] .harvest(request) - harvest from a source via (old) OAI-PMH module
+#
+# Usage:
+# ------
+"""
+# create HARVESTER object                       
+HV = HARVESTER(OUT object,pstat,rootdir,fromdate)
+
+# harvest from a source via sickle module:
+request = [
+                community,
+                source,
+                verb,
+                mdprefix,
+                mdsubset
+            ]
+results = HV.harvest_sickle(request)
+
+if (results == -1):
+    print "Error occured!"
+"""
 
 class HARVESTER(object):
     
@@ -210,24 +237,24 @@ class HARVESTER(object):
         self.OUT = OUT
         self.base_outdir = base_outdir
         self.fromdate = fromdate
+    
+    ## harvest_sickle (HARVESTER object, [community, source, verb, mdprefix, mdsubset]) - method
+    # Harvest all files with <mdprefix> and <mdsubset> from <source> via sickle module and store those to hard drive.
+    # Generate every N. file a new subset directory.
 
-    def checkURL(self,url): 
-        from django.core.validators import URLValidator, ValidationError
-        from django.conf import settings
-        settings.configure()
-
-        val = URLValidator()
-        try:
-            val(url)
-        except ValidationError, e:
-            print (e,url)
-            return False
-        except Exception, e:
-            print (e,url)
-            return False                    
-        else:
-            return True
-            
+    #
+    # Parameters:
+    # -----------
+    # (list)  request - A request list with following items:
+    #                    1. community
+    #                    2. source
+    #                    3. verb
+    #                    4. mdprefix
+    #                    5. mdsubset
+    #
+    # Return Values:
+    # --------------
+    # 1. (integer)  is -1 if something went wrong
     
     def harvest_sickle(self, request):
     
@@ -284,8 +311,8 @@ class HARVESTER(object):
     
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 103))
         try:
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True}):
-                #'from':self.fromdate}):
+            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,
+                'from':self.fromdate}):
                 
                 stats['tcount'] += 1
 
@@ -299,8 +326,10 @@ class HARVESTER(object):
                 try:
                     self.logger.info('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
                     self.logger.debug('Harvested XML file written to %s' % xmlfile)
-                        
+                    
+                    # get the raw xml content:    
                     metadata = record.raw
+                    
                     if (metadata):
                         metadata = metadata.encode('ascii', 'ignore')
                     
@@ -441,6 +470,8 @@ class HARVESTER(object):
             
             
     
+    ## DEPRECATED ##
+"""    
     ## harvest(self, request) - method
     # call OAI listrecords or listidentifier+getrecord to retrieve xml records
     # and store metadata records in target directory.
@@ -800,6 +831,7 @@ class HARVESTER(object):
             return(False, id, subsetdir, count_set)
         else:
             return(True, id, subsetdir, count_set)
+"""
     
     
     ## save_subset(self, req, stats, subset, subsetdir, count_set) - method
@@ -835,12 +867,38 @@ class HARVESTER(object):
 
 
 ### CONVERTER - class
-# Provides the method convert()
+# Convert XML files to JSON files with Lari's java converter in md-mapper
+#
+# Parameters:
+# -----------
+# 1. (OUT object)   OUT - object of the OUTPUT class
+# 2. * (path)       root  - path to java converter directory
+#
+# Return Values:
+# --------------
+# 1. CONVERTER object
+#
+# Public Methods:
+# ---------------
+# .convert(community, mdprefix, path)  - Convert all files in <path> to JSON format by using mapfiles in md-mapping. 
+#                                        Store those files in a parallel subdirectory '../json'
+#
+# Usage:
+# ------
+"""
+# create CONVERTER object:
+CV = CONVERTER(OUT)
+
+path = 'oaidata/enes-iso/subset1'
+community = 'enes'
+mdprefix  = 'iso'
+
+# convert all files of the 'xml' dir in <path> by using mapfile which is defined by <community> and <mdprefix>
+results = CV.convert(community,mdprefix,path)
+"""
 
 class CONVERTER(object):
 
-##HEW-SVN    def __init__ (self, OUT, root='converter/java/target/current'):
-##HEW-GIT
     def __init__ (self, OUT, root='../mapper/current'):
         self.logger = log.getLogger()
         self.root = root
@@ -861,17 +919,18 @@ class CONVERTER(object):
 
 
     ## convert (CONVERTER object, community, mdprefix, path) - method
-    # Converts the XML files in directory <path> to JSON files with Lari's java converter
+    # Converts the XML files in directory <path> to JSON files with Lari's java converter by using mapfile which is defined by  
+    # <community> and <mdprefix>. 
     #
     # Parameters:
     # -----------
-    # (string)  community - ...
-    # (string)  mdprefix - ...
-    # (string)  path - path to subset directory
+    # 1. (string)   community - B2FIND community of the files
+    # 2. (string)   mdprefix - Metadata prefix which was used by HARVESTER class for harvesting these files
+    # 3. (string)   path - path to subset directory without (!) 'xml' subdirectory
     #
     # Return Values:
     # --------------
-    # 1. (dict) results statistics
+    # 1. (dict)     results statistics
     
     def convert(self,community,mdprefix,path):
         results = {
@@ -900,7 +959,7 @@ class CONVERTER(object):
               self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
               return results
 
-        # run the converter:
+        # run the converter
         proc = subprocess.Popen(
             ["cd '%s'; java -cp lib/%s -jar %s inputdir=%s/xml outputdir=%s mapfile=%s"% (
                 os.getcwd()+'/'+self.root, self.cp,
@@ -913,21 +972,63 @@ class CONVERTER(object):
         self.logger.info(out)
         if err: self.logger.error('[ERROR] ' + err)
         
+        # search in output for result statistics
         last_line = out.split('\n')[-2]
         if ('INFO  Main - ' in last_line):
             string = last_line.split('INFO  Main ')[1]
             [results['count'], results['ecount']] = re.findall(r"\d{1,}", string)
             results['count'] = int(results['count']); results['ecount'] = int(results['ecount'])
         
-        # find all .xml files in path/xml:
+        # find all .xml files in path/xml
         results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
     
         return results
 
 
-
 ### UPLOADER - class
-# Provides the methods get_packages(), check_dataset() and upload()
+# Uploads JSON files to CKAN portal and provides more methods for checking a dataset
+#
+# Parameters:
+# -----------
+# 1. (CKAN_CLIENT object)   CKAN - object of the CKAN_CLIENT class
+# 2. (OUT object)           OUT - object of the OUTPUT class
+#
+# Return Values:
+# --------------
+# 1. UPLOADER object
+#
+# Public Methods:
+# ---------------
+# .check_dataset(dsname,checksum)   - Compare the checksum of the dataset <dsname> with <checksum> 
+# .check_url(url)           - Checks and validates a url via urllib module
+# .delete(dsname,dsstatus)  - Deletes a dataset from a CKAN portal
+# .get_packages(community)  - Gets the details of all packages from a community in CKAN and store those in <UPLOADER.package_list>
+# .upload(dsname, dsstatus,
+#   community, jsondata)    - Uploads a dataset to a CKAN portal
+# .validate(jsondata)       - Validates the fields in the <jsondata> by using B2FIND standard
+#
+# Usage:
+# ------
+"""
+# create UPLOADER object:
+UP = UPLOADER(CKAN,OUT)
+
+# VALIDATE JSON DATA
+if (not UP.validate(jsondata)):
+    print "Dataset is broken or does not pass the B2FIND standard"
+
+# CHECK DATASET IN CKAN
+ckanstatus = UP.check_dataset(dsname,checksum)
+
+# UPLOAD DATASET TO CKAN
+upload = UP.upload(dsname,ckanstatus,community,jsondata)
+if (upload == 1):
+    print 'Creation of record succeed'
+elif (upload == 2):
+    print 'Update of record succeed'
+else:
+    print 'Upload of record failed'
+"""
 
 class UPLOADER (object):
     
@@ -937,6 +1038,18 @@ class UPLOADER (object):
         self.OUT = OUT
         
         self.package_list = dict()
+        
+        
+    ## get_packages (UPLOADER object, community) - method
+    # Gets a full detailed list of all packages from a community in CKAN (parameter <UPLOADER.CKAN>)
+    #
+    # Parameters:
+    # -----------
+    # (string)  community - A B2FIND community in CKAN
+    #
+    # Return Values:
+    # --------------
+    # None   
         
     def get_packages(self,community):
         pstart = time.time()
@@ -954,21 +1067,24 @@ class UPLOADER (object):
         self.package_list = package_list
         
         ptime = time.time() - pstart
+        
+        # save details:
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
     
+    
     ## validate (UPLOADER object, json data) - method
-    # Validate the json data (e.g. the PublicationTimestamp field)
+    # Validates the json data (e.g. the PublicationTimestamp field) by using B2FIND standard
     #
     # Parameters:
     # -----------
-    # (dict)    json data
+    # 1. (dict)    jsondata - json dictionary with metadata fields with B2FIND standard
     #
     # Return Values:
     # --------------
     # 1. (integer)  validation result:
     #               0 - critical error occured
-    #               1 - error occured which is not critical
+    #               1 - non-critical error occured
     #               2 - no error occured
     
     def validate(self, jsondata):
@@ -1022,15 +1138,40 @@ class UPLOADER (object):
             
         return status
 
+
+    ## upload (UPLOADER object, dsname, dsstatus, community, jsondata) - method
+    # Uploads a dataset <jsondata> with name <dsname> as a member of <community> to CKAN. <dsstatus> describes the state of the package
+    # and is 'new', 'changed', 'unchanged' or 'unknown'. In the case of a 'new' or 'unknown' package this method will call the API
+    # 'package_create' and in the case of a 'changed' package the API 'package_update'. Nothing happens if the state is 'unchanged'
+    #
+    # Parameters:
+    # -----------
+    # 1. (string)   dsname - Name of the dataset
+    # 2. (string)   dsstatus - Status of the dataset: can be 'new', 'changed', 'unchanged' or 'unknown'. See also .check_dataset()
+    # 3. (string)   dsname - A B2FIND community in CKAN
+    # 4. (dict)     jsondata - Metadata fields of the dataset in JSON format
+    #
+    # Return Values:
+    # --------------
+    # 1. (integer)  upload result:
+    #               0 - critical error occured
+    #               1 - no error occured, uploaded with 'package_create'
+    #               2 - no error occured, uploaded with 'package_update'
+
     def upload(self, ds, dsstatus, community, jsondata):
-       
+        # define default return value, codes are:
+        #   0 - critical error occured
+        #   1 - no error occured, uploaded with 'package_create'
+        #   2 - no error occured, uploaded with 'package_update'
         rvalue = 0
+        
+        # add some CKAN specific fields to dictionary:
         jsondata["name"] = ds
         jsondata["state"]='active'
         jsondata["groups"]=[{ "name" : community }]
         jsondata["owner_org"]="eudat"
    
-        # if the dataset checked as new is not in ckan package_list then create it with package_create:
+        # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
         if (dsstatus == 'new' or dsstatus == 'unknown') :
             self.logger.debug('\t - Try to create dataset %s' % ds)
             
@@ -1045,7 +1186,7 @@ class UPLOADER (object):
                 else:
                     rvalue = 0
         
-        # if the dsstatus is changed then update it with package_update:
+        # if the dsstatus is 'changed' then update it with package_update:
         elif (dsstatus == 'changed'):
             self.logger.debug('\t - Try to update dataset %s' % ds)
             
@@ -1063,16 +1204,29 @@ class UPLOADER (object):
         return rvalue
 
 
-    def delete(self, ds, ckanstatus):
+    ## delete (UPLOADER object, dsname, dsstatus) - method
+    # Deletes the dataset <dsname> from CKAN portal if its <dsstatus> is not 'new'
+    #
+    # Parameters:
+    # -----------
+    # 1. (string)  dsname - Name of the dataset
+    # 2. (string)  dsstatus - State of the dataset (can be 'new', 'changed', 'unchanged' or 'unknown')
+    #
+    # Return Values:
+    # --------------
+    # 1. (integer)  deletion result:
+    #               0 - error occured, dataset was not deleted
+    #               1 - no error occured, dataset is deleted
+    def delete(self, dsname, dsstatus):
         rvalue = 0
         jsondata = {
-            "name" : ds,
+            "name" : dsname,
             "state" : 'deleted'
         }
    
         # if the dataset exists set it to status deleted in CKAN:
-        if (not ckanstatus == 'new'):
-            self.logger.debug('\t - Try to set dataset %s on status deleted' % ds)
+        if (not dsstatus == 'new'):
+            self.logger.debug('\t - Try to set dataset %s on status deleted' % dsname)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
@@ -1081,17 +1235,46 @@ class UPLOADER (object):
                 self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
         
         return rvalue
-        
-    def check_dataset(self,ds,checksum): 
-        ckanstatus='failed'
-        if not (ds in self.package_list):
+    
+    
+    ## check_dataset (UPLOADER object, dsname, checksum) - method
+    # Compare the checksum of <dsname> in CKAN portal with the given <checksum>. If they are equal 'unchanged' will be returned. 
+    # Otherwise returns 'new', 'changed' or 'unknown' if check failed.
+    #
+    # Parameters:
+    # -----------
+    # (string)  dsname - Name of the dataset
+    #
+    # Return Values:
+    # --------------
+    # 1. (string)  ckanstatus, can be:
+    #               1. 'unknown'
+    #               2. 'new'
+    #               3. 'unchanged'
+    #               4. 'changed'
+    
+    def check_dataset(self,dsname,checksum): 
+        ckanstatus='unknown'
+        if not (dsname in self.package_list):
             ckanstatus="new"
         else:
-            if ( checksum == self.package_list[ds]):
+            if ( checksum == self.package_list[dsname]):
                 ckanstatus="unchanged"
             else:
                 ckanstatus="changed"
         return ckanstatus
+    
+    
+    ## check_url (UPLOADER object, url) - method
+    # Checks and validates a url via urllib module
+    #
+    # Parameters:
+    # -----------
+    # (url)  url - Url to check
+    #
+    # Return Values:
+    # --------------
+    # 1. (boolean)  result
     
     def check_url(self,url):
         try:
@@ -1101,9 +1284,34 @@ class UPLOADER (object):
 
 
 ### OUTPUT - class
-# Provides methods to create the log and error files and the overview HTML file
+# Initializes the logger class, saves statistics per every subset and creates HTML output file
+#
+# Parameters:
+# -----------
+# 1. (dict)     pstat - States of all processes
+# 2. (string)   now - Current date and time
+# 3. (string)   jid - Job id of the programm in the system
+# 4. (OptionParser object)  options - Object with all command line options
+#
+# Return Values:
+# --------------
+# 1. OUTPUT object
+#
+# Public Methods:
+# ---------------
+# .get_stats() 
+# .save_stats(request, subset, mode, stats) - Saves the statistics of a process per subset
+# .start_logger()  - Initializes logger class of the program
+#
+#
+# Usage:
+# ------
+"""
+usage
+"""
 
 class OUTPUT (object):
+
     def __init__(self, pstat, now, jid, options):
 
         self.options = options
@@ -1162,7 +1370,18 @@ class OUTPUT (object):
         
         self.table_code = ''
         self.details_code = ''
-        
+    
+    ## start_logger (OUTPUT object) - method
+    # Initializes logger class of the program
+    #
+    # Parameters:
+    # -----------
+    # None
+    #
+    # Return Values:
+    # --------------
+    # None
+    
     def start_logger(self):
         logger = log.getLogger()
         logger.setLevel(log.DEBUG)
@@ -1197,9 +1416,9 @@ class OUTPUT (object):
 
     
     ## save_stats (OUT object, request, subset, mode, stats) - method
-    # Saves the stats of a process (harvesting, converting or uploading) per subset.
+    # Saves the statistics of a process (harvesting, converting or uploading) per subset.
     # Requests which start with a '#' are special requests like '#Start' or '#GetPackages'
-    # will be ignored in the most actions
+    # and will be ignored in the most actions
     #
     # Parameters:
     # -----------
@@ -1314,7 +1533,17 @@ class OUTPUT (object):
                             self.stats[request][subset]['#error'] = True
 
                 
-      
+    ## get_stats (OUTPUT object, request, subset, mode, key) - method
+    # Returns the statistic dictionary which are identified by <request>, <subset>, <mode> and <key>
+    #
+    # Parameters:
+    # -----------
+    # (param_type)  param_name - param_des
+    #
+    # Return Values:
+    # --------------
+    # 1. (return_type)  return_name
+    
     def get_stats(self,request,subset='',mode='',key=''):
 
         if ('#' in ''.join([request,subset,mode])):
@@ -1645,8 +1874,9 @@ class OUTPUT (object):
             self.logger.critical("Cannot write data to '{0}': {1}".format(self.convert_list, strerror))
             f.close
             
-
-class Reader(object):
+## DEPRECATED ##
+"""class Reader(object):
      '''Very simple encoder of harvested content: convert to string'''
      def __call__(self, element):
         return etree.tostring(element, pretty_print=True, encoding='UTF8')
+"""
