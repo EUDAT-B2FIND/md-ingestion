@@ -13,7 +13,7 @@ Or - if this not works for some reason for xml - try
   > sudo apt-get install python-lxml
 
 
-Copyright (c) 2013 John Mrziglod (DKRZ)
+Copyright (c) 2014 John Mrziglod (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

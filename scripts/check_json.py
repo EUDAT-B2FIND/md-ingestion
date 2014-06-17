@@ -138,7 +138,8 @@ def load_checklists(file):
                 category = 'main'
             elif ('[EXTRA]' in line):
                 category = 'extra'
-            elif (not (line == '' or line.startswith('#'))):
+            elif (line.rstrip() and not line.startswith('#')):
+                
                 # separate in field and commands:
                 field, commands = line.rstrip().split(':')
 
