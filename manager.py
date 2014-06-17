@@ -37,6 +37,7 @@ import logging as log
 import traceback
 
 import hashlib
+import codecs
 
 def main():
     global TimeStart
@@ -329,6 +330,20 @@ def process_upload(UP, rlist, options):
         
         uploadstart = time.time()
         
+        # check for mapper postproc config file
+        ppconfig_file='%s/%s/mdpp-%s-%s.conf' % (os.getcwd(),'../mapper/current/mapfiles',community,mdprefix)
+        if os.path.isfile(ppconfig_file):
+            mappp='True'
+            # reads config file 
+
+            f = codecs.open(ppconfig_file, "r", "utf-8")
+            rules = f.readlines()[1:] # without the header
+            rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
+        else:
+            mappp='False'
+            
+
+
         # find all .json files in dir/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(dir+'/json'))
         
@@ -363,6 +378,12 @@ def process_upload(UP, rlist, options):
                     break
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
+            ### Mapper post processing
+            ##rules=[u'*,,*,,Language,,de,,German,,replace\n']
+            if ( mappp == 'True' ):
+               jsondata=UP.postprocess(jsondata,rules)
+            ## print 'pjsondata %s' % pjsondata
+
             ### VALIDATE JSON DATA
             if (not UP.validate(jsondata)):
                 logger.info('        |-> Upload is aborted')

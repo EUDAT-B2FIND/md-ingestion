@@ -199,7 +199,7 @@ then
       echo "Status $?"
       ## Status check after converting
       njson=0; totnjson=0
-      echo -e "\n[INFO] |- Status after converting with mapfile\n converter/java/target/current/mapfiles/${comm}-${mdformat}.xml"
+      echo -e "\n[INFO] |- Status after converting with mapfile\n ../mapper/current/mapfiles/${comm}-${mdformat}.xml"
       njson=$(ls $mdformatpath/${subset}/json/*.json 2>/dev/null | wc -l)
       (( totnjson=totnjson+njson ))
       echo -e "[INFO]  No. of converted json files in\n $mdformatpath/${subset}/json \t $njson"
@@ -216,7 +216,7 @@ then
         continue
       fi
 
-      cp converter/java/target/current/stats.log ${WORK}/log/stats_${comm}.log
+      cp ../mapper/current/stats.log ${WORK}/log/stats_${comm}.log
       echo -e "[INFO] | |-+ Check mapping statistics :"
       while read f1 Fac facet xpath endline
       do
@@ -235,7 +235,7 @@ then
         else
           continue
         fi
-      done < converter/java/target/current/stats.log
+      done < ../mapper/current/stats.log
     
       echo -e "[INFO] | No errors found during converting\n"
     fi
