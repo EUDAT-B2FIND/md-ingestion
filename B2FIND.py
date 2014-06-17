@@ -957,6 +957,71 @@ class UPLOADER (object):
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
     
+
+    def replace(self,dataset,facetName,old_value,new_value):
+        """
+        replaces old value with new value for a given facet
+        """
+        for facet in dataset:
+            if facet == facetName and dataset[facet] == old_value:
+                dataset[facet] = new_value
+                return dataset
+            if facet == 'extras':
+                for extra in dataset[facet]:
+                    if extra['key'] == facetName and extra['value'] == old_value:
+                        extra['value'] = new_value
+                        return dataset
+        return dataset
+ 
+    def truncate(self,dataset,facetName,old_value,size):
+        """
+        truncates old value with new value for a given facet
+        """
+        for facet in dataset:
+            if facet == facetName and dataset[facet] == old_value:
+                dataset[facet] = old_value[:size]
+                return dataset
+            if facet == 'extras':
+                for extra in dataset[facet]:
+                    if extra['key'] == facetName and extra['value'] == old_value:
+                        extra['value'] = old_value[:size]
+                        return dataset
+        return dataset
+       
+    def postprocess(self,dataset,rules):
+        """
+        changes dataset field values according to configuration
+        """  
+     
+        for rule in rules:
+            # rules can be checked for correctness
+            assert(rule.count(',,') == 5),"a double comma should be used to separate items"
+            
+            rule = rule.rstrip('\n').split(',,') # splits  each line of config file 
+            groupName = rule[0]
+            datasetName = rule[1]
+            facetName = rule[2]
+            old_value = rule[3]
+            new_value = rule[4]
+            action = rule[5]
+                        
+            r = dataset.get("group",None)
+            if groupName != '*' and  groupName != r:
+                return dataset
+    
+            r = dataset.get("name",None)
+            if datasetName != '*' and datasetName != r:
+                return dataset
+    
+            if action == 'replace':
+                dataset = self.replace(dataset,facetName,old_value,new_value)
+            if action == "truncate":
+                pass
+            if action == "another_action":
+                pass
+            
+        return dataset
+
     ## validate (UPLOADER object, json data) - method
     # Validate the json data (e.g. the PublicationTimestamp field)
     #
