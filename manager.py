@@ -254,9 +254,6 @@ def process_harvest(HV, rlist):
         logger.info('\n## Harvesting request %s##' % request)
         
         harveststart = time.time()
-        #if (request[1].startswith('https')):
-        #   results = HV.harvest(request)
-        #else:
         results = HV.harvest_sickle(request)
     
         if (results == -1):
