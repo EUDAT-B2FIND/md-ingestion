@@ -4,6 +4,7 @@ Binyam Gebrekidan Gebre
 
 HOW TO RUN
 $ python md-postprocessor.py -i /path/to/input.json -o /path/to/output.json -c /path/to/config.txt
+In the scripts folder, you can see the format of the config.tx
 """
 
 import numpy as np
