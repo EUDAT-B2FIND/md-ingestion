@@ -1,6 +1,9 @@
 """
 Binyam Gebrekidan Gebre
 @Max Planck Institute, 2014
+
+HOW TO RUN
+$ python md-postprocessor.py -i /path/to/input.json -o /path/to/output.json -c /path/to/config.txt
 """
 
 import numpy as np
