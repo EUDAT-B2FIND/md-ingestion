@@ -77,6 +77,17 @@ narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc oa_publication
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc ec_fundedresources
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
+##%%% EUROPEANA
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0005
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1042
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1048
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1021
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1024
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0270
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0310
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0514
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0304
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1111
 ##%%% EISCAT
 ##eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc
 eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:home:jaheikki
