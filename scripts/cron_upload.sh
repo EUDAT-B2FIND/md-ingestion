@@ -17,6 +17,7 @@ upload_list="upload_list_${TODAY}"
 case $lhost in
   eudat-b1.dkrz.de)
    rhost=eudat-b1.dkrz.de:8080
+   rhost=eudat-b1.dkrz.de
 ##
    epiccheck='--epic_check credentials_11098'
    ;;
