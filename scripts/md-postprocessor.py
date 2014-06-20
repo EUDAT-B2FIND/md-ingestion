@@ -24,6 +24,7 @@ def get_conf(configFile):
     """
     reads config file 
     """
+
     f = codecs.open(configFile, "r", "utf-8")
     rules = f.readlines()[1:] # without the header
     rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
@@ -70,12 +71,13 @@ def truncate(dataset,facetName,old_value,size):
 def postprocess(dataset,rules):
     """
     changes dataset field values according to configuration
-    """          
+    """  
+ 
     for rule in rules:
         # rules can be checked for correctness
         assert(rule.count(',,') == 5),"a double comma should be used to separate items"
         
-        rule = rule.split(',,') # splits  each line of config file 
+        rule = rule.rstrip('\n').split(',,') # splits  each line of config file 
         groupName = rule[0]
         datasetName = rule[1]
         facetName = rule[2]
@@ -90,14 +92,15 @@ def postprocess(dataset,rules):
         r = dataset.get("name",None)
         if datasetName != '*' and datasetName != r:
             return dataset
-            
-        if action == "replace":
+
+        if action == 'replace':
             dataset = replace(dataset,facetName,old_value,new_value)
         if action == "truncate":
             pass
         if action == "another_action":
             pass
     
+
     return dataset
     
 def main():
@@ -115,7 +118,7 @@ def main():
 	# read input and config files
  	dataset = get_dataset(srcFile)
  	conf_data = get_conf(configFile)
- 	
+
  	# postprocess the json file
  	new_dataset = postprocess(dataset,conf_data)
  	
