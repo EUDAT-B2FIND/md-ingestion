@@ -3,6 +3,7 @@
   - HARVESTER   Harvests from a OAI-PMH server
   - CONVERTER   Converts XML files to JSON files with Lari's converter and by using mapfiles
   - UPLOADER    
+  - POSTPROCESS Run postprocess routines on JSON files
   - OUTPUT      Initializes the logger class and provides methods for saving log data and for printing those.    
 
 Install required modules simplejson, e.g. by :
@@ -241,6 +242,7 @@ class HARVESTER(object):
         self.OUT = OUT
         self.base_outdir = base_outdir
         self.fromdate = fromdate
+        
     
     def harvest_sickle(self, request):
         ## harvest_sickle (HARVESTER object, [community, source, verb, mdprefix, mdsubset]) - method
@@ -285,8 +287,11 @@ class HARVESTER(object):
             "timestart" : time.time(),  # start time per subset process
         }
         
-        # create sickle object:
+        # create sickle object and sets the default log output of the 'request' module to WARNING level:
         sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=30)
+     
+        requests_log = log.getLogger("requests")
+        requests_log.setLevel(log.WARNING)
         
         # if the number of files in a subset dir is greater than <count_break>
         # then create a new one with the name <set> + '_' + <count_set>
@@ -312,10 +317,12 @@ class HARVESTER(object):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
     
-        self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 103))
+        self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
         try:
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,
-                'from':self.fromdate}):
+            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
+            
+            	if (record.header.deleted):
+            	    continue
                 
                 stats['tcount'] += 1
 
@@ -1482,29 +1489,26 @@ class OUTPUT (object):
         
         self.logger = logger
 
-
-    
-    ## save_stats (OUT object, request, subset, mode, stats) - method
-    # Saves the statistics of a process (harvesting, converting or uploading) per subset.
-    # Requests which start with a '#' are special requests like '#Start' or '#GetPackages'
-    # and will be ignored in the most actions
-    #
-    # Parameters:
-    # -----------
-    # (string)  request - main request (community-mdprefix)
-    # (string)  subset - ...
-    # (string)  mode - process mode (can be 'h', 'c' or 'u')
-    # (dict)    stats - a dictionary with results stats
-    #
-    # Return Values:
-    # --------------
-    # None
     
     def save_stats(self,request,subset,mode,stats):
+        ## save_stats (OUT object, request, subset, mode, stats) - method
+        # Saves the statistics of a process (harvesting, converting or uploading) per subset.
+        # Requests which start with a '#' are special requests like '#Start' or '#GetPackages'
+        # and will be ignored in the most actions
+        #
+        # Parameters:
+        # -----------
+        # (string)  request - main request (community-mdprefix)
+        # (string)  subset - ...
+        # (string)  mode - process mode (can be 'h', 'c' or 'u')
+        # (dict)    stats - a dictionary with results stats
+        #
+        # Return Values:
+        # --------------
+        # None
+        
         # self.stats is a list with all results statistics 
         # of the harvesting, converting and uploading routines
-        
-        
         if(not request in self.stats):
             # create request dictionary:
             self.stats[request] = dict()
@@ -1601,19 +1605,20 @@ class OUTPUT (object):
                         elif (errors.find('ERROR:') != -1):
                             self.stats[request][subset]['#error'] = True
 
-                
-    ## get_stats (OUTPUT object, request, subset, mode, key) - method
-    # Returns the statistic dictionary which are identified by <request>, <subset>, <mode> and <key>
-    #
-    # Parameters:
-    # -----------
-    # (param_type)  param_name - param_des
-    #
-    # Return Values:
-    # --------------
-    # 1. (return_type)  return_name
+
     
     def get_stats(self,request,subset='',mode='',key=''):
+        ## get_stats (OUTPUT object, request, subset, mode, key) - method
+        # Returns the statistic dictionary which are identified by <request>, <subset>, <mode> and <key> and saved by 
+        #
+        # Parameters:
+        # -----------
+        # (param_type)  param_name - param_des
+        #
+        # Return Values:
+        # --------------
+        # 1. (return_type)  return_name
+        
 
         if ('#' in ''.join([request,subset,mode])):
             
