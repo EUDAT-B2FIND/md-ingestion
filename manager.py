@@ -155,7 +155,7 @@ def process(options,pstat,OUT):
     #
     # Parameters:
     # -----------
-    # 1. (OptionsParser object)    
+    # 1. (OptionsParser object)    - 
     #
     # Return Values:
     # --------------
