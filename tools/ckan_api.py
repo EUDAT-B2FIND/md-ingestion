@@ -20,8 +20,8 @@ import os,sys,time
 import simplejson as json
 import optparse
 
-from epicclient import EpicClient,Credentials
-from B2FIND import CKAN_CLIENT
+from .. import epicclient
+from .. import B2FIND
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
         exit()
 
     # create a new dkrz_ckanapi object:
-    CKAN = CKAN_CLIENT(options.iphost,options.auth)
+    CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
 
     # switch to interactive mode if options.action is not set:
     if(options.action == None):
@@ -60,13 +60,13 @@ def call_action(CKAN, options, action, object):
           credentials = None
           ec = None
           try:
-              credentials = Credentials('os',options.epic)
+              credentials = epicclient.Credentials('os',options.epic)
               credentials.parse()
           except Exception, err:
               print("%s Could not create credentials from credstore %s" % (err,options.epic))
           else:
               print "Create EPIC client instance to add uuid to handle server"
-              ec = EpicClient(credentials)
+              ec = epicclient.EpicClient(credentials)
 
     if (action == 'package_delete_all'):
         list=[]

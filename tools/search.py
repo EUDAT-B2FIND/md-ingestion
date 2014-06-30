@@ -3,7 +3,7 @@
 import os, sys, re
 import optparse
 
-from B2FIND import CKAN_CLIENT
+from .. import B2FIND
 
 def main():
     options, args = get_options()
@@ -33,7 +33,7 @@ def main():
     if (options.ckan):
         print "\n%s" %('-'*100)
         
-        CKAN = CKAN_CLIENT(options.ckan,None)
+        CKAN = B2FIND.CKAN_CLIENT(options.ckan,None)
         answer = CKAN.action('package_search', {"q":options.pattern,"rows":options.ckan_limit})
         
         # print results:

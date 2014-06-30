@@ -25,7 +25,7 @@ harvest                pyoai, lxml    easy_install pyoai, lxml or pip install py
 Modified by  c/o DKRZ 2013   Heinrich Widmann
 """
 
-from B2FIND import CKAN_CLIENT, HARVESTER, CONVERTER, UPLOADER, OUTPUT
+import B2FIND 
 from epicclient import EpicClient,Credentials
 import os, optparse, sys, glob
 from subprocess import call,Popen,PIPE
@@ -63,7 +63,7 @@ def main():
     
     # create logger and OUT output handler and initialise it:
     global logger
-    OUT = OUTPUT(pstat,now,jid,options)
+    OUT = B2FIND.OUTPUT(pstat,now,jid,options)
     logger = log.getLogger()
     
     # write mode to output:
@@ -186,7 +186,7 @@ def process(options,pstat,OUT):
     
     ## HARVESTING - Mode:    
     if (pstat['status']['h'] == 'tbd'):
-        HV = HARVESTER(OUT,pstat,options.outdir,options.fromdate)
+        HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
         
         # start the process harvesting:
         if mode is 'multi':
@@ -203,7 +203,7 @@ def process(options,pstat,OUT):
     if (OUT.convert_list or pstat['status']['h'] == 'no'):
         ## CONVERTING - Mode:  
         if (pstat['status']['c'] == 'tbd'):
-            CV = CONVERTER(OUT)
+            CV = B2FIND.CONVERTER(OUT)
         
             # start the process converting:
             if mode is 'multi':
@@ -220,8 +220,8 @@ def process(options,pstat,OUT):
         ## UPLOADING - Mode:  
         if (pstat['status']['u'] == 'tbd'):
             # create CKAN object                       
-            CKAN = CKAN_CLIENT(options.iphost,options.auth)
-            UP = UPLOADER(CKAN, OUT)
+            CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
+            UP = B2FIND.UPLOADER(CKAN, OUT)
 
             # start the process uploading:
             if mode is 'multi':
@@ -534,8 +534,8 @@ def process_delete(OUT, dir, options):
     return False
 
     # create CKAN object                       
-    CKAN = CKAN_CLIENT(options.iphost,options.auth)
-    UP = UPLOADER(CKAN, OUT)
+    CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
+    UP = B2FIND.UPLOADER(CKAN, OUT)
     
     credentials,ec = None,None
 
