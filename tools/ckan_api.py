@@ -20,8 +20,11 @@ import os,sys,time
 import simplejson as json
 import optparse
 
-from .. import epicclient
-from .. import B2FIND
+# add parent directory to python library searching paths
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import epicclient
+import B2FIND
 
 
 def main():
@@ -127,7 +130,7 @@ def update_progress(text,step,total,start_time):
 def clear_log(log):
     if (log == 'True'):
         try:
-            f = open('eudat_jmd_api.log', 'w')
+            f = open('api.log', 'w')
             f.write("")
             f.close()
         except IOError as (errno, strerror):
@@ -136,7 +139,7 @@ def clear_log(log):
 def write_log(log,message):
     if (log == 'True'):
         try:
-            f = open('api_2_run.log', 'a')
+            f = open('api.log', 'a')
             f.write(message)
             f.close()
         except IOError as (errno, strerror):
@@ -187,18 +190,18 @@ def get_options():
     p = optparse.OptionParser(
 	    description = '''Description: Management of meta data within CKAN instance , i.e. 
 		    submit CKAN APIs via webservices''',
-	    prog = 'ckan_api_v2.py',
+	    prog = 'ckan_api.py',
 	    usage = '''%prog [ OPTIONS ]'''
     )
 
-    p.add_option('--object', '-o', help="attributes of CKAN data set in JSON format (default is an empty data set).\ne.g.: '--action create_dataset --object '{\"name\":\"Test\",\"title\":\"Test-Title\"}''")
-    p.add_option('--file', '-f', help="path to a file with the attributes of CKAN data set in JSON format in the first line (program will ignored it if parameter '--object' was set)")
-    p.add_option('--action', '-a', help="CKAN action to be executed")
-    p.add_option('--log', '-l', help="Program will write a logfile to eudat_jmd_api.log")
+    p.add_option('--object', '-o', help="attributes of CKAN dataset in JSON format (default is an empty data set).\ne.g.: '--object '{\"name\":\"Test\",\"title\":\"Test-Title\"}''",metavar='JSON')
+    p.add_option('--file', '-f', help="path to a file with the attributes of CKAN data set in JSON format in the first line (program will ignored it if parameter '--object' was set)",metavar='FILENAME')
+    p.add_option('--action', '-a', help="CKAN action to be executed (for more information about available actions please visit http://docs.ckan.org/en/latest/api/index.html#action-api-reference). If this option is empty the program will switch to interactive mode.",metavar='STRING')
+    p.add_option('--log', '-l', help="Program will write a logfile to 'api.log'",metavar='BOOLEAN',default='False')
     p.add_option('--epic', '-e',
-         help="Check, generate and edit handles of CKAN datasets in handle server EPIC and with credentials as specified in given credstore file", default=None,metavar='FILE')
-    p.add_option('--iphost', '-i', help="IP adress of CKAN instance")
-    p.add_option('--auth', help="authentification for CKAN APIs (API key, taken from profile of CKAN user data")
+         help="Check, generate and edit handles of CKAN datasets in handle server EPIC and with credentials as specified in given credstore file (works at the moment only in conjunction with action 'package_delete_all')", default=None,metavar='FILENAME')
+    p.add_option('--iphost', '-i', help="IP adress of CKAN instance",metavar='URL')
+    p.add_option('--auth', help="authentification for CKAN APIs (API key, taken from profile of CKAN user data",metavar='STRING')
     options, arguments = p.parse_args()
     
     return options

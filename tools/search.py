@@ -3,10 +3,13 @@
 import os, sys, re
 import optparse
 
-from .. import B2FIND
+# add parent directory to python library searching paths
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import B2FIND
 
 def main():
-    options, args = get_options()
+    options, pattern = get_options()
     list = []
     
     if (options.dir):
@@ -17,11 +20,11 @@ def main():
             for file in filter(lambda x: x.endswith(options.filetype) , files):
                 counter += 1
                 update_progress(root,100*counter/no_files)
-                check_file(list, os.path.join(root, file), options.pattern, options.offset)
+                check_file(list, os.path.join(root, file), pattern, options.offset)
         
         # print results: 
         print "\n%s" %('-'*100)
-        print "Results on disk (%s), %d file(s)" % (options.dir, len(list))
+        print "Results on disk (%s), %d file(s), show max. %d:" % (options.dir, len(list), options.disk_limit)
         counter = 0
         for f,des in list:
             counter += 1
@@ -34,51 +37,98 @@ def main():
         print "\n%s" %('-'*100)
         
         CKAN = B2FIND.CKAN_CLIENT(options.ckan,None)
-        answer = CKAN.action('package_search', {"q":options.pattern,"rows":options.ckan_limit})
+        
+        # create pattern for CKAN:
+        ckan_pattern = pattern
+        if (options.community):
+            ckan_pattern += " AND groups:%s" % options.community
+        
+        answer = CKAN.action('package_search', {"q":ckan_pattern,"rows":options.ckan_limit})
         
         # print results:
-        print "Results on CKAN (%s), %d dataset(s)" % (options.ckan, answer['result']['count'])
+        print "Results on CKAN (%s), %d dataset(s), show max. %d:" % (options.ckan, answer['result']['count'], options.ckan_limit)
         for ds in answer['result']['results']:
             print '[%s]' % ds['name']
             print '    title: %s' % ds['title']
+            if (len(ds['groups'])):
+                print '    group: %s' % ds['groups'][0]['name']
                 
 def check_file(list, file, pattern, offset):
-    data = ''
+    data = None
+    
+#    if (':' in pattern and file.endswith('.json')): # loads the json file:
+#        with open(file, 'r') as f:
+#            try:
+#                data=json.loads(f.read())
+#            except Exception, e:
+#                print "[ERROR] Cannot load the json file %s! %s" % (file,e)
+#        
+#        if (pattern in data):
+#            # check main fields:
+#            for field in checklist:
+#                for cmd in checklist[field]:
+#                    if (not command(cmd,field, jsondata)):
+#                        checklist[field][cmd].append(file)
+#            
+#            # check the extra fields:
+#            extras_data = dict()
+#            for extra in data['extras']:
+#                extras_data[extra['key']] = extra['value']
+#        
+#            index = data.index(pattern)
+#            range = [
+#                index-offset if index > offset-1 else 0,
+#                index+offset+len(pattern) if len(data) > index+offset+len(pattern) else len(data)
+#            ]
+#            list.append((file, data[range[0]:index]+'\033[1m'+pattern+'\033[0m'+data[index+len(pattern):range[1]]))
+#    else:
     with open(file, 'r') as f:
         try:
             data=f.read()
         except Exception, e:
-            print "[ERROR] Cannot load the json file! %s" % e
-    
-    
+            print "[ERROR] Cannot load the file %s! %s" % (file, e)
+
     if (pattern in data):
         index = data.index(pattern)
         range = [
             index-offset if index > offset-1 else 0,
             index+offset+len(pattern) if len(data) > index+offset+len(pattern) else len(data)
         ]
-        list.append((file, data[range[0]:index-1]+' \033[1m'+pattern+'\033[0m'+data[index+len(pattern):range[1]]))
+        list.append((file, data[range[0]:index]+'\033[1m'+pattern+'\033[0m'+data[index+len(pattern):range[1]]))
         
 def get_options():
     p = optparse.OptionParser(
-        description = "Description: Check mapped JSON files for correct fields",
-        formatter = optparse.TitledHelpFormatter(),
-        prog = 'check_json.py',
-        version = "%prog "
+        description = "Description: Search in ASCII files and CKAN packages",
+        prog = 'search.py',
+        usage = '%prog [ OPTIONS ] PATTERN\nPATTERN is your search pattern. Regular expressions and fields for disk searches are not supported.'
     )
    
-    p.add_option('--dir', '-d',  help='\nDirectory', default=None, metavar='PATH')
-    p.add_option('--disk_limit',  help='\nLimit of shown files', default=20, type='int', metavar='INTEGER')
-    p.add_option('--ckan', '-c',  help='\nScript will also search in this CKAN portal', default=None, metavar='IP/URL')
-    p.add_option('--ckan_limit',  help='\nLimit of shown datasets', default=20, type='int', metavar='INTEGER')
-    p.add_option('--pattern', '-p',  help='\nPattern .', default=None, metavar='STRING')
-    p.add_option('--filetype', '-f',  help='\n', default='.json', metavar='FILE EXTENSION')
-    p.add_option('--offset',  help='\nHow much characters will be shown before and after the found pattern', default=35, type='int', metavar='INTEGER')
+    group_disk = optparse.OptionGroup(p, "Disk Options",
+        "Use these options if you want to search in files on disk")
+    group_disk.add_option('--dir', '-d',  help='Directory where you want to search in. The program will search recursively.', default=None, metavar='PATH')
+    group_disk.add_option('--disk_limit',  help='Limit of shown files', default=20, type='int', metavar='INTEGER')
+    group_disk.add_option('--filetype', '-f',  help='Filextension (e.g. "json", "xml", etc.)', metavar='FILE EXTENSION')
+    group_disk.add_option('--offset',  help='How much characters will be shown before and after the found pattern', default=35, type='int', metavar='INTEGER')
     
-    return p.parse_args()
+    group_ckan = optparse.OptionGroup(p, "CKAN Options",
+        "Use these options if you want to search in CKAN")
+    group_ckan.add_option('--ckan',  help='Search in this CKAN portal', default=None, metavar='IP/URL')
+    group_ckan.add_option('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
+    group_ckan.add_option('--ckan_limit',  help='Limit of shown datasets', default=20, type='int', metavar='INTEGER')
+    
+    p.add_option_group(group_disk)
+    p.add_option_group(group_ckan)
+    
+    options, args = p.parse_args()
+    
+    if (len(args) != 1):
+        print "[ERROR] Need a pattern as an argument!"
+        exit()
+    
+    return options, args[0]
                
 def update_progress(des,progress):
-    sys.stdout.write('\rProcessing file {0} : [{1}{2}] {3}%            '.format(des,'#'*(progress/10), ' '*(10-progress/10), progress))
+    sys.stdout.write('\rProcessing files {0} : [{1}{2}] {3}%            '.format(des,'#'*(progress/10), ' '*(10-progress/10), progress))
     sys.stdout.flush()
 
 if __name__ == "__main__":
