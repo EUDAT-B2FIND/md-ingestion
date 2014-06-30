@@ -2,8 +2,7 @@
 
 """ckan_api.py  Executes CKAN APIs (interface to CKAN)
 
-Copyright (c) 2013 Heinrich Widmann (DKRZ)
-                   John Mrziglod (DKRZ)
+Copyright (c) 2014 John Mrziglod (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
