@@ -177,10 +177,10 @@ then
     echo "$comm $oaiurl $proc $mdformatpath $mdformat $subset" | tee  jobfile_$nj
     coutfile="log/converttest_${TODAY}_${nj}.out"
     cerrfile="log/converttest_${TODAY}_${nj}.err"
-    convertJob="./eudat_jmd_manager.py -l jobfile_$nj --mode c >${coutfile} 2>${cerrfile} && echo '$(date) : test convert job finished' >> $logfile || status=$? ;"
+    convertJob="./manager.py -l jobfile_$nj --mode c >${coutfile} 2>${cerrfile} && echo '$(date) : test convert job finished' >> $logfile || status=$? ;"
     uoutfile="log/uploadtest_${TODAY}_${nj}.out"
     uerrfile="log/uploadtest_${TODAY}_${nj}.err"    
-    uploadJob="nohup ./eudat_jmd_manager.py -l jobfile_$nj --mode u -i $rhost $ckancheck $epiccheck >${uoutfile} 2>${uerrfile} && echo -e \"$(date) : test upload job finished\" >> $logfile || status=$? ;"
+    uploadJob="nohup ./manager.py -l jobfile_$nj --mode u -i $rhost $ckancheck $epiccheck >${uoutfile} 2>${uerrfile} && echo -e \"$(date) : test upload job finished\" >> $logfile || status=$? ;"
     ## Processing
     status=0
 
