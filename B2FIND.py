@@ -2,7 +2,7 @@
   - CKAN_CLIENT Executes CKAN APIs (interface to CKAN)
   - HARVESTER   Harvests from a OAI-PMH server
   - CONVERTER   Converts XML files to JSON files with Lari's converter and by using mapfiles
-  - UPLOADER    
+  - UPLOADER    Uploads JSON files to CKAN portal
   - POSTPROCESS Run postprocess routines on JSON files
   - OUTPUT      Initializes the logger class and provides methods for saving log data and for printing those.    
 
@@ -1398,7 +1398,11 @@ class OUTPUT (object):
         if (options.jobdir):
             self.jobdir = options.jobdir
         else:
-            self.jobdir='log/%s/%s/%s_%s_%s' % (now.split(' ')[0],now.split(' ')[1].split(':')[0],jid,options.mode,options.list)
+            self.jobdir='log/%s/%s/%s_%s_%s' % (
+                now.split(' ')[0],
+                now.split(' ')[1].split(':')[0],
+                jid, options.mode, options.list
+            )
             
         if not os.path.exists(self.jobdir):
             os.makedirs(self.jobdir)
@@ -1406,6 +1410,7 @@ class OUTPUT (object):
         self.convert_list = None
         self.verbose = options.verbose
         
+        # Generate special request fields in statistic dictionary:
         self.stats = {
             '#GetPackages' : {
                 'time':0,
@@ -1492,13 +1497,20 @@ class OUTPUT (object):
     
     def save_stats(self,request,subset,mode,stats):
         ## save_stats (OUT object, request, subset, mode, stats) - method
-        # Saves the statistics of a process (harvesting, converting or uploading) per subset.
+        # Saves the statistics of a process (harvesting, converting or uploading) per subset in <OUTPUT.stats>. 
+        # <OUTPUT.stats> is a big dictionary with all results statistics of the harvesting, converting and uploading routines.
         # Requests which start with a '#' are special requests like '#Start' or '#GetPackages'
-        # and will be ignored in the most actions
+        # and will be ignored in the most actions.
+        #
+        # Special Requests:
+        #   #Start    - contents statistics from the start periode and common details of the manager.py
+        #       Subsets:
+        #           TotalTime   - total time of all processes (without HTML file generation) since start
+        #           StartTime   - start time of the manager
         #
         # Parameters:
         # -----------
-        # (string)  request - main request (community-mdprefix)
+        # (string)  request - normal request named by <community>-<mdprefix> or a special request which begins with a '#'
         # (string)  subset - ...
         # (string)  mode - process mode (can be 'h', 'c' or 'u')
         # (dict)    stats - a dictionary with results stats
@@ -1507,16 +1519,21 @@ class OUTPUT (object):
         # --------------
         # None
         
-        # self.stats is a list with all results statistics 
-        # of the harvesting, converting and uploading routines
+        
+        # create a statistic dictionary for this request:
         if(not request in self.stats):
             # create request dictionary:
             self.stats[request] = dict()
         
+        # special requests have only dictionaries with two-level-depth:
         if (request.startswith('#')):
             # special request e.g. '#Start':
             self.stats[request][mode] += stats
+        
+        # normal requests have dictionaries with three-level-depth:
         else:
+        
+            # create an empty template dictionary if the <subset> have not exists yet:
             if(not subset in self.stats[request]):
                 self.stats_counter += 1
                 template = {
@@ -1555,28 +1572,31 @@ class OUTPUT (object):
                     '#id':self.stats_counter,
                 }
                 self.stats[request].update({subset : template})
-        
+            
+            # update the values in the old dictionary with the newest <stats>
             for k in stats:
                 self.stats[request][subset][mode][k] += stats[k]
             
+            # calculate the average time per record:
             if (self.stats[request][subset][mode]['count'] != 0): 
                 self.stats[request][subset][mode]['avg'] = \
                     self.stats[request][subset][mode]['time'] / self.stats[request][subset][mode]['count']
             else: 
                 self.stats[request][subset][mode]['avg'] = 0
 
-        
-        if (not request.startswith('#') or request == '#Start'):
-            ## Error and log files are used for all normal requests and the #Start procedure
 
-            # shutdown the logger                                                                       
+        # If a normal or the #Start request is saved then write the log files separately for each <subset>
+        if (not request.startswith('#') or request == '#Start'):
+
+            # shutdown the logger:                                                                  
             log.shutdown()
             
-            
-            logdir='%s' % self.jobdir
+            # make the new log dir if it is necessary:
+            logdir= self.jobdir
             if (not os.path.exists(logdir)):
                os.makedirs(logdir)     
 
+            # generate new log and error filename:
             logfile, errfile = '',''
             if (request == '#Start'):
                 logfile='%s/start.log.txt' % (logdir)
@@ -1585,8 +1605,8 @@ class OUTPUT (object):
                 logfile='%s/%s_%s.log.txt' % (logdir,mode,self.get_stats(request,subset,'#id'))
                 errfile='%s/%s_%s.err.txt' % (logdir,mode,self.get_stats(request,subset,'#id'))
 
+            # move log files:
             try:
-                # move log files:
                 if (os.path.exists(logdir+'/myapp.log')):
                     os.rename(logdir+'/myapp.log',logfile )
                 if (os.path.exists(logdir+'/myapp.err')):                                                        
@@ -1594,6 +1614,7 @@ class OUTPUT (object):
             except OSError, e:
                 print("[ERROR] Cannot move log and error files to %s and %s: %s\n" % (logfile,errfile,e))
             else:
+                # set ERROR or CRITICAL flag in stats dictionary if an error log exists:
                 if (os.path.exists(errfile)):
                     # open error file:
                     errors=open(errfile,'r').read() or 'No error occured'
@@ -1609,15 +1630,19 @@ class OUTPUT (object):
     
     def get_stats(self,request,subset='',mode='',key=''):
         ## get_stats (OUTPUT object, request, subset, mode, key) - method
-        # Returns the statistic dictionary which are identified by <request>, <subset>, <mode> and <key> and saved by 
+        # Returns the statistic dictionary which are identified by <request>, <subset>, <mode> and <key> and 
+        # saved by .save_stats() before
         #
         # Parameters:
         # -----------
-        # (param_type)  param_name - param_des
+        # (string)  request - param_des
+        # (string)  subset - param_des
+        # (string)  mode - param_des
+        # (string)  key - param_des
         #
         # Return Values:
         # --------------
-        # 1. (return_type)  return_name
+        # Statistic values
         
 
         if ('#' in ''.join([request,subset,mode])):
@@ -1642,7 +1667,7 @@ class OUTPUT (object):
                     
                 return total
             elif(subset == '#total' and mode != '#total'):
-                # returns the sum of the keys in the modes in all subsets in the request
+                # returns the sum of the keys in the modes of all subsets in the request
                 
                 total = 0
                 
@@ -1666,15 +1691,29 @@ class OUTPUT (object):
         
         return self.stats[request][subset][mode][key]
             
+            
+            
     
     def HTML_print_begin(self):
+        ## HTML_print_begin (OUTPUT object) - method
+        # Writes header and layout stylesheet at the begin of HTML overview file and save it to '<OUTPUT.jobdir>/overview.html'
+        #
+        # Parameters:
+        # -----------
+        # None
+        #
+        # Return Values:
+        # --------------
+        # None
+    
+    
         pstat = self.pstat
         options = self.options
     
         # open results.html
         reshtml = open(self.jobdir+'/overview.html', 'w')
         
-        # write header of html file:
+        # write header with css stylesheets at the begin of the HTML file:
         head='''<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"
         \"http://www.w3.org/TR/html4/strict.dtd\">
     <html>
@@ -1693,7 +1732,10 @@ class OUTPUT (object):
         
         # write head of the body:
         reshtml.write("\t\t<h1>Results of B2FIND ingestion workflow</h1>\n")
-        reshtml.write('\t\t<b>Date:</b> %s UTC, <b>Process ID:</b> %s, <b>Epic check:</b> %s<br />\n\t\t<ol>\n' % (self.start_time, self.jid, options.epic_check))
+        reshtml.write(
+            '\t\t<b>Date:</b> %s UTC, <b>Process ID:</b> %s, <b>Epic check:</b> %s<br />\n\t\t<ol>\n' 
+                % (self.start_time, self.jid, options.epic_check)
+        )
         
         i=1
         for proc in pstat['status']:
@@ -1705,7 +1747,9 @@ class OUTPUT (object):
         reshtml.write('\t\t</ol>\n')
         reshtml.close()
 
+
     def HTML_print_end(self):
+    
         pstat = self.pstat
         options = self.options
         

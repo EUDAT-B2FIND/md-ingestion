@@ -25,7 +25,7 @@ harvest                pyoai, lxml    easy_install pyoai, lxml or pip install py
 Modified by  c/o DKRZ 2013   Heinrich Widmann
 """
 
-from B2FIND import CKAN_CLIENT, HARVESTER, CONVERTER, UPLOADER, OUTPUT
+import B2FIND 
 from epicclient import EpicClient,Credentials
 import os, optparse, sys, glob
 from subprocess import call,Popen,PIPE
@@ -63,7 +63,7 @@ def main():
     
     # create logger and OUT output handler and initialise it:
     global logger
-    OUT = OUTPUT(pstat,now,jid,options)
+    OUT = B2FIND.OUTPUT(pstat,now,jid,options)
     logger = log.getLogger()
     
     # write mode to output:
@@ -186,7 +186,7 @@ def process(options,pstat,OUT):
     
     ## HARVESTING - Mode:    
     if (pstat['status']['h'] == 'tbd'):
-        HV = HARVESTER(OUT,pstat,options.outdir,options.fromdate)
+        HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
         
         # start the process harvesting:
         if mode is 'multi':
@@ -203,7 +203,7 @@ def process(options,pstat,OUT):
     if (OUT.convert_list or pstat['status']['h'] == 'no'):
         ## CONVERTING - Mode:  
         if (pstat['status']['c'] == 'tbd'):
-            CV = CONVERTER(OUT)
+            CV = B2FIND.CONVERTER(OUT)
         
             # start the process converting:
             if mode is 'multi':
@@ -220,8 +220,8 @@ def process(options,pstat,OUT):
         ## UPLOADING - Mode:  
         if (pstat['status']['u'] == 'tbd'):
             # create CKAN object                       
-            CKAN = CKAN_CLIENT(options.iphost,options.auth)
-            UP = UPLOADER(CKAN, OUT)
+            CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
+            UP = B2FIND.UPLOADER(CKAN, OUT)
 
             # start the process uploading:
             if mode is 'multi':
@@ -274,6 +274,18 @@ def process_harvest(HV, rlist):
         harvesttime=time.time()-harveststart
         #results['time'] = harvesttime
     
+    
+## process_convert (CONVERTER object, rlist) - function
+# Converts per request.
+#
+# Parameters:
+# -----------
+# (object)  CONVERTER - object from the class CONVERTER
+# (list)    rlist - list of request lists 
+#
+# Return Values:
+# --------------
+# None
 def process_convert(CV, rlist):
     for request in rlist:
         logger.info('\n## Mapping request %s##' % request)
@@ -534,8 +546,8 @@ def process_delete(OUT, dir, options):
     return False
 
     # create CKAN object                       
-    CKAN = CKAN_CLIENT(options.iphost,options.auth)
-    UP = UPLOADER(CKAN, OUT)
+    CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
+    UP = B2FIND.UPLOADER(CKAN, OUT)
     
     credentials,ec = None,None
 
@@ -708,18 +720,18 @@ def parse_list_file(process,filename,filter=''):
     
 def options_parser(modes):
     
-    descI="""           I.  Ingestion of meta data comprising                                           
+    descI="""           I.  Ingestion of metadata comprising                                           
               - 1. Harvesting of XML files from OAI-PMH MD provider(s)\n\t
               - 2. Converting XML to JSON and semantic mapping of tags to CKAN fields
               - 3. Uploading resulting JSON {key:value} dict\'s as datasets to JMD portal
 """
     p = optparse.OptionParser(
         description = """Description :                                                    
-           Management of meta data within EUDAT Joint Metadata Domain (JMD), i.e.    
+           Management of metadata within EUDAT B2FIND, i.e.    
 """ + descI,
         formatter = optparse.TitledHelpFormatter(),
         prog = 'eudat_jmd_manager.py',
-        epilog='For any further information and documentation please look at README.txt file or at the EUDAT wiki (-> JMD Software).',
+        epilog='For any further information and documentation please look at README.txt file or at the EUDAT wiki (https://confluence.csc.fi/display/Eudat/B2FIND+Manager).',
         version = "%prog " + ManagerVersion
     )
    
