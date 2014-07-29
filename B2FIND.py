@@ -993,7 +993,124 @@ class CONVERTER(object):
     
         return results
 
+    def reconvert(self,community,mdprefix,path):
+        ## convert (CONVERTER object, community, path) - method
+        # 'Re'-Converts the JSON files in directory <path>, 
+        # which is defined by <community>, to XML files in B2FIND md format             #
+        # Parameters:
+        # -----------
+        # 1. (string)   community - B2FIND community of the files
+        # 2. (string)   path - path to subset directory without (!) 'json' subdirectory
+        #
+        # Return Values:
+        # --------------
+        # 1. (dict)     results statistics
+    
+        results = {
+            'count':0,
+            'tcount':0,
+            'ecount':0,
+            'time':0
+        }
+        
+        # check paths
+        if not os.path.exists(path):
+            self.logger.error('[ERROR] The directory "%s" does not exist! No files for re-converting are found!\n(Maybe your convert list has old items?)' % (path))
+            return results
+        elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
+            self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files for converting are found!\n(Maybe your convert list has old items?)' % (path))
+            return results
+    
+        ##HEW?  check re-mapfile
+        ##HEW? remapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
+        ##HEW?if not os.path.isfile(mapfile):
+        ##HEW?   remapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
+        ##HEW?  if not os.path.isfile(mapfile):
+        ##HEW?    self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+        ##HEW?      return results
 
+        # run re-converting
+        # find all .json files in path/json:
+        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        
+        results['tcount'] = len(files)
+
+        if (not os.path.isdir(path+'/b2find')):
+             os.makedirs(path+'/b2find')
+
+        print 'ppp %s' %  path+'/b2find'       
+        fcount = 1
+        for filename in files:
+            jsondata = dict()
+        
+            if ( os.path.getsize(path+'/json/'+filename) > 0 ):
+                with open(path+'/json/'+filename, 'r') as f:
+                    try:
+                        jsondata=json.loads(f.read())
+                    except:
+                        log.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
+                        results['ecount'] += 1
+                        continue
+            else:
+                results['ecount'] += 1
+                continue
+            
+            # remove field fulltext
+            extras_counter = 0
+            for extra in jsondata['extras']:
+                if(extra['key'] == 'fulltext'):
+                    jsondata['extras'].pop(extras_counter)
+                    break
+                extras_counter  += 1
+
+            # get dataset name from filename (a uuid generated identifier):
+            ds_id = os.path.splitext(filename)[0]
+            xmlfile=ds_id+'.xml'            
+
+            self.logger.info('    | r | %-4d | %-40s |' % (fcount,ds_id))
+            
+            # get OAI identifier from json data extra field 'oai_identifier':
+            oai_id  = None
+            for extra in jsondata['extras']:
+                if(extra['key'] == 'oai_identifier'):
+                    oai_id = extra['value']
+                    break
+            self.logger.debug("        |-> identifier: %s\n" % (oai_id))
+            
+            ### Mapper post processing
+            ##rules=[u'*,,*,,Language,,de,,German,,replace\n']
+            ##HEW? if ( mappp == 'True' ):
+            ##HEW?   jsondata=UP.postprocess(jsondata,rules)
+            ## print 'pjsondata %s' % pjsondata
+
+            ##HEW?### VALIDATE JSON DATA
+            ##HEW?if (not UP.validate(jsondata)):
+            ##HEW?    logger.info('        |-> Reconvert is aborted')
+            ##HEW?    results['ecount'] += 1
+            ##HEW?    continue
+
+            ### reconvert !!
+            import xmltools
+
+            try:
+              xml = xmltools.WriteToXMLString(jsondata)
+              # write B2FIND xml file:
+              f = open(path+'/b2find/'+xmlfile, 'w')
+              f.write(xml)
+              f.close
+            except IOError, e:
+              self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (xmlfile,e))
+              stats['ecount'] +=1
+              return(False, ds_id, path+'/b2find/', count_set)
+             
+        # check output and print it
+        ##HEW-D self.logger.info(out)
+        ##HEW-D if err: self.logger.error('[ERROR] ' + err)
+        
+        # count ... all .xml files in path/b2find
+        results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/b2find')))
+    
+        return results    
 
 class UPLOADER (object):
 
@@ -1568,6 +1685,13 @@ class OUTPUT (object):
                         'avg':0,
                     },
                     'c':{
+                        'count':0,
+                        'ecount':0,
+                        'tcount':0,
+                        'time':0,
+                        'avg':0
+                    },
+                    'r':{
                         'count':0,
                         'ecount':0,
                         'tcount':0,

@@ -2,7 +2,7 @@
 
 """manager.py
   Management of metadata within the EUDAT Joint Metadata Domain (B2FIND)
-  MD Ingestion : Harvest from OAI provider, convert XML (to JSON), semantic mapping of MD schema and upload to JMD portal
+  MD Ingestion : Harvest from OAI provider, convert XML (to JSON), semantic mapping of MD schema, remap to B2FIND xml, and upload to JMD portal
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ), John Mrziglod (DKRZ)
 
@@ -49,7 +49,7 @@ def main():
     print('\nVersion: %s' % ManagerVersion)
 
     # parse command line options and arguments:
-    modes=['h','harvest','c','convert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
+    modes=['h','harvest','c','convert','r','reconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
     p = options_parser(modes)
     global options
     options,arguments = p.parse_args()
@@ -151,7 +151,7 @@ def main():
 
 def process(options,pstat,OUT):
     ## process (options,pstat,OUT) - function
-    # Starts the specific process routines for harvesting, converting and uploading
+    # Starts the specific process routines for harvesting, converting, reconverting and uploading
     #
     # Parameters:
     # -----------
@@ -216,6 +216,22 @@ def process(options,pstat,OUT):
                     options.outdir + '/' + options.mdprefix,
                     options.mdsubset
                 ]])
+        ## RE-CONVERTING - Mode:  
+        if (pstat['status']['r'] == 'tbd'):
+            CV = B2FIND.CONVERTER(OUT)
+        
+            # start the process converting:
+            if mode is 'multi':
+                process_reconvert(CV, parse_list_file('reconvert', OUT.convert_list or options.list, options.community))
+            else:
+                process_reconvert(CV,[[
+                    options.community,
+                    options.source,
+                    options.mdprefix,
+                    options.outdir + '/' + options.mdprefix,
+                    options.mdsubset
+                ]])
+
 
         ## UPLOADING - Mode:  
         if (pstat['status']['u'] == 'tbd'):
@@ -709,15 +725,195 @@ def parse_list_file(process,filename,filter=''):
                 logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Either 4 or 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
                 exit_program()
                 
-        if(process == 'convert' or process == 'upload' or process == 'delete'):
+        if(process == 'convert' or process == 'reconvert' or process == 'upload' or process == 'delete'):
             if len(reqlist[-1]) != 5:
                 logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Only 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
                 exit_program()
     
     return reqlist
 
-
     
+def process_reconvert(CV, rlist):
+
+    for request in rlist:
+        logger.info('\n## Re-Mapping request %s##' % request)
+        
+        rcstart = time.time()
+        
+        #            convert(community ,mdprefix  ,absolute path with subset directory       )
+        results = CV.reconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+
+        rctime=time.time()-rcstart
+        results['time'] = rctime
+        
+        # save stats:
+        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'r',results)
+
+
+def process_reupconvert(UP, rlist, options):
+
+    CKAN = UP.CKAN
+    last_community = ''
+    package_list = dict()
+
+    for request in rlist:
+        logger.info('\n## Reconverting request %s##' % request)
+        
+        community, source, dir = request[0:3]
+        mdprefix = request[3]
+        subset = request[4]
+        dir = dir+'/'+subset
+        
+        results = {
+            'count':0,
+            'ecount':0,
+            'tcount':0,
+            'time':0
+        }
+        
+        if not os.path.exists(dir):
+            logger.error('[ERROR] The directory "%s" does not exist! No files for reconverting are found!\n(Maybe your reconvert list has old items?)' % (dir))
+            
+            # save stats:
+            UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
+            
+            continue
+        
+        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
+        
+        reconvertstart = time.time()
+        
+##HEW-ADD??        # check for re-mapper postproc config file
+##HEW-ADD??        ppconfig_file='%s/%s/re-mdpp-%s-%s.conf' % (os.getcwd(),'../mapper/current/mapfiles',community,mdprefix)
+##HEW-ADD??        if os.path.isfile(ppconfig_file):
+##HEW-ADD??            mappp='True'
+##HEW-ADD??            # reads config file 
+##HEW-ADD??
+##HEW-ADD??            f = codecs.open(ppconfig_file, "r", "utf-8")
+##HEW-ADD??            rules = f.readlines()[1:] # without the header
+##HEW-ADD??            rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
+##HEW-ADD??        else:
+##HEW-ADD??            mappp='False'
+##HEW-ADD??            
+
+
+        # find all .json files in dir/json:
+        files = filter(lambda x: x.endswith('.json'), os.listdir(dir+'/json'))
+        
+        results['tcount'] = len(files)
+        
+        fcount = 1
+        for filename in files:
+            jsondata = dict()
+        
+            if ( os.path.getsize(dir+'/json/'+filename) > 0 ):
+                with open(dir+'/json/'+filename, 'r') as f:
+                    try:
+                        jsondata=json.loads(f.read())
+                    except:
+                        log.error('    | [ERROR] Cannot load the json file %s' % dir+'/json/'+filename)
+                        results['ecount'] += 1
+                        continue
+            else:
+                results['ecount'] += 1
+                continue
+
+            # get dataset name from filename (a uuid generated identifier):
+            ds_id = os.path.splitext(filename)[0]
+            
+            logger.info('    | r | %-4d | %-40s |' % (fcount,ds_id))
+            
+            # get OAI identifier from json data extra field 'oai_identifier':
+            oai_id  = None
+            for extra in jsondata['extras']:
+                if(extra['key'] == 'oai_identifier'):
+                    oai_id = extra['value']
+                    break
+            logger.debug("        |-> identifier: %s\n" % (oai_id))
+            
+##HEW-ADD??          ### Mapper post processing
+##HEW-ADD??          ##rules=[u'*,,*,,Language,,de,,German,,replace\n']
+##HEW-ADD??          if ( mappp == 'True' ):
+##HEW-ADD??             jsondata=UP.postprocess(jsondata,rules)
+##HEW-ADD??          ## print 'pjsondata %s' % pjsondata
+
+            ### VALIDATE JSON DATA
+            if (not UP.validate(jsondata)):
+                logger.info('        |-> Reconvert is aborted')
+                results['ecount'] += 1
+                continue
+
+            ### ADD SOME EXTRA FIELDS TO JSON DATA:
+            #  generate get record request for field MetaDataAccess:
+            reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
+            mdaccess = reqpre + '&identifier=' + oai_id
+            index1 = mdaccess
+
+            # exceptions for some communities:
+            if (community == 'clarin' and oai_id.startswith('mi_')):
+                mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
+            elif (community == 'gbif'):
+                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+oai_id
+            elif (community == 'sdl'):
+                mdaccess =reqpre+'&identifier=oai::record/'+oai_id
+
+            jsondata['extras'].append({
+                     "key" : "MetaDataAccess",
+                     "value" : mdaccess
+                    })
+            
+            # determine checksum of json record and append
+            try:
+                # delete the extra field 'MapperVersion' from check_data
+                check_data = copy.deepcopy(jsondata)
+                extras_counter = 0
+                for extra in check_data['extras']:
+                    if(extra['key'] == 'MapperVersion'):
+                        check_data['extras'].pop(extras_counter)
+                        break
+                    extras_counter  += 1
+                    
+                checksum=hashlib.md5(unicode(json.dumps(check_data))).hexdigest()
+            except UnicodeEncodeError:
+                logger.error('        |-> [ERROR] Unicode encoding failed during md checksum determination')
+                checksum=None
+            else:
+                jsondata['version'] = checksum
+                
+            # Set the tag ManagerVersion:
+            jsondata['extras'].append({
+                     "key" : "ManagerVersion",
+                     "value" : ManagerVersion
+                    })
+
+            
+            reconvert = 0
+
+            reconvert = UP.reconvert(ds_id,dsstatus,community,jsondata)
+
+            results['count'] +=  reconvert
+            
+            fcount += 1
+            
+        reconverttime=time.time()-reconvertstart
+        results['time'] = reconverttime
+        
+        # save stats:
+        UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
+
+
+
+## process_delete (OUT object, dir, options) - method
+# Delete all files in delete/file
+#
+# Parameters:
+# -----------
+# description of parameters
+#
+# Return Values:
+# --------------
+# return values
+
 def options_parser(modes):
     
     descI="""           I.  Ingestion of metadata comprising                                           
@@ -739,7 +935,7 @@ def options_parser(modes):
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
-    p.add_option('--mode', '-m', metavar=' ' + " | ".join(modes), help='\nThis can be used to do a partial workflow. If you use converting without uploading the data will be stored in .json files. Default is "h-u" which means a totally ingestion with (h)arvesting, (c)onverting and (u)ploading to a CKAN database.', default='h-u')
+    p.add_option('--mode', '-m', metavar=' ' + " | ".join(modes), help='\nThis can be used to do a partial workflow. If you use converting without uploading the data will be stored in .json files. Default is "h-u" which means a totally ingestion with (h)arvesting, (c)onverting, (r)econverting and (u)ploading to a CKAN database.', default='h-u')
 
     p.add_option('--check_mappings', help="Check all mappings which are stored in './maptables/' for converting the .xml in .json format and choose the mapping table with the best results.", default=None, metavar='BOOLEAN')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", default='', metavar='STRING')
@@ -789,7 +985,7 @@ def pstat_init (p,modes,mode,source,iphost):
         mode = 'h-u'
  
     # initialize status, count and timing of processes
-    plist=['a','h','c','u','d']
+    plist=['a','h','c','r','u','d']
     pstat = {
         'status' : {},
         'text' : {},
@@ -815,13 +1011,15 @@ def pstat_init (p,modes,mode,source,iphost):
     else:
        stext='a list of MD providers'
        
-    pstat['text']['h']='Harvest XML files from ' + stext 
-    pstat['text']['c']='Convert XML to JSON and do semantic mapping'  
+    pstat['text']['h']='Harvest community XML files from ' + stext 
+    pstat['text']['c']='Convert community XML to B2FIND JSON and do semantic mapping'  
+    pstat['text']['r']='Re-Convert B2FIND JSON to B2FIND XML and do semantic mapping'  
     pstat['text']['u']='Upload JSON records as datasets into JMD %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
     pstat['short'].append(['h', 'Harvesting'])
     pstat['short'].append(['c', 'Converting'])
+    pstat['short'].append(['r', 'Reconverting'])
     pstat['short'].append(['u', 'Uploading'])
     pstat['short'].append(['d', 'Deletion'])
     

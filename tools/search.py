@@ -63,6 +63,14 @@ def main():
         for ds in answer['result']['results']:
             print '[%s]' % ds['name']
             print '    title: %s' % ds['title']
+            pidf = open('pid.file', 'a')
+
+            for extra in ds['extras']:
+                if (extra['key'] == 'PID'):
+                   print '    PID : %s' % extra['value']
+                   pidf.write(extra['value']+'\n')
+
+            pidf.close()
             if (len(ds['groups'])):
                 print '    group: %s' % ds['groups'][0]['name']
                 

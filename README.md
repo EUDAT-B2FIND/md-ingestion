@@ -38,6 +38,9 @@ or on systems with no apt-get but yum available :
 or (if this is not workabl, e.g. on some SuSE distr.) try
   > sudo zypper install <module>
 
+And set PYTHONPATH to needed modules (must be downloaded if not available) :
+
+   > setenv PYTHONPATH "/home/k204019/Downloads/PicklingTools151Release/Python"
 
 Usage
 =====

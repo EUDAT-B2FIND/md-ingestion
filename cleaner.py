@@ -150,8 +150,7 @@ def main():
       qmsg='is'   
       mainmode='deletion'
 
-    print "\n=== Start %s processing ===\n\tID LIST:\t%s\n\t%s MODE:\t%s" % (mainmode,options.list, mainmode.upper(), options.mode)
-    if options.ckan_check :
+    if options.host :
        print "\tCKAN HOST:\t%s" % (options.host)
     if options.epic_check :
        print "\tCREDENTIAL:\t%s" % (options.epic_check)
@@ -179,10 +178,9 @@ def main():
               ec = EpicClient(credentials) 
 
  
-    if (options.ckan_check == 'True'):
-        # checking given options:
-          if (options.host):
-            if (not options.auth):
+    # checking given options:
+    if (options.host):
+        if (not options.auth):
              from os.path import expanduser
              home = expanduser("~")
              if(not os.path.isfile(home+'/.netrc')):
@@ -197,38 +195,39 @@ def main():
                 if(options.host == host.split()[0]):
                    options.auth = host.split()[1]
                    break
-             if (not options.auth):
-                logger.critical('[CRITICAL] API key is neither given by option --auth nor can retrieved from %s/.netrc' % home )
-                exit()
-          else:
+        else:
             logger.critical(
                 "\033[1m [CRITICAL] " +
-                    "For CKAN database delete mode valid URL of CKAN instance (option -i) and API key (--auth) must be given" + "\033[0;0m"
+                    "For CKAN database delete mode valid URL of CKAN instance (option --host) and API key (--auth or read from ~/.netrc) must be given" + "\033[0;0m"
             )
             sys.exit(-1)
 
-          CKAN = CKAN_CLIENT(options.host,options.auth)
-          UP = UPLOADER(CKAN, OUT)
-          if (options.community):
+        CKAN = CKAN_CLIENT(options.host,options.auth)
+        UP = UPLOADER(CKAN, OUT)
+
+    if (options.community):
              UP.get_packages(options.community)
-             clist = UP.package_list.keys()
+             list = UP.package_list.keys()
              ##clist = UP.get_packages(options.community).keys()
              ##print clist
              cf = open('%s-id.list' % options.community,'w')
-             cf.write("\n".join(clist))
+             cf.write("\n".join(list))
              cf.close()
              ##print UP.package_list.keys()
 
-    if (options.identifier):
-      list = [ options.identifier ]
+    elif (options.identifier):
+             list = [ options.identifier ]
     elif (options.list):
-      f = open(options.list,'r')
-      list = f.readlines()
-      f.close()
+             f = open(options.list,'r')
+             list = f.readlines()
+             f.close()
     else:
-      print 'ERROR : one of the otptions -i IDENTIFIER or -l LIST must be given'
-      sys.exit()
+            print 'ERROR : one of the otptions -c COMMUBITY, -i IDENTIFIER or -l LIST must be given'
+            sys.exit()
     
+    print "\n=== Start %s processing ===\n\tID LIST:\t%s\n\t%s MODE:\t%s" % (mainmode,options.list, mainmode.upper(), options.mode)
+
+
 
     n=0
     xcount=0
@@ -242,7 +241,8 @@ def main():
        id, ext = os.path.splitext(os.path.basename(entry.rstrip()))
        id = id.split("_")[-1].lower()
        id = re.sub(r'^"|"$', '', id)
-       actionreq="Actions %s required : " % qmsg
+       actionreq=""
+       actiontxt="Actions %s required : " % qmsg
 
        ### check,set and remove xml/json files
        xmlfile=None
@@ -337,7 +337,10 @@ def main():
 ##           else:
 ##               print '\tWARNING : Can not access %s/%s/%s' % (options.host,'dataset',id)
        print '| %-6d | %-50s | %-20s | %-6s | %-6s |' % (n, entry.rstrip(),id,ckanstatus,epicstatus)
-       print actionreq
+       if actionreq :
+          print '%s : %s' % (actiontxt,actionreq)
+       else:
+          print 'No %s' % actiontxt
 
 if __name__ == "__main__":
     main()
