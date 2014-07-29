@@ -12,12 +12,17 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##%%% B2FIND oai server
+b2find    http://eudat-oai.dkrz.de:8080/oai/provider   ListIdentifiers  iso iso-millennium
+b2find    http://eudat-oai.dkrz.de:8080/oai/provider   ListIdentifiers  json enes_json
+<#
 ##%%% ENES : MD Provider c3grid.dkrz.de
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords      iso	iso-wdcc
 ##enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-wdcc-doi
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-gkss
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-uni-hh
+>
 ##%%% CLARIN CMDI : MD Provider MPI-PL 
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2       ListIdentifiers cmdi
 ##%%% CLARIN DC : MD Provider Meertens institute
@@ -71,20 +76,34 @@ cessda    http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi_3_1
 #narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc ec_fundedresources
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
 ##%%% TheEuropeanLIbrary
+##     - research related records --> B2FIND !!!
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1058
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0337
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0633
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0273
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0442
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0341
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1025
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1057
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0552
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0340
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0005
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0338
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0336
+
+## - NOT research related - skipped :
+<#
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1055a
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0270
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0514
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0304
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0224
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1113
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1058
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0369
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1004
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0306
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0195
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0337
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0493
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0633
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0597
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0517
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1035
@@ -118,13 +137,11 @@ theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListI
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1105
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0518
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0345
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0442
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0004
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0586
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0502
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0218
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0303
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0341
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0225
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0329
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0006
@@ -132,26 +149,20 @@ theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListI
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0305
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0212
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0232
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1025
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0376
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0302
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1057
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1055b
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0552
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0434
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1112
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0439
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0521
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0340
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0005
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0553
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0427
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1145
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0262
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0210
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0338
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0440
-theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0336
+>
 ##%%% EISCAT
 ##eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc
 eiscat    http://ed-icat-01.csc.fi/cgi-bin/oai-pmh  ListIdentifiers  oai_dc ed-csc:home:jaheikki
