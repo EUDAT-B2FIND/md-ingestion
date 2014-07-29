@@ -43,7 +43,7 @@ import simplejson as json
 import urllib, urllib2
 import httplib
 from urlparse import urlparse
-
+from collections import OrderedDict
 
 class CKAN_CLIENT(object):
 
@@ -1112,7 +1112,27 @@ class UPLOADER (object):
                         extra['value'] = old_value[:size]
                         return dataset
         return dataset
-       
+
+    def remove_duplicates(self,dataset,facetName,valuearrsep,entrysep):
+        """
+        remove duplicates      
+        """
+        for facet in dataset:
+          if facet == facetName:
+            valarr=dataset[facet].split(valuearrsep)
+            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+            revvalarr=[]
+            for entry in valarr:
+               reventry=entry.split(entrysep) ### 
+               reventry.reverse()
+               reventry=''.join(reventry)
+               revvalarr.append(reventry)
+               for reventry in revvalarr:
+                  if reventry == entry :
+                     valarr.remove(reventry)
+            dataset[facet]=valuearrsep.join(valarr)
+        return dataset       
+      
     def postprocess(self,dataset,rules):
         """
         changes dataset field values according to configuration
@@ -1142,6 +1162,8 @@ class UPLOADER (object):
                 dataset = self.replace(dataset,facetName,old_value,new_value)
             if action == "truncate":
                 pass
+            if action == 'remove_duplicates':
+                dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
             if action == "another_action":
                 pass
             
