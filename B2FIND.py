@@ -1202,15 +1202,18 @@ class UPLOADER (object):
 
     def replace(self,dataset,facetName,old_value,new_value):
         """
-        replaces old value with new value for a given facet
+        replaces old value - can be a regular expression - with new value for a given facet
         """
+
+        old_regex = re.compile(old_value)
+
         for facet in dataset:
-            if facet == facetName and dataset[facet] == old_value:
+            if facet == facetName and re.match(old_regex, dataset[facet]):
                 dataset[facet] = new_value
                 return dataset
             if facet == 'extras':
                 for extra in dataset[facet]:
-                    if extra['key'] == facetName and extra['value'] == old_value:
+                    if extra['key'] == facetName and re.match(old_regex, extra['value']):
                         extra['value'] = new_value
                         return dataset
         return dataset
