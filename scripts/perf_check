@@ -9,7 +9,7 @@ YESTERDAY=`date --date='1 day ago' +\%F`
 TWODAGO=`date --date='2 day ago' +\%F`
 WEEK=`date +\%U`
 upload_list="upload_list_${TODAY}"
-##upload_list="upload_list_2014-04-11"
+##upload_list="upload_list_2014-07-30"
 
 ##upload_list="upload_list_datacite_${TODAY}"
 ##HEW-!!! upload_list="${WORK}/upload_list_${YESTERDAY}"
@@ -19,14 +19,14 @@ echo -e "##########################\n Upload jobs according ${upload_list}"
 echo -e "|- $(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l) jobs to be processed"
 echo -e "|- $(ls DONE/${upload_list}.* 2>/dev/null | wc -l) jobs are sucessfully done"
 echo -e "|- Jobs failed :\n   $(grep -c 'Internal server error' log/${upload_list}.*.err | grep -v ':0' ) "
-echo -e "|- $(ps -elf | grep jmd | grep upload | wc -l) threads are running"
+echo -e "|- $(ps -elf | grep manager | grep upload | wc -l) threads are running"
 
 nfiles=0
 
 for file in $(ls ${upload_list}.* DONE/${upload_list}.*)
 do
   (( nfiles = nfiles + 1))
-  pid=$( ps -elf | grep jmd | grep $file | awk '{print $4}' )
+  pid=$( ps -elf | grep manager | grep $file | awk '{print $4}' )
 
   if [ -z $pid ]
   then
