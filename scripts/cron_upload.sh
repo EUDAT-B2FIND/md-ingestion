@@ -18,7 +18,7 @@ case $lhost in
   eudat-b1.dkrz.de)
    rhost=eudat-b1.dkrz.de:8080
    rhost=eudat-b1.dkrz.de
-##
+##HEW-T   rhost=eudat6b.dkrz.de
    epiccheck='--epic_check credentials_11098'
    ;;
   eudatmd1.dkrz.de) ## b2find.eudat.eu :8000
@@ -71,7 +71,7 @@ do
   echo -e "\tProcess $npfrec json records provided in directories of $file"
   ((ntotrec = ntotrec + npfrec ))
 
-  nohup ./eudat_jmd_manager.py -l $file --mode u -i $rhost $ckancheck $epiccheck 2>log/${file}.out >log/${file}.err && mv $file DONE/ &
+  nohup ./manager.py -l $file --mode u -i $rhost $ckancheck $epiccheck 2>log/${file}.out >log/${file}.err && mv $file DONE/ &
 done
 echo " $ntotrec json records provided in dirs of $upload_list "
 wait
