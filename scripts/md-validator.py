@@ -102,7 +102,7 @@ def language_exists(language):
     checks if language exists
     """
     # language names are accepted but not abbreviations
-    language in (l.name for l in pycountry.languages) 
+    return language in (l.name for l in pycountry.languages) 
     
     
 def is_valid_value(facet,value):
