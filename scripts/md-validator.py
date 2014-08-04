@@ -91,7 +91,7 @@ def url_exists(url):
     except:
         return False
 
-def country_exits(country):
+def country_exists(country):
     """
     checks if country exists
     """
