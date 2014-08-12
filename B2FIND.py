@@ -1208,15 +1208,11 @@ class UPLOADER (object):
         old_regex = re.compile(old_value)
 
         for facet in dataset:
-
             if facet == facetName and re.match(old_regex, dataset[facet]):
                 dataset[facet] = new_value
                 return dataset
             if facet == 'extras':
                 for extra in dataset[facet]:
-                    ##HEW-T print 'facetName %s' % facetName
-                    ##HEW-Tif extra['key'] == facetName:
-                    ##HEW-T    print '   old_value %s extra_val %s ' % (old_value, extra['value'])
                     if extra['key'] == facetName and re.match(old_regex, extra['value']):
                         extra['value'] = new_value
                         return dataset
