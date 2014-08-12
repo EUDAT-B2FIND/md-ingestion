@@ -381,8 +381,6 @@ def process_upload(UP, rlist, options):
         else:
             mappp='False'
             
-
-
         # find all .json files in dir/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(dir+'/json'))
         
@@ -783,20 +781,6 @@ def process_reupconvert(UP, rlist, options):
         
         reconvertstart = time.time()
         
-##HEW-ADD??        # check for re-mapper postproc config file
-##HEW-ADD??        ppconfig_file='%s/%s/re-mdpp-%s-%s.conf' % (os.getcwd(),'../mapper/current/mapfiles',community,mdprefix)
-##HEW-ADD??        if os.path.isfile(ppconfig_file):
-##HEW-ADD??            mappp='True'
-##HEW-ADD??            # reads config file 
-##HEW-ADD??
-##HEW-ADD??            f = codecs.open(ppconfig_file, "r", "utf-8")
-##HEW-ADD??            rules = f.readlines()[1:] # without the header
-##HEW-ADD??            rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
-##HEW-ADD??        else:
-##HEW-ADD??            mappp='False'
-##HEW-ADD??            
-
-
         # find all .json files in dir/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(dir+'/json'))
         
@@ -831,12 +815,6 @@ def process_reupconvert(UP, rlist, options):
                     break
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
-##HEW-ADD??          ### Mapper post processing
-##HEW-ADD??          ##rules=[u'*,,*,,Language,,de,,German,,replace\n']
-##HEW-ADD??          if ( mappp == 'True' ):
-##HEW-ADD??             jsondata=UP.postprocess(jsondata,rules)
-##HEW-ADD??          ## print 'pjsondata %s' % pjsondata
-
             ### VALIDATE JSON DATA
             if (not UP.validate(jsondata)):
                 logger.info('        |-> Reconvert is aborted')
