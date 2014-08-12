@@ -1202,15 +1202,22 @@ class UPLOADER (object):
 
     def replace(self,dataset,facetName,old_value,new_value):
         """
-        replaces old value with new value for a given facet
+        replaces old value - can be a regular expression - with new value for a given facet
         """
+
+        old_regex = re.compile(old_value)
+
         for facet in dataset:
-            if facet == facetName and dataset[facet] == old_value:
+
+            if facet == facetName and re.match(old_regex, dataset[facet]):
                 dataset[facet] = new_value
                 return dataset
             if facet == 'extras':
                 for extra in dataset[facet]:
-                    if extra['key'] == facetName and extra['value'] == old_value:
+                    ##HEW-T print 'facetName %s' % facetName
+                    ##HEW-Tif extra['key'] == facetName:
+                    ##HEW-T    print '   old_value %s extra_val %s ' % (old_value, extra['value'])
+                    if extra['key'] == facetName and re.match(old_regex, extra['value']):
                         extra['value'] = new_value
                         return dataset
         return dataset
@@ -1250,6 +1257,23 @@ class UPLOADER (object):
             dataset[facet]=valuearrsep.join(valarr)
         return dataset       
       
+    def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
+        """
+        split string in list of string and transfer to list of dict's { "name" : "substr1" }      
+        """
+        for facet in dataset:
+          if facet == facetName:
+            ##HEW?? print 'sep %s' % valuearrsep
+            valarr=dataset[facet][0]['name'].split()
+            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+            dicttagslist=[]
+            for entry in valarr:
+               entrydict={ "name": entry }  
+               dicttagslist.append(entrydict)
+       
+            dataset[facet]=dicttagslist
+        return dataset       
+      
     def postprocess(self,dataset,rules):
         """
         changes dataset field values according to configuration
@@ -1281,6 +1305,8 @@ class UPLOADER (object):
                 pass
             if action == 'remove_duplicates':
                 dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
+            if action == 'splitstring2dictlist':
+                dataset = self.splitstring2dictlist(dataset,facetName,old_value,new_value)
             if action == "another_action":
                 pass
             
@@ -1306,7 +1332,7 @@ class UPLOADER (object):
         errmsg = ''
         must_have_extras = {
             # "extra_field_name" : (Integer), 0 for critical, 1 for non-critical
-            "oai_identifier":0
+            ##"oai_identifier":0
         }
         
         ## check main fields ...
@@ -1327,13 +1353,23 @@ class UPLOADER (object):
             if(extra['key'] == 'oai_identifier' and extra['value'] == ''):
                 errmsg = "'oai_identifier': The ID is missing"
                 status = 0  # set status
-            
+
+            elif(extra['key'] == 'PublicationYear'):            
+                try:
+                   datetime.datetime.strptime(extra['value'], '%Y')
+                except ValueError:
+                    errmsg = "%s value %s has incorrect data format, should be YYYY" % (extra['key'],extra['value'])
+                    # delete this field from the jsondata:
+                    jsondata['extras'].pop(counter)
+                    
+                    if(status > 1): status = 1  # set status
+                
             # ... PublicationTimestamp
             elif(extra['key'] == 'PublicationTimestamp'):
                 try:
                     datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
                 except ValueError:
-                    errmsg = "'PublicationTimestamp': Incorrect data format, should be YYYY-MM-DDThh:mm:ssZ"
+                    errmsg = "'PublicationTimestamp' value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % extra['value']
                     
                     # delete this field from the jsondata:
                     jsondata['extras'].pop(counter)
@@ -1344,8 +1380,11 @@ class UPLOADER (object):
             if errmsg: self.logger.warning("        [WARNING] extra field %s" % errmsg)
             
             # delete key from the must have extras dictionary:
-            if extra['key'] in must_have_extras: del must_have_extras[extra['key']]
-                    
+            if extra['key'] in must_have_extras:
+               del must_have_extras[extra['key']]
+        
+            counter+=1
+            
         if (len(must_have_extras) > 0):
             self.logger.warning("        [WARNING] extra fields %s are missing" % must_have_extras.keys())
             status = min(status,must_have_extras.values())
@@ -1492,7 +1531,7 @@ class UPLOADER (object):
         # 1. (boolean)  result
     
         try:
-            return urllib.urlopen(url).getcode() < 400
+            return urllib.urlopen(url).getcode() < 501
         except IOError:
             return False
 
