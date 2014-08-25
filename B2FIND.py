@@ -38,11 +38,17 @@ import sickle as SickleClass
 from sickle.oaiexceptions import NoRecordsMatch
 import uuid, hashlib
 
-# needed for UPLOADER and CKAN class:
-import simplejson as json
+# needed for CKAN_CLIENT
 import urllib, urllib2
 import httplib
 from urlparse import urlparse
+
+# needed for CONVERTER :
+import codecs
+import simplejson as json
+##import xmltools
+
+# needed for UPLOADER and CKAN class:
 from collections import OrderedDict
 
 class CKAN_CLIENT(object):
@@ -926,6 +932,116 @@ class CONVERTER(object):
 ##HEW-GIT
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
         
+
+    def replace(self,dataset,facetName,old_value,new_value):
+        """
+        replaces old value - can be a regular expression - with new value for a given facet
+        """
+
+        old_regex = re.compile(old_value)
+
+        for facet in dataset:
+            if facet == facetName and re.match(old_regex, dataset[facet]):
+                dataset[facet] = new_value
+                return dataset
+            if facet == 'extras':
+                for extra in dataset[facet]:
+                    if extra['key'] == facetName and re.match(old_regex, extra['value']):
+                        extra['value'] = new_value
+                        return dataset
+        return dataset
+ 
+    def truncate(self,dataset,facetName,old_value,size):
+        """
+        truncates old value with new value for a given facet
+        """
+        for facet in dataset:
+            if facet == facetName and dataset[facet] == old_value:
+                dataset[facet] = old_value[:size]
+                return dataset
+            if facet == 'extras':
+                for extra in dataset[facet]:
+                    if extra['key'] == facetName and extra['value'] == old_value:
+                        extra['value'] = old_value[:size]
+                        return dataset
+        return dataset
+
+    def remove_duplicates(self,dataset,facetName,valuearrsep,entrysep):
+        """
+        remove duplicates      
+        """
+        for facet in dataset:
+          if facet == facetName:
+            valarr=dataset[facet].split(valuearrsep)
+            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+            revvalarr=[]
+            for entry in valarr:
+               reventry=entry.split(entrysep) ### 
+               reventry.reverse()
+               reventry=''.join(reventry)
+               revvalarr.append(reventry)
+               for reventry in revvalarr:
+                  if reventry == entry :
+                     valarr.remove(reventry)
+            dataset[facet]=valuearrsep.join(valarr)
+        return dataset       
+      
+    def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
+        """
+        split string in list of string and transfer to list of dict's { "name" : "substr1" }      
+        """
+        for facet in dataset:
+          if facet == facetName:
+            ##HEW?? print 'sep %s' % valuearrsep
+            valarr=dataset[facet][0]['name'].split()
+            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+            dicttagslist=[]
+            for entry in valarr:
+               entrydict={ "name": entry }  
+               dicttagslist.append(entrydict)
+       
+            dataset[facet]=dicttagslist
+        return dataset       
+      
+    def postprocess(self,dataset,rules):
+        """
+        changes dataset field values according to configuration
+        """  
+     
+        for rule in rules:
+            # rules can be checked for correctness
+            assert(rule.count(',,') == 5),"a double comma should be used to separate items"
+            
+            rule = rule.rstrip('\n').split(',,') # splits  each line of config file 
+            groupName = rule[0]
+            datasetName = rule[1]
+            facetName = rule[2]
+            old_value = rule[3]
+            new_value = rule[4]
+            action = rule[5]
+                        
+            r = dataset.get("group",None)
+            if groupName != '*' and  groupName != r:
+                return dataset
+    
+            r = dataset.get("name",None)
+            if datasetName != '*' and datasetName != r:
+                return dataset
+    
+            if action == 'replace':
+                dataset = self.replace(dataset,facetName,old_value,new_value)
+            if action == "truncate":
+                pass
+            if action == 'remove_duplicates':
+                dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
+            if action == 'splitstring2dictlist':
+                dataset = self.splitstring2dictlist(dataset,facetName,old_value,new_value)
+            if action == "another_action":
+                pass
+            
+        return dataset
+
+
     
     def convert(self,community,mdprefix,path):
         ## convert (CONVERTER object, community, mdprefix, path) - method
@@ -981,6 +1097,36 @@ class CONVERTER(object):
         self.logger.info(out)
         if err: self.logger.error('[ERROR] ' + err)
         
+        # check for mapper postproc config file
+        ppconfig_file='%s/%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
+        if os.path.isfile(ppconfig_file):
+            # read config file 
+            f = codecs.open(ppconfig_file, "r", "utf-8")
+            rules = f.readlines()[1:] # without the header
+            rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
+            # find all .json files in dir/json:
+            files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        
+            fcount = 1
+            for filename in files:
+              jsondata = dict()
+        
+              if ( os.path.getsize(path+'/json/'+filename) > 0 ):
+                with open(path+'/json/'+filename, 'r+') as f:
+                   try:
+                        jsondata=json.loads(f.read())
+                        ### Mapper post processing
+                        jsondata=self.postprocess(jsondata,rules)
+                        f.seek(0)
+                        json.dump(jsondata,f, sort_keys = True, indent = 4)
+                   except:
+                        log.error('    | [ERROR] Cannot load json file %s' % path+'/json/'+filename)
+                        results['ecount'] += 1
+                        continue
+              else:
+                results['ecount'] += 1
+                continue
+
         # search in output for result statistics
         last_line = out.split('\n')[-2]
         if ('INFO  Main - ' in last_line):
@@ -1090,7 +1236,6 @@ class CONVERTER(object):
             ##HEW?    continue
 
             ### reconvert !!
-            import xmltools
 
             try:
               xml = xmltools.WriteToXMLString(jsondata)
@@ -1270,45 +1415,6 @@ class UPLOADER (object):
             dataset[facet]=dicttagslist
         return dataset       
       
-    def postprocess(self,dataset,rules):
-        """
-        changes dataset field values according to configuration
-        """  
-     
-        for rule in rules:
-            # rules can be checked for correctness
-            assert(rule.count(',,') == 5),"a double comma should be used to separate items"
-            
-            rule = rule.rstrip('\n').split(',,') # splits  each line of config file 
-            groupName = rule[0]
-            datasetName = rule[1]
-            facetName = rule[2]
-            old_value = rule[3]
-            new_value = rule[4]
-            action = rule[5]
-                        
-            r = dataset.get("group",None)
-            if groupName != '*' and  groupName != r:
-                return dataset
-    
-            r = dataset.get("name",None)
-            if datasetName != '*' and datasetName != r:
-                return dataset
-    
-            if action == 'replace':
-                dataset = self.replace(dataset,facetName,old_value,new_value)
-            if action == "truncate":
-                pass
-            if action == 'remove_duplicates':
-                dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
-            if action == 'splitstring2dictlist':
-                dataset = self.splitstring2dictlist(dataset,facetName,old_value,new_value)
-            if action == "another_action":
-                pass
-            
-        return dataset
-
-    
     def validate(self, jsondata):
         ## validate (UPLOADER object, json data) - method
         # Validates the json data (e.g. the PublicationTimestamp field) by using B2FIND standard
