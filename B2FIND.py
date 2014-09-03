@@ -1532,6 +1532,30 @@ class UPLOADER (object):
                     
                     if(status > 1): status = 1  # set status
             
+            # ... TemporalCoverage:BeginDate
+            elif(extra['key'] == 'TemporalCoverage:BeginDate'):
+                try:
+                    datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
+                except ValueError:
+                    errmsg = "'TemporalCoverage:BeginDate' value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % extra['value']
+                    
+                    # delete this field from the jsondata:
+                    jsondata['extras'].pop(counter)
+                    
+                    if(status > 1): status = 1  # set status
+            
+            # ... TemporalCoverage:EndDate
+            elif(extra['key'] == 'TemporalCoverage:EndDate'):
+                try:
+                    datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
+                except ValueError:
+                    errmsg = "'TemporalCoverage:EndDate' value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % extra['value']
+                    
+                    # delete this field from the jsondata:
+                    jsondata['extras'].pop(counter)
+                    
+                    if(status > 1): status = 1  # set status
+            
             # print warning:
             if errmsg: self.logger.warning("        [WARNING] extra field %s" % errmsg)
             
