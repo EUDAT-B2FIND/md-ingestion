@@ -37,6 +37,7 @@ import re
 import sickle as SickleClass
 from sickle.oaiexceptions import NoRecordsMatch
 import uuid, hashlib
+import lxml.etree as etree
 
 # needed for CKAN_CLIENT
 import urllib, urllib2
@@ -345,11 +346,11 @@ class HARVESTER(object):
                     
                     # get the raw xml content:    
                     metadata = record.raw
-                    
+                    metadata = etree.fromstring(metadata)
+                    ## etree.tostring(x, pretty_print = True)
                     if (metadata):
+                        metadata = etree.tostring(metadata, pretty_print = True) 
                         metadata = metadata.encode('ascii', 'ignore')
-                    
-                        # make xml dirs:
                         if (not os.path.isdir(subsetdir+'/xml')):
                            os.makedirs(subsetdir+'/xml')
                            
@@ -389,7 +390,7 @@ class HARVESTER(object):
                         self.logger.warning('    [WARNING] No metadata available for %s' % oai_id)
                             
                         
-                except TypeError:
+                except TypeError as e:
                     self.logger.error('    [ERROR] TypeError: %s' % e)
                     stats['ecount']+=1        
                     continue
@@ -1112,15 +1113,44 @@ class CONVERTER(object):
               jsondata = dict()
         
               if ( os.path.getsize(path+'/json/'+filename) > 0 ):
-                with open(path+'/json/'+filename, 'r+') as f:
+                with open(path+'/json/'+filename, 'r') as f:
                    try:
                         jsondata=json.loads(f.read())
                         ### Mapper post processing
+                        ##HEW-T print 'set %s' % os.path.basename(path)
+                        if ( os.path.basename(path) == 'a0337_1' or re.match(re.compile('a0005_'+'[0-9]*'),os.path.basename(path)) or os.path.basename(path) == 'a0336_1' ) :
+                        ##print 'set %s' % os.path.basename(path)
+                        ##if ( os.path.basename(path) == 'a0337_1' or os.path.basename(path) == 'a0336_1'  or os.path.basename(path) == 'a0005_test' ) :
+                           for extra in jsondata['extras']:
+                              if(extra['key'] == 'Discipline'):
+                                 extra['value'] = 'Arts'
+                                 break
+                        elif ( os.path.basename(path) == 'a0338_1' ) :
+                           for extra in jsondata['extras']:
+                              if(extra['key'] == 'Discipline'):
+                                 extra['value'] = 'Philology'
+                                 break
+                        elif ( os.path.basename(path) == 'a1057_1' or os.path.basename(path) == 'a0340_1' ):
+                           for extra in jsondata['extras']:
+                              if(extra['key'] == 'Discipline'):
+                                 extra['value'] = 'History'
+                                 break
+                        elif ( os.path.basename(path) == 'a1025_1' ):
+                           ## add extra key 'Discipline'
+                           jsondata['extras'].append({"key": "Discipline","value": "History"})
                         jsondata=self.postprocess(jsondata,rules)
-                        f.seek(0)
-                        json.dump(jsondata,f, sort_keys = True, indent = 4)
+                        ##f.seek(0)
+                        ##json.dump(jsondata,f, sort_keys = True, indent = 4)
                    except:
                         log.error('    | [ERROR] Cannot load json file %s' % path+'/json/'+filename)
+                        results['ecount'] += 1
+                        continue
+                with open(path+'/json/'+filename, 'w') as f:
+                   try:
+                        ##f.write("{}\n".format(json.dumps(jsondata)))
+                        json.dump(jsondata,f, sort_keys = True, indent = 4)
+                   except:
+                        log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
                         continue
               else:
@@ -2238,7 +2268,6 @@ class OUTPUT (object):
         reshtml.write("\t</body>\n</html>\n\n")
         reshtml.close()
 
-
     ## print_convert_list (OUT object, community, source, mdprefix, dir, fromdate) - method
     # Write directories with harvested files in convert_list
     #
@@ -2278,10 +2307,3 @@ class OUTPUT (object):
         except IOError as (errno, strerror):
             self.logger.critical("Cannot write data to '{0}': {1}".format(self.convert_list, strerror))
             f.close
-            
-## DEPRECATED ##
-"""class Reader(object):
-     '''Very simple encoder of harvested content: convert to string'''
-     def __call__(self, element):
-        return etree.tostring(element, pretty_print=True, encoding='UTF8')
-"""
