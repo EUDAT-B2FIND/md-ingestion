@@ -1003,6 +1003,30 @@ class CONVERTER(object):
        
             dataset[facet]=dicttagslist
         return dataset       
+
+
+    def changeDateFormat(dataset,facetName,old_format,new_format):
+        """
+        changes date format from old format to a new format
+        current assumption is that the old format is anything (indicated in the config file 
+        by * ) and the new format is UTC
+        """
+        for facet in dataset:
+            if str_equals(facet,facetName) and old_format == '*':
+                if str_equals(new_format,'UTC'):
+                    old_date = dataset[facet]
+                    new_date = date2UTC(old_date)
+                    dataset[facet] = new_date
+                    return dataset
+            if facet == 'extras':
+                for extra in dataset[facet]:
+                    if str_equals(extra['key'],facetName) and old_format == '*':
+                        if str_equals(new_format,'UTC'):
+                            old_date = extra['value']
+                            new_date = date2UTC(old_date)
+                            extra['value'] = new_date
+                            return dataset
+        return dataset
       
     def postprocess(self,dataset,rules):
         """
