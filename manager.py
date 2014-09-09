@@ -945,7 +945,7 @@ def pstat_init (p,modes,mode,source,iphost):
         mode = 'h-u'
  
     # initialize status, count and timing of processes
-    plist=['a','h','c','r','u','d']
+    plist=['a','h','c','u','r','d']
     pstat = {
         'status' : {},
         'text' : {},
