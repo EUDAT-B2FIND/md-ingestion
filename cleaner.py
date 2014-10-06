@@ -21,7 +21,7 @@ Modified by  c/o DKRZ 2014   Heinrich Widmann
 import optparse, os, sys, re
 import time
 from epicclient import EpicClient,Credentials
-from EUDAT_JMD import CKAN_CLIENT, UPLOADER, OUTPUT
+from B2FIND import CKAN_CLIENT, UPLOADER, OUTPUT
 import logging as log
 
 def options_parser(modes):

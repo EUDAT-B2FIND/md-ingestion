@@ -326,8 +326,9 @@ class HARVESTER(object):
     
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
         try:
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
-            
+##Pandata
+            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'ignore_deleted':False,'from':self.fromdate}):
+##            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
             	if (record.header.deleted):
             	    continue
                 
@@ -933,6 +934,25 @@ class CONVERTER(object):
 ##HEW-GIT
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
         
+
+    def date2UTC(old_date):
+        """
+        changes date to UTC format
+        """
+        # UTC format =  YYYY-MM-DDThh:mm:ssZ
+        utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
+       
+        utc_year = re.compile(r'\d{4}') # year (4-digit number)
+        if utc.search(old_date):
+            new_date = utc.search(old_date).group()
+            return new_date
+        elif utc_year.search(old_date):
+            year = utc_year.search(old_date).group()
+            new_date = year + '-07-01T11:59:59Z'
+            return new_date
+        else:
+            return '' # if converting cannot be done, make date empty
+
 
     def replace(self,dataset,facetName,old_value,new_value):
         """

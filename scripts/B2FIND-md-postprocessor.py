@@ -13,13 +13,18 @@ Output:json file (the output of the postprocessor is another json file ready to 
 """
 
 import numpy as np
-import os
+import os,sys
 import argparse
 import re
 import simplejson as json
 import io
 import codecs
-from collections import OrderedDict
+import time
+
+# add parent directory to python library searching paths
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import B2FIND
 
 def get_dataset(srcFile):
     """
@@ -75,6 +80,7 @@ def replace(dataset,facetName,old_value,new_value):
     """
     replaces old value with new value for a given facet
     """
+
     for facet in dataset:
         if str_equals(facet,facetName) and dataset[facet] == old_value:
             dataset[facet] = new_value
@@ -101,6 +107,26 @@ def truncate(dataset,facetName,old_value,size):
                     return dataset
     return dataset
 
+def remove_duplicates(self,dataset,facetName,valuearrsep,entrysep):
+    """
+    remove duplicates      
+    """
+    for facet in dataset:
+          if facet == facetName:
+            valarr=dataset[facet].split(valuearrsep)
+            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+            revvalarr=[]
+            for entry in valarr:
+               reventry=entry.split(entrysep) ### 
+               reventry.reverse()
+               reventry=''.join(reventry)
+               revvalarr.append(reventry)
+               for reventry in revvalarr:
+                  if reventry == entry :
+                     valarr.remove(reventry)
+            dataset[facet]=valuearrsep.join(valarr)
+    return dataset       
+      
 def changeDateFormat(dataset,facetName,old_format,new_format):
     """
     changes date format from old format to a new format
@@ -122,48 +148,8 @@ def changeDateFormat(dataset,facetName,old_format,new_format):
                         new_date = date2UTC(old_date)
                         extra['value'] = new_date
                         return dataset
-    return dataset
-
-
-def remove_duplicates(dataset,facetName,valuearrsep,entrysep):
-    """
-    remove duplicates      
-    """
-    for facet in dataset:
-      if facet == facetName:
-        valarr=dataset[facet].split(valuearrsep)
-        valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
-        revvalarr=[]
-        for entry in valarr:
-           reventry=entry.split(entrysep) ### 
-           reventry.reverse()
-           reventry=''.join(reventry)
-           revvalarr.append(reventry)
-           for reventry in revvalarr:
-              if reventry == entry :
-                 valarr.remove(reventry)
-        dataset[facet]=valuearrsep.join(valarr)
-    return dataset       
-  
-def splitstring2dictlist(dataset,facetName,valuearrsep,entrysep):
-    """
-    split string in list of string and transfer to list of dict's { "name" : "substr1" }      
-    """
-    for facet in dataset:
-      if facet == facetName:
-        ##HEW?? print 'sep %s' % valuearrsep
-        valarr=dataset[facet][0]['name'].split()
-        valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
-        dicttagslist=[]
-        for entry in valarr:
-           entrydict={ "name": entry }  
-           dicttagslist.append(entrydict)
-   
-        dataset[facet]=dicttagslist
-    return dataset       
-
-
-    
+    return dataset    
+         
 
 def postprocess(dataset,rules):
     """
@@ -190,13 +176,12 @@ def postprocess(dataset,rules):
             return dataset
         
         #print action
+
         if str_equals(action,"replace"):
             # old_value refers to old text, which we want to replace by new text 
             dataset = replace(dataset,facetName,old_value,new_value)
         elif str_equals(action,"truncate"):
-            # old_value refers to text given or any (represented by '*')
-            # new_value refers to the number of characters to truncate the text to
-            dataset = replace(dataset,facetName,old_value,new_value)
+            dataset = truncate(dataset,facetName,old_value,size)
         elif str_equals(action,"changeDateFormat"):
             # old_value refers to any date format (represented by '*')
             # new_value refers to UTC format
@@ -217,6 +202,8 @@ def main():
 	parser.add_argument('-i','--srcFile',help='path to an input json file to be postprocessed')
 	parser.add_argument('-c','--configFile',help='path to a configuration text file')
 	parser.add_argument('-o','--dstFile', help='path to output json file')
+	parser.add_argument('-j','--jobdir', help='path to log dir', default='log')
+	parser.add_argument('-v','--verbose', help='verbose mode', default=False)
 	
 	# parse command line arguments
 	args = parser.parse_args()
@@ -227,13 +214,24 @@ def main():
 	if not (srcFile and configFile and dstFile):
 	    print parser.print_help()
 	    exit(1)
+
+        # make jobdir
+        now = time.strftime("%Y-%m-%d %H:%M:%S")
+        jid = os.getpid()
+        pstat=[]
+    
+        # create logger and OUT output handler and initialise it:
+        OUT = B2FIND.OUTPUT(pstat,now,jid,args)
+
+        # create CONVERTER object:
+        CV = B2FIND.CONVERTER(OUT,'../../mapper/current')
 	
 	# read input and config files
  	dataset = get_dataset(srcFile)
  	conf_data = get_conf(configFile)
  	
  	# postprocess the json file
- 	new_dataset = postprocess(dataset,conf_data)
+ 	new_dataset = CV.postprocess(dataset,conf_data)
  	
  	# save output json to file
 	save_data(new_dataset,dstFile)
