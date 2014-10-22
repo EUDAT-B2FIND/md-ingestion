@@ -326,9 +326,7 @@ class HARVESTER(object):
    
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
         try:
-##Pandata
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'ignore_deleted':False,'from':self.fromdate}):
-##            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
+            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
             	if (record.header.deleted):
             	    continue
                 
