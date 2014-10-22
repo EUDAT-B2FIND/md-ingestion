@@ -40,7 +40,7 @@ import uuid, hashlib
 import lxml.etree as etree
 
 # needed for CKAN_CLIENT
-import urllib, urllib2
+import urllib, urllib2, socket
 import httplib
 from urlparse import urlparse
 
@@ -276,7 +276,7 @@ class HARVESTER(object):
             "url"   : request[1],
             "lverb" : request[2],
             "mdprefix"  : request[3],
-            "mdsubset"  : request[4]   if len(request)>4 else ''
+            "mdsubset"  : request[4]   if len(request)>4 else None
         }
    
         # create dictionary with stats:
@@ -323,7 +323,7 @@ class HARVESTER(object):
             for f in glob.glob(s+'/xml/*.xml'):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
-    
+   
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
         try:
             for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
@@ -348,6 +348,7 @@ class HARVESTER(object):
                     metadata = record.raw
                     metadata = etree.fromstring(metadata)
                     ## etree.tostring(x, pretty_print = True)
+                    ##HEW!!! : B2FIND.py:351: FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead.
                     if (metadata):
                         metadata = etree.tostring(metadata, pretty_print = True) 
                         metadata = metadata.encode('ascii', 'ignore')
@@ -929,8 +930,6 @@ class CONVERTER(object):
         self.cp = ".:"+":".join(filter(lambda x: x.endswith('.jar'), os.listdir(root+'/lib')))
         
         # get the java converter name:
-##HEW-SVN        self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('converter-'), os.listdir(root)))[0]
-##HEW-GIT
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
         
 
@@ -993,7 +992,6 @@ class CONVERTER(object):
         """
         for facet in dataset:
           if facet == facetName:
-            ##HEW?? print 'sep %s' % valuearrsep
             valarr=dataset[facet][0]['name'].split()
             valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
             dicttagslist=[]
@@ -1063,7 +1061,7 @@ class CONVERTER(object):
                 dataset = self.splitstring2dictlist(dataset,facetName,old_value,new_value)
             if action == "another_action":
                 pass
-            
+
         return dataset
 
 
@@ -1141,10 +1139,7 @@ class CONVERTER(object):
                    try:
                         jsondata=json.loads(f.read())
                         ### Mapper post processing
-                        ##HEW-T print 'set %s' % os.path.basename(path)
                         if ( os.path.basename(path) == 'a0337_1' or re.match(re.compile('a0005_'+'[0-9]*'),os.path.basename(path)) or os.path.basename(path) == 'a0336_1' ) :
-                        ##print 'set %s' % os.path.basename(path)
-                        ##if ( os.path.basename(path) == 'a0337_1' or os.path.basename(path) == 'a0336_1'  or os.path.basename(path) == 'a0005_test' ) :
                            for extra in jsondata['extras']:
                               if(extra['key'] == 'Discipline'):
                                  extra['value'] = 'Arts'
@@ -1171,8 +1166,7 @@ class CONVERTER(object):
                         continue
                 with open(path+'/json/'+filename, 'w') as f:
                    try:
-                        ##f.write("{}\n".format(json.dumps(jsondata)))
-                        json.dump(jsondata,f, sort_keys = True, indent = 4)
+                        json.dump(jsondata,f, sort_keys = True, indent = 4, ensure_ascii=True)
                    except:
                         log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
@@ -1221,14 +1215,6 @@ class CONVERTER(object):
             self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files for converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
     
-        ##HEW?  check re-mapfile
-        ##HEW? remapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
-        ##HEW?if not os.path.isfile(mapfile):
-        ##HEW?   remapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
-        ##HEW?  if not os.path.isfile(mapfile):
-        ##HEW?    self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
-        ##HEW?      return results
-
         # run re-converting
         # find all .json files in path/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
@@ -1277,20 +1263,7 @@ class CONVERTER(object):
                     break
             self.logger.debug("        |-> identifier: %s\n" % (oai_id))
             
-            ### Mapper post processing
-            ##rules=[u'*,,*,,Language,,de,,German,,replace\n']
-            ##HEW? if ( mappp == 'True' ):
-            ##HEW?   jsondata=UP.postprocess(jsondata,rules)
-            ## print 'pjsondata %s' % pjsondata
-
-            ##HEW?### VALIDATE JSON DATA
-            ##HEW?if (not UP.validate(jsondata)):
-            ##HEW?    logger.info('        |-> Reconvert is aborted')
-            ##HEW?    results['ecount'] += 1
-            ##HEW?    continue
-
             ### reconvert !!
-
             try:
               xml = xmltools.WriteToXMLString(jsondata)
               # write B2FIND xml file:
@@ -1302,10 +1275,6 @@ class CONVERTER(object):
               stats['ecount'] +=1
               return(False, ds_id, path+'/b2find/', count_set)
              
-        # check output and print it
-        ##HEW-D self.logger.info(out)
-        ##HEW-D if err: self.logger.error('[ERROR] ' + err)
-        
         # count ... all .xml files in path/b2find
         results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/b2find')))
     
@@ -1458,7 +1427,6 @@ class UPLOADER (object):
         """
         for facet in dataset:
           if facet == facetName:
-            ##HEW?? print 'sep %s' % valuearrsep
             valarr=dataset[facet][0]['name'].split()
             valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
             dicttagslist=[]
@@ -1711,9 +1679,13 @@ class UPLOADER (object):
         # 1. (boolean)  result
     
         try:
-            return urllib.urlopen(url).getcode() < 501
+            return urllib2.urlopen(url, timeout=1).getcode() < 501
         except IOError:
             return False
+        except urllib2.URLError as e:
+            return False    #catched
+        except socket.timeout as e:
+            return False    #catched
 
 class OUTPUT (object):
 
