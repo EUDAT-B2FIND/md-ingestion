@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Binyam Gebrekidan Gebre
 @Max Planck Institute, 2014
@@ -17,7 +19,7 @@ import re
 import simplejson as json
 import io
 import codecs
-
+from collections import OrderedDict
 
 def get_dataset(srcFile):
     """
@@ -121,8 +123,47 @@ def changeDateFormat(dataset,facetName,old_format,new_format):
                         extra['value'] = new_date
                         return dataset
     return dataset
+
+
+def remove_duplicates(dataset,facetName,valuearrsep,entrysep):
+    """
+    remove duplicates      
+    """
+    for facet in dataset:
+      if facet == facetName:
+        valarr=dataset[facet].split(valuearrsep)
+        valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+        revvalarr=[]
+        for entry in valarr:
+           reventry=entry.split(entrysep) ### 
+           reventry.reverse()
+           reventry=''.join(reventry)
+           revvalarr.append(reventry)
+           for reventry in revvalarr:
+              if reventry == entry :
+                 valarr.remove(reventry)
+        dataset[facet]=valuearrsep.join(valarr)
+    return dataset       
+  
+def splitstring2dictlist(dataset,facetName,valuearrsep,entrysep):
+    """
+    split string in list of string and transfer to list of dict's { "name" : "substr1" }      
+    """
+    for facet in dataset:
+      if facet == facetName:
+        ##HEW?? print 'sep %s' % valuearrsep
+        valarr=dataset[facet][0]['name'].split()
+        valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+        dicttagslist=[]
+        for entry in valarr:
+           entrydict={ "name": entry }  
+           dicttagslist.append(entrydict)
+   
+        dataset[facet]=dicttagslist
+    return dataset       
+
+
     
-         
 
 def postprocess(dataset,rules):
     """
@@ -160,6 +201,10 @@ def postprocess(dataset,rules):
             # old_value refers to any date format (represented by '*')
             # new_value refers to UTC format
             dataset = changeDateFormat(dataset,facetName,old_value,new_value)
+        elif str_equals(action,'remove_duplicates'):
+            dataset = remove_duplicates(dataset,facetName,old_value,new_value)
+        elif str_equals(action,'splitstring2dictlist'):
+            dataset = splitstring2dictlist(dataset,facetName,old_value,new_value)
         elif action == "another_action":
             pass
         else:

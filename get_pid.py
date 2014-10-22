@@ -13,9 +13,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
-import os, sys, re
+import os, sys
 import argparse
-from lxml import etree
 import simplejson as json
 import urllib, urllib2
 
@@ -41,6 +40,7 @@ def main():
     if (tcount>args.ckan_limit): print "=> but maximal %d rows are returned " % args.ckan_limit
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
     pidf = open('pid.file', 'w')
+    idf = open('id.file', 'w')
     countpid=0
     counter=0
     cstart=0
@@ -50,6 +50,7 @@ def main():
        for ds in answer['result']['results']:
             counter +=1
             ## print'    | %-4d | %-40s |' % (counter,ds['name'])
+            idf.write(ds['name']+'\n')
             for extra in ds['extras']:
                 if (extra['key'] == 'PID'):
                    pidf.write(extra['value']+'\n')
@@ -57,7 +58,7 @@ def main():
        cstart+=len(answer['result']['results']) 
 
     pidf.close()
-    print "Found %d records and %d associated PIDs" % (counter, countpid)
+    print "Found %d records (ID's written to id.file) and %d associated PIDs (written to pid.file)" % (counter, countpid)
 
 def action(host, data={}):
     ## action (action, jsondata) - method
@@ -118,13 +119,10 @@ def get_args():
            1. > ./get_pid.py -c aleph tags:LEP
              searchs for all datasets of community ALEPH with tag "LEP".
            2. >./get_pid.py tags:PUBLICATIONOTHER author:'"Ahn, Changhyun"'
-             serachs for all datasets tagged with PUBLICATIONOTHER and with author "Ahn, Changhyan"'''
-### all datasets of community ALEPH with tag LEP.",
-##        prog = 'get_pid.py',
-##        usage = '%prog [ OPTIONS ] PATTERN\n\tPATTERN is the CKAN search pattern, i.e. (a list of) field:value terms.'
+             searchs for all datasets tagged with PUBLICATIONOTHER and with author "Ahn, Changhyan"'''
     )
    
-    p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is eudat6b.dkrz.de)', default='eudat6b.dkrz.de', metavar='IP/URL')
+    p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is eudat-b1.dkrz.de)', default='eudat-b1.dkrz.de', metavar='IP/URL')
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
     p.add_argument('--ckan_limit',  help='Limit of listed datasets (default is 1000)', default=1000, type=int, metavar='INTEGER')
     p.add_argument('pattern',  help='CKAN search pattern, i.e. (a list of) field:value terms.', metavar='PATTERN', nargs='*')

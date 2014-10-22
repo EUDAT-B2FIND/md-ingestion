@@ -12,6 +12,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##%%% WDC-TERRA from GFZ
+terra     http://doidb.wdc-terra.org/oaip/oai   ListIdentifiers  oai_dc  DOIDB.SEISNET
 ##%%% B2FIND oai server
 b2find    http://eudat-oai.dkrz.de:8080/oai/provider   ListIdentifiers  iso iso-millennium
 b2find    http://eudat-oai.dkrz.de:8080/oai/provider   ListIdentifiers  json enes_json
