@@ -45,7 +45,7 @@ def main():
 
     # check the version from svn:
     global ManagerVersion
-    ManagerVersion = '0.3'
+    ManagerVersion = '0.4'
     print('\nVersion: %s' % ManagerVersion)
 
     # parse command line options and arguments:
