@@ -374,8 +374,13 @@ def process_upload(UP, rlist, options):
         
         results['tcount'] = len(files)
         
+        scount = 0
         fcount = 1
         for filename in files:
+            if (fcount<scount):
+              fcount += 1
+              continue
+
             jsondata = dict()
         
             if ( os.path.getsize(dir+'/json/'+filename) > 0 ):
