@@ -234,7 +234,7 @@ def main():
     jcount=0
     ccount=0
     pcount=0
-    print '\n| %-6s | %-50s | %-20s | %-6s | %-6s |\n|%s|' % ('#', 'Entry','Identifier','CKAN','EPIC',"-" * 53)
+    print '\n| %-6s | %-50s | %-6s | %-6s | %-6s | %-6s |\n|%s|' % ('#', 'Identifier','XML','JSON','CKAN','EPIC',"-" * 53)
     for entry in list:
        n+=1
        dir = os.path.dirname(entry).rstrip()
@@ -247,8 +247,13 @@ def main():
        ### check,set and remove xml/json files
        xmlfile=None
        jsonfile=None
+       xmlstatus=None
+       jsonstatus=None
+       xmlaction=''
+       jsonaction=''
+
        if ( dir and ( ext == '.json' or ext == '.xml' ) ):
-         print " FILES to remove :"  
+         ## print " FILES to remove :"  
          if ( ext == '.json' ):
            jsonfile='%s' % (entry.rstrip())
            xmlfile='%s/%s/%s%s' % (os.path.split(dir)[0],'xml',id,'.xml')
@@ -257,27 +262,31 @@ def main():
            jsonfile='%s/%s/%s%s' % (os.path.split(dir)[0],'json',id,'.json')
 
          if (os.path.isfile(xmlfile)):
+             xmlstatus='exists'
              actionreq+=' remove xml file'
-             try:
-               if (not options.quiet):
+             if (not options.quiet):
+               try:
                    os.remove(xmlfile)
-             except Exception, e:
-               logger.error('[ERROR] Unexpected Error: %s' % e)
-               raise
-             else:
-               print '\tXML file %s %s removed' % (xmlfile,qmsg)
+               except Exception, e:
+                 logger.error('[ERROR] Unexpected Error: %s' % e)
+                 raise
+               else:
+                 ##print '\tXML file %s %s removed' % (xmlfile,qmsg)
+                 xmlaction='removed'
          else:
              print "\tWARNING : Can not access %s for removing" % xmlfile
          if (os.path.isfile(jsonfile)):
+             jsonstatus='exists'
              actionreq+=', remove json file'
-             try:
-               if (not options.quiet):
-                    os.remove(jsonfile)
-             except Exception, e:
-               logger.error('[ERROR] Unexpected Error: %s' % e)
-               raise
-             else:
-               print '\tJSON file %s %s removed' % (jsonfile,qmsg)
+             if (not options.quiet):
+               try:
+                 os.remove(jsonfile)
+               except Exception, e:
+                 logger.error('[ERROR] Unexpected Error: %s' % e)
+                 raise
+               else:
+                 jsonaction='removed'
+                 ##print '\tJSON file %s %s removed' % (jsonfile,qmsg)
          else:
              print "\tWARNING : Can not access %s for removing" % jsonfile
  ##      else:
@@ -286,18 +295,24 @@ def main():
        # check and delete dataset and pid, if required
        ckanstatus=None
        epicstatus=None
+       ckanaction=''
+       epicaction=''
+
        if (options.epic_check or options.ckan_check=='True'):
+
          if (options.epic_check):
            # check against handle server EPIC
            epicstatus="unknown"
            pid = credentials.prefix + "/eudat-jmd_" + id.lower()
            checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
- 
+           b2findversion = ec.getValueFromHandle(pid,"JMDVERSION") 
+
            if (checksum2 == None):
              logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
              epicstatus="new"
            else:
              logger.debug("        |-> pid %s exists" % (pid))
+             print 'JMDVERSION %s' % b2findversion
              epicstatus="exist"
            ## print '\n EPIC status : %s' % epicstatus  
            if (epicstatus == 'exist'):
@@ -306,41 +321,36 @@ def main():
                if (not options.quiet):
                  ec.deleteHandle(pid)
                  pcount+=1
+                 epicaction='removed'
              except Exception, e:
                logger.error('[ERROR] Unexpected Error: %s' % e)
+               epicaction='failed'
                raise
-##             else:
-##               print '\tPID %s%s%s %s removed' % (credentials.prefix,"/eudat-jmd_",id,qmsg)
-##           else:
-##             print '\tWARNING : Can not access PID %s%s%s' % (credentials.prefix,"/eudat-jmd_",id)
 
          ### check for and remove ckan dataset
          if (options.ckan_check == 'True'):
            # check for and remove ckan dataset
-           ckanstatus = 'unknown'                  
-           checksum='fe5f25c9f6d17ba289d6551afc98a8c3'
-           ckanstatus=UP.check_dataset(id,checksum)
-           print '\n CKAN status : %s' % ckanstatus  
-           if (ckanstatus == 'changed' or ckanstatus == 'unchanged'):
+           ckanstatus = 'unknown'
+           if (options.community):              
+              checksum='fe5f25c9f6d17ba289d6551afc98a8c3'
+              ckanstatus=UP.check_dataset(id,checksum)
+           if (ckanstatus == 'unknown' or ckanstatus == 'changed' or ckanstatus == 'unchanged'):
              actionreq+=' remove ckan dataset'
              try:
                if (not options.quiet):
                  delete = UP.delete(id,ckanstatus)
                  if (delete == 1):
-                        logger.info('        |-> %s' % ('Deletion was successful'))
+##                        logger.info('        |-> %s' % ('Deletion was successful'))
                         ccount +=  1
+                        ckanaction='removed'
+                 else:
+                        ckanaction='failed'
              except Exception, e:
                logger.error('[ERROR] Unexpected Error: %s' % e)
                raise
-             else:
-               print '\tDATASET %s/%s/%s %s removed' % (options.host,'dataset',id,qmsg) 
-##           else:
-##               print '\tWARNING : Can not access %s/%s/%s' % (options.host,'dataset',id)
-       print '| %-6d | %-50s | %-20s | %-6s | %-6s |' % (n, entry.rstrip(),id,ckanstatus,epicstatus)
-       if actionreq :
-          print '%s : %s' % (actiontxt,actionreq)
-       else:
-          print 'No %s' % actiontxt
+       print '| %-6d | %-50s | %-6s | %-6s | %-6s | %-6s |' % (n, id,xmlstatus,jsonstatus,ckanstatus,epicstatus)
+       if (not options.quiet):
+         print '--> %-57s | %-6s | %-6s | %-6s | %-6s |' % ('action performed',xmlaction,jsonaction,ckanaction,epicaction)
 
 if __name__ == "__main__":
     main()
