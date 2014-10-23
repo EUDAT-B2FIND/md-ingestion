@@ -992,16 +992,18 @@ class CONVERTER(object):
           if facet == facetName:
             valarr=dataset[facet].split(valuearrsep)
             valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
+            nvalarr=valarr
             revvalarr=[]
             for entry in valarr:
-               reventry=entry.split(entrysep) ### 
-               reventry.reverse()
-               reventry=''.join(reventry)
-               revvalarr.append(reventry)
-               for reventry in revvalarr:
+              reventry=entry.split(entrysep)
+              if (len(reventry) > 1): 
+                reventry.reverse()
+                reventry=''.join(reventry)
+                revvalarr.append(reventry)
+                for reventry in revvalarr:
                   if reventry == entry :
-                     valarr.remove(reventry)
-            dataset[facet]=valuearrsep.join(valarr)
+                     nvalarr.remove(reventry)
+            dataset[facet]=valuearrsep.join(nvalarr)
         return dataset       
       
     def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
@@ -1009,8 +1011,8 @@ class CONVERTER(object):
         split string in list of string and transfer to list of dict's { "name" : "substr1" }      
         """
         for facet in dataset:
-          if facet == facetName:
-            valarr=dataset[facet][0]['name'].split()
+          if facet == facetName and len(dataset[facet]) == 1 :
+            valarr=dataset[facet][0]['name'].split(valuearrsep)
             valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
             dicttagslist=[]
             for entry in valarr:
@@ -1069,20 +1071,23 @@ class CONVERTER(object):
             if datasetName != '*' and datasetName != r:
                 return dataset
     
-            if action == 'replace':
+            ## call action
+            if action == "replace":
                 dataset = self.replace(dataset,facetName,old_value,new_value)
-            if action == "truncate":
-                pass
-            if action == 'remove_duplicates':
+            elif action == "truncate":
+                dataset = self.truncate(dataset,facetName,old_value,new_value)
+            elif action == "changeDateFormat":
+                dataset = self.changeDateFormat(dataset,facetName,old_value,new_value)
+            elif action == 'remove_duplicates':
                 dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
-            if action == 'splitstring2dictlist':
+            elif action == 'splitstring2dictlist':
                 dataset = self.splitstring2dictlist(dataset,facetName,old_value,new_value)
-            if action == "another_action":
+            elif action == "another_action":
+                pass
+            else:
                 pass
 
         return dataset
-
-
     
     def convert(self,community,mdprefix,path):
         ## convert (CONVERTER object, community, mdprefix, path) - method
