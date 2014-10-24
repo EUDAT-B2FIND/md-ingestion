@@ -932,7 +932,13 @@ class CONVERTER(object):
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
         
 
-    def date2UTC(old_date):
+    def str_equals(self,str1,str2):
+        """
+        performs case insensitive string comparison by first stripping trailing spaces 
+        """
+        return str1.strip().lower() == str2.strip().lower()
+
+    def date2UTC(self,old_date):
         """
         changes date to UTC format
         """
@@ -1023,25 +1029,25 @@ class CONVERTER(object):
         return dataset       
 
 
-    def changeDateFormat(dataset,facetName,old_format,new_format):
+    def changeDateFormat(self,dataset,facetName,old_format,new_format):
         """
         changes date format from old format to a new format
         current assumption is that the old format is anything (indicated in the config file 
         by * ) and the new format is UTC
         """
         for facet in dataset:
-            if str_equals(facet,facetName) and old_format == '*':
-                if str_equals(new_format,'UTC'):
+            if self.str_equals(facet,facetName) and old_format == '*':
+                if self.str_equals(new_format,'UTC'):
                     old_date = dataset[facet]
                     new_date = date2UTC(old_date)
                     dataset[facet] = new_date
                     return dataset
             if facet == 'extras':
                 for extra in dataset[facet]:
-                    if str_equals(extra['key'],facetName) and old_format == '*':
-                        if str_equals(new_format,'UTC'):
+                    if self.str_equals(extra['key'],facetName) and old_format == '*':
+                        if self.str_equals(new_format,'UTC'):
                             old_date = extra['value']
-                            new_date = date2UTC(old_date)
+                            new_date = self.date2UTC(old_date)
                             extra['value'] = new_date
                             return dataset
         return dataset
@@ -1161,32 +1167,38 @@ class CONVERTER(object):
                 with open(path+'/json/'+filename, 'r') as f:
                    try:
                         jsondata=json.loads(f.read())
-                        ### Mapper post processing
-                        if ( os.path.basename(path) == 'a0337_1' or re.match(re.compile('a0005_'+'[0-9]*'),os.path.basename(path)) or os.path.basename(path) == 'a0336_1' ) :
-                           for extra in jsondata['extras']:
-                              if(extra['key'] == 'Discipline'):
-                                 extra['value'] = 'Arts'
-                                 break
-                        elif ( os.path.basename(path) == 'a0338_1' ) :
-                           for extra in jsondata['extras']:
-                              if(extra['key'] == 'Discipline'):
-                                 extra['value'] = 'Philology'
-                                 break
-                        elif ( os.path.basename(path) == 'a1057_1' or os.path.basename(path) == 'a0340_1' ):
-                           for extra in jsondata['extras']:
-                              if(extra['key'] == 'Discipline'):
-                                 extra['value'] = 'History'
-                                 break
-                        elif ( os.path.basename(path) == 'a1025_1' ):
-                           ## add extra key 'Discipline'
-                           jsondata['extras'].append({"key": "Discipline","value": "History"})
-                        jsondata=self.postprocess(jsondata,rules)
-                        ##f.seek(0)
-                        ##json.dump(jsondata,f, sort_keys = True, indent = 4)
                    except:
                         log.error('    | [ERROR] Cannot load json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
                         continue
+                try:
+                   ### Mapper post processing
+
+                   ###HEW!!! specific TEL processing -- process in general postprocesing or converter !!!
+                   if ( os.path.basename(path) == 'a0337_1' or re.match(re.compile('a0005_'+'[0-9]*'),os.path.basename(path)) or os.path.basename(path) == 'a0336_1' ) :
+                     for extra in jsondata['extras']:
+                        if(extra['key'] == 'Discipline'):
+                                 extra['value'] = 'Arts'
+                                 break
+                   elif ( os.path.basename(path) == 'a0338_1' ) :
+                     for extra in jsondata['extras']:
+                        if(extra['key'] == 'Discipline'):
+                                 extra['value'] = 'Philology'
+                                 break
+                   elif ( os.path.basename(path) == 'a1057_1' or os.path.basename(path) == 'a0340_1' or os.path.basename(path) == 'a1025_1'):
+                     for extra in jsondata['extras']:
+                         if(extra['key'] == 'Discipline'):
+                                 extra['value'] = 'History'
+                                 break
+                   ## add extra key 'Discipline'
+                   ##jsondata['extras'].append({"key": "Discipline","value": extra['value']})
+
+                   ## md postprocessing
+                   jsondata=self.postprocess(jsondata,rules)
+                except:
+                   log.error('    | [ERROR] during postprocessing along rules %s' % rules)
+                   results['ecount'] += 1
+                   continue
                 with open(path+'/json/'+filename, 'w') as f:
                    try:
                         json.dump(jsondata,f, sort_keys = True, indent = 4, ensure_ascii=True)
