@@ -19,7 +19,7 @@ b2find    http://eudat-oai.dkrz.de:8080/oai/provider   ListIdentifiers  iso iso-
 b2find    http://eudat-oai.dkrz.de:8080/oai/provider   ListIdentifiers  json enes_json
 ##%%% ENES : MD Provider c3grid.dkrz.de
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords      iso	iso-wdcc
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-wdcc-doi
+##500 Internal server ERROR : enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-wdcc-doi
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-gkss
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-uni-hh
