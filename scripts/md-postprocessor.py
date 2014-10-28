@@ -86,7 +86,8 @@ def main():
  	conf_data = get_conf(configFile)
  	
  	# postprocess the json file
- 	new_dataset = CV.postprocess(dataset,conf_data)
+        langs = CV.iso_639_3()
+ 	new_dataset = CV.postprocess(dataset,conf_data,langs)
  	
  	# save output json to file
 	save_data(new_dataset,dstFile)

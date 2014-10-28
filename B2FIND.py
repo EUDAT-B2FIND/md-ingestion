@@ -936,6 +936,8 @@ class CONVERTER(object):
         """
         This class is a close to drop-in replacement for pycountry.languages.
         But unlike pycountry.languages it also supports ISO 639-3.
+        Copyright (C) 2014 Mikael Karlsson.
+
         """
         def __init__(self):
            self.languages = [self.language(a, b, c, d, e) for a, b, c, d, _, _, e, _ in self.fabtabular()]
