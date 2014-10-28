@@ -47,7 +47,6 @@ from urlparse import urlparse
 # needed for CONVERTER :
 import codecs
 import simplejson as json
-##import xmltools
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
@@ -932,6 +931,50 @@ class CONVERTER(object):
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
         
 
+
+    class iso_639_3(object):
+        """
+        This class is a close to drop-in replacement for pycountry.languages.
+        But unlike pycountry.languages it also supports ISO 639-3.
+        """
+        def __init__(self):
+           self.languages = [self.language(a, b, c, d, e) for a, b, c, d, _, _, e, _ in self.fabtabular()]
+           self.alpha3 = {x.alpha3: x for x in self.languages if x.alpha3}
+           self.bibliographic = {x.bibliographic: x for x in self.languages if x.bibliographic}
+           self.terminology = {x.terminology: x for x in self.languages if x.terminology}
+           self.alpha2 = {x.alpha2: x for x in self.languages if x.alpha2}
+           self.name = {x.name: x for x in self.languages if x.name}
+   
+        class language(object):
+           def __init__(self, dash3, dash2b, dash2t, dash1, name):
+               self.alpha3 = dash3
+               self.bibliographic = dash2b
+               self.terminology = dash2t
+               self.alpha2 = dash1
+               self.name = name
+   
+        def get(self, **kwargs):
+           if not len(kwargs) == 1:
+               raise AttributeError("Only one keyword expected")
+           key, value = kwargs.popitem()
+           return getattr(self, key)[value]
+
+        @staticmethod
+        def fabtabular():
+            import csv
+            import sys
+     
+            if sys.version_info[0] == 2:
+                from urllib2 import urlopen
+                u = urlopen('http://www-01.sil.org/iso639%2D3/iso-639-3.tab')
+                return list(csv.reader(u, delimiter='\t'))[1:]
+            else:
+                from urllib.request import urlopen
+                import io
+                with io.StringIO(urlopen('http://www-01.sil.org/iso639%2D3/iso-639-3.tab').read().decode()) as u:
+                    return list(csv.reader(u, delimiter='\t'))[1:]
+     
+
     def str_equals(self,str1,str2):
         """
         performs case insensitive string comparison by first stripping trailing spaces 
@@ -956,7 +999,6 @@ class CONVERTER(object):
         else:
             return '' # if converting cannot be done, make date empty
 
-
     def replace(self,dataset,facetName,old_value,new_value):
         """
         replaces old value - can be a regular expression - with new value for a given facet
@@ -972,6 +1014,41 @@ class CONVERTER(object):
                 for extra in dataset[facet]:
                     if extra['key'] == facetName and re.match(old_regex, extra['value']):
                         extra['value'] = new_value
+                        return dataset
+        return dataset
+ 
+    def map_lang(self,dataset,facetName,old_value,langs):
+        """
+        Convert languages and language codes into ISO names
+ 
+        Copyright (C) 2014 Mikael Karlsson.
+        Adapted for B2FIND 2014 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        for facet in dataset:
+            if facet == 'extras':
+                for extra in dataset[facet]:
+                    if extra['key'] == 'Language' :
+                        language=extra['value']
+                        if '_' in language:
+                            language = language.split('_')[0]
+                        if len(language) == 2:
+                            try: mcountry=langs.get(alpha2=language.lower())
+                            except KeyError: pass
+                        elif len(language) == 3:
+                            try: mcountry=langs.get(alpha3=language.lower())
+                            except KeyError: pass
+                            try: mcountry=langs.get(terminology=language.lower())
+                            except KeyError: pass
+                            try: mcountry=langs.get(bibliographic=language.lower())
+                            except KeyError: pass
+                        else:
+                            try: mcountry=langs.get(name=language.title())
+                            except KeyError: pass
+                            for l in re.split('[,.;: ]+', language):
+                                try: mcountry=langs.get(name=l.title())
+                                except KeyError: pass 
+                        extra['value'] = mcountry.name
                         return dataset
         return dataset
  
@@ -1052,7 +1129,7 @@ class CONVERTER(object):
                             return dataset
         return dataset
       
-    def postprocess(self,dataset,rules):
+    def postprocess(self,dataset,rules,languages):
         """
         changes dataset field values according to configuration
         """  
@@ -1078,6 +1155,8 @@ class CONVERTER(object):
                 return dataset
     
             ## call action
+            if action == "map_lang":
+                dataset = self.map_lang(dataset,facetName,old_value,languages)
             if action == "replace":
                 dataset = self.replace(dataset,facetName,old_value,new_value)
             elif action == "truncate":
@@ -1160,6 +1239,10 @@ class CONVERTER(object):
             files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
         
             fcount = 1
+
+            ## instance of language lib class needed for Language mapping
+            languages = self.iso_639_3()
+
             for filename in files:
               jsondata = dict()
         
@@ -1194,7 +1277,7 @@ class CONVERTER(object):
                    ##jsondata['extras'].append({"key": "Discipline","value": extra['value']})
 
                    ## md postprocessing
-                   jsondata=self.postprocess(jsondata,rules)
+                   jsondata=self.postprocess(jsondata,rules, languages)
                 except:
                    log.error('    | [ERROR] during postprocessing along rules %s' % rules)
                    results['ecount'] += 1
