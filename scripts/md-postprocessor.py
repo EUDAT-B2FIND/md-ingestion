@@ -16,7 +16,7 @@ Output:json file (the output of the postprocessor is another json file ready to 
 import numpy as np
 import os,sys
 import argparse
-import re
+import re, csv
 import simplejson as json
 import io
 import codecs
@@ -87,7 +87,19 @@ def main():
  	
  	# postprocess the json file
         langs = CV.iso_639_3()
- 	new_dataset = CV.postprocess(dataset,conf_data,langs)
+        mappingdir='../md-mapping/mapfiles'
+        disctabf='%s/%s/b2find_disciplines.tab' % (os.getcwd(),mappingdir)        
+        disctab = []
+
+        with open(disctabf, 'r') as f:
+            ## define csv reader object, assuming delimiter is tab
+            tsvfile = csv.reader(f, delimiter='\t')
+
+            ## iterate through lines in file
+            for line in tsvfile:
+               disctab.append(line)
+
+ 	new_dataset = CV.postprocess(dataset,conf_data,langs,disctab)
  	
  	# save output json to file
 	save_data(new_dataset,dstFile)

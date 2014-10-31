@@ -47,6 +47,8 @@ from urlparse import urlparse
 # needed for CONVERTER :
 import codecs
 import simplejson as json
+import csv
+import Levenshtein as lvs
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
@@ -1019,7 +1021,7 @@ class CONVERTER(object):
                         return dataset
         return dataset
  
-    def map_lang(self,dataset,facetName,old_value,langs):
+    def map_lang(self,dataset,langs):
         """
         Convert languages and language codes into ISO names
  
@@ -1031,6 +1033,7 @@ class CONVERTER(object):
             if facet == 'extras':
                 for extra in dataset[facet]:
                     if extra['key'] == 'Language' :
+                        mcountry=None
                         language=extra['value']
                         if '_' in language:
                             language = language.split('_')[0]
@@ -1050,10 +1053,45 @@ class CONVERTER(object):
                             for l in re.split('[,.;: ]+', language):
                                 try: mcountry=langs.get(name=l.title())
                                 except KeyError: pass 
-                        extra['value'] = mcountry.name
+                        if mcountry :
+                            extra['value'] = mcountry.name
                         return dataset
         return dataset
  
+    def map_discipl(self,dataset,disctab):
+        """
+        Convert disciplines along B2FIND disciplinary list
+ 
+        Copyright (C) 2014 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        
+        for extra in dataset['extras']:
+           if extra['key'] == 'Discipline' :
+              invalue=extra['value'].encode('ascii','ignore')
+              maxr=0.0
+              for line in disctab :
+                 disc='%s' % line[3]
+                 r=lvs.ratio(invalue,disc)
+                 ## print '--- %s | %s | %f | %f' % (invalue,disc,r,maxr)
+                 if r > maxr  :
+                   maxdisc=disc
+                   maxr=r
+              if maxr == 1 and invalue == maxdisc :
+                 self.logger.debug('  | Perfect match of %s : nothing to do' % invalue)
+              elif maxr > 0.98 :
+                 self.logger.info('   | Similarity ratio %f is > 0.98 : replace value %s with best match %s' % (maxr,invalue,maxdisc))
+                 extra['value'] = maxdisc
+              elif maxr > 0.7 :
+                 self.logger.debug('   | Similarity ratio %f is > 0.7 : compare value %s and simlilar discipline %s' % (maxr,invalue,maxdisc))
+              else:
+                 self.logger.debug('   | Similarity ratio %f is < 0.7 : %s simlilarity w.r.t. discipline %s too low' % (maxr,invalue,maxdisc))
+              return dataset
+
+        self.logger.debug('   |- No value for Discipline available')  
+        return dataset
+
+
     def truncate(self,dataset,facetName,old_value,size):
         """
         truncates old value with new value for a given facet
@@ -1131,10 +1169,12 @@ class CONVERTER(object):
                             return dataset
         return dataset
       
-    def postprocess(self,dataset,rules,languages):
+    def postprocess(self,dataset,rules,languages,disctab):
         """
         changes dataset field values according to configuration
         """  
+        # generic mapping of languages
+        dataset = self.map_lang(dataset,languages)        
      
         for rule in rules:
             # rules can be checked for correctness
@@ -1157,8 +1197,6 @@ class CONVERTER(object):
                 return dataset
     
             ## call action
-            if action == "map_lang":
-                dataset = self.map_lang(dataset,facetName,old_value,languages)
             if action == "replace":
                 dataset = self.replace(dataset,facetName,old_value,new_value)
             elif action == "truncate":
@@ -1173,6 +1211,9 @@ class CONVERTER(object):
                 pass
             else:
                 pass
+
+        # generic mapping of disciplines
+        dataset = self.map_discipl(dataset,disctab)        
 
         return dataset
     
@@ -1244,6 +1285,17 @@ class CONVERTER(object):
 
             ## instance of language lib class needed for Language mapping
             languages = self.iso_639_3()
+            ## read B2FIND disciplines list for map_discipl
+            disctabf='%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),self.root)        
+            disctab = []
+
+            with open(disctabf, 'r') as f:
+            ## define csv reader object, assuming delimiter is tab
+                tsvfile = csv.reader(f, delimiter='\t')
+
+                ## iterate through lines in file
+                for line in tsvfile:
+                    disctab.append(line)
 
             for filename in files:
               jsondata = dict()
@@ -1273,13 +1325,15 @@ class CONVERTER(object):
                    elif ( os.path.basename(path) == 'a1057_1' or os.path.basename(path) == 'a0340_1' or os.path.basename(path) == 'a1025_1'):
                      for extra in jsondata['extras']:
                          if(extra['key'] == 'Discipline'):
-                                 extra['value'] = 'History'
+                                 extra['value'] = 'Human History'
                                  break
                    ## add extra key 'Discipline'
                    ##jsondata['extras'].append({"key": "Discipline","value": extra['value']})
 
                    ## md postprocessing
-                   jsondata=self.postprocess(jsondata,rules, languages)
+                   ##HHH 
+                   self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
+                   jsondata=self.postprocess(jsondata,rules, languages,disctab)
                 except:
                    log.error('    | [ERROR] during postprocessing along rules %s' % rules)
                    results['ecount'] += 1
