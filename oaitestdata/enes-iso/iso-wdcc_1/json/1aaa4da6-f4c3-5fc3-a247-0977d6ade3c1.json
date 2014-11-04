@@ -1,0 +1,89 @@
+{
+    "author": "Botzet, Michael ;Dr. Johann Jungclaus ;Michael Botzet",
+    "extras": [
+        {
+            "key": "Format",
+            "value": "WMO format GRIdded Binary data"
+        },
+        {
+            "key": "spatial",
+            "value": "{\"type\":\"Polygon\",\"coordinates\":[[[0,-90],[0,90],[360,90],[360,-90],[0,-90]]]}"
+        },
+        {
+            "key": "PublicationYear",
+            "value": "2008"
+        },
+        {
+            "key": "Origin",
+            "value": "Max-Planck-Institut fuer Meteorologie, Ocean in the Earth System"
+        },
+        {
+            "key": "Discipline",
+            "value": "Earth Sciences"
+        },
+        {
+            "key": "TempCoverageBegin",
+            "value": "25213939200"
+        },
+        {
+            "key": "PublicationTimestamp",
+            "value": "2008-07-01T11:59:59Z"
+        },
+        {
+            "key": "TemporalCoverage:BeginDate",
+            "value": "0800-01-01T00:00:00Z"
+        },
+        {
+            "key": "oai_identifier",
+            "value": "oai:c3grid.dkrz:de.dkrz.wdcc.iso2186315"
+        },
+        {
+            "key": "Language",
+            "value": "German"
+        },
+        {
+            "key": "TempCoverageEnd",
+            "value": "63271584000"
+        },
+        {
+            "key": "TemporalCoverage:EndDate",
+            "value": "2005-12-31T00:00:00Z"
+        },
+    ],
+    "maintainer": "Max-Planck-Institut fuer Meteorologie, Ocean in the Earth System",
+    "notes": "The data represent the fully forced experiment for the MPI-M Millennium Project\n( http://www.mpimet.mpg.de/en/wissenschaft/working-groups/millennium.html )\nusing the comprehensive MPI-M Earth System Model ECHAM5/JSBACH/MPI-OM/HAMOCC including the biogeophysical and biogeochemical effects of an interactive carbon cycle.\nThis experiment is the third millennium simulation including the complete set of recent reconstructions of time-dependent climate forcing components and corresponds to the mil0001 control experiment (see\nhttp://cera-www.dkrz.de/WDCC/ui/Entry.jsp?acronym=mil0001)\n\nThe model is run for the years 800 to 2000 under the following time-dependent forcing components: (1) optical properties of stratospheric sulphate aerosols from volcanic eruptions (T. Crowley), (2) variation of total solar irradiance (N.Krivova, 2008), (3) exact calculation of changes in the parameters of the earth's orbit, (4) land use change (J. Pongratz).\n\nTechnical details:\nThe experiment used the following models/resolutions:\nECHAM5 (EH5) Version 5.4.01 at T31L19 resolution\nJSBACH (JSB) at T31 resolution, one soil layer, 13 vegetation types and four vegetation tiles per grid box\nMPI-OM/HAMOCC Version 1.3.0 at GR3.0L40 resolution\nThe output from the experiment is archived at\nhpss:/dxul/ut/9/prj/im0387/m212098/cosmos-1.1.0_millennium/experiments/mil0013",
+    "tags": [
+        {
+            "name": "climate simulation"
+        },
+        {
+            "name": "millennium run"
+        },
+        {
+            "name": "paleoclimate simulation"
+        },
+        {
+            "name": "ECHAM5"
+        },
+        {
+            "name": "MPIOM"
+        },
+        {
+            "name": "HAMOCC"
+        },
+        {
+            "name": "JSBACH"
+        },
+        {
+            "name": "COSMOS"
+        },
+        {
+            "name": "carbon cycle"
+        },
+        {
+            "name": "solar forcing"
+        }
+    ],
+    "title": "MPI-M Earth System Modelling Framework: millennium full forcing experiment (ensemble member 3)",
+    "url": "http://cera-www.dkrz.de/WDCC/ui/Compact.jsp?acronym=mil0013"
+}
