@@ -21,8 +21,9 @@ case $lhost in
 ##HEW-T   rhost=eudat6b.dkrz.de
    epiccheck='--epic_check credentials_11098'
    ;;
-  eudatmd1.dkrz.de) ## b2find.eudat.eu :8000
+  eudatmd1.dkrz.de) 
    rhost=b2find.eudat.eu:8080
+   rhost=eudatmd1.dkrz.de:8080
    epiccheck='--epic_check credentials_11098'
    ;;
   *)
