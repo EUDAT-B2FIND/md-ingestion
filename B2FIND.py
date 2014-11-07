@@ -6,7 +6,7 @@
   - POSTPROCESS Run postprocess routines on JSON files
   - OUTPUT      Initializes the logger class and provides methods for saving log data and for printing those.    
 
-Install required modules simplejson, e.g. by :
+Install required modules as simplejson, e.g. by :
 
   > sudo pip install <module>
 
@@ -52,6 +52,7 @@ import Levenshtein as lvs
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
+import ckanapi
 
 class CKAN_CLIENT(object):
 
@@ -1073,7 +1074,7 @@ class CONVERTER(object):
               for line in disctab :
                  disc='%s' % line[3]
                  r=lvs.ratio(invalue,disc)
-                 ## print '--- %s | %s | %f | %f' % (invalue,disc,r,maxr)
+                 ##print '--- %s | %s | %f | %f' % (invalue,disc,r,maxr)
                  if r > maxr  :
                    maxdisc=disc
                    maxr=r
@@ -1173,8 +1174,6 @@ class CONVERTER(object):
         """
         changes dataset field values according to configuration
         """  
-        # generic mapping of languages
-        dataset = self.map_lang(dataset,languages)        
      
         for rule in rules:
             # rules can be checked for correctness
@@ -1211,9 +1210,6 @@ class CONVERTER(object):
                 pass
             else:
                 pass
-
-        # generic mapping of disciplines
-        dataset = self.map_discipl(dataset,disctab)        
 
         return dataset
     
@@ -1258,7 +1254,7 @@ class CONVERTER(object):
               self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
               return results
 
-        # run the converter
+        # run the JAVA XPATH xml2json converter
         proc = subprocess.Popen(
             ["cd '%s'; java -cp lib/%s -jar %s inputdir=%s/xml outputdir=%s mapfile=%s"% (
                 os.getcwd()+'/'+self.root, self.cp,
@@ -1272,32 +1268,34 @@ class CONVERTER(object):
         if err: self.logger.error('[ERROR] ' + err)
         
         # check for mapper postproc config file
+        rules=None
         ppconfig_file='%s/%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
         if os.path.isfile(ppconfig_file):
             # read config file 
             f = codecs.open(ppconfig_file, "r", "utf-8")
             rules = f.readlines()[1:] # without the header
             rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
-            # find all .json files in dir/json:
-            files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
-        
-            fcount = 1
 
-            ## instance of language lib class needed for Language mapping
-            languages = self.iso_639_3()
-            ## read B2FIND disciplines list for map_discipl
-            disctabf='%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),self.root)        
-            disctab = []
+        ## instance of language lib class needed for Language mapping
+        languages = self.iso_639_3()
+        ## read B2FIND disciplines list for map_discipl
+        disctabf='%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),self.root)        
+        disctab = []
 
-            with open(disctabf, 'r') as f:
+        with open(disctabf, 'r') as f:
             ## define csv reader object, assuming delimiter is tab
-                tsvfile = csv.reader(f, delimiter='\t')
+            tsvfile = csv.reader(f, delimiter='\t')
 
-                ## iterate through lines in file
-                for line in tsvfile:
-                    disctab.append(line)
+            ## iterate through lines in file
+            for line in tsvfile:
+                disctab.append(line)
 
-            for filename in files:
+        # find all .json files in dir/json:
+        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        
+        fcount = 1
+
+        for filename in files:
               jsondata = dict()
         
               if ( os.path.getsize(path+'/json/'+filename) > 0 ):
@@ -1309,7 +1307,9 @@ class CONVERTER(object):
                         results['ecount'] += 1
                         continue
                 try:
-                   ### Mapper post processing
+                   ### Semantic mapping
+                   # generic mapping of languages
+                   jsondata = self.map_lang(jsondata,languages)        
 
                    ###HEW!!! specific TEL processing -- process in general postprocesing or converter !!!
                    if ( os.path.basename(path) == 'a0337_1' or re.match(re.compile('a0005_'+'[0-9]*'),os.path.basename(path)) or os.path.basename(path) == 'a0336_1' ) :
@@ -1327,11 +1327,11 @@ class CONVERTER(object):
                          if(extra['key'] == 'Discipline'):
                                  extra['value'] = 'Human History'
                                  break
-                   ## add extra key 'Discipline'
-                   ##jsondata['extras'].append({"key": "Discipline","value": extra['value']})
-
-                   ## md postprocessing
-                   ##HHH 
+                except:
+                   log.error('    | [ERROR] during map_lang ')
+                   results['ecount'] += 1
+                   continue
+                try:
                    self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
                    jsondata=self.postprocess(jsondata,rules, languages,disctab)
                 except:
@@ -1345,6 +1345,13 @@ class CONVERTER(object):
                         log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
                         continue
+                try:
+                    # generic mapping of disciplines
+                    jsondata = self.map_discipl(jsondata,disctab)        
+                except:
+                   log.error('    | [ERROR] during map_discipl ')
+                   results['ecount'] += 1
+                   continue
               else:
                 results['ecount'] += 1
                 continue
@@ -1716,10 +1723,10 @@ class UPLOADER (object):
 
     def upload(self, ds, dsstatus, community, jsondata):
         ## upload (UPLOADER object, dsname, dsstatus, community, jsondata) - method
-        # Uploads a dataset <jsondata> with name <dsname> as a member of <community> to CKAN. <dsstatus> describes the
-        # state of the package and is 'new', 'changed', 'unchanged' or 'unknown'. In the case of a 'new' or 'unknown'
-        # package this method will call the API 'package_create' and in the case of a 'changed' package the API 
-        # 'package_update'. Nothing happens if the state is 'unchanged'
+        # Uploads a dataset <jsondata> with name <dsname> as a member of <community> to CKAN. 
+        #   <dsstatus> describes the state of the package and is 'new', 'changed', 'unchanged' or 'unknown'.         #   In the case of a 'new' or 'unknown' package this method will call the API 'package_create' 
+        #   and in the case of a 'changed' package the API 'package_update'. 
+        #   Nothing happens if the state is 'unchanged'
         #
         # Parameters:
         # -----------
@@ -1729,6 +1736,66 @@ class UPLOADER (object):
         # 3. (string)   dsname - A B2FIND community in CKAN
         # 4. (dict)     jsondata - Metadata fields of the dataset in JSON format
         #
+        # Return Values:
+        # --------------
+        # 1. (integer)  upload result:
+        #               0 - critical error occured
+        #               1 - no error occured, uploaded with 'package_create'
+        #               2 - no error occured, uploaded with 'package_update'
+    
+        rvalue = 0
+        
+        # add some CKAN specific fields to dictionary:
+        jsondata["name"] = ds
+        jsondata["state"]='active'
+        jsondata["groups"]=[{ "name" : community }]
+        jsondata["owner_org"]="eudat"
+   
+        # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
+        if (dsstatus == 'new' or dsstatus == 'unknown') :
+            self.logger.debug('\t - Try to create dataset %s' % ds)
+            
+            results = self.CKAN.action('package_create',jsondata)
+            if (results and results['success']):
+                rvalue = 1
+            else:
+                self.logger.debug('\t - Creation failed. Try to update instead.')
+                results = self.CKAN.action('package_update',jsondata)
+                if (results and results['success']):
+                    rvalue = 2
+                else:
+                    rvalue = 0
+        
+        # if the dsstatus is 'changed' then update it with package_update:
+        elif (dsstatus == 'changed'):
+            self.logger.debug('\t - Try to update dataset %s' % ds)
+            
+            results = self.CKAN.action('package_update',jsondata)
+            if (results and results['success']):
+                rvalue = 2
+            else:
+                self.logger.debug('\t - Update failed. Try to create instead.')
+                results = self.CKAN.action('package_create',jsondata)
+                if (results and results['success']):
+                    rvalue = 1
+                else:
+                    rvalue = 0
+           
+        return rvalue
+
+    def bulk_upload(self, ds, dsstatus, community, jsondata):
+        ## bulk_upload (UPLOADER object, dsname, dsstatus, community, jsondata) - method
+        # Buld upload using ckanapi an jsonline file or a set of jsonline files
+        #   <dsstatus> describes the state of upload ...
+        #
+        # Parameters:
+        # ----------- ????!!!!
+        # 1. (string)   dsname - Name of the dataset
+        # 2. (string)   dsstatus - Status of the dataset: can be 'new', 'changed', 'unchanged' or 'unknown'.
+        #                           See also .check_dataset()
+        # 3. (string)   dsname - A B2FIND community in CKAN
+        # 4. (dict)     jsondata - Metadata fields of the dataset in JSON format
+        # ^^^^^^^^^^^^^ ????!!!! ^^^^^^^^^^^^^^^
         # Return Values:
         # --------------
         # 1. (integer)  upload result:
@@ -2312,8 +2379,8 @@ class OUTPUT (object):
         for mode in all_modes:
             reshtml.write(
                 '<tr %s><th>%s</th><td>%d</td><td>%d</td><td>%d</td><td>%7.3f</td><td>%7.3f</td></tr>' % (
-                    'class="table-disabled"' if (pstat['status'][mode[0]] == 'no') else '',
-                    mode[1],
+                    'class="table-disabled"' if (pstat['status'][mode] == 'no') else '',
+                    pstat['short'][mode],
                     self.get_stats('#total','#total',mode[0],'tcount'),
                     self.get_stats('#total','#total',mode[0],'count'),
                     self.get_stats('#total','#total',mode[0],'ecount'),
@@ -2355,7 +2422,7 @@ class OUTPUT (object):
 ''')
 
             for mode in processed_modes:
-                reshtml.write('\t\t<th colspan=\"5\">%s</th>\n' % mode[1])
+                reshtml.write('\t\t<th colspan=\"5\">%s</th>\n' % pstat['short'][mode])
                     
             reshtml.write('</tr>\n') 
 
@@ -2402,7 +2469,7 @@ class OUTPUT (object):
                         <th> Processes > </th>
 ''')
                 for mode in processed_modes:
-                    reshtml.write('\t\t<th colspan=\"3\">%s</th>\n' % mode[1])
+                    reshtml.write('\t\t<th colspan=\"3\">%s</th>\n' % pstat['short'][mode])
                 reshtml.write('\t\t\t<th>Log</th><th>Error</th>\t\t</tr>\n')
                 
                 for subset in sorted(self.get_stats(request,'#AllSubsets')):
@@ -2432,9 +2499,9 @@ class OUTPUT (object):
                                 size = os.path.getsize(self.jobdir+'/%s_%d.log.txt'%(mode[0],self.get_stats(request,subset,'#id')))
                                 if (size != 0):
                                     size = int(size/1024.) or 1
-                                reshtml.write('<a href="%s_%d.log.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),mode[1],size))
+                                reshtml.write('<a href="%s_%d.log.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),pstat['short'][mode],size))
                             except OSError,e:
-                                reshtml.write('%s log file not available!<br /><small><small>(<i>%s</i>)</small></small><br />'% (mode[1], e))
+                                reshtml.write('%s log file not available!<br /><small><small>(<i>%s</i>)</small></small><br />'% (pstat['short'][mode], e))
                     reshtml.write('</td>')
                 
                     # link error files:
@@ -2445,9 +2512,9 @@ class OUTPUT (object):
                                 size = os.path.getsize(self.jobdir+'/%s_%d.err.txt'%(mode[0],self.get_stats(request,subset,'#id')))
                                 if (size != 0):
                                     size = int(size/1024.) or 1
-                                reshtml.write('<a href="%s_%d.err.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),mode[1],size))
+                                reshtml.write('<a href="%s_%d.err.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),pstat['short'][mode],size))
                             except OSError,e:
-                                reshtml.write('No %s error file! <br /><small><small>(<i>%s</i>)</small></small><br />'% (mode[1], e))
+                                reshtml.write('No %s error file! <br /><small><small>(<i>%s</i>)</small></small><br />'% (pstat['short'][mode], e))
                     reshtml.write('</td>')
                 
                     reshtml.write('</tr>')
