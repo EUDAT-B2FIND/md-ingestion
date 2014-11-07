@@ -5,6 +5,7 @@
   MD Ingestion : Harvest from OAI provider, convert XML (to JSON), semantic mapping of MD schema, remap to B2FIND xml, and upload to JMD portal
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ), John Mrziglod (DKRZ)
+Licensed under AGPLv3.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -66,13 +67,14 @@ def main():
     OUT = B2FIND.OUTPUT(pstat,now,jid,options)
     logger = log.getLogger()
     
-    # write mode to output:
-    logger.info("Run in mode: " + mode)
-    logger.info("Process ID: " + str(jid) + "\n")
-    logger.debug("Initialized processing status:")
+    # print out general info:
+    logger.info('\nVersion:  \t%s' % ManagerVersion)
+    logger.info('Run mode:   \t%s' % pstat['short'][mode])
+    logger.debug('Process ID:\t%s' % str(jid))
+    logger.debug('Processing status:\t')
     for key in pstat['status']:
         logger.debug(" %s\t%s" % (key, pstat['status'][key]))
-    
+    logger.info('')
     # check options:
     if ( pstat['status']['u'] == 'tbd'):
     
@@ -954,7 +956,7 @@ def pstat_init (p,modes,mode,source,iphost):
     pstat = {
         'status' : {},
         'text' : {},
-        'short' : [],
+        'short' : {},
      }
 
     for proc in plist :
@@ -982,11 +984,11 @@ def pstat_init (p,modes,mode,source,iphost):
     pstat['text']['u']='Upload JSON records as datasets into JMD %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
-    pstat['short'].append(['h', 'Harvesting'])
-    pstat['short'].append(['c', 'Converting'])
-    pstat['short'].append(['r', 'Reconverting'])
-    pstat['short'].append(['u', 'Uploading'])
-    pstat['short'].append(['d', 'Deletion'])
+    pstat['short']['h']='Harvesting'
+    pstat['short']['c']='Converting'
+    pstat['short']['r']='Reconverting'
+    pstat['short']['u']='Uploading'
+    pstat['short']['d']='Deletion'
     
     return (mode, pstat)
 
