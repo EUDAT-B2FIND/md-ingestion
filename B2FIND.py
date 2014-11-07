@@ -1332,8 +1332,9 @@ class CONVERTER(object):
                    results['ecount'] += 1
                    continue
                 try:
-                   self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
-                   jsondata=self.postprocess(jsondata,rules, languages,disctab)
+                   if (rules):
+                       self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
+                       jsondata=self.postprocess(jsondata,rules, languages,disctab)
                 except:
                    log.error('    | [ERROR] during postprocessing along rules %s' % rules)
                    results['ecount'] += 1
