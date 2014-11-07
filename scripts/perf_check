@@ -72,6 +72,10 @@ do
   then
     echo -e " |- Create unknown r. succeed \t $(grep -c 'Creation of unknown record succeed' ${outfile})"
   fi
+  if [ $(grep -c 'Creation of changed record succeed' ${outfile}) -gt 0 ]
+  then
+    echo -e " |- Create changed r. succeed \t $(grep -c 'Creation of changed record succeed' ${outfile})"
+  fi
   if [ $(grep -c 'Creation of new record' ${outfile}) -gt 0 ]
   then
     echo -e " |- New created records       \t $(grep -c 'Creation of new record' ${outfile})"
