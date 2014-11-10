@@ -933,7 +933,32 @@ class CONVERTER(object):
         # get the java converter name:
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
         
+    class cv_diciplines(object):
+        """
+        This class represents the closed vocabulary used for the mapoping of B2FIND discipline mapping
+        Copyright (C) 2014 Heinrich Widmann.
 
+        """
+        def __init__(self):
+##           self.discipl_file =  '%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),CONVERTER.root)
+           self.discipl_list = self.get_list()
+
+        @staticmethod
+        def get_list():
+            import csv
+            import os
+            root='../mapper/current'
+            discipl_file =  '%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),root)
+            disctab = []
+            with open(discipl_file, 'r') as f:
+                ## define csv reader object, assuming delimiter is tab
+                tsvfile = csv.reader(f, delimiter='\t')
+
+                ## iterate through lines in file
+                for line in tsvfile:
+                   disctab.append(line)
+                   
+            return disctab
 
     class iso_639_3(object):
         """
@@ -1170,7 +1195,7 @@ class CONVERTER(object):
                             return dataset
         return dataset
       
-    def postprocess(self,dataset,rules,languages,disctab):
+    def postprocess(self,dataset,rules):
         """
         changes dataset field values according to configuration
         """  
@@ -1242,11 +1267,8 @@ class CONVERTER(object):
         elif not os.path.exists(path + '/xml') or not os.listdir(path + '/xml'):
             self.logger.error('[ERROR] The directory "%s/xml" does not exist or no xml files for converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
-        #elif not os.path.exists(path + '/json'):
-        #    self.logger.error('[ERROR] The directory "%s/json" does not exist !' % (path))
-        #    return results
     
-        # check mapfile
+        # check XPATH mapfile
         mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
         if not os.path.isfile(mapfile):
            mapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
@@ -1262,7 +1284,6 @@ class CONVERTER(object):
                 path, path, mapfile
             )], stdout=subprocess.PIPE, shell=True)
         (out, err) = proc.communicate()
-        
         # check output and print it
         self.logger.info(out)
         if err: self.logger.error('[ERROR] ' + err)
@@ -1278,23 +1299,12 @@ class CONVERTER(object):
 
         ## instance of language lib class needed for Language mapping
         languages = self.iso_639_3()
-        ## read B2FIND disciplines list for map_discipl
-        disctabf='%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),self.root)        
-        disctab = []
+        ##  instance of B2FIND discipline table
+        disctab = self.cv_diciplines()
 
-        with open(disctabf, 'r') as f:
-            ## define csv reader object, assuming delimiter is tab
-            tsvfile = csv.reader(f, delimiter='\t')
-
-            ## iterate through lines in file
-            for line in tsvfile:
-                disctab.append(line)
-
-        # find all .json files in dir/json:
+        # loop over all .json files in dir/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
-        
         fcount = 1
-
         for filename in files:
               jsondata = dict()
         
@@ -1334,7 +1344,7 @@ class CONVERTER(object):
                 try:
                    if (rules):
                        self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
-                       jsondata=self.postprocess(jsondata,rules, languages,disctab)
+                       jsondata=self.postprocess(jsondata,rules)
                 except:
                    log.error('    | [ERROR] during postprocessing along rules %s' % rules)
                    results['ecount'] += 1
@@ -1348,7 +1358,7 @@ class CONVERTER(object):
                         continue
                 try:
                     # generic mapping of disciplines
-                    jsondata = self.map_discipl(jsondata,disctab)        
+                    jsondata = self.map_discipl(jsondata,disctab.discipl_list)        
                 except:
                    log.error('    | [ERROR] during map_discipl ')
                    results['ecount'] += 1
