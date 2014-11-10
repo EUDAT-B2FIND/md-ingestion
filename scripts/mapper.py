@@ -166,33 +166,23 @@ def main():
         conf_data = get_conf(configFile)
  	
  	# postprocess the json file
-        langs = CV.iso_639_3()
-        mappingdir='../md-mapping/mapfiles'
-        disctabf='%s/%s/b2find_disciplines.tab' % (os.getcwd(),mappingdir)        
-        disctab = []
-
-        with open(disctabf, 'r') as f:
-            ## define csv reader object, assuming delimiter is tab
-            tsvfile = csv.reader(f, delimiter='\t')
-
-            ## iterate through lines in file
-            for line in tsvfile:
-               disctab.append(line)
         try:
            ### Semantic mapping
            # generic mapping of languages
-           dataset = CV.map_lang(dataset,langs)        
+          langs = CV.iso_639_3()
+          dataset = CV.map_lang(dataset,langs)        
         except:
             CV.logger.error('    | [ERROR] during map_lang ')
         
 
         CV.logger.info('%s     INFO  PostProcessor - Processing: %s' % (time.strftime("%H:%M:%S"),jsonfile))
 
- 	new_dataset = CV.postprocess(dataset,conf_data,langs,disctab)
+ 	new_dataset = CV.postprocess(dataset,conf_data)
 
         try:
             # generic mapping of disciplines
-            dataset = CV.map_discipl(dataset,disctab)        
+            disctab = CV.cv_diciplines()
+            dataset = CV.map_discipl(dataset,disctab.discipl_list)        
         except:
             CV.logger.error('    | [ERROR] during map_discipl ')
  	
