@@ -69,7 +69,8 @@ def save_data(dataset,dstFile):
     saves a json file
     """
     with io.open(dstFile, 'w', encoding='utf-8') as f:
-        f.write(unicode(json.dumps(dataset, sort_keys = True, indent = 4,ensure_ascii=True)))
+        ##HEW??? json.dump(dataset,f, ensure_ascii=False)
+        f.write(json.dumps(dataset, sort_keys = True, indent = 4,ensure_ascii=False))
 
 def main():
 	parser = argparse.ArgumentParser(description='Postprocesses a json file')

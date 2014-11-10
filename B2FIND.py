@@ -47,7 +47,7 @@ from urlparse import urlparse
 # needed for CONVERTER :
 import codecs
 import simplejson as json
-import csv
+import csv, io
 import Levenshtein as lvs
 
 # needed for UPLOADER and CKAN class:
@@ -1349,13 +1349,6 @@ class CONVERTER(object):
                    log.error('    | [ERROR] during postprocessing along rules %s' % rules)
                    results['ecount'] += 1
                    continue
-                with open(path+'/json/'+filename, 'w') as f:
-                   try:
-                        json.dump(jsondata,f, sort_keys = True, indent = 4, ensure_ascii=True)
-                   except:
-                        log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
-                        results['ecount'] += 1
-                        continue
                 try:
                     # generic mapping of disciplines
                     jsondata = self.map_discipl(jsondata,disctab.discipl_list)        
@@ -1363,6 +1356,22 @@ class CONVERTER(object):
                    log.error('    | [ERROR] during map_discipl ')
                    results['ecount'] += 1
                    continue
+                with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
+		   log.info('   | [INFO] decode json data')
+                   data = json.dumps(jsondata, ensure_ascii=False).decode('utf8')
+                   try:
+                       log.info('   | [INFO] save json file')
+                       json_file.write(data)
+                   except TypeError:
+                       # Decode data to Unicode first
+                       log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
+                       json_file.write(data.decode('utf8'))
+##                   try:
+##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
+                   except:
+                        log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
+                        results['ecount'] += 1
+                        continue
               else:
                 results['ecount'] += 1
                 continue
