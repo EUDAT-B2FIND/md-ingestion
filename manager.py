@@ -411,7 +411,7 @@ def process_upload(UP, rlist, options):
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
             ### VALIDATE JSON DATA
-            if (not UP.validate(jsondata)):
+            if (UP.validate(jsondata) < 1):
                 logger.info('        |-> Upload is aborted')
                 results['ecount'] += 1
                 continue

@@ -1029,7 +1029,7 @@ class CONVERTER(object):
         else:
             return '' # if converting cannot be done, make date empty
 
-    def replace(self,dataset,facetName,old_value,new_value):
+    def replace(self,setname,dataset,facetName,old_value,new_value):
         """
         replaces old value - can be a regular expression - with new value for a given facet
         """
@@ -1037,14 +1037,16 @@ class CONVERTER(object):
         old_regex = re.compile(old_value)
 
         for facet in dataset:
-            if facet == facetName and re.match(old_regex, dataset[facet]):
-                dataset[facet] = new_value
-                return dataset
+            if facet == facetName :
+               if setname != '*' or re.match(old_regex, dataset[facet]):
+                  dataset[facet] = new_value
+                  return dataset
             if facet == 'extras':
                 for extra in dataset[facet]:
-                    if extra['key'] == facetName and re.match(old_regex, extra['value']):
-                        extra['value'] = new_value
-                        return dataset
+                    if extra['key'] == facetName :
+                       if setname != '*' or re.match(old_regex, extra['value']) :
+                          extra['value'] = new_value
+                          return dataset
         return dataset
  
     def map_lang(self,dataset,langs):
@@ -1206,23 +1208,18 @@ class CONVERTER(object):
             
             rule = rule.rstrip('\n').split(',,') # splits  each line of config file 
             groupName = rule[0]
-            datasetName = rule[1]
+            setName = rule[1]
             facetName = rule[2]
             old_value = rule[3]
             new_value = rule[4]
             action = rule[5]
                         
-            r = dataset.get("group",None)
-            if groupName != '*' and  groupName != r:
-                return dataset
-    
-            r = dataset.get("name",None)
-            if datasetName != '*' and datasetName != r:
-                return dataset
+            r = dataset.get("extras",None)
+            oai_set=filter(lambda person: person['key'] == 'oai_set', r)[0]['value']
     
             ## call action
             if action == "replace":
-                dataset = self.replace(dataset,facetName,old_value,new_value)
+                dataset = self.replace(setName,dataset,facetName,old_value,new_value)
             elif action == "truncate":
                 dataset = self.truncate(dataset,facetName,old_value,new_value)
             elif action == "changeDateFormat":
@@ -1322,21 +1319,16 @@ class CONVERTER(object):
                    jsondata = self.map_lang(jsondata,languages)        
 
                    ###HEW!!! specific TEL processing -- process in general postprocesing or converter !!!
-                   if ( os.path.basename(path) == 'a0337_1' or re.match(re.compile('a0005_'+'[0-9]*'),os.path.basename(path)) or os.path.basename(path) == 'a0336_1' ) :
-                     for extra in jsondata['extras']:
-                        if(extra['key'] == 'Discipline'):
-                                 extra['value'] = 'Arts'
-                                 break
-                   elif ( os.path.basename(path) == 'a0338_1' ) :
-                     for extra in jsondata['extras']:
-                        if(extra['key'] == 'Discipline'):
-                                 extra['value'] = 'Philology'
-                                 break
-                   elif ( os.path.basename(path) == 'a1057_1' or os.path.basename(path) == 'a0340_1' or os.path.basename(path) == 'a1025_1'):
-                     for extra in jsondata['extras']:
-                         if(extra['key'] == 'Discipline'):
-                                 extra['value'] = 'Human History'
-                                 break
+###HEW-DEL!!!                if ( os.path.basename(path) == 'a0338_1' ) :
+###HEW-DEL!!!                  for extra in jsondata['extras']:
+###HEW-DEL!!!                     if(extra['key'] == 'Discipline'):
+###HEW-DEL!!!                              extra['value'] = 'Philology'
+###HEW-DEL!!!                              break
+###HEW-DEL!!!                elif ( os.path.basename(path) == 'a1057_1' or os.path.basename(path) == 'a0340_1' or os.path.basename(path) == 'a1025_1'):
+###HEW-DEL!!!                  for extra in jsondata['extras']:
+###HEW-DEL!!!                      if(extra['key'] == 'Discipline'):
+###HEW-DEL!!!                              extra['value'] = 'Human History'
+###HEW-DEL!!!                              break
                 except:
                    log.error('    | [ERROR] during map_lang ')
                    results['ecount'] += 1
@@ -1358,7 +1350,7 @@ class CONVERTER(object):
                    continue
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
 		   log.info('   | [INFO] decode json data')
-                   data = json.dumps(jsondata, ensure_ascii=False).decode('utf8')
+                   data = json.dumps(jsondata, ensure_ascii=True, sort_keys = True, indent = 4).decode('utf8')
                    try:
                        log.info('   | [INFO] save json file')
                        json_file.write(data)
@@ -1569,24 +1561,6 @@ class UPLOADER (object):
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
 
-    def replace(self,dataset,facetName,old_value,new_value):
-        """
-        replaces old value - can be a regular expression - with new value for a given facet
-        """
-
-        old_regex = re.compile(old_value)
-
-        for facet in dataset:
-            if facet == facetName and re.match(old_regex, dataset[facet]):
-                dataset[facet] = new_value
-                return dataset
-            if facet == 'extras':
-                for extra in dataset[facet]:
-                    if extra['key'] == facetName and re.match(old_regex, extra['value']):
-                        extra['value'] = new_value
-                        return dataset
-        return dataset
- 
     def truncate(self,dataset,facetName,old_value,size):
         """
         truncates old value with new value for a given facet
@@ -1678,6 +1652,15 @@ class UPLOADER (object):
             if(extra['key'] == 'oai_identifier' and extra['value'] == ''):
                 errmsg = "'oai_identifier': The ID is missing"
                 status = 0  # set status
+
+            # shrink field fulltext
+            elif(extra['key'] == 'fulltext' and sys.getsizeof(extra['value']) > 30):
+                errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))
+                encoding='utf-8'
+                encoded = extra['value'].encode(encoding)[:32000]
+                extra['value']=encoded.decode(encoding, 'ignore')
+                ##HEW!!! print "cut off : 'fulltext': now ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))
+                status = 2  # set status
 
             elif(extra['key'] == 'PublicationYear'):            
                 try:
