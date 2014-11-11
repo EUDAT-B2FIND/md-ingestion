@@ -1,0 +1,1948 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.mpi.nl:MPI218644</identifier>
+    <datestamp>2009-08-11</datestamp>
+    <setSpec>MPI0:MPI214746:MPI218627</setSpec>
+  </header>
+  <metadata>
+    <CMD xmlns="http://www.clarin.eu/cmd/" xmlns:MPI="http://www.mpi.nl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1271859438204/xsd">
+      <Header>
+        <MdCreator>imdi2clarin.xsl</MdCreator>
+        <MdCreationDate>2014-10-30</MdCreationDate>
+        <MdSelfLink>hdl:1839/00-0000-0000-0003-5614-1@format=cmdi</MdSelfLink>
+        <MdProfile>clarin.eu:cr1:p_1271859438204</MdProfile>
+        <MdCollectionDisplayName>TLA: IFA corpus</MdCollectionDisplayName>
+      </Header>
+      <Resources>
+        <ResourceProxyList>
+          <ResourceProxy id="d49867e1">
+            <ResourceType>LandingPage</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0003-5614-1@view</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e478">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-440A-4</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e547">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-440B-E</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e616">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-440C-0</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e685">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-440D-1</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e754">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-440E-B</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e824">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-440F-6</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e893">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4410-2</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e962">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4411-6</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1031">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4412-6</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1100">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4413-8</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1169">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4414-9</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1239">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4415-4</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1308">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4416-E</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1377">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4417-F</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1446">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4418-1</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1515">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4419-E</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1584">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-441A-5</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1654">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-441B-7</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1723">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-441C-6</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1792">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-441D-3</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1861">
+            <ResourceType mimetype="audio/x-aiff">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-441E-D</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1930">
+            <ResourceType mimetype="application/ogg">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-441F-0</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e1999">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4421-8</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2091">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4423-4</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2182">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4425-F</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2273">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4427-E</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2364">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4429-2</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2455">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-442B-3</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2546">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-442D-0</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2638">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-442F-6</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2729">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4431-4</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2820">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4433-F</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="d49867e2911">
+            <ResourceType mimetype="text/plain">Resource</ResourceType>
+            <ResourceRef>hdl:1839/00-0000-0000-0004-4435-E</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="sru">
+            <ResourceType>SearchService</ResourceType>
+            <ResourceRef>http://cqlservlet.mpi.nl/</ResourceRef>
+          </ResourceProxy>
+        </ResourceProxyList>
+        <JournalFileProxyList/>
+        <ResourceRelationList/>
+      </Resources>
+      <Components>
+        <Session>
+          <Name>F24I1FT</Name>
+          <Title>F24I1FT</Title>
+          <Date>2002-11-01</Date>
+          <descriptions>
+            <Description LanguageId="ISO639:eng"/>
+          </descriptions>
+          <MDGroup>
+            <Location>
+              <Continent>Europe</Continent>
+              <Country>Netherlands</Country>
+              <Address>Institute of Phonetic Sciences, University of Amsterdam, Herengracht 338, NL1016CG Amsterdam, The Netherlands</Address>
+            </Location>
+            <Project>
+              <Name>IFAcorpus</Name>
+              <Title>IFAcorpus</Title>
+              <Id/>
+              <Contact>
+                <Name>Rob van Son</Name>
+                <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                <Email>Rob.van.Son@hum.uva.nl</Email>
+                <Organisation>University of Amsterdam, Institute of Phonetic Sciences</Organisation>
+              </Contact>
+              <descriptions>
+                <Description LanguageId="ISO639:eng"/>
+              </descriptions>
+            </Project>
+            <Keys/>
+            <Content>
+              <Genre>Unspecified</Genre>
+              <SubGenre>Unspecified</SubGenre>
+              <Task>Unspecified</Task>
+              <Modalities>Speech</Modalities>
+              <CommunicationContext>
+                <Interactivity>non-interactive</Interactivity>
+                <PlanningType>planned</PlanningType>
+                <Involvement>elicited</Involvement>
+                <SocialContext>Unspecified</SocialContext>
+                <EventStructure>Unspecified</EventStructure>
+                <Channel>Unspecified</Channel>
+              </CommunicationContext>
+              <Content_Languages>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+                <Content_Language>
+                  <Id>ISO639-3:nld</Id>
+                  <Name>Dutch</Name>
+                  <descriptions>
+                    <Description LanguageId=""/>
+                  </descriptions>
+                </Content_Language>
+              </Content_Languages>
+              <Keys>
+                <Key Name="IMDI__1_9.Interactional">Unspecified</Key>
+                <Key Name="IMDI__1_9.Discursive">Unspecified</Key>
+                <Key Name="IMDI__1_9.Interactional">Unspecified</Key>
+              </Keys>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">This file was generated from an IMDI 1.9 file and transformed to IMDI 3.0. The substructure of Genre is replaced by two elements named "Genre" and "SubGenre". The original content of Genre substructure was: Interactional = 'Unspecified', Discursive = 'Unspecified', Performance = 'Unspecified'. These values have been added as Keys to the Content information. </Description>
+                <Description LanguageId="ISO639:eng"/>
+              </descriptions>
+            </Content>
+            <Actors>
+              <descriptions>
+                <Description LanguageId=""/>
+              </descriptions>
+              <Actor>
+                <Role>consultant</Role>
+                <Name>F24I</Name>
+                <FullName>F24I</FullName>
+                <Code>I</Code>
+                <FamilySocialRole>Unspecified</FamilySocialRole>
+                <EthnicGroup>Dutch</EthnicGroup>
+                <Age>24</Age>
+                <BirthDate>Unspecified</BirthDate>
+                <Sex>Female</Sex>
+                <Education>University</Education>
+                <Anonymized>false</Anonymized>
+                <Contact>
+                  <Name/>
+                  <Address/>
+                  <Email/>
+                  <Organisation/>
+                </Contact>
+                <Keys>
+                  <Key Name="IFAcorpus.speaker">F24I</Key>
+                  <Key Name="IFAcorpus.sex">F</Key>
+                  <Key Name="IFAcorpus.age">24</Key>
+                  <Key Name="IFAcorpus.idcode">I</Key>
+                  <Key Name="IFAcorpus.height">173</Key>
+                  <Key Name="IFAcorpus.weight">68</Key>
+                  <Key Name="IFAcorpus.fl">Du </Key>
+                  <Key Name="IFAcorpus.sl">-  </Key>
+                  <Key Name="IFAcorpus.pob">Woerden</Key>
+                  <Key Name="IFAcorpus.ps">Nieuwkoop</Key>
+                  <Key Name="IFAcorpus.ss">Hoorn</Key>
+                  <Key Name="IFAcorpus.ts">UvA</Key>
+                  <Key Name="IFAcorpus.pe">HBO</Key>
+                  <Key Name="IFAcorpus.sm">0</Key>
+                  <Key Name="IFAcorpus.al">9</Key>
+                  <Key Name="IFAcorpus.md">n</Key>
+                  <Key Name="IFAcorpus.sh">n</Key>
+                  <Key Name="IFAcorpus.pr">n</Key>
+                  <Key Name="IFAcorpus.st">n</Key>
+                  <Key Name="IFAcorpus.si">n</Key>
+                  <Key Name="IFAcorpus.ph">y</Key>
+                  <Key Name="IFAcorpus.tl">y</Key>
+                  <Key Name="IFAcorpus.speaker">F24I</Key>
+                  <Key Name="IFAcorpus.recordingnr">1</Key>
+                  <Key Name="IFAcorpus.date">070200</Key>
+                  <Key Name="IFAcorpus.code">F24I1</Key>
+                  <Key Name="IFAcorpus.lcd">5</Key>
+                  <Key Name="IFAcorpus.lvcr">3</Key>
+                  <Key Name="IFAcorpus.g">78</Key>
+                  <Key Name="IFAcorpus.speech">VI/FT</Key>
+                  <Key Name="IFAcorpus.hmmpos">2.5</Key>
+                  <Key Name="IFAcorpus.hmmatt">0</Key>
+                  <Key Name="IFAcorpus.att">0</Key>
+                  <Key Name="IFAcorpus.hinst">0</Key>
+                  <Key Name="IFAcorpus.remarks">-</Key>
+                </Keys>
+                <descriptions>
+                  <Description LanguageId="ISO639:eng">Keys Legend
+Fieldname Type    Description
+Sex      CHAR(1)  Sex (F/M)
+Age      INT2     Age (years)
+IDcode   TEXT     IDcode (XX)
+Height   INT2     Height (cm)
+Weight   INT2     Weight (kg)
+FL       CHAR(3)  First Language
+SL       CHAR(3)  Bilingual, Second Language
+PoB      TEXT     Place of Birth
+PS       TEXT     Primary school
+SS       TEXT     Secundary school
+TS       TEXT     Tertiary school
+PE       TEXT     Parental education
+Sm       INT2     smoking, cigarets/day [0 &lt;1 1-4 &gt;4] =&gt; less than 0, 1, 5, 999
+Al       INT2     alcohol, glasses/week [0 &lt;4 4-8 &gt;8] =&gt; less than 0, 4, 9, 999
+Md       CHAR(1)  medication, y/n
+SH       CHAR(1)  Speaking or Hearing problems
+Pr       CHAR(1)  presentation
+ST       CHAR(1)  Speech Training
+Si       CHAR(1)  singing lessons
+Ph       CHAR(1)  phonetics/logopedics
+Tl       CHAR(1)  telephone work
+Date     CHAR(6)  Date of recording 
+Code     TEXT     Recording ID 
+Lcd      INT2     Recording level CD-R 
+Lvcr     INT2     Recording level VCR 
+G        INT2     Gauge noise/tone level settings (dB) 
+Speech   TEXT     Speech types/styles 
+HMMpos   FLOAT4   Position Head Mounted Microphone (cm) 
+HMMatt   INT2     Specific attenuation Head Mounted Microphone (dB) 
+Att      INT2     Attenuation both microphones (dB) 
+Hinst    INT2     Instabillity of Head Mounted Microphone position (0: stable, 9: unstable) 
+Remarks  TEXT     Remarks on recordings
+                    	</Description>
+                </descriptions>
+                <Actor_Languages>
+                  <descriptions>
+                    <Description LanguageId=""/>
+                  </descriptions>
+                  <Actor_Language>
+                    <Id>ISO639-3:nld</Id>
+                    <Name>Dutch</Name>
+                    <descriptions>
+                      <Description LanguageId=""/>
+                    </descriptions>
+                  </Actor_Language>
+                </Actor_Languages>
+              </Actor>
+              <Actor>
+                <Role>Interviewer</Role>
+                <Name>Rob van Son</Name>
+                <FullName>Rob van Son</FullName>
+                <Code/>
+                <FamilySocialRole>Interviewer</FamilySocialRole>
+                <EthnicGroup>Dutch</EthnicGroup>
+                <Age>40</Age>
+                <BirthDate>Unspecified</BirthDate>
+                <Sex>Male</Sex>
+                <Education>University</Education>
+                <Anonymized>false</Anonymized>
+                <Contact>
+                  <Name/>
+                  <Address/>
+                  <Email/>
+                  <Organisation/>
+                </Contact>
+                <Keys/>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+                <Actor_Languages>
+                  <descriptions>
+                    <Description LanguageId=""/>
+                  </descriptions>
+                  <Actor_Language>
+                    <Id>ISO639-3:nld</Id>
+                    <Name>Dutch</Name>
+                    <descriptions>
+                      <Description LanguageId="ISO639:eng">First Language</Description>
+                    </descriptions>
+                  </Actor_Language>
+                </Actor_Languages>
+              </Actor>
+              <Actor>
+                <Role>Collector</Role>
+                <Name>Rob van Son</Name>
+                <FullName>Rob van Son</FullName>
+                <Code>Unspecified</Code>
+                <FamilySocialRole>Unspecified</FamilySocialRole>
+                <EthnicGroup/>
+                <Age>Unspecified</Age>
+                <BirthDate>Unspecified</BirthDate>
+                <Sex>Unspecified</Sex>
+                <Education/>
+                <Anonymized>false</Anonymized>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>IFA, Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, Department of Linguistics, University of Amsterdam</Organisation>
+                </Contact>
+                <Keys/>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+                <Actor_Languages/>
+              </Actor>
+              <Actor>
+                <Role>Annotator</Role>
+                <Name>Rob van Son</Name>
+                <FullName>Rob van Son</FullName>
+                <Code>Unspecified</Code>
+                <FamilySocialRole>Unspecified</FamilySocialRole>
+                <EthnicGroup>Unspecified</EthnicGroup>
+                <Age>Unspecified</Age>
+                <BirthDate>Unspecified</BirthDate>
+                <Sex>Unspecified</Sex>
+                <Education>Unspecified</Education>
+                <Anonymized>false</Anonymized>
+                <Contact>
+                  <Name/>
+                  <Address/>
+                  <Email/>
+                  <Organisation/>
+                </Contact>
+                <Keys/>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+                <Actor_Languages/>
+              </Actor>
+            </Actors>
+          </MDGroup>
+          <Resources>
+            <MediaFile ref="d49867e478">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT1.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>8158204</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+De noordenwind en de zon.
+De noordenwind en de zon waren erover aan het redetwisten wie de sterkste  was van hun beiden.
+Juist op dat moment kwam er een reiziger aan, die  gehuld was in een warme mantel.
+Ze kwamen overeen dat degene die het eerst  erin zou slagen de reiziger zijn mantel te doen uittrekken de sterkste zou  worden geacht.
+De noordenwind begon toen uit alle macht te blazen, maar  hoe harder ie blies, deste dichter trok de reiziger zijn mantel om zich  heen; en ten lange leste gaf de noordenwind het op.
+Daarna begon de zon  krachtig te stralen, en hierop trok de reiziger onmiddellijk zijn mantel  uit.
+De noordenwind moest dus wel bekennen dat de zon van hun beiden de  sterkste was.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e547">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT1.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>8158204</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+De noordenwind en de zon.
+De noordenwind en de zon waren erover aan het redetwisten wie de sterkste  was van hun beiden.
+Juist op dat moment kwam er een reiziger aan, die  gehuld was in een warme mantel.
+Ze kwamen overeen dat degene die het eerst  erin zou slagen de reiziger zijn mantel te doen uittrekken de sterkste zou  worden geacht.
+De noordenwind begon toen uit alle macht te blazen, maar  hoe harder ie blies, deste dichter trok de reiziger zijn mantel om zich  heen; en ten lange leste gaf de noordenwind het op.
+Daarna begon de zon  krachtig te stralen, en hierop trok de reiziger onmiddellijk zijn mantel  uit.
+De noordenwind moest dus wel bekennen dat de zon van hun beiden de  sterkste was.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e616">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT10.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>11343880</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+`s Morgens, nadat hij wakker werd, begon hij door berg en dal naar zo`n  bloem te zoeken.
+Hij zocht tot aan de negende dag.
+Toen vond hij de bloem  in de vroege ochtend.
+In het midden lag een grote dauwdruppel, zo groot  als de mooiste parel.
+Joringel liep dag en nacht en droeg de bloem naar  het kasteel.
+Toen hij dichtbij het kasteel gekomen was, verstijfde hij  niet, maar hij liep door tot aan de deur.
+Joringel werd heel blij, raakte  de deur aan met de bloem en de deur sprong open.
+Joringel ging naar  binnen, liep over de binnenplaats en luisterde goed of hij de vele vogels  kon horen.
+Toen hoorde hij ze fluiten.
+Hij liep in de richting van het  gefluit en vond de zaal.
+Daar was de heks bezig de vogels in hun  zevenduizend kooien te voeren.
+Toen ze Joringel zag werd ze kwaad, heel  erg kwaad.
+Ze schold, tierde en spuwde gif en gal naar hem.
+Maar ze kon  niet bij hem in de buurt komen.
+Joringel lette niet op haar en bekeek de  kooien met de vogels.
+Er waren vele honderden nachtegalen, hoe moest hij  nou Jorinde terugvinden? </Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e685">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT10.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>11343880</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+`s Morgens, nadat hij wakker werd, begon hij door berg en dal naar zo`n  bloem te zoeken.
+Hij zocht tot aan de negende dag.
+Toen vond hij de bloem  in de vroege ochtend.
+In het midden lag een grote dauwdruppel, zo groot  als de mooiste parel.
+Joringel liep dag en nacht en droeg de bloem naar  het kasteel.
+Toen hij dichtbij het kasteel gekomen was, verstijfde hij  niet, maar hij liep door tot aan de deur.
+Joringel werd heel blij, raakte  de deur aan met de bloem en de deur sprong open.
+Joringel ging naar  binnen, liep over de binnenplaats en luisterde goed of hij de vele vogels  kon horen.
+Toen hoorde hij ze fluiten.
+Hij liep in de richting van het  gefluit en vond de zaal.
+Daar was de heks bezig de vogels in hun  zevenduizend kooien te voeren.
+Toen ze Joringel zag werd ze kwaad, heel  erg kwaad.
+Ze schold, tierde en spuwde gif en gal naar hem.
+Maar ze kon  niet bij hem in de buurt komen.
+Joringel lette niet op haar en bekeek de  kooien met de vogels.
+Er waren vele honderden nachtegalen, hoe moest hij  nou Jorinde terugvinden? </Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e754">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT11.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>5093644</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Toen hij zo rondkeek, merkte hij, dat de oude vrouw stiekem een  vogelkooitje wegpakte en daarmee naar de deur liep.
+Snel sprong hij erheen  en raakte het kooitje en de oude vrouw aan met de bloem.
+Nu kon de heks  niet meer toveren, en Jorinde stond weer voor hem.
+Ze vloog hem om de hals  en was zo mooi als vroeger.
+Daarna veranderde hij ook alle andere vogels  weer in meisjes en ging met zijn Jorinde naar huis.
+En ze leefden nog lang  en gelukkig met elkaar.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e824">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT11.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>5093644</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Toen hij zo rondkeek, merkte hij, dat de oude vrouw stiekem een  vogelkooitje wegpakte en daarmee naar de deur liep.
+Snel sprong hij erheen  en raakte het kooitje en de oude vrouw aan met de bloem.
+Nu kon de heks  niet meer toveren, en Jorinde stond weer voor hem.
+Ze vloog hem om de hals  en was zo mooi als vroeger.
+Daarna veranderde hij ook alle andere vogels  weer in meisjes en ging met zijn Jorinde naar huis.
+En ze leefden nog lang  en gelukkig met elkaar.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e893">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT2.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>8053992</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Er was eens een oud kasteel midden in een diep en donker bos.
+Daarin  woonde een oude heks helemaal alleen.
+Overdag veranderde ze zich in een  kat of een uil, maar `s avonds werd ze weer een mens.
+Ze kon dieren en  vogels naar zich toe lokken.
+Die dieren slachtte, kookte en braadde ze  dan.
+Wanneer iemand binnen honderd meter van het kasteel kwam, moest hij  stilstaan en kon zich niet meer verroeren.
+Dit duurde totdat de heks hem  met een spreuk verloste.
+Wanneer er echter een onschuldig meisje te dicht  bij haar kasteel kwam, veranderde de heks haar in een vogel en sloot haar  op in een kooitje.
+Dat kooitje bracht ze dan naar een zaal van haar  kasteel.
+Ze had wel zevenduizend kooien met zulke bijzondere vogels in  haar kasteel.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e962">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT2.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>8053992</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Er was eens een oud kasteel midden in een diep en donker bos.
+Daarin  woonde een oude heks helemaal alleen.
+Overdag veranderde ze zich in een  kat of een uil, maar `s avonds werd ze weer een mens.
+Ze kon dieren en  vogels naar zich toe lokken.
+Die dieren slachtte, kookte en braadde ze  dan.
+Wanneer iemand binnen honderd meter van het kasteel kwam, moest hij  stilstaan en kon zich niet meer verroeren.
+Dit duurde totdat de heks hem  met een spreuk verloste.
+Wanneer er echter een onschuldig meisje te dicht  bij haar kasteel kwam, veranderde de heks haar in een vogel en sloot haar  op in een kooitje.
+Dat kooitje bracht ze dan naar een zaal van haar  kasteel.
+Ze had wel zevenduizend kooien met zulke bijzondere vogels in  haar kasteel.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1031">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT3.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>2419796</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Nu was er eens een meisje dat Jorinde heette.
+Ze was mooier dan alle  andere meisjes en was verloofd met de knappe Joringel.
+Ze zouden over een  paar dagen gaan trouwen en ze hadden veel plezier met elkaar.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1100">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT3.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>2419796</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Nu was er eens een meisje dat Jorinde heette.
+Ze was mooier dan alle  andere meisjes en was verloofd met de knappe Joringel.
+Ze zouden over een  paar dagen gaan trouwen en ze hadden veel plezier met elkaar.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1169">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT4.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>8572116</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Om eens rustig samen te kunnen praten, gingen ze in het bos wandelen.
+`Pas  op`, zei Joringel, `dat je niet te dicht bij het kasteel komt`.
+Het was  een mooie avond.
+Het heldere zonlicht scheen tussen de boomstammen door in  het donkere groen van het bos.
+De tortelduif zong klagelijk in de oude  beuk.
+Jorinde huilde een beetje.
+Ze ging in de zon zitten en klaagde.
+Joringel klaagde ook.
+Ze waren verdrietig, alsof ze moesten sterven.
+Ze  keken om zich heen en waren verdwaald.
+Ze wisten niet meer hoe ze thuis  moesten komen.
+De zon stond nog maar half boven de berg en voor de helft  was ze al onder.
+Joringel keek door de struiken en zag vlakbij de oude  muur van het kasteel.
+Hij schrok en werd doodsbang.
+Jorinde zong: </Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1239">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT4.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>8572116</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Om eens rustig samen te kunnen praten, gingen ze in het bos wandelen.
+`Pas  op`, zei Joringel, `dat je niet te dicht bij het kasteel komt`.
+Het was  een mooie avond.
+Het heldere zonlicht scheen tussen de boomstammen door in  het donkere groen van het bos.
+De tortelduif zong klagelijk in de oude  beuk.
+Jorinde huilde een beetje.
+Ze ging in de zon zitten en klaagde.
+Joringel klaagde ook.
+Ze waren verdrietig, alsof ze moesten sterven.
+Ze  keken om zich heen en waren verdwaald.
+Ze wisten niet meer hoe ze thuis  moesten komen.
+De zon stond nog maar half boven de berg en voor de helft  was ze al onder.
+Joringel keek door de struiken en zag vlakbij de oude  muur van het kasteel.
+Hij schrok en werd doodsbang.
+Jorinde zong: </Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1308">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT5.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>2133692</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Mijn vogeltje met het rode ringetje Zingt lijden, lijden, lijden: Het zingt voor het duifje, zingt voor zijn dood, Zingt lijden, lij, tuwiet, tuwiet, tuwiet.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1377">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT5.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>2133692</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Mijn vogeltje met het rode ringetje Zingt lijden, lijden, lijden: Het zingt voor het duifje, zingt voor zijn dood, Zingt lijden, lij, tuwiet, tuwiet, tuwiet.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1446">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT6.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>8241400</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Joringel keek naar Jorinde.
+Jorinde was in een nachtegaal veranderd die  tuwiet, tuwiet zong.
+Een uil met gloeiende ogen vloog drie keer om hen  heen en schreeuwde drie keer oehoe, oehoe, oehoe.
+Joringel kon zich niet  meer bewegen.
+Hij stond erbij als van steen, kon niet huilen, niet praten,  geen hand of voet bewegen.
+Nu was de zon ondergegaan.
+De uil vloog in een  struik en direct kwam er een kromme, oude vrouw uit tevoorschijn.
+Ze was  geel en mager.
+Ze had grote rode ogen en een kromme neus die met de punt  tot aan haar kin kwam.
+Ze mompelde wat, ving de nachtegaal en droeg die in  haar hand weg.
+Joringel kon niets zeggen, niet van z`n plaats komen.
+De  nachtegaal was weg.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1515">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT6.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>8241400</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Joringel keek naar Jorinde.
+Jorinde was in een nachtegaal veranderd die  tuwiet, tuwiet zong.
+Een uil met gloeiende ogen vloog drie keer om hen  heen en schreeuwde drie keer oehoe, oehoe, oehoe.
+Joringel kon zich niet  meer bewegen.
+Hij stond erbij als van steen, kon niet huilen, niet praten,  geen hand of voet bewegen.
+Nu was de zon ondergegaan.
+De uil vloog in een  struik en direct kwam er een kromme, oude vrouw uit tevoorschijn.
+Ze was  geel en mager.
+Ze had grote rode ogen en een kromme neus die met de punt  tot aan haar kin kwam.
+Ze mompelde wat, ving de nachtegaal en droeg die in  haar hand weg.
+Joringel kon niets zeggen, niet van z`n plaats komen.
+De  nachtegaal was weg.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1584">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT7.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>4387544</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Eindelijk kwam de oude vrouw terug en zei met een doffe stem: `Gegroet  Zachiel.
+Wanneer het maantje in het kooitje schijnt, maak los Zachiel, op  het juiste moment`.
+Toen was Joringel verlost.
+Hij viel voor de oude  vrouw op de knieen en smeekte haar om hem Jorinde terug te geven.
+Maar ze  zei dat hij Jorinde nooit meer terug zou krijgen en ging weg.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1654">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT7.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>4387544</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Eindelijk kwam de oude vrouw terug en zei met een doffe stem: `Gegroet  Zachiel.
+Wanneer het maantje in het kooitje schijnt, maak los Zachiel, op  het juiste moment`.
+Toen was Joringel verlost.
+Hij viel voor de oude  vrouw op de knieen en smeekte haar om hem Jorinde terug te geven.
+Maar ze  zei dat hij Jorinde nooit meer terug zou krijgen en ging weg.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1723">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT8.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>3086740</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Hij riep, hij huilde, hij jammerde, maar het was allemaal voor niets.
+`Oh,  wat moet er van mij worden?`  Joringel ging weg en kwam uiteindelijk in een  vreemd dorp.
+Daar hoedde hij lange tijd de schapen.
+Vaak liep hij rond  het kasteel, maar hij kwam nooit te dichtbij.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1792">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT8.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>3086740</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Hij riep, hij huilde, hij jammerde, maar het was allemaal voor niets.
+`Oh,  wat moet er van mij worden?`  Joringel ging weg en kwam uiteindelijk in een  vreemd dorp.
+Daar hoedde hij lange tijd de schapen.
+Vaak liep hij rond  het kasteel, maar hij kwam nooit te dichtbij.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1861">
+              <ResourceLink>../SLspeech/chunks/F24I/F24I1FT9.aifc</ResourceLink>
+              <Type>audio</Type>
+              <Format>audio/x-aiff</Format>
+              <Size>3209032</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear
+        			digitisation.processing= 
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Op een keer droomde hij `s nachts dat hij een bloedrode bloem vond met in  het midden een prachtige grote parel.
+Hij plukte de bloem en ging ermee  naar het kasteel.
+Alles wat hij met de bloem aanraakte werd van de  betovering bevrijd.
+Ook droomde hij dat hij daardoor zijn Jorinde  teruggekregen had.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <MediaFile ref="d49867e1930">
+              <ResourceLink>../SLspeech/oggchunks/F24I/F24I1FT9.ogg</ResourceLink>
+              <Type>audio</Type>
+              <Format>application/ogg</Format>
+              <Size>3209032</Size>
+              <Quality>5</Quality>
+              <RecordingConditions>Medium= audio cd
+        			microphone= Sennheiser MKH 105 HF condenser and Shure SM10A dynamic
+        			noise= unspecified
+
+        			digitisation.recording= 44.1 kHz, 16 bit linear, compressed
+        			digitisation.processing= Ogg Vorbis compression
+        			digitisation.status=
+				</RecordingConditions>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:nld">F24I, 1, F , T   , FixedRead
+Op een keer droomde hij `s nachts dat hij een bloedrode bloem vond met in  het midden een prachtige grote parel.
+Hij plukte de bloem en ging ermee  naar het kasteel.
+Alles wat hij met de bloem aanraakte werd van de  betovering bevrijd.
+Ook droomde hij dat hij daardoor zijn Jorinde  teruggekregen had.
+</Description>
+              </descriptions>
+              <Keys/>
+            </MediaFile>
+            <WrittenResource ref="d49867e1999">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT1.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT1.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2091">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT10.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT10.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2182">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT11.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT11.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2273">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT2.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT2.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2364">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT3.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT3.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2455">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT4.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT4.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2546">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT5.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT5.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2638">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT6.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT6.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2729">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT7.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT7.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2820">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT8.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT8.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <WrittenResource ref="d49867e2911">
+              <ResourceLink>../SLcorpus/Transcriptions/F24I/F24I1FT9.txt</ResourceLink>
+              <MediaResourceLink>../SLspeech/chunks/F24I/F24I1FT9.aifc</MediaResourceLink>
+              <Date>2002-11-01</Date>
+              <Type>Annotation</Type>
+              <SubType>orthographic</SubType>
+              <Format>text/plain</Format>
+              <Size>Unspecified</Size>
+              <Derivation>Annotation</Derivation>
+              <CharacterEncoding/>
+              <ContentEncoding/>
+              <LanguageId>RFC1766:x-sil-dut</LanguageId>
+              <Anonymized>false</Anonymized>
+              <Validation>
+                <Type>Unspecified</Type>
+                <Methodology>Unspecified</Methodology>
+                <Level>Unspecified</Level>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Validation>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId="ISO639:eng">Plain text</Description>
+              </descriptions>
+              <Keys/>
+            </WrittenResource>
+            <Source>
+              <Id>F24I1FT</Id>
+              <Format>CDROM</Format>
+              <Quality>5</Quality>
+              <TimePosition>
+                <Start>Unspecified</Start>
+                <End>Unspecified</End>
+              </TimePosition>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+              <descriptions>
+                <Description LanguageId=""/>
+              </descriptions>
+              <Keys/>
+            </Source>
+            <Anonyms>
+              <ResourceLink/>
+              <Access>
+                <Availability>GNU General Public License</Availability>
+                <Date>2002-11-01</Date>
+                <Owner>Dutch Language Union</Owner>
+                <Publisher>Chair of Phonetics, Department of Linguistics, Fac. of Humanities, University of Amsterdam</Publisher>
+                <Contact>
+                  <Name>Rob van Son</Name>
+                  <Address>Herengracht 338, NL-1016CG Amsterdam, The Netherlands</Address>
+                  <Email>Rob.van.Son@hum.uva.nl</Email>
+                  <Organisation>Institute of Phonetic Sciences/ACLC, University of amsterdam</Organisation>
+                </Contact>
+                <descriptions>
+                  <Description LanguageId=""/>
+                </descriptions>
+              </Access>
+            </Anonyms>
+          </Resources>
+          <References>
+            <descriptions>
+              <Description LanguageId=""/>
+            </descriptions>
+          </References>
+        </Session>
+      </Components>
+    </CMD>
+  </metadata>
+</record>
