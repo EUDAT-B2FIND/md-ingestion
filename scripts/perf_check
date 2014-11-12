@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " Check uploading and print out info"
+echo " |- Check und print out status info about job with\n"
 
 lhost=$(hostname)
 WORK=$PWD
@@ -14,23 +14,25 @@ then
 else
   upload_list="upload_list_${TODAY}"
 fi
-echo ">>>$upload_list <<<"
 
-##upload_list="upload_list_2014-09-10"
+echo -e "  |- Job list\t$upload_list"
+echo -e "  |- On host \t$lhost"
 
-##upload_list="upload_list_datacite_${TODAY}"
-##HEW-!!! upload_list="${WORK}/upload_list_${YESTERDAY}"
-
-
-echo -e "##########################\n Upload jobs according ${upload_list}" 
-echo -e "|- $(ls ${upload_list}.*}.* 2>/dev/null | wc -l) jobs to be processed"
-echo -e "|- $(ls DONE/${upload_list}.* 2>/dev/null | wc -l) jobs are sucessfully done"
-echo -e "|- Jobs failed :\n   $(grep -c 'Internal server error' log/${upload_list}.*.err | grep -v ':0' ) "
-echo -e "|- $(ps -elf | grep manager | grep upload | wc -l) threads are running"
+echo -e "\n Status of jobs :"
+echo -e " | Total | Running\t| Done\t| Failed\t|" 
+echo -e " | $(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l)\t| $(ps -elf | grep manager | grep upload | wc -l)   \t| $(ls DONE/${upload_list}.* 2>/dev/null | wc -l)   \t| $(grep 'Internal server error' log/${upload_list}.*.err | grep -c -v ':0' )   \t|"
+##echo -e "|- $(ls DONE/${upload_list}.* 2>/dev/null | wc -l) jobs are sucessfully done"
+##echo -e "|- Jobs failed :\n   $(grep -c 'Internal server error' log/${upload_list}.*.err | grep -v ':0' ) "
+##echo -e "|- $(ps -elf | grep manager | grep upload | wc -l) threads are running"
 
 nfiles=0
 
-for file in $(ls ${upload_list}.* DONE/${upload_list}.*)
+
+echo -e "\n |- Thread | Jobfile\t\t\t| Status\t| PID\t | Community-Set\t |" 
+echo -e "    |- #Records  | Provided | Done\t| Created | Updated | Failed | No action required |" 
+echo -e "    |- #Handles - - - - - - - - - \t| Created | Updated | Failed | No action required |" 
+
+for file in $(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null)
 do
   (( nfiles = nfiles + 1))
   pid=$( ps -elf | grep manager | grep $file | awk '{print $4}' )
@@ -39,75 +41,83 @@ do
   then
      status='stopped'
   else
-     status="running with PID $pid"
+     status='running'
+     pid="$pid"
   fi
   jobfile=$file
 
   echo -e "__________________________________________________________________"
-  echo -e "|- Thread #$nfiles :\n |- Jobfile \t $jobfile\n |- Status \t $status"
+
   outfile="log/$(basename ${file}).out"
   errfile="log/$(basename ${file}).err"
   npfrec=0
   while read community oaiurl dir mdprefix set 
   do
     setdir="${dir}/${set}"
+    comm_set="${community}-${set}"
     ndirrec=$(ls ${setdir}/json/*.json 2>/dev/null | wc -l)
-    echo -e "   |- Community-Set\t${community}\t${set}\t\n    |- #provided records\t$ndirrec "
+    ##echo -e "   |- Community-Set\t${community}\t${set}\t\n    |- #provided records\t$ndirrec "
     ((npfrec = npfrec + ndirrec)) 
+
   done < "$jobfile"
-  echo -e "   |- Total provided records\t $npfrec \n"
+
+  echo -e " |- $nfiles \t| $jobfile \t| $status\t|$pid\t|${comm_set}\t"
+  echo -e "    |- #Records  | $npfrec     | $(grep -c '| u |' ${outfile})\t| $(grep -c 'Creation of ' ${outfile})\t  | $(grep -c 'Update of unknown record succeed' ${outfile})\t | $(grep -c 'Upload of new record failed' $outfile )\t| $(grep -c 'No upload' $outfile )\t|"
+  echo -e "    |- #Handles - - - - - - - - -\t| $(grep -c 'Create a new handle' ${outfile})  \t | $(grep -c 'Update checksum' $outfile )       \t | \t| $(grep -c 'No action required' $outfile ) \t|"
+ 
+##  echo -e "   |- Total provided records\t $npfrec \n"
   ((ntotrec = ntotrec + npfrec ))
 
-  echo -e " |- Total processed records        \t $(grep -c '.json' ${outfile} )"
-  echo -e " |- Curr. processed set record      \t $(tail -4 ${outfile} | grep json | awk '{print $4}')"
-  if [ $(grep -c 'Update of unknown record succeed' ${outfile}) -gt 0 ]
-  then
-    echo -e "  |- Update unknown r. succeed \t $(grep -c 'Update of unknown record succeed' ${outfile})"
-  fi
-  if [ $(grep -c 'Update of changed record succeed' ${outfile}) -gt 0 ]
-  then
-    echo -e "  |- Update changed r. succeed \t $(grep -c 'Update of changed record succeed' ${outfile})"
-  fi
-  if [ $(grep -c 'Creation of unknown record succeed' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- Create unknown r. succeed \t $(grep -c 'Creation of unknown record succeed' ${outfile})"
-  fi
-  if [ $(grep -c 'Creation of changed record succeed' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- Create changed r. succeed \t $(grep -c 'Creation of changed record succeed' ${outfile})"
-  fi
-  if [ $(grep -c 'Creation of new record' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- New created records       \t $(grep -c 'Creation of new record' ${outfile})"
-  fi
-  if [ $(grep -c 'Create a new handle' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- New created handles       \t $(grep -c 'Create a new handle' ${outfile})"
-  fi
-  if [ $(grep -c 'Upload of new record failed' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- Upload of new r. failed \t $(grep -c 'Upload of new record failed' $outfile )"
-  fi
-  if [ $(grep -c 'Upload of changed record failed' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- Upload of changed r. failed \t $(grep -c 'Upload of changed record failed' $outfile )"
-  fi
-  if [ $(grep -c 'Upload of changed record succeed' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- Udated records            \t $(grep -c 'Upload of changed record succeed' $outfile )"
-  fi
-  if [ $(grep -c 'Update checksum' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- Udated handles            \t $(grep -c 'Update checksum' $outfile )"
-  fi
-  if [ $(grep -c 'No upload' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- No action r. for record   \t $(grep -c 'No upload' $outfile )"
-  fi
-  if [ $(grep -c 'No action required' ${outfile}) -gt 0 ]
-  then
-    echo -e " |- No action r. for handle   \t $(grep -c 'No action required' $outfile )"
-  fi
+##  echo -e " |- Total processed records        \t $(grep -c '| u |' ${outfile} )"
+##  echo -e " |- Curr. processed set record      \t $(tail -5 ${outfile} | grep '| u |' | awk '{print $4}')"
+##  if [ $(grep -c 'Update of unknown record succeed' ${outfile}) -gt 0 ]
+##  then
+##    echo -e "  |- Update unknown r. succeed \t $(grep -c 'Update of unknown record succeed' ${outfile})"
+##  fi
+##  if [ $(grep -c 'Update of changed record succeed' ${outfile}) -gt 0 ]
+##  then
+##    echo -e "  |- Update changed r. succeed \t $(grep -c 'Update of changed record succeed' ${outfile})"
+##  fi
+##  if [ $(grep -c 'Creation of unknown record succeed' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- Create unknown r. succeed \t $(grep -c 'Creation of unknown record succeed' ${outfile})"
+##  fi
+##  if [ $(grep -c 'Creation of changed record succeed' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- Create changed r. succeed \t $(grep -c 'Creation of changed record succeed' ${outfile})"
+##  fi
+##  if [ $(grep -c 'Creation of new record' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- New created records       \t $(grep -c 'Creation of new record' ${outfile})"
+##  fi
+##  if [ $(grep -c 'Create a new handle' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- New created handles       \t $(grep -c 'Create a new handle' ${outfile})"
+##  fi
+##  if [ $(grep -c 'Upload of new record failed' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- Upload of new r. failed \t $(grep -c 'Upload of new record failed' $outfile )"
+##  fi
+##  if [ $(grep -c 'Upload of changed record failed' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- Upload of changed r. failed \t $(grep -c 'Upload of changed record failed' $outfile )"
+##  fi
+##  if [ $(grep -c 'Upload of changed record succeed' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- Udated records            \t $(grep -c 'Upload of changed record succeed' $outfile )"
+##  fi
+##  if [ $(grep -c 'Update checksum' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- Udated handles            \t $(grep -c 'Update checksum' $outfile )"
+##  fi
+##  if [ $(grep -c 'No upload' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- No action r. for record   \t $(grep -c 'No upload' $outfile )"
+##  fi
+##  if [ $(grep -c 'No action required' ${outfile}) -gt 0 ]
+##  then
+##    echo -e " |- No action r. for handle   \t $(grep -c 'No action required' $outfile )"
+##  fi
 
 done
 wait
