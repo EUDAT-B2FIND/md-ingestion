@@ -1215,7 +1215,8 @@ class CONVERTER(object):
             action = rule[5]
                         
             r = dataset.get("extras",None)
-            oai_set=filter(lambda person: person['key'] == 'oai_set', r)[0]['value']
+            if filter(lambda extra: extra['key'] == 'oai_set', r):
+              oai_set=filter(lambda extra: extra['key'] == 'oai_set', r)[0]['value']
     
             ## call action
             if action == "replace":
@@ -1561,57 +1562,6 @@ class UPLOADER (object):
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
 
-    def truncate(self,dataset,facetName,old_value,size):
-        """
-        truncates old value with new value for a given facet
-        """
-        for facet in dataset:
-            if facet == facetName and dataset[facet] == old_value:
-                dataset[facet] = old_value[:size]
-                return dataset
-            if facet == 'extras':
-                for extra in dataset[facet]:
-                    if extra['key'] == facetName and extra['value'] == old_value:
-                        extra['value'] = old_value[:size]
-                        return dataset
-        return dataset
-
-    def remove_duplicates(self,dataset,facetName,valuearrsep,entrysep):
-        """
-        remove duplicates      
-        """
-        for facet in dataset:
-          if facet == facetName:
-            valarr=dataset[facet].split(valuearrsep)
-            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
-            revvalarr=[]
-            for entry in valarr:
-               reventry=entry.split(entrysep) ### 
-               reventry.reverse()
-               reventry=''.join(reventry)
-               revvalarr.append(reventry)
-               for reventry in revvalarr:
-                  if reventry == entry :
-                     valarr.remove(reventry)
-            dataset[facet]=valuearrsep.join(valarr)
-        return dataset       
-      
-    def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
-        """
-        split string in list of string and transfer to list of dict's { "name" : "substr1" }      
-        """
-        for facet in dataset:
-          if facet == facetName:
-            valarr=dataset[facet][0]['name'].split()
-            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
-            dicttagslist=[]
-            for entry in valarr:
-               entrydict={ "name": entry }  
-               dicttagslist.append(entrydict)
-       
-            dataset[facet]=dicttagslist
-        return dataset       
-      
     def validate(self, jsondata):
         ## validate (UPLOADER object, json data) - method
         # Validates the json data (e.g. the PublicationTimestamp field) by using B2FIND standard

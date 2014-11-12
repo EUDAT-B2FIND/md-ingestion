@@ -18,6 +18,8 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-wdcc-do
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-gkss
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-uni-hh
+##%%% ENES/EARLINET : MD Provider eudat-oai.dkrz.de
+earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso	iso_wdcc_exp_EARLINET
 ##%%% CLARIN CMDI : MD Provider MPI-PL 
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2       ListIdentifiers cmdi
 ##%%% CLARIN DC : MD Provider Meertens institute
