@@ -1353,11 +1353,11 @@ class CONVERTER(object):
 		   log.info('   | [INFO] decode json data')
                    data = json.dumps(jsondata, ensure_ascii=True, sort_keys = True, indent = 4).decode('utf8')
                    try:
-                       log.info('   | [INFO] save json file')
+                       log.debug('   | [INFO] save json file')
                        json_file.write(data)
                    except TypeError:
                        # Decode data to Unicode first
-                       log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
+                       log.debug('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
                        json_file.write(data.decode('utf8'))
 ##                   try:
 ##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
