@@ -1317,19 +1317,7 @@ class CONVERTER(object):
                 try:
                    ### Semantic mapping
                    # generic mapping of languages
-                   jsondata = self.map_lang(jsondata,languages)        
-
-                   ###HEW!!! specific TEL processing -- process in general postprocesing or converter !!!
-###HEW-DEL!!!                if ( os.path.basename(path) == 'a0338_1' ) :
-###HEW-DEL!!!                  for extra in jsondata['extras']:
-###HEW-DEL!!!                     if(extra['key'] == 'Discipline'):
-###HEW-DEL!!!                              extra['value'] = 'Philology'
-###HEW-DEL!!!                              break
-###HEW-DEL!!!                elif ( os.path.basename(path) == 'a1057_1' or os.path.basename(path) == 'a0340_1' or os.path.basename(path) == 'a1025_1'):
-###HEW-DEL!!!                  for extra in jsondata['extras']:
-###HEW-DEL!!!                      if(extra['key'] == 'Discipline'):
-###HEW-DEL!!!                              extra['value'] = 'Human History'
-###HEW-DEL!!!                              break
+                   jsondata = self.map_lang(jsondata,languages)
                 except:
                    log.error('    | [ERROR] during map_lang ')
                    results['ecount'] += 1
