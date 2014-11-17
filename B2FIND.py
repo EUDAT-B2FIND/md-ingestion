@@ -49,6 +49,7 @@ import codecs
 import simplejson as json
 import csv, io
 import Levenshtein as lvs
+import iso639
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
@@ -960,51 +961,6 @@ class CONVERTER(object):
                    
             return disctab
 
-    class iso_639_3(object):
-        """
-        This class is a close to drop-in replacement for pycountry.languages.
-        But unlike pycountry.languages it also supports ISO 639-3.
-        Copyright (C) 2014 Mikael Karlsson.
-
-        """
-        def __init__(self):
-           self.languages = [self.language(a, b, c, d, e) for a, b, c, d, _, _, e, _ in self.fabtabular()]
-           self.alpha3 = {x.alpha3: x for x in self.languages if x.alpha3}
-           self.bibliographic = {x.bibliographic: x for x in self.languages if x.bibliographic}
-           self.terminology = {x.terminology: x for x in self.languages if x.terminology}
-           self.alpha2 = {x.alpha2: x for x in self.languages if x.alpha2}
-           self.name = {x.name: x for x in self.languages if x.name}
-   
-        class language(object):
-           def __init__(self, dash3, dash2b, dash2t, dash1, name):
-               self.alpha3 = dash3
-               self.bibliographic = dash2b
-               self.terminology = dash2t
-               self.alpha2 = dash1
-               self.name = name
-   
-        def get(self, **kwargs):
-           if not len(kwargs) == 1:
-               raise AttributeError("Only one keyword expected")
-           key, value = kwargs.popitem()
-           return getattr(self, key)[value]
-
-        @staticmethod
-        def fabtabular():
-            import csv
-            import sys
-     
-            if sys.version_info[0] == 2:
-                from urllib2 import urlopen
-                u = urlopen('http://www-01.sil.org/iso639%2D3/iso-639-3.tab')
-                return list(csv.reader(u, delimiter='\t'))[1:]
-            else:
-                from urllib.request import urlopen
-                import io
-                with io.StringIO(urlopen('http://www-01.sil.org/iso639%2D3/iso-639-3.tab').read().decode()) as u:
-                    return list(csv.reader(u, delimiter='\t'))[1:]
-     
-
     def str_equals(self,str1,str2):
         """
         performs case insensitive string comparison by first stripping trailing spaces 
@@ -1049,7 +1005,7 @@ class CONVERTER(object):
                           return dataset
         return dataset
  
-    def map_lang(self,dataset,langs):
+    def map_lang(self, dataset):
         """
         Convert languages and language codes into ISO names
  
@@ -1057,31 +1013,33 @@ class CONVERTER(object):
         Adapted for B2FIND 2014 Heinrich Widmann
         Licensed under AGPLv3.
         """
+
+        def mlang(language):
+            if '_' in language:
+                language = language.split('_')[0]
+            if len(language) == 2:
+                try: return iso639.languages.get(alpha2=language.lower())
+                except KeyError: pass
+            elif len(language) == 3:
+                try: return iso639.languages.get(alpha3=language.lower())
+                except KeyError: pass
+                try: return iso639.languages.get(terminology=language.lower())
+                except KeyError: pass
+                try: return iso639.languages.get(bibliographic=language.lower())
+                except KeyError: pass
+            else:
+                try: return iso639.languages.get(name=language.title())
+                except KeyError: pass
+                for l in re.split('[,.;: ]+', language):
+                    try: return iso639.languages.get(name=l.title())
+                    except KeyError: pass
+
         for facet in dataset:
             if facet == 'extras':
                 for extra in dataset[facet]:
-                    if extra['key'] == 'Language' :
-                        mcountry=None
-                        language=extra['value']
-                        if '_' in language:
-                            language = language.split('_')[0]
-                        if len(language) == 2:
-                            try: mcountry=langs.get(alpha2=language.lower())
-                            except KeyError: pass
-                        elif len(language) == 3:
-                            try: mcountry=langs.get(alpha3=language.lower())
-                            except KeyError: pass
-                            try: mcountry=langs.get(terminology=language.lower())
-                            except KeyError: pass
-                            try: mcountry=langs.get(bibliographic=language.lower())
-                            except KeyError: pass
-                        else:
-                            try: mcountry=langs.get(name=language.title())
-                            except KeyError: pass
-                            for l in re.split('[,.;: ]+', language):
-                                try: mcountry=langs.get(name=l.title())
-                                except KeyError: pass 
-                        if mcountry :
+                    if extra['key'] == 'Language':
+                        mcountry = mlang(extra['value'])
+                        if mcountry:
                             extra['value'] = mcountry.name
                         return dataset
         return dataset
@@ -1295,8 +1253,6 @@ class CONVERTER(object):
             rules = f.readlines()[1:] # without the header
             rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
 
-        ## instance of language lib class needed for Language mapping
-        languages = self.iso_639_3()
         ##  instance of B2FIND discipline table
         disctab = self.cv_diciplines()
 
@@ -1317,7 +1273,7 @@ class CONVERTER(object):
                 try:
                    ### Semantic mapping
                    # generic mapping of languages
-                   jsondata = self.map_lang(jsondata,languages)
+                   jsondata = self.map_lang(jsondata)
                 except:
                    log.error('    | [ERROR] during map_lang ')
                    results['ecount'] += 1
@@ -1338,7 +1294,7 @@ class CONVERTER(object):
                    results['ecount'] += 1
                    continue
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
-		   log.info('   | [INFO] decode json data')
+		   log.debug('   | [INFO] decode json data')
                    data = json.dumps(jsondata, ensure_ascii=True, sort_keys = True, indent = 4).decode('utf8')
                    try:
                        log.debug('   | [INFO] save json file')
@@ -1592,7 +1548,7 @@ class UPLOADER (object):
                 status = 0  # set status
 
             # shrink field fulltext
-            elif(extra['key'] == 'fulltext' and sys.getsizeof(extra['value']) > 30):
+            elif(extra['key'] == 'fulltext' and sys.getsizeof(extra['value']) > 31999):
                 errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))
                 encoding='utf-8'
                 encoded = extra['value'].encode(encoding)[:32000]
