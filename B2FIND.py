@@ -1306,7 +1306,7 @@ class CONVERTER(object):
                    results['ecount'] += 1
                    continue
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
-		   log.info('   | [INFO] decode json data')
+		   log.debug('   | [INFO] decode json data')
                    data = json.dumps(jsondata, ensure_ascii=True, sort_keys = True, indent = 4).decode('utf8')
                    try:
                        log.debug('   | [INFO] save json file')
@@ -1560,7 +1560,7 @@ class UPLOADER (object):
                 status = 0  # set status
 
             # shrink field fulltext
-            elif(extra['key'] == 'fulltext' and sys.getsizeof(extra['value']) > 30):
+            elif(extra['key'] == 'fulltext' and sys.getsizeof(extra['value']) > 31999):
                 errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))
                 encoding='utf-8'
                 encoded = extra['value'].encode(encoding)[:32000]
