@@ -170,8 +170,7 @@ def main():
         try:
            ### Semantic mapping
            # generic mapping of languages
-          langs = CV.iso_639_3()
-          dataset = CV.map_lang(dataset,langs)        
+          dataset = CV.map_lang(dataset)
         except:
             CV.logger.error('    | [ERROR] during map_lang ')
         
