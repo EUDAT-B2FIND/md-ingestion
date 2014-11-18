@@ -351,7 +351,7 @@ class HARVESTER(object):
                     metadata = etree.fromstring(metadata)
                     ## etree.tostring(x, pretty_print = True)
                     ##HEW!!! : B2FIND.py:351: FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead.
-                    if (metadata):
+                    if (metadata is not None):
                         metadata = etree.tostring(metadata, pretty_print = True) 
                         metadata = metadata.encode('ascii', 'ignore')
                         if (not os.path.isdir(subsetdir+'/xml')):
