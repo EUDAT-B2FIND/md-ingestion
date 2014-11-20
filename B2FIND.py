@@ -328,6 +328,7 @@ class HARVESTER(object):
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
    
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
+
         try:
             for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
             	if (record.header.deleted):
@@ -1004,7 +1005,7 @@ class CONVERTER(object):
                           return dataset
         return dataset
  
-    def map_lang(self, dataset):
+    def map_lang(self, invalue):
         """
         Convert languages and language codes into ISO names
  
@@ -1033,17 +1034,17 @@ class CONVERTER(object):
                     try: return iso639.languages.get(name=l.title())
                     except KeyError: pass
 
-        for facet in dataset:
-            if facet == 'extras':
-                for extra in dataset[facet]:
-                    if extra['key'] == 'Language':
-                        mcountry = mlang(extra['value'])
-                        if mcountry:
-                            extra['value'] = mcountry.name
-                        return dataset
-        return dataset
+        ## for facet in dataset:
+        ##    if facet == 'extras':
+        ##        for extra in dataset[facet]:
+        ##            if extra['key'] == 'Language':
+        mcountry = mlang(invalue)
+        if mcountry:
+            newvalue = mcountry.name
+            return newvalue
+        return invalue
  
-    def map_discipl(self,dataset,disctab):
+    def map_discipl(self,invalue,disctab):
         """
         Convert disciplines along B2FIND disciplinary list
  
@@ -1051,32 +1052,27 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         
-        for extra in dataset['extras']:
-           if extra['key'] == 'Discipline' :
-              invalue=extra['value'].encode('ascii','ignore')
-              maxr=0.0
-              for line in disctab :
-                 disc='%s' % line[3]
-                 r=lvs.ratio(invalue,disc)
-                 ##print '--- %s | %s | %f | %f' % (invalue,disc,r,maxr)
-                 if r > maxr  :
-                   maxdisc=disc
-                   maxr=r
-              if maxr == 1 and invalue == maxdisc :
-                 self.logger.debug('  | Perfect match of %s : nothing to do' % invalue)
-              elif maxr > 0.98 :
-                 self.logger.info('   | Similarity ratio %f is > 0.98 : replace value %s with best match %s' % (maxr,invalue,maxdisc))
-                 extra['value'] = maxdisc
-              elif maxr > 0.7 :
-                 self.logger.debug('   | Similarity ratio %f is > 0.7 : compare value %s and simlilar discipline %s' % (maxr,invalue,maxdisc))
-              else:
-                 self.logger.debug('   | Similarity ratio %f is < 0.7 : %s simlilarity w.r.t. discipline %s too low' % (maxr,invalue,maxdisc))
-              return dataset
-
-        self.logger.debug('   |- No value for Discipline available')  
-        return dataset
-
-
+        invalue=invalue.encode('ascii','ignore')
+        maxr=0.0
+        for line in disctab :
+            disc='%s' % line[3]
+            r=lvs.ratio(invalue,disc)
+            ##print '--- %s | %s | %f | %f' % (invalue,disc,r,maxr)
+            if r > maxr  :
+                maxdisc=disc
+                maxr=r
+        if maxr == 1 and invalue == maxdisc :
+            self.logger.debug('  | Perfect match of %s : nothing to do' % invalue)
+        elif maxr > 0.98 :
+            self.logger.info('   | Similarity ratio %f is > 0.98 : replace value >>%s<< with best match --> %s' % (maxr,invalue,maxdisc))
+            return maxdisc
+        elif maxr > 0.7 :
+            self.logger.debug('   | Similarity ratio %f is > 0.7 : compare value >>%s<< wih discipline >>%s<<' % (maxr,invalue,maxdisc))
+        else:
+            self.logger.info('   | Similarity ratio %f is < 0.7 between value >>%s<< and discipline >>%s<< => Do not map discipline !' % (maxr,invalue,maxdisc))
+            return None 
+        return invalue
+        
     def truncate(self,dataset,facetName,old_value,size):
         """
         truncates old value with new value for a given facet
@@ -1161,7 +1157,7 @@ class CONVERTER(object):
      
         for rule in rules:
             # rules can be checked for correctness
-            assert(rule.count(',,') == 5),"a double comma should be used to separate items"
+            assert(rule.count(',,') == 5),"a double comma should be used to separate items in rule"
             
             rule = rule.rstrip('\n').split(',,') # splits  each line of config file 
             groupName = rule[0]
@@ -1270,14 +1266,7 @@ class CONVERTER(object):
                         results['ecount'] += 1
                         continue
                 try:
-                   ### Semantic mapping
-                   # generic mapping of languages
-                   jsondata = self.map_lang(jsondata)
-                except:
-                   log.error('    | [ERROR] during map_lang ')
-                   results['ecount'] += 1
-                   continue
-                try:
+                   ## md postprocessor
                    if (rules):
                        self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
                        jsondata=self.postprocess(jsondata,rules)
@@ -1286,10 +1275,18 @@ class CONVERTER(object):
                    results['ecount'] += 1
                    continue
                 try:
-                    # generic mapping of disciplines
-                    jsondata = self.map_discipl(jsondata,disctab.discipl_list)        
+                   ### Semantic mapping of extra keys
+                   for facet in jsondata:
+                      if facet == 'extras':
+                         for extra in jsondata[facet]:
+                            if extra['key'] == 'Language':
+                              # generic mapping of languages
+                              extra['value'] = self.map_lang(extra['value'])
+                            if extra['key'] == 'Discipline':
+                              # generic mapping of discipline
+                              extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                 except:
-                   log.error('    | [ERROR] during map_discipl ')
+                   log.error('    | [ERROR] during mapping of %s' % extra['key'])
                    results['ecount'] += 1
                    continue
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
