@@ -701,7 +701,7 @@ def parse_list_file(process,filename,filter=''):
             continue
        
         # select lines with community in variable filter
-        if((filter != '') and ( not request.startswith(filter))):
+        if((filter != '') and ( not request.startswith(filter+' '))):
             continue
             
         reqlist.append(request.split())

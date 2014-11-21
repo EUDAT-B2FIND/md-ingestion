@@ -298,7 +298,7 @@ class HARVESTER(object):
         }
         
         # create sickle object and sets the default log output of the 'request' module to WARNING level:
-        sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=30)
+        sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=300)
      
         requests_log = log.getLogger("requests")
         requests_log.setLevel(log.WARNING)
@@ -329,15 +329,33 @@ class HARVESTER(object):
    
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
 
+        oaireq=getattr(sickle,req["lverb"], None)
+        ##if req["lverb"] == 'ListRecords':
+        ##  oaireq=getattr(sickle, 'ListRecords', None)  ##  sickle.ListRecords()
+        ##elif req["lverb"] == 'ListIdentifiers' :
+        #  oaireq=getattr(sickle, 'ListRecords', None)  ##  sickle.ListRecords()
+
+        
         try:
-            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
-            	if (record.header.deleted):
-            	    continue
-                
+##            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
+            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
+
+                if req["lverb"] == 'ListIdentifiers' :
+                    if (record.deleted):
+                       continue
+                    else:
+                       oai_id = record.identifier
+                       record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
+                elif req["lverb"] == 'ListRecords' :
+            	    if (record.header.deleted):
+            	       continue
+                    else:
+                       oai_id = record.header.identifier
+
                 stats['tcount'] += 1
 
                 # get the id of the metadata file:
-                oai_id = record.header.identifier
+                ##oai_id = record.header.identifier
                 
                 # generate a uniquely identifier for this dataset:
                 uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
@@ -348,9 +366,7 @@ class HARVESTER(object):
                     self.logger.debug('Harvested XML file written to %s' % xmlfile)
                     
                     # get the raw xml content:    
-                    metadata = record.raw
-                    metadata = etree.fromstring(metadata)
-                    ## etree.tostring(x, pretty_print = True)
+                    metadata = etree.fromstring(record.raw)
                     if (metadata is not None):
                         metadata = etree.tostring(metadata, pretty_print = True) 
                         metadata = metadata.encode('ascii', 'ignore')
@@ -398,8 +414,8 @@ class HARVESTER(object):
                     stats['ecount']+=1        
                     continue
                 except Exception as e:
-                    self.logger.error("    [ERROR] %s" % traceback.format_exc())
-                    self.logger.info(metadata)
+                    self.logger.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+                    ## self.logger.debug(metadata)
                     stats['ecount']+=1
                     continue
                 else:
