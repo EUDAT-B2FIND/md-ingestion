@@ -166,28 +166,31 @@ def main():
 
         conf_data = get_conf(configFile)
  	
- 	# postprocess the json file
+        
+        try:
+           ## md postprocessing
+           CV.logger.info('%s     INFO  PostProcessor - Processing: %s' % (time.strftime("%H:%M:%S"),jsonfile))
+ 	   dataset = CV.postprocess(dataset,conf_data)
+        except:
+           CV.logger.error('    | [ERROR] during postprocessing ')
+ 
         try:
            ### Semantic mapping
-           # generic mapping of languages
-          dataset = CV.map_lang(dataset)
+           for facet in dataset:
+               if facet == 'extras':
+                   for extra in dataset[facet]:
+                       if extra['key'] == 'Language':
+                           # generic mapping of languages
+                           extra['value'] = CV.map_lang(extra['value'])
+                       if extra['key'] == 'Discipline':
+                           # generic mapping of discipline
+                           disctab = CV.cv_diciplines()
+                           extra['value'] = CV.map_discipl(extra['value'],disctab.discipl_list)           # generic mapping of languages
         except:
-            CV.logger.error('    | [ERROR] during map_lang ')
-        
-
-        CV.logger.info('%s     INFO  PostProcessor - Processing: %s' % (time.strftime("%H:%M:%S"),jsonfile))
-
- 	new_dataset = CV.postprocess(dataset,conf_data)
-
-        try:
-            # generic mapping of disciplines
-            disctab = CV.cv_diciplines()
-            dataset = CV.map_discipl(dataset,disctab.discipl_list)        
-        except:
-            CV.logger.error('    | [ERROR] during map_discipl ')
+           CV.logger.error('    | [ERROR] during mapping of %s ' % extra['key'])
  	
  	# save output json to file
-	save_data(new_dataset,dstFile)
+	save_data(dataset,dstFile)
 
 if __name__ == "__main__":
 	main()
