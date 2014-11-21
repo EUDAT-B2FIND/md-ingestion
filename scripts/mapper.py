@@ -8,7 +8,7 @@ Moddifications :
   Heinrich Widmann @DKRZ 2014 : rename (--> mapper.py) and add full mapping functionality to script
 
 HOW TO RUN
-$ ./mapper.py -m mode -i /path/to/input.[xml|json] -o /path/to/output.json -c /path/to/config.txt [-m /path/to/xpath-mapfile.xml 
+$ ./mapper.py --mode MODE -i /path/to/input.[xml|json] -o /path/to/output.json -c /path/to/config.txt [-m /path/to/xpath-mapfile.xml 
 Input: xml or json file, depending on the this, total mapping (xml to json by JAVA XPATH2.0 converting + 'paostproc') or only 'postprocessing' (json to json) is performed
 Configuration file (this is a text file, where actions or rules are specified, In the scripts folder, you can see the format of the config.txt)
 Map file (this is a xml file, where xml to json converting is defined by XPATH2.= rules)
@@ -77,7 +77,7 @@ def main():
         parser.add_argument('-v', '--verbose', action="count",
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
 	parser.add_argument('-i','--srcFile',help='path to an input xml or json file to be mapped')
-	parser.add_argument('-c','--configFile',help='path to a configuration text file')
+	parser.add_argument('-c','--configFile',help='(optional) path to a configuration text file')
 	parser.add_argument('-m','--mapFile',help='path to a map file with xpath mapping rules (mandatory if srcFile is xml file)')
 	parser.add_argument('-o','--dstFile', help='path to output json file')
 	parser.add_argument('-j','--jobdir', help='path to log dir', default='log')
@@ -89,7 +89,7 @@ def main():
 	dstFile = args.dstFile
 	mapFile = args.mapFile
 	
-	if not (srcFile and configFile and dstFile):
+	if not (srcFile and dstFile):
 	    print parser.print_help()
 	    exit(1)
 
@@ -164,16 +164,24 @@ def main():
         else:
            jsonfile=srcFile
 
-        conf_data = get_conf(configFile)
  	
         
-        try:
-           ## md postprocessing
-           CV.logger.info('%s     INFO  PostProcessor - Processing: %s' % (time.strftime("%H:%M:%S"),jsonfile))
- 	   dataset = CV.postprocess(dataset,conf_data)
-        except:
-           CV.logger.error('    | [ERROR] during postprocessing ')
- 
+        print 'conffile %s' % configFile
+        if configFile :
+          print 'xxx'
+          if not os.path.isfile(configFile) :
+             self.logger.info('[INFO] Can not access config file %s => no postprocessing excecuted !' % configFile)
+          else:
+             try:
+               ## md postprocessing
+               CV.logger.info('%s     INFO  PostProcessor - Processing: %s' % (time.strftime("%H:%M:%S"),jsonfile))
+               conf_data = get_conf(configFile)
+               dataset = CV.postprocess(dataset,conf_data)
+             except:
+               CV.logger.error('    | [ERROR] during postprocessing ')
+        else:
+          CV.logger.info('[INFO] No config file given => no postprocessing excecuted !')
+
         try:
            ### Semantic mapping
            for facet in dataset:
