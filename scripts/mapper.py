@@ -68,8 +68,10 @@ def save_data(dataset,dstFile):
     """
     saves a json file
     """
-    with io.open(dstFile, 'w', encoding='utf-8') as f:
+    with io.open(dstFile, 'w') as f: ## , encoding='utf-8') as f:
         ##HEW??? json.dump(dataset,f, ensure_ascii=False)
+        ##encoded = dataset.encode('utf-8')
+        ## dataset=encoded.decode(encoding, 'ignore')
         f.write(json.dumps(dataset, sort_keys = True, indent = 4,ensure_ascii=False))
 
 def main():
@@ -182,11 +184,11 @@ def main():
         else:
           CV.logger.info('[INFO] No config file given => no postprocessing excecuted !')
 
-        try:
-           ### Semantic mapping
-           for facet in dataset:
-               if facet == 'extras':
-                   for extra in dataset[facet]:
+        # loop over all fields
+        for facet in dataset:
+            if facet == 'extras':
+               try:   ### Semantic mapping of extra fields
+                  for extra in dataset[facet]:
                        if extra['key'] == 'Language':
                            # generic mapping of languages
                            extra['value'] = CV.map_lang(extra['value'])
@@ -194,9 +196,13 @@ def main():
                            # generic mapping of discipline
                            disctab = CV.cv_diciplines()
                            extra['value'] = CV.map_discipl(extra['value'],disctab.discipl_list)           # generic mapping of languages
-        except:
-           CV.logger.error('    | [ERROR] during mapping of %s ' % extra['key'])
+               except:
+                   CV.logger.error('    | [ERROR] during mapping of %s ' % extra['key'])
  	
+            elif isinstance(dataset[facet], basestring) :
+               ### mapping of default string fields
+               dataset[facet]=dataset[facet].encode('ascii', 'ignore')
+             	
  	# save output json to file
 	save_data(dataset,dstFile)
 
