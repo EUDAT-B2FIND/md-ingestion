@@ -1290,10 +1290,11 @@ class CONVERTER(object):
                    log.error('    | [ERROR] during postprocessing along rules %s' % rules)
                    results['ecount'] += 1
                    continue
-                try:
-                   ### Semantic mapping of extra keys
-                   for facet in jsondata:
-                      if facet == 'extras':
+
+                # loop over all fields
+                for facet in jsondata:
+                   if facet == 'extras':
+                      try: ### Semantic mapping of extra keys
                          for extra in jsondata[facet]:
                             if extra['key'] == 'Language':
                               # generic mapping of languages
@@ -1301,20 +1302,24 @@ class CONVERTER(object):
                             if extra['key'] == 'Discipline':
                               # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
-                except:
-                   log.error('    | [ERROR] during mapping of %s' % extra['key'])
-                   results['ecount'] += 1
-                   continue
+                      except:
+                          log.error('    | [ERROR] during mapping of %s' % extra['key'])
+                          results['ecount'] += 1
+                          continue
+                   elif isinstance(jsondata[facet], basestring) :
+                       ### mapping of default string fields
+                       jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
+
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
 		   log.debug('   | [INFO] decode json data')
-                   data = json.dumps(jsondata, ensure_ascii=True, sort_keys = True, indent = 4).decode('utf8')
+                   data = json.dumps(jsondata, ensure_ascii=True,sort_keys = True, indent = 4).decode('utf8')
                    try:
                        log.debug('   | [INFO] save json file')
                        json_file.write(data)
                    except TypeError:
                        # Decode data to Unicode first
                        log.debug('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
-                       json_file.write(data.decode('utf8'))
+##                       json_file.write(data.decode('utf8'))
 ##                   try:
 ##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
                    except:
