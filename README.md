@@ -28,8 +28,17 @@ The sript manager.py uses the classes and functions from
   - UPLOADER
 
 Install required modules simplejson, sickle and e.g. by :
-
   > sudo pip install <module>
+
+or just by installing all modules listed in requirements.txt :
+  > less requirements.txt
+  sickle
+  lxml
+  simplejson
+  python-Levenshtein
+  git+https://github.com/noumar/iso639.git
+
+  > sudo pip isntall -r requiremnets.txt
 
 Or - if this not works for some reason for xml - try
   > sudo apt-get install python-lxml
