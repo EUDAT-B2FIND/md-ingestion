@@ -223,8 +223,7 @@ class HARVESTER(object):
     #
     # Public Methods:
     # ---------------
-    # .harvest_sickle(request)   - harvest from a source via sickle module
-    # [deprecated] .harvest(request) - harvest from a source via (old) OAI-PMH module
+    # .harvest(request) - harvest from a source via OAI-PMH using the python module 'Sickle'
     #
     # Usage:
     # ------
@@ -240,7 +239,7 @@ class HARVESTER(object):
                     mdprefix,
                     mdsubset
                 ]
-    results = HV.harvest_sickle(request)
+    results = HV.harvest(request)
 
     if (results == -1):
         print "Error occured!"
@@ -254,8 +253,8 @@ class HARVESTER(object):
         self.fromdate = fromdate
         
     
-    def harvest_sickle(self, request):
-        ## harvest_sickle (HARVESTER object, [community, source, verb, mdprefix, mdsubset]) - method
+    def harvest(self, request):
+        ## harvest (HARVESTER object, [community, source, verb, mdprefix, mdsubset]) - method
         # Harvest all files with <mdprefix> and <mdsubset> from <source> via sickle module and store those to hard drive.
         # Generate every N. file a new subset directory.
         #
@@ -311,6 +310,9 @@ class HARVESTER(object):
         # set subset:
         if (not req["mdsubset"]):
             subset = 'SET'
+        elif req["mdsubset"].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
+            subset = req["mdsubset"][:-1]
+            req["mdsubset"]=None
         else:
             subset = req["mdsubset"]
             
@@ -1663,6 +1665,9 @@ class UPLOADER (object):
         jsondata["name"] = ds
         jsondata["state"]='active'
         jsondata["groups"]=[{ "name" : community }]
+        print 'group %s ' % jsondata["groups"]
+        ##HEW-D exit()
+
         jsondata["owner_org"]="eudat"
    
         # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:

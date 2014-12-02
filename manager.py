@@ -192,7 +192,7 @@ def process(options,pstat,OUT):
         
         # start the process harvesting:
         if mode is 'multi':
-            process_harvest(HV,parse_list_file('harvest',options.list, options.community))
+            process_harvest(HV,parse_list_file('harvest',options.list, options.community,options.mdsubset))
         else:
             process_harvest(HV,[[
                 options.community,
@@ -209,7 +209,7 @@ def process(options,pstat,OUT):
         
             # start the process converting:
             if mode is 'multi':
-                process_convert(CV, parse_list_file('convert', OUT.convert_list or options.list, options.community))
+                process_convert(CV, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
                 process_convert(CV,[[
                     options.community,
@@ -224,7 +224,7 @@ def process(options,pstat,OUT):
         
             # start the process converting:
             if mode is 'multi':
-                process_reconvert(CV, parse_list_file('reconvert', OUT.convert_list or options.list, options.community))
+                process_reconvert(CV, parse_list_file('reconvert', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
                 process_reconvert(CV,[[
                     options.community,
@@ -243,7 +243,7 @@ def process(options,pstat,OUT):
 
             # start the process uploading:
             if mode is 'multi':
-                process_upload(UP, parse_list_file('upload', OUT.convert_list or options.list, options.community), options)
+                process_upload(UP, parse_list_file('upload', OUT.convert_list or options.list, options.community, options.mdsubset), options)
             else:
                 process_upload(UP,[[
                     options.community,
@@ -284,7 +284,7 @@ def process_harvest(HV, rlist):
         logger.info('\n## Harvesting request %s##' % request)
         
         harveststart = time.time()
-        results = HV.harvest_sickle(request)
+        results = HV.harvest(request)
     
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
@@ -669,7 +669,7 @@ def process_delete(OUT, dir, options):
         # save stats:
         OUT.save_stats(community+'-'+mdprefix,subset,'d',results)
 
-def parse_list_file(process,filename,filter=''):
+def parse_list_file(process,filename,community='',subset=''):
     if(not os.path.isfile(filename)):
         logger.critical('[CRITICAL] Can not access job list file %s ' % filename)
         exit()
@@ -700,8 +700,12 @@ def parse_list_file(process,filename,filter=''):
         if(request == '') or ( request.startswith('#')) or (inside_comment == True):
             continue
        
-        # select lines with community in variable filter
-        if((filter != '') and ( not request.startswith(filter))):
+        # sort out lines that don't match given community
+        if((community != '') and ( not request.startswith(community))):
+            continue
+            
+        # sort out lines that don't match given subset
+        if (subset != None) and ((len(request.split()) < 5) or  ( not request.split()[4].startswith(subset))) :
             continue
             
         reqlist.append(request.split())
