@@ -1085,10 +1085,9 @@ class CONVERTER(object):
             self.logger.info('   | Similarity ratio %f is > 0.98 : replace value >>%s<< with best match --> %s' % (maxr,invalue,maxdisc))
             return maxdisc
         elif maxr > 0.7 :
-            self.logger.debug('   | Similarity ratio %f is > 0.7 : compare value >>%s<< wih discipline >>%s<<' % (maxr,invalue,maxdisc))
+            self.logger.debug('   | Similarity ratio %f is > 0.7 : compare value >>%s<< and discipline >>%s<<' % (maxr,invalue,maxdisc))
         else:
-            self.logger.info('   | Similarity ratio %f is < 0.7 between value >>%s<< and discipline >>%s<< => Do not map discipline !' % (maxr,invalue,maxdisc))
-            return None 
+            self.logger.debug('   | Similarity ratio %f is < 0.7 compare value >>%s<< and discipline >>%s<<' % (maxr,invalue,maxdisc))
         return invalue
         
     def truncate(self,dataset,facetName,old_value,size):
