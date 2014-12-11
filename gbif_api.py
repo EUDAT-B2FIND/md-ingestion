@@ -91,7 +91,7 @@ def main():
     nj=0    
     noffs=0
     data = GBIF.action('package_list',noffs)
-    while(not data['endOfRecords'] and nj<10):
+    while(not data['endOfRecords']): ## and nj<10):
       ## 
       print 'data %s' % data['endOfRecords']
       for record in data['results']:
@@ -102,24 +102,24 @@ def main():
         
         ## 
         print ' | %d | %s ' % (nj,jsondata['key'])
-        print ' -----\n%s ' % jsondata
+        ##print ' -----\n%s ' % jsondata
         ## B2FIND mapping
-        jsonmapped['title']=jsondata["title"]
-        jsonmapped['notes']=jsondata["citation"]["text"]
-        if ( jsondata["contacts"] and 'firstName' in jsondata["contacts"][0]):
-           print '>>> %s' % jsondata["contacts"]
-           jsonmapped['author']=jsondata["contacts"][0]["firstName"]+' '##??? +jsondata["contacts"][0]["lastname"]
-           for contact in jsondata["contacts"][1:]:
-             if ( 'lastName' in contact ):           
-               jsonmapped['author']+=' ; '+contact["lastName"]
-             if ( 'firstName' in contact ):
-               jsonmapped['author']+=','+contact["firstName"]
-        else :
-           jsonmapped['author']=jsondata["createdBy"]
-        jsonmapped['PublicationYear']=jsondata["created"] ## or pubDate ?? only YYYY !
-        if (jsondata["contacts"] and 'organization' in jsondata["contacts"][0]):
-           jsonmapped['Origin']=jsondata["contacts"][0]["organization"] ## or 
-        jsonmapped['Language']=jsondata["language"] ## should be mapped to lang code !!
+        ##jsonmapped['title']=jsondata["title"]
+        ##jsonmapped['notes']=jsondata["citation"]["text"]
+        ##if ( jsondata["contacts"] and 'firstName' in jsondata["contacts"][0]):
+        ##   print '>>> %s' % jsondata["contacts"]
+        ##   jsonmapped['author']=jsondata["contacts"][0]["firstName"]+' '##??? +jsondata["contacts"][0]["lastname"]
+        ##   for contact in jsondata["contacts"][1:]:
+        ##     if ( 'lastName' in contact ):           
+        ##       jsonmapped['author']+=' ; '+contact["lastName"]
+        ##     if ( 'firstName' in contact ):
+        ##       jsonmapped['author']+=','+contact["firstName"]
+        ##else :
+        ##   jsonmapped['author']=jsondata["createdBy"]
+        ##jsonmapped['PublicationYear']=jsondata["created"] ## or pubDate ?? only YYYY !
+        ##if (jsondata["contacts"] and 'organization' in jsondata["contacts"][0]):
+        ##   jsonmapped['Origin']=jsondata["contacts"][0]["organization"] ## or 
+        ##jsonmapped['Language']=jsondata["language"] ## should be mapped to lang code !!
 
         
         ## write json file
@@ -128,11 +128,11 @@ def main():
         setno=nj/5000+1
         setdir="oaidata/gbif-eml/SET_{setno}/json".format(setno=setno)
         jsonfile='%s/%s.json' % (setdir,uid)
-        print '-->>  %s' % jsonfile
-        with open(jsonfile, 'w') as outfile:
+        ##print '-->>  %s' % jsonfile
+        with open(jsonfile, 'w') as outfileorig:
             try:
-              ## json.dump(jsondata,outfileorig, sort_keys = True, indent = 4)
-              json.dump(jsonmapped,outfile, sort_keys = True, indent = 4)
+              json.dump(jsondata,outfileorig, sort_keys = True, indent = 4)
+              ## json.dump(jsonmapped,outfile, sort_keys = True, indent = 4)
             except:
               print '    | [ERROR] Cannot write json file %s' % jsonfile
               sys.exit()

@@ -28,62 +28,71 @@ ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc
 ##% - https://github.com/DASISH/jmd-scripts/harvest-config*
 ##% - rsp. from Kees' email
 ## DARIAH endpoints, in groups of five (got from Kees)
-# h#=9646
-dariah http://gams.uni-graz.at/oaiprovider  ListIdentifiers oai_europeana uni-graz_
-# h#=90
-dariah http://demo2.dariah.eu/colreg/OAIHandler ListRecords oai_dc demo2_ 
-# h#=70
-dariah http://acdh.oeaw.ac.at/acdh-repo/oai ListRecords oai_dc oeaw_
+# h#=9646  ?MPI-PL h#=12268
+dariah http://gams.uni-graz.at/oaiprovider  ListIdentifiers oai_europeana gams_
+# h#=90    ?MPI-PL h#=92
+dariah http://demo2.dariah.eu/colreg/OAIHandler ListRecords oai_dc dariah-coll_ 
+# h#=70    ok=MPI-PL h#=70
+dariah http://acdh.oeaw.ac.at/acdh-repo/oai ListRecords oai_dc acdh_
 # ERR?? : URL /oaiprovider was not found on this server. ???
-dariah http://fedora.phaidra.univie.ac.at/oaiprovider ListRecords  oai_dc univie_
-#| ERR currently not harvestable  
+#?MPI-PL h#=34460
+dariah http://fedora.phaidra.univie.ac.at/oaiprovider ListRecords  oai_dc vienna-phaidra_
+# ?? ERR currently not harvestable  
 #- dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml oai_dc arachne_
-# ERR?? : AttributeError: 'NoneType' object has no attribute 'tag' ??? h#=
+# ?? ERR?? : AttributeError: 'NoneType' object has no attribute 'tag' ??? h#= ?MPI-PL h#=100
 dariah http://demo.imeji.org/fledgeddata/oai ListIdentifiers  oai_dc imeji_
-## h#=86472
+## h#=86472 ??MPI-PL ???
 dariah http://pubman.mpdl.mpg.de/escidoc-oaiprovider ListRecords  oai_dc mpdl_
-## ERR?? AttributeError: 'NoneType' object has no attribute 'tag' ??? h#=
+## ERR?? AttributeError: 'NoneType' object has no attribute 'tag' ??? h#= ?MPI-PL h#=100
 dariah http://zuse.zib.de/fledgeddata/oai ListRecords  oai_dc zib_
-## h#=2322
-dariah http://edoc.bbaw.de/oai2/oai2.php ListRecords  oai_dc edoc_
-## h#=...
-dariah http://archaeologydataservice.ac.uk/oai/archives/OAIHandler ListRecords oai_dc archaeology_ 
-## h#=32516
-dariah http://DARAstaroai.theses.fr/OAIHandler ListRecords  oai_dc dara_
-## h#1 >150000 harvesting stopped
+## h#=2322   ?MPI-PL h#=2321
+dariah http://edoc.bbaw.de/oai2/oai2.php ListRecords  oai_dc bbaw_
+## ADS h#=... ?MPI-PL h#=431
+dariah http://archaeologydataservice.ac.uk/oai/archives/OAIHandler ListRecords oai_dc ads_ 
+## h#=32516 ?MPI-PL h#=32091
+dariah http://DARAstaroai.theses.fr/OAIHandler ListRecords  oai_dc star_
+## h#1 >150000 harvesting stopped ?MPI-PL h#=186197
 dariah http://www.calames.abes.fr/oai/oai2.aspx ListRecords  oai_dc calames_
 ## <!-- currently not harvestable: provider url="http://oai.openedition.org"/ -->
+# ?MPI-PL h#=239 ok=MPI-PL h#=239
 dariah http://sldr.org/oai-pmh.php ListRecords  oai_dc sldr_
 ## <!-- currently not harvestable: provider url="http://www.etnoinfolab.org/oai/oai.php"/> -->
+#  ?MPI-PL h#=
 dariah http://www.arzenal.si/oai/arzenal ListRecords  oai_dc arzenal_
-dariah http://isn3.zrc-sazu.si/etnofolk/OAI-2.0/oai.php ListRecords  oai_dc zrc_
+#  ?MPI-PL h#=265
+dariah http://isn3.zrc-sazu.si/etnofolk/OAI-2.0/oai.php ListRecords  oai_dc isn-zrc_
+# ?MPI-PL h#=28612
 dariah http://www.sistory.si/oai.php ListRecords  oai_dc sistory_
 ## CLARIN endpoints , as it is harvested by DASISH ??
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi corpus_
-clarin  http://clarin.dk/oaiprovider ListRecords cmdi dk_
-clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc oeaw_
+# MPI-PL #h=    ?= #DASISH = 145245
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi mpi-pl_
+# UniOfCopenhagen  #h=    ?= #DASISH = 7
+clarin  http://clarin.dk/oaiprovider ListRecords cmdi vienna-lang-res_
+# Viena Language resources #h=    ?= #DASISH = 14324
+clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc ucph_
 ## CESSDA endpoint
 # ??ERROR : --> ListIdentifiers ?? 
-cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_dc dda_
-#h=628 (but only 199 stored !!! lot of double records !!!
+#h=115
+cessda http://ddaonline.dda.dk/oai-pmh ListIdentifiers  oai_dc dda_
+#h=227
 cessda http://nesstar.snd.gu.se/oai-pmh ListIdentifiers  oai_ddi snd_
 #h=97
 cessda http://nesstar.ucd.ie/oai-pmh ListIdentifiers  oai_ddi ucd_
-#h=564
-cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi liddata_
-#h=6286
-cessda http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers ukdata_
-#h=117
-cessda http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  gu-se_
-#h=6257
-clarin http://oai.datacite.org/oai ListRecords  oai_dc GESIS.ARCHIV
-#h=2255
+#h=564 == #DASISH = 546
+cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi lida_
+#h=6286 ?= #DASISH = 6286
+cessda http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers ddi ukdata_
+#h=117 ?= #DASISH = 115
+cessda http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi swedish-lang-bank_
+#h=6257 ?= #DASISH = 6225
+cessda http://oai.datacite.org/oai ListRecords  oai_dc GESIS.ARCHIV
+#h=2255 ?= #DASISH = 2245
 cessda http://oai.datacite.org/oai ListRecords  oai_dc SND.SND
-#h=6135
+#h=6135 ?= #DASISH = 6073
 cessda http://oai.datacite.org/oai ListRecords  oai_dc BL.UKDA
-##<!-- DANS with CMDI support --> #h=1000
-cessda http://oai.clarin-beta.dans.knaw.nl/OAIHandler  ListRecords cmdi clarin-beta_ 
-##<!-- DANS easy, does not support CMDI, fall back to DC --> #h=28551
+##<!-- DANS with CMDI support --> #h=1000 == #DASISH
+cessda http://oai.clarin-beta.dans.knaw.nl/OAIHandler  ListRecords cmdi dans_cmdi 
+##<!-- DANS easy, does not support CMDI, fall back to DC --> #h=28551 ?= #DASISH=28404
 cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc dans-easy_
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://metadata.gbif.org/catalogue/OAIHandler ListRecords eml old_

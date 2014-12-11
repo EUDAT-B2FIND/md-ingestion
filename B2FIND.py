@@ -296,8 +296,77 @@ class HARVESTER(object):
             "timestart" : time.time(),  # start time per subset process
         }
         
-        # create sickle object and sets the default log output of the 'request' module to WARNING level:
+        # the gbif api client
+        class GBIF_CLIENT(object):
+        
+            # call action api:
+            ## GBIF.action('package_list',{})
+        
+            def __init__ (self, ip_host): ##, api_key):
+        	    self.ip_host = ip_host
+        
+        
+        
+            def JSONAPI(self, action, offset): # see oaireq
+                ## JSONAPI (action, jsondata) - method
+        	    # Call the api action <action> with the <jsondata> on the CKAN instance which was defined by iphost
+        	    # parameter of CKAN_CLIENT.
+        	    #
+        	    # Parameters:
+        	    # -----------
+        	    # (string)  action  - Action name of the API v3 of CKAN
+        	    # (dict)    data    - Dictionary with json data
+        	    #
+        	    # Return Values:
+        	    # --------------
+        	    # (dict)    response dictionary of CKAN
+        	    
+        	    return self.__action_api(action, offset)
+        		
+        
+        
+            def __action_api (self, action, offset):
+                # Make the HTTP request for get datasets from GBIF portal
+                response=''
+                rvalue = 0
+                ## offset = 0
+                limit=100
+                api_url = "http://api.gbif.org/v1"
+                action_url = "{apiurl}/dataset?offset={offset}&limit={limit}".format(apiurl=api_url,offset=str(offset),limit=str(limit))	# default for get 'dataset'
+               # normal case:
+               ###  action_url = "http://{host}/api/3/action/{action}".format(host=self.ip_host,action=action)
+        
+               # make json data in conformity with URL standards
+               ## data_string = urllib.quote(json.dumps(data_dict))
+        
+               ## print '\t|-- Action %s\n\t|-- Calling %s\n\t|-- Offset %d ' % (action,action_url,offset)
+                try:
+                   request = urllib2.Request(action_url)
+                   ##if (self.api_key): request.add_header('Authorization', self.api_key)
+                   response = urllib2.urlopen(request)
+                except urllib2.HTTPError as e:
+                   print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action)
+                   if ( e.code == 403 ):
+                       print '\t\tAccess forbidden, maybe the API key is not valid?'
+                       exit(e.code)
+                   elif ( e.code == 409):
+                       print '\t\tMaybe you have a parameter error?'
+                       return {"success" : False}
+                   elif ( e.code == 500):
+                       print '\t\tInternal server error'
+                       exit(e.code)
+                except urllib2.URLError as e:
+                   exit('%s' % e.reason)
+                else :
+                   out = json.loads(response.read())
+                   assert response.code >= 200
+                   return out        
+
+        # create sickle object
         sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=300)
+
+        # create GBIF object 
+        GBIF = GBIF_CLIENT(req['url'])
      
         requests_log = log.getLogger("requests")
         requests_log.setLevel(log.WARNING)
@@ -331,16 +400,81 @@ class HARVESTER(object):
    
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
 
-        oaireq=getattr(sickle,req["lverb"], None)
-        ##if req["lverb"] == 'ListRecords':
-        ##  oaireq=getattr(sickle, 'ListRecords', None)  ##  sickle.ListRecords()
-        ##elif req["lverb"] == 'ListIdentifiers' :
-        #  oaireq=getattr(sickle, 'ListRecords', None)  ##  sickle.ListRecords()
-
-        
         try:
-##            for record in sickle.ListRecords(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
-            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):            
+          if req["lverb"] == 'JSONAPI':
+            noffs=0
+            for record in GBIF.JSONAPI('package_list',noffs)['results']:
+                ## how to handle 'deleted' records
+
+                stats['tcount'] += 1
+
+                # generate a uniquely identifier for this dataset:
+                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, record['key'].encode('ascii','replace')))
+                jsonfile = subsetdir + '/json/' + os.path.basename(uid) + '.json'
+                try:
+                    self.logger.info('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,record['key'],uid))
+                    self.logger.debug('Try to write the harvested JSON record to %s' % jsonfile)
+                    
+                    # get the raw json content:    
+                    if (record is not None):
+                        ###metadata = etree.tostring(metadata, pretty_print = True) 
+                        ###metadata = metadata.encode('ascii', 'ignore')
+                        if (not os.path.isdir(subsetdir+'/json')):
+                           os.makedirs(subsetdir+'/json')
+                           
+                        # write metadata in file:
+                        try:
+                            with open(jsonfile, 'w') as f:
+                              json.dump(record,f, sort_keys = True, indent = 4)
+                        except IOError, e:
+                            self.logger.error("[ERROR] Cannot write metadata in json file '%s': %s\n" % (jsonfile,e))
+                            stats['ecount'] +=1
+                            continue
+                        
+                        stats['count'] += 1
+                        self.logger.debug('Harvested JSON file written to %s' % jsonfile)
+                        
+                        # Need a new subset?
+                        if (stats['count'] == count_break):
+                        
+                            # save the stats of the old subset and get the new subsetdir:
+                            subsetdir, count_set = self.save_subset(
+                                req, stats, subset, subsetdir, count_set)
+                            
+                            self.logger.info('    | subset ( %d records) harvested in %s (if not failed).'% (
+                                stats['count'], subsetdir
+                            ))
+                            
+                            # add all subset stats to total stats and reset the temporal subset stats:
+                            for key in ['tcount', 'ecount', 'count', 'dcount']:
+                                stats['tot'+key] += stats[key]
+                                stats[key] = 0
+
+                            # start with a new time:
+                            stats['timestart'] = time.time()
+                    else:
+                        stats['ecount'] += 1
+                        self.logger.warning('    [WARNING] No metadata available for %s' % record['key'])
+                            
+                        
+                except TypeError as e:
+                    self.logger.error('    [ERROR] TypeError: %s' % e)
+                    stats['ecount']+=1        
+                    continue
+                except Exception as e:
+                    self.logger.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+                    ## self.logger.debug(metadata)
+                    stats['ecount']+=1
+                    continue
+                else:
+                    # if everything worked then deleted this metadata file from deleted_metadata
+                    if uid in deleted_metadata:
+                        del deleted_metadata[uid]
+
+
+          else:
+            oaireq=getattr(sickle,req["lverb"], None)
+            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
 
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
@@ -356,9 +490,6 @@ class HARVESTER(object):
 
                 stats['tcount'] += 1
 
-                # get the id of the metadata file:
-                ##oai_id = record.header.identifier
-                
                 # generate a uniquely identifier for this dataset:
                 uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
                 
@@ -1307,19 +1438,20 @@ class CONVERTER(object):
                           log.error('    | [ERROR] during mapping of %s' % extra['key'])
                           results['ecount'] += 1
                           continue
-                   elif isinstance(jsondata[facet], basestring) :
-                       ### mapping of default string fields
-                       jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
+                   ##elif isinstance(jsondata[facet], basestring) :
+                   ##    ### mapping of default string fields
+                   ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
 
-                with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
+                ##with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
+                with io.open(path+'/json/'+filename, 'w') as json_file:
 		   log.debug('   | [INFO] decode json data')
-                   data = json.dumps(jsondata, ensure_ascii=True,sort_keys = True, indent = 4).decode('utf8')
+                   data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
                    try:
                        log.debug('   | [INFO] save json file')
                        json_file.write(data)
-                   except TypeError:
+                   except TypeError, e :
                        # Decode data to Unicode first
-                       log.debug('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
+                       log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,e))
 ##                       json_file.write(data.decode('utf8'))
 ##                   try:
 ##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
@@ -1664,9 +1796,6 @@ class UPLOADER (object):
         jsondata["name"] = ds
         jsondata["state"]='active'
         jsondata["groups"]=[{ "name" : community }]
-        print 'group %s ' % jsondata["groups"]
-        ##HEW-D exit()
-
         jsondata["owner_org"]="eudat"
    
         # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
