@@ -16,8 +16,9 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords      iso	iso-wdcc
 ##500 Internal server ERROR : 
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-wdcc-doi
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-old-doi
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-gkss
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	    iso	iso-uni-hh
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	iso	iso-gkss
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	iso	iso-uni-hh
+enes    http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  dc      dc-wdcc-doi 
 ##%%% ENES/EARLINET : MD Provider eudat-oai.dkrz.de
 earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListRecords  iso	iso_wdcc_exp_EARLINET
 ### new comm. IVOA or EURO-VO

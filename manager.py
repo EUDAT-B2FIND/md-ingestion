@@ -2,7 +2,7 @@
 
 """manager.py
   Management of metadata within the EUDAT Joint Metadata Domain (B2FIND)
-  MD Ingestion : Harvest from OAI provider, convert XML (to JSON), semantic mapping of MD schema, remap to B2FIND xml, and upload to JMD portal
+  MD Ingestion : Harvest from OAI provider, convert XML (to JSON), semantic mapping of MD schema, remap to B2FIND xml, and upload to B2FIND portal
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ), John Mrziglod (DKRZ)
 Licensed under AGPLv3.
@@ -490,7 +490,7 @@ def process_upload(UP, rlist, options):
                     dsstatus = ckanstatus
 
             upload = 0
-            # depending on status from epic handle upload record to JMD
+            # depending on status from epic handle upload record to B2FIND 
             logger.info('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
                 logger.info('        |-> %s' % ('No upload required'))
@@ -897,7 +897,7 @@ def options_parser(modes):
            Management of metadata within EUDAT B2FIND, i.e.    
 """ + descI,
         formatter = optparse.TitledHelpFormatter(),
-        prog = 'eudat_jmd_manager.py',
+        prog = 'manager.py',
         epilog='For any further information and documentation please look at README.txt file or at the EUDAT wiki (https://confluence.csc.fi/display/Eudat/B2FIND+Manager).',
         version = "%prog " + ManagerVersion
     )
@@ -936,7 +936,7 @@ def options_parser(modes):
     
     group_upload = optparse.OptionGroup(p, "Upload Options",
         "These options will be required to upload an dataset to a CKAN database.")
-    group_upload.add_option('--iphost', '-i', help="IP adress of JMD portal (CKAN instance)", metavar='IP')
+    group_upload.add_option('--iphost', '-i', help="IP adress of B2FIND portal (CKAN instance)", metavar='IP')
     group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, iby default taken from file $HOME/.netrc)",metavar='STRING')
     
     p.add_option_group(group_multi)
@@ -985,7 +985,7 @@ def pstat_init (p,modes,mode,source,iphost):
     pstat['text']['h']='Harvest community XML files from ' + stext 
     pstat['text']['c']='Convert community XML to B2FIND JSON and do semantic mapping'  
     pstat['text']['r']='Re-Convert B2FIND JSON to B2FIND XML and do semantic mapping'  
-    pstat['text']['u']='Upload JSON records as datasets into JMD %s' % iphost
+    pstat['text']['u']='Upload JSON records as datasets into B2FIND %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
     pstat['short']['h']='Harvesting'
