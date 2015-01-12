@@ -11,6 +11,7 @@ Install required modules as simplejson, e.g. by :
   > sudo pip install <module>
 
 Copyright (c) 2014 John Mrziglod (DKRZ)
+Modified      2015 Heinrich Widmann (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -26,7 +27,7 @@ This is a prototype and not ready for production use.
 
 # system relevant modules:
 import os, glob, sys
-import time, datetime, subprocess
+import time, datetime, calendar, subprocess
 
 # program relevant modules:
 import logging as log
@@ -45,6 +46,7 @@ import httplib
 from urlparse import urlparse
 
 # needed for CONVERTER :
+from babel.dates import format_datetime
 import codecs
 import simplejson as json
 import csv, io
@@ -403,14 +405,21 @@ class HARVESTER(object):
         try:
           if req["lverb"] == 'JSONAPI':
             noffs=0
-            for record in GBIF.JSONAPI('package_list',noffs)['results']:
-                ## how to handle 'deleted' records
+            data = GBIF.JSONAPI('package_list',noffs)
+            while(not data['endOfRecords']): ## and nj<10):
+              ## 
+              print 'data-end-of-rec %s' % data['endOfRecords']
+              for record in data['results']:
+              ## for record in GBIF.JSONAPI('package_list',noffs)['results']:
+                ## how to handle 'deleted' records ???
 
                 stats['tcount'] += 1
 
-                # generate a uniquely identifier for this dataset:
-                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, record['key'].encode('ascii','replace')))
-                jsonfile = subsetdir + '/json/' + os.path.basename(uid) + '.json'
+                # set oai_id and generate a uniquely identifier for this dataset:
+                oai_id = record['key']
+                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+
+                jsonfile = subsetdir + '/hjson/' + os.path.basename(uid) + '.json'
                 try:
                     self.logger.info('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,record['key'],uid))
                     self.logger.debug('Try to write the harvested JSON record to %s' % jsonfile)
@@ -419,8 +428,8 @@ class HARVESTER(object):
                     if (record is not None):
                         ###metadata = etree.tostring(metadata, pretty_print = True) 
                         ###metadata = metadata.encode('ascii', 'ignore')
-                        if (not os.path.isdir(subsetdir+'/json')):
-                           os.makedirs(subsetdir+'/json')
+                        if (not os.path.isdir(subsetdir+'/hjson')):
+                           os.makedirs(subsetdir+'/hjson')
                            
                         # write metadata in file:
                         try:
@@ -455,8 +464,6 @@ class HARVESTER(object):
                     else:
                         stats['ecount'] += 1
                         self.logger.warning('    [WARNING] No metadata available for %s' % record['key'])
-                            
-                        
                 except TypeError as e:
                     self.logger.error('    [ERROR] TypeError: %s' % e)
                     stats['ecount']+=1        
@@ -467,12 +474,13 @@ class HARVESTER(object):
                     stats['ecount']+=1
                     continue
                 else:
-                    # if everything worked then deleted this metadata file from deleted_metadata
+                    # if everything worked then delete this metadata file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
-
-
-          else:
+              noffs+=100
+              data = GBIF.JSONAPI('package_list',noffs)
+                
+          else:  ## OAI-PMH harvesting of XML records using Python Sickle module
             oaireq=getattr(sickle,req["lverb"], None)
             for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
 
@@ -562,7 +570,24 @@ class HARVESTER(object):
         except Exception as e:
             self.logger.error("    [ERROR] %s" % traceback.format_exc())
         else:
-            if (len(deleted_metadata) > 0) and self.pstat['status']['d'] == 'tbd':
+
+            # check for outdated harvested xml files and add to deleted_metadata, if not already listed
+            now = time.time()
+            print 'xxx %s' % '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])
+            for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
+               print 's %s' % s+'/xml/*.xml'
+               for f in glob.glob(s+'/xml/*.xml'):
+                 print 'date %s of file %s' % (os.stat(f).st_mtime,f)
+                 if os.stat(f).st_mtime < now - 7 * 86400:
+                     if os.path.isfile(f):
+                        if (deleted_metadata[os.path.splitext(os.path.basename(f))[0]]):
+                           print 'file %s is already on deleted_metadata' % f
+                        else:
+                           deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
+                        print 'oudated %s file %s' % (os.stat(f).st_mtime,f)
+                        ## os.remove(os.path.join(path, f))
+
+            if (len(deleted_metadata) > 0): ##HEW and self.pstat['status']['d'] == 'tbd':
                 ## delete all files in deleted_metadata and write the subset
                 ## and the uid in '<outdir>/delete/<community>-<mdprefix>':
                 self.logger.info('    | These [%d] files were not updated and will be deleted:' % (len(deleted_metadata)))
@@ -574,28 +599,31 @@ class HARVESTER(object):
                 if(os.path.isfile(delete_file)):
                     try:
                         f = open(delete_file, 'r')
-                        file_content = f.read()
+                        file_content = f.readlines()
                         f.close()
+                        found = False
                     except IOError as (errno, strerror):
                         self.logger.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
                         f.close
                 elif (not os.path.exists(self.base_outdir+'/delete')):
                     os.makedirs(self.base_outdir+'/delete')    
-                
-                # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
-                for uid in deleted_metadata:
+
+                try:
+                  # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
+                  for uid in deleted_metadata:
                     self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
                     
                     xmlfile = deleted_metadata[uid]
-                    subset = os.path.dirname(xmlfile).split('/')[-2]
+                    dsubset = os.path.dirname(xmlfile).split('/')[-2]
                     jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+uid+'.json'
                 
-                    file_content += '%s\t%s\n' % (subset,uid)
+                    fline = '%s\t%s\n' % (dsubset,uid)
                     stats['totdcount'] += 1
                     
                     # remove xml file:
                     try: 
-                        os.remove(xmlfile)
+                        ## os.remove(xmlfile)
+                        print 'rm xmlf'
                     except OSError, e:
                         self.logger.error("    [ERROR] Cannot remove xml file: %s" % (e))
                         stats['totecount'] +=1
@@ -608,26 +636,28 @@ class HARVESTER(object):
                             self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
                             stats['totecount'] +=1
                 
-                # write file_content in delete file:
-                try:
-                    f = open(delete_file, 'w')
-                    f.write(file_content)
-                    f.close()
-                except IOError as (errno, strerror):
-                    self.logger.critical("Cannot write data to '{0}': {1}".format(delete_file, strerror))
-                    f.close
+                    # write fline in delete file:
+                    for line in file_content:
+                         if fline in line:
+                           print "Found it"
+                           found = True
+                    if not found:
+                         with open(delete_file, 'a') as file:
+                           file.write(fline)                        
+
+
+                except IOError as strerror:
+                   self.logger.critical("Cannot write data to '{0}': {1}".format(delete_file, strerror))
         
-        
+
             # add all subset stats to total stats and reset the temporal subset stats:
             for key in ['tcount', 'ecount', 'count', 'dcount']:
                 stats['tot'+key] += stats[key]
             
             self.logger.info(
-                '## [%d] files provided by %s / %s, [%d] records are harvested, [%d] failed and [%d] are deleted.' 
+                '## Harvesting finished:\n #  | Provided | # Harvested | # Failed |\n # | %d | %d | %d | %d |' 
                 % (
                     stats['tottcount'],
-                    req['mdprefix'],
-                    req['mdsubset'],
                     stats['totcount'],
                     stats['totecount'],
                     stats['totdcount']
@@ -637,372 +667,6 @@ class HARVESTER(object):
             if (stats['count'] > 0):
                 self.save_subset(req, stats, subset, subsetdir, count_set)
             
-            
-    
-    ## DEPRECATED ##
-    """    
-    ## harvest(self, request) - method
-    # call OAI listrecords or listidentifier+getrecord to retrieve xml records
-    # and store metadata records in target directory.
-    #
-    # Parameters:
-    # -----------
-    # (list)    request - A list with four or five elements:
-    #           1. community
-    #           2. url - The URL to the OAI-PMH server
-    #           3. lverb - 'ListIdentifiers' or 'ListRecords'
-    #           4. mdprefix - Prefix of the metadata
-    #           5. mdsubset - Subset of the metadata (optional)
-                       
-    def harvest(self, request):
-    
-        # create a request dictionary:
-        req = {
-            "community" : request[0],
-            "url"   : request[1],
-            "lverb" : request[2],
-            "mdprefix"  : request[3],
-            "mdsubset"  : request[4]   if len(request)>4 else ''
-        }
-   
-        # create dictionary with stats:
-        stats = {
-            "tottcount" : 0,    # total number of all provided datasets
-            "totcount"  : 0,    # total number of all successful harvested datasets
-            "totecount" : 0,    # total number of all failed datasets
-            "totdcount" : 0,    # total number of all deleted datasets
-            
-            "tcount"    : 0,    # number of all provided datasets per subset
-            "count"     : 0,    # number of all successful harvested datasets per subset
-            "ecount"    : 0,    # number of all failed datasets per subset
-            "dcount"    : 0,    # number of all deleted datasets per subset
-            
-            "timestart" : time.time(),  # start time per subset process
-        }
-   
-        # create client object for harvesting:
-        registry = MetadataRegistry()
-        registry.registerReader(req['mdprefix'], Reader())
-        client = Client(req['url'], registry)
-        
-        # if the number of files in a subset dir is greater than <count_break>
-        # then create a new one with the name <set> + '_' + <count_set>
-        count_break = 5000
-        count_set = 1
-       
-        # set subset:
-        if (not req["mdsubset"]):
-            subset = 'SET'
-        else:
-            subset = req["mdsubset"]
-            
-        if (self.fromdate):
-            subset = subset + '_f' + str(self.fromdate.date())
-        
-        # make subset dir:
-        subsetdir = '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
-        
-        # Get all files in the current subset directories and put those in the dictionary files_to_delete
-        deleted_metadata = dict()
-        for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-            for f in glob.glob(s+'/xml/*.xml'):
-                # save the id as key and the subset as value:
-                deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
-        
-        self.logger.info('    |   | %-4s | %-45s |\n    |%s|' % ('#','OAI Identifier',"-" * 58))
-        try:
-            if ( req['lverb'] == 'ListIdentifiers'):
-            
-                if not req['mdsubset']:
-                    for data in client.listIdentifiers(metadataPrefix=req['mdprefix']):
-                        success, id, subsetdir, count_set = \
-                            self.loop(client,data,req,stats,subset,subsetdir,count_set,count_break)
-                        
-                        if success and id in deleted_metadata:
-                            del deleted_metadata[id]
-                            
-                else:      
-                    for data in client.listIdentifiers(metadataPrefix=req['mdprefix'], set=req['mdsubset']):
-                        success, id, subsetdir, count_set = \
-                            self.loop(client,data,req,stats,subset,subsetdir,count_set,count_break)
-                        
-                        if success and id in deleted_metadata:
-                            del deleted_metadata[id]
-            else:
-            
-                if not req['mdsubset']:
-                    for data in client.listRecords(metadataPrefix=req['mdprefix']):
-                        success, id, subsetdir, count_set = \
-                            self.loop(client,data,req,stats,subset,subsetdir,count_set,count_break)
-                        
-                        if success and id in deleted_metadata:
-                            del deleted_metadata[id]
-                else:      
-                    for data in client.listRecords(metadataPrefix=req['mdprefix'], set=req['mdsubset']):
-                        success, id, subsetdir, count_set = \
-                            self.loop(client,data,req,stats,subset,subsetdir,count_set,count_break)
-                        
-                        if success and id in deleted_metadata:
-                            del deleted_metadata[id]
- 
-        except TypeError as e:
-            self.logger.error('    [ERROR] Type Error: %s' % e)
-        except NoRecordsMatchError as e:
-            self.logger.error('    [ERROR] No Records Match: %s' % e)
-        except BadVerbError as e:
-            self.logger.error('    [ERROR] %s : %s ' % (e,req['lverb']))
-        except DatestampError as e:
-            self.logger.error('    [ERROR] DatestampError : %s' % e)
-        finally:
-            if len(deleted_metadata) > 0:
-                ## delete all files in deleted_metadata and write the subset
-                ## and the id in '<outdir>/delete/<community>-<mdprefix>':
-                self.logger.info('    | These [%d] files were not updated and will be deleted:' % (len(deleted_metadata)))
-                
-                # path to the file with all deleted ids:
-                delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
-                file_content = ''
-                
-                if(os.path.isfile(delete_file)):
-                    try:
-                        f = open(delete_file, 'r')
-                        file_content = f.read()
-                        f.close()
-                    except IOError as (errno, strerror):
-                        self.logger.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
-                        f.close
-                elif (not os.path.exists(self.base_outdir+'/delete')):
-                    os.makedirs(self.base_outdir+'/delete')    
-                
-                # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
-                for id in deleted_metadata:
-                    self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],id))
-                    
-                    xmlfile = deleted_metadata[id]
-                    subset = os.path.dirname(xmlfile).split('/')[-2]
-                    jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+id+'.json'
-                
-                    file_content += '%s\t%s\n' % (subset,id)
-                    stats['totdcount'] += 1
-                    
-                    # remove xml file:
-                    try: 
-                        os.remove(xmlfile)
-                    except OSError, e:
-                        self.logger.error("    [ERROR] Cannot remove xml file: %s" % (e))
-                        stats['totecount'] +=1
-                        
-                    # remove json file:
-                    if (os.path.exists(jsonfile)):
-                        try: 
-                            os.remove(jsonfile)
-                        except OSError, e:
-                            self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
-                            stats['totecount'] +=1
-                
-                # write file_content in delete file:
-                try:
-                    f = open(delete_file, 'w')
-                    f.write(file_content)
-                    f.close()
-                except IOError as (errno, strerror):
-                    self.logger.critical("Cannot write data to '{0}': {1}".format(delete_file, strerror))
-                    f.close
-        
-        
-            # add all subset stats to total stats and reset the temporal subset stats:
-            for key in ['tcount', 'ecount', 'count', 'dcount']:
-                stats['tot'+key] += stats[key]
-            
-            self.logger.info(
-                '## [%d] files provided by %s / %s, [%d] records are harvested, [%d] failed and [%d] are deleted.' 
-                % (
-                    stats['tottcount'],
-                    req['mdprefix'],
-                    req['mdsubset'],
-                    stats['totcount'],
-                    stats['totecount'],
-                    stats['totdcount']
-                ))
-        
-            # save the current subset:
-            if (stats['count'] > 0):
-                self.save_subset(req, stats, subset, subsetdir, count_set)
-        
-        return 1
-    
-    
-    
-    
-    ## loop (HARVESTER object, client, data, req, stats, subset, subsetdir, count_set, count_break) - method
-    # Get a metadata file from a ListIdentifiers or a ListRecords loop, check it (time stamp, delete flag)
-    # and store it to the given <subsetdir>
-    #
-    # Parameters:
-    # -----------
-    # (object)  client - oaipmh object
-    # (object)  data - metadata file
-    # (dict)    req - request dictionary (community, oai-url, lverb, mdprefix, mdsubset)
-    # (dict)    stats - statistics dictionary with file counter and time stopper
-    # (string)  subset - subset of the metadata
-    # (string)  subsetdir - directory in which all harvested data will be stored
-    # (integer) count_set - counter of the current subset
-    # (integer) count_break - if the file counter stats['count'] is greater than this number
-    #           a new subset directory will be created
-    #
-    # Return Values:
-    # --------------
-    # 1. (boolean)  success 
-    # 2. (string)   metadata id 
-    # 3. (string)   current subsetdir 
-    # 4. (integer)  current counter of the subset 
-        
-    def loop(self,client,data,req,stats,subset,subsetdir,count_set,count_break):
-        stats['tcount'] += 1
-        
-        # get the header of the metadata file:
-        header = data if req['lverb'] == 'ListIdentifiers' else data[0]
-        
-        # get the id of the metadata file:
-        id = header.identifier()
-        
-        # check the datestamp of the metadata:
-        if (self.fromdate) and (self.fromdate >= header.datestamp()):
-            self.logger.debug('Dataset with id "%s" is too old!' % id)
-            return(False, id, subsetdir, count_set) 
-        
-        xmlfile = subsetdir + '/xml/' + os.path.basename(id) + '.xml'
-        try:
-            # dataset state is 'deleted':
-            if header.isDeleted():
-                self.logger.info('    | d | %-4d | %-45s |' % (stats['dcount']+1,id))
-            
-                jsonfile = subsetdir + '/json/' + id + '.json'
-                 
-                # remove json file and add ID to the 'delete' file:
-                if (os.path.exists(jsonfile)):
-                    # write the id in '<outdir>/delete/<community>-<mdprefix>':
-                    delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
-                    file_content = ''
-                    
-                    if(os.path.isfile(delete_file)):
-                        try:
-                            f = open(delete_file, 'r')
-                            file_content = f.read()
-                            f.close()
-                        except IOError as (errno, strerror):
-                            self.logger.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
-                            f.close
-                    elif (not os.path.exists(self.base_outdir+'/delete')):
-                        os.makedirs(self.base_outdir+'/delete')
-
-                    # add subset and id to delete file:
-                    file_content += '%s\t%s\n' % (subset,id)
-                    try:
-                        f = open(delete_file, 'w')
-                        f.write(file_content)
-                        f.close()
-                    except IOError as (errno, strerror):
-                        self.logger.critical("Cannot write data to '{0}': {1}".format(delete_file, strerror))
-                        self.logger.critical("Cannot add id %s to delete file!" %(id))
-                        f.close
-                        
-                    # now remove the jsonfile:
-                    try: 
-                        os.remove(jsonfile)
-                    except OSError, e:
-                        self.logger.error("[ERROR] Cannot remove json file '%s': %s\n" % (jsonfile,e))
-                        stats['ecount'] +=1
-                        return(False, id, subsetdir, count_set)
-                
-                # remove xml file:        
-                if (os.path.exists(xmlfile)):
-                    try: 
-                        os.remove(xmlfile)
-                    except OSError, e:
-                        self.logger.error("[ERROR] Cannot remove xml file '%s': %s\n" % (xmlfile,e))
-                        stats['ecount'] +=1
-                        return(False, id, subsetdir, count_set)
-                        
-                stats['dcount'] += 1
-            
-            # dataset state is 'active':    
-            else:
-                self.logger.info('    | h | %-4d | %-45s |' % (stats['count']+1,id))
-                self.logger.debug('Harvested XML file written to %s' % xmlfile)
-
-                # if lverb was only 'ListIdentifiers' then get the rest of the metadata:
-                if (req['lverb'] == 'ListIdentifiers'):
-                    try: 
-                        data = client.getRecord(identifier=id, metadataPrefix = req['mdprefix'])
-                    except CannotDisseminateFormatError as e:
-                        self.logger.error('    [ERROR] %s' % e)
-                        stats['ecount']+=1
-                        return(False, id, subsetdir, count_set)
-                    except  NoMetadataFormatsError as e:
-                        self.logger.error('    [ERROR] No Metadata: %s' % e)
-                        stats['ecount']+=1
-                        return(False, id, subsetdir, count_set)
-                    except XMLSyntaxError as e:
-                        self.logger.error('    [ERROR] XML syntax: %s' % e)
-                        stats['ecount']+=1
-                        return(False, id, subsetdir, count_set)
-                    
-                metadata = data[1]
-                if (metadata):
-                    # make xml dirs:
-                    if (not os.path.isdir(subsetdir+'/xml')):
-                       os.makedirs(subsetdir+'/xml')
-                       
-                    # write metadata in file:
-                    try:
-                        f = open(xmlfile, 'w')
-                        f.write(metadata)
-                        f.close
-                    except IOError, e:
-                        self.logger.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile,e))
-                        stats['ecount'] +=1
-                        return(False, id, subsetdir, count_set)
-                    
-                    stats['count'] += 1
-                    self.logger.debug('Harvested XML file written to %s' % xmlfile)
-                    
-                    # Need a new subset?
-                    if (stats['count'] == count_break):
-                    
-                        # save the stats of the old subset and get the new subsetdir:
-                        subsetdir, count_set = self.save_subset(
-                            req, stats, subset, subsetdir, count_set)
-                        
-                        self.logger.info('    | subset ( %d records) harvested in %s (if not failed).'% (
-                            stats['count'], subsetdir
-                        ))
-                        
-                        # add all subset stats to total stats and reset the temporal subset stats:
-                        for key in ['tcount', 'ecount', 'count', 'dcount']:
-                            stats['tot'+key] += stats[key]
-                            stats[key] = 0
-                        
-                        # start with a new time:
-                        stats['timestart'] = time.time()
-                else:
-                    stats['ecount'] += 1
-                    self.logger.warning('    [WARNING] No metadata available for %s' % id)
-                    
-                
-        except TypeError:
-            self.logger.error('    [ERROR] %s' % e)
-            stats['ecount']+=1        
-            return(False, id, subsetdir, count_set)
-        except Exception as e:
-            self.logger.error('    [ERROR] %s' % e)
-            stats['ecount']+=1
-            return(False, id, subsetdir, count_set)
-        else:
-            return(True, id, subsetdir, count_set)
-    """
-
-        
     def save_subset(self, req, stats, subset, subsetdir, count_set):
         ## save_subset(self, req, stats, subset, subsetdir, count_set) - method
         # Save stats per subset and add subset item to the convert_list via OUT.print_convert_list()
@@ -1123,9 +787,14 @@ class CONVERTER(object):
         # UTC format =  YYYY-MM-DDThh:mm:ssZ
         utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
        
+        utc_day = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
         utc_year = re.compile(r'\d{4}') # year (4-digit number)
         if utc.search(old_date):
             new_date = utc.search(old_date).group()
+            return new_date
+        elif utc_day.search(old_date):
+            day = utc_day.search(old_date).group()
+            new_date = day + 'T11:59:59Z'
             return new_date
         elif utc_year.search(old_date):
             year = utc_year.search(old_date).group()
@@ -1206,7 +875,8 @@ class CONVERTER(object):
         for line in disctab :
             disc='%s' % line[3]
             r=lvs.ratio(invalue,disc)
-            ##print '--- %s | %s | %f | %f' % (invalue,disc,r,maxr)
+            ##if r > 0.7 :
+            ##  print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
                 maxdisc=disc
                 maxr=r
@@ -1221,20 +891,50 @@ class CONVERTER(object):
             self.logger.debug('   | Similarity ratio %f is < 0.7 compare value >>%s<< and discipline >>%s<<' % (maxr,invalue,maxdisc))
         return invalue
         
-    def truncate(self,dataset,facetName,old_value,size):
+    def cut(self,invalue,delimiter,nfield):
         """
-        truncates old value with new value for a given facet
+        splits invalue according to delimiter and cuts out field number nfield.
+        If delimiter is not in invalue truncate from character nfield.
+
+        Copyright (C) 2015 Heinrich Widmann.
+        Licensed under AGPLv3.
         """
-        for facet in dataset:
-            if facet == facetName and dataset[facet] == old_value:
-                dataset[facet] = old_value[:size]
-                return dataset
-            if facet == 'extras':
-                for extra in dataset[facet]:
-                    if extra['key'] == facetName and extra['value'] == old_value:
-                        extra['value'] = old_value[:size]
-                        return dataset
-        return dataset
+
+        if delimiter in invalue:
+           return invalue.split('-')[nfield-1]
+        else:
+           return invalue[:nfield]
+        
+        return invalue
+
+    def concat(self,str1,str2):
+        """
+        concatenete given strings
+
+        Copyright (C) 2015 Heinrich Widmann.
+        Licensed under AGPLv3.
+        """
+
+        return str1+str2
+
+    def utc2seconds(self,dt):
+        """
+        converts datetime to seconds since year 0
+
+        Copyright (C) 2015 Heinrich Widmann.
+        Licensed under AGPLv3.
+        """
+        year1epochsec=62135600400
+        utc=self.date2UTC(dt)
+        try:
+           utctime = datetime.datetime.strptime(utc, "%Y-%m-%dT%H:%M:%SZ")
+           ##utctime = format_datetime(utc, "%Y-%m-%dT%H:%M:%S", locale='en')
+           sec=int(time.mktime(utctime.timetuple()))+year1epochsec
+        except Exception, e:
+           self.logger.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (e,utc))
+           return False
+
+        return sec
 
     def remove_duplicates(self,dataset,facetName,valuearrsep,entrysep):
         """
@@ -1297,6 +997,323 @@ class CONVERTER(object):
                             extra['value'] = new_date
                             return dataset
         return dataset
+
+    def normalize(self,x):
+        """normalize the path expression; outside jsonpath to allow testing"""
+        subx = []
+    
+        # replace index/filter expressions with placeholders
+        # Python anonymous functions (lambdas) are cryptic, hard to debug
+        def f1(m):
+            n = len(subx)   # before append
+            g1 = m.group(1)
+            subx.append(g1)
+            ret = "[#%d]" % n
+    #       print "f1:", g1, ret
+            return ret
+        x = re.sub(r"[\['](\??\(.*?\))[\]']", f1, x)
+    
+        # added the negative lookbehind -krhodes
+        x = re.sub(r"'?(?<!@)\.'?|\['?", ";", x)
+    
+        x = re.sub(r";;;|;;", ";..;", x)
+    
+        x = re.sub(r";$|'?\]|'$", "", x)
+    
+        # put expressions back
+        def f2(m):
+            g1 = m.group(1)
+    #       print "f2:", g1
+            return subx[int(g1)]
+    
+        x = re.sub(r"#([0-9]+)", f2, x)
+    
+        return x
+    
+
+
+
+    def jsonpath(self,obj, expr, result_type='VALUE', debug=0, use_eval=True):
+       """traverse JSON object using jsonpath expr, returning values or paths"""
+
+       def s(x,y):
+           """concatenate path elements"""
+           return str(x) + ';' + str(y)
+   
+       def isint(x):
+           """check if argument represents a decimal integer"""
+           return x.isdigit()
+   
+       def as_path(path):
+           """convert internal path representation to
+              "full bracket notation" for PATH output"""
+           p = '$'
+           for piece in path.split(';')[1:]:
+               # make a guess on how to index
+               # XXX need to apply \ quoting on '!!
+               if isint(piece):
+                   p += "[%s]" % piece
+               else:
+                   p += "['%s']" % piece
+           return p
+   
+       def store(path, object):
+           if result_type == 'VALUE':
+               result.append(object)
+           elif result_type == 'IPATH': # Index format path (Python ext)
+               # return list of list of indices -- can be used w/o "eval" or split
+               result.append(path.split(';')[1:])
+           else: # PATH
+               result.append(as_path(path))
+           return path
+   
+       def trace(expr, obj, path):
+            if debug: print "trace", expr, "/", path
+            if expr:
+                x = expr.split(';')
+                loc = x[0]
+                x = ';'.join(x[1:])
+                if debug: print "\t", loc, type(obj)
+                if loc == "*":
+                    def f03(key, loc, expr, obj, path):
+                        if debug > 1: print "\tf03", key, loc, expr, path
+                        trace(s(key, expr), obj, path)
+                    walk(loc, x, obj, path, f03)
+                elif loc == "..":
+                    trace(x, obj, path)
+                    def f04(key, loc, expr, obj, path):
+                        if debug > 1: print "\tf04", key, loc, expr, path
+                        if isinstance(obj, dict):
+                            if key in obj:
+                                trace(s('..', expr), obj[key], s(path, key))
+                        else:
+                            if key < len(obj):
+                                trace(s('..', expr), obj[key], s(path, key))
+                    walk(loc, x, obj, path, f04)
+                elif loc == "!":
+                    # Perl jsonpath extension: return keys
+                    def f06(key, loc, expr, obj, path):
+                        if isinstance(obj, dict):
+                            trace(expr, key, path)
+                    walk(loc, x, obj, path, f06)
+                elif isinstance(obj, dict) and loc in obj:
+                    trace(x, obj[loc], s(path, loc))
+                elif isinstance(obj, list) and isint(loc):
+                    iloc = int(loc)
+                    if len(obj) >= iloc:
+                        trace(x, obj[iloc], s(path, loc))
+                else:
+                    # [(index_expression)]
+                    if loc.startswith("(") and loc.endswith(")"):
+                        if debug > 1: print "index", loc
+                        e = evalx(loc, obj)
+                        trace(s(e,x), obj, path)
+                        return
+    
+                    # ?(filter_expression)
+                    if loc.startswith("?(") and loc.endswith(")"):
+                        if debug > 1: print "filter", loc
+                        def f05(key, loc, expr, obj, path):
+                            if debug > 1: print "f05", key, loc, expr, path
+                            if isinstance(obj, dict):
+                                eval_result = evalx(loc, obj[key])
+                            else:
+                                eval_result = evalx(loc, obj[int(key)])
+                            if eval_result:
+                                trace(s(key, expr), obj, path)
+    
+                        loc = loc[2:-1]
+                        walk(loc, x, obj, path, f05)
+                        return
+    
+                    m = re.match(r'(-?[0-9]*):(-?[0-9]*):?(-?[0-9]*)$', loc)
+                    if m:
+                        if isinstance(obj, (dict, list)):
+                            def max(x,y):
+                                if x > y:
+                                    return x
+                                return y
+    
+                            def min(x,y):
+                                if x < y:
+                                    return x
+                                return y
+    
+                            objlen = len(obj)
+                            s0 = m.group(1)
+                            s1 = m.group(2)
+                            s2 = m.group(3)
+    
+                            # XXX int("badstr") raises exception
+                            start = int(s0) if s0 else 0
+                            end = int(s1) if s1 else objlen
+                            step = int(s2) if s2 else 1
+    
+                            if start < 0:
+                                start = max(0, start+objlen)
+                            else:
+                                start = min(objlen, start)
+                            if end < 0:
+                                end = max(0, end+objlen)
+                            else:
+                                end = min(objlen, end)
+    
+                            for i in xrange(start, end, step):
+                                trace(s(i, x), obj, path)
+                        return
+    
+                    # after (expr) & ?(expr)
+                    if loc.find(",") >= 0:
+                        # [index,index....]
+                        for piece in re.split(r"'?,'?", loc):
+                            if debug > 1: print "piece", piece
+                            trace(s(piece, x), obj, path)
+            else:
+                store(path, obj)
+    
+       def walk(loc, expr, obj, path, funct):
+            if isinstance(obj, list):
+                for i in xrange(0, len(obj)):
+                    funct(i, loc, expr, obj, path)
+            elif isinstance(obj, dict):
+                for key in obj:
+                    funct(key, loc, expr, obj, path)
+    
+       def evalx(loc, obj):
+            """eval expression"""
+    
+            if debug: print "evalx", loc
+    
+            # a nod to JavaScript. doesn't work for @.name.name.length
+            # Write len(@.name.name) instead!!!
+            loc = loc.replace("@.length", "len(__obj)")
+    
+            loc = loc.replace("&&", " and ").replace("||", " or ")
+    
+            # replace !@.name with 'name' not in obj
+            # XXX handle !@.name.name.name....
+            def notvar(m):
+                return "'%s' not in __obj" % m.group(1)
+            loc = re.sub("!@\.([a-zA-Z@_]+)", notvar, loc)
+    
+            # replace @.name.... with __obj['name']....
+            # handle @.name[.name...].length
+            def varmatch(m):
+                def brackets(elts):
+                    ret = "__obj"
+                    for e in elts:
+                        if isint(e):
+                            ret += "[%s]" % e # ain't necessarily so
+                        else:
+                            ret += "['%s']" % e # XXX beware quotes!!!!
+                    return ret
+                g1 = m.group(1)
+                elts = g1.split('.')
+                if elts[-1] == "length":
+                    return "len(%s)" % brackets(elts[1:-1])
+                return brackets(elts[1:])
+    
+            loc = re.sub(r'(?<!\\)(@\.[a-zA-Z@_.]+)', varmatch, loc)
+    
+            # removed = -> == translation
+            # causes problems if a string contains =
+    
+            # replace @  w/ "__obj", but \@ means a literal @
+            loc = re.sub(r'(?<!\\)@', "__obj", loc).replace(r'\@', '@')
+            if not use_eval:
+                if debug: print "eval disabled"
+                raise Exception("eval disabled")
+            if debug: print "eval", loc
+            try:
+                # eval w/ caller globals, w/ local "__obj"!
+                v = eval(loc, caller_globals, {'__obj': obj})
+            except Exception, e:
+                if debug: print e
+                return False
+    
+            if debug: print "->", v
+            return v
+    
+       # body of jsonpath()
+
+       # Get caller globals so eval can pick up user functions!!!
+       caller_globals = sys._getframe(1).f_globals
+       result = []
+       if expr and obj:
+           cleaned_expr = self.normalize(expr)
+           if cleaned_expr.startswith("$;"):
+               cleaned_expr = cleaned_expr[2:]
+    
+           # XXX wrap this in a try??
+           trace(cleaned_expr, obj, '$')
+
+           ##HEW-T print 'result %s' % result    
+           if len(result) > 0:
+               return result
+       return False
+    
+
+    def jsonmdmapper(self,dataset,jrules):
+        """
+        changes JSON dataset field values according to configuration
+        """  
+        format = 'VALUE'
+        newds=dict()
+        newds['extras']=[]
+      
+        for rule in jrules:
+           ##HEW-T print 'rule %s' % rule.strip('\n')
+           if rule.startswith('#'):
+             continue
+           field=rule.strip('\n').split(' ')[0]
+           jpath=rule.strip('\n').split(' ')[1]
+
+           if not jpath.startswith('$') :
+              value=jpath
+           else:
+              try: 
+                result=self.jsonpath(dataset, jpath, format)      
+                if isinstance(result, (list, tuple)) and (len(result)>0):
+                     if (len(result)==1):
+                        value=self.jsonpath(dataset, jpath, format)[0]
+                     else:
+                        value=self.jsonpath(dataset, jpath, format)
+                else:
+                     continue
+              except:
+                log.info('    | [ERROR] processing rule %s : %s : %s' % (field,jpath,value))
+                continue
+
+           if (field.split('.')[0] == 'extras'): # append extras field
+              newds['extras'].append({"key": field.split('.')[1], "value": value})
+           else: # default field
+              newds[field]=value
+
+###        else:
+###                   continue
+
+###
+###
+###
+#####                   print 'extr1 %s' % field.split('.')[0]
+###                   if (field.split('.')[0] == 'extras'):
+###                     if (len(result)==1):
+###                        newds['extras'].append({"key": field.split('.')[1], "value": self.jsonpath(dataset, jpath, format)[0]})
+###                     else:
+###                        newds['extras'].append({"key": field.split('.')[1], "value": self.jsonpath(dataset, jpath, format)})                        
+###                   else:
+###                     if (len(result)==1):
+###                        newds[field]=self.jsonpath(dataset, jpath, format)[0]
+###                     else:
+###                        newds[field]=self.jsonpath(dataset, jpath, format)
+###                else:
+###                   continue
+###                   ##print ' | %10s | %10s | %10s | \n' % (field,jpath,newds[field])
+###              except:
+###                log.info('    | [ERROR] processing rule %s : %s : %s' % (field,jpath,value))
+###                continue        
+###        ##HEW-T print 'newds %s' % newds
+        return newds
       
     def postprocess(self,dataset,rules):
         """
@@ -1304,6 +1321,7 @@ class CONVERTER(object):
         """  
      
         for rule in rules:
+          try: 
             # rules can be checked for correctness
             assert(rule.count(',,') == 5),"a double comma should be used to separate items in rule"
             
@@ -1322,8 +1340,8 @@ class CONVERTER(object):
             ## call action
             if action == "replace":
                 dataset = self.replace(setName,dataset,facetName,old_value,new_value)
-            elif action == "truncate":
-                dataset = self.truncate(dataset,facetName,old_value,new_value)
+##            elif action == "truncate":
+##                dataset = self.truncate(dataset,facetName,old_value,new_value)
             elif action == "changeDateFormat":
                 dataset = self.changeDateFormat(dataset,facetName,old_value,new_value)
             elif action == 'remove_duplicates':
@@ -1334,6 +1352,9 @@ class CONVERTER(object):
                 pass
             else:
                 pass
+          except:
+            log.error('    | [ERROR] processing rule %s' % rule)
+            continue
 
         return dataset
     
@@ -1346,7 +1367,7 @@ class CONVERTER(object):
         # -----------
         # 1. (string)   community - B2FIND community of the files
         # 2. (string)   mdprefix - Metadata prefix which was used by HARVESTER class for harvesting these files
-        # 3. (string)   path - path to subset directory without (!) 'xml' subdirectory
+        # 3. (string)   path - path to directory of harvested records (without 'xml' rsp. 'hjson' subdirectory)
         #
         # Return Values:
         # --------------
@@ -1359,33 +1380,111 @@ class CONVERTER(object):
             'time':0
         }
         
-        # check paths
-        if not os.path.exists(path):
-            self.logger.error('[ERROR] The directory "%s" does not exist! No files for converting are found!\n(Maybe your convert list has old items?)' % (path))
-            return results
-        elif not os.path.exists(path + '/xml') or not os.listdir(path + '/xml'):
-            self.logger.error('[ERROR] The directory "%s/xml" does not exist or no xml files for converting are found!\n(Maybe your convert list has old items?)' % (path))
-            return results
-    
-        # check XPATH mapfile
-        mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
-        if not os.path.isfile(mapfile):
-           mapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
-           if not os.path.isfile(mapfile):
-              self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
-              return results
+        # check mdprefix and in paths
+        if ( mdprefix == 'json' ): # convert harvested json records using jsonpath rules
+          self.logger.info('Run JSON2JSON converter')
+          # check JPATH mapfile
+          jmapfile='%s/%s/mapfiles/%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
+          if not os.path.isfile(jmapfile):
+              jmapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
+              if not os.path.isfile(jmapfile):
+                self.logger.error('[ERROR] JSON2JSON Mapfile %s does not exist !' % jmapfile)
+                return results
+          # read map file 
+          self.logger.info('  with json mapfile %s' % jmapfile)
+          f = codecs.open(jmapfile, "r", "utf-8")
+          jrules = f.readlines() # without the header
+          jrules = filter(lambda x:len(x) != 0,jrules) # removes empty lines
 
-        # run the JAVA XPATH xml2json converter
-        proc = subprocess.Popen(
-            ["cd '%s'; java -cp lib/%s -jar %s inputdir=%s/xml outputdir=%s mapfile=%s"% (
-                os.getcwd()+'/'+self.root, self.cp,
-                self.program,
-                path, path, mapfile
-            )], stdout=subprocess.PIPE, shell=True)
-        (out, err) = proc.communicate()
-        # check output and print it
-        self.logger.info(out)
-        if err: self.logger.error('[ERROR] ' + err)
+
+          # make directory for mapped json's
+          if (not os.path.isdir(path+'/json')):
+             os.makedirs(path+'/json')
+
+          # loop over all .json files in path/hjson (harvested json records):
+          results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
+          files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson'))
+          results['tcount'] = len(files)
+          fcount = 1
+          err=None
+          for filename in files:
+              hjsondata = dict()
+              jsondata = dict()
+        
+              if ( os.path.getsize(path+'/hjson/'+filename) > 0 ):
+                with open(path+'/hjson/'+filename, 'r') as f:
+                   try:
+                        hjsondata=json.loads(f.read())
+                   except:
+                        log.error('    | [ERROR] Cannot load json file %s' % path+'/hjson/'+filename)
+                        results['ecount'] += 1
+                        continue
+                   try:
+                       # Run json2json converter
+                       self.logger.info('%s     INFO J2J FileProcessor - Processing: %s/hjson/%s' % (time.strftime("%H:%M:%S"),path,filename))
+                       jsondata=self.jsonmdmapper(hjsondata,jrules)
+                   except:
+                       log.error('    | [ERROR] during json 2 json processing')
+                       results['ecount'] += 1
+                       exit()
+                       continue
+
+                   with io.open(path+'/json/'+filename, 'w') as json_file:
+		       log.debug('   | [INFO] decode json data')
+                       data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                       try:
+                          log.debug('   | [INFO] save json file')
+                          json_file.write(data)
+                       except TypeError, err :
+                          # Decode data to Unicode first
+                          log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
+##                        json_file.write(data.decode('utf8'))
+##                     try:
+##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
+                       except:
+                          log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
+                          err+='Cannot write json file %s' % path+'/json/'+filename
+                          results['ecount'] += 1
+                          continue
+              else:
+                results['ecount'] += 1
+                continue
+
+          out=' JSON2JSON stdout\nsome stuff\nlast line ..'
+          ##HEW-T err=' JSON2JSON stderr'
+          # check output and print it
+          self.logger.info(out)
+          if (err is not None ): self.logger.error('[ERROR] ' + err)
+          ##exit()
+        else: # convert xml records using XPATH rules
+          if not os.path.exists(path):
+              self.logger.error('[ERROR] The directory "%s" does not exist! No files for converting are found!\n(Maybe your convert list has old items?)' % (path))
+              return results
+          elif not os.path.exists(path + '/xml') or not os.listdir(path + '/xml'):
+              self.logger.error('[ERROR] The directory "%s/xml" does not exist or no xml files for converting are found!\n(Maybe your convert list has old items?)' % (path))
+              return results
+      
+          # check XPATH mapfile
+          mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
+          if not os.path.isfile(mapfile):
+             mapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
+             if not os.path.isfile(mapfile):
+                self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+                return results
+
+          # find all .xml files in path/xml
+          results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
+          proc = subprocess.Popen(
+              ["cd '%s'; java -cp lib/%s -jar %s inputdir=%s/xml outputdir=%s mapfile=%s"% (
+                  os.getcwd()+'/'+self.root, self.cp,
+                  self.program,
+                  path, path, mapfile
+              )], stdout=subprocess.PIPE, shell=True)
+          (out, err) = proc.communicate()
+          # check output and print it
+          self.logger.info(out)
+          if err: self.logger.error('[ERROR] ' + err)
+
         
         # check for mapper postproc config file
         rules=None
@@ -1419,21 +1518,30 @@ class CONVERTER(object):
                        self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
                        jsondata=self.postprocess(jsondata,rules)
                 except:
-                   log.error('    | [ERROR] during postprocessing along rules %s' % rules)
+                   log.error('    | [ERROR] during postprocessing')
                    results['ecount'] += 1
                    continue
 
                 # loop over all fields
                 for facet in jsondata:
-                   if facet == 'extras':
+                   if facet == 'url': # generic mapping of Source
+                      if jsondata[facet].startswith('10.1594/PANGEA'):
+                         jsondata[facet] = self.concat('http://dx.doi.org/',jsondata[facet])
+                   elif facet == 'extras':
                       try: ### Semantic mapping of extra keys
                          for extra in jsondata[facet]:
-                            if extra['key'] == 'Language':
-                              # generic mapping of languages
+                            if extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
-                            if extra['key'] == 'Discipline':
-                              # generic mapping of discipline
+                            elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                            elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
+                              extra['value'] = self.cut(extra['value'],'-',1)
+                            elif extra['key'].startswith('TempCoverage') : # generic mapping of TempCoverageBegin
+                              extra['value'] = self.utc2seconds(extra['value'])
+                            ##elif extra['key'] == 'TempCoverageEnd' : # generic mapping of TempCoverageEnd
+                            ##  extra['value'] = self.utc2seconds(extra['value'])
+                            elif extra['key'] == 'PublicationTimestamp' or extra['key'].startswith('Temporal') : # generic mapping of TempCoverageEnd
+                              extra['value'] = self.date2UTC(extra['value'])
                       except:
                           log.error('    | [ERROR] during mapping of %s' % extra['key'])
                           results['ecount'] += 1
@@ -1470,8 +1578,6 @@ class CONVERTER(object):
             [results['count'], results['ecount']] = re.findall(r"\d{1,}", string)
             results['count'] = int(results['count']); results['ecount'] = int(results['ecount'])
         
-        # find all .xml files in path/xml
-        results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
     
         return results
 
@@ -1512,7 +1618,6 @@ class CONVERTER(object):
         if (not os.path.isdir(path+'/b2find')):
              os.makedirs(path+'/b2find')
 
-        print 'ppp %s' %  path+'/b2find'       
         fcount = 1
         for filename in files:
             jsondata = dict()
