@@ -47,7 +47,6 @@ def main():
     # check the version from svn:
     global ManagerVersion
     ManagerVersion = '1.0'
-    print('\nVersion: %s' % ManagerVersion)
 
     # parse command line options and arguments:
     modes=['h','harvest','c','convert','r','reconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
@@ -74,7 +73,6 @@ def main():
     logger.debug('Processing status:\t')
     for key in pstat['status']:
         logger.debug(" %s\t%s" % (key, pstat['status'][key]))
-    logger.info('')
     # check options:
     if ( pstat['status']['u'] == 'tbd'):
     
@@ -134,7 +132,7 @@ def main():
     OUT.HTML_print_begin()
     
     ## START PROCESSING:
-    logger.info("\nStart processing at %s" % now)
+    logger.info("\nStart :\t%s" % now)
     OUT.save_stats('#Start','subset','StartTime',0)
     
     try:
@@ -355,6 +353,10 @@ def process_upload(UP, rlist, options):
             'time':0
         }
         
+        if not (self.CKAN.action('group_show',{"id":community}))['success'] :
+          self.logger.error("[ERROR]: Community (CKAN group) %s must exist!!!" % community)
+          sys.exit()
+
         if not os.path.exists(dir):
             logger.error('[ERROR] The directory "%s" does not exist! No files for uploading are found!\n(Maybe your upload list has old items?)' % (dir))
             
@@ -418,15 +420,19 @@ def process_upload(UP, rlist, options):
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:
-            reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
-            mdaccess = reqpre + '&identifier=' + oai_id
+            if (mdprefix == 'json'):
+               reqpre = source + '/dataset/'
+               mdaccess = reqpre + oai_id
+            else:
+               reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
+               mdaccess = reqpre + '&identifier=' + oai_id
             index1 = mdaccess
 
             # exceptions for some communities:
             if (community == 'clarin' and oai_id.startswith('mi_')):
                 mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
-            elif (community == 'gbif'):
-                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+oai_id
+##HEW-D            elif (community == 'gbif'):
+##HEW-D                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+oai_id
             elif (community == 'sdl'):
                 mdaccess =reqpre+'&identifier=oai::record/'+oai_id
 
@@ -674,7 +680,7 @@ def parse_list_file(process,filename,community='',subset=''):
         logger.critical('[CRITICAL] Can not access job list file %s ' % filename)
         exit()
     else:
-        logger.info('Use "%s" as %s list.' %(filename, process))
+        logger.info('Joblist:\t%s' % filename)
         file = open(filename, 'r')
         lines=file.read().splitlines()
         file.close
@@ -1003,9 +1009,10 @@ def exit_program (OUT, message=''):
     # print results with OUT.HTML_print_end() in a .html file:
     OUT.HTML_print_end()
 
-    try:
+    if (OUT.options.verbose != False):
+      try:
         os.system('firefox '+OUT.jobdir+'/overview.html')
-    except Exception, err:
+      except Exception, err:
         print("[ERROR] %s : Can not open result html in browser" % err)
         os.system('cat '+OUT.jobdir+'/overview.html')
 

@@ -862,6 +862,25 @@ class CONVERTER(object):
             return newvalue
         return invalue
  
+    def map_geonames(self,invalue):
+        """
+        Map geonames to coordinates
+ 
+        Copyright (C) 2014 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        from geopy.geocoders import Nominatim
+        geolocator = Nominatim()
+        try:
+          location = geolocator.geocode(invalue.split(';')[0])
+          if not location :
+            return (None,None)
+        except Exception, e:
+           self.logger.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
+           return (None,None)
+        else:
+          return (location.latitude, location.longitude)
+
     def map_discipl(self,invalue,disctab):
         """
         Convert disciplines along B2FIND disciplinary list
@@ -1502,6 +1521,8 @@ class CONVERTER(object):
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
         fcount = 1
         for filename in files:
+              self.logger.info('%s     INFO Post - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
+
               jsondata = dict()
         
               if ( os.path.getsize(path+'/json/'+filename) > 0 ):
@@ -1515,7 +1536,7 @@ class CONVERTER(object):
                 try:
                    ## md postprocessor
                    if (rules):
-                       self.logger.info('%s     INFO PostProcessor - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
+                       self.logger.info('  |---     Processing acording rules ...')
                        jsondata=self.postprocess(jsondata,rules)
                 except:
                    log.error('    | [ERROR] during postprocessing')
@@ -1525,11 +1546,17 @@ class CONVERTER(object):
                 # loop over all fields
                 for facet in jsondata:
                    if facet == 'url': # generic mapping of Source
-                      if jsondata[facet].startswith('10.1594/PANGEA'):
+                      if jsondata[facet].startswith('10.1594'):
                          jsondata[facet] = self.concat('http://dx.doi.org/',jsondata[facet])
                    elif facet == 'extras':
                       try: ### Semantic mapping of extra keys
+                         lat=None ; lon=None
                          for extra in jsondata[facet]:
+##HEW-D                            if extra['key'] == 'GeograhicDescription':
+##HEW-D                               lat,lon=self.map_geonames(extra['value'])
+##HEW-D                               if lat and lon :
+##HEW-D                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (lon,lat,lon,lat,lon,lat,lon,lat,lon,lat)
+##HEW-D                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
                             if extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
@@ -2471,7 +2498,7 @@ class OUTPUT (object):
         for proc in pstat['status']:
             if (pstat['status'][proc] == 'tbd' and proc != 'a') :
                 reshtml.write('\t\t\t<li>%s</li>\n' %  (pstat['text'][proc]))
-                self.logger.info('  %d. %s' % (i,pstat['text'][proc]))
+                self.logger.debug('  %d. %s' % (i,pstat['text'][proc]))
                 i+=1
                 
         reshtml.write('\t\t</ol>\n')

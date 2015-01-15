@@ -140,6 +140,6 @@ def main():
       noffs+=100
       data = GBIF.action('package_list',noffs)
 
- 
+
 if __name__ == "__main__":
     main()
