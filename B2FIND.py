@@ -920,9 +920,7 @@ class CONVERTER(object):
         """
 
         if delimiter in invalue:
-           return invalue.split('-')[nfield-1]
-        else:
-           return invalue[:nfield]
+           return invalue.split(delimiter)[nfield-1]
         
         return invalue
 
