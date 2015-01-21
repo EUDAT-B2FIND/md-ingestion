@@ -395,15 +395,15 @@ class HARVESTER(object):
         
         # Get all files in the current subset directories and put those in the dictionary deleted_metadata
         deleted_metadata = dict()
-        for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-            for f in glob.glob(s+'/xml/*.xml'):
-                # save the uid as key and the subset as value:
-                deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
    
         self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
 
         try:
           if req["lverb"] == 'JSONAPI':
+            for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
+              for f in glob.glob(s+'/hjson/*.json'):
+                # save the uid as key and the subset as value:
+                deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             noffs=0
             data = GBIF.JSONAPI('package_list',noffs)
             while(not data['endOfRecords']): ## and nj<10):
@@ -481,6 +481,10 @@ class HARVESTER(object):
               data = GBIF.JSONAPI('package_list',noffs)
                 
           else:  ## OAI-PMH harvesting of XML records using Python Sickle module
+            for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
+              for f in glob.glob(s+'/xml/*.xml'):
+                # save the uid as key and the subset as value:
+                deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
             for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
 
@@ -573,11 +577,10 @@ class HARVESTER(object):
 
             # check for outdated harvested xml files and add to deleted_metadata, if not already listed
             now = time.time()
-            print 'xxx %s' % '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
                print 's %s' % s+'/xml/*.xml'
                for f in glob.glob(s+'/xml/*.xml'):
-                 print 'date %s of file %s' % (os.stat(f).st_mtime,f)
+                 ##HEW-T print 'date %s of file %s' % (os.stat(f).st_mtime,f)
                  if os.stat(f).st_mtime < now - 7 * 86400:
                      if os.path.isfile(f):
                         if (deleted_metadata[os.path.splitext(os.path.basename(f))[0]]):
@@ -601,7 +604,6 @@ class HARVESTER(object):
                         f = open(delete_file, 'r')
                         file_content = f.readlines()
                         f.close()
-                        found = False
                     except IOError as (errno, strerror):
                         self.logger.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
                         f.close
@@ -637,6 +639,7 @@ class HARVESTER(object):
                             stats['totecount'] +=1
                 
                     # write fline in delete file:
+                    found=False
                     for line in file_content:
                          if fline in line:
                            print "Found it"
@@ -1814,9 +1817,9 @@ class UPLOADER (object):
         if (not('title' in jsondata) or jsondata['title'] == ''):
             errmsg = "'title': The title is missing"
             status = 0  # set status
-        elif ('url' in jsondata and not self.check_url(jsondata['url'])):
-            errmsg = "'url': The source url is broken"
-            if(status > 1): status = 1  # set status
+        ##HEW-D elif ('url' in jsondata and not self.check_url(jsondata['url'])):
+        ##HEW-D     errmsg = "'url': The source url is broken"
+        ##HEW-D     if(status > 1): status = 1  # set status
             
         if errmsg: self.logger.warning("        [WARNING] field %s" % errmsg)
         
