@@ -476,15 +476,16 @@ def process_upload(UP, rlist, options):
                 pid = credentials.prefix + "/eudat-jmd_" + ds_id
                 checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
                 ManagerVersion2 = ec.getValueFromHandle(pid,"JMDVERSION")
+                B2findHost = ec.getValueFromHandle(pid,"B2FINDHOST")
 
                 if (checksum2 == None):
                     logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
                     epicstatus="new"
-                elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ):
-                    logger.debug("        |-> ManagerVersion and checksum of pid %s not changed" % (pid))
+                elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ) and ( B2findHost == iphost ) :
+                    logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
                     epicstatus="unchanged"
                 else:
-                    logger.debug("        |-> ManagerVersion or checksum of pid %s changed" % (pid))
+                    logger.debug("        |-> checksum, ManagerVersion or B2FIND host of pid %s changed" % (pid))
                     epicstatus="changed"
                 dsstatus=epicstatus
 
@@ -994,6 +995,7 @@ def pstat_init (p,modes,mode,source,iphost):
     pstat['text']['u']='Upload JSON records as datasets into B2FIND %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
+    pstat['short']['h-u']='TotalIngestion'
     pstat['short']['h']='Harvesting'
     pstat['short']['c']='Converting'
     pstat['short']['r']='Reconverting'
