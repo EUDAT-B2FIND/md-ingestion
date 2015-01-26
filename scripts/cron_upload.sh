@@ -22,7 +22,7 @@ case $lhost in
    epiccheck='--epic_check credentials_11098'
    ;;
   eudatmd1.dkrz.de) 
-   rhost=b2find.eudat.eu:8080
+   ##rhost=b2find.eudat.eu:8080
    rhost=eudatmd1.dkrz.de:8080
    epiccheck='--epic_check credentials_11098'
    ;;

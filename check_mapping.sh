@@ -70,7 +70,7 @@ do
   echo -e " |- Total # of json files     \t$(ls oaidata/${comm}-${mdformat}/${oaiset}/json/* | wc -l)"
   echo -e " |- Total # of node \"$node\" \t$(grep -c $node oaidata/${comm}-${mdformat}/${oaiset}/xml/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
   echo -e " | #rec | with value .."
-  grep $node  oaidata/${comm}-${mdformat}/${oaiset}/xml/*.xml | cut -d'>' -f2 |cut -d'<' -f1 | sort | uniq -c | sort -rn | head -10
+  grep $node  oaidata/${comm}-${mdformat}/${oaiset}/xml/*.xml | cut -d'>' -f2 |cut -d'<' -f1 | sort | uniq -c | sort -rn ## | head -10
 ##  echo -e " |- Files with node \"$node\" \t$(grep $node oaidata/${comm}-${mdformat}/${oaiset}/xml/*)"
   echo -e " |- Total # of mapped field  ${field} \t$(grep -c "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
   echo -e " | #rec | mapped on .."

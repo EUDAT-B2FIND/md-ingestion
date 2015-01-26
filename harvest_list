@@ -120,7 +120,7 @@ datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  ANDS.CENTRE22
 ##%%% PANdata, harvested from datacite OAI, subset BL.STFC (only ISIS rcords)
 pandata https://icat-10.pandata.stfc.ac.uk/oai/provider  ListRecords oai_qdc  
 ##%%% NARCIS
-narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc dataset
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc publication
 ##%%% TheEuropeanLIbrary
 ##     - research related records --> B2FIND !!!

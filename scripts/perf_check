@@ -62,8 +62,8 @@ do
   done < "$jobfile"
 
   echo -e " |- $nfiles \t| $jobfile \t| $status\t|$pid\t| $(grep 'Start proc' ${outfile} | cut -d' ' -f4,5) | $(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1) | ${comm_set}\t"
-  echo -e "    |- #Records  | $npfrec     | $(grep -c '| u |' ${outfile})\t| $(grep -c 'Creation of ' ${outfile})\t  | $(grep -c 'Update of unknown record succeed' ${outfile})\t | $(grep -c 'Upload of new record failed' $outfile )\t| $(grep -c 'No upload' $outfile )\t|"
-  echo -e "    |- #Handles - - - - - - - - -\t| $(grep -c 'Create a new handle' ${outfile})  \t | $(grep -c 'Update checksum' $outfile )       \t | \t| $(grep -c 'No action required' $outfile ) \t|"
+  echo -e "    |- #Records  | $npfrec     | $(grep -c '| u |' ${outfile})\t| $(grep -c 'Creation of ' ${outfile})\t  | $(grep -c 'Update of ' ${outfile})\t | $(grep -c 'Upload of new record failed' $outfile )\t| $(grep -c 'No upload' $outfile )\t|"
+  echo -e "    |- #Handles - - - - - - - - -\t| $(grep -c 'Create a new handle' ${outfile})  \t| $(grep -c 'Update checksum' $outfile )       \t| \t| $(grep -c 'No action required' $outfile ) \t|"
  
 ##  echo -e "   |- Total provided records\t $npfrec \n"
   ((ntotrec = ntotrec + npfrec ))

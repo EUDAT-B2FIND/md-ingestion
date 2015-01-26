@@ -353,7 +353,7 @@ def process_upload(UP, rlist, options):
             'time':0
         }
         
-        if not (self.CKAN.action('group_show',{"id":community}))['success'] :
+        if not (CKAN.action('group_show',{"id":community}))['success'] :
           self.logger.error("[ERROR]: Community (CKAN group) %s must exist!!!" % community)
           sys.exit()
 
