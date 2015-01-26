@@ -658,7 +658,7 @@ class HARVESTER(object):
                 stats['tot'+key] += stats[key]
             
             self.logger.info(
-                '## Harvesting finished:\n #  | Provided | # Harvested | # Failed |\n # | %d | %d | %d | %d |' 
+                '\n## Harvesting finished:\n # | Provided | Harvested | Failed | Deleted | \n # | %8d | %9d | %6d | %7d |' 
                 % (
                     stats['tottcount'],
                     stats['totcount'],
@@ -1341,13 +1341,13 @@ class CONVERTER(object):
         """
         changes dataset field values according to configuration
         """  
-     
+    
         for rule in rules:
           try: 
             # rules can be checked for correctness
             assert(rule.count(',,') == 5),"a double comma should be used to separate items in rule"
             
-            rule = rule.rstrip('\n').split(',,') # splits  each line of config file 
+            rule = rule.rstrip('\n').split(',,') # splits  each line of config file
             groupName = rule[0]
             setName = rule[1]
             facetName = rule[2]
@@ -1427,9 +1427,10 @@ class CONVERTER(object):
           results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
           files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson'))
           results['tcount'] = len(files)
-          fcount = 1
+          fcount = 0
           err=None
           for filename in files:
+              fcount+=1
               hjsondata = dict()
               jsondata = dict()
         
@@ -1522,9 +1523,11 @@ class CONVERTER(object):
 
         # loop over all .json files in dir/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
-        fcount = 1
+        fcount = 0
+        self.logger.info('%s     INFO  B2FIND - Processing files in %s/json' % (time.strftime("%H:%M:%S"),path))
         for filename in files:
-              self.logger.info('%s     INFO Post - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
+              fcount+=1
+              self.logger.info('%s     INFO  Post - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
 
               jsondata = dict()
         
@@ -1539,7 +1542,7 @@ class CONVERTER(object):
                 try:
                    ## md postprocessor
                    if (rules):
-                       self.logger.info('  |---     Processing acording rules ...')
+                       self.logger.info('  |---     Processing acording rules') #HEW-T  %s' % rules)
                        jsondata=self.postprocess(jsondata,rules)
                 except:
                    log.error('    | [ERROR] during postprocessing')
@@ -1600,6 +1603,9 @@ class CONVERTER(object):
               else:
                 results['ecount'] += 1
                 continue
+
+        self.logger.info('%s     INFO  B2FIND - %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+
 
         # search in output for result statistics
         last_line = out.split('\n')[-2]
@@ -2561,7 +2567,8 @@ class OUTPUT (object):
         for mode in all_modes:
             reshtml.write(
                 '<tr %s><th>%s</th><td>%d</td><td>%d</td><td>%d</td><td>%7.3f</td><td>%7.3f</td></tr>' % (
-                    'class="table-disabled"' if (pstat['status'][mode] == 'no') else '',
+                    'class="table-disabled"' if ('no' in pstat['status'].values()) else '',
+##                    'class="table-disabled"' if (pstat['status'][mode[0]] == 'no') else '',
                     pstat['short'][mode],
                     self.get_stats('#total','#total',mode[0],'tcount'),
                     self.get_stats('#total','#total',mode[0],'count'),

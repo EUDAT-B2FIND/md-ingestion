@@ -49,7 +49,7 @@ def options_parser(modes):
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
     p.add_option('--mode', '-m', metavar=' ' + " | ".join(modes), help='\nThis can be used to do a partial workflow. Default is "x-p" which means deletion of all found objects, i.e. (x)ml files, (j) json files, (c)kan datasets (p)id\'s in EPIC handle server.', default='x-p')
     p.add_option('--identifier', '-i', help="identifier for which objects are checked and deleted. If not given identifiers list must be given by -l option", default=None, metavar='STRING')
-    p.add_option('--community', '-c', help="community for which objects are checked and deleted. If no value given list of communities from -l option is taken or 'harvest_list'", default=None, metavar='STRING')
+    p.add_option('--community', '-c', help="community for which objects are checked and deleted. If no value given identifiers from -i rsp. -l option is taken.", default=None, metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
     p.add_option('--epic_check', 
          help="check and generate handles of CKAN datasets in handle server EPIC and with credentials as specified in given credstore file",
@@ -62,7 +62,7 @@ def options_parser(modes):
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",
         "Use these options if you want to ingest from a list in a file.")
-    group_multi.add_option('--list', '-l', help="list of identifiers (-i mode) or communities sources (-c mode, default is ./harvest_list)", default='harvest_list',metavar='FILE')
+    group_multi.add_option('--list', '-l', help="list of identifiers (-i mode) or communities sources (-c mode, default is ./harvest_list)", default=None,metavar='FILE')
     group_multi.add_option('--parallel', 
         help="[DEPRECATED]",#performs list of ingest requests in parallel (makes only sense with option [--list|-l] )",
         default='serial')     
@@ -205,7 +205,13 @@ def main():
         CKAN = CKAN_CLIENT(options.host,options.auth)
         UP = UPLOADER(CKAN, OUT)
 
-    if (options.community):
+    if (options.identifier):
+             list = [ options.identifier ]
+    elif (options.list):
+             f = open(options.list,'r')
+             list = f.readlines()
+             f.close()
+    elif (options.community):
              UP.get_packages(options.community)
              list = UP.package_list.keys()
              ##clist = UP.get_packages(options.community).keys()
@@ -214,18 +220,15 @@ def main():
              cf.write("\n".join(list))
              cf.close()
              ##print UP.package_list.keys()
-
-    elif (options.identifier):
-             list = [ options.identifier ]
-    elif (options.list):
-             f = open(options.list,'r')
-             list = f.readlines()
-             f.close()
     else:
-            print 'ERROR : one of the otptions -c COMMUBITY, -i IDENTIFIER or -l LIST must be given'
+            print 'ERROR : one of the otptions -c COMMUNITY, -i IDENTIFIER or -l LIST must be given'
             sys.exit()
+
+    ##HEW-Tprint '%s list ' % list
+    ##HEW-Tsys.exit()
+
     
-    print "\n=== Start %s processing ===\n\tID LIST:\t%s\n\t%s MODE:\t%s" % (mainmode,options.list, mainmode.upper(), options.mode)
+    print "\n=== Start %s processing ===\n\tID LIST:\t%s\n\t%s MODE:\t%s" % (mainmode,list, mainmode.upper(), options.mode)
 
 
 
@@ -240,6 +243,7 @@ def main():
        dir = os.path.dirname(entry).rstrip()
        id, ext = os.path.splitext(os.path.basename(entry.rstrip()))
        id = id.split("_")[-1].lower()
+       id = id.split()[-1]
        id = re.sub(r'^"|"$', '', id)
        actionreq=""
        actiontxt="Actions %s required : " % qmsg

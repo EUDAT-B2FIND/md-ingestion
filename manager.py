@@ -353,7 +353,7 @@ def process_upload(UP, rlist, options):
             'time':0
         }
         
-        if not (self.CKAN.action('group_show',{"id":community}))['success'] :
+        if not (CKAN.action('group_show',{"id":community}))['success'] :
           self.logger.error("[ERROR]: Community (CKAN group) %s must exist!!!" % community)
           sys.exit()
 
@@ -994,6 +994,7 @@ def pstat_init (p,modes,mode,source,iphost):
     pstat['text']['u']='Upload JSON records as datasets into B2FIND %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
+    pstat['short']['h-u']='TotalIngestion'
     pstat['short']['h']='Harvesting'
     pstat['short']['c']='Converting'
     pstat['short']['r']='Reconverting'
