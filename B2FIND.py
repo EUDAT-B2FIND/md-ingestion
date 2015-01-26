@@ -929,6 +929,23 @@ class CONVERTER(object):
         
         return invalue
 
+    def list2dictlist(self,invalue,valuearrsep):
+        """
+        transfer list of strings to list of dict's { "name" : "substr1" }      
+        """
+
+        if len(invalue) == 1 :
+            valarr=invalue[0]['name'].split(valuearrsep)
+            ##valarr=list(OrderedDict.fromkeys(valarr)) ## this eliminates real duplicates
+            valarr=list(set(valarr)) ## this eliminates real duplicates
+            dictlist=[]
+            for entry in valarr:
+               entrydict={ "name": entry }  
+               dictlist.append(entrydict)
+        else:
+            return invalue
+        return dictlist
+
     def concat(self,str1,str2):
         """
         concatenete given strings
@@ -1554,6 +1571,10 @@ class CONVERTER(object):
                    if facet == 'url': # generic mapping of Source
                       if jsondata[facet].startswith('10.1594'):
                          jsondata[facet] = self.concat('http://dx.doi.org/',jsondata[facet])
+                   elif facet == 'tags':
+                         jsondata[facet] = self.list2dictlist(jsondata[facet],"   ")
+                   elif facet == 'title' : ## or facet == 'notes'
+                         jsondata[facet] = jsondata[facet].encode('iso-8859-1','ignore')
                    elif facet == 'extras':
                       try: ### Semantic mapping of extra keys
                          lat=None ; lon=None
