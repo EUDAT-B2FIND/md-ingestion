@@ -481,7 +481,7 @@ def process_upload(UP, rlist, options):
                 if (checksum2 == None):
                     logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
                     epicstatus="new"
-                elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ) and ( B2findHost == iphost ) :
+                elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ) and ( B2findHost == options.iphost ) :
                     logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
                     epicstatus="unchanged"
                 else:
