@@ -1001,12 +1001,14 @@ class CONVERTER(object):
         """
         split string in list of string and transfer to list of dict's { "name" : "substr1" }      
         """
+        na_arr=['not applicable']
         for facet in dataset:
           if facet == facetName and len(dataset[facet]) == 1 :
             valarr=dataset[facet][0]['name'].split(valuearrsep)
             valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
             dicttagslist=[]
             for entry in valarr:
+               if entry in na_arr : continue
                entrydict={ "name": entry }  
                dicttagslist.append(entrydict)
        
@@ -2753,8 +2755,8 @@ class OUTPUT (object):
     def print_convert_list(self,community,source,mdprefix,dir,fromdate):
         if (fromdate == None):
            self.convert_list = './convert_list_total'
-        else:
-           self.convert_list = './convert_list_' + str(fromdate.date())
+        ##HEW-D else:
+        ##HEW-D    self.convert_list = './convert_list_' + fromdate
         new_entry = '%s\t%s\t%s\t%s\t%s\n' % (community,source,os.path.dirname(dir),mdprefix,os.path.basename(dir))
         file = new_entry
 
