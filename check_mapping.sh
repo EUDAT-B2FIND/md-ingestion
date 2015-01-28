@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## ----------- get options and community name -------------
+## ----------- checks mapping of B2FIND records -------------
 
 err_strg=''
 usage() {
@@ -10,8 +10,8 @@ usage() {
     printf "${b}DESCRIPTION ${n}\n\t checks field mapping of B2FIND ...\n" 
     printf "${b}OPTIONS${n}\n"
     printf "\t${b}--help, -h${n}\n\t\tdisplay this built-in help text and exit.\n" 
-    printf "\t${b}--mdformat, -m${n} MDFORMAT${n}  OAI ${u}MDFORMAT${n} (default is oai_dc)\n"
     printf "\t${b}--community, -c COMMUNITY${n} B2FIND ${u}COMMUNITY${n} to check (default is TheEuropeanLibrary).\n"
+    printf "\t${b}--mdformat, -m${n} MDFORMAT${n}  OAI ${u}MDFORMAT${n} (default is oai_dc)\n"
     printf "\t${b}--set, -s OAISET${n} ${u}COMMUNITY${n} to check (default is TheEuropeanLibrary).\n"
     printf "\t${b}--field, -f FIELD${n} B2FIND ${u}FIELD${n}\n\t\t to check (default is DISCIPLINE).\n"
     printf "\t${b}--node, -n NODE${n} XML ${u}NODE${n}\n\t\t to check (default is dc:subject).\n"
@@ -77,9 +77,9 @@ do
   deflist="author title"
   if [[ $deflist =~ (^| )${field}($| ) ]]
   then
-    grep "\"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d':' -f2- | sed 's|[,.]||g' | sort -nr | uniq -c | sort -nr 
+    grep "\"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d':' -f2- | sort -nr | uniq -c | sort -nr 
   else
-    grep -A1 "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | grep value | cut -d':' -f2- | sed 's|[,.]||g' | sort | uniq -c | sort -nr
+    grep -A1 "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | grep value | cut -d':' -f2- | sort | uniq -c | sort -nr
   fi
  ## instead awk '{print $3}'
   ## grep -A1 '"key": "${field}"' oaidata/${comm}-${mdformat}/${oaiset}/json/* | grep value 
