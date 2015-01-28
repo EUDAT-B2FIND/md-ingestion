@@ -182,29 +182,27 @@ class CKAN_CLIENT(object):
             if (self.api_key): request.add_header('Authorization', self.api_key)
             response = urllib2.urlopen(request,data_string)
         except urllib2.HTTPError as e:
-            print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action)
+            self.logger.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
-                print '\t\tAccess forbidden, maybe the API key is not valid?'
+                self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                print '\t\tMaybe the dataset already exists or you have a parameter error?'
+                print self.logger.debug('\tMaybe the dataset already exists or you have a parameter error?')
                 self.action('package_update',data_dict)
                 return {"success" : False}
             elif ( e.code == 409):
-                print '\t\tMaybe you have a parameter error?'
+                self.logger.debug('\tMaybe you have a parameter error?')
                 return {"success" : False}
             elif ( e.code == 500):
-                print '\t\tInternal server error'
+                self.logger.error('\tInternal server error')
                 exit(e.code)
         except urllib2.URLError as e:
+            self.logger.error('\tURLError %s : %s' % (e,e.reason))
             exit('%s' % e.reason)
         else :
             out = json.loads(response.read())
             assert response.code >= 200
             return out
-
-
-
 
 class HARVESTER(object):
     
@@ -884,6 +882,32 @@ class CONVERTER(object):
         else:
           return (location.latitude, location.longitude)
 
+    def map_spatial(self,invalue):
+        """
+        Map coordinates to spatial
+ 
+        Copyright (C) 2014 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        try:
+           coordarr=invalue.split()
+           for coord in coordarr:
+             try:
+                float(coord)
+             except ValueError:
+                print "Not a float"
+                return (null,null,null,null)
+           print 'coordarr %s' % coordarr
+           if len(coordarr)==2 :
+             return(coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+           elif  len(coordarr)==4 :
+             return(coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+           else:
+             return 
+        except Exception, e:
+           self.logger.error('[ERROR] : %s - in map_spatial %s can not converted !' % (e,invalue))
+           return (null,null,null,null) 
+
     def map_discipl(self,invalue,disctab):
         """
         Convert disciplines along B2FIND disciplinary list
@@ -892,11 +916,11 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         
-        invalue=invalue.encode('ascii','ignore')
+        invalue=invalue.encode('ascii','ignore').lower()
         maxr=0.0
         for line in disctab :
             disc='%s' % line[3]
-            r=lvs.ratio(invalue,disc)
+            r=lvs.ratio(invalue,disc.lower())
             ##if r > 0.7 :
             ##  print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
@@ -909,8 +933,10 @@ class CONVERTER(object):
             return maxdisc
         elif maxr > 0.7 :
             self.logger.debug('   | Similarity ratio %f is > 0.7 : compare value >>%s<< and discipline >>%s<<' % (maxr,invalue,maxdisc))
+            return None
         else:
             self.logger.debug('   | Similarity ratio %f is < 0.7 compare value >>%s<< and discipline >>%s<<' % (maxr,invalue,maxdisc))
+            return None
         return invalue
         
     def cut(self,invalue,delimiter,nfield):
@@ -924,8 +950,11 @@ class CONVERTER(object):
 
         if delimiter in invalue:
            return invalue.split('-')[nfield-1]
-        else:
+        elif nfield:
            return invalue[:nfield]
+        elif pattern:
+           ## e.g. pattern = '\d+' or '\d\d\d\d'
+           return re.findall(pattern, invalue)
         
         return invalue
 
@@ -1321,8 +1350,8 @@ class CONVERTER(object):
                         value=self.jsonpath(dataset, jpath, format)
                 else:
                      continue
-              except:
-                log.info('    | [ERROR] processing rule %s : %s : %s' % (field,jpath,value))
+              except Exception as e:
+                self.logger.error(' [ERROR] %s : processing rule %s : %s : %s' % (e,field,jpath,value))
                 continue
 
            if (field.split('.')[0] == 'extras'): # append extras field
@@ -1393,8 +1422,8 @@ class CONVERTER(object):
                 pass
             else:
                 pass
-          except:
-            log.error('    | [ERROR] processing rule %s' % rule)
+          except Exception as e:
+            self.logger.error(" [ERROR] %s : processing rule %s" % (e,rule))
             continue
 
         return dataset
@@ -1563,10 +1592,9 @@ class CONVERTER(object):
                    if (rules):
                        self.logger.info('  |---     Processing acording rules') #HEW-T  %s' % rules)
                        jsondata=self.postprocess(jsondata,rules)
-                except:
-                   log.error('    | [ERROR] during postprocessing')
-                   results['ecount'] += 1
-                   continue
+                except Exception as e:
+                    self.logger.error(' [ERROR] %s : during postprocessing' % (e))
+                    continue
 
                 # loop over all fields
                 for facet in jsondata:
@@ -1586,21 +1614,27 @@ class CONVERTER(object):
 ##HEW-D                               if lat and lon :
 ##HEW-D                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (lon,lat,lon,lat,lon,lat,lon,lat,lon,lat)
 ##HEW-D                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
+                            if extra['key'] == 'GeograhicDescription':
+                               slat,wlon,nlat,elon=self.map_spatial(extra['value'])
+                               if wlon and slat and elon and nlat :
+                                 print 'slat,wlon,nlat,elon= %s,%s,%s,%s' % (slat,wlon,nlat,elon)
+                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
+                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
                             if extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
-                              extra['value'] = self.cut(extra['value'],'-',1)
+                              extra['value'] = self.cut(extra['value'],'-',4)
                             elif extra['key'].startswith('TempCoverage') : # generic mapping of TempCoverageBegin
                               extra['value'] = self.utc2seconds(extra['value'])
                             ##elif extra['key'] == 'TempCoverageEnd' : # generic mapping of TempCoverageEnd
                             ##  extra['value'] = self.utc2seconds(extra['value'])
                             elif extra['key'] == 'PublicationTimestamp' or extra['key'].startswith('Temporal') : # generic mapping of TempCoverageEnd
                               extra['value'] = self.date2UTC(extra['value'])
-                      except:
-                          log.error('    | [ERROR] during mapping of %s' % extra['key'])
-                          results['ecount'] += 1
+                      except Exception as e:
+                          self.logger.error(' [ERROR] %s : during mapping of field %s' % (e,extra['key']))
+                          ##HEW??? results['ecount'] += 1
                           continue
                    ##elif isinstance(jsondata[facet], basestring) :
                    ##    ### mapping of default string fields
@@ -1627,7 +1661,7 @@ class CONVERTER(object):
                 results['ecount'] += 1
                 continue
 
-        self.logger.info('%s     INFO  B2FIND - %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+        self.logger.info('%s     INFO  B2FIND : %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
 
         # search in output for result statistics
