@@ -897,7 +897,6 @@ class CONVERTER(object):
              except ValueError:
                 print "Not a float"
                 return (null,null,null,null)
-           print 'coordarr %s' % coordarr
            if len(coordarr)==2 :
              return(coordarr[0],coordarr[1],coordarr[0],coordarr[1])
            elif  len(coordarr)==4 :
@@ -1486,23 +1485,26 @@ class CONVERTER(object):
                 with open(path+'/hjson/'+filename, 'r') as f:
                    try:
                         hjsondata=json.loads(f.read())
-                   except:
-                        log.error('    | [ERROR] Cannot load json file %s' % path+'/hjson/'+filename)
+                   except Exception as e:
+                        log.error('    | [ERROR] %s : Cannot load json file %s' % (e,path+'/hjson/'+filename))
                         results['ecount'] += 1
                         continue
                    try:
                        # Run json2json converter
                        self.logger.info('%s     INFO J2J FileProcessor - Processing: %s/hjson/%s' % (time.strftime("%H:%M:%S"),path,filename))
                        jsondata=self.jsonmdmapper(hjsondata,jrules)
-                   except:
-                       log.error('    | [ERROR] during json 2 json processing')
+                   except Exception as e:
+                       log.error('    | [ERROR] %s : during json 2 json processing' % e )
                        results['ecount'] += 1
                        exit()
                        continue
 
                    with io.open(path+'/json/'+filename, 'w') as json_file:
-		       log.debug('   | [INFO] decode json data')
-                       data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                       try:
+                           log.debug('   | [INFO] decode json data')
+                           data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                       except Exception as e:
+                          log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
                        try:
                           log.debug('   | [INFO] save json file')
                           json_file.write(data)
@@ -1512,8 +1514,8 @@ class CONVERTER(object):
 ##                        json_file.write(data.decode('utf8'))
 ##                     try:
 ##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
-                       except:
-                          log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
+                       except Exception as e:
+                          log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
                           err+='Cannot write json file %s' % path+'/json/'+filename
                           results['ecount'] += 1
                           continue
@@ -1590,7 +1592,7 @@ class CONVERTER(object):
                 try:
                    ## md postprocessor
                    if (rules):
-                       self.logger.info('  |---     Processing acording rules') #HEW-T  %s' % rules)
+                       self.logger.debug(' [INFO]:  Processing according rules %s' % rules)
                        jsondata=self.postprocess(jsondata,rules)
                 except Exception as e:
                     self.logger.error(' [ERROR] %s : during postprocessing' % (e))
@@ -1617,7 +1619,6 @@ class CONVERTER(object):
                             if extra['key'] == 'GeograhicDescription':
                                slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
-                                 print 'slat,wlon,nlat,elon= %s,%s,%s,%s' % (slat,wlon,nlat,elon)
                                  spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
                                  jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
                             if extra['key'] == 'Language': # generic mapping of languages
@@ -1642,8 +1643,11 @@ class CONVERTER(object):
 
                 ##with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
                 with io.open(path+'/json/'+filename, 'w') as json_file:
-		   log.debug('   | [INFO] decode json data')
-                   data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                   try:
+		       log.debug('   | [INFO] decode json data')
+                       data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                   except Exception as e:
+                       log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
                    try:
                        log.debug('   | [INFO] save json file')
                        json_file.write(data)
@@ -1653,8 +1657,8 @@ class CONVERTER(object):
 ##                       json_file.write(data.decode('utf8'))
 ##                   try:
 ##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
-                   except:
-                        log.error('    | [ERROR] Cannot write json file %s' % path+'/json/'+filename)
+                   except Exception as e:
+                        log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
                         results['ecount'] += 1
                         continue
               else:
