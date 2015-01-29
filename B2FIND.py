@@ -919,7 +919,7 @@ class CONVERTER(object):
         maxr=0.0
         for line in disctab :
             disc='%s' % line[3]
-            r=lvs.ratio(invalue,disc.lower())
+            r=lvs.ratio(invalue,disc.title())
             ##if r > 0.7 :
             ##  print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
