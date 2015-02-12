@@ -159,6 +159,7 @@ def main():
     # make jobdir
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     jid = os.getpid()
+    print "\tStart of processing:\t%s" % (now)
 
     global logger
     OUT = OUTPUT(pstat,now,jid,options)
@@ -207,15 +208,19 @@ def main():
 
     if (options.identifier):
              list = [ options.identifier ]
+             listtext='given by option -i (%d id\'s)' % len(list) 
     elif (options.list):
              f = open(options.list,'r')
              list = f.readlines()
              f.close()
+             listtext='got from file %s (%d id\'s)' % (options.list,len(list)) 
     elif (options.community):
              UP.get_packages(options.community)
+             print "--- Start get community list from CKAN---\n"
              list = UP.package_list.keys()
              ##clist = UP.get_packages(options.community).keys()
              ##print clist
+             listtext='got from CKAN community %s, stored in file %s-id.list  (%d id\'s)' % (options.community,options.community,len(list)) 
              cf = open('%s-id.list' % options.community,'w')
              cf.write("\n".join(list))
              cf.close()
@@ -228,7 +233,7 @@ def main():
     ##HEW-Tsys.exit()
 
     
-    print "\n=== Start %s processing ===\n\tID LIST:\t%s\n\t%s MODE:\t%s" % (mainmode,list, mainmode.upper(), options.mode)
+    print "\n=== Start %s processing ===\n\tTIME:\t%s\n\tID LIST:\t%s ... \n\t%s MODE:\t%s" % (mainmode,now,list[0:100], mainmode.upper(), options.mode)
 
 
 
