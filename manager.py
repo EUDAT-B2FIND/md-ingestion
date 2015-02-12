@@ -643,7 +643,6 @@ def process_delete(OUT, dir, options):
                 ckanstatus=UP.check_dataset(ds,None)
 
                 delete = 0
-                print ckanstatus
                 # depending on status from epic handle delete record from B2FIND
                 if ( epicstatus == "new" and ckanstatus == "new") : # no action required
                     logger.info('        |-> %s' % ('No deletion required'))

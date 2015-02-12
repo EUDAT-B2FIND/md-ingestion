@@ -14,7 +14,7 @@ usage() {
     printf "\t${b}--mdformat, -m${n} MDFORMAT${n}  OAI ${u}MDFORMAT${n} (default is oai_dc)\n"
     printf "\t${b}--set, -s OAISET${n} ${u}COMMUNITY${n} to check (default is TheEuropeanLibrary).\n"
     printf "\t${b}--field, -f FIELD${n} B2FIND ${u}FIELD${n}\n\t\t to check (default is DISCIPLINE).\n"
-    printf "\t${b}--node, -n NODE${n} XML ${u}NODE${n}\n\t\t to check (default is dc:subject).\n"
+    printf "\t${b}--node, -n NODE${n} XML/JSON ${u}NODE${n}\n\t\t to check (default is dc:subject).\n"
     exit 0
 }
 
@@ -62,15 +62,27 @@ then
 ##  oaisets='a0341_1'
 fi
 
-echo -e "\n-Field    \t $field"
 echo -e "\n-Community\t $comm"
+echo -e "\n-MDformat \t $mdformat"
+echo -e "\n-Field    \t $field"
+echo -e "\n-Node     \t $node"
+
+if [ $mdformat = 'json' ]
+then
+    hdir='hjson'
+    hext='json'
+else
+    hdir='xml'
+    hext='xml'
+fi
+
 for oaiset in $oaisets
 do
   echo -e "\n|-OAI set >> $oaiset << ----"
   echo -e " |- Total # of json files     \t$(ls oaidata/${comm}-${mdformat}/${oaiset}/json/* | wc -l)"
-  echo -e " |- Total # of node \"$node\" \t$(grep -c $node oaidata/${comm}-${mdformat}/${oaiset}/xml/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
+  echo -e " |- Total # of node \"$node\" \t$(grep -c $node oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
   echo -e " | #rec | with value .."
-  grep $node  oaidata/${comm}-${mdformat}/${oaiset}/xml/*.xml | cut -d'>' -f2 |cut -d'<' -f1 | sort | uniq -c | sort -rn | head -10
+  grep $node  oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/*.${hext} | cut -d'>' -f2 | cut -d'<' -f1 | cut -d'"' -f2 | sort | uniq -c | sort -rn | head -10
 ##  echo -e " |- Files with node \"$node\" \t$(grep $node oaidata/${comm}-${mdformat}/${oaiset}/xml/*)"
   echo -e " |- Total # of mapped field  ${field} \t$(grep -c "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
   echo -e " | #rec | mapped on .."
