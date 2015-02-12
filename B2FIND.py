@@ -824,6 +824,37 @@ class CONVERTER(object):
                           return dataset
         return dataset
  
+    def map_identifier(self, invalue):
+        """
+        Convert identifiers to data access links, i.e. to 'Source' (ds['url']) or 'PID','DOI' etc. pp
+ 
+        Copyright (C) 2015 by heinrich Widmann.
+        Licensed under AGPLv3.
+        """
+
+        idarr=invalue.split(';')
+        iddict=dict()
+
+        for id in idarr :
+          if id.startswith('ivo:'):
+             iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
+             favurl=iddict['IVO']
+          elif id.startswith('10.1594'):
+             iddict['DOI'] = self.concat('http://dx.doi.org/',id)
+             favurl=iddict['DOI']
+          elif 'doi:' in id:
+             iddict['DOI'] = id
+             favurl=iddict['DOI']
+          else:
+             ## check_url !!
+             iddict['url']=id
+
+        if not 'url' in iddict :
+             iddict['url']=favurl
+          
+
+        return iddict
+
     def map_lang(self, invalue):
         """
         Convert languages and language codes into ISO names
@@ -861,7 +892,7 @@ class CONVERTER(object):
         if mcountry:
             newvalue = mcountry.name
             return newvalue
-        return invalue
+        return None
  
     def map_geonames(self,invalue):
         """
@@ -882,6 +913,23 @@ class CONVERTER(object):
         else:
           return (location.latitude, location.longitude)
 
+    def map_temporal(self,invalue):
+        """
+        Map date-times to B2FIND start and end time
+ 
+        Copyright (C) 2015 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        try:
+          if type(invalue) is dict :
+            if invalue["start"] and invalue["end"] :
+               return (invalue["start"],invalue["end"])
+          else:
+            return
+        except Exception, e:
+           self.logger.error('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
+           return (None,None)
+
     def map_spatial(self,invalue):
         """
         Map coordinates to spatial
@@ -890,22 +938,28 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         try:
-           coordarr=invalue.split()
-           for coord in coordarr:
-             try:
+          if type(invalue) is dict :
+            if invalue["boundingBox"] :
+               coordict=invalue["boundingBox"]
+               return (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+          else:
+            coordarr=invalue.split()
+            for coord in coordarr:
+              try:
                 float(coord)
-             except ValueError:
-                print "Not a float"
-                return (null,null,null,null)
-           if len(coordarr)==2 :
-             return(coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-           elif  len(coordarr)==4 :
-             return(coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-           else:
-             return 
+              except ValueError:
+                return (None,None,None,None)
+            if len(coordarr)==2 :
+              return(coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+            elif  len(coordarr)==4 :
+              return(coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+            else:
+              return
+##HEW-D          elif:
+##HEW-D            lat,lon=self.map_geonames(extra['value'])
         except Exception, e:
            self.logger.error('[ERROR] : %s - in map_spatial %s can not converted !' % (e,invalue))
-           return (null,null,null,null) 
+           return (None,None,None,None) 
 
     def map_discipl(self,invalue,disctab):
         """
@@ -915,7 +969,7 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         
-        invalue=invalue.encode('ascii','ignore').lower()
+        invalue=invalue.encode('ascii','ignore').capitalize()
         maxr=0.0
         for line in disctab :
             disc='%s' % line[3]
@@ -938,7 +992,7 @@ class CONVERTER(object):
             return None
         return invalue
         
-    def cut(self,invalue,delimiter,nfield):
+    def cut(self,invalue,pattern,nfield):
         """
         splits invalue according to delimiter and cuts out field number nfield.
         If delimiter is not in invalue truncate from character nfield.
@@ -947,13 +1001,13 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
 
-        if delimiter in invalue:
-           return invalue.split('-')[nfield-1]
+        if pattern in invalue:
+           return invalue.split(pattern)[0]
         elif nfield:
            return invalue[:nfield]
-        elif pattern:
+        elif re.findall(pattern, invalue):
            ## e.g. pattern = '\d+' or '\d\d\d\d'
-           return re.findall(pattern, invalue)
+           return re.findall(pattern, invalue)[0]
         
         return invalue
 
@@ -1078,7 +1132,6 @@ class CONVERTER(object):
             g1 = m.group(1)
             subx.append(g1)
             ret = "[#%d]" % n
-    #       print "f1:", g1, ret
             return ret
         x = re.sub(r"[\['](\??\(.*?\))[\]']", f1, x)
     
@@ -1092,7 +1145,6 @@ class CONVERTER(object):
         # put expressions back
         def f2(m):
             g1 = m.group(1)
-    #       print "f2:", g1
             return subx[int(g1)]
     
         x = re.sub(r"#([0-9]+)", f2, x)
@@ -1350,7 +1402,7 @@ class CONVERTER(object):
                 else:
                      continue
               except Exception as e:
-                self.logger.error(' [ERROR] %s : processing rule %s : %s : %s' % (e,field,jpath,value))
+                self.logger.error(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
                 continue
 
            if (field.split('.')[0] == 'extras'): # append extras field
@@ -1451,7 +1503,6 @@ class CONVERTER(object):
         
         # check mdprefix and in paths
         if ( mdprefix == 'json' ): # convert harvested json records using jsonpath rules
-          self.logger.info('Run JSON2JSON converter')
           # check JPATH mapfile
           jmapfile='%s/%s/mapfiles/%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
           if not os.path.isfile(jmapfile):
@@ -1460,7 +1511,7 @@ class CONVERTER(object):
                 self.logger.error('[ERROR] JSON2JSON Mapfile %s does not exist !' % jmapfile)
                 return results
           # read map file 
-          self.logger.info('  with json mapfile %s' % jmapfile)
+          self.logger.debug('[INFO]: Run JSON2JSON converter with json mapfile %s' % jmapfile)
           f = codecs.open(jmapfile, "r", "utf-8")
           jrules = f.readlines() # without the header
           jrules = filter(lambda x:len(x) != 0,jrules) # removes empty lines
@@ -1476,6 +1527,8 @@ class CONVERTER(object):
           results['tcount'] = len(files)
           fcount = 0
           err=None
+          self.logger.info(' %s     INFO  JSONPATH - Processing of files in %s/hjson' % (time.strftime("%H:%M:%S"),path))
+ 
           for filename in files:
               fcount+=1
               hjsondata = dict()
@@ -1491,7 +1544,7 @@ class CONVERTER(object):
                         continue
                    try:
                        # Run json2json converter
-                       self.logger.info('%s     INFO J2J FileProcessor - Processing: %s/hjson/%s' % (time.strftime("%H:%M:%S"),path,filename))
+                       self.logger.info(' |- %s    INFO J2J FileProcessor - Processing: %s/hjson/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
                        jsondata=self.jsonmdmapper(hjsondata,jrules)
                    except Exception as e:
                        log.error('    | [ERROR] %s : during json 2 json processing' % e )
@@ -1524,9 +1577,8 @@ class CONVERTER(object):
                 continue
 
           out=' JSON2JSON stdout\nsome stuff\nlast line ..'
-          ##HEW-T err=' JSON2JSON stderr'
           # check output and print it
-          self.logger.info(out)
+          ##HEW-D self.logger.info(out)
           if (err is not None ): self.logger.error('[ERROR] ' + err)
           ##exit()
         else: # convert xml records using XPATH rules
@@ -1574,10 +1626,10 @@ class CONVERTER(object):
         # loop over all .json files in dir/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
         fcount = 0
-        self.logger.info('%s     INFO  B2FIND - Processing files in %s/json' % (time.strftime("%H:%M:%S"),path))
+        self.logger.info(' %s     INFO  B2FIND - Mapping files in %s/json' % (time.strftime("%H:%M:%S"),path))
         for filename in files:
               fcount+=1
-              self.logger.info('%s     INFO  Post - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),path,filename))
+              self.logger.info(' |- %s     INFO  Post - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
 
               jsondata = dict()
         
@@ -1598,39 +1650,43 @@ class CONVERTER(object):
                     self.logger.error(' [ERROR] %s : during postprocessing' % (e))
                     continue
 
+                iddict=dict()
                 # loop over all fields
                 for facet in jsondata:
-                   if facet == 'url': # generic mapping of Source
-                      if jsondata[facet].startswith('10.1594'):
-                         jsondata[facet] = self.concat('http://dx.doi.org/',jsondata[facet])
+                   if facet == 'author':
+                         jsondata[facet] = self.cut(jsondata[facet],'(.*)\(\d\d\d\d\)',0)
                    elif facet == 'tags':
                          jsondata[facet] = self.list2dictlist(jsondata[facet],"   ")
-                   elif facet == 'title' : ## or facet == 'notes'
-                         jsondata[facet] = jsondata[facet].encode('iso-8859-1','ignore')
+                   ##elif facet == 'title' : ## or facet == 'notes'
+                   ##      jsondata[facet] = jsondata[facet]## .encode('latin1','replace')
                    elif facet == 'extras':
                       try: ### Semantic mapping of extra keys
-                         lat=None ; lon=None
                          for extra in jsondata[facet]:
-##HEW-D                            if extra['key'] == 'GeograhicDescription':
-##HEW-D                               lat,lon=self.map_geonames(extra['value'])
-##HEW-D                               if lat and lon :
-##HEW-D                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (lon,lat,lon,lat,lon,lat,lon,lat,lon,lat)
-##HEW-D                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
-                            if extra['key'] == 'GeograhicDescription':
+                            if extra['key'] == 'identifiers':
+                              iddict = self.map_identifier(extra['value'])
+                                   ##HEW-T print 'key %s' % key
+                            elif extra['key'] == 'Discipline': # generic mapping of discipline
+                              extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                            elif extra['key'] == 'GeograhicDescription':
                                slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
                                  spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
                                  jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
-                            if extra['key'] == 'Language': # generic mapping of languages
+                               extra['value'] = None
+                            elif extra['key'] == 'TemporalDescription':
+                               stime,etime=self.map_temporal(extra['value'])
+                               if stime and etime :
+                                 jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
+                                 jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
+                                 jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : stime }) 
+                                 jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
+                               extra['value'] = None
+                            elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
-                            elif extra['key'] == 'Discipline': # generic mapping of discipline
-                              extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
                               extra['value'] = self.cut(extra['value'],'-',4)
-                            elif extra['key'].startswith('TempCoverage') : # generic mapping of TempCoverageBegin
+                            elif extra['key'].startswith('TempCoverage:') : # generic mapping of TempCoverageBegin
                               extra['value'] = self.utc2seconds(extra['value'])
-                            ##elif extra['key'] == 'TempCoverageEnd' : # generic mapping of TempCoverageEnd
-                            ##  extra['value'] = self.utc2seconds(extra['value'])
                             elif extra['key'] == 'PublicationTimestamp' or extra['key'].startswith('Temporal') : # generic mapping of TempCoverageEnd
                               extra['value'] = self.date2UTC(extra['value'])
                       except Exception as e:
@@ -1640,9 +1696,14 @@ class CONVERTER(object):
                    ##elif isinstance(jsondata[facet], basestring) :
                    ##    ### mapping of default string fields
                    ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
+                for key in iddict:
+                    if key == 'url':
+                        jsondata['url']=iddict['url']
+                    else:
+                        jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
 
-                ##with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
-                with io.open(path+'/json/'+filename, 'w') as json_file:
+                with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
+                ##with io.open(path+'/json/'+filename, 'w') as json_file:
                    try:
 		       log.debug('   | [INFO] decode json data')
                        data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
