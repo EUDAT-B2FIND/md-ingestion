@@ -1667,13 +1667,13 @@ class CONVERTER(object):
                                    ##HEW-T print 'key %s' % key
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
-                            elif extra['key'] == 'GeograhicDescription':
+                            elif extra['key'] == 'SpatialCoverage':
                                slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
                                  spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
                                  jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
-                               extra['value'] = None
-                            elif extra['key'] == 'TemporalDescription':
+                               extra['value'] = extra['value']['description'] or ''
+                            elif extra['key'] == 'TemporalCoverage':
                                stime,etime=self.map_temporal(extra['value'])
                                if stime and etime :
                                  jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
