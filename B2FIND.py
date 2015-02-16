@@ -576,7 +576,6 @@ class HARVESTER(object):
             # check for outdated harvested xml files and add to deleted_metadata, if not already listed
             now = time.time()
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-               print 's %s' % s+'/xml/*.xml'
                for f in glob.glob(s+'/xml/*.xml'):
                  ##HEW-T print 'date %s of file %s' % (os.stat(f).st_mtime,f)
                  if os.stat(f).st_mtime < now - 7 * 86400:
@@ -1048,7 +1047,7 @@ class CONVERTER(object):
         year1epochsec=62135600400
         utc=self.date2UTC(dt)
         try:
-           utctime = datetime.datetime.strptime(utc, "%Y-%m-%dT%H:%M:%SZ")
+           utctime = datetime.datetime.strptime(utc, "%Y-%m-%dT%H:%M:%SZ") ##HEW-?? .isoformat()
            ##utctime = format_datetime(utc, "%Y-%m-%dT%H:%M:%S", locale='en')
            sec=int(time.mktime(utctime.timetuple()))+year1epochsec
         except Exception, e:
@@ -1685,8 +1684,6 @@ class CONVERTER(object):
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
                               extra['value'] = self.cut(extra['value'],'-',4)
-                            elif extra['key'].startswith('TempCoverage:') : # generic mapping of TempCoverageBegin
-                              extra['value'] = self.utc2seconds(extra['value'])
                             elif extra['key'] == 'PublicationTimestamp' or extra['key'].startswith('Temporal') : # generic mapping of TempCoverageEnd
                               extra['value'] = self.date2UTC(extra['value'])
                       except Exception as e:
