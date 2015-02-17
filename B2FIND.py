@@ -184,18 +184,19 @@ class CKAN_CLIENT(object):
         except urllib2.HTTPError as e:
             self.logger.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
-                self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
+                self.logger.error('\tHTTPError %s :Access forbidden, maybe the API key is not valid?' % e.code)
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                print self.logger.debug('\tMaybe the dataset already exists or you have a parameter error?')
+                print self.logger.debug('\tHTTPError %s :Maybe the dataset already exists or you have a parameter error?' % e.code)
                 self.action('package_update',data_dict)
                 return {"success" : False}
             elif ( e.code == 409):
-                self.logger.debug('\tMaybe you have a parameter error?')
+                self.logger.error('\tHTTPError %s :Maybe you have a parameter error?' % e.code)
                 return {"success" : False}
             elif ( e.code == 500):
-                self.logger.error('\tInternal server error')
-                exit(e.code)
+                self.logger.error('\tHTTPError %s :Internal server error' % e.code)
+                ##exit(e.code)
+                return {"success" : False}
         except urllib2.URLError as e:
             self.logger.error('\tURLError %s : %s' % (e,e.reason))
             exit('%s' % e.reason)
