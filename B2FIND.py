@@ -1062,7 +1062,7 @@ class CONVERTER(object):
            sec=int(time.mktime(utctime.timetuple()))+year1epochsec
         except Exception, e:
            self.logger.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (e,utc))
-           return False
+           return None
 
         return sec
 
@@ -1690,7 +1690,10 @@ class CONVERTER(object):
                                extra['value'] = extra['value']['description'] or ''
                             elif extra['key'] == 'TemporalCoverage':
                                stime,etime=self.map_temporal(extra['value'])
-                               extra['value']=extra['value']['@type']+': ( %s - %s ) ' % (stime,etime)
+                               if stime and etime:
+                                 extra['value']=extra['value']['@type']+': ( %s - %s ) ' % (stime,etime)
+                               elif: extra['value']['period']
+                                 extra['value']=extra['value']['period']                                 
                             elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
