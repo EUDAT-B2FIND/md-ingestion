@@ -786,6 +786,8 @@ class CONVERTER(object):
         """
         # UTC format =  YYYY-MM-DDThh:mm:ssZ
         utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
+        # UTC2 format =  YYYY-MM-DDThh:mm:ss.mss+mmss
+        utcn = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}\+\d{4}')
        
         utc_day = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
         utc_year = re.compile(r'\d{4}') # year (4-digit number)
@@ -922,7 +924,7 @@ class CONVERTER(object):
         try:
           if type(invalue) is dict :
             if invalue["start"] and invalue["end"] :
-               return (invalue["start"],invalue["end"])
+               return (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
           else:
             return
         except Exception, e:
@@ -1026,6 +1028,14 @@ class CONVERTER(object):
         else:
             return invalue
         return dictlist
+
+    def uniq(self,input):
+        output = []
+        for x in input:
+            if x not in output:
+                output.append(x)
+        return output
+
 
     def concat(self,str1,str2):
         """
@@ -1650,6 +1660,8 @@ class CONVERTER(object):
                     continue
 
                 iddict=dict()
+                stime=None
+                etime=None
                 # loop over all fields
                 for facet in jsondata:
                    if facet == 'author':
@@ -1661,7 +1673,11 @@ class CONVERTER(object):
                    elif facet == 'extras':
                       try: ### Semantic mapping of extra keys
                          for extra in jsondata[facet]:
-                            if extra['key'] == 'identifiers':
+                            if type(extra['value']) is list:
+                              extra['value']=self.uniq(extra['value'])
+                              if len(extra['value']) == 1:
+                                 extra['value']=extra['value'][0] 
+                            elif extra['key'] == 'identifiers':
                               iddict = self.map_identifier(extra['value'])
                                    ##HEW-T print 'key %s' % key
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
@@ -1674,12 +1690,7 @@ class CONVERTER(object):
                                extra['value'] = extra['value']['description'] or ''
                             elif extra['key'] == 'TemporalCoverage':
                                stime,etime=self.map_temporal(extra['value'])
-                               if stime and etime :
-                                 jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
-                                 jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
-                                 jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : stime }) 
-                                 jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
-                               extra['value'] = None
+                               extra['value']=extra['value']['@type']+': ( %s - %s ) ' % (stime,etime)
                             elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
@@ -1698,6 +1709,11 @@ class CONVERTER(object):
                         jsondata['url']=iddict['url']
                     else:
                         jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
+                if stime and etime :
+                    jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
+                    jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
+                    jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : stime }) 
+                    jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
 
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
                 ##with io.open(path+'/json/'+filename, 'w') as json_file:
