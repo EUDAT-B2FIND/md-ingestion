@@ -360,6 +360,8 @@ def main():
        print '| %-6d | %-50s | %-6s | %-6s | %-6s | %-6s |' % (n, id,xmlstatus,jsonstatus,ckanstatus,epicstatus)
        if (not options.quiet):
          print '--> %-57s | %-6s | %-6s | %-6s | %-6s |' % ('action performed',xmlaction,jsonaction,ckanaction,epicaction)
-    logger.info(
+
+    logger.info('end of cleaning ...')
+
 if __name__ == "__main__":
     main()
