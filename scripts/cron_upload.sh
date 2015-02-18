@@ -48,7 +48,7 @@ then
     lines_per_file=1 
   fi
   echo "lines_per_file=${lines_per_file}"
-  split --lines=${lines_per_file} ${upload_list} ${upload_list}.
+  split -d --lines=${lines_per_file} ${upload_list} ${upload_list}.
 else
   echo "[WARNING] Can not acess ${upload_list} => processing stopped"
 fi
