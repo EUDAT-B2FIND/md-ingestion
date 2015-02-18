@@ -4,23 +4,23 @@
 
 err_strg=''
 usage() {
-    printf "${b}err_strg${n}\n"
-    printf "${b}NAME${n}\n\t`basename $0` - check field mapping of B2FIND\n\n" 
-    printf "${b}SYNOPSIS ${n}\n\t${b}`basename $0`${n}  [${u}OPTION${n}]...  "
+    printf "${b}${err_strg}${n}\n"
+    printf "${b}NAME${n}\n\t`basename $0` - check field mapping of B2FIND\n" 
+    printf "${b}SYNOPSIS ${n}\n\t${b}`basename $0`${n}  [${u}OPTION${n}]...  \n"
     printf "${b}DESCRIPTION ${n}\n\t checks field mapping of B2FIND ...\n" 
     printf "${b}OPTIONS${n}\n"
-    printf "\t${b}--help, -h${n}\n\t\tdisplay this built-in help text and exit.\n" 
-    printf "\t${b}--community, -c COMMUNITY${n} B2FIND ${u}COMMUNITY${n} to check (default is TheEuropeanLibrary).\n"
-    printf "\t${b}--mdformat, -m${n} MDFORMAT${n}  OAI ${u}MDFORMAT${n} (default is oai_dc)\n"
-    printf "\t${b}--set, -s OAISET${n} ${u}COMMUNITY${n} to check (default is TheEuropeanLibrary).\n"
-    printf "\t${b}--field, -f FIELD${n} B2FIND ${u}FIELD${n}\n\t\t to check (default is DISCIPLINE).\n"
-    printf "\t${b}--node, -n NODE${n} XML ${u}NODE${n}\n\t\t to check (default is dc:subject).\n"
+    printf "\t${b}--help, -h${n}\t\tdisplay this built-in help text and exit.\n" 
+    printf "\t${b}--community, -c COMMUNITY\tB2FIND ${u}community${n} to check (required).\n"
+    printf "\t${b}--mdformat, -m MDformat\tOAI ${u}metadata format{n} (default is oai_dc)\n"
+    printf "\t${b}--set, -s OAISET ${u}OAI sets${n} to check (if not given, all subsets (subdirs) of community are checked.)\n"
+    printf "\t${b}--field, -f FIELD${n} B2FIND ${u}field${n}\n\t\t to check (default is Disciline).\n"
+    printf "\t${b}--node, -n NODE ${n} XML/JSON ${u}node${n}\n\t\t to check (optional).\n"
     exit 0
 }
 
 while [[ -n $1 ]] ; do
   case $1 in
-        --help       | -h) usage ;;
+        --help       | -h) err_strg=''; usage ;;
         --mdformat   | -m) mdformat=$2; shift ;;
         --field      | -f) field=$2; shift ;;
         --node       | -n) node=$2; shift ;;
@@ -41,7 +41,8 @@ fi
 
 if [ -z "$comm" ]
 then
-  comm='theeuropeanlibrary'
+  err_strg=' Community is mandatory\n'
+  usage
 fi
 
 if [ -z "$mdformat" ]
@@ -49,31 +50,42 @@ then
   mdformat='oai_dc'
 fi
 
-if [ -z "$node" ]
-then
-  node='dc:subject'
-fi
-
 if [ -z "$oaisets" ]
 then
-  #oaisets='a0005_1 a0005_2 a0005_3 a0005_4 a0005_5'
-  oaisets='a0338_1 a0336_1'
-  oaisets='a1058_1 a0337_1 a0633_1 a0237_1 a0442_1 a0341_1 a1025_1 a1057_1 a0552_1 a0552_2 a0340_1 a0005_1 a0005_2 a0005_3 a0005_4 a0005_5  a0338_1 a0336_1 a1025_1'
-##  oaisets='a0341_1'
+  oaisets=$(ls oaidata/${comm}-${mdformat})
 fi
 
-echo -e "\n-Field    \t $field"
 echo -e "\n-Community\t $comm"
+echo -e "-MDformat \t $mdformat"
+echo -e "-OAI sets \t $oaisets"
+echo -e "-Field    \t $field"
+if [ -n "$node" ]
+then
+  echo -e "-Node     \t $node"
+fi
+
+if [ $mdformat = 'json' ]
+then
+    hdir='hjson'
+    hext='json'
+else
+    hdir='xml'
+    hext='xml'
+fi
+
 for oaiset in $oaisets
 do
   echo -e "\n|-OAI set >> $oaiset << ----"
   echo -e " |- Total # of json files     \t$(ls oaidata/${comm}-${mdformat}/${oaiset}/json/* | wc -l)"
-  echo -e " |- Total # of node \"$node\" \t$(grep -c $node oaidata/${comm}-${mdformat}/${oaiset}/xml/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
-  echo -e " | #rec | with value .."
-  grep $node  oaidata/${comm}-${mdformat}/${oaiset}/xml/*.xml | cut -d'>' -f2 |cut -d'<' -f1 | sort | uniq -c | sort -rn | head -10
+  if [ -n "$node" ]
+  then
+    echo -e " |- Total # of node \"$node\" \t$(grep -c $node oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
+    echo -e " | #rec | with node value .."
+    grep $node  oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/*.${hext} | cut -d'>' -f2 | cut -d'<' -f1 | cut -d'"' -f2 | sort | uniq -c | sort -rn | head -10
 ##  echo -e " |- Files with node \"$node\" \t$(grep $node oaidata/${comm}-${mdformat}/${oaiset}/xml/*)"
+  fi
   echo -e " |- Total # of mapped field  ${field} \t$(grep -c "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
-  echo -e " | #rec | mapped on .."
+  echo -e " | #rec | filed mapped on value .."
   deflist="author title"
   if [[ $deflist =~ (^| )${field}($| ) ]]
   then

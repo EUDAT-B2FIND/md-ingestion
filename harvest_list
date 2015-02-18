@@ -96,7 +96,6 @@ cessda http://oai.clarin-beta.dans.knaw.nl/OAIHandler  ListRecords cmdi dans_cmd
 ##<!-- DANS easy, does not support CMDI, fall back to DC --> #h=28551 ?= #DASISH=28404
 cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc dans-easy_
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
-gbif http://metadata.gbif.org/catalogue/OAIHandler ListRecords eml old_
 gbif http://api.gbif.org/v1 JSONAPI json new_
 ##%%% EUDAT B2SHARE :
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
@@ -120,7 +119,7 @@ datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  ANDS.CENTRE22
 ##%%% PANdata, harvested from datacite OAI, subset BL.STFC (only ISIS rcords)
 pandata https://icat-10.pandata.stfc.ac.uk/oai/provider  ListRecords oai_qdc  
 ##%%% NARCIS
-narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc dataset
+narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc publication
 ##%%% TheEuropeanLIbrary
 ##     - research related records --> B2FIND !!!
