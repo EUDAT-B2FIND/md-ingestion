@@ -746,7 +746,28 @@ class CONVERTER(object):
         
         # get the java converter name:
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
-        
+        self.ckan2b2find = {
+                   "title" : "title", 
+                   "notes" : "description",
+                   "tags" : "tags",
+                   "url" : "source", 
+                   "doi" : "doi",
+                   "pid" : "pid",
+                   "checksum" : "checksum",
+                   "rights" : "rights",
+                   "community" : "community",
+                   "discipline" : "discipline",
+                   "author" : "creator", 
+                   "publisher" : "publisher",
+                   "publicationyear" : "publicationyear",
+                   "language" : "language",
+                   "temporalcoverage" : "temporalcoverage",
+                   "spatialcoverage" : "spatialcoverage",
+                   "contact" : "contact",
+                   "metadata" : "metadata"
+                              }  
+        self.mdschemalist = [ "title","description","tags","source","doi","pid","checksum","rights","community","discipline","creator","publisher","publicationyear","language","temporalcoverage","spatialcoverage","contact","metadata"]     
+       
     class cv_diciplines(object):
         """
         This class represents the closed vocabulary used for the mapoping of B2FIND discipline mapping
@@ -846,6 +867,9 @@ class CONVERTER(object):
           elif 'doi:' in id:
              iddict['DOI'] = id
              favurl=iddict['DOI']
+          elif 'hdl.handle.net' in id:
+             iddict['PID'] = id
+             favurl=iddict['PID']
           else:
              ## check_url !!
              iddict['url']=id
@@ -1755,14 +1779,60 @@ class CONVERTER(object):
     
         return results
 
-    def reconvert(self,community,mdprefix,path):
-        ## convert (CONVERTER object, community, path) - method
-        # 'Re'-Converts the JSON files in directory <path>, 
-        # which is defined by <community>, to XML files in B2FIND md format             #
+    def json2xml(self,json_obj, line_padding="", mdftag=""):
+        result_list = list()
+        json_obj_type = type(json_obj)
+
+        if json_obj_type is list:
+            for sub_elem in json_obj:
+                result_list.append(json2xml(sub_elem, line_padding))
+
+            return "\n".join(result_list)
+
+        if json_obj_type is dict:
+            for tag_name in json_obj:
+                if tag_name == 'extras':
+                    for kv in json_obj[tag_name]:
+                        key = kv["key"]
+                        val = kv["value"]
+                        if key.lower() in self.ckan2b2find : 
+                            key=self.ckan2b2find[key.lower()]
+                            result_list.append("%s<%s:%s>" % (line_padding, mdftag, key))
+                            result_list.append(self.json2xml(val, "\t" + line_padding))
+                            result_list.append("%s</%s:%s>" % (line_padding, mdftag, key))
+                        else:
+                            self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % key)
+                            continue
+                else:
+                    sub_obj = json_obj[tag_name]
+                    if tag_name.lower() in self.ckan2b2find : 
+                        tag_name=self.ckan2b2find[tag_name.lower()]
+                        result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name))
+                        if type(sub_obj) is list:
+                            vlist="\t\t"
+                            for nv in sub_obj:
+                                vlist+=nv["name"]+';'
+                                vlist=vlist[:-1]
+                            result_list.append(vlist)
+                        else:
+                            result_list.append(self.json2xml(sub_obj, "\t" + line_padding))
+                        result_list.append("%s</%s:%s>" % (line_padding, mdftag, tag_name))
+                    else:
+                        self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
+                        continue
+            ##HEW-?? result_list=result_list.sort(key=lambda x: self.mdschemalist.index(x[0]))
+            return "\n".join(result_list)
+
+        return "%s%s" % (line_padding, json_obj)
+
+    def oaiconvert(self,community,mdformat,path):
+        ## oaiconvert(CONVERTER object, community, mdformat, path) - method
+        # Converts the JSON files in directory <path> to XML files in B2FIND md format
         # Parameters:
         # -----------
         # 1. (string)   community - B2FIND community of the files
-        # 2. (string)   path - path to subset directory without (!) 'json' subdirectory
+        # 2. (string)   mdformat - metadata of original harvested source (not needed her)
+        # 3. (string)   path - path to subset directory without (!) 'json' subdirectory
         #
         # Return Values:
         # --------------
@@ -1777,25 +1847,39 @@ class CONVERTER(object):
         
         # check paths
         if not os.path.exists(path):
-            self.logger.error('[ERROR] The directory "%s" does not exist! No files for re-converting are found!\n(Maybe your convert list has old items?)' % (path))
+            self.logger.error('[ERROR] The directory "%s" does not exist! No files for oai-converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
             self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files for converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
     
-        # run re-converting
+        # run oai-converting
         # find all .json files in path/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
         
         results['tcount'] = len(files)
 
+        oaiset=path.split(mdformat)[1].split('_')[0].strip('/')
+        outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+path.split(mdformat)[1].split('_')[0]+'/xml'
+        print 'outpath %s' % outpath
         if (not os.path.isdir(path+'/b2find')):
              os.makedirs(path+'/b2find')
 
-        fcount = 1
+        self.logger.info(' %s     INFO  OAI-Converter of files in %s/json' % (time.strftime("%H:%M:%S"),path))
+        print  '    |   | %-4s | %-40s | %-40s |\n   |%s|' % ('#','infile','outfile',"-" * 53)
+
+        fcount = 0
         for filename in files:
+            fcount+=1
+            identifier=oaiset+'_%06d' % fcount
+            createdate = str(datetime.datetime.utcnow())
+
+
             jsondata = dict()
-        
+            self.logger.info(' |- %s     INFO  JSON2XML - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
+            outfile=outpath+'/'+community+'_'+oaiset+'_%06d' % fcount+'.xml'
+            self.logger.info('    | o | %-4d | %-45s | %-45s |' % (fcount,os.path.basename(filename),os.path.basename(outfile)))
+
             if ( os.path.getsize(path+'/json/'+filename) > 0 ):
                 with open(path+'/json/'+filename, 'r') as f:
                     try:
@@ -1808,42 +1892,55 @@ class CONVERTER(object):
                 results['ecount'] += 1
                 continue
             
-            # remove field fulltext
-            extras_counter = 0
-            for extra in jsondata['extras']:
-                if(extra['key'] == 'fulltext'):
-                    jsondata['extras'].pop(extras_counter)
-                    break
-                extras_counter  += 1
-
-            # get dataset name from filename (a uuid generated identifier):
-            ds_id = os.path.splitext(filename)[0]
-            xmlfile=ds_id+'.xml'            
-
-            self.logger.info('    | r | %-4d | %-40s |' % (fcount,ds_id))
             
             # get OAI identifier from json data extra field 'oai_identifier':
-            oai_id  = None
-            for extra in jsondata['extras']:
-                if(extra['key'] == 'oai_identifier'):
-                    oai_id = extra['value']
-                    break
-            self.logger.debug("        |-> identifier: %s\n" % (oai_id))
+            ##oai_id  = None
+            ##for extra in jsondata['extras']:
+            ##    if(extra['key'] == 'oai_identifier'):
+            ##        oai_id = extra['value']
+            ##        break
+            ##self.logger.debug("        |-> identifier: %s\n" % (oai_id))
             
-            ### reconvert !!
+            ### oai-convert !!
             try:
-              xml = xmltools.WriteToXMLString(jsondata)
-              # write B2FIND xml file:
-              f = open(path+'/b2find/'+xmlfile, 'w')
-              f.write(xml)
-              f.close
+
+                header="""<?xml version = '1.0' encoding = 'UTF-8'?>
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:b2find="http://b2find.eudat.eu">
+  <!-- the "b2find" prefix is bound to http://b2find.eudat.eu -->
+   <header>
+     <identifier>"""+identifier+"""</identifier>
+     <datestamp>"""+createdate+"""</datestamp>
+     <setSpec>"""+oaiset+"""</setSpec>
+   </header>
+   <metadata>
+     <!-- NOTE : the metadata schema for B2FIND and the oai prefix oai_b2find is still under developement
+                and the namesapace and schema definitions are preliminary -->
+     <oai_b2find:b2find xmlns:b2find="http://purl.org/b2find/elements/1.1/" xmlns:oai_b2find="http://www.openarchives.org/OAI/2.0/oai_b2find/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_b2find/">
+"""
+##HEW-!!! http://b2find.eudat.eu/docs/oai_b2find.xsd">
+##"""
+       
+                footer="""
+     </oai_b2find:b2find>
+   </metadata>
+</record>"""
+
+                xmldata=header+self.json2xml(jsondata,'\t','b2find')+footer
+                ##HEW-T print 'xmldata %s' % xmldata
+
+                f = open(outfile, 'w')
+                f.write(xmldata.encode('utf-8'))
+                f.write("\n")
+                f.close
             except IOError, e:
-              self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (xmlfile,e))
-              stats['ecount'] +=1
-              return(False, ds_id, path+'/b2find/', count_set)
-             
+                self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
+                ###stats['ecount'] +=1
+                return(False, outfile , outpath, fcount)
+
+        self.logger.info('%s     INFO  B2FIND : %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+
         # count ... all .xml files in path/b2find
-        results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/b2find')))
+        results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(outpath)))
     
         return results    
 
@@ -2409,7 +2506,7 @@ class OUTPUT (object):
         # -----------
         # (string)  request - normal request named by <community>-<mdprefix> or a special request which begins with a '#'
         # (string)  subset - ...
-        # (string)  mode - process mode (can be 'h', 'c' or 'u')
+        # (string)  mode - process mode (can be 'h', 'c','u' or 'o')
         # (dict)    stats - a dictionary with results stats
         #
         # Return Values:
@@ -2449,7 +2546,7 @@ class OUTPUT (object):
                         'time':0,
                         'avg':0
                     },
-                    'r':{
+                    'o':{
                         'count':0,
                         'ecount':0,
                         'tcount':0,
