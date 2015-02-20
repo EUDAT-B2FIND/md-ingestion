@@ -11,10 +11,10 @@ usage() {
     printf "${b}OPTIONS${n}\n"
     printf "\t${b}--help, -h${n}\t\tdisplay this built-in help text and exit.\n" 
     printf "\t${b}--community, -c COMMUNITY\tB2FIND ${u}community${n} to check (required).\n"
-    printf "\t${b}--mdformat, -m MDformat\tOAI ${u}metadata format{n} (default is oai_dc)\n"
-    printf "\t${b}--set, -s OAISET ${u}OAI sets${n} to check (if not given, all subsets (subdirs) of community are checked.)\n"
-    printf "\t${b}--field, -f FIELD${n} B2FIND ${u}field${n}\n\t\t to check (default is Disciline).\n"
-    printf "\t${b}--node, -n NODE ${n} XML/JSON ${u}node${n}\n\t\t to check (optional).\n"
+    printf "\t${b}--mdformat, -m MDFORMAT  \tOAI ${u}metadata format{n} (default is oai_dc)\n"
+    printf "\t${b}--set, -s OAISET         \t${u}OAI sets${n} to check (if not given, all subsets (subdirs) of community are checked.)\n"
+    printf "\t${b}--field, -f FIELD        \t${n}B2FIND ${u}field${n} to check (default is Disciline).\n"
+    printf "\t${b}--node, -n NODE          \t${n}XML/JSON ${u}node${n} to check (optional).\n"
     exit 0
 }
 
@@ -73,20 +73,33 @@ else
     hext='xml'
 fi
 
+if [ $mdformat = 'marcxml' ]
+then
+    tagchar='tag="'
+else
+    tagchar='<'
+fi
+
+
 for oaiset in $oaisets
 do
   echo -e "\n|-OAI set >> $oaiset << ----"
   echo -e " |- Total # of json files     \t$(ls oaidata/${comm}-${mdformat}/${oaiset}/json/* | wc -l)"
   if [ -n "$node" ]
   then
-    echo -e " |- Total # of node \"$node\" \t$(grep -c $node oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
+    echo -e " |- Total # of node \"$node\" \t$(grep -c ${tagchar}${node} oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
     echo -e " | #rec | with node value .."
-    grep $node  oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/*.${hext} | cut -d'>' -f2 | cut -d'<' -f1 | cut -d'"' -f2 | sort | uniq -c | sort -rn | head -10
+    grep  -A1 ${tagchar}${node}  oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/*.${hext} | cut -d'>' -f2 | cut -d'<' -f1 | cut -d'"' -f2 | sort | uniq -c | sort -rn | head -10
 ##  echo -e " |- Files with node \"$node\" \t$(grep $node oaidata/${comm}-${mdformat}/${oaiset}/xml/*)"
   fi
-  echo -e " |- Total # of mapped field  ${field} \t$(grep -c "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
+  deflist="author title url"
+  if [[ $deflist =~ (^| )${field}($| ) ]]
+  then
+    echo -e " |- Total # of mapped field  >>${field}<< \t$(grep -c "\"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
+  else
+    echo -e " |- Total # of mapped field  >>${field}<< \t$(grep -c "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
+  fi
   echo -e " | #rec | filed mapped on value .."
-  deflist="author title"
   if [[ $deflist =~ (^| )${field}($| ) ]]
   then
     grep "\"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d':' -f2- | sort -nr | uniq -c | sort -nr 
