@@ -1739,7 +1739,7 @@ class CONVERTER(object):
                 if stime and etime :
                     jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
                     jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
-                    jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : stime }) 
+                    jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
                     jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
 
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
@@ -1904,7 +1904,8 @@ class CONVERTER(object):
             ### oai-convert !!
             try:
 
-                header="""<?xml version = '1.0' encoding = 'UTF-8'?>
+###                header="""<?xml version = '1.0' encoding = 'UTF-8'?>
+                header="""
 <record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:b2find="http://b2find.eudat.eu">
   <!-- the "b2find" prefix is bound to http://b2find.eudat.eu -->
    <header>
@@ -1915,11 +1916,8 @@ class CONVERTER(object):
    <metadata>
      <!-- NOTE : the metadata schema for B2FIND and the oai prefix oai_b2find is still under developement
                 and the namesapace and schema definitions are preliminary -->
-     <oai_b2find:b2find xmlns:b2find="http://purl.org/b2find/elements/1.1/" xmlns:oai_b2find="http://www.openarchives.org/OAI/2.0/oai_b2find/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_b2find/">
+     <oai_b2find:b2find xmlns:b2find="http://purl.org/b2find/elements/1.1/" xmlns:oai_b2find="http://www.openarchives.org/OAI/2.0/oai_b2find/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://b2find.eudat.eu/docs http://b2find.eudat.eu/docs/oai_b2find.xsd">
 """
-##HEW-!!! http://b2find.eudat.eu/docs/oai_b2find.xsd">
-##"""
-       
                 footer="""
      </oai_b2find:b2find>
    </metadata>
