@@ -858,13 +858,14 @@ class CONVERTER(object):
         iddict=dict()
 
         for id in idarr :
+          print 'id %s' % id
           if id.startswith('ivo:'):
              iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
              favurl=iddict['IVO']
-          elif id.startswith('10.1594'):
+          elif id.startswith('10.1594') or id.startswith('10.5286'):
              iddict['DOI'] = self.concat('http://dx.doi.org/',id)
              favurl=iddict['DOI']
-          elif 'doi:' in id:
+          elif 'doi:' in id or 'doi.org/' in id:
              iddict['DOI'] = id
              favurl=iddict['DOI']
           elif 'hdl.handle.net' in id:
@@ -947,12 +948,15 @@ class CONVERTER(object):
         """
         try:
           if type(invalue) is dict :
-            if invalue["start"] and invalue["end"] :
+            invt=invalue['@type']
+            if invalue['@type'] == 'single':
+               return (self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
+            elif invalue["start"] and invalue["end"] :
                return (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
           else:
             return
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
+           self.logger.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
            return (None,None)
 
     def map_spatial(self,invalue):
@@ -997,7 +1001,7 @@ class CONVERTER(object):
         invalue=invalue.encode('ascii','ignore').capitalize()
         maxr=0.0
         for line in disctab :
-            disc='%s' % line[3]
+            disc='%s' % line[2]
             r=lvs.ratio(invalue,disc.title())
             ##if r > 0.7 :
             ##  print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
@@ -1725,7 +1729,7 @@ class CONVERTER(object):
                             elif extra['key'] == 'PublicationTimestamp' or extra['key'].startswith('Temporal') : # generic mapping of TempCoverageEnd
                               extra['value'] = self.date2UTC(extra['value'])
                       except Exception as e:
-                          self.logger.error(' [ERROR] %s : during mapping of field %s' % (e,extra['key']))
+                          self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
                           ##HEW??? results['ecount'] += 1
                           continue
                    ##elif isinstance(jsondata[facet], basestring) :
