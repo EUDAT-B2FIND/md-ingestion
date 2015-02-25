@@ -896,8 +896,8 @@ class CONVERTER(object):
                 try: return iso639.languages.get(alpha2=language.lower())
                 except KeyError: pass
             elif len(language) == 3:
-                try: return iso639.languages.get(alpha3=language.lower())
-                except KeyError: pass
+                ##try: return iso639.languages.get(alpha3=language.lower())
+                ##except KeyError: pass
                 try: return iso639.languages.get(terminology=language.lower())
                 except KeyError: pass
                 try: return iso639.languages.get(bibliographic=language.lower())
