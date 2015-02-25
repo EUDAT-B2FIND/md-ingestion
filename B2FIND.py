@@ -768,7 +768,7 @@ class CONVERTER(object):
                               }  
         self.mdschemalist = [ "title","description","tags","source","doi","pid","checksum","rights","community","discipline","creator","publisher","publicationyear","language","temporalcoverage","spatialcoverage","contact","metadata"]     
        
-    class cv_diciplines(object):
+    class cv_disciplines(object):
         """
         This class represents the closed vocabulary used for the mapoping of B2FIND discipline mapping
         Copyright (C) 2014 Heinrich Widmann.
@@ -787,7 +787,7 @@ class CONVERTER(object):
             disctab = []
             with open(discipl_file, 'r') as f:
                 ## define csv reader object, assuming delimiter is tab
-                tsvfile = csv.reader(f, delimiter='\t')
+                tsvfile = csv.reader(f, delimiter='/')
 
                 ## iterate through lines in file
                 for line in tsvfile:
@@ -858,7 +858,6 @@ class CONVERTER(object):
         iddict=dict()
 
         for id in idarr :
-          print 'id %s' % id
           if id.startswith('ivo:'):
              iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
              favurl=iddict['IVO']
@@ -1001,10 +1000,9 @@ class CONVERTER(object):
         invalue=invalue.encode('ascii','ignore').capitalize()
         maxr=0.0
         for line in disctab :
-            disc='%s' % line[2]
+            disc='%s' % line[2].strip()
             r=lvs.ratio(invalue,disc.title())
-            ##if r > 0.7 :
-            ##  print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
+            ##print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
                 maxdisc=disc
                 maxr=r
@@ -1083,11 +1081,18 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         year1epochsec=62135600400
+        utc1900=datetime.datetime.strptime("1900-01-01T11:59:59Z", "%Y-%m-%dT%H:%M:%SZ")
         utc=self.date2UTC(dt)
         try:
+           ##utctime=datetime.datetime(utc).isoformat()
+           ##print 'utctime %s' % utctime
            utctime = datetime.datetime.strptime(utc, "%Y-%m-%dT%H:%M:%SZ") ##HEW-?? .isoformat()
-           ##utctime = format_datetime(utc, "%Y-%m-%dT%H:%M:%S", locale='en')
-           sec=int(time.mktime(utctime.timetuple()))+year1epochsec
+           diff = utc1900 - utctime
+           diffsec= int(diff.days) * 24 * 60 *60
+           if diff > datetime.timedelta(0): ## date is before 1900
+              sec=int(time.mktime((utc1900).timetuple()))-diffsec+year1epochsec
+           else:
+              sec=int(time.mktime(utctime.timetuple()))+year1epochsec
         except Exception, e:
            self.logger.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (e,utc))
            return None
@@ -1439,7 +1444,7 @@ class CONVERTER(object):
                 else:
                      continue
               except Exception as e:
-                self.logger.error(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
+                self.logger.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
                 continue
 
            if (field.split('.')[0] == 'extras'): # append extras field
@@ -1658,7 +1663,7 @@ class CONVERTER(object):
             rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
 
         ##  instance of B2FIND discipline table
-        disctab = self.cv_diciplines()
+        disctab = self.cv_disciplines()
 
         # loop over all .json files in dir/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
