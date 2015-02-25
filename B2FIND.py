@@ -1414,6 +1414,14 @@ class CONVERTER(object):
            if len(result) > 0:
                return result
        return False
+
+    def add_unique_to_dict_list(self,dict_list, key, value):
+        for d in dict_list:
+            if d["key"] ==  key:
+                return d["value"]
+
+        dict_list.append({"key": key, "value": value})
+        return value
     
 
     def jsonmdmapper(self,dataset,jrules):
@@ -1431,11 +1439,11 @@ class CONVERTER(object):
            field=rule.strip('\n').split(' ')[0]
            jpath=rule.strip('\n').split(' ')[1]
 
-           if not jpath.startswith('$') :
-              value=jpath
-           else:
-              try: 
-                result=self.jsonpath(dataset, jpath, format)      
+           try:
+               if not jpath.startswith('$') :
+                value=jpath
+               else:
+                result=self.jsonpath(dataset, jpath, format)
                 if isinstance(result, (list, tuple)) and (len(result)>0):
                      if (len(result)==1):
                         value=self.jsonpath(dataset, jpath, format)[0]
@@ -1443,39 +1451,17 @@ class CONVERTER(object):
                         value=self.jsonpath(dataset, jpath, format)
                 else:
                      continue
-              except Exception as e:
+
+                if (field.split('.')[0] == 'extras'): # append extras field
+                   self.add_unique_to_dict_list(newds['extras'], field.split('.')[1], value)
+                else: # default field
+                   if not field in newds:
+                     newds[field]=value
+                   else:
+                     continue
+           except Exception as e:
                 self.logger.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
                 continue
-
-           if (field.split('.')[0] == 'extras'): # append extras field
-              newds['extras'].append({"key": field.split('.')[1], "value": value})
-           else: # default field
-              newds[field]=value
-
-###        else:
-###                   continue
-
-###
-###
-###
-#####                   print 'extr1 %s' % field.split('.')[0]
-###                   if (field.split('.')[0] == 'extras'):
-###                     if (len(result)==1):
-###                        newds['extras'].append({"key": field.split('.')[1], "value": self.jsonpath(dataset, jpath, format)[0]})
-###                     else:
-###                        newds['extras'].append({"key": field.split('.')[1], "value": self.jsonpath(dataset, jpath, format)})                        
-###                   else:
-###                     if (len(result)==1):
-###                        newds[field]=self.jsonpath(dataset, jpath, format)[0]
-###                     else:
-###                        newds[field]=self.jsonpath(dataset, jpath, format)
-###                else:
-###                   continue
-###                   ##print ' | %10s | %10s | %10s | \n' % (field,jpath,newds[field])
-###              except:
-###                log.info('    | [ERROR] processing rule %s : %s : %s' % (field,jpath,value))
-###                continue        
-###        ##HEW-T print 'newds %s' % newds
         return newds
       
     def postprocess(self,dataset,rules):
@@ -1869,10 +1855,11 @@ class CONVERTER(object):
         results['tcount'] = len(files)
 
         oaiset=path.split(mdformat)[1].split('_')[0].strip('/')
-        outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+path.split(mdformat)[1].split('_')[0]+'/xml'
+        ## outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+path.split(mdformat)[1].split('_')[0]+'/xml'
+        outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/xml'
         print 'outpath %s' % outpath
-        if (not os.path.isdir(path+'/b2find')):
-             os.makedirs(path+'/b2find')
+        if (not os.path.isdir(outpath)):
+             os.makedirs(outpath)
 
         self.logger.info(' %s     INFO  OAI-Converter of files in %s/json' % (time.strftime("%H:%M:%S"),path))
         print  '    |   | %-4s | %-40s | %-40s |\n   |%s|' % ('#','infile','outfile',"-" * 53)
