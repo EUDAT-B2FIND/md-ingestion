@@ -787,7 +787,7 @@ class CONVERTER(object):
             disctab = []
             with open(discipl_file, 'r') as f:
                 ## define csv reader object, assuming delimiter is tab
-                tsvfile = csv.reader(f, delimiter='/')
+                tsvfile = csv.reader(f, delimiter='\t')
 
                 ## iterate through lines in file
                 for line in tsvfile:
@@ -1004,7 +1004,7 @@ class CONVERTER(object):
         for line in disctab :
             disc='%s' % line[2].strip()
             r=lvs.ratio(invalue,disc.title())
-            ##print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
+            ## print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
                 maxdisc=disc
                 maxr=r
@@ -1442,9 +1442,9 @@ class CONVERTER(object):
            jpath=rule.strip('\n').split(' ')[1]
 
            try:
-               if not jpath.startswith('$') :
+              if not jpath.startswith('$') :
                 value=jpath
-               else:
+              else:
                 result=self.jsonpath(dataset, jpath, format)
                 if isinstance(result, (list, tuple)) and (len(result)>0):
                      if (len(result)==1):
@@ -1454,9 +1454,9 @@ class CONVERTER(object):
                 else:
                      continue
 
-                if (field.split('.')[0] == 'extras'): # append extras field
+              if (field.split('.')[0] == 'extras'): # append extras field
                    self.add_unique_to_dict_list(newds['extras'], field.split('.')[1], value)
-                else: # default field
+              else: # default field
                    if not field in newds:
                      newds[field]=value
                    else:
