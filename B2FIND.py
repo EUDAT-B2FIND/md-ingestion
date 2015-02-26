@@ -187,7 +187,7 @@ class CKAN_CLIENT(object):
                 self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                print self.logger.debug('\tMaybe the dataset already exists or you have a parameter error?')
+                self.logger.debug('\tMaybe the dataset already exists or you have a parameter error?')
                 self.action('package_update',data_dict)
                 return {"success" : False}
             elif ( e.code == 409):
@@ -967,9 +967,11 @@ class CONVERTER(object):
         """
         try:
           if type(invalue) is dict :
-            if invalue["boundingBox"] :
+            if "boundingBox" in invalue :
                coordict=invalue["boundingBox"]
                return (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+            else:
+               return
           else:
             coordarr=invalue.split()
             for coord in coordarr:
@@ -1702,17 +1704,21 @@ class CONVERTER(object):
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'SpatialCoverage':
+                               if extra['value']['description']:
+                                  extra['value']=extra['value']['description']
                                slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
                                  spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
-                               extra['value'] = extra['value']['description'] or ''
+                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
+                                 extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
                             elif extra['key'] == 'TemporalCoverage':
                                stime,etime=self.map_temporal(extra['value'])
+                               if 'period' in extra['value'] :
+                                 extra['value']=extra['value']['period']
+                               elif '@type' in extra['value'].keys() :
+                                 extra['value']=extra['value']['@type']
                                if stime and etime:
-                                 extra['value']=extra['value']['@type']+': ( %s - %s ) ' % (stime,etime)
-                               elif extra['value']['period'] :
-                                 extra['value']=extra['value']['period']                                 
+                                 extra['value']+=': ( %s - %s ) ' % (stime,etime)
                             elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
