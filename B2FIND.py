@@ -187,7 +187,7 @@ class CKAN_CLIENT(object):
                 self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                print self.logger.debug('\tMaybe the dataset already exists or you have a parameter error?')
+                self.logger.debug('\tMaybe the dataset already exists or you have a parameter error?')
                 self.action('package_update',data_dict)
                 return {"success" : False}
             elif ( e.code == 409):
@@ -787,7 +787,7 @@ class CONVERTER(object):
             disctab = []
             with open(discipl_file, 'r') as f:
                 ## define csv reader object, assuming delimiter is tab
-                tsvfile = csv.reader(f, delimiter='/')
+                tsvfile = csv.reader(f, delimiter='\t')
 
                 ## iterate through lines in file
                 for line in tsvfile:
@@ -967,9 +967,11 @@ class CONVERTER(object):
         """
         try:
           if type(invalue) is dict :
-            if invalue["boundingBox"] :
+            if "boundingBox" in invalue :
                coordict=invalue["boundingBox"]
                return (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+            else:
+               return
           else:
             coordarr=invalue.split()
             for coord in coordarr:
@@ -1002,7 +1004,7 @@ class CONVERTER(object):
         for line in disctab :
             disc='%s' % line[2].strip()
             r=lvs.ratio(invalue,disc.title())
-            ##print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
+            ## print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
                 maxdisc=disc
                 maxr=r
@@ -1440,9 +1442,9 @@ class CONVERTER(object):
            jpath=rule.strip('\n').split(' ')[1]
 
            try:
-               if not jpath.startswith('$') :
+              if not jpath.startswith('$') :
                 value=jpath
-               else:
+              else:
                 result=self.jsonpath(dataset, jpath, format)
                 if isinstance(result, (list, tuple)) and (len(result)>0):
                      if (len(result)==1):
@@ -1452,9 +1454,9 @@ class CONVERTER(object):
                 else:
                      continue
 
-                if (field.split('.')[0] == 'extras'): # append extras field
+              if (field.split('.')[0] == 'extras'): # append extras field
                    self.add_unique_to_dict_list(newds['extras'], field.split('.')[1], value)
-                else: # default field
+              else: # default field
                    if not field in newds:
                      newds[field]=value
                    else:
@@ -1702,17 +1704,21 @@ class CONVERTER(object):
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'SpatialCoverage':
+                               if extra['value']['description']:
+                                  extra['value']=extra['value']['description']
                                slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
                                  spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue }) 
-                               extra['value'] = extra['value']['description'] or ''
+                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
+                                 extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
                             elif extra['key'] == 'TemporalCoverage':
                                stime,etime=self.map_temporal(extra['value'])
+                               if 'period' in extra['value'] :
+                                 extra['value']=extra['value']['period']
+                               elif '@type' in extra['value'].keys() :
+                                 extra['value']=extra['value']['@type']
                                if stime and etime:
-                                 extra['value']=extra['value']['@type']+': ( %s - %s ) ' % (stime,etime)
-                               elif extra['value']['period'] :
-                                 extra['value']=extra['value']['period']                                 
+                                 extra['value']+=': ( %s - %s ) ' % (stime,etime)
                             elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
