@@ -1,10 +1,11 @@
 """B2FIND.py - classes for B2FIND management : 
-  - CKAN_CLIENT Executes CKAN APIs (interface to CKAN)
-  - HARVESTER   Harvests from a OAI-PMH server
-  - CONVERTER   Converts XML files to JSON files with Lari's converter and by using mapfiles
-  - UPLOADER    Uploads JSON files to CKAN portal
-  - POSTPROCESS Run postprocess routines on JSON files
-  - OUTPUT      Initializes the logger class and provides methods for saving log data and for printing those.    
+  - CKAN_CLIENT  executes CKAN APIs (interface to CKAN)
+  - HARVESTER    harvests from a OAI-PMH server
+  - CONVERTER    converts XML files to JSON files and performs semantic mapping
+  - VALIDATER    validates JSON records against the B2FIND MD schema
+  - UPLOADER     uploads JSON files to CKAN portal
+  - OAICONVERTER converts JSON fields to XML files to provide via OAI-PMH in B2FIND schema
+  - OUTPUT       initializes the logger class and provides methods for saving log data and for printing those.    
 
 Install required modules as simplejson, e.g. by :
 
@@ -750,23 +751,23 @@ class CONVERTER(object):
                    "title" : "title", 
                    "notes" : "description",
                    "tags" : "tags",
-                   "url" : "source", 
-                   "doi" : "doi",
-                   "pid" : "pid",
-                   "checksum" : "checksum",
-                   "rights" : "rights",
-                   "community" : "community",
-                   "discipline" : "discipline",
-                   "author" : "creator", 
-                   "publisher" : "publisher",
-                   "publicationyear" : "publicationyear",
-                   "language" : "language",
-                   "temporalcoverage" : "temporalcoverage",
-                   "spatialcoverage" : "spatialcoverage",
-                   "contact" : "contact",
-                   "metadata" : "metadata"
+                   "url" : "Source", 
+                   "DOI" : "DOI",
+                   "PID" : "PID",
+                   "Checksum" : "checksum",
+                   "Rights" : "rights",
+                   "Community" : "community",
+                   "Discipline" : "discipline",
+                   "author" : "Creator", 
+                   "Publisher" : "publisher",
+                   "Publicationyear" : "PublicationYear",
+                   "Language" : "language",
+                   "TemporalCoverage" : "temporalcoverage",
+                   "SpatialCoverage" : "spatialcoverage",
+                   "Format" : "format",
+                   "Contact" : "contact",
+                   "MetadataAccess" : "metadata"
                               }  
-        self.mdschemalist = [ "title","description","tags","source","doi","pid","checksum","rights","community","discipline","creator","publisher","publicationyear","language","temporalcoverage","spatialcoverage","contact","metadata"]     
        
     class cv_disciplines(object):
         """
@@ -861,7 +862,7 @@ class CONVERTER(object):
           if id.startswith('ivo:'):
              iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
              favurl=iddict['IVO']
-          elif id.startswith('10.1594') or id.startswith('10.5286'):
+          elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
              iddict['DOI'] = self.concat('http://dx.doi.org/',id)
              favurl=iddict['DOI']
           elif 'doi:' in id or 'doi.org/' in id:
@@ -1003,7 +1004,7 @@ class CONVERTER(object):
         maxr=0.0
         for line in disctab :
             disc='%s' % line[2].strip()
-            r=lvs.ratio(invalue,disc.title())
+            r=lvs.ratio(invalue,disc)
             ## print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
                 maxdisc=disc
@@ -1780,6 +1781,174 @@ class CONVERTER(object):
     
         return results
 
+
+    def check_url(self,url):
+        ## check_url (UPLOADER object, url) - method
+        # Checks and validates a url via urllib module
+        #
+        # Parameters:
+        # -----------
+        # (url)  url - Url to check
+        #
+        # Return Values:
+        # --------------
+        # 1. (boolean)  result
+
+        try:
+            return urllib2.urlopen(url, timeout=1).getcode() < 501
+        except IOError:
+            return False
+        except urllib2.URLError as e:
+            return False    #catched
+        except socket.timeout as e:
+            return False    #catched
+
+
+    def is_valid_value(self,facet,value):
+        """
+        checks if value is the correct for the given facet
+        """
+        if self.str_equals(facet,'PublicationTimestamp'):
+            return isUTC(value)
+        ##HEW!!! 
+        if self.str_equals(facet,'url'): 
+        ##HEW!!!    
+            print 'churl %s' % self.check_url(value)
+            return self.check_url(value)
+        if self.str_equals(facet,'Language'):
+            ##HEW-CHGreturn language_exists(value)
+            if self.map_lang(value) is not None:
+               return True
+        if self.str_equals(facet,'Country'):
+            return country_exists(value)
+        # to be continued for every other facet
+    
+
+
+
+    def validate(self,community,mdformat,path):
+        ## validate(CONVERTER object, community, mdformat, path) - method
+        # validates the (mapped) JSON files in directory <path> against the B2FIND md schema
+        # Parameters:
+        # -----------
+        # 1. (string)   community - B2FIND community the md are harvested from
+        # 2. (string)   mdformat -  metadata format of original harvested source (not needed her)
+        # 3. (string)   path - path to subset directory 
+        #      (without (!) 'json' subdirectory)
+        #
+        # Return Values:
+        # --------------
+        # 1. (dict)     validation (and result) statistics
+    
+        results = {
+            'count':0,
+            'tcount':0,
+            'ecount':0,
+            'time':0
+        }
+        
+        # check paths
+        if not os.path.exists(path):
+            self.logger.error('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            return results
+        elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
+            self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            return results
+    
+        # find all .json files in path/json:
+        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        
+        results['tcount'] = len(files)
+
+        oaiset=path.split(mdformat)[1].split('_')[0].strip('/')
+        
+        self.logger.info(' %s     INFO  Validation of files in %s/json' % (time.strftime("%H:%M:%S"),path))
+        print  '    |   | %-4s | %-40s |\n   |%s|' % ('#','infile',"-" * 53)
+
+        totstats=dict()
+        for facet in self.ckan2b2find.keys():
+            totstats[facet]={
+              'mapped':0,
+              'valid':0
+            }              
+
+
+        fcount = 0
+        for filename in files:
+            fcount+=1
+            identifier=oaiset+'_%06d' % fcount
+
+            jsondata = dict()
+            self.logger.info(' |- %s     INFO  VALIDATOR - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
+            self.logger.info('    | v | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+
+            if ( os.path.getsize(path+'/json/'+filename) > 0 ):
+                with open(path+'/json/'+filename, 'r') as f:
+                    try:
+                        jsondata=json.loads(f.read())
+                    except:
+                        log.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
+                        results['ecount'] += 1
+                        continue
+            else:
+                results['ecount'] += 1
+                continue
+            
+            try:
+
+
+              stats=dict()
+              for facet in self.ckan2b2find.keys():
+                    if facet.startswith('#'):
+                        continue
+                    stats[facet]={
+                        'mapped':0,
+                        'valid':0
+                        }
+                    value = None
+                    if facet in jsondata:
+                        value = jsondata[facet]
+                    else:
+                        for extra in jsondata['extras']:
+                            if self.str_equals(extra['key'],facet):
+                                value = extra['value']                   
+                    if value:
+                        stats[facet]['mapped']+=1  
+                        if self.is_valid_value(facet,value):
+                            stats[facet]['valid']+=1  
+
+              for field in stats:
+                 totstats[field]['mapped']+=stats[field]['mapped']
+                 totstats[field]['valid']+=stats[field]['valid']
+            except IOError, e:
+                self.logger.error("[ERROR] %s : Cannot write statistics to file '%s'\n" % (outfile,e))
+                ###stats['ecount'] +=1
+                return(False, outfile , path, fcount)
+
+        outfile='%s/%s' % (path,'validation.stat')
+        print 'Statistics of %d checked json files\n\t(see as well in %s)\n' % (fcount,outfile)        
+        print "{:<20} {:<16} {:<16}".format('Facet name','Mapped','Validated')
+        print "{:<20} {:<8} {:<8} {:<8} {:<8}".format('','#','Coverage','#','Coverage')
+        printstats="{:<20} {:<16} {:<16}\n".format('Facet name','Mapped','Validated')
+        printstats+="{:<20} {:<8} {:<8} {:<8} {:<8}\n".format('','#','Coverage','#','Coverage')
+        for field in totstats:
+            #print 'f %s' % field
+            print "{:<20} {:<8} {:<8} {:<8} {:<8}".format(field,totstats[field]['mapped'],totstats[field]['mapped']/fcount,totstats[field]['valid'],totstats[field]['valid']/fcount)
+            printstats+="{:<20} {:<8} {:<8} {:<8} {:<8}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']/fcount,totstats[field]['valid'],totstats[field]['valid']/fcount)
+
+
+        f = open(outfile, 'w')
+        f.write(printstats)
+        f.write("\n")
+        f.close
+
+        self.logger.info('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+
+        # count ... all .json files in path/json
+        results['count'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path)))
+    
+        return results
+
     def json2xml(self,json_obj, line_padding="", mdftag=""):
         result_list = list()
         json_obj_type = type(json_obj)
@@ -1821,7 +1990,6 @@ class CONVERTER(object):
                     else:
                         self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
-            ##HEW-?? result_list=result_list.sort(key=lambda x: self.mdschemalist.index(x[0]))
             return "\n".join(result_list)
 
         return "%s%s" % (line_padding, json_obj)
@@ -2506,7 +2674,7 @@ class OUTPUT (object):
         # -----------
         # (string)  request - normal request named by <community>-<mdprefix> or a special request which begins with a '#'
         # (string)  subset - ...
-        # (string)  mode - process mode (can be 'h', 'c','u' or 'o')
+        # (string)  mode - process mode (can be 'h', 'c', 'v', 'u' or 'o')
         # (dict)    stats - a dictionary with results stats
         #
         # Return Values:
@@ -2540,6 +2708,13 @@ class OUTPUT (object):
                         'avg':0,
                     },
                     'c':{
+                        'count':0,
+                        'ecount':0,
+                        'tcount':0,
+                        'time':0,
+                        'avg':0
+                    },
+                    'v':{
                         'count':0,
                         'ecount':0,
                         'tcount':0,

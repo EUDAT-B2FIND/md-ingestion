@@ -49,7 +49,7 @@ def main():
     ManagerVersion = '1.0'
 
     # parse command line options and arguments:
-    modes=['h','harvest','c','convert','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
+    modes=['h','harvest','c','convert','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
     p = options_parser(modes)
     global options
     options,arguments = p.parse_args()
@@ -151,7 +151,7 @@ def main():
 
 def process(options,pstat,OUT):
     ## process (options,pstat,OUT) - function
-    # Starts the specific process routines for harvesting, converting, oaiconverting and uploading
+    # Starts the specific process routines for harvesting, converting, validating, oai-converting and uploading
     #
     # Parameters:
     # -----------
@@ -216,6 +216,21 @@ def process(options,pstat,OUT):
                     options.outdir + '/' + options.mdprefix,
                     options.mdsubset
                 ]])
+        ## VALIDATOR - Mode:  
+        if (pstat['status']['v'] == 'tbd'):
+            CV = B2FIND.CONVERTER(OUT)
+        
+            # start the process converting:
+            if mode is 'multi':
+                process_validate(CV, parse_list_file('validate', OUT.convert_list or options.list, options.community,options.mdsubset))
+            else:
+                process_validate(CV,[[
+                    options.community,
+                    options.source,
+                    options.mdprefix,
+                    options.outdir + '/' + options.mdprefix,
+                    options.mdsubset
+                ]])
         ## OAI-CONVERTING - Mode:  
         if (pstat['status']['o'] == 'tbd'):
             CV = B2FIND.CONVERTER(OUT)
@@ -266,18 +281,18 @@ def process(options,pstat,OUT):
             logger.critical("[CRITICAL] Deleting mode only supported in 'multi mode' and an explicitly deleting script given !")
 
 
-## process_harvest (HARVESTER object, rlist) - function
-# Harvests per request.
-#
-# Parameters:
-# -----------
-# (object)  HARVESTER - object from the class HARVESTER
-# (list)    rlist - list of request lists 
-#
-# Return Values:
-# --------------
-# None
 def process_harvest(HV, rlist):
+    ## process_harvest (HARVESTER object, rlist) - function
+    # Harvests per request.
+    #
+    # Parameters:
+    # -----------
+    # (object)  HARVESTER - object from the class HARVESTER
+    # (list)    rlist - list of request lists 
+    #
+    # Return Values:
+    # --------------
+    # None
     for request in rlist:
         logger.info('\n## Harvesting request %s##' % request)
         
@@ -290,26 +305,23 @@ def process_harvest(HV, rlist):
         harvesttime=time.time()-harveststart
         #results['time'] = harvesttime
     
-    
-## process_convert (CONVERTER object, rlist) - function
-# Converts per request.
-#
-# Parameters:
-# -----------
-# (object)  CONVERTER - object from the class CONVERTER
-# (list)    rlist - list of request lists 
-#
-# Return Values:
-# --------------
-# None
 def process_convert(CV, rlist):
-
+    ## process_convert (CONVERTER object, rlist) - function
+    # Converts per request.
+    #
+    # Parameters:
+    # -----------
+    # (object)  CONVERTER - object from the class CONVERTER
+    # (list)    rlist - list of request lists 
+    #
+    # Return Values:
+    # --------------
+    # None
     for request in rlist:
         logger.info('\n## Mapping request %s##' % request)
         
         cstart = time.time()
         
-        #            convert(community ,mdprefix  ,absolute path with subset directory       )
         results = CV.convert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
 
         ctime=time.time()-cstart
@@ -318,7 +330,31 @@ def process_convert(CV, rlist):
         # save stats:
         CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'c',results)
         
+def process_validate(CV, rlist):
+    ## process_validate (CONVERTER object, rlist) - function
+    # Validates per request.
+    #
+    # Parameters:
+    # -----------
+    # (object)  CONVERTER - object from the class CONVERTER
+    # (list)    rlist - list of request lists 
+    #
+    # Return Values:
+    # --------------
+    # None
+    for request in rlist:
+        logger.info('\n## Mapping request %s##' % request)
+        
+        cstart = time.time()
+        
+        results = CV.validate(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
 
+        ctime=time.time()-cstart
+        results['time'] = ctime
+        
+        # save stats:
+        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+        
 def process_oaiconvert(CV, rlist):
 
     for request in rlist:
@@ -450,8 +486,6 @@ def process_upload(UP, rlist, options):
             # exceptions for some communities:
             if (community == 'clarin' and oai_id.startswith('mi_')):
                 mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
-##HEW-D            elif (community == 'gbif'):
-##HEW-D                mdaccess =reqpre+'&identifier=oai:metadata.gbif.org:eml/portal/'+oai_id
             elif (community == 'sdl'):
                 mdaccess =reqpre+'&identifier=oai::record/'+oai_id
 
@@ -730,14 +764,14 @@ def parse_list_file(process,filename,community='',subset=''):
                 logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Either 4 or 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
                 exit_program()
                 
-        if(process == 'convert' or process == 'oaiconvert' or process == 'upload' or process == 'delete'):
+        ##HEW-CHG if(process == 'convert' or process == 'oaiconvert' or process == 'upload' or process == 'delete'):
+        else:
             if len(reqlist[-1]) != 5:
                 logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Only 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
                 exit_program()
     
     return reqlist
 
-    
 def options_parser(modes):
     
     descI="""           I.  Ingestion of metadata comprising                                           
@@ -751,17 +785,14 @@ def options_parser(modes):
 """ + descI,
         formatter = optparse.TitledHelpFormatter(),
         prog = 'manager.py',
-        epilog='For any further information and documentation please look at README.txt file or at the EUDAT wiki (https://confluence.csc.fi/display/Eudat/B2FIND+Manager).',
+        epilog='For any further information and documentation please look at the README.md file or at the EUDAT wiki (http://eudat.eu/b2find).',
         version = "%prog " + ManagerVersion
     )
-   
         
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
-    p.add_option('--mode', '-m', metavar=' ' + " | ".join(modes), help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (o)aiconverting and (u)ploading. default is h-u, i.e. a total ingestion', default='h-u')
-
-    p.add_option('--check_mappings', help="Check all mappings which are stored in './maptables/' for converting the .xml in .json format and choose the mapping table with the best results.", default=None, metavar='BOOLEAN')
+    p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", default='', metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
     p.add_option('--epic_check', 
@@ -809,7 +840,7 @@ def pstat_init (p,modes,mode,source,iphost):
         mode = 'h-u'
  
     # initialize status, count and timing of processes
-    plist=['a','h','c','u','o','d']
+    plist=['a','h','c','v','u','o','d']
     pstat = {
         'status' : {},
         'text' : {},
@@ -837,6 +868,7 @@ def pstat_init (p,modes,mode,source,iphost):
        
     pstat['text']['h']='Harvest community XML files from ' + stext 
     pstat['text']['c']='Convert community XML to B2FIND JSON and do semantic mapping'  
+    pstat['text']['v']='Validate JSON records against B2FIND schema'  
     pstat['text']['o']='OAI-Convert B2FIND JSON to B2FIND XML'  
     pstat['text']['u']='Upload JSON records as datasets into B2FIND %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
@@ -844,6 +876,7 @@ def pstat_init (p,modes,mode,source,iphost):
     pstat['short']['h-u']='TotalIngestion'
     pstat['short']['h']='Harvesting'
     pstat['short']['c']='Converting'
+    pstat['short']['v']='Validating'
     pstat['short']['o']='OAIconverting'
     pstat['short']['u']='Uploading'
     pstat['short']['d']='Deletion'
