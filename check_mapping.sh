@@ -1,4 +1,5 @@
 #!/bin/bash
+LC_NUMERIC=C LC_COLLATE=C
 
 ## ----------- checks mapping of B2FIND records -------------
 
@@ -13,7 +14,7 @@ usage() {
     printf "\t${b}--community, -c COMMUNITY\tB2FIND ${u}community${n} to check (required).\n"
     printf "\t${b}--mdformat, -m MDFORMAT  \tOAI ${u}metadata format{n} (default is oai_dc)\n"
     printf "\t${b}--set, -s OAISET         \t${u}OAI sets${n} to check (if not given, all subsets (subdirs) of community are checked.)\n"
-    printf "\t${b}--field, -f FIELD        \t${n}B2FIND ${u}field${n} to check (default is Disciline).\n"
+    printf "\t${b}--field, -f FIELD        \t${n}B2FIND ${u}field${n} to check.\n"
     printf "\t${b}--node, -n NODE          \t${n}XML/JSON ${u}node${n} to check (optional).\n"
     exit 0
 }
@@ -34,10 +35,10 @@ while [[ -n $1 ]] ; do
   shift
 done
 
-if [ -z "$field" ]
-then
-  field='Discipline'
-fi
+##if [ -z "$field" ]
+##then
+##  field='Discipline'
+##fi
 
 if [ -z "$comm" ]
 then
@@ -59,6 +60,7 @@ echo -e "\n-Community\t $comm"
 echo -e "-MDformat \t $mdformat"
 echo -e "-OAI sets \t $oaisets"
 echo -e "-Field    \t $field"
+
 if [ -n "$node" ]
 then
   echo -e "-Node     \t $node"
@@ -68,14 +70,19 @@ if [ $mdformat = 'json' ]
 then
     hdir='hjson'
     hext='json'
+    nline=''
 else
     hdir='xml'
     hext='xml'
+    nline='-A1'
 fi
 
 if [ $mdformat = 'marcxml' ]
 then
     tagchar='tag="'
+elif [ $mdformat = 'json' ]
+then
+    tagchar='"'
 else
     tagchar='<'
 fi
@@ -84,27 +91,42 @@ fi
 for oaiset in $oaisets
 do
   echo -e "\n|-OAI set >> $oaiset << ----"
-  echo -e " |- Total # of json files     \t$(ls oaidata/${comm}-${mdformat}/${oaiset}/json/* | wc -l)"
+  njson=$(ls oaidata/${comm}-${mdformat}/${oaiset}/json/* | wc -l)
+  echo -e " |- Total # of json files     \t$njson "
   if [ -n "$node" ]
   then
-    echo -e " |- Total # of node \"$node\" \t$(grep -c ${tagchar}${node} oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
-    echo -e " | #rec | with node value .."
-    grep  -A1 ${tagchar}${node}  oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/*.${hext} | cut -d'>' -f2 | cut -d'<' -f1 | cut -d'"' -f2 | sort | uniq -c | sort -rn | head -10
+    echo -e "  |- Node $node "
+    echo -e "   |- Total # of node >>$node<< \t$(grep -c ${tagchar}${node} oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
+    echo -e "   | #rec | with node value .."
+set -x
+    grep  -A1 ${tagchar}${node}  oaidata/${comm}-${mdformat}/${oaiset}/${hdir}/*.${hext} | cut -d'>' -f2 | cut -d'<' -f1 | cut -d':' -f3 | sort | uniq -c | sort -rn | head -10
 ##  echo -e " |- Files with node \"$node\" \t$(grep $node oaidata/${comm}-${mdformat}/${oaiset}/xml/*)"
   fi
-  deflist="author title url"
-  if [[ $deflist =~ (^| )${field}($| ) ]]
+  printf '   |- %-15s | %+6s | %+6s |\n' "Fieldname" "# of matches" "Coverage [%}" 
+  if [ -n "$field" ]
   then
-    echo -e " |- Total # of mapped field  >>${field}<< \t$(grep -c "\"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
-  else
-    echo -e " |- Total # of mapped field  >>${field}<< \t$(grep -c "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')"
-  fi
-  echo -e " | #rec | filed mapped on value .."
-  if [[ $deflist =~ (^| )${field}($| ) ]]
-  then
-    grep "\"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d':' -f2- | sort -nr | uniq -c | sort -nr 
-  else
-    grep -A1 "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | grep value | cut -d':' -f2- | sort | uniq -c | sort -nr
+    echo -e "  |- Field $field "
+    deflist="author title url"
+    if [[ $deflist =~ (^| )${field}($| ) ]]
+    then
+      searchstr=''
+    else
+      searchstr=' -e "key": '
+    fi
+    set -x
+    nmapped=$(grep $searchstr -e "$field" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')
+    printf '   |- Total # of mapped entities %s' "$nmapped"
+    cov=$( echo "$nmapped / $njson * 100" | bc -l)
+    printf '   |- Coverage %3.0f %% \n' "$cov"
+    ##  nmapped=$(grep -c -h "\"key\": \"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d: -f2 | awk '{total = total + $1}END{print total}')
+    echo -e " | #rec | vaules $field is mapped on .. (show max. first 20 entries) "
+    if [[ $deflist =~ (^| )${field}($| ) ]]
+    then
+      grep -h "\"${field}\"" oaidata/${comm}-${mdformat}/${oaiset}/json/* | cut -d':' -f2- | sort -nr | uniq -c | sort -nr | head -20 
+    else
+      grep -h -F -A1 "$searchstr" oaidata/${comm}-${mdformat}/${oaiset}/json/* | grep value | cut -d':' -f2- | sort | uniq -c | sort -nr | head -20
+      #set +x
+    fi
   fi
  ## instead awk '{print $3}'
   ## grep -A1 '"key": "${field}"' oaidata/${comm}-${mdformat}/${oaiset}/json/* | grep value 
