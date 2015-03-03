@@ -861,7 +861,7 @@ class CONVERTER(object):
           if id.startswith('ivo:'):
              iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
              favurl=iddict['IVO']
-          elif id.startswith('10.1594') or id.startswith('10.5286'):
+          elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
              iddict['DOI'] = self.concat('http://dx.doi.org/',id)
              favurl=iddict['DOI']
           elif 'doi:' in id or 'doi.org/' in id:
