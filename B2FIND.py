@@ -957,17 +957,17 @@ class CONVERTER(object):
             elif '@type' in invalue :
                 desc=invalue['@type']
             if invalue['@type'] == 'single':
-               desc+=' periode : ( %s - %s )' % (self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
+               desc+=' point in time : %s' % self.date2UTC(invalue["date"])
                return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
             elif invalue["start"] and invalue["end"] :
-               desc+=': periode ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
+               desc+=': period ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
                return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
           else:
             outlist=list()
             invlist=invalue.split(';')
             if len(invlist) == 1 :
                 try:
-                    desc+=' periode : ( %s - %s )' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[0])) 
+                    desc+=' point in time : %s' % self.date2UTC(invlist[0]) 
                     return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[0]))
                 except ValueError:
                     return (desc,None,None)
@@ -976,7 +976,7 @@ class CONVERTER(object):
 ##                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[0]))
             elif len(invlist) == 2 :
                 try:
-                    desc+=': ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
+                    desc+=': period ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
                     return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[1]))
                 except ValueError:
                     return (desc,None,None)
@@ -1086,8 +1086,11 @@ class CONVERTER(object):
             valarr=list(set(valarr)) ## this eliminates real duplicates
             dictlist=[]
             for entry in valarr:
-               entrydict={ "name": entry }  
-               dictlist.append(entrydict)
+               if entry.strip():
+                   entrydict={ "name": entry }  
+                   dictlist.append(entrydict)
+               else:
+                   continue
         else:
             return invalue
         return dictlist
@@ -1160,7 +1163,7 @@ class CONVERTER(object):
       
     def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
         """
-        split string in list of string and transfer to list of dict's { "name" : "substr1" }      
+        split string in list of string and transfer to list of dict's [ { "name1" : "substr1" }, ... ]      
         """
         na_arr=['not applicable']
         for facet in dataset:
