@@ -760,10 +760,12 @@ class CONVERTER(object):
                    "Discipline" : "discipline",
                    "author" : "Creator", 
                    "Publisher" : "publisher",
-                   "Publicationyear" : "PublicationYear",
+                   "PublicationYear" : "PublicationYear",
+                   "PublicationTimestamp" : "PublicationTimestamp",
                    "Language" : "language",
                    "TemporalCoverage" : "temporalcoverage",
                    "SpatialCoverage" : "spatialcoverage",
+                   "spatial" : "spatial",
                    "Format" : "format",
                    "Contact" : "contact",
                    "MetadataAccess" : "metadata"
@@ -946,18 +948,44 @@ class CONVERTER(object):
         Copyright (C) 2015 Heinrich Widmann
         Licensed under AGPLv3.
         """
+        desc=''
         try:
           if type(invalue) is dict :
             invt=invalue['@type']
+            if 'period' in invalue :
+                desc=invalue['period']
+            elif '@type' in invalue :
+                desc=invalue['@type']
             if invalue['@type'] == 'single':
-               return (self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
+               desc+=' periode : ( %s - %s )' % (self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
+               return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
             elif invalue["start"] and invalue["end"] :
-               return (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
+               desc+=': periode ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
+               return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
           else:
-            return
+            outlist=list()
+            invlist=invalue.split(';')
+            if len(invlist) == 1 :
+                try:
+                    desc+=' periode : ( %s - %s )' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[0])) 
+                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[0]))
+                except ValueError:
+                    return (desc,None,None)
+##                else:
+##                    desc+=': ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[0])) 
+##                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[0]))
+            elif len(invlist) == 2 :
+                try:
+                    desc+=': ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
+                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[1]))
+                except ValueError:
+                    return (desc,None,None)
+##                else:
+##                    desc+=': ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
+##                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[1]))
         except Exception, e:
            self.logger.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
-           return (None,None)
+           return (None,None,None)
 
     def map_spatial(self,invalue):
         """
@@ -966,31 +994,37 @@ class CONVERTER(object):
         Copyright (C) 2014 Heinrich Widmann
         Licensed under AGPLv3.
         """
+        desc=''
         try:
           if type(invalue) is dict :
+            if "description" in invalue :
+               desc=invalue["description"]
             if "boundingBox" in invalue :
                coordict=invalue["boundingBox"]
-               return (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
-            else:
-               return
+               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+            ## slat,wlon,nlat,elon=
+            return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
           else:
-            coordarr=invalue.split()
-            for coord in coordarr:
-              try:
-                float(coord)
-              except ValueError:
-                return (None,None,None,None)
+            inarr=invalue.split()
+            coordarr=list()
+            nc=0
+            for str in inarr:
+              if type(str) is float :
+                coordarr[nc]=str
+                nc+=1
+              else:
+                desc+=' '+str
             if len(coordarr)==2 :
-              return(coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+              desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+              return(desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
             elif  len(coordarr)==4 :
-              return(coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+              desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+              return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
             else:
-              return
-##HEW-D          elif:
-##HEW-D            lat,lon=self.map_geonames(extra['value'])
+              return(None,None,None,None,None)
         except Exception, e:
            self.logger.error('[ERROR] : %s - in map_spatial %s can not converted !' % (e,invalue))
-           return (None,None,None,None) 
+           return (None,None,None,None,None) 
 
     def map_discipl(self,invalue,disctab):
         """
@@ -1682,8 +1716,10 @@ class CONVERTER(object):
                     continue
 
                 iddict=dict()
+                spvalue=None
                 stime=None
                 etime=None
+                publdate=None
                 # loop over all fields
                 for facet in jsondata:
                    if facet == 'author':
@@ -1699,33 +1735,27 @@ class CONVERTER(object):
                               extra['value']=self.uniq(extra['value'])
                               if len(extra['value']) == 1:
                                  extra['value']=extra['value'][0] 
-                            elif extra['key'] == 'identifiers':
+                            if extra['key'] == 'identifiers':
                               iddict = self.map_identifier(extra['value'])
                                    ##HEW-T print 'key %s' % key
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'SpatialCoverage':
-                               if extra['value']['description']:
-                                  extra['value']=extra['value']['description']
-                               slat,wlon,nlat,elon=self.map_spatial(extra['value'])
+                               desc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
                                  spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
-                                 extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
+                                 ##extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
+                               if desc :
+                                 extra['value']=desc
                             elif extra['key'] == 'TemporalCoverage':
-                               stime,etime=self.map_temporal(extra['value'])
-                               if 'period' in extra['value'] :
-                                 extra['value']=extra['value']['period']
-                               elif '@type' in extra['value'].keys() :
-                                 extra['value']=extra['value']['@type']
-                               if stime and etime:
-                                 extra['value']+=': ( %s - %s ) ' % (stime,etime)
+                               desc,stime,etime=self.map_temporal(extra['value'])
+                               if desc:
+                                  extra['value']=desc
                             elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
                               extra['value'] = self.cut(extra['value'],'-',4)
-                            elif extra['key'] == 'PublicationTimestamp' or extra['key'].startswith('Temporal') : # generic mapping of TempCoverageEnd
-                              extra['value'] = self.date2UTC(extra['value'])
+                              publdate=self.date2UTC(extra['value'])
                       except Exception as e:
                           self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
                           ##HEW??? results['ecount'] += 1
@@ -1738,11 +1768,16 @@ class CONVERTER(object):
                         jsondata['url']=iddict['url']
                     else:
                         jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
+                if spvalue :
+                    jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
                 if stime and etime :
                     jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
                     jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
                     jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
                     jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
+
+                if publdate :
+                    jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate }) 
 
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
                 ##with io.open(path+'/json/'+filename, 'w') as json_file:
@@ -1808,17 +1843,36 @@ class CONVERTER(object):
         """
         checks if value is the correct for the given facet
         """
+        if self.str_equals(facet,'Discipline'):
+            if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
+                return False
+            else :
+                return True
+        if self.str_equals(facet,'PublicationYear'):
+            try:
+                datetime.datetime.strptime(value, '%Y')
+            except ValueError:
+                errmsg = "%s value %s has incorrect data format, should be YYYY" % (facet,value)
+                return False
+            else:
+                return True
         if self.str_equals(facet,'PublicationTimestamp'):
-            return isUTC(value)
-        ##HEW!!! 
-        if self.str_equals(facet,'url'): 
-        ##HEW!!!    
-            print 'churl %s' % self.check_url(value)
-            return self.check_url(value)
+            try:
+                datetime.datetime.strptime(value, '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
+            except ValueError:
+                errmsg = "%s value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (facet,value)
+                return False
+            else:
+                return True
+            ##HEW-D return isUTC(value)
+        ##HEW!!!        if self.str_equals(facet,'url'): 
+        ##HEW!!!                return self.check_url(value)
         if self.str_equals(facet,'Language'):
             ##HEW-CHGreturn language_exists(value)
-            if self.map_lang(value) is not None:
-               return True
+            if self.map_lang(value) is None:
+                return False
+            else:
+                return True
         if self.str_equals(facet,'Country'):
             return country_exists(value)
         # to be continued for every other facet
