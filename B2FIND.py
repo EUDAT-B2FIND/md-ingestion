@@ -489,6 +489,7 @@ class HARVESTER(object):
 
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
+                       print 'ddd'
                        continue
                     else:
                        oai_id = record.identifier
@@ -759,7 +760,7 @@ class CONVERTER(object):
                    "Community" : "community",
                    "Discipline" : "discipline",
                    "author" : "Creator", 
-                   "Publisher" : "publisher",
+                   "Publisher" : "Publisher",
                    "PublicationYear" : "PublicationYear",
                    "PublicationTimestamp" : "PublicationTimestamp",
                    "Language" : "language",
@@ -960,7 +961,7 @@ class CONVERTER(object):
                desc+=' point in time : %s' % self.date2UTC(invalue["date"])
                return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
             elif invalue["start"] and invalue["end"] :
-               desc+=': period ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
+               desc+=' period : ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
                return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
           else:
             outlist=list()
@@ -976,7 +977,7 @@ class CONVERTER(object):
 ##                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[0]))
             elif len(invlist) == 2 :
                 try:
-                    desc+=': period ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
+                    desc+=' period : ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
                     return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[1]))
                 except ValueError:
                     return (desc,None,None)
@@ -1058,21 +1059,23 @@ class CONVERTER(object):
         
     def cut(self,invalue,pattern,nfield):
         """
-        splits invalue according to delimiter and cuts out field number nfield.
-        If delimiter is not in invalue truncate from character nfield.
+        If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
+        else if pattern is in invalue, split according to pattern and return field nfield,
+        else return invalue.
 
         Copyright (C) 2015 Heinrich Widmann.
         Licensed under AGPLv3.
         """
-
-        if pattern in invalue:
-           return invalue.split(pattern)[0]
-        elif nfield:
-           return invalue[:nfield]
+        if pattern is None :
+           return invalue[nfield]           
+        elif pattern in invalue:
+           return invalue.split(pattern)[nfield-1]
         elif re.findall(pattern, invalue):
            ## e.g. pattern = '\d+' or '\d\d\d\d'
-           return re.findall(pattern, invalue)[0]
-        
+           return re.findall(pattern, invalue)[nfield-1]
+        else:
+           return invalue
+ 
         return invalue
 
     def list2dictlist(self,invalue,valuearrsep):
@@ -1080,17 +1083,17 @@ class CONVERTER(object):
         transfer list of strings to list of dict's { "name" : "substr1" }      
         """
 
-        if len(invalue) == 1 :
-            valarr=invalue[0]['name'].split(valuearrsep)
-            ##valarr=list(OrderedDict.fromkeys(valarr)) ## this eliminates real duplicates
+        if type(invalue) is list :
+          dictlist=[]
+          for lentry in invalue :
+            valarr=filter(None, re.split("[,\-!?:;]+",lentry['name']))
             valarr=list(set(valarr)) ## this eliminates real duplicates
-            dictlist=[]
             for entry in valarr:
                if entry.strip():
+                   if len(entry.split('=')) > 1:
+                        entry=entry.split('=')[1]
                    entrydict={ "name": entry }  
-                   dictlist.append(entrydict)
-               else:
-                   continue
+                   dictlist.append(entrydict.copy())
         else:
             return invalue
         return dictlist
@@ -1726,7 +1729,7 @@ class CONVERTER(object):
                 # loop over all fields
                 for facet in jsondata:
                    if facet == 'author':
-                         jsondata[facet] = self.cut(jsondata[facet],'(.*)\(\d\d\d\d\)',0)
+                         jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1)
                    elif facet == 'tags':
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    ##elif facet == 'title' : ## or facet == 'notes'
@@ -1743,6 +1746,8 @@ class CONVERTER(object):
                                    ##HEW-T print 'key %s' % key
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                            elif extra['key'] == 'Publisher':
+                              extra['value'] = self.cut(extra['value'],'=',2)
                             elif extra['key'] == 'SpatialCoverage':
                                desc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
@@ -1757,7 +1762,7 @@ class CONVERTER(object):
                             elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
-                              extra['value'] = self.cut(extra['value'],'-',4)
+                              extra['value'] = self.cut(extra['value'],'-',1)
                               publdate=self.date2UTC(extra['value'])
                       except Exception as e:
                           self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
@@ -1914,13 +1919,11 @@ class CONVERTER(object):
     
         # find all .json files in path/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
-        
         results['tcount'] = len(files)
-
         oaiset=path.split(mdformat)[1].split('_')[0].strip('/')
         
         self.logger.info(' %s     INFO  Validation of files in %s/json' % (time.strftime("%H:%M:%S"),path))
-        print  '    |   | %-4s | %-40s |\n   |%s|' % ('#','infile',"-" * 53)
+        self.logger.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
         totstats=dict()
         for facet in self.ckan2b2find.keys():
@@ -1936,8 +1939,7 @@ class CONVERTER(object):
             identifier=oaiset+'_%06d' % fcount
 
             jsondata = dict()
-            self.logger.info(' |- %s     INFO  VALIDATOR - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
-            self.logger.info('    | v | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+            self.logger.debug('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
 
             if ( os.path.getsize(path+'/json/'+filename) > 0 ):
                 with open(path+'/json/'+filename, 'r') as f:
@@ -1979,20 +1981,16 @@ class CONVERTER(object):
                  totstats[field]['valid']+=stats[field]['valid']
             except IOError, e:
                 self.logger.error("[ERROR] %s : Cannot write statistics to file '%s'\n" % (outfile,e))
-                ###stats['ecount'] +=1
                 return(False, outfile , path, fcount)
 
         outfile='%s/%s' % (path,'validation.stat')
-        print 'Statistics of %d checked json files\n\t(see as well in %s)\n' % (fcount,outfile)        
-        print "{:<20} {:<16} {:<16}".format('Facet name','Mapped','Validated')
-        print "{:<20} {:<8} {:<8} {:<8} {:<8}".format('','#','Coverage','#','Coverage')
-        printstats="{:<20} {:<16} {:<16}\n".format('Facet name','Mapped','Validated')
-        printstats+="{:<20} {:<8} {:<8} {:<8} {:<8}\n".format('','#','Coverage','#','Coverage')
+        printstats='/n Statistics of %d checked json files\n\t(see as well in %s)\n' % (fcount,outfile)        
+        printstats+="{:<20} {:<9} {:<8}\n".format('Facet name','Mapped','Validated')
+        printstats+="{:<20} {:>5} {:>4} {:>5} {:>4}\n".format('','#','%','#','%')
         for field in totstats:
-            #print 'f %s' % field
-            print "{:<20} {:<8} {:<8} {:<8} {:<8}".format(field,totstats[field]['mapped'],totstats[field]['mapped']/fcount,totstats[field]['valid'],totstats[field]['valid']/fcount)
-            printstats+="{:<20} {:<8} {:<8} {:<8} {:<8}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']/fcount,totstats[field]['valid'],totstats[field]['valid']/fcount)
-
+            printstats+="{:<20} {:>5} {:>4.0f} {:>5} {:>4.0f}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
+ 
+        print printstats
 
         f = open(outfile, 'w')
         f.write(printstats)
