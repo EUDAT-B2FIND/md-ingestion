@@ -19,16 +19,16 @@ echo -e "  |- Job list\t$upload_list"
 echo -e "  |- On host \t$lhost"
 
 echo -e "\n Status of jobs :"
-echo -e " | Total | Running\t| Done\t| Failed\t|" 
-echo -e " | $(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l)\t| $(ps -elf | grep manager | grep upload | wc -l)   \t| $(ls DONE/${upload_list}.* 2>/dev/null | wc -l)   \t| $(grep 'Internal server error' log/${upload_list}.*.err | grep -c -v ':0' )   \t|"
+printf '\n | %-5s | %-7s | %-4s | %-6s |' "Total" "Running" "Done" "Failed" 
+printf '\n | %-5s | %-7s | %-4s | %-6s |' "$(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(ps -elf | grep manager | grep upload | wc -l)" "$(ls DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(grep 'Internal server error' log/${upload_list}.*.err | grep -c -v ':0' )"
+printf '\n %40s' "############################################################"
 ##echo -e "|- $(ls DONE/${upload_list}.* 2>/dev/null | wc -l) jobs are sucessfully done"
 ##echo -e "|- Jobs failed :\n   $(grep -c 'Internal server error' log/${upload_list}.*.err | grep -v ':0' ) "
 ##echo -e "|- $(ps -elf | grep manager | grep upload | wc -l) threads are running"
 
 nfiles=0
 
-
-echo -e "\n |- Thread | Jobfile\t\t\t| Status\t| PID\t | Start   \t| End    \t| Community-Set\t |" 
+printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "Thread" "Jobfile" "Status" "PID" "Start" "End" "Community-Set"
 echo -e "    |- #Records  | Provided | Done\t| Created | Updated | Failed | No action required |" 
 echo -e "    |- #Handles - - - - - - - - - \t| Created | Updated | Failed | No action required |" 
 
@@ -46,7 +46,7 @@ do
   fi
   jobfile=$file
 
-  echo -e "__________________________________________________________________"
+  echo -e "   __________________________________________________________________"
 
   outfile="log/$(basename ${file}).out"
   errfile="log/$(basename ${file}).err"
@@ -61,8 +61,9 @@ do
 
   done < "$jobfile"
 
+  printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "$nfiles" "$jobfile" "$status" "$pid" "$(grep 'Start' ${outfile} | cut -d' ' -f3)" "$(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1)" "${comm_set}"
   echo -e " |- $nfiles \t| $jobfile \t| $status\t|$pid\t| $(grep 'Start proc' ${outfile} | cut -d' ' -f4,5) | $(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1) | ${comm_set}\t"
-  echo -e "    |- #Records  | $npfrec     | $(grep -c '| u |' ${outfile})\t| $(grep -c 'Creation of ' ${outfile})\t  | $(grep -c 'Update of ' ${outfile})\t | $(grep -c 'Upload of new record failed' $outfile )\t| $(grep -c 'No upload' $outfile )\t|"
+  echo -e "    |- #Records  | $npfrec     | $(grep -c '| u |' ${outfile})\t| $(grep -c 'Creation of ' ${outfile})\t  | $(grep -c 'Update of ' ${outfile})\t | $(grep -c 'failed' $outfile )\t| $(grep -c 'No upload' $outfile )\t|"
   echo -e "    |- #Handles - - - - - - - - -\t| $(grep -c 'Create a new handle' ${outfile})  \t | $(grep -c 'Update checksum' $outfile )       \t | \t| $(grep -c 'No action required' $outfile ) \t|"
  
 ##  echo -e "   |- Total provided records\t $npfrec \n"
