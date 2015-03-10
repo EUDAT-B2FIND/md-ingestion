@@ -104,6 +104,9 @@ b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml EUON
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
+b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml NRM
+b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
+b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml RDA
 ##%%% DataCite : MD Provider is the DataCite.org 
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  TIB.WDCC
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  BL
