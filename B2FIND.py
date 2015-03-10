@@ -839,13 +839,13 @@ class CONVERTER(object):
 
         for facet in dataset:
             if facet == facetName :
-               if setname != '*' or re.match(old_regex, dataset[facet]):
+               if re.match(old_regex, dataset[facet]):
                   dataset[facet] = new_value
                   return dataset
             if facet == 'extras':
                 for extra in dataset[facet]:
                     if extra['key'] == facetName :
-                       if setname != '*' or re.match(old_regex, extra['value']) :
+                       if re.match(old_regex, extra['value']):
                           extra['value'] = new_value
                           return dataset
         return dataset
@@ -854,15 +854,18 @@ class CONVERTER(object):
         """
         Convert identifiers to data access links, i.e. to 'Source' (ds['url']) or 'PID','DOI' etc. pp
  
-        Copyright (C) 2015 by heinrich Widmann.
+        Copyright (C) 2015 by Heinrich Widmann.
         Licensed under AGPLv3.
         """
 
         idarr=invalue.split(';')
         iddict=dict()
 
+       
         for id in idarr :
-          if id.startswith('ivo:'):
+          if id.startswith('http://data.theeuropeanlibrary'):
+             iddict['url']=id
+          elif id.startswith('ivo:'):
              iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
              favurl=iddict['IVO']
           elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
@@ -874,7 +877,7 @@ class CONVERTER(object):
           elif 'hdl.handle.net' in id:
              iddict['PID'] = id
              favurl=iddict['PID']
-          else:
+          elif not 'url' in iddict :
              ## check_url !!
              iddict['url']=id
 
@@ -900,8 +903,8 @@ class CONVERTER(object):
                 try: return iso639.languages.get(alpha2=language.lower())
                 except KeyError: pass
             elif len(language) == 3:
-                ##try: return iso639.languages.get(alpha3=language.lower())
-                ##except KeyError: pass
+                try: return iso639.languages.get(alpha3=language.lower())
+                except KeyError: pass
                 try: return iso639.languages.get(terminology=language.lower())
                 except KeyError: pass
                 try: return iso639.languages.get(bibliographic=language.lower())
@@ -1037,13 +1040,15 @@ class CONVERTER(object):
         
         invalue=invalue.encode('ascii','ignore').capitalize()
         maxr=0.0
+        maxdisc=''
         for line in disctab :
             disc='%s' % line[2].strip()
             r=lvs.ratio(invalue,disc)
-            ## print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
+            ##             print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
             if r > maxr  :
                 maxdisc=disc
                 maxr=r
+                ##HEW-T print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
         if maxr == 1 and invalue == maxdisc :
             self.logger.debug('  | Perfect match of %s : nothing to do' % invalue)
         elif maxr > 0.98 :
@@ -1514,10 +1519,14 @@ class CONVERTER(object):
     
         for rule in rules:
           try: 
+            # jump over rule lines starting with #
+            if rule.startswith('#'):
+                continue
             # rules can be checked for correctness
             assert(rule.count(',,') == 5),"a double comma should be used to separate items in rule"
             
             rule = rule.rstrip('\n').split(',,') # splits  each line of config file
+            ## print 'rule %s' % rule
             groupName = rule[0]
             setName = rule[1]
             facetName = rule[2]
@@ -1683,6 +1692,7 @@ class CONVERTER(object):
 
         
         # check for mapper postproc config file
+        subset=os.path.basename(path).split('_')[0]
         rules=None
         ppconfig_file='%s/%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
         if os.path.isfile(ppconfig_file):
@@ -1690,7 +1700,8 @@ class CONVERTER(object):
             f = codecs.open(ppconfig_file, "r", "utf-8")
             rules = f.readlines()[1:] # without the header
             rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
-
+            ## filter out community and subset specific rules
+            rules = filter(lambda x:(x.startswith(community+',,*') or x.startswith('*,,*') or x.startswith('*,'+subset) or x.startswith(community+',,'+subset)),rules)
         ##  instance of B2FIND discipline table
         disctab = self.cv_disciplines()
 

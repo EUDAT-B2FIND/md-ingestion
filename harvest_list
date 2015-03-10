@@ -11,6 +11,7 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  oai_dc 
 ##%%% ENES : MD Provider c3grid.dkrz.de
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords      iso	iso-wdcc
 ##500 Internal server ERROR : 
