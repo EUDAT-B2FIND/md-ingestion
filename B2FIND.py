@@ -850,42 +850,47 @@ class CONVERTER(object):
                           return dataset
         return dataset
  
-    def map_identifier(self, invalue):
+    def map_identifiers(self, invalue):
         """
         Convert identifiers to data access links, i.e. to 'Source' (ds['url']) or 'PID','DOI' etc. pp
  
         Copyright (C) 2015 by Heinrich Widmann.
         Licensed under AGPLv3.
         """
-
-        idarr=invalue.split(';')
-        iddict=dict()
-
-       
-        for id in idarr :
-          if id.startswith('http://data.theeuropeanlibrary'):
-             iddict['url']=id
-          elif id.startswith('ivo:'):
-             iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
-             favurl=iddict['IVO']
-          elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
-             iddict['DOI'] = self.concat('http://dx.doi.org/',id)
-             favurl=iddict['DOI']
-          elif 'doi:' in id or 'doi.org/' in id:
-             iddict['DOI'] = id
-             favurl=iddict['DOI']
-          elif 'hdl.handle.net' in id:
-             iddict['PID'] = id
-             favurl=iddict['PID']
-          elif not 'url' in iddict :
-             ## check_url !!
-             iddict['url']=id
-
-        if not 'url' in iddict :
-             iddict['url']=favurl
-          
-
-        return iddict
+        try:
+          idarr=invalue.split(';')
+          iddict=dict()
+          favurl=idarr[0]
+  
+          for id in idarr :
+            if id.startswith('http://data.theeuropeanlibrary'):
+               iddict['url']=id
+            elif id.startswith('ivo:'):
+               iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
+               favurl=iddict['IVO']
+            elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
+               iddict['DOI'] = self.concat('http://dx.doi.org/',id)
+               favurl=iddict['DOI']
+            elif 'dx.doi.org/' in id:
+               iddict['DOI'] = id
+               favurl=iddict['DOI']
+            elif 'doi:' in id:
+               iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s.*").match(id).groups()[0].strip(']')
+               favurl=iddict['DOI']
+            elif 'hdl.handle.net' in id:
+               iddict['PID'] = id
+               favurl=iddict['PID']
+            elif not 'url' in iddict :
+               ## check_url !!
+               iddict['url']=id
+  
+          if not 'url' in iddict :
+               iddict['url']=favurl
+        except Exception, e:
+           self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue.split(';')[0]))
+           return (None,None)
+        else:
+           return iddict
 
     def map_lang(self, invalue):
         """
@@ -991,6 +996,13 @@ class CONVERTER(object):
            self.logger.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
            return (None,None,None)
 
+    def is_float_try(self,str):
+            try:
+                float(str)
+                return True
+            except ValueError:
+                return False
+
     def map_spatial(self,invalue):
         """
         Map coordinates to spatial
@@ -999,6 +1011,7 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         desc=''
+        pattern = re.compile(r";|\s+")
         try:
           if type(invalue) is dict :
             if "description" in invalue :
@@ -1009,12 +1022,12 @@ class CONVERTER(object):
             ## slat,wlon,nlat,elon=
             return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
           else:
-            inarr=invalue.split()
+            inarr=pattern.split(invalue)
             coordarr=list()
             nc=0
             for str in inarr:
-              if type(str) is float :
-                coordarr[nc]=str
+              if self.is_float_try(str) is True : ##HEW-D type(str) is float :
+                coordarr.append(str)
                 nc+=1
               else:
                 desc+=' '+str
@@ -1038,30 +1051,35 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         
-        invalue=invalue.encode('ascii','ignore').capitalize()
-        maxr=0.0
-        maxdisc=''
-        for line in disctab :
-            disc='%s' % line[2].strip()
-            r=lvs.ratio(invalue,disc)
-            ##             print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
-            if r > maxr  :
-                maxdisc=disc
-                maxr=r
-                ##HEW-T print '--- %s \n|%s|%s| %f | %f' % (line,invalue,disc,r,maxr)
-        if maxr == 1 and invalue == maxdisc :
-            self.logger.debug('  | Perfect match of %s : nothing to do' % invalue)
-        elif maxr > 0.98 :
-            self.logger.info('   | Similarity ratio %f is > 0.98 : replace value >>%s<< with best match --> %s' % (maxr,invalue,maxdisc))
-            return maxdisc
-        elif maxr > 0.7 :
-            self.logger.debug('   | Similarity ratio %f is > 0.7 : compare value >>%s<< and discipline >>%s<<' % (maxr,invalue,maxdisc))
-            return None
-        else:
-            self.logger.debug('   | Similarity ratio %f is < 0.7 compare value >>%s<< and discipline >>%s<<' % (maxr,invalue,maxdisc))
-            return None
-        return invalue
-        
+        retval=list()
+        if type(invalue) is not list :
+            invalue=invalue.split(';')
+        for indisc in invalue :
+           ##indisc=indisc.encode('ascii','ignore').capitalize()
+           indisc=indisc.strip()
+           maxr=0.0
+           maxdisc=''
+           for line in disctab :
+               disc='%s' % line[2].strip()
+               r=lvs.ratio(indisc,disc)
+               ##               print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
+               if r > maxr  :
+                   maxdisc=disc
+                   maxr=r
+                   ##HEW-T                   print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
+           if maxr == 1 and indisc == maxdisc :
+               self.logger.debug('  | Perfect match of %s : nothing to do' % indisc)
+               retval.append(indisc)
+           elif maxr > 0.98 :
+               self.logger.info('   | Similarity ratio %f is > 0.98 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
+               ##return maxdisc
+               retval.append(indisc)
+           else:
+               self.logger.debug('   | Similarity ratio %f is < 0.89 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
+               continue
+
+        return retval
+           
     def cut(self,invalue,pattern,nfield):
         """
         If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
@@ -1071,6 +1089,8 @@ class CONVERTER(object):
         Copyright (C) 2015 Heinrich Widmann.
         Licensed under AGPLv3.
         """
+
+        ##HEW??? pattern = re.compile(pattern)
         if pattern is None :
            return invalue[nfield]           
         elif pattern in invalue:
@@ -1753,7 +1773,7 @@ class CONVERTER(object):
                               if len(extra['value']) == 1:
                                  extra['value']=extra['value'][0] 
                             if extra['key'] == 'identifiers':
-                              iddict = self.map_identifier(extra['value'])
+                              iddict = self.map_identifiers(extra['value'])
                                    ##HEW-T print 'key %s' % key
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
