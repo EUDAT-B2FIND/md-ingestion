@@ -1760,7 +1760,7 @@ class CONVERTER(object):
                 # loop over all fields
                 for facet in jsondata:
                    if facet == 'author':
-                         jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1)
+                         jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
                    elif facet == 'tags':
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    ##elif facet == 'title' : ## or facet == 'notes'
