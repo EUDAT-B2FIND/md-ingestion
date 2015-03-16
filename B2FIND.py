@@ -1078,7 +1078,7 @@ class CONVERTER(object):
                self.logger.debug('   | Similarity ratio %f is < 0.89 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
                continue
 
-        return retval
+        return ';'.join(retval)
            
     def cut(self,invalue,pattern,nfield):
         """
@@ -1916,9 +1916,6 @@ class CONVERTER(object):
             return country_exists(value)
         # to be continued for every other facet
     
-
-
-
     def validate(self,community,mdformat,path):
         ## validate(CONVERTER object, community, mdformat, path) - method
         # validates the (mapped) JSON files in directory <path> against the B2FIND md schema
@@ -1931,8 +1928,10 @@ class CONVERTER(object):
         #
         # Return Values:
         # --------------
-        # 1. (dict)     validation (and result) statistics
+        # 1. (dict)     statistic of validation 
     
+        import collections
+
         results = {
             'count':0,
             'tcount':0,
@@ -1960,7 +1959,8 @@ class CONVERTER(object):
         for facet in self.ckan2b2find.keys():
             totstats[facet]={
               'mapped':0,
-              'valid':0
+              'valid':0,
+              'vstat':[]
             }              
 
 
@@ -1985,16 +1985,10 @@ class CONVERTER(object):
                 continue
             
             try:
-
-
-              stats=dict()
+              valuearr=list()
               for facet in self.ckan2b2find.keys():
                     if facet.startswith('#'):
                         continue
-                    stats[facet]={
-                        'mapped':0,
-                        'valid':0
-                        }
                     value = None
                     if facet in jsondata:
                         value = jsondata[facet]
@@ -2003,13 +1997,14 @@ class CONVERTER(object):
                             if self.str_equals(extra['key'],facet):
                                 value = extra['value']                   
                     if value:
-                        stats[facet]['mapped']+=1  
-                        if self.is_valid_value(facet,value):
-                            stats[facet]['valid']+=1  
+                        totstats[facet]['mapped']+=1  
+                        if type(value) is list:
+                            log.debug('    | [ERROR] Value %s is of type list' % value)
+                        else:
+                            if self.is_valid_value(facet,value):
+                               totstats[facet]['valid']+=1  
 
-              for field in stats:
-                 totstats[field]['mapped']+=stats[field]['mapped']
-                 totstats[field]['valid']+=stats[field]['valid']
+                            totstats[facet]['vstat'].append(value)
             except IOError, e:
                 self.logger.error("[ERROR] %s : Cannot write statistics to file '%s'\n" % (outfile,e))
                 return(False, outfile , path, fcount)
@@ -2020,6 +2015,11 @@ class CONVERTER(object):
         printstats+="{:<20} {:>5} {:>4} {:>5} {:>4}\n".format('','#','%','#','%')
         for field in totstats:
             printstats+="{:<20} {:>5} {:>4.0f} {:>5} {:>4.0f}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
+            counter=collections.Counter(totstats[field]['vstat'])
+            if totstats[field]['vstat']:
+                printstats+="  Value statistics:\n     {:<5} {:<30}\n".format('#','Value')
+                for tuple in counter.most_common(10):
+                    printstats+="     {:<5d} {:<30}\n".format(tuple[1],unicode(tuple[0]).encode("utf-8"))
  
         print printstats
 

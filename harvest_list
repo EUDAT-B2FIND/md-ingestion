@@ -21,7 +21,7 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	iso	iso-gkss
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	iso	iso-uni-hh
 enes    http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  dc      dc-wdcc-doi 
 ##%%% ENES/EARLINET : MD Provider eudat-oai.dkrz.de
-earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListRecords  iso	iso_wdcc_exp_EARLINET
+earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListRecords  iso
 ### new comm. IVOA or EURO-VO
 ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc ivo_managed
 ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc
@@ -105,6 +105,7 @@ b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml NRM
+b2share  https://b2share.eudat.eu/oai2d ListRecords oai_dc  NRM
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
 b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml RDA
 ##%%% DataCite : MD Provider is the DataCite.org 
