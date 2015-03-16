@@ -875,20 +875,19 @@ class CONVERTER(object):
                iddict['DOI'] = id
                favurl=iddict['DOI']
             elif 'doi:' in id:
-               iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s.*").match(id).groups()[0].strip(']')
+               iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                favurl=iddict['DOI']
             elif 'hdl.handle.net' in id:
                iddict['PID'] = id
                favurl=iddict['PID']
-            elif not 'url' in iddict :
-               ## check_url !!
+            elif 'url' not in iddict and self.check_url(id) :
                iddict['url']=id
-  
+
           if not 'url' in iddict :
                iddict['url']=favurl
         except Exception, e:
            self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue.split(';')[0]))
-           return (None,None)
+           return None
         else:
            return iddict
 
@@ -1774,7 +1773,6 @@ class CONVERTER(object):
                                  extra['value']=extra['value'][0] 
                             if extra['key'] == 'identifiers':
                               iddict = self.map_identifiers(extra['value'])
-                                   ##HEW-T print 'key %s' % key
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'Publisher':
@@ -1802,7 +1800,8 @@ class CONVERTER(object):
                    ##elif isinstance(jsondata[facet], basestring) :
                    ##    ### mapping of default string fields
                    ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
-                for key in iddict:
+                if iddict:
+                  for key in iddict:
                     if key == 'url':
                         jsondata['url']=iddict['url']
                     else:
@@ -1876,7 +1875,11 @@ class CONVERTER(object):
             return False    #catched
         except socket.timeout as e:
             return False    #catched
-
+        except ValueError as e:
+            return False    #catched
+        except Exception as e:
+            self.logger.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+            return False    #catched
 
     def is_valid_value(self,facet,value):
         """
