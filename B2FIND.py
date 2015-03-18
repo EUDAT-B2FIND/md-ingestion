@@ -811,9 +811,7 @@ class CONVERTER(object):
         """
         # UTC format =  YYYY-MM-DDThh:mm:ssZ
         utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
-        # UTC2 format =  YYYY-MM-DDThh:mm:ss.mss+mmss
-        utcn = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}\+\d{4}')
-       
+
         utc_day = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
         utc_year = re.compile(r'\d{4}') # year (4-digit number)
         if utc.search(old_date):
@@ -1013,13 +1011,16 @@ class CONVERTER(object):
         pattern = re.compile(r";|\s+")
         try:
           if type(invalue) is dict :
+            coordict=dict()
             if "description" in invalue :
                desc=invalue["description"]
             if "boundingBox" in invalue :
                coordict=invalue["boundingBox"]
                desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
             ## slat,wlon,nlat,elon=
-            return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+               return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+            else:
+               return(desc,None,None,None,None)
           else:
             inarr=pattern.split(invalue)
             coordarr=list()
@@ -1791,8 +1792,8 @@ class CONVERTER(object):
                             elif extra['key'] == 'Language': # generic mapping of languages
                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
-                              extra['value'] = self.cut(extra['value'],'-',1)
                               publdate=self.date2UTC(extra['value'])
+                              extra['value'] = self.cut(extra['value'],'-',1)
                       except Exception as e:
                           self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
                           ##HEW??? results['ecount'] += 1
