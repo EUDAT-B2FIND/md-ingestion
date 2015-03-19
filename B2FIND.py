@@ -2008,8 +2008,8 @@ class CONVERTER(object):
                                 value = extra['value']                   
                     if value:
                         totstats[facet]['mapped']+=1  
-                        if type(value) is list:
-                            log.debug('    | [ERROR] Value %s is of type list' % value)
+                        if type(value) is list or type(value) is dict :
+                            log.debug('    | [ERROR] Value %s is of type %s' % (value,type(value)))
                         else:
                             if self.is_valid_value(facet,value):
                                totstats[facet]['valid']+=1  
