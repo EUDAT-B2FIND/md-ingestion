@@ -1100,7 +1100,7 @@ class CONVERTER(object):
         ##HEW??? pattern = re.compile(pattern)
         if pattern is None :
            return invalue[nfield]           
-        elif
+        elif re.findall(pattern, invalue) :
            rep=re.findall(pattern, invalue)[0]
            if rep in invalue:
                return invalue.split(rep)[nfield-1]
