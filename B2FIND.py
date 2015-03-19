@@ -959,15 +959,21 @@ class CONVERTER(object):
           if type(invalue) is dict :
             invt=invalue['@type']
             if 'period' in invalue :
-                desc=invalue['period']
+               desc=invalue['period']
             elif '@type' in invalue :
-                desc=invalue['@type']
+               desc=invalue['@type']
             if invalue['@type'] == 'single':
-               desc+=' point in time : %s' % self.date2UTC(invalue["date"])
-               return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
+               if "date" in invalue :
+                   desc+=' point in time : %s' % self.date2UTC(invalue["date"])
+                   return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
+            elif invalue['@type'] == 'verbatim':
+               desc+=' point in time : %s' % self.date2UTC(invalue["period"])
+               return (desc,None,None)
             elif invalue["start"] and invalue["end"] :
                desc+=' period : ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
                return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
+            else:
+               return (desc,None,None)
           else:
             outlist=list()
             invlist=invalue.split(';')
@@ -986,12 +992,13 @@ class CONVERTER(object):
                     return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[1]))
                 except ValueError:
                     return (desc,None,None)
-##                else:
-##                    desc+=': ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
-##                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[1]))
+            else:
+                return (desc,None,None)
         except Exception, e:
            self.logger.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
            return (None,None,None)
+        else:
+            return (desc,None,None)
 
     def is_float_try(self,str):
             try:
