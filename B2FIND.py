@@ -967,7 +967,7 @@ class CONVERTER(object):
                    desc+=' point in time : %s' % self.date2UTC(invalue["date"])
                    return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
             elif invalue['@type'] == 'verbatim':
-               desc+=' point in time : %s' % self.date2UTC(invalue["period"])
+               desc+=' %s : %s' % (invalue["type"],invalue["period"])
                return (desc,None,None)
             elif invalue["start"] and invalue["end"] :
                desc+=' period : ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
@@ -1100,11 +1100,10 @@ class CONVERTER(object):
         ##HEW??? pattern = re.compile(pattern)
         if pattern is None :
            return invalue[nfield]           
-        elif pattern in invalue:
-           return invalue.split(pattern)[nfield-1]
-        elif re.findall(pattern, invalue):
-           ## e.g. pattern = '\d+' or '\d\d\d\d'
-           return re.findall(pattern, invalue)[nfield-1]
+        elif
+           rep=re.findall(pattern, invalue)[0]
+           if rep in invalue:
+               return invalue.split(rep)[nfield-1]
         else:
            return invalue
  
