@@ -956,19 +956,21 @@ class CONVERTER(object):
         """
         desc=''
         try:
+          if type(invalue) is list:
+              invalue=invalue[0]
           if type(invalue) is dict :
             invt=invalue['@type']
-            if 'period' in invalue :
-               desc=invalue['period']
-            elif '@type' in invalue :
-               desc=invalue['@type']
-            if invalue['@type'] == 'single':
-               if "date" in invalue :
-                   desc+=' point in time : %s' % self.date2UTC(invalue["date"])
+            if '@type' in invalue :
+              if invalue['@type'] == 'single':
+                 if "date" in invalue :       
+                   desc+=' %s : %s' % (invalue["type"],invalue["date"])
                    return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
-            elif invalue['@type'] == 'verbatim':
-               desc+=' %s : %s' % (invalue["type"],invalue["period"])
-               return (desc,None,None)
+              elif invalue['@type'] == 'verbatim':
+                  if 'period' in invalue :
+                      desc+=' %s : %s' % (invalue["type"],invalue["period"])
+                  else:
+                      desc+='%s' % invalue["type"]
+                  return (desc,None,None)
             elif invalue["start"] and invalue["end"] :
                desc+=' period : ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
                return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
@@ -1023,7 +1025,7 @@ class CONVERTER(object):
                desc=invalue["description"]
             if "boundingBox" in invalue :
                coordict=invalue["boundingBox"]
-               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+               desc+=' : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
             ## slat,wlon,nlat,elon=
                return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
             else:
