@@ -1087,7 +1087,7 @@ class CONVERTER(object):
                r=lvs.ratio(indisc,disc)
              except Exception, e:
                  self.logger.error('[ERROR] : %s - in map_discipl : %s can not converted !' % (e,invalue))
-                 return invalue
+                 break
              if r > maxr  :
                  maxdisc=disc
                  maxr=r
