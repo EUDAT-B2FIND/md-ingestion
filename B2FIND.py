@@ -843,9 +843,10 @@ class CONVERTER(object):
             if facet == 'extras':
                 for extra in dataset[facet]:
                     if extra['key'] == facetName :
-                       if re.match(old_regex, extra['value']):
-                          extra['value'] = new_value
-                          return dataset
+                       if type(extra['value']) is not list:
+                         if re.match(old_regex, extra['value']):
+                           extra['value'] = new_value
+                           return dataset
         return dataset
  
     def map_identifiers(self, invalue):
@@ -907,6 +908,7 @@ class CONVERTER(object):
             elif len(language) == 3:
                 try: return iso639.languages.get(alpha3=language.lower())
                 except KeyError: pass
+                except AttributeError: pass
                 try: return iso639.languages.get(terminology=language.lower())
                 except KeyError: pass
                 try: return iso639.languages.get(bibliographic=language.lower())
@@ -965,6 +967,9 @@ class CONVERTER(object):
                  if "date" in invalue :       
                    desc+=' %s : %s' % (invalue["type"],invalue["date"])
                    return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
+                 else :
+                   desc+='%s' % invalue["type"]
+                   return (desc,None,None)
               elif invalue['@type'] == 'verbatim':
                   if 'period' in invalue :
                       desc+=' %s : %s' % (invalue["type"],invalue["period"])
@@ -1077,13 +1082,16 @@ class CONVERTER(object):
            maxr=0.0
            maxdisc=''
            for line in disctab :
+             try:
                disc='%s' % line[2].strip()
                r=lvs.ratio(indisc,disc)
-               ##               print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
-               if r > maxr  :
-                   maxdisc=disc
-                   maxr=r
-                   ##HEW-T                   print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
+             except Exception, e:
+                 self.logger.error('[ERROR] : %s - in map_discipl : %s can not converted !' % (e,invalue))
+                 return invalue
+             if r > maxr  :
+                 maxdisc=disc
+                 maxr=r
+                 ##HEW-T                   print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
            if maxr == 1 and indisc == maxdisc :
                self.logger.debug('  | Perfect match of %s : nothing to do' % indisc)
                retval.append(indisc)
@@ -1590,7 +1598,7 @@ class CONVERTER(object):
             else:
                 pass
           except Exception as e:
-            self.logger.error(" [ERROR] %s : processing rule %s" % (e,rule))
+            self.logger.error(" [ERROR] %s : perform %s for facet %s with invalue %s and new_value %s" % (e,action,facetName,old_value,new_value))
             continue
 
         return dataset
@@ -1747,7 +1755,7 @@ class CONVERTER(object):
         self.logger.info(' %s     INFO  B2FIND - Mapping files in %s/json' % (time.strftime("%H:%M:%S"),path))
         for filename in files:
               fcount+=1
-              self.logger.info(' |- %s     INFO  Post - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
+              self.logger.info('    | c | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
 
               jsondata = dict()
         
@@ -1987,7 +1995,6 @@ class CONVERTER(object):
         fcount = 0
         for filename in files:
             fcount+=1
-            identifier=oaiset+'_%06d' % fcount
 
             jsondata = dict()
             self.logger.debug('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
@@ -2030,16 +2037,21 @@ class CONVERTER(object):
                 return(False, outfile , path, fcount)
 
         outfile='%s/%s' % (path,'validation.stat')
-        printstats='/n Statistics of %d checked json files\n\t(see as well in %s)\n' % (fcount,outfile)        
-        printstats+="{:<20} {:<9} {:<8}\n".format('Facet name','Mapped','Validated')
-        printstats+="{:<20} {:>5} {:>4} {:>5} {:>4}\n".format('','#','%','#','%')
+        printstats='\n Statistics of %d checked json files\n\t(see as well in %s)\n' % (fcount,outfile)        
+        printstats+="|--> {:<20} | {:<10} | {:<9} | \n".format('Facet name','Mapped','Validated')
+        printstats+="|    {:<20} | {:>5} | {:>4} | {:>5} | {:>4} |\n".format('','#','%','#','%')
+        printstats+="      #[Value statistics]      | {:<5} : {:<30} |\n".format('#Occ','Value')
+        printstats+="----------------------------------------------------------\n"
         for field in totstats:
-            printstats+="{:<20} {:>5} {:>4.0f} {:>5} {:>4.0f}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
+            printstats+="|--> {:<20} | {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
             counter=collections.Counter(totstats[field]['vstat'])
             if totstats[field]['vstat']:
-                printstats+="  Value statistics:\n     {:<5} {:<30}\n".format('#','Value')
                 for tuple in counter.most_common(10):
-                    printstats+="     {:<5d} {:<30}\n".format(tuple[1],unicode(tuple[0]).encode("utf-8"))
+                    if len(tuple[0]) > 80 : 
+                        contt='[...]' 
+                    else: 
+                        contt=''
+                    printstats+="                               | {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
  
         print printstats
 

@@ -336,14 +336,14 @@ def process_validate(CV, rlist):
     #
     # Parameters:
     # -----------
-    # (object)  CONVERTER - object from the class CONVERTER
+    # (object)  VALIDATOR - object from the class CONVERTER
     # (list)    rlist - list of request lists 
     #
     # Return Values:
     # --------------
     # None
     for request in rlist:
-        logger.info('\n## Mapping request %s##' % request)
+        logger.info('\n## Validating request %s##' % request)
         
         cstart = time.time()
         
@@ -753,7 +753,7 @@ def parse_list_file(process,filename,community='',subset=''):
             continue
             
         # sort out lines that don't match given subset
-        if (subset != None) and ((len(request.split()) < 5) or  ( not request.split()[4].startswith(subset))) :
+        if (subset != None) and ((len(request.split()) < 5) or  ( not request.split()[4] == subset )): ###.startswith(subset))) :
             continue
             
         reqlist.append(request.split())
