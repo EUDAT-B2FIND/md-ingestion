@@ -971,11 +971,19 @@ class CONVERTER(object):
                   else:
                       desc+='%s' % invalue["type"]
                   return (desc,None,None)
-            elif invalue["start"] and invalue["end"] :
-               desc+=' period : ( %s - %s )' % (self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
-               return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
-            else:
-               return (desc,None,None)
+              elif invalue['@type'] == 'range':
+                  if 'start' in invalue and 'end' in invalue :
+                      desc+=' %s : ( %s - %s )' % (invalue['@type'],invalue["start"],invalue["end"])
+                      return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
+                      desc+=' %s : %s' % (invalue["type"],invalue["period"])
+                  else:
+                      desc+='%s' % invalue["type"]
+                      return (desc,None,None)
+              elif 'start' in invalue and 'end' in invalue :
+                  desc+=' %s : ( %s - %s )' % ('range',invalue["start"],invalue["end"])
+                  return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
+              else:
+                  return (desc,None,None)
           else:
             outlist=list()
             invlist=invalue.split(';')
