@@ -1078,16 +1078,16 @@ class CONVERTER(object):
             invalue=invalue.split(';')
         for indisc in invalue :
            ##indisc=indisc.encode('ascii','ignore').capitalize()
-           indisc=indisc.strip()
+           indisc=indisc.encode('utf8').strip()
            maxr=0.0
            maxdisc=''
            for line in disctab :
              try:
-               disc='%s' % line[2].strip()
+               disc=line[2].strip()
                r=lvs.ratio(indisc,disc)
              except Exception, e:
-                 self.logger.error('[ERROR] : %s - in map_discipl : %s can not converted !' % (e,invalue))
-                 break
+                 self.logger.error('[ERROR] %s in map_discipl : %s can not compared to %s !' % (e,indisc,disc))
+                 continue
              if r > maxr  :
                  maxdisc=disc
                  maxr=r
@@ -1818,6 +1818,8 @@ class CONVERTER(object):
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
                               publdate=self.date2UTC(extra['value'])
                               extra['value'] = self.cut(extra['value'],'-',1)
+                            if type(extra['value']) is not str and type(extra['value']) is not unicode :
+                              self.logger.info(' [INFO] value of key %s is %s : %s' % (extra['key'],type(extra['value']),extra['value']))
                       except Exception as e:
                           self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
                           ##HEW??? results['ecount'] += 1
