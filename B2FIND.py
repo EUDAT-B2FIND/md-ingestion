@@ -880,7 +880,7 @@ class CONVERTER(object):
                iddict['PID'] = id
                favurl=iddict['PID']
             elif 'hdl:' in id:
-               iddict['PID'] = id.split('@')[0].replace('hdl:','hdl.handle.net/')
+               iddict['PID'] = id.replace('hdl:','hdl.handle.net/')
                favurl=iddict['PID']
             elif 'url' not in iddict and self.check_url(id) :
                iddict['url']=id
