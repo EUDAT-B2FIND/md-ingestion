@@ -902,6 +902,8 @@ class CONVERTER(object):
         def mlang(language):
             if '_' in language:
                 language = language.split('_')[0]
+            if ':' in language:
+                language = language.split(':')[1]
             if len(language) == 2:
                 try: return iso639.languages.get(alpha2=language.lower())
                 except KeyError: pass
@@ -1191,27 +1193,31 @@ class CONVERTER(object):
 
         return sec
 
-    def remove_duplicates(self,dataset,facetName,valuearrsep,entrysep):
+    def remove_duplicates(self,invalue):
         """
-        remove duplicates      
+        remove duplicates from ';' separted string or given list     
+
+        Copyright (C) 2014 Heinrich Widmann
+        Licensed under AGPLv3.
         """
-        for facet in dataset:
-          if facet == facetName:
-            valarr=dataset[facet].split(valuearrsep)
-            valarr=list(OrderedDict.fromkeys(valarr)) ## this elimintas real duplicates
-            nvalarr=valarr
-            revvalarr=[]
-            for entry in valarr:
-              reventry=entry.split(entrysep)
-              if (len(reventry) > 1): 
-                reventry.reverse()
-                reventry=''.join(reventry)
-                revvalarr.append(reventry)
-                for reventry in revvalarr:
-                  if reventry == entry :
-                     nvalarr.remove(reventry)
-            dataset[facet]=valuearrsep.join(nvalarr)
-        return dataset       
+        
+        if type(invalue) is not list :
+            invalue=invalue.split(';')
+        invalue=list(OrderedDict.fromkeys(invalue)) ## this elimintas real duplicates
+        revvalarr=[]
+        for entry in invalue:
+          if entry in ['not applicable']:
+             invalue.remove(entry)
+             continue
+          reventry=entry.split(',')
+          if (len(reventry) > 1): 
+              reventry.reverse()
+              reventry=' '.join(reventry)
+              revvalarr.append(reventry)
+              for reventry in revvalarr:
+                 if reventry == entry :
+                    invalue.remove(reventry)
+        return '; '.join(invalue)       
       
     def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
         """
@@ -1589,8 +1595,8 @@ class CONVERTER(object):
 ##                dataset = self.truncate(dataset,facetName,old_value,new_value)
             elif action == "changeDateFormat":
                 dataset = self.changeDateFormat(dataset,facetName,old_value,new_value)
-            elif action == 'remove_duplicates':
-                dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
+##            elif action == 'remove_duplicates':
+##                dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
             elif action == 'splitstring2dictlist':
                 dataset = self.splitstring2dictlist(dataset,facetName,old_value,new_value)
             elif action == "another_action":
@@ -1785,6 +1791,7 @@ class CONVERTER(object):
                 for facet in jsondata:
                    if facet == 'author':
                          jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
+                         jsondata[facet] = self.remove_duplicates(jsondata[facet])
                    elif facet == 'tags':
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    ##elif facet == 'title' : ## or facet == 'notes'
@@ -1814,12 +1821,12 @@ class CONVERTER(object):
                                if desc:
                                   extra['value']=desc
                             elif extra['key'] == 'Language': # generic mapping of languages
-                              extra['value'] = self.map_lang(extra['value'])
+                               extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
-                              publdate=self.date2UTC(extra['value'])
-                              extra['value'] = self.cut(extra['value'],'-',1)
+                               publdate=self.date2UTC(extra['value'])
+                               extra['value'] = self.cut(extra['value'],'-',1)
                             if type(extra['value']) is not str and type(extra['value']) is not unicode :
-                              self.logger.info(' [INFO] value of key %s is %s : %s' % (extra['key'],type(extra['value']),extra['value']))
+                               self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
                       except Exception as e:
                           self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
                           ##HEW??? results['ecount'] += 1
