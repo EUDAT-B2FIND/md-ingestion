@@ -833,9 +833,10 @@ class CONVERTER(object):
         replaces old value - can be a regular expression - with new value for a given facet
         """
 
-        old_regex = re.compile(old_value)
+        try:
+          old_regex = re.compile(old_value)
 
-        for facet in dataset:
+          for facet in dataset:
             if facet == facetName :
                if re.match(old_regex, dataset[facet]):
                   dataset[facet] = new_value
@@ -844,9 +845,18 @@ class CONVERTER(object):
                 for extra in dataset[facet]:
                     if extra['key'] == facetName :
                        if type(extra['value']) is not list:
-                         if re.match(old_regex, extra['value']):
+                         m=re.match(old_regex, extra['value'])
+                         if m :
                            extra['value'] = new_value
                            return dataset
+                         else:
+                           print 'oldval %s val %s ' %  (old_value, extra['value'])
+        except Exception, e:
+           self.logger.error('[ERROR] : %s - in replace of invalue %s with new_value %s according pattern match %s' % (e,extra['value'],new_value,old_value))
+           return dataset
+        else:
+           return dataset
+
         return dataset
  
     def map_identifiers(self, invalue):
@@ -1749,12 +1759,17 @@ class CONVERTER(object):
         rules=None
         ppconfig_file='%s/%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
         if os.path.isfile(ppconfig_file):
-            # read config file 
+            # read config file
             f = codecs.open(ppconfig_file, "r", "utf-8")
             rules = f.readlines()[1:] # without the header
             rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
             ## filter out community and subset specific rules
-            rules = filter(lambda x:(x.startswith(community+',,*') or x.startswith('*,,*') or x.startswith('*,'+subset) or x.startswith(community+',,'+subset)),rules)
+            subsetrules = filter(lambda x:(x.startswith(community+',,'+subset)),rules)
+            if subsetrules:
+                rules=subsetrules
+            else:
+                rules=filter(lambda x:(x.startswith('*,,*')),rules)
+            print 'rules %s' % rules
         ##  instance of B2FIND discipline table
         disctab = self.cv_disciplines()
 
