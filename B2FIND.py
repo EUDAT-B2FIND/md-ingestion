@@ -754,6 +754,7 @@ class CONVERTER(object):
                    "tags" : "tags",
                    "url" : "Source", 
                    "DOI" : "DOI",
+###                   "IVO" : "IVO",
                    "PID" : "PID",
                    "Checksum" : "checksum",
                    "Rights" : "rights",
@@ -874,9 +875,9 @@ class CONVERTER(object):
           for id in idarr :
             if id.startswith('http://data.theeuropeanlibrary'):
                iddict['url']=id
-            elif id.startswith('ivo:'):
-               iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
-               favurl=iddict['IVO']
+##HEW-D            elif id.startswith('ivo:'):
+##HEW-D               iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
+##HEW-D               favurl=iddict['IVO']
             elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
                iddict['DOI'] = self.concat('http://dx.doi.org/',id)
                favurl=iddict['DOI']
