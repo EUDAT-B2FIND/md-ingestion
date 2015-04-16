@@ -485,11 +485,10 @@ class HARVESTER(object):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
-            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
+            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
 
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
-                       print 'ddd'
                        continue
                     else:
                        oai_id = record.identifier
@@ -748,7 +747,13 @@ class CONVERTER(object):
         
         # get the java converter name:
         self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
-        self.ckan2b2find = {
+        self.b2findfields = list()
+        self.b2findfields =[
+                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
+
+
+        self.ckan2b2find = OrderedDict()
+        self.ckan2b2find={
                    "title" : "title", 
                    "notes" : "description",
                    "tags" : "tags",
@@ -758,7 +763,7 @@ class CONVERTER(object):
                    "PID" : "PID",
                    "Checksum" : "checksum",
                    "Rights" : "rights",
-                   "Community" : "community",
+##                   "Community" : "community",
                    "Discipline" : "discipline",
                    "author" : "Creator", 
                    "Publisher" : "Publisher",
@@ -772,7 +777,7 @@ class CONVERTER(object):
                    "Contact" : "contact",
                    "MetadataAccess" : "metadata"
                               }  
-       
+
     class cv_disciplines(object):
         """
         This class represents the closed vocabulary used for the mapoping of B2FIND discipline mapping
@@ -813,14 +818,19 @@ class CONVERTER(object):
         # UTC format =  YYYY-MM-DDThh:mm:ssZ
         utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
 
-        utc_day = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
+        utc_day1 = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
+        utc_day = re.compile(r'\d{8}') # day (YYYYMMDD)
         utc_year = re.compile(r'\d{4}') # year (4-digit number)
         if utc.search(old_date):
             new_date = utc.search(old_date).group()
             return new_date
-        elif utc_day.search(old_date):
-            day = utc_day.search(old_date).group()
+        elif utc_day1.search(old_date):
+            day = utc_day1.search(old_date).group()
             new_date = day + 'T11:59:59Z'
+            return new_date
+        elif utc_day.search(old_date):
+            rep=re.findall(utc_day, old_date)[0]
+            new_date = rep[0:4]+'-'+rep[4:6]+'-'+rep[6:8] + 'T11:59:59Z'
             return new_date
         elif utc_year.search(old_date):
             year = utc_year.search(old_date).group()
@@ -1124,7 +1134,7 @@ class CONVERTER(object):
     def cut(self,invalue,pattern,nfield):
         """
         If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
-        else if pattern is in invalue, split according to pattern and return field nfield,
+        else if pattern is in invalue, split according to pattern and return field nfield (if 0 return the first found pattern),
         else return invalue.
 
         Copyright (C) 2015 Heinrich Widmann.
@@ -1136,6 +1146,8 @@ class CONVERTER(object):
            return invalue[nfield]           
         elif re.findall(pattern, invalue) :
            rep=re.findall(pattern, invalue)[0]
+           if nfield == 0 :
+                return rep
            if rep in invalue:
                return invalue.split(rep)[nfield-1]
         else:
@@ -1816,7 +1828,7 @@ class CONVERTER(object):
                    ##elif facet == 'title' : ## or facet == 'notes'
                    ##      jsondata[facet] = jsondata[facet]## .encode('latin1','replace')
                    elif facet == 'extras':
-                      try: ### Semantic mapping of extra keys
+                      try:  ### Semantic mapping of extra keys
                          for extra in jsondata[facet]:
                             if type(extra['value']) is list:
                               extra['value']=self.uniq(extra['value'])
@@ -1843,7 +1855,7 @@ class CONVERTER(object):
                                extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
                                publdate=self.date2UTC(extra['value'])
-                               extra['value'] = self.cut(extra['value'],'-',1)
+                               extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
                             if type(extra['value']) is not str and type(extra['value']) is not unicode :
                                self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
                       except Exception as e:
@@ -2017,8 +2029,7 @@ class CONVERTER(object):
               'mapped':0,
               'valid':0,
               'vstat':[]
-            }              
-
+            }          
 
         fcount = 0
         for filename in files:
@@ -2070,7 +2081,7 @@ class CONVERTER(object):
         printstats+="|    {:<20} | {:>5} | {:>4} | {:>5} | {:>4} |\n".format('','#','%','#','%')
         printstats+="      #[Value statistics]      | {:<5} : {:<30} |\n".format('#Occ','Value')
         printstats+="----------------------------------------------------------\n"
-        for field in totstats:
+        for field in self.b2findfields : ## totstats:
             printstats+="|--> {:<20} | {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
             counter=collections.Counter(totstats[field]['vstat'])
             if totstats[field]['vstat']:
