@@ -750,6 +750,8 @@ class CONVERTER(object):
         self.b2findfields = list()
         self.b2findfields =[
                    "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
+        self.b2findfields =[
+                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","Language","TemporalCoverage","SpatialCoverage","Format","Contact","MetadataAccess"]
 
 
         self.ckan2b2find = OrderedDict()
@@ -860,8 +862,6 @@ class CONVERTER(object):
                          if m :
                            extra['value'] = new_value
                            return dataset
-                         else:
-                           print 'oldval %s val %s ' %  (old_value, extra['value'])
         except Exception, e:
            self.logger.error('[ERROR] : %s - in replace of invalue %s with new_value %s according pattern match %s' % (e,extra['value'],new_value,old_value))
            return dataset
@@ -1782,7 +1782,6 @@ class CONVERTER(object):
                 rules=subsetrules
             else:
                 rules=filter(lambda x:(x.startswith('*,,*')),rules)
-            print 'rules %s' % rules
         ##  instance of B2FIND discipline table
         disctab = self.cv_disciplines()
 
