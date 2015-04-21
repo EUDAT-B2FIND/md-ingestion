@@ -36,7 +36,7 @@ def options_parser(modes):
     p = optparse.OptionParser(
         description = "Description: checks and delete B2FIND files, datasets and handles from disk, CKAN database and EPIC handle server respectively.\n" + descI,
         formatter = optparse.TitledHelpFormatter(),
-        prog = 'cleaner.py 0.1',
+        prog = 'cleaner.py 1.0',
         epilog='For any further information and documentation please look at README.txt file or at the EUDAT wiki (-> JMD Software).',
         version = "%prog "
     )
@@ -327,7 +327,7 @@ def main():
            if (epicstatus == 'exist'):
              actionreq+='\n\tPID %s%s%s %s removed' % (credentials.prefix,"/eudat-jmd_",id,qmsg)
              try:
-               if (not options.quiet):
+               if (not options.quiet) and ( b2findversion != '1.0'):
                  ec.deleteHandle(pid)
                  pcount+=1
                  epicaction='removed'
@@ -346,7 +346,7 @@ def main():
            if (ckanstatus == 'unknown' or ckanstatus == 'changed' or ckanstatus == 'unchanged'):
              actionreq+=' remove ckan dataset'
              try:
-               if (not options.quiet):
+               if (not options.quiet) and ( b2findversion != '1.0'):
                  delete = UP.delete(id,ckanstatus)
                  if (delete == 1):
 ##                        logger.info('        |-> %s' % ('Deletion was successful'))

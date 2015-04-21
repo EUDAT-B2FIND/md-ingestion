@@ -1662,10 +1662,8 @@ class CONVERTER(object):
           # check JPATH mapfile
           jmapfile='%s/%s/mapfiles/%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
           if not os.path.isfile(jmapfile):
-              jmapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
-              if not os.path.isfile(jmapfile):
-                self.logger.error('[ERROR] JSON2JSON Mapfile %s does not exist !' % jmapfile)
-                return results
+             self.logger.error('[ERROR] JSON2JSON Mapfile %s does not exist !' % jmapfile)
+             return results
           # read map file 
           self.logger.debug('[INFO]: Run JSON2JSON converter with json mapfile %s' % jmapfile)
           f = codecs.open(jmapfile, "r", "utf-8")
@@ -1745,7 +1743,7 @@ class CONVERTER(object):
               self.logger.error('[ERROR] The directory "%s/xml" does not exist or no xml files for converting are found!\n(Maybe your convert list has old items?)' % (path))
               return results
       
-          # check XPATH mapfile
+          # check XPATH map file
           mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
           if not os.path.isfile(mapfile):
              mapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
@@ -1833,7 +1831,7 @@ class CONVERTER(object):
                               extra['value']=self.uniq(extra['value'])
                               if len(extra['value']) == 1:
                                  extra['value']=extra['value'][0] 
-                            if extra['key'] == 'identifiers':
+                            if extra['key'] == 'url':
                               iddict = self.map_identifiers(extra['value'])
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
@@ -1983,13 +1981,13 @@ class CONVERTER(object):
             return country_exists(value)
         # to be continued for every other facet
     
-    def validate(self,community,mdformat,path):
-        ## validate(CONVERTER object, community, mdformat, path) - method
+    def validate(self,community,mdprefix,path):
+        ## validate(CONVERTER object, community, mdprefix, path) - method
         # validates the (mapped) JSON files in directory <path> against the B2FIND md schema
         # Parameters:
         # -----------
         # 1. (string)   community - B2FIND community the md are harvested from
-        # 2. (string)   mdformat -  metadata format of original harvested source (not needed her)
+        # 2. (string)   mdprefix -  metadata format of original harvested source (not needed her)
         # 3. (string)   path - path to subset directory 
         #      (without (!) 'json' subdirectory)
         #
@@ -2006,6 +2004,15 @@ class CONVERTER(object):
             'time':0
         }
         
+        # check XPATH map file
+        mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
+        if not os.path.isfile(mapfile):
+           mapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
+           if not os.path.isfile(mapfile):
+              self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+              return results
+        mf=open(mapfile) 
+
         # check paths
         if not os.path.exists(path):
             self.logger.error('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
@@ -2017,7 +2024,7 @@ class CONVERTER(object):
         # find all .json files in path/json:
         files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
         results['tcount'] = len(files)
-        oaiset=path.split(mdformat)[1].split('_')[0].strip('/')
+        oaiset=path.split(mdprefix)[1].strip('/')
         
         self.logger.info(' %s     INFO  Validation of files in %s/json' % (time.strftime("%H:%M:%S"),path))
         self.logger.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
@@ -2025,10 +2032,18 @@ class CONVERTER(object):
         totstats=dict()
         for facet in self.ckan2b2find.keys():
             totstats[facet]={
+              'xpath':'',
               'mapped':0,
               'valid':0,
               'vstat':[]
             }          
+
+            mf.seek(0, 0)
+            for line in mf:
+                if '<field name="'+facet+'">' in line:
+                    totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf)) ## next(mf).replace('<xpath>','')
+                    break
+                    ##mf.seek(0, 0)
 
         fcount = 0
         for filename in files:
@@ -2075,13 +2090,13 @@ class CONVERTER(object):
                 return(False, outfile , path, fcount)
 
         outfile='%s/%s' % (path,'validation.stat')
-        printstats='\n Statistics of %d checked json files\n\t(see as well in %s)\n' % (fcount,outfile)        
-        printstats+="|--> {:<20} | {:<10} | {:<9} | \n".format('Facet name','Mapped','Validated')
-        printstats+="|    {:<20} | {:>5} | {:>4} | {:>5} | {:>4} |\n".format('','#','%','#','%')
-        printstats+="      #[Value statistics]      | {:<5} : {:<30} |\n".format('#Occ','Value')
-        printstats+="----------------------------------------------------------\n"
+        printstats='\n Statistics of\n\tcommunity\t%s\n\tsubset\t\t%s\n\t# of records\t%d\n  see as well %s\n\n' % (community,oaiset,fcount,outfile)  
+        printstats+=" |-> {:<16} <-- {:<20} \n  |- {:<10} | {:<9} | \n".format('Facet name','XPATH','Mapped','Validated')
+        printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
+        printstats+="      | Value statistics:\n      |- {:<5} : {:<30} |\n".format('#Occ','Value')
+        printstats+=" ----------------------------------------------------------\n"
         for field in self.b2findfields : ## totstats:
-            printstats+="|--> {:<20} | {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
+            printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['xpath'],totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
             counter=collections.Counter(totstats[field]['vstat'])
             if totstats[field]['vstat']:
                 for tuple in counter.most_common(10):
@@ -2089,7 +2104,7 @@ class CONVERTER(object):
                         contt='[...]' 
                     else: 
                         contt=''
-                    printstats+="                               | {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
+                    printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
  
         print printstats
 
@@ -2150,13 +2165,13 @@ class CONVERTER(object):
 
         return "%s%s" % (line_padding, json_obj)
 
-    def oaiconvert(self,community,mdformat,path):
-        ## oaiconvert(CONVERTER object, community, mdformat, path) - method
+    def oaiconvert(self,community,mdprefix,path):
+        ## oaiconvert(CONVERTER object, community, mdprefix, path) - method
         # Converts the JSON files in directory <path> to XML files in B2FIND md format
         # Parameters:
         # -----------
         # 1. (string)   community - B2FIND community of the files
-        # 2. (string)   mdformat - metadata of original harvested source (not needed her)
+        # 2. (string)   mdprefix - metadata of original harvested source (not needed her)
         # 3. (string)   path - path to subset directory without (!) 'json' subdirectory
         #
         # Return Values:
@@ -2184,8 +2199,8 @@ class CONVERTER(object):
         
         results['tcount'] = len(files)
 
-        oaiset=path.split(mdformat)[1].split('_')[0].strip('/')
-        ## outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+path.split(mdformat)[1].split('_')[0]+'/xml'
+        oaiset=path.split(mdprefix)[1].split('_')[0].strip('/')
+        ## outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+path.split(mdprefix)[1].split('_')[0]+'/xml'
         outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/xml'
         print 'outpath %s' % outpath
         if (not os.path.isdir(outpath)):
@@ -3284,18 +3299,18 @@ class OUTPUT (object):
         reshtml.write("\t</body>\n</html>\n\n")
         reshtml.close()
 
-    ## print_convert_list (OUT object, community, source, mdprefix, dir, fromdate) - method
-    # Write directories with harvested files in convert_list
-    #
-    # Parameters:
-    # -----------
-    # ...
-    #
-    # Return Values:
-    # --------------
-    # None
-    
     def print_convert_list(self,community,source,mdprefix,dir,fromdate):
+        ## print_convert_list (OUT object, community, source, mdprefix, dir, fromdate) - method
+        # Write directories with harvested files in convert_list
+        #
+        # Parameters:
+        # -----------
+        # ...
+        #
+        # Return Values:
+        # --------------
+        # None
+        
         if (fromdate == None):
            self.convert_list = './convert_list_total'
         ##HEW-D else:

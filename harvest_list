@@ -11,7 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
-pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 
+#pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 
+pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
 ##%%% ENES : MD Provider c3grid.dkrz.de
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords      iso	iso-wdcc
 ##500 Internal server ERROR : 
@@ -99,15 +100,14 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc dans-easy_
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 JSONAPI json new_
 ##%%% EUDAT B2SHARE :
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml EUON
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml NRM
-b2share  https://b2share.eudat.eu/oai2d ListRecords oai_dc  NRM
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml RDA
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Linguistics
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUON
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Eudat
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc NRM
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc GBIF
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc RDA
 ##%%% DataCite : MD Provider is the DataCite.org 
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  TIB.WDCC
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  BL
