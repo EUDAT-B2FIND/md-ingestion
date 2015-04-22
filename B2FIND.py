@@ -1157,16 +1157,9 @@ class CONVERTER(object):
 
     def list2dictlist(self,invalue,valuearrsep):
         """
-        transfer list of strings to list of dict's { "name" : "substr1" }      
-        """
-
-        if type(invalue) is list :
-          dictlist=[]
-          for lentry in invalue :
-            valarr=filter(None, re.split(r"([,\-!?:;])+",lentry['name']))
-            valarr=list(set(valarr)) ## this eliminates real duplicates
-            for entry in valarr:
-               entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry).strip()
+        transfer list of strings to list of dict's { "name" : "substr1" } and
+          - eliminate duplicates, numbers and 1-character- strings, ...A-Z0-9]', ' ',entry).strip()
+               if entry.isdigit() or len(entry)==1 : continue ## eleminate digit and 1 letter values
                if entry :
                    if len(entry.split('=')) > 1:
                         entry=entry.split('=')[1]
