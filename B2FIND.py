@@ -1166,7 +1166,7 @@ class CONVERTER(object):
             valarr=filter(None, re.split(r"([,\-!?:;])+",lentry['name']))
             valarr=list(set(valarr)) ## this eliminates real duplicates
             for entry in valarr:
-               entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry)
+               entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry).strip()
                if entry :
                    if len(entry.split('=')) > 1:
                         entry=entry.split('=')[1]
