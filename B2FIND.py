@@ -1163,16 +1163,17 @@ class CONVERTER(object):
         if type(invalue) is list :
           dictlist=[]
           for lentry in invalue :
-            valarr=filter(None, re.split("[,\-!?:;]+",lentry['name']))
+            valarr=filter(None, re.split(r"([,\-!?:;])+",lentry['name']))
             valarr=list(set(valarr)) ## this eliminates real duplicates
             for entry in valarr:
-               if entry.strip():
+               entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry)
+               if entry :
                    if len(entry.split('=')) > 1:
                         entry=entry.split('=')[1]
                    entrydict={ "name": entry }  
                    dictlist.append(entrydict.copy())
         else:
-            return invalue
+            return invalue.strip(r"\([,\-!?:;]\)+")
         return dictlist
 
     def uniq(self,input):
