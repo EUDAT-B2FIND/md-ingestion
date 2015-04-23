@@ -878,11 +878,14 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         try:
-          idarr=invalue.split(';')
+          idarrn=list()
+          idarr=invalue.split(";")
+          for id in idarr :
+             idarrn.extend(re.findall('\[(.*?)\]|\([^\)]*\)|\"[^\"]*\"|\S+',id))
           iddict=dict()
           favurl=idarr[0]
   
-          for id in idarr :
+          for id in idarrn :
             if id.startswith('http://data.theeuropeanlibrary'):
                iddict['url']=id
 ##HEW-D            elif id.startswith('ivo:'):
@@ -1819,23 +1822,26 @@ class CONVERTER(object):
                 etime=None
                 publdate=None
                 # loop over all fields
-                for facet in jsondata:
+                for facet in jsondata: # default CKAN fields
                    if facet == 'author':
                          jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
                          jsondata[facet] = self.remove_duplicates(jsondata[facet])
                    elif facet == 'tags':
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
+                   elif facet == 'url':
+                         iddict = self.map_identifiers(jsondata[facet])
                    ##elif facet == 'title' : ## or facet == 'notes'
                    ##      jsondata[facet] = jsondata[facet]## .encode('latin1','replace')
-                   elif facet == 'extras':
+                   elif facet == 'extras': # extra CKAN fields
                       try:  ### Semantic mapping of extra keys
                          for extra in jsondata[facet]:
                             if type(extra['value']) is list:
                               extra['value']=self.uniq(extra['value'])
                               if len(extra['value']) == 1:
                                  extra['value']=extra['value'][0] 
-                            if extra['key'] == 'url':
-                              iddict = self.map_identifiers(extra['value'])
+                            ##if extra['key'] == 'url':
+                            ##  print 'xxx'
+                            ##  iddict = self.map_identifiers(extra['value'])
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'Publisher':
