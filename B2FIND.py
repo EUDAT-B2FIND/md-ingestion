@@ -897,7 +897,7 @@ class CONVERTER(object):
             elif 'dx.doi.org/' in id:
                iddict['DOI'] = id
                favurl=iddict['DOI']
-            elif 'doi:' in id:
+            elif 'doi:' in id and 'DOI' not in iddict :
                iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                favurl=iddict['DOI']
             elif 'hdl.handle.net' in id:
