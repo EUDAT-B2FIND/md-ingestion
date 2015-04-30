@@ -39,6 +39,7 @@ def main():
     print "=> %d datasets found" % tcount
     if (tcount>args.ckan_limit): print "=> but maximal %d rows are returned " % args.ckan_limit
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
+    sf = open('source.file', 'w')
     pidf = open('pid.file', 'w')
     idf = open('id.file', 'w')
     countpid=0
@@ -51,6 +52,7 @@ def main():
             counter +=1
             ## print'    | %-4d | %-40s |' % (counter,ds['name'])
             idf.write(ds['name']+'\n')
+            sf.write(ds['url']+'\n')
             for extra in ds['extras']:
                 if (extra['key'] == 'PID'):
                    pidf.write(extra['value']+'\n')
@@ -122,7 +124,7 @@ def get_args():
              searchs for all datasets tagged with PUBLICATIONOTHER and with author "Ahn, Changhyan"'''
     )
    
-    p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is eudat-b1.dkrz.de)', default='eudat-b1.dkrz.de', metavar='IP/URL')
+    p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu', metavar='IP/URL')
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
     p.add_argument('--ckan_limit',  help='Limit of listed datasets (default is 1000)', default=1000, type=int, metavar='INTEGER')
     p.add_argument('pattern',  help='CKAN search pattern, i.e. (a list of) field:value terms.', metavar='PATTERN', nargs='*')
