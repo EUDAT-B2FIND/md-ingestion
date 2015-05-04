@@ -1839,9 +1839,6 @@ class CONVERTER(object):
                               extra['value']=self.uniq(extra['value'])
                               if len(extra['value']) == 1:
                                  extra['value']=extra['value'][0] 
-                            ##if extra['key'] == 'url':
-                            ##  print 'xxx'
-                            ##  iddict = self.map_identifiers(extra['value'])
                             elif extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'Publisher':
@@ -2266,7 +2263,7 @@ class CONVERTER(object):
    <metadata>
      <!-- NOTE : the metadata schema for B2FIND and the oai prefix oai_b2find is still under developement
                 and the namesapace and schema definitions are preliminary -->
-     <oai_b2find:b2find xmlns:b2find="http://purl.org/b2find/elements/1.1/" xmlns:oai_b2find="http://www.openarchives.org/OAI/2.0/oai_b2find/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://b2find.eudat.eu/docs http://b2find.eudat.eu/docs/oai_b2find.xsd">
+     <oai_b2find:b2find xmlns:b2find="http://purl.org/b2find/elements/1.1/" xmlns:oai_b2find="http://www.openarchives.org/OAI/2.0/oai_b2find/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://b2find.eudat.eu/docs http://b2find.eudat.eu/schema/oai_b2find.xsd">
 """
                 footer="""
      </oai_b2find:b2find>

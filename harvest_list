@@ -11,17 +11,13 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
-#pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 
-pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
-##%%% ENES : MD Provider c3grid.dkrz.de
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords      iso	iso-wdcc
-##500 Internal server ERROR : 
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-wdcc-doi
+# CEDA : Physics
+ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375626A656374733D70687973696373
+pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 
+##pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
+##%%% ENES : MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-old-doi
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	iso	iso-gkss
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords	iso	iso-uni-hh
-enes    http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  dc      dc-wdcc-doi 
-##%%% ENES/EARLINET : MD Provider eudat-oai.dkrz.de
+##%%% EARLINET : MD Provider eudat-oai.dkrz.de (directly extracted from CERA)
 earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListRecords  iso
 ### new comm. IVOA or EURO-VO
 ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc ivo_managed
@@ -100,14 +96,14 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc dans-easy_
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 JSONAPI json new_
 ##%%% EUDAT B2SHARE :
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Linguistics
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml Linguistics
 b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUON
 b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Eudat
 b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc DRIHM
 b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc BBMRI
 b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc NRM
 b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc GBIF
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc RDA
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
 ##%%% DataCite : MD Provider is the DataCite.org 
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  TIB.WDCC
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  BL
