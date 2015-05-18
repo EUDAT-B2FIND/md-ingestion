@@ -327,7 +327,7 @@ def main():
            if (epicstatus == 'exist'):
              actionreq+='\n\tPID %s%s%s %s removed' % (credentials.prefix,"/eudat-jmd_",id,qmsg)
              try:
-               if (not options.quiet) and ( b2findversion != '1.0'):
+               if (not options.quiet): ##HEW-ADD and ( b2findversion != '1.0'):
                  ec.deleteHandle(pid)
                  pcount+=1
                  epicaction='removed'
@@ -346,7 +346,7 @@ def main():
            if (ckanstatus == 'unknown' or ckanstatus == 'changed' or ckanstatus == 'unchanged'):
              actionreq+=' remove ckan dataset'
              try:
-               if (not options.quiet) and ( b2findversion != '1.0'):
+               if (not options.quiet): ##HEW-ADD and ( b2findversion != '1.0'):
                  delete = UP.delete(id,ckanstatus)
                  if (delete == 1):
 ##                        logger.info('        |-> %s' % ('Deletion was successful'))

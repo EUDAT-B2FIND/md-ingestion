@@ -40,6 +40,7 @@ import sickle as SickleClass
 from sickle.oaiexceptions import NoRecordsMatch
 import uuid, hashlib
 import lxml.etree as etree
+import xml.etree.ElementTree as ET
 
 # needed for CKAN_CLIENT
 import urllib, urllib2, socket
@@ -787,7 +788,6 @@ class CONVERTER(object):
 
         """
         def __init__(self):
-##           self.discipl_file =  '%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),CONVERTER.root)
            self.discipl_list = self.get_list()
 
         @staticmethod
@@ -795,7 +795,7 @@ class CONVERTER(object):
             import csv
             import os
             root='../mapper/current'
-            discipl_file =  '%s/%s/mapfiles/b2find_disciplines.tab' % (os.getcwd(),root)
+            discipl_file =  '%s/mapfiles/b2find_disciplines.tab' % (os.getcwd())
             disctab = []
             with open(discipl_file, 'r') as f:
                 ## define csv reader object, assuming delimiter is tab
@@ -1232,9 +1232,9 @@ class CONVERTER(object):
         Copyright (C) 2014 Heinrich Widmann
         Licensed under AGPLv3.
         """
-        
+                
         if type(invalue) is not list :
-            invalue=invalue.split(';')
+            invalue=[x.strip() for x in invalue.split(';')]
         invalue=list(OrderedDict.fromkeys(invalue)) ## this elimintas real duplicates
         revvalarr=[]
         for entry in invalue:
@@ -1666,7 +1666,7 @@ class CONVERTER(object):
         # check mdprefix and in paths
         if ( mdprefix == 'json' ): # convert harvested json records using jsonpath rules
           # check JPATH mapfile
-          jmapfile='%s/%s/mapfiles/%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
+          jmapfile='%s/mapfiles/%s-%s.conf' % (os.getcwd(),community,mdprefix)
           if not os.path.isfile(jmapfile):
              self.logger.error('[ERROR] JSON2JSON Mapfile %s does not exist !' % jmapfile)
              return results
@@ -1750,15 +1750,17 @@ class CONVERTER(object):
               return results
       
           # check XPATH map file
-          mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
+          mapfile='%s/mapfiles/%s-%s.xml' % (os.getcwd(),community,mdprefix)
           if not os.path.isfile(mapfile):
-             mapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
+             mapfile='%s/mapfiles/%s.xml' % (os.getcwd(),mdprefix)
              if not os.path.isfile(mapfile):
                 self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
 
           # find all .xml files in path/xml
           results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
+
+          
           proc = subprocess.Popen(
               ["cd '%s'; java -cp lib/%s -jar %s inputdir=%s/xml outputdir=%s mapfile=%s"% (
                   os.getcwd()+'/'+self.root, self.cp,
@@ -1774,7 +1776,456 @@ class CONVERTER(object):
         # check for mapper postproc config file
         subset=os.path.basename(path).split('_')[0]
         rules=None
-        ppconfig_file='%s/%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),self.root,community,mdprefix)
+        ppconfig_file='%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),community,mdprefix)
+        if os.path.isfile(ppconfig_file):
+            # read config file
+            f = codecs.open(ppconfig_file, "r", "utf-8")
+            rules = f.readlines()[1:] # without the header
+            rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
+            ## filter out community and subset specific rules
+            subsetrules = filter(lambda x:(x.startswith(community+',,'+subset)),rules)
+            if subsetrules:
+                rules=subsetrules
+            else:
+                rules=filter(lambda x:(x.startswith('*,,*')),rules)
+        ##  instance of B2FIND discipline table
+        disctab = self.cv_disciplines()
+
+        # loop over all .json files in dir/json:
+        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        fcount = 0
+        self.logger.info(' %s     INFO  B2FIND - Mapping files in %s/json' % (time.strftime("%H:%M:%S"),path))
+        for filename in files:
+              fcount+=1
+              self.logger.info('    | c | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+
+              jsondata = dict()
+        
+              if ( os.path.getsize(path+'/json/'+filename) > 0 ):
+                with open(path+'/json/'+filename, 'r') as f:
+                   try:
+                        jsondata=json.loads(f.read())
+                   except:
+                        log.error('    | [ERROR] Cannot load json file %s' % path+'/json/'+filename)
+                        results['ecount'] += 1
+                        continue
+                try:
+                   ## md postprocessor
+                   if (rules):
+                       self.logger.debug(' [INFO]:  Processing according rules %s' % rules)
+                       jsondata=self.postprocess(jsondata,rules)
+                except Exception as e:
+                    self.logger.error(' [ERROR] %s : during postprocessing' % (e))
+                    continue
+
+                iddict=dict()
+                spvalue=None
+                stime=None
+                etime=None
+                publdate=None
+                # loop over all fields
+                for facet in jsondata: # default CKAN fields
+                   if facet == 'author':
+                         jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
+                         jsondata[facet] = self.remove_duplicates(jsondata[facet])
+                   elif facet == 'tags':
+                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
+                   elif facet == 'url':
+                         iddict = self.map_identifiers(jsondata[facet])
+                   ##elif facet == 'title' : ## or facet == 'notes'
+                   ##      jsondata[facet] = jsondata[facet]## .encode('latin1','replace')
+                   elif facet == 'extras': # extra CKAN fields
+                      try:  ### Semantic mapping of extra keys
+                         for extra in jsondata[facet]:
+                            if type(extra['value']) is list:
+                              extra['value']=self.uniq(extra['value'])
+                              if len(extra['value']) == 1:
+                                 extra['value']=extra['value'][0] 
+                            elif extra['key'] == 'Discipline': # generic mapping of discipline
+                              extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                            elif extra['key'] == 'Publisher':
+                              extra['value'] = self.cut(extra['value'],'=',2)
+                              extra['value'] = self.remove_duplicates(extra['value'])
+                            elif extra['key'] == 'SpatialCoverage':
+                               desc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
+                               if wlon and slat and elon and nlat :
+                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
+                                 ##extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
+                               if desc :
+                                 extra['value']=desc
+                            elif extra['key'] == 'TemporalCoverage':
+                               desc,stime,etime=self.map_temporal(extra['value'])
+                               if desc:
+                                  extra['value']=desc
+                            elif extra['key'] == 'Language': # generic mapping of languages
+                               extra['value'] = self.map_lang(extra['value'])
+                            elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
+                               publdate=self.date2UTC(extra['value'])
+                               extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
+                            elif extra['key'] == 'Contact':
+                               extra['value'] = self.remove_duplicates(extra['value'])
+                            if type(extra['value']) is not str and type(extra['value']) is not unicode :
+                               self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
+                      except Exception as e: 
+                          self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
+                          ##HEW??? results['ecount'] += 1
+                          continue
+                   ##elif isinstance(jsondata[facet], basestring) :
+                   ##    ### mapping of default string fields
+                   ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
+                if iddict:
+                  for key in iddict:
+                    if key == 'url':
+                        jsondata['url']=iddict['url']
+                    else:
+                        jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
+                if spvalue :
+                    jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
+                if stime and etime :
+                    jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
+                    jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
+                    jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
+                    jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
+
+                if publdate :
+                    jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate }) 
+
+                with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
+                ##with io.open(path+'/json/'+filename, 'w') as json_file:
+                   try:
+		       log.debug('   | [INFO] decode json data')
+                       data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                   except Exception as e:
+                       log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
+                   try:
+                       log.debug('   | [INFO] save json file')
+                       json_file.write(data)
+                   except TypeError, e :
+                       # Decode data to Unicode first
+                       log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,e))
+##                       json_file.write(data.decode('utf8'))
+##                   try:
+##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
+                   except Exception as e:
+                        log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
+                        results['ecount'] += 1
+                        continue
+              else:
+                results['ecount'] += 1
+                continue
+
+        self.logger.info('%s     INFO  B2FIND : %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+
+
+        # search in output for result statistics
+        last_line = out.split('\n')[-2]
+        if ('INFO  Main - ' in last_line):
+            string = last_line.split('INFO  Main ')[1]
+            [results['count'], results['ecount']] = re.findall(r"\d{1,}", string)
+            results['count'] = int(results['count']); results['ecount'] = int(results['ecount'])
+        
+    
+        return results
+
+    def evalxpath(self,obj, expr, ns):
+        ## print 'ns %s' % ns
+    ##print 'expr %s' % expr
+    ##expr = "replace(string-join('//dc'))"
+    ## exec expr
+        flist=re.split(r'[\(\),]',expr.strip()) ### r'[(]',expr.strip())
+    ##print 'flist %s' % flist
+    ##obj.xpath(expr)
+    ##locals()[expr]()
+        retlist=list()
+        for func in flist:
+            func=func.strip()
+            ## print 'func %s' % func
+            if func.startswith('//'): 
+                fxpath= '.'+re.sub(r'/text()','',func)  
+                try:
+                    for elem in obj.findall(fxpath,ns):
+                        retlist.append(elem.text)
+                except Exception as e:
+                    print 'ERROR %s : during xpath extraction of %s' % (e,fxpath)
+                    return []
+            elif func == '/':
+                try:
+                    for elem in obj.findall('.//',ns):
+                        retlist.append(elem.text)
+                except Exception as e:
+                    print 'ERROR %s : during xpath extraction of %s' % (e,'.//')
+                    return []
+                
+        return retlist
+
+    def xpathmdmapper(self,xmldata,xlines,namespaces):
+        self.logger.debug(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
+
+        defaultf={'title','author','notes','url'}
+        jsondata=dict()
+        jsondata["extras"]=list()
+        ##           namespaces = {'dc':'http://purl.org/dc/elements/1.1/'}
+        for line in xlines:
+          try:
+            ##print 'line %s' % line.strip('\n')
+            m = re.match(r'(\s+)<field name="(\w+)', line)
+            if m:  ##line.startswith(r'(\s+)(<field name=")(-?[0-9]*)'):
+                field=m.group(2)
+                ## print 'field %s' % field
+            else:
+                ##print 'nfound line %s ' % line
+                r = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)')
+                m2 = r.search(line)
+                rs = re.compile('(\s+)(<string>)(.*?)(</string>)')
+                m3 = rs.search(line)
+                if m3:
+                    xstring=m3.group(3)
+                    jsondata["extras"].append({"key" : field, "value" : xstring })
+                    self.logger.debug(' | %10s | %10s | %10s | \n' % (field,xstring,xstring))
+                elif m2:
+                    xpath=m2.group(3)
+                    ## print 'xpath %s' % xpath
+                    retval=self.evalxpath(xmldata, xpath, namespaces)
+                    ## print 'retval %s' % retval
+                    if len(retval)==0 : continue
+                    ##if field == 'tags':
+                    ##    jsondata[field]=list()
+                    ##    for val in retval:
+                    ##        jsondata[field].append({"key" : "name", "value" : val })
+                    if field == 'fulltext':
+                        retval=' '.join([unicode(i).strip() for i in retval])
+                        ##retval=' '.join([unicode(i) for i in vallist]) ## ''.join(retval).replace('\n', ' ').split()])
+                        jsondata[field]=retval ## gxpath(xmldata, xpath, namespaces)
+                    elif field in defaultf:
+                        retval=';'.join(retval)
+                        jsondata[field]=retval ## gxpath(xmldata, xpath, namespaces)
+                    else: ## extra field
+                        retval=';'.join(retval)
+                        jsondata["extras"].append({"key" : field, "value" : retval })
+                    self.logger.debug(' | %10s | %10s | %10s | \n' % (field,xpath,retval))                    
+                else:
+                    continue
+          except Exception as e:
+              log.error('    | [ERROR] : %s xpathmdmapper processing field %s with xpath %s' % (e,field,xpath))
+              continue
+
+        return jsondata
+
+    def map(self,community,mdprefix,path):
+        ## map(CONVERTER object, community, mdprefix, path) - method
+        # Maps the XML files in directory <path> to JSON files in two steps
+        #  1. select entries by Python XPATH converter according mapfile defined by <community> and <mdprefix>. 
+        #  2. perform semantic mapping versus closed vovabularies ...
+        #
+        # Parameters:
+        # -----------
+        # 1. (string)   community - B2FIND community of the files
+        # 2. (string)   mdprefix - Metadata prefix which was used by HARVESTER class for harvesting these files
+        # 3. (string)   path - path to directory of harvested records (without 'xml' rsp. 'hjson' subdirectory)
+        #
+        # Return Values:
+        # --------------
+        # 1. (dict)     results statistics
+    
+        results = {
+            'count':0,
+            'tcount':0,
+            'ecount':0,
+            'time':0
+        }
+        
+        # check mdprefix and in paths
+        if ( mdprefix == 'json' ): # map harvested json records using jsonpath rules
+          # check JPATH mapfile
+          jmapfile='%s/mapfiles/%s-%s.conf' % (os.getcwd(),community,mdprefix)
+          if not os.path.isfile(jmapfile):
+             self.logger.error('[ERROR] JSON2JSON Mapfile %s does not exist !' % jmapfile)
+             return results
+          # read map file 
+          self.logger.debug('[INFO]: Run JSON2JSON mapper with json mapfile %s' % jmapfile)
+          f = codecs.open(jmapfile, "r", "utf-8")
+          jrules = f.readlines() # without the header
+          jrules = filter(lambda x:len(x) != 0,jrules) # removes empty lines
+
+
+          # make directory for mapped json's
+          if (not os.path.isdir(path+'/json')):
+             os.makedirs(path+'/json')
+
+          # loop over all .json files in path/hjson (harvested json records):
+          results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
+          files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson'))
+          results['tcount'] = len(files)
+          fcount = 0
+          err=None
+          self.logger.info(' %s     INFO  JSONPATH - Processing of files in %s/hjson' % (time.strftime("%H:%M:%S"),path))
+ 
+          for filename in files:
+              fcount+=1
+              hjsondata = dict()
+              jsondata = dict()
+        
+              if ( os.path.getsize(path+'/hjson/'+filename) > 0 ):
+                with open(path+'/hjson/'+filename, 'r') as f:
+                   try:
+                        hjsondata=json.loads(f.read())
+                   except Exception as e:
+                        log.error('    | [ERROR] %s : Cannot load json file %s' % (e,path+'/hjson/'+filename))
+                        results['ecount'] += 1
+                        continue
+                   try:
+                       # Run json2json mapper
+                       self.logger.info(' |- %s    INFO J2J FileProcessor - Processing: %s/hjson/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
+                       jsondata=self.jsonmdmapper(hjsondata,jrules)
+                   except Exception as e:
+                       log.error('    | [ERROR] %s : during json 2 json processing' % e )
+                       results['ecount'] += 1
+                       exit()
+                       continue
+
+                   with io.open(path+'/json/'+filename, 'w') as json_file:
+                       try:
+                           log.debug('   | [INFO] decode json data')
+                           data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                       except Exception as e:
+                          log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
+                       try:
+                          log.debug('   | [INFO] save json file')
+                          json_file.write(data)
+                       except TypeError, err :
+                          # Decode data to Unicode first
+                          log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
+##                        json_file.write(data.decode('utf8'))
+##                     try:
+##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
+                       except Exception as e:
+                          log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
+                          err+='Cannot write json file %s' % path+'/json/'+filename
+                          results['ecount'] += 1
+                          continue
+              else:
+                results['ecount'] += 1
+                continue
+
+          out=' JSON2JSON stdout\nsome stuff\nlast line ..'
+          # check output and print it
+          ##HEW-D self.logger.info(out)
+          if (err is not None ): self.logger.error('[ERROR] ' + err)
+          ##exit()
+        else: # convert xml records using Python XPATH (lxml supports XPath 1.0)
+          if not os.path.exists(path):
+              self.logger.error('[ERROR] The directory "%s" does not exist! No files to map are found!\n(Maybe your convert list has old items?)' % (path))
+              return results
+          elif not os.path.exists(path + '/xml') or not os.listdir(path + '/xml'):
+              self.logger.error('[ERROR] The directory "%s/xml" does not exist or no xml files to convert are found!\n(Maybe your convert list has old items?)' % (path))
+              return results
+      
+          # check XPATH map file
+          mapfile='%s/mapfiles/%s-%s.xml' % (os.getcwd(),community,mdprefix)
+          if not os.path.isfile(mapfile):
+             mapfile='%s/mapfiles/%s.xml' % (os.getcwd(),mdprefix)
+             if not os.path.isfile(mapfile):
+                self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+                return results
+ 
+          # read xpath rules from map file 
+          mf = codecs.open(mapfile, "r", "utf-8")
+          xlines = mf.readlines()
+          xlines = filter(lambda x:len(x) != 0,xlines) # removes empty lines
+
+
+          ## namespaces = {'dc':'http://purl.org/dc/elements/1.1/'}
+          namespaces=dict()
+          for line in xlines:
+            ##print 'line %s' % line.strip('\n')
+            ns = re.match(r'(\s+)(<namespace ns=")(\w+)"(\s+)uri="(.*)"/>', line) ## (\w+)"(\s+)uri="(\w+)"/>', line)
+            if ns:  ##line.startswith(r'(\s+)(<field name=")(-?[0-9]*)'):
+                ## print '>>>> namespaces found : %s :%s :%s' % (ns.group(3),ns.group(4),ns.group(5))
+                namespaces[ns.group(3)]=ns.group(5)
+                continue
+
+          print 'namespaces %s' % namespaces
+
+
+          # find all .xml files in path/xml
+          results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
+
+          # make directory for mapped json's
+          if (not os.path.isdir(path+'/json')):
+             os.makedirs(path+'/json')
+
+          ############# NEW ####################
+          # loop over all .xml files in path/xml (harvested xml records):
+          results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
+          files = filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml'))
+          results['tcount'] = len(files)
+          fcount = 0
+          err=None
+          self.logger.info(' %s     INFO  XPATH - Processing of files in %s/xml' % (time.strftime("%H:%M:%S"),path))
+ 
+          for filename in files:
+              fcount+=1
+              ## xmldata = ET.parse(filename)
+              jsondata = dict()
+        
+              if ( os.path.getsize(path+'/xml/'+filename) > 0 ):
+                ##with open(path+'/xml/'+filename, 'r') as f:
+                   try:
+                        ##hjsondata=json.loads(f.read())
+                        xmldata = ET.parse(path+'/xml/'+filename)
+                   except Exception as e:
+                        log.error('    | [ERROR] %s : Can not parse xml file %s' % (e,path+'/xml/'+filename))
+                        results['ecount'] += 1
+                        continue
+                   try:
+                       # Run Python XPATH converter
+                       self.logger.info('    | m | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+
+                       jsondata=self.xpathmdmapper(xmldata,xlines,namespaces)
+                       ## print 'ret jsondata %s' % jsondata
+                       ##exit()
+                   except Exception as e:
+                       log.error('    | [ERROR] %s : during XPATH processing' % e )
+                       results['ecount'] += 1
+                       ## exit()
+                       continue
+
+                   jsonfilename=os.path.splitext(filename)[0]+'.json'
+                   with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
+                       try:
+                           log.debug('   | [INFO] decode json data')
+                           data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                       except Exception as e:
+                          log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
+                       try:
+                          log.debug('   | [INFO] save json file')
+                          json_file.write(data)
+                       except TypeError, err :
+                          # Decode data to Unicode first
+                          log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
+##                        json_file.write(data.decode('utf8'))
+##                     try:
+##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
+                       except Exception as e:
+                          log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
+                          err+='Cannot write json file %s' % path+'/json/'+filename
+                          results['ecount'] += 1
+                          continue
+              else:
+                results['ecount'] += 1
+                continue
+
+          out=' XML2JSON stdout\nsome stuff\nlast line ..'
+          # check output and print it
+          ##HEW-D self.logger.info(out)
+          if (err is not None ): self.logger.error('[ERROR] ' + err)
+          
+          ### end of NEW ################
+
+        # check for mapper postproc config file
+        subset=os.path.basename(path).split('_')[0]
+        rules=None
+        ppconfig_file='%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),community,mdprefix)
         if os.path.isfile(ppconfig_file):
             # read config file
             f = codecs.open(ppconfig_file, "r", "utf-8")
@@ -1861,7 +2312,7 @@ class CONVERTER(object):
                                extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
                             if type(extra['value']) is not str and type(extra['value']) is not unicode :
                                self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
-                      except Exception as e:
+                      except Exception as e: 
                           self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
                           ##HEW??? results['ecount'] += 1
                           continue
@@ -2011,9 +2462,9 @@ class CONVERTER(object):
         }
         
         # check XPATH map file
-        mapfile='%s/%s/mapfiles/%s-%s.xml' % (os.getcwd(),self.root,community,mdprefix)
+        mapfile='%s/mapfiles/%s-%s.xml' % (os.getcwd(),community,mdprefix)
         if not os.path.isfile(mapfile):
-           mapfile='%s/%s/mapfiles/%s.xml' % (os.getcwd(),self.root,mdprefix)
+           mapfile='%s/mapfiles/%s.xml' % (os.getcwd(),mdprefix)
            if not os.path.isfile(mapfile):
               self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
               return results
@@ -2092,8 +2543,8 @@ class CONVERTER(object):
 
                             totstats[facet]['vstat'].append(value)
             except IOError, e:
-                self.logger.error("[ERROR] %s : Cannot write statistics to file '%s'\n" % (outfile,e))
-                return(False, outfile , path, fcount)
+                self.logger.error("[ERROR] %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
+                exit()
 
         outfile='%s/%s' % (path,'validation.stat')
         printstats='\n Statistics of\n\tcommunity\t%s\n\tsubset\t\t%s\n\t# of records\t%d\n  see as well %s\n\n' % (community,oaiset,fcount,outfile)  
@@ -2836,10 +3287,9 @@ class OUTPUT (object):
     
     def save_stats(self,request,subset,mode,stats):
         ## save_stats (OUT object, request, subset, mode, stats) - method
-        # Saves the statistics of a process (harvesting, converting or uploading) per subset in <OUTPUT.stats>. 
-        # <OUTPUT.stats> is a big dictionary with all results statistics of the harvesting, converting and uploading routines.
-        # Requests which start with a '#' are special requests like '#Start' or '#GetPackages'
-        # and will be ignored in the most actions.
+        # Saves the statistics of a process (harvesting, converting, oai-converting, mapping or uploading) per subset in <OUTPUT.stats>. 
+        # <OUTPUT.stats> is a big dictionary with all results statistics of the harvesting, converting, oai-converting and uploading routines.
+        # Requests which start with a '#' are special requests like '#Start' or '#GetPackages' and will be ignored in the most actions.
         #
         # Special Requests:
         #   #Start    - contents statistics from the start periode and common details of the manager.py
@@ -2851,7 +3301,7 @@ class OUTPUT (object):
         # -----------
         # (string)  request - normal request named by <community>-<mdprefix> or a special request which begins with a '#'
         # (string)  subset - ...
-        # (string)  mode - process mode (can be 'h', 'c', 'v', 'u' or 'o')
+        # (string)  mode - process mode (can be 'h', 'c', 'm','v', 'u' or 'o')
         # (dict)    stats - a dictionary with results stats
         #
         # Return Values:
@@ -2885,6 +3335,13 @@ class OUTPUT (object):
                         'avg':0,
                     },
                     'c':{
+                        'count':0,
+                        'ecount':0,
+                        'tcount':0,
+                        'time':0,
+                        'avg':0
+                    },
+                    'm':{
                         'count':0,
                         'ecount':0,
                         'tcount':0,
