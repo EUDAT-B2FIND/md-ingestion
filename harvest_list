@@ -97,12 +97,12 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc dans-easy_
 gbif http://api.gbif.org/v1 JSONAPI json new_
 ##%%% EUDAT B2SHARE :
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml Linguistics
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUON
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Eudat
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc BBMRI
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc NRM
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc GBIF
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml EUON
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml Eudat
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml NRM
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml GBIF
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
 ##%%% DataCite : MD Provider is the DataCite.org 
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  TIB.WDCC

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for MARC XML metadata from B2SHARE. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="marc" uri="http://www.loc.gov/MARC21/slim"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//marc:datafield[@tag='245']/marc:subfield/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//marc:datafield[@tag='520']/marc:subfield[@code='a']/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//marc:datafield[@tag='653'][1]/marc:subfield[@code='a']/text()</xpath>
+    </field>
+    <!-- Access data -->
+    <field name="url">
+      <xpath>//marc:datafield[@tag='856']/marc:subfield[@code='u']/text(),//marc:datafield[@tag='024' and marc:subfield[@code='2']/text()='checksum']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='690']/marc:subfield[@code='b']/text()</xpath>
+   </field>
+   <field name="Checksum">
+      <xpath>//marc:datafield[@tag='024' and marc:subfield[@code='2']/text()='checksum']/marc:subfield[@code='a']/text()</xpath>
+   </field>
+   <field name="Rights">
+      <xpath>//marc:datafield[@tag='542']/marc:subfield[@code='l']/text()</xpath>
+   </field>
+   <!-- Provenance data -->
+   <field name="Discipline">
+      <xpath>//marc:datafield[@tag='526']/marc:subfield[@code='a']/text()</xpath>
+   </field>
+   <field name="author">
+      <xpath>//marc:datafield[@tag='690' and marc:subfield[@code='a']/text()='collector_name']/marc:subfield[@code='b']/text()</xpath>
+      <xpath>//marc:datafield[@tag='100']/marc:subfield[@code='a']/text()</xpath>
+      <xpath>//marc:datafield[@tag='700']/marc:subfield/text()</xpath>
+      <xpath>//marc:datafield[@tag='856']/marc:subfield[@code='f']/text()</xpath>
+      <xpath>//marc:datafield[@tag='690' and marc:subfield[@code='a']/text()='principal_investigator']/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//marc:datafield[@tag='260']/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//marc:datafield[@tag='264']/marc:subfield[@code='c']/text()</xpath>
+    </field>
+    <field name="B2SHARE-Domain">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <!-- Formal data -->
+    <field name="Language">
+      <xpath>//marc:datafield[@tag='546']/marc:subfield[@code='a']/text()</xpath>
+    </field>
+    <!-- Additional Information -->
+    <field name="Contact">
+      <string>N/A</string>
+    </field>
+    <!-- #### B2HARE Domain specific fields ### -->
+    <!-- |-  EUON specific fields -->
+    <field name="OntologyDomain">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="hasDomain"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="OntologyLanguage">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="hasOntologyLanguage"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="OntologyEngineeringTool">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="usedOntologyEngineeringTool"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="ModificationDate">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="modificationDate"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="CreationDate">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="creationDate"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+     <!-- |-  DRIHM specific fields -->
+    <field name="Reference system">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="reference_system"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Lineage">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="lineage"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+     <!-- |-  Linguistics specific fields -->
+    <field name="Language code">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="language_code"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Country/Region">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="region"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Resource type">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="ling_resource_type"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Project name">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="project_name"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Quality">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="quality"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+     <!-- |-  BBMRI specific fields -->
+    <field name="Study ID">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="study_id"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Study name">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="study_name"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Study description">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="study_description"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Study investigator">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="principal_investigator"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+     <field name="Study design">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="study_design"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="Disease">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="disease"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+   <field name="Categories of data selected">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="categories_of_data_collected"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+   <field name="Planned sampled individuals">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="planned_sampled_individuals"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+   <field name="Planned total">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="planned_total"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+   <field name="Sex">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="sex"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+   <field name="Age interval">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="age_interval"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+   <field name="Material Type">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="material_type"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <!-- NRM specific -->
+    <field name="TemporalCoverage">
+      <xpath>string-join(distinct-values(//marc:datafield[@tag='690' and marc:subfield[@code='a']/text()='starttime']/marc:subfield[@code='b']/text() | //marc:datafield[@tag='690' and marc:subfield[@code='a']/text()='endtime']/marc:subfield[@code='b']/text()),';')</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>string-join(distinct-values(//marc:datafield[@tag='690' and marc:subfield[@code='a']/text()='locality']/marc:subfield[@code='b']/text() | //marc:datafield[@tag='690' and marc:subfield[@code='a']/text()='longitude']/marc:subfield[@code='b']/text() | //marc:datafield[@tag='690' and marc:subfield[@code='a']/text()='latitude']/marc:subfield[@code='b']/text()),';')</xpath>
+    </field>
+    <!-- |-  GBIF specific fields -->
+    <field name="gbif_id">
+      <xpath>//marc:datafield[@tag='690'][marc:subfield[@code='a']/text()="gbif_id"]/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>

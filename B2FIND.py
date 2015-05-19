@@ -1928,18 +1928,10 @@ class CONVERTER(object):
         return results
 
     def evalxpath(self,obj, expr, ns):
-        ## print 'ns %s' % ns
-    ##print 'expr %s' % expr
-    ##expr = "replace(string-join('//dc'))"
-    ## exec expr
         flist=re.split(r'[\(\),]',expr.strip()) ### r'[(]',expr.strip())
-    ##print 'flist %s' % flist
-    ##obj.xpath(expr)
-    ##locals()[expr]()
         retlist=list()
         for func in flist:
             func=func.strip()
-            ## print 'func %s' % func
             if func.startswith('//'): 
                 fxpath= '.'+re.sub(r'/text()','',func)  
                 try:
@@ -1953,9 +1945,9 @@ class CONVERTER(object):
                     for elem in obj.findall('.//',ns):
                         retlist.append(elem.text)
                 except Exception as e:
-                    print 'ERROR %s : during xpath extraction of %s' % (e,'.//')
+                    print 'ERROR %s : during xpath extraction of %s' % (e,'./')
                     return []
-                
+
         return retlist
 
     def xpathmdmapper(self,xmldata,xlines,namespaces):
@@ -1967,13 +1959,10 @@ class CONVERTER(object):
         ##           namespaces = {'dc':'http://purl.org/dc/elements/1.1/'}
         for line in xlines:
           try:
-            ##print 'line %s' % line.strip('\n')
-            m = re.match(r'(\s+)<field name="(\w+)', line)
-            if m:  ##line.startswith(r'(\s+)(<field name=")(-?[0-9]*)'):
+            m = re.match(r'(\s+)<field name="(.*?)">', line)
+            if m:
                 field=m.group(2)
-                ## print 'field %s' % field
             else:
-                ##print 'nfound line %s ' % line
                 r = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)')
                 m2 = r.search(line)
                 rs = re.compile('(\s+)(<string>)(.*?)(</string>)')
@@ -1984,14 +1973,8 @@ class CONVERTER(object):
                     self.logger.debug(' | %10s | %10s | %10s | \n' % (field,xstring,xstring))
                 elif m2:
                     xpath=m2.group(3)
-                    ## print 'xpath %s' % xpath
                     retval=self.evalxpath(xmldata, xpath, namespaces)
-                    ## print 'retval %s' % retval
                     if len(retval)==0 : continue
-                    ##if field == 'tags':
-                    ##    jsondata[field]=list()
-                    ##    for val in retval:
-                    ##        jsondata[field].append({"key" : "name", "value" : val })
                     if field == 'fulltext':
                         retval=' '.join([unicode(i).strip() for i in retval])
                         ##retval=' '.join([unicode(i) for i in vallist]) ## ''.join(retval).replace('\n', ' ').split()])
