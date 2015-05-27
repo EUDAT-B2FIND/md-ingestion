@@ -132,7 +132,7 @@ def main():
     OUT.HTML_print_begin()
     
     ## START PROCESSING:
-    logger.info("\nStart :\t%s" % now)
+    logger.info("\nStart :\t\t%s" % now)
     OUT.save_stats('#Start','subset','StartTime',0)
     
     try:
@@ -807,6 +807,10 @@ def parse_list_file(process,filename,community='',subset=''):
                 logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Only 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
                 exit_program()
     
+    if len(reqlist) == 0:
+        logger.error(' No matching request found in %s' % filename)
+        exit()
+ 
     return reqlist
 
 def options_parser(modes):
