@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifers   oai_dc
+badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifers   oai_dc solas
 # CEDA : Physics
 ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375626A656374733D70687973696373
 pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 
@@ -37,7 +39,7 @@ dariah http://acdh.oeaw.ac.at/acdh-repo/oai ListRecords oai_dc acdh_
 #?MPI-PL h#=34460
 dariah http://fedora.phaidra.univie.ac.at/oaiprovider ListRecords  oai_dc vienna-phaidra_
 # ?? ERR currently not harvestable  
-#- dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml oai_dc arachne_
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc arachne_
 # ?? ERR?? : AttributeError: 'NoneType' object has no attribute 'tag' ??? h#= ?MPI-PL h#=100
 dariah http://demo.imeji.org/fledgeddata/oai ListIdentifiers  oai_dc imeji_
 ## h#=86472 ??MPI-PL ???
@@ -49,7 +51,7 @@ dariah http://edoc.bbaw.de/oai2/oai2.php ListRecords  oai_dc bbaw_
 ## ADS h#=... ?MPI-PL h#=431
 dariah http://archaeologydataservice.ac.uk/oai/archives/OAIHandler ListRecords oai_dc ads_ 
 ## h#=32516 ?MPI-PL h#=32091
-dariah http://DARAstaroai.theses.fr/OAIHandler ListRecords  oai_dc star_
+dariah http://DARAstaroai.theses.fr/OAIHandler ListIdentifiers  oai_dc star_
 ## h#1 >150000 harvesting stopped ?MPI-PL h#=186197
 dariah http://www.calames.abes.fr/oai/oai2.aspx ListRecords  oai_dc calames_
 ## <!-- currently not harvestable: provider url="http://oai.openedition.org"/ -->
