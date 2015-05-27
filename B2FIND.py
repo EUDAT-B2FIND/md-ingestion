@@ -709,11 +709,10 @@ class CONVERTER(object):
     # Parameters:
     # -----------
     # 1. (OUT object)   OUT - object of the OUTPUT class
-    # 2. * (path)       root  - path to java converter directory
     #
     # Return Values:
     # --------------
-    # 1. CONVERTER object
+    # CONVERTER object
     #
     # Public Methods:
     # ---------------
@@ -788,13 +787,13 @@ class CONVERTER(object):
 
         """
         def __init__(self):
-           self.discipl_list = self.get_list()
+            self.discipl_list = self.get_list()
 
         @staticmethod
         def get_list():
             import csv
             import os
-            root='../mapper/current'
+            ##HEW-D root='../mapper/current'
             discipl_file =  '%s/mapfiles/b2find_disciplines.tab' % (os.getcwd())
             disctab = []
             with open(discipl_file, 'r') as f:
@@ -885,12 +884,13 @@ class CONVERTER(object):
           iddict=dict()
           favurl=idarr[0]
   
-          for id in idarrn :
+          for id in idarr : ## HEW-D idarrn ??!!
             if id.startswith('http://data.theeuropeanlibrary'):
                iddict['url']=id
-##HEW-D            elif id.startswith('ivo:'):
-##HEW-D               iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
-##HEW-D               favurl=iddict['IVO']
+            elif id.startswith('ivo:'):
+               ##HEW-CHG iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
+               iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
+               favurl=iddict['IVO']
             elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
                iddict['DOI'] = self.concat('http://dx.doi.org/',id)
                favurl=iddict['DOI']
@@ -1164,11 +1164,15 @@ class CONVERTER(object):
           - eliminate duplicates, numbers and 1-character- strings, ...      
         """
 
-        if type(invalue) is list :
-          dictlist=[]
-          for lentry in invalue :
-            valarr=filter(None, re.split(r"([,\-!?:;])+",lentry['name']))
-            valarr=list(set(valarr)) ## this eliminates real duplicates
+        dictlist=[]
+        if type(invalue) is not list :
+            invalue=[x.strip() for x in invalue.split(';')]
+            invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
+        for lentry in invalue :
+            if type(lentry) is dict :
+                valarr=lentry.values()
+            else:
+                valarr=filter(None, re.split(r"([,\-!?:;])+",lentry)) ## ['name']))
             for entry in valarr:
                entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry).strip()
                if entry.isdigit() or len(entry)==1 : continue ## eleminate digit and 1 letter values
@@ -1177,8 +1181,6 @@ class CONVERTER(object):
                         entry=entry.split('=')[1]
                    entrydict={ "name": entry }  
                    dictlist.append(entrydict.copy())
-        else:
-            return invalue.strip(r"\([,\-!?:;]\)+")
         return dictlist
 
     def uniq(self,input):
@@ -1756,6 +1758,7 @@ class CONVERTER(object):
              if not os.path.isfile(mapfile):
                 self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
+          self.logger.info(' |- Mapfile\t%s' % mapfile)
 
           # find all .xml files in path/xml
           results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
@@ -1796,123 +1799,117 @@ class CONVERTER(object):
         fcount = 0
         self.logger.info(' %s     INFO  B2FIND - Mapping files in %s/json' % (time.strftime("%H:%M:%S"),path))
         for filename in files:
-              fcount+=1
-              self.logger.info('    | c | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+          fcount+=1
+          self.logger.info('    | c | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
 
-              jsondata = dict()
-        
-              if ( os.path.getsize(path+'/json/'+filename) > 0 ):
-                with open(path+'/json/'+filename, 'r') as f:
-                   try:
-                        jsondata=json.loads(f.read())
-                   except:
-                        log.error('    | [ERROR] Cannot load json file %s' % path+'/json/'+filename)
-                        results['ecount'] += 1
-                        continue
-                try:
-                   ## md postprocessor
-                   if (rules):
-                       self.logger.debug(' [INFO]:  Processing according rules %s' % rules)
-                       jsondata=self.postprocess(jsondata,rules)
-                except Exception as e:
-                    self.logger.error(' [ERROR] %s : during postprocessing' % (e))
+          jsondata = dict()
+    
+          if ( os.path.getsize(path+'/json/'+filename) > 0 ):
+            with open(path+'/json/'+filename, 'r') as f:
+               try:
+                    jsondata=json.loads(f.read())
+               except:
+                    log.error('    | [ERROR] Cannot load json file %s' % path+'/json/'+filename)
+                    results['ecount'] += 1
                     continue
+            try:
+               ## md postprocessor
+               if (rules):
+                   self.logger.debug(' [INFO]:  Processing according rules %s' % rules)
+                   jsondata=self.postprocess(jsondata,rules)
+            except Exception as e:
+                self.logger.error(' [ERROR] %s : during postprocessing' % (e))
+                continue
 
-                iddict=dict()
-                spvalue=None
-                stime=None
-                etime=None
-                publdate=None
-                # loop over all fields
-                for facet in jsondata: # default CKAN fields
-                   if facet == 'author':
-                         jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
-                         jsondata[facet] = self.remove_duplicates(jsondata[facet])
-                   elif facet == 'tags':
-                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
-                   elif facet == 'url':
-                         iddict = self.map_identifiers(jsondata[facet])
-                   ##elif facet == 'title' : ## or facet == 'notes'
-                   ##      jsondata[facet] = jsondata[facet]## .encode('latin1','replace')
-                   elif facet == 'extras': # extra CKAN fields
-                      try:  ### Semantic mapping of extra keys
-                         for extra in jsondata[facet]:
-                            if type(extra['value']) is list:
-                              extra['value']=self.uniq(extra['value'])
-                              if len(extra['value']) == 1:
-                                 extra['value']=extra['value'][0] 
-                            elif extra['key'] == 'Discipline': # generic mapping of discipline
-                              extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
-                            elif extra['key'] == 'Publisher':
-                              extra['value'] = self.cut(extra['value'],'=',2)
-                              extra['value'] = self.remove_duplicates(extra['value'])
-                            elif extra['key'] == 'SpatialCoverage':
-                               desc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
-                               if wlon and slat and elon and nlat :
-                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                                 ##extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
-                               if desc :
-                                 extra['value']=desc
-                            elif extra['key'] == 'TemporalCoverage':
-                               desc,stime,etime=self.map_temporal(extra['value'])
-                               if desc:
-                                  extra['value']=desc
-                            elif extra['key'] == 'Language': # generic mapping of languages
-                               extra['value'] = self.map_lang(extra['value'])
-                            elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
-                               publdate=self.date2UTC(extra['value'])
-                               extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
-                            elif extra['key'] == 'Contact':
-                               extra['value'] = self.remove_duplicates(extra['value'])
-                            if type(extra['value']) is not str and type(extra['value']) is not unicode :
-                               self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
-                      except Exception as e: 
-                          self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
-                          ##HEW??? results['ecount'] += 1
-                          continue
-                   ##elif isinstance(jsondata[facet], basestring) :
-                   ##    ### mapping of default string fields
-                   ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
-                if iddict:
-                  for key in iddict:
-                    if key == 'url':
-                        jsondata['url']=iddict['url']
-                    else:
-                        jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
-                if spvalue :
-                    jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
-                if stime and etime :
-                    jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
-                    jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
-                    jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
-                    jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
+            iddict=dict()
+            spvalue=None
+            stime=None
+            etime=None
+            publdate=None
+            # loop over all fields
+            for facet in jsondata: # default CKAN fields
+              if facet == 'author':
+                jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
+                jsondata[facet] = self.remove_duplicates(jsondata[facet])
+              elif facet == 'tags':
+                jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
+              elif facet == 'url':
+                iddict = self.map_identifiers(jsondata[facet])
+              elif facet == 'extras': # extra CKAN fields
+                try:  ### Semantic mapping of extra keys
+                  for extra in jsondata[facet]:
+                    if type(extra['value']) is list:
+                      extra['value']=self.uniq(extra['value'])
+                    if len(extra['value']) == 1:
+                      extra['value']=extra['value'][0] 
+                    elif extra['key'] == 'Discipline': # generic mapping of discipline
+                      extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                    elif extra['key'] == 'Publisher':
+                      extra['value'] = self.cut(extra['value'],'=',2)
+                      extra['value'] = self.remove_duplicates(extra['value'])
+                    elif extra['key'] == 'SpatialCoverage':
+                      desc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
+                      if wlon and slat and elon and nlat :
+                        spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
+                      if desc :
+                        extra['value']=desc
+                    elif extra['key'] == 'TemporalCoverage':
+                      desc,stime,etime=self.map_temporal(extra['value'])
+                      if desc:
+                        extra['value']=desc
+                    elif extra['key'] == 'Language': 
+                      extra['value'] = self.map_lang(extra['value'])
+                    elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
+                      publdate=self.date2UTC(extra['value'])
+                      extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
+                    elif extra['key'] == 'Contact':
+                      extra['value'] = self.remove_duplicates(extra['value'])
+                    if type(extra['value']) is not str and type(extra['value']) is not unicode :
+                      self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
+                except Exception as e: 
+                  self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
+                  ##HEW??? results['ecount'] += 1
+                  continue
+            if iddict:
+              for key in iddict:
+                if key == 'url':
+                    jsondata['url']=iddict['url']
+                else:
+                    jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
+            if spvalue :
+                jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
+            if stime and etime :
+                jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
+                jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
+                jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
+                jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
 
-                if publdate :
-                    jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate }) 
+            if publdate :
+                jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate }) 
 
-                with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
-                ##with io.open(path+'/json/'+filename, 'w') as json_file:
-                   try:
-		       log.debug('   | [INFO] decode json data')
-                       data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
-                   except Exception as e:
-                       log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
-                   try:
-                       log.debug('   | [INFO] save json file')
-                       json_file.write(data)
-                   except TypeError, e :
-                       # Decode data to Unicode first
-                       log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,e))
+            with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
+            ##with io.open(path+'/json/'+filename, 'w') as json_file:
+               try:
+		   log.debug('   | [INFO] decode json data')
+                   data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+               except Exception as e:
+                   log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
+               try:
+                   log.debug('   | [INFO] save json file')
+                   json_file.write(data)
+               except TypeError, e :
+                   # Decode data to Unicode first
+                   log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,e))
 ##                       json_file.write(data.decode('utf8'))
 ##                   try:
 ##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
-                   except Exception as e:
-                        log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
-                        results['ecount'] += 1
-                        continue
-              else:
-                results['ecount'] += 1
-                continue
+               except Exception as e:
+                    log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
+                    results['ecount'] += 1
+                    continue
+          else:
+            results['ecount'] += 1
+            continue
 
         self.logger.info('%s     INFO  B2FIND : %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
@@ -1936,7 +1933,8 @@ class CONVERTER(object):
                 fxpath= '.'+re.sub(r'/text()','',func)  
                 try:
                     for elem in obj.findall(fxpath,ns):
-                        retlist.append(elem.text)
+                        if elem.text :
+                            retlist.append(elem.text)
                 except Exception as e:
                     print 'ERROR %s : during xpath extraction of %s' % (e,fxpath)
                     return []
@@ -1953,7 +1951,7 @@ class CONVERTER(object):
     def xpathmdmapper(self,xmldata,xlines,namespaces):
         self.logger.debug(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
 
-        defaultf={'title','author','notes','url'}
+        defaultf={'title','author','notes','url','tags'}
         jsondata=dict()
         jsondata["extras"]=list()
         ##           namespaces = {'dc':'http://purl.org/dc/elements/1.1/'}
@@ -1989,7 +1987,7 @@ class CONVERTER(object):
                 else:
                     continue
           except Exception as e:
-              log.error('    | [ERROR] : %s xpathmdmapper processing field %s with xpath %s' % (e,field,xpath))
+              log.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tvalue\t%s' % (e,field,xpath,retval))
               continue
 
         return jsondata
@@ -2076,11 +2074,7 @@ class CONVERTER(object):
                           log.debug('   | [INFO] save json file')
                           json_file.write(data)
                        except TypeError, err :
-                          # Decode data to Unicode first
                           log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
-##                        json_file.write(data.decode('utf8'))
-##                     try:
-##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
                        except Exception as e:
                           log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
                           err+='Cannot write json file %s' % path+'/json/'+filename
@@ -2110,25 +2104,22 @@ class CONVERTER(object):
              if not os.path.isfile(mapfile):
                 self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
- 
+          
+          self.logger.info(' |- Mapfile\t%s' % os.path.basename(mapfile))
+
           # read xpath rules from map file 
           mf = codecs.open(mapfile, "r", "utf-8")
           xlines = mf.readlines()
           xlines = filter(lambda x:len(x) != 0,xlines) # removes empty lines
 
-
-          ## namespaces = {'dc':'http://purl.org/dc/elements/1.1/'}
           namespaces=dict()
           for line in xlines:
-            ##print 'line %s' % line.strip('\n')
-            ns = re.match(r'(\s+)(<namespace ns=")(\w+)"(\s+)uri="(.*)"/>', line) ## (\w+)"(\s+)uri="(\w+)"/>', line)
-            if ns:  ##line.startswith(r'(\s+)(<field name=")(-?[0-9]*)'):
-                ## print '>>>> namespaces found : %s :%s :%s' % (ns.group(3),ns.group(4),ns.group(5))
+            ns = re.match(r'(\s+)(<namespace ns=")(\w+)"(\s+)uri="(.*)"/>', line)
+            if ns:
                 namespaces[ns.group(3)]=ns.group(5)
                 continue
 
-          print 'namespaces %s' % namespaces
-
+          self.logger.info(' |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
 
           # find all .xml files in path/xml
           results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
