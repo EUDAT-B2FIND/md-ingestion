@@ -11,8 +11,12 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
-badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifers   oai_dc
-badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifers   oai_dc solas
+## PANGAEA
+pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
+## GFZ data services
+gfz     http://doidb.wdc-terra.org/oaip/oai        ListIdentifiers   oai_dc DOIDB
+badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc
+badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc solas
 # CEDA : Physics
 ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375626A656374733D70687973696373
 pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 

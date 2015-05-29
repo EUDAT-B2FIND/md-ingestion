@@ -1879,7 +1879,7 @@ class CONVERTER(object):
             if spvalue :
                 jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
             if stime and etime :
-                jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
+                jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime })
                 jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
                 jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
                 jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
@@ -1994,9 +1994,11 @@ class CONVERTER(object):
 
     def map(self,community,mdprefix,path):
         ## map(CONVERTER object, community, mdprefix, path) - method
-        # Maps the XML files in directory <path> to JSON files in two steps
-        #  1. select entries by Python XPATH converter according mapfile defined by <community> and <mdprefix>. 
-        #  2. perform semantic mapping versus closed vovabularies ...
+        # Maps the XML files in directory <path> to JSON files 
+        # For each file two steps are performed
+        #  1. select entries by Python XPATH converter according 
+        #      the mapfile [<community>-]<mdprefix>.xml . 
+        #  2. perform generic and semantic mapping versus iso standards and closed vovabularies ...
         #
         # Parameters:
         # -----------
