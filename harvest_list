@@ -72,9 +72,9 @@ dariah http://www.sistory.si/oai.php ListRecords  oai_dc sistory_
 # MPI-PL #h=    ?= #DASISH = 145245
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi mpi-pl_
 # UniOfCopenhagen  #h=    ?= #DASISH = 7
-clarin  http://clarin.dk/oaiprovider ListRecords cmdi vienna-lang-res_
+clarin  http://clarin.dk/oaiprovider ListRecords cmdi ucph_
 # Viena Language resources #h=    ?= #DASISH = 14324
-clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc ucph_
+clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc vienna-lang-res_
 ## CESSDA endpoint
 # ??ERROR : --> ListIdentifiers ?? 
 #h=115
@@ -109,7 +109,7 @@ b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml DRIHM
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml BBMRI
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml NRM
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml GBIF
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
+b2share  https://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
 ##%%% DataCite : MD Provider is the DataCite.org 
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  TIB.WDCC
 datacite  http://oai.datacite.org/oai  ListRecords  oai_dc  BL
