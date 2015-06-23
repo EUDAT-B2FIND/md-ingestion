@@ -877,10 +877,10 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         try:
-          idarrn=list()
+          ##?? idarrn=list()
           idarr=invalue.split(";")
-          for id in idarr :
-             idarrn.extend(re.findall('\[(.*?)\]|\([^\)]*\)|\"[^\"]*\"|\S+',id))
+          ##??for id in idarr :
+          ##??   idarrn.extend(re.findall('\[(.*?)\]|\([^\)]*\)|\"[^\"]*\"|\S+',id))
           iddict=dict()
           favurl=idarr[0]
   
@@ -906,7 +906,7 @@ class CONVERTER(object):
             elif 'hdl:' in id:
                iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
                favurl=iddict['PID']
-            elif 'url' not in iddict and self.check_url(id) :
+            elif 'url' not in iddict: ##!!?? bad performance !!! and self.check_url(id) :
                iddict['url']=id
 
           if not 'url' in iddict :
@@ -2092,6 +2092,10 @@ class CONVERTER(object):
           ##HEW-D self.logger.info(out)
           if (err is not None ): self.logger.error('[ERROR] ' + err)
           ##exit()
+          
+          #### 
+
+
         else: # convert xml records using Python XPATH (lxml supports XPath 1.0)
           if not os.path.exists(path):
               self.logger.error('[ERROR] The directory "%s" does not exist! No files to map are found!\n(Maybe your convert list has old items?)' % (path))
@@ -2124,6 +2128,25 @@ class CONVERTER(object):
 
           self.logger.info(' |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
 
+          #### NEWWWWWWWWWWWW mapping and pp config files
+          # check for mapper postproc config file
+          subset=os.path.basename(path).split('_')[0]
+          rules=None
+          ppconfig_file='%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),community,mdprefix)
+          if os.path.isfile(ppconfig_file):
+            # read config file
+            f = codecs.open(ppconfig_file, "r", "utf-8")
+            rules = f.readlines()[1:] # without the header
+            rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
+            ## filter out community and subset specific rules
+            subsetrules = filter(lambda x:(x.startswith(community+',,'+subset)),rules)
+            if subsetrules:
+                rules=subsetrules
+            else:
+                rules=filter(lambda x:(x.startswith('*,,*')),rules)
+          ##  instance of B2FIND discipline table
+          disctab = self.cv_disciplines()
+
           # find all .xml files in path/xml
           results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
 
@@ -2131,7 +2154,6 @@ class CONVERTER(object):
           if (not os.path.isdir(path+'/json')):
              os.makedirs(path+'/json')
 
-          ############# NEW ####################
           # loop over all .xml files in path/xml (harvested xml records):
           results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
           files = filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml'))
@@ -2146,48 +2168,117 @@ class CONVERTER(object):
               jsondata = dict()
         
               if ( os.path.getsize(path+'/xml/'+filename) > 0 ):
-                ##with open(path+'/xml/'+filename, 'r') as f:
-                   try:
-                        ##hjsondata=json.loads(f.read())
-                        xmldata = ET.parse(path+'/xml/'+filename)
-                   except Exception as e:
-                        log.error('    | [ERROR] %s : Can not parse xml file %s' % (e,path+'/xml/'+filename))
+                try:
+                    xmldata = ET.parse(path+'/xml/'+filename)
+                except Exception as e:
+                    log.error('    | [ERROR] %s : Can not parse xml file %s' % (e,path+'/xml/'+filename))
+                    results['ecount'] += 1
+                    continue
+                try:
+                    # Run Python XPATH converter
+                    self.logger.info('    | m | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+
+                    jsondata=self.xpathmdmapper(xmldata,xlines,namespaces)
+                except Exception as e:
+                    log.error('    | [ERROR] %s : during XPATH processing' % e )
+                    results['ecount'] += 1
+                    continue
+                try:
+                   ## md postprocessor
+                   if (rules):
+                       self.logger.debug(' [INFO]:  Processing according rules %s' % rules)
+                       jsondata=self.postprocess(jsondata,rules)
+                except Exception as e:
+                    self.logger.error(' [ERROR] %s : during postprocessing' % (e))
+                    continue
+
+                iddict=dict()
+                spvalue=None
+                stime=None
+                etime=None
+                publdate=None
+                # loop over all fields
+                for facet in jsondata: # default CKAN fields
+                   ## print 'facet %s ...' % facet
+                   if facet == 'author':
+                         jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
+                         jsondata[facet] = self.remove_duplicates(jsondata[facet])
+                   elif facet == 'tags':
+                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
+                   elif facet == 'url':
+                         iddict = self.map_identifiers(jsondata[facet])
+                   elif facet == 'extras': # Semantic mapping of extra CKAN fields
+                      try:
+                         for extra in jsondata[facet]:
+                            ## print 'facet %s ...' % extra['key']
+                            if type(extra['value']) is list:
+                              extra['value']=self.uniq(extra['value'])
+                              if len(extra['value']) == 1:
+                                 extra['value']=extra['value'][0] 
+                            elif extra['key'] == 'Discipline': # generic mapping of discipline
+                              extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                            elif extra['key'] == 'Publisher':
+                              extra['value'] = self.cut(extra['value'],'=',2)
+                            elif extra['key'] == 'SpatialCoverage':
+                               desc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
+                               if wlon and slat and elon and nlat :
+                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
+                                 ##extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
+                               if desc :
+                                 extra['value']=desc
+                            elif extra['key'] == 'TemporalCoverage':
+                               desc,stime,etime=self.map_temporal(extra['value'])
+                               if desc:
+                                  extra['value']=desc
+                            elif extra['key'] == 'Language': # generic mapping of languages
+                               extra['value'] = self.map_lang(extra['value'])
+                            elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
+                               publdate=self.date2UTC(extra['value'])
+                               extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
+                            if type(extra['value']) is not str and type(extra['value']) is not unicode :
+                               self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
+                      except Exception as e: 
+                          self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
+                          ##HEW??? results['ecount'] += 1
+                          continue
+                   ##elif isinstance(jsondata[facet], basestring) :
+                   ##    ### mapping of default string fields
+                   ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
+                if iddict:
+                  for key in iddict:
+                    if key == 'url':
+                        jsondata['url']=iddict['url']
+                    else:
+                        jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
+                if spvalue :
+                    jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
+                if stime and etime :
+                    jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
+                    jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
+                    jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
+                    jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
+
+                if publdate :
+                    jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate }) 
+
+                jsonfilename=os.path.splitext(filename)[0]+'.json'
+                with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
+                    try:
+                        log.debug('   | [INFO] decode json data')
+                        data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                    except Exception as e:
+                        log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
+                    try:
+                        log.debug('   | [INFO] save json file')
+                        json_file.write(data)
+                    except TypeError, err :
+                        # Decode data to Unicode first
+                        log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
+                    except Exception as e:
+                        log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
+                        err+='Cannot write json file %s' % path+'/json/'+filename
                         results['ecount'] += 1
                         continue
-                   try:
-                       # Run Python XPATH converter
-                       self.logger.info('    | m | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
-
-                       jsondata=self.xpathmdmapper(xmldata,xlines,namespaces)
-                       ## print 'ret jsondata %s' % jsondata
-                       ##exit()
-                   except Exception as e:
-                       log.error('    | [ERROR] %s : during XPATH processing' % e )
-                       results['ecount'] += 1
-                       ## exit()
-                       continue
-
-                   jsonfilename=os.path.splitext(filename)[0]+'.json'
-                   with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
-                       try:
-                           log.debug('   | [INFO] decode json data')
-                           data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
-                       except Exception as e:
-                          log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
-                       try:
-                          log.debug('   | [INFO] save json file')
-                          json_file.write(data)
-                       except TypeError, err :
-                          # Decode data to Unicode first
-                          log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
-##                        json_file.write(data.decode('utf8'))
-##                     try:
-##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
-                       except Exception as e:
-                          log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
-                          err+='Cannot write json file %s' % path+'/json/'+filename
-                          results['ecount'] += 1
-                          continue
               else:
                 results['ecount'] += 1
                 continue
@@ -2196,14 +2287,13 @@ class CONVERTER(object):
           # check output and print it
           ##HEW-D self.logger.info(out)
           if (err is not None ): self.logger.error('[ERROR] ' + err)
-          
-          ### end of NEW ################
-
-        # check for mapper postproc config file
-        subset=os.path.basename(path).split('_')[0]
-        rules=None
-        ppconfig_file='%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),community,mdprefix)
-        if os.path.isfile(ppconfig_file):
+        
+        if ( mdprefix == 'json' ): # map harvested json records using jsonpath rules  
+          # check for mapper postproc config file
+          subset=os.path.basename(path).split('_')[0]
+          rules=None
+          ppconfig_file='%s/mapfiles/mdpp-%s-%s.conf' % (os.getcwd(),community,mdprefix)
+          if os.path.isfile(ppconfig_file):
             # read config file
             f = codecs.open(ppconfig_file, "r", "utf-8")
             rules = f.readlines()[1:] # without the header
@@ -2214,14 +2304,16 @@ class CONVERTER(object):
                 rules=subsetrules
             else:
                 rules=filter(lambda x:(x.startswith('*,,*')),rules)
-        ##  instance of B2FIND discipline table
-        disctab = self.cv_disciplines()
+          ##  instance of B2FIND discipline table
+          disctab = self.cv_disciplines()
 
-        # loop over all .json files in dir/json:
-        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
-        fcount = 0
-        self.logger.info(' %s     INFO  B2FIND - Mapping files in %s/json' % (time.strftime("%H:%M:%S"),path))
-        for filename in files:
+
+
+          # loop over all .json files in dir/json:
+          files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+          fcount = 0
+          self.logger.info(' %s     INFO  B2FIND - Mapping files in %s/json' % (time.strftime("%H:%M:%S"),path))
+          for filename in files:
               fcount+=1
               self.logger.info('    | c | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
 
@@ -2258,10 +2350,8 @@ class CONVERTER(object):
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    elif facet == 'url':
                          iddict = self.map_identifiers(jsondata[facet])
-                   ##elif facet == 'title' : ## or facet == 'notes'
-                   ##      jsondata[facet] = jsondata[facet]## .encode('latin1','replace')
-                   elif facet == 'extras': # extra CKAN fields
-                      try:  ### Semantic mapping of extra keys
+                   elif facet == 'extras': # Semantic mapping of extra CKAN fields
+                      try:
                          for extra in jsondata[facet]:
                             if type(extra['value']) is list:
                               extra['value']=self.uniq(extra['value'])
@@ -2313,6 +2403,8 @@ class CONVERTER(object):
                 if publdate :
                     jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate }) 
 
+
+
                 with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
                 ##with io.open(path+'/json/'+filename, 'w') as json_file:
                    try:
@@ -2326,9 +2418,6 @@ class CONVERTER(object):
                    except TypeError, e :
                        # Decode data to Unicode first
                        log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,e))
-##                       json_file.write(data.decode('utf8'))
-##                   try:
-##                        json.dump(jsondata,json_file, sort_keys = True, indent = 4, ensure_ascii=False)
                    except Exception as e:
                         log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
                         results['ecount'] += 1
