@@ -1107,7 +1107,7 @@ class CONVERTER(object):
             invalue=invalue.split(';')
         for indisc in invalue :
            ##indisc=indisc.encode('ascii','ignore').capitalize()
-           indisc=indisc.encode('utf8').strip()
+           indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip()
            maxr=0.0
            maxdisc=''
            for line in disctab :
@@ -1240,6 +1240,7 @@ class CONVERTER(object):
         invalue=list(OrderedDict.fromkeys(invalue)) ## this elimintas real duplicates
         revvalarr=[]
         for entry in invalue:
+          entry = entry.replace('\n',' ').replace('\r',' ').strip()
           if entry in ['not applicable']:
              invalue.remove(entry)
              continue
