@@ -739,8 +739,8 @@ class CONVERTER(object):
         self.OUT = OUT
         
         if (not os.path.exists(root)):
-            self.logger.critical('[CRITICAL] "%s" does not exist! No converter script is found!' % (root))
-            exit()
+            self.logger.warning('[WARNING] "%s" does not exist! No JAVA converter script is found !' % (root))
+            ## exit()
     
         # searching for all java class packages in root/lib
         self.cp = ".:"+":".join(filter(lambda x: x.endswith('.jar'), os.listdir(root+'/lib')))
@@ -793,7 +793,6 @@ class CONVERTER(object):
         def get_list():
             import csv
             import os
-            ##HEW-D root='../mapper/current'
             discipl_file =  '%s/mapfiles/b2find_disciplines.tab' % (os.getcwd())
             disctab = []
             with open(discipl_file, 'r') as f:
@@ -2860,8 +2859,66 @@ class UPLOADER (object):
         self.OUT = OUT
         
         self.package_list = dict()
+
+    def purge_group(self,community):
+        ## purge_list (UPLOADER object, community) - method
+        # Purges a community (group) from CKAN 
+        #
+        # Parameters:
+        # -----------
+        # (string)  community - A B2FIND community / CKAN group
+        #
+        # Return Values:
+        # --------------
+        # None   
+    
+        pstart = time.time()
+        self.logger.debug(' Remove all packages from and purge list %s ... ' % community)
+
+        result = (self.CKAN.action('group_purge',{"id":community}))
+        print 'result %s' % result
+
+        ptime = time.time() - pstart
         
+        # save details:
+        self.OUT.save_stats('#PurgeGroup','','time',ptime)
         
+    def get_group_list(self,community):
+        ## get_group_list (UPLOADER object, community) - method
+        # Gets a full detailed list of all packages from a community (group) in CKAN (parameter <UPLOADER.CKAN>)
+        #
+        # Parameters:
+        # -----------
+        # (string)  community - A B2FIND community / CKAN group
+        #
+        # Return Values:
+        # --------------
+        # None   
+    
+        pstart = time.time()
+        self.logger.debug(' Get all package names from community %s... ' % community)
+
+        # get the full package list from a community in CKAN:
+        query='"groups:'+community+'"'
+        print 'query %s' % query
+        community_packages = (self.CKAN.action('package_search',{"q":query}))##['results']##['packages']
+        print 'comm_packages %s' % community_packages
+
+        # create a new dictionary of it:
+        package_list = dict() 
+        for ds in community_packages:
+            print 'ds %s' % ds
+            package_list[ds['name']] = ds['version']
+
+        del community_packages
+        self.package_list = package_list
+        
+        ptime = time.time() - pstart
+        
+        # save details:
+        self.OUT.save_stats('#GetPackages','','time',ptime)
+        self.OUT.save_stats('#GetPackages','','count',len(package_list))
+
     def get_packages(self,community):
         ## get_packages (UPLOADER object, community) - method
         # Gets a full detailed list of all packages from a community in CKAN (parameter <UPLOADER.CKAN>)
