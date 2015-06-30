@@ -741,12 +741,14 @@ class CONVERTER(object):
         if (not os.path.exists(root)):
             self.logger.warning('[WARNING] "%s" does not exist! No JAVA converter script is found !' % (root))
             ## exit()
-    
-        # searching for all java class packages in root/lib
-        self.cp = ".:"+":".join(filter(lambda x: x.endswith('.jar'), os.listdir(root+'/lib')))
+        else:
+            # searching for all java class packages in root/lib
+            self.cp = ".:"+":".join(filter(lambda x: x.endswith('.jar'), os.listdir(root+'/lib')))
         
-        # get the java converter name:
-        self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
+            # get the java converter name:
+            self.program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(root)))[0]
+
+        # B2FIND metadata fields
         self.b2findfields = list()
         self.b2findfields =[
                    "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
