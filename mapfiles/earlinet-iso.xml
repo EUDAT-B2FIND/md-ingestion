@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for ISO19139 format metadata from EARLINET. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+    <namespace ns="gmi" uri="http://www.isotc211.org/2005/gmi"/>
+    <namespace ns="gmd" uri="http://www.isotc211.org/2005/gmd"/>
+    <namespace ns="gco" uri="http://www.isotc211.org/2005/gco"/>
+    <namespace ns="gml" uri="http://www.opengis.net/gml"/>
+  </namespaces>
+  <mappings>
+   <!-- General information -->
+    <field name="title">
+      <xpath>//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>replace(//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString/text(),"\r","")</xpath>
+      <xpath>replace(//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString/text(),"\s+","")</xpath>
+    </field>
+    <field name="tags">
+      <xpath>replace(string-join(distinct-values(//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString/text()), ';'),"/","-")</xpath>
+      <xpath>replace(string-join(distinct-values(//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString/text()), ';'),"/","-")</xpath>
+    </field>
+    <!-- Access data  -->
+    <field name="url">
+      <xpath>string-join(distinct-values(//gmi:MI_Metadata/gmd:dataSetURI/gco:CharacterString/text()), '; ')</xpath>
+   </field>
+   <field name="Checksum">
+   </field>
+   <field name="Rights">
+      <xpath>string-join(distinct-values(//dc:rights/text()), '; ')</xpath>
+   </field>
+   <!-- Provenance data -->
+    <field name="Discipline">
+      <string>Atmospheric Chemistry; Environmental Science; Geophysics; Volcanology</string>
+<!--
+      <string>Earth Sciences</string>
+      <xpath>//gmi:MI_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode/text()</xpath>
+-->
+    </field>
+    <field name="author">
+      <xpath>string-join(distinct-values(//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text() | //gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text()), '; ')</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//gmd:dateStamp/gco:DateTime/text()</xpath>
+    </field>
+    <!-- Formal data -->
+    <field name="Language">
+      <xpath>string-join(distinct-values(//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gmd:languageCode/gmd:LanguageCode/text() | //gmi:MI_Metadata/gmd:locale/gmd:PT_Locale/gmd:languageCode/gmd:LanguageCode/text()), ';')</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>string-join(distinct-values(//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text() | //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text() | //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text() | //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text()), ';')</xpath>
+    </field>
+<!--
+    <field name="spatial">
+      <xpath>concat(//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(), ',', //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(), ',', //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text(), ',', //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text())</xpath>
+    </field>
+-->
+    <field name="TemporalCoverage">
+      <xpath>concat(//gml:TimePeriod/gml:beginPosition/text(),//temporalElement[1]/EX_TemporalExtent/extent/gml:TimePeriod/gml:endPosition/text())</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceFormat/gmd:MD_Format/gmd:version/gco:CharacterString/text()</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>
