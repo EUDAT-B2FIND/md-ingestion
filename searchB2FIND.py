@@ -41,7 +41,7 @@ def main():
     answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":0})
     tcount=answer['result']['count']
     print "=> %d datasets found" % tcount
-    print "=> %s args.output" % args.output
+    print "=> %s args.ids" % args.ids
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
     suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI'}
 
@@ -51,23 +51,26 @@ def main():
         PID     = StringCol(64)      # 64-character String
         DOI     = StringCol(64)      # 64-character String
 
-    h5file = open_file("results.h5", mode = "w", title = "Search results")
-    group = h5file.create_group("/", 'identifiers', 'Identification information')
-    table = h5file.create_table(group, 'readout', Record, "Readout example")
-    record = table.row
-
+    if args.output == 'hd5': 
+      h5file = open_file("results.h5", mode = "w", title = "Search results")
+      group = h5file.create_group("/", 'identifiers', 'Identification information')
+      table = h5file.create_table(group, 'readout', Record, "Readout example")
+      record = table.row
+    elif args.output == 'txt':
+      fh = open("results.txt", "w")
+      record={} 
+    else:
+      print 'Output type %s is not supported' % args.output
+      exit()
+            
+  
     totlist=[]
-    for outt in args.output:
+    for outt in args.ids:
        if outt in suppid :
           print 'Supported output type %s' % outt 
        else:
-           print 'Output type %s is not supported' % outt
+           print 'Identifier %s is not supported' % outt
            exit()
-    ##   fh=outt+'f' 
-    ##   fh = open(outt+'list', 'w')      
-    ##sf = open('source.file', 'w')
-    ##pidf = open('pid.file', 'w')
-    ##idf = open('id.file', 'w')
     countpid=0
     countdoi=0
     counter=0
@@ -101,13 +104,20 @@ def main():
             else:
                ##print 'No DOI available'
                record['DOI']  = '%s' % 'N/A'
-            record.append()
+            if args.output == 'hd5':
+               record.append()
+            elif args.output == 'txt':
+                fh.write(record['id']+'\n')
+            ## print ' record %s' % record
        cstart+=len(answer['result']['results']) 
 
     print "Found\n\t%d\trecords\n\t%d\tPIDs\n\t%d\tDOIs" % (counter, countpid, countdoi)
-    print "Results written to %s" % h5file.title
-    table.flush()
-    h5file.close()
+    if args.output == 'hd5':
+      print "Results written to %s" % h5file.title
+      table.flush()
+      h5file.close()
+    elif args.output == 'txt':
+      fh.close()
 
 def action(host, data={}):
     ## action (action, jsondata) - method
@@ -172,9 +182,10 @@ def get_args():
     )
    
     p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu', metavar='IP/URL')
+    p.add_argument('--output', '-o', help="Output format. Supported are 'txt' (plain text file), 'hd5' file, ...", default='txt', metavar='STRING')
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
-    p.add_argument('--output', '-o', help="Which identifiers should be outputed. Default is 'id'. Adiitioanl 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
-    p.parse_args('--output'.split())
+    p.add_argument('--ids', '-i', help="Which identifiers should be outputed. Default is 'id'. Adiitioanl 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
+    p.parse_args('--ids'.split())
     p.add_argument('pattern',  help='CKAN search pattern, i.e. (a list of) field:value terms.', metavar='PATTERN', nargs='*')
     
     args = p.parse_args()
