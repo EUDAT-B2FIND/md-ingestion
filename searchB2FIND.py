@@ -85,27 +85,21 @@ def main():
             ## print'    | %-4d | %-40s |' % (counter,ds['name'])
 
             record['id']  = '%s' % (ds['name'])
-            record['Source']  = '%s' % (ds['url'])
-            ##idf.write(ds['name']+'\n')
-            ##sf.write(ds['url']+'\n')
-            xpid=[e for e in ds['extras'] if e['key'] == 'PID']
-            if xpid:
-               ##print 'xpid %s' % xpid[0]['value']
-               record['PID']  = '%s' % (xpid)
-               countpid+=1
-            else:
-               ##print 'No PID available'
-               record['PID']  = '%s' % 'N/A'
-            xdoi=[e for e in ds['extras'] if e['key'] == 'DOI']
-            if xdoi:
-               ##print 'xdoi %s' % xdoi[0]['value']
-               record['DOI']  = '%s' % (xdoi)
-               countdoi+=1
-            else:
-               ##print 'No DOI available'
-               record['DOI']  = '%s' % 'N/A'
             if args.output == 'hd5':
-               record.append()
+                record['Source']  = '%s' % (ds['url'])
+                xpid=[e for e in ds['extras'] if e['key'] == 'PID']
+                if xpid:
+                    record['PID']  = '%s' % (xpid)
+                    countpid+=1
+                else:
+                    record['PID']  = '%s' % 'N/A'
+                xdoi=[e for e in ds['extras'] if e['key'] == 'DOI']
+                if xdoi:
+                    record['DOI']  = '%s' % (xdoi)
+                    countdoi+=1
+                else:
+                    record['DOI']  = '%s' % 'N/A'
+                record.append()
             elif args.output == 'txt':
                 fh.write(record['id']+'\n')
             ## print ' record %s' % record

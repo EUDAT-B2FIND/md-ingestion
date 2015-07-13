@@ -62,64 +62,10 @@ do
   done < "$jobfile"
 
   printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "$nfiles" "$jobfile" "$status" "$pid" "$(grep 'Start' ${outfile} | cut -d' ' -f3)" "$(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1)" "${comm_set}"
-  echo -e " |- $nfiles \t| $jobfile \t| $status\t|$pid\t| $(grep 'Start proc' ${outfile} | cut -d' ' -f4,5) | $(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1) | ${comm_set}\t"
   echo -e "    |- #Records  | $npfrec     | $(grep -c '| u |' ${outfile})\t| $(grep -c 'Creation of ' ${outfile})\t  | $(grep -c 'Update of ' ${outfile})\t | $(grep -c 'failed' $outfile )\t| $(grep -c 'No upload' $outfile )\t|"
   echo -e "    |- #Handles - - - - - - - - -\t| $(grep -c 'Create a new handle' ${outfile})  \t | $(grep -c 'Update checksum' $outfile )       \t | \t| $(grep -c 'No action required' $outfile ) \t|"
  
-##  echo -e "   |- Total provided records\t $npfrec \n"
   ((ntotrec = ntotrec + npfrec ))
-
-##  echo -e " |- Total processed records        \t $(grep -c '| u |' ${outfile} )"
-##  echo -e " |- Curr. processed set record      \t $(tail -5 ${outfile} | grep '| u |' | awk '{print $4}')"
-##  if [ $(grep -c 'Update of unknown record succeed' ${outfile}) -gt 0 ]
-##  then
-##    echo -e "  |- Update unknown r. succeed \t $(grep -c 'Update of unknown record succeed' ${outfile})"
-##  fi
-##  if [ $(grep -c 'Update of changed record succeed' ${outfile}) -gt 0 ]
-##  then
-##    echo -e "  |- Update changed r. succeed \t $(grep -c 'Update of changed record succeed' ${outfile})"
-##  fi
-##  if [ $(grep -c 'Creation of unknown record succeed' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- Create unknown r. succeed \t $(grep -c 'Creation of unknown record succeed' ${outfile})"
-##  fi
-##  if [ $(grep -c 'Creation of changed record succeed' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- Create changed r. succeed \t $(grep -c 'Creation of changed record succeed' ${outfile})"
-##  fi
-##  if [ $(grep -c 'Creation of new record' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- New created records       \t $(grep -c 'Creation of new record' ${outfile})"
-##  fi
-##  if [ $(grep -c 'Create a new handle' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- New created handles       \t $(grep -c 'Create a new handle' ${outfile})"
-##  fi
-##  if [ $(grep -c 'Upload of new record failed' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- Upload of new r. failed \t $(grep -c 'Upload of new record failed' $outfile )"
-##  fi
-##  if [ $(grep -c 'Upload of changed record failed' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- Upload of changed r. failed \t $(grep -c 'Upload of changed record failed' $outfile )"
-##  fi
-##  if [ $(grep -c 'Upload of changed record succeed' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- Udated records            \t $(grep -c 'Upload of changed record succeed' $outfile )"
-##  fi
-##  if [ $(grep -c 'Update checksum' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- Udated handles            \t $(grep -c 'Update checksum' $outfile )"
-##  fi
-##  if [ $(grep -c 'No upload' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- No action r. for record   \t $(grep -c 'No upload' $outfile )"
-##  fi
-##  if [ $(grep -c 'No action required' ${outfile}) -gt 0 ]
-##  then
-##    echo -e " |- No action r. for handle   \t $(grep -c 'No action required' $outfile )"
-##  fi
-
 done
 wait
 echo "|->>> \n In total $ntotrec json records provided in dirs of $upload_list \n"

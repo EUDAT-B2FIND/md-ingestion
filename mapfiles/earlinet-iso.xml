@@ -29,16 +29,10 @@
    <field name="Checksum">
    </field>
    <field name="Rights">
-      <xpath>string-join(distinct-values(//dc:rights/text()), '; ')</xpath>
    </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <string>Atmospheric Chemistry; Environmental Science; Geophysics; Volcanology</string>
-<!--
       <string>Earth Sciences</string>
-      <xpath>//gmi:MI_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode/text()</xpath>
-      <xpath>//gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode/text()</xpath>
--->
     </field>
     <field name="author">
       <xpath>string-join(distinct-values(//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text() | //gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text()), '; ')</xpath>
@@ -54,13 +48,8 @@
       <xpath>string-join(distinct-values(//gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gmd:languageCode/gmd:LanguageCode/text() | //gmi:MI_Metadata/gmd:locale/gmd:PT_Locale/gmd:languageCode/gmd:LanguageCode/text()), ';')</xpath>
     </field>
     <field name="SpatialCoverage">
-      <xpath>string-join(distinct-values(//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text() | //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text() | //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text() | //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text()), ';')</xpath>
+      <xpath>//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()</xpath>
     </field>
-<!--
-    <field name="spatial">
-      <xpath>concat(//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(), ',', //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(), ',', //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text(), ',', //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text())</xpath>
-    </field>
--->
     <field name="TemporalCoverage">
       <xpath>concat(//gml:TimePeriod/gml:beginPosition/text(),//temporalElement[1]/EX_TemporalExtent/extent/gml:TimePeriod/gml:endPosition/text())</xpath>
     </field>

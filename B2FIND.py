@@ -184,7 +184,7 @@ class CKAN_CLIENT(object):
             if (self.api_key): request.add_header('Authorization', self.api_key)
             response = urllib2.urlopen(request,data_string)
         except urllib2.HTTPError as e:
-            self.logger.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
+            self.logger.info('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
                 self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
@@ -1124,11 +1124,11 @@ class CONVERTER(object):
                  ##HEW-T                   print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
            if maxr == 1 and indisc == maxdisc :
                self.logger.debug('  | Perfect match of %s : nothing to do' % indisc)
-               retval.append(indisc)
+               retval.append(indisc.strip())
            elif maxr > 0.98 :
                self.logger.info('   | Similarity ratio %f is > 0.98 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
                ##return maxdisc
-               retval.append(indisc)
+               retval.append(indisc.strip())
            else:
                self.logger.debug('   | Similarity ratio %f is < 0.89 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
                continue
@@ -1845,7 +1845,7 @@ class CONVERTER(object):
                     if len(extra['value']) == 1:
                       extra['value']=extra['value'][0] 
                     elif extra['key'] == 'Discipline': # generic mapping of discipline
-                      extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                      extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list).strip()
                     elif extra['key'] == 'Publisher':
                       extra['value'] = self.cut(extra['value'],'=',2)
                       extra['value'] = self.remove_duplicates(extra['value'])

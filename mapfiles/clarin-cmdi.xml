@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for CMDIfied IMDI metadata of CLARIN -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="cmd" uri="http://www.clarin.eu/cmd/"/>
+  </namespaces>
+  <mappings>
+   <!-- General information -->
+    <field name="title">
+      <xpath>//cmd:Title/text(),//cmd:title/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description/text(),//cmd:desc/text(),//cmd:node/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>replace(//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Keys/cmd:Key/text(),"[:()]",";")</xpath>
+    </field>
+   <!-- Access data  -->
+    <field name="url">
+      <xpath>//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceRef/text()</xpath>
+    </field> 
+    <field name="Checksum">
+    </field>
+    <field name="Rights">
+    </field>
+   <!-- Provenance data -->
+    <field name="Discipline">
+      <string>Linguistics</string>
+    </field>
+    <field name="author">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Actors/cmd:Actor/cmd:FullName/text()), ';')</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(),//cmd:CMD/cmd:Header/cmd:MdCreationDate/text()</xpath>
+    </field>
+   <!-- Formal data -->
+    <field name="Language">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Content_Languages/cmd:Content_Language/cmd:Name/text()</xpath>
+    </field>
+    <field name="SpatialCoverage">
+    </field>
+    <field name="TemporalCoverage">
+    </field>
+    <field name="Format">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:Format/text()</xpath>
+    </field>
+   <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>

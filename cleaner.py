@@ -215,7 +215,9 @@ def main():
              f.close()
              listtext='got from file %s (%d id\'s)' % (options.list,len(list)) 
     elif (options.community):
+             ##UP.purge_group(options.community)
              UP.get_packages(options.community)
+             ##HEW??? UP.get_group_list(options.community)
              print "--- Start get community list from CKAN---\n"
              list = UP.package_list.keys()
              ##clist = UP.get_packages(options.community).keys()
