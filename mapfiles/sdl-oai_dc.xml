@@ -46,6 +46,7 @@
       <xpath>//dc:coverage/text()</xpath>
     </field>
     <field name="TemporalCoverage">
+      <xpath>//dc:coverage/text()</xpath>
     </field>
     <field name="Format">
       <xpath>//dc:format/text()</xpath>

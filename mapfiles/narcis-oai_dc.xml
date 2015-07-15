@@ -27,7 +27,7 @@
     </field>
     <!-- Provenance data -->
     <field name="Discipline">
-      <string>Unknown</string>
+      <xpath>//dc:subject/text()</xpath>
     </field>
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
