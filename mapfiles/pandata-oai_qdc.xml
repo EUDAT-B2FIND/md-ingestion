@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for q??? - DublinCore (qdc not dc??) metadata from PanData. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="qdc" uri="http://pandata.org/pmh/oai_qdc/"/>
+    <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
+    <namespace ns="dcterms" uri="http://purl.org/dc/terms/"/>
+    <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//dc:title/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>string-join(distinct-values(//dc:description/text()), ' | ')</xpath>
+    </field>
+    <field name="tags">
+      <xpath>distinct-values(replace(//dc:relation[1]/text(),"[\[;()/\]]"," "))</xpath>
+    </field>
+    <!-- Access data  -->
+    <!--
+    <field name="url">
+      <xpath>//dcterms:references/text()</xpath>
+    </field>
+    -->
+    <field name="url">
+      <xpath>string-join(//dc:identifier/text() | //dcterms:references/text() | //dc:source/text() ,";")</xpath>
+      <!--
+      <xpath>if (contains (string-join(distinct-values(//dc:identifier/text()),' ; '),'doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(string-join(distinct-values(//dc:identifier/text()),' ; '), 'doi:'),' ; ')) else //dc:identifier/text()</xpath>
+      <xpath>if (starts-with(//dc:identifier/text(),'10.5286')) then concat('http://dx.doi.org/',//dc:identifier[1]/text()) else //dc:identifier/text()</xpath>
+      <xpath>if (contains(//dc:source/text(),     '[doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(//dc:source/text(), '[doi: '), ']')) else //dc:source/text()</xpath>
+      -->
+   </field>
+   <field name="Checksum">
+   </field>
+   <field name="Rights">
+      <xpath>//dc:rights/text()</xpath>
+   </field>
+   <!-- Provenance data -->
+   <field name="Discipline">
+      <string>Natural Sciences</string>
+   </field>
+   <field name="author">
+      <xpath>string-join(distinct-values(//dc:creator/text()), '; ')</xpath>
+   </field>
+    <field name="Publisher">
+      <xpath>//dc:publisher/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//dcterms:issued/text()</xpath>
+    </field>
+<!--
+    <field name="PublicationYear">
+      <xpath>if (contains(//dcterms:issued/text(), '-')) then substring-before(//dcterms:issued/text(), '-') else //dcterms:issued/text()</xpath>
+    </field>
+    <field name="PublicationTimestamp">
+      <xpath>if (matches(//dcterms:issued/text(), '[12]\d{3}.*')) then if(contains(//dcterms:issued/text(), '-')) then concat(substring-before(//dcterms:issued/text(), '-'),'-07-01T11:59:59Z') else concat(//dcterms:issued/text(),'-07-01T11:59:59Z') else '' </xpath>
+    </field>
+-->
+    <!-- Formal data -->
+    <field name="Language">
+      <xpath>//dc:language/text()</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//dc:relation[@xsi:type="dcterms:ISO3166"]/text()</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//dcterms:temporal/text()</xpath>
+    </field>
+     <field name="Format">
+      <xpath>//dc:format[not(contains(text(), 'Bytes'))]</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>

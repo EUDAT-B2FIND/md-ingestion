@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore metadata from IVOA. -->
+  <!-- Mappings for DublinCore metadata from DataCite. -->
   <namespaces>
-    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
   </namespaces>
   <mappings>
     <!-- General information -->
@@ -11,38 +11,35 @@
       <xpath>//dc:title/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>string-join(distinct-values(//dc:description/text()), ' | ')</xpath>
+      <xpath>string-join(distinct-values(//dc:description/text()), '\n')</xpath>
     </field>
     <field name="tags">
-      <xpath>//dc:subject/text()</xpath>
+      <xpath>//dc:type/text()</xpath>
     </field>
-    <!-- Access data -->
+    <!-- Access data  -->
     <field name="url">
-      <xpath>string-join(distinct-values(//dc:identifier/text() | //dc:source/text() ), '; ')</xpath>
+      <xpath>string-join(distinct-values(//dc:identifier/text() | //dc:source/text()),';')</xpath>
     </field>
     <field name="Checksum">
-
     </field>
     <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
     </field>
     <!-- Provenance data -->
     <field name="Discipline">
-      <string>Astronomy</string>
+      <xpath>//dc:subject/text()</xpath>
     </field>
     <field name="author">
       <xpath>string-join(distinct-values(//dc:creator/text()), '; ')</xpath>
     </field>
     <field name="Publisher">
+      <xpath>//dc:source[1]/text()</xpath>
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//r:datestamp/text()</xpath>
-     <!--
-      <xpath>if (contains(//dc:date[1]/text(), '-')) then substring-before(//dc:date[1]/text(), '-') else //dc:date[1]/text()</xpath>
-      -->
+      <xpath>//dc:date/text()</xpath>
     </field>
-    <!-- Formal data -->
+    <!-- Formal data -->    
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
     </field>
@@ -50,7 +47,6 @@
       <xpath>//dc:coverage/text()</xpath>
     </field>
     <field name="TemporalCoverage">
-      <xpath>//dc:coverage/text()</xpath>
     </field>
     <field name="Format">
       <xpath>//dc:format[not(contains(text(), 'Bytes'))]</xpath>
@@ -64,10 +60,6 @@
     </field>
     <field name="oai_set">
       <xpath>//r:header/r:setSpec/text()</xpath>
-    </field>
-    <field name="PublicationTimestamp">
-      <xpath>if (matches(//r:datestamp[1]/text(), '[12]\d{3}.*')) then if(contains(//r:datestamp[1]/text(), '-')) then concat(substring-before(//r:datestamp[1]/text(), '-'),'-07-01T11:59:59Z') else concat(//r:datestamp[1]/text(),'-07-01T11:59:59Z') else '' </xpath>
-      <xpath>if (matches(//dc:date[1]/text(), '[12]\d{3}.*')) then if(contains(//dc:date[1]/text(), '-')) then concat(substring-before(//dc:date[1]/text(), '-'),'-07-01T11:59:59Z') else concat(//dc:date[1]/text(),'-07-01T11:59:59Z') else '' </xpath>
     </field>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>

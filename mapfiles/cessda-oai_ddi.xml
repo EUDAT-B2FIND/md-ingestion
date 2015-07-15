@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for DDI formated profile of CLARIN metadata. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="ddi" uri="http://www.icpsr.umich.edu/DDI"/>
+  </namespaces>
+  <mappings>
+   <!-- General fields shown above the field/value tables -->
+    <field name="title">
+      <xpath>//ddi:codeBook/ddi:docDscr/ddi:citation/ddi:titlStmt/ddi:titl/text()</xpath>
+      <xpath>//biblCit/titl/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//abstract/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//subject/keyword/text()</xpath>
+    </field>
+    <!-- Central facets, shown in an extra table 'Main fields' (not implemented yet : all fields in table 'Additional info') -->
+    <field name="url">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field> 
+    <field name="Discipline">
+      <xpath>//subject/keyword/text()</xpath>
+    </field>
+    <field name="author">
+      <xpath>//rspStmt/AuthEnty/text()</xpath>
+    </field>
+    <!-- All other visible fields, shown in table 'Additional info' -->
+    <!-- The date field is unstructured. Heuristically, take the first
+    group of 4 digits we see. This will work for both dd-mm-yyyy and
+    yyyy-mm-dd. -->
+    <field name="PublicationYear">
+      <xpath>if (matches(//prodDate/text(), '[12]\d{3}')) then replace(//prodDate/text(), '.*([12]\d{3}).*', '$1') else ''</xpath>
+    </field>
+    <field name="PublicationTimestamp">
+      <xpath>if (matches(//prodDate/text(), '[12]\d{3}')) then concat(replace(//prodDate/text(), '.*([12]\d{3}).*', '$1'),'-07-01T11:59:59Z') else ''</xpath>
+    </field>
+    <field name="Language">
+      <string> Swedish </string>
+    </field>
+    <field name="Origin">
+      <xpath>//producer/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//varFormat[@type]/text()</xpath> 
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+    <field name="Rights">
+      <xpath>//copyright/text()</xpath>
+    </field>
+  </mappings>
+</mapping-table>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for DDI formated profile of CLARIN metadata. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="ddi" uri="http://www.icpsr.umich.edu/DDI"/>
+  </namespaces>
+  <mappings>
+   <!-- General fields shown above the field/value tables -->
+    <field name="title">
+      <xpath>//ddi:codeBook/ddi:docDscr/ddi:citation/ddi:titlStmt/ddi:titl/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Name/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:imdi-corpus/cmd:Corpus/cmd:Title/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:imdi-corpus/cmd:Corpus/cmd:Name/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:Songtitle/cmd:Original/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:Songtitle/cmd:Normalized/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:Source/cmd:Title/cmd:Normalised/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:SongScan/cmd:GeneralInfo/cmd:Title/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:DiscAn_Case/cmd:ProjectName/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:DiscAn_Case/cmd:DiscAn_AnnotatedFeatures/cmd:SubcorpusName/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:LrtInventoryResource/cmd:LrtCommon/cmd:ResourceName/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:teiHeader/cmd:fileDesc/cmd:sourceDesc/cmd:biblStruct/cmd:analytic/cmd:title/text()</xpath>
+      <xpath>//cmd:Project/cmd:Title/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description[@LanguageId = 'ISO639:eng' or @LanguageId = 'ISO639-2:eng' or @LanguageId = '']/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:Source/cmd:descriptions/cmd:Description[@LanguageId = 'ISO639:eng' or @LanguageId = 'ISO639-2:eng' or @LanguageId = '']/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:imdi-corpus/cmd:Corpus/cmd:descriptions/cmd:Description[@LanguageId = 'ISO639:eng' or @LanguageId = 'ISO639-2:eng' or @LanguageId = '']/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:Incipit/cmd:Original/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:LrtInventoryResource/cmd:LrtCommon/cmd:Description/text()</xpath>
+      <xpath>//cmd:Project/cmd:descriptions/cmd:Description/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>substring(replace(//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text(),"[:()]","-"),0,50)</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:Keywords/cmd:Keyword/text()</xpath>
+    </field>
+    <!-- Central facets, shown in an extra table 'Main fields' (not implemented yet : all fields in table 'Additional info') -->
+    <field name="url">
+      <xpath>if (contains(//cmd:CMD/cmd:Header/cmd:MdSelfLink/text(), 'http://') or contains(//cmd:CMD/cmd:Header/cmd:MdSelfLink/text(), 'https://')) then //cmd:CMD/cmd:Header/cmd:MdSelfLink/text() else ''</xpath>
+      <xpath>if (contains(//cmd:CMD/cmd:Header/cmd:MdSelfLink/text(), 'hdl:')) then concat('http://hdl.handle.net/',replace(substring-after(//cmd:CMD/cmd:Header/cmd:MdSelfLink/text(), 'hdl:'),'@format=cmdi',''),'@view') else ''</xpath>
+      <xpath>concat('http://hdl.handle.net/', replace(//cmd:CMD/cmd:Header/cmd:MdSelfLink/text(),'@format=cmdi',''),'@view')</xpath>
+    </field> 
+    <field name="Discipline">
+<!--
+      <xpath>if (normalize-space(string(//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Genre/text())) = '') then '' else concat('Linguistics - ', string(//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Genre/text()))</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:Type/text()</xpath>
+-->
+      <string>Linguistics</string>
+    </field>
+    <field name="author">
+      <xpath>string-join(distinct-values(//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Actors/cmd:Actor[cmd:Role = 'Author' or cmd:Role = 'Collector' or cmd:Role = 'Researcher' or cmd:Role = 'Annotator' or cmd:Role = 'Filmer' or cmd:Role = 'Recorder']/cmd:FullName/text()), ';')</xpath>
+      <xpath>string-join(distinct-values(//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Actors/cmd:Actor[cmd:Role = 'Author' or cmd:Role = 'Collector' or cmd:Role = 'Researcher' or cmd:Role = 'Annotator' or cmd:Role = 'Filmer' or cmd:Role = 'Recorder']/cmd:Name/text()), ';')</xpath>
+      <xpath>substring-before(substring-after(//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:Source[1]/cmd:descriptions/cmd:Description[@LanguageId = 'ISO639:eng' or @LanguageId = 'ISO639-2:eng' or @LanguageId = '']/text(), 'Author: '), '&#10;')</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:Authors/cmd:Author/cmd:Name/cmd:Original/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:SongScan/cmd:Authors/cmd:Author/cmd:Name/cmd:Original/text()</xpath>
+    </field>
+    <!-- All other visible fields, shown in table 'Additional info' -->
+    <!-- The date field is unstructured. Heuristically, take the first
+    group of 4 digits we see. This will work for both dd-mm-yyyy and
+    yyyy-mm-dd. -->
+    <field name="PublicationYear">
+      <xpath>if (matches(//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(), '[12]\d{3}')) then replace(//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(), '.*([12]\d{3}).*', '$1') else ''</xpath>
+      <xpath>if (matches(//cmd:CMD/cmd:Header/cmd:MdCreationDate/text(), '[12]\d{3}')) then replace(//cmd:CMD/cmd:Header/cmd:MdCreationDate/text(), '.*([12]\d{3}).*', '$1') else ''</xpath>
+    </field>
+    <field name="PublicationTimestamp">
+      <xpath>if (matches(//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(), '[12]\d{3}')) then concat(replace(//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(), '.*([12]\d{3}).*', '$1'),'-07-01T11:59:59Z') else ''</xpath>
+      <xpath>if (matches(//cmd:CMD/cmd:Header/cmd:MdCreationDate/text(), '[12]\d{3}')) then concat(replace(//cmd:CMD/cmd:Header/cmd:MdCreationDate/text(), '.*([12]\d{3}).*', '$1'),'-07-01T11:59:59Z') else ''</xpath>
+    </field>
+    <field name="Language">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Content_Languages/cmd:Content_Language/cmd:Id/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:Language/cmd:LanguageName/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:DiscAn_Case/cmd:Language/cmd:LanguageName/text()</xpath>
+    </field>
+    <field name="Origin">
+      <xpath>//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>string-join(distinct-values(//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType/@mimetype),';')</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:Format/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Song/cmd:TechnicalMetadata/cmd:MimeType/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:SongScan/cmd:TechnicalMetadata/cmd:MimeType/text()</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+<!-- Deprecated fields :
+    <field name="Relation">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:ResourceLink/text()</xpath>
+    </field>
+    <field name="Collection">
+      <xpath>//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text()</xpath>
+    </field>
+    <field name="Project">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Project/cmd:Title/text()</xpath>
+    </field>
+    <field name="Country">
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Location/cmd:Country/text()</xpath>
+    </field>
+-->
+  </mappings>
+</mapping-table>

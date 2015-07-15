@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for FGDC metadata from PDC -->
+  <namespaces>
+  <!-- ??? there is no namespaces for PDC ???
+    <namespace ns="d" uri="http://www.???"/>
+   -->
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+  </namespaces>
+  <mappings>
+   <!-- General information -->
+   <field name="title">
+      <xpath>//r:metadata/r:idinfo/r:citation/r:citeinfo/r:title/text()</xpath>
+   </field>
+   <field name="notes">
+       <xpath>//r:metadata/r:idinfo/r:descript/r:abstract/text()</xpath>
+   </field>
+    <field name="tags">
+       <xpath>string-join(distinct-values(//r:themekey),";")</xpath>
+   </field>
+   <!-- Access data  -->
+   <field name="url">
+       <xpath>string-join(//r:onlink/text(), '; ')  </xpath>
+    </field>
+   <field name="Checksum">
+   </field>
+   <field name="Rights">
+       <xpath>//r:accconst/text()</xpath>
+   </field>
+   <!-- Provenance data -->
+   <field name="Discipline">
+        <string>Environmental Science</string>
+   </field>
+   <field name="author">
+      <xpath>string-join(distinct-values(//r:origin),";")</xpath>
+   </field>
+    <field name="Publisher">
+       <xpath>//r:distinfo/r:distrib/r:cntinfo/r:cntperp/r:cntorg/text()</xpath>
+    </field>
+   <!-- The date field is unstructured. A date unifying function will be implemented later. -->
+   <field name="PublicationYear">
+        <xpath>//r:pubdate/text()</xpath>
+   </field>
+    <!-- Formal data -->
+   <field name="Language">
+   </field>
+   <field name="SpatialCoverage">
+        <xpath>concat(//r:bounding/r:southbc/text() , ';' , //r:bounding/r:westbc/text() , ';' ,  //r:bounding/r:northbc/text() , ';' , //r:bounding/r:eastbc/text())</xpath>
+   </field>
+   <field name="TemporalCoverage">
+       <xpath>string-join(//r:begdate | //r:enddate, ';')</xpath>
+    </field>
+   <field name="Format">
+   </field>
+    <!-- Additional info -->
+    <field name="Contact">
+       <xpath>//r:ptcontac/r:cntinfo/r:cntorgp</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+       <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec/text()</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+    <!-- PDC specific fields
+    <field name="Purpose">
+       <xpath>//r:purpose/text()</xpath>
+    </field>
+    -->
+  </mappings>
+</mapping-table>
