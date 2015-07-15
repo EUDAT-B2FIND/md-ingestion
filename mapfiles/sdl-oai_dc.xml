@@ -11,14 +11,14 @@
       <xpath>//dc:title/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>string-join(distinct-values(//dc:description/text()), ' | ')</xpath>
+      <xpath>//dc:description/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>replace(replace(//dc:type[1]/text(),"info:",""),"[()/]"," ")</xpath>
+      <xpath>//dc:type[1]/text()</xpath>
     </field>
-    <!-- Access data  -->
+   <!-- Access data  -->
     <field name="url">
-      <xpath>string-join(distinct-values(//dc:identifier/text()),';')</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
     <field name="Checksum">
     </field>
@@ -28,19 +28,17 @@
    <!-- Provenance data -->
     <field name="Discipline">
       <xpath><string>"Library and museum studies"</string></xpath>
-<!--      <xpath>//dc:subject/text()</xpath>  -->
     </field>
     <field name="author">
-      <xpath>string-join(distinct-values(//dc:creator/text()), '; ')</xpath>
+      <xpath>//dc:creator/text()</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dc:source[1]/text()</xpath>
-      <xpath>//dc:publisher/text()</xpath>
+      <xpath>//dc:source[1]/text(),//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
       <xpath>//dc:date[1]/text()</xpath>
     </field>
-    <!-- Formal data -->
+   <!-- Formal data -->
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
     </field>
@@ -50,7 +48,7 @@
     <field name="TemporalCoverage">
     </field>
     <field name="Format">
-      <xpath>//dc:format[not(contains(text(), 'Bytes'))]</xpath>
+      <xpath>//dc:format/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
