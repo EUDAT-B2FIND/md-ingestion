@@ -618,7 +618,6 @@ class HARVESTER(object):
                     dsubset = os.path.dirname(xmlfile).split('/')[-2]
                     jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+uid+'.json'
                 
-                    fline = '%s\t%s\n' % (dsubset,uid)
                     stats['totdcount'] += 1
                     
                     # remove xml file:
@@ -636,20 +635,19 @@ class HARVESTER(object):
                             self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
                             stats['totecount'] +=1
                 
-                    # write fline in delete file:
+                    # write uid in delete file:
                     found=False
-                    for line in file_content:
-                         if fline in line:
-                           print "Found it"
+                    for uid in file_content:
+                         if uid in line:
                            found = True
                     if not found:
                          with open(delete_file, 'a') as file:
-                           file.write(fline)                        
-
+                           file.write(uid)
 
                 except IOError as strerror:
                    self.logger.critical("Cannot write data to '{0}': {1}".format(delete_file, strerror))
-        
+                else:
+                   self.logger.info("List of id's written to {0}".format(delete_file))
 
             # add all subset stats to total stats and reset the temporal subset stats:
             for key in ['tcount', 'ecount', 'count', 'dcount']:
