@@ -623,8 +623,7 @@ class HARVESTER(object):
                     
                     # remove xml file:
                     try: 
-                        ## os.remove(xmlfile)
-                        print 'rm xmlf'
+                        os.remove(xmlfile)
                     except OSError, e:
                         self.logger.error("    [ERROR] Cannot remove xml file: %s" % (e))
                         stats['totecount'] +=1
@@ -1842,9 +1841,13 @@ class CONVERTER(object):
                   for extra in jsondata[facet]:
                     if type(extra['value']) is list:
                       extra['value']=self.uniq(extra['value'])
-                    if len(extra['value']) == 1:
-                      extra['value']=extra['value'][0] 
-                    elif extra['key'] == 'Discipline': # generic mapping of discipline
+                      if len(extra['value']) == 1:
+                        extra['value']=extra['value'][0] 
+                    if extra['key'] == 'domain_sp_list':
+                      domain_sp_keys=extra['value'].split(';')[:len(extra['value'])/2]
+                      domain_sp_values=extra['value'].split(';')[len(extra['value'])/2+1:]
+                      extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list).strip()
+                    elif extra['key'] == 'Discipline':
                       extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list).strip()
                     elif extra['key'] == 'Publisher':
                       extra['value'] = self.cut(extra['value'],'=',2)
