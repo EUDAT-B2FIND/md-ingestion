@@ -28,22 +28,22 @@ def main():
     ckan_pattern = ''
     sand=''
     pattern=' '.join(args.pattern)
-    ##pattern=args.pattern
+
     if (args.community):
         ckan_pattern += "groups:%s" % args.community
         sand=" AND "
     if (args.pattern):
         ckan_pattern += sand + pattern   
 
-    print 'Search in\t%s\nfor pattern\t%s\n.....' % (args.ckan,ckan_pattern)
-    ckan_limit=1000
-    print 'processing %d to %d record ...' % (0,ckan_limit)
+    print 'Search\n\tin\t\t%s\n\tfor pattern\t%s\n' % (args.ckan,ckan_pattern)
+
+    ckan_limit=10000
     answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":0})
     tcount=answer['result']['count']
-    print "=> %d datasets found" % tcount
-    print "=> %s args.ids" % args.ids
+    print " => %d datasets found" % tcount
+    aids=args.ids
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
-    suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI'}
+    suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI','Group':'groups'}
 
     class Record(IsDescription):
         id      = StringCol(64)      # 64-character String
@@ -51,25 +51,26 @@ def main():
         PID     = StringCol(64)      # 64-character String
         DOI     = StringCol(64)      # 64-character String
 
-    if args.output == 'hd5': 
-      h5file = open_file("results.h5", mode = "w", title = "Search results")
+    extension=os.path.splitext(args.output)[1][1:]
+    if extension == 'hd5': 
+      h5file = open_file(args.output, mode = "w", title = "Search results")
+      print "Results written to %s" % args.output
       group = h5file.create_group("/", 'identifiers', 'Identification information')
       table = h5file.create_table(group, 'readout', Record, "Readout example")
       record = table.row
-    elif args.output == 'txt':
-      fh = open("results.txt", "w")
+    elif extension == 'txt':
+      print " => %s : %s written to %s" % ('id',aids,args.output)
+      fh = open(args.output, "w")
       record={} 
     else:
-      print 'Output type %s is not supported' % args.output
+      print 'Output type %s is not supported' % extension
       exit()
             
   
     totlist=[]
-    for outt in args.ids:
-       if outt in suppid :
-          print 'Supported output type %s' % outt 
-       else:
-           print 'Identifier %s is not supported' % outt
+    for outt in aids:
+       if outt not in suppid :
+           print 'Output identifier %s is not supported' % outt
            exit()
     countpid=0
     countdoi=0
@@ -78,39 +79,44 @@ def main():
 
     while (cstart < tcount) :
        if (cstart > 0):
-           print 'processing %d to %d record ...' % (cstart,cstart+ckan_limit)
+           ## print 'processing %d to %d record ...' % (cstart,cstart+ckan_limit)
            answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
        for ds in answer['result']['results']:
             counter +=1
             ## print'    | %-4d | %-40s |' % (counter,ds['name'])
 
             record['id']  = '%s' % (ds['name'])
-            if args.output == 'hd5':
-                record['Source']  = '%s' % (ds['url'])
+            if 'Group' in aids :
+                record['Group']  = '%s' % (ds['groups'][0]['display_name'])
+            if 'PID' in aids :
                 xpid=[e for e in ds['extras'] if e['key'] == 'PID']
                 if xpid:
-                    record['PID']  = '%s' % (xpid)
+                    record['PID']  = '%s' % (xpid[0]['value'])
                     countpid+=1
                 else:
                     record['PID']  = '%s' % 'N/A'
+            if 'DOI' in aids :
                 xdoi=[e for e in ds['extras'] if e['key'] == 'DOI']
                 if xdoi:
-                    record['DOI']  = '%s' % (xdoi)
+                    record['DOI']  = '%s' % (xdoi[0]['value'])
                     countdoi+=1
                 else:
                     record['DOI']  = '%s' % 'N/A'
+            if extension == 'hd5':
                 record.append()
-            elif args.output == 'txt':
-                fh.write(record['id']+'\n')
-            ## print ' record %s' % record
+            elif extension == 'txt':
+                outline=record['id']
+                for aid in aids:
+                    if aid != 'id':
+                        outline+='\t'+record[aid]
+                fh.write(outline+'\n')
        cstart+=len(answer['result']['results']) 
 
     print "Found\n\t%d\trecords\n\t%d\tPIDs\n\t%d\tDOIs" % (counter, countpid, countdoi)
-    if args.output == 'hd5':
-      print "Results written to %s" % h5file.title
+    if extension == 'hd5':
       table.flush()
       h5file.close()
-    elif args.output == 'txt':
+    elif extension == 'txt':
       fh.close()
 
 def action(host, data={}):
@@ -171,14 +177,17 @@ def get_args():
         epilog =  '''Examples:
            1. >./searchB2FIND.py -c aleph tags:LEP
              searchs for all datasets of community ALEPH with tag "LEP" in b2find.eudat.eu.
-           2. >./searchB2FIND.py tags:PUBLICATIONOTHER author:'"Ahn, Changhyun"' --ckan eudat6c.dkrz.de
-             searchs for all datasets tagged with PUBLICATIONOTHER and having author "Ahn, Changhyan" in eudat6c.dkrz.de''' 
+           2. >./searchB2FIND.py author:"Jones*" AND Discipline:"Crystal?Structure" --ckan eudat-b1.dkrz.de
+             searchs in eudat-b1.dkrz.de for all datasets having an author satrting with "Jones" and belongs to the discipline "Crystal Structure"
+           3. >./searchB2FIND.py -c narcis DOI:'*' --ids DOI
+             returns the list of id's and DOI's for all records in community "NARCIS" that have a DOI 
+'''
     )
    
     p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu', metavar='IP/URL')
-    p.add_argument('--output', '-o', help="Output format. Supported are 'txt' (plain text file), 'hd5' file, ...", default='txt', metavar='STRING')
+    p.add_argument('--output', '-o', help="Output file name and format. Format is given by the extention, supported are 'txt' (plain ascii file) or 'hd5' file, ...", default='results.txt', metavar='STRING')
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
-    p.add_argument('--ids', '-i', help="Which identifiers should be outputed. Default is 'id'. Adiitioanl 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
+    p.add_argument('--ids', '-i', help="Identifiers of found records outputed. Default is 'id'. Additional 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
     p.parse_args('--ids'.split())
     p.add_argument('pattern',  help='CKAN search pattern, i.e. (a list of) field:value terms.', metavar='PATTERN', nargs='*')
     
