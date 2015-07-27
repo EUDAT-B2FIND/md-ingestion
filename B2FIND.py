@@ -1173,6 +1173,8 @@ class CONVERTER(object):
                entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry).strip()
                if entry.isdigit() or len(entry)==1 : continue ## eleminate digit and 1 letter values
                if entry :
+                   if len(entry.split()) > 3:
+                        entry=' '.join(entry.split()[:4])
                    if len(entry.split('=')) > 1:
                         entry=entry.split('=')[1]
                    entrydict={ "name": entry }  

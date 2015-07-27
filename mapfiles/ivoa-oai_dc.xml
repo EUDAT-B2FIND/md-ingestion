@@ -37,9 +37,6 @@
     </field>
     <field name="PublicationYear">
       <xpath>//r:datestamp/text()</xpath>
-     <!--
-      <xpath>if (contains(//dc:date[1]/text(), '-')) then substring-before(//dc:date[1]/text(), '-') else //dc:date[1]/text()</xpath>
-      -->
     </field>
     <!-- Formal data -->
     <field name="Language">
