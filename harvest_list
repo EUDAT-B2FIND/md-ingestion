@@ -27,7 +27,7 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-old-doi
 earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListRecords  iso
 ### new comm. IVOA or EURO-VO
 ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc ivo_managed
-ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc
+##ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc
 ################### here we go with the DASISH project --> ask Daan and Binyam for details !!!
 ##%%% DASISH ?? OAI-URL's taken from
 ##% - https://github.com/DASISH/jmd-scripts/harvest-config*
@@ -152,4 +152,5 @@ indus     http://drtc1.isibang.ac.in/indus/oai/request ListRecords oai_dc com_1_
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListRecords oai_dc com_1_4
 ## ALEPH
 aleph     http://www.openaccessrepository.it/oai2d   ListRecords marcxml dataset:aleph
-
+## OpenAIRE
+openaire  http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers oai_datacite OpenAIRE
