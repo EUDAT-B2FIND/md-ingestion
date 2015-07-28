@@ -11,17 +11,16 @@
       <xpath>//dc:title/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>string-join(distinct-values(//dc:description/text()), ' | ')</xpath>
+      <xpath>//dc:description/text()</xpath>
     </field>
     <field name="tags">
       <xpath>//dc:subject/text()</xpath>
     </field>
     <!-- Access data -->
     <field name="url">
-      <xpath>string-join(distinct-values(//dc:identifier/text() | //dc:source/text() ), '; ')</xpath>
+      <xpath>//dc:identifier/text() | //dc:source/text() </xpath>
     </field>
     <field name="Checksum">
-
     </field>
     <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
@@ -31,16 +30,13 @@
       <string>Astronomy</string>
     </field>
     <field name="author">
-      <xpath>string-join(distinct-values(//dc:creator/text()), '; ')</xpath>
+      <xpath>//dc:creator/text()</xpath>
     </field>
     <field name="Publisher">
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
       <xpath>//r:datestamp/text()</xpath>
-     <!--
-      <xpath>if (contains(//dc:date[1]/text(), '-')) then substring-before(//dc:date[1]/text(), '-') else //dc:date[1]/text()</xpath>
-      -->
     </field>
     <!-- Formal data -->
     <field name="Language">
@@ -53,7 +49,7 @@
       <xpath>//dc:coverage/text()</xpath>
     </field>
     <field name="Format">
-      <xpath>//dc:format[not(contains(text(), 'Bytes'))]</xpath>
+      <xpath>//dc:format/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
@@ -64,10 +60,6 @@
     </field>
     <field name="oai_set">
       <xpath>//r:header/r:setSpec/text()</xpath>
-    </field>
-    <field name="PublicationTimestamp">
-      <xpath>if (matches(//r:datestamp[1]/text(), '[12]\d{3}.*')) then if(contains(//r:datestamp[1]/text(), '-')) then concat(substring-before(//r:datestamp[1]/text(), '-'),'-07-01T11:59:59Z') else concat(//r:datestamp[1]/text(),'-07-01T11:59:59Z') else '' </xpath>
-      <xpath>if (matches(//dc:date[1]/text(), '[12]\d{3}.*')) then if(contains(//dc:date[1]/text(), '-')) then concat(substring-before(//dc:date[1]/text(), '-'),'-07-01T11:59:59Z') else concat(//dc:date[1]/text(),'-07-01T11:59:59Z') else '' </xpath>
     </field>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>

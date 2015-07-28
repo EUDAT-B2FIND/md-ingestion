@@ -586,8 +586,6 @@ class HARVESTER(object):
                            print 'file %s is already on deleted_metadata' % f
                         else:
                            deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
-                        print 'oudated %s file %s' % (os.stat(f).st_mtime,f)
-                        ## os.remove(os.path.join(path, f))
 
             if (len(deleted_metadata) > 0): ##HEW and self.pstat['status']['d'] == 'tbd':
                 ## delete all files in deleted_metadata and write the subset
@@ -1170,11 +1168,13 @@ class CONVERTER(object):
             if type(lentry) is dict :
                 valarr=lentry.values()
             else:
-                valarr=filter(None, re.split(r"([,\-!?:;])+",lentry)) ## ['name']))
+                valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
             for entry in valarr:
                entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry).strip()
                if entry.isdigit() or len(entry)==1 : continue ## eleminate digit and 1 letter values
                if entry :
+                   if len(entry.split()) > 3:
+                        entry=' '.join(entry.split()[:4])
                    if len(entry.split('=')) > 1:
                         entry=entry.split('=')[1]
                    entrydict={ "name": entry }  
