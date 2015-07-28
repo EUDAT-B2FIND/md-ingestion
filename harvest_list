@@ -144,7 +144,7 @@ theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListR
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0338
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0336
 ##%%% SDL (India)
-sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListRecords oai_dc E-LIS
+sdl       http://drtc.isibang.ac.in/sdl/index.php/oai ListIdentifiers oai_dc E-LIS
 ##%%% INDUS 
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListRecords oai_dc com_1_1
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListRecords oai_dc com_1_2
