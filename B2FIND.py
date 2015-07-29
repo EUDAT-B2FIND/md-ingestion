@@ -255,7 +255,7 @@ class HARVESTER(object):
         self.fromdate = fromdate
         
     
-    def harvest(self, request):
+    def harvest(self, nr, request):
         ## harvest (HARVESTER object, [community, source, verb, mdprefix, mdsubset]) - method
         # Harvest all files with <mdprefix> and <mdsubset> from <source> via sickle module and store those to hard drive.
         # Generate every N. file a new subset directory.
@@ -396,7 +396,7 @@ class HARVESTER(object):
         # Get all files in the current subset directories and put those in the dictionary deleted_metadata
         deleted_metadata = dict()
    
-        self.logger.info('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
+        self.logger.debug('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
 
         try:
           if req["lverb"] == 'JSONAPI':
@@ -482,6 +482,7 @@ class HARVESTER(object):
                 
           else:  ## OAI-PMH harvesting of XML records using Python Sickle module
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
+              self.logger.info('  |- %s : OAI-PMH Processing, files stored in %s/xml' % (time.strftime("%H:%M:%S"),s))
               for f in glob.glob(s+'/xml/*.xml'):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
@@ -507,7 +508,7 @@ class HARVESTER(object):
                 
                 xmlfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
                 try:
-                    self.logger.info('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
+                    self.logger.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
                     self.logger.debug('Harvested XML file written to %s' % xmlfile)
                     
                     # get the raw xml content:    
@@ -579,13 +580,13 @@ class HARVESTER(object):
             now = time.time()
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
                for f in glob.glob(s+'/xml/*.xml'):
-                 ##HEW-T print 'date %s of file %s' % (os.stat(f).st_mtime,f)
+                 id=os.path.splitext(os.path.basename(f))[0]
                  if os.stat(f).st_mtime < now - 7 * 86400:
                      if os.path.isfile(f):
-                        if (deleted_metadata[os.path.splitext(os.path.basename(f))[0]]):
+                        if (id in deleted_metadata ):
                            print 'file %s is already on deleted_metadata' % f
                         else:
-                           deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
+                           deleted_metadata[id] = f
 
             if (len(deleted_metadata) > 0): ##HEW and self.pstat['status']['d'] == 'tbd':
                 ## delete all files in deleted_metadata and write the subset
@@ -652,8 +653,8 @@ class HARVESTER(object):
                 stats['tot'+key] += stats[key]
             
             self.logger.info(
-                '\n## Harvesting finished:\n # | Provided | Harvested | Failed | Deleted | \n # | %8d | %9d | %6d | %7d |' 
-                % (
+                '  |- %s : H-Request >%d< finished:\n  | Provided | Harvested | Failed | Deleted | \n  | %8d | %9d | %6d | %7d |' 
+                % ( time.strftime("%H:%M:%S"),nr,
                     stats['tottcount'],
                     stats['totcount'],
                     stats['totecount'],
@@ -1757,7 +1758,7 @@ class CONVERTER(object):
              if not os.path.isfile(mapfile):
                 self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
-          self.logger.info(' |- Mapfile\t%s' % mapfile)
+          self.logger.info('  |- Mapfile\t%s' % mapfile)
 
           # find all .xml files in path/xml
           results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
@@ -1995,7 +1996,7 @@ class CONVERTER(object):
 
         return jsondata
 
-    def map(self,community,mdprefix,path):
+    def map(self,nr,community,mdprefix,path):
         ## map(CONVERTER object, community, mdprefix, path) - method
         # Maps the XML files in directory <path> to JSON files 
         # For each file two steps are performed
@@ -2114,7 +2115,7 @@ class CONVERTER(object):
                 self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
           
-          self.logger.info(' |- Mapfile\t%s' % os.path.basename(mapfile))
+          self.logger.info('  |- Mapfile\t%s' % os.path.basename(mapfile))
 
           # read xpath rules from map file 
           mf = codecs.open(mapfile, "r", "utf-8")
@@ -2128,7 +2129,7 @@ class CONVERTER(object):
                 namespaces[ns.group(3)]=ns.group(5)
                 continue
 
-          self.logger.info(' |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
+          self.logger.info('  |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
 
           #### NEWWWWWWWWWWWW mapping and pp config files
           # check for mapper postproc config file
@@ -2162,7 +2163,7 @@ class CONVERTER(object):
           results['tcount'] = len(files)
           fcount = 0
           err=None
-          self.logger.info(' %s     INFO  XPATH - Processing of files in %s/xml' % (time.strftime("%H:%M:%S"),path))
+          self.logger.info('  |- %s : XPATH Processing of files in %s/xml' % (time.strftime("%H:%M:%S"),path))
  
           for filename in files:
               fcount+=1
@@ -2178,7 +2179,7 @@ class CONVERTER(object):
                     continue
                 try:
                     # Run Python XPATH converter
-                    self.logger.info('    | m | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+                    self.logger.debug('    | m | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
 
                     jsondata=self.xpathmdmapper(xmldata,xlines,namespaces)
                 except Exception as e:
@@ -2428,8 +2429,13 @@ class CONVERTER(object):
                 results['ecount'] += 1
                 continue
 
-        self.logger.info('%s     INFO  B2FIND : %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
-
+        self.logger.info(
+                '  |- %s : M-Request >%d< finished:\n  >| Provided | Mapped | Failed | \n  >| %8d | %6d | %6d |' 
+                % ( time.strftime("%H:%M:%S"),nr,
+                    results['tcount'],
+                    fcount,
+                    results['ecount']
+                ))
 
         # search in output for result statistics
         last_line = out.split('\n')[-2]
