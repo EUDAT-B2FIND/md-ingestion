@@ -93,8 +93,8 @@ def main():
                 if(options.iphost == host.split()[0]):
                    options.auth = host.split()[1]
                    break
-             logger.info(
-                'NOTE : For upload mode write access to %s via API key %s must be allowed' % (options.iphost,options.auth)
+             logger.debug(
+                'NOTE : For upload mode write access to %s by API key must be allowed' % options.iphost
              )
              if (not options.auth):
                 logger.critical('[CRITICAL] API key is neither given by option --auth nor can retrieved from %s/.netrc' % home )
@@ -146,7 +146,8 @@ def main():
     finally:
         # exit the program and open results HTML file:
         exit_program(OUT)
-
+        now = time.strftime("%Y-%m-%d %H:%M:%S")
+        logger.info("\nEnd :\t\t%s" % now)
 
 
 def process(options,pstat,OUT):
@@ -184,12 +185,16 @@ def process(options,pstat,OUT):
         logger.critical("[CRITICAL] Either option source (option -s) or list of sources (option -l) is required")
         exit()
     
-    ## HARVESTING - Mode:    
+    ## HARVESTING mode:    
     if (pstat['status']['h'] == 'tbd'):
+        # start the process harvesting:
+        logger.info('\n## Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
         
-        # start the process harvesting:
         if mode is 'multi':
+            logger.info(' - Joblist:  \t%s' % options.list)
+            if (options.community != '') : logger.info(' - Community:\t%s' % options.community)
+            if (options.mdsubset != None) : logger.info(' - OAI subset:\t%s' % options.mdsubset)
             process_harvest(HV,parse_list_file('harvest',options.list, options.community,options.mdsubset))
         else:
             process_harvest(HV,[[
@@ -218,10 +223,15 @@ def process(options,pstat,OUT):
                 ]])
         ## MAPPINING - Mode:  
         if (pstat['status']['m'] == 'tbd'):
+            # start the process mapping:
+            logger.info('\n## Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
             CV = B2FIND.CONVERTER(OUT)
         
             # start the process mapping:
             if mode is 'multi':
+                logger.info(' - Joblist:  \t%s' % OUT.convert_list )
+                if (options.community != '') : logger.info(' - Community:\t%s' % options.community)
+                if (options.mdsubset != None) : logger.info(' - OAI subset:\t%s' % options.mdsubset)
                 process_map(CV, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
                 process_map(CV,[[
@@ -308,11 +318,13 @@ def process_harvest(HV, rlist):
     # Return Values:
     # --------------
     # None
+    ir=0
     for request in rlist:
-        logger.info('\n## Harvesting request %s##' % request)
-        
+        ir+=1
         harveststart = time.time()
-        results = HV.harvest(request)
+        logger.info('\n |- %s : H-Request >%d< started :\n\t %s' % (time.strftime("%H:%M:%S"),ir,request))
+        
+        results = HV.harvest(ir,request)
     
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
@@ -357,12 +369,14 @@ def process_map(CV, rlist):
     # Return Values:
     # --------------
     # None
+    ir=0
     for request in rlist:
-        logger.info('\n## Mapping request %s##' % request)
+        ir+=1
+        logger.info('\n |- %s : M-Request >%d< started :\n\t\t %s' % (time.strftime("%H:%M:%S"),ir,request))
         
         cstart = time.time()
         
-        results = CV.map(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = CV.map(ir,request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
 
         ctime=time.time()-cstart
         results['time'] = ctime
@@ -761,7 +775,6 @@ def parse_list_file(process,filename,community='',subset=''):
         logger.critical('[CRITICAL] Can not access job list file %s ' % filename)
         exit()
     else:
-        logger.info('Joblist:\t%s' % filename)
         file = open(filename, 'r')
         lines=file.read().splitlines()
         file.close
