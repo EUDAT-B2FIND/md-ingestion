@@ -534,15 +534,14 @@ class HARVESTER(object):
                         
                         # Need a new subset?
                         if (stats['count'] == count_break):
-                        
+                            self.logger.info('    | %d records written to subset directory %s (if not failed).'% (
+                                stats['count'], subsetdir
+                            ))
+    
                             # save the stats of the old subset and get the new subsetdir:
                             subsetdir, count_set = self.save_subset(
                                 req, stats, subset, subsetdir, count_set)
-                            
-                            self.logger.info('    | subset ( %d records) harvested in %s (if not failed).'% (
-                                stats['count'], subsetdir
-                            ))
-                            
+                                                        
                             # add all subset stats to total stats and reset the temporal subset stats:
                             for key in ['tcount', 'ecount', 'count', 'dcount']:
                                 stats['tot'+key] += stats[key]
@@ -565,9 +564,13 @@ class HARVESTER(object):
                     stats['ecount']+=1
                     continue
                 else:
-                    # if everything worked then deleted this metadata file from deleted_metadata
+                    # if everything worked delete current file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
+            self.logger.info('    | %d records written to last subset directory %s (if not failed).'% (
+                                stats['count'], subsetdir
+                            ))
+
         except TypeError as e:
             self.logger.error('    [ERROR] Type Error: %s' % e)
         except NoRecordsMatch as e:
