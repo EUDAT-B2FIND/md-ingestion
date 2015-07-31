@@ -482,11 +482,11 @@ class HARVESTER(object):
                 
           else:  ## OAI-PMH harvesting of XML records using Python Sickle module
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-              self.logger.info('  |- %s : OAI-PMH Processing, files stored in %s/xml' % (time.strftime("%H:%M:%S"),s))
               for f in glob.glob(s+'/xml/*.xml'):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
+
             for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
 
                 if req["lverb"] == 'ListIdentifiers' :
@@ -637,12 +637,8 @@ class HARVESTER(object):
                             self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
                             stats['totecount'] +=1
                 
-                    # write uid in delete file:
-                    found=False
-                    for uid in file_content:
-                         if uid in line:
-                           found = True
-                    if not found:
+                    # append uid to delete file, if not already exists:
+                    if uid not in file_content:
                          with open(delete_file, 'a') as file:
                            file.write(uid)
 

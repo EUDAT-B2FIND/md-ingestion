@@ -45,7 +45,7 @@ def options_parser(modes):
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('-q', '--quiet', action="count", 
-                        help="quiet modus : deletion is not really performed but only announced.", default=False)
+                        help="quite modus : deletion is not really performed but only announced.", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
     p.add_option('--mode', '-m', metavar=' ' + " | ".join(modes), help='\nThis can be used to do a partial workflow. Default is "x-p" which means deletion of all found objects, i.e. (x)ml files, (j) json files, (c)kan datasets (p)id\'s in EPIC handle server.', default='x-p')
     p.add_option('--identifier', '-i', help="identifier for which objects are checked and deleted. If not given identifiers list must be given by -l option", default=None, metavar='STRING')
