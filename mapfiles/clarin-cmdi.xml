@@ -8,10 +8,10 @@
   <mappings>
    <!-- General information -->
     <field name="title">
-      <xpath>//cmd:Title/text(),//cmd:title/text()</xpath>
+      <xpath>//cmd:Title/text(),//cmd:title/text(),//cmd:CollectionName(text(),//cmd:ProjectName/text(),//cmd:MdCollectionDisplayName/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description/text(),//cmd:desc/text(),//cmd:node/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description/text(),//cmd:desc/text(),//cmd:node/text(),//cmd:ProjectName</xpath>
     </field>
     <field name="tags">
       <xpath>replace(//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Keys/cmd:Key/text(),"[:()]",";")</xpath>
@@ -35,11 +35,11 @@
       <xpath>//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(),//cmd:CMD/cmd:Header/cmd:MdCreationDate/text()</xpath>
+      <xpath>//cmd:PublicationTime,//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(),//cmd:CMD/cmd:Header/cmd:MdCreationDate/text()</xpath>
     </field>
    <!-- Formal data -->
     <field name="Language">
-      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Content_Languages/cmd:Content_Language/cmd:Name/text()</xpath>
+      <xpath>//cmd:Language/cmd:LanguageName,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Content_Languages/cmd:Content_Language/cmd:Name/text()</xpath>
     </field>
     <field name="SpatialCoverage">
     </field>

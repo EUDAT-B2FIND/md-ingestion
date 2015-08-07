@@ -584,7 +584,7 @@ class HARVESTER(object):
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
                for f in glob.glob(s+'/xml/*.xml'):
                  id=os.path.splitext(os.path.basename(f))[0]
-                 if os.stat(f).st_mtime < now - 7 * 86400:
+                 if os.stat(f).st_mtime < now - 1 * 86400: ## at least 1 day old
                      if os.path.isfile(f):
                         if (id in deleted_metadata ):
                            print 'file %s is already on deleted_metadata' % f
