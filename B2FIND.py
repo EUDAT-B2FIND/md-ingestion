@@ -1128,8 +1128,11 @@ class CONVERTER(object):
                self.logger.debug('   | Similarity ratio %f is < 0.89 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
                continue
 
-        return ';'.join(retval)
-           
+        if len(retval) > 0:
+            return ';'.join(retval)
+        else:
+            return 'Not stated' 
+   
     def cut(self,invalue,pattern,nfield):
         """
         If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
