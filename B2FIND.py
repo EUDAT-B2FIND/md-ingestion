@@ -487,14 +487,14 @@ class HARVESTER(object):
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
 
-            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
+            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
 
                 if req["lverb"] == 'ListIdentifiers' :
-                    if (record.deleted):
-                       continue
-                    else:
-                       oai_id = record.identifier
-                       record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
+                    ##HEW if (record.deleted):
+                    ##HEW   continue
+                    ##HEW else:
+                    oai_id = record.identifier
+                    record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
                 elif req["lverb"] == 'ListRecords' :
             	    if (record.header.deleted):
             	       continue
@@ -1128,8 +1128,11 @@ class CONVERTER(object):
                self.logger.debug('   | Similarity ratio %f is < 0.89 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
                continue
 
-        return ';'.join(retval)
-           
+        if len(retval) > 0:
+            return ';'.join(retval)
+        else:
+            return 'Not stated' 
+   
     def cut(self,invalue,pattern,nfield):
         """
         If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
