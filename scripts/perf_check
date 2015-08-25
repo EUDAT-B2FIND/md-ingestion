@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " |- Check und print out status info about job with\n"
+echo " |- Check und print status of ingestion jobs \n"
 
 lhost=$(hostname)
 WORK=$PWD
@@ -18,10 +18,10 @@ fi
 echo -e "  |- Job list\t$upload_list"
 echo -e "  |- On host \t$lhost"
 
-echo -e "\n Status of jobs :"
-printf '\n | %-5s | %-7s | %-4s | %-6s |' "Total" "Running" "Done" "Failed" 
+echo -e "\n Run status of jobs :"
+printf ' | %-5s | %-7s | %-4s | %-6s |' "Total" "Running" "Done" "Failed" 
 printf '\n | %-5s | %-7s | %-4s | %-6s |' "$(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(ps -elf | grep manager | grep upload | wc -l)" "$(ls DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(grep 'Internal server error' log/${upload_list}.*.err | grep -c -v ':0' )"
-printf '\n %40s' "############################################################"
+printf '\n %40s' "############################################################\n"
 ##echo -e "|- $(ls DONE/${upload_list}.* 2>/dev/null | wc -l) jobs are sucessfully done"
 ##echo -e "|- Jobs failed :\n   $(grep -c 'Internal server error' log/${upload_list}.*.err | grep -v ':0' ) "
 ##echo -e "|- $(ps -elf | grep manager | grep upload | wc -l) threads are running"
@@ -29,8 +29,8 @@ printf '\n %40s' "############################################################"
 nfiles=0
 
 printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "Thread" "Jobfile" "Status" "PID" "Start" "End" "Community-Set"
-echo -e "    |- #Records  | Provided | Done\t| Created | Updated | Failed | No action required |" 
-echo -e "    |- #Handles - - - - - - - - - \t| Created | Updated | Failed | No action required |" 
+printf '\n    |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">Provided" "#Done" "+Created" "%Updated" "?Failed" "/No action required" 
+printf '\n    |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+Created" "%Updated" "?Failed" "/No action required" 
 
 for file in $(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null)
 do
@@ -62,9 +62,8 @@ do
   done < "$jobfile"
 
   printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "$nfiles" "$jobfile" "$status" "$pid" "$(grep 'Start' ${outfile} | cut -d' ' -f3)" "$(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1)" "${comm_set}"
-  echo -e "    |- #Records  | $npfrec     | $(grep -c '| u |' ${outfile})\t| $(grep -c 'Creation of ' ${outfile})\t  | $(grep -c 'Update of ' ${outfile})\t | $(grep -c 'failed' $outfile )\t| $(grep -c 'No upload' $outfile )\t|"
-  echo -e "    |- #Handles - - - - - - - - -\t| $(grep -c 'Create a new handle' ${outfile})  \t | $(grep -c 'Update checksum' $outfile )       \t | \t| $(grep -c 'No action required' $outfile ) \t|"
- 
+  printf '\n    |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$npfrec" "#$(grep -c '| u |' ${outfile})" "+$(grep -c 'Creation of ' ${outfile})" "%$(grep -c 'Update of ' ${outfile})" "?$(grep -c 'failed' $outfile)" "/$(grep -c 'No upload' $outfile)" 
+  printf '\n    |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$(grep -c 'Create a new handle' ${outfile})" "%$(grep -c 'Update checksum' $outfile)" "?" "/$(grep -c 'No action required' $outfile )" 
   ((ntotrec = ntotrec + npfrec ))
 done
 wait
