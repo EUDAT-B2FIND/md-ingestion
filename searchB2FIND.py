@@ -165,6 +165,10 @@ def __action_api (host,action, data_dict):
                 exit(e.code)
     except urllib2.URLError as e:
        exit('%s' % e.reason)
+    ##except urllib2.BadStatusLine as e:
+    ##   exit('%s' % e.reason)
+    except Exception, e:
+       exit('%s' % e.reason)
     else :
        out = json.loads(response.read())
        assert response.code >= 200
@@ -173,23 +177,23 @@ def __action_api (host,action, data_dict):
 def get_args():
     p = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        description = "Description: Get PID's of datasets that fulfill the search criteria",
+        description = "Description: Lists identifers of datasets that fulfill the given search criteria",
         epilog =  '''Examples:
            1. >./searchB2FIND.py -c aleph tags:LEP
              searchs for all datasets of community ALEPH with tag "LEP" in b2find.eudat.eu.
            2. >./searchB2FIND.py author:"Jones*" AND Discipline:"Crystal?Structure" --ckan eudat-b1.dkrz.de
-             searchs in eudat-b1.dkrz.de for all datasets having an author satrting with "Jones" and belongs to the discipline "Crystal Structure"
+             searchs in eudat-b1.dkrz.de for all datasets having an author starting with "Jones" and belongs to the discipline "Crystal Structure"
            3. >./searchB2FIND.py -c narcis DOI:'*' --ids DOI
              returns the list of id's and DOI's for all records in community "NARCIS" that have a DOI 
 '''
     )
    
     p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu', metavar='IP/URL')
-    p.add_argument('--output', '-o', help="Output file name and format. Format is given by the extention, supported are 'txt' (plain ascii file) or 'hd5' file, ...", default='results.txt', metavar='STRING')
+    p.add_argument('--output', '-o', help="Output file name and format. Format is determined by the extention, supported are 'txt' (plain ascii file) or 'hd5' file. Default is the ascii file results.txt.", default='results.txt', metavar='STRING')
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
-    p.add_argument('--ids', '-i', help="Identifiers of found records outputed. Default is 'id'. Additional 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
+    p.add_argument('--ids', '-i', help="Identifiers of found records outputed. Default is 'id'. Additionally 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
     p.parse_args('--ids'.split())
-    p.add_argument('pattern',  help='CKAN search pattern, i.e. (a list of) field:value terms.', metavar='PATTERN', nargs='*')
+    p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', metavar='PATTERN', nargs='*')
     
     args = p.parse_args()
     

@@ -482,11 +482,11 @@ class HARVESTER(object):
                 
           else:  ## OAI-PMH harvesting of XML records using Python Sickle module
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-              self.logger.info('  |- %s : OAI-PMH Processing, files stored in %s/xml' % (time.strftime("%H:%M:%S"),s))
               for f in glob.glob(s+'/xml/*.xml'):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
+
             for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
 
                 if req["lverb"] == 'ListIdentifiers' :
@@ -534,15 +534,14 @@ class HARVESTER(object):
                         
                         # Need a new subset?
                         if (stats['count'] == count_break):
-                        
+                            self.logger.info('    | %d records written to subset directory %s (if not failed).'% (
+                                stats['count'], subsetdir
+                            ))
+    
                             # save the stats of the old subset and get the new subsetdir:
                             subsetdir, count_set = self.save_subset(
                                 req, stats, subset, subsetdir, count_set)
-                            
-                            self.logger.info('    | subset ( %d records) harvested in %s (if not failed).'% (
-                                stats['count'], subsetdir
-                            ))
-                            
+                                                        
                             # add all subset stats to total stats and reset the temporal subset stats:
                             for key in ['tcount', 'ecount', 'count', 'dcount']:
                                 stats['tot'+key] += stats[key]
@@ -565,9 +564,13 @@ class HARVESTER(object):
                     stats['ecount']+=1
                     continue
                 else:
-                    # if everything worked then deleted this metadata file from deleted_metadata
+                    # if everything worked delete current file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
+            self.logger.info('    | %d records written to last subset directory %s (if not failed).'% (
+                                stats['count'], subsetdir
+                            ))
+
         except TypeError as e:
             self.logger.error('    [ERROR] Type Error: %s' % e)
         except NoRecordsMatch as e:
@@ -581,7 +584,7 @@ class HARVESTER(object):
             for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
                for f in glob.glob(s+'/xml/*.xml'):
                  id=os.path.splitext(os.path.basename(f))[0]
-                 if os.stat(f).st_mtime < now - 7 * 86400:
+                 if os.stat(f).st_mtime < now - 1 * 86400: ## at least 1 day old
                      if os.path.isfile(f):
                         if (id in deleted_metadata ):
                            print 'file %s is already on deleted_metadata' % f
@@ -634,12 +637,8 @@ class HARVESTER(object):
                             self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
                             stats['totecount'] +=1
                 
-                    # write uid in delete file:
-                    found=False
-                    for uid in file_content:
-                         if uid in line:
-                           found = True
-                    if not found:
+                    # append uid to delete file, if not already exists:
+                    if uid not in file_content:
                          with open(delete_file, 'a') as file:
                            file.write(uid)
 
