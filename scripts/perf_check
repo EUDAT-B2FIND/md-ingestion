@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " |- Check und print status of ingestion jobs \n"
+echo "[INFO] Start check und print status of ingestion jobs \n"
 
 lhost=$(hostname)
 WORK=$PWD
@@ -51,6 +51,7 @@ do
   outfile="log/$(basename ${file}).out"
   errfile="log/$(basename ${file}).err"
   npfrec=0
+  ndone=0
   while read community oaiurl dir mdprefix set 
   do
     setdir="${dir}/${set}"
@@ -61,14 +62,35 @@ do
 
   done < "$jobfile"
 
+  ndone=$(grep -c '| u |' ${outfile})
+  nrcreated=$(grep -c 'Creation of ' ${outfile})
+  nrupdated=$(grep -c 'Update of ' ${outfile})
+  nrfailed=$(grep -c 'failed' $outfile)
+  nrnoaction=$(grep -c 'No upload' $outfile)
+  nhcreated=$(grep -c 'Create a new handle' ${outfile})
+  nhupdated=$(grep -c 'Update checksum' ${outfile})
+  nhfailed=0 ##HEW-??? $(grep -c 'failed' $outfile)
+  nhnoaction=$(grep -c 'No action required' $outfile)
   printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "$nfiles" "$jobfile" "$status" "$pid" "$(grep 'Start' ${outfile} | cut -d' ' -f3)" "$(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1)" "${comm_set}"
-  printf '\n    |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$npfrec" "#$(grep -c '| u |' ${outfile})" "+$(grep -c 'Creation of ' ${outfile})" "%$(grep -c 'Update of ' ${outfile})" "?$(grep -c 'failed' $outfile)" "/$(grep -c 'No upload' $outfile)" 
+  printf '\n    |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$npfrec" "#$ndone" "+$nrcreated" "%$nrupdated" "?$nrfailed" "/$nrnoaction" 
   printf '\n    |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$(grep -c 'Create a new handle' ${outfile})" "%$(grep -c 'Update checksum' $outfile)" "?" "/$(grep -c 'No action required' $outfile )" 
-  ((ntotrec = ntotrec + npfrec ))
+  (( ntotrec  = ntotrec  + npfrec ))
+  (( ntotdone = ntotdone + ndone ))
+  (( ntotrcreated = ntotrcreated + nrcreated ))
+  (( ntotrupdated = ntotrupdated + nrupdated ))
+  (( ntotrfailed = ntotrfailed + nrfailed ))
+  (( ntotrnoaction = ntotrnoaction + nrnoaction ))
+  (( ntothcreated = ntothcreated + nhcreated ))
+  (( ntothupdated = ntothupdated + nhupdated ))
+  (( ntothfailed = ntothfailed + nhfailed ))
+  (( ntothnoaction = ntothnoaction + nhnoaction ))
 done
 wait
-echo "|->>> \n In total $ntotrec json records provided in dirs of $upload_list \n"
 
-echo "[INFO] End of check of ${upload_list} at $(date)"
+echo -e "\n######################################################\n Total ingest status :"
+printf '\n  |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$ntotrec" "#$ntotdone" "+$ntotrcreated" "%$ntotrupdated" "?$ntotrfailed" "/$ntotrnoaction" 
+printf '\n  |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$(grep -c 'Create a new handle' ${outfile})" "%$(grep -c 'Update checksum' $outfile)" "?" "/$(grep -c 'No action required' $outfile )" 
+
+echo "[INFO] End of check at $(date)"
 
 exit 0
