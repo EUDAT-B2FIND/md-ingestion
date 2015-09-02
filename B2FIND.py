@@ -486,15 +486,15 @@ class HARVESTER(object):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
-
-            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':False,'from':self.fromdate}):
+            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
 
                 if req["lverb"] == 'ListIdentifiers' :
-                    ##HEW if (record.deleted):
-                    ##HEW   continue
-                    ##HEW else:
-                    oai_id = record.identifier
-                    record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
+                    if (record.deleted):
+                       ##HEW-??? deleted_metadata[record.identifier] = 
+                       continue
+                    else:
+                       oai_id = record.identifier
+                       record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
                 elif req["lverb"] == 'ListRecords' :
             	    if (record.header.deleted):
             	       continue
