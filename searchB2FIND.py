@@ -68,10 +68,15 @@ def main():
             
   
     totlist=[]
+    count={}
+    count['id']=0
     for outt in aids:
        if outt not in suppid :
            print 'Output identifier %s is not supported' % outt
            exit()
+       else:
+           count[outt]=0
+
     countpid=0
     countdoi=0
     counter=0
@@ -87,7 +92,13 @@ def main():
 
             record['id']  = '%s' % (ds['name'])
             if 'Group' in aids :
-                record['Group']  = '%s' % (ds['groups'][0]['display_name'])
+                if 'groups' in ds:
+                  count['Group']+=1
+                  record['Group']  = '%s' % (ds['groups'][0]['display_name'])
+            if 'Source' in aids :
+                if 'url' in ds:
+                  count['Source']+=1
+                  record['Source'] = '%s' % (ds['url'])
             if 'PID' in aids :
                 xpid=[e for e in ds['extras'] if e['key'] == 'PID']
                 if xpid:
@@ -113,6 +124,8 @@ def main():
        cstart+=len(answer['result']['results']) 
 
     print "Found\n\t%d\trecords\n\t%d\tPIDs\n\t%d\tDOIs" % (counter, countpid, countdoi)
+    for outt in aids:
+        print "\n\t%d\t%s's" % (count[outt],outt)
     if extension == 'hd5':
       table.flush()
       h5file.close()

@@ -101,15 +101,24 @@ cessda http://oai.clarin-beta.dans.knaw.nl/OAIHandler  ListIdentifiers cmdi dans
 cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc dans-easy_
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 JSONAPI json new_
-##%%% EUDAT B2SHARE arin
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Linguistics
+##%%% EUDAT B2SHARE (MARCXML ???Harvesting issues since 150519!!!)
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml Linguistics
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml EUON
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml Eudat
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml DRIHM
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml BBMRI
-b2share  https://b2share.eudat.eu/oai2d ListIdentifiers marcxml NRM
-b2share  https://b2share.eudat.eu/oai2d ListIdentifiers marcxml GBIF
-b2share  https://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml NRM
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml GBIF
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
+##%%% EUDAT B2SHARE (DublinCore!!!)
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Linguistics
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc EUON
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Eudat
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc NRM
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc GBIF
+b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc RDA
 ##%%% DataCite : MD Provider is the DataCite.org 
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  TIB.WDCC
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc  BL

@@ -14,7 +14,7 @@
       <xpath>//marc:datafield[@tag='520']/marc:subfield[@code='a']/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>//marc:datafield[@tag='653'][1]/marc:subfield[@code='a']/text()</xpath>
+      <xpath>//marc:datafield[@tag='653']/marc:subfield[@code='a']/text()</xpath>
     </field>
     <!-- Access data -->
     <field name="url">
