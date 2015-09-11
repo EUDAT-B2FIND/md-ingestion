@@ -810,16 +810,6 @@ def parse_list_file(process,filename,community='',subset=''):
             
         reqlist.append(request.split())
         
-        # check the requests out for syntax errors:
-        if(process == 'harvest'):
-            if not (len(reqlist[-1]) == 4 or len(reqlist[-1]) == 5):
-                logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Either 4 or 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
-                exit_program()
-        else:
-            if len(reqlist[-1]) != 5:
-                logger.critical('[CRITICAL] The list file "%s" has wrong number of columns in line no. %d! Only 5 columns are allowed but %d columns are found!' %(filename, l, len(reqlist[-1])))
-                exit_program()
-    
     if len(reqlist) == 0:
         logger.error(' No matching request found in %s' % filename)
         exit()
