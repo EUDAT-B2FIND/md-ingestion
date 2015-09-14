@@ -1240,20 +1240,22 @@ class CONVERTER(object):
             invalue=[x.strip() for x in invalue.split(';')]
         invalue=list(OrderedDict.fromkeys(invalue)) ## this elimintas real duplicates
         revvalarr=[]
+        retval=[]
         for entry in invalue:
-          entry = entry.replace('\n',' ').replace('\r',' ').strip()
+          entry = entry.replace('\n',' ').replace('\r',' ').strip('(),;: \W+')
           if entry in ['not applicable']:
-             invalue.remove(entry)
+             ##invalue.remove(entry)
              continue
           reventry=entry.split(',')
           if (len(reventry) > 1): 
               reventry.reverse()
               reventry=' '.join(reventry)
-              revvalarr.append(reventry)
-              for reventry in revvalarr:
+              ##revvalarr.append(reventry)
+              for reventry in retval:
                  if reventry == entry :
-                    invalue.remove(reventry)
-        return '; '.join(invalue)       
+                    retarr.remove(reventry)
+          retval.append(entry)
+        return '; '.join(retval)       
       
     def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
         """
