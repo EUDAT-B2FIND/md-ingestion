@@ -1239,7 +1239,6 @@ class CONVERTER(object):
         if type(invalue) is not list :
             invalue=[x.strip() for x in invalue.split(';')]
         invalue=list(OrderedDict.fromkeys(invalue)) ## this elimintas real duplicates
-        revvalarr=[]
         retval=[]
         for entry in invalue:
           entry = entry.replace('\n',' ').replace('\r',' ').strip('(),;: \W+')
@@ -1253,7 +1252,7 @@ class CONVERTER(object):
               ##revvalarr.append(reventry)
               for reventry in retval:
                  if reventry == entry :
-                    retarr.remove(reventry)
+                    retval.remove(reventry)
           retval.append(entry)
         return '; '.join(retval)       
       
