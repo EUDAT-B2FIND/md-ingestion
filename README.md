@@ -38,7 +38,7 @@ or just by installing all modules listed in requirements.txt :
   python-Levenshtein
   git+https://github.com/noumar/iso639.git
 
-  > sudo pip isntall -r requiremnets.txt
+  > sudo pip install -r requirements.txt
 
 Or - if this not works for some reason for xml - try
   > sudo apt-get install python-lxml
@@ -121,7 +121,5 @@ These options will be required to upload an dataset to a CKAN database.
 --auth=STRING           Authentification for CKAN APIs (API key, iby default
                         taken from file $HOME/.netrc)
 
-
-
-Heinrich Widmann, 11.4.2014
-John Mrziglod, 20.5.2014
+Heinrich Widmann (DKRZ), 11.4.2014
+John Mrziglod (DKRZ),    20.5.2014

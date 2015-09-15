@@ -7,9 +7,10 @@
   - OAICONVERTER converts JSON fields to XML files to provide via OAI-PMH in B2FIND schema
   - OUTPUT       initializes the logger class and provides methods for saving log data and for printing those.    
 
-Install required modules as simplejson, e.g. by :
-
+Install required modules as sickle, lxml, simplejson etc. , e.g. by :
   > sudo pip install <module>
+or at once by
+  > sudo pip install -r requirements.txt
 
 Copyright (c) 2014 John Mrziglod (DKRZ)
 Modified      2015 Heinrich Widmann (DKRZ)
@@ -21,14 +22,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-This is a prototype and not ready for production use.
-
 """
 
 # system relevant modules:
 import os, glob, sys
-import time, datetime, calendar, subprocess
+import time, datetime, subprocess
 
 # program relevant modules:
 import logging as log
@@ -48,7 +46,7 @@ import httplib
 from urlparse import urlparse
 
 # needed for CONVERTER :
-from babel.dates import format_datetime
+##HEW-D-NOTUESD?? from babel.dates import format_datetime
 import codecs
 import simplejson as json
 import csv, io
@@ -1241,7 +1239,9 @@ class CONVERTER(object):
         invalue=list(OrderedDict.fromkeys(invalue)) ## this elimintas real duplicates
         retval=[]
         for entry in invalue:
-          entry = entry.replace('\n',' ').replace('\r',' ').strip('(),;: \W+')
+          entry = entry.replace('\n',' ').replace('\r',' ').strip(',;: ')
+          if entry.startswith('(') and re.findall(r"\((.*)\)",entry) :
+            entry=re.findall(r"\((.*)\)",entry)[0]
           if entry in ['not applicable']:
              ##invalue.remove(entry)
              continue
