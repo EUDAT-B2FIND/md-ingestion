@@ -49,7 +49,8 @@ from urlparse import urlparse
 ##HEW-D-NOTUESD?? from babel.dates import format_datetime
 import codecs
 import simplejson as json
-import csv, io
+import io
+from pyparsing import *
 import Levenshtein as lvs
 import iso639
 
@@ -1233,6 +1234,17 @@ class CONVERTER(object):
         Copyright (C) 2014 Heinrich Widmann
         Licensed under AGPLv3.
         """
+        nonBracePrintables = ''
+        for c in printables:
+            if c not in '(){}[]':
+                nonBracePrintables = nonBracePrintables + c
+
+        enclosed = Forward()
+        value = Combine(OneOrMore(Word(nonBracePrintables) | White(' ')))
+        nestedParens = nestedExpr('(', ')', content=enclosed) 
+        nestedBrackets = nestedExpr('[', ']', content=enclosed) 
+        nestedCurlies = nestedExpr('{', '}', content=enclosed) 
+        enclosed << OneOrMore(value | nestedParens | nestedBrackets | nestedCurlies)
                 
         if type(invalue) is not list :
             invalue=[x.strip() for x in invalue.split(';')]
@@ -1240,8 +1252,15 @@ class CONVERTER(object):
         retval=[]
         for entry in invalue:
           entry = entry.replace('\n',' ').replace('\r',' ').strip(',;: ')
-          if entry.startswith('(') and re.findall(r"\((.*)\)",entry) :
-            entry=re.findall(r"\((.*)\)",entry)[0]
+          ##HEW-N 
+          out=enclosed.parseString(entry).asList()
+          if type(out[0]) is list :
+              entry=out[0][0]
+          else:
+              entry=out[0]
+
+          ##if entry.startswith('(') and re.findall(r"\((.*)\)",entry) :
+          ##   entry=re.findall(r"\((.*)\)",entry)[0]
           if entry in ['not applicable']:
              ##invalue.remove(entry)
              continue
