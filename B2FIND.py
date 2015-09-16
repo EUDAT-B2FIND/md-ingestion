@@ -776,6 +776,25 @@ class CONVERTER(object):
                    "MetadataAccess" : "metadata"
                               }  
 
+        ## settings for pyparsing
+        nonBracePrintables = ''
+        unicodePrintables = u''.join(unichr(c) for c in xrange(65536) 
+                                        if not unichr(c).isspace())
+        for c in unicodePrintables: ## printables:
+            if c not in '(){}[]':
+                nonBracePrintables = nonBracePrintables + c
+
+        self.enclosed = Forward()
+        value = Combine(OneOrMore(Word(nonBracePrintables) | White(' ')))
+        nestedParens = nestedExpr('(', ')', content=self.enclosed) 
+        nestedBrackets = nestedExpr('[', ']', content=self.enclosed) 
+        nestedCurlies = nestedExpr('{', '}', content=self.enclosed) 
+        self.enclosed << OneOrMore(value | nestedParens | nestedBrackets | nestedCurlies)
+                
+
+
+
+
     class cv_disciplines(object):
         """
         This class represents the closed vocabulary used for the mapoping of B2FIND discipline mapping
@@ -1234,31 +1253,20 @@ class CONVERTER(object):
         Copyright (C) 2014 Heinrich Widmann
         Licensed under AGPLv3.
         """
-        nonBracePrintables = ''
-        for c in printables:
-            if c not in '(){}[]':
-                nonBracePrintables = nonBracePrintables + c
 
-        enclosed = Forward()
-        value = Combine(OneOrMore(Word(nonBracePrintables) | White(' ')))
-        nestedParens = nestedExpr('(', ')', content=enclosed) 
-        nestedBrackets = nestedExpr('[', ']', content=enclosed) 
-        nestedCurlies = nestedExpr('{', '}', content=enclosed) 
-        enclosed << OneOrMore(value | nestedParens | nestedBrackets | nestedCurlies)
-                
         if type(invalue) is not list :
             invalue=[x.strip() for x in invalue.split(';')]
-        invalue=list(OrderedDict.fromkeys(invalue)) ## this elimintas real duplicates
+        invalue=list(OrderedDict.fromkeys(invalue)) ## this elemenates real duplicates
         retval=[]
         for entry in invalue:
           entry = entry.replace('\n',' ').replace('\r',' ').strip(',;: ')
-          try: 
-              out=enclosed.parseString(entry).asList()
+          try:
+              out=self.enclosed.parseString(entry).asList()
               if type(out[0]) is list :
                   entry=out[0][0]
               else:
                   entry=out[0]
-          except ParseExceprion, err :
+          except ParseException, err :
                   log.error('    | [ERROR] %s , during parsing of %s' % (err,entry))
 
           if entry in ['not applicable']:
