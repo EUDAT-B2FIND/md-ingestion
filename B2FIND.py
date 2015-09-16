@@ -1252,15 +1252,15 @@ class CONVERTER(object):
         retval=[]
         for entry in invalue:
           entry = entry.replace('\n',' ').replace('\r',' ').strip(',;: ')
-          ##HEW-N 
-          out=enclosed.parseString(entry).asList()
-          if type(out[0]) is list :
-              entry=out[0][0]
-          else:
-              entry=out[0]
+          try: 
+              out=enclosed.parseString(entry).asList()
+              if type(out[0]) is list :
+                  entry=out[0][0]
+              else:
+                  entry=out[0]
+          except ParseExceprion, err :
+                  log.error('    | [ERROR] %s , during parsing of %s' % (err,entry))
 
-          ##if entry.startswith('(') and re.findall(r"\((.*)\)",entry) :
-          ##   entry=re.findall(r"\((.*)\)",entry)[0]
           if entry in ['not applicable']:
              ##invalue.remove(entry)
              continue
