@@ -33,7 +33,7 @@
       <xpath>string-join(distinct-values(//dc:creator/text()), '; ')</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dc:source[1]/text()</xpath>
+      <xpath>//dc:source/text()</xpath>
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
@@ -49,7 +49,7 @@
     <field name="TemporalCoverage">
     </field>
     <field name="Format">
-      <xpath>//dc:format[not(contains(text(), 'Bytes'))]</xpath>
+      <xpath>//dc:format</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
