@@ -84,11 +84,14 @@ def main():
 
     while (cstart < tcount) :
        if (cstart > 0):
-           ## print 'processing %d to %d record ...' % (cstart,cstart+ckan_limit)
+           ##HEW-T print 'processing %d to %d record ...' % (cstart,cstart+ckan_limit)
            answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
+       if len(answer['result']['results']) == 0 :
+           print "ERROR 'results' of %s is empty list" % answer['result']
+           break
        for ds in answer['result']['results']:
             counter +=1
-            ## print'    | %-4d | %-40s |' % (counter,ds['name'])
+            ##HEW-T print'    | %-4d | %-40s |' % (counter,ds['name'])
 
             record['id']  = '%s' % (ds['name'])
             if 'Group' in aids :

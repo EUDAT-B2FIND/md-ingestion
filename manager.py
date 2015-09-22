@@ -805,8 +805,11 @@ def parse_list_file(process,filename,community='',subset=''):
             continue
             
         # sort out lines that don't match given subset
-        if (subset != None) and ((len(request.split()) < 5) or  ( not request.split()[4] == subset )): ###.startswith(subset))) :
-            continue
+        if (subset != None):
+            if len(request.split()) < 5 :
+               continue
+            elif ( not request.split()[4] == subset ) and (not ( subset.endswith('*') and request.split()[4].startswith(subset.translate(None, '*')))) :
+              continue
             
         reqlist.append(request.split())
         
