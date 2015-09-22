@@ -1264,6 +1264,8 @@ class CONVERTER(object):
               out=self.enclosed.parseString(entry).asList()
               if type(out[0]) is list :
                   entry=out[0][0]
+                  if type(entry) is list:
+			entry=entry[0]
               else:
                   entry=out[0]
           except ParseException, err :
