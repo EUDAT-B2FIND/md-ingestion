@@ -8,7 +8,12 @@ TODAY=`date +\%F`
 YESTERDAY=`date --date='1 day ago' +\%F`
 TWODAGO=`date --date='2 day ago' +\%F`
 WEEK=`date +\%U`
-upload_list="upload_list_${TODAY}"
+if [ $1 != "" ]
+then
+   upload_list=$1
+else
+   upload_list="upload_list_${TODAY}"
+fi
 ##upload_list="upload_list_datacite_${TODAY}"
 ##HEW-!!! upload_list="${WORK}/upload_list_${YESTERDAY}"
 

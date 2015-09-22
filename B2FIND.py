@@ -1118,7 +1118,7 @@ class CONVERTER(object):
         
         retval=list()
         if type(invalue) is not list :
-            invalue=invalue.split(';')
+            invalue=re.split(r'[;\s]\s*',invalue)
         for indisc in invalue :
            ##indisc=indisc.encode('ascii','ignore').capitalize()
            indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip()
@@ -2006,7 +2006,11 @@ class CONVERTER(object):
                 elif m2:
                     xpath=m2.group(3)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
-                    if len(retval)==0 : continue
+                    if len(retval)==0 : 
+                        if field == 'Discipline':
+			   retval=['Not stated']
+                        else:
+                           continue	
                     if field == 'fulltext':
                         retval=' '.join([unicode(i).strip() for i in retval])
                         ##retval=' '.join([unicode(i) for i in vallist]) ## ''.join(retval).replace('\n', ' ').split()])
@@ -2292,8 +2296,9 @@ class CONVERTER(object):
                     jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
 
                 if publdate :
-                    jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate }) 
+                    jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate })
 
+                ## write to JSON file
                 jsonfilename=os.path.splitext(filename)[0]+'.json'
                 with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
                     try:
