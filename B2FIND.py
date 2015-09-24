@@ -1147,6 +1147,7 @@ class CONVERTER(object):
                continue
 
         if len(retval) > 0:
+            retval=list(OrderedDict.fromkeys(retval)) ## this elemenates real duplicates
             return ';'.join(retval)
         else:
             return 'Not stated' 
