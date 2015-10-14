@@ -485,8 +485,14 @@ class HARVESTER(object):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
+            
+            noffs=0 # set to number of record, where harvesting should start
+            stats['tcount']=noffs
+            n=0
             for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
-
+                n+=1
+                print 'nnnn %d ' % n
+		if n <= noffs : continue
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
                        ##HEW-??? deleted_metadata[record.identifier] = 
@@ -610,7 +616,8 @@ class HARVESTER(object):
                 elif (not os.path.exists(self.base_outdir+'/delete')):
                     os.makedirs(self.base_outdir+'/delete')    
 
-                try:
+                delete_mode=False
+                if delete_mode == True :
                   # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
                   for uid in deleted_metadata:
                     self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
@@ -641,10 +648,8 @@ class HARVESTER(object):
                          with open(delete_file, 'a') as file:
                            file.write(uid)
 
-                except IOError as strerror:
-                   self.logger.critical("Cannot write data to '{0}': {1}".format(delete_file, strerror))
                 else:
-                   self.logger.info("List of id's written to {0}".format(delete_file))
+                   self.logger.info("List of id's written to {0} but no files removed".format(delete_file))
 
             # add all subset stats to total stats and reset the temporal subset stats:
             for key in ['tcount', 'ecount', 'count', 'dcount']:
