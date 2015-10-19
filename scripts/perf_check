@@ -20,7 +20,7 @@ echo -e "  |- On host \t$lhost"
 
 echo -e "\n Run status of jobs :"
 printf ' | %-5s | %-7s | %-4s | %-6s |' "Total" "Running" "Done" "Failed" 
-printf '\n | %-5s | %-7s | %-4s | %-6s |' "$(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(ps -elf | grep manager | grep upload | wc -l)" "$(ls DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(grep 'Internal server error' log/${upload_list}.*.err | grep -c -v ':0' )"
+printf '\n | %-5s | %-7s | %-4s | %-6s |' "$(ls ${upload_list}.* DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(ps -elf | grep manager | grep ${upload_list} | wc -l)" "$(ls DONE/${upload_list}.* 2>/dev/null | wc -l)" "$(grep 'Internal server error' log/${upload_list}.*.err | grep -c -v ':0' )"
 printf '\n %40s' "############################################################\n"
 ##echo -e "|- $(ls DONE/${upload_list}.* 2>/dev/null | wc -l) jobs are sucessfully done"
 ##echo -e "|- Jobs failed :\n   $(grep -c 'Internal server error' log/${upload_list}.*.err | grep -v ':0' ) "
@@ -52,10 +52,13 @@ do
   errfile="log/$(basename ${file}).err"
   npfrec=0
   ndone=0
+  comm_set=""
+  sets=""
   while read community oaiurl dir mdprefix set 
   do
     setdir="${dir}/${set}"
-    comm_set="${community}-${set}"
+    comm_set+=" ${community}-${set}"
+    sets+=" ${set}"
     ndirrec=$(ls ${setdir}/json/*.json 2>/dev/null | wc -l)
     ##echo -e "   |- Community-Set\t${community}\t${set}\t\n    |- #provided records\t$ndirrec "
     ((npfrec = npfrec + ndirrec)) 
@@ -72,6 +75,17 @@ do
   nhfailed=0 ##HEW-??? $(grep -c 'failed' $outfile)
   nhnoaction=$(grep -c 'No action required' $outfile)
   printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "$nfiles" "$jobfile" "$status" "$pid" "$(grep 'Start' ${outfile} | cut -d' ' -f3)" "$(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1)" "${comm_set}"
+  for subset in ${sets}
+  do
+    srupl=$(grep $subset ${outfile})
+    if [ -z "$srupl" ]
+    then
+      printf '...\n   '
+    else
+      printf "\n  |- $srupl "
+    fi
+  done
+
   printf '\n    |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$npfrec" "#$ndone" "+$nrcreated" "%$nrupdated" "?$nrfailed" "/$nrnoaction" 
   printf '\n    |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$(grep -c 'Create a new handle' ${outfile})" "%$(grep -c 'Update checksum' $outfile)" "?" "/$(grep -c 'No action required' $outfile )" 
   (( ntotrec  = ntotrec  + npfrec ))
