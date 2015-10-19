@@ -17,6 +17,7 @@ import os, sys
 import argparse
 import simplejson as json
 import urllib, urllib2
+import ckanclient
 from tables import *
 
 def main():
@@ -37,19 +38,25 @@ def main():
 
     print 'Search\n\tin\t\t%s\n\tfor pattern\t%s\n' % (args.ckan,ckan_pattern)
 
+    ckanapi3='http://'+args.ckan+'/api/3'
+    ckan = ckanclient.CkanClient(ckanapi3)
     ckan_limit=10000
-    answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":0})
-    tcount=answer['result']['count']
+    answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit)
+    ### answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":0})
+    tcount=len(answer['results'])##HEW-D ['count']
+    print " => %s answer['results']" % answer['results'][0]
     print " => %d datasets found" % tcount
     aids=args.ids
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
-    suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI','Group':'groups'}
+    suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI','Group':'groups','Discipline':'Discipline'}
 
     class Record(IsDescription):
         id      = StringCol(64)      # 64-character String
         Source  = StringCol(64)      # 64-character String
         PID     = StringCol(64)      # 64-character String
         DOI     = StringCol(64)      # 64-character String
+        Group   = StringCol(64)      # 64-character String
+        Discipline     = StringCol(64)      # 64-character String
 
     extension=os.path.splitext(args.output)[1][1:]
     if extension == 'hd5': 
@@ -86,10 +93,10 @@ def main():
        if (cstart > 0):
            ##HEW-T print 'processing %d to %d record ...' % (cstart,cstart+ckan_limit)
            answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
-       if len(answer['result']['results']) == 0 :
+       if len(answer['results']) == 0 :
            print "ERROR 'results' of %s is empty list" % answer['result']
            break
-       for ds in answer['result']['results']:
+       for ds in answer['results']:
             counter +=1
             ##HEW-T print'    | %-4d | %-40s |' % (counter,ds['name'])
 
@@ -116,6 +123,13 @@ def main():
                     countdoi+=1
                 else:
                     record['DOI']  = '%s' % 'N/A'
+            if 'Discipline' in aids :
+                xdisc=[e for e in ds['extras'] if e['key'] == 'Discipline']
+                if xdisc:
+                    record['Discipline']  = '%s' % (xdisc[0]['value'])
+                    count['Discipline']+=1
+                else:
+                    record['Discipline']  = '%s' % 'N/A'
             if extension == 'hd5':
                 record.append()
             elif extension == 'txt':
@@ -124,7 +138,7 @@ def main():
                     if aid != 'id':
                         outline+='\t'+record[aid]
                 fh.write(outline+'\n')
-       cstart+=len(answer['result']['results']) 
+       cstart+=len(answer['results']) 
 
     print "Found\n\t%d\trecords\n\t%d\tPIDs\n\t%d\tDOIs" % (counter, countpid, countdoi)
     for outt in aids:

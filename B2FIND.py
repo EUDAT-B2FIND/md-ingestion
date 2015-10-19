@@ -486,7 +486,6 @@ class HARVESTER(object):
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             oaireq=getattr(sickle,req["lverb"], None)
             for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
-
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
                        ##HEW-??? deleted_metadata[record.identifier] = 
@@ -494,6 +493,7 @@ class HARVESTER(object):
                     else:
                        oai_id = record.identifier
                        record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
+                       print ' - End getRecord'
                 elif req["lverb"] == 'ListRecords' :
             	    if (record.header.deleted):
             	       continue
@@ -508,7 +508,7 @@ class HARVESTER(object):
                 xmlfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
                 try:
                     self.logger.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
-                    self.logger.debug('Harvested XML file written to %s' % xmlfile)
+                    ## self.logger.debug('Harvested XML file written to %s' % xmlfile)
                     
                     # get the raw xml content:    
                     metadata = etree.fromstring(record.raw)
@@ -529,7 +529,7 @@ class HARVESTER(object):
                             continue
                         
                         stats['count'] += 1
-                        self.logger.debug('Harvested XML file written to %s' % xmlfile)
+                        ## self.logger.debug('Harvested XML file written to %s' % xmlfile)
                         
                         # Need a new subset?
                         if (stats['count'] == count_break):
@@ -551,8 +551,6 @@ class HARVESTER(object):
                     else:
                         stats['ecount'] += 1
                         self.logger.warning('    [WARNING] No metadata available for %s' % oai_id)
-                            
-                        
                 except TypeError as e:
                     self.logger.error('    [ERROR] TypeError: %s' % e)
                     stats['ecount']+=1        
@@ -1260,7 +1258,8 @@ class CONVERTER(object):
         retval=[]
         for entry in invalue:
           entry = entry.replace('\n',' ').replace('\r',' ').strip(',;: ')
-          try:
+          if entry :
+            try:
               out=self.enclosed.parseString(entry).asList()
               if type(out[0]) is list :
                   entry=out[0][0]
@@ -1268,8 +1267,10 @@ class CONVERTER(object):
 			entry=entry[0]
               else:
                   entry=out[0]
-          except ParseException, err :
+            except ParseException, err :
                   log.error('    | [ERROR] %s , during parsing of %s' % (err,entry))
+          else:
+            continue
 
           if entry in ['not applicable']:
              ##invalue.remove(entry)

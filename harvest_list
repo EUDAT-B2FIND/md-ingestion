@@ -26,8 +26,8 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 ##%%% EARLINET : MD Provider eudat-oai.dkrz.de (directly extracted from CERA)
 earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso
 ### new comm. IVOA or EURO-VO
-ivoa  http://registry.euro-vo.org/oai.jsp ListIdentifiers  oai_dc ivo_managed
-##ivoa  http://registry.euro-vo.org/oai.jsp ListIdentifiers  oai_dc 
+##ivoa  http://registry.euro-vo.org/oai.jsp ListIdentifiers  oai_dc ivo_managed
+ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc 
 ################### here we go with the DASISH project --> ask Daan and Binyam for details !!!
 ##%%% DASISH ?? OAI-URL's taken from
 ##% - https://github.com/DASISH/jmd-scripts/harvest-config*
