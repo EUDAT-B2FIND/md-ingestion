@@ -24,6 +24,9 @@
     <field name="url">
       <xpath>//gmd:MD_Metadata/gmd:dataSetURI/gco:CharacterString/text()</xpath>
    </field>
+    <field name="DOI">
+      <xpath>//gmd:MD_Metadata/gmd:dataSetURI/gco:CharacterString/text()</xpath>
+   </field>
    <field name="Checksum">
    </field>
    <field name="Rights">
