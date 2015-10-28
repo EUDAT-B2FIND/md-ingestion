@@ -183,14 +183,14 @@ class CKAN_CLIENT(object):
             if (self.api_key): request.add_header('Authorization', self.api_key)
             response = urllib2.urlopen(request,data_string)
         except urllib2.HTTPError as e:
-            self.logger.info('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
+            self.logger.error('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
                 self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                self.logger.debug('\tMaybe the dataset already exists or you have a parameter error?')
+                self.logger.debug('\tMaybe the dataset already exists => try to update the package')
                 self.action('package_update',data_dict)
-                return {"success" : False}
+                ##HEW-D return {"success" : False}
             elif ( e.code == 409):
                 self.logger.debug('\tMaybe you have a parameter error?')
                 return {"success" : False}
@@ -491,7 +491,6 @@ class HARVESTER(object):
             n=0
             for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
                 n+=1
-                print 'nnnn %d ' % n
 		if n <= noffs : continue
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
@@ -500,7 +499,6 @@ class HARVESTER(object):
                     else:
                        oai_id = record.identifier
                        record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
-                       print ' - End getRecord'
                 elif req["lverb"] == 'ListRecords' :
             	    if (record.header.deleted):
             	       continue
@@ -598,7 +596,8 @@ class HARVESTER(object):
             if (len(deleted_metadata) > 0): ##HEW and self.pstat['status']['d'] == 'tbd':
                 ## delete all files in deleted_metadata and write the subset
                 ## and the uid in '<outdir>/delete/<community>-<mdprefix>':
-                self.logger.info('    | These [%d] files were not updated and will be deleted:' % (len(deleted_metadata)))
+                stats['totdcount']=len(deleted_metadata)
+                self.logger.info('    | %d files were not updated and will be deleted:' % (len(deleted_metadata)))
                 
                 # path to the file with all deleted uids:
                 delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
@@ -648,7 +647,7 @@ class HARVESTER(object):
                            file.write(uid)
 
                 else:
-                   self.logger.info("List of id's written to {0} but no files removed".format(delete_file))
+                   self.logger.info("   | List of id's to delete written to {0} but no files removed yet".format(delete_file))
 
             # add all subset stats to total stats and reset the temporal subset stats:
             for key in ['tcount', 'ecount', 'count', 'dcount']:
