@@ -495,12 +495,14 @@ class HARVESTER(object):
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
                        ##HEW-??? deleted_metadata[record.identifier] = 
+                       stats['totdcount'] += 1
                        continue
                     else:
                        oai_id = record.identifier
                        record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
                 elif req["lverb"] == 'ListRecords' :
             	    if (record.header.deleted):
+                       stats['totdcount'] += 1
             	       continue
                     else:
                        oai_id = record.header.identifier
@@ -624,7 +626,7 @@ class HARVESTER(object):
                     dsubset = os.path.dirname(xmlfile).split('/')[-2]
                     jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+uid+'.json'
                 
-                    stats['totdcount'] += 1
+                    ## HEW stats['totdcount'] += 1
                     
                     # remove xml file:
                     try: 
