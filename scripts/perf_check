@@ -68,7 +68,7 @@ do
   ndone=$(grep -c '| u |' ${outfile})
   nrcreated=$(grep -c 'Creation of ' ${outfile})
   nrupdated=$(grep -c 'Update of ' ${outfile})
-  nrfailed=$(grep -c 'failed' $outfile)
+  (( nrfailed = $(grep -c 'failed' $outfile) + $(grep -c 'aborted' $outfile) ))
   nrnoaction=$(grep -c 'No upload' $outfile)
   nhcreated=$(grep -c 'Create a new handle' ${outfile})
   nhupdated=$(grep -c 'Update checksum' ${outfile})
