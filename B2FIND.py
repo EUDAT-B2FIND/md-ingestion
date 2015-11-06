@@ -896,10 +896,7 @@ class CONVERTER(object):
         Licensed under AGPLv3.
         """
         try:
-          ##?? idarrn=list()
           idarr=invalue.split(";")
-          ##??for id in idarr :
-          ##??   idarrn.extend(re.findall('\[(.*?)\]|\([^\)]*\)|\"[^\"]*\"|\S+',id))
           iddict=dict()
           favurl=idarr[0]
   
