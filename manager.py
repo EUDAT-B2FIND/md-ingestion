@@ -821,15 +821,19 @@ def parse_list_file(process,filename,community='',subset=''):
 
 def options_parser(modes):
     
-    descI="""           I.  Ingestion of metadata comprising                                           
-              - 1. Harvesting of XML files from OAI-PMH MD provider(s)\n\t
-              - 2. Converting/Mapping XML to JSON and semantic mapping of metadata to CKAN schema
-              - 3. Uploading resulting JSON {key:value} dict\'s as datasets to JMD portal
-"""
     p = optparse.OptionParser(
-        description = """Description :                                                    
-           Management of metadata within EUDAT B2FIND, i.e.    
-""" + descI,
+        description = '''Description                                                              
+===========                                                                           
+ Management of metadata within EUDAT B2FIND, comprising                                      
+      - Harvesting of XML files from OAI-PMH MD provider(s)\n\t
+
+              - Mapping XML to JSON and semantic mapping of metadata to B2FIND schema\n\t
+
+\n              - Validation of the JSON records and create coverage statistics\n\t
+              - Uploading resulting JSON {key:value} dict\'s as datasets to the B2FIND portal\n\t
+              - OAI compatible creation of XML records in oai_b2find format\n\t
+    
+''',
         formatter = optparse.TitledHelpFormatter(),
         prog = 'manager.py',
         epilog='For any further information and documentation please look at the README.md file or at the EUDAT wiki (http://eudat.eu/b2find).',
