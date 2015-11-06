@@ -22,10 +22,7 @@
     </field>
     <!-- Access data  -->
     <field name="url">
-      <xpath>//gmd:MD_Metadata/gmd:dataSetURI/gco:CharacterString/text()</xpath>
-   </field>
-    <field name="DOI">
-      <xpath>//gmd:MD_Metadata/gmd:dataSetURI/gco:CharacterString/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:dataSetURI/gco:CharacterString/text(), //gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:otherCitationDetails/gco:CharacterString/text()</xpath>
    </field>
    <field name="Checksum">
    </field>
