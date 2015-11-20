@@ -1873,6 +1873,8 @@ class CONVERTER(object):
                 jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
               elif facet == 'url':
                 iddict = self.map_identifiers(jsondata[facet])
+              elif facet == 'DOI':
+                iddict = self.map_identifiers(jsondata[facet])
               elif facet == 'extras': # extra CKAN fields
                 try:  ### Semantic mapping of extra keys
                   for extra in jsondata[facet]:
@@ -2256,6 +2258,8 @@ class CONVERTER(object):
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    elif facet == 'url':
                          iddict = self.map_identifiers(jsondata[facet])
+                   elif facet == 'DOI':
+                         iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'extras': # Semantic mapping of extra CKAN fields
                       try:
                          for extra in jsondata[facet]:
@@ -2399,6 +2403,8 @@ class CONVERTER(object):
                    elif facet == 'tags':
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    elif facet == 'url':
+                         iddict = self.map_identifiers(jsondata[facet])
+                   elif facet == 'DOI':
                          iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'extras': # Semantic mapping of extra CKAN fields
                       try:
@@ -2623,10 +2629,11 @@ class CONVERTER(object):
             mf.seek(0, 0)
             for line in mf:
                 if '<field name="'+facet+'">' in line:
-                    totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf)) ## next(mf).replace('<xpath>','')
+                    totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf))
                     break
-                    ##mf.seek(0, 0)
-
+                elif facet in line:
+                    totstats[facet]['xpath']=re.sub(r"(.*?)\$\.(.*?) VALUE", r"\2", line)
+                    break
         fcount = 0
         for filename in files:
             fcount+=1
