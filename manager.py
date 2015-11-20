@@ -46,7 +46,7 @@ def main():
 
     # check the version from svn:
     global ManagerVersion
-    ManagerVersion = '1.0'
+    ManagerVersion = '2.0'
 
     # parse command line options and arguments:
     modes=['h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
@@ -507,7 +507,7 @@ def process_upload(UP, rlist, options):
                 results['ecount'] += 1
                 continue
 
-            # get dataset name from filename (a uuid generated identifier):
+            # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
             logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
@@ -623,7 +623,8 @@ def process_upload(UP, rlist, options):
 ##HEW-T            if (options.epic_check): ##HEW and upload == 1):
                 if (epicstatus == "new"):
                     logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
-                    npid=ec.createHandle(pid,index1,checksum)
+                    ckands='http://b2find.eudat.eu/dataset/'+ds_id
+                    npid=ec.createHandle(pid,ckands,checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
                     ec.modifyHandle(pid,'COMMUNITY',community)
                     ec.modifyHandle(pid,'B2FINDHOST',options.iphost)

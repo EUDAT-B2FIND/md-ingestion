@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## HDCP2
+hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA
 pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
 ## GFZ data services

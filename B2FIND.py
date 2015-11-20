@@ -2720,21 +2720,32 @@ class CONVERTER(object):
                             continue
                 else:
                     sub_obj = json_obj[tag_name]
+                    if tag_name == 'author':
+                        sub_obj=sub_obj.split(';')
                     if tag_name.lower() in self.ckan2b2find : 
                         tag_name=self.ckan2b2find[tag_name.lower()]
-                        result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name))
+                        ###HEW-D result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name.lower()))
                         if type(sub_obj) is list:
-                            vlist="\t\t"
                             for nv in sub_obj:
-                                vlist+=nv["name"]+';'
-                                vlist=vlist[:-1]
-                            result_list.append(vlist)
+                                result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name.lower()))
+                                vlist="\t\t"
+                            ###for nv in sub_obj:
+                            ###    vlist+=nv["name"]+';'
+                            ###    vlist=vlist[:-1]
+                            ###    result_list.append(vlist)
+                                if tag_name == 'tags':
+                                    result_list.append("%s%s" % ("\t" + line_padding, nv["name"].strip()))
+                                else:
+                                    result_list.append("%s%s" % ("\t" + line_padding, nv.strip()))
+                                result_list.append("%s</%s:%s>" % (line_padding, mdftag, tag_name.lower()))
                         else:
+                            result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name.lower()))
                             result_list.append(self.json2xml(sub_obj, "\t" + line_padding))
-                        result_list.append("%s</%s:%s>" % (line_padding, mdftag, tag_name))
+                            result_list.append("%s</%s:%s>" % (line_padding, mdftag, tag_name.lower()))
                     else:
                         self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
+            
             return "\n".join(result_list)
 
         return "%s%s" % (line_padding, json_obj)
@@ -2821,17 +2832,14 @@ class CONVERTER(object):
 
 ###                header="""<?xml version = '1.0' encoding = 'UTF-8'?>
                 header="""
-<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:b2find="http://b2find.eudat.eu">
-  <!-- the "b2find" prefix is bound to http://b2find.eudat.eu -->
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <header>
      <identifier>"""+identifier+"""</identifier>
      <datestamp>"""+createdate+"""</datestamp>
      <setSpec>"""+oaiset+"""</setSpec>
    </header>
    <metadata>
-     <!-- NOTE : the metadata schema for B2FIND and the oai prefix oai_b2find is still under developement
-                and the namesapace and schema definitions are preliminary -->
-     <oai_b2find:b2find xmlns:b2find="http://purl.org/b2find/elements/1.1/" xmlns:oai_b2find="http://www.openarchives.org/OAI/2.0/oai_b2find/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://b2find.eudat.eu/docs http://b2find.eudat.eu/schema/oai_b2find.xsd">
+     <oai_b2find:b2find xmlns:b2find="http://purl.org/b2find/elements/1.1/" xmlns:oai_b2find="http://www.openarchives.org/OAI/2.0/oai_b2find/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://b2find.eudat.eu/schema http://b2find.eudat.eu/schema/oai_b2find.xsd">
 """
                 footer="""
      </oai_b2find:b2find>
