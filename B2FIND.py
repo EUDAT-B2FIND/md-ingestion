@@ -2150,9 +2150,13 @@ class CONVERTER(object):
               return results
       
           # check XPATH map file
-          mapfile='%s/mapfiles/%s-%s.xml' % (os.getcwd(),community,mdprefix)
+          if mdprefix == 'json' :
+              ext='conf'
+          else:
+              ext='xml'
+          mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,ext)
           if not os.path.isfile(mapfile):
-             mapfile='%s/mapfiles/%s.xml' % (os.getcwd(),mdprefix)
+             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,ext)
              if not os.path.isfile(mapfile):
                 self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
@@ -2579,9 +2583,13 @@ class CONVERTER(object):
         }
         
         # check XPATH map file
-        mapfile='%s/mapfiles/%s-%s.xml' % (os.getcwd(),community,mdprefix)
+        if mdprefix == 'json' :
+            ext='conf'
+        else:
+            ext='xml'
+        mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,ext)
         if not os.path.isfile(mapfile):
-           mapfile='%s/mapfiles/%s.xml' % (os.getcwd(),mdprefix)
+           mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),ext)
            if not os.path.isfile(mapfile):
               self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
               return results
