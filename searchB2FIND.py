@@ -40,15 +40,14 @@ def main():
 
     ckanapi3='http://'+args.ckan+'/api/3'
     ckan = ckanclient.CkanClient(ckanapi3)
-    ckan_limit=10000
+    ckan_limit=100000
     answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit)
-    ### answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":0})
-    tcount=len(answer['results'])##HEW-D ['count']
-    print " => %s answer['results']" % answer['results'][0]
+    tcount=answer['count']
+    ## print " => %s answer['results']" % answer['results'][0]
     print " => %d datasets found" % tcount
     aids=args.ids
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
-    suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI','Group':'groups','Discipline':'Discipline'}
+    suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI','Group':'groups','modified':'metadata_modified','Discipline':'Discipline'}
 
     class Record(IsDescription):
         id      = StringCol(64)      # 64-character String
@@ -56,6 +55,7 @@ def main():
         PID     = StringCol(64)      # 64-character String
         DOI     = StringCol(64)      # 64-character String
         Group   = StringCol(64)      # 64-character String
+        modified = StringCol(64)      # 64-character String
         Discipline     = StringCol(64)      # 64-character String
 
     extension=os.path.splitext(args.output)[1][1:]
@@ -92,9 +92,11 @@ def main():
     while (cstart < tcount) :
        if (cstart > 0):
            ##HEW-T print 'processing %d to %d record ...' % (cstart,cstart+ckan_limit)
-           answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
+           ##answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
+           answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit, start=cstart)
+           ## print ' xxxxxxxxxx %s' % answer['count']
        if len(answer['results']) == 0 :
-           print "ERROR 'results' of %s is empty list" % answer['result']
+           ## print "ERROR 'results' of %s is empty list" % answer['results']
            break
        for ds in answer['results']:
             counter +=1
@@ -105,6 +107,10 @@ def main():
                 if 'groups' in ds:
                   count['Group']+=1
                   record['Group']  = '%s' % (ds['groups'][0]['display_name'])
+            if 'modified' in aids :
+                if "metadata_modified" in ds:
+                  count['modified']+=1
+                  record['modified']  = '%s' % (ds["metadata_modified"])
             if 'Source' in aids :
                 if 'url' in ds:
                   count['Source']+=1
