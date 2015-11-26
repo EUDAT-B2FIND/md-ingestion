@@ -206,35 +206,20 @@ def process(options,pstat,OUT):
             ]])
 
     if (OUT.convert_list or pstat['status']['h'] == 'no'):
-        ## CONVERTING - Mode:  
-        if (pstat['status']['c'] == 'tbd'):
-            CV = B2FIND.CONVERTER(OUT)
-        
-            # start the process converting:
-            if mode is 'multi':
-                process_convert(CV, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
-            else:
-                process_convert(CV,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]])
         ## MAPPINING - Mode:  
         if (pstat['status']['m'] == 'tbd'):
             # start the process mapping:
-            logger.info('\n## Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-            CV = B2FIND.CONVERTER(OUT)
+            logger.debug('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+            MP = B2FIND.MAPPER(OUT)
         
             # start the process mapping:
             if mode is 'multi':
                 logger.info(' - Joblist:  \t%s' % OUT.convert_list )
                 if (options.community != '') : logger.info(' - Community:\t%s' % options.community)
                 if (options.mdsubset != None) : logger.info(' - OAI subset:\t%s' % options.mdsubset)
-                process_map(CV, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
+                process_map(MP, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
-                process_map(CV,[[
+                process_map(MP,[[
                     options.community,
                     options.source,
                     options.mdprefix,
@@ -243,13 +228,13 @@ def process(options,pstat,OUT):
                 ]])
         ## VALIDATOR - Mode:  
         if (pstat['status']['v'] == 'tbd'):
-            CV = B2FIND.CONVERTER(OUT)
+            MP = B2FIND.MAPPER(OUT)
         
             # start the process converting:
             if mode is 'multi':
-                process_validate(CV, parse_list_file('validate', OUT.convert_list or options.list, options.community,options.mdsubset))
+                process_validate(MP, parse_list_file('validate', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
-                process_validate(CV,[[
+                process_validate(MP,[[
                     options.community,
                     options.source,
                     options.mdprefix,
@@ -258,13 +243,13 @@ def process(options,pstat,OUT):
                 ]])
         ## OAI-CONVERTING - Mode:  
         if (pstat['status']['o'] == 'tbd'):
-            CV = B2FIND.CONVERTER(OUT)
+            MP = B2FIND.MAPPER(OUT)
         
             # start the process converting:
             if mode is 'multi':
-                process_oaiconvert(CV, parse_list_file('oaiconvert', OUT.convert_list or options.list, options.community,options.mdsubset))
+                process_oaiconvert(MP, parse_list_file('oaiconvert', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
-                process_oaiconvert(CV,[[
+                process_oaiconvert(MP,[[
                     options.community,
                     options.source,
                     options.mdprefix,
@@ -332,38 +317,13 @@ def process_harvest(HV, rlist):
         harvesttime=time.time()-harveststart
         #results['time'] = harvesttime
 
-def process_convert(CV, rlist):
-    ## process_convert (CONVERTER object, rlist) - function
+def process_map(MP, rlist):
+    ## process_map (MAPPER object, rlist) - function
     # Maps per request.
     #
     # Parameters:
     # -----------
-    # (object)  CONVERTER - object from the class CONVERTER
-    # (list)    rlist - list of requests 
-    #
-    # Return Values:
-    # --------------
-    # None
-    for request in rlist:
-        logger.info('\n## Converting request %s##' % request)
-        
-        cstart = time.time()
-        
-        results = CV.convert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
-
-        ctime=time.time()-cstart
-        results['time'] = ctime
-        
-        # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'c',results)
-    
-def process_map(CV, rlist):
-    ## process_map (CONVERTER object, rlist) - function
-    # Maps per request.
-    #
-    # Parameters:
-    # -----------
-    # (object)  CONVERTER - object from the class CONVERTER
+    # (object)  MAPPER - object from the class MAPPER
     # (list)    rlist - list of requests 
     #
     # Return Values:
@@ -376,21 +336,21 @@ def process_map(CV, rlist):
         
         cstart = time.time()
         
-        results = CV.map(ir,request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.map(ir,request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'m',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'m',results)
         
-def process_validate(CV, rlist):
-    ## process_validate (CONVERTER object, rlist) - function
+def process_validate(MP, rlist):
+    ## process_validate (MAPPER object, rlist) - function
     # Validates per request.
     #
     # Parameters:
     # -----------
-    # (object)  VALIDATOR - object from the class CONVERTER
+    # (object)  VALIDATOR - object from the class MAPPER
     # (list)    rlist - list of request lists 
     #
     # Return Values:
@@ -401,29 +361,29 @@ def process_validate(CV, rlist):
         
         cstart = time.time()
         
-        results = CV.validate(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.validate(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
         
-def process_oaiconvert(CV, rlist):
+def process_oaiconvert(MP, rlist):
 
     for request in rlist:
         logger.info('\n## OAI-Mapping request %s##' % request)
         
         rcstart = time.time()
         
-        results = CV.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
 
         print results
         rctime=time.time()-rcstart
         results['time'] = rctime
         
         # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
 
 
 def process_upload(UP, rlist, options):
