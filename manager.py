@@ -132,7 +132,7 @@ def main():
     OUT.HTML_print_begin()
     
     ## START PROCESSING:
-    logger.info("\nStart :\t\t%s" % now)
+    logger.info("Start :\t\t%s" % now)
     OUT.save_stats('#Start','subset','StartTime',0)
     
     try:
@@ -330,9 +330,10 @@ def process_map(MP, rlist):
     # --------------
     # None
     ir=0
+    logger.info('\n |# %-4s : %-30s \n\t|- %-10s |@ %-10s |' % ('RNo.','Request description','Status','Time'))
     for request in rlist:
         ir+=1
-        logger.info('\n |- %s : M-Request >%d< started :\n\t\t %s' % (time.strftime("%H:%M:%S"),ir,request))
+        logger.info('\n |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
         
