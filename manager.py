@@ -582,9 +582,10 @@ def process_upload(UP, rlist, options):
             if (options.epic_check and upload == 1):
 ##HEW-T (create EPIC handle as well if upload/date failed !!! :
 ##HEW-T            if (options.epic_check): ##HEW and upload == 1):
+                ckands='http://b2find.eudat.eu/dataset/'+ds_id
                 if (epicstatus == "new"):
                     logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
-                    ckands='http://b2find.eudat.eu/dataset/'+ds_id
+                    ##HEW-T ckands='http://b2find.eudat.eu/dataset/'+ds_id
                     npid=ec.createHandle(pid,ckands,checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
                     ec.modifyHandle(pid,'COMMUNITY',community)
@@ -593,6 +594,7 @@ def process_upload(UP, rlist, options):
                     logger.info("        |-> No action required for %s" % pid)
                 else:
                     logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
+                    ##HEW-T !!! as long as URLs not all apdated !!
                     ec.modifyHandle(pid,'URL',ckands)
                     ec.modifyHandle(pid,'CHECKSUM',checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
