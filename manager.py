@@ -593,6 +593,7 @@ def process_upload(UP, rlist, options):
                     logger.info("        |-> No action required for %s" % pid)
                 else:
                     logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
+                    ec.modifyHandle(pid,'URL',ckands)
                     ec.modifyHandle(pid,'CHECKSUM',checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
                     ec.modifyHandle(pid,'COMMUNITY',community)

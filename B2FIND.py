@@ -993,7 +993,6 @@ class MAPPER(object):
           if type(invalue) is list:
               invalue=invalue[0]
           if type(invalue) is dict :
-            invt=invalue['@type']
             if '@type' in invalue :
               if invalue['@type'] == 'single':
                  if "date" in invalue :       
@@ -1012,9 +1011,8 @@ class MAPPER(object):
                   if 'start' in invalue and 'end' in invalue :
                       desc+=' %s : ( %s - %s )' % (invalue['@type'],invalue["start"],invalue["end"])
                       return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
-                      desc+=' %s : %s' % (invalue["type"],invalue["period"])
                   else:
-                      desc+='%s' % invalue["type"]
+                      desc+='%s' % invalue["@type"]
                       return (desc,None,None)
               elif 'start' in invalue and 'end' in invalue :
                   desc+=' %s : ( %s - %s )' % ('range',invalue["start"],invalue["end"])
@@ -1914,16 +1912,16 @@ class MAPPER(object):
                             elif extra['key'] == 'Publisher':
                               extra['value'] = self.cut(extra['value'],'=',2)
                             elif extra['key'] == 'SpatialCoverage':
-                               desc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
+                               spdesc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
                                if wlon and slat and elon and nlat :
                                  spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
                                  ##extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
-                               if desc :
-                                 extra['value']=desc
+                               if spdesc :
+                                 extra['value']=spdesc
                             elif extra['key'] == 'TemporalCoverage':
-                               desc,stime,etime=self.map_temporal(extra['value'])
-                               if desc:
-                                   extra['value']=desc
+                               tempdesc,stime,etime=self.map_temporal(extra['value'])
+                               if tempdesc:
+                                   extra['value']=tempdesc
                             elif extra['key'] == 'Language': # generic mapping of languages
                                extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
@@ -1951,7 +1949,6 @@ class MAPPER(object):
                     jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
                     jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
                     jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
-
                 if publdate :
                     jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate })
 
