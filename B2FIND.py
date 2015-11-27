@@ -999,7 +999,7 @@ class MAPPER(object):
                    desc+=' %s : %s' % (invalue["@type"],invalue["date"])
                    return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
                  else :
-                   desc+='%s' % invalue["type"]
+                   desc+='%s' % invalue["@type"]
                    return (desc,None,None)
               elif invalue['@type'] == 'verbatim':
                   if 'period' in invalue :
