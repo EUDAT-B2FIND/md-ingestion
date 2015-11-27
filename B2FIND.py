@@ -997,7 +997,7 @@ class MAPPER(object):
             if '@type' in invalue :
               if invalue['@type'] == 'single':
                  if "date" in invalue :       
-                   desc+=' %s : %s' % (invalue["type"],invalue["date"])
+                   desc+=' %s : %s' % (invalue["@type"],invalue["date"])
                    return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
                  else :
                    desc+='%s' % invalue["type"]
@@ -1904,12 +1904,12 @@ class MAPPER(object):
                    elif facet == 'extras': # Semantic mapping of extra CKAN fields
                       try:
                          for extra in jsondata[facet]:
-                            ## print 'facet %s ...' % extra['key']
+                            ### print 'facet >%s< ...' % extra['key']
                             if type(extra['value']) is list:
                               extra['value']=self.uniq(extra['value'])
                               if len(extra['value']) == 1:
                                  extra['value']=extra['value'][0] 
-                            elif extra['key'] == 'Discipline': # generic mapping of discipline
+                            if extra['key'] == 'Discipline': # generic mapping of discipline
                               extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'Publisher':
                               extra['value'] = self.cut(extra['value'],'=',2)
@@ -1923,13 +1923,13 @@ class MAPPER(object):
                             elif extra['key'] == 'TemporalCoverage':
                                desc,stime,etime=self.map_temporal(extra['value'])
                                if desc:
-                                  extra['value']=desc
+                                   extra['value']=desc
                             elif extra['key'] == 'Language': # generic mapping of languages
                                extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
                                publdate=self.date2UTC(extra['value'])
                                extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
-                            if type(extra['value']) is not str and type(extra['value']) is not unicode :
+                            elif type(extra['value']) is not str and type(extra['value']) is not unicode :
                                self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
                       except Exception as e: 
                           self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
