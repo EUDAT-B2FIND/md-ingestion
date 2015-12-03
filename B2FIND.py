@@ -1105,8 +1105,11 @@ class MAPPER(object):
         
         retval=list()
         if type(invalue) is not list :
-            invalue=re.split(r'[;\s]\s*',invalue)
-        for indisc in invalue :
+            inlist=re.split(r'[;\s]\s*',invalue)
+            inlist.append(invalue)
+        else:
+            inlist=invalue
+        for indisc in inlist :
            ##indisc=indisc.encode('ascii','ignore').capitalize()
            indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip()
            maxr=0.0
@@ -1896,7 +1899,7 @@ class MAPPER(object):
                    elif facet == 'tags':
                          jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    elif facet == 'url':
-                         iddict = self.map_identifiers(jsondata[facet])
+                       iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'DOI':
                          iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'extras': # Semantic mapping of extra CKAN fields
@@ -1953,10 +1956,11 @@ class MAPPER(object):
                     jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate })
 
                 ## write to JSON file
-                ###HEW???jsonfilename=os.path.splitext(filename)[0]+'.json'
+                ###HEW???
+                jsonfilename=os.path.splitext(filename)[0]+'.json'
                 ###HEW???with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
                 ##with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
-                with io.open(path+'/json/'+filename, 'w') as json_file:
+                with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
                     try:
                         log.debug('   | [INFO] decode json data')
                         data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
@@ -2127,7 +2131,10 @@ class MAPPER(object):
         results['tcount'] = len(files)
         oaiset=path.split(mdprefix)[1].strip('/')
         
-        self.logger.info(' %s     INFO  Validation of files in %s/json' % (time.strftime("%H:%M:%S"),path))
+        self.logger.info(' %s     INFO  Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
+        if results['tcount'] == 0 :
+            self.logger.error(' ERROR : Found no files to validate !')
+            return results
         self.logger.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
         totstats=dict()

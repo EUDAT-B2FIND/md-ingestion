@@ -18,7 +18,7 @@ import argparse
 import simplejson as json
 import urllib, urllib2
 import ckanclient
-from tables import *
+##from tables import *
 
 def main():
     args = get_args()
@@ -49,29 +49,29 @@ def main():
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
     suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI','Group':'groups','modified':'metadata_modified','Discipline':'Discipline'}
 
-    class Record(IsDescription):
-        id      = StringCol(64)      # 64-character String
-        Source  = StringCol(64)      # 64-character String
-        PID     = StringCol(64)      # 64-character String
-        DOI     = StringCol(64)      # 64-character String
-        Group   = StringCol(64)      # 64-character String
-        modified = StringCol(64)      # 64-character String
-        Discipline     = StringCol(64)      # 64-character String
+  ##  class Record(IsDescription):
+  ##      id      = StringCol(64)      # 64-character String
+  ##      Source  = StringCol(64)      # 64-character String
+  ##      PID     = StringCol(64)      # 64-character String
+  ##      DOI     = StringCol(64)      # 64-character String
+  ##      Group   = StringCol(64)      # 64-character String
+  ##      modified = StringCol(64)      # 64-character String
+  ##      Discipline     = StringCol(64)      # 64-character String
 
     extension=os.path.splitext(args.output)[1][1:]
-    if extension == 'hd5': 
-      h5file = open_file(args.output, mode = "w", title = "Search results")
-      print "Results written to %s" % args.output
-      group = h5file.create_group("/", 'identifiers', 'Identification information')
-      table = h5file.create_table(group, 'readout', Record, "Readout example")
-      record = table.row
-    elif extension == 'txt':
-      print " => %s : %s written to %s" % ('id',aids,args.output)
-      fh = open(args.output, "w")
-      record={} 
-    else:
-      print 'Output type %s is not supported' % extension
-      exit()
+    ##if extension == 'hd5': 
+    ##  h5file = open_file(args.output, mode = "w", title = "Search results")
+    ##  print "Results written to %s" % args.output
+    ##  group = h5file.create_group("/", 'identifiers', 'Identification information')
+    ##  table = h5file.create_table(group, 'readout', Record, "Readout example")
+    ##  record = table.row
+    ##elif extension == 'txt':
+    print " => %s : %s written to %s" % ('id',aids,args.output)
+    fh = open(args.output, "w")
+    record={} 
+    ## else:
+    ##  print 'Output type %s is not supported' % extension
+    ##  exit()
             
   
     totlist=[]
@@ -136,24 +136,24 @@ def main():
                     count['Discipline']+=1
                 else:
                     record['Discipline']  = '%s' % 'N/A'
-            if extension == 'hd5':
-                record.append()
-            elif extension == 'txt':
-                outline=record['id']
-                for aid in aids:
-                    if aid != 'id':
-                        outline+='\t'+record[aid]
-                fh.write(outline+'\n')
+            ##if extension == 'hd5':
+            ##    record.append()
+            ##elif extension == 'txt':
+            outline=record['id']
+            for aid in aids:
+                if aid != 'id':
+                    outline+='\t'+record[aid]
+            fh.write(outline+'\n')
        cstart+=len(answer['results']) 
 
     print "Found\n\t%d\trecords\n\t%d\tPIDs\n\t%d\tDOIs" % (counter, countpid, countdoi)
     for outt in aids:
         print "\n\t%d\t%s's" % (count[outt],outt)
-    if extension == 'hd5':
-      table.flush()
-      h5file.close()
-    elif extension == 'txt':
-      fh.close()
+    ##if extension == 'hd5':
+    ##  table.flush()
+    ##  h5file.close()
+    ##elif extension == 'txt':
+    fh.close()
 
 def action(host, data={}):
     ## action (action, jsondata) - method
