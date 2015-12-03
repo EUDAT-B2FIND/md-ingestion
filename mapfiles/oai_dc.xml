@@ -45,7 +45,7 @@
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="Format">
-      <xpath>//dc:format[not(contains(text(), 'Bytes'))]</xpath>
+      <xpath>//dc:format/text()</xpath>
     </field>
     <field name="GeograhicDescription">
       <xpath>//dc:coverage/text()</xpath>
