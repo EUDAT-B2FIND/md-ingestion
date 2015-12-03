@@ -2108,7 +2108,7 @@ class MAPPER(object):
             mapext='xml'
         mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
         if not os.path.isfile(mapfile):
-           mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mapext)
+           mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
            if not os.path.isfile(mapfile):
               self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
               return results
@@ -2198,6 +2198,7 @@ class MAPPER(object):
         printstats+="      | Value statistics:\n      |- {:<5} : {:<30} |\n".format('#Occ','Value')
         printstats+=" ----------------------------------------------------------\n"
         for field in self.b2findfields : ## totstats:
+          if float(fcount) > 0 :
             printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['xpath'],totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
             counter=collections.Counter(totstats[field]['vstat'])
             if totstats[field]['vstat']:
