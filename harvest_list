@@ -88,7 +88,7 @@ cessda http://nesstar.ucd.ie/oai-pmh ListIdentifiers  oai_ddi ucd_
 #h=564 == #DASISH = 546
 cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi lida_
 #h=6286 ?= #DASISH = 6286
-cessda http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers ddi ukdata_
+cessda http://oai.ukdataservice.ac.uk/oai/provider ListRecords ddi ukdata_
 #h=117 ?= #DASISH = 115
 cessda http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi swedish-lang-bank_
 #h=6257 ?= #DASISH = 6225
