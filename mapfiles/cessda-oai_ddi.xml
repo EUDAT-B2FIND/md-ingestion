@@ -8,7 +8,7 @@
   <mappings>
    <!-- General fields shown above the field/value tables -->
     <field name="title">
-      <xpath>//ddi:codeBook/ddi:docDscr/ddi:citation/ddi:titlStmt/ddi:titl/text()</xpath>
+      <xpath>//titl/text()</xpath>
     </field>
     <field name="notes">
       <xpath>//abstract/text()</xpath>

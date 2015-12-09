@@ -484,14 +484,33 @@ class HARVESTER(object):
               for f in glob.glob(s+'/xml/*.xml'):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
-            oaireq=getattr(sickle,req["lverb"], None)
-            
+            try:
+                oaireq=getattr(sickle,req["lverb"], None)
+                records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
+                ntotrecs=sum(1 for _ in records)
+                records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
+            except ConnectionError, e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+            except XMLError as e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+            except Exception as e:
+                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
             noffs=0 # set to number of record, where harvesting should start
             stats['tcount']=noffs
-            n=0
-            for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
-                n+=1
-		if n <= noffs : continue
+            fcount=0
+            for record in records:
+            ##HEW??!! for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
+                ## counter and progress bar
+                fcount+=1
+		if fcount <= noffs : continue
+                ##??? perc=int(fcount*100/int(100)) ##HEW-?? len(records) not known
+                perc='Not known'
+                perc=int(fcount*100/ntotrecs)
+                bartags=fcount/100 ## perc/5
+                if fcount%100 == 0 :
+                    self.logger.info("\r\t[%-20s] %d / %s%%\r\r" % ('='*bartags, fcount, perc ))
+                    sys.stdout.flush()
+
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
                        ##HEW-??? deleted_metadata[record.identifier] = 
@@ -540,7 +559,7 @@ class HARVESTER(object):
                         
                         # Need a new subset?
                         if (stats['count'] == count_break):
-                            self.logger.info('    | %d records written to subset directory %s (if not failed).'% (
+                            self.logger.debug('    | %d records written to subset directory %s (if not failed).'% (
                                 stats['count'], subsetdir
                             ))
     
@@ -571,7 +590,7 @@ class HARVESTER(object):
                     # if everything worked delete current file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
-            self.logger.info('    | %d records written to last subset directory %s (if not failed).'% (
+            self.logger.debug('    | %d records written to last subset directory %s (if not failed).'% (
                                 stats['count'], subsetdir
                             ))
 
@@ -656,14 +675,14 @@ class HARVESTER(object):
                 stats['tot'+key] += stats[key]
             
             self.logger.info(
-                '  |- %s : H-Request >%d< finished:\n  | Provided | Harvested | Failed | Deleted | \n  | %8d | %9d | %6d | %7d |' 
-                % ( time.strftime("%H:%M:%S"),nr,
-                    stats['tottcount'],
+                '   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' 
+                % ( 'Finished',time.strftime("%H:%M:%S"),
+                    stats['tcount'],
                     stats['totcount'],
                     stats['totecount'],
                     stats['totdcount']
                 ))
-        
+
             # save the current subset:
             if (stats['count'] > 0):
                 self.save_subset(req, stats, subset, subsetdir, count_set)
@@ -1837,11 +1856,15 @@ class MAPPER(object):
         self.logger.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
         
         ## start processing loop
-        ###if mdprefix == 'json' :
         for filename in files:
-        
+            ## counter and progress bar
             fcount+=1
-            ###HEW??? hjsondata = dict()
+            perc=int(fcount*100/int(len(files)))
+            bartags=perc/5
+            if fcount%100 == 0 :
+               self.logger.info("\r\t[%-20s] %d / %d%%\r\r" % ('='*bartags, fcount, perc ))
+               sys.stdout.flush()
+
             jsondata = dict()
 
             infilepath=path+insubdir+'/'+filename      
@@ -1998,9 +2021,8 @@ class MAPPER(object):
           # loop over all .xml files in path/xml (harvested xml records):
           ##############for filename in files:
 
-
         self.logger.info(
-                '   \n\t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' 
+                '   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,
@@ -2016,7 +2038,6 @@ class MAPPER(object):
         
     
         return results
-
 
     def check_url(self,url):
         ## check_url (UPLOADER object, url) - method
@@ -2112,7 +2133,7 @@ class MAPPER(object):
             mapext='xml'
         mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
         if not os.path.isfile(mapfile):
-           mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mapext)
+           mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
            if not os.path.isfile(mapfile):
               self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
               return results
@@ -2131,7 +2152,7 @@ class MAPPER(object):
         results['tcount'] = len(files)
         oaiset=path.split(mdprefix)[1].strip('/')
         
-        self.logger.info(' %s     INFO  Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
+        self.logger.debug(' %s     INFO  Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
         if results['tcount'] == 0 :
             self.logger.error(' ERROR : Found no files to validate !')
             return results
@@ -2156,7 +2177,13 @@ class MAPPER(object):
                     break
         fcount = 0
         for filename in files:
+            ## counter and progress bar
             fcount+=1
+            perc=int(fcount*100/int(len(files)))
+            bartags=perc/5
+            if fcount%100 == 0 :
+               self.logger.info("\r\t[%-20s] %d / %d%%\r\r" % ('='*bartags, fcount, perc ))
+               sys.stdout.flush()
 
             jsondata = dict()
             self.logger.debug('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
@@ -2194,6 +2221,9 @@ class MAPPER(object):
                                totstats[facet]['valid']+=1  
 
                             totstats[facet]['vstat'].append(value)
+                    else:
+                        if facet == 'title':
+                           log.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
             except IOError, e:
                 self.logger.error("[ERROR] %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
                 exit()
@@ -2214,19 +2244,27 @@ class MAPPER(object):
                     else: 
                         contt=''
                     printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
- 
-        print printstats
+                    if self.OUT.verbose > 1:
+                        print printstats
 
         f = open(outfile, 'w')
         f.write(printstats)
         f.write("\n")
         f.close
 
-        self.logger.info('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+        self.logger.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .json files in path/json
         results['count'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path)))
-    
+
+        self.logger.info(
+                '   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' 
+                % ( 'Finished',time.strftime("%H:%M:%S"),
+                    results['tcount'],
+                    fcount,
+                    results['ecount']
+                ))
+
         return results
 
     def json2xml(self,json_obj, line_padding="", mdftag=""):
@@ -2393,10 +2431,17 @@ class MAPPER(object):
                 ###stats['ecount'] +=1
                 return(False, outfile , outpath, fcount)
 
-        self.logger.info('%s     INFO  B2FIND : %d records mapped; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+        self.logger.info('%s     INFO  B2FIND : %d records converted; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .xml files in path/b2find
         results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(outpath)))
+        self.logger.info(
+                '   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' 
+                % ( 'Finished',time.strftime("%H:%M:%S"),
+                    results['tcount'],
+                    fcount,
+                    results['ecount']
+                ))
     
         return results    
 
