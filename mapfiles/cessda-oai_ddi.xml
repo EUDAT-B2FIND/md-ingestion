@@ -44,7 +44,7 @@
       <xpath>//producer/text()</xpath>
     </field>
     <field name="Format">
-      <xpath>//varFormat[@type]/text()</xpath> 
+      <xpath>//varFormat/text()</xpath> 
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
