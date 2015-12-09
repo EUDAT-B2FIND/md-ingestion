@@ -36,6 +36,7 @@ import re
 # needed for HARVESTER class:
 import sickle as SickleClass
 from sickle.oaiexceptions import NoRecordsMatch
+from requests.exceptions import ConnectionError
 import uuid, hashlib
 import lxml.etree as etree
 import xml.etree.ElementTree as ET
@@ -489,12 +490,19 @@ class HARVESTER(object):
                 records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
                 ntotrecs=sum(1 for _ in records)
                 records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
-            except ConnectionError, e:
+            except urllib2.HTTPError as e:
                 self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
-            except XMLError as e:
+
+                return -1
+            except ConnectionError as e:
                 self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
-            except Exception as e:
+                return -1
+            except etree.XMLSyntaxError as e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                return -1
+            except Exception, e:
                 self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                return -1
             noffs=0 # set to number of record, where harvesting should start
             stats['tcount']=noffs
             fcount=0
@@ -506,7 +514,7 @@ class HARVESTER(object):
                 ##??? perc=int(fcount*100/int(100)) ##HEW-?? len(records) not known
                 perc='Not known'
                 perc=int(fcount*100/ntotrecs)
-                bartags=fcount/100 ## perc/5
+                bartags=perc/5 #HEW-D fcount/100
                 if fcount%100 == 0 :
                     self.logger.info("\r\t[%-20s] %d / %s%%\r\r" % ('='*bartags, fcount, perc ))
                     sys.stdout.flush()
@@ -610,7 +618,7 @@ class HARVESTER(object):
                  if os.stat(f).st_mtime < now - 1 * 86400: ## at least 1 day old
                      if os.path.isfile(f):
                         if (id in deleted_metadata ):
-                           print 'file %s is already on deleted_metadata' % f
+                            self.logger.debug('file %s is already on deleted_metadata' % f)
                         else:
                            deleted_metadata[id] = f
 
@@ -677,7 +685,7 @@ class HARVESTER(object):
             self.logger.info(
                 '   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
-                    stats['tcount'],
+                    stats['tottcount'],
                     stats['totcount'],
                     stats['totecount'],
                     stats['totdcount']
