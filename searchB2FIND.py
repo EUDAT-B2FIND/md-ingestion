@@ -13,7 +13,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
-import os, sys
+import os, sys, io
 import argparse
 import simplejson as json
 import urllib, urllib2
@@ -58,7 +58,7 @@ def main():
 }
 
     print " => %s %s are written to %s" % ('IDs and',aids,args.output)
-    fh = open(args.output, "w")
+    fh = io.open(args.output, "w", encoding='utf8')
     record={} 
   
     totlist=[]
@@ -189,7 +189,7 @@ def get_args():
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
     p.add_argument('--ids', '-i', help="Identifiers of found records outputed. Default is 'id'. Additionally 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
     p.parse_args('--ids'.split())
-    p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', metavar='PATTERN', nargs='*')
+    p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', default='*:*', metavar='PATTERN', nargs='*')
     
     args = p.parse_args()
     
