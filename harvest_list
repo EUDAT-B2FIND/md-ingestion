@@ -80,15 +80,15 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-
 ## CESSDA endpoint
 # ??ERROR : --> ListIdentifiers ?? 
 #h=115
-cessda http://ddaonline.dda.dk/oai-pmh ListIdentifiers  oai_dc dda_
+cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_dc dda_
 #h=227
-cessda http://nesstar.snd.gu.se/oai-pmh ListIdentifiers  oai_ddi snd_
+cessda http://nesstar.snd.gu.se/oai-pmh ListRecords  oai_ddi snd_
 #h=97
 cessda http://nesstar.ucd.ie/oai-pmh ListIdentifiers  oai_ddi ucd_
 #h=564 == #DASISH = 546
 cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi lida_
 #h=6286 ?= #DASISH = 6286
-cessda http://oai.ukdataservice.ac.uk/oai/provider ListIdentifiers ddi ukdata_
+cessda http://oai.ukdataservice.ac.uk/oai/provider ListRecords ddi ukdata_
 #h=117 ?= #DASISH = 115
 cessda http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi swedish-lang-bank_
 #h=6257 ?= #DASISH = 6225
@@ -113,14 +113,14 @@ b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml NRM
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml GBIF
 b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
 ##%%% EUDAT B2SHARE (DublinCore!!!)
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Linguistics
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc EUON
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Eudat
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc BBMRI
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc NRM
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc GBIF
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc RDA
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Linguistics
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc EUON
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Eudat
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc DRIHM
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc BBMRI
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc NRM
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc GBIF
+##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc RDA
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;

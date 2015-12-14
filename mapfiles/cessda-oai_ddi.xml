@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DDI formated profile of CLARIN metadata. -->
+  <!-- Mappings for DDI formated profile of CESSDA metadata. -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="ddi" uri="http://www.icpsr.umich.edu/DDI"/>
@@ -8,18 +8,18 @@
   <mappings>
    <!-- General fields shown above the field/value tables -->
     <field name="title">
-      <xpath>//ddi:codeBook/ddi:docDscr/ddi:citation/ddi:titlStmt/ddi:titl/text()</xpath>
-      <xpath>//biblCit/titl/text()</xpath>
+      <xpath>//titl/text()</xpath>
     </field>
     <field name="notes">
       <xpath>//abstract/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>//subject/keyword/text()</xpath>
+      <xpath>//subject/keyword/text()</xpath> 
+      <xpath>//labl/text()</xpath>
     </field>
     <!-- Central facets, shown in an extra table 'Main fields' (not implemented yet : all fields in table 'Additional info') -->
     <field name="url">
-      <xpath>//r:header/r:identifier/text()</xpath>
+      <xpath>//ddi:holdings/text(),//r:header/r:identifier/text()</xpath>
     </field> 
     <field name="Discipline">
       <xpath>//subject/keyword/text()</xpath>
@@ -44,7 +44,7 @@
       <xpath>//producer/text()</xpath>
     </field>
     <field name="Format">
-      <xpath>//varFormat[@type]/text()</xpath> 
+      <xpath>//varFormat/text()</xpath> 
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">

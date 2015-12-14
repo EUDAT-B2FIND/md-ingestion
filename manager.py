@@ -36,7 +36,6 @@ import copy
 
 import logging as log
 import traceback
-
 import hashlib
 import codecs
 
@@ -108,7 +107,7 @@ def main():
             
     # check options:
     if (not(options.epic_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
-        print "\n[WARNING] You want to upload datasets to the productive host %s without EPIC handling!" % (options.iphost)
+        logger.debug("\n[WARNING] You are going to upload datasets to the host %s with generating EPIC handles!" % (options.iphost))
         answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
@@ -118,7 +117,7 @@ def main():
             
         print '\n'
     elif (options.epic_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
-        print "\n[WARNING] You want to upload datasets to the non-productive host %s with EPIC handling!" % (options.iphost)
+        logger.debug("\n[WARNING] You are going to upload datasets to the host %s with generating EPIC handles!" % (options.iphost))
         answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
@@ -132,7 +131,13 @@ def main():
     OUT.HTML_print_begin()
     
     ## START PROCESSING:
-    logger.info("Start :\t\t%s" % now)
+    logger.info("Start loop over processes and related requests in the job list:\t\t%s" % now)
+    logger.info('|- <Process> started : %s' % "<Time>")
+    logger.info(' |- Joblist: %s' % "<Filename of request list>")
+    logger.info('   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<No or Request>','<Request description>','<Status>','<Time>'))
+
+
+
     OUT.save_stats('#Start','subset','StartTime',0)
     
     try:
@@ -188,13 +193,13 @@ def process(options,pstat,OUT):
     ## HARVESTING mode:    
     if (pstat['status']['h'] == 'tbd'):
         # start the process harvesting:
-        logger.info('\n## Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
         
         if mode is 'multi':
-            logger.info(' - Joblist:  \t%s' % options.list)
-            if (options.community != '') : logger.info(' - Community:\t%s' % options.community)
-            if (options.mdsubset != None) : logger.info(' - OAI subset:\t%s' % options.mdsubset)
+            logger.info(' |- Joblist:  \t%s' % options.list)
+            if (options.community != '') : logger.debug(' |- Community:\t%s' % options.community)
+            if (options.mdsubset != None) : logger.debug(' |- OAI subset:\t%s' % options.mdsubset)
             process_harvest(HV,parse_list_file('harvest',options.list, options.community,options.mdsubset))
         else:
             process_harvest(HV,[[
@@ -209,14 +214,14 @@ def process(options,pstat,OUT):
         ## MAPPINING - Mode:  
         if (pstat['status']['m'] == 'tbd'):
             # start the process mapping:
-            logger.debug('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+            logger.info('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
             MP = B2FIND.MAPPER(OUT)
         
             # start the process mapping:
             if mode is 'multi':
-                logger.info(' - Joblist:  \t%s' % OUT.convert_list )
-                if (options.community != '') : logger.info(' - Community:\t%s' % options.community)
-                if (options.mdsubset != None) : logger.info(' - OAI subset:\t%s' % options.mdsubset)
+                logger.info(' |- Joblist:  \t%s' % OUT.convert_list )
+                if (options.community != '') : logger.debug(' |- Community:\t%s' % options.community)
+                if (options.mdsubset != None) : logger.debug(' - OAI subset:\t%s' % options.mdsubset)
                 process_map(MP, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
                 process_map(MP,[[
@@ -229,6 +234,7 @@ def process(options,pstat,OUT):
         ## VALIDATOR - Mode:  
         if (pstat['status']['v'] == 'tbd'):
             MP = B2FIND.MAPPER(OUT)
+            logger.info('\n|- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         
             # start the process converting:
             if mode is 'multi':
@@ -244,7 +250,8 @@ def process(options,pstat,OUT):
         ## OAI-CONVERTING - Mode:  
         if (pstat['status']['o'] == 'tbd'):
             MP = B2FIND.MAPPER(OUT)
-        
+            logger.info('\n|- Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+
             # start the process converting:
             if mode is 'multi':
                 process_oaiconvert(MP, parse_list_file('oaiconvert', OUT.convert_list or options.list, options.community,options.mdsubset))
@@ -263,9 +270,12 @@ def process(options,pstat,OUT):
             # create CKAN object                       
             CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
             UP = B2FIND.UPLOADER(CKAN, OUT)
+            logger.info('\n|- Uploading started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+            logger.info(' |- Host:  \t%s' % CKAN.ip_host )
 
             # start the process uploading:
             if mode is 'multi':
+                logger.info(' |- Joblist:  \t%s' % OUT.convert_list )
                 process_upload(UP, parse_list_file('upload', OUT.convert_list or options.list, options.community, options.mdsubset), options)
             else:
                 process_upload(UP,[[
@@ -281,6 +291,8 @@ def process(options,pstat,OUT):
     ## DELETING - Mode:
     if (pstat['status']['d'] == 'tbd'):
         # start the process deleting:
+        logger.info('\n|- Deleting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+
         if mode is 'multi':
             dir = options.outdir+'/delete'
             if os.path.exists(dir):
@@ -307,8 +319,7 @@ def process_harvest(HV, rlist):
     for request in rlist:
         ir+=1
         harveststart = time.time()
-        logger.info('\n |- %s : H-Request >%d< started :\n\t %s' % (time.strftime("%H:%M:%S"),ir,request))
-        
+        logger.info('   |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S")))
         results = HV.harvest(ir,request)
     
         if (results == -1):
@@ -330,10 +341,10 @@ def process_map(MP, rlist):
     # --------------
     # None
     ir=0
-    logger.info('\n |# %-4s : %-30s \n\t|- %-10s |@ %-10s |' % ('RNo.','Request description','Status','Time'))
     for request in rlist:
         ir+=1
-        logger.info('\n |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S")))
+        mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[3])
+        logger.info('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],mapfile,'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
         
@@ -344,7 +355,7 @@ def process_map(MP, rlist):
         
         # save stats:
         MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'m',results)
-        
+
 def process_validate(MP, rlist):
     ## process_validate (MAPPER object, rlist) - function
     # Validates per request.
@@ -357,9 +368,11 @@ def process_validate(MP, rlist):
     # Return Values:
     # --------------
     # None
+    ir=0
     for request in rlist:
-        logger.info('\n## Validating request %s##' % request)
-        
+        ir+=1
+        outfile='%s/%s/%s' % (request[2],request[4],'validation.stat')
+        logger.info('   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S")))
         cstart = time.time()
         
         results = MP.validate(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
@@ -373,8 +386,7 @@ def process_validate(MP, rlist):
 def process_oaiconvert(MP, rlist):
 
     for request in rlist:
-        logger.info('\n## OAI-Mapping request %s##' % request)
-        
+        logger.info('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         rcstart = time.time()
         
         results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
@@ -407,9 +419,10 @@ def process_upload(UP, rlist, options):
     last_community = ''
     package_list = dict()
 
+    ir=0
     for request in rlist:
-        logger.info('\n## Uploading request %s##' % request)
-        
+        ir+=1
+        logger.info('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         community, source, dir = request[0:3]
         mdprefix = request[3]
         subset = request[4]
@@ -434,7 +447,7 @@ def process_upload(UP, rlist, options):
             
             continue
         
-        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
+        logger.debug('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
         
         if (last_community != community and options.ckan_check == 'True'):
             last_community = community
@@ -448,11 +461,16 @@ def process_upload(UP, rlist, options):
         results['tcount'] = len(files)
         
         scount = 0
-        fcount = 1
+        fcount = 0
         for filename in files:
-            if (fcount<scount):
-              fcount += 1
-              continue
+            ## counter and progress bar
+            fcount+=1
+            if (fcount<scount): continue
+            perc=int(fcount*100/int(len(files)))
+            bartags=perc/5
+            if fcount%100 == 0 :
+               logger.info("\r\t[%-20s] %d / %d%%" % ('='*bartags, fcount, perc ))
+               sys.stdout.flush()
 
             jsondata = dict()
         
@@ -471,7 +489,7 @@ def process_upload(UP, rlist, options):
             # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
-            logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
+            logger.debug('    | u | %-4d | %-40s |' % (fcount,ds_id))
             
             # get OAI identifier from json data extra field 'oai_identifier':
             oai_id  = None
@@ -565,34 +583,37 @@ def process_upload(UP, rlist, options):
 
             upload = 0
             # depending on status from epic handle upload record to B2FIND 
-            logger.info('        |-> Dataset is [%s]' % (dsstatus))
+            logger.debug('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
-                logger.info('        |-> %s' % ('No upload required'))
+                logger.debug('        |-> %s' % ('No upload required'))
             else:
                 upload = UP.upload(ds_id,dsstatus,community,jsondata)
                 if (upload == 1):
-                    logger.info('        |-> Creation of %s record succeed' % dsstatus )
+                    logger.debug('        |-> Creation of %s record succeed' % dsstatus )
                 elif (upload == 2):
-                    logger.info('        |-> Update of %s record succeed' % dsstatus )
+                    logger.debug('        |-> Update of %s record succeed' % dsstatus )
                     upload=1
                 else:
-                    logger.info('        |-> Upload of %s record failed ' % dsstatus )
+                    logger.error('        |-> Upload of %s record failed ' % dsstatus )
             
             # update handle in EPIC server                                                                                  
             if (options.epic_check and upload == 1):
 ##HEW-T (create EPIC handle as well if upload/date failed !!! :
 ##HEW-T            if (options.epic_check): ##HEW and upload == 1):
+                ckands='http://b2find.eudat.eu/dataset/'+ds_id
                 if (epicstatus == "new"):
-                    logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
-                    ckands='http://b2find.eudat.eu/dataset/'+ds_id
+                    logger.debug("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                    ##HEW-T ckands='http://b2find.eudat.eu/dataset/'+ds_id
                     npid=ec.createHandle(pid,ckands,checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
                     ec.modifyHandle(pid,'COMMUNITY',community)
                     ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
                 elif (epicstatus == "unchanged"):
-                    logger.info("        |-> No action required for %s" % pid)
+                    logger.debug("        |-> No action required for %s" % pid)
                 else:
-                    logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
+                    logger.debug("        |-> Update checksum of pid %s to %s" % (pid,checksum))
+                    ##HEW-T !!! as long as URLs not all apdated !!
+                    ec.modifyHandle(pid,'URL',ckands)
                     ec.modifyHandle(pid,'CHECKSUM',checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
                     ec.modifyHandle(pid,'COMMUNITY',community)
@@ -604,6 +625,13 @@ def process_upload(UP, rlist, options):
             
         uploadtime=time.time()-uploadstart
         results['time'] = uploadtime
+        logger.info(
+                '   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | Failed |\n\t| %8d | %6d | %6d |' 
+                % ( 'Finished',time.strftime("%H:%M:%S"),
+                    results['tcount'],
+                    fcount,
+                    results['ecount']
+                ))
         
         # save stats:
         UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
