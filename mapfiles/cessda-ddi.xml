@@ -2,25 +2,13 @@
 <mapping-table>
   <!-- Mappings for DDI metadata version 1.2.2.?? of CESSDA to B2FIND -->
   <namespaces>
-  <!-- ??? works not with DDI namespace ???
-    <namespace ns="d" uri="http://www.icpsr.umich.edu/DDI"/>
-   -->
-   <!--
-    <field name="MetadataSchema">
-        <string>http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd</string>
-    </field>
--->
-    <namespace ns="ddi" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="d" uri="http://www.openarchives.org/OAI/2.0/"/>
   </namespaces>
   <mappings>
    <!-- General information -->
-   <!-- fxield name="txitle">
-      <xpath>//d:metadata/d:codeBook/d:stdyDscr/d:citation/d:titlStmt/d:titl/text()</xpath>
-      <xpath>//d:metadata/d:codeBook/d:docDscr/d:citation/d:titlStmt/d:titl/text()</xpath>
-   </field-->
    <field name="title">
-      <xpath>//titl/text()</xpath>
+      <xpath>//titl/</xpath>
    </field>
    <field name="notes">
        <xpath>//d:codeBook/d:stdyDscr/d:stdyInfo/d:abstract/text()</xpath>

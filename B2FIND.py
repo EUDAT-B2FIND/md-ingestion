@@ -40,7 +40,7 @@ from requests.exceptions import ConnectionError
 import uuid, hashlib
 import lxml.etree as etree
 import xml.etree.ElementTree as ET
-
+from itertools import tee 
 # needed for CKAN_CLIENT
 import urllib, urllib2, socket
 import httplib
@@ -184,7 +184,7 @@ class CKAN_CLIENT(object):
             if (self.api_key): request.add_header('Authorization', self.api_key)
             response = urllib2.urlopen(request,data_string)
         except urllib2.HTTPError as e:
-            self.logger.error('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
+            self.logger.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
                 self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
@@ -377,6 +377,7 @@ class HARVESTER(object):
         # then create a new one with the name <set> + '_' + <count_set>
         count_break = 5000
         count_set = 1
+        start=time.time()
        
         # set subset:
         if (not req["mdsubset"]):
@@ -487,9 +488,9 @@ class HARVESTER(object):
                 deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
             try:
                 oaireq=getattr(sickle,req["lverb"], None)
-                records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
-                ntotrecs=sum(1 for _ in records)
-                records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
+                records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
+                ntotrecs=sum(1 for _ in rc)
+                self.logger.info("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))                ## records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
             except urllib2.HTTPError as e:
                 self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
 
@@ -506,17 +507,17 @@ class HARVESTER(object):
             noffs=0 # set to number of record, where harvesting should start
             stats['tcount']=noffs
             fcount=0
+            oldperc=0
             for record in records:
             ##HEW??!! for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
                 ## counter and progress bar
                 fcount+=1
 		if fcount <= noffs : continue
-                ##??? perc=int(fcount*100/int(100)) ##HEW-?? len(records) not known
-                perc='Not known'
                 perc=int(fcount*100/ntotrecs)
                 bartags=perc/5 #HEW-D fcount/100
-                if fcount%100 == 0 :
-                    self.logger.info("\r\t[%-20s] %d / %s%%\r\r" % ('='*bartags, fcount, perc ))
+                if perc%10 == 0 and perc != oldperc :
+                    oldperc=perc
+                    self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                     sys.stdout.flush()
 
                 if req["lverb"] == 'ListIdentifiers' :
@@ -910,42 +911,41 @@ class MAPPER(object):
         Licensed under AGPLv3.
         """
         try:
-          idarr=invalue.split(";")
-          iddict=dict()
-          favurl=idarr[0]
+            idarr=invalue.split(";")
+            iddict=dict()
+            favurl=idarr[0]
   
-          for id in idarr : ## HEW-D idarrn ??!!
-            if id.startswith('http://data.theeuropeanlibrary'):
-               iddict['url']=id
-            elif id.startswith('ivo:'):
-               ##HEW-CHG iddict['IVO']='http://registry.astrogrid.org/astrogrid-registry/main/tree'+id[len('ivo:'):]
-               iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
-               favurl=iddict['IVO']
-            elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
-               iddict['DOI'] = self.concat('http://dx.doi.org/',id)
-               favurl=iddict['DOI']
-            elif 'dx.doi.org/' in id:
-               iddict['DOI'] = id
-               favurl=iddict['DOI']
-            elif 'doi:' in id and 'DOI' not in iddict :
-               iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
-               favurl=iddict['DOI']
-            elif 'hdl.handle.net' in id:
-               iddict['PID'] = id
-               favurl=iddict['PID']
-            elif 'hdl:' in id:
-               iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
-               favurl=iddict['PID']
-            elif 'url' not in iddict: ##!!?? bad performance !!! and self.check_url(id) :
-               iddict['url']=id
+            for id in idarr : ## HEW-D idarrn ??!!
+                if id.startswith('http://data.theeuropeanlibrary'):
+                    iddict['url']=id
+                elif id.startswith('ivo:'):
+                    iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
+                    favurl=iddict['IVO']
+                elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
+                    iddict['DOI'] = self.concat('http://dx.doi.org/',id)
+                    favurl=iddict['DOI']
+                elif 'dx.doi.org/' in id:
+                    iddict['DOI'] = id
+                    favurl=iddict['DOI']
+                elif 'doi:' in id and 'DOI' not in iddict :
+                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
+                    favurl=iddict['DOI']
+                elif 'hdl.handle.net' in id:
+                    iddict['PID'] = id
+                    favurl=iddict['PID']
+                elif 'hdl:' in id:
+                    iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
+                    favurl=iddict['PID']
+                ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
+                    ##     iddict['url']=id
 
-          if not 'url' in iddict :
-               iddict['url']=favurl
+            if not 'url' in iddict :
+                iddict['url']=favurl
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue.split(';')[0]))
-           return None
+            self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue.split(';')[0]))
+            return None
         else:
-           return iddict
+            return iddict
 
     def map_lang(self, invalue):
         """
@@ -1860,7 +1860,9 @@ class MAPPER(object):
         files = filter(lambda x: x.endswith(infformat), os.listdir(path+insubdir))
         results['tcount'] = len(files)
         fcount = 0
+        oldperc=0
         err = None
+        start = time.time()
         self.logger.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
         
         ## start processing loop
@@ -1869,9 +1871,12 @@ class MAPPER(object):
             fcount+=1
             perc=int(fcount*100/int(len(files)))
             bartags=perc/5
-            if fcount%100 == 0 :
-               self.logger.info("\r\t[%-20s] %d / %d%%\r\r" % ('='*bartags, fcount, perc ))
-               sys.stdout.flush()
+                ##??? perc=int(fcount*100/int(100)) ##HEW-?? len(records) not known
+
+            if perc%10 == 0 and perc != oldperc:
+                oldperc=perc
+                self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                sys.stdout.flush()
 
             jsondata = dict()
 
@@ -1932,7 +1937,7 @@ class MAPPER(object):
                    elif facet == 'url':
                        iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'DOI':
-                         iddict = self.map_identifiers(jsondata[facet])
+                       iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'extras': # Semantic mapping of extra CKAN fields
                       try:
                          for extra in jsondata[facet]:
@@ -2184,14 +2189,16 @@ class MAPPER(object):
                     totstats[facet]['xpath']=re.sub(r"(.*?)\$\.(.*?) VALUE", r"\2", line)
                     break
         fcount = 0
+        oldperc = 0
         for filename in files:
             ## counter and progress bar
             fcount+=1
             perc=int(fcount*100/int(len(files)))
-            bartags=perc/5
-            if fcount%100 == 0 :
-               self.logger.info("\r\t[%-20s] %d / %d%%\r\r" % ('='*bartags, fcount, perc ))
-               sys.stdout.flush()
+            bartags=perc/10
+            if perc%10 == 0 and perc != oldperc :
+                oldperc=perc
+                self.logger.info("\r\t[%-20s] %d / %d%%" % ('='*bartags, fcount, perc ))
+                sys.stdout.flush()
 
             jsondata = dict()
             self.logger.debug('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
@@ -2622,10 +2629,12 @@ class UPLOADER (object):
             ##"oai_identifier":0
         }
         
-        ## check main fields ...
-        if (not('title' in jsondata) or jsondata['title'] == ''):
-            errmsg = "'title': The title is missing"
-            status = 0  # set status
+        ## check mandatory fields ...
+        mandFields=['title','url']
+        for field in mandFields :
+            if (not(field in jsondata) or jsondata[field] == ''):
+                errmsg = "The mandatory field '%s' is missing" % field
+                status = 0  # set status
         ##HEW-D elif ('url' in jsondata and not self.check_url(jsondata['url'])):
         ##HEW-D     errmsg = "'url': The source url is broken"
         ##HEW-D     if(status > 1): status = 1  # set status
@@ -2648,7 +2657,7 @@ class UPLOADER (object):
                 encoded = extra['value'].encode(encoding)[:32000]
                 extra['value']=encoded.decode(encoding, 'ignore')
                 ##HEW!!! print "cut off : 'fulltext': now ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))
-                status = 2  # set status
+                ##status = 2  # set status
 
             elif(extra['key'] == 'PublicationYear'):            
                 try:
@@ -2991,6 +3000,7 @@ class OUTPUT (object):
         self.log_level = {
             'log':log.INFO,
             'err':log.ERROR,
+            'err':log.DEBUG,
             'std':log.INFO,
         }
         
@@ -3547,7 +3557,7 @@ class OUTPUT (object):
         # None
         
         if (fromdate == None):
-           self.convert_list = './convert_list_total'
+           self.convert_list = 'convert_list_total'
         ##HEW-D else:
         ##HEW-D    self.convert_list = './convert_list_' + fromdate
         new_entry = '%s\t%s\t%s\t%s\t%s\n' % (community,source,os.path.dirname(dir),mdprefix,os.path.basename(dir))

@@ -13,12 +13,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
-import os, sys
+import os, sys, io
 import argparse
 import simplejson as json
 import urllib, urllib2
 import ckanclient
-##from tables import *
 
 def main():
     args = get_args()
@@ -43,36 +42,24 @@ def main():
     ckan_limit=100000
     answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit)
     tcount=answer['count']
-    ## print " => %s answer['results']" % answer['results'][0]
     print " => %d datasets found" % tcount
     aids=args.ids
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
-    suppid={'id':'id','Source':'url','PID':'PID','DOI':'DOI','Group':'groups','modified':'metadata_modified','Discipline':'Discipline'}
+    suppid={
+        'id':'id',
+        'Source':'url',
+        'PID':'PID',
+        'DOI':'DOI',
+        'Group':'groups',
+        'Creator':'author',
+        'modified':'metadata_modified',
+        'Discipline':'Discipline',
+        'Publisher':'Publisher'
+}
 
-  ##  class Record(IsDescription):
-  ##      id      = StringCol(64)      # 64-character String
-  ##      Source  = StringCol(64)      # 64-character String
-  ##      PID     = StringCol(64)      # 64-character String
-  ##      DOI     = StringCol(64)      # 64-character String
-  ##      Group   = StringCol(64)      # 64-character String
-  ##      modified = StringCol(64)      # 64-character String
-  ##      Discipline     = StringCol(64)      # 64-character String
-
-    extension=os.path.splitext(args.output)[1][1:]
-    ##if extension == 'hd5': 
-    ##  h5file = open_file(args.output, mode = "w", title = "Search results")
-    ##  print "Results written to %s" % args.output
-    ##  group = h5file.create_group("/", 'identifiers', 'Identification information')
-    ##  table = h5file.create_table(group, 'readout', Record, "Readout example")
-    ##  record = table.row
-    ##elif extension == 'txt':
-    print " => %s : %s written to %s" % ('id',aids,args.output)
-    fh = open(args.output, "w")
+    print " => %s %s are written to %s" % ('IDs and',aids,args.output)
+    fh = io.open(args.output, "w", encoding='utf8')
     record={} 
-    ## else:
-    ##  print 'Output type %s is not supported' % extension
-    ##  exit()
-            
   
     totlist=[]
     count={}
@@ -84,17 +71,13 @@ def main():
        else:
            count[outt]=0
 
-    countpid=0
-    countdoi=0
     counter=0
     cstart=0
 
     while (cstart < tcount) :
        if (cstart > 0):
            ##HEW-T print 'processing %d to %d record ...' % (cstart,cstart+ckan_limit)
-           ##answer = action(args.ckan, {"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
            answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit, start=cstart)
-           ## print ' xxxxxxxxxx %s' % answer['count']
        if len(answer['results']) == 0 :
            ## print "ERROR 'results' of %s is empty list" % answer['results']
            break
@@ -103,42 +86,20 @@ def main():
             ##HEW-T print'    | %-4d | %-40s |' % (counter,ds['name'])
 
             record['id']  = '%s' % (ds['name'])
-            if 'Group' in aids :
-                if 'groups' in ds:
-                  count['Group']+=1
-                  record['Group']  = '%s' % (ds['groups'][0]['display_name'])
-            if 'modified' in aids :
-                if "metadata_modified" in ds:
-                  count['modified']+=1
-                  record['modified']  = '%s' % (ds["metadata_modified"])
-            if 'Source' in aids :
-                if 'url' in ds:
-                  count['Source']+=1
-                  record['Source'] = '%s' % (ds['url'])
-            if 'PID' in aids :
-                xpid=[e for e in ds['extras'] if e['key'] == 'PID']
-                if xpid:
-                    record['PID']  = '%s' % (xpid[0]['value'])
-                    countpid+=1
-                else:
-                    record['PID']  = '%s' % 'N/A'
-            if 'DOI' in aids :
-                xdoi=[e for e in ds['extras'] if e['key'] == 'DOI']
-                if xdoi:
-                    record['DOI']  = '%s' % (xdoi[0]['value'])
-                    countdoi+=1
-                else:
-                    record['DOI']  = '%s' % 'N/A'
-            if 'Discipline' in aids :
-                xdisc=[e for e in ds['extras'] if e['key'] == 'Discipline']
-                if xdisc:
-                    record['Discipline']  = '%s' % (xdisc[0]['value'])
-                    count['Discipline']+=1
-                else:
-                    record['Discipline']  = '%s' % 'N/A'
-            ##if extension == 'hd5':
-            ##    record.append()
-            ##elif extension == 'txt':
+            for facet in aids:
+                if suppid[facet] in ds: ## CKAN default field
+                    count[facet]+=1
+                    if facet == 'Group':
+                        record[facet]  = '%s' % (ds[suppid[facet]][0]['display_name'])
+                    else:
+                        record[facet]  = '%s' % (ds[suppid[facet]])
+                else: ## CKAN extra field
+                    count[facet]+=1
+                    efacet=[e for e in ds['extras'] if e['key'] == facet]
+                    if efacet:
+                        record[facet]  = '%s' % (efacet[0]['value'])
+                    else:
+                        record[facet]  = '%s' % 'N/A'
             outline=record['id']
             for aid in aids:
                 if aid != 'id':
@@ -146,9 +107,8 @@ def main():
             fh.write(outline+'\n')
        cstart+=len(answer['results']) 
 
-    print "Found\n\t%d\trecords\n\t%d\tPIDs\n\t%d\tDOIs" % (counter, countpid, countdoi)
     for outt in aids:
-        print "\n\t%d\t%s's" % (count[outt],outt)
+        print "\n\t%d\t%ss" % (count[outt],outt)
     ##if extension == 'hd5':
     ##  table.flush()
     ##  h5file.close()
@@ -229,7 +189,7 @@ def get_args():
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
     p.add_argument('--ids', '-i', help="Identifiers of found records outputed. Default is 'id'. Additionally 'Source','PID' and 'DOI' are supported.", default=['id'], nargs='*')
     p.parse_args('--ids'.split())
-    p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', metavar='PATTERN', nargs='*')
+    p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', default='*:*', metavar='PATTERN', nargs='*')
     
     args = p.parse_args()
     
