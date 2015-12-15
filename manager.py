@@ -131,7 +131,8 @@ def main():
     OUT.HTML_print_begin()
     
     ## START PROCESSING:
-    logger.info("Start loop over processes and related requests in the job list:\t\t%s" % now)
+    logger.info("Start : \t\t%s\n" % now)
+    logger.info("Loop over processes and related requests :\n")
     logger.info('|- <Process> started : %s' % "<Time>")
     logger.info(' |- Joblist: %s' % "<Filename of request list>")
     logger.info('   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<No or Request>','<Request description>','<Status>','<Time>'))
@@ -238,6 +239,7 @@ def process(options,pstat,OUT):
         
             # start the process converting:
             if mode is 'multi':
+                logger.info(' |- Joblist:  \t%s' % options.list)
                 process_validate(MP, parse_list_file('validate', OUT.convert_list or options.list, options.community,options.mdsubset))
             else:
                 process_validate(MP,[[
@@ -462,20 +464,22 @@ def process_upload(UP, rlist, options):
         
         scount = 0
         fcount = 0
+        oldperc = 0
         for filename in files:
             ## counter and progress bar
             fcount+=1
             if (fcount<scount): continue
             perc=int(fcount*100/int(len(files)))
             bartags=perc/5
-            if fcount%100 == 0 :
-               logger.info("\r\t[%-20s] %d / %d%%" % ('='*bartags, fcount, perc ))
-               sys.stdout.flush()
+            if perc%10 == 0 and perc != oldperc :
+                oldperc=perc
+                logger.info("\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc ))
+                sys.stdout.flush()
 
             jsondata = dict()
-        
-            if ( os.path.getsize(dir+'/json/'+filename) > 0 ):
-                with open(dir+'/json/'+filename, 'r') as f:
+            pathfname= dir+'/json/'+filename
+            if ( os.path.getsize(pathfname) > 0 ):
+                with open(pathfname, 'r') as f:
                     try:
                         jsondata=json.loads(f.read())
                     except:
@@ -501,7 +505,7 @@ def process_upload(UP, rlist, options):
             
             ### VALIDATE JSON DATA
             if (UP.validate(jsondata) < 1):
-                logger.info('        |-> Upload is aborted')
+                logger.info('        |-> Could not upload %s' % pathfname )
                 results['ecount'] += 1
                 continue
 
@@ -620,8 +624,6 @@ def process_upload(UP, rlist, options):
                     ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
 
             results['count'] +=  upload
-            
-            fcount += 1
             
         uploadtime=time.time()-uploadstart
         results['time'] = uploadtime

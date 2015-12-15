@@ -80,7 +80,7 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-
 ## CESSDA endpoint
 # ??ERROR : --> ListIdentifiers ?? 
 #h=115
-cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_dc dda_
+cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi dda_
 #h=227
 cessda http://nesstar.snd.gu.se/oai-pmh ListRecords  oai_ddi snd_
 #h=97

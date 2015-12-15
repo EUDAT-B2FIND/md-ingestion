@@ -9,6 +9,7 @@
     <!-- General information -->
     <field name="title">
       <xpath>//hdcp2:metadata/hdcp2:globalAttributes/hdcp2:Title/text()</xpath>
+      <xpath>//hdcp2:metadata/hdcp2:globalAttributes/hdcp2:title/text()</xpath>
     </field>
     <field name="notes">
       <xpath>string-join(distinct-values(//hdcp2:productDescription/text()), '\n')</xpath>
