@@ -489,7 +489,7 @@ def process_upload(UP, rlist, options):
             # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
-            logger.debug('    | u | %-4d | %-40s |' % (fcount,ds_id))
+            logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
             
             # get OAI identifier from json data extra field 'oai_identifier':
             oai_id  = None
@@ -585,13 +585,13 @@ def process_upload(UP, rlist, options):
             # depending on status from epic handle upload record to B2FIND 
             logger.debug('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
-                logger.debug('        |-> %s' % ('No upload required'))
+                logger.info('        |-> %s' % ('No upload required'))
             else:
                 upload = UP.upload(ds_id,dsstatus,community,jsondata)
                 if (upload == 1):
-                    logger.debug('        |-> Creation of %s record succeed' % dsstatus )
+                    logger.info('        |-> Creation of %s record succeed' % dsstatus )
                 elif (upload == 2):
-                    logger.debug('        |-> Update of %s record succeed' % dsstatus )
+                    logger.info('        |-> Update of %s record succeed' % dsstatus )
                     upload=1
                 else:
                     logger.error('        |-> Upload of %s record failed ' % dsstatus )
@@ -602,16 +602,16 @@ def process_upload(UP, rlist, options):
 ##HEW-T            if (options.epic_check): ##HEW and upload == 1):
                 ckands='http://b2find.eudat.eu/dataset/'+ds_id
                 if (epicstatus == "new"):
-                    logger.debug("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                    logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                     ##HEW-T ckands='http://b2find.eudat.eu/dataset/'+ds_id
                     npid=ec.createHandle(pid,ckands,checksum)
                     ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
                     ec.modifyHandle(pid,'COMMUNITY',community)
                     ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
                 elif (epicstatus == "unchanged"):
-                    logger.debug("        |-> No action required for %s" % pid)
+                    logger.info("        |-> No action required for %s" % pid)
                 else:
-                    logger.debug("        |-> Update checksum of pid %s to %s" % (pid,checksum))
+                    logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
                     ##HEW-T !!! as long as URLs not all apdated !!
                     ec.modifyHandle(pid,'URL',ckands)
                     ec.modifyHandle(pid,'CHECKSUM',checksum)

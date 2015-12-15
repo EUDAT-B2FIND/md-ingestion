@@ -804,11 +804,11 @@ class MAPPER(object):
                 nonBracePrintables = nonBracePrintables + c
 
         self.enclosed = Forward()
-        value = Combine(OneOrMore(Word(nonBracePrintables) | White(' ')))
+        value = Combine(OneOrMore(Word(nonBracePrintables) ^ White(' ')))
         nestedParens = nestedExpr('(', ')', content=self.enclosed) 
         nestedBrackets = nestedExpr('[', ']', content=self.enclosed) 
         nestedCurlies = nestedExpr('{', '}', content=self.enclosed) 
-        self.enclosed << OneOrMore(value | nestedParens | nestedBrackets | nestedCurlies)
+        self.enclosed << OneOrMore(value ^ nestedParens ^ nestedBrackets ^ nestedCurlies) 
                 
 
 
