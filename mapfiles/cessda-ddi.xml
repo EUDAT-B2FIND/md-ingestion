@@ -3,28 +3,28 @@
   <!-- Mappings for DDI metadata version 1.2.2.?? of CESSDA to B2FIND -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
-    <namespace ns="d" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="codeBook" uri="ddi:codebook:2_5"/>
   </namespaces>
   <mappings>
    <!-- General information -->
    <field name="title">
-      <xpath>//titl/</xpath>
+      <xpath>//codeBook:titl</xpath>
    </field>
    <field name="notes">
-       <xpath>//d:codeBook/d:stdyDscr/d:stdyInfo/d:abstract/text()</xpath>
-       <xpath>//d:codeBook/d:stdyDscr/d:dataAccs/d:useStmt/d:citReq/text()</xpath>
+       <xpath>//codeBook:abstract</xpath>
+       <xpath>//codeBook:citReq/text()</xpath>
    </field>
     <field name="tags">
-       <xpath>string-join(//d:codeBook/d:stdyDscr/d:stdyInfo/d:subject/d:keyword/text() | //d:codeBook//d:stdyDscr//d:stdyInfo//d:subject//d:topcClas/text() ,";")</xpath>
+       <xpath>string-join(//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:subject/codeBook:keyword/text() | //codeBook:codeBook//codeBook:stdyDscr//codeBook:stdyInfo//codeBook:subject//codeBook:topcClas/text() ,";")</xpath>
    </field>
    <!-- Access data  -->
    <field name="url">
-       <xpath>string-join(//d:holdings/text(), //d:codeBook/d:stdyDscr/d:dataAccs/d:setAvail/d:accsPlac/ | //d:codeBook/d:stdyDscr/d:citation/d:titlStmt/d:IDNo/text() | /d:codeBook/d:stdyDscr/d:citation/d:rspStmt/d:othId/text(), '; ')  </xpath>
+       <xpath>string-join(distinct-values(//codeBook:holdings/text(), //codeBook:codeBook/codeBook:stdyDscr/codeBook:dataAccs/codeBook:setAvail/codeBook:accsPlac/, //codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:titlStmt/codeBook:IDNo/text(), /codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:rspStmt/codeBook:othId/text()), '; ')  </xpath>
     </field>
    <field name="Checksum">
    </field>
    <field name="Rights">
-       <xpath>string-join(//d:codeBook/d:stdyInfo/d:citation/d:prodStmt/d:copyright/text() | //d:codeBook/d:stdyDscr/d:citation/d:prodStmt/d:copyright/text() | //d:codeBook/d:stdyDscr/d:dataAccs/d:setAvail/d:avlStatus/text(), '; ')</xpath>
+       <xpath>string-join(//codeBook:codeBook/codeBook:stdyInfo/codeBook:citation/codeBook:prodStmt/codeBook:copyright/text(),//codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:prodStmt/codeBook:copyright/text() | //codeBook:codeBook/codeBook:stdyDscr/codeBook:dataAccs/codeBook:setAvail/codeBook:avlStatus/text(), '; ')</xpath>
    </field>
    <!-- Provenance data -->
    <field name="Discipline">
@@ -33,32 +33,34 @@
    </field>
    <!-- Concatenate attribute value of att "affiliation" to value of "Authoring Entity/Primary Investigator" element if applicable. -->
    <field name="author">
-      <xpath>//d:codeBook/d:stdyDscr/d:citation/d:rspStmt/d:AuthEnty/text()</xpath>
-      <xpath>//d:codeBook/d:stdyDscr/d:citation/d:distStmt/d:contact/text()</xpath>
+      <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:rspStmt/codeBook:AuthEnty/text()</xpath>
+      <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:distStmt/codeBook:contact/text()</xpath>
    </field>
     <field name="Publisher">
-       <xpath>//d:codeBook/d:docDscr/d:citation/d:prodStmt/d:producer</xpath>
-       <xpath>//d:codeBook/d:stdyDscr/d:citation/d:prodStmt/d:producer</xpath>
-        <xpath>string-join(distinct-values(//d:codeBook/d:stdyInfo/d:citation/d:prodStmt/d:producer/text()), '; ')</xpath>
+       <xpath>//codeBook:codeBook/codeBook:docDscr/codeBook:citation/codeBook:prodStmt/codeBook:producer</xpath>
+       <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:prodStmt/codeBook:producer</xpath>
+        <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:rspStmt/codeBook:othId</xpath>
     </field>
    <!-- The date field is unstructured. A date unifying function will be implemented later. -->
    <field name="PublicationYear">
-        <xpath>//d:codeBook/d:docDscr/d:citation/d:prodStmt/d:distDate/text()</xpath>
-        <xpath>//d:codeBook/d:docDscr/d:citation/d:prodStmt/d:prodDate/text()</xpath>
+        <xpath>//codeBook:codeBook/codeBook:docDscr/codeBook:citation/codeBook:prodStmt/codeBook:distDate/text()</xpath>
+        <xpath>//codeBook:codeBook/codeBook:docDscr/codeBook:citation/codeBook:prodStmt/codeBook:prodDate/text()</xpath>
    </field>
     <!-- Formal data -->
    <field name="Language">
-       <!-- No good filed to map language to in DDI 1.2.2 so we just grab the first xml:lang attribute -->
-       <xpath>/d:codeBook/d:lang</xpath>
+       <xpath>//codeBook:codeBook/codeBook:lang,//codeBook:codeBook/codeBook:stdyDscr/codeBook:othrStdyMat/codeBook:othRefs</xpath>
    </field>
    <field name="SpatialCoverage">
-        <xpath>//d:codeBook/d:stdyDscr/d:stdyInfo/d:sumDscr/d:geogUnit/text()</xpath>
+        <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:sumDscr/codeBook:geogUnit/text()</xpath>
    </field>
    <field name="TemporalCoverage">
-       <xpath>string-join(//d:codeBook/d:stdyDscr/d:stdyInfo/d:sumDscr/d:timePrd | //d:codeBook/d:stdyDscr/d:stdyInfo/d:sumDscr/d:timePrd, ';')</xpath>
+       <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:sumDscr/codeBook:timePrd</xpath>
     </field>
+   <field name="Contact">
+        <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:dataAccs/codeBook:useStmt/codeBook:contact/text()</xpath>
+   </field>
    <field name="Format">
-        <xpath>//d:codeBook/d:fileDscr/d:fileType/text()</xpath>
+        <xpath>//codeBook:codeBook/codeBook:fileDscr/codeBook:fileType/text()</xpath>
    </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
@@ -75,7 +77,7 @@
     </field>
     <!-- CESSDA specific fields
     <field name="ResourceType">
-       <xpath>//d:codeBook/d:stdyDscr/d:stdyInfo/d:sumDscr/d:dataKind/text()</xpath>
+       <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:sumDscr/codeBook:dataKind/text()</xpath>
     </field>
     -->
   </mappings>
