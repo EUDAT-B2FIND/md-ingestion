@@ -672,9 +672,9 @@ class HARVESTER(object):
                         self.logger.info("   | List of id's to delete written to {0} but no files removed yet".format(delete_file))                
 
                     # append uid to delete file, if not already exists:
-                    if uid not in file_content:
+                    if uid+'\n' not in file_content:
                          with open(delete_file, 'a') as file:
-                           file.write(uid)
+                           file.write(uid+'\n')
 
             # add all subset stats to total stats and reset the temporal subset stats:
             for key in ['tcount', 'ecount', 'count', 'dcount']:
