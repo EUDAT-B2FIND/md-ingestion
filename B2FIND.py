@@ -509,7 +509,7 @@ class HARVESTER(object):
             fcount=0
             oldperc=0
             for record in records:
-            ##HEW??!! for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}):
+            ##HEW??!! for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted:True,'from':self.fromdate}):
                 ## counter and progress bar
                 fcount+=1
 		if fcount <= noffs : continue
@@ -645,39 +645,36 @@ class HARVESTER(object):
                     os.makedirs(self.base_outdir+'/delete')    
 
                 delete_mode=False
-                if delete_mode == True :
                   # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
-                  for uid in deleted_metadata:
-                    self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
+                for uid in deleted_metadata:
+                    if delete_mode == True :
+                        self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
                     
-                    xmlfile = deleted_metadata[uid]
-                    dsubset = os.path.dirname(xmlfile).split('/')[-2]
-                    jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+uid+'.json'
+                        xmlfile = deleted_metadata[uid]
+                        dsubset = os.path.dirname(xmlfile).split('/')[-2]
+                        jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+uid+'.json'
                 
-                    ## HEW stats['totdcount'] += 1
-                    
-                    # remove xml file:
-                    try: 
-                        os.remove(xmlfile)
-                    except OSError, e:
-                        self.logger.error("    [ERROR] Cannot remove xml file: %s" % (e))
-                        stats['totecount'] +=1
-                        
-                    # remove json file:
-                    if (os.path.exists(jsonfile)):
+                        # remove xml file:
                         try: 
-                            os.remove(jsonfile)
+                            os.remove(xmlfile)
                         except OSError, e:
-                            self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
+                            self.logger.error("    [ERROR] Cannot remove xml file: %s" % (e))
                             stats['totecount'] +=1
-                
+                        
+                        # remove json file:
+                        if (os.path.exists(jsonfile)):
+                            try: 
+                                os.remove(jsonfile)
+                            except OSError, e:
+                                self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
+                                stats['totecount'] +=1
+                    else:
+                        self.logger.info("   | List of id's to delete written to {0} but no files removed yet".format(delete_file))                
+
                     # append uid to delete file, if not already exists:
                     if uid not in file_content:
                          with open(delete_file, 'a') as file:
                            file.write(uid)
-
-                else:
-                   self.logger.info("   | List of id's to delete written to {0} but no files removed yet".format(delete_file))
 
             # add all subset stats to total stats and reset the temporal subset stats:
             for key in ['tcount', 'ecount', 'count', 'dcount']:
@@ -1702,7 +1699,7 @@ class MAPPER(object):
         for func in flist:
             func=func.strip()
             if func.startswith('//'): 
-                fxpath= '.'+re.sub(r'/text()','',func)  
+                fxpath= '.'+re.sub(r'/text()','',func)
                 try:
                     for elem in obj.findall(fxpath,ns):
                         if elem.text :
