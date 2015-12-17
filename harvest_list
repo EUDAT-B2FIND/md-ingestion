@@ -92,7 +92,7 @@ cessda http://oai.ukdataservice.ac.uk/oai/provider ListRecords ddi DataCollectio
 #h=117 ?= #DASISH = 115
 cessda http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi swedish-lang-bank_
 #h=6257 ?= #DASISH = 6225
-cessda http://oai.datacite.org/oai ListIdentifiers  oai_dc GESIS.ARCHIV
+cessda http://oai.datacite.org/oai ListRecords  oai_dc GESIS.ARCHIV
 #h=2255 ?= #DASISH = 2245
 cessda http://oai.datacite.org/oai ListIdentifiers  oai_dc SND.SND
 #h=6135 ?= #DASISH = 6073
@@ -103,24 +103,15 @@ cessda http://oai.clarin-beta.dans.knaw.nl/OAIHandler  ListIdentifiers cmdi dans
 cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc dans-easy_
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 JSONAPI json new_
-##%%% EUDAT B2SHARE (MARCXML ???Harvesting issues since 150519!!!)
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml Linguistics
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml EUON
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml Eudat
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml BBMRI
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml NRM
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml GBIF
-b2share  http://b2share.eudat.eu/oai2d ListIdentifiers marcxml RDA
-##%%% EUDAT B2SHARE (DublinCore!!!)
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Linguistics
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc EUON
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc Eudat
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc DRIHM
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc BBMRI
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc NRM
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc GBIF
-##b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc RDA
+##%%% EUDAT B2SHARE
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;
