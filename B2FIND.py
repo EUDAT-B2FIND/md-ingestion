@@ -511,13 +511,14 @@ class HARVESTER(object):
             for record in records:
             ##HEW??!! for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted:True,'from':self.fromdate}):
                 ## counter and progress bar
+                start2=time.time()
                 fcount+=1
 		if fcount <= noffs : continue
                 perc=int(fcount*100/ntotrecs)
                 bartags=perc/5 #HEW-D fcount/100
                 if perc%10 == 0 and perc != oldperc :
                     oldperc=perc
-                    self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                    self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
                     sys.stdout.flush()
 
                 if req["lverb"] == 'ListIdentifiers' :
@@ -646,6 +647,11 @@ class HARVESTER(object):
 
                 delete_mode=False
                   # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
+                self.logger.info("   | List of id's to delete written to {0}.".format(delete_file))                
+                if delete_mode == True :
+                    self.logger.info("   |  and related xml and json files are removed")
+                else:
+                    self.logger.info("   |  but related are not removed yet") 
                 for uid in deleted_metadata:
                     if delete_mode == True :
                         self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
@@ -668,8 +674,6 @@ class HARVESTER(object):
                             except OSError, e:
                                 self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
                                 stats['totecount'] +=1
-                    else:
-                        self.logger.info("   | List of id's to delete written to {0} but no files removed yet".format(delete_file))                
 
                     # append uid to delete file, if not already exists:
                     if uid+'\n' not in file_content:
@@ -1859,12 +1863,12 @@ class MAPPER(object):
         fcount = 0
         oldperc=0
         err = None
-        start = time.time()
         self.logger.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
         
         ## start processing loop
         for filename in files:
             ## counter and progress bar
+            start = time.time()
             fcount+=1
             perc=int(fcount*100/int(len(files)))
             bartags=perc/5
@@ -2189,12 +2193,13 @@ class MAPPER(object):
         oldperc = 0
         for filename in files:
             ## counter and progress bar
+            start = time.time()
             fcount+=1
             perc=int(fcount*100/int(len(files)))
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                self.logger.info("\r\t[%-20s] %d / %d%%" % ('='*bartags, fcount, perc ))
+                self.logger.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             jsondata = dict()
