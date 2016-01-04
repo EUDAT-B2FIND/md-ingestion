@@ -1965,8 +1965,12 @@ class MAPPER(object):
                             elif extra['key'] == 'Language': # generic mapping of languages
                                extra['value'] = self.map_lang(extra['value'])
                             elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
-                               publdate=self.date2UTC(extra['value'])
-                               extra['value'] = self.cut(extra['value'],'\d\d\d\d',0)
+                                publdate=self.date2UTC(extra['value'])
+                                if publdate:
+                                    extra['value'] = self.cut(publdate,'\d\d\d\d',0)
+                                else:
+                                    extra['value'] = None
+
                             elif type(extra['value']) is not str and type(extra['value']) is not unicode :
                                self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
                       except Exception as e: 
@@ -2664,8 +2668,8 @@ class UPLOADER (object):
             elif(extra['key'] == 'PublicationYear'):            
                 try:
                    datetime.datetime.strptime(extra['value'], '%Y')
-                except ValueError:
-                    errmsg = "%s value %s has incorrect data format, should be YYYY" % (extra['key'],extra['value'])
+                except (ValueError,TypeError) as e:
+                    errmsg = "Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,extra['key'],extra['value'])
                     # delete this field from the jsondata:
                     jsondata['extras'].pop(counter)
                     
