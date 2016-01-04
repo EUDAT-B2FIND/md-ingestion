@@ -65,7 +65,7 @@
     <field name="oai_identifier">
       <xpath>//r:header/r:identifier/text()</xpath>
     <field name="oai_set">
-      <xpath>//r:header/r:setspec/text()</xpath>
+      <xpath>//r:header/r:setSpec/text()</xpath>
     </field>
     </field>
     <field name="MapperVersion">
