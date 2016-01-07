@@ -54,7 +54,8 @@ def main():
         'Creator':'author',
         'modified':'metadata_modified',
         'Discipline':'Discipline',
-        'Publisher':'Publisher'
+        'Publisher':'Publisher',
+        'oai_set':'oai_set'
 }
 
     print " => %s %s are written to %s" % ('IDs and',aids,args.output)
@@ -67,7 +68,7 @@ def main():
     for outt in aids:
        if outt not in suppid :
            print 'Output identifier %s is not supported' % outt
-           exit()
+           ##HEW?? exit()
        else:
            count[outt]=0
 
