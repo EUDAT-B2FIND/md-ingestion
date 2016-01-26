@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## DEIMS
+deims   http://deims???.de:8080/oai/provider  ListRecords  iso test
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA
@@ -78,7 +80,6 @@ clarin  http://clarin.dk/oaiprovider ListIdentifiers cmdi ucph_
 # Viena Language resources #h=    ?= #DASISH = 14324
 clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
 ## CESSDA endpoint
-# ??ERROR : --> ListIdentifiers ?? 
 #h=115
 cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi dda_
 #h=227
