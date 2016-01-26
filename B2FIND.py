@@ -178,7 +178,8 @@ class CKAN_CLIENT(object):
         # make json data in conformity with URL standards
         data_string = urllib.quote(json.dumps(data_dict))
 
-        self.logger.debug('\t|-- Action %s\n\t|-- Calling %s\n\t|-- Object %s ' % (action,action_url,data_dict))	
+        self.logger.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
+        ##HEW-Tself.logger.debug('\t|-- Object %s ' % data_dict)	
         try:
             request = urllib2.Request(action_url)
             if (self.api_key): request.add_header('Authorization', self.api_key)
@@ -1983,7 +1984,10 @@ class MAPPER(object):
                 if iddict:
                   for key in iddict:
                     if key == 'url':
-                        jsondata['url']=iddict['url']
+                        if community =='hdcp2':
+                            jsondata['url']='https://icdc.zmaw.de/index.php?id='+iddict['url']
+                        else:
+                            jsondata['url']=iddict['url']
                     else:
                         jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
                 if spvalue :
@@ -2653,7 +2657,7 @@ class UPLOADER (object):
             errmsg = ''
             # ... OAI Identifier
             if(extra['key'] == 'oai_identifier' and extra['value'] == ''):
-                errmsg = "'oai_identifier': The ID is missing"
+                errmsg = "'oai_identifier': The OAI Identifier is missing"
                 status = 0  # set status
 
             # shrink field fulltext
@@ -3332,7 +3336,7 @@ class OUTPUT (object):
         reshtml.write("\t\t<h1>Results of B2FIND ingestion workflow</h1>\n")
         reshtml.write(
             '\t\t<b>Date:</b> %s UTC, <b>Process ID:</b> %s, <b>Epic check:</b> %s<br />\n\t\t<ol>\n' 
-                % (self.start_time, self.jid, options.epic_check)
+                % (self.start_time, self.jid, options.handle_check)
         )
         
         i=1
