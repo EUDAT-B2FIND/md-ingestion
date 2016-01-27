@@ -574,10 +574,11 @@ def process_upload(UP, rlist, options):
             if (options.handle_check):
                 try:
                     ##HEW-D pid = "11098/eudat-jmd_" + ds_id ##HEW?? 
-                    pid = cred.get_prefix() + '/eudat-jmd_' + ds_id  
-                    checksum2 = client.get_value_from_handle(pid, "CHECKSUM")
-                    ManagerVersion2 = client.get_value_from_handle(pid, "JMDVERSION")
-                    B2findHost = client.get_value_from_handle(pid,"B2FINDHOST")
+                    pid = cred.get_prefix() + '/eudat-jmd_' + ds_id 
+                    rec = client.retrieve_handle_record_json(pid)
+                    checksum2 = client.get_value_from_handle(pid, "CHECKSUM",rec)
+                    ManagerVersion2 = client.get_value_from_handle(pid, "JMDVERSION",rec)
+                    B2findHost = client.get_value_from_handle(pid,"B2FINDHOST",rec)
                 except Exception, err:
                     logger.critical("[CRITICAL : %s] in client.get_value_from_handle" % err )
                 else:
