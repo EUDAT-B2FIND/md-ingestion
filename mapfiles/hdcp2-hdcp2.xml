@@ -31,7 +31,7 @@
       <xpath>//hdcp2:Source/text()</xpath>
     </field>
     <field name="author">
-      <xpath>string-join(distinct-values(//hdcp2:author/text()), '; ')</xpath>
+      <xpath>string-join(distinct-values(//hdcp2:Author/text()), '; ')</xpath>
     </field>
     <field name="Publisher">
       <xpath>//hdcp2:Institution/text()</xpath>
@@ -52,7 +52,10 @@
     <field name="Format">
       <xpath>//hdcp2:fileFormat</xpath>
     </field>
-    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="Contact">
+      <xpath>//hdcp2:contactPersons/hdcp2:contactPerson/hdcp2:email/text()</xpath>
+    </field>
+   <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>

@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 """manager.py
-  Management of metadata within the EUDAT Joint Metadata Domain (B2FIND)
-  MD Ingestion : Harvest from OAI provider, convert/map XML (to JSON), semantic mapping of MD schema, remap to B2FIND xml, and upload to B2FIND portal
+  Management of metadata within the EUDAT Metadata Service B2FIND
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ), John Mrziglod (DKRZ)
 Licensed under AGPLv3.
@@ -15,19 +14,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
-~~~~~~~
-For some functions (processes) you haved to install additional libraries
-
-Process                Libraries      Install commands
-
-harvest                pyoai, lxml    easy_install pyoai, lxml or pip install pyoai, lxml 
-
-Modified by  c/o DKRZ 2013   Heinrich Widmann
+Modified by  c/o DKRZ 2014   Heinrich Widmann
+  New mode 'oaiconvert' added 
+Modified by  c/o DKRZ 2015   Heinrich Widmann
+  Validation mode enhanced, redesign and bug fixes
+Modified by  c/o DKRZ 2016   Heinrich Widmann
+  Adapt to new B2HANDLE library
 """
 
 import B2FIND 
-from epicclient import EpicClient,Credentials
+from b2handle.clientcredentials import PIDClientCredentials
+from b2handle.handleclient import EUDATHandleClient
+from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
 import os, optparse, sys, glob
 from subprocess import call,Popen,PIPE
 import time, datetime
@@ -106,8 +104,8 @@ def main():
             sys.exit(-1)
             
     # check options:
-    if (not(options.epic_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
-        logger.debug("\n[WARNING] You are going to upload datasets to the host %s with generating EPIC handles!" % (options.iphost))
+    if (not(options.handle_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
+        logger.debug("\n[WARNING] You are going to upload datasets to the host %s with generating PID's!" % (options.iphost))
         answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
@@ -116,8 +114,8 @@ def main():
             exit()
             
         print '\n'
-    elif (options.epic_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
-        logger.debug("\n[WARNING] You are going to upload datasets to the host %s with generating EPIC handles!" % (options.iphost))
+    elif (options.handle_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
+        logger.debug("\n[WARNING] You are going to upload datasets to the host %s with generating handles!" % (options.iphost))
         answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
@@ -402,26 +400,28 @@ def process_oaiconvert(MP, rlist):
 
 
 def process_upload(UP, rlist, options):
-    credentials,ec = None,None
+    ##HEW-D-ec credentials,ec = None,None
 
-    # create credentials if required
-    if (options.epic_check):
+    # create credentials and handle cleint if required
+    if (options.handle_check):
           try:
-              credentials = Credentials('os',options.epic_check)
-              credentials.parse()
+              cred = PIDClientCredentials.load_from_JSON('credentials_11098')
           except Exception, err:
-              logger.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.epic_check))
-              p.print_help()
+              logger.critical("[CRITICAL %s ] : Could not create credentials from credstore %s" % (err,options.handle_check))
+              ##p.print_help()
               sys.exit(-1)
           else:
-              logger.debug("Create EPIC client instance to add uuid to handle server")
-              ec = EpicClient(credentials)
+              logger.debug("Create EUDATHandleClient instance")
+              client = EUDATHandleClient.instantiate_with_credentials(cred)
 
     CKAN = UP.CKAN
     last_community = ''
     package_list = dict()
 
     ir=0
+    mdschemas={
+        "ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd"
+        }
     for request in rlist:
         ir+=1
         logger.info('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
@@ -555,28 +555,35 @@ def process_upload(UP, rlist, options):
                     })
 
             
-            ### CHECK STATE OF DATASET IN CKAN AND EPIC:
+            ### CHECK STATE OF DATASET IN CKAN AND HANDLE SERVER:
             # status of data set
             dsstatus="unknown"
      
-            # check against handle server EPIC
-            epicstatus="unknown"
-            if (options.epic_check):
-                pid = credentials.prefix + "/eudat-jmd_" + ds_id
-                checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
-                ManagerVersion2 = ec.getValueFromHandle(pid,"JMDVERSION")
-                B2findHost = ec.getValueFromHandle(pid,"B2FINDHOST")
-
+            # check against handle server
+            handlestatus="unknown"
+            checksum2=None
+            if (options.handle_check):
+                try:
+                    ##HEW-D pid = "11098/eudat-jmd_" + ds_id ##HEW?? 
+                    pid = cred.get_prefix() + '/eudat-jmd_' + ds_id  
+                    checksum2 = client.get_value_from_handle(pid, "CHECKSUM")
+                    ManagerVersion2 = client.get_value_from_handle(pid, "JMDVERSION")
+                    B2findHost = client.get_value_from_handle(pid,"B2FINDHOST")
+                except Exception, err:
+                    logger.critical("[CRITICAL : %s] in client.get_value_from_handle" % err )
+                else:
+                    logger.debug("Got checksum2 %s, ManagerVersion2 %s and B2findHost %s from PID %s" % (checksum2,ManagerVersion2,B2findHost,pid))
+                print '?????? %s' % checksum2
                 if (checksum2 == None):
                     logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
-                    epicstatus="new"
+                    handlestatus="new"
                 elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ) and ( B2findHost == options.iphost ) :
                     logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
-                    epicstatus="unchanged"
+                    handlestatus="unchanged"
                 else:
                     logger.debug("        |-> checksum, ManagerVersion or B2FIND host of pid %s changed" % (pid))
-                    epicstatus="changed"
-                dsstatus=epicstatus
+                    handlestatus="changed"
+                dsstatus=handlestatus
 
             # check against CKAN database
             ckanstatus = 'unknown'                  
@@ -586,7 +593,7 @@ def process_upload(UP, rlist, options):
                     dsstatus = ckanstatus
 
             upload = 0
-            # depending on status from epic handle upload record to B2FIND 
+            # depending on status of handle upload record to B2FIND 
             logger.debug('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
                 logger.info('        |-> %s' % ('No upload required'))
@@ -600,28 +607,61 @@ def process_upload(UP, rlist, options):
                 else:
                     logger.error('        |-> Upload of %s record failed ' % dsstatus )
             
-            # update handle in EPIC server                                                                                  
-            if (options.epic_check and upload == 1):
-##HEW-T (create EPIC handle as well if upload/date failed !!! :
-##HEW-T            if (options.epic_check): ##HEW and upload == 1):
+            # update PID in handle server                                                                                  
+            if (options.handle_check and upload == 1):
+##HEW-T (create PID as well if upload/date failed !!! :
+##HEW-T            if (options.handle_check): ##HEW and upload == 1):
+                ##HEW-D-ec 
                 ckands='http://b2find.eudat.eu/dataset/'+ds_id
-                if (epicstatus == "new"):
-                    logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
-                    ##HEW-T ckands='http://b2find.eudat.eu/dataset/'+ds_id
-                    npid=ec.createHandle(pid,ckands,checksum)
-                    ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
-                    ec.modifyHandle(pid,'COMMUNITY',community)
-                    ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
-                elif (epicstatus == "unchanged"):
-                    logger.info("        |-> No action required for %s" % pid)
+                ##HEW-D??? ckands='11098/'+ pid ### ds_id
+                if (handlestatus == "new"):
+                    logger.debug("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                    try:
+                        npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
+                    except (HandleAuthenticationError,HandleSyntaxError) as err :
+                        logger.critical("[CRITICAL : %s] in client.register_handle" % err )
+                    except Exception, err:
+                        logger.critical("[CRITICAL : %s] in client.register_handle" % err )
+                        sys.exit()
+                    else:
+                        logger.debug(" New handle %s with checksum %s created" % (pid,checksum))
+                    try:
+                        client.modify_handle_value(pid, JMDVERSION=ManagerVersion)
+
+                        client.modify_handle_value(pid, COMMUNITY=community)
+                        client.modify_handle_value(pid, SUBSET=subset)
+                        client.modify_handle_value(pid, B2FINDHOST=options.iphost)
+                        client.modify_handle_value(pid, IS_METADATA=True)
+                        client.modify_handle_value(pid, MD_SCHEMA=mdschemas[mdprefix])
+                        client.modify_handle_value(pid, MD_STATUS='B2FIND_uploaded')
+                    except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                        logger.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
+                    except Exception, err:
+                        logger.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
+                        sys.exit()
+                    else:
+                        logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
+
+                elif (handlestatus == "unchanged"):
+                    logger.debug("        |-> No action required for %s" % pid)
                 else:
-                    logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
-                    ##HEW-T !!! as long as URLs not all apdated !!
-                    ec.modifyHandle(pid,'URL',ckands)
-                    ec.modifyHandle(pid,'CHECKSUM',checksum)
-                    ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
-                    ec.modifyHandle(pid,'COMMUNITY',community)
-                    ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
+                    logger.debug("        |-> Update checksum of pid %s to %s" % (pid,checksum))
+                    try:
+                        ##HEW-T !!! as long as URLs not all updated !!
+                        client.modify_handle_value(pid,URL=ckands)
+                        print 'CCCCC NNNN %s)' % checksum
+                        print 'CCCCC OOOO %s)' % checksum2
+                        client.modify_handle_value(pid,CHECKSUM=checksum) ## ,ttl=None,add_if_not_exist=True)
+                        client.modify_handle_value(pid,JMDVERSION=ManagerVersion)
+                        client.modify_handle_value(pid,COMMUNITY=community)
+                        client.modify_handle_value(pid,B2FINDHOST=options.iphost)
+                    except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                        logger.critical("[CRITICAL : %s] client.modify_handle_value %s" % (err,pid))
+                    except Exception, err:
+                        logger.critical("[CRITICAL : %s]  client.modify_handle_value %s" % (err,pid))
+                        sys.exit()
+                    else:
+                        logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
 
             results['count'] +=  upload
             
@@ -646,19 +686,17 @@ def process_delete(OUT, dir, options):
     CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
     UP = B2FIND.UPLOADER(CKAN, OUT)
     
-    credentials,ec = None,None
+    ##HEW-D-ec credentials,ec = None,None
 
     # create credentials
     try:
-        credentials = Credentials('os','credentials_11098')
-        credentials.parse()
+        cred = b2handle.clientcredentials.PIDClientCredentials.load_from_JSON('credentials_11098')
     except Exception, err:
-        logger.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.epic_check))
+        logger.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.handle_check))
         p.print_help()
         sys.exit(-1)
     else:
-        logger.debug("Create EPIC client instance to add uuid to handle server")
-        ec = EpicClient(credentials)
+        logger.debug("Create handle client instance to add uuid to handle server")
 
     for delete_file in glob.glob(dir+'/*.del'):
         community, mdprefix = os.path.splitext(os.path.basename(delete_file))[0].split('-')
@@ -709,29 +747,30 @@ def process_delete(OUT, dir, options):
                 # output:
                 logger.info('    | d | %-4d | %-50s | %-50s |' % (results['tcount'],identifier,ds))
 
-                ### CHECK STATUS OF DATASET IN CKAN AND EPIC:
+                ### CHECK STATUS OF DATASET IN CKAN AND PID:
                 # status of data set
                 dsstatus="unknown"
          
-                # check against handle server EPIC
-                epicstatus="unknown"
-                pid = credentials.prefix + "/eudat-jmd_" + ds
-                checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
+                # check against handle server
+                handlestatus="unknown"
+                ##HEW-D-ec???  pid = credentials.prefix + "/eudat-jmd_" + ds
+                pid = "11098/eudat-jmd_" + ds_id
+                checksum2 = client.get_value_from_handle(pid, "CHECKSUM")
 
                 if (checksum2 == None):
                   logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
-                  epicstatus="new"
+                  handlestatus="new"
                 else:
                   logger.debug("        |-> pid %s exists" % (pid))
-                  epicstatus="exist"
+                  handlestatus="exist"
 
                 # check against CKAN database
                 ckanstatus = 'unknown'                  
                 ckanstatus=UP.check_dataset(ds,None)
 
                 delete = 0
-                # depending on status from epic handle delete record from B2FIND
-                if ( epicstatus == "new" and ckanstatus == "new") : # no action required
+                # depending on handle status delete record from B2FIND
+                if ( handlestatus == "new" and ckanstatus == "new") : # no action required
                     logger.info('        |-> %s' % ('No deletion required'))
                 else:
                     delete = UP.delete(ds,ckanstatus)
@@ -739,10 +778,16 @@ def process_delete(OUT, dir, options):
                         logger.info('        |-> %s' % ('Deletion was successful'))
                         results['count'] +=  1
                         
-                        # delete handle in EPIC server (to keep the symmetry between both servers)
-                        if (epicstatus == "exist"):
+                        # delete handle (to keep the symmetry between handle and B2FIND server)
+                        if (handlestatus == "exist"):
                            logger.info("        |-> Delete handle %s with checksum %s" % (pid,checksum2))
-                           ec.deleteHandle(pid)
+                           try:
+                               client.delete_handle(pid)
+                           except GenericHandleError as err:
+                               logger.error('[ERROR] Unexpected Error: %s' % err)
+                           except Exception, e:
+                               logger.error('[ERROR] Unexpected Error: %s' % e)
+
                         else:
                            logger.info("        |-> No action (deletion) required for handle %s" % pid)
                     else:
@@ -838,8 +883,8 @@ def options_parser(modes):
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", default='', metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    p.add_option('--epic_check', 
-         help="check and generate handles of CKAN datasets in handle server EPIC and with credentials as specified in given credstore file",
+    p.add_option('--handle_check', 
+         help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file",
          default=None,metavar='FILE')
     p.add_option('--ckan_check',
          help="check existence and checksum against existing datasets in CKAN database",

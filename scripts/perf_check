@@ -103,7 +103,7 @@ wait
 
 echo -e "\n######################################################\n Total ingest status :"
 printf '\n  |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$ntotrec" "#$ntotdone" "+$ntotrcreated" "%$ntotrupdated" "?$ntotrfailed" "/$ntotrnoaction" 
-printf '\n  |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$(grep -c 'Create a new handle' ${outfile})" "%$(grep -c 'Update checksum' $outfile)" "?" "/$(grep -c 'No action required' $outfile )" 
+printf '\n  |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$ntothcreated" "%$ntothupdated" "?$ntothfailed" "/$ntothnoaction" 
 
 echo "[INFO] End of check at $(date)"
 
