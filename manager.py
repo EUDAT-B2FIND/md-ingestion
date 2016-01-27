@@ -420,7 +420,16 @@ def process_upload(UP, rlist, options):
 
     ir=0
     mdschemas={
-        "ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd"
+        "ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd",
+        "oai_ddi" : "http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd",
+        "marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
+        "iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
+        "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+        "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
+        "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
+        "json" : "http://json-schema.org/latest/json-schema-core.html",
+        "fgdc" : "No specification for fgdc available",
+        "hdcp2" : "No specification for hdcp2 available"
         }
     for request in rlist:
         ir+=1
@@ -573,9 +582,8 @@ def process_upload(UP, rlist, options):
                     logger.critical("[CRITICAL : %s] in client.get_value_from_handle" % err )
                 else:
                     logger.debug("Got checksum2 %s, ManagerVersion2 %s and B2findHost %s from PID %s" % (checksum2,ManagerVersion2,B2findHost,pid))
-                print '?????? %s' % checksum2
                 if (checksum2 == None):
-                    logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
+                    logger.debug("        |-> Can not access pid %s to get checksum" % pid)
                     handlestatus="new"
                 elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ) and ( B2findHost == options.iphost ) :
                     logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
@@ -649,8 +657,6 @@ def process_upload(UP, rlist, options):
                     try:
                         ##HEW-T !!! as long as URLs not all updated !!
                         client.modify_handle_value(pid,URL=ckands)
-                        print 'CCCCC NNNN %s)' % checksum
-                        print 'CCCCC OOOO %s)' % checksum2
                         client.modify_handle_value(pid,CHECKSUM=checksum) ## ,ttl=None,add_if_not_exist=True)
                         client.modify_handle_value(pid,JMDVERSION=ManagerVersion)
                         client.modify_handle_value(pid,COMMUNITY=community)
