@@ -624,7 +624,7 @@ def process_upload(UP, rlist, options):
                 ckands='http://b2find.eudat.eu/dataset/'+ds_id
                 ##HEW-D??? ckands='11098/'+ pid ### ds_id
                 if (handlestatus == "new"):
-                    logger.debug("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                    logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                     try:
                         npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
                     except (HandleAuthenticationError,HandleSyntaxError) as err :
@@ -652,9 +652,9 @@ def process_upload(UP, rlist, options):
                         logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
 
                 elif (handlestatus == "unchanged"):
-                    logger.debug("        |-> No action required for %s" % pid)
+                    logger.info("        |-> No action required for %s" % pid)
                 else:
-                    logger.debug("        |-> Update checksum of pid %s to %s" % (pid,checksum))
+                    logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
                     try:
                         ##HEW-T !!! as long as URLs not all updated !!
                         client.modify_handle_value(pid,URL=ckands)
