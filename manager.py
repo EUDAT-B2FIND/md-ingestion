@@ -605,7 +605,7 @@ def process_upload(UP, rlist, options):
             # depending on status of handle upload record to B2FIND 
             logger.debug('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
-                logger.debug('        |-> %s' % ('No upload required'))
+                logger.info('        |-> %s' % ('No upload required'))
             else:
                 upload = UP.upload(ds_id,dsstatus,community,jsondata)
                 if (upload == 1):
@@ -616,27 +616,38 @@ def process_upload(UP, rlist, options):
                 else:
                     logger.error('        |-> Upload of %s record failed ' % dsstatus )
             
-            # update PID in handle server                                                                                  
-            if (options.handle_check and upload == 1):
-##HEW-T (create PID as well if upload/date failed !!! :
-##HEW-T            if (options.handle_check): ##HEW and upload == 1):
-                ##HEW-D-ec 
-                ckands='http://b2find.eudat.eu/dataset/'+ds_id
-                ##HEW-D??? ckands='11098/'+ pid ### ds_id
-                if (handlestatus == "new"):
-                    logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
-                    try:
-                        npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
-                    except (HandleAuthenticationError,HandleSyntaxError) as err :
-                        logger.critical("[CRITICAL : %s] in client.register_handle" % err )
-                    except Exception, err:
-                        logger.critical("[CRITICAL : %s] in client.register_handle" % err )
-                        sys.exit()
-                    else:
-                        logger.debug(" New handle %s with checksum %s created" % (pid,checksum))
-                    try:
-                        client.modify_handle_value(pid, JMDVERSION=ManagerVersion)
+            # update PID in handle server                           
+            if (options.handle_check):
+                if (handlestatus == "unchanged"):
+                    logger.info("        |-> No action required for %s" % pid)
+                else:
+                    if (upload >= 1): # new or changed record
+                        ckands='http://b2find.eudat.eu/dataset/'+ds_id
+                        if (handlestatus == "new"): # Create new PID
+                            logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                            try:
+                                npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
+                            except (HandleAuthenticationError,HandleSyntaxError) as err :
+                                logger.critical("[CRITICAL : %s] in client.register_handle" % err )
+                            except Exception, err:
+                                logger.critical("[CRITICAL : %s] in client.register_handle" % err )
+                                sys.exit()
+                            else:
+                                logger.debug(" New handle %s with checksum %s created" % (pid,checksum))
+                        else: # PID changed => update URL and checksum
+                            try:
+                                client.modify_handle_value(pid,URL=ckands) ##HEW-T !!! as long as URLs not all updated !!
+                                client.modify_handle_value(pid,CHECKSUM=checksum)
+                            except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                                logger.critical("[CRITICAL : %s] client.modify_handle_value %s" % (err,pid))
+                            except Exception, err:
+                                logger.critical("[CRITICAL : %s]  client.modify_handle_value %s" % (err,pid))
+                                sys.exit()
+                            else:
+                                logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
 
+                    try: # update PID entries in all cases (except handle status is 'unchanged'
+                        client.modify_handle_value(pid, JMDVERSION=ManagerVersion)
                         client.modify_handle_value(pid, COMMUNITY=community)
                         client.modify_handle_value(pid, SUBSET=subset)
                         client.modify_handle_value(pid, B2FINDHOST=options.iphost)
@@ -647,25 +658,6 @@ def process_upload(UP, rlist, options):
                         logger.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
                     except Exception, err:
                         logger.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
-                        sys.exit()
-                    else:
-                        logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
-
-                elif (handlestatus == "unchanged"):
-                    logger.info("        |-> No action required for %s" % pid)
-                else:
-                    logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
-                    try:
-                        ##HEW-T !!! as long as URLs not all updated !!
-                        client.modify_handle_value(pid,URL=ckands)
-                        client.modify_handle_value(pid,CHECKSUM=checksum) ## ,ttl=None,add_if_not_exist=True)
-                        client.modify_handle_value(pid,JMDVERSION=ManagerVersion)
-                        client.modify_handle_value(pid,COMMUNITY=community)
-                        client.modify_handle_value(pid,B2FINDHOST=options.iphost)
-                    except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                        logger.critical("[CRITICAL : %s] client.modify_handle_value %s" % (err,pid))
-                    except Exception, err:
-                        logger.critical("[CRITICAL : %s]  client.modify_handle_value %s" % (err,pid))
                         sys.exit()
                     else:
                         logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
