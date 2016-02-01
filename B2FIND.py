@@ -509,10 +509,10 @@ class HARVESTER(object):
             stats['tcount']=noffs
             fcount=0
             oldperc=0
+            start2=time.time()
             for record in records:
             ##HEW??!! for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted:True,'from':self.fromdate}):
                 ## counter and progress bar
-                start2=time.time()
                 fcount+=1
 		if fcount <= noffs : continue
                 perc=int(fcount*100/ntotrecs)
@@ -1867,9 +1867,9 @@ class MAPPER(object):
         self.logger.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
         
         ## start processing loop
+        start = time.time()
         for filename in files:
             ## counter and progress bar
-            start = time.time()
             fcount+=1
             perc=int(fcount*100/int(len(files)))
             bartags=perc/5
@@ -2199,9 +2199,9 @@ class MAPPER(object):
                     break
         fcount = 0
         oldperc = 0
+        start = time.time()
         for filename in files:
             ## counter and progress bar
-            start = time.time()
             fcount+=1
             perc=int(fcount*100/int(len(files)))
             bartags=perc/10
@@ -2617,9 +2617,9 @@ class UPLOADER (object):
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
 
-    def validate(self, jsondata):
-        ## validate (UPLOADER object, json data) - method
-        # Validates the json data (e.g. the PublicationTimestamp field) by using B2FIND standard
+    def check(self, jsondata):
+        ## check(UPLOADER object, json data) - method
+        # Checks the json data (e.g. the PublicationTimestamp field) by using B2FIND standard
         #
         # Parameters:
         # -----------
@@ -2640,8 +2640,8 @@ class UPLOADER (object):
         }
         
         ## check mandatory fields ...
-        mandFields=['title','url']
-        for field in mandFields :
+        mandDefFields=['title','url']
+        for field in mandDefFields :
             if (not(field in jsondata) or jsondata[field] == ''):
                 errmsg = "The mandatory field '%s' is missing" % field
                 status = 0  # set status
@@ -2653,13 +2653,19 @@ class UPLOADER (object):
         
         ## check extra fields ...
         counter = 0
+        mandExtraFields=['oai_set','oai_identifier']
         for extra in jsondata['extras']:
             errmsg = ''
-            # ... OAI Identifier
-            if(extra['key'] == 'oai_identifier' and extra['value'] == ''):
-                errmsg = "'oai_identifier': The OAI Identifier is missing"
-                status = 0  # set status
+            for mand in mandExtraFields:
+                if(extra['key'] == mand and extra['value'] == ''):
+                    errmsg = "The mandatory field %s is missing" % mand
+                    status = 0  # set status
 
+            # ... OAI Set
+            if(extra['key'] == 'oai_set'):
+                if('/' in  extra['value']):
+                  extra['value']= extra['value'].split('/')[-1] 
+            
             # shrink field fulltext
             elif(extra['key'] == 'fulltext' and sys.getsizeof(extra['value']) > 31999):
                 errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))

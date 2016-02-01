@@ -129,7 +129,7 @@ def main():
     OUT.HTML_print_begin()
     
     ## START PROCESSING:
-    logger.info("Start : \t\t%s\n" % now)
+    logger.info("Start : \t%s\n" % now)
     logger.info("Loop over processes and related requests :\n")
     logger.info('|- <Process> started : %s' % "<Time>")
     logger.info(' |- Joblist: %s' % "<Filename of request list>")
@@ -513,7 +513,7 @@ def process_upload(UP, rlist, options):
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
             ### VALIDATE JSON DATA
-            if (UP.validate(jsondata) < 1):
+            if (UP.check(jsondata) < 1):
                 logger.info('        |-> Could not upload %s' % pathfname )
                 results['ecount'] += 1
                 continue
