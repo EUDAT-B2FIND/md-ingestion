@@ -54,6 +54,7 @@ import io
 from pyparsing import *
 import Levenshtein as lvs
 import iso639
+import enchant
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
@@ -310,7 +311,7 @@ class HARVESTER(object):
         
         
         
-            def JSONAPI(self, action, offset): # see oaireq
+            def JSONAPI(self, action, offset, key): # see oaireq
                 ## JSONAPI (action, jsondata) - method
         	    # Call the api action <action> with the <jsondata> on the CKAN instance which was defined by iphost
         	    # parameter of CKAN_CLIENT.
@@ -323,25 +324,19 @@ class HARVESTER(object):
         	    # Return Values:
         	    # --------------
         	    # (dict)    response dictionary of CKAN
-        	    
-        	    return self.__action_api(action, offset)
-        		
-        
-        
-            def __action_api (self, action, offset):
+        	    return self.__action_api(action, offset, key)
+
+            def __action_api (self, action, offset, key):
                 # Make the HTTP request for get datasets from GBIF portal
                 response=''
                 rvalue = 0
                 ## offset = 0
                 limit=100
                 api_url = "http://api.gbif.org/v1"
-                action_url = "{apiurl}/dataset?offset={offset}&limit={limit}".format(apiurl=api_url,offset=str(offset),limit=str(limit))	# default for get 'dataset'
-               # normal case:
-               ###  action_url = "http://{host}/api/3/action/{action}".format(host=self.ip_host,action=action)
-        
-               # make json data in conformity with URL standards
-               ## data_string = urllib.quote(json.dumps(data_dict))
-        
+                if key :
+                    action_url = "{apiurl}/{action}/{key}".format(apiurl=api_url,action=action,key=str(key))
+                else:
+                    action_url = "{apiurl}/{action}?offset={offset}&limit={limit}".format(apiurl=api_url,action=action,offset=str(offset),limit=str(limit))	
                ## print '\t|-- Action %s\n\t|-- Calling %s\n\t|-- Offset %d ' % (action,action_url,offset)
                 try:
                    request = urllib2.Request(action_url)
@@ -365,12 +360,6 @@ class HARVESTER(object):
                    assert response.code >= 200
                    return out        
 
-        # create sickle object
-        sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=300)
-
-        # create GBIF object 
-        GBIF = GBIF_CLIENT(req['url'])
-     
         requests_log = log.getLogger("requests")
         requests_log.setLevel(log.WARNING)
         
@@ -394,75 +383,115 @@ class HARVESTER(object):
         
         # make subset dir:
         subsetdir = '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
+
+        noffs=0 # set to number of record, where harvesting should start
+        stats['tcount']=noffs
+        fcount=0
+        oldperc=0
+        records=list()
+
+        if req["lverb"] == 'JSONAPI':
+            GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
+            outtypedir='hjson'
+            outtypeext='json'
+            records=list()
+            oaireq=getattr(GBIF,req["lverb"], None)
+            choffset=0
+            try:
+                chunk=oaireq(**{'action':'dataset','offset':choffset,'key':None})
+
+                while(not chunk['endOfRecords']):
+                    records.extend(chunk['results'])
+                    choffset+=100
+                    chunk =oaireq(**{'action':'dataset','offset':choffset,'key':None})
+            except urllib2.HTTPError as e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                return -1
+            except ConnectionError as e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                return -1
+            except Exception, e:
+                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                return -1
+                
+            ntotrecs=len(records)
+
+        elif req["lverb"].startswith('List'):
+            sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=300)
+            outtypedir='xml'
+            outtypeext='xml'
+            oaireq=getattr(sickle,req["lverb"], None)
+            try:
+                records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
+            except urllib2.HTTPError as e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                return -1
+            except ConnectionError as e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                return -1
+            except etree.XMLSyntaxError as e:
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                return -1
+            except Exception, e:
+                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                return -1
+
+            ntotrecs=sum(1 for _ in rc)
+
+        self.logger.info("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
         
-        # Get all files in the current subset directories and put those in the dictionary deleted_metadata
+        # Add all uid's to the related subset entry of the dictionary deleted_metadata
         deleted_metadata = dict()
+        for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
+            for subset in glob.glob(s+'/'+outtypedir+'/*.'+outtypeext):
+                # save the uid as key and the subset as value:
+                deleted_metadata[os.path.splitext(os.path.basename(subset))[0]] = subset
    
         self.logger.debug('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
 
-        try:
-          if req["lverb"] == 'JSONAPI':
-            for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-              for f in glob.glob(s+'/hjson/*.json'):
-                # save the uid as key and the subset as value:
-                deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
-            noffs=0
-            data = GBIF.JSONAPI('package_list',noffs)
-            while(not data['endOfRecords']): ## and nj<10):
-              ## 
-              print 'data-end-of-rec %s' % data['endOfRecords']
-              for record in data['results']:
-              ## for record in GBIF.JSONAPI('package_list',noffs)['results']:
-                ## how to handle 'deleted' records ???
+        start2=time.time()
+        self.logger.info("\t|- Get records and store on disc ...")
+        for record in records:
+            stats['tcount'] += 1
+            ## counter and progress bar
+            fcount+=1
+            if fcount <= noffs : continue
+            perc=int(fcount*100/ntotrecs)
+            bartags=perc/5 #HEW-D fcount/100
+            if perc%10 == 0 and perc != oldperc :
+                oldperc=perc
+                self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
+                sys.stdout.flush()
 
-                stats['tcount'] += 1
+            if req["lverb"] == 'JSONAPI':
 
                 # set oai_id and generate a uniquely identifier for this dataset:
                 oai_id = record['key']
-                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
 
-                jsonfile = subsetdir + '/hjson/' + os.path.basename(uid) + '.json'
+                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+                outfile = subsetdir + '/' + outtypedir + '/' + os.path.basename(uid) + '.' + outtypeext
                 try:
-                    self.logger.info('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,record['key'],uid))
-                    self.logger.debug('Try to write the harvested JSON record to %s' % jsonfile)
+                    self.logger.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,record['key'],uid))
+                    self.logger.debug('Try to write the harvested JSON record to %s' % outfile)
                     
-                    # get the raw json content:    
+                    # get the raw json content:
                     if (record is not None):
-                        ###metadata = etree.tostring(metadata, pretty_print = True) 
-                        ###metadata = metadata.encode('ascii', 'ignore')
-                        if (not os.path.isdir(subsetdir+'/hjson')):
-                           os.makedirs(subsetdir+'/hjson')
+                        record["Organisation"]=oaireq(**{'action':'organization','offset':0,'key':record["publishingOrganizationKey"]})["title"]
+                        if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
+                           os.makedirs(subsetdir+'/' + outtypedir)
                            
                         # write metadata in file:
                         try:
-                            with open(jsonfile, 'w') as f:
+                            with open(outfile, 'w') as f:
                               json.dump(record,f, sort_keys = True, indent = 4)
                         except IOError, e:
-                            self.logger.error("[ERROR] Cannot write metadata in json file '%s': %s\n" % (jsonfile,e))
+                            self.logger.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile,e))
                             stats['ecount'] +=1
                             continue
                         
                         stats['count'] += 1
-                        self.logger.debug('Harvested JSON file written to %s' % jsonfile)
+                        self.logger.debug('Harvested JSON file written to %s' % outfile)
                         
-                        # Need a new subset?
-                        if (stats['count'] == count_break):
-                        
-                            # save the stats of the old subset and get the new subsetdir:
-                            subsetdir, count_set = self.save_subset(
-                                req, stats, subset, subsetdir, count_set)
-                            
-                            self.logger.info('    | subset ( %d records) harvested in %s (if not failed).'% (
-                                stats['count'], subsetdir
-                            ))
-                            
-                            # add all subset stats to total stats and reset the temporal subset stats:
-                            for key in ['tcount', 'ecount', 'count', 'dcount']:
-                                stats['tot'+key] += stats[key]
-                                stats[key] = 0
-
-                            # start with a new time:
-                            stats['timestart'] = time.time()
                     else:
                         stats['ecount'] += 1
                         self.logger.warning('    [WARNING] No metadata available for %s' % record['key'])
@@ -479,49 +508,7 @@ class HARVESTER(object):
                     # if everything worked then delete this metadata file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
-              noffs+=100
-              data = GBIF.JSONAPI('package_list',noffs)
-                
-          else:  ## OAI-PMH harvesting of XML records using Python Sickle module
-            for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-              for f in glob.glob(s+'/xml/*.xml'):
-                # save the uid as key and the subset as value:
-                deleted_metadata[os.path.splitext(os.path.basename(f))[0]] = f
-            try:
-                oaireq=getattr(sickle,req["lverb"], None)
-                records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
-                ntotrecs=sum(1 for _ in rc)
-                self.logger.info("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))                ## records=oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate})
-            except urllib2.HTTPError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
-
-                return -1
-            except ConnectionError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
-                return -1
-            except etree.XMLSyntaxError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
-                return -1
-            except Exception, e:
-                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
-                return -1
-            noffs=0 # set to number of record, where harvesting should start
-            stats['tcount']=noffs
-            fcount=0
-            oldperc=0
-            start2=time.time()
-            for record in records:
-            ##HEW??!! for record in oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted:True,'from':self.fromdate}):
-                ## counter and progress bar
-                fcount+=1
-		if fcount <= noffs : continue
-                perc=int(fcount*100/ntotrecs)
-                bartags=perc/5 #HEW-D fcount/100
-                if perc%10 == 0 and perc != oldperc :
-                    oldperc=perc
-                    self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
-                    sys.stdout.flush()
-
+            else:  ## OAI-PMH harvesting of XML records using Python Sickle module
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
                        ##HEW-??? deleted_metadata[record.identifier] = 
@@ -536,8 +523,6 @@ class HARVESTER(object):
             	       continue
                     else:
                        oai_id = record.header.identifier
-
-                stats['tcount'] += 1
 
                 # generate a uniquely identifier for this dataset:
                 uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
@@ -568,23 +553,6 @@ class HARVESTER(object):
                         stats['count'] += 1
                         ## self.logger.debug('Harvested XML file written to %s' % xmlfile)
                         
-                        # Need a new subset?
-                        if (stats['count'] == count_break):
-                            self.logger.debug('    | %d records written to subset directory %s (if not failed).'% (
-                                stats['count'], subsetdir
-                            ))
-    
-                            # save the stats of the old subset and get the new subsetdir:
-                            subsetdir, count_set = self.save_subset(
-                                req, stats, subset, subsetdir, count_set)
-                                                        
-                            # add all subset stats to total stats and reset the temporal subset stats:
-                            for key in ['tcount', 'ecount', 'count', 'dcount']:
-                                stats['tot'+key] += stats[key]
-                                stats[key] = 0
-                            
-                            # start with a new time:
-                            stats['timestart'] = time.time()
                     else:
                         stats['ecount'] += 1
                         self.logger.warning('    [WARNING] No metadata available for %s' % oai_id)
@@ -601,22 +569,39 @@ class HARVESTER(object):
                     # if everything worked delete current file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
+                                                                
+            # Need a new subset?
+            if (stats['count'] == count_break):
+                self.logger.debug('    | %d records written to subset directory %s (if not failed).'% (
+                                stats['count'], subsetdir
+                            ))
+                subsetdir, count_set = self.save_subset(
+                                req, stats, subset, subsetdir, count_set)
+                                                        
+                # add all subset stats to total stats and reset the temporal subset stats:
+                for key in ['tcount', 'ecount', 'count', 'dcount']:
+                    stats['tot'+key] += stats[key]
+                    stats[key] = 0
+                            
+                    # start with a new time:
+                    stats['timestart'] = time.time()
+                
             self.logger.debug('    | %d records written to last subset directory %s (if not failed).'% (
                                 stats['count'], subsetdir
                             ))
 
-        except TypeError as e:
-            self.logger.error('    [ERROR] Type Error: %s' % e)
-        except NoRecordsMatch as e:
-            self.logger.error('    [ERROR] No Records Match: %s. Request: %s' % (e,','.join(request)))
-        except Exception as e:
-            self.logger.error("    [ERROR] %s" % traceback.format_exc())
-        else:
+        ##HEW_?? except TypeError as e:
+        ##HEW_??     self.logger.error('    [ERROR] Type Error: %s' % e)
+        ##HEW_?? except NoRecordsMatch as e:
+        ##HEW_??     self.logger.error('    [ERROR] No Records Match: %s. Request: %s' % (e,','.join(request)))
+        ##HEW_?? except Exception as e:
+        ##HEW_??     self.logger.error("    [ERROR] %s" % traceback.format_exc())
+        ##HEW_?? else:
 
-            # check for outdated harvested xml files and add to deleted_metadata, if not already listed
-            now = time.time()
-            for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-               for f in glob.glob(s+'/xml/*.xml'):
+        # check for outdated harvested xml files and add to deleted_metadata, if not already listed
+        now = time.time()
+        for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
+            for f in glob.glob(s+'/xml/*.xml'):
                  id=os.path.splitext(os.path.basename(f))[0]
                  if os.stat(f).st_mtime < now - 1 * 86400: ## at least 1 day old
                      if os.path.isfile(f):
@@ -625,7 +610,7 @@ class HARVESTER(object):
                         else:
                            deleted_metadata[id] = f
 
-            if (len(deleted_metadata) > 0): ##HEW and self.pstat['status']['d'] == 'tbd':
+        if (len(deleted_metadata) > 0): ##HEW and self.pstat['status']['d'] == 'tbd':
                 ## delete all files in deleted_metadata and write the subset
                 ## and the uid in '<outdir>/delete/<community>-<mdprefix>':
                 stats['totdcount']=len(deleted_metadata)
@@ -681,11 +666,11 @@ class HARVESTER(object):
                          with open(delete_file, 'a') as file:
                            file.write(uid+'\n')
 
-            # add all subset stats to total stats and reset the temporal subset stats:
-            for key in ['tcount', 'ecount', 'count', 'dcount']:
+        # add all subset stats to total stats and reset the temporal subset stats:
+        for key in ['tcount', 'ecount', 'count', 'dcount']:
                 stats['tot'+key] += stats[key]
             
-            self.logger.info(
+        self.logger.info(
                 '   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
                     stats['tottcount'],
@@ -694,8 +679,8 @@ class HARVESTER(object):
                     stats['totdcount']
                 ))
 
-            # save the current subset:
-            if (stats['count'] > 0):
+        # save the current subset:
+        if (stats['count'] > 0):
                 self.save_subset(req, stats, subset, subsetdir, count_set)
             
     def save_subset(self, req, stats, subset, subsetdir, count_set):
@@ -809,13 +794,9 @@ class MAPPER(object):
         self.enclosed = Forward()
         value = Combine(OneOrMore(Word(nonBracePrintables) ^ White(' ')))
         nestedParens = nestedExpr('(', ')', content=self.enclosed) 
-        nestedBrackets = nestedExpr('[', ']', content=self.enclosed) 
+	nestedBrackets = nestedExpr('[', ']', content=self.enclosed) 
         nestedCurlies = nestedExpr('{', '}', content=self.enclosed) 
-        self.enclosed << OneOrMore(value ^ nestedParens ^ nestedBrackets ^ nestedCurlies) 
-                
-
-
-
+        self.enclosed << OneOrMore(value | nestedParens | nestedBrackets | nestedCurlies)
 
     class cv_disciplines(object):
         """
@@ -917,7 +898,7 @@ class MAPPER(object):
             iddict=dict()
             favurl=idarr[0]
   
-            for id in idarr : ## HEW-D idarrn ??!!
+            for id in idarr :
                 if id.startswith('http://data.theeuropeanlibrary'):
                     iddict['url']=id
                 elif id.startswith('ivo:'):
@@ -1091,6 +1072,8 @@ class MAPPER(object):
         desc=''
         pattern = re.compile(r";|\s+")
         try:
+          if type(invalue) is list :
+            invalue=invalue[0]
           if type(invalue) is dict :
             coordict=dict()
             if "description" in invalue :
@@ -1195,32 +1178,44 @@ class MAPPER(object):
  
         return invalue
 
-    def list2dictlist(self,invalue,valuearrsep):
+    def list2dictlist(self,invalue,valuearrsep, dictEn):
         """
-        transfer list of strings to list of dict's { "name" : "substr1" } and
+        transfer list of strings/dicts to list of dict's { "name" : "substr1" } and
           - eliminate duplicates, numbers and 1-character- strings, ...      
         """
 
-        dictlist=[]
-        if type(invalue) is not list :
-            invalue=[x.strip() for x in invalue.split(';')]
-            invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
-        for lentry in invalue :
-            if type(lentry) is dict :
-                valarr=lentry.values()
-            else:
-                valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
-            for entry in valarr:
-               entry = re.sub(r'[^a-zA-Z0-9]', ' ',entry).strip()
-               if entry.isdigit() or len(entry)==1 : continue ## eleminate digit and 1 letter values
-               if entry :
-                   if len(entry.split()) > 3:
-                        entry=' '.join(entry.split()[:4])
-                   if len(entry.split('=')) > 1:
-                        entry=entry.split('=')[1]
-                   entrydict={ "name": entry }  
-                   dictlist.append(entrydict.copy())
-        return dictlist
+        try:
+            dictlist=[]
+            if isinstance(invalue,dict):
+                dictlist.append(invalue)
+            elif not isinstance(invalue,list):
+                invalue=invalue.split(';')
+                invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
+                for lentry in invalue :
+                    if type(lentry) is dict :
+                        valarr=lentry.values()
+                    else:
+                        valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
+                
+                    for entry in valarr:
+                        if type(entry) is int or not dictEn.check(entry) : continue ## eleminate integers and not English words
+                        entry=entry.strip()
+                        if len(entry)==1 : continue ## eleminate 1 letter values
+                        if entry :
+                            if len(entry.split()) > 3:
+                                entry=' '.join(entry.split()[:4])
+                            if len(entry.split('=')) > 1:
+                                entry=entry.split('=')[1]
+                        entrydict={ "name": entry }  
+                        dictlist.append(entrydict.copy())
+        except AttributeError, err :
+            log.error('[ERROR] %s in list2dictlist of invalue %s' % (err,invalue))
+            return None
+        except Exception, e:
+            log.error('[ERROR] %s in list2dictlist of invalue %s ' % (e,invalue))
+            return None
+        else:
+            return dictlist
 
     def uniq(self,input):
         output = []
@@ -1856,7 +1851,8 @@ class MAPPER(object):
 
         # instance of B2FIND discipline table
         disctab = self.cv_disciplines()
-
+        # instance of British English dictionary
+        dictEn = enchant.Dict("en_GB")
         # loop over all files (harvested records) in input path ( path/xml or path/hjson) 
         ##HEW-D  results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
         files = filter(lambda x: x.endswith(infformat), os.listdir(path+insubdir))
@@ -1930,26 +1926,26 @@ class MAPPER(object):
                 publdate=None
                 # loop over all fields
                 for facet in jsondata: # default CKAN fields
-                   ## print 'facet %s ...' % facet
+                   log.debug('facet %s ...' % facet)
                    if facet == 'author':
                          jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
                          jsondata[facet] = self.remove_duplicates(jsondata[facet])
                    elif facet == 'tags':
-                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
+                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ",dictEn)
                    elif facet == 'url':
-                       iddict = self.map_identifiers(jsondata[facet])
-                   elif facet == 'DOI':
                        iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'extras': # Semantic mapping of extra CKAN fields
                       try:
                          for extra in jsondata[facet]:
-                            ### print 'facet >%s< ...' % extra['key']
+                            log.debug('extra:facet %s ...' % extra['key'])
                             if type(extra['value']) is list:
                               extra['value']=self.uniq(extra['value'])
                               if len(extra['value']) == 1:
                                  extra['value']=extra['value'][0] 
-                            if extra['key'] == 'Discipline': # generic mapping of discipline
-                              extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
+                            if extra['key'] == 'DOI':
+                                iddict = self.map_identifiers(extra['value'])
+                            elif extra['key'] == 'Discipline': # generic mapping of discipline
+                                extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
                             elif extra['key'] == 'Publisher':
                               extra['value'] = self.cut(extra['value'],'=',2)
                             elif extra['key'] == 'SpatialCoverage':
@@ -2089,40 +2085,61 @@ class MAPPER(object):
 
     def is_valid_value(self,facet,value):
         """
-        checks if value is the correct for the given facet
+        checks if value is the consitent for the given facet
         """
-        if self.str_equals(facet,'Discipline'):
-            if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
-                return False
+        vall=list()
+        if facet in ['title','notes','author','Publisher']:
+            if isinstance(value, str) or isinstance(value, unicode):
+                vall.append(value)
+                return vall
             else :
-                return True
-        if self.str_equals(facet,'PublicationYear'):
+                return []
+        elif facet in ['url','DOI','PID']:
+            if isinstance(value, str) or isinstance(value, unicode):
+                vall.append(value)
+                return vall
+            else :
+                return []
+
+        elif self.str_equals(facet,'Discipline'):
+            if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
+                return []
+            else :
+                vall.append(value)
+                return vall
+        elif self.str_equals(facet,'PublicationYear'):
             try:
                 datetime.datetime.strptime(value, '%Y')
             except ValueError:
                 errmsg = "%s value %s has incorrect data format, should be YYYY" % (facet,value)
-                return False
+                return []
             else:
-                return True
-        if self.str_equals(facet,'PublicationTimestamp'):
+                vall.append(value)
+                return vall
+        elif self.str_equals(facet,'PublicationTimestamp'):
             try:
                 datetime.datetime.strptime(value, '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
             except ValueError:
                 errmsg = "%s value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (facet,value)
-                return False
+                return []
             else:
-                return True
-            ##HEW-D return isUTC(value)
-        ##HEW!!!        if self.str_equals(facet,'url'): 
-        ##HEW!!!                return self.check_url(value)
-        if self.str_equals(facet,'Language'):
-            ##HEW-CHGreturn language_exists(value)
+                vall.append(value)
+                return vall
+        elif self.str_equals(facet,'Language'):
             if self.map_lang(value) is None:
-                return False
+                return []
             else:
-                return True
-        if self.str_equals(facet,'Country'):
-            return country_exists(value)
+                vall.append(value)
+                return vall
+        elif self.str_equals(facet,'tags'):
+            for dict in value:
+               vall.append(dict["name"])
+            pvalue=vall
+
+            return vall
+        else:
+            vall.append(value)
+            return vall
         # to be continued for every other facet
     
     def validate(self,community,mdprefix,path):
@@ -2238,14 +2255,17 @@ class MAPPER(object):
                             if self.str_equals(extra['key'],facet):
                                 value = extra['value']                   
                     if value:
-                        totstats[facet]['mapped']+=1  
-                        if type(value) is list or type(value) is dict :
-                            log.debug('    | [ERROR] Value %s is of type %s' % (value,type(value)))
+                        totstats[facet]['mapped']+=1
+                        pvalue=self.is_valid_value(facet,value)
+                        log.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value,type(value),pvalue))
+                        if pvalue and len(pvalue) > 0:
+                            totstats[facet]['valid']+=1  
+                            if type(pvalue) is list :
+                                totstats[facet]['vstat'].extend(pvalue)
+                            else:
+                                totstats[facet]['vstat'].append(pvalue)
                         else:
-                            if self.is_valid_value(facet,value):
-                               totstats[facet]['valid']+=1  
-
-                            totstats[facet]['vstat'].append(value)
+                            totstats[facet]['vstat']=[]  
                     else:
                         if facet == 'title':
                            log.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
@@ -2494,7 +2514,7 @@ class UPLOADER (object):
     # .get_packages(community)  - Gets the details of all packages from a community in CKAN and store those in <UPLOADER.package_list>
     # .upload(dsname, dsstatus,
     #   community, jsondata)    - Uploads a dataset to a CKAN portal
-    # .validate(jsondata)       - Validates the fields in the <jsondata> by using B2FIND standard
+    # .check(jsondata)       - Validates the fields in the <jsondata> by using B2FIND standard
     #
     # Usage:
     # ------
@@ -2503,7 +2523,7 @@ class UPLOADER (object):
     UP = UPLOADER(CKAN,OUT)
 
     # VALIDATE JSON DATA
-    if (not UP.validate(jsondata)):
+    if (not UP.check(jsondata)):
         print "Dataset is broken or does not pass the B2FIND standard"
 
     # CHECK DATASET IN CKAN

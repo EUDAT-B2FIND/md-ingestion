@@ -133,7 +133,7 @@ def main():
     logger.info("Loop over processes and related requests :\n")
     logger.info('|- <Process> started : %s' % "<Time>")
     logger.info(' |- Joblist: %s' % "<Filename of request list>")
-    logger.info('   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<No or Request>','<Request description>','<Status>','<Time>'))
+    logger.info('   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<ReqNo.>','<Request description>','<Status>','<Time>'))
 
 
 

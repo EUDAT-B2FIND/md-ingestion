@@ -85,6 +85,8 @@ clarin  http://clarin.dk/oaiprovider ListIdentifiers cmdi ucph_
 # Viena Language resources #h=    ?= #DASISH = 14324
 clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
 ## CESSDA endpoint
+cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi test
+cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_dc test
 #h=115
 cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi dda_
 #h=227
@@ -104,11 +106,28 @@ cessda http://oai.datacite.org/oai ListIdentifiers  oai_dc SND.SND
 #h=6135 ?= #DASISH = 6073
 cessda http://oai.datacite.org/oai ListIdentifiers  oai_dc BL.UKDA
 ##<!-- DANS with CMDI support --> #h=1000 == #DASISH
-cessda http://oai.clarin-beta.dans.knaw.nl/OAIHandler  ListIdentifiers cmdi dans_cmdi 
+cessda http://oai.clarin-beta.dans.knaw.nl/OAIHandler  ListIdentifiers cmdi easy_dataset_ 
 ##<!-- DANS easy, does not support CMDI, fall back to DC --> #h=28551 ?= #DASISH=28404
 cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc dans-easy_
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D10000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D20000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D31000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D32000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D33000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D34000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D35000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D36000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D37000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D30000:D38000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D40000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D50000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D60000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc D70000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc driver
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc E10000
+cessda http://easy.dans.knaw.nl/oai ListIdentifiers oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
-gbif http://api.gbif.org/v1 JSONAPI json new_
+gbif http://api.gbif.org/v1 JSONAPI json
 ##%%% EUDAT B2SHARE
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON

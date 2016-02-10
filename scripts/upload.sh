@@ -14,22 +14,14 @@ then
 else
    upload_list="upload_list_${TODAY}"
 fi
-##upload_list="upload_list_datacite_${TODAY}"
-##HEW-!!! upload_list="${WORK}/upload_list_${YESTERDAY}"
 
-##epiccheck=''
-##ckancheck="--ckan_check='True'"
 case $lhost in
   eudat-b1.dkrz.de)
    rhost=eudat-b1.dkrz.de:8080
-   ##HEW-??? rhost=eudat-b1.dkrz.de
-##HEW-T   rhost=eudat6b.dkrz.de
-   ##HEW-D!!! epiccheck='--epic_check credentials_11098'
    ;;
   eudatmd1.dkrz.de) 
-   ##rhost=b2find.eudat.eu:8080
    rhost=eudatmd1.dkrz.de:8080
-   epiccheck='--epic_check credentials_11098'
+   handlecheck='--handle_check credentials_11098'
    ;;
   *)
    rhost=eudat6b.dkrz.de
@@ -77,7 +69,7 @@ do
   echo -e "\tProcess $npfrec json records provided in directories of $file"
   ((ntotrec = ntotrec + npfrec ))
 
-  nohup ./manager.py -l $file --mode u -i $rhost $ckancheck $epiccheck 2>log/${file}.out >log/${file}.err && mv $file DONE/ &
+  nohup ./manager.py -l $file --mode u -i $rhost $ckancheck $handlecheck 2>log/${file}.out >log/${file}.err && mv $file DONE/ &
 done
 echo " $ntotrec json records provided in dirs of $upload_list "
 wait
@@ -92,6 +84,7 @@ then
 fi
 
 mv ${upload_list} DONE/
+rm DONE/${upload_list}.??
 echo "[INFO] End of parallel processing of DONE/${upload_list} at $(date)"
 
 exit 0
