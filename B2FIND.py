@@ -962,10 +962,6 @@ class MAPPER(object):
                     try: return iso639.languages.get(name=l.title())
                     except KeyError: pass
 
-        ## for facet in dataset:
-        ##    if facet == 'extras':
-        ##        for extra in dataset[facet]:
-        ##            if extra['key'] == 'Language':
         mcountry = mlang(invalue)
         if mcountry:
             newvalue = mcountry.name
@@ -1984,6 +1980,8 @@ class MAPPER(object):
                    ##    ### mapping of default string fields
                    ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
                 if iddict:
+                  for key in iddict:
+                      jsondata['extras']=[x for x in jsondata['extras'] if not (key == x.get('key'))]
                   for key in iddict:
                     if key == 'url':
                         if community =='hdcp2':
