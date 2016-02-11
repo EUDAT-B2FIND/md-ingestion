@@ -54,7 +54,7 @@ import io
 from pyparsing import *
 import Levenshtein as lvs
 import iso639
-import enchant
+##import enchant
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
@@ -1178,7 +1178,7 @@ class MAPPER(object):
  
         return invalue
 
-    def list2dictlist(self,invalue,valuearrsep, dictEn):
+    def list2dictlist(self,invalue,valuearrsep):
         """
         transfer list of strings/dicts to list of dict's { "name" : "substr1" } and
           - eliminate duplicates, numbers and 1-character- strings, ...      
@@ -1186,33 +1186,39 @@ class MAPPER(object):
 
         try:
             dictlist=[]
+            valarr=[]
             if isinstance(invalue,dict):
-                dictlist.append(invalue)
+                invalue=invalue.values()
             elif not isinstance(invalue,list):
                 invalue=invalue.split(';')
                 invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
-                for lentry in invalue :
+            for lentry in invalue :
+                try:
                     if type(lentry) is dict :
-                        valarr=lentry.values()
+                        if lentry["value"]:
+                            valarr.append(lentry["value"])
+                        else:
+                            valarr=lentry.values()
                     else:
                         valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
-                
                     for entry in valarr:
-                        if type(entry) is int or not dictEn.check(entry) : continue ## eleminate integers and not English words
-                        entry=entry.strip()
-                        if len(entry)==1 : continue ## eleminate 1 letter values
-                        if entry :
-                            if len(entry.split()) > 3:
-                                entry=' '.join(entry.split()[:4])
-                            if len(entry.split('=')) > 1:
-                                entry=entry.split('=')[1]
-                        entrydict={ "name": entry }  
-                        dictlist.append(entrydict.copy())
+                        ## if type(entry) is int or not dictEn.check(entry) : continue ## eleminate integers and not English words
+                        if isinstance(entry,int) : continue
+                        entry=str(entry).strip()
+                        ##if len(entry)==1 : continue ## eleminate 1 letter values
+                        dictlist.append({ "name": entry })
+                except AttributeError, err :
+                    log.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
+                    continue
+                except Exception, e:
+                    log.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
+                    continue
+
         except AttributeError, err :
             log.error('[ERROR] %s in list2dictlist of invalue %s' % (err,invalue))
             return None
-        except Exception, e:
-            log.error('[ERROR] %s in list2dictlist of invalue %s ' % (e,invalue))
+        except Exception, err:
+            log.error('[ERROR] %s in list2dictlist of invalue %s' % (err,invalue))
             return None
         else:
             return dictlist
@@ -1852,7 +1858,7 @@ class MAPPER(object):
         # instance of B2FIND discipline table
         disctab = self.cv_disciplines()
         # instance of British English dictionary
-        dictEn = enchant.Dict("en_GB")
+        ##HEW-T dictEn = enchant.Dict("en_GB")
         # loop over all files (harvested records) in input path ( path/xml or path/hjson) 
         ##HEW-D  results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
         files = filter(lambda x: x.endswith(infformat), os.listdir(path+insubdir))
@@ -1931,7 +1937,7 @@ class MAPPER(object):
                          jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
                          jsondata[facet] = self.remove_duplicates(jsondata[facet])
                    elif facet == 'tags':
-                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ",dictEn)
+                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                    elif facet == 'url':
                        iddict = self.map_identifiers(jsondata[facet])
                    elif facet == 'extras': # Semantic mapping of extra CKAN fields
@@ -2134,8 +2140,6 @@ class MAPPER(object):
         elif self.str_equals(facet,'tags'):
             for dict in value:
                vall.append(dict["name"])
-            pvalue=vall
-
             return vall
         else:
             vall.append(value)
@@ -2282,16 +2286,23 @@ class MAPPER(object):
         for field in self.b2findfields : ## totstats:
           if float(fcount) > 0 :
             printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['xpath'],totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
-            counter=collections.Counter(totstats[field]['vstat'])
-            if totstats[field]['vstat']:
-                for tuple in counter.most_common(10):
-                    if len(tuple[0]) > 80 : 
-                        contt='[...]' 
-                    else: 
-                        contt=''
-                    printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
-                    if self.OUT.verbose > 1:
-                        print printstats
+            try:
+                counter=collections.Counter(totstats[field]['vstat'])
+                if totstats[field]['vstat']:
+                    for tuple in counter.most_common(10):
+                        if len(tuple[0]) > 80 : 
+                            contt='[...]' 
+                        else: 
+                            contt=''
+                            printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
+                            if self.OUT.verbose > 1:
+                                print printstats
+            except TypeError as e:
+                self.logger.error('    [ERROR] TypeError: %s field %s' % (e,field))
+                continue
+            except Exception as e:
+                self.logger.error('    [ERROR] %s field %s' % (e,field))
+                continue
 
         f = open(outfile, 'w')
         f.write(printstats)
