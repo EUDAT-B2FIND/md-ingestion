@@ -385,7 +385,9 @@ def process_validate(MP, rlist):
         
 def process_oaiconvert(MP, rlist):
 
+    ir=0
     for request in rlist:
+        ir+=1
         logger.info('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         rcstart = time.time()
         
@@ -503,16 +505,12 @@ def process_upload(UP, rlist, options):
             ds_id = os.path.splitext(filename)[0]
             
             logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
-            
+
             # get OAI identifier from json data extra field 'oai_identifier':
-            oai_id  = None
-            for extra in jsondata['extras']:
-                if(extra['key'] == 'oai_identifier'):
-                    oai_id = extra['value']
-                    break
+            oai_id = jsondata['oai_identifier'][0]
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
-            ### VALIDATE JSON DATA
+            ### CHECK JSON DATA
             if (UP.check(jsondata) < 1):
                 logger.info('        |-> Could not upload %s' % pathfname )
                 results['ecount'] += 1
@@ -534,23 +532,18 @@ def process_upload(UP, rlist, options):
             elif (community == 'sdl'):
                 mdaccess =reqpre+'&identifier=oai::record/'+oai_id
 
-            jsondata['extras'].append({
-                     "key" : "MetaDataAccess",
-                     "value" : mdaccess
-                    })
+            ###HEW!!! if (field.split('.')[0] == 'extras'): # append extras field
+            ###HEW!!!        self.add_unique_to_dict_list(newds['extras'], field.split('.')[1], value)
+
+            ## Move all CKAN extra fields to the list jsondata['extras']
             
+            jsondata['MetaDataAccess']=mdaccess
+
+            jsondata=UP.json2ckan(jsondata)
+
             # determine checksum of json record and append
             try:
-                # delete the extra field 'MapperVersion' from check_data
-                check_data = copy.deepcopy(jsondata)
-                extras_counter = 0
-                for extra in check_data['extras']:
-                    if(extra['key'] == 'MapperVersion'):
-                        check_data['extras'].pop(extras_counter)
-                        break
-                    extras_counter  += 1
-                    
-                checksum=hashlib.md5(unicode(json.dumps(check_data))).hexdigest()
+                checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
             except UnicodeEncodeError:
                 logger.error('        |-> [ERROR] Unicode encoding failed during md checksum determination')
                 checksum=None
@@ -614,7 +607,7 @@ def process_upload(UP, rlist, options):
                     logger.info('        |-> Update of %s record succeed' % dsstatus )
                     upload=1
                 else:
-                    logger.error('        |-> Upload of %s record failed ' % dsstatus )
+                    logger.error('        |-> Upload of %s record %s failed ' % (dsstatus, ds_id ))
             
             # update PID in handle server                           
             if (options.handle_check):

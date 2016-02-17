@@ -751,10 +751,10 @@ class MAPPER(object):
         
         # B2FIND metadata fields
         self.b2findfields = list()
-        self.b2findfields =[
+        self.b2findfields = [
                    "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
         self.b2findfields =[
-                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","Language","TemporalCoverage","SpatialCoverage","Format","Contact","MetadataAccess"]
+                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
 
 
         self.ckan2b2find = OrderedDict()
@@ -781,6 +781,24 @@ class MAPPER(object):
                    "Format" : "format",
                    "Contact" : "contact",
                    "MetadataAccess" : "metadata"
+                              }  
+
+        self.json2ceraexp = OrderedDict()
+        self.json2ceraexp={
+                   "tags" : "KEY_CONNECT.GENERAL_KEY",
+                   "author" : "AUTHORS", 
+                   "Contact" : "Contact",
+                              }  
+
+        self.json2cerads = OrderedDict()
+        self.json2cerads={
+                   "title" : ["entry_name","Coverage.location_name"], 
+                   "notes" : "summary.accuracy_report",
+                   "url" : "entry_acronym", 
+                   "Discipline" : "summary",
+                   "TemporalCoverage" : "Coverage",
+                   "SpatialCoverage" : "Coverage.location_name",
+                   "Format" : "Distribution.format_acronym",
                               }  
 
         ## settings for pyparsing
@@ -857,7 +875,7 @@ class MAPPER(object):
         else:
             return '' # if converting cannot be done, make date empty
 
-    def replace(self,setname,dataset,facetName,old_value,new_value):
+    def replace(self,setname,dataset,facet,old_value,new_value):
         """
         replaces old value - can be a regular expression - with new value for a given facet
         """
@@ -865,21 +883,13 @@ class MAPPER(object):
         try:
           old_regex = re.compile(old_value)
 
-          for facet in dataset:
-            if facet == facetName :
-               if re.match(old_regex, dataset[facet]):
-                  dataset[facet] = new_value
+          for key in dataset:
+            if key == facet :
+               if re.match(old_regex, dataset[key]):
+                  dataset[key] = new_value
                   return dataset
-            if facet == 'extras':
-                for extra in dataset[facet]:
-                    if extra['key'] == facetName :
-                       if type(extra['value']) is not list:
-                         m=re.match(old_regex, extra['value'])
-                         if m :
-                           extra['value'] = new_value
-                           return dataset
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in replace of invalue %s with new_value %s according pattern match %s' % (e,extra['value'],new_value,old_value))
+           self.logger.error('[ERROR] : %s - in replace of pattern %s in facet %s with new_value %s' % (e,old_value,facet,new_value))
            return dataset
         else:
            return dataset
@@ -894,11 +904,11 @@ class MAPPER(object):
         Licensed under AGPLv3.
         """
         try:
-            idarr=invalue.split(";")
+            ## idarr=invalue.split(";")
             iddict=dict()
-            favurl=idarr[0]
+            favurl=invalue[0]  ### idarr[0]
   
-            for id in idarr :
+            for id in invalue :
                 if id.startswith('http://data.theeuropeanlibrary'):
                     iddict['url']=id
                 elif id.startswith('ivo:'):
@@ -925,7 +935,7 @@ class MAPPER(object):
             if not 'url' in iddict :
                 iddict['url']=favurl
         except Exception, e:
-            self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue.split(';')[0]))
+            self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
             return iddict
@@ -962,11 +972,13 @@ class MAPPER(object):
                     try: return iso639.languages.get(name=l.title())
                     except KeyError: pass
 
-        mcountry = mlang(invalue)
-        if mcountry:
-            newvalue = mcountry.name
-            return newvalue
-        return None
+        newvalue=list()
+        for lang in invalue:
+            mcountry = mlang(lang)
+            if mcountry:
+                newvalue.append(mcountry.name)
+
+        return newvalue
  
     def map_geonames(self,invalue):
         """
@@ -1068,37 +1080,33 @@ class MAPPER(object):
         desc=''
         pattern = re.compile(r";|\s+")
         try:
-          if type(invalue) is list :
-            invalue=invalue[0]
-          if type(invalue) is dict :
-            coordict=dict()
-            if "description" in invalue :
-               desc=invalue["description"]
-            if "boundingBox" in invalue :
-               coordict=invalue["boundingBox"]
-               desc+=' : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
-            ## slat,wlon,nlat,elon=
-               return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
-            else:
-               return(desc,None,None,None,None)
-          else:
-            inarr=pattern.split(invalue)
-            coordarr=list()
-            nc=0
-            for str in inarr:
-              if self.is_float_try(str) is True : ##HEW-D type(str) is float :
-                coordarr.append(str)
-                nc+=1
+          if type(invalue) is not list :
+              invalue=[invalue]
+          coordarr=list()
+          nc=0
+          for val in invalue:
+              if type(val) is dict :
+                  coordict=dict()
+                  if "description" in val :
+                      desc=val["description"]
+                  if "boundingBox" in val :
+                      coordict=val["boundingBox"]
+                      desc+=' : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+                  return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
               else:
-                desc+=' '+str
-            if len(coordarr)==2 :
+                  ##inarr=pattern.split(val)
+                  ##HEW-T 
+                  if self.is_float_try(val) is True :
+                      coordarr.append(val)
+                      nc+=1
+                  else:
+                      desc+=' '+val
+          if len(coordarr)==2 :
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[0],coordarr[1])
               return(desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-            elif  len(coordarr)==4 :
+          elif len(coordarr)==4 :
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
               return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-            else:
-              return(None,None,None,None,None)
         except Exception, e:
            self.logger.error('[ERROR] : %s - in map_spatial %s can not converted !' % (e,invalue))
            return (None,None,None,None,None) 
@@ -1150,9 +1158,10 @@ class MAPPER(object):
         else:
             return 'Not stated' 
    
-    def cut(self,invalue,pattern,nfield):
+    def cut(self,invalue,pattern,nfield=None):
         """
-        If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
+        Invalue is expected as list. Loop over invalue and for each elem : 
+           - If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
         else if pattern is in invalue, split according to pattern and return field nfield (if 0 return the first found pattern),
         else return invalue.
 
@@ -1160,19 +1169,26 @@ class MAPPER(object):
         Licensed under AGPLv3.
         """
 
-        ##HEW??? pattern = re.compile(pattern)
-        if pattern is None :
-           return invalue[nfield]           
-        elif re.findall(pattern, invalue) :
-           rep=re.findall(pattern, invalue)[0]
-           if nfield == 0 :
-                return rep
-           if rep in invalue:
-               return invalue.split(rep)[nfield-1]
+        outvalue=list()
+        if isinstance(invalue,list):
+            for elem in invalue:
+                if pattern is None :
+                    if nfield :
+                        outvalue.append(elem[nfield])
+                    else:
+                        outvalue.append(elem)
+                else:
+                    rep=re.findall(pattern, elem)
+                    if len(rep) > 0 :
+                        outvalue.append(rep[nfield])
+                    else:
+                        outvalue.append(elem)
+                        
         else:
-           return invalue
- 
-        return invalue
+            log.error('[ERROR] : cut expects as invalue (%s) a list' % invalue)
+            ## return None
+
+        return outvalue
 
     def list2dictlist(self,invalue,valuearrsep):
         """
@@ -1202,7 +1218,7 @@ class MAPPER(object):
                         if isinstance(entry,int) : continue
                         entry=str(entry).strip()
                         ##if len(entry)==1 : continue ## eleminate 1 letter values
-                        dictlist.append({ "name": entry })
+                        dictlist.append({ "name": entry.replace('/','-') })
                 except AttributeError, err :
                     log.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
                     continue
@@ -1219,12 +1235,13 @@ class MAPPER(object):
         else:
             return dictlist
 
-    def uniq(self,input):
-        output = []
-        for x in input:
-            if x not in output:
-                output.append(x)
-        return output
+    def uniq(self,input,joinsep=None):
+        uniqset = set(input)
+
+        ##if joinsep :
+        ##    return joinsep.join(list(set))
+        ##else :
+        return list(uniqset)
 
 
     def concat(self,str1,str2):
@@ -1263,48 +1280,6 @@ class MAPPER(object):
 
         return sec
 
-    def remove_duplicates(self,invalue):
-        """
-        remove duplicates from ';' separted string or given list     
-
-        Copyright (C) 2014 Heinrich Widmann
-        Licensed under AGPLv3.
-        """
-
-        if type(invalue) is not list :
-            invalue=[x.strip() for x in invalue.split(';')]
-        invalue=list(OrderedDict.fromkeys(invalue)) ## this elemenates real duplicates
-        retval=[]
-        for entry in invalue:
-          entry = entry.replace('\n',' ').replace('\r',' ').strip(',;: ')
-          if entry :
-            try:
-              out=self.enclosed.parseString(entry).asList()
-              if type(out[0]) is list :
-                  entry=out[0][0]
-                  if type(entry) is list:
-			entry=entry[0]
-              else:
-                  entry=out[0]
-            except ParseException, err :
-                  log.error('    | [ERROR] %s , during parsing of %s' % (err,entry))
-          else:
-            continue
-
-          if entry in ['not applicable']:
-             ##invalue.remove(entry)
-             continue
-          reventry=entry.split(',')
-          if (len(reventry) > 1): 
-              reventry.reverse()
-              reventry=' '.join(reventry)
-              ##revvalarr.append(reventry)
-              for reventry in retval:
-                 if reventry == entry :
-                    retval.remove(reventry)
-          retval.append(entry)
-        return '; '.join(retval)       
-      
     def splitstring2dictlist(self,dataset,facetName,valuearrsep,entrysep):
         """
         split string in list of string and transfer to list of dict's [ { "name1" : "substr1" }, ... ]      
@@ -1317,7 +1292,7 @@ class MAPPER(object):
             dicttagslist=[]
             for entry in valarr:
                if entry in na_arr : continue
-               entrydict={ "name": entry }  
+               entrydict={ "name": entry.replace('/','-') }  
                dicttagslist.append(entrydict)
        
             dataset[facet]=dicttagslist
@@ -1327,8 +1302,8 @@ class MAPPER(object):
     def changeDateFormat(self,dataset,facetName,old_format,new_format):
         """
         changes date format from old format to a new format
-        current assumption is that the old format is anything (indicated in the config file 
-        by * ) and the new format is UTC
+        current assumption is that the old format is anything (indicated in the 
+        config file by * ) and the new format is UTC
         """
         for facet in dataset:
             if self.str_equals(facet,facetName) and old_format == '*':
@@ -1337,14 +1312,6 @@ class MAPPER(object):
                     new_date = date2UTC(old_date)
                     dataset[facet] = new_date
                     return dataset
-            if facet == 'extras':
-                for extra in dataset[facet]:
-                    if self.str_equals(extra['key'],facetName) and old_format == '*':
-                        if self.str_equals(new_format,'UTC'):
-                            old_date = extra['value']
-                            new_date = self.date2UTC(old_date)
-                            extra['value'] = new_date
-                            return dataset
         return dataset
 
     def normalize(self,x):
@@ -1610,14 +1577,12 @@ class MAPPER(object):
 
     def jsonmdmapper(self,dataset,jrules):
         """
-        changes JSON dataset field values according to configuration
+        changes JSON dataset field values according to mapfile
         """  
         format = 'VALUE'
         newds=dict()
-        newds['extras']=[]
       
         for rule in jrules:
-           ##HEW-T print 'rule %s' % rule.strip('\n')
            if rule.startswith('#'):
              continue
            field=rule.strip('\n').split(' ')[0]
@@ -1636,13 +1601,11 @@ class MAPPER(object):
                 else:
                      continue
 
-              if (field.split('.')[0] == 'extras'): # append extras field
-                   self.add_unique_to_dict_list(newds['extras'], field.split('.')[1], value)
-              else: # default field
-                   if not field in newds:
-                     newds[field]=value
-                   else:
-                     continue
+                # default field
+                if not field in newds:
+                    newds[field]=value
+                else:
+                    continue
            except Exception as e:
                 self.logger.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
                 continue
@@ -1670,10 +1633,8 @@ class MAPPER(object):
             new_value = rule[4]
             action = rule[5]
                         
-            r = dataset.get("extras",None)
-            if filter(lambda extra: extra['key'] == 'oai_set', r):
-              oai_set=filter(lambda extra: extra['key'] == 'oai_set', r)[0]['value']
-    
+            oai_set=dataset['oai_set']
+
             ## call action
             if action == "replace":
                 dataset = self.replace(setName,dataset,facetName,old_value,new_value)
@@ -1681,8 +1642,6 @@ class MAPPER(object):
 ##                dataset = self.truncate(dataset,facetName,old_value,new_value)
             elif action == "changeDateFormat":
                 dataset = self.changeDateFormat(dataset,facetName,old_value,new_value)
-##            elif action == 'remove_duplicates':
-##                dataset = self.remove_duplicates(dataset,facetName,old_value,new_value)
             elif action == 'splitstring2dictlist':
                 dataset = self.splitstring2dictlist(dataset,facetName,old_value,new_value)
             elif action == "another_action":
@@ -1695,7 +1654,8 @@ class MAPPER(object):
 
         return dataset
     
-    def evalxpath(self,obj, expr, ns):
+    def evalxpath(self, obj, expr, ns):
+        # returns list of selected entries from xml obj using xpath expr
         flist=re.split(r'[\(\),]',expr.strip()) ### r'[(]',expr.strip())
         retlist=list()
         for func in flist:
@@ -1720,12 +1680,11 @@ class MAPPER(object):
         return retlist
 
     def xpathmdmapper(self,xmldata,xrules,namespaces):
+        # returns list or string, selected from xmldata by xpath rules (and namespaces)
         self.logger.debug(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
 
-        defaultf={'title','author','notes','url','tags'}
         jsondata=dict()
-        jsondata["extras"]=list()
-        ##           namespaces = {'dc':'http://purl.org/dc/elements/1.1/'}
+
         for line in xrules:
           try:
             m = re.match(r'(\s+)<field name="(.*?)">', line)
@@ -1738,29 +1697,21 @@ class MAPPER(object):
                 m3 = rs.search(line)
                 if m3:
                     xstring=m3.group(3)
-                    jsondata["extras"].append({"key" : field, "value" : xstring })
-                    self.logger.debug(' | %10s | %10s | %10s | \n' % (field,xstring,xstring))
+                    retval=xstring
                 elif m2:
                     xpath=m2.group(3)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
-                    if len(retval)==0 : 
-                        if field == 'Discipline':
-			   retval=['Not stated']
-                        else:
-                           continue	
-                    if field == 'fulltext':
-                        retval=' '.join([unicode(i).strip() for i in retval])
-                        ##retval=' '.join([unicode(i) for i in vallist]) ## ''.join(retval).replace('\n', ' ').split()])
-                        jsondata[field]=retval ## gxpath(xmldata, xpath, namespaces)
-                    elif field in defaultf:
-                        retval=';'.join(retval)
-                        jsondata[field]=retval ## gxpath(xmldata, xpath, namespaces)
-                    else: ## extra field
-                        retval=';'.join(retval)
-                        jsondata["extras"].append({"key" : field, "value" : retval })
-                    self.logger.debug(' | %10s | %10s | %10s | \n' % (field,xpath,retval))                    
                 else:
                     continue
+                if len(retval)==0 : 
+                    if field == 'Discipline':
+                        retval=['Not stated']
+                    continue
+                elif field == 'fulltext':
+                    retval=' '.join([unicode(i).strip() for i in retval])
+                jsondata[field]=retval ## gxpath(xmldata, xpath, namespaces)
+                
+                self.logger.debug(' | %10s | %10s | %10s | \n' % (field,xpath,retval[:30]))                    
           except Exception as e:
               log.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tvalue\t%s' % (e,field,xpath,retval))
               continue
@@ -1902,7 +1853,7 @@ class MAPPER(object):
                     except Exception as e:
                         log.error('    | [ERROR] %s : during %s 2 json processing' % (infformat,e) )
                         results['ecount'] += 1
-                        continue ##HEW??? exit()
+                        continue
                 else:
                     try:
                         # Run Python XPATH converter
@@ -1922,89 +1873,75 @@ class MAPPER(object):
                     continue
 
                 iddict=dict()
+                blist=list()
                 spvalue=None
                 stime=None
                 etime=None
                 publdate=None
                 # loop over all fields
-                for facet in jsondata: # default CKAN fields
+                for facet in jsondata:
                    log.debug('facet %s ...' % facet)
-                   if facet == 'author':
-                         jsondata[facet] = self.cut(jsondata[facet],'\(\d\d\d\d\)',1).strip()
-                         jsondata[facet] = self.remove_duplicates(jsondata[facet])
-                   elif facet == 'tags':
-                         jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
-                   elif facet == 'url':
-                       iddict = self.map_identifiers(jsondata[facet])
-                   elif facet == 'extras': # Semantic mapping of extra CKAN fields
-                      try:
-                         for extra in jsondata[facet]:
-                            log.debug('extra:facet %s ...' % extra['key'])
-                            if type(extra['value']) is list:
-                              extra['value']=self.uniq(extra['value'])
-                              if len(extra['value']) == 1:
-                                 extra['value']=extra['value'][0] 
-                            if extra['key'] == 'DOI':
-                                iddict = self.map_identifiers(extra['value'])
-                            elif extra['key'] == 'Discipline': # generic mapping of discipline
-                                extra['value'] = self.map_discipl(extra['value'],disctab.discipl_list)
-                            elif extra['key'] == 'Publisher':
-                              extra['value'] = self.cut(extra['value'],'=',2)
-                            elif extra['key'] == 'SpatialCoverage':
-                               spdesc,slat,wlon,nlat,elon=self.map_spatial(extra['value'])
-                               if wlon and slat and elon and nlat :
-                                 spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                                 ##extra['value']+=' boundingBox : [ %s , %s , %s, %s ]' % ( slat,wlon,nlat,elon )
-                               if spdesc :
-                                 extra['value']=spdesc
-                            elif extra['key'] == 'TemporalCoverage':
-                               tempdesc,stime,etime=self.map_temporal(extra['value'])
-                               if tempdesc:
-                                   extra['value']=tempdesc
-                            elif extra['key'] == 'Language': # generic mapping of languages
-                               extra['value'] = self.map_lang(extra['value'])
-                            elif extra['key'] == 'PublicationYear': # generic mapping of PublicationYear
-                                publdate=self.date2UTC(extra['value'])
-                                if publdate:
-                                    extra['value'] = self.cut(publdate,'\d\d\d\d',0)
-                                else:
-                                    extra['value'] = None
+                   try:
+                       if facet == 'author':
+                           jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1),';')
+                       elif facet == 'tags':
+                           jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
+                       elif facet == 'url':
+                           iddict = self.map_identifiers(jsondata[facet])
+                       elif facet == 'DOI':
+                           iddict = self.map_identifiers(jsondata[facet])
+                       elif facet == 'Discipline':
+                           jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
+                       elif facet == 'Publisher':
+                           blist = self.cut(jsondata[facet],'=',2)
+                           jsondata[facet] = self.uniq(blist,';')
+                       elif facet == 'Contact':
+                           blist = self.cut(jsondata[facet],'=',2)
+                           jsondata[facet] = self.uniq(blist,';')
+                       elif facet == 'SpatialCoverage':
+                           spdesc,slat,wlon,nlat,elon=self.map_spatial(jsondata[facet])
+                           if wlon and slat and elon and nlat :
+                               spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
+                           if spdesc :
+                               jsondata[facet] = spdesc
+                       elif facet == 'TemporalCoverage':
+                           tempdesc,stime,etime=self.map_temporal(jsondata[facet])
+                           if tempdesc:
+                               jsondata[facet] = tempdesc
+                       elif facet == 'Language': 
+                            jsondata[facet] = self.map_lang(jsondata[facet])
+                       elif facet == 'PublicationYear':
+                            publdate=self.date2UTC(jsondata[facet][0])
+                            if publdate:
+                                jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
+                            else:
+                                jsondata[facet] = None
+                   except Exception as e:
+                       self.logger.error(' [WARNING] %s : during mapping of field %s with value %s' % (e,facet,jsondata[facet]))
+                       continue
 
-                            elif type(extra['value']) is not str and type(extra['value']) is not unicode :
-                               self.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
-                      except Exception as e: 
-                          self.logger.debug(' [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))
-                          ##HEW??? results['ecount'] += 1
-                          continue
-                   ##elif isinstance(jsondata[facet], basestring) :
-                   ##    ### mapping of default string fields
-                   ##    jsondata[facet]=jsondata[facet].encode('ascii', 'ignore')
                 if iddict:
-                  for key in iddict:
-                      jsondata['extras']=[x for x in jsondata['extras'] if not (key == x.get('key'))]
-                  for key in iddict:
-                    if key == 'url':
-                        if community =='hdcp2':
-                            jsondata['url']='https://icdc.zmaw.de/index.php?id='+iddict['url']
+                    for key in iddict:
+                        if key == 'url':
+                            if community =='hdcp2':
+                                jsondata['url']='https://icdc.zmaw.de/index.php?id='+iddict['url']
+                            else:
+                                jsondata['url']=iddict['url']
                         else:
-                            jsondata['url']=iddict['url']
-                    else:
-                        jsondata['extras'].append({"key" : key, "value" : iddict[key] }) 
+                            jsondata[key]=iddict[key] 
                 if spvalue :
-                    jsondata['extras'].append({"key" : "spatial", "value" : spvalue })
+                    jsondata["spatial"]=spvalue
                 if stime and etime :
-                    jsondata['extras'].append({"key" : "TemporalCoverage:BeginDate", "value" : stime }) 
-                    jsondata['extras'].append({"key" : "TempCoverageBegin", "value" : self.utc2seconds(stime)}) 
-                    jsondata['extras'].append({"key" : "TemporalCoverage:EndDate", "value" : etime }) 
-                    jsondata['extras'].append({"key" : "TempCoverageEnd", "value" : self.utc2seconds(etime)})
+                    jsondata["TemporalCoverage:BeginDate"] = stime
+                    jsondata["TempCoverageBegin"] = self.utc2seconds(stime) 
+                    jsondata["TemporalCoverage:EndDate"] = etime 
+                    jsondata["TempCoverageEnd"] = self.utc2seconds(etime)
                 if publdate :
-                    jsondata['extras'].append({"key" : "PublicationTimestamp", "value" : publdate })
+                    jsondata["PublicationTimestamp"] = publdate
 
                 ## write to JSON file
-                ###HEW???
                 jsonfilename=os.path.splitext(filename)[0]+'.json'
-                ###HEW???with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
-                ##with io.open(path+'/json/'+filename, 'w', encoding='utf8') as json_file:
+
                 with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
                     try:
                         log.debug('   | [INFO] decode json data')
@@ -2027,21 +1964,7 @@ class MAPPER(object):
 
 
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
-        # check output and print it
-        ##HEW-D self.logger.info(out)
         if (err is not None ): self.logger.error('[ERROR] ' + err)
-        ##exit()
-          
-        ############if ( mdprefix == 'json' ): # map harvested json records using jsonpath rules  
-        ###########    print 'ALLL DONE already ...'
-        ##########else: # convert xml records using Python XPATH (lxml supports XPath 1.0)
-
-          #### NEWWWWWWWWWWWW mapping
-          # find all .xml files in path/xml
-          ##HEW-D results['tcount'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(path+'/xml')))
-
-          # loop over all .xml files in path/xml (harvested xml records):
-          ##############for filename in files:
 
         self.logger.info(
                 '   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' 
@@ -2087,62 +2010,61 @@ class MAPPER(object):
             self.logger.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
             return False    #catched
 
-    def is_valid_value(self,facet,value):
+    def is_valid_value(self,facet,valuelist):
         """
         checks if value is the consitent for the given facet
         """
         vall=list()
-        if facet in ['title','notes','author','Publisher']:
-            if isinstance(value, str) or isinstance(value, unicode):
+        errlist=''
+        if not isinstance(valuelist,list) : valuelist=[valuelist]
+        for value in valuelist:
+            if facet in ['title','notes','author','Publisher']:
+                if isinstance(value, str) or isinstance(value, unicode):
+                    vall.append(value)
+                else:
+                    errlist+=' | %10s | %20s |' % (facet, value[:30])
+            elif facet in ['url','DOI','PID']:
+                if isinstance(value, str) or isinstance(value, unicode):
+                    vall.append(value)
+                else:
+                    errlist+=' | %10s | %20s |' % (facet, value)
+            elif self.str_equals(facet,'Discipline'):
+                if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
+                    errlist+=' | %10s | %20s |' % (facet, value)
+                else :
+                    vall.append(value)
+            elif self.str_equals(facet,'PublicationYear'):
+                try:
+                    datetime.datetime.strptime(value, '%Y')
+                except ValueError:
+                    errlist+=' | %10s | %20s |' % (facet, value)
+                else:
+                    vall.append(value)
+            elif self.str_equals(facet,'PublicationTimestamp'):
+                try:
+                    datetime.datetime.strptime(value, '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
+                except ValueError:
+                    errlist+=' | %10s | %20s |' % (facet, value)
+                else:
+                    vall.append(value)
+            elif self.str_equals(facet,'Language'):
+                if self.map_lang(value) is None:
+                    errlist+=' | %10s | %20s |' % (facet, value)
+                else:
+                    vall.append(value)
+            elif self.str_equals(facet,'tags'):
+                if isinstance(value,dict) and value["name"]:
+                    vall.append(value["name"])
+                else:
+                    errlist+=' | %10s | %20s |' % (facet, value)
+            else:
                 vall.append(value)
-                return vall
-            else :
-                return []
-        elif facet in ['url','DOI','PID']:
-            if isinstance(value, str) or isinstance(value, unicode):
-                vall.append(value)
-                return vall
-            else :
-                return []
+            # to be continued for every other facet
 
-        elif self.str_equals(facet,'Discipline'):
-            if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
-                return []
-            else :
-                vall.append(value)
-                return vall
-        elif self.str_equals(facet,'PublicationYear'):
-            try:
-                datetime.datetime.strptime(value, '%Y')
-            except ValueError:
-                errmsg = "%s value %s has incorrect data format, should be YYYY" % (facet,value)
-                return []
-            else:
-                vall.append(value)
-                return vall
-        elif self.str_equals(facet,'PublicationTimestamp'):
-            try:
-                datetime.datetime.strptime(value, '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
-            except ValueError:
-                errmsg = "%s value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (facet,value)
-                return []
-            else:
-                vall.append(value)
-                return vall
-        elif self.str_equals(facet,'Language'):
-            if self.map_lang(value) is None:
-                return []
-            else:
-                vall.append(value)
-                return vall
-        elif self.str_equals(facet,'tags'):
-            for dict in value:
-               vall.append(dict["name"])
+            ##if errlist != '':
+            ##    print ' Following key-value errors fails validation:\n' + errlist 
             return vall
-        else:
-            vall.append(value)
-            return vall
-        # to be continued for every other facet
+            
     
     def validate(self,community,mdprefix,path):
         ## validate(MAPPER object, community, mdprefix, path) - method
@@ -2252,14 +2174,10 @@ class MAPPER(object):
                     value = None
                     if facet in jsondata:
                         value = jsondata[facet]
-                    else:
-                        for extra in jsondata['extras']:
-                            if self.str_equals(extra['key'],facet):
-                                value = extra['value']                   
                     if value:
                         totstats[facet]['mapped']+=1
                         pvalue=self.is_valid_value(facet,value)
-                        log.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value,type(value),pvalue))
+                        log.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
                         if pvalue and len(pvalue) > 0:
                             totstats[facet]['valid']+=1  
                             if type(pvalue) is list :
@@ -2292,9 +2210,9 @@ class MAPPER(object):
                             contt='[...]' 
                         else: 
                             contt=''
-                            printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
-                            if self.OUT.verbose > 1:
-                                print printstats
+                        printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
+                        if self.OUT.verbose > 1:
+                            print printstats
             except TypeError as e:
                 self.logger.error('    [ERROR] TypeError: %s field %s' % (e,field))
                 continue
@@ -2322,54 +2240,41 @@ class MAPPER(object):
 
         return results
 
-    def json2xml(self,json_obj, line_padding="", mdftag=""):
+    def json2xml(self,json_obj, line_padding="", mdftag="", mapdict="ckan2b2find"):
         result_list = list()
         json_obj_type = type(json_obj)
 
+
         if json_obj_type is list:
             for sub_elem in json_obj:
-                result_list.append(json2xml(sub_elem, line_padding))
+                result_list.append(json2xml(sub_elem, line_padding, mdftag, mapdict))
 
             return "\n".join(result_list)
 
         if json_obj_type is dict:
             for tag_name in json_obj:
-                if tag_name == 'extras':
-                    for kv in json_obj[tag_name]:
-                        key = kv["key"]
-                        val = kv["value"]
-                        if key.lower() in self.ckan2b2find : 
-                            key=self.ckan2b2find[key.lower()]
-                            result_list.append("%s<%s:%s>" % (line_padding, mdftag, key))
-                            result_list.append(self.json2xml(val, "\t" + line_padding))
-                            result_list.append("%s</%s:%s>" % (line_padding, mdftag, key))
-                        else:
-                            self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % key)
-                            continue
-                else:
                     sub_obj = json_obj[tag_name]
                     if tag_name == 'author':
                         sub_obj=sub_obj.split(';')
-                    if tag_name.lower() in self.ckan2b2find : 
-                        tag_name=self.ckan2b2find[tag_name.lower()]
-                        ###HEW-D result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name.lower()))
+                    if tag_name.lower() in mapdict : 
+                        tag_name=mapdict[tag_name.lower()]
                         if type(sub_obj) is list:
                             for nv in sub_obj:
-                                result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name.lower()))
+                                result_list.append("%s<%s%s>" % (line_padding, mdftag, tag_name.lower()))
                                 vlist="\t\t"
-                            ###for nv in sub_obj:
-                            ###    vlist+=nv["name"]+';'
-                            ###    vlist=vlist[:-1]
-                            ###    result_list.append(vlist)
-                                if tag_name == 'tags':
+                                if tag_name == 'tags' or tag_name == 'KEY_CONNECT.GENERAL_KEY':
                                     result_list.append("%s%s" % ("\t" + line_padding, nv["name"].strip()))
                                 else:
                                     result_list.append("%s%s" % ("\t" + line_padding, nv.strip()))
-                                result_list.append("%s</%s:%s>" % (line_padding, mdftag, tag_name.lower()))
+                            if not isinstance(tag_name,list): tag_name=[tag_name]
+                            for key in tag_name:
+                                result_list.append("%s</%s%s>" % (line_padding, mdftag, key.lower()))
                         else:
-                            result_list.append("%s<%s:%s>" % (line_padding, mdftag, tag_name.lower()))
-                            result_list.append(self.json2xml(sub_obj, "\t" + line_padding))
-                            result_list.append("%s</%s:%s>" % (line_padding, mdftag, tag_name.lower()))
+                            if not isinstance(tag_name,list): tag_name=[tag_name]
+                            for key in tag_name:
+                                result_list.append("%s<%s%s>" % (line_padding, mdftag, key.lower()))
+                                result_list.append(self.json2xml(sub_obj, "\t" + line_padding, mdftag, mapdict))
+                                result_list.append("%s</%s%s>" % (line_padding, mdftag, key.lower()))
                     else:
                         self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
@@ -2380,7 +2285,7 @@ class MAPPER(object):
 
     def oaiconvert(self,community,mdprefix,path):
         ## oaiconvert(MAPPER object, community, mdprefix, path) - method
-        # Converts the JSON files in directory <path> to XML files in B2FIND md format
+        # Converts the JSON files in directory <path> to XML files in target format (=mdprefix ??)
         # Parameters:
         # -----------
         # 1. (string)   community - B2FIND community of the files
@@ -2413,8 +2318,8 @@ class MAPPER(object):
         results['tcount'] = len(files)
 
         oaiset=path.split(mdprefix)[1].split('_')[0].strip('/')
-        ## outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+path.split(mdprefix)[1].split('_')[0]+'/xml'
-        outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/xml'
+        ## outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+mdprefix +'/'+path.split(mdprefix)[1].split('_')[0]+'/xml'
+        outpath=path.split(community)[0]+'b2find-oai_b2find/'+community+'/'+mdprefix +'/xml'
         print 'outpath %s' % outpath
         if (not os.path.isdir(outpath)):
              os.makedirs(outpath)
@@ -2430,9 +2335,9 @@ class MAPPER(object):
 
 
             jsondata = dict()
-            self.logger.info(' |- %s     INFO  JSON2XML - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
+            self.logger.debug(' |- %s     INFO  JSON2XML - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
             outfile=outpath+'/'+community+'_'+oaiset+'_%06d' % fcount+'.xml'
-            self.logger.info('    | o | %-4d | %-45s | %-45s |' % (fcount,os.path.basename(filename),os.path.basename(outfile)))
+            self.logger.debug('    | o | %-4d | %-45s | %-45s |' % (fcount,os.path.basename(filename),os.path.basename(outfile)))
 
             if ( os.path.getsize(path+'/json/'+filename) > 0 ):
                 with open(path+'/json/'+filename, 'r') as f:
@@ -2447,20 +2352,34 @@ class MAPPER(object):
                 continue
             
             
-            # get OAI identifier from json data extra field 'oai_identifier':
-            ##oai_id  = None
-            ##for extra in jsondata['extras']:
-            ##    if(extra['key'] == 'oai_identifier'):
-            ##        oai_id = extra['value']
-            ##        break
-            ##self.logger.debug("        |-> identifier: %s\n" % (oai_id))
-            
             ### oai-convert !!
-            try:
+            if mdprefix == 'cera':
+                mapdict=self.json2cerads
+                header="""<?xml version="1.0" encoding="UTF-8"?>
+<XML_Cera2_entry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://cera-www.dkrz.de/Meta_Fill/ds2.xsd">
+     <experiment_acronym>"""+identifier+"""</experiment_acronym>
+     <dataset_group_acronym>"""+identifier+"""</dataset_group_acronym>
+     <entry_type>dataset</entry_type>
+"""
+                footer="""
+</XML_Cera2_entry>"""
+                xmlprefix=''
+                jsondata['url']='HDCP2_'+jsondata['url'].split('=')[1]
+                xmldata=header+self.json2xml(jsondata,'\t',xmlprefix,mapdict)+footer
+                outfile=outpath+'/ds2_'+jsondata['url']+'.xml'
 
-###                header="""<?xml version = '1.0' encoding = 'UTF-8'?>
-                header="""
-<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                try:
+                    f = open(outfile, 'w')
+                    f.write(xmldata.encode('utf-8'))
+                    f.write("\n")
+                    f.close
+                except IOError, e:
+                    self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
+                    return(False, outfile , outpath, fcount)
+
+            else:
+                mapdict=self.ckan2b2find
+                header="""<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <header>
      <identifier>"""+identifier+"""</identifier>
      <datestamp>"""+createdate+"""</datestamp>
@@ -2473,18 +2392,16 @@ class MAPPER(object):
      </oai_b2find:b2find>
    </metadata>
 </record>"""
-
-                xmldata=header+self.json2xml(jsondata,'\t','b2find')+footer
-                ##HEW-T print 'xmldata %s' % xmldata
-
-                f = open(outfile, 'w')
-                f.write(xmldata.encode('utf-8'))
-                f.write("\n")
-                f.close
-            except IOError, e:
-                self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
-                ###stats['ecount'] +=1
-                return(False, outfile , outpath, fcount)
+                xmlprefix='b2find'
+                xmldata=header+self.json2xml(jsondata,'\t',xmlprefix,mapdict)+footer
+                try:
+                    f = open(outfile, 'w')
+                    f.write(xmldata.encode('utf-8'))
+                    f.write("\n")
+                    f.close
+                except IOError, e:
+                    self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
+                    return(False, outfile , outpath, fcount)
 
         self.logger.info('%s     INFO  B2FIND : %d records converted; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
@@ -2554,6 +2471,11 @@ class UPLOADER (object):
         self.OUT = OUT
         
         self.package_list = dict()
+        # B2FIND metadata fields
+        self.b2findfields = list()
+        self.b2findfields = [
+                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
+        self.ckandeffields = ["author","title","notes","tags","url"]
 
     def purge_group(self,community):
         ## purge_list (UPLOADER object, community) - method
@@ -2646,6 +2568,38 @@ class UPLOADER (object):
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
 
+
+
+    def json2ckan(self, jsondata):
+        ## json2ckan(UPLOADER object, json data) - method
+        ##  converts flat JSON structure to CKAN JSON record with extra fields
+        for key in self.ckandeffields :
+            if not jsondata[key]:
+                log.debug('[WARNING] : CKAN default key %s does not exist' % key)
+            else:
+                if key in  ["author"] :
+                    jsondata[key]=';'.join(list(jsondata[key]))
+                elif key in ["title","notes"] :
+                    jsondata[key]='\n'.join(list(jsondata[key]))
+
+        jsondata['extras']=list()
+        for key in set(self.b2findfields) - set(self.ckandeffields) :
+            if key in jsondata :
+                if key in ['Contact','Format','Language','Publisher']:
+                    value=';'.join(jsondata[key])
+                else:
+                    value=jsondata[key]
+                jsondata['extras'].append({
+                     "key" : key,
+                     "value" : value
+                })
+            else:
+                log.debug('[WARNING] : CKAN extra key %s does not exist' % key)
+
+        return jsondata
+
+
+
     def check(self, jsondata):
         ## check(UPLOADER object, json data) - method
         # Checks the json data (e.g. the PublicationTimestamp field) by using B2FIND standard
@@ -2663,14 +2617,10 @@ class UPLOADER (object):
     
         status = 2
         errmsg = ''
-        must_have_extras = {
-            # "extra_field_name" : (Integer), 0 for critical, 1 for non-critical
-            ##"oai_identifier":0
-        }
         
         ## check mandatory fields ...
-        mandDefFields=['title','url']
-        for field in mandDefFields :
+        mandFields=['title','url','oai_set','oai_identifier']
+        for field in mandFields :
             if (not(field in jsondata) or jsondata[field] == ''):
                 errmsg = "The mandatory field '%s' is missing" % field
                 status = 0  # set status
@@ -2680,91 +2630,40 @@ class UPLOADER (object):
             
         if errmsg: self.logger.warning("        [WARNING] field %s" % errmsg)
         
-        ## check extra fields ...
-        counter = 0
-        mandExtraFields=['oai_set','oai_identifier']
-        for extra in jsondata['extras']:
-            errmsg = ''
-            for mand in mandExtraFields:
-                if(extra['key'] == mand and extra['value'] == ''):
-                    errmsg = "The mandatory field %s is missing" % mand
-                    status = 0  # set status
 
-            # ... OAI Set
-            if(extra['key'] == 'oai_set'):
-                if('/' in  extra['value']):
-                  extra['value']= extra['value'].split('/')[-1] 
+        # ... OAI Set
+        if('/' in  jsondata['oai_set']):
+            jsondata['oai_set'] = jsondata['oai_set'].split('/')[-1] 
             
-            # shrink field fulltext
-            elif(extra['key'] == 'fulltext' and sys.getsizeof(extra['value']) > 31999):
-                errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))
-                encoding='utf-8'
-                encoded = extra['value'].encode(encoding)[:32000]
-                extra['value']=encoded.decode(encoding, 'ignore')
-                ##HEW!!! print "cut off : 'fulltext': now ( %d bytes, %d len)" % (sys.getsizeof(extra['value']),len(extra['value']))
-                ##status = 2  # set status
-
-            elif(extra['key'] == 'PublicationYear'):            
-                try:
-                   datetime.datetime.strptime(extra['value'], '%Y')
-                except (ValueError,TypeError) as e:
-                    errmsg = "Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,extra['key'],extra['value'])
-                    # delete this field from the jsondata:
-                    jsondata['extras'].pop(counter)
+        # shrink field fulltext
+        if(sys.getsizeof(jsondata['fulltext']) > 31999):
+            errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(jsondata['fulltext']),len(jsondata['fulltext']))
+            encoding='utf-8'
+            encoded = jsondata['fulltext'].encode(encoding)[:32000]
+            jsondata['fulltext']=encoded.decode(encoding, 'ignore')
+            
+        try:
+            datetime.datetime.strptime(jsondata['PublicationYear'], '%Y')
+        except (ValueError,TypeError) as e:
+            errmsg = "Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear'])
+            # delete this field from the jsondata:
+            del jsondata['PublicationYear']
                     
-                    if(status > 1): status = 1  # set status
+            if(status > 1): status = 1  # set status
                 
-            # ... PublicationTimestamp
-            elif(extra['key'] == 'PublicationTimestamp'):
-                try:
-                    datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
-                except ValueError:
-                    errmsg = "'PublicationTimestamp' value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % extra['value']
-                    
-                    # delete this field from the jsondata:
-                    jsondata['extras'].pop(counter)
-                    
-                    if(status > 1): status = 1  # set status
+        # check Date-Times for consistency with UTC format
+        dt_keys=['PublicationTimestamp', 'TemporalCoverage:BeginDate', 'TemporalCoverage:EndDate']
+        for key in dt_keys:
+            try:
+                datetime.datetime.strptime(jsondata['PublicationTimestamp'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
+            except ValueError:
+                errmsg += "Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key)
+                del jsondata[key] # delete this field from the jsondata
+                if (status > 1): status = 1  # set status
             
-            # ... TemporalCoverage:BeginDate
-            elif(extra['key'] == 'TemporalCoverage:BeginDate'):
-                try:
-                    datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
-                except ValueError:
-                    errmsg = "'TemporalCoverage:BeginDate' value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % extra['value']
-                    
-                    # delete this field from the jsondata:
-                    jsondata['extras'].pop(counter)
-                    
-                    if(status > 1): status = 1  # set status
-            
-            # ... TemporalCoverage:EndDate
-            elif(extra['key'] == 'TemporalCoverage:EndDate'):
-                try:
-                    datetime.datetime.strptime(extra['value'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
-                except ValueError:
-                    errmsg = "'TemporalCoverage:EndDate' value %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % extra['value']
-                    
-                    # delete this field from the jsondata:
-                    jsondata['extras'].pop(counter)
-                    
-                    if(status > 1): status = 1  # set status
-            
-            # print warning:
-            if errmsg: self.logger.warning("        [WARNING] extra field %s" % errmsg)
-            
-            # delete key from the must have extras dictionary:
-            if extra['key'] in must_have_extras:
-               del must_have_extras[extra['key']]
-        
-            counter+=1
-            
-        if (len(must_have_extras) > 0):
-            self.logger.warning("        [WARNING] extra fields %s are missing" % must_have_extras.keys())
-            status = min(status,must_have_extras.values())
-            
+        # print warning:
+        if errmsg: self.logger.debug("[WARNING] %s" % errmsg)            
         return status
-
 
     def upload(self, ds, dsstatus, community, jsondata):
         ## upload (UPLOADER object, dsname, dsstatus, community, jsondata) - method
@@ -2790,7 +2689,7 @@ class UPLOADER (object):
     
         rvalue = 0
         
-        # add some CKAN specific fields to dictionary:
+        # add some general CKAN specific fields to dictionary:
         jsondata["name"] = ds
         jsondata["state"]='active'
         jsondata["groups"]=[{ "name" : community }]
