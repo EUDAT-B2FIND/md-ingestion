@@ -635,6 +635,7 @@ def process_upload(UP, rlist, options):
                             else:
                                 logger.debug(" New handle %s with checksum %s created" % (pid,checksum))
                         else: # PID changed => update URL and checksum
+                            logger.info("        |-> Update handle %s with changed checksum %s" % (pid,checksum))
                             try:
                                 client.modify_handle_value(pid,URL=ckands) ##HEW-T !!! as long as URLs not all updated !!
                                 client.modify_handle_value(pid,CHECKSUM=checksum)
