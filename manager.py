@@ -975,11 +975,12 @@ def exit_program (OUT, message=''):
     OUT.HTML_print_end()
 
     if (OUT.options.verbose != False):
-      try:
-        os.system('firefox '+OUT.jobdir+'/overview.html')
-      except Exception, err:
-        print("[ERROR] %s : Can not open result html in browser" % err)
-        os.system('cat '+OUT.jobdir+'/overview.html')
+      ##HEW? try:
+      ##HEW  os.system('firefox '+OUT.jobdir+'/overview.html')
+      ##HEW except Exception, err:
+      ##HEW   print("[ERROR] %s : Can not open result html in browser" % err)
+      ##HEWos.system('cat '+OUT.jobdir+'/overview.html')
+      log.debug('For more info open HTML file %s' % OUT.jobdir+'/overview.html')
 
 if __name__ == "__main__":
     main()

@@ -11,6 +11,10 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## IST
+ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
+# eprints, Status = Published
+ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
 ## DEIMS
 deims   http://deims???.de:8080/oai/provider  ListRecords  iso test
 ## HDCP2

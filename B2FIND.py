@@ -1,7 +1,7 @@
 """B2FIND.py - classes for B2FIND management : 
   - CKAN_CLIENT  executes CKAN APIs (interface to CKAN)
   - HARVESTER    harvests from a OAI-PMH server
-  - MAPPER    converts XML files to JSON files and performs semantic mapping
+  - MAPPER       converts XML files to JSON files and performs semantic mapping
   - VALIDATER    validates JSON records against the B2FIND MD schema
   - UPLOADER     uploads JSON files to CKAN portal
   - OAICONVERTER converts JSON fields to XML files to provide via OAI-PMH in B2FIND schema
@@ -750,11 +750,7 @@ class MAPPER(object):
         self.OUT = OUT
         
         # B2FIND metadata fields
-        self.b2findfields = list()
-        self.b2findfields = [
-                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
-        self.b2findfields =[
-                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
+        self.b2findfields =["title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","Format","Contact","MetadataAccess"]
 
 
         self.ckan2b2find = OrderedDict()
@@ -852,28 +848,34 @@ class MAPPER(object):
         changes date to UTC format
         """
         # UTC format =  YYYY-MM-DDThh:mm:ssZ
-        utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
+        try:
+            utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
 
-        utc_day1 = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
-        utc_day = re.compile(r'\d{8}') # day (YYYYMMDD)
-        utc_year = re.compile(r'\d{4}') # year (4-digit number)
-        if utc.search(old_date):
-            new_date = utc.search(old_date).group()
-            return new_date
-        elif utc_day1.search(old_date):
-            day = utc_day1.search(old_date).group()
-            new_date = day + 'T11:59:59Z'
-            return new_date
-        elif utc_day.search(old_date):
-            rep=re.findall(utc_day, old_date)[0]
-            new_date = rep[0:4]+'-'+rep[4:6]+'-'+rep[6:8] + 'T11:59:59Z'
-            return new_date
-        elif utc_year.search(old_date):
-            year = utc_year.search(old_date).group()
-            new_date = year + '-07-01T11:59:59Z'
-            return new_date
+            utc_day1 = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
+            utc_day = re.compile(r'\d{8}') # day (YYYYMMDD)
+            utc_year = re.compile(r'\d{4}') # year (4-digit number)
+            if utc.search(old_date):
+                new_date = utc.search(old_date).group()
+                return new_date
+            elif utc_day1.search(old_date):
+                day = utc_day1.search(old_date).group()
+                new_date = day + 'T11:59:59Z'
+                return new_date
+            elif utc_day.search(old_date):
+                rep=re.findall(utc_day, old_date)[0]
+                new_date = rep[0:4]+'-'+rep[4:6]+'-'+rep[6:8] + 'T11:59:59Z'
+                return new_date
+            elif utc_year.search(old_date):
+                year = utc_year.search(old_date).group()
+                new_date = year + '-07-01T11:59:59Z'
+                return new_date
+            else:
+                return '' # if converting cannot be done, make date empty
+        except Exception, e:
+           self.logger.error('[ERROR] : %s - in date2UTC replace old date %s by new date %s' % (e,old_date,new_date))
+           return ''
         else:
-            return '' # if converting cannot be done, make date empty
+           return new_date
 
     def replace(self,setname,dataset,facet,old_value,new_value):
         """
@@ -1092,7 +1094,9 @@ class MAPPER(object):
                   if "boundingBox" in val :
                       coordict=val["boundingBox"]
                       desc+=' : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
-                  return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+                      return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+                  else :
+                      return (desc,None,None,None,None)
               else:
                   ##inarr=pattern.split(val)
                   ##HEW-T 
@@ -1590,22 +1594,20 @@ class MAPPER(object):
 
            try:
               if not jpath.startswith('$') :
-                value=jpath
+                value=[jpath]
               else:
                 result=self.jsonpath(dataset, jpath, format)
-                if isinstance(result, (list, tuple)) and (len(result)>0):
-                     if (len(result)==1):
-                        value=self.jsonpath(dataset, jpath, format)[0]
-                     else:
-                        value=self.jsonpath(dataset, jpath, format)
-                else:
-                     continue
-
-                # default field
-                if not field in newds:
-                    newds[field]=value
+                if isinstance(result, (list, tuple)): ## and (len(result)>0):
+                    if isinstance(result[0], (list, tuple)):
+                        value=result[0]
+                    else:
+                        value=result
                 else:
                     continue
+
+              # add value to JSON key
+              newds[field]=value
+
            except Exception as e:
                 self.logger.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
                 continue
@@ -1690,30 +1692,29 @@ class MAPPER(object):
             m = re.match(r'(\s+)<field name="(.*?)">', line)
             if m:
                 field=m.group(2)
+                if field in ['Discipline','oai_set']: ## HEW!!! expand to all mandatory fields !!
+                    retval=['Not stated']
             else:
+                xpath=''
                 r = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)')
                 m2 = r.search(line)
                 rs = re.compile('(\s+)(<string>)(.*?)(</string>)')
                 m3 = rs.search(line)
                 if m3:
-                    xstring=m3.group(3)
-                    retval=xstring
+                    xpath=m3.group(3)
+                    retval=xpath
                 elif m2:
                     xpath=m2.group(3)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
                 else:
                     continue
-                if len(retval)==0 : 
-                    if field == 'Discipline':
-                        retval=['Not stated']
-                    continue
-                elif field == 'fulltext':
-                    retval=' '.join([unicode(i).strip() for i in retval])
-                jsondata[field]=retval ## gxpath(xmldata, xpath, namespaces)
-                
-                self.logger.debug(' | %10s | %10s | %10s | \n' % (field,xpath,retval[:30]))                    
+                if retval and len(retval) > 0 :
+                    jsondata[field]=retval ### .extend(retval)
+                    self.logger.debug(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
+                elif field in ['Discipline','oai_set']:
+                    jsondata[field]=['Not stated']
           except Exception as e:
-              log.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tvalue\t%s' % (e,field,xpath,retval))
+              log.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tretvalue\t%s' % (e,field,xpath,retval))
               continue
 
         return jsondata
@@ -2574,7 +2575,7 @@ class UPLOADER (object):
         ## json2ckan(UPLOADER object, json data) - method
         ##  converts flat JSON structure to CKAN JSON record with extra fields
         for key in self.ckandeffields :
-            if not jsondata[key]:
+            if key not in jsondata:
                 log.debug('[WARNING] : CKAN default key %s does not exist' % key)
             else:
                 if key in  ["author"] :
@@ -2584,8 +2585,9 @@ class UPLOADER (object):
 
         jsondata['extras']=list()
         for key in set(self.b2findfields) - set(self.ckandeffields) :
+            self.logger.debug('    | j2ckan - %-10s : %-25s ' % ('extra field',key))
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher']:
+                if key in ['Contact','Format','Language','Publisher','PublicationYear']:
                     value=';'.join(jsondata[key])
                 else:
                     value=jsondata[key]
@@ -2594,7 +2596,7 @@ class UPLOADER (object):
                      "value" : value
                 })
             else:
-                log.debug('[WARNING] : CKAN extra key %s does not exist' % key)
+                log.debug('[WARNING] : No data for key %s ' % key)
 
         return jsondata
 
@@ -2641,28 +2643,30 @@ class UPLOADER (object):
             encoding='utf-8'
             encoded = jsondata['fulltext'].encode(encoding)[:32000]
             jsondata['fulltext']=encoded.decode(encoding, 'ignore')
-            
-        try:
-            datetime.datetime.strptime(jsondata['PublicationYear'], '%Y')
-        except (ValueError,TypeError) as e:
-            errmsg = "Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear'])
-            # delete this field from the jsondata:
-            del jsondata['PublicationYear']
-                    
-            if(status > 1): status = 1  # set status
+
+        if 'PublicationYear' in jsondata :
+            try:
+                datetime.datetime.strptime(jsondata['PublicationYear'][0], '%Y')
+            except (ValueError,TypeError) as e:
+                errmsg = "Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear'])
+                # delete this field from the jsondata:
+                del jsondata['PublicationYear']
+                if(status > 1): status = 1  # set status
                 
         # check Date-Times for consistency with UTC format
         dt_keys=['PublicationTimestamp', 'TemporalCoverage:BeginDate', 'TemporalCoverage:EndDate']
         for key in dt_keys:
-            try:
-                datetime.datetime.strptime(jsondata['PublicationTimestamp'], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
-            except ValueError:
-                errmsg += "Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key)
-                del jsondata[key] # delete this field from the jsondata
-                if (status > 1): status = 1  # set status
-            
+            if key in jsondata :
+                try:
+                    datetime.datetime.strptime(jsondata[key], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
+                except ValueError:
+                    errmsg += "Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key)
+                    del jsondata[key] # delete this field from the jsondata
+                    if (status > 1): status = 1  # set status
+
         # print warning:
         if errmsg: self.logger.debug("[WARNING] %s" % errmsg)            
+
         return status
 
     def upload(self, ds, dsstatus, community, jsondata):
