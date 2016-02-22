@@ -922,7 +922,7 @@ class MAPPER(object):
                 elif 'dx.doi.org/' in id:
                     iddict['DOI'] = id
                     favurl=iddict['DOI']
-                elif 'doi:' in id and 'DOI' not in iddict :
+                elif 'doi:' in id: ## and 'DOI' not in iddict :
                     iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                     favurl=iddict['DOI']
                 elif 'hdl.handle.net' in id:
@@ -934,7 +934,7 @@ class MAPPER(object):
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
                     ##     iddict['url']=id
 
-            if not 'url' in iddict :
+            if 'url' not in iddict :
                 iddict['url']=favurl
         except Exception, e:
             self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
@@ -1889,8 +1889,17 @@ class MAPPER(object):
                            jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                        elif facet == 'url':
                            iddict = self.map_identifiers(jsondata[facet])
+                           if 'url' in iddict: ## and iddict['url'] != '': 
+                               jsondata[facet]=iddict['url']
+                           elif 'DOI' in iddict :
+                               jsondata[facet]=iddict['DOI']
+                           if 'PID' in iddict : jsondata['PID']=iddict['PID']
                        elif facet == 'DOI':
                            iddict = self.map_identifiers(jsondata[facet])
+                           if 'DOI' in iddict : 
+                               jsondata[facet]=iddict['DOI']
+                               ##if 'url' not in jsondata:
+                               ##    jsondata['url']=iddict['DOI']
                        elif facet == 'Discipline':
                            jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
                        elif facet == 'Publisher':
@@ -1921,15 +1930,9 @@ class MAPPER(object):
                        self.logger.error(' [WARNING] %s : during mapping of field %s with value %s' % (e,facet,jsondata[facet]))
                        continue
 
-                if iddict:
-                    for key in iddict:
-                        if key == 'url':
-                            if community =='hdcp2':
-                                jsondata['url']='https://icdc.zmaw.de/index.php?id='+iddict['url']
-                            else:
-                                jsondata['url']=iddict['url']
-                        else:
-                            jsondata[key]=iddict[key] 
+                if 'url' not in jsondata:
+                    if 'DOI' in jsondata:
+                        jsondata['url']=jsondata['DOI']
                 if spvalue :
                     jsondata["spatial"]=spvalue
                 if stime and etime :
@@ -2621,24 +2624,24 @@ class UPLOADER (object):
         errmsg = ''
         
         ## check mandatory fields ...
-        mandFields=['title','url','oai_set','oai_identifier']
+        mandFields=['title','url','oai_identifier']
         for field in mandFields :
-            if (not(field in jsondata) or jsondata[field] == ''):
-                errmsg = "The mandatory field '%s' is missing" % field
+            if field not in jsondata: ##  or jsondata[field] == ''):
+                errmsg+= "The mandatory field '%s' is missing" % field
                 status = 0  # set status
         ##HEW-D elif ('url' in jsondata and not self.check_url(jsondata['url'])):
         ##HEW-D     errmsg = "'url': The source url is broken"
         ##HEW-D     if(status > 1): status = 1  # set status
             
-        if errmsg: self.logger.warning("        [WARNING] field %s" % errmsg)
+        if errmsg: self.logger.warning("        [WARNING] %s" % errmsg)
         
 
         # ... OAI Set
-        if('/' in  jsondata['oai_set']):
+        if('oai_set' in jsondata and '/' in  jsondata['oai_set']):
             jsondata['oai_set'] = jsondata['oai_set'].split('/')[-1] 
             
         # shrink field fulltext
-        if(sys.getsizeof(jsondata['fulltext']) > 31999):
+        if('fulltext' in jsondata and sys.getsizeof(jsondata['fulltext']) > 31999):
             errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(jsondata['fulltext']),len(jsondata['fulltext']))
             encoding='utf-8'
             encoded = jsondata['fulltext'].encode(encoding)[:32000]
