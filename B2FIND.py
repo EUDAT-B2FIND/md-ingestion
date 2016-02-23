@@ -1906,8 +1906,11 @@ class MAPPER(object):
                            blist = self.cut(jsondata[facet],'=',2)
                            jsondata[facet] = self.uniq(blist,';')
                        elif facet == 'Contact':
-                           blist = self.cut(jsondata[facet],'=',2)
-                           jsondata[facet] = self.uniq(blist,';')
+                           if all(x is None for x in jsondata[facet]):
+                               jsondata[facet] = ['Not stated']
+                           else:
+                               blist = self.cut(jsondata[facet],'=',2)
+                               jsondata[facet] = self.uniq(blist,';')
                        elif facet == 'SpatialCoverage':
                            spdesc,slat,wlon,nlat,elon=self.map_spatial(jsondata[facet])
                            if wlon and slat and elon and nlat :
