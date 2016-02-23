@@ -1200,44 +1200,33 @@ class MAPPER(object):
           - eliminate duplicates, numbers and 1-character- strings, ...      
         """
 
-        try:
-            dictlist=[]
-            valarr=[]
-            if isinstance(invalue,dict):
-                invalue=invalue.values()
-            elif not isinstance(invalue,list):
-                invalue=invalue.split(';')
-                invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
-            for lentry in invalue :
-                try:
-                    if type(lentry) is dict :
-                        if lentry["value"]:
-                            valarr.append(lentry["value"])
-                        else:
-                            valarr=lentry.values()
+        dictlist=[]
+        valarr=[]
+        if isinstance(invalue,dict):
+            invalue=invalue.values()
+        elif not isinstance(invalue,list):
+            invalue=invalue.split(';')
+            invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
+        for lentry in invalue :
+            try:
+                if type(lentry) is dict :
+                    if lentry["value"]:
+                        valarr.append(lentry["value"])
                     else:
-                        valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
-                    for entry in valarr:
-                        ## if type(entry) is int or not dictEn.check(entry) : continue ## eleminate integers and not English words
-                        if isinstance(entry,int) : continue
-                        entry=str(entry).strip()
-                        ##if len(entry)==1 : continue ## eleminate 1 letter values
-                        dictlist.append({ "name": entry.replace('/','-') })
-                except AttributeError, err :
-                    log.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
-                    continue
-                except Exception, e:
-                    log.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
-                    continue
-
-        except AttributeError, err :
-            log.error('[ERROR] %s in list2dictlist of invalue %s' % (err,invalue))
-            return None
-        except Exception, err:
-            log.error('[ERROR] %s in list2dictlist of invalue %s' % (err,invalue))
-            return None
-        else:
-            return dictlist
+                        valarr=lentry.values()
+                else:
+                    valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
+                for entry in valarr:
+                    if isinstance(entry,int) : continue
+                    entry=entry.encode('utf-8').strip()
+                    dictlist.append({ "name": entry.replace('/','-') })
+            except AttributeError, err :
+                log.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
+                continue
+            except Exception, e:
+                log.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
+                continue
+        return dictlist
 
     def uniq(self,input,joinsep=None):
         uniqset = set(input)
