@@ -197,9 +197,11 @@ def process(options,pstat,OUT):
         
         if mode is 'multi':
             logger.info(' |- Joblist:  \t%s' % options.list)
-            if (options.community != '') : logger.debug(' |- Community:\t%s' % options.community)
-            if (options.mdsubset != None) : logger.debug(' |- OAI subset:\t%s' % options.mdsubset)
-            process_harvest(HV,parse_list_file('harvest',options.list, options.community,options.mdsubset))
+            logger.debug(' |- Community:\t%s' % options.community)
+            logger.debug(' |- OAI subset:\t%s' % options.mdsubset)
+            logger.debug(' |- Source MD format:\t%s' % options.mdprefix)
+
+            process_harvest(HV,parse_list_file('harvest',options.list, options.community,options.mdsubset,options.mdprefix))
         else:
             process_harvest(HV,[[
                 options.community,
@@ -221,14 +223,15 @@ def process(options,pstat,OUT):
                 logger.info(' |- Joblist:  \t%s' % OUT.convert_list )
                 if (options.community != '') : logger.debug(' |- Community:\t%s' % options.community)
                 if (options.mdsubset != None) : logger.debug(' - OAI subset:\t%s' % options.mdsubset)
-                process_map(MP, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
+                process_map(MP, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset, options.mdprefix, options.target_mdschema))
             else:
                 process_map(MP,[[
                     options.community,
                     options.source,
                     options.mdprefix,
                     options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
+                    options.mdsubset,
+                    options.target_mdschema
                 ]])
         ## VALIDATOR - Mode:  
         if (pstat['status']['v'] == 'tbd'):
@@ -254,14 +257,15 @@ def process(options,pstat,OUT):
 
             # start the process converting:
             if mode is 'multi':
-                process_oaiconvert(MP, parse_list_file('oaiconvert', OUT.convert_list or options.list, options.community,options.mdsubset))
+                process_oaiconvert(MP, parse_list_file('oaiconvert', OUT.convert_list or options.list, options.community,options.mdsubset,options.mdprefix,options.target_mdschema))
             else:
                 process_oaiconvert(MP,[[
                     options.community,
                     options.source,
                     options.mdprefix,
                     options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
+                    options.mdsubset,
+                    options.target_mdschema
                 ]])
 
 
@@ -343,12 +347,17 @@ def process_map(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[3])
+        if (len (request) > 5):            
+            mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[5])
+            target=request[5]
+        else:
+            mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[3])
+            target=None
         logger.info('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],mapfile,'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
         
-        results = MP.map(ir,request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.map(ir,request[0],request[3],os.path.abspath(request[2]+'/'+request[4]),target)
 
         ctime=time.time()-cstart
         results['time'] = ctime
@@ -388,12 +397,11 @@ def process_oaiconvert(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        logger.info('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+        logger.info('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
         rcstart = time.time()
         
-        results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]),request[5])
 
-        print results
         rctime=time.time()-rcstart
         results['time'] = rctime
         
@@ -801,7 +809,7 @@ def process_delete(OUT, dir, options):
         # save stats:
         OUT.save_stats(community+'-'+mdprefix,subset,'d',results)
 
-def parse_list_file(process,filename,community='',subset=''):
+def parse_list_file(process,filename,community=None,subset=None,mdprefix=None,target_mdschema=None):
     if(not os.path.isfile(filename)):
         logger.critical('[CRITICAL] Can not access job list file %s ' % filename)
         exit()
@@ -813,6 +821,9 @@ def parse_list_file(process,filename,community='',subset=''):
     # processing loop over ingestion requests
     inside_comment = False
     reqlist = []
+
+    log.debug(' Arguments given to parse_list_file:\n\tcommunity:\t%s\n\tmdprefix:\t%s\n\tsubset:\t%s\n\ttarget_mdschema:\t%s' % (community,mdprefix,subset,target_mdschema))
+
 
     l = 0
     for request in lines:
@@ -832,8 +843,13 @@ def parse_list_file(process,filename,community='',subset=''):
             continue
        
         # sort out lines that don't match given community
-        if((community != '') and ( not request.startswith(community))):
+        if((community != None) and ( not request.startswith(community))):
             continue
+
+        # sort out lines that don't match given mdprefix
+        if (mdprefix != None):
+            if ( not request.split()[3] == mdprefix) :
+              continue
             
         # sort out lines that don't match given subset
         if (subset != None):
@@ -841,7 +857,10 @@ def parse_list_file(process,filename,community='',subset=''):
                continue
             elif ( not request.split()[4] == subset ) and (not ( subset.endswith('*') and request.split()[4].startswith(subset.translate(None, '*')))) :
               continue
-            
+
+        if (target_mdschema != None):
+            request+=' '+target_mdschema  
+
         reqlist.append(request.split())
         
     if len(reqlist) == 0:
@@ -899,6 +918,7 @@ def options_parser(modes):
     group_single.add_option('--verb', help="Verbs or requests defined in OAI-PMH, can be ListRecords (default) or ListIdentifers here",default='ListRecords', metavar='STRING')
     group_single.add_option('--mdsubset', help="Subset of harvested meta data",default=None, metavar='STRING')
     group_single.add_option('--mdprefix', help="Prefix of harvested meta data",default=None, metavar='STRING')
+    group_single.add_option('--target_mdschema', help="Meta data schema of the target",default=None, metavar='STRING')
     
     group_upload = optparse.OptionGroup(p, "Upload Options",
         "These options will be required to upload an dataset to a CKAN database.")
