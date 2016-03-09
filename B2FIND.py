@@ -460,7 +460,7 @@ class HARVESTER(object):
             bartags=perc/5 #HEW-D fcount/100
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
+                print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 )
                 sys.stdout.flush()
 
             if req["lverb"] == 'JSONAPI':
@@ -779,24 +779,6 @@ class MAPPER(object):
                    "MetadataAccess" : "metadata"
                               }  
 
-        self.json2ceraexp = OrderedDict()
-        self.json2ceraexp={
-                   "tags" : "KEY_CONNECT.GENERAL_KEY",
-                   "author" : "AUTHORS", 
-                   "Contact" : "Contact",
-                              }  
-
-        self.json2cerads = OrderedDict()
-        self.json2cerads={
-                   "title" : ["entry_name","Coverage.location_name"], 
-                   "notes" : "summary.accuracy_report",
-                   "url" : "entry_acronym", 
-                   "Discipline" : "summary",
-                   "TemporalCoverage" : "Coverage",
-                   "SpatialCoverage" : "Coverage.location_name",
-                   "Format" : "Distribution.format_acronym",
-                              }  
-
         ## settings for pyparsing
         nonBracePrintables = ''
         unicodePrintables = u''.join(unichr(c) for c in xrange(65536) 
@@ -1083,7 +1065,7 @@ class MAPPER(object):
         pattern = re.compile(r";|\s+")
         try:
           if type(invalue) is not list :
-              invalue=[invalue]
+              invalue=invalue.split() ##HEW??? [invalue]
           coordarr=list()
           nc=0
           for val in invalue:
@@ -1098,13 +1080,13 @@ class MAPPER(object):
                   else :
                       return (desc,None,None,None,None)
               else:
-                  ##inarr=pattern.split(val)
-                  ##HEW-T 
-                  if self.is_float_try(val) is True :
-                      coordarr.append(val)
-                      nc+=1
-                  else:
-                      desc+=' '+val
+                  valarr=val.split()
+                  for v in valarr:
+                      if self.is_float_try(v) is True :
+                          coordarr.append(v)
+                          nc+=1
+                      else:
+                          desc+=' '+v
           if len(coordarr)==2 :
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[0],coordarr[1])
               return(desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
@@ -1112,7 +1094,7 @@ class MAPPER(object):
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
               return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in map_spatial %s can not converted !' % (e,invalue))
+           self.logger.error('[ERROR] : %s - in map_spatial invalue %s can not converted !' % (e,invalue))
            return (None,None,None,None,None) 
 
     def map_discipl(self,invalue,disctab):
@@ -1708,7 +1690,7 @@ class MAPPER(object):
 
         return jsondata
 
-    def map(self,nr,community,mdprefix,path):
+    def map(self,nr,community,mdprefix,path,target_mdschema):
         ## map(MAPPER object, community, mdprefix, path) - method
         # Maps the XML files in directory <path> to JSON files 
         # For each file two steps are performed
@@ -1748,15 +1730,25 @@ class MAPPER(object):
             self.logger.error('[ERROR] The directory "%s" does not exist! No files to map are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + insubdir) or not os.listdir(path + insubdir):
-            self.logger.error('[ERROR] The directory "%s%s" does not exist or no %s-files to convert are found !\n(Maybe your convert list has old items?)' % (path,insubdir,insubdir))
+            self.logger.error('[ERROR] The input directory "%s%s" does not exist or no %s-files to convert are found !\n(Maybe your convert list has old items?)' % (path,insubdir,insubdir))
             return results
       
         # make output directory for mapped json's
-        if (not os.path.isdir(path+'/json')):
-           os.makedirs(path+'/json')
+        if (target_mdschema):
+            outpath=path+'-'+target_mdschema+'/json'
+        else:
+            outpath=path+'/json'
+
+
+        if (not os.path.isdir(outpath)):
+           os.makedirs(outpath)
 
         # check and read rules from mapfile
-        mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
+        if (target_mdschema):
+            mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,target_mdschema,mapext)
+        else:
+            mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
+
         if not os.path.isfile(mapfile):
             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
             if not os.path.isfile(mapfile):
@@ -1830,7 +1822,7 @@ class MAPPER(object):
                             jsondata=json.loads(f.read())
                             ##HEW-D ???!!! hjsondata=json.loads(f.read())
                         else:
-                            indata= ET.parse(path+'/xml/'+filename)
+                            xmldata= ET.parse(infilepath)
                     except Exception as e:
                         log.error('    | [ERROR] %s : Cannot load or parse %s-file %s' % (e,infformat,infilepath))
                         results['ecount'] += 1
@@ -1848,7 +1840,7 @@ class MAPPER(object):
                     try:
                         # Run Python XPATH converter
                         self.logger.debug('    | xpath | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
-                        jsondata=self.xpathmdmapper(indata,maprules,namespaces)
+                        jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
                     except Exception as e:
                         log.error('    | [ERROR] %s : during XPATH processing' % e )
                         results['ecount'] += 1
@@ -1880,9 +1872,6 @@ class MAPPER(object):
                            iddict = self.map_identifiers(jsondata[facet])
                            if 'url' in iddict: ## and iddict['url'] != '': 
                                jsondata[facet]=iddict['url']
-                           elif 'DOI' in iddict :
-                               jsondata[facet]=iddict['DOI']
-                           if 'PID' in iddict : jsondata['PID']=iddict['PID']
                        elif facet == 'DOI':
                            iddict = self.map_identifiers(jsondata[facet])
                            if 'DOI' in iddict : 
@@ -1901,7 +1890,7 @@ class MAPPER(object):
                                blist = self.cut(jsondata[facet],'=',2)
                                jsondata[facet] = self.uniq(blist,';')
                        elif facet == 'SpatialCoverage':
-                           spdesc,slat,wlon,nlat,elon=self.map_spatial(jsondata[facet])
+                           spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet])
                            if wlon and slat and elon and nlat :
                                spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
                            if spdesc :
@@ -1919,9 +1908,13 @@ class MAPPER(object):
                             else:
                                 jsondata[facet] = None
                    except Exception as e:
-                       self.logger.error(' [WARNING] %s : during mapping of field %s with value %s' % (e,facet,jsondata[facet]))
+                       self.logger.error(' [WARNING] %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
                        continue
 
+                if iddict :
+                    if 'DOI' in iddict :
+                        jsondata['DOI']=iddict['DOI']
+                    if 'PID' in iddict : jsondata['PID']=iddict['PID']
                 if 'url' not in jsondata:
                     if 'DOI' in jsondata:
                         jsondata['url']=jsondata['DOI']
@@ -1938,7 +1931,7 @@ class MAPPER(object):
                 ## write to JSON file
                 jsonfilename=os.path.splitext(filename)[0]+'.json'
 
-                with io.open(path+'/json/'+jsonfilename, 'w') as json_file:
+                with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                     try:
                         log.debug('   | [INFO] decode json data')
                         data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
@@ -1948,10 +1941,10 @@ class MAPPER(object):
                         log.debug('   | [INFO] save json file')
                         json_file.write(data)
                     except TypeError, err :
-                        log.error('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
+                        log.error('    | [ERROR] Cannot write json file %s : %s' % (outpath+'/'+filename,err))
                     except Exception as e:
-                        log.error('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
-                        err+='Cannot write json file %s' % path+'/json/'+filename
+                        log.error('    | [ERROR] %s : Cannot write json file %s' % (e,outpath+'/'+filename))
+                        err+='Cannot write json file %s' % outpath+'/'+filename
                         results['ecount'] += 1
                         continue
             else:
@@ -2237,41 +2230,45 @@ class MAPPER(object):
         return results
 
     def json2xml(self,json_obj, line_padding="", mdftag="", mapdict="ckan2b2find"):
+        
+
+
+
         result_list = list()
         json_obj_type = type(json_obj)
 
 
         if json_obj_type is list:
             for sub_elem in json_obj:
+                print 'SSSSSS  sub_elem %s' %   sub_elem
                 result_list.append(json2xml(sub_elem, line_padding, mdftag, mapdict))
 
             return "\n".join(result_list)
 
         if json_obj_type is dict:
             for tag_name in json_obj:
-                    sub_obj = json_obj[tag_name]
-                    if tag_name == 'author':
-                        sub_obj=sub_obj.split(';')
-                    if tag_name.lower() in mapdict : 
-                        tag_name=mapdict[tag_name.lower()]
+                sub_obj = json_obj[tag_name]
+                print 'TTTT SSSSSS  sub_obj %s' %   sub_obj
+                if tag_name in mapdict : 
+                    tag_name=mapdict[tag_name]
+                    if not isinstance(tag_name,list) : tag_name=[tag_name]
+                    print 'NNNN TTTT SSSSSS  tag_name %s' % tag_name
+                    for key in tag_name:
+                        result_list.append("%s<%s%s>" % (line_padding, mdftag, key))
                         if type(sub_obj) is list:
                             for nv in sub_obj:
-                                result_list.append("%s<%s%s>" % (line_padding, mdftag, tag_name.lower()))
-                                vlist="\t\t"
                                 if tag_name == 'tags' or tag_name == 'KEY_CONNECT.GENERAL_KEY':
-                                    result_list.append("%s%s" % ("\t" + line_padding, nv["name"].strip()))
+                                    result_list.append("%s%s" % (line_padding, nv["name"].strip()))
                                 else:
-                                    result_list.append("%s%s" % ("\t" + line_padding, nv.strip()))
-                            if not isinstance(tag_name,list): tag_name=[tag_name]
-                            for key in tag_name:
-                                result_list.append("%s</%s%s>" % (line_padding, mdftag, key.lower()))
+                                    result_list.append("%s%s" % (line_padding, nv.strip()))
                         else:
-                            if not isinstance(tag_name,list): tag_name=[tag_name]
-                            for key in tag_name:
-                                result_list.append("%s<%s%s>" % (line_padding, mdftag, key.lower()))
-                                result_list.append(self.json2xml(sub_obj, "\t" + line_padding, mdftag, mapdict))
-                                result_list.append("%s</%s%s>" % (line_padding, mdftag, key.lower()))
-                    else:
+                            result_list.append(self.json2xml(sub_obj, "\t" + line_padding, mdftag, mapdict))
+
+                        result_list.append("%s</%s%s>" % (line_padding, mdftag, key))
+
+
+
+                else:
                         self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
             
@@ -2279,7 +2276,7 @@ class MAPPER(object):
 
         return "%s%s" % (line_padding, json_obj)
 
-    def oaiconvert(self,community,mdprefix,path):
+    def oaiconvert(self,community,mdprefix,path,target_mdschema):
         ## oaiconvert(MAPPER object, community, mdprefix, path) - method
         # Converts the JSON files in directory <path> to XML files in target format (=mdprefix ??)
         # Parameters:
@@ -2300,6 +2297,12 @@ class MAPPER(object):
         }
         
         # check paths
+        if (target_mdschema):
+            path=path+'-'+target_mdschema
+        else:
+            self.logger.error('[ERROR] For OAI converter processing target metaschema must be given!')
+            sys.exit()
+
         if not os.path.exists(path):
             self.logger.error('[ERROR] The directory "%s" does not exist! No files for oai-converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
@@ -2313,23 +2316,32 @@ class MAPPER(object):
         
         results['tcount'] = len(files)
 
-        oaiset=path.split(mdprefix)[1].split('_')[0].strip('/')
+        ##oaiset=path.split(target_mdschema)[0].split('_')[0].strip('/')
+        oaiset=os.path.basename(path)
         ## outpath=path.split(community)[0]+'/b2find-oai_b2find/'+community+'/'+mdprefix +'/'+path.split(mdprefix)[1].split('_')[0]+'/xml'
-        outpath=path.split(community)[0]+'b2find-oai_b2find/'+community+'/'+mdprefix +'/xml'
-        print 'outpath %s' % outpath
+        ##HEW-D outpath=path.split(community)[0]+'b2find-oai_b2find/'+community+'/'+mdprefix +'/xml'
+        outpath=path +'/xml'
         if (not os.path.isdir(outpath)):
              os.makedirs(outpath)
 
-        self.logger.info(' %s     INFO  OAI-Converter of files in %s/json' % (time.strftime("%H:%M:%S"),path))
-        print  '    |   | %-4s | %-40s | %-40s |\n   |%s|' % ('#','infile','outfile',"-" * 53)
+        self.logger.debug(' %s     INFO  OAI-Converter of files in %s/json' % (time.strftime("%H:%M:%S"),path))
+        self.logger.debug('    |   | %-4s | %-40s | %-40s |\n   |%s|' % ('#','infile','outfile',"-" * 53))
 
         fcount = 0
+        oldperc = 0
+        start = time.time()
         for filename in files:
+            ## counter and progress bar
             fcount+=1
+            perc=int(fcount*100/int(len(files)))
+            bartags=perc/10
+            if perc%10 == 0 and perc != oldperc :
+                oldperc=perc
+                self.logger.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                sys.stdout.flush()
+
             identifier=oaiset+'_%06d' % fcount
             createdate = str(datetime.datetime.utcnow())
-
-
             jsondata = dict()
             self.logger.debug(' |- %s     INFO  JSON2XML - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
             outfile=outpath+'/'+community+'_'+oaiset+'_%06d' % fcount+'.xml'
@@ -2349,30 +2361,44 @@ class MAPPER(object):
             
             
             ### oai-convert !!
-            if mdprefix == 'cera':
-                mapdict=self.json2cerads
-                header="""<?xml version="1.0" encoding="UTF-8"?>
-<XML_Cera2_entry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://cera-www.dkrz.de/Meta_Fill/ds2.xsd">
-     <experiment_acronym>"""+identifier+"""</experiment_acronym>
-     <dataset_group_acronym>"""+identifier+"""</dataset_group_acronym>
-     <entry_type>dataset</entry_type>
-"""
-                footer="""
-</XML_Cera2_entry>"""
-                xmlprefix=''
-                jsondata['url']='HDCP2_'+jsondata['url'].split('=')[1]
-                xmldata=header+self.json2xml(jsondata,'\t',xmlprefix,mapdict)+footer
-                outfile=outpath+'/ds2_'+jsondata['url']+'.xml'
+            if target_mdschema == 'cera':
+                convertfile='%s/mapfiles/%s%s.%s' % (os.getcwd(),'json2',target_mdschema,'json')
+                with open(convertfile, 'r') as f:
+                    try:
+                        mapdict=json.loads(f.read())
+                    except:
+                        log.error('    | [ERROR] Cannot load the convert file %s' % convertfile)
+                        sys.exit()
 
-                try:
-                    f = open(outfile, 'w')
-                    f.write(xmldata.encode('utf-8'))
-                    f.write("\n")
-                    f.close
-                except IOError, e:
-                    self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
-                    return(False, outfile , outpath, fcount)
-
+                    for filetype in ['ds','exp']:
+	                ### load xml template
+	                templatefile='%s/mapfiles/%s_%s_%s.%s' % (os.getcwd(),target_mdschema,filetype,'template','xml')
+	                with open(templatefile, 'r') as f:
+	                    try:
+	                        dsdata= f.read() ##HEW-D ET.parse(templatefile).getroot()
+	                    except Exception as e:
+	                        log.error('    | [ERROR] %s : Cannot load tempalte file %s' % (e,templatefile))
+	
+	                data=dict()
+	                for key in jsondata:
+	                        if isinstance(jsondata[key],list) and len(jsondata[key])>0 :
+	                            data[key]=' '.join(jsondata[key]).strip('\n ')
+	                        else:
+	                            data[key]=jsondata[key]
+	
+	                dsdata=dsdata%data
+	                
+	                outfile=outpath+'/'+filetype+'_hdcp2_'+data['ds.entry_acronym']+'.xml'
+	
+	                try:
+	                    f = open(outfile, 'w')
+	                    f.write(dsdata.encode('utf-8'))
+	                    f.write("\n")
+	                    f.close
+	                except IOError, e:
+	                    self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
+	                    return(False, outfile , outpath, fcount)
+	
             else:
                 mapdict=self.ckan2b2find
                 header="""<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
