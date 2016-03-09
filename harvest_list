@@ -173,7 +173,8 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE61 ## 
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE66 ## Australian Catholic University; 1;
 ##Only test datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.TEST ## ANDS Testing datacentre; 1;
 ##HEW-Allocator ##Total BL ?? datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL ## British Library ; 828241;
-datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.ADS ## Archaeology Data Service; 34320;
+## Archaeology Data Service; 34320;
+datacite  http://oai.datacite.org/oai  ListRecords  oai_dc BL.ADS 
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.ASTON ## Aston University; 9;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.BATH ## University of Bath; 26;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.BGI ## Beijing Genomics Institute; 445;
