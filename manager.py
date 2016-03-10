@@ -520,11 +520,8 @@ def process_upload(UP, rlist, options):
             oai_id = jsondata['oai_identifier'][0]
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
-            ### CHECK JSON DATA
-            if (UP.check(jsondata) < 1):
-                logger.info('        |-> Could not upload %s' % pathfname )
-                results['ecount'] += 1
-                continue
+            ### CHECK JSON DATA for upload
+            jsondata=UP.check(jsondata)
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:

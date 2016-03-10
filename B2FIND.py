@@ -2496,7 +2496,7 @@ class UPLOADER (object):
         # B2FIND metadata fields
         self.b2findfields = list()
         self.b2findfields = [
-                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess"]
+                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess","oai_set","oai_identifier","fulltext"]
         self.ckandeffields = ["author","title","notes","tags","url"]
 
     def purge_group(self,community):
@@ -2590,8 +2590,6 @@ class UPLOADER (object):
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
 
-
-
     def json2ckan(self, jsondata):
         ## json2ckan(UPLOADER object, json data) - method
         ##  converts flat JSON structure to CKAN JSON record with extra fields
@@ -2610,6 +2608,9 @@ class UPLOADER (object):
             if key in jsondata :
                 if key in ['Contact','Format','Language','Publisher','PublicationYear']:
                     value=';'.join(jsondata[key])
+                if key in ['oai_set','oai_identifier']: ### ,'fulltext']
+                    if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
+                        value=jsondata[key][-1]      
                 else:
                     value=jsondata[key]
                 jsondata['extras'].append({
@@ -2621,11 +2622,9 @@ class UPLOADER (object):
 
         return jsondata
 
-
-
     def check(self, jsondata):
         ## check(UPLOADER object, json data) - method
-        # Checks the json data (e.g. the PublicationTimestamp field) by using B2FIND standard
+        # Checks the jsondata and returns the correct ones
         #
         # Parameters:
         # -----------
@@ -2633,34 +2632,32 @@ class UPLOADER (object):
         #
         # Return Values:
         # --------------
-        # 1. (integer)  validation result:
+        # 1. (dict)   
+        # Raise errors:
+        # -------------
         #               0 - critical error occured
         #               1 - non-critical error occured
         #               2 - no error occured    
     
-        status = 2
         errmsg = ''
         
         ## check mandatory fields ...
         mandFields=['title','url','oai_identifier']
         for field in mandFields :
             if field not in jsondata: ##  or jsondata[field] == ''):
-                errmsg+= "The mandatory field '%s' is missing" % field
-                status = 0  # set status
+                raise Exception("The mandatory field '%s' is missing" % field)
+
         ##HEW-D elif ('url' in jsondata and not self.check_url(jsondata['url'])):
         ##HEW-D     errmsg = "'url': The source url is broken"
         ##HEW-D     if(status > 1): status = 1  # set status
             
-        if errmsg: self.logger.warning("        [WARNING] %s" % errmsg)
-        
-
         # ... OAI Set
         if('oai_set' in jsondata and ';' in  jsondata['oai_set']):
             jsondata['oai_set'] = jsondata['oai_set'].split(';')[-1] 
             
         # shrink field fulltext
         if('fulltext' in jsondata and sys.getsizeof(jsondata['fulltext']) > 31999):
-            errmsg = "'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(jsondata['fulltext']),len(jsondata['fulltext']))
+            raise Exception("'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(jsondata['fulltext']),len(jsondata['fulltext'])))
             encoding='utf-8'
             encoded = jsondata['fulltext'].encode(encoding)[:32000]
             jsondata['fulltext']=encoded.decode(encoding, 'ignore')
@@ -2669,10 +2666,9 @@ class UPLOADER (object):
             try:
                 datetime.datetime.strptime(jsondata['PublicationYear'][0], '%Y')
             except (ValueError,TypeError) as e:
-                errmsg = "Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear'])
+                raise Exception("Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear']))
                 # delete this field from the jsondata:
                 del jsondata['PublicationYear']
-                if(status > 1): status = 1  # set status
                 
         # check Date-Times for consistency with UTC format
         dt_keys=['PublicationTimestamp', 'TemporalCoverage:BeginDate', 'TemporalCoverage:EndDate']
@@ -2681,14 +2677,10 @@ class UPLOADER (object):
                 try:
                     datetime.datetime.strptime(jsondata[key], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
                 except ValueError:
-                    errmsg += "Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key)
+                    raise Exception("Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key))
                     del jsondata[key] # delete this field from the jsondata
-                    if (status > 1): status = 1  # set status
 
-        # print warning:
-        if errmsg: self.logger.debug("[WARNING] %s" % errmsg)            
-
-        return status
+        return jsondata
 
     def upload(self, ds, dsstatus, community, jsondata):
         ## upload (UPLOADER object, dsname, dsstatus, community, jsondata) - method
