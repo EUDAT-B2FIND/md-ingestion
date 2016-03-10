@@ -580,7 +580,7 @@ def process_upload(UP, rlist, options):
                     ManagerVersion2 = client.get_value_from_handle(pid, "JMDVERSION",rec)
                     B2findHost = client.get_value_from_handle(pid,"B2FINDHOST",rec)
                 except Exception, err:
-                    logger.critical("[CRITICAL : %s] in client.get_value_from_handle" % err )
+                    logger.error("[CRITICAL : %s] in client.get_value_from_handle" % err )
                 else:
                     logger.debug("Got checksum2 %s, ManagerVersion2 %s and B2findHost %s from PID %s" % (checksum2,ManagerVersion2,B2findHost,pid))
                 if (checksum2 == None):
