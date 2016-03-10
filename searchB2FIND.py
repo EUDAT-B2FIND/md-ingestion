@@ -75,15 +75,17 @@ def main():
         'oai_set':'oai_set'
 }
 
-    if args.keys is not None :
+    if tcount>0 and args.keys is not None :
         if len(args.keys) == 0 :
             akeys=[]
-        elif args.keys[0] == 'B2FIND.*' :
-            akeys=OrderedDict(sorted(b2findfacets.items(), key=lambda i:b2findorder.index(i[0])))
         else:
-            akeys=args.keys
+            if args.keys[0] == 'B2FIND.*' :
+                akeys=OrderedDict(sorted(b2findfacets.items(), key=lambda i:b2findorder.index(i[0])))
+            else:
+                akeys=args.keys
 
             suppid=b2findfacets
+            suppid.update(admin_fields)
 
             fh = io.open(args.output, "w", encoding='utf8')
             record={} 
