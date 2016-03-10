@@ -2655,8 +2655,8 @@ class UPLOADER (object):
         
 
         # ... OAI Set
-        if('oai_set' in jsondata and '/' in  jsondata['oai_set']):
-            jsondata['oai_set'] = jsondata['oai_set'].split('/')[-1] 
+        if('oai_set' in jsondata and ';' in  jsondata['oai_set']):
+            jsondata['oai_set'] = jsondata['oai_set'].split(';')[-1] 
             
         # shrink field fulltext
         if('fulltext' in jsondata and sys.getsizeof(jsondata['fulltext']) > 31999):
