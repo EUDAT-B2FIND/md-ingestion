@@ -1107,13 +1107,16 @@ class MAPPER(object):
         
         retval=list()
         if type(invalue) is not list :
-            inlist=re.split(r'[;\s]\s*',invalue)
+            inlist=re.split(r'[;&\s]\s*',invalue)
             inlist.append(invalue)
         else:
-            inlist=invalue
+            seplist=[re.split(r"[;&]",i) for i in invalue]
+            swlist=[re.findall(r"[\w']+",i) for i in invalue]
+            inlist=swlist+seplist
+            inlist=[item for sublist in inlist for item in sublist]
         for indisc in inlist :
            ##indisc=indisc.encode('ascii','ignore').capitalize()
-           indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip()
+           indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
            maxr=0.0
            maxdisc=''
            for line in disctab :
@@ -1130,12 +1133,12 @@ class MAPPER(object):
            if maxr == 1 and indisc == maxdisc :
                self.logger.debug('  | Perfect match of %s : nothing to do' % indisc)
                retval.append(indisc.strip())
-           elif maxr > 0.98 :
-               self.logger.info('   | Similarity ratio %f is > 0.98 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
+           elif maxr > 0.90 :
+               self.logger.info('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
                ##return maxdisc
                retval.append(indisc.strip())
            else:
-               self.logger.debug('   | Similarity ratio %f is < 0.89 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
+               self.logger.debug('   | Similarity ratio %f is < 0.90 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
                continue
 
         if len(retval) > 0:
