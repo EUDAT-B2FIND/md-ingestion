@@ -1134,7 +1134,7 @@ class MAPPER(object):
                self.logger.debug('  | Perfect match of %s : nothing to do' % indisc)
                retval.append(indisc.strip())
            elif maxr > 0.90 :
-               self.logger.info('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
+               self.logger.debug('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
                ##return maxdisc
                retval.append(indisc.strip())
            else:
@@ -1159,8 +1159,8 @@ class MAPPER(object):
         """
 
         outvalue=list()
-        if isinstance(invalue,list):
-            for elem in invalue:
+        if not isinstance(invalue,list): invalue = invalue.split()
+        for elem in invalue:
                 if pattern is None :
                     if nfield :
                         outvalue.append(elem[nfield])
@@ -1173,8 +1173,8 @@ class MAPPER(object):
                     else:
                         outvalue.append(elem)
                         
-        else:
-            log.error('[ERROR] : cut expects as invalue (%s) a list' % invalue)
+        ##else:
+        ##    log.error('[ERROR] : cut expects as invalue (%s) a list' % invalue)
             ## return None
 
         return outvalue
