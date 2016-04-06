@@ -84,17 +84,17 @@ def main():
             else:
                 akeys=args.keys
 
-            suppid=b2findfacets
-            suppid.update(admin_fields)
+        suppid=b2findfacets
+        suppid.update(admin_fields)
 
-            fh = io.open(args.output, "w", encoding='utf8')
-            record={} 
+        fh = io.open(args.output, "w", encoding='utf8')
+        record={} 
   
-            totlist=[]
-            count={}
-            count['id']=0
-            statc={}
-            for outt in akeys:
+        totlist=[]
+        count={}
+        count['id']=0
+        statc={}
+        for outt in akeys:
                 if outt not in suppid :
                     print ' [WARNING] Not supported key %s is removed' % outt
                     akeys.remove(outt)
@@ -102,17 +102,17 @@ def main():
                     count[outt]=0
                     statc[outt] = Counter()
 
-            printfacets=''
-            if (len(akeys) > 0):
-                printfacets="and related facets %s " % ", ".join(akeys)
+        printfacets=''
+        if (len(akeys) > 0):
+            printfacets="and related facets %s " % ", ".join(akeys)
 
             print "\t|- ID's %sare written to %s ..." % (printfacets,args.output)
 
-	    counter=0
-	    cstart=0
-	    oldperc=0
-	    start2=time.time()
-	    while (cstart < tcount) :
+        counter=0
+        cstart=0
+        oldperc=0
+        start2=time.time()
+        while (cstart < tcount) :
 	       if (cstart > 0):
 	           answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit, start=cstart)
 	       if len(answer['results']) == 0 :
@@ -167,9 +167,9 @@ def main():
 	                ##outline+='\n   \t| %-20s' % (statc[aid].keys(),statc[aid].values())
 	            fh.write(outline+'\n')
 	       cstart+=len(answer['results']) 
-	    fh.close()
+        fh.close()
 	
-	    if len(akeys) > 0 :
+        if len(akeys) > 0 :
 	        statfh = io.open('stat_'+args.output, "w", encoding='utf8')
 	        ##print "\n|- Statistics :\n\t| %-16s | %-10s | %6s |\n\t%s " % ('Facet','Occurence','%',"-" * 50)
 	        print '|- Statistics written to file %s' % 'stat_'+args.output
