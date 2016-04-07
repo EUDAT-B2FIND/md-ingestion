@@ -11,14 +11,16 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## SEANOE
+seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
 ## EISCAT
 eiscat  http://ed-icat-01.csc.fi/cgi-bin/oai-pmh   ListIdentifiers   oai_dc
 ## IST
 ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 # eprints, Status = Published
 ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
-## DEIMS
-deims   http://deims???.de:8080/oai/provider  ListRecords  iso test
+## LTER (repository DEIMS)
+lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA

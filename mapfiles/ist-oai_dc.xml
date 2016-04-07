@@ -33,7 +33,6 @@
     <field name="author">
       <xpath>string-join(distinct-values(//dc:creator/text()), ';')</xpath>
     </field>
-    <!-- All other visible fields, shown in table 'Additional info' -->
     <field name="Publisher">
       <xpath>//dc:publisher/text()</xpath>
     </field>

@@ -351,9 +351,13 @@ def process_map(MP, rlist):
             mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[5])
             target=request[5]
         else:
-            mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[3])
+            mapfile='%s/%s/%s-%s.xml' % (os.getcwd(),'mapfiles',request[0],request[3])
+            if not os.path.isfile(mapfile):
+                mapfile='%s/%s/%s.xml' % (os.getcwd(),'mapfiles',request[3])
+                if not os.path.isfile(mapfile):
+                    logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
             target=None
-        logger.info('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],mapfile,'Started',time.strftime("%H:%M:%S")))
+        logger.info('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
         
