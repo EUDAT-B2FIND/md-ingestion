@@ -416,6 +416,12 @@ def process_oaiconvert(MP, rlist):
 def process_upload(UP, rlist, options):
     ##HEW-D-ec credentials,ec = None,None
 
+    def print_extra(key,jsondata):
+        for v in jsondata['extras']:
+            if v['key'] == key:
+                print ' Key : %s | Value : %s |' % (v['key'],v['value'])
+ 
+
     # create credentials and handle cleint if required
     if (options.handle_check):
           try:
@@ -549,7 +555,6 @@ def process_upload(UP, rlist, options):
             jsondata['MetaDataAccess']=mdaccess
 
             jsondata=UP.json2ckan(jsondata)
-
             # determine checksum of json record and append
             try:
                 checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
@@ -617,7 +622,8 @@ def process_upload(UP, rlist, options):
                     upload=1
                 else:
                     logger.error('        |-> Upload of %s record %s failed ' % (dsstatus, ds_id ))
-            
+                    logger.debug('        |-> JSON data :\n\t %s ' % json.dumps(jsondata, indent=2))
+
             # update PID in handle server                           
             if (options.handle_check):
                 if (handlestatus == "unchanged"):

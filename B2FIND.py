@@ -1187,6 +1187,7 @@ class MAPPER(object):
 
         dictlist=[]
         valarr=[]
+        bad_chars = '(){}<>:'
         if isinstance(invalue,dict):
             invalue=invalue.values()
         elif not isinstance(invalue,list):
@@ -1195,14 +1196,16 @@ class MAPPER(object):
         for lentry in invalue :
             try:
                 if type(lentry) is dict :
-                    if lentry["value"]:
+                    if "value" in lentry:
                         valarr.append(lentry["value"])
                     else:
                         valarr=lentry.values()
                 else:
-                    valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
+                    ##valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
+                    valarr=re.findall('\[[^\]]*\]|\([^\)]*\)|\"[^\"]*\"|\S+',lentry)
                 for entry in valarr:
-                    if isinstance(entry,int) : continue
+                    entry="". join(c for c in entry if c not in bad_chars)
+                    if isinstance(entry,int) or len(entry) < 2 : continue
                     entry=entry.encode('utf-8').strip()
                     dictlist.append({ "name": entry.replace('/','-') })
             except AttributeError, err :
@@ -1211,7 +1214,7 @@ class MAPPER(object):
             except Exception, e:
                 log.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
                 continue
-        return dictlist
+        return dictlist[:12]
 
     def uniq(self,input,joinsep=None):
         uniqset = set(input)
@@ -2596,22 +2599,25 @@ class UPLOADER (object):
     def json2ckan(self, jsondata):
         ## json2ckan(UPLOADER object, json data) - method
         ##  converts flat JSON structure to CKAN JSON record with extra fields
+        self.logger.debug('    | Adapt default fields for upload to CKAN')
         for key in self.ckandeffields :
             if key not in jsondata:
                 log.debug('[WARNING] : CKAN default key %s does not exist' % key)
             else:
+                self.logger.debug('    | -- %-25s ' % key)
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join(list(jsondata[key]))
 
         jsondata['extras']=list()
+        self.logger.debug('    | Adapt extra fields for upload to CKAN')
         for key in set(self.b2findfields) - set(self.ckandeffields) :
-            self.logger.debug('    | j2ckan - %-10s : %-25s ' % ('extra field',key))
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher','PublicationYear']:
+                self.logger.debug('    | -- %-25s ' % key)
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum']:
                     value=';'.join(jsondata[key])
-                if key in ['oai_set','oai_identifier']: ### ,'fulltext']
+                elif key in ['oai_set','oai_identifier']: ### ,'fulltext']
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
                         value=jsondata[key][-1]      
                 else:
@@ -2620,6 +2626,7 @@ class UPLOADER (object):
                      "key" : key,
                      "value" : value
                 })
+                del jsondata[key]
             else:
                 log.debug('[WARNING] : No data for key %s ' % key)
 
@@ -2659,10 +2666,11 @@ class UPLOADER (object):
             jsondata['oai_set'] = jsondata['oai_set'].split(';')[-1] 
             
         # shrink field fulltext
-        if('fulltext' in jsondata and sys.getsizeof(jsondata['fulltext']) > 31999):
-            raise Exception("'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(jsondata['fulltext']),len(jsondata['fulltext'])))
+        if('fulltext' in jsondata):
+            ##raise Exception("'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(jsondata['fulltext']),len(jsondata['fulltext'])))
             encoding='utf-8'
-            encoded = jsondata['fulltext'].encode(encoding)[:32000]
+            encoded = ' '.join(jsondata['fulltext']).encode(encoding)[:32000]
+            encoded=re.sub('\s+',' ',encoded)
             jsondata['fulltext']=encoded.decode(encoding, 'ignore')
 
         if 'PublicationYear' in jsondata :
