@@ -1,3 +1,4 @@
+# -*- coding: iso-8859-15 -*-
 """B2FIND.py - classes for B2FIND management : 
   - CKAN_CLIENT  executes CKAN APIs (interface to CKAN)
   - HARVESTER    harvests from a OAI-PMH server
@@ -2015,7 +2016,7 @@ class MAPPER(object):
         for value in valuelist:
             if facet in ['title','notes','author','Publisher']:
                 if isinstance(value, str) or isinstance(value, unicode):
-                    vall.append(value)
+                    vall.append(value.encode("iso-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
                 else:
                     errlist+=' | %10s | %20s |' % (facet, value[:30])
             elif facet in ['url','DOI','PID']:
@@ -2608,7 +2609,7 @@ class UPLOADER (object):
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
-                    jsondata[key]='\n'.join(list(jsondata[key]))
+                    jsondata[key]='\n'.join(list(jsondata[key])).encode("iso-8859-1") ### !!! encode to display e.g. 'Umlauts' corectly
 
         jsondata['extras']=list()
         self.logger.debug('    | Adapt extra fields for upload to CKAN')
