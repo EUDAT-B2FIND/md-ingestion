@@ -2616,7 +2616,7 @@ class UPLOADER (object):
         for key in set(self.b2findfields) - set(self.ckandeffields) :
             if key in jsondata :
                 self.logger.debug('    | -- %-25s ' % key)
-                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum']:
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_set','oai_identifier']: ### ,'fulltext']
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 

@@ -13,7 +13,7 @@
 ## -----------------------------------------------------------------------------------
 ## SEANOE
 seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
-## EISCAT
+# EISCAT
 eiscat  http://ed-icat-01.csc.fi/cgi-bin/oai-pmh   ListIdentifiers   oai_dc
 ## IST
 ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
@@ -754,7 +754,8 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.RWI ## RWI ##
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.ZEW ## Zentrum für Europäische Wirtschaftsforschung GmbH (ZEW); 3;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.ZOEBIS ## Zentrum für ökonomische Bildung in Siegen; 14;
 ##%%% PanData
-pandata https://icat-10.pandata.stfc.ac.uk/oai/provider  ListIdentifiers oai_qdc
+##outdated pandata https://icat-10.pandata.stfc.ac.uk/oai/provider  ListIdentifiers oai_qdc
+pandata http://oai.eudat.stfc.ac.uk/oai/provider         ListIdentifiers oai_dc
 ##%%% NARCIS
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
