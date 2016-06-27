@@ -1,4 +1,4 @@
-# -*- coding: iso-8859-15 -*-
+###HEW-??? # -*- coding: iso-8859-15 -*-
 """B2FIND.py - classes for B2FIND management : 
   - CKAN_CLIENT  executes CKAN APIs (interface to CKAN)
   - HARVESTER    harvests from a OAI-PMH server
@@ -178,10 +178,12 @@ class CKAN_CLIENT(object):
             action_url = "http://{host}/api/3/action/{action}".format(host=self.ip_host,action=action)
 
         # make json data in conformity with URL standards
-        data_string = urllib.quote(json.dumps(data_dict))
+        encoding='utf-8'
+        ##encoding='ISO-8859-15'
+        data_string = urllib.quote(json.dumps(data_dict))##HEW-D??? .decode(encoding)
 
         self.logger.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
-        ##HEW-Tself.logger.debug('\t|-- Object %s ' % data_dict)	
+        ##HEW-T self.logger.debug('\t|-- Object %s ' % data_dict)	
         try:
             request = urllib2.Request(action_url)
             if (self.api_key): request.add_header('Authorization', self.api_key)
@@ -750,9 +752,16 @@ class MAPPER(object):
         self.logger = log.getLogger()
         self.OUT = OUT
         
-        # B2FIND metadata fields
-        self.b2findfields =["title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","Format","Contact","MetadataAccess"]
+        # Read in B2FIND metadata schema and fields
+        schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
+        with open(schemafile, 'r') as f:
+            self.b2findfields=json.loads(f.read())
 
+        self.ckanfields=list()
+        for val in self.b2findfields.values() :
+            self.ckanfields.append(val["ckanName"])
+
+        self.b2findfields = self.b2findfields.keys()
 
         self.ckan2b2find = OrderedDict()
         self.ckan2b2find={
@@ -1130,7 +1139,7 @@ class MAPPER(object):
              if r > maxr  :
                  maxdisc=disc
                  maxr=r
-                 ##HEW-T                   print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
+                 ##HEW-T                 print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
            if maxr == 1 and indisc == maxdisc :
                self.logger.debug('  | Perfect match of %s : nothing to do' % indisc)
                retval.append(indisc.strip())
@@ -1188,7 +1197,8 @@ class MAPPER(object):
 
         dictlist=[]
         valarr=[]
-        bad_chars = '(){}<>:'
+        bad_chars = '(){}<>:,'
+        bad_words = ['and','or','the']
         if isinstance(invalue,dict):
             invalue=invalue.values()
         elif not isinstance(invalue,list):
@@ -1207,6 +1217,7 @@ class MAPPER(object):
                 for entry in valarr:
                     entry="". join(c for c in entry if c not in bad_chars)
                     if isinstance(entry,int) or len(entry) < 2 : continue
+                    if entry in bad_words : continue
                     entry=entry.encode('utf-8').strip()
                     dictlist.append({ "name": entry.replace('/','-') })
             except AttributeError, err :
@@ -1540,10 +1551,8 @@ class MAPPER(object):
            if cleaned_expr.startswith("$;"):
                cleaned_expr = cleaned_expr[2:]
     
-           # XXX wrap this in a try??
            trace(cleaned_expr, obj, '$')
 
-           ##HEW-T print 'result %s' % result    
            if len(result) > 0:
                return result
        return False
@@ -1670,7 +1679,7 @@ class MAPPER(object):
             m = re.match(r'(\s+)<field name="(.*?)">', line)
             if m:
                 field=m.group(2)
-                if field in ['Discipline','oai_set']: ## HEW!!! expand to all mandatory fields !!
+                if field in ['Discipline','oai_set','Source']: ## HEW!!! expand to all mandatory fields !!
                     retval=['Not stated']
             else:
                 xpath=''
@@ -1941,7 +1950,7 @@ class MAPPER(object):
                 with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                     try:
                         log.debug('   | [INFO] decode json data')
-                        data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8')
+                        data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8') ## needed, else : Cannot write json file ... : must be unicode, not str
                     except Exception as e:
                         log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
                     try:
@@ -2013,10 +2022,11 @@ class MAPPER(object):
         vall=list()
         errlist=''
         if not isinstance(valuelist,list) : valuelist=[valuelist]
+
         for value in valuelist:
             if facet in ['title','notes','author','Publisher']:
                 if isinstance(value, str) or isinstance(value, unicode):
-                    vall.append(value) ## .encode("iso-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
+                    vall.append(value) ## .encode("utf-8")) ## HEW-??? "ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
                 else:
                     errlist+=' | %10s | %20s |' % (facet, value[:30])
             elif facet in ['url','DOI','PID']:
@@ -2118,7 +2128,7 @@ class MAPPER(object):
         self.logger.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
         totstats=dict()
-        for facet in self.ckan2b2find.keys():
+        for facet in self.ckanfields : ## b2findfields : ##HEW-D ??? ckan2b2find.keys():
             totstats[facet]={
               'xpath':'',
               'mapped':0,
@@ -2164,7 +2174,7 @@ class MAPPER(object):
             
             try:
               valuearr=list()
-              for facet in self.ckan2b2find.keys():
+              for facet in self.ckanfields : ##HEW-D?? self.ckan2b2find.keys():
                     if facet.startswith('#'):
                         continue
                     value = None
@@ -2195,7 +2205,7 @@ class MAPPER(object):
         printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
         printstats+="      | Value statistics:\n      |- {:<5} : {:<30} |\n".format('#Occ','Value')
         printstats+=" ----------------------------------------------------------\n"
-        for field in self.b2findfields : ## totstats:
+        for field in self.ckanfields : ## HEW-D??? b2findfields : ## totstats:
           if float(fcount) > 0 :
             printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['xpath'],totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
             try:
@@ -2206,7 +2216,7 @@ class MAPPER(object):
                             contt='[...]' 
                         else: 
                             contt=''
-                        printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0]).encode("utf-8")[:80],contt)
+                        printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
                         if self.OUT.verbose > 1:
                             print printstats
             except TypeError as e:
@@ -2236,10 +2246,7 @@ class MAPPER(object):
 
         return results
 
-    def json2xml(self,json_obj, line_padding="", mdftag="", mapdict="ckan2b2find"):
-        
-
-
+    def json2xml(self,json_obj, line_padding="", mdftag="", mapdict="b2findfields"):
 
         result_list = list()
         json_obj_type = type(json_obj)
@@ -2407,7 +2414,7 @@ class MAPPER(object):
 	                    return(False, outfile , outpath, fcount)
 	
             else:
-                mapdict=self.ckan2b2find
+                mapdict=self.b2findfields ##HEW-D ??? ckan2b2find
                 header="""<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <header>
      <identifier>"""+identifier+"""</identifier>
@@ -2500,10 +2507,23 @@ class UPLOADER (object):
         self.OUT = OUT
         
         self.package_list = dict()
+
+        # Read in B2FIND metadata schema and fields
+        schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
+        with open(schemafile, 'r') as f:
+            self.b2findfields=json.loads(f.read())
+
         # B2FIND metadata fields
-        self.b2findfields = list()
-        self.b2findfields = [
-                   "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess","oai_set","oai_identifier","fulltext"]
+        ##HEW-D self.b2findfields = list()
+        ##HEW-D self.b2findfields = [
+        ##HEW-D        "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess","oai_set","oai_identifier","fulltext"]
+
+        self.ckanfields=list()
+        for val in self.b2findfields.values() :
+            self.ckanfields.append(val["ckanName"])
+
+        self.b2findfields = self.b2findfields.keys()
+            
         self.ckandeffields = ["author","title","notes","tags","url"]
 
     def purge_group(self,community):
@@ -2609,7 +2629,7 @@ class UPLOADER (object):
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
-                    jsondata[key]='\n'.join(list(jsondata[key])).encode("iso-8859-1") ### !!! encode to display e.g. 'Umlauts' corectly
+                    jsondata[key]='\n'.join(list(jsondata[key]))###HEW-??? .encode("iso-8859-1") ### !!! encode to display e.g. 'Umlauts' corectly
 
         jsondata['extras']=list()
         self.logger.debug('    | Adapt extra fields for upload to CKAN')
@@ -2668,9 +2688,8 @@ class UPLOADER (object):
             
         # shrink field fulltext
         if('fulltext' in jsondata):
-            ##raise Exception("'fulltext': Too big ( %d bytes, %d len)" % (sys.getsizeof(jsondata['fulltext']),len(jsondata['fulltext'])))
-            encoding='utf-8'
-            encoded = ' '.join(jsondata['fulltext']).encode(encoding)[:32000]
+            encoding='utf-8' ## ?? Best encoding for fulltext ??? encoding='ISO-8859-15'
+            encoded = ' '.join(filter(None,jsondata['fulltext'])).encode(encoding)[:32000]
             encoded=re.sub('\s+',' ',encoded)
             jsondata['fulltext']=encoded.decode(encoding, 'ignore')
 

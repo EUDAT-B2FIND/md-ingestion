@@ -557,7 +557,11 @@ def process_upload(UP, rlist, options):
             jsondata=UP.json2ckan(jsondata)
             # determine checksum of json record and append
             try:
-                checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
+                ##HEW-? checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
+                encoding='utf-8'
+                encoding='ISO-8859-15'
+                checksum=hashlib.md5(json.dumps(jsondata).encode(encoding).strip()).hexdigest()
+                checksum=None
             except UnicodeEncodeError:
                 logger.error('        |-> [ERROR] Unicode encoding failed during md checksum determination')
                 checksum=None

@@ -755,7 +755,7 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.ZEW ## Zentru
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.ZOEBIS ## Zentrum für ökonomische Bildung in Siegen; 14;
 ##%%% PanData
 ##outdated pandata https://icat-10.pandata.stfc.ac.uk/oai/provider  ListIdentifiers oai_qdc
-pandata http://oai.eudat.stfc.ac.uk/oai/provider         ListIdentifiers oai_dc
+pandata http://oai.eudat.stfc.ac.uk/oai/provider         ListRecords oai_dc
 ##%%% NARCIS
 narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
