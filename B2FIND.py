@@ -755,39 +755,13 @@ class MAPPER(object):
         # Read in B2FIND metadata schema and fields
         schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
         with open(schemafile, 'r') as f:
-            self.b2findfields=json.loads(f.read())
+            self.b2findfields=json.loads(f.read(), object_pairs_hook=OrderedDict)
 
         self.ckanfields=list()
         for val in self.b2findfields.values() :
             self.ckanfields.append(val["ckanName"])
 
         self.b2findfields = self.b2findfields.keys()
-
-        self.ckan2b2find = OrderedDict()
-        self.ckan2b2find={
-                   "title" : "title", 
-                   "notes" : "description",
-                   "tags" : "tags",
-                   "url" : "Source", 
-                   "DOI" : "DOI",
-###                   "IVO" : "IVO",
-                   "PID" : "PID",
-                   "Checksum" : "checksum",
-                   "Rights" : "rights",
-##                   "Community" : "community",
-                   "Discipline" : "discipline",
-                   "author" : "Creator", 
-                   "Publisher" : "Publisher",
-                   "PublicationYear" : "PublicationYear",
-                   "PublicationTimestamp" : "PublicationTimestamp",
-                   "Language" : "language",
-                   "TemporalCoverage" : "temporalcoverage",
-                   "SpatialCoverage" : "spatialcoverage",
-                   "spatial" : "spatial",
-                   "Format" : "format",
-                   "Contact" : "contact",
-                   "MetadataAccess" : "metadata"
-                              }  
 
         ## settings for pyparsing
         nonBracePrintables = ''
@@ -2128,7 +2102,7 @@ class MAPPER(object):
         self.logger.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
         totstats=dict()
-        for facet in self.ckanfields : ## b2findfields : ##HEW-D ??? ckan2b2find.keys():
+        for facet in self.ckanfields :
             totstats[facet]={
               'xpath':'',
               'mapped':0,
@@ -2174,7 +2148,7 @@ class MAPPER(object):
             
             try:
               valuearr=list()
-              for facet in self.ckanfields : ##HEW-D?? self.ckan2b2find.keys():
+              for facet in self.ckanfields :
                     if facet.startswith('#'):
                         continue
                     value = None
@@ -2414,7 +2388,7 @@ class MAPPER(object):
 	                    return(False, outfile , outpath, fcount)
 	
             else:
-                mapdict=self.b2findfields ##HEW-D ??? ckan2b2find
+                mapdict=self.b2findfields ##HEW-D ??? ckanfields ???
                 header="""<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <header>
      <identifier>"""+identifier+"""</identifier>
