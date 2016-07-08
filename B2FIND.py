@@ -48,7 +48,6 @@ import httplib
 from urlparse import urlparse
 
 # needed for MAPPER :
-##HEW-D-NOTUESD?? from babel.dates import format_datetime
 import codecs
 import simplejson as json
 import io
@@ -196,7 +195,6 @@ class CKAN_CLIENT(object):
             elif ( e.code == 409 and action == 'package_create'):
                 self.logger.debug('\tMaybe the dataset already exists => try to update the package')
                 self.action('package_update',data_dict)
-                ##HEW-D return {"success" : False}
             elif ( e.code == 409):
                 self.logger.debug('\tMaybe you have a parameter error?')
                 return {"success" : False}
@@ -460,7 +458,7 @@ class HARVESTER(object):
             fcount+=1
             if fcount <= noffs : continue
             perc=int(fcount*100/ntotrecs)
-            bartags=perc/5 #HEW-D fcount/100
+            bartags=perc/5
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
                 print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 )
@@ -2114,9 +2112,6 @@ class MAPPER(object):
             for line in mf:
                 if '<field name="'+facet+'">' in line:
                     totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf))
-                    break
-                elif facet in line:
-                    totstats[facet]['xpath']=re.sub(r"(.*?)\$\.(.*?) VALUE", r"\2", line)
                     break
         fcount = 0
         oldperc = 0

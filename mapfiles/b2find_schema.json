@@ -49,8 +49,7 @@
         "ckanType" : "extra",
         "type" : "url",
         "obligation" : "optional"
-    }, 
-
+    },
     "Checksum" : {
         "name" : "checksum",
         "description" : "",
@@ -58,8 +57,7 @@
         "ckanType" : "default",
         "type" : "url",
         "obligation" : "optional"
-    }, 
-
+    },
     "Rights" : {
         "name" : "rights",
         "description" : "",
@@ -68,7 +66,6 @@
         "type" : "textual",
         "obligation" : "optional"
     }, 
-
     "Community" : {
         "name" : "community",
         "description" : "",
@@ -76,8 +73,7 @@
         "ckanType" : "default",
         "type" : "textual",
         "obligation" : "optional"
-    }, 
-
+    },
     "Discipline" : {
         "name" : "discipline",
         "description" : "",
@@ -85,8 +81,7 @@
         "ckanType" : "extra",
         "type" : "textual",
         "obligation" : "optional"
-    }, 
-
+    },
     "Creator" : {
         "name" : "creator",
         "description" : "",
@@ -94,9 +89,7 @@
         "ckanType" : "default",
         "type" : "textual",
         "obligation" : "optional"
-    }, 
-
-
+    },
     "Publisher" :  {
         "name" : "publisher",
         "description" : "",
@@ -104,8 +97,7 @@
         "ckanType" : "extra",
         "type" : "textual",
         "obligation" : "optional"
-    }, 
-
+    },
     "PublicationYear" : {
         "name" : "publicationyear",
         "description" : "",
@@ -113,18 +105,7 @@
         "ckanType" : "extra",
         "type" : "date",
         "obligation" : "optional"
-    }, 
-
-
-    "PublicationTimestamp" :  {
-        "name" : "publicationtimestamp",
-        "description" : "",
-        "ckanName" : "PublicationTimestamp",
-        "ckanType" : "extra",
-        "type" : "date",
-        "obligation" : "optional"
-    }, 
-
+    },
     "Language" : {
         "name" : "language",
         "description" : "",
@@ -133,20 +114,18 @@
         "type" : "date",
         "obligation" : "optional"
     }, 
-
-    "TemporalCoverage" :  {
-        "name" : "temporalcoverage",
-        "description" : "",
-        "ckanName" : "TemporalCoverage",
-        "ckanType" : "extra",
-        "type" : "date",
-        "obligation" : "optional"
-    }, 
-
     "SpatialCoverage" : {
         "name" : "spatialcoverage",
         "description" : "",
         "ckanName" : "SpatialCoverage",
+        "ckanType" : "extra",
+        "type" : "date",
+        "obligation" : "optional"
+    }, 
+    "TemporalCoverage" :  {
+        "name" : "temporalcoverage",
+        "description" : "",
+        "ckanName" : "TemporalCoverage",
         "ckanType" : "extra",
         "type" : "date",
         "obligation" : "optional"
@@ -179,6 +158,14 @@
         "name" : "metadataaccess",
         "description" : "",
         "ckanName" : "metadata",
+        "ckanType" : "extra",
+        "type" : "date",
+        "obligation" : "optional"
+    },
+    "PublicationTimestamp" :  {
+        "name" : "publicationtimestamp",
+        "description" : "",
+        "ckanName" : "PublicationTimestamp",
         "ckanType" : "extra",
         "type" : "date",
         "obligation" : "optional"
