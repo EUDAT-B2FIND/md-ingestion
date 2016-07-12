@@ -1888,13 +1888,16 @@ class MAPPER(object):
                            if tempdesc:
                                jsondata[facet] = tempdesc
                        elif facet == 'Language': 
-                            jsondata[facet] = self.map_lang(jsondata[facet])
+                           jsondata[facet] = self.map_lang(jsondata[facet])
                        elif facet == 'PublicationYear':
-                            publdate=self.date2UTC(jsondata[facet][0])
-                            if publdate:
-                                jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
-                            else:
-                                jsondata[facet] = None
+                           publdate=self.date2UTC(jsondata[facet][0])
+                           if publdate:
+                               jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
+                           else:
+                               jsondata[facet] = None
+                       elif facet == 'fulltext':
+                           encoding='utf-8'
+                           jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
                    except Exception as e:
                        self.logger.error(' [WARNING] %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
                        continue
@@ -2483,9 +2486,6 @@ class UPLOADER (object):
             self.b2findfields=json.loads(f.read())
 
         # B2FIND metadata fields
-        ##HEW-D self.b2findfields = list()
-        ##HEW-D self.b2findfields = [
-        ##HEW-D        "title","notes","tags","url","DOI","PID","Checksum","Rights","Discipline","author","Publisher","PublicationYear","PublicationTimestamp","Language","TemporalCoverage","SpatialCoverage","spatial","Format","Contact","MetadataAccess","oai_set","oai_identifier","fulltext"]
 
         self.ckanfields=list()
         for val in self.b2findfields.values() :
@@ -2608,7 +2608,7 @@ class UPLOADER (object):
             if key in jsondata :
                 if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
                     value=';'.join(jsondata[key])
-                elif key in ['oai_set','oai_identifier']: ### ,'fulltext']
+                elif key in ['oai_set','oai_identifier']:
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
                         value=jsondata[key][-1]      
                 else:
@@ -2657,12 +2657,12 @@ class UPLOADER (object):
         if('oai_set' in jsondata and ';' in  jsondata['oai_set']):
             jsondata['oai_set'] = jsondata['oai_set'].split(';')[-1] 
             
-        # shrink field fulltext
-        if('fulltext' in jsondata):
-            encoding='utf-8' ## ?? Best encoding for fulltext ??? encoding='ISO-8859-15'
-            encoded = ' '.join(filter(None,jsondata['fulltext'])).encode(encoding)[:32000]
-            encoded=re.sub('\s+',' ',encoded)
-            jsondata['fulltext']=encoded.decode(encoding, 'ignore')
+##HEW-D             # shrink field fulltext
+##HEW-D             if('fulltext' in jsondata):
+##HEW-D                 encoding='utf-8' ## ?? Best encoding for fulltext ??? encoding='ISO-8859-15'
+##HEW-D                 encoded = ' '.join(filter(None,jsondata['fulltext'])).encode(encoding)[:32000]
+##HEW-D                 encoded=re.sub('\s+',' ',encoded)
+##HEW-D                 jsondata['fulltext']=encoded.decode(encoding, 'ignore')
 
         if 'PublicationYear' in jsondata :
             try:
