@@ -561,7 +561,6 @@ def process_upload(UP, rlist, options):
                 encoding='utf-8'
                 encoding='ISO-8859-15'
                 checksum=hashlib.md5(json.dumps(jsondata).encode(encoding).strip()).hexdigest()
-                checksum=None
             except UnicodeEncodeError:
                 logger.error('        |-> [ERROR] Unicode encoding failed during md checksum determination')
                 checksum=None
