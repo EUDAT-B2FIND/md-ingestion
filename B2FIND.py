@@ -2493,7 +2493,8 @@ class UPLOADER (object):
 
         self.b2findfields = self.b2findfields.keys()
             
-        self.ckandeffields = ["author","title","notes","tags","url"]
+        self.ckandeffields = ["author","title","notes","tags","url","version"]
+        self.b2fckandeffields = ["Creator","Title","Description","Tags","Source","Checksum"]
 
     def purge_group(self,community):
         ## purge_list (UPLOADER object, community) - method
@@ -2601,10 +2602,10 @@ class UPLOADER (object):
                     jsondata[key]='\n'.join(list(jsondata[key]))###HEW-??? .encode("iso-8859-1") ### !!! encode to display e.g. 'Umlauts' corectly
 
         jsondata['extras']=list()
-        self.logger.debug('    | Adapt extra fields for upload to CKAN')
-        for key in set(self.b2findfields) - set(self.ckandeffields) :
+        extrafields=set(self.b2findfields) - set(self.b2fckandeffields)
+        self.logger.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
+        for key in extrafields :
             if key in jsondata :
-                self.logger.debug('    | -- %-25s ' % key)
                 if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_set','oai_identifier']: ### ,'fulltext']
@@ -2617,6 +2618,7 @@ class UPLOADER (object):
                      "value" : value
                 })
                 del jsondata[key]
+                self.logger.debug('    | %-20s | %-25s' % (key,value))
             else:
                 log.debug('[WARNING] : No data for key %s ' % key)
 

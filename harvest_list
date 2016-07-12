@@ -34,7 +34,7 @@ ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375
 pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 
 ##pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
 ##%%% ENES : MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-old-doi
 ##%%% EARLINET : MD Provider eudat-oai.dkrz.de (directly extracted from CERA)
 earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso
 ### new comm. IVOA or EURO-VO
