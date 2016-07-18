@@ -30,7 +30,7 @@ import os, glob, sys
 import time, datetime, subprocess
 
 # program relevant modules:
-import logging as log
+import logging
 import traceback
 import re
 
@@ -92,7 +92,7 @@ class CKAN_CLIENT(object):
     def __init__ (self, ip_host, api_key):
 	    self.ip_host = ip_host
 	    self.api_key = api_key
-	    self.logger = log.getLogger()
+	    self.logger = logging.getLogger()
 	
     def validate_actionname(self,action):
         return True
@@ -135,7 +135,7 @@ class CKAN_CLIENT(object):
 
             print 'Total number of datasets: ' + str(len(data['result']))
             for dataset in data['result']:
-	            self.logger.info('\tTry to activate object: ' + str(dataset))
+	            logging.info('\tTry to activate object: ' + str(dataset))
 	            self.action('package_update',{"name" : dataset[0], "state":"active"})
 
             return True
@@ -181,28 +181,28 @@ class CKAN_CLIENT(object):
         ##encoding='ISO-8859-15'
         data_string = urllib.quote(json.dumps(data_dict))##HEW-D??? .decode(encoding)
 
-        self.logger.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
-        ##HEW-T self.logger.debug('\t|-- Object %s ' % data_dict)	
+        logging.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
+        ##HEW-T logging.debug('\t|-- Object %s ' % data_dict)	
         try:
             request = urllib2.Request(action_url)
             if (self.api_key): request.add_header('Authorization', self.api_key)
             response = urllib2.urlopen(request,data_string)
         except urllib2.HTTPError as e:
-            self.logger.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
+            logging.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
-                self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
+                logging.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                self.logger.debug('\tMaybe the dataset already exists => try to update the package')
+                logging.debug('\tMaybe the dataset already exists => try to update the package')
                 self.action('package_update',data_dict)
             elif ( e.code == 409):
-                self.logger.debug('\tMaybe you have a parameter error?')
+                logging.debug('\tMaybe you have a parameter error?')
                 return {"success" : False}
             elif ( e.code == 500):
-                self.logger.error('\tInternal server error')
+                logging.error('\tInternal server error')
                 exit(e.code)
         except urllib2.URLError as e:
-            self.logger.error('\tURLError %s : %s' % (e,e.reason))
+            logging.error('\tURLError %s : %s' % (e,e.reason))
             exit('%s' % e.reason)
         else :
             out = json.loads(response.read())
@@ -251,7 +251,7 @@ class HARVESTER(object):
     """
     
     def __init__ (self, OUT, pstat, base_outdir, fromdate):
-        self.logger = log.getLogger()
+        logger = logging.getLogger()
         self.pstat = pstat
         self.OUT = OUT
         self.base_outdir = base_outdir
@@ -361,8 +361,8 @@ class HARVESTER(object):
                    assert response.code >= 200
                    return out        
 
-        requests_log = log.getLogger("requests")
-        requests_log.setLevel(log.WARNING)
+        requests_log = logging.getLogger("requests")
+        requests_log.setLevel(logging.WARNING)
         
         # if the number of files in a subset dir is greater than <count_break>
         # then create a new one with the name <set> + '_' + <count_set>
@@ -406,13 +406,13 @@ class HARVESTER(object):
                     choffset+=100
                     chunk =oaireq(**{'action':'dataset','offset':choffset,'key':None})
             except urllib2.HTTPError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
                 return -1
             except ConnectionError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
                 return -1
             except Exception, e:
-                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                logging.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
                 return -1
                 
             ntotrecs=len(records)
@@ -425,21 +425,21 @@ class HARVESTER(object):
             try:
                 records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
             except urllib2.HTTPError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
                 return -1
             except ConnectionError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
                 return -1
             except etree.XMLSyntaxError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
                 return -1
             except Exception, e:
-                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                logging.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
                 return -1
 
             ntotrecs=sum(1 for _ in rc)
 
-        self.logger.info("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
+        logging.info("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
         
         # Add all uid's to the related subset entry of the dictionary deleted_metadata
         deleted_metadata = dict()
@@ -448,10 +448,10 @@ class HARVESTER(object):
                 # save the uid as key and the subset as value:
                 deleted_metadata[os.path.splitext(os.path.basename(subset))[0]] = subset
    
-        self.logger.debug('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
+        logging.debug('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
 
         start2=time.time()
-        self.logger.info("\t|- Get records and store on disc ...")
+        logging.info("\t|- Get records and store on disc ...")
         for record in records:
             stats['tcount'] += 1
             ## counter and progress bar
@@ -472,8 +472,8 @@ class HARVESTER(object):
                 uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
                 outfile = subsetdir + '/' + outtypedir + '/' + os.path.basename(uid) + '.' + outtypeext
                 try:
-                    self.logger.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,record['key'],uid))
-                    self.logger.debug('Try to write the harvested JSON record to %s' % outfile)
+                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,record['key'],uid))
+                    logging.debug('Try to write the harvested JSON record to %s' % outfile)
                     
                     # get the raw json content:
                     if (record is not None):
@@ -486,23 +486,23 @@ class HARVESTER(object):
                             with open(outfile, 'w') as f:
                               json.dump(record,f, sort_keys = True, indent = 4)
                         except IOError, e:
-                            self.logger.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile,e))
+                            logging.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile,e))
                             stats['ecount'] +=1
                             continue
                         
                         stats['count'] += 1
-                        self.logger.debug('Harvested JSON file written to %s' % outfile)
+                        logging.debug('Harvested JSON file written to %s' % outfile)
                         
                     else:
                         stats['ecount'] += 1
-                        self.logger.warning('    [WARNING] No metadata available for %s' % record['key'])
+                        logging.warning('    [WARNING] No metadata available for %s' % record['key'])
                 except TypeError as e:
-                    self.logger.error('    [ERROR] TypeError: %s' % e)
+                    logging.error('    [ERROR] TypeError: %s' % e)
                     stats['ecount']+=1        
                     continue
                 except Exception as e:
-                    self.logger.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
-                    ## self.logger.debug(metadata)
+                    logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+                    ## logging.debug(metadata)
                     stats['ecount']+=1
                     continue
                 else:
@@ -530,8 +530,8 @@ class HARVESTER(object):
                 
                 xmlfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
                 try:
-                    self.logger.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
-                    ## self.logger.debug('Harvested XML file written to %s' % xmlfile)
+                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
+                    ## logging.debug('Harvested XML file written to %s' % xmlfile)
                     
                     # get the raw xml content:    
                     metadata = etree.fromstring(record.raw)
@@ -547,23 +547,23 @@ class HARVESTER(object):
                             f.write(metadata)
                             f.close
                         except IOError, e:
-                            self.logger.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile,e))
+                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile,e))
                             stats['ecount'] +=1
                             continue
                         
                         stats['count'] += 1
-                        ## self.logger.debug('Harvested XML file written to %s' % xmlfile)
+                        ## logging.debug('Harvested XML file written to %s' % xmlfile)
                         
                     else:
                         stats['ecount'] += 1
-                        self.logger.warning('    [WARNING] No metadata available for %s' % oai_id)
+                        logging.warning('    [WARNING] No metadata available for %s' % oai_id)
                 except TypeError as e:
-                    self.logger.error('    [ERROR] TypeError: %s' % e)
+                    logging.error('    [ERROR] TypeError: %s' % e)
                     stats['ecount']+=1        
                     continue
                 except Exception as e:
-                    self.logger.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
-                    ## self.logger.debug(metadata)
+                    logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+                    ## logging.debug(metadata)
                     stats['ecount']+=1
                     continue
                 else:
@@ -573,7 +573,7 @@ class HARVESTER(object):
                                                                 
             # Need a new subset?
             if (stats['count'] == count_break):
-                self.logger.debug('    | %d records written to subset directory %s (if not failed).'% (
+                logging.debug('    | %d records written to subset directory %s (if not failed).'% (
                                 stats['count'], subsetdir
                             ))
                 subsetdir, count_set = self.save_subset(
@@ -587,16 +587,16 @@ class HARVESTER(object):
                     # start with a new time:
                     stats['timestart'] = time.time()
                 
-            self.logger.debug('    | %d records written to last subset directory %s (if not failed).'% (
+            logging.debug('    | %d records written to last subset directory %s (if not failed).'% (
                                 stats['count'], subsetdir
                             ))
 
         ##HEW_?? except TypeError as e:
-        ##HEW_??     self.logger.error('    [ERROR] Type Error: %s' % e)
+        ##HEW_??     logging.error('    [ERROR] Type Error: %s' % e)
         ##HEW_?? except NoRecordsMatch as e:
-        ##HEW_??     self.logger.error('    [ERROR] No Records Match: %s. Request: %s' % (e,','.join(request)))
+        ##HEW_??     logging.error('    [ERROR] No Records Match: %s. Request: %s' % (e,','.join(request)))
         ##HEW_?? except Exception as e:
-        ##HEW_??     self.logger.error("    [ERROR] %s" % traceback.format_exc())
+        ##HEW_??     logging.error("    [ERROR] %s" % traceback.format_exc())
         ##HEW_?? else:
 
         # check for outdated harvested xml files and add to deleted_metadata, if not already listed
@@ -607,7 +607,7 @@ class HARVESTER(object):
                  if os.stat(f).st_mtime < now - 1 * 86400: ## at least 1 day old
                      if os.path.isfile(f):
                         if (id in deleted_metadata ):
-                            self.logger.debug('file %s is already on deleted_metadata' % f)
+                            logging.debug('file %s is already on deleted_metadata' % f)
                         else:
                            deleted_metadata[id] = f
 
@@ -615,7 +615,7 @@ class HARVESTER(object):
                 ## delete all files in deleted_metadata and write the subset
                 ## and the uid in '<outdir>/delete/<community>-<mdprefix>':
                 stats['totdcount']=len(deleted_metadata)
-                self.logger.info('    | %d files were not updated and will be deleted:' % (len(deleted_metadata)))
+                logging.info('    | %d files were not updated and will be deleted:' % (len(deleted_metadata)))
                 
                 # path to the file with all deleted uids:
                 delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
@@ -627,21 +627,21 @@ class HARVESTER(object):
                         file_content = f.readlines()
                         f.close()
                     except IOError as (errno, strerror):
-                        self.logger.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
+                        logging.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
                         f.close
                 elif (not os.path.exists(self.base_outdir+'/delete')):
                     os.makedirs(self.base_outdir+'/delete')    
 
                 delete_mode=False
                   # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
-                self.logger.info("   | List of id's to delete written to {0}.".format(delete_file))                
+                logging.info("   | List of id's to delete written to {0}.".format(delete_file))                
                 if delete_mode == True :
-                    self.logger.info("   |  and related xml and json files are removed")
+                    logging.info("   |  and related xml and json files are removed")
                 else:
-                    self.logger.info("   |  but related are not removed yet") 
+                    logging.info("   |  but related are not removed yet") 
                 for uid in deleted_metadata:
                     if delete_mode == True :
-                        self.logger.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
+                        logging.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
                     
                         xmlfile = deleted_metadata[uid]
                         dsubset = os.path.dirname(xmlfile).split('/')[-2]
@@ -651,7 +651,7 @@ class HARVESTER(object):
                         try: 
                             os.remove(xmlfile)
                         except OSError, e:
-                            self.logger.error("    [ERROR] Cannot remove xml file: %s" % (e))
+                            logging.error("    [ERROR] Cannot remove xml file: %s" % (e))
                             stats['totecount'] +=1
                         
                         # remove json file:
@@ -659,7 +659,7 @@ class HARVESTER(object):
                             try: 
                                 os.remove(jsonfile)
                             except OSError, e:
-                                self.logger.error("    [ERROR] Cannot remove json file: %s" % (e))
+                                logging.error("    [ERROR] Cannot remove json file: %s" % (e))
                                 stats['totecount'] +=1
 
                     # append uid to delete file, if not already exists:
@@ -671,7 +671,7 @@ class HARVESTER(object):
         for key in ['tcount', 'ecount', 'count', 'dcount']:
                 stats['tot'+key] += stats[key]
             
-        self.logger.info(
+        logging.info(
                 '   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
                     stats['tottcount'],
@@ -747,7 +747,7 @@ class MAPPER(object):
     """
 
     def __init__ (self, OUT):
-        self.logger = log.getLogger()
+        logging = logging.getLogger()
         self.OUT = OUT
         
         # Read in B2FIND metadata schema and fields
@@ -836,7 +836,7 @@ class MAPPER(object):
             else:
                 return '' # if converting cannot be done, make date empty
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in date2UTC replace old date %s by new date %s' % (e,old_date,new_date))
+           logging.error('[ERROR] : %s - in date2UTC replace old date %s by new date %s' % (e,old_date,new_date))
            return ''
         else:
            return new_date
@@ -855,7 +855,7 @@ class MAPPER(object):
                   dataset[key] = new_value
                   return dataset
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in replace of pattern %s in facet %s with new_value %s' % (e,old_value,facet,new_value))
+           logging.error('[ERROR] : %s - in replace of pattern %s in facet %s with new_value %s' % (e,old_value,facet,new_value))
            return dataset
         else:
            return dataset
@@ -901,7 +901,7 @@ class MAPPER(object):
             if 'url' not in iddict :
                 iddict['url']=favurl
         except Exception, e:
-            self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
+            logging.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
             return iddict
@@ -960,7 +960,7 @@ class MAPPER(object):
           if not location :
             return (None,None)
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
+           logging.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
            return (None,None)
         else:
           return (location.latitude, location.longitude)
@@ -1024,7 +1024,7 @@ class MAPPER(object):
             else:
                 return (desc,None,None)
         except Exception, e:
-           self.logger.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
+           logging.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
            return (None,None,None)
         else:
             return (desc,None,None)
@@ -1076,7 +1076,7 @@ class MAPPER(object):
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
               return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in map_spatial invalue %s can not converted !' % (e,invalue))
+           logging.error('[ERROR] : %s - in map_spatial invalue %s can not converted !' % (e,invalue))
            return (None,None,None,None,None) 
 
     def map_discipl(self,invalue,disctab):
@@ -1106,21 +1106,21 @@ class MAPPER(object):
                disc=line[2].strip()
                r=lvs.ratio(indisc,disc)
              except Exception, e:
-                 self.logger.error('[ERROR] %s in map_discipl : %s can not compared to %s !' % (e,indisc,disc))
+                 logging.error('[ERROR] %s in map_discipl : %s can not compared to %s !' % (e,indisc,disc))
                  continue
              if r > maxr  :
                  maxdisc=disc
                  maxr=r
                  ##HEW-T                 print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
            if maxr == 1 and indisc == maxdisc :
-               self.logger.debug('  | Perfect match of %s : nothing to do' % indisc)
+               logging.debug('  | Perfect match of %s : nothing to do' % indisc)
                retval.append(indisc.strip())
            elif maxr > 0.90 :
-               self.logger.debug('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
+               logging.debug('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
                ##return maxdisc
                retval.append(indisc.strip())
            else:
-               self.logger.debug('   | Similarity ratio %f is < 0.90 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
+               logging.debug('   | Similarity ratio %f is < 0.90 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
                continue
 
         if len(retval) > 0:
@@ -1156,7 +1156,7 @@ class MAPPER(object):
                         outvalue.append(elem)
                         
         ##else:
-        ##    log.error('[ERROR] : cut expects as invalue (%s) a list' % invalue)
+        ##    logging.error('[ERROR] : cut expects as invalue (%s) a list' % invalue)
             ## return None
 
         return outvalue
@@ -1193,10 +1193,10 @@ class MAPPER(object):
                     entry=entry.encode('utf-8').strip()
                     dictlist.append({ "name": entry.replace('/','-') })
             except AttributeError, err :
-                log.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
+                logging.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
                 continue
             except Exception, e:
-                log.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
+                logging.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
                 continue
         return dictlist[:12]
 
@@ -1240,7 +1240,7 @@ class MAPPER(object):
            else:
               sec=int(time.mktime(utctime.timetuple()))+year1epochsec
         except Exception, e:
-           self.logger.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (e,utc))
+           logging.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (e,utc))
            return None
 
         return sec
@@ -1568,7 +1568,7 @@ class MAPPER(object):
               newds[field]=value
 
            except Exception as e:
-                self.logger.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
+                logging.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
                 continue
         return newds
       
@@ -1610,7 +1610,7 @@ class MAPPER(object):
             else:
                 pass
           except Exception as e:
-            self.logger.error(" [ERROR] %s : perform %s for facet %s with invalue %s and new_value %s" % (e,action,facetName,old_value,new_value))
+            logging.error(" [ERROR] %s : perform %s for facet %s with invalue %s and new_value %s" % (e,action,facetName,old_value,new_value))
             continue
 
         return dataset
@@ -1642,7 +1642,7 @@ class MAPPER(object):
 
     def xpathmdmapper(self,xmldata,xrules,namespaces):
         # returns list or string, selected from xmldata by xpath rules (and namespaces)
-        self.logger.debug(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
+        logging.debug(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
 
         jsondata=dict()
 
@@ -1669,11 +1669,11 @@ class MAPPER(object):
                     continue
                 if retval and len(retval) > 0 :
                     jsondata[field]=retval ### .extend(retval)
-                    self.logger.debug(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
+                    logging.debug(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
                 elif field in ['Discipline','oai_set']:
                     jsondata[field]=['Not stated']
           except Exception as e:
-              log.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tretvalue\t%s' % (e,field,xpath,retval))
+              logging.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tretvalue\t%s' % (e,field,xpath,retval))
               continue
 
         return jsondata
@@ -1715,10 +1715,10 @@ class MAPPER(object):
 
         # check input and output paths
         if not os.path.exists(path):
-            self.logger.error('[ERROR] The directory "%s" does not exist! No files to map are found!\n(Maybe your convert list has old items?)' % (path))
+            logging.error('[ERROR] The directory "%s" does not exist! No files to map are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + insubdir) or not os.listdir(path + insubdir):
-            self.logger.error('[ERROR] The input directory "%s%s" does not exist or no %s-files to convert are found !\n(Maybe your convert list has old items?)' % (path,insubdir,insubdir))
+            logging.error('[ERROR] The input directory "%s%s" does not exist or no %s-files to convert are found !\n(Maybe your convert list has old items?)' % (path,insubdir,insubdir))
             return results
       
         # make output directory for mapped json's
@@ -1740,9 +1740,9 @@ class MAPPER(object):
         if not os.path.isfile(mapfile):
             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
             if not os.path.isfile(mapfile):
-                self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+                logging.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
-        self.logger.debug('  |- Mapfile\t%s' % os.path.basename(mapfile))
+        logging.debug('  |- Mapfile\t%s' % os.path.basename(mapfile))
         mf = codecs.open(mapfile, "r", "utf-8")
         maprules = mf.readlines()
         maprules = filter(lambda x:len(x) != 0,maprules) # removes empty lines
@@ -1754,7 +1754,7 @@ class MAPPER(object):
             if ns:
                 namespaces[ns.group(3)]=ns.group(5)
                 continue
-        self.logger.debug('  |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
+        logging.debug('  |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
 
         # check specific postproc mapping config file
         subset=os.path.basename(path).split('_')[0]
@@ -1783,7 +1783,7 @@ class MAPPER(object):
         fcount = 0
         oldperc=0
         err = None
-        self.logger.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
+        logging.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
         
         ## start processing loop
         start = time.time()
@@ -1796,7 +1796,7 @@ class MAPPER(object):
 
             if perc%10 == 0 and perc != oldperc:
                 oldperc=perc
-                self.logger.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                logging.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             jsondata = dict()
@@ -1812,34 +1812,34 @@ class MAPPER(object):
                         else:
                             xmldata= ET.parse(infilepath)
                     except Exception as e:
-                        log.error('    | [ERROR] %s : Cannot load or parse %s-file %s' % (e,infformat,infilepath))
+                        logging.error('    | [ERROR] %s : Cannot load or parse %s-file %s' % (e,infformat,infilepath))
                         results['ecount'] += 1
                         continue
                 ## XPATH rsp. JPATH converter
                 if  mdprefix == 'json':
                     try:
-                        self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s%s/%s' % (time.strftime("%H:%M:%S"),infformat,os.path.basename(path),insubdir,filename))
+                        logging.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s%s/%s' % (time.strftime("%H:%M:%S"),infformat,os.path.basename(path),insubdir,filename))
                         jsondata=self.jsonmdmapper(jsondata,maprules)
                     except Exception as e:
-                        log.error('    | [ERROR] %s : during %s 2 json processing' % (infformat,e) )
+                        logging.error('    | [ERROR] %s : during %s 2 json processing' % (infformat,e) )
                         results['ecount'] += 1
                         continue
                 else:
                     try:
                         # Run Python XPATH converter
-                        self.logger.debug('    | xpath | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+                        logging.debug('    | xpath | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
                         jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
                     except Exception as e:
-                        log.error('    | [ERROR] %s : during XPATH processing' % e )
+                        logging.error('    | [ERROR] %s : during XPATH processing' % e )
                         results['ecount'] += 1
                         continue
                 try:
                    ## md postprocessor
                    if (specrules):
-                       self.logger.debug(' [INFO]:  Processing according specrules %s' % specrules)
+                       logging.debug(' [INFO]:  Processing according specrules %s' % specrules)
                        jsondata=self.postprocess(jsondata,specrules)
                 except Exception as e:
-                    self.logger.error(' [ERROR] %s : during postprocessing' % (e))
+                    logging.error(' [ERROR] %s : during postprocessing' % (e))
                     continue
 
                 iddict=dict()
@@ -1850,7 +1850,7 @@ class MAPPER(object):
                 publdate=None
                 # loop over all fields
                 for facet in jsondata:
-                   log.debug('facet %s ...' % facet)
+                   logging.debug('facet %s ...' % facet)
                    try:
                        if facet == 'author':
                            jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1),';')
@@ -1899,7 +1899,7 @@ class MAPPER(object):
                            encoding='utf-8'
                            jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
                    except Exception as e:
-                       self.logger.error(' [WARNING] %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
+                       logging.error(' [WARNING] %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
                        continue
 
                 if iddict :
@@ -1924,17 +1924,17 @@ class MAPPER(object):
 
                 with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                     try:
-                        log.debug('   | [INFO] decode json data')
+                        logging.debug('   | [INFO] decode json data')
                         data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8') ## needed, else : Cannot write json file ... : must be unicode, not str
                     except Exception as e:
-                        log.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
+                        logging.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
                     try:
-                        log.debug('   | [INFO] save json file')
+                        logging.debug('   | [INFO] save json file')
                         json_file.write(data)
                     except TypeError, err :
-                        log.error('    | [ERROR] Cannot write json file %s : %s' % (outpath+'/'+filename,err))
+                        logging.error('    | [ERROR] Cannot write json file %s : %s' % (outpath+'/'+filename,err))
                     except Exception as e:
-                        log.error('    | [ERROR] %s : Cannot write json file %s' % (e,outpath+'/'+filename))
+                        logging.error('    | [ERROR] %s : Cannot write json file %s' % (e,outpath+'/'+filename))
                         err+='Cannot write json file %s' % outpath+'/'+filename
                         results['ecount'] += 1
                         continue
@@ -1944,9 +1944,9 @@ class MAPPER(object):
 
 
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
-        if (err is not None ): self.logger.error('[ERROR] ' + err)
+        if (err is not None ): logging.error('[ERROR] ' + err)
 
-        self.logger.info(
+        logging.info(
                 '   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
@@ -1987,7 +1987,7 @@ class MAPPER(object):
         except ValueError as e:
             return False    #catched
         except Exception as e:
-            self.logger.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+            logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
             return False    #catched
 
     def is_valid_value(self,facet,valuelist):
@@ -2079,16 +2079,16 @@ class MAPPER(object):
         if not os.path.isfile(mapfile):
            mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
            if not os.path.isfile(mapfile):
-              self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+              logging.error('[ERROR] Mapfile %s does not exist !' % mapfile)
               return results
         mf=open(mapfile) 
 
         # check paths
         if not os.path.exists(path):
-            self.logger.error('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            logging.error('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
-            self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            logging.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
             return results
     
         # find all .json files in path/json:
@@ -2096,11 +2096,11 @@ class MAPPER(object):
         results['tcount'] = len(files)
         oaiset=path.split(mdprefix)[1].strip('/')
         
-        self.logger.debug(' %s     INFO  Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
+        logging.debug(' %s     INFO  Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
         if results['tcount'] == 0 :
-            self.logger.error(' ERROR : Found no files to validate !')
+            logging.error(' ERROR : Found no files to validate !')
             return results
-        self.logger.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
+        logging.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
         totstats=dict()
         for facet in self.ckanfields :
@@ -2126,18 +2126,18 @@ class MAPPER(object):
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                self.logger.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                logging.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             jsondata = dict()
-            self.logger.debug('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
+            logging.debug('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
 
             if ( os.path.getsize(path+'/json/'+filename) > 0 ):
                 with open(path+'/json/'+filename, 'r') as f:
                     try:
                         jsondata=json.loads(f.read())
                     except:
-                        log.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
+                        logging.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
                         continue
             else:
@@ -2155,7 +2155,7 @@ class MAPPER(object):
                     if value:
                         totstats[facet]['mapped']+=1
                         pvalue=self.is_valid_value(facet,value)
-                        log.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
+                        logging.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
                         if pvalue and len(pvalue) > 0:
                             totstats[facet]['valid']+=1  
                             if type(pvalue) is list :
@@ -2166,9 +2166,9 @@ class MAPPER(object):
                             totstats[facet]['vstat']=[]  
                     else:
                         if facet == 'title':
-                           log.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
+                           logging.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
             except IOError, e:
-                self.logger.error("[ERROR] %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
+                logging.error("[ERROR] %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
                 exit()
 
         outfile='%s/%s' % (path,'validation.stat')
@@ -2192,10 +2192,10 @@ class MAPPER(object):
                         if self.OUT.verbose > 1:
                             print printstats
             except TypeError as e:
-                self.logger.error('    [ERROR] TypeError: %s field %s' % (e,field))
+                logging.error('    [ERROR] TypeError: %s field %s' % (e,field))
                 continue
             except Exception as e:
-                self.logger.error('    [ERROR] %s field %s' % (e,field))
+                logging.error('    [ERROR] %s field %s' % (e,field))
                 continue
 
         f = open(outfile, 'w')
@@ -2203,12 +2203,12 @@ class MAPPER(object):
         f.write("\n")
         f.close
 
-        self.logger.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+        logging.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .json files in path/json
         results['count'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path)))
 
-        self.logger.info(
+        logging.info(
                 '   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
@@ -2255,7 +2255,7 @@ class MAPPER(object):
 
 
                 else:
-                        self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
+                        logging.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
             
             return "\n".join(result_list)
@@ -2286,14 +2286,14 @@ class MAPPER(object):
         if (target_mdschema):
             path=path+'-'+target_mdschema
         else:
-            self.logger.error('[ERROR] For OAI converter processing target metaschema must be given!')
+            logging.error('[ERROR] For OAI converter processing target metaschema must be given!')
             sys.exit()
 
         if not os.path.exists(path):
-            self.logger.error('[ERROR] The directory "%s" does not exist! No files for oai-converting are found!\n(Maybe your convert list has old items?)' % (path))
+            logging.error('[ERROR] The directory "%s" does not exist! No files for oai-converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
-            self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files for converting are found!\n(Maybe your convert list has old items?)' % (path))
+            logging.error('[ERROR] The directory "%s/json" does not exist or no json files for converting are found!\n(Maybe your convert list has old items?)' % (path))
             return results
     
         # run oai-converting
@@ -2310,8 +2310,8 @@ class MAPPER(object):
         if (not os.path.isdir(outpath)):
              os.makedirs(outpath)
 
-        self.logger.debug(' %s     INFO  OAI-Converter of files in %s/json' % (time.strftime("%H:%M:%S"),path))
-        self.logger.debug('    |   | %-4s | %-40s | %-40s |\n   |%s|' % ('#','infile','outfile',"-" * 53))
+        logging.debug(' %s     INFO  OAI-Converter of files in %s/json' % (time.strftime("%H:%M:%S"),path))
+        logging.debug('    |   | %-4s | %-40s | %-40s |\n   |%s|' % ('#','infile','outfile',"-" * 53))
 
         fcount = 0
         oldperc = 0
@@ -2323,22 +2323,22 @@ class MAPPER(object):
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                self.logger.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                logging.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             identifier=oaiset+'_%06d' % fcount
             createdate = str(datetime.datetime.utcnow())
             jsondata = dict()
-            self.logger.debug(' |- %s     INFO  JSON2XML - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
+            logging.debug(' |- %s     INFO  JSON2XML - Processing: %s/json/%s' % (time.strftime("%H:%M:%S"),os.path.basename(path),filename))
             outfile=outpath+'/'+community+'_'+oaiset+'_%06d' % fcount+'.xml'
-            self.logger.debug('    | o | %-4d | %-45s | %-45s |' % (fcount,os.path.basename(filename),os.path.basename(outfile)))
+            logging.debug('    | o | %-4d | %-45s | %-45s |' % (fcount,os.path.basename(filename),os.path.basename(outfile)))
 
             if ( os.path.getsize(path+'/json/'+filename) > 0 ):
                 with open(path+'/json/'+filename, 'r') as f:
                     try:
                         jsondata=json.loads(f.read())
                     except:
-                        log.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
+                        logging.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
                         continue
             else:
@@ -2353,7 +2353,7 @@ class MAPPER(object):
                     try:
                         mapdict=json.loads(f.read())
                     except:
-                        log.error('    | [ERROR] Cannot load the convert file %s' % convertfile)
+                        logging.error('    | [ERROR] Cannot load the convert file %s' % convertfile)
                         sys.exit()
 
                     for filetype in ['ds','exp']:
@@ -2363,7 +2363,7 @@ class MAPPER(object):
 	                    try:
 	                        dsdata= f.read() ##HEW-D ET.parse(templatefile).getroot()
 	                    except Exception as e:
-	                        log.error('    | [ERROR] %s : Cannot load tempalte file %s' % (e,templatefile))
+	                        logging.error('    | [ERROR] %s : Cannot load tempalte file %s' % (e,templatefile))
 	
 	                data=dict()
 	                for key in jsondata:
@@ -2382,7 +2382,7 @@ class MAPPER(object):
 	                    f.write("\n")
 	                    f.close
 	                except IOError, e:
-	                    self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
+	                    logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
 	                    return(False, outfile , outpath, fcount)
 	
             else:
@@ -2408,14 +2408,14 @@ class MAPPER(object):
                     f.write("\n")
                     f.close
                 except IOError, e:
-                    self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
+                    logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
                     return(False, outfile , outpath, fcount)
 
-        self.logger.info('%s     INFO  B2FIND : %d records converted; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+        logging.info('%s     INFO  B2FIND : %d records converted; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .xml files in path/b2find
         results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(outpath)))
-        self.logger.info(
+        logging.info(
                 '   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
@@ -2474,7 +2474,7 @@ class UPLOADER (object):
     """
     
     def __init__(self, CKAN, OUT):
-        self.logger = log.getLogger()
+        logging = logging.getLogger()
         self.CKAN = CKAN
         self.OUT = OUT
         
@@ -2509,7 +2509,7 @@ class UPLOADER (object):
         # None   
     
         pstart = time.time()
-        self.logger.debug(' Remove all packages from and purge list %s ... ' % community)
+        logging.debug(' Remove all packages from and purge list %s ... ' % community)
 
         result = (self.CKAN.action('group_purge',{"id":community}))
         print 'result %s' % result
@@ -2532,7 +2532,7 @@ class UPLOADER (object):
         # None   
     
         pstart = time.time()
-        self.logger.debug(' Get all package names from community %s... ' % community)
+        logging.debug(' Get all package names from community %s... ' % community)
 
         # get the full package list from a community in CKAN:
         query='"groups:'+community+'"'
@@ -2568,7 +2568,7 @@ class UPLOADER (object):
         # None   
     
         pstart = time.time()
-        self.logger.debug(' Get all package names from community %s... ' % community)
+        logging.debug(' Get all package names from community %s... ' % community)
 
         # get the full package list from a community in CKAN:
         community_packages = (self.CKAN.action('group_show',{"id":community}))['result']['packages']
@@ -2590,12 +2590,12 @@ class UPLOADER (object):
     def json2ckan(self, jsondata):
         ## json2ckan(UPLOADER object, json data) - method
         ##  converts flat JSON structure to CKAN JSON record with extra fields
-        self.logger.debug('    | Adapt default fields for upload to CKAN')
+        logging.debug('    | Adapt default fields for upload to CKAN')
         for key in self.ckandeffields :
             if key not in jsondata:
-                log.debug('[WARNING] : CKAN default key %s does not exist' % key)
+                logging.debug('[WARNING] : CKAN default key %s does not exist' % key)
             else:
-                self.logger.debug('    | -- %-25s ' % key)
+                logging.debug('    | -- %-25s ' % key)
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
@@ -2603,7 +2603,7 @@ class UPLOADER (object):
 
         jsondata['extras']=list()
         extrafields=set(self.b2findfields) - set(self.b2fckandeffields)
-        self.logger.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
+        logging.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
         for key in extrafields :
             if key in jsondata :
                 if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
@@ -2618,9 +2618,9 @@ class UPLOADER (object):
                      "value" : value
                 })
                 del jsondata[key]
-                self.logger.debug('    | %-20s | %-25s' % (key,value))
+                logging.debug('    | %-20s | %-25s' % (key,value))
             else:
-                log.debug('[WARNING] : No data for key %s ' % key)
+                logging.debug('[WARNING] : No data for key %s ' % key)
 
         return jsondata
 
@@ -2716,13 +2716,13 @@ class UPLOADER (object):
    
         # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
         if (dsstatus == 'new' or dsstatus == 'unknown') :
-            self.logger.debug('\t - Try to create dataset %s' % ds)
+            logging.debug('\t - Try to create dataset %s' % ds)
             
             results = self.CKAN.action('package_create',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
-                self.logger.debug('\t - Creation failed. Try to update instead.')
+                logging.debug('\t - Creation failed. Try to update instead.')
                 results = self.CKAN.action('package_update',jsondata)
                 if (results and results['success']):
                     rvalue = 2
@@ -2731,13 +2731,13 @@ class UPLOADER (object):
         
         # if the dsstatus is 'changed' then update it with package_update:
         elif (dsstatus == 'changed'):
-            self.logger.debug('\t - Try to update dataset %s' % ds)
+            logging.debug('\t - Try to update dataset %s' % ds)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 2
             else:
-                self.logger.debug('\t - Update failed. Try to create instead.')
+                logging.debug('\t - Update failed. Try to create instead.')
                 results = self.CKAN.action('package_create',jsondata)
                 if (results and results['success']):
                     rvalue = 1
@@ -2776,13 +2776,13 @@ class UPLOADER (object):
    
         # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
         if (dsstatus == 'new' or dsstatus == 'unknown') :
-            self.logger.debug('\t - Try to create dataset %s' % ds)
+            logging.debug('\t - Try to create dataset %s' % ds)
             
             results = self.CKAN.action('package_create',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
-                self.logger.debug('\t - Creation failed. Try to update instead.')
+                logging.debug('\t - Creation failed. Try to update instead.')
                 results = self.CKAN.action('package_update',jsondata)
                 if (results and results['success']):
                     rvalue = 2
@@ -2791,13 +2791,13 @@ class UPLOADER (object):
         
         # if the dsstatus is 'changed' then update it with package_update:
         elif (dsstatus == 'changed'):
-            self.logger.debug('\t - Try to update dataset %s' % ds)
+            logging.debug('\t - Try to update dataset %s' % ds)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 2
             else:
-                self.logger.debug('\t - Update failed. Try to create instead.')
+                logging.debug('\t - Update failed. Try to create instead.')
                 results = self.CKAN.action('package_create',jsondata)
                 if (results and results['success']):
                     rvalue = 1
@@ -2830,13 +2830,13 @@ class UPLOADER (object):
    
         # if the dataset exists set it to status deleted in CKAN:
         if (not dsstatus == 'new'):
-            self.logger.debug('\t - Try to set dataset %s on status deleted' % dsname)
+            logging.debug('\t - Try to set dataset %s on status deleted' % dsname)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
-                self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
+                logging.debug('\t - Deletion failed. Maybe dataset already removed.')
         
         return rvalue
     
@@ -2891,7 +2891,7 @@ class UPLOADER (object):
         except socket.timeout as e:
             return False    #catched
 
-class OUTPUT (object):
+class OUTPUT(object):
 
     """
     ### OUTPUT - class
@@ -2961,27 +2961,27 @@ class OUTPUT (object):
         
         # choose the debug level:
         self.log_level = {
-            'log':log.INFO,
-            'err':log.ERROR,
-            'err':log.DEBUG,
-            'std':log.INFO,
+            'log':logging.INFO,
+            'err':logging.ERROR,
+            'err':logging.DEBUG,
+            'std':logging.INFO,
         }
         
         if self.verbose == 1:
             self.log_level = {
-                'log':log.DEBUG,
-                'err':log.ERROR,
-                'std':log.INFO,
+                'log':logging.DEBUG,
+                'err':logging.ERROR,
+                'std':logging.INFO,
             }
         elif self.verbose == 2:
             self.log_level = {
-                'log':log.DEBUG,
-                'err':log.ERROR,
-                'std':log.DEBUG,
+                'log':logging.DEBUG,
+                'err':logging.ERROR,
+                'std':logging.DEBUG,
             }
             
         # create the logger and start it:
-        self.start_logger()
+        ##HEW-D!!! self.start_logger()
         
         self.table_code = ''
         self.details_code = ''
@@ -2999,24 +2999,24 @@ class OUTPUT (object):
         # --------------
         # None
     
-        logger = log.getLogger()
-        logger.setLevel(log.DEBUG)
+        logger = logging.getLogger()
+        logger.setLevel(logging.DEBUG)
         
         # create file handler which logs even debug messages
-        lh = log.FileHandler(self.jobdir + '/myapp.log', 'w')
+        lh = logging.FileHandler(self.jobdir + '/myapp.log', 'w')
         lh.setLevel(self.log_level['log'])
         
         # create file handler which logs only error messages
-        eh = log.FileHandler(self.jobdir + '/myapp.err', 'w')
+        eh = logging.FileHandler(self.jobdir + '/myapp.err', 'w')
         eh.setLevel(self.log_level['err'])
         
         # create console handler with a higher log level
-        ch = log.StreamHandler()
+        ch = logging.StreamHandler()
         ch.setLevel(self.log_level['std'])
         
         # create formatter and add it to the handlers
-        formatter_l = log.Formatter("%(message)s")
-        formatter_h = log.Formatter("%(message)s\t[%(module)s, %(funcName)s, NO: %(lineno)s]\n")
+        formatter_l = logging.Formatter("%(message)s")
+        formatter_h = logging.Formatter("%(message)s\t[%(module)s, %(funcName)s, NO: %(lineno)s]\n")
         
         lh.setFormatter(formatter_l)
         ch.setFormatter(formatter_l)
@@ -3027,7 +3027,7 @@ class OUTPUT (object):
         logger.addHandler(ch)
         logger.addHandler(eh)
         
-        self.logger = logger
+        logging = logger
 
     
     def save_stats(self,request,subset,mode,stats):
@@ -3144,7 +3144,7 @@ class OUTPUT (object):
         if (not request.startswith('#') or request == '#Start'):
 
             # shutdown the logger:                                                                  
-            log.shutdown()
+            logging.shutdown()
             
             # make the new log dir if it is necessary:
             logdir= self.jobdir
@@ -3154,10 +3154,10 @@ class OUTPUT (object):
             # generate new log and error filename:
             logfile, errfile = '',''
             if (request == '#Start'):
-                logfile='%s/start.log.txt' % (logdir)
+                logfile='%s/start.logging.txt' % (logdir)
                 errfile='%s/start.err.txt' % (logdir)
             else:
-                logfile='%s/%s_%s.log.txt' % (logdir,mode,self.get_stats(request,subset,'#id'))
+                logfile='%s/%s_%s.logging.txt' % (logdir,mode,self.get_stats(request,subset,'#id'))
                 errfile='%s/%s_%s.err.txt' % (logdir,mode,self.get_stats(request,subset,'#id'))
 
             # move log files:
@@ -3296,7 +3296,7 @@ class OUTPUT (object):
         for proc in pstat['status']:
             if (pstat['status'][proc] == 'tbd' and proc != 'a') :
                 reshtml.write('\t\t\t<li>%s</li>\n' %  (pstat['text'][proc]))
-                self.logger.debug('  %d. %s' % (i,pstat['text'][proc]))
+                logging.debug('  %d. %s' % (i,pstat['text'][proc]))
                 i+=1
                 
         reshtml.write('\t\t</ol>\n')
@@ -3323,15 +3323,15 @@ class OUTPUT (object):
                 
             reshtml.write('<span style="color:red"><strong>A critical script error occured! Look at <a href="myapp.log">log</a> (%d kB) and <a href="myapp.err">error</a> (%d kB) file. </strong></span><br />'% (size_log, size_err))
             critical_script_error = True
-        elif (os.path.getsize(self.jobdir+'/start.err.txt')):
-            size_log = os.path.getsize(self.jobdir+'/start.log.txt')
+        elif (os.path.isfile(self.jobdir+'/start.err.txt')):
+            size_log = os.path.getsize(self.jobdir+'/start.logging.txt')
             size_err = os.path.getsize(self.jobdir+'/start.err.txt')
             if (size_log != 0):
                 size_log = int(size_log/1024.) or 1
             if (size_err != 0):
                 size_err = int(size_err/1024.) or 1
         
-            reshtml.write('<span style="color:red"><strong>A critical script error occured! Look at main <a href="start.log.txt">log</a> (%d kB) and <a href="start.err.txt">error</a> (%d kB) file. </strong></span><br />'% (size_log, size_err))
+            reshtml.write('<span style="color:red"><strong>A critical script error occured! Look at main <a href="start.logging.txt">log</a> (%d kB) and <a href="start.err.txt">error</a> (%d kB) file. </strong></span><br />'% (size_log, size_err))
             critical_script_error = True
 
         # get all and processed modes:
@@ -3472,12 +3472,12 @@ class OUTPUT (object):
                     # link standard output files:
                     reshtml.write('<td valign=\"top\">')
                     for mode in processed_modes:
-                        if (pstat['status'][mode[0]] == 'tbd'  and os.path.exists(self.jobdir+'/%s_%d.log.txt'%(mode[0],self.get_stats(request,subset,'#id')))):
+                        if (pstat['status'][mode[0]] == 'tbd'  and os.path.exists(self.jobdir+'/%s_%d.logging.txt'%(mode[0],self.get_stats(request,subset,'#id')))):
                             try:
-                                size = os.path.getsize(self.jobdir+'/%s_%d.log.txt'%(mode[0],self.get_stats(request,subset,'#id')))
+                                size = os.path.getsize(self.jobdir+'/%s_%d.logging.txt'%(mode[0],self.get_stats(request,subset,'#id')))
                                 if (size != 0):
                                     size = int(size/1024.) or 1
-                                reshtml.write('<a href="%s_%d.log.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),pstat['short'][mode],size))
+                                reshtml.write('<a href="%s_%d.logging.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),pstat['short'][mode],size))
                             except OSError,e:
                                 reshtml.write('%s log file not available!<br /><small><small>(<i>%s</i>)</small></small><br />'% (pstat['short'][mode], e))
                     reshtml.write('</td>')
@@ -3536,7 +3536,7 @@ class OUTPUT (object):
                 if(not new_entry in file):
                     file += new_entry
             except IOError as (errno, strerror):
-                self.logger.critical("Cannot read data from '{0}': {1}".format(self.convert_list, strerror))
+                logging.critical("Cannot read data from '{0}': {1}".format(self.convert_list, strerror))
                 f.close
 
         try:
@@ -3544,5 +3544,5 @@ class OUTPUT (object):
             f.write(file)
             f.close()
         except IOError as (errno, strerror):
-            self.logger.critical("Cannot write data to '{0}': {1}".format(self.convert_list, strerror))
+            logging.critical("Cannot write data to '{0}': {1}".format(self.convert_list, strerror))
             f.close
