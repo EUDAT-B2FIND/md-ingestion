@@ -90,6 +90,7 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-
 ## CESSDA endpoint
 #HEW-T cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi test
 #HEW-T cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_dc test
+#HEW-T cessda http://oai.ukdataservice.ac.uk/oai/provider ListRecords  ddi test_1
 #ERROR: None??? cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi dda_
 #ERROR 404 Client Error cessda http://nesstar.snd.gu.se/oai-pmh ListRecords  oai_ddi snd_
 #h=96 ok

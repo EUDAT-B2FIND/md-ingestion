@@ -747,7 +747,7 @@ class MAPPER(object):
     """
 
     def __init__ (self, OUT):
-        logging = logging.getLogger()
+        ##HEW-D logging = logging.getLogger()
         self.OUT = OUT
         
         # Read in B2FIND metadata schema and fields
@@ -1046,6 +1046,7 @@ class MAPPER(object):
         desc=''
         pattern = re.compile(r";|\s+")
         try:
+          logging.debug('   | Invalue:\t%s' % invalue)
           if type(invalue) is not list :
               invalue=invalue.split() ##HEW??? [invalue]
           coordarr=list()
@@ -1069,6 +1070,13 @@ class MAPPER(object):
                           nc+=1
                       else:
                           desc+=' '+v
+                  if nc==2 :
+                      return (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+                  elif nc==4 :
+                      return (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+                  else :
+                      return (None,None,None,None,None) 
+
           if len(coordarr)==2 :
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[0],coordarr[1])
               return(desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
@@ -1143,21 +1151,23 @@ class MAPPER(object):
         outvalue=list()
         if not isinstance(invalue,list): invalue = invalue.split()
         for elem in invalue:
+            logging.debug('[DEBUG]\nelem\t%s\npattern\t%s\nnfield\t%s' % (elem,pattern,nfield))
+            try:
                 if pattern is None :
                     if nfield :
                         outvalue.append(elem[nfield])
                     else:
                         outvalue.append(elem)
                 else:
-                    rep=re.findall(pattern, elem)
-                    if len(rep) > 0 :
-                        outvalue.append(rep[nfield])
+                    ##rep=re.search(pattern, elem).group()
+                    rep=elem.split(pattern,1)
+                    logging.debug('[DEBUG]rep\t%s' % rep)
+                    if len(rep) > nfield-1 :
+                        outvalue.append(rep[nfield-1])
                     else:
                         outvalue.append(elem)
-                        
-        ##else:
-        ##    logging.error('[ERROR] : cut expects as invalue (%s) a list' % invalue)
-            ## return None
+            except Exception, e:
+                logging.error("[ERROR] %s" % e)
 
         return outvalue
 
@@ -1230,9 +1240,7 @@ class MAPPER(object):
         utc1900=datetime.datetime.strptime("1900-01-01T11:59:59Z", "%Y-%m-%dT%H:%M:%SZ")
         utc=self.date2UTC(dt)
         try:
-           ##utctime=datetime.datetime(utc).isoformat()
-           ##print 'utctime %s' % utctime
-           utctime = datetime.datetime.strptime(utc, "%Y-%m-%dT%H:%M:%SZ") ##HEW-?? .isoformat()
+           utctime = datetime.datetime.strptime(utc, "%Y-%m-%dT%H:%M:%SZ")
            diff = utc1900 - utctime
            diffsec= int(diff.days) * 24 * 60 *60
            if diff > datetime.timedelta(0): ## date is before 1900
@@ -1651,7 +1659,7 @@ class MAPPER(object):
             m = re.match(r'(\s+)<field name="(.*?)">', line)
             if m:
                 field=m.group(2)
-                if field in ['Discipline','oai_set','Source']: ## HEW!!! expand to all mandatory fields !!
+                if field in ['Discipline','oai_set','Source']: ## HEW!!! add all mandatory fields !!
                     retval=['Not stated']
             else:
                 xpath=''
@@ -1705,7 +1713,7 @@ class MAPPER(object):
         
         # settings according to md format (xml or json processing)
         if mdprefix == 'json' :
-            mapext='conf' ##HEW!! --> json !!!!
+            mapext='conf'
             insubdir='/hjson'
             infformat='json'
         else:
@@ -1792,8 +1800,6 @@ class MAPPER(object):
             fcount+=1
             perc=int(fcount*100/int(len(files)))
             bartags=perc/5
-                ##??? perc=int(fcount*100/int(100)) ##HEW-?? len(records) not known
-
             if perc%10 == 0 and perc != oldperc:
                 oldperc=perc
                 logging.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
@@ -1808,7 +1814,6 @@ class MAPPER(object):
                     try:
                         if  mdprefix == 'json':
                             jsondata=json.loads(f.read())
-                            ##HEW-D ???!!! hjsondata=json.loads(f.read())
                         else:
                             xmldata= ET.parse(infilepath)
                     except Exception as e:
@@ -2177,7 +2182,7 @@ class MAPPER(object):
         printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
         printstats+="      | Value statistics:\n      |- {:<5} : {:<30} |\n".format('#Occ','Value')
         printstats+=" ----------------------------------------------------------\n"
-        for field in self.ckanfields : ## HEW-D??? b2findfields : ## totstats:
+        for field in self.ckanfields : ## Print better b2findfields ??
           if float(fcount) > 0 :
             printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['xpath'],totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
             try:
@@ -2474,7 +2479,7 @@ class UPLOADER (object):
     """
     
     def __init__(self, CKAN, OUT):
-        logging = logging.getLogger()
+        ##HEW-D logging = logging.getLogger()
         self.CKAN = CKAN
         self.OUT = OUT
         

@@ -910,7 +910,8 @@ def options_parser(modes):
         formatter = optparse.TitledHelpFormatter(),
         prog = 'manager.py',
         epilog='For any further information and documentation please look at the README.md file or at the EUDAT wiki (http://eudat.eu/b2find).',
-        version = "%prog " + ManagerVersion
+        version = "%prog " + ManagerVersion,
+        usage = "%prog [options]" 
     )
         
     p.add_option('-v', '--verbose', action="count", 
