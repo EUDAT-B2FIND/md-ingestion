@@ -889,8 +889,10 @@ class MAPPER(object):
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
                 elif 'http:' in id or 'https:' in id:
-                    logging.debug('2222 [DEBUG] id\t%s' % id)
-                    iddict['url'] = re.search("(?P<url>https?://[^\s<>]+)", id).group("url")
+                    logging.debug('[DEBUG] id\t%s' % id)
+                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
+                    if reurl :
+                        iddict['url'] = reurl.group("url")
 
         except Exception, e:
             logging.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
@@ -1152,10 +1154,11 @@ class MAPPER(object):
                     else:
                         outvalue.append(elem)
                 else:
+                    rep=''
                     cpat=re.compile(pattern)
                     if nfield == 0 :
                         rep=re.findall(cpat,elem)[0]
-                    else:
+                    elif len(re.split(cpat,elem)) > nfield-1 :
                         rep=re.split(cpat,elem)[nfield-1]
                     logging.debug('[DEBUG] rep\t%s' % rep)
                     if rep :
@@ -1163,7 +1166,7 @@ class MAPPER(object):
                     else:
                         outvalue.append(elem)
             except Exception, e:
-                logging.error("[ERROR] %s" % e)
+                logging.error("[ERROR] %s in cut() with invalue %s" % (e,invalue))
 
         return outvalue
 
