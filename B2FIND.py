@@ -755,11 +755,9 @@ class MAPPER(object):
         with open(schemafile, 'r') as f:
             self.b2findfields=json.loads(f.read(), object_pairs_hook=OrderedDict)
 
-        self.ckanfields=list()
-        for val in self.b2findfields.values() :
-            self.ckanfields.append(val["ckanName"])
-
-        self.b2findfields = self.b2findfields.keys()
+##HEW-D        self.ckanfields=list()
+##HEW-D        for val in self.b2findfields.values() :
+##HEW-D            self.ckanfields.append(val["ckanName"])
 
         ## settings for pyparsing
         nonBracePrintables = ''
@@ -872,38 +870,33 @@ class MAPPER(object):
         try:
             ## idarr=invalue.split(";")
             iddict=dict()
-            favurl=invalue[0]  ### idarr[0]
-  
+
             for id in invalue :
+                logging.debug('[DEBUG] id\t%s' % id)
                 if id.startswith('http://data.theeuropeanlibrary'):
                     iddict['url']=id
                 elif id.startswith('ivo:'):
                     iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
-                    favurl=iddict['IVO']
                 elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
                     iddict['DOI'] = self.concat('http://dx.doi.org/',id)
-                    favurl=iddict['DOI']
                 elif 'dx.doi.org/' in id:
                     iddict['DOI'] = id
-                    favurl=iddict['DOI']
                 elif 'doi:' in id: ## and 'DOI' not in iddict :
                     iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
-                    favurl=iddict['DOI']
                 elif 'hdl.handle.net' in id:
                     iddict['PID'] = id
-                    favurl=iddict['PID']
                 elif 'hdl:' in id:
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
-                    favurl=iddict['PID']
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
-                    ##     iddict['url']=id
+                elif 'http:' in id or 'https:' in id:
+                    logging.debug('2222 [DEBUG] id\t%s' % id)
+                    iddict['url'] = re.search("(?P<url>https?://[^\s<>]+)", id).group("url")
 
-            if 'url' not in iddict :
-                iddict['url']=favurl
         except Exception, e:
             logging.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
+            logging.debug('[DEBUG] iddict\t%s' % iddict)
             return iddict
 
     def map_lang(self, invalue):
@@ -1159,11 +1152,14 @@ class MAPPER(object):
                     else:
                         outvalue.append(elem)
                 else:
-                    ##rep=re.search(pattern, elem).group()
-                    rep=elem.split(pattern,1)
-                    logging.debug('[DEBUG]rep\t%s' % rep)
-                    if len(rep) > nfield-1 :
-                        outvalue.append(rep[nfield-1])
+                    cpat=re.compile(pattern)
+                    if nfield == 0 :
+                        rep=re.findall(cpat,elem)[0]
+                    else:
+                        rep=re.split(cpat,elem)[nfield-1]
+                    logging.debug('[DEBUG] rep\t%s' % rep)
+                    if rep :
+                        outvalue.append(rep)
                     else:
                         outvalue.append(elem)
             except Exception, e:
@@ -1863,14 +1859,14 @@ class MAPPER(object):
                            jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                        elif facet == 'url':
                            iddict = self.map_identifiers(jsondata[facet])
-                           if 'url' in iddict: ## and iddict['url'] != '': 
+                           if 'url' in iddict: ## and iddict['url'] != '':
                                jsondata[facet]=iddict['url']
+                           else:
+                               jsondata[facet]=''
                        elif facet == 'DOI':
                            iddict = self.map_identifiers(jsondata[facet])
                            if 'DOI' in iddict : 
                                jsondata[facet]=iddict['DOI']
-                               ##if 'url' not in jsondata:
-                               ##    jsondata['url']=iddict['DOI']
                        elif facet == 'Discipline':
                            jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
                        elif facet == 'Publisher':
@@ -1908,12 +1904,8 @@ class MAPPER(object):
                        continue
 
                 if iddict :
-                    if 'DOI' in iddict :
-                        jsondata['DOI']=iddict['DOI']
+                    if 'DOI' in iddict : jsondata['DOI']=iddict['DOI']
                     if 'PID' in iddict : jsondata['PID']=iddict['PID']
-                if 'url' not in jsondata:
-                    if 'DOI' in jsondata:
-                        jsondata['url']=jsondata['DOI']
                 if spvalue :
                     jsondata["spatial"]=spvalue
                 if stime and etime :
@@ -2108,7 +2100,10 @@ class MAPPER(object):
         logging.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
         totstats=dict()
-        for facet in self.ckanfields :
+        for facetdict in self.b2findfields.values() :
+            facet=facetdict["ckanName"]
+            if facet.startswith('#') or facetdict["display"] == "hidden" :
+                continue
             totstats[facet]={
               'xpath':'',
               'mapped':0,
@@ -2121,11 +2116,11 @@ class MAPPER(object):
                 if '<field name="'+facet+'">' in line:
                     totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf))
                     break
+
         fcount = 0
         oldperc = 0
         start = time.time()
-        for filename in files:
-            ## counter and progress bar
+        for filename in files: ## loop over datasets
             fcount+=1
             perc=int(fcount*100/int(len(files)))
             bartags=perc/10
@@ -2151,13 +2146,14 @@ class MAPPER(object):
             
             try:
               valuearr=list()
-              for facet in self.ckanfields :
-                    if facet.startswith('#'):
+              for facetdict in self.b2findfields.values() : ## loop over facets
+                  facet=facetdict["ckanName"]
+                  if facet.startswith('#') or facetdict["display"] == "hidden" :
                         continue
-                    value = None
-                    if facet in jsondata:
+                  value = None
+                  if facet in jsondata:
                         value = jsondata[facet]
-                    if value:
+                  if value:
                         totstats[facet]['mapped']+=1
                         pvalue=self.is_valid_value(facet,value)
                         logging.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
@@ -2169,7 +2165,7 @@ class MAPPER(object):
                                 totstats[facet]['vstat'].append(pvalue)
                         else:
                             totstats[facet]['vstat']=[]  
-                    else:
+                  else:
                         if facet == 'title':
                            logging.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
             except IOError, e:
@@ -2182,26 +2178,31 @@ class MAPPER(object):
         printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
         printstats+="      | Value statistics:\n      |- {:<5} : {:<30} |\n".format('#Occ','Value')
         printstats+=" ----------------------------------------------------------\n"
-        for field in self.ckanfields : ## Print better b2findfields ??
-          if float(fcount) > 0 :
-            printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(field,totstats[field]['xpath'],totstats[field]['mapped'],totstats[field]['mapped']*100/float(fcount),totstats[field]['valid'],totstats[field]['valid']*100/float(fcount))
-            try:
-                counter=collections.Counter(totstats[field]['vstat'])
-                if totstats[field]['vstat']:
-                    for tuple in counter.most_common(10):
-                        if len(tuple[0]) > 80 : 
-                            contt='[...]' 
-                        else: 
-                            contt=''
-                        printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
-                        if self.OUT.verbose > 1:
-                            print printstats
-            except TypeError as e:
-                logging.error('    [ERROR] TypeError: %s field %s' % (e,field))
+##HEW-D        for field in self.ckanfields : ## Print better b2findfields ??
+        for key,facetdict in self.b2findfields.iteritems() : ###.values() :
+            facet=facetdict["ckanName"]
+            if facet.startswith('#') or facetdict["display"] == "hidden" :
                 continue
-            except Exception as e:
-                logging.error('    [ERROR] %s field %s' % (e,field))
-                continue
+
+            if float(fcount) > 0 :
+                printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(key,totstats[facet]['xpath'],totstats[facet]['mapped'],totstats[facet]['mapped']*100/float(fcount),totstats[facet]['valid'],totstats[facet]['valid']*100/float(fcount))
+                try:
+                    counter=collections.Counter(totstats[facet]['vstat'])
+                    if totstats[facet]['vstat']:
+                        for tuple in counter.most_common(10):
+                            if len(tuple[0]) > 80 : 
+                                contt='[...]' 
+                            else: 
+                                contt=''
+                            printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
+                            if self.OUT.verbose > 1:
+                                print printstats
+                except TypeError as e:
+                    logging.error('    [ERROR] TypeError: %s facet %s' % (e,facet))
+                    continue
+                except Exception as e:
+                    logging.error('    [ERROR] %s facet %s' % (e,facet))
+                    continue
 
         f = open(outfile, 'w')
         f.write(printstats)
@@ -2492,12 +2493,10 @@ class UPLOADER (object):
 
         # B2FIND metadata fields
 
-        self.ckanfields=list()
-        for val in self.b2findfields.values() :
-            self.ckanfields.append(val["ckanName"])
+##HEW-D        self.ckanfields=list()
+##HEW-D        for val in self.b2findfields.values() :
+##HEW-D            self.ckanfields.append(val["ckanName"])
 
-        self.b2findfields = self.b2findfields.keys()
-            
         self.ckandeffields = ["author","title","notes","tags","url","version"]
         self.b2fckandeffields = ["Creator","Title","Description","Tags","Source","Checksum"]
 
@@ -2607,7 +2606,7 @@ class UPLOADER (object):
                     jsondata[key]='\n'.join(list(jsondata[key]))###HEW-??? .encode("iso-8859-1") ### !!! encode to display e.g. 'Umlauts' corectly
 
         jsondata['extras']=list()
-        extrafields=set(self.b2findfields) - set(self.b2fckandeffields)
+        extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)
         logging.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
         for key in extrafields :
             if key in jsondata :

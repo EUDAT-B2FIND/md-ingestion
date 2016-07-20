@@ -4,6 +4,7 @@
         "definition" : "A name or title by which a resource is known",
         "ckanName" : "title",
         "ckanType" : "default",
+	"display" : "shown",
         "type" : "textual",
         "occurence" : "1",
         "obligation" : "mandatory"
@@ -13,6 +14,7 @@
         "definition" : "An additional information describing the content of the resource. Could be an abstract, a summary or a Table of Content.",
         "ckanName" : "notes",
         "ckanType" : "default",
+        "display" : "shown",
         "type" : "textual",
         "occurence" : "0-1",
         "obligation" : "recommended"
@@ -22,6 +24,7 @@
         "description" : "",
         "ckanName" : "tags",
         "ckanType" : "default",
+        "display" : "shown",
         "type" : "dictList",
         "occurence" : "0-n",
         "obligation" : "optional"
@@ -31,6 +34,7 @@
         "description" : "",
         "ckanName" : "url",
         "ckanType" : "default",
+        "display" : "shown",
         "type" : "url",
         "obligation" : "mandatory"
     }, 
@@ -39,6 +43,7 @@
         "description" : "",
         "ckanName" : "DOI",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
     }, 
@@ -47,6 +52,7 @@
         "description" : "",
         "ckanName" : "PID",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
     },
@@ -55,6 +61,7 @@
         "description" : "",
         "ckanName" : "version",
         "ckanType" : "default",
+        "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
     },
@@ -63,22 +70,16 @@
         "description" : "",
         "ckanName" : "Rights",
         "ckanType" : "default",
+        "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
     }, 
-    "Community" : {
-        "name" : "community",
-        "description" : "",
-        "ckanName" : "group",
-        "ckanType" : "default",
-        "type" : "textual",
-        "obligation" : "optional"
-    },
     "Discipline" : {
         "name" : "discipline",
         "description" : "",
         "ckanName" : "Discipline",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
     },
@@ -87,6 +88,7 @@
         "description" : "",
         "ckanName" : "author",
         "ckanType" : "default",
+        "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
     },
@@ -95,6 +97,7 @@
         "description" : "",
         "ckanName" : "Publisher",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
     },
@@ -103,6 +106,7 @@
         "description" : "",
         "ckanName" : "PublicationYear",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     },
@@ -111,6 +115,7 @@
         "description" : "",
         "ckanName" : "Language",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     }, 
@@ -119,6 +124,7 @@
         "description" : "",
         "ckanName" : "SpatialCoverage",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     }, 
@@ -127,6 +133,7 @@
         "description" : "",
         "ckanName" : "TemporalCoverage",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     }, 
@@ -135,6 +142,7 @@
         "description" : "",
         "ckanName" : "spatial",
         "ckanType" : "extra",
+	"display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
     }, 
@@ -143,7 +151,17 @@
         "description" : "",
         "ckanName" : "Format",
         "ckanType" : "default",
-        "type" : "date",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    }, 
+    "Type" : {
+        "name" : "",
+        "description" : "",
+        "ckanName" : "Type",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
         "obligation" : "optional"
     }, 
     "Contact" : {
@@ -151,6 +169,7 @@
         "description" : "",
         "ckanName" : "Contact",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
     },
@@ -159,6 +178,7 @@
         "description" : "",
         "ckanName" : "metadata",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     },
@@ -167,7 +187,17 @@
         "description" : "",
         "ckanName" : "PublicationTimestamp",
         "ckanType" : "extra",
+        "display" : "shown",
         "type" : "date",
+        "obligation" : "optional"
+    },
+    "Community" : {
+        "name" : "community",
+        "description" : "",
+        "ckanName" : "group",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
         "obligation" : "optional"
     }
 }

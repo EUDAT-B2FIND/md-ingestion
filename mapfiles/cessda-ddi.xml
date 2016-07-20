@@ -15,12 +15,12 @@
        <xpath>//codeBook:citReq/text()</xpath>
    </field>
     <field name="tags">
-       <xpath>string-join(//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:subject/codeBook:keyword/text() | //codeBook:codeBook//codeBook:stdyDscr//codeBook:stdyInfo//codeBook:subject//codeBook:topcClas/text() ,";")</xpath>
+       <xpath>//codeBook:codeBook//codeBook:stdyDscr//codeBook:stdyInfo//codeBook:subject//codeBook:topcClas/text()</xpath>
    </field>
    <!-- Access data  -->
    <field name="url">
-       <xpath>string-join(distinct-values(//codeBook:holdings/text(), //codeBook:codeBook/codeBook:stdyDscr/codeBook:dataAccs/codeBook:setAvail/codeBook:accsPlac/, //codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:titlStmt/codeBook:IDNo/text(), /codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:rspStmt/codeBook:othId/text()), '; ')  </xpath>
-    </field>
+       <xpath>//codeBook:holdings/text(), //codeBook:codeBook/codeBook:stdyDscr/codeBook:dataAccs/codeBook:setAvail/codeBook:accsPlac/, //codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:titlStmt/codeBook:IDNo/text(), //codeBook:codeBook/codeBook:stdyDscr/codeBook:citation/codeBook:rspStmt/codeBook:othId/text() </xpath>
+   </field>
    <field name="Checksum">
    </field>
    <field name="Rights">
@@ -28,8 +28,7 @@
    </field>
    <!-- Provenance data -->
    <field name="Discipline">
-        <!-- map all to 'Social Sciences' ?? -->
-        <string>Social Sciences</string>
+       <xpath>//codeBook:codeBook//codeBook:stdyDscr//codeBook:stdyInfo//codeBook:subject//codeBook:topcClas/text()</xpath>
    </field>
    <!-- Concatenate attribute value of att "affiliation" to value of "Authoring Entity/Primary Investigator" element if applicable. -->
    <field name="author">
@@ -51,13 +50,16 @@
        <xpath>//codeBook:codeBook/codeBook:lang,//codeBook:codeBook/codeBook:stdyDscr/codeBook:othrStdyMat/codeBook:othRefs</xpath>
    </field>
    <field name="SpatialCoverage">
-        <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:sumDscr/codeBook:geogUnit/text()</xpath>
+        <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:sumDscr/codeBook:geogUnit/text(),//codeBook:sumDscr/codeBook:nation</xpath>
    </field>
    <field name="TemporalCoverage">
-       <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:sumDscr/codeBook:timePrd</xpath>
+       <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:stdyInfo/codeBook:sumDscr/codeBook:timePrd,//codeBook:sumDscr/codeBook:timePrd</xpath>
     </field>
    <field name="Contact">
         <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:dataAccs/codeBook:useStmt/codeBook:contact/text()</xpath>
+   </field>
+   <field name="Type">
+       <xpath>//codeBook:sumDscr/codeBook:dataKind</xpath>
    </field>
    <field name="Format">
         <xpath>//codeBook:codeBook/codeBook:fileDscr/codeBook:fileType/text()</xpath>
