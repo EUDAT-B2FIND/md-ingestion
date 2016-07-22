@@ -800,6 +800,31 @@ class MAPPER(object):
                    
             return disctab
 
+    class cv_geonames(object):
+        """
+        This class represents the closed vocabulary used for the mapoping of B2FIND spatial coverage to coordinates
+        Copyright (C) 2016 Heinrich Widmann.
+
+        """
+        def __init__(self):
+            self.geonames_list = self.get_list()
+
+        @staticmethod
+        def get_list():
+            import csv
+            import os
+            geonames_file =  '%s/mapfiles/b2find_geonames.tab' % (os.getcwd())
+            geonamestab = []
+            with open(geonames_file, 'r') as f:
+                ## define csv reader object, assuming delimiter is tab
+                tsvfile = csv.reader(f, delimiter='\t')
+
+                ## iterate through lines in file
+                for line in tsvfile:
+                   geonamestab.append(line)
+                   
+            return geonamestab
+
     def str_equals(self,str1,str2):
         """
         performs case insensitive string comparison by first stripping trailing spaces 
@@ -952,14 +977,21 @@ class MAPPER(object):
         Licensed under AGPLv3.
         """
         from geopy.geocoders import Nominatim
+        from geopy.exc import GeocoderQuotaExceeded
         geolocator = Nominatim()
         try:
           location = geolocator.geocode(invalue.split(';')[0])
           if not location :
-            return location ### (None,None)
+              return None ### (None,None)
+          if location.raw['importance'] < 0.9 :
+              return None
+        except GeocoderQuotaExceeded, err:
+           logging.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
+           sleep(5)
+           return None
         except Exception, e:
            logging.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
-           return location ### (None,None)
+           return None ### (None,None)
         else:
           return location ### (location.latitude, location.longitude)
 
@@ -1044,7 +1076,7 @@ class MAPPER(object):
             else:
                 yield el
 
-    def map_spatial(self,invalue):
+    def map_spatial(self,invalue,geotab):
         """
         Map coordinates to spatial
  
@@ -1079,17 +1111,23 @@ class MAPPER(object):
                       coordarr.append(val)
                       nc+=1
                   else:
-                      if self.map_geonames(val) == None :
-                          continue
-                      importance=self.map_geonames(val).raw['importance']
-                      if importance < 0.7 : ### wg. Claudia :-(
-                          continue
-                      nc=2
-                      coordarr.append(self.map_geonames(val).latitude)
-                      coordarr.append(self.map_geonames(val).longitude)
-                      ##print 'xxxx %s' % (list(self.map_geonames(val)))
-                      ##print 'lat %s lon %s rawimp %s' % (self.map_geonames(val).latitude,self.map_geonames(val).longitude,self.map_geonames(val).raw['importance'])
-                      desc+=' '+val
+                      for gentry in geotab :
+                          if val == gentry[0]:
+                              desc+=' '+val
+                              coordarr.append(gentry[1])
+                              coordarr.append(gentry[2])
+                              break
+                      else:
+                          geoname=self.map_geonames(val)
+                          if geoname == None :
+                              continue
+                          importance=geoname.raw['importance']
+                          if importance < 0.9 : ### wg. Claudia :-(
+                              continue
+                          nc=2
+                          coordarr.append(geoname.latitude)
+                          coordarr.append(geoname.longitude)
+                          desc+=' '+val
           if nc==2 :
               return (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
           elif nc==4 :
@@ -1806,6 +1844,8 @@ class MAPPER(object):
 
         # instance of B2FIND discipline table
         disctab = self.cv_disciplines()
+        # instance of B2FIND discipline table
+        geotab = self.cv_geonames()
         # instance of British English dictionary
         ##HEW-T dictEn = enchant.Dict("en_GB")
         # loop over all files (harvested records) in input path ( path/xml or path/hjson) 
@@ -1907,7 +1947,7 @@ class MAPPER(object):
                                blist = self.cut(jsondata[facet],'=',2)
                                jsondata[facet] = self.uniq(blist,';')
                        elif facet == 'SpatialCoverage':
-                           spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet])
+                           spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet],geotab.geonames_list)
                            if wlon and slat and elon and nlat :
                                spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
                            if spdesc :
