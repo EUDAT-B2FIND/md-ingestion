@@ -42,6 +42,7 @@ import uuid, hashlib
 import lxml.etree as etree
 import xml.etree.ElementTree as ET
 from itertools import tee 
+import collections
 # needed for CKAN_CLIENT
 import urllib, urllib2, socket
 import httplib
@@ -884,7 +885,9 @@ class MAPPER(object):
                 elif 'doi:' in id: ## and 'DOI' not in iddict :
                     iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'hdl.handle.net' in id:
-                    iddict['PID'] = id
+                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
+                    if reurl :
+                        iddict['PID'] = reurl.group("url")
                 elif 'hdl:' in id:
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
@@ -953,12 +956,12 @@ class MAPPER(object):
         try:
           location = geolocator.geocode(invalue.split(';')[0])
           if not location :
-            return (None,None)
+            return location ### (None,None)
         except Exception, e:
            logging.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
-           return (None,None)
+           return location ### (None,None)
         else:
-          return (location.latitude, location.longitude)
+          return location ### (location.latitude, location.longitude)
 
     def map_temporal(self,invalue):
         """
@@ -1031,6 +1034,16 @@ class MAPPER(object):
             except ValueError:
                 return False
 
+                            ##print 'tttt %s, dec %s, unic' % (type(tuple[0]),type(tuple[0].encode('utf8')))
+
+    def flatten(self,l):
+        for el in l:
+            if isinstance(el, collections.Iterable) and not isinstance(el, basestring):
+                for sub in flatten(el):
+                    yield sub
+            else:
+                yield el
+
     def map_spatial(self,invalue):
         """
         Map coordinates to spatial
@@ -1042,12 +1055,15 @@ class MAPPER(object):
         pattern = re.compile(r";|\s+")
         try:
           logging.debug('   | Invalue:\t%s' % invalue)
-          if type(invalue) is not list :
-              invalue=invalue.split() ##HEW??? [invalue]
+          if isinstance(invalue,list) :
+              valarr=self.flatten(invalue)
+          else:
+              valarr=[invalue]
+              ##invalue=invalue.split() ##HEW??? [invalue]
           coordarr=list()
           nc=0
-          for val in invalue:
-              if type(val) is dict :
+          for val in valarr:
+              if type(val) is dict : ## special dict case
                   coordict=dict()
                   if "description" in val :
                       desc=val["description"]
@@ -1058,19 +1074,28 @@ class MAPPER(object):
                   else :
                       return (desc,None,None,None,None)
               else:
-                  valarr=val.split()
-                  for v in valarr:
-                      if self.is_float_try(v) is True :
-                          coordarr.append(v)
-                          nc+=1
-                      else:
-                          desc+=' '+v
-                  if nc==2 :
-                      return (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-                  elif nc==4 :
-                      return (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-                  else :
-                      return (None,None,None,None,None) 
+                  logging.debug('value %s' % val)
+                  if self.is_float_try(val) is True :
+                      coordarr.append(val)
+                      nc+=1
+                  else:
+                      if self.map_geonames(val) == None :
+                          continue
+                      importance=self.map_geonames(val).raw['importance']
+                      if importance < 0.7 : ### wg. Claudia :-(
+                          continue
+                      nc=2
+                      coordarr.append(self.map_geonames(val).latitude)
+                      coordarr.append(self.map_geonames(val).longitude)
+                      ##print 'xxxx %s' % (list(self.map_geonames(val)))
+                      ##print 'lat %s lon %s rawimp %s' % (self.map_geonames(val).latitude,self.map_geonames(val).longitude,self.map_geonames(val).raw['importance'])
+                      desc+=' '+val
+          if nc==2 :
+              return (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+          elif nc==4 :
+              return (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+          else :
+              return (None,None,None,None,None) 
 
           if len(coordarr)==2 :
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[0],coordarr[1])
@@ -2193,19 +2218,23 @@ class MAPPER(object):
                     counter=collections.Counter(totstats[facet]['vstat'])
                     if totstats[facet]['vstat']:
                         for tuple in counter.most_common(10):
-                            if len(tuple[0]) > 80 : 
-                                contt='[...]' 
+                            ucvalue=tuple[0].encode('utf8')
+                            if len(ucvalue) > 80 :
+                                restchar=len(ucvalue)-80
+                                contt='[...(%d chars follow)...]' % restchar 
                             else: 
                                 contt=''
-                            printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
-                            if self.OUT.verbose > 1:
-                                print printstats
+                            ##HEW-D?? printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
+                            printstats+="      |- {:<5d} : {:<30s}{:<5s} |\n".format(tuple[1],ucvalue[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
                 except TypeError as e:
                     logging.error('    [ERROR] TypeError: %s facet %s' % (e,facet))
                     continue
                 except Exception as e:
-                    logging.error('    [ERROR] %s facet %s' % (e,facet))
+                    logging.error('    [ERROR] %s : facet %s, value %s' % (e,facet,ucvalue))
                     continue
+
+        if self.OUT.verbose > 1:
+            print printstats
 
         f = open(outfile, 'w')
         f.write(printstats)

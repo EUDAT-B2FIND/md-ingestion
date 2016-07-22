@@ -155,15 +155,6 @@
         "type" : "textual",
         "obligation" : "optional"
     }, 
-    "Type" : {
-        "name" : "",
-        "description" : "",
-        "ckanName" : "Type",
-        "ckanType" : "default",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    }, 
     "Contact" : {
         "name" : "",
         "description" : "",

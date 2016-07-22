@@ -11,17 +11,14 @@
       <xpath>//dc:title/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>string-join(distinct-values(//dc:description/text()), ' | ')</xpath>
+      <xpath>//dc:description/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>replace(replace(//dc:type[1]/text(),"info:",""),"[()/]"," ")</xpath>
+      <xpath>//dc:subject/text()</xpath>
     </field>
     <!-- Access data -->
     <field name="url">
-      <xpath>if (contains (string-join(distinct-values(//dc:identifier/text()),' ; '),'doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(string-join(distinct-values(//dc:identifier/text()),' ; '), 'doi:'),' ; ')) else //dc:identifier/text()</xpath> -->
-      <xpath>string-join(distinct-values(//dc:identifier/text()), '; ')</xpath>
-      <xpath>if (contains (//dc:identifier[1]/text(),'doi:')) then concat('http://dx.doi.org/',substring-after(//dc:identifier[1]/text(),'doi:')) else //dc:identifier/text()</xpath>
-      <xpath>if (contains(//dc:source/text(),     '[doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(//dc:source/text(), '[doi: '), ']')) else //dc:source/text()</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
     <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
@@ -31,26 +28,29 @@
       <xpath>//dc:subject/text()</xpath>
     </field>
     <field name="author">
-      <xpath>string-join(distinct-values(//dc:creator/text()), ';')</xpath>
+      <xpath>//dc:creator/text()</xpath>
     </field>
     <!-- All other visible fields, shown in table 'Additional info' -->
     <field name="Publisher">
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//dc:date[1]/text()</xpath>
+      <xpath>//dc:date/text()</xpath>
     </field>
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
-    </field>
-    <field name="Format">
-      <xpath>//dc:type/text()</xpath>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dc:coverage/text()</xpath>
     </field>
     <field name="TemporalCoverage">
-      <xpath>//dc:date[3]/text()</xpath>
+      <xpath>//dc:coverage/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//dc:format/text()</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//dc:publisher/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">

@@ -58,9 +58,6 @@
    <field name="Contact">
         <xpath>//codeBook:codeBook/codeBook:stdyDscr/codeBook:dataAccs/codeBook:useStmt/codeBook:contact/text()</xpath>
    </field>
-   <field name="Type">
-       <xpath>//codeBook:sumDscr/codeBook:dataKind</xpath>
-   </field>
    <field name="Format">
         <xpath>//codeBook:codeBook/codeBook:fileDscr/codeBook:fileType/text()</xpath>
    </field>
