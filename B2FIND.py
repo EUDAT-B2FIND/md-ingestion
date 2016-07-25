@@ -1121,25 +1121,27 @@ class MAPPER(object):
                               coordarr.append(gentry[2])
                               break
                       else:
-                          ec+=1
-                          if ec<10 :
-                              geoname=self.map_geonames(val)
-                              time.sleep(0.1)
-                          else:
-                              continue
-                          if geoname == None :
-                              continue
-                          importance=geoname.raw['importance']
-                          if importance < 0.7 : # wg. Claudia :-(
-                              continue
-                          nc=2
-                          coordarr.append(geoname.latitude)
-                          coordarr.append(geoname.longitude)
+##                          ec+=1
+##                          if ec<10 :
+##                              geoname=self.map_geonames(val)
+##                              time.sleep(0.1)
+##                          else:
+##                              continue
+##                          if geoname == None :
+##                              continue
+##                          importance=geoname.raw['importance']
+##                          if importance < 0.7 : # wg. Claudia :-(
+##                              continue
+##                          nc=2
+##                          coordarr.append(geoname.latitude)
+##                          coordarr.append(geoname.longitude)
                           desc+=' '+val
           if nc==2 :
               return (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
           elif nc==4 :
               return (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+          elif desc :
+              return (desc,None,None,None,None) 
           else :
               return (None,None,None,None,None) 
 
