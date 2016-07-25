@@ -1251,8 +1251,8 @@ class MAPPER(object):
 
         dictlist=[]
         valarr=[]
-        rm_chars = '(){}<>;' ## chars not allowed in CKAN tags
-        repl_chars = ':,=' ## chars not allowed in CKAN tags
+        rm_chars = '(){}<>;\'' ## remoove chars not allowed in CKAN tags
+        repl_chars = ':,=' ## replace chars not allowed in CKAN tags
         bad_words = ['and','or','the']
         if isinstance(invalue,dict):
             invalue=invalue.values()
@@ -2696,7 +2696,7 @@ class UPLOADER (object):
         logging.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
         for key in extrafields :
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights','SpatialCoverage']:
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_set','oai_identifier']:
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
