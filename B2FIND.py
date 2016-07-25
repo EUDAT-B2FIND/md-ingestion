@@ -837,31 +837,33 @@ class MAPPER(object):
         """
         # UTC format =  YYYY-MM-DDThh:mm:ssZ
         try:
+            if type(old_date) is list:
+                inlist=old_date
+            else:
+                inlist=[old_date]
             utc = re.compile(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z')
 
             utc_day1 = re.compile(r'\d{4}-\d{2}-\d{2}') # day (YYYY-MM-DD)
             utc_day = re.compile(r'\d{8}') # day (YYYYMMDD)
             utc_year = re.compile(r'\d{4}') # year (4-digit number)
-            if utc.search(old_date):
-                new_date = utc.search(old_date).group()
-                return new_date
-            elif utc_day1.search(old_date):
-                day = utc_day1.search(old_date).group()
-                new_date = day + 'T11:59:59Z'
-                return new_date
-            elif utc_day.search(old_date):
-                rep=re.findall(utc_day, old_date)[0]
-                new_date = rep[0:4]+'-'+rep[4:6]+'-'+rep[6:8] + 'T11:59:59Z'
-                return new_date
-            elif utc_year.search(old_date):
-                year = utc_year.search(old_date).group()
-                new_date = year + '-07-01T11:59:59Z'
-                return new_date
-            else:
-                return '' # if converting cannot be done, make date empty
+
+            new_date=None
+            for val in inlist:
+                if utc.search(val):
+                    new_date = utc.search(val).group()
+                elif utc_day1.search(val):
+                    day = utc_day1.search(val).group()
+                    new_date = day + 'T11:59:59Z'
+                elif utc_day.search(val):
+                    rep=re.findall(utc_day, val)[0]
+                    new_date = rep[0:4]+'-'+rep[4:6]+'-'+rep[6:8] + 'T11:59:59Z'
+                elif utc_year.search(val):
+                    year = utc_year.search(val).group()
+                    new_date = year + '-07-01T11:59:59Z'
+            return new_date
         except Exception, e:
-           logging.error('[ERROR] : %s - in date2UTC replace old date %s by new date %s' % (e,old_date,new_date))
-           return ''
+           logging.error('[ERROR] : %s - in date2UTC replace old date %s by new date %s' % (e,val,new_date))
+           return None
         else:
            return new_date
 
@@ -1111,6 +1113,7 @@ class MAPPER(object):
                       coordarr.append(val)
                       nc+=1
                   else:
+                      ec=0
                       for gentry in geotab :
                           if val == gentry[0]:
                               desc+=' '+val
@@ -1118,11 +1121,16 @@ class MAPPER(object):
                               coordarr.append(gentry[2])
                               break
                       else:
-                          geoname=self.map_geonames(val)
+                          ec+=1
+                          if ec<10 :
+                              geoname=self.map_geonames(val)
+                              time.sleep(0.1)
+                          else:
+                              continue
                           if geoname == None :
                               continue
                           importance=geoname.raw['importance']
-                          if importance < 0.9 : ### wg. Claudia :-(
+                          if importance < 0.7 : # wg. Claudia :-(
                               continue
                           nc=2
                           coordarr.append(geoname.latitude)
@@ -1241,7 +1249,8 @@ class MAPPER(object):
 
         dictlist=[]
         valarr=[]
-        bad_chars = '(){}<>:,'
+        rm_chars = '(){}<>;' ## chars not allowed in CKAN tags
+        repl_chars = ':,=' ## chars not allowed in CKAN tags
         bad_words = ['and','or','the']
         if isinstance(invalue,dict):
             invalue=invalue.values()
@@ -1259,7 +1268,10 @@ class MAPPER(object):
                     ##valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
                     valarr=re.findall('\[[^\]]*\]|\([^\)]*\)|\"[^\"]*\"|\S+',lentry)
                 for entry in valarr:
-                    entry="". join(c for c in entry if c not in bad_chars)
+                    entry="". join(c for c in entry if c not in rm_chars)
+                    for c in repl_chars :
+                        if c in entry:
+                            entry = entry.replace(c,'-')
                     if isinstance(entry,int) or len(entry) < 2 : continue
                     if entry in bad_words : continue
                     entry=entry.encode('utf-8').strip()
@@ -1959,11 +1971,11 @@ class MAPPER(object):
                        elif facet == 'Language': 
                            jsondata[facet] = self.map_lang(jsondata[facet])
                        elif facet == 'PublicationYear':
-                           publdate=self.date2UTC(jsondata[facet][0])
+                           publdate=self.date2UTC(jsondata[facet])
                            if publdate:
                                jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
                            else:
-                               jsondata[facet] = None
+                               del jsondata[facet]
                        elif facet == 'fulltext':
                            encoding='utf-8'
                            jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]

@@ -1,0 +1,43 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:23176</identifier>
+    <datestamp>2016-03-22T18:25:50Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/dc.xsd">
+      <dc:title>Archeologisch onderzoek Donkerstraat 23 te Heesselt</dc:title>
+      <dc:title>Inventariserend Veldonderzoek</dc:title>
+      <dc:title>GAR 234</dc:title>
+      <dc:creator>Fijma, P.</dc:creator>
+      <dc:subject xml:lang="en">Archaeology</dc:subject>
+      <dc:description>onderzoeksrapport</dc:description>
+      <dc:publisher>Grontmij</dc:publisher>
+      <dc:date>21/12/05 (veldwerk)</dc:date>
+      <dc:date>2006-12-07</dc:date>
+      <dc:date>2010-01-19</dc:date>
+      <dc:date>2010-01-20</dc:date>
+      <dc:type>Text</dc:type>
+      <dc:identifier>195367 (Grontmij)</dc:identifier>
+      <dc:identifier>Archis onderzoek=17395</dc:identifier>
+      <dc:identifier>ISSN=1573-5710</dc:identifier>
+      <dc:identifier>eDNA-project=a03912</dc:identifier>
+      <dc:identifier>twips.dans.knaw.nl-1714269523666369265-1264018671366</dc:identifier>
+      <dc:identifier>urn:nbn:nl:ui:13-qe6-gem</dc:identifier>
+      <dc:identifier>17395</dc:identifier>
+      <dc:identifier>https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:23176</dc:identifier>
+      <dc:identifier>10.17026/dans-23c-4zne</dc:identifier>
+      <dc:language>nl</dc:language>
+      <dc:relation>Grontmij Archeologische Rapporten</dc:relation>
+      <dc:coverage>45B</dc:coverage>
+      <dc:coverage>Donkerstraat</dc:coverage>
+      <dc:coverage>Neerijnen</dc:coverage>
+      <dc:coverage>Heesselt</dc:coverage>
+      <dc:coverage>east=152920; north=424800; units=m; projection=Dutch National Grid;</dc:coverage>
+      <dc:coverage>&#966;&#955;=51.81182272 5.35704256; projection=http://www.opengis.net/def/crs/EPSG/0/4326; units=decimal; source=RD 152920 424800;</dc:coverage>
+      <dc:rights>GROUP_ACCESS</dc:rights>
+      <dc:rights>http://www.dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSlicenceagreementUK.pdf</dc:rights>
+      <dc:rights>Grontmij</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

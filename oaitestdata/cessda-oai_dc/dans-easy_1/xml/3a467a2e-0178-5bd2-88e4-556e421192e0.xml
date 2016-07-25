@@ -1,0 +1,61 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:60755</identifier>
+    <datestamp>2016-03-22T21:10:05Z</datestamp>
+    <setSpec>D50000</setSpec>
+    <setSpec>D60000</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/dc.xsd">
+      <dc:title>Development of beginning reading: A study in word recognition during the first primary school year.</dc:title>
+      <dc:creator>Terwel, Prof. dr. J. (VU University Amsterdam) DAI=info:eu-repo/dai/nl/069946957</dc:creator>
+      <dc:creator>Oers, Prof.dr. H.J.M. van (VU University Amsterdam) DAI=info:eu-repo/dai/nl/069549702</dc:creator>
+      <dc:creator>Snel, Dr. M.J. (VU University Amsterdam)</dc:creator>
+      <dc:creator>Aarnoutse, Prof.dr. C.A.J. (Radboud University Nijmegen) DAI=info:eu-repo/dai/nl/068959702</dc:creator>
+      <dc:creator>Leeuwe, Dr. J.F.J. van (Radboud University Nijmegen) DAI=info:eu-repo/dai/nl/068790260</dc:creator>
+      <dc:creator>Veld, Dr. W.M. van der (Radboud University Nijmegen)</dc:creator>
+      <dc:subject xml:lang="en">Behavioural sciences</dc:subject>
+      <dc:subject xml:lang="en">Socio-cultural sciences</dc:subject>
+      <dc:subject>beginning reading</dc:subject>
+      <dc:subject>word recognition</dc:subject>
+      <dc:subject>direct instruction (DI)</dc:subject>
+      <dc:subject>guided co-construction (GCC)</dc:subject>
+      <dc:subject>sociocultural background</dc:subject>
+      <dc:subject>primary school</dc:subject>
+      <dc:description>In this dissertation, which is concerned with the development of beginning reading, the following overarching question was formulated: How does word recognition of primary school pupils develop during the first grade with a Direct Instruction (DI) approach and with a Guided Co-Construction (GCC) approach, and which factors influence children&#8217;s beginning reading development? This overarching question implies among other things the following three research questions:
+
+1) Which instructional approach is more effective to stimulate the development of beginning reading  in grade 1: Direct Instruction or Guided Co-Construction?
+2) Which kindergarten pre-literacy skills are important for the development of children&#8217;s word recognition?
+3) And finally, how does word recognition of first grade pupils develop? 
+To answer these questions we have examined the development of word recognition of 178 first grade pupils in a longitudinal study.</dc:description>
+      <dc:date>2015-02-12</dc:date>
+      <dc:date>2015-02-12</dc:date>
+      <dc:date>2015-02-12</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:format>SPSS.sav</dc:format>
+      <dc:format>SPSS.por</dc:format>
+      <dc:format>STATA.dta</dc:format>
+      <dc:identifier>urn:nbn:nl:ui:13-bhft-id</dc:identifier>
+      <dc:identifier>ISBN / EAN 978-90-8928-085-5. http://hdl.handle.net/1871/51755</dc:identifier>
+      <dc:identifier>http://hdl.handle.net/1871/35430 http://dx.doi.org/10.1080/13803611.2012.682803</dc:identifier>
+      <dc:identifier>https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:60755</dc:identifier>
+      <dc:identifier>10.17026/dans-xuk-tbc4</dc:identifier>
+      <dc:source>Snel, M.J. (2014). Development of beginning reading: A study in word recognition during the first primary school year. Doctoral thesis VU University Amsterdam. 
+ISBN / EAN 978-90-8928-085-5. http://hdl.handle.net/1871/51755
+
+Snel, M.J., Terwel, J., Aarnoutse, C.A.J. and van Leeuwe, J.F.J. (2012).
+Effectiveness of guided co-construction versus direct instruction
+for beginning reading instruction, Educational Research and Evaluation,
+18 (4), 353&#8211;374. http://hdl.handle.net/1871/35430
+http://dx.doi.org/10.1080/13803611.2012.682803</dc:source>
+      <dc:language>en</dc:language>
+      <dc:language>nl</dc:language>
+      <dc:relation>title=isReferencedBy: Snel, M.J., Terwel, J., Aarnoutse, C.A.J. and van Leeuwe, J.F.J. (2012). Effectiveness of guided co-construction versus direct instruction for beginning reading instruction, Educational Research and Evaluation, 18 (4), 353&#8211;374. http://hdl.handle.net/1871/35430 http://dx.doi.org/10.1080/13803611.2012.682803; URI=http://hdl.handle.net/1871/35430</dc:relation>
+      <dc:relation>title=isReferencedBy: Snel, M.J. (2014). Development of beginning reading: A study in word recognition during the first primary school year. Doctoral thesis VU University Amsterdam.  ISBN / EAN 978-90-8928-085-5. http://hdl.handle.net/1871/51755; URI=http://hdl.handle.net/1871/51755</dc:relation>
+      <dc:coverage>Netherlands</dc:coverage>
+      <dc:coverage>2006-2015</dc:coverage>
+      <dc:rights>REQUEST_PERMISSION</dc:rights>
+      <dc:rights>http://www.dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSlicenceagreementUK.pdf</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

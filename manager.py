@@ -643,6 +643,7 @@ def process_upload(UP, rlist, options):
                 else:
                     logging.error('        |-> Upload of %s record %s failed ' % (dsstatus, ds_id ))
                     logging.debug('        |-> JSON data :\n\t %s ' % json.dumps(jsondata, indent=2))
+                    results['ecount'] += 1
 
             # update PID in handle server                           
             if (options.handle_check):
@@ -699,7 +700,7 @@ def process_upload(UP, rlist, options):
                 '   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | Failed |\n\t| %8d | %6d | %6d |' 
                 % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
-                    fcount,
+                    results['count'],
                     results['ecount']
                 ))
         
