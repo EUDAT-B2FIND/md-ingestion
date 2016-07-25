@@ -2694,7 +2694,7 @@ class UPLOADER (object):
         logging.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
         for key in extrafields :
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights','SpatialCoverage']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_set','oai_identifier']:
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
