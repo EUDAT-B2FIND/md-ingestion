@@ -485,7 +485,7 @@ def process_upload(UP, rlist, options):
         
 ##HEW-D        if not (CKAN.action('group_show',{"id":community}))['success'] :
         if not community in (CKAN.action('group_list'))['result'] :
-          self.logging.error("[ERROR]: Community (CKAN group) %s must exist!!!" % community)
+          logging.error("[ERROR]: Community (CKAN group) %s must exist!!!" % community)
           sys.exit()
 
         if not os.path.exists(dir):
@@ -743,7 +743,7 @@ def process_delete(OUT, dir, options):
             file_content = f.read()
             f.close()
         except IOError as (errno, strerror):
-            self.logging.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
+            logging.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
             f.close
         else:
             # rename the file in a crash backup file:
