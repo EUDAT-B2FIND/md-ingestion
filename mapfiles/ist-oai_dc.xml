@@ -11,7 +11,7 @@
       <xpath>//dc:title/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>string-join(distinct-values(//dc:description/text()), ' | ')</xpath>
+      <xpath>//dc:description/text()</xpath>
     </field>
     <field name="tags">
       <xpath>//dc:subject/text()</xpath>
@@ -34,7 +34,7 @@
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//dc:date[1]/text()</xpath>
+      <xpath>//dc:date/text()</xpath>
     </field>
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
