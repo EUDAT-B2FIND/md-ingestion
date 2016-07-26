@@ -1252,7 +1252,7 @@ class MAPPER(object):
         dictlist=[]
         valarr=[]
         rm_chars = '(){}<>;\'' ## remoove chars not allowed in CKAN tags
-        repl_chars = ':,=' ## replace chars not allowed in CKAN tags
+        repl_chars = ':,=/' ## replace chars not allowed in CKAN tags
         bad_words = ['and','or','the']
         if isinstance(invalue,dict):
             invalue=invalue.values()
@@ -1267,17 +1267,16 @@ class MAPPER(object):
                     else:
                         valarr=lentry.values()
                 else:
-                    ##valarr=filter(None, re.split(r"([,\!?:;])+",lentry)) ## ['name']))
-                    valarr=re.findall('\[[^\]]*\]|\([^\)]*\)|\"[^\"]*\"|\S+',lentry)
+                    valarr=re.split(r"[&,]+",lentry)
                 for entry in valarr:
-                    entry="". join(c for c in entry if c not in rm_chars)
+                    entry="". join(c for c in entry if c not in rm_chars and not c.isdigit())
                     for c in repl_chars :
                         if c in entry:
                             entry = entry.replace(c,'-')
                     if isinstance(entry,int) or len(entry) < 2 : continue
                     if entry in bad_words : continue
                     entry=entry.encode('utf-8').strip()
-                    dictlist.append({ "name": entry.replace('/','-') })
+                    dictlist.append({ "name": entry })
             except AttributeError, err :
                 logging.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
                 continue
@@ -2000,7 +1999,7 @@ class MAPPER(object):
 
                 ## write to JSON file
                 jsonfilename=os.path.splitext(filename)[0]+'.json'
-
+                
                 with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                     try:
                         logging.debug('   | [INFO] decode json data')
