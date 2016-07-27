@@ -190,5 +190,14 @@
         "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
+    },
+    "OAI set" : {
+        "name" : "oai_set",
+        "description" : "",
+        "ckanName" : "oai_set",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "mandatory"
     }
 }

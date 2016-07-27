@@ -1267,7 +1267,7 @@ class MAPPER(object):
                     else:
                         valarr=lentry.values()
                 else:
-                    valarr=re.split(r"[&,;+]+",lentry)
+                    valarr=re.split(r"[\n&,;+]+",lentry)
                 logging.debug('valarr %s' % valarr)
                 for entry in valarr:
                     if len(entry.split()) > 8 :
@@ -2704,7 +2704,7 @@ class UPLOADER (object):
             if key in jsondata :
                 if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
                     value=';'.join(jsondata[key])
-                elif key in ['oai_set','oai_identifier']:
+                elif key in ['oai_identifier']:
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
                         value=jsondata[key][-1]      
                 else:
@@ -2750,8 +2750,8 @@ class UPLOADER (object):
         ##HEW-D     if(status > 1): status = 1  # set status
             
         # ... OAI Set
-        if('oai_set' in jsondata and ';' in  jsondata['oai_set']):
-            jsondata['oai_set'] = jsondata['oai_set'].split(';')[-1] 
+##HEW-?        if('oai_set' in jsondata and ';' in  jsondata['oai_set']):
+##HEW-?            jsondata['oai_set'] = jsondata['oai_set'].split(';')[-1] 
             
 ##HEW-D             # shrink field fulltext
 ##HEW-D             if('fulltext' in jsondata):
