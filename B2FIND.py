@@ -1267,15 +1267,21 @@ class MAPPER(object):
                     else:
                         valarr=lentry.values()
                 else:
-                    valarr=re.split(r"[&,]+",lentry)
+                    valarr=re.split(r"[&,;+]+",lentry)
+                logging.debug('valarr %s' % valarr)
                 for entry in valarr:
+                    if len(entry.split()) > 8 :
+                        logging.debug('String has too many words : %s' % entry)
+                        continue
                     entry="". join(c for c in entry if c not in rm_chars and not c.isdigit())
                     for c in repl_chars :
                         if c in entry:
                             entry = entry.replace(c,'-')
                     if isinstance(entry,int) or len(entry) < 2 : continue
                     if entry in bad_words : continue
-                    entry=entry.encode('utf-8').strip()
+                    ##HEW-CHG entry=entry.decode('utf-8').strip()
+                    ##HEW-??? 
+                    entry=entry.encode('ascii','ignore').strip()
                     dictlist.append({ "name": entry })
             except AttributeError, err :
                 logging.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
