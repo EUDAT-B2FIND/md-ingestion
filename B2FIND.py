@@ -180,7 +180,7 @@ class CKAN_CLIENT(object):
         # make json data in conformity with URL standards
         encoding='utf-8'
         ##encoding='ISO-8859-15'
-        data_string = urllib.quote(json.dumps(data_dict))##HEW-D??? .decode(encoding)
+        data_string = urllib.quote(json.dumps(data_dict)).decode(encoding)
 
         logging.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
         ##HEW-T logging.debug('\t|-- Object %s ' % data_dict)	
@@ -1155,6 +1155,25 @@ class MAPPER(object):
            logging.error('[ERROR] : %s - in map_spatial invalue %s can not converted !' % (e,invalue))
            return (None,None,None,None,None) 
 
+    def map_checksum(self,invalue):
+        """
+        Filter out md checksum from value list
+ 
+        Copyright (C) 2016 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        if type(invalue) is not list :
+            inlist=re.split(r'[;&\s]\s*',invalue)
+            inlist.append(invalue)
+        else:
+            inlist=invalue
+
+        for inval in inlist: 
+            if re.match("[a-fA-F0-9]{32}",inval) : ## checks for MD5 checksums !!! 
+                return inval  
+
+        return None
+
     def map_discipl(self,invalue,disctab):
         """
         Convert disciplines along B2FIND disciplinary list
@@ -1955,6 +1974,8 @@ class MAPPER(object):
                            iddict = self.map_identifiers(jsondata[facet])
                            if 'DOI' in iddict : 
                                jsondata[facet]=iddict['DOI']
+                       elif facet == 'Checksum':
+                           jsondata[facet] = self.map_checksum(jsondata[facet])
                        elif facet == 'Discipline':
                            jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
                        elif facet == 'Publisher':
@@ -2086,7 +2107,7 @@ class MAPPER(object):
         for value in valuelist:
             if facet in ['title','notes','author','Publisher']:
                 if isinstance(value, str) or isinstance(value, unicode):
-                    vall.append(value) ## .encode("utf-8")) ## HEW-??? "ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
+                    vall.append(value) ## .decode("utf-8") ## HEW-??? "ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
                 else:
                     errlist+=' | %10s | %20s |' % (facet, value[:30])
             elif facet in ['url','DOI','PID']:
@@ -2695,7 +2716,7 @@ class UPLOADER (object):
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
-                    jsondata[key]='\n'.join(list(jsondata[key]))###HEW-??? .encode("iso-8859-1") ### !!! encode to display e.g. 'Umlauts' corectly
+                    jsondata[key]='\n'.join(list(jsondata[key])).encode("iso-8859-1") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly
 
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)

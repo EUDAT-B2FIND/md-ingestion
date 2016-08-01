@@ -131,14 +131,15 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 JSONAPI json
 ##%%% EUDAT B2SHARE
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;

@@ -57,9 +57,9 @@
         "obligation" : "optional"
     },
     "Checksum" : {
-        "name" : "checksum",
+        "name" : "Checksum",
         "description" : "",
-        "ckanName" : "version",
+        "ckanName" : "Checksum",
         "ckanType" : "default",
         "display" : "shown",
         "type" : "url",
