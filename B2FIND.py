@@ -2105,7 +2105,7 @@ class MAPPER(object):
         for value in valuelist:
             if facet in ['title','notes','author','Publisher']:
                 if isinstance(value, str) or isinstance(value, unicode):
-                    vall.append(value.decode("utf-8")) ## HEW-??? "ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
+                    vall.append(value) ##HEW-??? .decode("ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
                 else:
                     errlist+=' | %10s | %20s |' % (facet, value[:30])
             elif facet in ['url','DOI','PID']:
