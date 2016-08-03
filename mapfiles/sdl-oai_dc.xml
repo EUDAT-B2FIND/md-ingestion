@@ -14,29 +14,30 @@
       <xpath>//dc:description/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>//dc:type[1]/text()</xpath>
+      <xpath>//dc:type/text()</xpath>
     </field>
    <!-- Access data  -->
     <field name="url">
       <xpath>//dc:identifier/text()</xpath>
     </field>
     <field name="Checksum">
+      <xpath>//dc:checksum/text()</xpath>      
     </field>
     <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
     </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <xpath><string>"Library and museum studies"</string></xpath>
+      <xpath>//dc:subject/text()</xpath>
     </field>
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dc:source[1]/text(),//dc:publisher/text()</xpath>
+      <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//dc:date[1]/text()</xpath>
+      <xpath>//dc:date/text()</xpath>
     </field>
    <!-- Formal data -->
     <field name="Language">
