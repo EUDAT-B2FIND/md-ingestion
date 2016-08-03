@@ -574,9 +574,7 @@ class HARVESTER(object):
                                                                 
             # Need a new subset?
             if (stats['count'] == count_break):
-                logging.debug('    | %d records written to subset directory %s (if not failed).'% (
-                                stats['count'], subsetdir
-                            ))
+                logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
                 subsetdir, count_set = self.save_subset(
                                 req, stats, subset, subsetdir, count_set)
                                                         
@@ -2107,7 +2105,7 @@ class MAPPER(object):
         for value in valuelist:
             if facet in ['title','notes','author','Publisher']:
                 if isinstance(value, str) or isinstance(value, unicode):
-                    vall.append(value) ## .decode("utf-8") ## HEW-??? "ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
+                    vall.append(value.decode("utf-8")) ## HEW-??? "ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
                 else:
                     errlist+=' | %10s | %20s |' % (facet, value[:30])
             elif facet in ['url','DOI','PID']:
@@ -2714,7 +2712,7 @@ class UPLOADER (object):
             else:
                 logging.debug('    | -- %-25s ' % key)
                 if key in  ["author"] :
-                    jsondata[key]=';'.join(list(jsondata[key]))
+                    jsondata[key]=';'.join(list(jsondata[key])).encode("iso-8859-1") ###HEW160803 : !!! encode to display e.g. 'Umlauts' correctly
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join(list(jsondata[key])).encode("iso-8859-1") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly
 
