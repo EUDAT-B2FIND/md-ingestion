@@ -2781,7 +2781,8 @@ class UPLOADER (object):
             try:
                 datetime.datetime.strptime(jsondata['PublicationYear'][0], '%Y')
             except (ValueError,TypeError) as e:
-                raise Exception("Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear']))
+                logging.debug("%s : Facet %s must be in format YYYY, given valueis : %s" % (e,'PublicationYear',jsondata['PublicationYear']))
+                ##HEW-D raise Exception("Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear']))
                 # delete this field from the jsondata:
                 del jsondata['PublicationYear']
                 
