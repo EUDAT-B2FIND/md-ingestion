@@ -2001,8 +2001,6 @@ class MAPPER(object):
                            publdate=self.date2UTC(jsondata[facet])
                            if publdate:
                                jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
-                           else:
-                               del jsondata[facet]
                        elif facet == 'fulltext':
                            encoding='utf-8'
                            jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
