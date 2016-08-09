@@ -757,7 +757,7 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.ZOEBIS ## Zen
 ##outdated pandata https://icat-10.pandata.stfc.ac.uk/oai/provider  ListIdentifiers oai_qdc
 pandata http://oai.eudat.stfc.ac.uk/oai/provider         ListRecords oai_dc
 ##%%% NARCIS
-narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc dataset
+narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
 ##%%% TheEuropeanLIbrary
 ##     - research related records --> B2FIND !!!

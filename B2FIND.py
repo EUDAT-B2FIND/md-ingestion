@@ -180,7 +180,7 @@ class CKAN_CLIENT(object):
         # make json data in conformity with URL standards
         encoding='utf-8'
         ##encoding='ISO-8859-15'
-        data_string = urllib.quote(json.dumps(data_dict)).decode(encoding)
+        data_string = urllib.quote(json.dumps(data_dict, encoding="latin-1" ))##HEW-D .decode(encoding)
 
         logging.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
         ##HEW-T logging.debug('\t|-- Object %s ' % data_dict)	
@@ -2712,7 +2712,7 @@ class UPLOADER (object):
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key])).encode("iso-8859-1") ###HEW160803 : !!! encode to display e.g. 'Umlauts' correctly
                 elif key in ["title","notes"] :
-                    jsondata[key]='\n'.join(list(jsondata[key])).encode("iso-8859-1") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly
+                    jsondata[key]='\n'.join(list(jsondata[key])).encode("iso-8859-1","ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
 
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)

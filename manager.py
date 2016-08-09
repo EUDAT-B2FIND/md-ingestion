@@ -572,19 +572,23 @@ def process_upload(UP, rlist, options):
             
             jsondata['MetaDataAccess']=mdaccess
 
-            jsondata=UP.json2ckan(jsondata)
+            ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
+
             # determine checksum of json record and append
             try:
                 ##HEW-? checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
                 encoding='utf-8'
-                encoding='ISO-8859-15'
-                checksum=hashlib.md5(json.dumps(jsondata).encode(encoding).strip()).hexdigest()
+                ##HEW-D encoding='ISO-8859-15'
+                ##HEW-D encoding='latin-1'
+                checksum=hashlib.md5(json.dumps(jsondata, encoding="utf-8" ).strip()).hexdigest() ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? ; removed : .encode(encoding,'ignore')
             except UnicodeEncodeError:
                 logging.error('        |-> [ERROR] Unicode encoding failed during md checksum determination')
                 checksum=None
             else:
                 jsondata['version'] = checksum
                 
+            jsondata=UP.json2ckan(jsondata)
+
             # Set the tag ManagerVersion:
             jsondata['extras'].append({
                      "key" : "ManagerVersion",
