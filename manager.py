@@ -572,8 +572,6 @@ def process_upload(UP, rlist, options):
             
             jsondata['MetaDataAccess']=mdaccess
 
-            ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
-
             # determine checksum of json record and append
             try:
                 ##HEW-? checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
@@ -587,6 +585,7 @@ def process_upload(UP, rlist, options):
             else:
                 jsondata['version'] = checksum
                 
+            ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
             jsondata=UP.json2ckan(jsondata)
 
             # Set the tag ManagerVersion:

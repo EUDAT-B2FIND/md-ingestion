@@ -2710,10 +2710,15 @@ class UPLOADER (object):
             else:
                 logging.debug('    | -- %-25s ' % key)
                 if key in  ["author"] :
-                    jsondata[key]=';'.join(list(jsondata[key])).encode("iso-8859-1") ###HEW160803 : !!! encode to display e.g. 'Umlauts' correctly
+                    jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
-                    jsondata[key]='\n'.join(list(jsondata[key])).encode("iso-8859-1","ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
-
+                    jsondata[key]='\n'.join(list(jsondata[key]))
+                if key in ["title","notes","author"] :
+                    try:
+                        jsondata[key]=jsondata[key].encode("iso-8859-1","ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
+                    except UnicodeEncodeError as e :
+                        logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
+                        
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)
         logging.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
