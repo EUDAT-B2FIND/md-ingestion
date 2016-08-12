@@ -180,7 +180,7 @@ class CKAN_CLIENT(object):
         # make json data in conformity with URL standards
         encoding='utf-8'
         ##encoding='ISO-8859-15'
-        data_string = urllib.quote(json.dumps(data_dict, encoding="latin-1" ))##HEW-D .decode(encoding)
+        data_string = urllib.quote(json.dumps(data_dict)) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
 
         logging.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
         ##HEW-T logging.debug('\t|-- Object %s ' % data_dict)	
@@ -538,7 +538,7 @@ class HARVESTER(object):
                     metadata = etree.fromstring(record.raw)
                     if (metadata is not None):
                         metadata = etree.tostring(metadata, pretty_print = True) 
-                        metadata = metadata.encode('ascii', 'ignore')
+                        metadata = metadata.encode('utf-8') ## HEW-D 160811 .encode('ascii', 'ignore')
                         if (not os.path.isdir(subsetdir+'/xml')):
                            os.makedirs(subsetdir+'/xml')
                            
@@ -2027,17 +2027,17 @@ class MAPPER(object):
                 with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                     try:
                         logging.debug('   | [INFO] decode json data')
-                        data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf8') ## needed, else : Cannot write json file ... : must be unicode, not str
+                        data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf-8') ## needed, else : Cannot write json file ... : must be unicode, not str
                     except Exception as e:
                         logging.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
                     try:
                         logging.debug('   | [INFO] save json file')
                         json_file.write(data)
                     except TypeError, err :
-                        logging.error('    | [ERROR] Cannot write json file %s : %s' % (outpath+'/'+filename,err))
+                        logging.error('    | [ERROR] %s : Cannot write data in json file %s ' % (jsonfilename,err))
                     except Exception as e:
                         logging.error('    | [ERROR] %s : Cannot write json file %s' % (e,outpath+'/'+filename))
-                        err+='Cannot write json file %s' % outpath+'/'+filename
+                        err+='Cannot write json file %s' % jsonfilename
                         results['ecount'] += 1
                         continue
             else:
@@ -2715,9 +2715,14 @@ class UPLOADER (object):
                     jsondata[key]='\n'.join(list(jsondata[key]))
                 if key in ["title","notes","author"] :
                     try:
-                        jsondata[key]=jsondata[key].encode("iso-8859-1","ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
+                        jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode("iso-8859-1") ## ,"ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
                     except UnicodeEncodeError as e :
                         logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
+                    try:
+                        jsondata[key]=jsondata[key].decode("utf-8") ## encode("iso-8859-1") ## ,"ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
+                    except UnicodeDecodeError as e :
+                        logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
+
                         
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)

@@ -528,7 +528,7 @@ def process_upload(UP, rlist, options):
             if ( os.path.getsize(pathfname) > 0 ):
                 with open(pathfname, 'r') as f:
                     try:
-                        jsondata=json.loads(f.read())
+                        jsondata=json.loads(f.read(),encoding = 'utf-8')
                     except:
                         logging.error('    | [ERROR] Cannot load the json file %s' % dir+'/json/'+filename)
                         results['ecount'] += 1
