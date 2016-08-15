@@ -180,7 +180,7 @@ class CKAN_CLIENT(object):
         # make json data in conformity with URL standards
         encoding='utf-8'
         ##encoding='ISO-8859-15'
-        data_string = urllib.quote(json.dumps(data_dict)) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+        data_string = urllib.quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
 
         logging.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
         ##HEW-T logging.debug('\t|-- Object %s ' % data_dict)	
@@ -2713,15 +2713,17 @@ class UPLOADER (object):
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join(list(jsondata[key]))
-                if key in ["title","notes","author"] :
+                if key in ["title","author"] :
                     try:
                         jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode("iso-8859-1") ## ,"ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
                     except UnicodeEncodeError as e :
                         logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
                     try:
-                        jsondata[key]=jsondata[key].decode("utf-8") ## encode("iso-8859-1") ## ,"ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
+                        jsondata[key]=jsondata[key] ## .decode("utf-8") ## encode("iso-8859-1") ## ,"ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
                     except UnicodeDecodeError as e :
                         logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
+                    finally:
+                        pass
 
                         
         jsondata['extras']=list()
