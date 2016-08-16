@@ -2097,20 +2097,21 @@ class MAPPER(object):
         checks if value is the consitent for the given facet
         """
         vall=list()
-        errlist=''
         if not isinstance(valuelist,list) : valuelist=[valuelist]
 
         for value in valuelist:
             if facet in ['title','notes','author','Publisher']:
-                if isinstance(value, str) or isinstance(value, unicode):
-                    vall.append(value) ##HEW-??? .decode("ISO-8859-1")) # ashure e.g. display of 'Umlauts' as ö,...
-                else:
-                    errlist+=' | %10s | %20s |' % (facet, value[:30])
-            elif facet in ['url','DOI','PID']:
-                if isinstance(value, str) or isinstance(value, unicode):
-                    vall.append(value)
-                else:
-                    errlist+=' | %10s | %20s |' % (facet, value)
+                if isinstance(value, unicode) :
+                    try:
+                        value=value.decode('utf-8')
+                    except UnicodeEncodeError as e :
+                        logging.debug("%s : Facet %s with value %s" % (e,facet,value))
+                    except Exception as e:
+                        logging.debug('%s : ( %s:%s )' % (e,facet,value))
+                    else:
+                        vall.append(value)
+                    finally:
+                        pass
             elif self.str_equals(facet,'Discipline'):
                 if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
                     errlist+=' | %10s | %20s |' % (facet, value)
@@ -2713,18 +2714,15 @@ class UPLOADER (object):
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join(list(jsondata[key]))
-                if key in ["title","author"] :
+                if key in ["title","author","notes"] : ## HEW-D 1608: removed notes
                     try:
-                        jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode("iso-8859-1") ## ,"ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
+                        jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
                     except UnicodeEncodeError as e :
                         logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
-                    try:
-                        jsondata[key]=jsondata[key] ## .decode("utf-8") ## encode("iso-8859-1") ## ,"ignore") ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? 
-                    except UnicodeDecodeError as e :
-                        logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
+                    except Exception as e:
+                        logging.debug('%s : ( %s:%s )' % (e,key,jsondata[key]))
                     finally:
                         pass
-
                         
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)
