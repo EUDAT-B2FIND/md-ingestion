@@ -1,4 +1,3 @@
-###HEW-??? # -*- coding: iso-8859-15 -*-
 """B2FIND.py - classes for B2FIND management : 
   - CKAN_CLIENT  executes CKAN APIs (interface to CKAN)
   - HARVESTER    harvests from a OAI-PMH server
@@ -31,6 +30,7 @@ import time, datetime, subprocess
 
 # program relevant modules:
 import logging
+### logger = logging.getLogger('root')
 import traceback
 import re
 
@@ -93,7 +93,7 @@ class CKAN_CLIENT(object):
     def __init__ (self, ip_host, api_key):
 	    self.ip_host = ip_host
 	    self.api_key = api_key
-	    self.logger = logging.getLogger()
+	    self.logger = logging.getLogger('root')
 	
     def validate_actionname(self,action):
         return True
@@ -182,7 +182,7 @@ class CKAN_CLIENT(object):
         ##encoding='ISO-8859-15'
         data_string = urllib.quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
 
-        logging.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
+        self.logger.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
         ##HEW-T logging.debug('\t|-- Object %s ' % data_dict)	
         try:
             request = urllib2.Request(action_url)
@@ -191,19 +191,19 @@ class CKAN_CLIENT(object):
         except urllib2.HTTPError as e:
             logging.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
-                logging.error('\tAccess forbidden, maybe the API key is not valid?')
+                self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                logging.debug('\tMaybe the dataset already exists => try to update the package')
+                self.logger.debug('\tMaybe the dataset already exists => try to update the package')
                 self.action('package_update',data_dict)
             elif ( e.code == 409):
-                logging.debug('\tMaybe you have a parameter error?')
+                self.logger.debug('\tMaybe you have a parameter error?')
                 return {"success" : False}
             elif ( e.code == 500):
-                logging.error('\tInternal server error')
+                self.logger.error('\tInternal server error')
                 exit(e.code)
         except urllib2.URLError as e:
-            logging.error('\tURLError %s : %s' % (e,e.reason))
+            self.logger.error('\tURLError %s : %s' % (e,e.reason))
             exit('%s' % e.reason)
         else :
             out = json.loads(response.read())
@@ -252,7 +252,7 @@ class HARVESTER(object):
     """
     
     def __init__ (self, OUT, pstat, base_outdir, fromdate):
-        logger = logging.getLogger()
+        self.logger = logging.getLogger('root')
         self.pstat = pstat
         self.OUT = OUT
         self.base_outdir = base_outdir
@@ -407,10 +407,10 @@ class HARVESTER(object):
                     choffset+=100
                     chunk =oaireq(**{'action':'dataset','offset':choffset,'key':None})
             except urllib2.HTTPError as e:
-                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                self.logger.critical("%s : Cannot harvest through request %s\n" % (e,req))
                 return -1
             except ConnectionError as e:
-                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                self.logger.critical("%s : Cannot harvest through request %s\n" % (e,req))
                 return -1
             except Exception, e:
                 logging.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
@@ -426,21 +426,21 @@ class HARVESTER(object):
             try:
                 records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
             except urllib2.HTTPError as e:
-                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                self.logger.critical("%s : during harvest request %s\n" % (e,req))
                 return -1
             except ConnectionError as e:
-                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                self.logger.critical("%s : during harvest request %s\n" % (e,req))
                 return -1
             except etree.XMLSyntaxError as e:
-                logging.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
+                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
                 return -1
             except Exception, e:
-                logging.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
                 return -1
 
             ntotrecs=sum(1 for _ in rc)
 
-        logging.info("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
+        print "\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start)
         
         # Add all uid's to the related subset entry of the dictionary deleted_metadata
         deleted_metadata = dict()
@@ -537,8 +537,15 @@ class HARVESTER(object):
                     # get the raw xml content:    
                     metadata = etree.fromstring(record.raw)
                     if (metadata is not None):
-                        metadata = etree.tostring(metadata, pretty_print = True) 
-                        metadata = metadata.encode('utf-8') ## HEW-D 160811 .encode('ascii', 'ignore')
+                        try:
+                            metadata = etree.tostring(metadata, pretty_print = True)
+                        except Exception as e:
+                            self.logger.debug('%s : Metadata: %s ...' % (e,metadata[:20]))
+                        try:
+                            metadata = metadata.encode('utf-8')
+                        except (Exception,UnicodeEncodeError) as e :
+                            self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
+
                         if (not os.path.isdir(subsetdir+'/xml')):
                            os.makedirs(subsetdir+'/xml')
                            
@@ -670,14 +677,12 @@ class HARVESTER(object):
         for key in ['tcount', 'ecount', 'count', 'dcount']:
                 stats['tot'+key] += stats[key]
             
-        logging.info(
-                '   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' 
-                % ( 'Finished',time.strftime("%H:%M:%S"),
+        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     stats['tottcount'],
                     stats['totcount'],
                     stats['totecount'],
                     stats['totdcount']
-                ))
+                )
 
         # save the current subset:
         if (stats['count'] > 0):
@@ -748,7 +753,7 @@ class MAPPER(object):
     def __init__ (self, OUT):
         ##HEW-D logging = logging.getLogger()
         self.OUT = OUT
-        
+        self.logger = logging.getLogger('root')
         # Read in B2FIND metadata schema and fields
         schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
         with open(schemafile, 'r') as f:
@@ -898,7 +903,7 @@ class MAPPER(object):
             iddict=dict()
 
             for id in invalue :
-                logging.debug('[DEBUG] id\t%s' % id)
+                self.logger.debug(' id\t%s' % id)
                 if id.startswith('http://data.theeuropeanlibrary'):
                     iddict['url']=id
                 elif id.startswith('ivo:'):
@@ -917,16 +922,16 @@ class MAPPER(object):
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
                 elif 'http:' in id or 'https:' in id:
-                    logging.debug('[DEBUG] id\t%s' % id)
+                    self.logger.debug(' id\t%s' % id)
                     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
                     if reurl :
                         iddict['url'] = reurl.group("url")
 
         except Exception, e:
-            logging.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
+            self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
-            logging.debug('[DEBUG] iddict\t%s' % iddict)
+            self.logger.debug(' iddict\t%s' % iddict)
             return iddict
 
     def map_lang(self, invalue):
@@ -1206,14 +1211,14 @@ class MAPPER(object):
                  maxr=r
                  ##HEW-T                 print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
            if maxr == 1 and indisc == maxdisc :
-               logging.debug('  | Perfect match of %s : nothing to do' % indisc)
+               self.logger.info('  | Perfect match of %s : nothing to do' % indisc)
                retval.append(indisc.strip())
            elif maxr > 0.90 :
-               logging.debug('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
+               self.logger.info('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
                ##return maxdisc
                retval.append(indisc.strip())
            else:
-               logging.debug('   | Similarity ratio %f is < 0.90 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
+               self.logger.debug('   | Similarity ratio %f is < 0.90 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
                continue
 
         if len(retval) > 0:
@@ -1285,7 +1290,7 @@ class MAPPER(object):
                         valarr=lentry.values()
                 else:
                     valarr=re.split(r"[\n&,;+]+",lentry)
-                logging.debug('valarr %s' % valarr)
+                self.logger.debug('valarr %s' % valarr)
                 for entry in valarr:
                     if len(entry.split()) > 8 :
                         logging.debug('String has too many words : %s' % entry)
@@ -1717,7 +1722,7 @@ class MAPPER(object):
             else:
                 pass
           except Exception as e:
-            logging.error(" [ERROR] %s : perform %s for facet %s with invalue %s and new_value %s" % (e,action,facetName,old_value,new_value))
+            self.logger.error(" [ERROR] %s : perform %s for facet %s with invalue %s and new_value %s" % (e,action,facetName,old_value,new_value))
             continue
 
         return dataset
@@ -1847,9 +1852,9 @@ class MAPPER(object):
         if not os.path.isfile(mapfile):
             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
             if not os.path.isfile(mapfile):
-                logging.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+                self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
                 return results
-        logging.debug('  |- Mapfile\t%s' % os.path.basename(mapfile))
+        self.logger.debug('  |- Mapfile\t%s' % os.path.basename(mapfile))
         mf = codecs.open(mapfile, "r", "utf-8")
         maprules = mf.readlines()
         maprules = filter(lambda x:len(x) != 0,maprules) # removes empty lines
@@ -1861,7 +1866,7 @@ class MAPPER(object):
             if ns:
                 namespaces[ns.group(3)]=ns.group(5)
                 continue
-        logging.debug('  |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
+        self.logger.debug('  |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
 
         # check specific postproc mapping config file
         subset=os.path.basename(path).split('_')[0]
@@ -1892,7 +1897,7 @@ class MAPPER(object):
         fcount = 0
         oldperc=0
         err = None
-        logging.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
+        self.logger.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
         
         ## start processing loop
         start = time.time()
@@ -1903,7 +1908,7 @@ class MAPPER(object):
             bartags=perc/5
             if perc%10 == 0 and perc != oldperc:
                 oldperc=perc
-                logging.info("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                self.logger.debug("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             jsondata = dict()
@@ -1918,13 +1923,13 @@ class MAPPER(object):
                         else:
                             xmldata= ET.parse(infilepath)
                     except Exception as e:
-                        logging.error('    | [ERROR] %s : Cannot load or parse %s-file %s' % (e,infformat,infilepath))
+                        self.logger.error('    | [ERROR] %s : Cannot load or parse %s-file %s' % (e,infformat,infilepath))
                         results['ecount'] += 1
                         continue
                 ## XPATH rsp. JPATH converter
                 if  mdprefix == 'json':
                     try:
-                        logging.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s%s/%s' % (time.strftime("%H:%M:%S"),infformat,os.path.basename(path),insubdir,filename))
+                        self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s%s/%s' % (time.strftime("%H:%M:%S"),infformat,os.path.basename(path),insubdir,filename))
                         jsondata=self.jsonmdmapper(jsondata,maprules)
                     except Exception as e:
                         logging.error('    | [ERROR] %s : during %s 2 json processing' % (infformat,e) )
@@ -1956,7 +1961,7 @@ class MAPPER(object):
                 publdate=None
                 # loop over all fields
                 for facet in jsondata:
-                   logging.debug('facet %s ...' % facet)
+                   self.logger.debug('Maping of facet %s ...' % facet)
                    try:
                        if facet == 'author':
                            jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1),';')
@@ -2026,17 +2031,17 @@ class MAPPER(object):
                 
                 with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                     try:
-                        logging.debug('   | [INFO] decode json data')
+                        self.logger.debug('decode json data')
                         data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf-8') ## needed, else : Cannot write json file ... : must be unicode, not str
                     except Exception as e:
-                        logging.error('    | [ERROR] %s : Cannot decode jsondata %s' % (e,jsondata))
+                        self.logger.error('%s : Cannot decode jsondata %s' % (e,jsondata))
                     try:
-                        logging.debug('   | [INFO] save json file')
+                        self.logger.debug('Save json file')
                         json_file.write(data)
                     except TypeError, err :
-                        logging.error('    | [ERROR] %s : Cannot write data in json file %s ' % (jsonfilename,err))
+                        self.logger.error(' %s : Cannot write data in json file %s ' % (jsonfilename,err))
                     except Exception as e:
-                        logging.error('    | [ERROR] %s : Cannot write json file %s' % (e,outpath+'/'+filename))
+                        self.logger.error(' %s : Cannot write json file %s' % (e,outpath+'/'+filename))
                         err+='Cannot write json file %s' % jsonfilename
                         results['ecount'] += 1
                         continue
@@ -2048,13 +2053,11 @@ class MAPPER(object):
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
         if (err is not None ): logging.error('[ERROR] ' + err)
 
-        logging.info(
-                '   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' 
-                % ( 'Finished',time.strftime("%H:%M:%S"),
+        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,
                     results['ecount']
-                ))
+                )
 
         # search in output for result statistics
         last_line = out.split('\n')[-2]
@@ -2103,11 +2106,12 @@ class MAPPER(object):
             if facet in ['title','notes','author','Publisher']:
                 if isinstance(value, unicode) :
                     try:
-                        value=value.decode('utf-8')
+                        ## value=value.decode('utf-8')
+                        value=value.encode("iso-8859-1")
                     except UnicodeEncodeError as e :
-                        logging.debug("%s : Facet %s with value %s" % (e,facet,value))
+                        self.logger.error("%s : Facet %s with value %s" % (e,facet,value))
                     except Exception as e:
-                        logging.debug('%s : ( %s:%s )' % (e,facet,value))
+                        logging.error('%s : ( %s:%s )' % (e,facet,value))
                     else:
                         vall.append(value)
                     finally:
@@ -2182,16 +2186,16 @@ class MAPPER(object):
         if not os.path.isfile(mapfile):
            mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
            if not os.path.isfile(mapfile):
-              logging.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+              logger.error('Mapfile %s does not exist !' % mapfile)
               return results
         mf=open(mapfile) 
 
         # check paths
         if not os.path.exists(path):
-            logging.error('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            logger.error('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
-            logging.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
             return results
     
         # find all .json files in path/json:
@@ -2199,11 +2203,11 @@ class MAPPER(object):
         results['tcount'] = len(files)
         oaiset=path.split(mdprefix)[1].strip('/')
         
-        logging.debug(' %s     INFO  Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
+        self.logger.info(' %s Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
         if results['tcount'] == 0 :
             logging.error(' ERROR : Found no files to validate !')
             return results
-        logging.debug('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
+        self.logger.info('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
         totstats=dict()
         for facetdict in self.b2findfields.values() :
@@ -2232,11 +2236,11 @@ class MAPPER(object):
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                logging.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                self.logger.debug("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             jsondata = dict()
-            logging.debug('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
+            self.logger.info('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
 
             if ( os.path.getsize(path+'/json/'+filename) > 0 ):
                 with open(path+'/json/'+filename, 'r') as f:
@@ -2262,7 +2266,7 @@ class MAPPER(object):
                   if value:
                         totstats[facet]['mapped']+=1
                         pvalue=self.is_valid_value(facet,value)
-                        logging.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
+                        self.logger.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
                         if pvalue and len(pvalue) > 0:
                             totstats[facet]['valid']+=1  
                             if type(pvalue) is list :
@@ -2273,9 +2277,9 @@ class MAPPER(object):
                             totstats[facet]['vstat']=[]  
                   else:
                         if facet == 'title':
-                           logging.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
+                           self.logger.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
             except IOError, e:
-                logging.error("[ERROR] %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
+                self.logger.error(" %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
                 exit()
 
         outfile='%s/%s' % (path,'validation.stat')
@@ -2296,7 +2300,7 @@ class MAPPER(object):
                     counter=collections.Counter(totstats[facet]['vstat'])
                     if totstats[facet]['vstat']:
                         for tuple in counter.most_common(10):
-                            ucvalue=tuple[0].encode('utf8')
+                            ucvalue=tuple[0]##HEW-D .encode('utf8')
                             if len(ucvalue) > 80 :
                                 restchar=len(ucvalue)-80
                                 contt='[...(%d chars follow)...]' % restchar 
@@ -2305,13 +2309,13 @@ class MAPPER(object):
                             ##HEW-D?? printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
                             printstats+="      |- {:<5d} : {:<30s}{:<5s} |\n".format(tuple[1],ucvalue[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
                 except TypeError as e:
-                    logging.error('    [ERROR] TypeError: %s facet %s' % (e,facet))
+                    self.logger.error('%s : facet %s' % (e,facet))
                     continue
                 except Exception as e:
-                    logging.error('    [ERROR] %s : facet %s, value %s' % (e,facet,ucvalue))
+                    self.logger.error('%s : facet %s' % (e,facet))
                     continue
 
-        if self.OUT.verbose > 1:
+        if self.OUT.verbose > 2:
             print printstats
 
         f = open(outfile, 'w')
@@ -2324,13 +2328,11 @@ class MAPPER(object):
         # count ... all .json files in path/json
         results['count'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path)))
 
-        logging.info(
-                '   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' 
-                % ( 'Finished',time.strftime("%H:%M:%S"),
+        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,
                     results['ecount']
-                ))
+                )
 
         return results
 
@@ -2531,17 +2533,15 @@ class MAPPER(object):
 
         # count ... all .xml files in path/b2find
         results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(outpath)))
-        logging.info(
-                '   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' 
-                % ( 'Finished',time.strftime("%H:%M:%S"),
+        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,
                     results['ecount']
-                ))
+                )
     
         return results    
 
-class UPLOADER (object):
+class UPLOADER(object):
 
     """
     ### UPLOADER - class
@@ -2593,7 +2593,8 @@ class UPLOADER (object):
         ##HEW-D logging = logging.getLogger()
         self.CKAN = CKAN
         self.OUT = OUT
-        
+        self.logger = logging.getLogger('root')        
+
         self.package_list = dict()
 
         # Read in B2FIND metadata schema and fields
@@ -2623,7 +2624,7 @@ class UPLOADER (object):
         # None   
     
         pstart = time.time()
-        logging.debug(' Remove all packages from and purge list %s ... ' % community)
+        self.logger.debug(' Remove all packages from and purge list %s ... ' % community)
 
         result = (self.CKAN.action('group_purge',{"id":community}))
         print 'result %s' % result
@@ -2646,7 +2647,7 @@ class UPLOADER (object):
         # None   
     
         pstart = time.time()
-        logging.debug(' Get all package names from community %s... ' % community)
+        self.logger.debug(' Get all package names from community %s... ' % community)
 
         # get the full package list from a community in CKAN:
         query='"groups:'+community+'"'
@@ -2682,7 +2683,7 @@ class UPLOADER (object):
         # None   
     
         pstart = time.time()
-        logging.debug(' Get all package names from community %s... ' % community)
+        self.logger.debug(' Get all package names from community %s... ' % community)
 
         # get the full package list from a community in CKAN:
         community_packages = (self.CKAN.action('group_show',{"id":community}))['result']['packages']
@@ -2704,29 +2705,32 @@ class UPLOADER (object):
     def json2ckan(self, jsondata):
         ## json2ckan(UPLOADER object, json data) - method
         ##  converts flat JSON structure to CKAN JSON record with extra fields
-        logging.debug('    | Adapt default fields for upload to CKAN')
+        self.logger.debug('    | Adapt default fields for upload to CKAN')
         for key in self.ckandeffields :
             if key not in jsondata:
-                logging.debug('[WARNING] : CKAN default key %s does not exist' % key)
+                self.logger.debug('[WARNING] : CKAN default key %s does not exist' % key)
             else:
-                logging.debug('    | -- %-25s ' % key)
+                self.logger.debug('    | -- %-25s ' % key)
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join(list(jsondata[key]))
                 if key in ["title","author","notes"] : ## HEW-D 1608: removed notes
                     try:
+                        self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
+                        ## jsondata[key]=jsondata[key].decode("utf-8") ## encode to display e.g. 'Umlauts' correctly 
                         jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
+                        self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
                     except UnicodeEncodeError as e :
-                        logging.debug("%s : Facet %s with value %s" % (e,key,jsondata[key]))
+                        self.logger.error("%s : Facet %s with value %s" % (e,key,jsondata[key]))
                     except Exception as e:
-                        logging.debug('%s : ( %s:%s )' % (e,key,jsondata[key]))
+                        self.logger.error('%s : ( %s:%s )' % (e,key,jsondata[key]))
                     finally:
                         pass
                         
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)
-        logging.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
+        self.logger.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
         for key in extrafields :
             if key in jsondata :
                 if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
@@ -2741,9 +2745,9 @@ class UPLOADER (object):
                      "value" : value
                 })
                 del jsondata[key]
-                logging.debug('    | %-20s | %-25s' % (key,value))
+                self.logger.debug('    | %-20s | %-25s' % (key,value))
             else:
-                logging.debug('[WARNING] : No data for key %s ' % key)
+                self.logger.info('No data for key %s ' % key)
 
         return jsondata
 
@@ -2791,7 +2795,7 @@ class UPLOADER (object):
             try:
                 datetime.datetime.strptime(jsondata['PublicationYear'][0], '%Y')
             except (ValueError,TypeError) as e:
-                logging.debug("%s : Facet %s must be in format YYYY, given valueis : %s" % (e,'PublicationYear',jsondata['PublicationYear']))
+                self.logger.debug("%s : Facet %s must be in format YYYY, given valueis : %s" % (e,'PublicationYear',jsondata['PublicationYear']))
                 ##HEW-D raise Exception("Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear']))
                 # delete this field from the jsondata:
                 del jsondata['PublicationYear']
@@ -2840,13 +2844,13 @@ class UPLOADER (object):
    
         # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
         if (dsstatus == 'new' or dsstatus == 'unknown') :
-            logging.debug('\t - Try to create dataset %s' % ds)
+            self.logger.debug('\t - Try to create dataset %s' % ds)
             
             results = self.CKAN.action('package_create',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
-                logging.debug('\t - Creation failed. Try to update instead.')
+                self.logger.debug('\t - Creation failed. Try to update instead.')
                 results = self.CKAN.action('package_update',jsondata)
                 if (results and results['success']):
                     rvalue = 2
@@ -2855,13 +2859,13 @@ class UPLOADER (object):
         
         # if the dsstatus is 'changed' then update it with package_update:
         elif (dsstatus == 'changed'):
-            logging.debug('\t - Try to update dataset %s' % ds)
+            self.logger.debug('\t - Try to update dataset %s' % ds)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 2
             else:
-                logging.debug('\t - Update failed. Try to create instead.')
+                self.logger.debug('\t - Update failed. Try to create instead.')
                 results = self.CKAN.action('package_create',jsondata)
                 if (results and results['success']):
                     rvalue = 1
@@ -2900,13 +2904,13 @@ class UPLOADER (object):
    
         # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
         if (dsstatus == 'new' or dsstatus == 'unknown') :
-            logging.debug('\t - Try to create dataset %s' % ds)
+            self.logger.debug('\t - Try to create dataset %s' % ds)
             
             results = self.CKAN.action('package_create',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
-                logging.debug('\t - Creation failed. Try to update instead.')
+                self.logger.debug('\t - Creation failed. Try to update instead.')
                 results = self.CKAN.action('package_update',jsondata)
                 if (results and results['success']):
                     rvalue = 2
@@ -2915,13 +2919,13 @@ class UPLOADER (object):
         
         # if the dsstatus is 'changed' then update it with package_update:
         elif (dsstatus == 'changed'):
-            logging.debug('\t - Try to update dataset %s' % ds)
+            self.logger.debug('\t - Try to update dataset %s' % ds)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 2
             else:
-                logging.debug('\t - Update failed. Try to create instead.')
+                self.logger.debug('\t - Update failed. Try to create instead.')
                 results = self.CKAN.action('package_create',jsondata)
                 if (results and results['success']):
                     rvalue = 1
@@ -2954,13 +2958,13 @@ class UPLOADER (object):
    
         # if the dataset exists set it to status deleted in CKAN:
         if (not dsstatus == 'new'):
-            logging.debug('\t - Try to set dataset %s on status deleted' % dsname)
+            self.logger.debug('\t - Try to set dataset %s on status deleted' % dsname)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
-                logging.debug('\t - Deletion failed. Maybe dataset already removed.')
+                self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
         
         return rvalue
     
@@ -3105,8 +3109,8 @@ class OUTPUT(object):
             }
             
         # create the logger and start it:
-        ##HEW-D!!! self.start_logger()
-        
+        ##HEW-CHG!!! self.start_logger()
+        self.logger = logging.getLogger('root')        
         self.table_code = ''
         self.details_code = ''
     
@@ -3123,7 +3127,7 @@ class OUTPUT(object):
         # --------------
         # None
     
-        logger = logging.getLogger()
+        logger = logging.getLogger('root')
         logger.setLevel(logging.DEBUG)
         
         # create file handler which logs even debug messages
@@ -3420,7 +3424,7 @@ class OUTPUT(object):
         for proc in pstat['status']:
             if (pstat['status'][proc] == 'tbd' and proc != 'a') :
                 reshtml.write('\t\t\t<li>%s</li>\n' %  (pstat['text'][proc]))
-                logging.debug('  %d. %s' % (i,pstat['text'][proc]))
+                self.logger.debug('  %d. %s' % (i,pstat['text'][proc]))
                 i+=1
                 
         reshtml.write('\t\t</ol>\n')
