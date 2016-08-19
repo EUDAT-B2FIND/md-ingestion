@@ -23,6 +23,7 @@
     <field name="Checksum">
     </field>
     <field name="Rights">
+      <xpath>//cmd:Access/cmd:Description/text()</xpath>
     </field>
    <!-- Provenance data -->
     <field name="Discipline">
@@ -42,11 +43,16 @@
       <xpath>//cmd:Language/cmd:LanguageName,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Content_Languages/cmd:Content_Language/cmd:Name/text()</xpath>
     </field>
     <field name="SpatialCoverage">
+      <xpath>//cmd:Location/cmd:Region/text()</xpath>
     </field>
     <field name="TemporalCoverage">
+      <xpath>//cmd:TimePosition/cmd:Start/text(),//cmd:TimePosition/cmd:End/text()</xpath>
     </field>
     <field name="Format">
       <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:Format/text()</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//cmd:Contact/cmd:Name/text()</xpath>
     </field>
    <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
