@@ -1908,7 +1908,7 @@ class MAPPER(object):
             bartags=perc/5
             if perc%10 == 0 and perc != oldperc:
                 oldperc=perc
-                self.logger.debug("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
                 sys.stdout.flush()
 
             jsondata = dict()
@@ -2107,15 +2107,16 @@ class MAPPER(object):
                 if isinstance(value, unicode) :
                     try:
                         ## value=value.decode('utf-8')
-                        value=value.encode("iso-8859-1")
-                    except UnicodeEncodeError as e :
-                        self.logger.error("%s : Facet %s with value %s" % (e,facet,value))
-                    except Exception as e:
-                        logging.error('%s : ( %s:%s )' % (e,facet,value))
-                    else:
+                        cvalue=value.encode("iso-8859-1")
+                    except (Exception,UnicodeEncodeError) as e :
                         vall.append(value)
+                        self.logger.error("%s : { %s:%s }" % (e,facet,value))
+                    else:
+                        vall.append(cvalue)
                     finally:
                         pass
+                else:
+                   vall.append(value) 
             elif self.str_equals(facet,'Discipline'):
                 if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
                     errlist+=' | %10s | %20s |' % (facet, value)
@@ -2263,6 +2264,7 @@ class MAPPER(object):
                   value = None
                   if facet in jsondata:
                         value = jsondata[facet]
+                  self.logger.warning('facet:value : %s:%s' % (facet,value))
                   if value:
                         totstats[facet]['mapped']+=1
                         pvalue=self.is_valid_value(facet,value)
