@@ -43,16 +43,16 @@ def setup_custom_logger(name,verbose):
     log_format='%(levelname)s :  %(message)s'
     log_level=logging.CRITICAL
     if verbose == 1 :
-        log_format='%(asctime)s - %(levelname)s : %(message)s'
+        log_format='%(levelname)s in  %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
         log_level=logging.ERROR
     elif  verbose == 2 :
-        log_format=' --> %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
+        log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
         log_level=logging.WARNING
     elif verbose == 3 :
-        log_format=' %(msecs)d s --> %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
+        log_format='%(levelname)s at %(asctime)s in L %(lineno)s : %(message)s'
         log_level=logging.INFO
     elif verbose > 3 :
-        log_format=' %(msecs)d s --> %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
+        log_format='%(levelname)s at %(asctime)s %(msecs)d in L %(lineno)s : %(message)s'
         log_level=logging.DEBUG
 
 
