@@ -574,7 +574,7 @@ def process_upload(UP, rlist, options):
             # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
-            logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
+            logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
 
             # get OAI identifier from json data extra field 'oai_identifier':
             oai_id = jsondata['oai_identifier'][0]
@@ -687,24 +687,24 @@ def process_upload(UP, rlist, options):
                     logger.debug(" Upload of %s returns with upload code %s" % (ds_id,upload))
 
                 if (upload == 1):
-                    logger.info('        |-> Creation of %s record succeed' % dsstatus )
+                    logger.warning('        |-> Creation of %s record succeed' % dsstatus )
                 elif (upload == 2):
-                    logger.info('        |-> Update of %s record succeed' % dsstatus )
+                    logger.warning('        |-> Update of %s record succeed' % dsstatus )
                     upload=1
                 else:
-                    logger.error('        |-> Upload of %s record %s failed ' % (dsstatus, ds_id ))
+                    logger.error('        |-> Failed upload of %s record' % (dsstatus, ds_id ))
                     ## logger.debug('        |-> JSON data:\n\ttitle:%s\n\tauthor:%s\n\tnotes:%s\n' % (json.dumps(jsondata['title'], indent=2),json.dumps(jsondata['author'], indent=2),json.dumps(jsondata['notes'], indent=2)))
                     results['ecount'] += 1
 
             # update PID in handle server                           
             if (options.handle_check):
                 if (handlestatus == "unchanged"):
-                    logging.info("        |-> No action required for %s" % pid)
+                    logging.warning("        |-> No action required for %s" % pid)
                 else:
                     if (upload >= 1): # new or changed record
                         ckands='http://b2find.eudat.eu/dataset/'+ds_id
                         if (handlestatus == "new"): # Create new PID
-                            logging.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                            logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                             try:
                                 npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
                             except (HandleAuthenticationError,HandleSyntaxError) as err :
@@ -715,7 +715,7 @@ def process_upload(UP, rlist, options):
                             else:
                                 logger.debug(" New handle %s with checksum %s created" % (pid,checksum))
                         else: # PID changed => update URL and checksum
-                            logging.info("        |-> Update handle %s with changed checksum %s" % (pid,checksum))
+                            logging.warning("        |-> Update handle %s with changed checksum %s" % (pid,checksum))
                             try:
                                 client.modify_handle_value(pid,CHECKSUM=checksum,URL=ckands) ##HEW-T !!! as long as URLs not all updated !!
                                 ##client.modify_handle_value(pid,CHECKSUM=checksum)
