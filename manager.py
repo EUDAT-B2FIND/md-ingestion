@@ -647,23 +647,26 @@ def process_upload(UP, rlist, options):
                 else:
                     logger.debug("Retrieved PID %s" % pid )
 
-                for pidAttr in ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
-                    try:
-                        pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
-                    except Exception, err:
-                        logger.error("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) )
-                    else:
-                        logger.debug("Got pidRecord[%s]:%s from PID %s" % (pidRecord[pidAttr],pidAttr,pid))
+                if rec : ## Handle exists
+                    for pidAttr in ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
+                        try:
+                            pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
+                        except Exception, err:
+                            logger.error("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) )
+                        else:
+                            logger.debug("Got pidRecord[%s]:%s from PID %s" % (pidRecord[pidAttr],pidAttr,pid))
 
-                if (pidRecord["CHECKSUM"] == None):
-                    logger.debug("        |-> Can not access pid %s to get checksum" % pid)
-                    handlestatus="new"
-                elif ( checksum == pidRecord["CHECKSUM"]) and ( pidRecord["JMDVERSION"] == ManagerVersion ) and ( pidRecord["B2FINDHOST"] == options.iphost ) :
-                    logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
-                    handlestatus="unchanged"
+                        if (pidRecord["CHECKSUM"] == None):
+                            logger.debug("        |-> Can not access pid %s to get checksum" % pid)
+                            handlestatus="new"
+                        elif ( checksum == pidRecord["CHECKSUM"]) and ( pidRecord["JMDVERSION"] == ManagerVersion ) and ( pidRecord["B2FINDHOST"] == options.iphost ) :
+                            logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
+                            handlestatus="unchanged"
+                        else:
+                            logger.debug("        |-> checksum, ManagerVersion or B2FIND host of pid %s changed" % (pid))
+                            handlestatus="changed"
                 else:
-                    logger.debug("        |-> checksum, ManagerVersion or B2FIND host of pid %s changed" % (pid))
-                    handlestatus="changed"
+                    handlestatus="new"
                 dsstatus=handlestatus
 
             # check against CKAN database
