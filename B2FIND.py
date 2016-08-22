@@ -2718,17 +2718,17 @@ class UPLOADER(object):
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join(list(jsondata[key]))
                 if key in ["title","author","notes"] : ## HEW-D 1608: removed notes
-                    try:
-                        self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
-                        ## jsondata[key]=jsondata[key].decode("utf-8") ## encode to display e.g. 'Umlauts' correctly 
-                        jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
-                        self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
-                    except UnicodeEncodeError as e :
-                        self.logger.error("%s : Facet %s with value %s" % (e,key,jsondata[key]))
-                    except Exception as e:
-                        self.logger.error('%s : ( %s:%s )' % (e,key,jsondata[key]))
-                    finally:
-                        pass
+                    if jsondata['group'] == 'b2share' :
+                        try:
+                            self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
+                            jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
+                            self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
+                        except UnicodeEncodeError as e :
+                            self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key][20]))
+                        except Exception as e:
+                            self.logger.error('%s : ( %s:%s[...] )' % (e,key,jsondata[key[20]]))
+                        finally:
+                            pass
                         
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)
