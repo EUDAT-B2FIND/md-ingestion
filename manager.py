@@ -554,7 +554,7 @@ def process_upload(UP, rlist, options):
             bartags=perc/5
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                logger.info("\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc ))
+                print "\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc )
                 sys.stdout.flush()
 
             jsondata = dict()
@@ -605,6 +605,7 @@ def process_upload(UP, rlist, options):
             ## Move all CKAN extra fields to the list jsondata['extras']
             
             jsondata['MetaDataAccess']=mdaccess
+            jsondata['group']=community
 
             ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
             jsondata=UP.json2ckan(jsondata)
@@ -615,7 +616,7 @@ def process_upload(UP, rlist, options):
                 encoding='utf-8'
                 ##HEW-D encoding='ISO-8859-15'
                 ##HEW-D encoding='latin-1'
-                checksum=hashlib.md5(json.dumps(jsondata, encoding="utf-8" ).strip()).hexdigest() ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? ; removed : .encode(encoding,'ignore')
+                checksum=hashlib.md5(json.dumps(jsondata, encoding='latin1').strip()).hexdigest() ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? ; removed : .encode(encoding,'ignore')
             except UnicodeEncodeError:
                 logger.error('        |-> Unicode encoding failed during md checksum determination')
                 checksum=None
@@ -635,23 +636,29 @@ def process_upload(UP, rlist, options):
      
             # check against handle server
             handlestatus="unknown"
-            checksum2=None
+            pidRecord=dict()
             if (options.handle_check):
+
                 try:
-                    ##HEW-D pid = "11098/eudat-jmd_" + ds_id ##HEW?? 
                     pid = cred.get_prefix() + '/eudat-jmd_' + ds_id 
                     rec = client.retrieve_handle_record_json(pid)
-                    checksum2 = client.get_value_from_handle(pid, "CHECKSUM",rec)
-                    ManagerVersion2 = client.get_value_from_handle(pid, "JMDVERSION",rec)
-                    B2findHost = client.get_value_from_handle(pid,"B2FINDHOST",rec)
                 except Exception, err:
-                    logger.error("[CRITICAL : %s] in client.get_value_from_handle" % err )
+                    logger.error("[CRITICAL : %s] in client.retrieve_handle_record_json(%s)" % (err,pid))
                 else:
-                    logger.debug("Got checksum2 %s, ManagerVersion2 %s and B2findHost %s from PID %s" % (checksum2,ManagerVersion2,B2findHost,pid))
-                if (checksum2 == None):
+                    logger.debug("Retrieved PID %s" % pid )
+
+                for pidAttr in ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
+                    try:
+                        pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
+                    except Exception, err:
+                        logger.error("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) )
+                    else:
+                        logger.debug("Got pidRecord[%s]:%s from PID %s" % (pidRecord[pidAttr],pidAttr,pid))
+
+                if (pidRecord["CHECKSUM"] == None):
                     logger.debug("        |-> Can not access pid %s to get checksum" % pid)
                     handlestatus="new"
-                elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ) and ( B2findHost == options.iphost ) :
+                elif ( checksum == pidRecord["CHECKSUM"]) and ( pidRecord["JMDVERSION"] == ManagerVersion ) and ( pidRecord["B2FINDHOST"] == options.iphost ) :
                     logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
                     handlestatus="unchanged"
                 else:
@@ -670,7 +677,7 @@ def process_upload(UP, rlist, options):
             # depending on status of handle upload record to B2FIND 
             logger.debug('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
-                logger.info('        |-> %s' % ('No upload required'))
+                logger.warning('        |-> %s' % ('No update required'))
             else:
                 try:
                     upload = UP.upload(ds_id,dsstatus,community,jsondata)
@@ -686,7 +693,7 @@ def process_upload(UP, rlist, options):
                     upload=1
                 else:
                     logger.error('        |-> Upload of %s record %s failed ' % (dsstatus, ds_id ))
-                    logger.debug('        |-> JSON data:\n\ttitle:%s\n\tauthor:%s\n\tnotes:%s\n' % (json.dumps(jsondata['title'], indent=2),json.dumps(jsondata['author'], indent=2),json.dumps(jsondata['notes'], indent=2)))
+                    ## logger.debug('        |-> JSON data:\n\ttitle:%s\n\tauthor:%s\n\tnotes:%s\n' % (json.dumps(jsondata['title'], indent=2),json.dumps(jsondata['author'], indent=2),json.dumps(jsondata['notes'], indent=2)))
                     results['ecount'] += 1
 
             # update PID in handle server                           
@@ -722,12 +729,6 @@ def process_upload(UP, rlist, options):
 
                     try: # update PID entries in all cases (except handle status is 'unchanged'
                         client.modify_handle_value(pid, JMDVERSION=ManagerVersion, COMMUNITY=community, SUBSET=subset, B2FINDHOST=options.iphost, IS_METADATA=True, MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
-##HEW-D                        client.modify_handle_value(pid, COMMUNITY=community)
-##HEW-D                        client.modify_handle_value(pid, SUBSET=subset)
-##HEW-D                        client.modify_handle_value(pid, B2FINDHOST=options.iphost)
-##HEW-D                        client.modify_handle_value(pid, IS_METADATA=True)
-##HEW-D                        client.modify_handle_value(pid, MD_SCHEMA=mdschemas[mdprefix])
-##HEW-D                        client.modify_handle_value(pid, MD_STATUS='B2FIND_uploaded')
                     except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
                         logging.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
                     except Exception, err:
@@ -826,9 +827,9 @@ def process_delete(OUT, dir, options):
                 handlestatus="unknown"
                 ##HEW-D-ec???  pid = credentials.prefix + "/eudat-jmd_" + ds
                 pid = "11098/eudat-jmd_" + ds_id
-                checksum2 = client.get_value_from_handle(pid, "CHECKSUM")
+                pidRecord["CHECKSUM"] = client.get_value_from_handle(pid, "CHECKSUM")
 
-                if (checksum2 == None):
+                if (pidRecord["CHECKSUM"] == None):
                   logging.debug("        |-> Can not access pid %s to get checksum" % (pid))
                   handlestatus="new"
                 else:
@@ -851,7 +852,7 @@ def process_delete(OUT, dir, options):
                         
                         # delete handle (to keep the symmetry between handle and B2FIND server)
                         if (handlestatus == "exist"):
-                           logging.info("        |-> Delete handle %s with checksum %s" % (pid,checksum2))
+                           logging.info("        |-> Delete handle %s with checksum %s" % (pid,pidRecord["CHECKSUM"]))
                            try:
                                client.delete_handle(pid)
                            except GenericHandleError as err:
