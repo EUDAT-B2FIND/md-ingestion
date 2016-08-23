@@ -69,7 +69,7 @@ do
   nrcreated=$(grep -c 'Creation of ' ${outfile})
   nrupdated=$(grep -c 'Update of ' ${outfile})
   nrfailed=$(grep -c 'Failed upload of' ${outfile})
-  nrnoaction=$(grep -c 'No update' $outfile)
+  nrnoaction=$(grep -c 'No update required' $outfile)
   nhcreated=$(grep -c 'Create a new handle' ${outfile})
   nhupdated=$(grep -c 'Update handle' ${outfile})
   nhfailed=$(grep -c 'CRITICAL' $outfile) ##HEW-??? $(grep -c 'failed' $outfile)
