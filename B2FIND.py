@@ -2101,6 +2101,7 @@ class MAPPER(object):
         if not isinstance(valuelist,list) : valuelist=[valuelist]
 
         for value in valuelist:
+            errlist=''
             if facet in ['title','notes','author','Publisher']:
                 if isinstance(value, unicode) :
                     try:
