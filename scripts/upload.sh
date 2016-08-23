@@ -69,7 +69,7 @@ do
   echo -e "\tProcess $npfrec json records provided in directories of $file"
   ((ntotrec = ntotrec + npfrec ))
 
-  nohup ./manager.py -l $file --mode u -i $rhost $ckancheck $handlecheck -v 2>log/${file}.out >log/${file}.err && mv $file DONE/ &
+  nohup ./manager.py -l $file --mode u -i $rhost $ckancheck $handlecheck -vv 2>log/${file}.out >log/${file}.err && mv $file DONE/ &
 done
 echo " $ntotrec json records provided in dirs of $upload_list "
 wait

@@ -691,7 +691,7 @@ def process_upload(UP, rlist, options):
                     logger.warning('        |-> Update of %s record succeed' % dsstatus )
                     upload=1
                 else:
-                    logger.error('        |-> Failed upload of %s record' % (dsstatus, ds_id ))
+                    logger.error('        |-> Failed upload of %s record %s' % (dsstatus, ds_id ))
                     ## logger.debug('        |-> JSON data:\n\ttitle:%s\n\tauthor:%s\n\tnotes:%s\n' % (json.dumps(jsondata['title'], indent=2),json.dumps(jsondata['author'], indent=2),json.dumps(jsondata['notes'], indent=2)))
                     results['ecount'] += 1
 
