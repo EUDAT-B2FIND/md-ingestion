@@ -93,22 +93,7 @@ def main():
     ## logger
     logger = setup_custom_logger('root',options.verbose)
 
-    ## set log level
-    log_level=getattr(logging, 'CRITICAL')
-    log_format=''
-    if options.verbose == 1 :
-        log_format='%(asctime)s %(levelname)s : %(message)s'
-        log_level=getattr(logging, 'DEBUG')
-    elif  options.verbose == 2 :
-        log_format='In %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
-        log_level=getattr(logging, 'INFO')
-    elif  options.verbose > 2 :
-        log_format='%(msecs)d --> %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
-        log_level=getattr(logging, 'DEBUG')
-
-##    logging.basicConfig(format=log_format, level=log_level) ### logging.DEBUG)
-    ##HEW-D 
-    logger = logging.getLogger('root')
+    ## logger = logging.getLogger('root')
     ##HEW-D logging.basicConfig(format=log_format, level=log_level) ### logging.DEBUG)
     # print out general info:
     logger.info('Version:  \t%s' % ManagerVersion)
