@@ -201,10 +201,10 @@ class CKAN_CLIENT(object):
                 return {"success" : False}
             elif ( e.code == 500):
                 self.logger.error('\tInternal server error')
-                exit(e.code)
+                return {"success" : False}
         except urllib2.URLError as e:
             self.logger.error('\tURLError %s : %s' % (e,e.reason))
-            exit('%s' % e.reason)
+            return {"success" : False}
         else :
             out = json.loads(response.read())
             assert response.code >= 200
@@ -310,8 +310,6 @@ class HARVESTER(object):
         
             def __init__ (self, ip_host): ##, api_key):
         	    self.ip_host = ip_host
-        
-        
         
             def JSONAPI(self, action, offset, key): # see oaireq
                 ## JSONAPI (action, jsondata) - method
