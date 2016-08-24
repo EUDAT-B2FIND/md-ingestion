@@ -30,13 +30,13 @@
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
     </field>
-    <!-- All other visible fields, shown in table 'Additional info' -->
     <field name="Publisher">
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
       <xpath>//dc:date/text()</xpath>
     </field>
+   <!-- Formal data -->
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
     </field>
@@ -49,6 +49,7 @@
     <field name="Format">
       <xpath>//dc:format/text()</xpath>
     </field>
+    <!-- Additional Information -->
     <field name="Contact">
       <xpath>//dc:publisher/text()</xpath>
     </field>

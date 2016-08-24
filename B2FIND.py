@@ -2808,7 +2808,7 @@ class UPLOADER(object):
                 try:
                     datetime.datetime.strptime(jsondata[key], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
                 except ValueError:
-                    raise Exception("Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key))
+                    self.logger.error("Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key))
                     del jsondata[key] # delete this field from the jsondata
 
         return jsondata

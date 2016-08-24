@@ -33,8 +33,7 @@ import simplejson as json
 import copy
 
 import logging
-logger = logging.getLogger('root')
-
+logger = logging.getLogger()
 import traceback
 import hashlib
 import codecs
@@ -504,7 +503,7 @@ def process_upload(UP, rlist, options):
         
 ##HEW-D        if not (CKAN.action('group_show',{"id":community}))['success'] :
         if not community in (CKAN.action('group_list'))['result'] :
-          logger.error("[ERROR]: Community (CKAN group) %s must exist!!!" % community)
+          logger.critical("Community (CKAN group) %s must exist!!!" % community)
           sys.exit()
 
         if not os.path.exists(dir):
