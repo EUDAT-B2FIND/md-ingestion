@@ -1271,7 +1271,7 @@ class MAPPER(object):
 
         dictlist=[]
         valarr=[]
-        rm_chars = '(){}<>;|`\'\"\\' ## remoove chars not allowed in CKAN tags
+        rm_chars = '(){}<>;|`\'\"\\#' ## remove chars not allowed in CKAN tags
         repl_chars = ':,=/?' ## replace chars not allowed in CKAN tags
         bad_words = ['and','or','the']
         if isinstance(invalue,dict):
@@ -2000,6 +2000,8 @@ class MAPPER(object):
                                jsondata[facet] = tempdesc
                        elif facet == 'Language': 
                            jsondata[facet] = self.map_lang(jsondata[facet])
+                       elif facet == 'Format': 
+                           jsondata[facet] = self.uniq(jsondata[facet],';')
                        elif facet == 'PublicationYear':
                            publdate=self.date2UTC(jsondata[facet])
                            if publdate:
