@@ -1755,7 +1755,7 @@ class MAPPER(object):
 
     def xpathmdmapper(self,xmldata,xrules,namespaces):
         # returns list or string, selected from xmldata by xpath rules (and namespaces)
-        logging.debug(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
+        self.logger.info(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
 
         jsondata=dict()
 
@@ -1768,10 +1768,8 @@ class MAPPER(object):
                     retval=['Not stated']
             else:
                 xpath=''
-                r = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)')
-                m2 = r.search(line)
-                rs = re.compile('(\s+)(<string>)(.*?)(</string>)')
-                m3 = rs.search(line)
+                m2 = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)').search(line)
+                m3 = re.compile('(\s+)(<string>)(.*?)(</string>)').search(line)
                 if m3:
                     xpath=m3.group(3)
                     retval=xpath
@@ -1782,7 +1780,7 @@ class MAPPER(object):
                     continue
                 if retval and len(retval) > 0 :
                     jsondata[field]=retval ### .extend(retval)
-                    logging.debug(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
+                    self.logger.info(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
                 elif field in ['Discipline','oai_set']:
                     jsondata[field]=['Not stated']
           except Exception as e:
