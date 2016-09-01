@@ -908,8 +908,8 @@ class MAPPER(object):
                     iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
                 elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
                     iddict['DOI'] = self.concat('http://dx.doi.org/',id)
-                elif 'dx.doi.org/' in id:
-                    iddict['DOI'] = id
+                elif 'doi.org/' in id:
+                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'doi:' in id: ## and 'DOI' not in iddict :
                     iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'hdl.handle.net' in id:
@@ -926,7 +926,7 @@ class MAPPER(object):
                         iddict['url'] = reurl.group("url")
 
         except Exception, e:
-            self.logger.error('[ERROR] : %s - in map_identifiers %s can not converted !' % (e,invalue))
+            self.logger.error('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
             self.logger.debug(' iddict\t%s' % iddict)
@@ -1091,10 +1091,12 @@ class MAPPER(object):
         try:
           logging.debug('   | Invalue:\t%s' % invalue)
           if isinstance(invalue,list) :
-              valarr=self.flatten(invalue)
+              if len(invalue) == 1:
+                  valarr=invalue[0].split()
+              else:
+                  valarr=self.flatten(invalue)
           else:
-              valarr=[invalue]
-              ##invalue=invalue.split() ##HEW??? [invalue]
+              valarr=invalue.split() ##HEW??? [invalue]
           coordarr=list()
           nc=0
           for val in valarr:
@@ -1153,7 +1155,7 @@ class MAPPER(object):
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
               return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
         except Exception, e:
-           logging.error('[ERROR] : %s - in map_spatial invalue %s can not converted !' % (e,invalue))
+           logging.error('%s - in map_spatial invalue %s can not converted !' % (e,invalue))
            return (None,None,None,None,None) 
 
     def map_checksum(self,invalue):
@@ -1312,14 +1314,15 @@ class MAPPER(object):
                 continue
         return dictlist[:12]
 
-    def uniq(self,input,joinsep=None):
+    def uniq(self,input):
+
+        ## eleminates duplicates and removes words in blacklist from list
+
+        blacklist=["Unspecified"]
+        for string in blacklist :
+            if string in input : input.remove(string)
         uniqset = set(input)
-
-        ##if joinsep :
-        ##    return joinsep.join(list(set))
-        ##else :
         return list(uniqset)
-
 
     def concat(self,str1,str2):
         """
@@ -1359,7 +1362,7 @@ class MAPPER(object):
         """
         split string in list of string and transfer to list of dict's [ { "name1" : "substr1" }, ... ]      
         """
-        na_arr=['not applicable']
+        na_arr=['not applicable','Unspecified']
         for facet in dataset:
           if facet == facetName and len(dataset[facet]) == 1 :
             valarr=dataset[facet][0]['name'].split(valuearrsep)
@@ -1895,7 +1898,7 @@ class MAPPER(object):
         fcount = 0
         oldperc=0
         err = None
-        self.logger.debug(' %s     INFO  Processing of %s files in %s/%s' % (time.strftime("%H:%M:%S"),infformat,path,insubdir))
+        self.logger.debug(' |- Processing of %s files in %s/%s' % (infformat,path,insubdir))
         
         ## start processing loop
         start = time.time()
@@ -1908,9 +1911,9 @@ class MAPPER(object):
                 oldperc=perc
                 print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
                 sys.stdout.flush()
+            logging.debug('    | m | %-4d | %-45s |' % (fcount,filename))
 
             jsondata = dict()
-
             infilepath=path+insubdir+'/'+filename      
             if ( os.path.getsize(infilepath) > 0 ):
                 ## load and parse raw xml rsp. json
@@ -1924,6 +1927,9 @@ class MAPPER(object):
                         self.logger.error('    | [ERROR] %s : Cannot load or parse %s-file %s' % (e,infformat,infilepath))
                         results['ecount'] += 1
                         continue
+                    else:
+                        self.logger.debug(' |- Read file %s ' % infilepath)
+                        
                 ## XPATH rsp. JPATH converter
                 if  mdprefix == 'json':
                     try:
@@ -1962,32 +1968,35 @@ class MAPPER(object):
                    self.logger.debug('Maping of facet %s ...' % facet)
                    try:
                        if facet == 'author':
-                           jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1),';')
+                           jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
                        elif facet == 'tags':
                            jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                        elif facet == 'url':
                            iddict = self.map_identifiers(jsondata[facet])
                            if 'url' in iddict: ## and iddict['url'] != '':
                                jsondata[facet]=iddict['url']
-                           else:
-                               jsondata[facet]=''
-                       elif facet == 'DOI':
-                           iddict = self.map_identifiers(jsondata[facet])
+##HEW-D                           else:
+##HEW-D                               jsondata[facet]=''
+##HEW-D                       elif facet == 'DOI':
+##HEW-D                           print 'DOI'
+##HEW-D                           iddict = self.map_identifiers(jsondata[facet])
                            if 'DOI' in iddict : 
                                jsondata[facet]=iddict['DOI']
+                           if 'PID' in iddict : 
+                               jsondata[facet]=iddict['PID']
                        elif facet == 'Checksum':
                            jsondata[facet] = self.map_checksum(jsondata[facet])
                        elif facet == 'Discipline':
                            jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
                        elif facet == 'Publisher':
                            blist = self.cut(jsondata[facet],'=',2)
-                           jsondata[facet] = self.uniq(blist,';')
+                           jsondata[facet] = self.uniq(blist)
                        elif facet == 'Contact':
                            if all(x is None for x in jsondata[facet]):
                                jsondata[facet] = ['Not stated']
                            else:
                                blist = self.cut(jsondata[facet],'=',2)
-                               jsondata[facet] = self.uniq(blist,';')
+                               jsondata[facet] = self.uniq(blist)
                        elif facet == 'SpatialCoverage':
                            spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet],geotab.geonames_list)
                            if wlon and slat and elon and nlat :
@@ -2001,7 +2010,7 @@ class MAPPER(object):
                        elif facet == 'Language': 
                            jsondata[facet] = self.map_lang(jsondata[facet])
                        elif facet == 'Format': 
-                           jsondata[facet] = self.uniq(jsondata[facet],';')
+                           jsondata[facet] = self.uniq(jsondata[facet])
                        elif facet == 'PublicationYear':
                            publdate=self.date2UTC(jsondata[facet])
                            if publdate:
@@ -2046,6 +2055,7 @@ class MAPPER(object):
                         results['ecount'] += 1
                         continue
             else:
+                self.logger.error('Can not access content of %s' % infilepath)
                 results['ecount'] += 1
                 continue
 

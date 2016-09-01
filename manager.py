@@ -185,7 +185,7 @@ def main():
         # exit the program and open results HTML file:
         exit_program(OUT)
         now = time.strftime("%Y-%m-%d %H:%M:%S")
-        logger.info("\nEnd :\t\t%s" % now)
+        logger.info("End of processing :\t\t%s" % now)
 
 
 def process(options,pstat,OUT):
