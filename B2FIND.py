@@ -259,18 +259,17 @@ class HARVESTER(object):
         self.fromdate = fromdate
         
     
-    def harvest(self, nr, request):
-        ## harvest (HARVESTER object, [community, source, verb, mdprefix, mdsubset]) - method
+    def harvest(self, request):
+        ## harvest (HARVESTER object, request = [community, source, verb, mdprefix, mdsubset])
         # Harvest all files with <mdprefix> and <mdsubset> from <source> via sickle module and store those to hard drive.
-        # Generate every N. file a new subset directory.
         #
         # Parameters:
         # -----------
-        # (list)  request - A request list with following items:
+        # (list)  request - A list with following items:
         #                    1. community
-        #                    2. source
-        #                    3. verb
-        #                    4. mdprefix
+        #                    2. source (OAI URL)
+        #                    3. verb (ListIdentifiers, ListRecords or JSONAPI)
+        #                    4. mdprefix (OAI md format as oai_dc, iso etc.)
         #                    5. mdsubset
         #
         # Return Values:
@@ -289,11 +288,10 @@ class HARVESTER(object):
    
         # create dictionary with stats:
         stats = {
-            "tottcount" : 0,    # total number of all provided datasets
-            "totcount"  : 0,    # total number of all successful harvested datasets
-            "totecount" : 0,    # total number of all failed datasets
+            "tottcount" : 0,    # total number of provided datasets
+            "totcount"  : 0,    # total number of successful harvested datasets
+            "totecount" : 0,    # total number of failed datasets
             "totdcount" : 0,    # total number of all deleted datasets
-            
             "tcount"    : 0,    # number of all provided datasets per subset
             "count"     : 0,    # number of all successful harvested datasets per subset
             "ecount"    : 0,    # number of all failed datasets per subset
@@ -404,14 +402,11 @@ class HARVESTER(object):
                     records.extend(chunk['results'])
                     choffset+=100
                     chunk =oaireq(**{'action':'dataset','offset':choffset,'key':None})
-            except urllib2.HTTPError as e:
-                self.logger.critical("%s : Cannot harvest through request %s\n" % (e,req))
-                return -1
-            except ConnectionError as e:
-                self.logger.critical("%s : Cannot harvest through request %s\n" % (e,req))
+            except (urllib2.HTTPError,ConnectionError) as e:
+                self.logger.critical("%s : during harvest request %s\n" % (e,req))
                 return -1
             except Exception, e:
-                logging.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                self.logger.error("%s-%s : during harvest request %s\n" % (e,traceback.format_exc(),req))
                 return -1
                 
             ntotrecs=len(records)
@@ -423,17 +418,11 @@ class HARVESTER(object):
             oaireq=getattr(sickle,req["lverb"], None)
             try:
                 records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
-            except urllib2.HTTPError as e:
+            except (urllib2.HTTPError,ConnectionError,etree.XMLSyntaxError) as e:
                 self.logger.critical("%s : during harvest request %s\n" % (e,req))
-                return -1
-            except ConnectionError as e:
-                self.logger.critical("%s : during harvest request %s\n" % (e,req))
-                return -1
-            except etree.XMLSyntaxError as e:
-                self.logger.error("[ERROR: %s ] Cannot harvest through request %s\n" % (e,req))
                 return -1
             except Exception, e:
-                self.logger.error("[ERROR %s ] : %s" % (e,traceback.format_exc()))
+                self.logger.error("%s-%s : during harvest request %s\n" % (e,traceback.format_exc(),req))
                 return -1
 
             ntotrecs=sum(1 for _ in rc)
@@ -1969,19 +1958,20 @@ class MAPPER(object):
                            jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
                        elif facet == 'tags':
                            jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
-                       elif facet == 'url':
+                       elif facet == 'DOI':
                            iddict = self.map_identifiers(jsondata[facet])
-                           if 'url' in iddict: ## and iddict['url'] != '':
-                               jsondata[facet]=iddict['url']
-##HEW-D                           else:
-##HEW-D                               jsondata[facet]=''
-##HEW-D                       elif facet == 'DOI':
-##HEW-D                           print 'DOI'
-##HEW-D                           iddict = self.map_identifiers(jsondata[facet])
                            if 'DOI' in iddict : 
                                jsondata[facet]=iddict['DOI']
-                           if 'PID' in iddict : 
-                               jsondata[facet]=iddict['PID']
+                       elif facet == 'url':
+                           iddict = self.map_identifiers(jsondata[facet])
+                           if 'DOI' in iddict : 
+                               jsondata[facet]=iddict['DOI']
+                           if 'PID' in iddict :
+                               if not (jsondata['DOI'] and jsondata['DOI']==jsondata['PID']):
+                                   jsondata[facet]=iddict['PID']
+                           if 'url' in iddict:
+                               if not (jsondata['DOI'] and jsondata['DOI']==jsondata['url']) and  not (jsondata['PID'] and jsondata['PID']==jsondata['url']):
+                                   jsondata[facet]=iddict['url']
                        elif facet == 'Checksum':
                            jsondata[facet] = self.map_checksum(jsondata[facet])
                        elif facet == 'Discipline':

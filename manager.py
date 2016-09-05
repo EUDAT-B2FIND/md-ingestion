@@ -359,7 +359,7 @@ def process_harvest(HV, rlist):
         ir+=1
         harveststart = time.time()
         print '   |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S"))
-        results = HV.harvest(ir,request)
+        results = HV.harvest(request)
     
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
