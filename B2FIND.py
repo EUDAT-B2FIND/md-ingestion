@@ -2772,10 +2772,19 @@ class UPLOADER(object):
         errmsg = ''
         
         ## check mandatory fields ...
-        mandFields=['title','url','oai_identifier']
+        mandFields=['title','oai_identifier']
         for field in mandFields :
             if field not in jsondata: ##  or jsondata[field] == ''):
                 raise Exception("The mandatory field '%s' is missing" % field)
+
+        identFields=['DOI','PID','url']:
+        identFlag=False
+        for field in identFields :
+            if field in jsondata:
+                identFlag=True
+        if identFlag == False:
+            raise Exception("At least one identifier from %s is mandatory" % identFields)
+            
 
         ##HEW-D elif ('url' in jsondata and not self.check_url(jsondata['url'])):
         ##HEW-D     errmsg = "'url': The source url is broken"
