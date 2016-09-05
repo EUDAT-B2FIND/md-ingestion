@@ -2777,7 +2777,7 @@ class UPLOADER(object):
             if field not in jsondata: ##  or jsondata[field] == ''):
                 raise Exception("The mandatory field '%s' is missing" % field)
 
-        identFields=['DOI','PID','url']:
+        identFields=['DOI','PID','url']
         identFlag=False
         for field in identFields :
             if field in jsondata:
