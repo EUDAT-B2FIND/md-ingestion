@@ -912,13 +912,14 @@ class MAPPER(object):
                     self.logger.debug(' id\t%s' % id)
                     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
                     if reurl :
-                        iddict['url'] = reurl.group("url")
+                        iddict['url'] = reurl.group("url")[0]
 
         except Exception, e:
             self.logger.error('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
-            self.logger.debug(' iddict\t%s' % iddict)
+            for id in iddict :
+                self.logger.debug('iddict\t(%s,%s)' % (id,iddict[id]))
             return iddict
 
     def map_lang(self, invalue):
@@ -1964,14 +1965,15 @@ class MAPPER(object):
                                jsondata[facet]=iddict['DOI']
                        elif facet == 'url':
                            iddict = self.map_identifiers(jsondata[facet])
-                           if 'DOI' in iddict : 
-                               jsondata[facet]=iddict['DOI']
+                           if 'DOI' in iddict :
+                               if not 'DOI' in jsondata :
+                                   jsondata['DOI']=iddict['DOI']
                            if 'PID' in iddict :
-                               if not (jsondata['DOI'] and jsondata['DOI']==jsondata['PID']):
-                                   jsondata[facet]=iddict['PID']
+                               if not ('DOI' in jsondata or jsondata['DOI']==iddict['PID']):
+                                   jsondata['PID']=iddict['PID']
                            if 'url' in iddict:
-                               if not (jsondata['DOI'] and jsondata['DOI']==jsondata['url']) and  not (jsondata['PID'] and jsondata['PID']==jsondata['url']):
-                                   jsondata[facet]=iddict['url']
+                               if not ('DOI' in jsondata or jsondata['DOI']==iddict['url']) and not ('PID' in jsondata or jsondata['PID']==iddict['url'] ) :
+                                   jsondata['url']=iddict['url']
                        elif facet == 'Checksum':
                            jsondata[facet] = self.map_checksum(jsondata[facet])
                        elif facet == 'Discipline':
@@ -2007,12 +2009,12 @@ class MAPPER(object):
                            encoding='utf-8'
                            jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
                    except Exception as e:
-                       logging.error(' [WARNING] %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
+                       logging.error(' %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
                        continue
 
-                if iddict :
-                    if 'DOI' in iddict : jsondata['DOI']=iddict['DOI']
-                    if 'PID' in iddict : jsondata['PID']=iddict['PID']
+##                if iddict :
+##                    if 'DOI' in iddict : jsondata['DOI']=iddict['DOI']
+##                    if 'PID' in iddict : jsondata['PID']=iddict['PID']
                 if spvalue :
                     jsondata["spatial"]=spvalue
                 if stime and etime :
@@ -2711,8 +2713,11 @@ class UPLOADER(object):
             if key not in jsondata:
                 self.logger.debug('[WARNING] : CKAN default key %s does not exist' % key)
             else:
-                self.logger.debug('    | -- %-25s ' % key)
-                if key in  ["author"] :
+                self.logger.debug('    | %-20s | %-25s' % (key,jsondata[key]))
+                if key in  ["url"] :
+                    if isinstance(jsondata[key],list):
+                        jsondata[key]=jsondata[key][0]
+                elif key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join(list(jsondata[key]))
