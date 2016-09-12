@@ -59,9 +59,9 @@ for file in $(ls ${upload_list}.*)
 do
   (( nfiles = nfiles + 1))
   npfrec=0
-  while read community oaiurl dir mdprefix set 
+  while read community oaiurl verb mdprefix set 
   do
-    setdir="${dir}/${set}"
+    setdir="oaidata/${community}-${mdprefix}/${set}"
     ndirrec=$(ls ${setdir}/json/*.json 2>/dev/null | wc -l)
     echo -e "\t\t$ndirrec json records provided in directory ${setdir}/json"
     ((npfrec = npfrec + ndirrec)) 
