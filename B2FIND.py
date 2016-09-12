@@ -36,7 +36,7 @@ import re
 
 # needed for HARVESTER class:
 import sickle as SickleClass
-from sickle.oaiexceptions import NoRecordsMatch
+from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
 from requests.exceptions import ConnectionError
 import uuid, hashlib
 import lxml.etree as etree
@@ -418,11 +418,8 @@ class HARVESTER(object):
             oaireq=getattr(sickle,req["lverb"], None)
             try:
                 records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
-            except (urllib2.HTTPError,ConnectionError,etree.XMLSyntaxError) as e:
-                self.logger.critical("%s : during harvest request %s\n" % (e,req))
-                return -1
-            except Exception, e:
-                self.logger.error("%s-%s : during harvest request %s\n" % (e,traceback.format_exc(),req))
+            except (urllib2.HTTPError,ConnectionError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as e:
+                self.logger.critical("%s :\n\tduring harvest request %s\n" % (e,req))
                 return -1
 
             ntotrecs=sum(1 for _ in rc)
@@ -737,8 +734,9 @@ class MAPPER(object):
     results = MP.map(community,mdprefix,path)
     """
 
-    def __init__ (self, OUT):
+    def __init__ (self, OUT, base_outdir):
         ##HEW-D logging = logging.getLogger()
+        self.base_outdir = base_outdir
         self.OUT = OUT
         self.logger = logging.getLogger('root')
         # Read in B2FIND metadata schema and fields
@@ -1779,7 +1777,7 @@ class MAPPER(object):
 
         return jsondata
 
-    def map(self,nr,community,mdprefix,path,target_mdschema):
+    def map(self,request,target_mdschema): ### community,mdprefix,path,target_mdschema):
         ## map(MAPPER object, community, mdprefix, path) - method
         # Maps the XML files in directory <path> to JSON files 
         # For each file two steps are performed
@@ -1804,6 +1802,22 @@ class MAPPER(object):
             'time':0
         }
         
+        # set processing parameters
+        community=request[0]
+        mdprefix=request[3]
+
+        # set subset:
+        if (not request[4]):
+            subset = 'SET_1' ## or 2,...
+        elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
+            subset = request[4]+'1' ## or 2,...
+            ## req["mdsubset"]=None
+        else:
+            subset = request[4]+'_1'
+            
+        # make subset dir:
+        path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
+
         # settings according to md format (xml or json processing)
         if mdprefix == 'json' :
             mapext='conf'

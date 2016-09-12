@@ -187,14 +187,14 @@ def main():
         now = time.strftime("%Y-%m-%d %H:%M:%S")
         logger.info("End of processing :\t\t%s" % now)
 
-
 def process(options,pstat,OUT):
     ## process (options,pstat,OUT) - function
     # Starts the specific process routines for harvesting, converting, mapping, validating, oai-converting and/or uploading
     #
     # Parameters:
     # -----------
-    # 1. (OptionsParser object)    - 
+    # 1. options (OptionsParser object)
+    # 2. pstat   (process status dict)  
     #
     # Return Values:
     # --------------
@@ -205,23 +205,14 @@ def process(options,pstat,OUT):
     mode = None
     if(options.source):
         mode = 'single'
-        
-        if ( not(
-            options.community and
-            options.source and
-            options.verb and
-            options.mdprefix
-        )):
-            logging.critical("\033[1m [CRITICAL] " + "When single mode is used following options are required:\n\t%s" % (
-                '\n\t'.join(['community','source','verb','mdprefix'])) + "\033[0;0m" 
-            )
-            exit()
+        mandParams=['community','verb','mdprefix'] # mandatory processing params
+        for param in mandParams :
+            if not getattr(options,param) :
+                logger.critical("Processing parameter %s is required in single mode" % param)
+                sys.exit(-1)
         
     elif(options.list):
         mode = 'multi'
-    else:
-        logging.critical("[CRITICAL] Either option source (option -s) or list of sources (option -l) is required")
-        exit()
     
     ## HARVESTING mode:    
     if (pstat['status']['h'] == 'tbd'):
@@ -251,7 +242,7 @@ def process(options,pstat,OUT):
         if (pstat['status']['m'] == 'tbd'):
             # start the process mapping:
             logger.info('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-            MP = B2FIND.MAPPER(OUT)
+            MP = B2FIND.MAPPER(OUT,options.outdir)
         
             # start the process mapping:
             if mode is 'multi':
@@ -270,7 +261,7 @@ def process(options,pstat,OUT):
                 ]])
         ## VALIDATOR - Mode:  
         if (pstat['status']['v'] == 'tbd'):
-            MP = B2FIND.MAPPER(OUT)
+            MP = B2FIND.MAPPER(OUT,options.outdir)
             logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         
             # start the process converting:
@@ -285,6 +276,7 @@ def process(options,pstat,OUT):
                     options.outdir + '/' + options.mdprefix,
                     options.mdsubset
                 ]])
+
         ## OAI-CONVERTING - Mode:  
         if (pstat['status']['o'] == 'tbd'):
             MP = B2FIND.MAPPER(OUT)
@@ -396,7 +388,7 @@ def process_map(MP, rlist):
         
         cstart = time.time()
         
-        results = MP.map(ir,request[0],request[3],os.path.abspath(request[2]+'/'+request[4]),target)
+        results = MP.map(request,target)
 
         ctime=time.time()-cstart
         results['time'] = ctime
@@ -944,7 +936,7 @@ def options_parser(modes):
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
-    p.add_option('--community', '-c', help="community where data harvested from and uploaded to", default='', metavar='STRING')
+    p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
     p.add_option('--handle_check', 
          help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file",
@@ -980,8 +972,6 @@ def options_parser(modes):
     p.add_option_group(group_upload)
     
     return p
-    
-    
 
 def pstat_init (p,modes,mode,source,iphost):
     if (mode):
@@ -1045,11 +1035,6 @@ def exit_program (OUT, message=''):
     OUT.HTML_print_end()
 
     if (OUT.options.verbose != False):
-      ##HEW? try:
-      ##HEW  os.system('firefox '+OUT.jobdir+'/overview.html')
-      ##HEW except Exception, err:
-      ##HEW   print("[ERROR] %s : Can not open result html in browser" % err)
-      ##HEWos.system('cat '+OUT.jobdir+'/overview.html')
       logging.debug('For more info open HTML file %s' % OUT.jobdir+'/overview.html')
 
 if __name__ == "__main__":
