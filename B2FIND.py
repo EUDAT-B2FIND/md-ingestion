@@ -950,7 +950,6 @@ class MAPPER(object):
         newvalue=list()
         if type(invalue) == 'list' :
             for lang in invalue:
-                print 'invvv %s' % lang
                 mcountry = mlang(lang)
                 if mcountry:
                     newvalue.append(mcountry.name)
