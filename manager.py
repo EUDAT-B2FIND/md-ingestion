@@ -411,11 +411,14 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        outfile='%s/%s/%s' % (request[2],request[4],'validation.stat')
+        outfile='oaidata/%s-%s/%s_*/%s' % (request[0],request[3],request[4],'validation.stat')
         print '   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S"))
         cstart = time.time()
+
+        ### HEW!!!
+        target=None
         
-        results = MP.validate(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.validate(request,target)
 
         ctime=time.time()-cstart
         results['time'] = ctime

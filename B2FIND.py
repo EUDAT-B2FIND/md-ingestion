@@ -744,10 +744,6 @@ class MAPPER(object):
         with open(schemafile, 'r') as f:
             self.b2findfields=json.loads(f.read(), object_pairs_hook=OrderedDict)
 
-##HEW-D        self.ckanfields=list()
-##HEW-D        for val in self.b2findfields.values() :
-##HEW-D            self.ckanfields.append(val["ckanName"])
-
         ## settings for pyparsing
         nonBracePrintables = ''
         unicodePrintables = u''.join(unichr(c) for c in xrange(65536) 
@@ -928,7 +924,6 @@ class MAPPER(object):
         Adapted for B2FIND 2014 Heinrich Widmann
         Licensed under AGPLv3.
         """
-
         def mlang(language):
             if '_' in language:
                 language = language.split('_')[0]
@@ -953,8 +948,14 @@ class MAPPER(object):
                     except KeyError: pass
 
         newvalue=list()
-        for lang in invalue:
-            mcountry = mlang(lang)
+        if type(invalue) == 'list' :
+            for lang in invalue:
+                print 'invvv %s' % lang
+                mcountry = mlang(lang)
+                if mcountry:
+                    newvalue.append(mcountry.name)
+        else:
+            mcountry = mlang(invalue)
             if mcountry:
                 newvalue.append(mcountry.name)
 
@@ -1779,17 +1780,18 @@ class MAPPER(object):
 
     def map(self,request,target_mdschema): ### community,mdprefix,path,target_mdschema):
         ## map(MAPPER object, community, mdprefix, path) - method
-        # Maps the XML files in directory <path> to JSON files 
+        # Maps XML files formated in source specific MD schema/format (=mdprefix)
+        #   to JSON files formatted in target schema (by default B2FIND schema) 
         # For each file two steps are performed
         #  1. select entries by Python XPATH converter according 
         #      the mapfile [<community>-]<mdprefix>.xml . 
-        #  2. perform generic and semantic mapping versus iso standards and closed vovabularies ...
+        #  2. perform generic and semantic mapping 
+        #        versus iso standards and closed vovabularies ...
         #
         # Parameters:
         # -----------
-        # 1. (string)   community - B2FIND community of the files
-        # 2. (string)   mdprefix - Metadata prefix which was used by HARVESTER class for harvesting these files
-        # 3. (string)   path - path to directory of harvested records (without 'xml' rsp. 'hjson' subdirectory)
+        # 1. (list)     request -  specifies the processing parameters as <communtiy>, <mdprefix> etc. 
+        # 2. (string, optinal)   target_mdschema - specifies the schema the inpted records are be mapped to
         #
         # Return Values:
         # --------------
@@ -1812,6 +1814,9 @@ class MAPPER(object):
         elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
             subset = request[4]+'1' ## or 2,...
             ## req["mdsubset"]=None
+##HEW??        elif re.search(r'\d+&',request[4]) is not None:
+        elif request[4][-1].isdigit() and  request[4][-2] == '_' :
+            subset = request[4]
         else:
             subset = request[4]+'_1'
             
@@ -1830,7 +1835,7 @@ class MAPPER(object):
 
         # check input and output paths
         if not os.path.exists(path):
-            logging.error('[ERROR] The directory "%s" does not exist! No files to map are found!\n(Maybe your convert list has old items?)' % (path))
+            logging.critical('[ERROR] Can not access directory "%s"' % path)
             return results
         elif not os.path.exists(path + insubdir) or not os.listdir(path + insubdir):
             logging.error('[ERROR] The input directory "%s%s" does not exist or no %s-files to convert are found !\n(Maybe your convert list has old items?)' % (path,insubdir,insubdir))
@@ -1841,12 +1846,9 @@ class MAPPER(object):
             outpath=path+'-'+target_mdschema+'/json'
         else:
             outpath=path+'/json'
+        if (not os.path.isdir(outpath)): os.makedirs(outpath)
 
-
-        if (not os.path.isdir(outpath)):
-           os.makedirs(outpath)
-
-        # check and read rules from mapfile
+        # read target_mdschema (degfault : B2FIND_schema) and set mapfile
         if (target_mdschema):
             mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,target_mdschema,mapext)
         else:
@@ -1965,70 +1967,69 @@ class MAPPER(object):
                 stime=None
                 etime=None
                 publdate=None
-                # loop over all fields
-                for facet in jsondata:
-                   self.logger.debug('Maping of facet %s ...' % facet)
-                   try:
-                       if facet == 'author':
-                           jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
-                       elif facet == 'tags':
-                           jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
-                       elif facet == 'DOI':
-                           iddict = self.map_identifiers(jsondata[facet])
-                           if 'DOI' in iddict : 
-                               jsondata[facet]=iddict['DOI']
-                       elif facet == 'url':
-                           iddict = self.map_identifiers(jsondata[facet])
-                           if 'DOI' in iddict :
-                               if not 'DOI' in jsondata :
-                                   jsondata['DOI']=iddict['DOI']
-                           if 'PID' in iddict :
-                               if not ('DOI' in jsondata or jsondata['DOI']==iddict['PID']):
-                                   jsondata['PID']=iddict['PID']
-                           if 'url' in iddict:
-                               if not ('DOI' in jsondata or jsondata['DOI']==iddict['url']) and not ('PID' in jsondata or jsondata['PID']==iddict['url'] ) :
-                                   jsondata['url']=iddict['url']
-                       elif facet == 'Checksum':
-                           jsondata[facet] = self.map_checksum(jsondata[facet])
-                       elif facet == 'Discipline':
-                           jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
-                       elif facet == 'Publisher':
-                           blist = self.cut(jsondata[facet],'=',2)
-                           jsondata[facet] = self.uniq(blist)
-                       elif facet == 'Contact':
-                           if all(x is None for x in jsondata[facet]):
-                               jsondata[facet] = ['Not stated']
-                           else:
-                               blist = self.cut(jsondata[facet],'=',2)
-                               jsondata[facet] = self.uniq(blist)
-                       elif facet == 'SpatialCoverage':
-                           spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet],geotab.geonames_list)
-                           if wlon and slat and elon and nlat :
-                               spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                           if spdesc :
-                               jsondata[facet] = spdesc
-                       elif facet == 'TemporalCoverage':
-                           tempdesc,stime,etime=self.map_temporal(jsondata[facet])
-                           if tempdesc:
-                               jsondata[facet] = tempdesc
-                       elif facet == 'Language': 
-                           jsondata[facet] = self.map_lang(jsondata[facet])
-                       elif facet == 'Format': 
-                           jsondata[facet] = self.uniq(jsondata[facet])
-                       elif facet == 'PublicationYear':
-                           publdate=self.date2UTC(jsondata[facet])
-                           if publdate:
-                               jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
-                       elif facet == 'fulltext':
-                           encoding='utf-8'
-                           jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
-                   except Exception as e:
-                       logging.error(' %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
-                       continue
+                # loop over target schema (B2FIND)
+                for facetdict in self.b2findfields.values() :
+                    facet=facetdict["ckanName"]
+                    if facet in jsondata:
+                        self.logger.info('Mapping of facet:value %s:%s ...' % (facet,jsondata[facet]))
+                        try:
+                            if facet == 'author':
+                                jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
+                            elif facet == 'tags':
+                                jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
+                            elif facet == 'DOI':
+                                iddict = self.map_identifiers(jsondata[facet])
+                                if 'DOI' in iddict : 
+                                    jsondata[facet]=iddict['DOI']
+                            elif facet == 'url':
+                                iddict = self.map_identifiers(jsondata[facet])
+                                if 'DOI' in iddict :
+                                    if not 'DOI' in jsondata :
+                                        jsondata['DOI']=iddict['DOI']
+                                if 'PID' in iddict :
+                                    if not ('DOI' in jsondata or jsondata['DOI']==iddict['PID']):
+                                        jsondata['PID']=iddict['PID']
+                                if 'url' in iddict:
+                                    if not ('DOI' in jsondata or jsondata['DOI']==iddict['url']) and not ('PID' in jsondata or jsondata['PID']==iddict['url'] ) :
+                                        jsondata['url']=iddict['url']
+                            elif facet == 'Checksum':
+                                jsondata[facet] = self.map_checksum(jsondata[facet])
+                            elif facet == 'Discipline':
+                                jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
+                            elif facet == 'Publisher':
+                                blist = self.cut(jsondata[facet],'=',2)
+                                jsondata[facet] = self.uniq(blist)
+                            elif facet == 'Contact':
+                                if all(x is None for x in jsondata[facet]):
+                                    jsondata[facet] = ['Not stated']
+                                else:
+                                    blist = self.cut(jsondata[facet],'=',2)
+                                    jsondata[facet] = self.uniq(blist)
+                            elif facet == 'SpatialCoverage':
+                                spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet],geotab.geonames_list)
+                                if wlon and slat and elon and nlat :
+                                    spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
+                                if spdesc :
+                                    jsondata[facet] = spdesc
+                            elif facet == 'TemporalCoverage':
+                                tempdesc,stime,etime=self.map_temporal(jsondata[facet])
+                                if tempdesc:
+                                    jsondata[facet] = tempdesc
+                            elif facet == 'Language': 
+                                jsondata[facet] = self.map_lang(jsondata[facet])
+                            elif facet == 'Format': 
+                                jsondata[facet] = self.uniq(jsondata[facet])
+                            elif facet == 'PublicationYear':
+                                publdate=self.date2UTC(jsondata[facet])
+                                if publdate:
+                                    jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
+                            elif facet == 'fulltext':
+                                encoding='utf-8'
+                                jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
+                        except Exception as e:
+                            logging.error(' %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
+                            continue
 
-##                if iddict :
-##                    if 'DOI' in iddict : jsondata['DOI']=iddict['DOI']
-##                    if 'PID' in iddict : jsondata['PID']=iddict['PID']
                 if spvalue :
                     jsondata["spatial"]=spvalue
                 if stime and etime :
@@ -2168,9 +2169,8 @@ class MAPPER(object):
             ##if errlist != '':
             ##    print ' Following key-value errors fails validation:\n' + errlist 
             return vall
-            
-    
-    def validate(self,community,mdprefix,path):
+                
+    def validate(self,request,target_mdschema):
         ## validate(MAPPER object, community, mdprefix, path) - method
         # validates the (mapped) JSON files in directory <path> against the B2FIND md schema
         # Parameters:
@@ -2193,7 +2193,26 @@ class MAPPER(object):
             'time':0
         }
         
-        # check map file
+        # set processing parameters
+        community=request[0]
+        mdprefix=request[3]
+
+        # set subset:
+        if (not request[4]):
+            subset = 'SET_1' ## or 2,...
+        elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
+            subset = request[4]+'1' ## or 2,...
+            ## req["mdsubset"]=None
+##HEW??        elif re.search(r'\d+&',request[4]) is not None:
+        elif request[4][-1].isdigit() and  request[4][-2] == '_' :
+            subset = request[4]
+        else:
+            subset = request[4]+'_1'
+            
+        # make subset dir:
+        path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
+
+        # set extension of mapfile according to md format (xml or json processing)
         if mdprefix == 'json' :
             mapext='conf' ##!!!HEW --> json
         else:
@@ -2202,13 +2221,13 @@ class MAPPER(object):
         if not os.path.isfile(mapfile):
            mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
            if not os.path.isfile(mapfile):
-              logger.error('Mapfile %s does not exist !' % mapfile)
+              self.logger.error('Mapfile %s does not exist !' % mapfile)
               return results
         mf=open(mapfile) 
 
         # check paths
         if not os.path.exists(path):
-            logger.error('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            self.logger.critical('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
             logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
@@ -2618,12 +2637,6 @@ class UPLOADER(object):
         schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
         with open(schemafile, 'r') as f:
             self.b2findfields=json.loads(f.read())
-
-        # B2FIND metadata fields
-
-##HEW-D        self.ckanfields=list()
-##HEW-D        for val in self.b2findfields.values() :
-##HEW-D            self.ckanfields.append(val["ckanName"])
 
         self.ckandeffields = ["author","title","notes","tags","url","version"]
         self.b2fckandeffields = ["Creator","Title","Description","Tags","Source","Checksum"]
