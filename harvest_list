@@ -31,7 +31,7 @@ badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc solas
 # CEDA : Physics
 ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375626A656374733D70687973696373
-pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  fgdc PDCMetadata 
+pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc PDCMetadata 
 ##pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
 ##%%% ENES : MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-old-doi
