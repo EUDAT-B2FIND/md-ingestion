@@ -1743,7 +1743,7 @@ class MAPPER(object):
 
     def xpathmdmapper(self,xmldata,xrules,namespaces):
         # returns list or string, selected from xmldata by xpath rules (and namespaces)
-        self.logger.info(' | %10s | %10s | %10s | \n' % ('Field','XPATH','Value'))
+        self.logger.info(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
 
         jsondata=dict()
 
@@ -1754,6 +1754,7 @@ class MAPPER(object):
                 field=m.group(2)
                 if field in ['Discipline','oai_set','Source']: ## HEW!!! add all mandatory fields !!
                     retval=['Not stated']
+                self.logger.info(' Field:xpathrule : %-10s:%20s\n' % (field,line))
             else:
                 xpath=''
                 m2 = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)').search(line)
@@ -1806,21 +1807,23 @@ class MAPPER(object):
         # set processing parameters
         community=request[0]
         mdprefix=request[3]
-
+        mdsubset=request[4]   if len(request)>4 else None
         # set subset:
-        if (not request[4]):
+        if (not mdsubset):
             subset = 'SET_1' ## or 2,...
-        elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
-            subset = request[4]+'1' ## or 2,...
+        elif mdsubset.endswith('_'): # no OAI subsets, but different OAI-URLs for same community
+            subset = mdsubset+'1' ## or 2,...
             ## req["mdsubset"]=None
-##HEW??        elif re.search(r'\d+&',request[4]) is not None:
-        elif request[4][-1].isdigit() and  request[4][-2] == '_' :
-            subset = request[4]
+##HEW??        elif re.search(r'\d+&',mdsubset) is not None:
+        elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
+            subset = mdsubset
         else:
-            subset = request[4]+'_1'
-            
+            subset = mdsubset+'_1'
+        self.logger.debug(' |- Subset:    \t%s' % subset )
+
         # make subset dir:
         path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
+        self.logger.debug(' |- Input path:\t%s' % path)
 
         # settings according to md format (xml or json processing)
         if mdprefix == 'json' :
@@ -1832,12 +1835,9 @@ class MAPPER(object):
             insubdir='/xml'
             infformat='xml'
 
-        # check input and output paths
-        if not os.path.exists(path):
-            logging.critical('[ERROR] Can not access directory "%s"' % path)
-            return results
-        elif not os.path.exists(path + insubdir) or not os.listdir(path + insubdir):
-            logging.error('[ERROR] The input directory "%s%s" does not exist or no %s-files to convert are found !\n(Maybe your convert list has old items?)' % (path,insubdir,insubdir))
+        # check input path
+        if not os.path.exists(path + insubdir):
+            self.logger.critical('[ERROR] Can not access directory "%s"' % path)
             return results
       
         # make output directory for mapped json's
@@ -1914,7 +1914,7 @@ class MAPPER(object):
                 oldperc=perc
                 print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
                 sys.stdout.flush()
-            logging.debug('    | m | %-4d | %-45s |' % (fcount,filename))
+            self.logger.debug('    | m | %-4d | %-45s |' % (fcount,filename))
 
             jsondata = dict()
             infilepath=path+insubdir+'/'+filename      
@@ -2028,7 +2028,9 @@ class MAPPER(object):
                         except Exception as e:
                             logging.error(' %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
                             continue
-
+                    else: # B2FIND facet not in jsondata
+                        if facet == 'title':
+                            jsondata[facet] = jsondata['notes'][:20]
                 if spvalue :
                     jsondata["spatial"]=spvalue
                 if stime and etime :
@@ -2197,7 +2199,7 @@ class MAPPER(object):
         mdprefix=request[3]
 
         # set subset:
-        if (not request[4]):
+        if len(request) < 5 :
             subset = 'SET_1' ## or 2,...
         elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
             subset = request[4]+'1' ## or 2,...
@@ -2210,6 +2212,7 @@ class MAPPER(object):
             
         # make subset dir:
         path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
+        
 
         # set extension of mapfile according to md format (xml or json processing)
         if mdprefix == 'json' :
@@ -2439,7 +2442,7 @@ class MAPPER(object):
         if (target_mdschema):
             path=path+'-'+target_mdschema
         else:
-            logging.error('[ERROR] For OAI converter processing target metaschema must be given!')
+            self.logger.critical('For OAI converter processing target metaschema must be given!')
             sys.exit()
 
         if not os.path.exists(path):
@@ -2746,7 +2749,7 @@ class UPLOADER(object):
                 elif key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
-                    jsondata[key]='\n'.join(list(jsondata[key]))
+                    jsondata[key]='\n'.join([x for x in jsondata[key] if x is not None])
                 if key in ["title","author","notes"] : ## HEW-D 1608: removed notes
                     if jsondata['group'] == 'b2share' :
                         try:
@@ -2816,22 +2819,6 @@ class UPLOADER(object):
         if identFlag == False:
             raise Exception("At least one identifier from %s is mandatory" % identFields)
             
-
-        ##HEW-D elif ('url' in jsondata and not self.check_url(jsondata['url'])):
-        ##HEW-D     errmsg = "'url': The source url is broken"
-        ##HEW-D     if(status > 1): status = 1  # set status
-            
-        # ... OAI Set
-##HEW-?        if('oai_set' in jsondata and ';' in  jsondata['oai_set']):
-##HEW-?            jsondata['oai_set'] = jsondata['oai_set'].split(';')[-1] 
-            
-##HEW-D             # shrink field fulltext
-##HEW-D             if('fulltext' in jsondata):
-##HEW-D                 encoding='utf-8' ## ?? Best encoding for fulltext ??? encoding='ISO-8859-15'
-##HEW-D                 encoded = ' '.join(filter(None,jsondata['fulltext'])).encode(encoding)[:32000]
-##HEW-D                 encoded=re.sub('\s+',' ',encoded)
-##HEW-D                 jsondata['fulltext']=encoded.decode(encoding, 'ignore')
-
         if 'PublicationYear' in jsondata :
             try:
                 datetime.datetime.strptime(jsondata['PublicationYear'][0], '%Y')
@@ -3367,6 +3354,7 @@ class OUTPUT(object):
         # Return Values:
         # --------------
         # Statistic values
+        if (not subset) : subset=''
         
 
         if ('#' in ''.join([request,subset,mode])):
@@ -3376,7 +3364,7 @@ class OUTPUT(object):
                 return filter(lambda x: not x.startswith('#'), self.stats.keys())
             elif (subset == '#AllSubsets'):
                 # returns all subsets except all which start with an '#'
-                return filter(lambda x: not x.startswith('#'), self.stats[request].keys())
+                return filter(lambda x: x and not x.startswith('#'), self.stats[request].keys())
                 
     
             if(request == '#total'):

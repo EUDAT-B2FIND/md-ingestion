@@ -42,16 +42,16 @@ def setup_custom_logger(name,verbose):
     log_format='%(levelname)s :  %(message)s'
     log_level=logging.CRITICAL
     if verbose == 1 :
-        log_format='%(levelname)s in  %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
+        log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
         log_level=logging.ERROR
     elif  verbose == 2 :
         log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
         log_level=logging.WARNING
     elif verbose == 3 :
-        log_format='%(levelname)s at %(asctime)s in L %(lineno)s : %(message)s'
+        log_format='%(levelname)s at %(module)s in L %(lineno)s : %(message)s'
         log_level=logging.INFO
     elif verbose > 3 :
-        log_format='%(levelname)s at %(asctime)s %(msecs)d in L %(lineno)s : %(message)s'
+        log_format='%(levelname)s at %(funcName)s %(msecs)d in L %(lineno)s : %(message)s'
         log_level=logging.DEBUG
 
 
@@ -63,7 +63,6 @@ def setup_custom_logger(name,verbose):
     logger.setLevel(log_level)
     logger.addHandler(handler)
     return logger
-
 
 def main():
     global TimeStart
@@ -169,8 +168,6 @@ def main():
     logger.info(' |- Joblist: %s' % "<Filename of request list>")
     print '   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<ReqNo.>','<Request description>','<Status>','<Time>')
 
-
-
     OUT.save_stats('#Start','subset','StartTime',0)
     
     try:
@@ -189,20 +186,18 @@ def main():
 
 def process(options,pstat,OUT):
     ## process (options,pstat,OUT) - function
-    # Starts the specific process routines for harvesting, converting, mapping, validating, oai-converting and/or uploading
+    # Starts processing as specified in pstat['tbd'] and 
+    #  according the request list given bey the options
     #
     # Parameters:
     # -----------
     # 1. options (OptionsParser object)
     # 2. pstat   (process status dict)  
     #
-    # Return Values:
-    # --------------
-    # return values
-
     
-    # set single or multi mode:
+    # set list of request lsits for single or multi mode:
     mode = None
+    procOptions=['community','source','verb','mdprefix','mdsubset','target_mdschema']
     if(options.source):
         mode = 'single'
         mandParams=['community','verb','mdprefix'] # mandatory processing params
@@ -210,115 +205,58 @@ def process(options,pstat,OUT):
             if not getattr(options,param) :
                 logger.critical("Processing parameter %s is required in single mode" % param)
                 sys.exit(-1)
-        
-    elif(options.list):
-        mode = 'multi'
-    
-    ## HARVESTING mode:    
-    if (pstat['status']['h'] == 'tbd'):
-        # start the process harvesting:
-        logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
-        
-        if mode is 'multi':
-            logger.debug(' |- Joblist:  \t%s' % options.list)
-            if options.community : logger.debug(' |- Community:\t%s' % options.community)
-            if options.mdsubset : logger.debug(' |- OAI subset:\t%s' % options.mdsubset)
-            if options.mdprefix : logger.debug(' |- Source MD format:\t%s' % options.mdprefix)
-            if options.target_mdschema : logger.debug(' |- Target MD schema:\t%s' % options.target_mdschema)
-
-            process_harvest(HV,parse_list_file('harvest',options.list, options.community,options.mdsubset,options.mdprefix))
-        else:
-            process_harvest(HV,[[
+        reqlist=[[
                 options.community,
                 options.source,
                 options.verb,
                 options.mdprefix,
-                options.mdsubset
-            ]])
-
-    if (OUT.convert_list or pstat['status']['h'] == 'no'):
-        ## MAPPINING - Mode:  
-        if (pstat['status']['m'] == 'tbd'):
-            # start the process mapping:
-            logger.info('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-            MP = B2FIND.MAPPER(OUT,options.outdir)
-        
-            # start the process mapping:
-            if mode is 'multi':
-                logger.info(' |- Joblist:  \t%s' % OUT.convert_list )
-                if (options.community != '') : logger.debug(' |- Community:\t%s' % options.community)
-                if (options.mdsubset != None) : logger.debug(' - OAI subset:\t%s' % options.mdsubset)
-                process_map(MP, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset, options.mdprefix, options.target_mdschema))
-            else:
-                process_map(MP,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset,
-                    options.target_mdschema
-                ]])
-        ## VALIDATOR - Mode:  
-        if (pstat['status']['v'] == 'tbd'):
-            MP = B2FIND.MAPPER(OUT,options.outdir)
-            logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        
-            # start the process converting:
-            if mode is 'multi':
-                logger.info(' |- Joblist:  \t%s' % options.list)
-                process_validate(MP, parse_list_file('validate', OUT.convert_list or options.list, options.community,options.mdsubset))
-            else:
-                process_validate(MP,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]])
-
-        ## OAI-CONVERTING - Mode:  
-        if (pstat['status']['o'] == 'tbd'):
-            MP = B2FIND.MAPPER(OUT)
-            logger.info('\n|- Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-
-            # start the process converting:
-            if mode is 'multi':
-                process_oaiconvert(MP, parse_list_file('oaiconvert', OUT.convert_list or options.list, options.community,options.mdsubset,options.mdprefix,options.target_mdschema))
-            else:
-                process_oaiconvert(MP,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset,
-                    options.target_mdschema
-                ]])
+                options.mdsubset,
+                options.ckan_check,
+                options.handle_check,
+                options.target_mdschema
+            ]]
+    elif(options.list):
+        mode = 'multi'
+        logger.debug(' |- Joblist:  \t%s' % options.list)
+        reqlist=parse_list_file(options)
 
 
-        ## UPLOADING - Mode:  
-        if (pstat['status']['u'] == 'tbd'):
-            # create CKAN object                       
-            CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
-            UP = B2FIND.UPLOADER(CKAN, OUT)
-            logger.info('\n|- Uploading started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-            logger.info(' |- Host:  \t%s' % CKAN.ip_host )
-
-            # start the process uploading:
-            if mode is 'multi':
-                logger.info(' |- Joblist:  \t%s' % OUT.convert_list )
-                process_upload(UP, parse_list_file('upload', OUT.convert_list or options.list, options.community, options.mdsubset), options)
-            else:
-                process_upload(UP,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]],options)
-    else:
-        logger.warning('\n[WARNING] No metadata were harvested! Therefore no data will be mapped and uploaded.')
+    ## check job request (processing) options
+    for opt in procOptions :
+        if hasattr(options,opt) : logger.debug(' |- %s:\t%s' % (opt.upper(),getattr(options,opt)))
     
+    ## HARVESTING mode:    
+    if (pstat['status']['h'] == 'tbd'):
+        logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
+        process_harvest(HV,reqlist)
+
+    ## MAPPINING - Mode:  
+    if (pstat['status']['m'] == 'tbd'):
+        logger.info('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        MP = B2FIND.MAPPER(OUT,options.outdir)
+        process_map(MP,reqlist)
+
+    ## VALIDATOR - Mode:
+    if (pstat['status']['v'] == 'tbd'):
+        logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        MP = B2FIND.MAPPER(OUT,options.outdir)
+        process_validate(MP,reqlist)
+
+    ## OAI-CONVERTING - Mode:  
+    if (pstat['status']['o'] == 'tbd'):
+        logger.info('\n|- OAI-Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        MP = B2FIND.MAPPER(OUT,options.outdir)
+        process_oaiconvert(MP, reqlist)
+    ## UPLOADING - Mode:  
+    if (pstat['status']['u'] == 'tbd'):
+        logger.info('\n|- Uploading started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        # create CKAN object                       
+        CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
+        UP = B2FIND.UPLOADER(CKAN, OUT)
+        logger.info(' |- Host:  \t%s' % CKAN.ip_host )
+        # start the process uploading:
+        process_upload(UP, reqlist)
     ## DELETING - Mode:
     if (pstat['status']['d'] == 'tbd'):
         # start the process deleting:
@@ -381,8 +319,10 @@ def process_map(MP, rlist):
             mapfile='%s/%s/%s-%s.xml' % (os.getcwd(),'mapfiles',request[0],request[3])
             if not os.path.isfile(mapfile):
                 mapfile='%s/%s/%s.xml' % (os.getcwd(),'mapfiles',request[3])
+                logger.warning('Can not access mapfile %s for community %s and mdformat %s ' % (mapfile,request[0],request[3]))
                 if not os.path.isfile(mapfile):
-                    logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+                    logger.critical('Can not access mapfile %s for mdformat %s ' % (mapfile,request[3]))
+                    sys.exit(-1)
             target=None
         print '   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S"))
         
@@ -394,7 +334,7 @@ def process_map(MP, rlist):
         results['time'] = ctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'m',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4] if len(request)> 4 else '','m',results)
 
 def process_validate(MP, rlist):
     ## process_validate (MAPPER object, rlist) - function
@@ -411,7 +351,10 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        outfile='oaidata/%s-%s/%s_*/%s' % (request[0],request[3],request[4],'validation.stat')
+        if len(request) > 4:
+            outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],request[4],'validation.stat')
+        else:
+            outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],'SET_*','validation.stat')
         print '   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S"))
         cstart = time.time()
 
@@ -424,7 +367,10 @@ def process_validate(MP, rlist):
         results['time'] = ctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+        if len(request) > 4:
+            MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+        else:
+            MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
 def process_oaiconvert(MP, rlist):
 
@@ -443,7 +389,7 @@ def process_oaiconvert(MP, rlist):
         MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
 
 
-def process_upload(UP, rlist, options):
+def process_upload(UP, rlist):
     ##HEW-D-ec credentials,ec = None,None
 
     def print_extra(key,jsondata):
@@ -870,7 +816,9 @@ def process_delete(OUT, dir, options):
         # save stats:
         OUT.save_stats(community+'-'+mdprefix,subset,'d',results)
 
-def parse_list_file(process,filename,community=None,subset=None,mdprefix=None,target_mdschema=None):
+def parse_list_file(options):
+##filename,community=None,subset=None,mdprefix=None,target_mdschema=None):
+    filename=options.list
     if(not os.path.isfile(filename)):
         logging.critical('[CRITICAL] Can not access job list file %s ' % filename)
         exit()
@@ -900,23 +848,23 @@ def parse_list_file(process,filename,community=None,subset=None,mdprefix=None,ta
             continue
        
         # sort out lines that don't match given community
-        if((community != None) and ( not request.startswith(community))):
+        if((options.community != None) and ( not request.startswith(options.community))):
             continue
 
         # sort out lines that don't match given mdprefix
-        if (mdprefix != None):
-            if ( not request.split()[3] == mdprefix) :
+        if (options.mdprefix != None):
+            if ( not request.split()[3] == options.mdprefix) :
               continue
             
         # sort out lines that don't match given subset
-        if (subset != None):
+        if (options.mdsubset != None):
             if len(request.split()) < 5 :
+                request+=' '+options.mdsubset
+            elif ( len(request.split()) > 4 and not request.split()[4] == options.mdsubset ) and (not ( options.mdsubset.endswith('*') and request.split()[4].startswith(options.mdsubset.translate(None, '*')))) :
                 continue
-            elif ( not request.split()[4] == subset ) and (not ( subset.endswith('*') and request.split()[4].startswith(subset.translate(None, '*')))) :
-                continue
-
-        if (target_mdschema != None):
-            request+=' '+target_mdschema  
+                
+        if (options.target_mdschema != None):
+            request+=' '+options.target_mdschema  
 
         reqlist.append(request.split())
         
@@ -954,12 +902,6 @@ def options_parser(modes):
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    p.add_option('--handle_check', 
-         help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file",
-         default=None,metavar='FILE')
-    p.add_option('--ckan_check',
-         help="check existence and checksum against existing datasets in CKAN database",
-         default='False', metavar='BOOLEAN')
     p.add_option('--outdir', '-d', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     
          
@@ -982,6 +924,10 @@ def options_parser(modes):
         "These options will be required to upload an dataset to a CKAN database.")
     group_upload.add_option('--iphost', '-i', help="IP adress of B2FIND portal (CKAN instance)", metavar='IP')
     group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, iby default taken from file $HOME/.netrc)",metavar='STRING')
+    group_upload.add_option('--handle_check', 
+         help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file", default=None,metavar='FILE')
+    group_upload.add_option('--ckan_check',
+         help="check existence and checksum against existing datasets in CKAN database", default='False', metavar='BOOLEAN')
     
     p.add_option_group(group_multi)
     p.add_option_group(group_single)

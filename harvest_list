@@ -26,7 +26,8 @@ hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hd
 ## PANGAEA
 pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
 ## GFZ data services
-gfz     http://doidb.wdc-terra.org/oaip/oai        ListIdentifiers   oai_dc DOIDB
+## gfz     http://doidb.wdc-terra.org/oaip/oai        ListIdentifiers   oai_dc DOIDB
+gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc solas
 # CEDA : Physics
