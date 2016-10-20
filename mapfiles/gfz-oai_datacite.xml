@@ -3,65 +3,68 @@
   <!-- Mappings for GFZ DataCite metadata -->
   <namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
-    <namespace ns="datacite" uri="http://datacite.org/schema/kernel-2.2/"/>
+    <namespace ns="r" uri="http://datacite.org/schema/kernel-3"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
     <field name="title">
-      <xpath>//datacite:title/text()</xpath>
+      <xpath>//r:titles/r:title/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>//datacite:description/text()/</xpath>
+      <xpath>//r:descriptions/r:description/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>//datacite:subject/text()</xpath>
+      <xpath>//r:subjectScheme</xpath>
     </field>
     <!-- Access data -->
-    <field name="url">
-      <xpath>//datacite:identifier/text()</xpath>
-    </field>
+   <field name="url">
+       <xpath>//r:resource/r:identifier/text()</xpath>
+   </field>
+   <field name="Checksum">
+       <xpath></xpath> 
+   </field>
     <field name="Rights">
-      <xpath>//datacite:rights/text()</xpath>
+      <xpath>//r:rights/text()</xpath>
     </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <xpath>//datacite:subject/text()</xpath>
+      <string>Earth Sciences</string>
     </field>
     <field name="author">
-      <xpath>//datacite:creatorName/text()</xpath>
+      <xpath>//r:creatorName</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//datacite:publisher/text()</xpath>
+      <xpath>//r:publisher/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//datacite:publicationYear/text()</xpath>
+      <xpath>//r:publicationYear/text()</xpath>
     </field>
    <!-- Formal data -->
     <field name="Language">
-      <xpath>//datacite:language/text()</xpath>
+      <xpath>//r:language/text()</xpath>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//datacite:description/text()</xpath>
+      <xpath>//r:geoLocationBox</xpath>
     </field>
     <field name="TemporalCoverage">
-      <xpath>//datacite:description/text()</xpath>
+      <xpath>//r:dates/r:date</xpath>
     </field>
     <field name="Format">
-      <xpath>//datacite:format/text()</xpath>
+      <xpath>//r:format/text()</xpath>
     </field>
     <!-- Additional Information -->
     <field name="Contact">
-      <xpath>//datacite:contributerName/text()</xpath>
+      <xpath>//r:contributorName/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
-    <field name="oai_identifier">
-      <xpath>//h:header/h:identifier/text()</xpath>
-    </field>
     <field name="oai_set">
       <xpath>//h:header/h:setSpec/text()</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier/text()</xpath>
     </field>
   </mappings>
 </mapping-table>
