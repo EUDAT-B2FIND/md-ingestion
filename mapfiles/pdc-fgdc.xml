@@ -2,9 +2,6 @@
 <mapping-table>
   <!-- Mappings for FGDC metadata from PDC -->
   <namespaces>
-  <!-- ??? there is no namespaces for PDC ???
-    <namespace ns="d" uri="http://www.???"/>
-   -->
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
   </namespaces>
