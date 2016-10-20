@@ -48,10 +48,10 @@ def setup_custom_logger(name,verbose):
         log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
         log_level=logging.WARNING
     elif verbose == 3 :
-        log_format='%(levelname)s at %(module)s in L %(lineno)s : %(message)s'
+        log_format='%(levelname)s in M %(module)s at l %(lineno)s : %(message)s'
         log_level=logging.INFO
     elif verbose > 3 :
-        log_format='%(levelname)s at %(funcName)s %(msecs)d in L %(lineno)s : %(message)s'
+        log_format='%(levelname)s in F %(funcName)s %(msecs)d at l %(lineno)s : %(message)s'
         log_level=logging.DEBUG
 
 
@@ -164,9 +164,9 @@ def main():
     ## START PROCESSING:
     logger.info("Start : \t%s\n" % now)
     logger.info("Loop over processes and related requests :\n")
-    logger.info('|- <Process> started : %s' % "<Time>")
-    logger.info(' |- Joblist: %s' % "<Filename of request list>")
-    print '   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<ReqNo.>','<Request description>','<Status>','<Time>')
+    logger.debug('|- <Process> started : %s' % "<Time>")
+    logger.debug(' |- Joblist: %s' % "<Filename of request list>")
+    logger.debug('\n   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<ReqNo.>','<Request description>','<Status>','<Time>'))
 
     OUT.save_stats('#Start','subset','StartTime',0)
     
@@ -222,6 +222,7 @@ def process(options,pstat,OUT):
 
 
     ## check job request (processing) options
+    logger.debug('|- Command line options')
     for opt in procOptions :
         if hasattr(options,opt) : logger.debug(' |- %s:\t%s' % (opt.upper(),getattr(options,opt)))
     
