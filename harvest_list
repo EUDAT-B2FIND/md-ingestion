@@ -27,7 +27,8 @@ hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hd
 pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
 ## GFZ data services
 ## gfz     http://doidb.wdc-terra.org/oaip/oai        ListIdentifiers   oai_dc DOIDB
-gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite
+gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite DOIDB
+gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite test_1
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc solas
 # CEDA : Physics
@@ -424,7 +425,7 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc driver
 cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc E10000
 cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
-gbif http://api.gbif.org/v1 JSONAPI json
+gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
@@ -438,6 +439,7 @@ b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;
+datacite  http://api.datacite.org    works json  dk.gbif
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-1 ## Griffith University; 38;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-2 ## CSSE Uni Melbourne; 4;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-3 ## Monash University; 39;
