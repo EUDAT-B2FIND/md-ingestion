@@ -306,8 +306,8 @@ class HARVESTER(object):
             # call action api:
             ## GBIF.action('package_list',{})
         
-            def __init__ (self, ip_host): ##, api_key):
-        	    self.ip_host = ip_host
+            def __init__ (self, api_url): ##, api_key):
+        	    self.api_url = api_url
         
             def JSONAPI(self, action, offset, key): # see oaireq
                 ## JSONAPI (action, jsondata) - method
@@ -329,19 +329,23 @@ class HARVESTER(object):
                 response=''
                 rvalue = 0
                 ## offset = 0
-                limit=100
-                api_url = "http://api.gbif.org/v1"
+                limit=100 ## None for DataCite-JSON !!!
+                api_url = self.api_url ### "http://api.gbif.org/v1"
                 if key :
                     action_url = "{apiurl}/{action}/{key}".format(apiurl=api_url,action=action,key=str(key))
-                else:
+                elif limit == None :
+                    action_url = "{apiurl}/{action}".format(apiurl=api_url,action=action)	
+                else :
                     action_url = "{apiurl}/{action}?offset={offset}&limit={limit}".format(apiurl=api_url,action=action,offset=str(offset),limit=str(limit))	
-               ## print '\t|-- Action %s\n\t|-- Calling %s\n\t|-- Offset %d ' % (action,action_url,offset)
+
+
+
                 try:
                    request = urllib2.Request(action_url)
                    ##if (self.api_key): request.add_header('Authorization', self.api_key)
                    response = urllib2.urlopen(request)
                 except urllib2.HTTPError as e:
-                   print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action)
+                   print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.api_url,action)
                    if ( e.code == 403 ):
                        print '\t\tAccess forbidden, maybe the API key is not valid?'
                        exit(e.code)
@@ -386,22 +390,36 @@ class HARVESTER(object):
         stats['tcount']=noffs
         fcount=0
         oldperc=0
+        ntotrecs=0
         records=list()
 
-        if req["lverb"] == 'JSONAPI':
+        if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## ?publisher-id=dk.gbif'  :
+            if req["mdsubset"] and req["lverb"] == 'works' :
+                haction='works?publisher-id='+req["mdsubset"]
+            else:
+                haction=req["lverb"]
             GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
             outtypedir='hjson'
             outtypeext='json'
             records=list()
-            oaireq=getattr(GBIF,req["lverb"], None)
+            oaireq=getattr(GBIF,'JSONAPI', None)
+            self.logger.debug(" Harvest method used is %s" % oaireq)
             choffset=0
             try:
-                chunk=oaireq(**{'action':'dataset','offset':choffset,'key':None})
-
-                while(not chunk['endOfRecords']):
-                    records.extend(chunk['results'])
-                    choffset+=100
-                    chunk =oaireq(**{'action':'dataset','offset':choffset,'key':None})
+                chunk=oaireq(**{'action':haction,'offset':choffset,'key':None})
+                ## chunk=oaireq(**{'action':req["lverb"],'offset':choffset,'key':None})
+                self.logger.debug(" Got (first) chunk %s (100 records) " % chunk['results'])
+                if req["lverb"] == 'dataset':
+                    while('endOfRecords' in chunk and not chunk['endOfRecords']):
+                        if 'results' in chunk :
+                            records.extend(chunk['results'])
+                        choffset+=100
+                        chunk =oaireq(**{'action':haction,'offset':choffset,'key':None})
+                        self.logger.debug(" Got next chunk %s (from %d + next 100 records) " % (chunk,choffset))
+                else:
+                    if 'data' in chunk :
+                        records.extend(chunk['data'])
+                    
             except (urllib2.HTTPError,ConnectionError) as e:
                 self.logger.critical("%s : during harvest request %s\n" % (e,req))
                 return -1
@@ -429,9 +447,9 @@ class HARVESTER(object):
         # Add all uid's to the related subset entry of the dictionary deleted_metadata
         deleted_metadata = dict()
         for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-            for subset in glob.glob(s+'/'+outtypedir+'/*.'+outtypeext):
-                # save the uid as key and the subset as value:
-                deleted_metadata[os.path.splitext(os.path.basename(subset))[0]] = subset
+            for ofile in glob.glob(s+'/'+outtypedir+'/*.'+outtypeext):
+                # save the uid as key and the file as value:
+                deleted_metadata[os.path.splitext(os.path.basename(subset))[0]] = ofile
    
         logging.debug('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
 
@@ -449,20 +467,28 @@ class HARVESTER(object):
                 print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 )
                 sys.stdout.flush()
 
-            if req["lverb"] == 'JSONAPI':
+            if req["lverb"] == 'dataset' or req["lverb"] == 'works'  :
+            ##HEW-D??? if req["lverb"] == 'JSONAPI':
 
                 # set oai_id and generate a uniquely identifier for this dataset:
-                oai_id = record['key']
+                if 'key' in record :
+                    oai_id = record['key']
+                elif 'id' in record :
+                    oai_id = record['id']
+
 
                 uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
                 outfile = subsetdir + '/' + outtypedir + '/' + os.path.basename(uid) + '.' + outtypeext
                 try:
-                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,record['key'],uid))
+                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
                     logging.debug('Try to write the harvested JSON record to %s' % outfile)
                     
                     # get the raw json content:
                     if (record is not None):
-                        record["Organisation"]=oaireq(**{'action':'organization','offset':0,'key':record["publishingOrganizationKey"]})["title"]
+                        if "publishingOrganizationKey" in record :
+                            record["Organisation"]=oaireq(**{'action':'organization','offset':0,'key':record["publishingOrganizationKey"]})["title"]
+
+
                         if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
                            os.makedirs(subsetdir+'/' + outtypedir)
                            
@@ -563,33 +589,22 @@ class HARVESTER(object):
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
                                                                 
-            # Need a new subset?
-            if (stats['count'] == count_break):
-                logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
-                subsetdir, count_set = self.save_subset(
-                                req, stats, subset, subsetdir, count_set)
+                # Need a new subset?
+                if (stats['count'] == count_break):
+                    logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
+                    subsetdir = self.save_subset(req, stats, subset, count_set)
+                    count_set += 1
                                                         
-                # add all subset stats to total stats and reset the temporal subset stats:
-                for key in ['tcount', 'ecount', 'count', 'dcount']:
-                    stats['tot'+key] += stats[key]
-                    stats[key] = 0
+                    # add all subset stats to total stats and reset the temporal subset stats:
+                    for key in ['tcount', 'ecount', 'count', 'dcount']:
+                        stats['tot'+key] += stats[key]
+                        stats[key] = 0
                             
-                    # start with a new time:
-                    stats['timestart'] = time.time()
+                        # start with a new time:
+                        stats['timestart'] = time.time()
                 
-            logging.debug('    | %d records written to last subset directory %s (if not failed).'% (
-                                stats['count'], subsetdir
-                            ))
+                    logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
 
-        ##HEW_?? except TypeError as e:
-        ##HEW_??     logging.error('    [ERROR] Type Error: %s' % e)
-        ##HEW_?? except NoRecordsMatch as e:
-        ##HEW_??     logging.error('    [ERROR] No Records Match: %s. Request: %s' % (e,','.join(request)))
-        ##HEW_?? except Exception as e:
-        ##HEW_??     logging.error("    [ERROR] %s" % traceback.format_exc())
-        ##HEW_?? else:
-
-        # check for outdated harvested xml files and add to deleted_metadata, if not already listed
         now = time.time()
         for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
             for f in glob.glob(s+'/xml/*.xml'):
@@ -668,12 +683,11 @@ class HARVESTER(object):
                     stats['totdcount']
                 )
 
-        # save the current subset:
+        # save the last subset:
         if (stats['count'] > 0):
-                self.save_subset(req, stats, subset, subsetdir, count_set)
+                lastsubset = self.save_subset(req, stats, subset, count_set)
             
-    def save_subset(self, req, stats, subset, subsetdir, count_set):
-        ## save_subset(self, req, stats, subset, subsetdir, count_set) - method
+    def save_subset(self, req, stats, subset, count_set):
         # Save stats per subset and add subset item to the convert_list via OUT.print_convert_list()
         #
         # Return Values:
@@ -694,13 +708,14 @@ class HARVESTER(object):
         )
         
         # add subset directory to the convert_list:
+        subsetpath='/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
         self.OUT.print_convert_list(
-            req['community'], req['url'], req['mdprefix'], subsetdir, self.fromdate
+            req['community'], req['url'], req['mdprefix'], subsetpath, self.fromdate
         )
-        
-        count_set += 1
-            
-        return('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)]), count_set)
+
+        nextsetpath='/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set+1)])
+
+        return nextsetpath
 
 
 class MAPPER(object):
@@ -1724,9 +1739,12 @@ class MAPPER(object):
             func=func.strip()
             if func.startswith('//'): 
                 fxpath= '.'+re.sub(r'/text()','',func)
+                self.logger.debug('xpath %s' % fxpath)
                 try:
                     for elem in obj.findall(fxpath,ns):
+                        self.logger.debug(' //elem %s' % elem)
                         if elem.text :
+                            self.logger.debug(' |- elem.text %s' % elem.text)
                             retlist.append(elem.text)
                 except Exception as e:
                     print 'ERROR %s : during xpath extraction of %s' % (e,fxpath)
@@ -1734,7 +1752,10 @@ class MAPPER(object):
             elif func == '/':
                 try:
                     for elem in obj.findall('.//',ns):
-                        retlist.append(elem.text)
+                        self.logger.debug(' /elem %s' % elem)
+                        if elem.text :
+                            self.logger.debug(' |- elem.text %s' % elem.text)
+                            retlist.append(elem.text)
                 except Exception as e:
                     print 'ERROR %s : during xpath extraction of %s' % (e,'./')
                     return []
@@ -1749,12 +1770,13 @@ class MAPPER(object):
 
         for line in xrules:
           try:
+            retval=list()
             m = re.match(r'(\s+)<field name="(.*?)">', line)
             if m:
                 field=m.group(2)
-                if field in ['Discipline','oai_set','Source']: ## HEW!!! add all mandatory fields !!
+                if field in ['Discipline','oai_set','Source']: ## set default for mandatory fields !!
                     retval=['Not stated']
-                self.logger.info(' Field:xpathrule : %-10s:%20s\n' % (field,line))
+                self.logger.info(' Field:xpathrule : %-10s:%-20s\n' % (field,line))
             else:
                 xpath=''
                 m2 = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)').search(line)
@@ -1764,6 +1786,7 @@ class MAPPER(object):
                     retval=xpath
                 elif m2:
                     xpath=m2.group(3)
+                    self.logger.debug(' xpath %-10s' % xpath)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
                 else:
                     continue
@@ -2030,7 +2053,10 @@ class MAPPER(object):
                             continue
                     else: # B2FIND facet not in jsondata
                         if facet == 'title':
-                            jsondata[facet] = jsondata['notes'][:20]
+                            if 'notes' in jsondata :
+                                jsondata[facet] = jsondata['notes'][:20]
+                            else:
+                                jsondata[facet] = 'Not stated'
                 if spvalue :
                     jsondata["spatial"]=spvalue
                 if stime and etime :
