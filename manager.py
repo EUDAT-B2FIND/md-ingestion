@@ -428,26 +428,17 @@ def process_upload(UP, rlist):
         "fgdc" : "No specification for fgdc available",
         "hdcp2" : "No specification for hdcp2 available"
         }
+
     for request in rlist:
         ir+=1
-        print '   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S"))
-        community, source, verb, mdprefix = request[0:4]
-        ##HEW-D mdprefix = request[3]
-
-        # set subset:
-        if (not request[4]):
-            subset = 'SET_1' ## or 2,...
-        elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
-            subset = request[4]+'1' ## or 2,...
-            ## req["mdsubset"]=None
-##HEW??        elif re.search(r'\d+&',request[4]) is not None:
-        elif request[4][-1].isdigit() and  request[4][-2] == '_' :
+        logging.info('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+        community, source, dir = request[0:3]
+        mdprefix = request[3]
+        if len(request) > 4:
             subset = request[4]
         else:
-            subset = request[4]+'_1'
-            
-        ##HEW-D dir = dir+'/'+subset
-        path = '/'.join([options.outdir,community+'-'+mdprefix,subset])
+            subset = 'SET_1'
+        dir = dir+'/'+subset
         
         results = {
             'count':0,
@@ -456,16 +447,14 @@ def process_upload(UP, rlist):
             'time':0
         }
         
-##HEW-D        if not (CKAN.action('group_show',{"id":community}))['success'] :
-        if not community in (CKAN.action('group_list'))['result'] :
-          logger.critical("Community (CKAN group) %s must exist!!!" % community)
+        if CKAN.action('group_show',{"id":community}) == None or not (CKAN.action('group_show',{"id":community})['success']) :
+          logging.error(" CKAN group %s does not exist" % community)
           sys.exit()
 
-        if not os.path.exists(path):
-            logger.critical('Can not access directory %s' % (path))
-            
-            # save stats:
-            UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
+        dir=os.path.abspath('oaidata/'+community+'-'+mdprefix+'/'+subset)
+
+        if not os.path.exists(dir):
+            logging.critical('[ERROR] The directory "%s" does not exist! No files for uploading are found!\n(Maybe your upload list has old items?)' % (dir))
             
             continue
         
@@ -478,7 +467,7 @@ def process_upload(UP, rlist):
         uploadstart = time.time()
         
         # find all .json files in dir/json:
-        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        files = filter(lambda x: x.endswith('.json'), os.listdir(dir+'/json'))
         
         results['tcount'] = len(files)
         
@@ -497,13 +486,13 @@ def process_upload(UP, rlist):
                 sys.stdout.flush()
 
             jsondata = dict()
-            pathfname= path+'/json/'+filename
+            pathfname= dir+'/json/'+filename
             if ( os.path.getsize(pathfname) > 0 ):
                 with open(pathfname, 'r') as f:
                     try:
                         jsondata=json.loads(f.read(),encoding = 'utf-8')
                     except:
-                        logger.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
+                        logger.error('    | [ERROR] Cannot load the json file %s' % dir+'/json/'+filename)
                         results['ecount'] += 1
                         continue
             else:
