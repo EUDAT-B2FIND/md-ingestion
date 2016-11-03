@@ -70,11 +70,11 @@ dariah http://isn3.zrc-sazu.si/etnofolk/OAI-2.0/oai.php ListIdentifiers  oai_dc 
 dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
 ## CLARIN endpoints , as it is harvested by DASISH ??
 # MPI-PL #h=    ?= #DASISH = 145245
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListIdentifiers cmdi mpi-pl_
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi mpi-pl_
 # UniOfCopenhagen  #h=    ?= #DASISH = 7
 clarin  http://clarin.dk/oaiprovider ListIdentifiers cmdi ucph_
 # Viena Language resources #h=    ?= #DASISH = 14324
-clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
+clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc vienna-lang-res_
 ## CESSDA endpoint
 # ??ERROR : --> ListIdentifiers ?? 
 #h=115
