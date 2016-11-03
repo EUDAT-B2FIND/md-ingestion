@@ -62,6 +62,9 @@
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
     <field name="oai_identifier">
       <xpath>//r:header/r:identifier/text()</xpath>
     </field>

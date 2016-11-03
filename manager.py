@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 """manager.py
-  Management of metadata within the EUDAT Joint Metadata Domain (B2FIND)
-  MD Ingestion : Harvest from OAI provider, convert/map XML (to JSON), semantic mapping of MD schema, remap to B2FIND xml, and upload to B2FIND portal
+  Management of metadata within the EUDAT Metadata Service B2FIND
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ), John Mrziglod (DKRZ)
 Licensed under AGPLv3.
@@ -15,30 +14,55 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
-~~~~~~~
-For some functions (processes) you haved to install additional libraries
-
-Process                Libraries      Install commands
-
-harvest                pyoai, lxml    easy_install pyoai, lxml or pip install pyoai, lxml 
-
-Modified by  c/o DKRZ 2013   Heinrich Widmann
+Modified by  c/o DKRZ 2014   Heinrich Widmann
+  New mode 'oaiconvert' added 
+Modified by  c/o DKRZ 2015   Heinrich Widmann
+  Validation mode enhanced, redesign and bug fixes
+Modified by  c/o DKRZ 2016   Heinrich Widmann
+  Adapt to new B2HANDLE library
 """
 
 import B2FIND 
-from epicclient import EpicClient,Credentials
+from b2handle.clientcredentials import PIDClientCredentials
+from b2handle.handleclient import EUDATHandleClient
+from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
 import os, optparse, sys, glob
 from subprocess import call,Popen,PIPE
 import time, datetime
 import simplejson as json
 import copy
 
-import logging as log
+import logging
+logger = logging.getLogger()
 import traceback
-
 import hashlib
 import codecs
+
+def setup_custom_logger(name,verbose):
+    log_format='%(levelname)s :  %(message)s'
+    log_level=logging.CRITICAL
+    if verbose == 1 :
+        log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
+        log_level=logging.ERROR
+    elif  verbose == 2 :
+        log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
+        log_level=logging.WARNING
+    elif verbose == 3 :
+        log_format='%(levelname)s in M %(module)s at l %(lineno)s : %(message)s'
+        log_level=logging.INFO
+    elif verbose > 3 :
+        log_format='%(levelname)s in F %(funcName)s %(msecs)d at l %(lineno)s : %(message)s'
+        log_level=logging.DEBUG
+
+
+    formatter = logging.Formatter(fmt=log_format)
+
+    handler = logging.StreamHandler()
+    handler.setFormatter(formatter)
+
+    logger.setLevel(log_level)
+    logger.addHandler(handler)
+    return logger
 
 def main():
     global TimeStart
@@ -46,7 +70,7 @@ def main():
 
     # check the version from svn:
     global ManagerVersion
-    ManagerVersion = '1.0'
+    ManagerVersion = '2.0'
 
     # parse command line options and arguments:
     modes=['h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
@@ -60,19 +84,25 @@ def main():
     # make jobdir
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     jid = os.getpid()
-    
-    # create logger and OUT output handler and initialise it:
-    global logger
+
+    # Output instance
     OUT = B2FIND.OUTPUT(pstat,now,jid,options)
-    logger = log.getLogger()
-    
+
+    ## logger
+    logger = setup_custom_logger('root',options.verbose)
+
+    ## logger = logging.getLogger('root')
+    ##HEW-D logging.basicConfig(format=log_format, level=log_level) ### logging.DEBUG)
     # print out general info:
-    logger.info('\nVersion:  \t%s' % ManagerVersion)
+    logger.info('Version:  \t%s' % ManagerVersion)
     logger.info('Run mode:   \t%s' % pstat['short'][mode])
-    logger.debug('Process ID:\t%s' % str(jid))
-    logger.debug('Processing status:\t')
+    logger.info('Process ID:\t%s' % str(jid))
+    logger.debug('Processing modes (to be done):\t')
+
     for key in pstat['status']:
-        logger.debug(" %s\t%s" % (key, pstat['status'][key]))
+        if  pstat['status'][key] == 'tbd':
+            logger.debug(" %s\t%s" % (key, pstat['status'][key]))
+
     # check options:
     if ( pstat['status']['u'] == 'tbd'):
     
@@ -82,7 +112,7 @@ def main():
              from os.path import expanduser
              home = expanduser("~")
              if(not os.path.isfile(home+'/.netrc')):
-                logger.critical('[CRITICAL] Can not access job host authentification file %s/.netrc ' % home )
+                logger.critical('Can not access job host authentification file %s/.netrc ' % home )
                 exit()
              f = open(home+'/.netrc','r')
              lines=f.read().splitlines()
@@ -97,7 +127,7 @@ def main():
                 'NOTE : For upload mode write access to %s by API key must be allowed' % options.iphost
              )
              if (not options.auth):
-                logger.critical('[CRITICAL] API key is neither given by option --auth nor can retrieved from %s/.netrc' % home )
+                logger.critical('API key is neither given by option --auth nor can retrieved from %s/.netrc' % home )
                 exit()
         else:
             logger.critical(
@@ -107,8 +137,8 @@ def main():
             sys.exit(-1)
             
     # check options:
-    if (not(options.epic_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
-        print "\n[WARNING] You want to upload datasets to the productive host %s without EPIC handling!" % (options.iphost)
+    if (not(options.handle_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
+        logger.warning("You are going to upload datasets to the host %s with generating PID's!" % (options.iphost))
         answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
@@ -117,8 +147,8 @@ def main():
             exit()
             
         print '\n'
-    elif (options.epic_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
-        print "\n[WARNING] You want to upload datasets to the non-productive host %s with EPIC handling!" % (options.iphost)
+    elif (options.handle_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
+        logger.error("\n[WARNING] You are going to upload datasets to the host %s with generating handles!" % (options.iphost))
         answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
@@ -132,7 +162,12 @@ def main():
     OUT.HTML_print_begin()
     
     ## START PROCESSING:
-    logger.info("\nStart :\t\t%s" % now)
+    logger.info("Start : \t%s\n" % now)
+    logger.info("Loop over processes and related requests :\n")
+    logger.debug('|- <Process> started : %s' % "<Time>")
+    logger.debug(' |- Joblist: %s' % "<Filename of request list>")
+    logger.debug('\n   |# %-15s : %-30s \n\t|- %-10s |@ %-10s |' % ('<ReqNo.>','<Request description>','<Status>','<Time>'))
+
     OUT.save_stats('#Start','subset','StartTime',0)
     
     try:
@@ -140,162 +175,94 @@ def main():
         process(options,pstat,OUT)
         exit()
     except Exception, e:
-        logger.critical("[CRITICAL] Program is aborted because of a critical error! Description:")
-        logger.critical("%s" % traceback.format_exc())
+        logging.critical("[CRITICAL] Program is aborted because of a critical error! Description:")
+        logging.critical("%s" % traceback.format_exc())
         exit()
     finally:
         # exit the program and open results HTML file:
         exit_program(OUT)
         now = time.strftime("%Y-%m-%d %H:%M:%S")
-        logger.info("\nEnd :\t\t%s" % now)
-
+        logger.info("End of processing :\t\t%s" % now)
 
 def process(options,pstat,OUT):
     ## process (options,pstat,OUT) - function
-    # Starts the specific process routines for harvesting, converting, mapping, validating, oai-converting and/or uploading
+    # Starts processing as specified in pstat['tbd'] and 
+    #  according the request list given bey the options
     #
     # Parameters:
     # -----------
-    # 1. (OptionsParser object)    - 
+    # 1. options (OptionsParser object)
+    # 2. pstat   (process status dict)  
     #
-    # Return Values:
-    # --------------
-    # return values
-
     
-    # set single or multi mode:
+    # set list of request lsits for single or multi mode:
     mode = None
+    procOptions=['community','source','verb','mdprefix','mdsubset','target_mdschema']
     if(options.source):
         mode = 'single'
-        
-        if ( not(
-            options.community and
-            options.source and
-            options.verb and
-            options.mdprefix
-        )):
-            logger.critical("\033[1m [CRITICAL] " + "When single mode is used following options are required:\n\t%s" % (
-                '\n\t'.join(['community','source','verb','mdprefix'])) + "\033[0;0m" 
-            )
-            exit()
-        
-    elif(options.list):
-        mode = 'multi'
-    else:
-        logger.critical("[CRITICAL] Either option source (option -s) or list of sources (option -l) is required")
-        exit()
-    
-    ## HARVESTING mode:    
-    if (pstat['status']['h'] == 'tbd'):
-        # start the process harvesting:
-        logger.info('\n## Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
-        
-        if mode is 'multi':
-            logger.info(' - Joblist:  \t%s' % options.list)
-            if (options.community != '') : logger.info(' - Community:\t%s' % options.community)
-            if (options.mdsubset != None) : logger.info(' - OAI subset:\t%s' % options.mdsubset)
-            process_harvest(HV,parse_list_file('harvest',options.list, options.community,options.mdsubset))
-        else:
-            process_harvest(HV,[[
+        mandParams=['community','verb','mdprefix'] # mandatory processing params
+        for param in mandParams :
+            if not getattr(options,param) :
+                logger.critical("Processing parameter %s is required in single mode" % param)
+                sys.exit(-1)
+        reqlist=[[
                 options.community,
                 options.source,
                 options.verb,
                 options.mdprefix,
-                options.mdsubset
-            ]])
-
-    if (OUT.convert_list or pstat['status']['h'] == 'no'):
-        ## CONVERTING - Mode:  
-        if (pstat['status']['c'] == 'tbd'):
-            CV = B2FIND.CONVERTER(OUT)
-        
-            # start the process converting:
-            if mode is 'multi':
-                process_convert(CV, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
-            else:
-                process_convert(CV,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]])
-        ## MAPPINING - Mode:  
-        if (pstat['status']['m'] == 'tbd'):
-            # start the process mapping:
-            logger.info('\n## Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-            CV = B2FIND.CONVERTER(OUT)
-        
-            # start the process mapping:
-            if mode is 'multi':
-                logger.info(' - Joblist:  \t%s' % OUT.convert_list )
-                if (options.community != '') : logger.info(' - Community:\t%s' % options.community)
-                if (options.mdsubset != None) : logger.info(' - OAI subset:\t%s' % options.mdsubset)
-                process_map(CV, parse_list_file('convert', OUT.convert_list or options.list, options.community,options.mdsubset))
-            else:
-                process_map(CV,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]])
-        ## VALIDATOR - Mode:  
-        if (pstat['status']['v'] == 'tbd'):
-            CV = B2FIND.CONVERTER(OUT)
-        
-            # start the process converting:
-            if mode is 'multi':
-                process_validate(CV, parse_list_file('validate', OUT.convert_list or options.list, options.community,options.mdsubset))
-            else:
-                process_validate(CV,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]])
-        ## OAI-CONVERTING - Mode:  
-        if (pstat['status']['o'] == 'tbd'):
-            CV = B2FIND.CONVERTER(OUT)
-        
-            # start the process converting:
-            if mode is 'multi':
-                process_oaiconvert(CV, parse_list_file('oaiconvert', OUT.convert_list or options.list, options.community,options.mdsubset))
-            else:
-                process_oaiconvert(CV,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]])
+                options.mdsubset,
+                options.ckan_check,
+                options.handle_check,
+                options.target_mdschema
+            ]]
+    elif(options.list):
+        mode = 'multi'
+        logger.debug(' |- Joblist:  \t%s' % options.list)
+        reqlist=parse_list_file(options)
 
 
-        ## UPLOADING - Mode:  
-        if (pstat['status']['u'] == 'tbd'):
-            # create CKAN object                       
-            CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
-            UP = B2FIND.UPLOADER(CKAN, OUT)
-
-            # start the process uploading:
-            if mode is 'multi':
-                process_upload(UP, parse_list_file('upload', OUT.convert_list or options.list, options.community, options.mdsubset), options)
-            else:
-                process_upload(UP,[[
-                    options.community,
-                    options.source,
-                    options.mdprefix,
-                    options.outdir + '/' + options.mdprefix,
-                    options.mdsubset
-                ]],options)
-    else:
-        logger.warning('\n[WARNING] No metadata were harvested! Therefore no data will be mapped and uploaded.')
+    ## check job request (processing) options
+    logger.debug('|- Command line options')
+    for opt in procOptions :
+        if hasattr(options,opt) : logger.debug(' |- %s:\t%s' % (opt.upper(),getattr(options,opt)))
     
+    ## HARVESTING mode:    
+    if (pstat['status']['h'] == 'tbd'):
+        logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
+        process_harvest(HV,reqlist)
+
+    ## MAPPINING - Mode:  
+    if (pstat['status']['m'] == 'tbd'):
+        logger.info('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        MP = B2FIND.MAPPER(OUT,options.outdir)
+        process_map(MP,reqlist)
+
+    ## VALIDATOR - Mode:
+    if (pstat['status']['v'] == 'tbd'):
+        logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        MP = B2FIND.MAPPER(OUT,options.outdir)
+        process_validate(MP,reqlist)
+
+    ## OAI-CONVERTING - Mode:  
+    if (pstat['status']['o'] == 'tbd'):
+        logger.info('\n|- OAI-Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        MP = B2FIND.MAPPER(OUT,options.outdir)
+        process_oaiconvert(MP, reqlist)
+    ## UPLOADING - Mode:  
+    if (pstat['status']['u'] == 'tbd'):
+        logger.info('\n|- Uploading started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        # create CKAN object                       
+        CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
+        UP = B2FIND.UPLOADER(CKAN, OUT)
+        logger.info(' |- Host:  \t%s' % CKAN.ip_host )
+        # start the process uploading:
+        process_upload(UP, reqlist)
     ## DELETING - Mode:
     if (pstat['status']['d'] == 'tbd'):
         # start the process deleting:
+        logger.info('\n|- Deleting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+
         if mode is 'multi':
             dir = options.outdir+'/delete'
             if os.path.exists(dir):
@@ -322,9 +289,8 @@ def process_harvest(HV, rlist):
     for request in rlist:
         ir+=1
         harveststart = time.time()
-        logger.info('\n |- %s : H-Request >%d< started :\n\t %s' % (time.strftime("%H:%M:%S"),ir,request))
-        
-        results = HV.harvest(ir,request)
+        print '   |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S"))
+        results = HV.harvest(request)
     
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
@@ -332,38 +298,13 @@ def process_harvest(HV, rlist):
         harvesttime=time.time()-harveststart
         #results['time'] = harvesttime
 
-def process_convert(CV, rlist):
-    ## process_convert (CONVERTER object, rlist) - function
+def process_map(MP, rlist):
+    ## process_map (MAPPER object, rlist) - function
     # Maps per request.
     #
     # Parameters:
     # -----------
-    # (object)  CONVERTER - object from the class CONVERTER
-    # (list)    rlist - list of requests 
-    #
-    # Return Values:
-    # --------------
-    # None
-    for request in rlist:
-        logger.info('\n## Converting request %s##' % request)
-        
-        cstart = time.time()
-        
-        results = CV.convert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
-
-        ctime=time.time()-cstart
-        results['time'] = ctime
-        
-        # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'c',results)
-    
-def process_map(CV, rlist):
-    ## process_map (CONVERTER object, rlist) - function
-    # Maps per request.
-    #
-    # Parameters:
-    # -----------
-    # (object)  CONVERTER - object from the class CONVERTER
+    # (object)  MAPPER - object from the class MAPPER
     # (list)    rlist - list of requests 
     #
     # Return Values:
@@ -372,87 +313,141 @@ def process_map(CV, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        logger.info('\n |- %s : M-Request >%d< started :\n\t\t %s' % (time.strftime("%H:%M:%S"),ir,request))
+        if (len (request) > 5):            
+            mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[5])
+            target=request[5]
+        else:
+            mapfile='%s/%s/%s-%s.xml' % (os.getcwd(),'mapfiles',request[0],request[3])
+            if not os.path.isfile(mapfile):
+                mapfile='%s/%s/%s.xml' % (os.getcwd(),'mapfiles',request[3])
+                logger.warning('Can not access mapfile %s for community %s and mdformat %s ' % (mapfile,request[0],request[3]))
+                if not os.path.isfile(mapfile):
+                    logger.critical('Can not access mapfile %s for mdformat %s ' % (mapfile,request[3]))
+                    sys.exit(-1)
+            target=None
+        print '   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S"))
         
         cstart = time.time()
         
-        results = CV.map(ir,request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.map(request,target)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'m',results)
-        
-def process_validate(CV, rlist):
-    ## process_validate (CONVERTER object, rlist) - function
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4] if len(request)> 4 else '','m',results)
+
+def process_validate(MP, rlist):
+    ## process_validate (MAPPER object, rlist) - function
     # Validates per request.
     #
     # Parameters:
     # -----------
-    # (object)  VALIDATOR - object from the class CONVERTER
+    # (object)  VALIDATOR - object from the class MAPPER
     # (list)    rlist - list of request lists 
     #
     # Return Values:
     # --------------
     # None
+    ir=0
     for request in rlist:
-        logger.info('\n## Validating request %s##' % request)
-        
+        ir+=1
+        if len(request) > 4:
+            outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],request[4],'validation.stat')
+        else:
+            outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],'SET_*','validation.stat')
+        print '   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S"))
         cstart = time.time()
+
+        ### HEW!!!
+        target=None
         
-        results = CV.validate(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.validate(request,target)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+        if len(request) > 4:
+            MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+        else:
+            MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
-def process_oaiconvert(CV, rlist):
+def process_oaiconvert(MP, rlist):
 
+    ir=0
     for request in rlist:
-        logger.info('\n## OAI-Mapping request %s##' % request)
-        
+        ir+=1
+        print '   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S"))
         rcstart = time.time()
         
-        results = CV.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]))
+        results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]),request[5])
 
-        print results
         rctime=time.time()-rcstart
         results['time'] = rctime
         
         # save stats:
-        CV.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
 
 
-def process_upload(UP, rlist, options):
-    credentials,ec = None,None
+def process_upload(UP, rlist):
+    ##HEW-D-ec credentials,ec = None,None
 
-    # create credentials if required
-    if (options.epic_check):
+    def print_extra(key,jsondata):
+        for v in jsondata['extras']:
+            if v['key'] == key:
+                print ' Key : %s | Value : %s |' % (v['key'],v['value'])
+ 
+
+    # create credentials and handle client if required
+    if (options.handle_check):
           try:
-              credentials = Credentials('os',options.epic_check)
-              credentials.parse()
+              cred = PIDClientCredentials.load_from_JSON('credentials_11098')
           except Exception, err:
-              logger.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.epic_check))
-              p.print_help()
+              logger.critical("[CRITICAL %s ] : Could not create credentials from credstore %s" % (err,options.handle_check))
+              ##p.print_help()
               sys.exit(-1)
           else:
-              logger.debug("Create EPIC client instance to add uuid to handle server")
-              ec = EpicClient(credentials)
+              logger.debug("Create EUDATHandleClient instance")
+              client = EUDATHandleClient.instantiate_with_credentials(cred)
 
     CKAN = UP.CKAN
     last_community = ''
     package_list = dict()
 
+    ir=0
+    mdschemas={
+        "ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd",
+        "oai_ddi" : "http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd",
+        "marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
+        "iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
+        "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+        "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
+        "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
+        "json" : "http://json-schema.org/latest/json-schema-core.html",
+        "fgdc" : "No specification for fgdc available",
+        "hdcp2" : "No specification for hdcp2 available"
+        }
     for request in rlist:
-        logger.info('\n## Uploading request %s##' % request)
-        
-        community, source, dir = request[0:3]
-        mdprefix = request[3]
-        subset = request[4]
-        dir = dir+'/'+subset
+        ir+=1
+        print '   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S"))
+        community, source, verb, mdprefix = request[0:4]
+        ##HEW-D mdprefix = request[3]
+
+        # set subset:
+        if (not request[4]):
+            subset = 'SET_1' ## or 2,...
+        elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
+            subset = request[4]+'1' ## or 2,...
+            ## req["mdsubset"]=None
+##HEW??        elif re.search(r'\d+&',request[4]) is not None:
+        elif request[4][-1].isdigit() and  request[4][-2] == '_' :
+            subset = request[4]
+        else:
+            subset = request[4]+'_1'
+            
+        ##HEW-D dir = dir+'/'+subset
+        path = '/'.join([options.outdir,community+'-'+mdprefix,subset])
         
         results = {
             'count':0,
@@ -461,19 +456,20 @@ def process_upload(UP, rlist, options):
             'time':0
         }
         
-        if not (CKAN.action('group_show',{"id":community}))['success'] :
-          self.logger.error("[ERROR]: Community (CKAN group) %s must exist!!!" % community)
+##HEW-D        if not (CKAN.action('group_show',{"id":community}))['success'] :
+        if not community in (CKAN.action('group_list'))['result'] :
+          logger.critical("Community (CKAN group) %s must exist!!!" % community)
           sys.exit()
 
-        if not os.path.exists(dir):
-            logger.error('[ERROR] The directory "%s" does not exist! No files for uploading are found!\n(Maybe your upload list has old items?)' % (dir))
+        if not os.path.exists(path):
+            logger.critical('Can not access directory %s' % (path))
             
             # save stats:
             UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
             
             continue
         
-        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
+        logger.debug('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
         
         if (last_community != community and options.ckan_check == 'True'):
             last_community = community
@@ -482,49 +478,49 @@ def process_upload(UP, rlist, options):
         uploadstart = time.time()
         
         # find all .json files in dir/json:
-        files = filter(lambda x: x.endswith('.json'), os.listdir(dir+'/json'))
+        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
         
         results['tcount'] = len(files)
         
         scount = 0
-        fcount = 1
+        fcount = 0
+        oldperc = 0
         for filename in files:
-            if (fcount<scount):
-              fcount += 1
-              continue
+            ## counter and progress bar
+            fcount+=1
+            if (fcount<scount): continue
+            perc=int(fcount*100/int(len(files)))
+            bartags=perc/5
+            if perc%10 == 0 and perc != oldperc :
+                oldperc=perc
+                print "\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc )
+                sys.stdout.flush()
 
             jsondata = dict()
-        
-            if ( os.path.getsize(dir+'/json/'+filename) > 0 ):
-                with open(dir+'/json/'+filename, 'r') as f:
+            pathfname= path+'/json/'+filename
+            if ( os.path.getsize(pathfname) > 0 ):
+                with open(pathfname, 'r') as f:
                     try:
-                        jsondata=json.loads(f.read())
+                        jsondata=json.loads(f.read(),encoding = 'utf-8')
                     except:
-                        log.error('    | [ERROR] Cannot load the json file %s' % dir+'/json/'+filename)
+                        logger.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
                         continue
             else:
                 results['ecount'] += 1
                 continue
 
-            # get dataset name from filename (a uuid generated identifier):
+            # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
-            logger.info('    | u | %-4d | %-40s |' % (fcount,ds_id))
-            
+            logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
+
             # get OAI identifier from json data extra field 'oai_identifier':
-            oai_id  = None
-            for extra in jsondata['extras']:
-                if(extra['key'] == 'oai_identifier'):
-                    oai_id = extra['value']
-                    break
+            oai_id = jsondata['oai_identifier'][0]
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             
-            ### VALIDATE JSON DATA
-            if (UP.validate(jsondata) < 1):
-                logger.info('        |-> Upload is aborted')
-                results['ecount'] += 1
-                continue
+            ### CHECK JSON DATA for upload
+            jsondata=UP.check(jsondata)
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:
@@ -542,58 +538,71 @@ def process_upload(UP, rlist, options):
             elif (community == 'sdl'):
                 mdaccess =reqpre+'&identifier=oai::record/'+oai_id
 
-            jsondata['extras'].append({
-                     "key" : "MetaDataAccess",
-                     "value" : mdaccess
-                    })
+            ###HEW!!! if (field.split('.')[0] == 'extras'): # append extras field
+            ###HEW!!!        self.add_unique_to_dict_list(newds['extras'], field.split('.')[1], value)
+
+            ## Move all CKAN extra fields to the list jsondata['extras']
             
-            # determine checksum of json record and append
-            try:
-                # delete the extra field 'MapperVersion' from check_data
-                check_data = copy.deepcopy(jsondata)
-                extras_counter = 0
-                for extra in check_data['extras']:
-                    if(extra['key'] == 'MapperVersion'):
-                        check_data['extras'].pop(extras_counter)
-                        break
-                    extras_counter  += 1
-                    
-                checksum=hashlib.md5(unicode(json.dumps(check_data))).hexdigest()
-            except UnicodeEncodeError:
-                logger.error('        |-> [ERROR] Unicode encoding failed during md checksum determination')
-                checksum=None
-            else:
-                jsondata['version'] = checksum
-                
+            jsondata['MetaDataAccess']=mdaccess
+            jsondata['group']=community
+
+            ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
+            jsondata=UP.json2ckan(jsondata)
+
             # Set the tag ManagerVersion:
             jsondata['extras'].append({
                      "key" : "ManagerVersion",
                      "value" : ManagerVersion
                     })
 
-            
-            ### CHECK STATE OF DATASET IN CKAN AND EPIC:
+            # determine checksum of json record and append
+            try:
+                ##HEW-? checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
+                encoding='utf-8'
+                ##HEW-D encoding='ISO-8859-15'
+                ##HEW-D encoding='latin-1'
+                checksum=hashlib.md5(json.dumps(jsondata, encoding='latin1').strip()).hexdigest() ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? ; removed : .encode(encoding,'ignore')
+            except UnicodeEncodeError:
+                logger.error('        |-> Unicode encoding failed during md checksum determination')
+                checksum=None
+            else:
+                jsondata['version'] = checksum
+                            
+            ### CHECK STATE OF DATASET IN CKAN AND HANDLE SERVER:
             # status of data set
             dsstatus="unknown"
      
-            # check against handle server EPIC
-            epicstatus="unknown"
-            if (options.epic_check):
-                pid = credentials.prefix + "/eudat-jmd_" + ds_id
-                checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
-                ManagerVersion2 = ec.getValueFromHandle(pid,"JMDVERSION")
-                B2findHost = ec.getValueFromHandle(pid,"B2FINDHOST")
+            # check against handle server
+            handlestatus="unknown"
+            pidRecord=dict()
+            if (options.handle_check):
 
-                if (checksum2 == None):
-                    logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
-                    epicstatus="new"
-                elif ( checksum == checksum2) and ( ManagerVersion2 == ManagerVersion ) and ( B2findHost == options.iphost ) :
-                    logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
-                    epicstatus="unchanged"
+                try:
+                    pid = cred.get_prefix() + '/eudat-jmd_' + ds_id 
+                    rec = client.retrieve_handle_record_json(pid)
+                except Exception, err:
+                    logger.error("[CRITICAL : %s] in client.retrieve_handle_record_json(%s)" % (err,pid))
                 else:
-                    logger.debug("        |-> checksum, ManagerVersion or B2FIND host of pid %s changed" % (pid))
-                    epicstatus="changed"
-                dsstatus=epicstatus
+                    logger.debug("Retrieved PID %s" % pid )
+
+                if rec : ## Handle exists
+                    for pidAttr in ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
+                        try:
+                            pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
+                        except Exception, err:
+                            logger.error("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) )
+                        else:
+                            logger.debug("Got pidRecord[%s]:%s from PID %s" % (pidRecord[pidAttr],pidAttr,pid))
+
+                    if ( pidRecord["CHECKSUM"] == checksum) and ( pidRecord["JMDVERSION"] == ManagerVersion ) and ( pidRecord["B2FINDHOST"] == options.iphost ) :
+                        logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
+                        handlestatus="unchanged"
+                    else:
+                        logger.debug("        |-> checksum, ManagerVersion or B2FIND host of pid %s changed" % (pid))
+                        handlestatus="changed"
+                else:
+                    handlestatus="new"
+                dsstatus=handlestatus
 
             # check against CKAN database
             ckanstatus = 'unknown'                  
@@ -603,45 +612,78 @@ def process_upload(UP, rlist, options):
                     dsstatus = ckanstatus
 
             upload = 0
-            # depending on status from epic handle upload record to B2FIND 
-            logger.info('        |-> Dataset is [%s]' % (dsstatus))
+            # depending on status of handle upload record to B2FIND 
+            logger.debug('        |-> Dataset is [%s]' % (dsstatus))
             if ( dsstatus == "unchanged") : # no action required
-                logger.info('        |-> %s' % ('No upload required'))
+                logger.warning('        |-> %s' % ('No update required'))
             else:
-                upload = UP.upload(ds_id,dsstatus,community,jsondata)
+                try:
+                    upload = UP.upload(ds_id,dsstatus,community,jsondata)
+                except Exception, err:
+                    logger.critical("[CRITICAL : %s] in call of UP.upload" % err )
+                else:
+                    logger.debug(" Upload of %s returns with upload code %s" % (ds_id,upload))
+
                 if (upload == 1):
-                    logger.info('        |-> Creation of %s record succeed' % dsstatus )
+                    logger.warning('        |-> Creation of %s record succeed' % dsstatus )
                 elif (upload == 2):
-                    logger.info('        |-> Update of %s record succeed' % dsstatus )
+                    logger.warning('        |-> Update of %s record succeed' % dsstatus )
                     upload=1
                 else:
-                    logger.info('        |-> Upload of %s record failed ' % dsstatus )
-            
-            # update handle in EPIC server                                                                                  
-            if (options.epic_check and upload == 1):
-##HEW-T (create EPIC handle as well if upload/date failed !!! :
-##HEW-T            if (options.epic_check): ##HEW and upload == 1):
-                if (epicstatus == "new"):
-                    logger.info("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
-                    npid=ec.createHandle(pid,index1,checksum)
-                    ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
-                    ec.modifyHandle(pid,'COMMUNITY',community)
-                    ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
-                elif (epicstatus == "unchanged"):
-                    logger.info("        |-> No action required for %s" % pid)
+                    logger.critical('        |-> Failed upload of %s record %s' % (dsstatus, ds_id ))
+                    ## logger.debug('        |-> JSON data:\n\ttitle:%s\n\tauthor:%s\n\tnotes:%s\n' % (json.dumps(jsondata['title'], indent=2),json.dumps(jsondata['author'], indent=2),json.dumps(jsondata['notes'], indent=2)))
+                    results['ecount'] += 1
+
+            # update PID in handle server                           
+            if (options.handle_check):
+                if (handlestatus == "unchanged"):
+                    logging.warning("        |-> No action required for %s" % pid)
                 else:
-                    logger.info("        |-> Update checksum of pid %s to %s" % (pid,checksum))
-                    ec.modifyHandle(pid,'CHECKSUM',checksum)
-                    ec.modifyHandle(pid,'JMDVERSION',ManagerVersion)
-                    ec.modifyHandle(pid,'COMMUNITY',community)
-                    ec.modifyHandle(pid,'B2FINDHOST',options.iphost)
+                    if (upload >= 1): # new or changed record
+                        ckands='http://b2find.eudat.eu/dataset/'+ds_id
+                        if (handlestatus == "new"): # Create new PID
+                            logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                            try:
+                                npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
+                            except (HandleAuthenticationError,HandleSyntaxError) as err :
+                                logger.critical("[CRITICAL : %s] in client.register_handle" % err )
+                            except Exception, err:
+                                logger.critical("[CRITICAL : %s] in client.register_handle" % err )
+                                sys.exit()
+                            else:
+                                logger.debug(" New handle %s with checksum %s created" % (pid,checksum))
+                        else: # PID changed => update URL and checksum
+                            logging.warning("        |-> Update handle %s with changed checksum %s" % (pid,checksum))
+                            try:
+                                client.modify_handle_value(pid,CHECKSUM=checksum,URL=ckands) ##HEW-T !!! as long as URLs not all updated !!
+                                ##client.modify_handle_value(pid,CHECKSUM=checksum)
+                            except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                                logger.critical("[CRITICAL : %s] client.modify_handle_value %s" % (err,pid))
+                            except Exception, err:
+                                logger.critical("[CRITICAL : %s]  client.modify_handle_value %s" % (err,pid))
+                                ## sys.exit()
+                            else:
+                                logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
+
+                    try: # update PID entries in all cases (except handle status is 'unchanged'
+                        client.modify_handle_value(pid, JMDVERSION=ManagerVersion, COMMUNITY=community, SUBSET=subset, B2FINDHOST=options.iphost, IS_METADATA=True, MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
+                    except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
+                    except Exception, err:
+                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
+                        ## sys.exit()
+                    else:
+                        logging.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
 
             results['count'] +=  upload
             
-            fcount += 1
-            
         uploadtime=time.time()-uploadstart
         results['time'] = uploadtime
+        print '   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+                    results['tcount'],
+                    results['count'],
+                    results['ecount']
+                )
         
         # save stats:
         UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
@@ -654,24 +696,22 @@ def process_delete(OUT, dir, options):
     CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
     UP = B2FIND.UPLOADER(CKAN, OUT)
     
-    credentials,ec = None,None
+    ##HEW-D-ec credentials,ec = None,None
 
     # create credentials
     try:
-        credentials = Credentials('os','credentials_11098')
-        credentials.parse()
+        cred = b2handle.clientcredentials.PIDClientCredentials.load_from_JSON('credentials_11098')
     except Exception, err:
-        logger.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.epic_check))
+        logging.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.handle_check))
         p.print_help()
         sys.exit(-1)
     else:
-        logger.debug("Create EPIC client instance to add uuid to handle server")
-        ec = EpicClient(credentials)
+        logging.debug("Create handle client instance to add uuid to handle server")
 
     for delete_file in glob.glob(dir+'/*.del'):
         community, mdprefix = os.path.splitext(os.path.basename(delete_file))[0].split('-')
         
-        logger.info('\n## Deleting datasets from community "%s" ##' % (community))
+        logging.info('\n## Deleting datasets from community "%s" ##' % (community))
         
         # get packages from the group in CKAN:
         UP.get_packages(community)
@@ -683,7 +723,7 @@ def process_delete(OUT, dir, options):
             file_content = f.read()
             f.close()
         except IOError as (errno, strerror):
-            self.logger.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
+            logging.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
             f.close
         else:
             # rename the file in a crash backup file:
@@ -698,7 +738,7 @@ def process_delete(OUT, dir, options):
 
         # use a try-except-finally environment to gurantee that no deleted metadata information will be lost:
         try:
-            logger.info('    |   | %-4s | %-50s | %-50s |\n    |%s|' % ('#','oai identifier','CKAN identifier',"-" * 116))
+            logging.info('    |   | %-4s | %-50s | %-50s |\n    |%s|' % ('#','oai identifier','CKAN identifier',"-" * 116))
             
             deletestart = time.time()
      
@@ -715,50 +755,57 @@ def process_delete(OUT, dir, options):
                 ds = str(uid)
 
                 # output:
-                logger.info('    | d | %-4d | %-50s | %-50s |' % (results['tcount'],identifier,ds))
+                logging.info('    | d | %-4d | %-50s | %-50s |' % (results['tcount'],identifier,ds))
 
-                ### CHECK STATUS OF DATASET IN CKAN AND EPIC:
+                ### CHECK STATUS OF DATASET IN CKAN AND PID:
                 # status of data set
                 dsstatus="unknown"
          
-                # check against handle server EPIC
-                epicstatus="unknown"
-                pid = credentials.prefix + "/eudat-jmd_" + ds
-                checksum2 = ec.getValueFromHandle(pid,"CHECKSUM")
+                # check against handle server
+                handlestatus="unknown"
+                ##HEW-D-ec???  pid = credentials.prefix + "/eudat-jmd_" + ds
+                pid = "11098/eudat-jmd_" + ds_id
+                pidRecord["CHECKSUM"] = client.get_value_from_handle(pid, "CHECKSUM")
 
-                if (checksum2 == None):
-                  logger.debug("        |-> Can not access pid %s to get checksum" % (pid))
-                  epicstatus="new"
+                if (pidRecord["CHECKSUM"] == None):
+                  logging.debug("        |-> Can not access pid %s to get checksum" % (pid))
+                  handlestatus="new"
                 else:
-                  logger.debug("        |-> pid %s exists" % (pid))
-                  epicstatus="exist"
+                  logging.debug("        |-> pid %s exists" % (pid))
+                  handlestatus="exist"
 
                 # check against CKAN database
                 ckanstatus = 'unknown'                  
                 ckanstatus=UP.check_dataset(ds,None)
 
                 delete = 0
-                # depending on status from epic handle delete record from B2FIND
-                if ( epicstatus == "new" and ckanstatus == "new") : # no action required
-                    logger.info('        |-> %s' % ('No deletion required'))
+                # depending on handle status delete record from B2FIND
+                if ( handlestatus == "new" and ckanstatus == "new") : # no action required
+                    logging.info('        |-> %s' % ('No deletion required'))
                 else:
                     delete = UP.delete(ds,ckanstatus)
                     if (delete == 1):
-                        logger.info('        |-> %s' % ('Deletion was successful'))
+                        logging.info('        |-> %s' % ('Deletion was successful'))
                         results['count'] +=  1
                         
-                        # delete handle in EPIC server (to keep the symmetry between both servers)
-                        if (epicstatus == "exist"):
-                           logger.info("        |-> Delete handle %s with checksum %s" % (pid,checksum2))
-                           ec.deleteHandle(pid)
+                        # delete handle (to keep the symmetry between handle and B2FIND server)
+                        if (handlestatus == "exist"):
+                           logging.info("        |-> Delete handle %s with checksum %s" % (pid,pidRecord["CHECKSUM"]))
+                           try:
+                               client.delete_handle(pid)
+                           except GenericHandleError as err:
+                               logging.error('[ERROR] Unexpected Error: %s' % err)
+                           except Exception, e:
+                               logging.error('[ERROR] Unexpected Error: %s' % e)
+
                         else:
-                           logger.info("        |-> No action (deletion) required for handle %s" % pid)
+                           logging.info("        |-> No action (deletion) required for handle %s" % pid)
                     else:
-                        logger.info('        |-> %s' % ('Deletion failed'))
+                        logging.info('        |-> %s' % ('Deletion failed'))
                         results['ecount'] += 1
         except Exception, e:
-            logger.error('[ERROR] Unexpected Error: %s' % e)
-            logger.error('You find the ids of the deleted metadata in "%s"' % (delete_file+'.crash-backup'))
+            logging.error('[ERROR] Unexpected Error: %s' % e)
+            logging.error('You find the ids of the deleted metadata in "%s"' % (delete_file+'.crash-backup'))
             raise
         else:
             # all worked fine you can remove the crash-backup file:
@@ -770,9 +817,11 @@ def process_delete(OUT, dir, options):
         # save stats:
         OUT.save_stats(community+'-'+mdprefix,subset,'d',results)
 
-def parse_list_file(process,filename,community='',subset=''):
+def parse_list_file(options):
+##filename,community=None,subset=None,mdprefix=None,target_mdschema=None):
+    filename=options.list
     if(not os.path.isfile(filename)):
-        logger.critical('[CRITICAL] Can not access job list file %s ' % filename)
+        logging.critical('[CRITICAL] Can not access job list file %s ' % filename)
         exit()
     else:
         file = open(filename, 'r')
@@ -785,7 +834,6 @@ def parse_list_file(process,filename,community='',subset=''):
 
     l = 0
     for request in lines:
-    
         l += 1
         
         # recognize multi-lines-comments (starts with '<#' and ends with '>'):
@@ -801,53 +849,60 @@ def parse_list_file(process,filename,community='',subset=''):
             continue
        
         # sort out lines that don't match given community
-        if((community != '') and ( not request.startswith(community))):
+        if((options.community != None) and ( not request.startswith(options.community))):
             continue
-            
-        # sort out lines that don't match given subset
-        if (subset != None):
-            if len(request.split()) < 5 :
-               continue
-            elif ( not request.split()[4] == subset ) and (not ( subset.endswith('*') and request.split()[4].startswith(subset.translate(None, '*')))) :
+
+        # sort out lines that don't match given mdprefix
+        if (options.mdprefix != None):
+            if ( not request.split()[3] == options.mdprefix) :
               continue
             
+        # sort out lines that don't match given subset
+        if (options.mdsubset != None):
+            if len(request.split()) < 5 :
+                request+=' '+options.mdsubset
+            elif ( len(request.split()) > 4 and not request.split()[4] == options.mdsubset ) and (not ( options.mdsubset.endswith('*') and request.split()[4].startswith(options.mdsubset.translate(None, '*')))) :
+                continue
+                
+        if (options.target_mdschema != None):
+            request+=' '+options.target_mdschema  
+
         reqlist.append(request.split())
         
     if len(reqlist) == 0:
-        logger.error(' No matching request found in %s' % filename)
+        logging.critical(' No matching request found in %s' % filename)
         exit()
  
     return reqlist
 
 def options_parser(modes):
     
-    descI="""           I.  Ingestion of metadata comprising                                           
-              - 1. Harvesting of XML files from OAI-PMH MD provider(s)\n\t
-              - 2. Converting/Mapping XML to JSON and semantic mapping of metadata to CKAN schema
-              - 3. Uploading resulting JSON {key:value} dict\'s as datasets to JMD portal
-"""
     p = optparse.OptionParser(
-        description = """Description :                                                    
-           Management of metadata within EUDAT B2FIND, i.e.    
-""" + descI,
+        description = '''Description                                                              
+===========                                                                           
+ Management of metadata within EUDAT B2FIND, comprising                                      
+      - Harvesting of XML files from OAI-PMH MD provider(s)\n\t
+
+              - Mapping XML to JSON and semantic mapping of metadata to B2FIND schema\n\t
+
+\n              - Validation of the JSON records and create coverage statistics\n\t
+              - Uploading resulting JSON {key:value} dict\'s as datasets to the B2FIND portal\n\t
+              - OAI compatible creation of XML records in oai_b2find format\n\t
+    
+''',
         formatter = optparse.TitledHelpFormatter(),
         prog = 'manager.py',
         epilog='For any further information and documentation please look at the README.md file or at the EUDAT wiki (http://eudat.eu/b2find).',
-        version = "%prog " + ManagerVersion
+        version = "%prog " + ManagerVersion,
+        usage = "%prog [options]" 
     )
         
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
-    p.add_option('--community', '-c', help="community where data harvested from and uploaded to", default='', metavar='STRING')
+    p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    p.add_option('--epic_check', 
-         help="check and generate handles of CKAN datasets in handle server EPIC and with credentials as specified in given credstore file",
-         default=None,metavar='FILE')
-    p.add_option('--ckan_check',
-         help="check existence and checksum against existing datasets in CKAN database",
-         default='False', metavar='BOOLEAN')
     p.add_option('--outdir', '-d', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     
          
@@ -864,19 +919,22 @@ def options_parser(modes):
     group_single.add_option('--verb', help="Verbs or requests defined in OAI-PMH, can be ListRecords (default) or ListIdentifers here",default='ListRecords', metavar='STRING')
     group_single.add_option('--mdsubset', help="Subset of harvested meta data",default=None, metavar='STRING')
     group_single.add_option('--mdprefix', help="Prefix of harvested meta data",default=None, metavar='STRING')
+    group_single.add_option('--target_mdschema', help="Meta data schema of the target",default=None, metavar='STRING')
     
     group_upload = optparse.OptionGroup(p, "Upload Options",
         "These options will be required to upload an dataset to a CKAN database.")
     group_upload.add_option('--iphost', '-i', help="IP adress of B2FIND portal (CKAN instance)", metavar='IP')
     group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, iby default taken from file $HOME/.netrc)",metavar='STRING')
+    group_upload.add_option('--handle_check', 
+         help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file", default=None,metavar='FILE')
+    group_upload.add_option('--ckan_check',
+         help="check existence and checksum against existing datasets in CKAN database", default='False', metavar='BOOLEAN')
     
     p.add_option_group(group_multi)
     p.add_option_group(group_single)
     p.add_option_group(group_upload)
     
     return p
-    
-    
 
 def pstat_init (p,modes,mode,source,iphost):
     if (mode):
@@ -940,11 +998,7 @@ def exit_program (OUT, message=''):
     OUT.HTML_print_end()
 
     if (OUT.options.verbose != False):
-      try:
-        os.system('firefox '+OUT.jobdir+'/overview.html')
-      except Exception, err:
-        print("[ERROR] %s : Can not open result html in browser" % err)
-        os.system('cat '+OUT.jobdir+'/overview.html')
+      logging.debug('For more info open HTML file %s' % OUT.jobdir+'/overview.html')
 
 if __name__ == "__main__":
     main()

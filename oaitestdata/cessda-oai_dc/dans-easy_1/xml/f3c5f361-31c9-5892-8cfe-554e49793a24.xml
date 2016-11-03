@@ -1,0 +1,55 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:63011</identifier>
+    <datestamp>2016-03-22T21:20:41Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/dc.xsd">
+      <dc:title>Hosbekkeweg 2 te Borne in de gemeente Borne</dc:title>
+      <dc:title>Archeologisch bureauonderzoek en verkennend booronderzoek</dc:title>
+      <dc:creator>Broeke, ir. E.M. ten (Econsultancy bv)</dc:creator>
+      <dc:subject xml:lang="en">Archaeology</dc:subject>
+      <dc:subject xml:lang="nl">scheme=ABR-complex; code=XXX; value=Onbekend;</dc:subject>
+      <dc:description>Econsultancy heeft in opdracht van de gemeente Borne een archeologisch onderzoek uitgevoerd ter plaatse van het plangebied gelegen aan de Hosbekkeweg 2 te Borne in de gemeente Borne. In het plangebied zal de bestaande woonboerderij en een tweetal veestallen worden gesloopt. Vervolgens zal de nieuwbouw van een crematorium met een bijbehorend parkeerterrein worden gerealiseerd. Het archeologisch onderzoek is noodzakelijk om te bepalen wat de verwachtingswaarde is voor de aanwezigheid van archeologische waarden binnen het plangebied en of deze door de voorgenomen bodemingrepen kunnen worden aangetast.
+
+Conclusie
+De gespecificeerde archeologische verwachting, zoals die is weergegeven tijdens het bureauonderzoek, wordt door het booronderzoek alleen bevestigd voor het oostelijke en centraal-oostelijke deel van het plangebied. Geconcludeerd wordt dat dit deel van het plangebied zijn archeologische verwachting behoud voor de aanwezigheid van archeologische resten uit alle archeologische perioden vanaf het (Laat-)Paleolithicum. Deze is op de archeologische beleidsadvieskaart van gemeente Borne middelhoog en blijft dan ook middelhoog. Indien hier bodemingrepen gaan plaatsvinden die dieper gaan dan de huidige bouwvoor (eerste 30 cm) kan een eventueel aanwezige archeologische vindplaats worden verstoord. Voor zover bekend zijn binnen het oostelijke en centraal-oostelijke deel van het plangebied de aanleg van een parkeerterrein gepland. Hiervoor zullen geen bodemingrepen worden uitgevoerd die dieper gaan dan de huidige bouwvoor.
+Voor het centraal-westelijke en westelijke deel van het plangebied wordt geconcludeerd dat de middelhoge tot hoge archeologische verwachting kan worden bijgesteld naar een lage verwachting. Er zijn geen gevolgen voor de voorgenomen bodemingrepen binnen deze delen van het plangebied, zijnde de nieuwbouw van een crematorium.
+
+Selectieadvies
+Op grond van de resultaten van het inventariserend veldonderzoek en in relatie tot waar de geplande bodemingrepen (bouwwerkzaamheden) gaan plaatsvinden, adviseert Econsultancy om, in het kader van de Archeologische Monumentenzorg (AMZ) geen vervolgonderzoek te laten plaatsvinden. 
+Indien er in de toekomst bouwwerkzaamheden gaan plaatsvinden in het oostelijke en centraal-oostelijke deel van het plangebied (daar waar intacte veldpodzolgronden zijn aangetroffen), of indien het inrichtingsplan wordt aangepast waardoor er binnen deze terreindelen toch diepe bodemverstorende ingrepen gaan plaatsvinden, wordt geadviseerd een aanvullend inventariserend veldonderzoek te laten uitvoeren in de vorm van een karterend booronderzoek. Door middel van een karterend booronderzoek kan een inventarisatie worden gemaakt van eventueel aanwezige archeologische vondsten en/of sporen, en zo ja, om hiermee een eerste indruk te verkrijgen van de kwaliteit (gaafheid en conservering), aard, datering, omvang en diepteligging hiervan.
+Dit selectieadvies is voorgelegd aan het bevoegd gezag in kwestie, Burgemeester en Wethouders van de gemeente Borne en door middel van een selectiebesluit als zodanig bekrachtigd (beoordeling archeologisch rapport door mevrouw drs. S. Wentink van Het Oversticht). Met bovenstaand selectieadvies wordt ingestemd.</dc:description>
+      <dc:publisher>Econsultancy bv</dc:publisher>
+      <dc:date>2015-12-14</dc:date>
+      <dc:date>2015-12-14</dc:date>
+      <dc:date>2015-12-14</dc:date>
+      <dc:date>2015-12-14</dc:date>
+      <dc:date>2015-12-14</dc:date>
+      <dc:type>Text</dc:type>
+      <dc:format>application/pdf</dc:format>
+      <dc:identifier>urn:nbn:nl:ui:13-vlsp-yz</dc:identifier>
+      <dc:identifier>10.17026/dans-xar-9vyn</dc:identifier>
+      <dc:identifier>3294427100</dc:identifier>
+      <dc:identifier>3294435100</dc:identifier>
+      <dc:identifier>ISSN=2210-8785</dc:identifier>
+      <dc:identifier>eDNA-project=a26158</dc:identifier>
+      <dc:identifier>BRN.GEM.ARC (Project)</dc:identifier>
+      <dc:identifier>15045453 (Rapportnummer)</dc:identifier>
+      <dc:identifier>https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:63011</dc:identifier>
+      <dc:language>nl</dc:language>
+      <dc:coverage>28G</dc:coverage>
+      <dc:coverage>Hosbekkeweg 2</dc:coverage>
+      <dc:coverage>Borne</dc:coverage>
+      <dc:coverage>Borne</dc:coverage>
+      <dc:coverage>Overijssel</dc:coverage>
+      <dc:coverage>scheme=ABR-periode; code=XXX; value=Onbekend;</dc:coverage>
+      <dc:coverage>east=246373; north=479918; units=m; projection=Dutch National Grid;</dc:coverage>
+      <dc:coverage>&#966;&#955;=52.29963925 6.72679388; projection=http://www.opengis.net/def/crs/EPSG/0/4326; units=decimal; source=RD 246373 479918;</dc:coverage>
+      <dc:rights>GROUP_ACCESS</dc:rights>
+      <dc:rights>http://www.dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSlicenceagreementUK.pdf</dc:rights>
+      <dc:rights>Econsultancy bv</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

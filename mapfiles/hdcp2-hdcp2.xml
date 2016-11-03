@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for HDCP2 metadata from HDCP2. -->
+  <namespaces>
+    <namespace ns="hdcp2" uri="http://hdcp2.uni-koeln.de/namespace"/>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+  </namespaces>
+  <mappings>
+    <!-- General information -->
+    <field name="title">
+      <xpath>//hdcp2:metadata/hdcp2:globalAttributes/hdcp2:Title/text()</xpath>
+      <xpath>//hdcp2:metadata/hdcp2:globalAttributes/hdcp2:title/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>string-join(distinct-values(//hdcp2:productDescription/text()), '\n')</xpath>
+    </field>
+    <field name="tags">
+      <xpath>string-join(distinct-values(//hdcp2:keywords/hdcp2:keywordlist/hdcp2:experimentType/text() | //hdcp2:keywords/hdcp2:keywordlist/hdcp2:measurementType/text() | //hdcp2:keywords/hdcp2:keywordlist/hdcp2:mainGroup/text() | //hdcp2:keywords/hdcp2:keywordlist/hdcp2:variableGroup/text()) ,";")</xpath>
+    </field>
+    <!-- Access data  -->
+    <field name="url">
+      <xpath>string-join(distinct-values(//hdcp2:filename/text() | //r:source/text()),';')</xpath>
+    </field>
+    <field name="Checksum">
+    </field>
+    <field name="Rights">
+      <xpath>//hdcp2:Licence/text()</xpath>
+    </field>
+    <!-- Provenance data -->
+    <field name="Discipline">
+      <xpath>//hdcp2:Source/text()</xpath>
+    </field>
+    <field name="author">
+      <xpath>string-join(distinct-values(//hdcp2:Author/text()), '; ')</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//hdcp2:Institution/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//hdcp2:publicationDate/text()</xpath>
+    </field>
+    <!-- Formal data -->    
+    <field name="Language">
+      <xpath>//hdcp2:language/text()</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//hdcp2:instrumentLocation/hdcp2:latitude/text(),//hdcp2:instrumentLocation/hdcp2:longitude/text()</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//hdcp2:temporalExtent/hdcp2:startDate/text(),//hdcp2:temporalExtent/hdcp2:endDate/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//hdcp2:fileFormat</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//hdcp2:contactPersons/hdcp2:contactPerson/hdcp2:email/text()</xpath>
+    </field>
+   <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>

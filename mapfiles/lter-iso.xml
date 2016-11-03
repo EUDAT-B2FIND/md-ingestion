@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for ISO19139 format metadata from ENES. -->
+  <!-- Mappings for ISO19139 format metadata from DEIMS. -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
@@ -22,7 +22,7 @@
     </field>
     <!-- Access data  -->
     <field name="url">
-      <xpath>//gmd:MD_Metadata/gmd:dataSetURI/gco:CharacterString/text(), //gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:otherCitationDetails/gco:CharacterString/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text(), //gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:otherCitationDetails/gco:CharacterString/text()</xpath>
    </field>
    <field name="Checksum">
    </field>
@@ -62,7 +62,7 @@
       <xpath>normalize-space(string(/))</xpath>
     </field>
     <field name="oai_identifier">
-      <xpath>//r:header/r:identifier/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text(), //r:header/r:identifier/text()</xpath>
     </field>
     <field name="oai_set">
       <xpath>//r:header/r:setSpec/text()</xpath>

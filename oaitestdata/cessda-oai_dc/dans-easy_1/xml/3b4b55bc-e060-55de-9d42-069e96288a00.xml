@@ -1,0 +1,43 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:28654</identifier>
+    <datestamp>2016-03-22T18:38:26Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/dc.xsd">
+      <dc:title>Bouwlocatie Angerensestraat te Gendt, gemeente Lingewaard</dc:title>
+      <dc:title>een inventariserend archeologisch onderzoek</dc:title>
+      <dc:title>RAAPNOTITIE 787</dc:title>
+      <dc:creator>Boemaars, N.M.J.E.</dc:creator>
+      <dc:subject xml:lang="en">Archaeology</dc:subject>
+      <dc:subject>PROSPECTIE</dc:subject>
+      <dc:description>onderzoeksrapport</dc:description>
+      <dc:publisher>RAAP Archeologisch Adviesbureau</dc:publisher>
+      <dc:date>2004</dc:date>
+      <dc:date>2009-12-29</dc:date>
+      <dc:date>2010-01-05</dc:date>
+      <dc:type>rapport</dc:type>
+      <dc:type>Text</dc:type>
+      <dc:format>10 p.</dc:format>
+      <dc:identifier>ISSN=0925-6369</dc:identifier>
+      <dc:identifier>eDNA-project=a10366</dc:identifier>
+      <dc:identifier>twips.dans.knaw.nl--7452934610620753687-1262679324333</dc:identifier>
+      <dc:identifier>urn:nbn:nl:ui:13-dav-cmg</dc:identifier>
+      <dc:identifier>https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:28654</dc:identifier>
+      <dc:identifier>10.17026/dans-znj-cr7t</dc:identifier>
+      <dc:language>nl</dc:language>
+      <dc:relation>787</dc:relation>
+      <dc:relation>RAAP-notitie</dc:relation>
+      <dc:coverage>Nederland</dc:coverage>
+      <dc:coverage>Lingewaard</dc:coverage>
+      <dc:coverage>Gelderland</dc:coverage>
+      <dc:coverage>Angerensestraat</dc:coverage>
+      <dc:coverage>Gendt</dc:coverage>
+      <dc:coverage>e-ne (MARC21)</dc:coverage>
+      <dc:rights>OPEN_ACCESS_FOR_REGISTERED_USERS</dc:rights>
+      <dc:rights>http://www.dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSlicenceagreementUK.pdf</dc:rights>
+      <dc:rights>RAAP archeologisch adviesbureau</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

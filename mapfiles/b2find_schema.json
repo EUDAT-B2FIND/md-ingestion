@@ -1,0 +1,203 @@
+{
+    "Title" : { 
+        "name" : "title",
+        "definition" : "A name or title by which a resource is known",
+        "ckanName" : "title",
+        "ckanType" : "default",
+	"display" : "shown",
+        "type" : "textual",
+        "occurence" : "1",
+        "obligation" : "mandatory"
+    },
+    "Description" : { 
+        "name" : "description",
+        "definition" : "An additional information describing the content of the resource. Could be an abstract, a summary or a Table of Content.",
+        "ckanName" : "notes",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "occurence" : "0-1",
+        "obligation" : "recommended"
+    },
+    "Tags" : {
+        "name" : "tags",
+        "description" : "",
+        "ckanName" : "tags",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "dictList",
+        "occurence" : "0-n",
+        "obligation" : "optional"
+    },
+    "Source" : {
+        "name" : "source",
+        "description" : "",
+        "ckanName" : "url",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "mandatory"
+    }, 
+    "DOI" : {
+        "name" : "DOI",
+        "description" : "",
+        "ckanName" : "DOI",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "optional"
+    }, 
+    "PID" : {
+        "name" : "PID",
+        "description" : "",
+        "ckanName" : "PID",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "optional"
+    },
+    "Checksum" : {
+        "name" : "Checksum",
+        "description" : "",
+        "ckanName" : "Checksum",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "optional"
+    },
+    "Rights" : {
+        "name" : "rights",
+        "description" : "",
+        "ckanName" : "Rights",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    }, 
+    "Discipline" : {
+        "name" : "discipline",
+        "description" : "",
+        "ckanName" : "Discipline",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "Creator" : {
+        "name" : "creator",
+        "description" : "",
+        "ckanName" : "author",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "Publisher" :  {
+        "name" : "publisher",
+        "description" : "",
+        "ckanName" : "Publisher",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "PublicationYear" : {
+        "name" : "publicationyear",
+        "description" : "",
+        "ckanName" : "PublicationYear",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "date",
+        "obligation" : "optional"
+    },
+    "Language" : {
+        "name" : "language",
+        "description" : "",
+        "ckanName" : "Language",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "date",
+        "obligation" : "optional"
+    }, 
+    "SpatialCoverage" : {
+        "name" : "spatialcoverage",
+        "description" : "",
+        "ckanName" : "SpatialCoverage",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "date",
+        "obligation" : "optional"
+    }, 
+    "TemporalCoverage" :  {
+        "name" : "temporalcoverage",
+        "description" : "",
+        "ckanName" : "TemporalCoverage",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "date",
+        "obligation" : "optional"
+    }, 
+    "spatial" : {
+        "name" : "",
+        "description" : "",
+        "ckanName" : "spatial",
+        "ckanType" : "extra",
+	"display" : "hidden",
+        "type" : "date",
+        "obligation" : "optional"
+    }, 
+    "Format" : {
+        "name" : "",
+        "description" : "",
+        "ckanName" : "Format",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    }, 
+    "Contact" : {
+        "name" : "contact",
+        "description" : "",
+        "ckanName" : "Contact",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "MetaDataAccess" : {
+        "name" : "metadataccess",
+        "description" : "",
+        "ckanName" : "metadata",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "optional"
+    },
+    "PublicationTimestamp" :  {
+        "name" : "publicationtimestamp",
+        "description" : "",
+        "ckanName" : "PublicationTimestamp",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "date",
+        "obligation" : "optional"
+    },
+    "Community" : {
+        "name" : "community",
+        "description" : "",
+        "ckanName" : "group",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "OAI set" : {
+        "name" : "oai_set",
+        "description" : "",
+        "ckanName" : "oai_set",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "mandatory"
+    }
+}

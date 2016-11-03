@@ -68,26 +68,26 @@ do
   ndone=$(grep -c '| u |' ${outfile})
   nrcreated=$(grep -c 'Creation of ' ${outfile})
   nrupdated=$(grep -c 'Update of ' ${outfile})
-  (( nrfailed = $(grep -c 'failed' $outfile) + $(grep -c 'aborted' $outfile) ))
-  nrnoaction=$(grep -c 'No upload' $outfile)
+  nrfailed=$(grep -c 'Failed upload of' ${outfile})
+  nrnoaction=$(grep -c 'No update required' $outfile)
   nhcreated=$(grep -c 'Create a new handle' ${outfile})
-  nhupdated=$(grep -c 'Update checksum' ${outfile})
-  nhfailed=0 ##HEW-??? $(grep -c 'failed' $outfile)
+  nhupdated=$(grep -c 'Update handle' ${outfile})
+  nhfailed=$(grep -c 'CRITICAL' $outfile) ##HEW-??? $(grep -c 'failed' $outfile)
   nhnoaction=$(grep -c 'No action required' $outfile)
-  printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "$nfiles" "$jobfile" "$status" "$pid" "$(grep 'Start' ${outfile} | cut -d' ' -f3)" "$(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1)" "${comm_set}"
+  printf '\n | %-6s : %-25s --> %-10s # %-6s |[ %-8s - %-8s ]| < %-20s |\n' "$nfiles" "$jobfile" "$status" "$pid" "$(grep 'Start :' ${outfile} | cut -d' ' -f3)" "$(stat ${outfile} | grep 'Change: [[:digit:]]' | cut -d' ' -f2,3 | cut -d'.' -f1)" "${comm_set}"
   for subset in ${sets}
   do
     srupl=$(grep $subset ${outfile})
     if [ -z "$srupl" ]
     then
       printf '...\n   '
-    else
-      printf "\n  |- $srupl "
+##    else
+##      printf "\n  |- $srupl "
     fi
   done
 
   printf '\n    |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$npfrec" "#$ndone" "+$nrcreated" "%$nrupdated" "?$nrfailed" "/$nrnoaction" 
-  printf '\n    |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$(grep -c 'Create a new handle' ${outfile})" "%$(grep -c 'Update checksum' $outfile)" "?" "/$(grep -c 'No action required' $outfile )" 
+  printf '\n    |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$nhcreated" "%$nhupdated" "?$nhfailed" "/$nhnoaction" 
   (( ntotrec  = ntotrec  + npfrec ))
   (( ntotdone = ntotdone + ndone ))
   (( ntotrcreated = ntotrcreated + nrcreated ))
@@ -103,7 +103,7 @@ wait
 
 echo -e "\n######################################################\n Total ingest status :"
 printf '\n  |%-10s|%-10s|%-10s|%-10s|%-10s|%-10s|%-19s|' "-Records" ">$ntotrec" "#$ntotdone" "+$ntotrcreated" "%$ntotrupdated" "?$ntotrfailed" "/$ntotrnoaction" 
-printf '\n  |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$(grep -c 'Create a new handle' ${outfile})" "%$(grep -c 'Update checksum' $outfile)" "?" "/$(grep -c 'No action required' $outfile )" 
+printf '\n  |%-32s|%-10s|%-10s|%-10s|%-19s|\n' "-Handles" "+$ntothcreated" "%$ntothupdated" "?$ntothfailed" "/$ntothnoaction" 
 
 echo "[INFO] End of check at $(date)"
 

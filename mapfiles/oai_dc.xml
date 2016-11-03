@@ -6,52 +6,52 @@
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
   </namespaces>
   <mappings>
-    <!-- General fields shown above the field/value tables -->
+    <!-- General Information -->
     <field name="title">
       <xpath>//dc:title/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>string-join(distinct-values(//dc:description/text()), ' | ')</xpath>
+      <xpath>//dc:description/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>replace(replace(//dc:type[1]/text(),"info:",""),"[()/]"," ")</xpath>
+      <xpath>//dc:subject/text()</xpath>
     </field>
-    <!-- Central facets, shown in an extra table 'Main fields' (not implemented yet : all fields in table 'Additional info') -->
+    <!-- Access data -->
     <field name="url">
-      <!--
-      <xpath>if (contains (string-join(distinct-values(//dc:identifier/text()),' ; '),'doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(string-join(distinct-values(//dc:identifier/text()),' ; '), 'doi:'),' ; ')) else //dc:identifier/text()</xpath> -->
-      <xpath>string-join(distinct-values(//dc:identifier/text()), '; ')</xpath>
-      <xpath>if (contains (//dc:identifier[1]/text(),'doi:')) then concat('http://dx.doi.org/',substring-after(//dc:identifier[1]/text(),'doi:')) else //dc:identifier/text()</xpath>
-      <xpath>if (contains(//dc:source/text(),     '[doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(//dc:source/text(), '[doi: '), ']')) else //dc:source/text()</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
+    <field name="Rights">
+      <xpath>//dc:rights/text()</xpath>
+    </field>
+   <!-- Provenance data -->
     <field name="Discipline">
       <xpath>//dc:subject/text()</xpath>
     </field>
     <field name="author">
-      <xpath>string-join(distinct-values(//dc:creator/text()), ';')</xpath>
+      <xpath>//dc:creator/text()</xpath>
     </field>
-    <!-- All other visible fields, shown in table 'Additional info' -->
+    <field name="Publisher">
+      <xpath>//dc:publisher/text()</xpath>
+    </field>
     <field name="PublicationYear">
       <xpath>//dc:date[1]/text()</xpath>
     </field>
-    <field name="PublicationTimestamp">
-      <xpath>if (matches(//dc:date[1]/text(), '[12]\d{3}.*')) then if(contains(//dc:date[1]/text(), '-')) then concat(substring-before(//dc:date[1]/text(), '-'),'-07-01T11:59:59Z') else concat(//dc:date[1]/text(),'-07-01T11:59:59Z') else '' </xpath>
-    </field>
+   <!-- Formal data -->
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
     </field>
-    <field name="Origin">
-      <xpath>//dc:source[1]/text()</xpath>
-      <xpath>//dc:publisher/text()</xpath>
-    </field>
-    <field name="Format">
-      <xpath>//dc:format[not(contains(text(), 'Bytes'))]</xpath>
-    </field>
-    <field name="GeograhicDescription">
+    <field name="SpatialCoverage">
       <xpath>//dc:coverage/text()</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights/text()</xpath>
+    <field name="TemporalCoverage">
+      <xpath>//dc:coverage/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//dc:format/text()</xpath>
+    </field>
+    <!-- Additional Information -->
+    <field name="Contact">
+      <xpath>//dc:publisher/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
@@ -61,7 +61,7 @@
       <xpath>//r:header/r:identifier/text()</xpath>
     </field>
     <field name="oai_set">
-      <xpath>//r:header/r:setspec/text()</xpath>
+      <xpath>//r:header/r:setSpec/text()</xpath>
     </field>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>
