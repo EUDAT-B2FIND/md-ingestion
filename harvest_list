@@ -11,6 +11,12 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## NorStore
+norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc  NATURAL_SCIENCE
+norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc PROF_APPL_SCIENCE 
+norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc
+## JADDS
+jadds http://134.94.32.229:8080/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=cams1_ps  WCS wcs  cams1_ps
 ## SEANOE
 seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
 # EISCAT
@@ -427,15 +433,16 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Generic
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
+## NOT YET b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;
