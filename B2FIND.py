@@ -2299,7 +2299,7 @@ class MAPPER(object):
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                self.logger.debug("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                print "\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
                 sys.stdout.flush()
 
             jsondata = dict()
@@ -2505,7 +2505,7 @@ class MAPPER(object):
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                logging.info("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                print "\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
                 sys.stdout.flush()
 
             identifier=oaiset+'_%06d' % fcount
