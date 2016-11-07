@@ -859,7 +859,7 @@ def parse_list_file(options):
         reqlist.append(request.split())
         
     if len(reqlist) == 0:
-        logging.critical(' No matching request found in %s' % filename)
+        logging.critical(' No matching request found in %s\n\tfor options %s' % (filename,options) )
         exit()
  
     return reqlist

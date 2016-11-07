@@ -333,13 +333,13 @@ class HARVESTER(object):
                 api_url = self.api_url ### "http://api.gbif.org/v1"
                 if key :
                     action_url = "{apiurl}/{action}/{key}".format(apiurl=api_url,action=action,key=str(key))
-                elif limit == None :
+                elif offset == None :
                     action_url = "{apiurl}/{action}".format(apiurl=api_url,action=action)	
                 else :
                     action_url = "{apiurl}/{action}?offset={offset}&limit={limit}".format(apiurl=api_url,action=action,offset=str(offset),limit=str(limit))	
 
 
-
+                print 'action_url: %s' % action_url
                 try:
                    request = urllib2.Request(action_url)
                    ##if (self.api_key): request.add_header('Authorization', self.api_key)
@@ -394,10 +394,6 @@ class HARVESTER(object):
         records=list()
 
         if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## ?publisher-id=dk.gbif'  :
-            if req["mdsubset"] and req["lverb"] == 'works' :
-                haction='works?publisher-id='+req["mdsubset"]
-            else:
-                haction=req["lverb"]
             GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
             outtypedir='hjson'
             outtypeext='json'
@@ -406,9 +402,14 @@ class HARVESTER(object):
             self.logger.debug(" Harvest method used is %s" % oaireq)
             choffset=0
             try:
-                chunk=oaireq(**{'action':haction,'offset':choffset,'key':None})
+                if req["mdsubset"] and req["lverb"] == 'works' :
+                    haction='works?publisher-id='+req["mdsubset"]
+                    chunk=oaireq(**{'action':haction,'offset':None,'key':None})
+                else:
+                    haction=req["lverb"]
+                    chunk=oaireq(**{'action':haction,'offset':choffset,'key':None})
                 ## chunk=oaireq(**{'action':req["lverb"],'offset':choffset,'key':None})
-                self.logger.debug(" Got (first) chunk %s (100 records) " % chunk['results'])
+                self.logger.debug(" Got first chunk['data'] %s (100 records) " % chunk["data"]) ### chunk['results'])
                 if req["lverb"] == 'dataset':
                     while('endOfRecords' in chunk and not chunk['endOfRecords']):
                         if 'results' in chunk :
