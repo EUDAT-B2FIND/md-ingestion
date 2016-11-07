@@ -447,6 +447,7 @@ b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;
 datacite  http://api.datacite.org    works json  dk.gbif
+datacite  http://api.datacite.org    works json  ANDS.CENTRE-1
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-1 ## Griffith University; 38;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-2 ## CSSE Uni Melbourne; 4;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-3 ## Monash University; 39;
