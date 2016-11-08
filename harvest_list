@@ -64,7 +64,39 @@ dariah http://acdh.oeaw.ac.at/acdh-repo/oai ListIdentifiers oai_dc acdh_
 #?MPI-PL h#=34460
 dariah http://fedora.phaidra.univie.ac.at/oaiprovider ListIdentifiers  oai_dc vienna-phaidra_
 # ?? ERR currently not harvestable  
-dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc arachne_
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc  buch
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objekt  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc bauwerk  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc bauwerksteil  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc gruppen  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc relief  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc realien  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc reproduktion  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc rezeption  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc sammlungen  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektsiegel  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc datierung  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc topographie  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc typus
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektplastik  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektbauornamentik 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektkeramik 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektplomben  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektgemaelde  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektterrakotten  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektlebewesen 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektmosaik  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc ort 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc ortsbezug  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc marbilder  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc semantique  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc berlin  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc sarkophag  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc sammler  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc buchEnrich  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc buchseite  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc literatur  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc literaturzitat
 # ?? ERR?? : AttributeError: 'NoneType' object has no attribute 'tag' ??? h#= ?MPI-PL h#=100
 dariah http://demo.imeji.org/fledgeddata/oai ListIdentifiers  oai_dc imeji_
 ## h#=86472 ??MPI-PL ???
@@ -95,6 +127,15 @@ dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI228687
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137:MPI1557280
+### new subsets ???!!!!!!!!!!!!
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0001-D
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0002-7
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0003-1
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0004-C
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0005-6
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0006-F
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0019-F
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0076-A
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1735641
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI228687
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137
@@ -390,6 +431,8 @@ clarin  http://clarin.dk/oaiprovider ListIdentifiers cmdi ucph_
 # Viena Language resources #h=    ?= #DASISH = 14324
 clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc vienna-lang-res_
 ## CESSDA endpoint
+clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
+## CESSDA endpoints
 #HEW-T cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi test
 #HEW-T cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_dc test
 #HEW-T cessda http://oai.ukdataservice.ac.uk/oai/provider ListRecords  ddi test_1
