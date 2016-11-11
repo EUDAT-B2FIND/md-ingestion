@@ -391,17 +391,16 @@ class HARVESTER(object):
         fcount=0
         oldperc=0
         ntotrecs=0
-        records=list()
 
         if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## ?publisher-id=dk.gbif'  :
             GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
             outtypedir='hjson'
             outtypeext='json'
-            records=list()
             oaireq=getattr(GBIF,'JSONAPI', None)
             self.logger.debug(" Harvest method used is %s" % oaireq)
             choffset=0
             try:
+                records=list()
                 if req["mdsubset"] and req["lverb"] == 'works' :
                     haction='works?publisher-id='+req["mdsubset"]
                     chunk=oaireq(**{'action':haction,'offset':None,'key':None})
@@ -421,13 +420,9 @@ class HARVESTER(object):
                     if 'data' in chunk :
                         records.extend(chunk['data'])
                     
-            except (urllib2.HTTPError,ConnectionError) as e:
-                self.logger.critical("%s : during harvest request %s\n" % (e,req))
+            except (urllib2.HTTPError,ConnectionError,Exception) as e:
+                self.logger.critical("%s|- harvest request %s\n" % (e,req))
                 return -1
-            except Exception, e:
-                self.logger.error("%s-%s : during harvest request %s\n" % (e,traceback.format_exc(),req))
-                return -1
-                
             ntotrecs=len(records)
 
         elif req["lverb"].startswith('List'):
@@ -440,8 +435,11 @@ class HARVESTER(object):
             except (urllib2.HTTPError,ConnectionError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as e:
                 self.logger.critical("%s :\n\tduring harvest request %s\n" % (e,req))
                 return -1
-
-            ntotrecs=sum(1 for _ in rc)
+            
+            try:
+                ntotrecs=len(list(rc))
+            except :
+                print 'iterate through iterable does not work ?'
 
         print "\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start)
         
@@ -461,12 +459,13 @@ class HARVESTER(object):
             ## counter and progress bar
             fcount+=1
             if fcount <= noffs : continue
-            perc=int(fcount*100/ntotrecs)
-            bartags=perc/5
-            if perc%10 == 0 and perc != oldperc :
-                oldperc=perc
-                print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 )
-                sys.stdout.flush()
+            if ntotrecs > 0 :
+                perc=int(fcount*100/ntotrecs)
+                bartags=perc/5
+                if perc%10 == 0 and perc != oldperc :
+                    oldperc=perc
+                    print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 )
+                    sys.stdout.flush()
 
             if req["lverb"] == 'dataset' or req["lverb"] == 'works'  :
             ##HEW-D??? if req["lverb"] == 'JSONAPI':
@@ -2863,6 +2862,9 @@ class UPLOADER(object):
                     datetime.datetime.strptime(jsondata[key], '%Y-%m-%d'+'T'+'%H:%M:%S'+'Z')
                 except ValueError:
                     self.logger.error("Value %s of key %s has incorrect data format, should be YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key))
+                    del jsondata[key] # delete this field from the jsondata
+                except TypeError:
+                    self.logger.error("Value %s of key %s has incorrect type, must be string YYYY-MM-DDThh:mm:ssZ" % (jsondata[key],key))
                     del jsondata[key] # delete this field from the jsondata
 
         return jsondata
