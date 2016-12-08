@@ -203,7 +203,7 @@ class CKAN_CLIENT(object):
                 self.logger.error('\tInternal server error')
                 return {"success" : False}
         except urllib2.URLError as e:
-            self.logger.error('\tURLError %s : %s' % (e,e.reason))
+            self.logger.critical('\tURLError %s : %s' % (e,e.reason))
             return {"success" : False}
         else :
             out = json.loads(response.read())
@@ -898,7 +898,7 @@ class MAPPER(object):
             ## idarr=invalue.split(";")
             iddict=dict()
 
-            for id in invalue :
+            for id in filter(None,invalue) :
                 self.logger.debug(' id\t%s' % id)
                 if id.startswith('http://data.theeuropeanlibrary'):
                     iddict['url']=id
@@ -1278,7 +1278,10 @@ class MAPPER(object):
         valarr=[]
         rm_chars = '(){}<>;|`\'\"\\#' ## remove chars not allowed in CKAN tags
         repl_chars = ':,=/?' ## replace chars not allowed in CKAN tags
-        bad_words = ['and','or','the']
+        # read in list of stopwords
+        swfile='%s/stopwords' % os.getcwd()
+        with open(swfile) as sw:
+            stopwords = sw.read().splitlines()
         if isinstance(invalue,dict):
             invalue=invalue.values()
         elif not isinstance(invalue,list):
@@ -1304,10 +1307,9 @@ class MAPPER(object):
                             entry = entry.replace(c,' ')
                     entry=entry.strip()
                     if isinstance(entry,int) or len(entry) < 2 : continue
-                    if entry in bad_words : continue
-                    ##HEW-CHG entry=entry.decode('utf-8').strip()
-                    ##HEW-??? 
-                    entry=entry.encode('ascii','ignore').strip()
+                    entrywords = entry.split()
+                    resultwords  = [word for word in entrywords if word.lower() not in stopwords]
+                    entry=' '.join(resultwords).encode('ascii','ignore').strip()
                     dictlist.append({ "name": entry })
             except AttributeError, err :
                 logging.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
@@ -1365,6 +1367,11 @@ class MAPPER(object):
         """
         split string in list of string and transfer to list of dict's [ { "name1" : "substr1" }, ... ]      
         """
+
+        # read in list of stopwords
+        swfile='%s/stopwords' % os.getcwd()
+        with open(swfile) as sw:
+            stopwords = sw.read().splitlines()
         na_arr=['not applicable','Unspecified']
         for facet in dataset:
           if facet == facetName and len(dataset[facet]) == 1 :
@@ -1373,7 +1380,10 @@ class MAPPER(object):
             dicttagslist=[]
             for entry in valarr:
                if entry in na_arr : continue
-               entrydict={ "name": entry.replace('/','-') }  
+               entrywords = entry.split()
+               resultwords  = [word for word in entrywords if word.lower() not in stopwords]
+               print 'resultwords %s' % resultwords
+               entrydict={ "name": ' '.join(resultwords).replace('/','-') }  
                dicttagslist.append(entrydict)
        
             dataset[facet]=dicttagslist
@@ -2408,7 +2418,6 @@ class MAPPER(object):
 
         if json_obj_type is list:
             for sub_elem in json_obj:
-                print 'SSSSSS  sub_elem %s' %   sub_elem
                 result_list.append(json2xml(sub_elem, line_padding, mdftag, mapdict))
 
             return "\n".join(result_list)
@@ -2420,7 +2429,6 @@ class MAPPER(object):
                 if tag_name in mapdict : 
                     tag_name=mapdict[tag_name]
                     if not isinstance(tag_name,list) : tag_name=[tag_name]
-                    print 'NNNN TTTT SSSSSS  tag_name %s' % tag_name
                     for key in tag_name:
                         result_list.append("%s<%s%s>" % (line_padding, mdftag, key))
                         if type(sub_obj) is list:
