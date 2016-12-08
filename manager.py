@@ -313,14 +313,19 @@ def process_map(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
+        if request[3]=='json' :
+            mext='conf'
+        else:
+            mext='xml'
+
         if (len (request) > 5):            
-            mapfile='%s/%s-%s.xml' % ('mapfiles',request[0],request[5])
+            mapfile='%s/%s-%s.%s' % ('mapfiles',request[0],request[5],mext)
             target=request[5]
         else:
-            mapfile='%s/%s/%s-%s.xml' % (os.getcwd(),'mapfiles',request[0],request[3])
+            mapfile='%s/%s/%s-%s.%s' % (os.getcwd(),'mapfiles',request[0],request[3],mext)
             if not os.path.isfile(mapfile):
-                mapfile='%s/%s/%s.xml' % (os.getcwd(),'mapfiles',request[3])
-                logger.warning('Can not access mapfile %s for community %s and mdformat %s ' % (mapfile,request[0],request[3]))
+                logger.error('Can not access mapfile %s for community %s and mdformat %s ' % (mapfile,request[0],request[3]))
+                mapfile='%s/%s/%s.%s' % (os.getcwd(),'mapfiles',request[3],mext)
                 if not os.path.isfile(mapfile):
                     logger.critical('Can not access mapfile %s for mdformat %s ' % (mapfile,request[3]))
                     sys.exit(-1)
@@ -431,7 +436,7 @@ def process_upload(UP, rlist):
 
     for request in rlist:
         ir+=1
-        logging.info('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+        print '   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S"))
         community, source, dir = request[0:3]
         mdprefix = request[3]
         if len(request) > 4:
@@ -458,7 +463,7 @@ def process_upload(UP, rlist):
             
             continue
         
-        logger.debug('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
+        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
         
         if (last_community != community and options.ckan_check == 'True'):
             last_community = community
