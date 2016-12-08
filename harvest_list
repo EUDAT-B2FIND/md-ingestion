@@ -11,6 +11,16 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## SEADATANET
+seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?SERVICE=CSW&REQUEST=GetCapabilities&VERSION=2.0.2   csw csw  cams1_ps
+## ETSIN
+##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
+etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  fin-clarin
+etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  00000000-0000-0000-0000-000000000000
+etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  97779b54-3e78-df11-a6ac-005056a22855
+etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  geologian-tutkimuskeskus-gtk
+etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  taideyliopisto-university-of-the-arts-artsequal
 ## NorStore
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc  NATURAL_SCIENCE
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc PROF_APPL_SCIENCE 
@@ -31,10 +41,23 @@ lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA
 pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
-## GFZ data services
-## gfz     http://doidb.wdc-terra.org/oaip/oai        ListIdentifiers   oai_dc DOIDB
-gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite DOIDB
-gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite test_1
+## GFZ
+gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
+## GFZ sub communities
+geofon 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET
+icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
+gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GFZ
+gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
+isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
+pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
+sddb    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SDDB
+tr32db 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TR32DB
+crc806db http://crc806db.uni-koeln.de        ListRecords   oai_datacite  DOIDB.SFB806
+wsm     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.WSM
+enmap 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ENMAP
+tereno  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TERENO 
+##gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite test_1
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc solas
 # CEDA : Physics
@@ -128,6 +151,57 @@ dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137:MPI1557280
 ### new subsets ???!!!!!!!!!!!!
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0105-0
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1992-9
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1EBD-5
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-C4AE-0
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0001-3F5E-E
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0003-46AB-5
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0004-FC7C-E
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0008-E7E7-E
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0009-6E8F-4
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-000D-F548-2
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0010-103A-A
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0010-83CF-B
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0014-D835-C
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-4236-4
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-A27F-8
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-B4FC-2
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001C-71FC-E
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001D-8995-3
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001E-88E0-C
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-AFF0-5
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-B025-0
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-DD0E-8
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5BC7-3
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-7037-8
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-EA63-7
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-1E32-A
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-295B-8
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2985-A
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A07-A
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A43-A
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A8E-6
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4207-B
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4488-1
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4499-D
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-46C8-3
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-46DB-B
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4A81-5
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4B76-D
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-52E4-7
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5AD1-C
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5BF4-F
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-652F-9
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-6534-A
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-670B-1
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-6CFA-3
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-899A-C
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-8D28-A
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-5B1D28A0-32AF-4DD4-8868-4404EC75EDAA
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_32A0CDE1-9641-4D38-A760-F23B89034F94
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_5AE33A73-F6AC-4A9B-B683-F20C8231DD96
+clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_DD50F61B-E590-4227-A547-CAA2C401DAD4
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0001-D
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0002-7
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0003-1
@@ -436,8 +510,8 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-
 #HEW-T cessda http://oai.ukdataservice.ac.uk/oai/provider ListRecords  ddi test_1
 #ERROR: None??? cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi dda_
 #ERROR 404 Client Error cessda http://nesstar.snd.gu.se/oai-pmh ListRecords  oai_ddi snd_
-#h=96 ok
-cessda http://nesstar.ucd.ie/oai-pmh ListIdentifiers  oai_ddi ucd_
+#h=96 ok ##161111 : connection errors
+cessda http://nesstar.ucd.ie/oai-pmh ListRecords  oai_ddi ucd_
 #h=564 == #DASISH = 546
 # ERROR: HTTPConnectionPool cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi lida_
 #h=7137 ?= #DASISH = 6286
@@ -488,7 +562,8 @@ b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;
 datacite  http://api.datacite.org    works json  dk.gbif
-datacite  http://api.datacite.org    works json  ANDS.CENTRE-1
+datacite  http://api.datacite.org    works json  ands.centre-1
+datacite  http://api.datacite.org    works json  BL.ADS
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-1 ## Griffith University; 38;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-2 ## CSSE Uni Melbourne; 4;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS.CENTRE-3 ## Monash University; 39;
