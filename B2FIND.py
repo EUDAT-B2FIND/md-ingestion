@@ -963,7 +963,7 @@ class MAPPER(object):
                     except KeyError: pass
 
         newvalue=list()
-        if type(invalue) == 'list' :
+        if type(invalue) == list :
             for lang in invalue:
                 mcountry = mlang(lang)
                 if mcountry:
