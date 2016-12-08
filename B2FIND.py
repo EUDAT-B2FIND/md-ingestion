@@ -1279,7 +1279,7 @@ class MAPPER(object):
         rm_chars = '(){}<>;|`\'\"\\#' ## remove chars not allowed in CKAN tags
         repl_chars = ':,=/?' ## replace chars not allowed in CKAN tags
         # read in list of stopwords
-        swfile='%s/stopwords' % os.getcwd()
+        swfile='%s/mapfiles/stopwords.txt' % os.getcwd()
         with open(swfile) as sw:
             stopwords = sw.read().splitlines()
         if isinstance(invalue,dict):
