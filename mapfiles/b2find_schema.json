@@ -136,6 +136,42 @@
         "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
+    },
+    "TemporalCoverage:BeginDate" :  {
+        "name" : "temporalcoverage_begindate",
+        "description" : "",
+        "ckanName" : "TemporalCoverage:BeginDate",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "date",
+        "obligation" : "optional"
+    }, 
+    "TemporalCoverage:EndDate" :  {
+        "name" : "temporalcoverage_enddate",
+        "description" : "",
+        "ckanName" : "TemporalCoverage:BeginDate",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "date",
+        "obligation" : "optional"
+    }, 
+    "TempCoverageBegin" :  {
+        "name" : "temporalcoveragebegin",
+        "description" : "",
+        "ckanName" : "TempCoverageBegin",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "integer",
+        "obligation" : "optional"
+    },
+    "TempCoverageEnd" :  {
+        "name" : "temporalcoverageend",
+        "description" : "",
+        "ckanName" : "TempCoverageEnd",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "integer",
+        "obligation" : "optional"
     }, 
     "spatial" : {
         "name" : "",
