@@ -451,15 +451,30 @@ def process_upload(UP, rlist):
             'tcount':0,
             'time':0
         }
-        
-        if CKAN.action('group_show',{"id":community}) == None or not (CKAN.action('group_show',{"id":community})['success']) :
-          logging.error(" CKAN group %s does not exist" % community)
-          sys.exit()
 
-        dir=os.path.abspath('oaidata/'+community+'-'+mdprefix+'/'+subset)
+        try:
+            ckangroup=CKAN.action('group_show',{"id":community})
+        except Exception, err:
+            logging.critical("%s : Can not show CKAN group %s" % (err,community))
+            ##sys.exit()
+        else:
+            ##HEW-T print "ckangroup['success'] %s" % ckangroup['success']
+            if 'success' not in ckangroup and ckangroup['success'] != True :
+                logging.critical(" CKAN group %s does not exist" % community)
+                ## sys.exit()
 
-        if not os.path.exists(dir):
-            logging.critical('[ERROR] The directory "%s" does not exist! No files for uploading are found!\n(Maybe your upload list has old items?)' % (dir))
+        if len(request) > 4:
+            if request[4].endswith('_1'):
+                subset=request[4]
+            else:
+                subset=request[4]+'_1'
+        else:
+            subset='/SET_1'
+
+        path=os.path.abspath('oaidata/'+request[0]+'-'+request[3]+'/'+subset)
+
+        if not os.path.exists(path):
+            logging.critical('[ERROR] The directory "%s" does not exist!' % (path))
             
             continue
         
@@ -472,7 +487,7 @@ def process_upload(UP, rlist):
         uploadstart = time.time()
         
         # find all .json files in dir/json:
-        files = filter(lambda x: x.endswith('.json'), os.listdir(dir+'/json'))
+        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
         
         results['tcount'] = len(files)
         
@@ -491,13 +506,13 @@ def process_upload(UP, rlist):
                 sys.stdout.flush()
 
             jsondata = dict()
-            pathfname= dir+'/json/'+filename
+            pathfname= path+'/json/'+filename
             if ( os.path.getsize(pathfname) > 0 ):
                 with open(pathfname, 'r') as f:
                     try:
                         jsondata=json.loads(f.read(),encoding = 'utf-8')
                     except:
-                        logger.error('    | [ERROR] Cannot load the json file %s' % dir+'/json/'+filename)
+                        logger.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
                         results['ecount'] += 1
                         continue
             else:
@@ -510,6 +525,9 @@ def process_upload(UP, rlist):
             logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
 
             # get OAI identifier from json data extra field 'oai_identifier':
+            if 'oai_identifier' not in jsondata :
+                jsondata['oai_identifier'] = [ds_id]
+
             oai_id = jsondata['oai_identifier'][0]
             logger.debug("        |-> identifier: %s\n" % (oai_id))
             

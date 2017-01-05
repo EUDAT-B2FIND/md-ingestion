@@ -520,6 +520,8 @@ cessda http://oai.ukdataservice.ac.uk/oai/provider ListRecords ddi DataCollectio
 ##?? 0 records ??? cessda http://spraakbanken.gu.se/resources/oai-pmh ListIdentifiers  ddi swedish-lang-bank_
 #h=6802 ?= #DASISH = 6225
 cessda http://oai.datacite.org/oai ListRecords  oai_dc GESIS.ARCHIV
+#h=...
+cessda http://api.datacite.org	works  json gesis.soep
 #h=2820 ?= #DASISH = 2245
 cessda http://oai.datacite.org/oai ListRecords  oai_dc SND.SND
 #h=8148 ?= #DASISH = 6073
