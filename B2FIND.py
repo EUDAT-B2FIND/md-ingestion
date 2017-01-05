@@ -182,8 +182,9 @@ class CKAN_CLIENT(object):
         ##encoding='ISO-8859-15'
         data_string = urllib.quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
 
-        self.logger.debug('\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
-        ##HEW-T logging.debug('\t|-- Object %s ' % data_dict)	
+        self.logger.debug('\n\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
+        ##HEW-T 
+        self.logger.debug('\t|-- Data %s ' % data_dict)	
         try:
             request = urllib2.Request(action_url)
             if (self.api_key): request.add_header('Authorization', self.api_key)
@@ -1844,10 +1845,8 @@ class MAPPER(object):
         # set subset:
         if (not mdsubset):
             subset = 'SET_1' ## or 2,...
-        elif mdsubset.endswith('_'): # no OAI subsets, but different OAI-URLs for same community
+        elif mdsubset.endswith('_'): # no OAI subsets, but store in sub dirs
             subset = mdsubset+'1' ## or 2,...
-            ## req["mdsubset"]=None
-##HEW??        elif re.search(r'\d+&',mdsubset) is not None:
         elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
             subset = mdsubset
         else:
@@ -2233,19 +2232,18 @@ class MAPPER(object):
         # set processing parameters
         community=request[0]
         mdprefix=request[3]
-
+        mdsubset=request[4]   if len(request)>4 else None
         # set subset:
-        if len(request) < 5 :
+        if (not mdsubset):
             subset = 'SET_1' ## or 2,...
-        elif request[4].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
-            subset = request[4]+'1' ## or 2,...
-            ## req["mdsubset"]=None
-##HEW??        elif re.search(r'\d+&',request[4]) is not None:
-        elif request[4][-1].isdigit() and  request[4][-2] == '_' :
-            subset = request[4]
+        elif mdsubset.endswith('_'): # no OAI subsets, but store in sub dirs
+            subset = mdsubset+'1' ## or 2,...
+        elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
+            subset = mdsubset
         else:
-            subset = request[4]+'_1'
-            
+            subset = mdsubset+'_1'
+        self.logger.debug(' |- Subset:    \t%s' % subset )
+
         # make subset dir:
         path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
         
