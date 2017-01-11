@@ -26,7 +26,7 @@ import B2FIND
 from b2handle.clientcredentials import PIDClientCredentials
 from b2handle.handleclient import EUDATHandleClient
 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
-import os, optparse, sys, glob
+import os, optparse, sys, glob, re
 from subprocess import call,Popen,PIPE
 import time, datetime
 import simplejson as json
@@ -464,7 +464,8 @@ def process_upload(UP, rlist):
                 ## sys.exit()
 
         if len(request) > 4:
-            if request[4].endswith('_1'):
+            m = re.search(r'_\d+$', request[4]) # check if subset ends with '_' + digit
+            if m is not None:
                 subset=request[4]
             else:
                 subset=request[4]+'_1'
