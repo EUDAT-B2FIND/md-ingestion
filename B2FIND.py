@@ -896,7 +896,7 @@ class MAPPER(object):
         Licensed under AGPLv3.
         """
         try:
-            ## idarr=invalue.split(";")
+            invalue=invalue.split(";")
             iddict=dict()
 
             for id in filter(None,invalue) :
@@ -1011,9 +1011,11 @@ class MAPPER(object):
         """
         desc=''
         try:
-          if type(invalue) is list:
-              invalue=invalue[0]
-          if type(invalue) is dict :
+          logging.info('Invalue\t%s' % invalue)
+          if type(invalue) is not list:
+            invalue=invalue.split(';')
+          if type(invalue[0]) is dict :
+            invalue=invalue[0]
             if '@type' in invalue :
               if invalue['@type'] == 'single':
                  if "date" in invalue :       
@@ -1042,27 +1044,26 @@ class MAPPER(object):
                   return (desc,None,None)
           else:
             outlist=list()
-            invlist=invalue.split(';')
-            if len(invlist) == 1 :
+            if len(invalue) == 1 :
                 try:
-                    desc+=' point in time : %s' % self.date2UTC(invlist[0]) 
-                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[0]))
+                    desc+=' point in time : %s' % self.date2UTC(invalue[0]) 
+                    return (desc,self.date2UTC(invalue[0]),self.date2UTC(invalue[0]))
                 except ValueError:
                     return (desc,None,None)
 ##                else:
-##                    desc+=': ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[0])) 
-##                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[0]))
-            elif len(invlist) == 2 :
+##                    desc+=': ( %s - %s ) ' % (self.date2UTC(invalue[0]),self.date2UTC(invalue[0])) 
+##                    return (desc,self.date2UTC(invalue[0]),self.date2UTC(invalue[0]))
+            elif len(invalue) == 2 :
                 try:
-                    desc+=' period : ( %s - %s ) ' % (self.date2UTC(invlist[0]),self.date2UTC(invlist[1])) 
-                    return (desc,self.date2UTC(invlist[0]),self.date2UTC(invlist[1]))
+                    desc+=' period : ( %s - %s ) ' % (self.date2UTC(invalue[0]),self.date2UTC(invalue[1])) 
+                    return (desc,self.date2UTC(invalue[0]),self.date2UTC(invalue[1]))
                 except ValueError:
                     return (desc,None,None)
             else:
                 return (desc,None,None)
         except Exception, e:
-           logging.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
-           return (None,None,None)
+            logging.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
+            return (None,None,None)
         else:
             return (desc,None,None)
 
@@ -1245,7 +1246,7 @@ class MAPPER(object):
         outvalue=list()
         if not isinstance(invalue,list): invalue = invalue.split()
         for elem in invalue:
-            logging.debug('[DEBUG]\nelem\t%s\npattern\t%s\nnfield\t%s' % (elem,pattern,nfield))
+            logging.debug('elem:%s\tpattern:%s\tnfield:%s' % (elem,pattern,nfield))
             try:
                 if pattern is None :
                     if nfield :
@@ -1259,7 +1260,7 @@ class MAPPER(object):
                         rep=re.findall(cpat,elem)[0]
                     elif len(re.split(cpat,elem)) > nfield-1 :
                         rep=re.split(cpat,elem)[nfield-1]
-                    logging.debug('[DEBUG] rep\t%s' % rep)
+                    logging.debug('rep\t%s' % rep)
                     if rep :
                         outvalue.append(rep)
                     else:
@@ -1748,7 +1749,7 @@ class MAPPER(object):
         retlist=list()
         for func in flist:
             func=func.strip()
-            if func.startswith('//'): 
+            if func.startswith('//'):
                 fxpath= '.'+re.sub(r'/text()','',func)
                 self.logger.debug('xpath %s' % fxpath)
                 try:
@@ -1758,7 +1759,7 @@ class MAPPER(object):
                             self.logger.debug(' |- elem.text %s' % elem.text)
                             retlist.append(elem.text)
                 except Exception as e:
-                    print 'ERROR %s : during xpath extraction of %s' % (e,fxpath)
+                    self.logger.error('%s : during xpath extraction of %s' % (e,fxpath))
                     return []
             elif func == '/':
                 try:
@@ -1768,15 +1769,14 @@ class MAPPER(object):
                             self.logger.debug(' |- elem.text %s' % elem.text)
                             retlist.append(elem.text)
                 except Exception as e:
-                    print 'ERROR %s : during xpath extraction of %s' % (e,'./')
+                    self.logger.error('%s : during xpath extraction of %s' % (e,'./'))
                     return []
 
         return retlist
 
     def xpathmdmapper(self,xmldata,xrules,namespaces):
         # returns list or string, selected from xmldata by xpath rules (and namespaces)
-        self.logger.info(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
-
+        self.logger.debug(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
         jsondata=dict()
 
         for line in xrules:
@@ -1787,7 +1787,7 @@ class MAPPER(object):
                 field=m.group(2)
                 if field in ['Discipline','oai_set','Source']: ## set default for mandatory fields !!
                     retval=['Not stated']
-                self.logger.info(' Field:xpathrule : %-10s:%-20s\n' % (field,line))
+                self.logger.debug(' Field:xpathrule : %-10s:%-20s\n' % (field,line))
             else:
                 xpath=''
                 m2 = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)').search(line)
@@ -1803,7 +1803,7 @@ class MAPPER(object):
                     continue
                 if retval and len(retval) > 0 :
                     jsondata[field]=retval ### .extend(retval)
-                    self.logger.info(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
+                    self.logger.debug(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
                 elif field in ['Discipline','oai_set']:
                     jsondata[field]=['Not stated']
           except Exception as e:
@@ -1999,10 +1999,11 @@ class MAPPER(object):
                 etime=None
                 publdate=None
                 # loop over target schema (B2FIND)
+                self.logger.info('Mapping of ...')
                 for facetdict in self.b2findfields.values() :
                     facet=facetdict["ckanName"]
                     if facet in jsondata:
-                        self.logger.info('Mapping of facet:value %s:%s ...' % (facet,jsondata[facet]))
+                        self.logger.info('|- ... facet:value %s:%s' % (facet,jsondata[facet]))
                         try:
                             if facet == 'author':
                                 jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
@@ -2783,7 +2784,7 @@ class UPLOADER(object):
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join([x for x in jsondata[key] if x is not None])
                 if key in ["title","author","notes"] : ## HEW-D 1608: removed notes
-                    if jsondata['group'] == 'b2share' :
+                    if jsondata['group'] in ['b2share','sdl'] :
                         try:
                             self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
                             jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
