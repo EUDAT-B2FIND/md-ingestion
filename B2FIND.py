@@ -34,6 +34,10 @@ import logging
 import traceback
 import re
 
+__author__ = "Heinrich Widmann"
+
+PY2 = sys.version_info[0] == 2
+
 # needed for HARVESTER class:
 import sickle as SickleClass
 from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
@@ -44,9 +48,15 @@ import xml.etree.ElementTree as ET
 from itertools import tee 
 import collections
 # needed for CKAN_CLIENT
-import urllib, urllib2, socket
-import httplib
-from urlparse import urlparse
+import urllib, socket
+if PY2:
+    import urllib2
+    from urlib2 import urlopen
+else:
+    from urllib.request import urlopen
+##    from urllib.error import HTPPError
+##HEW-D import httplib
+##HEW-D from urlparse import urlparse
 
 # needed for MAPPER :
 import codecs
@@ -114,7 +124,7 @@ class CKAN_CLIENT(object):
 	    # (dict)    response dictionary of CKAN
 	    
 	    if (not self.validate_actionname(action)):
-		    print '[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT!'
+		    print ('[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
 	    else:
 		    return self.__action_api(action, data)
 		
@@ -134,7 +144,7 @@ class CKAN_CLIENT(object):
             else:
 	            data = self.action('package_list',{})
 
-            print 'Total number of datasets: ' + str(len(data['result']))
+            print ('Total number of datasets: ' + str(len(data['result'])))
             for dataset in data['result']:
 	            logging.info('\tTry to activate object: ' + str(dataset))
 	            self.action('package_update',{"name" : dataset[0], "state":"active"})
@@ -148,12 +158,12 @@ class CKAN_CLIENT(object):
             else:
                 data = self.action('package_list',{})
             pcount = 0
-            print 'Total number of datasets: ' + str(len(data['result']))
-            #self.action('bulk_update_delete',{"datasets" : data['result'], "id":"enes"})
+            print ('Total number of datasets: ' + str(len(data['result'])))
+
             for dataset in data['result']:
                 pcount += 1
                 print('\tTry to delete object (' + str(pcount) + ' of ' + str(len(data['result'])) + '): ' + str(dataset))
-                print '\t', (self.action('package_update',{"name" : dataset[0], "state":"delete"}))['success']
+                print ('\t', (self.action('package_update',{"name" : dataset[0], "state":"delete"}))['success'])
 
             return True
         elif (action == "member_create" or action == "organization_member_create"):
@@ -189,7 +199,7 @@ class CKAN_CLIENT(object):
             request = urllib2.Request(action_url)
             if (self.api_key): request.add_header('Authorization', self.api_key)
             response = urllib2.urlopen(request,data_string)
-        except urllib2.HTTPError as e:
+        except HTTPError as e:
             logging.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
                 self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
@@ -249,7 +259,7 @@ class HARVESTER(object):
     results = HV.harvest(request)
 
     if (results == -1):
-        print "Error occured!"
+        print ("Error occured!")
     """
     
     def __init__ (self, OUT, pstat, base_outdir, fromdate):
@@ -340,21 +350,21 @@ class HARVESTER(object):
                     action_url = "{apiurl}/{action}?offset={offset}&limit={limit}".format(apiurl=api_url,action=action,offset=str(offset),limit=str(limit))	
 
 
-                print 'action_url: %s' % action_url
+                print ('action_url: %s' % action_url)
                 try:
                    request = urllib2.Request(action_url)
                    ##if (self.api_key): request.add_header('Authorization', self.api_key)
                    response = urllib2.urlopen(request)
-                except urllib2.HTTPError as e:
-                   print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.api_url,action)
+                except HTTPError as e:
+                   print ('\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.api_url,action))
                    if ( e.code == 403 ):
-                       print '\t\tAccess forbidden, maybe the API key is not valid?'
+                       print ('\t\tAccess forbidden, maybe the API key is not valid?')
                        exit(e.code)
                    elif ( e.code == 409):
-                       print '\t\tMaybe you have a parameter error?'
+                       print ('\t\tMaybe you have a parameter error?')
                        return {"success" : False}
                    elif ( e.code == 500):
-                       print '\t\tInternal server error'
+                       print ('\t\tInternal server error')
                        exit(e.code)
                 except urllib2.URLError as e:
                    exit('%s' % e.reason)
@@ -421,7 +431,7 @@ class HARVESTER(object):
                     if 'data' in chunk :
                         records.extend(chunk['data'])
                     
-            except (urllib2.HTTPError,ConnectionError,Exception) as e:
+            except (HTTPError,ConnectionError,Exception) as e:
                 self.logger.critical("%s|- harvest request %s\n" % (e,req))
                 return -1
             ntotrecs=len(records)
@@ -433,16 +443,16 @@ class HARVESTER(object):
             oaireq=getattr(sickle,req["lverb"], None)
             try:
                 records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
-            except (urllib2.HTTPError,ConnectionError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as e:
-                self.logger.critical("%s :\n\tduring harvest request %s\n" % (e,req))
+            except (ImportError,ConnectionError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception):
+                self.logger.critical("during harvest request %s\n" % (req))
                 return -1
             
             try:
                 ntotrecs=len(list(rc))
             except :
-                print 'iterate through iterable does not work ?'
+                print ('iterate through iterable does not work ?')
 
-        print "\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start)
+        print ("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
         
         # Add all uid's to the related subset entry of the dictionary deleted_metadata
         deleted_metadata = dict()
@@ -462,10 +472,10 @@ class HARVESTER(object):
             if fcount <= noffs : continue
             if ntotrecs > 0 :
                 perc=int(fcount*100/ntotrecs)
-                bartags=perc/5
+                bartags=int(perc/5)
                 if perc%10 == 0 and perc != oldperc :
                     oldperc=perc
-                    print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 )
+                    print ("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
                     sys.stdout.flush()
 
             if req["lverb"] == 'dataset' or req["lverb"] == 'works'  :
@@ -497,8 +507,8 @@ class HARVESTER(object):
                         try:
                             with open(outfile, 'w') as f:
                               json.dump(record,f, sort_keys = True, indent = 4)
-                        except IOError, e:
-                            logging.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile,e))
+                        except IOError:
+                            logging.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile))
                             stats['ecount'] +=1
                             continue
                         
@@ -531,14 +541,14 @@ class HARVESTER(object):
                        oai_id = record.identifier
                        record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
                 elif req["lverb"] == 'ListRecords' :
-            	    if (record.header.deleted):
-                       stats['totdcount'] += 1
-            	       continue
+                    if (record.header.deleted):
+                        stats['totdcount'] += 1
+                        continue
                     else:
-                       oai_id = record.header.identifier
+                        oai_id = record.header.identifier
 
                 # generate a uniquely identifier for this dataset:
-                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id)) ##HEW-Py3- D.encode('ascii','replace')))
                 
                 xmlfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
                 try:
@@ -565,8 +575,8 @@ class HARVESTER(object):
                             f = open(xmlfile, 'w')
                             f.write(metadata)
                             f.close
-                        except IOError, e:
-                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile,e))
+                        except IOError :
+                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile))
                             stats['ecount'] +=1
                             continue
                         
@@ -632,8 +642,8 @@ class HARVESTER(object):
                         f = open(delete_file, 'r')
                         file_content = f.readlines()
                         f.close()
-                    except IOError as (errno, strerror):
-                        logging.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
+                    except IOError :
+                        logging.critical("Cannot read data from '{0}'".format(delete_file))
                         f.close
                 elif (not os.path.exists(self.base_outdir+'/delete')):
                     os.makedirs(self.base_outdir+'/delete')    
@@ -656,15 +666,15 @@ class HARVESTER(object):
                         # remove xml file:
                         try: 
                             os.remove(xmlfile)
-                        except OSError, e:
-                            logging.error("    [ERROR] Cannot remove xml file: %s" % (e))
+                        except OSError :
+                            logging.error("Cannot remove xml file")
                             stats['totecount'] +=1
                         
                         # remove json file:
                         if (os.path.exists(jsonfile)):
                             try: 
                                 os.remove(jsonfile)
-                            except OSError, e:
+                            except OSError :
                                 logging.error("    [ERROR] Cannot remove json file: %s" % (e))
                                 stats['totecount'] +=1
 
@@ -677,12 +687,12 @@ class HARVESTER(object):
         for key in ['tcount', 'ecount', 'count', 'dcount']:
                 stats['tot'+key] += stats[key]
             
-        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+        print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Harvested | Failed | Deleted |\n\t| %8d | %9d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     stats['tottcount'],
                     stats['totcount'],
                     stats['totecount'],
                     stats['totdcount']
-                )
+                ))
 
         # save the last subset:
         if (stats['count'] > 0):
@@ -770,9 +780,9 @@ class MAPPER(object):
 
         self.enclosed = Forward()
         value = Combine(OneOrMore(Word(nonBracePrintables) ^ White(' ')))
-        nestedParens = nestedExpr('(', ')', content=self.enclosed) 
-	nestedBrackets = nestedExpr('[', ']', content=self.enclosed) 
-        nestedCurlies = nestedExpr('{', '}', content=self.enclosed) 
+        nestedParens = nestedExpr('(', ')', content=self.enclosed)
+        nestedBrackets = nestedExpr('[', ']', content=self.enclosed)
+        nestedCurlies = nestedExpr('{', '}', content=self.enclosed)
         self.enclosed << OneOrMore(value | nestedParens | nestedBrackets | nestedCurlies)
 
     class cv_disciplines(object):
@@ -861,7 +871,7 @@ class MAPPER(object):
                     year = utc_year.search(val).group()
                     new_date = year + '-07-01T11:59:59Z'
             return new_date
-        except Exception, e:
+        except Exception :
            logging.error('[ERROR] : %s - in date2UTC replace old date %s by new date %s' % (e,val,new_date))
            return None
         else:
@@ -880,7 +890,7 @@ class MAPPER(object):
                if re.match(old_regex, dataset[key]):
                   dataset[key] = new_value
                   return dataset
-        except Exception, e:
+        except Exception :
            logging.error('[ERROR] : %s - in replace of pattern %s in facet %s with new_value %s' % (e,old_value,facet,new_value))
            return dataset
         else:
@@ -924,7 +934,7 @@ class MAPPER(object):
                     if reurl :
                         iddict['url'] = reurl.group("url")[0]
 
-        except Exception, e:
+        except Exception :
             self.logger.error('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
@@ -992,11 +1002,11 @@ class MAPPER(object):
               return None ### (None,None)
           if location.raw['importance'] < 0.9 :
               return None
-        except GeocoderQuotaExceeded, err:
-           logging.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
+        except GeocoderQuotaExceeded:
+           logging.error('%s can not converted !' % (invalue.split(';')[0]))
            sleep(5)
            return None
-        except Exception, e:
+        except Exception :
            logging.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
            return None ### (None,None)
         else:
@@ -1061,7 +1071,7 @@ class MAPPER(object):
                     return (desc,None,None)
             else:
                 return (desc,None,None)
-        except Exception, e:
+        except Exception :
             logging.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
             return (None,None,None)
         else:
@@ -1073,8 +1083,6 @@ class MAPPER(object):
                 return True
             except ValueError:
                 return False
-
-                            ##print 'tttt %s, dec %s, unic' % (type(tuple[0]),type(tuple[0].encode('utf8')))
 
     def flatten(self,l):
         for el in l:
@@ -1159,7 +1167,7 @@ class MAPPER(object):
           elif len(coordarr)==4 :
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
               return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-        except Exception, e:
+        except Exception :
            logging.error('%s - in map_spatial invalue %s can not converted !' % (e,invalue))
            return (None,None,None,None,None) 
 
@@ -1208,13 +1216,13 @@ class MAPPER(object):
              try:
                disc=line[2].strip()
                r=lvs.ratio(indisc,disc)
-             except Exception, e:
+             except Exception :
                  logging.error('[ERROR] %s in map_discipl : %s can not compared to %s !' % (e,indisc,disc))
                  continue
              if r > maxr  :
                  maxdisc=disc
                  maxr=r
-                 ##HEW-T                 print '--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr)
+                 ##HEW-T                 print ('--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr))
            if maxr == 1 and indisc == maxdisc :
                self.logger.info('  | Perfect match of %s : nothing to do' % indisc)
                retval.append(indisc.strip())
@@ -1265,7 +1273,7 @@ class MAPPER(object):
                         outvalue.append(rep)
                     else:
                         outvalue.append(elem)
-            except Exception, e:
+            except Exception :
                 logging.error("[ERROR] %s in cut() with invalue %s" % (e,invalue))
 
         return outvalue
@@ -1313,10 +1321,10 @@ class MAPPER(object):
                     resultwords  = [word for word in entrywords if word.lower() not in stopwords]
                     entry=' '.join(resultwords).encode('ascii','ignore').strip()
                     dictlist.append({ "name": entry })
-            except AttributeError, err :
+            except AttributeError :
                 logging.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
                 continue
-            except Exception, e:
+            except Exception :
                 logging.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
                 continue
         return dictlist[:12]
@@ -1359,7 +1367,7 @@ class MAPPER(object):
               sec=int(time.mktime((utc1900).timetuple()))-diffsec+year1epochsec
            else:
               sec=int(time.mktime(utctime.timetuple()))+year1epochsec
-        except Exception, e:
+        except Exception :
            logging.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (e,utc))
            return None
 
@@ -1384,7 +1392,7 @@ class MAPPER(object):
                if entry in na_arr : continue
                entrywords = entry.split()
                resultwords  = [word for word in entrywords if word.lower() not in stopwords]
-               print 'resultwords %s' % resultwords
+               print ('resultwords %s' % resultwords)
                entrydict={ "name": ' '.join(resultwords).replace('/','-') }  
                dicttagslist.append(entrydict)
        
@@ -1475,21 +1483,21 @@ class MAPPER(object):
            return path
    
        def trace(expr, obj, path):
-            if debug: print "trace", expr, "/", path
+            if debug: print ("trace", expr, "/", path)
             if expr:
                 x = expr.split(';')
                 loc = x[0]
                 x = ';'.join(x[1:])
-                if debug: print "\t", loc, type(obj)
+                if debug: print ("\t", loc, type(obj))
                 if loc == "*":
                     def f03(key, loc, expr, obj, path):
-                        if debug > 1: print "\tf03", key, loc, expr, path
+                        if debug > 1: print ("\tf03", key, loc, expr, path)
                         trace(s(key, expr), obj, path)
                     walk(loc, x, obj, path, f03)
                 elif loc == "..":
                     trace(x, obj, path)
                     def f04(key, loc, expr, obj, path):
-                        if debug > 1: print "\tf04", key, loc, expr, path
+                        if debug > 1: print ("\tf04", key, loc, expr, path)
                         if isinstance(obj, dict):
                             if key in obj:
                                 trace(s('..', expr), obj[key], s(path, key))
@@ -1512,16 +1520,16 @@ class MAPPER(object):
                 else:
                     # [(index_expression)]
                     if loc.startswith("(") and loc.endswith(")"):
-                        if debug > 1: print "index", loc
+                        if debug > 1: print ("index", loc)
                         e = evalx(loc, obj)
                         trace(s(e,x), obj, path)
                         return
     
                     # ?(filter_expression)
                     if loc.startswith("?(") and loc.endswith(")"):
-                        if debug > 1: print "filter", loc
+                        if debug > 1: print ("filter", loc)
                         def f05(key, loc, expr, obj, path):
-                            if debug > 1: print "f05", key, loc, expr, path
+                            if debug > 1: print ("f05", key, loc, expr, path)
                             if isinstance(obj, dict):
                                 eval_result = evalx(loc, obj[key])
                             else:
@@ -1573,7 +1581,7 @@ class MAPPER(object):
                     if loc.find(",") >= 0:
                         # [index,index....]
                         for piece in re.split(r"'?,'?", loc):
-                            if debug > 1: print "piece", piece
+                            if debug > 1: print ("piece", piece)
                             trace(s(piece, x), obj, path)
             else:
                 store(path, obj)
@@ -1589,7 +1597,7 @@ class MAPPER(object):
        def evalx(loc, obj):
             """eval expression"""
     
-            if debug: print "evalx", loc
+            if debug: print ("evalx", loc)
     
             # a nod to JavaScript. doesn't work for @.name.name.length
             # Write len(@.name.name) instead!!!
@@ -1628,17 +1636,17 @@ class MAPPER(object):
             # replace @  w/ "__obj", but \@ means a literal @
             loc = re.sub(r'(?<!\\)@', "__obj", loc).replace(r'\@', '@')
             if not use_eval:
-                if debug: print "eval disabled"
+                if debug: print ("eval disabled")
                 raise Exception("eval disabled")
-            if debug: print "eval", loc
+            if debug: print ("eval", loc)
             try:
                 # eval w/ caller globals, w/ local "__obj"!
                 v = eval(loc, caller_globals, {'__obj': obj})
-            except Exception, e:
-                if debug: print e
+            except Exception :
+                if debug: print (e)
                 return False
     
-            if debug: print "->", v
+            if debug: print ("->", v)
             return v
     
        # body of jsonpath()
@@ -1714,7 +1722,7 @@ class MAPPER(object):
             assert(rule.count(',,') == 5),"a double comma should be used to separate items in rule"
             
             rule = rule.rstrip('\n').split(',,') # splits  each line of config file
-            ## print 'rule %s' % rule
+            ## print ('rule %s' % rule
             groupName = rule[0]
             setName = rule[1]
             facetName = rule[2]
@@ -1944,7 +1952,7 @@ class MAPPER(object):
             bartags=perc/5
             if perc%10 == 0 and perc != oldperc:
                 oldperc=perc
-                print "\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
+                print ("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
             self.logger.debug('    | m | %-4d | %-45s |' % (fcount,filename))
 
@@ -1971,7 +1979,7 @@ class MAPPER(object):
                         self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s%s/%s' % (time.strftime("%H:%M:%S"),infformat,os.path.basename(path),insubdir,filename))
                         jsondata=self.jsonmdmapper(jsondata,maprules)
                     except Exception as e:
-                        logging.error('    | [ERROR] %s : during %s 2 json processing' % (infformat,e) )
+                        logging.error('    | [ERROR] %s : during %s 2 json processing' % (infformat) )
                         results['ecount'] += 1
                         continue
                 else:
@@ -2089,7 +2097,7 @@ class MAPPER(object):
                     try:
                         self.logger.debug('Save json file')
                         json_file.write(data)
-                    except TypeError, err :
+                    except TypeError :
                         self.logger.error(' %s : Cannot write data in json file %s ' % (jsonfilename,err))
                     except Exception as e:
                         self.logger.error(' %s : Cannot write json file %s' % (e,outpath+'/'+filename))
@@ -2105,11 +2113,11 @@ class MAPPER(object):
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
         if (err is not None ): logging.error('[ERROR] ' + err)
 
-        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+        print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,
                     results['ecount']
-                )
+                ))
 
         # search in output for result statistics
         last_line = out.split('\n')[-2]
@@ -2204,7 +2212,7 @@ class MAPPER(object):
             # to be continued for every other facet
 
             ##if errlist != '':
-            ##    print ' Following key-value errors fails validation:\n' + errlist 
+            ##    print (' Following key-value errors fails validation:\n' + errlist 
             return vall
                 
     def validate(self,request,target_mdschema):
@@ -2308,7 +2316,7 @@ class MAPPER(object):
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                print "\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
+                print ("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             jsondata = dict()
@@ -2351,7 +2359,7 @@ class MAPPER(object):
                   else:
                         if facet == 'title':
                            self.logger.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
-            except IOError, e:
+            except IOError :
                 self.logger.error(" %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
                 exit()
 
@@ -2389,7 +2397,7 @@ class MAPPER(object):
                     continue
 
         if self.OUT.verbose > 2:
-            print printstats
+            print (printstats)
 
         f = open(outfile, 'w')
         f.write(printstats)
@@ -2401,11 +2409,11 @@ class MAPPER(object):
         # count ... all .json files in path/json
         results['count'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path)))
 
-        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+        print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,
                     results['ecount']
-                )
+                ))
 
         return results
 
@@ -2424,7 +2432,7 @@ class MAPPER(object):
         if json_obj_type is dict:
             for tag_name in json_obj:
                 sub_obj = json_obj[tag_name]
-                print 'TTTT SSSSSS  sub_obj %s' %   sub_obj
+                print ('TTTT SSSSSS  sub_obj %s' %   sub_obj)
                 if tag_name in mapdict : 
                     tag_name=mapdict[tag_name]
                     if not isinstance(tag_name,list) : tag_name=[tag_name]
@@ -2512,7 +2520,7 @@ class MAPPER(object):
             bartags=perc/10
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                print "\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start )
+                print ("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                 sys.stdout.flush()
 
             identifier=oaiset+'_%06d' % fcount
@@ -2547,32 +2555,31 @@ class MAPPER(object):
 
                     for filetype in ['ds','exp']:
 	                ### load xml template
-	                templatefile='%s/mapfiles/%s_%s_%s.%s' % (os.getcwd(),target_mdschema,filetype,'template','xml')
-	                with open(templatefile, 'r') as f:
-	                    try:
-	                        dsdata= f.read() ##HEW-D ET.parse(templatefile).getroot()
-	                    except Exception as e:
-	                        logging.error('    | [ERROR] %s : Cannot load tempalte file %s' % (e,templatefile))
+                        templatefile='%s/mapfiles/%s_%s_%s.%s' % (os.getcwd(),target_mdschema,filetype,'template','xml')
+                        with open(templatefile, 'r') as f:
+                            try:
+                                dsdata= f.read() ##HEW-D ET.parse(templatefile).getroot()
+                            except Exception :
+                                logging.error('    | Cannot load tempalte file %s' % (templatefile))
+
+                        data=dict()
+                        for key in jsondata :
+                            if isinstance(jsondata[key],list) and len(jsondata[key])>0 :
+                                data[key]=' '.join(jsondata[key]).strip('\n ')
+                            else :
+                                data[key]=jsondata[key]
 	
-	                data=dict()
-	                for key in jsondata:
-	                        if isinstance(jsondata[key],list) and len(jsondata[key])>0 :
-	                            data[key]=' '.join(jsondata[key]).strip('\n ')
-	                        else:
-	                            data[key]=jsondata[key]
-	
-	                dsdata=dsdata%data
-	                
-	                outfile=outpath+'/'+filetype+'_hdcp2_'+data['ds.entry_acronym']+'.xml'
-	
-	                try:
-	                    f = open(outfile, 'w')
-	                    f.write(dsdata.encode('utf-8'))
-	                    f.write("\n")
-	                    f.close
-	                except IOError, e:
-	                    logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
-	                    return(False, outfile , outpath, fcount)
+                        dsdata=dsdata%data
+                        outfile=outpath+'/'+filetype+'_hdcp2_'+data['ds.entry_acronym']+'.xml'
+
+                        try :
+                            f = open(outfile, 'w')
+                            f.write(dsdata.encode('utf-8'))
+                            f.write("\n")
+                            f.close
+                        except IOError :
+                            logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
+                            return(False, outfile , outpath, fcount)
 	
             else:
                 mapdict=self.b2findfields ##HEW-D ??? ckanfields ???
@@ -2596,19 +2603,19 @@ class MAPPER(object):
                     f.write(xmldata.encode('utf-8'))
                     f.write("\n")
                     f.close
-                except IOError, e:
-                    logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile,e))
+                except IOError :
+                    logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
                     return(False, outfile , outpath, fcount)
 
         logging.info('%s     INFO  B2FIND : %d records converted; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .xml files in path/b2find
         results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(outpath)))
-        print '   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+        print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,
                     results['ecount']
-                )
+                ))
     
         return results    
 
@@ -2645,7 +2652,7 @@ class UPLOADER(object):
 
     # VALIDATE JSON DATA
     if (not UP.check(jsondata)):
-        print "Dataset is broken or does not pass the B2FIND standard"
+        print ("Dataset is broken or does not pass the B2FIND standard")
 
     # CHECK DATASET IN CKAN
     ckanstatus = UP.check_dataset(dsname,checksum)
@@ -2653,11 +2660,11 @@ class UPLOADER(object):
     # UPLOAD DATASET TO CKAN
     upload = UP.upload(dsname,ckanstatus,community,jsondata)
     if (upload == 1):
-        print 'Creation of record succeed'
+        print ('Creation of record succeed'
     elif (upload == 2):
-        print 'Update of record succeed'
+        print ('Update of record succeed'
     else:
-        print 'Upload of record failed'
+        print ('Upload of record failed'
     """
     
     def __init__(self, CKAN, OUT):
@@ -2692,7 +2699,7 @@ class UPLOADER(object):
         self.logger.debug(' Remove all packages from and purge list %s ... ' % community)
 
         result = (self.CKAN.action('group_purge',{"id":community}))
-        print 'result %s' % result
+        print ('result %s' % result)
 
         ptime = time.time() - pstart
         
@@ -2716,14 +2723,14 @@ class UPLOADER(object):
 
         # get the full package list from a community in CKAN:
         query='"groups:'+community+'"'
-        print 'query %s' % query
+        print ('query %s' % query)
         community_packages = (self.CKAN.action('package_search',{"q":query}))##['results']##['packages']
-        print 'comm_packages %s' % community_packages
+        print ('comm_packages %s' % community_packages)
 
         # create a new dictionary of it:
         package_list = dict() 
         for ds in community_packages:
-            print 'ds %s' % ds
+            print ('ds %s' % ds)
             package_list[ds['name']] = ds['version']
 
         del community_packages
@@ -3358,8 +3365,8 @@ class OUTPUT(object):
                     os.rename(logdir+'/myapp.log',logfile )
                 if (os.path.exists(logdir+'/myapp.err')):                                                        
                     os.rename(logdir+'/myapp.err',errfile )
-            except OSError, e:
-                print("[ERROR] Cannot move log and error files to %s and %s: %s\n" % (logfile,errfile,e))
+            except OSError :
+                print("[ERROR] Cannot move log and error files to %s and %s: %s\n" % (logfile,errfile))
             else:
                 # set ERROR or CRITICAL flag in stats dictionary if an error log exists:
                 if (os.path.exists(errfile)):
@@ -3571,7 +3578,7 @@ class OUTPUT(object):
                       self.get_stats('#Start','TotalTime'),
             ))
 
-        if len(self.get_stats('#AllRequests')) > 0:
+        if len(list(self.get_stats('#AllRequests'))) > 0:
             ## table with details for every request:
             reshtml.write("\t\t<h2>Details per community and mdPrefix</h2>")
             reshtml.write('''\n
@@ -3671,7 +3678,7 @@ class OUTPUT(object):
                                 if (size != 0):
                                     size = int(size/1024.) or 1
                                 reshtml.write('<a href="%s_%d.logging.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),pstat['short'][mode],size))
-                            except OSError,e:
+                            except OSError :
                                 reshtml.write('%s log file not available!<br /><small><small>(<i>%s</i>)</small></small><br />'% (pstat['short'][mode], e))
                     reshtml.write('</td>')
                 
@@ -3684,8 +3691,8 @@ class OUTPUT(object):
                                 if (size != 0):
                                     size = int(size/1024.) or 1
                                 reshtml.write('<a href="%s_%d.err.txt">%s</a> (%d kB)<br />'% (mode[0],self.get_stats(request,subset,'#id'),pstat['short'][mode],size))
-                            except OSError,e:
-                                reshtml.write('No %s error file! <br /><small><small>(<i>%s</i>)</small></small><br />'% (pstat['short'][mode], e))
+                            except OSError :
+                                reshtml.write('No %s error file! <br /><small><small>(<i>OSError</i>)</small></small><br />'% (pstat['short'][mode]))
                     reshtml.write('</td>')
                 
                     reshtml.write('</tr>')
@@ -3728,14 +3735,14 @@ class OUTPUT(object):
 
                 if(not new_entry in file):
                     file += new_entry
-            except IOError as (errno, strerror):
-                logging.critical("Cannot read data from '{0}': {1}".format(self.convert_list, strerror))
+            except IOError :
+                logging.critical("Cannot read data from '{0}'".format(self.convert_list))
                 f.close
 
         try:
             f = open(self.convert_list, 'w')
             f.write(file)
             f.close()
-        except IOError as (errno, strerror):
-            logging.critical("Cannot write data to '{0}': {1}".format(self.convert_list, strerror))
+        except IOError :
+            logging.critical("Cannot write data to '{0}'".format(self.convert_list))
             f.close

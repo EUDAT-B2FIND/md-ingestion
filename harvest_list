@@ -551,7 +551,7 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
+b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Generic
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
@@ -1206,5 +1206,6 @@ indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc co
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_4
 ## ALEPH
 aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml dataset:aleph
+aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml test
 ## OpenAIRE
 openaire  http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers oai_datacite OpenAIRE

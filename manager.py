@@ -22,10 +22,11 @@ Modified by  c/o DKRZ 2016   Heinrich Widmann
   Adapt to new B2HANDLE library
 """
 
+##from __future__ import print_function
 import B2FIND 
-from b2handle.clientcredentials import PIDClientCredentials
-from b2handle.handleclient import EUDATHandleClient
-from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
+##Py3 from b2handle.clientcredentials import PIDClientCredentials
+##Py3 from b2handle.handleclient import EUDATHandleClient
+##Py3 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
 import os, optparse, sys, glob, re
 from subprocess import call,Popen,PIPE
 import time, datetime
@@ -146,7 +147,7 @@ def main():
         if (answer == 'n' or answer == 'N'):
             exit()
             
-        print '\n'
+        print ('\n')
     elif (options.handle_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
         logger.error("\n[WARNING] You are going to upload datasets to the host %s with generating handles!" % (options.iphost))
         answer = 'Y'
@@ -156,7 +157,7 @@ def main():
         if (answer == 'n' or answer == 'N'):
             exit()
             
-        print '\n'
+        print ('\n')
 
     # write in HTML results file:
     OUT.HTML_print_begin()
@@ -174,7 +175,7 @@ def main():
         # start the process:
         process(options,pstat,OUT)
         exit()
-    except Exception, e:
+    except Exception :
         logging.critical("[CRITICAL] Program is aborted because of a critical error! Description:")
         logging.critical("%s" % traceback.format_exc())
         exit()
@@ -289,7 +290,7 @@ def process_harvest(HV, rlist):
     for request in rlist:
         ir+=1
         harveststart = time.time()
-        print '   |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S"))
+        print ('   |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S")))
         results = HV.harvest(request)
     
         if (results == -1):
@@ -330,7 +331,7 @@ def process_map(MP, rlist):
                     logger.critical('Can not access mapfile %s for mdformat %s ' % (mapfile,request[3]))
                     sys.exit(-1)
             target=None
-        print '   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S"))
+        print ('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
         
@@ -361,7 +362,7 @@ def process_validate(MP, rlist):
             outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],request[4],'validation.stat')
         else:
             outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],'SET_*','validation.stat')
-        print '   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S"))
+        print ('   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S")))
         cstart = time.time()
 
         ### HEW!!!
@@ -383,7 +384,7 @@ def process_oaiconvert(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        print '   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S"))
+        print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
         rcstart = time.time()
         
         results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]),request[5])
@@ -401,15 +402,15 @@ def process_upload(UP, rlist):
     def print_extra(key,jsondata):
         for v in jsondata['extras']:
             if v['key'] == key:
-                print ' Key : %s | Value : %s |' % (v['key'],v['value'])
+                print (' Key : %s | Value : %s |' % (v['key'],v['value']))
  
 
     # create credentials and handle client if required
     if (options.handle_check):
           try:
               cred = PIDClientCredentials.load_from_JSON('credentials_11098')
-          except Exception, err:
-              logger.critical("[CRITICAL %s ] : Could not create credentials from credstore %s" % (err,options.handle_check))
+          except Exception :
+              logger.critical("Could not create credentials from credstore %s" % (options.handle_check))
               ##p.print_help()
               sys.exit(-1)
           else:
@@ -436,7 +437,7 @@ def process_upload(UP, rlist):
 
     for request in rlist:
         ir+=1
-        print '   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S"))
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         community, source, dir = request[0:3]
         mdprefix = request[3]
         if len(request) > 4:
@@ -454,8 +455,8 @@ def process_upload(UP, rlist):
 
         try:
             ckangroup=CKAN.action('group_show',{"id":community})
-        except Exception, err:
-            logging.critical("%s : Can not show CKAN group %s" % (err,community))
+        except Exception :
+            logging.critical("Can not show CKAN group %s" % (community))
             ##sys.exit()
         else:
             ##HEW-T print "ckangroup['success'] %s" % ckangroup['success']
@@ -503,7 +504,7 @@ def process_upload(UP, rlist):
             bartags=perc/5
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
-                print "\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc )
+                print ("\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc ))
                 sys.stdout.flush()
 
             jsondata = dict()
@@ -593,8 +594,8 @@ def process_upload(UP, rlist):
                 try:
                     pid = cred.get_prefix() + '/eudat-jmd_' + ds_id 
                     rec = client.retrieve_handle_record_json(pid)
-                except Exception, err:
-                    logger.error("[CRITICAL : %s] in client.retrieve_handle_record_json(%s)" % (err,pid))
+                except Exception:
+                    logger.error("[CRITICAL : %s] in client.retrieve_handle_record_json(%s)" % (pid))
                 else:
                     logger.debug("Retrieved PID %s" % pid )
 
@@ -602,7 +603,7 @@ def process_upload(UP, rlist):
                     for pidAttr in ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
                         try:
                             pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
-                        except Exception, err:
+                        except Exception:
                             logger.error("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) )
                         else:
                             logger.debug("Got pidRecord[%s]:%s from PID %s" % (pidRecord[pidAttr],pidAttr,pid))
@@ -632,7 +633,7 @@ def process_upload(UP, rlist):
             else:
                 try:
                     upload = UP.upload(ds_id,dsstatus,community,jsondata)
-                except Exception, err:
+                except Exception:
                     logger.critical("[CRITICAL : %s] in call of UP.upload" % err )
                 else:
                     logger.debug(" Upload of %s returns with upload code %s" % (ds_id,upload))
@@ -660,7 +661,7 @@ def process_upload(UP, rlist):
                                 npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
                             except (HandleAuthenticationError,HandleSyntaxError) as err :
                                 logger.critical("[CRITICAL : %s] in client.register_handle" % err )
-                            except Exception, err:
+                            except Exception:
                                 logger.critical("[CRITICAL : %s] in client.register_handle" % err )
                                 sys.exit()
                             else:
@@ -672,7 +673,7 @@ def process_upload(UP, rlist):
                                 ##client.modify_handle_value(pid,CHECKSUM=checksum)
                             except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
                                 logger.critical("[CRITICAL : %s] client.modify_handle_value %s" % (err,pid))
-                            except Exception, err:
+                            except Exception:
                                 logger.critical("[CRITICAL : %s]  client.modify_handle_value %s" % (err,pid))
                                 ## sys.exit()
                             else:
@@ -682,7 +683,7 @@ def process_upload(UP, rlist):
                         client.modify_handle_value(pid, JMDVERSION=ManagerVersion, COMMUNITY=community, SUBSET=subset, B2FINDHOST=options.iphost, IS_METADATA=True, MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
                     except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
                         logging.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
-                    except Exception, err:
+                    except Exception:
                         logging.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
                         ## sys.exit()
                     else:
@@ -692,17 +693,17 @@ def process_upload(UP, rlist):
             
         uploadtime=time.time()-uploadstart
         results['time'] = uploadtime
-        print '   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+        print ('   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     results['count'],
                     results['ecount']
-                )
+                ))
         
         # save stats:
         UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
 
 def process_delete(OUT, dir, options):
-    print "###JM# Don't use this function. It is not up to date."
+    print ("###JM# Don't use this function. It is not up to date.")
     return False
 
     # create CKAN object                       
@@ -714,8 +715,8 @@ def process_delete(OUT, dir, options):
     # create credentials
     try:
         cred = b2handle.clientcredentials.PIDClientCredentials.load_from_JSON('credentials_11098')
-    except Exception, err:
-        logging.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.handle_check))
+    except Exception:
+        logging.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (options.handle_check))
         p.print_help()
         sys.exit(-1)
     else:
@@ -735,8 +736,8 @@ def process_delete(OUT, dir, options):
             f = open(delete_file, 'r')
             file_content = f.read()
             f.close()
-        except IOError as (errno, strerror):
-            logging.critical("Cannot read data from '{0}': {1}".format(delete_file, strerror))
+        except IOError :
+            logging.critical("Cannot read data from '{0}'".format(delete_file))
             f.close
         else:
             # rename the file in a crash backup file:
@@ -808,16 +809,16 @@ def process_delete(OUT, dir, options):
                                client.delete_handle(pid)
                            except GenericHandleError as err:
                                logging.error('[ERROR] Unexpected Error: %s' % err)
-                           except Exception, e:
-                               logging.error('[ERROR] Unexpected Error: %s' % e)
+                           except Exception:
+                               logging.error('[ERROR] Unexpected Error:')
 
                         else:
                            logging.info("        |-> No action (deletion) required for handle %s" % pid)
                     else:
                         logging.info('        |-> %s' % ('Deletion failed'))
                         results['ecount'] += 1
-        except Exception, e:
-            logging.error('[ERROR] Unexpected Error: %s' % e)
+        except Exception:
+            logging.error('[ERROR] Unexpected Error')
             logging.error('You find the ids of the deleted metadata in "%s"' % (delete_file+'.crash-backup'))
             raise
         else:
