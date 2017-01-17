@@ -39,7 +39,7 @@ __author__ = "Heinrich Widmann"
 PY2 = sys.version_info[0] == 2
 
 # needed for HARVESTER class:
-import sickle as SickleClass
+from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
 from requests.exceptions import ConnectionError
 import uuid, hashlib
@@ -51,7 +51,7 @@ import collections
 import urllib, socket
 if PY2:
     import urllib2
-    from urlib2 import urlopen
+    ### from urlib2 import urlopen
 else:
     from urllib.request import urlopen
 ##    from urllib.error import HTPPError
@@ -437,35 +437,37 @@ class HARVESTER(object):
             ntotrecs=len(records)
 
         elif req["lverb"].startswith('List'):
-            sickle = SickleClass.Sickle(req['url'], max_retries=3, timeout=300)
+            sickle = Sickle(req['url'], max_retries=3, timeout=300)
             outtypedir='xml'
             outtypeext='xml'
             oaireq=getattr(sickle,req["lverb"], None)
             try:
                 records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
-            except (ImportError,ConnectionError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception):
-                self.logger.critical("during harvest request %s\n" % (req))
+            except (ImportError,ConnectionError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as err:
+                self.logger.critical("%s during harvest request %s\n" % (err,req))
                 return -1
             
             try:
                 ntotrecs=len(list(rc))
             except :
                 print ('iterate through iterable does not work ?')
-
+                
         print ("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
-        
-        # Add all uid's to the related subset entry of the dictionary deleted_metadata
+##        if ntotrecs == 0 :
+##            print ("\t|- No records harvetested, exit")
+##            sys.exit(-1)
+
         deleted_metadata = dict()
         for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
             for ofile in glob.glob(s+'/'+outtypedir+'/*.'+outtypeext):
                 # save the uid as key and the file as value:
                 deleted_metadata[os.path.splitext(os.path.basename(subset))[0]] = ofile
    
-        logging.debug('    |   | %-4s | %-45s | %-45s |\n    |%s|' % ('#','OAI Identifier','DS Identifier',"-" * 106))
+        logging.debug(' | %-4s | %-25s | %-25s |' % ('#','OAI Identifier','DS Identifier'))
 
         start2=time.time()
-        logging.info("\t|- Get records and store on disc ...")
-        for record in records:
+
+        for record in records :
             stats['tcount'] += 1
             ## counter and progress bar
             fcount+=1
@@ -478,8 +480,8 @@ class HARVESTER(object):
                     print ("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
                     sys.stdout.flush()
 
+            ## Harvest via JSON-API
             if req["lverb"] == 'dataset' or req["lverb"] == 'works'  :
-            ##HEW-D??? if req["lverb"] == 'JSONAPI':
 
                 # set oai_id and generate a uniquely identifier for this dataset:
                 if 'key' in record :
@@ -511,9 +513,9 @@ class HARVESTER(object):
                             logging.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile))
                             stats['ecount'] +=1
                             continue
-                        
-                        stats['count'] += 1
-                        logging.debug('Harvested JSON file written to %s' % outfile)
+                        else :
+                            stats['count'] += 1
+                            logging.debug('Harvested JSON file written to %s' % outfile)
                         
                     else:
                         stats['ecount'] += 1
@@ -549,7 +551,7 @@ class HARVESTER(object):
 
                 # generate a uniquely identifier for this dataset:
                 uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id)) ##HEW-Py3- D.encode('ascii','replace')))
-                
+
                 xmlfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
                 try:
                     logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
@@ -562,10 +564,11 @@ class HARVESTER(object):
                             metadata = etree.tostring(metadata, pretty_print = True)
                         except Exception as e:
                             self.logger.debug('%s : Metadata: %s ...' % (e,metadata[:20]))
-                        try:
-                            metadata = metadata.encode('utf-8')
-                        except (Exception,UnicodeEncodeError) as e :
-                            self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
+                        if PY2 :
+                            try:
+                                metadata = metadata.encode('utf-8')
+                            except (Exception,UnicodeEncodeError) as e :
+                                self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
 
                         if (not os.path.isdir(subsetdir+'/xml')):
                            os.makedirs(subsetdir+'/xml')
@@ -573,25 +576,28 @@ class HARVESTER(object):
                         # write metadata in file:
                         try:
                             f = open(xmlfile, 'w')
-                            f.write(metadata)
+                            if PY2:
+                                f.write(metadata)
+                            else:
+                                f.write(metadata.decode('utf-8'))
                             f.close
                         except IOError :
                             logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile))
                             stats['ecount'] +=1
                             continue
-                        
-                        stats['count'] += 1
-                        ## logging.debug('Harvested XML file written to %s' % xmlfile)
+                        else:
+                            logging.debug('Harvested XML file written to %s' % xmlfile)
+                            stats['count'] += 1
                         
                     else:
                         stats['ecount'] += 1
                         logging.warning('    [WARNING] No metadata available for %s' % oai_id)
                 except TypeError as e:
-                    logging.error('    [ERROR] TypeError: %s' % e)
+                    logging.error('TypeError: %s' % e)
                     stats['ecount']+=1        
                     continue
                 except Exception as e:
-                    logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+                    logging.error("%s and %s" % (e,traceback.format_exc()))
                     ## logging.debug(metadata)
                     stats['ecount']+=1
                     continue
