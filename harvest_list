@@ -34,7 +34,7 @@ eiscat  http://ed-icat-01.csc.fi/cgi-bin/oai-pmh   ListIdentifiers   oai_dc
 ## IST
 ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 # eprints, Status = Published
-ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
+## ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
 ## LTER (repository DEIMS)
 lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
 ## HDCP2
@@ -550,15 +550,16 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
-b2share  https://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Generic
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Generic
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListIdentifiers oai_dc DRIHM
+##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
 ## NOT YET b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
