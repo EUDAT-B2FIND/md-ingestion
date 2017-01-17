@@ -52,7 +52,7 @@ def setup_custom_logger(name,verbose):
         log_format='%(levelname)s in M %(module)s at l %(lineno)s : %(message)s'
         log_level=logging.INFO
     elif verbose > 3 :
-        log_format='%(levelname)s in F %(funcName)s %(msecs)d at l %(lineno)s : %(message)s'
+        log_format='%(levelname)s in %(funcName)s/%(lineno)s : %(message)s'
         log_level=logging.DEBUG
 
 
