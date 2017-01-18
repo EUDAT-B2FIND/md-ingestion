@@ -52,8 +52,10 @@ import urllib, socket
 if PY2:
     import urllib2
     ### from urlib2 import urlopen
+    from urllib2 import HTTPError
 else:
     from urllib.request import urlopen
+    from urllib.error import HTTPError
 ##    from urllib.error import HTPPError
 ##HEW-D import httplib
 ##HEW-D from urlparse import urlparse
@@ -69,7 +71,7 @@ import iso639
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
-import ckanapi
+##HEW-D!!?? import ckanapi
 
 class CKAN_CLIENT(object):
 
@@ -778,8 +780,13 @@ class MAPPER(object):
 
         ## settings for pyparsing
         nonBracePrintables = ''
-        unicodePrintables = u''.join(unichr(c) for c in xrange(65536) 
+        if PY2:
+            unicodePrintables = u''.join(unichr(c) for c in range(65536)
                                         if not unichr(c).isspace())
+        else:
+            unicodePrintables = u''.join(chr(c) for c in range(65536)
+                                        if not chr(c).isspace())
+        
         for c in unicodePrintables: ## printables:
             if c not in '(){}[]':
                 nonBracePrintables = nonBracePrintables + c
@@ -1942,20 +1949,20 @@ class MAPPER(object):
         ##HEW-T dictEn = enchant.Dict("en_GB")
         # loop over all files (harvested records) in input path ( path/xml or path/hjson) 
         ##HEW-D  results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
-        files = filter(lambda x: x.endswith(infformat), os.listdir(path+insubdir))
-        results['tcount'] = len(files)
+        files = list(filter(lambda x: x.endswith(infformat), os.listdir(path+insubdir)))
+        results['tcount'] = len(list(files))
         fcount = 0
         oldperc=0
         err = None
         self.logger.debug(' |- Processing of %s files in %s/%s' % (infformat,path,insubdir))
-        
+       
         ## start processing loop
         start = time.time()
         for filename in files:
             ## counter and progress bar
             fcount+=1
             perc=int(fcount*100/int(len(files)))
-            bartags=perc/5
+            bartags=int(perc/5)
             if perc%10 == 0 and perc != oldperc:
                 oldperc=perc
                 print ("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
@@ -2072,8 +2079,9 @@ class MAPPER(object):
                             elif facet == 'fulltext':
                                 encoding='utf-8'
                                 jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
-                        except Exception as e:
-                            logging.error(' %s : during mapping of\n\tfield\t%s\n\tvalue%s' % (e,facet,jsondata[facet]))
+                        except Exception :
+                            logging.error('during mapping of field\t%s' % (facet))
+                            logging.debug('\t\tvalue%s' % (jsondata[facet]))
                             continue
                     else: # B2FIND facet not in jsondata
                         if facet == 'title':
@@ -2097,17 +2105,21 @@ class MAPPER(object):
                 with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                     try:
                         self.logger.debug('decode json data')
-                        data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf-8') ## needed, else : Cannot write json file ... : must be unicode, not str
-                    except Exception as e:
-                        self.logger.error('%s : Cannot decode jsondata %s' % (e,jsondata))
+                        if PY2 :
+                            data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf-8') ## needed, else : Cannot write json file ... : must be unicode, not str
+                        else :
+                            data = json.dumps(jsondata,sort_keys = True, indent = 4) ## no decoding for PY3 !!
+
+                    except Exception as err:
+                        self.logger.error('%s : Cannot decode jsondata %s' % (err,jsondata))
                     try:
                         self.logger.debug('Save json file')
                         json_file.write(data)
-                    except TypeError :
+                    except TypeError as err:
                         self.logger.error(' %s : Cannot write data in json file %s ' % (jsonfilename,err))
-                    except Exception as e:
-                        self.logger.error(' %s : Cannot write json file %s' % (e,outpath+'/'+filename))
-                        err+='Cannot write json file %s' % jsonfilename
+                    except Exception as err:
+                        self.logger.error(' %s : Cannot write json file %s' % (err,outpath+'/'+filename))
+                        ##HEW-D err+='Cannot write json file %s' % jsonfilename
                         results['ecount'] += 1
                         continue
             else:
@@ -2117,7 +2129,7 @@ class MAPPER(object):
 
 
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
-        if (err is not None ): logging.error('[ERROR] ' + err)
+        ##HEW-D if (err is not None ): logging.error('[ERROR] ' + err)
 
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
@@ -2803,7 +2815,7 @@ class UPLOADER(object):
                             jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
                             self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
                         except UnicodeEncodeError as e :
-                            self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key][20]))
+                            self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key]))
                         except Exception as e:
                             self.logger.error('%s : ( %s:%s[...] )' % (e,key,jsondata[key[20]]))
                         finally:
