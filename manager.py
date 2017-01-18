@@ -633,7 +633,7 @@ def process_upload(UP, rlist):
             else:
                 try:
                     upload = UP.upload(ds_id,dsstatus,community,jsondata)
-                except Exception:
+                except Exception as err :
                     logger.critical("[CRITICAL : %s] in call of UP.upload" % err )
                 else:
                     logger.debug(" Upload of %s returns with upload code %s" % (ds_id,upload))
