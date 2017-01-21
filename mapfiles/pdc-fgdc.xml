@@ -69,10 +69,9 @@
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>
     </field>
-    <!-- PDC specific fields
-    <field name="Purpose">
+    <!-- PDC specific fields -->
+    <!-- field name="Purpose">
        <xpath>//r:purpose/text()</xpath>
-    </field>
-    -->
+    </field -->
   </mappings>
 </mapping-table>
