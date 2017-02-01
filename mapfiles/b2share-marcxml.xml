@@ -18,7 +18,7 @@
     </field>
     <!-- Access data -->
     <field name="url">
-      <xpath>//marc:datafield[@tag='856']/marc:subfield[@code='u']/text(),//marc:datafield[@tag='024']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='690']/marc:subfield[@code='b']/text()</xpath>
+      <xpath>//marc:datafield[@tag='024']/marc:subfield[@code='a']/text()</xpath>
    </field>
    <field name="Checksum">
       <xpath>//marc:datafield[@tag='024']/marc:subfield[@code='a']/text()</xpath>
