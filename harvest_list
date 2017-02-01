@@ -551,7 +551,7 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml test_1
+##HEW-T b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml test_1
 ##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
 ##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
 ##HEW-D-NoSetsAnyMore b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
