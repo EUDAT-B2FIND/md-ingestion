@@ -18,7 +18,7 @@
     </field>
     <!-- Access data  -->
     <field name="url">
-      <xpath>string-join(distinct-values(//dc:identifier/text() | //dc:source/text()),';')</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
     <field name="Checksum">
     </field>
