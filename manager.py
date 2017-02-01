@@ -359,7 +359,7 @@ def process_validate(MP, rlist):
     for request in rlist:
         ir+=1
         if len(request) > 4:
-            outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],request[4],'validation.stat')
+            outfile='oaidata/%s-%s/%s_*/%s' % (request[0],request[3],request[4],'validation.stat')
         else:
             outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],'SET_*','validation.stat')
         print ('   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S")))
@@ -455,6 +455,7 @@ def process_upload(UP, rlist):
 
         try:
             ckangroup=CKAN.action('group_show',{"id":community})
+            ##HEW-T print ('changroup %s' % ckangroup )
         except Exception :
             logging.critical("Can not show CKAN group %s" % (community))
             ##sys.exit()
@@ -489,7 +490,8 @@ def process_upload(UP, rlist):
         uploadstart = time.time()
         
         # find all .json files in dir/json:
-        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        ##HEW-D files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        files = [x for x in os.listdir(path+'/json') if x.endswith('.json')]
         
         results['tcount'] = len(files)
         
@@ -524,7 +526,7 @@ def process_upload(UP, rlist):
             # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
-            logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
+            logger.debug('    | u | %-4d | %-40s |' % (fcount,ds_id))
 
             # get OAI identifier from json data extra field 'oai_identifier':
             if 'oai_identifier' not in jsondata :
@@ -535,6 +537,9 @@ def process_upload(UP, rlist):
             
             ### CHECK JSON DATA for upload
             jsondata=UP.check(jsondata)
+            if jsondata == None :
+                logger.critical('File %s failed check and will not been uploaded' % filename)
+                continue
 
             ### ADD SOME EXTRA FIELDS TO JSON DATA:
             #  generate get record request for field MetaDataAccess:
@@ -544,6 +549,7 @@ def process_upload(UP, rlist):
             else:
                reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
                mdaccess = reqpre + '&identifier=' + oai_id
+               urlcheck=UP.check_url(mdaccess)
             index1 = mdaccess
 
             # exceptions for some communities:
@@ -551,13 +557,14 @@ def process_upload(UP, rlist):
                 mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
             elif (community == 'sdl'):
                 mdaccess =reqpre+'&identifier=oai::record/'+oai_id
+            elif (community == 'b2share'):
+                mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
 
-            ###HEW!!! if (field.split('.')[0] == 'extras'): # append extras field
-            ###HEW!!!        self.add_unique_to_dict_list(newds['extras'], field.split('.')[1], value)
+            if UP.check_url(mdaccess) == False :
+                logging.critical('URL %s is broken' % (mdaccess))
+            else:
+                jsondata['MetaDataAccess']=mdaccess
 
-            ## Move all CKAN extra fields to the list jsondata['extras']
-            
-            jsondata['MetaDataAccess']=mdaccess
             jsondata['group']=community
 
             ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
@@ -594,8 +601,8 @@ def process_upload(UP, rlist):
                 try:
                     pid = cred.get_prefix() + '/eudat-jmd_' + ds_id 
                     rec = client.retrieve_handle_record_json(pid)
-                except Exception:
-                    logger.error("[CRITICAL : %s] in client.retrieve_handle_record_json(%s)" % (pid))
+                except Exception as err :
+                    logger.error("%s in client.retrieve_handle_record_json(%s)" % (err,pid))
                 else:
                     logger.debug("Retrieved PID %s" % pid )
 

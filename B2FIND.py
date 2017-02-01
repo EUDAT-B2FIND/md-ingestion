@@ -50,12 +50,12 @@ import collections
 # needed for CKAN_CLIENT
 import urllib, socket
 if PY2:
-    import urllib2
-    ### from urlib2 import urlopen
-    from urllib2 import HTTPError
+    ### import urllib2
+    from urllib2 import urlopen, Request
+    from urllib2 import HTTPError,URLError
 else:
-    from urllib.request import urlopen
-    from urllib.error import HTTPError
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError,URLError
 ##    from urllib.error import HTPPError
 ##HEW-D import httplib
 ##HEW-D from urlparse import urlparse
@@ -126,7 +126,7 @@ class CKAN_CLIENT(object):
 	    # (dict)    response dictionary of CKAN
 	    
 	    if (not self.validate_actionname(action)):
-		    print ('[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
+		    logging.critical('Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
 	    else:
 		    return self.__action_api(action, data)
 		
@@ -187,24 +187,44 @@ class CKAN_CLIENT(object):
             data_dict	= member_dict
         # normal case:
         else:
-            action_url = "http://{host}/api/3/action/{action}".format(host=self.ip_host,action=action)
+            action_url = 'http://{host}/api/3/action/{action}'.format(host=self.ip_host,action=action)
+
+        logging.info('action_url %s' % action_url)
 
         # make json data in conformity with URL standards
         encoding='utf-8'
         ##encoding='ISO-8859-15'
-        data_string = urllib.quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
-
-        self.logger.debug('\n\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
-        ##HEW-T 
-        self.logger.debug('\t|-- Data %s ' % data_dict)	
         try:
-            request = urllib2.Request(action_url)
+            if PY2 :
+                data_string = urllib.quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+            else :
+                ##HEW-D data_string = urllib.parse.quote(json.dumps(data_dict).encode(encoding))
+                data = urllib.parse.urlencode(data_dict)##.encode(encoding)
+                ##HEW-T print ('type(data) %s' % type(data))
+                binary_data = data.encode(encoding)
+                ##HEW-T print ('type(binary_data %s' % type(binary_data))
+        except Exception as err :
+            logging.critical('%s while building url data' % err)
+
+        logging.debug('\n\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
+        ##HEW-T 
+        self.logger.debug('\t|-- Data_dict %s ' % data_dict)	
+        ## self.logger.debug('\t|-- Data_string %s ' % data_string)	
+        try:
+            request = Request(action_url)
+            self.logger.debug('request %s' % request)            
             if (self.api_key): request.add_header('Authorization', self.api_key)
-            response = urllib2.urlopen(request,data_string)
+            self.logger.debug('api_key %s....' % self.api_key[:10])
+            if PY2 :
+                response = urlopen(request,data_string)
+            else :
+                req = Request(action_url,binary_data)
+                response = urlopen(req)                
+            self.logger.debug('response %s' % response)            
         except HTTPError as e:
-            logging.debug('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
+            self.logger.error('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
             if ( e.code == 403 ):
-                self.logger.error('\tAccess forbidden, maybe the API key is not valid?')
+                logging.error('\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
                 self.logger.debug('\tMaybe the dataset already exists => try to update the package')
@@ -215,11 +235,15 @@ class CKAN_CLIENT(object):
             elif ( e.code == 500):
                 self.logger.error('\tInternal server error')
                 return {"success" : False}
-        except urllib2.URLError as e:
+        except URLError as e:
             self.logger.critical('\tURLError %s : %s' % (e,e.reason))
+            return {"success" : False}
+        except Exception as e:
+            self.logger.critical('\t%s' % e)
             return {"success" : False}
         else :
             out = json.loads(response.read())
+            self.logger.debug('out %s' % out)
             assert response.code >= 200
             return out
 
@@ -368,7 +392,7 @@ class HARVESTER(object):
                    elif ( e.code == 500):
                        print ('\t\tInternal server error')
                        exit(e.code)
-                except urllib2.URLError as e:
+                except URLError as e:
                    exit('%s' % e.reason)
                 else :
                    out = json.loads(response.read())
@@ -919,9 +943,11 @@ class MAPPER(object):
         Licensed under AGPLv3.
         """
         try:
-            invalue=invalue.split(";")
+            if type(invalue) is not list :
+                invalue=invalue.split(";")
             iddict=dict()
 
+            self.logger.debug('invalue %s' % invalue)
             for id in filter(None,invalue) :
                 self.logger.debug(' id\t%s' % id)
                 if id.startswith('http://data.theeuropeanlibrary'):
@@ -947,7 +973,7 @@ class MAPPER(object):
                     if reurl :
                         iddict['url'] = reurl.group("url")[0]
 
-        except Exception :
+        except Exception as e:
             self.logger.error('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return None
         else:
@@ -1797,10 +1823,12 @@ class MAPPER(object):
 
     def xpathmdmapper(self,xmldata,xrules,namespaces):
         # returns list or string, selected from xmldata by xpath rules (and namespaces)
-        self.logger.debug(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
+        self.logger.info(' XPATH rules %s' % xrules)
+        self.logger.info(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
         jsondata=dict()
 
         for line in xrules:
+          self.logger.info(' Next line of xpath rules : %-20s' % (line))
           try:
             retval=list()
             m = re.match(r'(\s+)<field name="(.*?)">', line)
@@ -1808,23 +1836,26 @@ class MAPPER(object):
                 field=m.group(2)
                 if field in ['Discipline','oai_set','Source']: ## set default for mandatory fields !!
                     retval=['Not stated']
-                self.logger.debug(' Field:xpathrule : %-10s:%-20s\n' % (field,line))
+                self.logger.info(' Field:xpathrule : %-10s:%-20s\n' % (field,line))
             else:
                 xpath=''
                 m2 = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)').search(line)
                 m3 = re.compile('(\s+)(<string>)(.*?)(</string>)').search(line)
                 if m3:
                     xpath=m3.group(3)
+                    self.logger.info(' xpath %-10s' % xpath)
                     retval=xpath
                 elif m2:
                     xpath=m2.group(3)
-                    self.logger.debug(' xpath %-10s' % xpath)
+                    self.logger.info(' xpath %-10s' % xpath)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
                 else:
+                    self.logger.info(' Found no xpath expression')
                     continue
+
                 if retval and len(retval) > 0 :
                     jsondata[field]=retval ### .extend(retval)
-                    self.logger.debug(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
+                    self.logger.info(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
                 elif field in ['Discipline','oai_set']:
                     jsondata[field]=['Not stated']
           except Exception as e:
@@ -1872,11 +1903,11 @@ class MAPPER(object):
             subset = mdsubset
         else:
             subset = mdsubset+'_1'
-        self.logger.debug(' |- Subset:    \t%s' % subset )
+        self.logger.info(' |- Subset:    \t%s' % subset )
 
         # make subset dir:
         path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
-        self.logger.debug(' |- Input path:\t%s' % path)
+        self.logger.info(' |- Input path:\t%s' % path)
 
         # settings according to md format (xml or json processing)
         if mdprefix == 'json' :
@@ -1894,7 +1925,7 @@ class MAPPER(object):
             return results
       
         # make output directory for mapped json's
-        if (target_mdschema):
+        if (target_mdschema and not target_mdschema.startswith('#')):
             outpath=path+'-'+target_mdschema+'/json'
         else:
             outpath=path+'/json'
@@ -1914,7 +1945,7 @@ class MAPPER(object):
         self.logger.debug('  |- Mapfile\t%s' % os.path.basename(mapfile))
         mf = codecs.open(mapfile, "r", "utf-8")
         maprules = mf.readlines()
-        maprules = filter(lambda x:len(x) != 0,maprules) # removes empty lines
+        maprules = list(filter(lambda x:len(x) != 0,maprules)) # removes empty lines
 
         # check namespaces
         namespaces=dict()
@@ -1998,8 +2029,9 @@ class MAPPER(object):
                 else:
                     try:
                         # Run Python XPATH converter
-                        logging.debug('    | xpath | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+                        logging.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
                         jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
+                        ##HEW-T print ('jsondata %s' % jsondata)
                     except Exception as e:
                         logging.error('    | [ERROR] %s : during XPATH processing' % e )
                         results['ecount'] += 1
@@ -2021,8 +2053,10 @@ class MAPPER(object):
                 publdate=None
                 # loop over target schema (B2FIND)
                 self.logger.info('Mapping of ...')
+                ##HEW-T print ('self.b2findfields %s' % self.b2findfields.values())
                 for facetdict in self.b2findfields.values() :
                     facet=facetdict["ckanName"]
+                    ##HEW-T print ('facet %s ' % facet)
                     if facet in jsondata:
                         self.logger.info('|- ... facet:value %s:%s' % (facet,jsondata[facet]))
                         try:
@@ -2032,7 +2066,7 @@ class MAPPER(object):
                                 jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                             elif facet == 'DOI':
                                 iddict = self.map_identifiers(jsondata[facet])
-                                if 'DOI' in iddict : 
+                                if 'DOI' in iddict :
                                     jsondata[facet]=iddict['DOI']
                             elif facet == 'url':
                                 iddict = self.map_identifiers(jsondata[facet])
@@ -2040,11 +2074,13 @@ class MAPPER(object):
                                     if not 'DOI' in jsondata :
                                         jsondata['DOI']=iddict['DOI']
                                 if 'PID' in iddict :
-                                    if not ('DOI' in jsondata or jsondata['DOI']==iddict['PID']):
+                                    if not ('DOI' in jsondata and jsondata['DOI']==iddict['PID']):
                                         jsondata['PID']=iddict['PID']
                                 if 'url' in iddict:
-                                    if not ('DOI' in jsondata or jsondata['DOI']==iddict['url']) and not ('PID' in jsondata or jsondata['PID']==iddict['url'] ) :
+                                    if not ('DOI' in jsondata and jsondata['DOI']==iddict['url']) and not ('PID' in jsondata and jsondata['PID']==iddict['url'] ) :
                                         jsondata['url']=iddict['url']
+                                else:
+                                    jsondata['url']=''
                             elif facet == 'Checksum':
                                 jsondata[facet] = self.map_checksum(jsondata[facet])
                             elif facet == 'Discipline':
@@ -2079,8 +2115,8 @@ class MAPPER(object):
                             elif facet == 'fulltext':
                                 encoding='utf-8'
                                 jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
-                        except Exception :
-                            logging.error('during mapping of field\t%s' % (facet))
+                        except Exception as err:
+                            logging.error('%s during mapping of field\t%s' % (err,facet))
                             logging.debug('\t\tvalue%s' % (jsondata[facet]))
                             continue
                     else: # B2FIND facet not in jsondata
@@ -2147,32 +2183,6 @@ class MAPPER(object):
     
         return results
 
-    def check_url(self,url):
-        ## check_url (UPLOADER object, url) - method
-        # Checks and validates a url via urllib module
-        #
-        # Parameters:
-        # -----------
-        # (url)  url - Url to check
-        #
-        # Return Values:
-        # --------------
-        # 1. (boolean)  result
-
-        try:
-            return urllib2.urlopen(url, timeout=1).getcode() < 501
-        except IOError:
-            return False
-        except urllib2.URLError as e:
-            return False    #catched
-        except socket.timeout as e:
-            return False    #catched
-        except ValueError as e:
-            return False    #catched
-        except Exception as e:
-            logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
-            return False    #catched
-
     def is_valid_value(self,facet,valuelist):
         """
         checks if value is the consitent for the given facet
@@ -2183,19 +2193,21 @@ class MAPPER(object):
         for value in valuelist:
             errlist=''
             if facet in ['title','notes','author','Publisher']:
-                if isinstance(value, unicode) :
-                    try:
-                        ## value=value.decode('utf-8')
-                        cvalue=value.encode("iso-8859-1")
-                    except (Exception,UnicodeEncodeError) as e :
-                        vall.append(value)
-                        self.logger.error("%s : { %s:%s }" % (e,facet,value))
-                    else:
-                        vall.append(cvalue)
-                    finally:
-                        pass
-                else:
-                   vall.append(value) 
+                try:
+                    if PY2 :
+                        if isinstance(value, unicode) :
+                            ## value=value.decode('utf-8')
+                            cvalue=value.encode("iso-8859-1")
+                            vall.append(cvalue)
+                    else :
+                        if isinstance(value, str) :
+                            cvalue=value.encode("iso-8859-1")
+                            vall.append(cvalue)
+                except (Exception,UnicodeEncodeError) as e :
+                    vall.append(value)
+                    self.logger.error("%s : { %s:%s }" % (e,facet,value))
+                finally:
+                    pass
             elif self.str_equals(facet,'Discipline'):
                 if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
                     errlist+=' | %10s | %20s |' % (facet, value)
@@ -2293,11 +2305,11 @@ class MAPPER(object):
             self.logger.critical('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
             return results
         elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
-            logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
+            self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
             return results
     
         # find all .json files in path/json:
-        files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
+        files = list(filter(lambda x: x.endswith('.json'), os.listdir(path+'/json')))
         results['tcount'] = len(files)
         oaiset=path.split(mdprefix)[1].strip('/')
         
@@ -2331,7 +2343,7 @@ class MAPPER(object):
         for filename in files: ## loop over datasets
             fcount+=1
             perc=int(fcount*100/int(len(files)))
-            bartags=perc/10
+            bartags=int(perc/10)
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
                 print ("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
@@ -2387,8 +2399,8 @@ class MAPPER(object):
         printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
         printstats+="      | Value statistics:\n      |- {:<5} : {:<30} |\n".format('#Occ','Value')
         printstats+=" ----------------------------------------------------------\n"
-##HEW-D        for field in self.ckanfields : ## Print better b2findfields ??
-        for key,facetdict in self.b2findfields.iteritems() : ###.values() :
+
+        for key,facetdict in self.b2findfields.items() : ###.values() :
             facet=facetdict["ckanName"]
             if facet.startswith('#') or facetdict["display"] == "hidden" :
                 continue
@@ -2425,7 +2437,7 @@ class MAPPER(object):
         logging.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .json files in path/json
-        results['count'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path)))
+        results['count'] = len(list(filter(lambda x: x.endswith('.json'), os.listdir(path))))
 
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
@@ -2809,7 +2821,7 @@ class UPLOADER(object):
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join([x for x in jsondata[key] if x is not None])
                 if key in ["title","author","notes"] : ## HEW-D 1608: removed notes
-                    if jsondata['group'] in ['b2share','sdl'] :
+                    if jsondata['group'] in ['sdl'] :
                         try:
                             self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
                             jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
@@ -2867,7 +2879,8 @@ class UPLOADER(object):
         mandFields=['title','oai_identifier']
         for field in mandFields :
             if field not in jsondata: ##  or jsondata[field] == ''):
-                raise Exception("The mandatory field '%s' is missing" % field)
+                self.logger.critical("The andatory field '%s' is missing" % field)
+                return None
 
         identFields=['DOI','PID','url']
         identFlag=False
@@ -2875,7 +2888,8 @@ class UPLOADER(object):
             if field in jsondata:
                 identFlag=True
         if identFlag == False:
-            raise Exception("At least one identifier from %s is mandatory" % identFields)
+            self.logger.critical("At least one identifier from %s is mandatory" % identFields)
+            return None
             
         if 'PublicationYear' in jsondata :
             try:
@@ -3100,13 +3114,21 @@ class UPLOADER(object):
         # 1. (boolean)  result
     
         try:
-            return urllib2.urlopen(url, timeout=1).getcode() < 501
-        except IOError:
+            resp = urlopen(url, timeout=1).getcode()###HEW-!! < 501
+        except HTTPError as e:
             return False
-        except urllib2.URLError as e:
-            return False    #catched
+        except URLError as e: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
+            if str(e.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
+                return Warning
+            else :
+                return False
         except socket.timeout as e:
             return False    #catched
+        except IOError as err:
+            return False
+        else:
+            # 200 !?
+            return True
 
 class OUTPUT(object):
 
