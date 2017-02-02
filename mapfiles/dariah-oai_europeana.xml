@@ -20,13 +20,7 @@
     </field>
     <!-- Central facets, shown in an extra table 'Main fields' (not implemented yet : all fields in table 'Additional info') -->
     <field name="url">
-      <xpath>europeana:isShownAt</xpath>
-      <xpath>europeana:object</xpath>
-      <xpath>string-join(distinct-values(//dc:identifier/text()), '; ')</xpath>
-<!--
-      <xpath>if (contains (//dc:identifier[1]/text(),'doi:')) then concat('http://dx.doi.org/',substring-after(//dc:identifier[1]/text(),'doi:')) else //dc:identifier/text()</xpath>
-      <xpath>if (contains(//dc:source/text(),     '[doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(//dc:source/text(), '[doi: '), ']')) else //dc:source/text()</xpath>
--->
+      <xpath>//dc:identifier/text()</xpath>
     </field>
     <field name="Discipline">
       <!-- No dc:subject available !!! <xpath>//dc:subject/text()</xpath> -->
