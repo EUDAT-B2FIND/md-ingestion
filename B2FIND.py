@@ -1406,8 +1406,8 @@ class MAPPER(object):
               sec=int(time.mktime((utc1900).timetuple()))-diffsec+year1epochsec
            else:
               sec=int(time.mktime(utctime.timetuple()))+year1epochsec
-        except Exception :
-           logging.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (e,utc))
+        except Exception as err :
+           logging.error('[ERROR] : %s - in utc2seconds date-time %s can not converted !' % (err,utc))
            return None
 
         return sec
