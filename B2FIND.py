@@ -955,11 +955,11 @@ class MAPPER(object):
                 elif id.startswith('ivo:'):
                     iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
                 elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
-                    iddict['DOI'] = self.concat('http://dx.doi.org/',id)
+                    iddict['DOI'] = self.concat('http://dx.doi.org/doi:',id)
                 elif 'doi.org/' in id:
-                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
+                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi.org/doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'doi:' in id: ## and 'DOI' not in iddict :
-                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
+                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)doi:\s?.*").match(id).groups()[0].strip(']')
                 elif 'hdl.handle.net' in id:
                     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
                     if reurl :
@@ -971,11 +971,11 @@ class MAPPER(object):
                     self.logger.debug(' id\t%s' % id)
                     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
                     if reurl :
-                        iddict['url'] = reurl.group("url")[0]
+                        iddict['url'] = reurl.group("url")##[0]
 
         except Exception as e:
-            self.logger.error('%s - in map_identifiers %s can not converted !' % (e,invalue))
-            return None
+            self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
+            return {}
         else:
             for id in iddict :
                 self.logger.debug('iddict\t(%s,%s)' % (id,iddict[id]))
@@ -2070,6 +2070,7 @@ class MAPPER(object):
                                     jsondata[facet]=iddict['DOI']
                             elif facet == 'url':
                                 iddict = self.map_identifiers(jsondata[facet])
+
                                 if 'DOI' in iddict :
                                     if not 'DOI' in jsondata :
                                         jsondata['DOI']=iddict['DOI']
@@ -2077,10 +2078,11 @@ class MAPPER(object):
                                     if not ('DOI' in jsondata and jsondata['DOI']==iddict['PID']):
                                         jsondata['PID']=iddict['PID']
                                 if 'url' in iddict:
-                                    if not ('DOI' in jsondata and jsondata['DOI']==iddict['url']) and not ('PID' in jsondata and jsondata['PID']==iddict['url'] ) :
-                                        jsondata['url']=iddict['url']
+                                    ##HEW-D if not ('DOI' in jsondata and jsondata['DOI']==iddict['url']) and not ('PID' in jsondata and jsondata['PID']==iddict['url']  and iddict['url'].startswith('html')) :
+                                    jsondata['url']=iddict['url']
                                 else:
                                     jsondata['url']=''
+
                             elif facet == 'Checksum':
                                 jsondata[facet] = self.map_checksum(jsondata[facet])
                             elif facet == 'Discipline':
@@ -2125,6 +2127,7 @@ class MAPPER(object):
                                 jsondata[facet] = jsondata['notes'][:20]
                             else:
                                 jsondata[facet] = 'Not stated'
+
                 if spvalue :
                     jsondata["spatial"]=spvalue
                 if stime and etime :
@@ -2809,14 +2812,11 @@ class UPLOADER(object):
         ##  converts flat JSON structure to CKAN JSON record with extra fields
         self.logger.debug('    | Adapt default fields for upload to CKAN')
         for key in self.ckandeffields :
-            if key not in jsondata:
-                self.logger.debug('[WARNING] : CKAN default key %s does not exist' % key)
+            if key not in jsondata or jsondata[key]=='':
+                self.logger.warning('[WARNING] : CKAN default key %s does not exist' % key)
             else:
                 self.logger.debug('    | %-20s | %-25s' % (key,jsondata[key]))
-                if key in  ["url"] :
-                    if isinstance(jsondata[key],list):
-                        jsondata[key]=jsondata[key][0]
-                elif key in  ["author"] :
+                if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join([x for x in jsondata[key] if x is not None])
