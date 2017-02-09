@@ -44,16 +44,16 @@ pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc cita
 ## GFZ
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
 ## GFZ sub communities
-geofon 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
+geofon http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
 geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET
 icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
-gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GFZ
+###gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GFZ
 gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
 isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
-pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
+## pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
 sddb    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SDDB
-tr32db 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TR32DB
-crc806db http://crc806db.uni-koeln.de        ListRecords   oai_datacite  DOIDB.SFB806
+##tr32db 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TR32DB
+##crc806db http://crc806db.uni-koeln.de        ListRecords   oai_datacite  DOIDB.SFB806
 wsm     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.WSM
 enmap 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ENMAP
 tereno  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TERENO 
