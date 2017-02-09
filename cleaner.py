@@ -244,12 +244,12 @@ def main():
     jcount=0
     ccount=0
     pcount=0
-    print '\n| %-6s | %-50s | %-6s | %-6s | %-6s | %-6s |\n|%s|' % ('#', 'Identifier','XML','JSON','CKAN','PID',"-" * 53)
+    print '\n| %-5s | %-35s | %-6s | %-6s | %-6s | %-6s |\n|%s|' % ('#', 'Identifier','XML','JSON','CKAN','PID',"-" * 53)
     for entry in list:
        n+=1
        dir = os.path.dirname(entry).rstrip()
        id, ext = os.path.splitext(os.path.basename(entry.rstrip()))
-       id = id.split("_")[-1].lower()
+       ##HEW-D id = id.split("_")[-1].lower()
        id = id.split()[-1]
        id = re.sub(r'^"|"$', '', id)
        actionreq=""
@@ -370,9 +370,9 @@ def main():
              except Exception, e:
                logger.error('[ERROR] Unexpected Error: %s' % e)
                raise
-       print '| %-6d | %-50s | %-6s | %-6s | %-6s | %-6s |' % (n, id,xmlstatus,jsonstatus,ckanstatus,handlestatus)
+       print '| %-6d | %-35s | %-6s | %-6s | %-6s | %-6s |' % (n, id,xmlstatus,jsonstatus,ckanstatus,handlestatus)
        if (not options.quiet):
-         print '--> %-57s | %-6s | %-6s | %-6s | %-6s |' % ('action performed',xmlaction,jsonaction,ckanaction,handleaction)
+         print '--> %-42s | %-6s | %-6s | %-6s | %-6s |' % ('action performed',xmlaction,jsonaction,ckanaction,handleaction)
 
     logger.info('end of cleaning ...')
 
