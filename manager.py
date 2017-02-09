@@ -23,10 +23,12 @@ Modified by  c/o DKRZ 2016   Heinrich Widmann
 """
 
 ##from __future__ import print_function
-import B2FIND 
-##Py3 from b2handle.clientcredentials import PIDClientCredentials
-##Py3 from b2handle.handleclient import EUDATHandleClient
-##Py3 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
+import B2FIND
+
+##Py3???
+from b2handle.clientcredentials import PIDClientCredentials
+from b2handle.handleclient import EUDATHandleClient
+from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
 import os, optparse, sys, glob, re
 from subprocess import call,Popen,PIPE
 import time, datetime
@@ -409,8 +411,8 @@ def process_upload(UP, rlist):
     if (options.handle_check):
           try:
               cred = PIDClientCredentials.load_from_JSON('credentials_11098')
-          except Exception :
-              logger.critical("Could not create credentials from credstore %s" % (options.handle_check))
+          except Exception as err:
+              logger.critical("%s : Could not create credentials from credstore %s" % (err,options.handle_check))
               ##p.print_help()
               sys.exit(-1)
           else:
@@ -687,10 +689,20 @@ def process_upload(UP, rlist):
                                 logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
 
                     try: # update PID entries in all cases (except handle status is 'unchanged'
-                        client.modify_handle_value(pid, JMDVERSION=ManagerVersion, COMMUNITY=community, SUBSET=subset, B2FINDHOST=options.iphost, IS_METADATA=True, MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
+                        client.modify_handle_value(pid, JMDVERSION=ManagerVersion, COMMUNITY=community, SUBSET=subset, B2FINDHOST=options.iphost, IS_METADATA=True) ##HEW-??? , MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
                     except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
                         logging.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
-                    except Exception:
+                    except Exception as err :
+                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
+                        ## sys.exit()
+                    else:
+                        logging.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
+
+                    try: # HEW-T try to add additional PID attributes
+                        client.modify_handle_value(pid, MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
+                    except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
+                    except Exception as err :
                         logging.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
                         ## sys.exit()
                     else:
