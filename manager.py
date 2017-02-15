@@ -151,7 +151,7 @@ def main():
             
         print ('\n')
     elif (options.handle_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
-        logger.error("\n[WARNING] You are going to upload datasets to the host %s with generating handles!" % (options.iphost))
+        logger.warning("You are going to upload datasets to the host %s with generating handles!" % (options.iphost))
         answer = 'Y'
         while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
             answer = raw_input("Do you really want to continue? (Y / n) >>> ")
@@ -682,7 +682,7 @@ def process_upload(UP, rlist):
                                 ##client.modify_handle_value(pid,CHECKSUM=checksum)
                             except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
                                 logger.critical("[CRITICAL : %s] client.modify_handle_value %s" % (err,pid))
-                            except Exception:
+                            except Exception as err :
                                 logger.critical("[CRITICAL : %s]  client.modify_handle_value %s" % (err,pid))
                                 ## sys.exit()
                             else:
