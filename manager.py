@@ -44,19 +44,15 @@ import codecs
 def setup_custom_logger(name,verbose):
     log_format='%(levelname)s :  %(message)s'
     log_level=logging.CRITICAL
+    log_format='[ %(levelname)s <%(module)s:%(funcName)s> @\t%(lineno)4s ] %(message)s'
     if verbose == 1 :
-        log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
         log_level=logging.ERROR
     elif  verbose == 2 :
-        log_format='%(levelname)s in %(module)s\t%(funcName)s\t%(lineno)s : %(message)s'
         log_level=logging.WARNING
     elif verbose == 3 :
-        log_format='%(levelname)s in M %(module)s at l %(lineno)s : %(message)s'
         log_level=logging.INFO
     elif verbose > 3 :
-        log_format='%(levelname)s in %(funcName)s/%(lineno)s : %(message)s'
         log_level=logging.DEBUG
-
 
     formatter = logging.Formatter(fmt=log_format)
 
@@ -140,26 +136,8 @@ def main():
             sys.exit(-1)
             
     # check options:
-    if (not(options.handle_check) and pstat['status']['u'] == 'tbd' and 'b2find.eudat.eu' in options.iphost):
-        logger.warning("You are going to upload datasets to the host %s with generating PID's!" % (options.iphost))
-        answer = 'Y'
-        while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
-            answer = raw_input("Do you really want to continue? (Y / n) >>> ")
-        
-        if (answer == 'n' or answer == 'N'):
-            exit()
-            
-        print ('\n')
-    elif (options.handle_check and pstat['status']['u'] == 'tbd' and not('b2find.eudat.eu' in options.iphost)):
-        logger.warning("You are going to upload datasets to the host %s with generating handles!" % (options.iphost))
-        answer = 'Y'
-        while (not(answer == 'N' or answer == 'n' or answer == 'Y')):
-            answer = raw_input("Do you really want to continue? (Y / n) >>> ")
-        
-        if (answer == 'n' or answer == 'N'):
-            exit()
-            
-        print ('\n')
+    if (not(options.handle_check) and pstat['status']['u'] == 'tbd'):
+        logger.warning("You are going to upload datasets to %s without checking handles !" % (options.iphost))
 
     # write in HTML results file:
     OUT.HTML_print_begin()
@@ -410,6 +388,7 @@ def process_upload(UP, rlist):
     # create credentials and handle client if required
     if (options.handle_check):
           try:
+              pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
               cred = PIDClientCredentials.load_from_JSON('credentials_11098')
           except Exception as err:
               logger.critical("%s : Could not create credentials from credstore %s" % (err,options.handle_check))
@@ -451,6 +430,7 @@ def process_upload(UP, rlist):
         results = {
             'count':0,
             'ecount':0,
+            'ncount':0,
             'tcount':0,
             'time':0
         }
@@ -474,7 +454,7 @@ def process_upload(UP, rlist):
             else:
                 subset=request[4]+'_1'
         else:
-            subset='/SET_1'
+            subset='SET_1'
 
         path=os.path.abspath('oaidata/'+request[0]+'-'+request[3]+'/'+subset)
 
@@ -512,6 +492,7 @@ def process_upload(UP, rlist):
                 sys.stdout.flush()
 
             jsondata = dict()
+            datasetRecord = dict()
             pathfname= path+'/json/'+filename
             if ( os.path.getsize(pathfname) > 0 ):
                 with open(pathfname, 'r') as f:
@@ -577,6 +558,8 @@ def process_upload(UP, rlist):
                      "key" : "ManagerVersion",
                      "value" : ManagerVersion
                     })
+            datasetRecord["JMDVERSION"]=ManagerVersion
+            datasetRecord["B2FINDHOST"]=options.iphost
 
             # determine checksum of json record and append
             try:
@@ -590,14 +573,25 @@ def process_upload(UP, rlist):
                 checksum=None
             else:
                 jsondata['version'] = checksum
-                            
+                datasetRecord["CHECKSUM"]=checksum            
             ### CHECK STATE OF DATASET IN CKAN AND HANDLE SERVER:
             # status of data set
             dsstatus="unknown"
+            ##HEW?? request = urllib2.Request(
+            ##HEW??     'http://'+options.iphost+'/api/action/package_create')
      
             # check against handle server
             handlestatus="unknown"
             pidRecord=dict()
+            ckands='http://'+options.iphost+'/dataset/'+ds_id
+            datasetRecord["B2FINDHOST"]=options.iphost
+            datasetRecord["IS_METADATA"]='true'
+            datasetRecord["MD_STATUS"]="B2FIND_REGISTERED"
+            datasetRecord["URL"]=ckands
+            datasetRecord["MD_SCHEMA"]=mdschemas[mdprefix]
+            datasetRecord["COMMUNITY"]=community
+            datasetRecord["SUBSET"]=subset
+
             if (options.handle_check):
 
                 try:
@@ -608,24 +602,41 @@ def process_upload(UP, rlist):
                 else:
                     logger.debug("Retrieved PID %s" % pid )
 
+                chargs={}
+                
                 if rec : ## Handle exists
-                    for pidAttr in ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
+                    for pidAttr in pidAttrs :##HEW-D ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
                         try:
                             pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
                         except Exception:
-                            logger.error("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) )
+                            logger.critical("%s in client.get_value_from_handle(%s)" % (err,pidAttr) )
                         else:
-                            logger.debug("Got pidRecord[%s]:%s from PID %s" % (pidRecord[pidAttr],pidAttr,pid))
+                            logger.debug("Got value %s from attribute %s sucessfully" % (pidRecord[pidAttr],pidAttr))
 
-                    if ( pidRecord["CHECKSUM"] == checksum) and ( pidRecord["JMDVERSION"] == ManagerVersion ) and ( pidRecord["B2FINDHOST"] == options.iphost ) :
-                        logger.debug("        |-> checksum, ManagerVersion and B2FIND host of pid %s not changed" % (pid))
-                        handlestatus="unchanged"
-                    else:
-                        logger.debug("        |-> checksum, ManagerVersion or B2FIND host of pid %s changed" % (pid))
-                        handlestatus="changed"
+                        if ( pidRecord[pidAttr] == datasetRecord[pidAttr] ) :
+                            chmsg="-- not changed --"
+                            if pidAttr == 'CHECKSUM' :
+                                handlestatus="unchanged"
+                        else:
+                            chmsg=datasetRecord[pidAttr]
+                            handlestatus="changed"
+                            chargs[pidAttr]=datasetRecord[pidAttr] 
+                        logger.debug(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
                 else:
                     handlestatus="new"
                 dsstatus=handlestatus
+
+                if handlestatus == "unchanged" : # no action required :-) !
+                    logger.warning(' No action required :-) - next record')
+                    results['ncount']+=1
+                    continue
+                elif handlestatus == "changed" : # update dataset !
+                    logger.warning(' Update handle and dataset !')
+                    ##??request = urllib2.Request(
+                    ##??    'http://'+options.iphost+'/api/action/package_update')
+                else : # create new handle !
+                    logger.warning(' Create handle and dataset !')
+                    chargs=datasetRecord 
 
             # check against CKAN database
             ckanstatus = 'unknown'                  
@@ -654,7 +665,6 @@ def process_upload(UP, rlist):
                     upload=1
                 else:
                     logger.critical('        |-> Failed upload of %s record %s' % (dsstatus, ds_id ))
-                    ## logger.debug('        |-> JSON data:\n\ttitle:%s\n\tauthor:%s\n\tnotes:%s\n' % (json.dumps(jsondata['title'], indent=2),json.dumps(jsondata['author'], indent=2),json.dumps(jsondata['notes'], indent=2)))
                     results['ecount'] += 1
 
             # update PID in handle server                           
@@ -663,58 +673,33 @@ def process_upload(UP, rlist):
                     logging.warning("        |-> No action required for %s" % pid)
                 else:
                     if (upload >= 1): # new or changed record
-                        ckands='http://b2find.eudat.eu/dataset/'+ds_id
                         if (handlestatus == "new"): # Create new PID
                             logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                             try:
-                                npid = client.register_handle(pid, ckands, checksum, None, True ) ## , additional_URLs=None, overwrite=False, **extratypes)
-                            except (HandleAuthenticationError,HandleSyntaxError) as err :
-                                logger.critical("[CRITICAL : %s] in client.register_handle" % err )
-                            except Exception:
-                                logger.critical("[CRITICAL : %s] in client.register_handle" % err )
+                                npid = client.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
+                            except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
+                                logger.critical("%s in client.register_handle" % err )
                                 sys.exit()
                             else:
-                                logger.debug(" New handle %s with checksum %s created" % (pid,checksum))
-                        else: # PID changed => update URL and checksum
-                            logging.warning("        |-> Update handle %s with changed checksum %s" % (pid,checksum))
+                                logger.debug("New handle %s with checksum %s created" % (pid,datasetRecord["CHECKSUM"]))
+
+                        ## Modify all changed handle attributes
+                        if chargs :
                             try:
-                                client.modify_handle_value(pid,CHECKSUM=checksum,URL=ckands) ##HEW-T !!! as long as URLs not all updated !!
-                                ##client.modify_handle_value(pid,CHECKSUM=checksum)
-                            except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                                logger.critical("[CRITICAL : %s] client.modify_handle_value %s" % (err,pid))
-                            except Exception as err :
-                                logger.critical("[CRITICAL : %s]  client.modify_handle_value %s" % (err,pid))
-                                ## sys.exit()
+                                client.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
+                            except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                                logger.critical("%s in client.modify_handle_value of %s in %s" % (err,chargs,pid))
                             else:
-                                logger.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
-
-                    try: # update PID entries in all cases (except handle status is 'unchanged'
-                        client.modify_handle_value(pid, JMDVERSION=ManagerVersion, COMMUNITY=community, SUBSET=subset, B2FINDHOST=options.iphost, IS_METADATA=True) ##HEW-??? , MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
-                    except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
-                    except Exception as err :
-                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
-                        ## sys.exit()
-                    else:
-                        logging.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
-
-                    try: # HEW-T try to add additional PID attributes
-                        client.modify_handle_value(pid, MD_SCHEMA=mdschemas[mdprefix], MD_STATUS='B2FIND_uploaded')
-                    except (HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of pid %s" % (err,pid))
-                    except Exception as err :
-                        logging.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
-                        ## sys.exit()
-                    else:
-                        logging.debug(" Modified JMDVERSION, COMMUNITY or B2FINDHOST of handle %s " % pid)
+                                logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
 
             results['count'] +=  upload
             
         uploadtime=time.time()-uploadstart
         results['time'] = uploadtime
-        print ('   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+        print ('   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | No action | Failed |\n\t| %8d | %6d |  %8d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     results['count'],
+                    results['ncount'],
                     results['ecount']
                 ))
         
