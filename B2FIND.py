@@ -48,9 +48,9 @@ import xml.etree.ElementTree as ET
 from itertools import tee 
 import collections
 # needed for CKAN_CLIENT
-import urllib, socket
+import socket
 if PY2:
-    ### import urllib2
+    from urllib import quote
     from urllib2 import urlopen, Request
     from urllib2 import HTTPError,URLError
 else:
@@ -196,7 +196,7 @@ class CKAN_CLIENT(object):
         ##encoding='ISO-8859-15'
         try:
             if PY2 :
-                data_string = urllib.quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+                data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
             else :
                 ##HEW-D data_string = urllib.parse.quote(json.dumps(data_dict).encode(encoding))
                 data = urllib.parse.urlencode(data_dict)##.encode(encoding)
