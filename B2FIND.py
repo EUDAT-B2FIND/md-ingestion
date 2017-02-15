@@ -222,18 +222,18 @@ class CKAN_CLIENT(object):
                 response = urlopen(req)                
             self.logger.debug('response %s' % response)            
         except HTTPError as e:
-            self.logger.error('\tHTTPError %s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
+            self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
             if ( e.code == 403 ):
-                logging.error('\tAccess forbidden, maybe the API key is not valid?')
+                logging.error('Access forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
-                self.logger.debug('\tMaybe the dataset already exists => try to update the package')
+                self.logger.info('\tMaybe the dataset already exists => try to update the package')
                 self.action('package_update',data_dict)
             elif ( e.code == 409):
                 self.logger.debug('\tMaybe you have a parameter error?')
                 return {"success" : False}
             elif ( e.code == 500):
-                self.logger.error('\tInternal server error')
+                self.logger.critical('\tInternal server error')
                 return {"success" : False}
         except URLError as e:
             self.logger.critical('\tURLError %s : %s' % (e,e.reason))
@@ -2813,7 +2813,7 @@ class UPLOADER(object):
         self.logger.debug('    | Adapt default fields for upload to CKAN')
         for key in self.ckandeffields :
             if key not in jsondata or jsondata[key]=='':
-                self.logger.warning('[WARNING] : CKAN default key %s does not exist' % key)
+                self.logger.warning('CKAN default key %s does not exist' % key)
             else:
                 self.logger.debug('    | %-20s | %-25s' % (key,jsondata[key]))
                 if key in  ["author"] :
@@ -3350,6 +3350,7 @@ class OUTPUT(object):
                         'count':0,
                         'ecount':0,
                         'tcount':0,
+                        'ncount':0,
                         'time':0,
                         'avg':0
                     },
