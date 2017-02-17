@@ -23,6 +23,7 @@ Modified by  c/o DKRZ 2016   Heinrich Widmann
 """
 
 ##from __future__ import print_function
+
 import B2FIND
 
 ##Py3???
@@ -30,6 +31,8 @@ from b2handle.clientcredentials import PIDClientCredentials
 from b2handle.handleclient import EUDATHandleClient
 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
 import os, optparse, sys, glob, re
+PY2 = sys.version_info[0] == 2
+
 from subprocess import call,Popen,PIPE
 import time, datetime
 import simplejson as json
@@ -436,17 +439,13 @@ def process_upload(UP, rlist):
         }
 
         try:
-            ckangroup=CKAN.action('group_show',{"id":community})
-            ##HEW-T print ('changroup %s' % ckangroup )
+            ckangroup=CKAN.action('group_list') ## ,{"id":community})
+            if community not in ckangroup['result'] :
+                logger.critical('Can not found community %s' % community)
+                sys.exit(-1)
         except Exception :
-            logging.critical("Can not show CKAN group %s" % (community))
-            ##sys.exit()
-        else:
-            ##HEW-T print "ckangroup['success'] %s" % ckangroup['success']
-            if 'success' not in ckangroup and ckangroup['success'] != True :
-                logging.critical(" CKAN group %s does not exist" % community)
-                ## sys.exit()
-
+            logging.critical("Can not list CKAN groups")
+  
         if len(request) > 4:
             m = re.search(r'_\d+$', request[4]) # check if subset ends with '_' + digit
             if m is not None:
@@ -485,7 +484,7 @@ def process_upload(UP, rlist):
             fcount+=1
             if (fcount<scount): continue
             perc=int(fcount*100/int(len(files)))
-            bartags=perc/5
+            bartags=int(perc/5)
             if perc%10 == 0 and perc != oldperc :
                 oldperc=perc
                 print ("\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc ))
@@ -561,25 +560,25 @@ def process_upload(UP, rlist):
             datasetRecord["JMDVERSION"]=ManagerVersion
             datasetRecord["B2FINDHOST"]=options.iphost
 
+            logger.debug(' JSON data %s' % jsondata)
             # determine checksum of json record and append
             try:
-                ##HEW-? checksum=hashlib.md5(unicode(json.dumps(jsondata))).hexdigest()
-                encoding='utf-8'
-                ##HEW-D encoding='ISO-8859-15'
-                ##HEW-D encoding='latin-1'
-                checksum=hashlib.md5(json.dumps(jsondata, encoding='latin1').strip()).hexdigest() ###HEW160801 : !!! encode to display e.g. 'Umlauts' correctly,HEW160809 : added 'ignore' !!?? ; removed : .encode(encoding,'ignore')
-            except UnicodeEncodeError:
-                logger.error('        |-> Unicode encoding failed during md checksum determination')
+                encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
+                if PY2:
+                    checksum=hashlib.md5(json.dumps(jsondata, encoding='latin1')).hexdigest()
+                else :
+                    checksum=hashlib.md5(json.dumps(jsondata).encode('latin1')).hexdigest()
+            except UnicodeEncodeError as err :
+                logger.critical(' %s during md checksum determination' % err)
                 checksum=None
             else:
+                logger.debug('Checksum of JSON record %s' % checksum)
                 jsondata['version'] = checksum
                 datasetRecord["CHECKSUM"]=checksum            
-            ### CHECK STATE OF DATASET IN CKAN AND HANDLE SERVER:
-            # status of data set
+
+            ### check status of dataset (unknown/new/changed/unchanged)
             dsstatus="unknown"
-            ##HEW?? request = urllib2.Request(
-            ##HEW??     'http://'+options.iphost+'/api/action/package_create')
-     
+
             # check against handle server
             handlestatus="unknown"
             pidRecord=dict()
@@ -666,6 +665,8 @@ def process_upload(UP, rlist):
                 else:
                     logger.critical('        |-> Failed upload of %s record %s' % (dsstatus, ds_id ))
                     results['ecount'] += 1
+
+            sys.exit(upload)
 
             # update PID in handle server                           
             if (options.handle_check):
