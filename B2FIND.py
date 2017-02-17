@@ -42,7 +42,7 @@ PY2 = sys.version_info[0] == 2
 from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
 from requests.exceptions import ConnectionError
-import uuid, hashlib
+import uuid
 import lxml.etree as etree
 import xml.etree.ElementTree as ET
 from itertools import tee 
@@ -54,11 +54,9 @@ if PY2:
     from urllib2 import urlopen, Request
     from urllib2 import HTTPError,URLError
 else:
+    from urllib import parse
     from urllib.request import urlopen, Request
     from urllib.error import HTTPError,URLError
-##    from urllib.error import HTPPError
-##HEW-D import httplib
-##HEW-D from urlparse import urlparse
 
 # needed for MAPPER :
 import codecs
@@ -199,7 +197,7 @@ class CKAN_CLIENT(object):
                 data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
             else :
                 ##HEW-D data_string = urllib.parse.quote(json.dumps(data_dict).encode(encoding))
-                data = urllib.parse.urlencode(data_dict)##.encode(encoding)
+                data = parse.urlencode(data_dict)##.encode(encoding)
                 ##HEW-T print ('type(data) %s' % type(data))
                 binary_data = data.encode(encoding)
                 ##HEW-T print ('type(binary_data %s' % type(binary_data))
@@ -375,12 +373,14 @@ class HARVESTER(object):
                 else :
                     action_url = "{apiurl}/{action}?offset={offset}&limit={limit}".format(apiurl=api_url,action=action,offset=str(offset),limit=str(limit))	
 
-
                 print ('action_url: %s' % action_url)
                 try:
-                   request = urllib2.Request(action_url)
-                   ##if (self.api_key): request.add_header('Authorization', self.api_key)
-                   response = urllib2.urlopen(request)
+                    if PY2 :
+                        request = urllib2.Request(action_url)
+                        response = urllib2.urlopen(request)
+                    else :
+                        request = urllib.request.Request(action_url)
+                        response = urllib.request.urlopen(request)
                 except HTTPError as e:
                    print ('\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.api_url,action))
                    if ( e.code == 403 ):
@@ -2810,17 +2810,17 @@ class UPLOADER(object):
     def json2ckan(self, jsondata):
         ## json2ckan(UPLOADER object, json data) - method
         ##  converts flat JSON structure to CKAN JSON record with extra fields
-        self.logger.debug('    | Adapt default fields for upload to CKAN')
+        self.logger.debug(' Default fields:')
         for key in self.ckandeffields :
             if key not in jsondata or jsondata[key]=='':
                 self.logger.warning('CKAN default key %s does not exist' % key)
             else:
-                self.logger.debug('    | %-20s | %-25s' % (key,jsondata[key]))
                 if key in  ["author"] :
                     jsondata[key]=';'.join(list(jsondata[key]))
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join([x for x in jsondata[key] if x is not None])
-                if key in ["title","author","notes"] : ## HEW-D 1608: removed notes
+                self.logger.debug(' | %-15s | %-25s' % (key,jsondata[key]))
+                if key in ["title","author","notes"] : ## Specific coding !!??
                     if jsondata['group'] in ['sdl'] :
                         try:
                             self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
@@ -2835,7 +2835,7 @@ class UPLOADER(object):
                         
         jsondata['extras']=list()
         extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)
-        self.logger.debug('    | Append extra fields %s for upload to CKAN' % extrafields)
+        self.logger.debug(' CKAN extra fields')
         for key in extrafields :
             if key in jsondata :
                 if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
@@ -2850,9 +2850,9 @@ class UPLOADER(object):
                      "value" : value
                 })
                 del jsondata[key]
-                self.logger.debug('    | %-20s | %-25s' % (key,value))
+                self.logger.debug(' | %-15s | %-25s' % (key,value))
             else:
-                self.logger.info('No data for key %s ' % key)
+                self.logger.debug(' | %-15s | %-25s' % (key,'-- No data available'))
 
         return jsondata
 
