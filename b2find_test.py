@@ -42,7 +42,6 @@ else:
         'name': 'my_dataset_name',
         'notes': 'Another new and long description of my dataset',
         'author':'Heinrich Widmann',
-        'group':'fishproject',
         'groups':[{ "name" : 'fishproject' }],
         'JMDVERSION': '2.2',
         'B2FINDHOST': args.ipadress,
