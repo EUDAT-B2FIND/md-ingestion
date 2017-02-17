@@ -187,7 +187,7 @@ class CKAN_CLIENT(object):
         else:
             action_url = 'http://{host}/api/3/action/{action}'.format(host=self.ip_host,action=action)
 
-        logging.info('action_url %s' % action_url)
+        self.logger.debug(' CKAN request:\n |- Action\t%s\n |- RequestURL\t%s\n |- Data_dict\t%s' % (action,action_url,data_dict))	
 
         # make json data in conformity with URL standards
         encoding='utf-8'
@@ -196,28 +196,19 @@ class CKAN_CLIENT(object):
             if PY2 :
                 data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
             else :
-                ##HEW-D data_string = urllib.parse.quote(json.dumps(data_dict).encode(encoding))
-                data = parse.urlencode(data_dict)##.encode(encoding)
-                ##HEW-T print ('type(data) %s' % type(data))
-                binary_data = data.encode(encoding)
-                ##HEW-T print ('type(binary_data %s' % type(binary_data))
+                data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
         except Exception as err :
             logging.critical('%s while building url data' % err)
 
-        logging.debug('\n\t|-- Action %s\n\t|-- Calling %s ' % (action,action_url))	
-        ##HEW-T 
-        self.logger.debug('\t|-- Data_dict %s ' % data_dict)	
-        ## self.logger.debug('\t|-- Data_string %s ' % data_string)	
         try:
-            request = Request(action_url)
+            request = Request(action_url,data_string)
             self.logger.debug('request %s' % request)            
             if (self.api_key): request.add_header('Authorization', self.api_key)
             self.logger.debug('api_key %s....' % self.api_key[:10])
             if PY2 :
-                response = urlopen(request,data_string)
+                response = urlopen(request)
             else :
-                req = Request(action_url,binary_data)
-                response = urlopen(req)                
+                response = urlopen(request)                
             self.logger.debug('response %s' % response)            
         except HTTPError as e:
             self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
@@ -2834,7 +2825,7 @@ class UPLOADER(object):
                             pass
                         
         jsondata['extras']=list()
-        extrafields=set(self.b2findfields.keys()) - set(self.b2fckandeffields)
+        extrafields=sorted(set(self.b2findfields.keys()) - set(self.b2fckandeffields))
         self.logger.debug(' CKAN extra fields')
         for key in extrafields :
             if key in jsondata :

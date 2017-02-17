@@ -43,6 +43,7 @@ logger = logging.getLogger()
 import traceback
 import hashlib
 import codecs
+import pprint
 
 def setup_custom_logger(name,verbose):
     log_format='%(levelname)s :  %(message)s'
@@ -560,14 +561,13 @@ def process_upload(UP, rlist):
             datasetRecord["JMDVERSION"]=ManagerVersion
             datasetRecord["B2FINDHOST"]=options.iphost
 
-            logger.debug(' JSON data %s' % jsondata)
+            logger.debug(' JSON dump\n%s' % json.dumps(jsondata, sort_keys=True))
+            #HEW-T pp = pprint.PrettyPrinter(indent=4)
+            #HEW-T pp.pprint(json.dumps(jsondata, sort_keys=True))
             # determine checksum of json record and append
             try:
                 encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
-                if PY2:
-                    checksum=hashlib.md5(json.dumps(jsondata, encoding='latin1')).hexdigest()
-                else :
-                    checksum=hashlib.md5(json.dumps(jsondata).encode('latin1')).hexdigest()
+                checksum=hashlib.md5(json.dumps(jsondata, sort_keys=True).encode('latin1')).hexdigest()
             except UnicodeEncodeError as err :
                 logger.critical(' %s during md checksum determination' % err)
                 checksum=None
@@ -616,11 +616,12 @@ def process_upload(UP, rlist):
                             chmsg="-- not changed --"
                             if pidAttr == 'CHECKSUM' :
                                 handlestatus="unchanged"
+                            logger.info(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
                         else:
                             chmsg=datasetRecord[pidAttr]
                             handlestatus="changed"
                             chargs[pidAttr]=datasetRecord[pidAttr] 
-                        logger.debug(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
+                            logger.info(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
                 else:
                     handlestatus="new"
                 dsstatus=handlestatus
@@ -665,8 +666,6 @@ def process_upload(UP, rlist):
                 else:
                     logger.critical('        |-> Failed upload of %s record %s' % (dsstatus, ds_id ))
                     results['ecount'] += 1
-
-            sys.exit(upload)
 
             # update PID in handle server                           
             if (options.handle_check):
