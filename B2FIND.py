@@ -398,7 +398,21 @@ class HARVESTER(object):
         count_break = 5000
         count_set = 1
         start=time.time()
-       
+
+        setMap={
+            "c4234f93-da96-4d2f-a2c8-fa83d0775212" : "Aalto",
+            "99916f6f-9a2c-4feb-a342-6552ac7f1529" : "BBMRI",
+            "0afede87-2bf2-4d89-867e-d2ee57251c62" : "CLARIN",
+            "94a9567e-2fba-4677-8fde-a8b68bdb63e8" : "DRIHM",
+            "b344f92a-cd0e-4e4c-aa09-28b5f95f7e41" : "EISCAT",
+            "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095" : "EUDAT",
+            "893fad89-dc4a-4f1b-a9ba-4240aa18e12b" : "EUON",
+            "4ba7c0fd-1435-4313-9c13-4d888d60321a" : "GBIF",
+            "d952913c-451e-4b5c-817e-d578dc8a4469" : "LTER",
+            "867c4e67-9227-4b6f-8595-c97d37e9de61" : "NRM",
+            "8d963a29-5e19-492b-8cfe-97da4f54fad2" : "RDA",
+            }
+
         # set subset:
         if (not req["mdsubset"]):
             subset = 'SET'
@@ -406,7 +420,10 @@ class HARVESTER(object):
             subset = req["mdsubset"][:-1]
             req["mdsubset"]=None
         else:
-            subset = req["mdsubset"]
+            if req["community"] == "b2share" and req["mdsubset"] in setMap :
+                    subset = setMap[req["mdsubset"]]
+            else:
+               subset = req["mdsubset"]
             
         if (self.fromdate):
             subset = subset + '_f' + self.fromdate
@@ -1236,10 +1253,13 @@ class MAPPER(object):
             seplist=[re.split(r"[;&]",i) for i in invalue]
             swlist=[re.findall(r"[\w']+",i) for i in invalue]
             inlist=swlist+seplist
-            inlist=[item for sublist in inlist for item in sublist]
+            inlist=[item for sublist in inlist for item in sublist] ##???
         for indisc in inlist :
            ##indisc=indisc.encode('ascii','ignore').capitalize()
-           indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
+           if PY2:
+               indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
+           else:
+               indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
            maxr=0.0
            maxdisc=''
            for line in disctab :
@@ -1923,7 +1943,7 @@ class MAPPER(object):
         if (not os.path.isdir(outpath)): os.makedirs(outpath)
 
         # read target_mdschema (degfault : B2FIND_schema) and set mapfile
-        if (target_mdschema):
+        if (target_mdschema and not target_mdschema.startswith('#')):
             mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,target_mdschema,mapext)
         else:
             mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
@@ -1931,7 +1951,7 @@ class MAPPER(object):
         if not os.path.isfile(mapfile):
             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
             if not os.path.isfile(mapfile):
-                self.logger.error('[ERROR] Mapfile %s does not exist !' % mapfile)
+                self.logger.critical(' Can not access mapfile [%s-]%s ' % (community,os.path.basename(mapfile)))
                 return results
         self.logger.debug('  |- Mapfile\t%s' % os.path.basename(mapfile))
         mf = codecs.open(mapfile, "r", "utf-8")
