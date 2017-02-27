@@ -205,7 +205,6 @@ def process(options,pstat,OUT):
         logger.debug(' |- Joblist:  \t%s' % options.list)
         reqlist=parse_list_file(options)
 
-
     ## check job request (processing) options
     logger.debug('|- Command line options')
     for opt in procOptions :
@@ -853,7 +852,7 @@ def parse_list_file(options):
     l = 0
     for request in lines:
         l += 1
-        
+
         # recognize multi-lines-comments (starts with '<#' and ends with '>'):
         if (request.startswith('<#')):
             inside_comment = True
@@ -874,7 +873,7 @@ def parse_list_file(options):
         if (options.mdprefix != None):
             if ( not request.split()[3] == options.mdprefix) :
               continue
-            
+
         # sort out lines that don't match given subset
         if (options.mdsubset != None):
             if len(request.split()) < 5 :
