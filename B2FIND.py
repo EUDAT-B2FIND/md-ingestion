@@ -366,12 +366,8 @@ class HARVESTER(object):
 
                 print ('action_url: %s' % action_url)
                 try:
-                    if PY2 :
-                        request = urllib2.Request(action_url)
-                        response = urllib2.urlopen(request)
-                    else :
-                        request = urllib.request.Request(action_url)
-                        response = urllib.request.urlopen(request)
+                    request = Request(action_url)
+                    response = urlopen(request)
                 except HTTPError as e:
                    print ('\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.api_url,action))
                    if ( e.code == 403 ):
@@ -965,7 +961,7 @@ class MAPPER(object):
                 elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
                     iddict['DOI'] = self.concat('http://dx.doi.org/doi:',id)
                 elif 'doi.org/' in id:
-                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi.org/doi:(.*)\s?.*").match(id).groups()[0].strip(']')
+                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'doi:' in id: ## and 'DOI' not in iddict :
                     iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)doi:\s?.*").match(id).groups()[0].strip(']')
                 elif 'hdl.handle.net' in id:
@@ -976,7 +972,6 @@ class MAPPER(object):
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
                 elif 'http:' in id or 'https:' in id:
-                    self.logger.debug(' id\t%s' % id)
                     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
                     if reurl :
                         iddict['url'] = reurl.group("url")##[0]
