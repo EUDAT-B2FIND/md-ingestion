@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## Aston university
+aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D646174615F636F6C6C656374696F6E 
 ## ENVRIPLUS
 envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso anaee_1
@@ -517,7 +519,7 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-
 #ERROR: None??? cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi dda_
 #ERROR 404 Client Error cessda http://nesstar.snd.gu.se/oai-pmh ListRecords  oai_ddi snd_
 #h=96 ok ##161111 : connection errors
-cessda http://nesstar.ucd.ie/oai-pmh ListRecords  oai_ddi ucd_
+cessda http://nesstar.ucd.ie/oai-pmh ListIdentifiers  oai_ddi ucd_
 #h=564 == #DASISH = 546
 # ERROR: HTTPConnectionPool cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi lida_
 #h=7137 ?= #DASISH = 6286
