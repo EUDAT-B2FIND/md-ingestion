@@ -227,7 +227,7 @@
         "type" : "textual",
         "obligation" : "optional"
     },
-    "OAI set" : {
+    "oai_set" : {
         "name" : "oai_set",
         "description" : "",
         "ckanName" : "oai_set",
