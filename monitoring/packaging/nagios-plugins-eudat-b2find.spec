@@ -1,24 +1,22 @@
 Name:		nagios-plugins-eudat-b2find
-Version:	%{_version}
-Release:	%{_release}
-#Release:	1%{?dist}
+Version:	2.2
+Release:	0
 Summary:	Nagios B2FIND probes
 License:	GPLv3+
 Packager:	Heinrich Widmann <widmann@dkrz.de>
 
 Group:		Application
-License:	open BSD License
 URL:		http://www.eudat.eu/b2find
 BuildArch:	noarch
 #Source0:	
-BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release})
+BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
 #BuildRequires:	
 Requires:	python
 Requires:	python-argparse
-Requires:	python-json
-Requires:	python-urllib
-Requires:	python-urllib2
+#Requires:	python-json
+#Requires:	python-urllib
+#Requires:	python-urllib2
 
 %description
 This nagios plugin provides the nessecary script to check search functionality of the B2FIND discovery service b2find.eudat.eu .
@@ -49,7 +47,7 @@ exit 0
 rm -rf %{buildroot}
 mkdir -p $RPM_BUILD_ROOT%{_b2findNagiosPackage}
 
-cp $RPM_SOURCE_DIR/*.sh         $RPM_BUILD_ROOT%{_b2findNagiosPackage}
+cp $RPM_SOURCE_DIR/*.py         $RPM_BUILD_ROOT%{_b2findNagiosPackage}
 
 # cleanup
 %clean
