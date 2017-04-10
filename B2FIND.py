@@ -963,7 +963,7 @@ class MAPPER(object):
                 elif 'doi.org/' in id:
                     iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'doi:' in id: ## and 'DOI' not in iddict :
-                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)doi:\s?.*").match(id).groups()[0].strip(']')
+                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'hdl.handle.net' in id:
                     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
                     if reurl :
