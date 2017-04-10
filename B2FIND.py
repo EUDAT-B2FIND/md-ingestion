@@ -961,7 +961,7 @@ class MAPPER(object):
                 elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
                     iddict['DOI'] = self.concat('http://dx.doi.org/doi:',id)
                 elif 'doi.org/' in id:
-                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
+                    iddict['DOI'] = 'http://dx.doi.org/'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'doi:' in id: ## and 'DOI' not in iddict :
                     iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
                 elif 'hdl.handle.net' in id:
