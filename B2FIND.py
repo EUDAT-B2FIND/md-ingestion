@@ -3120,18 +3120,23 @@ class UPLOADER(object):
         # 1. (boolean)  result
     
         try:
-            resp = urlopen(url, timeout=1).getcode()###HEW-!! < 501
-        except HTTPError as e:
-            return False
-        except URLError as e: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
+            resp = urlopen(url, timeout=10).getcode()###HEW-!! < 501
+        except HTTPError as err:
+            if (err.code == 422):
+                self.logger.error('%s in check_url of %s' % (err.code,url))
+                return Warning
+            else :
+                return False
+        except URLError as err: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
+            self.logger.error('%s in check_url of %s' % (err,url))
             if str(e.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
                 return Warning
             else :
                 return False
-        except socket.timeout as e:
-            return False    #catched
-        except IOError as err:
-            return False
+##        except socket.timeout as e:
+#            return False    #catched
+#        except IOError as err:
+#            return False
         else:
             # 200 !?
             return True
