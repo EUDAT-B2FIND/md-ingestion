@@ -18,24 +18,20 @@
     </field>
     <!-- Access data -->
     <field name="url">
-      <xpath>//marc:datafield[@tag='856']/marc:subfield[@code='u']/text(),//marc:datafield[@tag='024']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='690']/marc:subfield[@code='b']/text()</xpath>
+      <xpath>//marc:datafield[@tag='024']/marc:subfield[@code='a']/text()</xpath>
    </field>
    <field name="Checksum">
       <xpath>//marc:datafield[@tag='024']/marc:subfield[@code='a']/text()</xpath>
    </field>
    <field name="Rights">
-      <xpath>//marc:datafield[@tag='542']/marc:subfield[@code='l']/text()</xpath>
+      <xpath>//marc:datafield[@tag='540']/marc:subfield[@code='a'],//marc:datafield[@tag='542']/marc:subfield[@code='l']/text()</xpath>
    </field>
    <!-- Provenance data -->
    <field name="Discipline">
       <xpath>//marc:datafield[@tag='526']/marc:subfield[@code='a']/text()</xpath>
    </field>
    <field name="author">
-      <xpath>//marc:datafield[@tag='690']/marc:subfield[@code='b']/text()</xpath>
-      <xpath>//marc:datafield[@tag='100']/marc:subfield[@code='a']/text()</xpath>
-      <xpath>//marc:datafield[@tag='700']/marc:subfield/text()</xpath>
-      <xpath>//marc:datafield[@tag='856']/marc:subfield[@code='f']/text()</xpath>
-      <xpath>//marc:datafield[@tag='690']/marc:subfield[@code='b']/text()</xpath>
+      <xpath>//marc:datafield[@tag='100']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='690']/marc:subfield[@code='b']/text(),//marc:datafield[@tag='700']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='856']/marc:subfield[@code='f']/text()</xpath>
     </field>
     <field name="Publisher">
       <xpath>//marc:datafield[@tag='260']/marc:subfield[@code='b']/text()</xpath>
@@ -43,7 +39,7 @@
     <field name="PublicationYear">
       <xpath>//marc:datafield[@tag='264']/marc:subfield[@code='c']/text()</xpath>
     </field>
-    <field name="B2SHARE-Domain">
+    <field name="B2SHARE-Community">
       <xpath>//r:header/r:setSpec/text()</xpath>
     </field>
     <!-- Formal data -->

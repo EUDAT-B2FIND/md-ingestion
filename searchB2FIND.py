@@ -202,7 +202,10 @@ def get_args(ckanlistrequests):
              returns the list of id's and the related DOI's of all records in 
              community "NARCIS" that have a DOI. Additonally statistical 
              information about the coverage and distribution of the facet 
-             DOI is written to an extra file. 
+             DOI is written to an extra file.
+           4. >./searchB2FIND.py -c cessda metadata_modified:[2013-01-01T00:00:0.0Z TO 2016-09-30T23:59:59.999Z]
+            searchs for all datasets of community CESSDA that are modified in 
+            the B2FIND catalogue within the years 2013 to 2016.
 '''
     )
    

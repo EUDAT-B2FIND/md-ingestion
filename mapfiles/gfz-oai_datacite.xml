@@ -4,58 +4,58 @@
   <namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dcite_3" uri="http://datacite.org/schema/kernel-3"/>
-    <namespace ns="r" uri="http://datacite.org/schema/kernel-2.2"/>
+    <namespace ns="dcite_2" uri="http://datacite.org/schema/kernel-2.2"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
     <field name="title">
-      <xpath>//dcite_3:titles/dcite_3:title , //r:titles/r:title</xpath>
+      <xpath>//dcite_3:titles/dcite_3:title , //dcite_2:titles/dcite_2:title</xpath>
     </field>
     <field name="notes">
-      <xpath>//dcite_3:description , //r:description</xpath>
+      <xpath>//dcite_3:description , //dcite_2:description</xpath>
     </field>
     <field name="tags">
-      <xpath>//dcite_3:subject, //r:subject</xpath>
+      <xpath>//dcite_3:subject, //dcite_2:subject</xpath>
     </field>
     <!-- Access data -->
    <field name="url">
-       <xpath>//r:resource/r:identifier, //dcite_3:resource/dcite_3:identifier</xpath>
+       <xpath>//dcite_2:resource/dcite_2:identifier, //dcite_3:resource/dcite_3:identifier</xpath>
    </field>
    <field name="Checksum">
        <xpath></xpath> 
    </field>
     <field name="Rights">
-      <xpath>//r:rights</xpath>
+      <xpath>//dcite_2:rights</xpath>
     </field>
    <!-- Provenance data -->
     <field name="Discipline">
       <string>Earth Sciences</string>
     </field>
     <field name="author">
-      <xpath>//dcite_3:creatorName , //r:creatorName</xpath>
+      <xpath>//dcite_3:creatorName , //dcite_2:creatorName</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dcite_3:publisher , //r:publisher</xpath>
+      <xpath>//dcite_3:publisher , //dcite_2:publisher</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//dcite_3:publicationYear , //r:publicationYear</xpath>
+      <xpath>//dcite_3:publicationYear , //dcite_2:publicationYear</xpath>
     </field>
    <!-- Formal data -->
     <field name="Language">
-      <xpath>//dcite_3:language , //r:language</xpath>
+      <xpath>//dcite_3:language , //dcite_2:language</xpath>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//dcite_3:geoLocationBox , //r:geoLocationBox, //r:description </xpath>
+      <xpath>//dcite_3:geoLocationBox , //dcite_2:geoLocationBox </xpath>
     </field>
     <field name="TemporalCoverage">
-      <xpath>//dcite_3:dates/dcite_3:date , //r:dates/r:date</xpath>
+      <xpath>//dcite_3:dates/dcite_3:date , //dcite_2:dates/dcite_2:date</xpath>
     </field>
     <field name="Format">
-      <xpath>//dcite_3:format , //r:format</xpath>
+      <xpath>//dcite_3:format , //dcite_2:format</xpath>
     </field>
     <!-- Additional Information -->
     <field name="Contact">
-      <xpath>//dcite_3:publisher, //r:contributorName</xpath>
+      <xpath>//dcite_3:publisher, //dcite_2:contributorName</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">

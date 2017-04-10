@@ -47,7 +47,6 @@
     </field>
     <field name="PublicationYear">
       <xpath>//marc:datafield[@tag = '269']/marc:subfield[@code = 'c']/text()</xpath>
-      <xpath>//marc:datafield[@tag = '260']/marc:subfield[@code = 'c']/text()</xpath>
     </field>
     <!-- Formal data -->
     <field name="Language">

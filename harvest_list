@@ -11,6 +11,14 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## Aston university
+aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D646174615F636F6C6C656374696F6E 
+## ENVRIPLUS
+envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso anaee_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso euro-argo_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso lter_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso seadatanet_1
 ## SEADATANET
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?SERVICE=CSW&REQUEST=GetCapabilities&VERSION=2.0.2   csw csw  cams1_ps
 ## ETSIN
@@ -34,7 +42,7 @@ eiscat  http://ed-icat-01.csc.fi/cgi-bin/oai-pmh   ListIdentifiers   oai_dc
 ## IST
 ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 # eprints, Status = Published
-ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
+## ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
 ## LTER (repository DEIMS)
 lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
 ## HDCP2
@@ -44,16 +52,16 @@ pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc cita
 ## GFZ
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
 ## GFZ sub communities
-geofon 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
+geofon http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
 geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET
 icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
-gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GFZ
+###gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GFZ
 gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
 isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
-pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
+## pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
 sddb    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SDDB
-tr32db 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TR32DB
-crc806db http://crc806db.uni-koeln.de        ListRecords   oai_datacite  DOIDB.SFB806
+##tr32db 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TR32DB
+##crc806db http://crc806db.uni-koeln.de        ListRecords   oai_datacite  DOIDB.SFB806
 wsm     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.WSM
 enmap 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ENMAP
 tereno  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TERENO 
@@ -513,7 +521,7 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-
 #ERROR: None??? cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi dda_
 #ERROR 404 Client Error cessda http://nesstar.snd.gu.se/oai-pmh ListRecords  oai_ddi snd_
 #h=96 ok ##161111 : connection errors
-cessda http://nesstar.ucd.ie/oai-pmh ListRecords  oai_ddi ucd_
+cessda http://nesstar.ucd.ie/oai-pmh ListIdentifiers  oai_ddi ucd_
 #h=564 == #DASISH = 546
 # ERROR: HTTPConnectionPool cessda http://www.lidata.eu/oaiprovider ListIdentifiers  ddi lida_
 #h=7137 ?= #DASISH = 6286
@@ -551,17 +559,31 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc E10000
 cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 dataset json
+##%%% EUDAT B2SHARE Training instance
+b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc trng_
 ##%%% EUDAT B2SHARE
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Linguistics
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Generic
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Eudat
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml c4234f93-da96-4d2f-a2c8-fa83d0775212 # Aalto
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 99916f6f-9a2c-4feb-a342-6552ac7f1529 # BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 0afede87-2bf2-4d89-867e-d2ee57251c62 # CLARIN
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 94a9567e-2fba-4677-8fde-a8b68bdb63e8 # DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml b344f92a-cd0e-4e4c-aa09-28b5f95f7e41 # EISCAT
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml e9b9792e-79fb-4b07-b6b4-b9c2bd06d095 # EUDAT
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 893fad89-dc4a-4f1b-a9ba-4240aa18e12b # EUON
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 4ba7c0fd-1435-4313-9c13-4d888d60321a # GBIF
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml d952913c-451e-4b5c-817e-d578dc8a4469 # LTER
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 867c4e67-9227-4b6f-8595-c97d37e9de61 # NRM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 8d963a29-5e19-492b-8cfe-97da4f54fad2 # RDA
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
-## NOT YET b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml CLARIN
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EISCAT
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUDAT
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml LTER
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
 ##HEW-Allocator datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ANDS ## Australian National Data Service; 5199;
@@ -610,7 +632,7 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.BGI ## Beijing
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.BRIGHTON ## University of Brighton; 7;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.BRISTOL ## University of Bristol; 64;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.CARDIFF ## Cardiff University; 6;
-datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.CCDC ## The Cambridge Crystallographic Data Centre; 564504;
+datacite  http://oai.datacite.org/oai  ListRecords  oai_dc BL.CCDC ## The Cambridge Crystallographic Data Centre; 564504;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.CEFAS ## Cefas; 36;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.DUNDEE ## University of Dundee; 5;
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc BL.DURHAM ## Durham University; 20;
@@ -1208,5 +1230,6 @@ indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc co
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_4
 ## ALEPH
 aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml dataset:aleph
+aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml test
 ## OpenAIRE
 openaire  http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers oai_datacite OpenAIRE
