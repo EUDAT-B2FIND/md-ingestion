@@ -21,7 +21,6 @@ import argparse
 import timeout_decorator
 import urllib2, urllib, socket
 import json, pprint
-import ckanclient
 
 
 def check_url(url):
@@ -150,7 +149,6 @@ def checkProbes(args):
     print (' Check the service endpoint %s' % b2find_url)
     ckanapi3=b2find_url+'/api/3'
     ckanapi3act=b2find_url+'/api/3/action/'
-    ##HEW-D ckan = ckanclient.CkanClient(ckanapi3)
     ckan_limit=100
 
     start=time.time()
