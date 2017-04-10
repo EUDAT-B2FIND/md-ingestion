@@ -540,7 +540,10 @@ def process_upload(UP, rlist):
             elif (community == 'sdl'):
                 mdaccess =reqpre+'&identifier=oai::record/'+oai_id
             elif (community == 'b2share'):
-                mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
+                if subset.startswith('trng') :
+                    mdaccess ='https://trng-b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
+                else:
+                    mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
 
             if UP.check_url(mdaccess) == False :
                 logging.critical('URL %s is broken' % (mdaccess))
