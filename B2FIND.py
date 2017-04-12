@@ -473,7 +473,10 @@ class HARVESTER(object):
             oaireq=getattr(sickle,req["lverb"], None)
             try:
                 records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
-            except (ImportError,ConnectionError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as err:
+            except (HTTPError,ConnectionError) as err:
+                self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
+                return -1
+            except (ImportError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as err:
                 self.logger.critical("%s during harvest request %s\n" % (err,req))
                 return -1
             
@@ -938,6 +941,35 @@ class MAPPER(object):
            return dataset
 
         return dataset
+
+    def check_url(self,url):
+        ## check_url (MAPPER object, url) - method
+        # Checks and validates a url via urllib module
+        #
+        # Parameters:
+        # -----------
+        # (url)  url - Url to check
+        #
+        # Return Values:
+        # --------------
+        # 1. (boolean)  result
+    
+        try:
+            resp = urlopen(url, timeout=10).getcode()
+        except HTTPError as err:
+            if (err.code == 422):
+                self.logger.error('%s in check_url of %s' % (err.code,url))
+                return Warning
+            else :
+                return False
+        except URLError as err: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
+            self.logger.error('%s in check_url of %s' % (err,url))
+            if str(e.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
+                return Warning
+            else :
+                return False
+        else:
+            return True
  
     def map_identifiers(self, invalue):
         """
@@ -975,14 +1007,20 @@ class MAPPER(object):
                     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
                     if reurl :
                         iddict['url'] = reurl.group("url")##[0]
-
+            
         except Exception as e:
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return {}
         else:
-            for id in iddict :
-                self.logger.debug('iddict\t(%s,%s)' % (id,iddict[id]))
-            return iddict
+            if self.OUT.verbose > 1 :
+                for id in iddict :
+                    self.logger.debug('iddict\t(%s,%s)' % (id,iddict[id]))
+                    if self.check_url(iddict[id]):
+                        self.logger.debug('Identifier %s checked successfully' % iddict[id])
+                    else:
+                        self.logger.crtitical('Identifier %s failed in url checker' % iddict[id])
+
+        return iddict
 
     def map_lang(self, invalue):
         """
@@ -2060,6 +2098,9 @@ class MAPPER(object):
                 # loop over target schema (B2FIND)
                 self.logger.info('Mapping of ...')
                 ##HEW-T print ('self.b2findfields %s' % self.b2findfields.values())
+                if 'url' not in jsondata:
+                    self.logger.error('|- No identifier for id %s' % filename)
+
                 for facetdict in self.b2findfields.values() :
                     facet=facetdict["ckanName"]
                     ##HEW-T print ('facet %s ' % facet)

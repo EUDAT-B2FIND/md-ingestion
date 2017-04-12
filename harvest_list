@@ -53,9 +53,11 @@ pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc cita
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
 ## GFZ sub communities
 geofon http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
+geofon http://doidb.wdc-terra.org/oaip/oai  ListIdentifiers   iso19139  DOIDB.SEISNET
 geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET
 icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
-###gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GFZ
+###
+gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
 gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
 isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
 ## pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
