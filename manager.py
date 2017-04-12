@@ -411,6 +411,7 @@ def process_upload(UP, rlist):
         "oai_ddi" : "http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd",
         "marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
         "iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
+        "iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
         "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
         "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
         "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
