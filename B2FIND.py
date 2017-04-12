@@ -3170,7 +3170,7 @@ class UPLOADER(object):
                 return False
         except URLError as err: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
             self.logger.error('%s in check_url of %s' % (err,url))
-            if str(e.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
+            if str(err.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
                 return Warning
             else :
                 return False
