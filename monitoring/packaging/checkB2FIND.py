@@ -35,7 +35,7 @@ def check_url(url):
     # 1. (boolean)  result
 
     rta=0
-    resplen='--'
+    resplen=''
     try:
         start=time.time()
         if (urllib2.urlopen(url, timeout=1).getcode() < 501):
