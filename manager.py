@@ -311,8 +311,9 @@ def process_map(MP, rlist):
                 logger.error('Can not access mapfile %s for community %s and mdformat %s ' % (mapfile,request[0],request[3]))
                 mapfile='%s/%s/%s.%s' % (os.getcwd(),'mapfiles',request[3],mext)
                 if not os.path.isfile(mapfile):
-                    logger.critical('Can not access mapfile %s for mdformat %s ' % (mapfile,request[3]))
-                    sys.exit(-1)
+                    logger.critical('Can not access mapfile for mdformat %s ' % request[3])
+                    ##sys.exit(-1)
+                    continue
             target=None
         print ('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S")))
         
