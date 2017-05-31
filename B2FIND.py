@@ -410,20 +410,25 @@ class HARVESTER(object):
             }
 
         # set subset:
-        if (not req["mdsubset"]):
+        mdsubset=req["mdsubset"]
+        if (not mdsubset):
             subset = 'SET'
-        elif req["mdsubset"].endswith('_'): # no OAI subsets, but different OAI-URLs for same community
-            subset = req["mdsubset"][:-1]
-            req["mdsubset"]=None
+        elif mdsubset.endswith('_'): # no OAI subsets, but different OAI-URLs for same community
+            subset = mdsubset[:-1]
+            mdsubset=None
+        elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
+            subset = mdsubset[:-2]
         else:
-            if req["community"] == "b2share" and req["mdsubset"] in setMap :
-                    subset = setMap[req["mdsubset"]]
+            if req["community"] == "b2share" and mdsubset in setMap :
+                    subset = setMap[mdsubset]
             else:
-               subset = req["mdsubset"]
+               subset = mdsubset
             
         if (self.fromdate):
             subset = subset + '_f' + self.fromdate
-        
+
+        self.logger.debug(' |- Subset:    \t%s' % subset )
+
         # make subset dir:
         subsetdir = '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
 
@@ -442,8 +447,8 @@ class HARVESTER(object):
             choffset=0
             try:
                 records=list()
-                if req["mdsubset"] and req["lverb"] == 'works' :
-                    haction='works?publisher-id='+req["mdsubset"]
+                if mdsubset and req["lverb"] == 'works' :
+                    haction='works?publisher-id='+mdsubset
                     chunk=oaireq(**{'action':haction,'offset':None,'key':None})
                 else:
                     haction=req["lverb"]
