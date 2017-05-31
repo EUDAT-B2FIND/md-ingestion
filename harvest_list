@@ -13,12 +13,17 @@
 ## -----------------------------------------------------------------------------------
 ## Aston university
 aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D646174615F636F6C6C656374696F6E 
+## RDA summerscool test OAI @CSC
+rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## ENVRIPLUS
-envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc
-envriplus http://www.envriplus.eu/oai??? ListRecords  iso anaee_1
-envriplus http://www.envriplus.eu/oai??? ListRecords  iso euro-argo_1
-envriplus http://www.envriplus.eu/oai??? ListRecords  iso lter_1
-envriplus http://www.envriplus.eu/oai??? ListRecords  iso seadatanet_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 anaee_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 euro-argo_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 epos_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 iagos_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  marcxml icos_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
+envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 seadatanet_1
 ## SEADATANET
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?SERVICE=CSW&REQUEST=GetCapabilities&VERSION=2.0.2   csw csw  cams1_ps
 ## ETSIN
@@ -1206,6 +1211,8 @@ pandata http://oai.eudat.stfc.ac.uk/oai/provider         ListRecords oai_dc
 ##%%% NARCIS
 narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
+##%%% Europeana
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  cmdi samples
 ##%%% TheEuropeanLIbrary
 ##     - research related records --> B2FIND !!!
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1058
