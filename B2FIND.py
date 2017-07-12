@@ -24,6 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
+# from future
+from __future__ import absolute_import
+from __future__ import print_function
+
 # system relevant modules:
 import os, glob, sys
 import time, datetime, subprocess
@@ -41,6 +45,7 @@ PY2 = sys.version_info[0] == 2
 # needed for HARVESTER class:
 from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
+from owslib.csw import CatalogueServiceWeb
 from requests.exceptions import ConnectionError
 import uuid
 import lxml.etree as etree
@@ -204,7 +209,7 @@ class CKAN_CLIENT(object):
             request = Request(action_url,data_string)
             self.logger.debug('request %s' % request)            
             if (self.api_key): request.add_header('Authorization', self.api_key)
-            self.logger.debug('api_key %s....' % self.api_key[:10])
+            self.logger.debug('api_key %s....' % self.api_key)
             if PY2 :
                 response = urlopen(request)
             else :
@@ -484,16 +489,33 @@ class HARVESTER(object):
             except (ImportError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as err:
                 self.logger.critical("%s during harvest request %s\n" % (err,req))
                 return -1
+
+        elif req["lverb"].startswith('csw'):
+            src = CatalogueServiceWeb(req['url'])
+            outtypedir='xml'
+            outtypeext='xml'
+            startposition=0
+            maxrecords=100
+            oaireq=getattr(src,'getrecords2') ## HEW-D ,req["lverb"], None)
+            try:
+                oaireq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
+                records=list(src.records.itervalues())
+            except (HTTPError,ConnectionError) as err:
+                self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
+                return -1
+            except (ImportError,CannotDisseminateFormat,Exception) as err:
+                self.logger.critical("%s during harvest request %s\n" % (err,req))
+                return -1
             
             try:
-                ntotrecs=len(list(rc))
+                ntotrecs=len(records)
             except :
                 print ('iterate through iterable does not work ?')
                 
         print ("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
-##        if ntotrecs == 0 :
-##            print ("\t|- No records harvetested, exit")
-##            sys.exit(-1)
+        if ntotrecs == 0 :
+            self.logger.warning("\t|- Can not access any records to harvest")
+            return -1
 
         deleted_metadata = dict()
         for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
@@ -571,7 +593,74 @@ class HARVESTER(object):
                     # if everything worked then delete this metadata file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
-            else:  ## OAI-PMH harvesting of XML records using Python Sickle module
+
+            ## Harvest via CSW
+            elif req["lverb"] == 'csw':
+
+                # set oai_id and generate a uniquely identifier for this dataset:
+                if hasattr(record,'identifier') :
+                    oai_id = record.identifier
+
+                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+
+                outfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
+
+                try:
+                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
+                    logging.debug('Try to write the harvested XML record to %s' % outfile)
+                    
+                    # get the raw xml content:    
+                    metadata = etree.fromstring(record.xml)
+                    if (metadata is not None):
+                        try:
+                            metadata = etree.tostring(metadata, pretty_print = True)
+                        except Exception as e:
+                            self.logger.debug('%s : Metadata: %s ...' % (e,metadata[:20]))
+                        if PY2 :
+                            try:
+                                metadata = metadata.encode('utf-8')
+                            except (Exception,UnicodeEncodeError) as e :
+                                self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
+
+                        if (not os.path.isdir(subsetdir+'/xml')):
+                           os.makedirs(subsetdir+'/xml')
+                           
+                        # write metadata in file:
+                        try:
+                            f = open(outfile, 'w')
+                            if PY2:
+                                f.write(metadata)
+                            else:
+                                f.write(metadata.decode('utf-8'))
+                            f.close
+                        except IOError :
+                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (outfile))
+                            stats['ecount'] +=1
+                            continue
+                        else:
+                            logging.debug('Harvested XML file written to %s' % outfile)
+                            stats['count'] += 1
+                        
+                    else:
+                        stats['ecount'] += 1
+                        logging.warning('    [WARNING] No metadata available for %s' % oai_id)
+
+                except TypeError as e:
+                    logging.error('    [ERROR] TypeError: %s' % e)
+                    stats['ecount']+=1        
+                    continue
+                except Exception as e:
+                    logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
+                    ## logging.debug(metadata)
+                    stats['ecount']+=1
+                    continue
+                else:
+                    # if everything worked then delete this metadata file from deleted_metadata
+                    if uid in deleted_metadata:
+                        del deleted_metadata[uid]
+
+            ## OAI-PMH harvesting of XML records using Python Sickle module
+            else:  
                 if req["lverb"] == 'ListIdentifiers' :
                     if (record.deleted):
                        ##HEW-??? deleted_metadata[record.identifier] = 
@@ -590,10 +679,10 @@ class HARVESTER(object):
                 # generate a uniquely identifier for this dataset:
                 uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id)) ##HEW-Py3- D.encode('ascii','replace')))
 
-                xmlfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
+                outfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
                 try:
                     logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
-                    ## logging.debug('Harvested XML file written to %s' % xmlfile)
+                    ## logging.debug('Harvested XML file written to %s' % outfile)
                     
                     # get the raw xml content:    
                     metadata = etree.fromstring(record.raw)
@@ -613,18 +702,18 @@ class HARVESTER(object):
                            
                         # write metadata in file:
                         try:
-                            f = open(xmlfile, 'w')
+                            f = open(outfile, 'w')
                             if PY2:
                                 f.write(metadata)
                             else:
                                 f.write(metadata.decode('utf-8'))
                             f.close
                         except IOError :
-                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (xmlfile))
+                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (outfile))
                             stats['ecount'] +=1
                             continue
                         else:
-                            logging.debug('Harvested XML file written to %s' % xmlfile)
+                            logging.debug('Harvested XML file written to %s' % outfile)
                             stats['count'] += 1
                         
                     else:
@@ -1913,7 +2002,7 @@ class MAPPER(object):
 
         return jsondata
 
-    def map(self,request,target_mdschema): ### community,mdprefix,path,target_mdschema):
+    def map(self,request): ### community,mdprefix,path,target_mdschema):
         ## map(MAPPER object, community, mdprefix, path) - method
         # Maps XML files formated in source specific MD schema/format (=mdprefix)
         #   to JSON files formatted in target schema (by default B2FIND schema) 
@@ -1943,6 +2032,7 @@ class MAPPER(object):
         community=request[0]
         mdprefix=request[3]
         mdsubset=request[4]   if len(request)>4 else None
+        target_mdschema=request[8]   if len(request)>8 else None
         # set subset:
         if (not mdsubset):
             subset = 'SET_1' ## or 2,...
@@ -1957,6 +2047,7 @@ class MAPPER(object):
         # make subset dir:
         path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
         self.logger.info(' |- Input path:\t%s' % path)
+        print(' |- Input path:\t%s' % path)
 
         # settings according to md format (xml or json processing)
         if mdprefix == 'json' :
@@ -1970,7 +2061,7 @@ class MAPPER(object):
 
         # check input path
         if not os.path.exists(path + insubdir):
-            self.logger.critical('[ERROR] Can not access directory "%s"' % path)
+            self.logger.critical('Can not access directory "%s"' % path)
             return results
       
         # make output directory for mapped json's
@@ -3167,12 +3258,9 @@ class UPLOADER(object):
     
         try:
             resp = urlopen(url, timeout=10).getcode()###HEW-!! < 501
-        except HTTPError as err:
-            if (err.code == 422):
-                self.logger.error('%s in check_url of %s' % (err.code,url))
-                return Warning
-            else :
-                return False
+        except (HTTPError,ValueError) as err:
+            self.logger.error('%s in check_url of %s' % (err,url))
+            return False
         except URLError as err: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
             self.logger.error('%s in check_url of %s' % (err,url))
             if str(err.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
@@ -3537,10 +3625,14 @@ class OUTPUT(object):
                                 total += self.stats[request][s][m][key]
                     
                 return total
-            elif('#' in mode):
+            elif('#' in mode and subset ):
                 return self.stats[request][subset][mode]
                 
-            return self.stats[request][subset]
+            elif(subset):
+                return self.stats[request][subset]
+
+            elif(request):
+                return self.stats[request]
         
         return self.stats[request][subset][mode][key]
             

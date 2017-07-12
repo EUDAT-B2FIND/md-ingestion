@@ -16,7 +16,10 @@ aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D64
 ## RDA summerscool test OAI @CSC
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## ENVRIPLUS
-envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 anaee_1
+##HEW-T 
+envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee
+### envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw http://www.isotc211.org/2005/gmd anaee 
+##HEW-D envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 anaee_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 euro-argo_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 epos_1
