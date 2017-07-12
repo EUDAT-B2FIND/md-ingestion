@@ -158,11 +158,11 @@ def main():
     try:
         # start the process:
         process(options,pstat,OUT)
-        exit()
-    except Exception :
-        logging.critical("[CRITICAL] Program is aborted because of a critical error! Description:")
-        logging.critical("%s" % traceback.format_exc())
-        exit()
+        sys.exit()
+    except Exception as err :
+        logging.critical("%s" % err)
+        logging.debug("%s" % traceback.format_exc())
+        sys.exit()
     finally:
         # exit the program and open results HTML file:
         exit_program(OUT)
@@ -302,24 +302,11 @@ def process_map(MP, rlist):
         else:
             mext='xml'
 
-        if (len (request) > 5):            
-            mapfile='%s/%s-%s.%s' % ('mapfiles',request[0],request[5],mext)
-            target=request[5]
-        else:
-            mapfile='%s/%s/%s-%s.%s' % (os.getcwd(),'mapfiles',request[0],request[3],mext)
-            if not os.path.isfile(mapfile):
-                logger.error('Can not access mapfile %s for community %s and mdformat %s ' % (mapfile,request[0],request[3]))
-                mapfile='%s/%s/%s.%s' % (os.getcwd(),'mapfiles',request[3],mext)
-                if not os.path.isfile(mapfile):
-                    logger.critical('Can not access mapfile for mdformat %s ' % request[3])
-                    ##sys.exit(-1)
-                    continue
-            target=None
-        print ('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S")))
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
         
-        results = MP.map(request,target)
+        results = MP.map(request)
 
         ctime=time.time()-cstart
         results['time'] = ctime
@@ -342,7 +329,7 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        if len(request) > 4:
+        if len(request) > 4 and request[4] :
             outfile='oaidata/%s-%s/%s_*/%s' % (request[0],request[3],request[4],'validation.stat')
         else:
             outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],'SET_*','validation.stat')
@@ -430,7 +417,7 @@ def process_upload(UP, rlist):
             subset = request[4]
         else:
             subset = 'SET_1'
-        dir = dir+'/'+subset
+        ## dir = dir+'/'+subset
         
         results = {
             'count':0,
@@ -448,7 +435,7 @@ def process_upload(UP, rlist):
         except Exception :
             logging.critical("Can not list CKAN groups")
   
-        if len(request) > 4:
+        if len(request) > 4 and request[4] :
             m = re.search(r'_\d+$', request[4]) # check if subset ends with '_' + digit
             if m is not None:
                 subset=request[4]
@@ -548,7 +535,7 @@ def process_upload(UP, rlist):
                     mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
 
             if UP.check_url(mdaccess) == False :
-                logging.critical('URL %s is broken' % (mdaccess))
+                logging.warning('URL %s is broken' % (mdaccess))
             else:
                 jsondata['MetaDataAccess']=mdaccess
 
@@ -946,7 +933,7 @@ def options_parser(modes):
     group_upload = optparse.OptionGroup(p, "Upload Options",
         "These options will be required to upload an dataset to a CKAN database.")
     group_upload.add_option('--iphost', '-i', help="IP adress of B2FIND portal (CKAN instance)", metavar='IP')
-    group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, iby default taken from file $HOME/.netrc)",metavar='STRING')
+    group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, by default taken from file $HOME/.netrc)",metavar='STRING')
     group_upload.add_option('--handle_check', 
          help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file", default=None,metavar='FILE')
     group_upload.add_option('--ckan_check',
