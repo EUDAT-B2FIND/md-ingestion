@@ -11,24 +11,23 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## HZG
+hzg   http://????  ListRecords  iso19139 coastmap
 ## Aston university
 aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D646174615F636F6C6C656374696F6E 
 ## RDA summerscool test OAI @CSC
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## ENVRIPLUS
-##HEW-T 
-envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee
-### envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw http://www.isotc211.org/2005/gmd anaee 
-##HEW-D envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 anaee_1
-envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 euro-argo_1
+envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
+envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
 envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 epos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 iagos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  marcxml icos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
-envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 seadatanet_1
+envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 seadatanet
 ## SEADATANET
-seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?SERVICE=CSW&REQUEST=GetCapabilities&VERSION=2.0.2   csw csw  cams1_ps
+seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
 ## ETSIN
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
@@ -169,6 +168,7 @@ dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137:MPI1557280
 ### new subsets ???!!!!!!!!!!!!
+clarin http://clarin.ids-mannheim.de/vcr/oai ListRecords cmdi ids_
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0105-0
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1992-9
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1EBD-5
