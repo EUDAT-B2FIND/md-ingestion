@@ -161,7 +161,7 @@ def main():
         sys.exit()
     except Exception as err :
         logging.critical("%s" % err)
-        logging.debug("%s" % traceback.format_exc())
+        logging.error("%s" % traceback.format_exc())
         sys.exit()
     finally:
         # exit the program and open results HTML file:
@@ -358,7 +358,7 @@ def process_oaiconvert(MP, rlist):
         print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
         rcstart = time.time()
         
-        results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]),request[5])
+        results = MP.oaiconvert(request)
 
         rctime=time.time()-rcstart
         results['time'] = rctime
