@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<EXP2 xsi:noNamespaceSchemaLocation="http://cera-www.dkrz.de/Meta_Fill/exp2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ENTRY>
+      <ENTRY_TYPE>experiment</ENTRY_TYPE>
+      <CREATION_DATE>2016-02-02</CREATION_DATE>
+      <ENTRY_NAME>High Definition Clouds and Precipitation for Climate Prediction HDCP2-OBS Cloudnet products</ENTRY_NAME>
+      <ENTRY_ACRONYM>HDCP2-cloudnet_products</ENTRY_ACRONYM>
+      <SUMMARY>Cloudnet-processed remote-sensing data for Climate Prediction-Observations
+HDCP2 Project. See the global argument *cloudnet_source* for more details.
+	History: Data processed with convert_cloudnet_classification2hdcp.m by TROPOS, Version: 1.0
+	Conventions: CF-1.6 where applicable.
+	License: For non-commercial use only. This data is subject to the HDCP2 data policy to be found at hdcp2.zmaw.de and in the HDCP2 Observation Data Product Standard.
+	Data is hosted by http://data.hdcp2.uni-koeln.de/thredds/isyMettCatalog.html
+	</SUMMARY>
+      <AUTHORS>Seifert, Patric</AUTHORS>
+      <PROJECT_ACRONYM>HDCP2-OBS</PROJECT_ACRONYM>
+      <QUALITY>
+         <ACCURACY_REPORT>not filled</ACCURACY_REPORT>
+         <CONSISTENCY_REPORT>not filled</CONSISTENCY_REPORT>
+         <COMPLETENESS_REPORT>not filled</COMPLETENESS_REPORT>
+         <HORIZONTAL_ACC_REPORT>not filled</HORIZONTAL_ACC_REPORT>
+         <VERTICAL_ACC_REPORT>not filled</VERTICAL_ACC_REPORT>
+      </QUALITY>
+   </ENTRY>
+   <CONTACT>
+      <CONTACT_TYPE>scientific_contact</CONTACT_TYPE>
+      <INSTITUTE>
+         <INSTITUTE_ID>193</INSTITUTE_ID>
+      </INSTITUTE>
+      <PERSON>
+         <PERSON_ID>2000961</PERSON_ID>
+      </PERSON>
+   </CONTACT>
+   <CONTACT>
+      <CONTACT_TYPE>scientific_contact</CONTACT_TYPE>
+      <INSTITUTE>
+         <INSTITUTE_ID>2000495</INSTITUTE_ID>
+      </INSTITUTE>
+      <PERSON>
+         <PERSON_ID>2001338</PERSON_ID>
+      </PERSON>
+   </CONTACT> 
+   <COVERAGE>
+      <LOCATION_NAME>World</LOCATION_NAME>
+      <LOCATION_DESCR>not filled</LOCATION_DESCR>
+      <MIN_LON>0</MIN_LON>
+      <MAX_LON>358.125</MAX_LON>
+      <MIN_LAT>-88.5722</MIN_LAT>
+      <MAX_LAT>88.5722</MAX_LAT>
+      <MIN_ALTITUDE>100000</MIN_ALTITUDE>
+      <MIN_ALT_UNIT>Pa</MIN_ALT_UNIT>
+      <MAX_ALTITUDE>10</MAX_ALTITUDE>
+      <MAX_ALT_UNIT>Pa</MAX_ALT_UNIT>
+      <START_YEAR>2013</START_YEAR>
+      <START_MONTH>4</START_MONTH>
+      <START_DAY>1</START_DAY>
+      <STOP_YEAR>2013</STOP_YEAR>
+      <STOP_MONTH>5</STOP_MONTH>
+      <STOP_DAY>31</STOP_DAY>
+      <CURRENTNESS_REF_DESCR>calendrical</CURRENTNESS_REF_DESCR>
+   </COVERAGE>
+   <KEY_CONNECT>
+      <GENERAL_KEY>Hope campaign</GENERAL_KEY>
+   </KEY_CONNECT>
+   <KEY_CONNECT>
+      <GENERAL_KEY>Local observations</GENERAL_KEY>
+   </KEY_CONNECT>
+   <KEY_CONNECT>
+      <GENERAL_KEY>Supersite LACROS</GENERAL_KEY>
+   </KEY_CONNECT>  
+</EXP2>
