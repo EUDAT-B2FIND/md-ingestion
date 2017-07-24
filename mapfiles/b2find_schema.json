@@ -221,18 +221,27 @@
     "Community" : {
         "name" : "community",
         "description" : "",
-        "ckanName" : "group",
+        "ckanName" : "community",
         "ckanType" : "default",
         "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
+    },
+    "oai_identifier" : {
+        "name" : "oai_identifier",
+        "description" : "",
+        "ckanName" : "oai_identifier",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "textual",
+        "obligation" : "mandatory"
     },
     "oai_set" : {
         "name" : "oai_set",
         "description" : "",
         "ckanName" : "oai_set",
         "ckanType" : "extra",
-        "display" : "shown",
+        "display" : "hidden",
         "type" : "textual",
         "obligation" : "mandatory"
     }
