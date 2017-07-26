@@ -169,6 +169,7 @@ dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137:MPI1557280
 ### new subsets ???!!!!!!!!!!!!
 clarin http://clarin.ids-mannheim.de/vcr/oai ListRecords cmdi ids_
+### DC from CLARIN??? clarin http://clarin.ids-mannheim.de/vcr/oai ListRecords oai_dc ids_
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0105-0
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1992-9
 clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1EBD-5
