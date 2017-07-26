@@ -439,6 +439,8 @@ def process_upload(UP, rlist):
             m = re.search(r'_\d+$', request[4]) # check if subset ends with '_' + digit
             if m is not None:
                 subset=request[4]
+            elif request[4].endswith('_'):
+                subset=request[4]+'1'
             else:
                 subset=request[4]+'_1'
         else:
@@ -535,7 +537,7 @@ def process_upload(UP, rlist):
                     mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
 
             if UP.check_url(mdaccess) == False :
-                logging.warning('URL %s is broken' % (mdaccess))
+                logging.error('URL %s is broken' % (mdaccess))
             else:
                 jsondata['MetaDataAccess']=mdaccess
 
