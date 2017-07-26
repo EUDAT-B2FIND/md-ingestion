@@ -487,7 +487,7 @@ class HARVESTER(object):
             outtypeext='xml'
             oaireq=getattr(sickle,req["lverb"], None)
             try:
-                records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':req['mdsubset'],'ignore_deleted':True,'from':self.fromdate}))
+                records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':mdsubset,'ignore_deleted':True,'from':self.fromdate}))
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1
