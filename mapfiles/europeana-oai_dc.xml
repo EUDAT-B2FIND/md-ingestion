@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore metadata from DataCite. -->
+  <!-- Mappings for DublinCore metadata from Europeana. -->
   <namespaces>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
@@ -14,7 +14,7 @@
       <xpath>//dc:description</xpath>
     </field>
     <field name="tags">
-      <xpath>//dc:type</xpath>
+      <xpath>//dc:subject</xpath>
     </field>
     <!-- Access data  -->
     <field name="url">
@@ -46,11 +46,19 @@
       <xpath>//dc:coverage</xpath>
     </field>
     <field name="TemporalCoverage">
+      <xpath>//dc:coverage</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//dc:type</xpath>
     </field>
     <field name="Format">
       <xpath>//dc:format</xpath>
     </field>
-    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <!-- additional information -->
+    <field name="Contact">
+      <xpath>//dc:contact</xpath>
+    </field>
+   <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
