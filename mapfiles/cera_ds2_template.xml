@@ -6,7 +6,7 @@
         Use 'not filled' in case of no superordinated entries
         Do not change entry_type
    -->
-	<experiment_acronym>%(community)s-cloudnet_products</experiment_acronym>
+	<experiment_acronym>%(community)s-%(oai_set)s</experiment_acronym>
 	<dataset_group_acronym></dataset_group_acronym>
 	<entry_type>dataset</entry_type>
 	<!-- 
@@ -16,17 +16,17 @@
         What should be in the summary?
         see: http://cera-www.dkrz.de/Meta_Fill/FAQ.html (ueberarbeiten!!)
    -->
-	<entry_acronym>%(community)s_%(oai_identifier)s </entry_acronym>
-	<entry_name>%(title)s %(oai_identifier)s </entry_name>
+	<entry_acronym>%(community)s_%(identifier)s </entry_acronym>
+	<entry_name>%(title)s</entry_name>
 	<summary>%(notes)s </summary>
-	<creation_date>%(PublicationYear)s %(PublicationTimestamp)s </creation_date>
+	<creation_date></creation_date>
 	<!-- 
         *_report: free text, max. 2000 characters. 
         Use 'not filled' instead of empty tags.
    -->
-	<accuracy_report>%(title)s</accuracy_report>
+	<accuracy_report>not filled</accuracy_report>
 	<consistency_report>not filled</consistency_report>
-	<completeness_report>%(notes)s</completeness_report>
+	<completeness_report>not filled</completeness_report>
 	<horizontal_acc_report>not filled</horizontal_acc_report>
 	<vertical_acc_report>not filled</vertical_acc_report>
 	<!-- 
@@ -47,6 +47,7 @@
 		<person_info>%(author)s</person_info>
 		<person_id>2001338</person_id>
 	</Contact>
+<!--- Furthor authors :
 	<Contact>
 		<contact_type>scientific_contact</contact_type>
 		<person_info>Baars, Holger</person_info>
@@ -56,7 +57,8 @@
 		<contact_type>Researcher</contact_type>
 		<person_info>Seifert, Patric</person_info>
 		<person_id>2001338</person_id>
-	</Contact>	
+	</Contact>
+-->	
 	<!-- 
 	    Wie kennzeichnen wir ongoing? 
         Block Coverage
@@ -68,23 +70,23 @@
         http://cera-www.dkrz.de/Meta_Fill/currentness_ref.xsql
    -->
 	<Coverage>
-		<location_name>%(SpatialCoverage)s</location_name>
+		<location_name>not filled</location_name>
 		<location_descr>not filled</location_descr>
-		<min_lon>%(spatial)s</min_lon>
-		<max_lon>6.4145</max_lon>
-		<min_lat>50.8797</min_lat>
-		<max_lat>50.8797</max_lat>
-		<min_altitude>92</min_altitude>
-		<min_alt_unit>m</min_alt_unit>
-		<max_altitude>99</max_altitude>
-		<max_alt_unit>m</max_alt_unit>
-		<start_year>2013</start_year>
-		<start_month>4</start_month>
-		<start_day>1</start_day>
-		<stop_year>2013</stop_year>
-		<stop_month>5</stop_month>
-		<stop_day>31</stop_day>
-		<currentness_ref_descr>calendrical</currentness_ref_descr>
+		<min_lon></min_lon>
+		<max_lon></max_lon>
+		<min_lat></min_lat>
+		<max_lat></max_lat>
+		<min_altitude></min_altitude>
+		<min_alt_unit></min_alt_unit>
+		<max_altitude></max_altitude>
+		<max_alt_unit></max_alt_unit>
+		<start_year></start_year>
+		<start_month></start_month>
+		<start_day></start_day>
+		<stop_year></stop_year>
+		<stop_month></stop_month>
+		<stop_day></stop_day>
+		<currentness_ref_descr></currentness_ref_descr>
 	</Coverage>
 	<!-- 
         Block Distribution

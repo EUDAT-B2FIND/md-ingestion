@@ -3,15 +3,9 @@
    <ENTRY>
       <ENTRY_TYPE>experiment</ENTRY_TYPE>
       <CREATION_DATE>2016-02-02</CREATION_DATE>
-      <ENTRY_NAME>High Definition Clouds and Precipitation for Climate Prediction HDCP2-OBS Cloudnet products</ENTRY_NAME>
-      <ENTRY_ACRONYM>HDCP2-cloudnet_products</ENTRY_ACRONYM>
-      <SUMMARY>Cloudnet-processed remote-sensing data for Climate Prediction-Observations
-HDCP2 Project. See the global argument *cloudnet_source* for more details.
-	History: Data processed with convert_cloudnet_classification2hdcp.m by TROPOS, Version: 1.0
-	Conventions: CF-1.6 where applicable.
-	License: For non-commercial use only. This data is subject to the HDCP2 data policy to be found at hdcp2.zmaw.de and in the HDCP2 Observation Data Product Standard.
-	Data is hosted by http://data.hdcp2.uni-koeln.de/thredds/isyMettCatalog.html
-	</SUMMARY>
+      <ENTRY_NAME>%(community)s-%(oai_set)s</ENTRY_NAME>
+      <ENTRY_ACRONYM>%(community)s-%(oai_set)s</ENTRY_ACRONYM>
+      <SUMMARY>%(notes)s</SUMMARY>
       <AUTHORS>Seifert, Patric</AUTHORS>
       <PROJECT_ACRONYM>HDCP2-OBS</PROJECT_ACRONYM>
       <QUALITY>
