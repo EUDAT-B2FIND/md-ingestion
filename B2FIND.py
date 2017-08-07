@@ -2652,8 +2652,7 @@ class MAPPER(object):
 
     def oaiconvert(self,request): ##HEW-D community,mdprefix,path,target_mdschema):
         ## oaiconvert(MAPPER object, request) - method
-        # Converts B2FIND JSON files in directory <path> to XML files 
-        # formatted in target format, e.g. 'cera'
+        # Converts B2FIND JSON files to XML files formatted in target format, e.g. 'CERA' (exp_) and ds2_ files
     
         results = {
             'count':0,
@@ -2790,7 +2789,8 @@ class MAPPER(object):
                                     ##HEW-T print('KKKK key %s\t data %s' % (key,data[key]))
                             else:
                                 data[facet]=''
-                                
+
+                        data['identifier']=identifier
                         ##HEW-T  print('data DDDD %s' % data)
                         try:
                             outdata=dsdata%data
@@ -2801,7 +2801,7 @@ class MAPPER(object):
                         ## outdata = dsdata.substitute(comm=community, identifier=identifier)
                         ## outdata=str(dsdata)
                         ##HEW-T print('ooooooooo %s' % data) ## ["oai_identifier"])
-                        outfile=outpath+'/'+filetype+'_hdcp2_'+data['oai_identifier']+'.xml'
+                        outfile=outpath+'/'+filetype+'_'+identifier+'.xml'
                         try :
                             f = open(outfile, 'w')
                             f.write(outdata.encode('utf-8'))
