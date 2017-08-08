@@ -343,8 +343,9 @@ class HARVESTER(object):
         
             def __init__ (self, api_url): ##, api_key):
         	    self.api_url = api_url
-        
-            def JSONAPI(self, action, offset, key): # see oaireq
+                    self.logger = logging.getLogger('root')
+     
+            def JSONAPI(self, action, offset, chunklen, key): # see oaireq
                 ## JSONAPI (action, jsondata) - method
         	    # Call the api action <action> with the <jsondata> on the CKAN instance which was defined by iphost
         	    # parameter of CKAN_CLIENT.
@@ -357,15 +358,15 @@ class HARVESTER(object):
         	    # Return Values:
         	    # --------------
         	    # (dict)    response dictionary of CKAN
-        	    return self.__action_api(action, offset, key)
+        	    return self.__action_api(action, offset, chunklen, key)
 
-            def __action_api (self, action, offset, key):
+            def __action_api (self, action, offset, chunklen, key):
                 # Make the HTTP request for get datasets from GBIF portal
                 response=''
                 rvalue = 0
                 ## offset = 0
-                limit=100 ## None for DataCite-JSON !!!
-                api_url = self.api_url ### "http://api.gbif.org/v1"
+                limit=chunklen ## None for DataCite-JSON !!!
+                api_url = self.api_url
                 if key :
                     action_url = "{apiurl}/{action}/{key}".format(apiurl=api_url,action=action,key=str(key))
                 elif offset == None :
@@ -373,20 +374,20 @@ class HARVESTER(object):
                 else :
                     action_url = "{apiurl}/{action}?offset={offset}&limit={limit}".format(apiurl=api_url,action=action,offset=str(offset),limit=str(limit))	
 
-                print ('action_url: %s' % action_url)
+                self.logger.debug('action_url: %s' % action_url)
                 try:
                     request = Request(action_url)
                     response = urlopen(request)
                 except HTTPError as e:
-                   print ('\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.api_url,action))
+                   self.logger.error('%s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.api_url,action))
                    if ( e.code == 403 ):
-                       print ('\t\tAccess forbidden, maybe the API key is not valid?')
+                       self.logger.critical('Access forbidden, maybe the API key is not valid?')
                        exit(e.code)
                    elif ( e.code == 409):
-                       print ('\t\tMaybe you have a parameter error?')
+                       self.logger.critical('Maybe you have a parameter error?')
                        return {"success" : False}
                    elif ( e.code == 500):
-                       print ('\t\tInternal server error')
+                       self.logger.critical('Internal server error')
                        exit(e.code)
                 except URLError as e:
                    exit('%s' % e.reason)
@@ -441,46 +442,52 @@ class HARVESTER(object):
         # make subset dir:
         subsetdir = '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
 
+
+
         noffs=0 # set to number of record, where harvesting should start
         stats['tcount']=noffs
         fcount=0
         oldperc=0
         ntotrecs=0
+        choffset=0
+        chunklen=1000
+        records=list()
 
+        ## JSON-API
         if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## ?publisher-id=dk.gbif'  :
             GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
             outtypedir='hjson'
             outtypeext='json'
             oaireq=getattr(GBIF,'JSONAPI', None)
             self.logger.debug(" Harvest method used is %s" % oaireq)
-            choffset=0
+            if mdsubset and req["lverb"] == 'works' :
+                haction='works?publisher-id='+mdsubset
+                dresultkey='data'
+            else:
+                haction=req["lverb"]
+                dresultkey='results'
             try:
-                records=list()
-                if mdsubset and req["lverb"] == 'works' :
-                    haction='works?publisher-id='+mdsubset
-                    chunk=oaireq(**{'action':haction,'offset':None,'key':None})
-                else:
-                    haction=req["lverb"]
-                    chunk=oaireq(**{'action':haction,'offset':choffset,'key':None})
-                ## chunk=oaireq(**{'action':req["lverb"],'offset':choffset,'key':None})
-                self.logger.debug(" Got first chunk['data'] %s (100 records) " % chunk["data"]) ### chunk['results'])
-                if req["lverb"] == 'dataset':
+                chunk=oaireq(**{'action':haction,'offset':None,'chunklen':chunklen,'key':None})
+                self.logger.debug(" Got first %d records : chunk['data'] %s " % (chunklen,chunk[dresultkey]))
+            except (HTTPError,ConnectionError,Exception) as e:
+                self.logger.critical("%s :\n\thaction %s\n\tharvest request %s\n" % (e,haction,req))
+                return -1
+
+            if req["lverb"] == 'dataset':
                     while('endOfRecords' in chunk and not chunk['endOfRecords']):
                         if 'results' in chunk :
                             records.extend(chunk['results'])
-                        choffset+=100
-                        chunk =oaireq(**{'action':haction,'offset':choffset,'key':None})
-                        self.logger.debug(" Got next chunk %s (from %d + next 100 records) " % (chunk,choffset))
-                else:
+                        choffset+=chunklen
+                        chunk =oaireq(**{'action':haction,'offset':choffset,'chunklen':chunklen,'key':None})
+                        self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
+                        ##HEW-Test break
+            else:
                     if 'data' in chunk :
                         records.extend(chunk['data'])
                     
-            except (HTTPError,ConnectionError,Exception) as e:
-                self.logger.critical("%s|- harvest request %s\n" % (e,req))
-                return -1
-
             ntotrecs=len(records)
 
+        # OAI-PMH (verb = ListRecords/Identifier )
         elif req["lverb"].startswith('List'):
             sickle = Sickle(req['url'], max_retries=3, timeout=300)
             outtypedir='xml'
@@ -498,14 +505,15 @@ class HARVESTER(object):
             try:
                 ntotrecs=len(list(rc))
             except :
-                print ('iterate through iterable does not work ?')
+                self.logger.error('iterate through iterable does not work ?')
 
+        # CSW2.0
         elif req["lverb"].startswith('csw'):
             src = CatalogueServiceWeb(req['url'])
             outtypedir='xml'
             outtypeext='xml'
             startposition=0
-            maxrecords=10
+            maxrecords=1000
             oaireq=getattr(src,'getrecords2') ## HEW-D ,req["lverb"], None)
             try:
                 oaireq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
@@ -522,9 +530,7 @@ class HARVESTER(object):
             except :
                 print ('iterate through iterable does not work ?')
                 
-
-
-        print ("\t|- Iterate through %d records in %d sec" % (ntotrecs,time.time()-start))
+        print ("\t|- Retrieved %d records in %d sec - write %s files to disc" % (ntotrecs,time.time()-start,outtypeext.upper()) )
         if ntotrecs == 0 :
             self.logger.warning("\t|- Can not access any records to harvest")
             return -1
@@ -535,9 +541,13 @@ class HARVESTER(object):
                  # save the uid as key and the file as value:
                  deleted_metadata[os.path.splitext(os.path.basename(subset))[0]] = ofile
    
-        logging.debug(' | %-4s | %-25s | %-25s |' % ('#','OAI Identifier','DS Identifier'))
+        self.logger.debug(' | %-4s | %-25s | %-25s |' % ('#','OAI Identifier','DS Identifier'))
+        ##HEW-T        sys.exit(-1)
 
         start2=time.time()
+
+        if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
+            os.makedirs(subsetdir+'/' + outtypedir)
 
         for record in records :
             stats['tcount'] += 1
@@ -552,81 +562,53 @@ class HARVESTER(object):
                     print ("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
                     sys.stdout.flush()
 
-            ## Harvest via JSON-API
-            if req["lverb"] == 'dataset' or req["lverb"] == 'works'  :
-
-                # set oai_id and generate a uniquely identifier for this dataset:
+            # Set oai_id and generate a uniquely identifier for this dataset:
+            
+            if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## Harvest via JSON-API
                 if 'key' in record :
                     oai_id = record['key']
                 elif 'id' in record :
                     oai_id = record['id']
-
-
-                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
-                outfile = subsetdir + '/' + outtypedir + '/' + os.path.basename(uid) + '.' + outtypeext
-                try:
-                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
-                    logging.debug('Try to write the harvested JSON record to %s' % outfile)
-                    
-                    # get the raw json content:
-                    if (record is not None):
-                        if "publishingOrganizationKey" in record :
-                            record["Organisation"]=oaireq(**{'action':'organization','offset':0,'key':record["publishingOrganizationKey"]})["title"]
-
-
-                        if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
-                           os.makedirs(subsetdir+'/' + outtypedir)
-                           
-                        # write metadata in file:
-                        try:
-                            with open(outfile, 'w') as f:
-                              json.dump(record,f, sort_keys = True, indent = 4)
-                        except IOError:
-                            logging.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile))
-                            stats['ecount'] +=1
-                            continue
-                        else :
-                            stats['count'] += 1
-                            logging.debug('Harvested JSON file written to %s' % outfile)
-                        
-                    else:
-                        stats['ecount'] += 1
-                        logging.warning('    [WARNING] No metadata available for %s' % record['key'])
-                except TypeError as e:
-                    logging.error('    [ERROR] TypeError: %s' % e)
-                    stats['ecount']+=1        
-                    continue
-                except Exception as e:
-                    logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
-                    ## logging.debug(metadata)
-                    stats['ecount']+=1
-                    continue
-                else:
-                    # if everything worked then delete this metadata file from deleted_metadata
-                    if uid in deleted_metadata:
-                        del deleted_metadata[uid]
-
-            ## Harvest via CSW
-            elif req["lverb"] == 'csw':
-
-                # set oai_id and generate a uniquely identifier for this dataset:
+            
+            elif req["lverb"] == 'csw': ## Harvest via CSW2.0
                 if hasattr(record,'identifier') :
                     oai_id = record.identifier
+                else:
+                    self.logger.critical('Record %s has no attrribute identifier %s' % record) 
+            
+            elif req["lverb"] == 'ListIdentifiers' : ## OAI-PMH harvesting of XML records
+                if (record.deleted):
+                    ##HEW-??? deleted_metadata[record.identifier] = 
+                    stats['totdcount'] += 1
+                    continue
+                else:
+                    oai_id = record.identifier
+                    record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
+            elif req["lverb"] == 'ListRecords' :
+                if (record.header.deleted):
+                    stats['totdcount'] += 1
+                    continue
+                else:
+                    oai_id = record.header.identifier
 
-                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+            # generate a uniquely identifier for this dataset:
+            uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+            outfile = subsetdir + '/' + outtypedir + '/' + os.path.basename(uid) + '.' + outtypeext
 
-                outfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
-
-                try:
-                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
-                    logging.debug('Try to write the harvested XML record to %s' % outfile)
+            # write record on disc
+            try:
+                logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
+                logging.debug('Try to write the harvested JSON record to %s' % outfile)
                     
-                    # get the raw xml content:    
-                    metadata = etree.fromstring(record.xml)
+                if outtypeext == 'xml':   # get and write the XML content:
+                    if hasattr(record,'raw'):
+                        metadata = etree.fromstring(record.raw)
+                    else:
+                        metadata = etree.fromstring(record.xml)
                     if (metadata is not None):
                         try:
                             metadata = etree.tostring(metadata, pretty_print = True)
-                        except Exception as e:
+                        except (Exception,UnicodeEncodeError) as e:
                             self.logger.debug('%s : Metadata: %s ...' % (e,metadata[:20]))
                         if PY2 :
                             try:
@@ -634,16 +616,9 @@ class HARVESTER(object):
                             except (Exception,UnicodeEncodeError) as e :
                                 self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
 
-                        if (not os.path.isdir(subsetdir+'/xml')):
-                           os.makedirs(subsetdir+'/xml')
-                           
-                        # write metadata in file:
                         try:
                             f = open(outfile, 'w')
-                            if PY2:
-                                f.write(metadata)
-                            else:
-                                f.write(metadata.decode('utf-8'))
+                            f.write(metadata)
                             f.close
                         except IOError :
                             logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (outfile))
@@ -652,103 +627,52 @@ class HARVESTER(object):
                         else:
                             logging.debug('Harvested XML file written to %s' % outfile)
                             stats['count'] += 1
-                        
                     else:
                         stats['ecount'] += 1
-                        logging.warning('    [WARNING] No metadata available for %s' % oai_id)
+                        self.logger.error('No metadata available for %s' % record)
 
-                except TypeError as e:
+
+                elif outtypeext == 'json':   # get the raw json content:
+                     if (record is not None):
+                     ##HEW-D if "publishingOrganizationKey" in record :
+                     ##HEW-D    record["Organisation"]=oaireq(**{'action':'organization','offset':0,'chunklen':1,'key':record["publishingOrganizationKey"]})["title"]       
+                     # write metadata in file:
+                         try:
+                             with open(outfile, 'w') as f:
+                                 json.dump(record,f, sort_keys = True, indent = 4)
+                         except IOError:
+                             logging.error("[ERROR] Cannot write metadata in out file '%s': %s\n" % (outfile))
+                             stats['ecount'] +=1
+                             continue
+                         else :
+                            stats['count'] += 1
+                            logging.debug('Harvested JSON file written to %s' % outfile)
+                     else:
+                        stats['ecount'] += 1
+                        logging.warning('    [WARNING] No metadata available for %s' % record['key']) ##HEW-???' % oai_id)
+
+
+            except TypeError as e:
                     logging.error('    [ERROR] TypeError: %s' % e)
                     stats['ecount']+=1        
                     continue
-                except Exception as e:
+            except Exception as e:
                     logging.error("    [ERROR] %s and %s" % (e,traceback.format_exc()))
                     ## logging.debug(metadata)
                     stats['ecount']+=1
                     continue
-                else:
+            else:
                     # if everything worked then delete this metadata file from deleted_metadata
                     if uid in deleted_metadata:
                         del deleted_metadata[uid]
 
-            ## OAI-PMH harvesting of XML records using Python Sickle module
-            else:  
-                if req["lverb"] == 'ListIdentifiers' :
-                    if (record.deleted):
-                       ##HEW-??? deleted_metadata[record.identifier] = 
-                       stats['totdcount'] += 1
-                       continue
-                    else:
-                       oai_id = record.identifier
-                       record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
-                elif req["lverb"] == 'ListRecords' :
-                    if (record.header.deleted):
-                       stats['totdcount'] += 1
-                       continue
-                    else:
-                       oai_id = record.header.identifier
-
-                # generate a uniquely identifier for this dataset:
-                uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id)) ##HEW-Py3- D.encode('ascii','replace')))
-
-                outfile = subsetdir + '/xml/' + os.path.basename(uid) + '.xml'
-                try:
-                    logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
-                    ## logging.debug('Harvested XML file written to %s' % outfile)
-                    
-                    # get the raw xml content:    
-                    metadata = etree.fromstring(record.raw)
-                    if (metadata is not None):
-                        try:
-                            metadata = etree.tostring(metadata, pretty_print = True)
-                        except Exception as e:
-                            self.logger.debug('%s : Metadata: %s ...' % (e,metadata[:20]))
-                        if PY2 :
-                            try:
-                                metadata = metadata.encode('utf-8')
-                            except (Exception,UnicodeEncodeError) as e :
-                                self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
-
-                        if (not os.path.isdir(subsetdir+'/xml')):
-                           os.makedirs(subsetdir+'/xml')
-                           
-                        # write metadata in file:
-                        try:
-                            f = open(outfile, 'w')
-                            if PY2:
-                                f.write(metadata)
-                            else:
-                                f.write(metadata.decode('utf-8'))
-                            f.close
-                        except IOError :
-                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (outfile))
-                            stats['ecount'] +=1
-                            continue
-                        else:
-                            logging.debug('Harvested XML file written to %s' % outfile)
-                            stats['count'] += 1
-                        
-                    else:
-                        stats['ecount'] += 1
-                        logging.warning('    [WARNING] No metadata available for %s' % oai_id)
-                except TypeError as e:
-                    logging.error('TypeError: %s' % e)
-                    stats['ecount']+=1        
-                    continue
-                except Exception as e:
-                    logging.error("%s and %s" % (e,traceback.format_exc()))
-                    ## logging.debug(metadata)
-                    stats['ecount']+=1
-                    continue
-                else:
-                    # if everything worked delete current file from deleted_metadata
-                    if uid in deleted_metadata:
-                        del deleted_metadata[uid]
-                                                                
-                # Need a new subset?
-                if (stats['count'] == count_break):
+            # Need a new subset?
+            if (stats['count'] == count_break):
                     logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
                     subsetdir = self.save_subset(req, stats, subset, count_set)
+                    if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
+                        os.makedirs(subsetdir+'/' + outtypedir)
+
                     count_set += 1
                                                         
                     # add all subset stats to total stats and reset the temporal subset stats:
