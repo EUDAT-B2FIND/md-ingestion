@@ -2016,22 +2016,11 @@ class MAPPER(object):
         # loop over all files (harvested records) in input path ( path/xml or path/hjson) 
         ##HEW-D  results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
 
-        # set subsets:
-        if (not mdsubset):
-            subset = 'SET_1' ## or 2,...
-        elif mdsubset.endswith('_'): # no OAI subsets, but store in sub dirs
-            subset = mdsubset+'1' ## or 2,...
-        elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
-            subset = mdsubset
-        else:
-            subset = mdsubset+'_1'
-        self.logger.info(' |- Subset:    \t%s' % subset )
-
         # community-mdschema root path
         cmpath='%s/%s-%s/' % (self.base_outdir,community,mdprefix)
         self.logger.info('\t|- Input path:\t%s' % cmpath)
         subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
-        # loop over all available subsets
+        # loop over all available subdirs
         fcount=0
         for subdir in sorted(subdirs) :
             if mdsubset and not subdir.startswith(mdsubset) :
@@ -2049,10 +2038,11 @@ class MAPPER(object):
 
             # make output directory for mapped json's
             if (target_mdschema and not target_mdschema.startswith('#')):
-                outpath='%s-%s/%s/%s/' % (cmpath,target_mdschema,subdir,infformat)
+                outpath='%s-%s/%s/%s/' % (cmpath,target_mdschema,subdir,'json')
             else:
-                outpath='%s/%s/%s/' % (cmpath,subdir,infformat)
+                outpath='%s/%s/%s/' % (cmpath,subdir,'json')
             if (not os.path.isdir(outpath)): os.makedirs(outpath)
+            self.logger.debug('Ouput path is %s' % outpath)
 
             files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
             results['tcount'] += len(list(files))
@@ -2223,7 +2213,7 @@ class MAPPER(object):
                         except Exception as err:
                             self.logger.error('%s : Cannot decode jsondata %s' % (err,jsondata))
                         try:
-                            self.logger.debug('Save json file')
+                            self.logger.debug('Write to json file %s/%s' % (outpath,jsonfilename))
                             json_file.write(data)
                         except TypeError as err:
                             self.logger.error(' %s : Cannot write data in json file %s ' % (jsonfilename,err))
@@ -2236,7 +2226,6 @@ class MAPPER(object):
                     self.logger.error('Can not access content of %s' % infilepath)
                     results['ecount'] += 1
                     continue
-
 
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
         ##HEW-D if (err is not None ): logging.error('[ERROR] ' + err)
@@ -2266,19 +2255,19 @@ class MAPPER(object):
         for value in valuelist:
             errlist=''
             if facet in ['title','notes','author','Publisher']:
+                cvalue=value
                 try:
                     if PY2 :
                         if isinstance(value, unicode) :
                             ## value=value.decode('utf-8')
                             cvalue=value.encode("iso-8859-1")
-                            vall.append(cvalue)
                     else :
                         if isinstance(value, str) :
                             cvalue=value.encode("iso-8859-1")
-                            vall.append(cvalue)
                 except (Exception,UnicodeEncodeError) as e :
-                    vall.append(value)
                     self.logger.error("%s : { %s:%s }" % (e,facet,value))
+                else:
+                    vall.append(cvalue)
                 finally:
                     pass
             elif self.str_equals(facet,'Discipline'):
@@ -2345,20 +2334,6 @@ class MAPPER(object):
         community=request[0]
         mdprefix=request[3]
         mdsubset=request[4]   if len(request)>4 else None
-        # set subset:
-        if (not mdsubset):
-            subset = 'SET_1' ## or 2,...
-        elif mdsubset.endswith('_'): # no OAI subsets, but store in sub dirs
-            subset = mdsubset+'1' ## or 2,...
-        elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
-            subset = mdsubset
-        else:
-            subset = mdsubset+'_1'
-        self.logger.debug(' |- Subset:    \t%s' % subset )
-
-        # make subset dir:
-        path = '/'.join([self.base_outdir,community+'-'+mdprefix,subset])
-        
 
         # set extension of mapfile according to md format (xml or json processing)
         if mdprefix == 'json' :
@@ -2373,104 +2348,118 @@ class MAPPER(object):
               return results
         mf=open(mapfile) 
 
-        # check paths
-        if not os.path.exists(path):
-            self.logger.critical('[ERROR] The directory "%s" does not exist! No files to validate are found!\n(Maybe your convert list has old items?)' % (path))
-            return results
-        elif not os.path.exists(path + '/json') or not os.listdir(path + '/json'):
-            self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!\n(Maybe your convert list has old items?)' % (path))
-            return results
-    
-        # find all .json files in path/json:
-        files = list(filter(lambda x: x.endswith('.json'), os.listdir(path+'/json')))
-        results['tcount'] = len(files)
-        oaiset=path.split(mdprefix)[1].strip('/')
-        
-        self.logger.info(' %s Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],path))
-        if results['tcount'] == 0 :
-            logging.error(' ERROR : Found no files to validate !')
-            return results
-        self.logger.info('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
-
-        totstats=dict()
-        for facetdict in self.b2findfields.values() :
-            facet=facetdict["ckanName"]
-            if facet.startswith('#') or facetdict["display"] == "hidden" :
+        # community-mdschema root path
+        cmpath='%s/%s-%s/' % (self.base_outdir,community,mdprefix)
+        self.logger.info('\t|- Input path:\t%s' % cmpath)
+        subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
+        # loop over all available subdirs
+        fcount=0
+        for subdir in sorted(subdirs) :
+            if mdsubset and not subdir.startswith(mdsubset) :
+                self.logger.debug('Subdirectory %s is not processed' % subdir)
                 continue
-            totstats[facet]={
-              'xpath':'',
-              'mapped':0,
-              'valid':0,
-              'vstat':[]
-            }          
-
-            mf.seek(0, 0)
-            for line in mf:
-                if '<field name="'+facet+'">' in line:
-                    totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf))
-                    break
-
-        fcount = 0
-        oldperc = 0
-        start = time.time()
-        for filename in files: ## loop over datasets
-            fcount+=1
-            perc=int(fcount*100/int(len(files)))
-            bartags=int(perc/10)
-            if perc%10 == 0 and perc != oldperc :
-                oldperc=perc
-                print ("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
-                sys.stdout.flush()
-
-            jsondata = dict()
-            self.logger.info('    | v | %-4d | %-s/json/%s |' % (fcount,os.path.basename(path),filename))
-
-            if ( os.path.getsize(path+'/json/'+filename) > 0 ):
-                with open(path+'/json/'+filename, 'r') as f:
-                    try:
-                        jsondata=json.loads(f.read())
-                    except:
-                        logging.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
-                        results['ecount'] += 1
-                        continue
             else:
-                results['ecount'] += 1
-                continue
-            
-            try:
-              valuearr=list()
-              for facetdict in self.b2findfields.values() : ## loop over facets
-                  facet=facetdict["ckanName"]
-                  if facet.startswith('#') or facetdict["display"] == "hidden" :
-                        continue
-                  value = None
-                  if facet in jsondata:
-                        value = jsondata[facet]
-                  self.logger.warning('facet:value : %s:%s' % (facet,value))
-                  if value:
-                        totstats[facet]['mapped']+=1
-                        pvalue=self.is_valid_value(facet,value)
-                        self.logger.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
-                        if pvalue and len(pvalue) > 0:
-                            totstats[facet]['valid']+=1  
-                            if type(pvalue) is list :
-                                totstats[facet]['vstat'].extend(pvalue)
-                            else:
-                                totstats[facet]['vstat'].append(pvalue)
-                        else:
-                            totstats[facet]['vstat']=[]  
-                  else:
-                        if facet == 'title':
-                           self.logger.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
-            except IOError :
-                self.logger.error(" %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
-                exit()
+                print('\t |- Subdirectory %s is processed' % subdir)
+                self.logger.debug('Processing of subdirectory %s' % subdir)
 
-        outfile='%s/%s' % (path,'validation.stat')
-        printstats='\n Statistics of\n\tcommunity\t%s\n\tsubset\t\t%s\n\t# of records\t%d\n  see as well %s\n\n' % (community,oaiset,fcount,outfile)  
-        printstats+=" |-> {:<16} <-- {:<20} \n  |- {:<10} | {:<9} | \n".format('Facet name','XPATH','Mapped','Validated')
+            # check input path
+            inpath='%s/%s/%s' % (cmpath,subdir,'json')
+            if not os.path.exists(inpath):
+                self.logger.critical('Can not access directory %s' % inpath)
+                return results     
+            elif not os.path.exists(inpath) or not os.listdir(inpath):
+                self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!' % (inpath))
+                return results
+    
+            # find all .json files in path/json:
+            files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath)))
+            results['tcount'] = len(files)
+        
+            self.logger.info(' %s Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],inpath))
+            if results['tcount'] == 0 :
+                logging.error(' ERROR : Found no files to validate !')
+                return results
+            self.logger.info('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
+
+            totstats=dict()
+            for facetdict in self.b2findfields.values() :
+                facet=facetdict["ckanName"]
+                if facet.startswith('#') or facetdict["display"] == "hidden" :
+                    continue
+                totstats[facet]={
+                    'xpath':'',
+                    'mapped':0,
+                    'valid':0,
+                    'vstat':[]
+                    }          
+
+                mf.seek(0, 0)
+                for line in mf:
+                    if '<field name="'+facet+'">' in line:
+                        totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf))
+                        break
+
+            fcount = 0
+            oldperc = 0
+            start = time.time()
+            for filename in files: ## loop over datasets
+                fcount+=1
+                perc=int(fcount*100/int(len(files)))
+                bartags=int(perc/10)
+                if perc%10 == 0 and perc != oldperc :
+                    oldperc=perc
+                    print ("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                    sys.stdout.flush()
+
+                jsondata = dict()
+                self.logger.info('    | v | %-4d | %-s/%s |' % (fcount,os.path.basename(inpath),filename))
+
+                if ( os.path.getsize(inpath+'/'+filename) > 0 ):
+                    with open(inpath+'/'+filename, 'r') as f:
+                        try:
+                            jsondata=json.loads(f.read())
+                        except:
+                            logging.error('    | [ERROR] Cannot load the json file %s' % inpath+'/'+filename)
+                            results['ecount'] += 1
+                            continue
+                else:
+                    results['ecount'] += 1
+                    continue
+            
+                try:
+                    valuearr=list()
+                    for facetdict in self.b2findfields.values() : ## loop over facets
+                        facet=facetdict["ckanName"]
+                        if facet.startswith('#') or facetdict["display"] == "hidden" :
+                            continue
+                        value = None
+                        if facet in jsondata:
+                            value = jsondata[facet]
+                            self.logger.warning('facet:value : %s:%s' % (facet,value))
+                        if value:
+                            totstats[facet]['mapped']+=1
+                            pvalue=self.is_valid_value(facet,value)
+                            self.logger.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
+                            if pvalue and len(pvalue) > 0:
+                                totstats[facet]['valid']+=1  
+                                if type(pvalue) is list :
+                                    totstats[facet]['vstat'].extend(pvalue)
+                                else:
+                                    totstats[facet]['vstat'].append(pvalue)
+                            else:
+                                totstats[facet]['vstat']=[]  
+                        else:
+                            if facet == 'title':
+                                self.logger.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
+                except IOError :
+                    self.logger.error(" %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
+                    exit()
+
+        outfile='%s/%s' % (cmpath,'validation.stat')
+        printstats='\n Statistics of\n\tcommunity\t%s\n\tsubset\t\t%s\n\t# of records\t%d\n  see as well %s\n\n' % (community,subdir,fcount,outfile)  
+        printstats+=" |-> {:<16} <-- {:<20} \n  |-- {:<12} | {:<9} | \n".format('Facet name','XPATH','Mapped','Validated')
         printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
-        printstats+="      | Value statistics:\n      |- {:<5} : {:<30} |\n".format('#Occ','Value')
+        printstats+="      |- Value statistics:\n      |- {:<5} : {:<30} |\n".format('#','Value')
         printstats+=" ----------------------------------------------------------\n"
 
         for key,facetdict in self.b2findfields.items() : ###.values() :
@@ -2510,7 +2499,7 @@ class MAPPER(object):
         logging.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .json files in path/json
-        results['count'] = len(list(filter(lambda x: x.endswith('.json'), os.listdir(path))))
+        results['count'] = len(list(filter(lambda x: x.endswith('.json'), os.listdir(inpath))))
 
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
