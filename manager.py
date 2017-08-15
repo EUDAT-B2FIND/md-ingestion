@@ -370,12 +370,6 @@ def process_oaiconvert(MP, rlist):
 def process_upload(UP, rlist):
     ##HEW-D-ec credentials,ec = None,None
 
-    def print_extra(key,jsondata):
-        for v in jsondata['extras']:
-            if v['key'] == key:
-                print (' Key : %s | Value : %s |' % (v['key'],v['value']))
- 
-
     # create credentials and handle client if required
     if (options.handle_check):
           try:
