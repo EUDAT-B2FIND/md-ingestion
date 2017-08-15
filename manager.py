@@ -350,23 +350,6 @@ def process_validate(MP, rlist):
         else:
             MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
-def process_oaiconvert(MP, rlist):
-
-    ir=0
-    for request in rlist:
-        ir+=1
-        print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
-        rcstart = time.time()
-        
-        results = MP.oaiconvert(request)
-
-        rctime=time.time()-rcstart
-        results['time'] = rctime
-        
-        # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
-
-
 def process_upload(UP, rlist):
     ##HEW-D-ec credentials,ec = None,None
 
@@ -692,6 +675,24 @@ def process_upload(UP, rlist):
         
         # save stats:
         UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
+
+def process_oaiconvert(MP, rlist):
+
+    ir=0
+    for request in rlist:
+        ir+=1
+        print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
+        rcstart = time.time()
+        
+        results = MP.oaiconvert(request)
+
+        rctime=time.time()-rcstart
+        results['time'] = rctime
+        
+        # save stats:
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
+
+
 
 def process_delete(OUT, dir, options):
     print ("###JM# Don't use this function. It is not up to date.")
