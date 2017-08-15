@@ -1217,6 +1217,7 @@ narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
 ##%%% Europeana
 europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  cmdi samples
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc 9200115
 ##%%% TheEuropeanLIbrary
 ##     - research related records --> B2FIND !!!
 theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1058
