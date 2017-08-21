@@ -2476,7 +2476,7 @@ class MAPPER(object):
                             ucvalue=tuple[0]##HEW-D .encode('utf8')
                             if len(ucvalue) > 80 :
                                 restchar=len(ucvalue)-80
-                                contt='[...(%d chars follow)...]' % restchar 
+                                contt=' [...(%d chars follow)...]' % restchar 
                             else: 
                                 contt=''
                             ##HEW-D?? printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
@@ -2803,12 +2803,12 @@ class UPLOADER(object):
         print ('Upload of record failed'
     """
     
-    def __init__(self, CKAN, OUT):
+    def __init__(self, CKAN, OUT, base_outdir):
         ##HEW-D logging = logging.getLogger()
         self.CKAN = CKAN
         self.OUT = OUT
         self.logger = logging.getLogger('root')        
-
+        self.base_outdir = base_outdir
         self.package_list = dict()
 
         # Read in B2FIND metadata schema and fields
@@ -3061,7 +3061,8 @@ class UPLOADER(object):
                 if (results and results['success']):
                     rvalue = 2
                 else:
-                    rvalue = 0
+                    self.logger.debug('\t - Update of new record failed.')
+                    rvalue = -1
         
         # if the dsstatus is 'changed' then update it with package_update:
         elif (dsstatus == 'changed'):
@@ -3071,12 +3072,13 @@ class UPLOADER(object):
             if (results and results['success']):
                 rvalue = 2
             else:
-                self.logger.debug('\t - Update failed. Try to create instead.')
+                self.logger.warning('\t - Update failed. Try to create instead.')
                 results = self.CKAN.action('package_create',jsondata)
                 if (results and results['success']):
                     rvalue = 1
                 else:
-                    rvalue = 0
+                    self.logger.debug('\t - Creation of changed record failed.')
+                    rvalue = -2
            
         return rvalue
 

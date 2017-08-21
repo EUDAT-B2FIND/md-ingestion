@@ -52,6 +52,7 @@ ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 ## ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
 ## LTER (repository DEIMS)
 lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
+lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA
