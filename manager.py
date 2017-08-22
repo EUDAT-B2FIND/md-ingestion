@@ -484,7 +484,7 @@ def process_upload(UP, rlist):
             # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
-            logger.debug('    | u | %-4d | %-40s |' % (fcount,ds_id))
+            logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
 
             # get OAI identifier from json data extra field 'oai_identifier':
             if 'oai_identifier' not in jsondata :
@@ -507,7 +507,7 @@ def process_upload(UP, rlist):
             else:
                reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
                mdaccess = reqpre + '&identifier=' + oai_id
-               urlcheck=UP.check_url(mdaccess)
+               ##HEW-MV2mapping!!! : urlcheck=UP.check_url(mdaccess)
             index1 = mdaccess
 
             # exceptions for some communities:
@@ -642,7 +642,7 @@ def process_upload(UP, rlist):
                     logger.warning('        |-> Successful update of %s record succeed' % dsstatus )
                     upload=1
                 elif (upload == -1):
-                    logger.warning('        |-> Failed creation of %s record failed' % dsstatus )
+                    logger.warning('        |-> Failed creation of %s record' % dsstatus )
                     upload=1
                 elif (upload == -2):
                     logger.warning('        |-> Failed update of %s record failed' % dsstatus )

@@ -994,7 +994,7 @@ class MAPPER(object):
             else :
                 return False
         except URLError as err: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
-            self.logger.error('%s in check_url of %s' % (err,url))
+            self.logger.warning('%s in check_url of %s' % (err,url))
             if str(e.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
                 return Warning
             else :
@@ -1039,11 +1039,11 @@ class MAPPER(object):
                     if reurl :
                         iddict['url'] = reurl.group("url")##[0]
             
-        except Exception as e:
+        except Exception as e :
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return {}
         else:
-            if self.OUT.verbose > 1 :
+            if self.OUT.verbose > 2 :
                 for id in iddict :
                     self.logger.debug('iddict\t(%s,%s)' % (id,iddict[id]))
                     if self.check_url(iddict[id]):
@@ -1216,7 +1216,7 @@ class MAPPER(object):
           logging.debug('   | Invalue:\t%s' % invalue)
           if isinstance(invalue,list) :
               if len(invalue) == 1:
-                  valarr=invalue[0].split()
+                  valarr=[invalue[0]] ##HEW-D .split()
               else:
                   valarr=self.flatten(invalue)
           else:
@@ -1278,7 +1278,7 @@ class MAPPER(object):
           elif len(coordarr)==4 :
               desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
               return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-        except Exception :
+        except Exception as e :
            logging.error('%s - in map_spatial invalue %s can not converted !' % (e,invalue))
            return (None,None,None,None,None) 
 
@@ -2020,11 +2020,11 @@ class MAPPER(object):
         cmpath='%s/%s-%s/' % (self.base_outdir,community,mdprefix)
         self.logger.info('\t|- Input path:\t%s' % cmpath)
         subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
+        totcount=0 # total counter of processed files
         # loop over all available subdirs
-        fcount=0
         for subdir in sorted(subdirs) :
             if mdsubset and not subdir.startswith(mdsubset) :
-                self.logger.debug('Subdirectory %s is not processed' % subdir)
+                self.logger.debug('Subdirectory %s does not match %s - no processing required' % (subdir,mdsubset))
                 continue
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
@@ -2052,10 +2052,11 @@ class MAPPER(object):
        
             ## start processing loop
             start = time.time()
+            fcount=0 # counter per sub dir !
             for filename in files:
                 ## counter and progress bar
                 fcount+=1
-                perc=int(fcount*100/int(results['tcount']))
+                perc=int(fcount*100/int(len(list(files)))) ## int(results['tcount'])
                 bartags=int(perc/5)
                 if perc%10 == 0 and perc != oldperc:
                     oldperc=perc
@@ -2222,6 +2223,11 @@ class MAPPER(object):
                             ##HEW-D err+='Cannot write json file %s' % jsonfilename
                             results['ecount'] += 1
                             continue
+                        else:
+                            self.logger.debug(' Succesfully written to json file %s' % outpath+'/'+filename)
+                            ##HEW-D err+='Cannot write json file %s' % jsonfilename
+                            results['count'] += 1
+                            continue
                 else:
                     self.logger.error('Can not access content of %s' % infilepath)
                     results['ecount'] += 1
@@ -2230,9 +2236,10 @@ class MAPPER(object):
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
         ##HEW-D if (err is not None ): logging.error('[ERROR] ' + err)
 
+        totcount+=results['count'] # total # of sucessfully processed files
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
-                    fcount,
+                    totcount,
                     results['ecount']
                 ))
 
@@ -2408,7 +2415,7 @@ class MAPPER(object):
                 bartags=int(perc/10)
                 if perc%10 == 0 and perc != oldperc :
                     oldperc=perc
-                    print ("\r\t[%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                    print ("\r\t [%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
                     sys.stdout.flush()
 
                 jsondata = dict()
