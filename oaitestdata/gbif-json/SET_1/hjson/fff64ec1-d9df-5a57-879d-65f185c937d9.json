@@ -1,0 +1,176 @@
+{
+    "bibliographicCitations": [],
+    "citation": {
+        "text": "Riedel A (2015). Four new species of Trigonopterus Fauvel from the island of New Britain (Coleoptera, Curculionidae). Plazi.org taxonomic treatments database. Checklist Dataset https://doi.org/10.3897/zookeys.582.7709 accessed via GBIF.org on 2017-08-08."
+    },
+    "collections": [],
+    "comments": [],
+    "contacts": [
+        {
+            "address": [],
+            "created": "2017-03-28T12:57:43.765+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [],
+            "firstName": "Alexander",
+            "homepage": [],
+            "key": 647818,
+            "lastName": "Riedel",
+            "modified": "2017-03-28T12:57:43.765+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "phone": [],
+            "position": [],
+            "primary": true,
+            "type": "ORIGINATOR",
+            "userId": []
+        },
+        {
+            "address": [],
+            "created": "2017-03-28T12:57:43.769+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [
+                "sautter@ipd.uka.de"
+            ],
+            "firstName": "Guido",
+            "homepage": [
+                "http://plazi.org"
+            ],
+            "key": 647819,
+            "lastName": "Sautter",
+            "modified": "2017-03-28T12:57:43.769+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "phone": [],
+            "position": [],
+            "primary": true,
+            "type": "ADMINISTRATIVE_POINT_OF_CONTACT",
+            "userId": []
+        },
+        {
+            "address": [
+                "Prof. Georgi Zlatarski Street 12"
+            ],
+            "city": "Sofia",
+            "country": "BG",
+            "created": "2017-03-28T12:57:43.772+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [
+                "info@pensoft.net"
+            ],
+            "homepage": [
+                "http://www.pensoft.net"
+            ],
+            "key": 647820,
+            "modified": "2017-03-28T12:57:43.772+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "organization": "Pensoft Publishers",
+            "phone": [],
+            "position": [],
+            "postalCode": "1700",
+            "primary": false,
+            "type": "PUBLISHER",
+            "userId": []
+        },
+        {
+            "address": [],
+            "city": "Bern",
+            "country": "CH",
+            "created": "2017-03-28T12:57:43.773+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [
+                "info@plazi.org"
+            ],
+            "homepage": [
+                "http://plazi.org/"
+            ],
+            "key": 647821,
+            "modified": "2017-03-28T12:57:43.773+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "organization": "Plazi",
+            "phone": [],
+            "position": [],
+            "primary": false,
+            "type": "DISTRIBUTOR",
+            "userId": []
+        },
+        {
+            "address": [],
+            "created": "2017-03-28T12:57:43.775+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [],
+            "homepage": [],
+            "key": 647822,
+            "modified": "2017-03-28T12:57:43.775+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "organization": "Plazi",
+            "phone": [],
+            "position": [],
+            "primary": true,
+            "type": "METADATA_AUTHOR",
+            "userId": []
+        }
+    ],
+    "countryCoverage": [],
+    "created": "2017-03-27T20:57:24.870+0000",
+    "createdBy": "plazi",
+    "curatorialUnits": [],
+    "dataDescriptions": [],
+    "dataLanguage": "eng",
+    "description": "This dataset contains the digitized treatments in Plazi based on the original journal article Van Dam, Matthew H., Laufa, Raymond, Riedel, Alexander (2016): Four new species of Trigonopterus Fauvel from the island of New Britain (Coleoptera, Curculionidae). ZooKeys 582: 129-141, DOI: http://dx.doi.org/10.3897/zookeys.582.7709, URL: http://dx.doi.org/10.3897/zookeys.582.7709",
+    "doi": "doi:10.3897/zookeys.582.7709",
+    "endpoints": [
+        {
+            "created": "2017-03-27T20:57:25.394+0000",
+            "createdBy": "plazi",
+            "key": 180138,
+            "machineTags": [],
+            "modified": "2017-03-27T20:57:25.394+0000",
+            "modifiedBy": "plazi",
+            "type": "DWC_ARCHIVE",
+            "url": "http://tb.plazi.org/GgServer/dwca/3E07FFE4420A7528AD28FF853935FF9E.zip"
+        }
+    ],
+    "external": false,
+    "geographicCoverages": [],
+    "homepage": "http://tb.plazi.org/GgServer/summary/3E07FFE4420A7528AD28FF853935FF9E",
+    "identifiers": [
+        {
+            "created": "2017-03-28T12:57:43.795+0000",
+            "createdBy": "crawler.gbif.org",
+            "identifier": "doi:10.15468/ngcwqb",
+            "key": 98037,
+            "type": "DOI"
+        },
+        {
+            "created": "2017-03-27T20:57:25.126+0000",
+            "createdBy": "plazi",
+            "identifier": "3E07FFE4420A7528AD28FF853935FF9E",
+            "key": 94142,
+            "type": "UUID"
+        }
+    ],
+    "installationKey": "7ce8aef1-9e92-11dc-8740-b8a03c50a999",
+    "key": "442f5c57-cf68-434b-87a1-bb3f33ec9771",
+    "keywordCollections": [],
+    "language": "eng",
+    "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+    "lockedForAutoUpdate": false,
+    "machineTags": [
+        {
+            "created": "2017-07-31T23:23:49.890+0000",
+            "createdBy": "crawler.gbif.org",
+            "key": 908165,
+            "name": "crawl_attempt",
+            "namespace": "crawler.gbif.org",
+            "value": "12"
+        }
+    ],
+    "modified": "2017-03-28T12:57:43.812+0000",
+    "modifiedBy": "crawler.gbif.org",
+    "numConstituents": 0,
+    "pubDate": "2015-12-31T23:00:00.001+0000",
+    "publishingOrganizationKey": "7ce8aef0-9e92-11dc-8738-b8a03c50a862",
+    "tags": [],
+    "taxonomicCoverages": [],
+    "temporalCoverages": [],
+    "title": "Four new species of Trigonopterus Fauvel from the island of New Britain (Coleoptera, Curculionidae)",
+    "type": "CHECKLIST"
+}

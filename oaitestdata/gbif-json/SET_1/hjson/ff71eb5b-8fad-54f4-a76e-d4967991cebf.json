@@ -1,0 +1,176 @@
+{
+    "bibliographicCitations": [],
+    "citation": {
+        "text": "Acevedo-Rodriguez P (2011). Alatococcus, a new genus of Sapindaceae from Espirito Santo, Brazil. Plazi.org taxonomic treatments database. Checklist Dataset https://doi.org/10.3897/phytokeys.10.2718 accessed via GBIF.org on 2017-08-08."
+    },
+    "collections": [],
+    "comments": [],
+    "contacts": [
+        {
+            "address": [],
+            "created": "2017-03-28T12:45:00.146+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [],
+            "firstName": "Pedro",
+            "homepage": [],
+            "key": 638007,
+            "lastName": "Acevedo-Rodriguez",
+            "modified": "2017-03-28T12:45:00.146+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "phone": [],
+            "position": [],
+            "primary": true,
+            "type": "ORIGINATOR",
+            "userId": []
+        },
+        {
+            "address": [],
+            "created": "2017-03-28T12:45:00.149+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [
+                "sautter@ipd.uka.de"
+            ],
+            "firstName": "Guido",
+            "homepage": [
+                "http://plazi.org"
+            ],
+            "key": 638008,
+            "lastName": "Sautter",
+            "modified": "2017-03-28T12:45:00.149+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "phone": [],
+            "position": [],
+            "primary": true,
+            "type": "ADMINISTRATIVE_POINT_OF_CONTACT",
+            "userId": []
+        },
+        {
+            "address": [
+                "Prof. Georgi Zlatarski Street 12"
+            ],
+            "city": "Sofia",
+            "country": "BG",
+            "created": "2017-03-28T12:45:00.151+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [
+                "info@pensoft.net"
+            ],
+            "homepage": [
+                "http://www.pensoft.net"
+            ],
+            "key": 638009,
+            "modified": "2017-03-28T12:45:00.151+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "organization": "Pensoft Publishers",
+            "phone": [],
+            "position": [],
+            "postalCode": "1700",
+            "primary": false,
+            "type": "PUBLISHER",
+            "userId": []
+        },
+        {
+            "address": [],
+            "city": "Bern",
+            "country": "CH",
+            "created": "2017-03-28T12:45:00.152+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [
+                "info@plazi.org"
+            ],
+            "homepage": [
+                "http://plazi.org/"
+            ],
+            "key": 638010,
+            "modified": "2017-03-28T12:45:00.152+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "organization": "Plazi",
+            "phone": [],
+            "position": [],
+            "primary": false,
+            "type": "DISTRIBUTOR",
+            "userId": []
+        },
+        {
+            "address": [],
+            "created": "2017-03-28T12:45:00.154+0000",
+            "createdBy": "crawler.gbif.org",
+            "email": [],
+            "homepage": [],
+            "key": 638011,
+            "modified": "2017-03-28T12:45:00.154+0000",
+            "modifiedBy": "crawler.gbif.org",
+            "organization": "Plazi",
+            "phone": [],
+            "position": [],
+            "primary": true,
+            "type": "METADATA_AUTHOR",
+            "userId": []
+        }
+    ],
+    "countryCoverage": [],
+    "created": "2017-03-27T19:04:22.580+0000",
+    "createdBy": "plazi",
+    "curatorialUnits": [],
+    "dataDescriptions": [],
+    "dataLanguage": "eng",
+    "description": "This dataset contains the digitized treatments in Plazi based on the original journal article Acevedo-Rodriguez, Pedro (2012): Alatococcus, a new genus of Sapindaceae from Espirito Santo, Brazil. PhytoKeys 10: 1-5, DOI: http://dx.doi.org/10.3897/phytokeys.10.2718, URL: http://dx.doi.org/10.3897/phytokeys.10.2718",
+    "doi": "doi:10.3897/phytokeys.10.2718",
+    "endpoints": [
+        {
+            "created": "2017-03-27T19:04:23.122+0000",
+            "createdBy": "plazi",
+            "key": 178154,
+            "machineTags": [],
+            "modified": "2017-03-27T19:04:23.122+0000",
+            "modifiedBy": "plazi",
+            "type": "DWC_ARCHIVE",
+            "url": "http://tb.plazi.org/GgServer/dwca/FFFA1518FF88272CFF83CE0E9C072E41.zip"
+        }
+    ],
+    "external": false,
+    "geographicCoverages": [],
+    "homepage": "http://tb.plazi.org/GgServer/summary/FFFA1518FF88272CFF83CE0E9C072E41",
+    "identifiers": [
+        {
+            "created": "2017-03-28T12:45:00.170+0000",
+            "createdBy": "crawler.gbif.org",
+            "identifier": "doi:10.15468/g4ffss",
+            "key": 95298,
+            "type": "DOI"
+        },
+        {
+            "created": "2017-03-27T19:04:22.844+0000",
+            "createdBy": "plazi",
+            "identifier": "FFFA1518FF88272CFF83CE0E9C072E41",
+            "key": 92164,
+            "type": "UUID"
+        }
+    ],
+    "installationKey": "7ce8aef1-9e92-11dc-8740-b8a03c50a999",
+    "key": "84d68983-7a4f-4973-974c-f32a8dde09c8",
+    "keywordCollections": [],
+    "language": "eng",
+    "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+    "lockedForAutoUpdate": false,
+    "machineTags": [
+        {
+            "created": "2017-08-01T01:03:26.222+0000",
+            "createdBy": "crawler.gbif.org",
+            "key": 910133,
+            "name": "crawl_attempt",
+            "namespace": "crawler.gbif.org",
+            "value": "12"
+        }
+    ],
+    "modified": "2017-03-28T12:45:00.184+0000",
+    "modifiedBy": "crawler.gbif.org",
+    "numConstituents": 0,
+    "pubDate": "2011-12-31T23:00:00.001+0000",
+    "publishingOrganizationKey": "7ce8aef0-9e92-11dc-8738-b8a03c50a862",
+    "tags": [],
+    "taxonomicCoverages": [],
+    "temporalCoverages": [],
+    "title": "Alatococcus, a new genus of Sapindaceae from Espirito Santo, Brazil",
+    "type": "CHECKLIST"
+}
