@@ -8,17 +8,20 @@
   <mappings>
    <!-- General information -->
     <field name="title">
-      <xpath>//cmd:Title/text(),//cmd:title/text(),//cmd:CollectionName(text(),//cmd:ProjectName/text(),//cmd:MdCollectionDisplayName/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Name,//cmd:Title,//cmd:title,//cmd:CollectionName,//cmd:ProjectName,//cmd:MdCollectionDisplayName</xpath>
     </field>
     <field name="notes">
-      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description/text(),//cmd:desc/text(),//cmd:node/text(),//cmd:ProjectName</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Description,//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description/text(),//cmd:desc/text(),//cmd:node/text(),//cmd:ProjectName</xpath>
     </field>
     <field name="tags">
-      <xpath>replace(//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Keys/cmd:Key/text(),"[:()]",";")</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Keyword,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Keys/cmd:Key</xpath>
     </field>
    <!-- Access data  -->
     <field name="url">
-      <xpath>//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceRef/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Header/cmd:MdSelfLink</xpath>
+      <!-- This are the resource list the collection comprises :
+      <xxxxpath>//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceRef</xpath>
+      -->
     </field> 
     <field name="Checksum">
     </field>
@@ -27,16 +30,23 @@
     </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <string>Linguistics</string>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Keyword</xpath>
+      <###sssstring>Linguistics</string>
     </field>
     <field name="author">
-      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Actors/cmd:Actor/cmd:FullName/text()), ';')</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Creator/cmd:Name,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Actors/cmd:Actor/cmd:FullName</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text()</xpath>
+      <string>CLARIN Virtual Collection Registry</string>
+<!--
+      <xxxxpath>//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text()</xpath>
+-->
     </field>
     <field name="PublicationYear">
-      <xpath>//cmd:PublicationTime,//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(),//cmd:CMD/cmd:Header/cmd:MdCreationDate/text()</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:CreationDate</xpath>
+<!--
+      <xxxxpath>//cmd:PublicationTime,//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(),//cmd:CMD/cmd:Header/cmd:MdCreationDate/text()</xpath>
+-->
     </field>
    <!-- Formal data -->
     <field name="Language">
@@ -47,6 +57,9 @@
     </field>
     <field name="TemporalCoverage">
       <xpath>//cmd:TimePosition/cmd:Start/text(),//cmd:TimePosition/cmd:End/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType</xpath>
     </field>
     <field name="Format">
       <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:Format/text()</xpath>

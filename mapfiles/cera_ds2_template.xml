@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_Cera2_entry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="W:\XML\Test\ds2.xsd">
+	<!-- 
+        Select experiment_acronym and/or dataset_group_acronym from
+        http://cera-www.dkrz.de/WDCC/ui/Index.jsp
+        Use 'not filled' in case of no superordinated entries
+        Do not change entry_type
+   -->
+	<experiment_acronym>%(community)s-%(oai_set)s</experiment_acronym>
+	<dataset_group_acronym></dataset_group_acronym>
+	<entry_type>dataset</entry_type>
+	<!-- 
+        Construction of entry_acronym/entry_name see 
+        http://cera-www.dkrz.de/Meta_Fill/Compose_Names.html
+        summary: free text, max. 2000 character
+        What should be in the summary?
+        see: http://cera-www.dkrz.de/Meta_Fill/FAQ.html (ueberarbeiten!!)
+   -->
+	<entry_acronym>%(community)s_%(identifier)s </entry_acronym>
+	<entry_name>%(title)s</entry_name>
+	<summary>%(notes)s </summary>
+	<creation_date></creation_date>
+	<!-- 
+        *_report: free text, max. 2000 characters. 
+        Use 'not filled' instead of empty tags.
+   -->
+	<accuracy_report>not filled</accuracy_report>
+	<consistency_report>not filled</consistency_report>
+	<completeness_report>not filled</completeness_report>
+	<horizontal_acc_report>not filled</horizontal_acc_report>
+	<vertical_acc_report>not filled</vertical_acc_report>
+	<!-- 
+        Block Contact
+        Select person_id from 
+        http://cera-www.dkrz.de/Meta_Fill/person.xsql
+        If case of more contact types select contact_type from
+        http://cera-www.dkrz.de/Meta_Fill/contact_type.xsql
+   -->
+   	<Contact>
+		<contact_type>originator</contact_type>
+		<institute_info>%(Publisher)s</institute_info>
+		<institute_info>%(Contact)s</institute_info>
+		<institute_id>2000495</institute_id>
+	</Contact>
+	<Contact>
+		<contact_type>scientific_contact</contact_type>
+		<person_info>%(author)s</person_info>
+		<person_id>2001338</person_id>
+	</Contact>
+<!--- Furthor authors :
+	<Contact>
+		<contact_type>scientific_contact</contact_type>
+		<person_info>Baars, Holger</person_info>
+		<person_id>2001674</person_id>
+	</Contact>	
+	<Contact>
+		<contact_type>Researcher</contact_type>
+		<person_info>Seifert, Patric</person_info>
+		<person_id>2001338</person_id>
+	</Contact>
+-->	
+	<!-- 
+	    Wie kennzeichnen wir ongoing? 
+        Block Coverage
+        location_name see
+        http://cera-www.dkrz.de/Meta_Fill/location.xsql
+        location_descr: only change if new location 
+        
+        currentness_ref_descr see
+        http://cera-www.dkrz.de/Meta_Fill/currentness_ref.xsql
+   -->
+	<Coverage>
+		<location_name>not filled</location_name>
+		<location_descr>not filled</location_descr>
+		<min_lon></min_lon>
+		<max_lon></max_lon>
+		<min_lat></min_lat>
+		<max_lat></max_lat>
+		<min_altitude></min_altitude>
+		<min_alt_unit></min_alt_unit>
+		<max_altitude></max_altitude>
+		<max_alt_unit></max_alt_unit>
+		<start_year></start_year>
+		<start_month></start_month>
+		<start_day></start_day>
+		<stop_year></stop_year>
+		<stop_month></stop_month>
+		<stop_day></stop_day>
+		<currentness_ref_descr></currentness_ref_descr>
+	</Coverage>
+	<!-- 
+        Block Distribution
+        format_acronym see
+        http://cera-www.dkrz.de/Meta_Fill/format.xsql
+   -->
+	<Distribution>
+		<format_acronym>%(Format)s</format_acronym>
+	</Distribution>
+	<!-- 
+        Block Grid_desc:
+        scales see
+        http://cera-www.dkrz.de/Meta_Fill/scale.xsql
+        http://cera-www.dkrz.de/Meta_Fill/scale_2.xsql (single point)
+        Insert new scales before proceeding or use 'not filled' or 'n/a' 
+   -->
+	<Grid_desc>
+		<x_scale>none</x_scale>
+		<y_scale>none</y_scale>
+		<z_scale>none</z_scale>
+	</Grid_desc>
+	<!-- 
+        Block Spatial_reference 
+        sys_descr see
+        http://cera-www.dkrz.de/Meta_Fill/hor_coord_sys.xsql
+        http://cera-www.dkrz.de/Meta_Fill/ver_coord_sys.xsql
+   -->
+	<Spatial_reference>
+		<hor_sys_descr>not filled</hor_sys_descr>
+		<ver_sys_descr>not filled</ver_sys_descr>
+	</Spatial_reference>
+	<!-- 
+        Block Parameter
+        If code_numbers are not used insert  '0' (code_number) and 'n/a' (code_type)
+		if using code_numbers insert 'not filled' (topic_name / unit_acronym)
+        topic_name see
+        http://cera-www.dkrz.de/Meta_Fill/topic.xsql
+        unit:
+        http://cera-www.dkrz.de/Meta_Fill/unit.xsql
+        aggregation:
+        http://cera-www.dkrz.de/Meta_Fill/aggregation.xsql
+
+   -->
+	<Parameter>
+		<code_number></code_number>
+		<code_type></code_type>
+		<topic_name>height</topic_name>
+		<unit_acronym>m</unit_acronym>
+		<reference_method>point</reference_method>
+		<aggregation_descr>300 s</aggregation_descr>
+	</Parameter>
+	<Parameter>
+		<code_number></code_number>
+		<code_type></code_type>
+		<topic_name>altitude</topic_name>
+		<unit_acronym>m</unit_acronym>
+		<reference_method>point</reference_method>
+		<aggregation_descr>300 s</aggregation_descr>
+	</Parameter>
+	<Parameter>
+		<code_number></code_number>
+		<code_type></code_type>
+		<topic_name>longitude</topic_name>
+		<unit_acronym>degrees_east</unit_acronym>
+		<reference_method>point</reference_method>
+		<aggregation_descr>300 s</aggregation_descr>
+	</Parameter>	
+		<Parameter>
+		<code_number></code_number>
+		<code_type></code_type>
+		<topic_name>latitude</topic_name>
+		<unit_acronym>degrees_north</unit_acronym>
+		<reference_method>point</reference_method>
+		<aggregation_descr>300 s</aggregation_descr>
+	</Parameter>
+    <Parameter>
+		<code_number></code_number>
+		<code_type></code_type>
+		<topic_name>wind speed</topic_name>
+		<unit_acronym>m s-1</unit_acronym>
+		<reference_method>point</reference_method>
+		<aggregation_descr>300 s</aggregation_descr>
+	</Parameter>
+	<Parameter>
+		<code_number></code_number>
+		<code_type></code_type>
+		<topic_name>Target classification based on multiwavelength lidar data.</topic_name>
+		<unit_acronym>1</unit_acronym>
+		<reference_method>point</reference_method>
+		<aggregation_descr>300 s</aggregation_descr>
+	</Parameter>	
+	<!-- 
+        Block Time
+        dim_type_name:
+        http://cera-www.dkrz.de/Meta_Fill/dim_type.xsql
+        num_points: number of records
+        start*/step*: numeric values only, no space   
+   -->
+	<Time>
+		<!-- project_date>D-PHASE period</project_date-->
+		<dim_type_name>real time</dim_type_name>
+		<start_moment_year>%(TempCoverageBegin)s</start_moment_year>
+		<start_moment_month>%(TemporalCoverage:BeginDate)s</start_moment_month>
+		<start_moment_day>1</start_moment_day>
+		<start_moment_hour>12</start_moment_hour>
+		<start_moment_minute>0</start_moment_minute>
+		<start_moment_second>0</start_moment_second>
+		<start_utc_difference>0</start_utc_difference>
+		<step_moment_year>0</step_moment_year>
+		<step_moment_month>0</step_moment_month>
+		<step_moment_day>1</step_moment_day>
+		<step_moment_hour>0</step_moment_hour>
+		<step_moment_minute>0</step_moment_minute>
+		<step_moment_second>300</step_moment_second>
+		<num_points>9999</num_points>
+	</Time>
+</XML_Cera2_entry>

@@ -73,7 +73,7 @@ def main():
 
     # check the version from svn:
     global ManagerVersion
-    ManagerVersion = '2.2.0'
+    ManagerVersion = '2.3.1'
 
     # parse command line options and arguments:
     modes=['h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
@@ -158,11 +158,11 @@ def main():
     try:
         # start the process:
         process(options,pstat,OUT)
-        exit()
-    except Exception :
-        logging.critical("[CRITICAL] Program is aborted because of a critical error! Description:")
-        logging.critical("%s" % traceback.format_exc())
-        exit()
+        sys.exit()
+    except Exception as err :
+        logging.critical("%s" % err)
+        logging.error("%s" % traceback.format_exc())
+        sys.exit()
     finally:
         # exit the program and open results HTML file:
         exit_program(OUT)
@@ -238,7 +238,7 @@ def process(options,pstat,OUT):
         logger.info('\n|- Uploading started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         # create CKAN object                       
         CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
-        UP = B2FIND.UPLOADER(CKAN, OUT)
+        UP = B2FIND.UPLOADER(CKAN,OUT,options.outdir)
         logger.info(' |- Host:  \t%s' % CKAN.ip_host )
         # start the process uploading:
         process_upload(UP, reqlist)
@@ -302,23 +302,11 @@ def process_map(MP, rlist):
         else:
             mext='xml'
 
-        if (len (request) > 5):            
-            mapfile='%s/%s-%s.%s' % ('mapfiles',request[0],request[5],mext)
-            target=request[5]
-        else:
-            mapfile='%s/%s/%s-%s.%s' % (os.getcwd(),'mapfiles',request[0],request[3],mext)
-            if not os.path.isfile(mapfile):
-                logger.error('Can not access mapfile %s for community %s and mdformat %s ' % (mapfile,request[0],request[3]))
-                mapfile='%s/%s/%s.%s' % (os.getcwd(),'mapfiles',request[3],mext)
-                if not os.path.isfile(mapfile):
-                    logger.critical('Can not access mapfile %s for mdformat %s ' % (mapfile,request[3]))
-                    sys.exit(-1)
-            target=None
-        print ('   |# %-4d : %-10s\t%-20s : %-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],os.path.basename(mapfile),'Started',time.strftime("%H:%M:%S")))
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
         
-        results = MP.map(request,target)
+        results = MP.map(request)
 
         ctime=time.time()-cstart
         results['time'] = ctime
@@ -341,10 +329,7 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        if len(request) > 4:
-            outfile='oaidata/%s-%s/%s_*/%s' % (request[0],request[3],request[4],'validation.stat')
-        else:
-            outfile='oaidata/%s-%s/%s/%s' % (request[0],request[3],'SET_*','validation.stat')
+        outfile='oaidata/%s-%s/%s' % (request[0],request[3],'validation.stat')
         print ('   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S")))
         cstart = time.time()
 
@@ -362,31 +347,8 @@ def process_validate(MP, rlist):
         else:
             MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
-def process_oaiconvert(MP, rlist):
-
-    ir=0
-    for request in rlist:
-        ir+=1
-        print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
-        rcstart = time.time()
-        
-        results = MP.oaiconvert(request[0],request[3],os.path.abspath(request[2]+'/'+request[4]),request[5])
-
-        rctime=time.time()-rcstart
-        results['time'] = rctime
-        
-        # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
-
-
 def process_upload(UP, rlist):
     ##HEW-D-ec credentials,ec = None,None
-
-    def print_extra(key,jsondata):
-        for v in jsondata['extras']:
-            if v['key'] == key:
-                print (' Key : %s | Value : %s |' % (v['key'],v['value']))
- 
 
     # create credentials and handle client if required
     if (options.handle_check):
@@ -412,6 +374,7 @@ def process_upload(UP, rlist):
         "marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
         "iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
         "iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
+        "inspire" : "http://inspire.ec.europa.eu/theme/ef",        
         "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
         "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
         "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
@@ -423,13 +386,11 @@ def process_upload(UP, rlist):
     for request in rlist:
         ir+=1
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
-        community, source, dir = request[0:3]
+        community=request[0]
+        source=request[1]
         mdprefix = request[3]
-        if len(request) > 4:
-            subset = request[4]
-        else:
-            subset = 'SET_1'
-        dir = dir+'/'+subset
+        mdsubset=request[4]   if len(request)>4 else None
+        ## dir = dir+'/'+subset
         
         results = {
             'count':0,
@@ -447,22 +408,17 @@ def process_upload(UP, rlist):
         except Exception :
             logging.critical("Can not list CKAN groups")
   
-        if len(request) > 4:
+        if len(request) > 4 and request[4] :
             m = re.search(r'_\d+$', request[4]) # check if subset ends with '_' + digit
             if m is not None:
                 subset=request[4]
+            elif request[4].endswith('_'):
+                subset=request[4]+'1'
             else:
                 subset=request[4]+'_1'
         else:
             subset='SET_1'
 
-        path=os.path.abspath('oaidata/'+request[0]+'-'+request[3]+'/'+subset)
-
-        if not os.path.exists(path):
-            logging.critical('[ERROR] The directory "%s" does not exist!' % (path))
-            
-            continue
-        
         logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
         
         if (last_community != community and options.ckan_check == 'True'):
@@ -470,17 +426,36 @@ def process_upload(UP, rlist):
             UP.get_packages(community)
         
         uploadstart = time.time()
+
+        # community-mdschema root path
+        cmpath='%s/%s-%s/' % (UP.base_outdir,community,mdprefix)
+        UP.logger.info('\t|- Input path:\t%s' % cmpath)
+        subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
+        # loop over all available subdirs
+        fcount=0
+        for subdir in sorted(subdirs) :
+          if mdsubset and not subdir.startswith(mdsubset) :
+                UP.logger.debug('Subdirectory %s is not processed' % subdir)
+                continue
+          else:
+                print('\t |- Subdirectory %s is processed' % subdir)
+                UP.logger.debug('Processing of subdirectory %s' % subdir)
         
-        # find all .json files in dir/json:
-        ##HEW-D files = filter(lambda x: x.endswith('.json'), os.listdir(path+'/json'))
-        files = [x for x in os.listdir(path+'/json') if x.endswith('.json')]
+          # check input path
+          inpath='%s/%s/%s' % (cmpath,subdir,'json')
+          if not os.path.exists(inpath):
+                UP.logger.critical('Can not access directory %s' % inpath)
+                return results     
+
+
         
-        results['tcount'] = len(files)
+          files = [x for x in os.listdir(inpath) if x.endswith('.json')]
+          results['tcount'] = len(files)
         
-        scount = 0
-        fcount = 0
-        oldperc = 0
-        for filename in files:
+          scount = 0
+          fcount = 0
+          oldperc = 0
+          for filename in files:
             ## counter and progress bar
             fcount+=1
             if (fcount<scount): continue
@@ -493,13 +468,13 @@ def process_upload(UP, rlist):
 
             jsondata = dict()
             datasetRecord = dict()
-            pathfname= path+'/json/'+filename
+            pathfname= inpath+'/'+filename
             if ( os.path.getsize(pathfname) > 0 ):
                 with open(pathfname, 'r') as f:
                     try:
                         jsondata=json.loads(f.read(),encoding = 'utf-8')
                     except:
-                        logger.error('    | [ERROR] Cannot load the json file %s' % path+'/json/'+filename)
+                        logger.error('    | [ERROR] Cannot load the json file %s' % pathfname)
                         results['ecount'] += 1
                         continue
             else:
@@ -509,7 +484,7 @@ def process_upload(UP, rlist):
             # get dataset id (CKAN name) from filename (a uuid generated identifier):
             ds_id = os.path.splitext(filename)[0]
             
-            logger.debug('    | u | %-4d | %-40s |' % (fcount,ds_id))
+            logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
 
             # get OAI identifier from json data extra field 'oai_identifier':
             if 'oai_identifier' not in jsondata :
@@ -532,7 +507,7 @@ def process_upload(UP, rlist):
             else:
                reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
                mdaccess = reqpre + '&identifier=' + oai_id
-               urlcheck=UP.check_url(mdaccess)
+               ##HEW-MV2mapping!!! : urlcheck=UP.check_url(mdaccess)
             index1 = mdaccess
 
             # exceptions for some communities:
@@ -547,7 +522,7 @@ def process_upload(UP, rlist):
                     mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
 
             if UP.check_url(mdaccess) == False :
-                logging.critical('URL %s is broken' % (mdaccess))
+                logging.error('URL %s is broken' % (mdaccess))
             else:
                 jsondata['MetaDataAccess']=mdaccess
 
@@ -662,14 +637,19 @@ def process_upload(UP, rlist):
                     logger.debug(" Upload of %s returns with upload code %s" % (ds_id,upload))
 
                 if (upload == 1):
-                    logger.warning('        |-> Creation of %s record succeed' % dsstatus )
+                    logger.warning('        |-> Successful creation of %s record' % dsstatus )
                 elif (upload == 2):
-                    logger.warning('        |-> Update of %s record succeed' % dsstatus )
+                    logger.warning('        |-> Successful update of %s record succeed' % dsstatus )
+                    upload=1
+                elif (upload == -1):
+                    logger.warning('        |-> Failed creation of %s record' % dsstatus )
+                    upload=1
+                elif (upload == -2):
+                    logger.warning('        |-> Failed update of %s record failed' % dsstatus )
                     upload=1
                 else:
-                    logger.critical('        |-> Failed upload of %s record %s' % (dsstatus, ds_id ))
+                    logger.critical('       |-> Failed upload of %s record %s' % (dsstatus, ds_id ))
                     results['ecount'] += 1
-
             # update PID in handle server                           
             if (options.handle_check):
                 if (handlestatus == "unchanged"):
@@ -704,10 +684,28 @@ def process_upload(UP, rlist):
                     results['count'],
                     results['ncount'],
                     results['ecount']
-                ))
+               ))
         
         # save stats:
         UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
+
+def process_oaiconvert(MP, rlist):
+
+    ir=0
+    for request in rlist:
+        ir+=1
+        print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
+        rcstart = time.time()
+        
+        results = MP.oaiconvert(request)
+
+        rctime=time.time()-rcstart
+        results['time'] = rctime
+        
+        # save stats:
+        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
+
+
 
 def process_delete(OUT, dir, options):
     print ("###JM# Don't use this function. It is not up to date.")
@@ -715,7 +713,7 @@ def process_delete(OUT, dir, options):
 
     # create CKAN object                       
     CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
-    UP = B2FIND.UPLOADER(CKAN, OUT)
+    UP = B2FIND.UPLOADER(CKAN,OUT,options.outdir)
     
     ##HEW-D-ec credentials,ec = None,None
 
@@ -945,7 +943,7 @@ def options_parser(modes):
     group_upload = optparse.OptionGroup(p, "Upload Options",
         "These options will be required to upload an dataset to a CKAN database.")
     group_upload.add_option('--iphost', '-i', help="IP adress of B2FIND portal (CKAN instance)", metavar='IP')
-    group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, iby default taken from file $HOME/.netrc)",metavar='STRING')
+    group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, by default taken from file $HOME/.netrc)",metavar='STRING')
     group_upload.add_option('--handle_check', 
          help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file", default=None,metavar='FILE')
     group_upload.add_option('--ckan_check',
