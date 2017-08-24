@@ -670,6 +670,8 @@ def process_upload(UP, rlist):
                         if chargs :
                             try:
                                 client.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
+                                logging.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
+
                             except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
                                 logger.critical("%s in client.modify_handle_value of %s in %s" % (err,chargs,pid))
                             else:
