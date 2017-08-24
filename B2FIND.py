@@ -249,41 +249,10 @@ class HARVESTER(object):
     
     """
     ### HARVESTER - class
-    # Provides methods to call a CKAN API request via urllib2
+    # Provides methods to harvest metadata from external data providers
     #
-    # Parameters:
-    # -----------
-    # 1. (OUT object)   OUT   - object of the OUTPUT class
-    # 2. (dict)         pstat   - dictionary with the states of every process (was built by main.pstat_init())
-    # 3. (path)         rootdir - rootdir where the subdirs will be created and the harvested files will be saved.
-    # 4. (string)       fromdate  - filter for harvesting, format: YYYY-MM-DD
-    #
-    # Return Values:
-    # --------------
-    # 1. HARVESTER object
-    #
-    # Public Methods:
-    # ---------------
-    # .harvest(request) - harvest from a source via OAI-PMH using the python module 'Sickle'
-    #
-    # Usage:
-    # ------
-
     # create HARVESTER object                       
-    HV = HARVESTER(OUT object,pstat,rootdir,fromdate)
-
-    # harvest from a source via sickle module:
-    request = [
-                    community,
-                    source,
-                    verb,
-                    mdprefix,
-                    mdsubset
-                ]
-    results = HV.harvest(request)
-
-    if (results == -1):
-        print ("Error occured!")
+    HV = HARVESTER(OUT object, outdir,fromdate)
     """
     
     def __init__ (self, OUT, pstat, base_outdir, fromdate):
@@ -509,13 +478,13 @@ class HARVESTER(object):
 
         # CSW2.0
         elif req["lverb"].startswith('csw'):
-            src = CatalogueServiceWeb(req['url'])
             outtypedir='xml'
             outtypeext='xml'
             startposition=0
             maxrecords=1000
-            oaireq=getattr(src,'getrecords2') ## HEW-D ,req["lverb"], None)
             try:
+                src = CatalogueServiceWeb(req['url'])
+                oaireq=getattr(src,'getrecords2') ## HEW-D ,req["lverb"], None)
                 oaireq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
                 records=list(src.records.itervalues())
             except (HTTPError,ConnectionError) as err:
