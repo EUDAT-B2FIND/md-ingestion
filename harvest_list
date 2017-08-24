@@ -41,7 +41,8 @@ norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords 
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc PROF_APPL_SCIENCE 
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc
 ## JADDS
-jadds http://134.94.32.229:8080/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=cams1_ps  WCS wcs  cams1_ps
+jadds http://134.94.32.229:8080/rasdaman/ows csw wcs cams1_ps
+##HEW-Djadds http://134.94.32.229:8080/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=cams1_ps  WCS wcs  cams1_ps
 ## SEANOE
 seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
 # EISCAT
