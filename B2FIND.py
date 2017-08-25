@@ -411,8 +411,6 @@ class HARVESTER(object):
         # make subset dir:
         subsetdir = '/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
 
-
-
         noffs=0 # set to number of record, where harvesting should start
         stats['tcount']=noffs
         fcount=0
@@ -504,12 +502,6 @@ class HARVESTER(object):
             self.logger.warning("\t|- Can not access any records to harvest")
             return -1
 
-        deleted_metadata = dict()
-        for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-             for ofile in glob.glob(s+'/'+outtypedir+'/*.'+outtypeext):
-                 # save the uid as key and the file as value:
-                 deleted_metadata[os.path.splitext(os.path.basename(subset))[0]] = ofile
-   
         self.logger.debug(' | %-4s | %-25s | %-25s |' % ('#','OAI Identifier','DS Identifier'))
         ##HEW-T        sys.exit(-1)
 
@@ -517,7 +509,8 @@ class HARVESTER(object):
 
         if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
             os.makedirs(subsetdir+'/' + outtypedir)
-
+        
+        delete_ids=list()
         # loop over records
         for record in records :
             stats['tcount'] += 1
@@ -531,9 +524,9 @@ class HARVESTER(object):
                     oldperc=perc
                     print ("\r\t[%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start2 ))
                     sys.stdout.flush()
-
+                    
             # Set oai_id and generate a uniquely identifier for this dataset:
-            
+            delete_flag=False
             if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## Harvest via JSON-API
                 if 'key' in record :
                     oai_id = record['key']
@@ -548,9 +541,9 @@ class HARVESTER(object):
             
             elif req["lverb"] == 'ListIdentifiers' : ## OAI-PMH harvesting of XML records
                 if (record.deleted):
-                    ##HEW-??? deleted_metadata[record.identifier] = 
                     stats['totdcount'] += 1
-                    continue
+                    delete_flag=True
+                    ##HEW-D continue
                 else:
                     oai_id = record.identifier
                     record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
@@ -560,11 +553,17 @@ class HARVESTER(object):
                     continue
                 else:
                     oai_id = record.header.identifier
-
-            # generate a uniquely identifier for this dataset:
+                
+            # generate a uniquely identifier and a filename for this dataset:
             uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
-            outfile = subsetdir + '/' + outtypedir + '/' + os.path.basename(uid) + '.' + outtypeext
+            outfile = '%s/%s/%s.%s' % (subsetdir,outtypedir,os.path.basename(uid),outtypeext)
 
+            if delete_flag : # record marked as deleted on provider site 
+                jsonfile = '%s/%s/%s.%s' % (subsetdir,'json',os.path.basename(uid),'json')
+                # remove xml and json file:
+                os.remove(xmlfile)
+                os.remove(jsonfile)
+                delete_ids.append(uid)
             # write record on disc
             try:
                 logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
@@ -631,14 +630,17 @@ class HARVESTER(object):
                     ## logging.debug(metadata)
                     stats['ecount']+=1
                     continue
-            else:
-                    # if everything worked then delete this metadata file from deleted_metadata
-                    if uid in deleted_metadata:
-                        del deleted_metadata[uid]
 
             # Need a new subset?
             if (stats['count'] == count_break):
                     logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
+
+                    # clean up current subset and write ids to remove to delete file
+                    for df in os.listdir(subsetdir+'/'+ outtypedir):
+                        if os.stat(df).st_mtime < start - 1 * 86400:
+                            os.remove(df)
+                            print('File to delete %s' % df)
+
                     subsetdir = self.save_subset(req, stats, subset, count_set)
                     if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
                         os.makedirs(subsetdir+'/' + outtypedir)
@@ -655,72 +657,24 @@ class HARVESTER(object):
                 
                     logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
 
-        now = time.time()
-        for s in glob.glob('/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_[0-9]*'])):
-            for f in glob.glob(s+'/xml/*.xml'):
-                 id=os.path.splitext(os.path.basename(f))[0]
-                 if os.stat(f).st_mtime < now - 1 * 86400: ## at least 1 day old
-                     if os.path.isfile(f):
-                        if (id in deleted_metadata ):
-                            logging.debug('file %s is already on deleted_metadata' % f)
-                        else:
-                           deleted_metadata[id] = f
+        # clean up current subset and write ids to remove to delete file
+        for df in os.listdir(subsetdir+'/'+ outtypedir):
+            df=os.path.join(subsetdir+'/'+ outtypedir,df)
+            id=os.path.splitext(os.path.basename(df))[0]
+            jf=os.path.join(subsetdir+'/json/',id+'.json')
+            print('File %s' % df)
+            if os.stat(df).st_mtime < start - 1 * 86400:
+                os.remove(df)
+                os.remove(jf)
+                delete_ids.append(id)
+                print('File to delete %s' % jf)
 
-        if (len(deleted_metadata) > 0): ##HEW and self.pstat['status']['d'] == 'tbd':
-                ## delete all files in deleted_metadata and write the subset
-                ## and the uid in '<outdir>/delete/<community>-<mdprefix>':
-                stats['totdcount']=len(deleted_metadata)
-                logging.info('    | %d files were not updated and will be deleted:' % (len(deleted_metadata)))
-                
-                # path to the file with all deleted uids:
-                delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
-                file_content = ''
-                
-                if(os.path.isfile(delete_file)):
-                    try:
-                        f = open(delete_file, 'r')
-                        file_content = f.readlines()
-                        f.close()
-                    except IOError :
-                        logging.critical("Cannot read data from '{0}'".format(delete_file))
-                        f.close
-                elif (not os.path.exists(self.base_outdir+'/delete')):
-                    os.makedirs(self.base_outdir+'/delete')    
-
-                delete_mode=False
-                  # add all deleted metadata to the file, subset in the 1. column and id in the 2. column:
-                logging.info("   | List of id's to delete written to {0}.".format(delete_file))                
-                if delete_mode == True :
-                    logging.info("   |  and related xml and json files are removed")
-                else:
-                    logging.info("   |  but related are not removed yet") 
-                for uid in deleted_metadata:
-                    if delete_mode == True :
-                        logging.info('    | d | %-4d | %-45s |' % (stats['totdcount'],uid))
-                    
-                        xmlfile = deleted_metadata[uid]
-                        dsubset = os.path.dirname(xmlfile).split('/')[-2]
-                        jsonfile = '/'.join(xmlfile.split('/')[0:-2])+'/json/'+uid+'.json'
-                
-                        # remove xml file:
-                        try: 
-                            os.remove(xmlfile)
-                        except OSError :
-                            logging.error("Cannot remove xml file")
-                            stats['totecount'] +=1
-                        
-                        # remove json file:
-                        if (os.path.exists(jsonfile)):
-                            try: 
-                                os.remove(jsonfile)
-                            except OSError :
-                                logging.error("    [ERROR] Cannot remove json file: %s" % (e))
-                                stats['totecount'] +=1
-
-                    # append uid to delete file, if not already exists:
-                    if uid+'\n' not in file_content:
-                         with open(delete_file, 'a') as file:
-                           file.write(uid+'\n')
+        # path to the file with all deleted uids:
+        delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
+        if len(delete_ids) > 0 :
+            with open(delete_file, 'a') as file:
+                for id in delete_ids :
+                    file.write(id+'\n')
 
         # add all subset stats to total stats and reset the temporal subset stats:
         for key in ['tcount', 'ecount', 'count', 'dcount']:
@@ -759,9 +713,10 @@ class HARVESTER(object):
         
         # add subset directory to the convert_list:
         subsetpath='/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set)])
-        self.OUT.print_convert_list(
-            req['community'], req['url'], req['mdprefix'], subsetpath, self.fromdate
-        )
+        if (not self.fromdate == None):
+            self.OUT.print_convert_list(
+                req['community'], req['url'], req['mdprefix'], subsetpath, self.fromdate
+                )
 
         nextsetpath='/'.join([self.base_outdir,req['community']+'-'+req['mdprefix'],subset+'_'+str(count_set+1)])
 
@@ -3847,8 +3802,7 @@ class OUTPUT(object):
         # --------------
         # None
         
-        if (fromdate == None):
-           self.convert_list = 'convert_list_total'
+        self.convert_list = 'convert_list_total'
         ##HEW-D else:
         ##HEW-D    self.convert_list = './convert_list_' + fromdate
         new_entry = '%s\t%s\t%s\t%s\t%s\n' % (community,source,os.path.dirname(dir),mdprefix,os.path.basename(dir))
