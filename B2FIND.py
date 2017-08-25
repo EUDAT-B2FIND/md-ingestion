@@ -754,10 +754,11 @@ class MAPPER(object):
     results = MP.map(community,mdprefix,path)
     """
 
-    def __init__ (self, OUT, base_outdir):
+    def __init__ (self, OUT, base_outdir,fromdate):
         ##HEW-D logging = logging.getLogger()
         self.base_outdir = base_outdir
         self.OUT = OUT
+        self.fromdate = fromdate
         self.logger = logging.getLogger('root')
         # Read in B2FIND metadata schema and fields
         schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
@@ -1945,11 +1946,25 @@ class MAPPER(object):
         self.logger.info('\t|- Input path:\t%s' % cmpath)
         subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
         totcount=0 # total counter of processed files
+        subsettag=re.compile(r'_\d+')
         # loop over all available subdirs
         for subdir in sorted(subdirs) :
             if mdsubset and not subdir.startswith(mdsubset) :
-                self.logger.debug('Subdirectory %s does not match %s - no processing required' % (subdir,mdsubset))
+                self.logger.warning('\t |- Subdirectory %s does not match %s - no processing required' % (subdir,mdsubset))
                 continue
+            elif self.fromdate :
+                datematch = re.search(r'\d{4}-\d{2}-\d{2}$', subdir[:-2])
+                if datematch :
+                    subdirdate = datetime.datetime.strptime(datematch.group(), '%Y-%m-%d').date()
+                    fromdate = datetime.datetime.strptime(self.fromdate, '%Y-%m-%d').date()
+                    if (fromdate > subdirdate) :
+                        self.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,self.fromdate))
+                        continue
+                    else :
+                        self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
+                else:
+                    self.logger.warning('\t |- Subdirectory %s does not contain a timestamp %%Y-%%m-%%d  - no processing required' % subdir)
+                    continue    
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)

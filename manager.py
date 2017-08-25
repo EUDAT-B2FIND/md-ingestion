@@ -219,7 +219,7 @@ def process(options,pstat,OUT):
     ## MAPPINING - Mode:  
     if (pstat['status']['m'] == 'tbd'):
         logger.info('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = B2FIND.MAPPER(OUT,options.outdir)
+        MP = B2FIND.MAPPER(OUT,options.outdir,options.fromdate)
         process_map(MP,reqlist)
 
     ## VALIDATOR - Mode:
