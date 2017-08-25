@@ -2749,12 +2749,13 @@ class UPLOADER(object):
         print ('Upload of record failed'
     """
     
-    def __init__(self, CKAN, OUT, base_outdir):
+    def __init__(self, CKAN, OUT, base_outdir, fromdate):
         ##HEW-D logging = logging.getLogger()
         self.CKAN = CKAN
         self.OUT = OUT
         self.logger = logging.getLogger('root')        
         self.base_outdir = base_outdir
+        self.fromdate = fromdate
         self.package_list = dict()
 
         # Read in B2FIND metadata schema and fields
