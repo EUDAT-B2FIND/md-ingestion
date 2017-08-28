@@ -664,12 +664,14 @@ class HARVESTER(object):
             jf=os.path.join(subsetdir+'/json/',id+'.json')
             print('File %s' % df)
             if os.stat(df).st_mtime < start - 1 * 86400:
+                print('File to delete %s' % df)
                 os.remove(df)
-                os.remove(jf)
-                delete_ids.append(id)
                 print('File to delete %s' % jf)
+                if os.path.exists(jf) : os.remove(jf)
+                delete_ids.append(id)
+                print('Id %s added to delet_ids' % id)
 
-        # path to the file with all deleted uids:
+        # path to the file with all ids to delete:
         delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
         if len(delete_ids) > 0 :
             with open(delete_file, 'a') as file:
@@ -3111,15 +3113,33 @@ class UPLOADER(object):
             "state" : 'deleted'
         }
    
+        jsondatadel = {
+            "id" : dsname
+        }
+   
+        print('dsstatus %s' % dsstatus)
+
         # if the dataset exists set it to status deleted in CKAN:
         if (not dsstatus == 'new'):
             self.logger.debug('\t - Try to set dataset %s on status deleted' % dsname)
+            print('222 dsstatus %s' % dsstatus)
             
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 1
             else:
                 self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
+            self.logger.debug('\t - Try to delete dataset %s ' % dsname)
+            
+            results = self.CKAN.action('package_delete',jsondatadel)
+            if (results and results['success']):
+                rvalue = 1
+                print('rvalue %s' % rvalue)
+            else:
+                print('\t - Deletion failed. Maybe dataset already removed.')
+                self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
+
+            
         
         return rvalue
     

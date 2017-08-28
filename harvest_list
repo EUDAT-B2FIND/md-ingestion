@@ -571,7 +571,7 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE Training instance
-b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc trng_
+##HEW-T b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc trng_
 ##%%% EUDAT B2SHARE
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml c4234f93-da96-4d2f-a2c8-fa83d0775212 # Aalto
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 99916f6f-9a2c-4feb-a342-6552ac7f1529 # BBMRI

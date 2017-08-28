@@ -421,10 +421,17 @@ def process_upload(UP, rlist):
 
         logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
         
-        if (last_community != community and options.ckan_check == 'True'):
+        if (last_community != community) :
             last_community = community
-            UP.get_packages(community)
-        
+            if options.ckan_check == 'True' :
+                UP.get_packages(community)
+            delete_file = '/'.join([UP.base_outdir,'delete',community+'-'+mdprefix+'.del'])
+            if os.path.exists(delete_file) :
+                with open (delete_file,'r') as df :
+                    for id in df.readlines() :
+                        print 'id %s' % id
+                        UP.delete(id,'to_delete')
+
         uploadstart = time.time()
 
         # community-mdschema root path
