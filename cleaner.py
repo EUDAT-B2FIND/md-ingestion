@@ -204,7 +204,7 @@ def main():
             sys.exit(-1)
 
         CKAN = CKAN_CLIENT(options.host,options.auth)
-        UP = UPLOADER(CKAN, OUT)
+        UP = UPLOADER(CKAN, OUT, options.outdir,options.fromdate)
 
     if (options.identifier):
              list = [ options.identifier ]

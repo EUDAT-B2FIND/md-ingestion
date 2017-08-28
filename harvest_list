@@ -41,7 +41,8 @@ norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords 
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc PROF_APPL_SCIENCE 
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc
 ## JADDS
-jadds http://134.94.32.229:8080/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=cams1_ps  WCS wcs  cams1_ps
+jadds http://134.94.32.229:8080/rasdaman/ows csw wcs cams1_ps
+##HEW-Djadds http://134.94.32.229:8080/rasdaman/ows?&SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=cams1_ps  WCS wcs  cams1_ps
 ## SEANOE
 seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
 # EISCAT
@@ -572,7 +573,7 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 ##%%% GBIF EML : MD Provider is GBIF 11090 datasets  
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE Training instance
-b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc trng_
+##HEW-T b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc trng_
 ##%%% EUDAT B2SHARE
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml c4234f93-da96-4d2f-a2c8-fa83d0775212 # Aalto
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml 99916f6f-9a2c-4feb-a342-6552ac7f1529 # BBMRI

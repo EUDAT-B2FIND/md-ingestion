@@ -160,7 +160,7 @@ Subject: %s
 
     try:
         smtpObj = smtplib.SMTP('localhost')
-        smtpObj.sendmail('widmann@dkrz.de', ['widmann@dkrz.de'], msgtxt)         
+        smtpObj.sendmail('widmann@dkrz.de', ['widmann@dkrz.de','martens@dkrz.de','thiemann@dkrz.de'], msgtxt)         
         print "Successfully sent email"
     except SMTPException:
         print "Error: unable to send email"
