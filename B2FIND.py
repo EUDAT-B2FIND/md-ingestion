@@ -374,20 +374,6 @@ class HARVESTER(object):
         count_set = 1
         start=time.time()
 
-        setMap={
-            "c4234f93-da96-4d2f-a2c8-fa83d0775212" : "Aalto",
-            "99916f6f-9a2c-4feb-a342-6552ac7f1529" : "BBMRI",
-            "0afede87-2bf2-4d89-867e-d2ee57251c62" : "CLARIN",
-            "94a9567e-2fba-4677-8fde-a8b68bdb63e8" : "DRIHM",
-            "b344f92a-cd0e-4e4c-aa09-28b5f95f7e41" : "EISCAT",
-            "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095" : "EUDAT",
-            "893fad89-dc4a-4f1b-a9ba-4240aa18e12b" : "EUON",
-            "4ba7c0fd-1435-4313-9c13-4d888d60321a" : "GBIF",
-            "d952913c-451e-4b5c-817e-d578dc8a4469" : "LTER",
-            "867c4e67-9227-4b6f-8595-c97d37e9de61" : "NRM",
-            "8d963a29-5e19-492b-8cfe-97da4f54fad2" : "RDA",
-            }
-
         # set subset:
         mdsubset=req["mdsubset"]
         if (not mdsubset):
@@ -398,10 +384,12 @@ class HARVESTER(object):
         elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
             subset = mdsubset[:-2]
         else:
-            if req["community"] == "b2share" and mdsubset in setMap :
-                    subset = setMap[mdsubset]
-            else:
-               subset = mdsubset
+            subset = mdsubset
+            if req["community"] == "b2share":
+                setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
+                with open(setMapFile) as sm :    
+                    setMap = json.load(sm)
+                    mdsubset = setMap[mdsubset]
             
         if (self.fromdate):
             subset = subset + '_f' + self.fromdate
@@ -639,7 +627,6 @@ class HARVESTER(object):
                     for df in os.listdir(subsetdir+'/'+ outtypedir):
                         if os.stat(df).st_mtime < start - 1 * 86400:
                             os.remove(df)
-                            print('File to delete %s' % df)
 
                     subsetdir = self.save_subset(req, stats, subset, count_set)
                     if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
@@ -662,14 +649,14 @@ class HARVESTER(object):
             df=os.path.join(subsetdir+'/'+ outtypedir,df)
             id=os.path.splitext(os.path.basename(df))[0]
             jf=os.path.join(subsetdir+'/json/',id+'.json')
-            print('File %s' % df)
             if os.stat(df).st_mtime < start - 1 * 86400:
-                print('File to delete %s' % df)
                 os.remove(df)
-                print('File to delete %s' % jf)
-                if os.path.exists(jf) : os.remove(jf)
+                logging.warning('File %s is deleted' % df)
+                if os.path.exists(jf) : 
+                    os.remove(jf)
+                    logging.warning('File %s is deleted' % jf)
                 delete_ids.append(id)
-                print('Id %s added to delet_ids' % id)
+                logging.warning('Append Id %s to list delete_ids' % id)
 
         # path to the file with all ids to delete:
         delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])

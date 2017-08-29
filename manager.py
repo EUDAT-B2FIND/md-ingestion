@@ -273,7 +273,7 @@ def process_harvest(HV, rlist):
     for request in rlist:
         ir+=1
         harveststart = time.time()
-        print ('   |# %-4d : %-30s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',time.strftime("%H:%M:%S")))
+        print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,HV.fromdate,'Started',time.strftime("%H:%M:%S")))
         results = HV.harvest(request)
     
         if (results == -1):
@@ -432,6 +432,8 @@ def process_upload(UP, rlist):
                         print 'id %s' % id
                         UP.delete(id,'to_delete')
 
+
+        ##HEW-D-Test sys.exit(0)
         uploadstart = time.time()
 
         # community-mdschema root path
