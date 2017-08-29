@@ -225,7 +225,7 @@ def process(options,pstat,OUT):
     ## VALIDATOR - Mode:
     if (pstat['status']['v'] == 'tbd'):
         logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = B2FIND.MAPPER(OUT,options.outdir)
+        MP = B2FIND.MAPPER(OUT,options.outdir,options.fromdate)
         process_validate(MP,reqlist)
 
     ## OAI-CONVERTING - Mode:  

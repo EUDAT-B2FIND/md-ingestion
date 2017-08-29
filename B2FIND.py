@@ -2291,8 +2291,21 @@ class MAPPER(object):
         fcount=0
         for subdir in sorted(subdirs) :
             if mdsubset and not subdir.startswith(mdsubset) :
-                self.logger.debug('Subdirectory %s is not processed' % subdir)
+                self.logger.warning('\t |- Subdirectory %s does not match %s - no processing required' % (subdir,mdsubset))
                 continue
+            elif self.fromdate :
+                datematch = re.search(r'\d{4}-\d{2}-\d{2}$', subdir[:-2])
+                if datematch :
+                    subdirdate = datetime.datetime.strptime(datematch.group(), '%Y-%m-%d').date()
+                    fromdate = datetime.datetime.strptime(self.fromdate, '%Y-%m-%d').date()
+                    if (fromdate > subdirdate) :
+                        self.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,self.fromdate))
+                        continue
+                    else :
+                        self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
+                else:
+                    self.logger.warning('\t |- Subdirectory %s does not contain a timestamp %%Y-%%m-%%d  - no processing required' % subdir)
+                    continue    
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)
@@ -2306,9 +2319,12 @@ class MAPPER(object):
                 self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!' % (inpath))
                 return results
     
-            # find all .json files in path/json:
+            # find all .json files in inpath/json:
             files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath)))
             results['tcount'] = len(files)
+
+            # sum of all .json files of all sub dirs
+            results['count'] += results['tcount'] 
         
             self.logger.info(' %s Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],inpath))
             if results['tcount'] == 0 :
@@ -2433,8 +2449,6 @@ class MAPPER(object):
 
         logging.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
-        # count ... all .json files in path/json
-        results['count'] = len(list(filter(lambda x: x.endswith('.json'), os.listdir(inpath))))
 
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
