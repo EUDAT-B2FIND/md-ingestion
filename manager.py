@@ -41,7 +41,6 @@ import copy
 import logging
 logger = logging.getLogger()
 import traceback
-import hashlib
 import codecs
 import pprint
 
@@ -238,7 +237,23 @@ def process(options,pstat,OUT):
         logger.info('\n|- Uploading started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         # create CKAN object                       
         CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
-        UP = B2FIND.UPLOADER(CKAN,OUT,options.outdir,options.fromdate)
+        # create credentials and handle client if required
+        if (options.handle_check):
+          try:
+              pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
+              cred = PIDClientCredentials.load_from_JSON('credentials_11098')
+          except Exception as err:
+              logger.critical("%s : Could not create credentials from credstore %s" % (err,options.handle_check))
+              ##p.print_help()
+              sys.exit(-1)
+          else:
+              logger.debug("Create EUDATHandleClient instance")
+              HandleClient = EUDATHandleClient.instantiate_with_credentials(cred)
+        else:
+            cred=None
+            HandleClient=None
+
+        UP = B2FIND.UPLOADER(CKAN,options.ckan_check,HandleClient,cred,OUT,options.outdir,options.fromdate,options.iphost)
         logger.info(' |- Host:  \t%s' % CKAN.ip_host )
         # start the process uploading:
         process_upload(UP, reqlist)
@@ -349,56 +364,19 @@ def process_validate(MP, rlist):
         
 def process_upload(UP, rlist):
 
-    # create credentials and handle client if required
-    if (options.handle_check):
-          try:
-              pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
-              cred = PIDClientCredentials.load_from_JSON('credentials_11098')
-          except Exception as err:
-              logger.critical("%s : Could not create credentials from credstore %s" % (err,options.handle_check))
-              ##p.print_help()
-              sys.exit(-1)
-          else:
-              logger.debug("Create EUDATHandleClient instance")
-              client = EUDATHandleClient.instantiate_with_credentials(cred)
-
     CKAN = UP.CKAN
     last_community = ''
     package_list = dict()
 
     ir=0
-    mdschemas={
-        "ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd",
-        "oai_ddi" : "http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd",
-        "marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
-        "iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
-        "iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
-        "inspire" : "http://inspire.ec.europa.eu/theme/ef",        
-        "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
-        "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
-        "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
-        "json" : "http://json-schema.org/latest/json-schema-core.html",
-        "fgdc" : "No specification for fgdc available",
-        "hdcp2" : "No specification for hdcp2 available"
-        }
-
     for request in rlist:
         ir+=1
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         community=request[0]
-        source=request[1]
         mdprefix = request[3]
         mdsubset=request[4]   if len(request)>4 else None
         ## dir = dir+'/'+subset
         
-        results = {
-            'count':0,
-            'ecount':0,
-            'ncount':0,
-            'tcount':0,
-            'time':0
-        }
-
         try:
             ckangroup=CKAN.action('group_list') ## ,{"id":community})
             if community not in ckangroup['result'] :
@@ -407,19 +385,7 @@ def process_upload(UP, rlist):
         except Exception :
             logging.critical("Can not list CKAN groups")
   
-        if len(request) > 4 and request[4] :
-            m = re.search(r'_\d+$', request[4]) # check if subset ends with '_' + digit
-            if m is not None:
-                subset=request[4]
-            elif request[4].endswith('_'):
-                subset=request[4]+'1'
-            else:
-                subset=request[4]+'_1'
-        else:
-            subset='SET_1'
 
-        logger.info('    |   | %-4s | %-40s |\n    |%s|' % ('#','id',"-" * 53))
-        
         if (last_community != community) :
             last_community = community
             if options.ckan_check == 'True' :
@@ -428,282 +394,27 @@ def process_upload(UP, rlist):
             if os.path.exists(delete_file) :
                 with open (delete_file,'r') as df :
                     for id in df.readlines() :
-                        print 'id %s' % id
                         UP.delete(id,'to_delete')
 
 
         ##HEW-D-Test sys.exit(0)
+
         uploadstart = time.time()
 
-        # community-mdschema root path
-        cmpath='%s/%s-%s/' % (UP.base_outdir,community,mdprefix)
-        UP.logger.info('\t|- Input path:\t%s' % cmpath)
-        subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
-        # loop over all available subdirs
-        fcount=0
-        for subdir in sorted(subdirs) :
-            if mdsubset and not subdir.startswith(mdsubset) :
-                UP.logger.debug('Subdirectory %s is not processed' % subdir)
-                continue
-            elif UP.fromdate :
-                datematch = re.search(r'\d{4}-\d{2}-\d{2}$', subdir[:-2])
-                if datematch :
-                    subdirdate = datetime.datetime.strptime(datematch.group(), '%Y-%m-%d').date()
-                    fromdate = datetime.datetime.strptime(UP.fromdate, '%Y-%m-%d').date()
-                    if (fromdate > subdirdate) :
-                        UP.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,UP.fromdate))
-                        continue
-                    else :
-                        UP.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,UP.fromdate))
-                else:
-                    UP.logger.warning('\t |- Subdirectory %s does not contain a timestamp %%Y-%%m-%%d  - no processing required' % subdir)
-                    continue    
-            else:
-                print('\t |- Subdirectory %s is processed' % subdir)
-                UP.logger.debug('Processing of subdirectory %s' % subdir)
+
+        cstart = time.time()
         
-            # check input path
-            inpath='%s/%s/%s' % (cmpath,subdir,'json')
-            if not os.path.exists(inpath):
-                UP.logger.critical('Can not access directory %s' % inpath)
-                return results     
+        results = UP.upload(request)
 
-
-        
-            files = [x for x in os.listdir(inpath) if x.endswith('.json')]
-            results['tcount'] = len(files)
-        
-            scount = 0
-            fcount = 0
-            oldperc = 0
-            for filename in files:
-                ## counter and progress bar
-                fcount+=1
-                if (fcount<scount): continue
-                perc=int(fcount*100/int(len(files)))
-                bartags=int(perc/5)
-                if perc%10 == 0 and perc != oldperc :
-                    oldperc=perc
-                    print ("\t[%-20s] %d / %d%%\r" % ('='*bartags, fcount, perc ))
-                    sys.stdout.flush()
-
-                jsondata = dict()
-                datasetRecord = dict()
-                pathfname= inpath+'/'+filename
-                if ( os.path.getsize(pathfname) > 0 ):
-                    with open(pathfname, 'r') as f:
-                        try:
-                            jsondata=json.loads(f.read(),encoding = 'utf-8')
-                        except:
-                            logger.error('    | [ERROR] Cannot load the json file %s' % pathfname)
-                            results['ecount'] += 1
-                            continue
-                else:
-                    results['ecount'] += 1
-                    continue
-
-                # get dataset id (CKAN name) from filename (a uuid generated identifier):
-                ds_id = os.path.splitext(filename)[0]
-                logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
-
-                # get OAI identifier from json data extra field 'oai_identifier':
-                if 'oai_identifier' not in jsondata :
-                    jsondata['oai_identifier'] = [ds_id]
-
-                oai_id = jsondata['oai_identifier'][0]
-                logger.debug("        |-> identifier: %s\n" % (oai_id))
-            
-                ### CHECK JSON DATA for upload
-                jsondata=UP.check(jsondata)
-                if jsondata == None :
-                    logger.critical('File %s failed check and will not been uploaded' % filename)
-                    continue
-
-                #  generate get record request for field MetaDataAccess:
-                if (mdprefix == 'json'):
-                    reqpre = source + '/dataset/'
-                    mdaccess = reqpre + oai_id
-                else:
-                    reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
-                    mdaccess = reqpre + '&identifier=' + oai_id
-                    ##HEW-MV2mapping!!! : urlcheck=UP.check_url(mdaccess)
-                index1 = mdaccess
-
-                # exceptions for some communities:
-                if (community == 'clarin' and oai_id.startswith('mi_')):
-                    mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
-                elif (community == 'sdl'):
-                    mdaccess =reqpre+'&identifier=oai::record/'+oai_id
-                elif (community == 'b2share'):
-                    if subset.startswith('trng') :
-                        mdaccess ='https://trng-b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-                    else:
-                        mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-
-                if UP.check_url(mdaccess) == False :
-                    logging.error('URL %s is broken' % (mdaccess))
-                else:
-                    jsondata['MetaDataAccess']=mdaccess
-
-                jsondata['group']=community
-                ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
-                jsondata=UP.json2ckan(jsondata)
-
-                # Set the tag ManagerVersion:
-                jsondata['extras'].append({
-                     "key" : "ManagerVersion",
-                     "value" : ManagerVersion
-                    })
-                datasetRecord["JMDVERSION"]=ManagerVersion
-                datasetRecord["B2FINDHOST"]=options.iphost
-
-                logger.debug(' JSON dump\n%s' % json.dumps(jsondata, sort_keys=True))
-
-                # determine checksum of json record and append
-                try:
-                    encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
-                    checksum=hashlib.md5(json.dumps(jsondata, sort_keys=True).encode('latin1')).hexdigest()
-                except UnicodeEncodeError as err :
-                    logger.critical(' %s during md checksum determination' % err)
-                    checksum=None
-                else:
-                    logger.debug('Checksum of JSON record %s' % checksum)
-                    jsondata['version'] = checksum
-                    datasetRecord["CHECKSUM"]=checksum            
-
-                ### check status of dataset (unknown/new/changed/unchanged)
-                dsstatus="unknown"
-
-                # check against handle server
-                handlestatus="unknown"
-                pidRecord=dict()
-                ckands='http://'+options.iphost+'/dataset/'+ds_id
-                datasetRecord["B2FINDHOST"]=options.iphost
-                datasetRecord["IS_METADATA"]='true'
-                datasetRecord["MD_STATUS"]="B2FIND_REGISTERED"
-                datasetRecord["URL"]=ckands
-                datasetRecord["MD_SCHEMA"]=mdschemas[mdprefix]
-                datasetRecord["COMMUNITY"]=community
-                datasetRecord["SUBSET"]=subset
-
-                if (options.handle_check):
-
-                    try:
-                        pid = cred.get_prefix() + '/eudat-jmd_' + ds_id 
-                        rec = client.retrieve_handle_record_json(pid)
-                    except Exception as err :
-                        logger.error("%s in client.retrieve_handle_record_json(%s)" % (err,pid))
-                    else:
-                        logger.debug("Retrieved PID %s" % pid )
-
-                    chargs={}
-                    if rec : ## Handle exists
-                        for pidAttr in pidAttrs :##HEW-D ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
-                            try:
-                                pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
-                            except Exception:
-                                logger.critical("%s in client.get_value_from_handle(%s)" % (err,pidAttr) )
-                            else:
-                                logger.debug("Got value %s from attribute %s sucessfully" % (pidRecord[pidAttr],pidAttr))
-
-                            if ( pidRecord[pidAttr] == datasetRecord[pidAttr] ) :
-                                chmsg="-- not changed --"
-                                if pidAttr == 'CHECKSUM' :
-                                    handlestatus="unchanged"
-                                logger.info(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
-                            else:
-                                chmsg=datasetRecord[pidAttr]
-                                handlestatus="changed"
-                                chargs[pidAttr]=datasetRecord[pidAttr] 
-                                logger.info(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
-                    else:
-                        handlestatus="new"
-                    dsstatus=handlestatus
-
-                    if handlestatus == "unchanged" : # no action required :-) !
-                        logger.warning(' No action required :-) - next record')
-                        results['ncount']+=1
-                        continue
-                    elif handlestatus == "changed" : # update dataset !
-                        logger.warning(' Update handle and dataset !')
-                    else : # create new handle !
-                        logger.warning(' Create handle and dataset !')
-                        chargs=datasetRecord 
-
-                # check against CKAN database
-                ckanstatus = 'unknown'                  
-                if (options.ckan_check == 'True'):
-                    ckanstatus=UP.check_dataset(ds_id,checksum)
-                    if (dsstatus == 'unknown'):
-                        dsstatus = ckanstatus
-
-                upload = 0
-                # depending on status of handle upload record to B2FIND 
-                logger.debug('        |-> Dataset is [%s]' % (dsstatus))
-                if ( dsstatus == "unchanged") : # no action required
-                    logger.warning('        |-> %s' % ('No update required'))
-                else:
-                    try:
-                        upload = UP.upload(ds_id,dsstatus,community,jsondata)
-                    except Exception as err :
-                        logger.critical("[CRITICAL : %s] in call of UP.upload" % err )
-                    else:
-                        logger.debug(" Upload of %s returns with upload code %s" % (ds_id,upload))
-
-                    if (upload == 1):
-                        logger.warning('        |-> Successful creation of %s record' % dsstatus )
-                    elif (upload == 2):
-                        logger.warning('        |-> Successful update of %s record succeed' % dsstatus )
-                        upload=1
-                    elif (upload == -1):
-                        logger.warning('        |-> Failed creation of %s record' % dsstatus )
-                        upload=1
-                    elif (upload == -2):
-                        logger.warning('        |-> Failed update of %s record %s' % (dsstatus, ds_id))
-                        upload=1
-                    else:
-                        logger.critical('       |-> Failed upload of %s record %s' % (dsstatus, ds_id))
-                        results['ecount'] += 1
-                # update PID in handle server                           
-                if (options.handle_check):
-                    if (handlestatus == "unchanged"):
-                        logging.warning("        |-> No action required for %s" % pid)
-                    else:
-                        if (upload >= 1): # new or changed record
-                            if (handlestatus == "new"): # Create new PID
-                                logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
-                                try:
-                                    npid = client.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
-                                except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
-                                    logger.critical("%s in client.register_handle" % err )
-                                    sys.exit()
-                                else:
-                                    logger.debug("New handle %s with checksum %s created" % (pid,datasetRecord["CHECKSUM"]))
-
-                            ## Modify all changed handle attributes
-                            if chargs :
-                                try:
-                                    client.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
-                                    logging.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
-
-                                except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                                    logger.critical("%s in client.modify_handle_value of %s in %s" % (err,chargs,pid))
-                                else:
-                                    logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
-
-                results['count'] +=  upload
-            
-        uploadtime=time.time()-uploadstart
-        results['time'] = uploadtime
-        print ('   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | No action | Failed |\n\t| %8d | %6d |  %8d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
-                    results['tcount'],
-                    results['count'],
-                    results['ncount'],
-                    results['ecount']
-               ))
+        ctime=time.time()-cstart
+        results['time'] = ctime
         
         # save stats:
-        UP.OUT.save_stats(community+'-'+mdprefix,subset,'u',results)
+        if len(request) > 4:
+            UP.OUT.save_stats(request[0]+'-'+request[3],request[4],'u',results)
+        else:
+            UP.OUT.save_stats(request[0]+'-'+request[3],'SET_1','u',results)
+        
 
 def process_oaiconvert(MP, rlist):
 
@@ -719,7 +430,7 @@ def process_oaiconvert(MP, rlist):
         results['time'] = rctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
+        MP.OUT.save_stats(request[0]+'-'+ request[3],request[4],'o',results)
 
 
 def process_delete(OUT, dir, options):
