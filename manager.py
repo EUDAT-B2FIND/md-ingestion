@@ -348,7 +348,6 @@ def process_validate(MP, rlist):
             MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
 def process_upload(UP, rlist):
-    ##HEW-D-ec credentials,ec = None,None
 
     # create credentials and handle client if required
     if (options.handle_check):
@@ -721,7 +720,6 @@ def process_oaiconvert(MP, rlist):
         
         # save stats:
         MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'o',results)
-
 
 
 def process_delete(OUT, dir, options):

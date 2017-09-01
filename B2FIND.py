@@ -491,8 +491,6 @@ class HARVESTER(object):
             return -1
 
         self.logger.debug(' | %-4s | %-25s | %-25s |' % ('#','OAI Identifier','DS Identifier'))
-        ##HEW-T        sys.exit(-1)
-
         start2=time.time()
 
         if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
@@ -501,8 +499,8 @@ class HARVESTER(object):
         delete_ids=list()
         # loop over records
         for record in records :
-            stats['tcount'] += 1
             ## counter and progress bar
+            stats['tcount'] += 1
             fcount+=1
             if fcount <= noffs : continue
             if ntotrecs > 0 :
@@ -620,13 +618,25 @@ class HARVESTER(object):
                     continue
 
             # Need a new subset?
-            if (stats['count'] == count_break):
-                    logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
+            if (stats['count'] == count_break) or (fcount == ntotrecs):
+                    print('       | %d records written to subset directory %s ' % (stats['count'], subsetdir))
 
                     # clean up current subset and write ids to remove to delete file
                     for df in os.listdir(subsetdir+'/'+ outtypedir):
+                        df=os.path.join(subsetdir+'/'+ outtypedir,df)
+                        id=os.path.splitext(os.path.basename(df))[0]
+                        jf=os.path.join(subsetdir+'/json/',id+'.json')
                         if os.stat(df).st_mtime < start - 1 * 86400:
                             os.remove(df)
+                            logging.warning('File %s is deleted' % df)
+                            if os.path.exists(jf) : 
+                                os.remove(jf)
+                                logging.warning('File %s is deleted' % jf)
+                            delete_ids.append(id)
+                            logging.warning('Append Id %s to list delete_ids' % id)
+                            stats['dcount']+=1
+
+                    print('       | %d records deleted from subset directory %s ' % (stats['dcount'], subsetdir))
 
                     subsetdir = self.save_subset(req, stats, subset, count_set)
                     if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
@@ -643,20 +653,6 @@ class HARVESTER(object):
                         stats['timestart'] = time.time()
                 
                     logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
-
-        # clean up current subset and write ids to remove to delete file
-        for df in os.listdir(subsetdir+'/'+ outtypedir):
-            df=os.path.join(subsetdir+'/'+ outtypedir,df)
-            id=os.path.splitext(os.path.basename(df))[0]
-            jf=os.path.join(subsetdir+'/json/',id+'.json')
-            if os.stat(df).st_mtime < start - 1 * 86400:
-                os.remove(df)
-                logging.warning('File %s is deleted' % df)
-                if os.path.exists(jf) : 
-                    os.remove(jf)
-                    logging.warning('File %s is deleted' % jf)
-                delete_ids.append(id)
-                logging.warning('Append Id %s to list delete_ids' % id)
 
         # path to the file with all ids to delete:
         delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
@@ -677,8 +673,8 @@ class HARVESTER(object):
                 ))
 
         # save the last subset:
-        if (stats['count'] > 0):
-                lastsubset = self.save_subset(req, stats, subset, count_set)
+        ##HEW-D if (stats['count'] > 0):
+        ##HEW-D         lastsubset = self.save_subset(req, stats, subset, count_set)
             
     def save_subset(self, req, stats, subset, count_set):
         # Save stats per subset and add subset item to the convert_list via OUT.print_convert_list()
