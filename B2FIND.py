@@ -2310,11 +2310,11 @@ class MAPPER(object):
             inpath='%s/%s/%s' % (cmpath,subdir,'json')
             if not os.path.exists(inpath):
                 self.logger.critical('Can not access directory %s' % inpath)
-                return results     
+                continue     
             elif not os.path.exists(inpath) or not os.listdir(inpath):
-                self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!' % (inpath))
-                return results
-    
+                self.logger.critical('The directory %s does not exist or no json files to validate are found!' % (inpath))
+                continue
+
             # find all .json files in inpath/json:
             files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath)))
             results['tcount'] = len(files)
