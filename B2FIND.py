@@ -621,13 +621,14 @@ class HARVESTER(object):
                     stats['ecount']+=1
                     continue
 
-            # Need a new subset?
+            # Next or last subset?
             if (stats['count'] == count_break) or (fcount == ntotrecs):
                     print('       | %d records written to subset directory %s ' % (stats['count'], subsetdir))
 
                     # clean up current subset and write ids to remove to delete file
                     for df in os.listdir(subsetdir+'/'+ outtypedir):
                         df=os.path.join(subsetdir+'/'+ outtypedir,df)
+                        logging.debug('File to delete : %s' % df)
                         id=os.path.splitext(os.path.basename(df))[0]
                         jf=os.path.join(subsetdir+'/json/',id+'.json')
                         if os.stat(df).st_mtime < start - 1 * 86400:
@@ -642,11 +643,12 @@ class HARVESTER(object):
 
                     print('       | %d records deleted from subset directory %s ' % (stats['dcount'], subsetdir))
 
-                    subsetdir = self.save_subset(req, stats, subset, count_set)
-                    if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
-                        os.makedirs(subsetdir+'/' + outtypedir)
+                    if not fcount == ntotrecs : # next subset neded
+                        subsetdir = self.save_subset(req, stats, subset, count_set)
+                        if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
+                            os.makedirs(subsetdir+'/' + outtypedir)
 
-                    count_set += 1
+                        count_set += 1
                                                         
                     # add all subset stats to total stats and reset the temporal subset stats:
                     for key in ['tcount', 'ecount', 'count', 'dcount']:
@@ -3200,13 +3202,13 @@ class UPLOADER(object):
                     dsstatus=handlestatus
 
                     if handlestatus == "unchanged" : # no action required :-) !
-                        self.logger.warning(' No action required :-) - next record')
+                        self.logger.warning('No action required :-) - next record')
                         results['ncount']+=1
                         continue
                     elif handlestatus == "changed" : # update dataset !
-                        self.logger.warning(' Update handle and dataset !')
+                        self.logger.warning('Update handle and dataset !')
                     else : # create new handle !
-                        self.logger.warning(' Create handle and dataset !')
+                        self.logger.warning('Create handle and dataset !')
                         chargs=datasetRecord 
 
                 # check against CKAN database
@@ -3224,17 +3226,19 @@ class UPLOADER(object):
             
                     res = self.CKAN.action('package_create',jsondata)
                     if (res and res['success']):
+                        self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id)) 
                         results['count']+=1
                         upload = 1
                     else:
                         self.logger.debug('\t - Creation failed. Try to update instead.')
                         res = self.CKAN.action('package_update',jsondata)
                         if (res and res['success']):
+                            self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
                             results['count']+=1
                             upload = 1
                         else:
-                            self.logger.debug('\t - Update of new record failed.')
-                            results['count']+=1
+                            self.logger.warning('\t|- Failed to update %s dataset %s' % (dsstatus,ds_id))
+                            results['ecount']+=1
         
                 # if the dsstatus is 'changed' then update it with package_update:
                 elif (dsstatus == 'changed'):
@@ -3242,16 +3246,19 @@ class UPLOADER(object):
             
                     res = self.CKAN.action('package_update',jsondata)
                     if (res and res['success']):
+                        self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
                         results['count']+=1
                         upload = 1
                     else:
                         self.logger.warning('\t - Update failed. Try to create instead.')
                         res = self.CKAN.action('package_create',jsondata)
                         if (res and res['success']):
+                            self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id)) 
                             results['count']+=1
                             upload = 1
                         else:
-                            self.logger.debug('\t - Creation of changed record failed.')
+                            self.logger.warning('\t|- Failed to create %s dataset %s' % (dsstatus,ds_id))
+
 
                 # update PID in handle server                           
                 if (self.cred): ##HEW-D??? options.handle_check):
@@ -3264,10 +3271,11 @@ class UPLOADER(object):
                                 try:
                                     npid = self.HandleClient.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
                                 except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
+                                    logger.warning("Registration failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
                                     logger.critical("%s in HandleClient.register_handle" % err )
                                     sys.exit()
                                 else:
-                                    logger.debug("New handle %s with checksum %s created" % (pid,datasetRecord["CHECKSUM"]))
+                                    logger.warning("Successful registration of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
 
                             ## Modify all changed handle attributes
                             if chargs :
@@ -3276,8 +3284,11 @@ class UPLOADER(object):
                                     self.logger.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
 
                                 except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                                    logger.warning("Change failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+
                                     self.logger.critical("%s in HandleClient.modify_handle_value of %s in %s" % (err,chargs,pid))
                                 else:
+                                    logger.warning("Successful change of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
                                     self.logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
             
         uploadtime=time.time()-start
