@@ -60,6 +60,7 @@ hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hd
 pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
 ## GFZ
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
+gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
 ## GFZ sub communities
 geofon http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
 geofon http://doidb.wdc-terra.org/oaip/oai  ListIdentifiers   iso19139  DOIDB.SEISNET

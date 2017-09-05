@@ -916,7 +916,7 @@ class MAPPER(object):
         else:
             return True
  
-    def map_identifiers(self, invalue):
+    def map_url(self, invalue):
         """
         Convert identifiers to data access links, i.e. to 'Source' (ds['url']) or 'PID','DOI' etc. pp
  
@@ -948,10 +948,10 @@ class MAPPER(object):
                 elif 'hdl:' in id:
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
-                elif 'http:' in id or 'https:' in id:
-                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
-                    if reurl :
-                        iddict['url'] = reurl.group("url")##[0]
+                ##HEW-D elif 'http:' in id or 'https:' in id:
+                ##HEW-D     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
+                ##HEW-D     if reurl :
+                ##HEW-D         iddict['url'] = reurl.group("url")##[0]
             
         except Exception as e :
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
@@ -2047,12 +2047,8 @@ class MAPPER(object):
                                     jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
                                 elif facet == 'tags':
                                     jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
-                                elif facet == 'DOI':
-                                    iddict = self.map_identifiers(jsondata[facet])
-                                    if 'DOI' in iddict :
-                                        jsondata[facet]=iddict['DOI']
                                 elif facet == 'url':
-                                    iddict = self.map_identifiers(jsondata[facet])
+                                    iddict = self.map_url(jsondata[facet])
 
                                     if 'DOI' in iddict :
                                         if not 'DOI' in jsondata :
@@ -2985,6 +2981,7 @@ class UPLOADER(object):
             "iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
             "inspire" : "http://inspire.ec.europa.eu/theme/ef",        
             "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+            "oai_datacite" : "http://schema.datacite.org/oai/oai-1.0/",
             "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
             "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
             "json" : "http://json-schema.org/latest/json-schema-core.html",
@@ -3132,8 +3129,8 @@ class UPLOADER(object):
                      "key" : "ManagerVersion",
                      "value" : '2.3.1' ##HEW-??? Gloaal Variable ManagerVersionManagerVersion
                     })
-                datasetRecord["JMDVERSION"]=ManagerVersion
-                datasetRecord["B2FINDHOST"]=self.iphost
+                datasetRecord["EUDAT/B2FINDVERSION"]=ManagerVersion
+                ### datasetRecord["B2FINDHOST"]=self.iphost
 
                 self.logger.debug(' JSON dump\n%s' % json.dumps(jsondata, sort_keys=True))
 
@@ -3155,21 +3152,26 @@ class UPLOADER(object):
                 # check against handle server
                 handlestatus="unknown"
                 pidRecord=dict()
+                b2findds='http://b2find.eudat.eu/dataset/'+ds_id
                 ckands='http://'+self.iphost+'/dataset/'+ds_id
-                datasetRecord["B2FINDHOST"]=self.iphost
-                datasetRecord["IS_METADATA"]='true'
-                datasetRecord["MD_STATUS"]="B2FIND_REGISTERED"
-                datasetRecord["URL"]=ckands
-                datasetRecord["MD_SCHEMA"]=mdschemas[mdprefix]
-                datasetRecord["COMMUNITY"]=community
-                datasetRecord["SUBSET"]=mdsubset
+                datasetRecord["URL"]=b2findds
+                datasetRecord["EUDAT/ROR"]=ckands
+                datasetRecord["EUDAT/PPID"]=''
+                datasetRecord["EUDAT/REPLICA"]=''
+                datasetRecord["EUDAT/METADATATYPE"]=mdschemas[mdprefix]
+                datasetRecord["EUDAT/B2FINDSTATUS"]="REGISTERED"
+                ### datasetRecord["MD_SCHEMA"]=mdschemas[mdprefix]
+                datasetRecord["EUDAT/B2FINDCOMMUNITY"]=community
+                datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
 
                 if (self.cred): ##HEW-D??? options.handle_check):
+                    pidAttrs=["URL","CHECKSUM","EUDAT/ROR","EUDAT/PPID","EUDAT/REPLICA","EUDAT/METADATATYPE","EUDAT/B2FINDSTATUS","EUDAT/B2FINDVERSION","EUDAT/B2FINDCOMMUNITY","EUDAT/B2FINDSUBSET"]
+                    ##HEW-D pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
                     try:
                         pid = self.cred.get_prefix() + '/eudat-jmd_' + ds_id 
                         rec = self.HandleClient.retrieve_handle_record_json(pid)
                     except Exception as err :
-                        self.logger.error("%s in client.retrieve_handle_record_json(%s)" % (err,pid))
+                        self.logger.error("%s in self.HandleClient.retrieve_handle_record_json(%s)" % (err,pid))
                     else:
                         self.logger.debug("Retrieved PID %s" % pid )
 
@@ -3177,9 +3179,9 @@ class UPLOADER(object):
                     if rec : ## Handle exists
                         for pidAttr in pidAttrs :##HEW-D ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
                             try:
-                                pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
-                            except Exception:
-                                self.logger.critical("%s in client.get_value_from_handle(%s)" % (err,pidAttr) )
+                                pidRecord[pidAttr] = self.HandleClient.get_value_from_handle(pid,pidAttr,rec)
+                            except Exception as err:
+                                self.logger.critical("%s in self.HandleClient.get_value_from_handle(%s)" % (err,pidAttr) )
                             else:
                                 self.logger.debug("Got value %s from attribute %s sucessfully" % (pidRecord[pidAttr],pidAttr))
 
@@ -3260,7 +3262,7 @@ class UPLOADER(object):
                             if (handlestatus == "new"): # Create new PID
                                 logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                                 try:
-                                    npid = HandleClient.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
+                                    npid = self.HandleClient.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
                                 except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
                                     logger.critical("%s in HandleClient.register_handle" % err )
                                     sys.exit()
@@ -3270,13 +3272,13 @@ class UPLOADER(object):
                             ## Modify all changed handle attributes
                             if chargs :
                                 try:
-                                    HandleClient.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
-                                    logging.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
+                                    self.HandleClient.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
+                                    self.logger.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
 
                                 except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                                    logger.critical("%s in HandleClient.modify_handle_value of %s in %s" % (err,chargs,pid))
+                                    self.logger.critical("%s in HandleClient.modify_handle_value of %s in %s" % (err,chargs,pid))
                                 else:
-                                    logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
+                                    self.logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
             
         uploadtime=time.time()-start
         results['time'] = uploadtime

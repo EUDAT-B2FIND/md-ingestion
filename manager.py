@@ -204,6 +204,8 @@ def process(options,pstat,OUT):
         logger.debug(' |- Joblist:  \t%s' % options.list)
         reqlist=parse_list_file(options)
 
+    logger.debug(' |- Requestlist:  \t%s' % reqlist)
+
     ## check job request (processing) options
     logger.debug('|- Command line options')
     for opt in procOptions :
@@ -240,7 +242,6 @@ def process(options,pstat,OUT):
         # create credentials and handle client if required
         if (options.handle_check):
           try:
-              pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
               cred = PIDClientCredentials.load_from_JSON('credentials_11098')
           except Exception as err:
               logger.critical("%s : Could not create credentials from credstore %s" % (err,options.handle_check))
@@ -594,25 +595,28 @@ def parse_list_file(options):
             continue
        
         # sort out lines that don't match given community
-        if((options.community != None) and ( not request.startswith(options.community))):
+        if((options.community != None) and (not request.split()[0] == options.community)):
             continue
 
+        reqarr=request.split()
         # sort out lines that don't match given mdprefix
         if (options.mdprefix != None):
-            if ( not request.split()[3] == options.mdprefix) :
+            if ( not reqarr[3] == options.mdprefix) :
               continue
 
         # sort out lines that don't match given subset
         if (options.mdsubset != None):
-            if len(request.split()) < 5 :
-                request+=' '+options.mdsubset
-            elif ( len(request.split()) > 4 and not request.split()[4] == options.mdsubset ) and (not ( options.mdsubset.endswith('*') and request.split()[4].startswith(options.mdsubset.translate(None, '*')))) :
+            if len(reqarr) < 5 :
+                requarr.append(options.mdsubset)
+            elif ( reqarr[4] == options.mdsubset.split('_')[0] ) :
+                reqarr[4] = options.mdsubset
+            elif not ( options.mdsubset.endswith('*') and reqarr[4].startswith(options.mdsubset.translate(None, '*'))) :
                 continue
                 
         if (options.target_mdschema != None):
-            request+=' '+options.target_mdschema  
+            requarr[5]=options.target_mdschema  
 
-        reqlist.append(request.split())
+        reqlist.append(reqarr)
         
     if len(reqlist) == 0:
         logging.critical(' No matching request found in %s\n\tfor options %s' % (filename,options) )
