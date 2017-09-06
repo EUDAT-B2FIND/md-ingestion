@@ -44,28 +44,6 @@ import traceback
 import codecs
 import pprint
 
-def setup_custom_logger(name,verbose):
-    log_format='%(levelname)s :  %(message)s'
-    log_level=logging.CRITICAL
-    log_format='[ %(levelname)s <%(module)s:%(funcName)s> @\t%(lineno)4s ] %(message)s'
-    if verbose == 1 :
-        log_level=logging.ERROR
-    elif  verbose == 2 :
-        log_level=logging.WARNING
-    elif verbose == 3 :
-        log_level=logging.INFO
-    elif verbose > 3 :
-        log_level=logging.DEBUG
-
-    formatter = logging.Formatter(fmt=log_format)
-
-    handler = logging.StreamHandler()
-    handler.setFormatter(formatter)
-
-    logger.setLevel(log_level)
-    logger.addHandler(handler)
-    return logger
-
 def main():
     global TimeStart
     TimeStart = time.time()
@@ -91,7 +69,7 @@ def main():
     OUT = B2FIND.OUTPUT(pstat,now,jid,options)
 
     ## logger
-    logger = setup_custom_logger('root',options.verbose)
+    logger = OUT.setup_custom_logger('root',options.verbose)
 
     ## logger = logging.getLogger('root')
     ##HEW-D logging.basicConfig(format=log_format, level=log_level) ### logging.DEBUG)

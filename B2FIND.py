@@ -3503,6 +3503,7 @@ class OUTPUT(object):
         self.pstat = pstat
         self.start_time = now
         self.jid = jid
+        ##HEW-?? self.logger = logger
         
         # create jobdir if it is necessary:
         if (options.jobdir):
@@ -3561,7 +3562,24 @@ class OUTPUT(object):
         self.logger = logging.getLogger('root')        
         self.table_code = ''
         self.details_code = ''
-    
+
+    def setup_custom_logger(self,name,verbose):
+            log_format='%(levelname)s :  %(message)s'
+            log_level=logging.CRITICAL
+            log_format='[ %(levelname)s <%(module)s:%(funcName)s> @\t%(lineno)4s ] %(message)s'
+            if verbose == 1 : log_level=logging.ERROR
+            elif  verbose == 2 : log_level=logging.WARNING
+            elif verbose == 3 : log_level=logging.INFO
+            elif verbose > 3 : log_level=logging.DEBUG
+
+            formatter = logging.Formatter(fmt=log_format)
+
+            handler = logging.StreamHandler()
+            handler.setFormatter(formatter)
+
+            self.logger.setLevel(log_level)
+            self.logger.addHandler(handler)
+            return self.logger
     
     def start_logger(self):
         ## start_logger (OUTPUT object) - method
@@ -3605,7 +3623,6 @@ class OUTPUT(object):
         
         logging = logger
 
-    
     def save_stats(self,request,subset,mode,stats):
         ## save_stats (OUT object, request, subset, mode, stats) - method
         # Saves the statistics of a process (harvesting, converting, oai-converting, mapping or uploading) per subset in <OUTPUT.stats>. 
