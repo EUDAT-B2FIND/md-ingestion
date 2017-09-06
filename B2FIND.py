@@ -3271,11 +3271,11 @@ class UPLOADER(object):
                                 try:
                                     npid = self.HandleClient.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
                                 except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
-                                    logger.warning("Registration failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
-                                    logger.critical("%s in HandleClient.register_handle" % err )
+                                    self.logger.warning("Registration failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+                                    self.logger.critical("%s in HandleClient.register_handle" % err )
                                     sys.exit()
                                 else:
-                                    logger.warning("Successful registration of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+                                    self.logger.warning("Successful registration of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
 
                             ## Modify all changed handle attributes
                             if chargs :
@@ -3284,11 +3284,11 @@ class UPLOADER(object):
                                     self.logger.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
 
                                 except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                                    logger.warning("Change failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+                                    self.logger.warning("Change failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
 
                                     self.logger.critical("%s in HandleClient.modify_handle_value of %s in %s" % (err,chargs,pid))
                                 else:
-                                    logger.warning("Successful change of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+                                    self.logger.warning("Successful change of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
                                     self.logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
             
         uploadtime=time.time()-start
