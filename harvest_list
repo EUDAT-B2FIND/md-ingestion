@@ -526,6 +526,40 @@ clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI779
 clarin  http://clarin.dk/oaiprovider ListIdentifiers cmdi ucph_
 # Viena Language resources #h=    ?= #DASISH = 14324
 clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
+## DA|RA
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc GESISDataArchive # 1 GESIS Data Archive 7103
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RKI # 10 RKI Robert Koch Institute #12
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ICPRS # ICPSR - Interuniversity Consortium for Political and Social Research # 27574
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc CSDA # 86 csda - Czech Social Science Data Archive #434
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc BIBB # 17 #220   
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc HSRC # 46 ???
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RWI # 35 ???#0
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc INDEPTH # 9 #86
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZPID # 4 #53
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc MannheimUniversityLibrary # 12 #81 
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc GESISDatorium # 33 #98
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc NEPS # 3 #44
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SOEP # 5 #40
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IQB # 77 
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DZA # 6
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RDC-BO # 8
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SHARE-ERIC # 37
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IHI # 105
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc CSES # 32
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZEW # 22
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DeutscheBundesbank # 21 #20
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc FDP-URU # 101
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DataReferenceGESIS # 20
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc EBDC # 13
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DIPF # 11
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SRDA # 128
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IWH # 130
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc UniLibHeidelberg # 19
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IOS # 78
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZBWJournalDataArchive # 118
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc BIFIE # 112
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DIE # 129
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZfKD # 114 # 
 ## CESSDA endpoints
 #HEW-T cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_ddi test
 #HEW-T cessda http://ddaonline.dda.dk/oai-pmh ListRecords  oai_dc test
