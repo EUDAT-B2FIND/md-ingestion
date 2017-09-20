@@ -385,13 +385,18 @@ class HARVESTER(object):
         elif mdsubset.endswith('_'): # no OAI subsets, but different OAI-URLs for same community
             subset = mdsubset[:-1]
             mdsubset=None
-        elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
+        elif len(mdsubset) > 2 and mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
             subset = mdsubset[:-2]
         else:
             subset = mdsubset
             if req["community"] == "b2share":
                 setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
                 with open(setMapFile) as sm :    
+                    setMap = json.load(sm)
+                    mdsubset = setMap[mdsubset]
+            elif req["community"] == "dara" and req["url"] == "https://www.da-ra.de/oaip/oai" :
+                setMapFile= '%s/mapfiles/dara_mapset.json' % (os.getcwd())
+                with open(setMapFile) as sm :   
                     setMap = json.load(sm)
                     mdsubset = setMap[mdsubset]
             
@@ -466,6 +471,7 @@ class HARVESTER(object):
             except :
                 self.logger.error('iterate through iterable does not work ?')
 
+            print('NNNNN %d' % ntotrecs)
         # CSW2.0
         elif req["lverb"].startswith('csw'):
             outtypedir='xml'
@@ -2013,17 +2019,17 @@ class MAPPER(object):
                             self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s/%s' % (time.strftime("%H:%M:%S"),infformat,inpath,filename))
                             jsondata=self.jsonmdmapper(jsondata,maprules)
                         except Exception as e:
-                            logging.error('    | [ERROR] %s : during %s 2 json processing' % (infformat) )
+                            self.logger.error('    | [ERROR] %s : during %s 2 json processing' % (infformat) )
                             results['ecount'] += 1
                             continue
                     else:
                         try:
                             # Run Python XPATH converter
-                            logging.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+                            self.logger.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
                             jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
                             ##HEW-T print ('jsondata %s' % jsondata)
                         except Exception as e:
-                            logging.error('    | [ERROR] %s : during XPATH processing' % e )
+                            self.logger.error('    | [ERROR] %s : during XPATH processing' % e )
                             results['ecount'] += 1
                             continue
 
@@ -2102,8 +2108,8 @@ class MAPPER(object):
                                     if jsondata[facet]==['Not stated'] :
                                         jsondata[facet]=mdsubset
                             except Exception as err:
-                                logging.error('%s during mapping of field\t%s' % (err,facet))
-                                logging.debug('\t\tvalue%s' % (jsondata[facet]))
+                                self.logger.error('%s during mapping of field\t%s' % (err,facet))
+                                self.logger.debug('\t\tvalue%s' % (jsondata[facet]))
                                 continue
                         else: # B2FIND facet not in jsondata
                             if facet == 'title':
@@ -2156,7 +2162,7 @@ class MAPPER(object):
                     continue
 
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
-        ##HEW-D if (err is not None ): logging.error('[ERROR] ' + err)
+        ##HEW-D if (err is not None ): self.logger.error('[ERROR] ' + err)
 
         totcount+=results['count'] # total # of sucessfully processed files
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
@@ -2318,7 +2324,7 @@ class MAPPER(object):
         
             self.logger.info(' %s Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],inpath))
             if results['tcount'] == 0 :
-                logging.error(' ERROR : Found no files to validate !')
+                self.logger.error(' ERROR : Found no files to validate !')
                 return results
             self.logger.info('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
@@ -2360,7 +2366,7 @@ class MAPPER(object):
                         try:
                             jsondata=json.loads(f.read())
                         except:
-                            logging.error('    | [ERROR] Cannot load the json file %s' % inpath+'/'+filename)
+                            self.logger.error('    | [ERROR] Cannot load the json file %s' % inpath+'/'+filename)
                             results['ecount'] += 1
                             continue
                 else:
@@ -2437,7 +2443,7 @@ class MAPPER(object):
         f.write("\n")
         f.close
 
-        logging.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+        self.logger.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
 
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
@@ -2483,7 +2489,7 @@ class MAPPER(object):
 
 
                 else:
-                        logging.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
+                        self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
             
             return "\n".join(result_list)
@@ -3388,21 +3394,21 @@ class UPLOADER(object):
    
         # if the dataset exists set it to status deleted in CKAN:
         if (not dsstatus == 'new'):
-            self.logger.debug('\t - Try to set dataset %s on status deleted' % dsname)
+            self.logger.debug('\t - Try to set dataset %s on state "deleted"' % dsname)
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 1
+                self.logger.debug('\t - Successful update of state to "deleted" of dataset %s .' % dsname)
             else:
-                self.logger.debug('\t - Deletion failed. Could not set dataset to status deleted.')
+                self.logger.debug('\t - Failed update of state to "deleted" of dataset %s .' % dsname)
+
             self.logger.debug('\t - Try to delete dataset %s ' % dsname)
-            
             results = self.CKAN.action('package_delete',jsondatadel)
             if (results and results['success']):
                 rvalue = 1
-                print('rvalue %s' % rvalue)
+                self.logger.debug('\t - Succesful deletion of dataset %s.' % dsname)
             else:
-                print('\t - Deletion failed. Maybe dataset already removed.')
-                self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
+                self.logger.debug('\t - Failed deletion of dataset %s.' % dsname)
         
         return rvalue
     
