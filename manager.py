@@ -39,7 +39,6 @@ import simplejson as json
 import copy
 
 import logging
-logger = logging.getLogger()
 import traceback
 import codecs
 import pprint
@@ -69,6 +68,7 @@ def main():
     OUT = B2FIND.OUTPUT(pstat,now,jid,options)
 
     ## logger
+    global logger 
     logger = OUT.setup_custom_logger('root',options.verbose)
 
     ## logger = logging.getLogger('root')
@@ -591,9 +591,13 @@ def parse_list_file(options):
             elif not ( options.mdsubset.endswith('*') and reqarr[4].startswith(options.mdsubset.translate(None, '*'))) :
                 continue
                 
-        if (options.target_mdschema != None):
-            requarr[5]=options.target_mdschema  
+        if (options.target_mdschema != None and not options.target_mdschema.startswith('#')):
+            if len(reqarr) < 6 :
+                reqarr[5]=options.target_mdschema
+        if (reqarr[5].startswith('#')) :
+            del reqarr[5:]
 
+        logging.debug('Next request : %s' % reqarr)
         reqlist.append(reqarr)
         
     if len(reqlist) == 0:
