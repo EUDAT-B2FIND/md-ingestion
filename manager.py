@@ -594,7 +594,7 @@ def parse_list_file(options):
         if (options.target_mdschema != None and not options.target_mdschema.startswith('#')):
             if len(reqarr) < 6 :
                 reqarr[5]=options.target_mdschema
-        if (reqarr[5].startswith('#')) :
+        elif len(reqarr) > 5 and reqarr[5].startswith('#') :
             del reqarr[5:]
 
         logging.debug('Next request : %s' % reqarr)
