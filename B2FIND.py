@@ -471,7 +471,6 @@ class HARVESTER(object):
             except :
                 self.logger.error('iterate through iterable does not work ?')
 
-            print('NNNNN %d' % ntotrecs)
         # CSW2.0
         elif req["lverb"].startswith('csw'):
             outtypedir='xml'
