@@ -3242,7 +3242,7 @@ class UPLOADER(object):
                             results['count']+=1
                             upload = 1
                         else:
-                            self.logger.warning('\t|- Failed to update %s dataset %s' % (dsstatus,ds_id))
+                            self.logger.warning('\t|- Failed dataset update of %s id %s' % (dsstatus,ds_id))
                             results['ecount']+=1
         
                 # if the dsstatus is 'changed' then update it with package_update:
@@ -3262,7 +3262,7 @@ class UPLOADER(object):
                             results['count']+=1
                             upload = 1
                         else:
-                            self.logger.warning('\t|- Failed to create %s dataset %s' % (dsstatus,ds_id))
+                            self.logger.warning('\t|- Failed dataset creation of %s id %s' % (dsstatus,ds_id))
 
 
                 # update PID in handle server                           
