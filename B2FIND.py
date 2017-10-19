@@ -76,6 +76,7 @@ import iso639
 
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
+import hashlib
 ##HEW-D!!?? import ckanapi
 
 from string import Template
@@ -291,6 +292,9 @@ class HARVESTER(object):
         }
    
         # create dictionary with stats:
+        resKeys=['count','tcount','ecount','time']
+        results = dict.fromkeys(resKeys,0)
+
         stats = {
             "tottcount" : 0,    # total number of provided datasets
             "totcount"  : 0,    # total number of successful harvested datasets
@@ -381,13 +385,18 @@ class HARVESTER(object):
         elif mdsubset.endswith('_'): # no OAI subsets, but different OAI-URLs for same community
             subset = mdsubset[:-1]
             mdsubset=None
-        elif mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
+        elif len(mdsubset) > 2 and mdsubset[-1].isdigit() and  mdsubset[-2] == '_' :
             subset = mdsubset[:-2]
         else:
             subset = mdsubset
             if req["community"] == "b2share":
                 setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
                 with open(setMapFile) as sm :    
+                    setMap = json.load(sm)
+                    mdsubset = setMap[mdsubset]
+            elif req["community"] == "dara" and req["url"] == "https://www.da-ra.de/oaip/oai" :
+                setMapFile= '%s/mapfiles/dara_mapset.json' % (os.getcwd())
+                with open(setMapFile) as sm :   
                     setMap = json.load(sm)
                     mdsubset = setMap[mdsubset]
             
@@ -491,8 +500,6 @@ class HARVESTER(object):
             return -1
 
         self.logger.debug(' | %-4s | %-25s | %-25s |' % ('#','OAI Identifier','DS Identifier'))
-        ##HEW-T        sys.exit(-1)
-
         start2=time.time()
 
         if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
@@ -501,8 +508,8 @@ class HARVESTER(object):
         delete_ids=list()
         # loop over records
         for record in records :
-            stats['tcount'] += 1
             ## counter and progress bar
+            stats['tcount'] += 1
             fcount+=1
             if fcount <= noffs : continue
             if ntotrecs > 0 :
@@ -619,20 +626,34 @@ class HARVESTER(object):
                     stats['ecount']+=1
                     continue
 
-            # Need a new subset?
-            if (stats['count'] == count_break):
-                    logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
+            # Next or last subset?
+            if (stats['count'] == count_break) or (fcount == ntotrecs):
+                    print('       | %d records written to subset directory %s ' % (stats['count'], subsetdir))
 
                     # clean up current subset and write ids to remove to delete file
                     for df in os.listdir(subsetdir+'/'+ outtypedir):
+                        df=os.path.join(subsetdir+'/'+ outtypedir,df)
+                        logging.debug('File to delete : %s' % df)
+                        id=os.path.splitext(os.path.basename(df))[0]
+                        jf=os.path.join(subsetdir+'/json/',id+'.json')
                         if os.stat(df).st_mtime < start - 1 * 86400:
                             os.remove(df)
+                            logging.warning('File %s is deleted' % df)
+                            if os.path.exists(jf) : 
+                                os.remove(jf)
+                                logging.warning('File %s is deleted' % jf)
+                            delete_ids.append(id)
+                            logging.warning('Append Id %s to list delete_ids' % id)
+                            stats['dcount']+=1
 
-                    subsetdir = self.save_subset(req, stats, subset, count_set)
-                    if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
-                        os.makedirs(subsetdir+'/' + outtypedir)
+                    print('       | %d records deleted from subset directory %s ' % (stats['dcount'], subsetdir))
 
-                    count_set += 1
+                    if not fcount == ntotrecs : # next subset neded
+                        subsetdir = self.save_subset(req, stats, subset, count_set)
+                        if (not os.path.isdir(subsetdir+'/'+ outtypedir)):
+                            os.makedirs(subsetdir+'/' + outtypedir)
+
+                        count_set += 1
                                                         
                     # add all subset stats to total stats and reset the temporal subset stats:
                     for key in ['tcount', 'ecount', 'count', 'dcount']:
@@ -643,20 +664,6 @@ class HARVESTER(object):
                         stats['timestart'] = time.time()
                 
                     logging.debug('    | %d records written to subset directory %s (if not failed).'% (stats['count'], subsetdir))
-
-        # clean up current subset and write ids to remove to delete file
-        for df in os.listdir(subsetdir+'/'+ outtypedir):
-            df=os.path.join(subsetdir+'/'+ outtypedir,df)
-            id=os.path.splitext(os.path.basename(df))[0]
-            jf=os.path.join(subsetdir+'/json/',id+'.json')
-            if os.stat(df).st_mtime < start - 1 * 86400:
-                os.remove(df)
-                logging.warning('File %s is deleted' % df)
-                if os.path.exists(jf) : 
-                    os.remove(jf)
-                    logging.warning('File %s is deleted' % jf)
-                delete_ids.append(id)
-                logging.warning('Append Id %s to list delete_ids' % id)
 
         # path to the file with all ids to delete:
         delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
@@ -677,8 +684,8 @@ class HARVESTER(object):
                 ))
 
         # save the last subset:
-        if (stats['count'] > 0):
-                lastsubset = self.save_subset(req, stats, subset, count_set)
+        ##HEW-D if (stats['count'] > 0):
+        ##HEW-D         lastsubset = self.save_subset(req, stats, subset, count_set)
             
     def save_subset(self, req, stats, subset, count_set):
         # Save stats per subset and add subset item to the convert_list via OUT.print_convert_list()
@@ -916,7 +923,7 @@ class MAPPER(object):
         else:
             return True
  
-    def map_identifiers(self, invalue):
+    def map_url(self, invalue):
         """
         Convert identifiers to data access links, i.e. to 'Source' (ds['url']) or 'PID','DOI' etc. pp
  
@@ -948,10 +955,10 @@ class MAPPER(object):
                 elif 'hdl:' in id:
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
                 ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
-                elif 'http:' in id or 'https:' in id:
-                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
-                    if reurl :
-                        iddict['url'] = reurl.group("url")##[0]
+                ##HEW-D elif 'http:' in id or 'https:' in id:
+                ##HEW-D     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
+                ##HEW-D     if reurl :
+                ##HEW-D         iddict['url'] = reurl.group("url")##[0]
             
         except Exception as e :
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
@@ -1872,12 +1879,8 @@ class MAPPER(object):
         # --------------
         # 1. (dict)     results statistics
     
-        results = {
-            'count':0,
-            'tcount':0,
-            'ecount':0,
-            'time':0
-        }
+        resKeys=['count','tcount','ecount','time']
+        results = dict.fromkeys(resKeys,0)
         
         # set processing parameters
         community=request[0]
@@ -2015,17 +2018,17 @@ class MAPPER(object):
                             self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s/%s' % (time.strftime("%H:%M:%S"),infformat,inpath,filename))
                             jsondata=self.jsonmdmapper(jsondata,maprules)
                         except Exception as e:
-                            logging.error('    | [ERROR] %s : during %s 2 json processing' % (infformat) )
+                            self.logger.error('    | [ERROR] %s : during %s 2 json processing' % (infformat) )
                             results['ecount'] += 1
                             continue
                     else:
                         try:
                             # Run Python XPATH converter
-                            logging.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
+                            self.logger.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
                             jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
                             ##HEW-T print ('jsondata %s' % jsondata)
                         except Exception as e:
-                            logging.error('    | [ERROR] %s : during XPATH processing' % e )
+                            self.logger.error('    | [ERROR] %s : during XPATH processing' % e )
                             results['ecount'] += 1
                             continue
 
@@ -2051,12 +2054,8 @@ class MAPPER(object):
                                     jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
                                 elif facet == 'tags':
                                     jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
-                                elif facet == 'DOI':
-                                    iddict = self.map_identifiers(jsondata[facet])
-                                    if 'DOI' in iddict :
-                                        jsondata[facet]=iddict['DOI']
                                 elif facet == 'url':
-                                    iddict = self.map_identifiers(jsondata[facet])
+                                    iddict = self.map_url(jsondata[facet])
 
                                     if 'DOI' in iddict :
                                         if not 'DOI' in jsondata :
@@ -2108,8 +2107,8 @@ class MAPPER(object):
                                     if jsondata[facet]==['Not stated'] :
                                         jsondata[facet]=mdsubset
                             except Exception as err:
-                                logging.error('%s during mapping of field\t%s' % (err,facet))
-                                logging.debug('\t\tvalue%s' % (jsondata[facet]))
+                                self.logger.error('%s during mapping of field\t%s' % (err,facet))
+                                self.logger.debug('\t\tvalue%s' % (jsondata[facet]))
                                 continue
                         else: # B2FIND facet not in jsondata
                             if facet == 'title':
@@ -2162,7 +2161,7 @@ class MAPPER(object):
                     continue
 
         out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
-        ##HEW-D if (err is not None ): logging.error('[ERROR] ' + err)
+        ##HEW-D if (err is not None ): self.logger.error('[ERROR] ' + err)
 
         totcount+=results['count'] # total # of sucessfully processed files
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
@@ -2258,12 +2257,8 @@ class MAPPER(object):
     
         import collections
 
-        results = {
-            'count':0,
-            'tcount':0,
-            'ecount':0,
-            'time':0
-        }
+        resKeys=['count','tcount','ecount','time']
+        results = dict.fromkeys(resKeys,0)
         
         # set processing parameters
         community=request[0]
@@ -2314,11 +2309,11 @@ class MAPPER(object):
             inpath='%s/%s/%s' % (cmpath,subdir,'json')
             if not os.path.exists(inpath):
                 self.logger.critical('Can not access directory %s' % inpath)
-                return results     
+                continue     
             elif not os.path.exists(inpath) or not os.listdir(inpath):
-                self.logger.error('[ERROR] The directory "%s/json" does not exist or no json files to validate are found!' % (inpath))
-                return results
-    
+                self.logger.critical('The directory %s does not exist or no json files to validate are found!' % (inpath))
+                continue
+
             # find all .json files in inpath/json:
             files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath)))
             results['tcount'] = len(files)
@@ -2328,7 +2323,7 @@ class MAPPER(object):
         
             self.logger.info(' %s Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],inpath))
             if results['tcount'] == 0 :
-                logging.error(' ERROR : Found no files to validate !')
+                self.logger.error(' ERROR : Found no files to validate !')
                 return results
             self.logger.info('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
@@ -2370,7 +2365,7 @@ class MAPPER(object):
                         try:
                             jsondata=json.loads(f.read())
                         except:
-                            logging.error('    | [ERROR] Cannot load the json file %s' % inpath+'/'+filename)
+                            self.logger.error('    | [ERROR] Cannot load the json file %s' % inpath+'/'+filename)
                             results['ecount'] += 1
                             continue
                 else:
@@ -2447,7 +2442,7 @@ class MAPPER(object):
         f.write("\n")
         f.close
 
-        logging.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+        self.logger.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
 
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
@@ -2493,7 +2488,7 @@ class MAPPER(object):
 
 
                 else:
-                        logging.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
+                        self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
             
             return "\n".join(result_list)
@@ -2752,13 +2747,17 @@ class UPLOADER(object):
         print ('Upload of record failed'
     """
     
-    def __init__(self, CKAN, OUT, base_outdir, fromdate):
+    def __init__(self, CKAN, ckan_check, HandleClient,cred, OUT, base_outdir, fromdate, iphost):
         ##HEW-D logging = logging.getLogger()
         self.CKAN = CKAN
+        self.ckan_check = ckan_check
+        self.HandleClient = HandleClient
+        self.cred = cred
         self.OUT = OUT
         self.logger = logging.getLogger('root')        
         self.base_outdir = base_outdir
         self.fromdate = fromdate
+        self.iphost = iphost
         self.package_list = dict()
 
         # Read in B2FIND metadata schema and fields
@@ -2968,69 +2967,345 @@ class UPLOADER(object):
 
         return jsondata
 
-    def upload(self, ds, dsstatus, community, jsondata):
-        ## upload (UPLOADER object, dsname, dsstatus, community, jsondata) - method
-        # Uploads a dataset <jsondata> with name <dsname> as a member of <community> to CKAN. 
-        #   <dsstatus> describes the state of the package and is 'new', 'changed', 'unchanged' or 'unknown'.         #   In the case of a 'new' or 'unknown' package this method will call the API 'package_create' 
-        #   and in the case of a 'changed' package the API 'package_update'. 
-        #   Nothing happens if the state is 'unchanged'
-        #
-        # Parameters:
-        # -----------
-        # 1. (string)   dsname - Name of the dataset
-        # 2. (string)   dsstatus - Status of the dataset: can be 'new', 'changed', 'unchanged' or 'unknown'.
-        #                           See also .check_dataset()
-        # 3. (string)   dsname - A B2FIND community in CKAN
-        # 4. (dict)     jsondata - Metadata fields of the dataset in JSON format
-        #
-        # Return Values:
-        # --------------
-        # 1. (integer)  upload result:
-        #               0 - critical error occured
-        #               1 - no error occured, uploaded with 'package_create'
-        #               2 - no error occured, uploaded with 'package_update'
-    
-        rvalue = 0
-        
-        # add some general CKAN specific fields to dictionary:
-        jsondata["name"] = ds
-        jsondata["state"]='active'
-        jsondata["groups"]=[{ "name" : community }]
-        jsondata["owner_org"]="eudat"
-   
-        # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
-        if (dsstatus == 'new' or dsstatus == 'unknown') :
-            self.logger.debug('\t - Try to create dataset %s' % ds)
-            
-            results = self.CKAN.action('package_create',jsondata)
-            if (results and results['success']):
-                rvalue = 1
-            else:
-                self.logger.debug('\t - Creation failed. Try to update instead.')
-                results = self.CKAN.action('package_update',jsondata)
-                if (results and results['success']):
-                    rvalue = 2
+    def upload(self, request):
+        ## upload(UPLOADER object, request) - method
+        #  uploads a JSON dataset to a B2FIND instance (CKAN). 
+
+        results = collections.defaultdict(int)
+
+        # set processing parameters
+        community=request[0]
+        source=request[1]
+        mdprefix=request[3]
+        mdsubset=request[4]   if len(request)>4 else None
+        target_mdschema=request[8]   if len(request)>8 else None
+
+        mdschemas={
+            "ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd",
+            "oai_ddi" : "http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd",
+            "marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
+            "iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
+            "iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
+            "inspire" : "http://inspire.ec.europa.eu/theme/ef",        
+            "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+            "oai_datacite" : "http://schema.datacite.org/oai/oai-1.0/",
+            "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
+            "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
+            "json" : "http://json-schema.org/latest/json-schema-core.html",
+            "fgdc" : "No specification for fgdc available",
+            "hdcp2" : "No specification for hdcp2 settings"
+        }
+
+        # available of sub dirs and extention
+        insubdir='/json'
+        infformat='json'
+
+        # read target_mdschema (degfault : B2FIND_schema) and set mapfile
+        if (target_mdschema and not target_mdschema.startswith('#')):
+            print('target_mdschema %s' % target_mdschema)
+
+        # community-mdschema root path
+        cmpath='%s/%s-%s/' % (self.base_outdir,community,mdprefix)
+        self.logger.info('\t|- Input path:\t%s' % cmpath)
+        subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
+        fcount=0 # total counter of processed files
+        subsettag=re.compile(r'_\d+')
+
+        # loop over all available subdirs
+        for subdir in sorted(subdirs) :
+            if mdsubset and not subdir.startswith(mdsubset) :
+                self.logger.warning('\t |- Subdirectory %s does not match %s - no processing required' % (subdir,mdsubset))
+                continue
+            elif self.fromdate :
+                datematch = re.search(r'\d{4}-\d{2}-\d{2}$', subdir[:-2])
+                if datematch :
+                    subdirdate = datetime.datetime.strptime(datematch.group(), '%Y-%m-%d').date()
+                    fromdate = datetime.datetime.strptime(self.fromdate, '%Y-%m-%d').date()
+                    if (fromdate > subdirdate) :
+                        self.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,self.fromdate))
+                        continue
+                    else :
+                        self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
                 else:
-                    self.logger.debug('\t - Update of new record failed.')
-                    rvalue = -1
-        
-        # if the dsstatus is 'changed' then update it with package_update:
-        elif (dsstatus == 'changed'):
-            self.logger.debug('\t - Try to update dataset %s' % ds)
-            
-            results = self.CKAN.action('package_update',jsondata)
-            if (results and results['success']):
-                rvalue = 2
+                    self.logger.warning('\t |- Subdirectory %s does not contain a timestamp %%Y-%%m-%%d  - no processing required' % subdir)
+                    continue    
             else:
-                self.logger.warning('\t - Update failed. Try to create instead.')
-                results = self.CKAN.action('package_create',jsondata)
-                if (results and results['success']):
-                    rvalue = 1
+                print('\t |- Subdirectory %s is processed' % subdir)
+                self.logger.debug('Processing of subdirectory %s' % subdir)
+
+            # check input path
+            inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
+            if not os.path.exists(inpath):
+                self.logger.critical('Can not access directory %s' % inpath)
+                return results     
+
+            files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
+            results['tcount'] += len(list(files))
+            oldperc=0
+            err = None
+            self.logger.debug(' |- Processing of %s files in %s' % (infformat.upper(),inpath))
+       
+            ## start processing loop
+            start = time.time()
+            scount = 0
+            fcount=0 # counter per sub dir !
+            for filename in files:
+                ## counter and progress bar
+                fcount+=1
+                if (fcount<scount): continue
+                perc=int(fcount*100/int(len(list(files))))
+                bartags=int(perc/5)
+                if perc%10 == 0 and perc != oldperc:
+                    oldperc=perc
+                    print ("\r\t [%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                    sys.stdout.flush()
+                self.logger.debug('    | m | %-4d | %-45s |' % (fcount,filename))
+
+                jsondata = dict()
+                datasetRecord = dict()
+
+                pathfname= inpath+'/'+filename
+                if ( os.path.getsize(pathfname) > 0 ):
+                    with open(pathfname, 'r') as f:
+                        try:
+                            jsondata=json.loads(f.read(),encoding = 'utf-8')
+                        except:
+                            self.logger.error('    | [ERROR] Cannot load the json file %s' % pathfname)
+                            results['ecount'] += 1
+                            continue
                 else:
-                    self.logger.debug('\t - Creation of changed record failed.')
-                    rvalue = -2
-           
-        return rvalue
+                    results['ecount'] += 1
+                    continue
+
+                # get dataset id (CKAN name) from filename (a uuid generated identifier):
+                ds_id = os.path.splitext(filename)[0]
+                self.logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
+ 
+               # add some general CKAN specific fields to dictionary:
+                jsondata["name"] = ds_id
+                jsondata["state"]='active'
+                jsondata["groups"]=[{ "name" : community }]
+                jsondata["owner_org"]="eudat"
+
+                # get OAI identifier from json data extra field 'oai_identifier':
+                if 'oai_identifier' not in jsondata :
+                    jsondata['oai_identifier'] = [ds_id]
+
+                oai_id = jsondata['oai_identifier'][0]
+                self.logger.debug("        |-> identifier: %s\n" % (oai_id))
+            
+                ### CHECK JSON DATA for upload
+                jsondata=self.check(jsondata)
+                if jsondata == None :
+                    self.logger.critical('File %s failed check and will not been uploaded' % filename)
+                    continue
+
+                #  generate get record request for field MetaDataAccess:
+                if (mdprefix == 'json'):
+                    reqpre = source + '/dataset/'
+                    mdaccess = reqpre + oai_id
+                else:
+                    reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
+                    mdaccess = reqpre + '&identifier=' + oai_id
+                    ##HEW-MV2mapping!!! : urlcheck=self.check_url(mdaccess)
+                index1 = mdaccess
+
+                # exceptions for some communities:
+                if (community == 'clarin' and oai_id.startswith('mi_')):
+                    mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
+                elif (community == 'sdl'):
+                    mdaccess =reqpre+'&identifier=oai::record/'+oai_id
+                elif (community == 'b2share'):
+                    if mdsubset.startswith('trng') :
+                        mdaccess ='https://trng-b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
+                    else:
+                        mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
+
+                if self.check_url(mdaccess) == False :
+                    logging.error('URL %s is broken' % (mdaccess))
+                else:
+                    jsondata['MetaDataAccess']=mdaccess
+
+                jsondata['group']=community
+                ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
+                jsondata=self.json2ckan(jsondata)
+
+                # Set the tag ManagerVersion:
+                ManagerVersion = '2.3.1' ##HEW-??? Gloaal Variable ManagerVersion
+                jsondata['extras'].append({
+                     "key" : "ManagerVersion",
+                     "value" : '2.3.1' ##HEW-??? Gloaal Variable ManagerVersionManagerVersion
+                    })
+                datasetRecord["EUDAT/B2FINDVERSION"]=ManagerVersion
+                ### datasetRecord["B2FINDHOST"]=self.iphost
+
+                self.logger.debug(' JSON dump\n%s' % json.dumps(jsondata, sort_keys=True))
+
+                # determine checksum of json record and append
+                try:
+                    encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
+                    checksum=hashlib.md5(json.dumps(jsondata, sort_keys=True).encode('latin1')).hexdigest()
+                except UnicodeEncodeError as err :
+                    self.logger.critical(' %s during md checksum determination' % err)
+                    checksum=None
+                else:
+                    self.logger.debug('Checksum of JSON record %s' % checksum)
+                    jsondata['version'] = checksum
+                    datasetRecord["CHECKSUM"]=checksum            
+
+                ### check status of dataset (unknown/new/changed/unchanged)
+                dsstatus="unknown"
+
+                # check against handle server
+                handlestatus="unknown"
+                pidRecord=dict()
+                b2findds='http://b2find.eudat.eu/dataset/'+ds_id
+                ckands='http://'+self.iphost+'/dataset/'+ds_id
+                datasetRecord["URL"]=b2findds
+                datasetRecord["EUDAT/ROR"]=ckands
+                datasetRecord["EUDAT/PPID"]=''
+                datasetRecord["EUDAT/REPLICA"]=''
+                datasetRecord["EUDAT/METADATATYPE"]=mdschemas[mdprefix]
+                datasetRecord["EUDAT/B2FINDSTATUS"]="REGISTERED"
+                ### datasetRecord["MD_SCHEMA"]=mdschemas[mdprefix]
+                datasetRecord["EUDAT/B2FINDCOMMUNITY"]=community
+                datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
+
+                if (self.cred): ##HEW-D??? options.handle_check):
+                    pidAttrs=["URL","CHECKSUM","EUDAT/ROR","EUDAT/PPID","EUDAT/REPLICA","EUDAT/METADATATYPE","EUDAT/B2FINDSTATUS","EUDAT/B2FINDVERSION","EUDAT/B2FINDCOMMUNITY","EUDAT/B2FINDSUBSET"]
+                    ##HEW-D pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
+                    try:
+                        pid = self.cred.get_prefix() + '/eudat-jmd_' + ds_id 
+                        rec = self.HandleClient.retrieve_handle_record_json(pid)
+                    except Exception as err :
+                        self.logger.error("%s in self.HandleClient.retrieve_handle_record_json(%s)" % (err,pid))
+                    else:
+                        self.logger.debug("Retrieved PID %s" % pid )
+
+                    chargs={}
+                    if rec : ## Handle exists
+                        for pidAttr in pidAttrs :##HEW-D ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
+                            try:
+                                pidRecord[pidAttr] = self.HandleClient.get_value_from_handle(pid,pidAttr,rec)
+                            except Exception as err:
+                                self.logger.critical("%s in self.HandleClient.get_value_from_handle(%s)" % (err,pidAttr) )
+                            else:
+                                self.logger.debug("Got value %s from attribute %s sucessfully" % (pidRecord[pidAttr],pidAttr))
+
+                            if ( pidRecord[pidAttr] == datasetRecord[pidAttr] ) :
+                                chmsg="-- not changed --"
+                                if pidAttr == 'CHECKSUM' :
+                                    handlestatus="unchanged"
+                                self.logger.info(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
+                            else:
+                                chmsg=datasetRecord[pidAttr]
+                                handlestatus="changed"
+                                chargs[pidAttr]=datasetRecord[pidAttr] 
+                                self.logger.info(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
+                    else:
+                        handlestatus="new"
+                    dsstatus=handlestatus
+
+                    if handlestatus == "unchanged" : # no action required :-) !
+                        self.logger.warning('No action required :-) - next record')
+                        results['ncount']+=1
+                        continue
+                    elif handlestatus == "changed" : # update dataset !
+                        self.logger.warning('Update handle and dataset !')
+                    else : # create new handle !
+                        self.logger.warning('Create handle and dataset !')
+                        chargs=datasetRecord 
+
+                # check against CKAN database
+                ckanstatus = 'unknown'                  
+                if (self.ckan_check == 'True'):
+                    ckanstatus=self.check_dataset(ds_id,checksum)
+                    if (dsstatus == 'unknown'):
+                        dsstatus = ckanstatus
+
+                upload = 0
+
+                # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
+                if (dsstatus == 'new' or dsstatus == 'unknown') :
+                    self.logger.debug('\t - Try to create dataset %s' % ds_id)
+            
+                    res = self.CKAN.action('package_create',jsondata)
+                    if (res and res['success']):
+                        self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id)) 
+                        results['count']+=1
+                        upload = 1
+                    else:
+                        self.logger.debug('\t - Creation failed. Try to update instead.')
+                        res = self.CKAN.action('package_update',jsondata)
+                        if (res and res['success']):
+                            self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
+                            results['count']+=1
+                            upload = 1
+                        else:
+                            self.logger.warning('\t|- Failed dataset update of %s id %s' % (dsstatus,ds_id))
+                            results['ecount']+=1
+        
+                # if the dsstatus is 'changed' then update it with package_update:
+                elif (dsstatus == 'changed'):
+                    self.logger.debug('\t - Try to update dataset %s' % ds_id)
+            
+                    res = self.CKAN.action('package_update',jsondata)
+                    if (res and res['success']):
+                        self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
+                        results['count']+=1
+                        upload = 1
+                    else:
+                        self.logger.warning('\t - Update failed. Try to create instead.')
+                        res = self.CKAN.action('package_create',jsondata)
+                        if (res and res['success']):
+                            self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id)) 
+                            results['count']+=1
+                            upload = 1
+                        else:
+                            self.logger.warning('\t|- Failed dataset creation of %s id %s' % (dsstatus,ds_id))
+
+
+                # update PID in handle server                           
+                if (self.cred): ##HEW-D??? options.handle_check):
+                    if (handlestatus == "unchanged"):
+                        logging.warning("        |-> No action required for %s" % pid)
+                    else:
+                        if (upload >= 1): # new or changed record
+                            if (handlestatus == "new"): # Create new PID
+                                logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                                try:
+                                    npid = self.HandleClient.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
+                                except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
+                                    self.logger.warning("Registration failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+                                    self.logger.critical("%s in HandleClient.register_handle" % err )
+                                    sys.exit()
+                                else:
+                                    self.logger.warning("Successful registration of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+
+                            ## Modify all changed handle attributes
+                            if chargs :
+                                try:
+                                    self.HandleClient.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
+                                    self.logger.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
+
+                                except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
+                                    self.logger.warning("Change failed of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+
+                                    self.logger.critical("%s in HandleClient.modify_handle_value of %s in %s" % (err,chargs,pid))
+                                else:
+                                    self.logger.warning("Successful change of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
+                                    self.logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
+            
+        uploadtime=time.time()-start
+        results['time'] = uploadtime
+        print ('   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | No action | Failed |\n\t| %8d | %6d |  %8d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+                    results['tcount'],
+                    results['count'],
+                    results['ncount'],
+                    results['ecount']
+               ))
+
+        return results
 
     def bulk_upload(self, ds, dsstatus, community, jsondata):
         ## bulk_upload (UPLOADER object, dsname, dsstatus, community, jsondata) - method
@@ -3052,8 +3327,6 @@ class UPLOADER(object):
         #               1 - no error occured, uploaded with 'package_create'
         #               2 - no error occured, uploaded with 'package_update'
     
-        rvalue = 0
-        
         # add some CKAN specific fields to dictionary:
         jsondata["name"] = ds
         jsondata["state"]='active'
@@ -3118,29 +3391,23 @@ class UPLOADER(object):
             "id" : dsname
         }
    
-        print('dsstatus %s' % dsstatus)
-
         # if the dataset exists set it to status deleted in CKAN:
         if (not dsstatus == 'new'):
-            self.logger.debug('\t - Try to set dataset %s on status deleted' % dsname)
-            print('222 dsstatus %s' % dsstatus)
-            
+            self.logger.debug('\t - Try to set dataset %s on state "deleted"' % dsname)
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 1
+                self.logger.debug('\t - Successful update of state to "deleted" of dataset %s .' % dsname)
             else:
-                self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
+                self.logger.debug('\t - Failed update of state to "deleted" of dataset %s .' % dsname)
+
             self.logger.debug('\t - Try to delete dataset %s ' % dsname)
-            
             results = self.CKAN.action('package_delete',jsondatadel)
             if (results and results['success']):
                 rvalue = 1
-                print('rvalue %s' % rvalue)
+                self.logger.debug('\t - Succesful deletion of dataset %s.' % dsname)
             else:
-                print('\t - Deletion failed. Maybe dataset already removed.')
-                self.logger.debug('\t - Deletion failed. Maybe dataset already removed.')
-
-            
+                self.logger.debug('\t - Failed deletion of dataset %s.' % dsname)
         
         return rvalue
     
@@ -3241,6 +3508,7 @@ class OUTPUT(object):
         self.pstat = pstat
         self.start_time = now
         self.jid = jid
+        ##HEW-?? self.logger = logger
         
         # create jobdir if it is necessary:
         if (options.jobdir):
@@ -3299,7 +3567,24 @@ class OUTPUT(object):
         self.logger = logging.getLogger('root')        
         self.table_code = ''
         self.details_code = ''
-    
+
+    def setup_custom_logger(self,name,verbose):
+            log_format='%(levelname)s :  %(message)s'
+            log_level=logging.CRITICAL
+            log_format='[ %(levelname)s <%(module)s:%(funcName)s> @\t%(lineno)4s ] %(message)s'
+            if verbose == 1 : log_level=logging.ERROR
+            elif  verbose == 2 : log_level=logging.WARNING
+            elif verbose == 3 : log_level=logging.INFO
+            elif verbose > 3 : log_level=logging.DEBUG
+
+            formatter = logging.Formatter(fmt=log_format)
+
+            handler = logging.StreamHandler()
+            handler.setFormatter(formatter)
+
+            self.logger.setLevel(log_level)
+            self.logger.addHandler(handler)
+            return self.logger
     
     def start_logger(self):
         ## start_logger (OUTPUT object) - method
@@ -3343,7 +3628,6 @@ class OUTPUT(object):
         
         logging = logger
 
-    
     def save_stats(self,request,subset,mode,stats):
         ## save_stats (OUT object, request, subset, mode, stats) - method
         # Saves the statistics of a process (harvesting, converting, oai-converting, mapping or uploading) per subset in <OUTPUT.stats>. 

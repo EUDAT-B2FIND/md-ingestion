@@ -165,7 +165,9 @@ def main():
 
     global logger
     OUT = OUTPUT(pstat,now,jid,options)
-    logger = log.getLogger()
+    ##HEW-D logger = log.getLogger()
+    ## logger
+    logger = OUT.setup_custom_logger('root',options.verbose)
 
     # create credentials if required
     if (options.handle_check):
@@ -177,7 +179,10 @@ def main():
            sys.exit(-1)
        else:
            logger.debug("Create EUDATHandleClient instance")
-           client = EUDATHandleClient.instantiate_with_credentials(cred,HTTPS_verify=True)
+           HandleClient = EUDATHandleClient.instantiate_with_credentials(cred,HTTPS_verify=True)
+    else:
+        cred=None
+        HandleClient=None
 
     # checking given options:
     if (options.host):
@@ -204,8 +209,8 @@ def main():
             sys.exit(-1)
 
         CKAN = CKAN_CLIENT(options.host,options.auth)
-        UP = UPLOADER(CKAN, OUT, options.outdir,options.fromdate)
-
+        ## UP = UPLOADER(CKAN, OUT, options.outdir,options.fromdate)
+        UP = UPLOADER(CKAN,options.ckan_check,HandleClient,cred,OUT,options.outdir,options.fromdate,options.host)
     if (options.identifier):
              list = [ options.identifier ]
              listtext='given by option -i (%d id\'s)' % len(list) 
@@ -317,12 +322,12 @@ def main():
            handlestatus="unknown"
            pid = "11098/eudat-jmd_" + id.lower()
            try:
-               checksum2 = client.get_value_from_handle(pid,"CHECKSUM")
-               b2findversion = client.get_value_from_handle(pid,"JMDVERSION") 
+               checksum2 = HandleClient.get_value_from_handle(pid,"CHECKSUM")
+               b2findversion = HandleClient.get_value_from_handle(pid,"JMDVERSION") 
            except (HandleNotFoundException,HandleSyntaxError) as err :
-               logger.debug("[DEBUG : %s] in client.get_value of pid %s" % (err,pid))
+               logger.debug("[DEBUG : %s] in HandleClient.get_value of pid %s" % (err,pid))
            except Exception, err:
-               logger.critical("[CRITICAL : %s] in client.modify_handle_value of %s" % (err,pid))
+               logger.critical("[CRITICAL : %s] in HandleClient.modify_handle_value of %s" % (err,pid))
                sys.exit()
            else:
                logger.debug(" Get checksum %s from handle %s " % (checksum2,pid))
@@ -339,7 +344,7 @@ def main():
              actionreq+='\n\tUser %s removed PID %s%s %s removed' % (cred.get_username(),"/eudat-jmd_",id,qmsg)
              try:
                if (not options.quiet): ##HEW-ADD and ( b2findversion != '1.0'):
-                 client.delete_handle(pid)
+                 HandleClient.delete_handle(pid)
                  pcount+=1
                  handleaction='removed'
              except GenericHandleError as err:
