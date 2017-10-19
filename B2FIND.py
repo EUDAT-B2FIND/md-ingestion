@@ -954,11 +954,10 @@ class MAPPER(object):
                         iddict['PID'] = reurl.group("url")
                 elif 'hdl:' in id:
                     iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
-                ##  elif 'url' not in iddict: ##HEW!!?? bad performance --> and self.check_url(id) :
-                ##HEW-D elif 'http:' in id or 'https:' in id:
-                ##HEW-D     reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
-                ##HEW-D     if reurl :
-                ##HEW-D         iddict['url'] = reurl.group("url")##[0]
+                elif 'http:' in id or 'https:' in id:
+                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
+                    if reurl :
+                        iddict['url'] = reurl.group("url")##[0]
             
         except Exception as e :
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
@@ -1905,10 +1904,10 @@ class MAPPER(object):
             mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
 
         if not os.path.isfile(mapfile):
-            self.logger.error(' Can not access community specific mapfile %s ' % mapfile )
+            self.logger.critical(' Can not access community specific mapfile %s ' % mapfile )
             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
             if not os.path.isfile(mapfile):
-                self.logger.critical(' Can not access md schema specific mapfile %s ' % mapfile )
+                self.logger.critical(' ... nor md schema specific mapfile %s ' % mapfile )
                 return results
         print('\t|- Mapfile\t%s' % os.path.basename(mapfile))
         mf = codecs.open(mapfile, "r", "utf-8")
