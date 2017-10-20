@@ -77,8 +77,7 @@ import iso639
 # needed for UPLOADER and CKAN class:
 from collections import OrderedDict
 import hashlib
-##HEW-D!!?? import ckanapi
-
+from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError
 from string import Template
 
 class CKAN_CLIENT(object):
