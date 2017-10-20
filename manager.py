@@ -29,7 +29,7 @@ import B2FIND
 ##Py3???
 from b2handle.clientcredentials import PIDClientCredentials
 from b2handle.handleclient import EUDATHandleClient
-from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
+from b2handle.handleexceptions import GenericHandleError
 import os, optparse, sys, glob, re
 PY2 = sys.version_info[0] == 2
 
