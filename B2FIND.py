@@ -3265,7 +3265,7 @@ class UPLOADER(object):
 
 
                 # update PID in handle server                           
-                if (self.cred): ##HEW-D??? options.handle_check):
+                if (self.cred):
                     if (handlestatus == "unchanged"):
                         logging.warning("        |-> No action required for %s" % pid)
                     else:

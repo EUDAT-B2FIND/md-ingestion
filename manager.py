@@ -585,7 +585,7 @@ def parse_list_file(options):
         # sort out lines that don't match given subset
         if (options.mdsubset != None):
             if len(reqarr) < 5 :
-                requarr.append(options.mdsubset)
+                reqarr.append(options.mdsubset)
             elif ( reqarr[4] == options.mdsubset.split('_')[0] ) :
                 reqarr[4] = options.mdsubset
             elif not ( options.mdsubset.endswith('*') and reqarr[4].startswith(options.mdsubset.translate(None, '*'))) :
