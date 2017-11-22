@@ -11,6 +11,18 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##EPOS
+##epos http://epos-dcat????  ListRecords eposap dcat-ap_1
+epos https://trng-b2share.eudat.eu/api/oai2d  ListRecords marcxml EPOS 
+## SLKS
+### slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  lido
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  test
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  SAVE
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Objects
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Listed
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  KID
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Foto
 ## HZG
 hzg   http://????  ListRecords  iso19139 coastmap
 ## Aston university
@@ -18,7 +30,9 @@ aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D64
 ## RDA summerscool test OAI @CSC
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## ENVRIPLUS
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
+euro-argo http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
 envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
 envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 epos_1
@@ -52,6 +66,7 @@ ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 # eprints, Status = Published
 ## ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
 ## LTER (repository DEIMS)
+lter   https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc LTER # d952913c-451e-4b5c-817e-d578dc8a4469 ## LTER
 lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
 lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
 ## HDCP2
@@ -92,6 +107,7 @@ earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso
 ### new comm. IVOA or EURO-VO
 ##ivoa  http://registry.euro-vo.org/oai.jsp ListIdentifiers  oai_dc ivo_managed
 ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc 
+ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc test_1
 ################### here we go with the DASISH project --> ask Daan and Binyam for details !!!
 ##%%% DASISH ?? OAI-URL's taken from
 ##% - https://github.com/DASISH/jmd-scripts/harvest-config*
@@ -529,7 +545,7 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-
 ## DA|RA
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc GESISDataArchive # 1 GESIS Data Archive 7103
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RKI # 10 RKI Robert Koch Institute #12
-dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ICPRS # ICPSR - Interuniversity Consortium for Political and Social Research # 27574
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc ICPRS # ICPSR - Interuniversity Consortium for Political and Social Research # 27574
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc CSDA # 86 csda - Czech Social Science Data Archive #434
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc BIBB # 17 #220   
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc HSRC # 46 ???
