@@ -388,7 +388,7 @@ class HARVESTER(object):
             subset = mdsubset[:-2]
         else:
             subset = mdsubset
-            if req["community"] == "b2share":
+            if req["community"] == "b2share" or mdsubset == "LTER" or mdsubset == "EPOS" :
                 setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
                 with open(setMapFile) as sm :    
                     setMap = json.load(sm)
@@ -2991,6 +2991,7 @@ class UPLOADER(object):
             "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
             "json" : "http://json-schema.org/latest/json-schema-core.html",
             "fgdc" : "No specification for fgdc available",
+            "fbb" : "http://www.kulturarv.dk/fbb http://www.kulturarv.dk/fbb/fbb.xsd",
             "hdcp2" : "No specification for hdcp2 settings"
         }
 
