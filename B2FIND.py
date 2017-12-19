@@ -388,7 +388,7 @@ class HARVESTER(object):
             subset = mdsubset[:-2]
         else:
             subset = mdsubset
-            if req["community"] == "b2share" or mdsubset == "LTER" or mdsubset == "EPOS" :
+            if req["community"] == "b2share" or mdsubset == "LTER" or mdsubset == "EPOS" or mdsubset == "EISCAT" :
                 setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
                 with open(setMapFile) as sm :    
                     setMap = json.load(sm)
@@ -414,10 +414,11 @@ class HARVESTER(object):
         ntotrecs=0
         choffset=0
         chunklen=1000
+        pageno=1
         records=list()
 
         ## JSON-API
-        if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## ?publisher-id=dk.gbif'  :
+        if req["lverb"] == 'dataset' or req["lverb"] == 'works'  or req["lverb"] == 'records' : ## ?publisher-id=dk.gbif'  :
             GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
             outtypedir='hjson'
             outtypeext='json'
@@ -426,6 +427,11 @@ class HARVESTER(object):
             if mdsubset and req["lverb"] == 'works' :
                 haction='works?publisher-id='+mdsubset
                 dresultkey='data'
+            elif req["lverb"] == 'records' :
+                haction=req["lverb"]
+                if mdsubset :
+                    haction=req["lverb"]+'?q=community:b344f92a-cd0e-4e4c-aa09-28b5f95f7e41&size='+str(chunklen)+'&page='+str(pageno)
+                dresultkey='hits'
             else:
                 haction=req["lverb"]
                 dresultkey='results'
@@ -443,10 +449,20 @@ class HARVESTER(object):
                         choffset+=chunklen
                         chunk =oaireq(**{'action':haction,'offset':choffset,'chunklen':chunklen,'key':None})
                         self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
-                        ##HEW-Test break
+            elif req["lverb"] == 'records':
+                records.extend(chunk['hits']['hits'])
+                while('hits' in chunk and 'next' in chunk['links']):
+                    if 'hits' in chunk :
+                        records.extend(chunk['hits']['hits'])
+                    ##choffset+=chunklen
+                    pageno+=1
+                    chunk =oaireq(**{'action':haction,'page':pageno,'size':chunklen,'key':None})
+                    self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
+                    ###if 'hits' in chunk :
+                    ###    records.extend(chunk['hits']['hits'])
             else:
-                    if 'data' in chunk :
-                        records.extend(chunk['data'])
+                if 'data' in chunk :
+                    records.extend(chunk['data'])
                     
             ntotrecs=len(records)
 
@@ -492,7 +508,10 @@ class HARVESTER(object):
                 ntotrecs=len(records)
             except :
                 print ('iterate through iterable does not work ?')
-                
+        else:
+            self.logger.critical(' Not supported harvest type %s' %  req["lverb"])
+            sys.exit()
+
         print ("\t|- Retrieved %d records in %d sec - write %s files to disc" % (ntotrecs,time.time()-start,outtypeext.upper()) )
         if ntotrecs == 0 :
             self.logger.warning("\t|- Can not access any records to harvest")
@@ -521,7 +540,7 @@ class HARVESTER(object):
                     
             # Set oai_id and generate a uniquely identifier for this dataset:
             delete_flag=False
-            if req["lverb"] == 'dataset' or req["lverb"] == 'works' : ## Harvest via JSON-API
+            if req["lverb"] == 'dataset' or req["lverb"] == 'works' or req["lverb"] == 'records' : ## Harvest via JSON-API
                 if 'key' in record :
                     oai_id = record['key']
                 elif 'id' in record :
@@ -2925,11 +2944,16 @@ class UPLOADER(object):
     
         errmsg = ''
         
+        ## check ds name (must be lowercase, alphanumeric + ['_-']
+        if not re.match("^[a-z0-9_-]*$", jsondata['name']):
+            self.logger.critical("The dataset name '%s' must be lowercase and alphanumeric + ['_-']" % jsondata['name'])
+            jsondata['name']=jsondata['name'].lower()
+            self.logger.critical(" ... and is converted now to '%s'" % jsondata['name'])
         ## check mandatory fields ...
         mandFields=['title','oai_identifier']
         for field in mandFields :
             if field not in jsondata: ##  or jsondata[field] == ''):
-                self.logger.critical("The andatory field '%s' is missing" % field)
+                self.logger.critical("The mandatory field '%s' is missing" % field)
                 return None
 
         identFields=['DOI','PID','url']
@@ -2992,7 +3016,8 @@ class UPLOADER(object):
             "json" : "http://json-schema.org/latest/json-schema-core.html",
             "fgdc" : "No specification for fgdc available",
             "fbb" : "http://www.kulturarv.dk/fbb http://www.kulturarv.dk/fbb/fbb.xsd",
-            "hdcp2" : "No specification for hdcp2 settings"
+            "hdcp2" : "No specification for hdcp2 settings",
+            "eposap" : "http://www.epos-ip.org/terms.html"
         }
 
         # available of sub dirs and extention
@@ -3166,7 +3191,6 @@ class UPLOADER(object):
                 datasetRecord["EUDAT/REPLICA"]=''
                 datasetRecord["EUDAT/METADATATYPE"]=mdschemas[mdprefix]
                 datasetRecord["EUDAT/B2FINDSTATUS"]="REGISTERED"
-                ### datasetRecord["MD_SCHEMA"]=mdschemas[mdprefix]
                 datasetRecord["EUDAT/B2FINDCOMMUNITY"]=community
                 datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
 
