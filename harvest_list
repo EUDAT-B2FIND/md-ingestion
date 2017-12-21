@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##RADAR
+radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
 ##EPOS
 epos http://epos-dcat????  ListRecords eposap dcat-ap_1
 ##epos https://trng-b2share.eudat.eu/api/oai2d  ListRecords marcxml EPOS 
