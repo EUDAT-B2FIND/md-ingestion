@@ -5,12 +5,18 @@
 community=$1
 ##daysago=$2
 
-WORK='/home/dkrz/k204019/EUDAT-B2FIND/md-ingestion'
+if [[ $(hostname) == centos* ]]; 
+then
+    WORK="${HOME}/Projects/EUDAT/EUDAT-B2FIND/md-ingestion"
+else
+    WORK="${HOME}/EUDAT-B2FIND/md-ingestion"
+fi
+    
 TODAY=`date +\%F`
 NDAYSAGO="$2 days ago"
 YESTERDAY=`date -d "$NDAYSAGO" '+%Y-%m-%d'`
 cd $WORK
 set -x
-./manager.py -c $community -i eudat-b1.dkrz.de --handle_check=credentials_11098 --fromdate $YESTERDAY >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
+./manager.py -c $community -i eudat-b1.dkrz.de:8080 --handle_check=credentials_11098 --fromdate $YESTERDAY >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
 
 exit 0
