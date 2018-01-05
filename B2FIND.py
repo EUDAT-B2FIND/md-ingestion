@@ -1753,7 +1753,13 @@ class MAPPER(object):
                     continue
 
               # add value to JSON key
-              newds[field]=value
+              if field in newds:
+                  newds[field].extend(value)
+              else:
+                  newds[field]=value
+
+##HEW-T              if field == 'SpatialCoverage' :
+##HEW-T                  print('SpatialCoverage newds %s' % newds[field])
 
            except Exception as e:
                 logging.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
@@ -3426,7 +3432,8 @@ class UPLOADER(object):
                 self.logger.debug('\t - Failed update of state to "deleted" of dataset %s .' % dsname)
 
             self.logger.debug('\t - Try to delete dataset %s ' % dsname)
-            results = self.CKAN.action('package_delete',jsondatadel)
+##            results = self.CKAN.action('package_delete',jsondatadel)
+            results = self.CKAN.action('dataset_purge',jsondatadel)
             if (results and results['success']):
                 rvalue = 1
                 self.logger.debug('\t - Succesful deletion of dataset %s.' % dsname)
