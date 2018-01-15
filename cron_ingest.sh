@@ -18,6 +18,13 @@ else
     targethost=$3
 fi
 
+# handle generation only for productive host (currently eudat-b1*
+handlecheck=''
+if [[ $targethost == eudat-b1* ]]; 
+then
+    handlecheck='--handle_check=credentials_11098'
+fi
+
 # set work directory
 if [[ $(hostname) == centos* ]]; 
 then
@@ -31,6 +38,6 @@ NDAYSAGO="${daysago} days ago"
 YESTERDAY=`date -d "$NDAYSAGO" '+%Y-%m-%d'`
 cd $WORK
 set -x
-./manager.py -c $community -i $targethost --handle_check=credentials_11098 --fromdate $YESTERDAY >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
+./manager.py -c $community -i $targethost $handlecheck --fromdate $YESTERDAY >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
 
 exit 0
