@@ -48,6 +48,7 @@ PY2 = sys.version_info[0] == 2
 from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
 from owslib.csw import CatalogueServiceWeb
+from SPARQLWrapper import SPARQLWrapper, JSON
 from requests.exceptions import ConnectionError
 import uuid
 import lxml.etree as etree
@@ -494,7 +495,7 @@ class HARVESTER(object):
             maxrecords=1000
             try:
                 src = CatalogueServiceWeb(req['url'])
-                oaireq=getattr(src,'getrecords2') ## HEW-D ,req["lverb"], None)
+                oaireq=getattr(src,'getrecords2')
                 oaireq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
                 records=list(src.records.itervalues())
             except (HTTPError,ConnectionError) as err:
@@ -508,6 +509,44 @@ class HARVESTER(object):
                 ntotrecs=len(records)
             except :
                 print ('iterate through iterable does not work ?')
+        # SparQL
+        elif req["lverb"].startswith('Sparql'):
+            outtypedir='hjson'
+            outtypeext='json'
+            startposition=0
+            maxrecords=1000
+            try:
+                src = SPARQLWrapper(req['url'])
+                oaireq=getattr(src,'query','format') ##
+                statement='''
+prefix cpmeta: <http://meta.icos-cp.eu/ontologies/cpmeta/>
+prefix prov: <http://www.w3.org/ns/prov#>
+select (str(?submTime) as ?time) ?dobj ?spec ?dataLevel ?fileName ?submitterName where{
+  ?dobj cpmeta:hasObjectSpec [rdfs:label ?spec ; cpmeta:hasDataLevel ?dataLevel].
+  ?dobj cpmeta:hasName ?fileName .
+  ?dobj cpmeta:wasSubmittedBy ?submission .
+  ?submission prov:endedAtTime ?submTime .
+  ?submission prov:wasAssociatedWith [cpmeta:hasName ?submitterName].
+}
+order by desc(?submTime)
+limit 1000
+'''                            
+                src.setQuery(statement)
+                src.setReturnFormat(JSON)
+                records = oaireq().convert()['results']['bindings']
+            except (HTTPError,ConnectionError) as err:
+                self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
+                return -1
+            except (ImportError,CannotDisseminateFormat,Exception) as err:
+                self.logger.critical("%s during harvest request %s\n" % (err,req))
+                return -1
+            
+            try:
+                ntotrecs=len(records)
+            except :
+                print ('iterate through iterable does not work ?')
+
+
         else:
             self.logger.critical(' Not supported harvest type %s' %  req["lverb"])
             sys.exit()
@@ -566,7 +605,9 @@ class HARVESTER(object):
                     continue
                 else:
                     oai_id = record.header.identifier
-                
+            elif req["lverb"].startswith('Sparql'):
+                oai_id=record['fileName']['value']
+    
             # generate a uniquely identifier and a filename for this dataset:
             uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
             outfile = '%s/%s/%s.%s' % (subsetdir,outtypedir,os.path.basename(uid),outtypeext)
@@ -2491,7 +2532,6 @@ class MAPPER(object):
         if json_obj_type is dict:
             for tag_name in json_obj:
                 sub_obj = json_obj[tag_name]
-                print ('TTTT SSSSSS  sub_obj %s' %   sub_obj)
                 if tag_name in mapdict : 
                     tag_name=mapdict[tag_name]
                     if not isinstance(tag_name,list) : tag_name=[tag_name]
@@ -2659,16 +2699,12 @@ class MAPPER(object):
                                 data[facet]=''
 
                         data['identifier']=identifier
-                        ##HEW-T  print('data DDDD %s' % data)
                         try:
                             outdata=dsdata%data
                         except KeyError as err :
                             logging.error("[ERROR] %s\n" % err )
                             pass
 
-                        ## outdata = dsdata.substitute(comm=community, identifier=identifier)
-                        ## outdata=str(dsdata)
-                        ##HEW-T print('ooooooooo %s' % data) ## ["oai_identifier"])
                         outfile=outpath+'/'+filetype+'_'+identifier+'.xml'
                         try :
                             f = open(outfile, 'w')
