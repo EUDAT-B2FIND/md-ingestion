@@ -11,6 +11,7 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
 ##EPOS
 epos http://epos-dcat????  ListRecords eposap dcat-ap_1
 ##epos https://trng-b2share.eudat.eu/api/oai2d  ListRecords marcxml EPOS 
@@ -548,6 +549,7 @@ clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc vienna-lang-res_
 ## CESSDA endpoint
 clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
 ## DA|RA
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ~ZnE9cmVzb3VyY2VUeXBlOkRhdGFzZXQ=
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc GESISDataArchive # 1 GESIS Data Archive 7103
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RKI # 10 RKI Robert Koch Institute #12
 dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc ICPRS # ICPSR - Interuniversity Consortium for Political and Social Research # 27574
