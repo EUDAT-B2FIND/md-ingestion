@@ -357,7 +357,7 @@ def process_upload(UP, rlist):
         ## dir = dir+'/'+subset
         
         try:
-            ckangroup=CKAN.action('group_list') ## ,{"id":community})
+            ckangroup=CKAN.action('group_list')
             if community not in ckangroup['result'] :
                 logger.critical('Can not found community %s' % community)
                 sys.exit(-1)
