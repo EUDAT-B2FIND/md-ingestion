@@ -391,14 +391,13 @@ class HARVESTER(object):
             subset = mdsubset
             if req["community"] == "b2share" or mdsubset == "LTER" or mdsubset == "EPOS" or mdsubset == "EISCAT" :
                 setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
-                with open(setMapFile) as sm :    
-                    setMap = json.load(sm)
-                    mdsubset = setMap[mdsubset]
             elif req["community"] == "dara" and req["url"] == "https://www.da-ra.de/oaip/oai" :
                 setMapFile= '%s/mapfiles/dara_mapset.json' % (os.getcwd())
-                with open(setMapFile) as sm :   
+            if setMapFile :
+                with open(setMapFile) as sm :    
                     setMap = json.load(sm)
-                    mdsubset = setMap[mdsubset]
+                    if mdsubset in setMap:
+                        mdsubset = setMap[mdsubset]
             
         if (self.fromdate):
             subset = subset + '_f' + self.fromdate
