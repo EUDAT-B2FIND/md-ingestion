@@ -318,20 +318,9 @@ class HARVESTER(object):
         	    self.api_url = api_url
                     self.logger = logging.getLogger('root')
      
-            def JSONAPI(self, action, offset, chunklen, key): # see oaireq
-                ## JSONAPI (action, jsondata) - method
-        	    # Call the api action <action> with the <jsondata> on the CKAN instance which was defined by iphost
-        	    # parameter of CKAN_CLIENT.
-        	    #
-        	    # Parameters:
-        	    # -----------
-        	    # (string)  action  - Action name of the API v3 of CKAN
-        	    # (dict)    data    - Dictionary with json data
-        	    #
-        	    # Return Values:
-        	    # --------------
-        	    # (dict)    response dictionary of CKAN
-        	    return self.__action_api(action, offset, chunklen, key)
+            def JSONAPI(self, action, offset, chunklen, key):
+                ## JSONAPI (action) - method
+                return self.__action_api(action, offset, chunklen, key)
 
             def __action_api (self, action, offset, chunklen, key):
                 # Make the HTTP request for get datasets from GBIF portal
@@ -389,7 +378,7 @@ class HARVESTER(object):
             subset = mdsubset[:-2]
         else:
             subset = mdsubset
-            if req["community"] == "b2share" or mdsubset == "LTER" or mdsubset == "EPOS" or mdsubset == "EISCAT" :
+            if req["community"] == "b2share" or re.match(r'http(.*?)b2share(.*?)api(.*?)',req["url"]) :
                 setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
             elif req["community"] == "dara" and req["url"] == "https://www.da-ra.de/oaip/oai" :
                 setMapFile= '%s/mapfiles/dara_mapset.json' % (os.getcwd())
@@ -422,43 +411,41 @@ class HARVESTER(object):
         ## JSON-API
         if req["lverb"] == 'dataset' or req["lverb"] == 'works'  or req["lverb"] == 'records' : ## ?publisher-id=dk.gbif'  :
             GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
+            harvestreq=getattr(GBIF,'JSONAPI', None)
             outtypedir='hjson'
             outtypeext='json'
-            oaireq=getattr(GBIF,'JSONAPI', None)
-            self.logger.debug(" Harvest method used is %s" % oaireq)
             if mdsubset and req["lverb"] == 'works' :
                 haction='works?publisher-id='+mdsubset
                 dresultkey='data'
             elif req["lverb"] == 'records' :
                 haction=req["lverb"]
                 if mdsubset :
-                    haction=req["lverb"]+'?q=community:b344f92a-cd0e-4e4c-aa09-28b5f95f7e41&size='+str(chunklen)+'&page='+str(pageno)
+                    haction+='?q=community:'+mdsubset+'&size='+str(chunklen)+'&page='+str(pageno)
                 dresultkey='hits'
             else:
                 haction=req["lverb"]
                 dresultkey='results'
             try:
-                chunk=oaireq(**{'action':haction,'offset':None,'chunklen':chunklen,'key':None})
+                chunk=harvestreq(**{'action':haction,'offset':None,'chunklen':chunklen,'key':None})
                 self.logger.debug(" Got first %d records : chunk['data'] %s " % (chunklen,chunk[dresultkey]))
             except (HTTPError,ConnectionError,Exception) as e:
                 self.logger.critical("%s :\n\thaction %s\n\tharvest request %s\n" % (e,haction,req))
                 return -1
 
             if req["lverb"] == 'dataset':
-                    while('endOfRecords' in chunk and not chunk['endOfRecords']):
-                        if 'results' in chunk :
-                            records.extend(chunk['results'])
-                        choffset+=chunklen
-                        chunk =oaireq(**{'action':haction,'offset':choffset,'chunklen':chunklen,'key':None})
-                        self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
+                while('endOfRecords' in chunk and not chunk['endOfRecords']):
+                    if 'results' in chunk :
+                        records.extend(chunk['results'])
+                    choffset+=chunklen
+                    chunk =harvestreq(**{'action':haction,'offset':choffset,'chunklen':chunklen,'key':None})
+                    self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
             elif req["lverb"] == 'records':
                 records.extend(chunk['hits']['hits'])
                 while('hits' in chunk and 'next' in chunk['links']):
                     if 'hits' in chunk :
                         records.extend(chunk['hits']['hits'])
-                    ##choffset+=chunklen
                     pageno+=1
-                    chunk =oaireq(**{'action':haction,'page':pageno,'size':chunklen,'key':None})
+                    chunk =harvestreq(**{'action':haction,'page':pageno,'size':chunklen,'key':None})
                     self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
                     ###if 'hits' in chunk :
                     ###    records.extend(chunk['hits']['hits'])
@@ -473,9 +460,9 @@ class HARVESTER(object):
             sickle = Sickle(req['url'], max_retries=3, timeout=300)
             outtypedir='xml'
             outtypeext='xml'
-            oaireq=getattr(sickle,req["lverb"], None)
+            harvestreq=getattr(sickle,req["lverb"], None)
             try:
-                records,rc=tee(oaireq(**{'metadataPrefix':req['mdprefix'],'set':mdsubset,'ignore_deleted':True,'from':self.fromdate}))
+                records,rc=tee(harvestreq(**{'metadataPrefix':req['mdprefix'],'set':mdsubset,'ignore_deleted':True,'from':self.fromdate}))
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1
@@ -496,8 +483,8 @@ class HARVESTER(object):
             maxrecords=1000
             try:
                 src = CatalogueServiceWeb(req['url'])
-                oaireq=getattr(src,'getrecords2')
-                oaireq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
+                harvestreq=getattr(src,'getrecords2')
+                harvestreq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
                 records=list(src.records.itervalues())
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
@@ -518,7 +505,7 @@ class HARVESTER(object):
             maxrecords=1000
             try:
                 src = SPARQLWrapper(req['url'])
-                oaireq=getattr(src,'query','format') ##
+                harvestreq=getattr(src,'query','format') ##
                 statement='''
 prefix cpmeta: <http://meta.icos-cp.eu/ontologies/cpmeta/>
 prefix prov: <http://www.w3.org/ns/prov#>
@@ -534,7 +521,7 @@ limit 1000
 '''                            
                 src.setQuery(statement)
                 src.setReturnFormat(JSON)
-                records = oaireq().convert()['results']['bindings']
+                records = harvestreq().convert()['results']['bindings']
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1
@@ -551,6 +538,8 @@ limit 1000
         else:
             self.logger.critical(' Not supported harvest type %s' %  req["lverb"])
             sys.exit()
+
+        self.logger.debug(" Harvest method used is %s" % harvestreq)
 
         print ("\t|- Retrieved %d records in %d sec - write %s files to disc" % (ntotrecs,time.time()-start,outtypeext.upper()) )
         if ntotrecs == 0 :
