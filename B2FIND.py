@@ -409,7 +409,8 @@ class HARVESTER(object):
         records=list()
 
         ## JSON-API
-        if req["lverb"] == 'dataset' or req["lverb"] == 'works'  or req["lverb"] == 'records' : ## ?publisher-id=dk.gbif'  :
+        jsonapi_verbs=['dataset','works','records']
+        if req["lverb"] in jsonapi_verbs :
             GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
             harvestreq=getattr(GBIF,'JSONAPI', None)
             outtypedir='hjson'
