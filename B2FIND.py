@@ -393,6 +393,8 @@ class HARVESTER(object):
                 setMapFile= '%s/mapfiles/b2share_mapset.json' % (os.getcwd())
             elif req["community"] == "dara" and req["url"] == "https://www.da-ra.de/oaip/oai" :
                 setMapFile= '%s/mapfiles/dara_mapset.json' % (os.getcwd())
+            else:
+                setMapFile=None
             if setMapFile :
                 with open(setMapFile) as sm :    
                     setMap = json.load(sm)
@@ -656,9 +658,6 @@ limit 1000
 
                 elif outtypeext == 'json':   # get the raw json content:
                      if (record is not None):
-                     ##HEW-D if "publishingOrganizationKey" in record :
-                     ##HEW-D    record["Organisation"]=oaireq(**{'action':'organization','offset':0,'chunklen':1,'key':record["publishingOrganizationKey"]})["title"]       
-                     # write metadata in file:
                          try:
                              with open(outfile, 'w') as f:
                                  json.dump(record,f, sort_keys = True, indent = 4)
