@@ -448,14 +448,10 @@ class HARVESTER(object):
                     pageno+=1
                     chunk =harvestreq(**{'action':haction,'page':pageno,'size':chunklen,'key':None})
                     self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
-                    ###if 'hits' in chunk :
-                    ###    records.extend(chunk['hits']['hits'])
             else:
                 if 'data' in chunk :
                     records.extend(chunk['data'])
                     
-            ntotrecs=len(records)
-
         # OAI-PMH (verb = ListRecords/Identifier )
         elif req["lverb"].startswith('List'):
             sickle = Sickle(req['url'], max_retries=3, timeout=300)
@@ -470,11 +466,6 @@ class HARVESTER(object):
             except (ImportError,etree.XMLSyntaxError,CannotDisseminateFormat,Exception) as err:
                 self.logger.critical("%s during harvest request %s\n" % (err,req))
                 return -1
-
-            try:
-                ntotrecs=len(list(rc))
-            except :
-                self.logger.error('iterate through iterable does not work ?')
 
         # CSW2.0
         elif req["lverb"].startswith('csw'):
@@ -493,11 +484,7 @@ class HARVESTER(object):
             except (ImportError,CannotDisseminateFormat,Exception) as err:
                 self.logger.critical("%s during harvest request %s\n" % (err,req))
                 return -1
-            
-            try:
-                ntotrecs=len(records)
-            except :
-                print ('iterate through iterable does not work ?')
+
         # SparQL
         elif req["lverb"].startswith('Sparql'):
             outtypedir='hjson'
@@ -530,18 +517,19 @@ limit 1000
                 self.logger.critical("%s during harvest request %s\n" % (err,req))
                 return -1
             
-            try:
-                ntotrecs=len(records)
-            except :
-                print ('iterate through iterable does not work ?')
-
-
         else:
             self.logger.critical(' Not supported harvest type %s' %  req["lverb"])
             sys.exit()
 
-        self.logger.debug(" Harvest method used is %s" % harvestreq)
-
+        self.logger.debug(" Harvest method used %s" % harvestreq)
+        try:
+            if req["lverb"].startswith('List'):
+                ntotrecs=len(list(rc))
+            else:
+                ntotrecs=len(records) 
+        except Exception as err:
+            self.logger.error('%s Iteratation does not work ?' % (err))
+            
         print ("\t|- Retrieved %d records in %d sec - write %s files to disc" % (ntotrecs,time.time()-start,outtypeext.upper()) )
         if ntotrecs == 0 :
             self.logger.warning("\t|- Can not access any records to harvest")
