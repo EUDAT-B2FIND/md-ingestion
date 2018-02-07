@@ -24,7 +24,11 @@ Modified by  c/o DKRZ 2016   Heinrich Widmann
 
 ##from __future__ import print_function
 
-import B2FIND
+##import classes from B2FIND modules
+from harvesting import Harvester
+from mapping import Mapper
+from uploading import Uploader, CKAN_CLIENT
+from output import Output
 
 ##Py3???
 from b2handle.clientcredentials import PIDClientCredentials
@@ -65,7 +69,7 @@ def main():
     jid = os.getpid()
 
     # Output instance
-    OUT = B2FIND.OUTPUT(pstat,now,jid,options)
+    OUT = Output(pstat,now,jid,options)
 
     ## logger
     global logger 
@@ -192,31 +196,32 @@ def process(options,pstat,OUT):
     ## HARVESTING mode:    
     if (pstat['status']['h'] == 'tbd'):
         logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        HV = B2FIND.HARVESTER(OUT,pstat,options.outdir,options.fromdate)
+        HV = Harvester(OUT,pstat,options.outdir,options.fromdate)
         process_harvest(HV,reqlist)
 
     ## MAPPINING - Mode:  
     if (pstat['status']['m'] == 'tbd'):
         logger.info('\n|- Mapping started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = B2FIND.MAPPER(OUT,options.outdir,options.fromdate)
+        MP = Mapper(OUT,options.outdir,options.fromdate)
         process_map(MP,reqlist)
 
-    ## VALIDATOR - Mode:
+    ## VALIDATING - Mode:
     if (pstat['status']['v'] == 'tbd'):
         logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = B2FIND.MAPPER(OUT,options.outdir,options.fromdate)
+        MP = Mapper(OUT,options.outdir,options.fromdate)
         process_validate(MP,reqlist)
 
     ## OAI-CONVERTING - Mode:  
     if (pstat['status']['o'] == 'tbd'):
         logger.info('\n|- OAI-Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = B2FIND.MAPPER(OUT,options.outdir)
+        MP = Mapper(OUT,options.outdir,options.fromdate)
         process_oaiconvert(MP, reqlist)
+
     ## UPLOADING - Mode:  
     if (pstat['status']['u'] == 'tbd'):
         logger.info('\n|- Uploading started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         # create CKAN object                       
-        CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
+        CKAN = CKAN_CLIENT(options.iphost,options.auth)
         # create credentials and handle client if required
         if (options.handle_check):
           try:
@@ -232,10 +237,10 @@ def process(options,pstat,OUT):
             cred=None
             HandleClient=None
 
-        UP = B2FIND.UPLOADER(CKAN,options.ckan_check,HandleClient,cred,OUT,options.outdir,options.fromdate,options.iphost)
+        UP = Uploader(CKAN,options.ckan_check,HandleClient,cred,OUT,options.outdir,options.fromdate,options.iphost)
         logger.info(' |- Host:  \t%s' % CKAN.ip_host )
-        # start the process uploading:
         process_upload(UP, reqlist)
+
     ## DELETING - Mode:
     if (pstat['status']['d'] == 'tbd'):
         # start the process deleting:
@@ -417,8 +422,8 @@ def process_delete(OUT, dir, options):
     return False
 
     # create CKAN object                       
-    CKAN = B2FIND.CKAN_CLIENT(options.iphost,options.auth)
-    UP = B2FIND.UPLOADER(CKAN,OUT,options.outdir)
+    CKAN = CKAN_CLIENT(options.iphost,options.auth)
+    UP = Uploader(CKAN,OUT,options.outdir)
     
     ##HEW-D-ec credentials,ec = None,None
 
@@ -593,7 +598,8 @@ def parse_list_file(options):
                 
         if (options.target_mdschema != None and not options.target_mdschema.startswith('#')):
             if len(reqarr) < 6 :
-                reqarr[5]=options.target_mdschema
+                print('reqarr %s' % reqarr)
+                reqarr.append(options.target_mdschema)
         elif len(reqarr) > 5 and reqarr[5].startswith('#') :
             del reqarr[5:]
 
