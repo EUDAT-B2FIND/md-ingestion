@@ -14,7 +14,9 @@ md-ingestion
 ============
 
 The python script manager.py in this directory provide functionality required for
-ingestion (including OAI harvesting, semantic mapping (see repo 'md-mapping') and uploading to CKAN ) of metadata in the B2FIND portal.
+ingestion (including OAI harvesting, semantic mapping (see 
+[repo 'md-mapping'](https://github.com/EUDAT-B2FIND/md-mapping)) and uploading 
+to CKAN) of metadata in the [B2FIND portal](http://b2find.eudat.eu/).
 
 Preconditions
 =============
