@@ -31,6 +31,7 @@ import re
 
 # needed for MAPPER :
 import codecs
+import xml.etree.ElementTree as ET
 import simplejson as json
 import io
 from pyparsing import *
@@ -1260,7 +1261,7 @@ class Mapper(object):
         ##HEW-D  results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
 
         # community-mdschema root path
-        cmpath='%s/%s-%s/' % (self.base_outdir,community,mdprefix)
+        cmpath='%s/%s-%s' % (self.base_outdir,community,mdprefix)
         self.logger.info('\t|- Input path:\t%s' % cmpath)
         subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
         totcount=0 # total counter of processed files
@@ -1605,7 +1606,7 @@ class Mapper(object):
         mf=open(mapfile) 
 
         # community-mdschema root path
-        cmpath='%s/%s-%s/' % (self.base_outdir,community,mdprefix)
+        cmpath='%s/%s-%s' % (self.base_outdir,community,mdprefix)
         self.logger.info('\t|- Input path:\t%s' % cmpath)
         subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
         # loop over all available subdirs
