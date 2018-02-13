@@ -1,7 +1,11 @@
 """mapping.py - class for B2FIND mapping : 
   - Mapper    maps harvested nad specific MD records onto B2FIND schema
 
-Copyright (c) 2015 Heinrich Widmann (DKRZ)
+Copyright (c) 2013 Heinrich Widmann (DKRZ)
+Contributions by
+     2017 Claudia Martens
+     2014 Mikael Karlsson
+     2013 John Mrziglod (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -40,6 +44,12 @@ import iso639
 from collections import OrderedDict
 
 PY2 = sys.version_info[0] == 2
+if PY2:
+    from urllib2 import urlopen
+    from urllib2 import HTTPError,URLError
+else:
+    from urllib.request import urlopen
+    from urllib.error import HTTPError,URLError
 
 class Mapper(object):
 
