@@ -8,49 +8,41 @@
   <mappings>
     <!-- General information -->
     <field name="title">
-      <xpath>//marc:datafield[@tag = '245']/marc:subfield[@code = 'a']/text()</xpath>
+      <xpath>//marc:datafield[@tag='245']/marc:subfield[@code='a']/text()</xpath>
     </field>
     <field name="notes">
-      <xpath>//marc:datafield[@tag = '520']/marc:subfield[@code = 'a']/text()</xpath>
-      <xpath>//marc:datafield[@tag = '520']/marc:subfield[@code = 'h']/text()</xpath>
+      <xpath>//marc:datafield[@tag='520']/marc:subfield[@code='a']/text()</xpath>
+      <xpath>//marc:datafield[@tag='520']/marc:subfield[@code='h']/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>distinct-values(//marc:datafield[@tag = '695']/marc:subfield[@code = '2']/text() | //marc:datafield[@tag = '980']/marc:subfield[@code = 'a']/text())</xpath>
+      <xpath>distinct-values(//marc:datafield[@tag='695']/marc:subfield[@code='2']/text() | //marc:datafield[@tag='980']/marc:subfield[@code='a']/text())</xpath>
     </field>
     <!-- Access data -->
     <field name="url">
-      <xpath>//marc:datafield[@tag = '856' and @ind1='4']/marc:subfield[@code = 'u']/text() | //marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text() </xpath>
+      <xpath>//marc:datafield[@tag='856' and @ind1='4']/marc:subfield[@code='u']/text() | //marc:datafield[@tag='024' and @ind1='7']/marc:subfield[@code='a']/text() </xpath>
     </field>
-<!--
-    <field name="url">
-      <xpath>//marc:datafield[@tag = '856' and @ind1='4']/marc:subfield[@code = 'u']/text()</xpath>
-    </field>
-   <field name="PID">
-     <xpath>if (contains(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text(), ',')) then concat('http://hdl.handle.net/api/handles/',substring-after(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text(), ',')) else if (//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = '2']/text()[. = "DOI"]) then concat('http://dx.doi.org/',//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()) else if (contains(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = '2']/text(), '11100/')) then concat('http://hdl.handle.net/',//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()) else //marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()</xpath>
-   </field>
--->
    <field name="Checksum">
-      <xpath>//marc:datafield[@tag = '999']/marc:subfield[@code='c']/text()</xpath>
+      <xpath>//marc:datafield[@tag='999']/marc:subfield[@code='c']/text()</xpath>
    </field>
     <field name="Rights">
-      <xpath>//marc:datafield[@tag = '542']/marc:subfield[@code = 'l']/text()</xpath>
+      <xpath>//marc:datafield[@tag='542']/marc:subfield[@code='l']/text()</xpath>
     </field>
    <!-- Provenance data -->
    <field name="Discipline">
       <string>Elementary Particle Physics</string>
    </field>
    <field name="author">
-      <xpath>//marc:datafield[@tag = '999']/marc:subfield[@code = '9']/text()</xpath>
+      <xpath>//marc:datafield[@tag='999']/marc:subfield[@code='9']/text()</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//marc:datafield[@tag = '856' and @ind1='4']/marc:subfield[@code = 'y']/text()</xpath>
+      <xpath>//marc:datafield[@tag='856' and @ind1='4']/marc:subfield[@code='y']/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//marc:datafield[@tag = '269']/marc:subfield[@code = 'c']/text()</xpath>
+      <xpath>//marc:datafield[@tag='269']/marc:subfield[@code='c']/text()</xpath>
     </field>
     <!-- Formal data -->
     <field name="Language">
-      <xpath>//marc:datafield[@tag = '041']/marc:subfield[@code = 'a']/text()</xpath>
+      <xpath>//marc:datafield[@tag='041']/marc:subfield[@code='a']/text()</xpath>
     </field>
     <field name="TemporalCoverage">
     </field>
