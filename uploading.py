@@ -606,7 +606,7 @@ class Uploader(object):
                 jsondata["name"] = ds_id
                 jsondata["state"]='active'
                 jsondata["groups"]=[{ "name" : community }]
-                jsondata["owner_org"]="eudat"
+                jsondata["owner_org"]="eudat-b2find"
 
                 # get OAI identifier from json data extra field 'oai_identifier':
                 if 'oai_identifier' not in jsondata :
