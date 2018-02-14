@@ -2,7 +2,7 @@
   - Mapper    maps harvested nad specific MD records onto B2FIND schema
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ)
-Contributions by
+Further contributions by
      2017 Claudia Martens
      2014 Mikael Karlsson
      2013 John Mrziglod (DKRZ)
@@ -52,34 +52,15 @@ else:
     from urllib.error import HTTPError,URLError
 
 class Mapper(object):
-
     """
     ### MAPPER - class
     # Parameters:
     # -----------
-    # 1. (OUT object)   OUT - object of the OUTPUT class
-    #
-    # Return Values:
-    # --------------
-    # MAPPER object
-    #
     # Public Methods:
     # ---------------
-    # map(community, mdprefix, path)  - maps all files in <path> to JSON format by using community and md format specific
-    #       mapfiles in md-mapping and stores those files in subdirectory '../json'
+    # map(request)  - maps records according to request on B21FIND schema
+    #     using mapfiles in md-mapping and stores resulting files in subdirectory '../json'
     #
-    # Usage:
-    # ------
-
-    # create MAPPER object:
-    MP = MAPPER(OUT)
-
-    path = 'oaidata/enes-iso/subset1'
-    community = 'enes'
-    mdprefix  = 'iso'
-
-    # map all files of the 'xml' dir in <path> by using mapfile which is defined by <community> and <mdprefix>
-    results = MP.map(community,mdprefix,path)
     """
 
     def __init__ (self, OUT, base_outdir,fromdate):
@@ -811,9 +792,6 @@ class Mapper(object):
     
         return x
     
-
-
-
     def jsonpath(self,obj, expr, result_type='VALUE', debug=0, use_eval=True):
        """traverse JSON object using jsonpath expr, returning values or paths"""
 
