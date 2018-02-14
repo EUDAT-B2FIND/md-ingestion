@@ -41,7 +41,7 @@ import io
 from pyparsing import *
 import Levenshtein as lvs
 import iso639
-from collections import OrderedDict
+from collections import OrderedDict, Iterable, Counter
 
 PY2 = sys.version_info[0] == 2
 if PY2:
@@ -449,7 +449,7 @@ class Mapper(object):
 
     def flatten(self,l):
         for el in l:
-            if isinstance(el, collections.Iterable) and not isinstance(el, basestring):
+            if isinstance(el, Iterable) and not isinstance(el, basestring):
                 for sub in flatten(el):
                     yield sub
             else:
@@ -1592,8 +1592,6 @@ class Mapper(object):
         # --------------
         # 1. (dict)     statistic of validation 
     
-        import collections
-
         resKeys=['count','tcount','ecount','time']
         results = dict.fromkeys(resKeys,0)
         
@@ -1753,7 +1751,7 @@ class Mapper(object):
             if float(fcount) > 0 :
                 printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(key,totstats[facet]['xpath'],totstats[facet]['mapped'],totstats[facet]['mapped']*100/float(fcount),totstats[facet]['valid'],totstats[facet]['valid']*100/float(fcount))
                 try:
-                    counter=collections.Counter(totstats[facet]['vstat'])
+                    counter=Counter(totstats[facet]['vstat'])
                     if totstats[facet]['vstat']:
                         for tuple in counter.most_common(10):
                             ucvalue=tuple[0]##HEW-D .encode('utf8')
