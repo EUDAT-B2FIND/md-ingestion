@@ -37,6 +37,7 @@ import io
 from pyparsing import *
 import Levenshtein as lvs
 import iso639
+import collections
 from collections import OrderedDict
 
 PY2 = sys.version_info[0] == 2
