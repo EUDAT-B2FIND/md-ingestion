@@ -374,11 +374,13 @@ def process_upload(UP, rlist):
             last_community = community
             if options.ckan_check == 'True' :
                 UP.get_packages(community)
-            delete_file = '/'.join([UP.base_outdir,'delete',community+'-'+mdprefix+'.del'])
-            if os.path.exists(delete_file) :
-                with open (delete_file,'r') as df :
-                    for id in df.readlines() :
-                        UP.delete(id,'to_delete')
+            if options.clean == 'True' :
+                delete_file = '/'.join([UP.base_outdir,'delete',community+'-'+mdprefix+'.del'])
+                if os.path.exists(delete_file) :
+                    logging.warning("All datasets listed in %s will be removed" % delte_file)
+                    with open (delete_file,'r') as df :
+                        for id in df.readlines() :
+                            UP.delete(id,'to_delete')
 
 
         ##HEW-D-Test sys.exit(0)
@@ -666,6 +668,8 @@ def options_parser(modes):
          help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file", default=None,metavar='FILE')
     group_upload.add_option('--ckan_check',
          help="check existence and checksum against existing datasets in CKAN database", default='False', metavar='BOOLEAN')
+    group_upload.add_option('--clean',
+         help="Clean CKAN from datasets listed in delete file", default='False', metavar='BOOLEAN')
     
     p.add_option_group(group_multi)
     p.add_option_group(group_single)
