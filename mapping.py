@@ -1409,7 +1409,7 @@ class Mapper(object):
                                         jsondata[facet] = tempdesc
                                 elif facet == 'Language': 
                                     jsondata[facet] = self.map_lang(jsondata[facet])
-                                elif facet == 'Format': 
+                                elif facet in ['Format']: 
                                     jsondata[facet] = self.uniq(jsondata[facet])
                                 elif facet == 'PublicationYear':
                                     publdate=self.date2UTC(jsondata[facet])
