@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## EGI datahub
+egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
 fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
 ##EPOS
 epos http://epos-dcat????  ListRecords eposap dcat-ap_1
