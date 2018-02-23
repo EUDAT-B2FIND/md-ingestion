@@ -119,8 +119,8 @@ class Harvester(object):
             ## GBIF.action('package_list',{})
         
             def __init__ (self, api_url): ##, api_key):
-        	    self.api_url = api_url
-                    self.logger = logging.getLogger('root')
+                self.api_url = api_url
+                self.logger = logging.getLogger('root')
      
             def JSONAPI(self, action, offset, chunklen, key):
                 ## JSONAPI (action) - method
@@ -392,7 +392,7 @@ limit 1000
                 oai_id=record['fileName']['value']
     
             # generate a uniquely identifier and a filename for this dataset:
-            uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('ascii','replace')))
+            uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id))
             outfile = '%s/%s/%s.%s' % (subsetdir,outtypedir,os.path.basename(uid),outtypeext)
 
             if delete_flag : # record marked as deleted on provider site 
@@ -401,33 +401,35 @@ limit 1000
                 os.remove(xmlfile)
                 os.remove(jsonfile)
                 delete_ids.append(uid)
+
             # write record on disc
             try:
-                logging.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
-                logging.debug('Try to write the harvested JSON record to %s' % outfile)
-                    
+                self.logger.debug('    | h | %-4d | %-45s | %-45s |' % (stats['count']+1,oai_id,uid))
+                self.logger.debug('Try to write the harvested JSON record to %s' % outfile)
+     
                 if outtypeext == 'xml':   # get and write the XML content:
                     if hasattr(record,'raw'):
                         metadata = etree.fromstring(record.raw)
                     else:
                         metadata = etree.fromstring(record.xml)
+
                     if (metadata is not None):
                         try:
-                            metadata = etree.tostring(metadata, pretty_print = True)
+                            metadata = etree.tostring(metadata, pretty_print = True).decode('utf-8')
                         except (Exception,UnicodeEncodeError) as e:
-                            self.logger.debug('%s : Metadata: %s ...' % (e,metadata[:20]))
-                        if PY2 :
-                            try:
-                                metadata = metadata.encode('utf-8')
-                            except (Exception,UnicodeEncodeError) as e :
-                                self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
+                            self.logger.critical('%s : Metadata: %s ...' % (e,metadata[:20]))
+                        ##if PY2 :
+                        ##    try:
+                        ##        metadata = metadata.encode('utf-8')
+                        ##    except (Exception,UnicodeEncodeError) as e :
+                        ##        self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
 
                         try:
                             f = open(outfile, 'w')
                             f.write(metadata)
                             f.close
-                        except IOError :
-                            logging.error("[ERROR] Cannot write metadata in xml file '%s': %s\n" % (outfile))
+                        except (Exception,IOError) as err :
+                            self.logger.critical("%s : Cannot write metadata in xml file %s" % (err,outfile))
                             stats['ecount'] +=1
                             continue
                         else:
@@ -436,7 +438,6 @@ limit 1000
                     else:
                         stats['ecount'] += 1
                         self.logger.error('No metadata available for %s' % record)
-
 
                 elif outtypeext == 'json':   # get the raw json content:
                      if (record is not None):
@@ -522,10 +523,6 @@ limit 1000
                     stats['totdcount']
                 ))
 
-        # save the last subset:
-        ##HEW-D if (stats['count'] > 0):
-        ##HEW-D         lastsubset = self.save_subset(req, stats, subset, count_set)
-            
     def save_subset(self, req, stats, subset, count_set):
         # Save stats per subset and add subset item to the convert_list via OUT.print_convert_list()
         #
