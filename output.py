@@ -40,15 +40,21 @@ class Output(object):
         ##HEW-?? self.logger = logger
         
         # create jobdir if it is necessary:
-        if (options.jobdir):
+        if (hasattr(options,'jobdir') and options.jobdir):
             self.jobdir = options.jobdir
-        else:
+        elif hasattr(options,'mode') and hasattr(options,'list') :
             self.jobdir='log/%s/%s/%s_%s_%s' % (
                 now.split(' ')[0],
                 now.split(' ')[1].split(':')[0],
                 jid, options.mode, options.list
             )
-            
+        else:
+            self.jobdir='log/%s/%s/%s' % (
+                now.split(' ')[0],
+                now.split(' ')[1].split(':')[0],
+                jid
+            )
+
         if not os.path.exists(self.jobdir):
             os.makedirs(self.jobdir)
             
