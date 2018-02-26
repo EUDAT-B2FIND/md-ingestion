@@ -107,15 +107,20 @@ class Mapper(object):
         def get_list():
             import csv
             import os
-            discipl_file =  '%s/mapfiles/b2find_disciplines.tab' % (os.getcwd())
             disctab = []
-            with open(discipl_file, 'r') as f:
-                ## define csv reader object, assuming delimiter is tab
-                tsvfile = csv.reader(f, delimiter='\t')
+            discipl_file =  '%s/mapfiles/b2find_disciplines_new.json' % (os.getcwd())
+            with open(discipl_file) as f:    
+                disctab = json.load(f)['disciplines']
 
-                ## iterate through lines in file
-                for line in tsvfile:
-                   disctab.append(line)
+
+##            discipl_file =  '%s/mapfiles/b2find_disciplines.tab' % (os.getcwd())
+##            with open(discipl_file, 'r') as f:
+##                ## define csv reader object, assuming delimiter is tab
+##                tsvfile = csv.reader(f, delimiter='\t')
+##
+##                ## iterate through lines in file
+##                for line in tsvfile:
+##                   disctab.append(line)
                    
             return disctab
 
@@ -560,6 +565,8 @@ class Mapper(object):
            maxr=0.0
            maxdisc=''
            for line in disctab :
+             line=re.split(r'#', line) 
+             ##HEW-T print('lllline %s' % line)
              try:
                disc=line[2].strip()
                r=lvs.ratio(indisc,disc)
@@ -589,10 +596,11 @@ class Mapper(object):
    
     def cut(self,invalue,pattern,nfield=None):
         """
-        Invalue is expected as list. Loop over invalue and for each elem : 
+        Invalue is expected as list (if is not, it is splitted). 
+        Loop over invalue and for each elem : 
            - If pattern is None truncate characters specified by nfield (e.g. ':4' first 4 char, '-2:' last 2 char, ...)
-        else if pattern is in invalue, split according to pattern and return field nfield (if 0 return the first found pattern),
-        else return invalue.
+           - else if pattern is in invalue, split according to pattern and return field nfield (if 0 return the first found pattern),
+           - else return invalue.
 
         Copyright (C) 2015 Heinrich Widmann.
         Licensed under AGPLv3.
@@ -621,7 +629,7 @@ class Mapper(object):
                     else:
                         outvalue.append(elem)
             except Exception :
-                logging.error("[ERROR] %s in cut() with invalue %s" % (e,invalue))
+                logging.error("%s in cut() with invalue %s" % (e,invalue))
 
         return outvalue
 
@@ -1244,9 +1252,6 @@ class Mapper(object):
         # instance of B2FIND discipline table
         geotab = self.cv_geonames()
         # instance of British English dictionary
-        ##HEW-T dictEn = enchant.Dict("en_GB")
-        # loop over all files (harvested records) in input path ( path/xml or path/hjson) 
-        ##HEW-D  results['tcount'] = len(filter(lambda x: x.endswith('.json'), os.listdir(path+'/hjson')))
 
         # community-mdschema root path
         cmpath='%s/%s-%s' % (self.base_outdir,community,mdprefix)
@@ -1462,12 +1467,11 @@ class Mapper(object):
                             self.logger.error(' %s : Cannot write data in json file %s ' % (jsonfilename,err))
                         except Exception as err:
                             self.logger.error(' %s : Cannot write json file %s' % (err,outpath+'/'+filename))
-                            ##HEW-D err+='Cannot write json file %s' % jsonfilename
                             results['ecount'] += 1
                             continue
                         else:
                             self.logger.debug(' Succesfully written to json file %s' % outpath+'/'+filename)
-                            ##HEW-D err+='Cannot write json file %s' % jsonfilename
+
                             results['count'] += 1
                             continue
                 else:
