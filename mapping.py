@@ -108,20 +108,9 @@ class Mapper(object):
             import csv
             import os
             disctab = []
-            discipl_file =  '%s/mapfiles/b2find_disciplines_new.json' % (os.getcwd())
-            with open(discipl_file) as f:    
+            discipl_file =  '%s/mapfiles/b2find_disciplines.json' % (os.getcwd())
+            with open(discipl_file) as f:
                 disctab = json.load(f)['disciplines']
-
-
-##            discipl_file =  '%s/mapfiles/b2find_disciplines.tab' % (os.getcwd())
-##            with open(discipl_file, 'r') as f:
-##                ## define csv reader object, assuming delimiter is tab
-##                tsvfile = csv.reader(f, delimiter='\t')
-##
-##                ## iterate through lines in file
-##                for line in tsvfile:
-##                   disctab.append(line)
-                   
             return disctab
 
     class cv_geonames(object):
