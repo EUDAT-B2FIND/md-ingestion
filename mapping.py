@@ -557,9 +557,9 @@ class Mapper(object):
              line=re.split(r'#', line) 
              ##HEW-T print('lllline %s' % line)
              try:
-               disc=line[2].strip()
-               r=lvs.ratio(indisc,disc)
-             except Exception :
+                 disc=line[2].strip()
+                 r=lvs.ratio(indisc,disc)
+             except Exception as e :
                  logging.error('[ERROR] %s in map_discipl : %s can not compared to %s !' % (e,indisc,disc))
                  continue
              if r > maxr  :
