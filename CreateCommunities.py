@@ -1,12 +1,16 @@
 #!/usr/bin/env python
 import sys, os, optparse, time
 from os.path import expanduser
-from urllib import parse  ## PY2 : quote
-##PY2 from urllib2 import urlopen, Request
-##PY2 from urllib2 import HTTPError,URLError
+PY2 = sys.version_info[0] == 2
+if PY2:
+    from urllib import quote
+    from urllib2 import urlopen
+    from urllib2 import HTTPError,URLError
+else:
+    from urllib import parse
+    from urllib.request import urlopen
+    from urllib.error import HTTPError,URLError
 from output import Output
-from urllib.request import urlopen, Request
-from urllib.error import HTTPError,URLError
 import json
 import pprint
 import random, string
@@ -100,8 +104,11 @@ if (True):
     # Use the json module to dump the dictionary to a string for posting.
     ### data_string = urllib.parse.quote(json.dumps(dataset_dict))
     encoding='utf-8'
-    data_string = parse.quote(json.dumps(group_dict)).encode(encoding)
-
+    if PY2 :
+        data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+    else :
+        data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+        
     # The action that should be excecuted.
     apiaction='http://%s/api/action/%s' % (options.iphost,action)
     print('API action excecuted : %s' % apiaction)
