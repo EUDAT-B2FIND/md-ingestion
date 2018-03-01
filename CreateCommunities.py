@@ -28,6 +28,7 @@ p.add_option('-v', '--verbose', action="count", help="increase output verbosity 
 p.add_option('--iphost', '-i', help="IP adress of B2FIND portal (CKAN instance)", metavar='IP')
 p.add_option('--auth', help="Authentification for CKAN API (API key, by default taken from file $HOME/.netrc)",metavar='STRING')
 p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
+p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nSupported modes are (c)reate, (u)pdate, (patch), (d)elete, (p)urge and (s)how . default is creation of a group', default='c')
 
 options,arguments = p.parse_args()
 
@@ -42,7 +43,6 @@ community=sys.argv[1]
 conffile='mapfiles/%s.json' % community
 with open(conffile, 'r') as f:
     group_dict = json.load(f)
-print('group_dict %s' % group_dict)
 
 # checking given options:
 if (not options.iphost):
@@ -68,6 +68,31 @@ if (not options.auth):
             logger.critical('API key is neither given by option --auth nor can retrieved from %s/.netrc' % home )
             sys.exit()
 
+if options.mode == 'c' :
+    action='group_create'
+elif options.mode == 'u' :
+    action='group_update'
+    group_dict['id']=group_dict['name']
+elif options.mode == 'patch' :
+    action='group_patch'
+    group_dict['id']=group_dict['name']
+elif options.mode == 'd' :
+    action='group_delete'
+elif options.mode == 'p' :
+    action='group_purge'
+    group_dict['id']=group_dict['name']
+elif options.mode == 's' :
+    action='group_show'
+    group_dict['id']=group_dict['name']
+else :
+    logger.critical('Mode %s not supported' % options.mode)
+    sys.exit(-1)
+
+##HEW-T print('group_dict %s' % group_dict)
+
+
+
+
 if (True):
 ##for group_dict in groupsdict.itervalues() :
     ##HEW-T print('group_dict:\t%s\n' % (group_dict))
@@ -77,22 +102,31 @@ if (True):
     encoding='utf-8'
     data_string = parse.quote(json.dumps(group_dict)).encode(encoding)
 
-    # We'll use the user_create function to create a new user.
-    action='http://%s/api/action/group_create' % options.iphost
-    request = Request(action,data_string)
+    # The action that should be excecuted.
+    apiaction='http://%s/api/action/%s' % (options.iphost,action)
+    print('API action excecuted : %s' % apiaction)
+    request = Request(apiaction,data_string)
 
     # Creating a group requires an authorization header.
     request.add_header('Authorization', options.auth)
 
     # Make the HTTP request.
     ###Py2 response = urllib.request.urlopen(request, data_string)
-    response = urlopen(request)
-    assert response.code == 200
+    try:
+        response = urlopen(request)
+        assert response.code == 200
+    except HTTPError as e:
+        logger.critical('%s : Can not excecute the HTTP request' % e)
+        sys.exit(-1)
 
     # Use the json module to load CKAN's response into a dictionary.
-    response_dict = json.loads(response.read()).encode(encoding)
-    assert response_dict['success'] is True
+    ## print('Response %s' % response.read().decode('utf-8'))
+    response_dict = response.read().decode('utf-8')
+    ##HEW-T print('Response %s' % response_dict)
+    response_dict = json.loads(response_dict)
+    ## assert response_dict["success"] is True
 
     # package_create returns the created package as its result.
     created_package = response_dict['result']
+    print('Response:')
     pprint.pprint(created_package)
