@@ -41,6 +41,8 @@
     </field>
     <field name="Format">
       <xpath>//dc:format/text()</xpath>
+    <field name="ResourceType">
+      <xpath>//dc:type[1]()</xpath>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dc:coverage/text()</xpath>
