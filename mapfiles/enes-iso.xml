@@ -12,7 +12,7 @@
   <mappings>
    <!-- General information -->
     <field name="title">
-      <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString</xpath>
     </field>
     <field name="notes">
       <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString/text()</xpath>
