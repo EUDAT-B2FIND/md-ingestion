@@ -4,11 +4,11 @@ from os.path import expanduser
 PY2 = sys.version_info[0] == 2
 if PY2:
     from urllib import quote
-    from urllib2 import urlopen
+    from urllib2 import urlopen, Request
     from urllib2 import HTTPError,URLError
 else:
     from urllib import parse
-    from urllib.request import urlopen
+    from urllib.request import urlopen, Request
     from urllib.error import HTTPError,URLError
 from output import Output
 import json
@@ -105,9 +105,9 @@ if (True):
     ### data_string = urllib.parse.quote(json.dumps(dataset_dict))
     encoding='utf-8'
     if PY2 :
-        data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+        data_string = quote(json.dumps(group_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
     else :
-        data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+        data_string = parse.quote(json.dumps(group_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
         
     # The action that should be excecuted.
     apiaction='http://%s/api/action/%s' % (options.iphost,action)
