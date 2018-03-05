@@ -35,6 +35,7 @@ PY2 = sys.version_info[0] == 2
 from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
 from owslib.csw import CatalogueServiceWeb
+from owslib.namespaces import Namespaces
 from SPARQLWrapper import SPARQLWrapper, JSON
 from requests.exceptions import ConnectionError
 import uuid
@@ -279,8 +280,12 @@ class Harvester(object):
             maxrecords=1000
             try:
                 src = CatalogueServiceWeb(req['url'])
+                NS = Namespaces()
+                namespaces=NS.get_namespaces()
                 harvestreq=getattr(src,'getrecords2')
                 harvestreq(**{'esn':'full','startposition':startposition,'maxrecords':maxrecords})
+                ##harvestreq(**{'esn':'full','outputschema':namespaces['gmd'],'startposition':startposition,'maxrecords':maxrecords})
+                ##HEW-D harvestreq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
                 records=list(src.records.items())
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
