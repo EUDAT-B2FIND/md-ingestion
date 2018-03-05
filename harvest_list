@@ -33,7 +33,7 @@ aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D64
 ## RDA summerscool test OAI @CSC
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## ENVRIPLUS
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw gmd anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 euro-argo http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
 envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
@@ -44,7 +44,8 @@ envriplus http://www.envriplus.eu/oai??? ListRecords  marcxml icos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
 envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 seadatanet
 ## SEADATANET
-seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
+##seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw gmd cams1_ps
+seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_dc cams1_ps
 ## ICOS
 icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
 ## ETSIN
