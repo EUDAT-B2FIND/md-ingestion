@@ -45,10 +45,10 @@ import simplejson as json
 from itertools import tee 
 import collections
 if PY2:
-    from urllib2 import urlopen
+    from urllib2 import urlopen, Request
     from urllib2 import HTTPError,URLError
 else:
-    from urllib.request import urlopen
+    from urllib.request import urlopen, Request
     from urllib.error import HTTPError,URLError
 
 class Harvester(object):
