@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for ISO19139 format metadata from ENES. -->
+  <!-- Mappings for ISO19139 format metadata from GFZ. -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
