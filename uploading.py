@@ -442,9 +442,9 @@ class Uploader(object):
         
         ## check ds name (must be lowercase, alphanumeric + ['_-']
         if not re.match("^[a-z0-9_-]*$", jsondata['name']):
-            self.logger.critical("The dataset name '%s' must be lowercase and alphanumeric + ['_-']" % jsondata['name'])
+            self.logger.error("The dataset name '%s' must be lowercase and alphanumeric + ['_-']" % jsondata['name'])
             jsondata['name']=jsondata['name'].lower()
-            self.logger.critical(" ... and is converted now to '%s'" % jsondata['name'])
+            self.logger.error(" ... and is converted now to '%s'" % jsondata['name'])
         ## check mandatory fields ...
         mandFields=['title','oai_identifier']
         for field in mandFields :
