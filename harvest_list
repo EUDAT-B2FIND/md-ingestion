@@ -1,4 +1,4 @@
-##+++ List of OAI sources, specified by
+##+++ List of harvest requests, specified by
 ##+++       - their community
 ##+++       - the OAI URL (harvest entry point), 
 ##+++       - the harvest request (verb: ListIdentifiers or ListRecords),
@@ -6,7 +6,7 @@
 ##+++       - (optional) the OAI sub set
 ##+++    and that are _NOT_ commented out (by # at beginning of source line or 
 ##+++                      <# ...\n\n > for multi lines) 
-##+++    will be harvested, converted or/and uploaded by the JMD manager
+##+++    will be harvested, mapped or/and uploaded by the B2FIND manager
 ##+++    depending on the given mode (option --mode [h|c|u] )
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
@@ -16,6 +16,7 @@ egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
 fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
 ##EPOS
 epos http://epos-dcat????  ListRecords eposap dcat-ap_1
+epos http://epos-tcs-uni-utr???  ListRecords iso19139 SET_1
 ##epos https://trng-b2share.eudat.eu/api/oai2d  ListRecords marcxml EPOS 
 ## SLKS
 ### slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  lido
@@ -80,16 +81,17 @@ lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA
 pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
-## GFZ
+## GFZ  ## oai_datacite or iso1939 ???
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
-gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
+##gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
 ## GFZ sub communities
-geofon http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
-geofon http://doidb.wdc-terra.org/oaip/oai  ListIdentifiers   iso19139  DOIDB.SEISNET
+gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
 geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET
+##geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GEOFON
+##geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.SEISNET
 icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
 ###
-gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
 gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
 isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
 ## pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
