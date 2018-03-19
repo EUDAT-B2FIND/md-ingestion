@@ -34,7 +34,8 @@ aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D64
 ## RDA summerscool test OAI @CSC
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## ENVRIPLUS
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw gmd anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
+##HEW-!!! anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 euro-argo http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
 envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
@@ -46,7 +47,7 @@ envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
 envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 seadatanet
 ## SEADATANET
 ##seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw gmd cams1_ps
-seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_dc cams1_ps
+seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
 ## ICOS
 icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
 ## ETSIN
@@ -77,6 +78,7 @@ ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 lter   https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc LTER # d952913c-451e-4b5c-817e-d578dc8a4469 ## LTER
 lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
 lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
+deims  https://data.lter-europe.net/pycsw    csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA
