@@ -243,7 +243,7 @@ class Harvester(object):
                     if 'results' in chunk :
                         records.extend(chunk['results'])
                     choffset+=chunklen
-                    chunk =harvestreq(**{'action':haction,'offset':choffset,'chunklen':chunklen,'key':None})
+                    chunk = harvestreq(**{'action':haction,'offset':choffset,'chunklen':chunklen,'key':None})
                     self.logger.debug(" Got next records [%d,%d] from chunk %s " % (choffset,choffset+chunklen,chunk))
             elif req["lverb"] == 'records':
                 records.extend(chunk['hits']['hits'])
@@ -277,22 +277,31 @@ class Harvester(object):
             outtypedir='xml'
             outtypeext='xml'
             startposition=0
-            maxrecords=1000
+            maxrecords=20
             try:
                 src = CatalogueServiceWeb(req['url'])
                 NS = Namespaces()
                 namespaces=NS.get_namespaces()
+                if req['mdprefix'] == 'iso19139' :
+                    nsp = namespaces['gmd']
+                else :
+                    nsp = namespaces['csw']
+
                 harvestreq=getattr(src,'getrecords2')
-                harvestreq(**{'esn':'full','startposition':startposition,'maxrecords':maxrecords})
-                ##harvestreq(**{'esn':'full','outputschema':namespaces['gmd'],'startposition':startposition,'maxrecords':maxrecords})
-                ##HEW-D harvestreq(**{'esn':'full','outputschema':'http://www.isotc211.org/2005/gmd','startposition':startposition,'maxrecords':maxrecords})
-                records=list(src.records.items())
+                chunk = harvestreq(**{'esn':'full','startposition':choffset,'maxrecords':maxrecords,'outputschema':nsp})
+                chunklist=list(src.records.items())
+                while(len(chunklist) > 0) :
+                    records.extend(chunklist)
+                    choffset+=maxrecords
+                    chunk = harvestreq(**{'esn':'full','startposition':choffset,'maxrecords':maxrecords,'outputschema':nsp})
+                    chunklist=list(src.records.items())
+                    self.logger.debug(" Got next %s records [%d,%d] from chunk " % (nsp,choffset,choffset+chunklen))
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1
             except (ImportError,CannotDisseminateFormat,Exception) as err:
-                self.logger.critical("%s during harvest request %s\n" % (err,req))
-                return -1
+                self.logger.error("%s : During harvest request %s\n" % (err,req))
+                ##return -1
 
         # SparQL
         elif req["lverb"].startswith('Sparql'):
