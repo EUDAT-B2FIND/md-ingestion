@@ -53,11 +53,12 @@ icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
 ## ETSIN
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
-etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  fin-clarin
-etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  00000000-0000-0000-0000-000000000000
-etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  97779b54-3e78-df11-a6ac-005056a22855
-etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  geologian-tutkimuskeskus-gtk
-etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  taideyliopisto-university-of-the-arts-artsequal
+etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  fin-clarin
+##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  00000000-0000-0000-0000-000000000000
+##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  97779b54-3e78-df11-a6ac-005056a22855
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  geologian-tutkimuskeskus-gtk
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  taideyliopisto-university-of-the-arts-artsequal
 ## NorStore
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc  NATURAL_SCIENCE
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc PROF_APPL_SCIENCE 
