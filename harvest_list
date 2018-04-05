@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## PANGAEA
+pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable
 ## EGI datahub
 egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
 fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
