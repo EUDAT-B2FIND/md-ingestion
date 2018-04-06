@@ -541,45 +541,44 @@ class Mapper(object):
             inlist=re.split(r'[;&\s]\s*',invalue)
             inlist.append(invalue)
         else:
-            seplist=[re.split(r"[;&]",i) for i in invalue]
+            seplist=[re.split(r"[;&\xe2]",i) for i in invalue]
             swlist=[re.findall(r"[\w']+",i) for i in invalue]
-            inlist=swlist+seplist
+            inlist=swlist ## +seplist
             inlist=[item for sublist in inlist for item in sublist] ##???
         for indisc in inlist :
-           ##indisc=indisc.encode('ascii','ignore').capitalize()
-           if PY2:
-               indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
-           else:
-               indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
-           maxr=0.0
-           maxdisc=''
-           for line in disctab :
-             line=re.split(r'#', line) 
-             ##HEW-T print('lllline %s' % line)
-             try:
-                 if len(line) < 3:
-                     self.logger.critical('Missing base element in dicipline array %s' % line)
-                     sys.exit(-2)
-                 else:
-                     disc=line[2].strip()
-                     r=lvs.ratio(indisc,disc)
-             except Exception as e :
-                 logging.error('[ERROR] %s in map_discipl : %s can not compared to %s !' % (e,indisc,disc))
-                 continue
-             if r > maxr  :
-                 maxdisc=disc
-                 maxr=r
-                 ##HEW-T                 print ('--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr))
-           if maxr == 1 and indisc == maxdisc :
-               self.logger.info('  | Perfect match of %s : nothing to do' % indisc)
-               retval.append(indisc.strip())
-           elif maxr > 0.90 :
-               self.logger.info('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
-               ##return maxdisc
-               retval.append(indisc.strip())
-           else:
-               self.logger.debug('   | Similarity ratio %f is < 0.90 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
-               continue
+            self.logger.info(' Next input discipline value %s of type %s' % (indisc,type(indisc)))
+            if PY2:
+                indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
+            else:
+                indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
+            maxr=0.0
+            maxdisc=''
+            for line in disctab :
+                line=re.split(r'#', line) 
+                try:
+                    if len(line) < 3:
+                        self.logger.critical('Missing base element in dicipline array %s' % line)
+                        sys.exit(-2)
+                    else:
+                        disc=line[2].strip()
+                        r=lvs.ratio(indisc,disc)
+                except Exception as e :
+                    self.logger.error('%s : %s of type %s can not compared to %s of type %s' % (e,indisc,type(indisc),disc,type(disc)))
+                    continue
+                if r > maxr  :
+                    maxdisc=disc
+                    maxr=r
+                    ##HEW-T                 print ('--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr))
+            if maxr == 1 and indisc == maxdisc :
+                self.logger.info('  | Perfect match of %s : nothing to do' % indisc)
+                retval.append(indisc.strip())
+            elif maxr > 0.90 :
+                self.logger.info('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
+                ##return maxdisc
+                retval.append(indisc.strip())
+            else:
+                self.logger.debug('   | Similarity ratio %f is < 0.90 compare value >>%s<< and discipline >>%s<<' % (maxr,indisc,maxdisc))
+                continue
 
         if len(retval) > 0:
             retval=list(OrderedDict.fromkeys(retval)) ## this elemenates real duplicates
@@ -1415,7 +1414,7 @@ class Mapper(object):
                                         jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
                                 elif facet == 'fulltext':
                                     encoding='utf-8'
-                                    jsondata[facet] = ' '.join([x.strip() for x in filter(None,jsondata[facet])]).encode(encoding)[:32000]
+                                    jsondata[facet] = ' '.join([x.strip(' \n\t') for x in filter(None,jsondata[facet].strip())]).split().encode(encoding)[:32000]
                                 elif facet == 'oai_set':
                                     if jsondata[facet]==['Not stated'] :
                                         jsondata[facet]=mdsubset
