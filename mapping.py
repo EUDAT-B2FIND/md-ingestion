@@ -563,7 +563,7 @@ class Mapper(object):
                  else:
                      disc=line[2].strip()
                      r=lvs.ratio(indisc.decode('unicode-escape'),disc.decode('unicode-escape'))
-                     logging.error('indisc: %s disc: %s ratio: %f' % (indisc,disc,r))
+                     logging.debug('indisc: %s disc: %s ratio: %f' % (indisc,disc,r))
              except Exception as e :
                  logging.error('[ERROR] %s in map_discipl : %s can not compared to %s !' % (e,indisc,disc))
                  continue
