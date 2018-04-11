@@ -85,7 +85,7 @@ deims  https://data.lter-europe.net/pycsw    csw  iso19139 full ### /?request=Ge
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## PANGAEA
-pangaea http://ws.pangaea.de/oai/provider          ListIdentifiers   oai_dc citable
+pangaea http://ws.pangaea.de/oai/provider          ListRecords   iso19139 citable
 ## GFZ  ## oai_datacite or iso1939 ???
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
 ##gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
