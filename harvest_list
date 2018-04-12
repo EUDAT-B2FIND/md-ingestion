@@ -11,6 +11,10 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## PANGAEA
+pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable
+##pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md citable
+##pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md BAH1962
 ## EGI datahub
 egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
 fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
@@ -54,11 +58,12 @@ icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
 ## ETSIN
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
-etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  fin-clarin
-etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  00000000-0000-0000-0000-000000000000
-etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  97779b54-3e78-df11-a6ac-005056a22855
-etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  geologian-tutkimuskeskus-gtk
-etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  taideyliopisto-university-of-the-arts-artsequal
+etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  fin-clarin
+##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  00000000-0000-0000-0000-000000000000
+##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  97779b54-3e78-df11-a6ac-005056a22855
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  geologian-tutkimuskeskus-gtk
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  taideyliopisto-university-of-the-arts-artsequal
 ## NorStore
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc  NATURAL_SCIENCE
 norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc PROF_APPL_SCIENCE 
@@ -82,8 +87,6 @@ lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
 deims  https://data.lter-europe.net/pycsw    csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
-## PANGAEA
-pangaea http://ws.pangaea.de/oai/provider          ListRecords   iso19139 citable
 ## GFZ  ## oai_datacite or iso1939 ???
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
 ##gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1

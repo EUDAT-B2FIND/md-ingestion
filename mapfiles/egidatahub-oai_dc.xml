@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore metadata - default. -->
+  <!-- Mappings for DublinCore metadata from EGI Datahub . -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
   </namespaces>
   <mappings>
-    <!-- General Information -->
+   <!-- General information -->
     <field name="title">
       <xpath>//dc:title</xpath>
     </field>
@@ -14,16 +14,17 @@
       <xpath>//dc:description</xpath>
     </field>
     <field name="tags">
-      <xpath>//dc:subject</xpath>
+      <string>//EGI</string>
     </field>
-    <!-- Access data -->
+   <!-- Access data  -->
     <field name="url">
       <xpath>//dc:source</xpath>
+    </field>
+    <field name="Checksum">
     </field>
     <field name="Rights">
       <xpath>//dc:rights</xpath>
     </field>
-   <!-- Provenance data -->
     <field name="Discipline">
       <xpath>//dc:subject</xpath>
     </field>
@@ -56,16 +57,16 @@
     <field name="Contact">
       <xpath>//dc:publisher</xpath>
     </field>
+   
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
     <field name="oai_identifier">
-      <xpath>//r:header/r:identifier/</xpath>
+      <xpath>//r:header/r:identifier</xpath>
     </field>
     <field name="oai_set">
-      <xpath>//r:header/r:setSpec/</xpath>
-    </field>
+      <xpath>//r:header/r:setSpec</xpath>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>
     </field>
