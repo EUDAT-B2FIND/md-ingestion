@@ -41,8 +41,13 @@ rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc
 ##HEW-!!! anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 ## DublinCore !!! 
 anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
-envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
-euro-argo http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
+envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd 
+## euro-argo http://sextant.ifremer.fr/geonetwork/srv/fre/csw csw oai_dc euro-argo 
+### ?SERVICE=CSW&REQUEST=GetCapabilities&VERSION=2.0.2
+### euro-argo http://sextant.ifremer.fr/en/csw csw oai_dc euro-argo
+euro-argo http://sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
+euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw oai_dc ## full ## ?SERVICE=CSW&REQUEST=GetCapabilities 
+euro-argo   http://www.seanoe.org/data/00311/42182 csw oai_dc ## full ## 
 envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
 envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 epos_1
@@ -52,9 +57,11 @@ envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
 envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 seadatanet
 ## SEADATANET
 ##seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw gmd cams1_ps
-seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
+seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_dc cams1_ps ##???iso19139 cams1_ps
 ## ICOS
 icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
+## IAGOS
+iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw oai_dc full
 ## ETSIN
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
@@ -92,10 +99,8 @@ gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
 ##gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
 ## GFZ sub communities
 gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
-geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON
-geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET
-##geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GEOFON
-##geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.SEISNET
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON ##???iso19139  DOIDB.GEOFON
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET ##???iso19139  DOIDB.GEOFON
 icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
 ###
 gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
@@ -116,7 +121,7 @@ pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc PDCMetadata
 pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc test_1 
 ##pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
 ##%%% ENES : MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
-enes	http://c3grid1.dkrz.de:8080/oai/provider   ListRecords  iso	iso-old-doi
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 ##%%% EARLINET : MD Provider eudat-oai.dkrz.de (directly extracted from CERA)
 earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso
 ### new comm. IVOA or EURO-VO
