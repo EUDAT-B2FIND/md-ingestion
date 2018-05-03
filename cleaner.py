@@ -23,7 +23,8 @@ import time
 from b2handle.clientcredentials import PIDClientCredentials
 from b2handle.handleclient import EUDATHandleClient
 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
-from B2FIND import CKAN_CLIENT, UPLOADER, OUTPUT
+from uploading import CKAN_CLIENT, Uploader
+from output import Output
 import logging as log
 
 def options_parser(modes):
@@ -78,7 +79,7 @@ def options_parser(modes):
     group_upload = optparse.OptionGroup(p, "Upload Options",
         "These options will be required to upload an dataset to a CKAN database.")
     group_upload.add_option('--host', help="host or IP adress of B2FIND portal (CKAN instance)", metavar='IP')
-    group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, iby default taken from file $HOME/.netrc)",metavar='STRING')
+    group_upload.add_option('--auth', help="Authentification for CKAN APIs (API key, by default taken from file $HOME/.netrc)",metavar='STRING')
     
     p.add_option_group(group_multi)
     p.add_option_group(group_single)
@@ -164,7 +165,7 @@ def main():
     print "\tStart of processing:\t%s" % (now)
 
     global logger
-    OUT = OUTPUT(pstat,now,jid,options)
+    OUT = Output(pstat,now,jid,options)
     ##HEW-D logger = log.getLogger()
     ## logger
     logger = OUT.setup_custom_logger('root',options.verbose)
@@ -210,7 +211,7 @@ def main():
 
         CKAN = CKAN_CLIENT(options.host,options.auth)
         ## UP = UPLOADER(CKAN, OUT, options.outdir,options.fromdate)
-        UP = UPLOADER(CKAN,options.ckan_check,HandleClient,cred,OUT,options.outdir,options.fromdate,options.host)
+        UP = Uploader(CKAN,options.ckan_check,HandleClient,cred,OUT,options.outdir,options.fromdate,options.host)
     if (options.identifier):
              list = [ options.identifier ]
              listtext='given by option -i (%d id\'s)' % len(list) 
