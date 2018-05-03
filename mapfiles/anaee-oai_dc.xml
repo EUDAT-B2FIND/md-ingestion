@@ -27,7 +27,7 @@
     </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <string>//dc:subject/text()</string>
+      <string>Environmental Research</string>
     </field>
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
@@ -50,6 +50,8 @@
     </field>
     <field name="Format">
       <xpath>//dc:format/text()</xpath>
+    <field name="ResourceType">
+      <xpath>//dc:type/text()</xpath>
     </field>
     <!-- Additional Information -->
     <field name="Contact">

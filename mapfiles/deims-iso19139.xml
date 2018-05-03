@@ -31,7 +31,7 @@
    </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <string>Earth Sciences</string>
+      <string>Environmental Research</string>
     </field>
     <field name="author">
       <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text()</xpath>
