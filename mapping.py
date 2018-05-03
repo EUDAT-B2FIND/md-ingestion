@@ -1,11 +1,12 @@
+# -*- coding: utf-8 -*-
 """mapping.py - class for B2FIND mapping : 
   - Mapper    maps harvested nad specific MD records onto B2FIND schema
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ)
 Further contributions by
-     2017 Claudia Martens
-     2014 Mikael Karlsson
      2013 John Mrziglod (DKRZ)
+     2014 Mikael Karlsson
+     2017 Claudia Martens
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -270,7 +271,7 @@ class Mapper(object):
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return {}
         else:
-            if self.OUT.verbose > 2 :
+            if self.OUT.verbose > 3 :
                 for id in iddict :
                     self.logger.debug('iddict\t(%s,%s)' % (id,iddict[id]))
                     if self.check_url(iddict[id]):
@@ -430,51 +431,56 @@ class Mapper(object):
             else:
                 yield el
 
-    def map_spatial(self,invalue,geotab):
+    def check_spatial(self,invalue,geotab):
         """
-        Map coordinates to spatial
- 
-        Copyright (C) 2014 Heinrich Widmann
+        Check spatial coverage and map to representiable form
+        Copyright (C) 2018 Heinrich Widmann
         Licensed under AGPLv3.
         """
+
         desc=''
-        pattern = re.compile(r";|\s+")
-        try:
-          logging.debug('   | Invalue:\t%s' % invalue)
-          if isinstance(invalue,list) :
-              if len(invalue) == 1:
-                  valarr=[invalue[0]] ##HEW-D .split()
-              else:
-                  valarr=self.flatten(invalue)
-          else:
-              valarr=invalue.split() ##HEW??? [invalue]
-          coordarr=list()
-          nc=0
-          for val in valarr:
-              if type(val) is dict : ## special dict case
-                  coordict=dict()
-                  if "description" in val :
-                      desc=val["description"]
-                  if "boundingBox" in val :
-                      coordict=val["boundingBox"]
-                      desc+=' : [ %s , %s , %s, %s ]' % (coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
-                      return (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
-                  else :
-                      return (desc,None,None,None,None)
-              else:
-                  logging.debug('value %s' % val)
-                  if self.is_float_try(val) is True :
-                      coordarr.append(val)
-                      nc+=1
-                  else:
-                      ec=0
-                      for gentry in geotab :
-                          if val == gentry[0]:
-                              desc+=' '+val
-                              coordarr.append(gentry[1])
-                              coordarr.append(gentry[2])
-                              break
-                      else:
+        ## check coordinates
+        if len(invalue) > 1 :
+            for lon in [invalue[1],invalue[3]]:
+                if float(lon) < -90 or float(lon) > 90 :
+                    print('It is not within the Longitude range')
+            for lat in [invalue[2],invalue[4]]:
+                if float(lat) < 0 or float(lon) > 360 :
+                    print('It is not within the Latitude range')
+            if invalue[1]==invalue[3] and invalue[2]==invalue[4] :
+                print('It is apoint')
+                if float(invalue[1]) > 0 : # northern longitude
+                    desc+='(%s N,' % invalue[1]
+                else :
+                    desc+='(%s S,' % float(invalue[1])*(-1.0)
+            else:
+                print('It is box')
+                if float(invalue[1]) > 0 :
+                    desc+='(%s-2.0fN-' % invalue[1]
+                else :
+                    desc+='(%-2.0fS-' % (float(invalue[1]) * -1.0)
+                if float(invalue[3]) > 0 :
+                    desc+='%-2.0fN,' % float(invalue[3])
+                else :
+                    desc+='%-2.0fS,' % (float(invalue[3]) * -1.0)
+                if float(invalue[2]) > 180 :
+                    desc+='%-2.0fW-' % (float(invalue[2]) -180.)
+                else :
+                    desc+='%-2.0fE-' % (180.0 - float(invalue[2]))
+                if float(invalue[4]) > 180 :
+                    desc+='%-2.0fW)' % (float(invalue[4]) - 180.0)
+                else :
+                    desc+='%-2.0fE)' % (180.0 - float(invalue[4]))              
+
+##                  if geotab:
+##                      ec=0
+##                      for gentry in geotab :
+##                          if val == gentry[0]:
+##                              desc+=' '+val
+##                              coordarr.append(gentry[1])
+##                              coordarr.append(gentry[2])
+##                              break
+##                      else:
 ##                          ec+=1
 ##                          if ec<10 :
 ##                              geoname=self.map_geonames(val)
@@ -489,25 +495,67 @@ class Mapper(object):
 ##                          nc=2
 ##                          coordarr.append(geoname.latitude)
 ##                          coordarr.append(geoname.longitude)
-                          desc+=' '+val
-          if nc==2 :
-              return (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-          elif nc==4 :
-              return (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-          elif desc :
-              return (desc,None,None,None,None) 
-          else :
-              return (None,None,None,None,None) 
+##HEW-D                  desc+=' '+val+','
 
-          if len(coordarr)==2 :
-              desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-              return(desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-          elif len(coordarr)==4 :
-              desc+=' boundingBox : [ %s , %s , %s, %s ]' % (coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-              return(desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+        print('desc %s' % desc)
+        retValue = (desc,invalue[1],invalue[2],invalue[3],invalue[4])
+        print('retValue %s' % (retValue,))
+        return retValue
+ 
+    def map_spatial(self,invalue,geotab):
+        """
+        Map coordinates to spatial
+ 
+        Copyright (C) 2014 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        desc=''
+        pattern = re.compile(r";|\s+")
+        try:
+           self.logger.debug('   | Invalue:\t%s' % invalue)
+           if isinstance(invalue,list) :
+              if len(invalue) == 1:
+                  valarr=[invalue[0]] ##HEW-D .split()
+              else:
+                  valarr=self.flatten(invalue)
+           else:
+              valarr=invalue.split() ##HEW??? [invalue]
+           coordarr=list()
+           nc=0
+           for val in valarr:
+              if type(val) is dict : ## special dict case
+                  coordict=dict()
+                  if "description" in val :
+                      desc=val["description"]
+                  if "boundingBox" in val :
+                      coordict=val["boundingBox"]
+                      retValue = (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
+                  else :
+                      retValue = (desc)
+              else:
+                  logging.debug('value %s' % val)
+                  if self.is_float_try(val) is True :
+                      coordarr.append(val)
+                      nc+=1
+           if nc==2 :
+              retValue = (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+           elif nc==4 :
+              retValue = (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+           elif desc :
+              retValue = (desc,None,None,None,None) 
+           else :
+              retValue = (None,None,None,None,None) 
+
+           if len(coordarr)==2 :
+              retValue = (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
+           elif len(coordarr)==4 :
+              retValue = (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
+
         except Exception as e :
-           logging.error('%s - in map_spatial invalue %s can not converted !' % (e,invalue))
-           return (None,None,None,None,None) 
+           self.logger.error('%s : %s can not converted !' % (e,retValue))
+           retValue = (None,None,None,None,None) 
+        ## print('KKKKKKKKKKKK %s' % (self.check_spatial(retValue,geotab)),)
+        return self.check_spatial(retValue,geotab)
 
     def map_checksum(self,invalue):
         """
@@ -546,7 +594,7 @@ class Mapper(object):
             inlist=swlist ## +seplist
             inlist=[item for sublist in inlist for item in sublist] ##???
         for indisc in inlist :
-            self.logger.info(' Next input discipline value %s of type %s' % (indisc,type(indisc)))
+            self.logger.debug('\t\t Next input discipline value %s of type %s' % (indisc,type(indisc)))
             if PY2:
                 indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
             else:
@@ -1351,8 +1399,8 @@ class Mapper(object):
                     etime=None
                     publdate=None
                     # loop over target schema (B2FIND)
-                    self.logger.info('Mapping of ...')
-                    ##HEW-T print ('self.b2findfields %s' % self.b2findfields.values())
+                    self.logger.info(' Mapping of ...')
+                    self.logger.info('\t|-> %-10s : %-10s |' % ( 'InField','Invalue'))
                     if 'url' not in jsondata:
                         self.logger.error('|- No identifier for id %s' % filename)
 
@@ -1360,7 +1408,10 @@ class Mapper(object):
                         facet=facetdict["ckanName"]
                         ##HEW-T  print ('facet %s ' % facet)
                         if facet in jsondata:
-                            self.logger.info('|- ... facet:value %s:%s' % (facet,jsondata[facet]))
+                            if facet in ['fulltext']:
+                                self.logger.debug('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
+                            else:
+                                self.logger.info('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
                             try:
                                 if facet == 'author':
                                     jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
@@ -1398,7 +1449,8 @@ class Mapper(object):
                                     spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet],geotab.geonames_list)
                                     if wlon and slat and elon and nlat :
                                         spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                                    if spdesc :
+                                    if spdesc != None :
+                                        print('spdesc %s' % spdesc)
                                         jsondata[facet] = spdesc
                                 elif facet == 'TemporalCoverage':
                                     tempdesc,stime,etime=self.map_temporal(jsondata[facet])
@@ -1414,7 +1466,8 @@ class Mapper(object):
                                         jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
                                 elif facet == 'fulltext':
                                     encoding='utf-8'
-                                    jsondata[facet] = ' '.join([x.strip(' \n\t') for x in filter(None,jsondata[facet].strip())]).split().encode(encoding)[:32000]
+                                    ##jsondata[facet] = filter(lambda name: name.strip(), jsondata[facet])
+                                    jsondata[facet] = [x for x in jsondata[facet] if x.strip()]
                                 elif facet == 'oai_set':
                                     if jsondata[facet]==['Not stated'] :
                                         jsondata[facet]=mdsubset
@@ -1439,6 +1492,14 @@ class Mapper(object):
                     if publdate :
                         jsondata["PublicationTimestamp"] = publdate
 
+                    self.logger.info(' Results of Mapping :')
+                    self.logger.info('\t|<- %-10s : %-10s |' % ( 'MappedFacet','Mappedvalue'))
+
+                    for key in jsondata :
+                        if key in ['fulltext']:
+                            self.logger.debug('\t|<- %-10s : %-10s |' % (key,jsondata[key]))
+                        else:
+                            self.logger.info('\t|<- %-10s : %-10s |' % (key,jsondata[key]))
                     ## write to JSON file
                     jsonfilename=os.path.splitext(filename)[0]+'.json'
                 
