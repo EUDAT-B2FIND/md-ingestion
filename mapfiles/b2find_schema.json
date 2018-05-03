@@ -253,5 +253,14 @@
         "display" : "hidden",
         "type" : "textual",
         "obligation" : "mandatory"
+    },
+    "fulltext" : {
+        "name" : "fulltext",
+        "description" : "",
+        "ckanName" : "fulltext",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "textual",
+        "obligation" : "optional"
     }
 }
