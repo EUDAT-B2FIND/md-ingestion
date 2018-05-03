@@ -339,7 +339,7 @@ limit 1000
             self.logger.critical(' Not supported harvest type %s' %  req["lverb"])
             sys.exit()
 
-        self.logger.debug(" Harvest method used %s" % harvestreq)
+        self.logger.debug(" Harvest method used %s" % req["lverb"])
         try:
             if req["lverb"].startswith('List'):
                 ntotrecs=len(list(rc))
