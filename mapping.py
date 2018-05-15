@@ -441,36 +441,43 @@ class Mapper(object):
         desc=''
         ## check coordinates
         if len(invalue) > 1 :
-            for lon in [invalue[1],invalue[3]]:
-                if float(lon) < -90 or float(lon) > 90 :
-                    print('It is not within the Longitude range')
-            for lat in [invalue[2],invalue[4]]:
-                if float(lat) < 0 or float(lon) > 360 :
-                    print('It is not within the Latitude range')
+            for lat in [invalue[1],invalue[3]]:
+                if float(lat) < -90 or float(lat) > 90 :
+                    self.logger.critical('Latitude %s is not in range [-90,90]' % lat)
+            for lon in [invalue[2],invalue[4]]:
+                if float(lon) < 0 or float(lon) > 360 :
+                    self.logger.warning('Longitude %s is not in range [0,360]' % lon)
+                    if float(lon) < -180. or float(lon) > 180 :
+                        self.logger.critical('Longitude %s is not in range [-180,180] nor in [0,360]' % lon)
+
             if invalue[1]==invalue[3] and invalue[2]==invalue[4] :
-                print('It is apoint')
-                if float(invalue[1]) > 0 : # northern longitude
-                    desc+='(%s N,' % invalue[1]
-                else :
-                    desc+='(%s S,' % float(invalue[1])*(-1.0)
+                self.logger.info('[%s,%s] seems to be a point' % (invalue[1],invalue[2]))
+                if float(invalue[1]) > 0 : # northern latitude
+                    desc+='(%-2.0fN,' % float(invalue[1])
+                else : # southern lat
+                    desc+='(%-2.0fS,' % (float(invalue[1]) * -1.0)
+                if float(invalue[2]) >= 0 : # eastern longitude
+                    desc+='%-2.0fE)' % float(invakue[2]) ## (float(invalue[2]) -180.)
+                else : # western longitude
+                    desc+='%-2.0fW)' % (float(invalue[2]) * -1.0)
             else:
-                print('It is box')
-                if float(invalue[1]) > 0 :
-                    desc+='(%s-2.0fN-' % invalue[1]
-                else :
+                self.logger.info('[%s,%s,%s,%s] seems to be a box' % (invalue[1],invalue[2],invalue[3],invalue[4]))
+                if float(invalue[1]) > 0 : # northern min latitude
+                    desc+='(%-2.0fN-' % float(invalue[1])
+                else : # southern min lat
                     desc+='(%-2.0fS-' % (float(invalue[1]) * -1.0)
-                if float(invalue[3]) > 0 :
+                if float(invalue[3]) > 0 : # northern max latitude
                     desc+='%-2.0fN,' % float(invalue[3])
-                else :
+                else :  # southern max lat
                     desc+='%-2.0fS,' % (float(invalue[3]) * -1.0)
-                if float(invalue[2]) > 180 :
-                    desc+='%-2.0fW-' % (float(invalue[2]) -180.)
-                else :
-                    desc+='%-2.0fE-' % (180.0 - float(invalue[2]))
-                if float(invalue[4]) > 180 :
-                    desc+='%-2.0fW)' % (float(invalue[4]) - 180.0)
-                else :
-                    desc+='%-2.0fE)' % (180.0 - float(invalue[4]))              
+                if float(invalue[2]) >= 0 : # eastern min longitude
+                    desc+='%-2.0fE-' % float(invalue[2])
+                else : # western min longitude
+                    desc+='%-2.0fW-' % (float(invalue[2]) * -1.0)
+                if float(invalue[4]) > 0 : # eastern max longitude
+                    desc+='%-2.0fE)' % float(invalue[4])
+                else : # western max longitude
+                    desc+='%-2.0fW)' % (float(invalue[4]) * -1.0)              
 
 ##                  if geotab:
 ##                      ec=0
@@ -497,10 +504,8 @@ class Mapper(object):
 ##                          coordarr.append(geoname.longitude)
 ##HEW-D                  desc+=' '+val+','
 
-        print('desc %s' % desc)
-        retValue = (desc,invalue[1],invalue[2],invalue[3],invalue[4])
-        print('retValue %s' % (retValue,))
-        return retValue
+        self.logger.info('Spatial description %s' % desc)
+        return (desc,invalue[1],invalue[2],invalue[3],invalue[4])
  
     def map_spatial(self,invalue,geotab):
         """
@@ -554,7 +559,7 @@ class Mapper(object):
         except Exception as e :
            self.logger.error('%s : %s can not converted !' % (e,retValue))
            retValue = (None,None,None,None,None) 
-        ## print('KKKKKKKKKKKK %s' % (self.check_spatial(retValue,geotab)),)
+        ##print('KKKKKKKKKKKK %s' % (self.check_spatial(retValue,geotab)),)
         return self.check_spatial(retValue,geotab)
 
     def map_checksum(self,invalue):
@@ -1450,7 +1455,6 @@ class Mapper(object):
                                     if wlon and slat and elon and nlat :
                                         spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
                                     if spdesc != None :
-                                        print('spdesc %s' % spdesc)
                                         jsondata[facet] = spdesc
                                 elif facet == 'TemporalCoverage':
                                     tempdesc,stime,etime=self.map_temporal(jsondata[facet])
