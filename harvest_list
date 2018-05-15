@@ -89,8 +89,8 @@ ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 ## ist     http://repository.ist.ac.at/cgi/oai2  ListRecords  oai_dc 7374617475733D707562
 ## LTER (repository DEIMS)
 lter   https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc LTER # d952913c-451e-4b5c-817e-d578dc8a4469 ## LTER
-lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
-lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
+## lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
+## lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
 deims  https://data.lter-europe.net/pycsw    csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
