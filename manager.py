@@ -367,7 +367,8 @@ def process_upload(UP, rlist):
                 logger.critical('Can not found community %s' % community)
                 sys.exit(-1)
         except Exception :
-            logging.critical("Can not list CKAN groups")
+            logging.critical("Can not list communities (CKAN groups)")
+            sys.exit(-1)
   
 
         if (last_community != community) :
