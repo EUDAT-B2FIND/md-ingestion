@@ -172,7 +172,7 @@ def main():
                 results= answer['result']['results']
             for ds in results : #### answer['results']:
                     counter +=1
-                    logger.warning('    | %-4d | %-40s |' % (counter,ds['name']))
+                    logger.debug('    | %-4d | %-40s |' % (counter,ds['name']))
                     perc=int(counter*100/tcount)
                     bartags=perc/5
                     if perc%10 == 0 and perc != oldperc :
