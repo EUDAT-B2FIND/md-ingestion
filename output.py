@@ -88,7 +88,8 @@ class Output(object):
             if verbose == 1 : log_level=logging.ERROR
             elif  verbose == 2 : log_level=logging.WARNING
             elif verbose == 3 : log_level=logging.INFO
-            elif verbose > 3 : log_level=logging.DEBUG
+            elif verbose >3 : log_level=logging.DEBUG
+            ### elif verbose > 5 : log_level=logging.NOTSET
 
 ###HEW-D??        # choose the debug level:
 ###HEW-D??        print('VVVVVVVVVV %s' % self.verbose)
@@ -119,7 +120,8 @@ class Output(object):
             handler.setFormatter(formatter)
 
             self.logger.setLevel(log_level)
-            ###HEW-D?? self.logger.addHandler(handler)
+            ###HEW-D?? 
+            self.logger.addHandler(handler)
             return self.logger
     
     def save_stats(self,request,subset,mode,stats):
