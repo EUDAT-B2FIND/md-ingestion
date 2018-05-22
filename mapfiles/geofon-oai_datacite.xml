@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for GFZ DataCite metadata -->
+  <namespaces>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="dcite_3" uri="http://datacite.org/schema/kernel-3"/>
+    <namespace ns="r" uri="http://datacite.org/schema/kernel-2.2"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//dcite_3:titles/dcite_3:title , //r:titles/r:title</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//dcite_3:description , //r:description</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//dcite_3:subject, //r:subject</xpath>
+    </field>
+    <!-- Access data -->
+   <field name="url">
+       <xpath>//r:resource/r:identifier, //dcite_3:resource/dcite_3:identifier</xpath>
+   </field>
+   <field name="Checksum">
+       <xpath></xpath> 
+   </field>
+    <field name="Rights">
+      <xpath>//r:rights</xpath>
+    </field>
+   <!-- Provenance data -->
+    <field name="Discipline">
+      <string>Earth Sciences</string>
+    </field>
+    <field name="author">
+      <xpath>//dcite_3:creatorName , //r:creatorName</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//dcite_3:publisher , //r:publisher</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//dcite_3:publicationYear , //r:publicationYear</xpath>
+    </field>
+   <!-- Formal data -->
+    <field name="Language">
+      <xpath>//dcite_3:language , //r:language</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//dcite_3:geoLocationBox , //r:geoLocationBox, //r:description </xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//dcite_3:dates/dcite_3:date , //r:dates/r:date</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//dcite_3:format , //r:format</xpath>
+    </field>
+    <!-- Additional Information -->
+    <field name="Contact">
+      <xpath>//dcite_3:publisher, //r:contributorName</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+  </mappings>
+</mapping-table>
