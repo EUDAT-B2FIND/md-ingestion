@@ -41,11 +41,14 @@ hzg   http://????  ListRecords  iso19139 coastmap
 aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D646174615F636F6C6C656374696F6E 
 ## RDA summerscool test OAI @CSC
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
+## Anaee
+#http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw iso19115 anaee #?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
 ## ENVRIPLUS
 ##HEW-!!! anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 ## DublinCore !!! 
-##anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso-19115 anaee 
+#anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
+#anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso-19139 anaee 
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 full
