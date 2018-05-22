@@ -20,7 +20,7 @@
     </field>
     <!-- Access data -->
     <field name="url">
-      <xpath>//dc:URI/text()</xpath>
+      <xpath>//dc:URI[1]/text()</xpath>
     </field>
     <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
