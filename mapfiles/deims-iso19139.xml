@@ -27,24 +27,25 @@
    <field name="Checksum">
    </field>
    <field name="Rights">
+    <xpath>//gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString/text()</xpath>
 
    </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <string>Environmental Research</string>
+      <string>Environmental Monitoring</string>
     </field>
     <field name="author">
       <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text()</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//gmd:MD_Metadata/gmd:dateStamp/gco:DateTime/text()</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date/text()</xpath>
     </field>
     <!-- Formal data -->
     <field name="Language">
-      <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gmd:LanguageCode/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:language/gmd:languageCode/text()</xpath>
     </field>
     <field name="SpatialCoverage">
       <xpath>//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()</xpath>
@@ -56,10 +57,10 @@
       <xpath>//gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString/text()</xpath>
     </field>
     <field name="ResourceType">
-      <xpath>//gmd:hierarchyLevelName/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:hierarchyLevelName/gco:CharacterString/text()</xpath>
     </field>
     <field name="Contact">
-      <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString/text()</xpath>
     </field>
    <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
