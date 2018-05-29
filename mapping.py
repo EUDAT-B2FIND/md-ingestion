@@ -1470,8 +1470,9 @@ class Mapper(object):
                                         jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
                                 elif facet == 'fulltext':
                                     encoding='utf-8'
-                                    ##jsondata[facet] = filter(lambda name: name.strip(), jsondata[facet])
-                                    jsondata[facet] = [x for x in jsondata[facet] if x.strip()]
+                                    jsondata[facet] = ';'.join([x for x in jsondata[facet] if x.strip()])[:32000]
+                                    if self.OUT.verbose > 2 :
+                                        jsondata[facet] = jsondata[facet][:100]
                                 elif facet == 'oai_set':
                                     if jsondata[facet]==['Not stated'] :
                                         jsondata[facet]=mdsubset
