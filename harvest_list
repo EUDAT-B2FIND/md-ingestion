@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##RADAR
+radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
 ## EMBRC
 #http://www.vliz.be/imis?module=dataset&show=json
 embrc http://www.vliz.be/imis json
