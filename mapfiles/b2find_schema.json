@@ -21,7 +21,7 @@
     },
     "Tags" : {
         "name" : "tags",
-        "description" : "",
+        "description" : "A subject, keyword, classification code, or key phrase describing the content .",
         "ckanName" : "tags",
         "ckanType" : "default",
         "display" : "shown",
@@ -31,61 +31,43 @@
     },
     "Source" : {
         "name" : "source",
-        "description" : "",
+        "description" : "An identifier (URL) that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data. At least one identifier is mandatory.",
         "ckanName" : "url",
         "ckanType" : "default",
         "display" : "shown",
         "type" : "url",
         "obligation" : "mandatory"
     }, 
-    "DOI" : {
-        "name" : "DOI",
-        "description" : "",
-        "ckanName" : "DOI",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "url",
-        "obligation" : "optional"
-    }, 
     "PID" : {
         "name" : "PID",
-        "description" : "",
+        "description" : "A persistent identifier (implemented as a handle in a Handleserver) that uniquely identifies a resource.",
         "ckanName" : "PID",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
     },
-    "Checksum" : {
-        "name" : "Checksum",
-        "description" : "",
-        "ckanName" : "Checksum",
-        "ckanType" : "default",
+    "DOI" : {
+        "name" : "DOI",
+        "description" : "A persistent, citable identifier (registered at DataCite) that uniquely identifies a resource.",
+        "ckanName" : "DOI",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "optional"
+    }, 
+    "MetaDataAccess" : {
+        "name" : "metadataccess",
+        "description" : "Is a link to the originally harvested metadata record (GetRecord request)",
+        "ckanName" : "metadata",
+        "ckanType" : "extra",
         "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
     },
-    "Rights" : {
-        "name" : "rights",
-        "description" : "",
-        "ckanName" : "Rights",
-        "ckanType" : "default",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    }, 
-    "Discipline" : {
-        "name" : "discipline",
-        "description" : "",
-        "ckanName" : "Discipline",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    },
     "Creator" : {
         "name" : "creator",
-        "description" : "",
+        "description" : "The main researchers involved in producing the data, or the authors of the publication, in priority order.",
         "ckanName" : "author",
         "ckanType" : "default",
         "display" : "shown",
@@ -94,7 +76,7 @@
     },
     "Publisher" :  {
         "name" : "publisher",
-        "description" : "",
+        "description" : "The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.",
         "ckanName" : "Publisher",
         "ckanType" : "extra",
         "display" : "shown",
@@ -103,25 +85,79 @@
     },
     "PublicationYear" : {
         "name" : "publicationyear",
-        "description" : "",
+        "description" : "The year when the data was or will be made publicly available.",
         "ckanName" : "PublicationYear",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     },
+    "Rights" : {
+        "name" : "rights",
+        "description" : "Any rights information for this resource.",
+        "ckanName" : "Rights",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    }, 
+    "Contact" : {
+        "name" : "contact",
+        "description" : "Any contact information for this resource.",
+        "ckanName" : "Contact",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
     "Language" : {
         "name" : "language",
-        "description" : "",
+        "description" : "The primary language of the resource.",
         "ckanName" : "Language",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     }, 
+    "ResourceType" : {
+        "name" : "",
+        "description" : "A description of the resource, a general type of the resource.",
+        "ckanName" : "ResourceType",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "Format" : {
+        "name" : "",
+        "description" : "Technical format of the resource.",
+        "ckanName" : "Format",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    }, 
+    "Checksum" : {
+        "name" : "Checksum",
+        "description" : "Checksum of the data record.",
+        "ckanName" : "Checksum",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "optional"
+    },
+    "Discipline" : {
+        "name" : "discipline",
+        "description" : "A scientific discipline the resource originates from. A closed vocabulary is used.",
+        "ckanName" : "Discipline",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
     "SpatialCoverage" : {
         "name" : "spatialcoverage",
-        "description" : "",
+        "description" : "A geolocation the research data itself is related to. Content of this category is displayed in plain text.  If a longitude/latitude information is given it will be displayed at the map.",
         "ckanName" : "SpatialCoverage",
         "ckanType" : "extra",
         "display" : "shown",
@@ -130,7 +166,7 @@
     }, 
     "TemporalCoverage" :  {
         "name" : "temporalcoverage",
-        "description" : "",
+        "description" : "Period of time the research data itself is related to. Could be a date format or plain text.",
         "ckanName" : "TemporalCoverage",
         "ckanType" : "extra",
         "display" : "shown",
@@ -182,42 +218,6 @@
         "type" : "date",
         "obligation" : "optional"
     }, 
-    "ResourceType" : {
-        "name" : "",
-        "description" : "",
-        "ckanName" : "ResourceType",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    },
-    "Format" : {
-        "name" : "",
-        "description" : "",
-        "ckanName" : "Format",
-        "ckanType" : "default",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    }, 
-    "Contact" : {
-        "name" : "contact",
-        "description" : "",
-        "ckanName" : "Contact",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    },
-    "MetaDataAccess" : {
-        "name" : "metadataccess",
-        "description" : "",
-        "ckanName" : "metadata",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "url",
-        "obligation" : "optional"
-    },
     "PublicationTimestamp" :  {
         "name" : "publicationtimestamp",
         "description" : "",
