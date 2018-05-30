@@ -618,11 +618,10 @@ class Mapper(object):
                 except Exception as e :
                     self.logger.error('%s : %s of type %s can not compared to %s of type %s' % (e,indisc,type(indisc),disc,type(disc)))
                     continue
-                if r > maxr  :
+                if r > maxr :
                     maxdisc=disc
                     maxr=r
-                    ##HEW-T
-                    print ('--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr))
+                    self.logger.debug('--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr))
                     rethier=line
             if maxr == 1 and indisc == maxdisc :
                 self.logger.info('  | Perfect match of >%s< : nothing to do, DiscHier %s' % (indisc,line))
@@ -1443,7 +1442,7 @@ class Mapper(object):
                                     jsondata[facet] = self.map_checksum(jsondata[facet])
                                 elif facet == 'Discipline':
                                     (jsondata[facet],jsondata['DiscHierarchy']) = self.map_discipl(jsondata[facet],disctab.discipl_list)
-                                    print('DiscHierarchy %s' % jsondata['DiscHierarchy'])
+                                    self.logger.debug('DiscHierarchy %s' % jsondata['DiscHierarchy'])
                                 elif facet == 'Publisher':
                                     blist = self.cut(jsondata[facet],'=',2)
                                     jsondata[facet] = self.uniq(blist)

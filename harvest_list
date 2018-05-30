@@ -18,8 +18,8 @@ radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
 embrc http://www.vliz.be/imis json
 ## PANGAEA
 pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ACD
-pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ASPS
-pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 BAH1962
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ASPS
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 BAH1962
 #pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 citable
 #pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable
 #pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md citable

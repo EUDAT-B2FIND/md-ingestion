@@ -33,8 +33,11 @@
     <field name="PublicationYear">
       <xpath>//datacite3:publicationYear</xpath>
     </field>
+    <field name="Rights">
+      <xpath>//datacite3:rightsList//datacite3:rights</xpath>
+    </field>
     <field name="Contact">
-      <xpath>//datacite3:publisher, //r:contributorName</xpath>
+      <xpath></xpath>
     </field>
     <!-- Representation information -->
     <field name="Language">
@@ -49,20 +52,16 @@
     <field name="Checksum">
       <xpath></xpath> 
     </field>
-    <field name="Rights">
-      <xpath>//datacite3:rightsList//datacite3:rights</xpath>
-    </field>
     <!-- Coverage information -->
     <field name="Discipline">
       <string>Earth System Research</string>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//datacite3:geoLocations/datacite3:geoLocation/datacite3:geoLocationPoint</xpath>
+      <xpath>//datacite3:geoLocations/datacite3:geoLocation/datacite3:geoLocationPoint,//datacite3:geoLocations/datacite3:geoLocation/datacite3:geoLocationBox</xpath>
     </field>
     <field name="TemporalCoverage">
       <xpath>//datacite3:dates/datacite3:date</xpath>
     </field>
-    <!-- Additional Information -->
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
