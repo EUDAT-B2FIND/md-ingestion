@@ -282,7 +282,7 @@ class Harvester(object):
                 src = CatalogueServiceWeb(req['url'])
                 NS = Namespaces()
                 namespaces=NS.get_namespaces()
-                if req['mdprefix'] == 'iso19139' :
+                if req['mdprefix'] == 'iso19139' or req['mdprefix'] == 'own' : 
                     nsp = namespaces['gmd']
                 else :
                     nsp = namespaces['csw']

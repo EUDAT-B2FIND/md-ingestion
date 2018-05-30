@@ -15,10 +15,12 @@
 #http://www.vliz.be/imis?module=dataset&show=json
 embrc http://www.vliz.be/imis json
 ## PANGAEA
-pangaea http://ws.pangaea.de/oai/provider ListRecords oai_datacite citable
-#pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable
-#pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md citable
-#pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md BAH1962
+pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ACD
+pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ASPS
+pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 BAH1962
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 citable
+#pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable #alt
+#pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md citable #alt
 ## EGI datahub
 egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
 fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
@@ -43,7 +45,7 @@ aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D64
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## Anaee
 #http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw iso19115 anaee #?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw own anaee #?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
 ## ENVRIPLUS
 ##HEW-!!! anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 ## DublinCore !!! 
@@ -57,7 +59,7 @@ euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139
 ##euro-argo http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw oai_dc ##iso19139 geht nicht
 ##envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
 =======
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
+#anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd 
 ## euro-argo http://sextant.ifremer.fr/geonetwork/srv/fre/csw csw oai_dc euro-argo 
 ### ?SERVICE=CSW&REQUEST=GetCapabilities&VERSION=2.0.2
