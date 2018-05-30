@@ -621,9 +621,11 @@ class Mapper(object):
                 if r > maxr  :
                     maxdisc=disc
                     maxr=r
-                    ##HEW-T                 print ('--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr))
+                    ##HEW-T
+                    print ('--- %s \n|%s|%s| %f | %f' % (line,indisc,disc,r,maxr))
+                    rethier=line
             if maxr == 1 and indisc == maxdisc :
-                self.logger.info('  | Perfect match of %s : nothing to do' % indisc)
+                self.logger.info('  | Perfect match of >%s< : nothing to do, DiscHier %s' % (indisc,line))
                 retval.append(indisc.strip())
             elif maxr > 0.90 :
                 self.logger.info('   | Similarity ratio %f is > 0.90 : replace value >>%s<< with best match --> %s' % (maxr,indisc,maxdisc))
@@ -635,9 +637,9 @@ class Mapper(object):
 
         if len(retval) > 0:
             retval=list(OrderedDict.fromkeys(retval)) ## this elemenates real duplicates
-            return ';'.join(retval)
+            return (';'.join(retval),rethier)
         else:
-            return 'Not stated' 
+            return ('Not stated',list()) 
    
     def cut(self,invalue,pattern,nfield=None):
         """
@@ -1440,7 +1442,8 @@ class Mapper(object):
                                 elif facet == 'Checksum':
                                     jsondata[facet] = self.map_checksum(jsondata[facet])
                                 elif facet == 'Discipline':
-                                    jsondata[facet] = self.map_discipl(jsondata[facet],disctab.discipl_list)
+                                    (jsondata[facet],jsondata['DiscHierarchy']) = self.map_discipl(jsondata[facet],disctab.discipl_list)
+                                    print('DiscHierarchy %s' % jsondata['DiscHierarchy'])
                                 elif facet == 'Publisher':
                                     blist = self.cut(jsondata[facet],'=',2)
                                     jsondata[facet] = self.uniq(blist)
@@ -1582,7 +1585,7 @@ class Mapper(object):
                 finally:
                     pass
             elif self.str_equals(facet,'Discipline'):
-                if self.map_discipl(value,self.cv_disciplines().discipl_list) is None :
+                if self.map_discipl(value,self.cv_disciplines().discipl_list)[0] is None :
                     errlist+=' | %10s | %20s |' % (facet, value)
                 else :
                     vall.append(value)
