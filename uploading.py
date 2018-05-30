@@ -513,7 +513,9 @@ class Uploader(object):
             "fgdc" : "No specification for fgdc available",
             "fbb" : "http://www.kulturarv.dk/fbb http://www.kulturarv.dk/fbb/fbb.xsd",
             "hdcp2" : "No specification for hdcp2 settings",
-            "eposap" : "http://www.epos-ip.org/terms.html"
+            "eposap" : "http://www.epos-ip.org/terms.html" , 
+            "dcite_3" : "http://schema.datacite.org/meta/kernel-4.1/metadata.xsd" , 
+            "datacite3" : "http://schema.datacite.org/meta/kernel-4.1/metadata.xsd"
         }
 
         # available of sub dirs and extention

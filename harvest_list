@@ -18,6 +18,8 @@ radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
 embrc http://www.vliz.be/imis json
 ## PANGAEA
 pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ACD
+pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ASPS
+pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 BAH1962
 #pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 citable
 #pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable
 #pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md citable
@@ -46,11 +48,10 @@ aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D64
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## Anaee
 #http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw iso19115 anaee #?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw own anaee #?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
 ## ENVRIPLUS
 ##HEW-!!! anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 ## DublinCore !!! 
-<<<<<<< HEAD
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso-19139 anaee 
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
@@ -59,8 +60,7 @@ euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139
 ##euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw oai_dc ##euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS?service=CSW&version=2.0.2&request=GetRecords&outputSchema=http://www.isotc211.org/2005/gmd&typeNames=csw:Record&RESULTTYPE=results&ELEMENTSETNAME=full
 ##euro-argo http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw oai_dc ##iso19139 geht nicht
 ##envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
-=======
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
+#anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd 
 ## euro-argo http://sextant.ifremer.fr/geonetwork/srv/fre/csw csw oai_dc euro-argo 
 ### ?SERVICE=CSW&REQUEST=GetCapabilities&VERSION=2.0.2
@@ -69,7 +69,6 @@ euro-argo http://sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-arg
 euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw oai_dc ## full ## ?SERVICE=CSW&REQUEST=GetCapabilities 
 euro-argo   http://www.seanoe.org/data/00311/42182 csw oai_dc ## full ## 
 envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro-argo
->>>>>>> 158c384be51a04304d67e90e0cc00c810491d4db
 envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 epos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 iagos_1
@@ -78,13 +77,9 @@ envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
 envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 seadatanet
 iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw iso19139  ##?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities 
 ## SEADATANET
-##seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw gmd cams1_ps
-<<<<<<< HEAD
 ## 1805: von Erwann CM http://sextant.ifremer.fr/geonetwork/srv/eng/csw-SEADATANET?service=CSW&version=2.0.2&request=GetRecords&outputSchema=http://www.isotc211.org/2005/gmd&typeNames=csw:Record&RESULTTYPE=results&ELEMENTSETNAME=full
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
-=======
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_dc cams1_ps ##???iso19139 cams1_ps
->>>>>>> 158c384be51a04304d67e90e0cc00c810491d4db
 ## ICOS
 icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
 ## IAGOS
