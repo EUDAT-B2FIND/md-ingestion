@@ -184,21 +184,21 @@ class CKAN_CLIENT(object):
             if PY2 :
                 response = urlopen(request)
             else :
-                response = urlopen(request)                
+                response = urlopen(request)
             self.logger.debug('response %s' % response)            
         except HTTPError as e:
             self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
             if ( e.code == 403 ):
-                logging.error('Access forbidden, maybe the API key is not valid?')
+                logging.error('Access forbidden, maybe the API key %s is not valid?' % self.api_key)
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
                 self.logger.info('\tMaybe the dataset already exists => try to update the package')
                 self.action('package_update',data_dict)
             elif ( e.code == 409):
-                self.logger.debug('\tMaybe you have a parameter error?')
+                self.logger.debug('%s : \tMaybe you have a parameter error?')
                 return {"success" : False}
             elif ( e.code == 500):
-                self.logger.critical('\tInternal server error')
+                self.logger.critical('%s : upload data : %s' % (e,data_dict))
                 return {"success" : False}
         except URLError as e:
             self.logger.critical('\tURLError %s : %s' % (e,e.reason))
@@ -403,7 +403,7 @@ class Uploader(object):
         self.logger.debug(' CKAN extra fields')
         for key in extrafields :
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum']:
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','ResourceType']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_identifier']:
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
@@ -758,14 +758,14 @@ class Uploader(object):
                         results['count']+=1
                         upload = 1
                     else:
-                        self.logger.debug('\t - Creation failed. Try to update instead.')
+                        self.logger.error('\t - Creation failed. Try to update instead.')
                         res = self.CKAN.action('package_update',jsondata)
                         if (res and res['success']):
                             self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
                             results['count']+=1
                             upload = 1
                         else:
-                            self.logger.warning('\t|- Failed dataset update of %s id %s' % (dsstatus,ds_id))
+                            self.logger.critical('\t|- Failed dataset update of %s id %s' % (dsstatus,ds_id))
                             results['ecount']+=1
         
                 # if the dsstatus is 'changed' then update it with package_update:
@@ -925,11 +925,12 @@ class Uploader(object):
                 self.logger.debug('\t - Failed update of state to "deleted" of dataset %s .' % dsname)
 
             self.logger.debug('\t - Try to delete dataset %s ' % dsname)
-##            results = self.CKAN.action('package_delete',jsondatadel)
-            results = self.CKAN.action('dataset_purge',jsondatadel)
+##
+            results = self.CKAN.action('package_delete',jsondatadel)
+##HEW-??            results = self.CKAN.action('dataset_purge',jsondatadel)
             if (results and results['success']):
                 rvalue = 1
-                self.logger.debug('\t - Succesful deletion of dataset %s.' % dsname)
+                self.logger.debug('\t - Successful deletion of dataset %s.' % dsname)
             else:
                 self.logger.debug('\t - Failed deletion of dataset %s.' % dsname)
         
