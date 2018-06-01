@@ -4,6 +4,7 @@
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
+    <namespace ns="dct" uri="http://purl.org/dc/terms/"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
@@ -16,43 +17,49 @@
     <field name="tags">
       <xpath>//dc:subject</xpath>
     </field>
-    <!-- Access data -->
+    <!-- Identifier -->
     <field name="url">
       <xpath>//dc:identifier</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights/</xpath>
-    </field>
-   <!-- Provenance data -->
-    <field name="Discipline">
-      <xpath>//dc:subject/</xpath>
-    </field>
+    <!-- Provenance information -->
     <field name="author">
-      <xpath>//dc:creator/</xpath>
+      <xpath>//dc:creator</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dc:publisher/</xpath>
-    </field>
+      <xpath>//dc:publisher</xpath>
+    </field> 
     <field name="PublicationYear">
-      <xpath>//dc:date[1]/</xpath>
+      <xpath>//dc:date</xpath>
+    </field>  
+    <field name="Rights">
+      <xpath>//dc:rights</xpath>
     </field>
-   <!-- Formal data -->
+    <field name="Contact">
+      <xpath>//dc:publisher</xpath>
+    </field>
+   <!-- Representation Information -->
     <field name="Language">
-      <xpath>//dc:language/</xpath>
+      <xpath>//dc:language</xpath>
     </field>
-    <field name="SpatialCoverage">
-      <xpath>//dc:coverage/</xpath>
-    </field>
-    <field name="TemporalCoverage">
-      <xpath>//dc:coverage/</xpath>
+    <field name="ResourceType">
+      <xpath>//dc:type</xpath>
     </field>
     <field name="Format">
-      <xpath>//dc:format/</xpath>
+      <xpath>//dc:format</xpath>
     </field>
-    <!-- Additional Information -->
-    <field name="Contact">
-      <xpath>//dc:publisher/</xpath>
+    <field name="Checksum">
+      <xpath></xpath>
+    </field>    
+   <!-- Coverage -->    
+    <field name="Discipline">
+      <xpath>//dc:subject</xpath>
     </field>
+    <field name="SpatialCoverage">
+      <xpath>//dct:spatial, //dc:coverage</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//dct:temporal, //dc:coverage</xpath>
+    </field>   
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
