@@ -438,14 +438,18 @@ class Mapper(object):
         Licensed under AGPLv3.
         """
 
+        self.logger.debug('invalue %s' % (invalue,))
+
+        if not any(invalue) :
+            self.logger.critical('Coordinate list has only None entries : %s' % (invalue,))
         desc=''
         ## check coordinates
         if len(invalue) > 1 :
             for lat in [invalue[1],invalue[3]]:
-                if float(lat) < -90 or float(lat) > 90 :
+                if float(lat) < -90. or float(lat) > 90. :
                     self.logger.critical('Latitude %s is not in range [-90,90]' % lat)
             for lon in [invalue[2],invalue[4]]:
-                if float(lon) < 0 or float(lon) > 360 :
+                if float(lon) < 0. or float(lon) > 360. :
                     self.logger.warning('Longitude %s is not in range [0,360]' % lon)
                     if float(lon) < -180. or float(lon) > 180 :
                         self.logger.critical('Longitude %s is not in range [-180,180] nor in [0,360]' % lon)
@@ -457,7 +461,7 @@ class Mapper(object):
                 else : # southern lat
                     desc+='(%-2.0fS,' % (float(invalue[1]) * -1.0)
                 if float(invalue[2]) >= 0 : # eastern longitude
-                    desc+='%-2.0fE)' % float(invakue[2]) ## (float(invalue[2]) -180.)
+                    desc+='%-2.0fE)' % float(invalue[2]) ## (float(invalue[2]) -180.)
                 else : # western longitude
                     desc+='%-2.0fW)' % (float(invalue[2]) * -1.0)
             else:
@@ -517,14 +521,15 @@ class Mapper(object):
         desc=''
         pattern = re.compile(r";|\s+")
         try:
-           self.logger.debug('   | Invalue:\t%s' % invalue)
+           self.logger.info('   | Invalue:\t%s' % invalue)
            if isinstance(invalue,list) :
               if len(invalue) == 1:
-                  valarr=[invalue[0]] ##HEW-D .split()
+                  valarr=invalue[0].split()
               else:
                   valarr=self.flatten(invalue)
            else:
               valarr=invalue.split() ##HEW??? [invalue]
+           self.logger.info('   | Valarr:\t%s' % valarr)
            coordarr=list()
            nc=0
            for val in valarr:
@@ -538,7 +543,7 @@ class Mapper(object):
                   else :
                       retValue = (desc)
               else:
-                  logging.debug('value %s' % val)
+                  self.logger.info('value %s' % val)
                   if self.is_float_try(val) is True :
                       coordarr.append(val)
                       nc+=1
