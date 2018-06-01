@@ -1,0 +1,18 @@
+{
+	"ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd",
+	"oai_ddi" : "http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd",
+	"marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
+	"iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
+	"iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
+	"inspire" : "http://inspire.ec.europa.eu/theme/ef",        
+	"oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+	"oai_datacite" : "http://schema.datacite.org/oai/oai-1.0/",
+	"oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
+	"cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
+	"json" : "http://json-schema.org/latest/json-schema-core.html",
+	"fgdc" : "No specification for fgdc available",
+	"fbb" : "http://www.kulturarv.dk/fbb http://www.kulturarv.dk/fbb/fbb.xsd",
+	"hdcp2" : "No specification for hdcp2 settings",
+	"eposap" : "http://www.epos-ip.org/terms.html",
+	"datacite3" : "http://schema.datacite.org/meta/kernel-4.1/metadata.xsd"
+}
