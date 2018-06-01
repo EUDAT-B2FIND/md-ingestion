@@ -1,0 +1,113 @@
+
+ Statistics of
+	community	pangaea
+	subset		ACD_1
+	# of records	2
+  see as well oaitestdata/pangaea-datacite3/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dcite_3:titles/dcite_3:title
+
+  |--     2 |  100 |     2 |  100
+      |- 1     : Data of 71 coastal sections from the arctic ocean      |
+      |- 1     : Discription of coastal shape at Bykovsky Peninsula, supplement to: Rachold, Volk [...(239 chars follow)...] |
+
+ |-> Description      <--       //dcite_3:descriptions/dcite_3:description
+
+  |--     1 |   50 |     1 |   50
+      |- 1     : This article presents a comparison of sediment input by rivers and by coastal er [...(1305 chars follow)...] |
+
+ |-> Tags             <--       //dcite_3:subjects/dcite_3:subject[@subjectScheme="Project"], //dcite_3:subjects/dcite_3:subject[@subjectScheme="Campaign"]
+
+  |--     2 |  100 |     2 |  100
+      |- 2     : Arctic Coastal Dynamics ACD         |
+
+ |-> Source           <--        //dcite_3:resource/dcite_3:identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> DOI              <--                     
+  |--     2 |  100 |     2 |  100
+      |- 1     : http://dx.doi.org/doi:10.1594/PANGAEA.58197      |
+      |- 1     : http://dx.doi.org/doi:10.1594/PANGAEA.76966      |
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Checksum         <--         
+           
+  |--     0 |    0 |     0 |    0
+
+ |-> Rights           <--       //dcite_3:rightsList/dcite_3:rights
+
+  |--     2 |  100 |     2 |  100
+      |- 2     : Creative Commons Attribution 3.0 Unported (CC-BY)      |
+
+ |-> Discipline       <--       <string>Earth System Research</string>
+
+  |--     2 |  100 |     2 |  100
+      |- 2     : Earth System Research               |
+
+ |-> Creator          <--       //dcite_3:creators/dcite_3:creator/dcite_3:creatorName
+
+  |--     2 |  100 |     2 |  100
+      |- 2     : Rachold, Volker                     |
+
+ |-> Publisher        <--       //dcite_3:publisher
+
+  |--     2 |  100 |     2 |  100
+      |- 2     : PANGAEA - Data Publisher for Earth & Environmental Science      |
+
+ |-> PublicationYear  <--       //dcite_3:publicationYear
+
+  |--     2 |  100 |     2 |  100
+      |- 1     : 2002                                |
+      |- 1     : 2000                                |
+
+ |-> Language         <--       //dcite_3:language
+
+  |--     2 |  100 |     2 |  100
+      |- 2     : English                             |
+
+ |-> SpatialCoverage  <--       //dcite_3:geoLocations/dcite_3:geoLocation/dcite_3:geoLocationBox
+
+  |--     1 |   50 |     1 |   50
+      |- 1     : 70.77607607 110.1977526 76.20273068 141.161218      |
+
+ |-> TemporalCoverage <--       //dcite_3:dates/dcite_3:date
+
+  |--     1 |   50 |     1 |   50
+      |- 1     :  point in time : 1982-01-01T11:59:59Z      |
+
+ |-> ResourceType     <--       //dcite_3:resourceType
+
+  |--     2 |  100 |     2 |  100
+      |- 1     : Supplementary Dataset               |
+      |- 1     : Dataset                             |
+
+ |-> Format           <--       //dcite_3:formats/dcite_3:format
+
+  |--     2 |  100 |     2 |  100
+      |- 2     : text/tab-separated-values           |
+
+ |-> Contact          <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> MetaDataAccess   <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationTimestamp <--                     
+  |--     2 |  100 |     2 |  100
+      |- 1     : 2000-07-01T11:59:59Z                |
+      |- 1     : 2002-07-01T11:59:59Z                |
+
+ |-> Community        <--                     
+  |--     0 |    0 |     0 |    0
+

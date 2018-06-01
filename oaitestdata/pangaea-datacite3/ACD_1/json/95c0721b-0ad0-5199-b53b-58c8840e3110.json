@@ -1,0 +1,88 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.76966",
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "PublicationTimestamp": "2002-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2002"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": [
+        "70.77607607 110.1977526 76.20273068 141.161218"
+    ],
+    "author": [
+        "Rachold, Volker",
+        "Grigoriev, Mikhail N"
+    ],
+    "fulltext": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.76966",
+        "2017-08-04T13:23:21Z",
+        "ACD",
+        "ORFOIS",
+        "10.1594/PANGAEA.76966",
+        "Grigoriev, Mikhail N",
+        "Rachold, Volker",
+        "Data of 71 coastal sections from the arctic ocean",
+        "PANGAEA - Data Publisher for Earth & Environmental Science",
+        "2002",
+        "Event label",
+        "Latitude of event",
+        "Longitude of event",
+        "Latitude of event 2",
+        "Longitude of event 2",
+        "ELEVATION",
+        "Cliff height",
+        "Density, dry bulk",
+        "Coastal retreat rate",
+        "Ground-ice",
+        "Carbon, organic, total",
+        "Comment",
+        "Visual observation",
+        "Calculated from weight/volume",
+        "Calculated",
+        "Element analyser CHN, LECO",
+        "Laptev_Sea_2002",
+        "Sampling on land",
+        "Arctic Coastal Dynamics (ACD)",
+        "eng",
+        "Dataset",
+        "10.2312/BzP_0354_1_2000",
+        "10.2312/BzPM_0388_2001",
+        "379 data points",
+        "text/tab-separated-values",
+        "Creative Commons Attribution 3.0 Unported (CC-BY)",
+        "70.77607607 110.1977526 76.20273068 141.161218"
+    ],
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.76966"
+    ],
+    "oai_set": [
+        "ACD",
+        "ORFOIS"
+    ],
+    "tags": [
+        {
+            "name": "Arctic Coastal Dynamics ACD"
+        },
+        {
+            "name": "Laptev_Sea_"
+        }
+    ],
+    "title": [
+        "Data of 71 coastal sections from the arctic ocean"
+    ],
+    "url": ""
+}
