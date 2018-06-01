@@ -699,6 +699,7 @@ class Mapper(object):
             invalue=invalue.split(';')
             invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
         for lentry in invalue :
+            self.logger.debug('lentry %s' % lentry)
             try:
                 if type(lentry) is dict :
                     if "value" in lentry:
@@ -720,13 +721,13 @@ class Mapper(object):
                     if isinstance(entry,int) or len(entry) < 2 : continue
                     entrywords = entry.split()
                     resultwords  = [word for word in entrywords if word.lower() not in stopwords]
-                    entry=' '.join(resultwords).encode('ascii','ignore').strip()
-                    dictlist.append({ "name": entry })
-            except AttributeError :
-                logging.error('[ERROR] %s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
-                continue
-            except Exception :
-                logging.error('[ERROR] %s in list2dictlist of lentry %s, entry %s ' % (e,lentry,entry))
+                    self.logger.debug("resultwords %s" % resultwords)
+                    if resultwords :
+                       entry=' '.join(resultwords).encode('ascii','ignore').strip()
+                       self.logger.debug("entry %s" % entry)
+                       dictlist.append({ "name": entry })
+            except (Exception,AttributeError) as err:
+                self.logger.error('%s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
                 continue
         return dictlist[:12]
 
@@ -1274,11 +1275,14 @@ class Mapper(object):
             mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
 
         if not os.path.isfile(mapfile):
-            self.logger.critical(' Can not access community specific mapfile %s ' % mapfile )
+            self.logger.error(' Can not access community specific mapfile %s ' % mapfile )
             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
             if not os.path.isfile(mapfile):
                 self.logger.critical(' ... nor md schema specific mapfile %s ' % mapfile )
                 return results
+            else :
+                self.logger.error(' ... but only generic mapfile %s ' % mapfile )
+
         print('\t|- Mapfile\t%s' % os.path.basename(mapfile))
         mf = codecs.open(mapfile, "r", "utf-8")
         maprules = mf.readlines()
@@ -1417,7 +1421,7 @@ class Mapper(object):
                             if facet in ['fulltext']:
                                 self.logger.debug('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
                             else:
-                                self.logger.info('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
+                                self.logger.debug('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
                             try:
                                 if facet == 'author':
                                     jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
@@ -1478,7 +1482,7 @@ class Mapper(object):
                                 elif facet == 'oai_set':
                                     if jsondata[facet]==['Not stated'] :
                                         jsondata[facet]=mdsubset
-                            except Exception as err:
+                            except Exception as err :
                                 self.logger.error('%s during mapping of field\t%s' % (err,facet))
                                 self.logger.debug('\t\tvalue%s' % (jsondata[facet]))
                                 continue
