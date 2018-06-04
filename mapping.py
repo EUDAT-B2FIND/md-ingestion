@@ -692,7 +692,7 @@ class Mapper(object):
 
         dictlist=[]
         valarr=[]
-        rm_chars = '(){}<>;|`\'\"\\#' ## remove chars not allowed in CKAN tags
+        rm_chars = '@(){}<>;|`\'\"\\#' ## remove chars not allowed in CKAN tags
         repl_chars = ':,=/?' ## replace chars not allowed in CKAN tags
         # read in list of stopwords
         swfile='%s/mapfiles/stopwords.txt' % os.getcwd()
