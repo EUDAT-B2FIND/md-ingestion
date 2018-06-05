@@ -53,7 +53,7 @@ def main():
 
     # check the version from svn:
     global ManagerVersion
-    ManagerVersion = '2.3.1'
+    ManagerVersion = '2.4.0'
 
     # parse command line options and arguments:
     modes=['h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
