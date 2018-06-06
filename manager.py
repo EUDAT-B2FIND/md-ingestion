@@ -25,6 +25,7 @@ Modified by  c/o DKRZ 2016   Heinrich Widmann
 ##from __future__ import print_function
 
 ##import classes from B2FIND modules
+from generating import Generator
 from harvesting import Harvester
 from mapping import Mapper
 from uploading import Uploader, CKAN_CLIENT
@@ -56,7 +57,7 @@ def main():
     ManagerVersion = '2.3.1'
 
     # parse command line options and arguments:
-    modes=['h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
+    modes=['a','g','generate','h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
     p = options_parser(modes)
     global options
     options,arguments = p.parse_args()
@@ -193,6 +194,12 @@ def process(options,pstat,OUT):
     for opt in procOptions :
         if hasattr(options,opt) : logger.debug(' |- %s:\t%s' % (opt.upper(),getattr(options,opt)))
     
+    ## GENERATION mode:    
+    if (pstat['status']['g'] == 'tbd'):
+        logger.info('\n|- Generation started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        GEN = Generator(OUT,pstat,options.outdir)
+        process_generate(GEN,reqlist)
+
     ## HARVESTING mode:    
     if (pstat['status']['h'] == 'tbd'):
         logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
@@ -255,6 +262,29 @@ def process(options,pstat,OUT):
         else:
             logger.critical("[CRITICAL] Deleting mode only supported in 'multi mode' and an explicitly deleting script given !")
 
+def process_generate(GEN, rlist):
+    ## process_generate (GENERATOR object, rlist) - function
+    # Generates per request.
+    #
+    # Parameters:
+    # -----------
+    # (object)  GENERATOR - object from the class GENERATEER
+    # (list)    rlist - list of request lists 
+    #
+    # Return Values:
+    # --------------
+    # None
+    ir=0
+    for request in rlist:
+        ir+=1
+        generatestart = time.time()
+        print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',request[2],time.strftime("%H:%M:%S")))
+        results = GEN.generate(request)
+    
+        if (results == -1):
+            logger.error("Couldn't generate from %s" % request)
+
+        generatetime=time.time()-generatestart
 
 def process_harvest(HV, rlist):
     ## process_harvest (HARVESTER object, rlist) - function
@@ -640,7 +670,7 @@ def options_parser(modes):
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
-    p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
+    p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (g)enerating, (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
     p.add_option('--outdir', '-d', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
@@ -687,7 +717,7 @@ def pstat_init (p,modes,mode,source,iphost):
         mode = 'h-u'
  
     # initialize status, count and timing of processes
-    plist=['a','h','m','v','u','c','o','d']
+    plist=['g','h','m','v','u','c','o','d']
     pstat = {
         'status' : {},
         'text' : {},
@@ -713,6 +743,7 @@ def pstat_init (p,modes,mode,source,iphost):
     else:
        stext='a list of MD providers'
        
+    pstat['text']['g']='Generate XML files from ' + stext 
     pstat['text']['h']='Harvest community XML files from ' + stext 
     pstat['text']['c']='Convert community XML to B2FIND JSON and do semantic mapping'  
     pstat['text']['m']='Map community XML to B2FIND JSON and do semantic mapping'  
@@ -722,6 +753,7 @@ def pstat_init (p,modes,mode,source,iphost):
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
     pstat['short']['h-u']='TotalIngestion'
+    pstat['short']['g']='Generating'
     pstat['short']['h']='Harvesting'
     pstat['short']['c']='Converting'
     pstat['short']['m']='Mapping'
