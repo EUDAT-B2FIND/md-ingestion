@@ -165,6 +165,14 @@ class Output(object):
             if(not subset in self.stats[request]):
                 self.stats_counter += 1
                 template = {
+                    'g':{
+                        'count':0,
+                        'dcount':0,
+                        'ecount':0,
+                        'tcount':0,
+                        'time':0,
+                        'avg':0,
+                    },
                     'h':{
                         'count':0,
                         'dcount':0,
