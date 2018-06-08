@@ -677,7 +677,8 @@ class Uploader(object):
                 datasetRecord["EUDAT/METADATATYPE"]=mdschemas[mdprefix]
                 datasetRecord["EUDAT/B2FINDSTATUS"]="REGISTERED"
                 datasetRecord["EUDAT/B2FINDCOMMUNITY"]=community
-                datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
+                if mdsubset:
+                    datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
 
                 if (self.cred): ##HEW-D??? options.handle_check):
                     pidAttrs=["URL","CHECKSUM","EUDAT/ROR","EUDAT/PPID","EUDAT/REPLICA","EUDAT/METADATATYPE","EUDAT/B2FINDSTATUS","EUDAT/B2FINDVERSION","EUDAT/B2FINDCOMMUNITY","EUDAT/B2FINDSUBSET"]
