@@ -763,7 +763,7 @@ def pstat_init (p,modes,mode,source,iphost):
 
 def exit_program (OUT, message=''):
     # stop the total time:
-    OUT.save_stats('#Start','subset','TotalTime',time.time()-TimeStart)
+    OUT.save_stats('#Start','subset','TotalTime',time.time()-settings.TimeStart)
 
     # print results with OUT.HTML_print_end() in a .html file:
     OUT.HTML_print_end()

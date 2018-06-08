@@ -11,9 +11,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
+import time
+
 def init():
     # check the version from :
     global B2FINDVersion
     B2FINDVersion = '2.4.0'
+    global TimeStart
+    TimeStart = time.time()
     
 
