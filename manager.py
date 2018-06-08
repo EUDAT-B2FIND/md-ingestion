@@ -30,6 +30,7 @@ from harvesting import Harvester
 from mapping import Mapper
 from uploading import Uploader, CKAN_CLIENT
 from output import Output
+import settings
 
 ##Py3???
 from b2handle.clientcredentials import PIDClientCredentials
@@ -49,12 +50,8 @@ import codecs
 import pprint
 
 def main():
-    global TimeStart
-    TimeStart = time.time()
-
-    # check the version from svn:
-    global ManagerVersion
-    ManagerVersion = '2.4.0'
+    # initialize global settings
+    settings.init()
 
     # parse command line options and arguments:
     modes=['a','g','generate','h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
@@ -79,7 +76,7 @@ def main():
     ## logger = logging.getLogger('root')
     ##HEW-D logging.basicConfig(format=log_format, level=log_level) ### logging.DEBUG)
     # print out general info:
-    logger.info('Version:  \t%s' % ManagerVersion)
+    logger.info('B2FIND Version:  \t%s' % settings.B2FINDVersion)
     logger.info('Run mode:   \t%s' % pstat['short'][mode])
     logger.info('Process ID:\t%s' % str(jid))
     logger.debug('Processing modes (to be done):\t')
@@ -663,17 +660,17 @@ def options_parser(modes):
         formatter = optparse.TitledHelpFormatter(),
         prog = 'manager.py',
         epilog='For any further information and documentation please look at the README.md file or at the EUDAT wiki (http://eudat.eu/b2find).',
-        version = "%prog " + ManagerVersion,
+        version = "%prog " + settings.B2FINDVersion,
         usage = "%prog [options]" 
     )
-        
+
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
     p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (g)enerating, (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    p.add_option('--outdir', '-d', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
+    p.add_option('--outdir', '-o', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",
@@ -744,8 +741,8 @@ def pstat_init (p,modes,mode,source,iphost):
        stext='a list of MD providers'
        
     pstat['text']['g']='Generate XML files from ' + stext 
-    pstat['text']['h']='Harvest community XML files from ' + stext 
-    pstat['text']['c']='Convert community XML to B2FIND JSON and do semantic mapping'  
+    pstat['text']['h']='Harvest XML files from ' + stext 
+    pstat['text']['c']='Convert XML to B2FIND JSON'  
     pstat['text']['m']='Map community XML to B2FIND JSON and do semantic mapping'  
     pstat['text']['v']='Validate JSON records against B2FIND schema'  
     pstat['text']['o']='OAI-Convert B2FIND JSON to B2FIND XML'  

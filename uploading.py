@@ -32,6 +32,7 @@ import re
 PY2 = sys.version_info[0] == 2
 
 # needed for UPLOADER and CKAN class:
+import settings
 import simplejson as json
 import hashlib
 import collections
@@ -167,7 +168,6 @@ class CKAN_CLIENT(object):
 
         # make json data in conformity with URL standards
         encoding='utf-8'
-        ##encoding='ISO-8859-15'
         try:
             if PY2 :
                 data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
@@ -640,13 +640,12 @@ class Uploader(object):
                 ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
                 jsondata=self.json2ckan(jsondata)
 
-                # Set the tag ManagerVersion:
-                ManagerVersion = '2.3.1' ##HEW-??? Gloaal Variable ManagerVersion
+                # Set the B2FINDVersion:
                 jsondata['extras'].append({
-                     "key" : "ManagerVersion",
-                     "value" : '2.3.1' ##HEW-??? Gloaal Variable ManagerVersionManagerVersion
+                     "key" : "B2FINDVersion",
+                     "value" : settings.B2FINDVersion 
                     })
-                datasetRecord["EUDAT/B2FINDVERSION"]=ManagerVersion
+                datasetRecord["EUDAT/B2FINDVERSION"]=settings.B2FINDVersion
                 ### datasetRecord["B2FINDHOST"]=self.iphost
 
                 self.logger.debug(' JSON dump\n%s' % json.dumps(jsondata, sort_keys=True))
