@@ -679,7 +679,8 @@ class Uploader(object):
                 datasetRecord["EUDAT/B2FINDCOMMUNITY"]=community
                 if mdsubset:
                     datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
-
+                else:
+                    datasetRecord["EUDAT/B2FINDSUBSET"]='N/A'
                 if (self.cred): ##HEW-D??? options.handle_check):
                     pidAttrs=["URL","CHECKSUM","EUDAT/ROR","EUDAT/PPID","EUDAT/REPLICA","EUDAT/METADATATYPE","EUDAT/B2FINDSTATUS","EUDAT/B2FINDVERSION","EUDAT/B2FINDCOMMUNITY","EUDAT/B2FINDSUBSET"]
                     ##HEW-D pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
