@@ -76,9 +76,9 @@ print('aaauth %s' % options.auth)
 
 if options.mode == 'c' :
     action='group_create'
-elif options.mode == 'u' :
-    action='group_update'
-    group_dict['id']=group_dict['name']
+##elif options.mode == 'u' :
+##    action='group_update'
+##    group_dict['id']=group_dict['name']
 elif options.mode == 'patch' :
     action='group_patch'
     group_dict['id']=group_dict['name']
