@@ -312,7 +312,51 @@ class Harvester(object):
             try:
                 src = SPARQLWrapper(req['url'])
                 harvestreq=getattr(src,'query','format') ##
-                statement='''
+                statement='''prefix cpmeta: <http://meta.icos-cp.eu/ontologies/cpmeta/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix dcterms: <http://purl.org/dc/terms/>
+select
+?url ?doi
+(concat("11676/", substr(str(?url), strlen(str(?url)) - 23)) AS ?pid)
+(if(bound(?theTitle), ?theTitle, ?fileName) as ?title)
+(if(bound(?theDescription), ?theDescription, ?spec) as ?description)
+?submissionTime ?tempCoverageFrom ?tempCoverageTo
+?dataLevel ?format ?sha256sum ?latitude ?longitude ?spatialCoverage
+where{
+   ?url cpmeta:wasSubmittedBy [
+     prov:endedAtTime ?submissionTime ;
+     prov:wasAssociatedWith [a ?submitterClass]
+    ] .
+ ?url cpmeta:hasObjectSpec [rdfs:label ?spec ; cpmeta:hasDataLevel ?dataLevel; cpmeta:hasFormat/rdfs:label ?format ] .
+  FILTER(?submitterClass = cpmeta:ThematicCenter || ?submitterClass = cpmeta:ES || ?dataLevel = "3"^^xsd:integer)
+   ?url cpmeta:hasName ?fileName .
+   ?url cpmeta:hasSha256sum ?sha256sum .
+   OPTIONAL{?url dcterms:title ?theTitle ; dcterms:description ?theDescription}
+   OPTIONAL{?coll dcterms:hasPart ?url . ?coll cpmeta:hasDoi ?doi }
+   {
+     {
+         ?url cpmeta:wasAcquiredBy ?acq .
+         ?acq prov:startedAtTime ?tempCoverageFrom; prov:endedAtTime ?tempCoverageTo; prov:wasAssociatedWith ?station .
+         {
+           {
+                ?station cpmeta:hasLatitude ?latitude .
+                ?station cpmeta:hasLongitude ?longitude .
+           }UNION{
+                ?url cpmeta:hasSpatialCoverage/cpmeta:asGeoJSON ?spatialCoverage .
+           }
+         }
+     }UNION{
+         ?url cpmeta:hasStartTime ?tempCoverageFrom .
+         ?url cpmeta:hasEndTime ?tempCoverageTo .
+         ?url cpmeta:hasSpatialCoverage/cpmeta:asGeoJSON ?spatialCoverage .
+     }
+   }
+}
+limit 10'''
+
+
+
+                '''
 prefix cpmeta: <http://meta.icos-cp.eu/ontologies/cpmeta/>
 prefix prov: <http://www.w3.org/ns/prov#>
 select (str(?submTime) as ?time) ?dobj ?spec ?dataLevel ?fileName ?submitterName where{

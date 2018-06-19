@@ -80,7 +80,7 @@ envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 iagos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  marcxml icos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
 envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 seadatanet
-iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw iso19139  ##?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities 
+##oldversion iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw iso19139  ##?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities 
 ## SEADATANET
 ## 1805: von Erwann CM http://sextant.ifremer.fr/geonetwork/srv/eng/csw-SEADATANET?service=CSW&version=2.0.2&request=GetRecords&outputSchema=http://www.isotc211.org/2005/gmd&typeNames=csw:Record&RESULTTYPE=results&ELEMENTSETNAME=full
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
@@ -88,7 +88,10 @@ seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_d
 ## ICOS
 icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
 ## IAGOS
-iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw oai_dc full
+iagos http://catalogue.sedoo.fr/geonetwork/srv/eng/csw csw oai_dc full
+#old iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw oai_dc full
+#von Damien 20180619 http://catalogue.sedoo.fr/geonetwork/srv/eng/csw?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&constraintLanguage=CQL_TEXT&constraint_language_version=1.1.0&constraint=csw:title%20LIKE%20%27IAGOS%27&typeNames=csw:Record&RESULTTYPE=results
+
 ## ETSIN
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
@@ -674,17 +677,17 @@ gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE Training instance
 ##HEW-T b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc trng_
 ##%%% EUDAT B2SHARE
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml CLARIN
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EISCAT
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUDAT
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml LTER
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
-b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml CLARIN
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EISCAT
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUDAT
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml LTER
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
+#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
 b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc LIFE+Respira
 #HEW-T b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml e1800bc8-780e-4617-a7b6-2312cb6190c4
 ##%%% DataCite : MD Provider is DataCite.org 
