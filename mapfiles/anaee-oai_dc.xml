@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore metadata from SeaNoe. -->
+  <!-- Mappings for DublinCore metadata - Template. -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
@@ -18,29 +18,41 @@
     <field name="tags">
       <xpath>//dc:subject/text()</xpath>
     </field>
-    <!-- Access data -->
+    <!-- Identifier -->
     <field name="url">
-      <xpath>//dc:URI[1]/text()</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights/text()</xpath>
-    </field>
-   <!-- Provenance data -->
-    <field name="Discipline">
-      <string>Environmental Research</string>
-    </field>
+    <!-- Provenance Information -->
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
     </field>
     <field name="Publisher">
       <xpath>//dc:publisher/text()</xpath>
-    </field>
+    </field> 
     <field name="PublicationYear">
-      <xpath>//dc:date[1]/text()</xpath>
+      <xpath>//dc:date/text()</xpath>
+    </field> 
+        <field name="Rights">
+      <xpath>//dc:rights/text()</xpath>
     </field>
-   <!-- Formal data -->
+    <field name="Contact">
+      <xpath>//dc:publisher/text()</xpath>
+    </field>
+    <!-- Representation Information -->
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//dc:type/text()</xpath>
+    </field>  
+    <field name="Format">
+      <xpath>//dc:format/text()</xpath>
+    </field>  
+    <field name="Checksum">
+      <xpath>//dc:valid/text()</xpath>
+    <!-- Coverage -->
+    <field name="Discipline">
+      <string>Environmental Research</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//ows:BoundingBox/ows:LowerCorner, //ows:BoundingBox/ows:UpperCorner</xpath>
@@ -48,15 +60,12 @@
     <field name="TemporalCoverage">
       <xpath>//dc:coverage/text()</xpath>
     </field>
-    <field name="Format">
-      <xpath>//dc:format/text()</xpath>
+    
     <field name="ResourceType">
       <xpath>//dc:type/text()</xpath>
     </field>
     <!-- Additional Information -->
-    <field name="Contact">
-      <xpath>//dc:publisher/text()</xpath>
-    </field>
+    
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
