@@ -685,7 +685,7 @@ b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml LTER
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
 b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc LIFE+Respira
+b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml LIFE+Respira
 #HEW-T b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml e1800bc8-780e-4617-a7b6-2312cb6190c4
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
