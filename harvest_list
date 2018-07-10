@@ -11,6 +11,11 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##Herbadrop
+herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc 
+herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
+##Yoda (Utrecht University)
+utrechtuni https://public.yoda.uu.nl/oai/oai ListRecords datacite
 ##E-Rosa Inra ??
 inra https://data.inra.fr/oai ListRecords oai_ddi ALL
 ##RADAR
