@@ -849,9 +849,21 @@ class Mapper(object):
             return subx[int(g1)]
     
         x = re.sub(r"#([0-9]+)", f2, x)
-    
         return x
     
+    def keynormalize(self,iterable):
+        """normalize all keys in iterable"""
+        ##for k, v in iterable.items():
+        ##    print(k, v)
+
+        if type(iterable) is dict:
+            for key in iterable.keys():
+                for namesp in ['aip.dc.','aip.meta.']:
+                    if key.startswith(namesp):
+                        newKey = key[len(namesp):]
+                        iterable[newKey] = iterable.pop(key)
+        return iterable
+
     def jsonpath(self,obj, expr, result_type='VALUE', debug=0, use_eval=True):
        """traverse JSON object using jsonpath expr, returning values or paths"""
 
@@ -887,6 +899,7 @@ class Mapper(object):
            return path
    
        def trace(expr, obj, path):
+            obj=self.keynormalize(obj)
             if debug: print ("trace", expr, "/", path)
             if expr:
                 x = expr.split(';')
@@ -1062,7 +1075,7 @@ class Mapper(object):
            cleaned_expr = self.normalize(expr)
            if cleaned_expr.startswith("$;"):
                cleaned_expr = cleaned_expr[2:]
-    
+           
            trace(cleaned_expr, obj, '$')
 
            if len(result) > 0:
@@ -1163,7 +1176,7 @@ class Mapper(object):
     
     def evalxpath(self, obj, expr, ns):
         # returns list of selected entries from xml obj using xpath expr
-        flist=re.split(r'[\(\),]',expr.strip()) ### r'[(]',expr.strip())
+        flist=re.split(r'[\(\),]',expr.strip())
         retlist=list()
         for func in flist:
             func=func.strip()
