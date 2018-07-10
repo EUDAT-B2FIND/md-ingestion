@@ -62,7 +62,7 @@ def main():
     # check option 'mode' and generate process list:
     (mode, pstat) = pstat_init(p,modes,options.mode,options.source,options.iphost)
     
-    # make jobdir
+    # set now time and process id
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     jid = os.getpid()
 
@@ -577,7 +577,6 @@ def process_delete(OUT, dir, options):
         OUT.save_stats(community+'-'+mdprefix,subset,'d',results)
 
 def parse_list_file(options):
-##filename,community=None,subset=None,mdprefix=None,target_mdschema=None):
     filename=options.list
     if(not os.path.isfile(filename)):
         logging.critical('[CRITICAL] Can not access job list file %s ' % filename)
@@ -647,7 +646,7 @@ def options_parser(modes):
     p = optparse.OptionParser(
         description = '''Description                                                              
 ===========                                                                           
- Management of metadata within EUDAT B2FIND, comprising                                      
+ Management of metadata within EUDAT B2FIND, comprising                               - Generation of formated XML records from raw metadata sets \n\t                       
       - Harvesting of XML files from OAI-PMH MD provider(s)\n\t
 
               - Mapping XML to JSON and semantic mapping of metadata to B2FIND schema\n\t
@@ -666,11 +665,10 @@ def options_parser(modes):
 
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
-    p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
+    p.add_option('--outdir', '-o', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (g)enerating, (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    p.add_option('--outdir', '-o', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",
