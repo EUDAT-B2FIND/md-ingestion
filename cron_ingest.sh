@@ -13,14 +13,14 @@ else
 fi
 if [[ -z $3 ]];
 then
-    targethost='eudat-b1.dkrz.de:8080'
+    targethost='eudatmd1.dkrz.de:8080'
 else
     targethost=$3
 fi
 
-# handle generation only for productive host (currently eudat-b1*
+# handle generation only for productive host (currently eudatmd1* )
 handlecheck=''
-if [[ $targethost == eudat-b1* ]]; 
+if [[ $targethost == eudatmd1* ]]; 
 then
     handlecheck='--handle_check=credentials_11098'
 fi
@@ -30,7 +30,7 @@ if [[ $(hostname) == centos* ]];
 then
     WORK="${HOME}/Projects/EUDAT/EUDAT-B2FIND/md-ingestion"
 else
-    WORK="${HOME}/EUDAT-B2FIND/md-ingestion"
+    WORK="${HOME}/md-ingestion"
 fi
     
 TODAY=`date +\%F`
