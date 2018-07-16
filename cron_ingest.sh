@@ -3,13 +3,20 @@
 ## Cronjob for B2FIND ingestion
 
 # check arguments
-if [[ $# -lt 2 ]];
+if [[ $# -lt 1 ]];
 then
-    echo "Missing arguments:/n Syntax: cron_test.sh community fromdays [targethost]"
+    echo "Missing arguments:/n Syntax: cron_test.sh community [fromdays targethost]"
     exit -1
 else
     community=$1
+fi
+if [[ -z $2 ]];
+then
+    fromdateset=''
+else
     daysago=$2
+    NDAYSAGO="${daysago} days ago"
+    fromdateset="--fromdate " + `date -d "$NDAYSAGO" '+%Y-%m-%d'`
 fi
 if [[ -z $3 ]];
 then
@@ -34,10 +41,8 @@ else
 fi
     
 TODAY=`date +\%F`
-NDAYSAGO="${daysago} days ago"
-YESTERDAY=`date -d "$NDAYSAGO" '+%Y-%m-%d'`
 cd $WORK
 set -x
-./manager.py -c $community -i $targethost $handlecheck --fromdate $YESTERDAY >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
+./manager.py -c $community -i $targethost $handlecheck $fromdateset >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
 
 exit 0
