@@ -224,7 +224,7 @@ class Mapper(object):
                 return False
         except URLError as err: ## HEW : stupid workaraound for SSL: CERTIFICATE_VERIFY_FAILED]
             self.logger.warning('%s in check_url of %s' % (err,url))
-            if str(e.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
+            if str(err.reason).startswith('[SSL: CERTIFICATE_VERIFY_FAILED]') :
                 return Warning
             else :
                 return False
@@ -1403,14 +1403,7 @@ class Mapper(object):
  
                     # get dataset id (CKAN name) from filename (a uuid generated identifier):
                     ds_id = os.path.splitext(filename)[0]
-                    self.logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id)) 
-                        
-                    # get OAI identifier from json data extra field 'oai_identifier':
-                    if 'oai_identifier' not in jsondata :
-                        jsondata['oai_identifier'] = [ds_id]
-
-                        oai_id = jsondata['oai_identifier'][0]
-                        self.logger.debug("        |-> identifier: %s\n" % (oai_id))
+                    self.logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))                         
 
                     ## XPATH rsp. JPATH converter
                     if  mdprefix == 'json':
@@ -1418,7 +1411,6 @@ class Mapper(object):
                             self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s/%s' % (time.strftime("%H:%M:%S"),infformat,inpath,filename))
                             jsondata=self.jsonmdmapper(jsondata,maprules)
                             reqpre = source + '/dataset/'
-                            mdaccess = reqpre + oai_id
                         except Exception as e:
                             self.logger.error('%s during %s json processing' % (infformat) )
                             results['ecount'] += 1
@@ -1428,14 +1420,22 @@ class Mapper(object):
                             # Run Python XPATH converter
                             self.logger.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
                             jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
-                            reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
-                            mdaccess = reqpre + '&identifier=' + oai_id
+                            reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix + '&identifier=' 
                         except Exception as e:
                             self.logger.error('%s during XPATH processing' % e)
                             results['ecount'] += 1
                             continue
 
+                    # get OAI identifier from json data extra field 'oai_identifier':
+                    if 'oai_identifier' not in jsondata :
+                        self.logger.error("oai_identifier not mapped, set to ds_id : %s\n" % (ds_id))
+                        jsondata['oai_identifier'] = [ds_id]
+                    
+                    oai_id = jsondata['oai_identifier'][0]
+                    self.logger.debug("        |-> identifier: %s\n" % (oai_id))
+
                     # exceptions for some communities:
+                    mdaccess = reqpre+ oai_id
                     if (community == 'clarin' and oai_id.startswith('mi_')):
                         mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
                     elif (community == 'sdl'):
@@ -1446,8 +1446,9 @@ class Mapper(object):
                         else:
                             mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
 
-                    if self.check_url(mdaccess) == False :
-                        logging.debug('URL to metadata record %s is broken' % (mdaccess))
+                    if self.OUT.verbose > 1 :
+                        if self.check_url(mdaccess) == False :
+                            logging.critical('URL to metadata record %s is broken' % (mdaccess))
                     else:
                         jsondata['MetaDataAccess']=mdaccess
 
@@ -2024,7 +2025,7 @@ class Mapper(object):
             
             ### oai-convert !!
             if target_mdschema == 'cera':
-                ##HEW-T print('JJJJJJJJ %s' % jsondata)
+                ##HEW-T print('JJJJJJJJ %s' % jsondata['oai_identifier'])
                 if 'oai_identifier' in jsondata :
                     identifier=jsondata['oai_identifier'][0]
                 else:
