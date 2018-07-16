@@ -59,7 +59,7 @@
     "MetaDataAccess" : {
         "name" : "metadataccess",
         "description" : "Is a link to the originally harvested metadata record (GetRecord request)",
-        "ckanName" : "metadata",
+        "ckanName" : "MetaDataAccess",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "url",
@@ -241,7 +241,7 @@
         "description" : "",
         "ckanName" : "community",
         "ckanType" : "default",
-        "display" : "shown",
+        "display" : "hidden",
         "type" : "textual",
         "obligation" : "optional"
     },
