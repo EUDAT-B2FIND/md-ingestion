@@ -607,7 +607,6 @@ class Uploader(object):
                 else:
                     reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
                     mdaccess = reqpre + '&identifier=' + oai_id
-                    ##HEW-MV2mapping!!! : urlcheck=self.check_url(mdaccess)
                 index1 = mdaccess
 
                 ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
