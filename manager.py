@@ -355,8 +355,7 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        outfile='oaidata/%s-%s/%s' % (request[0],request[3],'validation.stat')
-        print ('   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S")))
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S")))
         cstart = time.time()
 
         ### HEW!!!
