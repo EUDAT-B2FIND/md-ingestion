@@ -539,7 +539,7 @@ class Uploader(object):
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)
-                print('\t|- Upload to\t--> %s/group/%s' % (iphost,community))
+                print('\t|- Upload to\t--> %s/group/%s' % (self.iphost,community))
 
             # check input path
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
