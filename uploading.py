@@ -539,6 +539,7 @@ class Uploader(object):
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)
+                print('\t|- Upload to\t--> %s/group/%s' % (iphost,community))
 
             # check input path
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
@@ -599,15 +600,6 @@ class Uploader(object):
                 if jsondata == None :
                     self.logger.critical('File %s failed check and will not been uploaded' % filename)
                     continue
-
-                #  generate get record request for field MetaDataAccess:
-                if (mdprefix == 'json'):
-                    reqpre = source + '/dataset/'
-                    mdaccess = reqpre + oai_id
-                else:
-                    reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
-                    mdaccess = reqpre + '&identifier=' + oai_id
-                index1 = mdaccess
 
                 ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
                 jsondata=self.json2ckan(jsondata)
