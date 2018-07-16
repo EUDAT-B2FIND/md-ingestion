@@ -1272,6 +1272,7 @@ class Mapper(object):
         
         # set processing parameters
         community=request[0]
+        source=request[1]
         mdprefix=request[3]
         mdsubset=request[4]   if len(request)>4 else None
         target_mdschema=request[8]   if len(request)>8 else None
@@ -1399,14 +1400,27 @@ class Mapper(object):
                             continue
                         else:
                             self.logger.debug(' |- Read file %s ' % infilepath)
+ 
+                    # get dataset id (CKAN name) from filename (a uuid generated identifier):
+                    ds_id = os.path.splitext(filename)[0]
+                    self.logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id)) 
                         
+                    # get OAI identifier from json data extra field 'oai_identifier':
+                    if 'oai_identifier' not in jsondata :
+                        jsondata['oai_identifier'] = [ds_id]
+
+                        oai_id = jsondata['oai_identifier'][0]
+                        self.logger.debug("        |-> identifier: %s\n" % (oai_id))
+
                     ## XPATH rsp. JPATH converter
                     if  mdprefix == 'json':
                         try:
                             self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s/%s' % (time.strftime("%H:%M:%S"),infformat,inpath,filename))
                             jsondata=self.jsonmdmapper(jsondata,maprules)
+                            reqpre = source + '/dataset/'
+                            mdaccess = reqpre + oai_id
                         except Exception as e:
-                            self.logger.error('    | [ERROR] %s : during %s 2 json processing' % (infformat) )
+                            self.logger.error('%s during %s json processing' % (infformat) )
                             results['ecount'] += 1
                             continue
                     else:
@@ -1414,11 +1428,35 @@ class Mapper(object):
                             # Run Python XPATH converter
                             self.logger.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
                             jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
-                            ##HEW-T print ('jsondata %s' % jsondata)
+                            reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
+                            mdaccess = reqpre + '&identifier=' + oai_id
                         except Exception as e:
-                            self.logger.error('    | [ERROR] %s : during XPATH processing' % e )
+                            self.logger.error('%s during XPATH processing' % e)
                             results['ecount'] += 1
                             continue
+
+                    # exceptions for some communities:
+                    if (community == 'clarin' and oai_id.startswith('mi_')):
+                        mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
+                    elif (community == 'sdl'):
+                        mdaccess =reqpre+'&identifier=oai::record/'+oai_id
+                    elif (community == 'b2share'):
+                        if mdsubset.startswith('trng') :
+                            mdaccess ='https://trng-b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
+                        else:
+                            mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
+
+                    if self.check_url(mdaccess) == False :
+                        logging.debug('URL to metadata record %s is broken' % (mdaccess))
+                    else:
+                        jsondata['MetaDataAccess']=mdaccess
+
+                    jsondata['group']=community
+
+                    # add some general CKAN specific fields to dictionary:
+                    jsondata["name"] = ds_id
+                    jsondata["state"]='active'
+                    jsondata["groups"]=[{ "name" : community }]
 
                     iddict=dict()
                     blist=list()
@@ -1434,12 +1472,8 @@ class Mapper(object):
 
                     for facetdict in self.b2findfields.values() :
                         facet=facetdict["ckanName"]
-                        ##HEW-T  print ('facet %s ' % facet)
                         if facet in jsondata:
-                            if facet in ['fulltext']:
-                                self.logger.debug('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
-                            else:
-                                self.logger.debug('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
+                            self.logger.info('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
                             try:
                                 if facet == 'author':
                                     jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
@@ -1713,6 +1747,9 @@ class Mapper(object):
                 self.logger.critical('The directory %s does not exist or no json files to validate are found!' % (inpath))
                 continue
 
+            outfile='%s/%s/%s' % (cmpath,subdir,'validation.stat')
+            print('\t|- Validationfile\t--> %s' % outfile)
+
             # find all .json files in inpath/json:
             files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath)))
             results['tcount'] = len(files)
@@ -1800,48 +1837,46 @@ class Mapper(object):
                     self.logger.error(" %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
                     exit()
 
-        outfile='%s/%s' % (cmpath,'validation.stat')
-        printstats='\n Statistics of\n\tcommunity\t%s\n\tsubset\t\t%s\n\t# of records\t%d\n  see as well %s\n\n' % (community,subdir,fcount,outfile)  
-        printstats+=" |-> {:<16} <-- {:<20} \n  |-- {:<12} | {:<9} | \n".format('Facet name','XPATH','Mapped','Validated')
-        printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
-        printstats+="      |- Value statistics:\n      |- {:<5} : {:<30} |\n".format('#','Value')
-        printstats+=" ----------------------------------------------------------\n"
+                printstats='\n Statistics of\n\tcommunity\t%s\n\tsubset\t\t%s\n\t# of records\t%d\n  see as well %s\n\n' % (community,subdir,fcount,outfile)  
+                printstats+=" |-> {:<16} <-- {:<20} \n  |-- {:<12} | {:<9} | \n".format('Facet name','XPATH','Mapped','Validated')
+                printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
+                printstats+="      |- Value statistics:\n      |- {:<5} : {:<30} |\n".format('#','Value')
+                printstats+=" ----------------------------------------------------------\n"
 
-        for key,facetdict in self.b2findfields.items() : ###.values() :
-            facet=facetdict["ckanName"]
-            if facet.startswith('#') or facetdict["display"] == "hidden" :
-                continue
+                for key,facetdict in self.b2findfields.items() : ###.values() :
+                    facet=facetdict["ckanName"]
+                    if facet.startswith('#') or facetdict["display"] == "hidden" :
+                        continue
 
-            if float(fcount) > 0 :
-                printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(key,totstats[facet]['xpath'],totstats[facet]['mapped'],totstats[facet]['mapped']*100/float(fcount),totstats[facet]['valid'],totstats[facet]['valid']*100/float(fcount))
-                try:
-                    counter=Counter(totstats[facet]['vstat'])
-                    if totstats[facet]['vstat']:
-                        for tuple in counter.most_common(10):
-                            ucvalue=tuple[0]##HEW-D .encode('utf8')
-                            if len(ucvalue) > 80 :
-                                restchar=len(ucvalue)-80
-                                contt=' [...(%d chars follow)...]' % restchar 
-                            else: 
-                                contt=''
-                            ##HEW-D?? printstats+="      |- {:<5d} : {:<30}{:<5} |\n".format(tuple[1],unicode(tuple[0])[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
-                            printstats+="      |- {:<5d} : {:<30s}{:<5s} |\n".format(tuple[1],ucvalue[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
-                except TypeError as e:
-                    self.logger.error('%s : facet %s' % (e,facet))
-                    continue
-                except Exception as e:
-                    self.logger.error('%s : facet %s' % (e,facet))
-                    continue
+                    if float(fcount) > 0 :
+                        printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(key,totstats[facet]['xpath'],totstats[facet]['mapped'],totstats[facet]['mapped']*100/float(fcount),totstats[facet]['valid'],totstats[facet]['valid']*100/float(fcount))
+                        try:
+                            counter=Counter(totstats[facet]['vstat'])
+                            if totstats[facet]['vstat']:
+                                for tuple in counter.most_common(10):
+                                    ucvalue=tuple[0]##HEW-D .encode('utf8')
+                                    if len(ucvalue) > 80 :
+                                        restchar=len(ucvalue)-80
+                                        contt=' [...(%d chars follow)...]' % restchar 
+                                    else: 
+                                        contt=''
+                                printstats+="      |- {:<5d} : {:<30s}{:<5s} |\n".format(tuple[1],ucvalue[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
+                        except TypeError as e:
+                            self.logger.error('%s : facet %s' % (e,facet))
+                            continue
+                        except Exception as e:
+                            self.logger.error('%s : facet %s' % (e,facet))
+                            continue
 
-        if self.OUT.verbose > 2:
-            print (printstats)
+            if self.OUT.verbose > 2:
+                print (printstats)
 
-        f = open(outfile, 'w')
-        f.write(printstats)
-        f.write("\n")
-        f.close
+            f = open(outfile, 'w')
+            f.write(printstats)
+            f.write("\n")
+            f.close
 
-        self.logger.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+            self.logger.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
 
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
