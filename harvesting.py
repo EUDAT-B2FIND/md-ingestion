@@ -573,7 +573,7 @@ limit 1000
         # path to the file with all ids to delete:
         delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
         if len(delete_ids) > 0 :
-            with open(delete_file, 'a') as file:
+            with open(delete_file, 'a+') as file:
                 for id in delete_ids :
                     file.write(id+'\n')
 
