@@ -5,7 +5,7 @@
 # check arguments
 if [[ $# -lt 1 ]];
 then
-    echo "Missing arguments:/n Syntax: cron_test.sh community [fromdays targethost]"
+    echo "Missing argument:/n Syntax: cron_test.sh community [fromdays targethost]"
     exit -1
 else
     community=$1
@@ -15,8 +15,9 @@ then
     fromdateset=''
 else
     daysago=$2
-    NDAYSAGO="${daysago} days ago"
-    fromdateset="--fromdate " + `date -d "$NDAYSAGO" '+%Y-%m-%d'`
+    NDAYSAGO="${daysago} day ago"
+    fromdateval=`date --date="${NDAYSAGO}" +%Y-%m-%d`
+    fromdateset="--fromdate ${fromdateval}"
 fi
 if [[ -z $3 ]];
 then
