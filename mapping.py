@@ -1330,25 +1330,25 @@ class Mapper(object):
         subsettag=re.compile(r'_\d+')
         # loop over all available subdirs
         for subdir in sorted(subdirs) :
-            if mdsubset and not subdir.startswith(mdsubset) :
-                self.logger.warning('\t |- Subdirectory %s does not match %s - no processing required' % (subdir,mdsubset))
-                continue
-            elif self.fromdate :
-                datematch = re.search(r'\d{4}-\d{2}-\d{2}$', subdir[:-2])
+            self.logger.warning('\t |- Check next subdirectory %s for reqiuired processing (mdsubset is %s)' % (subdir,mdsubset))
+            if self.fromdate :
+                datematch = re.search(mdsubset+r'_f(\d{4}-\d{2}-\d{2})_\d+$',subdir) ##, subdir[:-2])
                 if datematch :
-                    subdirdate = datetime.datetime.strptime(datematch.group(), '%Y-%m-%d').date()
+                    subdirdate = datetime.datetime.strptime(datematch.group(1), '%Y-%m-%d').date()
                     fromdate = datetime.datetime.strptime(self.fromdate, '%Y-%m-%d').date()
                     if (fromdate > subdirdate) :
                         self.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,self.fromdate))
                         continue
                     else :
                         self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
-                else:
-                    self.logger.warning('\t |- Subdirectory %s does not contain a timestamp %%Y-%%m-%%d  - no processing required' % subdir)
-                    continue    
-            else:
-                print('\t |- Subdirectory %s is processed' % subdir)
-                self.logger.debug('Processing of subdirectory %s' % subdir)
+                else :
+                    continue
+            elif not re.search(mdsubset+r'_\d+$', subdir) :                   
+                self.logger.error('\t |- Subdirectory %s does not match %s_NN - no processing required' % (subdir,mdsubset))
+                continue
+
+            print('\t |- Subdirectory %s is processed' % subdir)
+            self.logger.debug('Processing of subdirectory %s' % subdir)
 
             # check input path
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
@@ -1697,7 +1697,7 @@ class Mapper(object):
         # set processing parameters
         community=request[0]
         mdprefix=request[3]
-        mdsubset=request[4]   if len(request)>4 else None
+        mdsubset=request[4]   if len(request)>4 else ''
 
         # set extension of mapfile according to md format (xml or json processing)
         if mdprefix == 'json' :
@@ -1719,22 +1719,22 @@ class Mapper(object):
         # loop over all available subdirs
         fcount=0
         for subdir in sorted(subdirs) :
-            if mdsubset and not subdir.startswith(mdsubset) :
-                self.logger.warning('\t |- Subdirectory %s does not match %s - no processing required' % (subdir,mdsubset))
-                continue
-            elif self.fromdate :
-                datematch = re.search(r'\d{4}-\d{2}-\d{2}$', subdir[:-2])
+            self.logger.warning('\t |- Check next subdirectory %s for reqiuired processing (mdsubset is %s)' % (subdir,mdsubset))
+            if self.fromdate :
+                datematch = re.search(mdsubset+r'_f(\d{4}-\d{2}-\d{2})_\d+$',subdir) ##, subdir[:-2])
                 if datematch :
-                    subdirdate = datetime.datetime.strptime(datematch.group(), '%Y-%m-%d').date()
+                    subdirdate = datetime.datetime.strptime(datematch.group(1), '%Y-%m-%d').date()
                     fromdate = datetime.datetime.strptime(self.fromdate, '%Y-%m-%d').date()
                     if (fromdate > subdirdate) :
                         self.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,self.fromdate))
                         continue
                     else :
                         self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
-                else:
-                    self.logger.warning('\t |- Subdirectory %s does not contain a timestamp %%Y-%%m-%%d  - no processing required' % subdir)
-                    continue    
+                else :
+                    continue
+            elif not re.search(mdsubset+r'_\d+$', subdir) :                   
+                self.logger.error('\t |- Subdirectory %s does not match %s_NN - no processing required' % (subdir,mdsubset))
+                continue
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)
@@ -1850,7 +1850,7 @@ class Mapper(object):
                         continue
 
                     if float(fcount) > 0 :
-                        printstats+="\n |-> {:<16} <-- {:<20}\n  |-- {:>5} | {:>4.0f} | {:>5} | {:>4.0f}\n".format(key,totstats[facet]['xpath'],totstats[facet]['mapped'],totstats[facet]['mapped']*100/float(fcount),totstats[facet]['valid'],totstats[facet]['valid']*100/float(fcount))
+                        printstats+="\n |-> {!s:<16s} <-- {!s:<20s}\n  |-- {:>5d} | {:>4.0f} | {:>5d} | {:>4.0f}\n".format(key,totstats[facet]['xpath'],totstats[facet]['mapped'],totstats[facet]['mapped']*100/float(fcount),totstats[facet]['valid'],totstats[facet]['valid']*100/float(fcount))
                         try:
                             counter=Counter(totstats[facet]['vstat'])
                             if totstats[facet]['vstat']:
@@ -1861,7 +1861,7 @@ class Mapper(object):
                                         contt=' [...(%d chars follow)...]' % restchar 
                                     else: 
                                         contt=''
-                                printstats+="      |- {:<5d} : {:<30s}{:<5s} |\n".format(tuple[1],ucvalue[:80],contt) ##HEW-D??? .encode("utf-8")[:80],contt)
+                                printstats+="      |- {:<5d} : {!s:<30s}{!s:<5s} |\n".format(tuple[1],ucvalue[:80],contt)
                         except TypeError as e:
                             self.logger.error('%s : facet %s' % (e,facet))
                             continue
