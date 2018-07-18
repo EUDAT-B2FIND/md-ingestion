@@ -2,22 +2,34 @@
 
 ## Cronjob for B2FIND ingestion
 
+syntax="Syntax: cron_test.sh community [fromdays targethost]"
+
 # check arguments
 if [[ $# -lt 1 ]];
 then
-    echo "Missing argument:/n Syntax: cron_test.sh community [fromdays targethost]"
+    printf "Missing argument:\n${syntax}\n"
     exit -1
 else
     community=$1
+    if [ $community == '-h' ] || [ $community == '--help' ];
+    then
+	printf "${syntax}\n"
+	exit 0
+    fi
 fi
 if [[ -z $2 ]];
 then
     fromdateset=''
 else
     daysago=$2
-    NDAYSAGO="${daysago} day ago"
-    fromdateval=`date --date="${NDAYSAGO}" +%Y-%m-%d`
-    fromdateset="--fromdate ${fromdateval}"
+    if [ $daysago == 'all' ];
+    then
+	fromdateset=""
+    else
+	NDAYSAGO="${daysago} day ago"
+	fromdateval=`date --date="${NDAYSAGO}" +%Y-%m-%d`
+	fromdateset="--fromdate ${fromdateval}"
+    fi
 fi
 if [[ -z $3 ]];
 then
