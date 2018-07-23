@@ -5,8 +5,8 @@
 Copyright (c) 2013 Heinrich Widmann (DKRZ)
 Further contributions by
      2013 John Mrziglod (DKRZ)
-     2014 Mikael Karlsson
-     2017 Claudia Martens
+     2014 Mikael Karlsson (CSC)
+     2017 Claudia Martens (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -244,29 +244,36 @@ class Mapper(object):
             iddict=dict()
 
             self.logger.debug('invalue %s' % invalue)
-            for id in filter(None,invalue) :
-                self.logger.debug(' id\t%s' % id)
-                if id.startswith('http://data.theeuropeanlibrary'):
-                    iddict['url']=id
-                elif id.startswith('ivo:'):
-                    iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
-                elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
-                    iddict['DOI'] = self.concat('http://dx.doi.org/doi:',id)
-                elif 'doi.org/' in id:
-                    iddict['DOI'] = 'http://dx.doi.org/'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
-                elif 'doi:' in id: ## and 'DOI' not in iddict :
-                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
-                elif 'hdl.handle.net' in id:
-                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
-                    if reurl :
-                        iddict['PID'] = reurl.group("url")
-                elif 'hdl:' in id:
-                    iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
-                elif 'http:' in id or 'https:' in id:
-                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
-                    if reurl :
-                        iddict['url'] = reurl.group("url")##[0]
-            
+            for refs in filter(None,invalue) :
+                idarr=re.split(',',refs)
+                for id in idarr :
+	                self.logger.debug(' id\t%s' % id)
+	                ##sys.exit(0)
+	                if id.startswith('http://data.theeuropeanlibrary'):
+	                    iddict['url']=id
+	                elif id.startswith('ivo:'):
+	                    iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
+	                elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
+	                    iddict['DOI'] = self.concat('http://dx.doi.org/doi:',id)
+	                elif 'doi.org/' in id:
+	                    iddict['DOI'] = 'http://dx.doi.org/'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
+	                elif 'doi:' in id: ## and 'DOI' not in iddict :
+	                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
+	                elif 'hdl.handle.net' in id:
+	                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
+	                    if reurl :
+	                        iddict['PID'] = reurl.group("url")
+	                elif 'hdl:' in id:
+	                    iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
+	                elif id.startswith('11100/'):
+	                    iddict['PID'] = '%s/%s' % ('http://hdl.handle.net/',id)
+	                elif 'http:' in id or 'https:' in id:
+	                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
+	                    if reurl :
+	                        iddict['url'] = reurl.group("url")##[0]
+	                elif id.startswith('irods'):
+	                    iddict['url'] = id
+	            
         except Exception as e :
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return {}
@@ -711,8 +718,11 @@ class Mapper(object):
                         valarr.append(lentry["value"])
                     else:
                         valarr=lentry.values()
-                else:
-                    valarr=re.split(r"[\n&,;+]+",lentry)
+                elif re.search(r"[\n&,;+]+",lentry) :
+                    valarr=re.split(r"[\n&,;+]+",lentry)                    
+                elif len(lentry.split()) > 3 :
+                    valarr=lentry.split()
+
                 self.logger.debug('valarr %s' % valarr)
                 for entry in valarr:
                     if len(entry.split()) > 8 :
@@ -1207,12 +1217,12 @@ class Mapper(object):
 
     def xpathmdmapper(self,xmldata,xrules,namespaces):
         # returns list or string, selected from xmldata by xpath rules (and namespaces)
-        self.logger.info(' XPATH rules %s' % xrules)
-        self.logger.info(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
+        self.logger.debug(' XPATH rules %s' % xrules)
+        self.logger.debug(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
         jsondata=dict()
 
         for line in xrules:
-          self.logger.info(' Next line of xpath rules : %-20s' % (line))
+          self.logger.debug(' Next line of xpath rules : %-20s' % (line))
           try:
             retval=list()
             m = re.match(r'(\s+)<field name="(.*?)">', line)
@@ -1220,7 +1230,7 @@ class Mapper(object):
                 field=m.group(2)
                 if field in ['Discipline','oai_set','Source']: ## set default for mandatory fields !!
                     retval=['Not stated']
-                self.logger.info(' Field:xpathrule : %-10s:%-20s\n' % (field,line))
+                self.logger.debug(' Field:xpathrule : %-10s:%-20s\n' % (field,line))
             else:
                 xpath=''
                 m2 = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)').search(line)
@@ -1231,15 +1241,15 @@ class Mapper(object):
                     retval=xpath
                 elif m2:
                     xpath=m2.group(3)
-                    self.logger.info(' xpath %-10s' % xpath)
+                    self.logger.debug(' xpath %-10s' % xpath)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
                 else:
-                    self.logger.info(' Found no xpath expression')
+                    self.logger.debug(' Found no xpath expression')
                     continue
 
                 if retval and len(retval) > 0 :
                     jsondata[field]=retval ### .extend(retval)
-                    self.logger.info(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
+                    self.logger.debug(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
                 elif field in ['Discipline','oai_set']:
                     jsondata[field]=['Not stated']
           except Exception as e:
@@ -1274,7 +1284,7 @@ class Mapper(object):
         community=request[0]
         source=request[1]
         mdprefix=request[3]
-        mdsubset=request[4]   if len(request)>4 else None
+        mdsubset=request[4]   if len(request)>4 else ''
         target_mdschema=request[8]   if len(request)>8 else None
 
         # settings according to md format (xml or json processing)
@@ -1482,7 +1492,6 @@ class Mapper(object):
                                     jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
                                 elif facet == 'url':
                                     iddict = self.map_url(jsondata[facet])
-
                                     if 'DOI' in iddict :
                                         if not 'DOI' in jsondata :
                                             jsondata['DOI']=iddict['DOI']
