@@ -592,6 +592,8 @@ class Uploader(object):
                 # add some general CKAN specific fields to dictionary:
                 if self.iphost.startswith('eudat-b1') :
                     jsondata["owner_org"]="eudat"
+                elif self.iphost.startswith('trng') or self.iphost.startswith('145.') :
+                    jsondata["owner_org"]="rda" #### "eudat-b2find"
                 else:
                     jsondata["owner_org"]="eudat-b2find"
                 
