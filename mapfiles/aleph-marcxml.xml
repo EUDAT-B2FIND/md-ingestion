@@ -29,7 +29,7 @@
     </field>
    <!-- Provenance data -->
    <field name="Discipline">
-      <string>Elementary Particle Physics</string>
+      <string>Particles, Nuclei and Fields</string>
    </field>
    <field name="author">
       <xpath>//marc:datafield[@tag='999']/marc:subfield[@code='9']/text()</xpath>
