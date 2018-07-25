@@ -22,15 +22,7 @@ PY2 = sys.version_info[0] == 2
 
 import argparse
 import simplejson as json
-##if PY2:
-##    import urllib, urllib2
-##else:
-##    import urllib, urllib2
-
-if PY2:
-    import ckanclient
-else:
-    from uploading import CKAN_CLIENT
+from uploading import CKAN_CLIENT
 
 from collections import OrderedDict,Counter
 
@@ -54,12 +46,9 @@ def main():
     logger = OUT.setup_custom_logger('root',args.verbose)
     
     ## Settings for CKAN client and API
-    ckanapi3='http://'+args.ckan+'/api/3'
-    if PY2:
-        ckan = ckanclient.CkanClient(ckanapi3)
-    else:
-        auth='12345'
-        ckan = CKAN_CLIENT(args.ckan,auth)
+    ckanapi3='http://'+args.iphost+'/api/3'
+    auth='12345'
+    CKAN = CKAN_CLIENT(args.iphost,auth)
 
     ckan_limit=500000
 
@@ -72,13 +61,13 @@ def main():
             else:
                 action=args.request
             if PY2 :
-                answer = ckan.action(action, rows=ckan_limit)
+                answer = CKAN.action(action, rows=ckan_limit)
             else:
-                answer = ckan.action(action)
+                answer = CKAN.action(action)
         except ckanclient.CkanApiError as e :
             print('\t\tError %s Supported list requests are %s.' % (e,ckanlistrequests))
             sys.exit(1)
-        ## print '|- The list of %ss :\n\t%s' % (args.request.split('_')[0],'\n\t'.join(answer).encode('utf8'))
+
         print('\n\t%s' % '\n\t'.join(answer).encode('utf8'))
         sys.exit(0)
 
@@ -93,17 +82,17 @@ def main():
     if (args.pattern):
         ckan_pattern += sand + pattern   
 
-    print(' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.ckan,ckan_pattern))
+    print(' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern))
 
     if args.request == 'package_search' :
         if PY2:
-            answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit)
+            answer = CKAN.action('package_search', {"q":ckan_pattern}) ##HEW-D? , rows=ckan_limit)
         else:
-            answer = ckan.action('package_search',{"q":ckan_pattern})
+            answer = CKAN.action('package_search',{"q":ckan_pattern})
     for key, value in answer.items() :
         logger.warning('answer has key %s' % key)
     if PY2 :
-        tcount=answer['count']
+        tcount=answer['result']['count'] ### ['count']
     else:
         tcount=answer['result']['count']
     print(' | - Results:\n\t|- %d records found in %d sec' % (tcount,time.time()-start))
@@ -154,20 +143,16 @@ def main():
         while (cstart < tcount) :
             if (cstart > 0):
                 if PY2 :
-                    answer = ckan.action('package_search', q=ckan_pattern, rows=ckan_limit, start=cstart)
+                    answer = CKAN.action('package_search', {"q":ckan_pattern,"rows":ckan_limit,"start":cstart}) ##HEW-D q=ckan_pattern, rows=ckan_limit, start=cstart)
                 else:
-                    answer = ckan.action('package_search',{"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
+                    answer = CKAN.action('package_search',{"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
             if PY2 :
-                if len(answer['results']) == 0 :
+                if len(answer['result']) == 0 :
                     break
-            #HEW-D else:
-            ##HEW-D    if len(answer['result']['results']) == 0 :
-            ##HEW-D        break
-
         
             # loop over found records
             if PY2:
-                results= answer['results']
+                results= answer['result']['results'] ### ['results']
             else:
                 results= answer['result']['results']
             for ds in results : #### answer['results']:
@@ -182,11 +167,10 @@ def main():
         
                     
                     record['id']  = '%s' % (ds['name'])
-                    outline=record['id']
+                    outline='%s\n' % record['id']
         
                     # loop over facets
                     for facet in akeys:
-                        ##HEW-T print 'facet : %s' % facet
                         ckanFacet=b2findfields[facet]["ckanName"]
                         if ckanFacet in ds: ## CKAN default field
                             if facet == 'Group':
@@ -194,10 +178,8 @@ def main():
                             else:
                                 record[facet]  = ds[ckanFacet]
                         else: ## CKAN extra field
-                            ##HEW-T print 'ds extras %s' % ds['extras']
                             efacet=[e for e in ds['extras'] if e['key'] == facet]
                             if efacet:
-                                ##HEW-T print 'rrrr %s effff %s' % (record[facet],efacet[0]['value'])
                                 record[facet]  = efacet[0]['value']
                             else:
                                 record[facet]  = 'N/A'
@@ -214,24 +196,29 @@ def main():
                                 statc[facet][word]+=1
                         if not ( record[facet] == 'N/A' or record[facet] == 'Not Stated') and len(record[facet])>0 : 
                             count[facet]+=1
-                        outline+='\t | %-30s' % record[facet][:30]
-                    fh.write(outline+'\n')
+                        if PY2 :
+                            fh.writelines((record[facet]+'\n').decode('utf-8'))
+                        else :
+                            fh.writelines((record[facet]+'\n'))
+
             cstart+=len(results)
             logger.warning('%d records done, %d in total' % (cstart,tcount))
         fh.close()
         
         if len(akeys) > 0 :
                 statfh = io.open('stat_'+args.output, "w", encoding='utf8')
-                ##print "\n|- Statistics :\n\t| %-16s | %-10s | %6s |\n\t%s " % ('Facet','Occurence','%',"-" * 50)
                 print('|- Statistics written to file %s' % 'stat_'+args.output)
         
-                statline=unicode("")
+                statline=""
                 for outt in akeys:
                     statline+= "| %-16s\n\t| %-15s | %-6d | %3d |\n" % (outt,'-Total-',count[outt],int(count[outt]*100/tcount))
                     for word in statc[outt].most_common(10):
                         statline+= '\t| %-15s | %-6d | %3d |\n' % (word[0][:100], word[1], int(word[1]*100/tcount))
         
-                statfh.write(statline)
+                if PY2 :
+                    statfh.write(statline.decode('utf-8'))
+                else :
+                    statfh.write(statline)
         
                 statfh.close()
         
@@ -264,7 +251,7 @@ def get_args(ckanlistrequests):
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
     p.add_argument('--keys', '-k', help=" B2FIND fields additionally outputed for the found records. Additionally statistical information is printed into an extra output file.", default=[], nargs='*')
     p.parse_args('--keys'.split())
-    p.add_argument('--ckan',  help='CKAN portal address, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu:8080', metavar='URL')
+    p.add_argument('--iphost',  help='IP address of the CKAN instance, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu:8080', metavar='URL')
     p.add_argument('--output', '-o', help="Output file name (default is results.txt)", default='results.txt', metavar='FILE')
     p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', default='*:*', metavar='PATTERN', nargs='*')
     
