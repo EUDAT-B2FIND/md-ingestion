@@ -1578,7 +1578,8 @@ indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc co
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_3
 indus     http://drtc1.isibang.ac.in/indus/oai/request ListIdentifiers oai_dc com_1_4
 ## ALEPH
-aleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml dataset:aleph
+aleph     http://www.openaccessrepository.it/oai2d   ListRecords marcxml dataset:aleph
+## forOpenAire aleph     http://www.openaccessrepository.it/oai2d   ListRecords marcxml openaire
 ##HEW-Taleph     http://www.openaccessrepository.it/oai2d   ListIdentifiers marcxml test
 ## OpenAIRE
 openaire  http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers oai_datacite OpenAIRE
