@@ -720,10 +720,13 @@ class Mapper(object):
                         valarr=lentry.values()
                 elif re.search(r"[\n&,;+]+",lentry) :
                     valarr=re.split(r"[\n&,;+]+",lentry)                    
-                elif len(lentry.split()) > 3 :
+                else :
                     valarr=lentry.split()
-
+                ##elif len(lentry.split()) > 3 :
+                ##    valarr=lentry.split()
+                ##    self.logger.debug('split valarr %s' % valarr)
                 self.logger.debug('valarr %s' % valarr)
+
                 for entry in valarr:
                     if len(entry.split()) > 8 :
                         logging.debug('String has too many words : %s' % entry)
@@ -1353,12 +1356,12 @@ class Mapper(object):
                         self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
                 else :
                     continue
-            elif not re.search(mdsubset+r'_\d+$', subdir) :                   
-                self.logger.error('\t |- Subdirectory %s does not match %s_NN - no processing required' % (subdir,mdsubset))
+            elif not ( mdsubset == subdir or re.search(mdsubset+r'_\d+$', subdir)) :               
+                self.logger.error('\t |- Subdirectory %s does not match %s[_NN] - no processing required' % (subdir,mdsubset))
                 continue
-
-            print('\t |- Subdirectory %s is processed' % subdir)
-            self.logger.debug('Processing of subdirectory %s' % subdir)
+            else:
+                print('\t |- Subdirectory %s is processed' % subdir)
+                self.logger.debug('Processing of subdirectory %s' % subdir)
 
             # check input path
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
@@ -1484,7 +1487,7 @@ class Mapper(object):
                     for facetdict in self.b2findfields.values() :
                         facet=facetdict["ckanName"]
                         if facet in jsondata:
-                            self.logger.info('\t|-> %-10s : %-10s |' % (facet,jsondata[facet]))
+                            self.logger.info('\t|-> %-10s : %-10s |' % (facet,jsondata[facet][:10]))
                             try:
                                 if facet == 'author':
                                     jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
@@ -1741,8 +1744,8 @@ class Mapper(object):
                         self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
                 else :
                     continue
-            elif not re.search(mdsubset+r'_\d+$', subdir) :                   
-                self.logger.error('\t |- Subdirectory %s does not match %s_NN - no processing required' % (subdir,mdsubset))
+            elif not ( mdsubset == subdir or re.search(mdsubset+r'_\d+$', subdir)) :               
+                self.logger.error('\t |- Subdirectory %s does not match %s[_NN] - no processing required' % (subdir,mdsubset))
                 continue
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
