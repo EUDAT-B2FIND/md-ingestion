@@ -232,7 +232,7 @@
         "description" : "",
         "ckanName" : "PublicationTimestamp",
         "ckanType" : "extra",
-        "display" : "shown",
+        "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
     },
