@@ -237,368 +237,370 @@ dariah http://isn3.zrc-sazu.si/etnofolk/OAI-2.0/oai.php ListIdentifiers  oai_dc 
 dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
 ## CLARIN endpoints , as it is harvested by DASISH ??
 # MPI-PL #h=    ?= #DASISH = 145245
-## 'Getötet'!!!??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi mpi-pl_
+##!!!??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi mpi-pl_
+# UniOfCopenhagen  #h=    ?= #DASISH = 7
+clarin http://clarin.dk/oaiprovider ListIdentifiers cmdi
+## clarin http://clarin.dk/oaiprovider ListIdentifiers cmdi ## ucph_
+# Viena Language resources #h=    ?= #DASISH = 14324
+##??? clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc ## vienna-lang-res_
+##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI228687
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137
 ##clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137:MPI1557280
 ### new subsets ???!!!!!!!!!!!!
-clarin http://clarin.ids-mannheim.de/vcr/oai ListRecords cmdi ids_
+##??? clarin http://clarin.ids-mannheim.de/vcr/oai ListRecords cmdi ids_
 ### DC from CLARIN??? clarin http://clarin.ids-mannheim.de/vcr/oai ListRecords oai_dc ids_
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0105-0
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1992-9
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1EBD-5
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-C4AE-0
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0001-3F5E-E
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0003-46AB-5
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0004-FC7C-E
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0008-E7E7-E
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0009-6E8F-4
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-000D-F548-2
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0010-103A-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0010-83CF-B
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0014-D835-C
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-4236-4
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-A27F-8
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-B4FC-2
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001C-71FC-E
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001D-8995-3
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001E-88E0-C
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-AFF0-5
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-B025-0
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-DD0E-8
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5BC7-3
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-7037-8
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-EA63-7
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-1E32-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-295B-8
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2985-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A07-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A43-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A8E-6
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4207-B
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4488-1
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4499-D
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-46C8-3
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-46DB-B
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4A81-5
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4B76-D
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-52E4-7
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5AD1-C
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5BF4-F
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-652F-9
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-6534-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-670B-1
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-6CFA-3
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-899A-C
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-8D28-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-5B1D28A0-32AF-4DD4-8868-4404EC75EDAA
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_32A0CDE1-9641-4D38-A760-F23B89034F94
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_5AE33A73-F6AC-4A9B-B683-F20C8231DD96
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_DD50F61B-E590-4227-A547-CAA2C401DAD4
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0001-D
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0002-7
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0003-1
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0004-C
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0005-6
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0006-F
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0019-F
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0076-A
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1735641
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI228687
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1693118
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI77916
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1615060
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1815178
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI86934
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI86933
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1453747
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI530635
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487193
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI86950
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI553799
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI2:MPI3
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI2:MPI14765
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI2:MPI560178
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI2146435:MPI2147827
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1490774
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1704619:MPI2162376
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79487
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI663243
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1737994
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI793743
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1812410
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1812411
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2194970
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI529540
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1384222
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81772
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1075039
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009768
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI219142
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI879575:MPI1388171
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI879575:MPI1388172
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015106
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009784
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI222721
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1995264
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI84721
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI239015
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016129
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016126
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1570301
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016132
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016131
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI923952
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239098:MPI239099
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI239094
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214621
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI2232510
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI80685
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214658
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214654
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1474227
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214674
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI539150
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1970827
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1634027:MPI1745559
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008757
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI231294
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI231293
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1597847
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI219025
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI337085
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI337086
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI361244
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI669556
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI299198
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI318962
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI318963
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI551131
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1808828
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI363570
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI987822
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI319100
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1763721
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI318941
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573719
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573717
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573718
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573716
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2069778
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2150909
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1394942
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2058713
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1759578
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1461796
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1461795
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79774
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1761660
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1868780
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1868781
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84114:MPI84302
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI27483
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1574036
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI214747
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1758340
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1619684
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1619676
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI663833
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI218627
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214723
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1761642
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214706
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI365039
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009009
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1479060
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI649371
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI649372
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI76442
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1569575
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1699343
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI540784
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI225352
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1871933
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI222580
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550787
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550786
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1622135
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI671070
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016438
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016436
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008995
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016435
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016434
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79625
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1457372
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI83770
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573689
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI567681
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1397533
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008402
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2014901
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI84029
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI583839
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI583838
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI319374
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI319375
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI319354
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550811
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1745335
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010307
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010304
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550854
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI225231
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010331
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010334
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI359273
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010337
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010339
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010343
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI912200
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI533706
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010314
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI236613
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2007214
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1552681
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010317
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010323
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010329
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI80139
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI76399
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI994815
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI994814
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1997024
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI233596
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1361193
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573828
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573824
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573827
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573826
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573823
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1744683
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573839
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573838
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI515582
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI515581
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI83642
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI533677
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1384636
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI556279:MPI574674
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1994174
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1566636
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1566637
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI218932
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81336
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2006061
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81315
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81314
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI553373
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84114:MPI84115
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI71527
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1048869
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1746439
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI1048899
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1361199
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1399684
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1468375
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1079034
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010204
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1052935
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI2190804
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010217
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010213
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1697645
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010358
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010350
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010355
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2128971
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1475046
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1803791
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010154
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010159
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1868779
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI236420
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI875360
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI875361
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI233479
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI360494
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010195
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010178
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1624365
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2182562
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1867095:MPI1867096
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1867095:MPI1867097
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1453071
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI236187
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008653
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008661
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI899085
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2002404
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI885634
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI885635
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1764964
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1560552
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI2167005:MPI2167006
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1568428
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008614
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008640
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1566852
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008630
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2190561
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1758731
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI532884
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI532885
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI532886
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1565216
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI299640
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009633
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008571
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2001815
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1425076
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI231140
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009610
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009624
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1704619:MPI2102153
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1083581
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1454088
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1468172
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015179
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI86327
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI923953:MPI1021929
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015166
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI1383133
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015162
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI923953:MPI1021930
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI580012
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI580013
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI580014
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI2120969
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2109198
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1542562
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1455764
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI363060
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015211
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79070
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1704619:MPI1893295
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1361772
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1363203
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79025
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1442976
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2006187
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1555622
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2188077
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI923656
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1455702
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI654710
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1564798
-clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI899866
-# UniOfCopenhagen  #h=    ?= #DASISH = 7
-clarin  http://clarin.dk/oaiprovider ListIdentifiers cmdi ucph_
-# Viena Language resources #h=    ?= #DASISH = 14324
-clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc vienna-lang-res_
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0105-0
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1992-9
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-1EBD-5
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-C4AE-0
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0001-3F5E-E
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0003-46AB-5
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0004-FC7C-E
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0008-E7E7-E
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0009-6E8F-4
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-000D-F548-2
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0010-103A-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0010-83CF-B
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0014-D835-C
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-4236-4
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-A27F-8
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0016-B4FC-2
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001C-71FC-E
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001D-8995-3
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-001E-88E0-C
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-AFF0-5
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-B025-0
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-DD0E-8
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5BC7-3
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-7037-8
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0021-EA63-7
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-1E32-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-295B-8
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2985-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A07-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A43-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-2A8E-6
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4207-B
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4488-1
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4499-D
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-46C8-3
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-46DB-B
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4A81-5
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-4B76-D
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-52E4-7
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5AD1-C
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-5BF4-F
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-652F-9
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-6534-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-670B-1
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-6CFA-3
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-899A-C
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0022-8D28-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-5B1D28A0-32AF-4DD4-8868-4404EC75EDAA
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_32A0CDE1-9641-4D38-A760-F23B89034F94
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_5AE33A73-F6AC-4A9B-B683-F20C8231DD96
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_DD50F61B-E590-4227-A547-CAA2C401DAD4
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0001-D
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0002-7
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0003-1
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0004-C
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0005-6
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0006-F
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0019-F
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi 1839_00-0000-0000-0000-0076-A
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1735641
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI228687
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487137
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1693118
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI77916
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1615060
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1815178
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI86934
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI86933
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1453747
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI530635
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1487193
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI86950
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI553799
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI2:MPI3
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI2:MPI14765
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI2:MPI560178
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI2146435:MPI2147827
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1490774
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1704619:MPI2162376
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79487
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI663243
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1737994
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI793743
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1812410
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1812411
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2194970
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI529540
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1384222
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81772
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1075039
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009768
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI219142
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI879575:MPI1388171
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI879575:MPI1388172
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015106
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009784
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI222721
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1995264
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI84721
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI239015
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016129
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016126
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1570301
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016132
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016131
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI923952
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239098:MPI239099
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI239094
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214621
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI2232510
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI80685
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214658
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214654
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1474227
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214674
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI539150
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1970827
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1634027:MPI1745559
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008757
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI231294
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI231293
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1597847
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI219025
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI337085
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI337086
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI361244
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI669556
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI299198
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI318962
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI318963
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI551131
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1808828
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI363570
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI987822
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI319100
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1763721
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI318941
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573719
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573717
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573718
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573716
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2069778
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2150909
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1394942
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2058713
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1759578
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1461796
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1461795
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79774
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1761660
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1868780
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1868781
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84114:MPI84302
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI27483
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1574036
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI214747
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1758340
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1619684
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1619676
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI663833
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI218627
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214723
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1761642
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI86949:MPI214706
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI365039
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009009
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1479060
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI649371
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI649372
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI76442
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1569575
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1699343
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI540784
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI225352
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1871933
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI222580
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550787
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550786
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1622135
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI671070
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016438
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016436
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008995
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016435
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2016434
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79625
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1457372
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI83770
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573689
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI567681
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1397533
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008402
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2014901
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI84029
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI583839
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI583838
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI319374
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI319375
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI319354
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550811
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1745335
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010307
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010304
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1475545:MPI1550854
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI225231
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010331
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010334
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI359273
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010337
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010339
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010343
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI912200
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI533706
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010314
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI236613
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2007214
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1552681
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010317
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010323
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010329
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI80139
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI76399
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI994815
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI994814
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1997024
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI233596
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1361193
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573828
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573824
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573827
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573826
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573823
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1744683
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573839
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1573688:MPI1573838
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI515582
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI515581
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI83642
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI533677
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1384636
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI556279:MPI574674
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1994174
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1566636
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1566637
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI218932
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81336
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2006061
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81315
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI81314
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI553373
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84114:MPI84115
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI71527
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1048869
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1746439
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI1048899
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1361199
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1399684
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1468375
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1079034
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010204
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1052935
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI2190804
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010217
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010213
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1697645
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010358
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010350
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010355
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2128971
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1475046
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1803791
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010154
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010159
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1868779
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI236420
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI875360
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI875361
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI233479
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI360494
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010195
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2010178
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1624365
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2182562
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1867095:MPI1867096
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1867095:MPI1867097
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1453071
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI236187
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008653
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008661
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI899085
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2002404
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI885634
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI885635
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1764964
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1560552
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI2167005:MPI2167006
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1568428
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008614
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008640
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1566852
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008630
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2190561
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1758731
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI532884
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI532885
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI532886
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1565216
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI299640
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009633
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2008571
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2001815
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI1425076
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI214746:MPI231140
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009610
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2009624
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1704619:MPI2102153
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1083581
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1454088
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI319373:MPI1468172
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015179
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI84720:MPI86327
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI923953:MPI1021929
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015166
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI583441:MPI1383133
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015162
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI923953:MPI1021930
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI580012
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI580013
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI580011:MPI580014
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1087427:MPI2120969
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2109198
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1542562
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1455764
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI363060
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1624946:MPI2015211
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79070
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1704619:MPI1893295
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1361772
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1363203
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI79025
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI1:MPI1442976
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2006187
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1555622
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2188077
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI923656
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1455702
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI654710
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI1564798
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI899866
 ## CESSDA endpoint
-clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
+##??? clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
 ## DA|RA
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc Datasets ### ~ZnE9cmVzb3VyY2VUeXBlOkRhdGFzZXQ=
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc GESISDataArchive # 1 GESIS Data Archive 7103
