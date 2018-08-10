@@ -8,7 +8,7 @@
   <mappings>
    <!-- General information -->
     <field name="title">
-      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Name,//cmd:Title,//cmd:title,//cmd:CollectionName,//cmd:ProjectName,//cmd:MdCollectionDisplayName</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Name,//cmd:title,//cmd:CollectionName,//cmd:ProjectName,//cmd:MdCollectionDisplayName</xpath>
     </field>
     <field name="notes">
       <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Description,//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description/text(),//cmd:desc/text(),//cmd:node/text(),//cmd:ProjectName</xpath>
