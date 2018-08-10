@@ -300,7 +300,10 @@ def process_harvest(HV, rlist):
         ir+=1
         harveststart = time.time()
 
-        request[4] = request[4] if (len(request)>4 and not request[4].startswith('#')) else None
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else None
+        else :
+            request.append(None)
 
         print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,HV.fromdate,'Started',time.strftime("%H:%M:%S")))
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
