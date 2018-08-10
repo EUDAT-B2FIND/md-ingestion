@@ -299,7 +299,12 @@ def process_harvest(HV, rlist):
     for request in rlist:
         ir+=1
         harveststart = time.time()
+
+        request[4] = request[4] if (len(request)>4 and not request[4].startswith('#')) else None
+
         print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,HV.fromdate,'Started',time.strftime("%H:%M:%S")))
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+
         results = HV.harvest(request)
     
         if (results == -1):
@@ -327,18 +332,22 @@ def process_map(MP, rlist):
             mext='conf'
         else:
             mext='xml'
-
-        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
-        
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else ''
+        else :
+            request.append('')
+
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S")))
         results = MP.map(request)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4] if len(request)> 4 else '','m',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3], request[4],'m',results)
 
 def process_validate(MP, rlist):
     ## process_validate (MAPPER object, rlist) - function
@@ -355,11 +364,16 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S")))
         cstart = time.time()
 
-        ### HEW!!!
         target=None
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else ''
+        else :
+            request.append('')
+
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
         results = MP.validate(request,target)
 
@@ -384,7 +398,7 @@ def process_upload(UP, rlist):
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         community=request[0]
         mdprefix = request[3]
-        mdsubset=request[4]   if len(request)>4 else None
+        mdsubset=request[4]   if (len(request)>4 and not request[4].startswith('#')) else None
         ## dir = dir+'/'+subset
         
         try:
