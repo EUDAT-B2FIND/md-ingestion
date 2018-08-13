@@ -1,0 +1,179 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin.dk:dkclarin:630636</identifier>
+    <datestamp>2016-04-27T13:56:45Z</datestamp>
+  </header>
+  <metadata>
+    <CMD xmlns="http://www.clarin.eu/cmd/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1380106710826/xsd">
+      <Header>
+        <MdCreator>CLARIN-DK-UCPH</MdCreator>
+        <MdCreationDate>2014-11-03</MdCreationDate>
+        <MdSelfLink>hdl:11221/90D1-8300-60C6-E-11@md=cmdi</MdSelfLink>
+        <MdProfile>clarin.eu:cr1:p_1380106710826</MdProfile>
+        <MdCollectionDisplayName>CLARIN-DK-UCPH Repository</MdCollectionDisplayName>
+      </Header>
+      <Resources>
+        <ResourceProxyList>
+          <ResourceProxy id="lp_630636">
+            <ResourceType mimetype="text/html">LandingPage</ResourceType>
+            <ResourceRef>hdl:11221/90D1-8300-60C6-E-11</ResourceRef>
+          </ResourceProxy>
+          <ResourceProxy id="_630635">
+            <ResourceType mimetype="text/xml">Resource</ResourceType>
+            <ResourceRef>hdl:11221/90D1-8300-60C5-0</ResourceRef>
+          </ResourceProxy>
+        </ResourceProxyList>
+        <JournalFileProxyList/>
+        <ResourceRelationList/>
+      </Resources>
+      <Components>
+        <teiHeader>
+          <type>Text</type>
+          <fileDesc>
+            <titleStmt>
+              <title lang="da">ctb version: Beregning af naturtilstand for vandhuller og mindre s&#248;er. Tilstandsvurdering af Habitatdirektivets s&#248;typer</title>
+              <sponsor>DK-CLARIN</sponsor>
+              <respStmt>
+                <resp>Data capture</resp>
+                <name>
+                  <name>dsn.dk</name>
+                  <note type="method">pdf-converted-acrobat9</note>
+                  <date when="2010"/>
+                </name>
+              </respStmt>
+            </titleStmt>
+            <extent>
+              <num type="words">11975</num>
+              <num type="paragraphs">254</num>
+            </extent>
+            <publicationStmt>
+              <distributor>cst.ku.dk</distributor>
+              <distributor>dsn.dk</distributor>
+              <idno type="ctb">wp22_Sussi_1294324500220</idno>
+              <availability status="restricted">
+                <ab type="academic"/>
+              </availability>
+            </publicationStmt>
+            <notesStmt>
+              <note lang="en" resp="cst.ku.dk">Automatic capture from Danmarks Milj&#248;unders&#248;gelser</note>
+            </notesStmt>
+            <sourceDesc>
+              <biblStruct>
+                <idno type="uri">http://www.dmu.dk/Pub/FR699.pdf</idno>
+                <idno type="file">nil</idno>
+                <analytic>
+                  <title lang="da" level="a">Beregning af naturtilstand for vandhuller og mindre s&#248;er. Tilstandsvurdering af Habitatdirektivets s&#248;typer</title>
+                  <author>
+                    <name>Torben Bramming J&#248;rgensen</name>
+                  </author>
+                  <author>
+                    <name>Bjarne Moeslund</name>
+                  </author>
+                  <author>
+                    <name>Jesper Reinholt Fredshavn</name>
+                  </author>
+                </analytic>
+                <monogr>
+                  <title lang="da">Faglig rapport fra DMU</title>
+                  <editor>
+                    <name>unspecified</name>
+                  </editor>
+                  <imprint>
+                    <publisher>Danmarks Milj&#248;unders&#248;gelser</publisher>
+                    <date cert="high" when="2009"/>
+                    <biblScope type="issue">706</biblScope>
+                    <biblScope type="sect">nil</biblScope>
+                    <biblScope type="vol">0</biblScope>
+                    <biblScope type="chap">0</biblScope>
+                    <biblScope type="pp">38</biblScope>
+                  </imprint>
+                </monogr>
+              </biblStruct>
+            </sourceDesc>
+          </fileDesc>
+          <encodingDesc>
+            <samplingDecl>
+              <ab>ctb version</ab>
+            </samplingDecl>
+            <projectDesc>
+              <ab>DK-CLARIN-WP2.2</ab>
+            </projectDesc>
+            <appInfo>
+              <application id="CstClarinSentenceSegmenter" ident="CstClarinSentenceAndParagraphSegmenter" subtype="s-splitter" type="a_annotation" version="2.0">
+                <desc lang="da">Nummerere intervaller for s&#230;tninger</desc>
+                <ptr target="#CstClarinDaTokeniser"/>
+              </application>
+              <application id="CstClarinDaTokeniser" ident="CstClarinDaTokeniser" subtype="tokenizer" type="a_annotation" version="1.0">
+                <desc lang="da">Samler de atomare cbf-segmenter i tokens</desc>
+              </application>
+              <application id="CstClarinParagraphSegmenter" ident="CstClarinSentenceAndParagraphSegmenter" subtype="p-splitter" type="a_annotation" version="2.0">
+                <desc lang="da">Nummerere intervaller for paragraffer</desc>
+                <ptr target="#CstClarinDaTokeniser"/>
+              </application>
+              <application id="csttaggerXML" ident="csttaggerXML" subtype="pos-tagger" type="a_annotation" version="3.1">
+                <desc lang="da">CSTtags</desc>
+                <ptr target="#CstClarinDaTokeniser"/>
+                <ref target="tagger-options_10052010_da"/>
+              </application>
+              <application id="cstlemma" ident="cstlemma" subtype="lemmatizer" type="a_annotation" version="4.0">
+                <desc lang="da">Tildeler hvert token et lemma</desc>
+                <ptr target="#CstClarinDaTokeniser #csttaggerXML"/>
+                <ref target="lemma-options_13012011_da"/>
+              </application>
+              <application id="DsnClarinDaTermTaggerLogLikelihood" ident="DsnClarinDaTermTaggerLogLikelihood" subtype="term-tagger" type="a_annotation" version="1.0">
+                <desc>Tildeler hvert lemma en v&#230;rdi for termhood</desc>
+                <ptr target="#CstClarinDaTokeniser"/>
+              </application>
+            </appInfo>
+          </encodingDesc>
+          <profileDesc>
+            <creation>
+              <date cert="high" when="2008"/>
+            </creation>
+            <langUsage>
+              <language ident="da">da</language>
+            </langUsage>
+            <textDesc>
+              <channel mode="w">unspecified</channel>
+              <constitution type="single"/>
+              <domain type="special">milj&#248; (DK5-69.8)</domain>
+              <factuality type="fact"/>
+              <preparedness type="revised"/>
+              <purpose type="inform"/>
+              <derivation type="original">
+                <lang>da</lang>
+              </derivation>
+              <interaction active="plural" passive="world">
+                <note type="interactRole">expert-advanced</note>
+                <note type="interactAge">adult-adult</note>
+              </interaction>
+            </textDesc>
+            <textClass>
+              <catRef scheme="http://dkclarin.ku.dk/om/beskrivelse_af_arbejdspakker/beskrivelse_af_arbejdspakke_2/beskrivelse_af_arbejdspakke_2.2/ontology.xml" target="B.0.Klima.og.miljoe"/>
+              <classCode scheme="DK5">milj&#248; (DK5-69.8)</classCode>
+              <keywords scheme="http://cst.ku.dk">
+                <list type="simple">
+                  <item>Vandhul</item>
+                  <item>s&#248;</item>
+                  <item>naturtyper</item>
+                  <item>habitatdirektiv</item>
+                </list>
+              </keywords>
+            </textClass>
+            <particDesc>
+              <person age="adult" id="P386N1" role="major" sex="0"/>
+              <person age="adult" id="P386N2" role="major" sex="0"/>
+              <person age="adult" id="P386N3" role="major" sex="0"/>
+            </particDesc>
+          </profileDesc>
+          <revisionDesc>
+            <change when="2011-01-06" who="DK-CLARIN-WP2.2">created</change>
+            <change when="2011-04-29" who="cst.ku.dk">
+            	Gathering of all spanGrps adding appInfo to header
+            </change>
+          </revisionDesc>
+        </teiHeader>
+      </Components>
+    </CMD>
+  </metadata>
+</record>
