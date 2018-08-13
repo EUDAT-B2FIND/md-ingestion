@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """mapping.py - class for B2FIND mapping : 
-  - Mapper    maps harvested nad specific MD records onto B2FIND schema
+  - Mapper    maps harvested and specific MD records onto B2FIND schema
 
 Copyright (c) 2013 Heinrich Widmann (DKRZ)
 Further contributions by
@@ -1873,7 +1873,7 @@ class Mapper(object):
                                         contt=' [...(%d chars follow)...]' % restchar 
                                     else: 
                                         contt=''
-                                printstats+="      |- {:<5d} : {!s:<30s}{!s:<5s} |\n".format(tuple[1],ucvalue[:80],contt)
+                                    printstats+="      |- {:<5d} : {!s:<30s}{!s:<5s} |\n".format(tuple[1],ucvalue[:80],contt)
                         except TypeError as e:
                             self.logger.error('%s : facet %s' % (e,facet))
                             continue
