@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## DataverseNO
+dataverseno https://dataverse.no/oai ListRecords oai_dc HarvesterDataverseNO
 ##Herbadrop
 herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc 
 herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
