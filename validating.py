@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
-"""mapping.py - class for B2FIND mapping : 
-  - Mapper    maps harvested and specific MD records onto B2FIND schema
+"""validating.py - class for B2FIND validation : 
+  - Validator    validates mapped JSON records 
 
-Copyright (c) 2013 Heinrich Widmann (DKRZ)
+Copyright (c) 2018 Heinrich Widmann (DKRZ)
 Further contributions by
-     2013 John Mrziglod (DKRZ)
-     2014 Mikael Karlsson (CSC)
-     2017 Claudia Martens (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -34,15 +31,12 @@ import logging
 import traceback
 import re
 
-# needed for MAPPER :
-import codecs
-import xml.etree.ElementTree as ET
+# needed for VALIDATOR :
 import simplejson as json
-import io
 from pyparsing import *
 import Levenshtein as lvs
 import iso639
-from collections import OrderedDict, Iterable
+from collections import OrderedDict, Iterable, Counter
 
 PY2 = sys.version_info[0] == 2
 if PY2:
@@ -52,16 +46,15 @@ else:
     from urllib.request import urlopen
     from urllib.error import HTTPError,URLError
 
-class Mapper(object):
+class Validator(object):
     """
-    ### MAPPER - class
+    ### Validator - class
     # Parameters:
     # -----------
     # Public Methods:
     # ---------------
-    # map(request)  - maps records according to request on B21FIND schema
-    #     using mapfiles in md-mapping and stores resulting files in subdirectory '../json'
-    #
+    # vaildate(request)  - validates records according to B21FIND schema
+    #     and generates coverage and check statistics
     """
 
     def __init__ (self, OUT, base_outdir,fromdate):
@@ -69,7 +62,7 @@ class Mapper(object):
         self.base_outdir = base_outdir
         self.OUT = OUT
         self.fromdate = fromdate
-        self.logger = OUT.logger
+        self.logger = logging.getLogger('root')
         # Read in B2FIND metadata schema and fields
         schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
         with open(schemafile, 'r') as f:
@@ -97,7 +90,7 @@ class Mapper(object):
 
     class cv_disciplines(object):
         """
-        This class represents the closed vocabulary used for the mapoping of B2FIND discipline mapping
+        This class represents the closed vocabulary used for the mapping of B2FIND discipline mapping
         Copyright (C) 2014 Heinrich Widmann.
 
         """
@@ -116,7 +109,7 @@ class Mapper(object):
 
     class cv_geonames(object):
         """
-        This class represents the closed vocabulary used for the mapoping of B2FIND spatial coverage to coordinates
+        This class represents the closed vocabulary used for the mapping of B2FIND spatial coverage to coordinates
         Copyright (C) 2016 Heinrich Widmann.
 
         """
@@ -231,197 +224,6 @@ class Mapper(object):
         else:
             return True
  
-    def map_url(self, invalue):
-        """
-        Convert identifiers to data access links, i.e. to 'Source' (ds['url']) or 'PID','DOI' etc. pp
- 
-        Copyright (C) 2015 by Heinrich Widmann.
-        Licensed under AGPLv3.
-        """
-        try:
-            if type(invalue) is not list :
-                invalue=invalue.split(";")
-            iddict=dict()
-
-            self.logger.debug('invalue %s' % invalue)
-            for refs in filter(None,invalue) :
-                idarr=re.split(',',refs)
-                for id in idarr :
-	                self.logger.debug(' id\t%s' % id)
-	                ##sys.exit(0)
-	                if id.startswith('http://data.theeuropeanlibrary'):
-	                    iddict['url']=id
-	                elif id.startswith('ivo:'):
-	                    iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
-	                elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
-	                    iddict['DOI'] = self.concat('http://dx.doi.org/doi:',id)
-	                elif 'doi.org/' in id:
-	                    iddict['DOI'] = 'http://dx.doi.org/'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
-	                elif 'doi:' in id: ## and 'DOI' not in iddict :
-	                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
-	                elif 'hdl.handle.net' in id:
-	                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
-	                    if reurl :
-	                        iddict['PID'] = reurl.group("url")
-	                elif 'hdl:' in id:
-	                    iddict['PID'] = id.replace('hdl:','http://hdl.handle.net/')
-	                elif id.startswith('11100/'):
-	                    iddict['PID'] = '%s/%s' % ('http://hdl.handle.net/',id)
-	                elif 'http:' in id or 'https:' in id:
-	                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
-	                    if reurl :
-	                        iddict['url'] = reurl.group("url")##[0]
-	                elif id.startswith('irods'):
-	                    iddict['url'] = id
-	            
-        except Exception as e :
-            self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
-            return {}
-        else:
-            if self.OUT.verbose > 3 :
-                for id in iddict :
-                    self.logger.debug('iddict\t(%s,%s)' % (id,iddict[id]))
-                    if self.check_url(iddict[id]):
-                        self.logger.debug('Identifier %s checked successfully' % iddict[id])
-                    else:
-                        self.logger.crtitical('Identifier %s failed in url checker' % iddict[id])
-
-        return iddict
-
-    def map_lang(self, invalue):
-        """
-        Convert languages and language codes into ISO names
- 
-        Copyright (C) 2014 Mikael Karlsson.
-        Adapted for B2FIND 2014 Heinrich Widmann
-        Licensed under AGPLv3.
-        """
-        def mlang(language):
-            if '_' in language:
-                language = language.split('_')[0]
-            if ':' in language:
-                language = language.split(':')[1]
-            if len(language) == 2:
-                try: return iso639.languages.get(alpha2=language.lower())
-                except KeyError: pass
-            elif len(language) == 3:
-                try: return iso639.languages.get(alpha3=language.lower())
-                except KeyError: pass
-                except AttributeError: pass
-                try: return iso639.languages.get(terminology=language.lower())
-                except KeyError: pass
-                try: return iso639.languages.get(bibliographic=language.lower())
-                except KeyError: pass
-            else:
-                try: return iso639.languages.get(name=language.title())
-                except KeyError: pass
-                for l in re.split('[,.;: ]+', language):
-                    try: return iso639.languages.get(name=l.title())
-                    except KeyError: pass
-
-        newvalue=list()
-        if type(invalue) == list :
-            for lang in invalue:
-                mcountry = mlang(lang)
-                if mcountry:
-                    newvalue.append(mcountry.name)
-        else:
-            mcountry = mlang(invalue)
-            if mcountry:
-                newvalue.append(mcountry.name)
-
-        return newvalue
- 
-    def map_geonames(self,invalue):
-        """
-        Map geonames to coordinates
- 
-        Copyright (C) 2014 Heinrich Widmann
-        Licensed under AGPLv3.
-        """
-        from geopy.geocoders import Nominatim
-        from geopy.exc import GeocoderQuotaExceeded
-        geolocator = Nominatim()
-        try:
-          location = geolocator.geocode(invalue.split(';')[0])
-          if not location :
-              return None ### (None,None)
-          if location.raw['importance'] < 0.9 :
-              return None
-        except GeocoderQuotaExceeded:
-           logging.error('%s can not converted !' % (invalue.split(';')[0]))
-           sleep(5)
-           return None
-        except Exception :
-           logging.error('[ERROR] : %s - in map_geonames %s can not converted !' % (e,invalue.split(';')[0]))
-           return None ### (None,None)
-        else:
-          return location ### (location.latitude, location.longitude)
-
-    def map_temporal(self,invalue):
-        """
-        Map date-times to B2FIND start and end time
- 
-        Copyright (C) 2015 Heinrich Widmann
-        Licensed under AGPLv3.
-        """
-        desc=''
-        try:
-          logging.info('Invalue\t%s' % invalue)
-          if type(invalue) is not list:
-            invalue=invalue.split(';')
-          if type(invalue[0]) is dict :
-            invalue=invalue[0]
-            if '@type' in invalue :
-              if invalue['@type'] == 'single':
-                 if "date" in invalue :       
-                   desc+=' %s : %s' % (invalue["@type"],invalue["date"])
-                   return (desc,self.date2UTC(invalue["date"]),self.date2UTC(invalue["date"]))
-                 else :
-                   desc+='%s' % invalue["@type"]
-                   return (desc,None,None)
-              elif invalue['@type'] == 'verbatim':
-                  if 'period' in invalue :
-                      desc+=' %s : %s' % (invalue["type"],invalue["period"])
-                  else:
-                      desc+='%s' % invalue["type"]
-                  return (desc,None,None)
-              elif invalue['@type'] == 'range':
-                  if 'start' in invalue and 'end' in invalue :
-                      desc+=' %s : ( %s - %s )' % (invalue['@type'],invalue["start"],invalue["end"])
-                      return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
-                  else:
-                      desc+='%s' % invalue["@type"]
-                      return (desc,None,None)
-              elif 'start' in invalue and 'end' in invalue :
-                  desc+=' %s : ( %s - %s )' % ('range',invalue["start"],invalue["end"])
-                  return (desc,self.date2UTC(invalue["start"]),self.date2UTC(invalue["end"]))
-              else:
-                  return (desc,None,None)
-          else:
-            outlist=list()
-            if len(invalue) == 1 :
-                try:
-                    desc+=' point in time : %s' % self.date2UTC(invalue[0]) 
-                    return (desc,self.date2UTC(invalue[0]),self.date2UTC(invalue[0]))
-                except ValueError:
-                    return (desc,None,None)
-##                else:
-##                    desc+=': ( %s - %s ) ' % (self.date2UTC(invalue[0]),self.date2UTC(invalue[0])) 
-##                    return (desc,self.date2UTC(invalue[0]),self.date2UTC(invalue[0]))
-            elif len(invalue) == 2 :
-                try:
-                    desc+=' period : ( %s - %s ) ' % (self.date2UTC(invalue[0]),self.date2UTC(invalue[1])) 
-                    return (desc,self.date2UTC(invalue[0]),self.date2UTC(invalue[1]))
-                except ValueError:
-                    return (desc,None,None)
-            else:
-                return (desc,None,None)
-        except Exception :
-            logging.debug('[ERROR] : %s - in map_temporal %s can not converted !' % (e,invalue))
-            return (None,None,None)
-        else:
-            return (desc,None,None)
 
     def is_float_try(self,str):
             try:
@@ -490,109 +292,9 @@ class Mapper(object):
                 else : # western max longitude
                     desc+='%-2.0fW)' % (float(invalue[4]) * -1.0)              
 
-##                  if geotab:
-##                      ec=0
-##                      for gentry in geotab :
-##                          if val == gentry[0]:
-##                              desc+=' '+val
-##                              coordarr.append(gentry[1])
-##                              coordarr.append(gentry[2])
-##                              break
-##                      else:
-##                          ec+=1
-##                          if ec<10 :
-##                              geoname=self.map_geonames(val)
-##                              time.sleep(0.1)
-##                          else:
-##                              continue
-##                          if geoname == None :
-##                              continue
-##                          importance=geoname.raw['importance']
-##                          if importance < 0.7 : # wg. Claudia :-(
-##                              continue
-##                          nc=2
-##                          coordarr.append(geoname.latitude)
-##                          coordarr.append(geoname.longitude)
-##HEW-D                  desc+=' '+val+','
-
         self.logger.info('Spatial description %s' % desc)
         return (desc,invalue[1],invalue[2],invalue[3],invalue[4])
  
-    def map_spatial(self,invalue,geotab):
-        """
-        Map coordinates to spatial
- 
-        Copyright (C) 2014 Heinrich Widmann
-        Licensed under AGPLv3.
-        """
-        desc=''
-        pattern = re.compile(r";|\s+")
-        try:
-           self.logger.info('   | Invalue:\t%s' % invalue)
-           if isinstance(invalue,list) :
-              if len(invalue) == 1:
-                  valarr=invalue[0].split()
-              else:
-                  valarr=self.flatten(invalue)
-           else:
-              valarr=invalue.split() ##HEW??? [invalue]
-           self.logger.info('   | Valarr:\t%s' % valarr)
-           coordarr=list()
-           nc=0
-           for val in valarr:
-              if type(val) is dict : ## special dict case
-                  coordict=dict()
-                  if "description" in val :
-                      desc=val["description"]
-                  if "boundingBox" in val :
-                      coordict=val["boundingBox"]
-                      retValue = (desc,coordict["minLatitude"],coordict["maxLongitude"],coordict["maxLatitude"],coordict["minLongitude"])
-                  else :
-                      retValue = (desc)
-              else:
-                  self.logger.info('value %s' % val)
-                  if self.is_float_try(val) is True :
-                      coordarr.append(val)
-                      nc+=1
-           if nc==2 :
-              retValue = (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-           elif nc==4 :
-              retValue = (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-           elif desc :
-              retValue = (desc,None,None,None,None) 
-           else :
-              retValue = (None,None,None,None,None) 
-
-           if len(coordarr)==2 :
-              retValue = (desc,coordarr[0],coordarr[1],coordarr[0],coordarr[1])
-           elif len(coordarr)==4 :
-              retValue = (desc,coordarr[0],coordarr[1],coordarr[2],coordarr[3])
-
-        except Exception as e :
-           self.logger.error('%s : %s can not converted !' % (e,retValue))
-           retValue = (None,None,None,None,None) 
-        ##print('KKKKKKKKKKKK %s' % (self.check_spatial(retValue,geotab)),)
-        return self.check_spatial(retValue,geotab)
-
-    def map_checksum(self,invalue):
-        """
-        Filter out md checksum from value list
- 
-        Copyright (C) 2016 Heinrich Widmann
-        Licensed under AGPLv3.
-        """
-        if type(invalue) is not list :
-            inlist=re.split(r'[;&\s]\s*',invalue)
-            inlist.append(invalue)
-        else:
-            inlist=invalue
-
-        for inval in inlist: 
-            if re.match("[a-fA-F0-9]{32}",inval) : ## checks for MD5 checksums !!! 
-                return inval  
-
-        return None
-
     def map_discipl(self,invalue,disctab):
         """
         Convert disciplines along B2FIND disciplinary list
@@ -651,7 +353,51 @@ class Mapper(object):
             return (';'.join(retval),rethier)
         else:
             return ('Not stated',list()) 
-   
+
+    def map_lang(self, invalue):
+        """
+        Convert languages and language codes into ISO names
+ 
+        Copyright (C) 2014 Mikael Karlsson.
+        Adapted for B2FIND 2014 Heinrich Widmann
+        Licensed under AGPLv3.
+        """
+        def mlang(language):
+            if '_' in language:
+                language = language.split('_')[0]
+            if ':' in language:
+                language = language.split(':')[1]
+            if len(language) == 2:
+                try: return iso639.languages.get(alpha2=language.lower())
+                except KeyError: pass
+            elif len(language) == 3:
+                try: return iso639.languages.get(alpha3=language.lower())
+                except KeyError: pass
+                except AttributeError: pass
+                try: return iso639.languages.get(terminology=language.lower())
+                except KeyError: pass
+                try: return iso639.languages.get(bibliographic=language.lower())
+                except KeyError: pass
+            else:
+                try: return iso639.languages.get(name=language.title())
+                except KeyError: pass
+                for l in re.split('[,.;: ]+', language):
+                    try: return iso639.languages.get(name=l.title())
+                    except KeyError: pass
+
+        newvalue=list()
+        if type(invalue) == list :
+            for lang in invalue:
+                mcountry = mlang(lang)
+                if mcountry:
+                    newvalue.append(mcountry.name)
+        else:
+            mcountry = mlang(invalue)
+            if mcountry:
+                newvalue.append(mcountry.name)
+
+        return newvalue
+
     def cut(self,invalue,pattern,nfield=None):
         """
         Invalue is expected as list (if is not, it is splitted). 
@@ -690,64 +436,6 @@ class Mapper(object):
                 logging.error("%s in cut() with invalue %s" % (e,invalue))
 
         return outvalue
-
-    def list2dictlist(self,invalue,valuearrsep):
-        """
-        transfer list of strings/dicts to list of dict's { "name" : "substr1" } and
-          - eliminate duplicates, numbers and 1-character- strings, ...      
-        """
-
-        dictlist=[]
-        valarr=[]
-        rm_chars = '@(){}<>;|`\'\"\\#' ## remove chars not allowed in CKAN tags
-        repl_chars = ':,=/?' ## replace chars not allowed in CKAN tags
-        # read in list of stopwords
-        swfile='%s/mapfiles/stopwords.txt' % os.getcwd()
-        with open(swfile) as sw:
-            stopwords = sw.read().splitlines()
-        if isinstance(invalue,dict):
-            invalue=invalue.values()
-        elif not isinstance(invalue,list):
-            invalue=invalue.split(';')
-            invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
-        for lentry in invalue :
-            self.logger.debug('lentry %s' % lentry)
-            try:
-                if type(lentry) is dict :
-                    if "value" in lentry:
-                        valarr.append(lentry["value"])
-                    else:
-                        valarr=lentry.values()
-                elif re.search(r"[\n&,;+]+",lentry) :
-                    valarr=re.split(r"[\n&,;+]+",lentry)                    
-                else :
-                    valarr=lentry.split()
-                ##elif len(lentry.split()) > 3 :
-                ##    valarr=lentry.split()
-                ##    self.logger.debug('split valarr %s' % valarr)
-                self.logger.debug('valarr %s' % valarr)
-
-                for entry in valarr:
-                    if len(entry.split()) > 8 :
-                        logging.debug('String has too many words : %s' % entry)
-                        continue
-                    entry="". join(c for c in entry if c not in rm_chars and not c.isdigit())
-                    for c in repl_chars :
-                        if c in entry:
-                            entry = entry.replace(c,' ')
-                    entry=entry.strip()
-                    if isinstance(entry,int) or len(entry) < 2 : continue
-                    entrywords = entry.split()
-                    resultwords  = [word for word in entrywords if word.lower() not in stopwords]
-                    self.logger.debug("resultwords %s" % resultwords)
-                    if resultwords :
-                       entry=' '.join(resultwords).encode('ascii','ignore').strip()
-                       self.logger.debug("entry %s" % entry)
-                       dictlist.append({ "name": entry })
-            except (Exception,AttributeError) as err:
-                self.logger.error('%s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
-                continue
-        return dictlist[:12]
 
     def uniq(self,input):
 
@@ -1104,46 +792,6 @@ class Mapper(object):
         return value
     
 
-    def jsonmdmapper(self,dataset,jrules):
-        """
-        changes JSON dataset field values according to mapfile
-        """  
-        format = 'VALUE'
-        newds=dict()
-      
-        for rule in jrules:
-           if rule.startswith('#'):
-             continue
-           field=rule.strip('\n').split(' ')[0]
-           jpath=rule.strip('\n').split(' ')[1]
-
-           try:
-              if not jpath.startswith('$') :
-                value=[jpath]
-              else:
-                result=self.jsonpath(dataset, jpath, format)
-                if isinstance(result, (list, tuple)): ## and (len(result)>0):
-                    if isinstance(result[0], (list, tuple)):
-                        value=result[0]
-                    else:
-                        value=result
-                else:
-                    continue
-
-              # add value to JSON key
-              if field in newds:
-                  newds[field].extend(value)
-              else:
-                  newds[field]=value
-
-##HEW-T              if field == 'SpatialCoverage' :
-##HEW-T                  print('SpatialCoverage newds %s' % newds[field])
-
-           except Exception as e:
-                logging.debug(' %s:[ERROR] %s : processing rule %s : %s : %s' % (self.jsonmdmapper.__name__,e,field,jpath,value))
-                continue
-        return newds
-      
     def evalxpath(self, obj, expr, ns):
         # returns list of selected entries from xml obj using xpath expr
         flist=re.split(r'[\(\),]',expr.strip())
@@ -1174,415 +822,6 @@ class Mapper(object):
                     return []
 
         return retlist
-
-    def xpathmdmapper(self,xmldata,xrules,namespaces):
-        # returns list or string, selected from xmldata by xpath rules (and namespaces)
-        self.logger.debug(' XPATH rules %s' % xrules)
-        self.logger.debug(' | %-10s | %-10s | %-20s | \n' % ('Field','XPATH','Value'))
-        jsondata=dict()
-
-        for line in xrules:
-          self.logger.debug(' Next line of xpath rules : %-20s' % (line))
-          try:
-            retval=list()
-            m = re.match(r'(\s+)<field name="(.*?)">', line)
-            if m:
-                field=m.group(2)
-                if field in ['Discipline','oai_set','Source']: ## set default for mandatory fields !!
-                    retval=['Not stated']
-                self.logger.info("|- Next field entry {line:%<20s}".format(line=line))
-            else:
-                xpath=''
-                m2 = re.compile('(\s+)(<xpath>)(.*?)(</xpath>)').search(line)
-                m3 = re.compile('(\s+)(<string>)(.*?)(</string>)').search(line)
-                if m3:
-                    xpath=m3.group(3)
-                    retval=xpath
-                elif m2:
-                    xpath=m2.group(3)
-                    retval=self.evalxpath(xmldata, xpath, namespaces)
-                else:
-                    self.logger.error(' |- Found no xpath expression => continue with next field')
-                    continue
-                
-                self.logger.info(' |- Xpath rule %-10s\n |- Value %-10s' % (xpath,retval))
-
-                if retval and len(retval) > 0 :
-                    jsondata[field]=retval ### .extend(retval)
-                    self.logger.info(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
-                elif field in ['Discipline','oai_set']:
-                    jsondata[field]=['Not stated']
-          except Exception as e:
-              logging.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tretvalue\t%s' % (e,field,xpath,retval))
-              continue
-
-        return jsondata
-
-    def map(self,request): ### community,mdprefix,path,target_mdschema):
-        ## map(MAPPER object, community, mdprefix, path) - method
-        # Maps XML files formated in source specific MD schema/format (=mdprefix)
-        #   to JSON files formatted in target schema (by default B2FIND schema) 
-        # For each file two steps are performed
-        #  1. select entries by Python XPATH converter according 
-        #      the mapfile [<community>-]<mdprefix>.xml . 
-        #  2. perform generic and semantic mapping 
-        #        versus iso standards and closed vovabularies ...
-        #
-        # Parameters:
-        # -----------
-        # 1. (list)     request -  specifies the processing parameters as <communtiy>, <mdprefix> etc. 
-        # 2. (string, optinal)   target_mdschema - specifies the schema the inpted records are be mapped to
-        #
-        # Return Values:
-        # --------------
-        # 1. (dict)     results statistics
-    
-        resKeys=['count','tcount','ecount','time']
-        results = dict.fromkeys(resKeys,0)
-        
-        # set processing parameters
-        community=request[0]
-        source=request[1]
-        mdprefix=request[3]
-        mdsubset=request[4]   if len(request)>4 else ''
-        target_mdschema=request[8]   if len(request)>8 else None
-
-        # settings according to md format (xml or json processing)
-        if mdprefix == 'json' :
-            mapext='conf'
-            insubdir='/hjson'
-            infformat='json'
-        else:
-            mapext='xml'
-            insubdir='/xml'
-            infformat='xml'
-
-        # read target_mdschema (degfault : B2FIND_schema) and set mapfile
-        if (target_mdschema and not target_mdschema.startswith('#')):
-            mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,target_mdschema,mapext)
-        else:
-            mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
-
-        if not os.path.isfile(mapfile):
-            self.logger.error(' Can not access community specific mapfile %s ' % mapfile )
-            mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
-            if not os.path.isfile(mapfile):
-                self.logger.critical(' ... nor md schema specific mapfile %s ' % mapfile )
-                return results
-            else :
-                self.logger.error(' ... but only generic mapfile %s ' % mapfile )
-
-        print('\t|- Mapfile\t%s' % os.path.basename(mapfile))
-        mf = codecs.open(mapfile, "r", "utf-8")
-        maprules = mf.readlines()
-        maprules = list(filter(lambda x:len(x) != 0,maprules)) # removes empty lines
-
-        # check namespaces
-        namespaces=dict()
-        for line in maprules:
-            ns = re.match(r'(\s+)(<namespace ns=")(\w+)"(\s+)uri="(.*)"/>', line)
-            if ns:
-                namespaces[ns.group(3)]=ns.group(5)
-                continue
-        self.logger.debug('  |- Namespaces\t%s' % json.dumps(namespaces,sort_keys=True, indent=4))
-
-        # instance of B2FIND discipline table
-        disctab = self.cv_disciplines()
-        # instance of B2FIND discipline table
-        geotab = self.cv_geonames()
-        # instance of British English dictionary
-
-        # community-mdschema root path
-        cmpath='%s/%s-%s' % (self.base_outdir,community,mdprefix)
-        self.logger.info('\t|- Input path:\t%s' % cmpath)
-        subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
-        totcount=0 # total counter of processed files
-        subsettag=re.compile(r'_\d+')
-        # loop over all available subdirs
-        for subdir in sorted(subdirs) :
-            self.logger.warning('\t |- Check next subdirectory %s for reqiuired processing (mdsubset is %s)' % (subdir,mdsubset))
-            if self.fromdate :
-                datematch = re.search(mdsubset+r'_f(\d{4}-\d{2}-\d{2})_\d+$',subdir) ##, subdir[:-2])
-                if datematch :
-                    subdirdate = datetime.datetime.strptime(datematch.group(1), '%Y-%m-%d').date()
-                    fromdate = datetime.datetime.strptime(self.fromdate, '%Y-%m-%d').date()
-                    if (fromdate > subdirdate) :
-                        self.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,self.fromdate))
-                        continue
-                    else :
-                        self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
-                else :
-                    continue
-            elif not ( mdsubset == subdir or re.search(mdsubset+r'_\d+$', subdir)) :               
-                self.logger.error('\t |- Subdirectory %s does not match %s[_NN] - no processing required' % (subdir,mdsubset))
-                continue
-            else:
-                print('\t |- Subdirectory %s is processed' % subdir)
-                self.logger.debug('Processing of subdirectory %s' % subdir)
-
-            # check input path
-            inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
-            if not os.path.exists(inpath):
-                self.logger.critical('Can not access directory %s' % inpath)
-                return results     
-
-            # make output directory for mapped json's
-            if (target_mdschema and not target_mdschema.startswith('#')):
-                outpath='%s-%s/%s/%s/' % (cmpath,target_mdschema,subdir,'json')
-            else:
-                outpath='%s/%s/%s/' % (cmpath,subdir,'json')
-            if (not os.path.isdir(outpath)): os.makedirs(outpath)
-            self.logger.debug('Ouput path is %s' % outpath)
-
-            files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
-            results['tcount'] += len(list(files))
-            oldperc=0
-            err = None
-            self.logger.debug(' |- Processing of %s files in %s' % (infformat.upper(),inpath))
-       
-            ## start processing loop
-            start = time.time()
-            fcount=0 # counter per sub dir !
-            for filename in files:
-                ## counter and progress bar
-                fcount+=1
-                perc=int(fcount*100/int(len(list(files)))) ## int(results['tcount'])
-                bartags=int(perc/5)
-                if perc%10 == 0 and perc != oldperc:
-                    oldperc=perc
-                    print ("\r\t [%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
-                    sys.stdout.flush()
-                self.logger.debug('    | m | %-4d | %-45s |' % (fcount,filename))
-
-                jsondata = dict()
-                infilepath=inpath+'/'+filename      
-                if ( os.path.getsize(infilepath) > 0 ):
-                    ## load and parse raw xml rsp. json
-                    with open(infilepath, 'r') as f:
-                        try:
-                            if  mdprefix == 'json':
-                                jsondata=json.loads(f.read())
-                            else:
-                                xmldata= ET.parse(infilepath)
-                        except Exception as e:
-                            self.logger.error('    | [ERROR] %s : Cannot load or parse %s-file %s' % (e,infformat,infilepath))
-                            results['ecount'] += 1
-                            continue
-                        else:
-                            self.logger.debug(' |- Read file %s ' % infilepath)
- 
-                    # get dataset id (CKAN name) from filename (a uuid generated identifier):
-                    ds_id = os.path.splitext(filename)[0]
-                    self.logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))                         
-
-                    ## XPATH rsp. JPATH converter
-                    if  mdprefix == 'json':
-                        try:
-                            self.logger.debug(' |- %s    INFO %s to JSON FileProcessor - Processing: %s/%s' % (time.strftime("%H:%M:%S"),infformat,inpath,filename))
-                            jsondata=self.jsonmdmapper(jsondata,maprules)
-                            reqpre = source + '/dataset/'
-                        except Exception as e:
-                            self.logger.error('%s during %s json processing' % (infformat) )
-                            results['ecount'] += 1
-                            continue
-                    else:
-                        try:
-                            # Run Python XPATH converter
-                            self.logger.warning('    | xpathmapper | %-4d | %-45s |' % (fcount,os.path.basename(filename)))
-                            jsondata=self.xpathmdmapper(xmldata,maprules,namespaces)
-                            reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix + '&identifier=' 
-                        except Exception as e:
-                            self.logger.error('%s during XPATH processing' % e)
-                            results['ecount'] += 1
-                            continue
-
-                    # get OAI identifier from json data extra field 'oai_identifier':
-                    if not 'oai_identifier' in jsondata :
-                        self.logger.error("oai_identifier not mapped, set to ds_id : %s\n" % (ds_id))
-                        jsondata['oai_identifier'] = [ds_id]
-                    
-                    oai_id = jsondata['oai_identifier'][0]
-                    self.logger.debug("        |-> identifier: %s\n" % (oai_id))
-
-                    # exceptions for some communities:
-                    mdaccess = reqpre+ oai_id
-                    if (community == 'clarin' and oai_id.startswith('mi_')):
-                        mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
-                    elif (community == 'sdl'):
-                        mdaccess =reqpre+'&identifier=oai::record/'+oai_id
-                    elif (community == 'b2share'):
-                        if mdsubset.startswith('trng') :
-                            mdaccess ='https://trng-b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-                        else:
-                            mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-
-                    if self.OUT.verbose > 1 :
-                        if self.check_url(mdaccess) == False :
-                            logging.critical('URL to metadata record %s is broken' % (mdaccess))
-                    else:
-                        jsondata['MetaDataAccess']=mdaccess
-
-                    jsondata['group']=community
-
-                    # add some general CKAN specific fields to dictionary:
-                    jsondata["name"] = ds_id
-                    jsondata["state"]='active'
-                    jsondata["groups"]=[{ "name" : community }]
-
-                    iddict=dict()
-                    blist=list()
-                    spvalue=None
-                    stime=None
-                    etime=None
-                    publdate=None
-                    # loop over target schema (B2FIND)
-                    self.logger.info(' Mapping of ...')
-                    self.logger.info('\t|-> %-10s : %-10s |' % ( 'InField','Invalue'))
-                    if 'url' not in jsondata:
-                        self.logger.error('|- No identifier for id %s' % filename)
-
-                    for facetdict in self.b2findfields.values() :
-                        facet=facetdict["ckanName"]
-                        if facet in jsondata:
-                            self.logger.info('\t|-> %-10s : %-10s |' % (facet,jsondata[facet][:10]))
-                            try:
-                                if facet == 'author':
-                                    jsondata[facet] = self.uniq(self.cut(jsondata[facet],'\(\d\d\d\d\)',1))
-                                elif facet == 'tags':
-                                    jsondata[facet] = self.list2dictlist(jsondata[facet]," ")
-                                elif facet == 'url':
-                                    iddict = self.map_url(jsondata[facet])
-                                    if 'DOI' in iddict :
-                                        if not 'DOI' in jsondata :
-                                            jsondata['DOI']=iddict['DOI']
-                                    if 'PID' in iddict :
-                                        if not ('DOI' in jsondata and jsondata['DOI']==iddict['PID']):
-                                            jsondata['PID']=iddict['PID']
-                                    if 'url' in iddict:
-                                        ##HEW-D if not ('DOI' in jsondata and jsondata['DOI']==iddict['url']) and not ('PID' in jsondata and jsondata['PID']==iddict['url']  and iddict['url'].startswith('html')) :
-                                        jsondata['url']=iddict['url']
-                                    else:
-                                        jsondata['url']=''
-
-                                elif facet == 'Checksum':
-                                    jsondata[facet] = self.map_checksum(jsondata[facet])
-                                elif facet == 'Discipline':
-                                    (jsondata[facet],jsondata['DiscHierarchy']) = self.map_discipl(jsondata[facet],disctab.discipl_list)
-                                    self.logger.debug('DiscHierarchy %s' % jsondata['DiscHierarchy'])
-                                elif facet == 'Publisher':
-                                    blist = self.cut(jsondata[facet],'=',2)
-                                    jsondata[facet] = self.uniq(blist)
-                                elif facet == 'Contact':
-                                    if all(x is None for x in jsondata[facet]):
-                                        jsondata[facet] = ['Not stated']
-                                    else:
-                                        blist = self.cut(jsondata[facet],'=',2)
-                                        jsondata[facet] = self.uniq(blist)
-                                elif facet == 'SpatialCoverage':
-                                    spdesc,slat,wlon,nlat,elon = self.map_spatial(jsondata[facet],geotab.geonames_list)
-                                    if wlon and slat and elon and nlat :
-                                        spvalue="{\"type\":\"Polygon\",\"coordinates\":[[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (wlon,slat,wlon,nlat,elon,nlat,elon,slat,wlon,slat)
-                                    if spdesc != None :
-                                        jsondata[facet] = spdesc
-                                elif facet == 'TemporalCoverage':
-                                    tempdesc,stime,etime=self.map_temporal(jsondata[facet])
-                                    if tempdesc:
-                                        jsondata[facet] = tempdesc
-                                elif facet == 'Language': 
-                                    jsondata[facet] = self.map_lang(jsondata[facet])
-                                elif facet in ['Format']: 
-                                    jsondata[facet] = self.uniq(jsondata[facet])
-                                elif facet == 'PublicationYear':
-                                    publdate=self.date2UTC(jsondata[facet])
-                                    if publdate:
-                                        jsondata[facet] = self.cut([publdate],'\d\d\d\d',0)
-                                elif facet == 'fulltext':
-                                    encoding='utf-8'
-                                    jsondata[facet] = ';'.join([x for x in jsondata[facet] if x.strip()])[:32000]
-                                    if self.OUT.verbose > 2 :
-                                        jsondata[facet] = jsondata[facet][:100]
-                                elif facet == 'oai_set':
-                                    if jsondata[facet]==['Not stated'] :
-                                        jsondata[facet]=mdsubset
-                            except Exception as err :
-                                self.logger.error('%s during mapping of field\t%s' % (err,facet))
-                                self.logger.debug('\t\tvalue%s' % (jsondata[facet]))
-                                continue
-                        else: # B2FIND facet not in jsondata
-                            if facet == 'title':
-                                if 'notes' in jsondata :
-                                    jsondata[facet] = jsondata['notes'][:20]
-                                else:
-                                    jsondata[facet] = 'Not stated'
-
-                    if spvalue :
-                        jsondata["spatial"]=spvalue
-                    if stime and etime :
-                        jsondata["TemporalCoverage:BeginDate"] = stime
-                        jsondata["TempCoverageBegin"] = self.utc2seconds(stime) 
-                        jsondata["TemporalCoverage:EndDate"] = etime 
-                        jsondata["TempCoverageEnd"] = self.utc2seconds(etime)
-                    if publdate :
-                        jsondata["PublicationTimestamp"] = publdate
-
-                    self.logger.info(' Results of Mapping :')
-                    self.logger.info('\t|<- %-10s : %-10s |' % ( 'MappedFacet','Mappedvalue'))
-
-                    for key in jsondata :
-                        if key in ['fulltext']:
-                            self.logger.debug('\t|<- %-10s : %-10s |' % (key,jsondata[key]))
-                        else:
-                            self.logger.info('\t|<- %-10s : %-10s |' % (key,jsondata[key]))
-                    ## write to JSON file
-                    jsonfilename=os.path.splitext(filename)[0]+'.json'
-                
-                    with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
-                        try:
-                            self.logger.debug('decode json data')
-                            if PY2 :
-                                data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf-8') ## needed, else : Cannot write json file ... : must be unicode, not str
-                            else :
-                                data = json.dumps(jsondata,sort_keys = True, indent = 4) ## no decoding for PY3 !!
-
-                        except Exception as err:
-                            self.logger.error('%s : Cannot decode jsondata %s' % (err,jsondata))
-                        try:
-                            self.logger.debug('Write to json file %s/%s' % (outpath,jsonfilename))
-                            json_file.write(data)
-                        except TypeError as err:
-                            self.logger.error(' %s : Cannot write data in json file %s ' % (jsonfilename,err))
-                        except Exception as err:
-                            self.logger.error(' %s : Cannot write json file %s' % (err,outpath+'/'+filename))
-                            results['ecount'] += 1
-                            continue
-                        else:
-                            self.logger.debug(' Succesfully written to json file %s' % outpath+'/'+filename)
-
-                            results['count'] += 1
-                            continue
-                else:
-                    self.logger.error('Can not access content of %s' % infilepath)
-                    results['ecount'] += 1
-                    continue
-
-        out=' %s to json stdout\nsome stuff\nlast line ..' % infformat
-        ##HEW-D if (err is not None ): self.logger.error('[ERROR] ' + err)
-
-        totcount+=results['count'] # total # of sucessfully processed files
-        print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Mapped | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
-                    results['tcount'],
-                    totcount,
-                    results['ecount']
-                ))
-
-        # search in output for result statistics
-        last_line = out.split('\n')[-2]
-        if ('INFO  Main - ' in last_line):
-            string = last_line.split('INFO  Main ')[1]
-            [results['count'], results['ecount']] = re.findall(r"\d{1,}", string)
-            results['count'] = int(results['count']); results['ecount'] = int(results['ecount'])
-    
-        return results
 
     def is_valid_value(self,facet,valuelist):
         """
@@ -1646,6 +885,217 @@ class Mapper(object):
             ##    print (' Following key-value errors fails validation:\n' + errlist 
             return vall
                 
+    def validate(self,request,target_mdschema):
+        ## validate(MAPPER object, community, mdprefix, path) - method
+        # validates the (mapped) JSON files in directory <path> against the B2FIND md schema
+        # Parameters:
+        # -----------
+        # 1. (string)   community - B2FIND community the md are harvested from
+        # 2. (string)   mdprefix -  metadata format of original harvested source (not needed her)
+        # 3. (string)   path - path to subset directory 
+        #      (without (!) 'json' subdirectory)
+        #
+        # Return Values:
+        # --------------
+        # 1. (dict)     statistic of validation 
+    
+        resKeys=['count','tcount','ecount','time']
+        results = dict.fromkeys(resKeys,0)
+        
+        # set processing parameters
+        community=request[0]
+        mdprefix=request[3]
+        mdsubset=request[4]   if len(request)>4 else ''
+
+        # set extension of mapfile according to md format (xml or json processing)
+        if mdprefix == 'json' :
+            mapext='conf' ##!!!HEW --> json
+        else:
+            mapext='xml'
+        mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
+        if not os.path.isfile(mapfile):
+           mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
+           if not os.path.isfile(mapfile):
+              self.logger.error('Mapfile %s does not exist !' % mapfile)
+              return results
+        mf=open(mapfile) 
+
+        # community-mdschema root path
+        cmpath='%s/%s-%s' % (self.base_outdir,community,mdprefix)
+        self.logger.info('\t|- Input path:\t%s' % cmpath)
+        subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
+        # loop over all available subdirs
+        fcount=0
+        for subdir in sorted(subdirs) :
+            self.logger.warning('\t |- Check next subdirectory %s for reqiuired processing (mdsubset is %s)' % (subdir,mdsubset))
+            if self.fromdate :
+                datematch = re.search(mdsubset+r'_f(\d{4}-\d{2}-\d{2})_\d+$',subdir) ##, subdir[:-2])
+                if datematch :
+                    subdirdate = datetime.datetime.strptime(datematch.group(1), '%Y-%m-%d').date()
+                    fromdate = datetime.datetime.strptime(self.fromdate, '%Y-%m-%d').date()
+                    if (fromdate > subdirdate) :
+                        self.logger.warning('\t |- Subdirectory %s has timestamp older than fromdate %s - no processing required' % (subdir,self.fromdate))
+                        continue
+                    else :
+                        self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
+                else :
+                    continue
+            elif not ( mdsubset == subdir or re.search(mdsubset+r'_\d+$', subdir)) :               
+                self.logger.error('\t |- Subdirectory %s does not match %s[_NN] - no processing required' % (subdir,mdsubset))
+                continue
+            else:
+                print('\t |- Subdirectory %s is processed' % subdir)
+                self.logger.debug('Processing of subdirectory %s' % subdir)
+
+            # check input path
+            inpath='%s/%s/%s' % (cmpath,subdir,'json')
+            if not os.path.exists(inpath):
+                self.logger.critical('Can not access directory %s' % inpath)
+                continue     
+            elif not os.path.exists(inpath) or not os.listdir(inpath):
+                self.logger.critical('The directory %s does not exist or no json files to validate are found!' % (inpath))
+                continue
+
+            outfile='%s/%s/%s' % (cmpath,subdir,'validation.stat')
+            print('\t|- Validationfile\t--> %s' % outfile)
+
+            # find all .json files in inpath/json:
+            files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath)))
+            results['tcount'] = len(files)
+
+            # sum of all .json files of all sub dirs
+            results['count'] += results['tcount'] 
+        
+            self.logger.info(' %s Validation of %d files in %s/json' % (time.strftime("%H:%M:%S"),results['tcount'],inpath))
+            if results['tcount'] == 0 :
+                self.logger.error(' ERROR : Found no files to validate !')
+                return results
+            self.logger.info('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
+
+            totstats=dict()
+            for facetdict in self.b2findfields.values() :
+                facet=facetdict["ckanName"]
+                if facet.startswith('#') or facetdict["display"] == "hidden" :
+                    continue
+                totstats[facet]={
+                    'xpath':'',
+                    'mapped':0,
+                    'valid':0,
+                    'vstat':[]
+                    }          
+
+                mf.seek(0, 0)
+                for line in mf:
+                    if '<field name="'+facet+'">' in line:
+                        totstats[facet]['xpath']=re.sub(r"<xpath>(.*?)</xpath>", r"\1", next(mf))
+                        break
+
+            fcount = 0
+            oldperc = 0
+            start = time.time()
+            for filename in files: ## loop over datasets
+                fcount+=1
+                perc=int(fcount*100/int(len(files)))
+                bartags=int(perc/10)
+                if perc%10 == 0 and perc != oldperc :
+                    oldperc=perc
+                    print ("\r\t [%-20s] %d / %d%% in %d sec" % ('='*bartags, fcount, perc, time.time()-start ))
+                    sys.stdout.flush()
+
+                jsondata = dict()
+                self.logger.info('    | v | %-4d | %-s/%s |' % (fcount,os.path.basename(inpath),filename))
+
+                if ( os.path.getsize(inpath+'/'+filename) > 0 ):
+                    with open(inpath+'/'+filename, 'r') as f:
+                        try:
+                            jsondata=json.loads(f.read())
+                        except:
+                            self.logger.error('    | [ERROR] Cannot load the json file %s' % inpath+'/'+filename)
+                            results['ecount'] += 1
+                            continue
+                else:
+                    results['ecount'] += 1
+                    continue
+            
+                try:
+                    valuearr=list()
+                    for facetdict in self.b2findfields.values() : ## loop over facets
+                        facet=facetdict["ckanName"]
+                        if facet.startswith('#') or facetdict["display"] == "hidden" :
+                            continue
+                        value = None
+                        if facet in jsondata:
+                            value = jsondata[facet]
+                            self.logger.warning('facet:value : %s:%s' % (facet,value))
+                        if value:
+                            totstats[facet]['mapped']+=1
+                            pvalue=self.is_valid_value(facet,value)
+                            self.logger.debug(' key %s\n\t|- value %s\n\t|-  type %s\n\t|-  pvalue %s' % (facet,value[:30],type(value),pvalue[:30]))
+                            if pvalue and len(pvalue) > 0:
+                                totstats[facet]['valid']+=1  
+                                if type(pvalue) is list :
+                                    totstats[facet]['vstat'].extend(pvalue)
+                                else:
+                                    totstats[facet]['vstat'].append(pvalue)
+                            else:
+                                totstats[facet]['vstat']=[]  
+                        else:
+                            if facet == 'title':
+                                self.logger.debug('    | [ERROR] Facet %s is mandatory, but value is empty' % facet)
+                except IOError :
+                    self.logger.error(" %s in validation of facet '%s' and value '%s' \n" % (e,facet, value))
+                    exit()
+
+                printstats='\n Statistics of\n\tcommunity\t%s\n\tsubset\t\t%s\n\t# of records\t%d\n  see as well %s\n\n' % (community,subdir,fcount,outfile)  
+                printstats+=" |-> {:<16} <-- {:<20} \n  |-- {:<12} | {:<9} | \n".format('Facet name','XPATH','Mapped','Validated')
+                printstats+="  |-- {:>5} | {:>4} | {:>5} | {:>4} |\n".format('#','%','#','%')
+                printstats+="      |- Value statistics:\n      |- {:<5} : {:<30} |\n".format('#','Value')
+                printstats+=" ----------------------------------------------------------\n"
+
+                for key,facetdict in self.b2findfields.items() : ###.values() :
+                    facet=facetdict["ckanName"]
+                    if facet.startswith('#') or facetdict["display"] == "hidden" :
+                        continue
+
+                    if float(fcount) > 0 :
+                        printstats+="\n |-> {!s:<16s} <-- {!s:<20s}\n  |-- {:>5d} | {:>4.0f} | {:>5d} | {:>4.0f}\n".format(key,totstats[facet]['xpath'],totstats[facet]['mapped'],totstats[facet]['mapped']*100/float(fcount),totstats[facet]['valid'],totstats[facet]['valid']*100/float(fcount))
+                        try:
+                            counter=Counter(totstats[facet]['vstat'])
+                            if totstats[facet]['vstat']:
+                                for tuple in counter.most_common(10):
+                                    ucvalue=tuple[0]##HEW-D .encode('utf8')
+                                    if len(ucvalue) > 80 :
+                                        restchar=len(ucvalue)-80
+                                        contt=' [...(%d chars follow)...]' % restchar 
+                                    else: 
+                                        contt=''
+                                    printstats+="      |- {:<5d} : {!s:<30s}{!s:<5s} |\n".format(tuple[1],ucvalue[:80],contt)
+                        except TypeError as e:
+                            self.logger.error('%s : facet %s' % (e,facet))
+                            continue
+                        except Exception as e:
+                            self.logger.error('%s : facet %s' % (e,facet))
+                            continue
+
+            if self.OUT.verbose > 2:
+                print (printstats)
+
+            f = open(outfile, 'w')
+            f.write(printstats)
+            f.write("\n")
+            f.close
+
+            self.logger.debug('%s     INFO  B2FIND : %d records validated; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
+
+
+        print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Validated | Failed |\n\t| %8d | %9d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
+                    results['tcount'],
+                    fcount,
+                    results['ecount']
+                ))
+
+        return results
+
     def json2xml(self,json_obj, line_padding="", mdftag="", mapdict="b2findfields"):
 
         result_list = list()

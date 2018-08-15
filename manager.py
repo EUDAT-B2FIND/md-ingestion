@@ -20,6 +20,8 @@ Modified by  c/o DKRZ 2015   Heinrich Widmann
   Validation mode enhanced, redesign and bug fixes
 Modified by  c/o DKRZ 2016   Heinrich Widmann
   Adapt to new B2HANDLE library
+Modified by  c/o DKRZ 2018   Heinrich Widmann
+  Further modularization and redesign
 """
 
 ##from __future__ import print_function
@@ -28,6 +30,7 @@ Modified by  c/o DKRZ 2016   Heinrich Widmann
 from generating import Generator
 from harvesting import Harvester
 from mapping import Mapper
+from validating import Validator
 from uploading import Uploader, CKAN_CLIENT
 from output import Output
 import settings
@@ -212,8 +215,8 @@ def process(options,pstat,OUT):
     ## VALIDATING - Mode:
     if (pstat['status']['v'] == 'tbd'):
         logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = Mapper(OUT,options.outdir,options.fromdate)
-        process_validate(MP,reqlist)
+        VD = Validator(OUT,options.outdir,options.fromdate)
+        process_validate(VD,reqlist)
 
     ## OAI-CONVERTING - Mode:  
     if (pstat['status']['o'] == 'tbd'):
@@ -352,7 +355,7 @@ def process_map(MP, rlist):
         # save stats:
         MP.OUT.save_stats(request[0]+'-' + request[3], request[4],'m',results)
 
-def process_validate(MP, rlist):
+def process_validate(VD, rlist):
     ## process_validate (MAPPER object, rlist) - function
     # Validates per request.
     #
@@ -378,16 +381,16 @@ def process_validate(MP, rlist):
 
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
-        results = MP.validate(request,target)
+        results = VD.validate(request,target)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
         if len(request) > 4:
-            MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+            VD.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
         else:
-            MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
+            VD.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
 def process_upload(UP, rlist):
 
@@ -667,7 +670,7 @@ def options_parser(modes):
 
               - Mapping XML to JSON and semantic mapping of metadata to B2FIND schema\n\t
 
-\n              - Validation of the JSON records and create coverage statistics\n\t
+\n            - Validation of the JSON records and create coverage statistics\n\t
               - Uploading resulting JSON {key:value} dict\'s as datasets to the B2FIND portal\n\t
               - OAI compatible creation of XML records in oai_b2find format\n\t
     
