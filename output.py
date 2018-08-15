@@ -83,7 +83,7 @@ class Output(object):
 
     def setup_custom_logger(self,name,verbose):
             log_level=logging.CRITICAL
-            log_format='[ %(levelname)s <%(module)s:%(funcName)s> @\t%(lineno)4s ] %(message)s'
+            log_format='[%(levelname)s <%(module)s:%(funcName)s> @l %(lineno)4s] %(message)s'
             # choose the debug level:
             if verbose == 1 : log_level=logging.ERROR
             elif  verbose == 2 : log_level=logging.WARNING
@@ -120,7 +120,7 @@ class Output(object):
             handler.setFormatter(formatter)
 
             self.logger.setLevel(log_level)
-            ###HEW-D?? 
+            ###HEW-D??
             self.logger.addHandler(handler)
             return self.logger
     
