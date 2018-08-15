@@ -35,7 +35,7 @@
       <xpath>//dc:rights</xpath>
     </field>
     <field name="Contact">
-      <xpath>//dc:publisher</xpath>
+      <xpath>//dc:contributor</xpath>
     </field>
    <!-- Representation Information -->
     <field name="Language">
@@ -65,10 +65,10 @@
       <xpath>normalize-space(string(/))</xpath>
     </field>
     <field name="oai_identifier">
-      <xpath>//r:header/r:identifier/</xpath>
+      <xpath>//r:header/r:identifier</xpath>
     </field>
     <field name="oai_set">
-      <xpath>//r:header/r:setSpec/</xpath>
+      <xpath>//r:header/r:setSpec</xpath>
     </field>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>
