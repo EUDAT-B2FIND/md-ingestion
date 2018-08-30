@@ -29,14 +29,14 @@
         "occurence" : "0-n",
         "obligation" : "optional"
     },
-    "Source" : {
-        "name" : "source",
-        "description" : "An identifier (URL) that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data. At least one identifier is mandatory.",
-        "ckanName" : "url",
-        "ckanType" : "default",
+    "DOI" : {
+        "name" : "DOI",
+        "description" : "A persistent, citable identifier (registered at DataCite) that uniquely identifies a resource.",
+        "ckanName" : "DOI",
+        "ckanType" : "extra",
         "display" : "shown",
         "type" : "url",
-        "obligation" : "mandatory"
+        "obligation" : "optional"
     }, 
     "PID" : {
         "name" : "PID",
@@ -47,19 +47,19 @@
         "type" : "url",
         "obligation" : "optional"
     },
-    "DOI" : {
-        "name" : "DOI",
-        "description" : "A persistent, citable identifier (registered at DataCite) that uniquely identifies a resource.",
-        "ckanName" : "DOI",
-        "ckanType" : "extra",
+    "Source" : {
+        "name" : "source",
+        "description" : "An identifier (URL) that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data. At least one identifier is mandatory.",
+        "ckanName" : "url",
+        "ckanType" : "default",
         "display" : "shown",
         "type" : "url",
-        "obligation" : "optional"
+        "obligation" : "mandatory"
     }, 
     "MetaDataAccess" : {
         "name" : "metadataccess",
         "description" : "Is a link to the originally harvested metadata record (GetRecord request)",
-        "ckanName" : "metadata",
+        "ckanName" : "MetaDataAccess",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "url",
@@ -173,6 +173,15 @@
         "type" : "date",
         "obligation" : "optional"
     },
+    "DiscHierarchy" : {
+        "name" : "dischierarchy",
+        "description" : "The discipline tree with parent and level",
+        "ckanName" : "dischierarchy",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
     "TemporalCoverage:BeginDate" :  {
         "name" : "temporalcoverage_begindate",
         "description" : "",
@@ -223,7 +232,7 @@
         "description" : "",
         "ckanName" : "PublicationTimestamp",
         "ckanType" : "extra",
-        "display" : "shown",
+        "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
     },
@@ -232,7 +241,7 @@
         "description" : "",
         "ckanName" : "community",
         "ckanType" : "default",
-        "display" : "shown",
+        "display" : "hidden",
         "type" : "textual",
         "obligation" : "optional"
     },

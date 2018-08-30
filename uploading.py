@@ -539,6 +539,7 @@ class Uploader(object):
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)
+                print('\t|- Upload to\t--> %s/group/%s' % (self.iphost,community))
 
             # check input path
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
@@ -587,56 +588,21 @@ class Uploader(object):
                 # get dataset id (CKAN name) from filename (a uuid generated identifier):
                 ds_id = os.path.splitext(filename)[0]
                 self.logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
- 
-               # add some general CKAN specific fields to dictionary:
-                jsondata["name"] = ds_id
-                jsondata["state"]='active'
-                jsondata["groups"]=[{ "name" : community }]
+
+                # add some general CKAN specific fields to dictionary:
                 if self.iphost.startswith('eudat-b1') :
                     jsondata["owner_org"]="eudat"
+                elif self.iphost.startswith('trng') or self.iphost.startswith('145.') :
+                    jsondata["owner_org"]="rda" #### "eudat-b2find"
                 else:
                     jsondata["owner_org"]="eudat-b2find"
-
-                # get OAI identifier from json data extra field 'oai_identifier':
-                if 'oai_identifier' not in jsondata :
-                    jsondata['oai_identifier'] = [ds_id]
-
-                oai_id = jsondata['oai_identifier'][0]
-                self.logger.debug("        |-> identifier: %s\n" % (oai_id))
-            
+                
                 ### CHECK JSON DATA for upload
                 jsondata=self.check(jsondata)
                 if jsondata == None :
                     self.logger.critical('File %s failed check and will not been uploaded' % filename)
                     continue
 
-                #  generate get record request for field MetaDataAccess:
-                if (mdprefix == 'json'):
-                    reqpre = source + '/dataset/'
-                    mdaccess = reqpre + oai_id
-                else:
-                    reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
-                    mdaccess = reqpre + '&identifier=' + oai_id
-                    ##HEW-MV2mapping!!! : urlcheck=self.check_url(mdaccess)
-                index1 = mdaccess
-
-                # exceptions for some communities:
-                if (community == 'clarin' and oai_id.startswith('mi_')):
-                    mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
-                elif (community == 'sdl'):
-                    mdaccess =reqpre+'&identifier=oai::record/'+oai_id
-                elif (community == 'b2share'):
-                    if mdsubset.startswith('trng') :
-                        mdaccess ='https://trng-b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-                    else:
-                        mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-
-                if self.check_url(mdaccess) == False :
-                    logging.debug('URL to metadata record %s is broken' % (mdaccess))
-                else:
-                    jsondata['MetaDataAccess']=mdaccess
-
-                jsondata['group']=community
                 ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
                 jsondata=self.json2ckan(jsondata)
 

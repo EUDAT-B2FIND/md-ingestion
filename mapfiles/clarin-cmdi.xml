@@ -8,64 +8,60 @@
   <mappings>
    <!-- General information -->
     <field name="title">
-      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Name,//cmd:Title,//cmd:title,//cmd:CollectionName,//cmd:ProjectName,//cmd:MdCollectionDisplayName</xpath>
+      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Name,//cmd:title,//cmd:CollectionName,//cmd:ProjectName,//cmd:MdCollectionDisplayName</xpath>
     </field>
     <field name="notes">
       <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Description,//cmd:CMD/cmd:Components/cmd:Session/cmd:descriptions/cmd:Description/text(),//cmd:desc/text(),//cmd:node/text(),//cmd:ProjectName</xpath>
     </field>
     <field name="tags">
-      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Keyword,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Keys/cmd:Key</xpath>
+      <xpath>//cmd:item/text(),//cmd:CMD/cmd:Components/cmd:teiHeader/cmd:profileDesc/cmd:textClass/cmd:keywords/cmd:list/cmd:item[1]/text(),//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Keyword,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Keys/cmd:Key</xpath>
     </field>
-   <!-- Access data  -->
+    <!-- Identifier  -->
     <field name="url">
       <xpath>//cmd:CMD/cmd:Header/cmd:MdSelfLink</xpath>
-      <!-- This are the resource list the collection comprises :
-      <xxxxpath>//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceRef</xpath>
-      -->
-    </field> 
-    <field name="Checksum">
+    </field>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+     <!-- Provenance Information -->
+    <field name="author">
+      <xpath>//cmd:author/cmd:name,//cmd:CMD/cmd:Header/cmd:MdCreator</xpath>
+    </field>
+    <field name="Publisher">
+      <string>CLARIN Virtual Collection Registry</string>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//cmd:CMD/cmd:Header/cmd:MdCreationDate,//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:CreationDate</xpath>
     </field>
     <field name="Rights">
       <xpath>//cmd:Access/cmd:Description/text()</xpath>
     </field>
-   <!-- Provenance data -->
+    <field name="Contact">
+      <xpath>//cmd:Contact/cmd:Name/text()</xpath>
+    </field>
+   <!-- Representation Information -->
+    <field name="Language">
+      <xpath>//cmd:language,//cmd:Language/cmd:LanguageName,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Content_Languages/cmd:Content_Language/cmd:Name/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//type,//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//cmd:type,//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:Format/text()</xpath>
+    </field>
+    <field name="Checksum">
+    </field>
+    <!-- Coverage -->
     <field name="Discipline">
       <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Keyword</xpath>
-      <###sssstring>Linguistics</string>
+      <string>Linguistics</string>
     </field>
-    <field name="author">
-      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:Creator/cmd:Name,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Actors/cmd:Actor/cmd:FullName</xpath>
-    </field>
-    <field name="Publisher">
-      <string>CLARIN Virtual Collection Registry</string>
-<!--
-      <xxxxpath>//cmd:CMD/cmd:Header/cmd:MdCollectionDisplayName/text()</xpath>
--->
-    </field>
-    <field name="PublicationYear">
-      <xpath>//cmd:CMD/cmd:Components/cmd:VirtualCollection/cmd:CreationDate</xpath>
-<!--
-      <xxxxpath>//cmd:PublicationTime,//cmd:CMD/cmd:Components/cmd:Session/cmd:Date/text(),//cmd:CMD/cmd:Header/cmd:MdCreationDate/text()</xpath>
--->
-    </field>
-   <!-- Formal data -->
-    <field name="Language">
-      <xpath>//cmd:Language/cmd:LanguageName,//cmd:CMD/cmd:Components/cmd:Session/cmd:MDGroup/cmd:Content/cmd:Content_Languages/cmd:Content_Language/cmd:Name/text()</xpath>
     </field>
     <field name="SpatialCoverage">
       <xpath>//cmd:Location/cmd:Region/text()</xpath>
     </field>
     <field name="TemporalCoverage">
       <xpath>//cmd:TimePosition/cmd:Start/text(),//cmd:TimePosition/cmd:End/text()</xpath>
-    </field>
-    <field name="ResourceType">
-      <xpath>//cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType</xpath>
-    </field>
-    <field name="Format">
-      <xpath>//cmd:CMD/cmd:Components/cmd:Session/cmd:Resources/cmd:WrittenResource/cmd:Format/text()</xpath>
-    </field>
-    <field name="Contact">
-      <xpath>//cmd:Contact/cmd:Name/text()</xpath>
     </field>
    <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">

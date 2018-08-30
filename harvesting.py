@@ -449,8 +449,11 @@ limit 1000
                 else:
                     oai_id = record.header.identifier
             elif req["lverb"].startswith('Sparql'):
-                oai_id=record['fileName']['value']
-    
+                if 'fileName' in record:
+                    oai_id=record['fileName']['value']
+                elif 'title' in record:
+                    oai_id=record['title']['value']
+
             # generate a uniquely identifier and a filename for this dataset:
             uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id))
             outfile = '%s/%s/%s.%s' % (subsetdir,outtypedir,os.path.basename(uid),outtypeext)
@@ -570,7 +573,7 @@ limit 1000
         # path to the file with all ids to delete:
         delete_file = '/'.join([self.base_outdir,'delete',req['community']+'-'+req['mdprefix']+'.del'])
         if len(delete_ids) > 0 :
-            with open(delete_file, 'a') as file:
+            with open(delete_file, 'a+') as file:
                 for id in delete_ids :
                     file.write(id+'\n')
 

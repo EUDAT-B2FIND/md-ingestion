@@ -20,6 +20,8 @@ Modified by  c/o DKRZ 2015   Heinrich Widmann
   Validation mode enhanced, redesign and bug fixes
 Modified by  c/o DKRZ 2016   Heinrich Widmann
   Adapt to new B2HANDLE library
+Modified by  c/o DKRZ 2018   Heinrich Widmann
+  Further modularization and redesign
 """
 
 ##from __future__ import print_function
@@ -28,6 +30,7 @@ Modified by  c/o DKRZ 2016   Heinrich Widmann
 from generating import Generator
 from harvesting import Harvester
 from mapping import Mapper
+from validating import Validator
 from uploading import Uploader, CKAN_CLIENT
 from output import Output
 import settings
@@ -62,7 +65,7 @@ def main():
     # check option 'mode' and generate process list:
     (mode, pstat) = pstat_init(p,modes,options.mode,options.source,options.iphost)
     
-    # make jobdir
+    # set now time and process id
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     jid = os.getpid()
 
@@ -212,8 +215,8 @@ def process(options,pstat,OUT):
     ## VALIDATING - Mode:
     if (pstat['status']['v'] == 'tbd'):
         logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = Mapper(OUT,options.outdir,options.fromdate)
-        process_validate(MP,reqlist)
+        VD = Validator(OUT,options.outdir,options.fromdate)
+        process_validate(VD,reqlist)
 
     ## OAI-CONVERTING - Mode:  
     if (pstat['status']['o'] == 'tbd'):
@@ -299,7 +302,15 @@ def process_harvest(HV, rlist):
     for request in rlist:
         ir+=1
         harveststart = time.time()
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else None
+        else :
+            request.append(None)
+
         print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,HV.fromdate,'Started',time.strftime("%H:%M:%S")))
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+
         results = HV.harvest(request)
     
         if (results == -1):
@@ -327,20 +338,24 @@ def process_map(MP, rlist):
             mext='conf'
         else:
             mext='xml'
-
-        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
-        
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else ''
+        else :
+            request.append('')
+
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S")))
         results = MP.map(request)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4] if len(request)> 4 else '','m',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3], request[4],'m',results)
 
-def process_validate(MP, rlist):
+def process_validate(VD, rlist):
     ## process_validate (MAPPER object, rlist) - function
     # Validates per request.
     #
@@ -355,23 +370,27 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        outfile='oaidata/%s-%s/%s' % (request[0],request[3],'validation.stat')
-        print ('   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S")))
         cstart = time.time()
 
-        ### HEW!!!
         target=None
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else ''
+        else :
+            request.append('')
+
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
-        results = MP.validate(request,target)
+        results = VD.validate(request,target)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
         if len(request) > 4:
-            MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+            VD.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
         else:
-            MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
+            VD.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
 def process_upload(UP, rlist):
 
@@ -385,7 +404,7 @@ def process_upload(UP, rlist):
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         community=request[0]
         mdprefix = request[3]
-        mdsubset=request[4]   if len(request)>4 else None
+        mdsubset=request[4]   if (len(request)>4 and not request[4].startswith('#')) else None
         ## dir = dir+'/'+subset
         
         try:
@@ -577,7 +596,6 @@ def process_delete(OUT, dir, options):
         OUT.save_stats(community+'-'+mdprefix,subset,'d',results)
 
 def parse_list_file(options):
-##filename,community=None,subset=None,mdprefix=None,target_mdschema=None):
     filename=options.list
     if(not os.path.isfile(filename)):
         logging.critical('[CRITICAL] Can not access job list file %s ' % filename)
@@ -647,12 +665,12 @@ def options_parser(modes):
     p = optparse.OptionParser(
         description = '''Description                                                              
 ===========                                                                           
- Management of metadata within EUDAT B2FIND, comprising                                      
+ Management of metadata within EUDAT B2FIND, comprising                               - Generation of formated XML records from raw metadata sets \n\t                       
       - Harvesting of XML files from OAI-PMH MD provider(s)\n\t
 
               - Mapping XML to JSON and semantic mapping of metadata to B2FIND schema\n\t
 
-\n              - Validation of the JSON records and create coverage statistics\n\t
+\n            - Validation of the JSON records and create coverage statistics\n\t
               - Uploading resulting JSON {key:value} dict\'s as datasets to the B2FIND portal\n\t
               - OAI compatible creation of XML records in oai_b2find format\n\t
     
@@ -666,11 +684,10 @@ def options_parser(modes):
 
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
-    p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
+    p.add_option('--outdir', '-o', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (g)enerating, (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    p.add_option('--outdir', '-o', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",
