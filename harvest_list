@@ -11,11 +11,9 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
-<<<<<<< HEAD
 ## GET-IT
-#http://getit.lifewatch.unisalento.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities
+#http://getit.lifewatch.unisalento.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities 
 getit http://getit.lifewatch.unisalento.it/catalogue/csw csw iso19139 full
-=======
 ## DataverseNO
 dataverseno https://dataverse.no/oai ListRecords oai_dc HarvesterDataverseNO
 ##Herbadrop
@@ -23,7 +21,6 @@ herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc
 herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
 ##Yoda (Utrecht University)
 utrechtuni https://public.yoda.uu.nl/oai/oai ListRecords datacite
->>>>>>> 800cb49d5eb31fc9b97a586543a6a62038d762b7
 ##E-Rosa Inra ??
 inra https://data.inra.fr/oai ListRecords oai_ddi ALL
 ##RADAR
