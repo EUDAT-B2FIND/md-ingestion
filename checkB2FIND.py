@@ -19,9 +19,18 @@ import traceback
 import os, sys, io, time
 import argparse
 import timeout_decorator
-import urllib2, urllib, socket
+import socket
 import json, pprint
 
+PY2 = sys.version_info[0] == 2
+if PY2:
+    from urllib import quote
+    from urllib2 import urlopen, Request
+    from urllib2 import HTTPError,URLError
+else:
+    from urllib import parse
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError,URLError
 
 def check_url(url):
     # Checks and validates a url via urllib module
@@ -38,12 +47,13 @@ def check_url(url):
     resplen='--'
     try:
         start=time.time()
-        if (urllib2.urlopen(url, timeout=1).getcode() < 501):
+        request = Request(url)
+        if (urlopen(request, timeout=1).getcode() < 501):
             msg='[OK]'
             retcode=0
         rta=time.time()-start
         
-    except urllib2.URLError as e:
+    except URLError as e:
         ## msg="    %s and %s" % (e,traceback.format_exc())
         msg="    [URLError] %s" % e
         retcode = 2    #catched
@@ -65,9 +75,6 @@ def check_url(url):
 
     return (retcode,msg,resplen,rta)
 
-
-
-
 def check_ckan_action(actionreq,data,rows):
     # Checks and validates a request or action submitted to CKAN
     #
@@ -83,45 +90,55 @@ def check_ckan_action(actionreq,data,rows):
     rta=0
     try:
         start=time.time()
-        request = urllib2.Request(actionreq)
+##HEW-D        request = Request(actionreq)
         if data :
-            data_string = urllib.quote(json.dumps(data))
-            response = urllib2.urlopen(request,data_string)
+            if PY2 :
+                data_string = quote(json.dumps(data))
+            else :
+                data_string = parse.quote(json.dumps(data)).encode('utf-8')
+            request = Request(actionreq,data_string)
+            response = urlopen(request)
         else :
-            response = urllib2.urlopen(request)
+            request = Request(actionreq)
+            response = urlopen(request)
         rta=time.time()-start
-        
-        assert response.code == 200
-        response_dict = json.loads(response.read())
-        
 
-        # Check the contents of the response.
-        assert response_dict['success'] is True
-        result = response_dict['result']
-        if actionreq.endswith('group_show') :
-            resplen=result['package_count']
-        else:
-            resplen=len(result)
 
-    except urllib2.URLError as e:
-        msg = "   [URLERROR] %s " % e
+    except URLError as e:
+        msg = " [URLERROR] %s " % e
         retcode = 2
     except socket.timeout as e:
-        msg = "   [IOERROR] %s " % e
+        msg = " [TIMEOUT] %s " % e
         retcode = 2
     except IOError as e:
-        msg = "   [IOERROR] %s " % e
+        msg = " [IOError] %s " % e
         retcode = 1
     except ValueError as e:
-        msg = "   [IOERROR] %s " % e
+        msg = " [ValueError] %s " % e
         retcode = 1    #catched
     except Exception as e:
-        msg = "   [IOERROR] %s " % e
+        msg = "  [Error] %s " % e
         retcode = 3    #catched
     else:
         msg = '[OK]'
         retcode = 0
+        assert response.code == 200
+        ###print('response %s' % response.read()) 
+        if PY2 :
+            response_dict = json.loads(response.read())
+        else:
+            response_dict = response.read()
 
+        # Check the contents of the response.
+        if type(response_dict) is dict and 'success' in response_dict :
+            assert response_dict['success'] is True
+        ## print('response.code %s' % response.code)
+        if type(response_dict) is dict and 'result' in response_dict :
+            result = response_dict['result']
+            if actionreq.endswith('group_show') :
+                resplen=result['package_count']
+            else:
+                resplen=len(result)
     return (retcode,msg,resplen,rta)
 
 def main():
