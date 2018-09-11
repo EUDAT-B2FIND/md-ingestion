@@ -711,7 +711,7 @@ class Mapper(object):
             invalue=invalue.split(';')
             invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
         for lentry in invalue :
-            self.logger.debug('lentry %s' % lentry)
+            self.logger.info('lentry %s' % lentry)
             try:
                 if type(lentry) is dict :
                     if "value" in lentry:
@@ -720,13 +720,12 @@ class Mapper(object):
                         valarr=lentry.values()
                 elif re.search(r"[\n&,;+]+",lentry) :
                     valarr=re.split(r"[\n&,;+]+",lentry)                    
+                elif isinstance(lentry,str) :
+                    valarr= [ lentry ]
                 else :
-                    valarr=lentry.split()
-                ##elif len(lentry.split()) > 3 :
-                ##    valarr=lentry.split()
-                ##    self.logger.debug('split valarr %s' % valarr)
-                self.logger.debug('valarr %s' % valarr)
-
+                    self.logger.error('Non supported type %s of value %s' % (type(lentry),lentry))
+                self.logger.info('  valarr %s' % valarr)
+                ## if isinstance(valarr,basestring) : valarr= [ valarr ]
                 for entry in valarr:
                     if len(entry.split()) > 8 :
                         logging.debug('String has too many words : %s' % entry)
@@ -747,6 +746,7 @@ class Mapper(object):
             except (Exception,AttributeError) as err:
                 self.logger.error('%s in list2dictlist of lentry %s , entry %s' % (err,lentry,entry))
                 continue
+
         return dictlist[:12]
 
     def uniq(self,input):
@@ -1202,7 +1202,7 @@ class Mapper(object):
                     xpath=m2.group(3)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
                 else:
-                    self.logger.error(' |- Found no xpath expression => continue with next field')
+                    self.logger.info(' |- Found no xpath expression => continue with next field')
                     continue
                 
                 self.logger.info(' |- Xpath rule %-10s\n |- Value %-10s' % (xpath,retval))
@@ -1295,7 +1295,7 @@ class Mapper(object):
         # community-mdschema root path
         cmpath='%s/%s-%s' % (self.base_outdir,community,mdprefix)
         self.logger.info('\t|- Input path:\t%s' % cmpath)
-        subdirs=next(os.walk(cmpath))[1] ### [x[0] for x in os.walk(cmpath)]
+        subdirs=next(os.walk(cmpath))[1]
         totcount=0 # total counter of processed files
         subsettag=re.compile(r'_\d+')
         # loop over all available subdirs
