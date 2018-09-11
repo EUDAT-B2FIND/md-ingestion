@@ -11,6 +11,9 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## GET-IT
+#http://getit.lifewatch.unisalento.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities 
+getit http://getit.lifewatch.unisalento.it/catalogue/csw csw iso19139 full
 ## DataverseNO
 dataverseno https://dataverse.no/oai ListRecords oai_dc HarvesterDataverseNO
 dataverseno https://dataverse.no/oai ListRecords oai_dc nmdc
@@ -63,9 +66,10 @@ aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D64
 rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
 ## Anaee
 #http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw own anaee #?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw oai_dc 
+#?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
 ## ENVRIPLUS
-##HEW-!!! anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
+##HEW-!!!anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
 ## DublinCore !!! 
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso-19139 anaee 
@@ -87,7 +91,7 @@ envriplus http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw iso19139 euro
 envriplus http://www.envriplus.eu/oai??? ListRecords  oai_dc embrc_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 epos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 iagos_1
-envriplus http://www.envriplus.eu/oai??? ListRecords  marcxml icos_1
+#envriplus http://www.envriplus.eu/oai??? ListRecords  marcxml icos_1
 envriplus http://www.envriplus.eu/oai??? ListRecords  iso19139 lter_1
 envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 seadatanet
 ##oldversion iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw iso19139  ##?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities 
@@ -96,16 +100,20 @@ envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso191
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_dc cams1_ps ##???iso19139 cams1_ps
 ## ICOS
-icos https://meta.icos-cp.eu/sparqlclient/ Sparql  json
+icos https://meta.icos-cp.eu/sparqlclient/ Sparql json
 ## IAGOS
-iagos http://catalogue.sedoo.fr/geonetwork/srv/eng/csw csw oai_dc full
+iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos csw oai_dc
+#http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw csw oai_dc
+#iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw csw oai_dc full
+#?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&constraintLanguage=CQL_TEXT&constraint_language_version=1.1.0&constraint=csw:title%20LIKE%20%27IAGOS%27&typeNames=csw:Record&RESULTTYPE=results
+#old iagos http://catalo
+gue.sedoo.fr/geonetwork/srv/eng/csw csw oai_dc full
 #old iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw oai_dc full
 #von Damien 20180619 http://catalogue.sedoo.fr/geonetwork/srv/eng/csw?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&constraintLanguage=CQL_TEXT&constraint_language_version=1.1.0&constraint=csw:title%20LIKE%20%27IAGOS%27&typeNames=csw:Record&RESULTTYPE=results
-
 ## ETSIN
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
-etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc
+etsin https://etsin.avointiede.fi/oai ListIdentifiers oai_dc
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  fin-clarin
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  00000000-0000-0000-0000-000000000000
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  97779b54-3e78-df11-a6ac-005056a22855
