@@ -567,7 +567,7 @@ class Uploader(object):
                     oldperc=perc
                     print ("\r\t [%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-startsubdir ))
                     sys.stdout.flush()
-                self.logger.debug('    | m | %-4d | %-45s |' % (fcount,filename))
+                self.logger.debug('    | u | %-4d | %-45s |' % (fcount,filename))
 
                 jsondata = dict()
                 datasetRecord = dict()
