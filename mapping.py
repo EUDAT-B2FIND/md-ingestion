@@ -448,7 +448,7 @@ class Mapper(object):
         self.logger.debug('invalue %s' % (invalue,))
 
         if not any(invalue) :
-            self.logger.critical('Coordinate list has only None entries : %s' % (invalue,))
+            self.logger.error('Coordinate list has only None entries : %s' % (invalue,))
         desc=''
         ## check coordinates
         if len(invalue) > 1 :
