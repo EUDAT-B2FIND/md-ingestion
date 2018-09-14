@@ -545,7 +545,7 @@ class Uploader(object):
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
             if not os.path.exists(inpath):
                 self.logger.critical('Can not access directory %s' % inpath)
-                return results     
+                continue     
 
             files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
             results['tcount'] += len(list(files))
