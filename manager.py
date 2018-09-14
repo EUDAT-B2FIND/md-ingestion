@@ -30,6 +30,7 @@ Modified by  c/o DKRZ 2018   Heinrich Widmann
 from generating import Generator
 from harvesting import Harvester
 from mapping import Mapper
+from converting import Converter
 from validating import Validator
 from uploading import Uploader, CKAN_CLIENT
 from output import Output
@@ -57,7 +58,7 @@ def main():
     settings.init()
 
     # parse command line options and arguments:
-    modes=['a','g','generate','h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
+    modes=['a','g','generate','h','harvest','m','map','v','validate','c','convert','u','upload','h-m','m-u','h-u', 'h-d', 'd','delete']
     p = options_parser(modes)
     global options
     options,arguments = p.parse_args()
@@ -218,11 +219,11 @@ def process(options,pstat,OUT):
         VD = Validator(OUT,options.outdir,options.fromdate)
         process_validate(VD,reqlist)
 
-    ## OAI-CONVERTING - Mode:  
-    if (pstat['status']['o'] == 'tbd'):
-        logger.info('\n|- OAI-Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = Mapper(OUT,options.outdir,options.fromdate)
-        process_oaiconvert(MP, reqlist)
+    ## CONVERTING - Mode:  
+    if (pstat['status']['c'] == 'tbd'):
+        logger.info('\n|- Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        CV = Converter(OUT,options.outdir,options.fromdate)
+        process_convert(CV, reqlist)
 
     ## UPLOADING - Mode:  
     if (pstat['status']['u'] == 'tbd'):
@@ -449,7 +450,7 @@ def process_upload(UP, rlist):
             UP.OUT.save_stats(request[0]+'-'+request[3],'SET_1','u',results)
         
 
-def process_oaiconvert(MP, rlist):
+def process_convert(CV, rlist):
 
     ir=0
     for request in rlist:
@@ -457,13 +458,13 @@ def process_oaiconvert(MP, rlist):
         print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
         rcstart = time.time()
         
-        results = MP.oaiconvert(request)
+        results = CV.convert(request)
 
         rctime=time.time()-rcstart
         results['time'] = rctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-'+ request[3],request[4],'o',results)
+        CV.OUT.save_stats(request[0]+'-'+ request[3],request[4],'c',results)
 
 
 def process_delete(OUT, dir, options):
@@ -731,7 +732,7 @@ def pstat_init (p,modes,mode,source,iphost):
         mode = 'h-u'
  
     # initialize status, count and timing of processes
-    plist=['g','h','m','v','u','c','o','d']
+    plist=['g','h','m','v','u','c','d']
     pstat = {
         'status' : {},
         'text' : {},
@@ -759,20 +760,18 @@ def pstat_init (p,modes,mode,source,iphost):
        
     pstat['text']['g']='Generate XML files from ' + stext 
     pstat['text']['h']='Harvest XML files from ' + stext 
-    pstat['text']['c']='Convert XML to B2FIND JSON'  
     pstat['text']['m']='Map community XML to B2FIND JSON and do semantic mapping'  
     pstat['text']['v']='Validate JSON records against B2FIND schema'  
-    pstat['text']['o']='OAI-Convert B2FIND JSON to B2FIND XML'  
+    pstat['text']['c']='Convert JSON to (e.g. CERA) XML'  
     pstat['text']['u']='Upload JSON records as datasets into B2FIND %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
     pstat['short']['h-u']='TotalIngestion'
     pstat['short']['g']='Generating'
     pstat['short']['h']='Harvesting'
-    pstat['short']['c']='Converting'
     pstat['short']['m']='Mapping'
     pstat['short']['v']='Validating'
-    pstat['short']['o']='OAIconverting'
+    pstat['short']['c']='Converting'
     pstat['short']['u']='Uploading'
     pstat['short']['d']='Deletion'
     
