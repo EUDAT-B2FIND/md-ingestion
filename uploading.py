@@ -101,7 +101,7 @@ class CKAN_CLIENT(object):
 	    # (dict)    response dictionary of CKAN
 	    
 	    if (not self.validate_actionname(action)):
-		    logging.critical('Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
+		    self.logger.critical('Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
 	    else:
 		    return self.__action_api(action, data)
 		
@@ -123,7 +123,7 @@ class CKAN_CLIENT(object):
 
             print ('Total number of datasets: ' + str(len(data['result'])))
             for dataset in data['result']:
-	            logging.info('\tTry to activate object: ' + str(dataset))
+	            self.logger.info('\tTry to activate object: ' + str(dataset))
 	            self.action('package_update',{"name" : dataset[0], "state":"active"})
 
             return True
@@ -174,7 +174,7 @@ class CKAN_CLIENT(object):
             else :
                 data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
         except Exception as err :
-            logging.critical('%s while building url data' % err)
+            self.logger.critical('%s while building url data' % err)
 
         try:
             request = Request(action_url,data_string)
@@ -189,7 +189,7 @@ class CKAN_CLIENT(object):
         except HTTPError as e:
             self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
             if ( e.code == 403 ):
-                logging.error('Access forbidden, maybe the API key %s is not valid?' % self.api_key)
+                self.logger.error('Access forbidden, maybe the API key %s is not valid?' % self.api_key)
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
                 self.logger.info('\tMaybe the dataset already exists => try to update the package')
@@ -261,7 +261,6 @@ class Uploader(object):
     """
     
     def __init__(self, CKAN, ckan_check, HandleClient,cred, OUT, base_outdir, fromdate, iphost):
-        ##HEW-D logging = logging.getLogger()
         self.CKAN = CKAN
         self.ckan_check = ckan_check
         self.HandleClient = HandleClient
@@ -544,7 +543,7 @@ class Uploader(object):
             # check input path
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
             if not os.path.exists(inpath):
-                self.logger.critical('Can not access directory %s' % inpath)
+                self.logger.error('Can not access directory %s' % inpath)
                 continue     
 
             files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
@@ -744,11 +743,11 @@ class Uploader(object):
                 # update PID in handle server                           
                 if (self.cred):
                     if (handlestatus == "unchanged"):
-                        logging.warning("        |-> No action required for %s" % pid)
+                        self.logger.warning("        |-> No action required for %s" % pid)
                     else:
                         if (upload >= 1): # new or changed record
                             if (handlestatus == "new"): # Create new PID
-                                logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                                self.logger.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                                 try:
                                     npid = self.HandleClient.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
                                 except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
