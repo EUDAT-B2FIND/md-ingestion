@@ -1,10 +1,10 @@
 {
     "Title" : { 
         "name" : "title",
-        "definition" : "A name or title by which a resource is known",
+        "definition" : "A name or title by which a resource is known.",
         "ckanName" : "title",
         "ckanType" : "default",
-	"display" : "shown",
+        "display" : "shown",
         "type" : "textual",
         "occurence" : "1",
         "obligation" : "mandatory"
@@ -21,7 +21,7 @@
     },
     "Tags" : {
         "name" : "tags",
-        "description" : "A subject, keyword, classification code, or key phrase describing the content .",
+        "description" : "A subject, keyword, classification code, or key phrase describing the content.",
         "ckanName" : "tags",
         "ckanType" : "default",
         "display" : "shown",
@@ -31,7 +31,7 @@
     },
     "DOI" : {
         "name" : "DOI",
-        "description" : "A persistent, citable identifier (registered at DataCite) that uniquely identifies a resource.",
+        "description" : "A persistent, citable identifier that uniquely identifies a resource.",
         "ckanName" : "DOI",
         "ckanType" : "extra",
         "display" : "shown",
@@ -40,7 +40,7 @@
     }, 
     "PID" : {
         "name" : "PID",
-        "description" : "A persistent identifier (implemented as a handle in a Handleserver) that uniquely identifies a resource.",
+        "description" : "A persistent identifier that uniquely identifies a resource.",
         "ckanName" : "PID",
         "ckanType" : "extra",
         "display" : "shown",
@@ -49,16 +49,25 @@
     },
     "Source" : {
         "name" : "source",
-        "description" : "An identifier (URL) that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data. At least one identifier is mandatory.",
+        "description" : "An identifier (URL) that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data.",
         "ckanName" : "url",
         "ckanType" : "default",
         "display" : "shown",
         "type" : "url",
         "obligation" : "mandatory"
     }, 
+    "RelatedIdentifier" : {
+        "name" : "RelatedIdentifier",
+        "description" : "A link to related resources or supplements.", 
+        "ckanName" : "url",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "optional"
+    }, 
     "MetaDataAccess" : {
         "name" : "metadataccess",
-        "description" : "Is a link to the originally harvested metadata record (GetRecord request)",
+        "description" : "Is a link to the originally harvested metadata record (GetRecord request).",
         "ckanName" : "MetaDataAccess",
         "ckanType" : "extra",
         "display" : "shown",
@@ -67,7 +76,7 @@
     },
     "Creator" : {
         "name" : "creator",
-        "description" : "The main researchers involved in producing the data, or the authors of the publication, in priority order.",
+        "description" : "The main researchers involved in producing the data, or the authors of the publication, or the measurement or monitoring station that produces the data in priority order.",
         "ckanName" : "author",
         "ckanType" : "default",
         "display" : "shown",
@@ -78,6 +87,15 @@
         "name" : "publisher",
         "description" : "The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.",
         "ckanName" : "Publisher",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "Contributor" :  {
+        "name" : "contributor",
+        "description" : "The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.",
+        "ckanName" : "Contributor",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "textual",
@@ -101,6 +119,15 @@
         "type" : "textual",
         "obligation" : "optional"
     }, 
+    "OpenAccess" : {
+        "name" : "OpenAccess",
+        "description" : "Is the dataset openly accessible or not.",
+        "ckanName" : "OpenAccess",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "boolean",
+        "obligation" : "optional"
+    },
     "Contact" : {
         "name" : "contact",
         "description" : "Any contact information for this resource.",
@@ -120,7 +147,7 @@
         "obligation" : "optional"
     }, 
     "ResourceType" : {
-        "name" : "",
+        "name" : "resourcetype",
         "description" : "A description of the resource, a general type of the resource.",
         "ckanName" : "ResourceType",
         "ckanType" : "extra",
@@ -129,7 +156,7 @@
         "obligation" : "optional"
     },
     "Format" : {
-        "name" : "",
+        "name" : "format",
         "description" : "Technical format of the resource.",
         "ckanName" : "Format",
         "ckanType" : "default",
@@ -137,15 +164,6 @@
         "type" : "textual",
         "obligation" : "optional"
     }, 
-    "Checksum" : {
-        "name" : "Checksum",
-        "description" : "Checksum of the data record.",
-        "ckanName" : "Checksum",
-        "ckanType" : "default",
-        "display" : "shown",
-        "type" : "url",
-        "obligation" : "optional"
-    },
     "Discipline" : {
         "name" : "discipline",
         "description" : "A scientific discipline the resource originates from. A closed vocabulary is used.",
@@ -175,7 +193,7 @@
     },
     "DiscHierarchy" : {
         "name" : "dischierarchy",
-        "description" : "The discipline tree with parent and level",
+        "description" : "The discipline tree with parent and level.",
         "ckanName" : "dischierarchy",
         "ckanType" : "extra",
         "display" : "hidden",
@@ -223,7 +241,7 @@
         "description" : "",
         "ckanName" : "spatial",
         "ckanType" : "extra",
-	"display" : "hidden",
+        "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
     }, 
