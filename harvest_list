@@ -20,6 +20,8 @@ http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc
 getit http://getit.lifewatch.unisalento.it/catalogue/csw csw iso19139 full
 ## DataverseNO
 dataverseno https://dataverse.no/oai ListRecords oai_dc HarvesterDataverseNO
+dataverseno https://dataverse.no/oai ListRecords oai_dc nmdc
+dataverseno https://dataverse.no/oai ListRecords oai_dc trolling
 ##Herbadrop
 herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc 
 herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
@@ -52,13 +54,14 @@ epos http://epos-tcs-uni-utr???  ListRecords iso19139 SET_1
 ##epos https://trng-b2share.eudat.eu/api/oai2d  ListRecords marcxml EPOS 
 ## SLKS
 ### slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  lido
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  test
+##slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  test
 slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  SAVE
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Objects
+##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Objects
 slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Listed
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  KID
+##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  KID
 slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Foto
+##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Foto
+##??NO OAI set ??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  sites
 ## HZG
 hzg   http://????  ListRecords  iso19139 coastmap
 ## Aston university
