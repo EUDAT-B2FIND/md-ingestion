@@ -4,64 +4,71 @@
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
+    <namespace ns="dct" uri="http://purl.org/dc/terms/"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
     <field name="title">
-      <xpath>//dc:title/text()</xpath>
+      <xpath>//dc:title</xpath>
     </field>
     <field name="notes">
-      <xpath>//dc:description/text()</xpath>
+      <xpath>//dc:description</xpath>
     </field>
     <field name="tags">
-      <xpath>//dc:subject/text()</xpath>
+      <xpath>//dc:subject</xpath>
     </field>
-    <!-- Access data -->
+    <!-- Identifier -->
     <field name="url">
-      <xpath>//dc:identifier/text()</xpath>
+      <xpath>//dc:identifier</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights/text()</xpath>
-    </field>
-   <!-- Provenance data -->
-    <field name="Discipline">
-      <xpath>//dc:subject/text()</xpath>
-    </field>
+    <!-- Provenance information -->
     <field name="author">
-      <xpath>//dc:creator/text()</xpath>
+      <xpath>//dc:creator</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dc:publisher/text()</xpath>
-    </field>
+      <xpath>//dc:publisher</xpath>
+    </field> 
     <field name="PublicationYear">
-      <xpath>//dc:date[1]/text()</xpath>
+      <xpath>//dc:date</xpath>
+    </field>  
+    <field name="Rights">
+      <xpath>//dc:rights</xpath>
     </field>
-   <!-- Formal data -->
+    <field name="Contact">
+      <xpath>//dc:publisher</xpath>
+    </field>
+   <!-- Representation Information -->
     <field name="Language">
-      <xpath>//dc:language/text()</xpath>
+      <xpath>//dc:language</xpath>
     </field>
-    <field name="SpatialCoverage">
-      <xpath>//dc:coverage/text()</xpath>
-    </field>
-    <field name="TemporalCoverage">
-      <xpath>//dc:coverage/text()</xpath>
+    <field name="ResourceType">
+      <xpath>//dc:type</xpath>
     </field>
     <field name="Format">
-      <xpath>//dc:format/text()</xpath>
+      <xpath>//dc:format</xpath>
     </field>
-    <!-- Additional Information -->
-    <field name="Contact">
-      <xpath>//dc:publisher/text()</xpath>
+    <field name="Checksum">
+      <xpath></xpath>
+    </field>    
+   <!-- Coverage -->    
+    <field name="Discipline">
+      <xpath>//dc:subject</xpath>
     </field>
+    <field name="SpatialCoverage">
+      <xpath>//dct:spatial, //dc:coverage</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//dct:temporal, //dc:coverage</xpath>
+    </field>   
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
     <field name="oai_identifier">
-      <xpath>//r:header/r:identifier/text()</xpath>
+      <xpath>//r:header/r:identifier/</xpath>
     </field>
     <field name="oai_set">
-      <xpath>//r:header/r:setSpec/text()</xpath>
+      <xpath>//r:header/r:setSpec/</xpath>
     </field>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>

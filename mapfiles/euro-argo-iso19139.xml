@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for ISO19139 format metadata from Euro-Argo. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+    <namespace ns="gml" uri="http://www.opengis.net/gml"/>
+    <namespace ns="gmi" uri="http://www.isotc211.org/2005/gmi"/>
+    <namespace ns="gmd" uri="http://www.isotc211.org/2005/gmd"/>
+    <namespace ns="gco" uri="http://www.isotc211.org/2005/gco"/>
+    <namespace ns="gmx" uri="http://www.isotc211.org/2005/gmx"/>
+  </namespaces>
+  <mappings>
+   <!-- General information -->
+    <field name="title">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString</xpath>
+    </field>
+    <!-- Access data  -->
+    <field name="url">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString</xpath>
+   </field>
+   <field name="Checksum">
+   </field>
+   <field name="Rights">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useLimitation/gco:CharacterString</xpath>
+   </field>
+   <!-- Provenance data -->
+    <field name="Discipline">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString</xpath>
+    </field>
+    <field name="author">
+      <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date</xpath>
+    </field>
+    <!-- Formal data -->
+    <field name="Language">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gco:CharacterString</xpath>
+   </field>
+    <field name="SpatialCoverage">
+      <xpath>//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()</xpath>
+    </field>
+   <field name="TemporalCoverage">
+      <xpath>//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text(),//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileType/gco:CharacterString</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>
+    </field>
+   <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text(), //r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>

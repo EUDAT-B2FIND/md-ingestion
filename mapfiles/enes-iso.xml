@@ -12,7 +12,7 @@
   <mappings>
    <!-- General information -->
     <field name="title">
-      <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString</xpath>
     </field>
     <field name="notes">
       <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString/text()</xpath>
@@ -27,10 +27,11 @@
    <field name="Checksum">
    </field>
    <field name="Rights">
+     <string>For Scientific Use only</string>
    </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <string>Earth Sciences</string>
+       <string>Earth System Research</string>
     </field>
     <field name="author">
       <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text()</xpath>
@@ -39,7 +40,7 @@
       <xpath>//gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//gmd:MD_Metadata/gmd:dateStamp/gco:DateTime/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date/text()</xpath>
     </field>
     <!-- Formal data -->
     <field name="Language">
@@ -52,7 +53,10 @@
       <xpath>//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text(),//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition/text()</xpath>
     </field>
     <field name="Format">
-      <xpath>//gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString/text()</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString/text()</xpath>      
+    </field>
+    <field name="ResourceType">
+      <string>Dataset</string>
     </field>
     <field name="Contact">
       <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>

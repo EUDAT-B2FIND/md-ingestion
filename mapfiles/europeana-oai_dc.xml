@@ -16,37 +16,32 @@
     <field name="tags">
       <xpath>//dc:subject</xpath>
     </field>
-    <!-- Access data  -->
+    <!-- Identifier  -->
     <field name="url">
       <xpath>//dc:identifier</xpath>
     </field>
-    <field name="Checksum">
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights</xpath>
-    </field>
-    <!-- Provenance data -->
-    <field name="Discipline">
-      <xpath>//dc:subject</xpath>
-    </field>
+    <!-- Provenance information -->
     <field name="author">
       <xpath>//dc:creator</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dc:publisher</xpath>
+      <xpath>//dc:source</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//dc:date[0]</xpath>
+      <xpath>//r:datestamp</xpath>
     </field>
-    <!-- Formal data -->    
+    <field name="Rights">
+      <xpath>//dc:rights</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//dc:creator</xpath>
+    </field>
+    <!-- Representation Information -->
     <field name="Language">
       <xpath>//dc:language</xpath>
-    </field>
-    <field name="SpatialCoverage">
-      <xpath>//dc:coverage</xpath>
-    </field>
-    <field name="TemporalCoverage">
-      <xpath>//dc:coverage</xpath>
     </field>
     <field name="ResourceType">
       <xpath>//dc:type</xpath>
@@ -54,9 +49,17 @@
     <field name="Format">
       <xpath>//dc:format</xpath>
     </field>
-    <!-- additional information -->
-    <field name="Contact">
-      <xpath>//dc:contact</xpath>
+    <field name="Checksum">
+    </field>
+    <!-- Coverage -->    
+    <field name="Discipline">
+      <xpath>//dc:subject</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//dc:subject</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//dc:subject</xpath>
     </field>
    <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">

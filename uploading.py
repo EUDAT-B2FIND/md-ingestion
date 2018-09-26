@@ -32,6 +32,7 @@ import re
 PY2 = sys.version_info[0] == 2
 
 # needed for UPLOADER and CKAN class:
+import settings
 import simplejson as json
 import hashlib
 import collections
@@ -100,7 +101,7 @@ class CKAN_CLIENT(object):
 	    # (dict)    response dictionary of CKAN
 	    
 	    if (not self.validate_actionname(action)):
-		    logging.critical('Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
+		    self.logger.critical('Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
 	    else:
 		    return self.__action_api(action, data)
 		
@@ -122,7 +123,7 @@ class CKAN_CLIENT(object):
 
             print ('Total number of datasets: ' + str(len(data['result'])))
             for dataset in data['result']:
-	            logging.info('\tTry to activate object: ' + str(dataset))
+	            self.logger.info('\tTry to activate object: ' + str(dataset))
 	            self.action('package_update',{"name" : dataset[0], "state":"active"})
 
             return True
@@ -167,14 +168,13 @@ class CKAN_CLIENT(object):
 
         # make json data in conformity with URL standards
         encoding='utf-8'
-        ##encoding='ISO-8859-15'
         try:
             if PY2 :
                 data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
             else :
                 data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
         except Exception as err :
-            logging.critical('%s while building url data' % err)
+            self.logger.critical('%s while building url data' % err)
 
         try:
             request = Request(action_url,data_string)
@@ -184,21 +184,21 @@ class CKAN_CLIENT(object):
             if PY2 :
                 response = urlopen(request)
             else :
-                response = urlopen(request)                
+                response = urlopen(request)
             self.logger.debug('response %s' % response)            
         except HTTPError as e:
             self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
             if ( e.code == 403 ):
-                logging.error('Access forbidden, maybe the API key is not valid?')
+                self.logger.error('Access forbidden, maybe the API key %s is not valid?' % self.api_key)
                 exit(e.code)
             elif ( e.code == 409 and action == 'package_create'):
                 self.logger.info('\tMaybe the dataset already exists => try to update the package')
                 self.action('package_update',data_dict)
             elif ( e.code == 409):
-                self.logger.debug('\tMaybe you have a parameter error?')
+                self.logger.debug('%s : \tMaybe you have a parameter error?')
                 return {"success" : False}
             elif ( e.code == 500):
-                self.logger.critical('\tInternal server error')
+                self.logger.critical('%s : upload data : %s' % (e,data_dict))
                 return {"success" : False}
         except URLError as e:
             self.logger.critical('\tURLError %s : %s' % (e,e.reason))
@@ -261,7 +261,6 @@ class Uploader(object):
     """
     
     def __init__(self, CKAN, ckan_check, HandleClient,cred, OUT, base_outdir, fromdate, iphost):
-        ##HEW-D logging = logging.getLogger()
         self.CKAN = CKAN
         self.ckan_check = ckan_check
         self.HandleClient = HandleClient
@@ -403,7 +402,7 @@ class Uploader(object):
         self.logger.debug(' CKAN extra fields')
         for key in extrafields :
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum','Rights']:
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum', 'Rights','ResourceType']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_identifier']:
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
@@ -442,9 +441,9 @@ class Uploader(object):
         
         ## check ds name (must be lowercase, alphanumeric + ['_-']
         if not re.match("^[a-z0-9_-]*$", jsondata['name']):
-            self.logger.critical("The dataset name '%s' must be lowercase and alphanumeric + ['_-']" % jsondata['name'])
+            self.logger.error("The dataset name '%s' must be lowercase and alphanumeric + ['_-']" % jsondata['name'])
             jsondata['name']=jsondata['name'].lower()
-            self.logger.critical(" ... and is converted now to '%s'" % jsondata['name'])
+            self.logger.error(" ... and is converted now to '%s'" % jsondata['name'])
         ## check mandatory fields ...
         mandFields=['title','oai_identifier']
         for field in mandFields :
@@ -498,23 +497,9 @@ class Uploader(object):
         mdsubset=request[4]   if len(request)>4 else None
         target_mdschema=request[8]   if len(request)>8 else None
 
-        mdschemas={
-            "ddi" : "ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd",
-            "oai_ddi" : "http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd",
-            "marcxml" : "http://www.loc.gov/MARC21/slim http://www.loc.gov/standards",
-            "iso" : "http://www.isotc211.org/2005/gmd/metadataEntity.xsd",        
-            "iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
-            "inspire" : "http://inspire.ec.europa.eu/theme/ef",        
-            "oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
-            "oai_datacite" : "http://schema.datacite.org/oai/oai-1.0/",
-            "oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
-            "cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
-            "json" : "http://json-schema.org/latest/json-schema-core.html",
-            "fgdc" : "No specification for fgdc available",
-            "fbb" : "http://www.kulturarv.dk/fbb http://www.kulturarv.dk/fbb/fbb.xsd",
-            "hdcp2" : "No specification for hdcp2 settings",
-            "eposap" : "http://www.epos-ip.org/terms.html"
-        }
+        mdschemasfile='%s/mapfiles/mdschemas.json' % (os.getcwd())
+        with open(mdschemasfile, 'r') as f:
+            mdschemas=json.loads(f.read())
 
         # available of sub dirs and extention
         insubdir='/json'
@@ -553,12 +538,13 @@ class Uploader(object):
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)
+                print('\t|- Upload to\t--> %s/group/%s' % (self.iphost,community))
 
             # check input path
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
             if not os.path.exists(inpath):
-                self.logger.critical('Can not access directory %s' % inpath)
-                return results     
+                self.logger.error('Can not access directory %s' % inpath)
+                continue     
 
             files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
             results['tcount'] += len(list(files))
@@ -580,7 +566,7 @@ class Uploader(object):
                     oldperc=perc
                     print ("\r\t [%-20s] %5d (%3d%%) in %d sec" % ('='*bartags, fcount, perc, time.time()-startsubdir ))
                     sys.stdout.flush()
-                self.logger.debug('    | m | %-4d | %-45s |' % (fcount,filename))
+                self.logger.debug('    | u | %-4d | %-45s |' % (fcount,filename))
 
                 jsondata = dict()
                 datasetRecord = dict()
@@ -601,63 +587,30 @@ class Uploader(object):
                 # get dataset id (CKAN name) from filename (a uuid generated identifier):
                 ds_id = os.path.splitext(filename)[0]
                 self.logger.warning('    | u | %-4d | %-40s |' % (fcount,ds_id))
- 
-               # add some general CKAN specific fields to dictionary:
-                jsondata["name"] = ds_id
-                jsondata["state"]='active'
-                jsondata["groups"]=[{ "name" : community }]
-                jsondata["owner_org"]="eudat"
 
-                # get OAI identifier from json data extra field 'oai_identifier':
-                if 'oai_identifier' not in jsondata :
-                    jsondata['oai_identifier'] = [ds_id]
-
-                oai_id = jsondata['oai_identifier'][0]
-                self.logger.debug("        |-> identifier: %s\n" % (oai_id))
-            
+                # add some general CKAN specific fields to dictionary:
+                if self.iphost.startswith('eudat-b1') :
+                    jsondata["owner_org"]="eudat"
+                elif self.iphost.startswith('trng') or self.iphost.startswith('145.') :
+                    jsondata["owner_org"]="rda" #### "eudat-b2find"
+                else:
+                    jsondata["owner_org"]="eudat-b2find"
+                
                 ### CHECK JSON DATA for upload
                 jsondata=self.check(jsondata)
                 if jsondata == None :
                     self.logger.critical('File %s failed check and will not been uploaded' % filename)
                     continue
 
-                #  generate get record request for field MetaDataAccess:
-                if (mdprefix == 'json'):
-                    reqpre = source + '/dataset/'
-                    mdaccess = reqpre + oai_id
-                else:
-                    reqpre = source + '?verb=GetRecord&metadataPrefix=' + mdprefix
-                    mdaccess = reqpre + '&identifier=' + oai_id
-                    ##HEW-MV2mapping!!! : urlcheck=self.check_url(mdaccess)
-                index1 = mdaccess
-
-                # exceptions for some communities:
-                if (community == 'clarin' and oai_id.startswith('mi_')):
-                    mdaccess = 'http://www.meertens.knaw.nl/oai/oai_server.php?verb=GetRecord&metadataPrefix=cmdi&identifier=http://hdl.handle.net/10744/' + oai_id
-                elif (community == 'sdl'):
-                    mdaccess =reqpre+'&identifier=oai::record/'+oai_id
-                elif (community == 'b2share'):
-                    if mdsubset.startswith('trng') :
-                        mdaccess ='https://trng-b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-                    else:
-                        mdaccess ='https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier='+oai_id
-
-                if self.check_url(mdaccess) == False :
-                    logging.debug('URL to metadata record %s is broken' % (mdaccess))
-                else:
-                    jsondata['MetaDataAccess']=mdaccess
-
-                jsondata['group']=community
                 ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
                 jsondata=self.json2ckan(jsondata)
 
-                # Set the tag ManagerVersion:
-                ManagerVersion = '2.3.1' ##HEW-??? Gloaal Variable ManagerVersion
+                # Set the B2FINDVersion:
                 jsondata['extras'].append({
-                     "key" : "ManagerVersion",
-                     "value" : '2.3.1' ##HEW-??? Gloaal Variable ManagerVersionManagerVersion
+                     "key" : "B2FINDVersion",
+                     "value" : settings.B2FINDVersion 
                     })
-                datasetRecord["EUDAT/B2FINDVERSION"]=ManagerVersion
+                datasetRecord["EUDAT/B2FINDVERSION"]=settings.B2FINDVersion
                 ### datasetRecord["B2FINDHOST"]=self.iphost
 
                 self.logger.debug(' JSON dump\n%s' % json.dumps(jsondata, sort_keys=True))
@@ -689,8 +642,10 @@ class Uploader(object):
                 datasetRecord["EUDAT/METADATATYPE"]=mdschemas[mdprefix]
                 datasetRecord["EUDAT/B2FINDSTATUS"]="REGISTERED"
                 datasetRecord["EUDAT/B2FINDCOMMUNITY"]=community
-                datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
-
+                if mdsubset:
+                    datasetRecord["EUDAT/B2FINDSUBSET"]=mdsubset
+                else:
+                    datasetRecord["EUDAT/B2FINDSUBSET"]='N/A'
                 if (self.cred): ##HEW-D??? options.handle_check):
                     pidAttrs=["URL","CHECKSUM","EUDAT/ROR","EUDAT/PPID","EUDAT/REPLICA","EUDAT/METADATATYPE","EUDAT/B2FINDSTATUS","EUDAT/B2FINDVERSION","EUDAT/B2FINDCOMMUNITY","EUDAT/B2FINDSUBSET"]
                     ##HEW-D pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
@@ -755,14 +710,14 @@ class Uploader(object):
                         results['count']+=1
                         upload = 1
                     else:
-                        self.logger.debug('\t - Creation failed. Try to update instead.')
+                        self.logger.error('\t - Creation failed. Try to update instead.')
                         res = self.CKAN.action('package_update',jsondata)
                         if (res and res['success']):
                             self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
                             results['count']+=1
                             upload = 1
                         else:
-                            self.logger.warning('\t|- Failed dataset update of %s id %s' % (dsstatus,ds_id))
+                            self.logger.critical('\t|- Failed dataset update of %s id %s' % (dsstatus,ds_id))
                             results['ecount']+=1
         
                 # if the dsstatus is 'changed' then update it with package_update:
@@ -788,11 +743,11 @@ class Uploader(object):
                 # update PID in handle server                           
                 if (self.cred):
                     if (handlestatus == "unchanged"):
-                        logging.warning("        |-> No action required for %s" % pid)
+                        self.logger.warning("        |-> No action required for %s" % pid)
                     else:
                         if (upload >= 1): # new or changed record
                             if (handlestatus == "new"): # Create new PID
-                                logging.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
+                                self.logger.warning("        |-> Create a new handle %s with checksum %s" % (pid,checksum))
                                 try:
                                     npid = self.HandleClient.register_handle(pid, datasetRecord["URL"], datasetRecord["CHECKSUM"], None, True )
                                 except (Exception,HandleAuthenticationError,HandleSyntaxError) as err :
@@ -922,11 +877,12 @@ class Uploader(object):
                 self.logger.debug('\t - Failed update of state to "deleted" of dataset %s .' % dsname)
 
             self.logger.debug('\t - Try to delete dataset %s ' % dsname)
-##            results = self.CKAN.action('package_delete',jsondatadel)
-            results = self.CKAN.action('dataset_purge',jsondatadel)
+##
+            results = self.CKAN.action('package_delete',jsondatadel)
+##HEW-??            results = self.CKAN.action('dataset_purge',jsondatadel)
             if (results and results['success']):
                 rvalue = 1
-                self.logger.debug('\t - Succesful deletion of dataset %s.' % dsname)
+                self.logger.debug('\t - Successful deletion of dataset %s.' % dsname)
             else:
                 self.logger.debug('\t - Failed deletion of dataset %s.' % dsname)
         

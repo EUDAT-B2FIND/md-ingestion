@@ -1,10 +1,10 @@
 {
     "Title" : { 
         "name" : "title",
-        "definition" : "A name or title by which a resource is known",
+        "definition" : "A name or title by which a resource is known.",
         "ckanName" : "title",
         "ckanType" : "default",
-	"display" : "shown",
+        "display" : "shown",
         "type" : "textual",
         "occurence" : "1",
         "obligation" : "mandatory"
@@ -21,7 +21,7 @@
     },
     "Tags" : {
         "name" : "tags",
-        "description" : "",
+        "description" : "A subject, keyword, classification code, or key phrase describing the content.",
         "ckanName" : "tags",
         "ckanType" : "default",
         "display" : "shown",
@@ -29,18 +29,9 @@
         "occurence" : "0-n",
         "obligation" : "optional"
     },
-    "Source" : {
-        "name" : "source",
-        "description" : "",
-        "ckanName" : "url",
-        "ckanType" : "default",
-        "display" : "shown",
-        "type" : "url",
-        "obligation" : "mandatory"
-    }, 
     "DOI" : {
         "name" : "DOI",
-        "description" : "",
+        "description" : "A persistent, citable identifier that uniquely identifies a resource.",
         "ckanName" : "DOI",
         "ckanType" : "extra",
         "display" : "shown",
@@ -49,43 +40,43 @@
     }, 
     "PID" : {
         "name" : "PID",
-        "description" : "",
+        "description" : "A persistent identifier that uniquely identifies a resource.",
         "ckanName" : "PID",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
     },
-    "Checksum" : {
-        "name" : "Checksum",
-        "description" : "",
-        "ckanName" : "Checksum",
+    "Source" : {
+        "name" : "source",
+        "description" : "An identifier (URL) that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data.",
+        "ckanName" : "url",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "url",
+        "obligation" : "mandatory"
+    }, 
+    "RelatedIdentifier" : {
+        "name" : "RelatedIdentifier",
+        "description" : "A link to related resources or supplements.", 
+        "ckanName" : "url",
         "ckanType" : "default",
         "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
-    },
-    "Rights" : {
-        "name" : "rights",
-        "description" : "",
-        "ckanName" : "Rights",
-        "ckanType" : "default",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
     }, 
-    "Discipline" : {
-        "name" : "discipline",
-        "description" : "",
-        "ckanName" : "Discipline",
+    "MetaDataAccess" : {
+        "name" : "metadataccess",
+        "description" : "Is a link to the originally harvested metadata record (GetRecord request).",
+        "ckanName" : "MetaDataAccess",
         "ckanType" : "extra",
         "display" : "shown",
-        "type" : "textual",
+        "type" : "url",
         "obligation" : "optional"
     },
     "Creator" : {
         "name" : "creator",
-        "description" : "",
+        "description" : "The main researchers involved in producing the data, or the authors of the publication, or the measurement or monitoring station that produces the data in priority order.",
         "ckanName" : "author",
         "ckanType" : "default",
         "display" : "shown",
@@ -94,8 +85,17 @@
     },
     "Publisher" :  {
         "name" : "publisher",
-        "description" : "",
+        "description" : "The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.",
         "ckanName" : "Publisher",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "Contributor" :  {
+        "name" : "contributor",
+        "description" : "The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.",
+        "ckanName" : "Contributor",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "textual",
@@ -103,25 +103,79 @@
     },
     "PublicationYear" : {
         "name" : "publicationyear",
-        "description" : "",
+        "description" : "The year when the data was or will be made publicly available.",
         "ckanName" : "PublicationYear",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     },
+    "Rights" : {
+        "name" : "rights",
+        "description" : "Any rights information for this resource.",
+        "ckanName" : "Rights",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    }, 
+    "OpenAccess" : {
+        "name" : "OpenAccess",
+        "description" : "Is the dataset openly accessible or not.",
+        "ckanName" : "OpenAccess",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "boolean",
+        "obligation" : "optional"
+    },
+    "Contact" : {
+        "name" : "contact",
+        "description" : "Any contact information for this resource.",
+        "ckanName" : "Contact",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
     "Language" : {
         "name" : "language",
-        "description" : "",
+        "description" : "The primary language of the resource.",
         "ckanName" : "Language",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
     }, 
+    "ResourceType" : {
+        "name" : "resourcetype",
+        "description" : "A description of the resource, a general type of the resource.",
+        "ckanName" : "ResourceType",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "Format" : {
+        "name" : "format",
+        "description" : "Technical format of the resource.",
+        "ckanName" : "Format",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    }, 
+    "Discipline" : {
+        "name" : "discipline",
+        "description" : "A scientific discipline the resource originates from. A closed vocabulary is used.",
+        "ckanName" : "Discipline",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
     "SpatialCoverage" : {
         "name" : "spatialcoverage",
-        "description" : "",
+        "description" : "A geolocation the research data itself is related to. Content of this category is displayed in plain text.  If a longitude/latitude information is given it will be displayed at the map.",
         "ckanName" : "SpatialCoverage",
         "ckanType" : "extra",
         "display" : "shown",
@@ -130,11 +184,20 @@
     }, 
     "TemporalCoverage" :  {
         "name" : "temporalcoverage",
-        "description" : "",
+        "description" : "Period of time the research data itself is related to. Could be a date format or plain text.",
         "ckanName" : "TemporalCoverage",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "date",
+        "obligation" : "optional"
+    },
+    "DiscHierarchy" : {
+        "name" : "dischierarchy",
+        "description" : "The discipline tree with parent and level.",
+        "ckanName" : "dischierarchy",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "textual",
         "obligation" : "optional"
     },
     "TemporalCoverage:BeginDate" :  {
@@ -178,52 +241,16 @@
         "description" : "",
         "ckanName" : "spatial",
         "ckanType" : "extra",
-	"display" : "hidden",
+        "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
     }, 
-    "ResourceType" : {
-        "name" : "",
-        "description" : "",
-        "ckanName" : "ResourceType",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    },
-    "Format" : {
-        "name" : "",
-        "description" : "",
-        "ckanName" : "Format",
-        "ckanType" : "default",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    }, 
-    "Contact" : {
-        "name" : "contact",
-        "description" : "",
-        "ckanName" : "Contact",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "textual",
-        "obligation" : "optional"
-    },
-    "MetaDataAccess" : {
-        "name" : "metadataccess",
-        "description" : "",
-        "ckanName" : "metadata",
-        "ckanType" : "extra",
-        "display" : "shown",
-        "type" : "url",
-        "obligation" : "optional"
-    },
     "PublicationTimestamp" :  {
         "name" : "publicationtimestamp",
         "description" : "",
         "ckanName" : "PublicationTimestamp",
         "ckanType" : "extra",
-        "display" : "shown",
+        "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
     },
@@ -232,7 +259,7 @@
         "description" : "",
         "ckanName" : "community",
         "ckanType" : "default",
-        "display" : "shown",
+        "display" : "hidden",
         "type" : "textual",
         "obligation" : "optional"
     },
@@ -253,5 +280,14 @@
         "display" : "hidden",
         "type" : "textual",
         "obligation" : "mandatory"
+    },
+    "fulltext" : {
+        "name" : "fulltext",
+        "description" : "",
+        "ckanName" : "fulltext",
+        "ckanType" : "extra",
+        "display" : "hidden",
+        "type" : "textual",
+        "obligation" : "optional"
     }
 }

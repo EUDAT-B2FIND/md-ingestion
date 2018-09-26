@@ -1,0 +1,7 @@
+{ 
+  "name" : "<commShortname>",
+  "title" : "<COMMShortName>",
+  "description" : "The <Community Longname> ([<COMMShortName>](http://www.<commShortname>.eu/ \"<COMMShortName>\")) is a <Description>.",
+  "image_url" : "http://b2find.eudat.eu/images/communities/<commShortname>_logo.png",
+  "image_url_orig" : "<commLogoPath>"
+}

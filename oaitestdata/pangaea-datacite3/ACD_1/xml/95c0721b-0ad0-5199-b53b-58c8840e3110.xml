@@ -1,0 +1,67 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.76966</identifier>
+    <datestamp>2017-08-04T13:23:21Z</datestamp>
+    <setSpec>ACD</setSpec>
+    <setSpec>ORFOIS</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.76966</identifier>
+      <creators>
+        <creator>
+          <creatorName>Grigoriev, Mikhail N</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Rachold, Volker</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Data of 71 coastal sections from the arctic ocean</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2002</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">Event label</subject>
+        <subject subjectScheme="Parameter">Latitude of event</subject>
+        <subject subjectScheme="Parameter">Longitude of event</subject>
+        <subject subjectScheme="Parameter">Latitude of event 2</subject>
+        <subject subjectScheme="Parameter">Longitude of event 2</subject>
+        <subject subjectScheme="Parameter">ELEVATION</subject>
+        <subject subjectScheme="Parameter">Cliff height</subject>
+        <subject subjectScheme="Parameter">Density, dry bulk</subject>
+        <subject subjectScheme="Parameter">Coastal retreat rate</subject>
+        <subject subjectScheme="Parameter">Ground-ice</subject>
+        <subject subjectScheme="Parameter">Carbon, organic, total</subject>
+        <subject subjectScheme="Parameter">Comment</subject>
+        <subject subjectScheme="Method">Visual observation</subject>
+        <subject subjectScheme="Method">Calculated from weight/volume</subject>
+        <subject subjectScheme="Method">Calculated</subject>
+        <subject subjectScheme="Method">Element analyser CHN, LECO</subject>
+        <subject subjectScheme="Campaign">Laptev_Sea_2002</subject>
+        <subject subjectScheme="Basis">Sampling on land</subject>
+        <subject subjectScheme="Project">Arctic Coastal Dynamics (ACD)</subject>
+      </subjects>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.2312/BzP_0354_1_2000</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.2312/BzPM_0388_2001</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>379 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported (CC-BY)</rights>
+      </rightsList>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>70.77607607 110.1977526 76.20273068 141.161218</geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

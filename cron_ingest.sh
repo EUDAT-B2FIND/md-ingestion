@@ -2,25 +2,45 @@
 
 ## Cronjob for B2FIND ingestion
 
+syntax="Syntax: cron_test.sh community [fromdays targethost]"
+
 # check arguments
-if [[ $# -lt 2 ]];
+if [[ $# -lt 1 ]];
 then
-    echo "Missing arguments:/n Syntax: cron_test.sh community fromdays [targethost]"
+    printf "Missing argument:\n${syntax}\n"
     exit -1
 else
     community=$1
+    if [ $community == '-h' ] || [ $community == '--help' ];
+    then
+	printf "${syntax}\n"
+	exit 0
+    fi
+fi
+if [[ -z $2 ]];
+then
+    fromdateset=''
+else
     daysago=$2
+    if [ $daysago == 'all' ];
+    then
+	fromdateset=""
+    else
+	NDAYSAGO="${daysago} day ago"
+	fromdateval=`date --date="${NDAYSAGO}" +%Y-%m-%d`
+	fromdateset="--fromdate ${fromdateval}"
+    fi
 fi
 if [[ -z $3 ]];
 then
-    targethost='eudat-b1.dkrz.de:8080'
+    targethost='eudatmd1.dkrz.de:8080'
 else
     targethost=$3
 fi
 
-# handle generation only for productive host (currently eudat-b1*
+# handle generation only for productive host (currently eudatmd1* )
 handlecheck=''
-if [[ $targethost == eudat-b1* ]]; 
+if [[ $targethost == eudatmd1* ]]; 
 then
     handlecheck='--handle_check=credentials_11098'
 fi
@@ -30,14 +50,12 @@ if [[ $(hostname) == centos* ]];
 then
     WORK="${HOME}/Projects/EUDAT/EUDAT-B2FIND/md-ingestion"
 else
-    WORK="${HOME}/EUDAT-B2FIND/md-ingestion"
+    WORK="${HOME}/md-ingestion"
 fi
     
 TODAY=`date +\%F`
-NDAYSAGO="${daysago} days ago"
-YESTERDAY=`date -d "$NDAYSAGO" '+%Y-%m-%d'`
 cd $WORK
 set -x
-./manager.py -c $community -i $targethost $handlecheck --fromdate $YESTERDAY >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
+./manager.py -c $community -i $targethost $handlecheck $fromdateset >log/ingest_${community}_${TODAY}.out 2>log/ingest_${community}_${TODAY}.err
 
 exit 0

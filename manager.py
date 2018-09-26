@@ -20,15 +20,21 @@ Modified by  c/o DKRZ 2015   Heinrich Widmann
   Validation mode enhanced, redesign and bug fixes
 Modified by  c/o DKRZ 2016   Heinrich Widmann
   Adapt to new B2HANDLE library
+Modified by  c/o DKRZ 2018   Heinrich Widmann
+  Further modularization and redesign
 """
 
 ##from __future__ import print_function
 
 ##import classes from B2FIND modules
+from generating import Generator
 from harvesting import Harvester
 from mapping import Mapper
+from converting import Converter
+from validating import Validator
 from uploading import Uploader, CKAN_CLIENT
 from output import Output
+import settings
 
 ##Py3???
 from b2handle.clientcredentials import PIDClientCredentials
@@ -48,15 +54,11 @@ import codecs
 import pprint
 
 def main():
-    global TimeStart
-    TimeStart = time.time()
-
-    # check the version from svn:
-    global ManagerVersion
-    ManagerVersion = '2.3.1'
+    # initialize global settings
+    settings.init()
 
     # parse command line options and arguments:
-    modes=['h','harvest','c','convert','m','map','v','validate','o','oaiconvert','u','upload','h-c','c-u','h-u', 'h-d', 'd','delete']
+    modes=['a','g','generate','h','harvest','m','map','v','validate','c','convert','u','upload','h-m','m-u','h-u', 'h-d', 'd','delete']
     p = options_parser(modes)
     global options
     options,arguments = p.parse_args()
@@ -64,7 +66,7 @@ def main():
     # check option 'mode' and generate process list:
     (mode, pstat) = pstat_init(p,modes,options.mode,options.source,options.iphost)
     
-    # make jobdir
+    # set now time and process id
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     jid = os.getpid()
 
@@ -78,7 +80,7 @@ def main():
     ## logger = logging.getLogger('root')
     ##HEW-D logging.basicConfig(format=log_format, level=log_level) ### logging.DEBUG)
     # print out general info:
-    logger.info('Version:  \t%s' % ManagerVersion)
+    logger.info('B2FIND Version:  \t%s' % settings.B2FINDVersion)
     logger.info('Run mode:   \t%s' % pstat['short'][mode])
     logger.info('Process ID:\t%s' % str(jid))
     logger.debug('Processing modes (to be done):\t')
@@ -193,6 +195,12 @@ def process(options,pstat,OUT):
     for opt in procOptions :
         if hasattr(options,opt) : logger.debug(' |- %s:\t%s' % (opt.upper(),getattr(options,opt)))
     
+    ## GENERATION mode:    
+    if (pstat['status']['g'] == 'tbd'):
+        logger.info('\n|- Generation started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        GEN = Generator(OUT,pstat,options.outdir)
+        process_generate(GEN,reqlist)
+
     ## HARVESTING mode:    
     if (pstat['status']['h'] == 'tbd'):
         logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
@@ -208,14 +216,14 @@ def process(options,pstat,OUT):
     ## VALIDATING - Mode:
     if (pstat['status']['v'] == 'tbd'):
         logger.info(' |- Validating started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = Mapper(OUT,options.outdir,options.fromdate)
-        process_validate(MP,reqlist)
+        VD = Validator(OUT,options.outdir,options.fromdate)
+        process_validate(VD,reqlist)
 
-    ## OAI-CONVERTING - Mode:  
-    if (pstat['status']['o'] == 'tbd'):
-        logger.info('\n|- OAI-Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        MP = Mapper(OUT,options.outdir,options.fromdate)
-        process_oaiconvert(MP, reqlist)
+    ## CONVERTING - Mode:  
+    if (pstat['status']['c'] == 'tbd'):
+        logger.info('\n|- Converting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
+        CV = Converter(OUT,options.outdir,options.fromdate)
+        process_convert(CV, reqlist)
 
     ## UPLOADING - Mode:  
     if (pstat['status']['u'] == 'tbd'):
@@ -255,6 +263,29 @@ def process(options,pstat,OUT):
         else:
             logger.critical("[CRITICAL] Deleting mode only supported in 'multi mode' and an explicitly deleting script given !")
 
+def process_generate(GEN, rlist):
+    ## process_generate (GENERATOR object, rlist) - function
+    # Generates per request.
+    #
+    # Parameters:
+    # -----------
+    # (object)  GENERATOR - object from the class GENERATEER
+    # (list)    rlist - list of request lists 
+    #
+    # Return Values:
+    # --------------
+    # None
+    ir=0
+    for request in rlist:
+        ir+=1
+        generatestart = time.time()
+        print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',request[2],time.strftime("%H:%M:%S")))
+        results = GEN.generate(request)
+    
+        if (results == -1):
+            logger.error("Couldn't generate from %s" % request)
+
+        generatetime=time.time()-generatestart
 
 def process_harvest(HV, rlist):
     ## process_harvest (HARVESTER object, rlist) - function
@@ -272,7 +303,15 @@ def process_harvest(HV, rlist):
     for request in rlist:
         ir+=1
         harveststart = time.time()
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else None
+        else :
+            request.append(None)
+
         print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,HV.fromdate,'Started',time.strftime("%H:%M:%S")))
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+
         results = HV.harvest(request)
     
         if (results == -1):
@@ -300,20 +339,24 @@ def process_map(MP, rlist):
             mext='conf'
         else:
             mext='xml'
-
-        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
         cstart = time.time()
-        
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else ''
+        else :
+            request.append('')
+
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S")))
         results = MP.map(request)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3],request[4] if len(request)> 4 else '','m',results)
+        MP.OUT.save_stats(request[0]+'-' + request[3], request[4],'m',results)
 
-def process_validate(MP, rlist):
+def process_validate(VD, rlist):
     ## process_validate (MAPPER object, rlist) - function
     # Validates per request.
     #
@@ -328,23 +371,27 @@ def process_validate(MP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        outfile='oaidata/%s-%s/%s' % (request[0],request[3],'validation.stat')
-        print ('   |# %-4d : %-10s\t%-20s\t--> %-30s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],outfile,'Started',time.strftime("%H:%M:%S")))
         cstart = time.time()
 
-        ### HEW!!!
         target=None
+
+        if len(request)>4 :
+            request[4] = request[4] if (not request[4].startswith('#')) else ''
+        else :
+            request.append('')
+
+        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
-        results = MP.validate(request,target)
+        results = VD.validate(request,target)
 
         ctime=time.time()-cstart
         results['time'] = ctime
         
         # save stats:
         if len(request) > 4:
-            MP.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
+            VD.OUT.save_stats(request[0]+'-' + request[3],request[4],'v',results)
         else:
-            MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
+            VD.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
         
 def process_upload(UP, rlist):
 
@@ -358,7 +405,7 @@ def process_upload(UP, rlist):
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         community=request[0]
         mdprefix = request[3]
-        mdsubset=request[4]   if len(request)>4 else None
+        mdsubset=request[4]   if (len(request)>4 and not request[4].startswith('#')) else None
         ## dir = dir+'/'+subset
         
         try:
@@ -367,18 +414,21 @@ def process_upload(UP, rlist):
                 logger.critical('Can not found community %s' % community)
                 sys.exit(-1)
         except Exception :
-            logging.critical("Can not list CKAN groups")
+            logging.critical("Can not list communities (CKAN groups)")
+            sys.exit(-1)
   
 
         if (last_community != community) :
             last_community = community
             if options.ckan_check == 'True' :
                 UP.get_packages(community)
-            delete_file = '/'.join([UP.base_outdir,'delete',community+'-'+mdprefix+'.del'])
-            if os.path.exists(delete_file) :
-                with open (delete_file,'r') as df :
-                    for id in df.readlines() :
-                        UP.delete(id,'to_delete')
+            if options.clean == 'True' :
+                delete_file = '/'.join([UP.base_outdir,'delete',community+'-'+mdprefix+'.del'])
+                if os.path.exists(delete_file) :
+                    logging.warning("All datasets listed in %s will be removed" % delte_file)
+                    with open (delete_file,'r') as df :
+                        for id in df.readlines() :
+                            UP.delete(id,'to_delete')
 
 
         ##HEW-D-Test sys.exit(0)
@@ -400,7 +450,7 @@ def process_upload(UP, rlist):
             UP.OUT.save_stats(request[0]+'-'+request[3],'SET_1','u',results)
         
 
-def process_oaiconvert(MP, rlist):
+def process_convert(CV, rlist):
 
     ir=0
     for request in rlist:
@@ -408,13 +458,13 @@ def process_oaiconvert(MP, rlist):
         print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
         rcstart = time.time()
         
-        results = MP.oaiconvert(request)
+        results = CV.convert(request)
 
         rctime=time.time()-rcstart
         results['time'] = rctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-'+ request[3],request[4],'o',results)
+        CV.OUT.save_stats(request[0]+'-'+ request[3],request[4],'c',results)
 
 
 def process_delete(OUT, dir, options):
@@ -547,7 +597,6 @@ def process_delete(OUT, dir, options):
         OUT.save_stats(community+'-'+mdprefix,subset,'d',results)
 
 def parse_list_file(options):
-##filename,community=None,subset=None,mdprefix=None,target_mdschema=None):
     filename=options.list
     if(not os.path.isfile(filename)):
         logging.critical('[CRITICAL] Can not access job list file %s ' % filename)
@@ -617,12 +666,12 @@ def options_parser(modes):
     p = optparse.OptionParser(
         description = '''Description                                                              
 ===========                                                                           
- Management of metadata within EUDAT B2FIND, comprising                                      
+ Management of metadata within EUDAT B2FIND, comprising                               - Generation of formated XML records from raw metadata sets \n\t                       
       - Harvesting of XML files from OAI-PMH MD provider(s)\n\t
 
               - Mapping XML to JSON and semantic mapping of metadata to B2FIND schema\n\t
 
-\n              - Validation of the JSON records and create coverage statistics\n\t
+\n            - Validation of the JSON records and create coverage statistics\n\t
               - Uploading resulting JSON {key:value} dict\'s as datasets to the B2FIND portal\n\t
               - OAI compatible creation of XML records in oai_b2find format\n\t
     
@@ -630,17 +679,16 @@ def options_parser(modes):
         formatter = optparse.TitledHelpFormatter(),
         prog = 'manager.py',
         epilog='For any further information and documentation please look at the README.md file or at the EUDAT wiki (http://eudat.eu/b2find).',
-        version = "%prog " + ManagerVersion,
+        version = "%prog " + settings.B2FINDVersion,
         usage = "%prog [options]" 
     )
-        
+
     p.add_option('-v', '--verbose', action="count", 
                         help="increase output verbosity (e.g., -vv is more than -v)", default=False)
-    p.add_option('--jobdir', help='\ndirectory where log, error and html-result files are stored. By default directory is created as startday/starthour/processid .', default=None)
-    p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
+    p.add_option('--outdir', '-o', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
+    p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (g)enerating, (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    p.add_option('--outdir', '-d', help="The relative root dir in which all harvested files will be saved. The converting and the uploading processes work with the files from this dir. (default is 'oaidata')",default='oaidata', metavar='PATH')
     
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",
@@ -666,6 +714,8 @@ def options_parser(modes):
          help="check and generate handles of CKAN datasets in handle server and with credentials as specified in given credstore file", default=None,metavar='FILE')
     group_upload.add_option('--ckan_check',
          help="check existence and checksum against existing datasets in CKAN database", default='False', metavar='BOOLEAN')
+    group_upload.add_option('--clean',
+         help="Clean CKAN from datasets listed in delete file", default='False', metavar='BOOLEAN')
     
     p.add_option_group(group_multi)
     p.add_option_group(group_single)
@@ -682,7 +732,7 @@ def pstat_init (p,modes,mode,source,iphost):
         mode = 'h-u'
  
     # initialize status, count and timing of processes
-    plist=['a','h','m','v','u','c','o','d']
+    plist=['g','h','m','v','u','c','d']
     pstat = {
         'status' : {},
         'text' : {},
@@ -708,20 +758,20 @@ def pstat_init (p,modes,mode,source,iphost):
     else:
        stext='a list of MD providers'
        
-    pstat['text']['h']='Harvest community XML files from ' + stext 
-    pstat['text']['c']='Convert community XML to B2FIND JSON and do semantic mapping'  
+    pstat['text']['g']='Generate XML files from ' + stext 
+    pstat['text']['h']='Harvest XML files from ' + stext 
     pstat['text']['m']='Map community XML to B2FIND JSON and do semantic mapping'  
     pstat['text']['v']='Validate JSON records against B2FIND schema'  
-    pstat['text']['o']='OAI-Convert B2FIND JSON to B2FIND XML'  
+    pstat['text']['c']='Convert JSON to (e.g. CERA) XML'  
     pstat['text']['u']='Upload JSON records as datasets into B2FIND %s' % iphost
     pstat['text']['d']='Delete B2FIND datasets from %s' % iphost
     
     pstat['short']['h-u']='TotalIngestion'
+    pstat['short']['g']='Generating'
     pstat['short']['h']='Harvesting'
-    pstat['short']['c']='Converting'
     pstat['short']['m']='Mapping'
     pstat['short']['v']='Validating'
-    pstat['short']['o']='OAIconverting'
+    pstat['short']['c']='Converting'
     pstat['short']['u']='Uploading'
     pstat['short']['d']='Deletion'
     
@@ -729,7 +779,7 @@ def pstat_init (p,modes,mode,source,iphost):
 
 def exit_program (OUT, message=''):
     # stop the total time:
-    OUT.save_stats('#Start','subset','TotalTime',time.time()-TimeStart)
+    OUT.save_stats('#Start','subset','TotalTime',time.time()-settings.TimeStart)
 
     # print results with OUT.HTML_print_end() in a .html file:
     OUT.HTML_print_end()

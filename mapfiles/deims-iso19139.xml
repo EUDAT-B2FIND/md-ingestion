@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for ISO19139 format metadata from DEIMS. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+    <namespace ns="gmi" uri="http://www.isotc211.org/2005/gmi"/>
+    <namespace ns="gmd" uri="http://www.isotc211.org/2005/gmd"/>
+    <namespace ns="gco" uri="http://www.isotc211.org/2005/gco"/>
+    <namespace ns="gml" uri="http://www.opengis.net/gml"/>
+  </namespaces>
+  <mappings>
+   <!-- General information -->
+    <field name="title">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//gmd:abstract/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString/text()</xpath>
+    </field>
+    <!-- Access data  -->
+    <field name="url">
+      <xpath>//gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString/text()</xpath>
+   </field>
+   <field name="Checksum">
+   </field>
+   <field name="Rights">
+    <xpath>//gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString/text()</xpath>
+
+   </field>
+   <!-- Provenance data -->
+    <field name="Discipline">
+      <string>Environmental Monitoring</string>
+    </field>
+    <field name="author">
+      <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//gmd:MD_Metadata/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date/text()</xpath>
+    </field>
+    <!-- Formal data -->
+    <field name="Language">
+      <xpath>//gmd:MD_Metadata/gmd:language/gmd:languageCode/text()</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()</xpath>
+    </field>
+   <field name="TemporalCoverage">
+      <xpath>//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text(),//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//gmd:MD_Metadata/gmd:hierarchyLevelName/gco:CharacterString/text()</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//gmd:MD_Metadata/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString/text()</xpath>
+    </field>
+   <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text(), //r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>

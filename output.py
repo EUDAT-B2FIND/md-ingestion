@@ -37,18 +37,23 @@ class Output(object):
         self.pstat = pstat
         self.start_time = now
         self.jid = jid
-        ##HEW-?? self.logger = logger
         
         # create jobdir if it is necessary:
-        if (options.jobdir):
+        if (hasattr(options,'jobdir') and options.jobdir):
             self.jobdir = options.jobdir
-        else:
+        elif hasattr(options,'mode') and hasattr(options,'list') :
             self.jobdir='log/%s/%s/%s_%s_%s' % (
                 now.split(' ')[0],
                 now.split(' ')[1].split(':')[0],
                 jid, options.mode, options.list
             )
-            
+        else:
+            self.jobdir='log/%s/%s/%s' % (
+                now.split(' ')[0],
+                now.split(' ')[1].split(':')[0],
+                jid
+            )
+
         if not os.path.exists(self.jobdir):
             os.makedirs(self.jobdir)
             
@@ -70,27 +75,6 @@ class Output(object):
         }
         self.stats_counter = 0
         
-        # choose the debug level:
-        self.log_level = {
-            'log':logging.INFO,
-            'err':logging.ERROR,
-            'err':logging.DEBUG,
-            'std':logging.INFO,
-        }
-        
-        if self.verbose == 1:
-            self.log_level = {
-                'log':logging.DEBUG,
-                'err':logging.ERROR,
-                'std':logging.INFO,
-            }
-        elif self.verbose == 2:
-            self.log_level = {
-                'log':logging.DEBUG,
-                'err':logging.ERROR,
-                'std':logging.DEBUG,
-            }
-            
         # create the logger and start it:
         ##HEW-CHG!!! self.start_logger()
         self.logger = logging.getLogger('root')        
@@ -98,65 +82,48 @@ class Output(object):
         self.details_code = ''
 
     def setup_custom_logger(self,name,verbose):
-            log_format='%(levelname)s :  %(message)s'
             log_level=logging.CRITICAL
-            log_format='[ %(levelname)s <%(module)s:%(funcName)s> @\t%(lineno)4s ] %(message)s'
+            log_format='[%(levelname)s <%(module)s:%(funcName)s> @l %(lineno)4s] %(message)s'
+            # choose the debug level:
             if verbose == 1 : log_level=logging.ERROR
             elif  verbose == 2 : log_level=logging.WARNING
             elif verbose == 3 : log_level=logging.INFO
-            elif verbose > 3 : log_level=logging.DEBUG
+            elif verbose >3 : log_level=logging.DEBUG
+            ### elif verbose > 5 : log_level=logging.NOTSET
 
+###HEW-D??        # choose the debug level:
+###HEW-D??        print('VVVVVVVVVV %s' % self.verbose)
+###HEW-D??        if self.verbose == 1:
+###HEW-D??            self.log_level = {
+###HEW-D??                'log':logging.DEBUG,
+###HEW-D??                'err':logging.ERROR,
+###HEW-D??                'std':logging.INFO,
+###HEW-D??            }
+###HEW-D??        elif self.verbose == 2:
+###HEW-D??            self.log_level = {
+###HEW-D??                'log':logging.DEBUG,
+###HEW-D??                'err':logging.ERROR,
+###HEW-D??                'std':logging.DEBUG,
+###HEW-D??            }
+###HEW-D??        else:
+###HEW-D??            self.log_level = {
+###HEW-D??                'log':logging.INFO,
+###HEW-D??                'err':logging.ERROR,
+###HEW-D??                'err':logging.DEBUG,
+###HEW-D??                'std':logging.INFO,
+###HEW-D??            }
+###HEW-D??        
+                    
             formatter = logging.Formatter(fmt=log_format)
 
             handler = logging.StreamHandler()
             handler.setFormatter(formatter)
 
             self.logger.setLevel(log_level)
+            ###HEW-D??
             self.logger.addHandler(handler)
             return self.logger
     
-    def start_logger(self):
-        ## start_logger (OUTPUT object) - method
-        # Initializes logger class of the program
-        #
-        # Parameters:
-        # -----------
-        # None
-        #
-        # Return Values:
-        # --------------
-        # None
-    
-        logger = logging.getLogger('root')
-        logger.setLevel(logging.DEBUG)
-        
-        # create file handler which logs even debug messages
-        lh = logging.FileHandler(self.jobdir + '/myapp.log', 'w')
-        lh.setLevel(self.log_level['log'])
-        
-        # create file handler which logs only error messages
-        eh = logging.FileHandler(self.jobdir + '/myapp.err', 'w')
-        eh.setLevel(self.log_level['err'])
-        
-        # create console handler with a higher log level
-        ch = logging.StreamHandler()
-        ch.setLevel(self.log_level['std'])
-        
-        # create formatter and add it to the handlers
-        formatter_l = logging.Formatter("%(message)s")
-        formatter_h = logging.Formatter("%(message)s\t[%(module)s, %(funcName)s, NO: %(lineno)s]\n")
-        
-        lh.setFormatter(formatter_l)
-        ch.setFormatter(formatter_l)
-        eh.setFormatter(formatter_h)
-        
-        # add the handlers to the logger
-        logger.addHandler(lh)
-        logger.addHandler(ch)
-        logger.addHandler(eh)
-        
-        logging = logger
-
     def save_stats(self,request,subset,mode,stats):
         ## save_stats (OUT object, request, subset, mode, stats) - method
         # Saves the statistics of a process (harvesting, converting, oai-converting, mapping or uploading) per subset in <OUTPUT.stats>. 
@@ -198,6 +165,14 @@ class Output(object):
             if(not subset in self.stats[request]):
                 self.stats_counter += 1
                 template = {
+                    'g':{
+                        'count':0,
+                        'dcount':0,
+                        'ecount':0,
+                        'tcount':0,
+                        'time':0,
+                        'avg':0,
+                    },
                     'h':{
                         'count':0,
                         'dcount':0,

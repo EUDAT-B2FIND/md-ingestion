@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for PANGAEA DataCite metadata -->
+  <namespaces>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="datacite3" uri="http://datacite.org/schema/kernel-3"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//datacite3:titles/datacite3:title</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//datacite3:descriptions/datacite3:description</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//datacite3:subjects/datacite3:subject[@subjectScheme="Method"],//datacite3:subjects/datacite3:subject[@subjectScheme="Campaign"],//datacite3:subjects/datacite3:subject[@subjectScheme="Basis"],//datacite3:subjects/datacite3:subject[@subjectScheme="Project"]</xpath>
+    </field>
+    <!-- Identifier : (Source,PID or DOI) -->
+    <field name="url">
+      <xpath>//datacite3:resource/datacite3:identifier</xpath>
+    </field>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+    <!-- Provenance information -->
+    <field name="author">
+      <xpath>//datacite3:creators/datacite3:creator/datacite3:creatorName</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//datacite3:publisher</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//datacite3:publicationYear</xpath>
+    </field>
+    <field name="Rights">
+      <xpath>//datacite3:rightsList//datacite3:rights</xpath>
+    </field>
+    <field name="Contact">
+      <xpath></xpath>
+    </field>
+    <!-- Representation information -->
+    <field name="Language">
+      <xpath>//datacite3:language</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//datacite3:resourceType</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//datacite3:formats/datacite3:format</xpath>
+    </field>
+    <field name="Checksum">
+      <xpath></xpath> 
+    </field>
+    <!-- Coverage information -->
+    <field name="Discipline">
+      <string>Earth System Research</string>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//datacite3:geoLocations/datacite3:geoLocation/datacite3:geoLocationPoint,//datacite3:geoLocations/datacite3:geoLocation/datacite3:geoLocationBox</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//datacite3:dates/datacite3:date</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+  </mappings>
+</mapping-table>
