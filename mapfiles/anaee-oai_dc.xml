@@ -59,8 +59,7 @@
     </field>
     <field name="TemporalCoverage">
       <xpath>//dc:coverage/text()</xpath>
-    </field>
-    
+    </field>    
     <field name="ResourceType">
       <xpath>//dc:type/text()</xpath>
     </field>
