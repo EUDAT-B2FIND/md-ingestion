@@ -26,7 +26,7 @@
       <xpath>//marc:datafield[@tag = '856' and @ind1='4']/marc:subfield[@code = 'u']/text()</xpath>
     </field>
    <field name="PID">
-     <xpath>if (contains(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text(), ',')) then concat('http://hdl.handle.net/api/handles/',substring-after(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text(), ',')) else if (//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = '2']/text()[. = "DOI"]) then concat('http://dx.doi.org/',//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()) else if (contains(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = '2']/text(), '11100/')) then concat('http://hdl.handle.net/',//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()) else //marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()</xpath>
+     <xpath>if (contains(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text(), ',')) then concat('http://hdl.handle.net/api/handles/',substring-after(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text(), ',')) else if (//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = '2']/text()[. = "DOI"]) then concat('https://doi.org/',//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()) else if (contains(//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = '2']/text(), '11100/')) then concat('http://hdl.handle.net/',//marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()) else //marc:datafield[@tag = '024' and @ind1='7']/marc:subfield[@code = 'a']/text()</xpath>
    </field>
 -->
    <field name="Checksum">
