@@ -715,7 +715,7 @@ class Mapper(object):
                     resultwords  = [word for word in entrywords if word.lower() not in stopwords]
                     self.logger.debug("resultwords %s" % resultwords)
                     if resultwords :
-                       entry=' '.join(resultwords).encode('ascii','ignore').strip()
+                       entry=' '.join(resultwords).strip()
                        self.logger.debug("entry %s" % entry)
                        dictlist.append({ "name": entry })
             except (Exception,AttributeError) as err:
