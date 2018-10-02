@@ -705,7 +705,9 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE Training instance
 ##HEW-T 
-b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+#b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+#b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ##%%% EUDAT B2SHARE
 #b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 #b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
