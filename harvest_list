@@ -11,6 +11,11 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## NILU
+#nilu http://ebasoai.nilu.no/oai ListRecords iso19139 full
+nilu http://ebasoai-test.nilu.no/oai ListRecords iso19139 ENVRIplus_flagship
+## DEIMS
+deims https://deims.org/pycsw/catalogue/csw csw iso19139 full
 ## B2SAFE
 #b2safe  https://trng-b2share.eudat.eu/api  records  json
 ## CAPSELLA
@@ -79,7 +84,7 @@ anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw oai_dc
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso-19139 anaee 
 envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
-deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
+#deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 full
 ##euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw oai_dc ##euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS?service=CSW&version=2.0.2&request=GetRecords&outputSchema=http://www.isotc211.org/2005/gmd&typeNames=csw:Record&RESULTTYPE=results&ELEMENTSETNAME=full
 ##euro-argo http://www.sextant.ifremer.fr/geonetwork/srv/fre/csw csw oai_dc ##iso19139 geht nicht
@@ -103,7 +108,7 @@ envriplus http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso191
 ## SEADATANET
 ## 1805: von Erwann CM http://sextant.ifremer.fr/geonetwork/srv/eng/csw-SEADATANET?service=CSW&version=2.0.2&request=GetRecords&outputSchema=http://www.isotc211.org/2005/gmd&typeNames=csw:Record&RESULTTYPE=results&ELEMENTSETNAME=full
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw iso19139 cams1_ps
-seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_dc cams1_ps ##???iso19139 cams1_ps
+#seadatanet http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET csw oai_dc cams1_ps ##???iso19139 cams1_ps
 ## ICOS
 icos https://meta.icos-cp.eu/sparqlclient/ Sparql json
 ## IAGOS
@@ -143,7 +148,7 @@ ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
 lter   https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc LTER # d952913c-451e-4b5c-817e-d578dc8a4469 ## LTER
 ## lter   http://deims???.de:8080/oai/provider  ListRecords  iso test
 ## lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
-deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
+#deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## GFZ  ## oai_datacite or iso1939 ???
@@ -700,7 +705,9 @@ cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collection
 gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE Training instance
 ##HEW-T 
-b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+#b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+#b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ##%%% EUDAT B2SHARE
 #b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 #b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore metadata of IST -->
+  <!-- Mappings for DublinCore metadata - Template. -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
     <namespace ns="dct" uri="http://purl.org/dc/terms/"/>
-    <namespace ns="ows" uri="http://www.opengis.net/ows"/><namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
+    <namespace ns="ows" uri="http://www.opengis.net/ows"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
     <field name="title">
-      <xpath>//dc:title/text()</xpath>
+      <xpath>//dc:title/</xpath>
     </field>
     <field name="notes">
       <xpath>//dc:description/text()</xpath>
@@ -23,7 +23,7 @@
       <xpath>//dc:identifier/text()</xpath>
     </field>
     <field name="RelatedIdentifier">
-      <xpath>//dc:relation/text()</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
     <!-- Provenance Information -->
     <field name="author">
@@ -52,7 +52,7 @@
       <xpath>//dc:language/text()</xpath>
     </field>
     <field name="ResourceType">
-      <xpath>//dc:type[1]()</xpath>
+      <xpath>//dc:type/text()</xpath>
     </field>  
     <field name="Format">
       <xpath>//dc:format/text()</xpath>
@@ -81,4 +81,4 @@
       <string expand="true">${mapper_version}</string>
     </field>
   </mappings>
-</mapping-table>    
+</mapping-table>
