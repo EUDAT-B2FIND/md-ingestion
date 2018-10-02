@@ -20,38 +20,50 @@
     <field name="url">
       <xpath>//dc:identifier/text()</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights/text()</xpath>
+    <field name="RelatatedIdentiifer">
+      <xpath></xpath>
     </field>
-   <!-- Provenance data -->
-    <field name="Discipline">
-      <xpath>//dc:subject/text()</xpath>
-    </field>
+    <field name="MetaDataAcess">
+      <xpath>//r:header/r:identifier</xpath>
+     </field>
+   <!-- Provenance Information -->
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
     </field>
     <field name="Publisher">
       <xpath>//dc:publisher/text()</xpath>
     </field>
+    <field name="Contributor">
+      <xpath>//dc:contributor[2]</xpath>
+    </field>
     <field name="PublicationYear">
       <xpath>//dc:date/text()</xpath>
     </field>
-   <!-- Formal data -->
+     <field name="Rights">
+      <xpath>//dc:rights/text()</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//dc:publisher/text()</xpath>
+    </field>
+   <!-- Representation Information -->
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//dc:type/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//dc:format/text()</xpath>
+    </field>
+    <!-- Coverage -->
+    <field name="Discipline">
+      <xpath>//dc:subject/text()</xpath>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dc:coverage/text()</xpath>
     </field>
     <field name="TemporalCoverage">
       <xpath>//dc:coverage/text()</xpath>
-    </field>
-    <field name="Format">
-      <xpath>//dc:format/text()</xpath>
-    </field>
-    <!-- Additional Information -->
-    <field name="Contact">
-      <xpath>//dc:publisher/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
