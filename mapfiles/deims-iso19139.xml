@@ -62,7 +62,7 @@
     </field>
     <!-- Coverage -->
         <field name="Discipline">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:topicCategory/gmd:MD_TopicCategoryCode</xpath>
+      <string>Environmental Monitoring</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()</xpath>
