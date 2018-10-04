@@ -27,7 +27,7 @@
     <field name="url">
       <xpath>//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL</xpath>
     <field name="RelatedIdentifier">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString</xpath>
+      <xpath></xpath>
     </field>
     <!-- Provenance Information --> 
     <field name="author">
@@ -37,7 +37,7 @@
       <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
     </field>
     <field name="Contributor">
-      <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
+      <string>Norwegian Institute for Air Research | https://www.nilu.no/</string>
     </field>
     <field name="PublicationYear">
       <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date</xpath>
@@ -45,10 +45,10 @@
     <field name="Rights">
       <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString</xpath>
     <field name="OpenAccess">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:MD_RestrictionCode/text()</xpath>
+      <xpath></xpath>
     </field>
     <field name="Contact">
-      <xpath>//gmd:contact/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString</xpath>
+      <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName</xpath>
     </field>
     <!-- Representation Information -->
     <field name="Language">
