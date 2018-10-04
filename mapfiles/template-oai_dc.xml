@@ -25,6 +25,9 @@
     <field name="RelatedIdentifier">
       <xpath>//dc:identifier/text()</xpath>
     </field>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
     <!-- Provenance Information -->
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
@@ -38,7 +41,7 @@
     <field name="PublicationYear">
       <xpath>//dc:date/text()</xpath>
     </field> 
-        <field name="Rights">
+    <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
       </field> 
     <field name="OpenAccess">
