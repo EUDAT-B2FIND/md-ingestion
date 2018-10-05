@@ -36,7 +36,7 @@
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="Contributor">
-      <xpath>//dc:publisher/text()</xpath>
+      <xpath>//dc:contributor/text()</xpath>
     </field> 
     <field name="PublicationYear">
       <xpath>//dc:date/text()</xpath>
@@ -60,15 +60,15 @@
     <field name="Format">
       <xpath>//dc:format/text()</xpath>
     </field>  
-        <!-- Coverage -->
+   <!-- Coverage -->
     <field name="Discipline">
       <string>dc:subject/text()</string>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//dc:coverage/text() | //dc:spatial/text()</xpath>
+      <xpath>//dc:coverage/text(),//dc:spatial/text()</xpath>
     </field>
     <field name="TemporalCoverage">
-      <xpath>//dc:coverage/text() | //dc:temporal/text()</xpath>
+      <xpath>//dc:coverage/text(),//dc:temporal/text()</xpath>
     </field>    
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
