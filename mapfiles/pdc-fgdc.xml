@@ -28,7 +28,7 @@
    </field>
    <!-- Provenance data -->
    <field name="Discipline">
-       <string>Environmental Science</string>
+       <string>Environmental Research</string>
    </field>
    <field name="author">
        <xpath>//r:origin</xpath>
@@ -51,10 +51,14 @@
        <xpath>//r:begdate/text(),//r:enddate/text()</xpath>
     </field>
    <field name="Format">
+       <xpath>//r:idinfo/r:metainfo/r:metstdn/text()</xpath>
    </field>
     <!-- Additional info -->
+    <field name="Contributor">
+       <xpath>//r:ptcontac/r:cntinfo/r:cntorgp/r:cntorg/text()</xpath>
+    </field>
     <field name="Contact">
-       <xpath>//r:ptcontac/r:cntinfo/r:cntorgp</xpath>
+       <xpath>//r:ptcontac/r:cntinfo/r:cntemail/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
