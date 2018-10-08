@@ -11,6 +11,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## Life+Respira
+life+respira https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ## NILU
 #nilu http://ebasoai.nilu.no/oai ListRecords iso19139 full
 nilu http://ebasoai-test.nilu.no/oai ListRecords iso19139 ENVRIplus_flagship
@@ -175,7 +177,7 @@ badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc sola
 # CEDA : Physics
 ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375626A656374733D70687973696373
 pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc PDCMetadata 
-pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc test_1 
+#pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc test_1 
 ##pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
 ##%%% ENES : MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
@@ -706,8 +708,8 @@ gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE Training instance
 ##HEW-T 
 #b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
-#b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
-b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
+b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+#b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ##%%% EUDAT B2SHARE
 #b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
 #b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
@@ -1340,7 +1342,7 @@ datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.ZEW ## Zentru
 datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ZBW.ZOEBIS ## Zentrum für ökonomische Bildung in Siegen; 14;
 ##%%% PanData
 ##outdated pandata https://icat-10.pandata.stfc.ac.uk/oai/provider  ListIdentifiers oai_qdc
-pandata http://oai.eudat.stfc.ac.uk/oai/provider         ListRecords oai_dc
+pandata http://oai.eudat.stfc.ac.uk/oai/provider ListRecords oai_dc full
 ##%%% NARCIS
 narcis    http://oai.narcis.nl/oai          ListRecords  oai_dc dataset
 ##narcis    http://oai.narcis.nl/oai          ListIdentifiers  oai_dc publication
