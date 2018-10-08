@@ -21,6 +21,9 @@
     <field name="url">
       <xpath>//dc:identifier</xpath>
     </field>
+    <field name="RelatedIdentifier">
+      <xpath>//dc:identifier/text()</xpath>
+    </field>
     <field name="MetadataAccess">
       <xpath>//h:header/h:identifier</xpath>
     </field>
@@ -30,6 +33,9 @@
     </field>
     <field name="Publisher">
       <xpath>//dc:publisher</xpath>
+    </field> 
+    <field name="Contributor">
+      <xpath>//dc:contibutor/text()</xpath>
     </field> 
     <field name="PublicationYear">
       <xpath>//dc:date,//r:header/r:datestamp</xpath>

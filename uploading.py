@@ -402,7 +402,7 @@ class Uploader(object):
         self.logger.debug(' CKAN extra fields')
         for key in extrafields :
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum', 'Rights','ResourceType']:
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum', 'Rights','ResourceType','RelatedIdentifier','Contributor']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_identifier']:
                     if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 

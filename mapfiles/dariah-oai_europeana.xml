@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore (and DC Europeana ??) metadata from Dariah. -->
+  <!-- Mappings for DC Europeana metadata from DARIAH -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
@@ -18,17 +18,17 @@
     <field name="tags">
       <xpath>//dc:subject/text()</xpath>
     </field>
-    <!-- Access data -->
+    <!-- Identifier -->
     <field name="url">
       <xpath>//dc:identifier/text()</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights/text()</xpath>
+    <field name="RelatedIdentifier">
+      <xpath>//dc:identifier/text()</xpath>
     </field>
-    <!-- Provenance data -->
-    <field name="Discipline">
-      <string>Human History</string> 
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
     </field>
+   <!-- Provenance Information -->
     <field name="author">
       <xpath>//dc:creator/text()</xpath>
       <xpath>//dc:contributor/text()</xpath>
@@ -36,21 +36,40 @@
     <field name="Publisher">
       <xpath>//dc:publisher/text()</xpath>
     </field>
+    <field name="Contributor">
+      <xpath>//dc:contributor/text()</xpath>
+    </field> 
     <field name="PublicationYear">
       <xpath>//r:datestamp/text()</xpath>
     </field>
-    <!-- Formal data -->
+    <field name="Rights">
+      <xpath>//dc:rights/text()</xpath>
+    </field>
+    <field name="OpenAccess">
+      <xpath>false</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//dc:publisher/text()</xpath>
+    </field>
+    <!-- Representation Information -->
     <field name="Language">
       <xpath>//dc:language/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//europeana:type/text()</xpath>
+    </field>  
+    </field>
+    <field name="Format">
+      <xpath>//dc:format/text()</xpath>
+    </field>
+    <!-- Coverage -->
+    <field name="Discipline">
+      <string>Human History</string> 
     </field>
     <field name="SpatialCoverage">
       <xpath>//dcterms:spatial/text()</xpath>
     <field name="TemporalCoverage">
       <xpath>//dcterms:temporal/text()</xpath>
-    </field>
-    </field>
-    <field name="Format">
-      <xpath>//europeana:type/text()</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
