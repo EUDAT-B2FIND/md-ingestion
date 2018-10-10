@@ -10,7 +10,7 @@
   <mappings>
     <!-- General Information -->
     <field name="title">
-      <xpath>//dc:title/</xpath>
+      <xpath>//dc:title</xpath>
     </field>
     <field name="notes">
       <xpath>//dc:description/text()</xpath>
