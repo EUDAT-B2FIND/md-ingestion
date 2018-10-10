@@ -176,7 +176,8 @@ badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc
 badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc solas
 # CEDA : Physics
 ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375626A656374733D70687973696373
-pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc PDCMetadata 
+pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc 
+## PDCMetadata 
 #pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc test_1 
 ##pdc     http://www.polardata.ca/oai/provider       ListIdentifiers  iso   
 ##%%% ENES : MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
@@ -708,23 +709,21 @@ gbif http://api.gbif.org/v1 dataset json
 ##%%% EUDAT B2SHARE Training instance
 ##HEW-T 
 #b2share https://trng-b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
-#b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
 liferespira https://b2share.eudat.eu/api/oai2d ListRecords oai_dc LIFE+Respira
+###b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
+##HEW181009 Harvest DublinCore from B2SHARE marcxml --> oai_dc
 b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
-#b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
-##%%% EUDAT B2SHARE
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml Aalto
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml BBMRI
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml CLARIN
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml DRIHM
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EISCAT
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUDAT
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml EUON
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml GBIF
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml LTER
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml NRM
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml RDA
-#b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml LIFE+Respira
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Aalto
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc BBMRI
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc CLARIN
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc DRIHM
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EISCAT
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUDAT
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUON
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc GBIF
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc LTER
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc NRM
+b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc RDA
 #HEW-T b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml e1800bc8-780e-4617-a7b6-2312cb6190c4
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
