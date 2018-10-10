@@ -927,7 +927,7 @@ class Validator(object):
         # loop over all available subdirs
         fcount=0
         for subdir in sorted(subdirs) :
-            self.logger.warning('\t |- Check next subdirectory %s for reqiuired processing (mdsubset is %s)' % (subdir,mdsubset))
+            self.logger.warning('\t |- Check next subdirectory %s for required processing (mdsubset is %s)' % (subdir,mdsubset))
             if self.fromdate :
                 datematch = re.search(mdsubset+r'_f(\d{4}-\d{2}-\d{2})_\d+$',subdir) ##, subdir[:-2])
                 if datematch :
@@ -940,7 +940,7 @@ class Validator(object):
                         self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
                 else :
                     continue
-            elif not ( mdsubset == subdir or re.search(mdsubset+r'_\d+$', subdir)) :               
+            elif not ( mdsubset == subdir or re.search(re.escape(mdsubset)+r'_\d+$', subdir)) :               
                 self.logger.error('\t |- Subdirectory %s does not match %s[_NN] - no processing required' % (subdir,mdsubset))
                 continue
             else:
