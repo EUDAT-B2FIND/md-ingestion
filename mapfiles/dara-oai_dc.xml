@@ -2,7 +2,7 @@
 <mapping-table>
   <!-- Mappings for DARA DublinCore metadata -->
   <namespaces>
-    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
   </namespaces>
   <mappings>
@@ -16,15 +16,15 @@
     <field name="tags">
       <xpath>//dc:subject/text()</xpath>
     </field>
-    <!-- Access data -->
+    <!-- Identifier -->
     <field name="url">
       <xpath>//dc:identifier/text()</xpath>
     </field>
-    <field name="RelatatedIdentiifer">
-      <xpath></xpath>
+    <field name="RelatedIdentifier">
+      <xpath>//dc:relation/text()</xpath>
     </field>
     <field name="MetaDataAcess">
-      <xpath>//r:header/r:identifier</xpath>
+      <xpath>//h:header/h:identifier</xpath>
      </field>
    <!-- Provenance Information -->
     <field name="author">
@@ -34,13 +34,16 @@
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="Contributor">
-      <xpath>//dc:contributor[2]</xpath>
+      <xpath>//dc:contributor/text()</xpath>
     </field>
     <field name="PublicationYear">
       <xpath>//dc:date/text()</xpath>
     </field>
-     <field name="Rights">
+    <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
+    </field>
+    <field name="OpenAccess">
+      <xpath>false</xpath>
     </field>
     <field name="Contact">
       <xpath>//dc:publisher/text()</xpath>
@@ -70,10 +73,10 @@
       <xpath>normalize-space(string(/))</xpath>
     </field>
     <field name="oai_identifier">
-      <xpath>//r:header/r:identifier/text()</xpath>
+      <xpath>//h:header/h:identifier/text()</xpath>
     </field>
     <field name="oai_set">
-      <xpath>//r:header/r:setSpec/text()</xpath>
+      <xpath>//h:header/h:setSpec/text()</xpath>
     </field>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>
