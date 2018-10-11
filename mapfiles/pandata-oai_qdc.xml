@@ -28,9 +28,9 @@
     <field name="url">
       <xpath>string-join(//dc:identifier/text() | //dcterms:references/text() | //dc:source/text() ,";")</xpath>
       <!--
-      <xpath>if (contains (string-join(distinct-values(//dc:identifier/text()),' ; '),'doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(string-join(distinct-values(//dc:identifier/text()),' ; '), 'doi:'),' ; ')) else //dc:identifier/text()</xpath>
-      <xpath>if (starts-with(//dc:identifier/text(),'10.5286')) then concat('http://dx.doi.org/',//dc:identifier[1]/text()) else //dc:identifier/text()</xpath>
-      <xpath>if (contains(//dc:source/text(),     '[doi:')) then concat('http://dx.doi.org/',substring-before(substring-after(//dc:source/text(), '[doi: '), ']')) else //dc:source/text()</xpath>
+      <xpath>if (contains (string-join(distinct-values(//dc:identifier/text()),' ; '),'doi:')) then concat('https://doi.org/',substring-before(substring-after(string-join(distinct-values(//dc:identifier/text()),' ; '), 'doi:'),' ; ')) else //dc:identifier/text()</xpath>
+      <xpath>if (starts-with(//dc:identifier/text(),'10.5286')) then concat('https://doi.org/',//dc:identifier[1]/text()) else //dc:identifier/text()</xpath>
+      <xpath>if (contains(//dc:source/text(),     '[doi:')) then concat('https://doi.org/',substring-before(substring-after(//dc:source/text(), '[doi: '), ']')) else //dc:source/text()</xpath>
       -->
    </field>
    <field name="Checksum">

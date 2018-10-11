@@ -254,11 +254,11 @@ class Mapper(object):
 	                elif id.startswith('ivo:'):
 	                    iddict['IVO']='http://registry.euro-vo.org/result.jsp?searchMethod=GetResource&identifier='+id
 	                elif id.startswith('10.'): ##HEW-??? or id.startswith('10.5286') or id.startswith('10.1007') :
-	                    iddict['DOI'] = self.concat('http://dx.doi.org/doi:',id)
+	                    iddict['DOI'] = self.concat('https://doi.org/doi:',id)
 	                elif 'doi.org/' in id:
-	                    iddict['DOI'] = 'http://dx.doi.org/'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
+	                    iddict['DOI'] = 'https://doi.org/'+re.compile(".*doi.org/(.*)\s?.*").match(id).groups()[0].strip(']')
 	                elif 'doi:' in id: ## and 'DOI' not in iddict :
-	                    iddict['DOI'] = 'http://dx.doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
+	                    iddict['DOI'] = 'https://doi.org/doi:'+re.compile(".*doi:(.*)\s?.*").match(id).groups()[0].strip(']')
 	                elif 'hdl.handle.net' in id:
 	                    reurl = re.search("(?P<url>https?://[^\s<>]+)", id)
 	                    if reurl :
@@ -273,7 +273,6 @@ class Mapper(object):
 	                        iddict['url'] = reurl.group("url")##[0]
 	                elif id.startswith('irods'):
 	                    iddict['url'] = id
-	            
         except Exception as e :
             self.logger.critical('%s - in map_identifiers %s can not converted !' % (e,invalue))
             return {}
