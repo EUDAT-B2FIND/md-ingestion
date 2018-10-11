@@ -6,6 +6,7 @@
 	"iso19139" : "http://www.isotc211.org/2005/gmd/gmd.xsd",        
 	"inspire" : "http://inspire.ec.europa.eu/theme/ef",        
 	"oai_dc" : "http://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+	"oai_europeana" : "http://www.europeana.eu/schemas/ese/",
 	"oai_datacite" : "http://schema.datacite.org/oai/oai-1.0/",
 	"oai_qdc" : "http://pandata.org/pmh/oai_qdc.xsd",
 	"cmdi" : "http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1369752611610/xsd",
