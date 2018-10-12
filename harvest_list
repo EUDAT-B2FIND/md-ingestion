@@ -628,15 +628,16 @@ clarin http://clarin.dk/oaiprovider ListIdentifiers cmdi
 ##??? clarin  http://clarin.oeaw.ac.at/oaiprovider ListIdentifiers oai_dc vienna-lang-res_
 ## DA|RA
 ##dara https://www.da-ra.de/oaip/oai ListRecords oai_dc Datasets ### ~ZnE9cmVzb3VyY2VUeXBlOkRhdGFzZXQ=
-dara https://www.da-ra.de/oaip/oai ListRecords oai_dc GESISDataArchive # -->1 GESIS Data Archive #=7103
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc GESISDataArchive # -->1 GESIS Data Archive #=7103
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RKI # --> 10 RKI Robert Koch Institute #=13
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc FDP-URU # --> 101 #=1
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IHI # --> 105
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DIPF # --> 11
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc BIFIE # --> 112
-dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZBW # JournalDataArchive # 118
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZfKD # --> 114
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZBW # --> 118 ZBW JournalDataArchive
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SRDA # --> 128
-dara https://www.da-ra.de/oaip/oai ListRecords oai_dc EBDC # --> 13
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc EBDC # --> 13
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IWH # --> 130
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc AHRI # --> 132
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RDC # --> 136
@@ -649,7 +650,7 @@ dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IAB # --> 151
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DeutscheBundesbank # --> 21 #20
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc NEPS # --> 3 #=57
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc CSES #--> 32 #=12
-dara https://www.da-ra.de/oaip/oai ListRecords oai_dc GESISDatorium # --> 33 #98
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc GESISDatorium # --> 33 #98
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RWI # 35 ???#0
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SHARE-ERIC # 37
 dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc ICPRS # ICPSR - Interuniversity Consortium for Political and Social Research # 27574
