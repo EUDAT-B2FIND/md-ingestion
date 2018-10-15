@@ -441,7 +441,12 @@ limit 1000
                     ##HEW-D continue
                 else:
                     oai_id = record.identifier
-                    record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
+                    try:
+                        record = sickle.GetRecord(**{'metadataPrefix':req['mdprefix'],'identifier':record.identifier})
+                    except (CannotDisseminateFormat,Exception) as err:
+                        self.logger.error('%s during GetRecord of %s' % (err,record.identifier))
+                        stats['ecount'] += 1
+                        continue
             elif req["lverb"] == 'ListRecords' :
                 if (record.header.deleted):
                     stats['totdcount'] += 1
