@@ -30,8 +30,9 @@ dataverseno https://dataverse.no/oai ListRecords oai_dc HarvesterDataverseNO
 dataverseno https://dataverse.no/oai ListRecords oai_dc nmdc
 dataverseno https://dataverse.no/oai ListRecords oai_dc trolling
 ##Herbadrop
-herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc 
-herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
+##???herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc 
+##???herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
+herbadrop  https://opendata.cines.fr/herbadrop-api/rest/data/search POST json
 ##Yoda (Utrecht University)
 utrechtuni https://public.yoda.uu.nl/oai/oai ListRecords datacite
 ##E-Rosa Inra ??
@@ -640,7 +641,7 @@ dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SRDA # --> 128
 dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc EBDC # --> 13
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IWH # --> 130
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc AHRI # --> 132
-dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RDC # --> 136
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc RDC # --> 136
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DZHW # --> 138
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc XHUB # --> 139
 dara https://www.da-ra.de/oaip/oai ListRecords oai_dc Manifesto # --> 143
