@@ -15,34 +15,53 @@
       <xpath>//dcite_3:description , //dcite_2:description</xpath>
     </field>
     <field name="tags">
-      <xpath>//dcite_3:subject, //dcite_2:subject</xpath>
+      <xpath>//dcite_3:subjects/dcite_3:subject, //dcite_2:subjects/dcite_2:subject</xpath>
     </field>
-    <!-- Access data -->
-   <field name="url">
+    <!-- Identifier -->
+    <field name="url">
        <xpath>//dcite_2:resource/dcite_2:identifier, //dcite_3:resource/dcite_3:identifier</xpath>
-   </field>
-   <field name="Checksum">
-       <xpath></xpath> 
-   </field>
-    <field name="Rights">
-      <xpath>//dcite_2:rights</xpath>
     </field>
-   <!-- Provenance data -->
-    <field name="Discipline">
-      <string>Earth Sciences</string>
+    <field name="RelatedIdentifier">
+       <xpath>//dcite_2:resource/dcite_2:relatedIdentifiers/dcite_2:relatedIdentifier, //dcite_3:resource/dcite_3:relatedIdentifiers/dcite_3:relatedIdentifier</xpath>
     </field>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+   <!-- Provenance Information -->
     <field name="author">
       <xpath>//dcite_3:creatorName , //dcite_2:creatorName</xpath>
     </field>
     <field name="Publisher">
       <xpath>//dcite_3:publisher , //dcite_2:publisher</xpath>
     </field>
+    <field name="Contributor">
+      <xpath>//dcite_3:contributors/dcite_3:contributor/dcite_3:contributorName , //dcite_2:contributors/dcite_2:contributor/dcite_2:contributorName </xpath>
+    </field>
     <field name="PublicationYear">
       <xpath>//dcite_3:publicationYear , //dcite_2:publicationYear</xpath>
     </field>
-   <!-- Formal data -->
+    <field name="Rights">
+      <xpath>//dcite_2:rights</xpath>
+    </field>
+    <field name="OpenAccess">
+      <xpath>false</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//dcite_3:publisher, //dcite_2:contributorName</xpath>
+    </field>
+    <!-- Representation Information -->
     <field name="Language">
       <xpath>//dcite_3:language , //dcite_2:language</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//dcite_3:resourceType, //dcite_3:resourceType</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//dcite_3:format , //dcite_2:format</xpath>
+    </field>
+   <!-- Coverage -->
+    <field name="Discipline">
+      <string>Earth Sciences</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dcite_3:geoLocationBox , //dcite_2:geoLocationBox </xpath>
@@ -50,14 +69,7 @@
     <field name="TemporalCoverage">
       <xpath>//dcite_3:dates/dcite_3:date , //dcite_2:dates/dcite_2:date</xpath>
     </field>
-    <field name="Format">
-      <xpath>//dcite_3:format , //dcite_2:format</xpath>
-    </field>
-    <!-- Additional Information -->
-    <field name="Contact">
-      <xpath>//dcite_3:publisher, //dcite_2:contributorName</xpath>
-    </field>
-    <!-- Hidden fields, only shown to logged in CKAN users -->
+   <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>

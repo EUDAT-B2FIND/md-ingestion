@@ -37,6 +37,7 @@ from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
 from owslib.csw import CatalogueServiceWeb
 from owslib.namespaces import Namespaces
 from SPARQLWrapper import SPARQLWrapper, JSON
+import requests
 from requests.exceptions import ConnectionError
 import uuid
 import lxml.etree as etree
@@ -303,6 +304,25 @@ class Harvester(object):
                 self.logger.error("%s : During harvest request %s\n" % (err,req))
                 ##return -1
 
+        #Restful API POST request
+        elif req["lverb"].startswith('POST'):
+            outtypedir='hjson'
+            outtypeext='json'
+            startposition=0
+            maxrecords=1000
+            try:
+                url=req['url']
+                data={ "text" : "mnhn", "searchTextInMetadata" : True, "searchTextInAdditionalData" : True, "page" : 1, "size" : 1000, "highlight" : { "preTag" : "<b>", "postTag" : "</b>", "fragmentSize" : 500, "fragmentsCount" : 1 } }
+                headers = {'content-type': 'application/json'}
+                response = requests.post(url, data=json.dumps(data), headers=headers, verify=False )##, stream=True ) ##HEW-D auth=('myusername', 'mybasicpass'))
+                records=response.json()['result']
+            except (HTTPError,ConnectionError) as err:
+                self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
+                return -1
+            except (ImportError,CannotDisseminateFormat,Exception) as err:
+                self.logger.critical("%s during harvest request \n" % err)
+                return -1
+            
         # SparQL
         elif req["lverb"].startswith('Sparql'):
             outtypedir='hjson'
@@ -458,6 +478,10 @@ limit 1000
                     oai_id=record['fileName']['value']
                 elif 'title' in record:
                     oai_id=record['title']['value']
+
+            elif req["lverb"].startswith('POST'):
+                if 'depositIdentifier' in record:
+                    oai_id=record['depositIdentifier']
 
             # generate a uniquely identifier and a filename for this dataset:
             uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id))
