@@ -1447,6 +1447,9 @@ class Mapper(object):
                                 elif facet == 'Publisher':
                                     blist = self.cut(jsondata[facet],'=',2)
                                     jsondata[facet] = self.uniq(blist)
+                                elif facet == 'Contributor':
+                                    blist = self.cut(jsondata[facet],'=',3)
+                                    jsondata[facet] = self.uniq(blist)
                                 elif facet == 'Contact':
                                     if all(x is None for x in jsondata[facet]):
                                         jsondata[facet] = ['Not stated']
