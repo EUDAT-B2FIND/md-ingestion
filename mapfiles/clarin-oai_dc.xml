@@ -1,63 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore metadata from CLARIN . -->
+  <!-- Mappings for DublinCore metadata from B2SHARE - CLARIN. -->
   <namespaces>
-    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
+    <namespace ns="dct" uri="http://purl.org/dc/terms/"/>
+    <namespace ns="ows" uri="http://www.opengis.net/ows"/>
   </namespaces>
   <mappings>
-   <!-- General information -->
+    <!-- General Information -->
     <field name="title">
-      <xpath>//dc:title</xpath>
+      <xpath>//dc:title/</xpath>
     </field>
     <field name="notes">
-      <xpath>//dc:description</xpath>
+      <xpath>//dc:description/text()</xpath>
     </field>
     <field name="tags">
-      <xpath>//dc:type</xpath>
+      <xpath>//dc:subject/text()</xpath>
     </field>
-   <!-- Access data  -->
+    <!-- Identifier -->
     <field name="url">
-      <xpath>//dc:identifier</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
-    <field name="Checksum">
+    <field name="RelatedIdentifier">
+      <xpath>//dc:relation/text()</xpath>
     </field>
-    <field name="Rights">
-      <xpath>//dc:rights</xpath>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
     </field>
-    <field name="Discipline">
-      <xpath>//dc:subject</xpath>
-    </field>
+   <!-- Provenance Information -->
     <field name="author">
-      <xpath>//dc:creator</xpath>
+      <xpath>//dc:creator/text()</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//dc:publisher,//dc:source[1]</xpath>
+      <xpath>//dc:publisher/text()</xpath>
     </field>
+    <field name="Contributor">
+      <string>B2SHARE</string>
+    </field> 
     <field name="PublicationYear">
-      <xpath>//dc:date[1]</xpath>
+      <xpath>//dc:date/text()</xpath>
+    </field> 
+    <field name="Rights">
+      <xpath>//dc:rights/text()</xpath>
+      </field> 
+    <field name="OpenAccess">
+      <xpath>false</xpath>
     </field>
-   <!-- Formal data -->
+    <field name="Contact">
+      <xpath>//dc:publisher/text()</xpath>
+    </field>
+    <!-- Representation Information -->
     <field name="Language">
-      <xpath>//dc:language</xpath>
+      <xpath>//dc:language/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//dc:type/text()</xpath>
+    </field>  
+    <field name="Format">
+      <xpath>//dc:format/text()</xpath>
+    </field>  
+   <!-- Coverage -->
+    <field name="Discipline">
+      <string>Linguistics</string>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//dc:coverage</xpath>
+      <xpath>//dc:coverage/text(),//dc:spatial/text()</xpath>
     </field>
     <field name="TemporalCoverage">
-    </field>
-    <field name="Format">
-      <xpath>//dc:format</xpath>
-    </field>
+      <xpath>//dc:coverage/text(),//dc:temporal/text()</xpath>
+    </field>    
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
     <field name="oai_identifier">
-      <xpath>//r:header/r:identifier</xpath>
+      <xpath>//h:header/h:identifier/text()</xpath>
     </field>
     <field name="oai_set">
-      <xpath>//r:header/r:setSpec</xpath>
+      <xpath>//h:header/h:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
     </field>
   </mappings>
 </mapping-table>
