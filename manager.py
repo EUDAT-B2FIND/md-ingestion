@@ -689,7 +689,7 @@ def options_parser(modes):
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",
         "Use these options if you want to ingest from a list in a file.")
-    group_multi.add_option('--list', '-l', help="list of OAI harvest sources (default is ./harvest_list)", default='harvest_list',metavar='FILE')
+    group_multi.add_option('--list', '-l', help="list of OAI harvest sources (default is ./ingestion_list)", default='ingestion_list',metavar='FILE')
     group_multi.add_option('--parallel', 
         help="[DEPRECATED]",#performs list of ingest requests in parallel (makes only sense with option [--list|-l] )",
         default='serial')     
