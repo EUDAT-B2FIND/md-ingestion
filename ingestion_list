@@ -1,0 +1,14 @@
+##+++       - their community
+##+++       - the OAI URL (harvest entry point), 
+##+++       - the harvest request (verb: ListIdentifiers or ListRecords),
+##+++       - the MD format or metadataPrefix and
+##+++       - (optional) the OAI sub set
+##+++    and that are _NOT_ commented out (by # at beginning of source line or 
+##+++                      <# ...\n\n > for multi lines) 
+##+++    will be harvested, mapped or/and uploaded by the B2FIND manager
+##+++    depending on the given mode (option --mode [h|c|u] )
+###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+## community         OAI URL                                verb           metadataPrefix  set
+## -----------------------------------------------------------------------------------
+## CLARIN from B2SHARE
+clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
