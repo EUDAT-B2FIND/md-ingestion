@@ -63,7 +63,7 @@
     </field>
     <!-- Coverage information -->
     <field name="Discipline">
-      <string>Environmental Monitoring</string>
+      <string>Environmental Research</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationPoint,//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationBox</xpath>
