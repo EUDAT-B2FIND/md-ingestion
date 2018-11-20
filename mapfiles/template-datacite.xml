@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DataCite metadata Template --><namespaces>
+  <!-- Mappings for DataCite metadata - Template. --><namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="datacite3" uri="http://datacite.org/schema/kernel-3"/>
     <namespace ns="datacite" uri="http://datacite.org/schema/kernel-3"/>
