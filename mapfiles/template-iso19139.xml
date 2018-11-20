@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for ISO19139 format metadata from Euro-Argo. -->
+  <!-- Mappings for ISO19139 format metadata - Template. -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
@@ -25,7 +25,7 @@
     </field>
     <!-- Identifier -->
     <field name="url">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString</xpath>
     <field name="RelatedIdentifier">
       <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString</xpath>
     </field>
@@ -37,7 +37,7 @@
       <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
     </field>
     <field name="Contributor">
-      <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
+      <string></string>
     </field>
     <field name="PublicationYear">
       <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date</xpath>
