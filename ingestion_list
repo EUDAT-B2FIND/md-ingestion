@@ -1,3 +1,4 @@
+
 ##+++       - their community
 ##+++       - the OAI URL (harvest entry point), 
 ##+++       - the harvest request (verb: ListIdentifiers or ListRecords),
@@ -14,3 +15,7 @@
 clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
 ## DEIMS
 deims https://deims.org/pycsw/catalogue/csw csw iso19139 full
+## ENVIDAT
+envidat https://www.envidat.ch/oai ListRecords datacite
+## RADAR
+radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
