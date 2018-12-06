@@ -304,7 +304,7 @@ class Harvester(object):
                 self.logger.error("%s : During harvest request %s\n" % (err,req))
                 ##return -1
 
-        #Restful API POST request
+        # Restful API POST request
         elif req["lverb"].startswith('POST'):
             outtypedir='hjson'
             outtypeext='json'
@@ -316,6 +316,29 @@ class Harvester(object):
                 headers = {'content-type': 'application/json'}
                 response = requests.post(url, data=json.dumps(data), headers=headers, verify=False )##, stream=True ) ##HEW-D auth=('myusername', 'mybasicpass'))
                 records=response.json()['result']
+            except (HTTPError,ConnectionError) as err:
+                self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
+                return -1
+            except (ImportError,CannotDisseminateFormat,Exception) as err:
+                self.logger.critical("%s during harvest request \n" % err)
+                return -1
+            
+        # CKAN-API request
+        elif req["lverb"].startswith('ckan_api'):
+            outtypedir='hjson'
+            outtypeext='json'
+            startposition=0
+            maxrecords=1000
+            try:
+                url=req['url']
+                action_url = '{url}/{action}'.format(url=url,action='package_list')
+                data_string=json.dumps({}).encode('utf8')
+                request = Request(action_url,data_string)
+                self.logger.debug('request %s' % request)            
+                response = urlopen(request)
+                self.logger.debug('response %s' % response)            
+                records= json.loads(response.read())['result']
+                self.logger.debug('records %s' % records)
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1
@@ -482,6 +505,27 @@ limit 1000
             elif req["lverb"].startswith('POST'):
                 if 'depositIdentifier' in record:
                     oai_id=record['depositIdentifier']
+
+            elif req["lverb"].startswith('ckan_api'):
+                try:
+                    oai_id=record
+                    ##HEW-D action_url = '{url}/{action}?id={record}'.format(url=url,action='package_show',record=record)
+                    action_url = '{url}/{action}'.format(url=url,action='package_show')
+                    self.logger.debug('action_url %s' % action_url)            
+                    self.logger.debug('data_string %s' % data_string)
+                    data_string=json.dumps({"id": record }).encode('utf8')
+                    request = Request(action_url,data_string)
+                    self.logger.debug('request %s' % request)            
+                    response = urlopen(request)
+                    self.logger.debug('response %s' % response)            
+                    record= json.loads(response.read())['result']
+                    self.logger.debug('records %s' % records)
+                except (HTTPError,ConnectionError) as err:
+                    self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
+                    return -1
+                except (ImportError,CannotDisseminateFormat,Exception) as err:
+                    self.logger.critical("%s during harvest request \n" % err)
+                    return -1
 
             # generate a uniquely identifier and a filename for this dataset:
             uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id))
