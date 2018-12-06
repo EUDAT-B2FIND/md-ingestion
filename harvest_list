@@ -11,6 +11,9 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## EnviDat
+##envidat https://www.envidat.ch/api/3/action package_list json 
+envidat https://www.envidat.ch/api/3/action ckan_api json 
 ## Life+Respira
 life+respira https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ## NILU
