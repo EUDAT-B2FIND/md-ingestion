@@ -11,16 +11,17 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
-## CAPSELLA
+## EMSO
+emso http://dataportals.pangaea.de/emso/oai pan_md full## CAPSELLA
+## Capsella
 #http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher?verb=ListRecords&metadataPrefix=oai_dc
-capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc 
-## ENVIDAT
+capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc ## EnviDat
+## EnviDat
+#envidat https://www.envidat.ch/api/3/action package_list json 
 #https://www.envidat.ch/oai?verb=ListRecords&metadataPrefix=iso19139
 #envidat https://www.envidat.ch/oai ListRecords iso19139 
 #envidat https://www.envidat.ch/oai ListRecords datacite
-envidat https://www.envidat.ch/api/3/action ckan_api json
-## EMSO
-emso http://dataportals.pangaea.de/emso/oai pan_md full
+envidat https://www.envidat.ch/api/3/action ckan_api json 
 ## Life+Respira
 life+respira https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ## NILU
