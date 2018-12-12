@@ -1,0 +1,279 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.56713</identifier>
+    <datestamp>2017-12-21T11:55:51Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <md:MetaData xmlns:md="http://www.pangaea.de/MetaData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pangaea.de/MetaData http://ws.pangaea.de/schemas/pangaea/MetaData.xsd" version="2018-02-14">
+      <md:citation id="dataset56713">
+        <md:author id="dataset.author3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:author>
+        <md:year>2000</md:year>
+        <md:title>Helgoland transects 1962</md:title>
+        <md:source id="dataset.sourceinst1842">Alfred Wegener Institute - Biological Institute Helgoland</md:source>
+        <md:URI>https://doi.pangaea.de/10.1594/PANGAEA.56713</md:URI>
+        <md:dateTime>2000-05-30T15:08:00</md:dateTime>
+      </md:citation>
+      <md:extent>
+        <md:geographic>
+          <md:westBoundLongitude>7.8</md:westBoundLongitude>
+          <md:eastBoundLongitude>8.4833</md:eastBoundLongitude>
+          <md:southBoundLatitude>53.5667</md:southBoundLatitude>
+          <md:northBoundLatitude>54.25</md:northBoundLatitude>
+          <md:meanLongitude>7.9865596816976225</md:meanLongitude>
+          <md:meanLatitude>54.13023580901866</md:meanLatitude>
+        </md:geographic>
+        <md:temporal>
+          <md:minDateTime>1962-03-13T12:00:00</md:minDateTime>
+          <md:maxDateTime>1962-12-13T12:00:00</md:maxDateTime>
+        </md:temporal>
+        <md:elevation geocodeId="geocode1619" name="DEPTH, water" unit="m">
+          <md:min>1.0</md:min>
+          <md:max>50.0</md:max>
+        </md:elevation>
+        <md:topoType id="topotype2">point</md:topoType>
+      </md:extent>
+      <md:project id="project71" type="National institution">
+        <md:label>BAH</md:label>
+        <md:name>Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland)</md:name>
+        <md:URI>http://www.awi.de/forschung/biowissenschaft/oekologie-der-schelfmeere.html</md:URI>
+      </md:project>
+      <md:project id="project4097" type="National institution">
+        <md:label>LTER</md:label>
+        <md:name>Long-term Ecological Research at AWI</md:name>
+        <md:URI>http://www.awi.de/en/science/biosciences/functional-ecology.html</md:URI>
+      </md:project>
+      <md:event id="event2033866">
+        <md:label>HelgolandTransects1962</md:label>
+        <md:optionalLabel>BAHTransects1962</md:optionalLabel>
+        <md:latitude>53.8</md:latitude>
+        <md:longitude>7.0</md:longitude>
+        <md:dateTime>1962-01-01T00:00:00</md:dateTime>
+        <md:latitude2>54.5</md:latitude2>
+        <md:longitude2>9.0</md:longitude2>
+        <md:dateTime2>1962-12-31T23:59:00</md:dateTime2>
+        <md:location id="event2033866.term21089">
+          <md:name>German Bight, North Sea</md:name>
+        </md:location>
+        <md:campaign id="event2033866.campaign21635">
+          <md:name>HelgolandTransects</md:name>
+        </md:campaign>
+        <md:basis id="event2033866.basis539">
+          <md:name>Uth&#246;rn</md:name>
+          <md:URI>http://www.awi.de/en/expedition/ships/uthoern.html</md:URI>
+        </md:basis>
+        <md:device id="event2033866.term19809">
+          <md:name>Monitoring</md:name>
+          <md:optionalName>MON</md:optionalName>
+        </md:device>
+      </md:event>
+      <md:size unit="data points">2093</md:size>
+      <md:comment>Data contact: Karen Wiltshire (mailto:karen.wiltshire@awi.de)</md:comment>
+      <md:matrixColumn behaviour="4" col="0" format="yyyy-MM-dd'T'HH:mm" id="col0.ds1005107" label="HelgolandTransects1962.b" source="geocode" type="datetime">
+        <md:parameter id="col0.ds1005107.geocode1599">
+          <md:name>DATE/TIME</md:name>
+          <md:shortName>Date/Time</md:shortName>
+          <md:group>GEOCODE</md:group>
+          <md:URI>http://en.wikipedia.org/wiki/ISO_8601</md:URI>
+        </md:parameter>
+        <md:caption>Date/Time</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn behaviour="2" col="1" format="##0.0000" id="col1.ds1005108" label="HelgolandTransects1962.c" source="geocode" type="numeric">
+        <md:parameter id="col1.ds1005108.geocode1600">
+          <md:name>LATITUDE</md:name>
+          <md:shortName>Latitude</md:shortName>
+          <md:group>GEOCODE</md:group>
+          <md:URI>http://en.wikipedia.org/wiki/ISO_6709</md:URI>
+        </md:parameter>
+        <md:caption>Latitude</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn behaviour="3" col="2" format="###0.0000" id="col2.ds1005109" label="HelgolandTransects1962.d" source="geocode" type="numeric">
+        <md:parameter id="col2.ds1005109.geocode1601">
+          <md:name>LONGITUDE</md:name>
+          <md:shortName>Longitude</md:shortName>
+          <md:group>GEOCODE</md:group>
+          <md:URI>http://en.wikipedia.org/wiki/ISO_6709</md:URI>
+        </md:parameter>
+        <md:caption>Longitude</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn behaviour="1" col="3" format="####0.0" id="col3.ds1005106" label="HelgolandTransects1962.a" source="geocode" type="numeric">
+        <md:parameter id="col3.ds1005106.geocode1619">
+          <md:name>DEPTH, water</md:name>
+          <md:shortName>Depth water</md:shortName>
+          <md:unit>m</md:unit>
+          <md:group>GEOCODE</md:group>
+        </md:parameter>
+        <md:caption>Depth water [m]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="4" format="##0.00" id="col4.ds2091746" label="HelgolandTransects1962.5" source="data" type="numeric">
+        <md:parameter id="col4.ds2091746.param717" relatedTermIds="38306">
+          <md:name>Temperature, water</md:name>
+          <md:shortName>Temp</md:shortName>
+          <md:unit>&#176;C</md:unit>
+          <md:group>Hydrography</md:group>
+        </md:parameter>
+        <md:method id="col4.ds2091746.method4656">
+          <md:name>Reversing thermometer</md:name>
+          <md:URI>https://en.wikipedia.org/wiki/Reversing_thermometer</md:URI>
+        </md:method>
+        <md:PI id="col4.ds2091746.pi3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:PI>
+        <md:caption>Temp [&#176;C]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="5" format="##0.000" id="col5.ds2091747" label="HelgolandTransects1962.6" source="data" type="numeric">
+        <md:parameter id="col5.ds2091747.param716">
+          <md:name>Salinity</md:name>
+          <md:shortName>Sal</md:shortName>
+          <md:group>Hydrography</md:group>
+        </md:parameter>
+        <md:method id="col5.ds2091747.method3002">
+          <md:name>Titration, chloride (Grasshoff et al., 1983, Verlag Chemie GmbH Weinheim)</md:name>
+        </md:method>
+        <md:PI id="col5.ds2091747.pi3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:PI>
+        <md:caption>Sal</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="6" format="###0.00" id="col6.ds2091748" label="HelgolandTransects1962.7" source="data" type="numeric">
+        <md:parameter id="col6.ds2091748.param758" relatedTermIds="1074591">
+          <md:name>Phosphate</md:name>
+          <md:shortName>[PO4]3-</md:shortName>
+          <md:unit>&#181;mol/l</md:unit>
+          <md:group>Chemistry, water</md:group>
+        </md:parameter>
+        <md:method id="col6.ds2091748.method3005">
+          <md:name>Photometer, molybdene blue, reduct SnCl</md:name>
+        </md:method>
+        <md:PI id="col6.ds2091748.pi3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:PI>
+        <md:caption>[PO4]3- [&#181;mol/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="7" format="###0.00" id="col7.ds2091749" label="HelgolandTransects1962.8" source="data" type="numeric">
+        <md:parameter id="col7.ds2091749.param756" relatedTermIds="1073482">
+          <md:name>Nitrate</md:name>
+          <md:shortName>[NO3]-</md:shortName>
+          <md:unit>&#181;mol/l</md:unit>
+          <md:group>Chemistry, water</md:group>
+        </md:parameter>
+        <md:method id="col7.ds2091749.method3003">
+          <md:name>Reduction by hydrazin</md:name>
+          <md:URI>https://doi.org/10.1016/S0003-2670(00)87865-4</md:URI>
+        </md:method>
+        <md:PI id="col7.ds2091749.pi3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:PI>
+        <md:caption>[NO3]- [&#181;mol/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="8" format="##0.00" id="col8.ds2091750" label="HelgolandTransects1962.9" source="data" type="numeric">
+        <md:parameter id="col8.ds2091750.param757" relatedTermIds="1073483">
+          <md:name>Nitrite</md:name>
+          <md:shortName>[NO2]-</md:shortName>
+          <md:unit>&#181;mol/l</md:unit>
+          <md:group>Chemistry, water</md:group>
+        </md:parameter>
+        <md:method id="col8.ds2091750.method292">
+          <md:name>Photometer, azo-dye (Bendschneider &amp; Robinson, 1952, J Mar Res, 11:87-96)</md:name>
+        </md:method>
+        <md:PI id="col8.ds2091750.pi3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:PI>
+        <md:caption>[NO2]- [&#181;mol/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="9" format="###0.00" id="col9.ds2091751" label="HelgolandTransects1962.10" source="data" type="numeric">
+        <md:parameter id="col9.ds2091751.param52" relatedTermIds="1073173">
+          <md:name>Ammonium</md:name>
+          <md:shortName>[NH4]+</md:shortName>
+          <md:unit>&#181;mol/l</md:unit>
+          <md:group>Chemistry, water</md:group>
+        </md:parameter>
+        <md:method id="col9.ds2091751.method3004">
+          <md:name>Bordeaux red, improved by Gillbricht, 1961</md:name>
+          <md:URI>https://doi.org/10.1007/BF01609947</md:URI>
+        </md:method>
+        <md:PI id="col9.ds2091751.pi3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:PI>
+        <md:caption>[NH4]+ [&#181;mol/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="10" format="###0.00" id="col10.ds2091752" label="HelgolandTransects1962.11" source="data" type="numeric">
+        <md:parameter id="col10.ds2091752.param6204">
+          <md:name>Nitrogen, inorganic, dissolved</md:name>
+          <md:shortName>DIN</md:shortName>
+          <md:unit>&#181;mol/l</md:unit>
+          <md:group>Chemistry, water</md:group>
+        </md:parameter>
+        <md:method id="col10.ds2091752.method470">
+          <md:name>Calculated (sum of Nitrate, Nitrite, Ammonium)</md:name>
+        </md:method>
+        <md:PI id="col10.ds2091752.pi3002">
+          <md:lastName>Gillbricht</md:lastName>
+          <md:firstName>Max</md:firstName>
+          <md:eMail>karen.wiltshire@awi.de</md:eMail>
+        </md:PI>
+        <md:caption>DIN [&#181;mol/l]</md:caption>
+      </md:matrixColumn>
+      <md:keywords>
+        <md:techKeyword id="keywords.term27" type="fromDatabase">BAH1962</md:techKeyword>
+        <md:techKeyword type="autoGenerated">author3002</md:techKeyword>
+        <md:techKeyword type="autoGenerated">basis539</md:techKeyword>
+        <md:techKeyword type="autoGenerated">campaign21635</md:techKeyword>
+        <md:techKeyword type="autoGenerated">event2033866</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term19809</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term21089</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term27</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1599</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1600</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1601</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1619</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method292</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method3002</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method3003</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method3004</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method3005</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method4656</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method470</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param52</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param6204</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param716</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param717</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param756</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param757</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param758</md:techKeyword>
+        <md:techKeyword type="autoGenerated">pi3002</md:techKeyword>
+        <md:techKeyword type="autoGenerated">project4097</md:techKeyword>
+        <md:techKeyword type="autoGenerated">project71</md:techKeyword>
+        <md:techKeyword type="autoGenerated">sourceinst1842</md:techKeyword>
+        <md:techKeyword type="autoGenerated">topotype2</md:techKeyword>
+      </md:keywords>
+      <md:technicalInfo>
+        <md:entry key="xmlLastModified" value="2017-12-21T11:55:51Z"/>
+        <md:entry key="filename" value="BAH_Transects_1962"/>
+        <md:entry key="mimeType" value="text/tab-separated-values"/>
+        <md:entry key="status" value="validated"/>
+        <md:entry key="status_num" value="3"/>
+        <md:entry key="DOIRegistryStatus" value="not to be registered"/>
+        <md:entry key="DOIRegistryStatus_num" value="1"/>
+        <md:entry key="loginOption" value="access rights needed"/>
+        <md:entry key="loginOption_num" value="3"/>
+      </md:technicalInfo>
+    </md:MetaData>
+  </metadata>
+</record>

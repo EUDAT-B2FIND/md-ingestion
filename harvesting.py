@@ -332,13 +332,15 @@ class Harvester(object):
             try:
                 url=req['url']
                 action_url = '{url}/{action}'.format(url=url,action='package_list')
+                self.logger.debug('action_url %s' % action_url)            
                 data_string=json.dumps({}).encode('utf8')
                 request = Request(action_url,data_string)
                 self.logger.debug('request %s' % request)            
                 response = urlopen(request)
                 self.logger.debug('response %s' % response)            
                 records= json.loads(response.read())['result']
-                self.logger.debug('records %s' % records)
+                self.logger.debug('records %s' % records[:10])
+                sys.exit(-1)
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1

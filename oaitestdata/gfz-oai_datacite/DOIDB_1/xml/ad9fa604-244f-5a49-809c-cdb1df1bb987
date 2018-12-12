@@ -1,0 +1,48 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:3063</identifier>
+    <datestamp>2013-09-18T10:42:48Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.GEOFON</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>2.2</schemaVersion>
+      <datacentreSymbol>DOIDB.GEOFON</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.2 http://schema.datacite.org/meta/kernel-2.2/metadata.xsd">
+          <identifier identifierType="DOI">10.5880/GEOFON.gfz2012bvjg</identifier>
+          <creators>
+            <creator>
+              <creatorName>geofon operator</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>GEOFON event gfz2012bvjg (Mariana Islands Region; Magnitude 5.5)</title>
+          </titles>
+          <publisher>Deutsches GeoForschungsZentrum GFZ</publisher>
+          <publicationYear>2012</publicationYear>
+          <contributors>
+            <contributor contributorType="HostingInstitution">
+              <contributorName>Deutsches GeoForschungsZentrum GFZ</contributorName>
+            </contributor>
+          </contributors>
+          <dates>
+            <date dateType="Issued">2012-01-26</date>
+            <date dateType="Created">2012-01-26</date>
+            <date dateType="Accepted">2012-01-26</date>
+          </dates>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset"/>
+          <formats>
+            <format>text/tab-separated-values</format>
+          </formats>
+          <descriptions>
+            <description descriptionType="Abstract">Earthquake, 2012-01-26 22:04:08, Mariana Islands Region</description>
+          </descriptions>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

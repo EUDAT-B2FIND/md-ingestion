@@ -1,0 +1,207 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.80767</identifier>
+    <datestamp>2017-08-04T13:28:53Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <md:MetaData xmlns:md="http://www.pangaea.de/MetaData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pangaea.de/MetaData http://ws.pangaea.de/schemas/pangaea/MetaData.xsd" version="2018-02-14">
+      <md:citation id="dataset80767">
+        <md:author id="dataset.author24036">
+          <md:lastName>DWD</md:lastName>
+          <md:URI>http://www.dwd.de/</md:URI>
+        </md:author>
+        <md:year>2002</md:year>
+        <md:title>Daily mean weather data of Helgoland in 1962</md:title>
+        <md:URI>https://doi.org/10.1594/PANGAEA.80767</md:URI>
+        <md:dateTime>2002-10-22T19:03:00</md:dateTime>
+      </md:citation>
+      <md:extent>
+        <md:geographic>
+          <md:westBoundLongitude>7.9</md:westBoundLongitude>
+          <md:eastBoundLongitude>7.9</md:eastBoundLongitude>
+          <md:southBoundLatitude>54.18833</md:southBoundLatitude>
+          <md:northBoundLatitude>54.18833</md:northBoundLatitude>
+          <md:meanLongitude>7.9</md:meanLongitude>
+          <md:meanLatitude>54.18833</md:meanLatitude>
+        </md:geographic>
+        <md:temporal>
+          <md:minDateTime>1962-01-02T00:00:00</md:minDateTime>
+          <md:maxDateTime>1962-03-19T00:00:00</md:maxDateTime>
+        </md:temporal>
+        <md:elevation geocodeId="geocode4607" name="ALTITUDE" unit="m">
+          <md:min>4.0</md:min>
+          <md:max>4.0</md:max>
+        </md:elevation>
+        <md:topoType id="topotype8">time series</md:topoType>
+      </md:extent>
+      <md:event id="event2023591">
+        <md:label>HelgolandRoads</md:label>
+        <md:optionalLabel>Kabeltonne</md:optionalLabel>
+        <md:latitude>54.18833</md:latitude>
+        <md:longitude>7.9</md:longitude>
+        <md:elevation>-10.0</md:elevation>
+        <md:location id="event2023591.term21089">
+          <md:name>German Bight, North Sea</md:name>
+        </md:location>
+        <md:campaign id="event2023591.campaign21302">
+          <md:name>HelgolandRoadsTimeseries</md:name>
+        </md:campaign>
+        <md:basis id="event2023591.basis554">
+          <md:name>Meeresstation Helgoland</md:name>
+        </md:basis>
+        <md:device id="event2023591.term19809">
+          <md:name>Monitoring</md:name>
+          <md:optionalName>MON</md:optionalName>
+        </md:device>
+      </md:event>
+      <md:size unit="data points">385</md:size>
+      <md:license id="license1">
+        <md:label>CC-BY</md:label>
+        <md:name>Creative Commons Attribution 3.0 Unported</md:name>
+        <md:URI>http://creativecommons.org/licenses/by/3.0/</md:URI>
+      </md:license>
+      <md:matrixColumn behaviour="4" col="0" format="yyyy-MM-dd" id="col0.ds1013712" label="HelgolandRoads.b" source="geocode" type="datetime">
+        <md:parameter id="col0.ds1013712.geocode1599">
+          <md:name>DATE/TIME</md:name>
+          <md:shortName>Date/Time</md:shortName>
+          <md:group>GEOCODE</md:group>
+          <md:URI>http://en.wikipedia.org/wiki/ISO_8601</md:URI>
+        </md:parameter>
+        <md:caption>Date/Time</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn behaviour="1" col="1" format="#0" id="col1.ds1013711" label="HelgolandRoads.a" source="geocode" type="numeric">
+        <md:parameter id="col1.ds1013711.geocode4607">
+          <md:name>ALTITUDE</md:name>
+          <md:shortName>Altitude</md:shortName>
+          <md:unit>m</md:unit>
+          <md:group>GEOCODE</md:group>
+          <md:URI>http://en.wikipedia.org/wiki/Altitude</md:URI>
+        </md:parameter>
+        <md:caption>Altitude [m]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="2" format="#0" id="col2.ds10169195" label="HelgolandRoads.20315" source="data" type="numeric">
+        <md:parameter id="col2.ds10169195.param2220">
+          <md:name>Precipitation integrated</md:name>
+          <md:shortName>Precip int</md:shortName>
+          <md:unit>mm</md:unit>
+          <md:group>Meteorology_</md:group>
+        </md:parameter>
+        <md:method id="col2.ds10169195.method582">
+          <md:name>Meteorological station</md:name>
+        </md:method>
+        <md:PI id="col2.ds10169195.pi24036">
+          <md:lastName>DWD</md:lastName>
+          <md:URI>http://www.dwd.de/</md:URI>
+        </md:PI>
+        <md:comment>daily data from station 01040 Helgoland</md:comment>
+        <md:caption>Precip int [mm]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="3" format="#0.0" id="col3.ds10169196" label="HelgolandRoads.20316" source="data" type="numeric">
+        <md:parameter id="col3.ds10169196.param2222">
+          <md:name>Wind speed</md:name>
+          <md:shortName>ff</md:shortName>
+          <md:unit>Bft</md:unit>
+          <md:group>Meteorology_</md:group>
+          <md:URI>https://en.wikipedia.org/wiki/Beaufort_scale</md:URI>
+        </md:parameter>
+        <md:method id="col3.ds10169196.method530">
+          <md:name>Visual observation</md:name>
+        </md:method>
+        <md:PI id="col3.ds10169196.pi24036">
+          <md:lastName>DWD</md:lastName>
+          <md:URI>http://www.dwd.de/</md:URI>
+        </md:PI>
+        <md:comment>daily means from station 01040 Helgoland in steps of 1/3 Bft</md:comment>
+        <md:caption>ff [Bft]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="4" format="###0.0" id="col4.ds10169197" label="HelgolandRoads.20317" source="data" type="numeric">
+        <md:parameter id="col4.ds10169197.param2224">
+          <md:name>Pressure, atmospheric</md:name>
+          <md:shortName>PPPP</md:shortName>
+          <md:unit>hPa</md:unit>
+          <md:group>Meteorology_</md:group>
+        </md:parameter>
+        <md:method id="col4.ds10169197.method582">
+          <md:name>Meteorological station</md:name>
+        </md:method>
+        <md:PI id="col4.ds10169197.pi24036">
+          <md:lastName>DWD</md:lastName>
+          <md:URI>http://www.dwd.de/</md:URI>
+        </md:PI>
+        <md:comment>daily means from station 01040 Helgoland</md:comment>
+        <md:caption>PPPP [hPa]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="5" format="#0.0" id="col5.ds10169198" label="HelgolandRoads.20318" source="data" type="numeric">
+        <md:parameter id="col5.ds10169198.param4610">
+          <md:name>Temperature, air</md:name>
+          <md:shortName>TTT</md:shortName>
+          <md:unit>&#176;C</md:unit>
+          <md:group>Meteorology_</md:group>
+        </md:parameter>
+        <md:method id="col5.ds10169198.method582">
+          <md:name>Meteorological station</md:name>
+        </md:method>
+        <md:PI id="col5.ds10169198.pi24036">
+          <md:lastName>DWD</md:lastName>
+          <md:URI>http://www.dwd.de/</md:URI>
+        </md:PI>
+        <md:comment>daily means from station 01040 Helgoland</md:comment>
+        <md:caption>TTT [&#176;C]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="6" format="#0.0" id="col6.ds10169199" label="HelgolandRoads.20319" source="data" type="numeric">
+        <md:parameter id="col6.ds10169199.param5152">
+          <md:name>Sunshine duration, daily</md:name>
+          <md:shortName>SSD</md:shortName>
+          <md:unit>h/day</md:unit>
+          <md:group>Meteorology_</md:group>
+        </md:parameter>
+        <md:method id="col6.ds10169199.method582">
+          <md:name>Meteorological station</md:name>
+        </md:method>
+        <md:PI id="col6.ds10169199.pi24036">
+          <md:lastName>DWD</md:lastName>
+          <md:URI>http://www.dwd.de/</md:URI>
+        </md:PI>
+        <md:comment>daily data from station 01040 Helgoland</md:comment>
+        <md:caption>SSD [h/day]</md:caption>
+      </md:matrixColumn>
+      <md:keywords>
+        <md:techKeyword id="keywords.term27" type="fromDatabase">BAH1962</md:techKeyword>
+        <md:techKeyword type="autoGenerated">author24036</md:techKeyword>
+        <md:techKeyword type="autoGenerated">basis554</md:techKeyword>
+        <md:techKeyword type="autoGenerated">campaign21302</md:techKeyword>
+        <md:techKeyword type="autoGenerated">event2023591</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term19809</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term21089</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term27</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1599</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1600</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1601</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode4607</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode8128</md:techKeyword>
+        <md:techKeyword type="autoGenerated">license1</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method530</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method582</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param2220</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param2222</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param2224</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param4610</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param5152</md:techKeyword>
+        <md:techKeyword type="autoGenerated">pi24036</md:techKeyword>
+        <md:techKeyword type="autoGenerated">topotype8</md:techKeyword>
+      </md:keywords>
+      <md:technicalInfo>
+        <md:entry key="xmlLastModified" value="2017-08-04T13:28:53Z"/>
+        <md:entry key="filename" value="DWD_Helgoland_weather_1962"/>
+        <md:entry key="mimeType" value="text/tab-separated-values"/>
+        <md:entry key="status" value="published"/>
+        <md:entry key="status_num" value="4"/>
+        <md:entry key="DOIRegistryStatus" value="registered"/>
+        <md:entry key="DOIRegistryStatus_num" value="4"/>
+        <md:entry key="loginOption" value="unrestricted"/>
+        <md:entry key="loginOption_num" value="1"/>
+      </md:technicalInfo>
+    </md:MetaData>
+  </metadata>
+</record>

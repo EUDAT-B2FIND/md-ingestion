@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "Contributor": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5880/GEOFON.gfz2011jcos",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:4013",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:4013"
+    ],
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "TemporalCoverage": [
+        "2011-05-10",
+        "2011-05-10",
+        "2011-05-10"
+    ],
+    "author": [
+        "geofon operator"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:4013;2013-09-18T14:49:43Z;DOIDB;DOIDB.GEOFON;false;2.2;DOIDB.GEOFON;10.5880/GEOFON.gfz2011jcos;geofon operator;GEOFON event gfz2011jcos (Loyalty Islands; Magnitude 5.3);Deutsches GeoForschungsZentrum GFZ;2012;Deutsches GeoForschungsZentrum GFZ;2011-05-10;2011-05-10;2011-05-10;eng;text/tab-separated-values;Earthquake, 2011-05-10 11:31:51, Loyalty Islands",
+    "group": "gfz",
+    "groups": [
+        {
+            "name": "gfz"
+        }
+    ],
+    "name": "5505f787-f1d7-566e-9a40-8bb505002e2c",
+    "notes": [
+        "Earthquake, 2011-05-10 11:31:51, Loyalty Islands"
+    ],
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:4013"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.GEOFON"
+    ],
+    "state": "active",
+    "title": [
+        "GEOFON event gfz2011jcos (Loyalty Islands; Magnitude 5.3)"
+    ],
+    "url": ""
+}

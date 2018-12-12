@@ -1,6 +1,7 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DataCite metadata from EnviDat --><namespaces>
+  <!-- Mappings for DataCite metadata - Template. --><namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="datacite3" uri="http://datacite.org/schema/kernel-3"/>
     <namespace ns="datacite" uri="http://datacite.org/schema/kernel-3"/>
@@ -34,7 +35,7 @@
       <xpath>//datacite:publisher</xpath>
     </field>
     <field name="Contributor">
-      <string>EnviDat</string>
+      <xpath>//datacite:contributors/datacite:contributor[@contributorType="Funder"]/datacite:contributorName</xpath>
     </field>
     <field name="PublicationYear">
       <xpath>//datacite:publicationYear</xpath>
@@ -46,7 +47,7 @@
       <xpath></xpath>
     </field>
     <field name="Contact">
-      <xpath>//datacite:contributors/datacite:contributor/datacite:contributorName</xpath>
+      <xpath>//datacite:contributors/datacite:contributor[@contributorType="ContactPerson"]/datacite:contributorName</xpath>
     </field>
     <!-- Representation information -->
     <field name="Language">
@@ -63,7 +64,7 @@
     </field>
     <!-- Coverage information -->
     <field name="Discipline">
-      <string>Environmental Research</string>
+      <string>Earth System Research</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationPoint,//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationBox</xpath>

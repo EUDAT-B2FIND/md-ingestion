@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "Contributor": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5880/GEOFON.gfz2014bcyf",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:4964",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:4964"
+    ],
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "TemporalCoverage": [
+        "2014-01-16",
+        "2014-01-16",
+        "2014-01-16"
+    ],
+    "author": [
+        "geofon operator"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:4964;2014-04-02T15:01:53Z;DOIDB;DOIDB.GEOFON;false;2.2;DOIDB.GEOFON;10.5880/GEOFON.gfz2014bcyf;geofon operator;GEOFON event gfz2014bcyf (Bouvet Island Region; Magnitude 5.3);Deutsches GeoForschungsZentrum GFZ;2012;Deutsches GeoForschungsZentrum GFZ;2014-01-16;2014-01-16;2014-01-16;eng;text/tab-separated-values;Earthquake, 2014-01-16 20:02:46, Bouvet Island Region",
+    "group": "gfz",
+    "groups": [
+        {
+            "name": "gfz"
+        }
+    ],
+    "name": "0aae5bba-a9c0-5898-8504-7d990f710d14",
+    "notes": [
+        "Earthquake, 2014-01-16 20:02:46, Bouvet Island Region"
+    ],
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:4964"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.GEOFON"
+    ],
+    "state": "active",
+    "title": [
+        "GEOFON event gfz2014bcyf (Bouvet Island Region; Magnitude 5.3)"
+    ],
+    "url": ""
+}

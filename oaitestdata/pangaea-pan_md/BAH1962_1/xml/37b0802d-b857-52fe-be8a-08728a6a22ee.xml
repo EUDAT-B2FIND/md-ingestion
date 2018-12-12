@@ -1,0 +1,1919 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.56380</identifier>
+    <datestamp>2018-04-03T09:02:53Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <md:MetaData xmlns:md="http://www.pangaea.de/MetaData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pangaea.de/MetaData http://ws.pangaea.de/schemas/pangaea/MetaData.xsd" version="2018-02-14">
+      <md:citation id="dataset56380">
+        <md:author id="dataset.author20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:author>
+        <md:year>2000</md:year>
+        <md:title>Abundance of dinoflagellates, dictyochophyceae, and prymnesiophyceae at time series station Helgoland Roads, North Sea, in 1962</md:title>
+        <md:source id="dataset.sourceinst32">Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven</md:source>
+        <md:URI>https://doi.org/10.1594/PANGAEA.56380</md:URI>
+        <md:dateTime>2000-03-22T19:58:00</md:dateTime>
+      </md:citation>
+      <md:reference id="ref39746" relationType="Further details" relationTypeId="17">
+        <md:author id="ref39746.author20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:author>
+        <md:year>2007</md:year>
+        <md:title>Evaluation of plankton data from Helgoland roads</md:title>
+        <md:source>Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, Germany</md:source>
+        <md:URI>hdl:10013/epic.28563.d001</md:URI>
+      </md:reference>
+      <md:extent>
+        <md:geographic>
+          <md:westBoundLongitude>7.9</md:westBoundLongitude>
+          <md:eastBoundLongitude>7.9</md:eastBoundLongitude>
+          <md:southBoundLatitude>54.18833</md:southBoundLatitude>
+          <md:northBoundLatitude>54.18833</md:northBoundLatitude>
+          <md:meanLongitude>7.9</md:meanLongitude>
+          <md:meanLatitude>54.18833</md:meanLatitude>
+        </md:geographic>
+        <md:temporal>
+          <md:minDateTime>1962-01-15T10:30:00</md:minDateTime>
+          <md:maxDateTime>1962-12-28T09:40:00</md:maxDateTime>
+        </md:temporal>
+        <md:elevation geocodeId="geocode1619" name="DEPTH, water" unit="m">
+          <md:min>0.5</md:min>
+          <md:max>0.5</md:max>
+        </md:elevation>
+        <md:topoType id="topotype8">time series</md:topoType>
+      </md:extent>
+      <md:project id="project71" type="National institution">
+        <md:label>BAH</md:label>
+        <md:name>Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland)</md:name>
+        <md:URI>http://www.awi.de/forschung/biowissenschaft/oekologie-der-schelfmeere.html</md:URI>
+      </md:project>
+      <md:project id="project4097" type="National institution">
+        <md:label>LTER</md:label>
+        <md:name>Long-term Ecological Research at AWI</md:name>
+        <md:URI>http://www.awi.de/en/science/biosciences/functional-ecology.html</md:URI>
+      </md:project>
+      <md:event id="event2023591">
+        <md:label>HelgolandRoads</md:label>
+        <md:optionalLabel>Kabeltonne</md:optionalLabel>
+        <md:latitude>54.18833</md:latitude>
+        <md:longitude>7.9</md:longitude>
+        <md:elevation>-10.0</md:elevation>
+        <md:location id="event2023591.term21089">
+          <md:name>German Bight, North Sea</md:name>
+        </md:location>
+        <md:campaign id="event2023591.campaign21302">
+          <md:name>HelgolandRoadsTimeseries</md:name>
+        </md:campaign>
+        <md:basis id="event2023591.basis554">
+          <md:name>Meeresstation Helgoland</md:name>
+        </md:basis>
+        <md:device id="event2023591.term19809">
+          <md:name>Monitoring</md:name>
+          <md:optionalName>MON</md:optionalName>
+        </md:device>
+      </md:event>
+      <md:size unit="data points">10416</md:size>
+      <md:comment>Investigator of phytoplankton samples: Max Gillbricht</md:comment>
+      <md:matrixColumn behaviour="4" col="0" format="yyyy-MM-dd'T'HH:mm" id="col0.ds1004864" label="HelgolandRoads.b" source="geocode" type="datetime">
+        <md:parameter id="col0.ds1004864.geocode1599">
+          <md:name>DATE/TIME</md:name>
+          <md:shortName>Date/Time</md:shortName>
+          <md:group>GEOCODE</md:group>
+          <md:URI>http://en.wikipedia.org/wiki/ISO_8601</md:URI>
+        </md:parameter>
+        <md:caption>Date/Time</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn behaviour="1" col="1" format="#0.0" id="col1.ds1004863" label="HelgolandRoads.a" source="geocode" type="numeric">
+        <md:parameter id="col1.ds1004863.geocode1619">
+          <md:name>DEPTH, water</md:name>
+          <md:shortName>Depth water</md:shortName>
+          <md:unit>m</md:unit>
+          <md:group>GEOCODE</md:group>
+        </md:parameter>
+        <md:caption>Depth water [m]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="2" format="#####0" id="col2.ds10623139" label="HelgolandRoads.27051" source="data" type="numeric">
+        <md:parameter id="col2.ds10623139.param78792" relatedTermIds="1062404">
+          <md:name>Amphidinium sp., fractionated</md:name>
+          <md:shortName>Amphidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col2.ds10623139.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col2.ds10623139.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Amphidinium sp. frac [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="3" format="#####0" id="col3.ds10623140" label="HelgolandRoads.27052" source="data" type="numeric">
+        <md:parameter id="col3.ds10623140.param78792" relatedTermIds="1062404">
+          <md:name>Amphidinium sp., fractionated</md:name>
+          <md:shortName>Amphidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col3.ds10623140.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col3.ds10623140.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Amphidinium sp. frac [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="4" format="#####0" id="col4.ds10623141" label="HelgolandRoads.27053" source="data" type="numeric">
+        <md:parameter id="col4.ds10623141.param78792" relatedTermIds="1062404">
+          <md:name>Amphidinium sp., fractionated</md:name>
+          <md:shortName>Amphidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col4.ds10623141.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col4.ds10623141.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 3, size unknown</md:comment>
+        <md:caption>Amphidinium sp. frac [#/l] (class 3, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="5" format="#####0" id="col5.ds10623142" label="HelgolandRoads.27054" source="data" type="numeric">
+        <md:parameter id="col5.ds10623142.param8728" relatedTermIds="1062404">
+          <md:name>Amphidinium sp.</md:name>
+          <md:shortName>Amphidinium sp.</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109473</md:URI>
+        </md:parameter>
+        <md:method id="col5.ds10623142.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col5.ds10623142.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Amphidinium sp. [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="6" format="#####0" id="col6.ds10623143" label="HelgolandRoads.27055" source="data" type="numeric">
+        <md:parameter id="col6.ds10623143.param78793" relatedTermIds="1051657">
+          <md:name>Ceratium furca, fractionated</md:name>
+          <md:shortName>C. furca frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109950</md:URI>
+        </md:parameter>
+        <md:method id="col6.ds10623143.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col6.ds10623143.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 30-50 &#181;m, hdl:10013/de.awi.planktonnet.image.12591</md:comment>
+        <md:caption>C. furca frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="7" format="#####0" id="col7.ds10623144" label="HelgolandRoads.27056" source="data" type="numeric">
+        <md:parameter id="col7.ds10623144.param78794" relatedTermIds="1062407,1062408">
+          <md:name>Ceratium fusus, fractionated</md:name>
+          <md:shortName>C. fusus frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109951</md:URI>
+        </md:parameter>
+        <md:method id="col7.ds10623144.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col7.ds10623144.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 15-30 &#181;m, hdl:10013/de.awi.planktonnet.image.12595</md:comment>
+        <md:caption>C. fusus frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="8" format="#####0" id="col8.ds10623145" label="HelgolandRoads.27057" source="data" type="numeric">
+        <md:parameter id="col8.ds10623145.param78795" relatedTermIds="1059373">
+          <md:name>Ceratium horridum, fractionated</md:name>
+          <md:shortName>C. horridum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109956</md:URI>
+        </md:parameter>
+        <md:method id="col8.ds10623145.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col8.ds10623145.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 30 &#181;m, hdl:10013/de.awi.planktonnet.image.12597</md:comment>
+        <md:caption>C. horridum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="9" format="#####0" id="col9.ds10623146" label="HelgolandRoads.27058" source="data" type="numeric">
+        <md:parameter id="col9.ds10623146.param78796" relatedTermIds="1062409,1062410">
+          <md:name>Ceratium lineatum, fractionated</md:name>
+          <md:shortName>C. lineatum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109963</md:URI>
+        </md:parameter>
+        <md:method id="col9.ds10623146.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col9.ds10623146.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 30 &#181;m, hdl:10013/de.awi.planktonnet.image.14216</md:comment>
+        <md:caption>C. lineatum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="10" format="#####0" id="col10.ds10623147" label="HelgolandRoads.27059" source="data" type="numeric">
+        <md:parameter id="col10.ds10623147.param78797" relatedTermIds="1034420,1130203">
+          <md:name>Ceratium longipes, fractionated</md:name>
+          <md:shortName>C. longipes frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109964</md:URI>
+        </md:parameter>
+        <md:method id="col10.ds10623147.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col10.ds10623147.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 50 &#181;m, hdl:10013/de.awi.planktonnet.image.12601</md:comment>
+        <md:caption>C. longipes frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="11" format="#####0" id="col11.ds10623148" label="HelgolandRoads.27060" source="data" type="numeric">
+        <md:parameter id="col11.ds10623148.param78798" relatedTermIds="1034424">
+          <md:name>Ceratium macroceros, fractionated</md:name>
+          <md:shortName>C. macroceros frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109967</md:URI>
+        </md:parameter>
+        <md:method id="col11.ds10623148.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col11.ds10623148.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 50 &#181;m, hdl:10013/de.awi.planktonnet.image.12602</md:comment>
+        <md:caption>C. macroceros frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="12" format="#####0" id="col12.ds10623149" label="HelgolandRoads.27061" source="data" type="numeric">
+        <md:parameter id="col12.ds10623149.param78799" relatedTermIds="1034425">
+          <md:name>Ceratium tripos, fractionated</md:name>
+          <md:shortName>C. tripos frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109982</md:URI>
+        </md:parameter>
+        <md:method id="col12.ds10623149.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col12.ds10623149.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 75 &#181;m, hdl:10013/de.awi.planktonnet.image.12604</md:comment>
+        <md:caption>C. tripos frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="13" format="#####0" id="col13.ds10623150" label="HelgolandRoads.27062" source="data" type="numeric">
+        <md:parameter id="col13.ds10623150.param78804" relatedTermIds="1051659">
+          <md:name>Dinophysis acuminata, fractionated</md:name>
+          <md:shortName>D. acuminata frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109603</md:URI>
+        </md:parameter>
+        <md:method id="col13.ds10623150.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col13.ds10623150.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.14233</md:comment>
+        <md:caption>D. acuminata frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="14" format="#####0" id="col14.ds10623151" label="HelgolandRoads.27063" source="data" type="numeric">
+        <md:parameter id="col14.ds10623151.param78805" relatedTermIds="1062411">
+          <md:name>Dinophysis acuta, fractionated</md:name>
+          <md:shortName>D. acuta frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109604</md:URI>
+        </md:parameter>
+        <md:method id="col14.ds10623151.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col14.ds10623151.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.12653</md:comment>
+        <md:caption>D. acuta frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="15" format="#####0" id="col15.ds10623152" label="HelgolandRoads.27064" source="data" type="numeric">
+        <md:parameter id="col15.ds10623152.param78806" relatedTermIds="1062413">
+          <md:name>Dinophysis norvegica, fractionated</md:name>
+          <md:shortName>D. norvegica frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109637</md:URI>
+        </md:parameter>
+        <md:method id="col15.ds10623152.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col15.ds10623152.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.12655</md:comment>
+        <md:caption>D. norvegica frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="16" format="#####0" id="col16.ds10623153" label="HelgolandRoads.27065" source="data" type="numeric">
+        <md:parameter id="col16.ds10623153.param78807" relatedTermIds="1060722">
+          <md:name>Dinophysis sp., fractionated</md:name>
+          <md:shortName>Dinophysis sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109462</md:URI>
+        </md:parameter>
+        <md:method id="col16.ds10623153.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col16.ds10623153.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown</md:comment>
+        <md:caption>Dinophysis sp. frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="17" format="#####0" id="col17.ds10623154" label="HelgolandRoads.27066" source="data" type="numeric">
+        <md:parameter id="col17.ds10623154.param30098" relatedTermIds="1063752">
+          <md:name>Gonyaulax sp.</md:name>
+          <md:shortName>Gonyaulax sp.</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Taxa, nanoplankton, absolute abundance</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109519</md:URI>
+        </md:parameter>
+        <md:method id="col17.ds10623154.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col17.ds10623154.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Gonyaulax sp. [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="18" format="#####0" id="col18.ds10623155" label="HelgolandRoads.27067" source="data" type="numeric">
+        <md:parameter id="col18.ds10623155.param56226" relatedTermIds="1065477,1065478">
+          <md:name>Gymnodinium mikimotoi</md:name>
+          <md:shortName>G. mikimotoi</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Biology, plankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109813</md:URI>
+        </md:parameter>
+        <md:method id="col18.ds10623155.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col18.ds10623155.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>G. mikimotoi [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="19" format="#####0" id="col19.ds10623156" label="HelgolandRoads.27068" source="data" type="numeric">
+        <md:parameter id="col19.ds10623156.param78809" relatedTermIds="1051283">
+          <md:name>Gymnodinium sp., fractionated</md:name>
+          <md:shortName>Gymnodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109475</md:URI>
+        </md:parameter>
+        <md:method id="col19.ds10623156.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col19.ds10623156.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Gymnodinium sp. frac [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="20" format="#####0" id="col20.ds10623157" label="HelgolandRoads.27069" source="data" type="numeric">
+        <md:parameter id="col20.ds10623157.param78809" relatedTermIds="1051283">
+          <md:name>Gymnodinium sp., fractionated</md:name>
+          <md:shortName>Gymnodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109475</md:URI>
+        </md:parameter>
+        <md:method id="col20.ds10623157.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col20.ds10623157.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Gymnodinium sp. frac [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="21" format="#####0" id="col21.ds10623158" label="HelgolandRoads.27070" source="data" type="numeric">
+        <md:parameter id="col21.ds10623158.param78809" relatedTermIds="1051283">
+          <md:name>Gymnodinium sp., fractionated</md:name>
+          <md:shortName>Gymnodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109475</md:URI>
+        </md:parameter>
+        <md:method id="col21.ds10623158.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col21.ds10623158.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 3, size unknown</md:comment>
+        <md:caption>Gymnodinium sp. frac [#/l] (class 3, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="22" format="#####0" id="col22.ds10623159" label="HelgolandRoads.27071" source="data" type="numeric">
+        <md:parameter id="col22.ds10623159.param78809" relatedTermIds="1051283">
+          <md:name>Gymnodinium sp., fractionated</md:name>
+          <md:shortName>Gymnodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109475</md:URI>
+        </md:parameter>
+        <md:method id="col22.ds10623159.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col22.ds10623159.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 4, size unknown</md:comment>
+        <md:caption>Gymnodinium sp. frac [#/l] (class 4, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="23" format="#####0" id="col23.ds10623160" label="HelgolandRoads.27072" source="data" type="numeric">
+        <md:parameter id="col23.ds10623160.param8780" relatedTermIds="1051283">
+          <md:name>Gymnodinium sp.</md:name>
+          <md:shortName>Gymnodinium sp.</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109475</md:URI>
+        </md:parameter>
+        <md:method id="col23.ds10623160.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col23.ds10623160.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Gymnodinium sp. [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="24" format="#####0" id="col24.ds10623161" label="HelgolandRoads.27073" source="data" type="numeric">
+        <md:parameter id="col24.ds10623161.param78764" relatedTermIds="1062422">
+          <md:name>Gyrodinium sp., fractionated</md:name>
+          <md:shortName>Gyrodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109476</md:URI>
+        </md:parameter>
+        <md:method id="col24.ds10623161.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col24.ds10623161.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 3, size unknown</md:comment>
+        <md:caption>Gyrodinium sp. frac [#/l] (class 3, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="25" format="#####0" id="col25.ds10623162" label="HelgolandRoads.27074" source="data" type="numeric">
+        <md:parameter id="col25.ds10623162.param78764" relatedTermIds="1062422">
+          <md:name>Gyrodinium sp., fractionated</md:name>
+          <md:shortName>Gyrodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109476</md:URI>
+        </md:parameter>
+        <md:method id="col25.ds10623162.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col25.ds10623162.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 5, size unknown</md:comment>
+        <md:caption>Gyrodinium sp. frac [#/l] (class 5, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="26" format="#####0" id="col26.ds10623163" label="HelgolandRoads.27075" source="data" type="numeric">
+        <md:parameter id="col26.ds10623163.param78764" relatedTermIds="1062422">
+          <md:name>Gyrodinium sp., fractionated</md:name>
+          <md:shortName>Gyrodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109476</md:URI>
+        </md:parameter>
+        <md:method id="col26.ds10623163.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col26.ds10623163.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 6, size unknown</md:comment>
+        <md:caption>Gyrodinium sp. frac [#/l] (class 6, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="27" format="#####0" id="col27.ds10623164" label="HelgolandRoads.27076" source="data" type="numeric">
+        <md:parameter id="col27.ds10623164.param78764" relatedTermIds="1062422">
+          <md:name>Gyrodinium sp., fractionated</md:name>
+          <md:shortName>Gyrodinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109476</md:URI>
+        </md:parameter>
+        <md:method id="col27.ds10623164.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col27.ds10623164.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 8, size unknown</md:comment>
+        <md:caption>Gyrodinium sp. frac [#/l] (class 8, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="28" format="#####0" id="col28.ds10623165" label="HelgolandRoads.27077" source="data" type="numeric">
+        <md:parameter id="col28.ds10623165.param8786" relatedTermIds="1062422">
+          <md:name>Gyrodinium sp.</md:name>
+          <md:shortName>Gyrodinium sp.</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109476</md:URI>
+        </md:parameter>
+        <md:method id="col28.ds10623165.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col28.ds10623165.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Gyrodinium sp. [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="29" format="#####0" id="col29.ds10623166" label="HelgolandRoads.27078" source="data" type="numeric">
+        <md:parameter id="col29.ds10623166.param78782" relatedTermIds="1062424">
+          <md:name>Noctiluca scintillans, fractionated</md:name>
+          <md:shortName>N. scintillans frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109921</md:URI>
+        </md:parameter>
+        <md:method id="col29.ds10623166.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col29.ds10623166.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.14263</md:comment>
+        <md:caption>N. scintillans frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="30" format="#####0" id="col30.ds10623167" label="HelgolandRoads.27079" source="data" type="numeric">
+        <md:parameter id="col30.ds10623167.param78811" relatedTermIds="1065479">
+          <md:name>Phalacroma rotundatum, fractionated</md:name>
+          <md:shortName>P. rotundatum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=156505</md:URI>
+        </md:parameter>
+        <md:method id="col30.ds10623167.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col30.ds10623167.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.14249</md:comment>
+        <md:caption>P. rotundatum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="31" format="#####0" id="col31.ds10623168" label="HelgolandRoads.27080" source="data" type="numeric">
+        <md:parameter id="col31.ds10623168.param78812" relatedTermIds="1062296">
+          <md:name>Polykrikos sp., fractionated</md:name>
+          <md:shortName>Polykrikos sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109485</md:URI>
+        </md:parameter>
+        <md:method id="col31.ds10623168.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col31.ds10623168.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Polykrikos sp. frac [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="32" format="#####0" id="col32.ds10623169" label="HelgolandRoads.27081" source="data" type="numeric">
+        <md:parameter id="col32.ds10623169.param78812" relatedTermIds="1062296">
+          <md:name>Polykrikos sp., fractionated</md:name>
+          <md:shortName>Polykrikos sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109485</md:URI>
+        </md:parameter>
+        <md:method id="col32.ds10623169.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col32.ds10623169.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Polykrikos sp. frac [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="33" format="#####0" id="col33.ds10623170" label="HelgolandRoads.27082" source="data" type="numeric">
+        <md:parameter id="col33.ds10623170.param78812" relatedTermIds="1062296">
+          <md:name>Polykrikos sp., fractionated</md:name>
+          <md:shortName>Polykrikos sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109485</md:URI>
+        </md:parameter>
+        <md:method id="col33.ds10623170.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col33.ds10623170.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 45;80 &#181;m</md:comment>
+        <md:caption>Polykrikos sp. frac [#/l] (size: 45;80 &#181;m)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="34" format="#####0" id="col34.ds10623171" label="HelgolandRoads.27083" source="data" type="numeric">
+        <md:parameter id="col34.ds10623171.param78813" relatedTermIds="1049906">
+          <md:name>Prorocentrum balticum, fractionated</md:name>
+          <md:shortName>P. balticum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110293</md:URI>
+        </md:parameter>
+        <md:method id="col34.ds10623171.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col34.ds10623171.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.12730</md:comment>
+        <md:caption>P. balticum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="35" format="#####0" id="col35.ds10623172" label="HelgolandRoads.27084" source="data" type="numeric">
+        <md:parameter id="col35.ds10623172.param78814" relatedTermIds="1062425">
+          <md:name>Prorocentrum micans, fractionated</md:name>
+          <md:shortName>P. micans frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110303</md:URI>
+        </md:parameter>
+        <md:method id="col35.ds10623172.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col35.ds10623172.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 30;50 &#181;m, hdl:10013/de.awi.planktonnet.image.12732</md:comment>
+        <md:caption>P. micans frac [#/l] (size: 30;50 &#181;m, hdl:10013/de....)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="36" format="#####0" id="col36.ds10623173" label="HelgolandRoads.27085" source="data" type="numeric">
+        <md:parameter id="col36.ds10623173.param78814" relatedTermIds="1062425">
+          <md:name>Prorocentrum micans, fractionated</md:name>
+          <md:shortName>P. micans frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110303</md:URI>
+        </md:parameter>
+        <md:method id="col36.ds10623173.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col36.ds10623173.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 45;70 &#181;m, hdl:10013/de.awi.planktonnet.image.12732</md:comment>
+        <md:caption>P. micans frac [#/l] (size: 45;70 &#181;m, hdl:10013/de....)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="37" format="#####0" id="col37.ds10623174" label="HelgolandRoads.27086" source="data" type="numeric">
+        <md:parameter id="col37.ds10623174.param8797" relatedTermIds="1062425">
+          <md:name>Prorocentrum micans</md:name>
+          <md:shortName>P. micans</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110303</md:URI>
+        </md:parameter>
+        <md:method id="col37.ds10623174.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col37.ds10623174.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>hdl:10013/de.awi.planktonnet.image.12733</md:comment>
+        <md:caption>P. micans [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="38" format="#####0" id="col38.ds10623175" label="HelgolandRoads.27087" source="data" type="numeric">
+        <md:parameter id="col38.ds10623175.param8798" relatedTermIds="1062426">
+          <md:name>Protoperidinium brevipes</md:name>
+          <md:shortName>P. brevipes</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110210</md:URI>
+        </md:parameter>
+        <md:method id="col38.ds10623175.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col38.ds10623175.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>hdl:10013/de.awi.planktonnet.image.13363</md:comment>
+        <md:caption>P. brevipes [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="39" format="#####0" id="col39.ds10623176" label="HelgolandRoads.27088" source="data" type="numeric">
+        <md:parameter id="col39.ds10623176.param8799" relatedTermIds="1062428">
+          <md:name>Protoperidinium claudicans</md:name>
+          <md:shortName>P. claudicans</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=163862</md:URI>
+        </md:parameter>
+        <md:method id="col39.ds10623176.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col39.ds10623176.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>hdl:10013/de.awi.planktonnet.image.14289</md:comment>
+        <md:caption>P. claudicans [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="40" format="#####0" id="col40.ds10623177" label="HelgolandRoads.27089" source="data" type="numeric">
+        <md:parameter id="col40.ds10623177.param8800" relatedTermIds="1051660">
+          <md:name>Protoperidinium conicum</md:name>
+          <md:shortName>P. conicum</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110213</md:URI>
+        </md:parameter>
+        <md:method id="col40.ds10623177.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col40.ds10623177.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>hdl:10013/de.awi.planktonnet.image.14450</md:comment>
+        <md:caption>P. conicum [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="41" format="#####0" id="col41.ds10623178" label="HelgolandRoads.27090" source="data" type="numeric">
+        <md:parameter id="col41.ds10623178.param78815" relatedTermIds="1051301">
+          <md:name>Protoperidinium depressum, fractionated</md:name>
+          <md:shortName>P. depressum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110217</md:URI>
+        </md:parameter>
+        <md:method id="col41.ds10623178.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col41.ds10623178.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 150 &#181;m, hdl:10013/de.awi.planktonnet.image.12748</md:comment>
+        <md:caption>P. depressum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="42" format="#####0" id="col42.ds10623179" label="HelgolandRoads.27091" source="data" type="numeric">
+        <md:parameter id="col42.ds10623179.param78816" relatedTermIds="1062429">
+          <md:name>Protoperidinium divergens, fractionated</md:name>
+          <md:shortName>P. divergens frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110219</md:URI>
+        </md:parameter>
+        <md:method id="col42.ds10623179.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col42.ds10623179.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.13368</md:comment>
+        <md:caption>P. divergens frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="43" format="#####0" id="col43.ds10623180" label="HelgolandRoads.27092" source="data" type="numeric">
+        <md:parameter id="col43.ds10623180.param78817" relatedTermIds="1062430">
+          <md:name>Protoperidinium ovatum, fractionated</md:name>
+          <md:shortName>P. ovatum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110241</md:URI>
+        </md:parameter>
+        <md:method id="col43.ds10623180.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col43.ds10623180.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.12752</md:comment>
+        <md:caption>P. ovatum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="44" format="#####0" id="col44.ds10623181" label="HelgolandRoads.27093" source="data" type="numeric">
+        <md:parameter id="col44.ds10623181.param78818" relatedTermIds="1051663">
+          <md:name>Protoperidinium pellucidum, fractionated</md:name>
+          <md:shortName>P. pellucidum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110245</md:URI>
+        </md:parameter>
+        <md:method id="col44.ds10623181.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col44.ds10623181.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.12757</md:comment>
+        <md:caption>P. pellucidum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="45" format="#####0" id="col45.ds10623182" label="HelgolandRoads.27094" source="data" type="numeric">
+        <md:parameter id="col45.ds10623182.param8805" relatedTermIds="1062431">
+          <md:name>Protoperidinium punctulatum</md:name>
+          <md:shortName>P. punctulatum</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110248</md:URI>
+        </md:parameter>
+        <md:method id="col45.ds10623182.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col45.ds10623182.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>hdl:10013/de.awi.planktonnet.image.14329</md:comment>
+        <md:caption>P. punctulatum [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="46" format="#####0" id="col46.ds10623183" label="HelgolandRoads.27095" source="data" type="numeric">
+        <md:parameter id="col46.ds10623183.param78819" relatedTermIds="1051303">
+          <md:name>Protoperidinium sp., fractionated</md:name>
+          <md:shortName>Protoperidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109553</md:URI>
+        </md:parameter>
+        <md:method id="col46.ds10623183.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col46.ds10623183.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 25 &#181;m</md:comment>
+        <md:caption>Protoperidinium sp. frac [#/l] (size: 25 &#181;m)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="47" format="#####0" id="col47.ds10623184" label="HelgolandRoads.27096" source="data" type="numeric">
+        <md:parameter id="col47.ds10623184.param78819" relatedTermIds="1051303">
+          <md:name>Protoperidinium sp., fractionated</md:name>
+          <md:shortName>Protoperidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109553</md:URI>
+        </md:parameter>
+        <md:method id="col47.ds10623184.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col47.ds10623184.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 35 &#181;m</md:comment>
+        <md:caption>Protoperidinium sp. frac [#/l] (size: 35 &#181;m)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="48" format="#####0" id="col48.ds10623185" label="HelgolandRoads.27097" source="data" type="numeric">
+        <md:parameter id="col48.ds10623185.param78819" relatedTermIds="1051303">
+          <md:name>Protoperidinium sp., fractionated</md:name>
+          <md:shortName>Protoperidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109553</md:URI>
+        </md:parameter>
+        <md:method id="col48.ds10623185.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col48.ds10623185.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 45 &#181;m</md:comment>
+        <md:caption>Protoperidinium sp. frac [#/l] (size: 45 &#181;m)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="49" format="#####0" id="col49.ds10623186" label="HelgolandRoads.27098" source="data" type="numeric">
+        <md:parameter id="col49.ds10623186.param78819" relatedTermIds="1051303">
+          <md:name>Protoperidinium sp., fractionated</md:name>
+          <md:shortName>Protoperidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109553</md:URI>
+        </md:parameter>
+        <md:method id="col49.ds10623186.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col49.ds10623186.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 60 &#181;m</md:comment>
+        <md:caption>Protoperidinium sp. frac [#/l] (size: 60 &#181;m)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="50" format="#####0" id="col50.ds10623187" label="HelgolandRoads.27099" source="data" type="numeric">
+        <md:parameter id="col50.ds10623187.param78819" relatedTermIds="1051303">
+          <md:name>Protoperidinium sp., fractionated</md:name>
+          <md:shortName>Protoperidinium sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109553</md:URI>
+        </md:parameter>
+        <md:method id="col50.ds10623187.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col50.ds10623187.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 80 &#181;m</md:comment>
+        <md:caption>Protoperidinium sp. frac [#/l] (size: 80 &#181;m)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="51" format="#####0" id="col51.ds10623188" label="HelgolandRoads.27100" source="data" type="numeric">
+        <md:parameter id="col51.ds10623188.param8811" relatedTermIds="1051303">
+          <md:name>Protoperidinium sp.</md:name>
+          <md:shortName>Protoperidinium sp.</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109553</md:URI>
+        </md:parameter>
+        <md:method id="col51.ds10623188.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col51.ds10623188.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Protoperidinium sp. [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="52" format="#####0" id="col52.ds10623189" label="HelgolandRoads.27101" source="data" type="numeric">
+        <md:parameter id="col52.ds10623189.param78820" relatedTermIds="1062415">
+          <md:name>Pyrocystis noctiluca, fractionated</md:name>
+          <md:shortName>P. noctiluca frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110332</md:URI>
+        </md:parameter>
+        <md:method id="col52.ds10623189.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col52.ds10623189.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 20;120 &#181;m</md:comment>
+        <md:caption>P. noctiluca frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="53" format="#####0" id="col53.ds10623190" label="HelgolandRoads.27102" source="data" type="numeric">
+        <md:parameter id="col53.ds10623190.param50632" relatedTermIds="1063776">
+          <md:name>Pyrophacus sp.</md:name>
+          <md:shortName>Pyrophacus sp.</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Taxa, dinoflagellates, absolute abundance</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109555</md:URI>
+        </md:parameter>
+        <md:method id="col53.ds10623190.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col53.ds10623190.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Pyrophacus sp. [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="54" format="#####0" id="col54.ds10623191" label="HelgolandRoads.27103" source="data" type="numeric">
+        <md:parameter id="col54.ds10623191.param8813" relatedTermIds="1049910">
+          <md:name>Scrippsiella trochoidea</md:name>
+          <md:shortName>S. trochoidea</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=110172</md:URI>
+        </md:parameter>
+        <md:method id="col54.ds10623191.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col54.ds10623191.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>S. trochoidea [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="55" format="#####0" id="col55.ds10623192" label="HelgolandRoads.27104" source="data" type="numeric">
+        <md:parameter id="col55.ds10623192.param78821" relatedTermIds="1062433">
+          <md:name>Torodinium robustum, fractionated</md:name>
+          <md:shortName>T. robustum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=109889</md:URI>
+        </md:parameter>
+        <md:method id="col55.ds10623192.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col55.ds10623192.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size unknown, hdl:10013/de.awi.planktonnet.image.13384</md:comment>
+        <md:caption>T. robustum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="56" format="#####0" id="col56.ds10623193" label="HelgolandRoads.27105" source="data" type="numeric">
+        <md:parameter id="col56.ds10623193.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col56.ds10623193.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col56.ds10623193.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="57" format="#####0" id="col57.ds10623194" label="HelgolandRoads.27106" source="data" type="numeric">
+        <md:parameter id="col57.ds10623194.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col57.ds10623194.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col57.ds10623194.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="58" format="#####0" id="col58.ds10623195" label="HelgolandRoads.27107" source="data" type="numeric">
+        <md:parameter id="col58.ds10623195.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col58.ds10623195.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col58.ds10623195.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 3, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 3, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="59" format="#####0" id="col59.ds10623196" label="HelgolandRoads.27108" source="data" type="numeric">
+        <md:parameter id="col59.ds10623196.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col59.ds10623196.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col59.ds10623196.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 4, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 4, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="60" format="#####0" id="col60.ds10623197" label="HelgolandRoads.27109" source="data" type="numeric">
+        <md:parameter id="col60.ds10623197.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col60.ds10623197.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col60.ds10623197.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 5, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 5, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="61" format="#####0" id="col61.ds10623198" label="HelgolandRoads.27110" source="data" type="numeric">
+        <md:parameter id="col61.ds10623198.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col61.ds10623198.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col61.ds10623198.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 6, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 6, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="62" format="#####0" id="col62.ds10623199" label="HelgolandRoads.27111" source="data" type="numeric">
+        <md:parameter id="col62.ds10623199.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col62.ds10623199.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col62.ds10623199.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 7, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 7, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="63" format="#####0" id="col63.ds10623200" label="HelgolandRoads.27112" source="data" type="numeric">
+        <md:parameter id="col63.ds10623200.param78803" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round, fractionated</md:name>
+          <md:shortName>Dinophy indet round fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col63.ds10623200.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col63.ds10623200.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 8, size unknown</md:comment>
+        <md:caption>Dinophy indet round fract [#/l] (class 8, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="64" format="#####0" id="col64.ds10623201" label="HelgolandRoads.27113" source="data" type="numeric">
+        <md:parameter id="col64.ds10623201.param56225" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata round</md:name>
+          <md:shortName>Dinophy indet round</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Biology, plankton</md:group>
+        </md:parameter>
+        <md:method id="col64.ds10623201.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col64.ds10623201.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Dinophy indet round [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="65" format="#####0" id="col65.ds10623202" label="HelgolandRoads.27114" source="data" type="numeric">
+        <md:parameter id="col65.ds10623202.param78802" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata flat, fractionated</md:name>
+          <md:shortName>Dinophy indet flat fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col65.ds10623202.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col65.ds10623202.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Dinophy indet flat fract [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="66" format="#####0" id="col66.ds10623203" label="HelgolandRoads.27115" source="data" type="numeric">
+        <md:parameter id="col66.ds10623203.param78802" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata flat, fractionated</md:name>
+          <md:shortName>Dinophy indet flat fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col66.ds10623203.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col66.ds10623203.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Dinophy indet flat fract [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="67" format="#####0" id="col67.ds10623204" label="HelgolandRoads.27116" source="data" type="numeric">
+        <md:parameter id="col67.ds10623204.param78802" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata flat, fractionated</md:name>
+          <md:shortName>Dinophy indet flat fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col67.ds10623204.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col67.ds10623204.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 3, size unknown</md:comment>
+        <md:caption>Dinophy indet flat fract [#/l] (class 3, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="68" format="#####0" id="col68.ds10623205" label="HelgolandRoads.27117" source="data" type="numeric">
+        <md:parameter id="col68.ds10623205.param78802" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata flat, fractionated</md:name>
+          <md:shortName>Dinophy indet flat fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col68.ds10623205.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col68.ds10623205.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 4, size unknown</md:comment>
+        <md:caption>Dinophy indet flat fract [#/l] (class 4, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="69" format="#####0" id="col69.ds10623206" label="HelgolandRoads.27118" source="data" type="numeric">
+        <md:parameter id="col69.ds10623206.param78802" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata flat, fractionated</md:name>
+          <md:shortName>Dinophy indet flat fract</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+        </md:parameter>
+        <md:method id="col69.ds10623206.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col69.ds10623206.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 5, size unknown</md:comment>
+        <md:caption>Dinophy indet flat fract [#/l] (class 5, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="70" format="#####0" id="col70.ds10623207" label="HelgolandRoads.27119" source="data" type="numeric">
+        <md:parameter id="col70.ds10623207.param56224" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata flat</md:name>
+          <md:shortName>Dinophy indet flat</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Biology, plankton</md:group>
+        </md:parameter>
+        <md:method id="col70.ds10623207.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col70.ds10623207.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Dinophy indet flat [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="71" format="#####0" id="col71.ds10623208" label="HelgolandRoads.27120" source="data" type="numeric">
+        <md:parameter id="col71.ds10623208.param56223" relatedTermIds="1058811">
+          <md:name>Dinophyceae indeterminata</md:name>
+          <md:shortName>Dinophy indet</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Biology, plankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=19542</md:URI>
+        </md:parameter>
+        <md:method id="col71.ds10623208.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col71.ds10623208.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Dinophy indet [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="72" format="#####0" id="col72.ds10623209" label="HelgolandRoads.27121" source="data" type="numeric">
+        <md:parameter id="col72.ds10623209.param78801" relatedTermIds="1051073">
+          <md:name>Dictyocha speculum, fractionated</md:name>
+          <md:shortName>D. speculum frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=157260</md:URI>
+        </md:parameter>
+        <md:method id="col72.ds10623209.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col72.ds10623209.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 25 &#181;m, hdl:10013/de.awi.planktonnet.image.14232</md:comment>
+        <md:caption>D. speculum frac [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="73" format="#####0" id="col73.ds10623210" label="HelgolandRoads.27122" source="data" type="numeric">
+        <md:parameter id="col73.ds10623210.param78800">
+          <md:name>Coccolithophoridae indeterminata, fractionated</md:name>
+          <md:shortName>Coccolith indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Taxa, nanoplankton, absolute abundance</md:group>
+        </md:parameter>
+        <md:method id="col73.ds10623210.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col73.ds10623210.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Coccolith indet frac [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="74" format="#####0" id="col74.ds10623211" label="HelgolandRoads.27123" source="data" type="numeric">
+        <md:parameter id="col74.ds10623211.param78800">
+          <md:name>Coccolithophoridae indeterminata, fractionated</md:name>
+          <md:shortName>Coccolith indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Taxa, nanoplankton, absolute abundance</md:group>
+        </md:parameter>
+        <md:method id="col74.ds10623211.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col74.ds10623211.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Coccolith indet frac [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="75" format="#####0" id="col75.ds10623212" label="HelgolandRoads.27124" source="data" type="numeric">
+        <md:parameter id="col75.ds10623212.param56221">
+          <md:name>Coccolithophoridae indeterminata</md:name>
+          <md:shortName>Coccolith indet</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Taxa, nanoplankton, absolute abundance</md:group>
+        </md:parameter>
+        <md:method id="col75.ds10623212.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col75.ds10623212.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Coccolith indet [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="76" format="#####0" id="col76.ds10623213" label="HelgolandRoads.27125" source="data" type="numeric">
+        <md:parameter id="col76.ds10623213.param78810" relatedTermIds="1058624">
+          <md:name>Phaeocystis sp., fractionated</md:name>
+          <md:shortName>Phaeocystis sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=115088</md:URI>
+        </md:parameter>
+        <md:method id="col76.ds10623213.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col76.ds10623213.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Phaeocystis sp. frac [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="77" format="#####0" id="col77.ds10623214" label="HelgolandRoads.27126" source="data" type="numeric">
+        <md:parameter id="col77.ds10623214.param78810" relatedTermIds="1058624">
+          <md:name>Phaeocystis sp., fractionated</md:name>
+          <md:shortName>Phaeocystis sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=115088</md:URI>
+        </md:parameter>
+        <md:method id="col77.ds10623214.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col77.ds10623214.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Phaeocystis sp. frac [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="78" format="#####0" id="col78.ds10623215" label="HelgolandRoads.27127" source="data" type="numeric">
+        <md:parameter id="col78.ds10623215.param78810" relatedTermIds="1058624">
+          <md:name>Phaeocystis sp., fractionated</md:name>
+          <md:shortName>Phaeocystis sp. frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=115088</md:URI>
+        </md:parameter>
+        <md:method id="col78.ds10623215.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col78.ds10623215.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>size: 10 &#181;m</md:comment>
+        <md:caption>Phaeocystis sp. frac [#/l] (size: 10 &#181;m)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="79" format="#####0" id="col79.ds10623216" label="HelgolandRoads.27128" source="data" type="numeric">
+        <md:parameter id="col79.ds10623216.param78808" relatedTermIds="1052350">
+          <md:name>Flagellates indeterminata, fractionated</md:name>
+          <md:shortName>Flag indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=146222</md:URI>
+        </md:parameter>
+        <md:method id="col79.ds10623216.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col79.ds10623216.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 1, size unknown</md:comment>
+        <md:caption>Flag indet frac [#/l] (class 1, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="80" format="#####0" id="col80.ds10623217" label="HelgolandRoads.27129" source="data" type="numeric">
+        <md:parameter id="col80.ds10623217.param78808" relatedTermIds="1052350">
+          <md:name>Flagellates indeterminata, fractionated</md:name>
+          <md:shortName>Flag indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=146222</md:URI>
+        </md:parameter>
+        <md:method id="col80.ds10623217.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col80.ds10623217.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 2, size unknown</md:comment>
+        <md:caption>Flag indet frac [#/l] (class 2, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="81" format="#####0" id="col81.ds10623218" label="HelgolandRoads.27130" source="data" type="numeric">
+        <md:parameter id="col81.ds10623218.param78808" relatedTermIds="1052350">
+          <md:name>Flagellates indeterminata, fractionated</md:name>
+          <md:shortName>Flag indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=146222</md:URI>
+        </md:parameter>
+        <md:method id="col81.ds10623218.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col81.ds10623218.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 4, size unknown</md:comment>
+        <md:caption>Flag indet frac [#/l] (class 4, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="82" format="#####0" id="col82.ds10623219" label="HelgolandRoads.27131" source="data" type="numeric">
+        <md:parameter id="col82.ds10623219.param78808" relatedTermIds="1052350">
+          <md:name>Flagellates indeterminata, fractionated</md:name>
+          <md:shortName>Flag indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=146222</md:URI>
+        </md:parameter>
+        <md:method id="col82.ds10623219.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col82.ds10623219.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 5, size unknown</md:comment>
+        <md:caption>Flag indet frac [#/l] (class 5, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="83" format="#####0" id="col83.ds10623220" label="HelgolandRoads.27132" source="data" type="numeric">
+        <md:parameter id="col83.ds10623220.param78808" relatedTermIds="1052350">
+          <md:name>Flagellates indeterminata, fractionated</md:name>
+          <md:shortName>Flag indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=146222</md:URI>
+        </md:parameter>
+        <md:method id="col83.ds10623220.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col83.ds10623220.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 7, size unknown</md:comment>
+        <md:caption>Flag indet frac [#/l] (class 7, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="84" format="#####0" id="col84.ds10623221" label="HelgolandRoads.27133" source="data" type="numeric">
+        <md:parameter id="col84.ds10623221.param78808" relatedTermIds="1052350">
+          <md:name>Flagellates indeterminata, fractionated</md:name>
+          <md:shortName>Flag indet frac</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Microplankton</md:group>
+          <md:URI>http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=146222</md:URI>
+        </md:parameter>
+        <md:method id="col84.ds10623221.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col84.ds10623221.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:comment>class 8, size unknown</md:comment>
+        <md:caption>Flag indet frac [#/l] (class 8, size unknown)</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="85" format="#####0" id="col85.ds10623222" label="HelgolandRoads.27134" source="data" type="numeric">
+        <md:parameter id="col85.ds10623222.param8772" relatedTermIds="1052350,1052351">
+          <md:name>Flagellates indeterminata</md:name>
+          <md:shortName>Flag indet</md:shortName>
+          <md:unit>#/l</md:unit>
+          <md:group>Flagellates</md:group>
+        </md:parameter>
+        <md:method id="col85.ds10623222.method297">
+          <md:name>Quantitative phytoplankton method (Uterm&#246;hl, 1958)</md:name>
+        </md:method>
+        <md:PI id="col85.ds10623222.pi20311">
+          <md:lastName>Wiltshire</md:lastName>
+          <md:firstName>Karen Helen</md:firstName>
+          <md:eMail>Karen.Wiltshire@awi.de</md:eMail>
+          <md:URI>http://www.awi.de/en/about-us/organisation/staff/karen-helen-wiltshire.html</md:URI>
+          <md:orcid>0000-0002-7148-0529</md:orcid>
+        </md:PI>
+        <md:caption>Flag indet [#/l]</md:caption>
+      </md:matrixColumn>
+      <md:keywords>
+        <md:techKeyword id="keywords.term27" type="fromDatabase">BAH1962</md:techKeyword>
+        <md:techKeyword type="autoGenerated">author20311</md:techKeyword>
+        <md:techKeyword type="autoGenerated">basis554</md:techKeyword>
+        <md:techKeyword type="autoGenerated">campaign21302</md:techKeyword>
+        <md:techKeyword type="autoGenerated">event2023591</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1599</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1600</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1601</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1619</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode8128</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method297</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param30098</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param50632</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param56221</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param56223</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param56224</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param56225</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param56226</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78764</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78782</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78792</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78793</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78794</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78795</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78796</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78797</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78798</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78799</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78800</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78801</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78802</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78803</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78804</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78805</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78806</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78807</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78808</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78809</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78810</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78811</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78812</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78813</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78814</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78815</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78816</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78817</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78818</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78819</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78820</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param78821</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8728</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8772</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8780</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8786</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8797</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8798</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8799</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8800</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8805</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8811</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param8813</md:techKeyword>
+        <md:techKeyword type="autoGenerated">pi20311</md:techKeyword>
+        <md:techKeyword type="autoGenerated">project4097</md:techKeyword>
+        <md:techKeyword type="autoGenerated">project71</md:techKeyword>
+        <md:techKeyword type="autoGenerated">ref39746</md:techKeyword>
+        <md:techKeyword type="autoGenerated">sourceinst32</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term19809</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term21089</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term27</md:techKeyword>
+        <md:techKeyword type="autoGenerated">topotype8</md:techKeyword>
+      </md:keywords>
+      <md:technicalInfo>
+        <md:entry key="xmlLastModified" value="2018-04-03T09:02:52Z"/>
+        <md:entry key="filename" value="HelgolandRoads_dinofl_dictyochophy_prymnesiophy_abund_1962"/>
+        <md:entry key="mimeType" value="text/tab-separated-values"/>
+        <md:entry key="status" value="published"/>
+        <md:entry key="status_num" value="4"/>
+        <md:entry key="DOIRegistryStatus" value="registered"/>
+        <md:entry key="DOIRegistryStatus_num" value="4"/>
+        <md:entry key="loginOption" value="access rights needed"/>
+        <md:entry key="loginOption_num" value="3"/>
+      </md:technicalInfo>
+    </md:MetaData>
+  </metadata>
+</record>

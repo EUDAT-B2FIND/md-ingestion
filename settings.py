@@ -17,6 +17,8 @@ def init():
     # check the version from :
     global B2FINDVersion
     B2FINDVersion = '2.4.0'
+    global CKANVersion
+    CKANVersion = '2.7.3'
     global TimeStart
     TimeStart = time.time()
     

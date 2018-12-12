@@ -37,7 +37,7 @@
       <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
     </field>
     <field name="Contributor">
-      <string>DEIMS-SDR Site and Dataset registry deims.org</string>
+      <string>'DEIMS-SDR Site and Dataset registry deims.org'</string>
     </field>
     <field name="PublicationYear">
       <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date</xpath>
