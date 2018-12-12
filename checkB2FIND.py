@@ -21,16 +21,7 @@ import argparse
 import timeout_decorator
 import socket
 import json, pprint
-
-PY2 = sys.version_info[0] == 2
-if PY2:
-    from urllib import quote
-    from urllib2 import urlopen, Request
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib import parse
-    from urllib.request import urlopen, Request
-    from urllib.error import HTTPError,URLError
+import requests
 
 def check_url(url):
     # Checks and validates a url via urllib module
@@ -47,16 +38,12 @@ def check_url(url):
     resplen='--'
     try:
         start=time.time()
-        request = Request(url)
-        if (urlopen(request, timeout=1).getcode() < 501):
+        response=requests.get(url,timeout=1)
+        if(response.status_code<501):    
             msg='[OK]'
             retcode=0
         rta=time.time()-start
         
-    except URLError as e:
-        ## msg="    %s and %s" % (e,traceback.format_exc())
-        msg="    [URLError] %s" % e
-        retcode = 2    #catched
     except socket.timeout as e:
         msg="    [Socket Timeout] %s" % e
         retcode = 2    #catched
@@ -90,23 +77,16 @@ def check_ckan_action(actionreq,data,rows):
     rta=0
     try:
         start=time.time()
-##HEW-D        request = Request(actionreq)
-        if data :
-            if PY2 :
-                data_string = quote(json.dumps(data))
-            else :
-                data_string = parse.quote(json.dumps(data)).encode('utf-8')
-            request = Request(actionreq,data_string)
-            response = urlopen(request)
-        else :
-            request = Request(actionreq)
-            response = urlopen(request)
+        ##HEW-T print('actionreq %s' % actionreq)
+        ##HEW-T print('data %s' % data)
+        data_string=json.dumps(data).encode('utf8')
+        response = requests.get(actionreq,params = data) ## _string)
+        ##HEW-T print('response %s' % response)            
+        result=response.json()['result']
+        ##records= json.loads(response.read())##['result']
+        ##print('records %s' % records[:10])
         rta=time.time()-start
 
-
-    except URLError as e:
-        msg = " [URLERROR] %s " % e
-        retcode = 2
     except socket.timeout as e:
         msg = " [TIMEOUT] %s " % e
         retcode = 2
@@ -122,28 +102,18 @@ def check_ckan_action(actionreq,data,rows):
     else:
         msg = '[OK]'
         retcode = 0
-        assert response.code == 200
-        ###print('response %s' % response.read()) 
-        if PY2 :
-            response_dict = json.loads(response.read())
-        else:
-            response_dict = response.read()
+        assert response.status_code == 200
 
-        # Check the contents of the response.
-        if type(response_dict) is dict and 'success' in response_dict :
-            assert response_dict['success'] is True
-        ## print('response.code %s' % response.code)
-        if type(response_dict) is dict and 'result' in response_dict :
-            result = response_dict['result']
-            if actionreq.endswith('group_show') :
-                resplen=result['package_count']
-            else:
-                resplen=len(result)
+        if actionreq.endswith('group_show') :
+            resplen=result['package_count']
+        else:
+            resplen=len(result)
+        print('resplen %s' % resplen) 
     return (retcode,msg,resplen,rta)
 
 def main():
-    B2FIND_version='2.2'
-    CKAN_version='2.2'
+    B2FIND_version='2.4'
+    CKAN_version='2.7'
 
     ## Get options and arguments
     args = get_args()
@@ -191,7 +161,7 @@ def checkProbes(args):
 
         else:
             if probe == 'ListDatasets' :
-                action='dataset_list'
+                action='package_list'
             elif probe == 'ListCommunities' :
                 action='group_list'
             elif probe == 'ShowGroupENES' :
