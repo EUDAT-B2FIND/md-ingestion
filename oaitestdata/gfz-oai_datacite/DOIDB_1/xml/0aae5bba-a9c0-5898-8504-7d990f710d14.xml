@@ -1,0 +1,48 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:4964</identifier>
+    <datestamp>2014-04-02T15:01:53Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.GEOFON</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>2.2</schemaVersion>
+      <datacentreSymbol>DOIDB.GEOFON</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.2 http://schema.datacite.org/meta/kernel-2.2/metadata.xsd">
+          <identifier identifierType="DOI">10.5880/GEOFON.gfz2014bcyf</identifier>
+          <creators>
+            <creator>
+              <creatorName>geofon operator</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>GEOFON event gfz2014bcyf (Bouvet Island Region; Magnitude 5.3)</title>
+          </titles>
+          <publisher>Deutsches GeoForschungsZentrum GFZ</publisher>
+          <publicationYear>2012</publicationYear>
+          <contributors>
+            <contributor contributorType="HostingInstitution">
+              <contributorName>Deutsches GeoForschungsZentrum GFZ</contributorName>
+            </contributor>
+          </contributors>
+          <dates>
+            <date dateType="Issued">2014-01-16</date>
+            <date dateType="Created">2014-01-16</date>
+            <date dateType="Accepted">2014-01-16</date>
+          </dates>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset"/>
+          <formats>
+            <format>text/tab-separated-values</format>
+          </formats>
+          <descriptions>
+            <description descriptionType="Abstract">Earthquake, 2014-01-16 20:02:46, Bouvet Island Region</description>
+          </descriptions>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

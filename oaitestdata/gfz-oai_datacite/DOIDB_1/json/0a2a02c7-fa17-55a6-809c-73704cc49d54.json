@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "Contributor": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5880/GEOFON.gfz2010eujm",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:3676",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:3676"
+    ],
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Deutsches GeoForschungsZentrum GFZ"
+    ],
+    "TemporalCoverage": [
+        "2010-10-27",
+        "2010-03-10",
+        "2010-10-27"
+    ],
+    "author": [
+        "geofon operator"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:3676;2013-09-18T14:41:08Z;DOIDB;DOIDB.GEOFON;false;2.2;DOIDB.GEOFON;10.5880/GEOFON.gfz2010eujm;geofon operator;GEOFON event gfz2010eujm (Near Coast of Central Chile; Magnitude 5.3);Deutsches GeoForschungsZentrum GFZ;2012;Deutsches GeoForschungsZentrum GFZ;2010-10-27;2010-03-10;2010-10-27;eng;text/tab-separated-values;Earthquake, 2010-03-10 02:41:47, Near Coast of Central Chile",
+    "group": "gfz",
+    "groups": [
+        {
+            "name": "gfz"
+        }
+    ],
+    "name": "0a2a02c7-fa17-55a6-809c-73704cc49d54",
+    "notes": [
+        "Earthquake, 2010-03-10 02:41:47, Near Coast of Central Chile"
+    ],
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:3676"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.GEOFON"
+    ],
+    "state": "active",
+    "title": [
+        "GEOFON event gfz2010eujm (Near Coast of Central Chile; Magnitude 5.3)"
+    ],
+    "url": ""
+}

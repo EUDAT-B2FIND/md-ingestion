@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for ISO19139 format metadata from ANAEE. -->
+  <!-- Mappings for ISO19139 format metadata from PANGAEA. -->
   <namespaces>
     <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
@@ -22,29 +22,29 @@
     </field>
     <!-- Access data  -->
     <field name="url">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString, //gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL, //gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString</xpath>
    </field>
    <field name="Checksum">
    </field>
    <field name="Rights">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useLimitation/gco:CharacterString</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString</xpath>
    </field>
    <!-- Provenance data -->
     <field name="Discipline">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString</xpath>
+      <string>Earth System Research</string>
     </field>
     <field name="author">
-      <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:DateTime</xpath>
     </field>
     <!-- Formal data -->
     <field name="Language">
-      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gco:CharacterString</xpath>
+      <xpath>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gmd:LanguageCode/text()</xpath>
    </field>
     <field name="SpatialCoverage">
       <xpath>//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()</xpath>
@@ -52,11 +52,10 @@
    <field name="TemporalCoverage">
       <xpath>//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text(),//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition/text()</xpath>
     </field>
-    <field name="ResourceType">
-      <xpath>>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileType/gco:CharacterString</xpath>
-    </field>
     <field name="Format">
-      <xpath>//gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString</xpath>
+      <xpath>//gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString/text()</xpath>
+    <field name="ResourceType">
+      <xpath>//gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode/text()</xpath>
     </field>
     <field name="Contact">
       <xpath>//gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()</xpath>

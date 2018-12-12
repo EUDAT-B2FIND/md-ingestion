@@ -1,0 +1,155 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.87372</identifier>
+    <datestamp>2017-08-04T13:37:24Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <md:MetaData xmlns:md="http://www.pangaea.de/MetaData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pangaea.de/MetaData http://ws.pangaea.de/schemas/pangaea/MetaData.xsd" version="2018-02-14">
+      <md:citation id="dataset87372">
+        <md:author id="dataset.author21879">
+          <md:lastName>Engel</md:lastName>
+          <md:firstName>Heinz</md:firstName>
+          <md:eMail>engel@bafg.de</md:eMail>
+        </md:author>
+        <md:year>2002</md:year>
+        <md:title>Daily discharge of the river Elbe at km 537 in 1962</md:title>
+        <md:URI>https://doi.org/10.1594/PANGAEA.87372</md:URI>
+        <md:dateTime>2002-12-11T10:50:00</md:dateTime>
+      </md:citation>
+      <md:reference id="ref23691" relationType="Related to" relationTypeId="12">
+        <md:author id="ref23691.author25938">
+          <md:lastName>Eggert</md:lastName>
+          <md:firstName>Anja</md:firstName>
+          <md:eMail>anja.eggert@io-warnemuende.de</md:eMail>
+          <md:URI>http://www.io-warnemuende.de/anja-eggert.html</md:URI>
+        </md:author>
+        <md:year>2002</md:year>
+        <md:title>Deutsches Gew&#228;sserkundliches Jahrbuch, Elbegebiet, Teil III</md:title>
+        <md:source>published by Freie und Hansestadt Hamburg, Wirtschaftsbeh&#246;rde, Strom- und Hafenbau</md:source>
+        <md:URI>http://www.dgj.de/servlet/IbMenu</md:URI>
+      </md:reference>
+      <md:extent>
+        <md:geographic>
+          <md:westBoundLongitude>10.87</md:westBoundLongitude>
+          <md:eastBoundLongitude>10.87</md:eastBoundLongitude>
+          <md:southBoundLatitude>53.23</md:southBoundLatitude>
+          <md:northBoundLatitude>53.23</md:northBoundLatitude>
+          <md:meanLongitude>10.87</md:meanLongitude>
+          <md:meanLatitude>53.23</md:meanLatitude>
+        </md:geographic>
+        <md:temporal>
+          <md:minDateTime>1962-01-01T00:00:00</md:minDateTime>
+          <md:maxDateTime>1962-12-31T00:00:00</md:maxDateTime>
+        </md:temporal>
+        <md:elevation name="Elevation" unit="m">
+          <md:min>-5.23</md:min>
+          <md:max>-1.78</md:max>
+        </md:elevation>
+        <md:topoType id="topotype8">time series</md:topoType>
+      </md:extent>
+      <md:project id="project71" type="National institution">
+        <md:label>BAH</md:label>
+        <md:name>Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland)</md:name>
+        <md:URI>http://www.awi.de/forschung/biowissenschaft/oekologie-der-schelfmeere.html</md:URI>
+      </md:project>
+      <md:project id="project4097" type="National institution">
+        <md:label>LTER</md:label>
+        <md:name>Long-term Ecological Research at AWI</md:name>
+        <md:URI>http://www.awi.de/en/science/biosciences/functional-ecology.html</md:URI>
+      </md:project>
+      <md:event id="event2075549">
+        <md:label>Elbekm537_1962</md:label>
+        <md:latitude>53.23</md:latitude>
+        <md:longitude>10.87</md:longitude>
+        <md:elevation>-1.78</md:elevation>
+        <md:dateTime>1962-01-01T00:00:00</md:dateTime>
+        <md:latitude2>53.23</md:latitude2>
+        <md:longitude2>10.87</md:longitude2>
+        <md:elevation2>-5.23</md:elevation2>
+        <md:dateTime2>1962-12-31T23:59:00</md:dateTime2>
+        <md:location id="event2075549.term22172">
+          <md:name>Elbe and German Bight</md:name>
+        </md:location>
+        <md:campaign id="event2075549.campaign21302">
+          <md:name>HelgolandRoadsTimeseries</md:name>
+        </md:campaign>
+        <md:basis id="event2075549.basis554">
+          <md:name>Meeresstation Helgoland</md:name>
+        </md:basis>
+        <md:device id="event2075549.term20301">
+          <md:name>Water gage</md:name>
+          <md:optionalName>WG</md:optionalName>
+        </md:device>
+      </md:event>
+      <md:size unit="data points">365</md:size>
+      <md:license id="license1">
+        <md:label>CC-BY</md:label>
+        <md:name>Creative Commons Attribution 3.0 Unported</md:name>
+        <md:URI>http://creativecommons.org/licenses/by/3.0/</md:URI>
+      </md:license>
+      <md:matrixColumn behaviour="4" col="0" format="yyyy-MM-dd" id="col0.ds1015325" label="Elbekm537_1962.a" source="geocode" type="datetime">
+        <md:parameter id="col0.ds1015325.geocode1599">
+          <md:name>DATE/TIME</md:name>
+          <md:shortName>Date/Time</md:shortName>
+          <md:group>GEOCODE</md:group>
+          <md:URI>http://en.wikipedia.org/wiki/ISO_8601</md:URI>
+        </md:parameter>
+        <md:caption>Date/Time</md:caption>
+      </md:matrixColumn>
+      <md:matrixColumn col="1" format="#####0" id="col1.ds6025434" label="Elbekm537_1962.2" source="data" type="numeric">
+        <md:parameter id="col1.ds6025434.param20796">
+          <md:name>River discharge, daily mean</md:name>
+          <md:shortName>Q day mean</md:shortName>
+          <md:unit>m**3/s</md:unit>
+          <md:group>Hydrography</md:group>
+        </md:parameter>
+        <md:method id="col1.ds6025434.method861">
+          <md:name>Stream Gauging</md:name>
+          <md:URI>http://pubs.usgs.gov/circ/circ1123/</md:URI>
+        </md:method>
+        <md:PI id="col1.ds6025434.pi21879">
+          <md:lastName>Engel</md:lastName>
+          <md:firstName>Heinz</md:firstName>
+          <md:eMail>engel@bafg.de</md:eMail>
+        </md:PI>
+        <md:comment>Daily water-levels are measured at gauging station 59300107 near Neu-Darchau, then Elbe discharge is usually estimated from pre-established water-level/discharge relations.</md:comment>
+        <md:caption>Q day mean [m**3/s]</md:caption>
+      </md:matrixColumn>
+      <md:keywords>
+        <md:techKeyword id="keywords.term27" type="fromDatabase">BAH1962</md:techKeyword>
+        <md:techKeyword type="autoGenerated">author21879</md:techKeyword>
+        <md:techKeyword type="autoGenerated">author25938</md:techKeyword>
+        <md:techKeyword type="autoGenerated">basis554</md:techKeyword>
+        <md:techKeyword type="autoGenerated">campaign21302</md:techKeyword>
+        <md:techKeyword type="autoGenerated">event2075549</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term20301</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term22172</md:techKeyword>
+        <md:techKeyword type="autoGenerated">term27</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1599</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1600</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode1601</md:techKeyword>
+        <md:techKeyword type="autoGenerated">geocode8128</md:techKeyword>
+        <md:techKeyword type="autoGenerated">license1</md:techKeyword>
+        <md:techKeyword type="autoGenerated">method861</md:techKeyword>
+        <md:techKeyword type="autoGenerated">param20796</md:techKeyword>
+        <md:techKeyword type="autoGenerated">pi21879</md:techKeyword>
+        <md:techKeyword type="autoGenerated">project4097</md:techKeyword>
+        <md:techKeyword type="autoGenerated">project71</md:techKeyword>
+        <md:techKeyword type="autoGenerated">ref23691</md:techKeyword>
+        <md:techKeyword type="autoGenerated">topotype8</md:techKeyword>
+      </md:keywords>
+      <md:technicalInfo>
+        <md:entry key="xmlLastModified" value="2017-08-04T13:37:24Z"/>
+        <md:entry key="filename" value="BfG_RiverDischarge_Elbekm537_1962"/>
+        <md:entry key="mimeType" value="text/tab-separated-values"/>
+        <md:entry key="status" value="published"/>
+        <md:entry key="status_num" value="4"/>
+        <md:entry key="DOIRegistryStatus" value="registered"/>
+        <md:entry key="DOIRegistryStatus_num" value="4"/>
+        <md:entry key="loginOption" value="unrestricted"/>
+        <md:entry key="loginOption_num" value="1"/>
+      </md:technicalInfo>
+    </md:MetaData>
+  </metadata>
+</record>
