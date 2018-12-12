@@ -11,6 +11,16 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## CAPSELLA
+#http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher?verb=ListRecords&metadataPrefix=oai_dc
+capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc 
+## ENVIDAT
+#https://www.envidat.ch/oai?verb=ListRecords&metadataPrefix=iso19139
+#envidat https://www.envidat.ch/oai ListRecords iso19139 
+#envidat https://www.envidat.ch/oai ListRecords datacite
+envidat https://www.envidat.ch/api/3/action ckan_api json
+## EMSO
+emso http://dataportals.pangaea.de/emso/oai pan_md full
 ## Life+Respira
 life+respira https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ## NILU
@@ -41,7 +51,7 @@ inra https://data.inra.fr/oai ListRecords oai_ddi ALL
 radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
 ## EMBRC
 #http://www.vliz.be/imis?module=dataset&show=json
-embrc http://www.vliz.be/imis json
+embrc http://www.vliz.be/imis records json
 ## PANGAEA
 pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3
 #pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 CARBOOCEAN
@@ -55,7 +65,7 @@ pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3
 #pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md BAH1962
 ## EGI datahub
 egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
-fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
+#fishproject1 http://localhost:8181/oai/provider ListIdentifiers oai_dc 
 ##EPOS
 epos http://epos-dcat????  ListRecords eposap dcat-ap_1
 epos http://epos-tcs-uni-utr???  ListRecords iso19139 SET_1
@@ -79,7 +89,7 @@ rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc
 ## Anaee
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw iso-19139
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw oai_dc
-anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw oai_dc 
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw iso19139 
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw iso-19139
 #http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
 #?SERVICE=CSW&REQUEST=GetRecords&version=2.0.2&resultType=results&outputSchema=own
@@ -191,7 +201,7 @@ pdc     http://www.polardata.ca/oai/provider       ListRecords  fgdc
 ##%%% ENES : MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
 enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 ##%%% EARLINET : MD Provider eudat-oai.dkrz.de (directly extracted from CERA)
-earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso
+earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso19139
 ### new comm. IVOA or EURO-VO
 ##ivoa  http://registry.euro-vo.org/oai.jsp ListIdentifiers  oai_dc ivo_managed
 ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc 
@@ -272,7 +282,8 @@ dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
 # MPI-PL #h=    ?= #DASISH = 145245
 ##!!!??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi mpi-pl_
 # UniOfCopenhagen  #h=    ?= #DASISH = 7
-clarin http://clarin.dk/oaiprovider ListIdentifiers cmdi
+#clarin http://clarin.dk/oaiprovider ListIdentifiers cmdi
+#clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
 ## clarin http://clarin.dk/oaiprovider ListIdentifiers cmdi ## ucph_
 # Viena Language resources #h=    ?= #DASISH = 14324
 ##??? clarin  http://clarin.oeaw.ac.at/oaiprovider ListRecords oai_dc ## vienna-lang-res_
