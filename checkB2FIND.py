@@ -108,7 +108,6 @@ def check_ckan_action(actionreq,data,rows):
             resplen=result['package_count']
         else:
             resplen=len(result)
-        print('resplen %s' % resplen) 
     return (retcode,msg,resplen,rta)
 
 def main():
