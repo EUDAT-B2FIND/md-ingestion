@@ -170,7 +170,7 @@ def checkProbes(args):
 
             answer = check_ckan_action(actionreq,data_dict,ckan_limit)
 
-        print ('| %-15s | %-7s | %-20s | %-7s | %-7.2f | ' % (probe,answer[0],answer[1],answer[2],answer[3]))
+        print ('%-15s - %-4s %-10s Resp Length : %-7s | %-7.2f ' % (probe,answer[0],answer[1],answer[2],answer[3]))
         if answer[0] > totretcode : totretcode = answer[0]
 
     return totretcode
