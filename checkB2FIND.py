@@ -139,8 +139,8 @@ def checkProbes(args):
 
     start=time.time()
 
-    print ('| %-15s | %-7s | %-20s | %-7s | %-6s |' % ('Probe','RetCode','Message','ResLength','RTA'))
-    print ('-----------------------------------------------')
+    ##HEW-D print ('| %-15s | %-7s | %-20s | %-7s | %-6s |' % ('Probe','RetCode','Message','ResLength','RTA'))
+    ##HEW-D print ('-----------------------------------------------')
     suppProbes=['URLcheck','ListDatasets','ListCommunities','ShowGroupENES']
     if args.action == 'all' :
         probes=suppProbes
