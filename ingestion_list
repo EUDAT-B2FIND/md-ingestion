@@ -13,6 +13,8 @@
 ## -----------------------------------------------------------------------------------
 ## CLARIN from B2SHARE
 clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
+## DANS-EASY
+danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite
 ## DEIMS
 deims https://deims.org/pycsw/catalogue/csw csw iso19139 full
 ## ENVIDAT
