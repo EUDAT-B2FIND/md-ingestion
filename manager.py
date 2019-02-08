@@ -338,11 +338,6 @@ def process_map(MP, rlist):
         
         cstart = time.time()
 
-        if len(request)>4 :
-            request[4] = request[4] if (not request[4].startswith('#')) else ''
-        else :
-            request.append('')
-
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S")))
         results = MP.map(request)
 
@@ -371,11 +366,6 @@ def process_validate(VD, rlist):
 
         target=None
 
-        if len(request)>4 :
-            request[4] = request[4] if (not request[4].startswith('#')) else ''
-        else :
-            request.append('')
-
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         
         results = VD.validate(request,target)
@@ -401,8 +391,6 @@ def process_upload(UP, rlist):
         print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
         community=request[0]
         mdprefix = request[3]
-        mdsubset=request[4]   if (len(request)>4 and not request[4].startswith('#')) else None
-        ## dir = dir+'/'+subset
         
         try:
             ckangroup=CKAN.action('group_list')

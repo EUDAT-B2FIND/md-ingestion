@@ -1219,7 +1219,7 @@ class Mapper(object):
         community=request[0]
         source=request[1]
         mdprefix=request[3]
-        mdsubset=request[4]   if len(request)>4 else ''
+        mdsubset=request[4] if (len(request)>4 and request[4] ) else ''
         target_mdschema=request[8]   if len(request)>8 else None
 
         # settings according to md format (xml or json processing)

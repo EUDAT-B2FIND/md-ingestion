@@ -905,7 +905,7 @@ class Validator(object):
         # set processing parameters
         community=request[0]
         mdprefix=request[3]
-        mdsubset=request[4]   if len(request)>4 else ''
+        mdsubset=request[4] if (len(request)>4 and request[4] ) else ''
 
         # set extension of mapfile according to md format (xml or json processing)
         if mdprefix == 'json' :

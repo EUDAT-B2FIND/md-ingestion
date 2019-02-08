@@ -494,7 +494,7 @@ class Uploader(object):
         community=request[0]
         source=request[1]
         mdprefix=request[3]
-        mdsubset=request[4]   if len(request)>4 else None
+        mdsubset=request[4] if (len(request)>4  and request[4]) else None
         target_mdschema=request[8]   if len(request)>8 else None
 
         mdschemasfile='%s/mapfiles/mdschemas.json' % (os.getcwd())
