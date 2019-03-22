@@ -1,0 +1,100 @@
+{
+    "author": [
+        "ICOS Carbon Portal @ Lund University, Lund, Sweden"
+    ],
+    "Contact": [
+        "Ute Karstens;ICOS Carbon Portal @ Lund University, Lund, Sweden"
+    ],
+    "Contributor": [
+        "ICOS"
+    ],
+    "DOI": "",
+    "DiscHierarchy": [
+        "4.4.1",
+        "Geosciences",
+        "Atmospheric Sciences"
+        "4.4.6"
+        "Earth System Research"
+    ],
+    "Discipline": "Atmospheric Sciences","Environmental Research"
+    "Format": [
+        "text/csv; application/x-netcdf"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "",
+    "PublicationTimestamp": "2018-10-25T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "ICOS Carbon Portal @ Lund University, Lund, Sweden"
+    ],
+    "Contributor": [
+        "ICOS"
+    ],
+    "ResourceType": [
+        "Service (Dublin Core)"
+    ],
+    "Rights": [
+        "Creative Commons 4.0 CC-BY"
+    ],
+    "SpatialCoverage": [
+        "-20.0 35.0",
+        "35.0 75.0"
+    ],
+    "TemporalCoverage:BeginDate": "2007-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2014-12-31T11:59:59Z",
+
+    "fulltext": "",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "ffc2ac47-658a-5e5e-9519-94c1e970b410",
+    "notes": [
+        "Application of the STILT footprint model. Model simulates the source area and CO2 concentration fluctuations for any location in Europe based on atmospheric transport models. Observed meteorological variables and observed CO2 concentrations from the atmospheric statios are used for the estimations. Produced by  the ICOS CP (Carbon Portal)."
+    ],
+    "oai_identifier": [
+        "b73648f1-2f43-52c8-b4e4-f071f16f4e61"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "conditions"
+        },
+        {
+            "name": "INSPIRE"
+        },
+        {
+            "name": "Environmental"
+        },
+        {
+            "name": "monitoring"
+        },
+        {
+            "name": "facilities"
+        },
+        {
+            "name": "Air"
+        },
+        {
+            "name": "Athmospheric composition"
+        },
+        {
+            "name": "GEMET"
+        },
+        
+    ],
+    "title": [
+        "STILT on-demand footprint modeling service"
+    ],
+    "url": "https://www.icos-cp.eu/"
+}
