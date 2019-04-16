@@ -11,24 +11,26 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## B2SHARE
+b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
 ## CLARIN
-#done#clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
-#done#clarin https://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
-#done#clarin http://dspace-clarin-it.ilc.cnr.it/repository/oai/request ListRecords oai_dc
-#done#clarin http://lindat.mff.cuni.cz/repository/oai/request ListRecords oai_dc
-#done#clarin https://repo.spraakbanken.gu.se/oai/request ListRecords oai_dc
-#done#clarin http://fedora.clarin-d.uni-saarland.de/oaiprovider/ ListRecords oai_dc
-#done#clarin https://repo.clarino.uib.no/oai/request ListRecords oai_dc
-#done#clarin http://repository.clarin.dk/repository/oai/request ListRecords oai_dc
+clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
+clarin https://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
+clarin http://dspace-clarin-it.ilc.cnr.it/repository/oai/request ListRecords oai_dc
+clarin http://lindat.mff.cuni.cz/repository/oai/request ListRecords oai_dc
+clarin https://repo.spraakbanken.gu.se/oai/request ListRecords oai_dc
+clarin http://fedora.clarin-d.uni-saarland.de/oaiprovider/ ListRecords oai_dc
+clarin https://repo.clarino.uib.no/oai/request ListRecords oai_dc
+clarin http://repository.clarin.dk/repository/oai/request ListRecords oai_dc
+clarin https://portulanclarin.net/repository/oaipmh/ ListRecords oai_dc
+clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_3
+clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_4
+clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_1
+clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_2
+#*#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc 
 #donezurhaelfte#clarin http://www.ota.ox.ac.uk/cgi-bin/oai.pl ListIdentifiers oai_dc
-#done#clarin https://portulanclarin.net/repository/oaipmh/ ListRecords oai_dc
 #gehtnicht!#clarin https://clarin.vdu.lt/oai/request ListRecords oai_dc
 #gehtnicht!#clarin https://metashare.ut.ee/oai_pmh/ ListIdentifiers oai_dc
-#done#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_3
-#done#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_4
-#done#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_1
-#done#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_2
-#*#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc 
 ## CLARIN from B2SHARE
 #clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
 ## DANS-EASY
