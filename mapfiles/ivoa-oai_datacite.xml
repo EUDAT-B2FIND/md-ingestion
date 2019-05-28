@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for DataCite metadata from IVOA. --><namespaces>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="datacite3" uri="http://datacite.org/schema/kernel-3"/>
+    <namespace ns="datacite" uri="http://datacite.org/schema/kernel-3"/>
+    <namespace ns="d" uri="http://datacite.org/schema/kernel-4"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//d:titles/d:title</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//d:descriptions/d:description</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//d:subjects/d:subject</xpath>
+    </field>
+    <!-- Identifier : (Source,PID or DOI) -->
+    <field name="url">
+      <xpath>//d:alternateIdentifiers/d:alternateIdentifier[@alternateIdentifierType='browser URL'],//d:alternateIdentifiers/d:alternateIdentifier[@alternateIdentifierType='reference URL']</xpath>
+    </field>
+    <field name="RelatedIdentifier">
+      <xpath>//d:relatedIdentifiers/d:relatedIdentifier</xpath>
+    </field>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+    <!-- Provenance information -->
+    <field name="author">
+      <xpath>//d:creators/d:creator/d:creatorName</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//d:publisher</xpath>
+    </field>
+    <field name="Contributor">
+      <xpath>//d:contributors/d:contributor/d:contributorName</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//d:publicationYear</xpath>
+    </field>
+    <field name="Rights">
+      <xpath>//d:rightsList//d:rights</xpath>
+    </field>
+    <field name="OpenAccess">
+      <xpath></xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//d:contributors/d:contributor[@contributorType='ContactPerson']</xpath>
+    </field>
+    <!-- Representation information -->
+    <field name="Language">
+      <xpath>//d:language</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//d:resourceType</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//d:formats/d:format</xpath>
+    </field>
+    <field name="Checksum">
+      <xpath></xpath> 
+    </field>
+    <!-- Coverage information -->
+    <field name="Discipline">
+      <string>Astrophysics and Astronomy</string>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//d:geoLocations/d:geoLocation/d:geoLocationPoint,//d:geoLocations/d:geoLocation/d:geoLocationBox</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//d:dates/d:date</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+  </mappings>
+</mapping-table>
