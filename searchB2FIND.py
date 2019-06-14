@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-"""searchB2FIND.py  performs search request in a CKAN catalogue (by default in the B2FIND metadata catalogue)
+"""searchB2FIND.py  performs search request in a CKAN catalogue (by default in the B2FIND's CKAN resporitory)
 
 Copyright (c) 2015 Heinrich Widmann (DKRZ)
-Modified for B2FIND Training
-              2016 Heinrich Widmann (DKRZ)
+Modified for B2FIND Training 2016 Heinrich Widmann (DKRZ)
+Adopted for remote usage 2019 Heinrich Widmann (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -74,13 +74,15 @@ def main():
     # create CKAN search pattern :
     ckan_pattern = ''
     sand=''
-    pattern=' '.join(args.pattern)
+##    if (args.pattern):
+##        pattern=' '.join(args.pattern)
+##    else:
+##        pattern='*:*'
 
     if (args.community):
         ckan_pattern += "groups:%s" % args.community
         sand=" AND "
-    if (args.pattern):
-        ckan_pattern += sand + pattern   
+    ckan_pattern += sand + args.pattern
 
     print(' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern))
 
@@ -133,7 +135,7 @@ def main():
         if (len(akeys) > 0):
             printfacets="and related facets %s " % ", ".join(akeys)
 
-            print('\t|- IDs %sare written to %s ...' % (printfacets,args.output))
+        print('\t|- IDs %sare written to %s ...' % (printfacets,args.output))
 
         counter=0
         cstart=0
@@ -168,7 +170,9 @@ def main():
                     
                     record['id']  = '%s' % (ds['name'])
                     outline='%s\n' % record['id']
-        
+                    fh.writelines(outline)
+
+                    print('akeys %s' % akeys)
                     # loop over facets
                     for facet in akeys:
                         ckanFacet=b2findfields[facet]["ckanName"]
@@ -251,7 +255,7 @@ def get_args(ckanlistrequests):
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
     p.add_argument('--keys', '-k', help=" B2FIND fields additionally outputed for the found records. Additionally statistical information is printed into an extra output file.", default=[], nargs='*')
     p.parse_args('--keys'.split())
-    p.add_argument('--iphost',  help='IP address of the CKAN instance, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu:8080', metavar='URL')
+    p.add_argument('--iphost',  help='IP address of the CKAN instance, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu', metavar='URL')
     p.add_argument('--output', '-o', help="Output file name (default is results.txt)", default='results.txt', metavar='FILE')
     p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', default='*:*', metavar='PATTERN', nargs='*')
     
