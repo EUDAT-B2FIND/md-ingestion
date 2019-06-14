@@ -22,6 +22,7 @@ PY2 = sys.version_info[0] == 2
 
 import argparse
 import simplejson as json
+import json as json2
 from uploading import CKAN_CLIENT
 
 from collections import OrderedDict,Counter
@@ -142,6 +143,16 @@ def main():
         oldperc=0
         start2=time.time()
 
+        if args.write :
+            if args.community : 
+                commstr=args.community+'-'
+            else:
+                commstr='total-'
+            jsonpath='%sb2find/json/' % commstr
+            if not os.path.exists(jsonpath):
+                os.makedirs(jsonpath)
+            print('  |- Write datasets as JSONS to %s' % jsonpath)
+
         while (cstart < tcount) :
             if (cstart > 0):
                 if PY2 :
@@ -153,11 +164,13 @@ def main():
                     break
         
             # loop over found records
+
             if PY2:
                 results= answer['result']['results'] ### ['results']
             else:
                 results= answer['result']['results']
             for ds in results : #### answer['results']:
+                    ##HEW-T print(' ds : %s' % ds)
                     counter +=1
                     logger.debug('    | %-4d | %-40s |' % (counter,ds['name']))
                     perc=int(counter*100/tcount)
@@ -169,10 +182,14 @@ def main():
         
                     
                     record['id']  = '%s' % (ds['name'])
+
+                    if args.write :
+                        with open(jsonpath+record['id']+'.json', 'w') as jf:
+                            json.dump(ds, jf, indent=4)
+
                     outline='%s\n' % record['id']
                     fh.writelines(outline)
-
-                    print('akeys %s' % akeys)
+                    
                     # loop over facets
                     for facet in akeys:
                         ckanFacet=b2findfields[facet]["ckanName"]
@@ -257,6 +274,8 @@ def get_args(ckanlistrequests):
     p.parse_args('--keys'.split())
     p.add_argument('--iphost',  help='IP address of the CKAN instance, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu', metavar='URL')
     p.add_argument('--output', '-o', help="Output file name (default is results.txt)", default='results.txt', metavar='FILE')
+    p.add_argument('-w', '--write', action="store_true", 
+                        help="Write datasets as JSON files to disc", dest='write')   
     p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', default='*:*', metavar='PATTERN', nargs='*')
     
     args = p.parse_args()
