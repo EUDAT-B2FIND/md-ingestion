@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapping-table>
-  <!-- Mappings for DublinCore metadata - Template. -->
+  <!-- Mappings for DublinCore metadata from MaterialsCloud. -->
   <namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
@@ -44,10 +44,10 @@
       <xpath>//dc:rights</xpath>
       </field> 
     <field name="OpenAccess">
-      <xpath>false</xpath>
+      <string>true</string>
     </field>
     <field name="Contact">
-      <xpath>//dc:publisher/text()</xpath>
+      <xpath>//dc:publisher</xpath>
     </field>
     <!-- Representation Information -->
     <field name="Language">
@@ -61,7 +61,7 @@
     </field>  
    <!-- Coverage -->
     <field name="Discipline">
-      <xpath>//dc:subject</xpath>
+      <string>Materials Science and Engineering</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dc:coverage,//dc:spatial</xpath>
