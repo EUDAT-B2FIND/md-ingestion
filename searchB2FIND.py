@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-"""searchB2FIND.py  performs search request in a CKAN catalogue (by default in the B2FIND metadata catalogue)
+"""searchB2FIND.py  performs search request in a CKAN catalogue (by default in the B2FIND's CKAN resporitory)
 
 Copyright (c) 2015 Heinrich Widmann (DKRZ)
-Modified for B2FIND Training
-              2016 Heinrich Widmann (DKRZ)
+Modified for B2FIND Training 2016 Heinrich Widmann (DKRZ)
+Adopted for remote usage 2019 Heinrich Widmann (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -22,6 +22,7 @@ PY2 = sys.version_info[0] == 2
 
 import argparse
 import simplejson as json
+import json as json2
 from uploading import CKAN_CLIENT
 
 from collections import OrderedDict,Counter
@@ -74,13 +75,15 @@ def main():
     # create CKAN search pattern :
     ckan_pattern = ''
     sand=''
-    pattern=' '.join(args.pattern)
+##    if (args.pattern):
+##        pattern=' '.join(args.pattern)
+##    else:
+##        pattern='*:*'
 
     if (args.community):
         ckan_pattern += "groups:%s" % args.community
         sand=" AND "
-    if (args.pattern):
-        ckan_pattern += sand + pattern   
+    ckan_pattern += sand + args.pattern
 
     print(' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern))
 
@@ -133,12 +136,22 @@ def main():
         if (len(akeys) > 0):
             printfacets="and related facets %s " % ", ".join(akeys)
 
-            print('\t|- IDs %sare written to %s ...' % (printfacets,args.output))
+        print('\t|- IDs %sare written to %s ...' % (printfacets,args.output))
 
         counter=0
         cstart=0
         oldperc=0
         start2=time.time()
+
+        if args.write :
+            if args.community : 
+                commstr=args.community+'-'
+            else:
+                commstr='total-'
+            jsonpath='%sb2find/json/' % commstr
+            if not os.path.exists(jsonpath):
+                os.makedirs(jsonpath)
+            print('  |- Write datasets as JSONS to %s' % jsonpath)
 
         while (cstart < tcount) :
             if (cstart > 0):
@@ -151,11 +164,13 @@ def main():
                     break
         
             # loop over found records
+
             if PY2:
                 results= answer['result']['results'] ### ['results']
             else:
                 results= answer['result']['results']
             for ds in results : #### answer['results']:
+                    ##HEW-T print(' ds : %s' % ds)
                     counter +=1
                     logger.debug('    | %-4d | %-40s |' % (counter,ds['name']))
                     perc=int(counter*100/tcount)
@@ -167,8 +182,14 @@ def main():
         
                     
                     record['id']  = '%s' % (ds['name'])
+
+                    if args.write :
+                        with open(jsonpath+record['id']+'.json', 'w') as jf:
+                            json.dump(ds, jf, indent=4)
+
                     outline='%s\n' % record['id']
-        
+                    fh.writelines(outline)
+                    
                     # loop over facets
                     for facet in akeys:
                         ckanFacet=b2findfields[facet]["ckanName"]
@@ -251,8 +272,10 @@ def get_args(ckanlistrequests):
     p.add_argument('--community', '-c', help="Community where you want to search in", default='', metavar='STRING')
     p.add_argument('--keys', '-k', help=" B2FIND fields additionally outputed for the found records. Additionally statistical information is printed into an extra output file.", default=[], nargs='*')
     p.parse_args('--keys'.split())
-    p.add_argument('--iphost',  help='IP address of the CKAN instance, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu:8080', metavar='URL')
+    p.add_argument('--iphost',  help='IP address of the CKAN instance, to which search requests are submitted (default is b2find.eudat.eu)', default='b2find.eudat.eu', metavar='URL')
     p.add_argument('--output', '-o', help="Output file name (default is results.txt)", default='results.txt', metavar='FILE')
+    p.add_argument('-w', '--write', action="store_true", 
+                        help="Write datasets as JSON files to disc", dest='write')   
     p.add_argument('pattern',  help='CKAN search pattern, i.e. by logical conjunctions joined field:value terms.', default='*:*', metavar='PATTERN', nargs='*')
     
     args = p.parse_args()
