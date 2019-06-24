@@ -39,10 +39,12 @@ from owslib.namespaces import Namespaces
 from SPARQLWrapper import SPARQLWrapper, JSON
 import requests
 from requests.exceptions import ConnectionError
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import uuid
 import lxml.etree as etree
 import xml.etree.ElementTree as ET
-import simplejson as json
+##HEW-??? import simplejson as json
+import json
 from itertools import tee 
 import collections
 if PY2:
@@ -312,17 +314,57 @@ class Harvester(object):
             maxrecords=1000
             try:
                 url=req['url']
-                data={ "text" : "mnhn", "searchTextInMetadata" : True, "searchTextInAdditionalData" : True, "page" : 1, "size" : 1000, "highlight" : { "preTag" : "<b>", "postTag" : "</b>", "fragmentSize" : 500, "fragmentsCount" : 1 } }
+                data={ 
+                    "text" : "Herbarium", 
+                    "searchTextInMetadata" :True, 
+                    "searchTextInAdditionalData" :True,
+                    "page" : 1, 
+                    "size" : 20 
+                    ##"highlight" : { "preTag" : "<b>", "postTag" : "</b>", "fragmentSize" : 500, "fragmentsCount" : 1 } 
+                }
                 headers = {'content-type': 'application/json'}
-                response = requests.post(url, data=json.dumps(data), headers=headers, verify=False )##, stream=True ) ##HEW-D auth=('myusername', 'mybasicpass'))
+##HEW-T                data={
+##HEW-T "strictCharacterSearch":"false",
+##HEW-T "searchTextInAdditionalData":"true",
+##HEW-T "searchTextInMetadata":"true",
+##HEW-T "page":1,
+##HEW-T "size":20,
+##HEW-T "language":"",
+##HEW-T "metadataCriteria":[
+##HEW-T {
+##HEW-T "field":"aip.dc.type",
+##HEW-T "operator":"CONTAINS",
+##HEW-T "not":"false",
+##HEW-T "values":[
+##HEW-T "StillImage"
+##HEW-T ]
+##HEW-T }
+##HEW-T ]
+##HEW-T}
+                ##requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+                ##HEW-??? response=requests.get(url, data=json.dumps(data), headers=headers, verify=False ).json()##, stream=True ) ##HEW-D auth=('myusername', 'mybasicpass'))
+                response=requests.post(url, headers=headers, data=json.dumps(data), verify=False)
+                ##records=rs.json()['result']
+                print('response')
+                print(response.status_code)
+                ##print('response1')
+                ##jrec=response.json()
+                ##print(jrec)
+                ##print('response2')
                 records=response.json()['result']
+                ##print('records %s' % records)
+            except InsecureRequestWarning as err:
+                self.logger.warning("%s during connecting to %s\n" % (err,req['url']))
+                pass
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1
-            except (ImportError,CannotDisseminateFormat,Exception) as err:
+            except (ImportError,CannotDisseminateFormat,ValueError,Exception) as err:
                 self.logger.critical("%s during harvest request \n" % err)
-                return -1
-            
+                pass
+            ##HEW-T print(dir(response))
+            ##HEW-T print(response.content)
+
         # CKAN-API request
         elif req["lverb"].startswith('ckan_api'):
             outtypedir='hjson'
@@ -428,6 +470,10 @@ limit 1000
             self.logger.critical(' Not supported harvest type %s' %  req["lverb"])
             sys.exit()
 
+        ##HEW-T print('RRRRRRRRRR ')
+        ###print(records)
+        ###print(rc)
+
         self.logger.debug(" Harvest method used %s" % req["lverb"])
         try:
             if req["lverb"].startswith('List'):
@@ -530,7 +576,8 @@ limit 1000
                     return -1
 
             # generate a uniquely identifier and a filename for this dataset:
-            uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id))
+            print('oai_id %s' % oai_id)
+            uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('utf-8')))
             outfile = '%s/%s/%s.%s' % (subsetdir,outtypedir,os.path.basename(uid),outtypeext)
 
             if delete_flag : # record marked as deleted on provider site 
