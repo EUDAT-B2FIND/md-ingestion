@@ -345,7 +345,6 @@ def process_map(MP, rlist):
         results['time'] = ctime
         
         # save stats:
-        print "xxxxxxx %s" % request
         MP.OUT.save_stats(request[0]+'-' + request[3], request[4],'m',results)
 
 def process_validate(VD, rlist):
