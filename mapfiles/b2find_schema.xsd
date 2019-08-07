@@ -1,133 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Revision history
      2015-07-13   Adapted, based on DataCite schema, see http://schema.datacite.org/meta/kernel-3/metadata.xsd 
-     2015-04-22   First version created, based on semantic defintions of B2FIND https://confluence.csc.fi/display/EUDAT2/Metadata+semantics+definitions
-     2016-08-24   Made available at http://b2find.eudat.eu/schema/b2find_schema.xsd
+     2015-04-22   v0.1 created, based on semantic defintions of B2FIND https://confluence.csc.fi/display/EUDAT2/Metadata+semantics+definitions
+     2016-08-24   v0.5 made available at http://b2find.eudat.eu/schema/b2find_schema.xsd
+     2018-09-30   v0.8 complete revision due to metadata schema changes; includes now 'RelatedIdentifier', 'Contributor', 'ResourceType' and 'OpenAccess'
+     2019-08-07   Version 1.0 published in concordance to B2FIND metadata schema v1.0, notyet#available at http://b2find.eudat.eu/schema/b2find_schema.xsd#
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://b2find.eudat.eu/schema" targetNamespace="http://b2find.eudat.eu/schema" attributeFormDefault="unqualified" elementFormDefault="qualified" xml:lang="EN">
   <!-- General information -->
-  <xs:element name="Title" type="xs:string">
-    <xs:annotation>
-      <xs:documentation>A name or title by which a resource is known.</xs:documentation>
-    </xs:annotation>
+  <xs:element name="Title">
+  	<xs:complexType>
+		<xs:sequence minOccurs="1" maxOccurs="1">
+   	 		<xs:annotation>
+      			<xs:documentation>A name or title by which a resource is known.</xs:documentation>
+     		</xs:annotation>
+    	</xs:sequence>
+   </xs:complexType>	
   </xs:element>
-  <xs:element name="discription" type="xs:string">
-    <xs:annotation>
-      <xs:documentation>An additional information describing the content of the resource. Could be an abstract, a summary or a Table of Content. </xs:documentation>
-    </xs:annotation>
-  </xs:element>
+  <xs:element name="description" type="xs:string">
+  	<xs:annotation>
+   		<xs:documentation>Additional information describing the content of the resource. Could be an abstract, a summary or a Table of Content.</xs:documentation>
+   	</xs:annotation>
+  </xs:element> 
   <xs:element name="tags">
-    <xs:complexType>
-      <xs:sequence minOccurs="0" maxOccurs="12">
-	<xs:element name="tag" type="xs:string">
-	  <xs:annotation>
-	    <xs:documentation>A subject, keyword, classification code, or key phrase describing the content.</xs:documentation>
-	  </xs:annotation>
-	</xs:element>
-      </xs:sequence>
-    </xs:complexType>	
+  	<xs:complexType>
+    	<xs:sequence minOccurs="0" maxOccurs="12">
+	 		<xs:annotation>
+	  			<xs:documentation>A subject, keyword, classification code or key phrase describing the content.</xs:documentation>
+	 		</xs:annotation>
+    	</xs:sequence>
+   	</xs:complexType>	
   </xs:element>
-  <!-- Data Access -->  
+  <!-- Identifier -->  
   <xs:element name="identifiers">
     <xs:complexType>
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
-	<xs:element name="Source" type="xs:string">
-	  <xs:annotation>
-	    <xs:documentation>The Source is an identifier, therefore a unique string that identifies the resource.  It may link to the data itself or a landing page that curates the data.</xs:documentation>
-	  </xs:annotation>
-	</xs:element>
-	<xs:element name="DOI" type="xs:string">
-	  <xs:annotation>
-	    <xs:documentation>The DOI is an alternate identifier.</xs:documentation>
-	  </xs:annotation>
-	</xs:element>
-	<xs:element name="PID" type="xs:string">
-	  <xs:annotation>
-	    <xs:documentation>The PID is an alternate identifier.</xs:documentation>
-	  </xs:annotation>
-	</xs:element>
-      </xs:sequence>
-    </xs:complexType>	
+		<xs:element name="Source" type="xs:string">
+	  		<xs:annotation>
+	    		<xs:documentation>An identifier that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data.</xs:documentation>
+	  		</xs:annotation>
+		</xs:element>
+		<xs:element name="DOI" type="xs:string">
+	  		<xs:annotation>
+	    		<xs:documentation>A persistent, citable identifier that uniquely identifies a resource, registered as a DOI.</xs:documentation>
+	  		</xs:annotation>
+		</xs:element>
+		<xs:element name="PID" type="xs:string">
+	  		<xs:annotation>
+	    		<xs:documentation>A persistent identifier that uniquely identifies a resource, usually a Handle.</xs:documentation>
+			</xs:annotation>
+		</xs:element>
+	  </xs:sequence>
+    </xs:complexType>
   </xs:element>
-  <xs:element name="Checksum" type="xs:string">
-    <xs:annotation>
-      <xs:documentation>Checksum of the data record.</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:element name="Rights" type="xs:string">
-      <xs:annotation>
-        <xs:documentation>Any rights information for this resource.</xs:documentation>
-      </xs:annotation>
-  </xs:element>
-  <!-- Provenance data -->
-  <xs:element name="disciplines">
-      <xs:complexType>
-	<xs:sequence minOccurs="0" maxOccurs="unbounded">
-	  <xs:element name="Discipline" type="xs:string">
-	    <xs:annotation>
-	      <xs:documentation>A scientific discipline the resource originates from. A closed vocabulary based on a Wikipedia-classification is used.</xs:documentation>
-	    </xs:annotation>
-	  </xs:element>
-	</xs:sequence>
-      </xs:complexType>
-  </xs:element>
-  <xs:element name="creators">
-      <xs:complexType>
-	<xs:sequence minOccurs="0" maxOccurs="unbounded">
-	  <xs:element name="Creator" type="xs:string">
-	    <xs:annotation>
-	      <xs:documentation>The main researchers involved in producing the data, or the authors of the publication in priority order.</xs:documentation>
-	    </xs:annotation>
-	  </xs:element>
-	</xs:sequence>
-      </xs:complexType>	
-  </xs:element>
-  <xs:element name="publishers">
-      <xs:complexType>
-	<xs:sequence minOccurs="0" maxOccurs="unbounded">
-	  <xs:element name="Publisher" type="xs:string">
-	    <xs:annotation>
-	      <xs:documentation>The name of the entity that holds, archives, publishes, prints, distributes, releases, issues or produces the resource.</xs:documentation>
-	    </xs:annotation>
-	  </xs:element>
-	</xs:sequence>
-      </xs:complexType>
-  </xs:element>
-  <xs:element name="PuplicationYear" type="xs:date">
-      <xs:annotation>
-	<xs:documentation>The year when the data was or will be made publicly available.</xs:documentation>
-      </xs:annotation>
-  </xs:element>
-  <!-- Formal data -->
-  <xs:element name="Language" type="xs:string">
-      <xs:annotation>
-	<xs:documentation>The primary language of the resource.</xs:documentation>
-      </xs:annotation>
-  </xs:element>
-  <xs:element name="SpatialCoverage" type="xs:string">
-      <xs:annotation>
-	<xs:documentation>A geolocation the research data itself is related to. Content of this category is displayed in plain text.  If a longitude/latitude information is given it will be displayed at the map.</xs:documentation>
-      </xs:annotation>
-  </xs:element>
-  <xs:element name="TemporalCoverage" type="xs:string">
-      <xs:annotation>
-	<xs:documentation>Period of time the research data itself is related to. Could be a date format or plain text.</xs:documentation>
-      </xs:annotation>
-  </xs:element>
-  <xs:element name="Format" type="xs:string">
-      <xs:annotation>
-	<xs:documentation>Technical format of the resource.</xs:documentation>
-      </xs:annotation>
-  </xs:element>
-  <!-- Additional data -->
-  <xs:element name="Contact" type="xs:string">
-      <xs:annotation>
-	<xs:documentation>Any contact information for this resource.</xs:documentation>
-      </xs:annotation>
+  <xs:element name="RelatedIdentifier" type="xs:string">
+		<xs:annotation>
+	    	<xs:documentation>A link to or identifier of related sources or supplementary data.</xs:documentation>
+	  	</xs:annotation>
   </xs:element>
   <xs:element name="MetaDataAccess" type="xs:string">
-      <xs:annotation>
-	<xs:documentation>Is the OAI-PMH GetRecord request.</xs:documentation>
-      </xs:annotation>
+	  	<xs:annotation>
+	    	<xs:documentation>A link to the originally harvested metadata record.</xs:documentation>
+	  	</xs:annotation>
+  </xs:element>
+  <!-- Provenance Information -->
+  <xs:element name="creators">
+  	<xs:complexType>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+	  		<xs:element name="Creator" type="xs:string">
+	    		<xs:annotation>
+	      			<xs:documentation>The main researchers involved in producing or collecting the data, or the authors of the publication, or the measurement or monitoring station that provides the data, ordered by priority.</xs:documentation>
+	    		</xs:annotation>
+	  		</xs:element>
+		</xs:sequence>
+    </xs:complexType>	
+  </xs:element>
+  <xs:element name="publishers">
+    <xs:complexType>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+	  		<xs:element name="Publisher" type="xs:string">
+	    		<xs:annotation>
+	      			<xs:documentation>The name of the entity that holds, archives, publishes, prints, distributes, releases, issues or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role</xs:documentation>
+	    		</xs:annotation>
+	 	 	</xs:element>
+		</xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Contributor" type="xs:string">
+	  	<xs:annotation>
+	    	<xs:documentation>The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.</xs:documentation>
+	  	</xs:annotation>
+  </xs:element>
+  <xs:element name="PuplicationYear" type="xs:date">
+      	<xs:annotation>
+			<xs:documentation>The year when the data was or will be made publicly available.</xs:documentation>
+      	</xs:annotation>
+  </xs:element>
+  <xs:element name="Rights" type="xs:string">
+      	<xs:annotation>
+        	<xs:documentation>Any rights information for this resource.</xs:documentation>
+      	</xs:annotation>
+  </xs:element>
+  <xs:element name="OpenAccess" type="xs:boolean">
+	  	<xs:annotation>
+	    	<xs:documentation>Information on whether the dataset is openly accessible or not.</xs:documentation>
+	  	</xs:annotation>
+  </xs:element>
+  <xs:element name="Contact" type="xs:string">
+	  	<xs:annotation>
+	    	<xs:documentation>Any contact information for this resource.</xs:documentation>
+	  	</xs:annotation>
+  </xs:element>
+  <!-- Representation Information -->
+  <xs:element name="Language" type="xs:string">
+      	<xs:annotation>
+			<xs:documentation>The primary language of the resource.</xs:documentation>
+      	</xs:annotation>
+  </xs:element>
+  <xs:element name="ResourceType" type="xs:string">
+      	<xs:annotation>
+			<xs:documentation>The general type of the resource.</xs:documentation>
+      	</xs:annotation>
+  </xs:element>
+  <xs:element name="Format" type="xs:string">
+      	<xs:annotation>
+			<xs:documentation>The technical format of the resource.</xs:documentation>
+      	</xs:annotation>  
+  </xs:element>
+  <xs:element name="disciplines">
+    <xs:complexType>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+	  		<xs:element name="Discipline" type="xs:string">
+	    		<xs:annotation>
+	      			<xs:documentation>The scientific discipline(s) the resource originates from.</xs:documentation>
+		    	</xs:annotation>
+	  		</xs:element>
+		</xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SpatialCoverage" type="xs:string">
+      	<xs:annotation>
+			<xs:documentation>A geolocation the data itself describes or is related to. Content of this category is displayed in plain text. If latitude/longitude information is provided, it will be displayed on the b2find-map. Only geocoordinates on earth, no vertical layers are represented.</xs:documentation>
+      	</xs:annotation>
+  </xs:element>
+  <xs:element name="TemporalCoverage" type="xs:string">
+      	<xs:annotation>
+			<xs:documentation>Period of time the research data itself describes or is related to.</xs:documentation>
+      	</xs:annotation>
   </xs:element>
 </xs:schema>
