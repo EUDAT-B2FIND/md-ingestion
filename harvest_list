@@ -21,7 +21,8 @@ envidat https://www.envidat.ch/api/3/action ckan_api json
 emso http://dataportals.pangaea.de/emso/oai pan_md full
 ## Capsella
 #http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher?verb=ListRecords&metadataPrefix=oai_dc
-capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc 
+#capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc 
+capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListIdentifiers oai_dc 
 ## Life+Respira
 life+respira https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ## NILU
