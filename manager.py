@@ -345,7 +345,11 @@ def process_map(MP, rlist):
         results['time'] = ctime
         
         # save stats:
-        MP.OUT.save_stats(request[0]+'-' + request[3], request[4],'m',results)
+        if len(request) > 4:
+            MP.OUT.save_stats(request[0]+'-' + request[3], request[4],'m',results)
+        else:
+            MP.OUT.save_stats(request[0]+'-' + request[3],'SET_1','v',results)
+
 
 def process_validate(VD, rlist):
     ## process_validate (MAPPER object, rlist) - function
