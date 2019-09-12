@@ -319,7 +319,7 @@ class Harvester(object):
                     "searchTextInMetadata" :True, 
                     "searchTextInAdditionalData" :True,
                     "page" : 1, 
-                    "size" : 20 
+                    "size" : 500 
                     ##"highlight" : { "preTag" : "<b>", "postTag" : "</b>", "fragmentSize" : 500, "fragmentsCount" : 1 } 
                 }
                 headers = {'content-type': 'application/json'}
