@@ -11,12 +11,17 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## Materials Cloud
+materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc full
+## CLARIN
+#clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
+clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
 ## EnviDat
 #envidat https://www.envidat.ch/api/3/action package_list json 
 #https://www.envidat.ch/oai?verb=ListRecords&metadataPrefix=iso19139
-#envidat https://www.envidat.ch/oai ListRecords iso19139 
+envidat https://www.envidat.ch/oai ListRecords iso19139 
 #envidat https://www.envidat.ch/oai ListRecords datacite
-envidat https://www.envidat.ch/api/3/action ckan_api json 
+#envidat https://www.envidat.ch/api/3/action ckan_api json 
 ## EMSO
 emso http://dataportals.pangaea.de/emso/oai pan_md full
 ## Capsella
@@ -172,14 +177,17 @@ lter   https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc LTER # d952913
 #deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 ## HDCP2
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
-## GFZ  ## oai_datacite or iso1939 ???
-gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
+## GFZ  
+# FID GEO
+fidgeo http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB.FID
+## oai_datacite or iso1939 ???
+#gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
 ##gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
 ## GFZ sub communities
-gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
-geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON ##???iso19139  DOIDB.GEOFON
-geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET ##???iso19139  DOIDB.GEOFON
-icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
+#gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
+#geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON ##???iso19139  DOIDB.GEOFON
+#geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET ##???iso19139  DOIDB.GEOFON
+#icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
 ###
 gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
 isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
