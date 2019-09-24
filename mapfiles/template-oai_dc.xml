@@ -47,7 +47,7 @@
       <xpath>false</xpath>
     </field>
     <field name="Contact">
-      <xpath>//dc:publisher/text()</xpath>
+      <xpath>//dc:publisher</xpath>
     </field>
     <!-- Representation Information -->
     <field name="Language">

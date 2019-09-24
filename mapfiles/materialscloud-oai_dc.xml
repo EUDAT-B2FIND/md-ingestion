@@ -51,7 +51,7 @@
     </field>
     <!-- Representation Information -->
     <field name="Language">
-      <string>english</string>
+      <xpath>//dc:language</xpath>
     </field>
     <field name="ResourceType">
       <xpath>//dc:type</xpath>

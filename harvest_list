@@ -16,6 +16,8 @@ materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc full
 ## CLARIN
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
 clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
+## B2FIND export
+b2find http://b2find.eudat.eu/api/3/action ckan_api json
 ## EnviDat
 #envidat https://www.envidat.ch/api/3/action package_list json 
 #https://www.envidat.ch/oai?verb=ListRecords&metadataPrefix=iso19139
@@ -49,6 +51,7 @@ dataverseno https://dataverse.no/oai ListRecords oai_dc trolling
 ##???herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc 
 ##???herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
 herbadrop  https://opendata.cines.fr/herbadrop-api/rest/data/search POST json
+##herbadrop  https://ariane-test.cines.fr POST json
 ##Yoda (Utrecht University)
 utrechtuni https://public.yoda.uu.nl/oai/oai ListRecords datacite
 ##E-Rosa Inra ??
@@ -104,7 +107,8 @@ anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw iso19
 ## DublinCore !!! 
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw oai_dc anaee  
 #anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw iso-19139 anaee 
-envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd  
+##envriplus http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/csw-envriplus csw  iso19139 anaee ###iso19139 --> http://www.isotc211.org/2005/gmd
+envriplus http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 flagship
 #deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 full
 ##euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw oai_dc ##euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS?service=CSW&version=2.0.2&request=GetRecords&outputSchema=http://www.isotc211.org/2005/gmd&typeNames=csw:Record&RESULTTYPE=results&ELEMENTSETNAME=full
@@ -176,12 +180,19 @@ lter   https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc LTER # d952913
 ## lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
 #deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 ## HDCP2
+<<<<<<< HEAD
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 ## GFZ  
 # FID GEO
 fidgeo http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB.FID
 ## oai_datacite or iso1939 ???
 #gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
+=======
+## hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
+hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  hope
+## GFZ  ## oai_datacite or iso1939 ???
+gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
+>>>>>>> 21ae3272741a02b295276fda090880b79023c7b9
 ##gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
 ## GFZ sub communities
 #gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ

@@ -1,0 +1,2006 @@
+{
+    "id": "null", 
+    "label": "", 
+    "number": 0, 
+    "children": [
+        {
+            "id": "1 Humanities", 
+            "label": "Humanities", 
+            "number": "1", 
+            "children": [
+                {
+                    "id": "101 Ancient Cultures", 
+                    "label": "Ancient Cultures", 
+                    "number": "101", 
+                    "children": [
+                        {
+                            "id": "10101 Prehistory", 
+                            "label": "Prehistory", 
+                            "number": "10101", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10102 Classical Philology", 
+                            "label": "Classical Philology", 
+                            "number": "10102", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10103 Ancient History", 
+                            "label": "Ancient History", 
+                            "number": "10103", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10104 Classical Archaeology", 
+                            "label": "Classical Archaeology", 
+                            "number": "10104", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10105 Egyptology and Ancient Near Eastern Studies", 
+                            "label": "Egyptology and Ancient Near Eastern Studies", 
+                            "number": "10105", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "102 History", 
+                    "label": "History", 
+                    "number": "102", 
+                    "children": [
+                        {
+                            "id": "10201 Medieval History", 
+                            "label": "Medieval History", 
+                            "number": "10201", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10202 Early Modern History", 
+                            "label": "Early Modern History", 
+                            "number": "10202", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10203 Modern and Current History", 
+                            "label": "Modern and Current History", 
+                            "number": "10203", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10204 History of Science", 
+                            "label": "History of Science", 
+                            "number": "10204", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10205 History of Political Thought", 
+                            "label": "History of Political Thought", 
+                            "number": "10205", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "103 Fine Arts, Music, Theatre and Media Studies", 
+                    "label": "Fine Arts, Music, Theatre and Media Studies", 
+                    "number": "103", 
+                    "children": [
+                        {
+                            "id": "10301 Art History", 
+                            "label": "Art History", 
+                            "number": "10301", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10302 Fine Arts", 
+                            "label": "Fine Arts", 
+                            "number": "10302", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10303 Dance", 
+                            "label": "Dance", 
+                            "number": "10303", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10304 Theater", 
+                            "label": "Theater", 
+                            "number": "10304", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10305 Film studies", 
+                            "label": "Film studies", 
+                            "number": "10305", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10306 Photography", 
+                            "label": "Photography", 
+                            "number": "10306", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10307 Music", 
+                            "label": "Music", 
+                            "number": "10307", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10308 Design", 
+                            "label": "Design", 
+                            "number": "10308", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10309 Mixed Media and Media Studies", 
+                            "label": "Mixed Media and Media Studies", 
+                            "number": "10309", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "104 Linguistics", 
+                    "label": "Linguistics", 
+                    "number": "104", 
+                    "children": [
+                        {
+                            "id": "10401 General and Applied Linguistics", 
+                            "label": "General and Applied Linguistics", 
+                            "number": "10401", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10402 Individual Linguistics", 
+                            "label": "Individual Linguistics", 
+                            "number": "10402", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10403 Non-European Languages,Historical Linguistics", 
+                            "label": "Non-European Languages,Historical Linguistics", 
+                            "number": "10403", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10404 Typology, Etymology, Morphology, Phonetics", 
+                            "label": "Typology, Etymology, Morphology, Phonetics", 
+                            "number": "10404", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "105 Literary Studies", 
+                    "label": "Literary Studies", 
+                    "number": "105", 
+                    "children": [
+                        {
+                            "id": "10501 Medieval European Literature", 
+                            "label": "Medieval European Literature", 
+                            "number": "10501", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10502 Modern European Literature", 
+                            "label": "Modern European Literature", 
+                            "number": "10502", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10503 North American Literature", 
+                            "label": "North American Literature", 
+                            "number": "10503", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10504 South American Literature", 
+                            "label": "South American Literature", 
+                            "number": "10504", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10505 African Literature", 
+                            "label": "African Literature", 
+                            "number": "10505", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10506 Asian Literature", 
+                            "label": "Asian Literature", 
+                            "number": "10506", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10507 Australia/Oceania Literature", 
+                            "label": "Australia/Oceania Literature", 
+                            "number": "10507", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10508 Literary Theory and Comparative Literature", 
+                            "label": "Literary Theory and Comparative Literature", 
+                            "number": "10508", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10509 Poetry", 
+                            "label": "Poetry", 
+                            "number": "10509", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "106 Social and Cultural Anthropology", 
+                    "label": "Social and Cultural Anthropology", 
+                    "number": "106", 
+                    "children": [
+                        {
+                            "id": "10601 Social and Cultural Anthropology and Ethnology/Folklore", 
+                            "label": "Social and Cultural Anthropology and Ethnology/Folklore", 
+                            "number": "10601", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10602 Asian Studies", 
+                            "label": "Asian Studies", 
+                            "number": "10602", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10603 African, American and Oceania Studies", 
+                            "label": "African, American and Oceania Studies", 
+                            "number": "10603", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10604 Arabian Studies, Semitic Studies", 
+                            "label": "Arabian Studies, Semitic Studies", 
+                            "number": "10604", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "107 Theology and Religion Studies", 
+                    "label": "Theology and Religion Studies", 
+                    "number": "107", 
+                    "children": [
+                        {
+                            "id": "10701 Protestant Theology", 
+                            "label": "Protestant Theology", 
+                            "number": "10701", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10702 Roman Catholic Theology", 
+                            "label": "Roman Catholic Theology", 
+                            "number": "10702", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10703 Jewish Studies", 
+                            "label": "Jewish Studies", 
+                            "number": "10703", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10704 Islam Studies", 
+                            "label": "Islam Studies", 
+                            "number": "10704", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10705 Indian Religions", 
+                            "label": "Indian Religions", 
+                            "number": "10705", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10706 East Asian Religions", 
+                            "label": "East Asian Religions", 
+                            "number": "10706", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10707 Comparative Religion Studies", 
+                            "label": "Comparative Religion Studies", 
+                            "number": "10707", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10708 Mythology", 
+                            "label": "Mythology", 
+                            "number": "10708", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "108 Philosophy", 
+                    "label": "Philosophy", 
+                    "number": "108", 
+                    "children": [
+                        {
+                            "id": "10801 History of Philosophy", 
+                            "label": "History of Philosophy", 
+                            "number": "10801", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10802  Theoretical Philosophy", 
+                            "label": "Theoretical Philosophy", 
+                            "number": "10802 ", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "10803 Practical Philosophy", 
+                            "label": "Practical Philosophy", 
+                            "number": "10803", 
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "id": "2 Social and Behavioural Sciences", 
+            "label": "Social and Behavioural Sciences", 
+            "number": "2", 
+            "children": [
+                {
+                    "id": "201 Education Sciences", 
+                    "label": "Education Sciences", 
+                    "number": "201", 
+                    "children": [
+                        {
+                            "id": "20101 General Education and History of Education", 
+                            "label": "General Education and History of Education", 
+                            "number": "20101", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20102 Research on Teaching, Learning and Training", 
+                            "label": "Research on Teaching, Learning and Training", 
+                            "number": "20102", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20103 Research on Socialization and Educational Institutions and Professionsy", 
+                            "label": "Research on Socialization and Educational Institutions and Professionsy", 
+                            "number": "20103", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "202 Psychology", 
+                    "label": "Psychology", 
+                    "number": "202", 
+                    "children": [
+                        {
+                            "id": "20201 General, Biological and Mathematical Psychology", 
+                            "label": "General, Biological and Mathematical Psychology", 
+                            "number": "20201", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20202 Developmental and Educational Psychology", 
+                            "label": "Developmental and Educational Psychology", 
+                            "number": "20202", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20203 Social Psychology, Industrial and Organisational Psychology", 
+                            "label": "Social Psychology, Industrial and Organisational Psychology", 
+                            "number": "20203", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20204 Differential Psychology, Clinical Psychology, Medical Psychology, Methodologyy", 
+                            "label": "Differential Psychology, Clinical Psychology, Medical Psychology, Methodologyy", 
+                            "number": "20204", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "203 Social Sciences", 
+                    "label": "Social Sciences", 
+                    "number": "203", 
+                    "children": [
+                        {
+                            "id": "20301 Sociological Theory", 
+                            "label": "Sociological Theory", 
+                            "number": "20301", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20302 Empirical Social Research", 
+                            "label": "Empirical Social Research", 
+                            "number": "20302", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20303 Communication Science", 
+                            "label": "Communication Science", 
+                            "number": "20303", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20304 Political Science", 
+                            "label": "Political Science", 
+                            "number": "20304", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "204 Economics", 
+                    "label": "Economics", 
+                    "number": "204", 
+                    "children": [
+                        {
+                            "id": "20401 Economic Theory", 
+                            "label": "Economic Theory", 
+                            "number": "20401", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20402 Economic and Social Policy", 
+                            "label": "Economic and Social Policy", 
+                            "number": "20402", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20403 Public Finance", 
+                            "label": "Public Finance", 
+                            "number": "20403", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20404 Business Administration", 
+                            "label": "Business Administration", 
+                            "number": "20404", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20405 Statistics and Econometrics", 
+                            "label": "Statistics and Econometrics", 
+                            "number": "20405", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20406 Economic and Social History", 
+                            "label": "Economic and Social History", 
+                            "number": "20406", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "205 Jurisprudence", 
+                    "label": "Jurisprudence", 
+                    "number": "205", 
+                    "children": [
+                        {
+                            "id": "20501 Legal and Political Philosophy, Legal History, Legal Theory", 
+                            "label": "Legal and Political Philosophy, Legal History, Legal Theory", 
+                            "number": "20501", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20502 Private Law", 
+                            "label": "Private Law", 
+                            "number": "20502", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20503 Public Law", 
+                            "label": "Public Law", 
+                            "number": "20503", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20504 Criminal Law and Law of Criminal Procedure", 
+                            "label": "Criminal Law and Law of Criminal Procedure", 
+                            "number": "20504", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "20505 Criminology", 
+                            "label": "Criminology", 
+                            "number": "20505", 
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "id": "3 Life Sciences", 
+            "label": "Life Sciences", 
+            "number": "3", 
+            "children": [
+                {
+                    "id": "301 Biology", 
+                    "label": "Biology", 
+                    "number": "301", 
+                    "children": [
+                        {
+                            "id": "30101 Basic Biological and Medical Research", 
+                            "label": "Basic Biological and Medical Research", 
+                            "number": "30101", 
+                            "children": [
+                                {
+                                    "id": "3010101 Biochemistry", 
+                                    "label": "Biochemistry", 
+                                    "number": "3010101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010102 Biophysics", 
+                                    "label": "Biophysics", 
+                                    "number": "3010102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010103 Cell Biology", 
+                                    "label": "Cell Biology", 
+                                    "number": "3010103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010104 Structural Biology", 
+                                    "label": "Structural Biology", 
+                                    "number": "3010104", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010105 General Genetics", 
+                                    "label": "General Genetics", 
+                                    "number": "3010105", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010106 Developmental Biology", 
+                                    "label": "Developmental Biology", 
+                                    "number": "3010106", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010107 Bioinformatics and Theoretical Biology", 
+                                    "label": "Bioinformatics and Theoretical Biology", 
+                                    "number": "3010107", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010108 Anatomy", 
+                                    "label": "Anatomy", 
+                                    "number": "3010108", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "30102 Plant Sciences ", 
+                            "label": "Plant Sciences ", 
+                            "number": "30102", 
+                            "children": [
+                                {
+                                    "id": "3010201 Plant Systematics and Evolution", 
+                                    "label": "Plant Systematics and Evolution", 
+                                    "number": "3010201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010202 Plant Ecology and Ecosystem Analysis", 
+                                    "label": "Plant Ecology and Ecosystem Analysis", 
+                                    "number": "3010202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010203 Inter-organismic Interactions of Plants", 
+                                    "label": "Inter-organismic Interactions of Plants", 
+                                    "number": "3010203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010204 Plant Physiology", 
+                                    "label": "Plant Physiology", 
+                                    "number": "3010204", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010205 Plant Biochemistry and Biophysics", 
+                                    "label": "Plant Biochemistry and Biophysics", 
+                                    "number": "3010205", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010206 Plant Cell and Developmental Biology", 
+                                    "label": "Plant Cell and Developmental Biology", 
+                                    "number": "3010206", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010207 Plant Genetics", 
+                                    "label": "Plant Genetics", 
+                                    "number": "3010207", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "30103  Zoology", 
+                            "label": "Zoology", 
+                            "number": "30103 ", 
+                            "children": [
+                                {
+                                    "id": "3010301 Systematics and Morphology", 
+                                    "label": "Systematics and Morphology", 
+                                    "number": "3010301", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010302 Evolution, Anthropology", 
+                                    "label": "Evolution, Anthropology", 
+                                    "number": "3010302", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010303 Animal Ecology, Biodiversity and Ecosystem Research", 
+                                    "label": "Animal Ecology, Biodiversity and Ecosystem Research", 
+                                    "number": "3010303", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010304 Sensory and Behavioural Biology", 
+                                    "label": "Sensory and Behavioural Biology", 
+                                    "number": "3010304", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010305 Biochemistry and Animal Physiology", 
+                                    "label": "Biochemistry and Animal Physiology", 
+                                    "number": "3010305", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3010306 Animal Genetics, Cell and Developmental Biology", 
+                                    "label": "Animal Genetics, Cell and Developmental Biology", 
+                                    "number": "3010306", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "302 Medicine", 
+                    "label": "Medicine", 
+                    "number": "302", 
+                    "children": [
+                        {
+                            "id": "30201 Microbiology, Virology and Immunology", 
+                            "label": "Microbiology, Virology and Immunology", 
+                            "number": "30201", 
+                            "children": [
+                                {
+                                    "id": "3020101 Metabolism, Biochemistry and Genetics of Microorganisms", 
+                                    "label": "Metabolism, Biochemistry and Genetics of Microorganisms", 
+                                    "number": "3020101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020102 Microbial Ecology and Applied Microbiology", 
+                                    "label": "Microbial Ecology and Applied Microbiology", 
+                                    "number": "3020102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020103 Medical Microbiology, Molecular Infection Biology", 
+                                    "label": "Medical Microbiology, Molecular Infection Biology", 
+                                    "number": "3020103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020104 Virology", 
+                                    "label": "Virology", 
+                                    "number": "3020104", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020105 Immunology", 
+                                    "label": "Immunology", 
+                                    "number": "3020105", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "30202 Medicine", 
+                            "label": "Medicine", 
+                            "number": "30202", 
+                            "children": [
+                                {
+                                    "id": "3020201 Epidemiology, Medical Biometry, Medical Informatics", 
+                                    "label": "Epidemiology, Medical Biometry, Medical Informatics", 
+                                    "number": "3020201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020202 Public Health, Health Services Research, Social Medicine", 
+                                    "label": "Public Health, Health Services Research, Social Medicine", 
+                                    "number": "3020202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020203 Human Genetics", 
+                                    "label": "Human Genetics", 
+                                    "number": "3020203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020204 Physiology", 
+                                    "label": "Physiology", 
+                                    "number": "3020204", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020205 Nutritional Sciences", 
+                                    "label": "Nutritional Sciences", 
+                                    "number": "3020205", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020206 Pathology and Forensic Medicine", 
+                                    "label": "Pathology and Forensic Medicine", 
+                                    "number": "3020206", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020207 Clinical Chemistry and Pathobiochemistry", 
+                                    "label": "Clinical Chemistry and Pathobiochemistry", 
+                                    "number": "3020207", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020208 Pharmacy", 
+                                    "label": "Pharmacy", 
+                                    "number": "3020208", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020209 Pharmacology", 
+                                    "label": "Pharmacology", 
+                                    "number": "3020209", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020209 Toxicology and Occupational Medicine", 
+                                    "label": "Toxicology and Occupational Medicine", 
+                                    "number": "3020209", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202010 Anaesthesiology", 
+                                    "label": "Anaesthesiology", 
+                                    "number": "30202010", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202011 Cardiology, Angiology", 
+                                    "label": "Cardiology, Angiology", 
+                                    "number": "30202011", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202012 Pneumology, Clinical Infectiology Intensive Care Medicine", 
+                                    "label": "Pneumology, Clinical Infectiology Intensive Care Medicine", 
+                                    "number": "30202012", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202013 Hematology, Oncology, Transfusion Medicine", 
+                                    "label": "Hematology, Oncology, Transfusion Medicine", 
+                                    "number": "30202013", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202014 Gastroenterology, Metabolism", 
+                                    "label": "Gastroenterology, Metabolism", 
+                                    "number": "30202014", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202015 Nephrology", 
+                                    "label": "Nephrology", 
+                                    "number": "30202015", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202016 Endocrinology, Diabetology", 
+                                    "label": "Endocrinology, Diabetology", 
+                                    "number": "30202016", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202017 Rheumatology, Clinical Immunology, Allergology", 
+                                    "label": "Rheumatology, Clinical Immunology, Allergology", 
+                                    "number": "30202017", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202018 Dermatology", 
+                                    "label": "Dermatology", 
+                                    "number": "30202018", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202019 Pediatric and Adolescent Medicine", 
+                                    "label": "Pediatric and Adolescent Medicine", 
+                                    "number": "30202019", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202020 Gynaecology and Obstetrics", 
+                                    "label": "Gynaecology and Obstetrics", 
+                                    "number": "30202020", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202021 Reproductive Medicine/Biology", 
+                                    "label": "Reproductive Medicine/Biology", 
+                                    "number": "30202021", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202022 Urology", 
+                                    "label": "Urology", 
+                                    "number": "30202022", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202023 Gerontology and Geriatric Medicine", 
+                                    "label": "Gerontology and Geriatric Medicine", 
+                                    "number": "30202023", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202024 Vascular and Visceral Surgery", 
+                                    "label": "Vascular and Visceral Surgery", 
+                                    "number": "30202024", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202025 Cardiothoracic Surgery", 
+                                    "label": "Cardiothoracic Surgery", 
+                                    "number": "30202025", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202026 Traumatology and Orthopaedics", 
+                                    "label": "Traumatology and Orthopaedics", 
+                                    "number": "30202026", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202027 Dentistry, Oral Surgery", 
+                                    "label": "Dentistry, Oral Surgery", 
+                                    "number": "30202027", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202028 Otolaryngology", 
+                                    "label": "Otolaryngology", 
+                                    "number": "30202028", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202029 Radiology and Nuclear Medicine", 
+                                    "label": "Radiology and Nuclear Medicine", 
+                                    "number": "30202029", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202030 Radiation Oncology and Radiobiology", 
+                                    "label": "Radiation Oncology and Radiobiology", 
+                                    "number": "30202030", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30202031 Biomedical Technology and Medical Physics", 
+                                    "label": "Biomedical Technology and Medical Physics", 
+                                    "number": "30202031", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "30203 Neurosciences", 
+                            "label": "Neurosciences", 
+                            "number": "30203", 
+                            "children": [
+                                {
+                                    "id": "3020301 Molecular Neuroscience and Neurogenetics", 
+                                    "label": "Molecular Neuroscience and Neurogenetics", 
+                                    "number": "3020301", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020302 Cellular Neuroscience", 
+                                    "label": "Cellular Neuroscience", 
+                                    "number": "3020302", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020303 Developmental Neurobiology", 
+                                    "label": "Developmental Neurobiology", 
+                                    "number": "3020303", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020304 Systemic Neuroscience, Computational Neuroscience, Behaviour", 
+                                    "label": "Systemic Neuroscience, Computational Neuroscience, Behaviour", 
+                                    "number": "3020304", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020305 Comparative Neurobiology", 
+                                    "label": "Comparative Neurobiology", 
+                                    "number": "3020305", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020306 Cognitive Neuroscience and Neuroimaging", 
+                                    "label": "Cognitive Neuroscience and Neuroimaging", 
+                                    "number": "3020306", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020307 Molecular Neurology", 
+                                    "label": "Molecular Neurology", 
+                                    "number": "3020307", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020308 Neurology, Neurosurgery", 
+                                    "label": "Neurology, Neurosurgery", 
+                                    "number": "3020308", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3020309 Psychotherapy, Psychosomatic Medicine", 
+                                    "label": "Psychotherapy, Psychosomatic Medicine", 
+                                    "number": "3020309", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30203010 Ophthalmology", 
+                                    "label": "Ophthalmology", 
+                                    "number": "30203010", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "30203011 Biological Psychiatry", 
+                                    "label": "Biological Psychiatry", 
+                                    "number": "30203011", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "303 Agriculture, Forestry, Horticulture and Veterinary Medicine", 
+                    "label": "Agriculture, Forestry, Horticulture and Veterinary Medicine", 
+                    "number": "303", 
+                    "children": [
+                        {
+                            "id": "30301 Agriculture, Forestry, Horticulture", 
+                            "label": "Agriculture, Forestry, Horticulture", 
+                            "number": "30301", 
+                            "children": [
+                                {
+                                    "id": "3030101 Soil Sciences", 
+                                    "label": "Soil Sciences", 
+                                    "number": "3030101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030102 Plant Cultivation", 
+                                    "label": "Plant Cultivation", 
+                                    "number": "3030102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030103 Plant Nutrition", 
+                                    "label": "Plant Nutrition", 
+                                    "number": "3030103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030104 Ecology of Agricultural Landscapes", 
+                                    "label": "Ecology of Agricultural Landscapes", 
+                                    "number": "3030104", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030105 Plant Breeding", 
+                                    "label": "Plant Breeding", 
+                                    "number": "3030105", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030106 Phytomedicine", 
+                                    "label": "Phytomedicine", 
+                                    "number": "3030106", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030107 Agricultural and Food Process Engineering", 
+                                    "label": "Agricultural and Food Process Engineering", 
+                                    "number": "3030107", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030108 Agricultural Economics and Sociology", 
+                                    "label": "Agricultural Economics and Sociology", 
+                                    "number": "3030108", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030109 Basic Forest Research, Control and Use of Forest Resources", 
+                                    "label": "Basic Forest Research, Control and Use of Forest Resources", 
+                                    "number": "3030109", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "30302 Veterinary Medicine", 
+                            "label": "Veterinary Medicine", 
+                            "number": "30302", 
+                            "children": [
+                                {
+                                    "id": "3030201 Animal Husbandry, Breeding and Hygiene", 
+                                    "label": "Animal Husbandry, Breeding and Hygiene", 
+                                    "number": "3030201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030202 Animal Nutrition and Nutrition Physiology", 
+                                    "label": "Animal Nutrition and Nutrition Physiology", 
+                                    "number": "3030202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030203 Basic Veterinary Medical Science", 
+                                    "label": "Basic Veterinary Medical Science", 
+                                    "number": "3030203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "3030204 Basic Research on Pathogenesis, Diagnostics and Therapy and Clinical Veterinary Medicine", 
+                                    "label": "Basic Research on Pathogenesis, Diagnostics and Therapy and Clinical Veterinary Medicine", 
+                                    "number": "3030204", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "id": "4 Natural Sciences", 
+            "label": "Natural Sciences", 
+            "number": "4", 
+            "children": [
+                {
+                    "id": "401 Chemistry", 
+                    "label": "Chemistry", 
+                    "number": "401", 
+                    "children": [
+                        {
+                            "id": "40101 Molecular Chemistry", 
+                            "label": "Molecular Chemistry", 
+                            "number": "40101", 
+                            "children": [
+                                {
+                                    "id": "4010101 Inorganic Molecular Chemistry", 
+                                    "label": "Inorganic Molecular Chemistry", 
+                                    "number": "4010101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4010102 Organic Molecular Chemistry", 
+                                    "label": "Organic Molecular Chemistry", 
+                                    "number": "4010102", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40102 Chemical Solid State and Surface Research", 
+                            "label": "Chemical Solid State and Surface Research", 
+                            "number": "40102", 
+                            "children": [
+                                {
+                                    "id": "4010201 Solid State and Surface Chemistry, Material Synthesis", 
+                                    "label": "Solid State and Surface Chemistry, Material Synthesis", 
+                                    "number": "4010201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4010202 Physical Chemistry of Solids and Surfaces, Material Characterisation", 
+                                    "label": "Physical Chemistry of Solids and Surfaces, Material Characterisation", 
+                                    "number": "4010202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4010203 Theory and Modelling", 
+                                    "label": "Theory and Modelling", 
+                                    "number": "4010203", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40103 Physical and Theoretical Chemistry", 
+                            "label": "Physical and Theoretical Chemistry", 
+                            "number": "40103", 
+                            "children": [
+                                {
+                                    "id": "4010301 Physical Chemistry of Molecules, Interfaces and Liquids - Spectroscopy, Kinetics", 
+                                    "label": "Physical Chemistry of Molecules, Interfaces and Liquids - Spectroscopy, Kinetics", 
+                                    "number": "4010301", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4010302 General Theoretical Chemistry", 
+                                    "label": "General Theoretical Chemistry", 
+                                    "number": "4010302", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40104 Analytical Chemistry, Method Development", 
+                            "label": "Analytical Chemistry, Method Development", 
+                            "number": "40104", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40105 Biological Chemistry and Food Chemistry", 
+                            "label": "Biological Chemistry and Food Chemistry", 
+                            "number": "40105", 
+                            "children": [
+                                {
+                                    "id": "4010501 Biological and Biomimetic Chemistry", 
+                                    "label": "Biological and Biomimetic Chemistry", 
+                                    "number": "4010501", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4010502 Food Chemistry", 
+                                    "label": "Food Chemistry", 
+                                    "number": "4010502", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40106 Polymer Research", 
+                            "label": "Polymer Research", 
+                            "number": "40106", 
+                            "children": [
+                                {
+                                    "id": "4010601 Preparatory and Physical Chemistry of Polymers", 
+                                    "label": "Preparatory and Physical Chemistry of Polymers", 
+                                    "number": "4010601", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4010602 Experimental and Theoretical Physics of Polymers", 
+                                    "label": "Experimental and Theoretical Physics of Polymers", 
+                                    "number": "4010602", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4010603 Polymer Materials", 
+                                    "label": "Polymer Materials", 
+                                    "number": "4010603", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "402 Physics", 
+                    "label": "Physics", 
+                    "number": "402", 
+                    "children": [
+                        {
+                            "id": "40201 Condensed Matter Physics", 
+                            "label": "Condensed Matter Physics", 
+                            "number": "40201", 
+                            "children": [
+                                {
+                                    "id": "4020101 Experimental Condensed Matter Physics", 
+                                    "label": "Experimental Condensed Matter Physics", 
+                                    "number": "4020101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020102 Theoretical Condensed Matter Physics", 
+                                    "label": "Theoretical Condensed Matter Physics", 
+                                    "number": "4020102", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40202 Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas", 
+                            "label": "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas", 
+                            "number": "40202", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40203 Particles, Nuclei and Fields", 
+                            "label": "Particles, Nuclei and Fields", 
+                            "number": "40203", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40204 Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics", 
+                            "label": "Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics", 
+                            "number": "40204", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40205 Astrophysics and Astronomy", 
+                            "label": "Astrophysics and Astronomy", 
+                            "number": "40205", 
+                            "children": [
+                                {
+                                    "id": "4020501 Astrophysical Processes", 
+                                    "label": "Astrophysical Processes", 
+                                    "number": "4020501", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020502 Cosmology", 
+                                    "label": "Cosmology", 
+                                    "number": "4020502", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020503 Exoplanet Astronomy", 
+                                    "label": "Exoplanet Astronomy", 
+                                    "number": "4020503", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020504 Galactic and extragalactic Astronomy", 
+                                    "label": "Galactic and extragalactic Astronomy", 
+                                    "number": "4020504", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020505 High Energy Astrophysics", 
+                                    "label": "High Energy Astrophysics", 
+                                    "number": "4020505", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020506 Interdisciplinary Astronomy", 
+                                    "label": "Interdisciplinary Astronomy", 
+                                    "number": "4020506", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020507 Interstellar medium", 
+                                    "label": "Interstellar medium", 
+                                    "number": "4020507", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020508 Observational Astronomy", 
+                                    "label": "Observational Astronomy", 
+                                    "number": "4020508", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020509 Solar Physics", 
+                                    "label": "Solar Physics", 
+                                    "number": "4020509", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "40205010 Solar System Astronomy", 
+                                    "label": "Solar System Astronomy", 
+                                    "number": "40205010", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "40205011 Stellar Astronomy", 
+                                    "label": "Stellar Astronomy", 
+                                    "number": "40205011", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40206 Space Physics", 
+                            "label": "Space Physics", 
+                            "number": "40206", 
+                            "children": [
+                                {
+                                    "id": "4020601 Physics of atmosphere and space plasmas", 
+                                    "label": "Physics of atmosphere and space plasmas", 
+                                    "number": "4020601", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020602  Magnetospheric physics", 
+                                    "label": " Magnetospheric physics", 
+                                    "number": "4020602", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020603 Solar-terrestrial interaction, Space weather", 
+                                    "label": "Solar-terrestrial interaction, Space weather", 
+                                    "number": "4020603", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4020604 Space debris and near-Earth objects", 
+                                    "label": "Space debris and near-Earth objects", 
+                                    "number": "4020604", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "403 Mathematics", 
+                    "label": "Mathematics", 
+                    "number": "403", 
+                    "children": [
+                        {
+                            "id": "40301 Approximation Theory", 
+                            "label": "Approximation Theory", 
+                            "number": "40301", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40302 Numerical Analysis", 
+                            "label": "Numerical Analysis", 
+                            "number": "40302", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40303 Dynamical Systems", 
+                            "label": "Dynamical Systems", 
+                            "number": "40303", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40304 Cryptography", 
+                            "label": "Cryptography", 
+                            "number": "40304", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40305 Logic", 
+                            "label": "Logic", 
+                            "number": "40305", 
+                            "children": []
+                        }
+                    ]
+                }, 
+                {
+                    "id": "404 Geosciences", 
+                    "label": "Geosciences", 
+                    "number": "404", 
+                    "children": [
+                        {
+                            "id": "40401 Atmospheric Sciences", 
+                            "label": "Atmospheric Sciences", 
+                            "number": "40401", 
+                            "children": [
+                                {
+                                    "id": "4040101 Meteorology", 
+                                    "label": "Meteorology", 
+                                    "number": "4040101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040102 Climatology", 
+                                    "label": "Climatology", 
+                                    "number": "4040102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040103 Atmospheric chemistry", 
+                                    "label": "Atmospheric chemistry", 
+                                    "number": "4040103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040104 Atmospheric physics", 
+                                    "label": "Atmospheric physics", 
+                                    "number": "4040104", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040105 Aeronomy", 
+                                    "label": "Aeronomy", 
+                                    "number": "4040105", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040106 Ionospheric physics", 
+                                    "label": "Ionospheric physics", 
+                                    "number": "4040106", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40402 Biospheric Sciences", 
+                            "label": "Biospheric Sciences", 
+                            "number": "40402", 
+                            "children": [
+                                {
+                                    "id": "4040201 Biogeochemistry", 
+                                    "label": "Biogeochemistry", 
+                                    "number": "4040201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040202 Biogeography", 
+                                    "label": "Biogeography", 
+                                    "number": "4040202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040203 Ecology", 
+                                    "label": "Ecology", 
+                                    "number": "4040203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040204 Geoarchaeology", 
+                                    "label": "Geoarchaeology", 
+                                    "number": "4040204", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040205 Geomicrobiology", 
+                                    "label": "Geomicrobiology", 
+                                    "number": "4040205", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040206 Paleontology", 
+                                    "label": "Paleontology", 
+                                    "number": "4040206", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40403 Hydrospheric Sciences", 
+                            "label": "Hydrospheric Sciences", 
+                            "number": "40403", 
+                            "children": [
+                                {
+                                    "id": "4040301 Hydrology and Hydrogeology", 
+                                    "label": "Hydrology and Hydrogeology", 
+                                    "number": "4040301", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040302 Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management", 
+                                    "label": "Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management", 
+                                    "number": "4040302", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40404 Oceanography/Marine Science", 
+                            "label": "Oceanography/Marine Science", 
+                            "number": "40404", 
+                            "children": [
+                                {
+                                    "id": "4040401 Physical Oceanography", 
+                                    "label": "Physical Oceanography", 
+                                    "number": "4040401", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040402 Chemical Oceanography", 
+                                    "label": "Chemical Oceanography", 
+                                    "number": "4040402", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040403 Marine Biodiversity", 
+                                    "label": "Marine Biodiversity", 
+                                    "number": "4040403", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40405 Geospheric Sciences", 
+                            "label": "Geospheric Sciences", 
+                            "number": "40405", 
+                            "children": [
+                                {
+                                    "id": "4040501 Geology", 
+                                    "label": "Geology", 
+                                    "number": "4040501", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040502 Geography", 
+                                    "label": "Geography", 
+                                    "number": "4040502", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040503 Geochemistry/Mineralogy and Crystallography/Petrology", 
+                                    "label": "Geochemistry/Mineralogy and Crystallography/Petrology", 
+                                    "number": "4040503", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040504 Geophysics/Seismology", 
+                                    "label": "Geophysics/Seismology", 
+                                    "number": "4040504", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040505 Geodesy, Geoinformatics and Remote Sensing", 
+                                    "label": "Geodesy, Geoinformatics and Remote Sensing", 
+                                    "number": "4040505", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040506 Glaciology", 
+                                    "label": "Glaciology", 
+                                    "number": "4040506", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "4040507 Volcanology", 
+                                    "label": "Volcanology", 
+                                    "number": "4040507", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "40406 Earth System Research", 
+                            "label": "Earth System Research", 
+                            "number": "40406", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "40407 Environmental Research", 
+                            "label": "Environmental Research", 
+                            "number": "40407", 
+                            "children": [
+                                {
+                                    "id": "4040701 Environmental Monitoring", 
+                                    "label": "Environmental Monitoring", 
+                                    "number": "4040701", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "id": "5 Engineering Sciencesy", 
+            "label": "Engineering Sciencesy", 
+            "number": "5", 
+            "children": [
+                {
+                    "id": "501 Mechanical and industrial Engineeringy", 
+                    "label": "Mechanical and industrial Engineeringy", 
+                    "number": "501", 
+                    "children": [
+                        {
+                            "id": "50101 Production Technologyy", 
+                            "label": "Production Technologyy", 
+                            "number": "50101", 
+                            "children": [
+                                {
+                                    "id": "5010101 Metal-Cutting Manufacturing Engineeringy", 
+                                    "label": "Metal-Cutting Manufacturing Engineeringy", 
+                                    "number": "5010101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5010102 Primary Shaping and Reshaping Technologyy", 
+                                    "label": "Primary Shaping and Reshaping Technologyy", 
+                                    "number": "5010102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5010103 Micro-, Precision, Mounting, Joining, Separation Technologyy", 
+                                    "label": "Micro-, Precision, Mounting, Joining, Separation Technologyy", 
+                                    "number": "5010103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5010104 Plastics Engineeringy", 
+                                    "label": "Plastics Engineeringy", 
+                                    "number": "5010104", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5010105 Production Automation, Factory Operation, Operations Manangementy", 
+                                    "label": "Production Automation, Factory Operation, Operations Manangementy", 
+                                    "number": "5010105", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "50102 Mechanics and Constructive Mechanical Engineeringy", 
+                            "label": "Mechanics and Constructive Mechanical Engineeringy", 
+                            "number": "50102", 
+                            "children": [
+                                {
+                                    "id": "5010201 Construction, Machine Elementsy", 
+                                    "label": "Construction, Machine Elementsy", 
+                                    "number": "5010201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5010202 Mechanicsy", 
+                                    "label": "Mechanicsy", 
+                                    "number": "5010202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5010203 Lightweight Construction, Textile Technologyy", 
+                                    "label": "Lightweight Construction, Textile Technologyy", 
+                                    "number": "5010203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5010204 Acousticsy", 
+                                    "label": "Acousticsy", 
+                                    "number": "5010204", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "502 Thermal Engineering/Process Engineeringy", 
+                    "label": "Thermal Engineering/Process Engineeringy", 
+                    "number": "502", 
+                    "children": [
+                        {
+                            "id": "50201 Process Engineering, Technical Chemistryy", 
+                            "label": "Process Engineering, Technical Chemistryy", 
+                            "number": "50201", 
+                            "children": [
+                                {
+                                    "id": "5020101 ChemistryChemical and Thermal Process Engineeringy", 
+                                    "label": "ChemistryChemical and Thermal Process Engineeringy", 
+                                    "number": "5020101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5020102 Technical Chemistryy", 
+                                    "label": "Technical Chemistryy", 
+                                    "number": "5020102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5020103 Mechanical Process Engineeringy", 
+                                    "label": "Mechanical Process Engineeringy", 
+                                    "number": "5020103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5020104 Biological Process Engineeringy", 
+                                    "label": "Biological Process Engineeringy", 
+                                    "number": "5020104", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "50202 Heat Energy Technology, Thermal Machines, Fluid Mechanicsy", 
+                            "label": "Heat Energy Technology, Thermal Machines, Fluid Mechanicsy", 
+                            "number": "50202", 
+                            "children": [
+                                {
+                                    "id": "5020201 Energy Process Engineeringy", 
+                                    "label": "Energy Process Engineeringy", 
+                                    "number": "5020201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5020202 Technical Thermodynamicsy", 
+                                    "label": "Technical Thermodynamicsy", 
+                                    "number": "5020202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5020203 Fluid Mechanicsy", 
+                                    "label": "Fluid Mechanicsy", 
+                                    "number": "5020203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5020204 Hydraulic and Turbo Engines and Piston Enginesy", 
+                                    "label": "Hydraulic and Turbo Engines and Piston Enginesy", 
+                                    "number": "5020204", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "503 Materials Science and Engineeringy", 
+                    "label": "Materials Science and Engineeringy", 
+                    "number": "503", 
+                    "children": [
+                        {
+                            "id": "50301 Materials Engineeringy", 
+                            "label": "Materials Engineeringy", 
+                            "number": "50301", 
+                            "children": [
+                                {
+                                    "id": "5030101 Metallurgical and Thermal Processes, Thermomechanical Treatment of Materialsy", 
+                                    "label": "Metallurgical and Thermal Processes, Thermomechanical Treatment of Materialsy", 
+                                    "number": "5030101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030102 Sintered Metallic and Ceramic Materialsy", 
+                                    "label": "Sintered Metallic and Ceramic Materialsy", 
+                                    "number": "5030102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030103 Composite Materialsy", 
+                                    "label": "Composite Materialsy", 
+                                    "number": "5030103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030104 Mechanical Behaviour of Construction Materialsy", 
+                                    "label": "Mechanical Behaviour of Construction Materialsy", 
+                                    "number": "5030104", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030105 Coating and Surface Technologyy", 
+                                    "label": "Coating and Surface Technologyy", 
+                                    "number": "5030105", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "50302 Materials Sciencey", 
+                            "label": "Materials Sciencey", 
+                            "number": "50302", 
+                            "children": [
+                                {
+                                    "id": "5030201 Thermodynamics and Kinetics of Materialsy", 
+                                    "label": "Thermodynamics and Kinetics of Materialsy", 
+                                    "number": "5030201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030202 Synthesis and Properties of Functional Materialsy", 
+                                    "label": "Synthesis and Properties of Functional Materialsy", 
+                                    "number": "5030202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030203 Microstructural Mechanical Properties of Materialsy", 
+                                    "label": "Microstructural Mechanical Properties of Materialsy", 
+                                    "number": "5030203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030204 Structuring and Functionalisationy", 
+                                    "label": "Structuring and Functionalisationy", 
+                                    "number": "5030204", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5030205 Biomaterialsy", 
+                                    "label": "Biomaterialsy", 
+                                    "number": "5030205", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "504 Computer Science, Electrical and System Engineeringy", 
+                    "label": "Computer Science, Electrical and System Engineeringy", 
+                    "number": "504", 
+                    "children": [
+                        {
+                            "id": "50401 Systems Engineeringy", 
+                            "label": "Systems Engineeringy", 
+                            "number": "50401", 
+                            "children": [
+                                {
+                                    "id": "5040101 Automation, Control Systems, Robotics, Mechatronicsy", 
+                                    "label": "Automation, Control Systems, Robotics, Mechatronicsy", 
+                                    "number": "5040101", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040102 Measurement Systemsy", 
+                                    "label": "Measurement Systemsy", 
+                                    "number": "5040102", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040103 Microsystemsy", 
+                                    "label": "Microsystemsy", 
+                                    "number": "5040103", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040104 Traffic and Transport Systems, Logisticsy", 
+                                    "label": "Traffic and Transport Systems, Logisticsy", 
+                                    "number": "5040104", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040105 Human Factors, Ergonomics, Human-Machine Systemsy", 
+                                    "label": "Human Factors, Ergonomics, Human-Machine Systemsy", 
+                                    "number": "5040105", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "50402 Electrical Engineeringy", 
+                            "label": "Electrical Engineeringy", 
+                            "number": "50402", 
+                            "children": [
+                                {
+                                    "id": "5040201 Electronic Semiconductors, Components, Circuits, Systemsy", 
+                                    "label": "Electronic Semiconductors, Components, Circuits, Systemsy", 
+                                    "number": "5040201", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040202 Communication, High-Frequency and Network Technology, Theoretical Electrical Engineeringy", 
+                                    "label": "Communication, High-Frequency and Network Technology, Theoretical Electrical Engineeringy", 
+                                    "number": "5040202", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040203 Electrical Energy Generation, Distribution, Application", 
+                                    "label": "Electrical Energy Generation, Distribution, Application", 
+                                    "number": "5040203", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040204 Radio Science and Radar Technologyy", 
+                                    "label": "Radio Science and Radar Technologyy", 
+                                    "number": "5040204", 
+                                    "children": []
+                                }
+                            ]
+                        }, 
+                        {
+                            "id": "50403 Computer Sciencey", 
+                            "label": "Computer Sciencey", 
+                            "number": "50403", 
+                            "children": [
+                                {
+                                    "id": "5040301 Theoretical Computer Sciencey", 
+                                    "label": "Theoretical Computer Sciencey", 
+                                    "number": "5040301", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040302 Software Technologyy", 
+                                    "label": "Software Technologyy", 
+                                    "number": "5040302", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040303 Operating, Communication, Library and Information Systemsy", 
+                                    "label": "Operating, Communication, Library and Information Systemsy", 
+                                    "number": "5040303", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040304 Artificial Intelligence, Image and Language Processingy", 
+                                    "label": "Artificial Intelligence, Image and Language Processingy", 
+                                    "number": "5040304", 
+                                    "children": []
+                                }, 
+                                {
+                                    "id": "5040305 Computer Architecture, Computer Engineering and Embedded Systemsy", 
+                                    "label": "Computer Architecture, Computer Engineering and Embedded Systemsy", 
+                                    "number": "5040305", 
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "505 Construction Engineering and Architecturey", 
+                    "label": "Construction Engineering and Architecturey", 
+                    "number": "505", 
+                    "children": [
+                        {
+                            "id": "50501 Architecture, Building and Construction History, Sustainable Building Technology, Building Designy", 
+                            "label": "Architecture, Building and Construction History, Sustainable Building Technology, Building Designy", 
+                            "number": "50501", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "50502 Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planningy", 
+                            "label": "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planningy", 
+                            "number": "50502", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "50503 Construction Material Sciences, Chemistry, Building Physics", 
+                            "label": "Construction Material Sciences, Chemistry, Building Physics", 
+                            "number": "50503", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "50504 Sructural Engineering, Building Informatics, Construction Operationy", 
+                            "label": "Sructural Engineering, Building Informatics, Construction Operationy", 
+                            "number": "50504", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "50505 Applied Mechanics, Statics and Dynamicsy", 
+                            "label": "Applied Mechanics, Statics and Dynamicsy", 
+                            "number": "50505", 
+                            "children": []
+                        }, 
+                        {
+                            "id": "50506 Geotechnics, Hydraulic Engineering", 
+                            "label": "Geotechnics, Hydraulic Engineering", 
+                            "number": "50506", 
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

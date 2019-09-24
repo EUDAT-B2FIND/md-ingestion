@@ -11,6 +11,11 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+
+## B2SHARE von CSC
+#b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+## B2SHARE von FZ Juelich
+#b2share https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc EUDAT
 ## B2SHARE
 b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
 ## CLARIN
@@ -27,11 +32,10 @@ clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_3
 clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_4
 clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_1
 clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_2
-#*#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc 
-#donezurhaelfte#clarin http://www.ota.ox.ac.uk/cgi-bin/oai.pl ListIdentifiers oai_dc
+clarin https://metashare.ut.ee/oai_pmh/ ListIdentifiers oai_dc
 #gehtnicht!#clarin https://clarin.vdu.lt/oai/request ListRecords oai_dc
-#gehtnicht!#clarin https://metashare.ut.ee/oai_pmh/ ListIdentifiers oai_dc
-## CLARIN from B2SHARE
+#gehtnicht!#clarin http://www.ota.ox.ac.uk/cgi-bin/oai.pl ListIdentifiers oai_dc
+##CLARIN from B2SHARE
 #clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
 ## DANS-EASY
 danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite

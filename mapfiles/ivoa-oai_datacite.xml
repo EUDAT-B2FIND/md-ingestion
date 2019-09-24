@@ -35,19 +35,19 @@
       <xpath>//d:publisher</xpath>
     </field>
     <field name="Contributor">
-      <xpath>//d:contributors/d:contributor/d:contributorName</xpath>
+      <xpath></xpath>
     </field>
     <field name="PublicationYear">
       <xpath>//d:publicationYear</xpath>
     </field>
     <field name="Rights">
-      <xpath>//d:rightsList//d:rights</xpath>
+      <xpath>//d:rightsList/d:rights</xpath>
     </field>
     <field name="OpenAccess">
       <xpath></xpath>
     </field>
     <field name="Contact">
-      <xpath>//d:contributors/d:contributor[@contributorType='ContactPerson']</xpath>
+      <xpath>//d:contributors/d:contributor[@contributorType='ContactPerson']/d:contributorName</xpath>
     </field>
     <!-- Representation information -->
     <field name="Language">
