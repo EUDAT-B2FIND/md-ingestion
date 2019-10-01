@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for default metadata - FID GEO. --><namespaces>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="default" uri="http://default.org/schema/kernel-4"/>
+    <namespace ns="default" uri="http://datacite.org/schema/kernel-4"/>
+
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//default:titles/default:title</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//default:descriptions/default:description</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//default:subjects/default:subject</xpath>
+    </field>
+    <!-- Identifier : (Source,PID or DOI) -->
+    <field name="url">
+      <xpath>//default:resource/default:identifier</xpath>
+    </field>
+    <field name="RelatedIdentifier">
+      <xpath>//default:alternateIdentifiers/default:alternateIdentifier</xpath>
+    </field>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+    <!-- Provenance information -->
+    <field name="author">
+      <xpath>//default:creators/default:creator/default:creatorName</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//default:publisher</xpath>
+    </field>
+    <field name="Contributor">
+      <xpath>//default:contributors/default:contributor/default:contributorName</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//default:publicationYear</xpath>
+    </field>
+    <field name="Rights">
+      <xpath>//default:rightsList//default:rights</xpath>
+    </field>
+    <field name="OpenAccess">
+      <xpath></xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//default:contributors/default:contributor/default:contributorName</xpath>
+    </field>
+    <!-- Representation information -->
+    <field name="Language">
+      <xpath>//default:language</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//default:resourceType</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//default:formats/default:format</xpath>
+    </field>
+    <field name="Checksum">
+      <xpath></xpath> 
+    </field>
+    <!-- Coverage information -->
+    <field name="Discipline">
+      <string>Geosciences</string>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//default:geoLocations/default:geoLocation/default:geoLocationPoint,//default:geoLocations/default:geoLocation/default:geoLocationBox</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//default:dates/default:date</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+  </mappings>
+</mapping-table>
