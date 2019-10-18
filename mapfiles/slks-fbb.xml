@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for fbb metadata from SLKS. -->
+  <namespaces>
+    <namespace ns="fbb" uri="http://www.kulturarv.dk/fbb"/>
+    <namespace ns="gml" uri="http://www.opengis.net/gml"/>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+  </namespaces>
+  <mappings>
+    <!-- General information -->
+    <field name="title">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:BBR/fbb:primaryAddress/fbb:streetName</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:BBR/fbb:cadastre/fbb:townshipName,//fbb:buildingWrap/fbb:building/fbb:BBR/fbb:primaryAddress/fbb:streetName </xpath>
+    </field>
+    <field name="tags">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:BBR/fbb:usage/fbb:term</xpath>
+    </field>
+    <!-- Access data  -->
+    <field name="url">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:id</xpath>
+    </field>
+    <field name="Checksum">
+    </field>
+    <field name="Rights">
+      <xpath>//fbb:rightsWorkWrap/fbb:rightsWorkSet/fbb:creditLine</xpath>
+    </field>
+    <!-- Provenance data -->
+    <field name="Discipline">
+      <string>Classical archaeology</string>
+    </field>
+    <field name="author">
+      <xpath>//fbb:rightsWorkWrap/fbb:rightsWorkSet/fbb:rightsHolder/fbb:legalBodyName</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//fbb:rightsWorkWrap/fbb:rightsWorkSet/fbb:rightsHolder/fbb:legalBodyName</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:photographWrap/fbb:photograph/fbb:createdDate</xpath>
+    </field>
+    <!-- Formal data -->    
+    <field name="Language">
+      <string>Danish</string>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:BBR/fbb:primaryAddress/fbb:location/gml:MultiPoint/gml:pointMember/gml:Point/gml:coordinates</xpath>
+    </field>
+    <field name="TemporalCoverage">
+    </field>
+    <field name="ResourceType">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:photographWrap/fbb:photograph/fbb:contentType</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//fbb:buildingWrap/fbb:building/fbb:photographWrap/fbb:photograph/fbb:contentType</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>
