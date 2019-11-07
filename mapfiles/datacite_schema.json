@@ -1,5 +1,5 @@
 {
-    "Title" : { 
+    "title" : { 
         "name" : "title",
         "definition" : "A name or title by which a resource is known.",
         "ckanName" : "title",
@@ -9,7 +9,7 @@
         "occurence" : "1",
         "obligation" : "mandatory"
     },
-    "Description" : { 
+    "notes" : { 
         "name" : "description",
         "definition" : "An additional information describing the content of the resource. Could be an abstract, a summary or a Table of Content.",
         "ckanName" : "notes",
@@ -19,8 +19,8 @@
         "occurence" : "0-1",
         "obligation" : "recommended"
     },
-    "Tags" : {
-        "name" : "tags",
+    "tags" : {
+        "name" : "subjects",
         "description" : "A subject, keyword, classification code, or key phrase describing the content.",
         "ckanName" : "tags",
         "ckanType" : "default",
@@ -29,7 +29,7 @@
         "occurence" : "0-n",
         "obligation" : "optional"
     },
-    "DOI" : {
+    "extras" : {
         "name" : "DOI",
         "description" : "A persistent, citable identifier that uniquely identifies a resource.",
         "ckanName" : "DOI",
@@ -47,7 +47,7 @@
         "type" : "url",
         "obligation" : "optional"
     },
-    "Source" : {
+    "url" : {
         "name" : "source",
         "description" : "An identifier (URL) that uniquely identifies a resource. It may link to the data itself or a landing page that curates the data.",
         "ckanName" : "url",
@@ -56,11 +56,11 @@
         "type" : "url",
         "obligation" : "mandatory"
     }, 
-    "RelatedIdentifier" : {
+    "extras[RelatedIdentifier]" : {
         "name" : "RelatedIdentifier",
         "description" : "A link to related resources or supplements.", 
         "ckanName" : "url",
-        "ckanType" : "extra",
+        "ckanType" : "default",
         "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
@@ -74,8 +74,8 @@
         "type" : "url",
         "obligation" : "optional"
     },
-    "Creator" : {
-        "name" : "creator",
+    "author" : {
+        "name" : "creators",
         "description" : "The main researchers involved in producing the data, or the authors of the publication, or the measurement or monitoring station that produces the data in priority order.",
         "ckanName" : "author",
         "ckanType" : "default",

@@ -71,11 +71,15 @@ class Converter(object):
         self.fromdate = fromdate
         self.logger = OUT.logger
         # Read in B2FIND metadata schema and fields
-        schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
-        with open(schemafile, 'r') as f:
+        b2fschemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
+        with open(b2fschemafile, 'r') as f:
             self.b2findfields=json.loads(f.read(), object_pairs_hook=OrderedDict)
+       # Read in DataCite metadata schema and fields
+        dataciteschemafile =  '%s/mapfiles/datacite_schema.json' % (os.getcwd())
+        with open(dataciteschemafile, 'r') as f:
+            self.datacitefields=json.loads(f.read(), object_pairs_hook=OrderedDict)
 
-    def json2xml(self,json_obj, line_padding="", mdftag="", mapdict="b2findfields"):
+    def json2xml(self,json_obj, line_padding, mdftag, mapdict): ###="b2findfields"):
 
         result_list = list()
         json_obj_type = type(json_obj)
@@ -83,31 +87,44 @@ class Converter(object):
 
         if json_obj_type is list:
             for sub_elem in json_obj:
-                result_list.append(json2xml(sub_elem, line_padding, mdftag, mapdict))
+                result_list.append(self.json2xml(sub_elem, line_padding, mdftag, mapdict))
 
             return "\n".join(result_list)
 
         if json_obj_type is dict:
             for tag_name in json_obj:
                 sub_obj = json_obj[tag_name]
-                if tag_name in mapdict : 
+                if tag_name in mapdict or ('extras' in tag_name and tag_name['extras'] in mapdict): 
                     tag_name=mapdict[tag_name]
-                    if not isinstance(tag_name,list) : tag_name=[tag_name]
-                    for key in tag_name:
-                        result_list.append("%s<%s%s>" % (line_padding, mdftag, key))
-                        if type(sub_obj) is list:
-                            for nv in sub_obj:
-                                if tag_name == 'tags' or tag_name == 'KEY_CONNECT.GENERAL_KEY':
-                                    result_list.append("%s%s" % (line_padding, nv["name"].strip()))
-                                else:
-                                    result_list.append("%s%s" % (line_padding, nv.strip()))
-                        else:
-                            result_list.append(self.json2xml(sub_obj, "\t" + line_padding, mdftag, mapdict))
+                    ##HEW-T 
+                    print('TTTTT tag_name[name]',tag_name['name'])
+                    if tag_name['name'] in ['creators'] :
+                        sub_obj = sub_obj.split(';')
+                        ##HEW-T
+                    print('- sub_obj %s' % sub_obj)
+                    key=tag_name
+                    print('-- key-n >%s<' % key['name'])
+                    result_list.append("%s<%s>" % (line_padding, key['name']))
+                    if type(sub_obj) is list:
+                        for nv in sub_obj:
+                            if tag_name == 'tags' or tag_name == 'KEY_CONNECT.GENERAL_KEY':
+                                result_list.append("%s%s" % (line_padding, nv["name"].strip()))
+                            if tag_name['name'] in ['subjects','creators'] :
+                                if tag_name['name'] == 'subjects' :
+                                    nv=nv['display_name']
+                                print('- nv %s' % nv)
+                                result_list.append("%s%s<%s>%s</%s>" % (line_padding,line_padding,key['name'][:-1],nv,key['name'][:-1]))
 
-                        result_list.append("%s</%s%s>" % (line_padding, mdftag, key))
+                            elif tag_name['name'] == 'DOI' :
+                                print('SSSS %s' % sub_obj)
+                                for nv in sub_obj :
+                                    if nv['key']=='DOI':
+                                        result_list.append("%s%s<%s>%s</%s>" % (line_padding,line_padding,key['name'],nv['value'],key['name'][:-1]))
+                        ##result_list.append(self.json2xml(sub_obj['name'], "\t" + line_padding, mdftag, mapdict))
+                    else:
+                        result_list.append(self.json2xml(sub_obj, "\t" + line_padding, mdftag, mapdict))
 
-
-
+                    result_list.append("%s</%s>" % (line_padding, key['name']))
                 else:
                         self.logger.debug ('[WARNING] : Field %s can not mapped to B2FIND schema' % tag_name)
                         continue
@@ -177,10 +194,10 @@ class Converter(object):
         oldperc = 0
         start = time.time()
 
-        # Read in B2FIND metadata schema and fields
-        schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
-        with open(schemafile, 'r') as f:
-            b2findfields=json.loads(f.read())
+        #HEW-D # Read in B2FIND metadata schema and fields
+        #HEW-D schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
+        #HEW-D with open(schemafile, 'r') as f:
+        #HEW-D     b2findfields=json.loads(f.read())
 
         for filename in files:
             ## counter and progress bar
@@ -213,7 +230,6 @@ class Converter(object):
             
             ### oai-convert !!
             if target_mdschema == 'cera':
-                ##HEW-T print('JJJJJJJJ %s' % jsondata['oai_identifier'])
                 if 'oai_identifier' in jsondata :
                     identifier=jsondata['oai_identifier'][0]
                 else:
@@ -226,7 +242,7 @@ class Converter(object):
                         self.logger.error('    | [ERROR] Cannot load the convert file %s' % convertfile)
                         sys.exit()
 
-                    for filetype in ['ds2','exp']:
+                    for filetype in ['ds2','exp','dc']:
                         outfile=outpath+'/'+filetype+'_'+community+'_'+identifier+'.xml'             
 	                ### load xml template
                         templatefile='%s/mapfiles/%s_%s_%s.%s' % (os.getcwd(),target_mdschema,filetype,'template','xml')
@@ -239,7 +255,7 @@ class Converter(object):
                         data=dict()
                         jsondata['community']=community
                         ##HEW-D dsdata = Template(dsdata)
-                        for facetdict in b2findfields.values() :
+                        for facetdict in self.b2findfields.values() :
                             facet=facetdict["ckanName"]
                             ##HEW-T  print ('facet %s ' % facet)
                             if facet in jsondata:
@@ -274,6 +290,110 @@ class Converter(object):
                             self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
                             return(False, outfile , outpath, fcount)
 	
+            if target_mdschema == 'openaire':
+                for extradict in jsondata['extras']:
+                    jsondata[ extradict['key'] ] = extradict['value']
+                
+                if 'DOI' in jsondata :
+                    print( 'DOI is provided, take it !')
+                else:
+                    print( 'No DOI available ! => skip record' )
+                    continue
+
+                if 'id' in jsondata :
+                    identifier=jsondata['id']
+                else:
+                    identifier=os.path.splitext(filename)[0]
+                convertfile='%s/mapfiles/%s%s.%s' % (os.getcwd(),'json2',target_mdschema,'json')
+                with open(convertfile, 'r') as f:
+                    try:
+                        mapdict=json.loads(f.read())
+                    except:
+                        self.logger.error('    | [ERROR] Cannot load the convert file %s' % convertfile)
+                        sys.exit()
+
+                    for filetype in ['dublincore']:
+                        outfile=outpath+'/'+os.path.splitext(filename)[0]+'.xml'             
+	                ### load xml template
+                        templatefile='%s/mapfiles/%s_%s_%s.%s' % (os.getcwd(),target_mdschema,filetype,'template','xml')
+                        with open(templatefile, 'r') as f:
+                            try:
+                                dsdata= f.read() ##HEW-D ET.parse(templatefile).getroot()
+                            except Exception :
+                                self.logger.error('    | Cannot load tempalte file %s' % (templatefile))
+
+                        data=dict()
+                        jsondata['community']=community
+                        ##HEW-D dsdata = Template(dsdata)
+                        for facetdict in self.b2findfields.values() :
+                            facet=facetdict["ckanName"]
+                            ##HEW-T                            print ('facet %s ' % facet)
+                            if facet in jsondata:
+                                if facet == 'author':
+                                    creators=jsondata['author'].split(';')
+                                    for creator in creators :
+                                        namearr= creator.split(',')
+                                        data['familyName']=namearr[0]
+                                        data['givenName']=namearr[1]
+                                value=jsondata[facet]
+                            else:
+                                value=''
+
+
+                            if isinstance(value,list) and len(value)>0 :
+                                    if facet == 'tags':
+                                        data[facet]=''
+                                        for tagndict in value:
+                                            data[facet]+=tagndict['name']
+                                    else:
+                                        data[facet]=' '.join(value).strip('\n ')
+                            else :
+                                    data[facet]=value
+                                    ## outdata = dsdata.substitute(key=data[key])
+                                    ##HEW-T print('KKKK key %s\t data %s' % (key,data[key]))
+
+                        data['identifier']=identifier
+                        data['createdate']=createdate
+                        data['oaiset']='openaire_b2find'
+                        print(' dsdata %s' % dsdata%data)
+                        try:
+                            outdata=dsdata%data
+                        except KeyError as err :
+                            self.logger.error("[ERROR] %s\n" % err )
+                            pass
+
+                        ##outfile=outpath+'/'+filename+'.xml'
+                        try :
+                            f = open(outfile, 'w')
+                            f.write(outdata.encode('utf-8'))
+                            f.write("\n")
+                            f.close
+                        except IOError :
+                            self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
+                            return(False, outfile , outpath, fcount)
+	
+            elif target_mdschema == 'openaire2' :
+                identifier=jsondata["id"]
+                filetype=''
+                outfile=outpath+'/'+filetype+'/'+community+'_'+identifier+'.xml'
+                mapdict=self.datacitefields
+
+                header="""<resource xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+"""
+
+                footer="""
+</resource>"""
+
+                xmlprefix='datacite:'
+                xmldata=header+self.json2xml(jsondata,'\t',xmlprefix,mapdict)+footer
+                try:
+                    f = open(outfile, 'w')
+                    f.write(xmldata.encode('utf-8'))
+                    f.write("\n")
+                    f.close
+                except IOError :
+                    self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
+                    return(False, outfile , outpath, fcount)
             else:
                 identifier=jsondata["oai_identifier"]
                 outfile=outpath+'/'+filetype+'/'+community+'_'+identifier+'.xml'

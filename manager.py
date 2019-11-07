@@ -692,7 +692,7 @@ def options_parser(modes):
     group_single.add_option('--verb', help="Verbs or requests defined in OAI-PMH, can be ListRecords (default) or ListIdentifers here",default='ListRecords', metavar='STRING')
     group_single.add_option('--mdsubset', help="Subset of harvested meta data",default=None, metavar='STRING')
     group_single.add_option('--mdprefix', help="Prefix of harvested meta data",default=None, metavar='STRING')
-    group_single.add_option('--target_mdschema', help="Meta data schema of the target",default=None, metavar='STRING')
+    group_single.add_option('--target_mdschema','-t', help="Meta data schema of the target",default=None, metavar='STRING')
     
     group_upload = optparse.OptionGroup(p, "Upload Options",
         "These options will be required to upload an dataset to a CKAN database.")
