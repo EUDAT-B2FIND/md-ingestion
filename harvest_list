@@ -1,4 +1,3 @@
-
 ##+++       - their community
 ##+++       - the OAI URL (harvest entry point), 
 ##+++       - the harvest request (verb: ListIdentifiers or ListRecords),
@@ -16,8 +15,10 @@ materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc full
 ## CLARIN
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
 clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
+# Dublincore from dm-oai.dkrz.de
+dm-oai  http://dm-oai.dkrz.de:8080/oai/provider ListRecords oai_datacite openaire_data
 ## B2FIND export
-b2find http://b2find.eudat.eu/api/3/action ckan_api json
+b2find http://b2find.eudat.eu/api/3/action ckan_api json b2share
 ## EnviDat
 #envidat https://www.envidat.ch/api/3/action package_list json 
 #https://www.envidat.ch/oai?verb=ListRecords&metadataPrefix=iso19139
