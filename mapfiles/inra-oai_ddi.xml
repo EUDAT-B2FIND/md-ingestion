@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for DDI metadata version 1.2.2.?? of INRA -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="codeBook" uri="ddi:codebook:2_5"/>
+  </namespaces>
+  <mappings>
+   <!-- General information -->
+   <field name="title">
+      <xpath>//codeBook:titl</xpath>
+   </field>
+   <field name="notes">
+       <xpath>//codeBook:abstract</xpath>
+   </field>
+    <field name="tags">
+       <xpath>//codeBook:keyword</xpath>
+   </field>
+   <!-- Identifier  -->
+   <field name="url"> <!-- mapped to Source, PID or/and DOI -->
+       <xpath>//codeBook:IDNo</xpath>
+   </field>
+   <field name="MetaDataAcess">
+      <xpath>//r:header/r:identifier</xpath>
+   </field>
+   <!-- Provenance Information -->
+   <field name="author"> <!-- mapped onto Creator -->
+      <xpath>//codeBook:depositr</xpath>
+   </field>
+   <field name="Publisher">
+       <xpath>//codeBook:distrbtr</xpath>
+   </field>
+   <field name="PublicationYear">
+        <xpath>//codeBook:distDate</xpath>
+   </field>
+   <field name="Rights">
+       <xpath>//codeBook:useStmt</xpath>
+   </field>
+   <field name="Contact">
+        <xpath>//codeBook:contact</xpath>
+   </field>
+   <!-- Representation Information -->
+   <field name="Language">
+       <string>English</string>
+   </field>
+   <field name="ResourceType">
+       <xpath>//codeBook:dataKind</xpath>
+   </field>
+   <field name="Format">
+        <xpath>//codeBook:codeBook/codeBook:fileDscr/codeBook:fileType/text()</xpath>
+   </field>
+   <field name="Checksum">
+   </field>
+   <!-- Coverage -->
+   <field name="Discipline">
+       <string>Agriculture</string>
+   </field>
+   <field name="SpatialCoverage">
+        <xpath>//codeBook:geogCover</xpath>
+   </field>
+   <field name="TemporalCoverage">
+       <xpath>//codeBook:prodDate,//codeBook:timePrd</xpath>
+    </field>
+    <!-- Community specific fields
+    -->
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+       <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>
