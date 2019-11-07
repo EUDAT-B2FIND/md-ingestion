@@ -8,7 +8,9 @@ credentials_11098_dummy
 mapfiles/b2share_disciplines.json
 B2FIND.pyc
 *.pyc
+*~
 envriplus_demonstrator/*
 oldstuff/*
 community_list
 oaidata_old/*
+results*.txt
