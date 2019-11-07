@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for GFZ DataCite metadata -->
+  <namespaces>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="d" uri="http://datacite.org/schema/kernel-2.2"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//d:metadata/d:oai_datacite/d:payload/d:resource/d:titles/d:title/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//d:metadata/d:oai_datacite/d:payload/d:resource/d:descriptions//d:description/text()/</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//xs:subject/text()</xpath>
+    </field>
+    <!-- Access data -->
+    <field name="Rights">
+      <xpath>//xs:rights/text()</xpath>
+    </field>
+   <!-- Provenance data -->
+    <field name="Discipline">
+      <xpath>//xs:subject/text()</xpath>
+    </field>
+    <field name="author">
+      <xpath>//xs:creatorName</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//dc:publisher/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//xs:publicationYear/text()</xpath>
+    </field>
+   <!-- Formal data -->
+    <field name="Language">
+      <xpath>//xs:language/text()</xpath>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//xs:description/text()</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//xs:description/text()</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//xs:format/text()</xpath>
+    </field>
+    <!-- Additional Information -->
+    <field name="Contact">
+      <xpath>//xs:contributerName/text()</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+<!--
+    <field name="fulltext">
+      <!-- xpath>normalize-space(string(/))</xpath>
+    </field>
+-->
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec/text()</xpath>
+    </field>
+  </mappings>
+</mapping-table>

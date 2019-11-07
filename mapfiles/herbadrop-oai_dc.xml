@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for DublinCore metadata from Herbadrop -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
+    <namespace ns="pac" uri="http://www.cines.fr/pac/aip"/>
+    <namespace ns="ows" uri="http://www.opengis.net/ows"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//pac:DocDC/pac:title/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//pac:DocDC/pac:description/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//pac:DocDC/pac:subject/text()</xpath>
+    </field>
+    <!-- Identifier -->
+    <field name="url">
+      <xpath>//pac:DocDC/pac:identifier/text()</xpath>
+    </field>
+    <!-- Provenance Information -->
+    <field name="author">
+      <xpath>//pac:DocDC/pac:creator/text()</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//pac:DocDC/pac:publisher/text()</xpath>
+    </field> 
+    <field name="PublicationYear">
+      <xpath>//pac:DocDC/pac:date/text()</xpath>
+    </field> 
+        <field name="Rights">
+      <xpath>//pac:DocDC/pac:rights/text()</xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//pac:DocDC/pac:publisher/text()</xpath>
+    </field>
+    <!-- Representation Information -->
+    <field name="Language">
+      <xpath>//pac:DocDC/pac:language/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//pac:DocDC/pac:type/text()</xpath>
+    </field>  
+    <field name="Format">
+      <xpath>//pac:DocDC/pac:format/text()</xpath>
+    </field>  
+    <field name="Checksum">
+      <xpath>//pac:DocDC/pac:valid/text()</xpath>
+    <!-- Coverage -->
+    <field name="Discipline">
+      <string>Plant Systematics and Evolutiony</string>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//ows:BoundingBox/ows:LowerCorner, //ows:BoundingBox/ows:UpperCorner</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//pac:DocDC/pac:coverage/text()</xpath>
+    </field>    
+    <field name="Format">
+      <xpath>//pac:DocDC/pac:format/text()</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//pac:DocDC/pac:type/text()</xpath>
+    </field>
+    <!-- Additional Information -->
+    
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>
