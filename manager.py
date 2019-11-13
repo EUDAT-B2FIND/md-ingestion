@@ -204,7 +204,7 @@ def process(options,pstat,OUT):
     ## HARVESTING mode:    
     if (pstat['status']['h'] == 'tbd'):
         logger.info('\n|- Harvesting started : %s' % time.strftime("%Y-%m-%d %H:%M:%S"))
-        HV = Harvester(OUT,pstat,options.outdir,options.fromdate)
+        HV = Harvester(OUT,pstat,options.outdir,options.fromdate,options.verify_ssl)
         process_harvest(HV,reqlist)
 
     ## MAPPINING - Mode:  
@@ -677,7 +677,7 @@ def options_parser(modes):
     p.add_option('--mode', '-m', metavar='PROCESSINGMODE', help='\nThis can be used to do a partial workflow. Supported modes are (g)enerating, (h)arvesting, (c)onverting, (m)apping, (v)alidating, (o)aiconverting and (u)ploading or a combination. default is h-u, i.e. a total ingestion', default='h-u')
     p.add_option('--community', '-c', help="community where data harvested from and uploaded to", metavar='STRING')
     p.add_option('--fromdate', help="Filter harvested files by date (Format: YYYY-MM-DD).", default=None, metavar='DATE')
-    
+    p.add_option("--no-ssl-verify", action="store_false", dest="verify_ssl", default=True, help="Do not verify SSL certificates")
          
     group_multi = optparse.OptionGroup(p, "Multi Mode Options",
         "Use these options if you want to ingest from a list in a file.")
