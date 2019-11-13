@@ -381,15 +381,34 @@ class Harvester(object):
             try:
                 url=req['url']
                 action_url = '{url}/{action}'.format(url=url,action='package_list')
-                self.logger.debug('action_url %s' % action_url)            
+                ##data_string=json.dumps({})##.encode('utf8')
                 data_string=json.dumps({}).encode('utf8')
-                request = Request(action_url,data_string)
-                self.logger.debug('request %s' % request)            
-                response = urlopen(request)
-                self.logger.debug('response %s' % response)            
-                records= json.loads(response.read())['result']
+
+                if mdsubset :
+                    ##action_url += "?groups=%s" % mdsubset
+                    action_url = '{url}/{action}{searchreq}'.format(url=url,action='package_search',searchreq='?q=groups:%s' % mdsubset)
+                    ##data_string=json.dumps({"q":"groups:%s" % mdsubset})##.encode('utf8')
+                else:
+                    data_string=json.dumps({}).encode('utf8')
+                self.logger.debug('action_url %s' % action_url)
+                self.logger.debug('data_string %s' % type(data_string))            
+                ##HEW???request = Request(action_url,data_string)
+                ##HEW???self.logger.debug('request %s' % request)
+                ##HEW???response = urlopen(request)
+                response = urlopen(action_url)##,data_string)
+                self.logger.debug('response %s' % type(response))            
+                ##self.logger.debug(json.loads(response.read())["result"]["results"][0])
+                ###self.logger.debug('response.read() %s' % json.loads(response.read())["result"]["results"])
+                ##sys.exit(-1)     
+                records=json.loads(response.read())["result"]["results"]
+                ##rresponse= json.loads(response.read())
+                ##rresponse= response.read()
+                ##self.logger.debug('type(rresponse %s' % type(rresponse))
+                ##self.logger.debug('rresponse[:10] %s' % rresponse[:10])
+                ##records= rresponse['result']['results']
                 self.logger.debug('records %s' % records[:10])
-                sys.exit(-1)
+                self.logger.debug('len(records) %d' % len(records))
+                ##HEW-T                sys.exit(-1)
             except (HTTPError,ConnectionError) as err:
                 self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                 return -1
@@ -563,18 +582,19 @@ limit 1000
 
             elif req["lverb"].startswith('ckan_api'):
                 try:
-                    oai_id=record
+                    oai_id=record['id']
                     ##HEW-D action_url = '{url}/{action}?id={record}'.format(url=url,action='package_show',record=record)
                     action_url = '{url}/{action}'.format(url=url,action='package_show')
                     self.logger.debug('action_url %s' % action_url)            
                     self.logger.debug('data_string %s' % data_string)
-                    data_string=json.dumps({"id": record }).encode('utf8')
+                    data_string=json.dumps({"id": record['id']}).encode('utf8')
                     request = Request(action_url,data_string)
                     self.logger.debug('request %s' % request)            
                     response = urlopen(request)
                     self.logger.debug('response %s' % response)            
                     record= json.loads(response.read())['result']
-                    self.logger.debug('records %s' % records)
+                    self.logger.debug('record %s' % record)
+                    ##HEW-T sys.exit(-1)
                 except (HTTPError,ConnectionError) as err:
                     self.logger.critical("%s during connecting to %s\n" % (err,req['url']))
                     return -1

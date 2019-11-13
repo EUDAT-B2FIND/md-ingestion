@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for MARC XML metadata from B2SHARE. -->
+  <namespaces>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="marc" uri="http://www.loc.gov/MARC21/slim"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//marc:datafield[@tag='245']/marc:subfield/text()</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//marc:datafield[@tag='520']/marc:subfield[@code='a']/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//marc:datafield[@tag='653']/marc:subfield[@code='a']/text()</xpath>
+    </field>
+    <!-- Access data -->
+    <field name="url">
+      <xpath>//marc:datafield[@tag='024']/marc:subfield[@code='a']/text()</xpath>
+   </field>
+   <field name="Checksum">
+      <xpath>//marc:datafield[@tag='024']/marc:subfield[@code='a']/text()</xpath>
+   </field>
+   <field name="Rights">
+      <xpath>//marc:datafield[@tag='540']/marc:subfield[@code='a'],//marc:datafield[@tag='542']/marc:subfield[@code='l']/text()</xpath>
+   </field>
+   <!-- Provenance data -->
+   <field name="Discipline">
+      <xpath>//marc:datafield[@tag='526']/marc:subfield[@code='a']/text()</xpath>
+   </field>
+   <field name="author">
+      <xpath>//marc:datafield[@tag='100']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='690']/marc:subfield[@code='b']/text(),//marc:datafield[@tag='700']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='856']/marc:subfield[@code='f']/text()</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//marc:datafield[@tag='260']/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//marc:datafield[@tag='264']/marc:subfield[@code='c']/text()</xpath>
+    </field>
+    <field name="B2SHARE-Community">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <!-- Formal data -->
+    <field name="Language">
+      <xpath>//marc:datafield[@tag='546']/marc:subfield[@code='a']/text()</xpath>
+    </field>
+    <!-- Additional Information -->
+    <field name="Contact">
+      <string>N/A</string>
+    </field>
+    <!-- #### B2HARE Domain specific fields ### -->
+    <field name="domain_sp_list">
+      <xpath>//marc:datafield[@tag='690']/marc:subfield[@code='a']/text(),//marc:datafield[@tag='690']/marc:subfield[@code='b']/text()</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="MapperVersion">
+      <string expand="true">${mapper_version}</string>
+    </field>
+  </mappings>
+</mapping-table>

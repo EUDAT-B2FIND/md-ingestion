@@ -1,0 +1,47 @@
+{ "name" : "envriplus",
+  "title" : "ENVRIplus",
+  "description" : "[ENVRIplus](http://www.envriplus.eu/ \"ENVRIplus\") is a Horizon 2020 project bringing together Environmental and Earth System Research Infrastructures, projects and networks together with technical specialist partners to create a more coherent, interdisciplinary and interoperable cluster of Environmental Research Infrastructures across Europe.",
+  "image_url" : "http://eudat-b1.dkrz.de/images/communities/envriplus_logo-800x300.png",
+  "groups": [
+     	       { "name" : "anaee",
+     	       "title" : "ANAEE",
+     	       "description" : "[ANAEE](http://anaee.ac.at/ \"ANAEE\") will be a research infrastructure for experimental manipulations of managed and unmanaged terrestrial and aquatic ecosystems.",
+     	       "image_url" : "http://b2find.dkrz.de/images/communities/anaee_logo-800x300.png"
+	       },
+	       { "name" : "euro-argo",
+     	       "title" : "Euro-Argo",
+     	       "description" : "[Euro-Argo](http://www.euro-argo.eu/ \"Euro-Argo\")) project provides an optimized and sustained European contribution to the international [Argo programme](http://www.argo.ucsd.edu/ \"Argo\") that was initiated in 1999 as a pilot project endorsed by the Climate Research Program of the World Meteorological Organization, GOOS, and the Intergovernmental Oceanographic Commission. The Argo network is a global array of more than 3500 autonomous instruments, deployed over the world ocean, reporting subsurface ocean properties to a wide range of users via satellite transmission links to data centres.",
+     	       "image_url" : "http://b2find.dkrz.de/images/communities/euro-argo_logo-800x300.png"
+	       },
+	       { "name" : "embrc",
+     	       "title" : "EMBRC",
+     	       "description" : "The European Marine Biological Research Centre [EMBRC](http://www.embrc.eu/ \"EMBRC-ERIC\")) is a research Infrastructure of pan-European relevance. Part of the ESFRI roadmap since 2008, it is designed to further fundamental and applied marine biology and ecology research. Our Operators include renowned marine biological stations and institutes across European and Associated countries. By providing access to state-of-the-art national facilities, EMBRC-ERIC will provide the necessary and relevant services, facilities and technology platforms to study marine organisms and ecosystems. EMBRC-ERIC will help promote the development of blue biotechnologies by supporting fundamental and applied research activities in medicine, nutrition, aquaculture, biotechnology, and fisheries, among others. The vision is for EMBRC-ERIC to be a global reference Research Infrastructure for fundamental and applied marine biology and ecology research.",
+     	       "image_url" : "http://b2find.dkrz.de/images/communities/embrc_logo-800x300.png"
+	       },
+	       { "name" : "epos",
+     	       "title" : "EPOS",
+     	       "description" : "[EPOS](http://epos.ac.at/ \"EPOS\") , the European Plate Observing System, is a long-term plan to facilitate integrated use of data, data products, and facilities from distributed research infrastructures for solid Earth science in Europe.",
+     	       "image_url" : "http://b2find.dkrz.de/images/communities/epos_logo-800x300.png"
+	       },
+	       { "name" : "iagos",
+     	       "title" : "IAGOS",
+     	       "description" : "In-service Aircraft for a Global Observing System [IAGOS](https://www.iagos.org/ \"IAGOS\")) is a European Research Infrastructure for global observations of atmospheric composition from commercial aircraft. IAGOS combines the expertise of scientific institutions with the infrastructure of civil aviation in order to provide essential data on climate change and air quality at a global scale. In order to provide optimal information, two complementary systems have been implemented, (i) IAGOS-CORE providing global coverage on a day-to-day basis of key observables and (ii) IAGOS-CARIBIC providing a more in-depth and complex set of observations with lesser geographical and temporal coverage.",
+     	       "image_url" : "http://b2find.dkrz.de/images/communities/iagos_logo-800x300.png"
+	       },
+	       { "name" : "icos",
+     	       "title" : "ICOS",
+     	       "description" : "Integrated Carbon Observation System ([ICOS](http://icos.ac.at/ \"ICOS\")) is a pan-European research infrastructure which provides harmonised and high-precision scientific data on carbon cycle and greenhouse gas budget and perturbations.",
+     	       "image_url" : "http://b2find.dkrz.de/images/communities/icos_logo-800x300.png"
+	       },
+     	       { "name" : "lter",
+     	       "title" : "LTER",
+     	       "description" : "Long-Term Ecosystem Research ([LTER](http://lter.ac.at/ \"LTER\")) is an essential component of world-wide efforts to better understand ecosystems and the environment we depend on. Through research and long-term observation of representative sites around the globe, LTER enhances our understanding of the structure and functions of ecosystems, which provide essential services to people. LTER contributes to the knowledge base informing policy and to the development of management options in response to the Grand Challenges under Global Change.",
+     	       "image_url" : "http://eudat-b1.dkrz.de/images/communities/lter_logo-800x300.png"
+	       },
+	       { "name" : "seadatanet",
+     	       "title" : "SeaDataNet",
+     	       "description" : "Integrated Carbon Observation System ([SeaDataNet](https://www.seadatanet.org/ \"SeaDataNet\")) is a distributed Marine Data Infrastructure for the management of large and diverse sets of data deriving from in situ of the seas and oceans.",
+     	       "image_url" : "http://b2find.dkrz.de/images/communities/seadatanet_logo-800x300.png"
+	       }
+	       ]
+}

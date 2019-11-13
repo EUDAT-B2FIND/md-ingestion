@@ -1239,10 +1239,10 @@ class Mapper(object):
             mapfile='%s/mapfiles/%s-%s.%s' % (os.getcwd(),community,mdprefix,mapext)
 
         if not os.path.isfile(mapfile):
-            self.logger.error(' Can not access community specific mapfile %s ' % mapfile )
+            self.logger.error(' Can not access domain specific mapfile %s for community %s and format %s' % (community,mapfile,mdprefix))
             mapfile='%s/mapfiles/%s.%s' % (os.getcwd(),mdprefix,mapext)
             if not os.path.isfile(mapfile):
-                self.logger.critical(' ... nor md schema specific mapfile %s ' % mapfile )
+                self.logger.critical(' ... nor generic mapfile %s for format %s ' % (mapfile,mdprefix))
                 return results
             else :
                 self.logger.error(' ... but only generic mapfile %s ' % mapfile )

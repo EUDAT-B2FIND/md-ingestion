@@ -188,7 +188,7 @@ def main():
                             json.dump(ds, jf, indent=4)
 
                     outline='%s\n' % record['id']
-                    fh.writelines(outline)
+                    fh.writelines(outline.decode('utf8'))
                     
                     # loop over facets
                     for facet in akeys:

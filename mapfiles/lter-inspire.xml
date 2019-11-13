@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for INSPIRE metadata from LTER-Euope. -->
+  <namespaces>
+    <namespace ns="ef" uri="http://inspire.ec.europa.eu/schemas/ef/4.0"/>
+    <namespace ns="r" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+    <namespace ns="xlink" uri="http://www.w3.org/1999/xlink"/>
+    <namespace ns="base2" uri="http://inspire.ec.europa.eu/schemas/base2/2.0"/>
+    <namespace ns="gmi" uri="http://www.isotc211.org/2005/gmi"/>
+    <namespace ns="gmd" uri="http://www.isotc211.org/2005/gmd"/>
+    <namespace ns="gco" uri="http://www.isotc211.org/2005/gco"/>
+    <namespace ns="gml" uri="http://www.opengis.net/gml/3.2"/>
+  </namespaces>
+  <mappings>
+   <!-- General information -->
+    <field name="title">
+      <xpath>//ef:name</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//ef:additionalDescription</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//ef:mediaMonitored xlink:title</xpath>
+    </field>
+    <!-- Access data  -->
+    <field name="url">
+      <xpath>//ef:onlineResource</xpath>
+   </field>
+   <field name="Checksum">
+   </field>
+   <field name="Rights">
+   </field>
+   <!-- Provenance data -->
+    <field name="Discipline">
+      <string>Earth Sciences</string>
+    </field>
+    <field name="author">
+      <xpath>//ef:responsibleParty/base2:RelatedParty/base2:individualName/gco:CharacterString</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//ef:responsibleParty/base2:RelatedParty/base2:organisationName/gco:CharacterString</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath></xpath>
+    </field>
+    <!-- Formal data -->
+    <field name="Language">
+      <string>eng</string>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//gml:posList</xpath>
+    </field>
+   <field name="TemporalCoverage">
+      <xpath>//ef:operationalActivityPeriod/ef:OperationalActivityPeriod/ef:activityTime/gml:TimePeriod/gml:beginPosition,//ef:operationalActivityPeriod/ef:OperationalActivityPeriod/ef:activityTime/gml:TimePeriod/gml:endPosition</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath></xpath>
+    </field>
+    <field name="Format">
+      <xpath></xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//base2:contact/base2:Contact/base2:electronicMailAddress</xpath>
+    </field>
+   <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString/text(), //r:header/r:identifier/text()</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//r:header/r:setSpec/text()</xpath>
+    </field>
+  </mappings>
+</mapping-table>

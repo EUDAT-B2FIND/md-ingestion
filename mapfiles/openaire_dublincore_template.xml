@@ -1,0 +1,72 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>%(identifier)s</identifier>
+    <datestamp>%(createdate)s</datestamp>
+    <setSpec>%(oaiset)s</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">%(DOI)s</identifier>
+      <creators>
+        <creator>
+          <creatorName>%(author)s</creatorName>
+          <givenName>%(givenName)s</givenName>
+          <familyName>%(familyName)s</familyName>
+          <affiliation>%(Contributor)s</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>%(title)s</title>
+      </titles>
+      <publisher>%(Publisher)s</publisher>
+      <publicationYear>%(PublicationYear)s</publicationYear>
+      <subjects>
+        <subject>%(Discipline)s</subject>
+        <subject>%(tags)s</subject>
+        <subject></subject>
+        <subject></subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName>%(Contact)s</contributorName>
+          <givenName>%(Contact)s</givenName>
+          <familyName>%(Contact)s</familyName>
+          <affiliation>%(Contributor)s</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">%(TemporalCoverage:BeginDate)s</date>
+      </dates>
+      <language>en</language>
+      <resourceType resourceTypeGeneral="Dataset">%(ResourceType)s</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDocumentedBy">(RelatedIdentifier)s</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>(size)s</size>
+      </sizes>
+      <formats>
+        <format>%(Format)s</format>
+      </formats>
+      <version>1</version>
+      <rightsList>
+        <rights>%(Rights)s</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">%(notes)s
+        </description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>World</geoLocationPlace>
+          <geoLocationBox>
+            <westBoundLongitude>-180.0</westBoundLongitude>
+            <eastBoundLongitude>180.0</eastBoundLongitude>
+            <southBoundLatitude>-90</southBoundLatitude>
+            <northBoundLatitude>90</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>
