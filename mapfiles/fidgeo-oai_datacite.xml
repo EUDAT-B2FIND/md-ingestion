@@ -35,7 +35,7 @@
       <xpath>//default:publisher</xpath>
     </field>
     <field name="Contributor">
-      <xpath>//default:contributors/default:contributor/default:contributorName</xpath>
+      <xpath>//default:contributors/default:contributor/default:contributorName, //default:contributors/default:contributor/default:affiliation</xpath>
     </field>
     <field name="PublicationYear">
       <xpath>//default:publicationYear</xpath>
