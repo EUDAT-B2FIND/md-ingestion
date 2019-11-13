@@ -54,6 +54,7 @@ else:
     from urllib.request import urlopen, Request
     from urllib.error import HTTPError,URLError
 
+
 class Harvester(object):
     
     """
@@ -64,12 +65,13 @@ class Harvester(object):
     HV = Harvester(OUT object, outdir,fromdate)
     """
     
-    def __init__ (self, OUT, pstat, base_outdir, fromdate):
+    def __init__ (self, OUT, pstat, base_outdir, fromdate, verify=True):
         self.logger = logging.getLogger('root')
         self.pstat = pstat
         self.OUT = OUT
         self.base_outdir = base_outdir
         self.fromdate = fromdate
+        self.verify = verify
         
     
     def harvest(self, request):
@@ -88,7 +90,9 @@ class Harvester(object):
         # Return Values:
         # --------------
         # 1. (integer)  is -1 if something went wrong    
-    
+        ##krams mit Harri und Bier
+        session = requests.Session()
+        session.verify = False
     
         # create a request dictionary:
         req = {
@@ -122,9 +126,10 @@ class Harvester(object):
             # call action api:
             ## GBIF.action('package_list',{})
         
-            def __init__ (self, api_url): ##, api_key):
+            def __init__ (self, api_url, verify=True): ##, api_key):
                 self.api_url = api_url
                 self.logger = logging.getLogger('root')
+                self.verify = verify
      
             def JSONAPI(self, action, offset, chunklen, key):
                 ## JSONAPI (action) - method
@@ -219,7 +224,7 @@ class Harvester(object):
         ## JSON-API
         jsonapi_verbs=['dataset','works','records']
         if req["lverb"] in jsonapi_verbs :
-            GBIF = GBIF_CLIENT(req['url'])   # create GBIF object   
+            GBIF = GBIF_CLIENT(req['url'], self.verify)   # create GBIF object   
             harvestreq=getattr(GBIF,'JSONAPI', None)
             outtypedir='hjson'
             outtypeext='json'
@@ -262,7 +267,7 @@ class Harvester(object):
                     
         # OAI-PMH (verb = ListRecords/Identifier )
         elif req["lverb"].startswith('List'):
-            sickle = Sickle(req['url'], max_retries=3, timeout=300)
+            sickle = Sickle(req['url'], max_retries=3, timeout=300, verify=self.verify)
             outtypedir='xml'
             outtypeext='xml'
             harvestreq=getattr(sickle,req["lverb"], None)
@@ -343,10 +348,12 @@ class Harvester(object):
 ##HEW-T}
                 ##requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
                 ##HEW-??? response=requests.get(url, data=json.dumps(data), headers=headers, verify=False ).json()##, stream=True ) ##HEW-D auth=('myusername', 'mybasicpass'))
-                response=requests.post(url, headers=headers, data=json.dumps(data), verify=False)
+            #with requests.no_ssl_verification():
+                response=requests.post(url, headers=headers, data=json.dumps(data), verify=self.verify)
+                #response=requests.post(url, headers=headers, data=json.dumps(data), verify=False)
                 ##records=rs.json()['result']
                 print('response')
-                print(response.status_code)
+                #print(response.status_code)
                 ##print('response1')
                 ##jrec=response.json()
                 ##print(jrec)
