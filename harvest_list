@@ -16,15 +16,23 @@ materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc full
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
 clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
 # Dublincore from dm-oai.dkrz.de
-dm-oai  http://dm-oai.dkrz.de:8080/oai/provider ListRecords oai_datacite openaire_data
+## UCL
+ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549
+## HBP
+#hbp http://148.187.98.42:8081/oai/provider GetRecord oai_dc
+hbp https://148.187.98.42:8443/oai/provider ListRecords oai_dc
+## TOAR
+toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  578593c4-4cac-4890-be16-37e5619ff043
+#toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc RDA
+#TOAR
 ## B2FIND export
-b2find http://b2find.eudat.eu/api/3/action ckan_api json b2share
+b2find http://b2find.eudat.eu/api/3/action ckan_api json 
 ## EnviDat
 #envidat https://www.envidat.ch/api/3/action package_list json 
 #https://www.envidat.ch/oai?verb=ListRecords&metadataPrefix=iso19139
-envidat https://www.envidat.ch/oai ListRecords iso19139 
+#envidat https://www.envidat.ch/oai ListRecords iso19139 
 #envidat https://www.envidat.ch/oai ListRecords datacite
-#envidat https://www.envidat.ch/api/3/action ckan_api json 
+envidat https://www.envidat.ch/api/3/action ckan_api json 
 ## EMSO
 emso http://dataportals.pangaea.de/emso/oai pan_md full
 ## Capsella
@@ -152,9 +160,9 @@ iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos csw iso19139
 #old iagos http://sedoo.sedoo.fr/geosource/srv/fre/csw-aeris-envriplus csw oai_dc full
 #von Damien 20180619 http://catalogue.sedoo.fr/geonetwork/srv/eng/csw?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&constraintLanguage=CQL_TEXT&constraint_language_version=1.1.0&constraint=csw:title%20LIKE%20%27IAGOS%27&typeNames=csw:Record&RESULTTYPE=results
 ## ETSIN
-##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
+etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  yhteiskuntatieteellinen-tietoarkisto---finnish-social-science-data-archive
-etsin https://etsin.avointiede.fi/oai ListIdentifiers oai_dc
+##etsin https://etsin.avointiede.fi/oai ListIdentifiers oai_dc
 ##etsin https://etsin.avointiede.fi/oai ListIdentifiers   oai_dc  fin-clarin
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  00000000-0000-0000-0000-000000000000
 ##etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  97779b54-3e78-df11-a6ac-005056a22855
@@ -182,25 +190,16 @@ lter   https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc LTER # d952913
 ## lter   http://deims???.de:8080/oai/provider  ListRecords  inspire test
 #deims  https://data.lter-europe.net/pycsw csw  iso19139 full ### /?request=GetRecords&service=CSW&version=2.0.2&elementSetName=full&typeNames=csw:Record
 ## HDCP2
-<<<<<<< HEAD
-hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
-## GFZ  
-# FID GEO
-fidgeo http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB.FID
-## oai_datacite or iso1939 ???
-#gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
-=======
 ## hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
 hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  hope
 ## GFZ  ## oai_datacite or iso1939 ???
 gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite DOIDB
->>>>>>> 21ae3272741a02b295276fda090880b79023c7b9
 ##gfz     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite test_1
 ## GFZ sub communities
-#gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
-#geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON ##???iso19139  DOIDB.GEOFON
-#geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET ##???iso19139  DOIDB.GEOFON
-#icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
+gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON ##???iso19139  DOIDB.GEOFON
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET ##???iso19139  DOIDB.GEOFON
+icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
 ###
 gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
 isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
@@ -225,8 +224,10 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 ##%%% EARLINET : MD Provider eudat-oai.dkrz.de (directly extracted from CERA)
 earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso19139
 ### new comm. IVOA or EURO-VO
+## IVOA
+ivoa http://dc.g-vo.org/rr/q/pmh/pubreg.xml ListRecords oai_datacite
 ##ivoa  http://registry.euro-vo.org/oai.jsp ListIdentifiers  oai_dc ivo_managed
-ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc 
+#ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc 
 #ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc test_1
 ################### here we go with the DASISH project --> ask Daan and Binyam for details !!!
 ##%%% DASISH ?? OAI-URL's taken from
@@ -762,18 +763,20 @@ gbif http://api.gbif.org/v1 dataset json
 liferespira https://b2share.eudat.eu/api/oai2d ListRecords oai_dc LIFE+Respira
 ###b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
 ##HEW181009 Harvest DublinCore from B2SHARE marcxml --> oai_dc
+## B2SHARE von FZ Juelich
+#b2share https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc EUDAT
 b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Aalto
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc BBMRI
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc CLARIN
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc DRIHM
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EISCAT
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUDAT
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUON
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc GBIF
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc LTER
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc NRM
-b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc RDA
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Aalto
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc BBMRI
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc CLARIN
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc DRIHM
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EISCAT
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUDAT
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUON
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc GBIF
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc LTER
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc NRM
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc RDA
 #HEW-T b2share  http://b2share.eudat.eu/oai2d ListRecords marcxml e1800bc8-780e-4617-a7b6-2312cb6190c4
 ##%%% DataCite : MD Provider is DataCite.org 
 ##HEW-D datacite  http://oai.datacite.org/oai  ListIdentifiers  oai_dc ## all (no set specified!)
