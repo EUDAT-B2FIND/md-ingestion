@@ -10,13 +10,18 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##SciCat ESS
+ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
+##UniMaribor
+##unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_datacite openaire_data
+unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_dc openaire_data
 ## Materials Cloud
 materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc full
 ## CLARIN
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
 clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
-# Dublincore from dm-oai.dkrz.de
-## UCL
+#Dublincore from dm-oai.dkrz.de
+##UCL
 ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549
 ## HBP
 #hbp http://148.187.98.42:8081/oai/provider GetRecord oai_dc
