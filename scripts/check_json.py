@@ -19,7 +19,7 @@ This is a prototype and not ready for production use.
 """
 
 import optparse, os, sys
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 import simplejson as json
 
 def main():
@@ -31,15 +31,15 @@ def main():
     checklist, checklist_extras = load_checklists(options.checklist)
     
     # print the options:
-    print "SEARCHING DIR: %s\nOUTPUT DIR: %s\nSHOW LIMIT: %d\n%s" % (options.dir, options.outputdir, int(options.show_limit), '-'*90)
+    print("SEARCHING DIR: %s\nOUTPUT DIR: %s\nSHOW LIMIT: %d\n%s" % (options.dir, options.outputdir, int(options.show_limit), '-'*90))
 
     # find all files in directory "options.dir":
     for root, dirs, files in os.walk(options.dir):
         counter = 0
-        no_files = len(filter(lambda x: x.endswith(".json") , files))
+        no_files = len([x for x in files if x.endswith(".json")])
         
-        if (no_files): print "\nProcessing dir: %s (%d files)" % (root, no_files)
-        for file in filter(lambda x: x.endswith(".json") , files):
+        if (no_files): print("\nProcessing dir: %s (%d files)" % (root, no_files))
+        for file in [x for x in files if x.endswith(".json")]:
             counter += 1
             # shows a progress bar (update it for every 20th file):
             if (counter%20==0): update_progress(file,100*counter/no_files)
@@ -49,19 +49,19 @@ def main():
     
     
     # print the results (depends on options.show and options.show_limit)  and write those to file:
-    print "\n%s" % ('-'*90)
+    print("\n%s" % ('-'*90))
     
     # main fields:
     for field in checklist:
         for cmd in checklist[field]:
             length = len(checklist[field][cmd])
             if length > 0:
-                print 'Command [%s] failed in FIELD [%s] in [%d] files' % (cmd, field, length)
+                print('Command [%s] failed in FIELD [%s] in [%d] files' % (cmd, field, length))
                 
                 if (options.show):
                     limit = int(options.show_limit) if int(options.show_limit) < length else length-1
-                    print "    "+ "\n    ".join(
-                        checklist[field][cmd][0:limit])
+                    print("    "+ "\n    ".join(
+                        checklist[field][cmd][0:limit]))
                 
                 # save results in file:
                 if (not os.path.exists(options.outputdir)):  os.makedirs(options.outputdir)
@@ -74,11 +74,11 @@ def main():
         for cmd in checklist_extras[efield]:
             length = len(checklist_extras[efield][cmd])
             if length > 0:
-                print 'Command [%s] failed in EXTRA FIELD [%s] in [%d] files' % (cmd, efield, length)
+                print('Command [%s] failed in EXTRA FIELD [%s] in [%d] files' % (cmd, efield, length))
                 if (options.show):
                     limit = int(options.show_limit) if int(options.show_limit) < length else length-1
-                    print "    "+ "\n    ".join(
-                        checklist_extras[efield][cmd][0:limit])
+                    print("    "+ "\n    ".join(
+                        checklist_extras[efield][cmd][0:limit]))
                 
                 # save results in file:
                 if (not os.path.exists(options.outputdir)):  os.makedirs(options.outputdir)
@@ -95,8 +95,8 @@ def check_file(file, checklist, checklist_extras):
     with open(file, 'r') as f:
         try:
             jsondata=json.loads(f.read())
-        except Exception, e:
-            print "[ERROR] Cannot load the json file! %s" % e
+        except Exception as e:
+            print("[ERROR] Cannot load the json file! %s" % e)
     
     # check main fields:
     for field in checklist:
@@ -120,7 +120,7 @@ def command(cmd, field, dict, *other):
         return field in dict
     elif(cmd == 'validation_url'):
         try:
-            return urllib2.urlopen(dict[field], timeout=1).getcode() < 400
+            return urllib.request.urlopen(dict[field], timeout=1).getcode() < 400
         except:
             return False
     
@@ -156,8 +156,8 @@ def load_checklists(file):
     
         return list_main, list_extra
             
-    except Exception, e:
-        print "[ERROR] Cannot load the checklist file! %s" % e
+    except Exception as e:
+        print("[ERROR] Cannot load the checklist file! %s" % e)
             
 # define allowed command line options and get those:
 def get_options():

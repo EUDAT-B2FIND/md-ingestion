@@ -66,7 +66,7 @@ if (not options.auth):
             logger.critical('API key is neither given by option --auth nor can retrieved from %s/.netrc' % home )
             sys.exit()
 
-print('aaauth %s' % options.auth)
+print(('aaauth %s' % options.auth))
 
 if options.mode == 'c' :
     action='group_create'
@@ -104,7 +104,7 @@ if (True):
         
     # The action that should be excecuted.
     apiaction='http://%s/api/action/%s' % (options.iphost,action)
-    print('API action excecuted : %s' % apiaction)
+    print(('API action excecuted : %s' % apiaction))
     request = Request(apiaction,data_string)
 
     # Creating a group requires an authorization header.

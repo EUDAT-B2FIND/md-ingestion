@@ -25,9 +25,9 @@ import re
 
 PY2 = sys.version_info[0] == 2
 if PY2:
-    from urllib import quote
-    from urllib2 import urlopen, Request
-    from urllib2 import HTTPError,URLError
+    from urllib.parse import quote
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError, URLError
 else:
     from urllib import parse
     from urllib.request import urlopen, Request
@@ -129,7 +129,7 @@ def check_ckan_action(actionreq,data,rows):
             response_dict = json.loads(response.read())
         else:
             response_dict = response.read()
-        print('ttt response_dict %s' % type(response_dict))        
+        print(('ttt response_dict %s' % type(response_dict)))        
 
         # Check the contents of the response.
         if type(response_dict) == 'dict' and 'success' in response_dict :
@@ -152,7 +152,7 @@ def main():
     args = get_args()
 
     if args.version :
-        print ('B2FIND %s :: CKAN %s' % (B2FIND_version,CKAN_version))
+        print(('B2FIND %s :: CKAN %s' % (B2FIND_version,CKAN_version)))
         sys.exit(0)
 
     sys.exit(checkStatus(args))
@@ -188,7 +188,7 @@ def checkStatus(args):
                 oldset=splline[4]
                 oldmdf=splline[3]
                 oldcomm=splline[1]
-                print(splline,)
+                print((splline,))
 
     ## print(hdict)
 
@@ -211,12 +211,12 @@ def checkStatus(args):
     if len(hdict) == 1 : # only one endpoint
         print('only one endpoint')
     else:
-        print('%d endpoints ' % len(hdict))
+        print(('%d endpoints ' % len(hdict)))
 
 
     for endp in hdict:
         if len(hdict[endp][0]) == 1 : # only one mdprefix
-            print('only one mdrefix %s' % list(list(hdict[endp])[0])[0])
+            print(('only one mdrefix %s' % list(list(hdict[endp])[0])[0]))
             tmdprefix=list(list(hdict[endp])[0])[0]
             fsubset = hdict[endp][0][tmdprefix][0]+'_1'
 
@@ -229,27 +229,27 @@ def checkStatus(args):
     hcount=0 ; mcount=0 ;
     htot=0 ; mtot=0 ;
     fieldCount=9
-    print ('| %-20s | %5s | %10s | %8s | %9s | %6s |' % ('Subset','Description','Issues','Harvested','Mapped','Uploaded'))
+    print(('| %-20s | %5s | %10s | %8s | %9s | %6s |' % ('Subset','Description','Issues','Harvested','Mapped','Uploaded')))
     for subset in subsets :
         fieldCount+=1
         nextfield='A'+str(fieldCount)
         hsheet.write(nextfield,subset)
         inpath = '/'.join([base_outdir,community+'-'+mdprefix,subset])
         if os.path.isdir(inpath+'/xml'):
-            hfiles = filter(lambda x: x.endswith('.xml'), os.listdir(inpath+'/xml'))
+            hfiles = [x for x in os.listdir(inpath+'/xml') if x.endswith('.xml')]
             hcount=len(list(hfiles))
             htot+=hcount
             nextfield='F'+str(fieldCount)
             hsheet.write(nextfield,hcount)
         if os.path.isdir(inpath+'/json'):
-            mfiles = filter(lambda x: x.endswith('.json'), os.listdir(inpath+'/json'))
+            mfiles = [x for x in os.listdir(inpath+'/json') if x.endswith('.json')]
             mcount=len(list(mfiles))
             mtot+=mcount
             nextfield='G'+str(fieldCount)
             hsheet.write(nextfield,mcount)
-        print ('| %20s | %5s | %10s | %8d | %9d | %6d |' % ( subset,'blabla...','Errors :...',hcount,mcount,10000) )
+        print(('| %20s | %5s | %10s | %8d | %9d | %6d |' % ( subset,'blabla...','Errors :...',hcount,mcount,10000) ))
 
-    print ('| %20s | %5s | %10s | %8d | %9d | %6d |' % ('Sum','','',htot,mtot,10000) )
+    print(('| %20s | %5s | %10s | %8d | %9d | %6d |' % ('Sum','','',htot,mtot,10000) ))
 
 
     msheet = workbook.add_worksheet('Map '+mdprefix+' ('+now+')')
@@ -266,7 +266,7 @@ def checkStatus(args):
     # Read stat file and write XPATH rules and Coverage in xlsx file  
     statfile='%s/%s/%s/%s' % (base_outdir,community+'-'+mdprefix,subset,'validation.stat')
     if not os.path.exists(statfile):
-        print('Can not access %s' % statfile)
+        print(('Can not access %s' % statfile))
         ##sys.exit(-1)
 
     with open(statfile, 'r') as f:
@@ -300,14 +300,14 @@ def checkProbes(args):
     b2find_url='http://'+args.url
     if args.port :
          b2find_url+=':'+args.port
-    print (' Check the service endpoint %s' % b2find_url)
+    print((' Check the service endpoint %s' % b2find_url))
     ckanapi3=b2find_url+'/api/3'
     ckanapi3act=b2find_url+'/api/3/action/'
     ckan_limit=100
 
     start=time.time()
 
-    print ('| %-15s | %-7s | %-20s | %-7s | %-6s |' % ('Probe','RetCode','Message','ResLength','RTA'))
+    print(('| %-15s | %-7s | %-20s | %-7s | %-6s |' % ('Probe','RetCode','Message','ResLength','RTA')))
     print ('-----------------------------------------------')
     suppProbes=['URLcheck','ListDatasets','ListCommunities','ShowGroupENES']
     if args.action == 'all' :
@@ -316,7 +316,7 @@ def checkProbes(args):
         if args.action in suppProbes :
             probes=[args.action]
         else:
-            print ('Action %s is not supported' % args.action)
+            print(('Action %s is not supported' % args.action))
             sys.exit(-1)
 
     totretcode=0
@@ -338,7 +338,7 @@ def checkProbes(args):
 
             answer = check_ckan_action(actionreq,data_dict,ckan_limit)
 
-        print ('| %-15s | %-7s | %-20s | %-7s | %-7.2f | ' % (probe,answer[0],answer[1],answer[2],answer[3]))
+        print(('| %-15s | %-7s | %-20s | %-7s | %-7.2f | ' % (probe,answer[0],answer[1],answer[2],answer[3])))
         if answer[0] > totretcode : totretcode = answer[0]
 
     return totretcode

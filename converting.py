@@ -18,8 +18,8 @@ THE SOFTWARE.
 """
 
 # from future
-from __future__ import absolute_import
-from __future__ import print_function
+
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -173,7 +173,7 @@ class Converter(object):
     
         # run oai-converting
         # find all .json files in inpath/json:
-        files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath+'/json')))
+        files = list([x for x in os.listdir(inpath+'/json') if x.endswith('.json')])
         results['tcount'] = len(files)
 
         ##oaiset=path.split(target_mdschema)[0].split('_')[0].strip('/')
@@ -249,7 +249,7 @@ class Converter(object):
                         data=dict()
                         jsondata['community']=community
                         ##HEW-D dsdata = Template(dsdata)
-                        for facetdict in self.b2findfields.values() :
+                        for facetdict in list(self.b2findfields.values()) :
                             facet=facetdict["ckanName"]
                             ##HEW-T  print ('facet %s ' % facet)
                             if facet in jsondata:
@@ -319,7 +319,7 @@ class Converter(object):
                         data=dict()
                         jsondata['community']=community
                         ##HEW-D dsdata = Template(dsdata)
-                        for facetdict in self.b2findfields.values() :
+                        for facetdict in list(self.b2findfields.values()) :
                             facet=facetdict["ckanName"]
                             ##HEW-T                            print ('facet %s ' % facet)
                             if facet in jsondata:
@@ -422,7 +422,7 @@ class Converter(object):
         self.logger.info('%s     INFO  B2FIND : %d records converted; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .xml files in path/b2find
-        results['count'] = len(list(filter(lambda x: x.endswith('.xml'), os.listdir(outpath))))
+        results['count'] = len(list([x for x in os.listdir(outpath) if x.endswith('.xml')]))
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,

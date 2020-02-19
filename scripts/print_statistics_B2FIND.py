@@ -18,7 +18,7 @@ import traceback
 import os, sys, io, time
 import smtplib
 import argparse
-import urllib2, urllib, socket
+import urllib.request, urllib.error, urllib.parse, urllib.request, urllib.parse, urllib.error, socket
 import json, pprint
 
 
@@ -37,12 +37,12 @@ def ckan_action(actionreq,data,rows):
     rta=0
     try:
         start=time.time()
-        request = urllib2.Request(actionreq)
+        request = urllib.request.Request(actionreq)
         if data :
-            data_string = urllib.quote(json.dumps(data))
-            response = urllib2.urlopen(request,data_string)
+            data_string = urllib.parse.quote(json.dumps(data))
+            response = urllib.request.urlopen(request,data_string)
         else :
-            response = urllib2.urlopen(request)
+            response = urllib.request.urlopen(request)
         rta=time.time()-start
         
         assert response.code == 200
@@ -57,7 +57,7 @@ def ckan_action(actionreq,data,rows):
         else:
             resplen=len(result)
 
-    except urllib2.URLError as e:
+    except urllib.error.URLError as e:
         msg = "   [URLERROR] %s " % e
         retcode = 2
     except socket.timeout as e:
@@ -86,7 +86,7 @@ def main():
     args = get_args()
 
     if args.version :
-        print ('B2FIND %s :: CKAN %s' % (B2FIND_version,CKAN_version))
+        print(('B2FIND %s :: CKAN %s' % (B2FIND_version,CKAN_version)))
         sys.exit(0)
 
     sys.exit(checkProbes(args))
@@ -121,7 +121,7 @@ Subject: %s
         if args.action in suppProbes :
             probes=[args.action]
         else:
-            print ('Action %s is not supported' % args.action)
+            print(('Action %s is not supported' % args.action))
             sys.exit(-1)
 
     totretcode=0
@@ -156,14 +156,14 @@ Subject: %s
         msgtxt+=('| %-15s | %18s |\n' % (community,answer[2]['count']))
         if answer[0] > totretcode : totretcode = answer[0]
     
-    print msgtxt
+    print(msgtxt)
 
     try:
         smtpObj = smtplib.SMTP('localhost')
         smtpObj.sendmail('widmann@dkrz.de', ['widmann@dkrz.de','martens@dkrz.de','thiemann@dkrz.de'], msgtxt)         
-        print "Successfully sent email"
+        print("Successfully sent email")
     except SMTPException:
-        print "Error: unable to send email"
+        print("Error: unable to send email")
 
     outfile='/tmp/B2FIND_stat_%s' % now
     with open(outfile, 'w') as f:

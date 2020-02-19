@@ -29,25 +29,25 @@ def main():
         # find all files in directory:
         for root, dirs, files in os.walk(options.dir):
             counter = 0
-            no_files = len(filter(lambda x: x.endswith(options.filetype) , files))
-            for file in filter(lambda x: x.endswith(options.filetype) , files):
+            no_files = len([x for x in files if x.endswith(options.filetype)])
+            for file in [x for x in files if x.endswith(options.filetype)]:
                 counter += 1
                 update_progress(root,100*counter/no_files)
                 check_file(list, os.path.join(root, file), pattern, options.offset)
         
         # print results: 
-        print "\n%s" %('-'*100)
-        print "Results on disk (%s), %d file(s), show max. %d:" % (options.dir, len(list), options.disk_limit)
+        print("\n%s" %('-'*100))
+        print("Results on disk (%s), %d file(s), show max. %d:" % (options.dir, len(list), options.disk_limit))
         counter = 0
         for f,des in list:
             counter += 1
             if counter > options.disk_limit: break
-            print '[%s]' % f
-            print '    ...' +des+'...'
+            print('[%s]' % f)
+            print('    ...' +des+'...')
         
 
     if (options.ckan):
-        print "\n%s" %('-'*100)
+        print("\n%s" %('-'*100))
         
         CKAN = B2FIND.CKAN_CLIENT(options.ckan,None)
         
@@ -59,20 +59,20 @@ def main():
         answer = CKAN.action('package_search', {"q":ckan_pattern,"rows":options.ckan_limit})
         
         # print results:
-        print "Results on CKAN (%s), %d dataset(s), show max. %d:" % (options.ckan, answer['result']['count'], options.ckan_limit)
+        print("Results on CKAN (%s), %d dataset(s), show max. %d:" % (options.ckan, answer['result']['count'], options.ckan_limit))
         for ds in answer['result']['results']:
-            print '[%s]' % ds['name']
-            print '    title: %s' % ds['title']
+            print('[%s]' % ds['name'])
+            print('    title: %s' % ds['title'])
             pidf = open('pid.file', 'a')
 
             for extra in ds['extras']:
                 if (extra['key'] == 'PID'):
-                   print '    PID : %s' % extra['value']
+                   print('    PID : %s' % extra['value'])
                    pidf.write(extra['value']+'\n')
 
             pidf.close()
             if (len(ds['groups'])):
-                print '    group: %s' % ds['groups'][0]['name']
+                print('    group: %s' % ds['groups'][0]['name'])
                 
 def check_file(list, file, pattern, offset):
     data = None
@@ -106,8 +106,8 @@ def check_file(list, file, pattern, offset):
     with open(file, 'r') as f:
         try:
             data=f.read()
-        except Exception, e:
-            print "[ERROR] Cannot load the file %s! %s" % (file, e)
+        except Exception as e:
+            print("[ERROR] Cannot load the file %s! %s" % (file, e))
 
     if (pattern in data):
         index = data.index(pattern)
@@ -143,7 +143,7 @@ def get_options():
     options, args = p.parse_args()
     
     if (len(args) != 1):
-        print "[ERROR] Need a pattern as an argument!"
+        print("[ERROR] Need a pattern as an argument!")
         exit()
     
     return options, args[0]

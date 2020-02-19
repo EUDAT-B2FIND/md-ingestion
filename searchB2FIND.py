@@ -61,10 +61,10 @@ def main():
                 action=args.request
             answer = CKAN.action(action)
         except ckanclient.CkanApiError as e :
-            print('\t\tError %s Supported list requests are %s.' % (e,ckanlistrequests))
+            print(('\t\tError %s Supported list requests are %s.' % (e,ckanlistrequests)))
             sys.exit(1)
 
-        print('\n\t%s' % '\n\t'.join(answer).encode('utf8'))
+        print(('\n\t%s' % '\n\t'.join(answer).encode('utf8')))
         sys.exit(0)
 
     # create CKAN search pattern :
@@ -80,14 +80,14 @@ def main():
         sand=" AND "
     ckan_pattern += sand + args.pattern
 
-    print(' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern))
+    print((' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern)))
 
     if args.request == 'package_search' :
         answer = CKAN.action('package_search',{"q":ckan_pattern})
-    for key, value in answer.items() :
+    for key, value in list(answer.items()) :
         logger.warning('answer has key %s' % key)
     tcount=answer['result']['count']
-    print(' | - Results:\n\t|- %d records found in %d sec' % (tcount,time.time()-start))
+    print((' | - Results:\n\t|- %d records found in %d sec' % (tcount,time.time()-start)))
 
     # Read in B2FIND metadata schema and fields
     schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
@@ -104,7 +104,7 @@ def main():
             else:
                 akeys=args.keys
 
-        suppid=b2findfields.keys()
+        suppid=list(b2findfields.keys())
 
         fh = io.open(args.output, "w", encoding='utf8')
         record={} 
@@ -115,7 +115,7 @@ def main():
         statc={}
         for outt in akeys:
                 if outt not in suppid :
-                    print(' [WARNING] Not supported key %s is removed' % outt)
+                    print((' [WARNING] Not supported key %s is removed' % outt))
                     akeys.remove(outt)
                 else:
                     count[outt]=0
@@ -125,7 +125,7 @@ def main():
         if (len(akeys) > 0):
             printfacets="and related facets %s " % ", ".join(akeys)
 
-        print('\t|- IDs %sare written to %s ...' % (printfacets,args.output))
+        print(('\t|- IDs %sare written to %s ...' % (printfacets,args.output)))
 
         counter=0
         cstart=0
@@ -140,7 +140,7 @@ def main():
             jsonpath='%sb2find/json/' % commstr
             if not os.path.exists(jsonpath):
                 os.makedirs(jsonpath)
-            print('  |- Write datasets as JSONS to %s' % jsonpath)
+            print(('  |- Write datasets as JSONS to %s' % jsonpath))
 
         while (cstart < tcount) :
             if (cstart > 0):
@@ -157,7 +157,7 @@ def main():
                     bartags=perc/5
                     if perc%10 == 0 and perc != oldperc :
                         oldperc=perc
-                        print('\r\t[%-20s] %5d (%3d%%) in %d sec' % ('='*int(bartags), counter, perc, time.time()-start2 ))
+                        print(('\r\t[%-20s] %5d (%3d%%) in %d sec' % ('='*int(bartags), counter, perc, time.time()-start2 )))
                         sys.stdout.flush()
         
                     
@@ -205,7 +205,7 @@ def main():
         
         if len(akeys) > 0 :
                 statfh = io.open('stat_'+args.output, "w", encoding='utf8')
-                print('|- Statistics written to file %s' % 'stat_'+args.output)
+                print(('|- Statistics written to file %s' % 'stat_'+args.output))
         
                 statline=""
                 for outt in akeys:

@@ -16,13 +16,13 @@ THE SOFTWARE.
 import os, sys
 import argparse
 import simplejson as json
-import urllib, urllib2
+import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse
 
 def main():
     args = get_args()
     list = []
     
-    print "\n%s" %('-'*100)
+    print("\n%s" %('-'*100))
     # create CKAN search pattern :
     ckan_pattern = ''
     sand=''
@@ -33,11 +33,11 @@ def main():
     if (args.pattern):
         ckan_pattern += sand + pattern   
 
-    print 'Search in\t%s\nfor pattern\t%s\n.....' % (args.ckan,ckan_pattern)
+    print('Search in\t%s\nfor pattern\t%s\n.....' % (args.ckan,ckan_pattern))
     answer = action(args.ckan, {"q":ckan_pattern,"rows":args.ckan_limit,"start":0})
     tcount=answer['result']['count']
-    print "=> %d datasets found" % tcount
-    if (tcount>args.ckan_limit): print "=> but maximal %d rows are returned " % args.ckan_limit
+    print("=> %d datasets found" % tcount)
+    if (tcount>args.ckan_limit): print("=> but maximal %d rows are returned " % args.ckan_limit)
     ## print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
     sf = open('source.file', 'w')
     pidf = open('pid.file', 'w')
@@ -60,7 +60,7 @@ def main():
        cstart+=len(answer['result']['results']) 
 
     pidf.close()
-    print "Found %d records (ID's written to id.file) and %d associated PIDs (written to pid.file)" % (counter, countpid)
+    print("Found %d records (ID's written to id.file) and %d associated PIDs (written to pid.file)" % (counter, countpid))
 
 def action(host, data={}):
     ## action (action, jsondata) - method
@@ -85,28 +85,28 @@ def __action_api (host,action, data_dict):
     action_url = "http://{host}/api/3/action/{action}".format(host=host,action=action)
 
     # make json data in conformity with URL standards
-    data_string = urllib.quote(json.dumps(data_dict))
+    data_string = urllib.parse.quote(json.dumps(data_dict))
 
     ##print('\t|-- Action %s\n\t|-- Calling %s\n\t|-- Object %s ' % (action,action_url,data_dict))	
     try:
-       request = urllib2.Request(action_url)
-       response = urllib2.urlopen(request,data_string)
-    except urllib2.HTTPError as e:
-       print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,host,action)
+       request = urllib.request.Request(action_url)
+       response = urllib.request.urlopen(request,data_string)
+    except urllib.error.HTTPError as e:
+       print('\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,host,action))
        if ( e.code == 403 ):
-                print '\t\tAccess forbidden, maybe the API key is not valid?'
+                print('\t\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
        elif ( e.code == 409 and action == 'package_create'):
-                print '\t\tMaybe the dataset already exists or you have a parameter error?'
+                print('\t\tMaybe the dataset already exists or you have a parameter error?')
                 action('package_update',data_dict)
                 return {"success" : False}
        elif ( e.code == 409):
-                print '\t\tMaybe you have a parameter error?'
+                print('\t\tMaybe you have a parameter error?')
                 return {"success" : False}
        elif ( e.code == 500):
-                print '\t\tInternal server error'
+                print('\t\tInternal server error')
                 exit(e.code)
-    except urllib2.URLError as e:
+    except urllib.error.URLError as e:
        exit('%s' % e.reason)
     else :
        out = json.loads(response.read())
@@ -132,7 +132,7 @@ def get_args():
     args = p.parse_args()
     
     if (not args.pattern) and (not args.community) :
-        print "[ERROR] Need at least a community given via option -c or a search pattern as an argument!"
+        print("[ERROR] Need at least a community given via option -c or a search pattern as an argument!")
         exit()
     
     return args

@@ -13,8 +13,8 @@ THE SOFTWARE.
 """
 
 # from future
-from __future__ import absolute_import
-from __future__ import print_function
+
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -533,7 +533,7 @@ class Uploader(object):
                 self.logger.error('Can not access directory %s' % inpath)
                 continue     
 
-            files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
+            files = list([x for x in os.listdir(inpath) if x.endswith(infformat)])
             results['tcount'] += len(list(files))
             oldperc=0
             err = None

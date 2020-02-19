@@ -13,8 +13,8 @@ THE SOFTWARE.
 """
 
 # from future
-from __future__ import absolute_import
-from __future__ import print_function
+
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -111,7 +111,7 @@ class Generator(object):
                     print(' |- create mapfile\n\t%s and' % mapfile)
                     w = csv.writer(open(mapfile, "w"),delimiter='>')
                     for of in ofields:
-                        mapdc[of.strip()]=input('Target field for %s : ' % of.strip())
+                        mapdc[of.strip()]=eval(input('Target field for %s : ' % of.strip()))
                         fields.append(mapdc[of].strip())
                         w.writerow([of, mapdc[of]])
 

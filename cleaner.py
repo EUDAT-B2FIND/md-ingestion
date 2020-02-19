@@ -92,7 +92,7 @@ def options_parser(modes):
 def pstat_init (p,modes,mode,source,host):
     if (mode):
         if not(mode in modes):
-           print("[ERROR] Mode " + mode + " is not supported")
+           print(("[ERROR] Mode " + mode + " is not supported"))
            sys.exit(-1)
     else: # all processes (default)
         mode = 'h-u'
@@ -154,15 +154,15 @@ def main():
       mainmode='deletion'
 
     if options.host :
-       print "\tCKAN HOST:\t%s" % (options.host)
+       print("\tCKAN HOST:\t%s" % (options.host))
     if options.handle_check :
-       print "\tCREDENTIAL:\t%s" % (options.handle_check)
-    print '='*90
+       print("\tCREDENTIAL:\t%s" % (options.handle_check))
+    print('='*90)
 
     # make jobdir
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     jid = os.getpid()
-    print "\tStart of processing:\t%s" % (now)
+    print("\tStart of processing:\t%s" % (now))
 
     global logger
     OUT = Output(pstat,now,jid,options)
@@ -174,7 +174,7 @@ def main():
     if (options.handle_check):
        try:
            cred = PIDClientCredentials.load_from_JSON('credentials_11098')
-       except Exception, err:
+       except Exception as err:
            logger.critical("[CRITICAL] %s Could not create credentials from credstore %s" % (err,options.handle_check))
            p.print_help()
            sys.exit(-1)
@@ -224,8 +224,8 @@ def main():
              ##UP.purge_group(options.community)
              UP.get_packages(options.community)
              ##HEW??? UP.get_group_list(options.community)
-             print "--- Start get community list from CKAN---\n"
-             list = UP.package_list.keys()
+             print("--- Start get community list from CKAN---\n")
+             list = list(UP.package_list.keys())
              ##clist = UP.get_packages(options.community).keys()
              ##print clist
              listtext='got from CKAN community %s, stored in file %s-id.list  (%d id\'s)' % (options.community,options.community,len(list)) 
@@ -234,14 +234,14 @@ def main():
              cf.close()
              ##print UP.package_list.keys()
     else:
-            print 'ERROR : one of the otptions -c COMMUNITY, -i IDENTIFIER or -l LIST must be given'
+            print('ERROR : one of the otptions -c COMMUNITY, -i IDENTIFIER or -l LIST must be given')
             sys.exit()
 
     ##HEW-Tprint '%s list ' % list
     ##HEW-Tsys.exit()
 
     
-    print "\n=== Start %s processing ===\n\tTIME:\t%s\n\tID LIST:\t%s ... \n\t%s MODE:\t%s" % (mainmode,now,list[0:100], mainmode.upper(), options.mode)
+    print("\n=== Start %s processing ===\n\tTIME:\t%s\n\tID LIST:\t%s ... \n\t%s MODE:\t%s" % (mainmode,now,list[0:100], mainmode.upper(), options.mode))
 
 
 
@@ -250,7 +250,7 @@ def main():
     jcount=0
     ccount=0
     pcount=0
-    print '\n| %-5s | %-35s | %-6s | %-6s | %-6s | %-6s |\n|%s|' % ('#', 'Identifier','XML','JSON','CKAN','PID',"-" * 53)
+    print('\n| %-5s | %-35s | %-6s | %-6s | %-6s | %-6s |\n|%s|' % ('#', 'Identifier','XML','JSON','CKAN','PID',"-" * 53))
     for entry in list:
        n+=1
        dir = os.path.dirname(entry).rstrip()
@@ -284,28 +284,28 @@ def main():
              if (not options.quiet):
                try:
                    os.remove(xmlfile)
-               except Exception, e:
+               except Exception as e:
                  logger.error('[ERROR] Unexpected Error: %s' % e)
                  raise
                else:
                  ##print '\tXML file %s %s removed' % (xmlfile,qmsg)
                  xmlaction='removed'
          else:
-             print "\tWARNING : Can not access %s for removing" % xmlfile
+             print("\tWARNING : Can not access %s for removing" % xmlfile)
          if (os.path.isfile(jsonfile)):
              jsonstatus='exists'
              actionreq+=', remove json file'
              if (not options.quiet):
                try:
                  os.remove(jsonfile)
-               except Exception, e:
+               except Exception as e:
                  logger.error('[ERROR] Unexpected Error: %s' % e)
                  raise
                else:
                  jsonaction='removed'
                  ##print '\tJSON file %s %s removed' % (jsonfile,qmsg)
          else:
-             print "\tWARNING : Can not access %s for removing" % jsonfile
+             print("\tWARNING : Can not access %s for removing" % jsonfile)
  ##      else:
  ##         print "  INFO : No directory or/and no supported extension %s given  => NO FILES to remove" % ext  
 
@@ -327,7 +327,7 @@ def main():
                b2findversion = HandleClient.get_value_from_handle(pid,"JMDVERSION") 
            except (HandleNotFoundException,HandleSyntaxError) as err :
                logger.debug("[DEBUG : %s] in HandleClient.get_value of pid %s" % (err,pid))
-           except Exception, err:
+           except Exception as err:
                logger.critical("[CRITICAL : %s] in HandleClient.modify_handle_value of %s" % (err,pid))
                sys.exit()
            else:
@@ -338,7 +338,7 @@ def main():
              handlestatus="new"
            else:
              logger.debug("        |-> pid %s exists" % (pid))
-             print 'JMDVERSION %s' % b2findversion
+             print('JMDVERSION %s' % b2findversion)
              handlestatus="exist"
            ##HEW-T print '\n Handle status : %s' % handlestatus  
            if (handlestatus == 'exist'):
@@ -350,7 +350,7 @@ def main():
                  handleaction='removed'
              except GenericHandleError as err:
                  logger.error('[ERROR] Unexpected Error: %s' % err)
-             except Exception, e:
+             except Exception as e:
                  logger.error('[ERROR] Unexpected Error: %s' % e)
                  handleaction='failed'
                  raise
@@ -373,12 +373,12 @@ def main():
                         ckanaction='removed'
                  else:
                         ckanaction='failed'
-             except Exception, e:
+             except Exception as e:
                logger.error('[ERROR] Unexpected Error: %s' % e)
                raise
-       print '| %-6d | %-35s | %-6s | %-6s | %-6s | %-6s |' % (n, id,xmlstatus,jsonstatus,ckanstatus,handlestatus)
+       print('| %-6d | %-35s | %-6s | %-6s | %-6s | %-6s |' % (n, id,xmlstatus,jsonstatus,ckanstatus,handlestatus))
        if (not options.quiet):
-         print '--> %-42s | %-6s | %-6s | %-6s | %-6s |' % ('action performed',xmlaction,jsonaction,ckanaction,handleaction)
+         print('--> %-42s | %-6s | %-6s | %-6s | %-6s |' % ('action performed',xmlaction,jsonaction,ckanaction,handleaction))
 
     logger.info('end of cleaning ...')
 

@@ -7,7 +7,7 @@
 
 ### import B2FIND
 import sys
-import urllib, urllib2
+import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse
 import simplejson as json
 import uuid
 
@@ -55,21 +55,21 @@ class GBIF_CLIENT(object):
 
         ## print '\t|-- Action %s\n\t|-- Calling %s\n\t|-- Offset %d ' % (action,action_url,offset)
         try:
-            request = urllib2.Request(action_url)
+            request = urllib.request.Request(action_url)
             ##if (self.api_key): request.add_header('Authorization', self.api_key)
-            response = urllib2.urlopen(request)
-        except urllib2.HTTPError as e:
-            print '\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action)
+            response = urllib.request.urlopen(request)
+        except urllib.error.HTTPError as e:
+            print('\t\tError code %s : The server %s couldn\'t fulfill the action %s.' % (e.code,self.ip_host,action))
             if ( e.code == 403 ):
-                print '\t\tAccess forbidden, maybe the API key is not valid?'
+                print('\t\tAccess forbidden, maybe the API key is not valid?')
                 exit(e.code)
             elif ( e.code == 409):
-                print '\t\tMaybe you have a parameter error?'
+                print('\t\tMaybe you have a parameter error?')
                 return {"success" : False}
             elif ( e.code == 500):
-                print '\t\tInternal server error'
+                print('\t\tInternal server error')
                 exit(e.code)
-        except urllib2.URLError as e:
+        except urllib.error.URLError as e:
             exit('%s' % e.reason)
         else :
             out = json.loads(response.read())
@@ -93,7 +93,7 @@ def main():
     data = GBIF.action('package_list',noffs)
     while(not data['endOfRecords']): ## and nj<10):
       ## 
-      print 'data %s' % data['endOfRecords']
+      print('data %s' % data['endOfRecords'])
       for record in data['results']:
         nj+=1
         jsondata=dict()
@@ -101,7 +101,7 @@ def main():
         jsondata=record
         
         ## 
-        print ' | %d | %s ' % (nj,jsondata['key'])
+        print(' | %d | %s ' % (nj,jsondata['key']))
         ##print ' -----\n%s ' % jsondata
         ## B2FIND mapping
         ##jsonmapped['title']=jsondata["title"]
@@ -134,7 +134,7 @@ def main():
               json.dump(jsondata,outfileorig, sort_keys = True, indent = 4)
               ## json.dump(jsonmapped,outfile, sort_keys = True, indent = 4)
             except:
-              print '    | [ERROR] Cannot write json file %s' % jsonfile
+              print('    | [ERROR] Cannot write json file %s' % jsonfile)
               sys.exit()
 
       noffs+=100

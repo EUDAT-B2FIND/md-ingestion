@@ -32,7 +32,7 @@ def main():
     clear_log(options.log)
     
     if (options.iphost is None or options.auth is None):
-        print "[ERROR] No host and/or no api key is given!"
+        print("[ERROR] No host and/or no api key is given!")
         exit()
 
     # create a new dkrz_ckanapi object:
@@ -61,10 +61,10 @@ def call_action(CKAN, options, action, object):
           try:
               credentials = epicclient.Credentials('os',options.epic)
               credentials.parse()
-          except Exception, err:
-              print("%s Could not create credentials from credstore %s" % (err,options.epic))
+          except Exception as err:
+              print(("%s Could not create credentials from credstore %s" % (err,options.epic)))
           else:
-              print "Create EPIC client instance to add uuid to handle server"
+              print("Create EPIC client instance to add uuid to handle server")
               ec = epicclient.EpicClient(credentials)
 
     if (action == 'package_delete_all'):
@@ -78,7 +78,7 @@ def call_action(CKAN, options, action, object):
             
         list.reverse()
             
-        print 'Total number of datasets to delete: ' + str(len(list))
+        print('Total number of datasets to delete: ' + str(len(list)))
         
         pcount = 0
         results = {
@@ -104,13 +104,13 @@ def call_action(CKAN, options, action, object):
                         results['EPIC'] += 1
                         write_log(options.log,"\t#Deleted in EPIC\n")
         
-        print '\n'
-        print "%s" %('-'*100)                
-        print "\nTotal number of dataset: %d\nDeleted in CKAN: %d\nDeleted in EPIC: %d" %(len(list),results['CKAN'],results['EPIC'])
+        print('\n')
+        print("%s" %('-'*100))                
+        print("\nTotal number of dataset: %d\nDeleted in CKAN: %d\nDeleted in EPIC: %d" %(len(list),results['CKAN'],results['EPIC']))
     
     else:
         out = CKAN.action(action,object)
-        print out
+        print(out)
         
 def update_progress(text,step,total,start_time):
     progress = 100*step/float(total)
@@ -129,8 +129,9 @@ def clear_log(log):
             f = open('api.log', 'w')
             f.write("")
             f.close()
-        except IOError as (errno, strerror):
-            print "file error({0}): {1}".format(errno, strerror)
+        except IOError as xxx_todo_changeme:
+            (errno, strerror) = xxx_todo_changeme.args
+            print("file error({0}): {1}".format(errno, strerror))
 
 def write_log(log,message):
     if (log == 'True'):
@@ -138,11 +139,12 @@ def write_log(log,message):
             f = open('api.log', 'a')
             f.write(message)
             f.close()
-        except IOError as (errno, strerror):
-            print "file error({0}): {1}".format(errno, strerror)
+        except IOError as xxx_todo_changeme1:
+            (errno, strerror) = xxx_todo_changeme1.args
+            print("file error({0}): {1}".format(errno, strerror))
 
 def interactive_mode(CKAN,options):
-    print "Welcome to the ckan api tool!"
+    print("Welcome to the ckan api tool!")
         
     action_short = {
         "d" : "package_delete",
@@ -150,30 +152,30 @@ def interactive_mode(CKAN,options):
         "u" : "package_update"
     }
     
-    print "Shorts of action names:"
+    print("Shorts of action names:")
     for n in action_short:
-        print "%s: %s" % (n,action_short[n])
+        print("%s: %s" % (n,action_short[n]))
     
     action = ''
     while (action != 'q'):
-        action = raw_input("\nPlease enter the action name ('q' to quit this program): ")
+        action = input("\nPlease enter the action name ('q' to quit this program): ")
         
         if (action != 'q' and action != ''):
             if (action in action_short):
                 action = action_short[action]
-                print "Use action '%s'!" % action
+                print("Use action '%s'!" % action)
         
             if (not CKAN.validate_action(action)):
-                print '[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT! Allowed actions are:'
-                list = CKAN.allowed_action.keys()
-                print '\n'.join(sorted(list))
+                print('[ERROR] Action name '+ str(action) +' is not defined in CKAN_CLIENT! Allowed actions are:')
+                list = list(CKAN.allowed_action.keys())
+                print('\n'.join(sorted(list)))
                 continue
         
             if (action == 'package_delete'):
-                id = raw_input("Please enter the object name: ")
+                id = input("Please enter the object name: ")
                 object = '{"id":"%s"}' % id
             else:
-                object = raw_input("Please enter the object data (JSON format): ")
+                object = input("Please enter the object data (JSON format): ")
             
             
             object = json.loads(object.replace("'", '"'))
@@ -208,8 +210,9 @@ def file2string(filename):
 		string  = f.readline();
 		f.close();
 		return string;
-	except IOError as (errno, strerror):
-		print "file error({0}): {1}".format(errno, strerror);
+	except IOError as xxx_todo_changeme2:
+		(errno, strerror) = xxx_todo_changeme2.args
+		print("file error({0}): {1}".format(errno, strerror));
 		exit();
 	
 
