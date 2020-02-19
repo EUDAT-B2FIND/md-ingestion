@@ -518,7 +518,7 @@ def process_delete(OUT, dir, options):
                 subset, identifier = line.split('\t')
          
                 # dataset name uniquely generated from oai identifier
-                uid = uuid.uuid5(uuid.NAMESPACE_DNS, identifier.encode('ascii','replace'))
+                uid = uuid.uuid5(uuid.NAMESPACE_DNS, identifier)
                 ds = str(uid)
 
                 # output:

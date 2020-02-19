@@ -603,7 +603,7 @@ limit 1000
                     return -1
 
             # generate a uniquely identifier and a filename for this dataset:
-            uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id.encode('utf-8')))
+            uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id))
             outfile = '%s/%s/%s.%s' % (subsetdir,outtypedir,os.path.basename(uid),outtypeext)
 
             if delete_flag : # record marked as deleted on provider site 
