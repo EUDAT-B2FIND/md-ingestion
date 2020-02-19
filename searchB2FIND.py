@@ -18,8 +18,6 @@ THE SOFTWARE.
 import logging
 from output import Output
 import os, sys, io, time
-PY2 = sys.version_info[0] == 2
-
 import argparse
 import simplejson as json
 import json as json2
@@ -61,10 +59,7 @@ def main():
                 action='group_list'
             else:
                 action=args.request
-            if PY2 :
-                answer = CKAN.action(action, rows=ckan_limit)
-            else:
-                answer = CKAN.action(action)
+            answer = CKAN.action(action)
         except ckanclient.CkanApiError as e :
             print('\t\tError %s Supported list requests are %s.' % (e,ckanlistrequests))
             sys.exit(1)
@@ -88,16 +83,10 @@ def main():
     print(' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern))
 
     if args.request == 'package_search' :
-        if PY2:
-            answer = CKAN.action('package_search', {"q":ckan_pattern}) ##HEW-D? , rows=ckan_limit)
-        else:
-            answer = CKAN.action('package_search',{"q":ckan_pattern})
+        answer = CKAN.action('package_search',{"q":ckan_pattern})
     for key, value in answer.items() :
         logger.warning('answer has key %s' % key)
-    if PY2 :
-        tcount=answer['result']['count'] ### ['count']
-    else:
-        tcount=answer['result']['count']
+    tcount=answer['result']['count']
     print(' | - Results:\n\t|- %d records found in %d sec' % (tcount,time.time()-start))
 
     # Read in B2FIND metadata schema and fields
@@ -155,20 +144,11 @@ def main():
 
         while (cstart < tcount) :
             if (cstart > 0):
-                if PY2 :
-                    answer = CKAN.action('package_search', {"q":ckan_pattern,"rows":ckan_limit,"start":cstart}) ##HEW-D q=ckan_pattern, rows=ckan_limit, start=cstart)
-                else:
-                    answer = CKAN.action('package_search',{"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
-            if PY2 :
-                if len(answer['result']) == 0 :
-                    break
-        
+                answer = CKAN.action('package_search',{"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
+                    
             # loop over found records
 
-            if PY2:
-                results= answer['result']['results'] ### ['results']
-            else:
-                results= answer['result']['results']
+            results= answer['result']['results']
             for ds in results : #### answer['results']:
                     ##HEW-T print(' ds : %s' % ds)
                     counter +=1
@@ -217,10 +197,7 @@ def main():
                                 statc[facet][word]+=1
                         if not ( record[facet] == 'N/A' or record[facet] == 'Not Stated') and len(record[facet])>0 : 
                             count[facet]+=1
-                        if PY2 :
-                            fh.writelines((record[facet]+'\n').decode('utf-8'))
-                        else :
-                            fh.writelines((record[facet]+'\n'))
+                        fh.writelines((record[facet]+'\n'))
 
             cstart+=len(results)
             logger.warning('%d records done, %d in total' % (cstart,tcount))
@@ -236,10 +213,7 @@ def main():
                     for word in statc[outt].most_common(10):
                         statline+= '\t| %-15s | %-6d | %3d |\n' % (word[0][:100], word[1], int(word[1]*100/tcount))
         
-                if PY2 :
-                    statfh.write(statline.decode('utf-8'))
-                else :
-                    statfh.write(statline)
+                statfh.write(statline)
         
                 statfh.close()
         

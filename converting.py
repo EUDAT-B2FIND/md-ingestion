@@ -43,14 +43,8 @@ from pyparsing import *
 import Levenshtein as lvs
 import iso639
 from collections import OrderedDict, Iterable
-
-PY2 = sys.version_info[0] == 2
-if PY2:
-    from urllib2 import urlopen
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib.request import urlopen
-    from urllib.error import HTTPError,URLError
+from urllib.request import urlopen
+from urllib.error import HTTPError,URLError
 
 class Converter(object):
     """

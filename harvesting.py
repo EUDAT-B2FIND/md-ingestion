@@ -29,8 +29,6 @@ import re
 
 __author__ = "Heinrich Widmann"
 
-PY2 = sys.version_info[0] == 2
-
 # needed for class Harvester:
 from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch,CannotDisseminateFormat
@@ -47,12 +45,8 @@ import xml.etree.ElementTree as ET
 import json
 from itertools import tee 
 import collections
-if PY2:
-    from urllib2 import urlopen, Request
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib.request import urlopen, Request
-    from urllib.error import HTTPError,URLError
+from urllib.request import urlopen, Request
+from urllib.error import HTTPError,URLError
 
 
 class Harvester(object):
@@ -631,12 +625,6 @@ limit 1000
                             metadata = etree.tostring(metadata, pretty_print = True).decode('utf-8')
                         except (Exception,UnicodeEncodeError) as e:
                             self.logger.critical('%s : Metadata: %s ...' % (e,metadata[:20]))
-                        ##if PY2 :
-                        ##    try:
-                        ##        metadata = metadata.encode('utf-8')
-                        ##    except (Exception,UnicodeEncodeError) as e :
-                        ##        self.logger.debug('%s : Metadata : %s ...' % (e,metadata[20]))
-
                         try:
                             f = open(outfile, 'w')
                             f.write(metadata)

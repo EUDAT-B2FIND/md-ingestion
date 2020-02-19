@@ -29,8 +29,6 @@ import re
 
 __author__ = "Heinrich Widmann"
 
-PY2 = sys.version_info[0] == 2
-
 # needed for class Generator:
 import csv
 from DublinCoreTerms import DublinCore
@@ -113,10 +111,7 @@ class Generator(object):
                     print(' |- create mapfile\n\t%s and' % mapfile)
                     w = csv.writer(open(mapfile, "w"),delimiter='>')
                     for of in ofields:
-                        if PY2:
-                            mapdc[of.strip()]=raw_input('Target field for %s : ' % of.strip())
-                        else:
-                            mapdc[of.strip()]=input('Target field for %s : ' % of.strip())
+                        mapdc[of.strip()]=input('Target field for %s : ' % of.strip())
                         fields.append(mapdc[of].strip())
                         w.writerow([of, mapdc[of]])
 

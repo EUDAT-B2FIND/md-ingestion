@@ -29,8 +29,6 @@ import logging
 import traceback
 import re
 
-PY2 = sys.version_info[0] == 2
-
 # needed for UPLOADER and CKAN class:
 import settings
 import simplejson as json
@@ -39,14 +37,9 @@ import collections
 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError
 # needed for CKAN_CLIENT
 import socket
-if PY2:
-    from urllib import quote
-    from urllib2 import urlopen, Request
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib import parse
-    from urllib.request import urlopen, Request
-    from urllib.error import HTTPError,URLError
+from urllib import parse
+from urllib.request import urlopen, Request
+from urllib.error import HTTPError,URLError
 
 class CKAN_CLIENT(object):
 
@@ -169,10 +162,7 @@ class CKAN_CLIENT(object):
         # make json data in conformity with URL standards
         encoding='utf-8'
         try:
-            if PY2 :
-                data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
-            else :
-                data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+            data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
         except Exception as err :
             self.logger.critical('%s while building url data' % err)
 
@@ -181,10 +171,7 @@ class CKAN_CLIENT(object):
             self.logger.debug('request %s' % request)            
             if (self.api_key): request.add_header('Authorization', self.api_key)
             self.logger.debug('api_key %s....' % self.api_key)
-            if PY2 :
-                response = urlopen(request)
-            else :
-                response = urlopen(request)
+            response = urlopen(request)
             self.logger.debug('response %s' % response)            
         except HTTPError as e:
             self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))

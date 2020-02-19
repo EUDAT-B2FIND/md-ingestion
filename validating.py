@@ -38,13 +38,8 @@ import Levenshtein as lvs
 import iso639
 from collections import OrderedDict, Iterable, Counter
 
-PY2 = sys.version_info[0] == 2
-if PY2:
-    from urllib2 import urlopen
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib.request import urlopen
-    from urllib.error import HTTPError,URLError
+from urllib.request import urlopen
+from urllib.error import HTTPError,URLError
 
 class Validator(object):
     """
@@ -70,12 +65,7 @@ class Validator(object):
 
         ## settings for pyparsing
         nonBracePrintables = ''
-        if PY2:
-            unicodePrintables = u''.join(unichr(c) for c in range(65536)
-                                        if not unichr(c).isspace())
-        else:
-            unicodePrintables = u''.join(chr(c) for c in range(65536)
-                                        if not chr(c).isspace())
+        unicodePrintables = u''.join(chr(c) for c in range(65536) if not chr(c).isspace())
         
         for c in unicodePrintables: ## printables:
             if c not in '(){}[]':
@@ -314,10 +304,7 @@ class Validator(object):
             inlist=[item for sublist in inlist for item in sublist] ##???
         for indisc in inlist :
             self.logger.debug('\t\t Next input discipline value %s of type %s' % (indisc,type(indisc)))
-            if PY2:
-                indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
-            else:
-                indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
+            indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
             maxr=0.0
             maxdisc=''
             for line in disctab :
@@ -835,13 +822,8 @@ class Validator(object):
             if facet in ['title','notes','author','Publisher']:
                 cvalue=value
                 try:
-                    if PY2 :
-                        if isinstance(value, unicode) :
-                            ## value=value.decode('utf-8')
-                            cvalue=value.encode("iso-8859-1")
-                    else :
-                        if isinstance(value, str) :
-                            cvalue=value.encode("iso-8859-1")
+                    if isinstance(value, str) :
+                        cvalue=value.encode("iso-8859-1")
                 except (Exception,UnicodeEncodeError) as e :
                     self.logger.error("%s : { %s:%s }" % (e,facet,value))
                 else:
