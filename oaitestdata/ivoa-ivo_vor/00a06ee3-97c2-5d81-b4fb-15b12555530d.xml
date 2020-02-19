@@ -1,0 +1,120 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/PAZh/21/509</oai:identifier>
+    <oai:datestamp>2018-12-27T12:14:50Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="1999-04-07T17:19:00" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>Identification and coordinates in M5 (Evstigneeva,+ 1995)</title>
+      <shortName>J/PAZh/21/509</shortName>
+      <identifier>ivo://CDS.VizieR/J/PAZh/21/509</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Evstigneeva N.M., Shokin Yu.A., Samus N.N., Tsvetkova T.M.</name>
+        </creator>
+        <contributor>Veta Avedisova [INASAN]</contributor>
+        <date role="creation">1999-04-07T17:19:00</date>
+        <version>20-Feb-1999</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Positional_Data</subject>
+        <subject>Globular_Clusters</subject>
+        <description>Accurate equatorial coordinates have been determined for 143 variable and suspected variable stars in the globular cluster M5=NGC 5904. For 28 stars, identifications with Kustner (1933VeUSB..26....1K) catalogue were found for the first time. </description>
+        <source format="bibcode">1995PAZh...21..509E</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/PAZh/21/509</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/PAZh/21/509</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/PAZh/21/509</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/PAZh/21/509/table2 (Coordinates of variables in M 5)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/PAZh/21/509/table2?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>229.658203125</ra>
+          <dec>1.9587333471852733</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/J/PAZh/21/509?product=MOC&amp;nside=512</footprint>
+        <waveband>Optical</waveband>
+      </coverage>
+      <table>
+        <name>J/PAZh/21/509/table2</name>
+        <description>Coordinates of variables in M 5</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>Cat</name>
+          <description>Published list source of stars (1)</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>Star</name>
+          <description>Designation of the star in the list</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>Kust</name>
+          <description>? Kustner (1933VeUSB..26....1K) number</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Right ascension (J2000.0)</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Declination (J2000.0)</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>Rem</name>
+          <description>[nwse ] nw,se,e,w -components of pairs</description>
+          <ucd>meta.code</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

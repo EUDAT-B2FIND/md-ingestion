@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "post@slks.dk"
+    ],
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&identifier=2d337211-f960-5283-9e5d-eb573e89667f",
+    "PublicationTimestamp": "2020-01-17T11:59:59Z",
+    "PublicationYear": [
+        "2020"
+    ],
+    "Publisher": [
+        "Slots- og Kulturstyrelsen"
+    ],
+    "Rights": [
+        "For scientific use"
+    ],
+    "notes": [
+        "This record describes ancient sites and monuments as well as archaeological excavations undertaken by Danish museums."
+    ],
+    "SpatialCoverage": [
+        "549425;6091293"
+    ],
+    "TemporalCoverage": " period : ( 1700-07-01T11:59:59Z - None ) ",
+    "author": [
+        "Museum S\u00f8nderjylland"
+    ],
+    "fulltext": "urn:repox.www.kulturarv.dkSites:http://www.kulturarv.dk/fundogfortidsminder/site/87457;2020-01-18;Sites;http://www.kulturarv.dk/fundogfortidsminder/site/87457;2020-01-17T17:00:01.923696+01:00;174;http://www.kulturarv.dk/fundogfortidsminder/skos/parish#230210;Ulkeb\u00f8l;http://www.kulturarv.dk/fundogfortidsminder/skos/plot#50;Digitaliseret 1981;Arnkils Fredskov, afd. 273.;1955;http://www.kulturarv.dk/fundogfortidsminder/skos/placename#10;AFD Afdeling i skove o.a.;Arnkils fredskov afd. 273;1955;http://www.kulturarv.dk/fundogfortidsminder/skos/placename#3;Landskab, herunder v\u00e5domr\u00e5de;R 286/ktb. ?;1955;http://www.kulturarv.dk/fundogfortidsminder/skos/id#SPEC;Anden identifikation;421121;Fredet 1937 eller senere;Sk\u00e5lsten. Fl\u00e6kket sten, med 5 sk\u00e5lgruber i \u00d8-lige side, hvor der ogs\u00e5, af nyere dato, er indhugget JDK Lejren 1940. \n\nP\u00e5 N-lige side er endvidere indhugget (mindre dybt) 2/13 B.;FREDNR tildelt p\u00e5 statsejet areal;false;sev\u00e6rdig;false;false;false;false;1955;0;0;http://www.kulturarv.dk/fundogfortidsminder/skos/surroundings#SKO;Skov/plantage;http://www.kulturarv.dk/fundogfortidsminder/skos/monumentsign#10;Uvis;http://www.kulturarv.dk/fundogfortidsminder/skos/municipality#540;S\u00f8nderborg;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#)MSJ;Museum S\u00f8nderjylland;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#MSJ;Museum S\u00f8nderjylland;549425;6091293;http://www.kulturarv.dk/fundogfortidsminder/object/94246;-1700;-501;BXXX;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:period#BXXX;Bronzealder;Bronzealder;http://www.kulturarv.dk/fundogfortidsminder/skos/object#20199;Sk\u00e5ltegn;Tro og tradition;steder og objekter knyttet til tro og tradition;http://www.kulturarv.dk/fundogfortidsminder/object/164817;1946;1949;FXXX;http://www.kulturarv.dk/fundogfortidsminder/skos/object#22155;Mindesm\u00e6rke;Social og samfund;anl\u00e6g og steder til offentlig brug;1984-12-04;1984-12-04;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:event#MNB;Nyberejsning af fredede lokaliteter;Museal;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#SNS;Skov- og Naturstyrelsen, 10. kontor;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;Som beskrevet. Stensign.;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#BTE;Berejsertekst;http://www.kulturarv.dk/fundogfortidsminder/skos/person#117077;N.-C. Clemmesen;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:title#1354;Kaptajn;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:role#211;Berejser;1908;1955;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:event#MBS;Museal besigtigelse;Museal;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#MSS;Museet p\u00e5 S\u00f8nderborg Slot;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;Ingen beskrivelse.;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#DKC;DKC/KUAS-registrator kommentar;http://www.kulturarv.dk/fundogfortidsminder/skos/person#124903;J. Raben;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:role#210;Ansvarlig;1955;1955;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:event#MBR;Museal berejsning;Museal;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#N01;Nationalmuseet, Danske Afd., Danmarks Oldtid;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#SBT;Sognebeskrivelsen;Stor fl\u00e6kket sten med 5 sk\u00e5lgruber i \u00f8stlige side. P\u00e5 stenen er lige ved helleristningerne indhugget JDK LEJREN 1940.;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#GUL;Tekst fra Nationalmuseets gule lister 1937-1956;http://www.kulturarv.dk/fundogfortidsminder/skos/person#117080;O. Klindt-Jensen;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:role#211;Berejser;1955      ;1955      ;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:event#FTL;Tinglysning;Fredning;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#N01;Nationalmuseet, Danske Afd., Danmarks Oldtid;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#SBT;Sognebeskrivelsen;1955      ;1985      ;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:event#IRA;Institutionssag uden journaldata;Sagsbehandling og planl\u00e6gning;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#HAM;Haderslev Museum;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;2009-10-08;2011-06-30;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:event#MPT;Periodisk tilsyn med fredede lokaliteter;Museal;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#MSJ;Museum S\u00f8nderjylland;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;Blev ikke fundet.;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#BLA;Blandet tekst;2017-10-17;2017-11-17;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:event#MPT;Periodisk tilsyn med fredede lokaliteter;Museal;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#MSJ;Museum S\u00f8nderjylland;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;http://www.kulturarv.dk/fundogfortidsminder/resource/186681;stenen set fra \u00f8st;2017-10-17;msj1tekr_20171117153439.JPG;http://www.kulturarv.dk/fundogfortidsminder/resource/186681;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/87457;http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF;Tilsynsfoto;http://www.kulturarv.dk/fundogfortidsminder/resource/186682;stenen set fra syd;2017-10-17;msj1tekr_20171117153522.JPG;http://www.kulturarv.dk/fundogfortidsminder/resource/186682;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/87457;http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF;Tilsynsfoto;http://www.kulturarv.dk/fundogfortidsminder/resource/186683;stenen set fra nord;2017-10-17;msj1tekr_20171117153603.JPG;http://www.kulturarv.dk/fundogfortidsminder/resource/186683;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/87457;http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF;Tilsynsfoto;http://www.kulturarv.dk/fundogfortidsminder/resource/map/87457;Arnkils Fredskov, afd. 273.;2020-01-17;Kort og Matrikelstyrelsen;M\u00e5 kun kopieres til personlig brug.;Kortet viser lokalitetens placering i Danmark.;http://www.kulturarv.dk/fundogfortidsminder/resource/map/87457;http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#USP;Uspecificeret;1984-12-04;9;18;Clemmesen, N.-C.;http://www.kulturarv.dk/fundogfortidsminder/skos/archivaldocumentation#USP;Uspecificeret;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#KAS;Kulturstyrelsen;http://www.kulturarv.dk/fundogfortidsminder/skos/person#117077;N.-C. Clemmesen;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:title#1354;Kaptajn;http://www.kulturarv.dk/fundogfortidsminder/skos/#role210;Ansvarlig",
+    "group": "slks",
+    "groups": [
+        {
+            "name": "slks"
+        }
+    ],
+    "name": "2d337211-f960-5283-9e5d-eb573e89667f",
+    
+    "oai_identifier": [
+        "2d337211-f960-5283-9e5d-eb573e89667f"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "AFD Afdeling skove o.a."
+        },
+        {
+            "name": "Landskab"
+        },
+        {
+            "name": "herunder v\u00e5domr\u00e5de"
+        }
+    ],
+    "title": [
+        "Arnkils Fredskov, afd. 273.",
+        "Arnkils fredskov afd. 273"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/site/87457"
+}

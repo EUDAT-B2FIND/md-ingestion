@@ -1,0 +1,43 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:88581</identifier>
+    <datestamp>2018-09-18T17:31:36Z</datestamp>
+    <setSpec>D20000</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <creators>
+        <creator>
+          <creatorName>Stevens, Jeffrey R.</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Data from: Intertemporal similarity: discounting as a last resort</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2015</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D20000" xml:lang="en">Life sciences, medicine and health care </subject>
+      </subjects>
+      <contributors/>
+      <dates>
+        <date dateType="Created">2015-03-25T17:55:04.000+01:00</date>
+        <date dateType="Available">2015-03-25T17:55:04.000+01:00</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="DOI">10.5061/dryad.qv0sk</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-jj-7afk</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:88581</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <rightsList>
+        <rights>info:eu-repo/semantics/closedAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">Standard models of intertemporal choice assume that individuals discount future payoffs by integrating reward amounts and time delays to generate a discounted value. Alternative models propose that, rather than integrate across them, individuals compare within attributes (amounts and delays) to determine if differences in one attribute outweigh differences in another attribute. For instance, the similarity model 1) compares the two reward amounts to determine whether they are similar, 2) compares the similarity of the two time delays, and then 3) makes a decision based on these similarity judgments. Here, I tested discounting models against attribute-based models that use similarity judgments to make choices. I collected intertemporal choices and similarity judgments for the reward amounts and time delays from participants in three experiments. All experiments tested the ability of discounting and similarity models to predict intertemporal choices. Model generalization analyses showed that the best predicting models started with similarity judgments and then, if similarity failed to make a prediction, resorted to discounting models. Similarity judgments also matched intertemporal choice data demonstrating both the magnitude and sign effects, thereby accounting for behavioral data that contradict many discounting models. These results highlight the possibility that attribute-based models such as the similarity models provide alternatives to discounting that may offer insights into the process of making intertemporal choices.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,98 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:101879</identifier>
+    <datestamp>2018-12-19T05:26:14Z</datestamp>
+    <setSpec>D30000:D34000:D34300</setSpec>
+    <setSpec>D10000:D15000:D15500</setSpec>
+    <setSpec>easy-collection:6</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-z8k-d35z</identifier>
+      <creators>
+        <creator>
+          <creatorName>Koek, F.B.</creatorName>
+          <affiliation>KNMI</affiliation>
+        </creator>
+        <creator>
+          <creatorName>KNMI (Koninklijk Nederlands Meteorologisch Instituut; Royal Netherlands Meteorological Institute)</creatorName>
+          <affiliation>KNMI (Koninklijk Nederlands Meteorologisch Instituut; Royal Netherlands Meteorological Institute)</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Zeeland 1786</title>
+        <title>Reis van Vlissingen naar Colombo</title>
+        <title titleType="AlternativeTitle">Reis van Vlissingen naar Colombo</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2018</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D34300" xml:lang="en">Modern and contemporary
+                        history</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D15500" xml:lang="en">Atmospheric sciences</subject>
+        <subject>meteorologie</subject>
+        <subject>scheepshistorie</subject>
+        <subject>geografie</subject>
+        <subject>geschiedenis van de handel</subject>
+        <subject>economische geschiedenis</subject>
+        <subject>militaire geschiedenis</subject>
+        <subject>transportstudies</subject>
+        <subject>zeilschip-logboeken</subject>
+        <subject>weer-observaties</subject>
+        <subject>nautische weer-vocabulaires</subject>
+        <subject>historische mariene gegevens</subject>
+        <subject>geografische mobiliteit</subject>
+        <subject>koloniale handel</subject>
+        <subject>Temporal coverage: 1786</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="Other">
+          <contributorName>K&#246;nnen, G.K.</contributorName>
+          <affiliation>KNMI</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">2003-01-01</date>
+        <date dateType="Available">2018-05-30</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-ha-t2b9</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:101879</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers>
+        <relatedIdentifier relationType="IsPartOf" relatedIdentifierType="DOI">10.17026/dans-ze8-d3c8</relatedIdentifier>
+        <relatedIdentifier relationType="References" relatedIdentifierType="DOI">10.17026/dans-x7n-2y6x</relatedIdentifier>
+        <relatedIdentifier relationType="References" relatedIdentifierType="DOI">10.17026/dans-2bx-dutg</relatedIdentifier>
+      </relatedIdentifiers>
+      <formats>
+        <format>application/vnd.ms-access</format>
+        <format>text/csv</format>
+        <format>image/jpeg</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">Hoofddoel van het CLIWOC-project was het benutten van klimaatgegevens uit scheepsjournaals voor het aanleggen van een database van dagelijkse weer-observaties voor oceanen uit de periode 1750 - 1850. Een van de belangrijkste resultaten van het project is een database met gegevens uit Britse, Nederlandse, Franse en Spaanse scheepsjournaals uit de pre-industri&#235;le periode (1750 - 1853).
+
+Tijdens de oorspronkelijke gegevensverzameling in de periode december 2000 tot en met november 2003 werden per scheepsreis gegevens verzameld in MS Access databases. Deze dataset bevat een oorspronkelijke database samen met de afbeeldingen van het bijbehorende scheepsjournaal.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Vlissingen</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Ten anker gelegen na de rhede van colombos</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Colombo</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Anker van boord</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

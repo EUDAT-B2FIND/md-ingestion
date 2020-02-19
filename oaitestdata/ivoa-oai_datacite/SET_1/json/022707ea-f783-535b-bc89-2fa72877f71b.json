@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/VI/155",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/VI/155"
+    ],
+    "PublicationTimestamp": "2019-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2019yCat.6155....0E"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Eglitis I., Eglite M., Kazantseva L.V., Shatokhina S.V., Protsyuk Yu.I., Kovylianskaya O.E., Andruk V.M."
+    ],
+    "fulltext": "ivo://CDS.VizieR/VI/155;2019-04-08T14:55:09Z;VI;ivo_managed;Eglitis I., Eglite M., Kazantseva L.V., Shatokhina S.V., Protsyuk Yu.I., Kovylianskaya O.E., Andruk V.M.;Topocentric positions of Pluto (Eglitis+, 2018);CDS;2019;Positional_Data;Planets+Asteroids;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/VI/155;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?VI/155;2019yCat.6155....0E;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "022707ea-f783-535b-bc89-2fa72877f71b",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/VI/155"
+    ],
+    "oai_set": [
+        "VI",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Positional_Data"
+        },
+        {
+            "name": "Planets"
+        },
+        {
+            "name": "Asteroids"
+        }
+    ],
+    "title": [
+        "Topocentric positions of Pluto (Eglitis+, 2018)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?VI/155"
+}

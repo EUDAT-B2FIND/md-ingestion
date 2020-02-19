@@ -1,0 +1,254 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/A+A/475/765</oai:identifier>
+    <oai:datestamp>2018-12-27T12:26:19Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2016-11-04T11:26:43" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>Fine structure forbidden lines in FeII (Ramsbottom+, 2007)</title>
+      <shortName>J/A+A/475/765</shortName>
+      <identifier>ivo://CDS.VizieR/J/A+A/475/765</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Ramsbottom C.A., Hudson C.E., Norrington P.H., Scott M.P.</name>
+        </creator>
+        <contributor>Patricia Vannier [CDS]</contributor>
+        <date role="creation">2016-11-04T11:26:43</date>
+        <version>28-Sep-2007</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Atomic_Data</subject>
+        <description>This table presents the effective collision strengths for 120 low-lying forbidden lines of Fe II. The temperatures considered are listed at the top of the table in three rows with 10 columns in each row, the first column labels the transition considered and the following nine columns list the temperatures. The effective collision strengths are subsequently listed for each transition and for each temperature. The index values for each level have been assigned in Table 1 to denote the particular transition. </description>
+        <source format="bibcode">2007A&amp;A...475..765R</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/475/765</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/A+A/475/765</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/A+A/475/765</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <table>
+        <name>J/A+A/475/765/table1</name>
+        <description>Target state energies in rydbergs relative to the ground state of FeII</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>Index</name>
+          <description>Index</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>Term</name>
+          <description>Term</description>
+          <ucd>phys.atmol.term</ucd>
+        </column>
+        <column>
+          <name>2J</name>
+          <description>2J value</description>
+          <ucd>phys.atmol.qn</ucd>
+        </column>
+        <column>
+          <name>E</name>
+          <description>Energy</description>
+          <unit>Ry</unit>
+          <ucd>phys.energy</ucd>
+        </column>
+        <column>
+          <name>Enist</name>
+          <description>Observed energy value from the NIST databank (1)</description>
+          <unit>Ry</unit>
+          <ucd>phys.energy</ucd>
+        </column>
+        <column>
+          <name>EB88</name>
+          <description>Theoretical Energy value from Berrington et al. (1988JPhB...21..339B)</description>
+          <unit>Ry</unit>
+          <ucd>phys.energy</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/A+A/475/765/table3</name>
+        <description>Effective Collision Strengths for low-lying forbidden transitions in FeII</description>
+        <column>
+          <name>ECS(13000)</name>
+          <description>Effective collision strength at Te=13000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(15000)</name>
+          <description>Effective collision strength at Te=15000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(18000)</name>
+          <description>Effective collision strength at Te=18000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(20000)</name>
+          <description>? Effective collision strength at Te=20000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(30000)</name>
+          <description>Effective collision strength at Te=30000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(40000)</name>
+          <description>Effective collision strength at Te=40000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(50000)</name>
+          <description>Effective collision strength at Te=50000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(60000)</name>
+          <description>Effective collision strength at Te=60000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(70000)</name>
+          <description>Effective collision strength at Te=70000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(80000)</name>
+          <description>Effective collision strength at Te=80000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(90000)</name>
+          <description>Effective collision strength at Te=90000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(100000)</name>
+          <description>Effective collision strength at Te=100000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>i</name>
+          <description>[1,15] i level of transition</description>
+          <ucd>phys.atmol.level</ucd>
+        </column>
+        <column>
+          <name>j</name>
+          <description>[2,16] j level of transition</description>
+          <ucd>phys.atmol.level</ucd>
+        </column>
+        <column>
+          <name>ECS(30)</name>
+          <description>Effective collision strength at Te=30K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(100)</name>
+          <description>Effective collision strength at Te=100K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(300)</name>
+          <description>Effective collision strength at Te=300K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(500)</name>
+          <description>Effective collision strength at Te=500K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(750)</name>
+          <description>Effective collision strength at Te=750K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(1000)</name>
+          <description>Effective collision strength at Te=1000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(1300)</name>
+          <description>Effective collision strength at Te=1300K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(1500)</name>
+          <description>Effective collision strength at Te=1500K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(1800)</name>
+          <description>? Effective collision strength at Te=1800K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(2000)</name>
+          <description>Effective collision strength at Te=2000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(2300)</name>
+          <description>Effective collision strength at Te=2300K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(2500)</name>
+          <description>Effective collision strength at Te=2500K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(5000)</name>
+          <description>Effective collision strength at Te=5000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(7500)</name>
+          <description>Effective collision strength at Te=7500K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+        <column>
+          <name>ECS(10000)</name>
+          <description>Effective collision strength at Te=10000K</description>
+          <ucd>phys.atmol.collStrength</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

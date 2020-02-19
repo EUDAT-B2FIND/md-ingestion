@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "Reinhardt-Imjela, Christian",
+        "Rasche, Daniel",
+        "Schulte, Achim",
+        "Vormeier, Philipp",
+        "Isau, Oliver"
+    ],
+    "Contributor": [
+        "Reinhardt-Imjela, Christian",
+        "Rasche, Daniel",
+        "Schulte, Achim",
+        "Vormeier, Philipp",
+        "Isau, Oliver"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5880/fidgeo.2018.006",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6403",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6403"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "GFZ Data Services"
+    ],
+    "Rights": [
+        "CC BY 4.0"
+    ],
+    "SpatialCoverage": [
+        "\n                "
+    ],
+    "TempCoverageBegin": 63654033599,
+    "TempCoverageEnd": 63618868799,
+    "TemporalCoverage": " period : ( 2018-02-12T11:59:59Z - 2017-01-01T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2018-02-12T11:59:59Z",
+    "TemporalCoverage:EndDate": "2017-01-01T11:59:59Z",
+    "author": [
+        "Reinhardt-Imjela, Christian",
+        "Rasche, Daniel",
+        "Schulte, Achim",
+        "Vormeier, Philipp",
+        "Isau, Oliver"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6403;2018-05-23T09:53:50Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.006;Reinhardt-Imjela, Christian;Christian;Reinhardt-Imjela;0000-0002-1951-2503;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Schulte, Achim;Achim;Schulte;0000-0003-0397-4225;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Rasche, Daniel;Daniel;Rasche;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Vormeier, Philipp;Philipp;Vormeier;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Isau, Oliver;Oliver;Isau;Freie Universitaet Berlin | Department of Earth Sciences | Applied Geography, Environmental Hydrology and Resource Management;A comparative data set of daily precipitation measured with a Davis Vantage Pro tipping bucket and a Hellmann rain collector \u2013 season 2017;GFZ Data Services;2018;Davis Vantage Pro;precipitation;measurement error;Reinhardt-Imjela, Christian;Christian;Reinhardt-Imjela;0000-0002-1951-2503;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Reinhardt-Imjela, Christian;Christian;Reinhardt-Imjela;0000-0002-1951-2503;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Reinhardt-Imjela, Christian;Christian;Reinhardt-Imjela;0000-0002-1951-2503;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Schulte, Achim;Achim;Schulte;0000-0003-0397-4225;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Rasche, Daniel;Daniel;Rasche;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Vormeier, Philipp;Philipp;Vormeier;Freie Universitaet Berlin, Department of Earth Sciences, Applied Geography, Environmental Hydrology and Resource Management, Berlin, Germany;Isau, Oliver;Oliver;Isau;Freie Universitaet Berlin | Department of Earth Sciences | Applied Geography, Environmental Hydrology and Resource Management;2018-02-12;2017-01-01/2017-12-31;en;10.1353/lag.2013.0042;3869 Bytes;1 Files;text/plain;1.0;CC BY 4.0;Davis Vantage Pro Rainfall Collectors are used in a wide range of projects worldwide even in remote and inaccessible regions (cf. Krois et al. 2013). However in remote areas or if a large number of collectors is used parallel, measurement errors for each device can hardly be quantified. To provide a dataset that allows an estimation of errors that occur in observations with Davis Vantage Pro collectors, comparative rainfall data were obtained at the hydro-meteorological monitoring station in Berlin-Lankwitz. The station is located at Geo Campus Lankwitz (Freie Universit\u00e4t Berlin, Department of Earth Sciences) at an elevation of 45 m a.s.l. and consists of a 7.5 x 7.5 m wide fenced measuring field covered by short grass which is cut in weekly intervals. The field is equipped with a range of rainfall measuring devices including a Hellmann rain gauge and a Vantage Pro collector. A comparison of both time series allows a general estimation of potential measuring errors of the Davis Vantage Pro data, assuming that the Hellmann data are less affected by random measuring errors. The data are intended to support the interpretation of rainfall records of Davis Vantage Pro stations in studies without control instruments and to enable users to apply their own statistical analysis to the data. However the dataset does not contain a continuous weather record. The detailed time series are published separately.;13.3581;52.4269",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "0b5abb28-2672-5670-b5c4-fa69aca3cce1",
+    "notes": [
+        "Davis Vantage Pro Rainfall Collectors are used in a wide range of projects worldwide even in remote and inaccessible regions (cf. Krois et al. 2013). However in remote areas or if a large number of collectors is used parallel, measurement errors for each device can hardly be quantified. To provide a dataset that allows an estimation of errors that occur in observations with Davis Vantage Pro collectors, comparative rainfall data were obtained at the hydro-meteorological monitoring station in Berlin-Lankwitz. The station is located at Geo Campus Lankwitz (Freie Universit\u00e4t Berlin, Department of Earth Sciences) at an elevation of 45 m a.s.l. and consists of a 7.5 x 7.5 m wide fenced measuring field covered by short grass which is cut in weekly intervals. The field is equipped with a range of rainfall measuring devices including a Hellmann rain gauge and a Vantage Pro collector. A comparison of both time series allows a general estimation of potential measuring errors of the Davis Vantage Pro data, assuming that the Hellmann data are less affected by random measuring errors. The data are intended to support the interpretation of rainfall records of Davis Vantage Pro stations in studies without control instruments and to enable users to apply their own statistical analysis to the data. However the dataset does not contain a continuous weather record. The detailed time series are published separately."
+    ],
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6403"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Davis Vantage Pro"
+        },
+        {
+            "name": "precipitation"
+        },
+        {
+            "name": "measurement error"
+        }
+    ],
+    "title": [
+        "A comparative data set of daily precipitation measured with a Davis Vantage Pro tipping bucket and a Hellmann rain collector \u2013 season 2017"
+    ],
+    "url": ""
+}

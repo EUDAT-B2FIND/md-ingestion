@@ -1,0 +1,428 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/AJ/135/1276</oai:identifier>
+    <oai:datestamp>2018-12-27T12:46:01Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2018-01-08T07:38:09" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>ATLAS radio observations of ELAIS-S1 (Middelberg+, 2008)</title>
+      <shortName>J/AJ/135/1276</shortName>
+      <identifier>ivo://CDS.VizieR/J/AJ/135/1276</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Middelberg E., Norris R.P., Cornwell T.J., Voronkov M.A., Siana B.D., Boyle B.J., Ciliegi P., Jackson C.A., Huynh M.T., Berta S., Rubele S., Lonsdale C.J., Ivison R.J., Smail I.</name>
+        </creator>
+        <contributor>Greg Schwarz [AAS], Emmanuelle Perret [CDS]</contributor>
+        <date role="creation">2018-01-08T07:38:09</date>
+        <version>19-Jul-2010</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>AGN</subject>
+        <subject>Stars</subject>
+        <subject>Redshifts</subject>
+        <description>The radio observations were carried out on 27 separate days between 2004 January 9 and 2005 June 24 with the ATCA, with a total net integration time on the pointings of 231 h, in a variety of configurations to maximize the (u,v) coverage. </description>
+        <source format="bibcode">2008AJ....135.1276M</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/135/1276</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/AJ/135/1276</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/AJ/135/1276</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/AJ/135/1276/table4 (Radio component data)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/AJ/135/1276/table4?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>9.940782698249228</ra>
+          <dec>-44.449385912169255</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/AJ/135/1276/table5 (Radio source data)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/AJ/135/1276/table5?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>9.940782698249228</ra>
+          <dec>-44.449385912169255</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/AJ/135/1276/table6 (A section of the table with SUMSS (Sydney University Molonglo Sky Survey, Cat. &lt;VIII/81&gt;) counterparts to 1.4GHz radio sources)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/AJ/135/1276/table6?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>9.940782698249228</ra>
+          <dec>-44.449385912169255</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/J/AJ/135/1276?product=MOC&amp;nside=512</footprint>
+        <waveband>Optical</waveband>
+        <waveband>Infrared</waveband>
+        <waveband>Radio</waveband>
+      </coverage>
+      <table>
+        <name>J/AJ/135/1276/table6</name>
+        <description>A section of the table with SUMSS (Sydney University Molonglo Sky Survey, Cat. &lt;VIII/81&gt;) counterparts to 1.4GHz radio sources</description>
+        <column>
+          <name>Src</name>
+          <description>Source designation (SNNNN.N)</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>SUMMS Hour of Right Ascension (J2000)</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>SUMMS Degree of Declination (J2000)</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>S</name>
+          <description>SUMMS flux density at 843MHz</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.radio.750-1500MHz</ucd>
+        </column>
+        <column>
+          <name>Sep</name>
+          <description>Separation of SUMMS source to source</description>
+          <unit>arcsec</unit>
+          <ucd>pos.angDistance</ucd>
+        </column>
+        <column>
+          <name>alpha</name>
+          <description>Spectral index</description>
+          <ucd>spect.index</ucd>
+        </column>
+        <column>
+          <name>Com</name>
+          <description>Comment(s)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>SUMSS</name>
+          <description>Details of SUMSS results</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/AJ/135/1276/table5</name>
+        <description>Radio source data</description>
+        <column>
+          <name>n_Src</name>
+          <description>Simbad column added by the CDS</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>CID</name>
+          <description>Component(s) deemed to belong to source ([MNC2008] CNNNN.N in Simbad)</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>OName</name>
+          <description>Other name(s) from NED</description>
+          <ucd>meta.id.cross</ucd>
+        </column>
+        <column>
+          <name>Src</name>
+          <description>Source number from paper (SNNNN.N, [MNC2008] SNNNN.N in Simbad)</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>ATELAIS</name>
+          <description>Source designation (JHHMMSS.ss+DDMMSS.s)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>SWIRE</name>
+          <description>SWIRE source name (JHHMMSS.ss+DDMMSS.s)</description>
+          <ucd>meta.id.cross</ucd>
+        </column>
+        <column>
+          <name>S20cm</name>
+          <description>Integrated 20cm flux density (2)</description>
+          <unit>uJy</unit>
+          <ucd>phot.flux.density;em.radio.750-1500MHz</ucd>
+        </column>
+        <column>
+          <name>e_S20cm</name>
+          <description>Error in S20cm (2)</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>S3.6</name>
+          <description>? Spitzer/IRAC 3.6um band flux density (3)</description>
+          <unit>uJy</unit>
+          <ucd>phot.flux.density;em.IR.3-4um</ucd>
+        </column>
+        <column>
+          <name>S4.5</name>
+          <description>? Spitzer/IRAC 4.5um band flux density (3)</description>
+          <unit>uJy</unit>
+          <ucd>phot.mag;em.IR.4-8um</ucd>
+        </column>
+        <column>
+          <name>S5.8</name>
+          <description>? Spitzer/IRAC 5.8um band flux density (3)</description>
+          <unit>uJy</unit>
+          <ucd>phot.flux.density;em.IR.4-8um</ucd>
+        </column>
+        <column>
+          <name>S8.0</name>
+          <description>? Spitzer/IRAC 8.0um band flux density (3)</description>
+          <unit>uJy</unit>
+          <ucd>phot.flux.density;em.IR.8-15um</ucd>
+        </column>
+        <column>
+          <name>S24</name>
+          <description>? Spitzer/MIPS 24um band flux density (3)</description>
+          <unit>uJy</unit>
+          <ucd>phot.flux.density;em.IR.15-30um</ucd>
+        </column>
+        <column>
+          <name>Bmag</name>
+          <description>? The B band magnitude of Spitzer counterpart</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.B</ucd>
+        </column>
+        <column>
+          <name>Vmag</name>
+          <description>? The V band magnitude of Spitzer counterpart</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.V</ucd>
+        </column>
+        <column>
+          <name>Rmag</name>
+          <description>? The R band magnitude of Spitzer counterpart</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.R</ucd>
+        </column>
+        <column>
+          <name>AGN</name>
+          <description>AGN classification code (4)</description>
+          <ucd>meta.code</ucd>
+        </column>
+        <column>
+          <name>M</name>
+          <description>[-/-x ] Magliocchetti et al., 1998MNRAS.300..257M, test result (5)</description>
+          <ucd>meta.code</ucd>
+        </column>
+        <column>
+          <name>z</name>
+          <description>? Redshift</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>r_z</name>
+          <description>Reference for z (6)</description>
+          <ucd>meta.ref;pos.frame</ucd>
+        </column>
+        <column>
+          <name>Comm</name>
+          <description>Additional comments</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>ELAISR</name>
+          <description>Gruppioni et al. 1999, Cat. J/MNRAS/305/297 designation (JHHMMSS+DDMMSSA)</description>
+          <ucd>meta.id.cross</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Hour of Right Ascension (J2000) (1)</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Degree of Declination (J2000) (1)</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/AJ/135/1276/table4</name>
+        <description>Radio component data</description>
+        <column>
+          <name>CID</name>
+          <description>Component number from paper ([MNC2008] CNNNN.N in Simbad) (1)</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>ATELAIS</name>
+          <description>Component designation (JHHMMSS.ss+DDMMSS.s) (2)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>e_RAJ2000</name>
+          <description>Error in RAs (3)</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>e_DEJ2000</name>
+          <description>Error in DEs (3)</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>Sp</name>
+          <description>Peak 20cm flux density</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.radio.750-1500MHz</ucd>
+        </column>
+        <column>
+          <name>e_Sp</name>
+          <description>Error in Sp</description>
+          <unit>mJy</unit>
+          <ucd>stat.error;src.spType</ucd>
+        </column>
+        <column>
+          <name>Sint</name>
+          <description>Integrated 20cm flux density</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.radio.750-1500MHz</ucd>
+        </column>
+        <column>
+          <name>e_Sint</name>
+          <description>Error in Sint</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>rms</name>
+          <description>SExtractor generated RMS at component position</description>
+          <unit>uJy</unit>
+          <ucd>stat.stdev</ucd>
+        </column>
+        <column>
+          <name>Bmaj</name>
+          <description>FWHM of major axis</description>
+          <unit>arcsec</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>Bmin</name>
+          <description>FWHM of minor axis</description>
+          <unit>arcsec</unit>
+          <ucd>phys.angSize.sminAxis</ucd>
+        </column>
+        <column>
+          <name>PA</name>
+          <description>Position angle</description>
+          <unit>deg</unit>
+          <ucd>pos.posAng</ucd>
+        </column>
+        <column>
+          <name>Spd</name>
+          <description>? Deconvolved peak 20cm flux density (4)</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.radio.750-1500MHz</ucd>
+        </column>
+        <column>
+          <name>DBmaj</name>
+          <description>? Deconvolved FWHM of major axis (4)</description>
+          <unit>arcsec</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>DBmin</name>
+          <description>? Deconvolved FWHM of minor axis (4)</description>
+          <unit>arcsec</unit>
+          <ucd>phys.angSize.sminAxis</ucd>
+        </column>
+        <column>
+          <name>DPA</name>
+          <description>? Deconvolved position angle (4)</description>
+          <unit>deg</unit>
+          <ucd>pos.posAng</ucd>
+        </column>
+        <column>
+          <name>L</name>
+          <description>[*] Indicates component deemed a sidelobe</description>
+          <ucd>meta.code;src.morph</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Hour of Right Ascension (J2000)</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Degree of Declination (J2000)</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

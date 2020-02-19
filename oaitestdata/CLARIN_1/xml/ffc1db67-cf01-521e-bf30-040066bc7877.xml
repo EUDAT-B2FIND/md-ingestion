@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/47f4e02ea9b0468fba5a7df6a6978de0</identifier>
+    <datestamp>2018-01-11T13:47:50Z</datestamp>
+    <setSpec>0afede87-2bf2-4d89-867e-d2ee57251c62</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>MPIPL</dc:creator>
+      <dc:date>2016-12-22T09:51:10.537084+00:00</dc:date>
+      <dc:description>This is a video recording that is being used in psycholinguistic experiments.</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/2c51583a-b988-11e3-8cd7-14feb57d12b9</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/47f4e02ea9b0468fba5a7df6a6978de0</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/47f4e02ea9b0468fba5a7df6a6978de0</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:publisher>Peter</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>Psycholinguistics</dc:subject>
+      <dc:subject>Experiment</dc:subject>
+      <dc:subject>Stimulus</dc:subject>
+      <dc:title>Psycholinguistic Experiment Video</dc:title>
+      <dc:type>Audiovisual</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

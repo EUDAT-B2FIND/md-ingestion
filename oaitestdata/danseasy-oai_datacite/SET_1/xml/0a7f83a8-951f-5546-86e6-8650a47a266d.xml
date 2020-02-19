@@ -1,0 +1,64 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:42278</identifier>
+    <datestamp>2018-09-18T16:57:31Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>easy-collection:4</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-z3m-94ma</identifier>
+      <creators>
+        <creator>
+          <creatorName>Ras, J.</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Waarderend Archeologisch Onderzoek; Archeologische Vindplaats Recreatieoord Binnenmaas, Gemeente Binnenmaas</title>
+        <title>SOB 2006 RAS.377</title>
+        <title titleType="AlternativeTitle">SOB 2006 RAS.377</title>
+      </titles>
+      <publisher>SOB Research</publisher>
+      <publicationYear>2011</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>SOB Research</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2011-02-01</date>
+        <date dateType="Created">2006-02</date>
+        <date dateType="Available">2011-01-26</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-8r5-tu8</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:42278</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl-3184349110073622934-1296594263375</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">onderzoeksrapport</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Zuid-Holland; Binnenmaas; Mijnsheerenland; Recreatieoord Binnenmaas</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>51.80048084</pointLatitude>
+            <pointLongitude>4.53128793</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

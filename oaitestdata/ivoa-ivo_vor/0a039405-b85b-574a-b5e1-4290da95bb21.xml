@@ -1,0 +1,452 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://org.gavo.dc/cars/q/cutout</oai:identifier>
+    <oai:datestamp>2018-12-21T17:00:32Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:stc="http://www.ivoa.net/xml/STC/stc-v1.30.xsd" xmlns:sia="http://www.ivoa.net/xml/SIA/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vg="http://www.ivoa.net/xml/VORegistry/v1.0" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:doc="http://www.ivoa.net/xml/DocRegExt/v1" xmlns:ssap="http://www.ivoa.net/xml/SSA/v1.1" xmlns:vstd="http://www.ivoa.net/xml/StandardsRegExt/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0" xmlns:slap="http://www.ivoa.net/xml/SLAP/v1.0" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.1" xmlns:tr="http://www.ivoa.net/xml/TAPRegExt/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" created="2009-01-20T10:40:00" status="active" updated="2017-12-21T13:09:03" xsi:type="vs:CatalogService">
+      <title>CARS image cutouts</title>
+      <shortName>CARS_cutout</shortName>
+      <identifier>ivo://org.gavo.dc/cars/q/cutout</identifier>
+      <curation>
+        <publisher>The GAVO DC team</publisher>
+        <creator>
+          <name>Erben, T.</name>
+        </creator>
+        <creator>
+          <name>Hildebrandt, H.</name>
+        </creator>
+        <creator>
+          <name>Lerchster, M.</name>
+        </creator>
+        <creator>
+          <name>Hudelot, P.</name>
+        </creator>
+        <creator>
+          <name>Benjamin, J.</name>
+        </creator>
+        <creator>
+          <name>van Waerbeke, L.</name>
+        </creator>
+        <creator>
+          <name>Schrabback, T.</name>
+        </creator>
+        <creator>
+          <name>Brimioulle, F.</name>
+        </creator>
+        <creator>
+          <name>Cordes, O.</name>
+        </creator>
+        <creator>
+          <name>Dietrich, J. P.</name>
+        </creator>
+        <creator>
+          <name>Holhjem, K.</name>
+        </creator>
+        <creator>
+          <name>Schirmer, M.</name>
+        </creator>
+        <creator>
+          <name>Schneider, P.</name>
+        </creator>
+        <date role="updated">2017-12-21T13:09:03</date>
+        <contact>
+          <name>GAVO Data Center Team</name>
+          <address>M&#195;&#182;nchhofstrasse 12-14, D-69120 Heidelberg</address>
+          <email>gavo@ari.uni-heidelberg.de</email>
+          <telephone>++49 6221 54 1837</telephone>
+        </contact>
+      </curation>
+      <content>
+        <subject>Surveys</subject>
+        <subject>Catalogs</subject>
+        <subject>Methods: data analysis</subject>
+        <subject>Surface photometry</subject>
+        <subject>Galaxies: distance and redshift</subject>
+        <subject>Cosmology: observations</subject>
+        <description>Images and data from from the CFHTLS archive research survey, a
+        multi-band dataset spanning 37 square degrees of sky in high galactic
+        latitudes.</description>
+        <source format="bibcode">2009A&amp;A...493.1197E</source>
+        <referenceURL>http://dc.zah.uni-heidelberg.de/cars/q/cutout/info</referenceURL>
+        <relationship>
+          <relationshipType>served-by</relationshipType>
+          <relatedResource ivo-id="ivo://org.gavo.dc/tap">GAVO Data Center TAP service</relatedResource>
+        </relationship>
+      </content>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://dc.zah.uni-heidelberg.de/cars/q/cutout/form</accessURL>
+          <mirrorURL>https://dc.zah.uni-heidelberg.de/cars/q/cutout/form</mirrorURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/SIA" xsi:type="sia:SimpleImageAccess">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://dc.zah.uni-heidelberg.de/cars/q/cutout/siap.xml?</accessURL>
+          <mirrorURL>https://dc.zah.uni-heidelberg.de/cars/q/cutout/siap.xml?</mirrorURL>
+          <queryType>GET</queryType>
+          <resultType>application/x-votable+xml</resultType>
+          <param std="true">
+            <name>POS</name>
+            <description>ICRS Position, RA,DEC decimal degrees (e.g., 234.234,-32.46)</description>
+            <unit>deg</unit>
+            <ucd>pos.eq</ucd>
+            <dataType arraysize="*">char</dataType>
+          </param>
+          <param std="true">
+            <name>SIZE</name>
+            <description>Size in decimal degrees (e.g., 0.2 or 1,0.1)</description>
+            <unit>deg</unit>
+            <dataType arraysize="*">char</dataType>
+          </param>
+          <param std="true">
+            <name>INTERSECT</name>
+            <description>Relation of image and specified Region of Interest.</description>
+            <dataType arraysize="*">char</dataType>
+          </param>
+          <param std="true">
+            <name>FORMAT</name>
+            <description>Requested format of the image data</description>
+            <dataType arraysize="*">char</dataType>
+          </param>
+          <param std="false">
+            <name>cutoutSize</name>
+            <unit>deg</unit>
+            <dataType>real</dataType>
+          </param>
+          <param std="true">
+            <name>RESPONSEFORMAT</name>
+            <description>File format requested for output.</description>
+            <ucd>meta.code.mime</ucd>
+            <dataType arraysize="*">char</dataType>
+          </param>
+          <param std="true">
+            <name>MAXREC</name>
+            <description>Maximum number of records returned. Pass 0 to retrieve service parameters.</description>
+            <dataType>integer</dataType>
+          </param>
+          <param std="true">
+            <name>VERB</name>
+            <description>Exhaustiveness of column selection. VERB=1 only returns the most important columns, VERB=2 selects the columns deemed useful to the average user, VERB=3 returns a table with all available columns.</description>
+            <dataType>integer</dataType>
+          </param>
+        </interface>
+        <imageServiceType>Cutout</imageServiceType>
+        <maxRecords>1000000</maxRecords>
+        <testQuery>
+          <pos>
+            <long>36</long>
+            <lat>-6</lat>
+          </pos>
+          <size>
+            <long>0.05</long>
+            <lat>0.05</lat>
+          </size>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/VOSI#availability">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="full">http://dc.zah.uni-heidelberg.de/cars/q/cutout/availability</accessURL>
+          <mirrorURL>https://dc.zah.uni-heidelberg.de/cars/q/cutout/availability</mirrorURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/VOSI#capabilities">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="full">http://dc.zah.uni-heidelberg.de/cars/q/cutout/capabilities</accessURL>
+          <mirrorURL>https://dc.zah.uni-heidelberg.de/cars/q/cutout/capabilities</mirrorURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/VOSI#tables">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="full">http://dc.zah.uni-heidelberg.de/cars/q/cutout/tableMetadata</accessURL>
+          <mirrorURL>https://dc.zah.uni-heidelberg.de/cars/q/cutout/tableMetadata</mirrorURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" version="1.1" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://dc.zah.uni-heidelberg.de/tap</accessURL>
+          <mirrorURL>https://dc.zah.uni-heidelberg.de/tap</mirrorURL>
+        </interface>
+      </capability>
+      <coverage>
+        <spatial>4/671,714,1104-1105,1107,1188-1189,1191,2299</spatial>
+        <spectral>3.3e-07 1.2e-06</spectral>
+        <footprint ivo-id="ivo://ivoa.net/std/moc">http://dc.zah.uni-heidelberg.de/cars/q/cutout/coverage</footprint>
+        <waveband>Optical</waveband>
+        <waveband>Infrared</waveband>
+      </coverage>
+      <tableset>
+        <schema>
+          <name>cars</name>
+          <title>CARS survey data</title>
+          <description>Images and data from from the CFHTLS archive research survey, a
+        multi-band dataset spanning 37 square degrees of sky in high galactic
+        latitudes.</description>
+          <table>
+            <name>cars.images</name>
+            <description>
+        Metadata for co-added CFHTLS archive images
+        used for producing the CARS source list (cars.srccat).</description>
+            <column>
+              <name>accref</name>
+              <description>Access key for the data</description>
+              <utype>Access.Reference</utype>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>owner</name>
+              <description>Owner of the data</description>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>embargo</name>
+              <description>Date the data will become/became public</description>
+              <unit>a</unit>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>mime</name>
+              <description>MIME type of the file served</description>
+              <ucd>meta.code.mime</ucd>
+              <utype>Access.Format</utype>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>accsize</name>
+              <description>Size of the data in bytes</description>
+              <unit>byte</unit>
+              <ucd>VOX:Image_FileSize</ucd>
+              <utype>Access.Size</utype>
+              <dataType xsi:type="vs:VOTableType">long</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>centeralpha</name>
+              <description>Approximate center of image, RA</description>
+              <unit>deg</unit>
+              <ucd>POS_EQ_RA_MAIN</ucd>
+              <dataType xsi:type="vs:VOTableType">double</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>centerdelta</name>
+              <description>Approximate center of image, Dec</description>
+              <unit>deg</unit>
+              <ucd>POS_EQ_DEC_MAIN</ucd>
+              <dataType xsi:type="vs:VOTableType">double</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>imagetitle</name>
+              <description>Synthetic name of the image</description>
+              <ucd>VOX:Image_Title</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>instid</name>
+              <description>Identifier of the originating instrument</description>
+              <ucd>INST_ID</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>dateobs</name>
+              <description>Epoch at midpoint of observation</description>
+              <unit>d</unit>
+              <ucd>VOX:Image_MJDateObs</ucd>
+              <dataType xsi:type="vs:VOTableType">double</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>naxes</name>
+              <description>Number of axes in data</description>
+              <ucd>VOX:Image_Naxes</ucd>
+              <dataType xsi:type="vs:VOTableType">int</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>pixelsize</name>
+              <description>Number of pixels along each of the axes</description>
+              <unit>pix</unit>
+              <ucd>VOX:Image_Naxis</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">int</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>pixelscale</name>
+              <description>The pixel scale on each image axis</description>
+              <unit>deg/pix</unit>
+              <ucd>VOX:Image_Scale</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>refframe</name>
+              <description>Coordinate system reference frame</description>
+              <ucd>VOX:STC_CoordRefFrame</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>wcs_equinox</name>
+              <description>Equinox of the given coordinates</description>
+              <unit>yr</unit>
+              <ucd>VOX:STC_CoordEquinox</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>wcs_projection</name>
+              <description>FITS WCS projection type</description>
+              <ucd>VOX:WCS_CoordProjection</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>wcs_refpixel</name>
+              <description>WCS reference pixel</description>
+              <unit>pix</unit>
+              <ucd>VOX:WCS_CoordRefPixel</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>wcs_refvalues</name>
+              <description>World coordinates at WCS reference pixel</description>
+              <unit>deg</unit>
+              <ucd>VOX:WCS_CoordRefValue</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">double</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>wcs_cdmatrix</name>
+              <description>FITS WCS CDij matrix</description>
+              <unit>deg/pix</unit>
+              <ucd>VOX:WCS_CDMatrix</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>bandpassid</name>
+              <description>Freeform name of the bandpass used</description>
+              <ucd>VOX:BandPass_ID</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>bandpassunit</name>
+              <description>Unit of bandpass specifications (always m).</description>
+              <ucd>VOX:BandPass_Unit</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>bandpassrefval</name>
+              <description>Characteristic quantity for the bandpass of the image</description>
+              <unit>m</unit>
+              <ucd>VOX:BandPass_RefValue</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>bandpasshi</name>
+              <description>Upper limit of the bandpass (in BandPass_Unit units)</description>
+              <unit>m</unit>
+              <ucd>VOX:BandPass_HiLimit</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>bandpasslo</name>
+              <description>Lower limit of the bandpass (in BandPass_Unit units)</description>
+              <unit>m</unit>
+              <ucd>VOX:BandPass_LoLimit</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>pixflags</name>
+              <description>Flags specifying the processing done (C-original; F-resampled; Z-fluxes valid; X-not resampled; V-for display only</description>
+              <ucd>VOX:Image_PixFlags</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>coverage</name>
+              <description>Field covered by the image</description>
+              <unit>deg</unit>
+              <dataType arraysize="*" extendedType="polygon" xsi:type="vs:VOTableType">double</dataType>
+              <flag>indexed</flag>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>fieldkey</name>
+              <description>CARS field designation</description>
+              <ucd>meta.id</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>fieldbandkey</name>
+              <description>CARS field designation plus band</description>
+              <ucd>meta.id</ucd>
+              <dataType arraysize="*" xsi:type="vs:VOTableType">char</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>ncombine</name>
+              <description>Number of individual frames in this stack</description>
+              <ucd>meta.number</ucd>
+              <dataType xsi:type="vs:VOTableType">int</dataType>
+            </column>
+            <column>
+              <name>texptime</name>
+              <description>Total Exposure Time</description>
+              <unit>s</unit>
+              <ucd>time.duration;obs.exposure</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>magzp</name>
+              <description>AB Magnitude Zeropoint</description>
+              <unit>mag</unit>
+              <ucd>phot.mag;arith.zp</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>magzperr</name>
+              <description>Estimated Magnitude Zeropoint Error</description>
+              <unit>mag</unit>
+              <ucd>stat.error;phot.mag;arith.zp</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>seeing</name>
+              <description>Measured image seeing</description>
+              <unit>arcsec</unit>
+              <ucd>instr.obsty.seeing</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+            <column>
+              <name>seeingerr</name>
+              <description>Measured image Seeing error</description>
+              <unit>arcsec</unit>
+              <ucd>stat.error;instr.obsty.seeing</ucd>
+              <dataType xsi:type="vs:VOTableType">float</dataType>
+              <flag>nullable</flag>
+            </column>
+          </table>
+        </schema>
+      </tableset>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

@@ -1,0 +1,36 @@
+{
+    "Contact": [
+        "post@slks.dk"
+    ],
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&identifier=57bf3871-3d08-5af2-9c6e-ee544e5c9d8e",
+    "Publisher": [
+        "og",
+        "Slots-",
+        "Kulturstyrelsen"
+    ],
+    "Rights": "For scientific use",
+    "fulltext": "urn:repox.www.kulturarv.dkSites:http://www.kulturarv.dk/fundogfortidsminder/site/55777;2020-01-18;Sites;http://www.kulturarv.dk/fundogfortidsminder/site/55777;2020-01-17T17:00:01.923696+01:00;31;http://www.kulturarv.dk/fundogfortidsminder/skos/parish#170211;\u00d8ster Starup;http://www.kulturarv.dk/fundogfortidsminder/skos/plot#50;Digitaliseret 1981;Stangh\u00f8j;1909;http://www.kulturarv.dk/fundogfortidsminder/skos/placename#1;Fortidsminde/lokalt kaldenavn;Aagaard;1909;http://www.kulturarv.dk/fundogfortidsminder/skos/placename#2;Ejendom, g\u00e5rd, hus;1909;0;0;http://www.kulturarv.dk/fundogfortidsminder/skos/surroundings#DMK;Dyrket mark;http://www.kulturarv.dk/fundogfortidsminder/skos/monumentsign#10;Uvis;http://www.kulturarv.dk/fundogfortidsminder/skos/municipality#630;Vejle;http://www.kulturarv.dk/fundogfortidsminder/skos/institution#)VKH;VejleMuseerne;http://www.kulturarv.dk/fundogfortidsminder/skos/institution#SJM;Sydvestjyske Museer;526434;6159444;http://www.kulturarv.dk/fundogfortidsminder/object/59590;-250000;1066;OXXX;http://www.kulturarv.dk/fundogfortidsminder/skos/period#OXXX;Oldtid;Oldtid;http://www.kulturarv.dk/fundogfortidsminder/skos/object#01092;Rundh\u00f8j;Begravelse;alle begravelsesformer;1909      ;1909      ;http://www.kulturarv.dk/fundogfortidsminder/skos/event#MBR;Museal berejsning;Museal;http://www.kulturarv.dk/fundogfortidsminder/skos/institution#N01;Nationalmuseet, Danske Afd., Danmarks Oldtid;http://www.kulturarv.dk/fundogfortidsminder/skos/archive#SBT;Sognebeskrivelsen;Overpl\u00f8jet H\u00f8j. \"Stangh\u00f8j\". 1.3 x 28 M. Dyrket i Ager.;http://www.kulturarv.dk/fundogfortidsminder/skos/text#BTE;Berejsertekst;http://www.kulturarv.dk/fundogfortidsminder/skos/person#117023;G. Sarauw;http://www.kulturarv.dk/fundogfortidsminder/skos/role#211;Berejser;http://www.kulturarv.dk/fundogfortidsminder/resource/map/55777;Stangh\u00f8j;2020-01-17;Kort og Matrikelstyrelsen;M\u00e5 kun kopieres til personlig brug.;Kortet viser lokalitetens placering i Danmark.;http://www.kulturarv.dk/fundogfortidsminder/resource/map/55777;http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#USP;Uspecificeret",
+    "group": "slks",
+    "groups": [
+        {
+            "name": "slks"
+        }
+    ],
+    "name": "57bf3871-3d08-5af2-9c6e-ee544e5c9d8e",
+    "notes": "This record describes ancient sites and monuments as well as archaeological excavations undertaken by Danish museums.",
+    "oai_identifier": [
+        "57bf3871-3d08-5af2-9c6e-ee544e5c9d8e"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": "This record describe"
+}

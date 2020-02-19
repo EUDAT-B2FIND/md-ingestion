@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/A+AS/117/93",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/A+AS/117/93"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "1996A&AS..117...93S"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Serote Roos M., Boisson C., Joly M."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/A+AS/117/93;2018-10-01T07:46:05Z;J.A_AS;ivo_managed;Serote Roos M., Boisson C., Joly M.;Spectra of 21 late-type stars (Serote Roos+, 1996);CDS;2018;Spectroscopy;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/A+AS/117/93;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+AS/117/93;1996A&AS..117...93S;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "15862d12-1f4a-5df3-bd44-0e8929774bc1",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/A+AS/117/93"
+    ],
+    "oai_set": [
+        "J.A_AS",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Spectroscopy"
+        }
+    ],
+    "title": [
+        "Spectra of 21 late-type stars (Serote Roos+, 1996)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+AS/117/93"
+}

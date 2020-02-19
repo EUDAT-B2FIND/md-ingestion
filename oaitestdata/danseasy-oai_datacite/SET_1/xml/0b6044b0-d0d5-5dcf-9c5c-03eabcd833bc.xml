@@ -1,0 +1,93 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:18216</identifier>
+    <datestamp>2018-12-18T10:41:17Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+    <setSpec>easy-collection:4</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-ztc-mgva</identifier>
+      <creators>
+        <creator>
+          <creatorName>Kuijl, E.E.A. van der</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Bureauonderzoek, karterend en waarderend booronderzoek, M&#246;lnmarsch Elsbeekpolder te Marienberg</title>
+        <title>SYNTHEGRA 2006 066</title>
+        <title>SYNTHEGRA 2006 066</title>
+        <title titleType="AlternativeTitle">SYNTHEGRA 2006 066</title>
+      </titles>
+      <publisher>Synthegra</publisher>
+      <publicationYear>2009</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+        <subject>PROSPECTIE</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="Other">
+          <contributorName>Leuvering, J.H.F.</contributorName>
+        </contributor>
+        <contributor contributorType="Other">
+          <contributorName>Borsboom, A.J.</contributorName>
+        </contributor>
+        <contributor contributorType="Other">
+          <contributorName>Emaus, A.A.G.</contributorName>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+          <contributorName>Synthegra archeologie</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2009-11-27</date>
+        <date dateType="Created">2006</date>
+        <date dateType="Available">2009-11-27</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-kpz-der</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:18216</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl--1776520409317885264-1259327088476</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>17 p.</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+        <rights rightsURI="http://creativecommons.org/publicdomain/zero/1.0">License: http://creativecommons.org/publicdomain/zero/1.0</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">onderzoeksrapport</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Overijssel</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Nederland</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Mari&#235;nberg</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Hardenberg</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>M&#246;lnmarsch Elsbeekpolder</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>e-ne (MARC21)</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>52.51957198</pointLatitude>
+            <pointLongitude>6.56948205</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

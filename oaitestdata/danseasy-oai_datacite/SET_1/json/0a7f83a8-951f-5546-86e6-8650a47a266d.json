@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "SOB Research"
+    ],
+    "Contributor": [
+        "SOB Research"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17026/dans-z3m-94ma",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:42278",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:42278"
+    ],
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "SOB Research"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "SpatialCoverage": [
+        "\n            "
+    ],
+    "TemporalCoverage": [
+        "2011-02-01",
+        "2006-02",
+        "2011-01-26"
+    ],
+    "author": [
+        "Ras, J."
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:42278;2018-09-18T16:57:31Z;D30000:D37000;driver;easy-collection:4;10.17026/dans-z3m-94ma;Ras, J.;Waarderend Archeologisch Onderzoek; Archeologische Vindplaats Recreatieoord Binnenmaas, Gemeente Binnenmaas;SOB 2006 RAS.377;SOB 2006 RAS.377;SOB Research;2011;Archaeology;SOB Research;2011-02-01;2006-02;2011-01-26;nl;Dataset;urn:nbn:nl:ui:13-8r5-tu8;easy-dataset:42278;twips.dans.knaw.nl-3184349110073622934-1296594263375;info:eu-repo/semantics/openAccess;onderzoeksrapport;Zuid-Holland; Binnenmaas; Mijnsheerenland; Recreatieoord Binnenmaas;51.80048084;4.53128793",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a7f83a8-951f-5546-86e6-8650a47a266d",
+    "notes": [
+        "onderzoeksrapport"
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:42278"
+    ],
+    "oai_set": [
+        "D30000:D37000",
+        "driver",
+        "easy-collection:4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Archaeology"
+        }
+    ],
+    "title": [
+        "Waarderend Archeologisch Onderzoek; Archeologische Vindplaats Recreatieoord Binnenmaas, Gemeente Binnenmaas",
+        "SOB 2006 RAS.377",
+        "SOB 2006 RAS.377"
+    ],
+    "url": ""
+}

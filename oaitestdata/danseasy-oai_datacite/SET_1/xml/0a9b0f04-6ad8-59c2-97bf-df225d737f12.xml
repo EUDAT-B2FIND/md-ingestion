@@ -1,0 +1,94 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:38739</identifier>
+    <datestamp>2018-09-18T16:55:05Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>easy-collection:4</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-223-vxtu</identifier>
+      <creators>
+        <creator>
+          <creatorName>Jongste, P.F.B.</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Anscher, T.J. ten</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Aanvullend Archeologisch Onderzoek in het trac&#233; van de Betuweroute, vindplaats 22, Valburg/Zettensche Plas</title>
+        <title titleType="AlternativeTitle">RAM 19</title>
+      </titles>
+      <publisher>ROB, Amersfoort</publisher>
+      <publicationYear>2011</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+        <subject>aanvullend archeologisch onderzoek (AAO)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Neolithicum laat: 2850 - 2000 vC (NEOL)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Bronstijd midden: 1800 - 1100 vC (BRONSM)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="Other">
+          <contributorName>Haaster, H. van</contributorName>
+        </contributor>
+        <contributor contributorType="Other">
+          <contributorName>Robeerst, J.M.M.</contributorName>
+        </contributor>
+        <contributor contributorType="Other">
+          <contributorName>Zijverden, W.K. van</contributorName>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+          <contributorName>ROB, Amersfoort</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2011-05-24</date>
+        <date dateType="Created">1998</date>
+        <date dateType="Available">2011-05-24</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-w84-mj5</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:38739</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl--3005317610224733491-1306227028444</alternateIdentifier>
+      </alternateIdentifiers>
+      <formats>
+        <format>QuarkXpress</format>
+        <format>application/postscript</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">Op verzoek van de Nederlandse Spoorwegen Railinfrabeheer Managementgroep Betuweroute heeft de Rijksdienst voor het Oudheidkundig Bodemonderzoek (ROB) een Aanvullend Archeologisch Onderzoek (AAO) uitgevoerd in de gemeente Valburg. Object van het onderzoek was een vindplaats (toponiem 'Zettensche Plas') bij Zetten, direct ten noorden van rijksweg A15 en ten oosten van de Zettensche plas. Deze vindplaats is in 1994 tijdens een boorcampagne ontdekt door de Stichting Regionaal Archeologisch Archiverings Project.
+De vindplaats ligt in het trac&#233; van de Betuweroute en wordt door de aanleg van het cunet bedreigd.
+Het doel van het AAO was inzicht te verkrijgen in de datering, de aard en de kwaliteit van deze vindplaats ten behoeve van een definitieve waardering. Daartoe zijn acht putten aangelegd (tezamen 124,16 m2). In totaal is van de vondstlaag 2,85 m3 schavenderwijs onderzocht en 0,33 m3 gezeefd.
+Vindplaats 22 ligt op komafzettingen boven crevasseafzettingen. De vindplaats bestaat uit twee gave, kleine vondstconcentraties, opgevat als sites, omringd door een lichte vondstruis. Een klein deel van de vondsten van site 1 dateert uit het Laat-Neolithicum (KB of eventueel WKD). De meerderheid stamt uit de Midden-Bronstijd (HVS 1, misschien ook wel HVS 2-3). Site 2 dateert eveneens uit de Midden-Bronstijd (HVS 1-2, misschien ook wel HVS 3). De sites zijn ge&#239;nterpreteerd als kortstondig gebruikte, tijdelijke kampementen voor bijzondere activiteiten. In die activiteiten hebben vee en vuur een rol gespeeld. Het aardewerk is sterk verweerd en gefragmenteeerd. Ook het botmateriaal is sterk gefragmenteerd. Behalve verbrand bot is ook onverbrand bot aanwezig. Dat laatste is matig tot slecht geconserveerd. Er zijn maar heel weinig onverbrande zaden gevonden. Of zij van prehistorische datum zijn, is onduidelijk. Verkoolde zaden zijn in de monsters afwezig. Daarom zullen zij op de vindplaats als geheel op zijn best schaars zijn. Gezien de uitkomsten van het AAO zijn de mogelijkheden op ecologisch gebied bij verder onderzoek wel aanwezig, zij het in beperkte mate.
+Vindplaats 22 is behoudenswaardig op grond van gaafheid, de zeldzaamheid van het site-type en de hoge archeologische contextwaarde.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Gelderland</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Valburg</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Zetten</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Zettensche Plas</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>51.91700927</pointLatitude>
+            <pointLongitude>5.70494278</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

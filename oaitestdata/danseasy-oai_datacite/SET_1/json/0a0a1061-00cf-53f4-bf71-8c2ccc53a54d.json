@@ -1,0 +1,107 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.17026/dans-zcx-hkhm",
+    "DiscHierarchy": [
+        "1.5.9",
+        "Literary Studies",
+        "Poetry"
+    ],
+    "Discipline": "Medicine;Humanities",
+    "Format": [
+        "PDF",
+        "STATA",
+        "SPSS"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:49438",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:49438"
+    ],
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess"
+    ],
+    "TemporalCoverage": [
+        "2012-03-21",
+        "2011-03-10",
+        "2012-03-21"
+    ],
+    "author": [
+        "CentERdata - Institute for data collection and research - Tilburg University"
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:49438;2018-09-18T17:01:08Z;D40000:D42000:D42100;D60000:D67000;D60000:D61000;D50000:D52000;D30000:D33000;D20000:D24000;10.17026/dans-zcx-hkhm;CentERdata - Institute for data collection and research - Tilburg University;Recruitment Data;Data Archiving and Networked Services (DANS);2012;Behavioural and educational\n                        sciences;Educational theory;Life sciences, medicine and health care ;Health sciences;Political science;Humanities;Theology and religious\n                        studies;Social sciences;Leisure and recreation\n                        studies;Sociology;education;employment;labor;retirement;health;well-being;housing;household;income;property;investment;leisure;recreation;culture;politics;religion;Temporal coverage: 2007;Temporal coverage: 2009;2012-03-21;2011-03-10;2012-03-21;en;Dataset;urn:nbn:nl:ui:13-diy5-uv;easy-dataset:49438;SPSS;STATA;PDF;info:eu-repo/semantics/closedAccess;This project describes data of all recruitment waves for the LISS panel.\n\n-Main Recruitment Wave 2007\n-Additional Recruitment Wave 2009;The Netherlands",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a0a1061-00cf-53f4-bf71-8c2ccc53a54d",
+    "notes": [
+        "This project describes data of all recruitment waves for the LISS panel.\n\n-Main Recruitment Wave 2007\n-Additional Recruitment Wave 2009"
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:49438"
+    ],
+    "oai_set": [
+        "D40000:D42000:D42100",
+        "D60000:D67000",
+        "D60000:D61000",
+        "D50000:D52000",
+        "D30000:D33000",
+        "D20000:D24000"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Behavioural educational"
+        },
+        {
+            "name": "sciences"
+        },
+        {
+            "name": "Educational theory"
+        },
+        {
+            "name": "Life sciences"
+        },
+        {
+            "name": "medicine health care"
+        },
+        {
+            "name": "Health sciences"
+        },
+        {
+            "name": "Political science"
+        },
+        {
+            "name": "Humanities"
+        },
+        {
+            "name": "Theology religious"
+        },
+        {
+            "name": "studies"
+        },
+        {
+            "name": "Social sciences"
+        },
+        {
+            "name": "Leisure recreation"
+        }
+    ],
+    "title": [
+        "Recruitment Data"
+    ],
+    "url": ""
+}

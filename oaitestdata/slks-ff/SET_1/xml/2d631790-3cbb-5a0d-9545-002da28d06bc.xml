@@ -1,0 +1,201 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>urn:repox.www.kulturarv.dkSites:http://www.kulturarv.dk/fundogfortidsminder/site/171708</identifier>
+    <datestamp>2020-01-18</datestamp>
+    <setSpec>Sites</setSpec>
+  </header>
+  <metadata>
+    <ff:site xmlns:ff="http://www.kulturarv.dk/fundogfortidsminder/ff" xmlns="http://www.kulturarv.dk/fundogfortidsminder/ff" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/site/171708</ff:id>
+      <ff:date>2020-01-17T17:00:01.923696+01:00</ff:date>
+      <ff:siteNo>157</ff:siteNo>
+      <ff:ext/>
+      <ff:parishNo>
+        <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/parish#170704</ff:conceptID>
+        <ff:term>S&#248;nder Stenderup</ff:term>
+      </ff:parishNo>
+      <ff:plotType>
+        <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/plot#49</ff:conceptID>
+        <ff:term>Afsat af museumsmedarbejder</ff:term>
+      </ff:plotType>
+      <ff:placeNames>
+        <ff:placeName>
+          <ff:name>Agstrup</ff:name>
+          <ff:year>2005</ff:year>
+          <ff:placeNameType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/placename#5</ff:conceptID>
+            <ff:term>Bebyggelse, havne og industrianl&#230;g</ff:term>
+          </ff:placeNameType>
+        </ff:placeName>
+      </ff:placeNames>
+      <ff:adminArea>
+        <ff:municipality>
+          <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/municipality#621</ff:conceptID>
+          <ff:term>Kolding</ff:term>
+        </ff:municipality>
+        <ff:museum>
+          <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#)MKH</ff:conceptID>
+          <ff:term>Museet p&#229; Koldinghus</ff:term>
+        </ff:museum>
+        <ff:supervision>
+          <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#MSJ</ff:conceptID>
+          <ff:term>Museum S&#248;nderjylland</ff:term>
+        </ff:supervision>
+      </ff:adminArea>
+      <ff:geodata xmlns="http://www.opengis.net/gml">
+        <gml:Point srsName="EPSG:25832">
+          <gml:pos srsDimension="2">538911;6144507</gml:pos>
+        </gml:Point>
+      </ff:geodata>
+      <ff:objects>
+        <ff:primaryObject>
+          <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/object/232162</ff:id>
+          <ff:text xsi:nil="true"/>
+          <ff:date>
+            <ff:fromYear>-12800</ff:fromYear>
+            <ff:toYear>-1701</ff:toYear>
+            <ff:mainPeriod>AXXX</ff:mainPeriod>
+          </ff:date>
+          <ff:characteristics/>
+          <ff:objectType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/object#03046</ff:conceptID>
+            <ff:term>Enkeltfund</ff:term>
+            <ff:objectClassTerm>Bos&#230;ttelse</ff:objectClassTerm>
+            <ff:objectClassExplanation>alle former for bos&#230;ttelse</ff:objectClassExplanation>
+          </ff:objectType>
+          <ff:transportObject/>
+        </ff:primaryObject>
+        <ff:object>
+          <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/object/287277</ff:id>
+          <ff:text xsi:nil="true"/>
+          <ff:date>
+            <ff:fromYear>-3950</ff:fromYear>
+            <ff:toYear>-1701</ff:toYear>
+            <ff:mainPeriod>AXXX</ff:mainPeriod>
+            <ff:period>
+              <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:period#AYXX</ff:conceptID>
+              <ff:term>Neolitikum</ff:term>
+              <ff:publicTerm>Bondestenalder</ff:publicTerm>
+            </ff:period>
+          </ff:date>
+          <ff:characteristics/>
+          <ff:objectType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/object#03046</ff:conceptID>
+            <ff:term>Enkeltfund</ff:term>
+            <ff:objectClassTerm>Bos&#230;ttelse</ff:objectClassTerm>
+            <ff:objectClassExplanation>alle former for bos&#230;ttelse</ff:objectClassExplanation>
+          </ff:objectType>
+          <transportObject/>
+        </ff:object>
+      </ff:objects>
+      <ff:events>
+        <ff:event>
+          <ff:startDate>2008-05-15</ff:startDate>
+          <ff:endDate>2008-05-15</ff:endDate>
+          <ff:altArchive xsi:nil="true"/>
+          <ff:caseNo xsi:nil="true"/>
+          <ff:eventType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:ff:event#IRA</ff:conceptID>
+            <ff:term>Institutionssag uden journaldata</ff:term>
+            <ff:eventClassTerm>Sagsbehandling og planl&#230;gning</ff:eventClassTerm>
+          </ff:eventType>
+          <ff:institution>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#N01</ff:conceptID>
+            <ff:term>Nationalmuseet, Danske Afd., Danmarks Oldtid</ff:term>
+          </ff:institution>
+          <ff:archive>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX</ff:conceptID>
+            <ff:term>Uspecificeret arkiv</ff:term>
+          </ff:archive>
+        </ff:event>
+        <ff:event>
+          <ff:startDate>2005-09</ff:startDate>
+          <ff:endDate>2005-09</ff:endDate>
+          <ff:altArchive xsi:nil="true"/>
+          <ff:caseNo>4557</ff:caseNo>
+          <ff:eventType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:ff:event#GGM</ff:conceptID>
+            <ff:term>Genstand givet til museum</ff:term>
+            <ff:eventClassTerm>Genstand</ff:eventClassTerm>
+          </ff:eventType>
+          <ff:institution>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#HAM</ff:conceptID>
+            <ff:term>Haderslev Museum</ff:term>
+          </ff:institution>
+          <ff:archive>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX</ff:conceptID>
+            <ff:term>Uspecificeret arkiv</ff:term>
+          </ff:archive>
+          <ff:texts>
+            <ff:text>
+              <ff:freeText>Genstandene er en del af N. Boysens oldsagssamling, der er overdraget til HAM.</ff:freeText>
+              <ff:textType>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#BLA</ff:conceptID>
+                <ff:term>Blandet tekst</ff:term>
+              </ff:textType>
+            </ff:text>
+          </ff:texts>
+        </ff:event>
+        <ff:event>
+          <ff:startDate>2005-09</ff:startDate>
+          <ff:endDate>2005-09</ff:endDate>
+          <ff:altArchive xsi:nil="true"/>
+          <ff:caseNo>4557</ff:caseNo>
+          <ff:eventType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:ff:event#POS</ff:conceptID>
+            <ff:term>Privat opsamling</ff:term>
+            <ff:eventClassTerm>Privat</ff:eventClassTerm>
+          </ff:eventType>
+          <ff:institution>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#HAM</ff:conceptID>
+            <ff:term>Haderslev Museum</ff:term>
+          </ff:institution>
+          <ff:archive>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX</ff:conceptID>
+            <ff:term>Uspecificeret arkiv</ff:term>
+          </ff:archive>
+          <ff:texts>
+            <ff:text>
+              <ff:freeText>Opsamling af flintredskaber p&#229; et lille n&#230;s, der skyder sig ud i engomr&#229;det. Ingen kronologiske ledetyper, men skraberne har et neolitisk pr&#230;g.</ff:freeText>
+              <ff:textType>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#BLA</ff:conceptID>
+                <ff:term>Blandet tekst</ff:term>
+              </ff:textType>
+            </ff:text>
+          </ff:texts>
+          <ff:persons>
+            <ff:person>
+              <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/person#121231</ff:conceptID>
+              <ff:term>N. Boysen</ff:term>
+              <ff:title>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/title#1358</ff:conceptID>
+                <ff:term>K&#248;bmand</ff:term>
+              </ff:title>
+              <ff:role>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/ff:role#216</ff:conceptID>
+                <ff:term>Finder</ff:term>
+              </ff:role>
+            </ff:person>
+          </ff:persons>
+        </ff:event>
+      </ff:events>
+      <ff:digitalDocumentations>
+        <ff:digitalDocumentation>
+          <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/map/171708</ff:id>
+          <ff:name>Agstrup</ff:name>
+          <ff:date>2020-01-17</ff:date>
+          <ff:filename xsi:nil="true"/>
+          <ff:copyright>Kort og Matrikelstyrelsen</ff:copyright>
+          <ff:legalUse>M&#229; kun kopieres til personlig brug.</ff:legalUse>
+          <ff:description>Kortet viser lokalitetens placering i Danmark.</ff:description>
+          <ff:link>http://www.kulturarv.dk/fundogfortidsminder/resource/map/171708</ff:link>
+          <ff:isShownAt xsi:nil="true"/>
+          <ff:documentType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#USP</ff:conceptID>
+            <ff:term>Uspecificeret</ff:term>
+          </ff:documentType>
+        </ff:digitalDocumentation>
+      </ff:digitalDocumentations>
+    </ff:site>
+  </metadata>
+</record>

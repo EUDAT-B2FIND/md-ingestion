@@ -1,0 +1,64 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.5061/dryad.qv0sk",
+    "DiscHierarchy": [
+        "1.3.3",
+        "Fine Arts, Music, Theatre and Media Studies",
+        "Dance"
+    ],
+    "Discipline": "Medicine",
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:88581",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:88581"
+    ],
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess"
+    ],
+    "TempCoverageBegin": 63562881599,
+    "TempCoverageEnd": 63562881599,
+    "TemporalCoverage": " period : ( 2015-03-25T11:59:59Z - 2015-03-25T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2015-03-25T11:59:59Z",
+    "TemporalCoverage:EndDate": "2015-03-25T11:59:59Z",
+    "author": [
+        "Stevens, Jeffrey R."
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:88581;2018-09-18T17:31:36Z;D20000;Stevens, Jeffrey R.;Data from: Intertemporal similarity: discounting as a last resort;Data Archiving and Networked Services (DANS);2015;Life sciences, medicine and health care ;2015-03-25T17:55:04.000+01:00;2015-03-25T17:55:04.000+01:00;Dataset;10.5061/dryad.qv0sk;urn:nbn:nl:ui:13-jj-7afk;easy-dataset:88581;info:eu-repo/semantics/closedAccess;Standard models of intertemporal choice assume that individuals discount future payoffs by integrating reward amounts and time delays to generate a discounted value. Alternative models propose that, rather than integrate across them, individuals compare within attributes (amounts and delays) to determine if differences in one attribute outweigh differences in another attribute. For instance, the similarity model 1) compares the two reward amounts to determine whether they are similar, 2) compares the similarity of the two time delays, and then 3) makes a decision based on these similarity judgments. Here, I tested discounting models against attribute-based models that use similarity judgments to make choices. I collected intertemporal choices and similarity judgments for the reward amounts and time delays from participants in three experiments. All experiments tested the ability of discounting and similarity models to predict intertemporal choices. Model generalization analyses showed that the best predicting models started with similarity judgments and then, if similarity failed to make a prediction, resorted to discounting models. Similarity judgments also matched intertemporal choice data demonstrating both the magnitude and sign effects, thereby accounting for behavioral data that contradict many discounting models. These results highlight the possibility that attribute-based models such as the similarity models provide alternatives to discounting that may offer insights into the process of making intertemporal choices.",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a4d2dba-183f-568c-9308-a90854292b71",
+    "notes": [
+        "Standard models of intertemporal choice assume that individuals discount future payoffs by integrating reward amounts and time delays to generate a discounted value. Alternative models propose that, rather than integrate across them, individuals compare within attributes (amounts and delays) to determine if differences in one attribute outweigh differences in another attribute. For instance, the similarity model 1) compares the two reward amounts to determine whether they are similar, 2) compares the similarity of the two time delays, and then 3) makes a decision based on these similarity judgments. Here, I tested discounting models against attribute-based models that use similarity judgments to make choices. I collected intertemporal choices and similarity judgments for the reward amounts and time delays from participants in three experiments. All experiments tested the ability of discounting and similarity models to predict intertemporal choices. Model generalization analyses showed that the best predicting models started with similarity judgments and then, if similarity failed to make a prediction, resorted to discounting models. Similarity judgments also matched intertemporal choice data demonstrating both the magnitude and sign effects, thereby accounting for behavioral data that contradict many discounting models. These results highlight the possibility that attribute-based models such as the similarity models provide alternatives to discounting that may offer insights into the process of making intertemporal choices."
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:88581"
+    ],
+    "oai_set": [
+        "D20000"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Life sciences"
+        },
+        {
+            "name": "medicine health care"
+        }
+    ],
+    "title": [
+        "Data from: Intertemporal similarity: discounting as a last resort"
+    ],
+    "url": ""
+}

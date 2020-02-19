@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/ApJ/838/122",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/ApJ/838/122"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2017ApJ...838..122J"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Jetsu L., Henry G.W., Lehtinen J."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/ApJ/838/122;2018-04-05T10:00:00Z;J.ApJ;ivo_managed;Jetsu L., Henry G.W., Lehtinen J.;Light curve analysis of 13 active stars (Jetsu+, 2017);CDS;2017;Photometry;Ephemerides;Stars:variable;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/ApJ/838/122;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/838/122;2017ApJ...838..122J;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "feef440a-b5f5-53d1-8042-d88b664f8389",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/ApJ/838/122"
+    ],
+    "oai_set": [
+        "J.ApJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Photometry"
+        },
+        {
+            "name": "Ephemerides"
+        },
+        {
+            "name": "Stars variable"
+        }
+    ],
+    "title": [
+        "Light curve analysis of 13 active stars (Jetsu+, 2017)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/838/122"
+}

@@ -1,0 +1,90 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:42024</identifier>
+    <datestamp>2018-09-18T16:57:18Z</datestamp>
+    <setSpec>D30000:D34000:D34300</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>easy-collection:1</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-xgb-45p5</identifier>
+      <creators>
+        <creator>
+          <creatorName>Veteranen Instituut</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Veteranen Instituut, IPNV, interview 1016</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2010</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D34300" xml:lang="en">Modern and contemporary
+                        history</subject>
+        <subject>KNIL</subject>
+        <subject>Meester Cornelis</subject>
+        <subject>Japanners</subject>
+        <subject>Baboes</subject>
+        <subject>Interneringskamp</subject>
+        <subject>Gevangenis</subject>
+        <subject>Ziektes</subject>
+        <subject>Indonesiers</subject>
+        <subject>Nationaliteit</subject>
+        <subject>Zwitsers Rode Kruis</subject>
+        <subject>Militaire Dienst</subject>
+        <subject>Opleiding</subject>
+        <subject>Verpleger</subject>
+        <subject>Paramilitair</subject>
+        <subject>Oorlogshandelingen</subject>
+        <subject>Poncke Princen</subject>
+        <subject>Gewonden</subject>
+        <subject>Politionele actie</subject>
+        <subject>Fort Vredenburg</subject>
+        <subject>Soekarno</subject>
+        <subject>Angst</subject>
+        <subject>Temporal coverage: 1945-1950</subject>
+      </subjects>
+      <contributors/>
+      <dates>
+        <date dateType="Created">2010-03-24</date>
+        <date dateType="Available">2010-10-22</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-lic-0u6</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:42024</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl-319676217982850984-1287733147044</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>application/x-cmdi+xml</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">De geinterviewde is geboren in Nederlands-Indie. De ge&#239;nterviewde groeide hier op en ging hier naar school.  Tijdens de Japanse bezetting kwam hij onder andere in het interneringskamp Meester Cornelis terecht. De ge&#239;nterviewde beschrijft het leven in de kampen. Een keer kwam hij in de gevangenis terecht waar hij slecht werd behandeld. Ondanks dat hij heel sterk was kwam hij toch in het ziekenhuis. Veel mensen stierven. De ge&#239;nterviewde spreekt over de ontwikkelingen na de bevrijding. Hij was hier erg teleurgesteld over. Hij had het slechter onder de Indonesiers dan onder de japanners. Op een gegeven moment mocht hij zijn nationaliteit kiezen en koos voor de Nederlandse. Hij meldde zich aan voor militaire dienst in 1948. Hij vertelt over opleidingen en hoe hij uiteindelijk bij de paramilitairen kwam. De ge&#239;nterviewde vertelt over de rol van het KNIL in Java en praat over de politionele acties, verschillende oorlogshandelingen waar hij niet altijd achter stond. Later is de ge&#239;nterviewde uitgezonden naar Korea.  
+  
+Met de ge&#239;nterviewde zijn twee of meer interviews gehouden. Zie relations.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Nederlands-Indie</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Batavia</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Malang</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Yogyakarta</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Indonesie</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,55 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/VI/25",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/VI/25"
+    ],
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        " "
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Palomar Observatory"
+    ],
+    "fulltext": "ivo://CDS.VizieR/VI/25;2018-04-05T10:00:00Z;VI;ivo_managed;Palomar Observatory;POSS Plate Data (Palomar Obs. 1960);CDS;2012;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/VI/25;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?VI/25;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "497515de-d678-58a7-b8cb-437c7dc51b01",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/VI/25"
+    ],
+    "oai_set": [
+        "VI",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [],
+    "title": [
+        "POSS Plate Data (Palomar Obs. 1960)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?VI/25"
+}

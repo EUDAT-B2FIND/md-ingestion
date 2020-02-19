@@ -1,0 +1,120 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:41843</identifier>
+    <datestamp>2018-09-18T16:57:09Z</datestamp>
+    <setSpec>D30000:D34000:D34300</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>easy-collection:2</setSpec>
+    <setSpec>easy-collection:1</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-xaz-5fnp</identifier>
+      <creators>
+        <creator>
+          <creatorName>Stichting Oorlogs- en Verzetscentrum Groningen (OVCG)</creatorName>
+          <affiliation>Stichting Oorlogs- en Verzetscentrum Groningen (OVCG)</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Groningen in Oorlogstijd, interview 06</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2010</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D34300" xml:lang="en">Modern and contemporary
+                        history</subject>
+        <subject>Groningen</subject>
+        <subject>rooms-katholiek</subject>
+        <subject>eigen zaak</subject>
+        <subject>stoffenhandel</subject>
+        <subject>Seyss-Inquart</subject>
+        <subject>Rotterdam</subject>
+        <subject>Naber</subject>
+        <subject>Scholtenhuis</subject>
+        <subject>deken Buve</subject>
+        <subject>Veringa</subject>
+        <subject>inzamelingen van radio's</subject>
+        <subject>metaal en fietsen</subject>
+        <subject>HBS</subject>
+        <subject>vorderingen</subject>
+        <subject>tekorten</subject>
+        <subject>bevrijding</subject>
+        <subject>brand</subject>
+        <subject>Waagstraat</subject>
+        <subject>Guldenstraat</subject>
+        <subject>Martinuskerk</subject>
+        <subject>ondernemers in centrum Groningen</subject>
+        <subject>fotograaf Kramer</subject>
+        <subject>Rein Veld</subject>
+        <subject>Bertie Bossina</subject>
+        <subject>Tweede Wereldoorlog</subject>
+        <subject>oral history</subject>
+        <subject>Temporal coverage: Groningen</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="Other">
+          <contributorName>Drs. Monique Brinks, interviewster</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2010-06-23</date>
+        <date dateType="Created">2009-11-24</date>
+        <date dateType="Available">2010-05-31</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-uzi-4aq</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:41843</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl-2635184198456718120-1275304932416</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>video/quicktime</format>
+        <format>transcriptie: word</format>
+        <format>verklaring: jpg</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+        <rights rightsURI="http://creativecommons.org/publicdomain/zero/1.0">License: http://creativecommons.org/publicdomain/zero/1.0</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">Mevrouw Regina Veeger Janssen groeide op in een katholiek gezin en woonde tijdens de oorlog als tiener aan de Grote Markt. Zij vertelt van het dagelijks leven in de oorlog en van de bevrijdingsstrijd, waarbij hun huis, samen met grote delen van de Grote Markt, verwoest werd.  
+  
+00:04:15 Begin van de oorlog; inzamelen radio's en metaal.  
+  
+00:06:49 Joodse kinderen op de katholieke school  
+  
+00:09:56 Kinderen uit Rotterdam in huis, en anderen.  
+  
+00:12:25 Moeder kookt extra eten voor onbekenden  
+  
+00:14:05 Naber en arrestatie van deken Buve  
+  
+00:16:00 Naar de HBS; door Duitse vorderingen twee scholen in &#233;&#233;n gebouw.  
+  
+00:22:18 Stelen witte kool van Duitsers; de handtastelijke Duitse soldaat.  
+  
+00:24:50 Het kanonnetje op het Scholtenhuis; Seyss-Inquart; de bevrijding  
+  
+00:27:38 Brand Waagstraat verspreidt zich; familie onder de bureau's.  
+  
+00:33:38 Familie vlucht tijdens mini-wapenstilstand naar Poststraat en de Martinuskerk.  
+  
+00:38:02 Vader en RV bekijken de schade aan de Grote Markt  
+  
+00:40:47 Foto van gestorven vriendin terug naar ouders.  
+  
+00:42:40 Gezin krijgt huis toegewezen; een nieuwe start van ondernemersactiviteiten: foto's van de verwoesting en stoffen.  
+  
+00:46:40 Een Duitse soldaat in de gang; na de oorlog</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>1940-1945</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,119 @@
+{
+    "Contact": [
+        "KNMI",
+        "K\u00f6nnen, G.K."
+    ],
+    "Contributor": [
+        "K\u00f6nnen, G.K."
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17026/dans-z8k-d35z",
+    "DiscHierarchy": [
+        "1.5.9",
+        "Literary Studies",
+        "Poetry"
+    ],
+    "Discipline": "History",
+    "Format": [
+        "text/csv",
+        "image/jpeg",
+        "application/vnd.ms-access"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:101879",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:101879"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "RelatedIdentifier": [
+        "10.17026/dans-ze8-d3c8",
+        "10.17026/dans-x7n-2y6x",
+        "10.17026/dans-2bx-dutg"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "TempCoverageBegin": 63177019199,
+    "TempCoverageEnd": 63663274799,
+    "TemporalCoverage": " period : ( 2003-01-01T11:59:59Z - 2018-05-30T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2003-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-05-30T11:59:59Z",
+    "author": [
+        "Koek, F.B.",
+        "KNMI (Koninklijk Nederlands Meteorologisch Instituut; Royal Netherlands Meteorological Institute)"
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:101879;2018-12-19T05:26:14Z;D30000:D34000:D34300;D10000:D15000:D15500;easy-collection:6;10.17026/dans-z8k-d35z;Koek, F.B.;KNMI;KNMI (Koninklijk Nederlands Meteorologisch Instituut; Royal Netherlands Meteorological Institute);KNMI (Koninklijk Nederlands Meteorologisch Instituut; Royal Netherlands Meteorological Institute);Zeeland 1786;Reis van Vlissingen naar Colombo;Reis van Vlissingen naar Colombo;Data Archiving and Networked Services (DANS);2018;Modern and contemporary\n                        history;Atmospheric sciences;meteorologie;scheepshistorie;geografie;geschiedenis van de handel;economische geschiedenis;militaire geschiedenis;transportstudies;zeilschip-logboeken;weer-observaties;nautische weer-vocabulaires;historische mariene gegevens;geografische mobiliteit;koloniale handel;Temporal coverage: 1786;K\u00f6nnen, G.K.;KNMI;2003-01-01;2018-05-30;nl;Dataset;urn:nbn:nl:ui:13-ha-t2b9;easy-dataset:101879;10.17026/dans-ze8-d3c8;10.17026/dans-x7n-2y6x;10.17026/dans-2bx-dutg;application/vnd.ms-access;text/csv;image/jpeg;info:eu-repo/semantics/openAccess;Hoofddoel van het CLIWOC-project was het benutten van klimaatgegevens uit scheepsjournaals voor het aanleggen van een database van dagelijkse weer-observaties voor oceanen uit de periode 1750 - 1850. Een van de belangrijkste resultaten van het project is een database met gegevens uit Britse, Nederlandse, Franse en Spaanse scheepsjournaals uit de pre-industri\u00eble periode (1750 - 1853).\n\nTijdens de oorspronkelijke gegevensverzameling in de periode december 2000 tot en met november 2003 werden per scheepsreis gegevens verzameld in MS Access databases. Deze dataset bevat een oorspronkelijke database samen met de afbeeldingen van het bijbehorende scheepsjournaal.;Vlissingen;Ten anker gelegen na de rhede van colombos;Colombo;Anker van boord",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "feb75c69-ab98-5271-95e6-b51a0dc888a2",
+    "notes": [
+        "Hoofddoel van het CLIWOC-project was het benutten van klimaatgegevens uit scheepsjournaals voor het aanleggen van een database van dagelijkse weer-observaties voor oceanen uit de periode 1750 - 1850. Een van de belangrijkste resultaten van het project is een database met gegevens uit Britse, Nederlandse, Franse en Spaanse scheepsjournaals uit de pre-industri\u00eble periode (1750 - 1853).\n\nTijdens de oorspronkelijke gegevensverzameling in de periode december 2000 tot en met november 2003 werden per scheepsreis gegevens verzameld in MS Access databases. Deze dataset bevat een oorspronkelijke database samen met de afbeeldingen van het bijbehorende scheepsjournaal."
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:101879"
+    ],
+    "oai_set": [
+        "D30000:D34000:D34300",
+        "D10000:D15000:D15500",
+        "easy-collection:6"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Modern contemporary"
+        },
+        {
+            "name": "history"
+        },
+        {
+            "name": "Atmospheric sciences"
+        },
+        {
+            "name": "meteorologie"
+        },
+        {
+            "name": "scheepshistorie"
+        },
+        {
+            "name": "geografie"
+        },
+        {
+            "name": "geschiedenis van de handel"
+        },
+        {
+            "name": "economische geschiedenis"
+        },
+        {
+            "name": "militaire geschiedenis"
+        },
+        {
+            "name": "transportstudies"
+        },
+        {
+            "name": "zeilschip-logboeken"
+        },
+        {
+            "name": "weer-observaties"
+        }
+    ],
+    "title": [
+        "Zeeland 1786",
+        "Reis van Vlissingen naar Colombo",
+        "Reis van Vlissingen naar Colombo"
+    ],
+    "url": ""
+}

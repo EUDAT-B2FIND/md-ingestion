@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/3424ea9f59924f4d95c385be56582cf1</identifier>
+    <datestamp>2018-01-11T13:47:50Z</datestamp>
+    <setSpec>0afede87-2bf2-4d89-867e-d2ee57251c62</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Daniel Zeman</dc:creator>
+      <dc:date>2016-12-22T09:53:56.359992+00:00</dc:date>
+      <dc:description>Description of verbal paradigms in Bengali. The description is written in Czech.</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/2e579798-b988-11e3-8cd7-14feb57d12b9</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/3424ea9f59924f4d95c385be56582cf1</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/3424ea9f59924f4d95c385be56582cf1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:title>&#268;asov&#225;n&#237; sloves v beng&#225;l&#353;tin&#283;</dc:title>
+      <dc:type>Text</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

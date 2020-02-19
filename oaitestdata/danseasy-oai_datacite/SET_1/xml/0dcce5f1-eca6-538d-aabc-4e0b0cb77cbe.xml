@@ -1,0 +1,97 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:35855</identifier>
+    <datestamp>2018-09-18T16:53:27Z</datestamp>
+    <setSpec>D30000:D34000:D34300</setSpec>
+    <setSpec>D50000:D51000</setSpec>
+    <setSpec>D60000:D61000</setSpec>
+    <setSpec>D60000:D62000</setSpec>
+    <setSpec>D40000:D42000</setSpec>
+    <setSpec>easy-collection:1</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-zaj-v79s</identifier>
+      <creators>
+        <creator>
+          <creatorName>Veteranen Instituut</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Veteranen Instituut, IPNV, interview 374</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2010</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D60000" xml:lang="en">Social sciences</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D34300" xml:lang="en">Modern and contemporary
+                        history</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D30000" xml:lang="en">Humanities</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D42000" xml:lang="en">Political and administrative
+                        sciences</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D51000" xml:lang="en">Psychology</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D62000" xml:lang="en">Social geography</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D61000" xml:lang="en">Sociology</subject>
+        <subject>Nederlands-Indi&#235;</subject>
+        <subject>KNIL</subject>
+        <subject>Java 1945-1950</subject>
+        <subject>Oorlogsvrijwilligers</subject>
+        <subject>Koninklijke Marine</subject>
+        <subject>Soevereiniteitsoverdracht</subject>
+        <subject>Onafhankelijkheid Indonesi&#235;</subject>
+        <subject>Inlichtingen</subject>
+        <subject>Militaire Inlichtingen Dienst</subject>
+        <subject>Officieren Koninklijke Landmacht</subject>
+        <subject>Koninklijke Landmacht </subject>
+        <subject>Militaire opleiding in Engeland</subject>
+        <subject>NAVO</subject>
+        <subject>Carri&#232;re bij defensie</subject>
+        <subject>Temporal coverage: 1945-1950</subject>
+      </subjects>
+      <contributors/>
+      <dates>
+        <date dateType="Submitted">2010-04-07</date>
+        <date dateType="Created">2008-02-01</date>
+        <date dateType="Available">2010-04-06</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-u0b-igf</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:35855</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl-3693036603916007988-1270639755549</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>WAV</format>
+        <format>application/x-cmdi+xml</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/restrictedAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">Deze oorlogsvrijwilliger ging in februari 1945 al naar Engeland voor zijn militaire opleiding. Na de Infanterie-opleiding werd hij geselecteerd bij de War Office Selection Board voor 164 OCTU in Wales. De opleiding van de expeditionele macht was eerst nog gericht op de strijd tegen Japan. Leiderschap maakte een belangrijk onderdeel uit van de officiersselectie en -opleiding. Met 4-9 RI ging hij naar Nederlands-Indi&#235; in de zomer van 1947, waar hij langs de demarcatielijn op Java werd gelegerd. Hij was Inlichtingenofficier en werkte als zodanig nauw samen met het hoofdkwartier in Batavia en een KNIL-sergeant. Later maakte deze officier verder carri&#232;re bij de Koninklijke Landmacht. Hij ging naar het Nato Defence College in Rome en had verschillende functies in Den Haag.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Java</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Batavia</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Solo</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Semarang </geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Djokja</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Tangerang</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>
