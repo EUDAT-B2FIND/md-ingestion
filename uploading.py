@@ -371,18 +371,19 @@ class Uploader(object):
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join([x for x in jsondata[key] if x is not None])
                 self.logger.debug(' | %-15s | %-25s' % (key,jsondata[key]))
-                if key in ["title","author","notes"] : ## Specific coding !!??
-                    if jsondata['group'] in ['sdl'] :
-                        try:
-                            self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
-                            jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
-                            self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
-                        except UnicodeEncodeError as e :
-                            self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key]))
-                        except Exception as e:
-                            self.logger.error('%s : ( %s:%s[...] )' % (e,key,jsondata[key[20]]))
-                        finally:
-                            pass
+                ## TODO: Former special request for sdl-community, today obsolete? Delete?
+                # if key in ["title","author","notes"] : ## Specific coding !!??
+                #     if jsondata['group'] in ['sdl'] :
+                #         try:
+                #             self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
+                #             jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
+                #             self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
+                #         except UnicodeEncodeError as e :
+                #             self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key]))
+                #         except Exception as e:
+                #             self.logger.error('%s : ( %s:%s[...] )' % (e,key,jsondata[key[20]]))
+                #         finally:
+                #             pass
                         
         jsondata['extras']=list()
         extrafields=sorted(set(self.b2findfields.keys()) - set(self.b2fckandeffields))
@@ -604,8 +605,8 @@ class Uploader(object):
 
                 # determine checksum of json record and append
                 try:
-                    encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
-                    checksum=hashlib.md5(json.dumps(jsondata, sort_keys=True).encode('latin1')).hexdigest()
+                    #encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
+                    checksum=hashlib.md5(json.dumps(jsondata, sort_keys=True).encode('utf-8')).hexdigest()
                 except UnicodeEncodeError as err :
                     self.logger.critical(' %s during md checksum determination' % err)
                     checksum=None

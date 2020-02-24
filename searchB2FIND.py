@@ -63,7 +63,7 @@ def main():
         except ckanclient.CkanApiError as e :
             print(('\t\tError %s Supported list requests are %s.' % (e,ckanlistrequests)))
             sys.exit(1)
-
+        ##TODO: Clean up print statement!    
         print(('\n\t%s' % '\n\t'.join(answer).encode('utf8')))
         sys.exit(0)
 

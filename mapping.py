@@ -1559,7 +1559,7 @@ class Mapper(object):
                 cvalue=value
                 try:
                     if isinstance(value, str):
-                        cvalue=value.encode("iso-8859-1")
+                        cvalue=value.encode("utf-8")
                 except (Exception,UnicodeEncodeError) as e :
                     self.logger.error("%s : { %s:%s }" % (e,facet,value))
                 else:

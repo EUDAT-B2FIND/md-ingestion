@@ -277,9 +277,10 @@ class Converter(object):
                         outfile=outpath+'/'+filetype+'_'+identifier+'.xml'
                         try :
                             f = open(outfile, 'w')
-                            f.write(outdata.encode('utf-8'))
+                            ## f.write(outdata.encode('utf-8'))
+                            f.write(outdata)
                             f.write("\n")
-                            f.close
+                            f.close()
                         except IOError :
                             self.logger.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
                             return(False, outfile , outpath, fcount)

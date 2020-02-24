@@ -822,8 +822,9 @@ class Validator(object):
             if facet in ['title','notes','author','Publisher']:
                 cvalue=value
                 try:
-                    if isinstance(value, str) :
-                        cvalue=value.encode("iso-8859-1")
+                    ##TODO: Do we need this encoding?
+                    if isinstance(value, str) : 
+                        cvalue=value.encode("utf8")
                 except (Exception,UnicodeEncodeError) as e :
                     self.logger.error("%s : { %s:%s }" % (e,facet,value))
                 else:
@@ -1269,9 +1270,9 @@ class Validator(object):
                         outfile=outpath+'/'+filetype+'_'+identifier+'.xml'
                         try :
                             f = open(outfile, 'w')
-                            f.write(outdata.encode('utf-8'))
+                            f.write(outdata)
                             f.write("\n")
-                            f.close
+                            f.close()
                         except IOError :
                             logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
                             return(False, outfile , outpath, fcount)
@@ -1297,9 +1298,9 @@ class Validator(object):
                 xmldata=header+self.json2xml(jsondata,'\t',xmlprefix,mapdict)+footer
                 try:
                     f = open(outfile, 'w')
-                    f.write(xmldata.encode('utf-8'))
+                    f.write(xmldata)
                     f.write("\n")
-                    f.close
+                    f.close()
                 except IOError :
                     logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
                     return(False, outfile , outpath, fcount)
