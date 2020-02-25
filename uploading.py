@@ -587,7 +587,7 @@ class Uploader(object):
                 ### CHECK JSON DATA for upload
                 jsondata=self.check(jsondata)
                 if jsondata == None :
-                    self.logger.critical('File %s failed check and will not been uploaded' % filename)
+                    self.logger.critical('File %s failed check and will not be uploaded' % filename)
                     continue
 
                 ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
