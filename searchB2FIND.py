@@ -18,8 +18,6 @@ THE SOFTWARE.
 import logging
 from output import Output
 import os, sys, io, time
-PY2 = sys.version_info[0] == 2
-
 import argparse
 import simplejson as json
 import json as json2
@@ -61,15 +59,12 @@ def main():
                 action='group_list'
             else:
                 action=args.request
-            if PY2 :
-                answer = CKAN.action(action, rows=ckan_limit)
-            else:
-                answer = CKAN.action(action)
+            answer = CKAN.action(action)
         except ckanclient.CkanApiError as e :
-            print('\t\tError %s Supported list requests are %s.' % (e,ckanlistrequests))
+            print(('\t\tError %s Supported list requests are %s.' % (e,ckanlistrequests)))
             sys.exit(1)
-
-        print('\n\t%s' % '\n\t'.join(answer).encode('utf8'))
+        ##TODO: Clean up print statement!    
+        print(('\n\t%s' % '\n\t'.join(answer).encode('utf8')))
         sys.exit(0)
 
     # create CKAN search pattern :
@@ -85,20 +80,14 @@ def main():
         sand=" AND "
     ckan_pattern += sand + args.pattern
 
-    print(' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern))
+    print((' | - Search\n\t|- in\t%s\n\t|- for\t%s\n' % (args.iphost,ckan_pattern)))
 
     if args.request == 'package_search' :
-        if PY2:
-            answer = CKAN.action('package_search', {"q":ckan_pattern}) ##HEW-D? , rows=ckan_limit)
-        else:
-            answer = CKAN.action('package_search',{"q":ckan_pattern})
-    for key, value in answer.items() :
+        answer = CKAN.action('package_search',{"q":ckan_pattern})
+    for key, value in list(answer.items()) :
         logger.warning('answer has key %s' % key)
-    if PY2 :
-        tcount=answer['result']['count'] ### ['count']
-    else:
-        tcount=answer['result']['count']
-    print(' | - Results:\n\t|- %d records found in %d sec' % (tcount,time.time()-start))
+    tcount=answer['result']['count']
+    print((' | - Results:\n\t|- %d records found in %d sec' % (tcount,time.time()-start)))
 
     # Read in B2FIND metadata schema and fields
     schemafile =  '%s/mapfiles/b2find_schema.json' % (os.getcwd())
@@ -115,7 +104,7 @@ def main():
             else:
                 akeys=args.keys
 
-        suppid=b2findfields.keys()
+        suppid=list(b2findfields.keys())
 
         fh = io.open(args.output, "w", encoding='utf8')
         record={} 
@@ -126,7 +115,7 @@ def main():
         statc={}
         for outt in akeys:
                 if outt not in suppid :
-                    print(' [WARNING] Not supported key %s is removed' % outt)
+                    print((' [WARNING] Not supported key %s is removed' % outt))
                     akeys.remove(outt)
                 else:
                     count[outt]=0
@@ -136,7 +125,7 @@ def main():
         if (len(akeys) > 0):
             printfacets="and related facets %s " % ", ".join(akeys)
 
-        print('\t|- IDs %sare written to %s ...' % (printfacets,args.output))
+        print(('\t|- IDs %sare written to %s ...' % (printfacets,args.output)))
 
         counter=0
         cstart=0
@@ -151,24 +140,15 @@ def main():
             jsonpath='%sb2find/json/' % commstr
             if not os.path.exists(jsonpath):
                 os.makedirs(jsonpath)
-            print('  |- Write datasets as JSONS to %s' % jsonpath)
+            print(('  |- Write datasets as JSONS to %s' % jsonpath))
 
         while (cstart < tcount) :
             if (cstart > 0):
-                if PY2 :
-                    answer = CKAN.action('package_search', {"q":ckan_pattern,"rows":ckan_limit,"start":cstart}) ##HEW-D q=ckan_pattern, rows=ckan_limit, start=cstart)
-                else:
-                    answer = CKAN.action('package_search',{"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
-            if PY2 :
-                if len(answer['result']) == 0 :
-                    break
-        
+                answer = CKAN.action('package_search',{"q":ckan_pattern,"rows":ckan_limit,"start":cstart})
+                    
             # loop over found records
 
-            if PY2:
-                results= answer['result']['results'] ### ['results']
-            else:
-                results= answer['result']['results']
+            results= answer['result']['results']
             for ds in results : #### answer['results']:
                     ##HEW-T print(' ds : %s' % ds)
                     counter +=1
@@ -177,7 +157,7 @@ def main():
                     bartags=perc/5
                     if perc%10 == 0 and perc != oldperc :
                         oldperc=perc
-                        print('\r\t[%-20s] %5d (%3d%%) in %d sec' % ('='*int(bartags), counter, perc, time.time()-start2 ))
+                        print(('\r\t[%-20s] %5d (%3d%%) in %d sec' % ('='*int(bartags), counter, perc, time.time()-start2 )))
                         sys.stdout.flush()
         
                     
@@ -217,10 +197,7 @@ def main():
                                 statc[facet][word]+=1
                         if not ( record[facet] == 'N/A' or record[facet] == 'Not Stated') and len(record[facet])>0 : 
                             count[facet]+=1
-                        if PY2 :
-                            fh.writelines((record[facet]+'\n').decode('utf-8'))
-                        else :
-                            fh.writelines((record[facet]+'\n'))
+                        fh.writelines((record[facet]+'\n'))
 
             cstart+=len(results)
             logger.warning('%d records done, %d in total' % (cstart,tcount))
@@ -228,7 +205,7 @@ def main():
         
         if len(akeys) > 0 :
                 statfh = io.open('stat_'+args.output, "w", encoding='utf8')
-                print('|- Statistics written to file %s' % 'stat_'+args.output)
+                print(('|- Statistics written to file %s' % 'stat_'+args.output))
         
                 statline=""
                 for outt in akeys:
@@ -236,10 +213,7 @@ def main():
                     for word in statc[outt].most_common(10):
                         statline+= '\t| %-15s | %-6d | %3d |\n' % (word[0][:100], word[1], int(word[1]*100/tcount))
         
-                if PY2 :
-                    statfh.write(statline.decode('utf-8'))
-                else :
-                    statfh.write(statline)
+                statfh.write(statline)
         
                 statfh.close()
         

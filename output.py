@@ -270,7 +270,7 @@ class Output(object):
                 if (os.path.exists(logdir+'/myapp.err')):                                                        
                     os.rename(logdir+'/myapp.err',errfile )
             except OSError :
-                print("[ERROR] Cannot move log and error files to %s and %s: %s\n" % (logfile,errfile))
+                print(("[ERROR] Cannot move log and error files to %s and %s: %s\n" % (logfile,errfile)))
             else:
                 # set ERROR or CRITICAL flag in stats dictionary if an error log exists:
                 if (os.path.exists(errfile)):
@@ -308,10 +308,10 @@ class Output(object):
             
             if (request == '#AllRequests'):
                 # returns all requests except all which start with an '#'
-                return filter(lambda x: not x.startswith('#'), self.stats.keys())
+                return [x for x in list(self.stats.keys()) if not x.startswith('#')]
             elif (subset == '#AllSubsets'):
                 # returns all subsets except all which start with an '#'
-                return filter(lambda x: x and not x.startswith('#'), self.stats[request].keys())
+                return [x for x in list(self.stats[request].keys()) if x and not x.startswith('#')]
                 
     
             if(request == '#total'):
@@ -464,7 +464,7 @@ class Output(object):
         for mode in all_modes:
             reshtml.write(
                 '<tr %s><th>%s</th><td>%d</td><td>%d</td><td>%d</td><td>%7.3f</td><td>%7.3f</td></tr>' % (
-                    'class="table-disabled"' if ('no' in pstat['status'].values()) else '',
+                    'class="table-disabled"' if ('no' in list(pstat['status'].values())) else '',
 ##                    'class="table-disabled"' if (pstat['status'][mode[0]] == 'no') else '',
                     pstat['short'][mode],
                     self.get_stats('#total','#total',mode[0],'tcount'),

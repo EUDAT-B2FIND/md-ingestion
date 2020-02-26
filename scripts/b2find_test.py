@@ -4,9 +4,9 @@ import argparse
 import json
 import pprint
 import hashlib
-import urllib2
-import urllib
-from urllib2 import HTTPError,URLError
+import urllib.request, urllib.error, urllib.parse
+import urllib.request, urllib.parse, urllib.error
+from urllib.error import HTTPError, URLError
 from b2handle.clientcredentials import PIDClientCredentials
 from b2handle.handleclient import EUDATHandleClient
 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError,GenericHandleError
@@ -35,7 +35,7 @@ if args.infile :
                 if not 'name' in dataset_dict : ## name is mandatory CKAN field
                     dataset_dict['name']=os.path.splitext(args.infile)[0]
             except:
-                print ('[ERROR] Cannot load from JSON file %s' % args.infile)
+                print(('[ERROR] Cannot load from JSON file %s' % args.infile))
                 sys.exit(-1)
 else:
     dataset_dict = {
@@ -56,12 +56,12 @@ dataset_dict["URL"]='http://'+args.ipadress+'/dataset/'+dataset_dict['name']
 dataset_dict["CHECKSUM"]=hashlib.md5(json.dumps(dataset_dict, encoding='latin1').strip()).hexdigest()
 
 # Verbose information about the data
-if args.verbose > 0 : print(' The dataset to upload:\n\t%s' % dataset_dict)
+if args.verbose > 0 : print((' The dataset to upload:\n\t%s' % dataset_dict))
 
 # Use the json module to dump the dictionary to a string for posting.
-data_string = urllib.quote(json.dumps(dataset_dict))
+data_string = urllib.parse.quote(json.dumps(dataset_dict))
 # By default package_create function is used to create a new dataset.
-request = urllib2.Request(
+request = urllib.request.Request(
             'http://'+args.ipadress+'/api/action/package_create')
 
 # Create a handle client and check handle if required
@@ -71,7 +71,7 @@ if (args.handle_check):
         cred = PIDClientCredentials.load_from_JSON(args.handle_check)
         client = EUDATHandleClient.instantiate_with_credentials(cred)
     except Exception as err:
-        print ("%s : Could not create credentials from credstore %s" % (err,args.handle_check))
+        print(("%s : Could not create credentials from credstore %s" % (err,args.handle_check)))
         sys.exit(-1)
     else:
         if args.verbose > 1 : print ("HandleClient created")
@@ -81,9 +81,9 @@ if (args.handle_check):
         pid = cred.get_prefix() + '/eudat-jmd_' + dataset_dict['name']
         rec = client.retrieve_handle_record_json(pid)
     except Exception as err :
-        print ("ERROR : %s in client.retrieve_handle_record_json()" % (err))
+        print(("ERROR : %s in client.retrieve_handle_record_json()" % (err)))
     else:
-        if args.verbose > 0 : print(" Retrieved Handle %s with\n |%-12s\t|%-30s\t|%-30s|\n %s" % (pid,'Attribute','Value','Changed value',80*'-'))
+        if args.verbose > 0 : print((" Retrieved Handle %s with\n |%-12s\t|%-30s\t|%-30s|\n %s" % (pid,'Attribute','Value','Changed value',80*'-')))
 
     chargs={}
     if rec : ## Handle exists
@@ -91,9 +91,9 @@ if (args.handle_check):
             try:
                 pidRecord[pidAttr] = client.get_value_from_handle(pid,pidAttr,rec)
             except Exception:
-                print ("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) )
+                print(("[CRITICAL : %s] in client.get_value_from_handle(%s)" % (err,pidAttr) ))
             else:
-                if args.verbose > 0 : print(" Got value %s from attribute %s sucessfully" % (pidRecord[pidAttr],pidAttr))
+                if args.verbose > 0 : print((" Got value %s from attribute %s sucessfully" % (pidRecord[pidAttr],pidAttr)))
 
             if ( pidRecord[pidAttr] == dataset_dict[pidAttr] ) :
                 chmsg="-- not changed --"
@@ -103,27 +103,27 @@ if (args.handle_check):
                 chmsg=dataset_dict[pidAttr]
                 handlestatus="changed"
                 chargs[pidAttr]=dataset_dict[pidAttr] 
-            if args.verbose > 0 : print(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
+            if args.verbose > 0 : print((" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg)))
     else:
         print(" No handle exists")
         handlestatus="new"
 
     if handlestatus == "unchanged" : # no action required :-) !
-        print ' No action required :-) - please exit'
+        print(' No action required :-) - please exit')
         sys.exit(0)
     elif handlestatus == "changed" : # update dataset !
-        request = urllib2.Request(
+        request = urllib.request.Request(
             'http://'+args.ipadress+'/api/action/package_update')
     else : # create new handle !
         try:
             npid = client.register_handle(pid, dataset_dict["URL"], dataset_dict["CHECKSUM"], None, True )
         except (HandleAuthenticationError,HandleSyntaxError) as err :
-            print("[CRITICAL : %s] in client.register_handle" % err )
+            print(("[CRITICAL : %s] in client.register_handle" % err ))
         except Exception as err :
-            print("[CRITICAL : %s] in client.register_handle" % err )
+            print(("[CRITICAL : %s] in client.register_handle" % err ))
             sys.exit()
         else:
-            print(" New handle %s with checksum %s created" % (pid,dataset_dict["CHECKSUM"]))
+            print((" New handle %s with checksum %s created" % (pid,dataset_dict["CHECKSUM"])))
             for pidAttr in ["JMDVERSION","B2FINDHOST","IS_METADATA","MD_SCHEMA","MD_STATUS"] :
                 if pidAttr in dataset_dict :
                     chargs[pidAttr]=dataset_dict[pidAttr] 
@@ -133,9 +133,9 @@ if (args.handle_check):
             try:
                     client.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
             except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
-                print("[CRITICAL : %s] client.modify_handle_value of %s in %s" % (err,chargs,pid))
+                print(("[CRITICAL : %s] client.modify_handle_value of %s in %s" % (err,chargs,pid)))
             else:
-                if args.verbose > 0 : print(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
+                if args.verbose > 0 : print((" Attributes %s of handle %s changed sucessfully" % (chargs,pid)))
 
 if 'u' in args.mode : ## maybe add optional upload ??
     # Creating a CKAN dataset requires an authorization header with your API key, 
@@ -149,30 +149,30 @@ if 'u' in args.mode : ## maybe add optional upload ??
                     args.auth = host.split()[1]
                     break
     else:
-        print ('[ERROR] API key for host %s neither given by option auth nor found in %s/.netrc for host %s' % (args.ipadress,home) )
+        print(('[ERROR] API key for host %s neither given by option auth nor found in %s/.netrc for host %s' % (args.ipadress,home) ))
         sys.exit(-1)
 
     request.add_header('Authorization', args.auth)
 
     # Make the HTTP request.
     try:
-        response = urllib2.urlopen(request, data_string)
+        response = urllib.request.urlopen(request, data_string)
         assert response.code == 200
     except HTTPError as e:
-        print '[WARNING] %s' % e
+        print('[WARNING] %s' % e)
         if e.code == 409 :
-            print ' CKAN Dataset already exists => try update'
+            print(' CKAN Dataset already exists => try update')
             # We'll use the package_update function to update existing dataset.
-            request = urllib2.Request(
+            request = urllib.request.Request(
                 'http://'+args.ipadress+'/api/action/package_update')
             request.add_header('Authorization', '2d5a6ad0-ec8f-4ee2-8a2d-dd79b4b2ef46')
             try:
-                response = urllib2.urlopen(request, data_string)
+                response = urllib.request.urlopen(request, data_string)
                 assert response.code == 200
             except HTTPError as e:
-                print '[ERROR %s] during update' % e
+                print('[ERROR %s] during update' % e)
         elif e.code == 403 :
-            print('[ERROR %s] Access forbidden, maybe the API key %s is not valid?' % (e,args.auth))
+            print(('[ERROR %s] Access forbidden, maybe the API key %s is not valid?' % (e,args.auth)))
             sys.exit(e.code)
         else:    
             sys.exit()
@@ -185,5 +185,5 @@ if 'u' in args.mode : ## maybe add optional upload ??
         # package_create returns the created package as its result.
         created_package = response_dict['result']
         if args.verbose > 0 : 
-            print('%s package: \t%s' % (handlestatus,created_package))
-            print ('CKAN dataset : \t%s' % dataset_dict["URL"])
+            print(('%s package: \t%s' % (handlestatus,created_package)))
+            print(('CKAN dataset : \t%s' % dataset_dict["URL"]))

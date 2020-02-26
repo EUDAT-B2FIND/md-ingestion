@@ -47,7 +47,7 @@ def main():
 
     # make jobdir
     jid = os.getpid()
-    print "\tStart of processing"
+    print("\tStart of processing")
 
     odict= OrderedDict([( "id",'null'),("label",""),("number",0),("children",list())])
     id='null'
@@ -58,7 +58,7 @@ def main():
     outputfile='%s' % options.output
 
     if os.path.isfile(inputfile) :
-        print('\tInput JSON file %s' % inputfile)
+        print(('\tInput JSON file %s' % inputfile))
         with open(inputfile, 'r') as inf :
             inputobj = json.load(inf)
             for line in inputobj["disciplines"] :
@@ -73,7 +73,7 @@ def main():
                     odict["children"].append(OrderedDict([( "id",id),("label",label),("number",number),("children",list())]))
                     level1=int(numberarr[-1:][0])-1
                 if len(number) == 3 :
-                    print(odict["children"])
+                    print((odict["children"]))
                     odict["children"][level1]["children"].append(OrderedDict([( "id",id),("label",label),("number",number),("children",list())]))
                     level2=int(numberarr[-1:][0])-1
                 if len(numberarr) == 3 :
@@ -83,7 +83,7 @@ def main():
                     odict["children"][level1]["children"][level2]["children"][level3]["children"].append(OrderedDict([( "id",id),("label",label),("number",number),("children",list())]))
                     level4=int(numberarr[-1:][0])-1
     else:
-        print "\tWARNING : Can not access %s for removing" % jsonfile
+        print("\tWARNING : Can not access %s for removing" % jsonfile)
  
 
     ##HEW-T print('Output %s' % json.dumps(odict,indent=4))

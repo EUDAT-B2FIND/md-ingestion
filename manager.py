@@ -41,8 +41,6 @@ from b2handle.clientcredentials import PIDClientCredentials
 from b2handle.handleclient import EUDATHandleClient
 from b2handle.handleexceptions import GenericHandleError
 import os, optparse, sys, glob, re
-PY2 = sys.version_info[0] == 2
-
 from subprocess import call,Popen,PIPE
 import time, datetime
 import simplejson as json
@@ -279,7 +277,7 @@ def process_generate(GEN, rlist):
     for request in rlist:
         ir+=1
         generatestart = time.time()
-        print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',request[2],time.strftime("%H:%M:%S")))
+        print(('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,'Started',request[2],time.strftime("%H:%M:%S"))))
         results = GEN.generate(request)
     
         if (results == -1):
@@ -309,7 +307,7 @@ def process_harvest(HV, rlist):
         else :
             request.append(None)
 
-        print ('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,HV.fromdate,'Started',time.strftime("%H:%M:%S")))
+        print(('   |# %-4d : %-30s %-10s \n\t|- %-10s |@ %-10s |' % (ir,request,HV.fromdate,'Started',time.strftime("%H:%M:%S"))))
         results = HV.harvest(request)
         if (results == -1):
             logger.error("Couldn't harvest from %s" % request)
@@ -338,7 +336,7 @@ def process_map(MP, rlist):
         
         cstart = time.time()
 
-        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S")))
+        print(('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[3:5],'Started',time.strftime("%H:%M:%S"))))
         results = MP.map(request)
 
         ctime=time.time()-cstart
@@ -370,7 +368,7 @@ def process_validate(VD, rlist):
 
         target=None
 
-        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+        print(('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S"))))
         
         results = VD.validate(request,target)
 
@@ -392,7 +390,7 @@ def process_upload(UP, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        print ('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S")))
+        print(('   |# %-4d : %-10s\t%-20s \n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],'Started',time.strftime("%H:%M:%S"))))
         community=request[0]
         mdprefix = request[3]
         
@@ -443,7 +441,7 @@ def process_convert(CV, rlist):
     ir=0
     for request in rlist:
         ir+=1
-        print ('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S")))
+        print(('   |# %-4d : %-10s\t%-20s --> %-10s\n\t|- %-10s |@ %-10s |' % (ir,request[0],request[2:5],request[5],'Started',time.strftime("%H:%M:%S"))))
         rcstart = time.time()
         
         results = CV.convert(request)
@@ -518,7 +516,7 @@ def process_delete(OUT, dir, options):
                 subset, identifier = line.split('\t')
          
                 # dataset name uniquely generated from oai identifier
-                uid = uuid.uuid5(uuid.NAMESPACE_DNS, identifier.encode('ascii','replace'))
+                uid = uuid.uuid5(uuid.NAMESPACE_DNS, identifier)
                 ds = str(uid)
 
                 # output:
@@ -635,7 +633,7 @@ def parse_list_file(options):
                 
         if (options.target_mdschema != None and not options.target_mdschema.startswith('#')):
             if len(reqarr) < 6 :
-                print('reqarr %s' % reqarr)
+                print(('reqarr %s' % reqarr))
                 reqarr.append(options.target_mdschema)
         elif len(reqarr) > 5 and reqarr[5].startswith('#') :
             del reqarr[5:]
@@ -714,7 +712,7 @@ def options_parser(modes):
 def pstat_init (p,modes,mode,source,iphost):
     if (mode):
         if not(mode in modes):
-           print("[ERROR] Mode " + mode + " is not supported")
+           print(("[ERROR] Mode " + mode + " is not supported"))
            sys.exit(-1)
     else: # all processes (default)
         mode = 'h-u'

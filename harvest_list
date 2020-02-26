@@ -10,11 +10,14 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
-##DaRUS
-#darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite 
-darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
-##SciCat ESS
-ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full 
+## SciCat ESS
+ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
+## UniMaribor
+##unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_datacite openaire_data
+unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_dc openaire_data
+## DaRUS
+darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite 
+#darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
 ## SLKS with ff
 #slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff
 ## SLKS with fbb
@@ -39,7 +42,6 @@ clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
 ## UCL
 #ucl https://api.figshare.com/v2/oai ListRecords oai_dc
 ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549
-#portal_549
 ## HBP
 #hbp http://148.187.98.42:8081/oai/provider GetRecord oai_dc
 #hbp https://148.187.98.42:8443/oai/provider ListRecords oai_dc

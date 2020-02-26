@@ -15,8 +15,8 @@ THE SOFTWARE.
 """
 
 # from future
-from __future__ import absolute_import
-from __future__ import print_function
+
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -38,13 +38,8 @@ import Levenshtein as lvs
 import iso639
 from collections import OrderedDict, Iterable, Counter
 
-PY2 = sys.version_info[0] == 2
-if PY2:
-    from urllib2 import urlopen
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib.request import urlopen
-    from urllib.error import HTTPError,URLError
+from urllib.request import urlopen
+from urllib.error import HTTPError,URLError
 
 class Validator(object):
     """
@@ -70,12 +65,7 @@ class Validator(object):
 
         ## settings for pyparsing
         nonBracePrintables = ''
-        if PY2:
-            unicodePrintables = u''.join(unichr(c) for c in range(65536)
-                                        if not unichr(c).isspace())
-        else:
-            unicodePrintables = u''.join(chr(c) for c in range(65536)
-                                        if not chr(c).isspace())
+        unicodePrintables = ''.join(chr(c) for c in range(65536) if not chr(c).isspace())
         
         for c in unicodePrintables: ## printables:
             if c not in '(){}[]':
@@ -314,10 +304,7 @@ class Validator(object):
             inlist=[item for sublist in inlist for item in sublist] ##???
         for indisc in inlist :
             self.logger.debug('\t\t Next input discipline value %s of type %s' % (indisc,type(indisc)))
-            if PY2:
-                indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
-            else:
-                indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
+            indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
             maxr=0.0
             maxdisc=''
             for line in disctab :
@@ -558,7 +545,7 @@ class Validator(object):
         ##    print(k, v)
 
         if type(iterable) is dict:
-            for key in iterable.keys():
+            for key in list(iterable.keys()):
                 for namesp in ['aip.dc.','aip.meta.']:
                     if key.startswith(namesp):
                         newKey = key[len(namesp):]
@@ -691,7 +678,7 @@ class Validator(object):
                             else:
                                 end = min(objlen, end)
     
-                            for i in xrange(start, end, step):
+                            for i in range(start, end, step):
                                 trace(s(i, x), obj, path)
                         return
     
@@ -706,7 +693,7 @@ class Validator(object):
     
        def walk(loc, expr, obj, path, funct):
             if isinstance(obj, list):
-                for i in xrange(0, len(obj)):
+                for i in range(0, len(obj)):
                     funct(i, loc, expr, obj, path)
             elif isinstance(obj, dict):
                 for key in obj:
@@ -835,13 +822,9 @@ class Validator(object):
             if facet in ['title','notes','author','Publisher']:
                 cvalue=value
                 try:
-                    if PY2 :
-                        if isinstance(value, unicode) :
-                            ## value=value.decode('utf-8')
-                            cvalue=value.encode("iso-8859-1")
-                    else :
-                        if isinstance(value, str) :
-                            cvalue=value.encode("iso-8859-1")
+                    ##TODO: Do we need this encoding?
+                    if isinstance(value, str) : 
+                        cvalue=value.encode("utf8")
                 except (Exception,UnicodeEncodeError) as e :
                     self.logger.error("%s : { %s:%s }" % (e,facet,value))
                 else:
@@ -960,7 +943,7 @@ class Validator(object):
             print('\t|- Validationfile\t--> %s' % outfile)
 
             # find all .json files in inpath/json:
-            files = list(filter(lambda x: x.endswith('.json'), os.listdir(inpath)))
+            files = list([x for x in os.listdir(inpath) if x.endswith('.json')])
             results['tcount'] = len(files)
 
             # sum of all .json files of all sub dirs
@@ -973,7 +956,7 @@ class Validator(object):
             self.logger.info('    |   | %-4s | %-45s |\n   |%s|' % ('#','infile',"-" * 53))
 
             totstats=dict()
-            for facetdict in self.b2findfields.values() :
+            for facetdict in list(self.b2findfields.values()) :
                 facet=facetdict["ckanName"]
                 if facet.startswith('#') or facetdict["display"] == "hidden" :
                     continue
@@ -1019,7 +1002,7 @@ class Validator(object):
             
                 try:
                     valuearr=list()
-                    for facetdict in self.b2findfields.values() : ## loop over facets
+                    for facetdict in list(self.b2findfields.values()) : ## loop over facets
                         facet=facetdict["ckanName"]
                         if facet.startswith('#') or facetdict["display"] == "hidden" :
                             continue
@@ -1052,7 +1035,7 @@ class Validator(object):
                 printstats+="      |- Value statistics:\n      |- {:<5} : {:<30} |\n".format('#','Value')
                 printstats+=" ----------------------------------------------------------\n"
 
-                for key,facetdict in self.b2findfields.items() : ###.values() :
+                for key,facetdict in list(self.b2findfields.items()) : ###.values() :
                     facet=facetdict["ckanName"]
                     if facet.startswith('#') or facetdict["display"] == "hidden" :
                         continue
@@ -1184,7 +1167,7 @@ class Validator(object):
     
         # run oai-converting
         # find all .json files in inpath/json:
-        files = filter(lambda x: x.endswith('.json'), os.listdir(inpath+'/json'))
+        files = [x for x in os.listdir(inpath+'/json') if x.endswith('.json')]
         
         results['tcount'] = len(files)
 
@@ -1259,7 +1242,7 @@ class Validator(object):
                         data=dict()
                         jsondata['community']=community
                         ##HEW-D dsdata = Template(dsdata)
-                        for facetdict in b2findfields.values() :
+                        for facetdict in list(b2findfields.values()) :
                             facet=facetdict["ckanName"]
                             ##HEW-T  print ('facet %s ' % facet)
                             if facet in jsondata:
@@ -1287,9 +1270,9 @@ class Validator(object):
                         outfile=outpath+'/'+filetype+'_'+identifier+'.xml'
                         try :
                             f = open(outfile, 'w')
-                            f.write(outdata.encode('utf-8'))
+                            f.write(outdata)
                             f.write("\n")
-                            f.close
+                            f.close()
                         except IOError :
                             logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
                             return(False, outfile , outpath, fcount)
@@ -1315,9 +1298,9 @@ class Validator(object):
                 xmldata=header+self.json2xml(jsondata,'\t',xmlprefix,mapdict)+footer
                 try:
                     f = open(outfile, 'w')
-                    f.write(xmldata.encode('utf-8'))
+                    f.write(xmldata)
                     f.write("\n")
-                    f.close
+                    f.close()
                 except IOError :
                     logging.error("[ERROR] Cannot write data in xml file '%s': %s\n" % (outfile))
                     return(False, outfile , outpath, fcount)
@@ -1328,7 +1311,7 @@ class Validator(object):
         logging.info('%s     INFO  B2FIND : %d records converted; %d records caused error(s).' % (time.strftime("%H:%M:%S"),fcount,results['ecount']))
 
         # count ... all .xml files in path/b2find
-        results['count'] = len(filter(lambda x: x.endswith('.xml'), os.listdir(outpath)))
+        results['count'] = len([x for x in os.listdir(outpath) if x.endswith('.xml')])
         print ('   \t|- %-10s |@ %-10s |\n\t| Provided | Converted | Failed |\n\t| %8d | %6d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
                     results['tcount'],
                     fcount,

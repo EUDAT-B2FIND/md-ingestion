@@ -36,7 +36,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import B2FIND
 from B2FIND import CONVERTER as CV2
-import urllib, mimetypes
+import urllib.request, urllib.parse, urllib.error, mimetypes
 import lxml.etree as etree
  
 def get_dataset(srcFile):
@@ -45,7 +45,7 @@ def get_dataset(srcFile):
     """
     global mode
     text = open(srcFile).read()
-    url = urllib.pathname2url(srcFile)
+    url = urllib.request.pathname2url(srcFile)
     if (mimetypes.guess_type(url)[0] == 'text/xml') :
        mode=1
        dataset = etree.tostring(etree.fromstring(text), pretty_print = True).encode('ascii', 'ignore')
@@ -63,7 +63,7 @@ def get_conf(configFile):
     """
     f = codecs.open(configFile, "r", "utf-8")
     rules = f.readlines()[1:] # without the header
-    rules = filter(lambda x:len(x) != 0,rules) # removes empty lines
+    rules = [x for x in rules if len(x) != 0] # removes empty lines
     return rules
     
 def save_data(dataset,dstFile):
@@ -72,17 +72,17 @@ def save_data(dataset,dstFile):
     """ ##HEW-D with io.open(dstFile, 'w') as f: ## , encoding='utf-8') as f:
     with io.open(dstFile, 'w') as json_file:
         try:
-            print '   | [INFO] decode json data'
+            print('   | [INFO] decode json data')
             data = json.dumps(dataset,sort_keys = True, indent = 4).decode('utf8')
         except Exception as e:
-            print '    | [ERROR] %s : Cannot decode dataset %s' % (e,dataset)
+            print('    | [ERROR] %s : Cannot decode dataset %s' % (e,dataset))
         try:
-            print '   | [INFO] save json file'
+            print('   | [INFO] save json file')
             json_file.write(data)
-        except TypeError, err :
-            print '    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err)
+        except TypeError as err :
+            print('    | [ERROR] Cannot write json file %s : %s' % (path+'/json/'+filename,err))
         except Exception as e:
-            print '    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename)
+            print('    | [ERROR] %s : Cannot write json file %s' % (e,path+'/json/'+filename))
 
         ##HEW-D f.write(json.dumps(dataset, sort_keys = True, indent = 4,ensure_ascii=False))
 
@@ -103,13 +103,13 @@ def main():
 	args = parser.parse_args()
         if not args.inFile:   # if inffile is not given
             parser.error('Input file is not given')
- 	    print parser.print_help()
+ 	    print(parser.print_help())
 	    exit(1)
         else:
             inFile = args.inFile
         if not args.outFile:   # if outfilen is not given
             parser.error('Output file is not given')
- 	    print parser.print_help()
+ 	    print(parser.print_help())
 	    exit(1)
         else:
             outFile = args.outFile
@@ -119,9 +119,9 @@ def main():
         (inPath,inFileName)=os.path.split(inFile)
         inPathList=inPath.split('/')
         ext=os.path.splitext(inFileName)[1]
-        print 'ext %s' % ext
+        print('ext %s' % ext)
         subset=inPathList[-2]
-        print 'subset %s' % subset
+        print('subset %s' % subset)
         (comm,mdformat)=inPathList[-3].split('-')
 
         if not args.configFile:   # if config file is not given
@@ -140,10 +140,10 @@ def main():
             if os.path.isfile(mapFile):
                mapFile=os.path.abspath(mapFile)
             else:
-               print '[ERROR] Can not access mapfile %s !' % mapFile
+               print('[ERROR] Can not access mapfile %s !' % mapFile)
                exit(1)
 
-            print ' |- Mapfile\t%s' % mapFile
+            print(' |- Mapfile\t%s' % mapFile)
 
 
 
@@ -181,8 +181,8 @@ def main():
             ##inpath=os.path.dirname(inFile)
             inpath=os.path.abspath('tmpdir/xml')
             outpath=os.getcwd()+'/tmpdir'
-            cp = ".:"+":".join(filter(lambda x: x.endswith('.jar'), os.listdir(oldmapFileDir+'/lib')))
-            program = (filter(lambda x: x.endswith('.jar') and x.startswith('md-mapper-'), os.listdir(oldmapFileDir)))[0]
+            cp = ".:"+":".join([x for x in os.listdir(oldmapFileDir+'/lib') if x.endswith('.jar')])
+            program = ([x for x in os.listdir(oldmapFileDir) if x.endswith('.jar') and x.startswith('md-mapper-')])[0]
             # run the converter
             CV.logger.debug(' Inpath\t%s\nJava oldmapFileDir\t%s\nJava Class Path\t%s\nJAVA program\t%s' % (inpath,oldmapFileDir,cp,program))
             proc = subprocess.Popen(
@@ -193,11 +193,11 @@ def main():
             shutil.rmtree('tmpdir/xml')
 
             # check output and print it
-            print 'out %s' % out
+            print('out %s' % out)
             jsonfile=os.path.abspath('tmpdir/json')+'/'+os.path.splitext(xmlfile)[0]+'.json'
 
             if err: 
-                print '[ERROR] %s' % err
+                print('[ERROR] %s' % err)
                 exit(1)
             else :
                 if ( os.path.getsize(jsonfile) > 0 ):
@@ -205,7 +205,7 @@ def main():
                     try:
                       dataset=json.loads(f.read())
                     except:
-                      print '    | [ERROR] Cannot load json file %s' % jsonfile
+                      print('    | [ERROR] Cannot load json file %s' % jsonfile)
         else:
            jsonfile=inFile
 
@@ -264,7 +264,7 @@ def main():
                       extra['value'] = CV.cut(extra['value'],'\d\d\d\d',0)
                     elif extra['key'] == 'Contact':
                       extra['value'] = CV.remove_duplicates(extra['value'])
-                    if type(extra['value']) is not str and type(extra['value']) is not unicode :
+                    if type(extra['value']) is not str and type(extra['value']) is not str :
                       CV.logger.debug(' [INFO] value of key %s has type %s : %s' % (extra['key'],type(extra['value']),extra['value']))
                 except Exception as e:
                   CV.logger.info('    | [WARNING] %s : during mapping of field %s with value %s' % (e,extra['key'],extra['value']))

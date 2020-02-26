@@ -16,7 +16,7 @@ import re
 import simplejson as json
 import io
 import codecs
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 import csv
 import pycountry
 
@@ -86,7 +86,7 @@ def url_exists(url):
     checks if url exists (true or false)
     """ 
     try:
-        status_code = urllib2.urlopen(url, timeout=1).getcode()
+        status_code = urllib.request.urlopen(url, timeout=1).getcode()
         return  status_code == 200 # < 400 in check_json.py
     except:
         return False
@@ -158,7 +158,7 @@ def main():
 	dstFile = args.dstFile
 	
 	if not (srcFile and dstFile):
-	    print parser.print_help()
+	    print(parser.print_help())
 	    exit(1)
 	
 	# reads input file

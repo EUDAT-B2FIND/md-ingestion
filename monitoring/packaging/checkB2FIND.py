@@ -21,9 +21,9 @@ import argparse
 import timeout_decorator
 PY2 = sys.version_info[0] == 2
 if PY2:
-    from urllib import quote
-    from urllib2 import urlopen, Request
-    from urllib2 import HTTPError,URLError
+    from urllib.parse import quote
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError, URLError
 else:
     from urllib import parse
     from urllib.request import urlopen, Request
@@ -130,7 +130,7 @@ def main():
     args = get_args()
 
     if args.version :
-        print ('B2FIND %s :: CKAN %s' % (B2FIND_version,CKAN_version))
+        print(('B2FIND %s :: CKAN %s' % (B2FIND_version,CKAN_version)))
         sys.exit(0)
 
     sys.exit(checkProbes(args))
@@ -144,7 +144,7 @@ def checkProbes(args):
     b2find_url='http://'+args.hostname
     if args.port :
          b2find_url+=':'+args.port
-    print (' Check the service endpoint %s' % b2find_url)
+    print((' Check the service endpoint %s' % b2find_url))
     ckanapi3=b2find_url+'/api/3'
     ckanapi3act=b2find_url+'/api/3/action/'
     ckan_limit=100
@@ -160,7 +160,7 @@ def checkProbes(args):
         if args.action in suppProbes :
             probes=[args.action]
         else:
-            print ('Action %s is not supported' % args.action)
+            print(('Action %s is not supported' % args.action))
             sys.exit(-1)
 
     totretcode=0
@@ -182,7 +182,7 @@ def checkProbes(args):
 
             answer = check_ckan_action(actionreq,data_dict,ckan_limit)
 
-        print (' %-15s - %-7s - %-20s - %-7s - %-7.2f ' % (probe,answer[0],answer[1],answer[2],answer[3]))
+        print((' %-15s - %-7s - %-20s - %-7s - %-7.2f ' % (probe,answer[0],answer[1],answer[2],answer[3])))
         if answer[0] > totretcode : totretcode = answer[0]
 
     return totretcode

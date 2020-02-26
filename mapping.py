@@ -18,8 +18,8 @@ THE SOFTWARE.
 """
 
 # from future
-from __future__ import absolute_import
-from __future__ import print_function
+
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -44,13 +44,8 @@ import Levenshtein as lvs
 import iso639
 from collections import OrderedDict, Iterable
 
-PY2 = sys.version_info[0] == 2
-if PY2:
-    from urllib2 import urlopen
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib.request import urlopen
-    from urllib.error import HTTPError,URLError
+from urllib.request import urlopen
+from urllib.error import HTTPError,URLError
 
 class Mapper(object):
     """
@@ -77,12 +72,7 @@ class Mapper(object):
 
         ## settings for pyparsing
         nonBracePrintables = ''
-        if PY2:
-            unicodePrintables = u''.join(unichr(c) for c in range(65536)
-                                        if not unichr(c).isspace())
-        else:
-            unicodePrintables = u''.join(chr(c) for c in range(65536)
-                                        if not chr(c).isspace())
+        unicodePrintables = ''.join(chr(c) for c in range(65536) if not chr(c).isspace())
         
         for c in unicodePrintables: ## printables:
             if c not in '(){}[]':
@@ -244,7 +234,7 @@ class Mapper(object):
             iddict=dict()
 
             self.logger.debug('invalue %s' % invalue)
-            for refs in filter(None,invalue) :
+            for refs in [_f for _f in invalue if _f] :
                 idarr=re.split(',',refs)
                 for id in idarr :
 	                self.logger.debug(' id\t%s' % id)
@@ -587,10 +577,7 @@ class Mapper(object):
             inlist=[item for sublist in inlist for item in sublist] ##???
         for indisc in inlist :
             self.logger.debug('\t\t Next input discipline value %s of type %s' % (indisc,type(indisc)))
-            if PY2:
-                indisc=indisc.encode('utf8').replace('\n',' ').replace('\r',' ').strip().title()
-            else:
-                indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
+            indisc=indisc.replace('\n',' ').replace('\r',' ').strip().title()
             maxr=0.0
             maxdisc=''
             for line in disctab :
@@ -681,7 +668,7 @@ class Mapper(object):
         with open(swfile) as sw:
             stopwords = sw.read().splitlines()
         if isinstance(invalue,dict):
-            invalue=invalue.values()
+            invalue=list(invalue.values())
         elif not isinstance(invalue,list):
             invalue=invalue.split(';')
             invalue=list(OrderedDict.fromkeys(invalue)) ## this eliminates real duplicates
@@ -692,7 +679,7 @@ class Mapper(object):
                     if "value" in lentry:
                         valarr.append(lentry["value"])
                     else:
-                        valarr=lentry.values()
+                        valarr=list(lentry.values())
                 elif re.search(r"[\n&,;+]+",lentry) :
                     valarr=re.split(r"[\n&,;+]+",lentry)                    
                 elif isinstance(lentry,str) :
@@ -845,7 +832,7 @@ class Mapper(object):
         ##    print(k, v)
 
         if type(iterable) is dict:
-            for key in iterable.keys():
+            for key in list(iterable.keys()):
                 for namesp in ['aip.dc.','aip.meta.']:
                     if key.startswith(namesp):
                         newKey = key[len(namesp):]
@@ -978,7 +965,7 @@ class Mapper(object):
                             else:
                                 end = min(objlen, end)
     
-                            for i in xrange(start, end, step):
+                            for i in range(start, end, step):
                                 trace(s(i, x), obj, path)
                         return
     
@@ -993,7 +980,7 @@ class Mapper(object):
     
        def walk(loc, expr, obj, path, funct):
             if isinstance(obj, list):
-                for i in xrange(0, len(obj)):
+                for i in range(0, len(obj)):
                     funct(i, loc, expr, obj, path)
             elif isinstance(obj, dict):
                 for key in obj:
@@ -1250,7 +1237,7 @@ class Mapper(object):
         print('\t|- Mapfile\t%s' % os.path.basename(mapfile))
         mf = codecs.open(mapfile, "r", "utf-8")
         maprules = mf.readlines()
-        maprules = list(filter(lambda x:len(x) != 0,maprules)) # removes empty lines
+        maprules = list([x for x in maprules if len(x) != 0]) # removes empty lines
 
         # check namespaces
         namespaces=dict()
@@ -1309,7 +1296,7 @@ class Mapper(object):
             if (not os.path.isdir(outpath)): os.makedirs(outpath)
             self.logger.debug('Ouput path is %s' % outpath)
 
-            files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
+            files = list([x for x in os.listdir(inpath) if x.endswith(infformat)])
             results['tcount'] += len(files)
             oldperc=0
             err = None
@@ -1416,7 +1403,7 @@ class Mapper(object):
                     if 'url' not in jsondata:
                         self.logger.error('|- No identifier for id %s' % filename)
 
-                    for facetdict in self.b2findfields.values() :
+                    for facetdict in list(self.b2findfields.values()) :
                         facet=facetdict["ckanName"]
                         if facet in jsondata:
                             self.logger.info('\t|-> %-10s : %-10s |' % (facet,jsondata[facet][:10]))
@@ -1517,10 +1504,7 @@ class Mapper(object):
                     with io.open(outpath+'/'+jsonfilename, 'w') as json_file:
                         try:
                             self.logger.debug('decode json data')
-                            if PY2 :
-                                data = json.dumps(jsondata,sort_keys = True, indent = 4).decode('utf-8') ## needed, else : Cannot write json file ... : must be unicode, not str
-                            else :
-                                data = json.dumps(jsondata,sort_keys = True, indent = 4) ## no decoding for PY3 !!
+                            data = json.dumps(jsondata,sort_keys = True, indent = 4) ## no decoding for PY3 !!
 
                         except Exception as err:
                             self.logger.error('%s : Cannot decode jsondata %s' % (err,jsondata))
@@ -1574,13 +1558,8 @@ class Mapper(object):
             if facet in ['title','notes','author','Publisher']:
                 cvalue=value
                 try:
-                    if PY2 :
-                        if isinstance(value, unicode) :
-                            ## value=value.decode('utf-8')
-                            cvalue=value.encode("iso-8859-1")
-                    else :
-                        if isinstance(value, str) :
-                            cvalue=value.encode("iso-8859-1")
+                    if isinstance(value, str):
+                        cvalue=value.encode("utf-8")
                 except (Exception,UnicodeEncodeError) as e :
                     self.logger.error("%s : { %s:%s }" % (e,facet,value))
                 else:

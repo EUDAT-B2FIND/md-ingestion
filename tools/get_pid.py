@@ -26,7 +26,7 @@ def main():
     options, args = get_options()
     list = []
     
-    print "\n%s" %('-'*100)
+    print("\n%s" %('-'*100))
         
     CKAN = B2FIND.CKAN_CLIENT(options.ckan,None)
         
@@ -40,13 +40,13 @@ def main():
     if (pattern):
         ckan_pattern += sand + pattern   
 
-    print 'Search in\t%s\nfor pattern\t%s\n.....' % (options.ckan,ckan_pattern)
+    print('Search in\t%s\nfor pattern\t%s\n.....' % (options.ckan,ckan_pattern))
     answer = CKAN.action('package_search', {"q":ckan_pattern,"rows":options.ckan_limit,"start":0})
     tcount=answer['result']['count']
-    print "=> %d datasets found" % tcount
-    if (options.ckan_limit>tcount): print "=> but maximal %d rows are returned " % options.ckan_limit
-    print "=> search_facets " % (answer['result']['search_facets'])
-    print '    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53)
+    print("=> %d datasets found" % tcount)
+    if (options.ckan_limit>tcount): print("=> but maximal %d rows are returned " % options.ckan_limit)
+    print("=> search_facets " % (answer['result']['search_facets']))
+    print('    | %-4s | %-40s |\n    |%s|' % ('#','Dataset ID',"-" * 53))
     urlf = open('url.file', 'w')
     pidf = open('pid.file', 'w')
     countpid=0
@@ -75,7 +75,7 @@ def main():
        cstart+=len(answer['result']['results']) 
     urlf.close()
     pidf.close()
-    print "Found %d records and %d PIDs" % (counter, countpid)
+    print("Found %d records and %d PIDs" % (counter, countpid))
 
 
 
@@ -93,7 +93,7 @@ def get_options():
     options, args = p.parse_args()
     
     if (len(args) != 1) and (not options.community) :
-        print "[ERROR] Need at least a community given via option -c or a search pattern as an argument!"
+        print("[ERROR] Need at least a community given via option -c or a search pattern as an argument!")
         exit()
     
     return options, args

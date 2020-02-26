@@ -13,8 +13,8 @@ THE SOFTWARE.
 """
 
 # from future
-from __future__ import absolute_import
-from __future__ import print_function
+
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -29,8 +29,6 @@ import logging
 import traceback
 import re
 
-PY2 = sys.version_info[0] == 2
-
 # needed for UPLOADER and CKAN class:
 import settings
 import simplejson as json
@@ -39,14 +37,9 @@ import collections
 from b2handle.handleexceptions import HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError
 # needed for CKAN_CLIENT
 import socket
-if PY2:
-    from urllib import quote
-    from urllib2 import urlopen, Request
-    from urllib2 import HTTPError,URLError
-else:
-    from urllib import parse
-    from urllib.request import urlopen, Request
-    from urllib.error import HTTPError,URLError
+from urllib import parse
+from urllib.request import urlopen, Request
+from urllib.error import HTTPError,URLError
 
 class CKAN_CLIENT(object):
 
@@ -169,10 +162,7 @@ class CKAN_CLIENT(object):
         # make json data in conformity with URL standards
         encoding='utf-8'
         try:
-            if PY2 :
-                data_string = quote(json.dumps(data_dict))##.encode("utf-8") ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
-            else :
-                data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
+            data_string = parse.quote(json.dumps(data_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
         except Exception as err :
             self.logger.critical('%s while building url data' % err)
 
@@ -181,10 +171,7 @@ class CKAN_CLIENT(object):
             self.logger.debug('request %s' % request)            
             if (self.api_key): request.add_header('Authorization', self.api_key)
             self.logger.debug('api_key %s....' % self.api_key)
-            if PY2 :
-                response = urlopen(request)
-            else :
-                response = urlopen(request)
+            response = urlopen(request)
             self.logger.debug('response %s' % response)            
         except HTTPError as e:
             self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
@@ -384,18 +371,19 @@ class Uploader(object):
                 elif key in ["title","notes"] :
                     jsondata[key]='\n'.join([x for x in jsondata[key] if x is not None])
                 self.logger.debug(' | %-15s | %-25s' % (key,jsondata[key]))
-                if key in ["title","author","notes"] : ## Specific coding !!??
-                    if jsondata['group'] in ['sdl'] :
-                        try:
-                            self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
-                            jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
-                            self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
-                        except UnicodeEncodeError as e :
-                            self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key]))
-                        except Exception as e:
-                            self.logger.error('%s : ( %s:%s[...] )' % (e,key,jsondata[key[20]]))
-                        finally:
-                            pass
+                ## TODO: Former special request for sdl-community, today obsolete? Delete?
+                # if key in ["title","author","notes"] : ## Specific coding !!??
+                #     if jsondata['group'] in ['sdl'] :
+                #         try:
+                #             self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
+                #             jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
+                #             self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
+                #         except UnicodeEncodeError as e :
+                #             self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key]))
+                #         except Exception as e:
+                #             self.logger.error('%s : ( %s:%s[...] )' % (e,key,jsondata[key[20]]))
+                #         finally:
+                #             pass
                         
         jsondata['extras']=list()
         extrafields=sorted(set(self.b2findfields.keys()) - set(self.b2fckandeffields))
@@ -546,7 +534,7 @@ class Uploader(object):
                 self.logger.error('Can not access directory %s' % inpath)
                 continue     
 
-            files = list(filter(lambda x: x.endswith(infformat), os.listdir(inpath)))
+            files = list([x for x in os.listdir(inpath) if x.endswith(infformat)])
             results['tcount'] += len(list(files))
             oldperc=0
             err = None
@@ -599,7 +587,7 @@ class Uploader(object):
                 ### CHECK JSON DATA for upload
                 jsondata=self.check(jsondata)
                 if jsondata == None :
-                    self.logger.critical('File %s failed check and will not been uploaded' % filename)
+                    self.logger.critical('File %s failed check and will not be uploaded' % filename)
                     continue
 
                 ## Prepare jsondata for upload to CKAN (decode UTF-8, build CKAN extra dict's, ...)
@@ -617,8 +605,8 @@ class Uploader(object):
 
                 # determine checksum of json record and append
                 try:
-                    encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
-                    checksum=hashlib.md5(json.dumps(jsondata, sort_keys=True).encode('latin1')).hexdigest()
+                    #encoding='utf-8' ##HEW-D 'ISO-8859-15' / 'latin-1'
+                    checksum=hashlib.md5(json.dumps(jsondata, sort_keys=True).encode('utf-8')).hexdigest()
                 except UnicodeEncodeError as err :
                     self.logger.critical(' %s during md checksum determination' % err)
                     checksum=None
