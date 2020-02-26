@@ -10,6 +10,9 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##DaRUS
+#darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite 
+darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
 ##SciCat ESS
 ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full 
 ## SLKS with ff
