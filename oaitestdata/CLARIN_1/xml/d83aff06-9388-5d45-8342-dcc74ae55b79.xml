@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/b1092be3cd4844e0bffd7b669521ba3c</identifier>
+    <datestamp>2018-01-11T13:49:55Z</datestamp>
+    <setSpec>0afede87-2bf2-4d89-867e-d2ee57251c62</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Dieter Van Uytvanck</dc:creator>
+      <dc:date>2017-01-13T08:34:07.879994+00:00</dc:date>
+      <dc:description>In this study we build models for the localisation and dating of Middle Dutch charters. First, we extract character trigrams and use these to train a machine learner (K Nearest Neighbours) and an author verification algorithm (Linguistic Profiling). Both approaches work quite well, especially for the localisation task. Afterwards, an attempt is made to derive features that capture the orthographic variation between the charters more precisely. These are then used as input for the earlier tested classification algorithms. Again good results (at least as good as using the trigrams) are attained, even though proper nouns were ignored during the feature extraction. We can conclude that the localisation, and to a lesser extent the dating, is feasible. Moreover, the orthographic features we derive from the charters are an efficient basis for such a classification task.
+
+One file (PDF) contains the text of the master thesis, the other file (.tar.gz) contains all the used data sets and analysis scripts.</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/3720bb44-831c-48f3-9847-6988a41236e1</dc:identifier>
+      <dc:identifier>10.23728/b2share.b1092be3cd4844e0bffd7b669521ba3c</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/b1092be3cd4844e0bffd7b669521ba3c</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/b1092be3cd4844e0bffd7b669521ba3c</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>machine learning</dc:subject>
+      <dc:subject>text mining</dc:subject>
+      <dc:subject>orthography</dc:subject>
+      <dc:subject>Middle Dutch</dc:subject>
+      <dc:title>Orthography-based dating and localisation of Middle Dutch charters</dc:title>
+      <dc:type>Text</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

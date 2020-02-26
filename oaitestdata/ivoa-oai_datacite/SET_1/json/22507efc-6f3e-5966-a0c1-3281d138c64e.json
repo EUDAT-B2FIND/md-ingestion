@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/AJ/155/104",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/AJ/155/104"
+    ],
+    "PublicationTimestamp": "2019-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2018AJ....155..104R"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Rigby J.R., Bayliss M.B., Sharon K., Gladders M.D., Chisholm J., Dahle H., Johnson T., Paterno-Mahler R., Wuyts E., Kelson D.D."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/AJ/155/104;2019-01-31T12:45:45Z;J.AJ;ivo_managed;Rigby J.R., Bayliss M.B., Sharon K., Gladders M.D., Chisholm J., Dahle H., Johnson T., Paterno-Mahler R., Wuyts E., Kelson D.D.;MEGaSaURA. I. The sample and the spectra (Rigby+, 2018);CDS;2019;Galaxies;Gravitational_lensing;Spectroscopy;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/AJ/155/104;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/155/104;2018AJ....155..104R;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "22507efc-6f3e-5966-a0c1-3281d138c64e",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/AJ/155/104"
+    ],
+    "oai_set": [
+        "J.AJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Galaxies"
+        },
+        {
+            "name": "Gravitational_lensing"
+        },
+        {
+            "name": "Spectroscopy"
+        }
+    ],
+    "title": [
+        "MEGaSaURA. I. The sample and the spectra (Rigby+, 2018)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/155/104"
+}

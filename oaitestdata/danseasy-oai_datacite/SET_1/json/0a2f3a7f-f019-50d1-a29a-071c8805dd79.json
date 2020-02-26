@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Archeologisch Onderzoek Leiden BV"
+    ],
+    "Contributor": [
+        "Archeologisch Onderzoek Leiden BV"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17026/dans-z3a-qs4j",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/pdf"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:107613",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:107613"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Archeologisch Onderzoek Leiden BV"
+    ],
+    "RelatedIdentifier": [
+        "https://archisarchief.cultureelerfgoed.nl/Archis2/Archeorapporten/35/AR31982"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "SpatialCoverage": [
+        "\n            "
+    ],
+    "TempCoverageBegin": 63492638399,
+    "TempCoverageEnd": 63651182399,
+    "TemporalCoverage": " period : ( 2013-01-01T11:59:59Z - 2018-01-10T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2013-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-01-10T11:59:59Z",
+    "author": [
+        "Zon, M. van"
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:107613;2018-09-18T17:50:42Z;D30000:D37000;easy-collection:4;10.17026/dans-z3a-qs4j;Zon, M. van;Archeologisch Onderzoek Leiden BV;Briefrapport Archeologische Begeleiding Oegstgeest. Nieuw Rhijngeest-Zuid, Kadastrale Locatie E;Archol-rapport 232;Archol-rapport 232;Archeologisch Onderzoek Leiden BV;2018;Archaeology;Archeologisch Onderzoek Leiden BV;2013-01-01;2018-01-10;nl;Dataset;urn:nbn:nl:ui:13-lx-oezc;easy-dataset:107613;https://archisarchief.cultureelerfgoed.nl/Archis2/Archeorapporten/35/AR31982;application/pdf;info:eu-repo/semantics/openAccess;Begeleiding kabelsleuf 70x1 m. Tijdens de begeleiding zijn geen vondsten en sporen aangetroffen;Oegstgeest;Oegstgeest;Zuid-Holland;52.17127721;4.45407213",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a2f3a7f-f019-50d1-a29a-071c8805dd79",
+    "notes": [
+        "Begeleiding kabelsleuf 70x1 m. Tijdens de begeleiding zijn geen vondsten en sporen aangetroffen"
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:107613"
+    ],
+    "oai_set": [
+        "D30000:D37000",
+        "easy-collection:4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Archaeology"
+        }
+    ],
+    "title": [
+        "Briefrapport Archeologische Begeleiding Oegstgeest. Nieuw Rhijngeest-Zuid, Kadastrale Locatie E",
+        "Archol-rapport 232",
+        "Archol-rapport 232"
+    ],
+    "url": ""
+}

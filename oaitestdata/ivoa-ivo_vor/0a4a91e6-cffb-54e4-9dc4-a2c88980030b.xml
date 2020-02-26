@@ -1,0 +1,591 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/A+A/573/A129</oai:identifier>
+    <oai:datestamp>2018-12-27T12:36:47Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2017-09-29T09:02:56" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>HeViCS. SPIRE point-source catalogs (Pappalardo+, 2015)</title>
+      <shortName>J/A+A/573/A129</shortName>
+      <identifier>ivo://CDS.VizieR/J/A+A/573/A129</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Pappalardo C., Bendo G.J., Bianchi S., et al.</name>
+        </creator>
+        <contributor>Ciro Pappalardo [CAAUL-OAL, Portugal], Patricia Vannier [CDS]</contributor>
+        <date role="creation">2017-09-29T09:02:56</date>
+        <version>03-Oct-2014</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Photometry</subject>
+        <subject>Galaxies</subject>
+        <description>The HeViCS catalogs contain about 52000, 42200, and 18700 sources selected at 250, 350, and 500 micron above 3{sigma} and are about 75%, 62%, and 50% complete at flux densities of 20mJy at 250, 350, 500um. </description>
+        <source format="bibcode">2015A&amp;A...573A.129P</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/573/A129</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/A+A/573/A129</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/A+A/573/A129</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/A+A/573/A129/hevic250 (Catalog of point sources selected at 250um)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/A+A/573/A129/hevic250?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>184.0869140625</ra>
+          <dec>2.705395823080613</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/A+A/573/A129/hevic350 (Catalog of point sources selected at 350um)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/A+A/573/A129/hevic350?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>184.39453124999997</ra>
+          <dec>2.817431755383439</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/A+A/573/A129/hevics (*Herschel Virgo Cluster Survey: cross correlation between 250, 350 and 500um catalogs)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/A+A/573/A129/hevics?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>184.04296874999994</ra>
+          <dec>2.7800852678808035</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/A+A/573/A129/hevic500 (Catalog of point sources selected at 500um)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/A+A/573/A129/hevic500?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>184.15283203124997</ra>
+          <dec>2.724067747997528</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/J/A+A/573/A129?product=MOC&amp;nside=512</footprint>
+        <waveband>Optical</waveband>
+        <waveband>Infrared</waveband>
+      </coverage>
+      <table>
+        <name>J/A+A/573/A129/hevic500</name>
+        <description>Catalog of point sources selected at 500um</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>HVCS500</name>
+          <description>[1/18691] HeViCS identification number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>Nx</name>
+          <description>Detections at 250, 350, and 500um</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Right ascension at 500um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_RAJ2000</name>
+          <description>Right ascension error at 500um</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Declination at 500um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_DEJ2000</name>
+          <description>Declination error at 500um</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>F500</name>
+          <description>Flux density at 500um</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.mm.400-750GHz</ucd>
+        </column>
+        <column>
+          <name>e_F500</name>
+          <description>Error in the 500um flux estimation</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>objID</name>
+          <description>? Identification in SDSS-DR10</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>RASdeg</name>
+          <description>? Right ascension in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>DESdeg</name>
+          <description>? Declination in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>zsp</name>
+          <description>[-0.01/7.01]? Spectroscopic redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zsp</name>
+          <description>[0/0.05]? Error in spectroscopic redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>zph</name>
+          <description>[-0.01/1.0]? Photometric redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zph</name>
+          <description>[0/0.34]? Error in the photometric redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>rmag</name>
+          <description>Extinction corrected r-band AB mag</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.R</ucd>
+        </column>
+        <column>
+          <name>d250</name>
+          <description>[0/18] Distance from the associated source at 250um</description>
+          <unit>arcsec</unit>
+          <ucd>pos;arith.diff</ucd>
+        </column>
+        <column>
+          <name>tc</name>
+          <description>[0/1] Presence of the source in the total catalog</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>Sloan</name>
+          <description>Display the SDSS data for this object</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/A+A/573/A129/hevics</name>
+        <description>*Herschel Virgo Cluster Survey: cross correlation between 250, 350 and 500um catalogs</description>
+        <column>
+          <name>Simbad</name>
+          <description>Simbad column added by the CDS</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>HVCS</name>
+          <description>[1/3102] HeViCS identification number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Right ascension at 250um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Declination at 250um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>objID</name>
+          <description>Identification in SDSS-DR10</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>RASdeg</name>
+          <description>Right ascension in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>DESdeg</name>
+          <description>Declination in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>zsp</name>
+          <description>[-0.01/7.01]? Spectroscopic redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zsp</name>
+          <description>[0/0.005]? Error in spectroscopic redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>zph</name>
+          <description>[0/0.9]? Photometric redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zph</name>
+          <description>[0/0.4]? Error in the photometric redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>rmag</name>
+          <description>[9.3/29.3] Extinction corrected r-band AB mag</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.R</ucd>
+        </column>
+        <column>
+          <name>F250</name>
+          <description>[20/473] Flux density at 250um</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.mm.750-1500GHz</ucd>
+        </column>
+        <column>
+          <name>e_F250</name>
+          <description>[3/21] Error in the 250um flux estimation</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>F350</name>
+          <description>[20/321] Flux density at 350um</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.mm.750-1500GHz</ucd>
+        </column>
+        <column>
+          <name>e_F350</name>
+          <description>[3/10] Error in the 350um flux estimation</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>d350</name>
+          <description>[0/12] Distance between the source at 250um and the associated source at 350um</description>
+          <unit>arcsec</unit>
+          <ucd>pos;arith.diff</ucd>
+        </column>
+        <column>
+          <name>F500</name>
+          <description>[20/402] Flux density at 500um</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.mm.400-750GHz</ucd>
+        </column>
+        <column>
+          <name>e_F500</name>
+          <description>[3.4/6.1] Error in the 500um flux estimation</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>d500</name>
+          <description>[0/18] Distance between the source at 250um and the associated source at 500um</description>
+          <unit>arcsec</unit>
+          <ucd>pos;arith.diff</ucd>
+        </column>
+        <column>
+          <name>all</name>
+          <description>List the corresponing sources in the 3 wavelengths</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>Sloan</name>
+          <description>Display the SDSS data for this object</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/A+A/573/A129/hevic350</name>
+        <description>Catalog of point sources selected at 350um</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>HVCS350</name>
+          <description>[1/42278] HeViCS identification number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>Nx</name>
+          <description>Detections at 250, 350, and 500um</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Right ascension at 350um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_RAJ2000</name>
+          <description>Right ascension error at 350um</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Declination at 350um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_DEJ2000</name>
+          <description>Declination error at 350um</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>F350</name>
+          <description>[20/321] Flux density at 350um</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.mm.750-1500GHz</ucd>
+        </column>
+        <column>
+          <name>e_F350</name>
+          <description>i[2.8/12.6] Error in the 350um flux estimation</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>objID</name>
+          <description>? Identification in SDSS-DR10</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>RASdeg</name>
+          <description>? Right ascension in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>DESdeg</name>
+          <description>? Declination in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>zsp</name>
+          <description>[-0.01/3.5]? Spectroscopic redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zsp</name>
+          <description>[0/7.8]? Error in spectroscopic redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>zph</name>
+          <description>[-0.01/1.0]? Photometric redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zph</name>
+          <description>[0/0.34]? Error in the photometric redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>rmag</name>
+          <description>Extinction corrected r-band AB mag</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.R</ucd>
+        </column>
+        <column>
+          <name>d250</name>
+          <description>[0/12] Distance from the associated sources at 250um</description>
+          <unit>arcsec</unit>
+          <ucd>pos;arith.diff</ucd>
+        </column>
+        <column>
+          <name>tc</name>
+          <description>[0/1] Presence of the source in the total catalog</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>Sloan</name>
+          <description>Display the SDSS data for this object</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/A+A/573/A129/hevic250</name>
+        <description>Catalog of point sources selected at 250um</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>HVCS250</name>
+          <description>[1/52020] HeViCS identification number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>Nx</name>
+          <description>Detections at 250, 350, and 500um</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Right ascension at 250um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_RAJ2000</name>
+          <description>Right ascension error at 250um</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Declination at 250um (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_DEJ2000</name>
+          <description>Declination error at 250um</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error;pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>F250</name>
+          <description>[20/717] Flux density at 250um</description>
+          <unit>mJy</unit>
+          <ucd>phot.flux.density;em.mm.750-1500GHz</ucd>
+        </column>
+        <column>
+          <name>e_F250</name>
+          <description>[2/47] Error in the 250um flux estimation</description>
+          <unit>mJy</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>objID</name>
+          <description>? Identification in SDSS-DR10</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>RASdeg</name>
+          <description>? SDSS right ascension in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>DESdeg</name>
+          <description>? SDSS declination in SDSS (J2000.0)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>zsp</name>
+          <description>[-0.01/7.01]? Spectroscopic redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zsp</name>
+          <description>[0/0.005]? Error in spectroscopic redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>zph</name>
+          <description>[-0.01/1.0]? Photometric redshift in SDSS</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>e_zph</name>
+          <description>[0/0.35]? Error in photometric redshift</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>rmag</name>
+          <description>Extinction corrected r-band AB mag</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.R</ucd>
+        </column>
+        <column>
+          <name>Sloan</name>
+          <description>Display the SDSS data for this object</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

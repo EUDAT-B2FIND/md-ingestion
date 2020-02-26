@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "RAAP Archeologisch Adviesbureau"
+    ],
+    "Contributor": [
+        "RAAP Archeologisch Adviesbureau"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17026/dans-x2q-n6nt",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/pdf"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:107212",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:107212"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "RAAP Archeologisch Adviesbureau"
+    ],
+    "RelatedIdentifier": [
+        "https://archisarchief.cultureelerfgoed.nl/Archis2/Archeorapporten/28/AR28841"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "SpatialCoverage": [
+        "\n            "
+    ],
+    "TempCoverageBegin": 63434577599,
+    "TempCoverageEnd": 63651182399,
+    "TemporalCoverage": " period : ( 2011-03-01T11:59:59Z - 2018-01-10T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2011-03-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-01-10T11:59:59Z",
+    "author": [
+        "Timmerman, R."
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:107212;2018-09-18T17:49:04Z;D30000:D37000;easy-collection:4;10.17026/dans-x2q-n6nt;Timmerman, R.;RAAP Archeologisch Adviesbureau;Plangebied Essenstraat 9-15 te Haarlem Gemeente Haarlem Archeologisch vooronderzoek: een bureau- en inventariserend veldonderzoek;RAAP-notitie 3727;Haarlem - Essenstraat 9-15;HMES;RAAP-notitie 3727;Haarlem - Essenstraat 9-15;HMES;RAAP Archeologisch Adviesbureau;2018;Archaeology;RAAP Archeologisch Adviesbureau;2011-03-01;2018-01-10;nl;Dataset;urn:nbn:nl:ui:13-tb-u5wv;easy-dataset:107212;https://archisarchief.cultureelerfgoed.nl/Archis2/Archeorapporten/28/AR28841;application/pdf;info:eu-repo/semantics/openAccess;Onderzoeksrapport;Haarlem;Haarlem;Noord-Holland;Essenstraat 9-15;52.37746903;4.63764968",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a1dbc57-9ebd-5ab8-a581-b0ab36b635bd",
+    "notes": [
+        "Onderzoeksrapport"
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:107212"
+    ],
+    "oai_set": [
+        "D30000:D37000",
+        "easy-collection:4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Archaeology"
+        }
+    ],
+    "title": [
+        "Plangebied Essenstraat 9-15 te Haarlem Gemeente Haarlem Archeologisch vooronderzoek: een bureau- en inventariserend veldonderzoek",
+        "RAAP-notitie 3727",
+        "Haarlem - Essenstraat 9-15",
+        "HMES",
+        "RAAP-notitie 3727",
+        "Haarlem - Essenstraat 9-15",
+        "HMES"
+    ],
+    "url": ""
+}

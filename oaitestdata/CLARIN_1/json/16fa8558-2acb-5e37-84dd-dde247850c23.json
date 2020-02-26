@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "http://b2share.eudat.eu"
+    ],
+    "Contributor": [
+        "TXM team"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/ea745beaf56c4a80a1d74748d4d88ed6",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/ea745beaf56c4a80a1d74748d4d88ed6"
+    ],
+    "PID": "http://hdl.handle.net/11304/13f29868-3a0f-11e5-8a18-f31aa6f4d448",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "http://b2share.eudat.eu"
+    ],
+    "ResourceType": [
+        "Other"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "GNU General Public License 3 (GPL-3.0)"
+    ],
+    "author": [
+        "Serge Heiden"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/ea745beaf56c4a80a1d74748d4d88ed6;2018-01-11T13:48:32Z;0afede87-2bf2-4d89-867e-d2ee57251c62;TXM team;Serge Heiden;2016-12-22T10:20:53.339480+00:00;TXM 0.7.7 for Windows 64-bit setup file\n\nTXM is a free and open-source (GPL v3) textual corpora analysis platform.\nIt combines five key components:\n\n  a) the ability to import and analyze written texts, record transcripts and multilingual aligned corpora. Written texts corpora can be of different levels of complexity from basic raw text from the clipboard to XML representations following the recommendations of the TEI consortium, through sources in any XML format. Record transcripts corpora encode speech turns and can be synchronized with the audio or video sources. Multilingual aligned corpora are in the TMX translation memory format.\n\n  b) the ability to automatically annotate texts during import, for example with the TreeTagger lemmatizer\n\n  c) the many search and extraction features of the CQP full text search engine\n\n  d) the possibility to use statistical packages from the R environment\n\n  e) implementation for end users in the form of a GUI application that provides tools for document analysis (frequency lists, concordances...) and for quantitative analysis (correspondence analysis, hierarchical clustering, cooccurrence analysis...) for Windows, Mac or Linux and as a web portal accessed by a simple browser.\n\nIt is developed by a network of academic institutions (ENS de Lyon and University of Franche-Comt\u00e9).\n\nIt is used by dozens of research laboratories from many Humanities related disciplines:\nLinguistics, Literature-Language-Civilization, Geography, Information Sciences and Communication,\nEducation Sciences, History, Sociology, Computer Science, Statistics, Philosophy, Psychology,\nPolitical Science, Urban-Transport Economics, Management Sciences, Biological Sciences, Anthropology,\nScience of art...\n;http://hdl.handle.net/11304/13f29868-3a0f-11e5-8a18-f31aa6f4d448;https://b2share.eudat.eu/api/records/ea745beaf56c4a80a1d74748d4d88ed6;oai:b2share.eudat.eu:b2rec/ea745beaf56c4a80a1d74748d4d88ed6;en;http://b2share.eudat.eu;info:eu-repo/semantics/openAccess;GNU General Public License 3 (GPL-3.0);textometry;textometrie;text analysis;content analysis;xml;tei;nlp;treetagger;cqp;r;eclipse rcp;TXM_0.7.7_Win64.exe;Other",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "16fa8558-2acb-5e37-84dd-dde247850c23",
+    "notes": [
+        "TXM 0.7.7 for Windows 64-bit setup file\n\nTXM is a free and open-source (GPL v3) textual corpora analysis platform.\nIt combines five key components:\n\n  a) the ability to import and analyze written texts, record transcripts and multilingual aligned corpora. Written texts corpora can be of different levels of complexity from basic raw text from the clipboard to XML representations following the recommendations of the TEI consortium, through sources in any XML format. Record transcripts corpora encode speech turns and can be synchronized with the audio or video sources. Multilingual aligned corpora are in the TMX translation memory format.\n\n  b) the ability to automatically annotate texts during import, for example with the TreeTagger lemmatizer\n\n  c) the many search and extraction features of the CQP full text search engine\n\n  d) the possibility to use statistical packages from the R environment\n\n  e) implementation for end users in the form of a GUI application that provides tools for document analysis (frequency lists, concordances...) and for quantitative analysis (correspondence analysis, hierarchical clustering, cooccurrence analysis...) for Windows, Mac or Linux and as a web portal accessed by a simple browser.\n\nIt is developed by a network of academic institutions (ENS de Lyon and University of Franche-Comt\u00e9).\n\nIt is used by dozens of research laboratories from many Humanities related disciplines:\nLinguistics, Literature-Language-Civilization, Geography, Information Sciences and Communication,\nEducation Sciences, History, Sociology, Computer Science, Statistics, Philosophy, Psychology,\nPolitical Science, Urban-Transport Economics, Management Sciences, Biological Sciences, Anthropology,\nScience of art...\n"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/ea745beaf56c4a80a1d74748d4d88ed6"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "textometry"
+        },
+        {
+            "name": "textometrie"
+        },
+        {
+            "name": "text analysis"
+        },
+        {
+            "name": "content analysis"
+        },
+        {
+            "name": "xml"
+        },
+        {
+            "name": "tei"
+        },
+        {
+            "name": "nlp"
+        },
+        {
+            "name": "treetagger"
+        },
+        {
+            "name": "cqp"
+        },
+        {
+            "name": "eclipse rcp"
+        }
+    ],
+    "title": [
+        "TXM_0.7.7_Win64.exe"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/ea745beaf56c4a80a1d74748d4d88ed6"
+}

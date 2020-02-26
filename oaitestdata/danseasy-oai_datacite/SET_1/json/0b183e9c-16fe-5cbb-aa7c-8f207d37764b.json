@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "RAAP Archeologisch Adviesbureau"
+    ],
+    "Contributor": [
+        "RAAP Archeologisch Adviesbureau"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17026/dans-zw6-fqjd",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "32 p."
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:16129",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:16129"
+    ],
+    "PublicationTimestamp": "2009-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "RAAP Archeologisch Adviesbureau"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "SpatialCoverage": [
+        "\n            "
+    ],
+    "TemporalCoverage": [
+        "2009-06-05",
+        "1998",
+        "2009-06-04"
+    ],
+    "author": [
+        "Soonius, C.M."
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:16129;2018-09-18T16:42:31Z;D30000:D37000;driver;easy-collection:4;10.17026/dans-zw6-fqjd;Soonius, C.M.;Provincie Noord-Holland, PWN-waterleiding Bergen-Limmen;archeologisch onderzoek;RAAPRAPPORT 266;archeologisch onderzoek;RAAPRAPPORT 266;RAAP Archeologisch Adviesbureau;2009;Archaeology;PROSPECTIE;RAAP Archeologisch Adviesbureau;2009-06-05;1998;2009-06-04;nl;Dataset;urn:nbn:nl:ui:13-gt5-v0t;easy-dataset:16129;twips.dans.knaw.nl-8205266172994353198-1244205194207;32 p.;info:eu-repo/semantics/openAccess;onderzoeksrapport;Limmen;Nederland;Noord-Holland;Bergen;e-ne (MARC21);52.69158248;4.74457951;52.5855416;4.67219661",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0b183e9c-16fe-5cbb-aa7c-8f207d37764b",
+    "notes": [
+        "onderzoeksrapport"
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:16129"
+    ],
+    "oai_set": [
+        "D30000:D37000",
+        "driver",
+        "easy-collection:4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Archaeology"
+        },
+        {
+            "name": "PROSPECTIE"
+        }
+    ],
+    "title": [
+        "Provincie Noord-Holland, PWN-waterleiding Bergen-Limmen",
+        "archeologisch onderzoek",
+        "RAAPRAPPORT 266",
+        "archeologisch onderzoek",
+        "RAAPRAPPORT 266"
+    ],
+    "url": ""
+}

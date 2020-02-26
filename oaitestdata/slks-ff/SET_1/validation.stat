@@ -1,0 +1,146 @@
+
+ Statistics of
+	community	slks
+	subset		SET_1
+	# of records	6
+  see as well oaitestdata//slks-ff/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //ff:placeNames/ff:placeName/ff:name
+
+  |--     6 |  100 |     6 |  100
+      |- 1     : Arnkils Fredskov, afd. 273.         |
+      |- 1     : Dungkjær                            |
+      |- 1     : Agdrup                              |
+      |- 1     : Kantedamsgaaard                     |
+      |- 1     : Agstrup                             |
+      |- 1     : Ginnerup                            |
+
+ |-> Description      <--       <string>This record describes ancient sites and monuments as well as archaeological excavations undertaken by Danish museums.</string>
+
+  |--     6 |  100 |     6 |  100
+      |- 6     : This record describes ancient sites and monuments as well as archaeological exca [...(37 chars follow)...] |
+
+ |-> Tags             <--       //ff:site/ff:placeNames/ff:placeName/ff:placeNameType/ff:term,//ff:site/ff:objects/primaryObject/objectType/term,//ff:site/ff:objects/object/objectType/term
+
+  |--     6 |  100 |     6 |  100
+      |- 3     : Bebyggelse                          |
+      |- 2     : Uspecificeret                       |
+      |- 1     : AFD Afdeling skove o.a.             |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //ff:site/ff:id
+
+  |--    12 |  200 |    12 |  200
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/87457      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/171708      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/202526      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/10751      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/9886      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/1546      |
+
+ |-> RelatedIdentifier <--       //ff:site/ff:id
+
+  |--    12 |  200 |    12 |  200
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/87457      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/171708      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/202526      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/10751      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/9886      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/site/1546      |
+
+ |-> MetaDataAccess   <--                     
+  |--     6 |  100 |     6 |  100
+      |- 1     : http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&iden [...(43 chars follow)...] |
+      |- 1     : http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&iden [...(43 chars follow)...] |
+      |- 1     : http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&iden [...(43 chars follow)...] |
+      |- 1     : http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&iden [...(43 chars follow)...] |
+      |- 1     : http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&iden [...(43 chars follow)...] |
+      |- 1     : http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&iden [...(43 chars follow)...] |
+
+ |-> Creator          <--       //ff:site/ff:adminArea/ff:supervision/ff:term
+
+  |--     6 |  100 |     6 |  100
+      |- 2     : Museum Sønderjylland                |
+      |- 1     : Kroppedal Museum,  Arkæologi        |
+      |- 1     : Odense Bys Museer                   |
+      |- 1     : Moesgård Museum                     |
+      |- 1     : Nordjyllands Historiske Museum      |
+
+ |-> Publisher        <--       <string>Slots- og Kulturstyrelsen</string>
+
+  |--     6 |  100 |     6 |  100
+      |- 6     : og                                  |
+
+ |-> Contributor      <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //ff:site/ff:date
+
+  |--     6 |  100 |     6 |  100
+      |- 6     : 2020                                |
+
+ |-> Rights           <--       <string>For scientific use</string>
+
+  |--     6 |  100 |     6 |  100
+      |- 6     : For scientific use                  |
+
+ |-> OpenAccess       <--       false
+        
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       <string>post@slks.dk</string>
+
+  |--     6 |  100 |     6 |  100
+      |- 6     : post@slks.dk                        |
+
+ |-> Language         <--       <string>danish</string>
+
+  |--     6 |  100 |     6 |  100
+      |- 6     : Danish                              |
+
+ |-> ResourceType     <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Format           <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string>Classical Archaeology</string>
+
+  |--     6 |  100 |     6 |  100
+      |- 6     : Classical Archaeology               |
+
+ |-> SpatialCoverage  <--       //ff:site/ff:geodata/gml:Point/gml:pos
+
+  |--     6 |  100 |     6 |  100
+      |- 1     : 566105;6363138                      |
+      |- 1     : 872778;6126327                      |
+      |- 1     : 549425;6091293                      |
+      |- 1     : 607816;6253363                      |
+      |- 1     : 591348;6075988                      |
+      |- 1     : 538911;6144507                      |
+
+ |-> TemporalCoverage <--       //ff:site/ff:objects/ff:primaryObject/ff:date/ff:fromYear,//ff:site/ff:objects/ff:primaryObject/ff:date/ff:toYear
+
+  |--     6 |  100 |     6 |  100
+      |- 1     :  period : ( 1700-07-01T11:59:59Z - None )       |
+      |- 1     :  period : ( 3950-07-01T11:59:59Z - 2801-07-01T11:59:59Z )       |
+      |- 1     :  period : ( None - None )           |
+      |- 1     :  period : ( 3950-07-01T11:59:59Z - 1701-07-01T11:59:59Z )       |
+      |- 1     :  period : ( 1280-07-01T11:59:59Z - 1701-07-01T11:59:59Z )       |
+      |- 1     :  period : ( None - 1066-07-01T11:59:59Z )       |
+

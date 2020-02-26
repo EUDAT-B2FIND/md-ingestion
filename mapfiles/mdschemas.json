@@ -13,6 +13,7 @@
 	"json" : "http://json-schema.org/latest/json-schema-core.html",
 	"fgdc" : "No specification for fgdc available",
 	"fbb" : "http://www.kulturarv.dk/fbb http://www.kulturarv.dk/fbb/fbb.xsd",
+	"ff" : "http://www.kulturarv.dk/fundogfortidsminder/ff",
 	"hdcp2" : "No specification for hdcp2 settings",
 	"eposap" : "http://www.epos-ip.org/terms.html",
 	"datacite3" : "http://schema.datacite.org/meta/kernel-4.1/metadata.xsd",

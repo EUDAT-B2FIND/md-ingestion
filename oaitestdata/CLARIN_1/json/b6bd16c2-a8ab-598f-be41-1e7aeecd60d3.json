@@ -1,0 +1,59 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.23728/b2share.93ab120efdaa4662baec6adee8e7585f",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/93ab120efdaa4662baec6adee8e7585f",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/93ab120efdaa4662baec6adee8e7585f"
+    ],
+    "PID": "http://hdl.handle.net/11304/5a460083-d21a-4d12-89d8-b90f62eb5f3a",
+    "PublicationTimestamp": "2017-10-22T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "Creative Commons Attribution (CC-BY)"
+    ],
+    "author": [
+        "Carvalho, Paula",
+        "Silva, M\u00e1rio J"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/93ab120efdaa4662baec6adee8e7585f;2018-01-11T13:50:56Z;0afede87-2bf2-4d89-867e-d2ee57251c62;Carvalho, Paula;Silva, M\u00e1rio J;2017-10-22T16:50:22.953090+00:00;SentiLex-PT is a sentiment lexicon for Portuguese, made up of 7,014 lemmas, and 82,347 inflected forms. In detail, the lexicon describes:\n4,779 (16,863) adjectives,\n1,081 (1,280) nouns,\n489 (29,504) verbs, and\n666 (34,700) idiomatic expressions.\n\nThe sentiment entries correspond to human predicates, i.e. predicates modifying human nouns, compiled from different publicly available resources (corpora and dictionaries). \n\nSentiLex-PT is especially useful for opinion mining applications involving Portuguese, in particular for detecting and classifying sentiments and opinions targeting human entities.\n\n;The sentiment attributes for each entry are:\nthe target of sentiment,\nthe predicate polarity, and\nthe polarity assignment.\n\nSentiment attributes were mostly manually labeled, but some entries (adjectives) have their attributes automatically assigned by software developed for this purpose. The inflected forms associated with the verbs and idiomatic expressions, and their corresponding morphological attributes, were semi-automatically extracted from LABEL-LEX, a publicly available lexicon for Portuguese, developed by Ranchhod et al. (1999), at LabEL.\n;SentiLex-PT is available in two separate .txt files:\n\nSentiLex-lem-PT02.txt\nEach line includes information about:\nLemma (conventionally, the masculine singular form for adjectives, the singular form for nouns that are inflected for number, and the infinitive form for verbs and idiomatic expressions),\nPart-of-speech (ADJ(ective), N(oun), V(erb) and IDIOM), and\nSentiment attributes:\nPolarity (POL), which can be positive (1), negative (-1) or neutral (0);\nTarget of polarity (TG), which corresponds to a human noun (HUM), functioning as the subject (N0) and/or the complement (N1) of the predicate;\nPolarity annotation (ANOT), which was performed manually (MAN) or automatically, by the Judgment Analysis Lexicon Classifier (JALC) tool, developed by the project team.\nSome entries also include an additional code (REV), which refers to specific notes included by the annotator. At this point, we can find the following notations:\nREV=AMB, which means that the entry is ambiguous with other words conveying different polarities, and\nREV:POL, which means that the polarity code previously assigned to the entry in SentiLex-PT01 was revised.\n\nBelow are five entries of SentiLex-lem-PT02.txt:\naberra\u00e7\u00e3o.PoS=N;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nbonito.PoS=Adj;TG=HUM:N0;POL:N0=1;ANOT=MAN\ncastigado;PoS=Adj;TG=HUM:N0;POL:N0=-1;ANOT=JALC\nestimado.PoS=Adj;TG=HUM:N0;POL:N0=1;ANOT=JALC;REV=AMB\nenganar.PoS=V;TG=HUM:N0:N1;POL:N0=-1;POL:N1=0;ANOT=MAN\nengolir em seco.PoS=IDIOM;TG=HUM:N0;POL:N0=-1;ANOT=MAN\n\nSentiLex-flex-PT02.txt \nIn each line, the inflected forms are associated with their corresponding lemma. In addition to the linguistic information described in dictionary of lemmas, each adjective and noun is classified according to their inflection (FLEX) in gender (masculine (m) or feminine (f)) and number (singular (s) or plural (p)). The morphological attributes characterizing verbs and idiomatic expressions correspond to tense, person and number. The inflected forms and corresponding attributes were automatically extracted from LABEL-LEX-sw.\n\nBelow are ten entries of SentiLex-flex-PT02.txt:\naberra\u00e7\u00e3o,aberra\u00e7\u00e3o.PoS=N;FLEX=fs;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nbonita,bonito.PoS=Adj;FLEX=fs;TG=HUM:N0;POL:N0=1;ANOT=MAN\nbonitas,bonito.PoS=Adj;FLEX=fp;TG=HUM:N0;POL:N0=1;ANOT=MAN\nbonito,bonito.PoS=Adj;FLEX=ms;TG=HUM:N0;POL:N0=1;ANOT=MAN\nbonitos,bonito.PoS=Adj;FLEX=mp;TG=HUM:N0;POL:N0=1;ANOT=MAN\nengoliste em seco,engolir em seco.PoS=IDIOM;Flex=J2p|J2s;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengolistes em seco,engolir em seco.PoS=IDIOM;Flex=J2p;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengoliu em seco,engolir em seco.PoS=IDIOM;Flex=J4s|P3s;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengulam em seco,engolir em seco.PoS=IDIOM;Flex=Y4p|S4p|S3p;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengulamos em seco,engolir em seco.PoS=IDIOM;Flex=Y1p|S1p;TG=HUM:N0;POL:N0=-1;ANOT=MAN\n;M\u00e1rio J. Silva, Paula Carvalho and Lu\u00eds Sarmento. \"Building a Sentiment Lexicon for Social Judgement Mining\". In Lecture Notes in Computer Science (LNCS) / Lecture Notes in Artificial Intelligence (LNAI), International Conference on Computational Processing of Portuguese (PROPOR), 17-20 April, 2012, Coimbra.;http://hdl.handle.net/11304/5a460083-d21a-4d12-89d8-b90f62eb5f3a;10.23728/b2share.93ab120efdaa4662baec6adee8e7585f;https://b2share.eudat.eu/api/records/93ab120efdaa4662baec6adee8e7585f;oai:b2share.eudat.eu:b2rec/93ab120efdaa4662baec6adee8e7585f;info:eu-repo/semantics/openAccess;Creative Commons Attribution (CC-BY);Sentiment Analysis, Lexicon;SentiLex-PT 02",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b6bd16c2-a8ab-598f-be41-1e7aeecd60d3",
+    "notes": [
+        "SentiLex-PT is a sentiment lexicon for Portuguese, made up of 7,014 lemmas, and 82,347 inflected forms. In detail, the lexicon describes:\n4,779 (16,863) adjectives,\n1,081 (1,280) nouns,\n489 (29,504) verbs, and\n666 (34,700) idiomatic expressions.\n\nThe sentiment entries correspond to human predicates, i.e. predicates modifying human nouns, compiled from different publicly available resources (corpora and dictionaries). \n\nSentiLex-PT is especially useful for opinion mining applications involving Portuguese, in particular for detecting and classifying sentiments and opinions targeting human entities.\n\n",
+        "The sentiment attributes for each entry are:\nthe target of sentiment,\nthe predicate polarity, and\nthe polarity assignment.\n\nSentiment attributes were mostly manually labeled, but some entries (adjectives) have their attributes automatically assigned by software developed for this purpose. The inflected forms associated with the verbs and idiomatic expressions, and their corresponding morphological attributes, were semi-automatically extracted from LABEL-LEX, a publicly available lexicon for Portuguese, developed by Ranchhod et al. (1999), at LabEL.\n",
+        "SentiLex-PT is available in two separate .txt files:\n\nSentiLex-lem-PT02.txt\nEach line includes information about:\nLemma (conventionally, the masculine singular form for adjectives, the singular form for nouns that are inflected for number, and the infinitive form for verbs and idiomatic expressions),\nPart-of-speech (ADJ(ective), N(oun), V(erb) and IDIOM), and\nSentiment attributes:\nPolarity (POL), which can be positive (1), negative (-1) or neutral (0);\nTarget of polarity (TG), which corresponds to a human noun (HUM), functioning as the subject (N0) and/or the complement (N1) of the predicate;\nPolarity annotation (ANOT), which was performed manually (MAN) or automatically, by the Judgment Analysis Lexicon Classifier (JALC) tool, developed by the project team.\nSome entries also include an additional code (REV), which refers to specific notes included by the annotator. At this point, we can find the following notations:\nREV=AMB, which means that the entry is ambiguous with other words conveying different polarities, and\nREV:POL, which means that the polarity code previously assigned to the entry in SentiLex-PT01 was revised.\n\nBelow are five entries of SentiLex-lem-PT02.txt:\naberra\u00e7\u00e3o.PoS=N;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nbonito.PoS=Adj;TG=HUM:N0;POL:N0=1;ANOT=MAN\ncastigado;PoS=Adj;TG=HUM:N0;POL:N0=-1;ANOT=JALC\nestimado.PoS=Adj;TG=HUM:N0;POL:N0=1;ANOT=JALC;REV=AMB\nenganar.PoS=V;TG=HUM:N0:N1;POL:N0=-1;POL:N1=0;ANOT=MAN\nengolir em seco.PoS=IDIOM;TG=HUM:N0;POL:N0=-1;ANOT=MAN\n\nSentiLex-flex-PT02.txt \nIn each line, the inflected forms are associated with their corresponding lemma. In addition to the linguistic information described in dictionary of lemmas, each adjective and noun is classified according to their inflection (FLEX) in gender (masculine (m) or feminine (f)) and number (singular (s) or plural (p)). The morphological attributes characterizing verbs and idiomatic expressions correspond to tense, person and number. The inflected forms and corresponding attributes were automatically extracted from LABEL-LEX-sw.\n\nBelow are ten entries of SentiLex-flex-PT02.txt:\naberra\u00e7\u00e3o,aberra\u00e7\u00e3o.PoS=N;FLEX=fs;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nbonita,bonito.PoS=Adj;FLEX=fs;TG=HUM:N0;POL:N0=1;ANOT=MAN\nbonitas,bonito.PoS=Adj;FLEX=fp;TG=HUM:N0;POL:N0=1;ANOT=MAN\nbonito,bonito.PoS=Adj;FLEX=ms;TG=HUM:N0;POL:N0=1;ANOT=MAN\nbonitos,bonito.PoS=Adj;FLEX=mp;TG=HUM:N0;POL:N0=1;ANOT=MAN\nengoliste em seco,engolir em seco.PoS=IDIOM;Flex=J2p|J2s;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengolistes em seco,engolir em seco.PoS=IDIOM;Flex=J2p;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengoliu em seco,engolir em seco.PoS=IDIOM;Flex=J4s|P3s;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengulam em seco,engolir em seco.PoS=IDIOM;Flex=Y4p|S4p|S3p;TG=HUM:N0;POL:N0=-1;ANOT=MAN\nengulamos em seco,engolir em seco.PoS=IDIOM;Flex=Y1p|S1p;TG=HUM:N0;POL:N0=-1;ANOT=MAN\n",
+        "M\u00e1rio J. Silva, Paula Carvalho and Lu\u00eds Sarmento. \"Building a Sentiment Lexicon for Social Judgement Mining\". In Lecture Notes in Computer Science (LNCS) / Lecture Notes in Artificial Intelligence (LNAI), International Conference on Computational Processing of Portuguese (PROPOR), 17-20 April, 2012, Coimbra."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/93ab120efdaa4662baec6adee8e7585f"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Sentiment Analysis"
+        },
+        {
+            "name": "Lexicon"
+        }
+    ],
+    "title": [
+        "SentiLex-PT 02"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/93ab120efdaa4662baec6adee8e7585f"
+}

@@ -10,34 +10,57 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
-##SciCat ESS
+## SciCat ESS
 ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
-##UniMaribor
+## UniMaribor
 ##unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_datacite openaire_data
 unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_dc openaire_data
+## DaRUS
+darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite 
+#darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
+## SLKS with ff
+#slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff
+## SLKS with fbb
+slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
+#slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  SAVE
+#slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers fbb SAVE
+#!gut!slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
+### slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  lido
+##slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  test
+#slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  SAVE
+##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Objects
+#slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Listed
+##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  KID
+##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Foto
+##??NO OAI set ??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  sites
 ## Materials Cloud
 materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc full
 ## CLARIN
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
 clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
-#Dublincore from dm-oai.dkrz.de
-##UCL
+# Dublincore from dm-oai.dkrz.de
+## UCL
+#ucl https://api.figshare.com/v2/oai ListRecords oai_dc
 ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549
 ## HBP
 #hbp http://148.187.98.42:8081/oai/provider GetRecord oai_dc
+#hbp https://148.187.98.42:8443/oai/provider ListRecords oai_dc
 hbp https://148.187.98.42:8443/oai/provider ListRecords oai_dc
 ## TOAR
-toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  578593c4-4cac-4890-be16-37e5619ff043
+toar https://b2share-testing.fz-juelich.de/api/ records json
+#toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  8cb65167-71d4-4845-a454-5d56624568d2
+#toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  e153ef6e-20a4-49b2-a307-735f9d587f5c
 #toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc RDA
 #TOAR
 ## B2FIND export
 b2find http://b2find.eudat.eu/api/3/action ckan_api json 
 ## EnviDat
+envidat https://www.envidat.ch/oai ListRecords oai_dc
 #envidat https://www.envidat.ch/api/3/action package_list json 
 #https://www.envidat.ch/oai?verb=ListRecords&metadataPrefix=iso19139
 #envidat https://www.envidat.ch/oai ListRecords iso19139 
 #envidat https://www.envidat.ch/oai ListRecords datacite
-envidat https://www.envidat.ch/api/3/action ckan_api json 
+#envidat https://www.envidat.ch/api/3/action ckan_api json 
 ## EMSO
 emso http://dataportals.pangaea.de/emso/oai pan_md full
 ## Capsella
@@ -94,16 +117,6 @@ egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
 epos http://epos-dcat????  ListRecords eposap dcat-ap_1
 epos http://epos-tcs-uni-utr???  ListRecords iso19139 SET_1
 ##epos https://trng-b2share.eudat.eu/api/oai2d  ListRecords marcxml EPOS 
-## SLKS
-### slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  lido
-##slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  test
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  SAVE
-##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Objects
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Listed
-##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  KID
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
-##??NO fbb??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Foto
-##??NO OAI set ??? slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  sites
 ## HZG
 hzg   http://????  ListRecords  iso19139 coastmap
 ## Aston university

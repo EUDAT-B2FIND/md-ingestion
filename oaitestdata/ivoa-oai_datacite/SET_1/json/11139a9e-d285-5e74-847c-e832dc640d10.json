@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/A+A/568/A51",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/A+A/568/A51"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2014A&A...568A..51S"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Schmeja S., Kharchenko N.V., Piskunov A.E., Roeser S., Schilbach E., Froebrich D., Scholz R.-D."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/A+A/568/A51;2018-10-19T10:28:24Z;J.A_A;ivo_managed;Schmeja S., Kharchenko N.V., Piskunov A.E., Roeser S., Schilbach E., Froebrich D., Scholz R.-D.;Milky Way global survey of star clusters. III. (Schmeja+, 2014);CDS;2018;Open_Clusters;Proper_Motions;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/A+A/568/A51;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/568/A51;2014A&A...568A..51S;text/xml+votable;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "11139a9e-d285-5e74-847c-e832dc640d10",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/A+A/568/A51"
+    ],
+    "oai_set": [
+        "J.A_A",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Open_Clusters"
+        },
+        {
+            "name": "Proper_Motions"
+        }
+    ],
+    "title": [
+        "Milky Way global survey of star clusters. III. (Schmeja+, 2014)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/568/A51"
+}

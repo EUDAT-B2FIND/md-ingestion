@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/A+A/541/A143",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/A+A/541/A143"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2012A&A...541A.143S"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Spite M., Andrievsky S.M., Spite F., Caffau E., Korotin S.A., Bonifacio P., Ludwig H.-G., Francois P., Cayrel R."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/A+A/541/A143;2018-04-05T10:00:00Z;J.A_A;ivo_managed;Spite M., Andrievsky S.M., Spite F., Caffau E., Korotin S.A., Bonifacio P., Ludwig H.-G., Francois P., Cayrel R.;NLTE Corrections of the Ca lines (Spite+, 2012);CDS;2017;Abundances;Spectroscopy;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/A+A/541/A143;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/541/A143;2012A&A...541A.143S;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "1d3ac650-a4ea-50e7-9f9c-378d0221defb",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/A+A/541/A143"
+    ],
+    "oai_set": [
+        "J.A_A",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Abundances"
+        },
+        {
+            "name": "Spectroscopy"
+        }
+    ],
+    "title": [
+        "NLTE Corrections of the Ca lines (Spite+, 2012)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/541/A143"
+}

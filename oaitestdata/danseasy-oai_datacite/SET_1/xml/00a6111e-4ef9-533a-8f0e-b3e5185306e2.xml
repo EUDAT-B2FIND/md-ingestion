@@ -1,0 +1,91 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:109612</identifier>
+    <datestamp>2018-09-18T17:52:16Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>easy-collection:4</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-z7b-3f6w</identifier>
+      <creators>
+        <creator>
+          <creatorName>Hebinck, K.A.</creatorName>
+          <affiliation>VUhbs archeologie</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Archeologisch bureau- en booronderzoek voor  twee weilanddepots te Schoonrewoerd en Hei- en Boeicop,  gemeente Leerdam en Zederik</title>
+        <title>Zuidnederlandse Archeologische Notities 601</title>
+        <title titleType="AlternativeTitle">Zuidnederlandse Archeologische Notities 601</title>
+      </titles>
+      <publisher>VUhbs archeologie</publisher>
+      <publicationYear>2018</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>VUhbs archeologie</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">2018-07-23</date>
+        <date dateType="Available">2018-07-23</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-rh-v73e</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:109612</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>application/pdf</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">VUhbs archeologie heeft een archeologisch bureauonderzoek en verkennend booronderzoek uitgevoerd voor twee weilanddepots te Schoonrewoerd, gemeente Leerdam en Hei- en Boeicop, gemeente Zederik. Het voornemen is om binnen beide deelgebieden een slibdepot aan de leggen. De werkzaamheden die met deze ontwikkeling gepaard gaan, kunnen de bodem en eventueel aanwezige archeologische resten verstoren. Daarom heeft de opdrachtgever VUhbs archeologie verzocht voor het plangebied een bureauonderzoek en inventariserend veldonderzoek door middel van verkennende boringen uit te voeren, zodat meer inzicht wordt verkregen in de archeologische verwachting van het plangebied en of er aanvullend onderzoek noodzakelijk zal zijn.
+Uit het bureauonderzoek en inventariserend veldonderzoek is gebleken dat de natuurlijke bodemopbouw, afgezien van de bouwvoor, nog geheel intact is. Doordat beide deelgebieden liggen op oever- en crevasseafzettingen van verschillende stroomgordels is er sprake van meerdere potenti&#235;le archeologische niveaus. Direct aan het maaiveld kunnen resten en/of sporen verwacht worden uit de periode vanaf de ontginning van het veengebied in de 11de eeuw. Doordat beide deelgebieden buiten het bebouwingslint liggen worden bewoningssporen op dit niveau niet verwacht en zullen enkel sporen van de ontginning en het latere agrarisch gebruik zoals (ontginnings)greppels e.d. aanwezig zijn. De kans hierop is echter klein. Hieronder zijn in beide deelgebieden, afgedekt door een dunne laag komafzettingen, afzettingen van de stroomgordel van Schoonrewoerd aanwezig. In deelgebied 1 gaat het om de uitloper van de oeverwal (top op 70 tot 150 cm -mv) waarop geen bewoningsresten worden verwacht. In deelgebied 2 betreft het een zandige crevasse (top op 50 tot 70 cm -mv) met nog een middelhoge archeologische verwachting. Echter, doordat deze afzettingen ook hier worden afgedekt door een laag komafzettingen, worden de mogelijk aanwezige resten niet bedreigd door de aanleg van het slibdepot. De grootste delen van beide deelgebieden waren echter gelegen in een laaggelegen komgebied met een lage archeologische verwachting. Op een lager niveau komen in beide deelgebieden binnen de komafzettingen nog twee uitlopers van een crevasse voor die mogelijk moet worden toegeschreven aan de stroomgordel van Middelkoop of een stroomgordel van vergelijkbare ouderdom. Beide uitlopers zullen echter niet aantrekkelijk geweest voor bewoning en hebben een lage archeologische verwachting. In deelgebied 1 bevindt zich hieronder nog een beddinggordel of goed ontwikkelde crevasse op het niveau van de stroomgordel van Kortenhoeven. In deelgebied 2 zijn in het uiterste noorden beddingafzettingen van deze stroomgordel aanwezig met ten zuiden daarvan de bijbehorende oeverafzettingen. In de top hiervan zijn geen archeologische indicatoren of duidelijke sporen van bodemvorming waargenomen. Hierdoor heeft dit niveau een lage tot middelhoge verwachting op resten uit het Meso- en Neolithicum. Doordat dit niveau niet bedreigd wordt door de voorgenomen werkzaamheden zal vervolgonderzoek niet noodzakelijk zijn. Geadviseerd wordt dan ook om beide deelgebieden vrij te geven voor het voorgenomen gebruik als weilanddepot.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Overheicop</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Huibertweg</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Schoonrewoerd</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Hei- en Boeicop</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Gemeente Leerdam</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Gemeente Zederik</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Zuid-Holland</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>51.92449688</pointLatitude>
+            <pointLongitude>5.08988389</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>51.92902893</pointLatitude>
+            <pointLongitude>5.07672515</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

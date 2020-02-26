@@ -1,0 +1,519 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://nasa.heasarc/orionffcxo</oai:identifier>
+    <oai:datestamp>2018-05-09T07:18:16Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" created="2018-05-08T00:00:00" status="active" updated="2018-05-08T00:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.0 http://www.ivoa.net/xml/VOResource/v1.0               http://www.ivoa.net/xml/VODataService/v1.1 http://www.ivoa.net/xml/VODataService/v1.1               http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <title>Orion Flanking Fields Chandra X-Ray Point Source Catalog</title>
+      <shortName>ORIONFFCXO</shortName>
+      <identifier>ivo://nasa.heasarc/orionffcxo</identifier>
+      <curation>
+        <publisher ivo-id="ivo://nasa.heasarc/ASD">NASA/GSFC HEASARC</publisher>
+        <creator>
+          <name>Ramirez et al.</name>
+        </creator>
+        <contributor/>
+        <date>2018-05-08</date>
+        <contact>
+          <name>Michael Preciado</name>
+          <email>Michael.E.Preciado@nasa.gov</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Survey Source</subject>
+        <description>
+              This table contains the results of Chandra observations of two flanking fields (FFs) in Orion outside the Orion Nebula Cluster (ONC), in the form of a catalog of 417 sources, which includes X-ray luminosity, optical and infrared photometry, and X-ray variability information. 91 variable sources were found, 33 of which have flarelike light curves, and 11 of which have a pattern of a steady increase or decrease over a 10 hour period. The optical and infrared photometry for the stars identified as X-ray sources are consistent with most of these objects being pre-main-sequence stars with ages younger than 10 Myr. The two flanking fields in Orion were observed with the Advanced CCD Imaging Spectrometer (ACIS) detector on board the Chandra X-Ray Observatory. The north Orion flanking field (NOFF) is centered at a J2000 RA and Declination of 05:35:19, -04:48:15, which is about 36' (~5 pc, at a distance of 470 pc) north of the Trapezium cluster and was observed on 2002 August 26 with a total exposure time of 48.8 ks. The south Orion flanking field (SOFF), centered at a J2000 RA and Declination of 05:35:06, -05:40:48, which is about 17' (~ 2.5pc, at a distance of 470 pc) south of the Trapezium cluster, was observed on 2002 September 6 with a total exposure time of 47.9 ks. The data analysis for these observations was performed in the same manner as described in Ramirez et al. (2004, AJ, 127, 2659) for a similar observation of a field in NGC 2264, which should be consulted for the full details. (See also the help file for the HEASARC version of the catalog from the latter reference available at /W3Browse/chandra/ngc2264cxo.html ).
+            </description>
+        <source format="">
+              2004AJ....128..787R
+            </source>
+        <referenceURL>https://heasarc.gsfc.nasa.gov/W3Browse/all/orionffcxo.html</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>
+                served-by
+              </relationshipType>
+          <relatedResource ivo-id="ivo://nasa.heasarc/services/xamin">
+                HEASARC TAP
+              </relatedResource>
+        </relationship>
+      </content>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">
+                https://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=orionffcxo&amp;
+              </accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>99999</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>83.75225</ra>
+          <dec>-5.81649778</dec>
+          <sr>0.0166666666666667</sr>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">
+                https://heasarc.gsfc.nasa.gov/xamin/vo/tap
+              </accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">
+                https://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/getvotable.pl?name=orionffcxo
+              </accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml</resultType>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">
+                https://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_orionffcxo&amp;Action=More+Options&amp;Action=Parameter+Search&amp;ConeAdd=1
+              </accessURL>
+        </interface>
+      </capability>
+      <coverage>
+        <stc:STCResourceProfile xmlns:stc="http://www.ivoa.net/xml/STC/stc-v1.30.xsd">
+          <stc:AstroCoordSystem id="_orionffcxo_UTC-ICRS-TOPO" xlink:href="ivo://STClib/CoordSys#UTC-ICRS-TOPO" xlink:type="simple"/>
+          <stc:AstroCoords coord_system_id="_orionffcxo_UTC-ICRS-TOPO">
+            <stc:Position1D>
+              <!-- Coverage.RegionOfRegard -->
+              <stc:Size pos_unit="deg">
+                    0.0166666666666667
+                  </stc:Size>
+            </stc:Position1D>
+          </stc:AstroCoords>
+          <stc:AstroCoordArea coord_system_id="_orionffcxo_UTC-ICRS-TOPO">
+            <stc:AllSky/>
+          </stc:AstroCoordArea>
+        </stc:STCResourceProfile>
+        <waveband>Infrared</waveband>
+        <waveband>Optical</waveband>
+        <waveband>X-ray</waveband>
+      </coverage>
+      <tableset xmlns:vs1="http://www.ivoa.net/xml/VODataService/v1.1" xsi:schemaLocation="http://www.ivoa.net/xml/VODataService/v1.1 http://vo.ari.uni-heidelberg.de/docs/schemata/VODataService-v1.1.xsd" xsi:type="vs1:TableSet">
+        <schema>
+          <name>public</name>
+          <table>
+            <name>orionffcxo</name>
+            <description>
+                  Orion Flanking Fields Chandra X-Ray Point Source Catalog
+                </description>
+            <column>
+              <name>exposure</name>
+              <description>
+                    Effective Exposure Time (s)
+                  </description>
+              <unit>s</unit>
+              <ucd>
+                    time.duration;obs.exposure
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>alt_name_2</name>
+              <description>
+                    Rebull Catalog Designation
+                  </description>
+              <ucd>
+                    meta.id
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>flux</name>
+              <description>
+                    X-Ray Flux (erg/s/cm^2)
+                  </description>
+              <unit>erg/s/cm^2</unit>
+              <ucd>
+                    phot.flux;em.X-ray
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>bii</name>
+              <description>
+                    Galactic Latitude
+                  </description>
+              <unit>degree</unit>
+              <ucd>
+                    pos.galactic.lat
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>ra_ctrpart</name>
+              <description>
+                    Right Ascension of Counterpart (J2000)
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>alt_name_1</name>
+              <description>
+                    Parenago Catalog Designation
+                  </description>
+              <ucd>
+                    meta.id
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>name</name>
+              <description>
+                    Chandra Object Designation
+                  </description>
+              <ucd>
+                    meta.id;meta.main
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>__x_ra_dec</name>
+              <description>
+                    System unit vector column
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>__row</name>
+              <description>
+                    System index column
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">int</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>jmag</name>
+              <description>
+                    J-Band Magnitude
+                  </description>
+              <unit>mag</unit>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>comment_flags</name>
+              <description>
+                    Flags Indicate Additional Comments
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>ra</name>
+              <description>
+                    Right Ascension
+                  </description>
+              <unit>degree</unit>
+              <ucd>
+                    pos.eq.ra;meta.main
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>log_lx</name>
+              <description>
+                    Logarithm of the X-Ray Luminosity (in erg/s)
+                  </description>
+              <unit>log</unit>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>field_name</name>
+              <description>
+                    Orion Flanking Field
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>off_axis</name>
+              <description>
+                    Off-Axis Angle (arcmin)
+                  </description>
+              <unit>arcmin</unit>
+              <ucd>
+                    instr.offset
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>extraction_radius</name>
+              <description>
+                    Count Extraction Radius (arcsec)
+                  </description>
+              <unit>arcsec</unit>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>__z_ra_dec</name>
+              <description>
+                    System unit vector column
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>dec_ctrpart</name>
+              <description>
+                    Declination of Counterpart (J2000)
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>vmag</name>
+              <description>
+                    V-Band Magnitude
+                  </description>
+              <unit>mag</unit>
+              <ucd>
+                    phot.mag;em.opt.V
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>alt_name</name>
+              <description>
+                    Alternate Object Designation
+                  </description>
+              <ucd>
+                    meta.id
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>lii</name>
+              <description>
+                    Galactic Longitude
+                  </description>
+              <unit>degree</unit>
+              <ucd>
+                    pos.galactic.lon
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>ctrpart_name</name>
+              <description>
+                    Object Counterpart Designation
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>dec</name>
+              <description>
+                    Declination
+                  </description>
+              <unit>degree</unit>
+              <ucd>
+                    pos.eq.dec;meta.main
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>count_rate</name>
+              <description>
+                    Count Rate (ct/s)
+                  </description>
+              <unit>ct/s</unit>
+              <ucd>
+                    phot.count;em.X-ray
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>source_number</name>
+              <description>
+                    X-Ray Source Identification Number
+                  </description>
+              <ucd>
+                    meta.id
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>psf_fraction</name>
+              <description>
+                    Fraction of the Point-Spread Function
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>alt_name_3</name>
+              <description>
+                    Carpenter Catalog Designation
+                  </description>
+              <ucd>
+                    meta.id
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>ic_mag</name>
+              <description>
+                    Ic-Band Magnitude
+                  </description>
+              <unit>mag</unit>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>hmag</name>
+              <description>
+                    H-Band Magnitude
+                  </description>
+              <unit>mag</unit>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>prob_constant</name>
+              <description>
+                    Probability of the Light Curve Being Constant
+                  </description>
+              <unit>percent</unit>
+              <dataType xsi:type="vs1:VOTableType">int</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>alt_name_4</name>
+              <description>
+                    2MASS Name (JHHMMSSss+DDMMSSs)
+                  </description>
+              <ucd>
+                    meta.id
+                  </ucd>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>kmag</name>
+              <description>
+                    K-Band Magnitude
+                  </description>
+              <unit>mag</unit>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>other_names</name>
+              <description>
+                    Other Designations
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">char</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+            <column>
+              <name>__y_ra_dec</name>
+              <description>
+                    System unit vector column
+                  </description>
+              <dataType xsi:type="vs1:VOTableType">double</dataType>
+              <flag>
+                    nullable
+                  </flag>
+            </column>
+          </table>
+        </schema>
+      </tableset>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

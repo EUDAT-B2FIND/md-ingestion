@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Peter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/4cfd3cbeb231469ba592ba09f894c423",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/4cfd3cbeb231469ba592ba09f894c423"
+    ],
+    "PID": "http://hdl.handle.net/11304/2bf018ae-b988-11e3-8cd7-14feb57d12b9",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Peter"
+    ],
+    "ResourceType": [
+        "Audiovisual"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Asli Ozyurek"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/4cfd3cbeb231469ba592ba09f894c423;2018-01-11T13:47:50Z;0afede87-2bf2-4d89-867e-d2ee57251c62;Asli Ozyurek;2016-12-22T09:51:08.182722+00:00;This is a sign language interaction recording made for scientific purposes.;http://hdl.handle.net/11304/2bf018ae-b988-11e3-8cd7-14feb57d12b9;https://b2share.eudat.eu/api/records/4cfd3cbeb231469ba592ba09f894c423;oai:b2share.eudat.eu:b2rec/4cfd3cbeb231469ba592ba09f894c423;en;Peter;info:eu-repo/semantics/openAccess;Sign Language;Science;Sign Language Interaction;Audiovisual",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b1c069e3-bb0e-5bd9-b85c-b7125c128680",
+    "notes": [
+        "This is a sign language interaction recording made for scientific purposes."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/4cfd3cbeb231469ba592ba09f894c423"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Sign Language"
+        },
+        {
+            "name": "Science"
+        }
+    ],
+    "title": [
+        "Sign Language Interaction"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/4cfd3cbeb231469ba592ba09f894c423"
+}

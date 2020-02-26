@@ -1,0 +1,101 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:37220</identifier>
+    <datestamp>2018-09-18T16:54:08Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-2ay-5u3x</identifier>
+      <creators>
+        <creator>
+          <creatorName>RAAP Archeologisch Adviesbureau</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Scholte Lubberink, H.B.G.</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Plangebied De Veldkamp</title>
+        <title titleType="AlternativeTitle">RAAP-rapport 1700</title>
+      </titles>
+      <publisher>RAAP Archeologisch Adviesbureau B.V.</publisher>
+      <publicationYear>2011</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+        <subject>Archeologisch: booronderzoek</subject>
+        <subject>boerderij</subject>
+        <subject subjectScheme="ABR-complex" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Begraving - Urnenveld (GVCU)</subject>
+        <subject subjectScheme="ABR-complex" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Versterking - Landweer (VLW)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Mesolithicum: 8800 - 4900 vC (MESO)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Neolithicum laat: 2850 - 2000 vC (NEOL)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Bronstijd laat: 1100 - 800 vC (BRONSL)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">IJzertijd vroeg: 800 - 500 vC (IJZV)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Middeleeuwen laat: 1050 - 1500 nC (LME)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>RAAP Archeologisch Adviesbureau B.V.</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2011-04-08</date>
+        <date dateType="Created">2008-10-10</date>
+        <date dateType="Available">2011-04-08</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-j4x-l1i</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:37220</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl-1901288763170205901-1302253556110</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>mapinfo / tab</format>
+        <format>access / mdb</format>
+        <format>application/rtf</format>
+        <format>application/pdf</format>
+        <format>application/msword</format>
+        <format>image/jpeg</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">In opdracht van de gemeente Borne heeft RAAP Archeologisch Adviesbureau in januari en februari 2008 een archeologisch onderzoek uitgevoerd in verband met de ontwikkeling van plangebied De Veldkamp in de gemeenten Borne en Hengelo. Het onderzoek bestond uit een inventariserend veldonderzoek (karterend booronderzoek en het graven van proefsleuven) op 3 vindplaatsen en uit een archeologische begeleiding van de aanleg van een DPO-leiding.
+
+Het inventariserend veldonderzoek in de vorm van een karterend booronderzoek op vindplaats 3 De Lemerij heeft geen archeologische resten opgeleverd.
+
+Tijdens het inventariserend onderzoek in de vorm van een proefsleuvenonderzoek op vindplaats 4 Schild Es is op het noordelijke deel van de Schild Es een urnenveld uit de Late Bronstijd/Vroege IJzertijd aangetroffen. Binnen dit urnenveld zijn tevens artefacten uit het Mesolithicum en Laat Neolithicum gevonden. Op basis van zijn hoge fysieke en inhoudelijke kwaliteit is het gebied van het urnenveld als behoudenswaardig aangemerkt.
+
+Tijdens het proefsleuvenonderzoek op vindplaats 5 is een beperkt aantal sporen gevonden die in verband gebracht kan worden met de (bewoning op de) van oorsprong laat-middeleeuwse boerderij 't Schilt of Schildman.
+
+Tijdens de archeologische begeleiding van het trac&#233; van de DPO-leiding zijn con form de verwachting de vermoedelijke restanten van een landweer aangetroffen.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>28G</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>De Veldkamp</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Borne</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Borne</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Overijssel</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>52.28658496</pointLatitude>
+            <pointLongitude>6.75059999</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

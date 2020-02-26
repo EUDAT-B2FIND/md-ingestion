@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/ApJ/708/1366",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/ApJ/708/1366"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2010ApJ...708.1366V"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Vogt S.S., Wittenmyer R.A., Butler R.P., O'Toole S., Henry G.W., Rivera E.J., Meschiari S., Laughlin G., Tinney C.G., Jones H.R.A., Bailey J., Carter B.D., Batygin K."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/ApJ/708/1366;2018-04-05T10:00:00Z;J.ApJ;ivo_managed;Vogt S.S., Wittenmyer R.A., Butler R.P., O'Toole S., Henry G.W., Rivera E.J., Meschiari S., Laughlin G., Tinney C.G., Jones H.R.A., Bailey J., Carter B.D., Batygin K.;Radial velocities for 61 Vir (Vogt+, 2010);CDS;2017;Multiple_Stars;Planets+Asteroids;Stars;Velocities;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/ApJ/708/1366;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/708/1366;2010ApJ...708.1366V;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "479419f2-5642-56d2-8a94-506efee3a698",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/ApJ/708/1366"
+    ],
+    "oai_set": [
+        "J.ApJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Multiple_Stars"
+        },
+        {
+            "name": "Planets"
+        },
+        {
+            "name": "Asteroids"
+        },
+        {
+            "name": "Stars"
+        },
+        {
+            "name": "Velocities"
+        }
+    ],
+    "title": [
+        "Radial velocities for 61 Vir (Vogt+, 2010)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/708/1366"
+}
