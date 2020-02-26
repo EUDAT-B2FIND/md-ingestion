@@ -1,0 +1,110 @@
+
+ Statistics of
+	community	danseasy
+	subset		D10000_1
+	# of records	1
+  see as well oaitestdata//danseasy-oai_datacite/D10000_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //datacite:titles/datacite:title
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Zeeland 1786                        |
+
+ |-> Description      <--       //datacite:descriptions/datacite:description/text()
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Hoofddoel van het CLIWOC-project was het benutten van klimaatgegevens uit scheep [...(585 chars follow)...] |
+
+ |-> Tags             <--       //datacite:subjects/datacite:subject/text()
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Modern contemporary                 |
+
+ |-> DOI              <--                     
+  |--     1 |  100 |     1 |  100
+      |- 1     : http://dx.doi.org/doi:10.17026/dans-z8k-d35z      |
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //datacite:resource/datacite:identifier,//datacite:alternateIdentifiers/datacite:alternateIdentifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> RelatedIdentifier <--       //datacite:resource/datacite:identifier,//datacite:alternateIdentifiers/datacite:alternateIdentifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> MetaDataAccess   <--                     
+  |--     1 |  100 |     1 |  100
+      |- 1     : https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identif [...(45 chars follow)...] |
+
+ |-> Creator          <--       //datacite:creators/datacite:creator/datacite:creatorName
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Koek, F.B.                          |
+
+ |-> Publisher        <--       //datacite:publisher
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Data Archiving and Networked Services (DANS)      |
+
+ |-> Contributor      <--       //datacite:contributors/datacite:contributor/datacite:contributorName
+
+  |--     1 |  100 |     1 |  100
+
+ |-> PublicationYear  <--       //datacite:publicationYear
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : 2018                                |
+
+ |-> Rights           <--       //datacite:rightsList//datacite:rights
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : info:eu-repo/semantics/openAccess      |
+
+ |-> OpenAccess       <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //datacite:contributors/datacite:contributor/datacite:contributorName,//datacite:contributors/datacite:contributor/datacite:affiliation
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : KNMI                                |
+
+ |-> Language         <--       //datacite:language
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Dutch                               |
+
+ |-> ResourceType     <--       //datacite:resourceType
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Dataset                             |
+
+ |-> Format           <--       //datacite:formats/datacite:format
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : text/csv                            |
+
+ |-> Discipline       <--       //datacite:subjects/datacite:subject/text()
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : History                             |
+
+ |-> SpatialCoverage  <--       //datacite:geoLocations/datacite:geoLocation/datacite:geoLocationPoint,//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationBox
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //datacite:dates/datacite:date
+
+  |--     1 |  100 |     1 |  100
+      |- 1     :  period : ( 2003-01-01T11:59:59Z - 2018-05-30T11:59:59Z )       |
+

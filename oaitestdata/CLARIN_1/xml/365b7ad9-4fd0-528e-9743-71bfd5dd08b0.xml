@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/a0f14fa1e0d54a1fb843a69f861f3fa0</identifier>
+    <datestamp>2018-01-11T13:47:52Z</datestamp>
+    <setSpec>0afede87-2bf2-4d89-867e-d2ee57251c62</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:contributor>Kita Sotaro</dc:contributor>
+      <dc:creator>Peter Wittenburg</dc:creator>
+      <dc:date>2016-12-22T09:59:52.750275+00:00</dc:date>
+      <dc:description>This file set existing of a video stream, an audio stream and a multimodal annotation file is a frequently used as show case of how to do complex multimodal annotations with the well-known ELAN tool (http://tla.mpi.nl/tools/tla-tools/elan/download/).</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/320c00fe-b988-11e3-8cd7-14feb57d12b9</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/a0f14fa1e0d54a1fb843a69f861f3fa0</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/a0f14fa1e0d54a1fb843a69f861f3fa0</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:publisher>Peter Wittenburg</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:rights>free to use</dc:rights>
+      <dc:subject>video</dc:subject>
+      <dc:subject>audio</dc:subject>
+      <dc:subject>annotation</dc:subject>
+      <dc:subject>multimodality</dc:subject>
+      <dc:title>Annotated Route Description</dc:title>
+      <dc:type>Audiovisual</dc:type>
+      <dc:type>Other</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

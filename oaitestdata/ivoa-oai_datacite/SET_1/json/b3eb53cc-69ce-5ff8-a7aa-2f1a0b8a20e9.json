@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/ApJ/700/209",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/ApJ/700/209"
+    ],
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2009ApJ...700..209M"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Miroshnichenko A.S., Chentsov E.L., Klochkova V.G., et al."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/ApJ/700/209;2018-04-05T10:00:00Z;J.ApJ;ivo_managed;Miroshnichenko A.S., Chentsov E.L., Klochkova V.G., et al.;Spectroscopy of the B[e] star VES 695 (Miroshnichenko+, 2009);CDS;2011;Spectroscopy;Velocities;Stars:early-type;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/ApJ/700/209;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/700/209;2009ApJ...700..209M;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "b3eb53cc-69ce-5ff8-a7aa-2f1a0b8a20e9",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/ApJ/700/209"
+    ],
+    "oai_set": [
+        "J.ApJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Spectroscopy"
+        },
+        {
+            "name": "Velocities"
+        },
+        {
+            "name": "Stars early-type"
+        }
+    ],
+    "title": [
+        "Spectroscopy of the B[e] star VES 695 (Miroshnichenko+, 2009)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/700/209"
+}

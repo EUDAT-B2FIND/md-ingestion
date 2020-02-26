@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Charles University in Prague"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/3d474efea9ca48238bb0bd30615f7aa2",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/3d474efea9ca48238bb0bd30615f7aa2"
+    ],
+    "PID": "http://hdl.handle.net/11304/2b5a9414-b988-11e3-8cd7-14feb57d12b9",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University in Prague"
+    ],
+    "ResourceType": [
+        "Other"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "CC-BY 4.0"
+    ],
+    "author": [
+        "Haji\u010d, Jan"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/3d474efea9ca48238bb0bd30615f7aa2;2018-01-11T13:47:49Z;0afede87-2bf2-4d89-867e-d2ee57251c62;Haji\u010d, Jan;2016-12-22T09:51:05.494136+00:00;This is a small sample dataset from PDT 2.0. As such it can be released under a very permissive CC-BY license.;http://hdl.handle.net/11304/2b5a9414-b988-11e3-8cd7-14feb57d12b9;https://b2share.eudat.eu/api/records/3d474efea9ca48238bb0bd30615f7aa2;oai:b2share.eudat.eu:b2rec/3d474efea9ca48238bb0bd30615f7aa2;en;Charles University in Prague;info:eu-repo/semantics/openAccess;CC-BY 4.0;treebank;sample;Prague Dependency Treebank 2.0 Sample Data;Other",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "121e0268-db5a-569a-8494-4e940de9146d",
+    "notes": [
+        "This is a small sample dataset from PDT 2.0. As such it can be released under a very permissive CC-BY license."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/3d474efea9ca48238bb0bd30615f7aa2"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "treebank"
+        },
+        {
+            "name": "sample"
+        }
+    ],
+    "title": [
+        "Prague Dependency Treebank 2.0 Sample Data"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/3d474efea9ca48238bb0bd30615f7aa2"
+}

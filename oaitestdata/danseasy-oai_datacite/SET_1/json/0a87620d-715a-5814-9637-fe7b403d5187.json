@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Fabio Minghini"
+    ],
+    "Contributor": [
+        "Fabio Minghini"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17632/rrvpjsrb5w.1",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:109836",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:109836"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess",
+        "License: http://creativecommons.org/licenses/by/4.0"
+    ],
+    "TempCoverageBegin": 63668199599,
+    "TempCoverageEnd": 63668199599,
+    "TemporalCoverage": " period : ( 2018-07-26T11:59:59Z - 2018-07-26T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2018-07-26T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-07-26T11:59:59Z",
+    "author": [
+        "Minghini, F"
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:109836;2018-09-18T17:52:08Z;E10000;Minghini, F;via Mendeley Data;Dataset for built-up pultruded FRP columns;Data Archiving and Networked Services (DANS);2018;Interdisciplinary sciences;Fabio Minghini;2018-07-26T18:21:20.735+02:00;2018-07-26T18:21:20.735+02:00;Dataset;10.17632/rrvpjsrb5w.1;urn:nbn:nl:ui:13-qt-e7h4;easy-dataset:109836;info:eu-repo/semantics/closedAccess;License: http://creativecommons.org/licenses/by/4.0;Reported in the .xls files are the P-delta data points obtained from geometricaly nonlinear analyses and the values of Ploc obtained from eigenvalue analyses. All these data are necessary to reproduce the plots reported in the manuscript.",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a87620d-715a-5814-9637-fe7b403d5187",
+    "notes": [
+        "Reported in the .xls files are the P-delta data points obtained from geometricaly nonlinear analyses and the values of Ploc obtained from eigenvalue analyses. All these data are necessary to reproduce the plots reported in the manuscript."
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:109836"
+    ],
+    "oai_set": [
+        "E10000"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Interdisciplinary sciences"
+        }
+    ],
+    "title": [
+        "Dataset for built-up pultruded FRP columns"
+    ],
+    "url": ""
+}

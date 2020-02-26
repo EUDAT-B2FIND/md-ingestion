@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:88263</identifier>
+    <datestamp>2018-09-18T17:31:18Z</datestamp>
+    <setSpec>D20000</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <creators>
+        <creator>
+          <creatorName>Kawahara, Akito Y.</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Barber, Jesse R.</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Data from: Tempo and mode of antibat ultrasound production and sonar jamming in the diverse hawkmoth radiation</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2015</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D20000" xml:lang="en">Life sciences, medicine and health care </subject>
+      </subjects>
+      <contributors/>
+      <dates>
+        <date dateType="Created">2015-05-08T17:03:26.000+02:00</date>
+        <date dateType="Available">2015-05-08T17:03:26.000+02:00</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="DOI">10.5061/dryad.3450r</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-lt-or97</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:88263</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <rightsList>
+        <rights>info:eu-repo/semantics/closedAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">The bat&#8211;moth arms race has existed for over 60 million y, with moths evolving ultrasonically sensitive ears and ultrasound-producing organs to combat bat predation. The evolution of these defenses has never been thoroughly examined because of limitations in simultaneously conducting behavioral and phylogenetic analyses across an entire group. Hawkmoths include &gt;1,500 species worldwide, some of which produce ultrasound using genital stridulatory structures. However, the function and evolution of this behavior remain largely unknown. We built a comprehensive behavioral dataset of hawkmoth hearing and ultrasonic reply to sonar attack using high-throughput field assays. Nearly half of the species tested (57 of 124 species) produced ultrasound to tactile stimulation or playback of bat echolocation attack. To test the function of ultrasound, we pitted big brown bats (Eptesicus fuscus) against hawkmoths over multiple nights and show that hawkmoths jam bat sonar. Ultrasound production was immediately and consistently effective at thwarting attack and bats regularly performed catching behavior without capturing moths. We also constructed a fossil-calibrated, multigene phylogeny to study the evolutionary history and divergence times of these antibat strategies across the entire family. We show that ultrasound production arose in multiple groups, starting in the late Oligocene (&#8764;26 Ma) after the emergence of insectivorous bats. Sonar jamming and bat-detecting ears arose twice, independently, in the Miocene (18&#8211;14 Ma) either from earless hawkmoths that produced ultrasound in response to physical contact only, or from species that did not respond to touch or bat echolocation attack.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Michael Preciado <Michael.E.Preciado@nasa.gov>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://nasa.heasarc/sax2to10",
+    "MetadataAccess": [
+        "ivo://nasa.heasarc/sax2to10"
+    ],
+    "PublicationTimestamp": "2019-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "NASA/GSFC HEASARC"
+    ],
+    "ResourceType": [
+        "AstroObjects"
+    ],
+    "author": [
+        "Giommi, Perri, Fiore"
+    ],
+    "fulltext": "ivo://nasa.heasarc/sax2to10;2019-06-17T07:08:09Z;Giommi, Perri, Fiore;BeppoSAX 2-10 keV Survey;NASA/GSFC HEASARC;2019;Survey Source;Michael Preciado <Michael.E.Preciado@nasa.gov>;AstroObjects;ivo://nasa.heasarc/sax2to10;https://heasarc.gsfc.nasa.gov/W3Browse/all/sax2to10.html;\n        https://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_sax2to10&Action=More+Options&Action=Parameter+Search&ConeAdd=1\n      ;text/xml;text/xml;\n      This catalog presents the results of a 2 - 10 keV BeppoSAX survey based on 140 high galactic latitude Medium Energy Concentrator Spectrometers (MECS) fields, 12 of which are deep exposures of ``blank'' parts of the sky. The limiting sensitivity is 5 x 10^-14 erg/cm^2/s (or mW/m^2) where about 25% of the Cosmic X-ray Background (CXB) is resolved into discrete sources. The log N - log S function, built with a statistically complete sample of 177 sources, is steep and in good agreement with the counts derived from ASCA surveys.\n    ",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "3cbf2767-3dce-532f-bf7e-e31f25686cb2",
+    "notes": [
+        "\n      This catalog presents the results of a 2 - 10 keV BeppoSAX survey based on 140 high galactic latitude Medium Energy Concentrator Spectrometers (MECS) fields, 12 of which are deep exposures of ``blank'' parts of the sky. The limiting sensitivity is 5 x 10^-14 erg/cm^2/s (or mW/m^2) where about 25% of the Cosmic X-ray Background (CXB) is resolved into discrete sources. The log N - log S function, built with a statistically complete sample of 177 sources, is steep and in good agreement with the counts derived from ASCA surveys.\n    "
+    ],
+    "oai_identifier": [
+        "ivo://nasa.heasarc/sax2to10"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Survey Source"
+        }
+    ],
+    "title": [
+        "BeppoSAX 2-10 keV Survey"
+    ],
+    "url": "https://heasarc.gsfc.nasa.gov/W3Browse/all/sax2to10.html"
+}

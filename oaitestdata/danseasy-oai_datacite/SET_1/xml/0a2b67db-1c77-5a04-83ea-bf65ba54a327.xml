@@ -1,0 +1,55 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:81596</identifier>
+    <datestamp>2018-09-18T17:25:03Z</datestamp>
+    <setSpec>D20000</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <creators>
+        <creator>
+          <creatorName>Skrbin&#353;ek, Toma&#382;</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Jelen&#269;i&#269;, Maja</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Waits, Lisette P.</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Poto&#269;nik, Hubert</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Trontelj, Peter</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Data from: Using a reference population yardstick to calibrate and compare genetic diversity reported in different studies: an example from the brown bear.</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2012</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D20000" xml:lang="en">Life sciences, medicine and health care </subject>
+      </subjects>
+      <contributors/>
+      <dates>
+        <date dateType="Created">2012-07-07T00:16:49.000+02:00</date>
+        <date dateType="Available">2012-07-07T00:16:49.000+02:00</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="DOI">10.5061/dryad.qt3j5</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-02-js0l</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:81596</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <rightsList>
+        <rights>info:eu-repo/semantics/closedAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">In species with large geographic ranges, genetic diversity of different populations may be well studied, but differences in loci and sample sizes can make the results of different studies difficult to compare. Yet, such comparisons are important for assessing the status of populations of conservation concern. We propose a simple approach of using a single well-studied reference population as a "yardstick" to calibrate results of different studies to the same scale, enabling comparisons. We use a well-studied large carnivore, the brown bear (Ursus arctos), as a case study to demonstrate the approach. As a reference population, we genotyped 513 brown bears from Slovenia using 20 polymorphic microsatellite loci. We used this dataset to calibrate and compare heterozygosity and allelic richness for 30 brown bear populations from 10 different studies across the global distribution of the species. The simplicity of the reference population approach makes it useful for other species, enabling comparisons of genetic diversity estimates between previously incompatible studies and improving our understanding of how genetic diversity is distributed along a species range.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

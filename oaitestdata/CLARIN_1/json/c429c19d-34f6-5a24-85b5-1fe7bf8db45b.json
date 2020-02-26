@@ -1,0 +1,51 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/3424ea9f59924f4d95c385be56582cf1",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/3424ea9f59924f4d95c385be56582cf1"
+    ],
+    "PID": "http://hdl.handle.net/11304/2e579798-b988-11e3-8cd7-14feb57d12b9",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Daniel Zeman"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/3424ea9f59924f4d95c385be56582cf1;2018-01-11T13:47:50Z;0afede87-2bf2-4d89-867e-d2ee57251c62;Daniel Zeman;2016-12-22T09:53:56.359992+00:00;Description of verbal paradigms in Bengali. The description is written in Czech.;http://hdl.handle.net/11304/2e579798-b988-11e3-8cd7-14feb57d12b9;https://b2share.eudat.eu/api/records/3424ea9f59924f4d95c385be56582cf1;oai:b2share.eudat.eu:b2rec/3424ea9f59924f4d95c385be56582cf1;en;info:eu-repo/semantics/openAccess;\u010casov\u00e1n\u00ed sloves v beng\u00e1l\u0161tin\u011b;Text",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c429c19d-34f6-5a24-85b5-1fe7bf8db45b",
+    "notes": [
+        "Description of verbal paradigms in Bengali. The description is written in Czech."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/3424ea9f59924f4d95c385be56582cf1"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "title": [
+        "\u010casov\u00e1n\u00ed sloves v beng\u00e1l\u0161tin\u011b"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/3424ea9f59924f4d95c385be56582cf1"
+}

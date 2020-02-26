@@ -1,0 +1,66 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.23728/b2share.b1092be3cd4844e0bffd7b669521ba3c",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/b1092be3cd4844e0bffd7b669521ba3c",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/b1092be3cd4844e0bffd7b669521ba3c"
+    ],
+    "PID": "http://hdl.handle.net/11304/3720bb44-831c-48f3-9847-6988a41236e1",
+    "PublicationTimestamp": "2017-01-13T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Dieter Van Uytvanck"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/b1092be3cd4844e0bffd7b669521ba3c;2018-01-11T13:49:55Z;0afede87-2bf2-4d89-867e-d2ee57251c62;Dieter Van Uytvanck;2017-01-13T08:34:07.879994+00:00;In this study we build models for the localisation and dating of Middle Dutch charters. First, we extract character trigrams and use these to train a machine learner (K Nearest Neighbours) and an author verification algorithm (Linguistic Profiling). Both approaches work quite well, especially for the localisation task. Afterwards, an attempt is made to derive features that capture the orthographic variation between the charters more precisely. These are then used as input for the earlier tested classification algorithms. Again good results (at least as good as using the trigrams) are attained, even though proper nouns were ignored during the feature extraction. We can conclude that the localisation, and to a lesser extent the dating, is feasible. Moreover, the orthographic features we derive from the charters are an efficient basis for such a classification task.\n\nOne file (PDF) contains the text of the master thesis, the other file (.tar.gz) contains all the used data sets and analysis scripts.;http://hdl.handle.net/11304/3720bb44-831c-48f3-9847-6988a41236e1;10.23728/b2share.b1092be3cd4844e0bffd7b669521ba3c;https://b2share.eudat.eu/api/records/b1092be3cd4844e0bffd7b669521ba3c;oai:b2share.eudat.eu:b2rec/b1092be3cd4844e0bffd7b669521ba3c;en;info:eu-repo/semantics/openAccess;machine learning;text mining;orthography;Middle Dutch;Orthography-based dating and localisation of Middle Dutch charters;Text",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d83aff06-9388-5d45-8342-dcc74ae55b79",
+    "notes": [
+        "In this study we build models for the localisation and dating of Middle Dutch charters. First, we extract character trigrams and use these to train a machine learner (K Nearest Neighbours) and an author verification algorithm (Linguistic Profiling). Both approaches work quite well, especially for the localisation task. Afterwards, an attempt is made to derive features that capture the orthographic variation between the charters more precisely. These are then used as input for the earlier tested classification algorithms. Again good results (at least as good as using the trigrams) are attained, even though proper nouns were ignored during the feature extraction. We can conclude that the localisation, and to a lesser extent the dating, is feasible. Moreover, the orthographic features we derive from the charters are an efficient basis for such a classification task.\n\nOne file (PDF) contains the text of the master thesis, the other file (.tar.gz) contains all the used data sets and analysis scripts."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/b1092be3cd4844e0bffd7b669521ba3c"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine learning"
+        },
+        {
+            "name": "text mining"
+        },
+        {
+            "name": "orthography"
+        },
+        {
+            "name": "Middle Dutch"
+        }
+    ],
+    "title": [
+        "Orthography-based dating and localisation of Middle Dutch charters"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/b1092be3cd4844e0bffd7b669521ba3c"
+}

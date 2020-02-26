@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "post@slks.dk"
+    ],
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&identifier=2d631790-3cbb-5a0d-9545-002da28d06bc",
+    "PublicationTimestamp": "2020-01-17T11:59:59Z",
+    "PublicationYear": [
+        "2020"
+    ],
+    "Publisher": [
+        "Slots- og Kulturstyrelsen"
+    ],
+    "Rights": [
+        "For scientific use"
+    ],
+    "notes": [
+        "This record describes ancient sites and monuments as well as archaeological excavations undertaken by Danish museums."
+    ],
+    "SpatialCoverage": [
+        "538911;6144507"
+    ],
+    "TempCoverageBegin": 40377095999,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " period : ( 1280-07-01T11:59:59Z - 1701-07-01T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1280-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Museum S\u00f8nderjylland"
+    ],
+    "fulltext": "urn:repox.www.kulturarv.dkSites:http://www.kulturarv.dk/fundogfortidsminder/site/171708;2020-01-18;Sites;http://www.kulturarv.dk/fundogfortidsminder/site/171708;2020-01-17T17:00:01.923696+01:00;157;http://www.kulturarv.dk/fundogfortidsminder/skos/parish#170704;S\u00f8nder Stenderup;http://www.kulturarv.dk/fundogfortidsminder/skos/plot#49;Afsat af museumsmedarbejder;Agstrup;2005;http://www.kulturarv.dk/fundogfortidsminder/skos/placename#5;Bebyggelse, havne og industrianl\u00e6g;http://www.kulturarv.dk/fundogfortidsminder/skos/municipality#621;Kolding;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#)MKH;Museet p\u00e5 Koldinghus;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#MSJ;Museum S\u00f8nderjylland;538911;6144507;http://www.kulturarv.dk/fundogfortidsminder/object/232162;-12800;-1701;AXXX;http://www.kulturarv.dk/fundogfortidsminder/skos/object#03046;Enkeltfund;Bos\u00e6ttelse;alle former for bos\u00e6ttelse;http://www.kulturarv.dk/fundogfortidsminder/object/287277;-3950;-1701;AXXX;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:period#AYXX;Neolitikum;Bondestenalder;http://www.kulturarv.dk/fundogfortidsminder/skos/object#03046;Enkeltfund;Bos\u00e6ttelse;alle former for bos\u00e6ttelse;2008-05-15;2008-05-15;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:ff:event#IRA;Institutionssag uden journaldata;Sagsbehandling og planl\u00e6gning;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#N01;Nationalmuseet, Danske Afd., Danmarks Oldtid;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;2005-09;2005-09;4557;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:ff:event#GGM;Genstand givet til museum;Genstand;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#HAM;Haderslev Museum;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;Genstandene er en del af N. Boysens oldsagssamling, der er overdraget til HAM.;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#BLA;Blandet tekst;2005-09;2005-09;4557;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:ff:event#POS;Privat opsamling;Privat;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:institution#HAM;Haderslev Museum;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:archive#XXX;Uspecificeret arkiv;Opsamling af flintredskaber p\u00e5 et lille n\u00e6s, der skyder sig ud i engomr\u00e5det. Ingen kronologiske ledetyper, men skraberne har et neolitisk pr\u00e6g.;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:text#BLA;Blandet tekst;http://www.kulturarv.dk/fundogfortidsminder/skos/person#121231;N. Boysen;http://www.kulturarv.dk/fundogfortidsminder/skos/title#1358;K\u00f8bmand;http://www.kulturarv.dk/fundogfortidsminder/skos/ff:role#216;Finder;http://www.kulturarv.dk/fundogfortidsminder/resource/map/171708;Agstrup;2020-01-17;Kort og Matrikelstyrelsen;M\u00e5 kun kopieres til personlig brug.;Kortet viser lokalitetens placering i Danmark.;http://www.kulturarv.dk/fundogfortidsminder/resource/map/171708;http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#USP;Uspecificeret",
+    "group": "slks",
+    "groups": [
+        {
+            "name": "slks"
+        }
+    ],
+    "name": "2d631790-3cbb-5a0d-9545-002da28d06bc",
+    
+    "oai_identifier": [
+        "2d631790-3cbb-5a0d-9545-002da28d06bc"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Bebyggelse"
+        },
+        {
+            "name": "havne og industrianl\u00e6g"
+        }
+    ],
+    "title": [
+        "Agstrup"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/site/171708"
+}

@@ -1,0 +1,236 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/MNRAS/418/2202</oai:identifier>
+    <oai:datestamp>2018-12-27T12:46:38Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2018-01-12T12:17:20" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>Analysis of {gamma}-ray bursts (Dainotti+, 2011)</title>
+      <shortName>J/MNRAS/418/2202</shortName>
+      <identifier>ivo://CDS.VizieR/J/MNRAS/418/2202</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Dainotti M.G., Ostrowski M., Willingale R.</name>
+        </creator>
+        <contributor>Patricia Vannier [CDS]</contributor>
+        <date role="creation">2018-01-12T12:17:20</date>
+        <version>31-Jul-2012</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject> </subject>
+        <description>To find out the astrophysical processes responsible for gamma-ray burst (GRB), it is crucial to discover and understand the relations between their observational properties. This work was performed in the GRB rest frames using a sample of 62 long Swift GRBs with known redshifts. Following the earlier analysis of the correlation between afterglow luminosity (L^*^a) and break time (T^*^a), we extend it to correlations between the afterglow and the prompt emission GRB physical parameters. </description>
+        <source format="bibcode">2011MNRAS.418.2202D</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/418/2202</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/MNRAS/418/2202</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/MNRAS/418/2202</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/MNRAS/418/2202/table1 (*A data list for GRBs with known redshifts analysed in the paper)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/MNRAS/418/2202/table1?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>54.03076171875</ra>
+          <dec>17.348147374621114</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/J/MNRAS/418/2202?product=MOC&amp;nside=512</footprint>
+        <waveband>Gamma-ray</waveband>
+        <waveband>X-ray</waveband>
+      </coverage>
+      <table>
+        <name>J/MNRAS/418/2202/table1</name>
+        <description>*A data list for GRBs with known redshifts analysed in the paper</description>
+        <column>
+          <name>Simbad</name>
+          <description>Simbad column added by the CDS</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>z</name>
+          <description>Redshift</description>
+          <ucd>src.redshift</ucd>
+        </column>
+        <column>
+          <name>n_GRB</name>
+          <description>[long IC] class of GRB (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>GRB</name>
+          <description>GRB identification (1)</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>beta</name>
+          <description>X-ray spectral index {beta}_a_ of the emission at afterglow time T*a (2)</description>
+          <ucd>spect.index</ucd>
+        </column>
+        <column>
+          <name>e_beta</name>
+          <description>rms uncertainty on beta</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>FX</name>
+          <description>X-ray observed flux not corrected for absorption, FX=Fa*exp(-Tp/Ta) (2)</description>
+          <unit>mW/m2</unit>
+          <ucd>phot.flux;em.X-ray</ucd>
+        </column>
+        <column>
+          <name>e_FX</name>
+          <description>rms uncertainty on FX</description>
+          <unit>mW/m2</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>logT*90</name>
+          <description>Time interval during which the background-subtracted cumulative counts increase from 5% to 95%</description>
+          <unit>[s]</unit>
+          <ucd>phot.count</ucd>
+        </column>
+        <column>
+          <name>e_logT*90</name>
+          <description>rms uncertainty on logT*90</description>
+          <unit>[s]</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>logT*45</name>
+          <description>Time spanned by the brightest 45% of the total counts above the background</description>
+          <unit>[s]</unit>
+          <ucd>time;arith.diff</ucd>
+        </column>
+        <column>
+          <name>e_logT*45</name>
+          <description>rms uncertainty on logT*45</description>
+          <unit>[s]</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>logT*p</name>
+          <description>Fitted transition time in which the exponential decay in the prompt phase changes to a power-law decay (2)</description>
+          <unit>[s]</unit>
+          <ucd>time;arith.diff</ucd>
+        </column>
+        <column>
+          <name>e_logT*p</name>
+          <description>rms uncertainty on logT*p</description>
+          <unit>[s]</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>logT*a</name>
+          <description>Break (afterglow) time (2)</description>
+          <unit>[s]</unit>
+          <ucd>time;arith.diff</ucd>
+        </column>
+        <column>
+          <name>e_logT*a</name>
+          <description>rms uncertainty on logT*a</description>
+          <unit>[s]</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>logL*a</name>
+          <description>X-ray luminosity (2)</description>
+          <unit>[10-7W]</unit>
+          <ucd>phys.luminosity;em.X-ray</ucd>
+        </column>
+        <column>
+          <name>e_logL*a</name>
+          <description>rms uncertainty on logL*a</description>
+          <unit>[10-7W]</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>logE*i</name>
+          <description>Isotropic energy</description>
+          <unit>[10-7J]</unit>
+          <ucd>phys.energy</ucd>
+        </column>
+        <column>
+          <name>e_logE*i</name>
+          <description>rms uncertainty on logE*i</description>
+          <unit>[10-7J]</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>logE*p</name>
+          <description>Peak energy in the {nu}F_{nu}_ spectrum</description>
+          <unit>[keV]</unit>
+          <ucd>phys.energy</ucd>
+        </column>
+        <column>
+          <name>e_logE*p</name>
+          <description>rms uncertainty on logE*p</description>
+          <unit>[keV]</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>u</name>
+          <description>Value of the error parameter u defined by u^2^ = e_logT*a^2^ + e_logL*a^2^</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>n_u</name>
+          <description>[U] U for the U0.095 subsample ("upper envelope" with fit u&lt;=0.095)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>_RA</name>
+          <description>Right Ascension (J2000) from SIMBAD (not part of the original data)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>_DE</name>
+          <description>Declination (J2000) from SIMBAD (not part of the original data)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

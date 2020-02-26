@@ -1,0 +1,191 @@
+
+ Statistics of
+	community	clarin
+	subset		CLARIN_1
+	# of records	17
+  see as well oaidata/clarin-oai_dc/CLARIN_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dc:title/
+  
+  |--    17 |  100 |    17 |  100
+      |- 1     : The online corpus supplement to the paper "Exploring genealogical blends: the Su [...(117 chars follow)...] |
+      |- 1     : Prof. Dr. Andreas Blätte's keynote talk at the CLARIN Annual Conference 2015. Ad [...(119 chars follow)...] |
+      |- 1     : Wikipedia category embedding starting at the top category Biology for English, F [...(47 chars follow)...] |
+      |- 1     : This file set existing of a video stream, an audio stream and a multimodal annot [...(170 chars follow)...] |
+      |- 1     : TXM 0.7.7 for Windows 64-bit setup file
+
+TXM is a free and open-source (GPL v3)  [...(1657 chars follow)...] |
+      |- 1     : This is a small sample dataset from PDT 2.0. As such it can be released under a  [...(30 chars follow)...] |
+      |- 1     : WMT 2013 Crawled News monolingual corpus, Czech, segmented by Morfessor      |
+      |- 1     : Two legal texts syntactically manually annotated according to the Prague depende [...(128 chars follow)...] |
+      |- 1     : Description of verbal paradigms in Bengali. The description is written in Czech.      |
+      |- 1     : test for details                    |
+
+ |-> Description      <--       //dc:description/text()
+
+  |--    17 |  100 |    17 |  100
+      |- 1     : The online corpus supplement to the paper "Exploring genealogical blends: the Su [...(117 chars follow)...] |
+      |- 1     : Prof. Dr. Andreas Blätte's keynote talk at the CLARIN Annual Conference 2015. Ad [...(119 chars follow)...] |
+      |- 1     : Wikipedia category embedding starting at the top category Biology for English, F [...(47 chars follow)...] |
+      |- 1     : This file set existing of a video stream, an audio stream and a multimodal annot [...(170 chars follow)...] |
+      |- 1     : TXM 0.7.7 for Windows 64-bit setup file
+
+TXM is a free and open-source (GPL v3)  [...(1657 chars follow)...] |
+      |- 1     : This is a small sample dataset from PDT 2.0. As such it can be released under a  [...(30 chars follow)...] |
+      |- 1     : WMT 2013 Crawled News monolingual corpus, Czech, segmented by Morfessor      |
+      |- 1     : Two legal texts syntactically manually annotated according to the Prague depende [...(128 chars follow)...] |
+      |- 1     : Description of verbal paradigms in Bengali. The description is written in Czech.      |
+      |- 1     : test for details                    |
+
+ |-> Tags             <--       //dc:subject/text()
+
+  |--    10 |   59 |    10 |   59
+      |- 2     : Sign Language                       |
+      |- 1     : textometry                          |
+      |- 1     : gospel harmony                      |
+      |- 1     : Psycholinguistics                   |
+      |- 1     : machine learning                    |
+      |- 1     : Sentiment Analysis                  |
+      |- 1     : Video                               |
+      |- 1     : video                               |
+      |- 1     : treebank                            |
+
+ |-> DOI              <--                     
+  |--     2 |   12 |     2 |   12
+      |- 1     : http://dx.doi.org/doi:10.23728/b2share.b1092be3cd4844e0bffd7b669521ba3c      |
+      |- 1     : http://dx.doi.org/doi:10.23728/b2share.93ab120efdaa4662baec6adee8e7585f      |
+
+ |-> PID              <--                     
+  |--    17 |  100 |    17 |  100
+      |- 1     : http://hdl.handle.net/11304/2c1e735c-b988-11e3-8cd7-14feb57d12b9      |
+      |- 1     : http://hdl.handle.net/11304/2bc32f38-b988-11e3-8cd7-14feb57d12b9      |
+      |- 1     : http://hdl.handle.net/11304/3720bb44-831c-48f3-9847-6988a41236e1      |
+      |- 1     : http://hdl.handle.net/11304/2e873bd8-b988-11e3-8cd7-14feb57d12b9      |
+      |- 1     : http://hdl.handle.net/11304/125a4b70-86ce-11e5-9bb4-2b0aad496318      |
+      |- 1     : http://hdl.handle.net/11304/320c00fe-b988-11e3-8cd7-14feb57d12b9      |
+      |- 1     : http://hdl.handle.net/11304/337a3cda-b988-11e3-8cd7-14feb57d12b9      |
+      |- 1     : http://hdl.handle.net/11304/2bf018ae-b988-11e3-8cd7-14feb57d12b9      |
+      |- 1     : http://hdl.handle.net/11304/2e579798-b988-11e3-8cd7-14feb57d12b9      |
+      |- 1     : http://hdl.handle.net/11304/2c51583a-b988-11e3-8cd7-14feb57d12b9      |
+
+ |-> Source           <--       //dc:identifier/text()
+
+  |--    34 |  200 |    34 |  200
+      |- 2     : https://b2share.eudat.eu/api/records/1e14df58d1754582afaf0e549b2fcc34      |
+      |- 2     : https://b2share.eudat.eu/api/records/8c898c082a2e4f098e0145e8afb0e050      |
+      |- 2     : https://b2share.eudat.eu/api/records/4cfd3cbeb231469ba592ba09f894c423      |
+      |- 2     : https://b2share.eudat.eu/api/records/a0f14fa1e0d54a1fb843a69f861f3fa0      |
+      |- 2     : https://b2share.eudat.eu/api/records/3d474efea9ca48238bb0bd30615f7aa2      |
+      |- 2     : https://b2share.eudat.eu/api/records/ea745beaf56c4a80a1d74748d4d88ed6      |
+      |- 2     : https://b2share.eudat.eu/api/records/054e65e6bde64d3e9d5f47a72510e210      |
+      |- 2     : https://b2share.eudat.eu/api/records/6000bb86c5aa43c583ea1f381712f7e2      |
+      |- 2     : https://b2share.eudat.eu/api/records/93ab120efdaa4662baec6adee8e7585f      |
+      |- 2     : https://b2share.eudat.eu/api/records/e764dd9162c84a7e929887d3989fe4d1      |
+
+ |-> RelatedIdentifier <--       //dc:identifier/text()
+
+  |--    34 |  200 |    34 |  200
+      |- 2     : https://b2share.eudat.eu/api/records/1e14df58d1754582afaf0e549b2fcc34      |
+      |- 2     : https://b2share.eudat.eu/api/records/8c898c082a2e4f098e0145e8afb0e050      |
+      |- 2     : https://b2share.eudat.eu/api/records/4cfd3cbeb231469ba592ba09f894c423      |
+      |- 2     : https://b2share.eudat.eu/api/records/a0f14fa1e0d54a1fb843a69f861f3fa0      |
+      |- 2     : https://b2share.eudat.eu/api/records/3d474efea9ca48238bb0bd30615f7aa2      |
+      |- 2     : https://b2share.eudat.eu/api/records/ea745beaf56c4a80a1d74748d4d88ed6      |
+      |- 2     : https://b2share.eudat.eu/api/records/054e65e6bde64d3e9d5f47a72510e210      |
+      |- 2     : https://b2share.eudat.eu/api/records/6000bb86c5aa43c583ea1f381712f7e2      |
+      |- 2     : https://b2share.eudat.eu/api/records/93ab120efdaa4662baec6adee8e7585f      |
+      |- 2     : https://b2share.eudat.eu/api/records/e764dd9162c84a7e929887d3989fe4d1      |
+
+ |-> MetaDataAccess   <--                     
+  |--    17 |  100 |    17 |  100
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+      |- 1     : https://repository.clarin.dk/repository/oai/request?verb=GetRecord&metadataPrefi [...(79 chars follow)...] |
+
+ |-> Creator          <--       //dc:creator/text()
+
+  |--    16 |   94 |    14 |   82
+      |- 1     : MPIPL                               |
+
+ |-> Publisher        <--       //dc:publisher/text()
+
+  |--    10 |   59 |    10 |   59
+      |- 4     : Peter                               |
+      |- 4     : http://b2share.eudat.eu             |
+      |- 1     : Peter Wittenburg                    |
+      |- 1     : Charles University in Prague        |
+
+ |-> Contributor      <--       //dc:contributor/text()
+
+  |--     3 |   18 |     3 |   18
+      |- 1     : TXM team                            |
+      |- 1     : Kita Sotaro                         |
+      |- 1     : two                                 |
+
+ |-> PublicationYear  <--       //dc:date/text()
+
+  |--    17 |  100 |    17 |  100
+      |- 15    : 2016                                |
+      |- 2     : 2017                                |
+
+ |-> Rights           <--       //dc:rights/text()
+
+  |--    17 |  100 |    17 |  100
+      |- 17    : info:eu-repo/semantics/openAccess      |
+
+ |-> OpenAccess       <--       false
+        
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //dc:publisher/text()
+
+  |--    10 |   59 |    10 |   59
+      |- 4     : Peter                               |
+      |- 4     : http://b2share.eudat.eu             |
+      |- 1     : Peter Wittenburg                    |
+      |- 1     : Charles University in Prague        |
+
+ |-> Language         <--       //dc:language/text()
+
+  |--    16 |   94 |    16 |   94
+      |- 16    : English                             |
+
+ |-> ResourceType     <--       //dc:type/text()
+
+  |--    16 |   94 |    16 |   94
+      |- 7     : Text                                |
+      |- 6     : Audiovisual                         |
+      |- 2     : Other                               |
+      |- 1     : Image                               |
+
+ |-> Format           <--       //dc:format/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string>Linguistics</string>
+
+  |--    17 |  100 |    17 |  100
+      |- 17    : Linguistics                         |
+
+ |-> SpatialCoverage  <--       //dc:coverage/text(),//dc:spatial/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //dc:coverage/text(),//dc:temporal/text()
+
+  |--     0 |    0 |     0 |    0
+

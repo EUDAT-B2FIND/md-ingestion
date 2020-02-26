@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/PASJ/59/S529",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/PASJ/59/S529"
+    ],
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2007PASJ...59S.529L"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Lee H.M., Im M., Wada T., et al."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/PASJ/59/S529;2018-04-05T10:00:00Z;J.PASJ;ivo_managed;Lee H.M., Im M., Wada T., et al.;NEP deep survey at 11um (Lee+, 2007);CDS;2012;Photometry;Galaxies;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/PASJ/59/S529;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/PASJ/59/S529;2007PASJ...59S.529L;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0a6d3a79-a6d1-581c-be11-17348f38c710",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/PASJ/59/S529"
+    ],
+    "oai_set": [
+        "J.PASJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Photometry"
+        },
+        {
+            "name": "Galaxies"
+        }
+    ],
+    "title": [
+        "NEP deep survey at 11um (Lee+, 2007)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/PASJ/59/S529"
+}

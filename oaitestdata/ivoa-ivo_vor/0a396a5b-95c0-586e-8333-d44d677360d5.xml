@@ -1,0 +1,148 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/VII/191</oai:identifier>
+    <oai:datestamp>2018-12-27T12:23:42Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2013-03-06T07:16:13" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>Catalogue of Southern Dark Clouds (Hartley+ 1986)</title>
+      <shortName>VII/191</shortName>
+      <identifier>ivo://CDS.VizieR/VII/191</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Hartley M., Manchester R.N., Smith R.M., Tritton S.B., Goss W.M.</name>
+        </creator>
+        <contributor>James Marcout, Francois Ochsenbein [CDS]</contributor>
+        <date role="creation">2013-03-06T07:16:13</date>
+        <version>21-Feb-1996</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Nebulae</subject>
+        <description>A catalogue of 1101 dark clouds has been compiled from visual inspection of ESO/SERC Southern J survey plates for declinations south of -33deg. This catalogue complements that of Lynds (1962ApJS....7....1L) which is based on the Palomar Sky Survey. Equatorial positions of accuracy 10 arcsec or better are listed for each cloud along with size (major axis x minor axis), density class and ESO/SERC field number. Galactic coordinates, derived from the equatorial positions, are used to define a name for each cloud. Complexes, consisting of several separately identifiable concentrations, are listed and identified by a trailing C on the name. The conclusions of Lynds, that clouds are concentrated along the galactic equator and toward the galactic centre, are reinforced. No clear connection with Gould's Belt is evident in the distribution of southern clouds. </description>
+        <source format="bibcode">1986A&amp;AS...63...27H</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?VII/191</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=VII/191</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=VII/191</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table VII/191/table1 (The catalogue of Southern Dark Clouds (DCld))</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/VII/191/table1?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>269.84619140625</ra>
+          <dec>-37.168899655999454</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/VII/191?product=MOC&amp;nside=512</footprint>
+        <waveband>Optical</waveband>
+      </coverage>
+      <table>
+        <name>VII/191/table1</name>
+        <description>The catalogue of Southern Dark Clouds (DCld)</description>
+        <column>
+          <name>DCld</name>
+          <description>[0-9.+-] Dark Cloud name</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>n_DCld</name>
+          <description>[C] 'C' indicates a complex structure</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>RA1950</name>
+          <description>Right Ascension 1950</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DE1950</name>
+          <description>Declination 1950</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>Size1</name>
+          <description>Largest angular size</description>
+          <unit>arcmin</unit>
+          <ucd>phys.angSize;stat.max</ucd>
+        </column>
+        <column>
+          <name>Size2</name>
+          <description>Second angular size</description>
+          <unit>arcmin</unit>
+          <ucd>phys.angSize</ucd>
+        </column>
+        <column>
+          <name>Density</name>
+          <description>[ABC] Density class</description>
+          <ucd>meta.code.class;phys.density</ucd>
+        </column>
+        <column>
+          <name>Field</name>
+          <description>Field or Plate number of ESO/SERC survey</description>
+          <ucd>meta.id;obs.field</ucd>
+        </column>
+        <column>
+          <name>Comments</name>
+          <description>Text of Comments</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>_RA.icrs</name>
+          <description>Right ascension (ICRS) (computed by VizieR, not part of the original data)</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>_DE.icrs</name>
+          <description>Declination (ICRS) (computed by VizieR, not part of the original data)</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

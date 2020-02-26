@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/MNRAS/465/L39",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/MNRAS/465/L39"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2017MNRAS.465L..39H"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Hollyhead K., Kacharov N., Lardo C., Bastian N., Hilker M., Rejkuba M., Koch A., Grebel E.K., Georgiev I."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/MNRAS/465/L39;2018-10-22T12:58:55Z;J.MNRAS;ivo_managed;Hollyhead K., Kacharov N., Lardo C., Bastian N., Hilker M., Rejkuba M., Koch A., Grebel E.K., Georgiev I.;Lindsay 1 spectroscopy for 34 targets (Hollyhead+, 2017);CDS;2018;Associations;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/MNRAS/465/L39;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/465/L39;2017MNRAS.465L..39H;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "20831aa1-afd2-571e-8bb0-4ded99ee5053",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/MNRAS/465/L39"
+    ],
+    "oai_set": [
+        "J.MNRAS",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Associations"
+        }
+    ],
+    "title": [
+        "Lindsay 1 spectroscopy for 34 targets (Hollyhead+, 2017)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/465/L39"
+}

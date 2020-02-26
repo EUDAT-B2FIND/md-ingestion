@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/ApJS/168/128",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/ApJS/168/128"
+    ],
+    "PublicationTimestamp": "2009-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2007ApJS..168..128B"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Beers T.C., Flynn C., Rossi S., et al."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/ApJS/168/128;2018-04-05T10:00:00Z;J.ApJS;ivo_managed;Beers T.C., Flynn C., Rossi S., et al.;UBVRcIc photometry of FHB and metal-poor stars (Beers+, 2007);CDS;2009;Stars;Photometry:wide-band;Stars:peculiar;Stars:early-type;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/ApJS/168/128;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJS/168/128;2007ApJS..168..128B;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "3ca61b1a-f2e7-5020-a9b8-5f9aa04119d2",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/ApJS/168/128"
+    ],
+    "oai_set": [
+        "J.ApJS",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Stars"
+        },
+        {
+            "name": "Photometry wide-band"
+        },
+        {
+            "name": "Stars peculiar"
+        },
+        {
+            "name": "Stars early-type"
+        }
+    ],
+    "title": [
+        "UBVRcIc photometry of FHB and metal-poor stars (Beers+, 2007)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJS/168/128"
+}

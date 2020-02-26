@@ -1,0 +1,1351 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/MNRAS/455/4136</oai:identifier>
+    <oai:datestamp>2018-12-27T12:26:58Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2017-02-17T07:59:46" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>Kepler triples (Borkovits+, 2016)</title>
+      <shortName>J/MNRAS/455/4136</shortName>
+      <identifier>ivo://CDS.VizieR/J/MNRAS/455/4136</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Borkovits T., Hajdu T., Sztakovics J., Rappaport S., Levine A., Biro I.B., Klagyivik P.</name>
+        </creator>
+        <contributor>Patricia Vannier [CDS]</contributor>
+        <date role="creation">2017-02-17T07:59:46</date>
+        <version>29-Jul-2016</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Binaries:eclipsing</subject>
+        <subject>Multiple_Stars</subject>
+        <description>We have carried out eclipse time variation (ETV) analyses for the complete EB sample of the original Kepler mission. </description>
+        <source format="bibcode">2016MNRAS.455.4136B</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/455/4136</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/MNRAS/455/4136</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/MNRAS/455/4136</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/MNRAS/455/4136/table2 (Properties of the investigated systems)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/MNRAS/455/4136/table2?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>290.28076171875</ra>
+          <dec>37.92165078429179</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/J/MNRAS/455/4136?product=MOC&amp;nside=512</footprint>
+      </coverage>
+      <table>
+        <name>J/MNRAS/455/4136/table7</name>
+        <description>Orbital elements from combined dynamical and LTTE solutions which cover more than one but less than two outer periods</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>u_KIC</name>
+          <description>Uncertainty flag on KIC</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>n_KIC</name>
+          <description>[ac] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Inner orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P1</name>
+          <description>? rms uncertainty on P1</description>
+          <unit>10-8d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>P2</name>
+          <description>? Outer orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P2</name>
+          <description>? rms uncertainty on P2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>a2</name>
+          <description>Outer semi-major axis</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_a2</name>
+          <description>rms uncertainty on a2</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e2</name>
+          <description>Median eccentricity of the third-body orbit</description>
+          <ucd>src.orbital.eccentricity;stat.median</ucd>
+        </column>
+        <column>
+          <name>e_e2</name>
+          <description>? rms uncertainty on e2</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>omega2</name>
+          <description>? Outer argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega2</name>
+          <description>? rms uncertainty on omega2</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>tau2</name>
+          <description>? Outer epoch (BJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau2</name>
+          <description>? rms uncertainty on tau2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f(mC)</name>
+          <description>Mass function of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_f(mC)</name>
+          <description>? rms uncertainty on f(mC)</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mC/mABC</name>
+          <description>Mass ratio</description>
+          <ucd>phys.mass;arith.ratio</ucd>
+        </column>
+        <column>
+          <name>e_mC/mABC</name>
+          <description>rms uncertainty on mC/mABC</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mAB</name>
+          <description>Mass of the AB components</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mAB</name>
+          <description>? rms uncertainty on mAB</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mC</name>
+          <description>Mass of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mC</name>
+          <description>rms uncertainty on mC</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Aratio</name>
+          <description>Ratio of the amplitudes of the dynamical and LTTE contributions, A_dyn_/A_LTTE_</description>
+          <ucd>phot.mag;arith.ratio</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table4</name>
+        <description>Orbital elements from LTTE solutions which cover more than one but less than two outer periods</description>
+        <column>
+          <name>tau2</name>
+          <description>Outer epoch (BJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau2</name>
+          <description>rms uncertainty on tau2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f(mC)</name>
+          <description>Mass function of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_f(mC)</name>
+          <description>rms uncertainty on f(mC)</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>(mC)min</name>
+          <description>Minimal mass of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>Aratio</name>
+          <description>? Ratio of the amplitudes of the dynamical and LTTE contributions, A_dyn_/A_LTTE_</description>
+          <ucd>phot.mag;arith.ratio</ucd>
+        </column>
+        <column>
+          <name>mAB</name>
+          <description>Mass of the AB components (inner binary)</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mAB</name>
+          <description>? rms uncertainty on mAB</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>u_mAB</name>
+          <description>[:] Uncertainty flag on mAB</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>u_KIC</name>
+          <description>Uncertainty flag on KIC</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>n_KIC</name>
+          <description>[abcd] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Inner orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P1</name>
+          <description>rms uncertainty on P1</description>
+          <unit>10-8d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>DP1</name>
+          <description>? {Delta}P1 parameter (2)</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.fit.param</ucd>
+        </column>
+        <column>
+          <name>e_DP1</name>
+          <description>? rms uncertainty on DP1</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>P2</name>
+          <description>Outer orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P2</name>
+          <description>rms uncertainty on P2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>asin(i2)</name>
+          <description>Projected semimajor axis of the LTTE orbit of the binary, a_AB_sin(i2), where i2 is the inclination of the wide orbit</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_asin(i2)</name>
+          <description>rms uncertainty on asin(i2)</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e2</name>
+          <description>Median eccentricity of the third-body orbit</description>
+          <ucd>src.orbital.eccentricity;stat.median</ucd>
+        </column>
+        <column>
+          <name>e_e2</name>
+          <description>rms uncertainty on e2</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>omega2</name>
+          <description>Outer argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega2</name>
+          <description>rms uncertainty on omega2</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table8</name>
+        <description>Orbital elements from combined dynamical and LTTE solutions which cover less than a full outer period</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>u_KIC</name>
+          <description>Uncertainty flag on KIC</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>n_KIC</name>
+          <description>[ac] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Inner orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P1</name>
+          <description>? rms uncertainty on P1</description>
+          <unit>10-8d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>P2</name>
+          <description>? Outer orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P2</name>
+          <description>? rms uncertainty on P2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>a2</name>
+          <description>Outer semi-major axis</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_a2</name>
+          <description>rms uncertainty on a2</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e2</name>
+          <description>Median eccentricity of the third-body orbit</description>
+          <ucd>src.orbital.eccentricity;stat.median</ucd>
+        </column>
+        <column>
+          <name>e_e2</name>
+          <description>? rms uncertainty on e2</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>omega2</name>
+          <description>? Outer argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega2</name>
+          <description>? rms uncertainty on omega2</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>tau2</name>
+          <description>? Outer epoch (BJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau2</name>
+          <description>? rms uncertainty on tau2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f(mC)</name>
+          <description>Mass function of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_f(mC)</name>
+          <description>? rms uncertainty on f(mC)</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mC/mABC</name>
+          <description>Mass ratio</description>
+          <ucd>phys.mass;arith.ratio</ucd>
+        </column>
+        <column>
+          <name>e_mC/mABC</name>
+          <description>rms uncertainty on mC/mABC</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mAB</name>
+          <description>Mass of the AB components</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mAB</name>
+          <description>? rms uncertainty on mAB</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mC</name>
+          <description>Mass of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mC</name>
+          <description>rms uncertainty on mC</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Aratio</name>
+          <description>Ratio of the amplitudes of the dynamical and LTTE contributions, A_dyn_/A_LTTE_</description>
+          <ucd>phot.mag;arith.ratio</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table10</name>
+        <description>Apsidal motion and/or orientation parameters from AME and dynamical fits</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>Panom</name>
+          <description>Anomalistic period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_Panom</name>
+          <description>rms uncertainty on Panom</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>a1</name>
+          <description>? Semi-major axis</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_a1</name>
+          <description>? rms uncertainty on a1</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e1</name>
+          <description>Eccentricity</description>
+          <ucd>src.orbital.eccentricity</ucd>
+        </column>
+        <column>
+          <name>e_e1</name>
+          <description>? rms uncertainty on e1</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>n_e1</name>
+          <description>[b] Note on e1 (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>omega1</name>
+          <description>? Inner argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega1</name>
+          <description>? rms uncertainty on omega1</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>tau1</name>
+          <description>? Inner epoch (MJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau1</name>
+          <description>? rms uncertainty on tau1</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Papse</name>
+          <description>? Apsidal period</description>
+          <unit>yr</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_Papse</name>
+          <description>? rms uncertainty on Paspe</description>
+          <unit>yr</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>im</name>
+          <description>? Mutual (relative) inclination</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.inclination</ucd>
+        </column>
+        <column>
+          <name>n_im</name>
+          <description>[ac] Note on im (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>e_im</name>
+          <description>? rms uncertainty on im</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>i1</name>
+          <description>? Inner observable inclination</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.inclination</ucd>
+        </column>
+        <column>
+          <name>e_i1</name>
+          <description>? rms uncertainty on i1</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>i2</name>
+          <description>? Outer observable inclination</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.inclination</ucd>
+        </column>
+        <column>
+          <name>DOMEGA</name>
+          <description>? Ascending node {DELTA}{OMEGA} ({OMEGA}2-{OMEGA}1)</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.node</ucd>
+        </column>
+        <column>
+          <name>e_DOMEGA</name>
+          <description>? rms uncertainty on DOMEGA</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Pnode</name>
+          <description>? Node period</description>
+          <unit>yr</unit>
+          <ucd>src.orbital.node</ucd>
+        </column>
+        <column>
+          <name>e_Pnode</name>
+          <description>? rms uncertainty on Pnode</description>
+          <unit>yr</unit>
+          <ucd>stat.error</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table3</name>
+        <description>Orbital elements from LTTE solutions for systems, where more than two outer periods are covered, or/and triply eclipsing systems</description>
+        <column>
+          <name>n_KIC</name>
+          <description>[abcd] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Inner orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>u_KIC</name>
+          <description>Uncertainty flag on KIC</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_P1</name>
+          <description>rms uncertainty on P1</description>
+          <unit>10-8d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>DP1</name>
+          <description>? {Delta}P1 parameter (2)</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.fit.param</ucd>
+        </column>
+        <column>
+          <name>e_DP1</name>
+          <description>? rms uncertainty on DP1</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>P2</name>
+          <description>Outer orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P2</name>
+          <description>rms uncertainty on P2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>asin(i2)</name>
+          <description>Projected semimajor axis of the LTTE orbit of the binary, a_AB_sin(i2), where i2 is the inclination of the wide orbit</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_asin(i2)</name>
+          <description>rms uncertainty on asin(i2)</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e2</name>
+          <description>Median eccentricity of the third-body orbit</description>
+          <ucd>src.orbital.eccentricity;stat.median</ucd>
+        </column>
+        <column>
+          <name>e_e2</name>
+          <description>rms uncertainty on e2</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>omega2</name>
+          <description>Outer argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega2</name>
+          <description>rms uncertainty on omega2</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>tau2</name>
+          <description>Outer epoch (BJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau2</name>
+          <description>rms uncertainty on tau2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f(mC)</name>
+          <description>Mass function of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_f(mC)</name>
+          <description>rms uncertainty on f(mC)</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>(mC)min</name>
+          <description>Minimal mass of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>Aratio</name>
+          <description>? Ratio of the amplitudes of the dynamical and LTTE contributions, A_dyn_/A_LTTE_</description>
+          <ucd>phot.mag;arith.ratio</ucd>
+        </column>
+        <column>
+          <name>mAB</name>
+          <description>Mass of the AB components (inner binary)</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mAB</name>
+          <description>? rms uncertainty on mAB</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>u_mAB</name>
+          <description>[:] Uncertainty flag on mAB</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table9</name>
+        <description>Orbital elements from LTTE solutions for systems which probably are oscillating variables instead of binaries (i.e. false positive EBs)</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>u_KIC</name>
+          <description>Uncertainty flag on KIC</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>n_KIC</name>
+          <description>[abcd] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Inner orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P1</name>
+          <description>rms uncertainty on P1</description>
+          <unit>10-8d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>DP1</name>
+          <description>? {Delta}P1 parameter (2)</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.fit.param</ucd>
+        </column>
+        <column>
+          <name>e_DP1</name>
+          <description>? rms uncertainty on DP1</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>P2</name>
+          <description>Outer orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P2</name>
+          <description>rms uncertainty on P2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>asin(i2)</name>
+          <description>Projected semimajor axis of the LTTE orbit of the binary, a_AB_sin(i2), where i2 is the inclination of the wide orbit</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_asin(i2)</name>
+          <description>rms uncertainty on asin(i2)</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e2</name>
+          <description>Median eccentricity of the third-body orbit</description>
+          <ucd>src.orbital.eccentricity;stat.median</ucd>
+        </column>
+        <column>
+          <name>e_e2</name>
+          <description>rms uncertainty on e2</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>omega2</name>
+          <description>Outer argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega2</name>
+          <description>rms uncertainty on omega2</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>tau2</name>
+          <description>Outer epoch (BJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau2</name>
+          <description>rms uncertainty on tau2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f(mC)</name>
+          <description>Mass function of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_f(mC)</name>
+          <description>rms uncertainty on f(mC)</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>(mC)min</name>
+          <description>Minimal mass of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>Aratio</name>
+          <description>? Ratio of the amplitudes of the dynamical and LTTE contributions, A_dyn_/A_LTTE_</description>
+          <ucd>phot.mag;arith.ratio</ucd>
+        </column>
+        <column>
+          <name>mAB</name>
+          <description>Mass of the AB components (inner binary)</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mAB</name>
+          <description>? rms uncertainty on mAB</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>u_mAB</name>
+          <description>[:] Uncertainty flag on mAB</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table2</name>
+        <description>Properties of the investigated systems</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>More</name>
+          <description>indicates informations in other tables</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>n_KIC</name>
+          <description>[ab] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>Type</name>
+          <description>Light-curve classifications according to the classical eclipsing binary typology (see, e.g., Kallrath &amp; Milone 2009) (2)</description>
+          <ucd>src.class</ucd>
+        </column>
+        <column>
+          <name>Morph</name>
+          <description>? Light-curve classification according to the recently introduced morphology of Matijevic et al. (2012AJ....143..123M)</description>
+          <ucd>src.class</ucd>
+        </column>
+        <column>
+          <name>T0</name>
+          <description>Epoch used for plotting O-C curves</description>
+          <unit>d</unit>
+          <ucd>time.epoch;instr.setup</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Sidereal period used for plotting O-C curves</description>
+          <unit>d</unit>
+          <ucd>time.period;instr.setup</ucd>
+        </column>
+        <column>
+          <name>n_P1</name>
+          <description>[(/2) ] Note on P1</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>Kepmag</name>
+          <description>Kepler magnitude from Kepler Input Catalog (Batalha et al., 2010ApJ...713L.109B)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt</ucd>
+        </column>
+        <column>
+          <name>Lenght</name>
+          <description>? Data length</description>
+          <unit>d</unit>
+          <ucd>time.interval</ucd>
+        </column>
+        <column>
+          <name>Lenght2</name>
+          <description>? Second data length</description>
+          <unit>d</unit>
+          <ucd>time.interval</ucd>
+        </column>
+        <column>
+          <name>ETV/QTV</name>
+          <description>Numbers of calculated ETV and QTV curves (3)</description>
+          <ucd>meta.number</ucd>
+        </column>
+        <column>
+          <name>Fcurve</name>
+          <description>Fitted curves (4)</description>
+          <ucd>meta.code</ucd>
+        </column>
+        <column>
+          <name>Ftype</name>
+          <description>Fit type (5)</description>
+          <ucd>meta.code</ucd>
+        </column>
+        <column>
+          <name>Tab</name>
+          <description>Location of the solution of the given system (6)</description>
+          <ucd>meta.id;meta.dataset</ucd>
+        </column>
+        <column>
+          <name>Ref</name>
+          <description>References (7)</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>_RA</name>
+          <description>Positions from KIC (2009, Cat. V/133) (right ascension part)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>_DE</name>
+          <description>Positions from KIC (2009, Cat. V/133) (declination part)</description>
+          <unit>deg</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table5</name>
+        <description>Orbital elements from LTTE solutions which cover less than a full period</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>u_KIC</name>
+          <description>Uncertainty flag on KIC</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>n_KIC</name>
+          <description>[abcd] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Inner orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P1</name>
+          <description>rms uncertainty on P1</description>
+          <unit>10-8d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>DP1</name>
+          <description>? {Delta}P1 parameter (2)</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.fit.param</ucd>
+        </column>
+        <column>
+          <name>e_DP1</name>
+          <description>? rms uncertainty on DP1</description>
+          <unit>10-10d/c</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>P2</name>
+          <description>Outer orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P2</name>
+          <description>rms uncertainty on P2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>asin(i2)</name>
+          <description>Projected semimajor axis of the LTTE orbit of the binary, a_AB_sin(i2), where i2 is the inclination of the wide orbit</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_asin(i2)</name>
+          <description>rms uncertainty on asin(i2)</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e2</name>
+          <description>Median eccentricity of the third-body orbit</description>
+          <ucd>src.orbital.eccentricity;stat.median</ucd>
+        </column>
+        <column>
+          <name>e_e2</name>
+          <description>rms uncertainty on e2</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>omega2</name>
+          <description>Outer argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega2</name>
+          <description>rms uncertainty on omega2</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>tau2</name>
+          <description>Outer epoch (BJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau2</name>
+          <description>rms uncertainty on tau2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f(mC)</name>
+          <description>Mass function of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_f(mC)</name>
+          <description>rms uncertainty on f(mC)</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>(mC)min</name>
+          <description>Minimal mass of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>Aratio</name>
+          <description>? Ratio of the amplitudes of the dynamical and LTTE contributions, A_dyn_/A_LTTE_</description>
+          <ucd>phot.mag;arith.ratio</ucd>
+        </column>
+        <column>
+          <name>mAB</name>
+          <description>Mass of the AB components (inner binary)</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mAB</name>
+          <description>? rms uncertainty on mAB</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>u_mAB</name>
+          <description>[:] Uncertainty flag on mAB</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/MNRAS/455/4136/table6</name>
+        <description>Orbital elements from combined dynamical and LTTE solutions for systems, where more than two outer periods are covered, or/and triply eclipsing systems</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>KIC</name>
+          <description>KIC number</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>u_KIC</name>
+          <description>Uncertainty flag on KIC</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>n_KIC</name>
+          <description>[ac] Note on KIC (1)</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>P1</name>
+          <description>Inner orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P1</name>
+          <description>? rms uncertainty on P1</description>
+          <unit>10-8d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>P2</name>
+          <description>? Outer orbital period</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_P2</name>
+          <description>? rms uncertainty on P2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>a2</name>
+          <description>Outer semi-major axis</description>
+          <unit>Rsun</unit>
+          <ucd>phys.angSize.smajAxis</ucd>
+        </column>
+        <column>
+          <name>e_a2</name>
+          <description>rms uncertainty on a2</description>
+          <unit>Rsun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>e2</name>
+          <description>Median eccentricity of the third-body orbit</description>
+          <ucd>src.orbital.eccentricity;stat.median</ucd>
+        </column>
+        <column>
+          <name>e_e2</name>
+          <description>? rms uncertainty on e2</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>omega2</name>
+          <description>? Outer argument of periastron</description>
+          <unit>deg</unit>
+          <ucd>src.orbital.periastron</ucd>
+        </column>
+        <column>
+          <name>e_omega2</name>
+          <description>? rms uncertainty on omega2</description>
+          <unit>deg</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>tau2</name>
+          <description>? Outer epoch (BJD)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>e_tau2</name>
+          <description>? rms uncertainty on tau2</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f(mC)</name>
+          <description>Mass function of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_f(mC)</name>
+          <description>? rms uncertainty on f(mC)</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mC/mABC</name>
+          <description>Mass ratio</description>
+          <ucd>phys.mass;arith.ratio</ucd>
+        </column>
+        <column>
+          <name>e_mC/mABC</name>
+          <description>rms uncertainty on mC/mABC</description>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mAB</name>
+          <description>Mass of the AB components</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mAB</name>
+          <description>? rms uncertainty on mAB</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>mC</name>
+          <description>Mass of the third companion</description>
+          <unit>Msun</unit>
+          <ucd>phys.mass</ucd>
+        </column>
+        <column>
+          <name>e_mC</name>
+          <description>rms uncertainty on mC</description>
+          <unit>Msun</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Aratio</name>
+          <description>Ratio of the amplitudes of the dynamical and LTTE contributions, A_dyn_/A_LTTE_</description>
+          <ucd>phot.mag;arith.ratio</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

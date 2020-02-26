@@ -1,0 +1,68 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.5061/dryad.d63t5",
+    "DiscHierarchy": [
+        "1.3.3",
+        "Fine Arts, Music, Theatre and Media Studies",
+        "Dance"
+    ],
+    "Discipline": "Medicine",
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:93653",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:93653"
+    ],
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess"
+    ],
+    "TempCoverageBegin": 63603140399,
+    "TempCoverageEnd": 63603140399,
+    "TemporalCoverage": " period : ( 2016-07-03T11:59:59Z - 2016-07-03T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2016-07-03T11:59:59Z",
+    "TemporalCoverage:EndDate": "2016-07-03T11:59:59Z",
+    "author": [
+        "Strickler, Susan R.",
+        "Smith, Stacey D.",
+        "Mueller, Lukas A.",
+        "Gates, Daniel J.",
+        "Olson, Bradley J. S. C."
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:93653;2018-09-18T17:36:35Z;D20000;Gates, Daniel J.;Strickler, Susan R.;Mueller, Lukas A.;Olson, Bradley J. S. C.;Smith, Stacey D.;Data from: Diversification of R2R3-MYB transcription factors in the tomato family Solanaceae;Data Archiving and Networked Services (DANS);2016;Life sciences, medicine and health care ;2016-07-03T18:26:11.000+02:00;2016-07-03T18:26:11.000+02:00;Dataset;10.5061/dryad.d63t5;urn:nbn:nl:ui:13-jk-x5tu;easy-dataset:93653;info:eu-repo/semantics/closedAccess;MYB transcription factors play an important role in regulating key plant developmental processes involving defense, cell shape, pigmentation, and root formation. Within this gene family, sequences containing an R2R3 MYB domain are the most abundant type and exhibit a wide diversity of functions. In this study, we identify 559 R2R3 MYB genes using whole genome data from four species of Solanaceae and reconstruct their evolutionary relationships. We compare the Solanaceae R2R3 MYBs to the well-characterized Arabidopsis thaliana sequences to estimate functional diversity and to identify gains and losses of MYB clades in the Solanaceae. We identify numerous R2R3 MYBs that do not appear closely related to Arabidopsis MYBs, and thus may represent clades of genes that have been lost along the Arabidopsis lineage or gained after the divergence of Rosid and Asterid lineages. Despite differences in the distribution of R2R3 MYBs across functional subgroups and species, the overall size of the R2R3 subfamily has changed relatively little over the roughly 50 million-year history of Solanaceae. We added our information regarding R2R3 MYBs in Solanaceae to other data and performed a meta-analysis to trace the evolution of subfamily size across land plants. The results reveal many shifts in the number of R2R3 genes, including a 54 % increase along the angiosperm stem lineage. The variation in R2R3 subfamily size across land plants is weakly positively correlated with genome size and strongly positively correlated with total number of genes. The retention of such a large number of R2R3 copies over long evolutionary time periods suggests that they have acquired new functions and been maintained by selection. Discovering the nature of this functional diversity will require integrating forward and reverse genetic approaches on an -omics scale.",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0aa74459-4604-57f0-b40c-ce1e758e4e09",
+    "notes": [
+        "MYB transcription factors play an important role in regulating key plant developmental processes involving defense, cell shape, pigmentation, and root formation. Within this gene family, sequences containing an R2R3 MYB domain are the most abundant type and exhibit a wide diversity of functions. In this study, we identify 559 R2R3 MYB genes using whole genome data from four species of Solanaceae and reconstruct their evolutionary relationships. We compare the Solanaceae R2R3 MYBs to the well-characterized Arabidopsis thaliana sequences to estimate functional diversity and to identify gains and losses of MYB clades in the Solanaceae. We identify numerous R2R3 MYBs that do not appear closely related to Arabidopsis MYBs, and thus may represent clades of genes that have been lost along the Arabidopsis lineage or gained after the divergence of Rosid and Asterid lineages. Despite differences in the distribution of R2R3 MYBs across functional subgroups and species, the overall size of the R2R3 subfamily has changed relatively little over the roughly 50 million-year history of Solanaceae. We added our information regarding R2R3 MYBs in Solanaceae to other data and performed a meta-analysis to trace the evolution of subfamily size across land plants. The results reveal many shifts in the number of R2R3 genes, including a 54 % increase along the angiosperm stem lineage. The variation in R2R3 subfamily size across land plants is weakly positively correlated with genome size and strongly positively correlated with total number of genes. The retention of such a large number of R2R3 copies over long evolutionary time periods suggests that they have acquired new functions and been maintained by selection. Discovering the nature of this functional diversity will require integrating forward and reverse genetic approaches on an -omics scale."
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:93653"
+    ],
+    "oai_set": [
+        "D20000"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Life sciences"
+        },
+        {
+            "name": "medicine health care"
+        }
+    ],
+    "title": [
+        "Data from: Diversification of R2R3-MYB transcription factors in the tomato family Solanaceae"
+    ],
+    "url": ""
+}

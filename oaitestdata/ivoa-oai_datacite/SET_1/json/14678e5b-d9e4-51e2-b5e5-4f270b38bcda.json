@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/MNRAS/459/140",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/MNRAS/459/140"
+    ],
+    "PublicationTimestamp": "2019-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2016MNRAS.459..140M"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Mereminskiy I.A., Krivonos R.A., Lutovinov A.A., Sazonov S.Y., Revnivtsev M.G., Sunyaev R.A."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/MNRAS/459/140;2019-05-02T11:55:06Z;J.MNRAS;ivo_managed;Mereminskiy I.A., Krivonos R.A., Lutovinov A.A., Sazonov S.Y., Revnivtsev M.G., Sunyaev R.A.;M81, LMC and 3C 273/Coma 17-60keV obs. (Mereminskiy+, 2016);CDS;2019;Galaxies;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/MNRAS/459/140;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/459/140;2016MNRAS.459..140M;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "14678e5b-d9e4-51e2-b5e5-4f270b38bcda",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/MNRAS/459/140"
+    ],
+    "oai_set": [
+        "J.MNRAS",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Galaxies"
+        }
+    ],
+    "title": [
+        "M81, LMC and 3C 273/Coma 17-60keV obs. (Mereminskiy+, 2016)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/459/140"
+}

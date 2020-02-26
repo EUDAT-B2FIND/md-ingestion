@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/AJ/145/139",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/AJ/145/139"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2013AJ....145..139M"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Mack C.E III, Ge J., Deshpande R., et al."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/AJ/145/139;2018-04-05T10:00:00Z;J.AJ;ivo_managed;Mack C.E III, Ge J., Deshpande R., et al.;Radial velocities of TYC 3010-1494-1 (Mack+, 2013);CDS;2017;Binaries:spectroscopic;Velocities;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/AJ/145/139;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/145/139;2013AJ....145..139M;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "483898b5-fc57-5325-bd0d-3d4b8521092d",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/AJ/145/139"
+    ],
+    "oai_set": [
+        "J.AJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Binaries spectroscopic"
+        },
+        {
+            "name": "Velocities"
+        }
+    ],
+    "title": [
+        "Radial velocities of TYC 3010-1494-1 (Mack+, 2013)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/145/139"
+}

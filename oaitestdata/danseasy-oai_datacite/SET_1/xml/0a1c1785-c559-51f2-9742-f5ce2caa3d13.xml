@@ -1,0 +1,89 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:40454</identifier>
+    <datestamp>2018-09-18T16:56:06Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-xfq-xcd4</identifier>
+      <creators>
+        <creator>
+          <creatorName>Archeologisch Onderzoek Leiden BV</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Bos, P.A. van den</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Verkavelingsporen uit de middeleeuwen en nieuwe tijd aan de voet van de strandwal te Oegstgeest.</title>
+        <title titleType="AlternativeTitle">Inventariserend proefsleuvenonderzoek in het kader van de uitbreiding van de begraafplaats bij het Groene Kerkje.</title>
+      </titles>
+      <publisher>Archeologisch Onderzoek Leiden BV</publisher>
+      <publicationYear>2011</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+        <subject>Archeologisch: proefputten/proefsleuven</subject>
+        <subject subjectScheme="ABR-complex" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Infrastructuur - Percelering/verkaveling (IPER)</subject>
+        <subject subjectScheme="ABR-complex" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Onbekend (XXX)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Middeleeuwen laat: 1050 - 1500 nC (LME)</subject>
+        <subject subjectScheme="ABR-periode" schemeURI="http://cultureelerfgoed.nl/" xml:lang="nl">Nieuwe tijd: 1500 - heden (NT)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>Archeologisch Onderzoek Leiden BV</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2011-06-20</date>
+        <date dateType="Created">2009</date>
+        <date dateType="Copyrighted">2009</date>
+        <date dateType="Available">2011-06-20</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-gsx-e7a</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:40454</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl--4244080791836446187-1308576190110</alternateIdentifier>
+      </alternateIdentifiers>
+      <formats>
+        <format>application/mapinfo (MapInfo 7.0)</format>
+        <format>application/mdb</format>
+        <format>application/pdf</format>
+        <format>application/msword</format>
+        <format>text/plain</format>
+        <format>image/jpeg</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">Archeologisch Onderzoek Leiden bv (Archol bv) heeft een archeologisch inventariserend onderzoek uitgevoerd bij het Groene kerkje, tussen de A44 en de Haarlemmerstraatweg, te Oegstgeest. 
+De bodemopbouw van het plangebied kenmerkt zich door een strandwal met aan de buitenzijde (westen) een pakket van afwisselend veen en klastische afzettingen met laklagen. Vooronderzoek en aanvullende informatie van luchtfoto&#191;s en historische bronnen gaven aanleiding om bewoningssporen uit de middeleeuwen en nieuwe tijd te verwachten.
+
+Tijdens het onderzoek van Archol zijn vijf proefsleuven haaks op en parallel aan de strandwal gegraven. De flank van de strandwal blijkt binnen het plangebied geen archeologische sporen te bevatten. Ook het pakket veen en klastische afzettingen aan de buitenzijde van de strandwal heeft geen bewoningssporen opgeleverd. Het plangebied bevat enkel verkavelingssloten en -greppels uit de middeleeuwen en nieuwe tijd, die zich beperken tot de drassige laagte aan de voet van de strandwal. Deze laagte blijkt eeuwenlang in gebruik te zijn geweest als wei- en hooiland. </description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>30F</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Groene Kerkje</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Oegstgeest</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Zuid-Holland</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>52.19576891</pointLatitude>
+            <pointLongitude>4.46760116</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,171 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>urn:repox.www.kulturarv.dkSites:http://www.kulturarv.dk/fundogfortidsminder/site/10751</identifier>
+    <datestamp>2020-01-18</datestamp>
+    <setSpec>Sites</setSpec>
+  </header>
+  <metadata>
+    <ff:site xmlns:ff="http://www.kulturarv.dk/fundogfortidsminder/ff" xmlns="http://www.kulturarv.dk/fundogfortidsminder/ff" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/site/10751</ff:id>
+      <ff:date>2020-01-17T17:00:01.923696+01:00</ff:date>
+      <ff:siteNo>46</ff:siteNo>
+      <ff:ext/>
+      <ff:parishNo>
+        <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/parish#100114</ff:conceptID>
+        <ff:term>T&#229;rs</ff:term>
+      </ff:parishNo>
+      <ff:plotType>
+        <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/plot#50</ff:conceptID>
+        <ff:term>Digitaliseret 1981</ff:term>
+      </ff:plotType>
+      <ff:placeNames>
+        <ff:placeName>
+          <ff:name>Agdrup</ff:name>
+          <ff:year>1908</ff:year>
+          <ff:placeNameType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/placename#5</ff:conceptID>
+            <ff:term>Bebyggelse, havne og industrianl&#230;g</ff:term>
+          </ff:placeNameType>
+        </ff:placeName>
+      </ff:placeNames>
+      <ff:adminArea>
+        <ff:municipality>
+          <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/municipality#860</ff:conceptID>
+          <ff:term>Hj&#248;rring</ff:term>
+        </ff:municipality>
+        <ff:museum>
+          <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#)VHM</ff:conceptID>
+          <ff:term>Vendsyssel Historiske Museum</ff:term>
+        </ff:museum>
+        <ff:supervision>
+          <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#NJM</ff:conceptID>
+          <ff:term>Nordjyllands Historiske Museum</ff:term>
+        </ff:supervision>
+      </ff:adminArea>
+      <ff:geodata xmlns="http://www.opengis.net/gml">
+        <gml:Point srsName="EPSG:25832">
+          <gml:pos srsDimension="2">566105;6363138</gml:pos>
+        </gml:Point>
+      </ff:geodata>
+      <ff:objects>
+        <ff:primaryObject>
+          <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/object/13118</ff:id>
+          <ff:text xsi:nil="true"/>
+          <ff:date>
+            <ff:fromYear>-3950</ff:fromYear>
+            <ff:toYear>-1701</ff:toYear>
+            <ff:mainPeriod>AXXX</ff:mainPeriod>
+            <ff:period>
+              <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/period#AYXX</ff:conceptID>
+              <ff:term>Neolitikum</ff:term>
+              <ff:publicTerm>Bondestenalder</ff:publicTerm>
+            </ff:period>
+          </ff:date>
+          <ff:characteristics/>
+          <ff:objectType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/object#01092</ff:conceptID>
+            <ff:term>Rundh&#248;j</ff:term>
+            <ff:objectClassTerm>Begravelse</ff:objectClassTerm>
+            <ff:objectClassExplanation>alle begravelsesformer</ff:objectClassExplanation>
+          </ff:objectType>
+          <ff:transportObject/>
+        </ff:primaryObject>
+        <ff:object>
+          <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/object/173050</ff:id>
+          <ff:text xsi:nil="true"/>
+          <ff:date>
+            <ff:fromYear>-3950</ff:fromYear>
+            <ff:toYear>-1701</ff:toYear>
+            <ff:mainPeriod>AXXX</ff:mainPeriod>
+            <ff:period>
+              <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/period#AYXX</ff:conceptID>
+              <ff:term>Neolitikum</ff:term>
+              <ff:publicTerm>Bondestenalder</ff:publicTerm>
+            </ff:period>
+          </ff:date>
+          <ff:characteristics/>
+          <ff:objectType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/object#01046</ff:conceptID>
+            <ff:term>Enkeltfund</ff:term>
+            <ff:objectClassTerm>Begravelse</ff:objectClassTerm>
+            <ff:objectClassExplanation>alle begravelsesformer</ff:objectClassExplanation>
+          </ff:objectType>
+          <ff:transportObject/>
+        </ff:object>
+      </ff:objects>
+      <ff:events>
+        <ff:event>
+          <ff:startDate>1908</ff:startDate>
+          <ff:endDate>1908</ff:endDate>
+          <ff:altArchive xsi:nil="true"/>
+          <ff:caseNo xsi:nil="true"/>
+          <ff:eventType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/event#MBR</ff:conceptID>
+            <ff:term>Museal berejsning</ff:term>
+            <ff:eventClassTerm>Museal</ff:eventClassTerm>
+          </ff:eventType>
+          <ff:institution>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#N01</ff:conceptID>
+            <ff:term>Nationalmuseet, Danske Afd., Danmarks Oldtid</ff:term>
+          </ff:institution>
+          <ff:archive>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archive#SBT</ff:conceptID>
+            <ff:term>Sognebeskrivelsen</ff:term>
+          </ff:archive>
+          <ff:texts>
+            <ff:text>
+              <ff:freeText>H&#248;jtomt, hvori der er fundet en Flint&#248;xe.</ff:freeText>
+              <ff:textType>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/text#BTE</ff:conceptID>
+                <ff:term>Berejsertekst</ff:term>
+              </ff:textType>
+            </ff:text>
+          </ff:texts>
+          <ff:persons>
+            <ff:person>
+              <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/person#117105</ff:conceptID>
+              <ff:term>T. Thomsen</ff:term>
+              <ff:title>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/title#1421</ff:conceptID>
+                <ff:term>gartner</ff:term>
+              </ff:title>
+              <ff:role>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/role#211</ff:conceptID>
+                <ff:term>Berejser</ff:term>
+              </ff:role>
+            </ff:person>
+            <ff:person>
+              <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/person#125261</ff:conceptID>
+              <ff:term>T. Thomsen</ff:term>
+              <ff:title>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/title#1421</ff:conceptID>
+                <ff:term>gartner</ff:term>
+              </ff:title>
+              <ff:role>
+                <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/role#211</ff:conceptID>
+                <ff:term>Berejser</ff:term>
+              </ff:role>
+            </ff:person>
+          </ff:persons>
+        </ff:event>
+      </ff:events>
+      <ff:digitalDocumentations>
+        <ff:digitalDocumentation>
+          <ff:id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/map/10751</ff:id>
+          <ff:name>Agdrup</ff:name>
+          <ff:date>2020-01-17</ff:date>
+          <ff:filename xsi:nil="true"/>
+          <ff:copyright>Kort og Matrikelstyrelsen</ff:copyright>
+          <ff:legalUse>M&#229; kun kopieres til personlig brug.</ff:legalUse>
+          <ff:description>Kortet viser lokalitetens placering i Danmark.</ff:description>
+          <ff:link>http://www.kulturarv.dk/fundogfortidsminder/resource/map/10751</ff:link>
+          <ff:isShownAt xsi:nil="true"/>
+          <ff:documentType>
+            <ff:conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#USP</ff:conceptID>
+            <ff:term>Uspecificeret</ff:term>
+          </ff:documentType>
+        </ff:digitalDocumentation>
+      </ff:digitalDocumentations>
+    </ff:site>
+  </metadata>
+</record>

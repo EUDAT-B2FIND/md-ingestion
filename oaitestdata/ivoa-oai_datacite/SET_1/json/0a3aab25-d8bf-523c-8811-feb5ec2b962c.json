@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "IVOA Data Models WG <dm@ivoa.net>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://ivoa.net/std/ivoadm",
+    "MetadataAccess": [
+        "ivo://ivoa.net/std/ivoadm"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "IVOA"
+    ],
+    "author": [
+        "Donaldson, T.",
+        "Laurino, O.",
+        "Bourges, L.",
+        "Salgado, J.",
+        "Lemson, G.",
+        "Demleitner, M.",
+        "Dowler, P.",
+        "Graham, M.",
+        "Gray, N.",
+        "Cresitello-Dittmar, M.",
+        "Michel, L."
+    ],
+    "fulltext": "ivo://ivoa.net/std/ivoadm;2018-05-19T09:00:00Z;Standard;ivo_managed;Lemson, G.;Laurino, O.;Bourges, L.;Cresitello-Dittmar, M.;Demleitner, M.;Donaldson, T.;Dowler, P.;Graham, M.;Gray, N.;Michel, L.;Salgado, J.;The ivoa data model;IVOA;2017;Virtual observatory;IVOA Data Models WG <dm@ivoa.net>;ivo://ivoa.net/std/ivoadm;http://ivoa.net/documents/VODML/;1.0;\n\t\t\tUltimately all types in a VO-DML model are defined as hierarchies \n\t\t\tof primitive types. This Model defines a special, predefined model \n\t\t\tthat contains a set of the most common of such types: integer, \n\t\t\treal, string etc. This\n    ",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0a3aab25-d8bf-523c-8811-feb5ec2b962c",
+    "notes": [
+        "\n\t\t\tUltimately all types in a VO-DML model are defined as hierarchies \n\t\t\tof primitive types. This Model defines a special, predefined model \n\t\t\tthat contains a set of the most common of such types: integer, \n\t\t\treal, string etc. This\n    "
+    ],
+    "oai_identifier": [
+        "ivo://ivoa.net/std/ivoadm"
+    ],
+    "oai_set": [
+        "Standard",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Virtual observatory"
+        }
+    ],
+    "title": [
+        "The ivoa data model"
+    ],
+    "url": "http://ivoa.net/documents/VODML/"
+}
