@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "ADC ArcheoProjecten"
+    ],
+    "Contributor": [
+        "ADC ArcheoProjecten"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17026/dans-xj6-pvkp",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/pdf"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:108007",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:108007"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "ADC ArcheoProjecten"
+    ],
+    "RelatedIdentifier": [
+        "https://archisarchief.cultureelerfgoed.nl/Archis2/Archeorapporten/24/AR26670"
+    ],
+    "ResourceType": [
+        "Dataset; datacollection"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "SpatialCoverage": [
+        "\n            "
+    ],
+    "TempCoverageBegin": 63458337599,
+    "TempCoverageEnd": 63651182399,
+    "TemporalCoverage": " period : ( 2011-12-01T11:59:59Z - 2018-01-10T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2011-12-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-01-10T11:59:59Z",
+    "author": [
+        "Rooij, J.A.G. van"
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:108007;2018-09-18T17:50:17Z;D30000:D37000;easy-collection:4;10.17026/dans-xj6-pvkp;Rooij, J.A.G. van;ADC ArcheoProjecten;Osseweg 1 te Heesch (gemeente Bernheze). Een Inventariserend Veldonderzoek in de vorm van een verkennend booronderzoek.;ADC-rapport 2950;Heesch - Osseweg 1-3;Osseweg 1-3;ADC-rapport 2950;Heesch - Osseweg 1-3;Osseweg 1-3;ADC ArcheoProjecten;2018;Archaeology;ADC ArcheoProjecten;2011-12-01;2018-01-10;nl;Dataset;urn:nbn:nl:ui:13-of-28pi;easy-dataset:108007;https://archisarchief.cultureelerfgoed.nl/Archis2/Archeorapporten/24/AR26670;application/pdf;info:eu-repo/semantics/openAccess;Onderzoeksrapport;Heesch;Bernheze;Noord-Brabant;Osseweg 1-3;51.73661796;5.53423315",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a9f9f27-92c7-5cda-80a6-49b406a76b2b",
+    "notes": [
+        "Onderzoeksrapport"
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:108007"
+    ],
+    "oai_set": [
+        "D30000:D37000",
+        "easy-collection:4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Archaeology"
+        }
+    ],
+    "title": [
+        "Osseweg 1 te Heesch (gemeente Bernheze). Een Inventariserend Veldonderzoek in de vorm van een verkennend booronderzoek.",
+        "ADC-rapport 2950",
+        "Heesch - Osseweg 1-3",
+        "Osseweg 1-3",
+        "ADC-rapport 2950",
+        "Heesch - Osseweg 1-3",
+        "Osseweg 1-3"
+    ],
+    "url": ""
+}

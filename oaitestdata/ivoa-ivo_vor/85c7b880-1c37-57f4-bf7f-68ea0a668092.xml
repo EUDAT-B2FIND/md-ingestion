@@ -1,0 +1,660 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/V/109</oai:identifier>
+    <oai:datestamp>2018-12-27T12:49:19Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2018-06-29T11:02:44" status="active" updated="2018-06-29T11:02:44" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>SKY2000 Catalog, Version 4 (Myers+ 2002)</title>
+      <shortName>V/109</shortName>
+      <identifier>ivo://CDS.VizieR/V/109</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Myers J.R., Sande C.B., Miller A.C., Warren Jr. W.H., Tracewell D.A.</name>
+        </creator>
+        <contributor>Francois Ochsenbein [CDS]</contributor>
+        <date role="creation">2018-06-29T11:02:44</date>
+        <version>16-Sep-2001</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Positional_Data</subject>
+        <subject>Stars</subject>
+        <description>The SKYMAP Star Catalog System consists of a Master Catalog stellar database and a collection of utility software designed to create and maintain the database and to generate derivative mission star catalogs (run catalogs). It contains an extensive compilation of information on almost 300000 stars brighter than 8.0 mag. The original SKYMAP Master Catalog was generated in the early 1970's. Incremental updates and corrections were made over the following years but the first complete revision of the source data occurred with Version 4.0. This revision also produced a unique, consolidated source of astrometric information which can be used by the astronomical community. The derived quantities were removed and wideband and photometric data in the R (red) and I (infrared) systems were added. Version 4 of the SKY2000 Master Catalog was completed in April 2002; it marks the global replacement of the variability identifier and variability data fields. More details can be found in the description file sky2kv4.pdf. This version supersedes the previous versions 1(V/95), 2(V/102), and 3(V/105). </description>
+        <source format="bibcode"> </source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?V/109</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=V/109</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=V/109</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table V/109/sky2kv4 (The Sky2000 Version 4 Catalogue)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/V/109/sky2kv4?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>45.04394531249999</ra>
+          <dec>0.24246333228778008</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/V/109?product=MOC&amp;nside=512</footprint>
+        <waveband>Optical</waveband>
+      </coverage>
+      <table>
+        <name>V/109/refs</name>
+        <description>Reference table</description>
+        <column>
+          <name>RefNo</name>
+          <description>[1/99]+= Reference number</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>n_RefNo</name>
+          <description>Note on the addition of the reference</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>Text</name>
+          <description>Text of reference</description>
+          <ucd>meta.bib</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+      <table>
+        <name>V/109/sky2kv4</name>
+        <description>The Sky2000 Version 4 Catalogue</description>
+        <column>
+          <name>SKY2000</name>
+          <description>Identifier based on J2000 position</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>ID</name>
+          <description>Skymap number</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>ID_C</name>
+          <description>?Skymap number of third component</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>magMax</name>
+          <description>?Maximum variable magnitude</description>
+          <unit>mag</unit>
+          <ucd>phot.mag</ucd>
+        </column>
+        <column>
+          <name>magMin</name>
+          <description>?Minimum variable magnitude</description>
+          <unit>mag</unit>
+          <ucd>phot.mag</ucd>
+        </column>
+        <column>
+          <name>varAmp</name>
+          <description>?Variability amplitude</description>
+          <unit>mag</unit>
+          <ucd>src.var.amplitude</ucd>
+        </column>
+        <column>
+          <name>n_varAmp</name>
+          <description>Passband of variability amplitude</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>varPer</name>
+          <description>?Period of variability</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>varEp</name>
+          <description>?Epoch of variability (JD-2400000)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>varTyp</name>
+          <description>?Type of variable star</description>
+          <ucd>meta.code;src.var</ucd>
+        </column>
+        <column>
+          <name>r_var</name>
+          <description>?Source of variability data</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>mag1</name>
+          <description>?Passband #1-magnitude (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag</ucd>
+        </column>
+        <column>
+          <name>v-mag1</name>
+          <description>?v - passband #1 color</description>
+          <unit>mag</unit>
+          <ucd>phot.color</ucd>
+        </column>
+        <column>
+          <name>e_mag1</name>
+          <description>?Passband #1 uncertainty in mag. or col.</description>
+          <unit>mag</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>n_mag1</name>
+          <description>[RJC] Passband #1 photometric system</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>HD</name>
+          <description>?Henry Draper &lt;III/135&gt; number</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>m_HD</name>
+          <description>[1239]? HD duplicity indication</description>
+          <ucd>meta.code.multip</ucd>
+        </column>
+        <column>
+          <name>u_HD</name>
+          <description>HD identification uncertain</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>SAO</name>
+          <description>? SAO &lt;I/131&gt; number</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>m_SAO</name>
+          <description>SAO component</description>
+          <ucd>meta.code.multip</ucd>
+        </column>
+        <column>
+          <name>DM</name>
+          <description>Durchmusterung (BD &lt;I/122&gt;; SD &lt;I/119&gt;; CD &lt;I/114&gt;; CP &lt;I/108&gt;)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>m_DM</name>
+          <description>Durchmusterung supplement letter</description>
+          <ucd>meta.code.multip</ucd>
+        </column>
+        <column>
+          <name>u_DM</name>
+          <description>[: ] DM identification uncertain</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>HR</name>
+          <description>?Harvard Revised &lt;V/50&gt; num. (=BS)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>WDS</name>
+          <description>Washington Double Stars &lt;I/237&gt; number</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>m_WDS</name>
+          <description>WDS components</description>
+          <ucd>meta.code.multip</ucd>
+        </column>
+        <column>
+          <name>u_WDS</name>
+          <description>[: ] WDS identification uncertain</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>PPM</name>
+          <description>?Position and Proper Motion number (&lt;I/146&gt;, &lt;I/193&gt;, &lt;I/208&gt;)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>u_PPM</name>
+          <description>[: ] PPM identification uncertain</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>ID_merg</name>
+          <description>?Skymap num. of last skymap entry merged with this star</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>Name</name>
+          <description>Star name (or AGK3 number)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>Vname</name>
+          <description>Variable star name (or doubtful variability)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Right ascension (J2000) hours</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Declination degrees (J2000)</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>e_pos</name>
+          <description>Position uncertainty</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f_pos</name>
+          <description>[b] Blended position flag</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>r_pos</name>
+          <description>Source of position</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>pmRA</name>
+          <description>Proper motion in RA (J2000)</description>
+          <unit>s/a</unit>
+          <ucd>pos.pm;pos.eq.ra</ucd>
+        </column>
+        <column>
+          <name>pmDE</name>
+          <description>Proper motion in Dec (J2000)</description>
+          <unit>arcsec/a</unit>
+          <ucd>pos.pm;pos.eq.dec</ucd>
+        </column>
+        <column>
+          <name>r_pm</name>
+          <description>?Source of proper motion data</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>RV</name>
+          <description>?Radial velocity</description>
+          <unit>km/s</unit>
+          <ucd>phys.veloc;pos.heliocentric</ucd>
+        </column>
+        <column>
+          <name>r_RV</name>
+          <description>?Source of radial velocity data</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>Plx</name>
+          <description>?Trigonometric parallax</description>
+          <unit>arcsec</unit>
+          <ucd>pos.parallax.trig</ucd>
+        </column>
+        <column>
+          <name>e_Plx</name>
+          <description>?Trigonometric parallax uncertainty</description>
+          <unit>arcsec</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>r_Plx</name>
+          <description>?Source of trigonometric parallax data</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>GLON</name>
+          <description>Galactic longitude (B1950)</description>
+          <unit>deg</unit>
+          <ucd>pos.galactic.lon</ucd>
+        </column>
+        <column>
+          <name>GLAT</name>
+          <description>Galactic latitude (B1950)</description>
+          <unit>deg</unit>
+          <ucd>pos.galactic.lat</ucd>
+        </column>
+        <column>
+          <name>Vmag</name>
+          <description>?Observed visual magnitude (V or v)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.V</ucd>
+        </column>
+        <column>
+          <name>Vder</name>
+          <description>?Derived visual magnitude</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.V</ucd>
+        </column>
+        <column>
+          <name>e_Vmag</name>
+          <description>?Derived v or observed visual magnitude uncertainty</description>
+          <unit>mag</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f_Vmag</name>
+          <description>[b] Blended visual magnitude flag</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>r_Vmag</name>
+          <description>?Source of visual magnitude</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>n_Vmag</name>
+          <description>?V magnitude derivation flag</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>Bmag</name>
+          <description>?B-magnitude (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.B</ucd>
+        </column>
+        <column>
+          <name>B-V</name>
+          <description>?B-V color (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.color;em.opt.B;em.opt.V</ucd>
+        </column>
+        <column>
+          <name>e_Bmag</name>
+          <description>?B or (B-V) magnitude uncertainty</description>
+          <unit>mag</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>f_Bmag</name>
+          <description>[b] Blended b-magnitude flag</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>r_Bmag</name>
+          <description>?Source of b-magnitude</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>Umag</name>
+          <description>?U-magnitude (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.U</ucd>
+        </column>
+        <column>
+          <name>U-B</name>
+          <description>?U-B color (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.color;em.opt.U;em.opt.B</ucd>
+        </column>
+        <column>
+          <name>e_Umag</name>
+          <description>?U or (U-B) magnitude uncertainty</description>
+          <unit>mag</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>n_Umag</name>
+          <description>Blended u-magnitude flag</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>r_Umag</name>
+          <description>?Source of u-magnitude</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>Ptv</name>
+          <description>?Photovisual magnitude (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt.V</ucd>
+        </column>
+        <column>
+          <name>r_Ptv</name>
+          <description>?Source of ptv magnitudes</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>Ptg</name>
+          <description>?Photographic magnitude (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;em.opt</ucd>
+        </column>
+        <column>
+          <name>r_Ptg</name>
+          <description>?Source of ptg magnitudes</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>SpMK</name>
+          <description>Morgan-Keenan (MK) spectral type</description>
+          <ucd>src.spType</ucd>
+        </column>
+        <column>
+          <name>r_SpMK</name>
+          <description>?Source of MK spectral type data</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>Sp</name>
+          <description>One-dimensional spectral class</description>
+          <ucd>src.spType</ucd>
+        </column>
+        <column>
+          <name>r_Sp</name>
+          <description>?Source of one-dimen. spectral class</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>sep</name>
+          <description>?Separation of brightest and second brightest components</description>
+          <unit>arcsec</unit>
+          <ucd>pos.angDistance</ucd>
+        </column>
+        <column>
+          <name>Dmag</name>
+          <description>?Magnitude difference of the brightest and second brightest components</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;arith.diff</ucd>
+        </column>
+        <column>
+          <name>orbPer</name>
+          <description>?Orbital period</description>
+          <unit>yr</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>PA</name>
+          <description>?Position angle</description>
+          <unit>deg</unit>
+          <ucd>pos.posAng</ucd>
+        </column>
+        <column>
+          <name>date</name>
+          <description>?Year of observation (AD)</description>
+          <unit>yr</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>r_dup</name>
+          <description>?Source of multiplicity data</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>n_Dmag</name>
+          <description>Passband of multiple star mag. dif.</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>dist1</name>
+          <description>?Distance to nearest neighboring star in the master catalog</description>
+          <unit>deg</unit>
+          <ucd>pos.angDistance</ucd>
+        </column>
+        <column>
+          <name>dist2</name>
+          <description>?Dist. to nearest neighboring master cat. star no more than 2 mag. fainter</description>
+          <unit>deg</unit>
+          <ucd>pos.angDistance</ucd>
+        </column>
+        <column>
+          <name>ID_A</name>
+          <description>?Skymap number of primary component</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>ID_B</name>
+          <description>?Skymap number of second component</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>p_mag1</name>
+          <description>[R] Passband #1</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>r_mag1</name>
+          <description>?Source of passband #1: mag. or color</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>mag2</name>
+          <description>?Passband #2-magnitude (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag</ucd>
+        </column>
+        <column>
+          <name>v-mag2</name>
+          <description>?v - passband #2 color</description>
+          <unit>mag</unit>
+          <ucd>phot.color</ucd>
+        </column>
+        <column>
+          <name>Simbad</name>
+          <description>Simbad column added by the CDS</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>e_mag2</name>
+          <description>?Passband #2 uncertainty in mag. or col.</description>
+          <unit>mag</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>n_mag2</name>
+          <description>[JEC] Passband #2 photometric system</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>p_mag2</name>
+          <description>[I] Passband #2</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>r_mag2</name>
+          <description>?Source of passband #2: mag. or color</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>ci1-2</name>
+          <description>?Passband #1 - passband #2 color</description>
+          <unit>mag</unit>
+          <ucd>phot.color</ucd>
+        </column>
+        <column>
+          <name>f_mag1</name>
+          <description>[b] Blended passband #1 mag/color flag</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>f_mag2</name>
+          <description>[b] Blended passband #2 mag/color flag</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>mag3</name>
+          <description>?Passband #3-magnitude (observed)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag</ucd>
+        </column>
+        <column>
+          <name>v-mag3</name>
+          <description>?v - passband #3 color</description>
+          <unit>mag</unit>
+          <ucd>phot.color</ucd>
+        </column>
+        <column>
+          <name>e_mag3</name>
+          <description>?Passband #3 uncertainty in mag. or col.</description>
+          <unit>mag</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>n_mag3</name>
+          <description>Passband #3 photometric system</description>
+          <ucd>meta.note</ucd>
+        </column>
+        <column>
+          <name>p_mag3</name>
+          <description>[X] Passband #3</description>
+          <ucd>instr.bandpass</ucd>
+        </column>
+        <column>
+          <name>r_mag3</name>
+          <description>?Source of passband #3: mag. or color</description>
+          <ucd>meta.ref</ucd>
+        </column>
+        <column>
+          <name>f_mag3</name>
+          <description>[b] Blended passband #3 mag/color flag</description>
+          <ucd>meta.code.error</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

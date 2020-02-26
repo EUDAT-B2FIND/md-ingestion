@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Peter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/47f4e02ea9b0468fba5a7df6a6978de0",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/47f4e02ea9b0468fba5a7df6a6978de0"
+    ],
+    "PID": "http://hdl.handle.net/11304/2c51583a-b988-11e3-8cd7-14feb57d12b9",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Peter"
+    ],
+    "ResourceType": [
+        "Audiovisual"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "MPIPL"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/47f4e02ea9b0468fba5a7df6a6978de0;2018-01-11T13:47:50Z;0afede87-2bf2-4d89-867e-d2ee57251c62;MPIPL;2016-12-22T09:51:10.537084+00:00;This is a video recording that is being used in psycholinguistic experiments.;http://hdl.handle.net/11304/2c51583a-b988-11e3-8cd7-14feb57d12b9;https://b2share.eudat.eu/api/records/47f4e02ea9b0468fba5a7df6a6978de0;oai:b2share.eudat.eu:b2rec/47f4e02ea9b0468fba5a7df6a6978de0;en;Peter;info:eu-repo/semantics/openAccess;Psycholinguistics;Experiment;Stimulus;Psycholinguistic Experiment Video;Audiovisual",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ffc1db67-cf01-521e-bf30-040066bc7877",
+    "notes": [
+        "This is a video recording that is being used in psycholinguistic experiments."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/47f4e02ea9b0468fba5a7df6a6978de0"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Psycholinguistics"
+        },
+        {
+            "name": "Experiment"
+        },
+        {
+            "name": "Stimulus"
+        }
+    ],
+    "title": [
+        "Psycholinguistic Experiment Video"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/47f4e02ea9b0468fba5a7df6a6978de0"
+}

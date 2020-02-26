@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/A+A/589/A110",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/A+A/589/A110"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2016A&A...589A.110A"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Anderson J.P., Gutierrez C.P., Dessart L., Hamuy M., Galbany L., Morrell N.I., Stritzinger M.D., Phillips M.M., Folatelli G., Boffin H.M.J., De Jaeger T., Kuncarayakti H., Prieto J.L."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/A+A/589/A110;2018-04-05T10:00:00Z;J.A_A;ivo_managed;Anderson J.P., Gutierrez C.P., Dessart L., Hamuy M., Galbany L., Morrell N.I., Stritzinger M.D., Phillips M.M., Folatelli G., Boffin H.M.J., De Jaeger T., Kuncarayakti H., Prieto J.L.;SN II in host HII regions (Anderson+, 2016);CDS;2018;HII_regions;SuperNovae;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/A+A/589/A110;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/589/A110;2016A&A...589A.110A;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "b03cdcbb-6a7a-5ded-bdb6-786e6e13473d",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/A+A/589/A110"
+    ],
+    "oai_set": [
+        "J.A_A",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "HII_regions"
+        },
+        {
+            "name": "SuperNovae"
+        }
+    ],
+    "title": [
+        "SN II in host HII regions (Anderson+, 2016)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/589/A110"
+}

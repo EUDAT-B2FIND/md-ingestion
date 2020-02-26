@@ -1,0 +1,66 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.5061/dryad.885c4",
+    "DiscHierarchy": [
+        "1.3.3",
+        "Fine Arts, Music, Theatre and Media Studies",
+        "Dance"
+    ],
+    "Discipline": "Medicine",
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:93309",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:93309"
+    ],
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess"
+    ],
+    "TempCoverageBegin": 63599943599,
+    "TempCoverageEnd": 63599943599,
+    "TemporalCoverage": " period : ( 2016-05-27T11:59:59Z - 2016-05-27T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2016-05-27T11:59:59Z",
+    "TemporalCoverage:EndDate": "2016-05-27T11:59:59Z",
+    "author": [
+        "Rubalcaba, Juan G.",
+        "Polo, Vicente",
+        "Veiga, Jos\u00e9 P."
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:93309;2018-09-18T17:36:06Z;D20000;Rubalcaba, Juan G.;Veiga, Jos\u00e9 P.;Polo, Vicente;Data from: Is offspring dispersal related to male mating status? An experiment with the facultatively polygynous spotless starling;Data Archiving and Networked Services (DANS);2016;Life sciences, medicine and health care ;2016-05-27T19:09:20.000+02:00;2016-05-27T19:09:20.000+02:00;Dataset;10.5061/dryad.885c4;urn:nbn:nl:ui:13-cp-erx3;easy-dataset:93309;info:eu-repo/semantics/closedAccess;Patterns of natal dispersal are generally sex-biased in vertebrates, i.e. female-biased in birds and male-biased in mammals. Interphyletic comparisons in mammals suggest that male-biased dispersal occurs in polygynous and promiscuous species where local mate competition among males exceeds local resource competition among females. However, few studies have analysed sex-biased patterns of dispersal at the individual level, and facultatively polygynous species might offer this opportunity. In the spotless starling, polygynous males exhibit their mating status during courtship carrying higher amounts of green plants to nests than monogamous males. We experimentally incorporated green plants to nests during four years to analyse long-term consequences on breeding success and offspring recruitment rates. We unexpectedly found that experimental sons recruited farther than experimental daughters, while control daughters recruited farther than control sons. A similar pattern was found using observational information from eight years. We discuss this result in the context of local competition hypothesis and speculate that sons dispersed farther from nests controlled by polygynous males to avoid competition with relatives. The amount of green plants in nests affects female perception of male attractiveness and degree of polygyny, although little is known about proximate mechanisms linking this process with the offspring dispersal behaviour. Our results support the idea that male-biased dispersal is related to polygyny in a facultatively polygynous bird.",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0ac04acf-aae4-5ef2-a89e-8e508d242815",
+    "notes": [
+        "Patterns of natal dispersal are generally sex-biased in vertebrates, i.e. female-biased in birds and male-biased in mammals. Interphyletic comparisons in mammals suggest that male-biased dispersal occurs in polygynous and promiscuous species where local mate competition among males exceeds local resource competition among females. However, few studies have analysed sex-biased patterns of dispersal at the individual level, and facultatively polygynous species might offer this opportunity. In the spotless starling, polygynous males exhibit their mating status during courtship carrying higher amounts of green plants to nests than monogamous males. We experimentally incorporated green plants to nests during four years to analyse long-term consequences on breeding success and offspring recruitment rates. We unexpectedly found that experimental sons recruited farther than experimental daughters, while control daughters recruited farther than control sons. A similar pattern was found using observational information from eight years. We discuss this result in the context of local competition hypothesis and speculate that sons dispersed farther from nests controlled by polygynous males to avoid competition with relatives. The amount of green plants in nests affects female perception of male attractiveness and degree of polygyny, although little is known about proximate mechanisms linking this process with the offspring dispersal behaviour. Our results support the idea that male-biased dispersal is related to polygyny in a facultatively polygynous bird."
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:93309"
+    ],
+    "oai_set": [
+        "D20000"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Life sciences"
+        },
+        {
+            "name": "medicine health care"
+        }
+    ],
+    "title": [
+        "Data from: Is offspring dispersal related to male mating status? An experiment with the facultatively polygynous spotless starling"
+    ],
+    "url": ""
+}

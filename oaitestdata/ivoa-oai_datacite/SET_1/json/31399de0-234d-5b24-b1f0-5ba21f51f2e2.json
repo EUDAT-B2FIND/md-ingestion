@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/ApJS/235/8",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/ApJS/235/8"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2018ApJS..235....8B"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Bittner D.M., Bernath P.F."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/ApJS/235/8;2018-10-22T07:49:58Z;J.ApJS;ivo_managed;Bittner D.M., Bernath P.F.;Line lists for X^1^{Sigma}^+^ LiF and LiCl (Bittner+, 2018);CDS;2018;Atomic_Data;Molecular_Data;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/ApJS/235/8;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJS/235/8;2018ApJS..235....8B;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "31399de0-234d-5b24-b1f0-5ba21f51f2e2",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/ApJS/235/8"
+    ],
+    "oai_set": [
+        "J.ApJS",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atomic_Data"
+        },
+        {
+            "name": "Molecular_Data"
+        }
+    ],
+    "title": [
+        "Line lists for X^1^{Sigma}^+^ LiF and LiCl (Bittner+, 2018)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJS/235/8"
+}

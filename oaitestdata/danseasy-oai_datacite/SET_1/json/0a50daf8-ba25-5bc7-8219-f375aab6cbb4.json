@@ -1,0 +1,66 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.5061/dryad.1b2q0",
+    "DiscHierarchy": [
+        "1.3.3",
+        "Fine Arts, Music, Theatre and Media Studies",
+        "Dance"
+    ],
+    "Discipline": "Medicine",
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:83192",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:83192"
+    ],
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess"
+    ],
+    "TempCoverageBegin": 63497995199,
+    "TempCoverageEnd": 63497995199,
+    "TemporalCoverage": " period : ( 2013-03-04T11:59:59Z - 2013-03-04T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2013-03-04T11:59:59Z",
+    "TemporalCoverage:EndDate": "2013-03-04T11:59:59Z",
+    "author": [
+        "Stevens, Martin",
+        "Teasdale, Luisa C.",
+        "Stuart-Fox, Devi"
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:83192;2018-09-18T17:26:32Z;D20000;Teasdale, Luisa C.;Stevens, Martin;Stuart-Fox, Devi;Data from: Discrete colour polymorphism in the tawny dragon lizard (Ctenophorus decresii) and differences in signal conspicuousness among morphs;Data Archiving and Networked Services (DANS);2013;Life sciences, medicine and health care ;2013-03-04T19:57:28.000+01:00;2013-03-04T19:57:28.000+01:00;Dataset;10.5061/dryad.1b2q0;urn:nbn:nl:ui:13-uz-sza6;easy-dataset:83192;info:eu-repo/semantics/closedAccess;Intraspecific colour variation is common in nature and can vary from the coexistence of discrete colour variants in polymorphic species to continuous variation. Whether coloration is continuous or discrete is often ambiguous and many species exhibit a combination of the two. The nature of the variation (discrete or continuous) has implications for both the genetic basis of the colour variation and the evolutionary processes generating and maintaining it. Consequently, it is important to qualify the existence of discrete morphs, particularly in relation to the animal's visual system. In this study, we quantified male throat colour variation in Ctenophorus decresii tawny dragon lizard and tested for morphological and ecological correlates of the colour variants. We confirmed that discrete throat colour morphs can be defined based on colour and pattern analyses independent of the human visual system. We also found that the colour variants differed in their conspicuousness from the background, to the lizard's visual system, which has implications for signalling. However, the morphs did not differ in morphology or microhabitat use, which suggests that these characteristics are not involved in the evolutionary maintenance of the polymorphism.",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0a50daf8-ba25-5bc7-8219-f375aab6cbb4",
+    "notes": [
+        "Intraspecific colour variation is common in nature and can vary from the coexistence of discrete colour variants in polymorphic species to continuous variation. Whether coloration is continuous or discrete is often ambiguous and many species exhibit a combination of the two. The nature of the variation (discrete or continuous) has implications for both the genetic basis of the colour variation and the evolutionary processes generating and maintaining it. Consequently, it is important to qualify the existence of discrete morphs, particularly in relation to the animal's visual system. In this study, we quantified male throat colour variation in Ctenophorus decresii tawny dragon lizard and tested for morphological and ecological correlates of the colour variants. We confirmed that discrete throat colour morphs can be defined based on colour and pattern analyses independent of the human visual system. We also found that the colour variants differed in their conspicuousness from the background, to the lizard's visual system, which has implications for signalling. However, the morphs did not differ in morphology or microhabitat use, which suggests that these characteristics are not involved in the evolutionary maintenance of the polymorphism."
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:83192"
+    ],
+    "oai_set": [
+        "D20000"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Life sciences"
+        },
+        {
+            "name": "medicine health care"
+        }
+    ],
+    "title": [
+        "Data from: Discrete colour polymorphism in the tawny dragon lizard (Ctenophorus decresii) and differences in signal conspicuousness among morphs"
+    ],
+    "url": ""
+}

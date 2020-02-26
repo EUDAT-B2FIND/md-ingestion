@@ -1,0 +1,129 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/AJ/133/255</oai:identifier>
+    <oai:datestamp>2018-12-27T12:32:58Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2017-07-04T07:09:07" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>Light-curve and radial velocities of BD+42 2782 (Lu+, 2007)</title>
+      <shortName>J/AJ/133/255</shortName>
+      <identifier>ivo://CDS.VizieR/J/AJ/133/255</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Lu W., Hrivnak B.J., Rush B.W.</name>
+        </creator>
+        <contributor>Greg Schwarz [AAS], Marianne Brouty [CDS]</contributor>
+        <date role="creation">2017-07-04T07:09:07</date>
+        <version>11-Dec-2008</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Binaries:eclipsing</subject>
+        <subject>Photometry:wide-band</subject>
+        <subject>Velocities</subject>
+        <description>Photoelectric observations of BD+42 2782 were made with the 0.4m, f/12 Cassegrain telescope at the Valparaiso University Observatory. Observations were carried out in two intervals, 2004 June 5-14 (four nights) and 2004 September 7 to November 7 (eight nights). </description>
+        <source format="bibcode">2007AJ....133..255L</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/133/255</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/AJ/133/255</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/AJ/133/255</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <coverage>
+        <waveband>Optical</waveband>
+        <waveband>Infrared</waveband>
+      </coverage>
+      <table>
+        <name>J/AJ/133/255/table1</name>
+        <description>Differential magnitudes for BD+42 2782 from 2004</description>
+        <column>
+          <name>HJDRc</name>
+          <description>Heliocentric Julian Date</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>DRcmag</name>
+          <description>Differential Magnitude in R_c_</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;arith.diff</ucd>
+        </column>
+        <column>
+          <name>HJDIc</name>
+          <description>? Heliocentric Julian Date</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>DIcmag</name>
+          <description>? Differential Magnitude in I_c_</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;arith.diff</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/AJ/133/255/table3</name>
+        <description>Radial velocities for both components of BD+42 2782</description>
+        <column>
+          <name>HJD</name>
+          <description>Heliocentric Julian Date</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>Phase</name>
+          <description>Phase</description>
+          <ucd>time.phase</ucd>
+        </column>
+        <column>
+          <name>Vp</name>
+          <description>? Radial velocity of primary component</description>
+          <unit>km/s</unit>
+          <ucd>spect.dopplerVeloc;pos.heliocentric</ucd>
+        </column>
+        <column>
+          <name>Vs</name>
+          <description>? Radial velocity of secondary component</description>
+          <unit>km/s</unit>
+          <ucd>spect.dopplerVeloc;pos.heliocentric</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

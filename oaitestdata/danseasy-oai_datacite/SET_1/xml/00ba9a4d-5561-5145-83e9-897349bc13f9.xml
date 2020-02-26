@@ -1,0 +1,88 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:17410</identifier>
+    <datestamp>2018-09-18T16:43:12Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>easy-collection:4</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-zfa-kx3n</identifier>
+      <creators>
+        <creator>
+          <creatorName>Tulp, C.</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Dieverbrug, bedrijventerrein</title>
+        <title>een inventariserend archeologisch veldonderzoek</title>
+        <title>STEEK 2004.04.5</title>
+        <title titleType="AlternativeTitle">een inventariserend archeologisch veldonderzoek</title>
+        <title titleType="AlternativeTitle">STEEK 2004.04.5</title>
+      </titles>
+      <publisher>De Steekproef, archeologisch onderzoeks- en adviesbureau</publisher>
+      <publicationYear>2009</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+        <subject>PROSPECTIE</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="Other">
+          <contributorName>Jelsma, J.</contributorName>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+          <contributorName>De Steekproef bv</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2009-11-05</date>
+        <date dateType="Created">2004</date>
+        <date dateType="Available">2009-11-05</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-5ql-6ih</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:17410</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl-6341406837414247677-1257439560267</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>verschillende pagineringen</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">onderzoeksrapport</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Bedrijventerrein</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Westerveld</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Nederland</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Dieverbrug</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Drenthe</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>e-ne (MARC21)</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>52.84683816</pointLatitude>
+            <pointLongitude>6.33570764</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Michael Preciado <Michael.E.Preciado@nasa.gov>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://nasa.heasarc/orionffcxo",
+    "MetadataAccess": [
+        "ivo://nasa.heasarc/orionffcxo"
+    ],
+    "PublicationTimestamp": "2019-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "NASA/GSFC HEASARC"
+    ],
+    "ResourceType": [
+        "AstroObjects"
+    ],
+    "author": [
+        "Ramirez et al."
+    ],
+    "fulltext": "ivo://nasa.heasarc/orionffcxo;2019-06-17T07:06:37Z;Ramirez et al.;Orion Flanking Fields Chandra X-Ray Point Source Catalog;NASA/GSFC HEASARC;2019;Survey Source;Michael Preciado <Michael.E.Preciado@nasa.gov>;AstroObjects;ivo://nasa.heasarc/orionffcxo;https://heasarc.gsfc.nasa.gov/W3Browse/all/orionffcxo.html;\n        https://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_orionffcxo&Action=More+Options&Action=Parameter+Search&ConeAdd=1\n      ;text/xml;text/xml;\n      This table contains the results of Chandra observations of two flanking fields (FFs) in Orion outside the Orion Nebula Cluster (ONC), in the form of a catalog of 417 sources, which includes X-ray luminosity, optical and infrared photometry, and X-ray variability information. 91 variable sources were found, 33 of which have flarelike light curves, and 11 of which have a pattern of a steady increase or decrease over a 10 hour period. The optical and infrared photometry for the stars identified as X-ray sources are consistent with most of these objects being pre-main-sequence stars with ages younger than 10 Myr. The two flanking fields in Orion were observed with the Advanced CCD Imaging Spectrometer (ACIS) detector on board the Chandra X-Ray Observatory. The north Orion flanking field (NOFF) is centered at a J2000 RA and Declination of 05:35:19, -04:48:15, which is about 36' (~5 pc, at a distance of 470 pc) north of the Trapezium cluster and was observed on 2002 August 26 with a total exposure time of 48.8 ks. The south Orion flanking field (SOFF), centered at a J2000 RA and Declination of 05:35:06, -05:40:48, which is about 17' (~ 2.5pc, at a distance of 470 pc) south of the Trapezium cluster, was observed on 2002 September 6 with a total exposure time of 47.9 ks. The data analysis for these observations was performed in the same manner as described in Ramirez et al. (2004, AJ, 127, 2659) for a similar observation of a field in NGC 2264, which should be consulted for the full details. (See also the help file for the HEASARC version of the catalog from the latter reference available at /W3Browse/chandra/ngc2264cxo.html ).\n    ",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0a3c084f-3f66-549d-8677-8de5fdb09946",
+    "notes": [
+        "\n      This table contains the results of Chandra observations of two flanking fields (FFs) in Orion outside the Orion Nebula Cluster (ONC), in the form of a catalog of 417 sources, which includes X-ray luminosity, optical and infrared photometry, and X-ray variability information. 91 variable sources were found, 33 of which have flarelike light curves, and 11 of which have a pattern of a steady increase or decrease over a 10 hour period. The optical and infrared photometry for the stars identified as X-ray sources are consistent with most of these objects being pre-main-sequence stars with ages younger than 10 Myr. The two flanking fields in Orion were observed with the Advanced CCD Imaging Spectrometer (ACIS) detector on board the Chandra X-Ray Observatory. The north Orion flanking field (NOFF) is centered at a J2000 RA and Declination of 05:35:19, -04:48:15, which is about 36' (~5 pc, at a distance of 470 pc) north of the Trapezium cluster and was observed on 2002 August 26 with a total exposure time of 48.8 ks. The south Orion flanking field (SOFF), centered at a J2000 RA and Declination of 05:35:06, -05:40:48, which is about 17' (~ 2.5pc, at a distance of 470 pc) south of the Trapezium cluster, was observed on 2002 September 6 with a total exposure time of 47.9 ks. The data analysis for these observations was performed in the same manner as described in Ramirez et al. (2004, AJ, 127, 2659) for a similar observation of a field in NGC 2264, which should be consulted for the full details. (See also the help file for the HEASARC version of the catalog from the latter reference available at /W3Browse/chandra/ngc2264cxo.html ).\n    "
+    ],
+    "oai_identifier": [
+        "ivo://nasa.heasarc/orionffcxo"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Survey Source"
+        }
+    ],
+    "title": [
+        "Orion Flanking Fields Chandra X-Ray Point Source Catalog"
+    ],
+    "url": "https://heasarc.gsfc.nasa.gov/W3Browse/all/orionffcxo.html"
+}

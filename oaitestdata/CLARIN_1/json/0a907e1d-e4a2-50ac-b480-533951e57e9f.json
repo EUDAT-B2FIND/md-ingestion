@@ -1,0 +1,96 @@
+{
+    "Contact": [
+        "http://b2share.eudat.eu"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/c7d6f8bde0924f30a8573939a5eb0cbf",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/c7d6f8bde0924f30a8573939a5eb0cbf"
+    ],
+    "PID": "http://hdl.handle.net/11304/125a4b70-86ce-11e5-9bb4-2b0aad496318",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "http://b2share.eudat.eu"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "Public Domain Mark (PD)"
+    ],
+    "author": [
+        "Robbert van Sluijs, Margot van den Berg, Pieter Muysken"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/c7d6f8bde0924f30a8573939a5eb0cbf;2018-01-11T13:48:43Z;0afede87-2bf2-4d89-867e-d2ee57251c62;Robbert van Sluijs, Margot van den Berg, Pieter Muysken;2016-12-22T10:22:43.729449+00:00;The online corpus supplement to the paper \"Exploring genealogical blends: the Surinamese Creole Cluster and the Virgin Islands Dutch Creole Cluster\", published in the CLARIN special issue of Lingua;http://hdl.handle.net/11304/125a4b70-86ce-11e5-9bb4-2b0aad496318;https://b2share.eudat.eu/api/records/c7d6f8bde0924f30a8573939a5eb0cbf;oai:b2share.eudat.eu:b2rec/c7d6f8bde0924f30a8573939a5eb0cbf;en;http://b2share.eudat.eu;info:eu-repo/semantics/openAccess;Public Domain Mark (PD);gospel harmony;translations;planter;dialogues;folk;narratives;Anansi;Suriname;Virgin Islands;Danish;West Indies;Dutch;Creole;Negerhollands;Exploring genealogical blends_Online Corpus ;Text",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0a907e1d-e4a2-50ac-b480-533951e57e9f",
+    "notes": [
+        "The online corpus supplement to the paper \"Exploring genealogical blends: the Surinamese Creole Cluster and the Virgin Islands Dutch Creole Cluster\", published in the CLARIN special issue of Lingua"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/c7d6f8bde0924f30a8573939a5eb0cbf"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "gospel harmony"
+        },
+        {
+            "name": "translations"
+        },
+        {
+            "name": "planter"
+        },
+        {
+            "name": "dialogues"
+        },
+        {
+            "name": "folk"
+        },
+        {
+            "name": "narratives"
+        },
+        {
+            "name": "Anansi"
+        },
+        {
+            "name": "Suriname"
+        },
+        {
+            "name": "Virgin Islands"
+        },
+        {
+            "name": "Danish"
+        },
+        {
+            "name": "West Indies"
+        },
+        {
+            "name": "Dutch"
+        }
+    ],
+    "title": [
+        "Exploring genealogical blends_Online Corpus "
+    ],
+    "url": "https://b2share.eudat.eu/api/records/c7d6f8bde0924f30a8573939a5eb0cbf"
+}

@@ -1,0 +1,363 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://CDS.VizieR/J/AJ/152/88</oai:identifier>
+    <oai:datestamp>2018-12-27T12:44:47Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.1" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2018-01-02T14:43:17" status="active" updated="2018-04-05T10:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VOResource/v1.1 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/VODataService/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0 http://www.ivoa.net/xml/ConeSearch/v1.0" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+      <title>Spectroscopy and photometry of HATS-11 and HATS-12 (Rabus+, 2016)</title>
+      <shortName>J/AJ/152/88</shortName>
+      <identifier>ivo://CDS.VizieR/J/AJ/152/88</identifier>
+      <curation>
+        <publisher ivo-id="ivo://CDS">CDS</publisher>
+        <creator>
+          <name>Rabus M., Jordan A., Hartman J.D., et al.</name>
+        </creator>
+        <contributor>Prepared by [AAS]; Sylvain Guehenneux [CDS]</contributor>
+        <date role="creation">2018-01-02T14:43:17</date>
+        <version>26-Oct-2016</version>
+        <contact>
+          <name>CDS support team</name>
+          <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+          <email>cds-question@unistra.fr</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Multiple_Stars</subject>
+        <subject>Photometry</subject>
+        <subject>Planets+Asteroids</subject>
+        <subject>Velocities</subject>
+        <description>The initial images of HATS-11 and HATS-12 were obtained with the HATSouth wide-field telescope network consisting of 24 Takahashi E180 astrographs with an aperture of 18cm. The photons were detected with Apogee 4k*4k U16M ALTA CCDs. Details on the time span and number of images are shown in Table1. The numerical data of the light curves are available in Table3. The spectroscopic observations are summarized in Table2. The data for the phased high-precision radial velocity and bisector span measurements are presented in Table6. Photometric follow-up observations are summarized in Table1. The data are given in Table3. </description>
+        <source format="bibcode">2016AJ....152...88R</source>
+        <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/152/88</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>IsServedBy</relationshipType>
+          <relatedResource ivo-id="ivo://CDS.VizieR/TAP">TAP VizieR generic service</relatedResource>
+        </relationship>
+      </content>
+      <rights>public</rights>
+      <capability>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/AJ/152/88</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <interface xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/AJ/152/88</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://tapvizier.u-strasbg.fr/TAPVizieR/tap</accessURL>
+        </interface>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <description>Cone search capability for table J/AJ/152/88/stars (Stars observed)</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/conesearch/J/AJ/152/88/stars?</accessURL>
+          <queryType>GET</queryType>
+          <resultType>text/xml+votable</resultType>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>50000</maxRecords>
+        <verbosity>true</verbosity>
+        <testQuery>
+          <ra>289.2041015625</ra>
+          <dec>-19.37233904781916</dec>
+          <sr>0.028629053431811713</sr>
+        </testQuery>
+      </capability>
+      <coverage>
+        <footprint ivo-id="ivo://mocivod">http://alasky.u-strasbg.fr/footprints/cats/vizier/J/AJ/152/88?product=MOC&amp;nside=512</footprint>
+        <waveband>Optical</waveband>
+      </coverage>
+      <table>
+        <name>J/AJ/152/88/table3</name>
+        <description>Light curve data for HATS-11 and HATS-12</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>Name</name>
+          <description>Object identifier: HATS-11 or HATS-12</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>BJD</name>
+          <description>Barycentric Julian Date (1)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>Dmag</name>
+          <description>[-0.055/0.041] Observed differential magnitude in Flt (2)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag;arith.diff</ucd>
+        </column>
+        <column>
+          <name>e_Dmag</name>
+          <description>[0.0005/0.02] 1{sigma} uncertainty in Dmag</description>
+          <unit>mag</unit>
+          <ucd>stat.error;phot.mag;arith.diff</ucd>
+        </column>
+        <column>
+          <name>omag</name>
+          <description>[-0.025/14.4]? Original/raw magnitude in Flt (3)</description>
+          <unit>mag</unit>
+          <ucd>phot.mag</ucd>
+        </column>
+        <column>
+          <name>Flt</name>
+          <description>Filter used (K, R, g, r, or i)</description>
+          <ucd>instr.setup;instr.filter</ucd>
+        </column>
+        <column>
+          <name>Inst</name>
+          <description>Instrument used (AAT/IRIS2, DK154, GROND, HS, LCOGT1m, PEST, or Swope) (4)</description>
+          <ucd>instr.setup</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/AJ/152/88/stars</name>
+        <description>Stars observed</description>
+        <column>
+          <name>Name</name>
+          <description>Object identifier: HATS-11 or HATS-12</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>Simbad</name>
+          <description>Simbad column added by the CDS</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>2MASS</name>
+          <description>2MASS identifier (1)</description>
+          <ucd>meta.id</ucd>
+        </column>
+        <column>
+          <name>TC</name>
+          <description>Transit Curves</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>VC</name>
+          <description>Velocity Curve</description>
+          <ucd>meta.ref.url</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>Nrv</name>
+          <description>Number of radial velocity measurements (table6)</description>
+          <ucd>meta.number</ucd>
+        </column>
+        <column>
+          <name>RAJ2000</name>
+          <description>Hour of Right Ascension (J2000) (1)</description>
+          <unit>"h:m:s"</unit>
+          <ucd>pos.eq.ra;meta.main</ucd>
+        </column>
+        <column>
+          <name>DEJ2000</name>
+          <description>Degree of Declination (J2000) (1)</description>
+          <unit>"d:m:s"</unit>
+          <ucd>pos.eq.dec;meta.main</ucd>
+        </column>
+        <column>
+          <name>Per</name>
+          <description>Period (from Table5 in the paper)</description>
+          <unit>d</unit>
+          <ucd>time.period</ucd>
+        </column>
+        <column>
+          <name>e_Per</name>
+          <description>Error in Period (from Table5 of the paper)</description>
+          <unit>d</unit>
+          <ucd>stat.error</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/AJ/152/88/table2</name>
+        <description>Summary of spectroscopy observations</description>
+        <column>
+          <name>Name</name>
+          <description>Object identifier: HATS-11 or HATS-12</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>Nobs</name>
+          <description>[1/12] Number of spectroscopic observations</description>
+          <ucd>meta.number</ucd>
+        </column>
+        <column>
+          <name>Res</name>
+          <description>[3/60] Resolution ({Delta}{lambda}/{lambda}/1000)</description>
+          <ucd>spect.resolution</ucd>
+        </column>
+        <column>
+          <name>S/N1</name>
+          <description>[11/257] First value of signal-to-noise ratio range (2)</description>
+          <ucd>stat.snr</ucd>
+        </column>
+        <column>
+          <name>S/N2</name>
+          <description>[17/118]? Second value of signal-to-noise ratio range (2)</description>
+          <ucd>stat.snr</ucd>
+        </column>
+        <column>
+          <name>gamma</name>
+          <description>[-58.8/-21.66]? {gamma}_RV_ (3)</description>
+          <unit>km/s</unit>
+          <ucd>phys.veloc;arith.diff</ucd>
+        </column>
+        <column>
+          <name>Pre</name>
+          <description>[13/4000]? Radial velocity precision (4)</description>
+          <unit>m/s</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Inst</name>
+          <description>Instrument (1)</description>
+          <ucd>meta.id;instr</ucd>
+        </column>
+        <column>
+          <name>Date</name>
+          <description>UT date(s) of observation</description>
+          <ucd>time.epoch;obs</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/AJ/152/88/table1</name>
+        <description>Summary of photometric observations</description>
+        <column>
+          <name>Name</name>
+          <description>Object identifier: HATS-11 or HATS-12</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>Nimg</name>
+          <description>[46/4315] Number of images</description>
+          <ucd>meta.number</ucd>
+        </column>
+        <column>
+          <name>Cad</name>
+          <description>[16/304] Cadence (3)</description>
+          <unit>s</unit>
+          <ucd>time.interval</ucd>
+        </column>
+        <column>
+          <name>rms</name>
+          <description>[0.7/11.5] Precision (4)</description>
+          <unit>mmag</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Inst</name>
+          <description>Instrument (1)</description>
+          <ucd>meta.id;instr</ucd>
+        </column>
+        <column>
+          <name>f_Inst</name>
+          <description>Flag on HS instrument (a) (2)</description>
+          <ucd>meta.code</ucd>
+        </column>
+        <column>
+          <name>Field</name>
+          <description>Field name (G579) for HATSouth unit</description>
+          <ucd>obs.field</ucd>
+        </column>
+        <column>
+          <name>Date</name>
+          <description>Date of observation</description>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>Flt</name>
+          <description>Filter (Ks, Rc, R, g, r, or i)</description>
+          <ucd>meta.id;instr.filter</ucd>
+        </column>
+        <column>
+          <name>f_Flt</name>
+          <description>[d] Flag "d" means Rc is standard Cousins R filter</description>
+          <ucd>meta.code</ucd>
+        </column>
+      </table>
+      <table>
+        <name>J/AJ/152/88/table6</name>
+        <description>Relative radial velocities and bisector spans for HATS-11 and HATS-12</description>
+        <column>
+          <name>recno</name>
+          <description>Record number assigned by the VizieR team. Should Not be used for identification.</description>
+          <ucd>meta.record</ucd>
+        </column>
+        <column>
+          <name>Name</name>
+          <description>Object identifier: HATS-11 or HATS-12</description>
+          <ucd>meta.id;meta.main</ucd>
+        </column>
+        <column>
+          <name>BJD</name>
+          <description>[161/733] Barycentric Julian Date (BJD-2456000)</description>
+          <unit>d</unit>
+          <ucd>time.epoch</ucd>
+        </column>
+        <column>
+          <name>RV</name>
+          <description>[-375/282]? Radial velocity (1)</description>
+          <unit>m/s</unit>
+          <ucd>phys.veloc;pos.heliocentric</ucd>
+        </column>
+        <column>
+          <name>e_RV</name>
+          <description>[11/144]? 1{sigma} error in RV (2)</description>
+          <unit>m/s</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>BS</name>
+          <description>[-171/247] Bisector span (1)</description>
+          <unit>m/s</unit>
+          <ucd>phys.veloc</ucd>
+        </column>
+        <column>
+          <name>e_BS</name>
+          <description>[9/288] 1{sigma} error in BS (3)</description>
+          <unit>m/s</unit>
+          <ucd>stat.error</ucd>
+        </column>
+        <column>
+          <name>Phase</name>
+          <description>[0/1] Phase</description>
+          <ucd>time.phase</ucd>
+        </column>
+        <column>
+          <name>Inst</name>
+          <description>Instrument (Coralie, FEROS, or HDS) (4)</description>
+          <ucd>meta.id;instr</ucd>
+        </column>
+      </table>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

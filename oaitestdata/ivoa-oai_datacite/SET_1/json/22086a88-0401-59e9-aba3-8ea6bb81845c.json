@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/AJ/156/98",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/AJ/156/98"
+    ],
+    "PublicationTimestamp": "2019-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2018AJ....156...98P"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Platais I., Lennon D.J., van der Marel R.P., Bellini A., Sabbi E., Watkins L.L., Sohn S.T., Walborn N.R., Bedin L.R., Evans C.J., de Mink S.E., Sana H., Herrero A., Langer N., Crowther P."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/AJ/156/98;2019-03-08T08:16:57Z;J.AJ;ivo_managed;Platais I., Lennon D.J., van der Marel R.P., Bellini A., Sabbi E., Watkins L.L., Sohn S.T., Walborn N.R., Bedin L.R., Evans C.J., de Mink S.E., Sana H., Herrero A., Langer N., Crowther P.;Runaway stars in the 30 Doradus region of the LMC (Platais+, 2018);CDS;2019;Positional_Data;Spectral_Classification;Proper_Motions;Rotational_Velocities;Stars:early-type;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/AJ/156/98;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/156/98;2018AJ....156...98P;text/xml+votable;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "22086a88-0401-59e9-aba3-8ea6bb81845c",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/AJ/156/98"
+    ],
+    "oai_set": [
+        "J.AJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Positional_Data"
+        },
+        {
+            "name": "Spectral_Classification"
+        },
+        {
+            "name": "Proper_Motions"
+        },
+        {
+            "name": "Rotational_Velocities"
+        },
+        {
+            "name": "Stars early-type"
+        }
+    ],
+    "title": [
+        "Runaway stars in the 30 Doradus region of the LMC (Platais+, 2018)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/156/98"
+}

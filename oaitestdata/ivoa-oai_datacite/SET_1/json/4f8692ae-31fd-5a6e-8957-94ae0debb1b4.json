@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/A+A/426/119",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/A+A/426/119"
+    ],
+    "PublicationTimestamp": "2007-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2007"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2004A&A...426..119M"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Mookerjea B., Kramer C., Nielbock M., Nyman L.-A."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/A+A/426/119;2018-04-05T10:00:00Z;J.A_A;ivo_managed;Mookerjea B., Kramer C., Nielbock M., Nyman L.-A.;1.2mm mapping of RCW 106 Giant Molecular Cloud (Mookerjea+, 2004);CDS;2007;Nebulae;HII_regions;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/A+A/426/119;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/426/119;2004A&A...426..119M;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "4f8692ae-31fd-5a6e-8957-94ae0debb1b4",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/A+A/426/119"
+    ],
+    "oai_set": [
+        "J.A_A",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Nebulae"
+        },
+        {
+            "name": "HII_regions"
+        }
+    ],
+    "title": [
+        "1.2mm mapping of RCW 106 Giant Molecular Cloud (Mookerjea+, 2004)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/A+A/426/119"
+}

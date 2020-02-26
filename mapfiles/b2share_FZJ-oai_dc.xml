@@ -36,7 +36,7 @@
       <xpath>//dc:publisher/text()</xpath>
     </field>
     <field name="Contributor">
-      <string>FZ Juelich</string>
+      <string>FZJuelich</string>
     </field> 
     <field name="PublicationYear">
       <xpath>//dc:date/text()</xpath>

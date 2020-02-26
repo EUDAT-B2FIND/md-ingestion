@@ -1,0 +1,84 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:16129</identifier>
+    <datestamp>2018-09-18T16:42:31Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>easy-collection:4</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-zw6-fqjd</identifier>
+      <creators>
+        <creator>
+          <creatorName>Soonius, C.M.</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Provincie Noord-Holland, PWN-waterleiding Bergen-Limmen</title>
+        <title>archeologisch onderzoek</title>
+        <title>RAAPRAPPORT 266</title>
+        <title titleType="AlternativeTitle">archeologisch onderzoek</title>
+        <title titleType="AlternativeTitle">RAAPRAPPORT 266</title>
+      </titles>
+      <publisher>RAAP Archeologisch Adviesbureau</publisher>
+      <publicationYear>2009</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+        <subject>PROSPECTIE</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>RAAP Archeologisch Adviesbureau</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2009-06-05</date>
+        <date dateType="Created">1998</date>
+        <date dateType="Available">2009-06-04</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-gt5-v0t</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:16129</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl-8205266172994353198-1244205194207</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>32 p.</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/openAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">onderzoeksrapport</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Limmen</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Nederland</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Noord-Holland</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Bergen</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>e-ne (MARC21)</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationBox>
+            <northBoundLatitude>52.69158248</northBoundLatitude>
+            <eastBoundLongitude>4.74457951</eastBoundLongitude>
+            <southBoundLatitude>52.5855416</southBoundLatitude>
+            <westBoundLongitude>4.67219661</westBoundLongitude>
+          </geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

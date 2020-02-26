@@ -1,0 +1,77 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:76821</identifier>
+    <datestamp>2018-09-18T17:22:27Z</datestamp>
+    <setSpec>D30000:D37000</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-z6b-vn8q</identifier>
+      <creators>
+        <creator>
+          <creatorName>Koeman, S.M.</creatorName>
+          <affiliation>KSP Archeologie</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Bureauonderzoek en Inventariserend  Veldonderzoek, verkennende fase: Berg ong. te Budel. Gemeente Cranendonck</title>
+      </titles>
+      <publisher>KSP Archeologie</publisher>
+      <publicationYear>2017</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D37000" xml:lang="en">Archaeology</subject>
+        <subject>Bureau- en booronderzoek</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>KSP Archeologie</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">2017-12-01</date>
+        <date dateType="Available">2017-12-22</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-w4-t0tm</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:76821</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <formats>
+        <format>application/pdf</format>
+      </formats>
+      <rightsList>
+        <rights>info:eu-repo/semantics/restrictedAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">KSP Archeologie heeft een archeologisch bureauonderzoek en inventariserend veldonderzoek, verkennende fase uitgevoerd voor de locatie aan de Berg (ong.) Budel (gemeente Cranendonck). Het onderzoek is uitgevoerd in het kader van de ruimtelijke onderbouwing voor de nieuwbouw van een woning.
+
+Op basis van de landschappelijke ligging ter plaatse van een relatief laag gedeelte binnen het dekzandgebied in de buurt van een moerasgebied is aan het plangebied een middelhoge verwachting toegekend voor vuursteenvindplaatsen uit het Laat-Paleolithicum tot en met het Neolithicum en een lage verwachting voor nederzettingsresten uit het Neolithicum tot en met de Volle Middeleeuwen (tot in de 13e eeuw).  
+
+Uit de historische ontwikkeling is gebleken dat het plangebied op de westelijke rand van het buurtschap Berg heeft gelegen. Het westelijke deel was in het begin van de 19e eeuw onderdeel van de woeste gronden (Buulderbergsche Heide), het oostelijke deel was in bezit van een bewoner van Berg en ingericht als bouwland en dennenbos. Het buurtschap is mogelijk in de 13e eeuw ontstaan maar daar zijn tot op heden nog geen archeologische sporen van gevonden die dat kunnen bevestigen. Op basis van het historisch kaartmateriaal worden de meest kansrijke zones hiervoor ten (noord)oosten van het plangebied verwacht. Op basis hiervan wordt de hoge verwachting op de gemeentelijke beleidskaart voor het plangebied naar laag bijgesteld voor een vindplaats uit de Late Middeleeuwen en de Nieuwe tijd.
+
+Vervolgens is deze verwachting getoetst door middel van een inventariserend veldonderzoek, verkennende fase. Uit het booronderzoek is gebleken dat in het plangebied geen restanten van de oorspronkelijke haarpodzolbodem aanwezig zijn. De aangetroffen bodemopbouw van AC-profielen in combinatie met het AHN-kaartbeeld geeft de indruk dan ca. 0,5 &#8211; 1,0 m van de bodem is afgegraven.  Daarnaast is in naar schatting tweederde van het plangebied (oostelijke deel) de bovenste 10 tot 20 cm van de C-horizont verstoord door boomwortels/omgewerkt ten tijde van het gebruik als boomkwekerij.
+
+Op basis van deze bevindingen wordt de kans dat een vindplaats binnen het plangebied aanwezig is laag ingeschat. De voorgenomen graafwerkzaamheden vormen dan ook geen bedreiging voor het archeologische bodemarchief. Op basis van deze conclusie is geen vervolgonderzoek geadviseerd.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Berg</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Gemeente Cranendonck</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Noord-Brabant</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLatitude>51.2764835</pointLatitude>
+            <pointLongitude>5.54576418</pointLongitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

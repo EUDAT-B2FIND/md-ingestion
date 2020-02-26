@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/MNRAS/396/2011",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/MNRAS/396/2011"
+    ],
+    "PublicationTimestamp": "2010-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2009MNRAS.396.2011E"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "El Bouchefry K."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/MNRAS/396/2011;2018-04-05T10:00:00Z;J.MNRAS;ivo_managed;El Bouchefry K.;X-ray+Radio sources in XBootes (El Bouchefry, 2009);CDS;2010;Photometry;Galaxies;Redshifts;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/MNRAS/396/2011;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/396/2011;2009MNRAS.396.2011E;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "504158ba-d3d4-5fba-9798-6b9f2d2097f4",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/MNRAS/396/2011"
+    ],
+    "oai_set": [
+        "J.MNRAS",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Photometry"
+        },
+        {
+            "name": "Galaxies"
+        },
+        {
+            "name": "Redshifts"
+        }
+    ],
+    "title": [
+        "X-ray+Radio sources in XBootes (El Bouchefry, 2009)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/MNRAS/396/2011"
+}

@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Vivek Maru"
+    ],
+    "Contributor": [
+        "Vivek Maru"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.17632/tfnp39gk3z.1",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://easy.dans.knaw.nl/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:easy.dans.knaw.nl:easy-dataset:102391",
+    "MetadataAccess": [
+        "oai:easy.dans.knaw.nl:easy-dataset:102391"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Data Archiving and Networked Services (DANS)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess",
+        "License: http://creativecommons.org/licenses/by/4.0"
+    ],
+    "TempCoverageBegin": 63663361199,
+    "TempCoverageEnd": 63663361199,
+    "TemporalCoverage": " period : ( 2018-05-31T11:59:59Z - 2018-05-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2018-05-31T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-05-31T11:59:59Z",
+    "author": [
+        "Maru, V"
+    ],
+    "fulltext": "oai:easy.dans.knaw.nl:easy-dataset:102391;2018-09-18T17:44:57Z;E10000;Maru, V;via Mendeley Data;Solar Still data set-3500TDS;Data Archiving and Networked Services (DANS);2018;Interdisciplinary sciences;Vivek Maru;2018-05-31T12:18:12.894+02:00;2018-05-31T12:18:12.894+02:00;Dataset;10.17632/tfnp39gk3z.1;urn:nbn:nl:ui:13-pu-ko8u;easy-dataset:102391;info:eu-repo/semantics/closedAccess;License: http://creativecommons.org/licenses/by/4.0;1. Description of the data\t\n1.1 Type of study\n This is a part of Dissertation work of Master Student at School of Engineering, RK University, Rajkot India\n 1.2 Types of data\n This is an experimental data collected from a three-stepped solar still (0.6m \u00d7 0.6m) constructed by the student and experiment conducted at Bhavnagar (21.74\u00b0N,72.10\u00b0E) to yield 2.5 litres/day\n 1.3 Format and scale of the data\nThe file format is excel, the number of records is presented for the month of April 22 to May 10, 2018. CAD model was used to create the drawing for Solar Still. The experiment was conducted for the same TDS of water daily.  These are the initial indicative values. Formats and software enable sharing and long-term validity of data as a part of academic work.",
+    "group": "danseasy",
+    "groups": [
+        {
+            "name": "danseasy"
+        }
+    ],
+    "name": "0d69050d-ddc7-50b9-af0f-587c94af16f5",
+    "notes": [
+        "1. Description of the data\t\n1.1 Type of study\n This is a part of Dissertation work of Master Student at School of Engineering, RK University, Rajkot India\n 1.2 Types of data\n This is an experimental data collected from a three-stepped solar still (0.6m \u00d7 0.6m) constructed by the student and experiment conducted at Bhavnagar (21.74\u00b0N,72.10\u00b0E) to yield 2.5 litres/day\n 1.3 Format and scale of the data\nThe file format is excel, the number of records is presented for the month of April 22 to May 10, 2018. CAD model was used to create the drawing for Solar Still. The experiment was conducted for the same TDS of water daily.  These are the initial indicative values. Formats and software enable sharing and long-term validity of data as a part of academic work."
+    ],
+    "oai_identifier": [
+        "oai:easy.dans.knaw.nl:easy-dataset:102391"
+    ],
+    "oai_set": [
+        "E10000"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Interdisciplinary sciences"
+        }
+    ],
+    "title": [
+        "Solar Still data set-3500TDS"
+    ],
+    "url": ""
+}

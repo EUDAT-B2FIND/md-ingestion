@@ -1,0 +1,445 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>urn:repox.www.kulturarv.dkSites:http://www.kulturarv.dk/fundogfortidsminder/site/57591</identifier>
+    <datestamp>2020-01-18</datestamp>
+    <setSpec>Sites</setSpec>
+  </header>
+  <metadata>
+    <ff:site xmlns:ff="http://www.kulturarv.dk/fundogfortidsminder/ff" xmlns="http://www.kulturarv.dk/fundogfortidsminder/ff" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/site/57591</id>
+      <date>2020-01-17T17:00:01.923696+01:00</date>
+      <siteNo>10</siteNo>
+      <ext/>
+      <parishNo>
+        <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/parish#170802</conceptID>
+        <term>Brande</term>
+      </parishNo>
+      <plotType>
+        <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/plot#50</conceptID>
+        <term>Digitaliseret 1981</term>
+      </plotType>
+      <ff:placeNames>
+        <placeName>
+          <name>Ure</name>
+          <year>1899</year>
+          <placeNameType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/placename#9</conceptID>
+            <term>Uspecificeret</term>
+          </placeNameType>
+        </placeName>
+      </ff:placeNames>
+      <listing>
+        <listingNo>28071</listingNo>
+        <listingStatus>Fredet 1937 eller senere</listingStatus>
+        <listingText>H&#248;j, 1,5 x 16 m. I S-siden et firkantet hul, ca. 1 x 2 m stort og 0,5 m dybt,
+heri mod S to flade sten, den st&#248;rste ca. 0,7 m lang, p&#229; kant, antagelig
+alle i oprindeligt leje. I h&#248;jens s&#248;ndre afgravede kant ses to sv&#230;re sten,
+den ene lys, den anden m&#248;rk. H&#248;jfoden afgravet hele vejen rundt; alle beska-
+digelser dog eftergroet. Ejeren lovede at pl&#248;je 2 m l&#230;ngere mod S fra h&#248;jen.
+Lynggroet i ager.</listingText>
+        <registrationDate>1952-01-31T00:00:00</registrationDate>
+        <registrationStatus>Lokaliteten tinglyst</registrationStatus>
+        <cancelled>false</cancelled>
+        <cancelledYear xsi:nil="true"/>
+      </listing>
+      <guide>
+        <internalAssessment>uoplyst</internalAssessment>
+        <externalAssessment xsi:nil="true"/>
+        <attractionText xsi:nil="true"/>
+        <signSite>false</signSite>
+        <signRoad>false</signRoad>
+        <parking>false</parking>
+        <publicAccess>false</publicAccess>
+      </guide>
+      <preservationState>
+        <surroundingsYear>1899</surroundingsYear>
+        <threatYear>0</threatYear>
+        <signYear>1979</signYear>
+        <surroundings>
+          <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/surroundings#DMK</conceptID>
+          <term>Dyrket mark</term>
+        </surroundings>
+        <monumentSign>
+          <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/monumentsign#1</conceptID>
+          <term>Ingen</term>
+        </monumentSign>
+      </preservationState>
+      <adminArea>
+        <municipality>
+          <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/municipality#756</conceptID>
+          <term>Ikast-Brande</term>
+        </municipality>
+        <museum>
+          <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#)HEM</conceptID>
+          <term>Museum Midtjylland</term>
+        </museum>
+        <supervision>
+          <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#DKM</conceptID>
+          <term>De Kulturhistoriske Museer i Holstebro Kommune</term>
+        </supervision>
+      </adminArea>
+      <ff:geodata xmlns="http://www.opengis.net/gml">
+        <gml:Point srsName="EPSG:25832">
+          <gml:pos srsDimension="2">504329;6198912</gml:pos>
+        </gml:Point>
+      </ff:geodata>
+      <ff:objects>
+        <primaryObject>
+          <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/object/61528</id>
+          <text xsi:nil="true"/>
+          <date>
+            <fromYear>-250000</fromYear>
+            <toYear>1066</toYear>
+            <mainPeriod>OXXX</mainPeriod>
+            <period>
+              <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/period#OXXX</conceptID>
+              <term>Oldtid</term>
+              <publicTerm>Oldtid</publicTerm>
+            </period>
+          </date>
+          <characteristics>
+            <characteristic>
+              <objectName xsi:nil="true"/>
+              <preservationYear>1990</preservationYear>
+              <attributeYear xsi:nil="true"/>
+              <measurementYear>1990</measurementYear>
+              <compassDirection xsi:nil="true"/>
+              <lengthCm>1600</lengthCm>
+              <widthCm>1600</widthCm>
+              <heightCm>150</heightCm>
+              <depthCm xsi:nil="true"/>
+              <areaM2 xsi:nil="true"/>
+              <preservationState>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/preservationstate#1</conceptID>
+                <term>Synligt og antagelig ubeskadiget</term>
+              </preservationState>
+              <measurementType>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/measurement#US</conceptID>
+                <term>uspecificeret</term>
+              </measurementType>
+            </characteristic>
+          </characteristics>
+          <objectType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/object#01092</conceptID>
+            <term>Rundh&#248;j</term>
+            <objectClassTerm>Begravelse</objectClassTerm>
+            <objectClassExplanation>alle begravelsesformer</objectClassExplanation>
+          </objectType>
+          <transportObject/>
+        </primaryObject>
+      </ff:objects>
+      <ff:events>
+        <event>
+          <startDate>1990-10-23</startDate>
+          <endDate>1990-10-23</endDate>
+          <altArchive xsi:nil="true"/>
+          <caseNo xsi:nil="true"/>
+          <eventType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/event#MNB</conceptID>
+            <term>Nyberejsning af fredede lokaliteter</term>
+            <eventClassTerm>Museal</eventClassTerm>
+          </eventType>
+          <institution>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#SNS</conceptID>
+            <term>Skov- og Naturstyrelsen, 10. kontor</term>
+          </institution>
+          <archive>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archive#XXX</conceptID>
+            <term>Uspecificeret arkiv</term>
+          </archive>
+          <ff:texts>
+            <text>
+              <freeText>H&#248;j; som fritekst; ikke for t&#230;t pl&#248;jet; store plastikpresenninger tildynget
+med jord p&#229; sydfod; elektrisk vandtrykpumpe i cementr&#248;r ca. 2 m. i diam. er
+nedgravet ca. 18 m. V for h&#248;jfod, el. installation ca. 1 m. h&#248;j viklet med
+plastik ved siden af; med dynge tomme plastikdunke (nye); bevokset med gr&#230;s
+og hindb&#230;rkrat, i ager; obs. plastikpresenninger ogs&#229; hensl&#230;ngt i top af
+2807:28; b&#248;r p&#229;tales sammen med 2807:28 (samme ejer?).
+
+Bevoksning: 1990: Gr&#230;s og L&#248;vkrat</freeText>
+              <textType>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/text#BTE</conceptID>
+                <term>Berejsertekst</term>
+              </textType>
+            </text>
+          </ff:texts>
+          <ff:persons>
+            <person>
+              <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/person#118826</conceptID>
+              <term>J. Bang</term>
+              <role>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/role#211</conceptID>
+                <term>Berejser</term>
+              </role>
+            </person>
+          </ff:persons>
+        </event>
+        <event>
+          <startDate>1951      </startDate>
+          <endDate>1951      </endDate>
+          <altArchive xsi:nil="true"/>
+          <caseNo xsi:nil="true"/>
+          <eventType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/event#MBR</conceptID>
+            <term>Museal berejsning</term>
+            <eventClassTerm>Museal</eventClassTerm>
+          </eventType>
+          <institution>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#N01</conceptID>
+            <term>Nationalmuseet, Danske Afd., Danmarks Oldtid</term>
+          </institution>
+          <archive>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archive#SBT</conceptID>
+            <term>Sognebeskrivelsen</term>
+          </archive>
+          <ff:texts>
+            <text>
+              <freeText>H&#248;j, 1,5 x16 m. I sydsiden et firkantet hul ca. 1 x 2 m stort og 0,5 m dybt, heri mod syd to flade sten, den st&#248;rste ca. 0,7 m lang, p&#229; kant, antagelig ikke i oprindelig leje. I h&#248;jens s&#248;ndre afgravede kant ses to sv&#230;re sten, den ene lys, den anden m&#248;rk. H&#248;jfoden afgravet hele vejen rundt, alle beskadigelser eftergroet. Ejeren lovede at pl&#248;je 2 m l&#230;ngere mod syd fra h&#248;jen. Lynggroet. I ager.</freeText>
+              <textType>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/text#GUL</conceptID>
+                <term>Tekst fra Nationalmuseets gule lister 1937-1956</term>
+              </textType>
+            </text>
+          </ff:texts>
+          <ff:persons>
+            <person>
+              <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/person#117029</conceptID>
+              <term>H. Norling-Christensen</term>
+              <role>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/role#211</conceptID>
+                <term>Berejser</term>
+              </role>
+            </person>
+          </ff:persons>
+        </event>
+        <event>
+          <startDate>1899      </startDate>
+          <endDate>1899      </endDate>
+          <altArchive xsi:nil="true"/>
+          <caseNo xsi:nil="true"/>
+          <eventType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/event#MBR</conceptID>
+            <term>Museal berejsning</term>
+            <eventClassTerm>Museal</eventClassTerm>
+          </eventType>
+          <institution>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#N01</conceptID>
+            <term>Nationalmuseet, Danske Afd., Danmarks Oldtid</term>
+          </institution>
+          <archive>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archive#SBT</conceptID>
+            <term>Sognebeskrivelsen</term>
+          </archive>
+          <ff:texts>
+            <text>
+              <freeText>H&#248;jrest. 2.0 x 14 M. Heri en muret Kartoffelkule med store D&#230;ksten. Kun H&#248;jens n&#248;. Fjerdedel staaende. Lynggroet.
+
+Bevoksning: 1990: Gr&#230;s og L&#248;vkrat</freeText>
+              <textType>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/text#BTE</conceptID>
+                <term>Berejsertekst</term>
+              </textType>
+            </text>
+          </ff:texts>
+          <ff:persons>
+            <person>
+              <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/person#117023</conceptID>
+              <term>G. Sarauw</term>
+              <role>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/role#211</conceptID>
+                <term>Berejser</term>
+              </role>
+            </person>
+          </ff:persons>
+        </event>
+        <event>
+          <startDate>1951      </startDate>
+          <endDate>1951      </endDate>
+          <altArchive xsi:nil="true"/>
+          <caseNo xsi:nil="true"/>
+          <eventType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/event#MBR</conceptID>
+            <term>Museal berejsning</term>
+            <eventClassTerm>Museal</eventClassTerm>
+          </eventType>
+          <institution>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#N01</conceptID>
+            <term>Nationalmuseet, Danske Afd., Danmarks Oldtid</term>
+          </institution>
+          <archive>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archive#SBT</conceptID>
+            <term>Sognebeskrivelsen</term>
+          </archive>
+        </event>
+        <event>
+          <startDate>2009-11-27</startDate>
+          <endDate>2012-02-10</endDate>
+          <altArchive xsi:nil="true"/>
+          <caseNo xsi:nil="true"/>
+          <eventType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/event#MPT</conceptID>
+            <term>Periodisk tilsyn med fredede lokaliteter</term>
+            <eventClassTerm>Museal</eventClassTerm>
+          </eventType>
+          <institution>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#HOL</conceptID>
+            <term>Holstebro Museum</term>
+          </institution>
+          <archive>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archive#XXX</conceptID>
+            <term>Uspecificeret arkiv</term>
+          </archive>
+          <ff:texts>
+            <text>
+              <freeText>Meget uj&#230;vn, gennemgravet, lyngkl&#230;dt: 1,5 x 20m</freeText>
+              <textType>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/text#BLA</conceptID>
+                <term>Blandet tekst</term>
+              </textType>
+            </text>
+          </ff:texts>
+        </event>
+        <event>
+          <startDate>2017-05-18</startDate>
+          <endDate>2017-05-24</endDate>
+          <altArchive xsi:nil="true"/>
+          <caseNo xsi:nil="true"/>
+          <eventType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/event#MPT</conceptID>
+            <term>Periodisk tilsyn med fredede lokaliteter</term>
+            <eventClassTerm>Museal</eventClassTerm>
+          </eventType>
+          <institution>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#DKM</conceptID>
+            <term>De Kulturhistoriske Museer i Holstebro Kommune</term>
+          </institution>
+          <archive>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archive#XXX</conceptID>
+            <term>Uspecificeret arkiv</term>
+          </archive>
+        </event>
+      </ff:events>
+      <ff:digitalDocumentations>
+        <digitalDocumentation>
+          <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/177728</id>
+          <name>Oversigtsfoto sf S&#216;</name>
+          <date>2017-05-18</date>
+          <filename>dkm1kikl_20170524131435.JPG</filename>
+          <copyright xsi:nil="true"/>
+          <legalUse xsi:nil="true"/>
+          <description xsi:nil="true"/>
+          <link>http://www.kulturarv.dk/fundogfortidsminder/resource/177728</link>
+          <isShownAt>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/57591</isShownAt>
+          <documentType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF</conceptID>
+            <term>Tilsynsfoto</term>
+          </documentType>
+        </digitalDocumentation>
+        <digitalDocumentation>
+          <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/177729</id>
+          <name>sf S</name>
+          <date>2017-05-18</date>
+          <filename>dkm1kikl_20170524131841.JPG</filename>
+          <copyright xsi:nil="true"/>
+          <legalUse xsi:nil="true"/>
+          <description xsi:nil="true"/>
+          <link>http://www.kulturarv.dk/fundogfortidsminder/resource/177729</link>
+          <isShownAt>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/57591</isShownAt>
+          <documentType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF</conceptID>
+            <term>Tilsynsfoto</term>
+          </documentType>
+        </digitalDocumentation>
+        <digitalDocumentation>
+          <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/177730</id>
+          <name>sf V</name>
+          <date>2017-05-18</date>
+          <filename>dkm1kikl_20170524131913.JPG</filename>
+          <copyright xsi:nil="true"/>
+          <legalUse xsi:nil="true"/>
+          <description xsi:nil="true"/>
+          <link>http://www.kulturarv.dk/fundogfortidsminder/resource/177730</link>
+          <isShownAt>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/57591</isShownAt>
+          <documentType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF</conceptID>
+            <term>Tilsynsfoto</term>
+          </documentType>
+        </digitalDocumentation>
+        <digitalDocumentation>
+          <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/177732</id>
+          <name>sf N</name>
+          <date>2017-05-18</date>
+          <filename>dkm1kikl_20170524132023.JPG</filename>
+          <copyright xsi:nil="true"/>
+          <legalUse xsi:nil="true"/>
+          <description xsi:nil="true"/>
+          <link>http://www.kulturarv.dk/fundogfortidsminder/resource/177732</link>
+          <isShownAt>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/57591</isShownAt>
+          <documentType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF</conceptID>
+            <term>Tilsynsfoto</term>
+          </documentType>
+        </digitalDocumentation>
+        <digitalDocumentation>
+          <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/177733</id>
+          <name>sf &#216;</name>
+          <date>2017-05-18</date>
+          <filename>dkm1kikl_20170524132045.JPG</filename>
+          <copyright xsi:nil="true"/>
+          <legalUse xsi:nil="true"/>
+          <description xsi:nil="true"/>
+          <link>http://www.kulturarv.dk/fundogfortidsminder/resource/177733</link>
+          <isShownAt>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/57591</isShownAt>
+          <documentType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#TSF</conceptID>
+            <term>Tilsynsfoto</term>
+          </documentType>
+        </digitalDocumentation>
+        <digitalDocumentation>
+          <id ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/resource/map/57591</id>
+          <name>Ure</name>
+          <date>2020-01-17</date>
+          <filename xsi:nil="true"/>
+          <copyright>Kort og Matrikelstyrelsen</copyright>
+          <legalUse>M&#229; kun kopieres til personlig brug.</legalUse>
+          <description>Kortet viser lokalitetens placering i Danmark.</description>
+          <link>http://www.kulturarv.dk/fundogfortidsminder/resource/map/57591</link>
+          <isShownAt xsi:nil="true"/>
+          <documentType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/digitaldocumentation#USP</conceptID>
+            <term>Uspecificeret</term>
+          </documentType>
+        </digitalDocumentation>
+      </ff:digitalDocumentations>
+      <ff:archivalDocumentations>
+        <archivalDocumentation>
+          <name xsi:nil="true"/>
+          <date>1990-10-23</date>
+          <filmNo>7</filmNo>
+          <photoNo>16</photoNo>
+          <copyright>Bang, J.</copyright>
+          <legalUse xsi:nil="true"/>
+          <description xsi:nil="true"/>
+          <documentType>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/archivaldocumentation#USP</conceptID>
+            <term>Uspecificeret</term>
+          </documentType>
+          <institution>
+            <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/institution#KAS</conceptID>
+            <term>Kulturstyrelsen</term>
+          </institution>
+          <ff:persons>
+            <person>
+              <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/person#118826</conceptID>
+              <term>J. Bang</term>
+              <role>
+                <conceptID ff:type="uri">http://www.kulturarv.dk/fundogfortidsminder/skos/#role210</conceptID>
+                <term>Ansvarlig</term>
+              </role>
+            </person>
+          </ff:persons>
+        </archivalDocumentation>
+      </ff:archivalDocumentations>
+    </ff:site>
+  </metadata>
+</record>

@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/ApJ/759/139",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/ApJ/759/139"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2012ApJ...759..139K"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Kirkpatrick A., Pope A., Alexander D.M., et al."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/ApJ/759/139;2018-04-05T10:00:00Z;J.ApJ;ivo_managed;Kirkpatrick A., Pope A., Alexander D.M., et al.;Herschel + MIPS photometry of GOODS sources (Kirkpatrick+, 2012);CDS;2017;AGN;Galaxies;Redshifts;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/ApJ/759/139;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/759/139;2012ApJ...759..139K;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "1d409225-fcb1-5e23-ae2c-a9d3d00ba90b",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/ApJ/759/139"
+    ],
+    "oai_set": [
+        "J.ApJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "AGN"
+        },
+        {
+            "name": "Galaxies"
+        },
+        {
+            "name": "Redshifts"
+        }
+    ],
+    "title": [
+        "Herschel + MIPS photometry of GOODS sources (Kirkpatrick+, 2012)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/759/139"
+}

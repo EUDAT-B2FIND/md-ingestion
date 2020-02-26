@@ -1,0 +1,77 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:easy.dans.knaw.nl:easy-dataset:41857</identifier>
+    <datestamp>2018-09-18T16:57:11Z</datestamp>
+    <setSpec>D30000:D34000:D34300</setSpec>
+    <setSpec>easy-collection:2:3</setSpec>
+    <setSpec>D60000</setSpec>
+    <setSpec>easy-collection:1</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.17026/dans-x4r-qtx3</identifier>
+      <creators>
+        <creator>
+          <creatorName>Aletta, instituut voor vrouwengeschiedenis</creatorName>
+          <affiliation>Aletta, instituut voor vrouwengeschiedenis</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Thematische collectie: Erfgoed van de Oorlog, Getuigen Verhalen, Project 'Vrouwen van de CPN'</title>
+      </titles>
+      <publisher>Data Archiving and Networked Services (DANS)</publisher>
+      <publicationYear>2010</publicationYear>
+      <subjects>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D34300" xml:lang="en">Modern and contemporary
+                        history</subject>
+        <subject subjectScheme="NARCIS-classification" schemeURI="http://www.narcis.nl/classification" valueURI="http://www.narcis.nl/classfication/D60000" xml:lang="en">Social sciences</subject>
+        <subject>erfgoed van de oorlog</subject>
+        <subject>getuigen verhalen</subject>
+        <subject>oral history</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="Other">
+          <contributorName>drs. Josien Pieterse (interviewer)</contributorName>
+        </contributor>
+        <contributor contributorType="Other">
+          <contributorName>drs. Grietje Keller (projectleider Aletta)</contributorName>
+        </contributor>
+        <contributor contributorType="Other">
+          <contributorName>prof. dr. Saskia Wieringa (projectleider Aletta)</contributorName>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+          <contributorName>ATRIA</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">2009</date>
+        <date dateType="Available">2010-07-01</date>
+      </dates>
+      <language>nl</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URN">urn:nbn:nl:ui:13-bo6-6ug</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DMO_ID">easy-dataset:41857</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="AIP_ID">twips.dans.knaw.nl--4897644017937809638-1276687228409</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers/>
+      <rightsList>
+        <rights>info:eu-repo/semantics/restrictedAccess</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Other">Tijdens de oorlog hadden communisten een grote rol in de illegaliteit. Na de oorlog verdween echter hun aureool van moed en verzet al snel onder invloed van de Koude Oorlog.
+
+In dit project zijn de persoonlijke ervaringen van een aantal CPN-vrouwen op beeld vastgelegd. Openhartig vertellen ze over hun politieke overtuiging, het lidmaatschap van de Communistische Partij Nederland, de Tweede Wereldoorlog en de jaren erna, toen de CPN in een isolement raakte.  
+
+In veel gevallen waren de vrouwen al vroeg bewust van de opkomst van het fascisme. Vanaf 1933 maakten zij mee hoe Duitse vluchtelingen werden opgevangen door familie of bekenden. Velen raakten een paar jaar later betrokken bij de Spaanse Burgeroorlog. Verzet bieden tegen de Duitse bezetter was voor hen een vanzelfsprekende keuze.
+
+In de interviews vertellen zij over hun ervaringen als koerierster, distributeur van bonnenkaarten of bezorger van de illegale Waarheid. In sommige gesprekken gaat het ook over het gewapend verzet, internering en onderduik. Kenmerkend is dat alle vrouwen nadrukkelijk praten over de consequenties van dit alles voor hun verdere (politieke) leven. De oorlog bleek voor vrijwel alle vrouwen richtinggevend.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Nederland</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Peter Wittenburg"
+    ],
+    "Contributor": [
+        "Kita Sotaro"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://www.clarin.si/repository/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/a0f14fa1e0d54a1fb843a69f861f3fa0",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/a0f14fa1e0d54a1fb843a69f861f3fa0"
+    ],
+    "PID": "http://hdl.handle.net/11304/320c00fe-b988-11e3-8cd7-14feb57d12b9",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Peter Wittenburg"
+    ],
+    "ResourceType": [
+        "Audiovisual",
+        "Other"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "free to use"
+    ],
+    "author": [
+        "Peter Wittenburg"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/a0f14fa1e0d54a1fb843a69f861f3fa0;2018-01-11T13:47:52Z;0afede87-2bf2-4d89-867e-d2ee57251c62;Kita Sotaro;Peter Wittenburg;2016-12-22T09:59:52.750275+00:00;This file set existing of a video stream, an audio stream and a multimodal annotation file is a frequently used as show case of how to do complex multimodal annotations with the well-known ELAN tool (http://tla.mpi.nl/tools/tla-tools/elan/download/).;http://hdl.handle.net/11304/320c00fe-b988-11e3-8cd7-14feb57d12b9;https://b2share.eudat.eu/api/records/a0f14fa1e0d54a1fb843a69f861f3fa0;oai:b2share.eudat.eu:b2rec/a0f14fa1e0d54a1fb843a69f861f3fa0;en;Peter Wittenburg;info:eu-repo/semantics/openAccess;free to use;video;audio;annotation;multimodality;Annotated Route Description;Audiovisual;Other",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "365b7ad9-4fd0-528e-9743-71bfd5dd08b0",
+    "notes": [
+        "This file set existing of a video stream, an audio stream and a multimodal annotation file is a frequently used as show case of how to do complex multimodal annotations with the well-known ELAN tool (http://tla.mpi.nl/tools/tla-tools/elan/download/)."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/a0f14fa1e0d54a1fb843a69f861f3fa0"
+    ],
+    "oai_set": [
+        "0afede87-2bf2-4d89-867e-d2ee57251c62"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "video"
+        },
+        {
+            "name": "audio"
+        },
+        {
+            "name": "annotation"
+        },
+        {
+            "name": "multimodality"
+        }
+    ],
+    "title": [
+        "Annotated Route Description"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/a0f14fa1e0d54a1fb843a69f861f3fa0"
+}

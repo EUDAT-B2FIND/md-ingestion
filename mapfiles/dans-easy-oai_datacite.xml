@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping-table>
+  <!-- Mappings for DANS-EASY metadata. --><namespaces>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
+    <namespace ns="datacite3" uri="http://datacite.org/schema/kernel-3"/>
+    <namespace ns="datacite" uri="http://datacite.org/schema/kernel-3"/>
+  </namespaces>
+  <mappings>
+    <!-- General Information -->
+    <field name="title">
+      <xpath>//metadata/resource/titles/title</xpath>
+    </field>
+    <field name="notes">
+      <xpath>//descriptions/description/text()</xpath>
+    </field>
+    <field name="tags">
+      <xpath>//datacite:subjects/datacite:subject/text()</xpath>
+    </field>
+    <!-- Identifier : (Source,PID or DOI) -->
+    <field name="url">
+      <xpath>//datacite:resource/datacite:identifier</xpath>
+    </field>
+    <field name="RelatedIdentifier">
+      <xpath>//datacite:alternateIdentifiers/datacite:alternateIdentifier</xpath>
+    </field>
+    <field name="MetadataAccess">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+    <!-- Provenance information -->
+    <field name="author">
+      <xpath>//creators/creator/creatorName</xpath>
+    </field>
+    <field name="Publisher">
+      <xpath>//datacite:publisher</xpath>
+    </field>
+    <field name="Contributor">
+      <xpath>//datacite:contributors/datacite:contributor/datacite:contributorName</xpath>
+    </field>
+    <field name="PublicationYear">
+      <xpath>//datacite:publicationYear</xpath>
+    </field>
+    <field name="Rights">
+      <xpath>//datacite:rightsList//datacite:rights</xpath>
+    </field>
+    <field name="OpenAccess">
+      <xpath></xpath>
+    </field>
+    <field name="Contact">
+      <xpath>//datacite:contributors/datacite:contributor/datacite:contributorName</xpath>
+    </field>
+    <!-- Representation information -->
+    <field name="Language">
+      <xpath>//datacite:language</xpath>
+    </field>
+    <field name="ResourceType">
+      <xpath>//datacite:resourceType</xpath>
+    </field>
+    <field name="Format">
+      <xpath>//datacite:formats/datacite:format</xpath>
+    </field>
+    <field name="Checksum">
+      <xpath></xpath> 
+    </field>
+    <!-- Coverage information -->
+    <field name="Discipline">
+      <string>Social Science</string>
+    </field>
+    <field name="SpatialCoverage">
+      <xpath>//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationPoint,//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationBox</xpath>
+    </field>
+    <field name="TemporalCoverage">
+      <xpath>//datacite:dates/datacite:date</xpath>
+    </field>
+    <!-- Hidden fields, only shown to logged in CKAN users -->
+    <field name="fulltext">
+      <xpath>normalize-space(string(/))</xpath>
+    </field>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec</xpath>
+    </field>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier</xpath>
+    </field>
+  </mappings>
+</mapping-table>

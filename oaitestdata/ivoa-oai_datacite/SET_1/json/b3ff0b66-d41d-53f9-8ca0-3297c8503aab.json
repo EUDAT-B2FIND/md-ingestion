@@ -1,0 +1,55 @@
+{
+    "Contact": [
+        "CDS support team <cds-question@unistra.fr>"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "Format": [
+        "text/xml+votable"
+    ],
+    "MetaDataAccess": "http://dc.g-vo.org/rr/q/pmh/pubreg.xml?verb=GetRecord&metadataPrefix=oai_datacite&identifier=ivo://CDS.VizieR/J/ApJ/663/1149",
+    "MetadataAccess": [
+        "ivo://CDS.VizieR/J/ApJ/663/1149"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "CDS"
+    ],
+    "RelatedIdentifier": [
+        "2007ApJ...663.1149H"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Harvey P., Merin B., Huard T.L., Rebull L.M., Chapman N., Evans II N.J., Myers P.C."
+    ],
+    "fulltext": "ivo://CDS.VizieR/J/ApJ/663/1149;2018-04-05T10:00:00Z;J.ApJ;ivo_managed;Harvey P., Merin B., Huard T.L., Rebull L.M., Chapman N., Evans II N.J., Myers P.C.;Spitzer survey of Serpens YSO population (Harvey+, 2007);CDS;2017;CDS support team <cds-question@unistra.fr>;ivo://CDS.VizieR/J/ApJ/663/1149;http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/663/1149;2007ApJ...663.1149H;text/xml+votable;text/xml+votable;text/xml+votable;public",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "b3ff0b66-d41d-53f9-8ca0-3297c8503aab",
+    "oai_identifier": [
+        "ivo://CDS.VizieR/J/ApJ/663/1149"
+    ],
+    "oai_set": [
+        "J.ApJ",
+        "ivo_managed"
+    ],
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Spitzer survey of Serpens YSO population (Harvey+, 2007)"
+    ],
+    "url": "http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/ApJ/663/1149"
+}
