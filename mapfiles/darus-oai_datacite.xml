@@ -3,9 +3,7 @@
   <!-- Mappings for DaRUS metadata. -->
   <namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
-    <namespace ns="datacite4" uri="http://datacite.org/schema/kernel-4"/>
-    <namespace ns="datacite" uri="http://datacite.org/schema/kernel-4"/>
-    <namespace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd"/>
+    <namespace xmnls="http://datacite.org/schema/kernel-4"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
@@ -77,10 +75,10 @@
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
-    <field name="oai_set">
+    <field name="h:oai_set">
       <xpath>//header/setSpec</xpath>
     </field>
-    <field name="oai_identifier">
+    <field name="h:oai_identifier">
       <xpath>//header/identifier</xpath>
     </field>
   </mappings>
