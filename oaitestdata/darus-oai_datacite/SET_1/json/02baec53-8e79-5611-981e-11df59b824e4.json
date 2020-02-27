@@ -1,0 +1,18 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=02baec53-8e79-5611-981e-11df59b824e4",
+    "fulltext": "doi:10.18419/darus-629;2020-01-31T01:00:00Z;all;10.18419/darus-629;Jeltsch, Albert;Albert;Jeltsch;0000-0001-6113-9290;Universit\u00e4t Stuttgart;Deep enzymology data related to Adam et al.: Sequence context-dependent base flipping regulates DNMT1-mediated genome-wide DNA methylation;Data Set 1 related to enzyme assays with long hemimethylated substrate methylation.;DaRUS;2020;Medicine, Health and Life Sciences;DNA Methylation;DNA Methyltransferase;NGS Bisulfite Sequencing;Enzyme assay;DNMT1;Jeltsch, Albert;Albert;Jeltsch;Universit\u00e4t Stuttgart;2020-01-30;2020-01-30;Raw DNA sequences extracted from Fastq NGS files; Bisulfite-seq DNA methylation analysis;1109920;3978441;545079;27695172;20606236;25883003;20469464;23009884;20776910;22811999;19989296;22252005;text/plain;text/plain;application/pdf;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;1.0;CC BY Waiver;Methylation of long hemimethylated DNA substrates: Methylation of the 349 bp long hemimethylated substrate with DNMT1 was carried out in 1X methylation buffer (100 mM HEPES, 1 mM EDTA, 0.5 mM DTT, 0.1 mg/mL BSA, pH 7.2 with KOH) in the presence of 1 mM AdoMet. For the methylation reactions, mixtures containing different DNMT1 concentrations were prepared and 18 \u00b5L aliquots were preincubated for 1 min at 37 \u00b0C. DNA methylation was started by addition of 2 \u00b5L of the hemimethylated substrate (final concentration 10 ng/\u00b5L) followed by vortexing and incubation of the samples at 37 \u00b0C for different time intervals. Then aliquots were removed and the methylation reaction stopped by freezing the mixtures in liquid nitrogen. After thawing, DNMT1 was heat inactivated for 10 min at 80 \u00b0C and the samples were bisulfite converted using the standard protocol of EZ DNA Methylation-LightningTM Kit (ZYMO RESEARCH). Elution of the bisulfite converted DNA was performed with 10 \u00b5L of RNase free water. \r\nDNA libraries for Illumina NGS were prepared with a two-step PCR approach. 1 \u00b5L of bisulfite-converted DNA was amplified in a first PCR step (PCR1) using primers containing internal barcodes (Exemplary primers 4 and 5 in Suppl. Table 3) and HotStartTaq DNA Polymerase (QIAGEN). Afterwards, the amplification efficiency was investigated by agarose gel electrophoresis. For the second amplification step (PCR2) with primers introducing adapters and indices needed for NGS (Exemplary primers 6 and 7 in Suppl. Table 3), Phusion Polymerase (Thermo) was used together with 1 \u00b5L of the 6-fold diluted PCR1 products as a template. Successful amplification was verified by agarose gel electrophoresis. A DNA library of all samples pooled in equimolar amounts was purified with NucleoSpin\u00ae Gel and PCR Clean-up kit and used for Illumina sequencing. Sequencing was performed at the Max Planck Genome Centre Cologne.;Deutsche Forschungsgemeinschaft;JE 252/36",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "02baec53-8e79-5611-981e-11df59b824e4",
+    "oai_identifier": [
+        "02baec53-8e79-5611-981e-11df59b824e4"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

@@ -1,0 +1,98 @@
+
+ Statistics of
+	community	darus
+	subset		SET_1
+	# of records	1
+  see as well oaitestdata/darus-oai_datacite/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //titles/title
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : b'Not stated'                       |
+
+ |-> Description      <--       //descriptions/description
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Tags             <--       //subjects/subject
+
+  |--     0 |    0 |     0 |    0
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //resource/identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> RelatedIdentifier <--       //resource/identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> MetaDataAccess   <--                     
+  |--     1 |  100 |     1 |  100
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(45 chars follow)...] |
+
+ |-> Creator          <--       //creators/creator/creatorName
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Publisher        <--       //publisher
+  
+  |--     0 |    0 |     0 |    0
+
+ |-> Contributor      <--       //contributors/contributor/contributorName
+
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //publicationYear
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Rights           <--       //rightsList//rights
+
+  |--     0 |    0 |     0 |    0
+
+ |-> OpenAccess       <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //contributors/contributor/contributorName
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Language         <--       //language
+   
+  |--     0 |    0 |     0 |    0
+
+ |-> ResourceType     <--       //resourceType
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Format           <--       //formats/format
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string></string>
+
+  |--     1 |  100 |     1 |  100
+      |- 1     : Not stated                          |
+
+ |-> SpatialCoverage  <--       //geoLocations/geoLocation/geoLocationPoint,//geoLocations/geoLocation/geoLocationBox
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //dates/date
+ 
+  |--     0 |    0 |     0 |    0
+
