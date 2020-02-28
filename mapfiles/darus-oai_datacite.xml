@@ -3,60 +3,60 @@
   <!-- Mappings for DaRUS metadata. -->
   <namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
-    <namespace xmnls="http://datacite.org/schema/kernel-4"/>
+    <namespace ns="datacite4" uri="http://datacite.org/schema/kernel-4"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
     <field name="title">
-      <xpath>//titles/title</xpath>
+      <xpath>//datacite4:title</xpath>
     </field>
     <field name="notes">
-      <xpath>//descriptions/description</xpath>
+      <xpath>//datacite4:description</xpath>
     </field>
     <field name="tags">
-      <xpath>//subjects/subject</xpath>
+      <xpath>//datacite4:subject</xpath>
     </field>
     <!-- Identifier : (Source,PID or DOI) -->
     <field name="url">
-      <xpath>//resource/identifier</xpath>
+      <xpath>//datacite4:identifier</xpath>
     </field>
     <field name="RelatedIdentifier">
-      <xpath>//alternateIdentifiers/alternateIdentifier</xpath>
+      <xpath>//datacite4:alternateIdentifier</xpath>
     </field>
     <field name="MetadataAccess">
-      <xpath>//header/identifier</xpath>
+      <xpath>//datacite4:identifier</xpath>
     </field>
     <!-- Provenance information -->
     <field name="author">
-      <xpath>//creators/creator/creatorName</xpath>
+      <xpath>//datacite4:creatorName</xpath>
     </field>
     <field name="Publisher">
-      <xpath>//publisher</xpath>
+      <xpath>//datacite4:publisher</xpath>
     </field>
     <field name="Contributor">
-      <xpath>//contributors/contributor/contributorName</xpath>
+      <xpath>//datacite4:contributorName,//datacite4:affiliation,//datacite4:funderName</xpath>
     </field>
     <field name="PublicationYear">
-      <xpath>//publicationYear</xpath>
+      <xpath>//datacite4:publicationYear</xpath>
     </field>
     <field name="Rights">
-      <xpath>//rightsList//rights</xpath>
+      <xpath>//datacite4:rights</xpath>
     </field>
     <field name="OpenAccess">
       <xpath></xpath>
     </field>
     <field name="Contact">
-      <xpath>//contributors/contributor/contributorName</xpath>
+      <xpath>//datacite4:creatorName</xpath>
     </field>
     <!-- Representation information -->
     <field name="Language">
-      <xpath>//language</xpath>
+      <xpath>//datacite4:language</xpath>
     </field>
     <field name="ResourceType">
-      <xpath>//resourceType</xpath>
+      <xpath>//datacite4:resourceType</xpath>
     </field>
     <field name="Format">
-      <xpath>//formats/format</xpath>
+      <xpath>//datacite4:format</xpath>
     </field>
     <field name="Checksum">
       <xpath></xpath> 
@@ -66,10 +66,10 @@
       <string></string>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//geoLocations/geoLocation/geoLocationPoint,//geoLocations/geoLocation/geoLocationBox</xpath>
+      <xpath>//datacite4:geoLocation/geoLocationPoint,//datacite4:geoLocation/geoLocationBox</xpath>
     </field>
     <field name="TemporalCoverage">
-      <xpath>//dates/date</xpath>
+      <xpath>//datacite4:date</xpath>
     </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
