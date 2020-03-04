@@ -19,7 +19,7 @@ unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_dc openaire_data
 darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite 
 #darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
 ## SLKS with ff
-#slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff
+slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff SET_1
 ## SLKS with fbb
 slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
 #slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  SAVE
