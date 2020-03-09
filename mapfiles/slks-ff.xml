@@ -21,7 +21,7 @@
     <!-- more tags: ,//ff:site/ff:objects/primaryObject/objectType/term,//ff:site/ff:objects/object/objectType/term -->
     <!-- Identifier -->
     <field name="url">
-      <xpath>//ff:id</xpath>
+      <xpath>//ff:site/ff:id</xpath>
     </field>
     <field name="RelatedIdentifier">
       <xpath></xpath>
