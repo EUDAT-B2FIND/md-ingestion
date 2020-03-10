@@ -1432,9 +1432,8 @@ class Mapper(object):
                                     (jsondata[facet],jsondata['DiscHierarchy']) = self.map_discipl(jsondata[facet],disctab.discipl_list)
                                     self.logger.debug('DiscHierarchy %s' % jsondata['DiscHierarchy'])
                                 elif facet == 'Publisher':
-                                    #blist = self.cut(jsondata[facet],'=',2)
-                                    #jsondata[facet] = self.uniq(blist)
-                                    pass
+                                    blist = self.cut(jsondata[facet],'=',2)
+                                    jsondata[facet] = self.uniq(blist)
                                 elif facet == 'Contributor':
                                     blist = self.cut(jsondata[facet],'=',3)
                                     jsondata[facet] = self.uniq(blist)
