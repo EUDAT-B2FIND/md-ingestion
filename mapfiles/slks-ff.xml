@@ -68,10 +68,11 @@
     <field name="SpatialCoverage">
       <xpath>//gml:pos</xpath>
     </field>
-    <field name="TempCoverageBegin">
+    <field name="TemporalCoverage:BeginDate">
       <xpath>//ff:primaryObject/ff:date/ff:fromYear</xpath>
-    <field name="TempCoverageEnd">
-      <xpath>//ff:primaryObject/ff:date/ff:toYear</xpath>  
+    </field> 
+    <field name="TemporalCoverage:EndDate">
+      <xpath>//ff:primaryObject/ff:date/ff:toYear</xpath> 
     </field> 
    <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
