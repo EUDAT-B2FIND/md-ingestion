@@ -20,8 +20,10 @@ darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite
 #darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
 ## SLKS with ff
 #slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff
+##SLKS2 with dc
+slks2 https://www.archaeo.dk/ff/oai-pmh ListRecords oai_dc SET1
 ## SLKS with fbb
-slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
+#slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
 #slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  SAVE
 #slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers fbb SAVE
 #!gut!slks https://www.kulturarv.dk/repox/OAIHandler ListRecords  fbb  Preservation
