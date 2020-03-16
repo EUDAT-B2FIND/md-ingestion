@@ -260,7 +260,7 @@ class Harvester(object):
                     records.extend(chunk['data'])
                     
         # OAI-PMH (verb = ListRecords/Identifier )
-        elif req["lverb"].startswith('List'):
+        elif req["lverb"].startswith('List') or req["lverb"].startswith('list'):
             sickle = Sickle(req['url'], max_retries=3, timeout=300, verify=self.verify)
             outtypedir='xml'
             outtypeext='xml'
@@ -558,7 +558,7 @@ limit 1000
                         self.logger.error('%s during GetRecord of %s' % (err,record.identifier))
                         stats['ecount'] += 1
                         continue
-            elif req["lverb"] == 'ListRecords' :
+            elif req["lverb"] == 'ListRecords' or req["lverb"] == 'listRecords':
                 if (record.header.deleted):
                     stats['totdcount'] += 1
                     continue
