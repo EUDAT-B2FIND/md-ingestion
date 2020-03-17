@@ -2,8 +2,8 @@
 <mapping-table>
   <!-- Mappings for DublinCore metadata - Template. -->
   <namespaces>
-    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
-    <namespace ns="dc" uri="http://dublincore.org/schemas/xmls/qdc/2003/04/02/dcterms.xsd"/>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/oai_dc.xsd"/>
+    <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
     <namespace ns="dct" uri="http://purl.org/dc/terms/"/>
   </namespaces>
   <mappings>
