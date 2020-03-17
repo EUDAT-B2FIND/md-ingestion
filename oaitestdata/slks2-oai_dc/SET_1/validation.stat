@@ -93,7 +93,7 @@
  |-> Publisher        <--       //dc:publisher
 
   |--   168 |  100 |   168 |  100
-      |- 168   : b'Aarhus University (www.au.dk)'      |
+      |- 168   : b'Slots- og Kulturstyrelsen (www.slks.dk)'      |
 
  |-> Contributor      <--       //dc:contributor
 
@@ -115,7 +115,7 @@
  |-> Contact          <--       //dc:publisher
 
   |--   168 |  100 |   168 |  100
-      |- 168   : Aarhus University (www.au.dk)       |
+      |- 168   : Slots- og Kulturstyrelsen (www.slks.dk)      |
 
  |-> Language         <--       //dc:language
 
@@ -130,8 +130,8 @@
   
   |--     0 |    0 |     0 |    0
 
- |-> Discipline       <--       //dc:subject
- 
+ |-> Discipline       <--       <string>Classical Archaeology</string>
+
   |--   168 |  100 |   168 |  100
       |- 168   : Not stated                          |
 

@@ -61,7 +61,7 @@
     </field>  
    <!-- Coverage -->
     <field name="Discipline">
-      <xpath>//dc:subject</xpath>
+      <string>Classical Archaeology</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dc:coverage,//dc:spatial</xpath>
