@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1004/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060105-103B Olsker</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1884      : to lave Stenh&#248;je [sb.103A-B]; ved den &#248;stlige staar en lille Bavtasten (?), n&#230;ppe 1 Alen h&#248;j.1943      : Helt &#248;delagt.1884      : to lave Stenh&#248;je [sb.103A-B]; ved den &#248;stlige staar en lille Bavtasten (?), n&#230;ppe 1 Alen h&#248;j.1943      : Helt &#248;delagt.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060105-103B</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Olsker</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.821475114393632, 55.25544911648549</dcterms:spatial>
+    <dc:subject>Gravr&#248;se</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>1700 B.C.-375 A.D.</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

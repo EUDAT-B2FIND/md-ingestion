@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4875/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>080113-5 M&#248;lleskov</dc:title>
+    <dc:creator>Ark&#230;ologi Sydfyn</dc:creator>
+    <dc:description>1884      : I det nord&#248;stre Hj&#248;rne af samme Lod er, uden for Skoven, Levning af en H&#248;j, hvori der skal v&#230;re fundet Spor af Begravelse, men uvist hvilke og hvorledes.1953      : Ca. 1 x 15 m, med st&#230;rkt forgravet Overflade, mistet H&#248;jkarakter.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>080113-5</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>M&#248;lleskov</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">10.705525267558867, 55.47596102677982</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>250000 B.C.-1066 A.D.</dcterms:temporal>
+    <dcterms:temporal>OXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

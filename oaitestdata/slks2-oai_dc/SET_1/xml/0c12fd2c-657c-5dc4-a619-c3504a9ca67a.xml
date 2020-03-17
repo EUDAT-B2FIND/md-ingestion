@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4038/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>070609-26 Soesmark</dc:title>
+    <dc:creator>Museum Lolland-Falster</dc:creator>
+    <dc:description>1879      : [sb.15-18, 21-26] (59a-72) Ere ryddede.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>070609-26</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Soesmark</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">11.739812477774361, 54.85193763422129</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>3950 B.C.-2801 B.C.</dcterms:temporal>
+    <dcterms:temporal>AYTX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

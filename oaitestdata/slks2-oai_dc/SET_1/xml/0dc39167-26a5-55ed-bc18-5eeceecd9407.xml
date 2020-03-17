@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/447/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060204-11C Dammegaard</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1880      : Paa en h&#248;itliggende aflang Bakke nordlig fra Dammegaard har der ligget 4 Gravh&#248;ie t&#230;t samlede [sb.nr. 11A-D]. De to ere sl&#248;ifede [sb.nr. 11C-D] - de andre to [sb.nr. 11A-B] har Eieren lovet at lade v&#230;re i Fred.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060204-11C</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Dammegaard</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">15.029953393074027, 55.006769432736576</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>250000 B.C.-1066 A.D.</dcterms:temporal>
+    <dcterms:temporal>OXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

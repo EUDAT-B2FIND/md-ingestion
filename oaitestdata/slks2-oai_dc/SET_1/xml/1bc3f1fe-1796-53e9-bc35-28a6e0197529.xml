@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2066/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060406-32 Saltuna</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1943      : Overpl&#248;jet.1870      : En lille H&#248;i paa en Fladklippe; paa Overfladen sees Sidestenene af et fiirkantet Gravkammer, der skal v&#230;re udgravet for l&#230;nge siden (rimeligviis af Jansen [1820]); der skal ikke v&#230;re fundet Andet end Leerkarskaar.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060406-32</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Saltuna</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">15.013320046420805, 55.17146817914876</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>250000 B.C.-1066 A.D.</dcterms:temporal>
+    <dcterms:temporal>OXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

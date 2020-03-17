@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1756/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060403-17A Alsterbakken</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1985-06-02: C-h&#248;j, 0,8 x 12 m<br/>Rest af h&#248;j, hvis hele centrale del er bortgravet, s&#229; kun<br/>periferien st&#229;r tilbage. Afgr&#230;nsning noget usikker. Krateret<br/>fyldt op med kvas.<br/>Beliggende i overordentlig smuk lille klippel&#248;kkeskov af<br/>avnb&#248;g, fuglekirseb&#230;r og vildabild samt sl&#229;en og med frodigt<br/>gr&#230;st&#230;ppe. P&#229; MB fejlagtigt afsat i skovens sydligste rand,<br/>ligger i dens vestlige udkant som h&#248;jeste punkt p&#229;<br/>Alsterbjerg.<br/><br/>Bevoksning: 1985: Gr&#230;s, L&#248;vkrat og L&#248;vtr&#230;er1880      : En enkelt R&#248;se paa en lille naturlig Bakke (Alsterbakken).<br/><br/>Bevoksning: 1985: Gr&#230;s, L&#248;vkrat og L&#248;vtr&#230;er
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060403-17A</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Alsterbakken</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">15.117786753111178, 55.08269418103039</dcterms:spatial>
+    <dc:subject>Gravr&#248;se</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>1700 B.C.-375 A.D.</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

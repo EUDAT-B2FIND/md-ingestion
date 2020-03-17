@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/460/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060204-21 Ki&#248;rneby</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1880      : Man vil her ofte have set Brandpletter.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060204-21</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Ki&#248;rneby</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">15.057085171099637, 55.01318712381483</dcterms:spatial>
+    <dc:subject>Brandplet</dc:subject>
+    <dcterms:temporal>Jernalder</dcterms:temporal>
+    <dcterms:temporal>500 B.C.-1066 A.D.</dcterms:temporal>
+    <dcterms:temporal>CXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

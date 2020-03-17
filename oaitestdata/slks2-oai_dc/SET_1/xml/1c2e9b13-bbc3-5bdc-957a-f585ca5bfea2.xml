@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1801/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060403-69B Sct. Peders Sten</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1880      : Her laa indtil for faa Aar siden [f&#248;r 1880] en Sten, som kaldtes Sct. Peders Sten. Der var 4 skaalformede Fordybninger (formodentlig 4 store og mange smaa) paa dens Overflade og imellem disse en aflang Ristning. Legenden meddeler, at disse M&#230;rker hidr&#248;rte fra, at Sct. Peder en Gang vandrede omkring paa Bornholm og saa her paa denne Sten lagde sig ned paa Ansigtet til B&#248;n; de 4 Huller vare nu M&#230;rker efter hans Kn&#230; og Armbue og den aflange Ristning var M&#230;rket efter hans Stav. Stenen er kl&#248;vet itu og borte.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060403-69B</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Sct. Peders Sten</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">15.141124425309902, 55.10992365702121</dcterms:spatial>
+    <dc:subject>Sk&#229;ltegn</dc:subject>
+    <dcterms:temporal>Bronzealder</dcterms:temporal>
+    <dcterms:temporal>1700 B.C.-501 B.C.</dcterms:temporal>
+    <dcterms:temporal>BXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

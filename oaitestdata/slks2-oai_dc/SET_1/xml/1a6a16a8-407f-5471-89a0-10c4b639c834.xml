@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4591/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>080106-10 Karlsminde</dc:title>
+    <dc:creator>Ark&#230;ologi Sydfyn</dc:creator>
+    <dc:description>1884      : I samme Mark er l&#230;nger mod Syd&#248;st ved Dr&#230;ning fundet to n&#230;r ved hinanden liggende, omtr. 40' lange B&#230;lter af Skaller, og formentlig er derhos fundet Stenredskaber. Ogsaa ved Pl&#248;jning fremkommer her af og til Skaller.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>080106-10</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Karlsminde</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">10.619515662590464, 55.43707404477005</dcterms:spatial>
+    <dc:subject>Skaldynge</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>250000 B.C.-1701 B.C.</dcterms:temporal>
+    <dcterms:temporal>AXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

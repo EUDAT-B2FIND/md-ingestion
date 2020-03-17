@@ -19,13 +19,13 @@
     </field>
     <!-- Identifier -->
     <field name="url">
-      <xpath>//dc:identifier</xpath>
+      <xpath>/h:identifier</xpath>
     </field>
     <field name="RelatedIdentifier">
       <xpath>//dc:relation</xpath>
     </field>
     <field name="MetadataAccess">
-      <xpath>//h:header/h:identifier</xpath>
+      <xpath>/h:header/h:identifier</xpath>
     </field>
    <!-- Provenance Information -->
     <field name="author">
@@ -44,7 +44,7 @@
       <xpath>//dc:rights</xpath>
       </field> 
     <field name="OpenAccess">
-      <xpath>false</xpath>
+      <xpath>true</xpath>
     </field>
     <field name="Contact">
       <xpath>//dc:publisher</xpath>
@@ -74,10 +74,10 @@
       <xpath>normalize-space(string(/))</xpath>
     </field>
     <field name="oai_identifier">
-      <xpath>//h:header/h:identifier/text()</xpath>
+      <xpath>/h:header/h:identifier/text()</xpath>
     </field>
     <field name="oai_set">
-      <xpath>//h:header/h:setSpec/text()</xpath>
+      <xpath>/h:header/h:setSpec/text()</xpath>
     </field>
     <field name="MapperVersion">
       <string expand="true">${mapper_version}</string>

@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1139/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060104-174 Kras Mose</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1811      : Flere genstande indsendt.1808      : Fund af bronzegenstande fra depot (&#198;.bro.a., per.3).1811      : Flere genstande indsendt.1808      : Fund af bronzegenstande fra depot (&#198;.bro.a., per.3).
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060104-174</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Kras Mose</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.836819971380626, 55.20072590635549</dcterms:spatial>
+    <dc:subject>Depotfund</dc:subject>
+    <dcterms:temporal>Bronzealder</dcterms:temporal>
+    <dcterms:temporal>1300 B.C.-1101 B.C.</dcterms:temporal>
+    <dcterms:temporal>B&#198;X3</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1526/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060304-19 R&#248;nne</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1943      : H&#248;j, ca 0,5 x 5 m. Lille Hul i Toppen. Tr&#230;bevokset i Skov.1985-05-03: Lille men markeret h&#248;j med noget tuet-uj&#230;vn overflade.<br/>Enkelte sten p&#229; h&#248;jen, som dog synes jordopbygget.<br/>0,6 x 6 x 5 m.<br/>&#167; 53: se 5333-4<br/><br/>Bevoksning: 1985: L&#248;vkrat og L&#248;vtr&#230;er
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060304-19</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>R&#248;nne</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.747595045882907, 55.07375463699174</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>250000 B.C.-1066 A.D.</dcterms:temporal>
+    <dcterms:temporal>OXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

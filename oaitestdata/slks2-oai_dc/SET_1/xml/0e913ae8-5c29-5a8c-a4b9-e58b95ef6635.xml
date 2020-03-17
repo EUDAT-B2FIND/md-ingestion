@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/820/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060107-5 K&#248;llergaard</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1943      : Overpl&#248;jet.1877      : Forhen en stor og smuk H&#248;j, over 30 Alen i Diameter, som n&#230;sten j&#230;vnedes for 5-6 Aar siden [ca.1871]. Den var kredssat med temmelig store Stene, og ovenpaa stod en Bavtasten, omtr. 2 1/2 Alen h&#248;j. Nu ere alle disse Stene bortf&#248;rte, og H&#248;jen udgravet fra Toppen; men det vides ikke, om der er fundet Oldsager, maaske dog nogle Potter med "Aske"..
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060107-5</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>K&#248;llergaard</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.865047705512996, 55.23576505886483</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>3950 B.C.-501 B.C.</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

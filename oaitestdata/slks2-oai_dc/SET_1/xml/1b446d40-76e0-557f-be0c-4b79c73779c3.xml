@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/23/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060303-1E Roels Dal</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1878      : Roels Dal. Fra &#216;stgr&#230;nsen af R&#248;nne Udmarks Naaletr&#230;es Skov og &#248;stefter imod V&#230;ldensaaen str&#230;kker sig et Dalstr&#248;g som kaldes Roels Dal. Paa begge Sider af Dalen er der en lang R&#230;kke af Oldtidsminder: H&#248;ie R&#248;ser, Stenringe, Brol&#230;gninger og Bautastene [blandt andet sb.1E,1F,1G,1M,1O,1Q,1V,1X,1Y,1Z samt areal sb.186]...<br/><br/>Bevoksning: 1985: L&#248;vtr&#230;er og N&#229;lekrat/-tr&#230;er1943      : H&#248;j, 0,75 x 9 m. Let affladet Top, hvor der findes en v&#230;ltet, 1,5 m l. Bautasten. Tr&#230;bevokset i Skov.1985-05-05: Lav h&#248;j med affladet top, hvorp&#229; ligger en nu helt overgroet<br/>sten af bautast&#248;rrelse.<br/>0,9 x 11,2 x 11 m.<br/>En ridesti f&#248;rer t&#230;t forbi h&#248;jen i N<br/><br/>** Sev&#230;rdighedsforklaring **<br/><br/>Sev&#230;rdig i sammenh&#230;ng med adskillige andre fortidsminder i<br/>omr&#229;det.<br/><br/>Bevoksning: 1985: L&#248;vtr&#230;er og N&#229;lekrat/-tr&#230;er
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060303-1E</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Roels Dal</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.759623915902466, 55.07383259980913</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>250000 B.C.-1066 A.D.</dcterms:temporal>
+    <dcterms:temporal>OXXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

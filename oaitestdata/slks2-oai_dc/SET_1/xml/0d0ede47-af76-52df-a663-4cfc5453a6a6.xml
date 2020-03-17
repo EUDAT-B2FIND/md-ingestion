@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1608/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060305-209 Enesbjerg</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1894      : Anmodning om fredning af skibss&#230;tninger og r&#248;ser p&#229; Enesbjerg (sb.51A-51C,53A-53C,177-291), idet de trues af grusgravning og sk&#230;rveslagning.1876      : Enesbjerg et h&#248;it Punkt oppe i H&#248;ilyngen. Det er paa Mansas Kort betegnet som Enesbjerg, men Befolkningen kalder det Galgebjerg og kalder det under forrige [sb.](N:50[A-50B]) anf&#248;rte Sted Enesbjerg.- ... [Sb.207-209: formodede r&#248;ser p&#229; matr.nr. 247a overf&#248;rt til m&#229;lebordsblad som sb.51A].
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060305-209</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Enesbjerg</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.851763263813364, 55.10882941545139</dcterms:spatial>
+    <dc:subject>Gravr&#248;se</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>1700 B.C.-375 A.D.</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

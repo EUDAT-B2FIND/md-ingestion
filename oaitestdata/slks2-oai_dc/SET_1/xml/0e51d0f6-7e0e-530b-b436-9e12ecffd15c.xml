@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1110/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060105-11B Brogaard</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1943      : &#216;delagt.1884      : ..Flere R&#248;ser ligge der omkring og lidt sydligere, men ere nu omtrent alle &#248;delagte; dette er sket i de allersidste Aar, men der er intet fundet uden en hel Del "br&#230;ndt Aske". Brandpletter skulle ofte v&#230;re bem&#230;rkede der omkring, dog uden Oldsager.1943      : &#216;delagt.1884      : ..Flere R&#248;ser ligge der omkring og lidt sydligere, men ere nu omtrent alle &#248;delagte; dette er sket i de allersidste Aar, men der er intet fundet uden en hel Del "br&#230;ndt Aske". Brandpletter skulle ofte v&#230;re bem&#230;rkede der omkring, dog uden Oldsager.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060105-11B</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Brogaard</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.767023004271673, 55.26414579867709</dcterms:spatial>
+    <dc:subject>Gravr&#248;se</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>1700 B.C.-375 A.D.</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

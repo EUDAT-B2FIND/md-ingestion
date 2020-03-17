@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/668/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060201-91 &#216;s.Slamregaard</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1875      : Fundet en ubeskadiget Flint&#248;xe. Opbevares af mig.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060201-91</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>&#216;s.Slamregaard</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">15.10185255499754, 55.06891000082784</dcterms:spatial>
+    <dc:subject>Enkeltfund</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>3950 B.C.-1701 B.C.</dcterms:temporal>
+    <dcterms:temporal>AYXX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

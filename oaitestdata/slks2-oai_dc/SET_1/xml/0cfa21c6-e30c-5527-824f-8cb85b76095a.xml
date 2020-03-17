@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3034/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>070301-9 Ask&#248;</dc:title>
+    <dc:creator>Museum Lolland-Falster</dc:creator>
+    <dc:description>1970      : En kerne&#248;kse fundet p&#229; stranden.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>070301-9</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Ask&#248;</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">11.508748074478042, 54.88881974614482</dcterms:spatial>
+    <dc:subject>Enkeltfund</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>5400 B.C.-3951 B.C.</dcterms:temporal>
+    <dcterms:temporal>A&#198;EX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

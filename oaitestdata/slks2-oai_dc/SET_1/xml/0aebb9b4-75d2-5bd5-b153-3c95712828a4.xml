@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2906/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>070213-30 Rabjerg</dc:title>
+    <dc:creator>Museum Lolland-Falster</dc:creator>
+    <dc:description>18-20 &#229;rig mand.
+1975-04-19: Under dr&#230;ningsarbejde p&#229; marken fandtes en vikingetids jordf&#230;stegrav med skeletdele, jernkniv og jern&#248;kse.1975      : 18-20 &#229;rig mand.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>070213-30</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Rabjerg</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">11.904151487242721, 54.70396023018445</dcterms:spatial>
+    <dc:subject>Jordf&#230;stegrav</dc:subject>
+    <dcterms:temporal>Vikingetid</dcterms:temporal>
+    <dcterms:temporal>750 A.D.-1066 A.D.</dcterms:temporal>
+    <dcterms:temporal>CYVX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

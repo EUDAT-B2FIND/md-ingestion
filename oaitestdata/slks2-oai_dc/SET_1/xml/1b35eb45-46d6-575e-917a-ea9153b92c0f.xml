@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2272/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>401651-1 Havns&#248; N&#230;b</dc:title>
+    <dc:creator>Vikingeskibsmuseet</dc:creator>
+    <dc:description>1914      : Paa Fladstranden omkring Havns&#248; N&#230;b og et Stykke videre langs Kysterne mod Farn&#230;s Skov og Skovby Nor kan der ved lav Vandstand i Strandkanten opsamles Stensager fra &#230;ldre og yngre Stenalder. En st&#248;rre Samling, som er opsamlet her, er forevist paa Nat.Mus, jfr. Journ. 646/3.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>401651-1</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Havns&#248; N&#230;b</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">11.92505482992014, 54.940198323634526</dcterms:spatial>
+    <dc:subject>Enkeltfund</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>250000 B.C.-3951 B.C.</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

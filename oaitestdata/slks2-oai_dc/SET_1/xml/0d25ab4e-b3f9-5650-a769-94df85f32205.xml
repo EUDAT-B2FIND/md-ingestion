@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/735/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>060201-13 Bodilsker Plantage</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>1875      : En Stenr&#248;se, lidt sydlig for ovenn&#230;vnte R&#248;sesamling [sb.nr.11].1943      : 1943 : Sl&#248;jfet
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>060201-13</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Bodilsker Plantage</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">15.057158713042499, 55.07992818689016</dcterms:spatial>
+    <dc:subject>Gravr&#248;se</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>1700 B.C.-375 A.D.</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

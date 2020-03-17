@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3599/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:title>070411-1 Kastager</dc:title>
+    <dc:creator>Museum Lolland-Falster</dc:creator>
+    <dc:description>1876      : Tre Gravh&#248;ie  [sb.1-3], som ere blevne ryddede for ikke l&#230;nge siden. No 1 synes efter Beskrivelsen at have v&#230;ret en Runddysse.1785      : Runddysse afsat p&#229; orig.1 kort m&#229;lt 1785, orig. 2 kort fra 1861 og orig. 3 kort fra 1882.1876      : Tre Gravh&#248;ie  [sb.1-3], som ere blevne ryddede for ikke l&#230;nge siden. No 1 synes efter Beskrivelsen at have v&#230;ret en Runddysse.1785      : Runddysse afsat p&#229; orig.1 kort m&#229;lt 1785, orig. 2 kort fra 1861 og orig. 3 kort fra 1882.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>dataset</dc:type>
+    <dc:identifier>070411-1</dc:identifier>
+    <dc:language>dk</dc:language>
+    <dcterms:spatial>Kastager</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">11.207432391702286, 54.949960755488895</dcterms:spatial>
+    <dc:subject>Rundh&#248;j</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>3950 B.C.-2801 B.C.</dcterms:temporal>
+    <dcterms:temporal>AYTX</dcterms:temporal>
+    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+  </metadata>
+</record>

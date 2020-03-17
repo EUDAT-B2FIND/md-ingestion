@@ -1,0 +1,145 @@
+
+ Statistics of
+	community	slks2
+	subset		SET_1
+	# of records	168
+  see as well oaitestdata/slks2-oai_dc/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dc:title
+   
+  |--   168 |  100 |   168 |  100
+      |- 1     : b'070401-6 Taarig Fredskov'         |
+      |- 1     : b'070307-5 Kj\xc3\xa6rstrup Voldsted'      |
+      |- 1     : b'070107-12B Ravns\xc3\xb8'         |
+      |- 1     : b'060204-59 H\xc3\xb8ilyngen'       |
+      |- 1     : b'060205-1 Store Bakkegaard'        |
+      |- 1     : b'060301-22 Rosmannegaard'          |
+      |- 1     : b'070301-9 Ask\xc3\xb8'             |
+      |- 1     : b'060205-40 Store Munkegaard'       |
+      |- 1     : b'060405-65 Knarregaard'            |
+      |- 1     : b'060204-40 Hundse Myre'            |
+
+ |-> Description      <--       //dc:description
+
+  |--   168 |  100 |   168 |  100
+      |- 4     : b'1876      : Blemme Lyng er en lavt liggende stor flad Lyngmark. Den staar ikke i' [...(1470 chars follow)...] |
+      |- 2     : b'1856      : H\xc3\xb8j.1856      : H\xc3\xb8j.\n'      |
+      |- 1     : b'1984-10-22: P\xc3\xa6n, hv\xc3\xa6lvet h\xc3\xb8j, 1,7 x 17,0 x 12,0 m. I S sammenflydende'      |
+      |- 1     : b'1878      : Kj\xc3\xa6rstrup Borgplads og \xc3\x98st derfor et gammelt Taarns Grundvold.2008' [...(229 chars follow)...] |
+      |- 1     : b'1984-10-11: H\xc3\xb8j. som beskrevet p\xc3\xa5 bl\xc3\xa5t kort. Bevokset med gamle'      |
+      |- 1     : b'1880      : Der synes her at ligge en lille Samling Stenr\xc3\xb8ser og enkelte aflang' [...(14 chars follow)...] |
+      |- 1     : b'1879      : En enlig flad Stenr\xc3\xb8se beliggende paa en \xc3\xb8de Lyngbakke. Der har v\xc3' [...(234 chars follow)...] |
+      |- 1     : b'1950-01-03: H\xc3\xb8jene sb.22-23 beskadiget under 2.verdenskrig.1985-12-10: H\xc3\xb8j p\xc3\xa5' [...(53 chars follow)...] |
+      |- 1     : b'1970      : En kerne\xc3\xb8kse fundet p\xc3\xa5 stranden.\n'      |
+      |- 1     : b'1879      : Sl\xc3\xb8ifet H\xc3\xb8i. Der vides aldeles intet om disse H\xc3\xb8ie [sb.nr. 40- 42' [...(325 chars follow)...] |
+
+ |-> Tags             <--       //dc:subject
+ 
+  |--   168 |  100 |   168 |  100
+      |- 82    : Rundhøj                             |
+      |- 26    : Gravrøse                            |
+      |- 20    : Enkeltfund                          |
+      |- 8     : Langhøj                             |
+      |- 5     : Bosættelse                          |
+      |- 3     : Depotfund                           |
+      |- 3     : Jordfæstegrav                       |
+      |- 3     : Votivfund                           |
+      |- 2     : Skåltegn                            |
+      |- 2     : Brandplet                           |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       /h:identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> RelatedIdentifier <--       /h:identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> MetaDataAccess   <--                     
+  |--   168 |  100 |   168 |  100
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+
+ |-> Creator          <--       //dc:creator
+ 
+  |--   168 |  100 |   168 |  100
+      |- 81    : b'Bornholms Museum'                 |
+      |- 68    : b'Museum Lolland-Falster'           |
+      |- 10    : b'Ark\xc3\xa6ologi Sydfyn'          |
+      |- 5     : b'Odense Bys Museer'                |
+      |- 4     : b'Vikingeskibsmuseet'               |
+
+ |-> Publisher        <--       //dc:publisher
+
+  |--   168 |  100 |   168 |  100
+      |- 168   : b'Aarhus University (www.au.dk)'      |
+
+ |-> Contributor      <--       //dc:contributor
+
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //dc:date
+    
+  |--     0 |    0 |     0 |    0
+
+ |-> Rights           <--       //dc:rights
+  
+  |--   168 |  100 |   168 |  100
+      |- 168   : Copyright © Slots- og Kulturstyrelsen (www.slks.dk).      |
+
+ |-> OpenAccess       <--       true
+         
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //dc:publisher
+
+  |--   168 |  100 |   168 |  100
+      |- 168   : Aarhus University (www.au.dk)       |
+
+ |-> Language         <--       //dc:language
+
+  |--     0 |    0 |     0 |    0
+
+ |-> ResourceType     <--       //dc:type
+    
+  |--   168 |  100 |   168 |  100
+      |- 168   : dataset                             |
+
+ |-> Format           <--       //dc:format
+  
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       //dc:subject
+ 
+  |--   168 |  100 |   168 |  100
+      |- 168   : Not stated                          |
+
+ |-> SpatialCoverage  <--       //dc:coverage,//dc:spatial
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //dc:coverage,//dc:temporal
+
+  |--     0 |    0 |     0 |    0
+
