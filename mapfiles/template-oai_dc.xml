@@ -19,7 +19,7 @@
     </field>
     <!-- Identifier -->
     <field name="url">
-      <xpath>//dc:identifier</xpath>
+      <xpath>h:identifier</xpath>
     </field>
     <field name="RelatedIdentifier">
       <xpath>//dc:relation</xpath>

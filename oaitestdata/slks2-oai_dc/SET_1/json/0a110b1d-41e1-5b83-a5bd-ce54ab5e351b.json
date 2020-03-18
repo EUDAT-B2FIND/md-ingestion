@@ -15,12 +15,21 @@
         "dataset"
     ],
     "Rights": [
-        "Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk)."
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "Blans",
+        "11.43484314806507, 54.85724333600427"
+    ],
+    "TemporalCoverage": [
+        "Oldtid",
+        "250000 B.C.-1066 A.D.",
+        "OXXX"
     ],
     "author": [
         "Museum Lolland-Falster"
     ],
-    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3769/;2020-03-06T17:00:01.743162+01:00;070511-65 Blans;Museum Lolland-Falster;1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;070511-65;dk;Blans;11.43484314806507, 54.85724333600427;Rundh\u00f8j;Oldtid;250000 B.C.-1066 A.D.;OXXX;Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk).",
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3769/;2020-03-06T17:00:01.743162+01:00;070511-65 Blans;Museum Lolland-Falster;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;070511-65;dk;Blans;11.43484314806507, 54.85724333600427;Rundh\u00f8j;Round barrow, burial mound, Funerary;Oldtid;250000 B.C.-1066 A.D.;OXXX;Public",
     "group": "slks2",
     "groups": [
         {
@@ -29,7 +38,7 @@
     ],
     "name": "0a110b1d-41e1-5b83-a5bd-ce54ab5e351b",
     "notes": [
-        "1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].\n"
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].\n"
     ],
     "oai_identifier": [
         "0a110b1d-41e1-5b83-a5bd-ce54ab5e351b"
@@ -39,6 +48,15 @@
     "tags": [
         {
             "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
         }
     ],
     "title": [

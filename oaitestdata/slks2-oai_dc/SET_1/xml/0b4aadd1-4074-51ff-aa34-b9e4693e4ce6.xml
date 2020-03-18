@@ -6,7 +6,8 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
     <dc:title>070214-37 Moseby</dc:title>
     <dc:creator>Museum Lolland-Falster</dc:creator>
-    <dc:description>1930      : Paalstav af bronze fundet i en meters dybde.
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+1930      : Paalstav af bronze fundet i en meters dybde.
 </dc:description>
     <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
     <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
@@ -15,10 +16,11 @@
     <dc:language>dk</dc:language>
     <dcterms:spatial>Moseby</dcterms:spatial>
     <dcterms:spatial xsi:type="dcterms:POINT">12.108595410206016, 54.83834746581468</dcterms:spatial>
-    <dc:subject>Enkeltfund</dc:subject>
+    <dc:subject xml:lang="da">Enkeltfund</dc:subject>
+    <dc:subject xml:lang="en">Single find, Diverse features and objects</dc:subject>
     <dcterms:temporal>Bronzealder</dcterms:temporal>
     <dcterms:temporal>1700 B.C.-1101 B.C.</dcterms:temporal>
     <dcterms:temporal>B&#198;XX</dcterms:temporal>
-    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+    <dc:rights>Public</dc:rights>
   </metadata>
 </record>

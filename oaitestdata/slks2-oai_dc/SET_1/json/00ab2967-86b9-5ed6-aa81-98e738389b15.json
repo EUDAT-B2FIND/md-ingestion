@@ -15,12 +15,21 @@
         "dataset"
     ],
     "Rights": [
-        "Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk)."
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "Dahlegaard",
+        "14.792395327168661, 55.239138676927325"
+    ],
+    "TemporalCoverage": [
+        "Jernalder",
+        "375 A.D.-1066 A.D.",
+        "CYXX"
     ],
     "author": [
         "Bornholms Museum"
     ],
-    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1049/;2020-03-06T17:00:01.743162+01:00;060105-46 Dahlegaard;Bornholms Museum;1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;060105-46;dk;Dahlegaard;14.792395327168661, 55.239138676927325;Enkeltfund;Jernalder;375 A.D.-1066 A.D.;CYXX;Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk).",
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1049/;2020-03-06T17:00:01.743162+01:00;060105-46 Dahlegaard;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;060105-46;dk;Dahlegaard;14.792395327168661, 55.239138676927325;Enkeltfund;Single find, Diverse features and objects;Jernalder;375 A.D.-1066 A.D.;CYXX;Public",
     "group": "slks2",
     "groups": [
         {
@@ -29,7 +38,7 @@
     ],
     "name": "00ab2967-86b9-5ed6-aa81-98e738389b15",
     "notes": [
-        "1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).\n"
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).1884      : Fundet 2 sammenh\u00e6ngende Guldst\u00e6nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v\u00e6re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t\u00e6t derved).\n"
     ],
     "oai_identifier": [
         "00ab2967-86b9-5ed6-aa81-98e738389b15"
@@ -39,6 +48,12 @@
     "tags": [
         {
             "name": "Enkeltfund"
+        },
+        {
+            "name": "Single find"
+        },
+        {
+            "name": "Diverse features objects"
         }
     ],
     "title": [

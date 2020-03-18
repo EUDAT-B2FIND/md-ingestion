@@ -2,9 +2,9 @@
 <mapping-table>
   <!-- Mappings for DublinCore metadata - Template. -->
   <namespaces>
-    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/oai_dc.xsd"/>
+    <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
     <namespace ns="dc" uri="http://purl.org/dc/elements/1.1/"/>
-    <namespace ns="dct" uri="http://purl.org/dc/terms/"/>
+    <namespace ns="dcterms" uri="http://purl.org/dc/terms/"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
@@ -19,7 +19,7 @@
     </field>
     <!-- Identifier -->
     <field name="url">
-      <xpath>/h:identifier</xpath>
+      <xpath>h:header/h:identifier</xpath>
     </field>
     <field name="RelatedIdentifier">
       <xpath>//dc:relation</xpath>
@@ -64,10 +64,10 @@
       <string>Classical Archaeology</string>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//dc:coverage,//dc:spatial</xpath>
+      <xpath>//dcterms:spatial</xpath>
     </field>
     <field name="TemporalCoverage">
-      <xpath>//dc:coverage,//dc:temporal</xpath>
+      <xpath>//dcterms:temporal</xpath>
     </field>    
    <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">

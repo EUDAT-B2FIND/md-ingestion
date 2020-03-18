@@ -15,12 +15,21 @@
         "dataset"
     ],
     "Rights": [
-        "Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk)."
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "Kalvehavegaard",
+        "10.637445882720915, 55.437572318886886"
+    ],
+    "TemporalCoverage": [
+        "Jernalder",
+        "500 B.C.-1066 A.D.",
+        "CXXX"
     ],
     "author": [
         "Ark\u00e6ologi Sydfyn"
     ],
-    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4595/;2020-03-06T17:00:01.743162+01:00;080106-3 Kalvehavegaard;Ark\u00e6ologi Sydfyn;1884      : I samme Mark er t\u00e6t ved Landevejen, ved Grusgravning, fundet et Skelet, omtr. 2' under Overfladen; det laa skraat op af; der var formentlig Levninger af \"en Lerkrukke\" der hos.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;080106-3;dk;Kalvehavegaard;10.637445882720915, 55.437572318886886;Jordf\u00e6stegrav;Jernalder;500 B.C.-1066 A.D.;CXXX;Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk).",
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4595/;2020-03-06T17:00:01.743162+01:00;080106-3 Kalvehavegaard;Ark\u00e6ologi Sydfyn;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1884      : I samme Mark er t\u00e6t ved Landevejen, ved Grusgravning, fundet et Skelet, omtr. 2' under Overfladen; det laa skraat op af; der var formentlig Levninger af \"en Lerkrukke\" der hos.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;080106-3;dk;Kalvehavegaard;10.637445882720915, 55.437572318886886;Jordf\u00e6stegrav;Inhumation, Funerary;Jernalder;500 B.C.-1066 A.D.;CXXX;Public",
     "group": "slks2",
     "groups": [
         {
@@ -29,7 +38,7 @@
     ],
     "name": "0b586194-020d-5114-8bba-d5eb0eb504a1",
     "notes": [
-        "1884      : I samme Mark er t\u00e6t ved Landevejen, ved Grusgravning, fundet et Skelet, omtr. 2' under Overfladen; det laa skraat op af; der var formentlig Levninger af \"en Lerkrukke\" der hos.\n"
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1884      : I samme Mark er t\u00e6t ved Landevejen, ved Grusgravning, fundet et Skelet, omtr. 2' under Overfladen; det laa skraat op af; der var formentlig Levninger af \"en Lerkrukke\" der hos.\n"
     ],
     "oai_identifier": [
         "0b586194-020d-5114-8bba-d5eb0eb504a1"
@@ -39,6 +48,12 @@
     "tags": [
         {
             "name": "Jordf\u00e6stegrav"
+        },
+        {
+            "name": "Inhumation"
+        },
+        {
+            "name": "Funerary"
         }
     ],
     "title": [

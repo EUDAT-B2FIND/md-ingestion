@@ -15,12 +15,17 @@
         "dataset"
     ],
     "Rights": [
-        "Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk)."
+        "Public"
     ],
+    "SpatialCoverage": [
+        "Store Bakkegaard",
+        "14.848044795741608, 55.04453228517185"
+    ],
+    "TemporalCoverage": " period : ( None - 1700-07-01T11:59:59Z ) ",
     "author": [
         "Bornholms Museum"
     ],
-    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/411/;2020-03-06T17:00:01.743162+01:00;060205-1 Store Bakkegaard;Bornholms Museum;1879      : En enlig flad Stenr\u00f8se beliggende paa en \u00f8de Lyngbakke. Der har v\u00e6ret en Kreds af nedsatte Stene omkring dens Rand, men disse ere alle borttagne. I Midten er der en Fordybning, som efter Sigende hidr\u00f8rer derfra, at der her har ligget en stor Sten, som ligeledes er borte.1943      : 1943: Sl\u00f8jfet\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;060205-1;dk;Store Bakkegaard;14.848044795741608, 55.04453228517185;Gravr\u00f8se;Oldtid;1700 B.C.-375 A.D.;Copyright \u00a9 Slots- og Kulturstyrelsen (www.slks.dk).",
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/411/;2020-03-06T17:00:01.743162+01:00;060205-1 Store Bakkegaard;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1879      : En enlig flad Stenr\u00f8se beliggende paa en \u00f8de Lyngbakke. Der har v\u00e6ret en Kreds af nedsatte Stene omkring dens Rand, men disse ere alle borttagne. I Midten er der en Fordybning, som efter Sigende hidr\u00f8rer derfra, at der her har ligget en stor Sten, som ligeledes er borte.1943      : 1943: Sl\u00f8jfet\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;060205-1;dk;Store Bakkegaard;14.848044795741608, 55.04453228517185;Gravr\u00f8se;Burial cairn, Funerary;Oldtid;1700 B.C.-375 A.D.;Public",
     "group": "slks2",
     "groups": [
         {
@@ -29,7 +34,7 @@
     ],
     "name": "0b44e86d-5e7f-55cc-af8c-6259ee8f440f",
     "notes": [
-        "1879      : En enlig flad Stenr\u00f8se beliggende paa en \u00f8de Lyngbakke. Der har v\u00e6ret en Kreds af nedsatte Stene omkring dens Rand, men disse ere alle borttagne. I Midten er der en Fordybning, som efter Sigende hidr\u00f8rer derfra, at der her har ligget en stor Sten, som ligeledes er borte.1943      : 1943: Sl\u00f8jfet\n"
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1879      : En enlig flad Stenr\u00f8se beliggende paa en \u00f8de Lyngbakke. Der har v\u00e6ret en Kreds af nedsatte Stene omkring dens Rand, men disse ere alle borttagne. I Midten er der en Fordybning, som efter Sigende hidr\u00f8rer derfra, at der her har ligget en stor Sten, som ligeledes er borte.1943      : 1943: Sl\u00f8jfet\n"
     ],
     "oai_identifier": [
         "0b44e86d-5e7f-55cc-af8c-6259ee8f440f"
@@ -39,6 +44,12 @@
     "tags": [
         {
             "name": "Gravr\u00f8se"
+        },
+        {
+            "name": "Burial cairn"
+        },
+        {
+            "name": "Funerary"
         }
     ],
     "title": [

@@ -6,7 +6,8 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
     <dc:title>060205-1 Store Bakkegaard</dc:title>
     <dc:creator>Bornholms Museum</dc:creator>
-    <dc:description>1879      : En enlig flad Stenr&#248;se beliggende paa en &#248;de Lyngbakke. Der har v&#230;ret en Kreds af nedsatte Stene omkring dens Rand, men disse ere alle borttagne. I Midten er der en Fordybning, som efter Sigende hidr&#248;rer derfra, at der her har ligget en stor Sten, som ligeledes er borte.1943      : 1943: Sl&#248;jfet
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+1879      : En enlig flad Stenr&#248;se beliggende paa en &#248;de Lyngbakke. Der har v&#230;ret en Kreds af nedsatte Stene omkring dens Rand, men disse ere alle borttagne. I Midten er der en Fordybning, som efter Sigende hidr&#248;rer derfra, at der her har ligget en stor Sten, som ligeledes er borte.1943      : 1943: Sl&#248;jfet
 </dc:description>
     <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
     <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
@@ -15,9 +16,10 @@
     <dc:language>dk</dc:language>
     <dcterms:spatial>Store Bakkegaard</dcterms:spatial>
     <dcterms:spatial xsi:type="dcterms:POINT">14.848044795741608, 55.04453228517185</dcterms:spatial>
-    <dc:subject>Gravr&#248;se</dc:subject>
+    <dc:subject xml:lang="da">Gravr&#248;se</dc:subject>
+    <dc:subject xml:lang="en">Burial cairn, Funerary</dc:subject>
     <dcterms:temporal>Oldtid</dcterms:temporal>
     <dcterms:temporal>1700 B.C.-375 A.D.</dcterms:temporal>
-    <dc:rights>Copyright &#169; Slots- og Kulturstyrelsen (www.slks.dk).</dc:rights>
+    <dc:rights>Public</dc:rights>
   </metadata>
 </record>
