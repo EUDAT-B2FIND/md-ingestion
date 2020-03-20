@@ -1,15 +1,19 @@
 {
     "Contact": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
-    "DiscHierarchy": [],
-    "Discipline": "Not stated",
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical_Archaeology",
     "Language": [],
     "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0b840adf-d1b0-50ab-8889-af2c460e9492",
     "Publisher": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
     "ResourceType": [
         "dataset"
@@ -18,7 +22,6 @@
         "Public"
     ],
     "SpatialCoverage": [
-        "Klippeg\u00e5rd",
         "14.734583062232936, 55.11054879317996"
     ],
     "TemporalCoverage": [
@@ -61,5 +64,6 @@
     ],
     "title": [
         "060301-38 Klippeg\u00e5rd"
-    ]
+    ],
+    "url": ""
 }

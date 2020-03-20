@@ -1,15 +1,19 @@
 {
     "Contact": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
-    "DiscHierarchy": [],
-    "Discipline": "Not stated",
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical_Archaeology",
     "Language": [],
     "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0add84df-bd73-54e8-adb4-4e1de550a06b",
     "Publisher": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
     "ResourceType": [
         "dataset"
@@ -18,7 +22,6 @@
         "Public"
     ],
     "SpatialCoverage": [
-        "Thoreby Skov",
         "11.820680243862812, 54.77557279284377"
     ],
     "TemporalCoverage": " period : ( None - 3950-07-01T11:59:59Z ) ",
@@ -54,5 +57,6 @@
     ],
     "title": [
         "070619-29 Thoreby Skov"
-    ]
+    ],
+    "url": ""
 }

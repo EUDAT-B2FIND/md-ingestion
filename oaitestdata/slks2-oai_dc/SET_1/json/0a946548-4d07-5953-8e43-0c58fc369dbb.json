@@ -1,15 +1,19 @@
 {
     "Contact": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
-    "DiscHierarchy": [],
-    "Discipline": "Not stated",
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical_Archaeology",
     "Language": [],
     "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0a946548-4d07-5953-8e43-0c58fc369dbb",
     "Publisher": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
     "ResourceType": [
         "dataset"
@@ -18,7 +22,6 @@
         "Public"
     ],
     "SpatialCoverage": [
-        "Karolinelund",
         "10.542220207740606, 55.41683665614853"
     ],
     "TemporalCoverage": " period : ( None - 3950-07-01T11:59:59Z ) ",
@@ -57,5 +60,6 @@
     ],
     "title": [
         "080107-15 Karolinelund"
-    ]
+    ],
+    "url": ""
 }

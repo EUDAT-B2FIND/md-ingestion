@@ -19,7 +19,7 @@
     </field>
     <!-- Identifier -->
     <field name="url">
-      <xpath>h:header/h:identifier</xpath>
+      <xpath>//dc:identifier/text()</xpath>
     </field>
     <field name="RelatedIdentifier">
       <xpath>//dc:relation</xpath>
@@ -61,10 +61,10 @@
     </field>  
    <!-- Coverage -->
     <field name="Discipline">
-      <string>Classical Archaeology</string>
+      <string>Classical_Archaeology</string>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//dcterms:spatial</xpath>
+      <xpath>//dcterms:spatial[2]</xpath>
     </field>
     <field name="TemporalCoverage">
       <xpath>//dcterms:temporal</xpath>

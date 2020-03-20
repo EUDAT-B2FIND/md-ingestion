@@ -1,15 +1,19 @@
 {
     "Contact": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
-    "DiscHierarchy": [],
-    "Discipline": "Not stated",
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical_Archaeology",
     "Language": [],
     "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=00ab2967-86b9-5ed6-aa81-98e738389b15",
     "Publisher": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
     "ResourceType": [
         "dataset"
@@ -18,7 +22,6 @@
         "Public"
     ],
     "SpatialCoverage": [
-        "Dahlegaard",
         "14.792395327168661, 55.239138676927325"
     ],
     "TemporalCoverage": [
@@ -58,5 +61,6 @@
     ],
     "title": [
         "060105-46 Dahlegaard"
-    ]
+    ],
+    "url": ""
 }

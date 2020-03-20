@@ -1,15 +1,19 @@
 {
     "Contact": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
-    "DiscHierarchy": [],
-    "Discipline": "Not stated",
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical_Archaeology",
     "Language": [],
     "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0a4790e3-423e-5d10-aa00-94ae04a41299",
     "Publisher": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
     "ResourceType": [
         "dataset"
@@ -18,7 +22,6 @@
         "Public"
     ],
     "SpatialCoverage": [
-        "Alh\u00f8je",
         "14.985220122522618, 55.01184005385897"
     ],
     "TemporalCoverage": [
@@ -61,5 +64,6 @@
     ],
     "title": [
         "060203-39 Alh\u00f8je"
-    ]
+    ],
+    "url": ""
 }

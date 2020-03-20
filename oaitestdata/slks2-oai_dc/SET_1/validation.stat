@@ -57,11 +57,11 @@
  |-> PID              <--                     
   |--     0 |    0 |     0 |    0
 
- |-> Source           <--       h:header/h:identifier
+ |-> Source           <--       h:header/h:identifier/text()
 
   |--     0 |    0 |     0 |    0
 
- |-> RelatedIdentifier <--       h:header/h:identifier
+ |-> RelatedIdentifier <--       h:header/h:identifier/text()
 
   |--     0 |    0 |     0 |    0
 
@@ -126,10 +126,10 @@
   
   |--     0 |    0 |     0 |    0
 
- |-> Discipline       <--       <string>Classical Archaeology</string>
+ |-> Discipline       <--       <string>ClassicalArchaeology</string>
 
   |--    17 |  100 |    17 |  100
-      |- 17    : Not stated                          |
+      |- 17    : Classicalarchaeology                |
 
  |-> SpatialCoverage  <--       //dcterms:spatial
 

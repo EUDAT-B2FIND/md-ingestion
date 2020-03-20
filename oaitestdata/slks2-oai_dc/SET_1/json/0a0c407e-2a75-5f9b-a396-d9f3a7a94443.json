@@ -1,17 +1,21 @@
 {
     "Contact": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
-    "DiscHierarchy": [],
-    "Discipline": "Not stated",
+    "DiscHierarchy": [
+        "1.1.4",
+        "Ancient Cultures",
+        "Classical Archaeology"
+    ],
+    "Discipline": "Classical_Archaeology",
     "Language": [
         "Danish"
     ],
     "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0a0c407e-2a75-5f9b-a396-d9f3a7a94443",
     "Publisher": [
-        "Slots- og Kulturstyrelsen (www.slks.dk)",
-        "Aarhus University (www.au.dk)"
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
     "ResourceType": [
         "dataset"
@@ -20,7 +24,6 @@
         "Public"
     ],
     "SpatialCoverage": [
-        "Ybbernegaard",
         "14.791946311477716, 55.148291428879816"
     ],
     "TemporalCoverage": [
@@ -31,7 +34,7 @@
     "author": [
         "Bornholms Museum"
     ],
-    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/40/;2020-03-06T17:00:01.743162+01:00;060302-79 Ybbernegaard;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1876      : T\u00e6t ved disse Kister [sb.78] fandtes en Dolk og en Kniv af Flint. (Alle disse Ting ere bortkastede). Anm. Ved Eierens Husd\u00f8r ligger en Trappesten med mange underlige Ridser og Tegn. Den er ofte bleven betegnet som en Runesten og har v\u00e6ret Gjenstand for adskillige Granskeres Unders\u00f8gelse. Det er imidlertid kun ganske naturlige \"Aftryk\" om disse end ere sj\u00e6ldne og paa et andet Omraade maaske s\u00e6rdeles m\u00e6rkelige.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;060302-79;dan;Ybbernegaard;14.791946311477716, 55.148291428879816;Depotfund;Votive deposit, Diverse features and objects;Stenalder;[-2350,-1701];AYSX;Public",
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/40/;2020-03-06T17:00:01.743162+01:00;060302-79 Ybbernegaard;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/40/;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1876      : T\u00e6t ved disse Kister [sb.78] fandtes en Dolk og en Kniv af Flint. (Alle disse Ting ere bortkastede). Anm. Ved Eierens Husd\u00f8r ligger en Trappesten med mange underlige Ridser og Tegn. Den er ofte bleven betegnet som en Runesten og har v\u00e6ret Gjenstand for adskillige Granskeres Unders\u00f8gelse. Det er imidlertid kun ganske naturlige \"Aftryk\" om disse end ere sj\u00e6ldne og paa et andet Omraade maaske s\u00e6rdeles m\u00e6rkelige.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);dataset;dan;Ybbernegaard;14.791946311477716, 55.148291428879816;Depotfund;Votive deposit, Diverse features and objects;Stenalder;[-2350,-1701];AYSX;Public",
     "group": "slks2",
     "groups": [
         {
@@ -60,5 +63,6 @@
     ],
     "title": [
         "060302-79 Ybbernegaard"
-    ]
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/40/"
 }
