@@ -44,7 +44,7 @@
       <xpath>//dc:rights</xpath>
       </field> 
     <field name="OpenAccess">
-      <xpath>true</xpath>
+      <string>true</string>
     </field>
     <field name="Contact">
       <xpath>//dc:publisher</xpath>
@@ -61,7 +61,7 @@
     </field>  
    <!-- Coverage -->
     <field name="Discipline">
-      <string>Classical_Archaeology</string>
+      <string>Archaeology</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dcterms:spatial[2]</xpath>
