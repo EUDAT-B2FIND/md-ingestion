@@ -88,16 +88,16 @@
 
  |-> MetaDataAccess   <--                     
   |--    21 |  100 |    21 |  100
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
-      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifi [...(39 chars follow)...] |
 
  |-> Creator          <--       //dc:creator
  
@@ -151,7 +151,7 @@
  |-> Discipline       <--       <string>Archaeology</string>
 
   |--    21 |  100 |    21 |  100
-      |- 21    : Not stated                          |
+      |- 21    : Archaeology                         |
 
  |-> SpatialCoverage  <--       //dcterms:spatial[2]
 

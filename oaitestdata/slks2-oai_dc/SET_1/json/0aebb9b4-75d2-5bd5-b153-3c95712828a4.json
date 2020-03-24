@@ -3,12 +3,16 @@
         "Aarhus University (www.au.dk)",
         "Slots- og Kulturstyrelsen (www.slks.dk)"
     ],
-    "DiscHierarchy": [],
-    "Discipline": "Not stated",
+    "DiscHierarchy": [
+        "1.1.5",
+        "Ancient Cultures",
+        "Archaeology"
+    ],
+    "Discipline": "Archaeology",
     "Language": [
         "Danish"
     ],
-    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0aebb9b4-75d2-5bd5-b153-3c95712828a4",
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifier=0aebb9b4-75d2-5bd5-b153-3c95712828a4",
     "MetadataAccess": [
         "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2906/"
     ],
