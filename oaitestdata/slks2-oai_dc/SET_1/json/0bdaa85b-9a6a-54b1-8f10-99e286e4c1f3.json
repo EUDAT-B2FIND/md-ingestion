@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0bdaa85b-9a6a-54b1-8f10-99e286e4c1f3",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2195/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "14.999505,55.146807"
+    ],
+    "TemporalCoverage": [
+        "Bronzealder",
+        "-1700,-501",
+        "BXXX"
+    ],
+    "author": [
+        "Bornholms Museum"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2195/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2195/;060406-154 Br\u00e6ndegaard;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1943      : Klippeblok med skaalformede Fordybninger.1986-04-09: Ikke-fredet helleristningsfelt ca. 50 m \u00d8S\u00d8 for 5235-6.;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;060406-154;dan;Br\u00e6ndegaard;14.999505,55.146807;Sk\u00e5ltegn;Cup mark, Religion and tradition;Bronzealder;-1700,-501;BXXX;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0bdaa85b-9a6a-54b1-8f10-99e286e4c1f3",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1943      : Klippeblok med skaalformede Fordybninger.1986-04-09: Ikke-fredet helleristningsfelt ca. 50 m \u00d8S\u00d8 for 5235-6."
+    ],
+    "oai_identifier": [
+        "0bdaa85b-9a6a-54b1-8f10-99e286e4c1f3"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Sk\u00e5ltegn"
+        },
+        {
+            "name": "Cup mark"
+        },
+        {
+            "name": "Religion tradition"
+        }
+    ],
+    "title": [
+        "060406-154 Br\u00e6ndegaard"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2195/"
+}

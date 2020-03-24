@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0bc9b58d-4de7-5eb6-8f4b-dbd406e52750",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/493/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "15.032236,55.015164"
+    ],
+    "TemporalCoverage": [
+        "Oldtid",
+        "-250000,1066",
+        "OXXX"
+    ],
+    "author": [
+        "Bornholms Museum"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/493/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/493/;060204-8 Bakkegaard;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1943      : Tr\u00e6bevokset H\u00f8j i Ager. Ca. 18 m i Tvm. H\u00f8jde 2.0 - 2.25 m. Overfladen en Del omdannet ved Haveanl\u00e6g. I tidligere Tid gravet i Toppen.1985-05-13: H\u00f8j med gammel afpl\u00f8jning af siderne og krater i toppen. I;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;060204-8;dan;Bakkegaard;15.032236,55.015164;Rundh\u00f8j;Round barrow, burial mound, Funerary;Oldtid;-250000,1066;OXXX;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0bc9b58d-4de7-5eb6-8f4b-dbd406e52750",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1943      : Tr\u00e6bevokset H\u00f8j i Ager. Ca. 18 m i Tvm. H\u00f8jde 2.0 - 2.25 m. Overfladen en Del omdannet ved Haveanl\u00e6g. I tidligere Tid gravet i Toppen.1985-05-13: H\u00f8j med gammel afpl\u00f8jning af siderne og krater i toppen. I"
+    ],
+    "oai_identifier": [
+        "0bc9b58d-4de7-5eb6-8f4b-dbd406e52750"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "060204-8 Bakkegaard"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/493/"
+}

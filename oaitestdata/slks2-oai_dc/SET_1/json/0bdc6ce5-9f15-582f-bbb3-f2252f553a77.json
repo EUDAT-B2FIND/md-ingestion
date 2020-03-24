@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0bdc6ce5-9f15-582f-bbb3-f2252f553a77",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2611/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "11.83784,54.812725"
+    ],
+    "TemporalCoverage": " period : ( None - 3950-07-01T11:59:59Z ) ",
+    "author": [
+        "Museum Lolland-Falster"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2611/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2611/;070115-54 Svendsh\u00f8j;Museum Lolland-Falster;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1952-03-09: Ved gravninger i h\u00f8jen er iflg. meddelelse fundet flere urner med br\u00e6ndte ben. I en af disse fandtes et jernspyd. Denne grav er (efter tegn. at d\u00f8mme) fra \u00e6.romertid.1984-05-01: Svendsh\u00f8j (af lokalbefolkningen kaldet Svenske h\u00f8j). 1 meget;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;070115-54;dan;Svendsh\u00f8j;11.83784,54.812725;Rundh\u00f8j;Round barrow, burial mound, Funerary;Oldtid;-3950,-501;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0bdc6ce5-9f15-582f-bbb3-f2252f553a77",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1952-03-09: Ved gravninger i h\u00f8jen er iflg. meddelelse fundet flere urner med br\u00e6ndte ben. I en af disse fandtes et jernspyd. Denne grav er (efter tegn. at d\u00f8mme) fra \u00e6.romertid.1984-05-01: Svendsh\u00f8j (af lokalbefolkningen kaldet Svenske h\u00f8j). 1 meget"
+    ],
+    "oai_identifier": [
+        "0bdc6ce5-9f15-582f-bbb3-f2252f553a77"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "070115-54 Svendsh\u00f8j"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2611/"
+}

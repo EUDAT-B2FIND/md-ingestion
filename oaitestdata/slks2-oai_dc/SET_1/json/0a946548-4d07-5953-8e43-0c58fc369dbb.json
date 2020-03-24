@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0a946548-4d07-5953-8e43-0c58fc369dbb",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4636/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "10.54222,55.416837"
+    ],
+    "TemporalCoverage": " period : ( None - 3950-07-01T11:59:59Z ) ",
+    "author": [
+        "Ark\u00e6ologi Sydfyn"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4636/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4636/;080107-15 Karolinelund;Ark\u00e6ologi Sydfyn;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1953      : Overpl\u00f8jet.1884      : T\u00e6t ved Aaen har v\u00e6ret en st\u00f8rre H\u00f8j, hvoraf en st\u00f8rre H\u00f8jning endnu er levnet. I Aar (1884) kom ved Pl\u00f8jning (altsaa i Overfladen) en Urne frem, hvori var br\u00e6ndte Ben; der var en Stens\u00e6tning omkring Urnen, men intet s\u00e6rligt D\u00e6kke paa denne, Urnen havde \u00d8rer, havde Fals for oven, men var ellers glat.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;080107-15;dan;Karolinelund;10.54222,55.416837;Rundh\u00f8j;Round barrow, burial mound, Funerary;Oldtid;-3950,-501;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0a946548-4d07-5953-8e43-0c58fc369dbb",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1953      : Overpl\u00f8jet.1884      : T\u00e6t ved Aaen har v\u00e6ret en st\u00f8rre H\u00f8j, hvoraf en st\u00f8rre H\u00f8jning endnu er levnet. I Aar (1884) kom ved Pl\u00f8jning (altsaa i Overfladen) en Urne frem, hvori var br\u00e6ndte Ben; der var en Stens\u00e6tning omkring Urnen, men intet s\u00e6rligt D\u00e6kke paa denne, Urnen havde \u00d8rer, havde Fals for oven, men var ellers glat.\n"
+    ],
+    "oai_identifier": [
+        "0a946548-4d07-5953-8e43-0c58fc369dbb"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "080107-15 Karolinelund"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4636/"
+}

@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0a110b1d-41e1-5b83-a5bd-ce54ab5e351b",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3769/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "11.434843,54.857243"
+    ],
+    "TemporalCoverage": [
+        "Oldtid",
+        "-250000,1066",
+        "OXXX"
+    ],
+    "author": [
+        "Museum Lolland-Falster"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3769/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3769/;070511-65 Blans;Museum Lolland-Falster;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;070511-65;dan;Blans;11.434843,54.857243;Rundh\u00f8j;Round barrow, burial mound, Funerary;Oldtid;-250000,1066;OXXX;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0a110b1d-41e1-5b83-a5bd-ce54ab5e351b",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].1877      : To overpl\u00f8iede Jordh\u00f8ie [sb.64-65].\n"
+    ],
+    "oai_identifier": [
+        "0a110b1d-41e1-5b83-a5bd-ce54ab5e351b"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "070511-65 Blans"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3769/"
+}

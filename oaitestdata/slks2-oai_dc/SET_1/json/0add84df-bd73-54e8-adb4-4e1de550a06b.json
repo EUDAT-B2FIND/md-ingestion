@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0add84df-bd73-54e8-adb4-4e1de550a06b",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4316/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "11.82068,54.775573"
+    ],
+    "TemporalCoverage": " period : ( None - 3950-07-01T11:59:59Z ) ",
+    "author": [
+        "Museum Lolland-Falster"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4316/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4316/;070619-29 Thoreby Skov;Museum Lolland-Falster;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1879      : St\u00e6rkt overgroet, rund Stenl\u00e6gning af ubestemmelig Tv\u00e6rmaal.1954      : Sl\u00f8jfet.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;070619-29;dan;Thoreby Skov;11.82068,54.775573;Stens\u00e6tning;Stone setting, Funerary;Oldtid;-3950,-501;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0add84df-bd73-54e8-adb4-4e1de550a06b",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1879      : St\u00e6rkt overgroet, rund Stenl\u00e6gning af ubestemmelig Tv\u00e6rmaal.1954      : Sl\u00f8jfet.\n"
+    ],
+    "oai_identifier": [
+        "0add84df-bd73-54e8-adb4-4e1de550a06b"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Stens\u00e6tning"
+        },
+        {
+            "name": "Stone setting"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "070619-29 Thoreby Skov"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4316/"
+}

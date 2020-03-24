@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0b44d3cf-b9a6-50bf-9f8c-f5f68236ccaf",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2201/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "15.078652,55.144915"
+    ],
+    "TemporalCoverage": [
+        "Bronzealder",
+        "-1700,-1101",
+        "B\u00c6XX"
+    ],
+    "author": [
+        "Bornholms Museum"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2201/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2201/;060406-160 Gyldensgaard;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1887      : En stor m\u00e6ngde tynde bronzer\u00f8r fundet sammen med br\u00e6ndte ben? under uregelm\u00e6ssig stendynge 0.6 m under overfladen.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;060406-160;dan;Gyldensgaard;15.078652,55.144915;Begravelse, uspec undergruppe;Funerary, Funerary;Bronzealder;-1700,-1101;B\u00c6XX;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0b44d3cf-b9a6-50bf-9f8c-f5f68236ccaf",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1887      : En stor m\u00e6ngde tynde bronzer\u00f8r fundet sammen med br\u00e6ndte ben? under uregelm\u00e6ssig stendynge 0.6 m under overfladen.\n"
+    ],
+    "oai_identifier": [
+        "0b44d3cf-b9a6-50bf-9f8c-f5f68236ccaf"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Begravelse"
+        },
+        {
+            "name": "uspec undergruppe"
+        },
+        {
+            "name": "Funerary"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "060406-160 Gyldensgaard"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2201/"
+}

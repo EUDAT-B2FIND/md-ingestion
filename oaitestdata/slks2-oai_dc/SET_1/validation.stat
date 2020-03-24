@@ -1,0 +1,180 @@
+
+ Statistics of
+	community	slks2
+	subset		SET_1
+	# of records	21
+  see as well oaitestdata/slks2-oai_dc/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dc:title
+   
+  |--    21 |  100 |    21 |  100
+      |- 1     : b'060205-1 Store Bakkegaard'        |
+      |- 1     : b'060105-39 Olsker'                 |
+      |- 1     : b'060302-79 Ybbernegaard'           |
+      |- 1     : b'060105-46 Dahlegaard'             |
+      |- 1     : b'060406-154 Br\xc3\xa6ndegaard'      |
+      |- 1     : b'080106-3 Kalvehavegaard'          |
+      |- 1     : b'070214-37 Moseby'                 |
+      |- 1     : b'070619-29 Thoreby Skov'           |
+      |- 1     : b'060406-160 Gyldensgaard'          |
+      |- 1     : b'060203-39 Alh\xc3\xb8je'          |
+
+ |-> Description      <--       //dc:description
+
+  |--    21 |  100 |    21 |  100
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(394 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(431 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(512 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(697 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(202 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(270 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(137 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(177 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(211 chars follow)...] |
+      |- 1     : b'This record describes ancient sites and monuments as well archaeological excavat' [...(987 chars follow)...] |
+
+ |-> Tags             <--       //dc:subject
+ 
+  |--    21 |  100 |    21 |  100
+      |- 11    : Rundhøj                             |
+      |- 2     : Gravrøse                            |
+      |- 2     : Enkeltfund                          |
+      |- 2     : Jordfæstegrav                       |
+      |- 1     : Depotfund                           |
+      |- 1     : Skåltegn                            |
+      |- 1     : Stensætning                         |
+      |- 1     : Begravelse                          |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //dc:identifier/text()
+
+  |--    42 |  200 |    42 |  200
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/411/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1042/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/40/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1049/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2195/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4595/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2943/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4316/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2201/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/602/      |
+
+ |-> RelatedIdentifier <--       //dc:identifier/text()
+
+  |--    42 |  200 |    42 |  200
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/411/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1042/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/40/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1049/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2195/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4595/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2943/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4316/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2201/      |
+      |- 2     : http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/602/      |
+
+ |-> MetaDataAccess   <--                     
+  |--    21 |  100 |    21 |  100
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+      |- 1     : https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identif [...(40 chars follow)...] |
+
+ |-> Creator          <--       //dc:creator
+ 
+  |--    21 |  100 |    21 |  100
+      |- 10    : b'Bornholms Museum'                 |
+      |- 9     : b'Museum Lolland-Falster'           |
+      |- 2     : b'Ark\xc3\xa6ologi Sydfyn'          |
+
+ |-> Publisher        <--       //dc:publisher
+
+  |--    21 |  100 |    21 |  100
+      |- 21    : b'Aarhus University (www.au.dk)'      |
+
+ |-> Contributor      <--       //dc:contributor
+
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //dc:date
+    
+  |--     0 |    0 |     0 |    0
+
+ |-> Rights           <--       //dc:rights
+  
+  |--    21 |  100 |    21 |  100
+      |- 21    : Public                              |
+
+ |-> OpenAccess       <--       <string>true</string>
+
+  |--    21 |  100 |    21 |  100
+      |- 21    : true                                |
+
+ |-> Contact          <--       //dc:publisher
+
+  |--    21 |  100 |    21 |  100
+      |- 21    : Aarhus University (www.au.dk)       |
+
+ |-> Language         <--       //dc:language
+
+  |--    21 |  100 |    21 |  100
+      |- 21    : Danish                              |
+
+ |-> ResourceType     <--       //dc:type
+    
+  |--    21 |  100 |    21 |  100
+      |- 21    : Dataset                             |
+
+ |-> Format           <--       //dc:format
+  
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string>Archaeology</string>
+
+  |--    21 |  100 |    21 |  100
+      |- 21    : Not stated                          |
+
+ |-> SpatialCoverage  <--       //dcterms:spatial[2]
+
+  |--    21 |  100 |    21 |  100
+      |- 1     : 14.848045,55.044532                 |
+      |- 1     : 14.792322,55.262935                 |
+      |- 1     : 14.791946,55.148291                 |
+      |- 1     : 14.792395,55.239139                 |
+      |- 1     : 14.999505,55.146807                 |
+      |- 1     : 10.637446,55.437572                 |
+      |- 1     : 12.108595,54.838347                 |
+      |- 1     : 11.82068,54.775573                  |
+      |- 1     : 15.078652,55.144915                 |
+      |- 1     : 14.98522,55.01184                   |
+
+ |-> TemporalCoverage <--       //dcterms:temporal
+
+  |--    21 |  100 |    21 |  100
+      |- 6     : Oldtid                              |
+      |- 5     : Bronzealder                         |
+      |- 4     :  period : ( None - 3950-07-01T11:59:59Z )       |
+      |- 2     :  period : ( None - 1700-07-01T11:59:59Z )       |
+      |- 2     : Jernalder                           |
+      |- 1     : Stenalder                           |
+      |- 1     : Vikingetid                          |
+

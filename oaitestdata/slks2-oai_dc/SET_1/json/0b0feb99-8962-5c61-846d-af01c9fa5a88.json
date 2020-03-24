@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/??verb=GetRecord&metadataPrefix=oai_dc&identifier=0b0feb99-8962-5c61-846d-af01c9fa5a88",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2501/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "11.895105,54.821999"
+    ],
+    "TemporalCoverage": [
+        "Oldtid",
+        "-250000,1066",
+        "OXXX"
+    ],
+    "author": [
+        "Museum Lolland-Falster"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2501/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2501/;070112-29 Tingsted;Museum Lolland-Falster;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1914      : To smaa [sb.29-30], runde Forh\u00f8jninger, n\u00e6r ved at forsvinde. De har Karakter af at v\u00e6re H\u00f8jpladser; nogen Erindring om H\u00f8jene, foreligger ikke.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;070112-29;dan;Tingsted;11.895105,54.821999;Rundh\u00f8j;Round barrow, burial mound, Funerary;Oldtid;-250000,1066;OXXX;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0b0feb99-8962-5c61-846d-af01c9fa5a88",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1914      : To smaa [sb.29-30], runde Forh\u00f8jninger, n\u00e6r ved at forsvinde. De har Karakter af at v\u00e6re H\u00f8jpladser; nogen Erindring om H\u00f8jene, foreligger ikke.\n"
+    ],
+    "oai_identifier": [
+        "0b0feb99-8962-5c61-846d-af01c9fa5a88"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "070112-29 Tingsted"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2501/"
+}

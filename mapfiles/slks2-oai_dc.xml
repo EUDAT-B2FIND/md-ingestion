@@ -25,7 +25,7 @@
       <xpath>//dc:relation</xpath>
     </field>
     <field name="MetadataAccess">
-      <xpath>/h:header/h:identifier</xpath>
+      <xpath>//h:header/h:identifier</xpath>
     </field>
    <!-- Provenance Information -->
     <field name="author">

@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4058/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4058/</dc:identifier>
+    <dc:title>070609-46 Storskoven</dc:title>
+    <dc:creator>Museum Lolland-Falster</dc:creator>
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+1954      : H&#248;j, 1.50 x 20 m. Unge b&#248;ge, i skov.1879      : [sb.39-52] (80-97). Gruppe af 18 [14] Rundh&#248;ie, den st&#248;rste 5-6 Fod h&#248;i. 6 kunde ikke findes [blandt gl. sb. 80-112].<br/><br/>Bevoksning: 1987: L&#248;vtr&#230;er1987-05-11: H&#248;j.<br/><br/>M&#229;ler 1,5 x 16,0 x 16,0 m. I den S&#216;-lige h&#248;jfod ses en<br/>st&#248;rre sten. Indg&#229;r i h&#248;jgruppe 4425:2-14.<br/><br/>Bevoksning: 1987: L&#248;vtr&#230;er2011-12-16: Fortidsmindet blev fundet som beskrevet. Randsten i S&#216;. Bevokset med 9 store b&#248;ge og mange mindre b&#248;ge. Bundd&#230;kke: Skovbund.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>Dataset</dc:type>
+    <dcterms:alternative>070609-46</dcterms:alternative>
+    <dc:language>dan</dc:language>
+    <dcterms:spatial>Storskoven</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">11.709047,54.855307</dcterms:spatial>
+    <dc:subject xml:lang="da">Rundh&#248;j</dc:subject>
+    <dc:subject xml:lang="en">Round barrow, burial mound, Funerary</dc:subject>
+    <dcterms:temporal>Oldtid</dcterms:temporal>
+    <dcterms:temporal>-250000,1066</dcterms:temporal>
+    <dcterms:temporal>OXXX</dcterms:temporal>
+    <dc:rights>Public</dc:rights>
+  </metadata>
+</record>
