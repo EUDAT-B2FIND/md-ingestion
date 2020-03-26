@@ -1,5 +1,7 @@
-Disclaimer
-----------
+##README for B2FIND md-ingestion
+
+###Disclaimer
+
 Copyright (c) 2014 Heinrich Widmann (DKRZ)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -10,58 +12,63 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-md-ingestion
-============
+###md-ingestion
 
-The python script manager.py in this directory provide functionality required for
+The python script manager.py in this directory provides functionality required for
 ingestion (including OAI harvesting, semantic mapping (see 
 [repo 'md-mapping'](https://github.com/EUDAT-B2FIND/md-mapping)) and uploading 
 to CKAN) of metadata in the [B2FIND portal](http://b2find.eudat.eu/).
 
-Preconditions
-=============
+###Preconditions
 
-The sript manager.py uses the classes and functions from
+The script manager.py uses the classes and functions from
 
-"""B2FIND.py - classes for JMD management :
+`B2FIND.py` - classes for JMD management:
   - CKAN_CLIENT  Executes CKAN APIs (interface to CKAN)
   - HARVESTER
   - CONVERTER
   - UPLOADER
 
-Install required modules simplejson, sickle and e.g. by :
-  > sudo pip install <module>
+###Installation
 
-or just by installing all modules listed in requirements.txt :
-  > less requirements.txt
-  sickle
-  lxml
-  simplejson
-  python-Levenshtein
-  git+https://github.com/noumar/iso639.git
+Use Python 3.6.
 
-  > sudo pip install -r requirements.txt
+Get sources from github:
 
-Or - if this not works for some reason for xml - try
-  > sudo apt-get install python-lxml
+```
+git clone https://github.com/EUDAT-B2FIND/md-ingestion.git
+cd md-ingestion
+```
 
-or on systems with no apt-get but yum available :
-  > sudo yum install python-lxml
+And run the installation:
 
-or (if this is not workabl, e.g. on some SuSE distr.) try
-  > sudo zypper install <module>
+```
+pip install -r requirements.txt
+```
 
-And set PYTHONPATH to needed modules (must be downloaded if not available) :
+####Use a conda environment
 
-   > setenv PYTHONPATH "/home/k204019/Downloads/PicklingTools151Release/Python"
+Install conda: 
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/
 
-Usage
-=====
+You can use a conda environment with Python 3.6.
+
+```
+conda create -n b2findpy3.6 python=3.6 pip
+conda activate b2findpy3.6
+```
+
+Run the installation:
+
+```
+pip install -r requirements.txt
+```
+
+###Usage
 manager.py [ OPTIONS ]
 
 
-Description
-===========
+###Description
 Management of meta data within EUDAT Joint Metadata Domain (JMD), i.e.
 
 I.  Ingestion of meta data comprising
@@ -71,8 +78,7 @@ I.  Ingestion of meta data comprising
 - 3. Uploading resulting JSON {key:value} dict's as datasets to JMD portal
 
 
-Options
-=======
+###Options
 
 --version               show program's version number and exit
 
@@ -114,8 +120,7 @@ Options
                         processes work with the files from this dir. (default
                         is '/oaidata')
 
-Multi Mode Options
-------------------
+###Multi Mode Options
 Use these options if you want to ingest from a list in a file.
 
 --list=FILE, -l FILE    list of OAI harvest sources (default is
@@ -124,8 +129,7 @@ Use these options if you want to ingest from a list in a file.
 --parallel=PARALLEL     [DEPRECATED]
 
 
-Single Mode Options
--------------------
+###Single Mode Options
 
 Use these options if you want to ingest from only ONE source.
 
@@ -139,8 +143,7 @@ Use these options if you want to ingest from only ONE source.
 --mdprefix=STRING       Prefix of harvested meta data
 
 
-Upload Options
---------------
+###Upload Options
 
 These options will be required to upload an dataset to a CKAN database.
 
@@ -150,12 +153,12 @@ These options will be required to upload an dataset to a CKAN database.
                         taken from file $HOME/.netrc)
 
 
-Heinrich Widmann (DKRZ), 11.4.2014
+###Authors
+* Heinrich Widmann (DKRZ), 11.4.2014
+* John Mrziglod (DKRZ), 20.5.2014
+* Anna-Lena Flügel (DKRZ), 26.03.2020
 
-John Mrziglod (DKRZ),    20.5.2014
-
-Acknowledgement
----------------
+##Acknowledgement
 
 This work is co-funded by the [EOSC-hub project](http://eosc-hub.eu/) (Horizon 2020) under Grant number 777536.
 <img src="https://wiki.eosc-hub.eu/download/attachments/1867786/eu%20logo.jpeg?version=1&modificationDate=1459256840098&api=v2" height="24">
