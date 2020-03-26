@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4595/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4595/</dc:identifier>
+    <dc:title>080106-3 Kalvehavegaard</dc:title>
+    <dc:creator>Ark&#230;ologi Sydfyn</dc:creator>
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+1884      : I samme Mark er t&#230;t ved Landevejen, ved Grusgravning, fundet et Skelet, omtr. 2' under Overfladen; det laa skraat op af; der var formentlig Levninger af "en Lerkrukke" der hos.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>Dataset</dc:type>
+    <dcterms:alternative>080106-3</dcterms:alternative>
+    <dc:language>dan</dc:language>
+    <dcterms:spatial>Kalvehavegaard</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">10.637446,55.437572</dcterms:spatial>
+    <dc:subject xml:lang="da">Jordf&#230;stegrav</dc:subject>
+    <dc:subject xml:lang="en">Inhumation, Funerary</dc:subject>
+    <dcterms:temporal>Jernalder</dcterms:temporal>
+    <dcterms:temporal>-500,1066</dcterms:temporal>
+    <dcterms:temporal>CXXX</dcterms:temporal>
+    <dc:rights>Public</dc:rights>
+  </metadata>
+</record>

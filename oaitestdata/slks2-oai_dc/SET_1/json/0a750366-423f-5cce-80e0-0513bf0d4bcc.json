@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [
+        "1.1.5",
+        "Ancient Cultures",
+        "Archaeology"
+    ],
+    "Discipline": "Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a750366-423f-5cce-80e0-0513bf0d4bcc",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/464/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "14.97097,55.014721"
+    ],
+    "TemporalCoverage": " period : ( None - 1700-07-01T11:59:59Z ) ",
+    "author": [
+        "Bornholms Museum"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/464/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/464/;060203-143C Baunegaard;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1884      : Udgravning af enkelte formodede r\u00f8ser ved foden af gravh\u00f8j sb. nr. 54, en indeholdt en \u00e6ldre jernalders brandgrav. Lokaliteten har forbindelse med sb.nr. 143A-B.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;060203-143C;dan;Baunegaard;14.97097,55.014721;Gravr\u00f8se;Burial cairn, Funerary;Oldtid;-1700,375;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0a750366-423f-5cce-80e0-0513bf0d4bcc",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1884      : Udgravning af enkelte formodede r\u00f8ser ved foden af gravh\u00f8j sb. nr. 54, en indeholdt en \u00e6ldre jernalders brandgrav. Lokaliteten har forbindelse med sb.nr. 143A-B.\n"
+    ],
+    "oai_identifier": [
+        "0a750366-423f-5cce-80e0-0513bf0d4bcc"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Gravr\u00f8se"
+        },
+        {
+            "name": "Burial cairn"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "060203-143C Baunegaard"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/464/"
+}
