@@ -1,4 +1,4 @@
-##README for B2FIND md-ingestion
+## README for B2FIND md-ingestion
 
 ###Disclaimer
 
@@ -29,7 +29,7 @@ The script manager.py uses the classes and functions from
   - CONVERTER
   - UPLOADER
 
-###Installation
+### Installation
 
 Use Python 3.6.
 
