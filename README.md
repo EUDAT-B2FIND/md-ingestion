@@ -61,7 +61,9 @@ Run the installation:
 pip install -r requirements.txt
 ```
 
-### Usage
+### Usage 
+
+**TODO**: update of section
 
 ```
 manager.py [ OPTIONS ]
@@ -77,6 +79,9 @@ Ingestion of metadata comprising:
 2. Converting XML to Jason and semantic mapping of tags to CKAN fields
 3. Uploading resulting JSON {key:value} dict's as datasets to JMD portal
 
+### Examples
+
+**TODO**: fill in examples
 
 ### Options
 
