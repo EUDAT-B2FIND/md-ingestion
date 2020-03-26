@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [
+        "1.1.5",
+        "Ancient Cultures",
+        "Archaeology"
+    ],
+    "Discipline": "Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a4790e3-423e-5d10-aa00-94ae04a41299",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/602/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "14.98522,55.01184"
+    ],
+    "TemporalCoverage": [
+        "Bronzealder",
+        "-1500,-1301",
+        "B\u00c6X2"
+    ],
+    "author": [
+        "Bornholms Museum"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/602/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/602/;060203-39 Alh\u00f8je;Bornholms Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1997-03-24: Fra dette fundsted forefindes der ubr\u00e6ndt materiale p\u00e5 Antropologisk Laboratorium. P\u00e5 AL registreret som: Alh\u00f8j; bronzealder; NM 1339/58; B15225-6.1958      : I forbindelse med en restaurering og fredning af Alh\u00f8j foretoges en mindre udgravning. Herved fremkom h\u00f8jens centralgrav fra \u00e6ldre bronzealder (periode II). Graven, en bortr\u00e5dnet tr\u00e6kiste d\u00e6kket af en stendynge, indholdt et delvis bevaret skelet af et 12-14-\u00e5rigt barn. Gravudstyret bestod af en b\u00f8jlen\u00e5l og en dobbeltknap, begge ret medtagne. I den sydvestlige del af h\u00f8jen afd\u00e6kkedes en sekund\u00e6r grav i form af en oval - og st\u00e6rkt forstyrret - stenl\u00e6gning med br\u00e6ndte ben. I toppen af h\u00f8jen fandtes en urne i en lille stenkiste af tynde skiferplader. Foruden br\u00e6ndte ben indeholdt urnen en delvis bevaret bark\u00e6ske med f\u00f8lgende bronzesager: en ragekniv, en pincet og en kniv, udsk\u00e5ret af en ornamenteret plade. ;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;060203-39;dan;Alh\u00f8je;14.98522,55.01184;Rundh\u00f8j;Round barrow, burial mound, Funerary;Bronzealder;-1500,-1301;B\u00c6X2;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0a4790e3-423e-5d10-aa00-94ae04a41299",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1997-03-24: Fra dette fundsted forefindes der ubr\u00e6ndt materiale p\u00e5 Antropologisk Laboratorium. P\u00e5 AL registreret som: Alh\u00f8j; bronzealder; NM 1339/58; B15225-6.1958      : I forbindelse med en restaurering og fredning af Alh\u00f8j foretoges en mindre udgravning. Herved fremkom h\u00f8jens centralgrav fra \u00e6ldre bronzealder (periode II). Graven, en bortr\u00e5dnet tr\u00e6kiste d\u00e6kket af en stendynge, indholdt et delvis bevaret skelet af et 12-14-\u00e5rigt barn. Gravudstyret bestod af en b\u00f8jlen\u00e5l og en dobbeltknap, begge ret medtagne. I den sydvestlige del af h\u00f8jen afd\u00e6kkedes en sekund\u00e6r grav i form af en oval - og st\u00e6rkt forstyrret - stenl\u00e6gning med br\u00e6ndte ben. I toppen af h\u00f8jen fandtes en urne i en lille stenkiste af tynde skiferplader. Foruden br\u00e6ndte ben indeholdt urnen en delvis bevaret bark\u00e6ske med f\u00f8lgende bronzesager: en ragekniv, en pincet og en kniv, udsk\u00e5ret af en ornamenteret plade. "
+    ],
+    "oai_identifier": [
+        "0a4790e3-423e-5d10-aa00-94ae04a41299"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "060203-39 Alh\u00f8je"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/602/"
+}

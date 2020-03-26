@@ -1,5 +1,10 @@
 ## CHANGES 
 
+###1.2.0 (2020-02-27)
+* Converted B2FIND code from Python 2.7 to Python 3.6 (#9)
+* updated harvest_list with ESS, DaRUS and Uni Maribor
+* new mapfile for Uni Maribor
+
 ###1.1.0 (2020-02-26)
 Integration work for (#7)
 + ENVRIplus demonstrator 

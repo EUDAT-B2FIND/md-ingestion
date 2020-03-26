@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [
+        "1.1.5",
+        "Ancient Cultures",
+        "Archaeology"
+    ],
+    "Discipline": "Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifier=0b4aadd1-4074-51ff-aa34-b9e4693e4ce6",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2943/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "12.108595,54.838347"
+    ],
+    "TemporalCoverage": [
+        "Bronzealder",
+        "-1700,-1101",
+        "B\u00c6XX"
+    ],
+    "author": [
+        "Museum Lolland-Falster"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2943/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2943/;070214-37 Moseby;Museum Lolland-Falster;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1930      : Paalstav af bronze fundet i en meters dybde.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;070214-37;dan;Moseby;12.108595,54.838347;Enkeltfund;Single find, Diverse features and objects;Bronzealder;-1700,-1101;B\u00c6XX;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0b4aadd1-4074-51ff-aa34-b9e4693e4ce6",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1930      : Paalstav af bronze fundet i en meters dybde.\n"
+    ],
+    "oai_identifier": [
+        "0b4aadd1-4074-51ff-aa34-b9e4693e4ce6"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Enkeltfund"
+        },
+        {
+            "name": "Single find"
+        },
+        {
+            "name": "Diverse features objects"
+        }
+    ],
+    "title": [
+        "070214-37 Moseby"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/2943/"
+}

@@ -1159,7 +1159,7 @@ class Mapper(object):
                 m3 = re.compile('(\s+)(<string>)(.*?)(</string>)').search(line)
                 if m3:
                     xpath=m3.group(3)
-                    retval=xpath
+                    retval=[xpath]
                 elif m2:
                     xpath=m2.group(3)
                     retval=self.evalxpath(xmldata, xpath, namespaces)

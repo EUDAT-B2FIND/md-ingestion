@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [
+        "1.1.5",
+        "Ancient Cultures",
+        "Archaeology"
+    ],
+    "Discipline": "Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifier=0b65c866-9a48-5f68-ae2f-24e4d0e4860e",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3143/"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "11.482455,54.718811"
+    ],
+    "TemporalCoverage": [
+        "Oldtid",
+        "-250000,1066",
+        "OXXX"
+    ],
+    "author": [
+        "Museum Lolland-Falster"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3143/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3143/;070309-7 Nyb\u00f8llegaard Fredskov;Museum Lolland-Falster;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1984-04-16: H\u00f8j uden synlige sten, 0,8 x 13,5 x 13,5 m.;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;070309-7;dan;Nyb\u00f8llegaard Fredskov;11.482455,54.718811;Rundh\u00f8j;Round barrow, burial mound, Funerary;Oldtid;-250000,1066;OXXX;Public",
+    "group": "slks2",
+    "groups": [
+        {
+            "name": "slks2"
+        }
+    ],
+    "name": "0b65c866-9a48-5f68-ae2f-24e4d0e4860e",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1984-04-16: H\u00f8j uden synlige sten, 0,8 x 13,5 x 13,5 m."
+    ],
+    "oai_identifier": [
+        "0b65c866-9a48-5f68-ae2f-24e4d0e4860e"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "070309-7 Nyb\u00f8llegaard Fredskov"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/3143/"
+}

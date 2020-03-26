@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/156/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/156/</dc:identifier>
+    <dc:title>060301-38 Klippeg&#229;rd</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+1879      : Udgravning af h&#248;j indeholdende rester af en eller flere centralgrave d&#230;kket af en eller flere stenl&#230;gninger, der var forstyrret. Endvidere en hellekiste, der rummede en brandgrav fra bronzealderens per. III. I h&#248;jens side var nedgravet et par kogegruber.1943      : H&#248;j, 3 x 23 m. S&#230;nkning i V-Siden n&#230;r Toppen. Gr&#230;skl&#230;dt med Krat i Ager.1975      : Den pr. 28 januar 1944 p&#229; matr.nr. 25 Knudsker foretagne notering af fortidsmindet fr.nr.5233:35 bedes slettet, da gravh&#248;jen er sl&#248;jfet efter ark&#230;ologisk unders&#248;gelse i 1975.1975-11-05: Voksen mand.1879      : En mindre H&#248;i - noget beskadiget. Paa Gaardens Jord skal der v&#230;re fundet en hel Del "Askekrukker" i en lille naturlig Forh&#248;jning.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>Dataset</dc:type>
+    <dcterms:alternative>060301-38</dcterms:alternative>
+    <dc:language>dan</dc:language>
+    <dcterms:spatial>Klippeg&#229;rd</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.734583,55.110549</dcterms:spatial>
+    <dc:subject xml:lang="da">Rundh&#248;j</dc:subject>
+    <dc:subject xml:lang="en">Round barrow, burial mound, Funerary</dc:subject>
+    <dcterms:temporal>Bronzealder</dcterms:temporal>
+    <dcterms:temporal>-1700,-1101</dcterms:temporal>
+    <dcterms:temporal>B&#198;XX</dcterms:temporal>
+    <dc:rights>Public</dc:rights>
+  </metadata>
+</record>
