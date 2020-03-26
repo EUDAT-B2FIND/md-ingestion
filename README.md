@@ -1,6 +1,6 @@
 ## README for B2FIND md-ingestion
 
-###Disclaimer
+### Disclaimer
 
 Copyright (c) 2014 Heinrich Widmann (DKRZ)
 
@@ -12,15 +12,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-###md-ingestion
+### md-ingestion
 
-The python script manager.py in this directory provides functionality required for
+The python script `manager.py` in this directory provides functionality required for
 ingestion (including OAI harvesting, semantic mapping (see 
 [repo 'md-mapping'](https://github.com/EUDAT-B2FIND/md-mapping)) and uploading 
 to CKAN) of metadata in the [B2FIND portal](http://b2find.eudat.eu/).
-
-###Preconditions
-
 The script manager.py uses the classes and functions from
 
 `B2FIND.py` - classes for JMD management:
@@ -46,7 +43,7 @@ And run the installation:
 pip install -r requirements.txt
 ```
 
-####Use a conda environment
+#### Use a conda environment
 
 Install conda: 
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/
@@ -64,22 +61,26 @@ Run the installation:
 pip install -r requirements.txt
 ```
 
-###Usage
+### Usage
+
+```
 manager.py [ OPTIONS ]
+```
+
+### Description
+
+Management of metadata within EUDAT Joint Metadata Domain (JMD), i.e.
+
+Ingestion of metadata comprising:
+
+1. Harvesting of XML files from OAI-PMH MD provider(s)
+2. Converting XML to Jason and semantic mapping of tags to CKAN fields
+3. Uploading resulting JSON {key:value} dict's as datasets to JMD portal
 
 
-###Description
-Management of meta data within EUDAT Joint Metadata Domain (JMD), i.e.
+### Options
 
-I.  Ingestion of meta data comprising
-
-- 1. Harvesting of XML files from OAI-PMH MD provider(s)
-- 2. Converting XML to Jason and semantic mapping of tags to CKAN fields
-- 3. Uploading resulting JSON {key:value} dict's as datasets to JMD portal
-
-
-###Options
-
+```
 --version               show program's version number and exit
 
 --help, -h              show this help message and exit
@@ -119,20 +120,22 @@ I.  Ingestion of meta data comprising
                         will be saved. The converting and the uploading
                         processes work with the files from this dir. (default
                         is '/oaidata')
+```
 
-###Multi Mode Options
+### Multi Mode Options
+
 Use these options if you want to ingest from a list in a file.
-
+```
 --list=FILE, -l FILE    list of OAI harvest sources (default is
                         ./harvest_list)
 
 --parallel=PARALLEL     [DEPRECATED]
+```
 
-
-###Single Mode Options
+### Single Mode Options
 
 Use these options if you want to ingest from only ONE source.
-
+```
 --source=PATH, -s PATH  A URL to .xml files which you want to harvest
 
 --verb=STRING           Verbs or requests defined in OAI-PMH, can be
@@ -141,24 +144,27 @@ Use these options if you want to ingest from only ONE source.
 --mdsubset=STRING       Subset of harvested meta data
 
 --mdprefix=STRING       Prefix of harvested meta data
+```
 
 
-###Upload Options
+### Upload Options
 
 These options will be required to upload an dataset to a CKAN database.
-
+```
 --iphost=IP, -i IP      IP adress of JMD portal (CKAN instance)
 
 --auth=STRING           Authentification for CKAN APIs (API key, iby default
                         taken from file $HOME/.netrc)
+```
 
 
-###Authors
+### Authors
+
 * Heinrich Widmann (DKRZ), 11.4.2014
 * John Mrziglod (DKRZ), 20.5.2014
 * Anna-Lena Flügel (DKRZ), 26.03.2020
 
-##Acknowledgement
+### Acknowledgement
 
 This work is co-funded by the [EOSC-hub project](http://eosc-hub.eu/) (Horizon 2020) under Grant number 777536.
 <img src="https://wiki.eosc-hub.eu/download/attachments/1867786/eu%20logo.jpeg?version=1&modificationDate=1459256840098&api=v2" height="24">
