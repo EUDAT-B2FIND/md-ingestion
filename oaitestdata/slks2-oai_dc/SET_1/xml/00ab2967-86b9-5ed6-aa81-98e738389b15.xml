@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1049/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/1049/</dc:identifier>
+    <dc:title>060105-46 Dahlegaard</dc:title>
+    <dc:creator>Bornholms Museum</dc:creator>
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+1884      : Fundet 2 sammenh&#230;ngende Guldst&#230;nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v&#230;re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t&#230;t derved).1884      : Fundet 2 sammenh&#230;ngende Guldst&#230;nger, vistnok saakaldt Ringguld til Betalingsmiddel, nedlagt under en stor Sten; de siges at v&#230;re indsendte til Museet for en 15-16 Aar siden [1865] gennem Amtmand Vedel. (Grundejeren er af den Mening, at der ligger mere Guld under en lignende Sten t&#230;t derved).
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>Dataset</dc:type>
+    <dcterms:alternative>060105-46</dcterms:alternative>
+    <dc:language>dan</dc:language>
+    <dcterms:spatial>Dahlegaard</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">14.792395,55.239139</dcterms:spatial>
+    <dc:subject xml:lang="da">Enkeltfund</dc:subject>
+    <dc:subject xml:lang="en">Single find, Diverse features and objects</dc:subject>
+    <dcterms:temporal>Jernalder</dcterms:temporal>
+    <dcterms:temporal>375,1066</dcterms:temporal>
+    <dcterms:temporal>CYXX</dcterms:temporal>
+    <dc:rights>Public</dc:rights>
+  </metadata>
+</record>
