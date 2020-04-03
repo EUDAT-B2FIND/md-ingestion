@@ -63,7 +63,7 @@
     </field>
     <!-- Coverage information -->
     <field name="Discipline">
-      <string></string>
+      <string>//datacite4:subject/datacite4:subject</string>
     </field>
     <field name="SpatialCoverage">
       <xpath>//datacite4:geoLocation/geoLocationPoint,//datacite4:geoLocation/geoLocationBox</xpath>
@@ -75,11 +75,11 @@
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>
     </field>
-    <field name="h:oai_set">
-      <xpath>//header/setSpec</xpath>
+    <field name="oai_set">
+      <xpath>//h:header/h:setSpec</xpath>
     </field>
-    <field name="h:oai_identifier">
-      <xpath>//header/identifier</xpath>
+    <field name="oai_identifier">
+      <xpath>//h:header/h:identifier</xpath>
     </field>
   </mappings>
 </mapping-table>
