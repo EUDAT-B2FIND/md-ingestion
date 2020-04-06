@@ -61,7 +61,7 @@
     </field>  
    <!-- Coverage -->
     <field name="Discipline">
-      <string>dc:subject</string>
+      <xpath>//dc:subject</xpath>
     </field>
     <field name="SpatialCoverage">
       <xpath>//dc:coverage/text(),//dc:spatial/text()</xpath>
