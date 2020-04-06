@@ -10,6 +10,8 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+## Dans Easy
+danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite 
 ## SciCat ESS
 ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
 ## UniMaribor
