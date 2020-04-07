@@ -10,6 +10,9 @@
 ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 ## community         OAI URL                                verb           metadataPrefix  set
 ## -----------------------------------------------------------------------------------
+##CERIC
+#ceric https://data.ceric-eric.eu/oai-pmh/oai2 ListRecords oai_dc
+ceric https://data.ceric-eric.eu/oai-pmh/oai2 ListRecords oai_datacite
 ## SciCat ESS
 ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
 ## UniMaribor
