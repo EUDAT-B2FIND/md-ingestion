@@ -64,7 +64,7 @@
       <xpath>//dc:subject</xpath>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//dc:coverage</xpath>
+      <xpath></xpath>
     </field>
     <field name="TemporalCoverage">
       <xpath></xpath>
