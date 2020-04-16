@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "text/xml",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Lule Sami"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/101",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/101"
+    ],
+    "PID": "http://hdl.handle.net/11509/101",
+    "PublicationTimestamp": "2015-10-10T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "The Divvun group at UiT The Arctic University of Norway",
+        "Giellatekno - Saami Language Technology, UiT The Arctic University of Norway"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/101;2016-09-06T12:56:33Z;hdl_11509_1;hdl_11509_2;SIKOR Lule Saami free corpus;Giellatekno - Saami Language Technology, UiT The Arctic University of Norway;The Divvun group at UiT The Arctic University of Norway;Monolingual Corpus;Text Corpus;Lule Saami;Dependency Tree Bank;The SIKOR Lule Saami free corpus is a monolingual text corpus of Lule Saami that contains news, administrative, law, and religious texts. It is work done by the Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language community. In particular, the following colleagues have contributed to the creation of the ressource: Ciprian Gerstenberger, B\u00f8rre Gaup, Inga-Lill Mikkelsen, and Sandra Nyst\u00f8 Rahka. Linguistically, the data set (48,307 sentences; 535,367 tokens) features word form, lemma, morphosyntactic analysis, and dependency relations between tokens. The corpus has been automatically processed and linguistically analyzed with the Giellatekno/Divvun tools. Therefore, it may contain wrong annotations. In case you find any errors the creators would appreciate your feedback sent to giellatekno@uit.no and feedback@divvun.no.\r\nPlease note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata).;2015-10-10;corpus;http://hdl.handle.net/11509/101;smj;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;application/zip;text/plain; charset=utf-8;text/xml;downloadable_files_count: 1;Giellatekno - Saami Language Technology;http://giellatekno.uit.no/index.eng.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "772895b6-759b-5bb3-9086-05afb6d7e8a0",
+    "notes": [
+        "The SIKOR Lule Saami free corpus is a monolingual text corpus of Lule Saami that contains news, administrative, law, and religious texts. It is work done by the Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language community. In particular, the following colleagues have contributed to the creation of the ressource: Ciprian Gerstenberger, B\u00f8rre Gaup, Inga-Lill Mikkelsen, and Sandra Nyst\u00f8 Rahka. Linguistically, the data set (48,307 sentences; 535,367 tokens) features word form, lemma, morphosyntactic analysis, and dependency relations between tokens. The corpus has been automatically processed and linguistically analyzed with the Giellatekno/Divvun tools. Therefore, it may contain wrong annotations. In case you find any errors the creators would appreciate your feedback sent to giellatekno@uit.no and feedback@divvun.no.\r\nPlease note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata)."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/101"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Monolingual Corpus"
+        },
+        {
+            "name": "Text Corpus"
+        },
+        {
+            "name": "Lule Saami"
+        },
+        {
+            "name": "Dependency Tree Bank"
+        }
+    ],
+    "title": [
+        "SIKOR Lule Saami free corpus"
+    ],
+    "url": ""
+}

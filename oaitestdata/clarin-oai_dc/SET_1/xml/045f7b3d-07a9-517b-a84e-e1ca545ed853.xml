@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/333</identifier>
+    <datestamp>2017-01-23T14:04:31Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_203</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Korpus wiadomo&#347;ci z Polski (pi&#281;&#263; portali)</dc:title>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:subject>Polska</dc:subject>
+      <dc:description>1000 wiadomo&#347;ci z Polski z pi&#281;ciu portali informacyjnych</dc:description>
+      <dc:date>2017-01-23</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/333</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>IS PAS corpora license</dc:rights>
+      <dc:rights>http://clarin-pl.eu/en/licenses/is-pas-corpora-license/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4145",
+    "MetadataAccess": [
+        "oai:ota:oucs:4145"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Carey, Henry, 1687?-1743."
+    ],
+    "fulltext": "oai:ota:oucs:4145;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4145.xml;Pudding and dumpling burnt to pot. Or, a compleat key to the dissertation on dumpling. Wherein all the mystery of that dark treatise is brought to light; in such a manner and method, that the meanest capacity may know who and who's together. Published for the general information of mankind. By J. W. author of 684 treatises;Carey, Henry, 1687?-1743.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "00daafe8-db46-5e06-8d13-4e00466ddc72",
+    "oai_identifier": [
+        "oai:ota:oucs:4145"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Pudding and dumpling burnt to pot. Or, a compleat key to the dissertation on dumpling. Wherein all the mystery of that dark treatise is brought to light; in such a manner and method, that the meanest capacity may know who and who's together. Published for the general information of mankind. By J. W. author of 684 treatises"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4145.xml"
+}

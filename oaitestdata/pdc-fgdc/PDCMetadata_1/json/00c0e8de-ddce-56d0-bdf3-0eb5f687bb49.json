@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "adaptation@aadnc-aandc.gc.ca"
+    ],
+    "Contributor": [
+        "Aboriginal Affairs and Northern Development Canada"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "The goal of this multi-year project was to provide Yukon-decision makers with essential information regarding climate change impacts and projected changes in a central and accessible manner to enable informed decisions regarding adaptation in Yukon. The overall objectives for this project were: (1) to gather historical and current climatic data to determine gaps in knowledge and monitoring; (2) to determine the key indicators of climate change in Yukon; (3) to support the development of regional climate change scenarios in Yukon; and (4) to communicate results and scenario information to decision makers, communities, and other stakeholders. Focus was placed on building capacity in Yukon in the first year and was directed at the inventory of knowledge and analysis components of the project in the second year. As for the third year, this project aimed to aid in climate change research and adaptation planning by providing an information database essential to the future development of Yukon climate change scenarios"
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=11482_fgdc",
+    "PublicationTimestamp": "2015-03-03T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(60N-70N,141W-124W)",
+    "TempCoverageBegin": 63342644399,
+    "TempCoverageEnd": 63437165999,
+    "TemporalCoverage": " period : ( 2008-04-01T11:59:59Z - 2011-03-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2008-04-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2011-03-31T11:59:59Z",
+    "author": [
+        "Government of Yukon"
+    ],
+    "fulltext": "11482_fgdc;2017-04-09T22:02:25Z;PDCMetadata;FGDC_Yukon;Government of Yukon;Government of Yukon;20150303;Supporting the Development of Climate Change Scenarios;Computer file;unknown;Government of Yukon, Council of Yukon First Nations, and Yukon College. (2010). Gap Analysis: Monthly Weather Measurements from Environment Canada's National Climate Data and Information Archive. Climate Change Scenarios Network.;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11482;To improve capacity, a technical analyst worked with an expert scenario agency, drawing from the agency's expertise and training on the subject of climate change scenario development and on the scenario server from the Canadian Climate Change Scenarios Network (CCCSN). An inventory of knowledge was started (to be built upon in upcoming years) on scientific, weather, climate and meteorological data, creating a baseline to be assessed for scenario development. A database was created, collating temperature, precipitation, extreme weather, ice and snow cover, sea level rise, etc. data. &#x0d;\n&#x0d;\nFurthermore, to collate historical and current climatic data, records from industry, governments, academia, agencies, and public were examined for information concerning average temperature, precipitation, extreme precipitation events, total snowfall, days with snow, lake and river ice, growing season and sea level rise. A gap analysis was performed and adaptation needs were identified through the synthesis of previous work on community priorities and potential scenario users. In the second year of this project specifically, a project coordinator and a technical analyst worked in collaboration, bringing the science of climate change scenarios together with the needs of the communities and stakeholders. A workplan and a communication strategy focused on supplying decision-makers with scenario information were created. The inventory of climatic data was completed by a technical analyst, producing a final report, including gaps in knowledge and monitoring and an analysis of available data. &#x0d;\n&#x0d;\nFinally, the inventory of climate data was made available on the internet as the Collated Yukon Climatic Database. This information was synthesized to determine appropriate climate change indicators in Yukon to develop regional climate change scenarios. Workshops were held to communicate climate scenarios, adaptation strategies, and decision making benefits to stakeholders.;The goal of this multi-year project was to provide Yukon-decision makers with essential information regarding climate change impacts and projected changes in a central and accessible manner to enable informed decisions regarding adaptation in Yukon. The overall objectives for this project were: (1) to gather historical and current climatic data to determine gaps in knowledge and monitoring; (2) to determine the key indicators of climate change in Yukon; (3) to support the development of regional climate change scenarios in Yukon; and (4) to communicate results and scenario information to decision makers, communities, and other stakeholders. Focus was placed on building capacity in Yukon in the first year and was directed at the inventory of knowledge and analysis components of the project in the second year. As for the third year, this project aimed to aid in climate change research and adaptation planning by providing an information database essential to the future development of Yukon climate change scenarios;Summary: Not Applicable Research Program(s): APAN-AANDC - Adaptation Program for Aboriginals and Northerners. For further information: rebecca.world@gov.yk.ca;20080401;20110331;NULL;Complete;As needed;-141;-124;70;60;NULL;Adaptation;Climate change;Database;Scenarios;Yukon;Yukon Territory, Canada;NULL;Public;NULL;Aboriginal Affairs and Northern Development Canada;Martin Tremblay - PDC;NULL;mailing;25, Eddy;Gatineau;QC;K1A 0H4;Canada;(819) 934-9210;(819) 953-2590;adaptation@aadnc-aandc.gc.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;11482;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20150303;20150303;Martin Tremblay - PDC;Aboriginal Affairs and Northern Development Canada;mailing;25, Eddy;Gatineau;QC;K1A 0H4;Canada;(819) 934-9210;(819) 953-2590;adaptation@aadnc-aandc.gc.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "00c0e8de-ddce-56d0-bdf3-0eb5f687bb49",
+    "notes": [
+        "To improve capacity, a technical analyst worked with an expert scenario agency, drawing from the agency's expertise and training on the subject of climate change scenario development and on the scenario server from the Canadian Climate Change Scenarios Network (CCCSN). An inventory of knowledge was started (to be built upon in upcoming years) on scientific, weather, climate and meteorological data, creating a baseline to be assessed for scenario development. A database was created, collating temperature, precipitation, extreme weather, ice and snow cover, sea level rise, etc. data. &#x0d;\n&#x0d;\nFurthermore, to collate historical and current climatic data, records from industry, governments, academia, agencies, and public were examined for information concerning average temperature, precipitation, extreme precipitation events, total snowfall, days with snow, lake and river ice, growing season and sea level rise. A gap analysis was performed and adaptation needs were identified through the synthesis of previous work on community priorities and potential scenario users. In the second year of this project specifically, a project coordinator and a technical analyst worked in collaboration, bringing the science of climate change scenarios together with the needs of the communities and stakeholders. A workplan and a communication strategy focused on supplying decision-makers with scenario information were created. The inventory of climatic data was completed by a technical analyst, producing a final report, including gaps in knowledge and monitoring and an analysis of available data. &#x0d;\n&#x0d;\nFinally, the inventory of climate data was made available on the internet as the Collated Yukon Climatic Database. This information was synthesized to determine appropriate climate change indicators in Yukon to develop regional climate change scenarios. Workshops were held to communicate climate scenarios, adaptation strategies, and decision making benefits to stakeholders."
+    ],
+    "oai_identifier": [
+        "11482_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata",
+        "FGDC_Yukon"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-141,60],[-141,70],[-124,70],[-124,60],[-141,60]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Adaptation"
+        },
+        {
+            "name": "Climate change"
+        },
+        {
+            "name": "Database"
+        },
+        {
+            "name": "Scenarios"
+        },
+        {
+            "name": "Yukon"
+        }
+    ],
+    "title": [
+        "Supporting the Development of Climate Change Scenarios"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11482"
+}

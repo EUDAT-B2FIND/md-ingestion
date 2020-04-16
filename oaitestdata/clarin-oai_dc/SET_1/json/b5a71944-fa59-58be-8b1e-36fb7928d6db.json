@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/27",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/27"
+    ],
+    "PID": "http://hdl.handle.net/10794/27",
+    "PublicationTimestamp": "2015-03-24T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/27;2017-10-27T15:16:33Z;hdl_10794_1;hdl_10794_2;Idioms from the NEO lexicon DB;Idiom ur NEO-databasen;n/a, n/a;Swedish;Idioms;Idioms with explanations extracted from the database for the dictionary  Nationalencyklopediens ordbok.;Idiom med beskrivningar och alternativformer extraherade ut databasen f\u00f6r Nationalencyklopediens ordbok.;2015-03-24;lexicalConceptualResource;http://hdl.handle.net/10794/27;swe;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/neo-idiom",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b5a71944-fa59-58be-8b1e-36fb7928d6db",
+    "notes": [
+        "Idioms with explanations extracted from the database for the dictionary  Nationalencyklopediens ordbok.",
+        "Idiom med beskrivningar och alternativformer extraherade ut databasen f\u00f6r Nationalencyklopediens ordbok."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/27"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Idioms"
+        }
+    ],
+    "title": [
+        "Idioms from the NEO lexicon DB",
+        "Idiom ur NEO-databasen"
+    ],
+    "url": ""
+}

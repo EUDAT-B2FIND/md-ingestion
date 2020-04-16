@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "University of Wroclaw"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.oasis.opendocument.text",
+        "downloadable_files_count: 10",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/375",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/375"
+    ],
+    "PID": "http://hdl.handle.net/11321/375",
+    "PublicationTimestamp": "2017-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "University of Wroclaw"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Osoba, Druga",
+        "Reznik, Zofia"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/375;2017-05-30T07:55:19Z;hdl_11321_3;hdl_11321_4;Zas\u00f3b testowy;Reznik, Zofia;Osoba, Druga;bajki;inflection;diachronic;aaa;2017-05-30;corpus;http://hdl.handle.net/11321/375;pol;a;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/vnd.oasis.opendocument.text;application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;text/plain;text/plain;text/plain;application/vnd.oasis.opendocument.text;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;downloadable_files_count: 10;University of Wroclaw",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d83160ef-7e3e-5363-93c1-5548e583a0e3",
+    "notes": [
+        "aaa"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/375"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "bajki"
+        },
+        {
+            "name": "inflection"
+        },
+        {
+            "name": "diachronic"
+        }
+    ],
+    "title": [
+        "Zas\u00f3b testowy"
+    ],
+    "url": ""
+}

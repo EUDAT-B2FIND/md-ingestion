@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1218</identifier>
+    <datestamp>2019-03-01T11:31:19Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Croatian SenseGraph 1.0</dc:title>
+      <dc:creator>&#352;najder, Jan</dc:creator>
+      <dc:creator>Alagi&#263;, Domagoj</dc:creator>
+      <dc:subject>lexical database</dc:subject>
+      <dc:subject>semantic lexicon</dc:subject>
+      <dc:subject>lexical substitutes</dc:subject>
+      <dc:description>SenseGraph a graph-like structure of word senses of most common words of the standard Croatian language, obtained by relying on human-provided lexical substitutes for target words in context. SenseGraph is encoded in the Lexical Markup Framework (LMF; ISO 24613:2008) format.&#13;
+&#13;
+SenseGraphs consists of SenseCells, which are clusters of same-sense words obtained by grouping of words based on the similarity of their lexical substitution sets and the contexts they appear in. SenseCells can be thought of as Synsets in standard computational lexicographic terminology, albeit they exhibit more variability, which can be attributed to sense modulations in specific contexts. SenseCells are linked to each other based on loose semantic relatedness.&#13;
+&#13;
+In total, the resource covers 649 Croatian words across three different part-of-speech tags: nouns, verbs, and adjectives. More specifically, the resource contains 4,172 sentences across 230 nouns, 3,288 sentences across 200 verbs, and 4,116 sentences across 219 adjectives.  Those sentences were then clustered using a lexical-substitution-based clustering method, yielding 2,877 synsets. The sentences were sampled from the SETimes.HR and hrWaC corpora.&#13;
+&#13;
+Total number of sentences: 11,576&#13;
+Total number of syncells: 2,877&#13;
+Total number of words: 649</dc:description>
+      <dc:date>2018-12-14</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1218</dc:identifier>
+      <dc:language>hrv</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Faculty of Electrical Engineering and Computing, University of Zagreb</dc:publisher>
+      <dc:source>http://sensehive.org/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

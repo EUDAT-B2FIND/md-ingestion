@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>12fdc090a35e11e1a404080027e73ea2c200dc17aff642fe980ba7a2da7f5ca1</identifier>
+    <datestamp>2019-02-27T12:09:04Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+    <setSpec>corpus:audio</setSpec>
+    <setSpec>corpus:text:audio</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Spoken Portuguese - Geographical and Social Varieties</dc:title>
+      <dc:description>This resource includes a spoken Portuguese corpus exemplifying the Portuguese spoken in Portugal, Brazil, Angola, Cape Verde, Guinea-Bissau, Mozambique, Sao Tome and Principe, Macao, Goa and East-Timor - with aligned sound and orthographic transcription - collected among sociolinguistically diverse speakers. It consists of recordings from informal conversations, conferences and media.</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

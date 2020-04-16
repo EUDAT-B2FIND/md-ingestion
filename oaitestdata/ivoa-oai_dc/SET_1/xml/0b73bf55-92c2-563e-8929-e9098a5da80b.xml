@@ -1,0 +1,15 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://vopdc.obspm/lesia/hfc1ar/epn</oai:identifier>
+    <oai:datestamp>2018-12-21T19:59:55Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/                      http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Heliophysics Feature Catalog active regions</dc:title>
+      <dc:identifier>ivo://vopdc.obspm/lesia/hfc1ar/epn</dc:identifier>
+      <dc:date>2017-01-10T00:00:00Z</dc:date>
+      <dc:publisher>Paris Astronomical Data Centre - LESIA</dc:publisher>
+      <dc:description>Solar active regions extracted from Heliophysics Feature Catalog.</dc:description>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

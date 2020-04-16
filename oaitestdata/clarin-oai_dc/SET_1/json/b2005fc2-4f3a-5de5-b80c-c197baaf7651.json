@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "University of West Bohemia"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/x-tar",
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "downloadable_files_count: 4"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1D76-9",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1D76-9"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-1D76-9",
+    "PublicationTimestamp": "2014-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of West Bohemia"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Gr\u016fber, Martin"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1D76-9;2017-08-11T13:52:23Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Senior COMPANION Expressive Speech Corpus;Gr\u016fber, Martin;speech corpus;expressive;text-to-speech synthesis;The corpus contains Czech expressive speech recorded using scenario-based approach by a professional female speaker. The scenario was created on the basis of previously recorded natural dialogues between a computer and seniors.;2014-01-10;corpus;http://hdl.handle.net/11858/00-097C-0000-0023-1D76-9;ces;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/x-gzip;application/x-tar;application/x-tar;application/vnd.openxmlformats-officedocument.wordprocessingml.document;text/plain; charset=utf-8;downloadable_files_count: 4;University of West Bohemia;http://www.companions-project.org/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b2005fc2-4f3a-5de5-b80c-c197baaf7651",
+    "notes": [
+        "The corpus contains Czech expressive speech recorded using scenario-based approach by a professional female speaker. The scenario was created on the basis of previously recorded natural dialogues between a computer and seniors."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1D76-9"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "expressive"
+        },
+        {
+            "name": "text-to-speech synthesis"
+        }
+    ],
+    "title": [
+        "Czech Senior COMPANION Expressive Speech Corpus"
+    ],
+    "url": ""
+}

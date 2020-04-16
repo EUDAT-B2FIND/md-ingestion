@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=12f708b66ec611e2a2aa782bcb074135b5eea2fc589f44f7b46af04876b6280a",
+    "MetadataAccess": [
+        "12f708b66ec611e2a2aa782bcb074135b5eea2fc589f44f7b46af04876b6280a"
+    ],
+    "PublicationTimestamp": "2013-02-04T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "12f708b66ec611e2a2aa782bcb074135b5eea2fc589f44f7b46af04876b6280a;2018-11-15T16:40:12Z;toolService;toolService:tool;U-Compare/UIMA speech annotation viewer;This is a UIMA component that provides a visualization of speech based output from UIMA workflows. It has been developed at the University of Manchester, using libraries of the Java Speech Toollkit (jstk). It has been designed specifically for use with the U-Compare text mining workbench (see separate META-SHARE record). It provides waveform, power and spectrogram plots. It also shows the location of individual spoken words, if this information is available in the output of the workflow.;2013-02-04",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "89881d91-5b04-5f50-95f5-67dcef3a3ee5",
+    "notes": [
+        "This is a UIMA component that provides a visualization of speech based output from UIMA workflows. It has been developed at the University of Manchester, using libraries of the Java Speech Toollkit (jstk). It has been designed specifically for use with the U-Compare text mining workbench (see separate META-SHARE record). It provides waveform, power and spectrogram plots. It also shows the location of individual spoken words, if this information is available in the output of the workflow."
+    ],
+    "oai_identifier": [
+        "12f708b66ec611e2a2aa782bcb074135b5eea2fc589f44f7b46af04876b6280a"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare/UIMA speech annotation viewer"
+    ]
+}

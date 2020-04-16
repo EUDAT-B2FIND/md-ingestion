@@ -1,0 +1,66 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.80767",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.80767"
+    ],
+    "PublicationTimestamp": "2002-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2002"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(54N,8 E)",
+    "TempCoverageBegin": 61883265599,
+    "TempCoverageEnd": 61883265599,
+    "TemporalCoverage": " point in time : 1962-01-02T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1962-01-02T11:59:59Z",
+    "TemporalCoverage:EndDate": "1962-01-02T11:59:59Z",
+    "author": [
+        "DWD"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.80767;2017-08-04T13:28:53Z;BAH1962;10.1594/PANGAEA.80767;DWD;Daily mean weather data of Helgoland in 1962;PANGAEA - Data Publisher for Earth & Environmental Science;2002;DATE/TIME;ALTITUDE;Precipitation integrated;Wind speed;Pressure, atmospheric;Temperature, air;Sunshine duration, daily;Meteorological station;Visual observation;HelgolandRoadsTimeseries;Meeresstation Helgoland;1962-01-02T00:00:00/1962-03-19T00:00:00;eng;Dataset;385 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);54.18833 7.9",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.80767"
+    ],
+    "oai_set": [
+        "BAH1962"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[7.9,54.18833],[7.9,54.18833],[7.9,54.18833],[7.9,54.18833],[7.9,54.18833]]]}",
+    "tags": [
+        {
+            "name": "Meteorological station"
+        },
+        {
+            "name": "Visual observation"
+        },
+        {
+            "name": "HelgolandRoadsTimeseries"
+        },
+        {
+            "name": "Meeresstation Helgoland"
+        }
+    ],
+    "title": [
+        "Daily mean weather data of Helgoland in 1962"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4044",
+    "MetadataAccess": [
+        "oai:ota:oucs:4044"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "White, Gilbert, 1720-1793."
+    ],
+    "fulltext": "oai:ota:oucs:4044;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4044.xml;A naturalist's calendar, with observations in various branches of natural history; extracted from the papers of the late Rev. Gilbert White,;White, Gilbert, 1720-1793.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "302c7efa-b334-558c-a72c-4ce3863317c1",
+    "oai_identifier": [
+        "oai:ota:oucs:4044"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A naturalist's calendar, with observations in various branches of natural history; extracted from the papers of the late Rev. Gilbert White,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4044.xml"
+}

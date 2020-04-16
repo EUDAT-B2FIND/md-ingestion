@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 13",
+        "application/zip",
+        "application/octet-stream",
+        "application/gzip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/466",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/466"
+    ],
+    "PID": "http://hdl.handle.net/11321/466",
+    "PublicationTimestamp": "2018-04-03T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Sas, Jerzy"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/466;2018-09-18T12:58:36Z;hdl_11321_3;hdl_11321_4;Acoustic Data Building Toolset;Sas, Jerzy;speech recognition;deep neural networks;machine learning;This folder contains data and software tools (in python)  that can be used in experiments with phoneme recognition in speech samples recorder in Polish. Acoustic data used here were extracted from CLARIN-PL speech corpus after rejecting speech samples, where recorded sequence of words does not correspond strictly to the word sequence declared as the sample orthographic transcription. In order to use the python programs and data published here, the appropriate folder structure should be created. Follow the steps below:\r\n1) create the root folder and set the environment variable ASR_DATASET_ROOT that points to this folder (let's call it ROOT),\r\n2) create the subfolders in the ROOT folder: train, devel, test, doc and src in the root folder,\r\n3) download ar files: test.tar.gz, devel.tar.gz, train.tar.gz, doc.tar.gz, src.tar.gz and unpack then in the corresponding folders,\r\n4)download aux.tar.gz and unpack it directly to ROOT folder.\r\n\r\nMore information can be found in doc/README.pdf.\r\n\r\nIf you find this dataset useful, please make reference in your related papers to the paper: \"\r\nAcoustic Data Building Toolset for Easy Experimentation with Neural Network-based Speech Recognition in Polish and English\" (https://ieeexplore.ieee.org/document/8431366/)\r\n\r\n\r\n\r\nBibtex:\r\n@INPROCEEDINGS{8431366, \r\nauthor={J. Sas}, \r\nbooktitle={2018 11th International Conference on Human System Interaction (HSI)}, \r\ntitle={Acoustic Data Building Toolset for Easy Experimentation with Neural Network-based Speech Recognition in Polish and English}, \r\nyear={2018}, \r\nvolume={}, \r\nnumber={}, \r\npages={93-99}, \r\ndoi={10.1109/HSI.2018.8431366}, \r\nISSN={}, \r\nmonth={July},};2018-04-03;corpus;http://hdl.handle.net/11321/466;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/zip;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 13;Wroc\u0142aw University of Science and Technology;https://github.com/ASR-K2-WrUT/nn asr",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "25977fee-0d65-5a49-97e8-dff29d468572",
+    "notes": [
+        "This folder contains data and software tools (in python)  that can be used in experiments with phoneme recognition in speech samples recorder in Polish. Acoustic data used here were extracted from CLARIN-PL speech corpus after rejecting speech samples, where recorded sequence of words does not correspond strictly to the word sequence declared as the sample orthographic transcription. In order to use the python programs and data published here, the appropriate folder structure should be created. Follow the steps below:\r\n1) create the root folder and set the environment variable ASR_DATASET_ROOT that points to this folder (let's call it ROOT),\r\n2) create the subfolders in the ROOT folder: train, devel, test, doc and src in the root folder,\r\n3) download ar files: test.tar.gz, devel.tar.gz, train.tar.gz, doc.tar.gz, src.tar.gz and unpack then in the corresponding folders,\r\n4)download aux.tar.gz and unpack it directly to ROOT folder.\r\n\r\nMore information can be found in doc/README.pdf.\r\n\r\nIf you find this dataset useful, please make reference in your related papers to the paper: \"\r\nAcoustic Data Building Toolset for Easy Experimentation with Neural Network-based Speech Recognition in Polish and English\" (https://ieeexplore.ieee.org/document/8431366/)\r\n\r\n\r\n\r\nBibtex:\r\n@INPROCEEDINGS{8431366, \r\nauthor={J. Sas}, \r\nbooktitle={2018 11th International Conference on Human System Interaction (HSI)}, \r\ntitle={Acoustic Data Building Toolset for Easy Experimentation with Neural Network-based Speech Recognition in Polish and English}, \r\nyear={2018}, \r\nvolume={}, \r\nnumber={}, \r\npages={93-99}, \r\ndoi={10.1109/HSI.2018.8431366}, \r\nISSN={}, \r\nmonth={July},}"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/466"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech recognition"
+        },
+        {
+            "name": "deep neural networks"
+        },
+        {
+            "name": "machine learning"
+        }
+    ],
+    "title": [
+        "Acoustic Data Building Toolset"
+    ],
+    "url": ""
+}

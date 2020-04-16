@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Delbecque, Nicole"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 105 KB)",
+        "text/plain"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0446",
+    "MetadataAccess": [
+        "oai:ota:oucs:0446"
+    ],
+    "PublicationTimestamp": "1975-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1975"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "O'Neill, Michael, 1953-"
+    ],
+    "fulltext": "oai:ota:oucs:0446;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0446.xml;The bosom of the family / Michael O'Neill;O'Neill, Michael, 1953-;1975;text_and_corpus_linguistics;English drama -- 20th century;Oxford Text Archive, University of Oxford;Delbecque, Nicole;text/plain;(1 file : ca. 105 KB);Text;Plays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "92a6d268-aae4-5c9f-9cca-7b1fd6e0616d",
+    "oai_identifier": [
+        "oai:ota:oucs:0446"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "The bosom of the family / Michael O'Neill"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0446.xml"
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4563",
+    "MetadataAccess": [
+        "oai:ota:oucs:4563"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lennox, Charlotte, ca. 1729-1804."
+    ],
+    "fulltext": "oai:ota:oucs:4563;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4563.xml;Henrietta: By the author of The female Quixote. In two volumes. ... [pt.1];Lennox, Charlotte, ca. 1729-1804.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "43b3a001-4803-5c5c-bb7f-130ac9dcf517",
+    "oai_identifier": [
+        "oai:ota:oucs:4563"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Henrietta: By the author of The female Quixote. In two volumes. ... [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4563.xml"
+}

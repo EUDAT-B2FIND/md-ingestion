@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1183</identifier>
+    <datestamp>2016-04-06T16:39:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CST's lemmatiser</dc:title>
+      <dc:contributor>Jongejan, Bart</dc:contributor>
+      <dc:description>1) Fully automatic rule based lemmatization of inflected languages 2) Fully automatic training of lemmatization rules based on full form-lemma list</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1183</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>isl</dc:language>
+      <dc:language>nor</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Denmark</dc:coverage>
+      <dc:publisher>Center for Sprogteknologi,  University of Copenhagen</dc:publisher>
+      <dc:source>http://cst.dk/download/uk/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

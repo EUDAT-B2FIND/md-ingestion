@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3213",
+    "MetadataAccess": [
+        "oai:ota:oucs:3213"
+    ],
+    "PublicationTimestamp": "1890-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1890"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Morris, William, 1834-1896"
+    ],
+    "fulltext": "oai:ota:oucs:3213;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3213.xml;News from nowhere, or, An epoch of rest : being some chapters from a utopian romance;Morris, William, 1834-1896;not after: 1890;text_and_corpus_linguistics;Fiction -- Great Britain -- 19th century;Fantasy literature -- Great Britain -- 19th century;Utopian literature -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "af34617a-0700-5d90-bbae-704138ab4b2d",
+    "oai_identifier": [
+        "oai:ota:oucs:3213"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Great Britain -- th century"
+        },
+        {
+            "name": "Fantasy literature -- Great Britain -- th century"
+        },
+        {
+            "name": "Utopian literature -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "News from nowhere, or, An epoch of rest : being some chapters from a utopian romance"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3213.xml"
+}

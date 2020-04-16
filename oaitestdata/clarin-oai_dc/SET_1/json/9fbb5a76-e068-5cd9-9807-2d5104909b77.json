@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Mostowicz"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 6",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/86",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/86"
+    ],
+    "PID": "http://hdl.handle.net/11321/86",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Mostowicz"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Mostowicz, Mostowicz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/86;2015-05-19T13:40:13Z;hdl_11321_3;hdl_11321_4;MWE Mostowicz;Mostowicz, Mostowicz;Mostowicz;2015-04-08;corpus;http://hdl.handle.net/11321/86;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain;text/plain;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 6;Mostowicz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9fbb5a76-e068-5cd9-9807-2d5104909b77",
+    "notes": [
+        "Mostowicz"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/86"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE Mostowicz"
+    ],
+    "url": ""
+}

@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Smith, John B."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(1 file : ca. 267 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0147",
+    "MetadataAccess": [
+        "oai:ota:oucs:0147"
+    ],
+    "PublicationTimestamp": "1906-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1906"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Short stories"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Woolf, Virginia, 1882-1941"
+    ],
+    "fulltext": "oai:ota:oucs:0147;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0147.xml;A haunted house : and other short stories / Virginia Woolf;Woolf, Virginia, 1882-1941;1906-1941;text_and_corpus_linguistics;Short stories, English -- 20th century;eng;Oxford Text Archive, University of Oxford;Smith, John B.;text/plain;(1 file : ca. 267 KB);Text;Short stories;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2e733415-4a3c-582f-8dd3-0c62462ffc27",
+    "oai_identifier": [
+        "oai:ota:oucs:0147"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Short stories"
+        },
+        {
+            "name": "English -- th century"
+        }
+    ],
+    "title": [
+        "A haunted house : and other short stories / Virginia Woolf"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0147.xml"
+}

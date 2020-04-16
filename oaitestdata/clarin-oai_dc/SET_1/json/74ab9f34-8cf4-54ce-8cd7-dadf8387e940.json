@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Arts and Humanities Research Board (AHRB)",
+        "Pintzuk, Susan",
+        "Taylor, Ann",
+        "Beths, Frank",
+        "Warner, Anthony"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(295 files : ca. 66.7 MB)"
+    ],
+    "Language": [
+        "Old English (ca. 450-1100)",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2462",
+    "MetadataAccess": [
+        "oai:ota:oucs:2462"
+    ],
+    "PublicationTimestamp": "2003-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2003"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Linguistic corpora"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:2462;2018-11-14T10:39:08Z;http://ota.ox.ac.uk/headers/2462.xml;The York-Toronto-Helsinki Parsed Corpus of Old English prose (YCOE);2003;text_and_corpus_linguistics;English language--Old English, ca. 450-1100;English language--Old English, ca. 450-1100--Texts;Linguistic analysis (Linguistics);Frames (Linguistics);ang;lat;The corpus contains 1.5 million words of Old English prose taken from the Toronto Dictionary of Old English Corpus, with special formatting which makes it possible to search conveniently for syntactic structure using a computer search engine. ;Oxford Text Archive, University of Oxford;Taylor, Ann;Warner, Anthony;Pintzuk, Susan;Beths, Frank;Arts and Humanities Research Board (AHRB);Warner, Anthony;(295 files : ca. 66.7 MB);Text;Linguistic corpora;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "74ab9f34-8cf4-54ce-8cd7-dadf8387e940",
+    "notes": [
+        "The corpus contains 1.5 million words of Old English prose taken from the Toronto Dictionary of Old English Corpus, with special formatting which makes it possible to search conveniently for syntactic structure using a computer search engine. "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2462"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English language--Old English"
+        },
+        {
+            "name": "ca. -"
+        },
+        {
+            "name": "English language--Old English"
+        },
+        {
+            "name": "ca. ---Texts"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        },
+        {
+            "name": "Frames Linguistics"
+        }
+    ],
+    "title": [
+        "The York-Toronto-Helsinki Parsed Corpus of Old English prose (YCOE)"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2462.xml"
+}

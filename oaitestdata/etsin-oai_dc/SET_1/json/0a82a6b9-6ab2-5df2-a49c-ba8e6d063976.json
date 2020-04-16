@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "atm-data@helsinki.fi"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a82a6b9-6ab2-5df2-a49c-ba8e6d063976",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "atm-data@helsinki.fi"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;",
+        "2010-01-01T00:00:00Z/2010-12-31T23:59:59Z"
+    ],
+    "TempCoverageBegin": 192513067199,
+    "TempCoverageEnd": 63397900800,
+    "TemporalCoverage": " period : ( 6101-07-01T11:59:59Z - 2010-01-01T00:00:00Z ) ",
+    "TemporalCoverage:BeginDate": "6101-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2010-01-01T00:00:00Z",
+    "author": [
+        "Pasi Kolari"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata20160308084414814548;2016-03-08T06:44:14Z;university-of-helsinki-department-of-physics-division-of-atmospheric-sciences;V\u00e4rri\u00f6 SMEAR I tree gas exchange and diameter change - Pine shoot 2 CO2 exchange - 2010;Pasi Kolari;http://www.yso.fi/onto/ysa/Y100405;http://www.yso.fi/onto/ysa/Y95330;http://www.yso.fi/onto/yso/p16571;Title: Pine shoot 2 CO2 exchange \n\nDescription: CO2 exchange of pine shoot 2 per unit all-sided leaf area, positive sign = uptake \n\nVariable: F_CO2_tree2 \n\nUnit: \u00b5g m\u207b\u00b2 s\u207b\u00b9 \n\nSource: Automated chamber & Li-Cor Li-840 gas analyser \n\nCategory: Tree \n\n;atm-data@helsinki.fi;Pasi Kolari;Toivo Pohja;Petri Keronen;2016-03-08;dataset;urn:nbn:fi:csc-ida2014011545561v;urn:nbn:fi:csc-ida-10x201703282015017316494v;urn:nbn:fi:csc-ida2014011545561s;urn:nbn:fi:csc-kata20160308084414814548;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308084414814548;DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;;2010-01-01T00:00:00Z/2010-12-31T23:59:59Z;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0a82a6b9-6ab2-5df2-a49c-ba8e6d063976",
+    "notes": [
+        "Title: Pine shoot 2 CO2 exchange \n\nDescription: CO2 exchange of pine shoot 2 per unit all-sided leaf area, positive sign = uptake \n\nVariable: F_CO2_tree2 \n\nUnit: \u00b5g m\u207b\u00b2 s\u207b\u00b9 \n\nSource: Automated chamber & Li-Cor Li-840 gas analyser \n\nCategory: Tree \n\n"
+    ],
+    "oai_identifier": [
+        "0a82a6b9-6ab2-5df2-a49c-ba8e6d063976"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "http www.yso.fi onto ysa Y"
+        },
+        {
+            "name": "http www.yso.fi onto ysa Y"
+        },
+        {
+            "name": "http www.yso.fi onto yso p"
+        }
+    ],
+    "title": [
+        "V\u00e4rri\u00f6 SMEAR I tree gas exchange and diameter change - Pine shoot 2 CO2 exchange - 2010"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308084414814548"
+}

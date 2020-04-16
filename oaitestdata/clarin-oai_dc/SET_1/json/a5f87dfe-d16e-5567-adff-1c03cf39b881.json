@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5165",
+    "MetadataAccess": [
+        "oai:ota:oucs:5165"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Arbuthnot, John, 1667-1735."
+    ],
+    "fulltext": "oai:ota:oucs:5165;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5165.xml;An essay concerning the effects of air on human bodies: By John Arbuthnot, ...;Arbuthnot, John, 1667-1735.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a5f87dfe-d16e-5567-adff-1c03cf39b881",
+    "oai_identifier": [
+        "oai:ota:oucs:5165"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An essay concerning the effects of air on human bodies: By John Arbuthnot, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5165.xml"
+}

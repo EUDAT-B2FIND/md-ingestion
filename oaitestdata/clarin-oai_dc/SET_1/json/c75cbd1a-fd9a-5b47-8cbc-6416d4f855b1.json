@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "mamprawowiedziec"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 102",
+        "text/plain; charset=utf-8",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/512",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/512"
+    ],
+    "PID": "http://hdl.handle.net/11321/512",
+    "PublicationTimestamp": "2018-07-13T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "mamprawowiedziec"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Molek-kozakowska"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/512;2018-07-13T13:50:40Z;hdl_11321_3;hdl_11321_4;korpus testowy;Molek-kozakowska;EU;ludzie;2018-07-13;corpus;http://hdl.handle.net/11321/512;pol;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;downloadable_files_count: 102;mamprawowiedziec",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c75cbd1a-fd9a-5b47-8cbc-6416d4f855b1",
+    "notes": [
+        "ludzie"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/512"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "EU"
+        }
+    ],
+    "title": [
+        "korpus testowy"
+    ],
+    "url": ""
+}

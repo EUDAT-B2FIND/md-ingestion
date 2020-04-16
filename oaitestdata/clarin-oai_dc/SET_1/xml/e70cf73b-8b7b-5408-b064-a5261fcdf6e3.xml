@@ -1,0 +1,114 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/100</identifier>
+    <datestamp>2015-04-08T13:57:45Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MWE Wiek XIX</dc:title>
+      <dc:creator>Pisarze, Pisarze</dc:creator>
+      <dc:description>balucki_burmistrz_1887.txt&#13;
+balucki_murzyn_1875.txt&#13;
+balucki_przebudzeni_1864.txt&#13;
+beczkowska_bedzie_1897.txt&#13;
+beczkowska_droga_1898.txt&#13;
+beczkowska_gniezdzie_1899.txt&#13;
+deotyma_panienka_1893.txt&#13;
+deotyma_rozdrozu_1877.txt&#13;
+deotyma_zagadka_1879.txt&#13;
+dygasinski_as_1896.txt&#13;
+dygasinski_piszczalski_1890.txt&#13;
+dygasinski_wilk_1883.txt&#13;
+godlewska_kato_1897.txt&#13;
+godlewska_kwiat_1897.txt&#13;
+godlewska_ninka_1897.txt&#13;
+kaczkowski_grob_1857.txt&#13;
+kaczkowski_murdelio_1853.txt&#13;
+kaczkowski_olbrachtowi_1889.txt&#13;
+korzeniowski_emeryt_1851.txt&#13;
+korzeniowski_garbaty_1853.txt&#13;
+korzeniowski_krewni_1856.txt&#13;
+kraszewski_kordecki_1850.txt&#13;
+kraszewski_lalki_1874.txt&#13;
+kraszewski_piast_1888.txt&#13;
+marrene_bozek_1871.txt&#13;
+marrene_mezowie_1875.txt&#13;
+marrene_roza_1872.txt&#13;
+orzeszkowa_meir_1878.txt&#13;
+orzeszkowa_niemnem_1888.txt&#13;
+prus_emancypantki_1894.txt&#13;
+prus_faraon_1897.txt&#13;
+prus_lalka_1890.txt&#13;
+reymont_komediantka_1896.txt&#13;
+reymont_obiecana_1899.txt&#13;
+rodziewicz_miedzy_1890.txt&#13;
+rodziewicz_straszny_1887.txt&#13;
+sienkiewicz_ogniem_1884.txt&#13;
+sienkiewicz_quo_1896.txt&#13;
+sienkiewicz_rodzina_1894.txt&#13;
+swietochowski_prawdy_1888.txt&#13;
+sygietynski_calvados_1884.txt&#13;
+sygietynski_wysadzony_1891.txt&#13;
+zapolska_kaska_1888.txt&#13;
+zeromski_bezdomni_1899.txt&#13;
+zeromski_syzyfowe_1897.txt</dc:description>
+      <dc:date>2015-04-08</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/100</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 45</dc:format>
+      <dc:publisher>Pisarze</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

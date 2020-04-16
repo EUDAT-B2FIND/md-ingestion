@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 267 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2180",
+    "MetadataAccess": [
+        "oai:ota:oucs:2180"
+    ],
+    "PublicationTimestamp": "1740-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1740"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Devotional literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Law, William, 1686-1761"
+    ],
+    "fulltext": "oai:ota:oucs:2180;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2180.xml;An appeal to all that doubt, or disbelieve the truths of the Gospel : whether they be Deists, Arians, Socinians, or nominal Christians, in which the true grounds and reasons of the whole Christian faith and life are plainly and fully demonstrated, to which are added, some animadversions upon Dr. Trapp's late reply / William Law;Law, William, 1686-1761;1740;text_and_corpus_linguistics;Theology -- Miscellaneous Christian texts -- English;Oxford Text Archive, University of Oxford;Triggs, Jeffery;text/sgml;(1 file : ca. 267 KB);Text;Devotional literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0ec2d4a4-2ec8-50e6-b471-c7c761b2c5ff",
+    "oai_identifier": [
+        "oai:ota:oucs:2180"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Theology -- Miscellaneous Christian texts -- English"
+        }
+    ],
+    "title": [
+        "An appeal to all that doubt, or disbelieve the truths of the Gospel : whether they be Deists, Arians, Socinians, or nominal Christians, in which the true grounds and reasons of the whole Christian faith and life are plainly and fully demonstrated, to which are added, some animadversions upon Dr. Trapp's late reply / William Law"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2180.xml"
+}

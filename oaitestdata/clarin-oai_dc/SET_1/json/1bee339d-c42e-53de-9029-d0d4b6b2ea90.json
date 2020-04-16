@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 147 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0051",
+    "MetadataAccess": [
+        "oai:ota:oucs:0051"
+    ],
+    "PublicationTimestamp": "1526-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1526"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Erasmus, Desiderius, d. 1536"
+    ],
+    "fulltext": "oai:ota:oucs:0051;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0051.xml;De immensa Dei misericordia. English;De immensa Dei misericordia : a sermon of the excedynge great mercy of God / made by the most famous doctour maister Erasmus Roterodamus ; translated out of Latine into Englisshe at the request of the most honourable and vertuous lady, the Lady Margaret Countese of Salisbury;Erasmus, Desiderius, d. 1536;1526;text_and_corpus_linguistics;Addresses;Sermons;Translations -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;(1 file : ca. 147 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1bee339d-c42e-53de-9029-d0d4b6b2ea90",
+    "oai_identifier": [
+        "oai:ota:oucs:0051"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Addresses"
+        },
+        {
+            "name": "Sermons"
+        },
+        {
+            "name": "Translations -- England -- th century"
+        }
+    ],
+    "title": [
+        "De immensa Dei misericordia. English",
+        "De immensa Dei misericordia : a sermon of the excedynge great mercy of God / made by the most famous doctour maister Erasmus Roterodamus ; translated out of Latine into Englisshe at the request of the most honourable and vertuous lady, the Lady Margaret Countese of Salisbury"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0051.xml"
+}

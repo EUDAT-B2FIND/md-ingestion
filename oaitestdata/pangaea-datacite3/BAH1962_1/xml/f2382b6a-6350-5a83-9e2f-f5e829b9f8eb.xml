@@ -1,0 +1,62 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.56251</identifier>
+    <datestamp>2017-09-02T05:35:26Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.56251</identifier>
+      <creators>
+        <creator>
+          <creatorName>Wiltshire, Karen Helen</creatorName>
+          <nameIdentifier schemeURI="http://orcid.org" nameIdentifierScheme="ORCID">0000-0002-7148-0529</nameIdentifier>
+        </creator>
+      </creators>
+      <titles>
+        <title>Abundance of protozoa at time series station Helgoland Roads, North Sea, in 1998</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2000</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">DATE/TIME</subject>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Laboea sp.</subject>
+        <subject subjectScheme="Parameter">Myrionecta rubra, fractionated</subject>
+        <subject subjectScheme="Parameter">Myrionecta rubra</subject>
+        <subject subjectScheme="Parameter">Ciliata indeterminata, fractionated</subject>
+        <subject subjectScheme="Parameter">Ciliata indeterminata</subject>
+        <subject subjectScheme="Parameter">Foraminifera, planktic indeterminata</subject>
+        <subject subjectScheme="Method">Quantitative phytoplankton method (Uterm&#246;hl, 1958)</subject>
+        <subject subjectScheme="Campaign">HelgolandRoadsTimeseries</subject>
+        <subject subjectScheme="Basis">Meeresstation Helgoland</subject>
+        <subject subjectScheme="Project">Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland) (BAH)</subject>
+        <subject subjectScheme="Project">Long-term Ecological Research at AWI (LTER)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>Alfred Wegener Institute - Biological Institute Helgoland</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Collected">1998-01-02T08:35:00/1998-12-30T08:10:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="Handle" relationType="IsDocumentedBy">10013/epic.28563.d001</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>3390 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPoint>54.18833 7.9</geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Centro de Tecnolog\u00edas y Aplicaciones del Lenguaje y del Habla (TALP)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Catalan",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1084",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1084"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1084",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Centro de Tecnolog\u00edas y Aplicaciones del Lenguaje y del Habla (TALP)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Spain"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1084;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;LC-STAR Dialogues;oral corpus;bilingual;Bilingual oral corpus (55 hours recording). 77 Spanish speakers; 59 Catalan speakers; Environment: Local telephone. Annotation: orthographic.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1084;cat;spa;downloadable_files_count: 0;Spain;Centro de Tecnolog\u00edas y Aplicaciones del Lenguaje y del Habla (TALP);http://www.lc-star.com/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "024403ec-9aaf-5782-bc1b-59a383e818e3",
+    "notes": [
+        "Bilingual oral corpus (55 hours recording). 77 Spanish speakers; 59 Catalan speakers; Environment: Local telephone. Annotation: orthographic."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1084"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "oral corpus"
+        },
+        {
+            "name": "bilingual"
+        }
+    ],
+    "title": [
+        "LC-STAR Dialogues"
+    ],
+    "url": ""
+}

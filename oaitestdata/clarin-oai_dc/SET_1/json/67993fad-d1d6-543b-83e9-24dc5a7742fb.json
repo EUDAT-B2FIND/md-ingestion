@@ -1,0 +1,182 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/x-tar",
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Belarusian",
+        "Bosnian",
+        "Bulgarian",
+        "Czech",
+        "Croatian",
+        "Upper Sorbian",
+        "Macedonian",
+        "Polish",
+        "Russian",
+        "Slovak",
+        "Slovenian",
+        "Serbian",
+        "Ukrainian",
+        "Latvian",
+        "Lithuanian",
+        "Afrikaans",
+        "Danish",
+        "German",
+        "English",
+        "Faroese",
+        "Western Frisian",
+        "Swiss German",
+        "Icelandic",
+        "Limburgan",
+        "Luxembourgish",
+        "Low German",
+        "Dutch",
+        "Norwegian Nynorsk",
+        "Norwegian",
+        "Scots",
+        "Swedish",
+        "Yiddish",
+        "Aragonese",
+        "Asturian",
+        "Catalan",
+        "French",
+        "Galician",
+        "Haitian",
+        "Italian",
+        "Latin",
+        "Neapolitan",
+        "Portuguese",
+        "Romanian",
+        "Spanish",
+        "Walloon",
+        "Breton",
+        "Welsh",
+        "Scottish Gaelic",
+        "Irish",
+        "Modern Greek (1453-)",
+        "Armenian",
+        "Albanian",
+        "Persian",
+        "Kurdish",
+        "Tajik",
+        "Bengali",
+        "Gujarati",
+        "Hindi",
+        "Marathi",
+        "Nepali (macrolanguage)",
+        "Urdu",
+        "Amharic",
+        "Arabic",
+        "Hebrew",
+        "Estonian",
+        "Finnish",
+        "Hungarian",
+        "Basque",
+        "Georgian",
+        "Chuvash",
+        "Azerbaijani",
+        "Turkish",
+        "Uzbek",
+        "Kazakh",
+        "Tatar",
+        "Yakut",
+        "Korean",
+        "Mongolian",
+        "Telugu",
+        "Kannada",
+        "Malayalam",
+        "Tamil",
+        "Newari",
+        "Vietnamese",
+        "Indonesian",
+        "Javanese",
+        "Malagasy",
+        "Maori",
+        "Malay (macrolanguage)",
+        "Pampanga",
+        "Sundanese",
+        "Tagalog",
+        "Waray (Philippines)",
+        "Swahili (macrolanguage)",
+        "Esperanto",
+        "Ido",
+        "Interlingua (International Auxiliary Language Association)",
+        "Volap\u00fck"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1743",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1743"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1743",
+    "PublicationTimestamp": "2016-06-20T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11234/1-1662"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u017dabokrtsk\u00fd, Zden\u011bk",
+        "Yu, Zhiwei",
+        "Zeman, Daniel",
+        "Mare\u010dek, David"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1743;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Deltacorpus 1.1;Mare\u010dek, David;Yu, Zhiwei;Zeman, Daniel;\u017dabokrtsk\u00fd, Zden\u011bk;part of speech;tagging;semi-supervised;cross-language;Texts in 107 languages from the W2C corpus (http://hdl.handle.net/11858/00-097C-0000-0022-6133-9), first 1,000,000 tokens per language, tagged by the delexicalized tagger described in Yu et al. (2016, LREC, Portoro\u017e, Slovenia).\r\n\r\nChanges in version 1.1: \r\n\r\n1. Universal Dependencies tagset instead of the older and smaller Google Universal POS tagset. \r\n\r\n2. SVM classifier trained on Universal Dependencies 1.2 instead of HamleDT 2.0. \r\n\r\n3. Balto-Slavic languages, Germanic languages and Romance languages were tagged by classifier trained only on the respective group of languages. Other languages were tagged by a classifier trained on all available languages. The \"c7\" combination from version 1.0 is no longer used.;2016-06-20;corpus;http://hdl.handle.net/11234/1-1743;bel;bos;bul;ces;hbs;hrv;hsb;mkd;pol;rus;slk;slv;srp;ukr;lav;lit;afr;dan;deu;eng;fao;fry;gsw;isl;lim;ltz;nds;nld;nno;nor;sco;swe;yid;arg;ast;cat;fra;glg;hat;ita;lat;lmo;nap;pms;por;ron;spa;vec;wln;bre;cym;gla;gle;ell;hye;sqi;diq;fas;glk;kur;tgk;ben;bpy;guj;hif;hin;mar;nep;urd;amh;ara;arz;heb;est;fin;hun;eus;kat;chv;aze;tur;uzb;kaz;tat;sah;kor;mon;tel;kan;mal;tam;new;vie;ind;jav;mlg;mri;msa;pam;sun;tgl;war;swa;epo;ido;ina;vol;http://hdl.handle.net/11234/1-1662;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/x-tar;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/deltacorpus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "67993fad-d1d6-543b-83e9-24dc5a7742fb",
+    "notes": [
+        "Texts in 107 languages from the W2C corpus (http://hdl.handle.net/11858/00-097C-0000-0022-6133-9), first 1,000,000 tokens per language, tagged by the delexicalized tagger described in Yu et al. (2016, LREC, Portoro\u017e, Slovenia).\r\n\r\nChanges in version 1.1: \r\n\r\n1. Universal Dependencies tagset instead of the older and smaller Google Universal POS tagset. \r\n\r\n2. SVM classifier trained on Universal Dependencies 1.2 instead of HamleDT 2.0. \r\n\r\n3. Balto-Slavic languages, Germanic languages and Romance languages were tagged by classifier trained only on the respective group of languages. Other languages were tagged by a classifier trained on all available languages. The \"c7\" combination from version 1.0 is no longer used."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1743"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "part speech"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "semi-supervised"
+        },
+        {
+            "name": "cross-language"
+        }
+    ],
+    "title": [
+        "Deltacorpus 1.1"
+    ],
+    "url": ""
+}

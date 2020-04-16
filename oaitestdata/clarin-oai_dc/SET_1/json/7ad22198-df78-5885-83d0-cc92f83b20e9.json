@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1398",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1398"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1398",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Spain"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1398;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;html2text;Format conversion service: .html to .txt converter;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1398;downloadable_files_count: 0;Spain;Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7ad22198-df78-5885-83d0-cc92f83b20e9",
+    "notes": [
+        "Format conversion service: .html to .txt converter"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1398"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "html2text"
+    ],
+    "url": ""
+}

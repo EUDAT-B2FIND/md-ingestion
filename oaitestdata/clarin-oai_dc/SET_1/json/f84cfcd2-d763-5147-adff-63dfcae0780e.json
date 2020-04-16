@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Faculty of Electrical Engineering and Computer Science, University of Maribor"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 4",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1051",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1051"
+    ],
+    "PID": "http://hdl.handle.net/11356/1051",
+    "PublicationTimestamp": "2002-03-02T11:59:59Z",
+    "PublicationYear": [
+        "2002"
+    ],
+    "Publisher": [
+        "Faculty of Electrical Engineering and Computer Science, University of Maribor"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Rotovnik, Toma\u017e",
+        "Veronik, Robert",
+        "Sepesy Mau\u010dec, Mirjam",
+        "Z\u00f6gling Marku\u0161, Aleksandra",
+        "Horvat, Bogomir",
+        "\u017dgank, Andrej",
+        "Ka\u010di\u010d, Zdravko",
+        "Rojc, Matej"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1051;2017-01-20T14:00:23Z;hdl_11356_1023;hdl_11356_1024;SNABI database for continuous speech recognition 1.2;Ka\u010di\u010d, Zdravko;Horvat, Bogomir;Z\u00f6gling Marku\u0161, Aleksandra;Veronik, Robert;Rojc, Matej;\u017dgank, Andrej;Sepesy Mau\u010dec, Mirjam;Rotovnik, Toma\u017e;speech recognition;speech database;speech recordings;spoken corpus;The SNABI speech database can be used to train continuous speech recognition for Slovene language. The database comprises 1530 sentences, 150 words and the alphabet. 132 speakers were recorded, each reading 200 sentences or more. This resulted in more than 15,000 recordings of speech signal contained in the database. The recordings were done in studio (SNABI SI_SSQ) and through a telephone line (SNABI SI_SFN).;2002-03-02;corpus;http://hdl.handle.net/11356/1051;slv;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);https://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/pdf;application/zip;application/pdf;application/zip;text/plain; charset=utf-8;downloadable_files_count: 4;Faculty of Electrical Engineering and Computer Science, University of Maribor",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f84cfcd2-d763-5147-adff-63dfcae0780e",
+    "notes": [
+        "The SNABI speech database can be used to train continuous speech recognition for Slovene language. The database comprises 1530 sentences, 150 words and the alphabet. 132 speakers were recorded, each reading 200 sentences or more. This resulted in more than 15,000 recordings of speech signal contained in the database. The recordings were done in studio (SNABI SI_SSQ) and through a telephone line (SNABI SI_SFN)."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1051"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech recognition"
+        },
+        {
+            "name": "speech database"
+        },
+        {
+            "name": "speech recordings"
+        },
+        {
+            "name": "spoken corpus"
+        }
+    ],
+    "title": [
+        "SNABI database for continuous speech recognition 1.2"
+    ],
+    "url": ""
+}

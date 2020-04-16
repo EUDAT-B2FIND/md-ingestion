@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Prest, John M."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "382 KB",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0552",
+    "MetadataAccess": [
+        "oai:ota:oucs:0552"
+    ],
+    "PublicationTimestamp": "1856-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1856"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Memoirs"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Peel, Robert, Sir, 1788-1850"
+    ],
+    "fulltext": "oai:ota:oucs:0552;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0552.xml;Memoirs / by the Right Honourable Sir Robert Peel;Peel, Robert, Sir, 1788-1850;1856-1857;text_and_corpus_linguistics;Autobiography -- 20th century;eng;Oxford Text Archive, University of Oxford;Prest, John M.;text/plain;382 KB;Text;Memoirs;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "315bbff5-f465-5d1f-8cc7-1d12ef03d1a2",
+    "oai_identifier": [
+        "oai:ota:oucs:0552"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Autobiography -- th century"
+        }
+    ],
+    "title": [
+        "Memoirs / by the Right Honourable Sir Robert Peel"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0552.xml"
+}

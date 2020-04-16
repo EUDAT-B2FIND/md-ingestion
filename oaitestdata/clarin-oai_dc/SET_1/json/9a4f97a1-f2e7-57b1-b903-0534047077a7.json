@@ -1,0 +1,94 @@
+{
+    "Contact": [
+        "Regional Linguistic Data Initiative Centre ReLDI"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 3",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Serbian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1200",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1200"
+    ],
+    "PID": "http://hdl.handle.net/11356/1200",
+    "PublicationTimestamp": "2018-08-20T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Regional Linguistic Data Initiative Centre ReLDI"
+    ],
+    "RelatedIdentifier": [
+        "http://www.aclweb.org/anthology/W17-1407"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Samard\u017ei\u0107, Tanja",
+        "Batanovi\u0107, Vuk",
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1200;2018-10-24T20:57:49Z;hdl_11356_1023;hdl_11356_1024;Training corpus SETimes.SR 1.0;Batanovi\u0107, Vuk;Ljube\u0161i\u0107, Nikola;Samard\u017ei\u0107, Tanja;Erjavec, Toma\u017e;tagging;dependency treebank;parsing;named entities;tokenisation;manual annotation;TEI;The SETimes.SR training corpus contains 86 726 tokens manually annotated on the levels of tokenisation, sentence segmentation, morphosyntactic tagging, lemmatisation, syntactic dependencies, and named entities.\r\n\r\nThe annotations (and other aspects) of the corpus are documented in the teiHeader and back element of the TEI encoded corpus. In short, they follow (1) the MULTEXT-East V5 morphosyntactic specifications, http://nl.ijs.si/ME/V5/msd/, (2) the UDv2 Guidelines, http://universaldependencies.org/guidelines.html, and (3) the Janes annotation guidelines for named entities, http://nl.ijs.si/janes/wp-content/uploads/2017/09/SlovenianNER-eng-v1.1.pdf.;2018-08-20;corpus;http://hdl.handle.net/11356/1200;srp;http://www.aclweb.org/anthology/W17-1407;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 3;Regional Linguistic Data Initiative Centre ReLDI;https://github.com/vukbatanovic/SETimes.SR",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9a4f97a1-f2e7-57b1-b903-0534047077a7",
+    "notes": [
+        "The SETimes.SR training corpus contains 86 726 tokens manually annotated on the levels of tokenisation, sentence segmentation, morphosyntactic tagging, lemmatisation, syntactic dependencies, and named entities.\r\n\r\nThe annotations (and other aspects) of the corpus are documented in the teiHeader and back element of the TEI encoded corpus. In short, they follow (1) the MULTEXT-East V5 morphosyntactic specifications, http://nl.ijs.si/ME/V5/msd/, (2) the UDv2 Guidelines, http://universaldependencies.org/guidelines.html, and (3) the Janes annotation guidelines for named entities, http://nl.ijs.si/janes/wp-content/uploads/2017/09/SlovenianNER-eng-v1.1.pdf."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1200"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "dependency treebank"
+        },
+        {
+            "name": "parsing"
+        },
+        {
+            "name": "named entities"
+        },
+        {
+            "name": "tokenisation"
+        },
+        {
+            "name": "manual annotation"
+        },
+        {
+            "name": "TEI"
+        }
+    ],
+    "title": [
+        "Training corpus SETimes.SR 1.0"
+    ],
+    "url": ""
+}

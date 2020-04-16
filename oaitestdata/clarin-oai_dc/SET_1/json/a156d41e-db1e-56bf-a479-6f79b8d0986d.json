@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "University of Bergen, Department of Linguistic, Literary and Aesthetic Studies"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "audio/x-wav",
+        "downloadable_files_count: 9",
+        "text/plain; charset=utf-8",
+        "application/pdf",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish",
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/127",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/127"
+    ],
+    "PID": "http://hdl.handle.net/11509/127",
+    "PublicationTimestamp": "2018-11-13T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "University of Bergen, Department of Linguistic, Literary and Aesthetic Studies"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN_ACA",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Kristoffersen, Gjert"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/127;2019-02-25T14:34:31Z;hdl_11509_1;hdl_11509_2;The Level Stress recordings: EastMora_90;Kristoffersen, Gjert;Phonology;Recording equipment\r\nThe recordings were done by means of a cassette recorder (Sony TC-D5M) and Sony\r\nlavaliere microphones. They were digitized in the 1990s. The recordings were made in the\r\nspeakers\u2019 homes.\r\n\r\nThe speakers\r\nThe set consists of three speakers, two women from the village of Nusn\u00e4s, born in 1925 and\r\n1966, grandmother and grandchild. The third speaker is a man from the village of Gars\u00e5s,\r\nsome kilometers further south, born in 1928. They were recruited with the help of the\r\nSwedish linguist Gunnar Nystr\u00f6m, who has a thorough knowledge of Dalarna and the Dalarna\r\ndialects. The youngest speaker did not grow up in East Mora, but in the city of Falun. Both\r\nparents were from East Mora, however, and the dialect was her home language. She also\r\nspent her summer holidays at her grandmother\u2019s home in Nusn\u00e4s.\r\n\r\nFor the full background description of this item, see the file \"EastMora_90: Background.pdf\".\r\n\r\nFor the full description of the whole project, see these files:\r\n     The Level Stress recordings.pdf\r\n     LevelStress_Glossary.pdf\r\n     Level Stress_Speaker and Sound File Codes.pdf\r\n\r\nThe data should be used only for research and development purposes.;2018-11-13;corpus;http://hdl.handle.net/11509/127;swe;nor;CLARIN_ACA;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NORED=1;ACA;audio/x-wav;audio/x-wav;audio/x-wav;application/pdf;application/pdf;application/pdf;application/pdf;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 9;University of Bergen, Department of Linguistic, Literary and Aesthetic Studies;http://terminologi.no",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a156d41e-db1e-56bf-a479-6f79b8d0986d",
+    "notes": [
+        "Recording equipment\r\nThe recordings were done by means of a cassette recorder (Sony TC-D5M) and Sony\r\nlavaliere microphones. They were digitized in the 1990s. The recordings were made in the\r\nspeakers\u2019 homes.\r\n\r\nThe speakers\r\nThe set consists of three speakers, two women from the village of Nusn\u00e4s, born in 1925 and\r\n1966, grandmother and grandchild. The third speaker is a man from the village of Gars\u00e5s,\r\nsome kilometers further south, born in 1928. They were recruited with the help of the\r\nSwedish linguist Gunnar Nystr\u00f6m, who has a thorough knowledge of Dalarna and the Dalarna\r\ndialects. The youngest speaker did not grow up in East Mora, but in the city of Falun. Both\r\nparents were from East Mora, however, and the dialect was her home language. She also\r\nspent her summer holidays at her grandmother\u2019s home in Nusn\u00e4s.\r\n\r\nFor the full background description of this item, see the file \"EastMora_90: Background.pdf\".\r\n\r\nFor the full description of the whole project, see these files:\r\n     The Level Stress recordings.pdf\r\n     LevelStress_Glossary.pdf\r\n     Level Stress_Speaker and Sound File Codes.pdf\r\n\r\nThe data should be used only for research and development purposes."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/127"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Phonology"
+        }
+    ],
+    "title": [
+        "The Level Stress recordings: EastMora_90"
+    ],
+    "url": ""
+}

@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/tei+xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1012",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1012"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1012",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1012;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Regionenkorpus (C4-Korpus);corpus;The C4 corpus is a joined effort of the project Digitales W\u00f6rterbuch der deutschen Sprache (DWDS), the Austrian Academy Corpus (AAC), the Korpus S\u00fcdtirol and the Schweizer Textkorpus (CHTK). The Corpus is composed of corpora of all four partner institutions.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1012;deu;application/tei+xml;downloadable_files_count: 0;Berlin-Brandenburg Academy of Sciences and Humanities;http://www.dwds.de/ressourcen/c4/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "69f64d4b-57f5-58ea-b5f8-0862ea0bb0aa",
+    "notes": [
+        "The C4 corpus is a joined effort of the project Digitales W\u00f6rterbuch der deutschen Sprache (DWDS), the Austrian Academy Corpus (AAC), the Korpus S\u00fcdtirol and the Schweizer Textkorpus (CHTK). The Corpus is composed of corpora of all four partner institutions."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1012"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        }
+    ],
+    "title": [
+        "Regionenkorpus (C4-Korpus)"
+    ],
+    "url": ""
+}

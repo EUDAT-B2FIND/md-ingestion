@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/267</identifier>
+    <datestamp>2016-05-31T05:34:48Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Krokodyl: A hybrid depencency parser of Polish</dc:title>
+      <dc:creator>Aceda&#324;ski, Szymon</dc:creator>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>Polish</dc:subject>
+      <dc:subject>dependency parsing</dc:subject>
+      <dc:description>Krokodyl is an experimental hybrid deep depencency parser of Polish.&#13;
+&#13;
+Krokodyl has been developed at the Institute of Computer Science, Polish Academy&#13;
+of Sciences (IPI PAN) within the CLARIN-PL project. It was create to evaluate&#13;
+a hybrid approach to parsing: combining syntactic, lexical and semantic&#13;
+features for dependency parsing.&#13;
+&#13;
+It uses a number of tools as components of the feature generation chain, namely&#13;
+the Spejd Grammar, MALT parsing engine, MATE, the Polish Wordnet, the Skladnica&#13;
+treebank.</dc:description>
+      <dc:date>2016-02-29</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/267</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

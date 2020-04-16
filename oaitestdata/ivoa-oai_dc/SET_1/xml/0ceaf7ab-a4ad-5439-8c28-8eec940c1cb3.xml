@@ -1,0 +1,17 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://wfau.roe.ac.uk/ukidssDR5-v1/wsa/ceaApplication</oai:identifier>
+    <oai:datestamp>2018-12-27T13:17:00Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:title>UKIDSS DR5 (Secure Access)</dc:title>
+      <dc:creator>WFAU</dc:creator>
+      <dc:creator>WFAU</dc:creator>
+      <dc:description>This DSA hosts data release 5 of the UKIRT Infrared Deep Sky Survey housed at the Wide Field Astronomy Unit at the Univeristy of Edinburgh. In order to access this data you need to contact Mark Holliman at msh@roe.ac.uk to be added to the authorized users list (unless you are already logged on with a valid WFAU community account). This catalog contains WFCAM data primarily originating from the five UKIDSS surveys: Large Area Survey, Galactic Plane Survey, Galactic Clusters Survey, Deep Extragalactic Survey and the Ultra Deep Survey (see the www.ukidss.org for survey descriptions)</dc:description>
+      <dc:subject>infrared, galaxies, stars, survey</dc:subject>
+      <dc:date>2010-10-06T14:32:12</dc:date>
+      <dc:identifier>ivo://wfau.roe.ac.uk/ukidssDR5-v1/wsa/ceaApplication</dc:identifier>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

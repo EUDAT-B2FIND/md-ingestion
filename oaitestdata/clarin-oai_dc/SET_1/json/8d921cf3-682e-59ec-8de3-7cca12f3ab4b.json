@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Masaryk University, NLP Centre"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Oromo"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2588",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2588"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2588",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Masaryk University, NLP Centre"
+    ],
+    "RelatedIdentifier": [
+        "https://www.sketchengine.co.uk/wp-content/uploads/2015/05/Corpus_Factory_2010.pdf",
+        "http://habit-project.eu/wiki/OromoCorpus"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "NLP Centre Web Corpus License",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-NLPC-WeC",
+        "ACA"
+    ],
+    "author": [
+        "Suchomel, V\u00edt",
+        "Rychl\u00fd, Pavel"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2588;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Oromo web corpus;Suchomel, V\u00edt;Rychl\u00fd, Pavel;text corpora;Ethiopian languages;Oromo;web corpus;under-resourced language;Oromo web corpus. Crawled by SpiderLing in January 2016. Encoded in UTF-8, cleaned, deduplicated.;2016;corpus;http://hdl.handle.net/11234/1-2588;orm;https://www.sketchengine.co.uk/wp-content/uploads/2015/05/Corpus_Factory_2010.pdf;http://habit-project.eu/wiki/OromoCorpus;NLP Centre Web Corpus License;https://lindat.mff.cuni.cz/repository/xmlui/page/license-NLPC-WeC;ACA;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Masaryk University, NLP Centre;http://habit-project.eu/wiki/HabitSystemFinal",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8d921cf3-682e-59ec-8de3-7cca12f3ab4b",
+    "notes": [
+        "Oromo web corpus. Crawled by SpiderLing in January 2016. Encoded in UTF-8, cleaned, deduplicated."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2588"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "text corpora"
+        },
+        {
+            "name": "Ethiopian languages"
+        },
+        {
+            "name": "Oromo"
+        },
+        {
+            "name": "web corpus"
+        },
+        {
+            "name": "under-resourced language"
+        }
+    ],
+    "title": [
+        "Oromo web corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,77 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.817124",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.817124"
+    ],
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(2 S-13N,43E-56E)",
+    "TempCoverageBegin": 62846708399,
+    "TempCoverageEnd": 62846708399,
+    "TemporalCoverage": " point in time : 1992-07-14T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1992-07-14T11:59:59Z",
+    "TemporalCoverage:EndDate": "1992-07-14T11:59:59Z",
+    "author": [
+        "van der Spoel, Siebrecht",
+        "Baars, Martien A"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.817124;2017-08-05T09:10:01Z;ASPS;JGOFSNetherlands;10.1594/PANGAEA.817124;Baars, Martien A;van der Spoel, Siebrecht;Physical oceanography during TYRO cruise NIOP-B1;PANGAEA - Data Publisher for Earth & Environmental Science;2013;Event label;Date/Time of event;Latitude of event;Longitude of event;DEPTH, water;Pressure, water;Temperature, water;Salinity;Oxygen;Temperature, water, potential;Density, sigma-theta (0);Fluorescence;Transmission of light;Calculated;Fluorometer, Chelsea Instruments;NIOP-B1;Tyro;Joint Global Ocean Flux Study (JGOFS);Netherlands Indian Ocean Programme (NIOP);1992-07-14T13:10:00/1992-08-07T19:46:00;eng;Dataset;http://store.pangaea.de/Projects/JGOFS/Netherlands/NIOP-B1_CTD.pdf;264997 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);-2.305 42.8983 13.36 56.3233",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.817124"
+    ],
+    "oai_set": [
+        "ASPS",
+        "JGOFSNetherlands"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[42.8983,-2.305],[42.8983,13.36],[56.3233,13.36],[56.3233,-2.305],[42.8983,-2.305]]]}",
+    "tags": [
+        {
+            "name": "Calculated"
+        },
+        {
+            "name": "Fluorometer"
+        },
+        {
+            "name": "Chelsea Instruments"
+        },
+        {
+            "name": "NIOP-B"
+        },
+        {
+            "name": "Tyro"
+        },
+        {
+            "name": "Joint Global Ocean Flux Study JGOFS"
+        },
+        {
+            "name": "Netherlands Indian Ocean Programme NIOP"
+        }
+    ],
+    "title": [
+        "Physical oceanography during TYRO cruise NIOP-B1"
+    ],
+    "url": ""
+}

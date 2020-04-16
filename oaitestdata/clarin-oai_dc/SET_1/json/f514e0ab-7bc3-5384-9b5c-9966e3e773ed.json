@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4939",
+    "MetadataAccess": [
+        "oai:ota:oucs:4939"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sidney, Algernon, 1622-1683."
+    ],
+    "fulltext": "oai:ota:oucs:4939;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4939.xml;Discourses concerning government: by Algernon Sidney, ... Publish'd from an original manuscript. The second edition carefully corrected. To which is added, the paper he deliver'd to the Sheriffs immediately before his death. And an alphabetical table.;Sidney, Algernon, 1622-1683.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f514e0ab-7bc3-5384-9b5c-9966e3e773ed",
+    "oai_identifier": [
+        "oai:ota:oucs:4939"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Discourses concerning government: by Algernon Sidney, ... Publish'd from an original manuscript. The second edition carefully corrected. To which is added, the paper he deliver'd to the Sheriffs immediately before his death. And an alphabetical table."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4939.xml"
+}

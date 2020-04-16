@@ -1,0 +1,101 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 4",
+        "application/pdf",
+        "application/zip"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1086",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1086"
+    ],
+    "PID": "http://hdl.handle.net/11356/1086",
+    "PublicationTimestamp": "2017-01-03T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://nl.ijs.si/janes/viri/rocno-oznaceni-korpusi/#Janes-Syn",
+        "https://doi.org/10.1007/s10579-018-9425-z"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Arhar Holdt, \u0160pela",
+        "Fi\u0161er, Darja",
+        "Erjavec, Toma\u017e"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1086;2018-10-24T20:52:29Z;hdl_11356_1023;hdl_11356_1024;CMC training corpus Janes-Syn 1.0;Arhar Holdt, \u0160pela;Erjavec, Toma\u017e;Fi\u0161er, Darja;computer-mediated communication;tokenisation;word normalisation;tagging;lemmatisation;dependency treebank;syntactic annotation;manual annotation;TEI;Janes-Syn is a syntactically annotated corpus of Slovene tweets and is meant as a gold-standard training and testing dataset for syntactic annotation of Slovene computer-mediated communication and for detailed linguistic explorations which require highly accurate and reliable annotations. Words in the dataset are normalised, lemmatised, PoS-tagged and syntactically annotated with the JOS dependency model (http://eng.slovenscina.eu/tehnologije/razclenjevalnik). The annotations on all levels were manually corrected. \r\n\r\nThe corpus creation and structure are described in:\r\nARHAR HOLDT, \u0160pela, FI\u0160ER, Darja, ERJAVEC, Toma\u017e, KREK, Simon. Syntactic annotation of Slovene CMC : first steps. Proceedings of the 4th Conference on CMC and Social Media Corpora for the Humanities, 27-28 September 2016, Ljubljana, Slovenia, 2016, pp. 3-6. http://nl.ijs.si/janes/cmc-corpora2016/proceedings/\r\n\r\nJanes-Syn was created from two larger corpora that are also available in the repository: Janes-Norm (http://hdl.handle.net/11356/1084) and Janes-Tag (http://hdl.handle.net/11356/1123).;2017-01-03;corpus;http://hdl.handle.net/11356/1086;slv;http://nl.ijs.si/janes/viri/rocno-oznaceni-korpusi/#Janes-Syn;https://doi.org/10.1007/s10579-018-9425-z;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;text/plain; charset=utf-8;application/pdf;application/pdf;application/zip;application/zip;downloadable_files_count: 4;Jo\u017eef Stefan Institute;http://nl.ijs.si/janes/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f5694dfa-89ba-5ba0-8362-87094c62deb7",
+    "notes": [
+        "Janes-Syn is a syntactically annotated corpus of Slovene tweets and is meant as a gold-standard training and testing dataset for syntactic annotation of Slovene computer-mediated communication and for detailed linguistic explorations which require highly accurate and reliable annotations. Words in the dataset are normalised, lemmatised, PoS-tagged and syntactically annotated with the JOS dependency model (http://eng.slovenscina.eu/tehnologije/razclenjevalnik). The annotations on all levels were manually corrected. \r\n\r\nThe corpus creation and structure are described in:\r\nARHAR HOLDT, \u0160pela, FI\u0160ER, Darja, ERJAVEC, Toma\u017e, KREK, Simon. Syntactic annotation of Slovene CMC : first steps. Proceedings of the 4th Conference on CMC and Social Media Corpora for the Humanities, 27-28 September 2016, Ljubljana, Slovenia, 2016, pp. 3-6. http://nl.ijs.si/janes/cmc-corpora2016/proceedings/\r\n\r\nJanes-Syn was created from two larger corpora that are also available in the repository: Janes-Norm (http://hdl.handle.net/11356/1084) and Janes-Tag (http://hdl.handle.net/11356/1123)."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1086"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "tokenisation"
+        },
+        {
+            "name": "word normalisation"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "lemmatisation"
+        },
+        {
+            "name": "dependency treebank"
+        },
+        {
+            "name": "syntactic annotation"
+        },
+        {
+            "name": "manual annotation"
+        },
+        {
+            "name": "TEI"
+        }
+    ],
+    "title": [
+        "CMC training corpus Janes-Syn 1.0"
+    ],
+    "url": ""
+}

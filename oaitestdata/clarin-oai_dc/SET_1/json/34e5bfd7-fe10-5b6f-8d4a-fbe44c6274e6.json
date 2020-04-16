@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Woodhouse, J.R. (John Robert)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 59 KB)"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0408",
+    "MetadataAccess": [
+        "oai:ota:oucs:0408"
+    ],
+    "PublicationTimestamp": "1970-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1970"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Songs"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Vretos, Marinos Papadopoulos, 1828-1891"
+    ],
+    "fulltext": "oai:ota:oucs:0408;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0408.xml;Canti popolari della Grecia moderna / di Marino Vretos;Greek popular songs;Vretos, Marinos Papadopoulos, 1828-1891;1970;text_and_corpus_linguistics;Songs, Greek (Modern) -- Translations -- Italian -- 19th century;ita;Oxford Text Archive, University of Oxford;Woodhouse, J.R. (John Robert);(1 file : ca. 59 KB);Text;Songs;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "34e5bfd7-fe10-5b6f-8d4a-fbe44c6274e6",
+    "oai_identifier": [
+        "oai:ota:oucs:0408"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Songs"
+        }
+    ],
+    "title": [
+        "Canti popolari della Grecia moderna / di Marino Vretos",
+        "Greek popular songs"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0408.xml"
+}

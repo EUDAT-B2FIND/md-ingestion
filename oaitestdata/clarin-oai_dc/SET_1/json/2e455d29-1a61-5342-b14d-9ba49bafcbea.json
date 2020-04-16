@@ -1,0 +1,56 @@
+{
+    "Contributor": [
+        "Simov, Kiril"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Bulgarian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-222",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-222"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-222",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Bulgaria"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-222;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;BulTreeBank POS Corpus;Simov, Kiril;Written, synchronic, general, manually annotated; 50 000 tokens, 2600 sentences extracted from the BulTreeBank Text Archive in order to contain the most frequent ambiguity classes in Bulgarian;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-222;bul;downloadable_files_count: 0;Bulgaria;http://www.bultreebank.org/Resources.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2e455d29-1a61-5342-b14d-9ba49bafcbea",
+    "notes": [
+        "Written, synchronic, general, manually annotated; 50 000 tokens, 2600 sentences extracted from the BulTreeBank Text Archive in order to contain the most frequent ambiguity classes in Bulgarian"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-222"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "BulTreeBank POS Corpus"
+    ],
+    "url": ""
+}

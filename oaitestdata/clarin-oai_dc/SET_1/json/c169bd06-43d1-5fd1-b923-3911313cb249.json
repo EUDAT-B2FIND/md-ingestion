@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/530",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/530"
+    ],
+    "PID": "http://hdl.handle.net/11321/530",
+    "PublicationTimestamp": "2018-07-19T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Oleksy, Marcin",
+        "Koco\u0144, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/530;2018-07-23T12:53:17Z;hdl_11321_3;hdl_11321_4;KPWr EVENTS (Attributes and Relations);Oleksy, Marcin;Koco\u0144, Jan;KPWr;corpus;events recognition;events;Attributes for EVENT;Documents from Polish Corpus of Wroc\u0142aw University of Technology manually annotated with Attributes for EVENT instances and relations between EVENTS instances;2018-07-19;corpus;http://hdl.handle.net/11321/530;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Wroc\u0142aw University of Science and Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c169bd06-43d1-5fd1-b923-3911313cb249",
+    "notes": [
+        "Documents from Polish Corpus of Wroc\u0142aw University of Technology manually annotated with Attributes for EVENT instances and relations between EVENTS instances"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/530"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "KPWr"
+        },
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "events recognition"
+        },
+        {
+            "name": "events"
+        },
+        {
+            "name": "Attributes EVENT"
+        }
+    ],
+    "title": [
+        "KPWr EVENTS (Attributes and Relations)"
+    ],
+    "url": ""
+}

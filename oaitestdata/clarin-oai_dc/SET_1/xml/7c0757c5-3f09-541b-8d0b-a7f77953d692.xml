@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/303</identifier>
+    <datestamp>2016-06-07T05:11:27Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Mapa Literacka</dc:title>
+      <dc:creator>Gawe&#322;, Wojciech</dc:creator>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:creator>Gaida, Karol</dc:creator>
+      <dc:subject>spatial visualisation</dc:subject>
+      <dc:subject>geolocation</dc:subject>
+      <dc:description>A web based system for recognition and visualization of geographical objects on a map. The objects are recognized in documents provided be a user.</dc:description>
+      <dc:date>2016-04-25</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/303</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://litmap.clarin-pl.eu/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

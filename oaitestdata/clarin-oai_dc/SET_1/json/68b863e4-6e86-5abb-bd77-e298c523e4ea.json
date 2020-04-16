@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=ec6368e0408311e2a2aa782bcb07413599aab1f1d40746118b407fb829dd4977",
+    "MetadataAccess": [
+        "ec6368e0408311e2a2aa782bcb07413599aab1f1d40746118b407fb829dd4977"
+    ],
+    "PublicationTimestamp": "2013-01-31T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "ec6368e0408311e2a2aa782bcb07413599aab1f1d40746118b407fb829dd4977;2018-11-15T16:39:55Z;corpus;corpus:text;MLRS Corpus;142,397 Maltese texts from 10 genres.\n\nThe file \u00e2\u0080\u009ccorpus.zip\u00e2\u0080\u009d expands into a folder \u00e2\u0080\u009ccorpus\u00e2\u0080\u009d, containing the file \u00e2\u0080\u009ctagged.zip\u00e2\u0080\u009d, which expands into the folder \u00e2\u0080\u009ccwb.final\u00e2\u0080\u009d. This folder contains the files:\n\u00e2\u0080\u00a2\tfilelist.txt\n\u00e2\u0080\u00a2\tmalti02.academic.txt\n\u00e2\u0080\u00a2\tmalti02.law.txt\n\u00e2\u0080\u00a2\tmalti02.literature.txt\n\u00e2\u0080\u00a2\tmalti02.metadata.txt\n\u00e2\u0080\u00a2\tmalti02.misc.txt\n\u00e2\u0080\u00a2\tmalti02.parl.txt\n\u00e2\u0080\u00a2\tmalti02.parl.txt.bak\n\u00e2\u0080\u00a2\tmalti02.press.txt\n\u00e2\u0080\u00a2\tmalti02.religion.txt\n\u00e2\u0080\u00a2\tmalti02.speeches.txt\n\u00e2\u0080\u00a2\tmalti02.web.genral.txt\n\u00e2\u0080\u00a2\tmalti02.web.wiki.txt\n\u00e2\u0080\u00a2\tREADME.txt\n\u00e2\u0080\u00a2\tremoved-from-corpus.txt\n\u00e2\u0080\u00a2\ttend.txt\n\u00e2\u0080\u00a2\ttstart.txt\n\nAll texts of a genre are in one .txt file for that genre. In this file,  texts are marked with the XML tags <t>\u00e2\u0080\u00a6</t>, paragraphs are marked <p>\u00e2\u0080\u00a6</p>, sentences are marked <s>\u00e2\u0080\u00a6</s>, and one word per line, followed by a tab and its POS tag. ;2013-01-31",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "68b863e4-6e86-5abb-bd77-e298c523e4ea",
+    "notes": [
+        "142,397 Maltese texts from 10 genres.\n\nThe file \u00e2\u0080\u009ccorpus.zip\u00e2\u0080\u009d expands into a folder \u00e2\u0080\u009ccorpus\u00e2\u0080\u009d, containing the file \u00e2\u0080\u009ctagged.zip\u00e2\u0080\u009d, which expands into the folder \u00e2\u0080\u009ccwb.final\u00e2\u0080\u009d. This folder contains the files:\n\u00e2\u0080\u00a2\tfilelist.txt\n\u00e2\u0080\u00a2\tmalti02.academic.txt\n\u00e2\u0080\u00a2\tmalti02.law.txt\n\u00e2\u0080\u00a2\tmalti02.literature.txt\n\u00e2\u0080\u00a2\tmalti02.metadata.txt\n\u00e2\u0080\u00a2\tmalti02.misc.txt\n\u00e2\u0080\u00a2\tmalti02.parl.txt\n\u00e2\u0080\u00a2\tmalti02.parl.txt.bak\n\u00e2\u0080\u00a2\tmalti02.press.txt\n\u00e2\u0080\u00a2\tmalti02.religion.txt\n\u00e2\u0080\u00a2\tmalti02.speeches.txt\n\u00e2\u0080\u00a2\tmalti02.web.genral.txt\n\u00e2\u0080\u00a2\tmalti02.web.wiki.txt\n\u00e2\u0080\u00a2\tREADME.txt\n\u00e2\u0080\u00a2\tremoved-from-corpus.txt\n\u00e2\u0080\u00a2\ttend.txt\n\u00e2\u0080\u00a2\ttstart.txt\n\nAll texts of a genre are in one .txt file for that genre. In this file,  texts are marked with the XML tags <t>\u00e2\u0080\u00a6</t>, paragraphs are marked <p>\u00e2\u0080\u00a6</p>, sentences are marked <s>\u00e2\u0080\u00a6</s>, and one word per line, followed by a tab and its POS tag. "
+    ],
+    "oai_identifier": [
+        "ec6368e0408311e2a2aa782bcb07413599aab1f1d40746118b407fb829dd4977"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "MLRS Corpus"
+    ]
+}

@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>12f708b66ec611e2a2aa782bcb074135b5eea2fc589f44f7b46af04876b6280a</identifier>
+    <datestamp>2018-11-15T16:40:12Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare/UIMA speech annotation viewer</dc:title>
+      <dc:description>This is a UIMA component that provides a visualization of speech based output from UIMA workflows. It has been developed at the University of Manchester, using libraries of the Java Speech Toollkit (jstk). It has been designed specifically for use with the U-Compare text mining workbench (see separate META-SHARE record). It provides waveform, power and spectrogram plots. It also shows the location of individual spoken words, if this information is available in the output of the workflow.</dc:description>
+      <dc:date>2013-02-04</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

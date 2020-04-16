@@ -1,0 +1,101 @@
+{
+    "Contact": [
+        "christian.pichot@avignon.inra.fr"
+    ],
+    "Contributor": [
+        "AnaEE"
+    ],
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "inapplicable"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus?verb=GetRecord&metadataPrefix=iso19139&identifier=28e634ad-e4f4-5b54-a635-90c0c92d0692",
+    "PublicationTimestamp": "2018-10-20T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "INRA"
+    ],
+    "ResourceType": "dataset",
+    "Rights": [
+        "See AnaEE-France charters"
+    ],
+    "SpatialCoverage": "(41N-51N,6 W-10E)",
+    "TempCoverageBegin": 63461015999,
+    "TempCoverageEnd": 63461015999,
+    "TemporalCoverage": " point in time : 2012-01-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2012-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2012-01-01T11:59:59Z",
+    "author": [
+        "Philippe Clastre",
+        "Christian PICHOT"
+    ],
+    "fulltext": "20b9aa10-5aa5-48e3-bb61-e5a5746796ae;Philippe Clastre;INRA;Christian PICHOT;INRA;+33 4 32 72 29 66;+33 4 90 13 59 59;INRA - Domaine Saint-Paul - Site Agroparc;Avignon Cedex 9;84914;France;christian.pichot@avignon.inra.fr;2018-10-30T11:05:49;ISO 19115:2003/19139;1.0;WGS 84 (EPSG:4326);AnaEE-France modeling platforms and data management services;Plateforme de mod\u00e9lisation et services de gestion des donn\u00e9es de AnaEE-France;2018-10-20;http://w3.avignon.inra.fr/geonetwork_anaee/80894c9d-aa65-4808-8870-a04a7bf402f4;Jean-Fran\u00e7ois LE GALLIARD;CNRS;+33 1 64 28 35 33;+33 1 64 28 02 66;78, rue du Ch\u00e2teau;Saint-Pierre-L\u00e8s-Nemours;77140;France;cereep@biologie.ens.fr;Andr\u00e9 CHANZY;INRA;+33 4 32 72 22 11;+33 4 32 72 22 12;Domaine Saint Paul - Site Agroparc CS 40509;Avignon Cedex 9;84914;France;andre.chanzy@avignon.inra.fr;AnaEE-France is the French national infrastructure devoted to the study of continental ecosystems and their biodiversity. It offers experimental facilities in controlled, semi-natural or natural environments, analysis platforms and shared instruments as well as modeling platforms and database Information Systems.\nModeling platforms are facilities specialized in developing models to support the projects run by AnaEE.  They streamline model development by providing the necessary hardware and software, as well as the access to expertise, datasets and modelling libraries. Two types of platforms are or will be provided: i) model factories which are nationally supported software platforms with advanced and well-established facilities providing users access to general and extensible modeling resources and ii) Modeling solution platforms which are implemented as self-contained software solutions that model specific aspects of ecosystem function and are centered on a well-established and supported model development team with a strong community of users.\nBoth types are used to exploit mathematical models to test and develop our understanding of the complex quantitative relationships between processes within ecosystems, the interactions with their environments, and their functioning and behaviour under various pressures.\n\nDatabase Information systems have been developed for the management of the data produced by the AnaEE-F experimental facilities. These IS rely on two main architectural models : databases for long term experiments (in natura) and databases for short to middle term experiments (mostly in ecotrons and mesocosms)\n\nBased on a distributed architecture, the overall AnaEE-F IS develops a semantic interoperability of modeling platforms and database IS and provides portals for the discovery and the exploitation of these resources.;Experimentation on continental ecosystems;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng//resources.get?uuid=20b9aa10-5aa5-48e3-bb61-e5a5746796ae&fname=AnaEE_node5.png;large_thumbnail;png;France;France;AnaEE-France Locations;2018-07-12;geonetwork.thesaurus.local.place.anaee-france_locations;Environmental monitoring facilities;Installations de suivi environnemental;GEMET - INSPIRE themes, version 1.0 INSPIRE themes;2008-06-01;geonetwork.thesaurus.external.theme.inspire-theme;modelling platform;plateforme de mod\u00e9lisation;databases;base de donn\u00e9es;information system;syst\u00e8me d'information;theme.anaeeThes.rdf;2018-07-12;geonetwork.thesaurus.external.theme.anaeeThes;theme.drivers.rdf;2018-06-25;geonetwork.thesaurus.external.theme.drivers;biodiversity;biodiversit\u00e9;imaging;imagerie;air chemical property;propri\u00e9t\u00e9 chimique de l'air;meteorology;m\u00e9t\u00e9orologie;organic amendment;amendement organique;soil biology;biologie du sol;surface flux;flux de surface;soil chemistry;chimie du sol;water chemical property;propri\u00e9t\u00e9 chimique de l'eau;vegetation;v\u00e9g\u00e9tation;water biology;biologie de l'eau;soil physics;physique du sol;mulch;paillis;ecosystem management;gestion des \u00e9cosyst\u00e8mes;water physical property;propri\u00e9t\u00e9 physique de l'eau;theme.variableAnaee.rdf;2018-08-24;geonetwork.thesaurus.external.theme.variableAnaee;See AnaEE-France charters;5000;structure;2012-01-01;France;-5.7;9.5;41.3;51;You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-);inapplicable;inapplicable;https://www.anaee-france.fr/en/about-us/introduction-to-anaee-france;WWW:LINK-1.0-http--link;AnaEE-France web site;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/home;WWW:LINK-1.0-http--link;AnaEE-France metadata catalogue;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/864d43f1-fbba-4652-896d-61950f3d3a22;WWW:LINK-1.0-http--link;Virtual Soil Modeling Platform;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/ee520bf5-f86b-4064-97ce-8fb308d17efb;WWW:LINK-1.0-http--link;RECORD modeling and simulating platform for agroecosystems;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/59c9d6ec-057c-4ebf-b69f-35286784b9d2;WWW:LINK-1.0-http--link;CAPSIS (Computer-Aided Projection of Strategies In Silviculture);Ecotron IleDeFrance;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/fd85ef74-988e-44c7-bb1b-c3655e6e5137;WWW:LINK-1.0-http--link;Information Systems for the \"Observation and Experimentation Systems for Environmental Research\" (SOERE);http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/c106e898-b8a4-4679-8e2b-eb8fc04e8337;WWW:LINK-1.0-http--link;UMS BBEES 3468 - AnaEE-F;Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;Not evaluated",
+    "group": "anaee",
+    "groups": [
+        {
+            "name": "anaee"
+        }
+    ],
+    "name": "28e634ad-e4f4-5b54-a635-90c0c92d0692",
+    "notes": [
+        "AnaEE-France is the French national infrastructure devoted to the study of continental ecosystems and their biodiversity. It offers experimental facilities in controlled, semi-natural or natural environments, analysis platforms and shared instruments as well as modeling platforms and database Information Systems.\nModeling platforms are facilities specialized in developing models to support the projects run by AnaEE.  They streamline model development by providing the necessary hardware and software, as well as the access to expertise, datasets and modelling libraries. Two types of platforms are or will be provided: i) model factories which are nationally supported software platforms with advanced and well-established facilities providing users access to general and extensible modeling resources and ii) Modeling solution platforms which are implemented as self-contained software solutions that model specific aspects of ecosystem function and are centered on a well-established and supported model development team with a strong community of users.\nBoth types are used to exploit mathematical models to test and develop our understanding of the complex quantitative relationships between processes within ecosystems, the interactions with their environments, and their functioning and behaviour under various pressures.\n\nDatabase Information systems have been developed for the management of the data produced by the AnaEE-F experimental facilities. These IS rely on two main architectural models : databases for long term experiments (in natura) and databases for short to middle term experiments (mostly in ecotrons and mesocosms)\n\nBased on a distributed architecture, the overall AnaEE-F IS develops a semantic interoperability of modeling platforms and database IS and provides portals for the discovery and the exploitation of these resources."
+    ],
+    "oai_identifier": [
+        "28e634ad-e4f4-5b54-a635-90c0c92d0692"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-5.7,41.3],[-5.7,51],[9.5,51],[9.5,41.3],[-5.7,41.3]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "France"
+        },
+        {
+            "name": "Environmental monitoring facilities"
+        },
+        {
+            "name": "modelling platform"
+        },
+        {
+            "name": "databases"
+        },
+        {
+            "name": "information system"
+        },
+        {
+            "name": "biodiversity"
+        },
+        {
+            "name": "imaging"
+        },
+        {
+            "name": "air chemical property"
+        },
+        {
+            "name": "meteorology"
+        },
+        {
+            "name": "organic amendment"
+        },
+        {
+            "name": "soil biology"
+        },
+        {
+            "name": "surface flux"
+        }
+    ],
+    "title": [
+        "AnaEE-France modeling platforms and data management services"
+    ],
+    "url": "http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/c106e898-b8a4-4679-8e2b-eb8fc04e8337"
+}

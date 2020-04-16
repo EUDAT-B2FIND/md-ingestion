@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3892",
+    "MetadataAccess": [
+        "oai:ota:oucs:3892"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lillo, George, 1693-1739."
+    ],
+    "fulltext": "oai:ota:oucs:3892;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3892.xml;Britannia and Batavia: a masque. Written on the marriage of the Princess Royal with his Highness the Prince of Orange. By the late Mr. Lillo.;Lillo, George, 1693-1739.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "955b77d3-6fdd-5a4e-b89e-414572011992",
+    "oai_identifier": [
+        "oai:ota:oucs:3892"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Britannia and Batavia: a masque. Written on the marriage of the Princess Royal with his Highness the Prince of Orange. By the late Mr. Lillo."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3892.xml"
+}

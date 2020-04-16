@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1141</identifier>
+    <datestamp>2016-04-06T16:39:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Carl-Maria-von-Weber-Gesamtausgabe (WeGA)</dc:title>
+      <dc:contributor>Allroggen, Prof. Dr. Gerhard</dc:contributor>
+      <dc:subject>Germanistik</dc:subject>
+      <dc:description>Weber's diary entries, letters, writings, and opera; Tageb&#252;cher, Briefe, Schriften und Werke Webers</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1141</dc:identifier>
+      <dc:language>deu</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:publisher>Musikwissenschaftliches Seminar Detmold/Paderborn</dc:publisher>
+      <dc:publisher>Staatsbibliothek zu Berlin (Musikabteilung)</dc:publisher>
+      <dc:source>http://www.weber-gesamtausgabe.de/de/Index</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

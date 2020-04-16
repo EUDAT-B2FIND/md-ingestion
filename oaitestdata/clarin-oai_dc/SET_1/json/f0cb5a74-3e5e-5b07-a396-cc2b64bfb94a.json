@@ -1,0 +1,56 @@
+{
+    "Contributor": [
+        "Andersen, Gisle"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-368",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-368"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-368",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Norway"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-368;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;COLT \u2013 The Bergen Corpus of London Teenage Language;Andersen, Gisle;British English (London); Spoken, general, age-specific dialect corpus; 500 000 words, 55 hrs of recording; POS, speaker/conversation metainfo;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-368;eng;downloadable_files_count: 0;Norway;http://torvald.aksis.uib.no/colt/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f0cb5a74-3e5e-5b07-a396-cc2b64bfb94a",
+    "notes": [
+        "British English (London); Spoken, general, age-specific dialect corpus; 500 000 words, 55 hrs of recording; POS, speaker/conversation metainfo"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-368"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "COLT \u2013 The Bergen Corpus of London Teenage Language"
+    ],
+    "url": ""
+}

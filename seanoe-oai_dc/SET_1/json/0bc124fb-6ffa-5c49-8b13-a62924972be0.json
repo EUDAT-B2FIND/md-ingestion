@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/57249",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=0bc124fb-6ffa-5c49-8b13-a62924972be0",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-NC-SA"
+    ],
+    "SpatialCoverage": "(43N-43N,5 E-5 E)",
+    "TempCoverageBegin": 92414433599,
+    "TempCoverageEnd": 92414433599,
+    "TemporalCoverage": " point in time : 2929-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2929-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2929-07-01T11:59:59Z",
+    "author": [
+        "Lebreton, Benoit",
+        "Guillou, Ga\u00ebl",
+        "Belloni, Bruno",
+        "Harmelin-vivien, Mireille",
+        "Bouchoucha, Marc",
+        "Sartoretto, Stephane",
+        "Ruitton, Sandrine",
+        "Cresson, Pierre"
+    ],
+    "fulltext": "oai:seanoe.org:57249;2018-11-09;Food web structure of a mediterranean coralligenous ecosystem;Belloni, Bruno;Sartoretto, Stephane;Cresson, Pierre;Bouchoucha, Marc;Guillou, Ga\u00ebl;Lebreton, Benoit;Ruitton, Sandrine;Harmelin-vivien, Mireille;food webs;coralligenous ecosystem;stable isotopes;carbon;nitrogen;This dataset gather\u00a0isotope composition\u00a0measured on organisms collected in Cap Caveau (Marseille, France) by SCUBA diving\u00a0between 30 and 40 m depth from October to December 2015. A total of 78 compartments were analysed (76 taxa, POM and SOM). For each compartment or taxon, mean \u03b413C and \u03b415N values were calculated from 3 to 6 replicates.\u00a0Isotope compositions are expressed in parts per thousand (\u2030) according to the equation: \u03b4X = [(Rsample/Rstandard) \u2013 1] x 10^3, where X is 13C or 15N and R is the isotope ratio 13C/12C or 15N/14N, respectively\n;SEANOE;2018;dataset;DOI:10.17882/57249;http://dx.doi.org/10.17882/57249;North 43.292957, South 43.242959, East 5.342102, West 5.259705;http://www.seanoe.org/data/00461/57249/illustration.gif;43.242959 5.259705 43.292957 5.342102;CC-BY-NC-SA",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "0bc124fb-6ffa-5c49-8b13-a62924972be0",
+    "notes": [
+        "This dataset gather\u00a0isotope composition\u00a0measured on organisms collected in Cap Caveau (Marseille, France) by SCUBA diving\u00a0between 30 and 40 m depth from October to December 2015. A total of 78 compartments were analysed (76 taxa, POM and SOM). For each compartment or taxon, mean \u03b413C and \u03b415N values were calculated from 3 to 6 replicates.\u00a0Isotope compositions are expressed in parts per thousand (\u2030) according to the equation: \u03b4X = [(Rsample/Rstandard) \u2013 1] x 10^3, where X is 13C or 15N and R is the isotope ratio 13C/12C or 15N/14N, respectively\n"
+    ],
+    "oai_identifier": [
+        "0bc124fb-6ffa-5c49-8b13-a62924972be0"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[5.259705,43.242959],[5.259705,43.292957],[5.342102,43.292957],[5.342102,43.242959],[5.259705,43.242959]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "food webs"
+        },
+        {
+            "name": "coralligenous ecosystem"
+        },
+        {
+            "name": "stable isotopes"
+        },
+        {
+            "name": "carbon"
+        },
+        {
+            "name": "nitrogen"
+        }
+    ],
+    "title": [
+        "Food web structure of a mediterranean coralligenous ecosystem"
+    ],
+    "url": ""
+}

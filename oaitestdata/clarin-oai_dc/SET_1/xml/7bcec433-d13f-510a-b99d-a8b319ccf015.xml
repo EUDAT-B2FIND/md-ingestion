@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/21</identifier>
+    <datestamp>2016-01-21T14:37:33Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>NamEnSim</dc:title>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:description>NamEnSim (Named Entity Similarity Function) is a tool to evaluate the value of the word pair similarity, using heterogeneous named entity similarity function. This tool allows to get the value of similarity between unknown word and items from gazetteers (e.g. person first names, person last names, country names). NamEnSim can also extract multi-word named entities from the source text using similarity function. This tool supports named entities recognition task (NER), e.g. Liner2. In the named entities "base - form" matching task NamEnSim achieves the accuracy of 81-96% for the similarity function based on logistic regresion and 84-98% for the similarity function based on inflection rules (results depend on the named entity category).</dc:description>
+      <dc:date>2012-04-04</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/21</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/pl/narzedzia-i-zasoby/namensim</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

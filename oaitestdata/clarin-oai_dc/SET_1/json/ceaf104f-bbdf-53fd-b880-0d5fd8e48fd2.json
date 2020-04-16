@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Reymont"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/109",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/109"
+    ],
+    "PID": "http://hdl.handle.net/11321/109",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Reymont"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Reymont, Reymont"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/109;2015-04-08T14:13:31Z;hdl_11321_3;hdl_11321_4;MWE Reymont, Ch\u0142opi;Reymont, Reymont;Reymont;2015-04-08;corpus;http://hdl.handle.net/11321/109;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain; charset=utf-8;downloadable_files_count: 1;Reymont",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ceaf104f-bbdf-53fd-b880-0d5fd8e48fd2",
+    "notes": [
+        "Reymont"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/109"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE Reymont, Ch\u0142opi"
+    ],
+    "url": ""
+}

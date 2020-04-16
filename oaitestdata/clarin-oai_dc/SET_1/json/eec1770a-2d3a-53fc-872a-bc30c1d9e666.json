@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "A"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1755",
+    "MetadataAccess": [
+        "oai:ota:oucs:1755"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Conrad, Joseph"
+    ],
+    "fulltext": "oai:ota:oucs:1755;2018-04-16T15:30:51Z;http://ota.ox.ac.uk/headers/1755.xml;The secret sharer;Conrad, Joseph;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;A;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "eec1770a-2d3a-53fc-872a-bc30c1d9e666",
+    "oai_identifier": [
+        "oai:ota:oucs:1755"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The secret sharer"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1755.xml"
+}

@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Czech",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1713",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1713"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1713",
+    "PublicationTimestamp": "2016-06-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Strakov\u00e1, Jana",
+        "Haji\u010d, Jan, jr.",
+        "Cinkov\u00e1, Silvie",
+        "Haji\u010d, Jakub",
+        "Janou\u0161kov\u00e1, Jolana",
+        "Haji\u010d, Jan",
+        "Straka, Milan",
+        "Ure\u0161ov\u00e1, Miroslava"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1713;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;WordSim353-cs: Evaluation Dataset for Lexical Similarity and Relatedness, based on WordSim353;Cinkov\u00e1, Silvie;Strakov\u00e1, Jana;Haji\u010d, Jakub;Haji\u010d, Jan;Haji\u010d, Jan, jr.;Janou\u0161kov\u00e1, Jolana;Straka, Milan;Ure\u0161ov\u00e1, Miroslava;lexical semantics;similarity;relatedness;evaluation;distributional semantics;Czech translation of WordSim353. The Czech translation of English WordSim353 word pairs were obtained from four translators. All translation variants were scored according to the lexical similarity/relatedness annotation instructions for WordSim353 annotators, by 25 Czech annotators. The resulting data set consists of two annotation files: \"WordSim353-cs.csv\" and \"WordSim-cs-Multi.csv\". Both files are encoded in UTF-8, have a header, text is enclosed in double quotes, and columns are separated by commas. The rows are numbered. The WordSim-cs-Multi data set has rows numbered from 1 to 634, whereas the row indices in the WordSim353-cs data set reflect the corresponding row numbers in the WordSim-cs-Multi data set.\r\n\r\nThe WordSim353-cs file contains a one-to-one mapping selection of 353 Czech equivalent pairs whose judgments have proven to be most similar to the judgments of their corresponding English originals (compared by the absolute value of the difference between the means over all annotators in each language counterpart). In one case (\"psychology-cognition\"), two Czech equivalent pairs had identical means as well as confidence intervals, so we randomly selected one. \r\n\r\nThe \"WordSim-cs-Multi.csv\" file contains human judgments for all translation variants. \r\n\r\nIn both data sets, we preserved all 25 individual scores. In the WordSim353-cs data set, we added a column with their Czech means as well as a column containing the original English means and 95% confidence intervals in separate columns for each mean (computed by the CI function in the Rmisc R package). The WordSim-cs-Multi data set contains only the Czech means and confidence intervals. For the most convenient lexical search, we provided separate columns with the respective Czech and English single words, entire word pairs, and eventually an English-Czech quadruple in both data sets.\r\n\r\nThe data set also contains an xls table with the four translations and a preliminary selection of the best variants performed by an adjudicator.;2016-06-01;lexicalConceptualResource;http://hdl.handle.net/11234/1-1713;ces;eng;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/wordsim353-cs",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6231a488-3adb-5b0c-93fc-ac45aae72b59",
+    "notes": [
+        "Czech translation of WordSim353. The Czech translation of English WordSim353 word pairs were obtained from four translators. All translation variants were scored according to the lexical similarity/relatedness annotation instructions for WordSim353 annotators, by 25 Czech annotators. The resulting data set consists of two annotation files: \"WordSim353-cs.csv\" and \"WordSim-cs-Multi.csv\". Both files are encoded in UTF-8, have a header, text is enclosed in double quotes, and columns are separated by commas. The rows are numbered. The WordSim-cs-Multi data set has rows numbered from 1 to 634, whereas the row indices in the WordSim353-cs data set reflect the corresponding row numbers in the WordSim-cs-Multi data set.\r\n\r\nThe WordSim353-cs file contains a one-to-one mapping selection of 353 Czech equivalent pairs whose judgments have proven to be most similar to the judgments of their corresponding English originals (compared by the absolute value of the difference between the means over all annotators in each language counterpart). In one case (\"psychology-cognition\"), two Czech equivalent pairs had identical means as well as confidence intervals, so we randomly selected one. \r\n\r\nThe \"WordSim-cs-Multi.csv\" file contains human judgments for all translation variants. \r\n\r\nIn both data sets, we preserved all 25 individual scores. In the WordSim353-cs data set, we added a column with their Czech means as well as a column containing the original English means and 95% confidence intervals in separate columns for each mean (computed by the CI function in the Rmisc R package). The WordSim-cs-Multi data set contains only the Czech means and confidence intervals. For the most convenient lexical search, we provided separate columns with the respective Czech and English single words, entire word pairs, and eventually an English-Czech quadruple in both data sets.\r\n\r\nThe data set also contains an xls table with the four translations and a preliminary selection of the best variants performed by an adjudicator."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1713"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "lexical semantics"
+        },
+        {
+            "name": "similarity"
+        },
+        {
+            "name": "relatedness"
+        },
+        {
+            "name": "evaluation"
+        },
+        {
+            "name": "distributional semantics"
+        }
+    ],
+    "title": [
+        "WordSim353-cs: Evaluation Dataset for Lexical Similarity and Relatedness, based on WordSim353"
+    ],
+    "url": ""
+}

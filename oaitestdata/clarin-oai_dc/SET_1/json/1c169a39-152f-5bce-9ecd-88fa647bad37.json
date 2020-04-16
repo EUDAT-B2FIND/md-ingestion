@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4709",
+    "MetadataAccess": [
+        "oai:ota:oucs:4709"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hume, David, 1711-1776."
+    ],
+    "fulltext": "oai:ota:oucs:4709;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4709.xml;The history of England: under the House of Tudor. ... By David Hume, Esq; In two volumes. ... [pt.1];Hume, David, 1711-1776.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1c169a39-152f-5bce-9ecd-88fa647bad37",
+    "oai_identifier": [
+        "oai:ota:oucs:4709"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The history of England: under the House of Tudor. ... By David Hume, Esq; In two volumes. ... [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4709.xml"
+}

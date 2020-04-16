@@ -1,0 +1,183 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-477</identifier>
+    <datestamp>2019-12-05T01:00:01Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>Supplementary material for 'Olefin metathesis in confined geometries: a biomimetic approach towards selective macrocyclization'</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-477</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-04</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-12-04" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>Kraus, Hamzeh; Rybka, Julia, 2019, "Supplementary material for 'Olefin metathesis in confined geometries: a biomimetic approach towards selective macrocyclization'", https://doi.org/10.18419/darus-477, DaRUS, V1</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>Supplementary material for 'Olefin metathesis in confined geometries: a biomimetic approach towards selective macrocyclization'</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-477</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Kraus, Hamzeh</AuthEnty>
+            <AuthEnty affiliation="Philipps-Universit&#228;t Marburg">Rybka, Julia</AuthEnty>
+          </rspStmt>
+          <prodStmt>
+            <grantNo agency="Deutsche Forschungsgemeinschaft">358283783 - SFB 1333</grantNo>
+            <grantNo agency="Deutsche Forschungsgemeinschaft">TA 268/11-1</grantNo>
+            <grantNo agency="Ministerium f&#252;r Wissenschaft, Forschung und Kunst Baden-W&#252;rttemberg">TA 268/11-1</grantNo>
+          </prodStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-04</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Chemistry</keyword>
+          </subject>
+          <abstract>This dataset contains simulation input files in GROMACS format accompanying the mentioned publication.&#13;
+Structure, topology and simulation parameter-files are provided for two simulations - an unmodified pore with a silanol surface and a modified pore with an unpolar DMDMS surface. Furthermore each pore has two catalytic centers placed point-symmetrical towards each other.&#13;
+The simulation is divided in three steps, an energy-minimization, an NVT equilibration and finally the NVT production simulation run.</abstract>
+          <sumDscr>
+            <dataKind>Input files for molecular dynamics simulations with GROMACS.</dataKind>
+          </sumDscr>
+          <relPubl>Ziegler, Felix; Teske, Johannes; Elser, Iris; Dyballa, Michael; Frey, Wolfgang; Kraus, Hamzeh; Hansen, Niels; Rybka, Julia; Tallarek, Ulrich; Buchmeiser, Michael R (2019): Olefin Metathesis in Confined Geometries: A Biomimetic Approach toward Selective Macrocyclization. In: Journal of the American Chemical Society., doi, 10.1021/jacs.9b08776, https://doi.org/10.1021/jacs.9b08776</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">Kraus, Hamzeh</contact>
+          <depositr>Kraus, Hamzeh</depositr>
+          <depDate>2019-10-15</depDate>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f523" URI="https://doi.org/10.18419/darus-477/22" level="datafile">
+        <labl>benzene.gro</labl>
+        <txt>Cartesian coordinates of a single benzene molecule in .gro format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f534" URI="https://doi.org/10.18419/darus-477/33" level="datafile">
+        <labl>benzene.itp</labl>
+        <txt>Topology file of a benzene molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f524" URI="https://doi.org/10.18419/darus-477/23" level="datafile">
+        <labl>box_modified.gro</labl>
+        <txt>Cartesian coordinates of the simulation box of the modified pore in .gro format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f521" URI="https://doi.org/10.18419/darus-477/20" level="datafile">
+        <labl>box_unmodified.gro</labl>
+        <txt>Cartesian coordinates of the simulation box of the unmodified pore in .gro format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f536" URI="https://doi.org/10.18419/darus-477/35" level="datafile">
+        <labl>catabmg.itp</labl>
+        <txt>Topology file of a geminal catalyst surface molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f538" URI="https://doi.org/10.18419/darus-477/37" level="datafile">
+        <labl>catabm.itp</labl>
+        <txt>Topology file of a catalyst surface molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f540" URI="https://doi.org/10.18419/darus-477/39" level="datafile">
+        <labl>dmdmsg.itp</labl>
+        <txt>Topology file of a geminal DMDMS surface molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f537" URI="https://doi.org/10.18419/darus-477/36" level="datafile">
+        <labl>dmdms.itp</labl>
+        <txt>Topology file of a DMDMS surface molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f522" URI="https://doi.org/10.18419/darus-477/21" level="datafile">
+        <labl>eductl.gro</labl>
+        <txt>Cartesian coordinates of a single substrate molecule in .gro format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f532" URI="https://doi.org/10.18419/darus-477/31" level="datafile">
+        <labl>eductl.itp</labl>
+        <txt>Topology file of a Substrate molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f533" URI="https://doi.org/10.18419/darus-477/32" level="datafile">
+        <labl>grid_modified.itp</labl>
+        <txt>Topology file of all used grid-molecules of the modified pore in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f539" URI="https://doi.org/10.18419/darus-477/38" level="datafile">
+        <labl>grid_unmodified.itp</labl>
+        <txt>Topology file of all used grid-molecules of the unmodified pore in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f520" URI="https://doi.org/10.18419/darus-477/19" level="datafile">
+        <labl>index_modified.ndx</labl>
+        <txt>Index file of the simulation box of the modified pore in .ndx format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f519" URI="https://doi.org/10.18419/darus-477/18" level="datafile">
+        <labl>index_unmodified.ndx</labl>
+        <txt>Index file of the simulation box of the unmodified pore in .ndx format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f525" URI="https://doi.org/10.18419/darus-477/24" level="datafile">
+        <labl>min.mdp</labl>
+        <txt>Simulation parameter file of the energy-minimization step in .mdp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f526" URI="https://doi.org/10.18419/darus-477/25" level="datafile">
+        <labl>nvt.mdp</labl>
+        <txt>Simulation parameter file of the equilibration step in .mdp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f518" URI="https://doi.org/10.18419/darus-477/17" level="datafile">
+        <labl>productmmc.gro</labl>
+        <txt>Cartesian coordinates of a single product molecule in .gro format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f529" URI="https://doi.org/10.18419/darus-477/28" level="datafile">
+        <labl>productmmc.itp</labl>
+        <txt>Topology file of a Product molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f527" URI="https://doi.org/10.18419/darus-477/26" level="datafile">
+        <labl>run.mdp</labl>
+        <txt>Simulation parameter file of the production step in .mdp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f530" URI="https://doi.org/10.18419/darus-477/29" level="datafile">
+        <labl>silylg.itp</labl>
+        <txt>Topology file of a geminal TMS surface molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f535" URI="https://doi.org/10.18419/darus-477/34" level="datafile">
+        <labl>silyl.itp</labl>
+        <txt>Topology file of a TMS surface molecule in .itp format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.shana.informed.formtemplate</notes>
+      </otherMat>
+      <otherMat ID="f531" URI="https://doi.org/10.18419/darus-477/30" level="datafile">
+        <labl>topol_modified.top</labl>
+        <txt>Main topology file of the simulation box of the modified pore in .top format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f528" URI="https://doi.org/10.18419/darus-477/27" level="datafile">
+        <labl>topol_unmodified.top</labl>
+        <txt>Main topology file of the simulation box of the unmodified pore in .top format</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

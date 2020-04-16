@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Charles University in Prague, \u00da\u010cJTK"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-3FBB-3",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-3FBB-3"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-3FBB-3",
+    "PublicationTimestamp": "2013-12-18T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Charles University in Prague, \u00da\u010cJTK"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0019-89A0-9"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Gol\u00e1\u0148ov\u00e1, Hana",
+        "\u0160ebesta, Karel"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-3FBB-3;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;AKCES 2 ver. 2;\u0160ebesta, Karel;Gol\u00e1\u0148ov\u00e1, Hana;youth language;classroom;language acquisition corpus;AKCES;Corpus AKCES 2 ver. 2 consists of full, unabridged trancripts of recordings of classes at Czech elementary and secondary schools (AKCES/CLAC - Czech Language Acquisition Corpora). It is the same data as the corpus \"Schola 2010\" (see the link for search), but all the proper names have been removed in order to protect the privacy of participants.;2013-12-18;corpus;http://hdl.handle.net/11858/00-097C-0000-0023-3FBB-3;ces;http://hdl.handle.net/11858/00-097C-0000-0019-89A0-9;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University in Prague, \u00da\u010cJTK;http://akces.ff.cuni.cz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0f2fe858-6192-5a58-ae2d-f1f9d4f7e03d",
+    "notes": [
+        "Corpus AKCES 2 ver. 2 consists of full, unabridged trancripts of recordings of classes at Czech elementary and secondary schools (AKCES/CLAC - Czech Language Acquisition Corpora). It is the same data as the corpus \"Schola 2010\" (see the link for search), but all the proper names have been removed in order to protect the privacy of participants."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-3FBB-3"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "youth language"
+        },
+        {
+            "name": "classroom"
+        },
+        {
+            "name": "language acquisition corpus"
+        },
+        {
+            "name": "AKCES"
+        }
+    ],
+    "title": [
+        "AKCES 2 ver. 2"
+    ],
+    "url": ""
+}

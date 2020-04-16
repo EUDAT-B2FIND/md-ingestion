@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Greg, W.W. (Walter Wilson), 1875-1959",
+        "Lancashire, Ian"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 118 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1343",
+    "MetadataAccess": [
+        "oai:ota:oucs:1343"
+    ],
+    "PublicationTimestamp": "1553-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1553"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Udall, Nicholas, 1505-1556"
+    ],
+    "fulltext": "oai:ota:oucs:1343;2018-04-26T12:27:17Z;http://ota.ox.ac.uk/headers/1343.xml;Respublica : an interlude for Christmas 1553 / Nicholas Udall;Udall, Nicholas, 1505-1556;1553;text_and_corpus_linguistics;English drama -- 16th century;eng;Oxford Text Archive, University of Oxford;Greg, W.W. (Walter Wilson), 1875-1959;Lancashire, Ian;(1 file : ca. 118 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "56dddd0c-f219-5b94-a51d-5c60029de65d",
+    "oai_identifier": [
+        "oai:ota:oucs:1343"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "Respublica : an interlude for Christmas 1553 / Nicholas Udall"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1343.xml"
+}

@@ -1,0 +1,56 @@
+{
+    "Contributor": [
+        "Jakopin, Primoz"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-552",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-552"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-552",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Slovenia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-552;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Assigning lemmas and part-of-speech to wordform lists;Jakopin, Primoz;online service;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-552;slv;downloadable_files_count: 0;Slovenia;http://bos.zrc-sazu.si/dol_lem.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "51b55353-42e9-5319-954b-178a03f86312",
+    "notes": [
+        "online service"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-552"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Assigning lemmas and part-of-speech to wordform lists"
+    ],
+    "url": ""
+}

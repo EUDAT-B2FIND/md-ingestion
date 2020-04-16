@@ -1,0 +1,43 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15479/AT:ISTA:43",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "archive"
+    ],
+    "MetaDataAccess": "http://datarep.app.ist.ac.at/cgi/oai2?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datarep.app.ist.ac.at:43",
+    "RelatedIdentifier": [
+        "https://datarep.app.ist.ac.at/43/"
+    ],
+    "ResourceType": [
+        "Data Collection"
+    ],
+    "author": [
+        "Tugrul, Murat"
+    ],
+    "fulltext": "oai:datarep.app.ist.ac.at:43;2017-03-30T14:30:20Z;Experimental Data for Binding Site Evolution of Bacterial RNA Polymerase;Tugrul, Murat;576 Genetics and evolution;The data stored here is used in Murat Tugrul's PhD thesis (Chapter 3), which is related to the evolution of bacterial RNA polymerase binding.\r\nMagdalena Steinrueck (PhD Student in Calin Guet's group at IST Austria) performed the experiments and created the data on de novo promoter evolution. Fabienne Jesse (PhD Student in Jon Bollback's group at IST Austria) performed the experiments and created the data on lac promoter evolution.;Data Collection;NonPeerReviewed;archive;https://datarep.app.ist.ac.at/43/;https://datarep.app.ist.ac.at/43/1/DATA_MTugrul_PhDThesis_Chapter3.zip;  Tugrul, Murat   Experimental Data for Binding Site Evolution of Bacterial RNA Polymerase.  [Data Collection]     ;10.15479/AT:ISTA:43",
+    "group": "ist",
+    "groups": [
+        {
+            "name": "ist"
+        }
+    ],
+    "name": "027c6c25-78cc-56e8-a3e5-85bf0d4109a5",
+    "notes": [
+        "The data stored here is used in Murat Tugrul's PhD thesis (Chapter 3), which is related to the evolution of bacterial RNA polymerase binding.\r\nMagdalena Steinrueck (PhD Student in Calin Guet's group at IST Austria) performed the experiments and created the data on de novo promoter evolution. Fabienne Jesse (PhD Student in Jon Bollback's group at IST Austria) performed the experiments and created the data on lac promoter evolution."
+    ],
+    "oai_identifier": [
+        "oai:datarep.app.ist.ac.at:43"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Genetics evolution"
+        }
+    ],
+    "title": [
+        "Experimental Data for Binding Site Evolution of Bacterial RNA Polymerase"
+    ],
+    "url": "https://datarep.app.ist.ac.at/43/1/DATA_MTugrul_PhDThesis_Chapter3.zip"
+}

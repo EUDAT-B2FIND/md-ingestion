@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Department of Baltic Languages, University of Latvia",
+        "Institute of Mathematics and Computer Science, University of Latvia"
+    ],
+    "Contributor": [
+        "Andronova, Everita"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Latvian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-360",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-360"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-360",
+    "PublicationTimestamp": "2009-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Department of Baltic Languages, University of Latvia",
+        "Institute of Mathematics and Computer Science, University of Latvia"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Latvia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-360;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;SENIE;Andronova, Everita;diachronic corpus;Diachronic Corpus of Early Written Latvian Texts (16-18th c.). > 1 mill. running words (work is on-going). The main data are ecclesiastical texts, secular texts (laws, fiction) and some first bilingual (Latvian-German) dictionaries. A KWIC-based concordancer, as well as inverse vocabulary, frequency lists and word lists are provided. Some source facsimiles are available.;2009;corpus;http://hdl.handle.net/11372/LRT-360;lav;application/octet-stream;downloadable_files_count: 0;Latvia;Department of Baltic Languages, University of Latvia;Institute of Mathematics and Computer Science, University of Latvia;http://www.korpuss.lv/senie",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ca525652-2a43-56a7-bf1b-69cd6b58b771",
+    "notes": [
+        "Diachronic Corpus of Early Written Latvian Texts (16-18th c.). > 1 mill. running words (work is on-going). The main data are ecclesiastical texts, secular texts (laws, fiction) and some first bilingual (Latvian-German) dictionaries. A KWIC-based concordancer, as well as inverse vocabulary, frequency lists and word lists are provided. Some source facsimiles are available."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-360"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "diachronic corpus"
+        }
+    ],
+    "title": [
+        "SENIE"
+    ],
+    "url": ""
+}

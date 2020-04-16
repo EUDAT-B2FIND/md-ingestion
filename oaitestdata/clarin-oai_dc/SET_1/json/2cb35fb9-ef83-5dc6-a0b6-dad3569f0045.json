@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3638",
+    "MetadataAccess": [
+        "oai:ota:oucs:3638"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Paley, William, 1743-1805."
+    ],
+    "fulltext": "oai:ota:oucs:3638;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3638.xml;Advice addressed to the young clergy of the diocese of Carlisle: in a sermon, preached ... on Sunday, July 29th, 1781. By William Paley, ...;Paley, William, 1743-1805.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2cb35fb9-ef83-5dc6-a0b6-dad3569f0045",
+    "oai_identifier": [
+        "oai:ota:oucs:3638"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Advice addressed to the young clergy of the diocese of Carlisle: in a sermon, preached ... on Sunday, July 29th, 1781. By William Paley, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3638.xml"
+}

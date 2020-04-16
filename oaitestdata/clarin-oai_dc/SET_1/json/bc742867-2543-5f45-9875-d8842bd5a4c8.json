@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/286",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/286"
+    ],
+    "PID": "http://hdl.handle.net/11321/286",
+    "PublicationTimestamp": "2016-04-25T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Oleksy, Marcin",
+        "Wieczorek, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/286;2016-06-03T14:17:54Z;hdl_11321_3;hdl_11321_4;NE_SUMO_PLWN_mapping;Wieczorek, Jan;Oleksy, Marcin;named entities;SUMO;plWordNet;Mapping between named entities types, SUMO catagories and plWordNet synsets;2016-04-25;lexicalConceptualResource;http://hdl.handle.net/11321/286;pol;eng;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bc742867-2543-5f45-9875-d8842bd5a4c8",
+    "notes": [
+        "Mapping between named entities types, SUMO catagories and plWordNet synsets"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/286"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "named entities"
+        },
+        {
+            "name": "SUMO"
+        },
+        {
+            "name": "plWordNet"
+        }
+    ],
+    "title": [
+        "NE_SUMO_PLWN_mapping"
+    ],
+    "url": ""
+}

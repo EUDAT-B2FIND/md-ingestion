@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4310",
+    "MetadataAccess": [
+        "oai:ota:oucs:4310"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dennis, John, 1657-1734."
+    ],
+    "fulltext": "oai:ota:oucs:4310;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4310.xml;The characters and conduct of Sir John Edgar: and his three deputy-governours. During the adminstration of the late separate ministry. In a third and fourth letter to the Knight. With a picture of Sir John, drawn by a pen, exactly after the life.;Dennis, John, 1657-1734.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "139c0319-1799-5fb4-8019-d64fee78b328",
+    "oai_identifier": [
+        "oai:ota:oucs:4310"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The characters and conduct of Sir John Edgar: and his three deputy-governours. During the adminstration of the late separate ministry. In a third and fourth letter to the Knight. With a picture of Sir John, drawn by a pen, exactly after the life."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4310.xml"
+}

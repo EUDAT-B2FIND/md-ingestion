@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f8dd0332e6d911e6a2aa782bcb074135a226cf379cf746a8976dd3420f5a2813",
+    "MetadataAccess": [
+        "f8dd0332e6d911e6a2aa782bcb074135a226cf379cf746a8976dd3420f5a2813"
+    ],
+    "PublicationTimestamp": "2017-01-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "fulltext": "f8dd0332e6d911e6a2aa782bcb074135a226cf379cf746a8976dd3420f5a2813;2018-11-15T16:40:25Z;corpus;corpus:text;LX-Rare Word Similarity Dataset;The LX-Rare Word Similarity Data set was created from Stanford Rare Word (RW) Similarity data set (Luong et al., 2013). This list contains 2 034 words (1 017 pairs of words). All the words were extracted from Wikipedia and from WordNet (Miller, 1995), a lexical database where the concepts are grouped into sets of synonyms.\nThe construction of this list followed this procedure: a) firstly, a list of rare words was selected from Wikipedia, b) after that, each rare word was paired with a related word picked from WordNet. Rare words are those words that have between 5 000 to 10 000 occurrences in Wikipedia.\nIn the end, the result was a set of word pairs in which one of the words is rare and the other one, which can be rare or not, is related to the first word by some WordNet relation - it can be an hyponym, hyperonym, meronym, holonym or attribute of the former.;2017-01-30",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e0d086a9-990e-52b0-adf4-e97bd17ecf60",
+    "notes": [
+        "The LX-Rare Word Similarity Data set was created from Stanford Rare Word (RW) Similarity data set (Luong et al., 2013). This list contains 2 034 words (1 017 pairs of words). All the words were extracted from Wikipedia and from WordNet (Miller, 1995), a lexical database where the concepts are grouped into sets of synonyms.\nThe construction of this list followed this procedure: a) firstly, a list of rare words was selected from Wikipedia, b) after that, each rare word was paired with a related word picked from WordNet. Rare words are those words that have between 5 000 to 10 000 occurrences in Wikipedia.\nIn the end, the result was a set of word pairs in which one of the words is rare and the other one, which can be rare or not, is related to the first word by some WordNet relation - it can be an hyponym, hyperonym, meronym, holonym or attribute of the former."
+    ],
+    "oai_identifier": [
+        "f8dd0332e6d911e6a2aa782bcb074135a226cf379cf746a8976dd3420f5a2813"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "LX-Rare Word Similarity Dataset"
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Faculty of Humanities and Social Sciences, University of Zagreb"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Serbian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1066",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1066"
+    ],
+    "PID": "http://hdl.handle.net/11356/1066",
+    "PublicationTimestamp": "2016-06-23T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Faculty of Humanities and Social Sciences, University of Zagreb"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/324414",
+        "http://hdl.handle.net/11356/1057",
+        "http://hdl.handle.net/11356/1073"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "GNU General Public Licence, version 3",
+        "http://opensource.org/licenses/GPL-3.0",
+        "PUB"
+    ],
+    "author": [
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1066;2017-06-27T18:10:07Z;hdl_11356_1023;hdl_11356_1024;Inflectional lexicon srLex 1.1;Ljube\u0161i\u0107, Nikola;lexicon;morphology;inflection;srLex is a large inflectional lexicon of Serbian language where each entry consists of a (wordform, lemma, MSD, frequency, per-million frequency) 5-tuple. The (wordform, lemma, MSD) triple frequencies are calculated on the srWaC v1.2 corpus. The MSD tagset follows the MULTEXT-East V5 tagset for Bosnian available at http://nl.ijs.si/ME/V5/msd/html/msd-bs.html.;2016-06-23;lexicalConceptualResource;http://hdl.handle.net/11356/1066;srp;info:eu-repo/grantAgreement/EC/FP7/324414;http://hdl.handle.net/11356/1057;http://hdl.handle.net/11356/1073;GNU General Public Licence, version 3;http://opensource.org/licenses/GPL-3.0;PUB;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Faculty of Humanities and Social Sciences, University of Zagreb;http://nlp.ffzg.hr/resources/lexicons/srlex/ \u200e",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b3199b22-a94d-5ec0-a698-6fca67ff8a12",
+    "notes": [
+        "srLex is a large inflectional lexicon of Serbian language where each entry consists of a (wordform, lemma, MSD, frequency, per-million frequency) 5-tuple. The (wordform, lemma, MSD) triple frequencies are calculated on the srWaC v1.2 corpus. The MSD tagset follows the MULTEXT-East V5 tagset for Bosnian available at http://nl.ijs.si/ME/V5/msd/html/msd-bs.html."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1066"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "lexicon"
+        },
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "inflection"
+        }
+    ],
+    "title": [
+        "Inflectional lexicon srLex 1.1"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5228",
+    "MetadataAccess": [
+        "oai:ota:oucs:5228"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sharp, Granville, 1735-1813."
+    ],
+    "fulltext": "oai:ota:oucs:5228;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5228.xml;A tract on duelling: wherein the opinions of some of the most celebrated writers on crown law are examined and corrected ... in order to ascertain the due distinction between manslaughter and murder. By Granville Sharp.;Sharp, Granville, 1735-1813.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "06288e49-658c-5e86-93a8-87651e1e54f0",
+    "oai_identifier": [
+        "oai:ota:oucs:5228"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A tract on duelling: wherein the opinions of some of the most celebrated writers on crown law are examined and corrected ... in order to ascertain the due distinction between manslaughter and murder. By Granville Sharp."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5228.xml"
+}

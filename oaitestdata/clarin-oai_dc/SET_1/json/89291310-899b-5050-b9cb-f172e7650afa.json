@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4609",
+    "MetadataAccess": [
+        "oai:ota:oucs:4609"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gray, Thomas, 1716-1771."
+    ],
+    "fulltext": "oai:ota:oucs:4609;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4609.xml;Designs by Mr. R. Bentley, for six poems by Mr. T. Gray;Gray, Thomas, 1716-1771.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "89291310-899b-5050-b9cb-f172e7650afa",
+    "oai_identifier": [
+        "oai:ota:oucs:4609"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Designs by Mr. R. Bentley, for six poems by Mr. T. Gray"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4609.xml"
+}

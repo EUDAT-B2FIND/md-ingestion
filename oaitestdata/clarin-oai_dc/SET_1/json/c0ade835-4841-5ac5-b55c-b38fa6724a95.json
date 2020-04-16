@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/gzip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/577",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/577"
+    ],
+    "PID": "http://hdl.handle.net/11321/577",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "BSD 2 Clause",
+        "https://opensource.org/licenses/BSD-2-Clause",
+        "PUB"
+    ],
+    "author": [
+        "Woli\u0144ski, Marcin"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/577;2018-07-26T14:20:02Z;hdl_11321_3;hdl_11321_4;Polimorf;Woli\u0144ski, Marcin;inflection;dictionary;PoliMorf is a morphological dictionary for Polish resulting from the standardization and merger of Morfeusz SGJP and Morfologik.  The present version includes extended information on proper names.;2018;languageDescription;http://hdl.handle.net/11321/577;pol;BSD 2 Clause;https://opensource.org/licenses/BSD-2-Clause;PUB;text/plain; charset=utf-8;application/gzip;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences;http://sgjp.pl/morfeusz/dopobrania.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c0ade835-4841-5ac5-b55c-b38fa6724a95",
+    "notes": [
+        "PoliMorf is a morphological dictionary for Polish resulting from the standardization and merger of Morfeusz SGJP and Morfologik.  The present version includes extended information on proper names."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/577"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "inflection"
+        },
+        {
+            "name": "dictionary"
+        }
+    ],
+    "title": [
+        "Polimorf"
+    ],
+    "url": ""
+}

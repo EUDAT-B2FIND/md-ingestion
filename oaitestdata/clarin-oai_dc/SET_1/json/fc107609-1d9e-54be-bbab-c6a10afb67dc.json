@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "ENS de Lyon - CNRS, ICAR Laboratory",
+        "Universit\u00e9 de Franche-Compt\u00e9, laboratoire ELLIADD (Edition, Litt\u00e9ratures, Langages, Informatique, Arts, Didactique, Discours)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2382",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2382"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2382",
+    "PublicationTimestamp": "2016-06-21T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "ENS de Lyon - CNRS, ICAR Laboratory",
+        "Universit\u00e9 de Franche-Compt\u00e9, laboratoire ELLIADD (Edition, Litt\u00e9ratures, Langages, Informatique, Arts, Didactique, Discours)"
+    ],
+    "RelatedIdentifier": [
+        "https://halshs.archives-ouvertes.fr/halshs-00549764/en"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Heiden, Serge"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2382;2017-09-11T13:58:37Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;TXM;Heiden, Serge;textometry;xml;tei;nlp;cqp;r;textual data analysis;statistical text analysis;text mining;concordance;TXM is a free and open-source cross-platform Unicode & XML based text/corpus analysis environment and graphical client, supporting Windows, Linux and Mac OS X. It can also be used online as a J2EE standard compliant web portal (GWT based) with access control built in.;2016-06-21;toolService;http://hdl.handle.net/11372/LRT-2382;https://halshs.archives-ouvertes.fr/halshs-00549764/en;downloadable_files_count: 0;ENS de Lyon - CNRS, ICAR Laboratory;Universit\u00e9 de Franche-Compt\u00e9, laboratoire ELLIADD (Edition, Litt\u00e9ratures, Langages, Informatique, Arts, Didactique, Discours);http://textometrie.ens-lyon.fr/?lang=en",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fc107609-1d9e-54be-bbab-c6a10afb67dc",
+    "notes": [
+        "TXM is a free and open-source cross-platform Unicode & XML based text/corpus analysis environment and graphical client, supporting Windows, Linux and Mac OS X. It can also be used online as a J2EE standard compliant web portal (GWT based) with access control built in."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2382"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "textometry"
+        },
+        {
+            "name": "xml"
+        },
+        {
+            "name": "tei"
+        },
+        {
+            "name": "nlp"
+        },
+        {
+            "name": "cqp"
+        },
+        {
+            "name": "textual data analysis"
+        },
+        {
+            "name": "statistical text analysis"
+        },
+        {
+            "name": "text mining"
+        },
+        {
+            "name": "concordance"
+        }
+    ],
+    "title": [
+        "TXM"
+    ],
+    "url": ""
+}

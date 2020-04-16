@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/13</identifier>
+    <datestamp>2016-01-21T14:26:56Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Inforex</dc:title>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:creator>Marcin, Ptak</dc:creator>
+      <dc:creator>Kaczmarek, Adam</dc:creator>
+      <dc:description>Inforex is a web-based system designed for managing and annotating text corpora on the semantic level including annotation of Named Entities (NE), anaphora, Word Sense Disambiguation (WSD) and relations between named entities. The system also supports manual text clean-up and automatic text pre-processing including text segmentation, morphosyntactic analysis and word selection for WSD annotation.</dc:description>
+      <dc:date>2010-07-19</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/13</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/inforex/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

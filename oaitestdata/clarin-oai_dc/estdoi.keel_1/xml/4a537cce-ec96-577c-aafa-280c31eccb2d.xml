@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:14560423</identifier>
+    <datestamp>2019-02-04T14:07:16Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Sketch Engine eesti keele &#245;ppijale (etSkELL)</dc:title>
+      <dc:title xml:lang="en">Sketch Engine for Estonian Language Learning (etSkELL)</dc:title>
+      <dc:creator>Kallas, Jelena</dc:creator>
+      <dc:creator>Koppel, Kristina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-03-26</dc:date>
+      <dc:date>Updated: 2018-03-26</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-071EEL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">etSkELL on automaatselt loodud keele&#245;ppekeskkond, mille alus on Eesti keele &#245;ppekorpus 2018. Korpus sisaldab umbes 25 miljonit lauset ja 250 miljonit s&#245;na. Laused on p&#228;rit erinevatest meedia-, ilukirjandus- ja teadustekstidest ning eestikeelsest Vikipeediast ja Eesti keele A1-C1 &#245;pikute korpusest 2018.
+etSkELL arendati v&#228;lja Eesti Keele Instituudi ja Lexical Computing Ltd. koost&#246;&#246;s.
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

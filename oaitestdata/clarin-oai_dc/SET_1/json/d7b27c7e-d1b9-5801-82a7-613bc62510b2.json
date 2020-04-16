@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5226",
+    "MetadataAccess": [
+        "oai:ota:oucs:5226"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Farmer, Richard, 1735-1797."
+    ],
+    "fulltext": "oai:ota:oucs:5226;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5226.xml;An essay on the learning of Shakespeare: addressed to Joseph Cradock, Esq; The second edition, with large additions. By Richard Farmer, ...;Farmer, Richard, 1735-1797.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d7b27c7e-d1b9-5801-82a7-613bc62510b2",
+    "oai_identifier": [
+        "oai:ota:oucs:5226"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An essay on the learning of Shakespeare: addressed to Joseph Cradock, Esq; The second edition, with large additions. By Richard Farmer, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5226.xml"
+}

@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Olsen, Bengt"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : total of ca. 361 KB)"
+    ],
+    "Language": [
+        "Latvian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0287",
+    "MetadataAccess": [
+        "oai:ota:oucs:0287"
+    ],
+    "PublicationTimestamp": "1964-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1964"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Folklore",
+        "Anthologies"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:0287;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0287.xml;Latvian folksong corpus;1964-1974;text_and_corpus_linguistics;Folk-songs, Latvian;Folklore -- Latvia;Linguistic analysis (Linguistics);lav;Oxford Text Archive, University of Oxford;Olsen, Bengt;(1 file : total of ca. 361 KB);Text;Folklore;Anthologies;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bf5f73b8-897e-522a-88fc-6f34264662eb",
+    "oai_identifier": [
+        "oai:ota:oucs:0287"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Folk-songs"
+        },
+        {
+            "name": "Latvian"
+        },
+        {
+            "name": "Folklore -- Latvia"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        }
+    ],
+    "title": [
+        "Latvian folksong corpus"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0287.xml"
+}

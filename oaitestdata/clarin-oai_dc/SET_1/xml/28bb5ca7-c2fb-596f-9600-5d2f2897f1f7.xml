@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/347</identifier>
+    <datestamp>2017-04-25T14:09:27Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>New Gospels</dc:title>
+      <dc:creator>Winiarska, Izabela</dc:creator>
+      <dc:subject>old Polish</dc:subject>
+      <dc:description>Nowe Ateny</dc:description>
+      <dc:date>2017-04-25</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/347</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>University of Warsaw</dc:publisher>
+      <dc:source>http/www.us.edu.pl</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

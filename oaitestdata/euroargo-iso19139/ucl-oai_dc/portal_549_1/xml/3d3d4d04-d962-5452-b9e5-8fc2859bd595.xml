@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/11799609</identifier>
+    <datestamp>2020-02-07T14:09:37Z</datestamp>
+    <setSpec>category_428</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_3</setSpec>
+    <setSpec>month_year_02_2020</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Meta-analysis of Brief Intereventions -  GWG data (continious and binary)</dc:title>
+      <dc:creator>Andrea Smith (6781082)</dc:creator>
+      <dc:creator>Clare Llewellyn (6780629)</dc:creator>
+      <dc:creator>Helen Croker (6771818)</dc:creator>
+      <dc:creator>Alexandra Rhodes (7081646)</dc:creator>
+      <dc:creator>Kristiane Tommerup (7419866)</dc:creator>
+      <dc:subject>Medical and Health Sciences not elsewhere classified</dc:subject>
+      <dc:subject>Pregancy</dc:subject>
+      <dc:subject>obesity</dc:subject>
+      <dc:subject>behaviour change</dc:subject>
+      <dc:description>&lt;div&gt;Randomised and quasi-randomised controlled trials of brief lifestyle interventions delivered at any stage during pregnancy, and across the BMI spectrum, were included. Studies of that included pregnant women diagnosed with any complications that might affect diet or physical activity behaviours were excluded. Eligible interventions had to be &#8216;brief&#8217;, where the intervention could be delivered during a routine point of contact (face to face or via telephone) (Werch et al., 2006). An inclusive approach to study selection was taken. Interventions could be delivered over more than one point of contact if the duration was kept intentionally brief and could realistically be delivered within a national healthcare system, without requiring significant expansion of workforce or training. For one intervention where duration of contact between participants and the healthcare practitioner was unclear, the study was retained for the purpose of the review (Jeffries, Shub, Walker, Hiscock, &amp; Permezel, 2009). &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Comparator groups in the eligible trials needed to be a standard care control group. Interventions had to report on the effectiveness of changing energy balance behaviours (either diet, physical activity and/or weight monitoring behaviours) in pregnant women. The primary outcome of interest from the brief interventions was total GWG in kilograms, reported as the change in weight from first point of entry into the antenatal care pathway (i.e. baseline) to just before delivery (at variable time points in the third trimester). &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Meta-analyses were conducted on GWG as a continuous outcome (in kg) and as a binary outcome (proportion of pregnant women exceeding IOM GWG guidelines). Mean differences in total GWG in kilograms between the intervention and control groups were calculated for studies that reported continuous outcomes. In studies that compared the brief intervention to a more intense intervention group, only the comparison against standard care was taken forward for quantitative pooling. For all dichotomous outcomes, odds ratios for the likelihood of exceeding IOM-recommended GWG were calculated. Intention&#8211;to-treat data were used where reported by the individual studies. To estimate the overall pooled weighted mean effect size of the interventions, random effects models were chosen to allow for anticipated between-study variance (DerSimonian &amp; Laird, 1986). Subgroup analyses were conducted, comparing interventions for women who entered pregnancy with overweight or obesity (BMI &gt;25&#8201;kg/m2) compared to interventions delivered to women across the BMI spectrum. Further subgroup analyses by risk of bias and the brief intervention delivery strategy were also undertaken. &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;For meta-analysis, assessment of between-study heterogeneity was judged by the p-value for heterogeneity and calculation of the I2 value. Significance of subgroup and sensitivity analysis was judged by the p value for heterogeneity (Higgins &amp; Green, 2008).  P-values of &lt;0.05 were considered statistically significant. All statistical analyses were undertaken in Stata 15/SE (StataCorp, 2017). &lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;These are the datasets used for the meta-analysis.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;</dc:description>
+      <dc:date>2020-02-07T14:09:37Z</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:identifier>10.5522/04/11799609.v1</dc:identifier>
+      <dc:relation>https://figshare.com/articles/Meta-analysis_of_Brief_Intereventions_-_GWG_data_continious_and_binary_/11799609</dc:relation>
+      <dc:rights>CC0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

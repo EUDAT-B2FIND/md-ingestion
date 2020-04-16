@@ -1,0 +1,142 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17004052</identifier>
+    <datestamp>2018-10-23T19:32:05Z</datestamp>
+    <setSpec>INIST</setSpec>
+    <setSpec>INIST.ESRF</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.1/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.1/ http://schema.datacite.org/oai/oai-1.1/oai.xsd">
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>INIST.ESRF</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.15151/ESRF-ES-131846968</identifier>
+          <creators>
+            <creator>
+              <creatorName>Sebastien VIOLOT</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Vincent CHAPTAL</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Patrice GOUET</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Laurent TERRADOT-PIOT</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Valerie GUILLET</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Lionel MOUREY</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Stephanie RAVAUD</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Brice KAUFFMANN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>JEAN-DENIS PEDELACQ</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Coralie CARIVENC</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Sylvain VALLET</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Sabine GAVALDA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Celia ROUX</creatorName>
+            </creator>
+            <creator>
+              <creatorName>lionel BALLUT</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Thanh NGUYEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Samuel TRANIER</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Virginie NAHOUM</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Laurane BERNELIN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>PRADEEP MANDAL</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Margot NIORE</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Laurent MAVEYRAUD</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Yasmina GRIMOIRE</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Frank GONDELAUD</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Mathieu LONG</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Dhoha KORSIA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Gianluca CIOCI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Nathanael MARRIE</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Christophe GUILLON</creatorName>
+            </creator>
+            <creator>
+              <creatorName>virginie GUEGUEN-CHAIGNON</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Adriana Erica MIELE</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Francesca FIORINI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Marine LOSFELT</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Lea CONCHOU</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Benjamin BOURGEY</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Frederic GALISSON</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>Macromolecular Crystallography in Lyon/Toulouse/Bordeaux&#13;
+IBCP-MMSB / IPBS / IECB IBGC CBMN</title>
+          </titles>
+          <subjects>
+            <subject subjectScheme="Proposal Type Description">Macromolecular Crystallography</subject>
+            <subject subjectScheme="Proposal">MX-1979</subject>
+            <subject subjectScheme="Instrument">bm29</subject>
+          </subjects>
+          <publisher>European Synchrotron Radiation Facility</publisher>
+          <dates>
+            <date dateType="Collected">2018-10-19</date>
+          </dates>
+          <publicationYear>2021</publicationYear>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Experiment Session</resourceType>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3132",
+    "MetadataAccess": [
+        "oai:ota:oucs:3132"
+    ],
+    "PublicationTimestamp": "1539-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1539"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Erasmus, Desiderius, d. 1536"
+    ],
+    "fulltext": "oai:ota:oucs:3132;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3132.xml;Adagia. Selections. Lat.-Engl;Proverbes or adagies;Adagies;Chiliades;Erasmus, Desiderius, d. 1536;not after: 1539;text_and_corpus_linguistics;Proverbs, Latin -- 16th century;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b63e5293-f199-5f40-bcb8-581eda6474ac",
+    "oai_identifier": [
+        "oai:ota:oucs:3132"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Proverbs"
+        },
+        {
+            "name": "Latin -- th century"
+        }
+    ],
+    "title": [
+        "Adagia. Selections. Lat.-Engl",
+        "Proverbes or adagies",
+        "Adagies",
+        "Chiliades"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3132.xml"
+}

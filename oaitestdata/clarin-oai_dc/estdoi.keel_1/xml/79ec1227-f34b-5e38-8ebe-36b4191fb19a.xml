@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5772669</identifier>
+    <datestamp>2019-05-01T04:32:36Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Suur eesti-prantsuse s&#245;naraamat</dc:title>
+      <dc:title xml:lang="fr">Grand dictionnaire estonien-fran&#231;ais</dc:title>
+      <dc:title xml:lang="en">Comprehensive Estonian-French Dictionary</dc:title>
+      <dc:creator>J&#252;rviste, Madis</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2015</dc:date>
+      <dc:date>Issued: 2015-05-07</dc:date>
+      <dc:date>Updated: 2015-05-22</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-0002CL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">A comprehensive bilingual general language translation dictionary.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

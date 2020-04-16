@@ -1,0 +1,58 @@
+{
+    "Contributor": [
+        "McLaughlin, Jamie",
+        "Hu, Xiaoling"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/xml"
+    ],
+    "Language": [
+        "Chinese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-898",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-898"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-898",
+    "PublicationTimestamp": "2007-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2007"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-898;2016-04-06T16:39:56Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Sheffield Corpus of Chinese;Hu, Xiaoling;McLaughlin, Jamie;A diachronic corpus consisting of a wide range of fully marked-up Chinese historical texts together with an integral search and analysis tool;2007;corpus;http://hdl.handle.net/11372/LRT-898;zho;application/xml;downloadable_files_count: 0;United Kingdom;http://www.hrionline.ac.uk/scc/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "00902046-63df-5a85-beda-e40ec4918798",
+    "notes": [
+        "A diachronic corpus consisting of a wide range of fully marked-up Chinese historical texts together with an integral search and analysis tool"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-898"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Sheffield Corpus of Chinese"
+    ],
+    "url": ""
+}

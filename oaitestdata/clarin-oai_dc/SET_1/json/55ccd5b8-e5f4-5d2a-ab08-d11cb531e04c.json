@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5240",
+    "MetadataAccess": [
+        "oai:ota:oucs:5240"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Buffon, Georges Louis Leclerc, comte de, 1707-1788."
+    ],
+    "fulltext": "oai:ota:oucs:5240;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5240.xml;The natural history of birds: From the French of the Count de Buffon. Illustrated with engravings; and a preface, notes, and additions, by the translator. In nine volumes. ... [pt.1];Histoire naturelle des oiseaux. English;Buffon, Georges Louis Leclerc, comte de, 1707-1788.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "55ccd5b8-e5f4-5d2a-ab08-d11cb531e04c",
+    "oai_identifier": [
+        "oai:ota:oucs:5240"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The natural history of birds: From the French of the Count de Buffon. Illustrated with engravings; and a preface, notes, and additions, by the translator. In nine volumes. ... [pt.1]",
+        "Histoire naturelle des oiseaux. English"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5240.xml"
+}

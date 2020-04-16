@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1822</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Slovak Dependency Treebank</dc:title>
+      <dc:creator>Gajdo&#353;ov&#225;, Katar&#237;na</dc:creator>
+      <dc:creator>&#352;imkov&#225;, M&#225;ria</dc:creator>
+      <dc:creator>et al.</dc:creator>
+      <dc:subject>dependency</dc:subject>
+      <dc:subject>treebank</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:description>Slovak Dependency Treebank (Slovensk&#253; z&#225;vislostn&#253; korpus) was created as part of the Slovak National Corpus at the &#317;. &#352;t&#250;r Institute of the Slovak Academy of Sciences. The annotation follows the guidelines of the Prague Dependency Treebank (Czech), slightly modified in the spirit of Slovak grammatical tradition. Morphological tags, lemmas and dependency relations have been assigned manually to every word.&#13;
+&#13;
+The present dataset is a subset of the original treebank. We automatically selected the sentences where the two human annotators 100% agreed on the analysis. This increases the quality and trustworthiness of the data but it also results in selecting short sentences most of the time. An extended version may be published in the future when manually merged and checked annotation is available.&#13;
+&#13;
+The selected sentences have been converted to the CoNLL-X file format (original token IDs are preserved in the FEATS column). This PDT-style annotation will serve as the source for the first Slovak dataset in the Universal Dependencies (to be published separately).</dc:description>
+      <dc:date>2016-11-07</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1822</dc:identifier>
+      <dc:language>slk</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Jazykovedn&#253; &#250;stav &#317;. &#352;t&#250;ra Slovenskej akad&#233;mie vied</dc:publisher>
+      <dc:source>http://korpus.juls.savba.sk/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

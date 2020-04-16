@@ -1,0 +1,46 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/7fa4709bcc0c406eb43805aeb5590093",
+    "PID": "http://hdl.handle.net/11304/348c967c-b988-11e3-8cd7-14feb57d12b9",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/348c967c-b988-11e3-8cd7-14feb57d12b9",
+        "https://b2share.eudat.eu/api/records/7fa4709bcc0c406eb43805aeb5590093",
+        "oai:b2share.eudat.eu:b2rec/7fa4709bcc0c406eb43805aeb5590093"
+    ],
+    "ResourceType": [
+        "Other"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/7fa4709bcc0c406eb43805aeb5590093;2018-01-11T13:47:53Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;2016-12-22T10:00:22.765920+00:00;A talk on PIDs given at one of EUDAT's training days;http://hdl.handle.net/11304/348c967c-b988-11e3-8cd7-14feb57d12b9;https://b2share.eudat.eu/api/records/7fa4709bcc0c406eb43805aeb5590093;oai:b2share.eudat.eu:b2rec/7fa4709bcc0c406eb43805aeb5590093;en;info:eu-repo/semantics/closedAccess;A Talk On PIDs;Other",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "0c8bb734-992d-541d-81cb-b795abd6cc23",
+    "notes": [
+        "A talk on PIDs given at one of EUDAT's training days"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/7fa4709bcc0c406eb43805aeb5590093"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "title": [
+        "A Talk On PIDs"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/7fa4709bcc0c406eb43805aeb5590093"
+}

@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/4-00-0000-0000-0000-0000DL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:5757463",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:5757463"
+    ],
+    "PublicationTimestamp": "2015-05-22T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:5757463;2019-04-17T17:27:24Z;ESTDOI;ESTDOI.KEEL;Sageduss\u00f5nastik;Estonian Frequency Dictionary;Muischnek, Kadri;Center of Estonian Language Resources;2013;Issued: 2013-01-10;Updated: 2015-05-22;doi:10.15155/4-00-0000-0000-0000-0000DL;Abstract;Sagedusloendid, mis on tehtud 0,5 miljoni s\u00f5naga ilukirjanduse korpuse baasil (aastatest 1992-1998) ja 0,5 miljoni s\u00f5naga ajakirjanduse korpuse baasil (1995-1999). Kolm sagedusloendit s\u00f5nade ja nende sagedustega alamkorpustest ning koondkorpuses 10 000 lemmat (s\u00f5naliikidega) 1000 sagedasemat s\u00f5navormi, 100 s\u00f5na, mis on iseloomulikud ainult \u00fchele allkorpusele, kuid puuduvad teises.;Abstract;Frequency lists based on 0.5 million words of fiction texts (representing years 1992-1998), and 0.5 million words newspaper texts (from years 1995-1999).\nThree frequency lists, with words and their frequencies in the sub-corpora and in the whole corpus:\n10 000 lemmas (includes also POS)\n1000 most frequent word forms\n100 words representing only one of the sub-corpora - words that counted as frequent in one of the sub-corpora, but were missing in the other. \n",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "771a88cc-355c-5092-b3aa-d6c2e09d49f7",
+    "notes": [
+        "Abstract",
+        "Sagedusloendid, mis on tehtud 0,5 miljoni s\u00f5naga ilukirjanduse korpuse baasil (aastatest 1992-1998) ja 0,5 miljoni s\u00f5naga ajakirjanduse korpuse baasil (1995-1999). Kolm sagedusloendit s\u00f5nade ja nende sagedustega alamkorpustest ning koondkorpuses 10 000 lemmat (s\u00f5naliikidega) 1000 sagedasemat s\u00f5navormi, 100 s\u00f5na, mis on iseloomulikud ainult \u00fchele allkorpusele, kuid puuduvad teises.",
+        "Abstract",
+        "Frequency lists based on 0.5 million words of fiction texts (representing years 1992-1998), and 0.5 million words newspaper texts (from years 1995-1999).\nThree frequency lists, with words and their frequencies in the sub-corpora and in the whole corpus:\n10 000 lemmas (includes also POS)\n1000 most frequent word forms\n100 words representing only one of the sub-corpora - words that counted as frequent in one of the sub-corpora, but were missing in the other. \n"
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:5757463"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Sageduss\u00f5nastik",
+        "Estonian Frequency Dictionary"
+    ],
+    "url": ""
+}

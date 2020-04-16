@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:ota:oucs:2476</identifier>
+    <datestamp>2018-02-16T10:42:06Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cld="http://purl.org/cld/terms/">
+      <dc:identifier>http://ota.ox.ac.uk/headers/2476.xml</dc:identifier>
+      <dc:title>Poetry Collections</dc:title>
+      <dc:title>Unmanned</dc:title>
+      <dc:title>Night of Warehouses : Poems 1978-2000</dc:title>
+      <dc:title>Deadly Pollen</dc:title>
+      <dc:creator>Oliver, Stephen, 1950-</dc:creator>
+      <dc:date>1999-2003</dc:date>
+      <dc:subject>text_and_corpus_linguistics</dc:subject>
+      <dc:subject>Poetry</dc:subject>
+      <dc:subject>Australian poetry</dc:subject>
+      <dc:subject>New Zealand poetry--20th century</dc:subject>
+      <dc:language>eng</dc:language>
+      <dc:description>Three poetry publications representing a resource for students and academics as reference texts; for the purpose of education and cultural diversity in the fields of literature and English poetics. </dc:description>
+      <dc:publisher>Oxford Text Archive, University of Oxford</dc:publisher>
+      <dc:contributor>Oliver, S.</dc:contributor>
+      <dc:format>text/plain</dc:format>
+      <dc:format>3 files : 1.4 MB</dc:format>
+      <dc:type>Text</dc:type>
+      <dc:type>Poems</dc:type>
+      <dc:rights>Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</dc:rights>
+      <dc:rights>http://www.ota.ox.ac.uk/documents/user_agreement.xml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

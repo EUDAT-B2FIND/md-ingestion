@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3792",
+    "MetadataAccess": [
+        "oai:ota:oucs:3792"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sterne, Laurence, 1713-1768."
+    ],
+    "fulltext": "oai:ota:oucs:3792;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3792.xml;The life and opinions of Tristram Shandy, gentleman: ... [pt.2];Life and opinions of Tristram Shandy, gentleman;Sterne, Laurence, 1713-1768.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "af92a84e-ef9d-567b-bdbb-d1cddce7a135",
+    "oai_identifier": [
+        "oai:ota:oucs:3792"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The life and opinions of Tristram Shandy, gentleman: ... [pt.2]",
+        "Life and opinions of Tristram Shandy, gentleman"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3792.xml"
+}

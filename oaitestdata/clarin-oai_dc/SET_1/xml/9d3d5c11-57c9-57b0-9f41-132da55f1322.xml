@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:europarl-uds</identifier>
+    <datestamp>2018-07-13T09:47:07Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>EuroParl-Uds</dc:title>
+      <dc:creator>Elke Teich, Lehrstuhl Englische Sprach- und &#220;bersetzungswissenschaft, Fakult&#228;t P, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit&#228;t des Saarlandes, Campus A2.2, 66123 Saarbr&#252;cken, Germany</dc:creator>
+      <dc:subject>Parliamentary debates</dc:subject>
+      <dc:subject>Proceedings of the European Parliament</dc:subject>
+      <dc:subject>Parallel corpus</dc:subject>
+      <dc:subject>Properties of translations</dc:subject>
+      <dc:subject>Monolingual comparable corpora</dc:subject>
+      <dc:subject>Translationese</dc:subject>
+      <dc:description xml:lang="en">The **EuroParl-UdS** corpus is a parallel corpus consisting of parliamentary debates of the European Parliament containing texts filtered based of native speakers. It is presently available for English, German and Spanish and the data is in plain text format. It contains texts of the European Parliament that were produced between 1999-2017. More specifically it consists of parallel (sentence-aligned) corpora for English into German and English into Spanish, where the source side contains texts only by native English speakers, and comparable monolingual corpora for English, German and Spanish, containing texts only by native speakers of each language.</dc:description>
+      <dc:publisher>Lehrstuhl Englische Sprach- und &#220;bersetzungswissenschaft, Fakult&#228;t P, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit&#228;t des Saarlandes, Campus A2.2, 66123 Saarbr&#252;cken, Germany</dc:publisher>
+      <dc:contributor>Alina Karakanta</dc:contributor>
+      <dc:contributor>Mihaela Vela</dc:contributor>
+      <dc:contributor>Elke Teich</dc:contributor>
+      <dc:date>2018</dc:date>
+      <dc:type>Text collection</dc:type>
+      <dc:type>Written Corpus</dc:type>
+      <dc:type>Corpus of Proceedings of the European Parliament</dc:type>
+      <dc:format>text/plain</dc:format>
+      <dc:identifier>clarind-uds:europarl-uds</dc:identifier>
+      <dc:identifier>hdl:21.11119/0000-0000-D5EE-4</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:relation>Alina Karakanta, Mihaela Vela, and Elke Teich. 2018. &#8220;EuroParl-Uds: Preserving and Extending Metadata in Parliamentary Debates&#8221;. Proceedings of the LREC 2018. Miyazaki, Japan.</dc:relation>
+      <dc:coverage>1999/2016</dc:coverage>
+      <dc:coverage>European Union</dc:coverage>
+      <dc:coverage>Parliamentary Debates</dc:coverage>
+      <dc:rights>CC-BY-SA-NC-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 309 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1921",
+    "MetadataAccess": [
+        "oai:ota:oucs:1921"
+    ],
+    "PublicationTimestamp": "1748-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1748"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Philosophical works"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hume, David, 1711-1776"
+    ],
+    "fulltext": "oai:ota:oucs:1921;2018-04-16T10:12:13Z;http://ota.ox.ac.uk/headers/1921.xml;An enquiry concerning human understanding / by David Hume;Hume, David, 1711-1776;1748;text_and_corpus_linguistics;Essays -- England -- 18th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 309 KB);Text;Philosophical works;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0652beb4-d80f-5d47-822a-7af94ba2ae56",
+    "oai_identifier": [
+        "oai:ota:oucs:1921"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Essays -- England -- th century"
+        }
+    ],
+    "title": [
+        "An enquiry concerning human understanding / by David Hume"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1921.xml"
+}

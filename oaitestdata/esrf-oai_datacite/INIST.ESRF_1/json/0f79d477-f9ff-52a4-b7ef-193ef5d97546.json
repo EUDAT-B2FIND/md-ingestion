@@ -1,0 +1,78 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-67159411",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:14699236",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:14699236"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63646343999,
+    "TempCoverageEnd": 63646343999,
+    "TemporalCoverage": " point in time : 2017-11-15T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2017-11-15T11:59:59Z",
+    "TemporalCoverage:EndDate": "2017-11-15T11:59:59Z",
+    "author": [
+        "Nathalie COLLOCH",
+        "stephane PLANCQUEEL",
+        "SYLVIE NESSLER",
+        "Pierre BARRAUD",
+        "Gilles PHAN",
+        "Celine CHEN",
+        "Lea KHOURY",
+        "Thierry PRANGE",
+        "Noelia BERNARDO GARCIA",
+        "Julien HENRI",
+        "Christian GALICIA",
+        "Dominique DURAND",
+        "Karim HOUSSEINI",
+        "Allegra MBOUKOU",
+        "Clement MADRU",
+        "yann FERRANDEZ",
+        "Stephanie OERUM",
+        "Simon VEYRON"
+    ],
+    "fulltext": "oai:oai.datacite.org:14699236;2018-04-18T07:19:21Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-67159411;Gilles PHAN;SYLVIE NESSLER;Nathalie COLLOCH;Stephanie OERUM;stephane PLANCQUEEL;Allegra MBOUKOU;Celine CHEN;Thierry PRANGE;Christian GALICIA;Noelia BERNARDO GARCIA;Karim HOUSSEINI;yann FERRANDEZ;Clement MADRU;Pierre BARRAUD;Julien HENRI;Lea KHOURY;Dominique DURAND;Simon VEYRON;BAG Paris Rive-Gauche;Macromolecular Crystallography;MX-1940;id30a3;European Synchrotron Radiation Facility;2017-11-15;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "0f79d477-f9ff-52a4-b7ef-193ef5d97546",
+    "oai_identifier": [
+        "oai:oai.datacite.org:14699236"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Macromolecular Crystallography"
+        },
+        {
+            "name": "MX-"
+        },
+        {
+            "name": "ida"
+        }
+    ],
+    "title": [
+        "BAG Paris Rive-Gauche"
+    ],
+    "url": ""
+}

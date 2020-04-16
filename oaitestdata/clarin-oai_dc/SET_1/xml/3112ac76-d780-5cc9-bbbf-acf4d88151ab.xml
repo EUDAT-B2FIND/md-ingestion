@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>c6599c86bc6d11e1a404080027e73ea2fb149db7ca074dd7b2ac8f2608eda2dc</identifier>
+    <datestamp>2018-11-15T16:39:31Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:audio</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MalToBi/SPAN Corpus</dc:title>
+      <dc:description>Audio corpus: 8 subfolders with .wav files
+Each containing :
+&#226;&#128;&#162;	2 sound files containing a read story (&#226;&#128;&#156;The sun and the wind&#226;&#128;&#157;, each by speaker A and speaker B)
+&#226;&#128;&#162;	2 sound files containing each 30 read sentences (each by speaker A and speaker B)
+&#226;&#128;&#162;	2 x each of the 30 sentences as a single sound file (each by speaker A and speaker B)
+&#226;&#128;&#162;	2 x 26 phrases in individual files (each by speaker A and speaker B)
+</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

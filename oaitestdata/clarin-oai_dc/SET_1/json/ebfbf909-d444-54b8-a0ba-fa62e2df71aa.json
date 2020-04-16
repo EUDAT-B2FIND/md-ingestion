@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5231",
+    "MetadataAccess": [
+        "oai:ota:oucs:5231"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dudley, H. Bate, Sir (Henry Bate), 1745-1824."
+    ],
+    "fulltext": "oai:ota:oucs:5231;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5231.xml;Passages selected by distinguished personages: on the great literary trial of Vortigern and Rowena; a comi-tragedy. ... [pt.3];Dudley, H. Bate, Sir (Henry Bate), 1745-1824.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ebfbf909-d444-54b8-a0ba-fa62e2df71aa",
+    "oai_identifier": [
+        "oai:ota:oucs:5231"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Passages selected by distinguished personages: on the great literary trial of Vortigern and Rowena; a comi-tragedy. ... [pt.3]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5231.xml"
+}

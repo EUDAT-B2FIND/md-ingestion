@@ -1,0 +1,54 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-0018CL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17961504",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17961504"
+    ],
+    "PublicationTimestamp": "2019-01-07T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Vaik, Kristiina",
+        "M\u00fc\u00fcrisep, Kaili"
+    ],
+    "fulltext": "oai:oai.datacite.org:17961504;2019-04-08T03:32:45Z;ESTDOI;ESTDOI.KEEL;S\u00fcntaksi eelt\u00f6\u00f6tlusmoodulid (EtTenTen formaadile);Preprocessing module for parsing (for EtTenTen format);M\u00fc\u00fcrisep, Kaili;Vaik, Kristiina;Center of Estonian Language Resources;2019;Issued: 2019-01-07;Updated: 2019-01-07;doi:10.15155/1-00-0000-0000-0000-0018CL;Abstract;Selle s\u00fcntaksianal\u00fc\u00fcsi-eelse eelt\u00f6\u00f6tlusmooduli versioon on m\u00f5eldud etTenTeni korpuse tekstit\u00fc\u00fcpide (perioodika, valitsus, religioon, informatiivne, unknown, foorum ja blogi) jaoks. Moodulist on kaks versiooni. Esimene versioon on m\u00f5eldud perioodika, valitsuse, religiooni, informatiivse ja tundmatu tekstit\u00fc\u00fcbile (eeltootlus_ettenten.py, ettenten_patterns.py), teine versioon on m\u00f5eldud foorumi ja blogi tekstit\u00fc\u00fcbile (eeltootlus_ettenten_blg_frm.py, ettenten_patterns_blg_frm.py).;Abstract;Preprocessing module, to be used before parsing. This version includes two modules for preprocessing EtTenTen corpus text types: the first one for newspaper, government, religious, informative and unknown texts (eeltootlus_ettenten.py, ettenten_patterns.py) and the other for forums and blogs (eeltootlus_ettenten_blg_frm.py, ettenten_patterns_blg_frm.py).",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "16c710c1-8af6-5355-a0e2-25bde6b9dd3c",
+    "notes": [
+        "Abstract",
+        "Selle s\u00fcntaksianal\u00fc\u00fcsi-eelse eelt\u00f6\u00f6tlusmooduli versioon on m\u00f5eldud etTenTeni korpuse tekstit\u00fc\u00fcpide (perioodika, valitsus, religioon, informatiivne, unknown, foorum ja blogi) jaoks. Moodulist on kaks versiooni. Esimene versioon on m\u00f5eldud perioodika, valitsuse, religiooni, informatiivse ja tundmatu tekstit\u00fc\u00fcbile (eeltootlus_ettenten.py, ettenten_patterns.py), teine versioon on m\u00f5eldud foorumi ja blogi tekstit\u00fc\u00fcbile (eeltootlus_ettenten_blg_frm.py, ettenten_patterns_blg_frm.py).",
+        "Abstract",
+        "Preprocessing module, to be used before parsing. This version includes two modules for preprocessing EtTenTen corpus text types: the first one for newspaper, government, religious, informative and unknown texts (eeltootlus_ettenten.py, ettenten_patterns.py) and the other for forums and blogs (eeltootlus_ettenten_blg_frm.py, ettenten_patterns_blg_frm.py)."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17961504"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "S\u00fcntaksi eelt\u00f6\u00f6tlusmoodulid (EtTenTen formaadile)",
+        "Preprocessing module for parsing (for EtTenTen format)"
+    ],
+    "url": ""
+}

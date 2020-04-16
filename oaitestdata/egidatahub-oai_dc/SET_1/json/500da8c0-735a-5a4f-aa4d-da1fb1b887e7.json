@@ -1,0 +1,46 @@
+{
+    "Contributor": [
+        "EGI-DataHub"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "text/plain"
+    ],
+    "MetaDataAccess": "http://datahub.egi.eu/oai_pmh?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datahub.egi.eu:58f8af99443e02334cdd289f05dd2441",
+    "MetadataAccess": [
+        "oai:datahub.egi.eu:58f8af99443e02334cdd289f05dd2441"
+    ],
+    "PID": "http://hdl.handle.net/21.T15999/kJdyEFE",
+    "PublicationTimestamp": "2018-01-17T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "author": [
+        "Baptiste Grenier"
+    ],
+    "fulltext": "oai:datahub.egi.eu:58f8af99443e02334cdd289f05dd2441;2019-01-18T09:51:25Z;CS3;Baptiste Grenier;CS3 Dataset;CS3 Dataset;2018-01-17;Text;text/plain;http://hdl.handle.net/21.T15999/kJdyEFE;https://datahub.egi.eu/share/ae2ddade147fbdb75c3343cd3cb5387e",
+    "group": "egidatahub",
+    "groups": [
+        {
+            "name": "egidatahub"
+        }
+    ],
+    "name": "500da8c0-735a-5a4f-aa4d-da1fb1b887e7",
+    "notes": [
+        "CS3 Dataset"
+    ],
+    "oai_identifier": [
+        "oai:datahub.egi.eu:58f8af99443e02334cdd289f05dd2441"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "CS3 Dataset"
+    ],
+    "url": "https://datahub.egi.eu/share/ae2ddade147fbdb75c3343cd3cb5387e"
+}

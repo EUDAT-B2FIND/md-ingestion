@@ -1,0 +1,397 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2895</identifier>
+    <datestamp>2019-01-16T17:03:48Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Universal Dependencies 2.3</dc:title>
+      <dc:creator>Nivre, Joakim</dc:creator>
+      <dc:creator>Abrams, Mitchell</dc:creator>
+      <dc:creator>Agi&#263;, &#381;eljko</dc:creator>
+      <dc:creator>Ahrenberg, Lars</dc:creator>
+      <dc:creator>Antonsen, Lene</dc:creator>
+      <dc:creator>Aplonova, Katya</dc:creator>
+      <dc:creator>Aranzabe, Maria Jesus</dc:creator>
+      <dc:creator>Arutie, Gashaw</dc:creator>
+      <dc:creator>Asahara, Masayuki</dc:creator>
+      <dc:creator>Ateyah, Luma</dc:creator>
+      <dc:creator>Attia, Mohammed</dc:creator>
+      <dc:creator>Atutxa, Aitziber</dc:creator>
+      <dc:creator>Augustinus, Liesbeth</dc:creator>
+      <dc:creator>Badmaeva, Elena</dc:creator>
+      <dc:creator>Ballesteros, Miguel</dc:creator>
+      <dc:creator>Banerjee, Esha</dc:creator>
+      <dc:creator>Bank, Sebastian</dc:creator>
+      <dc:creator>Barbu Mititelu, Verginica</dc:creator>
+      <dc:creator>Basmov, Victoria</dc:creator>
+      <dc:creator>Bauer, John</dc:creator>
+      <dc:creator>Bellato, Sandra</dc:creator>
+      <dc:creator>Bengoetxea, Kepa</dc:creator>
+      <dc:creator>Berzak, Yevgeni</dc:creator>
+      <dc:creator>Bhat, Irshad Ahmad</dc:creator>
+      <dc:creator>Bhat, Riyaz Ahmad</dc:creator>
+      <dc:creator>Biagetti, Erica</dc:creator>
+      <dc:creator>Bick, Eckhard</dc:creator>
+      <dc:creator>Blokland, Rogier</dc:creator>
+      <dc:creator>Bobicev, Victoria</dc:creator>
+      <dc:creator>B&#246;rstell, Carl</dc:creator>
+      <dc:creator>Bosco, Cristina</dc:creator>
+      <dc:creator>Bouma, Gosse</dc:creator>
+      <dc:creator>Bowman, Sam</dc:creator>
+      <dc:creator>Boyd, Adriane</dc:creator>
+      <dc:creator>Burchardt, Aljoscha</dc:creator>
+      <dc:creator>Candito, Marie</dc:creator>
+      <dc:creator>Caron, Bernard</dc:creator>
+      <dc:creator>Caron, Gauthier</dc:creator>
+      <dc:creator>Cebiro&#287;lu Eryi&#287;it, G&#252;l&#351;en</dc:creator>
+      <dc:creator>Cecchini, Flavio Massimiliano</dc:creator>
+      <dc:creator>Celano, Giuseppe G. A.</dc:creator>
+      <dc:creator>&#268;&#233;pl&#246;, Slavom&#237;r</dc:creator>
+      <dc:creator>Cetin, Savas</dc:creator>
+      <dc:creator>Chalub, Fabricio</dc:creator>
+      <dc:creator>Choi, Jinho</dc:creator>
+      <dc:creator>Cho, Yongseok</dc:creator>
+      <dc:creator>Chun, Jayeol</dc:creator>
+      <dc:creator>Cinkov&#225;, Silvie</dc:creator>
+      <dc:creator>Collomb, Aur&#233;lie</dc:creator>
+      <dc:creator>&#199;&#246;ltekin, &#199;a&#287;r&#305;</dc:creator>
+      <dc:creator>Connor, Miriam</dc:creator>
+      <dc:creator>Courtin, Marine</dc:creator>
+      <dc:creator>Davidson, Elizabeth</dc:creator>
+      <dc:creator>de Marneffe, Marie-Catherine</dc:creator>
+      <dc:creator>de Paiva, Valeria</dc:creator>
+      <dc:creator>Diaz de Ilarraza, Arantza</dc:creator>
+      <dc:creator>Dickerson, Carly</dc:creator>
+      <dc:creator>Dirix, Peter</dc:creator>
+      <dc:creator>Dobrovoljc, Kaja</dc:creator>
+      <dc:creator>Dozat, Timothy</dc:creator>
+      <dc:creator>Droganova, Kira</dc:creator>
+      <dc:creator>Dwivedi, Puneet</dc:creator>
+      <dc:creator>Eli, Marhaba</dc:creator>
+      <dc:creator>Elkahky, Ali</dc:creator>
+      <dc:creator>Ephrem, Binyam</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Etienne, Aline</dc:creator>
+      <dc:creator>Farkas, Rich&#225;rd</dc:creator>
+      <dc:creator>Fernandez Alcalde, Hector</dc:creator>
+      <dc:creator>Foster, Jennifer</dc:creator>
+      <dc:creator>Freitas, Cl&#225;udia</dc:creator>
+      <dc:creator>Gajdo&#353;ov&#225;, Katar&#237;na</dc:creator>
+      <dc:creator>Galbraith, Daniel</dc:creator>
+      <dc:creator>Garcia, Marcos</dc:creator>
+      <dc:creator>G&#228;rdenfors, Moa</dc:creator>
+      <dc:creator>Garza, Sebastian</dc:creator>
+      <dc:creator>Gerdes, Kim</dc:creator>
+      <dc:creator>Ginter, Filip</dc:creator>
+      <dc:creator>Goenaga, Iakes</dc:creator>
+      <dc:creator>Gojenola, Koldo</dc:creator>
+      <dc:creator>G&#246;k&#305;rmak, Memduh</dc:creator>
+      <dc:creator>Goldberg, Yoav</dc:creator>
+      <dc:creator>G&#243;mez Guinovart, Xavier</dc:creator>
+      <dc:creator>Gonz&#225;les Saavedra, Berta</dc:creator>
+      <dc:creator>Grioni, Matias</dc:creator>
+      <dc:creator>Gr&#363;z&#299;tis, Normunds</dc:creator>
+      <dc:creator>Guillaume, Bruno</dc:creator>
+      <dc:creator>Guillot-Barbance, C&#233;line</dc:creator>
+      <dc:creator>Habash, Nizar</dc:creator>
+      <dc:creator>Haji&#269;, Jan</dc:creator>
+      <dc:creator>Haji&#269; jr., Jan</dc:creator>
+      <dc:creator>H&#224; M&#7929;, Linh</dc:creator>
+      <dc:creator>Han, Na-Rae</dc:creator>
+      <dc:creator>Harris, Kim</dc:creator>
+      <dc:creator>Haug, Dag</dc:creator>
+      <dc:creator>Hladk&#225;, Barbora</dc:creator>
+      <dc:creator>Hlav&#225;&#269;ov&#225;, Jaroslava</dc:creator>
+      <dc:creator>Hociung, Florinel</dc:creator>
+      <dc:creator>Hohle, Petter</dc:creator>
+      <dc:creator>Hwang, Jena</dc:creator>
+      <dc:creator>Ion, Radu</dc:creator>
+      <dc:creator>Irimia, Elena</dc:creator>
+      <dc:creator>Ishola, &#7884;l&#225;j&#237;d&#233;</dc:creator>
+      <dc:creator>Jel&#237;nek, Tom&#225;&#353;</dc:creator>
+      <dc:creator>Johannsen, Anders</dc:creator>
+      <dc:creator>J&#248;rgensen, Fredrik</dc:creator>
+      <dc:creator>Ka&#351;&#305;kara, H&#252;ner</dc:creator>
+      <dc:creator>Kahane, Sylvain</dc:creator>
+      <dc:creator>Kanayama, Hiroshi</dc:creator>
+      <dc:creator>Kanerva, Jenna</dc:creator>
+      <dc:creator>Katz, Boris</dc:creator>
+      <dc:creator>Kayadelen, Tolga</dc:creator>
+      <dc:creator>Kenney, Jessica</dc:creator>
+      <dc:creator>Kettnerov&#225;, V&#225;clava</dc:creator>
+      <dc:creator>Kirchner, Jesse</dc:creator>
+      <dc:creator>Kopacewicz, Kamil</dc:creator>
+      <dc:creator>Kotsyba, Natalia</dc:creator>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Kwak, Sookyoung</dc:creator>
+      <dc:creator>Laippala, Veronika</dc:creator>
+      <dc:creator>Lambertino, Lorenzo</dc:creator>
+      <dc:creator>Lam, Lucia</dc:creator>
+      <dc:creator>Lando, Tatiana</dc:creator>
+      <dc:creator>Larasati, Septina Dian</dc:creator>
+      <dc:creator>Lavrentiev, Alexei</dc:creator>
+      <dc:creator>Lee, John</dc:creator>
+      <dc:creator>L&#234; H&#7891;ng, Ph&#432;&#417;ng</dc:creator>
+      <dc:creator>Lenci, Alessandro</dc:creator>
+      <dc:creator>Lertpradit, Saran</dc:creator>
+      <dc:creator>Leung, Herman</dc:creator>
+      <dc:creator>Li, Cheuk Ying</dc:creator>
+      <dc:creator>Li, Josie</dc:creator>
+      <dc:creator>Li, Keying</dc:creator>
+      <dc:creator>Lim, KyungTae</dc:creator>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Loginova, Olga</dc:creator>
+      <dc:creator>Lyashevskaya, Olga</dc:creator>
+      <dc:creator>Lynn, Teresa</dc:creator>
+      <dc:creator>Macketanz, Vivien</dc:creator>
+      <dc:creator>Makazhanov, Aibek</dc:creator>
+      <dc:creator>Mandl, Michael</dc:creator>
+      <dc:creator>Manning, Christopher</dc:creator>
+      <dc:creator>Manurung, Ruli</dc:creator>
+      <dc:creator>M&#259;r&#259;nduc, C&#259;t&#259;lina</dc:creator>
+      <dc:creator>Mare&#269;ek, David</dc:creator>
+      <dc:creator>Marheinecke, Katrin</dc:creator>
+      <dc:creator>Mart&#237;nez Alonso, H&#233;ctor</dc:creator>
+      <dc:creator>Martins, Andr&#233;</dc:creator>
+      <dc:creator>Ma&#353;ek, Jan</dc:creator>
+      <dc:creator>Matsumoto, Yuji</dc:creator>
+      <dc:creator>McDonald, Ryan</dc:creator>
+      <dc:creator>Mendon&#231;a, Gustavo</dc:creator>
+      <dc:creator>Miekka, Niko</dc:creator>
+      <dc:creator>Misirpashayeva, Margarita</dc:creator>
+      <dc:creator>Missil&#228;, Anna</dc:creator>
+      <dc:creator>Mititelu, C&#259;t&#259;lin</dc:creator>
+      <dc:creator>Miyao, Yusuke</dc:creator>
+      <dc:creator>Montemagni, Simonetta</dc:creator>
+      <dc:creator>More, Amir</dc:creator>
+      <dc:creator>Moreno Romero, Laura</dc:creator>
+      <dc:creator>Mori, Keiko Sophie</dc:creator>
+      <dc:creator>Mori, Shinsuke</dc:creator>
+      <dc:creator>Mortensen, Bjartur</dc:creator>
+      <dc:creator>Moskalevskyi, Bohdan</dc:creator>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:creator>Murawaki, Yugo</dc:creator>
+      <dc:creator>M&#252;&#252;risep, Kaili</dc:creator>
+      <dc:creator>Nainwani, Pinkey</dc:creator>
+      <dc:creator>Navarro Hor&#241;iacek, Juan Ignacio</dc:creator>
+      <dc:creator>Nedoluzhko, Anna</dc:creator>
+      <dc:creator>Ne&#353;pore-B&#275;rzkalne, Gunta</dc:creator>
+      <dc:creator>Nguy&#7877;n Th&#7883;, L&#432;&#417;ng</dc:creator>
+      <dc:creator>Nguy&#7877;n Th&#7883; Minh, Huy&#7873;n</dc:creator>
+      <dc:creator>Nikolaev, Vitaly</dc:creator>
+      <dc:creator>Nitisaroj, Rattima</dc:creator>
+      <dc:creator>Nurmi, Hanna</dc:creator>
+      <dc:creator>Ojala, Stina</dc:creator>
+      <dc:creator>Ol&#250;&#242;kun, Ad&#233;day&#7885;&#768;</dc:creator>
+      <dc:creator>Omura, Mai</dc:creator>
+      <dc:creator>Osenova, Petya</dc:creator>
+      <dc:creator>&#214;stling, Robert</dc:creator>
+      <dc:creator>&#216;vrelid, Lilja</dc:creator>
+      <dc:creator>Partanen, Niko</dc:creator>
+      <dc:creator>Pascual, Elena</dc:creator>
+      <dc:creator>Passarotti, Marco</dc:creator>
+      <dc:creator>Patejuk, Agnieszka</dc:creator>
+      <dc:creator>Paulino-Passos, Guilherme</dc:creator>
+      <dc:creator>Peng, Siyao</dc:creator>
+      <dc:creator>Perez, Cenel-Augusto</dc:creator>
+      <dc:creator>Perrier, Guy</dc:creator>
+      <dc:creator>Petrov, Slav</dc:creator>
+      <dc:creator>Piitulainen, Jussi</dc:creator>
+      <dc:creator>Pitler, Emily</dc:creator>
+      <dc:creator>Plank, Barbara</dc:creator>
+      <dc:creator>Poibeau, Thierry</dc:creator>
+      <dc:creator>Popel, Martin</dc:creator>
+      <dc:creator>Pretkalni&#326;a, Lauma</dc:creator>
+      <dc:creator>Pr&#233;vost, Sophie</dc:creator>
+      <dc:creator>Prokopidis, Prokopis</dc:creator>
+      <dc:creator>Przepi&#243;rkowski, Adam</dc:creator>
+      <dc:creator>Puolakainen, Tiina</dc:creator>
+      <dc:creator>Pyysalo, Sampo</dc:creator>
+      <dc:creator>R&#228;&#228;bis, Andriela</dc:creator>
+      <dc:creator>Rademaker, Alexandre</dc:creator>
+      <dc:creator>Ramasamy, Loganathan</dc:creator>
+      <dc:creator>Rama, Taraka</dc:creator>
+      <dc:creator>Ramisch, Carlos</dc:creator>
+      <dc:creator>Ravishankar, Vinit</dc:creator>
+      <dc:creator>Real, Livy</dc:creator>
+      <dc:creator>Reddy, Siva</dc:creator>
+      <dc:creator>Rehm, Georg</dc:creator>
+      <dc:creator>Rie&#223;ler, Michael</dc:creator>
+      <dc:creator>Rinaldi, Larissa</dc:creator>
+      <dc:creator>Rituma, Laura</dc:creator>
+      <dc:creator>Rocha, Luisa</dc:creator>
+      <dc:creator>Romanenko, Mykhailo</dc:creator>
+      <dc:creator>Rosa, Rudolf</dc:creator>
+      <dc:creator>Rovati, Davide</dc:creator>
+      <dc:creator>Ro&#537;ca, Valentin</dc:creator>
+      <dc:creator>Rudina, Olga</dc:creator>
+      <dc:creator>Rueter, Jack</dc:creator>
+      <dc:creator>Sadde, Shoval</dc:creator>
+      <dc:creator>Sagot, Beno&#238;t</dc:creator>
+      <dc:creator>Saleh, Shadi</dc:creator>
+      <dc:creator>Samard&#382;i&#263;, Tanja</dc:creator>
+      <dc:creator>Samson, Stephanie</dc:creator>
+      <dc:creator>Sanguinetti, Manuela</dc:creator>
+      <dc:creator>Saul&#299;te, Baiba</dc:creator>
+      <dc:creator>Sawanakunanon, Yanin</dc:creator>
+      <dc:creator>Schneider, Nathan</dc:creator>
+      <dc:creator>Schuster, Sebastian</dc:creator>
+      <dc:creator>Seddah, Djam&#233;</dc:creator>
+      <dc:creator>Seeker, Wolfgang</dc:creator>
+      <dc:creator>Seraji, Mojgan</dc:creator>
+      <dc:creator>Shen, Mo</dc:creator>
+      <dc:creator>Shimada, Atsuko</dc:creator>
+      <dc:creator>Shohibussirri, Muh</dc:creator>
+      <dc:creator>Sichinava, Dmitry</dc:creator>
+      <dc:creator>Silveira, Natalia</dc:creator>
+      <dc:creator>Simi, Maria</dc:creator>
+      <dc:creator>Simionescu, Radu</dc:creator>
+      <dc:creator>Simk&#243;, Katalin</dc:creator>
+      <dc:creator>&#352;imkov&#225;, M&#225;ria</dc:creator>
+      <dc:creator>Simov, Kiril</dc:creator>
+      <dc:creator>Smith, Aaron</dc:creator>
+      <dc:creator>Soares-Bastos, Isabela</dc:creator>
+      <dc:creator>Spadine, Carolyn</dc:creator>
+      <dc:creator>Stella, Antonio</dc:creator>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:creator>Strnadov&#225;, Jana</dc:creator>
+      <dc:creator>Suhr, Alane</dc:creator>
+      <dc:creator>Sulubacak, Umut</dc:creator>
+      <dc:creator>Sz&#225;nt&#243;, Zsolt</dc:creator>
+      <dc:creator>Taji, Dima</dc:creator>
+      <dc:creator>Takahashi, Yuta</dc:creator>
+      <dc:creator>Tanaka, Takaaki</dc:creator>
+      <dc:creator>Tellier, Isabelle</dc:creator>
+      <dc:creator>Trosterud, Trond</dc:creator>
+      <dc:creator>Trukhina, Anna</dc:creator>
+      <dc:creator>Tsarfaty, Reut</dc:creator>
+      <dc:creator>Tyers, Francis</dc:creator>
+      <dc:creator>Uematsu, Sumire</dc:creator>
+      <dc:creator>Ure&#353;ov&#225;, Zde&#328;ka</dc:creator>
+      <dc:creator>Uria, Larraitz</dc:creator>
+      <dc:creator>Uszkoreit, Hans</dc:creator>
+      <dc:creator>Vajjala, Sowmya</dc:creator>
+      <dc:creator>van Niekerk, Daniel</dc:creator>
+      <dc:creator>van Noord, Gertjan</dc:creator>
+      <dc:creator>Varga, Viktor</dc:creator>
+      <dc:creator>Villemonte de la Clergerie, Eric</dc:creator>
+      <dc:creator>Vincze, Veronika</dc:creator>
+      <dc:creator>Wallin, Lars</dc:creator>
+      <dc:creator>Wang, Jing Xian</dc:creator>
+      <dc:creator>Washington, Jonathan North</dc:creator>
+      <dc:creator>Williams, Seyi</dc:creator>
+      <dc:creator>Wir&#233;n, Mats</dc:creator>
+      <dc:creator>Woldemariam, Tsegay</dc:creator>
+      <dc:creator>Wong, Tak-sum</dc:creator>
+      <dc:creator>Yan, Chunxiao</dc:creator>
+      <dc:creator>Yavrumyan, Marat M.</dc:creator>
+      <dc:creator>Yu, Zhuoran</dc:creator>
+      <dc:creator>&#381;abokrtsk&#253;, Zden&#283;k</dc:creator>
+      <dc:creator>Zeldes, Amir</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Zhang, Manying</dc:creator>
+      <dc:creator>Zhu, Hanzhi</dc:creator>
+      <dc:subject>treebank</dc:subject>
+      <dc:subject>dependency</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>harmonized annotation</dc:subject>
+      <dc:subject>interset</dc:subject>
+      <dc:subject>universal tagset</dc:subject>
+      <dc:subject>stanford dependencies</dc:subject>
+      <dc:description>Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).</dc:description>
+      <dc:date>2018-11-15</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2895</dc:identifier>
+      <dc:language>grc</dc:language>
+      <dc:language>ara</dc:language>
+      <dc:language>eus</dc:language>
+      <dc:language>bul</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>dan</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>got</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>heb</dc:language>
+      <dc:language>hin</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>ind</dc:language>
+      <dc:language>gle</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>jpn</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>nor</dc:language>
+      <dc:language>chu</dc:language>
+      <dc:language>fas</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:language>tam</dc:language>
+      <dc:language>cat</dc:language>
+      <dc:language>zho</dc:language>
+      <dc:language>glg</dc:language>
+      <dc:language>kaz</dc:language>
+      <dc:language>lav</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>tur</dc:language>
+      <dc:language>cop</dc:language>
+      <dc:language>san</dc:language>
+      <dc:language>slk</dc:language>
+      <dc:language>ukr</dc:language>
+      <dc:language>uig</dc:language>
+      <dc:language>vie</dc:language>
+      <dc:language>bel</dc:language>
+      <dc:language>kor</dc:language>
+      <dc:language>lit</dc:language>
+      <dc:language>urd</dc:language>
+      <dc:language>bxr</dc:language>
+      <dc:language>kmr</dc:language>
+      <dc:language>sme</dc:language>
+      <dc:language>hsb</dc:language>
+      <dc:language>afr</dc:language>
+      <dc:language>yue</dc:language>
+      <dc:language>mar</dc:language>
+      <dc:language>srp</dc:language>
+      <dc:language>swl</dc:language>
+      <dc:language>tel</dc:language>
+      <dc:language>amh</dc:language>
+      <dc:language>hye</dc:language>
+      <dc:language>bre</dc:language>
+      <dc:language>fao</dc:language>
+      <dc:language>kpv</dc:language>
+      <dc:language>pcm</dc:language>
+      <dc:language>fro</dc:language>
+      <dc:language>tgl</dc:language>
+      <dc:language>tha</dc:language>
+      <dc:language>wbp</dc:language>
+      <dc:language>yor</dc:language>
+      <dc:language>akk</dc:language>
+      <dc:language>bam</dc:language>
+      <dc:language>myv</dc:language>
+      <dc:language>mlt</dc:language>
+      <dc:relation>http://hdl.handle.net/11234/1-2837</dc:relation>
+      <dc:rights>Licence Universal Dependencies v2.3</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.3</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Universal Dependencies Consortium</dc:publisher>
+      <dc:source>http://universaldependencies.org/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

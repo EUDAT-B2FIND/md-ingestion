@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>fafce15ccf3011e1a404080027e73ea2bbc3f718cfbf452989472b8f2bd5f392</identifier>
+    <datestamp>2019-02-27T12:08:58Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:lexicon</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Simple Portuguese Lexicon</dc:title>
+      <dc:description>The SIMPLE Portuguese Lexicon is constituted by 10.438 entries semantically encoded, accordingly to the parole common encoding standards. </dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

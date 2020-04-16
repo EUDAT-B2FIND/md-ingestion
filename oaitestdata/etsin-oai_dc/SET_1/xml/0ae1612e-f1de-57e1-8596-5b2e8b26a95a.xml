@@ -1,0 +1,219 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>urn:nbn:fi:csc-kata20141222161020777763</identifier>
+    <datestamp>2016-03-10T09:23:52Z</datestamp>
+    <setSpec>01905-2571-tampereen-yliopisto-yhteiskuntatieteellinen-tietoarkisto</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Valtaresurssit 2007</dc:title>
+      <dc:title>Index of Power Resources (IPR) 2007</dc:title>
+      <dc:creator>Vanhanen, Tatu</dc:creator>
+      <dc:subject>demokratia</dc:subject>
+      <dc:subject>demokratisoituminen</dc:subject>
+      <dc:subject>henkinen p&#228;&#228;oma</dc:subject>
+      <dc:subject>kansainv&#228;linen politiikka ja j&#228;rjest&#246;t</dc:subject>
+      <dc:subject>koulutus</dc:subject>
+      <dc:subject>lukutaito</dc:subject>
+      <dc:subject>maaseutuv&#228;est&#246;</dc:subject>
+      <dc:subject>maatalousyhteiskunta</dc:subject>
+      <dc:subject>resurssit</dc:subject>
+      <dc:subject>taloudellinen kehitys</dc:subject>
+      <dc:subject>talouden tila ja tunnusluvut</dc:subject>
+      <dc:subject>valta</dc:subject>
+      <dc:subject>valtio-oppi</dc:subject>
+      <dc:subject>yhteiskuntakehitys</dc:subject>
+      <dc:subject>yhteiskuntatieteet</dc:subject>
+      <dc:description>Aineisto on jatkoa professori Tatu Vanhasen kokoamalle aineistolle FSD1216 Demokratisoituminen ja valtaresurssit 1850-2000, joka oli tulos pitk&#228;aikaisesta valtioiden demokratisoitumista ja valtaresursseja koskevasta tutkimusty&#246;st&#228;. Erilaisista kirjallisista l&#228;hteist&#228; kootut, p&#228;ivitetyt tiedot on julkaistu my&#246;s Vanhasen julkaisussa "The Limits of Democratization". Teoksessa julkaistujen numerotietojen alkuper&#228;iset l&#228;hteet on koottu erilliseen dokumenttiin, johon on linkki alla kohdassa: muu materiaali: alkuper&#228;isl&#228;hteet.&#13;
+&#13;
+Aineisto sis&#228;lt&#228;&#228; kahdeksan eri resurssien jakautuneisuutta kuvaavan muuttujan arvot valtioittain. N&#228;it&#228; ovat: 1) Korkeakouluopiskelijoiden osuus (Tertiary Enrollment Ratio %); 2) Lukutaitoisten osuus aikuisv&#228;est&#246;st&#228; (Adult Literacy Rate %); 3) &#196;lyllisten valtaresurssien indeksi (Index of Intellectual Power Resources, IR); 4) Perhetilojen osuus (Family Farms, FF %); 5) Agraariv&#228;est&#246;n osuus (Agricultural Population, AP %); 6) Arvioitu taloudellisten valtaresurssien jakautuneisuuden aste (Estimated Degree of Decentralization of Economic Power Resources, DD); 7) Taloudellisten valtaresurssien indeksi (Index of Economic Power Resources, ER); ja 8) Valtaresurssi-indeksi (Index of Power Resources, IPR). Muuttujien tiedot on p&#228;ivitetty edellisest&#228; aineistosta, ja n&#228;iden laskutapaa on joissain tapauksissa tarkennettu tai n&#228;m&#228; on muodostettu kokonaan uudella tavalla.&#13;
+&#13;
+Korkeakouluopiskelijoiden osuus (Tertiary Enrollment Ratio %) perustuu korkeakoulutukseen osallistuvien prosenttiosuuteen relevantissa ik&#228;luokassa. Lukutaitoisten osuus aikuisv&#228;est&#246;st&#228; (Adult Literacy Rate %) lasketaan prosentteina aikuisv&#228;est&#246;st&#228;. IR on n&#228;iden kahden keskiarvo.&#13;
+&#13;
+Perhetilojen osuus (Family Farms, FF %) tarkoittaa perhetilojen yhteenlaskettua pinta-alaa koko viljelypinta-alasta tai maatilojen kokonaisalasta prosentteina. Agraariv&#228;est&#246;n osuus vuosilta 2000-2005 on muuttujassa AP. DD saadaan, kun lasketaan yhteen k&#246;yhyysrajan alla el&#228;v&#228;t (%) ja rikkaimman 10 % osuus koko v&#228;est&#246;n tuloista tai kulutuksesta v&#228;hennettyn&#228; 10 prosenttiyksikk&#246;&#228;, ja v&#228;hennet&#228;&#228;n saatu summa sadasta. Joissain tapauksissa saatua prosenttilukua on v&#228;hennetty tai kasvatettu syist&#228;, jotka on esitelty tarkemmin Vanhasen teoksessa The Limits of Democratization. ER lasketaan kaavalla ER=(FF * AP) + (DD * NAP), miss&#228; NAP=100-AP. Viimeinen muuttuja, IPR (The Index of Power Resources), saadaan jakamalla IR:n ja ER:n tulo sadalla.</dc:description>
+      <dc:publisher>Yhteiskuntatieteellinen tietoarkisto</dc:publisher>
+      <dc:publisher>Yhteiskuntatieteellinen tietoarkisto</dc:publisher>
+      <dc:date>2016-03-10</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>FSD2420</dc:identifier>
+      <dc:identifier>urn:nbn:fi:fsd:T-FSD2420</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-kata20141222161020777763</dc:identifier>
+      <dc:identifier>http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20141222161020777763</dc:identifier>
+      <dc:language/>
+      <dc:coverage>Afganistan</dc:coverage>
+      <dc:coverage>Albania</dc:coverage>
+      <dc:coverage>Algeria</dc:coverage>
+      <dc:coverage>Angola</dc:coverage>
+      <dc:coverage>Argentiina</dc:coverage>
+      <dc:coverage>Armenia</dc:coverage>
+      <dc:coverage>Australia</dc:coverage>
+      <dc:coverage>It&#228;valta</dc:coverage>
+      <dc:coverage>Azerbaidzan</dc:coverage>
+      <dc:coverage>Bahama</dc:coverage>
+      <dc:coverage>Bahrain</dc:coverage>
+      <dc:coverage>Bangladesh</dc:coverage>
+      <dc:coverage>Barbados</dc:coverage>
+      <dc:coverage>Valko-Ven&#228;j&#228;</dc:coverage>
+      <dc:coverage>Belgia</dc:coverage>
+      <dc:coverage>Belize</dc:coverage>
+      <dc:coverage>Benin</dc:coverage>
+      <dc:coverage>Bhutan</dc:coverage>
+      <dc:coverage>Bolivia</dc:coverage>
+      <dc:coverage>Bosnia ja Hertsegovina</dc:coverage>
+      <dc:coverage>Botswana</dc:coverage>
+      <dc:coverage>Brasilia</dc:coverage>
+      <dc:coverage>Brunei</dc:coverage>
+      <dc:coverage>Bulgaria</dc:coverage>
+      <dc:coverage>Burkina Faso</dc:coverage>
+      <dc:coverage>Myanmar (Burma)</dc:coverage>
+      <dc:coverage>Burundi</dc:coverage>
+      <dc:coverage>Kambodza</dc:coverage>
+      <dc:coverage>Kamerun</dc:coverage>
+      <dc:coverage>Kanada</dc:coverage>
+      <dc:coverage>Kap Verde</dc:coverage>
+      <dc:coverage>Keski-Afrikan tasavalta</dc:coverage>
+      <dc:coverage>Tsad</dc:coverage>
+      <dc:coverage>Chile</dc:coverage>
+      <dc:coverage>Kiina</dc:coverage>
+      <dc:coverage>Kolumbia</dc:coverage>
+      <dc:coverage>Komorit</dc:coverage>
+      <dc:coverage>Kongon demokraattinen tasavalta</dc:coverage>
+      <dc:coverage>Kongon tasavalta</dc:coverage>
+      <dc:coverage>Costa Rica</dc:coverage>
+      <dc:coverage>Norsunluurannikko (C&#244;te d'Ivoire)</dc:coverage>
+      <dc:coverage>Kroatia</dc:coverage>
+      <dc:coverage>Kuuba</dc:coverage>
+      <dc:coverage>Kypros</dc:coverage>
+      <dc:coverage>Tsekki</dc:coverage>
+      <dc:coverage>Tanska</dc:coverage>
+      <dc:coverage>Djibouti</dc:coverage>
+      <dc:coverage>Dominikaaninen tasavalta</dc:coverage>
+      <dc:coverage>It&#228;-Timor</dc:coverage>
+      <dc:coverage>Ecuador</dc:coverage>
+      <dc:coverage>Egypti</dc:coverage>
+      <dc:coverage>El Salvador</dc:coverage>
+      <dc:coverage>P&#228;iv&#228;ntasaajan Guinea</dc:coverage>
+      <dc:coverage>Eritrea</dc:coverage>
+      <dc:coverage>Viro</dc:coverage>
+      <dc:coverage>Etiopia</dc:coverage>
+      <dc:coverage>Fidzi</dc:coverage>
+      <dc:coverage>Suomi</dc:coverage>
+      <dc:coverage>Ranska</dc:coverage>
+      <dc:coverage>Gabon</dc:coverage>
+      <dc:coverage>Gambia</dc:coverage>
+      <dc:coverage>Georgia</dc:coverage>
+      <dc:coverage>Saksa</dc:coverage>
+      <dc:coverage>Ghana</dc:coverage>
+      <dc:coverage>Kreikka</dc:coverage>
+      <dc:coverage>Guatemala</dc:coverage>
+      <dc:coverage>Guinea</dc:coverage>
+      <dc:coverage>Guinea-Bissau</dc:coverage>
+      <dc:coverage>Guyana</dc:coverage>
+      <dc:coverage>Haiti</dc:coverage>
+      <dc:coverage>Honduras</dc:coverage>
+      <dc:coverage>Unkari</dc:coverage>
+      <dc:coverage>Islanti</dc:coverage>
+      <dc:coverage>Intia</dc:coverage>
+      <dc:coverage>Indonesia</dc:coverage>
+      <dc:coverage>Iran</dc:coverage>
+      <dc:coverage>Irak</dc:coverage>
+      <dc:coverage>Irlanti</dc:coverage>
+      <dc:coverage>Israel</dc:coverage>
+      <dc:coverage>Italia</dc:coverage>
+      <dc:coverage>Jamaika</dc:coverage>
+      <dc:coverage>Japani</dc:coverage>
+      <dc:coverage>Jordania</dc:coverage>
+      <dc:coverage>Kazakstan</dc:coverage>
+      <dc:coverage>Kenia</dc:coverage>
+      <dc:coverage>Pohjois-Korea</dc:coverage>
+      <dc:coverage>Etel&#228;-Korea</dc:coverage>
+      <dc:coverage>Kuwait</dc:coverage>
+      <dc:coverage>Kirgisia</dc:coverage>
+      <dc:coverage>Laos</dc:coverage>
+      <dc:coverage>Latvia</dc:coverage>
+      <dc:coverage>Libanon</dc:coverage>
+      <dc:coverage>Lesotho</dc:coverage>
+      <dc:coverage>Liberia</dc:coverage>
+      <dc:coverage>Libya</dc:coverage>
+      <dc:coverage>Liettua</dc:coverage>
+      <dc:coverage>Luxemburg</dc:coverage>
+      <dc:coverage>Makedonia</dc:coverage>
+      <dc:coverage>Madagaskar</dc:coverage>
+      <dc:coverage>Malawi</dc:coverage>
+      <dc:coverage>Malesia</dc:coverage>
+      <dc:coverage>Malediivit</dc:coverage>
+      <dc:coverage>Mali</dc:coverage>
+      <dc:coverage>Malta</dc:coverage>
+      <dc:coverage>Mauritania</dc:coverage>
+      <dc:coverage>Mauritius</dc:coverage>
+      <dc:coverage>Meksiko</dc:coverage>
+      <dc:coverage>Moldova</dc:coverage>
+      <dc:coverage>Mongolia</dc:coverage>
+      <dc:coverage>Marokko</dc:coverage>
+      <dc:coverage>Montenegro</dc:coverage>
+      <dc:coverage>Mosambik</dc:coverage>
+      <dc:coverage>Namibia</dc:coverage>
+      <dc:coverage>Nepal</dc:coverage>
+      <dc:coverage>Alankomaat</dc:coverage>
+      <dc:coverage>Uusi-Seelanti</dc:coverage>
+      <dc:coverage>Nicaragua</dc:coverage>
+      <dc:coverage>Niger</dc:coverage>
+      <dc:coverage>Nigeria</dc:coverage>
+      <dc:coverage>Norja</dc:coverage>
+      <dc:coverage>Oman</dc:coverage>
+      <dc:coverage>Pakistan</dc:coverage>
+      <dc:coverage>Panama</dc:coverage>
+      <dc:coverage>Papua-Uusi-Guinea</dc:coverage>
+      <dc:coverage>Paraguay</dc:coverage>
+      <dc:coverage>Peru</dc:coverage>
+      <dc:coverage>Filippiinit</dc:coverage>
+      <dc:coverage>Puola</dc:coverage>
+      <dc:coverage>Portugali</dc:coverage>
+      <dc:coverage>Qatar</dc:coverage>
+      <dc:coverage>Romania</dc:coverage>
+      <dc:coverage>Ven&#228;j&#228;</dc:coverage>
+      <dc:coverage>Ruanda</dc:coverage>
+      <dc:coverage>Saudi-Arabia</dc:coverage>
+      <dc:coverage>Senegal</dc:coverage>
+      <dc:coverage>Serbia</dc:coverage>
+      <dc:coverage>Sierra Leone</dc:coverage>
+      <dc:coverage>Singapore</dc:coverage>
+      <dc:coverage>Slovakia</dc:coverage>
+      <dc:coverage>Slovenia</dc:coverage>
+      <dc:coverage>Salomonsaaret</dc:coverage>
+      <dc:coverage>Somalia</dc:coverage>
+      <dc:coverage>Etel&#228;-Afrikka</dc:coverage>
+      <dc:coverage>Espanja</dc:coverage>
+      <dc:coverage>Sri Lanka</dc:coverage>
+      <dc:coverage>Sudan</dc:coverage>
+      <dc:coverage>Surinam</dc:coverage>
+      <dc:coverage>Swazimaa</dc:coverage>
+      <dc:coverage>Ruotsi</dc:coverage>
+      <dc:coverage>Sveitsi</dc:coverage>
+      <dc:coverage>Syyria</dc:coverage>
+      <dc:coverage>Taiwan</dc:coverage>
+      <dc:coverage>Tadzikistan</dc:coverage>
+      <dc:coverage>Tansania</dc:coverage>
+      <dc:coverage>Thaimaa</dc:coverage>
+      <dc:coverage>Togo</dc:coverage>
+      <dc:coverage>Trinidad ja Tobago</dc:coverage>
+      <dc:coverage>Tunisia</dc:coverage>
+      <dc:coverage>Turkki</dc:coverage>
+      <dc:coverage>Turkmenistan</dc:coverage>
+      <dc:coverage>Uganda</dc:coverage>
+      <dc:coverage>Ukraina</dc:coverage>
+      <dc:coverage>Arabiemiirikunnat</dc:coverage>
+      <dc:coverage>Iso-Britannia</dc:coverage>
+      <dc:coverage>Yhdysvallat</dc:coverage>
+      <dc:coverage>Uruguay</dc:coverage>
+      <dc:coverage>Uzbekistan</dc:coverage>
+      <dc:coverage>Venezuela</dc:coverage>
+      <dc:coverage>Vietnam</dc:coverage>
+      <dc:coverage>Jemen</dc:coverage>
+      <dc:coverage>Sambia</dc:coverage>
+      <dc:coverage>Zimbabwe</dc:coverage>
+      <dc:coverage>1980/2006</dc:coverage>
+      <dc:rights>Other (Not Open)</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

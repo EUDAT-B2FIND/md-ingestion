@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2017.0006/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Dragoni, Daniele</dc:creator>
+      <dc:creator>Daff, Tom</dc:creator>
+      <dc:creator>Csanyi, Gabor</dc:creator>
+      <dc:creator>Marzari, Nicola</dc:creator>
+      <dc:title>Gaussian Approximation Potentials for iron from extended first-principles database (Data Download)</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2017-06-21</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>Machine-learning</dc:subject>
+      <dc:subject>&#945;-iron</dc:subject>
+      <dc:subject>Gaussian approximation potentials</dc:subject>
+      <dc:subject>artificial neural networks</dc:subject>
+      <dc:subject>interatomic potentials</dc:subject>
+      <dc:subject>MARVEL</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2017.0006/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2017.0006/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Interatomic potentials are often necessary to describe complex realistic systems that would be too costly to study from first-principles. Commonly, interatomic potentials are designed using functional forms driven by physical intuition and fitted to experimental or computational data. The moderate flexibility of these functional forms limits their ability to be systematically improved by increasing the fitting datasets; on the other hand, their qualitative description of the essential physical interactions ensures a modicum degree of transferability. Recently, a novel trend has emerged where potential-energy surfaces are represented by neural networks fitted on large numbers of first-principles calculations, thus maximizing flexibility but requiring extensive datasets to ensure transferability. Gaussian Approximation Potentials in particular are a novel class of potentials based on non-linear, non-parametric Gaussian-process regression. Here we generate a Gaussian Approximation model for the &#945;-phase of iron training on energies, stresses and forces taken from first-principles molecular dynamics simulations of pristine and defected bulk systems, of surfaces and &#947;-surfaces with different crystallographic orientations.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

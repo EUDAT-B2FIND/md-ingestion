@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/gzip",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/255",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/255"
+    ],
+    "PID": "http://hdl.handle.net/11321/255",
+    "PublicationTimestamp": "2016-04-30T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Patejuk, Agnieszka"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/255;2016-05-05T12:22:01Z;hdl_11321_3;hdl_11321_4;POLFIE Bank, an LFG structure bank of Polish: pol-nkjp1m-pargram-dev;Patejuk, Agnieszka;syntax;LFG;Polish;treebank;parsebank;The pol-nkjp1m-pargram-dev structure bank was created using POLFIE: an LFG grammar of Polish. This structure bank contains sentences from the NKJP1M subcorpus of NKJP which were not included in Sk\u0142adnica treebank.\r\n\r\nThe pol-nkjp1m-pargram-dev structure bank can be accessed via INESS treebanking system in two ways:\r\n\u2022 use the direct link: http://clarino.uib.no/iness/lfg-sentences?&treebank=pol-nkjp1m-pargram-dev\r\n\u2022 go to http://iness.uib.no --> choose \"Treebank Selection\" in the menu on the left-hand side --> choose \"POLFIE\" in \"Treebank Collections\" --> choose pol-nkjp1m-pargram-dev;2016-04-30;corpus;http://hdl.handle.net/11321/255;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;application/gzip;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/LFG",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e51cbf25-1d41-556b-ba2e-64564cb9e463",
+    "notes": [
+        "The pol-nkjp1m-pargram-dev structure bank was created using POLFIE: an LFG grammar of Polish. This structure bank contains sentences from the NKJP1M subcorpus of NKJP which were not included in Sk\u0142adnica treebank.\r\n\r\nThe pol-nkjp1m-pargram-dev structure bank can be accessed via INESS treebanking system in two ways:\r\n\u2022 use the direct link: http://clarino.uib.no/iness/lfg-sentences?&treebank=pol-nkjp1m-pargram-dev\r\n\u2022 go to http://iness.uib.no --> choose \"Treebank Selection\" in the menu on the left-hand side --> choose \"POLFIE\" in \"Treebank Collections\" --> choose pol-nkjp1m-pargram-dev"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/255"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "syntax"
+        },
+        {
+            "name": "LFG"
+        },
+        {
+            "name": "Polish"
+        },
+        {
+            "name": "treebank"
+        },
+        {
+            "name": "parsebank"
+        }
+    ],
+    "title": [
+        "POLFIE Bank, an LFG structure bank of Polish: pol-nkjp1m-pargram-dev"
+    ],
+    "url": ""
+}

@@ -1,0 +1,82 @@
+{
+    "Checksum": null,
+    "Contact": [
+        "N/A"
+    ],
+    "Discipline": "Physics",
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": "N/A",
+    "PublicationTimestamp": "2000-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "author": [
+        "Marcello Maggi"
+    ],
+    "fulltext": [
+        "\n    ",
+        "oai:www.openaccessrepository.it:7322",
+        "2016-06-29T14:35:14Z",
+        "dataset:aleph",
+        "openaire",
+        "irods://data.repo.cineca.it:1247/CINECA01/home/DRES_EUDalep/dati/ZD4001.83.AL,11100/a2b58078-cbe9-11e3-b259-e41f13eb41b2eng",
+        "00000coc  2200000uu 4500",
+        "7322",
+        "20160629143514.0",
+        "Handle",
+        "irods://data.repo.cineca.it:1247/CINECA01/home/DRES_EUDalep/dati/ZD4001.83.AL,11100/a2b58078-cbe9-11e3-b259-e41f13eb41b2",
+        "HEP CERN LEP ALEPH MINI RealData 2000",
+        "DATASETREALDATA",
+        "Marcello Maggi",
+        "1621536175",
+        "311556960",
+        "Search for neutral Higgs bosons decaying into four taus at LEP2",
+        "10.1007/JHEP05(2010)049",
+        "2010",
+        "[1]",
+        "PUBLICATIONINFN-2014-001",
+        "[1]",
+        "10.5072/oar.it/1411041136.04 ",
+        "ALEPH SCL5 Virtual Machine for Research Environment",
+        "SOFTWAREALEPH-2014-001",
+        "[2]",
+        "ALEPH Collaboration",
+        "irods://data.repo.cineca.it:1247/CINECA01/home/DRES_EUDalep/dati/ZD4001.83.AL",
+        "ALEPH",
+        "oai:www.openaccessrepository.it:7322",
+        "openaire",
+        "dataset:aleph",
+        "ALEPH",
+        "LEP Data from The ALEPH Collaboration year 2000 datafile ZD4001.83.AL",
+        "2014-09-01",
+        "ALEPH",
+        "Run contents for this data file <table border=\"1\"> <tr> <th>Run #</th><th>Nevents</th><th>Length (Mb)</th><th>LEP energy</th><th>Nb of Z0s</th></tr> <tr> <td>58271</td><td>6926</td><td>18.360</td><td>206.351</td><td>17</td></tr> <tr> <td>58273</td><td>17027</td><td>46.975</td><td>206.359</td><td>19</td></tr> <tr> <td>58274</td><td>1938</td><td>4.875</td><td>206.369</td><td>4</td></tr> <tr> <td>58276</td><td>16588</td><td>45.521</td><td>206.388</td><td>11</td></tr> <tr> <td>58277</td><td>7542</td><td>19.622</td><td>206.392</td><td>11</td></tr> <tr> <td>58278</td><td>1256</td><td>2.983</td><td>207.984</td><td>1</td></tr> <tr> <td>58280</td><td>1243</td><td>3.415</td><td>206.384</td><td>1</td></tr> <tr> <td>58282</td><td>9774</td><td>26.566</td><td>206.415</td><td>9</td></tr> <tr> <td>58283</td><td>2254</td><td>5.174</td><td>207.787</td><td>4</td></tr> <tr> <td>58289</td><td>3201</td><td>8.339</td><td>206.357</td><td>6</td></tr> <tr> <td>58291</td><td>3756</td><td>10.594</td><td>206.380</td><td>3</td></tr> <tr> <td>58297</td><td>16650</td><td>46.841</td><td>206.342</td><td>18</td></tr> <tr> <td>58298</td><td>3433</td><td>9.622</td><td>206.336</td><td>3</td></tr> <tr> <td>58299</td><td>4214</td><td>10.381</td><td>207.729</td><td>3</td></tr> <tr> <td>58302</td><td>15948</td><td>42.552</td><td>206.310</td><td>24</td></tr> <tr> <td>58303</td><td>3340</td><td>8.198</td><td>207.753</td><td>1</td></tr> <tr></table> Total file length :   305.594 Mbytes",
+        "ALEPH - INFN",
+        "High Energy Physics",
+        "2000",
+        "eng",
+        "Researchers",
+        "info:eu-repo/semantics/other",
+        "Marcello Maggi"
+    ],
+    "notes": [
+        "Run contents for this data file <table border=\"1\"> <tr> <th>Run #</th><th>Nevents</th><th>Length (Mb)</th><th>LEP energy</th><th>Nb of Z0s</th></tr> <tr> <td>58271</td><td>6926</td><td>18.360</td><td>206.351</td><td>17</td></tr> <tr> <td>58273</td><td>17027</td><td>46.975</td><td>206.359</td><td>19</td></tr> <tr> <td>58274</td><td>1938</td><td>4.875</td><td>206.369</td><td>4</td></tr> <tr> <td>58276</td><td>16588</td><td>45.521</td><td>206.388</td><td>11</td></tr> <tr> <td>58277</td><td>7542</td><td>19.622</td><td>206.392</td><td>11</td></tr> <tr> <td>58278</td><td>1256</td><td>2.983</td><td>207.984</td><td>1</td></tr> <tr> <td>58280</td><td>1243</td><td>3.415</td><td>206.384</td><td>1</td></tr> <tr> <td>58282</td><td>9774</td><td>26.566</td><td>206.415</td><td>9</td></tr> <tr> <td>58283</td><td>2254</td><td>5.174</td><td>207.787</td><td>4</td></tr> <tr> <td>58289</td><td>3201</td><td>8.339</td><td>206.357</td><td>6</td></tr> <tr> <td>58291</td><td>3756</td><td>10.594</td><td>206.380</td><td>3</td></tr> <tr> <td>58297</td><td>16650</td><td>46.841</td><td>206.342</td><td>18</td></tr> <tr> <td>58298</td><td>3433</td><td>9.622</td><td>206.336</td><td>3</td></tr> <tr> <td>58299</td><td>4214</td><td>10.381</td><td>207.729</td><td>3</td></tr> <tr> <td>58302</td><td>15948</td><td>42.552</td><td>206.310</td><td>24</td></tr> <tr> <td>58303</td><td>3340</td><td>8.198</td><td>207.753</td><td>1</td></tr> <tr></table> Total file length :   305.594 Mbytes"
+    ],
+    "oai_identifier": [
+        "oai:www.openaccessrepository.it:7322"
+    ],
+    "oai_set": [
+        "dataset:aleph",
+        "openaire"
+    ],
+    "tags": [
+        {
+            "name": "HEP CERN LEP ALEPH MINI RealData"
+        }
+    ],
+    "title": [
+        "LEP Data from The ALEPH Collaboration year 2000 datafile ZD4001.83.AL"
+    ]
+}

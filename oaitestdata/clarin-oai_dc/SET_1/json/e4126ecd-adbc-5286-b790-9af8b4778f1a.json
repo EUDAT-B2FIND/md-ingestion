@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f94c95eccf2a11e1a404080027e73ea21c554786f12a4d30b7bb752af7f8a917",
+    "MetadataAccess": [
+        "f94c95eccf2a11e1a404080027e73ea21c554786f12a4d30b7bb752af7f8a917"
+    ],
+    "PublicationTimestamp": "2012-07-25T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "f94c95eccf2a11e1a404080027e73ea21c554786f12a4d30b7bb752af7f8a917;2019-02-27T12:09:06Z;lexicalConceptualResource;lexicalConceptualResource:lexicon;MWN.PT - MultiWordnet du portugais \n;MWN.PT - MultiWordnet du portugais (version 1) contient plus de 17200 concepts valid\u00c3\u00a9s manuellement (synsets), reli\u00c3\u00a9s par relations s\u00c3\u00a9mantiques d\u00e2\u0080\u0099hyponymie ou d\u00e2\u0080\u0099hyperonymie. Ces concepts sont constitu\u00c3\u00a9s de plus de 21000 sens/formes de mots et 16000 lemmes de variantes europ\u00c3\u00a9ennes et am\u00c3\u00a9ricaines du portugais. Ils sont align\u00c3\u00a9s de fa\u00c3\u00a7on translationnelle aux concepts \u00c3\u00a9quivalents du WordNet anglais de Princeton et de fa\u00c3\u00a7on transitive aux concepts des MultiWordNets italien, espagnol, h\u00c3\u00a9breu, roumain et latin. Il peut \u00c3\u00aatre consult\u00c3\u00a9 en ligne sur : http://mwnpt.di.fc.ul.pt.MWN.PT comprend les sous-ontologies d\u00c3\u00a9finies sous les concepts de Personne, Organisation, Ev\u00c3\u00a9nement, Lieux et Art, qui sont couverts par l\u00e2\u0080\u0099ontologie sup\u00c3\u00a9rieure constitu\u00c3\u00a9e des \u00c3\u00a9quivalents portugais de tous les concepts pr\u00c3\u00a9sents dans les 4 niveaux sup\u00c3\u00a9rieurs du WordNet anglais de Princeton et des 98 concepts de base propos\u00c3\u00a9s par la Global Wordnet Association, ainsi que des 164 concepts de base (Core Base Concepts) d\u00c3\u00a9finis dans le projet EuroWordNet.\n;2012-07-25",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e4126ecd-adbc-5286-b790-9af8b4778f1a",
+    "notes": [
+        "MWN.PT - MultiWordnet du portugais (version 1) contient plus de 17200 concepts valid\u00c3\u00a9s manuellement (synsets), reli\u00c3\u00a9s par relations s\u00c3\u00a9mantiques d\u00e2\u0080\u0099hyponymie ou d\u00e2\u0080\u0099hyperonymie. Ces concepts sont constitu\u00c3\u00a9s de plus de 21000 sens/formes de mots et 16000 lemmes de variantes europ\u00c3\u00a9ennes et am\u00c3\u00a9ricaines du portugais. Ils sont align\u00c3\u00a9s de fa\u00c3\u00a7on translationnelle aux concepts \u00c3\u00a9quivalents du WordNet anglais de Princeton et de fa\u00c3\u00a7on transitive aux concepts des MultiWordNets italien, espagnol, h\u00c3\u00a9breu, roumain et latin. Il peut \u00c3\u00aatre consult\u00c3\u00a9 en ligne sur : http://mwnpt.di.fc.ul.pt.MWN.PT comprend les sous-ontologies d\u00c3\u00a9finies sous les concepts de Personne, Organisation, Ev\u00c3\u00a9nement, Lieux et Art, qui sont couverts par l\u00e2\u0080\u0099ontologie sup\u00c3\u00a9rieure constitu\u00c3\u00a9e des \u00c3\u00a9quivalents portugais de tous les concepts pr\u00c3\u00a9sents dans les 4 niveaux sup\u00c3\u00a9rieurs du WordNet anglais de Princeton et des 98 concepts de base propos\u00c3\u00a9s par la Global Wordnet Association, ainsi que des 164 concepts de base (Core Base Concepts) d\u00c3\u00a9finis dans le projet EuroWordNet.\n"
+    ],
+    "oai_identifier": [
+        "f94c95eccf2a11e1a404080027e73ea21c554786f12a4d30b7bb752af7f8a917"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:lexicon"
+    ],
+    "state": "active",
+    "title": [
+        "MWN.PT - MultiWordnet du portugais \n"
+    ]
+}

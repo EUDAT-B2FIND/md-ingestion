@@ -1,0 +1,17 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-EN2M70</oai:identifier>
+    <oai:datestamp>2016-02-05T15:15:05Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oaidc:dc xmlns:oaidc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:vor="http://www.ivoa.net/xml/VOResource/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/                                http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Spitzer Wide-area InfraRed Extragalactic Survey ELAIS-N2 MIPS 70 micron Catalog</dc:title>
+      <dc:identifier>ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-EN2M70</dc:identifier>
+      <dc:publisher>NASA/IPAC Infrared Science Archive</dc:publisher>
+      <dc:creator>SWIRE team</dc:creator>
+      <dc:subject>extragalactic survey</dc:subject>
+      <dc:description>The Spitzer Wide-area InfraRed Extragalactic survey (SWIRE), the largest Spitzer Legacy program, is a wide-area, imaging survey to trace the evolution of dusty, star-forming galaxies, evolved stellar populations, and AGN as a function of environment, from redshifts z~3 to the current epoch. SWIRE surveys 6 high-latitude fields, totaling ~50 sq. deg. in all 7 Spitzer bands: 3.6, 4.5, 5.8, and 8 microns with IRAC and 24, 70, and 160 microns with MIPS (Lonsdale et al. 2003). The SWIRE Legacy Extragalactic Source Catalogs will eventually contain in excess of 2 million IR-selected galaxies, from those dominated by the light of stellar populations detected primarily by IRAC, to starbursts, ultra-luminous infrared galaxies and AGN detected also by MIPS.</dc:description>
+      <dc:type>Catalog</dc:type>
+    </oaidc:dc>
+  </oai:metadata>
+</oai:record>

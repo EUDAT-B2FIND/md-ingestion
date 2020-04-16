@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "pfleischer@lesytanap.sk"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "Research site"
+    ],
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0c820dd9-e935-52a0-8d1e-cecdb814b75e",
+    "Publisher": [
+        "State Forests of Tatra National Park",
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(49N,20E)",
+    "author": [
+        "Peter Fleischer"
+    ],
+    "fulltext": "f7b73d7c-068f-4406-b4e8-13e5c6e212b9;English;utf8;dataset;Research site;Peter Fleischer;LTER Europe;pfleischer@lesytanap.sk;\u0160t\u00e1tne lesy TANAPu Tatransk\u00e1 Lomnica 059 60 SK;State Forests of Tatra National Park;State Forests of Tatra National Park;Peter Fleischer;LTER Europe;pfleischer@lesytanap.sk;\u0160t\u00e1tne lesy TANAPu Tatransk\u00e1 Lomnica 059 60 SK;State Forests of Tatra National Park;2018-09-24;http://www.opengis.net/def/crs/EPSG/0/4326;Tatra National Park;https://deims.org/site/f7b73d7c-068f-4406-b4e8-13e5c6e212b9;The spruce forest ecosystem has been intensively studied since 1990s (resistance to pollution, insect infestation, weather extremes). After large-scale destruction by wind (12,000 ha) in 2004, consequent bark beetle outbreak (7,000 ha) and fire, the research was focused to four research plots (min. 100 ha each). Three of them were damaged by wind disturbance: plot NEX without forestry management (no timber extraction, no afforestation); plot EXT from which timber was extracted and the plot was afforested; plot FIR damaged by fire one year after the wind disturbance. The last plot (REF) is not affected by wind disturbance (reference plot). The monitoring equipment (meteorological stations, dendrometres, transpiration flow sensors, soil lysimeters, precipitation collectors, etc.) was installed in each plot. The focus was mainly on monitoring the spatial variability of soil, vegetation and zoocenoses. Our studies confirmed permanent disturbance regime on the affected area and unexpectedly fast and successful regeneration of ecosystem after damage. The intense, but short-term increase in nutrient flows (especially nitrogen) and the renewal of carbon sequestration confirm the adaptation of ecosystems to this disturbance regime. We found increase in biodiversity (abundance and diversity of fauna and flora) caused by disturbance. Future risk poses projected warming which might dramatically change growing condition for dominant tree species and increase population of bark beetles.;The original metadata record was created using DEIMS-SDR, the Dynamic Ecological Information Management System - Site and dataset registry;Peter Fleischer;LTER Europe;pfleischer@lesytanap.sk;\u0160t\u00e1tne lesy TANAPu Tatransk\u00e1 Lomnica 059 60 SK;State Forests of Tatra National Park;State Forests of Tatra National Park;Peter Fleischer;LTER Europe;pfleischer@lesytanap.sk;\u0160t\u00e1tne lesy TANAPu Tatransk\u00e1 Lomnica 059 60 SK;State Forests of Tatra National Park;site;emf2iso_pointer_record;atmospheric parameter;precipitation intensity;wind direction;wind speed;biological parameter;plant transpiration;ecosystem parameter;above ground net primary production;fire severity index;disturbance pattern;ecosystem structure;abiotic heterogeneity;forest structure;canopy cover rate;canopy gap area;leaf area;leaf area index;nitrogen content;percent carbon;percent organic carbon;plant carbon concentration;community composition;diversity index;floristic diversity;faunistic diversity;species composition;plant species composition;species richness;species abundance;plant cover;Terrestrial;continuousDataCollection;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;English;environment;20.169200000000;20.169200000000;49.144200000000;49.144200000000;2005-01-01;https://deims.org/f7b73d7c-068f-4406-b4e8-13e5c6e212b9;http://www.lesytanap.sk;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='f7b73d7c-068f-4406-b4e8-13e5c6e212b9'&outputFormat=SHAPE-ZIP;WFS GetFeature request for downloading the data set in SHP format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='f7b73d7c-068f-4406-b4e8-13e5c6e212b9'&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2;WFS GetFeature request for downloading the data set in GML 3.2 format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='f7b73d7c-068f-4406-b4e8-13e5c6e212b9'&outputFormat=application%2Fjson;WFS GetFeature request for downloading the data set in GeoJSON format;https://deims.org/node/218;Slovakia (LTER Slovakia);COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;This data set is conformant with the INSPIRE Implementing Rules for the interoperability of spatial data sets and services;false;Dataset has been created by data transformation from the original record collected by the site managers using DEIMS site metadata editing form.",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0c820dd9-e935-52a0-8d1e-cecdb814b75e",
+    "notes": [
+        "The spruce forest ecosystem has been intensively studied since 1990s (resistance to pollution, insect infestation, weather extremes). After large-scale destruction by wind (12,000 ha) in 2004, consequent bark beetle outbreak (7,000 ha) and fire, the research was focused to four research plots (min. 100 ha each). Three of them were damaged by wind disturbance: plot NEX without forestry management (no timber extraction, no afforestation); plot EXT from which timber was extracted and the plot was afforested; plot FIR damaged by fire one year after the wind disturbance. The last plot (REF) is not affected by wind disturbance (reference plot). The monitoring equipment (meteorological stations, dendrometres, transpiration flow sensors, soil lysimeters, precipitation collectors, etc.) was installed in each plot. The focus was mainly on monitoring the spatial variability of soil, vegetation and zoocenoses. Our studies confirmed permanent disturbance regime on the affected area and unexpectedly fast and successful regeneration of ecosystem after damage. The intense, but short-term increase in nutrient flows (especially nitrogen) and the renewal of carbon sequestration confirm the adaptation of ecosystems to this disturbance regime. We found increase in biodiversity (abundance and diversity of fauna and flora) caused by disturbance. Future risk poses projected warming which might dramatically change growing condition for dominant tree species and increase population of bark beetles."
+    ],
+    "oai_identifier": [
+        "0c820dd9-e935-52a0-8d1e-cecdb814b75e"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[20.169200000000,49.144200000000],[20.169200000000,49.144200000000],[20.169200000000,49.144200000000],[20.169200000000,49.144200000000],[20.169200000000,49.144200000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "site"
+        },
+        {
+            "name": "emfiso_pointer_record"
+        },
+        {
+            "name": "atmospheric parameter"
+        },
+        {
+            "name": "precipitation intensity"
+        },
+        {
+            "name": "wind direction"
+        },
+        {
+            "name": "wind speed"
+        },
+        {
+            "name": "biological parameter"
+        },
+        {
+            "name": "plant transpiration"
+        },
+        {
+            "name": "ecosystem parameter"
+        },
+        {
+            "name": "ground net primary production"
+        },
+        {
+            "name": "fire severity index"
+        },
+        {
+            "name": "disturbance pattern"
+        }
+    ],
+    "title": [
+        "Tatra National Park"
+    ],
+    "url": "https://deims.org/node/218"
+}

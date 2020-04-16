@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Horton, Tom"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 75 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1510",
+    "MetadataAccess": [
+        "oai:ota:oucs:1510"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Shakespeare, William, 1564-1616"
+    ],
+    "fulltext": "oai:ota:oucs:1510;2018-02-16T10:42:06Z;http://ota.ox.ac.uk/headers/1510.xml;Comedy of errors : [1793] / William Shakespeare;Shakespeare, William, 1564-1616;text_and_corpus_linguistics;English drama -- Early modern and Elizabethan, 1500-1600;Oxford Text Archive, University of Oxford;Horton, Tom;(1 file : ca. 75 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c28b07d3-e51f-5e68-b4cb-fe4411455f3f",
+    "oai_identifier": [
+        "oai:ota:oucs:1510"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- Early modern Elizabethan"
+        }
+    ],
+    "title": [
+        "Comedy of errors : [1793] / William Shakespeare"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1510.xml"
+}

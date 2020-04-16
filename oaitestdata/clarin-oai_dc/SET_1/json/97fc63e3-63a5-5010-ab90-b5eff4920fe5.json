@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5639",
+    "MetadataAccess": [
+        "oai:ota:oucs:5639"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hey, Mrs."
+    ],
+    "fulltext": "oai:ota:oucs:5639;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5639.xml;A generous discovery of many curious and useful medicines and preparations, both in physic, chymistry, cookery, and stiffenry; as a drink for the small pox, ... To be had at Mrs. Hey's near the Wax-candle in St. Andrew's Norwich;Hey, Mrs.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "97fc63e3-63a5-5010-ab90-b5eff4920fe5",
+    "oai_identifier": [
+        "oai:ota:oucs:5639"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A generous discovery of many curious and useful medicines and preparations, both in physic, chymistry, cookery, and stiffenry; as a drink for the small pox, ... To be had at Mrs. Hey's near the Wax-candle in St. Andrew's Norwich"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5639.xml"
+}

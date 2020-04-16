@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "g.morabito@ise.cnr.it",
+        "m.coci@ise.cnr.it"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0a48d7d8-120d-5397-ac5b-56f69691d825",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Co-authorship on publications resulting from use of the dataset"
+    ],
+    "SpatialCoverage": "(46N-46N,9 E-8 E)",
+    "author": [
+        "Giuseppe Morabito",
+        "Manuela Coci"
+    ],
+    "fulltext": "d9e94776-e7a8-11e2-a655-005056ab003f;English;utf8;dataset;Manuela Coci;LTER Europe;Largo Tonolli, 50;Verbania Pallanza;VB;28900;IT;m.coci@ise.cnr.it;pointOfContact;Giuseppe Morabito;LTER Europe;Largo Tonolli 50;Verbania;VB;28900;IT;g.morabito@ise.cnr.it;pointOfContact;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;Biovolume of Phytoplankton in Lake Maggiore site code IT_SI001137_within the period 1981 - 2010;2018-09-24;publication;urn:ltereurope:inspire::8932:26499;Lago Maggiore - Italy;Manuela Coci;LTER Europe;Largo Tonolli, 50;Verbania Pallanza;VB;28900;IT;m.coci@ise.cnr.it;pointOfContact;documentDigital;Dataset provides information about biovolume of phytoplankton collected in Lake Maggiore from 1981 to 2010.;completed;Manuela Coci;LTER Europe;Largo Tonolli, 50;Verbania Pallanza;VB;28900;IT;m.coci@ise.cnr.it;pointOfContact;Giuseppe Morabito;LTER Europe;Largo Tonolli 50;Verbania;VB;28900;IT;g.morabito@ise.cnr.it;pointOfContact;continual;Representative area of sampling: _unknown Sampling frequency - sampling time span: monthly Sampling frequency - minimum sampling unit: _unknown;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;Asterionella formosa;Tabellaria simplex;Diatoms;Biological Classification;Changes in population size over time;phytoplankton;Permanent oligotrophic lakes, ponds and pools;LTER Controlled Vocabulary;Co-authorship on publications resulting from use of the dataset;The principal: Research has granted the access and use permission: Free for access;eng;environment;8.619120000000;8.479040000000;45.837170000000;45.940410000000;194.00;194;urn:ogc:def:crs:EPSG;MSL height;Not specific to any location or epoch.;Hydrography.;Representative area of sampling: _unknown;ground condition;1980-12-31;2010-12-30;ftp://KU2253_2@ftp.umweltbundesamt.at/KnownUsers/2253_2/EnvEurope_DataCollection/;WWW:DOWNLOAD-1.0-http--download;ftp://ftp.umweltbundesamt.at/;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy;2000-10-23;publication;See the referenced specification;Method description: na. Method URL: . Instrumentation: Optical Microscope;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0a48d7d8-120d-5397-ac5b-56f69691d825",
+    "notes": [
+        "Dataset provides information about biovolume of phytoplankton collected in Lake Maggiore from 1981 to 2010."
+    ],
+    "oai_identifier": [
+        "0a48d7d8-120d-5397-ac5b-56f69691d825"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[8.619120000000,45.837170000000],[8.619120000000,45.940410000000],[8.479040000000,45.940410000000],[8.479040000000,45.837170000000],[8.619120000000,45.837170000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Asterionella formosa"
+        },
+        {
+            "name": "Tabellaria simplex"
+        },
+        {
+            "name": "Diatoms"
+        },
+        {
+            "name": "Changes population size time"
+        },
+        {
+            "name": "phytoplankton"
+        },
+        {
+            "name": "Permanent oligotrophic lakes"
+        },
+        {
+            "name": "ponds pools"
+        }
+    ],
+    "title": [
+        "Biovolume of Phytoplankton in Lake Maggiore site code IT_SI001137_within the period 1981 - 2010"
+    ],
+    "url": ""
+}

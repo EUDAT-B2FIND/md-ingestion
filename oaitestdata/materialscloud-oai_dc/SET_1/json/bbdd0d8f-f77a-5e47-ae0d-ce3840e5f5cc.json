@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0013/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0013/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0013/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-07-31T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Barthel, Senja",
+        "Braun, Efrem",
+        "Smit, Berend",
+        "Lee, Yongjin",
+        "Proserpio, Davide M.",
+        "Baburin, Igor A.",
+        "Mercado, Rocio",
+        "Moosavi, Seyed Mohamad"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0013/v1;2019-06-12Z;DOI;Dataset;Braun, Efrem;Lee, Yongjin;Moosavi, Seyed Mohamad;Barthel, Senja;Mercado, Rocio;Baburin, Igor A.;Proserpio, Davide M.;Smit, Berend;Generating carbon schwarzites via zeolite-templating;Materials Cloud;2018-07-31;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;schwarzites;carbon materials;ZTC;TPMS;MARVEL;doi:10.24435/materialscloud:2018.0013/v1;https://archive.materialscloud.org/2018.0013/v1;en;Zeolite-templated carbons (ZTCs) comprise a relatively recent material class synthesized via the chemical vapor deposition of a carbon-containing precursor on a zeolite template, followed by the removal of the template. We have developed a theoretical framework to generate a ZTC model from any given zeolite structure, which we show can successfully predict the structure of known ZTCs. We use our method to generate a library of ZTCs from all known zeolites, to establish criteria for which zeolites can produce experimentally accessible ZTCs, and to identify over 10 ZTCs that have never before been synthesized. We show that ZTCs partition space into two disjoint labyrinths that can be described by a pair of interpenetrating nets. Since such a pair of nets also describes a triply periodic minimal surface (TPMS), our results establish the relationship between ZTCs and schwarzites\u2014carbon materials with negative Gaussian curvature that resemble TPMSs\u2014linking the research topics and demonstrating that schwarzites should no longer be thought of as purely hypothetical materials.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "bbdd0d8f-f77a-5e47-ae0d-ce3840e5f5cc",
+    "notes": [
+        "Zeolite-templated carbons (ZTCs) comprise a relatively recent material class synthesized via the chemical vapor deposition of a carbon-containing precursor on a zeolite template, followed by the removal of the template. We have developed a theoretical framework to generate a ZTC model from any given zeolite structure, which we show can successfully predict the structure of known ZTCs. We use our method to generate a library of ZTCs from all known zeolites, to establish criteria for which zeolites can produce experimentally accessible ZTCs, and to identify over 10 ZTCs that have never before been synthesized. We show that ZTCs partition space into two disjoint labyrinths that can be described by a pair of interpenetrating nets. Since such a pair of nets also describes a triply periodic minimal surface (TPMS), our results establish the relationship between ZTCs and schwarzites\u2014carbon materials with negative Gaussian curvature that resemble TPMSs\u2014linking the research topics and demonstrating that schwarzites should no longer be thought of as purely hypothetical materials."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0013/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "schwarzites"
+        },
+        {
+            "name": "carbon materials"
+        },
+        {
+            "name": "ZTC"
+        },
+        {
+            "name": "TPMS"
+        },
+        {
+            "name": "MARVEL"
+        }
+    ],
+    "title": [
+        "Generating carbon schwarzites via zeolite-templating"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0013/v1"
+}

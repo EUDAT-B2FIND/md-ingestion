@@ -1,0 +1,55 @@
+{
+    "Contact": [
+        "http://b2share.eudat.eu"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/f59030f3d81a48958f5e529db6507b2c",
+    "PID": "http://hdl.handle.net/11304/01f56006-8401-4bbd-847c-1268914e7788",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "http://b2share.eudat.eu"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/01f56006-8401-4bbd-847c-1268914e7788",
+        "https://b2share.eudat.eu/api/records/f59030f3d81a48958f5e529db6507b2c",
+        "oai:b2share.eudat.eu:b2rec/f59030f3d81a48958f5e529db6507b2c"
+    ],
+    "ResourceType": [
+        "Other"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Jonas Berndt"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/f59030f3d81a48958f5e529db6507b2c;2018-01-11T13:49:14Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;Jonas Berndt;2016-12-22T10:28:37.103265+00:00;labelled wind data for 128 member, 4 towers, a 6h interval. Global models are featured from 0 to 16. 1 month of data (November 2014);http://hdl.handle.net/11304/01f56006-8401-4bbd-847c-1268914e7788;https://b2share.eudat.eu/api/records/f59030f3d81a48958f5e529db6507b2c;oai:b2share.eudat.eu:b2rec/f59030f3d81a48958f5e529db6507b2c;en;http://b2share.eudat.eu;info:eu-repo/semantics/openAccess;Libvsm format wind data 6h interval 1 month;Other",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "0ccb6d95-b88e-5570-83c4-286f0654988c",
+    "notes": [
+        "labelled wind data for 128 member, 4 towers, a 6h interval. Global models are featured from 0 to 16. 1 month of data (November 2014)"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/f59030f3d81a48958f5e529db6507b2c"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "title": [
+        "Libvsm format wind data 6h interval 1 month"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/f59030f3d81a48958f5e529db6507b2c"
+}

@@ -1,0 +1,25 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://org.gavo.dc/bgds/q/sia</oai:identifier>
+    <oai:datestamp>2018-12-21T17:01:29Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:title>Bochum Galactic Disk Survey (BGDS) SIAP service</dc:title>
+      <dc:identifier>ivo://org.gavo.dc/bgds/q/sia</dc:identifier>
+      <dc:creator>Hackstein, M.</dc:creator>
+      <dc:creator>Haas, M.</dc:creator>
+      <dc:creator>Fein, C.</dc:creator>
+      <dc:creator>Chini, R.</dc:creator>
+      <dc:description> The Bochum Galactic Disk Survey is an ongoing project to monitor the
+        stellar content of the Galactic disk in a 6 degree wide stripe
+        centered on the Galactic plane. The data has been recorded since
+        mid-2010 in Sloan r and i simultaneously with the RoBoTT Telecsope at
+        the Universitaetssternwarte Bochum near Cerro Armazones in the Chilean
+        Atacama desert. It contains measurements of about 2x10^7 stars over
+        more than seven years. Additionally, intermittent measurements in
+        Johnson UVB and Sloan z have been recorded as well.</dc:description>
+      <dc:publisher>The GAVO DC team</dc:publisher>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

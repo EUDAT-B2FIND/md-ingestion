@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "marty@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "TXT",
+        "CSV"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/15",
+    "PublicationTimestamp": "2017-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "WSL Institute for Snow and Avalanche Research SLF"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Christoph Marty"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/15;2018-07-12T11:01:15Z;doi:10.16904/15;Eng;MD_CharacterSetCode_utf8;Christoph Marty;WSL Institute for Snow and Avalanche Research SLF;marty@slf.ch;2017-03-02T08:50:47;ISO 19115:2003/19139;1.0;EPSG:4326;GCOS SWE data from 11 stations in Switzerland;2017-12-31;Snowprofile from 11 observer sites in Switzerland compiled for the Global Climate Observing System (GCOS).  Height of snow (cm) and snow water equivalent (mm) are recorded every 2 weeks since the 1947 (depending on station). Attached metadata file gives details of each station.;Christoph Marty;WSL Institute for Snow and Avalanche Research SLF;marty@slf.ch;GCOS;SNOW HEIGHT;SNOW WATER EQUIVALENT;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;7.890192955 46.55818213;8.591917728 46.63294615;8.395290837 46.79121008;8.308282838 46.50461379;7.751164932 46.02340309;9.848163035 46.81254897;9.895973081 46.86057949;9.8092511 46.82938238;9.184634236 46.46326154;10.41934353 46.59981095;9.962675638 46.60433181;TXT;CSV;https://www.envidat.ch/dataset/gcos-swe-data;HTTPS;DATASET METADATA;information;http://montblanc.slf.ch/owncloud/index.php/s/v4a9zjZRoOOr4Ss/download?path=%2F&files=metadata.txt;HTTP;STATION METADATA;download;http://montblanc.slf.ch/owncloud/index.php/s/v4a9zjZRoOOr4Ss;HTTP;DATA ACCESS;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "a71f9f2f-0102-5807-84d8-602d16646f65",
+    "notes": [
+        "Snowprofile from 11 observer sites in Switzerland compiled for the Global Climate Observing System (GCOS).  Height of snow (cm) and snow water equivalent (mm) are recorded every 2 weeks since the 1947 (depending on station). Attached metadata file gives details of each station."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/15",
+        "oai:envidat.ch:10.16904/15"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "GCOS"
+        },
+        {
+            "name": "SNOW HEIGHT"
+        },
+        {
+            "name": "SNOW WATER EQUIVALENT"
+        }
+    ],
+    "title": [
+        "GCOS SWE data from 11 stations in Switzerland"
+    ],
+    "url": "http://montblanc.slf.ch/owncloud/index.php/s/v4a9zjZRoOOr4Ss"
+}

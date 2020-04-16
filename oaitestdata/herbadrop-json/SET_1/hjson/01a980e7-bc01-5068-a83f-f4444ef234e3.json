@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-2098399", 
+        "ARKID": "2098399"
+    }, 
+    "depositIdentifier": "P05293617", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P05293617.jpg", 
+            "ocr": {
+                "deu": "l\niPLD\u2018\u00f6\u2018MOQ\n!\nHERBARIUM PAUL AELLEN\nHERBARIUM MUSE] PARIS/ENSIS\ndramllaea dena\u2014; ( 1116). EXKLLL.\nHerbier Mus\u00e9um\nmmm:lywm\ufb01ti\ufb01m\n52367\n23. 10. lypit. Le: : .\n", 
+                "eng": "l\n[PWW\nv\nHERBARIUM PAUL AELLEN\nHERBARIUM MUSE] PARIS/ENSIS\ndramllaea depsc; ( 1116). imeLL.\nHerbier Mus\u00e9um\nmmm:lywm\ufb01ti\ufb01m\n52367\n29. 10. lpr:. Le: : .\n", 
+                "fra": "l\n(PM\u2026\n1\nHERBARIUM PAUL AELLEN\nHERBARIUM MUSE! PARISIENSIS\ndramllaea depsc; ( 1116). imp\u2026\nHerbier Mus\u00e9um\nmnumuyym\ufb02\u00fci\u00eem\n52367\n23. 10. lpr:. Le: : .\n", 
+                "lat": "l\nIvPLDQ545409\nv\nHERBARIUM PAUL AELLEN\nHERBARIUM MUSE] PARIS/ENSIS\ndramllaea depsc; ( 1116). imp\"\nHerbier Mus\u00e9um\nmmimfylyml\u00eft\u00ef\u00efm\n52367\n29. 10. lypit. Le: : .\n", 
+                "spa": "l\n\u00cdPLD4545409\nv\nHERBARIUM PAUL AELLEN\nHERBARIUM MUSE! PAR/SIENSIS\ndramllaea depsc; ( 1116). imp\u2026\nHerbier Mus\u00e9um\nmnun:\u00a1myuu\u00edl\u00ed\u00ed\u00edm\n52367\n23. lo. lypit. Le: : .\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-2098399", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "Amaranthaceae"
+        }, 
+        "aip.dc.title": {
+            "lat": "Guilleminea densa Moq."
+        }, 
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "c803b277cfe7a2b33070665f289be6e56a666c5669eeccf8393ca3b46474aa76", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-2098399/2", 
+                "name": "DESC/P05293617.txt", 
+                "originalChecksum": "34ee5b2021fedd20257bc935b3321cc7", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 2607
+            }, 
+            {
+                "checksum": "fed0f7d53aa7b18c7c3b0aed85dbda45cba503cd6e96042dfc747b855e8faa3f", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-2098399/1", 
+                "name": "P05293617.jpg", 
+                "originalChecksum": "90c61e5d70f7576ad34cc057ddbd401b", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 4457480
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-02-25T15:08:03+0100", 
+        "aip.meta.depositIdentifier": "P05293617", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 2098399, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05293617", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 15.45605, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

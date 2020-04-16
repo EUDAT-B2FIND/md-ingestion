@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0219",
+    "MetadataAccess": [
+        "oai:ota:oucs:0219"
+    ],
+    "PublicationYear": [
+        "50-150"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Fiction"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Chariton"
+    ],
+    "fulltext": "oai:ota:oucs:0219;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0219.xml; Chaerea et Callirhoe  / compiled by Thesaurus Linguae Graecae;Chariton;50-150;text_and_corpus_linguistics;Fiction -- Greece -- 2nd century;grc;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Fiction;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0acc47b0-cf2b-50b2-9563-4d4682a4b06e",
+    "oai_identifier": [
+        "oai:ota:oucs:0219"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Greece -- nd century"
+        }
+    ],
+    "title": [
+        " Chaerea et Callirhoe  / compiled by Thesaurus Linguae Graecae"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0219.xml"
+}

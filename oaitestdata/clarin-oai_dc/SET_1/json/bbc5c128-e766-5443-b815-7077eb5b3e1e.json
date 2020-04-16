@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 547 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2172",
+    "MetadataAccess": [
+        "oai:ota:oucs:2172"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Politics"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hobbes, Thomas, 1588-1679"
+    ],
+    "fulltext": "oai:ota:oucs:2172;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2172.xml;De cive : containing the elements of civill politie in the agreement which it hath both with naturall and divine lawes in which is demonstrated, both what the origine of justice is, and wherein the essence of Christian religion doth consist together with the nature, limits and qualifications both of regiment and subjection / Thomas Hobbes;The citizen;Hobbes, Thomas, 1588-1679;text_and_corpus_linguistics;Political science -- Early works to 1800;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;text/sgml;(1 file : ca. 547 KB);Text;Politics;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bbc5c128-e766-5443-b815-7077eb5b3e1e",
+    "oai_identifier": [
+        "oai:ota:oucs:2172"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Political science -- Early works"
+        }
+    ],
+    "title": [
+        "De cive : containing the elements of civill politie in the agreement which it hath both with naturall and divine lawes in which is demonstrated, both what the origine of justice is, and wherein the essence of Christian religion doth consist together with the nature, limits and qualifications both of regiment and subjection / Thomas Hobbes",
+        "The citizen"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2172.xml"
+}

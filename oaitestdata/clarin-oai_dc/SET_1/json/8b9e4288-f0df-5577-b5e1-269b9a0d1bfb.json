@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Matteo Grella"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2288",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2288"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2288",
+    "PublicationTimestamp": "2017-06-26T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Matteo Grella"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11372/LRT-2629"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Grella, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2288;2018-03-02T07:08:02Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Italian Function Words;Grella, Matteo;morphological dictionary;function words;This dictionary is a curated list of Italian function words in a JSON Lines format text file, particularly useful for tasks such as POS-Tagging or Syntactic Parsing. It contains 999 single-word forms and 2501 multi-words forms. Each entry may have the following grammatical features: lemma, pos, mood, tense, person, number, gender, case, degree.;2017-06-26;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-2288;ita;http://hdl.handle.net/11372/LRT-2629;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Matteo Grella",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8b9e4288-f0df-5577-b5e1-269b9a0d1bfb",
+    "notes": [
+        "This dictionary is a curated list of Italian function words in a JSON Lines format text file, particularly useful for tasks such as POS-Tagging or Syntactic Parsing. It contains 999 single-word forms and 2501 multi-words forms. Each entry may have the following grammatical features: lemma, pos, mood, tense, person, number, gender, case, degree."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2288"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphological dictionary"
+        },
+        {
+            "name": "function words"
+        }
+    ],
+    "title": [
+        "Italian Function Words"
+    ],
+    "url": ""
+}

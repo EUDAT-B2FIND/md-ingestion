@@ -1,0 +1,53 @@
+{
+    "Contributor": [
+        "Asmussen, J\u00f6rg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-269",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-269"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-269",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Denmark"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-269;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;DanNet;Asmussen, J\u00f6rg;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-269;dan;downloadable_files_count: 0;Denmark;http://ordnet.dk/korpusdk",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0db5e7ed-53c9-5e22-8d71-56b118c4f02f",
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-269"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "DanNet"
+    ],
+    "url": ""
+}

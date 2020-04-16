@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/336",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/336"
+    ],
+    "PID": "http://hdl.handle.net/11321/336",
+    "PublicationTimestamp": "2017-02-13T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Marci\u0144czuk, Micha\u0142",
+        "Krautforst, Micha\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/336;2017-02-13T07:05:46Z;hdl_11321_3;hdl_11321_4;python-g419wikitools-1.0;Marci\u0144czuk, Micha\u0142;Krautforst, Micha\u0142;Wikipedia;multi-word phrase inflection;dictionary;Zestaw skrypt\u00f3w w j\u0119zyku Python do wygenerowania s\u0142ownika odmiany fraz w oparciu o linki wewn\u0119trzne Wikipedii. Efektem analizy dumpa Wikipedii jest zestaw plik\u00f3w, zawieraj\u0105cych:\r\n\r\nA) wikilinks-difflen.txt \u2014 frazy maj\u0105 r\u00f3\u017cn\u0105 liczb\u0119 token\u00f3w,\r\nB) wikilinks-samelen* \u2014 frazy maj\u0105 tak\u0105 sam\u0105 liczb\u0119 token\u00f3w,\r\n 1. wikilinks-samelen-textbase.txt \u2014 ka\u017cda para token\u00f3w ma przynajmniej jedn\u0105 wsp\u00f3ln\u0105 form\u0119 bazow\u0105,\r\n 1.a) wikilinks-samelen-textbase-one.txt \u2014 frazy zawieraj\u0105 po jednym tokenie,\r\n 1.b) wikilinks-samelen-textbase-multi.txt \u2014 frazy zawieraj\u0105 wi\u0119cej ni\u017c jeden token,\r\n 2. wikilinks-samelen-rules.txt \u2014 co najmniej jedna para token\u00f3w nie zosta\u0142a dopasowana przez formy bazowe, tylko przez zastosowanie regu\u0142 podmiany ko\u0144c\u00f3wek dla formy tekstowej.\r\n 3. wikilinks-samelen-different.txt  \u2014 pozosta\u0142e frazy, kt\u00f3re nie zosta\u0142y dopasowane.\r\n\r\nPrzyk\u0142ad zawarto\u015bci pliku wikilinks-samelen-textbase-multi.txt:\r\nTransformacja ustrojowa\ttransformacji ustrojowej\ttransformacji ustrojowych\r\nKonstytucja ZSRR\tKonstytucji ZSRR\r\nRajd Tatrza\u0144ski\tRajdzie Tatrza\u0144skim\r\nMacierz dyskowa\tmacierz\u0105 dyskow\u0105\tmacierzy dyskowych\r\nOsiedle Ptasie\tOsiedle Ptasie\r\nobjaw Brudzi\u0144skiego\tobjawy Brudzi\u0144skiego\r\nCh\u0142opskie Stronnictwo Radykalne\tCh\u0142opskiego Stronnictwa Radykalnego\r\nMelanie Klein\tMelani\u0105 Klein\r\nJakub Soko\u0142owski\tJakuba Soko\u0142owskiego\r\nLetnie Igrzyska Olimpijskie M\u0142odzie\u017cy 2010\tLetnich Igrzysk Olimpijskich M\u0142odzie\u017cy 2010\r\nwyrabianie ciasta\twyrabiania ciasta\r\nbitwa nad rzek\u0105 Czoroch\tbitwie nad rzek\u0105 Czoroch\r\nNerw b\u0142\u0119dny\tnerwu b\u0142\u0119dnego\tnerw\u00f3w b\u0142\u0119dnych\r\nPakt trzech\tpaktu trzech\tPaktu Trzech\tPaktu trzech\r\nKomisja Episkopatu Polski ds. Ekumenizmu\tKomisji Episkopatu Polski ds. Ekumenizmu\r\nFlaga Albanii\tflag\u0119 Albanii\tflagi Albanii\r\nBitwa pod Chrobrzem\tbitwie pod Chrobrzem\r\nPatriarcha Indii Zachodnich\tpatriarch\u0119 Indii Zachodnich\r\nprocesy fizjologiczne\tproces fizjologiczny\r\nenergetyka j\u0105drowa\tenergetyk\u0119 j\u0105drow\u0105\tenergetyce j\u0105drowej\tenergetyk\u0105 j\u0105drow\u0105\tenergetyki j\u0105drowej\r\nzdanie syntetyczne\tzdania syntetyczne\r\nFranciszek Ksawery\tFranciszek Ksawery\tFranciszka Ksawerego\tFranciszkiem Ksawerym\r\nObw\u00f3d Tirana\tobwodzie Tirana;2017-02-13;toolService;http://hdl.handle.net/11321/336;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Science and Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1977f6f7-adc2-56f0-a146-b9b29ff8befb",
+    "notes": [
+        "Zestaw skrypt\u00f3w w j\u0119zyku Python do wygenerowania s\u0142ownika odmiany fraz w oparciu o linki wewn\u0119trzne Wikipedii. Efektem analizy dumpa Wikipedii jest zestaw plik\u00f3w, zawieraj\u0105cych:\r\n\r\nA) wikilinks-difflen.txt \u2014 frazy maj\u0105 r\u00f3\u017cn\u0105 liczb\u0119 token\u00f3w,\r\nB) wikilinks-samelen* \u2014 frazy maj\u0105 tak\u0105 sam\u0105 liczb\u0119 token\u00f3w,\r\n 1. wikilinks-samelen-textbase.txt \u2014 ka\u017cda para token\u00f3w ma przynajmniej jedn\u0105 wsp\u00f3ln\u0105 form\u0119 bazow\u0105,\r\n 1.a) wikilinks-samelen-textbase-one.txt \u2014 frazy zawieraj\u0105 po jednym tokenie,\r\n 1.b) wikilinks-samelen-textbase-multi.txt \u2014 frazy zawieraj\u0105 wi\u0119cej ni\u017c jeden token,\r\n 2. wikilinks-samelen-rules.txt \u2014 co najmniej jedna para token\u00f3w nie zosta\u0142a dopasowana przez formy bazowe, tylko przez zastosowanie regu\u0142 podmiany ko\u0144c\u00f3wek dla formy tekstowej.\r\n 3. wikilinks-samelen-different.txt  \u2014 pozosta\u0142e frazy, kt\u00f3re nie zosta\u0142y dopasowane.\r\n\r\nPrzyk\u0142ad zawarto\u015bci pliku wikilinks-samelen-textbase-multi.txt:\r\nTransformacja ustrojowa\ttransformacji ustrojowej\ttransformacji ustrojowych\r\nKonstytucja ZSRR\tKonstytucji ZSRR\r\nRajd Tatrza\u0144ski\tRajdzie Tatrza\u0144skim\r\nMacierz dyskowa\tmacierz\u0105 dyskow\u0105\tmacierzy dyskowych\r\nOsiedle Ptasie\tOsiedle Ptasie\r\nobjaw Brudzi\u0144skiego\tobjawy Brudzi\u0144skiego\r\nCh\u0142opskie Stronnictwo Radykalne\tCh\u0142opskiego Stronnictwa Radykalnego\r\nMelanie Klein\tMelani\u0105 Klein\r\nJakub Soko\u0142owski\tJakuba Soko\u0142owskiego\r\nLetnie Igrzyska Olimpijskie M\u0142odzie\u017cy 2010\tLetnich Igrzysk Olimpijskich M\u0142odzie\u017cy 2010\r\nwyrabianie ciasta\twyrabiania ciasta\r\nbitwa nad rzek\u0105 Czoroch\tbitwie nad rzek\u0105 Czoroch\r\nNerw b\u0142\u0119dny\tnerwu b\u0142\u0119dnego\tnerw\u00f3w b\u0142\u0119dnych\r\nPakt trzech\tpaktu trzech\tPaktu Trzech\tPaktu trzech\r\nKomisja Episkopatu Polski ds. Ekumenizmu\tKomisji Episkopatu Polski ds. Ekumenizmu\r\nFlaga Albanii\tflag\u0119 Albanii\tflagi Albanii\r\nBitwa pod Chrobrzem\tbitwie pod Chrobrzem\r\nPatriarcha Indii Zachodnich\tpatriarch\u0119 Indii Zachodnich\r\nprocesy fizjologiczne\tproces fizjologiczny\r\nenergetyka j\u0105drowa\tenergetyk\u0119 j\u0105drow\u0105\tenergetyce j\u0105drowej\tenergetyk\u0105 j\u0105drow\u0105\tenergetyki j\u0105drowej\r\nzdanie syntetyczne\tzdania syntetyczne\r\nFranciszek Ksawery\tFranciszek Ksawery\tFranciszka Ksawerego\tFranciszkiem Ksawerym\r\nObw\u00f3d Tirana\tobwodzie Tirana"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/336"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Wikipedia"
+        },
+        {
+            "name": "multi-word phrase inflection"
+        },
+        {
+            "name": "dictionary"
+        }
+    ],
+    "title": [
+        "python-g419wikitools-1.0"
+    ],
+    "url": ""
+}

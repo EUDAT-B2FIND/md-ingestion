@@ -1,0 +1,20 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>b7e3d0a63af611e2a2aa782bcb07413546f527e1332140b2987cf0d7a49ab3e0</identifier>
+    <datestamp>2018-11-15T16:39:55Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:other</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Maltese Wiktionary</dc:title>
+      <dc:description>This lexicon is part of the collection of the Wikimedia Dumps which was retrieved as an XML file from  http://dumps.wikimedia.org/mtwiktionary/20121105/ on November 5, 2012. In the Wikimedia dump, it is accompanied by a text file mtwiktionary-20121105-pages-articles-multistream-index.txt which lists all the wiki pages contained in the XML file. Both files are contained in the zip file downloadable from META-SHARE.
+
+These files come from an automatically generated dump file of all pages within the Maltese Wiktionary wiki. The pages therein consist of manually constructed pages for articles and (semi-) automatically generated pages for the meta-content. Manual construction of the article pages allows for not sticking strictly to the agreed schema for entries in the Wiktionary. 
+
+In view of this mix of article pages, languages, meta-pages and other information, this resource is rather unreliable.
+</dc:description>
+      <dc:date>2012-11-30</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

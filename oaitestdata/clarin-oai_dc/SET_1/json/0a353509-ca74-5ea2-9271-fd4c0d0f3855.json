@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/555",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/555"
+    ],
+    "PID": "http://hdl.handle.net/11321/555",
+    "PublicationTimestamp": "2018-07-25T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Marciniak, Ma\u0142gorzata",
+        "Polak, Justyna"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/555;2018-07-25T10:16:47Z;hdl_11321_3;hdl_11321_4;Bulhakov - corpus of events, temporal expressions and temporal relations;Marciniak, Ma\u0142gorzata;Polak, Justyna;Bu\u0142hakov;TimeML;TIMEX3;temporal expressions;temporal relations;events;The corpus contains the text of the short story \"Fatalne jaja\" by Michai\u0142 Bu\u0142hakov (http:// www.wolnelektury.pl). The corpus is manually annotated with temporal expressions, events and temporal relations using TimeML gudelines adapted to Polish.;2018-07-25;corpus;http://hdl.handle.net/11321/555;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0a353509-ca74-5ea2-9271-fd4c0d0f3855",
+    "notes": [
+        "The corpus contains the text of the short story \"Fatalne jaja\" by Michai\u0142 Bu\u0142hakov (http:// www.wolnelektury.pl). The corpus is manually annotated with temporal expressions, events and temporal relations using TimeML gudelines adapted to Polish."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/555"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "TimeML"
+        },
+        {
+            "name": "TIMEX"
+        },
+        {
+            "name": "temporal expressions"
+        },
+        {
+            "name": "temporal relations"
+        },
+        {
+            "name": "events"
+        }
+    ],
+    "title": [
+        "Bulhakov - corpus of events, temporal expressions and temporal relations"
+    ],
+    "url": ""
+}

@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1149</identifier>
+    <datestamp>2019-02-23T17:33:56Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1077</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ReLDI token+tag+lemma+NER web service for WebLicht</dc:title>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Perov&#353;ek, Matic</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>named entities</dc:subject>
+      <dc:description>WebLicht (https://weblicht.sfs.uni-tuebingen.de/) registry entry for webservice comprising tokenisation, PoS tagging and Named Entity Recognition. Tool source files are available under https://github.com/clarinsi</dc:description>
+      <dc:date>2017-09-15</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1149</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

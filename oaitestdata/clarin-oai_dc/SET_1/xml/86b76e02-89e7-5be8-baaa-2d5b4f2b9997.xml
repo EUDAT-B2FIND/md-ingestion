@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1030</identifier>
+    <datestamp>2017-09-29T13:48:01Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Slovene lexical database 1.0</dc:title>
+      <dc:creator>Gantar, Polona</dc:creator>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Kosem, Iztok</dc:creator>
+      <dc:creator>&#352;orli, Mojca</dc:creator>
+      <dc:creator>Kocjan&#269;i&#269;, Polonca</dc:creator>
+      <dc:creator>Grabnar, Katja</dc:creator>
+      <dc:creator>Yero&#353;ina, Olga</dc:creator>
+      <dc:creator>Zaran&#353;ek, Petra</dc:creator>
+      <dc:creator>Drstven&#353;ek, Nina</dc:creator>
+      <dc:subject>lexical database</dc:subject>
+      <dc:subject>semantic description</dc:subject>
+      <dc:subject>syntactic description</dc:subject>
+      <dc:subject>collocations</dc:subject>
+      <dc:description>Slovene Lexical Database was created between 2008 and 2012 and represents a comprehensive syntactic and semantic description of a selected set of Slovene words. The description was based exclusively on the analysis of reference corpora of Slovene.&#13;
+The database is structured as a network of interrelated semantic and syntactic information about a particular word. Semantic level represents the top level in the hierarchy with the lexical unit as its core element. This includes all senses of the headwrd, multi-word expressions and phraseological units. Each sense is described with a short semantic indicator and/or whole-sentence definition which includes typical syntactic environment of the headword with the relevant number, form and semantic types in a valency frame (semantic frame). These are also reflected in a number of syntactic structures and corresponding collocations. All the higher types of information are confirmed by a selection of corpus examples. Multi-word expressions and phraseological units are treated independently from particular senses of the headword and have their own internal structure which requires the same types of information as single-word entries or senses.</dc:description>
+      <dc:date>2013-09-30</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1030</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Centre for Language Resources and Technologies, University of Ljubljana</dc:publisher>
+      <dc:source>http://eng.slovenscina.eu/spletni-slovar/leksikalna-baza</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 93.7 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1640",
+    "MetadataAccess": [
+        "oai:ota:oucs:1640"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Spenser, Edmund, 1552?-1599"
+    ],
+    "fulltext": "oai:ota:oucs:1640;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/1640.xml;Amoretti and Epithalamion / written not long since by Edmunde Spenser;Spenser, Edmund, 1552?-1599;default: 1976-01-01;text_and_corpus_linguistics;Poems -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 93.7 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "68e5d1ac-ccd5-581f-8a86-50228e42ab91",
+    "oai_identifier": [
+        "oai:ota:oucs:1640"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- England -- th century"
+        }
+    ],
+    "title": [
+        "Amoretti and Epithalamion / written not long since by Edmunde Spenser"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1640.xml"
+}

@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/tei+xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-971",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-971"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-971",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-971;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Juilland-D-Korpus;Written German from 1920-39. 500,000 tokens, 392 texts. POS and lemma, TEI XML. Part of Das digitale W\u00f6rterbuch der deutschen Sprache der 20. Jahrhunderts;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-971;deu;application/tei+xml;downloadable_files_count: 0;Germany;Berlin-Brandenburg Academy of Sciences and Humanities;http://www.dwds.de/ressourcen/juilland",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fe461bd3-8a12-52ba-9360-e413262bfc65",
+    "notes": [
+        "Written German from 1920-39. 500,000 tokens, 392 texts. POS and lemma, TEI XML. Part of Das digitale W\u00f6rterbuch der deutschen Sprache der 20. Jahrhunderts"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-971"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Juilland-D-Korpus"
+    ],
+    "url": ""
+}

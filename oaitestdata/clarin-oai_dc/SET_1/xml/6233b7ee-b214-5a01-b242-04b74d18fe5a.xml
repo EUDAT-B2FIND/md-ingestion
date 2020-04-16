@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/601</identifier>
+    <datestamp>2018-09-18T02:27:04Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>POE</dc:title>
+      <dc:creator>Koz&#322;owska, Zuzanna</dc:creator>
+      <dc:subject>poetry</dc:subject>
+      <dc:subject>Polish poetry</dc:subject>
+      <dc:subject>poezja</dc:subject>
+      <dc:subject>poezja polska</dc:subject>
+      <dc:subject>XX wiek</dc:subject>
+      <dc:subject>20th century</dc:subject>
+      <dc:description>Microcorpus of 20th century Polish poetry</dc:description>
+      <dc:date>2018-09-18</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/601</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>plWordNet</dc:rights>
+      <dc:rights>http://clarin-pl.eu/en/licenses/plwordnet-2/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>various</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+    </oai_dc:dc>
+  </metadata>
+</record>

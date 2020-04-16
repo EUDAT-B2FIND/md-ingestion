@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/304</identifier>
+    <datestamp>2016-06-07T09:57:05Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>NPSemRel</dc:title>
+      <dc:creator>K&#281;dzia, Pawe&#322;</dc:creator>
+      <dc:subject>Semantic role labelling</dc:subject>
+      <dc:subject>Semantic roles</dc:subject>
+      <dc:subject>Nominal phrase</dc:subject>
+      <dc:description>NPSemrel is a tool for recognizing semantic roles into nominal Phrases.</dc:description>
+      <dc:date>2016-05-01</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/304</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU GPL3</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/gpl-3.0.en.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

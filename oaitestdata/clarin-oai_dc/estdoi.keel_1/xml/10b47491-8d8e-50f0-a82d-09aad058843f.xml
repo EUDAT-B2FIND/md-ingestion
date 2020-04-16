@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17926658</identifier>
+    <datestamp>2019-05-17T11:32:29Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Anafooride suhtes m&#228;rgendatud Eesti s&#245;ltuvuspuude pank</dc:title>
+      <dc:title xml:lang="en">Estonian Treebank annotated with coreference relations</dc:title>
+      <dc:creator>M&#252;&#252;risep, Kaili</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-12-21</dc:date>
+      <dc:date>Updated: 2019-01-07</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0016AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Anafooride suhtes m&#228;rgendatud korpuses on praegu ca 107000 s&#245;na mahus tekste, milles on u 4200 m&#228;rgendatud ases&#245;na, millest u 3200 on &#252;hendatud oma viitealusega, &#252;lej&#228;&#228;nud tuhandel ases&#245;nal viitealus tekstis puudub. Tekstideks on ajalehetekstid ning &#252;ks teadustekst (ajakirja Eesti Arst 2004. aasta aastak&#228;ik). M&#228;rgendatud on j&#228;rgmised ases&#245;nad k&#245;igis k&#228;&#228;ndevormides ja nende viitealused:
+
+isikulised ases&#245;nad (mina/ma, sina/sa, tema/ta, meie/me, teie/te, nemad/nad). Kokku on korpuses 1734 isikulist ases&#245;na, neist 1320 on &#252;hendatud viitealustega.
+n&#228;itav ases&#245;na see esineb korpuses 1489 korral, neist 1084 korral on tal tekstis olemas viitealus.
+siduvad ases&#245;nad kes ja mis esinevad tekstis kokku 1053 korda, neist 851 juhul on neil olemas viitealus tekstis.
+Programmid, mis teisendavad puudepanga formaadis faili brati m&#228;rgendajale sobivaks ja tagasi (pronoomentykeldaja.pl ja brat2inforem) on kataloogis tools. Programmide autorid on Kaili M&#252;&#252;risep ja Katrin Tsepelina.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">This corpus containing ca 107,000 words of running text, is annotated for pronouns and their antecendents. There are 4200 annotated pronouns, among them 3200 are linked with their antecendents. The remaining 1000 pronouns have no clearly identifiable antecendent in text. Majority of the texts come from Estonian newspapers plus one scientific (medical) text, namely an issue of journal &#8222;Eesti Arst&#8221; (Estonian Doctor).
+
+Programs to convert Estonian dependency trees (VISLCG format) to brat annotations and back (pronoomentykeldaja.pl and brat2inforem) are in the tools folder, authors Kaili M&#252;&#252;risep and Katrin Tsepelina.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

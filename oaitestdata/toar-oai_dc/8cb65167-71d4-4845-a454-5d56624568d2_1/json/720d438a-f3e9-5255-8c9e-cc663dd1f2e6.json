@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "The Tropospheric Ozone Assessment Report (TOAR)"
+    ],
+    "Contributor": [
+        "Schr\u00f6der, Sabine"
+    ],
+    "DiscHierarchy": [
+        "4.4.1.3",
+        "Atmospheric Sciences",
+        "Atmospheric chemistry"
+    ],
+    "Discipline": "Chemistry;Atmospheric Chemistry",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://b2share-testing.fz-juelich.de/api/oai2d?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/444eca4015574832b7e15802a4574c01",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/444eca4015574832b7e15802a4574c01"
+    ],
+    "PublicationTimestamp": "2020-01-15T11:59:59Z",
+    "PublicationYear": [
+        "2020"
+    ],
+    "Publisher": [
+        "The Tropospheric Ozone Assessment Report (TOAR)"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "Creative Commons Attribution (CC-BY)"
+    ],
+    "author": [
+        "Huarong Zhao",
+        "Gen Zhang",
+        "Wanyun Xu",
+        "Zou Li",
+        "Ying Wang",
+        "Junli Jin",
+        "Xiaobin Xu, Ph.D.",
+        "Dingding Wang",
+        "Xiaochun Zhang",
+        "Dajiang Yu",
+        "Yuanzhen Dong",
+        "Qianli Ma",
+        "Weili Lin",
+        "Zhiqiang Ma"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/444eca4015574832b7e15802a4574c01;2020-01-15T21:10:38Z;8cb65167-71d4-4845-a454-5d56624568d2;Schr\u00f6der, Sabine;Xiaobin Xu, Ph.D.;Weili Lin;Wanyun Xu;Junli Jin;Ying Wang;Gen Zhang;Xiaochun Zhang;Zhiqiang Ma;Yuanzhen Dong;Qianli Ma;Dajiang Yu;Zou Li;Dingding Wang;Huarong Zhao;2020-01-15T16:23:34.180902+00:00;Information about the trends and spatial variations of tropospheric and surface ozone is crucial for assessing the impacts of ozone on human health, ecosystem, and climate. To answer the questions related to spatiotemporal variations of tropospheric ozone, the International Global Atmospheric Chemistry Project developed the Tropospheric Ozone Assessment Report (TOAR). However, few sites in China could be included in TOAR\u2019s assessment of long-term ozone trends. There have been only sporadic reports on long-term ozone measurements from a few individual Chinese sites. Here, we present an integrated analysis of long-term measurements of surface ozone from eight sites in China, including six Global Atmosphere Watch sites, one rural site, and one urban site. The sites are located in the North China Plain (NCP) and Yangtze River Delta (YRD), the underdeveloped region (the Northeast Plain), and the remote regions (Northwest and Southwest). Most of the ozone time-series analyzed have lengths over 11 years, with the longest and shortest dating back to 1994 and 2009, respectively. Seven annual and four seasonal ozone metrics, along with their trends and presentday values, are calculated following the TOAR methodologies. We compare the seasonal and diurnal cycles of ozone concentrations as well as the present-day values of ozone metrics among sites and discuss the long-term trends of the annual and seasonal metrics. We find large and significant increases of ozone metrics at the background site in the NCP, smaller increases at the global baseline site in western China, significant decreases at the site in Northern Xinjiang, and nearly no trend at other sites. Alarming high values of ozone metrics occur in the NCP and YRD, particularly in warmer seasons. Our results fill knowledge gaps in spatiotemporal changes of ozone metrics in China and can be of useful in the assessment of ozone impacts on human health and vegetation.;https://b2share-testing.fz-juelich.de/api/records/444eca4015574832b7e15802a4574c01;oai:b2share.eudat.eu:b2rec/444eca4015574832b7e15802a4574c01;eng;The Tropospheric Ozone Assessment Report (TOAR);info:eu-repo/semantics/openAccess;Creative Commons Attribution (CC-BY);surface ozone; China; exposure metrics; human health; vegetation; long-term trends;Data collection of \"Long-term changes of regional ozone in China: implications for human health and ecosystem impacts\";Text",
+    "group": "toar",
+    "groups": [
+        {
+            "name": "toar"
+        }
+    ],
+    "name": "720d438a-f3e9-5255-8c9e-cc663dd1f2e6",
+    "notes": [
+        "Information about the trends and spatial variations of tropospheric and surface ozone is crucial for assessing the impacts of ozone on human health, ecosystem, and climate. To answer the questions related to spatiotemporal variations of tropospheric ozone, the International Global Atmospheric Chemistry Project developed the Tropospheric Ozone Assessment Report (TOAR). However, few sites in China could be included in TOAR\u2019s assessment of long-term ozone trends. There have been only sporadic reports on long-term ozone measurements from a few individual Chinese sites. Here, we present an integrated analysis of long-term measurements of surface ozone from eight sites in China, including six Global Atmosphere Watch sites, one rural site, and one urban site. The sites are located in the North China Plain (NCP) and Yangtze River Delta (YRD), the underdeveloped region (the Northeast Plain), and the remote regions (Northwest and Southwest). Most of the ozone time-series analyzed have lengths over 11 years, with the longest and shortest dating back to 1994 and 2009, respectively. Seven annual and four seasonal ozone metrics, along with their trends and presentday values, are calculated following the TOAR methodologies. We compare the seasonal and diurnal cycles of ozone concentrations as well as the present-day values of ozone metrics among sites and discuss the long-term trends of the annual and seasonal metrics. We find large and significant increases of ozone metrics at the background site in the NCP, smaller increases at the global baseline site in western China, significant decreases at the site in Northern Xinjiang, and nearly no trend at other sites. Alarming high values of ozone metrics occur in the NCP and YRD, particularly in warmer seasons. Our results fill knowledge gaps in spatiotemporal changes of ozone metrics in China and can be of useful in the assessment of ozone impacts on human health and vegetation."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/444eca4015574832b7e15802a4574c01"
+    ],
+    "oai_set": [
+        "8cb65167-71d4-4845-a454-5d56624568d2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "surface ozone"
+        },
+        {
+            "name": "China"
+        },
+        {
+            "name": "exposure metrics"
+        },
+        {
+            "name": "human health"
+        },
+        {
+            "name": "vegetation"
+        },
+        {
+            "name": "long-term trends"
+        }
+    ],
+    "title": [
+        "Data collection of \"Long-term changes of regional ozone in China: implications for human health and ecosystem impacts\""
+    ],
+    "url": "https://b2share-testing.fz-juelich.de/api/records/444eca4015574832b7e15802a4574c01"
+}

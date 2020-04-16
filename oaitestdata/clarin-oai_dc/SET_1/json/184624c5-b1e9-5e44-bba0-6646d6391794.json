@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Meertens Institute KNAW The Netherlands"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-606",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-606"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-606",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Meertens Institute KNAW The Netherlands"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Belgium||Netherlands (the)"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-606;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Morphological Atlas of the Dutch Dialects (MAND);The Morphological Atlas of the Dutch Dialects (MAND) is based on phonetically transcribed speech. The speech recordings were made during a period from 1980 until 1995.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-606;nld;downloadable_files_count: 0;Belgium||Netherlands (the);Meertens Institute KNAW The Netherlands;http://www.meertens.knaw.nl/mand/database/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "184624c5-b1e9-5e44-bba0-6646d6391794",
+    "notes": [
+        "The Morphological Atlas of the Dutch Dialects (MAND) is based on phonetically transcribed speech. The speech recordings were made during a period from 1980 until 1995."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-606"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Morphological Atlas of the Dutch Dialects (MAND)"
+    ],
+    "url": ""
+}

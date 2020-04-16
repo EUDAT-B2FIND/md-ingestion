@@ -1,0 +1,97 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1512",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1512"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1512",
+    "PublicationTimestamp": "2015-10-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Haji\u010d, Jan",
+        "\u0160indlerov\u00e1, Jana",
+        "Ure\u0161ov\u00e1, Zde\u0148ka",
+        "Fu\u010d\u00edkov\u00e1, Eva"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1512;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;CzEngVallex;Ure\u0161ov\u00e1, Zde\u0148ka;Fu\u010d\u00edkov\u00e1, Eva;Haji\u010d, Jan;\u0160indlerov\u00e1, Jana;verbal valency;argument structure;valency frame;lexicon;corpus annotation;translation equivalent;comparative syntax;comparative semantics;valency annotation;CzEngVallex is a bilingual valency lexicon of corresponding Czech and English verbs. It connects 20835 aligned valency frame pairs (verb senses) which are translations of each other, aligning their arguments as well. The CzEngVallex serves as a powerful, real-text-based database of frame-to-frame and subsequently argument-to-argument pairs and can be used for example for machine translation applications. It uses the data from the Prague Czech-English Dependency Treebank project (PCEDT 2.0, http://hdl.handle.net/11858/00-097C-0000-0015-8DAF-4) and it also takes advantage of two existing valency lexicons: PDT-Vallex for Czech and EngVallex for English, using the same view of valency (based on the Functional Generative Description theory).   The CzEngVallex is available in an XML format in the LINDAT/CLARIN repository, and also in a searchable form (see the \u201cMore Apps\u201d tab) interlinked with PDT-Vallex (http://hdl.handle.net/11858/00-097C-0000-0023-4338-F),EngVallex (http://hdl.handle.net/11858/00-097C-0000-0023-4337-2) and with examples from the PCEDT.;2015-10-01;lexicalConceptualResource;http://hdl.handle.net/11234/1-1512;eng;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/czengvallex",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "36de9c3d-acf9-5f4b-9699-f54551e49ff2",
+    "notes": [
+        "CzEngVallex is a bilingual valency lexicon of corresponding Czech and English verbs. It connects 20835 aligned valency frame pairs (verb senses) which are translations of each other, aligning their arguments as well. The CzEngVallex serves as a powerful, real-text-based database of frame-to-frame and subsequently argument-to-argument pairs and can be used for example for machine translation applications. It uses the data from the Prague Czech-English Dependency Treebank project (PCEDT 2.0, http://hdl.handle.net/11858/00-097C-0000-0015-8DAF-4) and it also takes advantage of two existing valency lexicons: PDT-Vallex for Czech and EngVallex for English, using the same view of valency (based on the Functional Generative Description theory).   The CzEngVallex is available in an XML format in the LINDAT/CLARIN repository, and also in a searchable form (see the \u201cMore Apps\u201d tab) interlinked with PDT-Vallex (http://hdl.handle.net/11858/00-097C-0000-0023-4338-F),EngVallex (http://hdl.handle.net/11858/00-097C-0000-0023-4337-2) and with examples from the PCEDT."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1512"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "verbal valency"
+        },
+        {
+            "name": "argument structure"
+        },
+        {
+            "name": "valency frame"
+        },
+        {
+            "name": "lexicon"
+        },
+        {
+            "name": "corpus annotation"
+        },
+        {
+            "name": "translation equivalent"
+        },
+        {
+            "name": "comparative syntax"
+        },
+        {
+            "name": "comparative semantics"
+        },
+        {
+            "name": "valency annotation"
+        }
+    ],
+    "title": [
+        "CzEngVallex"
+    ],
+    "url": ""
+}

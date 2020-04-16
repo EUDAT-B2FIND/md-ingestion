@@ -1,0 +1,54 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1465</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Lingua::Interset 2.026</dc:title>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>part of speech</dc:subject>
+      <dc:subject>conversion</dc:subject>
+      <dc:subject>tagset</dc:subject>
+      <dc:description>Lingua::Interset is a universal morphosyntactic feature set to which all tagsets of all corpora/languages can be mapped. Version 2.026 covers 37 different tagsets of 21 languages. Limited support of the older drivers for other languages (which are not included in this package but are available for download elsewhere) is also available; these will be fully ported to Interset 2 in future.&#13;
+&#13;
+Interset is implemented as Perl libraries. It is also available via CPAN.</dc:description>
+      <dc:date>2014-12-05</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1465</dc:identifier>
+      <dc:language>ara</dc:language>
+      <dc:language>bul</dc:language>
+      <dc:language>ben</dc:language>
+      <dc:language>cat</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>dan</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>eus</dc:language>
+      <dc:language>fas</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>grc</dc:language>
+      <dc:language>heb</dc:language>
+      <dc:language>hin</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:language>jpn</dc:language>
+      <dc:language>mul</dc:language>
+      <dc:language>por</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/610516</dc:relation>
+      <dc:rights>Artistic License (Perl) 1.0</dc:rights>
+      <dc:rights>http://opensource.org/licenses/Artistic-Perl-1.0</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics</dc:publisher>
+      <dc:source>http://metacpan.org/release/ZEMAN/Lingua-Interset-2.026</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

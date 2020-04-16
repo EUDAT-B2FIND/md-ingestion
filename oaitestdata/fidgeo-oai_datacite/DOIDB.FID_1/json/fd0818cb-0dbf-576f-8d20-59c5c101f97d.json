@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6431",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6431"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6431;2018-10-04T12:51:58Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.008;van den Ende, Martijn;Martijn;van den Ende;0000-0002-0634-7078;Utrecht University;Discrete Element Method model data of biaxial shear deformation;GFZ Data Services;2018;Discrete Element Method;Biaxial shear deformation;Stick-slip mechanics;EPOS;European Plate Observing System;multi-scale laboratories;rock and melt physical properties;van den Ende, Martijn;Martijn;van den Ende;0000-0002-0634-7078;Utrecht University;van den Ende, Martijn;Martijn;van den Ende;0000-0002-0634-7078;Utrecht University;van den Ende, Martijn;Martijn;van den Ende;0000-0002-0634-7078;Utrecht University;Experimental rock deformation/HPT-Lab (Utrecht University, The Netherlands);Utrecht University, The Netherlands;2018-02;eng;Dataset;10.1029/2018GL078103;84040 Bytes;2 Files;application/octet-stream;application/pdf;CC BY 4.0;Owing to their destructive potential, earthquakes receive considerable attention from laboratory studies. In friction experiments, stick-slips are studied as the laboratory equivalent of natural earthquakes, and numerous attempts have been made to simulate stick-slips numerically using the Discrete Element Method (DEM). However, while laboratory stick-slips commonly exhibit regular stress drops and recurrence times, stick-slips generated in DEM simulations are highly irregular. This discrepancy highlights a gap in our understanding of stick-slip mechanics, which propagates into our understanding of earthquakes. In this work, we show that regular stick-slips emerge in DEM when time-dependent compaction by pressure solution is considered. We further show that the stress drop and recurrence time of stick-slips is directly controlled by the kinetics of pressure solution. Since compaction is known to operate in faults, this mechanism for frictional instabilities directly relates to natural seismicity.;Nederlandse Organisatie voor Wetenschappelijk Onderzoek;http://doi.org/10.13039/501100003246;854.12.001;NWO Vidi;H2020 European Research Council;http://doi.org/10.13039/100010663;335915;ERC Starter",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "fd0818cb-0dbf-576f-8d20-59c5c101f97d",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6431"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

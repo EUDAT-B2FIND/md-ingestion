@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "A"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1636",
+    "MetadataAccess": [
+        "oai:ota:oucs:1636"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Scott, Walter"
+    ],
+    "fulltext": "oai:ota:oucs:1636;2018-04-16T15:30:51Z;http://ota.ox.ac.uk/headers/1636.xml;The antiquary;Scott, Walter;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;A;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8fc9d3f8-9dae-5c28-b22e-876b74eaf55a",
+    "oai_identifier": [
+        "oai:ota:oucs:1636"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The antiquary"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1636.xml"
+}

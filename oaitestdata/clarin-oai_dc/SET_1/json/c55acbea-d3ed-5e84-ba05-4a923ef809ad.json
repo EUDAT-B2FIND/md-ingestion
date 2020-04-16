@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Richardson, Brian, 1946-"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 869 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1043",
+    "MetadataAccess": [
+        "oai:ota:oucs:1043"
+    ],
+    "PublicationTimestamp": "1923-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1923"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Svevo, Italo, 1861-1928"
+    ],
+    "fulltext": "oai:ota:oucs:1043;2018-03-05T10:56:22Z;http://ota.ox.ac.uk/headers/1043.xml;La coscienza di Zeno / Italo Svevo;The confessions of Zeno;Svevo, Italo, 1861-1928;1923;text_and_corpus_linguistics;Italian fiction -- 20th century;ita;Oxford Text Archive, University of Oxford;Richardson, Brian, 1946-;text/plain;(1 file : ca. 869 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c55acbea-d3ed-5e84-ba05-4a923ef809ad",
+    "oai_identifier": [
+        "oai:ota:oucs:1043"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Italian fiction -- th century"
+        }
+    ],
+    "title": [
+        "La coscienza di Zeno / Italo Svevo",
+        "The confessions of Zeno"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1043.xml"
+}

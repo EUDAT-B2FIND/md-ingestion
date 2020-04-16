@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "uni"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/506",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/506"
+    ],
+    "PID": "http://hdl.handle.net/11321/506",
+    "PublicationTimestamp": "2018-07-09T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "uni"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Smith2, Donald jr"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/506;2018-07-09T00:27:25Z;hdl_11321_3;hdl_11321_4;eng_corp_test;Smith2, Donald jr;test_corpus;test corpus;2018-07-09;corpus;http://hdl.handle.net/11321/506;eng;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;uni",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a340d483-7e09-5e53-beb5-fdc541df2160",
+    "notes": [
+        "test corpus"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/506"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "test_corpus"
+        }
+    ],
+    "title": [
+        "eng_corp_test"
+    ],
+    "url": ""
+}

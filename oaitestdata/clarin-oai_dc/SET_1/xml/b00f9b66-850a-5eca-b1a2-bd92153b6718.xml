@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/317</identifier>
+    <datestamp>2016-07-31T15:51:16Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Cyfry</dc:title>
+      <dc:creator>Kor&#382;inek, Danijel</dc:creator>
+      <dc:creator>Brocki, &#321;ukasz</dc:creator>
+      <dc:subject>speech corpus</dc:subject>
+      <dc:description>A small spoken digits corpus in polish. Contains 488 recordings of 25 speakers reading 20 digits (0-9) each. Amounts to around 76 minutes of recordings. Split into train (~72%), valid (~8%) and test (~20%) sets.</dc:description>
+      <dc:date>2016-07-31</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/317</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Polish-Japanese Academy of Information Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

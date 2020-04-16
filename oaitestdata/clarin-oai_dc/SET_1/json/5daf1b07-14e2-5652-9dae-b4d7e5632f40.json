@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=a8550c806ec311e2a2aa782bcb074135a2cd490541a5448b93b0ccd040237406",
+    "MetadataAccess": [
+        "a8550c806ec311e2a2aa782bcb074135a2cd490541a5448b93b0ccd040237406"
+    ],
+    "PublicationTimestamp": "2013-02-04T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "a8550c806ec311e2a2aa782bcb074135a2cd490541a5448b93b0ccd040237406;2019-02-27T12:09:40Z;toolService;toolService:tool;U-Compare speech synthesis and visualisation workflow;This is a workflow that is designed especially for use in the UIMA-based U-Compare workbench (see separate META-SHARE record).  The workflow is in \"ucz\" format (specific to U-Compare) and can be imported via the \"Import Workflow\" item in the \"Workflows\" menu of the U-Compare interface. It includes the \"Synthesizer Annotator\" component (based on the Ogimios speech synthesis software, developed at Universitat Polit\u00c3\u00a8cnica de Catalunya) and the \"Synthesizer Annotation Viewer\" component, developed at the University of Manchester. The latter component provides a visualisation of the speech signals and transcriptions of individual words.  \n\n;2013-02-04",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5daf1b07-14e2-5652-9dae-b4d7e5632f40",
+    "notes": [
+        "This is a workflow that is designed especially for use in the UIMA-based U-Compare workbench (see separate META-SHARE record).  The workflow is in \"ucz\" format (specific to U-Compare) and can be imported via the \"Import Workflow\" item in the \"Workflows\" menu of the U-Compare interface. It includes the \"Synthesizer Annotator\" component (based on the Ogimios speech synthesis software, developed at Universitat Polit\u00c3\u00a8cnica de Catalunya) and the \"Synthesizer Annotation Viewer\" component, developed at the University of Manchester. The latter component provides a visualisation of the speech signals and transcriptions of individual words.  \n\n"
+    ],
+    "oai_identifier": [
+        "a8550c806ec311e2a2aa782bcb074135a2cd490541a5448b93b0ccd040237406"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare speech synthesis and visualisation workflow"
+    ]
+}

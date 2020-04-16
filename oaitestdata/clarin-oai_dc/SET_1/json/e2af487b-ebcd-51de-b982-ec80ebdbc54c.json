@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/19",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/19"
+    ],
+    "PID": "http://hdl.handle.net/11321/19",
+    "PublicationTimestamp": "2014-01-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "author": [
+        "Piasecki, Maciej",
+        "Szpakowicz, Stanis\u0142aw",
+        "Broda, Bartosz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/19;2016-01-21T14:36:25Z;hdl_11321_3;hdl_11321_4;Lists of semantic relatedness;Piasecki, Maciej;Broda, Bartosz;Szpakowicz, Stanis\u0142aw;Dystrybucyjne Podobie\u0144stwo Semantyczne (DPS, ang. Measure of Semantic Relatedness) obrazuje podobie\u0144stwo pomi\u0119dzy parami wyraz\u00f3w na podstawie  analizy ich wsp\u00f3\u0142wyst\u0119powania w korpusach tekst\u00f3w. Og\u00f3ln\u0105 spos\u00f3b wydobywania podobie\u0144stwa mo\u017cna przedstawi\u0107 nast\u0119puj\u0105co. W pierwszej kolejno\u015bci wszystkie konkteksty interesuj\u0105cych s\u0142\u00f3w s\u0105 analizowane pod k\u0105tem wsp\u00f3\u0142wyst\u0119powania z innymi s\u0142owami.;2014-01-01;corpus;http://hdl.handle.net/11321/19;pol;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/pl/narzedzia-i-zasoby/lista-podobienstwa-semantycznego",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e2af487b-ebcd-51de-b982-ec80ebdbc54c",
+    "notes": [
+        "Dystrybucyjne Podobie\u0144stwo Semantyczne (DPS, ang. Measure of Semantic Relatedness) obrazuje podobie\u0144stwo pomi\u0119dzy parami wyraz\u00f3w na podstawie  analizy ich wsp\u00f3\u0142wyst\u0119powania w korpusach tekst\u00f3w. Og\u00f3ln\u0105 spos\u00f3b wydobywania podobie\u0144stwa mo\u017cna przedstawi\u0107 nast\u0119puj\u0105co. W pierwszej kolejno\u015bci wszystkie konkteksty interesuj\u0105cych s\u0142\u00f3w s\u0105 analizowane pod k\u0105tem wsp\u00f3\u0142wyst\u0119powania z innymi s\u0142owami."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/19"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Lists of semantic relatedness"
+    ],
+    "url": ""
+}

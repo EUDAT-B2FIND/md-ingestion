@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2683</identifier>
+    <datestamp>2019-01-10T19:34:25Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PAWS</dc:title>
+      <dc:creator>Nedoluzhko, Anna</dc:creator>
+      <dc:creator>Nov&#225;k, Michal</dc:creator>
+      <dc:creator>Ogrodniczuk, Maciej</dc:creator>
+      <dc:subject>multilingual</dc:subject>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>coreference</dc:subject>
+      <dc:subject>tectogrammatics</dc:subject>
+      <dc:description>PAWS is a multi-lingual parallel treebank with coreference annotation. It consists of English texts from the Wall Street Journal translated into Czech, Russian and Polish. In addition, the texts are syntactically parsed and word-aligned. PAWS is based on PCEDT 2.0 and continues the tradition of multilingual treebanks with coreference annotation. PAWS offers linguistic material that can be further leveraged in cross-lingual studies, especially on coreference.</dc:description>
+      <dc:date>2018-05-15</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2683</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:relation>http://aclweb.org/anthology/W18-0708</dc:relation>
+      <dc:rights>PAWS License</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/license-PAWS</dc:rights>
+      <dc:rights>RES</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/paws</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

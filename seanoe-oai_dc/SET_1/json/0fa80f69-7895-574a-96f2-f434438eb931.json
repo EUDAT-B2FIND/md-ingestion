@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/47251",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=0fa80f69-7895-574a-96f2-f434438eb931",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY"
+    ],
+    "SpatialCoverage": "(42N-51N,6 W-8 E)",
+    "TempCoverageBegin": 32045975999,
+    "TempCoverageEnd": 32045975999,
+    "TemporalCoverage": " point in time : 1016-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1016-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1016-07-01T11:59:59Z",
+    "author": [
+        "REPHYTOX - French Monitoring program for Phycotoxins in marine organisms"
+    ],
+    "fulltext": "oai:seanoe.org:47251;2017-12-07;REPHYTOX dataset. French Monitoring program for Phycotoxins in marine organisms. Data since 1987;REPHYTOX - French Monitoring program for Phycotoxins in marine organisms;REPHYTOX dataset includes long-term time series on phycotoxins in marine bivalve molluscs, since 1987, along the whole French coast. The dataset covers results on lipophilic toxins, PSP toxins, ASP toxins, and palytoxins. REPHYTOX was until 2015 an integral part of the REPHY network. The dataset is available in its entirety.\n;SEANOE;2017;dataset;DOI:10.17882/47251;http://dx.doi.org/10.17882/47251;North 51.10164, South 42.201888, East 7.732407, West -5.583023;https://www.seanoe.org/data/00361/47251/illustration.gif;42.201888 -5.583023 51.10164 7.732407;CC-BY",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "0fa80f69-7895-574a-96f2-f434438eb931",
+    "notes": [
+        "REPHYTOX dataset includes long-term time series on phycotoxins in marine bivalve molluscs, since 1987, along the whole French coast. The dataset covers results on lipophilic toxins, PSP toxins, ASP toxins, and palytoxins. REPHYTOX was until 2015 an integral part of the REPHY network. The dataset is available in its entirety.\n"
+    ],
+    "oai_identifier": [
+        "0fa80f69-7895-574a-96f2-f434438eb931"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-5.583023,42.201888],[-5.583023,51.10164],[7.732407,51.10164],[7.732407,42.201888],[-5.583023,42.201888]]]}",
+    "state": "active",
+    "title": [
+        "REPHYTOX dataset. French Monitoring program for Phycotoxins in marine organisms. Data since 1987"
+    ],
+    "url": ""
+}

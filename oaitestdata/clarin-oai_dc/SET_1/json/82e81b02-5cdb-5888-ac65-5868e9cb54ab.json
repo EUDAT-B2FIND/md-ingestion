@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-xz",
+        "downloadable_files_count: 2"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1673",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1673"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1673",
+    "PublicationTimestamp": "2016-03-10T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0015-A780-9"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Haji\u010d, Jan",
+        "Hlav\u00e1\u010dov\u00e1, Jaroslava"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1673;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;MorfFlex CZ 160310;Haji\u010d, Jan;Hlav\u00e1\u010dov\u00e1, Jaroslava;morphological dictionary;morphology;Czech;Czech morphological dictionary developed originally by Jan Haji\u010d as a spelling checker and lemmatization dictionary. Currently it contains full morphological information for each covered wordform, as well as some derivational, semantic and named entity information.;2016-03-10;lexicalConceptualResource;http://hdl.handle.net/11234/1-1673;ces;http://hdl.handle.net/11858/00-097C-0000-0015-A780-9;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/x-xz;application/x-xz;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/morfflex",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "82e81b02-5cdb-5888-ac65-5868e9cb54ab",
+    "notes": [
+        "Czech morphological dictionary developed originally by Jan Haji\u010d as a spelling checker and lemmatization dictionary. Currently it contains full morphological information for each covered wordform, as well as some derivational, semantic and named entity information."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1673"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphological dictionary"
+        },
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "Czech"
+        }
+    ],
+    "title": [
+        "MorfFlex CZ 160310"
+    ],
+    "url": ""
+}

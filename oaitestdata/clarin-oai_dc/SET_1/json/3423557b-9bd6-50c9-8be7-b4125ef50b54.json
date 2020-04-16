@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3872",
+    "MetadataAccess": [
+        "oai:ota:oucs:3872"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Centlivre, Susanna, 1667?-1723."
+    ],
+    "fulltext": "oai:ota:oucs:3872;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3872.xml;The beau's duel: or a soldier for the ladies. A comedy, as it is acted at the New Theater in Lincolns-Inn-Fields, by Her Majesties servants.;Centlivre, Susanna, 1667?-1723.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3423557b-9bd6-50c9-8be7-b4125ef50b54",
+    "oai_identifier": [
+        "oai:ota:oucs:3872"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The beau's duel: or a soldier for the ladies. A comedy, as it is acted at the New Theater in Lincolns-Inn-Fields, by Her Majesties servants."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3872.xml"
+}

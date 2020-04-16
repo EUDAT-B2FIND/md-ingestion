@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Prof. R. A. Lodge",
+        "Lodge, R. Anthony",
+        "Leverhulme Trust"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 900 KB)"
+    ],
+    "Language": [
+        "Middle French (ca. 1400-1600)",
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2423",
+    "MetadataAccess": [
+        "oai:ota:oucs:2423"
+    ],
+    "PublicationTimestamp": "2000-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Linguistic corpora"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:2423;2018-02-21T11:37:02Z;http://ota.ox.ac.uk/headers/2423.xml;Paris speech in the past;2000-07;text_and_corpus_linguistics;Electronic publications -- Great Britain -- 20th century;Corpora -- Great Britain -- 20th century;Linguistic corpora -- Great Britain -- 20th century;frm;fra;A collection of semi-literary representations of vernacular (French) speech from the 16th to 19th centuries which is preceeded by a set of tax-rolls from late 17th century Paris ;Oxford Text Archive, University of Oxford;Lodge, R. Anthony;Leverhulme Trust;Prof. R. A. Lodge;text/sgml;(1 file : ca. 900 KB);Text;Linguistic corpora;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "df95f2af-fcea-5fa7-a268-b6b61b09bb92",
+    "notes": [
+        "A collection of semi-literary representations of vernacular (French) speech from the 16th to 19th centuries which is preceeded by a set of tax-rolls from late 17th century Paris "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2423"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Electronic publications -- Great Britain -- th century"
+        },
+        {
+            "name": "Corpora -- Great Britain -- th century"
+        },
+        {
+            "name": "Linguistic corpora -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Paris speech in the past"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2423.xml"
+}

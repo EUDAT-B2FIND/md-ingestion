@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1b16b09ca35a11e1a404080027e73ea29318f60f576147adbd7a74790748894a",
+    "MetadataAccess": [
+        "1b16b09ca35a11e1a404080027e73ea29318f60f576147adbd7a74790748894a"
+    ],
+    "PublicationTimestamp": "2015-12-14T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "1b16b09ca35a11e1a404080027e73ea29318f60f576147adbd7a74790748894a;2019-02-27T12:08:55Z;lexicalConceptualResource;lexicalConceptualResource:framenet;SemLink;SemLink is a project whose aim is to link together different lexical resources via a set of mappings. These mappings will make it possible to combine the different information provided by these different lexical resources for tasks such as inferencing. In the current release, two mappings are available: 1) a mapping between VerbNet and PropBank. 2) a mapping between VerbNet and FrameNet. The version of FrameNet used is v1.2 ;2015-12-14",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2fe9075b-11e9-5074-9798-9224ab2d598e",
+    "notes": [
+        "SemLink is a project whose aim is to link together different lexical resources via a set of mappings. These mappings will make it possible to combine the different information provided by these different lexical resources for tasks such as inferencing. In the current release, two mappings are available: 1) a mapping between VerbNet and PropBank. 2) a mapping between VerbNet and FrameNet. The version of FrameNet used is v1.2 "
+    ],
+    "oai_identifier": [
+        "1b16b09ca35a11e1a404080027e73ea29318f60f576147adbd7a74790748894a"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:framenet"
+    ],
+    "state": "active",
+    "title": [
+        "SemLink"
+    ]
+}

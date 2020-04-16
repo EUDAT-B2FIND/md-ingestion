@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "lisa.huelsmann@ur.de"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "CSV"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/envidat.27",
+    "PublicationTimestamp": "2017-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "University of Regensburg"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Lisa H\u00fclsmann"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/envidat.27;2018-07-07T00:12:59Z;doi:10.16904/envidat.27;Eng;MD_CharacterSetCode_utf8;Lisa H\u00fclsmann;University of Regensburg;lisa.huelsmann@ur.de;2017-11-15T16:15:30;ISO 19115:2003/19139;1.0;EPSG:4326;Calibration data for empirical mortality models of 18 European tree species;2017-12-31;The dataset comprises > 90 000 records from inventories in 54 strict forest reserves in [Switzerland](https://www.wsl.ch/de/wald/biodiversitaet-naturschutz-urwald/naturwaldreservate.html) and [Lower Saxony / Germany](http://naturwaelder.de/) along a considerable environmental gradient. It was used to develop parsimonious, species-specific mortality models for 18 European tree species based on tree size and growth as well as additional covariates on stand structure and climate.     ## Inventory data  Measurements had been conducted repeatedly on up to 14 permanent plots per reserve for up to 60 years with re-measurement intervals of 4 - 27 years. The permanent plots vary in size between 0.03 and 3.47 ha. The inventories provide diameter measurements at breast height (DBH) and information on the species and status (alive or dead) of trees with DBH \u2265 4 cm for Switzerland and \u2265 7 cm for Germany.     ## Data selection  We excluded three permanent plots where at least 80 % of the trees died during an interval of 10 years, and mortality could be clearly assigned to a disturbance agent. Mortality in the remaining stands was rather low, with a mean annual mortality rate of 1.5 % and strong variation between plots from 0 to 6.5 % (assessed for trees of all species with DBH \u2265 7 cm).  We only used data from permanent plots with at least 20 trees per species to obtain reliable plot-level mortality rates even for species with low mortality rates (about 5 % during 10 years), and selected tree species occurring on at least 10 plots to cover sufficient ecological gradients. This led to a dataset of 197 permanent plots and 18 tree or shrub species: _Abies alba_ Mill., _Acer campestre_ L., _Acer pseudoplatanus_ L., _Alnus incana_ Moench., _Betula pendula_ Roth, _Carpinus betulus_ L., _Cornus mas_ L., _Corylus avellana_ L., _Fagus sylvatica_ L., _Fraxinus excelsior_ L., _Picea abies_ (L.) Karst, _Pinus mugo_ Turra, _Pinus sylvestris_ L., _Quercus pubescens_ Willd., _Quercus_ spp. (_Q. petraea_ Liebl. and _Q. robur_ L.; not properly differentiated in the Swiss inventories), _Sorbus aria_ Crantz, _Tilia cordata_ Mill. and _Ulmus glabra_ Huds..     ## Predictors of tree mortality  We considered tree size and growth as key indicators for mortality risk. Radial stem growth between the first and second inventory and DBH at the second inventory were used to predict tree status (alive or dead) at the third inventory. To this end, the annual relative basal area increment (relBAI) was calculated as the compound annual growth rate of the trees basal area. Additional covariates on stand structure and climate comprise mean annual precipitation sum (P), mean annual air temperature (mT), the mean and the interquartile range of DBH (mDBH, iqrDBH), basal area (BA) and the number of trees (N) per hectare.     ## Further information  For further information, refer to H\u00fclsmann _et al_. (in press) How to kill a tree \u2013 Empirical mortality models for eighteen species and their performance in a dynamic forest model. _Ecological Applications_.;Lisa H\u00fclsmann;University of Regensburg;lisa.huelsmann@ur.de;EMPIRICAL MORTALITY MODELS;FOREST RESERVES;INVENTORY DATA;TREE GROWTH;TREE MORTALITY;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;[6.6357421875, 51.23440735163459] [11.77734375, 51.23440735163459];CSV;https://www.envidat.ch/dataset/10-16904-envidat-27;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/3a492ec9-def3-4e75-9778-dc397f63264d/resource/2a82fbff-34f5-4464-a7d4-664ef43a1303/download/mortality_calibration_data.csv;HTTPS;CALIBRATION DATA;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "8ab9a83b-4a08-52b2-bf87-1b3cd146a39b",
+    "notes": [
+        "The dataset comprises > 90 000 records from inventories in 54 strict forest reserves in [Switzerland](https://www.wsl.ch/de/wald/biodiversitaet-naturschutz-urwald/naturwaldreservate.html) and [Lower Saxony / Germany](http://naturwaelder.de/) along a considerable environmental gradient. It was used to develop parsimonious, species-specific mortality models for 18 European tree species based on tree size and growth as well as additional covariates on stand structure and climate.     ## Inventory data  Measurements had been conducted repeatedly on up to 14 permanent plots per reserve for up to 60 years with re-measurement intervals of 4 - 27 years. The permanent plots vary in size between 0.03 and 3.47 ha. The inventories provide diameter measurements at breast height (DBH) and information on the species and status (alive or dead) of trees with DBH \u2265 4 cm for Switzerland and \u2265 7 cm for Germany.     ## Data selection  We excluded three permanent plots where at least 80 % of the trees died during an interval of 10 years, and mortality could be clearly assigned to a disturbance agent. Mortality in the remaining stands was rather low, with a mean annual mortality rate of 1.5 % and strong variation between plots from 0 to 6.5 % (assessed for trees of all species with DBH \u2265 7 cm).  We only used data from permanent plots with at least 20 trees per species to obtain reliable plot-level mortality rates even for species with low mortality rates (about 5 % during 10 years), and selected tree species occurring on at least 10 plots to cover sufficient ecological gradients. This led to a dataset of 197 permanent plots and 18 tree or shrub species: _Abies alba_ Mill., _Acer campestre_ L., _Acer pseudoplatanus_ L., _Alnus incana_ Moench., _Betula pendula_ Roth, _Carpinus betulus_ L., _Cornus mas_ L., _Corylus avellana_ L., _Fagus sylvatica_ L., _Fraxinus excelsior_ L., _Picea abies_ (L.) Karst, _Pinus mugo_ Turra, _Pinus sylvestris_ L., _Quercus pubescens_ Willd., _Quercus_ spp. (_Q. petraea_ Liebl. and _Q. robur_ L.; not properly differentiated in the Swiss inventories), _Sorbus aria_ Crantz, _Tilia cordata_ Mill. and _Ulmus glabra_ Huds..     ## Predictors of tree mortality  We considered tree size and growth as key indicators for mortality risk. Radial stem growth between the first and second inventory and DBH at the second inventory were used to predict tree status (alive or dead) at the third inventory. To this end, the annual relative basal area increment (relBAI) was calculated as the compound annual growth rate of the trees basal area. Additional covariates on stand structure and climate comprise mean annual precipitation sum (P), mean annual air temperature (mT), the mean and the interquartile range of DBH (mDBH, iqrDBH), basal area (BA) and the number of trees (N) per hectare.     ## Further information  For further information, refer to H\u00fclsmann _et al_. (in press) How to kill a tree \u2013 Empirical mortality models for eighteen species and their performance in a dynamic forest model. _Ecological Applications_."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/envidat.27",
+        "oai:envidat.ch:10.16904/envidat.27"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "EMPIRICAL MORTALITY MODELS"
+        },
+        {
+            "name": "FOREST RESERVES"
+        },
+        {
+            "name": "INVENTORY DATA"
+        },
+        {
+            "name": "TREE GROWTH"
+        },
+        {
+            "name": "TREE MORTALITY"
+        }
+    ],
+    "title": [
+        "Calibration data for empirical mortality models of 18 European tree species"
+    ],
+    "url": "https://www.envidat.ch/dataset/3a492ec9-def3-4e75-9778-dc397f63264d/resource/2a82fbff-34f5-4464-a7d4-664ef43a1303/download/mortality_calibration_data.csv"
+}

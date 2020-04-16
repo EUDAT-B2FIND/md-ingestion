@@ -1,0 +1,206 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:envidat.ch:10.16904/4</identifier>
+    <datestamp>2018-07-07T00:12:52Z</datestamp>
+  </header>
+  <metadata>
+    <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>doi:10.16904/4</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gco:CharacterString>Eng</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="MD_CharacterSetCode_utf8" codeSpace="ISOTC211/19115">MD_CharacterSetCode_utf8</gmd:MD_CharacterSetCode>
+      </gmd:characterSet>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString>Sarah M. Springman</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString>ETHZ</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>sarah.springman@igt.baug.ethz.ch</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:DateTime>2016-10-17T09:30:11</gco:DateTime>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName>
+        <gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion>
+        <gco:CharacterString>1.0</gco:CharacterString>
+      </gmd:metadataStandardVersion>
+      <gmd:referenceSystemInfo>
+        <gmd:MD_ReferenceSystem>
+          <gmd:referenceSystemIdentifier>
+            <gmd:RS_Identifier>
+              <gmd:code>
+                <gco:CharacterString>EPSG:4326</gco:CharacterString>
+              </gmd:code>
+            </gmd:RS_Identifier>
+          </gmd:referenceSystemIdentifier>
+        </gmd:MD_ReferenceSystem>
+      </gmd:referenceSystemInfo>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>TRAMM project Ruedlingen experimental landslide dataset, Switzerland</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2015-12-31</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:presentationForm>
+                <gmd:CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="dataset"/>
+              </gmd:presentationForm>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString>A landslide testsite dataset related to pore water pressure perturbations on the stability of unsaturated silty sand slopes leading to the initiation and propagation of the shear deformations and eventual rapid mass movements. This project was initiated and led by the Institute of Geotechnical Engineering (IGT) of the Swiss Federal Institute of Technology (ETH Zurich) and was incorporated in a Swiss national (TRAMM) and a European Union (SafeLand) multidisciplinary research project. Field site: The experimental slope is 7.5 m wide by 35 m long, located in the Swiss lowlands on an east facing slope over-looking the river Rhine, at an altitude of ~ 350 masl. Originally there were forestry covertures of circa 80%, heights of 5-20 m. Shrubs up to 1-5 m high and a free herb layer covered ~ 50% of the surface. The average gradient was determined to be from 38&#176; to 43&#176; with a slightly concave surface. The underlying rock consists mainly of Molasse, which is formed by alternate layers of sea deposits under the Tethys Sea (Seawater Molasse) and land deposits (Freshwater Molasse). Several augured samples, as well as an outcrop of the bedrock about 20 m above the selected field, revealed horizontal layering of fine grained sand- and marlstone at the test site. The sandstone was later proven to be highly permeable and fissured. Grain-size distributions were determined and the soil was classified as medium-low plasticity silty sand. Site instrumentation:Measurements of soil suction, groundwater level, soil volumetric water content, rain intensity and soil temperature were taken and combined with geophysical monitoring using Electrical Resistance Tomography (ERT) and investigations into subsurface flow by means of tracer experiments. Deformations were monitored during the experiment, both on the surface via photogrammetrical methods and within the soil mass, using a flexible probe equipped with strain gauges at different points and two axis inclinometers on the top and acoustic sensors. Instruments were installed mainly in three clusters at depths of 15, 30, 60, 90, 120, and 150 cm below the ground surface over the slope, including jet-fill tensiometers, TDRs, Decagon TDRs, piezometers, soil temperature sensors, deformation probes, earth pressure cells, acoustic sensors and rain gauges. A ring-net barrier (provided by Geobrugg AG) was set up at the foot of the slope to protect the road. Experiments: A sprinkling experiment was carried out in September 2008 to investigate the hydrological and mechanical response of the slope (Experiment 1), followed by a second one to trigger a landslide in March 2009 (Experiment 2).     __Publications__    1. Lehmann, P., F. Gambazzi, B. Suski, L. Baron, A. Askarinejad, S. M. Springman, K. Holliger, and D. Or (2013), Evolution of soil wetting patterns preceding a hydrologically induced landslide inferred from electrical resistivity survey and point measurements of volumetric water content and pore water pressure, Water Resour. Res., 49, 7992&#8211;8004, doi:[10.1002/2013WR014560](http://dx.doi.org/10.1002/2013WR014560).    2. Springman, S. M., Kienzler, P., Casini, F., &amp; Askarinejad, A. (2009). Landslide triggering experiment in a steep forested slope in Switzerland. In 17th International Conference of Soil Mechanics and Geotechnical Engineering, Alexandria, Egypt (pp. 1698-1701). doi: [10.3233/978-1-60750-031-5-1698](http://dx.doi.org/10.3233/978-1-60750-031-5-1698)</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Sarah M. Springman</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>ETHZ</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>sarah.springman@igt.baug.ethz.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>LANDSLIDES</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>PORE WATER</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints>
+            <gmd:MD_LegalConstraints>
+              <gmd:otherConstraints>
+                <gco:CharacterString>Open Data Commons Open Database License (ODbL)</gco:CharacterString>
+              </gmd:otherConstraints>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:language>
+            <gco:CharacterString>Eng</gco:CharacterString>
+          </gmd:language>
+          <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="MD_CharacterSetCode_utf8" codeSpace="ISOTC211/19115">MD_CharacterSetCode_utf8</gmd:MD_CharacterSetCode>
+          </gmd:characterSet>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_BoundingPolygon>
+                  <gmd:polygon>
+                    <gml:Point gml:id="P001">
+                      <gml:pos>8.56659 47.56685</gml:pos>
+                    </gml:Point>
+                  </gmd:polygon>
+                </gmd:EX_BoundingPolygon>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:distributionInfo>
+        <gmd:MD_Distribution>
+          <gmd:distributionFormat>
+            <gmd:MD_Format>
+              <gmd:name>
+                <gco:CharacterString>ZIP</gco:CharacterString>
+              </gmd:name>
+              <gmd:version>
+                <gco:CharacterString/>
+              </gmd:version>
+            </gmd:MD_Format>
+          </gmd:distributionFormat>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.envidat.ch/dataset/10-16904-4</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>HTTPS</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>DATASET METADATA</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.envidat.ch/dataset/65ecae0a-e309-40f2-9e44-f0ad45f3339d/resource/c11c782a-45fa-46d8-981c-6ecdcdc938fa/download/trammruedlingendata.zip</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>HTTPS</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>TRAMM RUEDLINGEN DATA</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</gmd:CI_OnLineFunctionCode>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+    </gmd:MD_Metadata>
+  </metadata>
+</record>

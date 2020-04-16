@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4087-6",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4087-6"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-4087-6",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0001-48F2-1",
+        "http://hdl.handle.net/11234/1-1481"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Mi\u0161utka, Jozef",
+        "Kamran, Amir",
+        "Haji\u010d, Jan",
+        "Ko\u0161arko, Ond\u0159ej",
+        "Vandas, Karel",
+        "Jos\u00edfko, Michal",
+        "Pajas, Petr",
+        "Sedl\u00e1k, Michal",
+        "Jawaid, Bushra",
+        "Stra\u0148\u00e1k, Pavel"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4087-6;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Linguistic digital repository based on DSpace;Pajas, Petr;Vandas, Karel;Mi\u0161utka, Jozef;Kamran, Amir;Jawaid, Bushra;Ko\u0161arko, Ond\u0159ej;Sedl\u00e1k, Michal;Jos\u00edfko, Michal;Stra\u0148\u00e1k, Pavel;Haji\u010d, Jan;linguistics;digital data;digital repository;language repository;linguistic data;One of the goals of LINDAT/CLARIN Centre for Language Research Infrastructure is to provide technical background to institutions or researchers who wants to share their tools and data used for research in linguistics or related research fields. The digital repository is built on a highly customised DSpace platform.;2014;toolService;http://hdl.handle.net/11858/00-097C-0000-0023-4087-6;http://hdl.handle.net/11858/00-097C-0000-0001-48F2-1;http://hdl.handle.net/11234/1-1481;downloadable_files_count: 0;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://svn.ms.mff.cuni.cz/redmine/projects/dspace-modifications",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "428edd5c-d634-5fbd-8ec5-61fa1be364a7",
+    "notes": [
+        "One of the goals of LINDAT/CLARIN Centre for Language Research Infrastructure is to provide technical background to institutions or researchers who wants to share their tools and data used for research in linguistics or related research fields. The digital repository is built on a highly customised DSpace platform."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4087-6"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "linguistics"
+        },
+        {
+            "name": "digital data"
+        },
+        {
+            "name": "digital repository"
+        },
+        {
+            "name": "language repository"
+        },
+        {
+            "name": "linguistic data"
+        }
+    ],
+    "title": [
+        "Linguistic digital repository based on DSpace"
+    ],
+    "url": ""
+}

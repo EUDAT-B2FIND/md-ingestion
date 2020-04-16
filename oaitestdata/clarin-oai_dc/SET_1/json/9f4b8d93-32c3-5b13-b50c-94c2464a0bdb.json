@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/278",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/278"
+    ],
+    "PID": "http://hdl.handle.net/11321/278",
+    "PublicationTimestamp": "2016-06-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "K\u0119dzia, Pawe\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/278;2016-06-03T12:25:24Z;hdl_11321_3;hdl_11321_4;Saper;K\u0119dzia, Pawe\u0142;Saper;Shallow semantic parser;Semantic parser;Shallow semantic parser for polish texts processing. Contains word sense disambiguation, mapping go SUMO concepts and semantic role labelling.;2016-06-01;toolService;http://hdl.handle.net/11321/278;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9f4b8d93-32c3-5b13-b50c-94c2464a0bdb",
+    "notes": [
+        "Shallow semantic parser for polish texts processing. Contains word sense disambiguation, mapping go SUMO concepts and semantic role labelling."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/278"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Saper"
+        },
+        {
+            "name": "Shallow semantic parser"
+        },
+        {
+            "name": "Semantic parser"
+        }
+    ],
+    "title": [
+        "Saper"
+    ],
+    "url": ""
+}

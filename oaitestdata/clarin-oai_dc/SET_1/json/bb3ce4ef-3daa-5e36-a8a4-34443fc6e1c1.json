@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "[s.n.]"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8328",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8328"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D37-0",
+    "PublicationTimestamp": "1779-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1779"
+    ],
+    "Publisher": [
+        "[s.n.]"
+    ],
+    "RelatedIdentifier": [
+        "http://www.pbc.rzeszow.pl/Content/8328",
+        "oai:www.pbc.rzeszow.pl:publication:9016"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Jab\u0142onowski, Jan Stanis\u0142aw (1669-1731)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8328;2019-03-01T17:38:45Z;Skrupu\u0142 bez skrupu\u0142u w Polszcze, albo o\u015bwiecenie grzech\u00f3w narodowi naszemu polskiemu zwyczaynieyszych, a za grzechy niemianych : traktat po prostu te grzechy roztrz\u0105sai\u0105cy, na rozdzia\u0142y podzielony, przez pewnego Polaka temi\u017c grzechami grzesznego, ale \u017ca\u0142ui\u0105cego. Na popraw\u0119 swoi\u0105 y Ludzk\u0105;Jab\u0142onowski, Jan Stanis\u0142aw (1669-1731);Polska - polityka - 17-18 w.;publicystyka polska - 18 w.;Na s. tyt. inf.: Roku 1730. do druku podany we Lwowie a roku 1779. na \u017c\u0105danie pewnego Ministra przedrukowany;Zawiera ryciny;[s.n.];1779;starodruk;application/xml;clarind-uds:poldilemma-8328;hdl:11858/00-246C-0000-0023-8D37-0;Sygnatura orygina\u0142u: SD-845;pol;lat;http://www.pbc.rzeszow.pl/Content/8328;oai:www.pbc.rzeszow.pl:publication:9016;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bb3ce4ef-3daa-5e36-a8a4-34443fc6e1c1",
+    "notes": [
+        "Na s. tyt. inf.: Roku 1730. do druku podany we Lwowie a roku 1779. na \u017c\u0105danie pewnego Ministra przedrukowany",
+        "Zawiera ryciny"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8328"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Polska - polityka - - w."
+        },
+        {
+            "name": "publicystyka polska - w."
+        }
+    ],
+    "title": [
+        "Skrupu\u0142 bez skrupu\u0142u w Polszcze, albo o\u015bwiecenie grzech\u00f3w narodowi naszemu polskiemu zwyczaynieyszych, a za grzechy niemianych : traktat po prostu te grzechy roztrz\u0105sai\u0105cy, na rozdzia\u0142y podzielony, przez pewnego Polaka temi\u017c grzechami grzesznego, ale \u017ca\u0142ui\u0105cego. Na popraw\u0119 swoi\u0105 y Ludzk\u0105"
+    ],
+    "url": ""
+}

@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 7",
+        "text/xml"
+    ],
+    "Language": [
+        "Vietnamese",
+        "Czech",
+        "English",
+        "German",
+        "French",
+        "Spanish",
+        "Russian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1594",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1594"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1594",
+    "PublicationTimestamp": "2015-11-05T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bojar, Ond\u0159ej",
+        "Hoang, Duc Tam"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1594;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;WMT 13 Test Set;Hoang, Duc Tam;Bojar, Ond\u0159ej;test data;parallel corpus;Vietnamese;We provide the Vietnamese version of the multi-lingual test set from WMT 2013 [1] competition. The Vietnamese version was manually translated from English. For completeness, this record contains the 3000 sentences in all the WMT 2013 original languages (Czech, English, French, German, Russian and Spanish), extended with our Vietnamese version. Test set is used in [2] to evaluate translation between Czech, English and Vietnamese.\r\n\r\nReferences\r\n1. http://www.statmt.org/wmt13/evaluation-task.html\r\n2. Duc Tam Hoang and Ond\u0159ej Bojar, The Prague Bulletin of Mathematical Linguistics. Volume 104, Issue 1, Pages 75--86, ISSN 1804-0462. 9/2015;2015-11-05;corpus;http://hdl.handle.net/11234/1-1594;vie;ces;eng;deu;fra;spa;rus;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;text/xml;text/xml;text/xml;text/xml;text/xml;text/xml;text/xml;text/plain; charset=utf-8;downloadable_files_count: 7;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "41cccb60-2a27-5b37-9463-889c182585e7",
+    "notes": [
+        "We provide the Vietnamese version of the multi-lingual test set from WMT 2013 [1] competition. The Vietnamese version was manually translated from English. For completeness, this record contains the 3000 sentences in all the WMT 2013 original languages (Czech, English, French, German, Russian and Spanish), extended with our Vietnamese version. Test set is used in [2] to evaluate translation between Czech, English and Vietnamese.\r\n\r\nReferences\r\n1. http://www.statmt.org/wmt13/evaluation-task.html\r\n2. Duc Tam Hoang and Ond\u0159ej Bojar, The Prague Bulletin of Mathematical Linguistics. Volume 104, Issue 1, Pages 75--86, ISSN 1804-0462. 9/2015"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1594"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "test data"
+        },
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "Vietnamese"
+        }
+    ],
+    "title": [
+        "WMT 13 Test Set"
+    ],
+    "url": ""
+}

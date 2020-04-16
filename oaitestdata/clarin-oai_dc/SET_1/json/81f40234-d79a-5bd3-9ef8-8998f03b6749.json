@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "between 512 KB and 1 MB "
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0067",
+    "MetadataAccess": [
+        "oai:ota:oucs:0067"
+    ],
+    "PublicationTimestamp": "1874-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1874"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hardy, Thomas,  1840-1928"
+    ],
+    "fulltext": "oai:ota:oucs:0067;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0067.xml; Far from the madding crowd ;Hardy, Thomas,  1840-1928;1874;text_and_corpus_linguistics;Novels -- England -- 19th century;eng;Oxford Text Archive, University of Oxford;between 512 KB and 1 MB ;Text;Novels;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "81f40234-d79a-5bd3-9ef8-8998f03b6749",
+    "oai_identifier": [
+        "oai:ota:oucs:0067"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- England -- th century"
+        }
+    ],
+    "title": [
+        " Far from the madding crowd "
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0067.xml"
+}

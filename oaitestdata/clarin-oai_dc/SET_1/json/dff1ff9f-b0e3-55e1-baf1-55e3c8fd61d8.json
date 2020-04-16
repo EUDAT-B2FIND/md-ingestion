@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3722",
+    "MetadataAccess": [
+        "oai:ota:oucs:3722"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Paine, Thomas, 1737-1809."
+    ],
+    "fulltext": "oai:ota:oucs:3722;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3722.xml;Thoughts on the peace, and the probable advantages thereof to the United States of America: By Thomas Paine, ...;Paine, Thomas, 1737-1809.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dff1ff9f-b0e3-55e1-baf1-55e3c8fd61d8",
+    "oai_identifier": [
+        "oai:ota:oucs:3722"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Thoughts on the peace, and the probable advantages thereof to the United States of America: By Thomas Paine, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3722.xml"
+}

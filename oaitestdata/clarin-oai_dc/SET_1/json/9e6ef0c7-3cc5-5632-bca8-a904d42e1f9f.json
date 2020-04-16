@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Slovak"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADB-7",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADB-7"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0006-AADB-7",
+    "PublicationTimestamp": "2012-05-15T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/231720"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Galu\u0161\u010d\u00e1kov\u00e1, Petra",
+        "Bojar, Ond\u0159ej"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADB-7;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Manually Classified Errors in Cs->Sk Translation;Galu\u0161\u010d\u00e1kov\u00e1, Petra;Bojar, Ond\u0159ej;machine translation;errors classification;CS-SK translation;Manual classification of errors of Czech-Slovak translation according to the classification introduced by Vilar et al. [1]. First 50 sentences from WMT 2010 test set were translated by 5 MT systems (\u010ces\u00edlko, \u010ces\u00edlko2,  Google Translate and two Moses setups) and MT errors were manually marked and classified. Classification was applied in MT systems comparison [3]. Reference translation is included.\r\n\r\nReferences: \r\n[1] David Vilar, Jia Xu, Luis Fernando D\u2019Haro and Hermann Ney. Error Analysis of Machine Translation Output. In International Conference on Language Resources and Evaluation, pages 697-702. Genoa, Italy, May 2006.\r\n[2] http://matrix.statmt.org/test_sets/list\r\n[3] Ond\u0159ej Bojar, Petra Galu\u0161\u010d\u00e1kov\u00e1, and Miroslav T\u00fdnovsk\u00fd. Evaluating Quality of Machine Translation from Czech to Slovak. In Mark\u00e9ta Lopatkov\u00e1, editor, Information Technologies - Applications and Theory, pages 3-9, September 2011;2012-05-15;lexicalConceptualResource;http://hdl.handle.net/11858/00-097C-0000-0006-AADB-7;slk;info:eu-repo/grantAgreement/EC/FP7/231720;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;text/plain;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9e6ef0c7-3cc5-5632-bca8-a904d42e1f9f",
+    "notes": [
+        "Manual classification of errors of Czech-Slovak translation according to the classification introduced by Vilar et al. [1]. First 50 sentences from WMT 2010 test set were translated by 5 MT systems (\u010ces\u00edlko, \u010ces\u00edlko2,  Google Translate and two Moses setups) and MT errors were manually marked and classified. Classification was applied in MT systems comparison [3]. Reference translation is included.\r\n\r\nReferences: \r\n[1] David Vilar, Jia Xu, Luis Fernando D\u2019Haro and Hermann Ney. Error Analysis of Machine Translation Output. In International Conference on Language Resources and Evaluation, pages 697-702. Genoa, Italy, May 2006.\r\n[2] http://matrix.statmt.org/test_sets/list\r\n[3] Ond\u0159ej Bojar, Petra Galu\u0161\u010d\u00e1kov\u00e1, and Miroslav T\u00fdnovsk\u00fd. Evaluating Quality of Machine Translation from Czech to Slovak. In Mark\u00e9ta Lopatkov\u00e1, editor, Information Technologies - Applications and Theory, pages 3-9, September 2011"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADB-7"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "errors classification"
+        },
+        {
+            "name": "CS-SK translation"
+        }
+    ],
+    "title": [
+        "Manually Classified Errors in Cs->Sk Translation"
+    ],
+    "url": ""
+}

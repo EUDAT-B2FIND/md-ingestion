@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3925",
+    "MetadataAccess": [
+        "oai:ota:oucs:3925"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Mason, William, 1725-1797."
+    ],
+    "fulltext": "oai:ota:oucs:3925;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3925.xml;An epistle to Dr. Shebbeare: to which is added an ode to Sir Fletcher Norton, in imitation of Horace, Ode VIII. Book IV. By Malcolm MacGreggor, of Knightsbridge, Esq. ...;Mason, William, 1725-1797.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "28bd6184-0810-5be9-b2a0-9c9aa010b11d",
+    "oai_identifier": [
+        "oai:ota:oucs:3925"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An epistle to Dr. Shebbeare: to which is added an ode to Sir Fletcher Norton, in imitation of Horace, Ode VIII. Book IV. By Malcolm MacGreggor, of Knightsbridge, Esq. ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3925.xml"
+}

@@ -1,0 +1,102 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 24",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Bulgarian",
+        "Czech",
+        "Danish",
+        "German",
+        "Modern Greek (1453-)",
+        "English",
+        "Spanish",
+        "Estonian",
+        "Finnish",
+        "French",
+        "Hungarian",
+        "Italian",
+        "Lithuanian",
+        "Latvian",
+        "Dutch",
+        "Polish",
+        "Portuguese",
+        "Romanian",
+        "Croatian",
+        "Slovak",
+        "Slovenian",
+        "Swedish",
+        "Irish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1197",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1197"
+    ],
+    "PID": "http://hdl.handle.net/11356/1197",
+    "PublicationTimestamp": "2018-08-15T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1197;2018-10-24T20:56:47Z;hdl_11356_1023;hdl_11356_1024;JRC EU DGT Translation Memory Parsebank DGT-UD 1.0;Ljube\u0161i\u0107, Nikola;Erjavec, Toma\u017e;European law;parallel corpus;dependency parsebank;multilingual;DGT-UD is a 2 billion word 23-language parallel syntactically parsed corpus, which consists of the JRC DGT translation memory of European law, automatically annotated with UD-Pipe 1.2 (http://ufal.mff.cuni.cz/udpipe) using Universal Dependencies 2.0 models (http://hdl.handle.net/11234/1-2364). \r\nNote that the European Commission retains ownership of the source texts.;2018-08-15;corpus;http://hdl.handle.net/11356/1197;bul;ces;dan;deu;ell;eng;spa;est;fin;fra;hun;ita;lit;lav;nld;pol;por;ron;hrv;slk;slv;swe;gle;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;https://creativecommons.org/licenses/by/4.0/;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 24;Jo\u017eef Stefan Institute;https://ec.europa.eu/jrc/en/language-technologies/dgt-translation-memory",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4f7084b8-0719-5c8b-b2c9-db00866ade3e",
+    "notes": [
+        "DGT-UD is a 2 billion word 23-language parallel syntactically parsed corpus, which consists of the JRC DGT translation memory of European law, automatically annotated with UD-Pipe 1.2 (http://ufal.mff.cuni.cz/udpipe) using Universal Dependencies 2.0 models (http://hdl.handle.net/11234/1-2364). \r\nNote that the European Commission retains ownership of the source texts."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1197"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "European law"
+        },
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "dependency parsebank"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "JRC EU DGT Translation Memory Parsebank DGT-UD 1.0"
+    ],
+    "url": ""
+}

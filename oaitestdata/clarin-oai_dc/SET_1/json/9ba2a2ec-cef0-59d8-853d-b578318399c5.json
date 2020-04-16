@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3682",
+    "MetadataAccess": [
+        "oai:ota:oucs:3682"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Pope, Alexander, 1688-1744."
+    ],
+    "fulltext": "oai:ota:oucs:3682;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3682.xml;Horace his ode to Venus. Lib. IV. Ode I. Imitated by Mr. Pope;Pope, Alexander, 1688-1744.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9ba2a2ec-cef0-59d8-853d-b578318399c5",
+    "oai_identifier": [
+        "oai:ota:oucs:3682"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Horace his ode to Venus. Lib. IV. Ode I. Imitated by Mr. Pope"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3682.xml"
+}

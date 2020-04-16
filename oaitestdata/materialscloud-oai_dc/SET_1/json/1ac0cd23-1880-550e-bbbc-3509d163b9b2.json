@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0016/v2",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0016/v2",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0016/v2"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-05-07T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Piaggi, Pablo M.",
+        "Parrinello, Michele"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0016/v2;2019-06-12Z;DOI;Dataset;Piaggi, Pablo M.;Parrinello, Michele;Multithermal-multibaric molecular simulations from a variational principle;Materials Cloud;2019-05-07;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;enhanced sampling;multithermal-multibaric; water;density anomaly;Wang Landau;multicanonical;doi:10.24435/materialscloud:2019.0016/v2;https://archive.materialscloud.org/2019.0016/v2;en;We present a method for performing multithermal-multibaric molecular dynamics simulations that sample entire regions of the temperature-pressure (TP) phase diagram. The method uses a variational principle [Valsson and Parrinello, Phys. Rev. Lett. 113, 090601 (2014)] in order to construct a bias that leads to a uniform sampling in energy and volume. The intervals of temperature and pressure are taken as inputs and the relevant energy and volume regions are determined on the fly. In this way the method guarantees adequate statistics for the chosen TP region. We show that our multithermal-multibaric simulations can be used to calculate all static physical quantities for all temperatures and pressures in the targeted region of the TP plane. We illustrate our approach by studying the density anomaly of TIP4P/Ice water.\n<br/>\n\n<br/>\nThis record includes input and output files, and Jupyter Notebooks describing the analysis of the simulations and the creation of the figures for the paper.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "1ac0cd23-1880-550e-bbbc-3509d163b9b2",
+    "notes": [
+        "We present a method for performing multithermal-multibaric molecular dynamics simulations that sample entire regions of the temperature-pressure (TP) phase diagram. The method uses a variational principle [Valsson and Parrinello, Phys. Rev. Lett. 113, 090601 (2014)] in order to construct a bias that leads to a uniform sampling in energy and volume. The intervals of temperature and pressure are taken as inputs and the relevant energy and volume regions are determined on the fly. In this way the method guarantees adequate statistics for the chosen TP region. We show that our multithermal-multibaric simulations can be used to calculate all static physical quantities for all temperatures and pressures in the targeted region of the TP plane. We illustrate our approach by studying the density anomaly of TIP4P/Ice water.\n<br/>\n\n<br/>\nThis record includes input and output files, and Jupyter Notebooks describing the analysis of the simulations and the creation of the figures for the paper."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0016/v2"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "enhanced sampling"
+        },
+        {
+            "name": "multithermal-multibaric"
+        },
+        {
+            "name": "water"
+        },
+        {
+            "name": "density anomaly"
+        },
+        {
+            "name": "Wang Landau"
+        },
+        {
+            "name": "multicanonical"
+        }
+    ],
+    "title": [
+        "Multithermal-multibaric molecular simulations from a variational principle"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0016/v2"
+}

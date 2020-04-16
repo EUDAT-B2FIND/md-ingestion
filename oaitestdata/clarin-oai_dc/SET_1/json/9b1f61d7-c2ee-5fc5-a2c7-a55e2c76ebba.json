@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4359",
+    "MetadataAccess": [
+        "oai:ota:oucs:4359"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Richardson, Samuel, 1689-1761."
+    ],
+    "fulltext": "oai:ota:oucs:4359;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4359.xml;Clarissa: Or, the history of a young lady: comprehending the most important concerns of private life. ... Published by the editor of Pamela. ... [pt.2];Richardson, Samuel, 1689-1761.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9b1f61d7-c2ee-5fc5-a2c7-a55e2c76ebba",
+    "oai_identifier": [
+        "oai:ota:oucs:4359"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Clarissa: Or, the history of a young lady: comprehending the most important concerns of private life. ... Published by the editor of Pamela. ... [pt.2]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4359.xml"
+}

@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189308</identifier>
+    <datestamp>2019-03-01T11:09:55Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Chrystus Bolei&#261;cy od grzesznikow w Morzu Krwi Jego w&#322;asney Pogr&#261;zony : Na Herbowney Lod&#378;i [...] Miko&#322;aia Stefana z Chrz&#261;stowa Chrz&#261;stowskiego [...] Opata Koronowskiego Prze&#347;wietnego Zakonu Cystercye&#324;skiego J. K. M. Sekretarza &amp;c. do po&#380;&#261;danego portu Wyniesiony W Postnych X. Romana Wroblewskiego Prowincyi Wielko- Polskiey Obserwanta, Kazaniach [...] Roku [...] 1746</dc:title>
+      <dc:creator xml:lang="pl">Wr&#243;blewski, Roman ( -1769)</dc:creator>
+      <dc:subject xml:lang="pl">starodruki 18&#160;w.</dc:subject>
+      <dc:description xml:lang="pl">Chrz&#261;stowski, Miko&#322;aj Stefan (17..-17..). Adr. ded.</dc:description>
+      <dc:publisher xml:lang="pl">Drukarnia Akademicka</dc:publisher>
+      <dc:date>[1746]</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-189308</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CF6-C</dc:identifier>
+      <dc:source xml:lang="pl">Biblioteka Jagiello&#324;ska, BJ St. Dr. 38176 I</dc:source>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://jbc.bj.uj.edu.pl/Content/189308</dc:relation>
+      <dc:relation>oai:jbc.bj.uj.edu.pl:publication:200432</dc:relation>
+      <dc:coverage>1701/1800</dc:coverage>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

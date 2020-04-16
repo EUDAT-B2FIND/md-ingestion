@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/271",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/271"
+    ],
+    "PID": "http://hdl.handle.net/11321/271",
+    "PublicationTimestamp": "2016-04-25T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Piasecki, Maciej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/271;2016-05-31T12:08:35Z;hdl_11321_3;hdl_11321_4;SuperMatrix;Piasecki, Maciej;supermatrix;sm;SuperMatrix is a system to support automatic extraction of semantic relations, based on the analysis of large text corpora. System was developed as a tool for expansion of Polish wordnet (S\u0142owosie\u0107).Expansion consist of two steps: system suggests a potential links between lexical units. Linguist verify these suggestions and decide which form will go to wordnet. This speeded up the work and preserve the integrity of data entry.;2016-04-25;toolService;http://hdl.handle.net/11321/271;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Technology;http://clarin-pl.eu/en/home-page/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a39a6b1c-bace-501e-8d38-e3ba110d79b4",
+    "notes": [
+        "SuperMatrix is a system to support automatic extraction of semantic relations, based on the analysis of large text corpora. System was developed as a tool for expansion of Polish wordnet (S\u0142owosie\u0107).Expansion consist of two steps: system suggests a potential links between lexical units. Linguist verify these suggestions and decide which form will go to wordnet. This speeded up the work and preserve the integrity of data entry."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/271"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "supermatrix"
+        },
+        {
+            "name": "sm"
+        }
+    ],
+    "title": [
+        "SuperMatrix"
+    ],
+    "url": ""
+}

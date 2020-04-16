@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "marcus.schaub@wsl.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "URL",
+        "XLSX",
+        "JPEG"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/11",
+    "PublicationTimestamp": "2016-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Swiss Federal Research Institute WSL"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Marcus Schaub"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/11;2018-07-07T00:13:04Z;doi:10.16904/11;Eng;MD_CharacterSetCode_utf8;Marcus Schaub;Swiss Federal Research Institute WSL;marcus.schaub@wsl.ch;2016-11-04T13:48:21;ISO 19115:2003/19139;1.0;EPSG:4326;Tree\tmeasurements 2002-2016 from the long-term irrigation experiment Pfynwald, Switzerland;2016-12-31;To study the performance of mature Scots pine (_Pinus sylvestris_ L.) under chronic drought conditions in comparison to their immediate physiological response to drought release, a controlled long-term and large-scale irrigation experiment has been set up in 2003. The experiment is located in a xeric mature Scots pine forest in the Pfynwald (46\u00b0 18' N, 7\u00b0 36' E, 615 m a.s.l.) in one of the driest inner-Alpine valleys of the European Alps, the Valais (mean annual temperature: 9.2\u00b0C, annual precipitation sum: 657 mm, both 1961-1990). Tree age is on average 100 years, the top height is 10.8 m and the stand density is 730 stems ha-1 with a basal area of 27.3 m2 ha-1. The forest is described as _Erico Pinetum sylvestris_ and the soil is a shallow pararendzina characterized by low water retention. The experimental site (1.2 ha; 800 trees) is split up into eight plots of 1'000 m2 each. During April-October, irrigation is applied on four randomly selected plots with sprinklers of 1 m height at night using water from an adjacent water channel. The amount of irrigation corresponds to a supplementary rainfall of 700 mm year-1. Trees in the other four plots grow under naturally dry conditions. Soil moisture has been monitored since the beginning of the project at 3 soil depths (10, 20 and 60 cm). The crown condition of each tree is being assessed each year since 2003. Tree measurement data such as diameter at breast height, tree height, and social status were assessed in 2002, 2009 and 2014. The duration of the irrigation experiment is planned for 20 years.;Marcus Schaub;Swiss Federal Research Institute WSL;marcus.schaub@wsl.ch;CROWN CONDITION;DBH;DIAMETER AT BREAST HEIGHT;DROUGHT;IRRIGATION;SCOTS PINE;TREE;TREE SPECIES;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;7.61192 46.30284;XLSX;JPEG;URL;https://www.envidat.ch/dataset/pfynwald;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/0e18a914-f2e4-47df-a86c-a44a1b0055e4/resource/81280262-3628-458c-8dbf-33ed80eb222a/download/envidatpfyncrowncond2016.xlsx;HTTPS;DATASET;download;https://www.envidat.ch/dataset/0e18a914-f2e4-47df-a86c-a44a1b0055e4/resource/e0eed15d-de04-44f0-8601-cb531f9fa916/download/20150709pfyn117.jpg;HTTPS;SITE PHOTO 1;download;https://www.envidat.ch/dataset/0e18a914-f2e4-47df-a86c-a44a1b0055e4/resource/fd9b4ee3-e87e-4c0b-b7a8-832fb3f019e7/download/20150709pfyn117.jpg;HTTPS;SITE PHOTO 2;download;https://www.envidat.ch/dataset/0e18a914-f2e4-47df-a86c-a44a1b0055e4/resource/e3c46133-0b7c-4d9c-a3d0-ba0e91e663b5/download/20150709pfyn218.jpg;HTTPS;SITE PHOTO 3;download;http://www.wsl.ch/fe/walddynamik/projekte/irrigationpfynwald/index_EN;HTTP;LONG-TERM IRRIGATION\tEXPERIMENT PFYNWALD HOMEPAGE;download;http://www.wsl.ch/dienstleistungen/inventare/sanasilva/index_EN;HTTP;SWISS FOREST HEALTH INVENTORY;download;https://map.geo.admin.ch/?topic=swisstopo&X=127951&Y=613350&zoom=11&lang=de&bgLay er=ch.swisstopo.pixelkarte-farbe&crosshair=marker;HTTPS;SHAPEFILE\tOF MEASUREMENT LOCATION;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "339fa94f-8532-5f12-8d27-01f61185ce45",
+    "notes": [
+        "To study the performance of mature Scots pine (_Pinus sylvestris_ L.) under chronic drought conditions in comparison to their immediate physiological response to drought release, a controlled long-term and large-scale irrigation experiment has been set up in 2003. The experiment is located in a xeric mature Scots pine forest in the Pfynwald (46\u00b0 18' N, 7\u00b0 36' E, 615 m a.s.l.) in one of the driest inner-Alpine valleys of the European Alps, the Valais (mean annual temperature: 9.2\u00b0C, annual precipitation sum: 657 mm, both 1961-1990). Tree age is on average 100 years, the top height is 10.8 m and the stand density is 730 stems ha-1 with a basal area of 27.3 m2 ha-1. The forest is described as _Erico Pinetum sylvestris_ and the soil is a shallow pararendzina characterized by low water retention. The experimental site (1.2 ha; 800 trees) is split up into eight plots of 1'000 m2 each. During April-October, irrigation is applied on four randomly selected plots with sprinklers of 1 m height at night using water from an adjacent water channel. The amount of irrigation corresponds to a supplementary rainfall of 700 mm year-1. Trees in the other four plots grow under naturally dry conditions. Soil moisture has been monitored since the beginning of the project at 3 soil depths (10, 20 and 60 cm). The crown condition of each tree is being assessed each year since 2003. Tree measurement data such as diameter at breast height, tree height, and social status were assessed in 2002, 2009 and 2014. The duration of the irrigation experiment is planned for 20 years."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/11",
+        "oai:envidat.ch:10.16904/11"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "CROWN CONDITION"
+        },
+        {
+            "name": "DBH"
+        },
+        {
+            "name": "DIAMETER BREAST HEIGHT"
+        },
+        {
+            "name": "DROUGHT"
+        },
+        {
+            "name": "IRRIGATION"
+        },
+        {
+            "name": "SCOTS PINE"
+        },
+        {
+            "name": "TREE"
+        },
+        {
+            "name": "TREE SPECIES"
+        }
+    ],
+    "title": [
+        "Tree\tmeasurements 2002-2016 from the long-term irrigation experiment Pfynwald, Switzerland"
+    ],
+    "url": "https://map.geo.admin.ch/?topic=swisstopo&X=127951&Y=613350&zoom=11&lang=de&bgLay"
+}

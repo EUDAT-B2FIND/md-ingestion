@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "between 512 KB and 1 MB "
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0517",
+    "MetadataAccess": [
+        "oai:ota:oucs:0517"
+    ],
+    "PublicationYear": [
+        "468 BCE-405 BCE"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sophocles"
+    ],
+    "fulltext": "oai:ota:oucs:0517;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0517.xml; Collected works  / compiled by Thesaurus Linguae Graecae;Sophocles;468 BCE-405 BCE;text_and_corpus_linguistics;Plays -- Greece -- 5th century BC;grc;Oxford Text Archive, University of Oxford;between 512 KB and 1 MB ;Text;Plays;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fa5d977f-0f31-55a6-9b38-4bfe996d8066",
+    "oai_identifier": [
+        "oai:ota:oucs:0517"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- Greece -- th century BC"
+        }
+    ],
+    "title": [
+        " Collected works  / compiled by Thesaurus Linguae Graecae"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0517.xml"
+}

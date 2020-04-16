@@ -1,0 +1,67 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-164574620",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:17755800",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17755800"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63679953599,
+    "TempCoverageEnd": 63679953599,
+    "TemporalCoverage": " point in time : 2018-12-09T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-12-09T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-12-09T11:59:59Z",
+    "author": [
+        "Murielle SALOME",
+        "Caroline BISSARDON",
+        "Peter CLOETENS",
+        "Sylvain BOHIC",
+        "Alexandra JOITA PACUREANU",
+        "Julio Cesar da Silva",
+        "Yang Yang"
+    ],
+    "fulltext": "oai:oai.datacite.org:17755800;2018-12-10T16:27:17Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-164574620;Sylvain BOHIC;Caroline BISSARDON;Julio Cesar da Silva;Yang Yang;Murielle SALOME;Peter CLOETENS;Alexandra JOITA PACUREANU;Cryo-correlative light X-ray nanoimaging on PC-3 cells;In-house Life Science;IH-LS-3202;id16a;European Synchrotron Radiation Facility;2018-12-09;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "1cbbb189-c633-5596-bcab-0ff1291d271b",
+    "oai_identifier": [
+        "oai:oai.datacite.org:17755800"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "In-house Life Science"
+        },
+        {
+            "name": "IH-LS-"
+        },
+        {
+            "name": "ida"
+        }
+    ],
+    "title": [
+        "Cryo-correlative light X-ray nanoimaging on PC-3 cells"
+    ],
+    "url": ""
+}

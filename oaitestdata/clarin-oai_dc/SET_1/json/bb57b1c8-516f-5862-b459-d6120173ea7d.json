@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "University of Bergen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English",
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/125",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/125"
+    ],
+    "PID": "http://hdl.handle.net/11509/125",
+    "PublicationTimestamp": "2018-02-19T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "University of Bergen"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN_RES-NC-PRIV",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaRes?ID=1&PERM=1&PLAN=1&BY=1&NC=1&PRIV=1&NORED=1",
+        "RES"
+    ],
+    "author": [
+        "Trebbi, Turid"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/125;2018-02-27T09:16:53Z;hdl_11509_1;hdl_11509_2;DISPRA - Discourse and practice in the foreign language classroom in cross cultural perspective;Trebbi, Turid;Spoken Language;Second Language;Discourse;Sound files recorded in foreign language classrooms:\r\n\r\n1 Enregistrement PARTIE I P1_STE-001.wav\r\n\r\n\r\nDue to protection of informant privacy the dissemination of the recordings is restricted to the DISPRA research group, who can request a download by contacting Clarino Bergen Repository.\r\n\r\nPublicly available datasets resulting from DISPRA will be added to this repository item.;2018-02-19;corpus;http://hdl.handle.net/11509/125;eng;fra;CLARIN_RES-NC-PRIV;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaRes?ID=1&PERM=1&PLAN=1&BY=1&NC=1&PRIV=1&NORED=1;RES;text/plain; charset=utf-8;downloadable_files_count: 0;University of Bergen",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bb57b1c8-516f-5862-b459-d6120173ea7d",
+    "notes": [
+        "Sound files recorded in foreign language classrooms:\r\n\r\n1 Enregistrement PARTIE I P1_STE-001.wav\r\n\r\n\r\nDue to protection of informant privacy the dissemination of the recordings is restricted to the DISPRA research group, who can request a download by contacting Clarino Bergen Repository.\r\n\r\nPublicly available datasets resulting from DISPRA will be added to this repository item."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/125"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Spoken Language"
+        },
+        {
+            "name": "Second Language"
+        },
+        {
+            "name": "Discourse"
+        }
+    ],
+    "title": [
+        "DISPRA - Discourse and practice in the foreign language classroom in cross cultural perspective"
+    ],
+    "url": ""
+}

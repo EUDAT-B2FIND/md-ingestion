@@ -1,0 +1,47 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>a9b2506a-c606-49c7-b387-1d722c69fa03</dc:identifier>
+      <dc:date>2018-09-06T18:17:39.700+02:00</dc:date>
+      <dc:title>IAGOS PBL-referenced profiles of O3 and CO</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>IAGOS</dc:subject>
+      <dc:subject>SEDOO</dc:subject>
+      <dc:subject>AERIS</dc:subject>
+      <dc:subject>climatologyMeteorologyAtmosphere</dc:subject>
+      <dc:format>CSV</dc:format>
+      <dct:abstract>The climatological vertical stratification of ozone (O3) and carbon monoxide (CO) within the planetary boundary layer (PBL) and at the interface with free troposphere (FT) was derived using all IAGOS (In-service Aircraft for a Global Observing System) and WOUDC (World Ozone and Ultraviolet Radiation Data Centre) vertical profiles available at northern mid-latitudes (25&#176;N-60&#176;N) between August 1994 and December 2016 (Petetin et al., 2018).
+
+The methodology is the following :
+1) All profiles with a surface-based temperature inversion (i.e. increase of temperature with altitude starting from the surface) are discarded. 
+2) All remaining profiles are then interpolated on a fixed vertical grid of 50 m vertical resolution between 0 and 4 km above ground level (i.e. 80 altitude levels). For each of these profiles, the PBL height is estimated as the base altitude of the first elevated temperature inversion (i.e. the altitude level above which temperature starts to increase with altitude). An upper limit of 4 km is fixed for the PBL height. In order to reduce uncertainties associated with data gaps, we discarded (i) all profiles with more than 25% of missing temperature data between 0 and 4 km (i.e. cumulated data gaps larger than 0.25x4000=2000 m), and/or (ii) all profiles with more than 4 missing data between the surface and the estimated PBL height (i.e. cumulated data gaps larger than 4x50=200 m). 
+3) The profiles are expressed in the z/h vertical coordinate system where z is the altitude and h the PBL height estimate. O3 and CO mixing ratios are interpolated along z/h values ranging between 0 (the surface) and 2 (two times the PBL height) with a vertical resolution of of 0.05 (i.e. 40 altitude levels). All profiles with missing O3 or CO data are discarded. Then all the remaining profiles are averaged, which gives the so-called PBL-referenced profiles. This is done for the different seasons (DJF : December-January-February, MAM : March-April-May, JJA : June-July-August, SON : September-October-November, ANN : annual) and times of day (night&#160;: sunset to sunrise, morning&#160;: sunrise to solar noon, midday&#160;: solar noon to 3 h past solar noon, afternoon&#160;: 3 h past solar noon to sunset, daytime&#160;: sunrise to sunset, all&#160;: the whole day).
+
+A more complete description of the methodology as well as an analysis of the results is available in the reference paper of Petetin et al. (2018).
+
+L4 IAGOS PBL-referenced profiles are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data. They are subject to the IAGOS data protocol.</dct:abstract>
+      <dc:description>The climatological vertical stratification of ozone (O3) and carbon monoxide (CO) within the planetary boundary layer (PBL) and at the interface with free troposphere (FT) was derived using all IAGOS (In-service Aircraft for a Global Observing System) and WOUDC (World Ozone and Ultraviolet Radiation Data Centre) vertical profiles available at northern mid-latitudes (25&#176;N-60&#176;N) between August 1994 and December 2016 (Petetin et al., 2018).
+
+The methodology is the following :
+1) All profiles with a surface-based temperature inversion (i.e. increase of temperature with altitude starting from the surface) are discarded. 
+2) All remaining profiles are then interpolated on a fixed vertical grid of 50 m vertical resolution between 0 and 4 km above ground level (i.e. 80 altitude levels). For each of these profiles, the PBL height is estimated as the base altitude of the first elevated temperature inversion (i.e. the altitude level above which temperature starts to increase with altitude). An upper limit of 4 km is fixed for the PBL height. In order to reduce uncertainties associated with data gaps, we discarded (i) all profiles with more than 25% of missing temperature data between 0 and 4 km (i.e. cumulated data gaps larger than 0.25x4000=2000 m), and/or (ii) all profiles with more than 4 missing data between the surface and the estimated PBL height (i.e. cumulated data gaps larger than 4x50=200 m). 
+3) The profiles are expressed in the z/h vertical coordinate system where z is the altitude and h the PBL height estimate. O3 and CO mixing ratios are interpolated along z/h values ranging between 0 (the surface) and 2 (two times the PBL height) with a vertical resolution of of 0.05 (i.e. 40 altitude levels). All profiles with missing O3 or CO data are discarded. Then all the remaining profiles are averaged, which gives the so-called PBL-referenced profiles. This is done for the different seasons (DJF : December-January-February, MAM : March-April-May, JJA : June-July-August, SON : September-October-November, ANN : annual) and times of day (night&#160;: sunset to sunrise, morning&#160;: sunrise to solar noon, midday&#160;: solar noon to 3 h past solar noon, afternoon&#160;: 3 h past solar noon to sunset, daytime&#160;: sunrise to sunset, all&#160;: the whole day).
+
+A more complete description of the methodology as well as an analysis of the results is available in the reference paper of Petetin et al. (2018).
+
+L4 IAGOS PBL-referenced profiles are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data. They are subject to the IAGOS data protocol.</dc:description>
+      <dc:rights>restricted</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Data produced by the European Research Infrastructure IAGOS.</dc:source>
+      <dc:format>CSV</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:::EPSG:4326">
+        <ows:LowerCorner>180.0 -90.0</ows:LowerCorner>
+        <ows:UpperCorner>-180.0 90.0</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" description="IAGOS central website">http://www.iagos.org</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-http--download" description="IAGOS PBL Profiles">http://iagos-data.fr/#CMSConsultPlace:PBL_PROFILES</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="DOI of the dataset">http://dx.doi.org/10.25326/4</dc:URI>
+      <dc:URI protocol="image/png" name="Logo">http://iagos-data.fr/images/logo_blue.png</dc:URI>
+      <dc:URI name="Map of flights">http://iagos-data.fr/portal/rest/images/map:global:thumb</dc:URI>
+      <dc:URI name="Figure 1 : Vertical profiles of O3 mixing ratio (in ppbv; left panels), normalized by the O3 mixing ratio at z/h=1 (middle panels), and vertical gradient (in ppbv hm-1; right panels), for different times of the day (from top to bottom : all day along, daytime, night, morning, midday, afternoon). The shaded area represents the uncertainties (at a 95% confidence level) on the mean. For each season and time of the day, we indicate the number (N) of profiles used for calculating the PBL-referenced profile (i.e. profiles without any missing data), the mean PBL height calculated based on this subset of profiles, and the mean PBL height considering all profiles (in brackets).">http://iagos-data.fr/portal/rest/image/storedById/6990116025497246148</dc:URI>
+      <dc:URI name="Figure 2 : Vertical profiles of CO mixing ratio (in ppbv; left panels), normalized by the CO mixing ratio at z/h=1 (middle panels), and vertical gradient (in ppbv hm-1; right panels), for different times of the day (from top to bottom : all day along, daytime, night, morning, midday, afternoon). The shaded area represents the uncertainties (at a 95% confidence level) on the mean. For each season and time of the day, we indicate the number (N) of profiles used for calculating the PBL-referenced profile (i.e. profiles without any missing data), the mean PBL height calculated based on this subset of profiles, and the mean PBL height considering all profiles (in brackets).">http://iagos-data.fr/portal/rest/image/storedById/4641718511330911523</dc:URI>
+    </csw:Record>

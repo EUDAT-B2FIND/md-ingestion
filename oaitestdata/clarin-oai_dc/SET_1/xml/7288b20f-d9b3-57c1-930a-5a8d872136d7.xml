@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>2c144d4863ec11e2a2aa782bcb074135e8d82734dd3f4e5083ecf05a0f47b80d</identifier>
+    <datestamp>2018-11-15T16:40:06Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CINTIL-DeepBank 1.3</dc:title>
+      <dc:description>CINTIL-DeepBank (Branco et al., 2010) is a corpus of Portuguese texts annotated with deep grammatical information. This document refers to version 1.3 of the corpus, delivered in September of 2015, which adds over 2,000 annotated sentences to the previous version from March 2015. The current version is composed by 17,030 sentences (166,933 tokens) taken from two different sources and domains: news (15,851 sentences; 159,525 tokens), novels (399 sentences; 2,547 tokens). In addition, there are 780 sentences (4,861 tokens) that are used for regression testing of the computational grammar that supported the annotation of the corpus.
+
+CINTIL-DeepBank includes several levels of information for each sentence, including its derivation tree originated during parsing, its syntactic constituency tree, different renderings of MRS based representations of its meaning (Copestake, 2006), and its fully-fledged grammatical representation in AVM format. This is the result of a semi-automatic annotation process by means of automatic analysis by the grammar followed by a double-blind annotation followed by adjudication (see (Branco and Costa, 2008), for a full description of the process).
+
+The main motivation behind the creation of this resource was to build a high quality data set with rich grammatical information that could support the development of a large set of high level language resources and processing tools for Portuguese.
+
+The development of this resource started under the project SemanticShare &#226;&#128;&#147; Resources and Tools for Semantic Processing (at: http://nlx.di.fc.ul.pt/projects.html) whose main goal was to generate a deep linguistic annotated corpus of Portuguese, with manually verified grammatical representations,  was continued in the project METANET4U-Enhancing the Linguistic Infrastructure of Europe, and in the project QTLeap-Quality Translation by Deep Language Engineering Approaches. </dc:description>
+      <dc:date>2014-10-01</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

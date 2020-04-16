@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "michelle.johnston@nrc-cnrc.gc.ca"
+    ],
+    "Contributor": [
+        "National Research Council"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Multi-year ice represents one of the most significant design and operational concerns for exploration, development, and shipping systems in the Beaufort Sea. The purpose of this project is to provide information about hummocked multi-year ice, including its thickness, salinity, temperature, and strength. Through collaborative efforts, detailed thickness measurements from on-ice drilling will be compared to data gathered by University of Manitoba and to thickness measurements from helicopter-based electromagnetic induction (EMI) soundings championed by University of Alberta. The National Research Council's (NRC) fine-scale thickness data will be used to validate satellite imagery (University of Manitoba). Information about the thickness and strength of deformed multi-year ice will also provide the National Energy Board (NEB) with the information needed to address questions about whether icebreakers can be used to manage the ice to safely extend the offshore operating season, and which features should be avoided. Ice temperature, salinity, and strength data will provide important information for identifying the most hazardous extreme sea ice features, since satellite imagery that has not been validated can be deceptive."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=11802_fgdc",
+    "PublicationTimestamp": "2016-04-05T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(72N-75N,130W-127W)",
+    "TempCoverageBegin": 63471812399,
+    "TempCoverageEnd": 63500068799,
+    "TemporalCoverage": " period : ( 2012-05-05T11:59:59Z - 2013-03-28T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2012-05-05T11:59:59Z",
+    "TemporalCoverage:EndDate": "2013-03-28T11:59:59Z",
+    "author": [
+        "Johnston, Michelle"
+    ],
+    "fulltext": "11802_fgdc;2017-04-09T22:02:32Z;PDCMetadata;Johnston, Michelle;Johnston, Michelle;20160405;Thickness, Salinity, Temperature and Strength of Multi-Year Sea Ice, Beaufort Sea;Computer file;unknown;Michelle Johnston, unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11802;The viability of newly developed equipment to measure the strength of multi-year ice at depths where no information presently exists was demonstrated during the first field program in May 2012 in Resolute, Nunavut. It was tested on hummocked multi-year ice from 3 to 20 May. Measurements were constrained to one hummocked multi-year ice floe for the purposes of testing the equipment. Ice cores were extracted from two boreholes to document the temperature and salinity of the ice to a maximum depth of 12 m. In situ strength tests were conducted in both boreholes at depth intervals of 30 cm to document changes in strength vs. depth, and to relate this information to the ice temperature and salinity. Ice thicknesses were measured at a total of 20 holes using drill hole and steam hole techniques. Measurements from the 2012 field program are unique because they provide the only available information about the keel strength of thick, hummocked multi-year ice below a depth of 10 m. &#x0d;\n&#x0d;\nFour offshore trips took place during the second field program the following year, from 16 March to 10 April, 2013 in Sachs Harbour, Northwest Territories. A total of 6 floes were visited, 4 tracking beacons were deployed on individual floes, and 37 drill-hole/steam-hole measurements were made to document the ice thickness. Strength measurements on multi-year ice were not obtained, as the 2013 field program was cut short due to funding constraints. The viability of a third field program for spring 2014 is currently under consideration.&#x0d;\n&#x0d;\nSea ice thickness, salinity and temperature data are available in .xls and .csv formats. Sea ice strength data is not presented, please contact the Principal Investigator for further information.;Multi-year ice represents one of the most significant design and operational concerns for exploration, development, and shipping systems in the Beaufort Sea. The purpose of this project is to provide information about hummocked multi-year ice, including its thickness, salinity, temperature, and strength. Through collaborative efforts, detailed thickness measurements from on-ice drilling will be compared to data gathered by University of Manitoba and to thickness measurements from helicopter-based electromagnetic induction (EMI) soundings championed by University of Alberta. The National Research Council's (NRC) fine-scale thickness data will be used to validate satellite imagery (University of Manitoba). Information about the thickness and strength of deformed multi-year ice will also provide the National Energy Board (NEB) with the information needed to address questions about whether icebreakers can be used to manage the ice to safely extend the offshore operating season, and which features should be avoided. Ice temperature, salinity, and strength data will provide important information for identifying the most hazardous extreme sea ice features, since satellite imagery that has not been validated can be deceptive.;Summary: Not applicable Research Program(s): BREA. For further information: michelle.johnston@nrc-cnrc.gc.ca;20120505;20130328;NULL;In work;As needed;-130;-127;75;72;NULL;Beaufort Sea;Ice thickness;Salinity;Sea ice;Temperature;Beaufort Sea Region;NULL;Public;NULL;National Research Council;Michelle Johnston;NULL;mailing;Building M-32, Montreal Road;Ottawa;Ontario;K1A 0R6;Canada;1-613-990-5141;1-613-952-7679;michelle.johnston@nrc-cnrc.gc.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;11802;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20160405;20160405;Michelle Johnston;National Research Council;mailing;Building M-32, Montreal Road;Ottawa;Ontario;K1A 0R6;Canada;1-613-990-5141;1-613-952-7679;michelle.johnston@nrc-cnrc.gc.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0bfe79f5-1e5a-57b8-9179-f920834afdbe",
+    "notes": [
+        "The viability of newly developed equipment to measure the strength of multi-year ice at depths where no information presently exists was demonstrated during the first field program in May 2012 in Resolute, Nunavut. It was tested on hummocked multi-year ice from 3 to 20 May. Measurements were constrained to one hummocked multi-year ice floe for the purposes of testing the equipment. Ice cores were extracted from two boreholes to document the temperature and salinity of the ice to a maximum depth of 12 m. In situ strength tests were conducted in both boreholes at depth intervals of 30 cm to document changes in strength vs. depth, and to relate this information to the ice temperature and salinity. Ice thicknesses were measured at a total of 20 holes using drill hole and steam hole techniques. Measurements from the 2012 field program are unique because they provide the only available information about the keel strength of thick, hummocked multi-year ice below a depth of 10 m. &#x0d;\n&#x0d;\nFour offshore trips took place during the second field program the following year, from 16 March to 10 April, 2013 in Sachs Harbour, Northwest Territories. A total of 6 floes were visited, 4 tracking beacons were deployed on individual floes, and 37 drill-hole/steam-hole measurements were made to document the ice thickness. Strength measurements on multi-year ice were not obtained, as the 2013 field program was cut short due to funding constraints. The viability of a third field program for spring 2014 is currently under consideration.&#x0d;\n&#x0d;\nSea ice thickness, salinity and temperature data are available in .xls and .csv formats. Sea ice strength data is not presented, please contact the Principal Investigator for further information."
+    ],
+    "oai_identifier": [
+        "11802_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-130,72],[-130,75],[-127,75],[-127,72],[-130,72]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Beaufort Sea"
+        },
+        {
+            "name": "Ice thickness"
+        },
+        {
+            "name": "Salinity"
+        },
+        {
+            "name": "Sea ice"
+        },
+        {
+            "name": "Temperature"
+        }
+    ],
+    "title": [
+        "Thickness, Salinity, Temperature and Strength of Multi-Year Sea Ice, Beaufort Sea"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11802"
+}

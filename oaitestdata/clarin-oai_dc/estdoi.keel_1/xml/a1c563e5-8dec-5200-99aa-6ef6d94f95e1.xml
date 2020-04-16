@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757497</identifier>
+    <datestamp>2019-05-18T17:26:25Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Reaalajalise k&#245;netuvastuse server</dc:title>
+      <dc:title xml:lang="en">Real-time speech recognition web service</dc:title>
+      <dc:creator>Alum&#228;e, Tanel</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2014</dc:date>
+      <dc:date>Issued: 2014-12-30</dc:date>
+      <dc:date>Updated: 2019-01-06</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-00027L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Real-time speech recognition web service for Estonian.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

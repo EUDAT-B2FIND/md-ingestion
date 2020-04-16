@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "214 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1978",
+    "MetadataAccess": [
+        "oai:ota:oucs:1978"
+    ],
+    "PublicationTimestamp": "1915-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1915"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Buchan, John"
+    ],
+    "fulltext": "oai:ota:oucs:1978;2018-04-16T15:09:56Z;http://ota.ox.ac.uk/headers/1978.xml;The thirty-nine steps;Buchan, John;1915;text_and_corpus_linguistics;Fiction -- Great Britain -- 20th century;eng;Oxford Text Archive, University of Oxford;214 KB;Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "be955944-8226-590d-a55d-5a7784d7ffd4",
+    "oai_identifier": [
+        "oai:ota:oucs:1978"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The thirty-nine steps"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1978.xml"
+}

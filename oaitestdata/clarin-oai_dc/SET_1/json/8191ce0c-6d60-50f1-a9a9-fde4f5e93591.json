@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/306",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/306"
+    ],
+    "PID": "http://hdl.handle.net/11321/306",
+    "PublicationTimestamp": "2016-06-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "CC"
+    ],
+    "author": [
+        "K\u0119dzia, Pawe\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/306;2016-06-07T12:44:20Z;hdl_11321_3;hdl_11321_4;Bilingual Cascade Dictionary;K\u0119dzia, Pawe\u0142;bilingual;dictionary;Polish-English;English-Polish;cascade dictionary;Bilingual Cascade Dictionary is a collection of dictionaries organised in a cascade with the top-most dictionaries having the highest priority in applications.;2016-06-01;lexicalConceptualResource;http://hdl.handle.net/11321/306;pol;eng;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;CC;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8191ce0c-6d60-50f1-a9a9-fde4f5e93591",
+    "notes": [
+        "Bilingual Cascade Dictionary is a collection of dictionaries organised in a cascade with the top-most dictionaries having the highest priority in applications."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/306"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "bilingual"
+        },
+        {
+            "name": "dictionary"
+        },
+        {
+            "name": "Polish-English"
+        },
+        {
+            "name": "English-Polish"
+        },
+        {
+            "name": "cascade dictionary"
+        }
+    ],
+    "title": [
+        "Bilingual Cascade Dictionary"
+    ],
+    "url": ""
+}

@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/247",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/247"
+    ],
+    "PID": "http://hdl.handle.net/11321/247",
+    "PublicationTimestamp": "2014-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Marci\u0144czuk, Micha\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/247;2016-02-23T11:54:32Z;hdl_11321_3;hdl_11321_4;NELexicon2;Marci\u0144czuk, Micha\u0142;dictionary;proper names;NELexicon2 to rozszerzona wersj\u0105 gazetteera nazw w\u0142asnych, kt\u00f3ra zawiera ponad 2,3 miliona unikalnych napis\u00f3w. NELexicon zosta\u0142 wzmogacony o nast\u0119puj\u0105ce zasoby:\r\n\r\n- zdrobnienia imion,\r\n- obcoj\u0119zyczne formy polskich imion,\r\n- nazwy wyci\u0105gni\u0119te z infobox\u00f3w polskiej Wikipedii,\r\n- formy odmiany nazw z infobox\u00f3w polskiej Wikipedii wyci\u0105gni\u0119te z link\u00f3w wewn\u0119trznych Wikipedii,\r\n- lista nazw rozpoznanych przez Liner2 z modelem 56 nam o liczbie wyst\u0105pie\u0144 r\u00f3wnej lub wi\u0119kszej ni\u017c 5. Jako, \u017ce nazwy zosta\u0142y rozpoznane automatycznie, to lista mo\u017ce zawiera\u0107 b\u0142\u0119dnie rozpoznane nazwy.\r\n- formy odmiany nazw wyci\u0105gni\u0119te z polskiego Wikis\u0142ownika.;2014-05-30;toolService;http://hdl.handle.net/11321/247;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Technology;http://clarin-pl.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "526ef685-f4ef-5cf4-b351-e1239a652a4a",
+    "notes": [
+        "NELexicon2 to rozszerzona wersj\u0105 gazetteera nazw w\u0142asnych, kt\u00f3ra zawiera ponad 2,3 miliona unikalnych napis\u00f3w. NELexicon zosta\u0142 wzmogacony o nast\u0119puj\u0105ce zasoby:\r\n\r\n- zdrobnienia imion,\r\n- obcoj\u0119zyczne formy polskich imion,\r\n- nazwy wyci\u0105gni\u0119te z infobox\u00f3w polskiej Wikipedii,\r\n- formy odmiany nazw z infobox\u00f3w polskiej Wikipedii wyci\u0105gni\u0119te z link\u00f3w wewn\u0119trznych Wikipedii,\r\n- lista nazw rozpoznanych przez Liner2 z modelem 56 nam o liczbie wyst\u0105pie\u0144 r\u00f3wnej lub wi\u0119kszej ni\u017c 5. Jako, \u017ce nazwy zosta\u0142y rozpoznane automatycznie, to lista mo\u017ce zawiera\u0107 b\u0142\u0119dnie rozpoznane nazwy.\r\n- formy odmiany nazw wyci\u0105gni\u0119te z polskiego Wikis\u0142ownika."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/247"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dictionary"
+        },
+        {
+            "name": "proper names"
+        }
+    ],
+    "title": [
+        "NELexicon2"
+    ],
+    "url": ""
+}

@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1992</identifier>
+    <datestamp>2017-03-30T15:15:15Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Open morphology of Finnish</dc:title>
+      <dc:creator>Pirinen, Tommi A</dc:creator>
+      <dc:creator>Listenmaa, Inari</dc:creator>
+      <dc:creator>Johnson, Ryan</dc:creator>
+      <dc:creator>Tyers, Francis M.</dc:creator>
+      <dc:creator>Kuokkala, Juha</dc:creator>
+      <dc:subject>morphological analysis</dc:subject>
+      <dc:subject>morphological dictionary</dc:subject>
+      <dc:description>Omorfi is free and open source project containing various tools and data for handling Finnish texts in a linguistically motivated manner. The main components of this repository are:&#13;
+&#13;
+1) a lexical database containing hundreds of thousands of words (c.f. lexical statistics),&#13;
+2) a collection of scripts to convert lexical database into formats used by upstream NLP tools (c.f. lexical processing),&#13;
+3) an autotools setup to build and install (or package, or deploy): the scripts, the database, and simple APIs / convenience processing tools, and&#13;
+4) a collection of relatively simple APIs for a selection of languages and scripts to apply the NLP tools and access the database</dc:description>
+      <dc:date>2017-03-22</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1992</dc:identifier>
+      <dc:language>fin</dc:language>
+      <dc:rights>GNU General Public Licence, version 3</dc:rights>
+      <dc:rights>http://opensource.org/licenses/GPL-3.0</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>University of Helsinki</dc:publisher>
+      <dc:source>https://github.com/flammie/omorfi</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

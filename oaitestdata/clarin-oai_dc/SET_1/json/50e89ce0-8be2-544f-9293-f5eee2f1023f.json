@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Micha\u0142 i Grzegorz Schedl"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-520",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-520"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D20-4",
+    "PublicationTimestamp": "1678-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1678"
+    ],
+    "Publisher": [
+        "Micha\u0142 i Grzegorz Schedl"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/520"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-520;2019-03-01T15:35:44Z;Konstytucya Seymu Walnego Ordynaryinego Sze\u015b\u0107 Niedzielnego.W Grodnie roku pa\u0144skiego M.DC.LXXVIII (1678) dnia XV Grudnia odprawui\u0105cego si\u0119. Cum gratia et privilegio S.R.M.;Konstytucja 1678 r.;ilo\u015b\u0107 skan\u00f3w: 38  ; sygn. St- 342;Micha\u0142 i Grzegorz Schedl;1678;starodruk;application/xml;clarind-uds:poldilemma-520;hdl:11858/00-246C-0000-0023-8D20-4;pol;lat;http://pbc.biaman.pl/Content/520;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "50e89ce0-8be2-544f-9293-f5eee2f1023f",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 38  ; sygn. St- 342"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-520"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Konstytucja r."
+        }
+    ],
+    "title": [
+        "Konstytucya Seymu Walnego Ordynaryinego Sze\u015b\u0107 Niedzielnego.W Grodnie roku pa\u0144skiego M.DC.LXXVIII (1678) dnia XV Grudnia odprawui\u0105cego si\u0119. Cum gratia et privilegio S.R.M."
+    ],
+    "url": ""
+}

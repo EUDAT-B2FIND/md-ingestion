@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-0007AL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:5756896",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:5756896"
+    ],
+    "PublicationTimestamp": "2015-03-02T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:5756896;2019-04-21T05:31:08Z;ESTDOI;ESTDOI.KEEL;Eesti keele segakorpus: Seadused;Corpus of Estonian law texts;Muischnek, Kadri;Center of Estonian Language Resources;2013;Issued: 2013-01-07;Updated: 2015-03-02;doi:10.15155/1-00-0000-0000-0000-0007AL;Abstract;Eesti ja Euroopa seadusetekstide korpus. TEI P5 XML m\u00e4rgendus, UTF8 kodeering.;Abstract;Corpus of law texts in Estonian, contains Estonian legislation and European legislation in Estonian. 11 million words. \nMarkup: TEI P5 XML\nEncoding: UTF8",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8265c0a1-9fb1-5766-b251-181e8f1be3c1",
+    "notes": [
+        "Abstract",
+        "Eesti ja Euroopa seadusetekstide korpus. TEI P5 XML m\u00e4rgendus, UTF8 kodeering.",
+        "Abstract",
+        "Corpus of law texts in Estonian, contains Estonian legislation and European legislation in Estonian. 11 million words. \nMarkup: TEI P5 XML\nEncoding: UTF8"
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:5756896"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti keele segakorpus: Seadused",
+        "Corpus of Estonian law texts"
+    ],
+    "url": ""
+}

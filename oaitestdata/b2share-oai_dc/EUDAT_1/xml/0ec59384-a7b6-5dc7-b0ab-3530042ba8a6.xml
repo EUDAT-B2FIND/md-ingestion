@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/398e55b3f2c44b89bacce36f4764cee2</identifier>
+    <datestamp>2018-01-11T13:50:52Z</datestamp>
+    <setSpec>e9b9792e-79fb-4b07-b6b4-b9c2bd06d095</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Rouchon, Olivier</dc:creator>
+      <dc:creator>Massol, Marion </dc:creator>
+      <dc:creator>Kaila, Urpo </dc:creator>
+      <dc:creator>Elbers, Willem </dc:creator>
+      <dc:creator>Thiemann, Hannes </dc:creator>
+      <dc:creator>Brzezniak, Maciej</dc:creator>
+      <dc:creator>van de Sanden, Mark</dc:creator>
+      <dc:creator>Reetz, Johannes </dc:creator>
+      <dc:date>2017-09-27T09:14:37.936844+00:00</dc:date>
+      <dc:description>This document describes the Terms of Use (ToU) of EUDAT resources and services. Before using any EUDAT services and resources each user must have read and agreed to understand and follow these terms. This ToU can be subject of change.</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/74c66f0b-f814-4202-9dcb-4889ba9b1047</dc:identifier>
+      <dc:identifier>10.23728/b2share.398e55b3f2c44b89bacce36f4764cee2</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/398e55b3f2c44b89bacce36f4764cee2</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/398e55b3f2c44b89bacce36f4764cee2</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:publisher>EUDAT</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>Terms of Use</dc:subject>
+      <dc:subject>EUDAT Services</dc:subject>
+      <dc:subject>EUDAT resources</dc:subject>
+      <dc:subject>Users rights and duties</dc:subject>
+      <dc:subject>Personal information and data privacy</dc:subject>
+      <dc:subject>Access conditions</dc:subject>
+      <dc:subject>Legal restrictions</dc:subject>
+      <dc:subject>Potential sanctions</dc:subject>
+      <dc:title>EUDAT Services Terms of Use v1.1</dc:title>
+    </oai_dc:dc>
+  </metadata>
+</record>

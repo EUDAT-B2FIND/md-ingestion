@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Hindi"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CC1E-B",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CC1E-B"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-CC1E-B",
+    "PublicationTimestamp": "2011-11-23T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/231720",
+        "http://hdl.handle.net/11858/00-097C-0000-0023-6260-A"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)",
+        "http://creativecommons.org/licenses/by-nc/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bojar, Ond\u0159ej",
+        "Stra\u0148\u00e1k, Pavel",
+        "Zeman, Daniel"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CC1E-B;2018-07-02T22:05:54Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Hindi Web Texts;Bojar, Ond\u0159ej;Stra\u0148\u00e1k, Pavel;Zeman, Daniel;news;web texts;A Hindi corpus of texts downloaded mostly from news sites. Contains both the original raw texts and an extensively cleaned-up and tokenized version suitable for language modeling. 18M sentences, 308M tokens;2011-11-23;corpus;UMC004;http://hdl.handle.net/11858/00-097C-0000-0001-CC1E-B;hin;info:eu-repo/grantAgreement/EC/FP7/231720;http://hdl.handle.net/11858/00-097C-0000-0023-6260-A;Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0);http://creativecommons.org/licenses/by-nc/3.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f7c0f624-4940-5cd3-960f-a050fc52656c",
+    "notes": [
+        "A Hindi corpus of texts downloaded mostly from news sites. Contains both the original raw texts and an extensively cleaned-up and tokenized version suitable for language modeling. 18M sentences, 308M tokens"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CC1E-B"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "news"
+        },
+        {
+            "name": "web texts"
+        }
+    ],
+    "title": [
+        "Hindi Web Texts"
+    ],
+    "url": ""
+}

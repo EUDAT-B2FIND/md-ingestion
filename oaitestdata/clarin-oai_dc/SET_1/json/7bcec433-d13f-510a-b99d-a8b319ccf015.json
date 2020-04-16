@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/21",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/21"
+    ],
+    "PID": "http://hdl.handle.net/11321/21",
+    "PublicationTimestamp": "2012-04-04T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Koco\u0144, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/21;2016-01-21T14:37:33Z;hdl_11321_3;hdl_11321_4;NamEnSim;Koco\u0144, Jan;NamEnSim (Named Entity Similarity Function) is a tool to evaluate the value of the word pair similarity, using heterogeneous named entity similarity function. This tool allows to get the value of similarity between unknown word and items from gazetteers (e.g. person first names, person last names, country names). NamEnSim can also extract multi-word named entities from the source text using similarity function. This tool supports named entities recognition task (NER), e.g. Liner2. In the named entities \"base - form\" matching task NamEnSim achieves the accuracy of 81-96% for the similarity function based on logistic regresion and 84-98% for the similarity function based on inflection rules (results depend on the named entity category).;2012-04-04;toolService;http://hdl.handle.net/11321/21;pol;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/pl/narzedzia-i-zasoby/namensim",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7bcec433-d13f-510a-b99d-a8b319ccf015",
+    "notes": [
+        "NamEnSim (Named Entity Similarity Function) is a tool to evaluate the value of the word pair similarity, using heterogeneous named entity similarity function. This tool allows to get the value of similarity between unknown word and items from gazetteers (e.g. person first names, person last names, country names). NamEnSim can also extract multi-word named entities from the source text using similarity function. This tool supports named entities recognition task (NER), e.g. Liner2. In the named entities \"base - form\" matching task NamEnSim achieves the accuracy of 81-96% for the similarity function based on logistic regresion and 84-98% for the similarity function based on inflection rules (results depend on the named entity category)."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/21"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "NamEnSim"
+    ],
+    "url": ""
+}

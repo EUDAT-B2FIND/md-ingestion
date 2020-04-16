@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9352877</identifier>
+    <datestamp>2019-05-31T15:32:11Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Idamurde s&#245;nastik</dc:title>
+      <dc:title xml:lang="en">The Dictionary of the Eastern Dialect </dc:title>
+      <dc:creator>Laansalu, Tiina</dc:creator>
+      <dc:creator>Niit, Ellen</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-10-31</dc:date>
+      <dc:date>Updated: 2017-03-23</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05B53L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">S&#245;nastik kuulub Eesti Keele Instituudi v&#228;ikeste murdes&#245;nastike sarja. S&#245;nastik sisaldab 7000 m&#228;rks&#245;na ning on m&#245;eldud k&#245;igile, kes kasutavad oma t&#246;&#246;s v&#245;i &#245;pingutes murdekeelt v&#245;i kes on p&#228;rit Ida-Eestist ja keda paelub esivanemate k&#245;nepruuk.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">This dictionary of 7000 entry words is intended for everyone who deals with dialects, either professionally or academically, as well as for the people with an Eastern-Estonian background who find their ancestors&#180; tongue fascinating.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

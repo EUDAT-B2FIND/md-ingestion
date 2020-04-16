@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/533</identifier>
+    <datestamp>2018-07-20T11:06:59Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Corpus2MWE</dc:title>
+      <dc:creator>Janz, Arkadiusz</dc:creator>
+      <dc:subject>CCL</dc:subject>
+      <dc:subject>MWE detection</dc:subject>
+      <dc:description>A CCL reader (Corpus2) with MWE detection.</dc:description>
+      <dc:date>2018-07-20</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/533</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU GPL3</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/gpl-3.0.en.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/redmine/projects/corpus2/wiki</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

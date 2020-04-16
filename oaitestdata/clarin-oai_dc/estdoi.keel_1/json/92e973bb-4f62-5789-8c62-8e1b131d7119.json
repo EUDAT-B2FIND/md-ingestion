@@ -1,0 +1,51 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00168L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17767578",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17767578"
+    ],
+    "PublicationTimestamp": "2019-01-28T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "M\u00fc\u00fcrisep, Kaili",
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:17767578;2019-03-11T18:37:20Z;ESTDOI;ESTDOI.KEEL;UD Estonian ver.2.3;Muischnek, Kadri;M\u00fc\u00fcrisep, Kaili;Center of Estonian Language Resources;2018;Issued: 2018-12-10;Updated: 2019-01-28;doi:10.15155/1-00-0000-0000-0000-00168L;Abstract;UD Estonian is a converted version of the Estonian Dependency Treebank (EDT), originally annotated in the Constraint Grammar (CG) annotation scheme, and consisting of genres of fiction, newspaper texts and scientific texts. The treebank contains 30,723 trees, 434,245 tokens.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "92e973bb-4f62-5789-8c62-8e1b131d7119",
+    "notes": [
+        "Abstract",
+        "UD Estonian is a converted version of the Estonian Dependency Treebank (EDT), originally annotated in the Constraint Grammar (CG) annotation scheme, and consisting of genres of fiction, newspaper texts and scientific texts. The treebank contains 30,723 trees, 434,245 tokens."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17767578"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "UD Estonian ver.2.3"
+    ],
+    "url": ""
+}

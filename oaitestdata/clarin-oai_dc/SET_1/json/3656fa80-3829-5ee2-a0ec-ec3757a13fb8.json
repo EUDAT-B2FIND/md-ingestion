@@ -1,0 +1,203 @@
+{
+    "Contact": [
+        "PARSEME"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 22",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Bulgarian",
+        "German",
+        "Modern Greek (1453-)",
+        "Spanish",
+        "Persian",
+        "French",
+        "Hebrew",
+        "Hungarian",
+        "Italian",
+        "Lithuanian",
+        "Polish",
+        "Portuguese",
+        "Romanian",
+        "Slovenian",
+        "Turkish",
+        "Hindi",
+        "Basque",
+        "English",
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2842",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2842"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2842",
+    "PublicationTimestamp": "2018-04-30T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "PARSEME"
+    ],
+    "RelatedIdentifier": [
+        "http://aclweb.org/anthology/W18-4925",
+        "http://hdl.handle.net/11372/LRT-2282"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "PARSEME Shared Task Data (v. 1.1) Agreement",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-mwe-1.1",
+        "PUB"
+    ],
+    "author": [
+        "Raffone, Annalisa",
+        "Pascucci, Antonio",
+        "Simk\u00f3, Katalin",
+        "Gurrutxaga, Antton",
+        "Estarrona, Ainara",
+        "Ehren, Rafael",
+        "Villavicencio, Aline",
+        "Gantar, Polona",
+        "Fotopoulou, Aggeliki",
+        "Elyovich, Hevi",
+        "Somers, Clarissa",
+        "Pasquer, Caroline",
+        "Arhar Holdt, \u0160pela",
+        "Palka-Binkiewicz, Emilia",
+        "Walsh, Abigail",
+        "Boizou, Loic",
+        "Papadelli, Stella",
+        "Kocijan, Kristina",
+        "Erden, Berna",
+        "Cook, Paul",
+        "QasemiZadeh, Behrang",
+        "Krek, Simon",
+        "Stefanova, Valentina",
+        "Kav\u010di\u010d, Teja",
+        "Mart\u00ednez Alonso, H\u00e9ctor",
+        "Blagus, Goranka",
+        "Diab, Mona",
+        "Kov\u00e1cs, Vikt\u00f3ria",
+        "Liebeskind, Chaya",
+        "Antoine, Jean-Yves",
+        "Zilio, Leonardo",
+        "Gonzalez, Itziar",
+        "Shukla, Vishakha",
+        "Vaidya, Ashwini",
+        "\u010cibej, Jaka",
+        "Puri, Vandana",
+        "Ratori, Shraddha",
+        "Ionescu, Mihaela",
+        "Ramisch, Renata",
+        "Urizar, Ruben",
+        "Taslimipoor, Shiva",
+        "Todorova, Maria",
+        "Jazbec, Ivo-Pavao",
+        "Srivastava, Shubham",
+        "Lichte, Timm",
+        "G\u00fcng\u00f6r, Tunga",
+        "Aceta, Cristina",
+        "Caruso, Valeria",
+        "Geeraert, Kristina",
+        "Matas, Ivana",
+        "Barbu Mititelu, Verginica",
+        "Parmentier, Yannick",
+        "Bonial, Claire",
+        "Stoyanova, Ivelina",
+        "Vincze, Veronika",
+        "Parra Escart\u00edn, Carla",
+        "Pia di Buono, Maria",
+        "Monti, Johanna",
+        "McCrae, John",
+        "Riccio, Anna",
+        "Elbadrashiny, Mohamed",
+        "Savary, Agata",
+        "Ha-Cohen Kerner, Yaakov",
+        "Bhatia, Archna",
+        "Onofrei, Mihaela",
+        "Klyueva, Natalia",
+        "Malka, Ruth",
+        "Sangati, Federico",
+        "Leseva, Svetlozara",
+        "van Gompel, Maarten",
+        "Jain, Kanishka",
+        "\u0160najder, Jan",
+        "de Medeiros Caseli, Helena",
+        "Aduriz, Itziar",
+        "Buljan, Maja",
+        "Berk, G\u00f6zde",
+        "Constant, Matthieu",
+        "Ibrahim, Rehab",
+        "Bielinskien\u0117, Agn\u0117",
+        "Candito, Marie",
+        "Cordeiro, Silvio Ricardo",
+        "Giouli, Voula",
+        "Dimitrova, Tsvetana",
+        "Schneider, Nathan",
+        "Kuzman, Taja",
+        "Ramisch, Carlos",
+        "Markantonatou, Stella",
+        "Foufi, Vassiliki",
+        "Theoxari, Natasa",
+        "Ljube\u0161i\u0107, Nikola",
+        "Kovalevskait\u0117, Jolanta",
+        "Hawwari, Abdelati",
+        "I\u00f1urrieta, Uxoa"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2842;2018-08-16T11:45:05Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Annotated corpora and tools of the PARSEME Shared Task on Automatic Identification of Verbal Multiword Expressions (edition 1.1);Ramisch, Carlos;Cordeiro, Silvio Ricardo;Savary, Agata;Vincze, Veronika;Barbu Mititelu, Verginica;Bhatia, Archna;Buljan, Maja;Candito, Marie;Gantar, Polona;Giouli, Voula;G\u00fcng\u00f6r, Tunga;Hawwari, Abdelati;I\u00f1urrieta, Uxoa;Kovalevskait\u0117, Jolanta;Krek, Simon;Lichte, Timm;Liebeskind, Chaya;Monti, Johanna;Parra Escart\u00edn, Carla;QasemiZadeh, Behrang;Ramisch, Renata;Schneider, Nathan;Stoyanova, Ivelina;Vaidya, Ashwini;Walsh, Abigail;Aceta, Cristina;Aduriz, Itziar;Antoine, Jean-Yves;Arhar Holdt, \u0160pela;Berk, G\u00f6zde;Bielinskien\u0117, Agn\u0117;Blagus, Goranka;Boizou, Loic;Bonial, Claire;Caruso, Valeria;\u010cibej, Jaka;Constant, Matthieu;Cook, Paul;Diab, Mona;Dimitrova, Tsvetana;Ehren, Rafael;Elbadrashiny, Mohamed;Elyovich, Hevi;Erden, Berna;Estarrona, Ainara;Fotopoulou, Aggeliki;Foufi, Vassiliki;Geeraert, Kristina;van Gompel, Maarten;Gonzalez, Itziar;Gurrutxaga, Antton;Ha-Cohen Kerner, Yaakov;Ibrahim, Rehab;Ionescu, Mihaela;Jain, Kanishka;Jazbec, Ivo-Pavao;Kav\u010di\u010d, Teja;Klyueva, Natalia;Kocijan, Kristina;Kov\u00e1cs, Vikt\u00f3ria;Kuzman, Taja;Leseva, Svetlozara;Ljube\u0161i\u0107, Nikola;Malka, Ruth;Markantonatou, Stella;Mart\u00ednez Alonso, H\u00e9ctor;Matas, Ivana;McCrae, John;de Medeiros Caseli, Helena;Onofrei, Mihaela;Palka-Binkiewicz, Emilia;Papadelli, Stella;Parmentier, Yannick;Pascucci, Antonio;Pasquer, Caroline;Pia di Buono, Maria;Puri, Vandana;Raffone, Annalisa;Ratori, Shraddha;Riccio, Anna;Sangati, Federico;Shukla, Vishakha;Simk\u00f3, Katalin;\u0160najder, Jan;Somers, Clarissa;Srivastava, Shubham;Stefanova, Valentina;Taslimipoor, Shiva;Theoxari, Natasa;Todorova, Maria;Urizar, Ruben;Villavicencio, Aline;Zilio, Leonardo;Multiword expressions;verbal multiword expressions;light-verb constructions;verb-particle constructions;inherently reflexive verbs;verbal idioms;multi-verb constructions;This multilingual resource contains corpora in which verbal MWEs have been manually annotated. VMWEs include idioms (let the cat out of the bag), light-verb constructions (make a decision), verb-particle constructions (give up), inherently reflexive verbs (help oneself), and multi-verb constructions (make do). VMWEs were annotated according to the universal guidelines in 19 languages. The corpora are provided in the cupt format, inspired by the CONLL-U format. The corpora were used in the 1.1 edition of the PARSEME Shared Task (2018).\r\n \r\nFor most languages, morphological and syntactic information \u00ad\u00ad\u00ad\u00ad\u2013 not necessarily using UD tagsets \u2013 including parts of speech, lemmas, morphological features and/or syntactic dependencies are also provided. Depending on the language, the information comes from treebanks (e.g., Universal Dependencies) or from automatic parsers trained on treebanks (e.g., UDPipe).\r\n \r\nThis item contains training, development and test data, as well as the evaluation tools used in the PARSEME Shared Task 1.1 (2018).\r\n\r\nThe annotation guidelines are available online: http://parsemefr.lif.univ-mrs.fr/parseme-st-guidelines/1.1;2018-04-30;corpus;http://hdl.handle.net/11372/LRT-2842;bul;deu;ell;spa;fas;fra;heb;hun;ita;lit;pol;por;ron;slv;tur;hin;eus;eng;hrv;http://aclweb.org/anthology/W18-4925;http://hdl.handle.net/11372/LRT-2282;PARSEME Shared Task Data (v. 1.1) Agreement;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-mwe-1.1;PUB;application/octet-stream;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 22;PARSEME;http://multiword.sf.net/sharedtask2018",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3656fa80-3829-5ee2-a0ec-ec3757a13fb8",
+    "notes": [
+        "This multilingual resource contains corpora in which verbal MWEs have been manually annotated. VMWEs include idioms (let the cat out of the bag), light-verb constructions (make a decision), verb-particle constructions (give up), inherently reflexive verbs (help oneself), and multi-verb constructions (make do). VMWEs were annotated according to the universal guidelines in 19 languages. The corpora are provided in the cupt format, inspired by the CONLL-U format. The corpora were used in the 1.1 edition of the PARSEME Shared Task (2018).\r\n \r\nFor most languages, morphological and syntactic information \u00ad\u00ad\u00ad\u00ad\u2013 not necessarily using UD tagsets \u2013 including parts of speech, lemmas, morphological features and/or syntactic dependencies are also provided. Depending on the language, the information comes from treebanks (e.g., Universal Dependencies) or from automatic parsers trained on treebanks (e.g., UDPipe).\r\n \r\nThis item contains training, development and test data, as well as the evaluation tools used in the PARSEME Shared Task 1.1 (2018).\r\n\r\nThe annotation guidelines are available online: http://parsemefr.lif.univ-mrs.fr/parseme-st-guidelines/1.1"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2842"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Multiword expressions"
+        },
+        {
+            "name": "verbal multiword expressions"
+        },
+        {
+            "name": "light-verb constructions"
+        },
+        {
+            "name": "verb-particle constructions"
+        },
+        {
+            "name": "inherently reflexive verbs"
+        },
+        {
+            "name": "verbal idioms"
+        },
+        {
+            "name": "multi-verb constructions"
+        }
+    ],
+    "title": [
+        "Annotated corpora and tools of the PARSEME Shared Task on Automatic Identification of Verbal Multiword Expressions (edition 1.1)"
+    ],
+    "url": ""
+}

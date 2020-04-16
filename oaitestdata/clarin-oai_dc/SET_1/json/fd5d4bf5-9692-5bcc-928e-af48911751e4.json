@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Somali"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/8",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/8"
+    ],
+    "PID": "http://hdl.handle.net/10794/8",
+    "PublicationTimestamp": "2015-11-20T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/8;2017-10-27T16:38:40Z;hdl_10794_1;hdl_10794_2;Af Soomaali 1971-79 (2017-10-16);Af Soomaali 1971-79 (2017-10-16);n/a, n/a;Somali;Corpus;Af Soomaali 1971-79. The material is sentence scrambled.;Af Soomaali 1971-79. Materialet \u00e4r meningsomkastat.;2015-11-20;corpus;http://hdl.handle.net/10794/8;som;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/somali-1971-79",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fd5d4bf5-9692-5bcc-928e-af48911751e4",
+    "notes": [
+        "Af Soomaali 1971-79. The material is sentence scrambled.",
+        "Af Soomaali 1971-79. Materialet \u00e4r meningsomkastat."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/8"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Somali"
+        },
+        {
+            "name": "Corpus"
+        }
+    ],
+    "title": [
+        "Af Soomaali 1971-79 (2017-10-16)",
+        "Af Soomaali 1971-79 (2017-10-16)"
+    ],
+    "url": ""
+}

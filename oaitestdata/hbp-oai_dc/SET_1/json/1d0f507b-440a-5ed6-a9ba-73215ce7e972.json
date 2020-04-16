@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Amunts, Katrin",
+        "Kiwitz, Kai",
+        "Schiffer, Christian ",
+        "Dickscheid, Timo"
+    ],
+    "DOI": "http://dx.doi.org/10.25493/DGEZ-Q93",
+    "DiscHierarchy": [
+        "5.1.2.2",
+        "Mechanics and Constructive Mechanical Engineering",
+        "Mechanicsy"
+    ],
+    "Discipline": "Neuroscience",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_DGEZ-Q93",
+    "MetadataAccess": [
+        "10.25493_DGEZ-Q93"
+    ],
+    "PublicationTimestamp": "2019-05-23T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1006/nimg.1998.0385",
+        "https://doi.org/10.1007/978-3-030-00931-1_76",
+        "https://doi.org/10.1109/ISBI.2017.7950666",
+        "https://doi.org/10.1126/science.1235381"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Amunts, Katrin"
+    ],
+    "fulltext": "10.25493_DGEZ-Q93;2019-12-10T12:41:53Z;https://doi.org/10.25493/DGEZ-Q93;Ultrahigh resolution 3D cytoarchitectonic map of Area hOc1 (V1, 17, CalcS) created by a Deep-Learning assisted workflow;2019-05-23T12:53:24.494Z;This dataset contains automatically created cytoarchitectonic maps of Area hOc1 (V1, 17, CalcS) in the BigBrain dataset [Amunts et al. 2013]. The mappings were created using Deep Convolutional Neural networks based on the idea presented in Spitzer et al. 2017 and Spitzer et al. 2018, which were trained on delineations on every 120th section created using the semi-automatic method presented in Schleicher et al. 1999. Mappings are available on every section. Their quality was observed by a trained neuroscientist to exclude sections with low quality results from further processing. Automatic mappings were then transformed to the 3D reconstructed BigBrain space using transformations used in Amunts et al. 2013, which were provided by Claude Lepage (McGill). Individual sections were used to assemble a 3D volume of the area, low quality results were replaced by interpolations between nearest neighboring sections. The volume was then smoothed using an 11\u00b3 median filter and largest connected components were identified to remove false positive results of the classification algorithm.\nThe dataset consists of a single HDF5 file containing the volume in RAS dimension ordering and 20 micron isotropic resolution in the dataset \u201cvolume\u201d and affine transformation matrix in the dataset \u201caffine\u201d. An additional dataset \u201cinterpolation_info\u201d contains a vector with an integer value for each section which indicates if a section was interpolated due to low quality results (value 2) or not (value 1).\nDue to the large size of the volume, it\u2019s recommended to view the data online using the provided viewer link.\n;neuroscience;imaging;histology;brain mapping;analysis technique;english;dataset;The Human Brain Project;Schiffer, Christian ;Kiwitz, Kai;Amunts, Katrin;Dickscheid, Timo;Amunts, Katrin;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.1006/nimg.1998.0385;https://doi.org/10.1007/978-3-030-00931-1_76;https://doi.org/10.1109/ISBI.2017.7950666;https://doi.org/10.1126/science.1235381",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "1d0f507b-440a-5ed6-a9ba-73215ce7e972",
+    "notes": [
+        "This dataset contains automatically created cytoarchitectonic maps of Area hOc1 (V1, 17, CalcS) in the BigBrain dataset [Amunts et al. 2013]. The mappings were created using Deep Convolutional Neural networks based on the idea presented in Spitzer et al. 2017 and Spitzer et al. 2018, which were trained on delineations on every 120th section created using the semi-automatic method presented in Schleicher et al. 1999. Mappings are available on every section. Their quality was observed by a trained neuroscientist to exclude sections with low quality results from further processing. Automatic mappings were then transformed to the 3D reconstructed BigBrain space using transformations used in Amunts et al. 2013, which were provided by Claude Lepage (McGill). Individual sections were used to assemble a 3D volume of the area, low quality results were replaced by interpolations between nearest neighboring sections. The volume was then smoothed using an 11\u00b3 median filter and largest connected components were identified to remove false positive results of the classification algorithm.\nThe dataset consists of a single HDF5 file containing the volume in RAS dimension ordering and 20 micron isotropic resolution in the dataset \u201cvolume\u201d and affine transformation matrix in the dataset \u201caffine\u201d. An additional dataset \u201cinterpolation_info\u201d contains a vector with an integer value for each section which indicates if a section was interpolated due to low quality results (value 2) or not (value 1).\nDue to the large size of the volume, it\u2019s recommended to view the data online using the provided viewer link.\n"
+    ],
+    "oai_identifier": [
+        "10.25493_DGEZ-Q93"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "imaging"
+        },
+        {
+            "name": "histology"
+        },
+        {
+            "name": "brain mapping"
+        },
+        {
+            "name": "analysis technique"
+        }
+    ],
+    "title": [
+        "Ultrahigh resolution 3D cytoarchitectonic map of Area hOc1 (V1, 17, CalcS) created by a Deep-Learning assisted workflow"
+    ],
+    "url": ""
+}

@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "University of Southampton and Newcastle University"
+    ],
+    "Contributor": [
+        "Myles, Florence",
+        "Mitchell, Rosamond"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-877",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-877"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-877",
+    "PublicationTimestamp": "2008-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "University of Southampton and Newcastle University"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-877;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;French learner language oral corpora;Myles, Florence;Mitchell, Rosamond;Seven French L2 corpora. Digital sound files and related transcripts formatted using CHILDES software. The database currently contains over 4000 files (sound files, transcripts and morphosyntactically tagged transcripts). .;2008;corpus;http://hdl.handle.net/11372/LRT-877;fra;downloadable_files_count: 0;United Kingdom;University of Southampton and Newcastle University;http://www.flloc.soton.ac.uk/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0dc44ff4-0168-5fb9-85ce-cef73ba26704",
+    "notes": [
+        "Seven French L2 corpora. Digital sound files and related transcripts formatted using CHILDES software. The database currently contains over 4000 files (sound files, transcripts and morphosyntactically tagged transcripts). ."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-877"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "French learner language oral corpora"
+    ],
+    "url": ""
+}

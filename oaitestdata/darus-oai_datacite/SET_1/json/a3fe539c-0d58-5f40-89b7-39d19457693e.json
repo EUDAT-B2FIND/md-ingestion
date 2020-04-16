@@ -1,0 +1,24 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-508",
+    "MetadataAccess": [
+        "doi:10.18419/darus-508"
+    ],
+    "fulltext": "doi:10.18419/darus-508;2020-01-22T01:00:00Z;all;10.18419/darus-508;Seeland, Anett;Anett;Seeland;Universit\u00e4t Stuttgart;EngMeta Metadata Block Configuration for Dataverse;DaRUS;2020;Computer and Information Science;Engineering;metadata;configuration;Dataverse;FoKUS Team;Universit\u00e4t Stuttgart;Iglezakis, Dorothea;Dorothea;Iglezakis;2019-12-12;2020-01-21;Configuration Files;12078;6533;text/tsv;text/tsv;1.0;CC BY Waiver;This dataset containts TSV-Files for the configuration of two metadata blocks for data repositories basing on <a href=\"https://dataverse.org/\" target=\"_blank\">Dataverse</a>. The two blocks help to describe datasets with the concepts of the <a target = \"_blank\" href=\"https://www.izus.uni-stuttgart.de/fokus/engmeta/\">metadata scheme EngMeta</a>.\r\n\r\nTo add a metadata block to a Dataverse installation use the <a href=\"http://guides.dataverse.org/en/latest/admin/metadatacustomization.html#loading-tsv-files-into-dataverse\">instructions in the Dataverse Admin Guide</a>.\r\n\r\nEngMetaDataverse.tsv represents the engineering specific part of EngMeta containing the fields:\r\n<ul>\r\n <li>Type of Data Generation</li>\r\n<li>Measured Variables</li>\r\n<li>Controlled Variables</li>\r\n<li>System Phases</li>\r\n<li>System or Phase Components</li>\r\n<li>System Parameters</li>\r\n<li>Force Field</li>\r\n<li>Force Field Parameters</li>\r\n<li>Spatial Resolution</li>\r\n<li>Temporal Resolution</li>\r\n<li>Flows</li>\r\n<li>Boundary Parameters</li>\r\n</ul>\r\n\r\nprocess.tsv represents the process describing part of EngMeta containing the fields:\r\n<ul>\r\n<li>Processing Methods</li>\r\n<li>Method Parameters</li>\r\n<li>Software</li>\r\n<li>Instruments</li>\r\n<li>Environments</li>\r\n<li>Processing Steps</li>\r\n</ul>;Federal Ministry of Education and Research (BMBF);16FDM008",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "a3fe539c-0d58-5f40-89b7-39d19457693e",
+    "oai_identifier": [
+        "doi:10.18419/darus-508"
+    ],
+    "oai_set": [
+        "all"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

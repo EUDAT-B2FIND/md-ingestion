@@ -1,0 +1,49 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4327",
+    "MetadataAccess": [
+        "oai:ota:oucs:4327"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:4327;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4327.xml;A dialogue betwixt Whig and Tory. Wherein the principles and practices of each party are fairly and impartially stated;;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fb2e714e-81bf-58bc-bbe6-2873dcd20c45",
+    "oai_identifier": [
+        "oai:ota:oucs:4327"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A dialogue betwixt Whig and Tory. Wherein the principles and practices of each party are fairly and impartially stated;"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4327.xml"
+}

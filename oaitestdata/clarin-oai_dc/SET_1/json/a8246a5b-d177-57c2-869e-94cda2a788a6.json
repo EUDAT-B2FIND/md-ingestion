@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0432",
+    "MetadataAccess": [
+        "oai:ota:oucs:0432"
+    ],
+    "PublicationTimestamp": "1971-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1971"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Cheatle, Syd,  1943-"
+    ],
+    "fulltext": "oai:ota:oucs:0432;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0432.xml; Straight up  / compiled by Dirk Geens;Cheatle, Syd,  1943-;1971;text_and_corpus_linguistics;Plays -- Great Britain -- 20th century;eng;Forms part of the Louvain corpus of modern English drama deposited in 1983. The text does not conform to modern standards of text encoding. The text is all capitals, with words broken over line boundaries, undocumented markup characters, and numeric codes for the identities of the players. ;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Plays;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a8246a5b-d177-57c2-869e-94cda2a788a6",
+    "notes": [
+        "Forms part of the Louvain corpus of modern English drama deposited in 1983. The text does not conform to modern standards of text encoding. The text is all capitals, with words broken over line boundaries, undocumented markup characters, and numeric codes for the identities of the players. "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:0432"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        " Straight up  / compiled by Dirk Geens"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0432.xml"
+}

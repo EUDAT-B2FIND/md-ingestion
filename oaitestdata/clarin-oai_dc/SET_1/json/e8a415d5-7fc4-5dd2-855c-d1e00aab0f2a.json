@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "The Danish Language Council",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "text/plain; charset=utf-8",
+        "application/pdf",
+        "downloadable_files_count: 11",
+        "application/zip",
+        "text/plain"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/11",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/11"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/11",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "The Danish Language Council",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN-ACA-NC",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Hansen, Dorte Haltrup",
+        "Braasch, Anna",
+        "Olsen, Sussi",
+        "Jakob, Halskov"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/11;2018-06-28T13:24:42Z;hdl_20.500.12115_1;hdl_20.500.12115_3;DK-CLARIN LSP Corpus - Economics domain;Olsen, Sussi;Braasch, Anna;Hansen, Dorte Haltrup;Jakob, Halskov;Economics;Texts in the Economics domain come from SKAT, Finanstilsynet and Erhvervs- og Selskabsstyrelsen and have been collected in the DK-CLARIN project, WP2.2, 2008 - 2011. \r\nThe corpus consists of 979,881 words in 64 files. \r\nCommunicative setting/Number of files: expert->expert (11) expert->advanced (1) expert->basic (52).\r\nAll texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation placed in separate text external spangroups. \r\n\"DK-CLARIN LSP Corpus - Economics domain\" is a part of the Danish DK-CLARIN LSP corpus consisting of seven sub-corpora from following subject domains: Agriculture, Construction, Economics, Environment, Health, IT and Nanotechnology.;2011;corpus;http://hdl.handle.net/20.500.12115/11;dan;CLARIN-ACA-NC;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1;ACA;text/plain; charset=utf-8;application/zip;application/zip;application/zip;application/zip;application/pdf;application/pdf;application/pdf;text/plain;text/xml;text/xml;text/xml;downloadable_files_count: 11;Centre for Language Technology, NorS, University of Copenhagen;The Danish Language Council",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e8a415d5-7fc4-5dd2-855c-d1e00aab0f2a",
+    "notes": [
+        "Texts in the Economics domain come from SKAT, Finanstilsynet and Erhvervs- og Selskabsstyrelsen and have been collected in the DK-CLARIN project, WP2.2, 2008 - 2011. \r\nThe corpus consists of 979,881 words in 64 files. \r\nCommunicative setting/Number of files: expert->expert (11) expert->advanced (1) expert->basic (52).\r\nAll texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation placed in separate text external spangroups. \r\n\"DK-CLARIN LSP Corpus - Economics domain\" is a part of the Danish DK-CLARIN LSP corpus consisting of seven sub-corpora from following subject domains: Agriculture, Construction, Economics, Environment, Health, IT and Nanotechnology."
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/11"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Economics"
+        }
+    ],
+    "title": [
+        "DK-CLARIN LSP Corpus - Economics domain"
+    ],
+    "url": ""
+}

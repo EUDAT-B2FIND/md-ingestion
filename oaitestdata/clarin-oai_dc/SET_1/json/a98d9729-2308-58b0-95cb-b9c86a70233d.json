@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "text/xml",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian Bokm\u00e5l",
+        "Northern Sami"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/94",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/94"
+    ],
+    "PID": "http://hdl.handle.net/11509/94",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "The Divvun group at UiT The Arctic University of Norway",
+        "Giellatekno - Saami Language Technology, UiT The Arctic University of Norway"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/94;2016-09-06T12:58:14Z;hdl_11509_1;hdl_11509_2;Norwegian Bokm\u00e5l-North Saami dictionary;Giellatekno - Saami Language Technology, UiT The Arctic University of Norway;The Divvun group at UiT The Arctic University of Norway;Bilingual Lexicon;Norwegian;North Saami;Machine-readable Dictionary;The Norwegian Bokm\u00e5l-North Saami dictionary is the work done by Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language communities. In particular, the following colleagues have contributed to the creation of the ressource: Nils Jernsletten, Lene Antonsen, Trond Trosterud, Ritva Nystad, Ciprian Gerstenberger, Berit Merete Nystad Eskonsipo, Marja Eira, Siri Broch Johansen, Sjur Moshagen, and Tomi Pieski. The dictionary contains 25902 entries in Giellatekno's dictionary xml format. In spite of the extensive quality control, it may contain entries with objectionable translations. If you find any errors or want to add more words, download the file, edit it, and send it back to giellatekno@uit.no and feedback@divvun.no.\r\nPlease note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata).;2015;lexicalConceptualResource;http://hdl.handle.net/11509/94;nob;sme;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;application/zip;text/plain; charset=utf-8;text/xml;downloadable_files_count: 1;Giellatekno - Saami Language Technology;http://giellatekno.uit.no/index.eng.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a98d9729-2308-58b0-95cb-b9c86a70233d",
+    "notes": [
+        "The Norwegian Bokm\u00e5l-North Saami dictionary is the work done by Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language communities. In particular, the following colleagues have contributed to the creation of the ressource: Nils Jernsletten, Lene Antonsen, Trond Trosterud, Ritva Nystad, Ciprian Gerstenberger, Berit Merete Nystad Eskonsipo, Marja Eira, Siri Broch Johansen, Sjur Moshagen, and Tomi Pieski. The dictionary contains 25902 entries in Giellatekno's dictionary xml format. In spite of the extensive quality control, it may contain entries with objectionable translations. If you find any errors or want to add more words, download the file, edit it, and send it back to giellatekno@uit.no and feedback@divvun.no.\r\nPlease note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata)."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/94"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Bilingual Lexicon"
+        },
+        {
+            "name": "Norwegian"
+        },
+        {
+            "name": "North Saami"
+        },
+        {
+            "name": "Machine-readable Dictionary"
+        }
+    ],
+    "title": [
+        "Norwegian Bokm\u00e5l-North Saami dictionary"
+    ],
+    "url": ""
+}

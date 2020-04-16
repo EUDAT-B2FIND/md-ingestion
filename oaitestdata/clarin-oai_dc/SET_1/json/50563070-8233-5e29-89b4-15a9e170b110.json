@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "University of Lodz"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/287",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/287"
+    ],
+    "PID": "http://hdl.handle.net/11321/287",
+    "PublicationTimestamp": "2016-03-04T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "University of Lodz"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Dr\u00f3\u017ad\u017c, \u0141ukasz",
+        "Kowalczyk, Pawe\u0142",
+        "P\u0119zik, Piotr",
+        "Wilk, Pawe\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/287;2016-06-03T14:30:34Z;hdl_11321_3;hdl_11321_4;PELCRA for National Corpus of Polish Search Engine 2;P\u0119zik, Piotr;Kowalczyk, Pawe\u0142;Dr\u00f3\u017ad\u017c, \u0141ukasz;Wilk, Pawe\u0142;National Corpus of Polish;NKJP;corpus search engine;The PELCRA for NKJP search engine 2 provides access to the full National Corpus of Polish dataset (over 1.5 billion word tokens). In addition to linguistically motivated corpus queries, it supports a number of data exploration and visualisation features. Most of the functionality of the search engine is available through a REST web service. Access to the API is available upon request.;2016-03-04;toolService;http://hdl.handle.net/11321/287;pol;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;CC;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;University of Lodz;http://pelcra.clarin-pl.eu/NKJP/#home",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "50563070-8233-5e29-89b4-15a9e170b110",
+    "notes": [
+        "The PELCRA for NKJP search engine 2 provides access to the full National Corpus of Polish dataset (over 1.5 billion word tokens). In addition to linguistically motivated corpus queries, it supports a number of data exploration and visualisation features. Most of the functionality of the search engine is available through a REST web service. Access to the API is available upon request."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/287"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "National Corpus Polish"
+        },
+        {
+            "name": "NKJP"
+        },
+        {
+            "name": "corpus search engine"
+        }
+    ],
+    "title": [
+        "PELCRA for National Corpus of Polish Search Engine 2"
+    ],
+    "url": ""
+}

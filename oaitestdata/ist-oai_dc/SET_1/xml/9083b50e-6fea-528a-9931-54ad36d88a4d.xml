@@ -1,0 +1,58 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:111</identifier>
+    <datestamp>2018-09-21T14:11:04Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Supporting materials "STATISTICAL MECHANICS FOR METABOLIC NETWORKS IN STEADY-STATE GROWTH"</dc:title>
+      <dc:creator>De Martino, Daniele</dc:creator>
+      <dc:creator>Tkacik, Gasper</dc:creator>
+      <dc:subject>530 Physics</dc:subject>
+      <dc:subject>570 Life sciences; biology</dc:subject>
+      <dc:description>Supporting material to the article &#13;
+STATISTICAL MECHANICS FOR METABOLIC NETWORKS IN STEADY-STATE GROWTH&#13;
+&#13;
+&#13;
+boundscoli.dat&#13;
+Flux Bounds of the E. coli catabolic core model iAF1260 in a glucose limited minimal medium. &#13;
+&#13;
+&#13;
+polcoli.dat&#13;
+Matrix enconding the polytope of the E. coli catabolic core model iAF1260 in a glucose limited minimal medium, &#13;
+obtained from the soichiometric matrix by standard linear algebra  (reduced row echelon form).&#13;
+&#13;
+ellis.dat&#13;
+Approximate Lowner-John ellipsoid rounding the polytope of the E. coli catabolic core model iAF1260 in a glucose limited minimal medium&#13;
+obtained with the Lovasz method.&#13;
+&#13;
+point0.dat&#13;
+Center of the approximate Lowner-John ellipsoid rounding the polytope of the E. coli catabolic core model iAF1260 in a glucose limited minimal medium&#13;
+obtained with the Lovasz method.&#13;
+&#13;
+&#13;
+&#13;
+lovasz.cpp  &#13;
+This c++ code file receives in input the polytope of the feasible steady states of a metabolic network, &#13;
+(matrix and bounds), and it gives in output an approximate Lowner-John ellipsoid rounding the polytope&#13;
+with the Lovasz method &#13;
+NB inputs are referred by defaults to the catabolic core of the E.Coli network iAF1260. &#13;
+For further details we refer to  PLoS ONE 10.4 e0122670 (2015).&#13;
+&#13;
+sampleHRnew.cpp  &#13;
+This c++ code file receives in input the polytope of the feasible steady states of a metabolic network, &#13;
+(matrix and bounds), the ellipsoid rounding the polytope, a point inside and  &#13;
+it gives in output a max entropy sampling at fixed average growth rate &#13;
+of the steady states by performing an Hit-and-Run Monte Carlo Markov chain.&#13;
+NB inputs are referred by defaults to the catabolic core of the E.Coli network iAF1260. &#13;
+For further details we refer to  PLoS ONE 10.4 e0122670 (2015).</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>archive</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/111/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/111/1/CODES.zip</dc:identifier>
+      <dc:identifier>  De Martino, Daniele and Tkacik, Gasper   Supporting materials "STATISTICAL MECHANICS FOR METABOLIC NETWORKS IN STEADY-STATE GROWTH".  [Data Collection]     </dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:62</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

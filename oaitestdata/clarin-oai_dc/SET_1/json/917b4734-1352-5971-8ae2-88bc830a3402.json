@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1092896e5f0f11e6a2aa782bcb074135086ed39db4bc44fe84f544af288d6aed",
+    "MetadataAccess": [
+        "1092896e5f0f11e6a2aa782bcb074135086ed39db4bc44fe84f544af288d6aed"
+    ],
+    "PublicationTimestamp": "2016-08-10T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "fulltext": "1092896e5f0f11e6a2aa782bcb074135086ed39db4bc44fe84f544af288d6aed;2018-11-15T16:40:23Z;corpus;corpus:text;PhenoCHF Corpus;PhenoCHF is an annotated corpus consisting of documents belonging to two different text types (i.e., narrative reports from electronic health records (EHRs) and literature articles). It is manually annotated by medical doctors with detailed information relating to mentions of phenotype concepts and disease-phenotype relations. \n\nThe documents in PhenoCHF focus on a specific medical condition, i.e., congestive heart failure (CHF). This focus is motivated by CHF's current standing as the world's most deadly disease. However, our experiments using the corpus have demonstrated that it can be used to develop systems that can recognise information relating to a wider range of diseases in a broader variety of text types than those included in PhenoCHF. ;2016-08-10",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "917b4734-1352-5971-8ae2-88bc830a3402",
+    "notes": [
+        "PhenoCHF is an annotated corpus consisting of documents belonging to two different text types (i.e., narrative reports from electronic health records (EHRs) and literature articles). It is manually annotated by medical doctors with detailed information relating to mentions of phenotype concepts and disease-phenotype relations. \n\nThe documents in PhenoCHF focus on a specific medical condition, i.e., congestive heart failure (CHF). This focus is motivated by CHF's current standing as the world's most deadly disease. However, our experiments using the corpus have demonstrated that it can be used to develop systems that can recognise information relating to a wider range of diseases in a broader variety of text types than those included in PhenoCHF. "
+    ],
+    "oai_identifier": [
+        "1092896e5f0f11e6a2aa782bcb074135086ed39db4bc44fe84f544af288d6aed"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "PhenoCHF Corpus"
+    ]
+}

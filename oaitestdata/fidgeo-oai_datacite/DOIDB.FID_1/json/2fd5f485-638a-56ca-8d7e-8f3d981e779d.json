@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6595",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6595"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6595;2018-12-21T07:38:54Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.072;Willingshofer, Ernst;Ernst;Willingshofer;0000-0002-9119-5557;Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands;Sokoutis, Dimitrios;Dimitrios;Sokoutis;0000-0003-0523-9785;Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands;Beekman, Fred;Fred;Beekman;0000-0002-8455-999X;Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands;Sch\u00f6nebeck, Jan-Michael;Jan-Michael;Sch\u00f6nebeck;GFZ German Research Centre for Geosciences, Potsdam, Germany;Warsitzka, Michael;Michael;Warsitzka;0000-0003-1774-5888;GFZ German Research Centre for Geosciences, Potsdam, Germany;Rosenau, Matthias;Matthias;Rosenau;0000-0003-1134-5381;GFZ German Research Centre for Geosciences, Potsdam, Germany;Ring shear test data of feldspar sand and quartz sand used in the Tectonic Laboratory (TecLab) at Utrecht University for experimental Earth Science applications;GFZ Data Services;2018;EPOS;Multi-scale laboratories;analogue models of geologic processes;property data of analogue modelling materials;software tools;EARTH SCIENCE > SOLID EARTH > TECTONICS;EARTH SCIENCE SERVICES > DATA ANALYSIS AND VISUALIZATION > CALIBRATION/VALIDATION;earth interior setting > crust setting > continental-crustal setting > upper continental crustal setting;deformation > fracturing;fault;tectonic and structural features;Sand > Quartz Sand;Iron Powder;Ring-shear tester;Force sensor;Friction coefficient;Cohesion;Willingshofer, Ernst;Ernst;Willingshofer;0000-0002-9119-5557;Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands;Sokoutis, Dimitrios;Dimitrios;Sokoutis;0000-0003-0523-9785;Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands;Beekman, Fred;Fred;Beekman;0000-0002-8455-999X;Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands;Sch\u00f6nebeck, Jan-Michael;Jan-Michael;Sch\u00f6nebeck;GFZ German Research Centre for Geosciences, Potsdam, Germany;Warsitzka, Michael;Michael;Warsitzka;0000-0003-1774-5888;GFZ German Research Centre for Geosciences, Potsdam, Germany;Rosenau, Matthias;Matthias;Rosenau;0000-0003-1134-5381;GFZ German Research Centre for Geosciences, Potsdam, Germany;TecLab - Tectonic Modelling Laboratory (Utrecht University, The Netherlands);University, Utrecht, The Netherlands;HelTec - Helmholtz Laboratory for Tectonic Modelling (GFZ Potsdam, Germany);GFZ German Research Centre for Geosciences, Potsdam, Germany;en;10.1144/GSL.SP.2005.243.01.18;10.1002/2016JB012915;10.1016/j.jsg.2015.03.008;10.1002/ceat.200303112;978-3-540-73767-4;10.1016/j.tecto.2016.01.017;10.1111/j.1365-3091.2009.01120.x;10.3389/feart.2018.00148;10.1002/2016TC004424;10.1016/j.epsl.2015.05.022;10.1002/2014TC003756;10.1029/2010TC002719;10.1029/2012TC003122;10.1144/petgeo2015-029;10.1029/2010TC002823;10.1007/s00531-012-0846-4;10.1016/j.epsl.2014.03.036;10.1016/j.tecto.2013.03.009;10.1111/bre.12129;10.1016/j.epsl.2011.03.028;10.1016/j.epsl.2017.05.012;10.1111/sed.12313;10.1130/G25321A.1;10.1144/GSL.SP.2005.243.01.18;10.1130/G34815.1;3 Files;application/octet-stream;application/octet-stream;application/octet-stream;1;CC BY 4.0;This dataset provides friction data from ring-shear tests (RST) on feldspar sand and quartz sand, which are used to simulate brittle behaviour in crust- and lithosphere-scale analogue experiments at the Tectonic Laboratory (TecLab), Utrecht University (NL) (Willingshofer et al., 2005; Willingshofer & Sokoutis, 2009; Athmer et al., 2010; Luth et al., 2010; Fern\u00e1ndez-Lozano et al., 2011; Leever et al., 2011; Sokoutis & Willingshofer, 2011; Fern\u00e1ndez-Lozano et al., 2012; Luth et al., 2013; Munteanu et al., 2013; Willingshofer et al., 2013; Munteanu et al., 2014; Calignano et al., 2015a, b; Ortner et al., 2015; Gabrielsen et al., 2016; Calignano et al., 2017; van Gelder et al., 2017; Wang et al., 2017; Beniest et al., 2018 ). The materials have been characterized by means of internal friction coefficients \u00b5 and cohesions C as a remote service by the Helmholtz Laboratory for Tectonic Modelling (HelTec) at the GFZ German Research Centre for Geosciences in Potsdam.",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "2fd5f485-638a-56ca-8d7e-8f3d981e779d",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6595"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

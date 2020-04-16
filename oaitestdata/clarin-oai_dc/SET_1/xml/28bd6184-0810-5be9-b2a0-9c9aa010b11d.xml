@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:ota:oucs:3925</identifier>
+    <datestamp>2017-06-15T11:47:02Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cld="http://purl.org/cld/terms/">
+      <dc:identifier>http://ota.ox.ac.uk/headers/3925.xml</dc:identifier>
+      <dc:title>An epistle to Dr. Shebbeare: to which is added an ode to Sir Fletcher Norton, in imitation of Horace, Ode VIII. Book IV. By Malcolm MacGreggor, of Knightsbridge, Esq. ...</dc:title>
+      <dc:creator>Mason, William, 1725-1797.</dc:creator>
+      <dc:subject>text_and_corpus_linguistics</dc:subject>
+      <dc:language>eng</dc:language>
+      <dc:publisher>Oxford Text Archive, University of Oxford</dc:publisher>
+      <dc:type>Text</dc:type>
+      <dc:rights>http://www.ota.ox.ac.uk/documents/user_agreement.xml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

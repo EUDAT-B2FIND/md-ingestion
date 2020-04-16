@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>isis_24088312</identifier>
+    <datestamp>2016-04-08T15:22:38Z</datestamp>
+  </header>
+  <metadata>
+    <oai_qdc:qdc xmlns:oai_qdc="http://pandata.org/pmh/oai_qdc/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pandata.org/pmh/oai_qdc/ http://pandata.org/pmh/oai_qdc.xsd">
+      <dc:identifier>10.5286/ISIS.E.24088312</dc:identifier>
+      <dc:title>Structures of Gel Precursors of Nanoporous Materials</dc:title>
+      <dc:description>Our aim is to examine the structures of disordered gel precursors to nanoporous zeolites that are formed in the early stages of hydrothermal reactions. They are considered to be intermediates in the synthesis of zeolites materials, although their structures have not yet been described in any detail: indeed previous work has studied samples quneched from reactions mixtures. We will study gel phases in situ, in the presence of their mother liquor. This is a continuation of RB1010291, where we have results that show the total scattering from the gel in situ differs considerably from the material recovered and dried, and also that we can see atomic correlations due to the gel in the presence of the liquid. Now we wish to study how the gel structure evolves with time prior to crystallisation. The project forms part of a larger effort aimed at understanding the formation of complex solids. </dc:description>
+      <dc:relation>[SANDALS];RB1120187;run_number_range</dc:relation>
+      <dcterms:references>http://dx.doi.org/10.5286/ISIS.E.24088312</dcterms:references>
+      <dc:creator>Dr Peter Dunne</dc:creator>
+      <dc:creator>Dr Alex Hannon</dc:creator>
+      <dc:creator>Dr Emma Barney</dc:creator>
+      <dc:creator>Professor Richard Walton</dc:creator>
+      <dc:creator>Dr Helen Playford</dc:creator>
+      <dc:contributor>Science and Technology Facilities Council, ISIS</dc:contributor>
+      <dc:subject>Clean energy and the environment, pharmaceuticals and health care, nanotechnology and materials engineering, catalysis and polymers, fundamental studies of materials</dc:subject>
+      <dcterms:issued>2014-11-29 10:53:47</dcterms:issued>
+      <dc:language>en</dc:language>
+      <dc:publisher>ISIS;ISIS Pulsed Neutron &amp; Muon Source;http://www.isis.stfc.ac.uk;[SANDALS]</dc:publisher>
+      <dc:format>isis neutron raw;binary;2;None</dc:format>
+      <dc:relation>ISIS, Harwell, United Kingdom</dc:relation>
+      <dc:rights>ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html</dc:rights>
+      <dc:relation/>
+      <dc:relation xsi:type="dcterms:ISO3166">GB</dc:relation>
+      <dcterms:temporal>2011-11-17 13:16:24;2011-11-29 10:53:47</dcterms:temporal>
+    </oai_qdc:qdc>
+  </metadata>
+</record>

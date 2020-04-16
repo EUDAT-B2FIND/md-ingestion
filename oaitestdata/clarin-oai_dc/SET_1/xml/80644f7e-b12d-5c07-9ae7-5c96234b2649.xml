@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.spraakbanken.gu.se:10794/101</identifier>
+    <datestamp>2017-10-25T11:27:44Z</datestamp>
+    <setSpec>hdl_10794_1</setSpec>
+    <setSpec>hdl_10794_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Blog mix 2007 (2017-02-17)</dc:title>
+      <dc:title xml:lang="sv">Bloggmix 2007 (2017-02-17)</dc:title>
+      <dc:creator>n/a, n/a</dc:creator>
+      <dc:subject>Swedish</dc:subject>
+      <dc:subject>Blog</dc:subject>
+      <dc:description xml:lang="en">The blogs in the blogmix are selected through the lists Most visited private blogs, Most visited professional blogs, and the local lists for different regions, at bloggportalen.se.&#13;
+&#13;
+More information, such as the location and age of the blogger is also retrieved from Bloggportalen. The material has not been manually checked, which means that spam may occur. Some English blogs have been removed when discovered, and some blogs have not been added for technical reasons.&#13;
+&#13;
+The time of the blogs ranges from the first to the latest entries of the selected blogs, and the corpus is continually updated.&#13;
+&#13;
+The material is sentence scrambled.</dc:description>
+      <dc:description xml:lang="sv">Urvalet av bloggar f&#246;r bloggmixen g&#246;rs med hj&#228;lp av topplistorna p&#229; bloggportalen.se, b&#229;de Mest bes&#246;kta privata bloggar, Mest bes&#246;kta proffsbloggar och de lokala topplistorna f&#246;r olika regioner.&#13;
+&#13;
+N&#228;rmare information, som bloggarens ort och &#229;lder, h&#228;mtas ocks&#229; fr&#229;n Bloggportalen. Materialet har inte kontrollerats manuellt, vilket betyder att det kan f&#246;rekomma spam. N&#229;gra engelskspr&#229;kiga bloggar har plockats bort d&#229; de uppt&#228;ckts, och vissa bloggar har inte kunnat l&#228;sas in av tekniska sk&#228;l.&#13;
+&#13;
+Tidsperioden str&#228;cker sig fr&#229;n de f&#246;rsta inl&#228;ggen i de utvalda bloggarna till de senaste inl&#228;ggen. Korpusen uppdateras regelbundet.&#13;
+&#13;
+Materialet &#228;r meningsomkastat.</dc:description>
+      <dc:date>2013-03-06</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/10794/101</dc:identifier>
+      <dc:language>swe</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Spr&#229;kbanken, University of Gothenburg</dc:publisher>
+      <dc:source>https://spraakbanken.gu.se/swe/resurs/bloggmix2007</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

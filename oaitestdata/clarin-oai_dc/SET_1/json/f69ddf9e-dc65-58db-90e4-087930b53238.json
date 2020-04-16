@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/321",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/321"
+    ],
+    "PID": "http://hdl.handle.net/11321/321",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Maziarz, Marek",
+        "Wendelberger, Micha\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/321;2016-10-14T14:37:58Z;hdl_11321_3;hdl_11321_4;S\u0142ownik kolokacji rzeczownikowo-przymiotnikowych bez uzgodnienia;Wendelberger, Micha\u0142;Maziarz, Marek;kolokacje;korpus;uzgodnienie;S\u0142ownik nieuzgodnionych kolokacji rzeczownikowo-przymiotnikowych z korpusu S\u0142owosieci. W nag\u0142\u00f3wku mamy\r\n\r\nbase 0\tbase 1\trelacja\tczesto\u015b\u0107\tAgrAdjSubstP0\tAgrAdjSubstH1P0\tAgrSubstAdjP0\tAgrSubstAdjH1P0\r\n\r\ngdzie base 0 - to lemat pierwszego wyrazu, base 1 - lemat drugiego wyrazu, relacja - rodzaj operatora, kt\u00f3ry wykry\u0142 po\u0142\u0105czenie, cz\u0119sto\u015b\u0107 - frekwencja po\u0142\u0105czenia w korpusie, AgrAdjSubstP0 - szyk AN (przymiotnik - rzeczownik) bez uzgodnienia, nieprzedzielony przez 3 wyraz, AgrAdjSubstH1P0 - szyk A_N (z przerw\u0105 na 1 separuj\u0105cy po\u0142\u0105czenie wyraz), AgrSubstAdjP0 - szyk NA bez uzgodnienia, bez separuj\u0105cego wyrazu, \tAgrSubstAdjH1P0 - szyk NA z przerw\u0105 na 1 separuj\u0105cy wyraz, bez uzgodnienia.\r\n\r\nPrzyk\u0142ad:\r\nbase 0\tbase 1\trelacja\tczesto\u015b\u0107\tAgrAdjSubstP0\tAgrAdjSubstH1P0\tAgrSubstAdjP0\tAgrSubstAdjH1P0\r\nger:uzyska\u0107\tadj:bezc\u0142owy\tAgrSubstAdjH1P0\t3\t0\t0\t1\t2\r\nsubst:misja\tadj:kotlarski\tAgrSubstAdjH1P0\t1\t0\t0\t0\t1;2016;lexicalConceptualResource;http://hdl.handle.net/11321/321;polski;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Technology;http://clarin-pl.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f69ddf9e-dc65-58db-90e4-087930b53238",
+    "notes": [
+        "S\u0142ownik nieuzgodnionych kolokacji rzeczownikowo-przymiotnikowych z korpusu S\u0142owosieci. W nag\u0142\u00f3wku mamy\r\n\r\nbase 0\tbase 1\trelacja\tczesto\u015b\u0107\tAgrAdjSubstP0\tAgrAdjSubstH1P0\tAgrSubstAdjP0\tAgrSubstAdjH1P0\r\n\r\ngdzie base 0 - to lemat pierwszego wyrazu, base 1 - lemat drugiego wyrazu, relacja - rodzaj operatora, kt\u00f3ry wykry\u0142 po\u0142\u0105czenie, cz\u0119sto\u015b\u0107 - frekwencja po\u0142\u0105czenia w korpusie, AgrAdjSubstP0 - szyk AN (przymiotnik - rzeczownik) bez uzgodnienia, nieprzedzielony przez 3 wyraz, AgrAdjSubstH1P0 - szyk A_N (z przerw\u0105 na 1 separuj\u0105cy po\u0142\u0105czenie wyraz), AgrSubstAdjP0 - szyk NA bez uzgodnienia, bez separuj\u0105cego wyrazu, \tAgrSubstAdjH1P0 - szyk NA z przerw\u0105 na 1 separuj\u0105cy wyraz, bez uzgodnienia.\r\n\r\nPrzyk\u0142ad:\r\nbase 0\tbase 1\trelacja\tczesto\u015b\u0107\tAgrAdjSubstP0\tAgrAdjSubstH1P0\tAgrSubstAdjP0\tAgrSubstAdjH1P0\r\nger:uzyska\u0107\tadj:bezc\u0142owy\tAgrSubstAdjH1P0\t3\t0\t0\t1\t2\r\nsubst:misja\tadj:kotlarski\tAgrSubstAdjH1P0\t1\t0\t0\t0\t1"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/321"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "kolokacje"
+        },
+        {
+            "name": "korpus"
+        },
+        {
+            "name": "uzgodnienie"
+        }
+    ],
+    "title": [
+        "S\u0142ownik kolokacji rzeczownikowo-przymiotnikowych bez uzgodnienia"
+    ],
+    "url": ""
+}

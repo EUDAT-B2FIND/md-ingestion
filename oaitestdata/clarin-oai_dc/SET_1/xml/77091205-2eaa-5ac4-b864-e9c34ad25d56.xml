@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemmatool</identifier>
+    <datestamp>2019-02-22T17:38:52Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PolDiLemma-Tool</dc:title>
+      <dc:creator>Humboldt-Universit&#228;t zu Berlin; Institut f&#252;r Slawistik; Prof. Dr. Roland Meyer, Paul Burzlaff</dc:creator>
+      <dc:subject xml:lang="eng">corpus linguistics</dc:subject>
+      <dc:subject xml:lang="eng">historical linguistics</dc:subject>
+      <dc:subject xml:lang="eng">middle Polish</dc:subject>
+      <dc:subject xml:lang="eng">finite state automata</dc:subject>
+      <dc:subject xml:lang="eng">XFST</dc:subject>
+      <dc:subject xml:lang="eng">stemmer</dc:subject>
+      <dc:subject xml:lang="eng">morphology</dc:subject>
+      <dc:description xml:lang="eng">Historical word forms may differ in orthography and/or grammatical categories. It is a linguistic challenge to make these old forms accessible. 
+The PolDiLemma-Tool is a Python tool for generating possible middle Polish inflected word forms including the part of speech tags from a given (new) Polish word. It contains a middle Polish morphology in XFST-format (compiled and plain text) and a stemmer (Morfologik: full form lexicon and finite state based stemmer).
+
+Should run on Linux and Windows machines (tested on Ubuntu 12.04, Ubuntu 14.04, and Win 8).
+
+Note: The XFST-Tool needs to be downloaded separately from: www.fsmbook.com
+Morfologik requires JAVA.</dc:description>
+      <dc:publisher>Humboldt-Universit&#228;t zu Berlin; Institut f&#252;r Slawistik; Prof. Dr. Roland Meyer, Paul Burzlaff</dc:publisher>
+      <dc:contributor>Prof. Dr. Roland Meyer</dc:contributor>
+      <dc:contributor>Paul Burzlaff</dc:contributor>
+      <dc:contributor>Simon Ederer</dc:contributor>
+      <dc:date>2013-2014</dc:date>
+      <dc:type>Software</dc:type>
+      <dc:identifier>clarind-uds:poldilemmatool</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CD2-B</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:relation>www.fsmbook.com</dc:relation>
+      <dc:relation>http://morfologik.blogspot.de/</dc:relation>
+      <dc:relation>Python</dc:relation>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights xml:lang="eng">CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

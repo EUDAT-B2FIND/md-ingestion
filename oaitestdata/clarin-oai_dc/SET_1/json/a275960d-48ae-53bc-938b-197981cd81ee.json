@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Universit\u00e4t Wien",
+        "Universit\u00e4t Salzburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1152",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1152"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1152",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Universit\u00e4t Wien",
+        "Universit\u00e4t Salzburg"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Austria"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1152;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Mittelhochdeutsche Begriffsdatenbank;Germanistik;M\u00f6glichkeit der Suche nach W\u00f6rtern, Zeichenketten und Begriffen in verschiedenen mittelhochdeutschen Quellen;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1152;deu;downloadable_files_count: 0;Austria;Universit\u00e4t Salzburg;Universit\u00e4t Wien;http://mhdbdb.sbg.ac.at",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a275960d-48ae-53bc-938b-197981cd81ee",
+    "notes": [
+        "M\u00f6glichkeit der Suche nach W\u00f6rtern, Zeichenketten und Begriffen in verschiedenen mittelhochdeutschen Quellen"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1152"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Mittelhochdeutsche Begriffsdatenbank"
+    ],
+    "url": ""
+}

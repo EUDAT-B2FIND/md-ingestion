@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Max Planck Institute for Evolutionary Anthropology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-694",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-694"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-694",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Max Planck Institute for Evolutionary Anthropology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Code of conduct"
+    ],
+    "SpatialCoverage": [
+        "Mongolia||Russia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-694;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Tofa corpus;Documentation of the Tofa project (DoBeS project);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-694;Code of conduct;downloadable_files_count: 0;Mongolia||Russia;Max Planck Institute for Evolutionary Anthropology;http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI81772%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "78cf2c05-21d8-5491-9289-888dc64f9d68",
+    "notes": [
+        "Documentation of the Tofa project (DoBeS project)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-694"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Tofa corpus"
+    ],
+    "url": ""
+}

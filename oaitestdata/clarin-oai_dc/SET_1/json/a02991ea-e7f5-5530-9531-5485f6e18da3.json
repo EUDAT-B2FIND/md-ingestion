@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Wroclaw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish",
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/25",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/25"
+    ],
+    "PID": "http://hdl.handle.net/11321/25",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Wroclaw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Radziszewski, Adam"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/25;2014-09-26T13:20:24Z;hdl_11321_3;hdl_11321_4;WCRFT - Wroc\u0142aw CRF Tagger;Radziszewski, Adam;WCRFT is a morphosyntactic tagger for Polish. The tagger brings together Conditional Random Fields (CRF) and tiered tagging. The code is written in C++ and uses following components: CRF++ classifier, WCCL: formalism for morphosyntactic feature generation (and its implementation), corpus2: a library for rapid NLP application development, supporting positional tagsets.;2011;toolService;http://hdl.handle.net/11321/25;pol;pol;application/octet-stream;downloadable_files_count: 0;Wroclaw University of Technology;http://w01.clarin-pl.eu:8080/weblichtWCRFT-1.0/annotate/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a02991ea-e7f5-5530-9531-5485f6e18da3",
+    "notes": [
+        "WCRFT is a morphosyntactic tagger for Polish. The tagger brings together Conditional Random Fields (CRF) and tiered tagging. The code is written in C++ and uses following components: CRF++ classifier, WCCL: formalism for morphosyntactic feature generation (and its implementation), corpus2: a library for rapid NLP application development, supporting positional tagsets."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/25"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "WCRFT - Wroc\u0142aw CRF Tagger"
+    ],
+    "url": ""
+}

@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-299</identifier>
+    <datestamp>2016-04-06T16:39:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SemTi-Kamols morphological analyser</dc:title>
+      <dc:contributor>Paikens, P&#275;teris</dc:contributor>
+      <dc:contributor>B&#257;rzdi&#326;&#353;, Guntis</dc:contributor>
+      <dc:subject>morphological analyzer</dc:subject>
+      <dc:description>A Java library for morphological analysis of Latvian. The lexicon covers ~50 000 lemmas. A set of robust derivation rules is also used.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-299</dc:identifier>
+      <dc:language>lav</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Latvia</dc:coverage>
+      <dc:source>http://www.semti-kamols.lv/doc_upl/morphology-r742.zip</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

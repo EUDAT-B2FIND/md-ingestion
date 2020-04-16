@@ -1,0 +1,64 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Chinese",
+        "Czech",
+        "English",
+        "French",
+        "German",
+        "Latin",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1072",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1072"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1072",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United States"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1072;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Botanicus Digital Library;Germanistik;Digital copies of historical botanic papers from the Missouri Botanical Garden Library; Bilddigitalisate von historischen botanischen Schriften; deutschsprachige Texte stellen nur einen Teilbereich dar;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1072;zho;ces;eng;fra;deu;lat;spa;downloadable_files_count: 0;United States;http://www.botanicus.org/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "43de06ce-e5c7-5262-83ad-b238562d99b6",
+    "notes": [
+        "Digital copies of historical botanic papers from the Missouri Botanical Garden Library; Bilddigitalisate von historischen botanischen Schriften; deutschsprachige Texte stellen nur einen Teilbereich dar"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1072"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Botanicus Digital Library"
+    ],
+    "url": ""
+}

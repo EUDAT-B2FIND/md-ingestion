@@ -1,0 +1,42 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/254</identifier>
+    <datestamp>2016-05-05T12:20:51Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>POLFIE-OT: an LFG grammar of Polish with OT marks</dc:title>
+      <dc:creator>Patejuk, Agnieszka</dc:creator>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>LFG</dc:subject>
+      <dc:subject>Polish</dc:subject>
+      <dc:subject>grammar</dc:subject>
+      <dc:description>POLFIE-OT is a version of POLFIE, an LFG grammar of Polish implemented in the XLE system (Xerox Linguistic Environment), enriched with OT (Optimality Theory) constraints for the purpose of automatic disambiguation of resulting parses &#8211; according to defined criteria, certain parses are considered optimal, while the remaining ones are considered unoptimal (it is possible, however, to view the unoptimal parses).&#13;
+&#13;
+POLFIE has been developed at the Institute of Computer Science, Polish Academy of Sciences (IPI PAN) within two projects: NEKST and CLARIN-PL. It provides a two-layer representation: constituent structure (c-structure, tree representation) and functional structure (f-structure, AVM representation). It is based on two previous implemented grammars of Polish: its c-structure is based on GFJP2, a DCG grammar used by the parser &#346;wigra, while its f-structure is inspired by FOJP, an HPSG grammar of Polish. Lexical entries used by the grammar are created with the help of two state-of-the-art resources for Polish: Morfeusz2, a morphological analyser, and Walenty, a valence dictionary.&#13;
+&#13;
+POLFIE-OT is available via XLE-Web (a part of INESS; it does not require a local installation of XLE):&#13;
+&#8226; go to http://iness.mozart.ipipan.waw.pl/iness/xle-web or http://clarino.uib.no/iness/xle-web&#13;
+&#8226; choose "POLFIE-OT" grammar from the "Grammar" menu&#13;
+&#8226; write a sentence in the relevant field&#13;
+&#8226; click the "Parse sentence" button &#8211; only optimal solutions will be presented&#13;
+&#8226; however, if you want to see unoptimal solutions, check the "Show unoptimal" checkbox and click "Parse sentence" button</dc:description>
+      <dc:date>2016-04-30</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/254</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU GPL3</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/gpl-3.0.en.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+      <dc:source>http://zil.ipipan.waw.pl/LFG</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

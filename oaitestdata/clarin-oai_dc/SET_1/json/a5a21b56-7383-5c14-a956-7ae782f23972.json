@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/zip",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/297",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/297"
+    ],
+    "PID": "http://hdl.handle.net/11321/297",
+    "PublicationTimestamp": "2016-05-12T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "BSD 2 Clause",
+        "https://opensource.org/licenses/BSD-2-Clause",
+        "PUB"
+    ],
+    "author": [
+        "Marasek, Krzysztof",
+        "Sob\u00f3tka, Pawe\u0142",
+        "Walczak, Jerzy Piotr"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/297;2016-06-06T13:43:41Z;hdl_11321_3;hdl_11321_4;Long term archive operating system source code;Walczak, Jerzy Piotr;Sob\u00f3tka, Pawe\u0142;Marasek, Krzysztof;long-term archive;This submission contains the operating system of the long-term archive, built in the Polish-Japanese Academy of Information Technology for the Clarin-PL project. Basic elements of the archive are data nodes, equipped with mass memories. The nodes are controlled by embedded low-power computers which are independently powered up only when their storage is about to be accessed. This allows not only for limiting the overall energy consumption but also lowers environmental demands (no air-condition needed). The nodes are grouped in trays. Basic and recommended configuration allows for 30 nodes in trays, but it is possible to extend this limit up to 253. Each tray contains several networks designed for data transport, devices\u2019 state control and power supply. Communication with clients is conducted through buffers that are the only parts visible from externally connected networks. Therefore, stored files are completely isolated and cannot be directly accessed. Multiple trays located at single physical site create a complete archive. It is possible to split storage space into virtual archives that are separated on logical level. The operating system of the data network allows to store from 3 to 7 copies of single digital file in different nodes. Moreover, additional copies of the resource may be stored automatically in remotely located archives. The trays are treated as local parts of wider dispersed data network structure. Software of the archive enables not only secure read and write operations data but it also automatically takes care of the stored data. It periodically regenerates physical state of saved files. In case of device failure clients are transparently redirected to local or remote redundant copies. The mechanism of \"software bots\" was implemented. Archive can be supplied with external programs for processing files stored inside the data network. This allows for data analyzes, indexation, post-data creation, statistical computations or finding associations in unstructured data sets of Big Data type. Only the output of software bot can be externally accessed what makes such operations very secure. Client programs communicate with the archive using set of simple protocols based on key-value pair strings, making it convenient to build web interfaces for archive access and administration. By automating the supervision of the resources, reduction of requirements for storage, precise energy consumption control and proposed solution significantly lowers the cost of long-term data storage.;2016-05-12;toolService;http://hdl.handle.net/11321/297;N/A;BSD 2 Clause;https://opensource.org/licenses/BSD-2-Clause;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/zip;downloadable_files_count: 1;Polish-Japanese Academy of Information Technology;http://www.clarin-pl.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a5a21b56-7383-5c14-a956-7ae782f23972",
+    "notes": [
+        "This submission contains the operating system of the long-term archive, built in the Polish-Japanese Academy of Information Technology for the Clarin-PL project. Basic elements of the archive are data nodes, equipped with mass memories. The nodes are controlled by embedded low-power computers which are independently powered up only when their storage is about to be accessed. This allows not only for limiting the overall energy consumption but also lowers environmental demands (no air-condition needed). The nodes are grouped in trays. Basic and recommended configuration allows for 30 nodes in trays, but it is possible to extend this limit up to 253. Each tray contains several networks designed for data transport, devices\u2019 state control and power supply. Communication with clients is conducted through buffers that are the only parts visible from externally connected networks. Therefore, stored files are completely isolated and cannot be directly accessed. Multiple trays located at single physical site create a complete archive. It is possible to split storage space into virtual archives that are separated on logical level. The operating system of the data network allows to store from 3 to 7 copies of single digital file in different nodes. Moreover, additional copies of the resource may be stored automatically in remotely located archives. The trays are treated as local parts of wider dispersed data network structure. Software of the archive enables not only secure read and write operations data but it also automatically takes care of the stored data. It periodically regenerates physical state of saved files. In case of device failure clients are transparently redirected to local or remote redundant copies. The mechanism of \"software bots\" was implemented. Archive can be supplied with external programs for processing files stored inside the data network. This allows for data analyzes, indexation, post-data creation, statistical computations or finding associations in unstructured data sets of Big Data type. Only the output of software bot can be externally accessed what makes such operations very secure. Client programs communicate with the archive using set of simple protocols based on key-value pair strings, making it convenient to build web interfaces for archive access and administration. By automating the supervision of the resources, reduction of requirements for storage, precise energy consumption control and proposed solution significantly lowers the cost of long-term data storage."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/297"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "long-term archive"
+        }
+    ],
+    "title": [
+        "Long term archive operating system source code"
+    ],
+    "url": ""
+}

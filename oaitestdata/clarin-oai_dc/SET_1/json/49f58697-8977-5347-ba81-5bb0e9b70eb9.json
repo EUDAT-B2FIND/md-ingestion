@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/pdf"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/284",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/284"
+    ],
+    "PID": "http://hdl.handle.net/11321/284",
+    "PublicationTimestamp": "2016-04-25T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Oleksy, Marcin",
+        "Marci\u0144czuk, Micha\u0142",
+        "Koco\u0144, Jan",
+        "Berna\u015b, Tomasz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/284;2016-06-03T13:22:09Z;hdl_11321_3;hdl_11321_4;KPWr annotation guidelines - temporal expressions;Marci\u0144czuk, Micha\u0142;Oleksy, Marcin;Koco\u0144, Jan;Berna\u015b, Tomasz;temporal expressions;annotation guidelines;corpora annotation;Temporal expressions annotation guidelines describing the process of manual annotation of documents in Polish Corpus of Wroc\u0142aw University of Technology (KPWr);2016-04-25;languageDescription;http://hdl.handle.net/11321/284;pol;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/pdf;downloadable_files_count: 1;Wroc\u0142aw University of Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "49f58697-8977-5347-ba81-5bb0e9b70eb9",
+    "notes": [
+        "Temporal expressions annotation guidelines describing the process of manual annotation of documents in Polish Corpus of Wroc\u0142aw University of Technology (KPWr)"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/284"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "temporal expressions"
+        },
+        {
+            "name": "annotation guidelines"
+        },
+        {
+            "name": "corpora annotation"
+        }
+    ],
+    "title": [
+        "KPWr annotation guidelines - temporal expressions"
+    ],
+    "url": ""
+}

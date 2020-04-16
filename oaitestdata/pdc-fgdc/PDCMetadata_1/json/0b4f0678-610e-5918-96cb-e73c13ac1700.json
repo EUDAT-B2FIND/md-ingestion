@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "josee.lefebvre@ec.gc.ca"
+    ],
+    "Contributor": [
+        "Service canadien de la faune"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Monitoring the occurence of all tundra species encountered daily"
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=1734_fgdc",
+    "PublicationTimestamp": "2015-07-24T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(80N-80N,86W-83W)",
+    "TempCoverageBegin": 63317933999,
+    "TempCoverageEnd": 63385153199,
+    "TemporalCoverage": " period : ( 2007-06-20T11:59:59Z - 2009-08-06T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2007-06-20T11:59:59Z",
+    "TemporalCoverage:EndDate": "2009-08-06T11:59:59Z",
+    "author": [
+        "Jos\u00e9e Lefebvre, Canadian Wildlife Service, Quebec Region"
+    ],
+    "fulltext": "1734_fgdc;2017-04-09T22:02:12Z;PDCMetadata;Jos\u00e9e Lefebvre, Canadian Wildlife Service, Quebec Region;Jos\u00e9e Lefebvre, Canadian Wildlife Service, Quebec Region;Jos\u00e9e Lefebvre, Canadian Wildlife Service, Quebec Region;20150724;Monitoring the relative abundance of bird and mammal species at Fosheim Peninsula,  Ellesmere Island;Computer file;unknown;J. Lefebvre, unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1734;The relative abundance of species is recorded as the number of individuals seen per hour spent in the field per observer. Each observer record daily the animal species encountered in the field and the number of individuals observed. To correct for any potential biases the activities and mode of transportation of observers is also taken into account.&#x0d;\n&#x0d;\nWe also monitor the nests of bird species that are not part of our long-term monitoring and are found opportunistically, such as King Eider, Long-tailed Duck and Red-throated Loon.;Monitoring the occurence of all tundra species encountered daily;Summary: Not Applicable Research Program(s): IPY. For further information: josee.lefebvre@ec.gc.ca;20070620;20090806;NULL;Complete;Annually;-86.5;-82.6;80.3;79.9;NULL;Abundance;Birds;Ellesmere Island;Eureka;Fosheim Peninsula;Mammals;Tundra;Fosheim Peninsula, Ellesmere Island, Nunavut;NULL;Public;NULL;Service canadien de la faune;Jos\u00e9e Lefebvre;NULL;mailing;1141, route de l'\u00c9glise;Sainte-Foy;Qc;G1V4H5;Canada;418-648-3915;418-648-5511;josee.lefebvre@ec.gc.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;1734;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20150724;20150724;Jos\u00e9e Lefebvre;Service canadien de la faune;mailing;1141, route de l'\u00c9glise;Sainte-Foy;Qc;G1V4H5;Canada;418-648-3915;418-648-5511;josee.lefebvre@ec.gc.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0b4f0678-610e-5918-96cb-e73c13ac1700",
+    "notes": [
+        "The relative abundance of species is recorded as the number of individuals seen per hour spent in the field per observer. Each observer record daily the animal species encountered in the field and the number of individuals observed. To correct for any potential biases the activities and mode of transportation of observers is also taken into account.&#x0d;\n&#x0d;\nWe also monitor the nests of bird species that are not part of our long-term monitoring and are found opportunistically, such as King Eider, Long-tailed Duck and Red-throated Loon."
+    ],
+    "oai_identifier": [
+        "1734_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-86.5,79.9],[-86.5,80.3],[-82.6,80.3],[-82.6,79.9],[-86.5,79.9]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Abundance"
+        },
+        {
+            "name": "Birds"
+        },
+        {
+            "name": "Ellesmere Island"
+        },
+        {
+            "name": "Eureka"
+        },
+        {
+            "name": "Fosheim Peninsula"
+        },
+        {
+            "name": "Mammals"
+        },
+        {
+            "name": "Tundra"
+        }
+    ],
+    "title": [
+        "Monitoring the relative abundance of bird and mammal species at Fosheim Peninsula,  Ellesmere Island"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1734"
+}

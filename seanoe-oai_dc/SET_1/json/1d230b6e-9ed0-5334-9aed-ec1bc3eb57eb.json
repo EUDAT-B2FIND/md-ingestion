@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/39746",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=1d230b6e-9ed0-5334-9aed-ec1bc3eb57eb",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-NC-SA"
+    ],
+    "SpatialCoverage": [
+        "47.485362 -8.648903 47.485365 -8.648895",
+        "46.293976 -5.077749 46.293977 -5.077748",
+        "46.191084 -4.413131 46.191262 -4.412852"
+    ],
+    "TemporalCoverage": [
+        "North 47.485365, South 47.485362, East -8.648895, West -8.648903",
+        "North 46.293977, South 46.293976, East -5.077748, West -5.077749",
+        "North 46.191262, South 46.191084, East -4.412852, West -4.413131"
+    ],
+    "author": [
+        "Trenkel, Verena",
+        "Rochet, Marie-joelle",
+        "Berthele, Olivier",
+        "Le Piver, David",
+        "Lorance, Pascal",
+        "Ferrant, Anthony"
+    ],
+    "fulltext": "oai:seanoe.org:39746;2016-10-04;Observations for Synaphobranchus kaupii from bait experiments carried out in the Bay of Biscay in 2002 using ROV Victor 6000;Trenkel, Verena;Lorance, Pascal;Berthele, Olivier;Ferrant, Anthony;Le Piver, David;Rochet, Marie-joelle;The data come from bait experiments that were carried out at three study sites (Meriadzek Terrace, terrace located between the canyon of Belle \u00cele and the canyon of St Nazaire referred to as St Nazaire Terrace, and Belle \u00cele Canyon) on the continental slope of the Bay of Biscay during the VITAL cruise in late August and early September 2002 using the ROV Victor 6000. A full description of the experiments and results can be found in Trenkel and Lorance (2011). The depth range 1100 \u2013 1500 m was investigated in all sites by perpendicular strip transects starting from the deepest point and moving up slope (see full description in Trenkel et al 2004). Bait experiments were carried out at all three sites at regular intervals (every 12 hours) along the transects. Two types of bait were used, a standardised aquaculture paste and cod fillets (only on St Nazaire Terrace). The paste was made of fish farming food pellets mixed with sea water (480 g per liter). Sardine oil was added (3 cm3 per liter) to increase the smell of the bait. The bait was filled into identical bottles (~4 cm diameter opening, 15.5 cm high). At the beginning of the experiment the ROV opened the bottle, put it onto the ground and retreated a few meters perpendicular to the current to observe fish arrival. After it was judged that no more individuals were going to arrive, the ROV shook the bottle to create a new plume and continued observations. In one experiment the bottle was shaken a second time. Video tapes were analysed in the laboratory after the cruise for Kaup's arrowtooth eel (Synaphobranchus kaupii). For each individual arriving, the time and direction of arrival, the initial behaviour and the reaction to the bait were noted. Initial behaviour was categorised by the position in the water column: near the bottom (<1 body length) or higher up in the water column (>1 body length) and the locomotion type: drifting or moving with current (\u201cwith current\u201d), swimming against current or swimming perpendicular to the current. Reaction to the bait was categorised as not interested, attracted, touching bait bottle or eating bait. When possible the speed of the first individual arriving swimming against the current was estimated. Using the size of the bait bottle as a yard stick the time taken for swimming a certain distance (1 cm on the video screen) was recorded on two occasions and used to calculate the average arrival speed. At the deepest point sampled at each site (1460-1550m), an autonomous lander equipped with a current meter was deployed for three days. Data from these sensors were recorded every minute to every two minutes. A temperature probe was carried by the ROV.\n;SEANOE;2015-11;dataset;DOI:10.17882/39746;http://dx.doi.org/10.17882/39746;North 47.485365, South 47.485362, East -8.648895, West -8.648903;North 46.293977, South 46.293976, East -5.077748, West -5.077749;North 46.191262, South 46.191084, East -4.412852, West -4.413131;https://www.seanoe.org/data/00286/39746/illustration.gif;47.485362 -8.648903 47.485365 -8.648895;46.293976 -5.077749 46.293977 -5.077748;46.191084 -4.413131 46.191262 -4.412852;CC-BY-NC-SA",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "1d230b6e-9ed0-5334-9aed-ec1bc3eb57eb",
+    "notes": [
+        "The data come from bait experiments that were carried out at three study sites (Meriadzek Terrace, terrace located between the canyon of Belle \u00cele and the canyon of St Nazaire referred to as St Nazaire Terrace, and Belle \u00cele Canyon) on the continental slope of the Bay of Biscay during the VITAL cruise in late August and early September 2002 using the ROV Victor 6000. A full description of the experiments and results can be found in Trenkel and Lorance (2011). The depth range 1100 \u2013 1500 m was investigated in all sites by perpendicular strip transects starting from the deepest point and moving up slope (see full description in Trenkel et al 2004). Bait experiments were carried out at all three sites at regular intervals (every 12 hours) along the transects. Two types of bait were used, a standardised aquaculture paste and cod fillets (only on St Nazaire Terrace). The paste was made of fish farming food pellets mixed with sea water (480 g per liter). Sardine oil was added (3 cm3 per liter) to increase the smell of the bait. The bait was filled into identical bottles (~4 cm diameter opening, 15.5 cm high). At the beginning of the experiment the ROV opened the bottle, put it onto the ground and retreated a few meters perpendicular to the current to observe fish arrival. After it was judged that no more individuals were going to arrive, the ROV shook the bottle to create a new plume and continued observations. In one experiment the bottle was shaken a second time. Video tapes were analysed in the laboratory after the cruise for Kaup's arrowtooth eel (Synaphobranchus kaupii). For each individual arriving, the time and direction of arrival, the initial behaviour and the reaction to the bait were noted. Initial behaviour was categorised by the position in the water column: near the bottom (<1 body length) or higher up in the water column (>1 body length) and the locomotion type: drifting or moving with current (\u201cwith current\u201d), swimming against current or swimming perpendicular to the current. Reaction to the bait was categorised as not interested, attracted, touching bait bottle or eating bait. When possible the speed of the first individual arriving swimming against the current was estimated. Using the size of the bait bottle as a yard stick the time taken for swimming a certain distance (1 cm on the video screen) was recorded on two occasions and used to calculate the average arrival speed. At the deepest point sampled at each site (1460-1550m), an autonomous lander equipped with a current meter was deployed for three days. Data from these sensors were recorded every minute to every two minutes. A temperature probe was carried by the ROV.\n"
+    ],
+    "oai_identifier": [
+        "1d230b6e-9ed0-5334-9aed-ec1bc3eb57eb"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        "Observations for Synaphobranchus kaupii from bait experiments carried out in the Bay of Biscay in 2002 using ROV Victor 6000"
+    ],
+    "url": ""
+}

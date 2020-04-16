@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "University of Zagreb, Faculty of Humanities and Social Sciences"
+    ],
+    "Contributor": [
+        "Tadi\u0107, Marko"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1182",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1182"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1182",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Zagreb, Faculty of Humanities and Social Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Croatia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1182;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Croatian Lemmatization Server;Tadi\u0107, Marko;On line service for lemmatization, full POS or MSD tagging of Croatian texts.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1182;hrv;downloadable_files_count: 0;Croatia;University of Zagreb, Faculty of Humanities and Social Sciences;http://hml.ffzg.hr/hml/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "986cf3d1-7b76-5fd6-9a6b-59030e0f8b7b",
+    "notes": [
+        "On line service for lemmatization, full POS or MSD tagging of Croatian texts."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1182"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Croatian Lemmatization Server"
+    ],
+    "url": ""
+}

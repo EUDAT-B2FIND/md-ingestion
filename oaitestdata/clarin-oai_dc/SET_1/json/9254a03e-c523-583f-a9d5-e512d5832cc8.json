@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "[S. n.]"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-592",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-592"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D29-1",
+    "PublicationTimestamp": "1661-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1661"
+    ],
+    "Publisher": [
+        "[S. n.]"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/592"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-592;2019-03-01T15:51:59Z;Chleb niezdrowy: Stacye Zo\u0142nierskie z Dobr Koscielnych, to jest Dyskurs, kt\u00f3rym si\u0119 pokazuje, \u017ce Stacyi, abo chleba zo\u0142nierz wyci\u0105ga\u0107 z Dobr Ko\u015bcielnych nie ma, y nie mo\u017ce.;Ko\u015bci\u00f3\u0142 katolicki - Polska -17 w.;Maj\u0105tek ko\u015bcielny;Prawo kanoniczne;ilo\u015b\u0107 skan\u00f3w: 65 ; sygn. St-341;[S. n.];1661;starodruk;application/xml;clarind-uds:poldilemma-592;hdl:11858/00-246C-0000-0023-8D29-1;pol;lat;http://pbc.biaman.pl/Content/592;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9254a03e-c523-583f-a9d5-e512d5832cc8",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 65 ; sygn. St-341"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-592"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Prawo kanoniczne"
+        }
+    ],
+    "title": [
+        "Chleb niezdrowy: Stacye Zo\u0142nierskie z Dobr Koscielnych, to jest Dyskurs, kt\u00f3rym si\u0119 pokazuje, \u017ce Stacyi, abo chleba zo\u0142nierz wyci\u0105ga\u0107 z Dobr Ko\u015bcielnych nie ma, y nie mo\u017ce."
+    ],
+    "url": ""
+}

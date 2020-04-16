@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9310577</identifier>
+    <datestamp>2019-05-16T20:00:42Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">V&#245;&#245;rs&#245;nade leksikon</dc:title>
+      <dc:creator>Paet, Tiina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-10-19</dc:date>
+      <dc:date>Updated: 2016-10-19</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05AF6L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">2012. aastal raamatuna ilmunud &#8222;V&#245;&#245;rs&#245;nade leksikoni&#8220; veebiversioon. Sisaldab 33 000 levinumat v&#245;&#245;rs&#245;na, tsitaats&#245;na, laens&#245;na, l&#252;hendit, sententsi ja v&#228;ljendit. See on ka esimene eestikeelne v&#245;&#245;rs&#245;nakogu, mis esitab morfoloogilise info: k&#228;&#228;namise ja p&#246;&#246;ramise ning muutt&#252;&#252;bid. V&#245;rreldes varasemate v&#228;ljaannetega on lisatud on uusi s&#245;nu, uuendatud seletusi ning t&#228;psustatud s&#245;nade et&#252;moloogiat.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

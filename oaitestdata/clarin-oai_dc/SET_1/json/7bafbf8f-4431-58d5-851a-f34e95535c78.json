@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3731",
+    "MetadataAccess": [
+        "oai:ota:oucs:3731"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Blair, Hugh, 1718-1800."
+    ],
+    "fulltext": "oai:ota:oucs:3731;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3731.xml;The importance of religious knowledge to the happiness of mankind. A sermon preached before the Society for propagating Christian Knowledge: at their anniversary meeting in the High Church of Edinburgh, on Monday, January 1. 1750. ... By Hugh Blair ... To which is subjoin'd a short account of the present state of the society;Blair, Hugh, 1718-1800.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7bafbf8f-4431-58d5-851a-f34e95535c78",
+    "oai_identifier": [
+        "oai:ota:oucs:3731"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The importance of religious knowledge to the happiness of mankind. A sermon preached before the Society for propagating Christian Knowledge: at their anniversary meeting in the High Church of Edinburgh, on Monday, January 1. 1750. ... By Hugh Blair ... To which is subjoin'd a short account of the present state of the society"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3731.xml"
+}

@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Croatian",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1058",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1058"
+    ],
+    "PID": "http://hdl.handle.net/11356/1058",
+    "PublicationTimestamp": "2016-03-09T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/324414"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN.SI User Licence for Internet Corpora",
+        "http://www.clarin.si/info/wp-content/uploads/2016/01/CLARIN.SI-WAC-2016-01.pdf",
+        "ACA"
+    ],
+    "author": [
+        "Espl\u00e0-Gomis, Miquel",
+        "Klubi\u010dka, Filip",
+        "Ortiz Rojas, Sergio",
+        "Ljube\u0161i\u0107, Nikola",
+        "Toral, Antonio"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1058;2017-06-27T18:08:06Z;hdl_11356_1023;hdl_11356_1024;Croatian-English parallel corpus hrenWaC 2.0;Ljube\u0161i\u0107, Nikola;Espl\u00e0-Gomis, Miquel;Ortiz Rojas, Sergio;Klubi\u010dka, Filip;Toral, Antonio;parallel corpus;web corpus;multilingual;The hrenWaC corpus version 2.0 consists of parallel Croatian-English texts crawled from the .hr top-level domain for Croatia. The corpus was built with Spidextor (https://github.com/abumatran/spidextor), a tool that glues together the output of SpiderLing used for crawling and Bitextor used for bitext extraction. The accuracy of the extracted bitext on the segment level is around 80% and on the word level around 84%.;2016-03-09;corpus;http://hdl.handle.net/11356/1058;hrv;eng;info:eu-repo/grantAgreement/EC/FP7/324414;CLARIN.SI User Licence for Internet Corpora;http://www.clarin.si/info/wp-content/uploads/2016/01/CLARIN.SI-WAC-2016-01.pdf;ACA;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 1;Jo\u017eef Stefan Institute;http://nlp.ffzg.hr/resources/corpora/hrenwac/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f8ebd7d1-ec94-5356-bfdf-9f6760181bd0",
+    "notes": [
+        "The hrenWaC corpus version 2.0 consists of parallel Croatian-English texts crawled from the .hr top-level domain for Croatia. The corpus was built with Spidextor (https://github.com/abumatran/spidextor), a tool that glues together the output of SpiderLing used for crawling and Bitextor used for bitext extraction. The accuracy of the extracted bitext on the segment level is around 80% and on the word level around 84%."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1058"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "web corpus"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Croatian-English parallel corpus hrenWaC 2.0"
+    ],
+    "url": ""
+}

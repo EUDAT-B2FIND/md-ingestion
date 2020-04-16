@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/58406",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=00fb0b1a-3860-5818-885b-be2758793c30",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY"
+    ],
+    "SpatialCoverage": "(25S-54N,62W-13W)",
+    "TempCoverageBegin": 28669377599,
+    "TempCoverageEnd": 28669377599,
+    "TemporalCoverage": " point in time : 0909-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "0909-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "0909-07-01T11:59:59Z",
+    "author": [
+        "Lef\u00e8vre, Nathalie"
+    ],
+    "fulltext": "oai:seanoe.org:58406;2019-01-22;Carbon parameters in the Western tropical Atlantic;Lef\u00e8vre, Nathalie;Carbon parameters;Atlantic ocean;Surface alkalinity and total inorganic carbon (in \u00b5mol/kg) were measured by closed-cell potentiometric titration during PIRATA Brazilian cruises.\n;SEANOE;2018;dataset;DOI:10.17882/58406;http://dx.doi.org/10.17882/58406;North 54.090918, South -24.957261, East -13.183594, West -61.699219;http://www.seanoe.org/data/00472/58406/illustration.gif;-24.957261 -61.699219 54.090918 -13.183594;CC-BY",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "00fb0b1a-3860-5818-885b-be2758793c30",
+    "notes": [
+        "Surface alkalinity and total inorganic carbon (in \u00b5mol/kg) were measured by closed-cell potentiometric titration during PIRATA Brazilian cruises.\n"
+    ],
+    "oai_identifier": [
+        "00fb0b1a-3860-5818-885b-be2758793c30"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-61.699219,-24.957261],[-61.699219,54.090918],[-13.183594,54.090918],[-13.183594,-24.957261],[-61.699219,-24.957261]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Carbon parameters"
+        },
+        {
+            "name": "Atlantic ocean"
+        }
+    ],
+    "title": [
+        "Carbon parameters in the Western tropical Atlantic"
+    ],
+    "url": ""
+}

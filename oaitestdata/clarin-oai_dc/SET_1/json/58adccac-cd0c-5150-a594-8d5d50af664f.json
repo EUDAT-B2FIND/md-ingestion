@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3553",
+    "MetadataAccess": [
+        "oai:ota:oucs:3553"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hayley, William, 1745-1820."
+    ],
+    "fulltext": "oai:ota:oucs:3553;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3553.xml;Occasional stanzas, written at the request of the Revolution Society: and recited on their anniversary, November 4, 1788. To which is added, Queen Mary to King William, during his campaign in Ireland, 1690; a poetical epistle. By William Hayley, Esq.;Hayley, William, 1745-1820.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "58adccac-cd0c-5150-a594-8d5d50af664f",
+    "oai_identifier": [
+        "oai:ota:oucs:3553"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Occasional stanzas, written at the request of the Revolution Society: and recited on their anniversary, November 4, 1788. To which is added, Queen Mary to King William, during his campaign in Ireland, 1690; a poetical epistle. By William Hayley, Esq."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3553.xml"
+}

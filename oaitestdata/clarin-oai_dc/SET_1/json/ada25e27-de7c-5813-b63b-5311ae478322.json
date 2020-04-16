@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Paddy Bullard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2823",
+    "MetadataAccess": [
+        "oai:ota:oucs:2823"
+    ],
+    "PublicationTimestamp": "1735-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1735"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Jonathan Swift Archive"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Swift, Jonathan, 1667-1745"
+    ],
+    "fulltext": "oai:ota:oucs:2823;2018-08-02T14:11:37Z;http://ota.ox.ac.uk/headers/2823.xml;Drapier's Letters IVc, The presentment of the Grand-Jury;Swift, Jonathan, 1667-1745;1735;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Paddy Bullard;Text;Jonathan Swift Archive;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ada25e27-de7c-5813-b63b-5311ae478322",
+    "oai_identifier": [
+        "oai:ota:oucs:2823"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Drapier's Letters IVc, The presentment of the Grand-Jury"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2823.xml"
+}

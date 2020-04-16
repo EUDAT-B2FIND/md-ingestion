@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "http://b2share.eudat.eu"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/52fc8d49a263476fbea88de813fbb2af",
+    "PID": "http://hdl.handle.net/11304/07756b90-7ed6-11e5-9bb4-2b0aad496318",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "http://b2share.eudat.eu"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/07756b90-7ed6-11e5-9bb4-2b0aad496318",
+        "https://b2share.eudat.eu/api/records/52fc8d49a263476fbea88de813fbb2af",
+        "oai:b2share.eudat.eu:b2rec/52fc8d49a263476fbea88de813fbb2af"
+    ],
+    "ResourceType": [
+        "Other"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/closedAccess"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/52fc8d49a263476fbea88de813fbb2af;2018-01-11T13:48:42Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;2016-12-22T10:22:39.022583+00:00;EUDAT Services Presentation;http://hdl.handle.net/11304/07756b90-7ed6-11e5-9bb4-2b0aad496318;https://b2share.eudat.eu/api/records/52fc8d49a263476fbea88de813fbb2af;oai:b2share.eudat.eu:b2rec/52fc8d49a263476fbea88de813fbb2af;en;http://b2share.eudat.eu;info:eu-repo/semantics/closedAccess;EUDAT Services Presentation;Other",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "0d3411db-3eef-5086-828c-a6dd73aa32e0",
+    "notes": [
+        "EUDAT Services Presentation"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/52fc8d49a263476fbea88de813fbb2af"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "title": [
+        "EUDAT Services Presentation"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/52fc8d49a263476fbea88de813fbb2af"
+}

@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-68D9-0",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-68D9-0"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-68D9-0",
+    "PublicationTimestamp": "2014-03-04T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Straka, Milan",
+        "Strakov\u00e1, Jana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-68D9-0;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;English Models (Morphium + WSJ) for MorphoDiTa;Straka, Milan;Strakov\u00e1, Jana;MorphoDiTa;English;morphological analysis;morphological generation;PoS tagging;English models for MorphoDiTa, providing morphological analysis, morphological generation and part-of-speech tagging.\r\n\r\nThe morphological dictionary is created from Morphium and SCOWL (Spell Checker Oriented Word Lists), the PoS tagger is trained on WSJ (Wall Street Journal).;2014-03-04;languageDescription;http://hdl.handle.net/11858/00-097C-0000-0023-68D9-0;eng;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;text/plain; charset=utf-8;application/zip;application/zip;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/morphodita/users-manual#english-morphium-wsj",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ffa41370-e249-5536-9141-bfad9fa68416",
+    "notes": [
+        "English models for MorphoDiTa, providing morphological analysis, morphological generation and part-of-speech tagging.\r\n\r\nThe morphological dictionary is created from Morphium and SCOWL (Spell Checker Oriented Word Lists), the PoS tagger is trained on WSJ (Wall Street Journal)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-68D9-0"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "MorphoDiTa"
+        },
+        {
+            "name": "English"
+        },
+        {
+            "name": "morphological analysis"
+        },
+        {
+            "name": "morphological generation"
+        },
+        {
+            "name": "PoS tagging"
+        }
+    ],
+    "title": [
+        "English Models (Morphium + WSJ) for MorphoDiTa"
+    ],
+    "url": ""
+}

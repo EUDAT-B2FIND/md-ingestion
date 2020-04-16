@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "University of Helsinki"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-753",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-753"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-753",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Helsinki"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Finland"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-753;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Parsed Corpus of Early English Correspondence (PCEEC);Linguistically annotated corpus of English correspondence between the years 1410?-1681, compiled for historical sociolinguistic research.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-753;eng;text/plain;downloadable_files_count: 0;Finland;University of Helsinki;http://ota.ahds.ac.uk/headers/2510.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d455ec1e-50b6-5fa6-9942-3b199824bc06",
+    "notes": [
+        "Linguistically annotated corpus of English correspondence between the years 1410?-1681, compiled for historical sociolinguistic research."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-753"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Parsed Corpus of Early English Correspondence (PCEEC)"
+    ],
+    "url": ""
+}

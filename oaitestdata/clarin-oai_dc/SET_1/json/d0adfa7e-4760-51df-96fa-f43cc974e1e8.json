@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Arts, Institute of the Czech National Corpus"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1848",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1848"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1848",
+    "PublicationTimestamp": "2016-12-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Arts, Institute of the Czech National Corpus"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "License Agreement for Czech National Corpus Data",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc-data",
+        "ACA"
+    ],
+    "author": [
+        "Bene\u0161ov\u00e1, Lucie",
+        "Waclawi\u010dov\u00e1, Martina",
+        "K\u0159en, Michal"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1848;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;ORAL2013: balanced corpus of informal spoken Czech (transcriptions & audio);Bene\u0161ov\u00e1, Lucie;K\u0159en, Michal;Waclawi\u010dov\u00e1, Martina;balanced corpus;spoken language;speech corpus;ORAL2013 is designed as a representation of authentic spoken Czech used in informal situations (private environment, spontaneity, unpreparedness etc.) in the area of the whole Czech Republic. The corpus comprises 835 recordings from 2008\u20132011 that contain 2 785 189 words (i.e. 3 285 508 tokens including punctuation) uttered by 2 544 speakers, out of which 1 297 speakers are unique. ORAL2013 is balanced in the main sociolinguistic categories of the speakers (gender, age group, education, region of childhood residence).\r\n\r\nThe (anonymized) transcriptions are provided in the Transcriber XML format, audio (with corresponding anonymization beeps) is in uncompressed 16-bit PCM WAV, mono, 16 kHz format.\r\n\r\nAnother format option of the transcriptions is also available under less restrictive CC BY-NC-SA license at http://hdl.handle.net/11234/1-1847;2016-12-01;corpus;http://hdl.handle.net/11234/1-1848;ces;License Agreement for Czech National Corpus Data;https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc-data;ACA;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Arts, Institute of the Czech National Corpus;http://wiki.korpus.cz/doku.php/cnk:oral2013",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d0adfa7e-4760-51df-96fa-f43cc974e1e8",
+    "notes": [
+        "ORAL2013 is designed as a representation of authentic spoken Czech used in informal situations (private environment, spontaneity, unpreparedness etc.) in the area of the whole Czech Republic. The corpus comprises 835 recordings from 2008\u20132011 that contain 2 785 189 words (i.e. 3 285 508 tokens including punctuation) uttered by 2 544 speakers, out of which 1 297 speakers are unique. ORAL2013 is balanced in the main sociolinguistic categories of the speakers (gender, age group, education, region of childhood residence).\r\n\r\nThe (anonymized) transcriptions are provided in the Transcriber XML format, audio (with corresponding anonymization beeps) is in uncompressed 16-bit PCM WAV, mono, 16 kHz format.\r\n\r\nAnother format option of the transcriptions is also available under less restrictive CC BY-NC-SA license at http://hdl.handle.net/11234/1-1847"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1848"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "balanced corpus"
+        },
+        {
+            "name": "spoken language"
+        },
+        {
+            "name": "speech corpus"
+        }
+    ],
+    "title": [
+        "ORAL2013: balanced corpus of informal spoken Czech (transcriptions & audio)"
+    ],
+    "url": ""
+}

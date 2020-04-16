@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Lutkemeyer, Willy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 131 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1825",
+    "MetadataAccess": [
+        "oai:ota:oucs:1825"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Shakespeare, William, 1564-1616"
+    ],
+    "fulltext": "oai:ota:oucs:1825;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1825.xml;Macbeth : [1623 Folio] / William Shakespeare ;Shakespeare, William, 1564-1616;text_and_corpus_linguistics;English drama -- Early modern and Elizabethan, 1500-1600;Oxford Text Archive, University of Oxford;Lutkemeyer, Willy;text/sgml;(1 file : ca. 131 KB);Text;Plays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cee19139-3091-5c18-90fe-4bf4eb32b8bb",
+    "oai_identifier": [
+        "oai:ota:oucs:1825"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- Early modern Elizabethan"
+        }
+    ],
+    "title": [
+        "Macbeth : [1623 Folio] / William Shakespeare "
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1825.xml"
+}

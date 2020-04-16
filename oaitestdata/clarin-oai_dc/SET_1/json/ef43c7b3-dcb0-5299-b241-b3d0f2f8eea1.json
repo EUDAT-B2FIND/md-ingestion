@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/39",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/39"
+    ],
+    "PID": "http://hdl.handle.net/10794/39",
+    "PublicationTimestamp": "2012-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/39;2017-10-27T13:46:47Z;hdl_10794_1;hdl_10794_2;Simple+ (2017-10-16);Simple+ (2017-10-16);n/a, n/a;Swedish;SIMPLE;The Swedish SIMPLE Lexicon - A language technology resource with access to semantic information in Swedish, connected to SALDO senses.;Svenskt SIMPLE lexikon - En spr\u00e5kteknologisk resurs med semantisk information, kopplade till betydelser i SALDO.;2012-05-30;lexicalConceptualResource;http://hdl.handle.net/10794/39;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;http://creativecommons.org/licenses/by/4.0/;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/simpleplus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ef43c7b3-dcb0-5299-b241-b3d0f2f8eea1",
+    "notes": [
+        "The Swedish SIMPLE Lexicon - A language technology resource with access to semantic information in Swedish, connected to SALDO senses.",
+        "Svenskt SIMPLE lexikon - En spr\u00e5kteknologisk resurs med semantisk information, kopplade till betydelser i SALDO."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/39"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "SIMPLE"
+        }
+    ],
+    "title": [
+        "Simple+ (2017-10-16)",
+        "Simple+ (2017-10-16)"
+    ],
+    "url": ""
+}

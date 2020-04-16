@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3825",
+    "MetadataAccess": [
+        "oai:ota:oucs:3825"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Inchbald, Mrs., 1753-1821."
+    ],
+    "fulltext": "oai:ota:oucs:3825;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3825.xml;Wives as they were: and maids as they are, a comedy, in five acts. Performed at the Theatre Royal, Covent-Garden. By Mrs. Inchbald.;Inchbald, Mrs., 1753-1821.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ede762c4-7ec4-534d-a002-5bb3e655d00e",
+    "oai_identifier": [
+        "oai:ota:oucs:3825"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Wives as they were: and maids as they are, a comedy, in five acts. Performed at the Theatre Royal, Covent-Garden. By Mrs. Inchbald."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3825.xml"
+}

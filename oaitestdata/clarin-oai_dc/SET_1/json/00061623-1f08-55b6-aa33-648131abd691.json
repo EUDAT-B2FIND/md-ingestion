@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Emilia"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/244",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/244"
+    ],
+    "PID": "http://hdl.handle.net/11321/244",
+    "PublicationTimestamp": "2016-01-31T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Emilia"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Ka, Emilia"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/244;2016-01-31T17:44:28Z;hdl_11321_3;hdl_11321_4;Teksty reklam TVP ABC ver.3;Ka, Emilia;reklama;kompletny korpus;2016-01-31;corpus;http://hdl.handle.net/11321/244;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;text/plain;downloadable_files_count: 1;Emilia",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "00061623-1f08-55b6-aa33-648131abd691",
+    "notes": [
+        "kompletny korpus"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/244"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "reklama"
+        }
+    ],
+    "title": [
+        "Teksty reklam TVP ABC ver.3"
+    ],
+    "url": ""
+}

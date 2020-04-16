@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "ZRC SAZU"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1128",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1128"
+    ],
+    "PID": "http://hdl.handle.net/11356/1128",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "ZRC SAZU"
+    ],
+    "RelatedIdentifier": [
+        "https://kuscholarworks.ku.edu/bitstream/handle/1808/18716/02_SCN_1_2015_Zele.pdf"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u017dele, Andreja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1128;2017-08-04T17:21:28Z;hdl_11356_1023;hdl_11356_1024;Dictionary of Slovenian Particles;\u017dele, Andreja;dictionary;lexicography;particles;The dictionary describes the particles in the Slovenian language. It contains 429 entries with information on variants, dynamic and tonal accent, particle type, the meaning and etymology.\r\n\r\nThe relation to what is being said and the circumstances of the spoken situation are expressed particularly through particles, which is why they are functionally very lively language components of everyday communication. With their semantic-contextual role they actualise what is worded and at the same time condense the message. The particle is one of those non-parts-of-speech that fulfils the textual role of the connector and is, more particularly, ranked among inter-predicate connectors or the connectors in supra-predicate texts. Since particles play primarily a textual role, they are also particularly meaningful words, which can be reasonably used in a text, especially in one\u2019s first language; they maintain a strong communicative (connective) role, and with this a well-marked role of influence. From the communicative-pragmatic perspective, particles are divided into two main categories, namely the connecting (text) particles resulting from pragmatic circumstances, and mood (interpersonal) particles resulting from communicative relationships. Mood particles focus either on the participants, the circumstances, the verbal process or the quantity, e.g. bogvaruj, kon\u010dno, dejansko, baje, nikar, while the connecting particles highlight textual coherence and cohesion, e.g. celo, kaj \u0161ele, druga\u010de, sicer pa, torej, etc. The most comprehensive and functional semantic-circumstantial evaluation of particles can be found in lexical representation.\r\n\r\nThis dictionary was published as a printed book:\r\n\u017dele, Andreja. Slovar slovenskih \u010dlenkov. Ljubljana : Zalo\u017eba ZRC, ZRC SAZU, 2014. ISBN 978-961-254-718-9.;2015;lexicalConceptualResource;http://hdl.handle.net/11356/1128;slv;https://kuscholarworks.ku.edu/bitstream/handle/1808/18716/02_SCN_1_2015_Zele.pdf;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;ZRC SAZU;http://www.termania.net/slovarji/127/slovar-slovenskih-clenkov",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d6894c5c-58fe-5766-b337-5da9ff907b61",
+    "notes": [
+        "The dictionary describes the particles in the Slovenian language. It contains 429 entries with information on variants, dynamic and tonal accent, particle type, the meaning and etymology.\r\n\r\nThe relation to what is being said and the circumstances of the spoken situation are expressed particularly through particles, which is why they are functionally very lively language components of everyday communication. With their semantic-contextual role they actualise what is worded and at the same time condense the message. The particle is one of those non-parts-of-speech that fulfils the textual role of the connector and is, more particularly, ranked among inter-predicate connectors or the connectors in supra-predicate texts. Since particles play primarily a textual role, they are also particularly meaningful words, which can be reasonably used in a text, especially in one\u2019s first language; they maintain a strong communicative (connective) role, and with this a well-marked role of influence. From the communicative-pragmatic perspective, particles are divided into two main categories, namely the connecting (text) particles resulting from pragmatic circumstances, and mood (interpersonal) particles resulting from communicative relationships. Mood particles focus either on the participants, the circumstances, the verbal process or the quantity, e.g. bogvaruj, kon\u010dno, dejansko, baje, nikar, while the connecting particles highlight textual coherence and cohesion, e.g. celo, kaj \u0161ele, druga\u010de, sicer pa, torej, etc. The most comprehensive and functional semantic-circumstantial evaluation of particles can be found in lexical representation.\r\n\r\nThis dictionary was published as a printed book:\r\n\u017dele, Andreja. Slovar slovenskih \u010dlenkov. Ljubljana : Zalo\u017eba ZRC, ZRC SAZU, 2014. ISBN 978-961-254-718-9."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1128"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dictionary"
+        },
+        {
+            "name": "lexicography"
+        },
+        {
+            "name": "particles"
+        }
+    ],
+    "title": [
+        "Dictionary of Slovenian Particles"
+    ],
+    "url": ""
+}

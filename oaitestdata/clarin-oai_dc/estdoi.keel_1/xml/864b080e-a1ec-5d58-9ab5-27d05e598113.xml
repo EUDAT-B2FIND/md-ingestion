@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9474548</identifier>
+    <datestamp>2019-05-18T17:25:31Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Inglise-eesti meres&#245;naraamat</dc:title>
+      <dc:title xml:lang="en">The English-Estonian Maritime Dictionary</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-11-09</dc:date>
+      <dc:date>Updated: 2017-03-03</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05BE2L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Sisaldab &#252;le 30 000 m&#228;rks&#245;na. Peale merenduslike tavaterminite leiab s&#245;naraamatust ka purjelaevu, puulaevu, merekaubandust, mere&#245;igust, merekindlustust, konteinervedusid, kalandust, s&#245;jalaevastikku, raadiolokatsiooni, h&#252;dromehaanikat, okeanograafiat, purjesporti jms puutuvaid s&#245;nu.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Over 30,000 entry words. Apart from common nautical terms there are terms concerning sailing ships, wooden boats, sea trade, maritime law, marine insurance, container transport, fishery, navy, radiolocation, hydromechanics, oceanography, sailing etc.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/276</identifier>
+    <datestamp>2016-06-02T20:27:29Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Paralela corpus and search engine</dc:title>
+      <dc:creator>P&#281;zik, Piotr</dc:creator>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>corpus search engine</dc:subject>
+      <dc:description>Paralela is as an open-ended, opportunistic parallel corpus of Polish-English and English-Polish translations. It currently contains 262 million words in 10,877,000 translation segments. The Paralela online search engine supports the SlopeQ query syntax for bilingual Polish-English corpus queries for the full dataset. Both the full texts and query results can be accessed and exported through the online application at http://paralela.clarin-pl.eu.</dc:description>
+      <dc:date>2016-03-01</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/276</dc:identifier>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>University of &#321;&#243;d&#378;</dc:publisher>
+      <dc:source>http://paralela.clarin-pl.eu</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

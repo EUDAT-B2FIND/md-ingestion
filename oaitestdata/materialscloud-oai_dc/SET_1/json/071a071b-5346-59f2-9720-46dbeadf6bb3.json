@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0012/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0012/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0012/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-04-07T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Pignedoli, Carlo Antonio",
+        "Fasel, Roman",
+        "Mishra, Shantanu"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0012/v1;2019-06-12Z;DOI;Dataset;Fasel, Roman;Pignedoli, Carlo Antonio;Mishra, Shantanu;Tailoring Bond Topologies in Open-Shell Graphene Nanostructures;Materials Cloud;2019-04-07;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;density functional theory;MARVEL;scanning tunneling microscopy;scanning tunneling spectroscopy;open-shell polycyclic aromatic hydrocarbons;nonalternant polycyclic aromatic hydrocarbons;atom manipulation;doi:10.24435/materialscloud:2019.0012/v1;https://archive.materialscloud.org/2019.0012/v1;en;The data contained in this record, raw data of images and input files to reproduce calculations, support our recent report for the on-surface synthesis and characterization of two ultralow-gap open-shell molecules, namely peri-tetracene, a benzenoid graphene fragment with zigzag edge topology, and dibenzo[a,m]dicyclohepta[bcde,nopq]rubicene, a nonbenzenoid nonalternant structural isomer of peri-tetracene with two embedded azulene units. Our results provide an understanding of the ramifications of altered bond topologies at the single-molecule scale, with the prospect of designing functionalities in carbon-based nanostructures via engineering of bond topology ",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "071a071b-5346-59f2-9720-46dbeadf6bb3",
+    "notes": [
+        "The data contained in this record, raw data of images and input files to reproduce calculations, support our recent report for the on-surface synthesis and characterization of two ultralow-gap open-shell molecules, namely peri-tetracene, a benzenoid graphene fragment with zigzag edge topology, and dibenzo[a,m]dicyclohepta[bcde,nopq]rubicene, a nonbenzenoid nonalternant structural isomer of peri-tetracene with two embedded azulene units. Our results provide an understanding of the ramifications of altered bond topologies at the single-molecule scale, with the prospect of designing functionalities in carbon-based nanostructures via engineering of bond topology "
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0012/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "density functional theory"
+        },
+        {
+            "name": "MARVEL"
+        },
+        {
+            "name": "scanning tunneling microscopy"
+        },
+        {
+            "name": "scanning tunneling spectroscopy"
+        },
+        {
+            "name": "open-shell polycyclic aromatic hydrocarbons"
+        },
+        {
+            "name": "nonalternant polycyclic aromatic hydrocarbons"
+        },
+        {
+            "name": "atom manipulation"
+        }
+    ],
+    "title": [
+        "Tailoring Bond Topologies in Open-Shell Graphene Nanostructures"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0012/v1"
+}

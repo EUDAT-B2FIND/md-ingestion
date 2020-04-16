@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "audio/x-wav",
+        "text/xml",
+        "downloadable_files_count: 32",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC98-3",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC98-3"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-000D-EC98-3",
+    "PublicationTimestamp": "2013-01-04T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)",
+        "http://creativecommons.org/licenses/by-nc/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Pra\u017e\u00e1k, Ale\u0161",
+        "\u0160m\u00eddl, Lubo\u0161"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC98-3;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;OVM \u2013 Ot\u00e1zky V\u00e1clava Moravce;\u0160m\u00eddl, Lubo\u0161;Pra\u017e\u00e1k, Ale\u0161;speech corpus;acoustic model;speaker identification;speaker verification;The corpus consists of transcribed recordings from the Czech political discussion broadcast \u201cOt\u00e1zky V\u00e1clava Moravce\u201c. It contains 35 hours of speech and corresponding word-by-word transcriptions, including the transcription of some non-speech events. Speakers\u2019 names are also assigned to corresponding segments. The resulting corpus is suitable for both acoustic model training for ASR purposes and training of speaker identification and/or verification systems. The archive contains 16 sound files (WAV PCM, 16-bit, 48 kHz, mono) and transcriptions in XML-based standard Transcriber format (http://trans.sourceforge.net);2013-01-04;corpus;ZCU_CZ_OVM;http://hdl.handle.net/11858/00-097C-0000-000D-EC98-3;ces;Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0);http://creativecommons.org/licenses/by-nc/3.0/;PUB;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/plain; charset=utf-8;downloadable_files_count: 32;University of West Bohemia, Department of Cybernetics",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b122adb1-4c58-506e-b59a-79d5388e9ece",
+    "notes": [
+        "The corpus consists of transcribed recordings from the Czech political discussion broadcast \u201cOt\u00e1zky V\u00e1clava Moravce\u201c. It contains 35 hours of speech and corresponding word-by-word transcriptions, including the transcription of some non-speech events. Speakers\u2019 names are also assigned to corresponding segments. The resulting corpus is suitable for both acoustic model training for ASR purposes and training of speaker identification and/or verification systems. The archive contains 16 sound files (WAV PCM, 16-bit, 48 kHz, mono) and transcriptions in XML-based standard Transcriber format (http://trans.sourceforge.net)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC98-3"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "acoustic model"
+        },
+        {
+            "name": "speaker identification"
+        },
+        {
+            "name": "speaker verification"
+        }
+    ],
+    "title": [
+        "OVM \u2013 Ot\u00e1zky V\u00e1clava Moravce"
+    ],
+    "url": ""
+}

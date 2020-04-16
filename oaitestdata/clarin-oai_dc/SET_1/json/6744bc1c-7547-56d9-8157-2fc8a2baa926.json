@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/559",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/559"
+    ],
+    "PID": "http://hdl.handle.net/11321/559",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Bartosiak, Tomasz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/559;2018-07-26T10:46:42Z;hdl_11321_3;hdl_11321_4;Pred-A-tor;Bartosiak, Tomasz;Polish;constituency parsing;syntax-semantics interface;Tool for creating predicate-argument structures based on syntactic trees created by \u015awigra parser (http://zil.ipipan.waw.pl/%C5%9Awigra);2018;toolService;http://hdl.handle.net/11321/559;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6744bc1c-7547-56d9-8157-2fc8a2baa926",
+    "notes": [
+        "Tool for creating predicate-argument structures based on syntactic trees created by \u015awigra parser (http://zil.ipipan.waw.pl/%C5%9Awigra)"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/559"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Polish"
+        },
+        {
+            "name": "constituency parsing"
+        },
+        {
+            "name": "syntax-semantics interface"
+        }
+    ],
+    "title": [
+        "Pred-A-tor"
+    ],
+    "url": ""
+}

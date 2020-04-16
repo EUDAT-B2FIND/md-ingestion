@@ -1,0 +1,64 @@
+{
+    "Contributor": [
+        "CINES"
+    ],
+    "DiscHierarchy": [
+        "3.1.2",
+        "Live Sciences",
+        "Plant Sciences "
+    ],
+    "Discipline": "Plant_Sciences",
+    "Format": [
+        "image/jpeg"
+    ],
+    "MetaDataAccess": "https://opendata.cines.fr/herbadrop-api/rest/data/search/dataset/01bbfdaf-57d4-5e09-9846-9f58df3d7513",
+    "MetaDataAcess": [
+        "P03335837"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "PublicationTimestamp": "2019-05-28T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "MNHN"
+    ],
+    "ResourceType": [
+        "StillImage|PRESERVED_SPECIMEN"
+    ],
+    "Rights": [
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "unavailable"
+    ],
+    "group": "herbadrop",
+    "groups": [
+        {
+            "name": "herbadrop"
+        }
+    ],
+    "name": "01bbfdaf-57d4-5e09-9846-9f58df3d7513",
+    "namespaces": [
+        ":"
+    ],
+    "notes": [
+        "Digitized_herbarium_sheet",
+        "unavailable"
+    ],
+    "oai_identifier": [
+        "01bbfdaf-57d4-5e09-9846-9f58df3d7513"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Fabaceae"
+        }
+    ],
+    "title": [
+        "Indigofera melanadenia Benth. ex Harv. & Sond."
+    ],
+    "url": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03335837"
+}

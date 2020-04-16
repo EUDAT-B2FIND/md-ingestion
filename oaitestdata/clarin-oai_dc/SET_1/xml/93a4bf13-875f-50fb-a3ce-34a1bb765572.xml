@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1137</identifier>
+    <datestamp>2018-10-29T10:42:44Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Wikipedia talk corpus Janes-Wiki 1.0</dc:title>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Fi&#353;er, Darja</dc:creator>
+      <dc:subject>computer-mediated communication</dc:subject>
+      <dc:subject>Wikipedia</dc:subject>
+      <dc:subject>word normalisation</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>lemmatisation</dc:subject>
+      <dc:subject>named entities</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>Janes-Wiki is an annotated corpus of discussion pages from the Slovene Wikipedia from the period 2003-08 to 2017-06. The corpus contains page and user talks and is structured into individual pages and their comments, together with their metadata. The texts in the corpus are tokenised, sentence segmented, word normalised, morphosyntactically tagged, lemmatised and annotated with named entities.</dc:description>
+      <dc:date>2017-08-28</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1137</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://slovenscina2.0.trojina.si/arhiv/2016-2/2016-2-04/</dc:relation>
+      <dc:relation>http://nl.ijs.si/janes/viri/avtomatsko-oznaceni-korpusi/#Janes-Wiki</dc:relation>
+      <dc:relation>https://doi.org/10.1007/s10579-018-9425-z</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>http://nl.ijs.si/janes/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

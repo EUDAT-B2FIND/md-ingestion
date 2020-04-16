@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>urn:nbn:fi:csc-kata20160308102850717672</identifier>
+    <datestamp>2016-03-08T08:28:50Z</datestamp>
+    <setSpec>university-of-helsinki-department-of-physics-division-of-atmospheric-sciences</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Helsinki Kumpula SMEAR III meteorology - Air pressure - 2009</dc:title>
+      <dc:creator>Pasi Aalto</dc:creator>
+      <dc:subject>http://www.yso.fi/onto/ysa/Y101807</dc:subject>
+      <dc:subject>http://www.yso.fi/onto/yso/p5394</dc:subject>
+      <dc:subject>ilmanpaine</dc:subject>
+      <dc:description>Title: Air pressure 
+
+Description: Sea level pressure, Physicum roof, (hPa) 
+
+Variable: p0 
+
+Unit: hPa 
+
+Source: saa 
+
+Category: Meteorology 
+
+</dc:description>
+      <dc:publisher>atm-data@helsinki.fi</dc:publisher>
+      <dc:date>2016-03-08</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>urn:nbn:fi:csc-ida20140120144345v</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-ida20140120144345s</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-ida-10x201703282015017313760v</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-kata20160308102850717672</dc:identifier>
+      <dc:identifier>http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308102850717672</dc:identifier>
+      <dc:language/>
+      <dc:coverage>DCMI-point: name=Kumpula; east=24.961227; north=60.202887 elevation=45;</dc:coverage>
+      <dc:coverage>2009-01-01T00:00:00Z/2009-12-31T23:59:59Z</dc:coverage>
+      <dc:rights>Creative Commons Attribution 4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

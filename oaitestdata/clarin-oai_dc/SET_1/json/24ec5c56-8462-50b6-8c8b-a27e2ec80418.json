@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/13",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/13"
+    ],
+    "PID": "http://hdl.handle.net/10794/13",
+    "PublicationTimestamp": "2015-12-09T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/13;2017-10-27T15:59:11Z;hdl_10794_1;hdl_10794_2;Bliss characters (2017-10-16);Bliss-bokst\u00e4ver (2017-10-16);n/a, n/a;Swedish;Bliss;Bliss characters.;Bliss-bokst\u00e4ver.;2015-12-09;lexicalConceptualResource;http://hdl.handle.net/10794/13;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/blisschar",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "24ec5c56-8462-50b6-8c8b-a27e2ec80418",
+    "notes": [
+        "Bliss characters.",
+        "Bliss-bokst\u00e4ver."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/13"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Bliss"
+        }
+    ],
+    "title": [
+        "Bliss characters (2017-10-16)",
+        "Bliss-bokst\u00e4ver (2017-10-16)"
+    ],
+    "url": ""
+}

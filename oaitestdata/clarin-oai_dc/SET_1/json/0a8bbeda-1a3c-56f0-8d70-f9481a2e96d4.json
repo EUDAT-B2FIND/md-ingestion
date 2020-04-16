@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "National University of Engineering, Peru"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2673",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2673"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2673",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "National University of Engineering, Peru"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Coronado, Alberto",
+        "Villota, Elizabeth",
+        "Bello Medina, Kevin",
+        "Cardenas Acosta, Ronald"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2673;2018-07-02T22:05:54Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Engineering job ads corpus;Cardenas Acosta, Ronald;Bello Medina, Kevin;Coronado, Alberto;Villota, Elizabeth;job-advertisement;PoS tagging;text corpora;The corpus presented consists of job ads in Spanish related to Engineering positions in Peru.\r\nThe documents were preprocessed and annotated for POS tagging, NER, and topic modeling tasks.\r\n\r\nThe corpus is divided in two components:\r\n- POS tagging/ NER training data: Consisting of 800 job ads, each one tokenized and manually annotated with POS tag information (EAGLE format) and Entity Label in BIO format. \r\n- Topic modeling training data: containing 9000 documents stripped from stopwords. Comes in two formats:\r\n  * Whole text documents: containing all the information originally posted in the ad.\r\n  * Extracted chunks documents: containing chunks extracted by custom NER models (expected skills, tasks to perform, and preferred major), as described in Improving Topic Coherence Using Entity Extraction Denoising (to appear);2016;corpus;http://hdl.handle.net/11234/1-2673;spa;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;National University of Engineering, Peru;https://github.com/ronaldahmed/labor-market-demand-analysis",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0a8bbeda-1a3c-56f0-8d70-f9481a2e96d4",
+    "notes": [
+        "The corpus presented consists of job ads in Spanish related to Engineering positions in Peru.\r\nThe documents were preprocessed and annotated for POS tagging, NER, and topic modeling tasks.\r\n\r\nThe corpus is divided in two components:\r\n- POS tagging/ NER training data: Consisting of 800 job ads, each one tokenized and manually annotated with POS tag information (EAGLE format) and Entity Label in BIO format. \r\n- Topic modeling training data: containing 9000 documents stripped from stopwords. Comes in two formats:\r\n  * Whole text documents: containing all the information originally posted in the ad.\r\n  * Extracted chunks documents: containing chunks extracted by custom NER models (expected skills, tasks to perform, and preferred major), as described in Improving Topic Coherence Using Entity Extraction Denoising (to appear)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2673"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "job-advertisement"
+        },
+        {
+            "name": "PoS tagging"
+        },
+        {
+            "name": "text corpora"
+        }
+    ],
+    "title": [
+        "Engineering job ads corpus"
+    ],
+    "url": ""
+}

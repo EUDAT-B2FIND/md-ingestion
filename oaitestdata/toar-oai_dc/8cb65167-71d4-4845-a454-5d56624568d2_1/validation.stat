@@ -1,0 +1,126 @@
+
+ Statistics of
+	community	toar
+	subset		8cb65167-71d4-4845-a454-5d56624568d2_1
+	# of records	4
+  see as well oaidata/toar-oai_dc/8cb65167-71d4-4845-a454-5d56624568d2_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dc:title
+   
+  |--     4 |  100 |     4 |  100
+      |- 1     : This is the version of the TOAR metadata schema      |
+      |- 1     : TOAR timeseries of ground-level ozone at station GuCheng (GCH), China      |
+      |- 1     : Data collection of "Long-term changes of regional ozone in China: implications f [...(38 chars follow)...] |
+      |- 1     : TOAR data collection at station GuCheng (GCH), China      |
+
+ |-> Description      <--       //dc:description
+
+  |--     3 |   75 |     2 |   50
+
+ |-> Tags             <--       //dc:subject
+ 
+  |--     3 |   75 |     3 |   75
+      |- 2     : TOAR                                |
+      |- 1     : surface ozone                       |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //dc:identifier
+
+  |--     8 |  200 |     8 |  200
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/78e8c312175c4af3a80b28cfe407b7 [...(2 chars follow)...] |
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/faa9dd8c58474fa68e187b5b7e4910 [...(2 chars follow)...] |
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/0f6e65dcd18e4d2a909ffbc14556c2 [...(2 chars follow)...] |
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/444eca4015574832b7e15802a4574c [...(2 chars follow)...] |
+
+ |-> RelatedIdentifier <--       //dc:identifier
+
+  |--     8 |  200 |     8 |  200
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/78e8c312175c4af3a80b28cfe407b7 [...(2 chars follow)...] |
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/faa9dd8c58474fa68e187b5b7e4910 [...(2 chars follow)...] |
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/0f6e65dcd18e4d2a909ffbc14556c2 [...(2 chars follow)...] |
+      |- 2     : https://b2share-testing.fz-juelich.de/api/records/444eca4015574832b7e15802a4574c [...(2 chars follow)...] |
+
+ |-> MetaDataAccess   <--                     
+  |--     4 |  100 |     4 |  100
+      |- 1     : https://b2share-testing.fz-juelich.de/api/oai2d?verb=GetRecord&metadataPrefix=oa [...(75 chars follow)...] |
+      |- 1     : https://b2share-testing.fz-juelich.de/api/oai2d?verb=GetRecord&metadataPrefix=oa [...(75 chars follow)...] |
+      |- 1     : https://b2share-testing.fz-juelich.de/api/oai2d?verb=GetRecord&metadataPrefix=oa [...(75 chars follow)...] |
+      |- 1     : https://b2share-testing.fz-juelich.de/api/oai2d?verb=GetRecord&metadataPrefix=oa [...(75 chars follow)...] |
+
+ |-> Creator          <--       //dc:creator
+ 
+  |--     3 |   75 |     3 |   75
+      |- 2     : Schröder, Sabine                    |
+      |- 1     : Huarong Zhao                        |
+
+ |-> Publisher        <--       //dc:publisher
+
+  |--     3 |   75 |     3 |   75
+      |- 2     : The Tropospheric Ozone Assessment Report (TOAR)      |
+      |- 1     : TOAR                                |
+
+ |-> Contributor      <--       //dc:contributor
+
+  |--     3 |   75 |     3 |   75
+
+ |-> PublicationYear  <--       //dc:date
+    
+  |--     4 |  100 |     4 |  100
+      |- 4     : 2020                                |
+
+ |-> Rights           <--       //dc:rights
+  
+  |--     4 |  100 |     4 |  100
+      |- 4     : info:eu-repo/semantics/openAccess      |
+
+ |-> OpenAccess       <--       false
+        
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //dc:publisher
+
+  |--     3 |   75 |     3 |   75
+      |- 2     : The Tropospheric Ozone Assessment Report (TOAR)      |
+      |- 1     : TOAR                                |
+
+ |-> Language         <--       //dc:language
+
+  |--     3 |   75 |     3 |   75
+      |- 3     : English                             |
+
+ |-> ResourceType     <--       //dc:type
+    
+  |--     3 |   75 |     3 |   75
+      |- 1     : Text                                |
+      |- 1     : Collection                          |
+      |- 1     : Dataset                             |
+
+ |-> Format           <--       //dc:format
+  
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string>Atmospheric chemistry</string>
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : Chemistry;Atmospheric Chemistry      |
+
+ |-> SpatialCoverage  <--       //dc:coverage,//dc:spatial
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //dc:coverage,//dc:temporal
+
+  |--     0 |    0 |     0 |    0
+

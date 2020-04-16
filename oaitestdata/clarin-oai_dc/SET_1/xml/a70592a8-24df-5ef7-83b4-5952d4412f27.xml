@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-626</identifier>
+    <datestamp>2016-04-06T16:39:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>English-Lithuanian Machine Translation Service</dc:title>
+      <dc:contributor>Utka, dr. Andrius</dc:contributor>
+      <dc:description>On-line freely accessible machine translation tool for translating English webpages or texts into Lithuanian.</dc:description>
+      <dc:date>2007</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-626</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>lit</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Lithuania</dc:coverage>
+      <dc:publisher>Center of Computational Linguistics, Vytautas Magnus University</dc:publisher>
+      <dc:source>http://vertimas.vdu.lt/twsas/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

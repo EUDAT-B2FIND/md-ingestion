@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>a8550c806ec311e2a2aa782bcb074135a2cd490541a5448b93b0ccd040237406</identifier>
+    <datestamp>2019-02-27T12:09:40Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare speech synthesis and visualisation workflow</dc:title>
+      <dc:description>This is a workflow that is designed especially for use in the UIMA-based U-Compare workbench (see separate META-SHARE record).  The workflow is in "ucz" format (specific to U-Compare) and can be imported via the "Import Workflow" item in the "Workflows" menu of the U-Compare interface. It includes the "Synthesizer Annotator" component (based on the Ogimios speech synthesis software, developed at Universitat Polit&#195;&#168;cnica de Catalunya) and the "Synthesizer Annotation Viewer" component, developed at the University of Manchester. The latter component provides a visualisation of the speech signals and transcriptions of individual words.  
+
+</dc:description>
+      <dc:date>2013-02-04</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Vizja Press&It"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.oasis.opendocument.text",
+        "downloadable_files_count: 11",
+        "application/zip",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/397",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/397"
+    ],
+    "PID": "http://hdl.handle.net/11321/397",
+    "PublicationTimestamp": "2017-02-03T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Vizja Press&It"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Jacennik, Barbara"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/397;2017-05-30T14:07:35Z;hdl_11321_3;hdl_11321_4;Sports supplements;Jacennik, Barbara;Jacennik, Barbara;Jacennik, Barbara;Health communication;Corpus of texts on dietary sports supplements.;2017-02-03;corpus;http://hdl.handle.net/11321/397;pol;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;text/plain;text/plain;text/plain;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;application/msword;application/zip;downloadable_files_count: 11;Vizja Press&It",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2926e8ac-0fca-53ea-8ab5-61855c052b91",
+    "notes": [
+        "Corpus of texts on dietary sports supplements."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/397"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Health communication"
+        }
+    ],
+    "title": [
+        "Sports supplements"
+    ],
+    "url": ""
+}

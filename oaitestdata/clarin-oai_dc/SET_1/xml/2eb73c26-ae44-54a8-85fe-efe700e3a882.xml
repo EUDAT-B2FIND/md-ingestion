@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1821</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>EVALD 1.0 for Foreigners</dc:title>
+      <dc:creator>Rysov&#225;, Kate&#345;ina</dc:creator>
+      <dc:creator>M&#237;rovsk&#253;, Ji&#345;&#237;</dc:creator>
+      <dc:creator>Nov&#225;k, Michal</dc:creator>
+      <dc:creator>Rysov&#225;, Magdal&#233;na</dc:creator>
+      <dc:subject>text coherence</dc:subject>
+      <dc:subject>discourse</dc:subject>
+      <dc:subject>automatic evaluation</dc:subject>
+      <dc:subject>non-native speakers</dc:subject>
+      <dc:description>EVALD 1.0 for Foreigners is a software for automatic evaluation of surface coherence (cohesion) in Czech texts written by non-native speakers of Czech.</dc:description>
+      <dc:date>2016-11-07</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1821</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11234/1-2509</dc:relation>
+      <dc:rights>BSD 2-Clause "Simplified" or "FreeBSD" license</dc:rights>
+      <dc:rights>http://opensource.org/licenses/BSD-2-Clause</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://ufal.mff.cuni.cz/evald</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

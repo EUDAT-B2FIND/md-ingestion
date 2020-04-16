@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=63649c5218f311e6a2aa782bcb074135d2f0147396bf431691513c6c0db2adea",
+    "MetadataAccess": [
+        "63649c5218f311e6a2aa782bcb074135d2f0147396bf431691513c6c0db2adea"
+    ],
+    "PublicationTimestamp": "2016-05-13T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "fulltext": "63649c5218f311e6a2aa782bcb074135d2f0147396bf431691513c6c0db2adea;2018-11-15T16:40:20Z;corpus;corpus:text;Europarl-QTLeap WSD/NED corpus;The texts are sentences from the Europarl parallel corpus (Koehn, 2005). The textscontain the monolingual sentences from parallel corpora for the following\npairs: Bulgarian-English, Czech-English, Portuguese-English and Spanish-\nEnglish. The English corpus is comprised by the English side of the Spanish-\nEnglish corpus.\nBasque is not in Europarl. In addition, it contains the Basque and English\nsides of the GNOME corpus (Tiedemann, 2012).\nThe texts have been automatically annotated with NLP tools, including Word\nSense Disambiguation, Named Entity Disambiguation and Coreference\nresolution.;2016-05-13",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "75623562-b778-5c9a-be59-6c95836619cd",
+    "notes": [
+        "The texts are sentences from the Europarl parallel corpus (Koehn, 2005). The textscontain the monolingual sentences from parallel corpora for the following\npairs: Bulgarian-English, Czech-English, Portuguese-English and Spanish-\nEnglish. The English corpus is comprised by the English side of the Spanish-\nEnglish corpus.\nBasque is not in Europarl. In addition, it contains the Basque and English\nsides of the GNOME corpus (Tiedemann, 2012).\nThe texts have been automatically annotated with NLP tools, including Word\nSense Disambiguation, Named Entity Disambiguation and Coreference\nresolution."
+    ],
+    "oai_identifier": [
+        "63649c5218f311e6a2aa782bcb074135d2f0147396bf431691513c6c0db2adea"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Europarl-QTLeap WSD/NED corpus"
+    ]
+}

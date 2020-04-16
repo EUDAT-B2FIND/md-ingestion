@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4038",
+    "MetadataAccess": [
+        "oai:ota:oucs:4038"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Garrick, David, 1717-1779."
+    ],
+    "fulltext": "oai:ota:oucs:4038;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4038.xml;May-day: or, the little gipsy: A musical farce, of one act. To which is added The theatrical candidates. A musical prelude. As they are both performed at the Theatre-Royal, in Drury-Lane.;Garrick, David, 1717-1779.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3b86d718-0d9a-5a59-b7a4-38c52f57be9d",
+    "oai_identifier": [
+        "oai:ota:oucs:4038"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "May-day: or, the little gipsy: A musical farce, of one act. To which is added The theatrical candidates. A musical prelude. As they are both performed at the Theatre-Royal, in Drury-Lane."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4038.xml"
+}

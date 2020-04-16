@@ -1,0 +1,68 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-100444815",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:15023034",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:15023034"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63661633199,
+    "TempCoverageEnd": 63661633199,
+    "TemporalCoverage": " point in time : 2018-05-11T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-05-11T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-05-11T11:59:59Z",
+    "author": [
+        "Minmin YU",
+        "Christina GLADKOVA",
+        "Malte GERSCH",
+        "Marc FIEDLER",
+        "Madhanagopal ANANDAPADAMANABAN",
+        "Claire DICKSON",
+        "Roger WILLIAMS",
+        "Jonathan PRUNEDA"
+    ],
+    "fulltext": "oai:oai.datacite.org:15023034;2018-10-19T07:02:56Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-100444815;Roger WILLIAMS;Marc FIEDLER;Minmin YU;Jonathan PRUNEDA;Christina GLADKOVA;Claire DICKSON;Malte GERSCH;Madhanagopal ANANDAPADAMANABAN;Cambridge MRC Block allocation;Macromolecular Crystallography;MX-1936;id23-1;European Synchrotron Radiation Facility;2018-05-11;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "1e98de60-4408-5e6b-9005-8991c076dfa8",
+    "oai_identifier": [
+        "oai:oai.datacite.org:15023034"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Macromolecular Crystallography"
+        },
+        {
+            "name": "MX-"
+        },
+        {
+            "name": "id-"
+        }
+    ],
+    "title": [
+        "Cambridge MRC Block allocation"
+    ],
+    "url": ""
+}

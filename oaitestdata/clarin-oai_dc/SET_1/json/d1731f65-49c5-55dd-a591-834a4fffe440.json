@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Frisian Academy"
+    ],
+    "Contributor": [
+        "Versloot, Arjen",
+        "Boersma, Piter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-880",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-880"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-880",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Frisian Academy"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Netherlands (the)"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-880;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Middle Frisian corpus;Boersma, Piter;Versloot, Arjen;All existing Middle Frisian texts are contained in the Middle Frisian corpus. The texts are tagged and lemmatised; spelling variants have been brought together.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-880;downloadable_files_count: 0;Netherlands (the);Frisian Academy;http://www.fa.knaw.nl/fa/3departments-and-disciplines/department-of-linguistics/taalkorpora_en_/frisian-language-corpus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d1731f65-49c5-55dd-a591-834a4fffe440",
+    "notes": [
+        "All existing Middle Frisian texts are contained in the Middle Frisian corpus. The texts are tagged and lemmatised; spelling variants have been brought together."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-880"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Middle Frisian corpus"
+    ],
+    "url": ""
+}

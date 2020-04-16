@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "text/xml",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Southern Sami"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/109",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/109"
+    ],
+    "PID": "http://hdl.handle.net/11509/109",
+    "PublicationTimestamp": "2015-10-17T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "The Divvun group at UiT The Arctic University of Norway",
+        "Giellatekno - Saami Language Technology, UiT The Arctic University of Norway"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/109;2016-09-06T12:52:07Z;hdl_11509_1;hdl_11509_2;South Saami N-grams;Giellatekno - Saami Language Technology, UiT The Arctic University of Norway;The Divvun group at UiT The Arctic University of Norway;South Saami;Ngram;1-gram;2-gram;3-gram;Language Model;The South Saami N-gram data set is work done by the Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language community. In particular, Ciprian-Virgil Gerstenberger compiled the data set from the entire SIKOR South Saami corpus version 2015-10-10. The length of the N-grams ranges from unigrams (single words) to tri-grams (101693 unigrams, 499288 bigrams, 112879 trigrams). Only N-grams within sentences have been counted. The data format follows the ARPA backoff N-gram models and has been generated using SRILM, the SRI Language Modeling Toolkit (http://www.speech.sri.com/projects/srilm/). Since the N-grams have been derived automatically, they may contain wrong values. In case you find any errors the creators would appreciate your feedback sent to giellatekno@uit.no and feedback@divvun.no. Please note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata).;2015-10-17;corpus;http://hdl.handle.net/11509/109;sma;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;application/zip;text/plain; charset=utf-8;text/xml;downloadable_files_count: 1;Giellatekno - Saami Language Technology;http://giellatekno.uit.no/index.eng.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "aae08f4c-14ff-5215-a42e-70c33a0d0307",
+    "notes": [
+        "The South Saami N-gram data set is work done by the Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language community. In particular, Ciprian-Virgil Gerstenberger compiled the data set from the entire SIKOR South Saami corpus version 2015-10-10. The length of the N-grams ranges from unigrams (single words) to tri-grams (101693 unigrams, 499288 bigrams, 112879 trigrams). Only N-grams within sentences have been counted. The data format follows the ARPA backoff N-gram models and has been generated using SRILM, the SRI Language Modeling Toolkit (http://www.speech.sri.com/projects/srilm/). Since the N-grams have been derived automatically, they may contain wrong values. In case you find any errors the creators would appreciate your feedback sent to giellatekno@uit.no and feedback@divvun.no. Please note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata)."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/109"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "South Saami"
+        },
+        {
+            "name": "Ngram"
+        },
+        {
+            "name": "-gram"
+        },
+        {
+            "name": "-gram"
+        },
+        {
+            "name": "-gram"
+        },
+        {
+            "name": "Language Model"
+        }
+    ],
+    "title": [
+        "South Saami N-grams"
+    ],
+    "url": ""
+}

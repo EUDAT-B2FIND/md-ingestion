@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0026/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0026/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0026/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Pasquarello, Alfredo",
+        "Guo, Zhendong",
+        "Ambrosio, Francesco"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0026/v1;2019-06-12Z;DOI;Dataset;Guo, Zhendong;Ambrosio, Francesco;Pasquarello, Alfredo;Oxygen defects in amorphous Al2O3;Materials Cloud;2019-05-30;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;amorphous Al2O3;oxygen vacancy;oxygen interstitial;peroxy linkage;holes;doi:10.24435/materialscloud:2019.0026/v1;https://archive.materialscloud.org/2019.0026/v1;en;The electronic properties of the oxygen vacancy and interstitial in amorphous Al2O3 are studied via ab initio molecular dynamics simulations and hybrid functional calculations. Our results indicate that these defects do not occur in amorphous Al2O3, due to structural rearrangements which assimilate the defect structure and cause a delocalization of the associated defect levels. The imbalance of oxygen leads to a nonstoichiometric compound in which the oxygen occurs in the form of O2\u2013 ions. Intrinsic oxygen defects are found to be unable to trap excess electrons. For low Fermi energies, the formation of peroxy linkages is found to be favored leading to the capture of holes. The relative +2/0 defect levels occur at 2.5 eV from the valence band.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "3fa09c06-f7a4-52f8-a0e5-1f1b2f84b435",
+    "notes": [
+        "The electronic properties of the oxygen vacancy and interstitial in amorphous Al2O3 are studied via ab initio molecular dynamics simulations and hybrid functional calculations. Our results indicate that these defects do not occur in amorphous Al2O3, due to structural rearrangements which assimilate the defect structure and cause a delocalization of the associated defect levels. The imbalance of oxygen leads to a nonstoichiometric compound in which the oxygen occurs in the form of O2\u2013 ions. Intrinsic oxygen defects are found to be unable to trap excess electrons. For low Fermi energies, the formation of peroxy linkages is found to be favored leading to the capture of holes. The relative +2/0 defect levels occur at 2.5 eV from the valence band."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0026/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "amorphous AlO"
+        },
+        {
+            "name": "oxygen vacancy"
+        },
+        {
+            "name": "oxygen interstitial"
+        },
+        {
+            "name": "peroxy linkage"
+        },
+        {
+            "name": "holes"
+        }
+    ],
+    "title": [
+        "Oxygen defects in amorphous Al2O3"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0026/v1"
+}

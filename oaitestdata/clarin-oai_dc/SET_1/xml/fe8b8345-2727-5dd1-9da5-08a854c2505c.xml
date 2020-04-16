@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>6999c3ca328011e2a2aa782bcb07413549c1bda35a744cecabaf17f115501fb1</identifier>
+    <datestamp>2018-11-15T16:39:50Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UIMA/U-Compare STEPP Tagger</dc:title>
+      <dc:description>Part-of-speech tagger tuned to biomedical text.
+
+The tool is provided as a UIMA component, which forms part of the in-built library of components provided with the U-Compare platform (see separate META-SHARE record)  for building and evaluating text mining workflows. The U-Compare Workbench (see separate META-SHARE record) provides a graphical drag-and drop interface for the rapid creation of workflows. 
+</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

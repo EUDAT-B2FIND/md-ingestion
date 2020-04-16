@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "English",
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/528",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/528"
+    ],
+    "PID": "http://hdl.handle.net/11321/528",
+    "PublicationTimestamp": "2018-07-18T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Wo\u0142k, Krzysztof"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/528;2018-07-18T07:56:06Z;hdl_11321_3;hdl_11321_4;Parallel Corpora from Comparable Corpora tool;Wo\u0142k, Krzysztof;comparable;parallel;corpora;wikipedia;tool;builder;Script consists of 2 parts:\r\n\r\narticle parser\r\naligner\r\nRequired software (install before using script):\r\n\r\nyalign\r\nadditional Ubuntu packages:\r\nmongodb\r\nipython\r\npython-nose\r\npython-werkzeug\r\nWiki article parser\r\nArticle parser works in 2 steps:\r\n\r\nExtracts articles from wiki dumps\r\nSaves extracted articles to local DB (Mongo DB)\r\nBefore using parser, wiki dumps should be downloaded and extracted to some directory (directory should contain *.xml, *.sql files). For each language 2 dump files should be downloaded - articles and language link dumps, here is examples:\r\n\r\nPL:\r\n\r\nhttp://dumps.wikimedia.org/plwiki/latest/plwiki-latest-pages-articles.xml.bz2\r\nhttp://dumps.wikimedia.org/plwiki/latest/plwiki-latest-langlinks.sql.gz\r\nEN:\r\n\r\nhttp://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2\r\nhttp://dumps.wikimedia.org/enwiki/latest/enwiki-latest-langlinks.sql.gz\r\nIMPORTANT NOTE: Engilsh dumps after extraction will require about 50 Gb of free space. During parsing parser can require up to 8 Gb ram.\r\n\r\nArticle parser have option \"main language\" - its language for which articles extracted from other languages only if it exist in main language. Eg. if main language is PL, then article extractor first extracts all article for PL, then article for other languages and only if such articles exists in PL translation. This reduces space requirements.\r\n\r\nFor help use:\r\n\r\n$ python parse_wiki_dumps.py -h\r\n\r\nExample command:\r\n\r\n$ python parse_wiki_dumps.py -d ~/temp/wikipedia_dump/ -l pl -v\r\n\r\nWikipedia aligner\r\nAligner can be used when article extracted from dumps.\r\n\r\nAligner takes article pairs for given language pair, aligns text and saves parallel corpara to 2 files. Option \"-s\" can be used to limit number of symbols in file (by default size is 50000000 symbols, thats around 50-60Mb)\r\n\r\nBy default aligner tries to continue aligning where it was stopped, to force aligning from begining need to use \"--restart\" key\r\n\r\nFor help use:\r\n\r\n$ python align.py -h\r\n\r\nExample command:\r\n\r\n$ python align.py -o wikipedia -l en-pl -v\r\n\r\nEuronews crawler\r\nCrawler finds links to articles using euronews archive http://euronews.com/2004/, and in parallel extracts and saves article texts to DB.\r\n\r\nFor help use:\r\n\r\n$ python parse_euronews.py -h\r\n\r\nExample command:\r\n\r\n$ python parse_euronews.py -l en,pl -v\r\n\r\nEuronews aligner\r\nStarting aligner for euronews articles:\r\n\r\n$ python align.py -o euronews -l en-pl -v\r\n\r\nSaving articles in plain text\r\nScript \"save_plain_text.py\" can be used to save all articles in plain text format, it accepts path for saving articles, languages of articles to be saved, and source of articles (euronews, wikipedia).\r\n\r\nFor help use:\r\n\r\n$ python save_plain_text.py -h\r\n\r\nExample command:\r\n\r\n$ python save_plain_text.py -l en,pl -r [path] -o euronews\r\n\r\nYalign selection\r\nThis script tries random parameters for model of yalign in order to get best parameters for aligning provided text samples.\r\n\r\nBefore using yalign_selection script need to prepare article samples using prepare_random_sampling.py script.\r\n\r\nCreating folder with article samples can be done with this command:\r\n\r\n$ python prepare_random_sampling.py -o wikipedia -c 10 -l ru-en -v\r\n\r\n-o wikipedia - source of articles can be wikipedia or euronews\r\n\r\n-c 10 - number of articles to extract\r\n\r\n-l ru-en - languages to extract\r\n\r\nThis script will create \"article_samples\" folder with articles files, then you can create manually aligned files (you need align article of second language), for this example you need to align \"en\" file, files named \"_orig\" - should be left unmodified\r\n\r\nThen manual aligning is ready you can run selection script here is example:\r\n\r\n$ python yalign_selection.py --samples article_samples/ --lang1 ru --lang2 en --threshold 0.1536422609112349e-6 --threshold_step 0.0000001 --threshold_step_count 10 --penalty 0.014928930455303857 --penalty_step 0.0001 --penalty_step_count 1 -m ru-en\r\n\r\nHere is what each parameter means:\r\n\r\n--samples article_samples/ - path to article samples folder\r\n\r\n--lang1 ru --lang2 en - languages to align (articles of second language should be aligned manually, script will be using \"??_orig\" files, align them automatically and will compare with manually aligned)\r\n\r\n--threshold 0.1536422609112349e-6 - threshold value of model, selection will be made around this value\r\n\r\n--threshold_step 0.0000001 - step of changing value\r\n\r\n--threshold_step_count 10 - number of steps to check below and above vaule, eg if value 10, step 1, and count 2, script will check 8 9 10 11 12\r\n\r\nsame parameters for penalty\r\n\r\n-m ru-en - path to yalign model\r\n\r\nAlso you can use (to tweak comparison of text lines in files):\r\n\r\n--length and --similarity --length - min diffirence in length in order to mark lines similar, 1 - same length, 0.5 - at least half of length --similarity - similarity of text in lines, 1 - exactly same, 0 - completely different. For similarity check sentences compared as sequence of characters.\r\n\r\nIt has multiprocessing support already. Use -t option to set number of threads, by default it sets number of threads equal to number of CPU.\r\n\r\nfor additional parameters you can use '-h' key.\r\n\r\nThen yalign_selection.py script will finish work it will produce csv file, with first column equal to threshold, second column equal to penalty, and third is similarity for this parameters.\r\n\r\nAlign with HUNALING method\r\nIn order to use hunalign you need add \"--hunalign\" option in align.py script, here is example:\r\n\r\n$ python align.py -l li-hu -r align_result -o wikipedia --hunalign\r\n\r\nIn my empirical study it provides better results when articles are translations of each other or simillar in leghth and content.\r\n\r\nAlign From fodler\r\nFor aligning already aligned texts using hunalign:\r\n\r\nCommand exmaple is:\r\n\r\n$ python align_aligned_using_hunalign.py source/ target/\r\n\r\nFinal info\r\nWo\u0142k, K., & Marasek, K. (2015, September). Tuned and GPU-accelerated parallel data mining from comparable corpora. In International Conference on Text, Speech, and Dialogue (pp. 32-40). Springer International Publishing.\r\n\r\nhttp://arxiv.org/pdf/1509.08639\r\n\r\nFor more detailed usage instruction see howto.pdf.\r\n\r\nFor any questions: | Krzysztof Wolk | krzysztof@wolk.pl;2018-07-18;toolService;http://hdl.handle.net/11321/528;eng;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Polish-Japanese Academy of Information Technology;https://github.com/krzwolk/yalign",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "821f73fe-5d83-586e-a1c8-de02e5093818",
+    "notes": [
+        "Script consists of 2 parts:\r\n\r\narticle parser\r\naligner\r\nRequired software (install before using script):\r\n\r\nyalign\r\nadditional Ubuntu packages:\r\nmongodb\r\nipython\r\npython-nose\r\npython-werkzeug\r\nWiki article parser\r\nArticle parser works in 2 steps:\r\n\r\nExtracts articles from wiki dumps\r\nSaves extracted articles to local DB (Mongo DB)\r\nBefore using parser, wiki dumps should be downloaded and extracted to some directory (directory should contain *.xml, *.sql files). For each language 2 dump files should be downloaded - articles and language link dumps, here is examples:\r\n\r\nPL:\r\n\r\nhttp://dumps.wikimedia.org/plwiki/latest/plwiki-latest-pages-articles.xml.bz2\r\nhttp://dumps.wikimedia.org/plwiki/latest/plwiki-latest-langlinks.sql.gz\r\nEN:\r\n\r\nhttp://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2\r\nhttp://dumps.wikimedia.org/enwiki/latest/enwiki-latest-langlinks.sql.gz\r\nIMPORTANT NOTE: Engilsh dumps after extraction will require about 50 Gb of free space. During parsing parser can require up to 8 Gb ram.\r\n\r\nArticle parser have option \"main language\" - its language for which articles extracted from other languages only if it exist in main language. Eg. if main language is PL, then article extractor first extracts all article for PL, then article for other languages and only if such articles exists in PL translation. This reduces space requirements.\r\n\r\nFor help use:\r\n\r\n$ python parse_wiki_dumps.py -h\r\n\r\nExample command:\r\n\r\n$ python parse_wiki_dumps.py -d ~/temp/wikipedia_dump/ -l pl -v\r\n\r\nWikipedia aligner\r\nAligner can be used when article extracted from dumps.\r\n\r\nAligner takes article pairs for given language pair, aligns text and saves parallel corpara to 2 files. Option \"-s\" can be used to limit number of symbols in file (by default size is 50000000 symbols, thats around 50-60Mb)\r\n\r\nBy default aligner tries to continue aligning where it was stopped, to force aligning from begining need to use \"--restart\" key\r\n\r\nFor help use:\r\n\r\n$ python align.py -h\r\n\r\nExample command:\r\n\r\n$ python align.py -o wikipedia -l en-pl -v\r\n\r\nEuronews crawler\r\nCrawler finds links to articles using euronews archive http://euronews.com/2004/, and in parallel extracts and saves article texts to DB.\r\n\r\nFor help use:\r\n\r\n$ python parse_euronews.py -h\r\n\r\nExample command:\r\n\r\n$ python parse_euronews.py -l en,pl -v\r\n\r\nEuronews aligner\r\nStarting aligner for euronews articles:\r\n\r\n$ python align.py -o euronews -l en-pl -v\r\n\r\nSaving articles in plain text\r\nScript \"save_plain_text.py\" can be used to save all articles in plain text format, it accepts path for saving articles, languages of articles to be saved, and source of articles (euronews, wikipedia).\r\n\r\nFor help use:\r\n\r\n$ python save_plain_text.py -h\r\n\r\nExample command:\r\n\r\n$ python save_plain_text.py -l en,pl -r [path] -o euronews\r\n\r\nYalign selection\r\nThis script tries random parameters for model of yalign in order to get best parameters for aligning provided text samples.\r\n\r\nBefore using yalign_selection script need to prepare article samples using prepare_random_sampling.py script.\r\n\r\nCreating folder with article samples can be done with this command:\r\n\r\n$ python prepare_random_sampling.py -o wikipedia -c 10 -l ru-en -v\r\n\r\n-o wikipedia - source of articles can be wikipedia or euronews\r\n\r\n-c 10 - number of articles to extract\r\n\r\n-l ru-en - languages to extract\r\n\r\nThis script will create \"article_samples\" folder with articles files, then you can create manually aligned files (you need align article of second language), for this example you need to align \"en\" file, files named \"_orig\" - should be left unmodified\r\n\r\nThen manual aligning is ready you can run selection script here is example:\r\n\r\n$ python yalign_selection.py --samples article_samples/ --lang1 ru --lang2 en --threshold 0.1536422609112349e-6 --threshold_step 0.0000001 --threshold_step_count 10 --penalty 0.014928930455303857 --penalty_step 0.0001 --penalty_step_count 1 -m ru-en\r\n\r\nHere is what each parameter means:\r\n\r\n--samples article_samples/ - path to article samples folder\r\n\r\n--lang1 ru --lang2 en - languages to align (articles of second language should be aligned manually, script will be using \"??_orig\" files, align them automatically and will compare with manually aligned)\r\n\r\n--threshold 0.1536422609112349e-6 - threshold value of model, selection will be made around this value\r\n\r\n--threshold_step 0.0000001 - step of changing value\r\n\r\n--threshold_step_count 10 - number of steps to check below and above vaule, eg if value 10, step 1, and count 2, script will check 8 9 10 11 12\r\n\r\nsame parameters for penalty\r\n\r\n-m ru-en - path to yalign model\r\n\r\nAlso you can use (to tweak comparison of text lines in files):\r\n\r\n--length and --similarity --length - min diffirence in length in order to mark lines similar, 1 - same length, 0.5 - at least half of length --similarity - similarity of text in lines, 1 - exactly same, 0 - completely different. For similarity check sentences compared as sequence of characters.\r\n\r\nIt has multiprocessing support already. Use -t option to set number of threads, by default it sets number of threads equal to number of CPU.\r\n\r\nfor additional parameters you can use '-h' key.\r\n\r\nThen yalign_selection.py script will finish work it will produce csv file, with first column equal to threshold, second column equal to penalty, and third is similarity for this parameters.\r\n\r\nAlign with HUNALING method\r\nIn order to use hunalign you need add \"--hunalign\" option in align.py script, here is example:\r\n\r\n$ python align.py -l li-hu -r align_result -o wikipedia --hunalign\r\n\r\nIn my empirical study it provides better results when articles are translations of each other or simillar in leghth and content.\r\n\r\nAlign From fodler\r\nFor aligning already aligned texts using hunalign:\r\n\r\nCommand exmaple is:\r\n\r\n$ python align_aligned_using_hunalign.py source/ target/\r\n\r\nFinal info\r\nWo\u0142k, K., & Marasek, K. (2015, September). Tuned and GPU-accelerated parallel data mining from comparable corpora. In International Conference on Text, Speech, and Dialogue (pp. 32-40). Springer International Publishing.\r\n\r\nhttp://arxiv.org/pdf/1509.08639\r\n\r\nFor more detailed usage instruction see howto.pdf.\r\n\r\nFor any questions: | Krzysztof Wolk | krzysztof@wolk.pl"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/528"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "comparable"
+        },
+        {
+            "name": "parallel"
+        },
+        {
+            "name": "corpora"
+        },
+        {
+            "name": "wikipedia"
+        },
+        {
+            "name": "tool"
+        },
+        {
+            "name": "builder"
+        }
+    ],
+    "title": [
+        "Parallel Corpora from Comparable Corpora tool"
+    ],
+    "url": ""
+}

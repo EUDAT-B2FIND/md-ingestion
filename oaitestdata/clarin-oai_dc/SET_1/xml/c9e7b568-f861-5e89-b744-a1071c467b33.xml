@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/288</identifier>
+    <datestamp>2016-06-03T14:42:11Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SlopeQ for BNC Search Engine</dc:title>
+      <dc:creator>P&#281;zik, Piotr</dc:creator>
+      <dc:creator>Kowalczyk, Pawe&#322;</dc:creator>
+      <dc:creator>Wilk, Pawe&#322;</dc:creator>
+      <dc:creator>Dr&#243;&#380;d&#380;, &#321;ukasz</dc:creator>
+      <dc:subject>British National Corpus</dc:subject>
+      <dc:subject>corpus search engine</dc:subject>
+      <dc:subject>SlopeQ</dc:subject>
+      <dc:description>The SlopeQ for BNC Search Engine provides access to the British National Corpus dataset. &#13;
+In addition to linguistically motivated corpus queries, it supports a number of data exploration and &#13;
+visualisation features. Most of the functionality of the search engine is available through a &#13;
+REST web service.</dc:description>
+      <dc:date>2016-03-08</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/288</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:rights>Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>University of &#321;&#243;d&#378;</dc:publisher>
+      <dc:source>http://pelcra.clarin-pl.eu/SlopeqBNC</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Bludau, Sebastian",
+        "Eickhoff, Simon B.",
+        "Tellmann, Stefanie",
+        "Mohlberg, Hartmut",
+        "Amunts, Katrin",
+        "Minnerop, Martina"
+    ],
+    "DOI": "http://dx.doi.org/10.25493/8PTB-JDH",
+    "DiscHierarchy": [
+        "3.2",
+        "Life Sciences",
+        "Medicine"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "NIFTI"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_8PTB-JDH",
+    "MetadataAccess": [
+        "10.25493_8PTB-JDH"
+    ],
+    "PublicationTimestamp": "2019-06-05T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.3389/fnana.2015.00054"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Amunts, Katrin"
+    ],
+    "fulltext": "10.25493_8PTB-JDH;2019-12-10T12:41:52Z;https://doi.org/10.25493/8PTB-JDH;Probabilistic cytoarchitectonic map of Interposed Nucleus (Cerebellum) (v6.2);2019-06-05T12:42:04.021Z;This dataset contains the distinct architectonic Interposed Nucleus (Cerebellum) in the individual, single subject template of the MNI Colin 27 as well as the MNI ICBM 152 2009c nonlinear asymmetric reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to both reference spaces, where each voxel was assigned the probability to belong to Interposed Nucleus (Cerebellum). The probability map of Interposed Nucleus (Cerebellum) is provided in the NifTi format for each brain reference space and hemisphere. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and integration of new brain structures may lead to small deviations in earlier released datasets.;neuroscience;histology;imaging;brain mapping;english;dataset;The Human Brain Project;Tellmann, Stefanie;Bludau, Sebastian;Eickhoff, Simon B.;Mohlberg, Hartmut;Minnerop, Martina;Amunts, Katrin;Amunts, Katrin;NIFTI;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.3389/fnana.2015.00054",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "2e59364c-a582-5ef8-b2d1-01f2fe836da3",
+    "notes": [
+        "This dataset contains the distinct architectonic Interposed Nucleus (Cerebellum) in the individual, single subject template of the MNI Colin 27 as well as the MNI ICBM 152 2009c nonlinear asymmetric reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to both reference spaces, where each voxel was assigned the probability to belong to Interposed Nucleus (Cerebellum). The probability map of Interposed Nucleus (Cerebellum) is provided in the NifTi format for each brain reference space and hemisphere. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and integration of new brain structures may lead to small deviations in earlier released datasets."
+    ],
+    "oai_identifier": [
+        "10.25493_8PTB-JDH"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "histology"
+        },
+        {
+            "name": "imaging"
+        },
+        {
+            "name": "brain mapping"
+        }
+    ],
+    "title": [
+        "Probabilistic cytoarchitectonic map of Interposed Nucleus (Cerebellum) (v6.2)"
+    ],
+    "url": ""
+}

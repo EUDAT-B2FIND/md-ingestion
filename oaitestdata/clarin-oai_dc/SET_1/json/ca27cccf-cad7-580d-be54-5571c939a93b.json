@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/tei+xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1057",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1057"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1057",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1057;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;W\u00f6rterbuch der deutschen Gegenwartssprache (WDG);6 volume dictionary of Standard German, retro-digitization of the printed version which appeared 196\u2013-1977;2011;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1057;deu;application/tei+xml;downloadable_files_count: 0;Germany;Berlin-Brandenburg Academy of Sciences and Humanities;http://www.dwds.de/ressourcen/woerterbuecher/wdg/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ca27cccf-cad7-580d-be54-5571c939a93b",
+    "notes": [
+        "6 volume dictionary of Standard German, retro-digitization of the printed version which appeared 196\u2013-1977"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1057"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "W\u00f6rterbuch der deutschen Gegenwartssprache (WDG)"
+    ],
+    "url": ""
+}

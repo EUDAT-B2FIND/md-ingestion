@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757024</identifier>
+    <datestamp>2019-05-22T17:31:06Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Vana kirjakeele korpus</dc:title>
+      <dc:title xml:lang="en">Corpus of Old Written Estonian</dc:title>
+      <dc:creator>Prillop, K&#252;lli</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2013</dc:date>
+      <dc:date>Issued: 2013-01-09</dc:date>
+      <dc:date>Updated: 2018-02-12</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00075L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The Corpus is geared towards researchers of the history and development of written Estonian. The texts included are from 16.-18. century. From 16th century all known printed and hand-written texts have been included, except for lists of place and person names. For 17. and 18. century a choice of more important authors and text types has been included. Both northern and southern Estonian dialects, secular as well as religious texts are represented. Excluded from the corpus are fragments, rhymes, primers, calendars and hand-written texts. For the first half of 19. century texts from a choice of authors is included. 
+The texts are in the original written form. 16.-18. century texts have been tagged with contemporary Estonian, morphological and language information. 19. century texts are unannotated.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,45 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/296</identifier>
+    <datestamp>2016-06-06T13:04:21Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Polish Speech Services</dc:title>
+      <dc:creator>Kor&#382;inek, Danijel</dc:creator>
+      <dc:creator>Marasek, Krzysztof</dc:creator>
+      <dc:creator>Brocki, &#321;ukasz</dc:creator>
+      <dc:subject>speech tools</dc:subject>
+      <dc:subject>alignemnt</dc:subject>
+      <dc:subject>speaker diarization</dc:subject>
+      <dc:subject>asr</dc:subject>
+      <dc:subject>voice activity detection</dc:subject>
+      <dc:subject>keyword spotting</dc:subject>
+      <dc:description>This archive contains the source code and configuration of the speech tools web service available at http://mowa.clarin-pl.eu/mowa. The services provided include:&#13;
++ speech to text alignemnt&#13;
++ speaker diarization&#13;
++ speech transcription&#13;
++ speech activity detection and noise classification&#13;
++ keyword spotting</dc:description>
+      <dc:date>2016-06-01</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/296</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>BSD 2 Clause</dc:rights>
+      <dc:rights>https://opensource.org/licenses/BSD-2-Clause</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Polish-Japanese Academy of Information Technology</dc:publisher>
+      <dc:source>http://mowa.clarin-pl.eu/mowa/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

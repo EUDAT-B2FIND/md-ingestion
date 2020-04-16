@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/9",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/9"
+    ],
+    "PID": "http://hdl.handle.net/11321/9",
+    "PublicationTimestamp": "2010-06-29T11:59:59Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Koco\u0144, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/9;2016-01-21T14:40:03Z;hdl_11321_3;hdl_11321_4;Corpus-SUCK;Koco\u0144, Jan;Proces przetwarzania umo\u017cliwia pobranie zawarto\u015bci serwis\u00f3w internetowych. Wej\u015bciem dla procesu jest lista adres\u00f3w URL, na wyj\u015bciu uzyskuje si\u0119 zbi\u00f3r plik\u00f3w zawieraj\u0105cych najbardziej istotn\u0105 zawarto\u015b\u0107 (tylko tekst, np. tre\u015b\u0107 artyku\u0142u, bez dodatkowych informacji na stronie) najbardziej istotnych podstron (tylko podstrony zawieraj\u0105ce tekst w odpowiedniej ilo\u015bci, bez zawarto\u015bci typu obrazy, filmy, itp.). Pliki pogrupowane s\u0105 wed\u0142ug \u017ar\u00f3d\u0142a - dla ka\u017cdego linku z wej\u015bciowej listy tworzony jest osobny katalog, w kt\u00f3rym znajduj\u0105 si\u0119 pliki. Ka\u017cdy plik jest osobn\u0105 podstron\u0105. Najbardziej istotna zawarto\u015b\u0107 jest poddana filtrowaniu (domy\u015blnie dokument powinien mie\u0107 min. 300 znak\u00f3w istotnych (nale\u017c\u0105cych do token\u00f3w) oraz min. 20% s\u0142\u00f3w musi by\u0107 znanych (znajdowa\u0107 si\u0119 w s\u0142owniku Morfeusz). Dokumenty po filtrowaniu s\u0105 tagowane przy pomocy narz\u0119dzia WCRFT;2010-06-29;toolService;http://hdl.handle.net/11321/9;pol;eng;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/redmine/projects/corpora/wiki/Corpus-SUCK",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "89282234-7d79-56c0-8db0-849c351efad4",
+    "notes": [
+        "Proces przetwarzania umo\u017cliwia pobranie zawarto\u015bci serwis\u00f3w internetowych. Wej\u015bciem dla procesu jest lista adres\u00f3w URL, na wyj\u015bciu uzyskuje si\u0119 zbi\u00f3r plik\u00f3w zawieraj\u0105cych najbardziej istotn\u0105 zawarto\u015b\u0107 (tylko tekst, np. tre\u015b\u0107 artyku\u0142u, bez dodatkowych informacji na stronie) najbardziej istotnych podstron (tylko podstrony zawieraj\u0105ce tekst w odpowiedniej ilo\u015bci, bez zawarto\u015bci typu obrazy, filmy, itp.). Pliki pogrupowane s\u0105 wed\u0142ug \u017ar\u00f3d\u0142a - dla ka\u017cdego linku z wej\u015bciowej listy tworzony jest osobny katalog, w kt\u00f3rym znajduj\u0105 si\u0119 pliki. Ka\u017cdy plik jest osobn\u0105 podstron\u0105. Najbardziej istotna zawarto\u015b\u0107 jest poddana filtrowaniu (domy\u015blnie dokument powinien mie\u0107 min. 300 znak\u00f3w istotnych (nale\u017c\u0105cych do token\u00f3w) oraz min. 20% s\u0142\u00f3w musi by\u0107 znanych (znajdowa\u0107 si\u0119 w s\u0142owniku Morfeusz). Dokumenty po filtrowaniu s\u0105 tagowane przy pomocy narz\u0119dzia WCRFT"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/9"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Corpus-SUCK"
+    ],
+    "url": ""
+}

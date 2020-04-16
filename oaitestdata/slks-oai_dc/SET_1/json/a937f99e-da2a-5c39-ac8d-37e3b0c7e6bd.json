@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "DiscHierarchy": [
+        "1.1.5",
+        "Ancient Cultures",
+        "Archaeology"
+    ],
+    "Discipline": "Archaeology",
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://www.archaeo.dk/ff/oai-pmh/?verb=GetRecord&metadataPrefix=oai_dc&identifier=a937f99e-da2a-5c39-ac8d-37e3b0c7e6bd",
+    "MetadataAccess": [
+        "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/34277/"
+    ],
+    "OpenAccess": "true",
+    "Publisher": [
+        "Aarhus University (www.au.dk)",
+        "Slots- og Kulturstyrelsen (www.slks.dk)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": [
+        "9.811246,56.302585"
+    ],
+    "TemporalCoverage": [
+        "Stenalder",
+        "-2800,-2351",
+        "AYEX"
+    ],
+    "author": [
+        "Moesg\u00e5rd Museum"
+    ],
+    "fulltext": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/34277/;2020-03-06T17:00:01.743162+01:00;http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/34277/;130511-10 Thors\u00f8;Moesg\u00e5rd Museum;This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1929      : Overpl\u00f8jet rund H\u00f8j paa Top af h\u00f8j, bred Banke; 2 x 18 m. St\u00e6rkt uregelm\u00e6ssig Overflade, neddybet i Midten. Der fandtes i denne H\u00f8j for et Par Aar siden en Sten\u00f8xe med Skafthul og et Flintspyd; nylig er en M\u00e6ngde store Sten opgravet..1892      : I de senere Aar er denne H\u00f8j overpl\u00f8jet, saa det kan nu ikke sees, om den er brudt eller ej. Fodsteen eller andre Steen sees ikke. Den er bygt af Muld og har en meget smuk Form.1929      : Overpl\u00f8jet rund H\u00f8j paa Top af h\u00f8j, bred Banke; 2 x 18 m. St\u00e6rkt uregelm\u00e6ssig Overflade, neddybet i Midten. Der fandtes i denne H\u00f8j for et Par Aar siden en Sten\u00f8xe med Skafthul og et Flintspyd; nylig er en M\u00e6ngde store Sten opgravet..1892      : I de senere Aar er denne H\u00f8j overpl\u00f8jet, saa det kan nu ikke sees, om den er brudt eller ej. Fodsteen eller andre Steen sees ikke. Den er bygt af Muld og har en meget smuk Form.\n;Slots- og Kulturstyrelsen (www.slks.dk);Aarhus University (www.au.dk);Dataset;130511-10;dan;Thors\u00f8;9.811246,56.302585;Rundh\u00f8j;Round barrow, burial mound, Funerary;Stenalder;-2800,-2351;AYEX;Public",
+    "group": "slks",
+    "groups": [
+        {
+            "name": "slks"
+        }
+    ],
+    "name": "a937f99e-da2a-5c39-ac8d-37e3b0c7e6bd",
+    "notes": [
+        "This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:\n1929      : Overpl\u00f8jet rund H\u00f8j paa Top af h\u00f8j, bred Banke; 2 x 18 m. St\u00e6rkt uregelm\u00e6ssig Overflade, neddybet i Midten. Der fandtes i denne H\u00f8j for et Par Aar siden en Sten\u00f8xe med Skafthul og et Flintspyd; nylig er en M\u00e6ngde store Sten opgravet..1892      : I de senere Aar er denne H\u00f8j overpl\u00f8jet, saa det kan nu ikke sees, om den er brudt eller ej. Fodsteen eller andre Steen sees ikke. Den er bygt af Muld og har en meget smuk Form.1929      : Overpl\u00f8jet rund H\u00f8j paa Top af h\u00f8j, bred Banke; 2 x 18 m. St\u00e6rkt uregelm\u00e6ssig Overflade, neddybet i Midten. Der fandtes i denne H\u00f8j for et Par Aar siden en Sten\u00f8xe med Skafthul og et Flintspyd; nylig er en M\u00e6ngde store Sten opgravet..1892      : I de senere Aar er denne H\u00f8j overpl\u00f8jet, saa det kan nu ikke sees, om den er brudt eller ej. Fodsteen eller andre Steen sees ikke. Den er bygt af Muld og har en meget smuk Form.\n"
+    ],
+    "oai_identifier": [
+        "a937f99e-da2a-5c39-ac8d-37e3b0c7e6bd"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Rundh\u00f8j"
+        },
+        {
+            "name": "Round barrow"
+        },
+        {
+            "name": "burial mound"
+        },
+        {
+            "name": "Funerary"
+        }
+    ],
+    "title": [
+        "130511-10 Thors\u00f8"
+    ],
+    "url": "http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/34277/"
+}

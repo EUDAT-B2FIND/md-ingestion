@@ -1,0 +1,72 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-130412444",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:16866058",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:16866058"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63674506799,
+    "TempCoverageEnd": 63674506799,
+    "TemporalCoverage": " point in time : 2018-10-07T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-10-07T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-10-07T11:59:59Z",
+    "author": [
+        "Asfandyar SIKANDAR",
+        "Yvonne CARIUS",
+        "Sebastian ADAM",
+        "Katja URBANSKY",
+        "Denys POGORYELOV",
+        "C. Roy D. LANCASTER",
+        "Oezkan YILDIZ",
+        "Yamila Maren BETZ",
+        "Louris FEITSMA",
+        "Andreas KLEIN",
+        "Jesko KOEHNKE",
+        "Ganna KRASNOSELSKA"
+    ],
+    "fulltext": "oai:oai.datacite.org:16866058;2018-10-07T06:34:38Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-130412444;C. Roy D. LANCASTER;Jesko KOEHNKE;Oezkan YILDIZ;Andreas KLEIN;Louris FEITSMA;Denys POGORYELOV;Katja URBANSKY;Yamila Maren BETZ;Sebastian ADAM;Yvonne CARIUS;Asfandyar SIKANDAR;Ganna KRASNOSELSKA;FRANKFURT/SAARLAND BAG: ATOMIC MECHANISMS OF ACTION OF MEMBRANE PROTEINS;Macromolecular Crystallography;MX-2070;bm29;European Synchrotron Radiation Facility;2018-10-07;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "0e2875ce-1aa1-555c-9906-5ed69bb99a33",
+    "oai_identifier": [
+        "oai:oai.datacite.org:16866058"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Macromolecular Crystallography"
+        },
+        {
+            "name": "MX-"
+        },
+        {
+            "name": "bm"
+        }
+    ],
+    "title": [
+        "FRANKFURT/SAARLAND BAG: ATOMIC MECHANISMS OF ACTION OF MEMBRANE PROTEINS"
+    ],
+    "url": ""
+}

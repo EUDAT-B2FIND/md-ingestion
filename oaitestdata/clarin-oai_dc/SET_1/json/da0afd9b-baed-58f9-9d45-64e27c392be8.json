@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5498",
+    "MetadataAccess": [
+        "oai:ota:oucs:5498"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Thomson, James, 1700-1748."
+    ],
+    "fulltext": "oai:ota:oucs:5498;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5498.xml;The tragedy of Sophonisba: Acted at the Theatre-Royal in Drury-Lane. By His Majesty's servants. By Mr. Thomson.;Thomson, James, 1700-1748.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "da0afd9b-baed-58f9-9d45-64e27c392be8",
+    "oai_identifier": [
+        "oai:ota:oucs:5498"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The tragedy of Sophonisba: Acted at the Theatre-Royal in Drury-Lane. By His Majesty's servants. By Mr. Thomson."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5498.xml"
+}

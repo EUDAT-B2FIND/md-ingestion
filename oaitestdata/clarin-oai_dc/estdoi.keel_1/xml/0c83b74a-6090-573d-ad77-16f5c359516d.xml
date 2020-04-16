@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:20686154</identifier>
+    <datestamp>2019-06-16T09:02:13Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Barbaruse ja Semperi kirjavahetus tekstikorpuse kujul</dc:title>
+      <dc:title xml:lang="en">Epistolary text corpus of Estonian writers Johannes Vares-Barbarus and Johannes Semper</dc:title>
+      <dc:creator>Laak, Marin</dc:creator>
+      <dc:creator>Asmer, Vilve</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-08-13</dc:date>
+      <dc:date>Updated: 2019-06-01</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-0018FL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Nii Eesti kultuuris kui poliitikas v&#245;tmerolle m&#228;nginud J. Vares-Barbaruse ja J. Semperi vaheline kirjavahetus p&#228;rineb aastatest 1911-1939(1940) ja h&#245;lmab kokku &#252;le 600 kirja. 2018. aastal koostati kirjavahetuse tekstidest XML-kujul tekstikorpus, mida saab uurida p&#228;ringus&#252;steemis KORP (korp.keeleressursid.ee). Korpus on morfoloogiliselt m&#228;rgendatud ja &#252;hestatud. Lisaks on m&#228;rgendatud: 
+        - iga kirja algus ja l&#245;pp, 
+	- l&#245;igud, 
+	- laused, 
+	- saatmise aeg, 
+	- kirja j&#228;rjekorranumber, 
+	- saatja ja adressaat, 
+	- kirjale lisatud metainfo 
+
+Korpuse tausta, koostamise ja p&#228;ringuv&#245;imaluste kohta peeti ettekanne 2018. aasta Eesti-uuringute Tippkeskuse kevadkonverentsil (Marin Laak, Kaarel Veskis, Tiina Saluvere:
+"Semperi ja Barbaruse kirjavahetuse korpuse loomisest").</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

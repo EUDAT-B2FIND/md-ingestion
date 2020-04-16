@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>13fc5802abc511e1a404080027e73ea2a210be7dd5c44a3b9dd47afb4b2a34ef</identifier>
+    <datestamp>2018-11-15T16:39:36Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:machineReadableDictionary</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Basic English-Maltese Dictionary</dc:title>
+      <dc:description>Bilingual wordlist, consisting of alphabetically ordered English lemmas with their Maltese translation and Maltese pronunciation (transcribed in ad-hoc system by the original author).</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

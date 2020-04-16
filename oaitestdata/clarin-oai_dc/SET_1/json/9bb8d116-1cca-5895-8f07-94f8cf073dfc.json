@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Burnard, Lou"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 100 KB)"
+    ],
+    "Language": [
+        "English",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1027",
+    "MetadataAccess": [
+        "oai:ota:oucs:1027"
+    ],
+    "PublicationTimestamp": "1645-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1645"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Milton, John, 1608-1674"
+    ],
+    "fulltext": "oai:ota:oucs:1027;2018-03-05T10:37:10Z;http://ota.ox.ac.uk/headers/1027.xml;Poems [1645] / John Milton;Milton, John, 1608-1674;1645;text_and_corpus_linguistics;English poetry -- 17th century;eng;lat;Oxford Text Archive, University of Oxford;Burnard, Lou;(1 file : ca. 100 KB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9bb8d116-1cca-5895-8f07-94f8cf073dfc",
+    "oai_identifier": [
+        "oai:ota:oucs:1027"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English poetry -- th century"
+        }
+    ],
+    "title": [
+        "Poems [1645] / John Milton"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1027.xml"
+}

@@ -1,0 +1,92 @@
+{
+    "Contact": [
+        "arjs@ceh.ac.uk",
+        "donm@ceh.ac.uk"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "Research site"
+    ],
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0a51954b-e2e4-51da-91a7-817ef706319d",
+    "Publisher": [
+        "Centre for Ecology & Hydrology",
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(55N,7 W)",
+    "author": [
+        "Andrew Sier",
+        "Don Monteith"
+    ],
+    "fulltext": "4ed8c99b-cb25-4a19-96f9-fc3c72b549fc;English;utf8;dataset;Research site;Don Monteith;LTER Europe;donm@ceh.ac.uk;Andrew Sier;Centre for Ecology & Hydrology;arjs@ceh.ac.uk;Centre for Ecology & Hydrology Lancaster Lancashire LA1 4AP GB;Don Monteith;LTER Europe;donm@ceh.ac.uk;2018-09-24;http://www.opengis.net/def/crs/EPSG/0/4326;Coneyglen Burn;https://deims.org/site/4ed8c99b-cb25-4a19-96f9-fc3c72b549fc;UK Upland Waters Monitoring Network (UK UWMN) site. The Coneyglen Burn lies in the Sperrin Mountains of central Northern Ireland. The catchment area is 1264 ha and rises from 230 m at the sampling station to a maximum of 562 m at Carnanelly. The underlying geology is schists of the Mullaghcarn series, which occur in places as rocky outcrops. Catchment soils are dominated by blanket peats and peaty podsols. Adjacent to the stream the thin peat is interspersed with alluvium, sands and gravels. Originally some 4% of the catchment (the lower section) was planted with conifers but this has increased slightly since 2000 as the forested area was enlarged. Previously improved grazing land in the middle section of the catchment, adjacent to a small farm, is no longer actively managed, except by grazing, and is reverting to moorland, with a predominance of Juncus species. Old field systems and drainage patterns suggest a higher intensity of land-use in the past. Elsewhere, the vegetation is characterised by moorland species, notably Calluna. Contemporary land-use and management is confined to low-intensity sheep grazing and infrequent heather burning. The annual rainfall is c.1500 mm. Note: The area is the size of the catchment.;The original metadata record was created using DEIMS-SDR, the Dynamic Ecological Information Management System - Site and dataset registry;Don Monteith;LTER Europe;donm@ceh.ac.uk;Andrew Sier;Centre for Ecology & Hydrology;arjs@ceh.ac.uk;Centre for Ecology & Hydrology Lancaster Lancashire LA1 4AP GB;Don Monteith;LTER Europe;donm@ceh.ac.uk;site;emf2iso_pointer_record;ecosystem parameter;diversity index;floristic diversity;faunistic diversity;species composition;plant species composition;species richness;species presence;nitrogen content;ammonium content;dissolved nutrient;inorganic nutrient content;total organic carbon;water parameter;water acidity;water alkalinity;chlorophyll content of water;conductivity;dissolved organic carbon in water;water transparency;water level;stage height;water quality;suspended solids;water temperature;Fresh water rivers;continuousDataCollection;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;English;environment;-7.005540000000;-7.005540000000;54.739400000000;54.739400000000;1990-01-01;https://deims.org/4ed8c99b-cb25-4a19-96f9-fc3c72b549fc;http://awmn.defra.gov.uk/sites/site_22.php;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='4ed8c99b-cb25-4a19-96f9-fc3c72b549fc'&outputFormat=SHAPE-ZIP;WFS GetFeature request for downloading the data set in SHP format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='4ed8c99b-cb25-4a19-96f9-fc3c72b549fc'&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2;WFS GetFeature request for downloading the data set in GML 3.2 format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='4ed8c99b-cb25-4a19-96f9-fc3c72b549fc'&outputFormat=application%2Fjson;WFS GetFeature request for downloading the data set in GeoJSON format;https://deims.org/node/240;United Kingdom (ECN);COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;This data set is conformant with the INSPIRE Implementing Rules for the interoperability of spatial data sets and services;false;Dataset has been created by data transformation from the original record collected by the site managers using DEIMS site metadata editing form.",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0a51954b-e2e4-51da-91a7-817ef706319d",
+    "notes": [
+        "UK Upland Waters Monitoring Network (UK UWMN) site. The Coneyglen Burn lies in the Sperrin Mountains of central Northern Ireland. The catchment area is 1264 ha and rises from 230 m at the sampling station to a maximum of 562 m at Carnanelly. The underlying geology is schists of the Mullaghcarn series, which occur in places as rocky outcrops. Catchment soils are dominated by blanket peats and peaty podsols. Adjacent to the stream the thin peat is interspersed with alluvium, sands and gravels. Originally some 4% of the catchment (the lower section) was planted with conifers but this has increased slightly since 2000 as the forested area was enlarged. Previously improved grazing land in the middle section of the catchment, adjacent to a small farm, is no longer actively managed, except by grazing, and is reverting to moorland, with a predominance of Juncus species. Old field systems and drainage patterns suggest a higher intensity of land-use in the past. Elsewhere, the vegetation is characterised by moorland species, notably Calluna. Contemporary land-use and management is confined to low-intensity sheep grazing and infrequent heather burning. The annual rainfall is c.1500 mm. Note: The area is the size of the catchment."
+    ],
+    "oai_identifier": [
+        "0a51954b-e2e4-51da-91a7-817ef706319d"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-7.005540000000,54.739400000000],[-7.005540000000,54.739400000000],[-7.005540000000,54.739400000000],[-7.005540000000,54.739400000000],[-7.005540000000,54.739400000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "site"
+        },
+        {
+            "name": "emfiso_pointer_record"
+        },
+        {
+            "name": "ecosystem parameter"
+        },
+        {
+            "name": "diversity index"
+        },
+        {
+            "name": "floristic diversity"
+        },
+        {
+            "name": "faunistic diversity"
+        },
+        {
+            "name": "species composition"
+        },
+        {
+            "name": "plant species composition"
+        },
+        {
+            "name": "species richness"
+        },
+        {
+            "name": "species presence"
+        },
+        {
+            "name": "nitrogen content"
+        },
+        {
+            "name": "ammonium content"
+        }
+    ],
+    "title": [
+        "Coneyglen Burn"
+    ],
+    "url": "https://deims.org/node/240"
+}

@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 458 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0651",
+    "MetadataAccess": [
+        "oai:ota:oucs:0651"
+    ],
+    "PublicationTimestamp": "1621-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1621"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Du Bartas, Guillaume de Salluste, seigneur, 1544-1590"
+    ],
+    "fulltext": "oai:ota:oucs:0651;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0651.xml;Sepmaine. Selections. English ;The divine weeks and works of Guillaume de Saluste, Sieur du Bartas : the third and fourth days of the second week;Du Bartas, Guillaume de Salluste, seigneur, 1544-1590;1621;text_and_corpus_linguistics;Poems;Epics;Translations -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;(1 file : ca. 458 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "75e293e1-161d-598a-b4d8-01ffefef4a47",
+    "oai_identifier": [
+        "oai:ota:oucs:0651"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems"
+        },
+        {
+            "name": "Epics"
+        },
+        {
+            "name": "Translations -- England -- th century"
+        }
+    ],
+    "title": [
+        "Sepmaine. Selections. English ",
+        "The divine weeks and works of Guillaume de Saluste, Sieur du Bartas : the third and fourth days of the second week"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0651.xml"
+}

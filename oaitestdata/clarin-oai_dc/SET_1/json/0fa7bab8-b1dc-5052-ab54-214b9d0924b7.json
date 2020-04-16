@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "between 1 and 2 MB"
+    ],
+    "Language": [
+        "Latin",
+        "Old English (ca. 450-1100)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0512",
+    "MetadataAccess": [
+        "oai:ota:oucs:0512"
+    ],
+    "PublicationTimestamp": "1100-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1100"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Phrase books"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Unknown"
+    ],
+    "fulltext": "oai:ota:oucs:0512;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0512.xml; Early scholastic colloquies / compiled by David Howlett;Unknown;900-1100;text_and_corpus_linguistics;Phrase books -- England;lat;ang;Oxford Text Archive, University of Oxford;between 1 and 2 MB;Text;Phrase books;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0fa7bab8-b1dc-5052-ab54-214b9d0924b7",
+    "oai_identifier": [
+        "oai:ota:oucs:0512"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Phrase books -- England"
+        }
+    ],
+    "title": [
+        " Early scholastic colloquies / compiled by David Howlett"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0512.xml"
+}

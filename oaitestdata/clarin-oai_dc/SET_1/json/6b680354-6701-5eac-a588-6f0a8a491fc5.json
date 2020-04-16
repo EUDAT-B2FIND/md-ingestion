@@ -1,0 +1,49 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4431",
+    "MetadataAccess": [
+        "oai:ota:oucs:4431"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:4431;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4431.xml;An account of the proceedings against the rebels, and other prisoners, tried before the Lord Chief Justice Jefferies: and other judges in the west of England, in 1685. for taking arms under the Duke of Monmouth. ... To which is prefix'd, the Duke of Monmouth's, the Earl of Argyle's, and the Pretender's declarations, that the reader may the better judge of the cause of the several rebellions.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6b680354-6701-5eac-a588-6f0a8a491fc5",
+    "oai_identifier": [
+        "oai:ota:oucs:4431"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An account of the proceedings against the rebels, and other prisoners, tried before the Lord Chief Justice Jefferies: and other judges in the west of England, in 1685. for taking arms under the Duke of Monmouth. ... To which is prefix'd, the Duke of Monmouth's, the Earl of Argyle's, and the Pretender's declarations, that the reader may the better judge of the cause of the several rebellions."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4431.xml"
+}

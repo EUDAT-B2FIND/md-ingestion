@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=4ab1ea58e6d311e6a2aa782bcb0741351e920e18429e4d3e9d229a58030812fe",
+    "MetadataAccess": [
+        "4ab1ea58e6d311e6a2aa782bcb0741351e920e18429e4d3e9d229a58030812fe"
+    ],
+    "PublicationTimestamp": "2017-01-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "fulltext": "4ab1ea58e6d311e6a2aa782bcb0741351e920e18429e4d3e9d229a58030812fe;2018-11-15T16:40:24Z;corpus;corpus:text;LX-SimLex-999;The LX-SimLex-999 was created from SimLex-999 (Hill et al., 2015) which, in turn, was based in the University of South Florida Free Association Database (USF) (Nelson et al., 2014).\nThere were strict guidelines to create SimLex-999. Both words in each pair have the same morphosyntactic category and the multiword expressions and named entities were excluded from that data set. Besides the morphosyntactic category criteria, the level of concreteness of each word was important. The word pairs in the USF data set had been tagged with a concreteness level that was provided by human annotators, on a scale of 1-7. In the creation of SimLex-999, this classification was taken into account and the pairs in which one of the concepts was more concrete than the other were not included.  \nThe result was 999 word pairs organized in the following way: 666 pairs of noun-noun, 222 pairs of verb-verb and 111 pairs of adjective-adjective. Each pair received a score on a scale from 0 (totally unrelated) to 6 (very similar).;2017-01-30",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "94b88ae1-9d46-5c07-988b-00f79c48d991",
+    "notes": [
+        "The LX-SimLex-999 was created from SimLex-999 (Hill et al., 2015) which, in turn, was based in the University of South Florida Free Association Database (USF) (Nelson et al., 2014).\nThere were strict guidelines to create SimLex-999. Both words in each pair have the same morphosyntactic category and the multiword expressions and named entities were excluded from that data set. Besides the morphosyntactic category criteria, the level of concreteness of each word was important. The word pairs in the USF data set had been tagged with a concreteness level that was provided by human annotators, on a scale of 1-7. In the creation of SimLex-999, this classification was taken into account and the pairs in which one of the concepts was more concrete than the other were not included.  \nThe result was 999 word pairs organized in the following way: 666 pairs of noun-noun, 222 pairs of verb-verb and 111 pairs of adjective-adjective. Each pair received a score on a scale from 0 (totally unrelated) to 6 (very similar)."
+    ],
+    "oai_identifier": [
+        "4ab1ea58e6d311e6a2aa782bcb0741351e920e18429e4d3e9d229a58030812fe"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "LX-SimLex-999"
+    ]
+}

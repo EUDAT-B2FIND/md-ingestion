@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-280</identifier>
+    <datestamp>2016-04-06T16:39:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Natural Language Toolkit</dc:title>
+      <dc:description>Open source Python modules, linguistic data and documentation for research and development in natural language processing, supporting dozens of NLP tasks. NLTK includes the following software modules (~120k lines of Python code): Corpus readers interfaces to many corpora  Tokenizers whitespace, newline, blankline, word, treebank, sexpr, regexp, Punkt sentence segmenter  Stemmers Porter, Lancaster, regexp  Taggers regexp, n-gram, backoff, Brill, HMM, TnT  Chunkers regexp, n-gram, named-entity  Parsers recursive descent, shift-reduce, chart, feature-based, probabilistic, dependency, ...  Semantic interpretation untyped lambda calculus, first-order models, DRT, glue semantics, hole semantics, parser interface  WordNet WordNet interface, lexical relations, similarity, interactive browser  Classifiers decision tree, maximum entropy, naive Bayes, Weka interface, megam  Clusterers expectation maximization, agglomerative, k-means  Metrics accuracy, precision, recall, windowdiff, distance metrics, inter-annotator agreement coefficients, word association measures, rank correlation  Estimation uniform, maximum likelihood, Lidstone, Laplace, expected likelihood, heldout, cross-validation, Good-Turing, Witten-Bell  Miscellaneous unification, chatbots, many utilities  NLTK-Contrib (less mature) categorial grammar (Lambek, CCG), finite-state automata, hadoop (MapReduce), kimmo, readability, textual entailment, timex, TnT interface, inter-annotator agreement</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-280</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:source>http://www.nltk.org</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

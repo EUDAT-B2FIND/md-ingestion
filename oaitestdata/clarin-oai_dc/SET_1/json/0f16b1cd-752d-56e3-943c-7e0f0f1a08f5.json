@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3330",
+    "MetadataAccess": [
+        "oai:ota:oucs:3330"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Murphy, Arthur, 1727-1805."
+    ],
+    "fulltext": "oai:ota:oucs:3330;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3330.xml;Genuine memoirs of the life and adventures of the celebrated Miss Ann Elliot: Written by a gentleman intimately acquainted with her; ...;Murphy, Arthur, 1727-1805.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0f16b1cd-752d-56e3-943c-7e0f0f1a08f5",
+    "oai_identifier": [
+        "oai:ota:oucs:3330"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Genuine memoirs of the life and adventures of the celebrated Miss Ann Elliot: Written by a gentleman intimately acquainted with her; ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3330.xml"
+}

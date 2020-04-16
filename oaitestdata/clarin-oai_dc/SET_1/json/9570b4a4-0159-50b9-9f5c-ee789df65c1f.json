@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Trojina, Institute for Applied Slovene Studies",
+        "Faculty of Arts, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 4",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1046",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1046"
+    ],
+    "PID": "http://hdl.handle.net/11356/1046",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Trojina, Institute for Applied Slovene Studies",
+        "Faculty of Arts, University of Ljubljana"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11356/1195"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Dobrovoljc, Kaja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1046;2018-08-03T18:53:43Z;hdl_11356_1023;hdl_11356_1024;Gos corpus n-grams 1.0;Dobrovoljc, Kaja;n-grams;wordlist;multiword expressions;This is a collection of n-grams extracted from the Gos corpus of  spoken Slovene. http://hdl.handle.net/11356/1040. In addition to the separate lists of n-grams for tokens and their attributes (normalized form, morphosyntacic tag, lemma), an adjusted frequency list with statistical substring reduction has also been added (as described in O'Donnell 2011). Only n-grams within sentences have been counted.;2015-07-01;lexicalConceptualResource;http://hdl.handle.net/11356/1046;slv;http://hdl.handle.net/11356/1195;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 4;Trojina, Institute for Applied Slovene Studies;Faculty of Arts, University of Ljubljana;http://eng.slovenscina.eu/korpusi/gos",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9570b4a4-0159-50b9-9f5c-ee789df65c1f",
+    "notes": [
+        "This is a collection of n-grams extracted from the Gos corpus of  spoken Slovene. http://hdl.handle.net/11356/1040. In addition to the separate lists of n-grams for tokens and their attributes (normalized form, morphosyntacic tag, lemma), an adjusted frequency list with statistical substring reduction has also been added (as described in O'Donnell 2011). Only n-grams within sentences have been counted."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1046"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "n-grams"
+        },
+        {
+            "name": "wordlist"
+        },
+        {
+            "name": "multiword expressions"
+        }
+    ],
+    "title": [
+        "Gos corpus n-grams 1.0"
+    ],
+    "url": ""
+}

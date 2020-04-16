@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Dell, Thomas"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 338 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2042",
+    "MetadataAccess": [
+        "oai:ota:oucs:2042"
+    ],
+    "PublicationTimestamp": "1968-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1968"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Essays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Kirkland, Winifred Margaretta, 1872-1943"
+    ],
+    "fulltext": "oai:ota:oucs:2042;2018-03-01T16:30:42Z;http://ota.ox.ac.uk/headers/2042.xml;The joys of being a woman and other papers / Winifred Kirkland;Kirkland, Winifred Margaretta, 1872-1943;1968;text_and_corpus_linguistics;American essays -- 20th century;eng;Oxford Text Archive, University of Oxford;Dell, Thomas;text/plain;(1 file : ca. 338 KB);Text;Essays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1887dbb1-9553-5c2b-bcb1-02e5abdce680",
+    "oai_identifier": [
+        "oai:ota:oucs:2042"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American essays -- th century"
+        }
+    ],
+    "title": [
+        "The joys of being a woman and other papers / Winifred Kirkland"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2042.xml"
+}

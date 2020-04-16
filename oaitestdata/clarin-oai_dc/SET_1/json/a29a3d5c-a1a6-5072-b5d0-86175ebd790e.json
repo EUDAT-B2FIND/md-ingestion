@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "University of Tartu"
+    ],
+    "Contributor": [
+        "Lippus, P\u00e4rtel"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Estonian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1079",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1079"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1079",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Tartu"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Estonia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1079;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Phonetic Corpus of Estonian Spontaneous Speech (online search engine);Lippus, P\u00e4rtel;speech corpus;Studio recordings of spontaneous Estonian segmented phonetically on word, sound, and other linguistic levels. Current size about 22 hours of speech, 155 000 words. Online search engine lets you search from word-level segments and returns matching 2 second sequences of sound and segmentation.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1079;est;downloadable_files_count: 0;Estonia;University of Tartu;http://www.murre.ut.ee/phonetic-corpus/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a29a3d5c-a1a6-5072-b5d0-86175ebd790e",
+    "notes": [
+        "Studio recordings of spontaneous Estonian segmented phonetically on word, sound, and other linguistic levels. Current size about 22 hours of speech, 155 000 words. Online search engine lets you search from word-level segments and returns matching 2 second sequences of sound and segmentation."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1079"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        }
+    ],
+    "title": [
+        "Phonetic Corpus of Estonian Spontaneous Speech (online search engine)"
+    ],
+    "url": ""
+}

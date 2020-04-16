@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Leibniz Universit\u00e4t Hannover"
+    ],
+    "Contributor": [
+        "Diewald, Prof. Dr. Gabriele"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1130",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1130"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1130",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Leibniz Universit\u00e4t Hannover"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1130;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Kali-Korpus;Diewald, Prof. Dr. Gabriele;Germanistik;Diachronic corpus with focus on annotation and lemmatization of verbal categories; diachrones Korpus mit Fokus auf  Annotation und Lemmatisierung von Verbalkategorien;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1130;deu;downloadable_files_count: 0;Germany;Leibniz Universit\u00e4t Hannover;http://www.kali.uni-hannover.de",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "164bf2b4-b04b-5ad7-997c-6b97a75868a1",
+    "notes": [
+        "Diachronic corpus with focus on annotation and lemmatization of verbal categories; diachrones Korpus mit Fokus auf  Annotation und Lemmatisierung von Verbalkategorien"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1130"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Kali-Korpus"
+    ],
+    "url": ""
+}

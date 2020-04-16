@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 61.5 KB)"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2408",
+    "MetadataAccess": [
+        "oai:ota:oucs:2408"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Euripides"
+    ],
+    "fulltext": "oai:ota:oucs:2408;2018-07-27T14:11:29Z;http://ota.ox.ac.uk/headers/2408.xml;The Electra of Euripides;Euripides;default: 1976-01-01;text_and_corpus_linguistics;Plays -- B.C.;grc;Oxford Text Archive, University of Oxford;(1 file : ca. 61.5 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9e3141ef-ee8c-5804-a4b4-a05ab3cbd88c",
+    "oai_identifier": [
+        "oai:ota:oucs:2408"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- B.C."
+        }
+    ],
+    "title": [
+        "The Electra of Euripides"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2408.xml"
+}

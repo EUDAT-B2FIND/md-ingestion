@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1128</identifier>
+    <datestamp>2016-04-06T16:39:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Textsammlung von Thomas Gloning</dc:title>
+      <dc:contributor>Gloning, Prof. Dr. Thomas</dc:contributor>
+      <dc:subject>Germanistik</dc:subject>
+      <dc:description>i.a. collection of old herbal books, old cookery books and texts on the history of  German language in print media; u.a. eine Sammlung von alten Kr&#228;uterb&#252;chern, alten Kochb&#252;chern und Texten zur Geschichte der deutschen Pressesprache</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1128</dc:identifier>
+      <dc:language>deu</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:source>http://www.uni-giessen.de/gloning/etexte.htm</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

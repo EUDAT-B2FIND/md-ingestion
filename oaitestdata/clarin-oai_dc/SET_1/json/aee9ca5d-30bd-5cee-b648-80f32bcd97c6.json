@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3003",
+    "MetadataAccess": [
+        "oai:ota:oucs:3003"
+    ],
+    "PublicationTimestamp": "1606-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1606"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Middleton, Thomas, 1580-1627"
+    ],
+    "fulltext": "oai:ota:oucs:3003;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3003.xml;The revenger's tragedy;Middleton, Thomas, 1580-1627;not after: 1606;text_and_corpus_linguistics;English drama -- 17th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "aee9ca5d-30bd-5cee-b648-80f32bcd97c6",
+    "oai_identifier": [
+        "oai:ota:oucs:3003"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "The revenger's tragedy"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3003.xml"
+}

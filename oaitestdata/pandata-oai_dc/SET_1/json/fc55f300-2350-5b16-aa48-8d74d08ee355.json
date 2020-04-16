@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Science and Technology Facilities Council, ISIS"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5286/ISIS.E.24079768",
+    "Discipline": "Not stated",
+    "Format": [
+        "isis neutron raw;binary;2;None"
+    ],
+    "Language": [
+        "English"
+    ],
+    "PublicationTimestamp": "2013-05-04T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Rights": [
+        "ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html"
+    ],
+    "TempCoverageBegin": 63408308399,
+    "TempCoverageEnd": 63408308399,
+    "TemporalCoverage": " point in time : 2010-05-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2010-05-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2010-05-01T11:59:59Z",
+    "author": [
+        "Dr Jeroen Plomp",
+        "Dr Ad van Well"
+    ],
+    "fulltext": [
+        "\n    ",
+        "isis_24079768",
+        "2016-04-08T15:23:24Z",
+        "\n    ",
+        "\n      ",
+        "10.5286/ISIS.E.24079768",
+        "Structure of phospholipid monolayers containing lipid-PEG-ligand",
+        "The incorporation of lipid-PEG-ligand molecules into liposome membrane imparts targeting ability and specificity to liposomes. Crucial for the targeting ability is the accessibility of the ligand for the cell receptors. However, the surface of the liposome membrane is covered by PEG (polyethylene glycol) layer that shields the ligands and inhibits targeting. Modifying the liposome membrane with bidisperse PEG layer results in distribution of the ligands in the periphery of the liposome and thus enhanced targeting.  Here we would like to examine the structure of model liposome membranes with bidisperse PEG layer regarding the distribution of the ligands.",
+        "[SURF];RB1010369;run_number_range",
+        "http://dx.doi.org/10.5286/ISIS.E.24079768",
+        "Dr Jeroen Plomp",
+        "Dr Ad van Well",
+        "Science and Technology Facilities Council, ISIS",
+        "Clean energy and the environment, pharmaceuticals and health care, nanotechnology and materials engineering, catalysis and polymers, fundamental studies of materials",
+        "2013-05-04 08:43:02",
+        "en",
+        "ISIS;ISIS Pulsed Neutron & Muon Source;http://www.isis.stfc.ac.uk;[SURF]",
+        "isis neutron raw;binary;2;None",
+        "ISIS, Harwell, United Kingdom",
+        "ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html",
+        "GB",
+        "2010-05-01 08:28:36;2010-05-04 08:43:02"
+    ],
+    "notes": [
+        "The incorporation of lipid-PEG-ligand molecules into liposome membrane imparts targeting ability and specificity to liposomes. Crucial for the targeting ability is the accessibility of the ligand for the cell receptors. However, the surface of the liposome membrane is covered by PEG (polyethylene glycol) layer that shields the ligands and inhibits targeting. Modifying the liposome membrane with bidisperse PEG layer results in distribution of the ligands in the periphery of the liposome and thus enhanced targeting.  Here we would like to examine the structure of model liposome membranes with bidisperse PEG layer regarding the distribution of the ligands."
+    ],
+    "oai_identifier": [
+        "isis_24079768"
+    ],
+    "oai_set": null,
+    "tags": [
+        {
+            "name": "Clean energy environment"
+        },
+        {
+            "name": "pharmaceuticals health care"
+        },
+        {
+            "name": "nanotechnology materials engineering"
+        },
+        {
+            "name": "catalysis polymers"
+        },
+        {
+            "name": "fundamental studies materials"
+        }
+    ],
+    "title": [
+        "Structure of phospholipid monolayers containing lipid-PEG-ligand"
+    ],
+    "url": ""
+}

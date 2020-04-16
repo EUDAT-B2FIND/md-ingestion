@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3774",
+    "MetadataAccess": [
+        "oai:ota:oucs:3774"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gerard, Alexander, 1728-1795."
+    ],
+    "fulltext": "oai:ota:oucs:3774;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3774.xml;The influence of piety on the public good. A sermon, preached in the High Church of Edinburgh, May 31. 1761, ... By Alexander Gerard,;Gerard, Alexander, 1728-1795.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b71ff810-e9e4-5852-ba22-940c09bcf94b",
+    "oai_identifier": [
+        "oai:ota:oucs:3774"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The influence of piety on the public good. A sermon, preached in the High Church of Edinburgh, May 31. 1761, ... By Alexander Gerard,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3774.xml"
+}

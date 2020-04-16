@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Dept. of Language Technology, Research Institute for Linguistics"
+    ],
+    "Contributor": [
+        "Kata, G\u00e1bor",
+        "Tam\u00e1s, V\u00e1radi",
+        "P\u00e9ter, Vajda",
+        "Viktor, Nagy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Hungarian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1204",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1204"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1204",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Dept. of Language Technology, Research Institute for Linguistics"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Hungary"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1204;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Hungarian Lexical and Syntactic Resources for NooJ;Tam\u00e1s, V\u00e1radi;Kata, G\u00e1bor;Viktor, Nagy;P\u00e9ter, Vajda;NooJ is a linguistic development environment that includes large-coverage dictionaries and grammars, and parses corpora in real time. The large-coverage lexical resources (morphological and syntactic grammars) for Hungarian might be applied to texts in order to locate morphological, lexical and syntactic patterns and tag simple and compound words.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1204;hun;downloadable_files_count: 0;Hungary;Dept. of Language Technology, Research Institute for Linguistics;http://corpus.nytud.hu/nooj/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7db107a8-f7c4-5e16-a789-ee1d03472fbb",
+    "notes": [
+        "NooJ is a linguistic development environment that includes large-coverage dictionaries and grammars, and parses corpora in real time. The large-coverage lexical resources (morphological and syntactic grammars) for Hungarian might be applied to texts in order to locate morphological, lexical and syntactic patterns and tag simple and compound words."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1204"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Hungarian Lexical and Syntactic Resources for NooJ"
+    ],
+    "url": ""
+}

@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2483",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2483"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2483",
+    "PublicationTimestamp": "2017-10-16T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/645452"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "AGREEMENT ON THE USE OF DATA IN QT21 APE Task",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21",
+        "PUB"
+    ],
+    "author": [
+        "Turchi, Marco",
+        "Chatterjee, Rajen",
+        "Negri, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2483;2017-10-17T07:48:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;APE Shared Task WMT17: Human Post-edits Test Data EN-DE;Turchi, Marco;Chatterjee, Rajen;Negri, Matteo;machine translation;human post-edits;shared task;automatic post-editing;post-editing;Human post-edited test sentences for the WMT 2017 Automatic post-editing task. This consists in 2,000 German sentences belonging to the IT domain and already tokenized. Source and target segments can be downloaded from: https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-2133. All data is provided by the EU project QT21 (http://www.qt21.eu/).;2017-10-16;corpus;http://hdl.handle.net/11372/LRT-2483;deu;info:eu-repo/grantAgreement/EC/H2020/645452;AGREEMENT ON THE USE OF DATA IN QT21 APE Task;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Fondazione Bruno Kessler, Trento, Italy;http://www.statmt.org/wmt17/ape-task.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d42efbbc-8b56-5c78-917b-1ff9783c3d13",
+    "notes": [
+        "Human post-edited test sentences for the WMT 2017 Automatic post-editing task. This consists in 2,000 German sentences belonging to the IT domain and already tokenized. Source and target segments can be downloaded from: https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-2133. All data is provided by the EU project QT21 (http://www.qt21.eu/)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2483"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "human post-edits"
+        },
+        {
+            "name": "shared task"
+        },
+        {
+            "name": "automatic post-editing"
+        },
+        {
+            "name": "post-editing"
+        }
+    ],
+    "title": [
+        "APE Shared Task WMT17: Human Post-edits Test Data EN-DE"
+    ],
+    "url": ""
+}

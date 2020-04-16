@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>56be21a2485f11e2a2aa782bcb0741351bb6f491e1dd44efa7cd9aea25654d94</identifier>
+    <datestamp>2018-11-15T16:39:57Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PTPARL Corpus</dc:title>
+      <dc:description>The PTPARL Corpus contains approximately 975,806 running words of European Portuguese. It includes 1076 texts consisting of adapted transcriptions of the Portuguese parliament sessions, which were made available in 2004.</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

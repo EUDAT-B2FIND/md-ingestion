@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10304072</identifier>
+    <datestamp>2019-06-02T22:30:48Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Liivi-saksa s&#245;naraamat</dc:title>
+      <dc:title xml:lang="en">The Livonian-German Dictionary</dc:title>
+      <dc:creator>Langemets, Margit</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2017-02-16</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-0633CL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Sj&#246;gren-Wiedemanni s&#245;naraamatu liivi-saksa veebiversioon.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">An online Livonian&#8211;German version of the dictionary by Sj&#246;gren and Wiedemann.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

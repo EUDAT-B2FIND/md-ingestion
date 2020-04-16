@@ -1,0 +1,24 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-624",
+    "MetadataAccess": [
+        "doi:10.18419/darus-624"
+    ],
+    "fulltext": "doi:10.18419/darus-624;2020-01-31T01:00:00Z;all;10.18419/darus-624;Lohoff, Caroline;Caroline;Lohoff;Universit\u00e4t Stuttgart;GraphML files for protein sequence networks of expansin homologues;DaRUS;2020;Medicine, Health and Life Sciences;protein sequence;graph;network;amino acid sequence;alignment;Pleiss, J\u00fcrgen;J\u00fcrgen;Pleiss;Universit\u00e4t Stuttgart;2020-01-27;2020-01-30;74017190;187334563;26408406;21810184;90050475;text/xml-graphml;text/xml-graphml;text/xml-graphml;text/xml-graphml;text/xml-graphml;1.0;CC BY Waiver;GraphML files for undirected weighted graphs with nodes that represent protein sequences of expansin homologues. Protein sequences were clustered by a threshold of sequence identity to derive representative sequences.Pairwise sequence identity between two sequences was derived from global Needleman-Wunsch alignment. Protein sequence networks were generated with edge weights of pairwise sequence identity, filtered by a predefined threshold. Metadata of the nodes (e.g. annotations) and of the edges (the edge weights) were summarized in GraphML files.;The GraphML attributes for the edges comprise the edge weights (pairwise sequence identity, \"weight\").\r\nThe GraphML attributes for the nodes comprise the identifiers from the ExED (\"sequence_id\", \"protein_id\", \"hfam_id\", and \"sfam_id\" for sequence, protein, homologous family and superfamily identifiers, respectively), the NCBI taxonomy ID (\"tax_id\"), the annotated (organism) source name (\"tax_name\"), the taxonomic lineage of the source organism (\"lineage\", with taxa separated by \"&lt;--\"), and the length of the amino acid sequence (\"sequence_length\"). In addition, suggested color names are given for both fill color and border color of each node (\"color\" and \"color_border\").",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "5541987a-3d6a-59ed-b173-d86e878be4c5",
+    "oai_identifier": [
+        "doi:10.18419/darus-624"
+    ],
+    "oai_set": [
+        "all"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

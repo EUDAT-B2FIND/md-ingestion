@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:14559947</identifier>
+    <datestamp>2019-05-27T06:30:56Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele &#252;hendkorpus 2017</dc:title>
+      <dc:title xml:lang="en">Estonian National Corpus 2017</dc:title>
+      <dc:creator>Kallas, Jelena</dc:creator>
+      <dc:creator>Koppel, Kristina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-03-26</dc:date>
+      <dc:date>Updated: 2018-03-26</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-071E6L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Korpus on loodud Eesti Keele Instituudi ja Lexical Computing Ltd. koost&#246;&#246; raames. Korpuse suurus on 1,3 miljardit s&#245;net. Korpuse alus on Eesti keele &#252;hendkorpus 2013, mida Lexical Computing Ltd. uuendas 2017. aastal Eesti Keele Instituudi tellimusel.
+Allkorpused on Eesti keele koondkorpus 1990-2008, Eesti keele veebikorpus 2013, Eesti keele veebikorpus 2017 ja Eesti Vikipeedia 2017 korpus. Veebikorpused on internetist alla laetud eestikeelsete veebilehtede korpus. Korpuse loomisel on kasutatud aadressil http://corpus.tools kirjeldatud programme: SpederLing, JustText, Chared, Onion and wiki2corpus. Korpus on lemmatiseeritud, m&#228;rgendatud ja &#252;hestatud anal&#252;saatori EstNLTK abil. 
+
+
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

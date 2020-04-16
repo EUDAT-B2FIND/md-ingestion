@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Burnard, Lou"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 241 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0035",
+    "MetadataAccess": [
+        "oai:ota:oucs:0035"
+    ],
+    "PublicationTimestamp": "1785-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1785"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Cowper, William, 1731-1800"
+    ],
+    "fulltext": "oai:ota:oucs:0035;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0035.xml;The task / William Cowper;Cowper, William, 1731-1800;1785;text_and_corpus_linguistics;English poetry -- 18th century;eng;Oxford Text Archive, University of Oxford;Burnard, Lou;(1 file : ca. 241 KB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "95e5e1f2-9ee7-5fe7-90ca-25ae4aac70b3",
+    "oai_identifier": [
+        "oai:ota:oucs:0035"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English poetry -- th century"
+        }
+    ],
+    "title": [
+        "The task / William Cowper"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0035.xml"
+}

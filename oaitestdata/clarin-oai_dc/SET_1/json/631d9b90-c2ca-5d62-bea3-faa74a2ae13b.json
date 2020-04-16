@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "Contributor": [
+        "Przepi\u00f3rkowski, Adam"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-382",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-382"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-382",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Freely available in binary form. Corpus search engine on GPL - see Poliqarp."
+    ],
+    "SpatialCoverage": [
+        "Poland"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-382;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;The IPI PAN Corpus;Przepi\u00f3rkowski, Adam;monolingual corpus;morphosyntactic annotation;syntactic annotation;written, general, monolingual, synchronic; 250 million; XML (XCES), morphosyntactic, structural, metada;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-382;pol;Freely available in binary form. Corpus search engine on GPL - see Poliqarp.;downloadable_files_count: 0;Poland;Institute of Computer Science, Polish Academy of Sciences;http://korpus.pl/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "631d9b90-c2ca-5d62-bea3-faa74a2ae13b",
+    "notes": [
+        "written, general, monolingual, synchronic; 250 million; XML (XCES), morphosyntactic, structural, metada"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-382"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "monolingual corpus"
+        },
+        {
+            "name": "morphosyntactic annotation"
+        },
+        {
+            "name": "syntactic annotation"
+        }
+    ],
+    "title": [
+        "The IPI PAN Corpus"
+    ],
+    "url": ""
+}

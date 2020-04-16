@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/271</identifier>
+    <datestamp>2016-05-31T12:08:35Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SuperMatrix</dc:title>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:subject>supermatrix</dc:subject>
+      <dc:subject>sm</dc:subject>
+      <dc:description>SuperMatrix is a system to support automatic extraction of semantic relations, based on the analysis of large text corpora. System was developed as a tool for expansion of Polish wordnet (S&#322;owosie&#263;).Expansion consist of two steps: system suggests a potential links between lexical units. Linguist verify these suggestions and decide which form will go to wordnet. This speeded up the work and preserve the integrity of data entry.</dc:description>
+      <dc:date>2016-04-25</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/271</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU GPL3</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/gpl-3.0.en.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://clarin-pl.eu/en/home-page/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

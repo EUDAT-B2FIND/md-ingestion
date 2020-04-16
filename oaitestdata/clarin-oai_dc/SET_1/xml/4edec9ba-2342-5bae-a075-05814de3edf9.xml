@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/108</identifier>
+    <datestamp>2016-09-06T12:53:01Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Kven N-grams</dc:title>
+      <dc:creator>Giellatekno - Saami Language Technology, UiT The Arctic University of Norway</dc:creator>
+      <dc:creator>The Divvun group at UiT The Arctic University of Norway</dc:creator>
+      <dc:subject>Kven</dc:subject>
+      <dc:subject>Ngram</dc:subject>
+      <dc:subject>1-gram</dc:subject>
+      <dc:subject>2-gram</dc:subject>
+      <dc:subject>3-gram</dc:subject>
+      <dc:subject>Language Model</dc:subject>
+      <dc:description>The Kven N-gram data set is work done by the Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language community. In particular, Ciprian-Virgil Gerstenberger compiled the data set from the entire SIKOR Kven corpus version 2015-08-30. The length of the N-grams ranges from unigrams (single words) to tri-grams (25961 unigrams, 78497 bigrams, 27690 trigrams). Only N-grams within sentences have been counted. The data format follows the ARPA backoff N-gram models and has been generated using SRILM, the SRI Language Modeling Toolkit (http://www.speech.sri.com/projects/srilm/). Since the N-grams have been derived automatically, they may contain wrong values. In case you find any errors the creators would appreciate your feedback sent to giellatekno@uit.no and feedback@divvun.no. Please note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata).</dc:description>
+      <dc:date>2015-10-17</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/108</dc:identifier>
+      <dc:language>fkv</dc:language>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Giellatekno - Saami Language Technology</dc:publisher>
+      <dc:source>http://giellatekno.uit.no/index.eng.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

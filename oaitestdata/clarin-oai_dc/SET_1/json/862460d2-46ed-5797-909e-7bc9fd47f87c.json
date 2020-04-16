@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Royster, Paul"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 296 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1593",
+    "MetadataAccess": [
+        "oai:ota:oucs:1593"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Politics"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Jefferson, Thomas, 1743-1826"
+    ],
+    "fulltext": "oai:ota:oucs:1593;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1593.xml;Miscellany / Thomas Jefferson;Jefferson, Thomas, 1743-1826;text_and_corpus_linguistics;American literature -- 18th century;Oxford Text Archive, University of Oxford;Royster, Paul;text/sgml;(1 file : ca. 296 KB);Text;Politics;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "862460d2-46ed-5797-909e-7bc9fd47f87c",
+    "oai_identifier": [
+        "oai:ota:oucs:1593"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American literature -- th century"
+        }
+    ],
+    "title": [
+        "Miscellany / Thomas Jefferson"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1593.xml"
+}

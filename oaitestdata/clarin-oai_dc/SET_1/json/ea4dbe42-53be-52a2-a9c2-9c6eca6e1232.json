@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=49afdae26c8f11e2a2aa782bcb0741352ec66561ece64d8dbc26b09f0bead921",
+    "MetadataAccess": [
+        "49afdae26c8f11e2a2aa782bcb0741352ec66561ece64d8dbc26b09f0bead921"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "49afdae26c8f11e2a2aa782bcb0741352ec66561ece64d8dbc26b09f0bead921;2018-11-15T16:40:11Z;toolService;toolService:service;U-Compare Named Entity Recognition service;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies biomedical named entities (genes and proteins) in plain text. Also identifies sentences. \nTools in workflow: Cafetiere Sentence Splitter (University of Manchester), NEMine (University of Manchester)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ea4dbe42-53be-52a2-a9c2-9c6eca6e1232",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies biomedical named entities (genes and proteins) in plain text. Also identifies sentences. \nTools in workflow: Cafetiere Sentence Splitter (University of Manchester), NEMine (University of Manchester)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n"
+    ],
+    "oai_identifier": [
+        "49afdae26c8f11e2a2aa782bcb0741352ec66561ece64d8dbc26b09f0bead921"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Named Entity Recognition service"
+    ]
+}

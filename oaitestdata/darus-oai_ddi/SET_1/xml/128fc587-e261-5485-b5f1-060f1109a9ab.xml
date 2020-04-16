@@ -1,0 +1,76 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-456</identifier>
+    <datestamp>2019-11-13T10:39:56Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>FLP Telemetry Data Description</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-456</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-09-17</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-09-17" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>FLP Team, 2019, "FLP Telemetry Data Description", https://doi.org/10.18419/darus-456, DaRUS, V1</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>FLP Telemetry Data Description</titl>
+            <subTitl>description of the FLP telemetry data publicated with doi:10.18419/darus-451</subTitl>
+            <IDNo agency="DOI">doi:10.18419/darus-456</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">FLP Team</AuthEnty>
+          </rspStmt>
+          <prodStmt>
+            <producer affiliation="University of Stuttgart" abbr="IRS" role="https://www.irs.uni-stuttgart.de/img/imggallery_institut/IRS-Bildzeichen.jpg" URI="https://www.irs.uni-stuttgart.de/">Institute of Space Systems</producer>
+          </prodStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-09-17</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Engineering</keyword>
+            <keyword>Satellite Bus Telemetry</keyword>
+            <topcClas vocab="LC Subject Headings (LCSH)" URI="http://id.loc.gov/authorities/subjects/sh85118693.html">Scientific satellites</topcClas>
+            <topcClas vocab="LC Subject Headings (LCSH)" URI="http://id.loc.gov/authorities/subjects/sh85001426.html">Aerospace telemetry</topcClas>
+            <topcClas vocab="LC Subject Headings (LCSH)" URI="http://id.loc.gov/authorities/subjects/sh85008242.html">Artificial satellites in remote sensing</topcClas>
+            <topcClas vocab="LC Subject Headings (LCSH)" URI="http://id.loc.gov/authorities/subjects/sh85125974.html">Space vehicles--Attitude control systems</topcClas>
+            <topcClas vocab="LC Subject Headings (LCSH)" URI="http://id.loc.gov/authorities/subjects/sh93004768.html">Microspacecraft</topcClas>
+          </subject>
+          <abstract>Description of Flying Laptop Telemetry Data.&#13;
+&#13;
+For further information on the project:&#13;
+&lt;a href="https://www.kleinsatelliten.de/"&gt;https://www.kleinsatelliten.de/&lt;/a&gt;</abstract>
+          <sumDscr/>
+          <relPubl>doi, 10.18419/darus-451, https://doi.org/10.18419/darus-451</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">FLP Team</contact>
+          <depositr>Mohr, Ulrich</depositr>
+          <depDate>2019-09-10</depDate>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f284" URI="https://doi.org/10.18419/darus-456/1" level="datafile">
+        <labl>FLP_TM.pdf</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/pdf</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

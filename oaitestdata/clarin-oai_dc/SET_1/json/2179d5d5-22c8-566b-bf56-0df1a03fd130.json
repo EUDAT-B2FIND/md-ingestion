@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Druk. P. Dufour"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8576",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8576"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D3C-6",
+    "PublicationTimestamp": "1789-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1789"
+    ],
+    "Publisher": [
+        "Druk. P. Dufour"
+    ],
+    "RelatedIdentifier": [
+        "http://www.pbc.rzeszow.pl/Content/8576",
+        "oai:www.pbc.rzeszow.pl:publication:9288"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "M\u0119drzecki, Adam ( -1832)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8576;2019-03-01T17:46:52Z;Prawa miast polskich do w\u0142adzy rz\u0105dowey, wykonywaj\u0105cey i s\u0105downiczey;M\u0119drzecki, Adam ( -1832);prawo pa\u0144stwowe - Polska - 14-18 w.;rz\u0105d (organ pa\u0144stw.);Tyt., nazwa aut., wydawcy, miejsce i rok wyd. wg K. Estreicher: Bibliografia polska. T. 22 i 25;Na s. tyt. wers: \u201ew\u0142adzy prawodawczey\u201d wydrukowany na pasku papieru i naklejony w zast\u0119pstwie pierwotnych s\u0142\u00f3w: \u201ew\u0142adzy rz\u0105dowey\u201d;Druk. P. Dufour;1789;starodruk;application/xml;clarind-uds:poldilemma-8576;hdl:11858/00-246C-0000-0023-8D3C-6;Sygnatura orygina\u0142u: SD-967;pol;lat;http://www.pbc.rzeszow.pl/Content/8576;oai:www.pbc.rzeszow.pl:publication:9288;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2179d5d5-22c8-566b-bf56-0df1a03fd130",
+    "notes": [
+        "Tyt., nazwa aut., wydawcy, miejsce i rok wyd. wg K. Estreicher: Bibliografia polska. T. 22 i 25",
+        "Na s. tyt. wers: \u201ew\u0142adzy prawodawczey\u201d wydrukowany na pasku papieru i naklejony w zast\u0119pstwie pierwotnych s\u0142\u00f3w: \u201ew\u0142adzy rz\u0105dowey\u201d"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-8576"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Prawa miast polskich do w\u0142adzy rz\u0105dowey, wykonywaj\u0105cey i s\u0105downiczey"
+    ],
+    "url": ""
+}

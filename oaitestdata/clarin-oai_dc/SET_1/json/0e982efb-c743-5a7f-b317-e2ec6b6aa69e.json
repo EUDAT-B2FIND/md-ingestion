@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Bell, Timothy C."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(0 files : total of ca. 0 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1250",
+    "MetadataAccess": [
+        "oai:ota:oucs:1250"
+    ],
+    "PublicationYear": [
+        "unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Anthologies"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1250;2018-03-06T16:09:15Z;http://ota.ox.ac.uk/headers/1250.xml;Calgary compression corpus;unknown;text_and_corpus_linguistics;Anthologies -- Canada -- 20th century;Linguistic analysis (Linguistics);eng;Oxford Text Archive, University of Oxford;Bell, Timothy C.;(0 files : total of ca. 0 KB);Text;Anthologies;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0e982efb-c743-5a7f-b317-e2ec6b6aa69e",
+    "oai_identifier": [
+        "oai:ota:oucs:1250"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Anthologies -- Canada -- th century"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        }
+    ],
+    "title": [
+        "Calgary compression corpus"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1250.xml"
+}

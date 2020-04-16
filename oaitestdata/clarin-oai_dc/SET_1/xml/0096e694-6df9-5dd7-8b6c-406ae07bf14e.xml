@@ -1,0 +1,16 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>87ad7ad4bc9f11e1a404080027e73ea27860c02e583d40aeb9144efe5f25206a</identifier>
+    <datestamp>2018-11-15T16:39:25Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UIMA/U-Compare Apertium Morphological Analyser </dc:title>
+      <dc:description>This tool performs tokenization of text and assigns all possible morphological analyses to each token. These analyses include the base form of the token, part-of-speech, information about number and gender. The morphological analyser is a module of Apertium machine translation system. The provided tool can currently operate on a subset of the languages that are supported by the Apertium system, namely:  English, Spanish, Calatan, Galician, Portuguese, Romanian and Basque.  The tool is provided as a UIMA  component, specifically as Java archive (jar) file, which can be incorporated within any UIMA workflow. However, it is particularly designed use in the U-Compare text mining platform (see separate META-SHARE record), since the types of annotations it produces are compliant with the U-Compare. 
+</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

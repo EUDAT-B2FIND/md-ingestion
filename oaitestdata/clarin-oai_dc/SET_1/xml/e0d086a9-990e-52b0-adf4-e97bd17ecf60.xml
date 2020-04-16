@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>f8dd0332e6d911e6a2aa782bcb074135a226cf379cf746a8976dd3420f5a2813</identifier>
+    <datestamp>2018-11-15T16:40:25Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LX-Rare Word Similarity Dataset</dc:title>
+      <dc:description>The LX-Rare Word Similarity Data set was created from Stanford Rare Word (RW) Similarity data set (Luong et al., 2013). This list contains 2 034 words (1 017 pairs of words). All the words were extracted from Wikipedia and from WordNet (Miller, 1995), a lexical database where the concepts are grouped into sets of synonyms.
+The construction of this list followed this procedure: a) firstly, a list of rare words was selected from Wikipedia, b) after that, each rare word was paired with a related word picked from WordNet. Rare words are those words that have between 5 000 to 10 000 occurrences in Wikipedia.
+In the end, the result was a set of word pairs in which one of the words is rare and the other one, which can be rare or not, is related to the first word by some WordNet relation - it can be an hyponym, hyperonym, meronym, holonym or attribute of the former.</dc:description>
+      <dc:date>2017-01-30</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-00018L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:5756974",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:5756974"
+    ],
+    "PublicationTimestamp": "2017-03-03T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Hein, Indrek"
+    ],
+    "fulltext": "oai:oai.datacite.org:5756974;2019-04-17T17:27:28Z;ESTDOI;ESTDOI.KEEL;Eesti Keele Instituudi tekstikorpus;The Text Corpus of the Institute of the Estonian Language;Hein, Indrek;Center of Estonian Language Resources;2012;Issued: 2012-06-12;Updated: 2017-03-03;doi:10.15155/3-00-0000-0000-0000-00018L;Abstract;EKI tekstikorpus on koostatud juhuslikult kogutud materjalist (10,4 miljonit s\u00f5navormi; u 80% ulatuses ajalehetekstid) ja pole seega 'representatiivne'. Ka ei ole korpus m\u00e4rgendatud, sobides eelk\u00f5ige leksikaalse materjali otsinguks.;Abstract;The material for the text corpus has been collected haphazardly, (10.4 million word forms; ca 80% of the texts come from newspapers), which is why the corpus is not representative. Nor is the corpus tagged, thus being suited for lexical search mainly.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "11689b0c-43bd-5c2a-bcd7-7d1212072c92",
+    "notes": [
+        "Abstract",
+        "EKI tekstikorpus on koostatud juhuslikult kogutud materjalist (10,4 miljonit s\u00f5navormi; u 80% ulatuses ajalehetekstid) ja pole seega 'representatiivne'. Ka ei ole korpus m\u00e4rgendatud, sobides eelk\u00f5ige leksikaalse materjali otsinguks.",
+        "Abstract",
+        "The material for the text corpus has been collected haphazardly, (10.4 million word forms; ca 80% of the texts come from newspapers), which is why the corpus is not representative. Nor is the corpus tagged, thus being suited for lexical search mainly."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:5756974"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti Keele Instituudi tekstikorpus",
+        "The Text Corpus of the Institute of the Estonian Language"
+    ],
+    "url": ""
+}

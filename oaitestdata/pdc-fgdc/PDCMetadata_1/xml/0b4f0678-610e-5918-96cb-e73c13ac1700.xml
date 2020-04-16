@@ -1,0 +1,145 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>1734_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:12Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Jos&#233;e Lefebvre, Canadian Wildlife Service, Quebec Region</origin>
+            <origin>Jos&#233;e Lefebvre, Canadian Wildlife Service, Quebec Region</origin>
+            <origin>Jos&#233;e Lefebvre, Canadian Wildlife Service, Quebec Region</origin>
+            <pubdate>20150724</pubdate>
+            <title>Monitoring the relative abundance of bird and mammal species at Fosheim Peninsula,  Ellesmere Island</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>J. Lefebvre, unpublished data</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1734</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>The relative abundance of species is recorded as the number of individuals seen per hour spent in the field per observer. Each observer record daily the animal species encountered in the field and the number of individuals observed. To correct for any potential biases the activities and mode of transportation of observers is also taken into account.&amp;#x0d;
+&amp;#x0d;
+We also monitor the nests of bird species that are not part of our long-term monitoring and are found opportunistically, such as King Eider, Long-tailed Duck and Red-throated Loon.</abstract>
+          <purpose>Monitoring the occurence of all tundra species encountered daily</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): IPY. For further information: josee.lefebvre@ec.gc.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20070620</begdate>
+              <enddate>20090806</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>Annually</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-86.5</westbc>
+            <eastbc>-82.6</eastbc>
+            <northbc>80.3</northbc>
+            <southbc>79.9</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Abundance</themekey>
+            <themekey>Birds</themekey>
+            <themekey>Ellesmere Island</themekey>
+            <themekey>Eureka</themekey>
+            <themekey>Fosheim Peninsula</themekey>
+            <themekey>Mammals</themekey>
+            <themekey>Tundra</themekey>
+          </theme>
+          <place>
+            <placekt>Fosheim Peninsula, Ellesmere Island, Nunavut</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Service canadien de la faune</cntorg>
+              <cntper>Jos&#233;e Lefebvre</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>1141, route de l'&#201;glise</address>
+              <city>Sainte-Foy</city>
+              <state>Qc</state>
+              <postal>G1V4H5</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>418-648-3915</cntvoice>
+            <cntfax>418-648-5511</cntfax>
+            <cntemail>josee.lefebvre@ec.gc.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>1734</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20150724</metd>
+        <metrd>20150724</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Jos&#233;e Lefebvre</cntper>
+              <cntorg>Service canadien de la faune</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>1141, route de l'&#201;glise</address>
+              <city>Sainte-Foy</city>
+              <state>Qc</state>
+              <postal>G1V4H5</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>418-648-3915</cntvoice>
+            <cntfax>418-648-5511</cntfax>
+            <cntemail>josee.lefebvre@ec.gc.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

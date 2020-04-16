@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4794",
+    "MetadataAccess": [
+        "oai:ota:oucs:4794"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Doddridge, Philip, 1702-1751."
+    ],
+    "fulltext": "oai:ota:oucs:4794;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4794.xml;Hymns founded on various texts in the holy scriptures: By the late Reverend Philip Doddridge, D.D. Published from the author's manuscript by Job Orton.;Doddridge, Philip, 1702-1751.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4e697477-ac6b-52fd-a931-0a6b4e3c1826",
+    "oai_identifier": [
+        "oai:ota:oucs:4794"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Hymns founded on various texts in the holy scriptures: By the late Reverend Philip Doddridge, D.D. Published from the author's manuscript by Job Orton."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4794.xml"
+}

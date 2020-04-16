@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Johnston, Ian C."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "1 file: 328 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2524",
+    "MetadataAccess": [
+        "oai:ota:oucs:2524"
+    ],
+    "PublicationTimestamp": "1782-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1782"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Philosophical works"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Rousseau, Jean-Jacques"
+    ],
+    "fulltext": "oai:ota:oucs:2524;2018-05-17T08:02:40Z;http://ota.ox.ac.uk/headers/2524.xml;Discourse on the origin and the foundations of inequality among men;Discours sur l'origine et les fondements de l'in\u00c3\u00a9galit\u00c3\u00a9 parmi les hommes;Second Discourse;Rousseau, Jean-Jacques;1782;text_and_corpus_linguistics;Ethics;eng;Oxford Text Archive, University of Oxford;Johnston, Ian C.;1 file: 328 KB;Text;Philosophical works;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "00e9edee-1190-5607-bb2a-cc6a362241c9",
+    "oai_identifier": [
+        "oai:ota:oucs:2524"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Ethics"
+        }
+    ],
+    "title": [
+        "Discourse on the origin and the foundations of inequality among men",
+        "Discours sur l'origine et les fondements de l'in\u00c3\u00a9galit\u00c3\u00a9 parmi les hommes",
+        "Second Discourse"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2524.xml"
+}

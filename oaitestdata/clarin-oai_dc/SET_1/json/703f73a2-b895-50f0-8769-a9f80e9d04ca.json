@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=389ebe92d63711e1a404080027e73ea2a4b6c6e4ac464aa8976d233a6f26790b",
+    "MetadataAccess": [
+        "389ebe92d63711e1a404080027e73ea2a4b6c6e4ac464aa8976d233a6f26790b"
+    ],
+    "PublicationTimestamp": "2012-09-04T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "389ebe92d63711e1a404080027e73ea2a4b6c6e4ac464aa8976d233a6f26790b;2018-11-15T16:39:32Z;corpus;corpus:text;BioLexicon;The BioLexicon is a large-scale, wide-coverage computational lexicon covering the biomedical domain. A large part of the lexicon is concerned with covering biomedical terms and their variants. Entries for domain-specific verbs include syntactic and semantic information. The lexicon includes entries that correspond to biomedical-specific vocabulary, as well as general language words. ;2012-09-04",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "703f73a2-b895-50f0-8769-a9f80e9d04ca",
+    "notes": [
+        "The BioLexicon is a large-scale, wide-coverage computational lexicon covering the biomedical domain. A large part of the lexicon is concerned with covering biomedical terms and their variants. Entries for domain-specific verbs include syntactic and semantic information. The lexicon includes entries that correspond to biomedical-specific vocabulary, as well as general language words. "
+    ],
+    "oai_identifier": [
+        "389ebe92d63711e1a404080027e73ea2a4b6c6e4ac464aa8976d233a6f26790b"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "BioLexicon"
+    ]
+}

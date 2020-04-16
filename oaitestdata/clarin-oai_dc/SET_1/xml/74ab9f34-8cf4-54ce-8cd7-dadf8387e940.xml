@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:ota:oucs:2462</identifier>
+    <datestamp>2018-11-14T10:39:08Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cld="http://purl.org/cld/terms/">
+      <dc:identifier>http://ota.ox.ac.uk/headers/2462.xml</dc:identifier>
+      <dc:title>The York-Toronto-Helsinki Parsed Corpus of Old English prose (YCOE)</dc:title>
+      <dc:date>2003</dc:date>
+      <dc:subject>text_and_corpus_linguistics</dc:subject>
+      <dc:subject>English language--Old English, ca. 450-1100</dc:subject>
+      <dc:subject>English language--Old English, ca. 450-1100--Texts</dc:subject>
+      <dc:subject>Linguistic analysis (Linguistics)</dc:subject>
+      <dc:subject>Frames (Linguistics)</dc:subject>
+      <dc:language>ang</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:description>The corpus contains 1.5 million words of Old English prose taken from the Toronto Dictionary of Old English Corpus, with special formatting which makes it possible to search conveniently for syntactic structure using a computer search engine. </dc:description>
+      <dc:publisher>Oxford Text Archive, University of Oxford</dc:publisher>
+      <dc:contributor>Taylor, Ann</dc:contributor>
+      <dc:contributor>Warner, Anthony</dc:contributor>
+      <dc:contributor>Pintzuk, Susan</dc:contributor>
+      <dc:contributor>Beths, Frank</dc:contributor>
+      <dc:contributor>Arts and Humanities Research Board (AHRB)</dc:contributor>
+      <dc:contributor>Warner, Anthony</dc:contributor>
+      <dc:format>(295 files : ca. 66.7 MB)</dc:format>
+      <dc:type>Text</dc:type>
+      <dc:type>Linguistic corpora</dc:type>
+      <dc:rights>http://www.ota.ox.ac.uk/documents/user_agreement.xml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

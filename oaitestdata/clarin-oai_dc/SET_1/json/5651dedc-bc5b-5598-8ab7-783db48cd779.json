@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 567 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1982",
+    "MetadataAccess": [
+        "oai:ota:oucs:1982"
+    ],
+    "PublicationTimestamp": "1895-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1895"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Short stories"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Stevenson, Robert Louis, 1850-1894"
+    ],
+    "fulltext": "oai:ota:oucs:1982;2018-04-16T15:24:51Z;http://ota.ox.ac.uk/headers/1982.xml;New Arabian nights / by Robert Louis Stevenson;Stevenson, Robert Louis, 1850-1894;1895;text_and_corpus_linguistics;Fiction -- Great Britain -- 19th century;Short stories -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 567 KB);Text;Short stories;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5651dedc-bc5b-5598-8ab7-783db48cd779",
+    "oai_identifier": [
+        "oai:ota:oucs:1982"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Great Britain -- th century"
+        },
+        {
+            "name": "Short stories -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "New Arabian nights / by Robert Louis Stevenson"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1982.xml"
+}

@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>b8c860b66c6711e2a2aa782bcb0741357d0bd8c8d04a4101affa80b298309fa4</identifier>
+    <datestamp>2018-11-15T16:40:10Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:service</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare Discourse Parsing Service</dc:title>
+      <dc:description>Web service created by exporting UIMA-based workflow from the U-Compare text mining system.
+Functionality: Performs discourse parsing on plain text. Also identifies sentences, tokens, parts of speech, lemmas, clauses and coreference chains 
+Tools in workflow: UAIC-POSTagger, UAIC-NPChunker, UAIC-RARE, UAIC-Splitter, UAIC-DP  (all tools of the Alexandru Ioan Cuza University, Romania) 
+NOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences
+</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

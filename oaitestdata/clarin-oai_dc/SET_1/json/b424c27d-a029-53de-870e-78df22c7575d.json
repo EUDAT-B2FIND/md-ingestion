@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Charles University"
+    ],
+    "Contributor": [
+        "Hladk\u00e1, Barbora Vidov\u00e1"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1061",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1061"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1061",
+    "PublicationTimestamp": "2008-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "Charles University"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "LDC Licence",
+        "LDC Catalog No.:\tLDC2008T22"
+    ],
+    "SpatialCoverage": [
+        "Czech Republic"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1061;2017-11-09T14:21:28Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Czech Academic Corpus (CAC) 2.0;Hladk\u00e1, Barbora Vidov\u00e1;The Prague family of annotated corpora has a new member, the Czech Academic Corpus version 2.0 (CAC 2.0). CAC 2.0 consists of 650,000 words from various 1970s and 1980s newspapers, magazines and radio and television broadcast transcripts manually annotated for morphology and syntax.;2008;corpus;http://hdl.handle.net/11372/LRT-1061;ces;LDC Licence;LDC Catalog No.:\tLDC2008T22;downloadable_files_count: 0;Czech Republic;Charles University;http://ufal.mff.cuni.cz/rest/cac.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b424c27d-a029-53de-870e-78df22c7575d",
+    "notes": [
+        "The Prague family of annotated corpora has a new member, the Czech Academic Corpus version 2.0 (CAC 2.0). CAC 2.0 consists of 650,000 words from various 1970s and 1980s newspapers, magazines and radio and television broadcast transcripts manually annotated for morphology and syntax."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1061"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Czech Academic Corpus (CAC) 2.0"
+    ],
+    "url": ""
+}

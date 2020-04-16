@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0010/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0010/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0010/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-05-19T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Anelli, Andrea",
+        "Pickard, Chris J.",
+        "Engel, Edgar A.",
+        "Ceriotti, Michele",
+        "Needs, Richard J."
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0010/v1;2019-06-12Z;DOI;Dataset;Engel, Edgar A.;Anelli, Andrea;Ceriotti, Michele;Pickard, Chris J.;Needs, Richard J.;Mapping uncharted territory in ice from zeolite networks to ice structures;Materials Cloud;2018-05-19;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;3D;three-dimensional;database;high-throughput;water;ice;DFT;first-principles;doi:10.24435/materialscloud:2018.0010/v1;https://archive.materialscloud.org/2018.0010/v1;en;We report a large-scale density-functional-theory study of the configuration space of water ice. We geometry optimise 74,963 ice structures, which are selected and constructed from over five million tetrahedral networks listed in the databases of Treacy and Deem, and the International Zeolite Association database. All prior knowledge of ice is set aside and we introduce generalised convex hulls to identify configurations stabilised by appropriate thermodynamic constraints. We thereby rediscover all known phases (I to XVII, i, 0 and the quartz phase) except the metastable ice IV. Crucially, we also find promising candidates for ices XVIII through LI. Using the sketch-map dimensionality-reduction algorithm we construct an a priori, navigable map of configuration space, which reproduces similarity relations between structures and highlights the novel candidates. By relating the known phases to the tractably small, yet structurally diverse set of synthesisable candidate structures, we provide an excellent starting point for identifying formation pathways.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "9143ee55-7d34-5ffc-b47f-5677ecf87df4",
+    "notes": [
+        "We report a large-scale density-functional-theory study of the configuration space of water ice. We geometry optimise 74,963 ice structures, which are selected and constructed from over five million tetrahedral networks listed in the databases of Treacy and Deem, and the International Zeolite Association database. All prior knowledge of ice is set aside and we introduce generalised convex hulls to identify configurations stabilised by appropriate thermodynamic constraints. We thereby rediscover all known phases (I to XVII, i, 0 and the quartz phase) except the metastable ice IV. Crucially, we also find promising candidates for ices XVIII through LI. Using the sketch-map dimensionality-reduction algorithm we construct an a priori, navigable map of configuration space, which reproduces similarity relations between structures and highlights the novel candidates. By relating the known phases to the tractably small, yet structurally diverse set of synthesisable candidate structures, we provide an excellent starting point for identifying formation pathways."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0010/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "three-dimensional"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "high-throughput"
+        },
+        {
+            "name": "water"
+        },
+        {
+            "name": "ice"
+        },
+        {
+            "name": "DFT"
+        },
+        {
+            "name": "first-principles"
+        }
+    ],
+    "title": [
+        "Mapping uncharted territory in ice from zeolite networks to ice structures"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0010/v1"
+}

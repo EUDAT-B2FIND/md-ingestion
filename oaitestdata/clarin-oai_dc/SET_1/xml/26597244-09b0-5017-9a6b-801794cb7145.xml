@@ -1,0 +1,20 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>ff612a7070e311e5a2aa782bcb0741355868b1a6d9e44c7aa222d1fc8dbcd098</identifier>
+    <datestamp>2018-11-15T16:40:17Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CINTIL DependencyBank PREMIUM</dc:title>
+      <dc:description>CINTIL DependencyBank PREMIUM is a corpus of Portuguese utterances manually annotated with the representation of grammatical dependency relations and the information of part-of-speech, inflection and lemmas. It is being developed and maintained at the University of Lisbon. The current version is composed by 3,000 sentences (79,378 tokens) taken from portuguese newspaper articles.
+
+The approach we follow is to build on top of an existing resource by adding a new annotation layer. We take the existing CINTIL corpus (Barreto et al., 2006), a 1 million token corpus already annotated with manually verified information on part-of-speech, morphology and named entities, and add syntactic function tags by automatically analysing it with a state-of-the-art dependency parser (LX-DepParser1). This tentative automatic annotation is then manually corrected.The manual correction is done by two annotators under a double-blind scheme, that is followed by adjudication by a third annotator. This process is supported by a general purpose annotation tool, WebAnno (https://code.google.com/p/webanno/).
+The main motivation behind the creation of this resource was to create a corpus with a large variety of annotated phenomena that can be used for training statistical dependency parsers that are to be used in applications that deal with unrestricted text. Besides that, it enables linguistic studies that need to search the corpus for specific dependency structures.
+
+This work was partly funded by the Portuguese Foundation for Science and Technology through the Portuguese project DP4LT (PTDC/EEI-SII/1940/2012) and by the European Commision through project QTLeap (EC/FP7/610516).</dc:description>
+      <dc:date>2015-10-21</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

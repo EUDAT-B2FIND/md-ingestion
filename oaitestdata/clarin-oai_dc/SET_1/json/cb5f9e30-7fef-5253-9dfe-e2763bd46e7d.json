@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Fortier, Paul A."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 115 KB)"
+    ],
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0189",
+    "MetadataAccess": [
+        "oai:ota:oucs:0189"
+    ],
+    "PublicationTimestamp": "1926-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1926"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Malraux, Andr\u00c3\u00a9, 1901-1976"
+    ],
+    "fulltext": "oai:ota:oucs:0189;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0189.xml;La tentation de l'Occident / Andr\u00c3\u00a9 Malraux;The temptation of the East;Malraux, Andr\u00c3\u00a9, 1901-1976;1926;text_and_corpus_linguistics;French fiction -- 20th century;fra;Oxford Text Archive, University of Oxford;Fortier, Paul A.;(1 file : ca. 115 KB);Text;Novels;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cb5f9e30-7fef-5253-9dfe-e2763bd46e7d",
+    "oai_identifier": [
+        "oai:ota:oucs:0189"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "French fiction -- th century"
+        }
+    ],
+    "title": [
+        "La tentation de l'Occident / Andr\u00c3\u00a9 Malraux",
+        "The temptation of the East"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0189.xml"
+}

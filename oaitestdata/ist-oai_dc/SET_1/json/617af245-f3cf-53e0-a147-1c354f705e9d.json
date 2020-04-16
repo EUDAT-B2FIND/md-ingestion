@@ -1,0 +1,67 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15479/AT:ISTA:73",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "archive"
+    ],
+    "MetaDataAccess": "http://datarep.app.ist.ac.at/cgi/oai2?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datarep.app.ist.ac.at:73",
+    "RelatedIdentifier": [
+        "https://datarep.app.ist.ac.at/73/"
+    ],
+    "ResourceType": [
+        "Data Collection"
+    ],
+    "author": [
+        "Hahn, David"
+    ],
+    "fulltext": "oai:datarep.app.ist.ac.at:73;2018-01-25T12:25:06Z;Source codes: Brittle fracture simulation with boundary elements for computer graphics;Hahn, David;004 Data processing & computer science;005 Computer programming, programs & data;006 Special computer methods;518 Numerical analysis;531 Classical mechanics; Solid mechanics;Includes source codes, test cases, and example data used in the thesis Brittle Fracture Simulation with Boundary Elements for Computer Graphics. Also includes pre-built binaries of the HyENA library, but not sources - please contact the HyENA authors to obtain these sources if required (https://mech.tugraz.at/hyena);Data Collection;NonPeerReviewed;archive;https://datarep.app.ist.ac.at/73/;https://datarep.app.ist.ac.at/73/1/FractureRB_v1.1_2017_07_20_final_public.zip;  Hahn, David   Source codes: Brittle fracture simulation with boundary elements for computer graphics.  [Data Collection]     ;10.15479/AT:ISTA:73",
+    "group": "ist",
+    "groups": [
+        {
+            "name": "ist"
+        }
+    ],
+    "name": "617af245-f3cf-53e0-a147-1c354f705e9d",
+    "notes": [
+        "Includes source codes, test cases, and example data used in the thesis Brittle Fracture Simulation with Boundary Elements for Computer Graphics. Also includes pre-built binaries of the HyENA library, but not sources - please contact the HyENA authors to obtain these sources if required (https://mech.tugraz.at/hyena)"
+    ],
+    "oai_identifier": [
+        "oai:datarep.app.ist.ac.at:73"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Data processing"
+        },
+        {
+            "name": "computer science"
+        },
+        {
+            "name": "Computer programming"
+        },
+        {
+            "name": "programs"
+        },
+        {
+            "name": "data"
+        },
+        {
+            "name": "Special computer methods"
+        },
+        {
+            "name": "Numerical analysis"
+        },
+        {
+            "name": "Classical mechanics"
+        },
+        {
+            "name": "Solid mechanics"
+        }
+    ],
+    "title": [
+        "Source codes: Brittle fracture simulation with boundary elements for computer graphics"
+    ],
+    "url": "https://datarep.app.ist.ac.at/73/1/FractureRB_v1.1_2017_07_20_final_public.zip"
+}

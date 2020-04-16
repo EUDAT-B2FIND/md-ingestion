@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "alexander.harpke@ufz.de"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DOI": "http://dx.doi.org/10.23728/b2share.100bc12953984cd5b8b24d58fc4c4c0c",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0ba051eb-9512-57f1-90b8-260ffb097140",
+    "PID": "http://hdl.handle.net/11304/93a36e3f-a214-414f-8a42-e4a1a8b0c5e2",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "The data provider must be offered co-authorship for publications using this dataset at least within the metadata description",
+        "The opportunity to collaborate on the project using the dataset",
+        "The opportunity to review the results based on the dataset"
+    ],
+    "SpatialCoverage": "(52N,11E)",
+    "author": [
+        "Alexander Harpke"
+    ],
+    "fulltext": "0a53c139-06db-4741-b16d-fae947fceec5;English;utf8;dataset;Alexander Harpke;UFZ Helmholtz Centre for Environmental Research;Theodor-Lieser-Str. 4;Halle;06120;DE;alexander.harpke@ufz.de;pointOfContact;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;Meteorological data Wanzleben, TERENO Harz / Central German Lowlands (2011-18);2018-09-24;publication;urn:ltereurope:inspire::11736:26910;TERENO - Wanzleben - Germany;Alexander Harpke;UFZ Helmholtz Centre for Environmental Research;Theodor-Lieser-Str. 4;Halle;06120;DE;alexander.harpke@ufz.de;pointOfContact;UFZ Helmholtz Centre for Environmental Research;documentDigital;Air temperature (60 cm above ground) and precipitation (100 cm above ground) from 2013-2018;completed;Alexander Harpke;UFZ Helmholtz Centre for Environmental Research;Theodor-Lieser-Str. 4;Halle;06120;DE;alexander.harpke@ufz.de;pointOfContact;UFZ Helmholtz Centre for Environmental Research;continual;Representative area of sampling: single point Sampling frequency - sampling time span: minutes Sampling frequency - minimum sampling unit: minutes;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;air temperature;precipitation;eLTER VA;LTER Controlled Vocabulary;The data provider must be offered co-authorship for publications using this dataset at least within the metadata description;The opportunity to collaborate on the project using the dataset;The opportunity to review the results based on the dataset;The principal: Administration has granted the access and use permission: Free access and use;The principal: Research has granted the access and use permission: Free for access;The principal: Public has granted the access and use permission: Free for access;eng;environment;Weather station;11.440340280533;11.440340280533;52.067130751543;52.067130751543;102.00;102;urn:ogc:def:crs:EPSG;MSL height;Not specific to any location or epoch.;Hydrography.;Representative area of sampling: single point;ground condition;2011-11-01;2018-03-19;http://doi.org/10.23728/b2share.100bc12953984cd5b8b24d58fc4c4c0c;WWW:LINK-1.0-http--link;DOI;http://hdl.handle.net/11304/93a36e3f-a214-414f-8a42-e4a1a8b0c5e2;WWW:LINK-1.0-http--link;B2Share Landing Page;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;Method description: air temperature at 60 cm above ground, presipitation at 100 cm above groundSoil temperature: 2 cm depth; SKTS 200 probe Soil water content: 5,10,20,50 cm depth; ML2 Theta soil probe Matrix potential (soil water tension): 5,10,20,50 cm depth; pF Meter Sensor Soil temperature: 5,10,20,50 cm depth; pF Meter Sensor List of sensors of weather station Soil temperature: 5,10,20,50,100 cm; depth; BTPR Sensor Air temperature: 5,10,60,200 cm height; HC2-S3 AirClip 3000 Air humidity: 60,200 cm height; HC2-S3 AirClip 3000 Wind direction: 250 cm height; WMT50 Ultrasonic-Anemometer Wind speed: 250 cm height; WMT50 Ultrasonic-Anemometer Precipitation: 100 cm height; Thies-Precipitation sensor (Measurement principle according to \"Guide to Meteorological Instruments No 8\" (WMO)). Method URL: . Instrumentation:;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0ba051eb-9512-57f1-90b8-260ffb097140",
+    "notes": [
+        "Air temperature (60 cm above ground) and precipitation (100 cm above ground) from 2013-2018"
+    ],
+    "oai_identifier": [
+        "0ba051eb-9512-57f1-90b8-260ffb097140"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[11.440340280533,52.067130751543],[11.440340280533,52.067130751543],[11.440340280533,52.067130751543],[11.440340280533,52.067130751543],[11.440340280533,52.067130751543]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "air temperature"
+        },
+        {
+            "name": "precipitation"
+        },
+        {
+            "name": "eLTER VA"
+        }
+    ],
+    "title": [
+        "Meteorological data Wanzleben, TERENO Harz / Central German Lowlands (2011-18)"
+    ],
+    "url": ""
+}

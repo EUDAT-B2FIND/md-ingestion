@@ -1,0 +1,16 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>1390982c3aec11e2a2aa782bcb0741350903f12d7d514e119f8386683e41b6f3</identifier>
+    <datestamp>2018-11-15T16:39:54Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:thesaurus</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Maltese automatically produced distributional thesaurus</dc:title>
+      <dc:description>This is an automatically produced distributional thesaurus, which finds words that tend to occur in similar contexts as the target word. It is not a manually constructed thesaurus of synonyms. It was produced by Lexical Computing Ltd on the basis of the MLRS corpus. 
+The file contains lines with the lemma_freq and lemma in first two columns and the rest of the line is a list of up to 20 best matches pairs (lemma+score) that have score at least 0.2.</dc:description>
+      <dc:date>2012-11-30</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

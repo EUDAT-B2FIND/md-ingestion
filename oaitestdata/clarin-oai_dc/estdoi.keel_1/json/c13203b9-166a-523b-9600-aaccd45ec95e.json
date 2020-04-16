@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-000E9L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:6813486",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:6813486"
+    ],
+    "PublicationTimestamp": "2017-06-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Vare, Kadri",
+        "Orav, Heili"
+    ],
+    "fulltext": "oai:oai.datacite.org:6813486;2019-04-19T02:30:57Z;ESTDOI;ESTDOI.KEEL;Estonian Wordnet (kb72-LAST);Orav, Heili;Vare, Kadri;Center of Estonian Language Resources;2014;Issued: 2014-03-21;Updated: 2017-06-01;doi:10.15155/1-00-0000-0000-0000-000E9L;Abstract; Eesti Wordnetis (versioon 72) on praeguse seisuga (oktoober 2015) 74 720 m\u00f5istet, milles s\u00f5nu 101 761, semantilisi suhteid 239 719 ja seoseid Princetoni Wordnetiga (1.5) 108 202.  K\u00f5ik m\u00f5isted on varustatud v\u00e4hemalt \u00fche keelesisese suhtega ja v\u00e4hemalt \u00fche ILI-suhtega.;Abstract;The atom of a wordnet-type thesaurus is a synonym set (also called a synset), which is a set containing all the synonymous words or multi-word units that express the same concept. All words in a synset belong into the same part of speech.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c13203b9-166a-523b-9600-aaccd45ec95e",
+    "notes": [
+        "Abstract",
+        " Eesti Wordnetis (versioon 72) on praeguse seisuga (oktoober 2015) 74 720 m\u00f5istet, milles s\u00f5nu 101 761, semantilisi suhteid 239 719 ja seoseid Princetoni Wordnetiga (1.5) 108 202.  K\u00f5ik m\u00f5isted on varustatud v\u00e4hemalt \u00fche keelesisese suhtega ja v\u00e4hemalt \u00fche ILI-suhtega.",
+        "Abstract",
+        "The atom of a wordnet-type thesaurus is a synonym set (also called a synset), which is a set containing all the synonymous words or multi-word units that express the same concept. All words in a synset belong into the same part of speech."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:6813486"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Estonian Wordnet (kb72-LAST)"
+    ],
+    "url": ""
+}

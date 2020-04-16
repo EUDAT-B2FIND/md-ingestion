@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-44AF-C",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-44AF-C"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-44AF-C",
+    "PublicationTimestamp": "2014-02-17T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Sedl\u00e1k, Michal"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-44AF-C;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Treex::Web;Sedl\u00e1k, Michal;Treex;Perl;REST;web service;machine translation;Treex::Web is a web frontend for running Treex applications from your browser.\r\n\r\nTreex (formerly TectoMT) is a highly modular NLP framework implemented in Perl programming language. It is primarily aimed at Machine Translation, making use of the ideas and technology created during the Prague Dependency Treebank project.;2014-02-17;toolService;http://hdl.handle.net/11858/00-097C-0000-0023-44AF-C;eng;ces;downloadable_files_count: 0;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://lindat.mff.cuni.cz/services/treex-web/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f514e73d-a0bb-580b-8ddd-96c9a17a8646",
+    "notes": [
+        "Treex::Web is a web frontend for running Treex applications from your browser.\r\n\r\nTreex (formerly TectoMT) is a highly modular NLP framework implemented in Perl programming language. It is primarily aimed at Machine Translation, making use of the ideas and technology created during the Prague Dependency Treebank project."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-44AF-C"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Treex"
+        },
+        {
+            "name": "Perl"
+        },
+        {
+            "name": "REST"
+        },
+        {
+            "name": "web service"
+        },
+        {
+            "name": "machine translation"
+        }
+    ],
+    "title": [
+        "Treex::Web"
+    ],
+    "url": ""
+}

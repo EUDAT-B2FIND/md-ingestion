@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:6813486</identifier>
+    <datestamp>2019-04-19T02:30:57Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Estonian Wordnet (kb72-LAST)</dc:title>
+      <dc:creator>Orav, Heili</dc:creator>
+      <dc:creator>Vare, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2014</dc:date>
+      <dc:date>Issued: 2014-03-21</dc:date>
+      <dc:date>Updated: 2017-06-01</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-000E9L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et"> Eesti Wordnetis (versioon 72) on praeguse seisuga (oktoober 2015) 74 720 m&#245;istet, milles s&#245;nu 101 761, semantilisi suhteid 239 719 ja seoseid Princetoni Wordnetiga (1.5) 108 202.  K&#245;ik m&#245;isted on varustatud v&#228;hemalt &#252;he keelesisese suhtega ja v&#228;hemalt &#252;he ILI-suhtega.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The atom of a wordnet-type thesaurus is a synonym set (also called a synset), which is a set containing all the synonymous words or multi-word units that express the same concept. All words in a synset belong into the same part of speech.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

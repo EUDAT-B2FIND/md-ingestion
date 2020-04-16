@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Faculty of Arts, Institute of the Czech National Corpus, Charles University in Prague"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-119F-6",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-119F-6"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-119F-6",
+    "PublicationTimestamp": "2010-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "Faculty of Arts, Institute of the Czech National Corpus, Charles University in Prague"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Czech National Corpus (Shuffled Corpus Data)",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc",
+        "ACA"
+    ],
+    "author": [
+        "Hn\u00e1tkov\u00e1, Milena",
+        "Petkevi\u010d, Vladim\u00edr",
+        "Kocek, Jan",
+        "Proch\u00e1zka, Pavel",
+        "Schmiedtov\u00e1, V\u011bra",
+        "Barto\u0148, Tom\u00e1\u0161",
+        "K\u0159en, Michal",
+        "Jel\u00ednek, Tom\u00e1\u0161",
+        "Novotn\u00e1, Renata",
+        "Skoumalov\u00e1, Hana",
+        "Cvr\u010dek, V\u00e1clav"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-119F-6;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;SYN2010: balanced corpus of written Czech;K\u0159en, Michal;Barto\u0148, Tom\u00e1\u0161;Cvr\u010dek, V\u00e1clav;Hn\u00e1tkov\u00e1, Milena;Jel\u00ednek, Tom\u00e1\u0161;Kocek, Jan;Novotn\u00e1, Renata;Petkevi\u010d, Vladim\u00edr;Proch\u00e1zka, Pavel;Schmiedtov\u00e1, V\u011bra;Skoumalov\u00e1, Hana;balanced corpus;written language;Balanced corpus of contemporary written Czech sized 100 MW. It was created as a representation of written language from 2005\u20132009 and thus it contains a wide range of text types and genres (fiction, professional literature, newspapers etc.) in balanced proportions. The corpus is lemmatized and morphologically tagged by a combination of stochastic and rule-based methods.\r\nThe corpus is provided in a (semi-XML) vertical format used as an input to the Manatee query engine. The data thus correspond to the corpus available via query interface to registered users of the CNC with one important exception: they are shuffled, i.e. divided into blocks sized max. 100 words (respecting the sentence boundaries) whose ordering was randomized within the given document.;2010;corpus;http://hdl.handle.net/11858/00-097C-0000-0023-119F-6;ces;Czech National Corpus (Shuffled Corpus Data);https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc;ACA;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Faculty of Arts, Institute of the Czech National Corpus, Charles University in Prague;https://wiki.korpus.cz/doku.php/cnk:syn2010",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7a8ff9b1-fbf5-56d8-affb-8e979959d6d5",
+    "notes": [
+        "Balanced corpus of contemporary written Czech sized 100 MW. It was created as a representation of written language from 2005\u20132009 and thus it contains a wide range of text types and genres (fiction, professional literature, newspapers etc.) in balanced proportions. The corpus is lemmatized and morphologically tagged by a combination of stochastic and rule-based methods.\r\nThe corpus is provided in a (semi-XML) vertical format used as an input to the Manatee query engine. The data thus correspond to the corpus available via query interface to registered users of the CNC with one important exception: they are shuffled, i.e. divided into blocks sized max. 100 words (respecting the sentence boundaries) whose ordering was randomized within the given document."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-119F-6"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "balanced corpus"
+        },
+        {
+            "name": "written language"
+        }
+    ],
+    "title": [
+        "SYN2010: balanced corpus of written Czech"
+    ],
+    "url": ""
+}

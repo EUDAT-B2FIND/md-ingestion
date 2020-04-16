@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/41146",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=0c7e3673-15a9-58cc-9b3a-a0bf55f5d9c4",
+    "PublicationTimestamp": "2015-12-17T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-NC-ND"
+    ],
+    "SpatialCoverage": "(46N-46N,1 W-1 W)",
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Seugnet, Jean-luc",
+        "Chabirand, Jean-michel",
+        "Verite, Celine",
+        "Guesdon, Stephane",
+        "Grizon, James",
+        "Bechemin, Christian"
+    ],
+    "fulltext": "oai:seanoe.org:41146;2017-12-20;SAPERCHAIS-HF data and metadata;Guesdon, Stephane;Bechemin, Christian;Chabirand, Jean-michel;Verite, Celine;Seugnet, Jean-luc;Grizon, James;Pertuis Charentais;Terrigenous and marine inputs;Estuary;Temperature;Salinity;High frequency;The SAPERCHAIS program (Suivi des Apports marins et terrig\u00e8nes dans la mer des PERtuis CHarentAIS) was developed to monitor environmental fluctuations in the Pertuis Charentais Sea by an hydrological watchfulness. Seven stations, representatives of terrigenous or marine inputs, have been followed from 2011 to 2014. From north to south, the main four rivers of the Pertuis, Le Lay, La S\u00e8vre, Charente and Seudre, and the three maritime inputs of each strait, Breton, Antioche and Maumusson. At each station, temperature and salinity were recorded in situ, just below the surface, with a high frequency resolution (10 minutes) . This work was supported by grants from R\u00e9gion Poitou-Charentes and European Regional Development Fund to the Ifremer \"Developpement Durable de la P\u00eache et de la Conchyliculture\" project.\n;SEANOE;2015-12-17;dataset;DOI:10.17882/41146;http://dx.doi.org/10.17882/41146;North 46.31, South 45.78, East -1.05, West -1.38;https://www.seanoe.org/data/00300/41146/illustration.gif;45.78 -1.38 46.31 -1.05;CC-BY-NC-ND",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "0c7e3673-15a9-58cc-9b3a-a0bf55f5d9c4",
+    "notes": [
+        "The SAPERCHAIS program (Suivi des Apports marins et terrig\u00e8nes dans la mer des PERtuis CHarentAIS) was developed to monitor environmental fluctuations in the Pertuis Charentais Sea by an hydrological watchfulness. Seven stations, representatives of terrigenous or marine inputs, have been followed from 2011 to 2014. From north to south, the main four rivers of the Pertuis, Le Lay, La S\u00e8vre, Charente and Seudre, and the three maritime inputs of each strait, Breton, Antioche and Maumusson. At each station, temperature and salinity were recorded in situ, just below the surface, with a high frequency resolution (10 minutes) . This work was supported by grants from R\u00e9gion Poitou-Charentes and European Regional Development Fund to the Ifremer \"Developpement Durable de la P\u00eache et de la Conchyliculture\" project.\n"
+    ],
+    "oai_identifier": [
+        "0c7e3673-15a9-58cc-9b3a-a0bf55f5d9c4"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-1.38,45.78],[-1.38,46.31],[-1.05,46.31],[-1.05,45.78],[-1.38,45.78]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Pertuis Charentais"
+        },
+        {
+            "name": "Terrigenous marine inputs"
+        },
+        {
+            "name": "Estuary"
+        },
+        {
+            "name": "Temperature"
+        },
+        {
+            "name": "Salinity"
+        },
+        {
+            "name": "High frequency"
+        }
+    ],
+    "title": [
+        "SAPERCHAIS-HF data and metadata"
+    ],
+    "url": ""
+}

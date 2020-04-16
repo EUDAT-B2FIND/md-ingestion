@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/622",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/622"
+    ],
+    "PID": "http://hdl.handle.net/11321/622",
+    "PublicationTimestamp": "2019-01-17T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Brocki, \u0141ukasz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/622;2019-01-18T08:23:50Z;hdl_11321_3;hdl_11321_4;Speech activity annotation for a subset of the Clarin-PL studio corpus;Brocki, \u0141ukasz;speech activity;voice activity;SAD;VAD;This is a hand-checked annotation of speech activity within a subset of the Clarin-PL studio corpus, containing 20 session with 619 recordings. This submission does not contain any audio files - these can be found either in the submission http://hdl.handle.net/11321/236, or under URL: http://mowa.clarin-pl.eu/korpusy;2019-01-17;corpus;http://hdl.handle.net/11321/622;pol;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Polish-Japanese Academy of Information Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5ab315ec-36fb-53f9-8541-a2cc42507210",
+    "notes": [
+        "This is a hand-checked annotation of speech activity within a subset of the Clarin-PL studio corpus, containing 20 session with 619 recordings. This submission does not contain any audio files - these can be found either in the submission http://hdl.handle.net/11321/236, or under URL: http://mowa.clarin-pl.eu/korpusy"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/622"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech activity"
+        },
+        {
+            "name": "voice activity"
+        },
+        {
+            "name": "SAD"
+        },
+        {
+            "name": "VAD"
+        }
+    ],
+    "title": [
+        "Speech activity annotation for a subset of the Clarin-PL studio corpus"
+    ],
+    "url": ""
+}

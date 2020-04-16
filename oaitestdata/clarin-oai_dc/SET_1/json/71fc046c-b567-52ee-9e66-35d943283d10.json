@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=a7ea7a8e2cb811e2a2aa782bcb074135ffcac606a29341d581999e6ff55ed5b8",
+    "MetadataAccess": [
+        "a7ea7a8e2cb811e2a2aa782bcb074135ffcac606a29341d581999e6ff55ed5b8"
+    ],
+    "PublicationTimestamp": "2012-11-12T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "a7ea7a8e2cb811e2a2aa782bcb074135ffcac606a29341d581999e6ff55ed5b8;2018-11-15T16:39:47Z;corpus;corpus:text;Porlex;Porlex v2 (see Gomes & Castro, 2003) is a computerized lexical database in European Portuguese containing psycholinguistic and cognitive information that is useful to select stimulus materials for experiments and/or training vocabularies. It was built on the basis of a middle-sized adult lexicon, and provides orthographic, phonological, phonetic, part-of-speech, and neighborhood information for about 27,374 words (uninflected content words and inflected function words), presented as an Excel file. \n\nPorlex words come from the Dicion\u00c3\u00a1rio Universal Fundamental (Texto Editora, 1998) that was selected because of its size. In the process of compiling the remaining source informations, it became clear that the final selection of the lexical entries had to be fine tuned. For that purpose, we used Porto Editora (Costa & Melo, 1997) and C\u00c3\u00a2ndido de Figueiredo dictionaries (1996), as well as the grammars of Cunha and Cintra (1987), Mateus, Brito, Duarte and Faria (1989), and Vilela (1995).\n\nLexical entries, grammatical and morphological classification, syllabication, phonetic transcription and frequency information (\u00e2\u0089\u00885% of the lexical entries, imported from the Fundamental Portuguese \u00e2\u0080\u0093 a spoken corpus) were collected from various sources. Porlex gives additional information about the characteristics of spoken words; for example, how many schwas they include, how they are divided into syllables, where is the stressed syllable; also a pointer for ambisyllabicity, the length in number of phonemes or of syllables, and two different types of phonetic patterns, one based on a gross classification of speech sounds, another more distinctive. \n;2012-11-12",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "71fc046c-b567-52ee-9e66-35d943283d10",
+    "notes": [
+        "Porlex v2 (see Gomes & Castro, 2003) is a computerized lexical database in European Portuguese containing psycholinguistic and cognitive information that is useful to select stimulus materials for experiments and/or training vocabularies. It was built on the basis of a middle-sized adult lexicon, and provides orthographic, phonological, phonetic, part-of-speech, and neighborhood information for about 27,374 words (uninflected content words and inflected function words), presented as an Excel file. \n\nPorlex words come from the Dicion\u00c3\u00a1rio Universal Fundamental (Texto Editora, 1998) that was selected because of its size. In the process of compiling the remaining source informations, it became clear that the final selection of the lexical entries had to be fine tuned. For that purpose, we used Porto Editora (Costa & Melo, 1997) and C\u00c3\u00a2ndido de Figueiredo dictionaries (1996), as well as the grammars of Cunha and Cintra (1987), Mateus, Brito, Duarte and Faria (1989), and Vilela (1995).\n\nLexical entries, grammatical and morphological classification, syllabication, phonetic transcription and frequency information (\u00e2\u0089\u00885% of the lexical entries, imported from the Fundamental Portuguese \u00e2\u0080\u0093 a spoken corpus) were collected from various sources. Porlex gives additional information about the characteristics of spoken words; for example, how many schwas they include, how they are divided into syllables, where is the stressed syllable; also a pointer for ambisyllabicity, the length in number of phonemes or of syllables, and two different types of phonetic patterns, one based on a gross classification of speech sounds, another more distinctive. \n"
+    ],
+    "oai_identifier": [
+        "a7ea7a8e2cb811e2a2aa782bcb074135ffcac606a29341d581999e6ff55ed5b8"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Porlex"
+    ]
+}

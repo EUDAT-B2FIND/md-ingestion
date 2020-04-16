@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "European Language Resources Association (ELRA)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2884",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2884"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2884",
+    "PublicationTimestamp": "2018-05-07T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "European Language Resources Association (ELRA)"
+    ],
+    "RelatedIdentifier": [
+        "http://www.lrec-conf.org/proceedings/lrec2018/summaries/671.html"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Kr\u00e1l, Pavel",
+        "Lenc, Ladislav"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2884;2018-11-16T07:43:15Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Text Document Corpus v 2.0;Kr\u00e1l, Pavel;Lenc, Ladislav;corpus;Czech;document classification;multi-label;text;BASIC INFORMATION\r\n--------------------\r\nCzech Text Document Corpus v 2.0 is a collection of text documents for automatic document classification in Czech language. It is composed of the text documents provided by the Czech News Agency and is freely available for research purposes. This corpus was created in order to facilitate a straightforward comparison of the document classification approaches on Czech data. It is particularly dedicated to evaluation of multi-label document classification approaches, because one document is usually labelled with more than one label. Besides the information about the document classes, the corpus is also annotated at the morphological layer.\r\n\r\nThe main part (for training and testing) is composed of 11,955 real newspaper articles. We provide also a development set which is intended to be used for tuning of the hyper-parameters of the created models. This set contains 2735 additional articles.\r\n\r\nThe total category number is 60 out of which 37 most frequent ones are used for classification. The reason of this reduction is to keep only the classes with the sufficient number of occurrences to train the models.\r\n\r\nTechnical Details\r\n------------------------\r\nText documents are stored in the individual text files using UTF-8 encoding. Each filename is composed of the serial number and the list of the categories abbreviations separated by the underscore symbol and the .txt suffix. Serial numbers are composed of five digits and the numerical series starts from the value one.\r\n\r\nFor instance the file 00046_kul_nab_mag.txt represents the document file number 46 annotated by the categories kul (culture), nab (religion) and mag (magazine selection). The content of the document, i.e. the word tokens, is stored in one line. The tokens are separated by the space symbols.\r\n\r\nEvery text document was further automatically mophologically analyzed. This analysis includes lemmatization, POS tagging and syntactic parsing. The fully annotated files are stored in .conll files. We also provide the lemmatized form, file with suffix .lemma, and appropriate POS-tags, see .pos files. The tokenized version of the documents is also available in .tok files.\r\n\r\nThis corpus is available only for research purposes for free. Commercial use in any form is strictly excluded.;2018-05-07;corpus;http://hdl.handle.net/11234/1-2884;ces;http://www.lrec-conf.org/proceedings/lrec2018/summaries/671.html;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;European Language Resources Association (ELRA);http://ctdc.kiv.zcu.cz/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "17b17195-baa8-5807-9edb-d5e29add903d",
+    "notes": [
+        "BASIC INFORMATION\r\n--------------------\r\nCzech Text Document Corpus v 2.0 is a collection of text documents for automatic document classification in Czech language. It is composed of the text documents provided by the Czech News Agency and is freely available for research purposes. This corpus was created in order to facilitate a straightforward comparison of the document classification approaches on Czech data. It is particularly dedicated to evaluation of multi-label document classification approaches, because one document is usually labelled with more than one label. Besides the information about the document classes, the corpus is also annotated at the morphological layer.\r\n\r\nThe main part (for training and testing) is composed of 11,955 real newspaper articles. We provide also a development set which is intended to be used for tuning of the hyper-parameters of the created models. This set contains 2735 additional articles.\r\n\r\nThe total category number is 60 out of which 37 most frequent ones are used for classification. The reason of this reduction is to keep only the classes with the sufficient number of occurrences to train the models.\r\n\r\nTechnical Details\r\n------------------------\r\nText documents are stored in the individual text files using UTF-8 encoding. Each filename is composed of the serial number and the list of the categories abbreviations separated by the underscore symbol and the .txt suffix. Serial numbers are composed of five digits and the numerical series starts from the value one.\r\n\r\nFor instance the file 00046_kul_nab_mag.txt represents the document file number 46 annotated by the categories kul (culture), nab (religion) and mag (magazine selection). The content of the document, i.e. the word tokens, is stored in one line. The tokens are separated by the space symbols.\r\n\r\nEvery text document was further automatically mophologically analyzed. This analysis includes lemmatization, POS tagging and syntactic parsing. The fully annotated files are stored in .conll files. We also provide the lemmatized form, file with suffix .lemma, and appropriate POS-tags, see .pos files. The tokenized version of the documents is also available in .tok files.\r\n\r\nThis corpus is available only for research purposes for free. Commercial use in any form is strictly excluded."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2884"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "Czech"
+        },
+        {
+            "name": "document classification"
+        },
+        {
+            "name": "multi-label"
+        },
+        {
+            "name": "text"
+        }
+    ],
+    "title": [
+        "Czech Text Document Corpus v 2.0"
+    ],
+    "url": ""
+}

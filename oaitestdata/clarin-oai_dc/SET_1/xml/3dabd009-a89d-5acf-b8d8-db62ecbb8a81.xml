@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repository.clarin.dk:20.500.12115/31</identifier>
+    <datestamp>2018-11-27T12:32:33Z</datestamp>
+    <setSpec>hdl_20.500.12115_1</setSpec>
+    <setSpec>hdl_20.500.12115_3</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Grundtvig's Works Corpus, v. 1.12, April 2018</dc:title>
+      <dc:creator>Ravn, Kim Steen</dc:creator>
+      <dc:subject>Critical edition</dc:subject>
+      <dc:subject>N. F. S. Grundtvig</dc:subject>
+      <dc:subject>literature</dc:subject>
+      <dc:description>Gruntvig's Works version 1.12, april 2018 contains N.F.S. Grundtvig's authorship. Corpus folder containing edited texts and OCR texts.</dc:description>
+      <dc:date>2018-06-29</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.12115/31</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/4.0/</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 8</dc:format>
+      <dc:publisher>The Grundtvig Centre</dc:publisher>
+      <dc:source>http://www.grundtvigsv&#230;rker.dk</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

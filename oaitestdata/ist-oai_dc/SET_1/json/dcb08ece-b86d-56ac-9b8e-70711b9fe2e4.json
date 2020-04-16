@@ -1,0 +1,54 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15479/AT:ISTA:45",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "archive"
+    ],
+    "MetaDataAccess": "http://datarep.app.ist.ac.at/cgi/oai2?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datarep.app.ist.ac.at:45",
+    "RelatedIdentifier": [
+        "https://datarep.app.ist.ac.at/45/"
+    ],
+    "ResourceType": [
+        "Data Collection"
+    ],
+    "author": [
+        "Landon, Matthieu",
+        "Jajoo, Rishi",
+        "Luka\u010di\u0161in, Martin"
+    ],
+    "fulltext": "oai:datarep.app.ist.ac.at:45;2017-03-30T14:34:05Z;MATLAB analysis code for 'Sequence-Specific Thermodynamic Properties of Nucleic Acids Influence Both Transcriptional Pausing and Backtracking in Yeast';Luka\u010di\u0161in, Martin;Landon, Matthieu;Jajoo, Rishi;571 Physiology;579 Microorganisms, fungi, algae;MATLAB code and processed datasets available for reproducing the results in: \r\nLuka\u010di\u0161in, M.*, Landon, M.*, Jajoo, R*. (2016) Sequence-Specific Thermodynamic Properties of Nucleic Acids Influence Both Transcriptional Pausing and Backtracking in Yeast.\r\n*equal contributions;Data Collection;NonPeerReviewed;archive;https://datarep.app.ist.ac.at/45/;https://datarep.app.ist.ac.at/45/1/PaperCode.zip;  Luka\u010di\u0161in, Martin and Landon, Matthieu and Jajoo, Rishi   MATLAB analysis code for 'Sequence-Specific Thermodynamic Properties of Nucleic Acids Influence Both Transcriptional Pausing and Backtracking in Yeast'.  [Data Collection]     ;10.15479/AT:ISTA:45",
+    "group": "ist",
+    "groups": [
+        {
+            "name": "ist"
+        }
+    ],
+    "name": "dcb08ece-b86d-56ac-9b8e-70711b9fe2e4",
+    "notes": [
+        "MATLAB code and processed datasets available for reproducing the results in: \r\nLuka\u010di\u0161in, M.*, Landon, M.*, Jajoo, R*. (2016) Sequence-Specific Thermodynamic Properties of Nucleic Acids Influence Both Transcriptional Pausing and Backtracking in Yeast.\r\n*equal contributions"
+    ],
+    "oai_identifier": [
+        "oai:datarep.app.ist.ac.at:45"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Physiology"
+        },
+        {
+            "name": "Microorganisms"
+        },
+        {
+            "name": "fungi"
+        },
+        {
+            "name": "algae"
+        }
+    ],
+    "title": [
+        "MATLAB analysis code for 'Sequence-Specific Thermodynamic Properties of Nucleic Acids Influence Both Transcriptional Pausing and Backtracking in Yeast'"
+    ],
+    "url": "https://datarep.app.ist.ac.at/45/1/PaperCode.zip"
+}

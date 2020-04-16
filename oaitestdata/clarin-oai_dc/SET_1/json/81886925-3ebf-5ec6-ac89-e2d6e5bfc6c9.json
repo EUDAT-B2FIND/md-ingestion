@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5700",
+    "MetadataAccess": [
+        "oai:ota:oucs:5700"
+    ],
+    "PublicationTimestamp": "1623-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1623"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Shakespeare, William, 1564-1616"
+    ],
+    "fulltext": "oai:ota:oucs:5700;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/5700.xml;As you Like it.;Shakespeare, William, 1564-1616;not after: 1623;text_and_corpus_linguistics;Plays -- England -- 16th century;Plays -- England -- 17th century;Comedies -- England -- 16th century;Comedies -- England -- 17th century;Tragedies -- England -- 16th century;Tragedies -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "81886925-3ebf-5ec6-ac89-e2d6e5bfc6c9",
+    "oai_identifier": [
+        "oai:ota:oucs:5700"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        },
+        {
+            "name": "Comedies -- England -- th century"
+        },
+        {
+            "name": "Comedies -- England -- th century"
+        },
+        {
+            "name": "Tragedies -- England -- th century"
+        },
+        {
+            "name": "Tragedies -- England -- th century"
+        }
+    ],
+    "title": [
+        "As you Like it."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5700.xml"
+}

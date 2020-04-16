@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 86",
+        "application/zip",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Multiple languages"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2898",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2898"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2898",
+    "PublicationTimestamp": "2018-11-15T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11234/1-2364"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Straka, Milan",
+        "Strakov\u00e1, Jana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2898;2018-11-23T13:50:23Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Universal Dependencies 2.3 Models for UDPipe (2018-11-15);Straka, Milan;Strakov\u00e1, Jana;tokenizer;POS tagger;lemmatization;tagger;parser;dependency parser;Tokenizer, POS Tagger, Lemmatizer and Parser models for 84 treebanks of 56 languages of Universal Depenencies 2.3 Treebanks, created solely using UD 2.3 data (http://hdl.handle.net/11234/1-2895). The model documentation including performance can be found at http://ufal.mff.cuni.cz/udpipe/models#universal_dependencies_23_models .\r\n\r\nTo use these models, you need UDPipe binary version at least 1.2, which you can download from http://ufal.mff.cuni.cz/udpipe .\r\n\r\nIn addition to models itself, all additional data and value of hyperparameters used for training are available in the second archive, allowing reproducible training.;2018-11-15;toolService;http://hdl.handle.net/11234/1-2898;mul;http://hdl.handle.net/11234/1-2364;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;application/zip;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 86;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/udpipe",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "51f6025c-127b-56b0-b12c-f7c988d87a80",
+    "notes": [
+        "Tokenizer, POS Tagger, Lemmatizer and Parser models for 84 treebanks of 56 languages of Universal Depenencies 2.3 Treebanks, created solely using UD 2.3 data (http://hdl.handle.net/11234/1-2895). The model documentation including performance can be found at http://ufal.mff.cuni.cz/udpipe/models#universal_dependencies_23_models .\r\n\r\nTo use these models, you need UDPipe binary version at least 1.2, which you can download from http://ufal.mff.cuni.cz/udpipe .\r\n\r\nIn addition to models itself, all additional data and value of hyperparameters used for training are available in the second archive, allowing reproducible training."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2898"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "tokenizer"
+        },
+        {
+            "name": "POS tagger"
+        },
+        {
+            "name": "lemmatization"
+        },
+        {
+            "name": "tagger"
+        },
+        {
+            "name": "parser"
+        },
+        {
+            "name": "dependency parser"
+        }
+    ],
+    "title": [
+        "Universal Dependencies 2.3 Models for UDPipe (2018-11-15)"
+    ],
+    "url": ""
+}

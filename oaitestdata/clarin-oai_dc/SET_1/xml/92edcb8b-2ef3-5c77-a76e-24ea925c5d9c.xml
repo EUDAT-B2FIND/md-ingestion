@@ -1,0 +1,47 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1167</identifier>
+    <datestamp>2018-11-14T11:24:37Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Slovenian parliamentary corpus SlovParl 2.0</dc:title>
+      <dc:creator>Pan&#269;ur, Andrej</dc:creator>
+      <dc:creator>&#352;orn, Mojca</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:subject>Slovenian Parliament</dc:subject>
+      <dc:subject>parliamentary debates</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>The SlovParl corpus contains minutes of the Assembly of the Republic of Slovenia for the legislative period 1990-1992, i.e. it covers the period before, during, and after Slovenia became an independent country in 1991. The corpus comprises 232 sessions, 58,813 speeches and 10.8 million words. The corpus contains extensive meta-data about the speakers, a typology of sessions etc. and structural and editorial annotations.&#13;
+&#13;
+This item comprises three datasets:&#13;
+- the corpus in TEI (module Transcriptions of speech);&#13;
+- the corpus in TEI with added automatic linguistic annotation: tokenisation, MSD tagging and lemmatisation; &#13;
+- the corpus in vertical format used by various concordancers, e.g. CWB and Sketch Engine; this format is simpler and smaller but does not contain all the information from the source TEI.&#13;
+&#13;
+The SlovParl data originally come from https://github.com/SIstory/SlovParl, but have been converted to use TEI elements for speech. &#13;
+&#13;
+The first version of this resource is presented in the paper:&#13;
+Pan&#269;ur, Andrej. "Ozna&#269;evanje zbirke zapisnikov sej slovenskega parlamenta s smernicami TEI." In the Proceedings of the Conference on Language Technologies &amp; Digital Humanities (Toma&#382; Erjavec and Darja Fi&#353;er, eds.) 142-148. Ljubljana: Znanstvena zalo&#382;ba Filozofske fakultete v Ljubljani, 2016.</dc:description>
+      <dc:date>2017-11-24</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1167</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://www.sdjt.si/wp/wp-content/uploads/2016/09/JTDH-2016_Pancur_Oznacevanje-zbirke-zapisnikov-sej-slovenskega-parlamenta.pdf</dc:relation>
+      <dc:relation>http://lrec-conf.org/workshops/lrec2018/W2/summaries/4_W2.html</dc:relation>
+      <dc:relation>http://hdl.handle.net/11356/1075</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Institute of Contemporary History</dc:publisher>
+      <dc:source>https://github.com/DARIAH-SI/CLARIN.SI/commit/1cbe75c2ae8c90fba40c167786b6c548a852944c</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

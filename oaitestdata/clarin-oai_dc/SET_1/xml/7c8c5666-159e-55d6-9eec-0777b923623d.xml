@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/5-UDPIPE-TOKENIZER</identifier>
+    <datestamp>2019-01-02T13:42:29Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0023-8C33-2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UDPipe tokenizer Web Service for Weblicht</dc:title>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:subject>udpipe</dc:subject>
+      <dc:description>UDPipe is a trainable pipeline for tokenizing, tagging, lemmatizing and parsing Universal Treebanks and other CoNLL-U files (https://lindat.mff.cuni.cz/services/udpipe/)</dc:description>
+      <dc:date>2016-02-08</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/5-UDPIPE-TOKENIZER</dc:identifier>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://hdl.handle.net/11234/5-UDPIPE-TOKENIZER</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

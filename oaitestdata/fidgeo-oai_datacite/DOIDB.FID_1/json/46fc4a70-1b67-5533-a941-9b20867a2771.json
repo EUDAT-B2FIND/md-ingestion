@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6554",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6554"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6554;2018-10-25T08:10:48Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.007;Kelder, Nick A.;Nick A.;Kelder;Utrecht University, The Netherlands;Sant, Karin;Karin;Sant;https://orcid.org/0000-0002-1508-3959;Utrecht University, The Netherlands;van Dijk, Gijs A.;Gijs A.;van Dijk;Utrecht University, The Netherlands;Lathouwers, Ymke Z.;Ymke Z.;Lathouwers;Utrecht University, The Netherlands;Dekkers, Mark J.;Mark J.;Dekkers;http://orcid.org/0000-0002-4156-3841;Utrecht University, The Netherlands;Krijgsman, Wout;Wout;Krijgsman;7003956416;Utrecht University, The Netherlands;Magyar, Imre;Imre;Magyar;7005270225;MTA-MTM-ELTE Research Group for Paleontology, Hungary;Sztan\u00f3, Orsolya;Orsolya;Sztan\u00f3;http://orcid.org/0000-0003-0786-3653;E\u00f6tv\u00f6s Lor\u00e1nd University, Hungary;Supplementary paleomagnetic data to: \u201cPaleomagnetism in the Pannonian; Problems, Pitfalls, and Progress in using iron sulphides for magnetostratigraphy\u201d;GFZ Data Services;2018;magnetostratigraphy;Lake Pannon;Hungary;iron sulfide;greigite;endemic;delta progradation;EPOS;Multi-scale laboratories;Paleomagnetic and magnetic data;paleomagnetic data;Kelder, Nick A.;Nick A.;Kelder;Utrecht University, The Netherlands;Sant, Karin;Karin;Sant;https://orcid.org/0000-0002-1508-3959;Utrecht University, The Netherlands;Sant, Karin;Karin;Sant;https://orcid.org/0000-0002-1508-3959;Utrecht University, The Netherlands;van Dijk, Gijs A.;Gijs A.;van Dijk;Utrecht University, The Netherlands;Lathouwers, Ymke Z.;Ymke Z.;Lathouwers;Utrecht University, The Netherlands;Dekkers, Mark J.;Mark J.;Dekkers;http://orcid.org/0000-0002-4156-3841;Utrecht University, The Netherlands;Krijgsman, Wout;Wout;Krijgsman;7003956416;Utrecht University, The Netherlands;Magyar, Imre;Imre;Magyar;7005270225;MTA-MTM-ELTE Research Group for Paleontology, Hungary;Sztan\u00f3, Orsolya;Orsolya;Sztan\u00f3;http://orcid.org/0000-0003-0786-3653;E\u00f6tv\u00f6s Lor\u00e1nd University, Hungary;Paleomagnetic Laboratory Fort Hoofddijk (Utrecht University, The Netherlands);Utrecht University, Utrecht, The Netherlands;Mecsekerc Ltd.;2018-07-01/2;2018-04-17;eng;10.1029/2018GC007673;10.1016/j.cageo.2016.05.007;1763452 Bytes;2 Files;application/x-zip-compressed;application/pdf;CC BY 4.0;This dataset contains the paleomagnetic supplementary material to the article Kelder et al. (subm.), which presents a magnetostratigraphic correlation of Late Miocene lacustrine sediments based on multi-polarity greigite. The multi-polarity is visible in most thermal paleomagnetic results (Zijderveld diagrams) by antipodal high and medium temperature components, while only one magnetic component was visible in the alternating field demagnetization diagrams. Based on this complex behavior, a tailored demagnetization approach was developed to allow for reliable magnetostratigraphic dating of lacustrine sediments.;18.63555908203125;19.12994384765625;46.47002468938531;46.758679967095574;Data derive from four cores taken in the period 2015-2017;Nederlandse Organisatie voor Wetenschappelijk Onderzoek;http://doi.org/10.13039/501100003246;865.10.011;VICI",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "46fc4a70-1b67-5533-a941-9b20867a2771",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6554"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

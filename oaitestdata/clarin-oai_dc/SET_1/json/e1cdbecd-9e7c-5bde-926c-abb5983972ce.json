@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Drukarnia Akademicka"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149590",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149590"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CE0-B",
+    "PublicationTimestamp": "1750-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1750"
+    ],
+    "Publisher": [
+        "Drukarnia Akademicka"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/149590",
+        "oai:jbc.bj.uj.edu.pl:publication:157832"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Hylzen, Jan August (1702-1767)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149590;2019-02-28T18:29:31Z;Inflanty W dawnych swych, y wielorakich a\u017c do wieku naszego dziejach y rewolucyach; z wywodem godno\u015bci y staro\u017cytno\u015bci Szlachty tameczney, tudziesz praw, y wolno\u015bci z dawna, y teraz jey s\u0142u\u017c\u0105cych Zebrane y Polskiemu \u015bwiatu do wiadomo\u015bci w Oyczystyni j\u0119zyku Podane;Hylzen, Jan August (1702-1767);starodruki 18\u00a0w.;Drukarnia Akademicka;1750;starodruk;application/xml;clarind-uds:poldilemma-149590;hdl:11858/00-246C-0000-0023-8CE0-B;Biblioteka Jagiello\u0144ska, BJ St. Dr. 18994 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/149590;oai:jbc.bj.uj.edu.pl:publication:157832;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e1cdbecd-9e7c-5bde-926c-abb5983972ce",
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149590"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Inflanty W dawnych swych, y wielorakich a\u017c do wieku naszego dziejach y rewolucyach; z wywodem godno\u015bci y staro\u017cytno\u015bci Szlachty tameczney, tudziesz praw, y wolno\u015bci z dawna, y teraz jey s\u0142u\u017c\u0105cych Zebrane y Polskiemu \u015bwiatu do wiadomo\u015bci w Oyczystyni j\u0119zyku Podane"
+    ],
+    "url": ""
+}

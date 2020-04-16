@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-572</identifier>
+    <datestamp>2016-04-06T16:39:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Logos : multilingual e-translation portal</dc:title>
+      <dc:description>Searchable multilingual text collection (700+ mwd) and a dictionary database of 251 languages and dialects. The Dictionary (ca. 8 mwd) provides translation of a word, definition, grammar, synonym, antonym, image, pronunciation, etc.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-572</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Italy</dc:coverage>
+      <dc:publisher>LOGOS</dc:publisher>
+      <dc:source>http://www.logos.it/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

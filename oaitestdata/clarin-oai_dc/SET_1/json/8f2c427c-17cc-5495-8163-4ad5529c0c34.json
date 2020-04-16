@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Matteo Grella"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2893",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2893"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2893",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Matteo Grella"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11372/LRT-2629"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Grella, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2893;2018-11-14T15:34:38Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Italian Function Words v3;Grella, Matteo;morphological dictionary;function words;This dictionary is the third version of 11372/LRT-2288, a curated list of Italian function words in a JSON Lines format text file, particularly useful for tasks such as part of speech tagging or syntactic parsing. Compared to the previous release, this version includes some minor improvements.;2018;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-2893;ita;http://hdl.handle.net/11372/LRT-2629;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 1;Matteo Grella",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8f2c427c-17cc-5495-8163-4ad5529c0c34",
+    "notes": [
+        "This dictionary is the third version of 11372/LRT-2288, a curated list of Italian function words in a JSON Lines format text file, particularly useful for tasks such as part of speech tagging or syntactic parsing. Compared to the previous release, this version includes some minor improvements."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2893"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphological dictionary"
+        },
+        {
+            "name": "function words"
+        }
+    ],
+    "title": [
+        "Italian Function Words v3"
+    ],
+    "url": ""
+}

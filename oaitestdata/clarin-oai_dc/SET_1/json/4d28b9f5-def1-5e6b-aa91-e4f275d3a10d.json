@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Faculty of Computer and Information Science, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 4",
+        "application/pdf",
+        "application/zip"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1115",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1115"
+    ],
+    "PID": "http://hdl.handle.net/11356/1115",
+    "PublicationTimestamp": "2017-05-28T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Faculty of Computer and Information Science, University of Ljubljana"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Robnik-\u0160ikonja, Marko",
+        "Kadunc, Klemen"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1115;2017-05-28T08:41:46Z;hdl_11356_1023;hdl_11356_1024;Opinion corpus of Slovene web commentaries KKS 1.001;Kadunc, Klemen;Robnik-\u0160ikonja, Marko;web commentaries;opinion corpus;sentiment analysis;The corpus of web commentaries with sentiment categorizations was developed as a part of BSc Thesis (Kadunc, 2016) and served for evaluation of the Slovene Sentiment Lexicon KSS \r\nhttp://hdl.handle.net/11356/1097. It contains web commentaries about different topics (business, politics, sport, and other) from 4 Slovene web portals (RtvSlo, 24ur, Finance, Reporter). The corpus is in XML format and available in two forms:\r\n- original corpus, containing 4,777 commentaries, 898 positive, 3,291 negative and 588 neutral commentaries.\r\n- balanced corpus, a subset of the original corpus, containing 1,740 commentaries, 580 of each type of sentiment (positive, negative and neutral).\r\n\r\nReferences:\r\nKlemen Kadunc (2016). Dolo\u010danje sentimenta slovenskim spletnim komentarjem s pomo\u010djo strojnega u\u010denja. Diplomsko delo. Univerza v Ljubljani, Fakulteta za ra\u010dunalni\u0161tvo in informatiko (in Slovene). http://eprints.fri.uni-lj.si/3317/\r\nKlemen Kadunc, Marko Robnik-\u0160ikonja (2016). Analiza mnenj s pomo\u010djo strojnega u\u010denja in slovenskega leksikona sentimenta. Conference on Language Technologies & Digital Humanities, Ljubljana (in Slovene). http://www.sdjt.si/wp/dogodki/konference/jtdh-2016/zbornik/;2017-05-28;corpus;http://hdl.handle.net/11356/1115;slv;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;text/plain; charset=utf-8;application/zip;application/zip;application/pdf;application/pdf;downloadable_files_count: 4;Faculty of Computer and Information Science, University of Ljubljana;http://lkm.fri.uni-lj.si/rmarko/repozitorij/opinionCorpus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4d28b9f5-def1-5e6b-aa91-e4f275d3a10d",
+    "notes": [
+        "The corpus of web commentaries with sentiment categorizations was developed as a part of BSc Thesis (Kadunc, 2016) and served for evaluation of the Slovene Sentiment Lexicon KSS \r\nhttp://hdl.handle.net/11356/1097. It contains web commentaries about different topics (business, politics, sport, and other) from 4 Slovene web portals (RtvSlo, 24ur, Finance, Reporter). The corpus is in XML format and available in two forms:\r\n- original corpus, containing 4,777 commentaries, 898 positive, 3,291 negative and 588 neutral commentaries.\r\n- balanced corpus, a subset of the original corpus, containing 1,740 commentaries, 580 of each type of sentiment (positive, negative and neutral).\r\n\r\nReferences:\r\nKlemen Kadunc (2016). Dolo\u010danje sentimenta slovenskim spletnim komentarjem s pomo\u010djo strojnega u\u010denja. Diplomsko delo. Univerza v Ljubljani, Fakulteta za ra\u010dunalni\u0161tvo in informatiko (in Slovene). http://eprints.fri.uni-lj.si/3317/\r\nKlemen Kadunc, Marko Robnik-\u0160ikonja (2016). Analiza mnenj s pomo\u010djo strojnega u\u010denja in slovenskega leksikona sentimenta. Conference on Language Technologies & Digital Humanities, Ljubljana (in Slovene). http://www.sdjt.si/wp/dogodki/konference/jtdh-2016/zbornik/"
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1115"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "web commentaries"
+        },
+        {
+            "name": "opinion corpus"
+        },
+        {
+            "name": "sentiment analysis"
+        }
+    ],
+    "title": [
+        "Opinion corpus of Slovene web commentaries KKS 1.001"
+    ],
+    "url": ""
+}

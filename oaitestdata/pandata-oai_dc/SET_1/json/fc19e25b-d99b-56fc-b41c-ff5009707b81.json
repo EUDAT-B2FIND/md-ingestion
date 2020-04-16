@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Science and Technology Facilities Council, ISIS"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5286/ISIS.E.24079418",
+    "Discipline": "Not stated",
+    "Format": [
+        "isis neutron raw;binary;2;None"
+    ],
+    "Language": [
+        "English"
+    ],
+    "PublicationTimestamp": "2013-07-21T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Rights": [
+        "ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html"
+    ],
+    "TempCoverageBegin": 63415220399,
+    "TempCoverageEnd": 63415220399,
+    "TemporalCoverage": " point in time : 2010-07-20T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2010-07-20T11:59:59Z",
+    "TemporalCoverage:EndDate": "2010-07-20T11:59:59Z",
+    "author": [
+        "Mr Paul Brown",
+        "Mr Azmi Mohamed",
+        "Mr Stephen Cummings",
+        "Professor Julian Eastoe",
+        "Mr Marios Hopkins Hatzopoulos"
+    ],
+    "fulltext": [
+        "\n    ",
+        "isis_24079418",
+        "2016-04-08T15:23:11Z",
+        "\n    ",
+        "\n      ",
+        "10.5286/ISIS.E.24079418",
+        "Structural evolution - hydrotrope to surfactant",
+        "The aim is to improve understanding about combinations of normal surfactants and hydrotropes in aqueous systems. This is to support our recent work with but in non-aqueous solvents (RB920037, scheduling awaited, test data in Figure 2). A hydrotrope family will be investigated following an evolution of molecular structure (Figure 1), starting with a true hydrotrope (NaSAL), moving to an alkyl hydrotrope (C1, C4, C6-SAL), and ending with a chemically related true surfactant (C12-SAL). Although they are interesting colloidal systems in their own right, there is only limited scientific literature to consult on hydrotrope association structures. Such additives are of great industrial interest, exhibiting detergency efficiencies in both aqueous and oily phases. This new proposal is part of a joint Infineum-Bristol collaboration: the PhD (MH) has recently attended the ISIS training course. ",
+        "[LOQ];RB1010284;run_number_range",
+        "http://dx.doi.org/10.5286/ISIS.E.24079418",
+        "Mr Azmi Mohamed",
+        "Professor Julian Eastoe",
+        "Mr Marios Hopkins Hatzopoulos",
+        "Mr Stephen Cummings",
+        "Mr Paul Brown",
+        "Science and Technology Facilities Council, ISIS",
+        "Clean energy and the environment, pharmaceuticals and health care, nanotechnology and materials engineering, catalysis and polymers, fundamental studies of materials",
+        "2013-07-21 09:25:25",
+        "en",
+        "ISIS;ISIS Pulsed Neutron & Muon Source;http://www.isis.stfc.ac.uk;[LOQ]",
+        "isis neutron raw;binary;2;None",
+        "ISIS, Harwell, United Kingdom",
+        "ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html",
+        "GB",
+        "2010-07-20 09:50:53;2010-07-21 09:25:25"
+    ],
+    "notes": [
+        "The aim is to improve understanding about combinations of normal surfactants and hydrotropes in aqueous systems. This is to support our recent work with but in non-aqueous solvents (RB920037, scheduling awaited, test data in Figure 2). A hydrotrope family will be investigated following an evolution of molecular structure (Figure 1), starting with a true hydrotrope (NaSAL), moving to an alkyl hydrotrope (C1, C4, C6-SAL), and ending with a chemically related true surfactant (C12-SAL). Although they are interesting colloidal systems in their own right, there is only limited scientific literature to consult on hydrotrope association structures. Such additives are of great industrial interest, exhibiting detergency efficiencies in both aqueous and oily phases. This new proposal is part of a joint Infineum-Bristol collaboration: the PhD (MH) has recently attended the ISIS training course. "
+    ],
+    "oai_identifier": [
+        "isis_24079418"
+    ],
+    "oai_set": null,
+    "tags": [
+        {
+            "name": "Clean energy environment"
+        },
+        {
+            "name": "pharmaceuticals health care"
+        },
+        {
+            "name": "nanotechnology materials engineering"
+        },
+        {
+            "name": "catalysis polymers"
+        },
+        {
+            "name": "fundamental studies materials"
+        }
+    ],
+    "title": [
+        "Structural evolution - hydrotrope to surfactant"
+    ],
+    "url": ""
+}

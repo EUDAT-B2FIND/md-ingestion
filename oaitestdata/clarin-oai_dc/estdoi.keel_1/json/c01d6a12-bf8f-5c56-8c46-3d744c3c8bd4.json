@@ -1,0 +1,54 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00137L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:12000825",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:12000825"
+    ],
+    "PublicationTimestamp": "2017-09-11T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Vare, Kadri",
+        "Orav, Heili"
+    ],
+    "fulltext": "oai:oai.datacite.org:12000825;2019-04-16T07:01:20Z;ESTDOI;ESTDOI.KEEL;Eesti Wordnet (2.0 beeta);Estonian Wordnet (2.0 beta);Orav, Heili;Vare, Kadri;Center of Estonian Language Resources;2014;Issued: 2014-03-21;Updated: 2017-09-11;doi:10.15155/1-00-0000-0000-0000-00137L;Abstract;Esimene XML versioon Eesti Wordnetist.;Abstract;The first version of EstWN in XML format.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c01d6a12-bf8f-5c56-8c46-3d744c3c8bd4",
+    "notes": [
+        "Abstract",
+        "Esimene XML versioon Eesti Wordnetist.",
+        "Abstract",
+        "The first version of EstWN in XML format."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:12000825"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti Wordnet (2.0 beeta)",
+        "Estonian Wordnet (2.0 beta)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/51473",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=1e965a59-f366-5c7a-8ffc-da8d30f7d813",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/727890/EU//INTAROS"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-NC"
+    ],
+    "SpatialCoverage": "(78N-78N,9 E-16E)",
+    "TempCoverageBegin": 71050391999,
+    "TempCoverageEnd": 71050391999,
+    "TemporalCoverage": " point in time : 2252-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2252-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2252-07-01T11:59:59Z",
+    "author": [
+        "Mortier, Laurent",
+        "Houssais, Marie-noelle",
+        "Testor, Pierre",
+        "Herbaut, Christophe"
+    ],
+    "fulltext": "oai:seanoe.org:51473;2018-12-17;taiga deployment (EGO glider\u00a0: tintin) (Greenland sea);Houssais, Marie-noelle;Herbaut, Christophe;Testor, Pierre;Mortier, Laurent;sea water temperature;sea water electrical conductivity;sea water pressure;mole concentration of dissolved molecular oxygen in sea water;temperature of sensor for oxygen in sea water;uncalibrated phase shift reported by oxygen sensor;calibrated phase shift reported by oxygen sensor;mass concentration of chlorophyll a in sea water;volume absorption coefficient of radiative flux in sea water due to dissolved organic matter;volume scattering function of radiative flux in sea water 700;The observations of tintin glider on taiga (Greenland sea) :\n\t- EGO NetCDF time-series (data, metadata, derived sea water current)\n\t- NetCDF profiles extracted from the above time-series\n\t- Raw data\n\t- JSON metadata used by the decoder\nThe following parameters are provided :\u00a0\n\t- Practical salinity\n\t- Sea temperature in-situ ITS-90 scale\n\t- Electrical conductivity\n\t- Sea water pressure, equals 0 at sea-level\n;SEANOE;2017-09;dataset;DOI:10.17882/51473;http://dx.doi.org/10.17882/51473;info:eu-repo/grantAgreement/EC/FP7/727890/EU//INTAROS;North 78.2252, South 78.029, East 15.6414, West 8.8952;https://www.seanoe.org/data/00403/51473/illustration.gif;78.029 8.8952 78.2252 15.6414;CC-BY-NC",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "1e965a59-f366-5c7a-8ffc-da8d30f7d813",
+    "notes": [
+        "The observations of tintin glider on taiga (Greenland sea) :\n\t- EGO NetCDF time-series (data, metadata, derived sea water current)\n\t- NetCDF profiles extracted from the above time-series\n\t- Raw data\n\t- JSON metadata used by the decoder\nThe following parameters are provided :\u00a0\n\t- Practical salinity\n\t- Sea temperature in-situ ITS-90 scale\n\t- Electrical conductivity\n\t- Sea water pressure, equals 0 at sea-level\n"
+    ],
+    "oai_identifier": [
+        "1e965a59-f366-5c7a-8ffc-da8d30f7d813"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[8.8952,78.029],[8.8952,78.2252],[15.6414,78.2252],[15.6414,78.029],[8.8952,78.029]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "sea water temperature"
+        },
+        {
+            "name": "sea water electrical conductivity"
+        },
+        {
+            "name": "sea water pressure"
+        },
+        {
+            "name": "temperature sensor oxygen sea water"
+        },
+        {
+            "name": "uncalibrated phase shift reported oxygen sensor"
+        },
+        {
+            "name": "calibrated phase shift reported oxygen sensor"
+        },
+        {
+            "name": "mass concentration chlorophyll sea water"
+        }
+    ],
+    "title": [
+        "taiga deployment (EGO glider\u00a0: tintin) (Greenland sea)"
+    ],
+    "url": ""
+}

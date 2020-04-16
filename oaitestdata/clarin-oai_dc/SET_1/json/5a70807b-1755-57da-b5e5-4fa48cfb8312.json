@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 85 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0008",
+    "MetadataAccess": [
+        "oai:ota:oucs:0008"
+    ],
+    "PublicationTimestamp": "1595-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1595"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Shakespeare, William, 1564-1616"
+    ],
+    "fulltext": "oai:ota:oucs:0008;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0008.xml;King Henry vi. pt. 3.;The true tragedie of Richard Duke of York ...;Shakespeare, William, 1564-1616;1595;text_and_corpus_linguistics;Plays -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;(1 file : ca. 85 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5a70807b-1755-57da-b5e5-4fa48cfb8312",
+    "oai_identifier": [
+        "oai:ota:oucs:0008"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        }
+    ],
+    "title": [
+        "King Henry vi. pt. 3.",
+        "The true tragedie of Richard Duke of York ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0008.xml"
+}

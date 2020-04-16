@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "UW"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 11",
+        "text/plain; charset=utf-8",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/461",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/461"
+    ],
+    "PID": "http://hdl.handle.net/11321/461",
+    "PublicationTimestamp": "2018-04-12T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "UW"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "PDT 2.0 License",
+        "http://ufal.mff.cuni.cz/pdt2.0/doc/pdt-guide/en/html/ch07.html",
+        "ACA"
+    ],
+    "author": [
+        "Ochma\u0144ski, Miko\u0142aj"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/461;2018-04-12T09:40:01Z;hdl_11321_3;hdl_11321_4;Blogosferaksiazki2018;Ochma\u0144ski, Miko\u0142aj;blog;ksi\u0105\u017cki;blogosfera;Blogi ksi\u0105\u017ckowe;2018-04-12;corpus;http://hdl.handle.net/11321/461;pol;PDT 2.0 License;http://ufal.mff.cuni.cz/pdt2.0/doc/pdt-guide/en/html/ch07.html;ACA;text/plain; charset=utf-8;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;downloadable_files_count: 11;UW",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "93d90b4e-0e59-56fb-8419-15ac08156c81",
+    "notes": [
+        "Blogi ksi\u0105\u017ckowe"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/461"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "blog"
+        },
+        {
+            "name": "blog"
+        },
+        {
+            "name": "blogosfera"
+        }
+    ],
+    "title": [
+        "Blogosferaksiazki2018"
+    ],
+    "url": ""
+}

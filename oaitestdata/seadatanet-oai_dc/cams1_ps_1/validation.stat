@@ -1,0 +1,161 @@
+
+ Statistics of
+	community	seadatanet
+	subset		cams1_ps_1
+	# of records	23
+  see as well oaidata/seadatanet-oai_dc/cams1_ps_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dc:title
+   
+  |--    23 |  100 |    23 |  100
+      |- 1     : North Sea - Temperature and salinity observation collection V1.1      |
+      |- 1     : Black Sea - Temperature and salinity observation collection V2      |
+      |- 1     : North Atlantic Ocean - Temperature and Salinity Climatology V1.1      |
+      |- 1     : Arctic Ocean - Temperature and salinity Historical Data Collection SeaDataCloud  [...(2 chars follow)...] |
+      |- 1     : Black Sea - Temperature and salinity Historical Data Collection SeaDataCloud V1      |
+      |- 1     : Arctic Ocean - Temperature and salinity observation collection V2      |
+      |- 1     : Arctic Ocean - Temperature and salinity observation collection V1.1      |
+      |- 1     : Arctic Ocean - Temperature and Salinity Climatology V1.1      |
+      |- 1     : North Sea - Temperature and salinity Historical Data Collection SeaDataCloud V1      |
+      |- 1     : Mediterranean Sea - Temperature and salinity observation collection V2      |
+
+ |-> Description      <--       //dc:description
+
+  |--    23 |  100 |    20 |   87
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection contains all open [...(601 chars follow)...] |
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection v2, including rev [...(111 chars follow)...] |
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection for the North Sea [...(656 chars follow)...] |
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection for the North Arc [...(299 chars follow)...] |
+      |- 1     : SDC_MED_DATA_TS_V1 SeaDataCloud Temperature  and Salinity data collection for th [...(657 chars follow)...] |
+
+ |-> Tags             <--       //dc:subject
+ 
+  |--    23 |  100 |    23 |  100
+      |- 23    : Oceanographic geographical features      |
+
+ |-> DOI              <--                     
+  |--    21 |   91 |    21 |   91
+      |- 1     : http://dx.doi.org/10.12770/afcaabb7-0618-4bf6-9e8c-4cdd3da51fab      |
+      |- 1     : http://dx.doi.org/10.12770/2698a37e-c78b-4f78-be0b-ec536c4cb4b3      |
+      |- 1     : http://dx.doi.org/10.12770/227e9f7b-ddfc-4004-b0e5-f4785d36d43f      |
+      |- 1     : http://dx.doi.org/10.12770/5a9df55d-0cb7-4354-acd0-221b3d5f02fe      |
+      |- 1     : http://dx.doi.org/10.12770/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0      |
+      |- 1     : http://dx.doi.org/10.12770/2287615d-1977-479f-8d5b-439960bcb21a      |
+      |- 1     : http://dx.doi.org/10.12770/cd552057-b604-4004-b838-a4f73cc98fcf      |
+      |- 1     : http://dx.doi.org/10.12770/103b40c0-c07b-46ba-b0e3-f4d5293edd13      |
+      |- 1     : http://dx.doi.org/10.12770/f080166b-0632-4de2-85df-97829d56eabf      |
+      |- 1     : http://dx.doi.org/10.12770/6aeb76a1-cc67-4071-a3a0-3be3b050fe21      |
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //dc:URI
+     
+  |--    46 |  200 |    46 |  200
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=227e9f7b-ddfc- [...(46 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=0d819acd-846c- [...(50 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/fre//resources.get?uuid=2698a37e-c78b- [...(47 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=103b40c0-c07b- [...(61 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=6aeb76a1-cc67- [...(47 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=bf35a7c5-c843- [...(44 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=7d2ed029-4f81- [...(74 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=8c3bd19b-9687- [...(46 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=970bb3ba-aaf6- [...(60 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=5a9df55d-0cb7- [...(46 chars follow)...] |
+
+ |-> RelatedIdentifier <--       //dc:URI
+     
+  |--    46 |  200 |    46 |  200
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=227e9f7b-ddfc- [...(46 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=0d819acd-846c- [...(50 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/fre//resources.get?uuid=2698a37e-c78b- [...(47 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=103b40c0-c07b- [...(61 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=6aeb76a1-cc67- [...(47 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=bf35a7c5-c843- [...(44 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=7d2ed029-4f81- [...(74 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=8c3bd19b-9687- [...(46 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=970bb3ba-aaf6- [...(60 chars follow)...] |
+      |- 2     : https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=5a9df55d-0cb7- [...(46 chars follow)...] |
+
+ |-> MetaDataAccess   <--                     
+  |--    23 |  100 |    23 |  100
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(64 chars follow)...] |
+
+ |-> Creator          <--       //dc:creator/
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Publisher        <--       //dc:publisher/
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Contributor      <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //dc:date[1]/
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Rights           <--       //dc:rights
+  
+  |--    23 |  100 |    23 |  100
+      |- 23    : otherRestrictions                   |
+
+ |-> OpenAccess       <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //dc:publisher/
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Language         <--       //dc:language
+
+  |--    23 |  100 |    23 |  100
+      |- 23    : English                             |
+
+ |-> ResourceType     <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Format           <--       //dc:format/
+ 
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string>Oceanography/Marine Science</string>
+
+  |--    23 |  100 |    23 |  100
+      |- 23    : Oceanography/Marine Science         |
+
+ |-> SpatialCoverage  <--       //ows:BoundingBox/ows:LowerCorner, //ows:BoundingBox/ows:UpperCorner
+
+  |--    23 |  100 |    23 |  100
+      |- 4     : 10 10                               |
+      |- 4     : 42 40.5                             |
+      |- 3     : 36.625 30.000                       |
+      |- 3     : 30 53                               |
+      |- 2     : 93 61.9                             |
+      |- 2     : 9.96 48.6                           |
+      |- 2     : 65 65                               |
+      |- 1     : 31 53                               |
+      |- 1     : 10 49                               |
+      |- 1     : 36.625 30                           |
+
+ |-> TemporalCoverage <--       //dc:coverage/
+
+  |--     0 |    0 |     0 |    0
+

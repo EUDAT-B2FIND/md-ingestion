@@ -1,0 +1,55 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-162</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>AKCES 5 (CzeSL-SGT) Release 2</dc:title>
+      <dc:creator>&#352;ebesta, Karel</dc:creator>
+      <dc:creator>Bed&#345;ichov&#225;, Zuzanna</dc:creator>
+      <dc:creator>&#352;ormov&#225;, Kate&#345;ina</dc:creator>
+      <dc:creator>&#352;tindlov&#225;, Barbora</dc:creator>
+      <dc:creator>Hrdli&#269;ka, Milan</dc:creator>
+      <dc:creator>Hrdli&#269;kov&#225;, Tereza</dc:creator>
+      <dc:creator>Hana, Ji&#345;&#237;</dc:creator>
+      <dc:creator>Petkevi&#269;, Vladim&#237;r</dc:creator>
+      <dc:creator>Jel&#237;nek, Tom&#225;&#353;</dc:creator>
+      <dc:creator>&#352;kodov&#225;, Svatava</dc:creator>
+      <dc:creator>Pol&#225;&#269;kov&#225;, Marie</dc:creator>
+      <dc:creator>Jane&#353;, Petr</dc:creator>
+      <dc:creator>Lund&#225;kov&#225;, Kate&#345;ina</dc:creator>
+      <dc:creator>Skoumalov&#225;, Hana</dc:creator>
+      <dc:creator>Sl&#225;dek, &#352;imon</dc:creator>
+      <dc:creator>Pierscieniak, Piotr</dc:creator>
+      <dc:creator>Toufarov&#225;, Dagmar</dc:creator>
+      <dc:creator>Richter, Michal</dc:creator>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:creator>Rosen, Alexandr</dc:creator>
+      <dc:subject>learner corpus</dc:subject>
+      <dc:subject>Czech as a foreign language</dc:subject>
+      <dc:subject>Czech language acquisition corpora</dc:subject>
+      <dc:subject>AKCES</dc:subject>
+      <dc:subject>non-native speakers</dc:subject>
+      <dc:subject>second language acquistion</dc:subject>
+      <dc:description>Essays written by non-native learners of Czech, a part of AKCES/CLAC &#8211; Czech Language Acquisition Corpora. CzeSL-SGT stands for Czech as a Second Language with Spelling, Grammar and Tags. Extends the &#8220;foreign&#8221; (ciz) part of AKCES 3 (CzeSL-plain) by texts collected in 2013. Original forms and automatic corrections are tagged, lemmatized and assigned erros labels. Most texts have metadata attributes (30 items) about the author and the text.&#13;
+In addition to a few minor bugs, fixes a critical issue in Release 1: the native speakers of Ukrainian (s_L1:"uk") were wrongly labelled as speakers of "other European languages" (s_L1_group="IE"),  instead of speakers of a Slavic language (s_L1_group="S"). The file is now a regular XML document, with all annotation represented as XML attributes.</dc:description>
+      <dc:date>2014-07-27</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-162</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0023-95B1-E</dc:relation>
+      <dc:rights>Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University</dc:publisher>
+      <dc:source>http://utkl.ff.cuni.cz/learncorp/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

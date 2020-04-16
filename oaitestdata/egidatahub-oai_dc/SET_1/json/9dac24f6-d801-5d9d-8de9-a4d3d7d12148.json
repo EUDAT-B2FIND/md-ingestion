@@ -1,0 +1,46 @@
+{
+    "Contributor": [
+        "EGI-DataHub"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "PNG"
+    ],
+    "MetaDataAccess": "http://datahub.egi.eu/oai_pmh?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datahub.egi.eu:1cab8cd08e28be9bb37d47e0be1fbf2e",
+    "MetadataAccess": [
+        "oai:datahub.egi.eu:1cab8cd08e28be9bb37d47e0be1fbf2e"
+    ],
+    "PID": "http://hdl.handle.net/21.T15999/zppPvhg",
+    "PublicationTimestamp": "2018-11-12T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Rights": [
+        "CC-0"
+    ],
+    "author": [
+        "Bartosz Kryza"
+    ],
+    "fulltext": "oai:datahub.egi.eu:1cab8cd08e28be9bb37d47e0be1fbf2e;2018-11-12T20:03:55Z;White Noise Image Collection;Bartosz Kryza;Demonstration;This data set contains 10 images containing white noise, including script used to generate them.;2018-11-12;PNG;CC-0;http://hdl.handle.net/21.T15999/zppPvhg;https://datahub.egi.eu/share/d7f1f5e7090651a79699ff0301fb6fbe",
+    "group": "egidatahub",
+    "groups": [
+        {
+            "name": "egidatahub"
+        }
+    ],
+    "name": "9dac24f6-d801-5d9d-8de9-a4d3d7d12148",
+    "notes": [
+        "This data set contains 10 images containing white noise, including script used to generate them."
+    ],
+    "oai_identifier": [
+        "oai:datahub.egi.eu:1cab8cd08e28be9bb37d47e0be1fbf2e"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "This data set contains 10 images containing white noise, including script used to generate them."
+    ],
+    "url": "https://datahub.egi.eu/share/d7f1f5e7090651a79699ff0301fb6fbe"
+}

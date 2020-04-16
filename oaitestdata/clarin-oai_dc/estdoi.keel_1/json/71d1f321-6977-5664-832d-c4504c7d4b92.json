@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-05BDAL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:9474540",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:9474540"
+    ],
+    "PublicationTimestamp": "2018-03-20T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Piits, Liisi"
+    ],
+    "fulltext": "oai:oai.datacite.org:9474540;2019-04-17T17:26:21Z;ESTDOI;ESTDOI.KEEL;Eesti Keele Instituudi k\u00f5nes\u00fcnteesikorpus;The Corpus of Speech Synthesis of the Institute of the Estonian Language;Piits, Liisi;Center of Estonian Language Resources;2016;Issued: 2016-11-09;Updated: 2018-03-20;doi:10.15155/3-00-0000-0000-0000-05BDAL;Abstract;Eestikeelse tekst-k\u00f5ne s\u00fcnteesi h\u00e4\u00e4lemudelite loomiseks kasutatud sisseloetud tekstid.;Abstract;The corpus contains sound recordings of read texts used for the creation of voice models for Estonian text-to-speech synthesis.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "71d1f321-6977-5664-832d-c4504c7d4b92",
+    "notes": [
+        "Abstract",
+        "Eestikeelse tekst-k\u00f5ne s\u00fcnteesi h\u00e4\u00e4lemudelite loomiseks kasutatud sisseloetud tekstid.",
+        "Abstract",
+        "The corpus contains sound recordings of read texts used for the creation of voice models for Estonian text-to-speech synthesis."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:9474540"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti Keele Instituudi k\u00f5nes\u00fcnteesikorpus",
+        "The Corpus of Speech Synthesis of the Institute of the Estonian Language"
+    ],
+    "url": ""
+}

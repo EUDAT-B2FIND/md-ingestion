@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1177",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1177"
+    ],
+    "PID": "http://hdl.handle.net/11356/1177",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://www.informatica.si/index.php/informatica/article/view/985"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1177;2018-05-28T11:27:32Z;hdl_11356_1023;hdl_11356_1024;Automatically constructed multiword lexicon hrMWELex v0.5;Ljube\u0161i\u0107, Nikola;multiword expressions;collocations;The hrMWELex lexicon is an automatically constructed lexicon of Croatian multiword expression candidates (mostly collocations) from the parsed hrWaC 2.0 corpus by using the DepMWEx [depmueks] tool (https://github.com/nljubesi/depmwex). The tool extracts MWE candidates from parse trees by applying tree patterns and ranking by occurrence statistics.;2015;lexicalConceptualResource;http://hdl.handle.net/11356/1177;hrv;http://www.informatica.si/index.php/informatica/article/view/985;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;https://creativecommons.org/licenses/by/4.0/;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Jo\u017eef Stefan Institute;http://nlp.ffzg.hr/resources/lexicons/hrmwelex/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7d4151ee-7e87-561f-a155-60d3fa7089e7",
+    "notes": [
+        "The hrMWELex lexicon is an automatically constructed lexicon of Croatian multiword expression candidates (mostly collocations) from the parsed hrWaC 2.0 corpus by using the DepMWEx [depmueks] tool (https://github.com/nljubesi/depmwex). The tool extracts MWE candidates from parse trees by applying tree patterns and ranking by occurrence statistics."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1177"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "multiword expressions"
+        },
+        {
+            "name": "collocations"
+        }
+    ],
+    "title": [
+        "Automatically constructed multiword lexicon hrMWELex v0.5"
+    ],
+    "url": ""
+}

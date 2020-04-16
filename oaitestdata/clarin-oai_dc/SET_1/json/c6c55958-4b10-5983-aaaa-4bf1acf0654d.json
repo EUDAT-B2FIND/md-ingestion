@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-BF95-B",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-BF95-B"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0005-BF95-B",
+    "PublicationTimestamp": "2012-03-19T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Cinkov\u00e1, Silvie",
+        "Holub, Martin",
+        "Rambousek, Adam",
+        "Smejkalov\u00e1, Lenka"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-BF95-B;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;VPS-30-En;Cinkov\u00e1, Silvie;Holub, Martin;Rambousek, Adam;Smejkalov\u00e1, Lenka;corpus pattern analysis;clustering;lexical semantics;verbs;VPS-30-En is a small lexical resource that contains the following 30 English verbs: access, ally, arrive, breathe,\r\nclaim, cool, crush, cry, deny, enlarge, enlist, forge, furnish, hail, halt, part, plough, plug, pour, say, smash, smell, steer, submit, swell,\r\ntell, throw, trouble, wake and yield. We have created and have been using VPS-30-En to explore the interannotator agreement potential\r\nof the Corpus Pattern Analysis. VPS-30-En is a small snapshot of the Pattern Dictionary of English Verbs (Hanks and Pustejovsky,\r\n2005), which we revised (both the entries and the annotated concordances) and enhanced with additional annotations.;2012-03-19;lexicalConceptualResource;http://hdl.handle.net/11858/00-097C-0000-0005-BF95-B;eng;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/spr/pdev30verbs.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c6c55958-4b10-5983-aaaa-4bf1acf0654d",
+    "notes": [
+        "VPS-30-En is a small lexical resource that contains the following 30 English verbs: access, ally, arrive, breathe,\r\nclaim, cool, crush, cry, deny, enlarge, enlist, forge, furnish, hail, halt, part, plough, plug, pour, say, smash, smell, steer, submit, swell,\r\ntell, throw, trouble, wake and yield. We have created and have been using VPS-30-En to explore the interannotator agreement potential\r\nof the Corpus Pattern Analysis. VPS-30-En is a small snapshot of the Pattern Dictionary of English Verbs (Hanks and Pustejovsky,\r\n2005), which we revised (both the entries and the annotated concordances) and enhanced with additional annotations."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-BF95-B"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus pattern analysis"
+        },
+        {
+            "name": "clustering"
+        },
+        {
+            "name": "lexical semantics"
+        },
+        {
+            "name": "verbs"
+        }
+    ],
+    "title": [
+        "VPS-30-En"
+    ],
+    "url": ""
+}

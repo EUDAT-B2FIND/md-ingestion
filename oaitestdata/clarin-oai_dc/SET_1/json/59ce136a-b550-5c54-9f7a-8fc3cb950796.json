@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5647",
+    "MetadataAccess": [
+        "oai:ota:oucs:5647"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Fournel, M. (Jean-Fran\u00c3\u00a7ois), 1745-1820."
+    ],
+    "fulltext": "oai:ota:oucs:5647;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5647.xml;An essay on somnambulism, or sleep-walking: produced by animal electricity and magnetism. As well as by sympathy, &c. As performed by the Rev. John Bell, ...;Essai sur les probabilit\u00c3\u00a9s du somnambulisme magn\u00c3\u00a9tique. English;Fournel, M. (Jean-Fran\u00c3\u00a7ois), 1745-1820.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "59ce136a-b550-5c54-9f7a-8fc3cb950796",
+    "oai_identifier": [
+        "oai:ota:oucs:5647"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An essay on somnambulism, or sleep-walking: produced by animal electricity and magnetism. As well as by sympathy, &c. As performed by the Rev. John Bell, ...",
+        "Essai sur les probabilit\u00c3\u00a9s du somnambulisme magn\u00c3\u00a9tique. English"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5647.xml"
+}

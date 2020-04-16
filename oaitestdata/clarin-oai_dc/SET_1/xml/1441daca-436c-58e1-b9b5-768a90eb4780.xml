@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>8c13600ccd0711e1a404080027e73ea2f9cfd28f51d5437b8f5827c516c348fe</identifier>
+    <datestamp>2019-02-27T12:08:48Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:lexicon</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LEX-MWE-PT: Word Combination in Portuguese Language</dc:title>
+      <dc:description>This lexicon includes multiword expressions (MWE) of European Portuguese extracted from a balanced 50,8M word written corpus &#226;&#128;&#147; a subcorpus of the Reference Corpus of Contemporary Portuguese (CRPC). This corpus covers different genres, being mainly constituted by journalistic texts (59%), but it also includes texts from literature (21%), magazines (15%), miscellaneous, supreme court verdicts, parliament sessions and leaflets (5%). The MWE lexicon covers 1.198 lemmas (composed of single words from different POS categories: nouns, adjectives, verbs and adverbs) and a total of 12.753 MWE lemmas (which include inflectional variants of the MWE lemmas) and 242.233 concordances of those MWE expressions manually verified.</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

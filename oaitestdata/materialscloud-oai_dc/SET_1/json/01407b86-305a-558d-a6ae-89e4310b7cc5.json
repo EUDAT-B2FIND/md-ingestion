@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0022/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0022/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0022/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-12-10T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Chen, Wei",
+        "Pasquarello, Alfredo"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0022/v1;2019-06-12Z;DOI;Dataset;Chen, Wei;Pasquarello, Alfredo;Atomic structures of semiconductor surfaces;Materials Cloud;2018-12-10;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;semiconductor;surface;ionization potential;doi:10.24435/materialscloud:2018.0022/v1;https://archive.materialscloud.org/2018.0022/v1;en;This entry includes the surface structures of some prototypical semiconductors obtained via structural optimizations using the PBE density functional. The structures were initially used for benchmarking ionization potentials calculated with hybrid density functionals and GW approximation.\n<br/>\n\n<br/>\nSeven semiconductor surfaces are provided in the form of Quantum ESPRESSO input: Si(111), C(111),  GaAs(110), GaP(110), ZnSe(110), ZnO(10-10), and TiO2(110). ",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "01407b86-305a-558d-a6ae-89e4310b7cc5",
+    "notes": [
+        "This entry includes the surface structures of some prototypical semiconductors obtained via structural optimizations using the PBE density functional. The structures were initially used for benchmarking ionization potentials calculated with hybrid density functionals and GW approximation.\n<br/>\n\n<br/>\nSeven semiconductor surfaces are provided in the form of Quantum ESPRESSO input: Si(111), C(111),  GaAs(110), GaP(110), ZnSe(110), ZnO(10-10), and TiO2(110). "
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0022/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "semiconductor"
+        },
+        {
+            "name": "surface"
+        },
+        {
+            "name": "ionization potential"
+        }
+    ],
+    "title": [
+        "Atomic structures of semiconductor surfaces"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0022/v1"
+}

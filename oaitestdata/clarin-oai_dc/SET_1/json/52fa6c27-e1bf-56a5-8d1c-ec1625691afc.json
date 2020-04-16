@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1953",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1953"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1953",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU General Public Licence, version 3",
+        "http://opensource.org/licenses/GPL-3.0",
+        "PUB"
+    ],
+    "author": [
+        "Straka, Milan",
+        "Mare\u010dek, David"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1953;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;LiStr: Linguistic Structure Induction Tookit;Mare\u010dek, David;Straka, Milan;parsing;unsupervised machine learning;machine translation;grammar induction;This toolkit comprises the tools and supporting scripts for unsupervised induction of dependency trees from raw texts or texts with already assigned part-of-speech tags. There are also scripts for simple machine translation based on unsupervised parsing and scripts for minimally supervised parsing into Universal-Dependencies style.;2016-12-22;toolService;http://hdl.handle.net/11234/1-1953;eng;GNU General Public Licence, version 3;http://opensource.org/licenses/GPL-3.0;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/listr",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "52fa6c27-e1bf-56a5-8d1c-ec1625691afc",
+    "notes": [
+        "This toolkit comprises the tools and supporting scripts for unsupervised induction of dependency trees from raw texts or texts with already assigned part-of-speech tags. There are also scripts for simple machine translation based on unsupervised parsing and scripts for minimally supervised parsing into Universal-Dependencies style."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1953"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parsing"
+        },
+        {
+            "name": "unsupervised machine learning"
+        },
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "grammar induction"
+        }
+    ],
+    "title": [
+        "LiStr: Linguistic Structure Induction Tookit"
+    ],
+    "url": ""
+}

@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5673",
+    "MetadataAccess": [
+        "oai:ota:oucs:5673"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Edgeworth, Maria, 1767-1849."
+    ],
+    "fulltext": "oai:ota:oucs:5673;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5673.xml;The parent's assistant; or, stories for children. Part I. Containing, The Little Dog Trusty; OR, The Liar And Boy Of Truth. The Orange Man; OR, The Honest Boy And The Thief. Tarlton. Lazy Lawrence. The False Key: and Barring-Out. To which is prefixed, an address to parents.;Parent's assistant [pt.1].;Edgeworth, Maria, 1767-1849.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ef53dab6-c492-50bc-b83a-979fd75ae6e3",
+    "oai_identifier": [
+        "oai:ota:oucs:5673"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The parent's assistant; or, stories for children. Part I. Containing, The Little Dog Trusty; OR, The Liar And Boy Of Truth. The Orange Man; OR, The Honest Boy And The Thief. Tarlton. Lazy Lawrence. The False Key: and Barring-Out. To which is prefixed, an address to parents.",
+        "Parent's assistant [pt.1]."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5673.xml"
+}

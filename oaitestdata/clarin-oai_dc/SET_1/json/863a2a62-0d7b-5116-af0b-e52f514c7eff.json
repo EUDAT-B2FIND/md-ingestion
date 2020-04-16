@@ -1,0 +1,113 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/octet-stream",
+        "downloadable_files_count: 3",
+        "application/gzip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/251",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/251"
+    ],
+    "PID": "http://hdl.handle.net/11321/251",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Andrejewicz, Urszula",
+        "Skubida, Natalia",
+        "Kocyba, Natalia",
+        "Wi\u015bniakowska, Lidia",
+        "Patejuk, Agnieszka",
+        "Filipczak, Joanna",
+        "Itoya, Bo\u017cena",
+        "Maciejewska, Ma\u0142gorzata",
+        "Szczyszek, Micha\u0142",
+        "Kaczmarska, El\u017cbieta",
+        "Batko, Piotr",
+        "Zgondek, Maciej",
+        "Zagajewska, Anna",
+        "Drabik, Lidia",
+        "Sulich, Adrian",
+        "Grzeszak, Anna",
+        "Bukowiecka, Halina",
+        "\u015awidzi\u0144ski, Marek",
+        "Norwa, Agnieszka",
+        "Andrzejczuk, Anna",
+        "Przepi\u00f3rkowski, Adam",
+        "Stankiewicz, Anna",
+        "Andrejewicz, J\u0119drzej",
+        "Szymczak, Jakub",
+        "Rosalska, Paulina",
+        "Zawis\u0142awska, Magdalena",
+        "Skwarski, Filip",
+        "\u0141odzi\u0144ska, Agnieszka",
+        "Opacki, Marcin",
+        "\u017bochowska, Natalia",
+        "Woli\u0144ski, Marcin",
+        "Hajnicz, El\u017cbieta",
+        "Brodzi\u0144ska, Magdalena",
+        "Linsztet, Barbara",
+        "W\u00f3jcicka, Alicja",
+        "\u017burowski, Sebastian",
+        "Kalu\u017cna-Go\u0142\u0105b, Marta"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/251;2016-04-28T09:03:29Z;hdl_11321_3;hdl_11321_4;Walenty (2016-04-28);Andrejewicz, J\u0119drzej;Andrejewicz, Urszula;Andrzejczuk, Anna;Batko, Piotr;Brodzi\u0144ska, Magdalena;Bukowiecka, Halina;Drabik, Lidia;Filipczak, Joanna;Grzeszak, Anna;Hajnicz, El\u017cbieta;Itoya, Bo\u017cena;Kaczmarska, El\u017cbieta;Kalu\u017cna-Go\u0142\u0105b, Marta;Kocyba, Natalia;Linsztet, Barbara;\u0141odzi\u0144ska, Agnieszka;Maciejewska, Ma\u0142gorzata;Norwa, Agnieszka;Opacki, Marcin;Patejuk, Agnieszka;Przepi\u00f3rkowski, Adam;Rosalska, Paulina;Skubida, Natalia;Skwarski, Filip;Stankiewicz, Anna;Sulich, Adrian;Szczyszek, Micha\u0142;Szymczak, Jakub;\u015awidzi\u0144ski, Marek;Wi\u015bniakowska, Lidia;Woli\u0144ski, Marcin;W\u00f3jcicka, Alicja;Zagajewska, Anna;Zawis\u0142awska, Magdalena;Zgondek, Maciej;\u017bochowska, Natalia;\u017burowski, Sebastian;valence dictionary;syntactic schema;semantic frame;Walenty is a valence dictionary of Polish developed at the Institute of Computer Science, Polish Academy of Sciences (IPI PAN).\r\n\r\nThe original formalism of Walenty was established by Filip Skwarski, El\u017cbieta Hajnicz, Agnieszka Patejuk, Adam Przepi\u00f3rkowski, Marcin Woli\u0144ski, Marek \u015awidzi\u0144ski, and Magdalena Zawis\u0142awska. It has been further developed by El\u017cbieta Hajnicz, Agnieszka Patejuk, Adam Przepi\u00f3rkowski, and Marcin Woli\u0144ski. The semantic layer has been developed by El\u017cbieta Hajnicz and Anna Andrzejczuk.\r\n\r\nThe original seed of Walenty was provided by the automatic conversion, manually reviewed by Filip Skwarski, of the verbal valence dictionary used by the \u015awigra2 parser (6396 schemata for 1462 lemmata), which was in turn based on SDPV, the Syntactic Dictionary of Polish Verbs by Marek \u015awidzi\u0144ski (4148 schemata for 1064 lemmata). Afterwards, Walenty has been developed independently by adding new entries, syntactic schemata, in particular phraseological ones, and semantic frames.\r\n\r\nWalenty has been edited and compiled using the Slowal tool (http://zil.ipipan.waw.pl/Slowal) created by Bart\u0142omiej Nito\u0144 and Tomasz Bartosiak.;2016;lexicalConceptualResource;http://hdl.handle.net/11321/251;pol;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/gzip;application/gzip;application/gzip;application/octet-stream;application/octet-stream;downloadable_files_count: 3;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/Walenty",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "863a2a62-0d7b-5116-af0b-e52f514c7eff",
+    "notes": [
+        "Walenty is a valence dictionary of Polish developed at the Institute of Computer Science, Polish Academy of Sciences (IPI PAN).\r\n\r\nThe original formalism of Walenty was established by Filip Skwarski, El\u017cbieta Hajnicz, Agnieszka Patejuk, Adam Przepi\u00f3rkowski, Marcin Woli\u0144ski, Marek \u015awidzi\u0144ski, and Magdalena Zawis\u0142awska. It has been further developed by El\u017cbieta Hajnicz, Agnieszka Patejuk, Adam Przepi\u00f3rkowski, and Marcin Woli\u0144ski. The semantic layer has been developed by El\u017cbieta Hajnicz and Anna Andrzejczuk.\r\n\r\nThe original seed of Walenty was provided by the automatic conversion, manually reviewed by Filip Skwarski, of the verbal valence dictionary used by the \u015awigra2 parser (6396 schemata for 1462 lemmata), which was in turn based on SDPV, the Syntactic Dictionary of Polish Verbs by Marek \u015awidzi\u0144ski (4148 schemata for 1064 lemmata). Afterwards, Walenty has been developed independently by adding new entries, syntactic schemata, in particular phraseological ones, and semantic frames.\r\n\r\nWalenty has been edited and compiled using the Slowal tool (http://zil.ipipan.waw.pl/Slowal) created by Bart\u0142omiej Nito\u0144 and Tomasz Bartosiak."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/251"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "valence dictionary"
+        },
+        {
+            "name": "syntactic schema"
+        },
+        {
+            "name": "semantic frame"
+        }
+    ],
+    "title": [
+        "Walenty (2016-04-28)"
+    ],
+    "url": ""
+}

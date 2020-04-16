@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 418 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1922",
+    "MetadataAccess": [
+        "oai:ota:oucs:1922"
+    ],
+    "PublicationTimestamp": "1823-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1823"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Shelley, Mary Wollstonecraft, 1797-1851"
+    ],
+    "fulltext": "oai:ota:oucs:1922;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/1922.xml;Frankenstein [Electronic resource], or, The modern Prometheus / by Mary Wollestonecraft Shelley;Shelley, Mary Wollstonecraft, 1797-1851;1823;text_and_corpus_linguistics;Fiction -- Great Britain -- 19th century;Novels -- Great Britain -- 19th century;Epistolary novels -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 418 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ee3fa144-c651-537e-b0d2-74dc6926095f",
+    "oai_identifier": [
+        "oai:ota:oucs:1922"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Great Britain -- th century"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        },
+        {
+            "name": "Epistolary novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Frankenstein [Electronic resource], or, The modern Prometheus / by Mary Wollestonecraft Shelley"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1922.xml"
+}

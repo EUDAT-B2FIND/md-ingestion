@@ -1,0 +1,105 @@
+{
+    "Contact": [
+        "Jan Oliver R\u00fcdiger"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German",
+        "English",
+        "French",
+        "Italian",
+        "Dutch",
+        "Spanish",
+        "Polish",
+        "Arabic",
+        "Chinese",
+        "Portuguese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2634",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2634"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2634",
+    "PublicationTimestamp": "2018-03-14T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Jan Oliver R\u00fcdiger"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "R\u00fcdiger, Jan Oliver"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2634;2018-06-25T14:14:59Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;CorpusExplorer;R\u00fcdiger, Jan Oliver;Corpus Linguisitics;NLP;conll;tei;XML;nlp;Natural Language Processing;linguistics;Linguistics;Computational Linguistics;corpus processing;tagger;POS tagger;lemmatization;text cleaning;CommonCrawl;epub;JSON;Twitter;Pandoc;Wikipedia;digital data;DTA;DSpin;MySQL;ElasticSearch;TextGrid;text corpora;TigerXML;WeblichtXML;Software for corpus linguists and text/data mining enthusiasts. The CorpusExplorer combines over 45 interactive visualizations under a user-friendly interface. Routine tasks such as text acquisition, cleaning or tagging are completely automated. The simple interface supports the use in university teaching and leads users/students to fast and substantial results. The CorpusExplorer is open for many standards (XML, CSV, JSON, R, etc.) and also offers its own software development kit (SDK).\r\n\r\nSource code available at https://github.com/notesjor/corpusexplorer2.0;2018-03-14;toolService;http://hdl.handle.net/11234/1-2634;deu;eng;fra;ita;nld;spa;pol;ara;zho;por;downloadable_files_count: 0;Jan Oliver R\u00fcdiger;http://corpusexplorer.de",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e855725d-d9a5-5a3c-b46a-8065115d8b46",
+    "notes": [
+        "Software for corpus linguists and text/data mining enthusiasts. The CorpusExplorer combines over 45 interactive visualizations under a user-friendly interface. Routine tasks such as text acquisition, cleaning or tagging are completely automated. The simple interface supports the use in university teaching and leads users/students to fast and substantial results. The CorpusExplorer is open for many standards (XML, CSV, JSON, R, etc.) and also offers its own software development kit (SDK).\r\n\r\nSource code available at https://github.com/notesjor/corpusexplorer2.0"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2634"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Corpus Linguisitics"
+        },
+        {
+            "name": "NLP"
+        },
+        {
+            "name": "conll"
+        },
+        {
+            "name": "tei"
+        },
+        {
+            "name": "XML"
+        },
+        {
+            "name": "nlp"
+        },
+        {
+            "name": "Natural Language Processing"
+        },
+        {
+            "name": "linguistics"
+        },
+        {
+            "name": "Linguistics"
+        },
+        {
+            "name": "Computational Linguistics"
+        },
+        {
+            "name": "corpus processing"
+        },
+        {
+            "name": "tagger"
+        }
+    ],
+    "title": [
+        "CorpusExplorer"
+    ],
+    "url": ""
+}

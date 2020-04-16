@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>e5ad1db81c5f11e2a2aa782bcb074135120115ce2d3b4f4ab0b3e9958b77d1f2</identifier>
+    <datestamp>2018-11-15T16:39:45Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Dizer</dc:title>
+      <dc:description>DiZer 2.0 is a web interface for discourse parsing. It is based on DiZer (Pardo and Nunes, 2008), the first discourse parser for Brazilian Portuguese. The system aims at producing the discourse structure of a source text following the Rhetorical Structure Theory &#226;&#128;&#147; RST (Mann and Thompson, 1987), one of the most used discourse theories in Computational Linguistics and Natural Language Processing.
+
+DiZer 2.0 also allows the customization for other languages, being minimally necessary a discourse segmenter and a list of discourse patterns, which correlate text superficial markers to RST characteristics. DiZer 2.0 is currently customized for Brazilian Portuguese and Spanish.
+</dc:description>
+      <dc:date>2012-10-24</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

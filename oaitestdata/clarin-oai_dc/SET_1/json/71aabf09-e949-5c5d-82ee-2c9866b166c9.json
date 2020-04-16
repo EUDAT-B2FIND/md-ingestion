@@ -1,0 +1,58 @@
+{
+    "Contributor": [
+        "Schmidt, Thomas"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English",
+        "French",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1054",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1054"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1054",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Germany||United States"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1054;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Kicktionary;Schmidt, Thomas;Electronic dictionary of football language, using FrameNet and WordNet approaches;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1054;eng;fra;deu;downloadable_files_count: 0;Germany||United States;http://www.kicktionary.de",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "71aabf09-e949-5c5d-82ee-2c9866b166c9",
+    "notes": [
+        "Electronic dictionary of football language, using FrameNet and WordNet approaches"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1054"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Kicktionary"
+    ],
+    "url": ""
+}

@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/477</identifier>
+    <datestamp>2018-06-07T20:10:59Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Linguistic presentation of object structure and relations in OSL language</dc:title>
+      <dc:creator>Ryznar, Zygmunt</dc:creator>
+      <dc:subject>object structure and relations</dc:subject>
+      <dc:subject>business it human specification language</dc:subject>
+      <dc:subject>object geometric mapping</dc:subject>
+      <dc:description>OSL is a markup universal  language for linguistic description of  any object  in terms of structure  and behavior. The kernel is presented and subsets for IT system,  business  and  human-being.   Special atention is given to geometrical structures suggested as  new data types.</dc:description>
+      <dc:date>2018-06-02</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/477</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>researchgate.net</dc:publisher>
+      <dc:source>http://ryznar-zygmunt.eu/ipedia/OSL-D.pdf</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

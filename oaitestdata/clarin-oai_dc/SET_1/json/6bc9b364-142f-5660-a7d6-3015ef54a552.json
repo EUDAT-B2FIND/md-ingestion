@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "The National Library of Sweden"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/112",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/112"
+    ],
+    "PID": "http://hdl.handle.net/10794/112",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "The National Library of Sweden"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/112;2017-11-01T13:47:54Z;hdl_10794_1;hdl_10794_2;Bolln\u00e4s tidning 1880's (2015-08-31);Bolln\u00e4s tidning 1880-talet (2015-08-31);n/a, n/a;Swedish;News;A corpus with texts from Bolln\u00e4s tidning in the 1880's (1880-01\u20131880-05).;En korpus med texter fr\u00e5n Bolln\u00e4s tidning p\u00e5 1880-talet (1880-01\u20131880-05).;2015-04-08;corpus;http://hdl.handle.net/10794/112;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;http://creativecommons.org/licenses/by/4.0/;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;The National Library of Sweden;https://spraakbanken.gu.se/swe/resurs/kubhist-bollnastidning-1880",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6bc9b364-142f-5660-a7d6-3015ef54a552",
+    "notes": [
+        "A corpus with texts from Bolln\u00e4s tidning in the 1880's (1880-01\u20131880-05).",
+        "En korpus med texter fr\u00e5n Bolln\u00e4s tidning p\u00e5 1880-talet (1880-01\u20131880-05)."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/112"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "News"
+        }
+    ],
+    "title": [
+        "Bolln\u00e4s tidning 1880's (2015-08-31)",
+        "Bolln\u00e4s tidning 1880-talet (2015-08-31)"
+    ],
+    "url": ""
+}

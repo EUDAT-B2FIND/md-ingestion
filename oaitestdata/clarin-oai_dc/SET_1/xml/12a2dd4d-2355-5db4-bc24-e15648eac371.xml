@@ -1,0 +1,58 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1042</identifier>
+    <datestamp>2018-05-28T11:24:49Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MULTEXT-East non-commercial lexicons 4.0</dc:title>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Derzhanski, Ivan</dc:creator>
+      <dc:creator>Divjak, Dagmar</dc:creator>
+      <dc:creator>Feldman, Anna</dc:creator>
+      <dc:creator>Kopotev, Mikhail</dc:creator>
+      <dc:creator>Kotsyba, Natalia</dc:creator>
+      <dc:creator>Krstev, Cvetana</dc:creator>
+      <dc:creator>Petrovski, Aleksandar</dc:creator>
+      <dc:creator>QasemiZadeh, Behrang</dc:creator>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:creator>Sharoff, Serge</dc:creator>
+      <dc:creator>Sokolovsky, Paul</dc:creator>
+      <dc:creator>Vitas, Du&#353;ko</dc:creator>
+      <dc:creator>Zdravkova, Katerina</dc:creator>
+      <dc:subject>lemmatisation</dc:subject>
+      <dc:subject>inflection</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>multilingual</dc:subject>
+      <dc:description>The MULTEXT-East morphosyntactic lexicons have a simple structure, where each line is a lexical entry with three tab-separated fields: (1) the word-form, the inflected form of the word; (2) the lemma, the base-form of the word; (3) the MSD, the morphosyntactic description of the word-form, i.e., its fine-grained PoS tag, as defined in the MULTEXT-East morphosyntactic specifications. &#13;
+&#13;
+This submission contains the non-commercial MULTEXT-East lexicons, while a separate submission (http://hdl.handle.net/11356/1041) gives those that are freely available.</dc:description>
+      <dc:date>2010-05-14</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1042</dc:identifier>
+      <dc:language>fas</dc:language>
+      <dc:language>mkd</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>srp</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/211938</dc:relation>
+      <dc:relation>https://doi.org/10.1007/s10579-011-9174-8</dc:relation>
+      <dc:relation>http://hdl.handle.net/11372/LRT-675</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-nc/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 6</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>http://nl.ijs.si/ME/V4/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

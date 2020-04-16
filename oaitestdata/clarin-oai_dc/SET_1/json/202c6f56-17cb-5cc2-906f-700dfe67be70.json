@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Amsterdam Centre for Language and Communication, University of Amsterdam"
+    ],
+    "Contributor": [
+        "Son, Rob van"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-734",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-734"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-734",
+    "PublicationTimestamp": "2001-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2001"
+    ],
+    "Publisher": [
+        "Amsterdam Centre for Language and Communication, University of Amsterdam"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GPL"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-734;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;IFA Spoken Language Corpus;Son, Rob van;hand-segmented speech;2001;corpus;http://hdl.handle.net/11372/LRT-734;nld;GPL;downloadable_files_count: 0;Amsterdam Centre for Language and Communication, University of Amsterdam;http://www.fon.hum.uva.nl/IFA-SpokenLanguageCorpora/IFAcorpus/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "202c6f56-17cb-5cc2-906f-700dfe67be70",
+    "notes": [
+        "hand-segmented speech"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-734"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "IFA Spoken Language Corpus"
+    ],
+    "url": ""
+}

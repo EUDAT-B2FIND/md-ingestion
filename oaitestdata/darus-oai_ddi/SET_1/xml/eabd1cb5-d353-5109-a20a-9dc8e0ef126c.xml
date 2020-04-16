@@ -1,0 +1,81 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-472</identifier>
+    <datestamp>2019-12-04T01:00:01Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>3D Cryo-FIB SEM - Mallomonas Dataset</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-472</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-03</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-12-03" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>H&#246;rning, Marcel; Schertel, Andreas; Schneider, Ralf; Lemloh, Marie-Louise; Schweikert, Michael R.; Weiss, Ingrid M., 2019, "3D Cryo-FIB SEM - Mallomonas Dataset", https://doi.org/10.18419/darus-472, DaRUS, V1</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>3D Cryo-FIB SEM - Mallomonas Dataset</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-472</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="University of Stuttgart">H&#246;rning, Marcel</AuthEnty>
+            <AuthEnty affiliation="CARL ZEISS Microscopy GmbH">Schertel, Andreas</AuthEnty>
+            <AuthEnty affiliation="High Performance Computing Center Stuttgart (HLRS)">Schneider, Ralf</AuthEnty>
+            <AuthEnty affiliation="University of Stuttgart">Lemloh, Marie-Louise</AuthEnty>
+            <AuthEnty affiliation="University of Stuttgart">Schweikert, Michael R.</AuthEnty>
+            <AuthEnty affiliation="University of Stuttgart">Weiss, Ingrid M.</AuthEnty>
+          </rspStmt>
+          <prodStmt/>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-03</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Medicine, Health and Life Sciences</keyword>
+            <keyword>Physics</keyword>
+            <keyword>Other</keyword>
+            <keyword>Cryo-FIB SEM</keyword>
+            <keyword>scale case</keyword>
+            <keyword>protista</keyword>
+            <keyword>biomineralization</keyword>
+          </subject>
+          <abstract>Dataset of raw and image processed 3D Cryo-FIB SEM data recorded from Mallomonas cells.</abstract>
+          <sumDscr/>
+          <relPubl>H&#246;rning, Marcel; Schertel, Andreas; Schneider, Ralf; Lemloh, Marie-Louise; Schweikert, Michael R.; Weiss, Ingrid M. (2019) "Mineralized scale patterns on the cell periphery of the chrysophyte Mallomonas determined by comparative 3D Cryo-FIB SEM data processing", Journal of Structural Biology, 107403, doi, 10.1016/j.jsb.2019.10.005, https://doi.org/10.1016/j.jsb.2019.10.005</relPubl>
+          <contact affiliation="University of Stuttgart">H&#246;rning, Marcel</contact>
+          <contact affiliation="University of Stuttgart">Weiss, Ingrid M.</contact>
+          <depositr>H&#246;rning, Marcel</depositr>
+          <depDate>2019-09-25</depDate>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f385" URI="https://doi.org/10.18419/darus-472/2" level="datafile">
+        <labl>Hoerning_Mallomonas_ImageProcessed.tif</labl>
+        <txt>Dataset of image processed 3D Cryo-FIB SEM data recorded from Mallomonas cells.</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">image/tiff</notes>
+      </otherMat>
+      <otherMat ID="f384" URI="https://doi.org/10.18419/darus-472/1" level="datafile">
+        <labl>Hoerning_Mallomonas_RawData.tif</labl>
+        <txt>Dataset of unprocessed 3D Cryo-FIB SEM data recorded from Mallomonas cells.</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">image/tiff</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

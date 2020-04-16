@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=2f2a00e4b92f11e1a404080027e73ea2eccd095ad8b0407989b2adb143ab6095",
+    "MetadataAccess": [
+        "2f2a00e4b92f11e1a404080027e73ea2eccd095ad8b0407989b2adb143ab6095"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "2f2a00e4b92f11e1a404080027e73ea2eccd095ad8b0407989b2adb143ab6095;2019-02-27T12:08:50Z;corpus;corpus:text;CINTIL-Definitions;The corpus presented here is a collection of several tutorials and scientific papers in the field of Information Technology with 603 annotated definitions from Portuguese. The texts were collected from the Web at the beginning of the 2006 and they are organised in 32 files of three different sub-domains with 268,064 tokens: Information Society (91,825 tokens), Information Technology (80,483 tokens), and e-Learning (94,756 tokens).;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b3d8c3f8-aa21-5a70-ae74-1394fbe2c182",
+    "notes": [
+        "The corpus presented here is a collection of several tutorials and scientific papers in the field of Information Technology with 603 annotated definitions from Portuguese. The texts were collected from the Web at the beginning of the 2006 and they are organised in 32 files of three different sub-domains with 268,064 tokens: Information Society (91,825 tokens), Information Technology (80,483 tokens), and e-Learning (94,756 tokens)."
+    ],
+    "oai_identifier": [
+        "2f2a00e4b92f11e1a404080027e73ea2eccd095ad8b0407989b2adb143ab6095"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "CINTIL-Definitions"
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "Contributor": [
+        "CINES"
+    ],
+    "DiscHierarchy": [
+        "3.1.2",
+        "Live Sciences",
+        "Plant Sciences "
+    ],
+    "Discipline": "Plant_Sciences",
+    "Format": [
+        "image/jpeg"
+    ],
+    "MetaDataAccess": "https://opendata.cines.fr/herbadrop-api/rest/data/search/dataset/0cb3a2f7-1ec4-5efc-b8c2-31139913e119",
+    "MetaDataAcess": [
+        "P04215733"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "PublicationTimestamp": "2019-01-27T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "MNHN"
+    ],
+    "ResourceType": [
+        "StillImage|PRESERVED_SPECIMEN"
+    ],
+    "Rights": [
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "unavailable"
+    ],
+    "group": "herbadrop",
+    "groups": [
+        {
+            "name": "herbadrop"
+        }
+    ],
+    "name": "0cb3a2f7-1ec4-5efc-b8c2-31139913e119",
+    "namespaces": [
+        ":"
+    ],
+    "notes": [
+        "Digitized_herbarium_sheet",
+        "unavailable"
+    ],
+    "oai_identifier": [
+        "0cb3a2f7-1ec4-5efc-b8c2-31139913e119"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Asteraceae"
+        }
+    ],
+    "title": [
+        "Senecio Herbarium Practice & Following Welman."
+    ],
+    "url": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04215733"
+}

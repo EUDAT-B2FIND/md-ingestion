@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Fisher, Jane L.",
+        "Fisher, John H.",
+        "Burnley, J. D."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 567 KB)"
+    ],
+    "Language": [
+        "Middle English (1100-1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1676",
+    "MetadataAccess": [
+        "oai:ota:oucs:1676"
+    ],
+    "PublicationTimestamp": "1384-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1384"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Anthologies"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1676;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/1676.xml;An anthology of Chancery English / John H. Fisher, Malcolm Richardson [and] Jane L. Fisher;1384-1462;text_and_corpus_linguistics;English language -- Middle English, 1100-1500 -- Grammar;English language -- Middle English, 1100-1500 -- Texts;Great Britain -- Court and courtiers -- Language;Great Britain -- History -- Henry V, 1413-1422 -- Sources;Great Britain -- Officials and employees -- Language;Great Britain -- Politics and government -- 1399-1485;enm;Oxford Text Archive, University of Oxford;Fisher, Jane L.;Fisher, John H.;Burnley, J. D.;(1 file : ca. 567 KB);Text;Anthologies;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a098a9fd-de98-5a47-b519-387c25b643f6",
+    "oai_identifier": [
+        "oai:ota:oucs:1676"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English language -- Middle English"
+        },
+        {
+            "name": "- -- Grammar"
+        },
+        {
+            "name": "English language -- Middle English"
+        },
+        {
+            "name": "- -- Texts"
+        },
+        {
+            "name": "Great Britain -- Court courtiers -- Language"
+        },
+        {
+            "name": "Great Britain -- History -- Henry V"
+        },
+        {
+            "name": "- -- Sources"
+        },
+        {
+            "name": "Great Britain -- Officials employees -- Language"
+        },
+        {
+            "name": "Great Britain -- Politics government -- -"
+        }
+    ],
+    "title": [
+        "An anthology of Chancery English / John H. Fisher, Malcolm Richardson [and] Jane L. Fisher"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1676.xml"
+}

@@ -1,0 +1,47 @@
+{
+    "Contact": [
+        "The staff at the VO HPSL datacenter"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://src.pas/__system__/services/registry",
+    "PublicationTimestamp": "2018-12-21T17:32:50Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "The staff at the VO HPSL datacenter"
+    ],
+    "RelatedIdentifier": [
+        "ivo://src.pas/__system__/services/registry"
+    ],
+    "Rights": [
+        "public"
+    ],
+    "author": [
+        "Lukasz Tomasik"
+    ],
+    "fulltext": "ivo://src.pas/__system__/services/registry;2018-12-21T17:32:50Z;VO HPSL datacenter Registry;ivo://src.pas/__system__/services/registry;Lukasz Tomasik; The publishing registry for the VO HPSL datacenter.;public;The staff at the VO HPSL datacenter",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0c73947a-d056-5b13-bf15-91c5509feb1e",
+    "notes": [
+        " The publishing registry for the VO HPSL datacenter."
+    ],
+    "oai_identifier": [
+        "ivo://src.pas/__system__/services/registry"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        " The publishing registry for the VO HPSL datacenter."
+    ]
+}

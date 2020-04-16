@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Turegano, Marta",
+        "DeFelipe, Javier",
+        "Merchan-Perez, Angel",
+        "Rodriguez, Rodrigo"
+    ],
+    "DOI": "http://dx.doi.org/10.25493/T3VH-K6P",
+    "DiscHierarchy": [
+        "3.2.3",
+        "Medicine",
+        "Neurosciences"
+    ],
+    "Discipline": "Neuroscience",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_T3VH-K6P",
+    "MetadataAccess": [
+        "10.25493_T3VH-K6P"
+    ],
+    "PublicationTimestamp": "2019-05-23T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial 4.0 International"
+    ],
+    "author": [
+        "Merchan-Perez, Angel"
+    ],
+    "fulltext": "10.25493_T3VH-K6P;2019-12-10T12:41:57Z;https://doi.org/10.25493/T3VH-K6P;Densities and 3D distributions of synapses using FIB/SEM imaging in the mouse neocortex (somatosensory cortex);2019-05-23T08:07:34.108Z;Synapses have been identified, segmented and quantified in the adult mouse somatosensory cortex with 3D electron microscopy (FIB-SEM). Three animals have been used (ID5, ID24 and ID25). The six layers of the somatosensory cortex have been studied. Data obtained include the number of asymmetric and symmetric synapses, their sizes and their spatial distribution. \n\n\n**Embargo status:**   \n*This dataset is temporarily under embargo. The data will become available for download after the embargo period.*;neuroscience;english;dataset;The Human Brain Project;Turegano, Marta;Rodriguez, Rodrigo;DeFelipe, Javier;Merchan-Perez, Angel;Merchan-Perez, Angel;Creative Commons Attribution-NonCommercial 4.0 International",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "0c4c065b-0cba-5da0-8d02-5ba15f617539",
+    "notes": [
+        "Synapses have been identified, segmented and quantified in the adult mouse somatosensory cortex with 3D electron microscopy (FIB-SEM). Three animals have been used (ID5, ID24 and ID25). The six layers of the somatosensory cortex have been studied. Data obtained include the number of asymmetric and symmetric synapses, their sizes and their spatial distribution. \n\n\n**Embargo status:**   \n*This dataset is temporarily under embargo. The data will become available for download after the embargo period.*"
+    ],
+    "oai_identifier": [
+        "10.25493_T3VH-K6P"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        }
+    ],
+    "title": [
+        "Densities and 3D distributions of synapses using FIB/SEM imaging in the mouse neocortex (somatosensory cortex)"
+    ],
+    "url": ""
+}

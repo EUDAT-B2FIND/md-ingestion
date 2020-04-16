@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Drukarnia Collegium Kaliskiego"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/pdf"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-184",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-184"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CF4-0",
+    "PublicationTimestamp": "1718-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1718"
+    ],
+    "Publisher": [
+        "Drukarnia Collegium Kaliskiego"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/184"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Za\u0142uski, Andrzej Chryzostom (ca 1648 - 1711)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-184;2019-03-01T11:03:49Z;Mowy seymowe Ja\u015bnie O\u015bwieconego Xi\u0105z\u0119cia biskupa warminskiego Andrzeja Chryzostoma , na Za\u0142uskach y B\u0142\u0119dowie Za\u0142uskiego kanclerza wielkiego koronnego przy publicznych Oyczyzny obradach miane.;Za\u0142uski, Andrzej Chryzostom (ca 1648 - 1711);Mowy polskie 18 w.;ilo\u015b\u0107 skan\u00f3w: 238 ; sygn. St-297;Drukarnia Collegium Kaliskiego;1718;starodruk;application/pdf;clarind-uds:poldilemma-184;hdl:11858/00-246C-0000-0023-8CF4-0;pol;lat;http://pbc.biaman.pl/Content/184;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f5bf93a5-842d-5b44-840d-645095410ff9",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 238 ; sygn. St-297"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-184"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Mowy polskie w."
+        }
+    ],
+    "title": [
+        "Mowy seymowe Ja\u015bnie O\u015bwieconego Xi\u0105z\u0119cia biskupa warminskiego Andrzeja Chryzostoma , na Za\u0142uskach y B\u0142\u0119dowie Za\u0142uskiego kanclerza wielkiego koronnego przy publicznych Oyczyzny obradach miane."
+    ],
+    "url": ""
+}

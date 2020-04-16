@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17962501</identifier>
+    <datestamp>2019-06-16T17:36:32Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">TEXTA Toolkit</dc:title>
+      <dc:creator>Sirel, Raul</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-07</dc:date>
+      <dc:date>Updated: 2019-01-07</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0018EL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">TEXTA Toolkit on eraldiseisev tarkvara, mis v&#245;imaldab tekstikorpustest ekstraheerida korpuses esindatud valdkonnale omast oskuss&#245;navara, koostada selle alusel m&#245;istep&#245;hiseid terminoloogilisi ressursse, tuvastada tekstidokumentidest m&#245;istetele viitavaid tekstifragmente ning visualiseerida tulemusi andmestikus leiduvate andmev&#228;ljade l&#245;ikes. Valdkondliku terminikasutuse kirjeldamiseks kasutatakse tarkvara koosseisus erinevaid juhendamata masin&#245;ppe meetodeid, sh tehisneurov&#245;rkudel p&#245;hinevaid loomuliku keele vektormudeleid.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Terminology EXtraction and Text Analytics (TEXTA) Toolkit is a program that provides resources for analysing free text datasets. It includes the tools, which are necessary for the text analytics or solutions based on the latter. TEXTA enables fast searches and analyses from texts, to classify documents and extract information from them. The content of toolkit can be configured according to the needs of the customer and is accessible as a cloud service or installed to the customer&#8217;s infrastructure. The toolkit contains the following applications: searcher, multiword expression miner, base lexicon miner, conceptualizer, grammar miner, classifier.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "The National Library of Sweden"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/19",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/19"
+    ],
+    "PID": "http://hdl.handle.net/10794/19",
+    "PublicationTimestamp": "2015-04-23T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "The National Library of Sweden"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/19;2017-10-27T16:47:39Z;hdl_10794_1;hdl_10794_2;Aftonbladet 1850's (2017-10-16);Aftonbladet 1850-talet (2017-10-16);n/a, n/a;Swedish;News;A corpus with texts from Aftonbladet in the 1850's.;En korpus med texter fr\u00e5n Aftonbladet p\u00e5 1850-talet.;2015-04-23;corpus;http://hdl.handle.net/10794/19;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;The National Library of Sweden;https://spraakbanken.gu.se/swe/resurs/kubhist-aftonbladet-1850",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "07cc6aa5-c09d-52f0-806c-6285879adc23",
+    "notes": [
+        "A corpus with texts from Aftonbladet in the 1850's.",
+        "En korpus med texter fr\u00e5n Aftonbladet p\u00e5 1850-talet."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/19"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "News"
+        }
+    ],
+    "title": [
+        "Aftonbladet 1850's (2017-10-16)",
+        "Aftonbladet 1850-talet (2017-10-16)"
+    ],
+    "url": ""
+}

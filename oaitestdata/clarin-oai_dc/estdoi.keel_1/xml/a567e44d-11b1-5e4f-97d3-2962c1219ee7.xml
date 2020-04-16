@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5756923</identifier>
+    <datestamp>2019-06-13T17:25:39Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti ajakirjanduse korpus</dc:title>
+      <dc:title xml:lang="en">Corpus of Estonian newspaper texts</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2013</dc:date>
+      <dc:date>Issued: 2013-01-07</dc:date>
+      <dc:date>Updated: 2015-05-22</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0007CL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Korpus sisaldab eesti ajalehti, 182 miljonit s&#245;na. TEI P5 XML m&#228;rgendus, UTF8 kodeering.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Corpus of Estonian newspaper texts, 182 million words
+Markup: TEI P5 XML
+Encoding: UTF8</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 465 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2052",
+    "MetadataAccess": [
+        "oai:ota:oucs:2052"
+    ],
+    "PublicationTimestamp": "1749-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1749"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Cleland, John, 1709-1789"
+    ],
+    "fulltext": "oai:ota:oucs:2052;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2052.xml;Memoirs of a woman of pleasure (Fanny Hill) / by John Cleland;Cleland, John, 1709-1789;1749;text_and_corpus_linguistics;Fiction -- England -- 18th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 465 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "37013baf-6c3d-5c8f-a979-70607eabbc85",
+    "oai_identifier": [
+        "oai:ota:oucs:2052"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- England -- th century"
+        }
+    ],
+    "title": [
+        "Memoirs of a woman of pleasure (Fanny Hill) / by John Cleland"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2052.xml"
+}
