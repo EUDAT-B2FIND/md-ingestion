@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17944457</identifier>
+    <datestamp>2019-05-28T05:03:15Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">CG s&#252;ntaksianal&#252;saatori anal&#252;&#252;situd Tasakaalus korpus</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-03</dc:date>
+      <dc:date>Updated: 2019-01-03</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00172L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">ajakirjandus, ilukirjandus, teaduskirjandus</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

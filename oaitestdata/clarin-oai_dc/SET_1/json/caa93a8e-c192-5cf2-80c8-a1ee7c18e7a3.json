@@ -1,0 +1,92 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2143",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2143"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2143",
+    "PublicationTimestamp": "2017-04-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "http://creativecommons.org/licenses/by-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jane\u0161, Petr",
+        "\u0160tindlov\u00e1, Barbora",
+        "Rosen, Alexandr",
+        "Hrdli\u010dka, Milan",
+        "\u0160ormov\u00e1, Kate\u0159ina",
+        "Toufarov\u00e1, Dagmar",
+        "Pol\u00e1\u010dkov\u00e1, Marie",
+        "Hrdli\u010dkov\u00e1, Tereza",
+        "\u0160ebesta, Karel",
+        "N\u00e1plava, Jakub",
+        "Pierscieniak, Piotr",
+        "Lund\u00e1kov\u00e1, Kate\u0159ina",
+        "Bed\u0159ichov\u00e1, Zuzanna",
+        "Hana, Ji\u0159\u00ed",
+        "Jel\u00ednek, Tom\u00e1\u0161",
+        "\u0160kodov\u00e1, Svatava",
+        "Skoumalov\u00e1, Hana",
+        "Straka, Milan",
+        "Sl\u00e1dek, \u0160imon",
+        "Petkevi\u010d, Vladim\u00edr"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2143;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;CzeSL Grammatical Error Correction Dataset (CzeSL-GEC);\u0160ebesta, Karel;Bed\u0159ichov\u00e1, Zuzanna;\u0160ormov\u00e1, Kate\u0159ina;\u0160tindlov\u00e1, Barbora;Hrdli\u010dka, Milan;Hrdli\u010dkov\u00e1, Tereza;Hana, Ji\u0159\u00ed;Petkevi\u010d, Vladim\u00edr;Jel\u00ednek, Tom\u00e1\u0161;\u0160kodov\u00e1, Svatava;Jane\u0161, Petr;Lund\u00e1kov\u00e1, Kate\u0159ina;Skoumalov\u00e1, Hana;Sl\u00e1dek, \u0160imon;Pierscieniak, Piotr;Toufarov\u00e1, Dagmar;Straka, Milan;Rosen, Alexandr;N\u00e1plava, Jakub;Pol\u00e1\u010dkov\u00e1, Marie;natural language correction;grammatical error correction;CzeSL-GEC is a corpus containing sentence pairs of original and corrected versions of Czech sentences collected from essays written by both non-native learners of Czech and Czech pupils with Romani background. To create this corpus, unreleased CzeSL-man corpus (http://utkl.ff.cuni.cz/learncorp/) was utilized. All sentences in the corpus are word tokenized.;2017-04-30;corpus;http://hdl.handle.net/11234/1-2143;ces;Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0);http://creativecommons.org/licenses/by-sa/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "caa93a8e-c192-5cf2-80c8-a1ee7c18e7a3",
+    "notes": [
+        "CzeSL-GEC is a corpus containing sentence pairs of original and corrected versions of Czech sentences collected from essays written by both non-native learners of Czech and Czech pupils with Romani background. To create this corpus, unreleased CzeSL-man corpus (http://utkl.ff.cuni.cz/learncorp/) was utilized. All sentences in the corpus are word tokenized."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2143"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "natural language correction"
+        },
+        {
+            "name": "grammatical error correction"
+        }
+    ],
+    "title": [
+        "CzeSL Grammatical Error Correction Dataset (CzeSL-GEC)"
+    ],
+    "url": ""
+}

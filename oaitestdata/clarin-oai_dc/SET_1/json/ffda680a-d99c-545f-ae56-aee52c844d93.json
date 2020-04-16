@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Smith, Mary Regina"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 233 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1628",
+    "MetadataAccess": [
+        "oai:ota:oucs:1628"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Marlowe, Christopher, 1564-1593"
+    ],
+    "fulltext": "oai:ota:oucs:1628;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1628.xml;Tamburlaine the Great : Parts one and two / Christopher Marlowe;Marlowe, Christopher, 1564-1593;text_and_corpus_linguistics;English drama -- Early modern and Elizabethan, 1500-1600;Oxford Text Archive, University of Oxford;Smith, Mary Regina;text/sgml;(1 file : ca. 233 KB);Text;Plays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ffda680a-d99c-545f-ae56-aee52c844d93",
+    "oai_identifier": [
+        "oai:ota:oucs:1628"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- Early modern Elizabethan"
+        }
+    ],
+    "title": [
+        "Tamburlaine the Great : Parts one and two / Christopher Marlowe"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1628.xml"
+}

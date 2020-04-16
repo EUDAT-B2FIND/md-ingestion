@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Oslo University",
+        "Charles University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1956",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1956"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1956",
+    "PublicationTimestamp": "2017-01-28T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Oslo University",
+        "Charles University"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11234/1-1742"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Kuhlmann, Marco",
+        "Haji\u010d, Jan",
+        "Ivanova, Angelina",
+        "Zeman, Daniel",
+        "Miyao, Yusuke",
+        "Flickinger, Dan",
+        "Oepen, Stephan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1956;2018-07-02T22:05:54Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Open SDP 1.2;Flickinger, Dan;Haji\u010d, Jan;Ivanova, Angelina;Kuhlmann, Marco;Miyao, Yusuke;Oepen, Stephan;Zeman, Daniel;semantic dependency;parsing;The original SDP 2014 and 2015 data collections were made available under task-specific \u2018evaluation\u2019 licenses to registered SemEval participants. In mid-2016, all original data has been bundled with system submissions, supporting software, an additional SDP-style collection of semantic dependency graphs, and additional background material (from which some of the SDP target representations were derived) for release through the Linguistic Data Consortium (with LDC catalogue number LDC2016\u2009T10).\r\n\r\nOne of the four English target representations (viz. DM) and the entire Czech data (in the PSD target representation) are not derivative of LDC-licensed annotations and, thus, can be made available for direct download (Open SDP; version 1.2; January 2017) under a more permissive licensing scheme, viz. the Creative Common Attribution-NonCommercial-ShareAlike license. This package also includes some \u2018richer\u2019 meaning representations from which the English bi-lexical DM graphs derive, viz. scope-underspecified logical forms and more abstract, non-lexicalized \u2018semantic networks\u2019. The latter of these are formally (if not linguistically) similar to Abstract Meaning Representation (AMR) and are available in a range of serializations, including in AMR-like syntax.\r\n\r\nVersion 1.1 was released April 2016. Version 1.2 adds the 2015 Turku system, which was accidentally left out from version 1.1.\r\n\r\nPlease use the following bibliographic reference for the SDP 2016 data:\r\n\r\n  @string{C:LREC = {{I}nternational {C}onference on\r\n                    {L}anguage {R}esources and {E}valuation}}\r\n  @string{LREC:16 = {Proceedings of the 10th } # C:LREC}\r\n  @string{L:LREC:16 = {Portoro\\v{z}, Slovenia}}\r\n\r\n  @inproceedings{Oep:Kuh:Miy:16,\r\n    author = {Oepen, Stephan  and  Kuhlmann, Marco  and  Miyao, Yusuke  \r\n              and  Zeman, Daniel  and  Cinkov{\\'a}, Silvie  \r\n              and  Flickinger, Dan  and  Haji\\v{c}, Jan  \r\n              and  Ivanova, Angelina and Ure\\v{s}ov{\\'a}, Zde\\v{n}ka},\r\n    title = {Towards Comparability of Linguistic Graph Banks for Semantic Parsing},\r\n    booktitle = LREC:16\r\n    year = 2016,\r\n    address = L:LREC:16,\r\n    pages = {3991--3995}\r\n  };2017-01-28;corpus;http://hdl.handle.net/11234/1-1956;eng;ces;http://hdl.handle.net/11234/1-1742;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Oslo University;Charles University;http://sdp.delph-in.net/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5e7686dd-77f2-5763-9997-cb7ca53ecce7",
+    "notes": [
+        "The original SDP 2014 and 2015 data collections were made available under task-specific \u2018evaluation\u2019 licenses to registered SemEval participants. In mid-2016, all original data has been bundled with system submissions, supporting software, an additional SDP-style collection of semantic dependency graphs, and additional background material (from which some of the SDP target representations were derived) for release through the Linguistic Data Consortium (with LDC catalogue number LDC2016\u2009T10).\r\n\r\nOne of the four English target representations (viz. DM) and the entire Czech data (in the PSD target representation) are not derivative of LDC-licensed annotations and, thus, can be made available for direct download (Open SDP; version 1.2; January 2017) under a more permissive licensing scheme, viz. the Creative Common Attribution-NonCommercial-ShareAlike license. This package also includes some \u2018richer\u2019 meaning representations from which the English bi-lexical DM graphs derive, viz. scope-underspecified logical forms and more abstract, non-lexicalized \u2018semantic networks\u2019. The latter of these are formally (if not linguistically) similar to Abstract Meaning Representation (AMR) and are available in a range of serializations, including in AMR-like syntax.\r\n\r\nVersion 1.1 was released April 2016. Version 1.2 adds the 2015 Turku system, which was accidentally left out from version 1.1.\r\n\r\nPlease use the following bibliographic reference for the SDP 2016 data:\r\n\r\n  @string{C:LREC = {{I}nternational {C}onference on\r\n                    {L}anguage {R}esources and {E}valuation}}\r\n  @string{LREC:16 = {Proceedings of the 10th } # C:LREC}\r\n  @string{L:LREC:16 = {Portoro\\v{z}, Slovenia}}\r\n\r\n  @inproceedings{Oep:Kuh:Miy:16,\r\n    author = {Oepen, Stephan  and  Kuhlmann, Marco  and  Miyao, Yusuke  \r\n              and  Zeman, Daniel  and  Cinkov{\\'a}, Silvie  \r\n              and  Flickinger, Dan  and  Haji\\v{c}, Jan  \r\n              and  Ivanova, Angelina and Ure\\v{s}ov{\\'a}, Zde\\v{n}ka},\r\n    title = {Towards Comparability of Linguistic Graph Banks for Semantic Parsing},\r\n    booktitle = LREC:16\r\n    year = 2016,\r\n    address = L:LREC:16,\r\n    pages = {3991--3995}\r\n  }"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1956"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "semantic dependency"
+        },
+        {
+            "name": "parsing"
+        }
+    ],
+    "title": [
+        "Open SDP 1.2"
+    ],
+    "url": ""
+}

@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "University of Leipzig"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1150",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1150"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1150",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Leipzig"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1150;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Wortschatz-Portal der Universit\u00e4t Leipzig;Germanistik;Angabe von Wort, Anzahl, H\u00e4ufigkeitsklasse, Beschreibung, Sachgebiet, Morphologie, Relationen zu anderen W\u00f6rtern (z. B. Synonymie), Links zu anderen W\u00f6rtern, Dornseiff-Bedeutungsgruppen, Beispielen (u.a. entnommen aus spiegel.de, sueddeutsche.de), signifikanten Kookkurenzen, signifikanten linken und rechten Nachbarn;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1150;deu;downloadable_files_count: 0;Germany;University of Leipzig;http://wortschatz.uni-leipzig.de/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3cd5e0e5-f584-5678-96b8-ac6b18013f1b",
+    "notes": [
+        "Angabe von Wort, Anzahl, H\u00e4ufigkeitsklasse, Beschreibung, Sachgebiet, Morphologie, Relationen zu anderen W\u00f6rtern (z. B. Synonymie), Links zu anderen W\u00f6rtern, Dornseiff-Bedeutungsgruppen, Beispielen (u.a. entnommen aus spiegel.de, sueddeutsche.de), signifikanten Kookkurenzen, signifikanten linken und rechten Nachbarn"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1150"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Wortschatz-Portal der Universit\u00e4t Leipzig"
+    ],
+    "url": ""
+}

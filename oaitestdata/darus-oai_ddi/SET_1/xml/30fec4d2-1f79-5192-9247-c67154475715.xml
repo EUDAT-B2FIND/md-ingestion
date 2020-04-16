@@ -1,0 +1,317 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-470</identifier>
+    <datestamp>2019-11-13T10:39:56Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>Evaluation Research for Study Success Requirements ITT 2014/15</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-470</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-10-02</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-10-02" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>Braun, Thorsten, 2019, "Evaluation Research for Study Success Requirements ITT 2014/15", https://doi.org/10.18419/darus-470, DaRUS, V1, UNF:6:IB3adVcIN2EavaLCev7Izw== [fileUNF]</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>Evaluation Research for Study Success Requirements ITT 2014/15</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-470</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Braun, Thorsten</AuthEnty>
+          </rspStmt>
+          <prodStmt/>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-10-02</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Social Sciences</keyword>
+          </subject>
+          <abstract>This dataset contains raw data variables gathered during an educational research project for the Institute of Thermodynamics and Thermal Process Engineering (ITT) at the University of Stuttgart, 2014 until 2015. The project focused on requirements of study success and collected a variety of data on the student cohort in winter 2014 and summer 2015. This includes  quantitative and qualitative data from interviews as well as non-responsive  data from exams and the administrative departments. A major data analyis and interpretation as well as a thorough description of the research project and  its data is scheduled for publication as a PhD paper in 2020 at the University of Stuttgart. The dataset also includes the surveys and a codebook.</abstract>
+          <sumDscr>
+            <anlyUnit>Individual Students</anlyUnit>
+            <universe>A group of students of about 1200 individuals who passed through the course on "thermodynamics 1+2" during winter semester 2014/15 and summer semester 2015 at the University of Stuttgart, Germany.</universe>
+          </sumDscr>
+          <relPubl>Braun, Thorsten: Rekonstruktion von Pr&#252;fungserfolgsbedingungen in der Technischen Thermodynamik mittels methodenintegrativem Design : Eine hochschuldidaktische Begleitforschung. Dissertation. University of Stuttgart, 2020 (expected year of publication)</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">Braun, Thorsten</contact>
+          <depositr>Braun, Thorsten</depositr>
+          <depDate>2019-09-23</depDate>
+        </stdyInfo>
+        <method>
+          <dataColl>
+            <timeMeth>panel design</timeMeth>
+            <dataCollector>University of Stuttgart</dataCollector>
+            <collectorTraining>2014-11-19</collectorTraining>
+            <frequenc>monthly (varying)</frequenc>
+            <sampProc>Administrative data on exams and class attendance covers the whole observed population. Surveys (paper &amp; pencil + online) covered students available during lectures or after exams.</sampProc>
+            <sampleSize>1200</sampleSize>
+            <collMode>Administrative data on individual exam applications and results provided as raw data. In addition, six surveys were issued over a ten months timespan. The questionings took place during the regular lecture.</collMode>
+            <resInstru>semi-structured</resInstru>
+            <collSitu>Data collection during lectures took place in the last quarter of the 90 minutes. Sufficient time was offered. Generally good return rate (approximately 70 to 95%). Surveys were collected immediately afterwards by researcher.</collSitu>
+            <actMin>Continuing feedback about research process was given to the respondents over the year.</actMin>
+            <cleanOps>Manual review of problematic respondings. Handwriting matching were case matching code was ambigious.</cleanOps>
+          </dataColl>
+          <anlyInfo>
+            <respRate>Generally high (70 to 95%).</respRate>
+          </anlyInfo>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+        <dataAccs>Restricted public access due to privacy regulations.</dataAccs>
+      </stdyDscr>
+      <otherMat ID="f404" URI="https://doi.org/10.18419/darus-470/1" level="datafile">
+        <labl>Codebook ENG.txt</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/plain</notes>
+      </otherMat>
+      <otherMat ID="f475" URI="https://doi.org/10.18419/darus-470/17" level="datafile">
+        <labl>df.aws.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f504" URI="https://doi.org/10.18419/darus-470/46" level="datafile">
+        <labl>df.aws.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f468" URI="https://doi.org/10.18419/darus-470/10" level="datafile">
+        <labl>df.aww.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f505" URI="https://doi.org/10.18419/darus-470/47" level="datafile">
+        <labl>df.aww.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f479" URI="https://doi.org/10.18419/darus-470/21" level="datafile">
+        <labl>df.caseID.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f483" URI="https://doi.org/10.18419/darus-470/25" level="datafile">
+        <labl>df.caseID.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f478" URI="https://doi.org/10.18419/darus-470/20" level="datafile">
+        <labl>df.disc.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f484" URI="https://doi.org/10.18419/darus-470/26" level="datafile">
+        <labl>df.disc.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f461" URI="https://doi.org/10.18419/darus-470/3" level="datafile">
+        <labl>df.IRTraw.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f486" URI="https://doi.org/10.18419/darus-470/28" level="datafile">
+        <labl>df.IRTraw.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f470" URI="https://doi.org/10.18419/darus-470/12" level="datafile">
+        <labl>df.IRT.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f485" URI="https://doi.org/10.18419/darus-470/27" level="datafile">
+        <labl>df.IRT.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f469" URI="https://doi.org/10.18419/darus-470/11" level="datafile">
+        <labl>df.lk1.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f487" URI="https://doi.org/10.18419/darus-470/29" level="datafile">
+        <labl>df.lk1.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f482" URI="https://doi.org/10.18419/darus-470/24" level="datafile">
+        <labl>df.lk2.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f488" URI="https://doi.org/10.18419/darus-470/30" level="datafile">
+        <labl>df.lk2.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f462" URI="https://doi.org/10.18419/darus-470/4" level="datafile">
+        <labl>df.lk3.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f489" URI="https://doi.org/10.18419/darus-470/31" level="datafile">
+        <labl>df.lk3.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f476" URI="https://doi.org/10.18419/darus-470/18" level="datafile">
+        <labl>df.lk4.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f490" URI="https://doi.org/10.18419/darus-470/32" level="datafile">
+        <labl>df.lk4.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f474" URI="https://doi.org/10.18419/darus-470/16" level="datafile">
+        <labl>df.mod.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f491" URI="https://doi.org/10.18419/darus-470/33" level="datafile">
+        <labl>df.mod.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f477" URI="https://doi.org/10.18419/darus-470/19" level="datafile">
+        <labl>df.mp1.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f492" URI="https://doi.org/10.18419/darus-470/34" level="datafile">
+        <labl>df.mp1.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f472" URI="https://doi.org/10.18419/darus-470/14" level="datafile">
+        <labl>df.mp2.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f493" URI="https://doi.org/10.18419/darus-470/35" level="datafile">
+        <labl>df.mp2.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f463" URI="https://doi.org/10.18419/darus-470/5" level="datafile">
+        <labl>df.path.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f494" URI="https://doi.org/10.18419/darus-470/36" level="datafile">
+        <labl>df.path.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f480" URI="https://doi.org/10.18419/darus-470/22" level="datafile">
+        <labl>df.pk.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f495" URI="https://doi.org/10.18419/darus-470/37" level="datafile">
+        <labl>df.pk.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f466" URI="https://doi.org/10.18419/darus-470/8" level="datafile">
+        <labl>df.sex.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f496" URI="https://doi.org/10.18419/darus-470/38" level="datafile">
+        <labl>df.sex.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f481" URI="https://doi.org/10.18419/darus-470/23" level="datafile">
+        <labl>df.t1.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f497" URI="https://doi.org/10.18419/darus-470/39" level="datafile">
+        <labl>df.t1.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f465" URI="https://doi.org/10.18419/darus-470/7" level="datafile">
+        <labl>df.t21.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f499" URI="https://doi.org/10.18419/darus-470/41" level="datafile">
+        <labl>df.t21.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f471" URI="https://doi.org/10.18419/darus-470/13" level="datafile">
+        <labl>df.t22.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f500" URI="https://doi.org/10.18419/darus-470/42" level="datafile">
+        <labl>df.t22.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f473" URI="https://doi.org/10.18419/darus-470/15" level="datafile">
+        <labl>df.t3.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f498" URI="https://doi.org/10.18419/darus-470/40" level="datafile">
+        <labl>df.t3.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f467" URI="https://doi.org/10.18419/darus-470/9" level="datafile">
+        <labl>df.t41.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f501" URI="https://doi.org/10.18419/darus-470/43" level="datafile">
+        <labl>df.t41.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f460" URI="https://doi.org/10.18419/darus-470/2" level="datafile">
+        <labl>df.t42.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f502" URI="https://doi.org/10.18419/darus-470/44" level="datafile">
+        <labl>df.t42.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f464" URI="https://doi.org/10.18419/darus-470/6" level="datafile">
+        <labl>df.theta.rds</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f503" URI="https://doi.org/10.18419/darus-470/45" level="datafile">
+        <labl>df.theta.tab</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f506" URI="https://doi.org/10.18419/darus-470/48" level="datafile">
+        <labl>Surveys (variable names).pdf</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/pdf</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

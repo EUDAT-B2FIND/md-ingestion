@@ -1,0 +1,77 @@
+{ "name" : "gfz",
+  "title" : "GFZ",
+  "description" : "The German Research Centre for Geosciences ([GFZ](https://www.gfz-potsdam.de/startseite/ \"GFZ\")) is the national research centre for Earth sciences in Germany. Research at the GFZ focuses on the geosphere within the highly complex System Earth with its further subsystems, its interacting subcycles, and its wide network of cause-and-effect chains.",
+  "image_url" : "http://b2find.dkrz.de/images/communities/gfz_logo.png"
+  "groups": [
+  	    { 
+    	      "id" : "gfz-dataservices",
+    	      "name" : "gfz-dataservices",
+  	      "title" : "GFZ Data Services",
+  	      "description" : "By the [GFZ Data Services](http://dataservices.gfz-potsdam.de/ \"GFZ Data Services\") the (GFZ(https://www.gfz-potsdam.de/startseite/ \"GFZ\")) archives and publishes datasets to which a DOI has been assigned and which cover all geoscientific disciplines.",
+  	      "image_url" : "http://b2find.eudat.eu/images/communities/gfz-dataservices_logo.png",
+  	      "image_url_orig" : "http://pmd.gfz-potsdam.de/extern/Mesi-Portal/thumbnail/thumbnails-71.png"
+	    },
+	    { 
+  	      "name" : "geofon",
+	      "id" : "geofon",
+	      "title" : "GEOFON",
+	      "description" : "[GEOFON](http://www.geofon.eu/ \"GEOFON\")) is the global seismological broad-band network operated by the German GeoForschungsZentrum (GFZ). The GEOFON seismic network came into being in 1993 as one of the three pillars of the GEOFON program dedicated to Ernst von Rebeur-Paschwitz, proposer of a global earthquake monitoring system, who recorded the first teleseismic seismogram in Potsdam in 1889. The program and its seismic network were created to provide high quality broad-band data for scientific use and foster common standards in the seismological community.",
+	      "image_url" : "http://b2find.eudat.eu/images/communities/geofon_logo.png",
+	      "image_url_orig" : "http://geofon.gfz-potsdam.de/img/gfn_logo_dark.png"
+	    },
+	    { 
+	      "name" : "icgem",	       
+	      "id" : "icgem",
+	      "title" : "ICGEM",
+	      "description" : "The International Centre for Global Earth Models ([ICGEM](http://www.icgem.gfz-potsdam.de/ \"ICGEM\")) is one of five services coordinated by the International Gravity Field Service (IGFS) of the International Association of Geodesy (IAG).",
+	      "image_url" : "http://b2find.eudat.eu/images/communities/icgem_logo.png",
+	      "image_url_orig" : "http://icgem.gfz-potsdam.de/icgem.png"
+	    },
+	    { 
+  	      "name" : "gipp",
+	      "id" : "gipp",
+  	      "title" : "GIPP",
+  	      "description" : "The Geophysical Instrument Pool Potsdam ([GIPP](https://www.gfz-potsdam.de/en/section/geophysical-deep-sounding/infrastructure/geophysical-instrument-pool-potsdam-gipp/ \"GIPP\")) provides seismic and magnetotelluric instruments and sensors for joint projects with universities and other research facilities. It is hosted by Section 2.2 \"Geophysical Deep Sounding\" of the GeoForschungsZenrum Potsdam (GFZ). Since its foundation in 1993 the GIPP has supported more than 258 geoscientific projects. The GIPP is part of the Modular Earth Science Infrastructure (MESI) at GFZ.",
+  	      "image_url" : "http://b2find.eudat.eu/images/communities/gipp_logo.png",
+  	      "image_url_orig" : "http://pmd.gfz-potsdam.de/extern/Mesi-Portal/logo/logo-41.png"
+	    },
+	    { 
+  	      "name" : "isdc",
+	      "id" : "isdc",
+  	      "title" : "ISDC",
+  	      "description" : "[ISDC](http://www.isdc.eu/ \"ISDC\") online service portal is an access point for all manner of geoscientific geodata, its corresponding metadata, scientific documentation and software tools.",
+  	      "image_url" : "http://b2find.eudat.eu/images/communities/isdc_logo.png",
+  	       "image_url_orig" : "http://isdc.gfz-potsdam.de/fileadmin/_processed_/7/1/csm_IGETS-Logo_58d1ad9c4a.jpg"
+	    },
+	    { 
+  	      "name" : "sddb",
+	      "id" : "sddb",
+  	      "title" : "SDDB",
+  	      "description" : "The Scientific Drilling Database ([SDDB](http://www.scientificdrilling.org/ \"SDDB\")) - Data from Deep Earth Monitoring and Sounding",
+  	      "image_url" : "http://b2find.eudat.eu/images/communities/sddb_logo.png",
+  	      "image_url_orig" : "http://scientificdrilling.com/assets/uploads/2017/04/SDI_logo.svg"
+  	    },
+	    { 
+  	      "name" : "wsm",
+	      "id" : "wsm",
+  	      "title" : "WSM",
+  	      "description" : "The World Stress Map ([WSM](http://www.world-stress-map.org/ \"WSM\")) is a global compilation of information on the crustal present-day stress field maintained since 2009 at the Helmholtz Centre Potsdam GFZ German Research Centre for Geosciences. It is a collaborative project between academia and industry that aims to characterize the crustal stress pattern and to understand the stress sources.",
+  	      "image_url" : "http://b2find.eudat.eu/images/communities/wsm_logo.png",
+  	      "image_url_orig" : "http://www.world-stress-map.org/typo3conf/ext/wsm_website/Resources/Public/Images/WSM2016GesamtCOLORpfade_new_transparent.png"            },
+	    { 
+  	      "name" : "enmap",
+	      "id" : "enmap",
+  	      "title" : "EnMAP",
+  	      "description" : "The Environmental Mapping and Analysis Program ([EnMAP](http://www.enmap.org/ \"EnMAP\")) is a German hyperspectral satellite mission that aims at monitoring and characterising the Earth’s environment on a global scale. EnMAP serves to measure and model key dynamic processes of the Earth’s ecosystems by extracting geochemical, biochemical and biophysical parameters, which provide information on the status and evolution of various terrestrial and aquatic ecosystems.",
+  	      "image_url" : "http://b2find.eudat.eu/images/communities/enmap_logo.png",
+  	      "image_url_orig" : "http://enmap.geographie-muenchen.de/wp-content/uploads/2017/04/enmap.png"
+	    },
+	    { 
+	      "name" : "tereno",
+	      "id" : "tereno",
+      	      "title" : "TERENO",
+  	      "description" : "[TERENO](http://teodoor.icg.kfa-juelich.de/ \"TERENO\") is  is embarking on new paths with an interdisciplinary and long-term research programme involving six Helmholtz Association Centers. TERENO spans an Earth observation network across Germany that extends from the North German lowlands to the Bavarian Alps. This unique large-scale project aims to catalogue the longterm ecological, social and economic impact of global change at regional level.",
+  	      "image_url" : "http://b2find.eudat.eu/images/communities/tereno_logo.png",
+  	      "image_url_orig" : "http://teodoor.icg.kfa-juelich.de/downloads-de/ci-material/ci-downloads-dateien/tereno-corporate.jpg"
+	    }
+}

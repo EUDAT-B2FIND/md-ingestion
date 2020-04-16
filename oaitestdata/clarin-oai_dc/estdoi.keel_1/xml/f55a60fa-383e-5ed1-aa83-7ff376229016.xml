@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757501</identifier>
+    <datestamp>2019-05-26T22:02:03Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">&#220;hestatud s&#245;nat&#228;hendustega korpus</dc:title>
+      <dc:title xml:lang="en">Semantically disambiguated corpus of Estonian</dc:title>
+      <dc:creator>Kahusk, Neeme</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2011</dc:date>
+      <dc:date>Issued: 2011-12-31</dc:date>
+      <dc:date>Updated: 2019-01-04</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00081L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Raw text corpus. Resource for building Estonian Framenet</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

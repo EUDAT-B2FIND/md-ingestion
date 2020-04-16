@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>ed5ef28428e411e2a2aa782bcb074135b02879c356904512a60861bd38942eae</identifier>
+    <datestamp>2018-11-15T16:39:45Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MaltParser</dc:title>
+      <dc:description>MaltParser is a system for data-driven dependency parsing, which can be used to induce a parsing model from treebank data and to parse new data using an induced model. MaltParser is developed by Johan Hall, Jens Nilsson and Joakim Nivre at V&#195;&#164;xj&#195;&#182; University and Uppsala University, Sweden (see Nivre et al. 2006).
+
+MaltParser 1.0.0 and later releases constitute a complete reimplementation of MaltParser in Java and are distributed with an open source license. The previous versions 0.1-0.4 of MaltParser were implemented in C. The Java implementation (version 1.0.0 and later releases) replaces the C implementation (version 0.x) and MaltParser 0.x will not be supported and updated any more. 
+
+MaltParser can be characterized as a data-driven parser-generator. While a traditional parser-generator constructs a parser given a grammar, a data-driven parser-generator constructs a parser given a treebank. MaltParser is an implementation of inductive dependency parsing, where the syntactic analysis of a sentence amounts to the derivation of a dependency structure, and where inductive machine learning is used to guide the parser at nondeterministic choice points (Nivre, 2006). The parsing methodology is based on three essential components: 
+
+-	Deterministic parsing algorithms for building labeled dependency graphs (Kudo and Matsumoto, 2002; Yamada and Matsumoto, 2003; Nivre, 2003) 
+-	History-based models for predicting the next parser action at nondeterministic choice points (Black et al., 1992; Magerman, 1995; Ratnaparkhi, 1997; Collins, 1999) 
+-	Discriminative learning to map histories to parser actions (Kudo and Matsumoto, 2002; Yamada and Matsumoto, 2003; Nivre et al., 2004; Hall et al., 2006) 
+</dc:description>
+      <dc:date>2012-11-07</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

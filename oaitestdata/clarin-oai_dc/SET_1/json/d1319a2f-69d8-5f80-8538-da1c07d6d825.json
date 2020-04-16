@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f9be5b86cf3011e1a404080027e73ea246e34a4274c54c068f14a2d622f4e4d4",
+    "MetadataAccess": [
+        "f9be5b86cf3011e1a404080027e73ea246e34a4274c54c068f14a2d622f4e4d4"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "f9be5b86cf3011e1a404080027e73ea246e34a4274c54c068f14a2d622f4e4d4;2019-02-27T12:09:03Z;lexicalConceptualResource;lexicalConceptualResource:lexicon;PAROLE Portuguese Lexicon;The resource is constituted by 20 thousand entries morpho-syntactically and syntactically encoded, accordingly to the parole common encoding standards. ;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d1319a2f-69d8-5f80-8538-da1c07d6d825",
+    "notes": [
+        "The resource is constituted by 20 thousand entries morpho-syntactically and syntactically encoded, accordingly to the parole common encoding standards. "
+    ],
+    "oai_identifier": [
+        "f9be5b86cf3011e1a404080027e73ea246e34a4274c54c068f14a2d622f4e4d4"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:lexicon"
+    ],
+    "state": "active",
+    "title": [
+        "PAROLE Portuguese Lexicon"
+    ]
+}

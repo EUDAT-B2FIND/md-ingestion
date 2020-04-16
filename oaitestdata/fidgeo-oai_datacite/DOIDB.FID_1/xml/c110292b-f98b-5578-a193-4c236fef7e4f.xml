@@ -1,0 +1,104 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6564</identifier>
+    <datestamp>2018-09-13T15:40:48Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.020</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Natho, Stephanie</default:creatorName>
+              <default:givenName>Stephanie</default:givenName>
+              <default:familyName>Natho</default:familyName>
+              <default:affiliation>University of Potsdam, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Thieken, Annegret</default:creatorName>
+              <default:givenName>Annegret</default:givenName>
+              <default:familyName>Thieken</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7068-2615</default:nameIdentifier>
+              <default:affiliation>University of Potsdam, Potsdam, Germany</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="en">M. DELENAH Modelling Direct Economic LossEs caused by Natural Hazards</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>flash floods</default:subject>
+            <default:subject>hail storms</default:subject>
+            <default:subject>wind storms</default:subject>
+            <default:subject>national scale</default:subject>
+            <default:subject>Sendai Framework</default:subject>
+            <default:subject>direct economic loss</default:subject>
+            <default:subject>floods</default:subject>
+            <default:subject>macro scale</default:subject>
+            <default:subject>UNISDR</default:subject>
+          </default:subjects>
+          <default:dates>
+            <default:date dateType="Created">2017</default:date>
+            <default:date dateType="Collected">1984-01-01/2017-12-31</default:date>
+            <default:date dateType="Collected">1984-01-01/2017-12-31</default:date>
+          </default:dates>
+          <default:language>en</default:language>
+          <default:resourceType resourceTypeGeneral="Model"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="URL" relationType="Cites">http://daten.ktbl.de/sdb/source.do;jsessionid=04E49F6CF7BF2B8D286D1CE42CBFC9FE</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="URL" relationType="Cites">https://www.ifrc.org/docs/IDRL/Sendai_Framework_for_Disaster_Risk_Reduction_2015-2030.pdf</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="URL" relationType="Cites">https://www.unisdr.org/we/inform/publications/54970</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="URL" relationType="Cites">https://www.preventionweb.net/documents/framework/Concept%20Paper%20-%20Direct%20Economic%20Loss%20Indicator%20methodology%2011%20November%202015.pdf</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1016/j.ijdrr.2018.03.008</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsNewVersionOf">10.5880/fidgeo.2018.002</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>1719662 Bytes</default:size>
+            <default:size>2 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/pdf</default:format>
+            <default:format>application/vnd.ms-excel.sheet.macroEnabled.12</default:format>
+          </default:formats>
+          <default:version>1.1</default:version>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">Version history:<default:br/>The current M DELENAH 1.1 is an updated version of M DELENAH with changes in the sectors agriculture, unpaved and paved roads, public sector and forest, and industry and commerce (correction of code comment only). Details of code updating are described in the User's Manual. Updates include (1) new features for the agricultural sector (specific livestock loss calculation based on a matrix where numbers of affected animals per type can be inserted), (2) correction of mistakes (wrong divisor, or wrong cell relation &#8211; all of less importance for total results in test cases) and (3) exchange of numbers to parameters (to make M DELENAH more convenient most parameters can be directly changed via constants for minimum requirement sheet in excel).<default:br/>
+         <default:br/>
+         <default:br/>As one of the 195 member countries of the United Nations, Germany signed the Sendai Framework for Disaster Risk Reduction 2015-2030 (SFDRR). With this, though voluntary and non-binding, Germany agreed to report on measures taken to reduce disaster impacts and to monitor impacts. Among other targets, the SFDRR aims at reducing direct economic losses in relation to the global gross domestic product by 2030. The United Nations Office for Disaster Risk Reduction (UNISDR) has hence proposed a methodology for consistently estimating direct economic losses per event and country on the basis of physically damaged or destroyed items in different sectors, derived from event documentation, standardized costs per item and mean loss ratios. The method was developed based on experiences from developing countries. Therefore, Natho &amp; Thieken (2018) test the approach for assessing costs of natural hazards in Germany and validate the existing method for an industrialized country for the first time. The methodology, presented here as Excel VBA code, was tested for the three costliest natural hazard types in Germany, i.e. floods, wind and hail storms, considering 12 case studies on the federal or state scale between 1984 and 2016. In the Excel presented here example data sets for one flood, one wind storm, and one hail storm are available. The M. DELENAH Manual provides step-by-step information for recalculating examples, create new data sets and calculate the UNISDR method or adapted versions of the UNISDR method.<default:br/>
+         <default:br/>Adaptation, further than only adapting parameters of the UNISDR method was necessary because analyses of loss and event reports revealed that important damage components are not included in the UNISDR method. Therefore, three new modules were developed to better adapt this methodology to German conditions: transportation (cars), forestry and paved roads. Furthermore, overheads are proposed to include the damage costs of (housing) contents as well as the overall damage costs of urban infrastructure, one of the most important but often neglected damage sectors.<default:br/>
+         <default:br/>Altogether three different versions of the methodology are presented in the Excel. Selection of the version requested is carried out in the readme-sheet where also a short description of the sectors considered can be found. The country-specific method (adapted parameters and modules) is set as default when &#8220;Start&#8221; is chosen. &#8220;Reference&#8221; refers to the UNISDR reference method and &#8220;Parameter&#8221; implies country-specific parameters on the basis of the original modules. Further details on the functioning of the Excel can be found in the M. DELENAH Manual attached to this data publication and information on deduction, calibration and testing are described in detail in Natho &amp; Thieken (2018). The presented versions can be applied to available datasets or datasets created by the user. For application in Europe we suggest applying the country-specific method because the original UNISDR method both over- and underestimates the losses of the tested events by a wide margin. The parameter-adapted method leads to more realistic results and the adapted, country-specific method is finally able to calculate losses well for river floods, hail storms and storms (see Natho &amp; Thieken, 2018). Only for flash floods with huge debris load, where urban infrastructure can account for more than 90% of the total losses, is the method not reasonable.<default:br/>
+         <default:br/>The adapted methodology serves as a good starting point for macro-scale loss estimations by accounting for the most important damage sectors. By publishing the VBA code for adaptation and discussion we aim to support the implementation of the SFDRR and contribute to a better documentation standard after natural hazards. However, the method and data presented is suitable for research purposes only, it has not been tested for engineering/insurance/other practical applications.</default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationBox>
+                <default:westBoundLongitude>5.4931640625</default:westBoundLongitude>
+                <default:eastBoundLongitude>15.29296875</default:eastBoundLongitude>
+                <default:southBoundLatitude>47.15984001304432</default:southBoundLatitude>
+                <default:northBoundLatitude>55.02802211299252</default:northBoundLatitude>
+              </default:geoLocationBox>
+            </default:geoLocation>
+          </default:geoLocations>
+          <default:fundingReferences>
+            <default:fundingReference>
+              <default:funderName>Deutsche Forschungsgemeinschaft</default:funderName>
+              <default:funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/501100001659</default:funderIdentifier>
+              <default:awardNumber>GRK 2043/1</default:awardNumber>
+              <default:awardTitle>Research Training Group "Natural Hazards and Risks in a Changing World"</default:awardTitle>
+            </default:fundingReference>
+          </default:fundingReferences>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

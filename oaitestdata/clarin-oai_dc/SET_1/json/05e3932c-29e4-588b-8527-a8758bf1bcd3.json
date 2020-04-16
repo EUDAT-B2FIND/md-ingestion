@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3990",
+    "MetadataAccess": [
+        "oai:ota:oucs:3990"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Burgoyne, John, 1722-1792."
+    ],
+    "fulltext": "oai:ota:oucs:3990;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3990.xml;The heiress: A comedy in five acts. As performed at the Theatre-Royal Drury-Lane.;Burgoyne, John, 1722-1792.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "05e3932c-29e4-588b-8527-a8758bf1bcd3",
+    "oai_identifier": [
+        "oai:ota:oucs:3990"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The heiress: A comedy in five acts. As performed at the Theatre-Royal Drury-Lane."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3990.xml"
+}

@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Slovak",
+        "Croatian",
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1971",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1971"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1971",
+    "PublicationTimestamp": "2017-01-28T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/644402",
+        "http://web.science.mq.edu.au/~smalmasi/vardial4/pdf/VarDial26.pdf"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u017dabokrtsk\u00fd, Zden\u011bk",
+        "Zeman, Daniel",
+        "Mare\u010dek, David",
+        "Rosa, Rudolf"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1971;2017-11-09T14:21:56Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Slavic Forest, Norwegian Wood (models);Rosa, Rudolf;Zeman, Daniel;Mare\u010dek, David;\u017dabokrtsk\u00fd, Zden\u011bk;parsing;dependency parser;cross-lingual parsing;universal dependencies;Trained models for UDPipe used to produce our final submission to the Vardial 2017 CLP shared task (https://bitbucket.org/hy-crossNLP/vardial2017). The SK model was trained on CS data, the HR model on SL data, and the SV model on a concatenation of DA and NO data. The scripts and commands used to create the models are part of separate submission (http://hdl.handle.net/11234/1-1970).\r\nThe models were trained with UDPipe version 3e65d69 from 3rd Jan 2017, obtained from\r\nhttps://github.com/ufal/udpipe -- their functionality with newer or older versions of UDPipe is not guaranteed.\r\n\r\nWe list here the Bash command sequences that can be used to reproduce our results submitted to VarDial 2017. The input files must be in CoNLLU format. The models only use the form, UPOS, and Universal Features fields (SK only uses the form). You must have UDPipe installed. The feats2FEAT.py script, which prunes the universal features, is bundled with this submission.\r\n\r\nSK -- tag and parse with the model:\r\n\r\nudpipe --tag --parse sk-translex.v2.norm.feats07.w2v.trainonpred.udpipe sk-ud-predPoS-test.conllu\r\n\r\nA slightly better after-deadline model (sk-translex.v2.norm.Case-feats07.w2v.trainonpred.udpipe), which we mention in the accompanying paper, is also included. It is applied in the same way (udpipe --tag --parse sk-translex.v2.norm.Case-feats07.w2v.trainonpred.udpipe sk-ud-predPoS-test.conllu).\r\n\r\nHR -- prune the Features to keep only Case and parse with the model:\r\n\r\npython3 feats2FEAT.py Case < hr-ud-predPoS-test.conllu | udpipe --parse hr-translex.v2.norm.Case.w2v.trainonpred.udpipe\r\n\r\n\r\nNO -- put the UPOS annotation aside, tag Features with the model, merge with the left-aside UPOS annotation, and parse with the model (this hassle is because UDPipe cannot be told to keep UPOS and only change Features):\r\n\r\ncut -f1-4 no-ud-predPoS-test.conllu > tmp\r\n\r\nudpipe --tag no-translex.v2.norm.tgttagupos.srctagfeats.Case.w2v.udpipe no-ud-predPoS-test.conllu | cut -f5- | paste tmp - | sed 's/^\\t$//'  | udpipe --parse no-translex.v2.norm.tgttagupos.srctagfeats.Case.w2v.udpipe;2017-01-28;toolService;http://hdl.handle.net/11234/1-1971;slk;hrv;nor;info:eu-repo/grantAgreement/EC/H2020/644402;http://web.science.mq.edu.au/~smalmasi/vardial4/pdf/VarDial26.pdf;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 5;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "151ce722-1629-5ecd-947a-6c7e7f9ddeae",
+    "notes": [
+        "Trained models for UDPipe used to produce our final submission to the Vardial 2017 CLP shared task (https://bitbucket.org/hy-crossNLP/vardial2017). The SK model was trained on CS data, the HR model on SL data, and the SV model on a concatenation of DA and NO data. The scripts and commands used to create the models are part of separate submission (http://hdl.handle.net/11234/1-1970).\r\nThe models were trained with UDPipe version 3e65d69 from 3rd Jan 2017, obtained from\r\nhttps://github.com/ufal/udpipe -- their functionality with newer or older versions of UDPipe is not guaranteed.\r\n\r\nWe list here the Bash command sequences that can be used to reproduce our results submitted to VarDial 2017. The input files must be in CoNLLU format. The models only use the form, UPOS, and Universal Features fields (SK only uses the form). You must have UDPipe installed. The feats2FEAT.py script, which prunes the universal features, is bundled with this submission.\r\n\r\nSK -- tag and parse with the model:\r\n\r\nudpipe --tag --parse sk-translex.v2.norm.feats07.w2v.trainonpred.udpipe sk-ud-predPoS-test.conllu\r\n\r\nA slightly better after-deadline model (sk-translex.v2.norm.Case-feats07.w2v.trainonpred.udpipe), which we mention in the accompanying paper, is also included. It is applied in the same way (udpipe --tag --parse sk-translex.v2.norm.Case-feats07.w2v.trainonpred.udpipe sk-ud-predPoS-test.conllu).\r\n\r\nHR -- prune the Features to keep only Case and parse with the model:\r\n\r\npython3 feats2FEAT.py Case < hr-ud-predPoS-test.conllu | udpipe --parse hr-translex.v2.norm.Case.w2v.trainonpred.udpipe\r\n\r\n\r\nNO -- put the UPOS annotation aside, tag Features with the model, merge with the left-aside UPOS annotation, and parse with the model (this hassle is because UDPipe cannot be told to keep UPOS and only change Features):\r\n\r\ncut -f1-4 no-ud-predPoS-test.conllu > tmp\r\n\r\nudpipe --tag no-translex.v2.norm.tgttagupos.srctagfeats.Case.w2v.udpipe no-ud-predPoS-test.conllu | cut -f5- | paste tmp - | sed 's/^\\t$//'  | udpipe --parse no-translex.v2.norm.tgttagupos.srctagfeats.Case.w2v.udpipe"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1971"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parsing"
+        },
+        {
+            "name": "dependency parser"
+        },
+        {
+            "name": "cross-lingual parsing"
+        },
+        {
+            "name": "universal dependencies"
+        }
+    ],
+    "title": [
+        "Slavic Forest, Norwegian Wood (models)"
+    ],
+    "url": ""
+}

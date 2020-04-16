@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:ota:oucs:1628</identifier>
+    <datestamp>2018-02-16T10:42:05Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cld="http://purl.org/cld/terms/">
+      <dc:identifier>http://ota.ox.ac.uk/headers/1628.xml</dc:identifier>
+      <dc:title>Tamburlaine the Great : Parts one and two / Christopher Marlowe</dc:title>
+      <dc:creator>Marlowe, Christopher, 1564-1593</dc:creator>
+      <dc:subject>text_and_corpus_linguistics</dc:subject>
+      <dc:subject>English drama -- Early modern and Elizabethan, 1500-1600</dc:subject>
+      <dc:publisher>Oxford Text Archive, University of Oxford</dc:publisher>
+      <dc:contributor>Smith, Mary Regina</dc:contributor>
+      <dc:format>text/sgml</dc:format>
+      <dc:format>(1 file : ca. 233 KB)</dc:format>
+      <dc:type>Text</dc:type>
+      <dc:type>Plays</dc:type>
+      <dc:rights>Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.</dc:rights>
+      <dc:rights>http://www.ota.ox.ac.uk/documents/user_agreement.xml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

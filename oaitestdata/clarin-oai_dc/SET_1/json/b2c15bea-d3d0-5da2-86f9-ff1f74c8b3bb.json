@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "University of West Bohemia, Department of Computer Science and Engineering"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1844",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1844"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1844",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "University of West Bohemia, Department of Computer Science and Engineering"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/630786"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Konkol, Michal",
+        "Svoboda, Luk\u00e1\u0161",
+        "Brychc\u00edn, Tom\u00e1\u0161",
+        "Steinberger, Josef",
+        "Hercig, Tom\u00e1\u0161"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1844;2016-12-07T11:10:30Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Restaurant Reviews CZ ABSA corpus v2;Hercig, Tom\u00e1\u0161;Brychc\u00edn, Tom\u00e1\u0161;Svoboda, Luk\u00e1\u0161;Konkol, Michal;Steinberger, Josef;Aspect Based Sentiment Analysis;Sentiment Analysis;Restaurant Reviews CZ ABSA - 2.15k reviews with their related target and category\r\n\r\nThe work done is described in the paper: https://doi.org/10.13053/CyS-20-3-2469;2016;corpus;http://hdl.handle.net/11372/LRT-1844;ces;info:eu-repo/grantAgreement/EC/FP7/630786;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;University of West Bohemia, Department of Computer Science and Engineering;http://nlp.kiv.zcu.cz/publication/80",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b2c15bea-d3d0-5da2-86f9-ff1f74c8b3bb",
+    "notes": [
+        "Restaurant Reviews CZ ABSA - 2.15k reviews with their related target and category\r\n\r\nThe work done is described in the paper: https://doi.org/10.13053/CyS-20-3-2469"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1844"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Aspect Based Sentiment Analysis"
+        },
+        {
+            "name": "Sentiment Analysis"
+        }
+    ],
+    "title": [
+        "Restaurant Reviews CZ ABSA corpus v2"
+    ],
+    "url": ""
+}

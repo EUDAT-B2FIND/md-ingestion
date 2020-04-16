@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Burnard, Lou"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 158 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1205",
+    "MetadataAccess": [
+        "oai:ota:oucs:1205"
+    ],
+    "PublicationTimestamp": "1606-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1606"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Marston, John, 1575?-1634"
+    ],
+    "fulltext": "oai:ota:oucs:1205;2018-03-05T13:22:36Z;http://ota.ox.ac.uk/headers/1205.xml;The fawn / John Marston;Marston, John, 1575?-1634;1606;text_and_corpus_linguistics;English drama -- 17th century;eng;Oxford Text Archive, University of Oxford;Burnard, Lou;(1 file : ca. 158 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9020bdfa-9357-5530-8c3a-65eee6b512cb",
+    "oai_identifier": [
+        "oai:ota:oucs:1205"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "The fawn / John Marston"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1205.xml"
+}

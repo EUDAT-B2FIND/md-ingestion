@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:14977740</identifier>
+    <datestamp>2019-05-18T17:26:42Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">EstNLTK teek Pythoni jaoks (ver.1.6.2b)</dc:title>
+      <dc:title xml:lang="en">EstNLTK library for Python (ver.1.6.2b)</dc:title>
+      <dc:creator>Laur, Sven</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-05-04</dc:date>
+      <dc:date>Updated: 2018-05-04</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0015EL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">EstNLTK teegis on kergesti kohandatav ning robustne lingvistilise anal&#252;&#252;si t&#246;&#246;voog, mis toimib ka
+kirjakeelest oluliselt erinevatel tekstidel. S&#245;ltuvalt tekstide erip&#228;rast on v&#245;imalik kohandada s&#245;nestamist,
+lausestamist ja morfoloogilist anal&#252;&#252;si. Vaikimisi kasutatakse EKT67 projektis ja Koondkorpuse anal&#252;&#252;si
+abil leitud lihtsustus- ja normaliseerimisreegleid. T&#246;&#246; tulemust valideeriti l&#228;bi Koondkorpuse ja etTenTen-
+i t&#228;ieliku anal&#252;&#252;si.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

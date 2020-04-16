@@ -1,0 +1,54 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1021",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1021"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1021",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1021;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Zeno.org;Germanistik;Access to full texts (literary, historical, scientific, ... texts); Volltextbibliothek; keine Beschr\u00e4nkung auf literarische Texte (auch z.B. naturwissenschaftliche, geschichtliche, ... Texte);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1021;deu;downloadable_files_count: 0;http://www.zeno.org",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "882b754a-0277-58f6-a276-e8fc11a8d36a",
+    "notes": [
+        "Access to full texts (literary, historical, scientific, ... texts); Volltextbibliothek; keine Beschr\u00e4nkung auf literarische Texte (auch z.B. naturwissenschaftliche, geschichtliche, ... Texte)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1021"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Zeno.org"
+    ],
+    "url": ""
+}

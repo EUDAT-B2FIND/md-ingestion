@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0591",
+    "MetadataAccess": [
+        "oai:ota:oucs:0591"
+    ],
+    "PublicationTimestamp": "1931-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1931"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Textbooks"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Zimmerman, Carle Clark,  1897-"
+    ],
+    "fulltext": "oai:ota:oucs:0591;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0591.xml; Siam  : rural economic survey, 1930-31 / compiled by C.J. Howgego;Zimmerman, Carle Clark,  1897-;1931;text_and_corpus_linguistics;Textbooks -- Thailand -- 20th century;eng;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Textbooks;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e9738266-8703-5f3f-b9e6-b11bf535d2f1",
+    "oai_identifier": [
+        "oai:ota:oucs:0591"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Textbooks -- Thailand -- th century"
+        }
+    ],
+    "title": [
+        " Siam  : rural economic survey, 1930-31 / compiled by C.J. Howgego"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0591.xml"
+}

@@ -1,0 +1,81 @@
+{
+    "Contributor": [
+        "Vera Demberg",
+        "Manfred Pinkal",
+        "Ivan Titov",
+        "Ashutosh Modi",
+        "Asad Sayeed"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:tacl-2016",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:tacl-2016"
+    ],
+    "PID": "http://hdl.handle.net/21.11119/0000-0000-5DD9-4",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "RelatedIdentifier": [
+        "Ashutosh Modi, Ivan Titov, Vera Demberg, Asad Sayeed and Manfred Pinkal. 2016. \"Modeling Semantic Expectation: Using Script Knowledge for Referent Prediction\". In Transactions of Association for Computational Linguistics (TACL). http://www.aclweb.org/anthology/Q17-1003"
+    ],
+    "ResourceType": [
+        "Collection",
+        "Dataset",
+        "Text"
+    ],
+    "Rights": [
+        "CC-BY-SA-NC-4.0"
+    ],
+    "author": [
+        "Ashutosh Modi, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit\u00e4t des Saarlandes, Campus C7.4, 66123 Saarbr\u00fccken"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:tacl-2016;2018-02-27T17:32:43Z;Modeling Semantic Expectations;Ashutosh Modi, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit\u00e4t des Saarlandes, Campus C7.4, 66123 Saarbr\u00fccken;Scripts;Script Knowledge;Narrative Texts;Referent Prediction;Referring Expression;This resource contains the DR predictions (by humans) on the InScript corpus. These were collected using Amazon Mechanical Turk. For details please refer to the paper mentioned below.;Ashutosh Modi;Ivan Titov;Vera Demberg;Asad Sayeed;Manfred Pinkal;2017;Collection;Dataset;Text;text/xml;clarind-uds:tacl-2016;hdl:21.11119/0000-0000-5DD9-4;eng;Ashutosh Modi, Ivan Titov, Vera Demberg, Asad Sayeed and Manfred Pinkal. 2016. \"Modeling Semantic Expectation: Using Script Knowledge for Referent Prediction\". In Transactions of Association for Computational Linguistics (TACL). http://www.aclweb.org/anthology/Q17-1003;CC-BY-SA-NC-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c4e891f0-a941-5bd7-8ef4-7a2bd4cdd208",
+    "notes": [
+        "This resource contains the DR predictions (by humans) on the InScript corpus. These were collected using Amazon Mechanical Turk. For details please refer to the paper mentioned below."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:tacl-2016"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Scripts"
+        },
+        {
+            "name": "Script Knowledge"
+        },
+        {
+            "name": "Narrative Texts"
+        },
+        {
+            "name": "Referent Prediction"
+        },
+        {
+            "name": "Referring Expression"
+        }
+    ],
+    "title": [
+        "Modeling Semantic Expectations"
+    ],
+    "url": ""
+}

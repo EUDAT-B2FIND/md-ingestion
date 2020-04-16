@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Department of Literature, Area Studies and European Languages, University of Oslo",
+        "Department of Linguistics and Nordic Studies, University of Oslo"
+    ],
+    "Contributor": [
+        "Gr\u00f8nn, Atle",
+        "N\u00f8klestad, Anders"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English",
+        "Norwegian",
+        "Russian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1062",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1062"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1062",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Department of Literature, Area Studies and European Languages, University of Oslo",
+        "Department of Linguistics and Nordic Studies, University of Oslo"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Norway"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1062;2016-04-06T16:39:49Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Run (Russian meets Norwegian );Gr\u00f8nn, Atle;N\u00f8klestad, Anders;The RuN corpus is a parallel corpus consisting of Norwegian, Russian and English texts. The texts are aligned at the sentence level and have been tagged for grammatical information at the word level.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1062;eng;nor;rus;downloadable_files_count: 0;Norway;Department of Literature, Area Studies and European Languages, University of Oslo;Department of Linguistics and Nordic Studies, University of Oslo;http://www.hf.uio.no/ilos/english/research/projects/run/index.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "96b5ba6a-2d3f-52fe-b3e6-2abad10b6ba1",
+    "notes": [
+        "The RuN corpus is a parallel corpus consisting of Norwegian, Russian and English texts. The texts are aligned at the sentence level and have been tagged for grammatical information at the word level."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1062"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Run (Russian meets Norwegian )"
+    ],
+    "url": ""
+}

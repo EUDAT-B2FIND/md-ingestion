@@ -1,0 +1,81 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>227e9f7b-ddfc-4004-b0e5-f4785d36d43f</dc:identifier>
+      <dc:date>2018-07-24T09:47:49</dc:date>
+      <dc:title>Black Sea - Temperature and salinity observation collection V2</dc:title>
+      <dct:alternative>SEADATANET_Black_Sea-temperature_salinity_aggregated_public-v2</dct:alternative>
+      <dc:type>series</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Temperature of the water column</dc:subject>
+      <dc:subject>Salinity of the water column</dc:subject>
+      <dc:subject>ITS-90 water temperature</dc:subject>
+      <dc:subject>Water body salinity</dc:subject>
+      <dc:subject>Black Sea</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dct:abstract>The Black Sea historical dataset includes all open access temperature and salinity in situ data from the Black Sea and Sea of Azov for period 1868-2014. The data were retrieved from the SeaDataNet infrastructure in the mid of 2015. Data quality has been analysed and checked using ODV software. Quality Flags of anomalous data have been revised using different QC procedures in conjunction with the visual expert check. Duplicates have been identified and excluded from the dataset.
+
+Data providers are:
+- Institute of Fishery Resources (IFR)
+- Institute of Biodiversity and Ecosystem Research, Bulgarian Academy of Sciences
+- Hellenic Centre for Marine Research, Hellenic National Oceanographic Data Centre (HCMR/HNODC)
+- IFREMER / IDM / SISMER - Scientific Information Systems for the SEA
+- SHOM (SERVICE HYDROGRAPHIQUE ET OCEANOGRAPHIQUE DE LA MARINE)
+- All-Russia Research Institute of Hydrometeorological Information - World Data Centre (RIHMI-WDC) National Oceanographic Data Centre (NODC)
+- P.P.Shirshov Institute of Oceanology, RAS
+- Bulgarian National Oceanographic Data Centre(BGODC), Institute of Oceanology
+- Iv.Javakhishvili Tbilisi State University, Centre of Relations with UNESCO Oceanological Research Centre and GeoDNA (UNESCO)
+- National Institute for Marine Research and Development "Grigore Antipa"
+- Marine Hydrophysical Institute
+- Department of Navigation and Hydrography and Oceanography, Turkish Navy
+- Karadeniz Technical University, Faculty of Marine Sciences
+- Sinop University, Fisheries Faculty
+- Istanbul University, Institute of Marine Science and Management
+- Institute of Biology of the Southern Seas
+- Marine branch of Ukrainian Hydrometeorological Institute
+- Scientific - Research Firm "GAMMA"
+- National Environmental Agency of the Ministry of Environment Protection and Natural Resources
+
+For data access, please regsiter at http://www.marine-id.org
+
+The dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/</dct:abstract>
+      <dc:description>The Black Sea historical dataset includes all open access temperature and salinity in situ data from the Black Sea and Sea of Azov for period 1868-2014. The data were retrieved from the SeaDataNet infrastructure in the mid of 2015. Data quality has been analysed and checked using ODV software. Quality Flags of anomalous data have been revised using different QC procedures in conjunction with the visual expert check. Duplicates have been identified and excluded from the dataset.
+
+Data providers are:
+- Institute of Fishery Resources (IFR)
+- Institute of Biodiversity and Ecosystem Research, Bulgarian Academy of Sciences
+- Hellenic Centre for Marine Research, Hellenic National Oceanographic Data Centre (HCMR/HNODC)
+- IFREMER / IDM / SISMER - Scientific Information Systems for the SEA
+- SHOM (SERVICE HYDROGRAPHIQUE ET OCEANOGRAPHIQUE DE LA MARINE)
+- All-Russia Research Institute of Hydrometeorological Information - World Data Centre (RIHMI-WDC) National Oceanographic Data Centre (NODC)
+- P.P.Shirshov Institute of Oceanology, RAS
+- Bulgarian National Oceanographic Data Centre(BGODC), Institute of Oceanology
+- Iv.Javakhishvili Tbilisi State University, Centre of Relations with UNESCO Oceanological Research Centre and GeoDNA (UNESCO)
+- National Institute for Marine Research and Development "Grigore Antipa"
+- Marine Hydrophysical Institute
+- Department of Navigation and Hydrography and Oceanography, Turkish Navy
+- Karadeniz Technical University, Faculty of Marine Sciences
+- Sinop University, Fisheries Faculty
+- Istanbul University, Institute of Marine Science and Management
+- Institute of Biology of the Southern Seas
+- Marine branch of Ukrainian Hydrometeorological Institute
+- Scientific - Research Firm "GAMMA"
+- National Environmental Agency of the Ministry of Environment Protection and Natural Resources
+
+For data access, please regsiter at http://www.marine-id.org
+
+The dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI</dc:source>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG 4326)">
+        <ows:LowerCorner>42 40.5</ows:LowerCorner>
+        <ows:UpperCorner>27.5 47.5</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--metadata-URL" description="DOI of the product">http://dx.doi.org/10.12770/227e9f7b-ddfc-4004-b0e5-f4785d36d43f</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="SDN_2015-09_TS_BlackSea_QC_done_v2" description="zipped ODV binary collection">ftp://vftp2.ifremer.fr/public/seadatanet-black_sea-temperaturesalinity_aggregated/SDN_2015-09_TS_BlackSea_QC_done_v2.zip</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="full dataset" description="full datasets">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Black_Sea_QC_done_v2</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2015-09_TS_Black_Sea_QC_done_v2/ITS-90_water_temperature" description="Temperature">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Black_Sea_QC_done_v2</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2015-09_TS_Black_Sea_QC_done_v2/Water_body_salinity" description="Salinity">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Black_Sea_QC_done_v2</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2015-09_TS_Black_Sea_QC_done_v2/*" description="Observation locations">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Black_Sea_QC_done_v2</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=227e9f7b-ddfc-4004-b0e5-f4785d36d43f&amp;fname=DefaultView_0.png</dc:URI>
+    </csw:Record>

@@ -1,0 +1,78 @@
+{
+    "DOI": "http://dx.doi.org/10.12770/1610aa44-0436-4b53-b220-98e10f17a2d4",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=oai_dc&identifier=92b9b5ab-d73b-5cca-83af-b9d9b04d5eb4",
+    "Rights": [
+        "otherRestrictions"
+    ],
+    "SpatialCoverage": [
+        "30 53",
+        "10 66.5"
+    ],
+    "fulltext": "1610aa44-0436-4b53-b220-98e10f17a2d4;2018-07-24T09:47:28;Baltic Sea  - Temperature and salinity observation collection V2;seadatanet-baltic_sea-temperature_salinity_aggregated_public-v2;series;Oceanographic geographical features;Temperature of the water column;Salinity of the water column;ITS-90 water temperature;Water body salinity;Baltic Sea;Bay of Bothnia;Central Baltic Sea;Gulf of Bothnia;Gulf of Finland;Kattegat;Lillebaelt;Skagerrak;Storebaelt;oceans;SeaDataNet Temperature and Salinity historical data collection for the Baltic Sea contains all open access temperature and salinity in situ data retrieved from SeaDataNet infrastructure at the end of 2014.\nData have been quality checked using ODV software. Quality Flags of anomalous data have been revised using basic QC procedures.\nThe dataset is available on authenticated FTP as zip files. You can get access codes from: http://www.marine-id.org. The dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/\n\nFor data access please register at http://www.marine-id.org;SeaDataNet Temperature and Salinity historical data collection for the Baltic Sea contains all open access temperature and salinity in situ data retrieved from SeaDataNet infrastructure at the end of 2014.\nData have been quality checked using ODV software. Quality Flags of anomalous data have been revised using basic QC procedures.\nThe dataset is available on authenticated FTP as zip files. You can get access codes from: http://www.marine-id.org. The dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/\n\nFor data access please register at http://www.marine-id.org;otherRestrictions;eng;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI;30 53;10 66.5;http://dx.doi.org/10.12770/1610aa44-0436-4b53-b220-98e10f17a2d4;ftp://vftp2.ifremer.fr/public/seadatanet-baltic_sea-temperaturesalinity_aggregated/SDN_2015-09_TS_BalticSea_QC_done_v2.zip;http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0&DATASET=SDN_2015-09_TS_BalticSea_QC_done_v2;http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0&DATASET=SDN_2015-09_TS_BalticSea_QC_done_v2;http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0&DATASET=SDN_2015-09_TS_BalticSea_QC_done_v2;http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0&DATASET=SDN_2015-09_TS_BalticSea_QC_done_v2;https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=1610aa44-0436-4b53-b220-98e10f17a2d4&fname=map2.png",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "92b9b5ab-d73b-5cca-83af-b9d9b04d5eb4",
+    "notes": [
+        "SeaDataNet Temperature and Salinity historical data collection for the Baltic Sea contains all open access temperature and salinity in situ data retrieved from SeaDataNet infrastructure at the end of 2014.\nData have been quality checked using ODV software. Quality Flags of anomalous data have been revised using basic QC procedures.\nThe dataset is available on authenticated FTP as zip files. You can get access codes from: http://www.marine-id.org. The dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/\n\nFor data access please register at http://www.marine-id.org"
+    ],
+    "oai_identifier": [
+        "92b9b5ab-d73b-5cca-83af-b9d9b04d5eb4"
+    ],
+    "oai_set": "cams1_ps",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "Baltic Sea"
+        },
+        {
+            "name": "Bay Bothnia"
+        },
+        {
+            "name": "Central Baltic Sea"
+        },
+        {
+            "name": "Gulf Bothnia"
+        },
+        {
+            "name": "Gulf Finland"
+        },
+        {
+            "name": "Kattegat"
+        },
+        {
+            "name": "Lillebaelt"
+        }
+    ],
+    "title": [
+        "Baltic Sea  - Temperature and salinity observation collection V2"
+    ],
+    "url": "https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=1610aa44-0436-4b53-b220-98e10f17a2d4&fname=map2.png"
+}

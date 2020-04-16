@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1186</identifier>
+    <datestamp>2018-05-08T02:04:57Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Automatically stress labelled morphological lexicon Sloleks 1.2,  version 1.1</dc:title>
+      <dc:creator>Krsnik, Luka</dc:creator>
+      <dc:creator>Robnik-&#352;ikonja, Marko</dc:creator>
+      <dc:creator>&#352;ef, Toma&#382;</dc:creator>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:subject>word stress</dc:subject>
+      <dc:description>This lexicon is an extended version of Sloleks 1.2, http://hdl.handle.net/11356/1039. It contains all the original data from Sloleks with added information about the stress of each word form, which is included in two ways: information about stress location only, and information about stress location and type. Stress assignment was performed automatically, with algorithms based on deep neural networks which correctly predicted accent location in 91.5% and combined accent type and location in 88.5% of test data. Therefore not all accents are correct. &#13;
+This updated 1.1 version of the lexicon contains stress asignments with an improved algorithm, which reduces the error by about 1% against the previous 1.0 version.</dc:description>
+      <dc:date>2018-05-08</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1186</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://videolectures.net/jota_krsnik_napovedovanje_naglasa/</dc:relation>
+      <dc:relation>https://repozitorij.uni-lj.si/IzpisGradiva.php?id=98276</dc:relation>
+      <dc:relation>http://hdl.handle.net/11356/1156</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Faculty of Computer and Information Science, University of Ljubljana</dc:publisher>
+      <dc:publisher>Centre for Language Resources and Technologies, University of Ljubljana</dc:publisher>
+      <dc:source>https://gitea.cjvt.si/lkrsnik/stress_asignment</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

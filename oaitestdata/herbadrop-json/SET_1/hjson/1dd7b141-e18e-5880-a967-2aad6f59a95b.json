@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-1332697", 
+        "ARKID": "1332697"
+    }, 
+    "depositIdentifier": "P04113361", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P04113361.jpg", 
+            "ocr": {
+                "deu": ": I\nEM\nHERBARIUM MUSE! PARIS/ENS/S\nm I\u2019iiii\u2019iiii\ufb01\u2018f\ufb01\u2018i\u2018i\u2018l\u2019ii\ufb01i m\nP04113361\n", 
+                "eng": ": I\nEM\nHERBARIUM MUSE! PARIS/ENS/S\nm I\u2019iiii\u2019iiii\ufb01\u2018f\ufb01\u2018i\u2018i\u2018l\u2019ii\ufb01i m\nP04113361\n", 
+                "fra": ": I\n\u00cbW\nHERBARIUM MUSE! PARISIENS/S\nm \u00fciii\u2019i\u00ee\u00ee\u00f1\u00ee\u00ee\ufb01\u00ee\u00ef\u00fc\u00ee\u00fc\u00ee m\nP04113361\n", 
+                "lat": ": I\nEM\nHERBARIUM MUSE! PARIS/ENS/S\nm \u00fc\u00ef\u00efii\u00ef\u00efii\u00ef\u00fc\u00ef\u00ef\u00efl\u00ef\u00ef\u00fci m\nP04113361\n", 
+                "spa": ": \u00cd\ngg\u00bb\u2026\nHERBARIUM MUSE! PARIS/ENS/S\nm \u00f1\u00ed\u00ed\u00edi\u00ed\u00ed\u00ed\u00ed\u00ed\u00edf\u00ed\u00ed\u00edl\u00ed\u00ed\u00ed\u00ed\u00ed m\nP04113361\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "unavailable"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-1332697", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "Asteraceae"
+        }, 
+        "aip.dc.title": {
+            "lat": "Senecio Herbarium Practice & Following Welman."
+        }, 
+        "aip.dc.type": {
+            "eng": "PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "ea9effc077b80e6e6fd0fb781953c03bf79228e5cc98b159bce37b5ceeb9baf1", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-1332697/2", 
+                "name": "DESC/P04113361.txt", 
+                "originalChecksum": "a4ee19f98abf30543689aec51d6e4f17", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 2231
+            }, 
+            {
+                "checksum": "7048f8111a917586962c1b3fcf7aad63d45611567553bd238cb7a87731ba2ef6", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-1332697/1", 
+                "name": "P04113361.jpg", 
+                "originalChecksum": "ab9f958ce0719a8242dcba8d0a197668", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 4796193
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-01-24T15:19:13+0100", 
+        "aip.meta.depositIdentifier": "P04113361", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 1332697, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04113361", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 20.370258, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

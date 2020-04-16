@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "2 MB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1035",
+    "MetadataAccess": [
+        "oai:ota:oucs:1035"
+    ],
+    "PublicationTimestamp": "1984-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1984"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Emeny, R. and H.M. Wilks"
+    ],
+    "fulltext": "oai:ota:oucs:1035;2018-03-05T10:37:10Z;http://ota.ox.ac.uk/headers/1035.xml;Principles and practice of rating valuations;Emeny, R. and H.M. Wilks;1984;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;2 MB;Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f1ab1882-ceef-5b85-b95f-09190ab5390c",
+    "oai_identifier": [
+        "oai:ota:oucs:1035"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Principles and practice of rating valuations"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1035.xml"
+}

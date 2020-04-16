@@ -1,0 +1,78 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1197</identifier>
+    <datestamp>2018-10-24T20:56:47Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>JRC EU DGT Translation Memory Parsebank DGT-UD 1.0</dc:title>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:subject>European law</dc:subject>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>dependency parsebank</dc:subject>
+      <dc:subject>multilingual</dc:subject>
+      <dc:description>DGT-UD is a 2 billion word 23-language parallel syntactically parsed corpus, which consists of the JRC DGT translation memory of European law, automatically annotated with UD-Pipe 1.2 (http://ufal.mff.cuni.cz/udpipe) using Universal Dependencies 2.0 models (http://hdl.handle.net/11234/1-2364). &#13;
+Note that the European Commission retains ownership of the source texts.</dc:description>
+      <dc:date>2018-08-15</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1197</dc:identifier>
+      <dc:language>bul</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>dan</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>lit</dc:language>
+      <dc:language>lav</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:language>slk</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:language>gle</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 24</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>https://ec.europa.eu/jrc/en/language-technologies/dgt-translation-memory</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:78</identifier>
+    <datestamp>2017-11-06T08:51:47Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Data for "The genomic characterization of the t-haplotype, a mouse meiotic driver, highlights its complex history and specialized biology"</dc:title>
+      <dc:creator>Vicoso, Beatriz</dc:creator>
+      <dc:subject>576 Genetics and evolution</dc:subject>
+      <dc:description>This folder contains all the data used in each of the main figures of "The genomic characterization of the t-haplotype, a mouse meiotic driver, highlights its complex history and specialized biology" (Kelemen, R., Vicoso, B.), as well as in the supplementary figures. &#13;
+</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>archive</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/78/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/78/1/Data.zip</dc:identifier>
+      <dc:identifier>  Vicoso, Beatriz   Data for "The genomic characterization of the t-haplotype, a mouse meiotic driver, highlights its complex history and specialized biology".  [Data Collection]    (Submitted)  </dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:78</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English",
+        "Czech",
+        "Finnish",
+        "Russian",
+        "Slovak"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2616",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2616"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2616",
+    "PublicationTimestamp": "2018-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Licence Universal Dependencies v2.1",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.1",
+        "PUB"
+    ],
+    "author": [
+        "Kanerva, Jenna",
+        "Ginter, Filip",
+        "Zeman, Daniel",
+        "Droganova, Kira"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2616;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Artificial Treebank with Ellipsis;Droganova, Kira;Zeman, Daniel;Kanerva, Jenna;Ginter, Filip;universal dependencies;ellipsis;gapping;Artificially created treebank of elliptical constructions (gapping), in the annotation style of Universal Dependencies. Data taken from UD 2.1 release, and from large web corpora parsed by two parsers. Input data are filtered, sentences are identified where gapping could be applied, then those sentences are transformed, one or more words are omitted, resulting in a sentence with gapping. Details in Droganova et al.: Parse Me if You Can: Artificial Treebanks for Parsing Experiments on Elliptical Constructions, LREC 2018, Miyazaki, Japan.;2018-02-15;corpus;http://hdl.handle.net/11234/1-2616;eng;ces;fin;rus;slk;Licence Universal Dependencies v2.1;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.1;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3834c7e9-ff8c-528e-afb1-a214f53cc234",
+    "notes": [
+        "Artificially created treebank of elliptical constructions (gapping), in the annotation style of Universal Dependencies. Data taken from UD 2.1 release, and from large web corpora parsed by two parsers. Input data are filtered, sentences are identified where gapping could be applied, then those sentences are transformed, one or more words are omitted, resulting in a sentence with gapping. Details in Droganova et al.: Parse Me if You Can: Artificial Treebanks for Parsing Experiments on Elliptical Constructions, LREC 2018, Miyazaki, Japan."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2616"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "universal dependencies"
+        },
+        {
+            "name": "ellipsis"
+        },
+        {
+            "name": "gapping"
+        }
+    ],
+    "title": [
+        "Artificial Treebank with Ellipsis"
+    ],
+    "url": ""
+}

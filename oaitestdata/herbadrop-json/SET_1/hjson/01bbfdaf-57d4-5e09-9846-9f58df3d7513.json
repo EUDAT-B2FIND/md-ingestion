@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-3608091", 
+        "ARKID": "3608091"
+    }, 
+    "depositIdentifier": "P03335837", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P03335837.jpg", 
+            "ocr": {
+                "deu": "HERBARIUM MUSE] PARIS/ENSIS\nEX NATIONAL\nAAAAAAAAA\nIONALE} HERBARIUM, PRETORIA ggm \u201enm\nNAS\nm \u00fciiliiiy\u00fcit/thi\u00fc im\n335837\n", 
+                "eng": "HERBARIUM MUSE] PARIS/ENSIS\nEX NATIONAL\nAAAAAAAAA\nIONALE} HERBARIUM, PRETORIA :3\u201c, \u201dRM\nNAS\nm \ufb01iitiiig 117 ii iii!\" it? in:\n335837\n", 
+                "fra": "HERBARIUM MUSE] PARIS/ENSIS\nEX NATIONAL\nAAAAAAAAA\nIONALE} HERBARIUM, PRETORIA gg\u2026 un\u2026\nNAS\nm \ufb01iitiiig 117 it i\u00fc\u00ef it? im\n335837\n", 
+                "lat": "HERBARIUM MUSE] PARIS/ENSIS\nEX NATIONAL\nAAAAAAAAA\nIONALE} HERBARIUM, PRETORIA :3\u201c, \u201dRM\nNAS\nm \ufb01iitiiig 117 il iii!\" i\u00fc im\n335837\n", 
+                "spa": "HERBARIUM MUSE! PARIS/ENSIS\nEX NATIONAL\nAAAAAAAAA\nIONALE} HERBARIUM, PRETORIA gg\u2026 Am\u2026\nNAS\nm \u00f1\u00ed\u00edli\u00ed\u00edg 117 \u00a1\u00a1 \u00a1Tlf \u00a1\u00a1\u00a1 in:\n335837\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-3608091", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "Fabaceae"
+        }, 
+        "aip.dc.title": {
+            "lat": "Indigofera melanadenia Benth. ex Harv. & Sond."
+        }, 
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "71a6b5d117185924c6b30b80eac1e50d7d2fd1bc0e77bcbeb4dc2da2c4b287bb", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-3608091/1", 
+                "name": "DESC/P03335837.txt", 
+                "originalChecksum": "45e046e3aa2d4783c46d9fd4d7e32aea", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 2653
+            }, 
+            {
+                "checksum": "775146dfc8dd14f2c16ed1cd516b2601fee685d8bc85ef4e014f85b34342f439", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-3608091/2", 
+                "name": "P03335837.jpg", 
+                "originalChecksum": "f2b60347cd00c5d88529f99e604d524d", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 5644566
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-05-28T12:05:16+0200", 
+        "aip.meta.depositIdentifier": "P03335837", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 3608091, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03335837", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 15.661448, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

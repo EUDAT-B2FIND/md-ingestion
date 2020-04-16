@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "between 512 KB and 1 MB "
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0534",
+    "MetadataAccess": [
+        "oai:ota:oucs:0534"
+    ],
+    "PublicationTimestamp": "1926-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1926"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Devanny, Jean,  1894-1962"
+    ],
+    "fulltext": "oai:ota:oucs:0534;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0534.xml; The butcher shop  / compiled by Julia Swannell;Devanny, Jean,  1894-1962;1926;text_and_corpus_linguistics;Novels -- New Zealand -- 20th century;eng;Oxford Text Archive, University of Oxford;between 512 KB and 1 MB ;Text;Novels;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3f94ed44-8246-5a1f-ada0-25ff577b782f",
+    "oai_identifier": [
+        "oai:ota:oucs:0534"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- New Zealand -- th century"
+        }
+    ],
+    "title": [
+        " The butcher shop  / compiled by Julia Swannell"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0534.xml"
+}

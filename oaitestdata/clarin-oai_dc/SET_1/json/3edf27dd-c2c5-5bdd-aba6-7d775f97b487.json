@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "A"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0522",
+    "MetadataAccess": [
+        "oai:ota:oucs:0522"
+    ],
+    "PublicationTimestamp": "1948-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1948"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Fry, Christopher, 1907-2005"
+    ],
+    "fulltext": "oai:ota:oucs:0522;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0522.xml;The lady's not for burning;Fry, Christopher, 1907-2005;1948;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;A;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3edf27dd-c2c5-5bdd-aba6-7d775f97b487",
+    "oai_identifier": [
+        "oai:ota:oucs:0522"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The lady's not for burning"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0522.xml"
+}

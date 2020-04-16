@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Craig, Hugh"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3248",
+    "MetadataAccess": [
+        "oai:ota:oucs:3248"
+    ],
+    "PublicationTimestamp": "1607-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1607"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Jonson, Ben, 1573?-1637"
+    ],
+    "fulltext": "oai:ota:oucs:3248;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3248.xml;Volpone;Volpone;The foxe;Jonson, Ben, 1573?-1637;not after: 1607;text_and_corpus_linguistics;English drama -- 17th century;eng;Oxford Text Archive, University of Oxford;Craig, Hugh;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7ef866aa-6922-5b6f-a755-b4908bea7d1c",
+    "oai_identifier": [
+        "oai:ota:oucs:3248"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "Volpone",
+        "Volpone",
+        "The foxe"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3248.xml"
+}

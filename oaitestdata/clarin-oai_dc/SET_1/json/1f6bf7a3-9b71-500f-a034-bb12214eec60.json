@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=e5ad1db81c5f11e2a2aa782bcb074135120115ce2d3b4f4ab0b3e9958b77d1f2",
+    "MetadataAccess": [
+        "e5ad1db81c5f11e2a2aa782bcb074135120115ce2d3b4f4ab0b3e9958b77d1f2"
+    ],
+    "PublicationTimestamp": "2012-10-24T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "e5ad1db81c5f11e2a2aa782bcb074135120115ce2d3b4f4ab0b3e9958b77d1f2;2018-11-15T16:39:45Z;toolService;toolService:tool;Dizer;DiZer 2.0 is a web interface for discourse parsing. It is based on DiZer (Pardo and Nunes, 2008), the first discourse parser for Brazilian Portuguese. The system aims at producing the discourse structure of a source text following the Rhetorical Structure Theory \u00e2\u0080\u0093 RST (Mann and Thompson, 1987), one of the most used discourse theories in Computational Linguistics and Natural Language Processing.\n\nDiZer 2.0 also allows the customization for other languages, being minimally necessary a discourse segmenter and a list of discourse patterns, which correlate text superficial markers to RST characteristics. DiZer 2.0 is currently customized for Brazilian Portuguese and Spanish.\n;2012-10-24",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1f6bf7a3-9b71-500f-a034-bb12214eec60",
+    "notes": [
+        "DiZer 2.0 is a web interface for discourse parsing. It is based on DiZer (Pardo and Nunes, 2008), the first discourse parser for Brazilian Portuguese. The system aims at producing the discourse structure of a source text following the Rhetorical Structure Theory \u00e2\u0080\u0093 RST (Mann and Thompson, 1987), one of the most used discourse theories in Computational Linguistics and Natural Language Processing.\n\nDiZer 2.0 also allows the customization for other languages, being minimally necessary a discourse segmenter and a list of discourse patterns, which correlate text superficial markers to RST characteristics. DiZer 2.0 is currently customized for Brazilian Portuguese and Spanish.\n"
+    ],
+    "oai_identifier": [
+        "e5ad1db81c5f11e2a2aa782bcb074135120115ce2d3b4f4ab0b3e9958b77d1f2"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "Dizer"
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1584",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1584"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1584",
+    "PublicationTimestamp": "2015-11-30T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Mozilla Public License 2.0",
+        "http://opensource.org/licenses/MPL-2.0",
+        "PUB"
+    ],
+    "author": [
+        "Straka, Milan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1584;2018-07-02T22:05:54Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Parsito;Straka, Milan;parser;dependency parser;Parsito is a fast open-source dependency parser written in C++. Parsito is based on greedy transition-based parsing, it has very high accuracy and achieves a throughput of 30K words per second. Parsito can be trained on any input data without feature engineering, because it utilizes artificial neural network classifier. Trained models for all treebanks from Universal Dependencies project are available (37 treebanks as of Dec 2015).\r\n\r\nParsito is a free software under Mozilla Public License 2.0 (http://www.mozilla.org/MPL/2.0/) and the linguistic models are free for non-commercial use and distributed under CC BY-NC-SA (http://creativecommons.org/licenses/by-nc-sa/4.0/) license, although for some models the original data used to create the model may impose additional licensing conditions.\r\n\r\nParsito website http://ufal.mff.cuni.cz/parsito contains download links of both\r\nthe released packages and trained models, hosts documentation and offers online\r\ndemo.\r\n\r\nParsito development repository http://github.com/ufal/parsito is hosted on\r\nGitHub.;2015-11-30;toolService;http://hdl.handle.net/11234/1-1584;eng;Mozilla Public License 2.0;http://opensource.org/licenses/MPL-2.0;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/parsito",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "12a0431f-fa99-5832-826c-08ab44a578e4",
+    "notes": [
+        "Parsito is a fast open-source dependency parser written in C++. Parsito is based on greedy transition-based parsing, it has very high accuracy and achieves a throughput of 30K words per second. Parsito can be trained on any input data without feature engineering, because it utilizes artificial neural network classifier. Trained models for all treebanks from Universal Dependencies project are available (37 treebanks as of Dec 2015).\r\n\r\nParsito is a free software under Mozilla Public License 2.0 (http://www.mozilla.org/MPL/2.0/) and the linguistic models are free for non-commercial use and distributed under CC BY-NC-SA (http://creativecommons.org/licenses/by-nc-sa/4.0/) license, although for some models the original data used to create the model may impose additional licensing conditions.\r\n\r\nParsito website http://ufal.mff.cuni.cz/parsito contains download links of both\r\nthe released packages and trained models, hosts documentation and offers online\r\ndemo.\r\n\r\nParsito development repository http://github.com/ufal/parsito is hosted on\r\nGitHub."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1584"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parser"
+        },
+        {
+            "name": "dependency parser"
+        }
+    ],
+    "title": [
+        "Parsito"
+    ],
+    "url": ""
+}

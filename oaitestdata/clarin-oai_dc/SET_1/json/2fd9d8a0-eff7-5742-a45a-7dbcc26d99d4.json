@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4229",
+    "MetadataAccess": [
+        "oai:ota:oucs:4229"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Cowley, Mrs. (Hannah), 1743-1809."
+    ],
+    "fulltext": "oai:ota:oucs:4229;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4229.xml;The town before you, a comedy: as acted at the Theatre-Royal, Covent-Garden. By Mrs. Cowley.;Cowley, Mrs. (Hannah), 1743-1809.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2fd9d8a0-eff7-5742-a45a-7dbcc26d99d4",
+    "oai_identifier": [
+        "oai:ota:oucs:4229"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The town before you, a comedy: as acted at the Theatre-Royal, Covent-Garden. By Mrs. Cowley."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4229.xml"
+}

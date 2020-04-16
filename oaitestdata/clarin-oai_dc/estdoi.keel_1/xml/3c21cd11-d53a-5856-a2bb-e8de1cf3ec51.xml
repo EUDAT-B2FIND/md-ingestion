@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17986401</identifier>
+    <datestamp>2019-05-31T19:32:31Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">V&#245;ru - eesti paralleelkorpus</dc:title>
+      <dc:creator>Iva, Sulev</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-11</dc:date>
+      <dc:date>Updated: 2019-01-11</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0019FL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Paralleelkorpuse tekstid on
+	rida-realt k&#228;sitsi joondatud,
+	iga terviktekst eraldi failis,
+	iga keelefaili keel j&#228;rjekorranumbri taga punktiga eraldatult,
+	&#252;he keele liit- ja teise lihtlause puhul m&#245;lema keele laused &#252;hel real,
+	t&#245;lke puudumisel rida #-ga v&#228;lja kommenteeritult j&#228;ttes paralleelfaili t&#252;hja #-ga algava reaga,
+	utf8 vormingus.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

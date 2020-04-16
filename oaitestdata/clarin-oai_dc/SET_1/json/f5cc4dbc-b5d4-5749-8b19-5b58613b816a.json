@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "asd"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.oasis.opendocument.text",
+        "application/zip",
+        "downloadable_files_count: 12",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/401",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/401"
+    ],
+    "PID": "http://hdl.handle.net/11321/401",
+    "PublicationTimestamp": "2017-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "asd"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "asd, asd"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/401;2017-06-29T14:00:00Z;hdl_11321_3;hdl_11321_4;Corpus IPI PAN;asd, asd;corpus;opis;2017-05-30;corpus;http://hdl.handle.net/11321/401;pol;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;application/vnd.oasis.opendocument.text;application/msword;text/plain;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;text/plain;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;text/plain;application/vnd.oasis.opendocument.text;application/zip;application/zip;downloadable_files_count: 12;asd",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f5cc4dbc-b5d4-5749-8b19-5b58613b816a",
+    "notes": [
+        "opis"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/401"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        }
+    ],
+    "title": [
+        "Corpus IPI PAN"
+    ],
+    "url": ""
+}

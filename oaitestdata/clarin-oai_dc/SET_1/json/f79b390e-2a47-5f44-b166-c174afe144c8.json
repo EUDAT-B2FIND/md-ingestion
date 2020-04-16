@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "MTA-SZTE Research Group on Artificial Intelligence"
+    ],
+    "Contributor": [
+        "T\u00f3th, L\u00e1szl\u00f3"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Hungarian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-546",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-546"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-546",
+    "PublicationTimestamp": "2002-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2002"
+    ],
+    "Publisher": [
+        "MTA-SZTE Research Group on Artificial Intelligence"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Hungary"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-546;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Oasis Numbers;T\u00f3th, L\u00e1szl\u00f3;speech corpus;spoken, monolingual, manually segmented domain-specific corpus of numbers, 5857 recorded words;2002;corpus;http://hdl.handle.net/11372/LRT-546;hun;downloadable_files_count: 0;Hungary;MTA-SZTE Research Group on Artificial Intelligence;http://www.inf.u-szeged.hu/rgai/?lang=en&page=oasisnumbers",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f79b390e-2a47-5f44-b166-c174afe144c8",
+    "notes": [
+        "spoken, monolingual, manually segmented domain-specific corpus of numbers, 5857 recorded words"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-546"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        }
+    ],
+    "title": [
+        "Oasis Numbers"
+    ],
+    "url": ""
+}

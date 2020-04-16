@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "thomas.dirnboeck@umweltbundesamt.at",
+        "michael.mirtl@umweltbundesamt.at"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0c9f432c-5fee-551e-9dcb-aeb383d858a1",
+    "PID": "http://hdl.handle.net/11304/b1f94c36-eac3-11e5-9bb4-2b0aad496318",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(48N-48N,14E-14E)",
+    "author": [
+        "Michael Mirtl",
+        "Thomas Dirnboeck"
+    ],
+    "fulltext": "ebde825e-7c7a-11e3-8832-005056ab003f;English;utf8;dataset;Thomas Dirnboeck;Environment Agency Austria (EAA);Spittelauer L\u00e4nde 5;Vienna;1090;AT;thomas.dirnboeck@umweltbundesamt.at;pointOfContact;Michael Mirtl;Environment Agency Austria (EAA);Spittelauer L\u00e4nde 5;Vienna;1090;AT;michael.mirtl@umweltbundesamt.at;pointOfContact;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;LTER Z\u00f6belboden, Austria, Litterfall chemistry, 1993-2011;2018-09-24;publication;urn:ltereurope:inspire::8938:20735;LTER Z\u00f6belboden - Austria;Thomas Dirnboeck;Environment Agency Austria (EAA);Spittelauer L\u00e4nde 5;Vienna;1090;AT;thomas.dirnboeck@umweltbundesamt.at;pointOfContact;documentDigital;Litterfall chemistry data of the LTER station Z\u00f6belboden from the years 1993 to 2011;completed;Thomas Dirnboeck;Environment Agency Austria (EAA);Spittelauer L\u00e4nde 5;Vienna;1090;AT;thomas.dirnboeck@umweltbundesamt.at;pointOfContact;Michael Mirtl;Environment Agency Austria (EAA);Spittelauer L\u00e4nde 5;Vienna;1090;AT;michael.mirtl@umweltbundesamt.at;pointOfContact;continual;Representative area of sampling: plot scale Sampling frequency - sampling time span: yearly Sampling frequency - minimum sampling unit: other temporal resolution;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;Fagus sylvatica;Picea abies;Biological Classification;LTER Site;leaf nutrients;litterfall;LTER Controlled Vocabulary;The principal: Administration has granted the access and use permission: Free for access and use upon request;The principal: Research has granted the access and use permission: Free for access and use upon request;The principal: Public has granted the access and use permission: Free for access;The principal: Public has granted the access and use permission: Free for access and use upon request;eng;environment;14.431570000000;14.428830000000;47.859480000000;47.861200000000;Representative area of sampling: plot scale;ground condition;1992-12-31;2011-12-30;http://hdl.handle.net/11304/b1f94c36-eac3-11e5-9bb4-2b0aad496318;WWW:LINK-1.0-http--link;B2Share Download Link;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;Method description: empty. Method URL: http://www.syke.fi/nature/icpim. Instrumentation:;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0c9f432c-5fee-551e-9dcb-aeb383d858a1",
+    "notes": [
+        "Litterfall chemistry data of the LTER station Z\u00f6belboden from the years 1993 to 2011"
+    ],
+    "oai_identifier": [
+        "0c9f432c-5fee-551e-9dcb-aeb383d858a1"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[14.431570000000,47.859480000000],[14.431570000000,47.861200000000],[14.428830000000,47.861200000000],[14.428830000000,47.859480000000],[14.431570000000,47.859480000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Fagus sylvatica"
+        },
+        {
+            "name": "Picea abies"
+        },
+        {
+            "name": "LTER Site"
+        },
+        {
+            "name": "leaf nutrients"
+        },
+        {
+            "name": "litterfall"
+        }
+    ],
+    "title": [
+        "LTER Z\u00f6belboden, Austria, Litterfall chemistry, 1993-2011"
+    ],
+    "url": ""
+}

@@ -1,0 +1,53 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15479/AT:ISTA:65",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "archive"
+    ],
+    "MetaDataAccess": "http://datarep.app.ist.ac.at/cgi/oai2?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datarep.app.ist.ac.at:65",
+    "RelatedIdentifier": [
+        "https://datarep.app.ist.ac.at/65/"
+    ],
+    "ResourceType": [
+        "Data Collection"
+    ],
+    "author": [
+        "Guet, Calin C",
+        "Steinrueck, Magdalena"
+    ],
+    "fulltext": "oai:datarep.app.ist.ac.at:65;2017-04-12T08:05:41Z;Fastq files for \"Complex chromosomal neighborhood effects determine the adaptive potential of a gene under selection\";Steinrueck, Magdalena;Guet, Calin C;576 Genetics and evolution;579 Microorganisms, fungi, algae;Compressed Fastq files with whole-genome sequencing data of IS-wt strain D and clones from four evolved populations (A11, C08, C10, D08). Information on this data collection is available in the Methods Section of the primary publication.;Data Collection;NonPeerReviewed;archive;archive;archive;archive;archive;archive;archive;archive;archive;https://datarep.app.ist.ac.at/65/;https://datarep.app.ist.ac.at/65/2/D_anc_1.fastq.zip;https://datarep.app.ist.ac.at/65/1/D_anc_2.fastq.zip;https://datarep.app.ist.ac.at/65/3/D_A11_1.fastq.zip;https://datarep.app.ist.ac.at/65/4/D_A11_2.fastq.zip;https://datarep.app.ist.ac.at/65/5/D_C10_1.fastq.zip;https://datarep.app.ist.ac.at/65/7/D_C08_2.fastq.zip;https://datarep.app.ist.ac.at/65/6/D_C10_2.fastq.zip;https://datarep.app.ist.ac.at/65/8/D_C08_1.fastq.zip;https://datarep.app.ist.ac.at/65/9/D_D08_1.fastq.zip;  Steinrueck, Magdalena and Guet, Calin C   Fastq files for \"Complex chromosomal neighborhood effects determine the adaptive potential of a gene under selection\".  [Data Collection]    (Submitted)  ;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65;10.15479/AT:ISTA:65",
+    "group": "ist",
+    "groups": [
+        {
+            "name": "ist"
+        }
+    ],
+    "name": "cac8ad58-f498-5748-af28-0d7a1a116e08",
+    "notes": [
+        "Compressed Fastq files with whole-genome sequencing data of IS-wt strain D and clones from four evolved populations (A11, C08, C10, D08). Information on this data collection is available in the Methods Section of the primary publication."
+    ],
+    "oai_identifier": [
+        "oai:datarep.app.ist.ac.at:65"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Genetics evolution"
+        },
+        {
+            "name": "Microorganisms"
+        },
+        {
+            "name": "fungi"
+        },
+        {
+            "name": "algae"
+        }
+    ],
+    "title": [
+        "Fastq files for \"Complex chromosomal neighborhood effects determine the adaptive potential of a gene under selection\""
+    ],
+    "url": "https://datarep.app.ist.ac.at/65/9/D_D08_1.fastq.zip"
+}

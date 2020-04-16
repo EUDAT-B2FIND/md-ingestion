@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "EUDAT"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.23728/b2share.398e55b3f2c44b89bacce36f4764cee2",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/398e55b3f2c44b89bacce36f4764cee2",
+    "PID": "http://hdl.handle.net/11304/74c66f0b-f814-4202-9dcb-4889ba9b1047",
+    "PublicationTimestamp": "2017-09-27T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "EUDAT"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/74c66f0b-f814-4202-9dcb-4889ba9b1047",
+        "10.23728/b2share.398e55b3f2c44b89bacce36f4764cee2",
+        "https://b2share.eudat.eu/api/records/398e55b3f2c44b89bacce36f4764cee2",
+        "oai:b2share.eudat.eu:b2rec/398e55b3f2c44b89bacce36f4764cee2"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Kaila, Urpo ",
+        "Reetz, Johannes ",
+        "Brzezniak, Maciej",
+        "Elbers, Willem ",
+        "Thiemann, Hannes ",
+        "Massol, Marion ",
+        "van de Sanden, Mark",
+        "Rouchon, Olivier"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/398e55b3f2c44b89bacce36f4764cee2;2018-01-11T13:50:52Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;Rouchon, Olivier;Massol, Marion ;Kaila, Urpo ;Elbers, Willem ;Thiemann, Hannes ;Brzezniak, Maciej;van de Sanden, Mark;Reetz, Johannes ;2017-09-27T09:14:37.936844+00:00;This document describes the Terms of Use (ToU) of EUDAT resources and services. Before using any EUDAT services and resources each user must have read and agreed to understand and follow these terms. This ToU can be subject of change.;http://hdl.handle.net/11304/74c66f0b-f814-4202-9dcb-4889ba9b1047;10.23728/b2share.398e55b3f2c44b89bacce36f4764cee2;https://b2share.eudat.eu/api/records/398e55b3f2c44b89bacce36f4764cee2;oai:b2share.eudat.eu:b2rec/398e55b3f2c44b89bacce36f4764cee2;eng;EUDAT;info:eu-repo/semantics/openAccess;Terms of Use;EUDAT Services;EUDAT resources;Users rights and duties;Personal information and data privacy;Access conditions;Legal restrictions;Potential sanctions;EUDAT Services Terms of Use v1.1",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "0ec59384-a7b6-5dc7-b0ab-3530042ba8a6",
+    "notes": [
+        "This document describes the Terms of Use (ToU) of EUDAT resources and services. Before using any EUDAT services and resources each user must have read and agreed to understand and follow these terms. This ToU can be subject of change."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/398e55b3f2c44b89bacce36f4764cee2"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Terms Use"
+        },
+        {
+            "name": "EUDAT Services"
+        },
+        {
+            "name": "EUDAT resources"
+        },
+        {
+            "name": "Users rights duties"
+        },
+        {
+            "name": "Personal information data privacy"
+        },
+        {
+            "name": "Access conditions"
+        },
+        {
+            "name": "Legal restrictions"
+        },
+        {
+            "name": "Potential sanctions"
+        }
+    ],
+    "title": [
+        "EUDAT Services Terms of Use v1.1"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/398e55b3f2c44b89bacce36f4764cee2"
+}

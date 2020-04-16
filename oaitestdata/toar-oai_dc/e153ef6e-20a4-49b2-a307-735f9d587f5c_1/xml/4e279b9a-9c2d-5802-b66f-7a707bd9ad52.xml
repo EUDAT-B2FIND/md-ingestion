@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/e9e2e9a61c574d8f8edb6e438bf7f8ff</identifier>
+    <datestamp>2019-11-19T09:16:56Z</datestamp>
+    <setSpec>e153ef6e-20a4-49b2-a307-735f9d587f5c</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:contributor>Aristiz&#225;bal Zuluaga, Beatriz Helena</dc:contributor>
+      <dc:creator>Schr&#246;der, Sabine</dc:creator>
+      <dc:date>2019-11-19T09:16:56.961499+00:00</dc:date>
+      <dc:description>Timeseries of 1-hourly surface carbon monoxide measurements at station Gobernaci&#243;n (UN_4058943), Colombia</dc:description>
+      <dc:identifier>10.7970/e9e2e9a61c574d8f8edb6e438bf7f8ff</dc:identifier>
+      <dc:identifier>https://b2share-testing.fz-juelich.de/api/records/e9e2e9a61c574d8f8edb6e438bf7f8ff</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/e9e2e9a61c574d8f8edb6e438bf7f8ff</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:publisher>TOAR</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:rights>Creative Commons Attribution (CC-BY)</dc:rights>
+      <dc:subject>TOAR, air quality, global tropospheric ozone</dc:subject>
+      <dc:title>Timeseries of surface carbon monoxide at station Gobernaci&#243;n (UN_4058943), Colombia</dc:title>
+      <dc:type>Dataset</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

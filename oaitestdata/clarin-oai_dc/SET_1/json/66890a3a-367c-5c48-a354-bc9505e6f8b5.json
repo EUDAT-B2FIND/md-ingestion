@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Faculty of Oriental Studies, University of Oxford"
+    ],
+    "Contributor": [
+        "Black, Jeremy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-874",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-874"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-874",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Faculty of Oriental Studies, University of Oxford"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-874;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Electronic text corpus of Sumerian literature (ETCSL);Black, Jeremy;A selection of nearly 400 literary compositions recorded on sources which come from ancient Mesopotamia and date to the late third and early second millennia BCE.  The corpus contains Sumerian texts in transliteration, English prose translations and bibliographical information for each composition. The transliterations and the translations can be searched, browsed and read online using the tools of the website.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-874;downloadable_files_count: 0;United Kingdom;Faculty of Oriental Studies, University of Oxford;http://etcsl.orinst.ox.ac.uk/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "66890a3a-367c-5c48-a354-bc9505e6f8b5",
+    "notes": [
+        "A selection of nearly 400 literary compositions recorded on sources which come from ancient Mesopotamia and date to the late third and early second millennia BCE.  The corpus contains Sumerian texts in transliteration, English prose translations and bibliographical information for each composition. The transliterations and the translations can be searched, browsed and read online using the tools of the website."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-874"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Electronic text corpus of Sumerian literature (ETCSL)"
+    ],
+    "url": ""
+}

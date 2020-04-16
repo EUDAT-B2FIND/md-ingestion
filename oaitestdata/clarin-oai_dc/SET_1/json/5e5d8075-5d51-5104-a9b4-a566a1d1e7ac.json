@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4248",
+    "MetadataAccess": [
+        "oai:ota:oucs:4248"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Funnell, William."
+    ],
+    "fulltext": "oai:ota:oucs:4248;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4248.xml;A voyage round the world. Containing an account of Captain Dampier's expedition into the South-Seas in the ship St George, in the years 1703 and 1704. ... Together with the author's voyage from Amapalla ... By William Funnell,;Funnell, William.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5e5d8075-5d51-5104-a9b4-a566a1d1e7ac",
+    "oai_identifier": [
+        "oai:ota:oucs:4248"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A voyage round the world. Containing an account of Captain Dampier's expedition into the South-Seas in the ship St George, in the years 1703 and 1704. ... Together with the author's voyage from Amapalla ... By William Funnell,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4248.xml"
+}

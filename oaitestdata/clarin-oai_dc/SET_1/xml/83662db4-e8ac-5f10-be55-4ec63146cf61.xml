@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2859</identifier>
+    <datestamp>2018-09-05T11:07:23Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CoNLL 2018 Shared Task - UDPipe Baseline Models and Supplementary Materials</dc:title>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:subject>CoNLL 2018</dc:subject>
+      <dc:subject>tokenizer</dc:subject>
+      <dc:subject>POS tagger</dc:subject>
+      <dc:subject>lemmatization</dc:subject>
+      <dc:subject>tagger</dc:subject>
+      <dc:subject>parser</dc:subject>
+      <dc:subject>dependency parser</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>treebank</dc:subject>
+      <dc:description>Baseline UDPipe models for CoNLL 2018 Shared Task in UD Parsing, and supplementary material.&#13;
+&#13;
+The models require UDPipe version at least 1.2 and are evaluated using the official evaluation script. The models were trained using a custom data split for treebanks where no development data is provided. Also, we trained an additional "Mixed" model, which uses 200 sentences from every training data. All information needed to replicate the model training (hyperparameters, modified train-dev split, and pre-computed word embeddings for the parser) are included in the archive.&#13;
+&#13;
+Additionaly, we provide UD 2.2 CoNLL 2018 training data with automatically predicted morphology. We utilize the baseline models on development data and perform 10-fold jack-knifing (each fold is predicted with a model trained on the rest of the folds) on the training data.</dc:description>
+      <dc:date>2018-05-02</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2859</dc:identifier>
+      <dc:language>mul</dc:language>
+      <dc:rights>Licence Universal Dependencies v2.2</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.2</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-xz</dc:format>
+      <dc:format>application/x-xz</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/udpipe</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

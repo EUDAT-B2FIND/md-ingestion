@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-292</identifier>
+    <datestamp>2016-04-06T16:39:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>repetitiveness checker</dc:title>
+      <dc:contributor>Jongejan, Bart</dc:contributor>
+      <dc:description>1) Finds repeated sequences of words in documents (repetitiveness checker) 2) Finds common sequences of words in several documents (version comparison) A sequence of words consists of minimally two words. There is no upper limit of the number of words in a sequence, but sequences do not transgress sentence delimiters. There are several weight functions to choose from, each defining "good" sequences in a different way, based on word frequency, sequence lenght and number of repetitions.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-292</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Denmark</dc:coverage>
+      <dc:publisher>Center for Sprogteknologi,  University of Copenhagen</dc:publisher>
+      <dc:source>http://cst.dk/tools/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

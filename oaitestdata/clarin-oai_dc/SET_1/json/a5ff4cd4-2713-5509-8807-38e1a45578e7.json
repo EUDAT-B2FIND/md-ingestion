@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Center for Language and Cognition"
+    ],
+    "Contributor": [
+        "Noord, Gertjan van"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/xml"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-220",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-220"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-220",
+    "PublicationTimestamp": "2002-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2002"
+    ],
+    "Publisher": [
+        "Center for Language and Cognition"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Netherlands (the)"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-220;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Alpino Treebank;Noord, Gertjan van;A database of 7.000 syntactically analyzed Dutch sentences.;2002;corpus;http://hdl.handle.net/11372/LRT-220;nld;application/xml;downloadable_files_count: 0;Netherlands (the);Center for Language and Cognition;http://www.let.rug.nl/~vannoord/trees",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a5ff4cd4-2713-5509-8807-38e1a45578e7",
+    "notes": [
+        "A database of 7.000 syntactically analyzed Dutch sentences."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-220"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Alpino Treebank"
+    ],
+    "url": ""
+}

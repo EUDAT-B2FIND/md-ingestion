@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-85",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-85"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-85",
+    "PublicationTimestamp": "2017-10-18T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Del Gratta, Riccardo"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-85;2018-11-08T08:31:45Z;hdl_000-c0-111_38;hdl_000-c0-111_78;Java Porting of OpeNER tokenizer web service for WebLicht;Del Gratta, Riccardo;tokenization;tokenisation;Test WebLicht (https://weblicht.sfs.uni-tuebingen.de/) registry entry for Opener webservice comprising tokenisation only.;2017-10-18;toolService;http://hdl.handle.net/20.500.11752/ILC-85;ita;application/octet-stream;downloadable_files_count: 0;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);https://github.com/cnr-ilc/linguistic-tools-for-weblicht/tree/master/Tokenizer-Base-Service",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "27f682d5-cb73-55ba-95c3-4491456f562f",
+    "notes": [
+        "Test WebLicht (https://weblicht.sfs.uni-tuebingen.de/) registry entry for Opener webservice comprising tokenisation only."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-85"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_78"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "tokenization"
+        },
+        {
+            "name": "tokenisation"
+        }
+    ],
+    "title": [
+        "Java Porting of OpeNER tokenizer web service for WebLicht"
+    ],
+    "url": ""
+}

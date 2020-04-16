@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "SWPS University, Centre for Trauma, Crisis and Growth"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 3",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/455",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/455"
+    ],
+    "PID": "http://hdl.handle.net/11321/455",
+    "PublicationTimestamp": "2018-01-17T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "SWPS University, Centre for Trauma, Crisis and Growth"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN-EULA-ACA-v1.0",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEULA#aca",
+        "ACA"
+    ],
+    "author": [
+        "Zi\u0119ba, Mariusz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/455;2018-01-17T17:25:25Z;hdl_11321_3;hdl_11321_4;Trauma i kryzys;Zi\u0119ba, Mariusz;trauma;crisis;narrative interviews;2018-01-17;corpus;http://hdl.handle.net/11321/455;pol;CLARIN-EULA-ACA-v1.0;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEULA#aca;ACA;text/plain; charset=utf-8;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;downloadable_files_count: 3;SWPS University, Centre for Trauma, Crisis and Growth",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1ce60243-ad4f-5da8-9bf2-cf3071b506b7",
+    "notes": [
+        "narrative interviews"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/455"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "trauma"
+        },
+        {
+            "name": "crisis"
+        }
+    ],
+    "title": [
+        "Trauma i kryzys"
+    ],
+    "url": ""
+}

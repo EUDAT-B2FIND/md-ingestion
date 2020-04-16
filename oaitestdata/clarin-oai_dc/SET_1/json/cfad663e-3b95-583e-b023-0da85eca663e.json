@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=5b18d7363afb11e2a2aa782bcb0741352ac937eb38404449aa899e013dc55bd3",
+    "MetadataAccess": [
+        "5b18d7363afb11e2a2aa782bcb0741352ac937eb38404449aa899e013dc55bd3"
+    ],
+    "PublicationTimestamp": "2012-11-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "5b18d7363afb11e2a2aa782bcb0741352ac937eb38404449aa899e013dc55bd3;2018-11-15T16:39:55Z;toolService;toolService:service;MLSS Tokeniser Web Service;The web service is a tool which takes text as input and returns a list of tokens. The tokens can be orthographical words, numerals and punctuation marks. The tokeniser was designed to work on Maltese texts. The download for this resource only contains the narrative description in a Word file.\n\nThe WSDL link is http://metanet4u.research.um.edu.mt/services/MtTokeniser?wsdl.\n\nThe service has one method which can be invoked:\n\u00e2\u0080\u00a2\tString tokenise(String text, Boolean tokenTags, String separator)\n\nThe method takes has three parameters:\n\u00e2\u0080\u00a2\ttext\nThis is the text that will be tokenised\n\n\u00e2\u0080\u00a2\ttokenTags\nThis is a boolean variable. If tokenTags is true than the output tokens will be wrapped in tags\n(ex: <token> tagged_text </token>). If false, the token will have no tags.\n\n\u00e2\u0080\u00a2\tseparator\nThis is a string which will be used to separate one token from another in the output string.\n\nInput data format: text string with sentences\n\nOutput data format: a text string with the tagged sentences in the format <sentence> sentence_text </sentence> \n\nThe web service does not need any external tool.\n;2012-11-30",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cfad663e-3b95-583e-b023-0da85eca663e",
+    "notes": [
+        "The web service is a tool which takes text as input and returns a list of tokens. The tokens can be orthographical words, numerals and punctuation marks. The tokeniser was designed to work on Maltese texts. The download for this resource only contains the narrative description in a Word file.\n\nThe WSDL link is http://metanet4u.research.um.edu.mt/services/MtTokeniser?wsdl.\n\nThe service has one method which can be invoked:\n\u00e2\u0080\u00a2\tString tokenise(String text, Boolean tokenTags, String separator)\n\nThe method takes has three parameters:\n\u00e2\u0080\u00a2\ttext\nThis is the text that will be tokenised\n\n\u00e2\u0080\u00a2\ttokenTags\nThis is a boolean variable. If tokenTags is true than the output tokens will be wrapped in tags\n(ex: <token> tagged_text </token>). If false, the token will have no tags.\n\n\u00e2\u0080\u00a2\tseparator\nThis is a string which will be used to separate one token from another in the output string.\n\nInput data format: text string with sentences\n\nOutput data format: a text string with the tagged sentences in the format <sentence> sentence_text </sentence> \n\nThe web service does not need any external tool.\n"
+    ],
+    "oai_identifier": [
+        "5b18d7363afb11e2a2aa782bcb0741352ac937eb38404449aa899e013dc55bd3"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "MLSS Tokeniser Web Service"
+    ]
+}

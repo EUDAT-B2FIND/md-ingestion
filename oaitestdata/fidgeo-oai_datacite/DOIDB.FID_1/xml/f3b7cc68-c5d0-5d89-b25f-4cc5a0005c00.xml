@@ -1,0 +1,171 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6582</identifier>
+    <datestamp>2018-12-21T07:37:25Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.014</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Sant, Karin</default:creatorName>
+              <default:givenName>Karin</default:givenName>
+              <default:familyName>Sant</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-1508-3959</default:nameIdentifier>
+              <default:affiliation>Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Mandic, Oleg</default:creatorName>
+              <default:givenName>Oleg</default:givenName>
+              <default:familyName>Mandic</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">6602229581</default:nameIdentifier>
+              <default:affiliation>Natural History Museum Vienna, Vienna, Austria</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>de Leeuw, Arjan</default:creatorName>
+              <default:givenName>Arjan</default:givenName>
+              <default:familyName>de Leeuw</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8878-2785</default:nameIdentifier>
+              <default:affiliation>Universit&#233; Grenoble Alpes, Grenoble, France</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Krijgsman, Wout</default:creatorName>
+              <default:givenName>Wout</default:givenName>
+              <default:familyName>Krijgsman</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">7003956416</default:nameIdentifier>
+              <default:affiliation>Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="en">Paleomagnetic dataset of the marine Badenian reference section Ugljevik in Bosnia-Herzegovina (Middle Miocene, Pannonian basin, Central Paratethys)</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>Badenian</default:subject>
+            <default:subject>Sarmatian</default:subject>
+            <default:subject>magnetostratigraphy</default:subject>
+            <default:subject>integrated stratigraphy</default:subject>
+            <default:subject>Central Paratethys</default:subject>
+            <default:subject>Pannonian Basin</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>Multi-scale laboratories</default:subject>
+            <default:subject>paleomagnetic and magnetic data</default:subject>
+            <default:subject>paleomagnetic data</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Sant, Karin</default:contributorName>
+              <default:givenName>Karin</default:givenName>
+              <default:familyName>Sant</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-1508-3959</default:nameIdentifier>
+              <default:affiliation>Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Sant, Karin</default:contributorName>
+              <default:givenName>Karin</default:givenName>
+              <default:familyName>Sant</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-1508-3959</default:nameIdentifier>
+              <default:affiliation>Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataManager">
+              <default:contributorName>Sant, Karin</default:contributorName>
+              <default:givenName>Karin</default:givenName>
+              <default:familyName>Sant</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-1508-3959</default:nameIdentifier>
+              <default:affiliation>Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Mandic, Oleg</default:contributorName>
+              <default:givenName>Oleg</default:givenName>
+              <default:familyName>Mandic</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">6602229581</default:nameIdentifier>
+              <default:affiliation>Natural History Museum Vienna, Vienna, Austria</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectManager">
+              <default:contributorName>Mandic, Oleg</default:contributorName>
+              <default:givenName>Oleg</default:givenName>
+              <default:familyName>Mandic</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">6602229581</default:nameIdentifier>
+              <default:affiliation>Natural History Museum Vienna, Vienna, Austria</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>de Leeuw, Arjan</default:contributorName>
+              <default:givenName>Arjan</default:givenName>
+              <default:familyName>de Leeuw</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8878-2785</default:nameIdentifier>
+              <default:affiliation>Universit&#233; Grenoble Alpes, Grenoble, France</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Supervisor">
+              <default:contributorName>Krijgsman, Wout</default:contributorName>
+              <default:givenName>Wout</default:givenName>
+              <default:familyName>Krijgsman</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">7003956416</default:nameIdentifier>
+              <default:affiliation>Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="RelatedPerson">
+              <default:contributorName>Renovica, Svetlana</default:contributorName>
+              <default:givenName>Svetlana</default:givenName>
+              <default:familyName>Renovica</default:familyName>
+              <default:affiliation>RiTE Ugljevik (Rudnik i Termoelektrana Ugljevik"; mining company), Ugljevik RS, Bosnia-Herzegovina</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Paleomagnetic Laboratory Fort Hoofddijk (Utrecht University, The Netherlands)</default:contributorName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Available">/2</default:date>
+            <default:date dateType="Created">2018-05-31</default:date>
+          </default:dates>
+          <default:language>en</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="Documents">10.2478/geoca-2013-0006</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.cageo.2016.05.007</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1016/j.gloplacha.2018.10.010</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>570848 Bytes</default:size>
+            <default:size>2 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/pdf</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">This dataset contains paleomagnetic data used to create the magnetostratigraphy of the Ugljevik section in Bosnia and Herzegovina (thesis by Karin Sant, 2018). It is the only outcrop known with the early, middle and upper Badenian sediments exposed in a continuous section.<default:br/>
+         <default:br/>The dataset includes thermal demagnetization (.th files) and alternating field demagnetization (.af files) data from several partial sections (UG08, UG11 and UG13) together forming the full section (correlation figure is attached). The measurements took place at the Paleomagnetic Laboratory Fort Hoofddijk in Utrecht University, The Netherlands. The displayed AF measurements were performed in the per component setting. For further details about the methodology the reader is referred to the methodology in the thesis of K. Sant (2018).<default:br/>
+         <default:br/>The .th and .af. files can be viewed with Notepad or similar programs, and analyzed via the Open Source platform Paleomagnetism.org: http://paleomagnetism.org/ (Koymans et al., 2016). An overview of the data files, abbreviation and sample codes is provided in the data description file.</default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationPoint>
+                <default:pointLongitude>18.982309498631707</default:pointLongitude>
+                <default:pointLatitude>44.667445151876294</default:pointLatitude>
+              </default:geoLocationPoint>
+              <default:geoLocationPlace>Location of open pit mine</default:geoLocationPlace>
+            </default:geoLocation>
+          </default:geoLocations>
+          <default:fundingReferences>
+            <default:fundingReference>
+              <default:funderName>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</default:funderName>
+              <default:funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/501100003246</default:funderIdentifier>
+              <default:awardNumber>865.10.011</default:awardNumber>
+            </default:fundingReference>
+          </default:fundingReferences>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

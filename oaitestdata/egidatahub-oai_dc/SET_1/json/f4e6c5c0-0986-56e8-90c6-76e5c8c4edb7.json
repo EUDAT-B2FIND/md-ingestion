@@ -1,0 +1,46 @@
+{
+    "Contributor": [
+        "EGI-DataHub"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/x-ipynb+json"
+    ],
+    "MetaDataAccess": "http://datahub.egi.eu/oai_pmh?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datahub.egi.eu:93aaf6f32cab454824dbecaf60e03c68",
+    "MetadataAccess": [
+        "oai:datahub.egi.eu:93aaf6f32cab454824dbecaf60e03c68"
+    ],
+    "PID": "http://hdl.handle.net/21.T15999/TgAl7s0",
+    "PublicationTimestamp": "2019-01-29T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "ResourceType": [
+        "Jupyter Notebook"
+    ],
+    "author": [
+        "Baptiste Grenier"
+    ],
+    "fulltext": "oai:datahub.egi.eu:93aaf6f32cab454824dbecaf60e03c68;2019-01-29T11:03:37Z;CS3 notebooks;Baptiste Grenier;Notebook presented at the CS3 conference;Notebook presented at the CS3 conference: Open Data analysis with EOSC-hub services;2019-01-29;Jupyter Notebook;application/x-ipynb+json;http://hdl.handle.net/21.T15999/TgAl7s0;https://datahub.egi.eu/share/e61286563d8172aaac9dab3a0715b6ec",
+    "group": "egidatahub",
+    "groups": [
+        {
+            "name": "egidatahub"
+        }
+    ],
+    "name": "f4e6c5c0-0986-56e8-90c6-76e5c8c4edb7",
+    "notes": [
+        "Notebook presented at the CS3 conference: Open Data analysis with EOSC-hub services"
+    ],
+    "oai_identifier": [
+        "oai:datahub.egi.eu:93aaf6f32cab454824dbecaf60e03c68"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Notebook presented at the CS3 conference: Open Data analysis with EOSC-hub services"
+    ],
+    "url": "https://datahub.egi.eu/share/e61286563d8172aaac9dab3a0715b6ec"
+}

@@ -1,0 +1,24 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-472",
+    "MetadataAccess": [
+        "doi:10.18419/darus-472"
+    ],
+    "fulltext": "doi:10.18419/darus-472;2019-12-04T01:00:01Z;all;10.18419/darus-472;H\u00f6rning, Marcel;Marcel;H\u00f6rning;0000-0001-8934-048X;University of Stuttgart;Schertel, Andreas;Andreas;Schertel;CARL ZEISS Microscopy GmbH;Schneider, Ralf;Ralf;Schneider;0000-0001-6583-9016;High Performance Computing Center Stuttgart (HLRS);Lemloh, Marie-Louise;Marie-Louise;Lemloh;0000-0001-5347-6350;University of Stuttgart;Schweikert, Michael R.;Michael R.;Schweikert;0000-0001-8869-709X;University of Stuttgart;Weiss, Ingrid M.;Ingrid M.;Weiss;0000-0002-7345-341X;University of Stuttgart;3D Cryo-FIB SEM - Mallomonas Dataset;DaRUS;2019;Medicine, Health and Life Sciences;Physics;Other;Cryo-FIB SEM;scale case;protista;biomineralization;H\u00f6rning, Marcel;Marcel;H\u00f6rning;University of Stuttgart;Weiss, Ingrid M.;Ingrid M.;Weiss;University of Stuttgart;2019-09-25;2019-12-03;10.1016/j.jsb.2019.10.005;673217987;679523158;image/tiff;image/tiff;1.0;CC BY Waiver;Dataset of raw and image processed 3D Cryo-FIB SEM data recorded from Mallomonas cells.",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "eabd1cb5-d353-5109-a20a-9dc8e0ef126c",
+    "oai_identifier": [
+        "doi:10.18419/darus-472"
+    ],
+    "oai_set": [
+        "all"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

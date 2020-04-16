@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757251</identifier>
+    <datestamp>2019-06-01T17:36:30Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti &#245;igekeelsuss&#245;naraamat &#213;S 2006</dc:title>
+      <dc:title xml:lang="en">Dictionary of Standard Estonian &#213;S 2006</dc:title>
+      <dc:creator>Langemets, Margit</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2012</dc:date>
+      <dc:date>Issued: 2012-06-13</dc:date>
+      <dc:date>Updated: 2017-01-25</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-00017L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">See s&#245;naraamat on vananenud ning sobib kasutamiseks vaid teadust&#246;&#246;s. Kehtivat keelenormi kajastab "Eesti &#245;igekeelsuss&#245;naraamat &#213;S 2013"
+
+&#213;S ajakohane versioon asub aadressil http://www.eki.ee/dict/qs/.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">&#213;S 2006 is outdated version and suitable only for research purposes. The latest version of &#213;S is accessible at http://www.eki.ee/dict/qs/.
+
+&#213;S 2006 is a normative dictionary of modern standard Estonian, giving recommendations on correct language use. It contains recommended spellings and the morphology of words, instructions on pronunciation and semantics, also some syntactic recommendations. Abbreviations, geographical names and instruction on pronouncing foreign names are attached. </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>ee76a76428cd11e2a2aa782bcb074135cfab4788a1ee4b41ae86d9989280aa90</identifier>
+    <datestamp>2018-11-15T16:39:45Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MSTParser</dc:title>
+      <dc:description>MSTParser is a non-projective dependency parser (see McDonald et al., 2005a, 2006) that searches for maximum spanning trees over directed graphs. Models of dependency structure are based on large-margin discriminative training methods (see McDonald et al., 2005b). Projective parsing is also supported (see McDonald et al., 2005a).
+For more details about this tool, see please http://www.seas.upenn.edu/~strctlrn/MSTParser/MSTParser.html. 
+</dc:description>
+      <dc:date>2012-11-07</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

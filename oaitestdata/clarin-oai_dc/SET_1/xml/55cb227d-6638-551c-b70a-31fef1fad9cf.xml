@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>0fe53eaa5e6211e2a2aa782bcb074135e21251a82a294e44a8dfa8e48e6f894b</identifier>
+    <datestamp>2018-11-15T16:40:01Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:service</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MLSS Paragraph Splitter Web service</dc:title>
+      <dc:description>The paragraph splitter is a web service tool which takes text as input and outputs the identified paragraphs surrounded by tags. The tool is language independent. The download for this resource only contains the narrative description in a Word file.
+
+The service has one method which can be invoked:
+- String tagParagraphs(String text)
+
+The method takes a string as input, that being the text to be split into paragraphs, and returns another string of that text tagged.
+
+The format of the output is as follows:
+&lt;paragraph&gt; paragraph_text &lt;/paragraph&gt;
+</dc:description>
+      <dc:date>2013-01-31</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

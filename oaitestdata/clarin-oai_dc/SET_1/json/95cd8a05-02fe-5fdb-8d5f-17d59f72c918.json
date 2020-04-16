@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "University of Cambridge"
+    ],
+    "Contributor": [
+        "Willis, David"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/tei+xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Welsh"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-883",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-883"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-883",
+    "PublicationTimestamp": "2004-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2004"
+    ],
+    "Publisher": [
+        "University of Cambridge"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-883;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Historical Corpus of the Welsh Language 1500-1850;Willis, David;Welsh texts from the period 1500-1850. Overall the corpus contains around 420,000 words from 30 texts.;2004;corpus;http://hdl.handle.net/11372/LRT-883;cym;application/tei+xml;downloadable_files_count: 0;United Kingdom;University of Cambridge;http://people.pwf.cam.ac.uk/dwew2/hcwl/menu.htm",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "95cd8a05-02fe-5fdb-8d5f-17d59f72c918",
+    "notes": [
+        "Welsh texts from the period 1500-1850. Overall the corpus contains around 420,000 words from 30 texts."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-883"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Historical Corpus of the Welsh Language 1500-1850"
+    ],
+    "url": ""
+}

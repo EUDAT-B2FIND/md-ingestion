@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "text/plain",
+        "downloadable_files_count: 2"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/39",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/39"
+    ],
+    "PID": "http://hdl.handle.net/11321/39",
+    "PublicationTimestamp": "2013-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "author": [
+        "Piasecki, Dominik",
+        "Piasecki, Maciej",
+        "Marci\u0144czuk, Micha\u0142",
+        "Radziszewski, Adam"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/39;2016-10-21T14:04:30Z;hdl_11321_3;hdl_11321_4;Pytania i odpowiedzi z serwisu wikipedyjnego \"Czy wiesz\", wersja 1.1;Marci\u0144czuk, Micha\u0142;Piasecki, Dominik;Piasecki, Maciej;Radziszewski, Adam;Czy wiesz\u201d (pol. \u201cDid you know\u201d) is a set of 4721 questions, each linked to a Wikipedia article that contains the answer.\r\nFor 250 questions a detailed manual analysis has been performed. What results is attachment of manually-checked answer-bearing fragments to each of those selected questions. Some questions are assigned multiple fragments.\r\nThe data set has been obtained from the Polish \u201cDid you know\u201d wikiproject. The dataset is made to facilitate evaluation and development of Polish QA systems.;2013-09-24;corpus;http://hdl.handle.net/11321/39;pol;application/zip;text/plain;downloadable_files_count: 2;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/narzedzia-i-zasoby/zasoby/zbior-pytan-i-odpowiedzi-czy-wiesz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "48b3d0f6-39b8-587d-88e3-7c08df2f8ac3",
+    "notes": [
+        "Czy wiesz\u201d (pol. \u201cDid you know\u201d) is a set of 4721 questions, each linked to a Wikipedia article that contains the answer.\r\nFor 250 questions a detailed manual analysis has been performed. What results is attachment of manually-checked answer-bearing fragments to each of those selected questions. Some questions are assigned multiple fragments.\r\nThe data set has been obtained from the Polish \u201cDid you know\u201d wikiproject. The dataset is made to facilitate evaluation and development of Polish QA systems."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/39"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Pytania i odpowiedzi z serwisu wikipedyjnego \"Czy wiesz\", wersja 1.1"
+    ],
+    "url": ""
+}

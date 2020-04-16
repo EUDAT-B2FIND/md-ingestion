@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00173L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17944507",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17944507"
+    ],
+    "PublicationTimestamp": "2019-01-03T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:17944507;2019-01-03T11:07:33Z;ESTDOI;ESTDOI.KEEL;Maltparseri treenitud mudel;Muischnek, Kadri;Center of Estonian Language Resources;2019;Issued: 2019-01-03;Updated: 2019-01-03;doi:10.15155/1-00-0000-0000-0000-00173L;Abstract;MaltParseri eesti keele anal\u00fc\u00fcsiks vajalik mudel model.mco, treenitud eesti keele s\u00f5ltuvupuude pangal, \u00fchildub MaltParseri versiooniga 1.8.1. Sisaldab ka teisendajat eesti keele CG morfoloogilise \u00fchestaja v\u00f5i s\u00fcntaktilise anal\u00fcsaatori v\u00e4ljundi kujult MaltParseri treenitud mudeli jaoks sobivale conll-kujule. Anal\u00fc\u00fcsiks on vajalik MaltParseri anal\u00fcsaator: http://www.maltparser.org/.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "92f4fa15-01e3-5f8b-9754-6d63f8186cde",
+    "notes": [
+        "Abstract",
+        "MaltParseri eesti keele anal\u00fc\u00fcsiks vajalik mudel model.mco, treenitud eesti keele s\u00f5ltuvupuude pangal, \u00fchildub MaltParseri versiooniga 1.8.1. Sisaldab ka teisendajat eesti keele CG morfoloogilise \u00fchestaja v\u00f5i s\u00fcntaktilise anal\u00fcsaatori v\u00e4ljundi kujult MaltParseri treenitud mudeli jaoks sobivale conll-kujule. Anal\u00fc\u00fcsiks on vajalik MaltParseri anal\u00fcsaator: http://www.maltparser.org/."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17944507"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Maltparseri treenitud mudel"
+    ],
+    "url": ""
+}

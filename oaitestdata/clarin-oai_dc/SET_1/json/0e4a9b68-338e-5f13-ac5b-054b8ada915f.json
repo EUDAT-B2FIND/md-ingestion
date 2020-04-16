@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3357",
+    "MetadataAccess": [
+        "oai:ota:oucs:3357"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hill, Aaron, 1685-1750."
+    ],
+    "fulltext": "oai:ota:oucs:3357;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3357.xml;Athelwold: a tragedy. As it is acted at the Theatre-Royal in Drury-Lane, by His Majesty's servants.;Hill, Aaron, 1685-1750.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0e4a9b68-338e-5f13-ac5b-054b8ada915f",
+    "oai_identifier": [
+        "oai:ota:oucs:3357"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Athelwold: a tragedy. As it is acted at the Theatre-Royal in Drury-Lane, by His Majesty's servants."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3357.xml"
+}

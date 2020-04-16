@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0513",
+    "MetadataAccess": [
+        "oai:ota:oucs:0513"
+    ],
+    "PublicationYear": [
+        "290-240"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Callimachus"
+    ],
+    "fulltext": "oai:ota:oucs:0513;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0513.xml; Complete works  / compiled by Thesaurus Linguae Graecae;Callimachus;290-240;text_and_corpus_linguistics;Poems -- Egypt -- 3rd century B.C.;grc;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Poems;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cbf13c16-1c2a-5208-a680-7c493d532514",
+    "oai_identifier": [
+        "oai:ota:oucs:0513"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Egypt -- rd century B.C."
+        }
+    ],
+    "title": [
+        " Complete works  / compiled by Thesaurus Linguae Graecae"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0513.xml"
+}

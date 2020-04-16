@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4880-3",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4880-3"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-4880-3",
+    "PublicationTimestamp": "2011-01-24T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Pala, Karel",
+        "Bej\u010dek, Eduard",
+        "Haji\u010d, Jan",
+        "\u010capek, Tom\u00e1\u0161",
+        "Kulkov\u00e1, Kate\u0159ina",
+        "Bart\u016f\u0161kov\u00e1, Dita",
+        "Stra\u0148\u00e1k, Pavel",
+        "Hoffmannov\u00e1, Petra",
+        "Zaj\u00ed\u010dkov\u00e1, Barbora"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4880-3;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech WordNet 1.9 PDT;Pala, Karel;\u010capek, Tom\u00e1\u0161;Zaj\u00ed\u010dkov\u00e1, Barbora;Bart\u016f\u0161kov\u00e1, Dita;Kulkov\u00e1, Kate\u0159ina;Hoffmannov\u00e1, Petra;Bej\u010dek, Eduard;Stra\u0148\u00e1k, Pavel;Haji\u010d, Jan;ontology;wordnet;Czech WordNet;A slightly modified version of the Czech Wordnet. This is the version used to annotate \"The Lexico-Semantic Annotation of PDT using Czech WordNet\": http://hdl.handle.net/11858/00-097C-0000-0001-487A-4\r\n\r\nThe Czech WordNet was developed by the Centre of Natural Language Processing at the Faculty of Informatics, Masaryk University, Czech Republic. \r\n\r\nThe Czech WordNet captures nouns, verbs, adjectives, and partly adverbs, and contains 23,094 word senses (synsets). 203 of these were created or modified by UFAL during correction of annotations. This version of WordNet was used to annotate word senses in PDT: http://hdl.handle.net/11858/00-097C-0000-0001-487A-4 \r\n\r\n A more recent version of Czech WordNet is distributed by ELRA: http://catalog.elra.info/product_info.php?products_id=1089;2011-01-24;corpus;http://hdl.handle.net/11858/00-097C-0000-0001-4880-3;ces;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bad910eb-f771-526a-8c31-7ccdfc364876",
+    "notes": [
+        "A slightly modified version of the Czech Wordnet. This is the version used to annotate \"The Lexico-Semantic Annotation of PDT using Czech WordNet\": http://hdl.handle.net/11858/00-097C-0000-0001-487A-4\r\n\r\nThe Czech WordNet was developed by the Centre of Natural Language Processing at the Faculty of Informatics, Masaryk University, Czech Republic. \r\n\r\nThe Czech WordNet captures nouns, verbs, adjectives, and partly adverbs, and contains 23,094 word senses (synsets). 203 of these were created or modified by UFAL during correction of annotations. This version of WordNet was used to annotate word senses in PDT: http://hdl.handle.net/11858/00-097C-0000-0001-487A-4 \r\n\r\n A more recent version of Czech WordNet is distributed by ELRA: http://catalog.elra.info/product_info.php?products_id=1089"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4880-3"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "ontology"
+        },
+        {
+            "name": "wordnet"
+        },
+        {
+            "name": "Czech WordNet"
+        }
+    ],
+    "title": [
+        "Czech WordNet 1.9 PDT"
+    ],
+    "url": ""
+}

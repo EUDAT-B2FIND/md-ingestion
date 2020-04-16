@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0022/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0022/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0022/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-05-27T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Rybkin, Vladimir"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0022/v1;2019-06-12Z;DOI;Dataset;Rybkin, Vladimir;Dynamics of the Bulk Hydrated Electron from Many\u2010Body Wave\u2010Function Theory;Materials Cloud;2019-05-27;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;MARVEL;molecular dynamics;spin density;hydrated electron;solvated electron;many-body methods;electronic structure;doi:10.24435/materialscloud:2019.0022/v1;https://archive.materialscloud.org/2019.0022/v1;en;Trajectories and spin densities for the bulk hydrated electron at the MP2 level of theory.  The data represent the first ab initio molecular dynamics study of the hydrated electron in the bulk using many-body wave function theory.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "18131c19-f2f1-5cc4-980b-033fb0d02d98",
+    "notes": [
+        "Trajectories and spin densities for the bulk hydrated electron at the MP2 level of theory.  The data represent the first ab initio molecular dynamics study of the hydrated electron in the bulk using many-body wave function theory."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0022/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "MARVEL"
+        },
+        {
+            "name": "molecular dynamics"
+        },
+        {
+            "name": "spin density"
+        },
+        {
+            "name": "hydrated electron"
+        },
+        {
+            "name": "solvated electron"
+        },
+        {
+            "name": "many-body methods"
+        },
+        {
+            "name": "electronic structure"
+        }
+    ],
+    "title": [
+        "Dynamics of the Bulk Hydrated Electron from Many\u2010Body Wave\u2010Function Theory"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0022/v1"
+}

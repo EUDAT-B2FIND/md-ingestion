@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0017/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Xie, Tian</dc:creator>
+      <dc:creator>France-Lanord, Arthur</dc:creator>
+      <dc:creator>Wang, Yanming</dc:creator>
+      <dc:creator>Shao-Horn, Yang</dc:creator>
+      <dc:creator>Grossman, Jeffrey</dc:creator>
+      <dc:title>Graph Dynamical Networks for Unsupervised Learning of Atomic Scale Dynamics in Materials</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-05-09</dc:date>
+      <dc:rights>Creative Commons Attribution Non Commercial 4.0 International https://creativecommons.org/licenses/by-nc/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>machine learning</dc:subject>
+      <dc:subject>molecular dynamics</dc:subject>
+      <dc:subject>polymer</dc:subject>
+      <dc:subject>deep learning</dc:subject>
+      <dc:subject>graph</dc:subject>
+      <dc:subject>neural networks</dc:subject>
+      <dc:subject>amorphous</dc:subject>
+      <dc:subject>interface</dc:subject>
+      <dc:subject>trajectory</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0017/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0017/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Understanding the dynamical processes that govern the performance of functional materials is essential for the design of next generation materials to tackle global energy and environmental challenges. Many of these processes involve the dynamics of individual atoms or small molecules in condensed phases, e.g. lithium ions in electrolytes, water molecules in membranes, molten atoms at interfaces, etc., which are difficult to understand due to the complexity of local environments. We develop graph dynamical networks, an unsupervised learning approach for understanding atomic scale dynamics in arbitrary phases and environments from molecular dynamics simulations. We show that important dynamical information can be learned for various multi-component amorphous material systems, which is difficult to obtain otherwise. We develop a software package &amp;#34;gdynet&amp;#34; at https://github.com/txie-93/gdynet which implements the graph dynamical networks algorithm. This record contains the MD trajectories of a Li-S toy system, a Si-Au binary system, and a polymer battery electrolyte system in a format designed for the &amp;#34;gdynet&amp;#34; package.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

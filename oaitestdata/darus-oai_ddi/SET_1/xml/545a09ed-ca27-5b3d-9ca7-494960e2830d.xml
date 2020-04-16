@@ -1,0 +1,115 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-458</identifier>
+    <datestamp>2019-11-13T10:39:56Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>The modular structure of alpha/beta-hydrolases: similarity of the N- and C-terminal domains to other proteins</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-458</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-09-30</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-09-30" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>Bauer, Tabea, 2019, "The modular structure of alpha/beta-hydrolases: similarity of the N- and C-terminal domains to other proteins", https://doi.org/10.18419/darus-458, DaRUS, V1, UNF:6:pbQRgDXU4w7vnxyqxzzuRQ== [fileUNF]</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>The modular structure of alpha/beta-hydrolases: similarity of the N- and C-terminal domains to other proteins</titl>
+            <altTitl>The modular structure of &#945;/&#946;-hydrolases: similarity of the N- and C-terminal domains to other proteins</altTitl>
+            <IDNo agency="DOI">doi:10.18419/darus-458</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Bauer, Tabea</AuthEnty>
+          </rspStmt>
+          <prodStmt>
+            <grantNo agency="Deutsche Forschungsgemeinschaft">PL145/16-1</grantNo>
+            <grantNo agency="Deutsche Forschungsgemeinschaft">EXC2075</grantNo>
+            <grantNo agency="Bundesministerium f&#252;r Bildung und Forschung">031B0571A</grantNo>
+          </prodStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-09-30</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Medicine, Health and Life Sciences</keyword>
+            <keyword>Lipase Engineering Database</keyword>
+            <keyword>sequence-structure-function relationships</keyword>
+          </subject>
+          <abstract>To analyse the structural similarities of the N- and C-terminal domains, representative protein structures of each oxyanion hole type from the proteins of alpha/beta-hydrolase superfamilies 8 to 12 were selected from the Lipase Engineering Database (&lt;a href="https://led.biocatnet.de/"&gt;https://led.biocatnet.de/&lt;/a&gt;). The structures of the N- and C-terminal domains and the core domains were extracted and saved in separate .pdb files, which were then used to compare the domains by the "all against all" structure comparison tool on the Dali webserver (&lt;a href="http://ekhidna2.biocenter.helsinki.fi/dali/"&gt;http://ekhidna2.biocenter.helsinki.fi/dali/&lt;/a&gt;). In a second step, the PDB (Protein Data Bank) search tool on the Dali server was used to compare the N- and C-terminal domains against all structures in PDB25, a subset resulting from clustering the whole PDB database with an identity threshold of 25%. The Dali server has different measures to determine similarity between proteins. The Z-Score is a measure for structural similarity, where a Z-score &gt;2 implies significant structural similarities and thus a similar fold. Besides the Z-Score, the output also contains information about the root-mean-square deviation (rmsd) and the sequence identity.</abstract>
+          <notes>Abbreviations:&#13;
+DPPIV: human dipeptidyl peptidase IV, &#13;
+APAP: acylaminoacyl peptidase from Aeropyrum pernix K1,&#13;
+RCE: Rhodococcus sp. MB1 cocaine esterase,&#13;
+HPL: human pancreatic lipase,&#13;
+PSML: Pseudomonas sp. MIS38 lipase,&#13;
+HEP: human epoxide hydrolase</notes>
+          <sumDscr>
+            <dataKind>hits from database search</dataKind>
+            <dataKind>protein structure comparison</dataKind>
+            <dataKind>root-mean-square deviation</dataKind>
+            <dataKind>sequence identity</dataKind>
+            <dataKind>alignment length</dataKind>
+            <dataKind>Z-score</dataKind>
+          </sumDscr>
+          <relPubl>Bauer, T. L., Buchholz, P. C. F. and Pleiss, J. (2019), The modular structure of &#945;/&#946;&#8208;hydrolases. FEBS J., doi, 10.1111/febs.15071, https://doi.org/10.1111/febs.15071</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">Pleiss, J&#252;rgen</contact>
+          <depositr>Buchholz, Patrick C. F.</depositr>
+          <depDate>2019-09-18</depDate>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f392" URI="https://doi.org/10.18419/darus-458/6" level="datafile">
+        <labl>APAP.tab</labl>
+        <txt>APAP (acylaminoacyl peptidase from Aeropyrum pernix K1) spreadsheet of Supplements01-1.xlsx as csv </txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f387" URI="https://doi.org/10.18419/darus-458/1" level="datafile">
+        <labl>DPPIV.tab</labl>
+        <txt>DPPIV (human dipeptidyl peptidase IV) spreadsheet of Supplements01-1.xlsx as csv</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f388" URI="https://doi.org/10.18419/darus-458/2" level="datafile">
+        <labl>HEP.tab</labl>
+        <txt>HEP (human epoxide hydrolase) spreadsheet of Supplements01-1.xlsx as csv</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f389" URI="https://doi.org/10.18419/darus-458/3" level="datafile">
+        <labl>HPL.tab</labl>
+        <txt>HPL (human pancreatic lipase) spreadsheet of Supplements01-1.xlsx as csv</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f390" URI="https://doi.org/10.18419/darus-458/4" level="datafile">
+        <labl>PSML.tab</labl>
+        <txt>PSML (Pseudomonas sp. MIS38 lipase) spreadsheet of Supplements01-1.xlsx as csv</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f391" URI="https://doi.org/10.18419/darus-458/5" level="datafile">
+        <labl>RCE.tab</labl>
+        <txt>RCE (Rhodococcus sp. MB1 cocaine esterase) spreadsheet of Supplements01-1.xlsx as csv</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f397" URI="https://doi.org/10.18419/darus-458/7" level="datafile">
+        <labl>Supplements01-1.xlsx</labl>
+        <txt>This file contains the data of the Dali analysis with the additional N- and C-terminal module of the indicated proteins. Column A-H show the result from the Dali analysis. All found structures were additionally analyzed by PyMOL to determine whether they belong to the &#945;/&#946;-hydrolase family and the result is indicated by y/n in column I. </txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

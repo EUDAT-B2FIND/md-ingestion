@@ -1,0 +1,94 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-xz",
+        "downloadable_files_count: 2"
+    ],
+    "Language": [
+        "Multiple languages"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2859",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2859"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2859",
+    "PublicationTimestamp": "2018-05-02T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "Licence Universal Dependencies v2.2",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.2",
+        "PUB"
+    ],
+    "author": [
+        "Straka, Milan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2859;2018-09-05T11:07:23Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;CoNLL 2018 Shared Task - UDPipe Baseline Models and Supplementary Materials;Straka, Milan;CoNLL 2018;tokenizer;POS tagger;lemmatization;tagger;parser;dependency parser;morphology;treebank;Baseline UDPipe models for CoNLL 2018 Shared Task in UD Parsing, and supplementary material.\r\n\r\nThe models require UDPipe version at least 1.2 and are evaluated using the official evaluation script. The models were trained using a custom data split for treebanks where no development data is provided. Also, we trained an additional \"Mixed\" model, which uses 200 sentences from every training data. All information needed to replicate the model training (hyperparameters, modified train-dev split, and pre-computed word embeddings for the parser) are included in the archive.\r\n\r\nAdditionaly, we provide UD 2.2 CoNLL 2018 training data with automatically predicted morphology. We utilize the baseline models on development data and perform 10-fold jack-knifing (each fold is predicted with a model trained on the rest of the folds) on the training data.;2018-05-02;languageDescription;http://hdl.handle.net/11234/1-2859;mul;Licence Universal Dependencies v2.2;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.2;PUB;application/x-xz;application/x-xz;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/udpipe",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "83662db4-e8ac-5f10-be55-4ec63146cf61",
+    "notes": [
+        "Baseline UDPipe models for CoNLL 2018 Shared Task in UD Parsing, and supplementary material.\r\n\r\nThe models require UDPipe version at least 1.2 and are evaluated using the official evaluation script. The models were trained using a custom data split for treebanks where no development data is provided. Also, we trained an additional \"Mixed\" model, which uses 200 sentences from every training data. All information needed to replicate the model training (hyperparameters, modified train-dev split, and pre-computed word embeddings for the parser) are included in the archive.\r\n\r\nAdditionaly, we provide UD 2.2 CoNLL 2018 training data with automatically predicted morphology. We utilize the baseline models on development data and perform 10-fold jack-knifing (each fold is predicted with a model trained on the rest of the folds) on the training data."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2859"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "CoNLL"
+        },
+        {
+            "name": "tokenizer"
+        },
+        {
+            "name": "POS tagger"
+        },
+        {
+            "name": "lemmatization"
+        },
+        {
+            "name": "tagger"
+        },
+        {
+            "name": "parser"
+        },
+        {
+            "name": "dependency parser"
+        },
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "treebank"
+        }
+    ],
+    "title": [
+        "CoNLL 2018 Shared Task - UDPipe Baseline Models and Supplementary Materials"
+    ],
+    "url": ""
+}

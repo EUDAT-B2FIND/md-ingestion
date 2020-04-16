@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>5b18d7363afb11e2a2aa782bcb0741352ac937eb38404449aa899e013dc55bd3</identifier>
+    <datestamp>2018-11-15T16:39:55Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:service</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MLSS Tokeniser Web Service</dc:title>
+      <dc:description>The web service is a tool which takes text as input and returns a list of tokens. The tokens can be orthographical words, numerals and punctuation marks. The tokeniser was designed to work on Maltese texts. The download for this resource only contains the narrative description in a Word file.
+
+The WSDL link is http://metanet4u.research.um.edu.mt/services/MtTokeniser?wsdl.
+
+The service has one method which can be invoked:
+&#226;&#128;&#162;	String tokenise(String text, Boolean tokenTags, String separator)
+
+The method takes has three parameters:
+&#226;&#128;&#162;	text
+This is the text that will be tokenised
+
+&#226;&#128;&#162;	tokenTags
+This is a boolean variable. If tokenTags is true than the output tokens will be wrapped in tags
+(ex: &lt;token&gt; tagged_text &lt;/token&gt;). If false, the token will have no tags.
+
+&#226;&#128;&#162;	separator
+This is a string which will be used to separate one token from another in the output string.
+
+Input data format: text string with sentences
+
+Output data format: a text string with the tagged sentences in the format &lt;sentence&gt; sentence_text &lt;/sentence&gt; 
+
+The web service does not need any external tool.
+</dc:description>
+      <dc:date>2012-11-30</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

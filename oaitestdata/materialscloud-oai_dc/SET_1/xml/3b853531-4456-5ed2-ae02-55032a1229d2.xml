@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0011/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Mace, Amber</dc:creator>
+      <dc:creator>Barthel, Senja</dc:creator>
+      <dc:creator>Smit, Berend</dc:creator>
+      <dc:title>TuTraST data for methane diffusion in IZA structures</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-03-11</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>MARVEL</dc:subject>
+      <dc:subject>TuTraST</dc:subject>
+      <dc:subject>diffusion</dc:subject>
+      <dc:subject>methane</dc:subject>
+      <dc:subject>zeolite</dc:subject>
+      <dc:subject>transition state theory</dc:subject>
+      <dc:subject>kinetic monte carlo</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0011/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0011/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Data for the case study of TuTraSt on methane diffusion in zeolites, using a standard kinetic Monte Carlo simulation based on the output of our grid analysis. We find that it is accurate, fast, and rigorous without limitations to the geometries of the diffusion tunnels or transition states. </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Unifob AS"
+    ],
+    "Contributor": [
+        "Andersen, Gisle"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-370",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-370"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-370",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Unifob AS"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Norway"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-370;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;The Norwegian Newspaper Corpus;Andersen, Gisle;Dynamic, web-based newspaper corpus; 700 000 000 ws and growing; multitagged;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-370;nor;downloadable_files_count: 0;Norway;Unifob AS;http://avis.uib.no/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2bd08698-9be8-53bd-807d-518a4c5e18ec",
+    "notes": [
+        "Dynamic, web-based newspaper corpus; 700 000 000 ws and growing; multitagged"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-370"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "The Norwegian Newspaper Corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1468",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1468"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1468",
+    "PublicationTimestamp": "2015-02-05T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "The MIT License (MIT)",
+        "http://opensource.org/licenses/mit-license.php",
+        "PUB"
+    ],
+    "author": [
+        "Kamocki, Pawel",
+        "Sedl\u00e1k, Michal",
+        "Stra\u0148\u00e1k, Pavel"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1468;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Public License Selector;Sedl\u00e1k, Michal;Stra\u0148\u00e1k, Pavel;Kamocki, Pawel;Legal;Licensing;Customizable tool that will help user select the right open license for his data or software;2015-02-05;toolService;http://hdl.handle.net/11234/1-1468;eng;The MIT License (MIT);http://opensource.org/licenses/mit-license.php;PUB;application/zip;application/zip;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://github.com/ufal/public-license-selector",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0081e8da-9027-57ab-b893-19e95f2d4ac1",
+    "notes": [
+        "Customizable tool that will help user select the right open license for his data or software"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1468"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Legal"
+        },
+        {
+            "name": "Licensing"
+        }
+    ],
+    "title": [
+        "Public License Selector"
+    ],
+    "url": ""
+}

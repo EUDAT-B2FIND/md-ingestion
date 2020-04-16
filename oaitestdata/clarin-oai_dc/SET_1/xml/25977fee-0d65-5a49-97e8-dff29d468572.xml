@@ -1,0 +1,66 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/466</identifier>
+    <datestamp>2018-09-18T12:58:36Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Acoustic Data Building Toolset</dc:title>
+      <dc:creator>Sas, Jerzy</dc:creator>
+      <dc:subject>speech recognition</dc:subject>
+      <dc:subject>deep neural networks</dc:subject>
+      <dc:subject>machine learning</dc:subject>
+      <dc:description>This folder contains data and software tools (in python)  that can be used in experiments with phoneme recognition in speech samples recorder in Polish. Acoustic data used here were extracted from CLARIN-PL speech corpus after rejecting speech samples, where recorded sequence of words does not correspond strictly to the word sequence declared as the sample orthographic transcription. In order to use the python programs and data published here, the appropriate folder structure should be created. Follow the steps below:&#13;
+1) create the root folder and set the environment variable ASR_DATASET_ROOT that points to this folder (let's call it ROOT),&#13;
+2) create the subfolders in the ROOT folder: train, devel, test, doc and src in the root folder,&#13;
+3) download ar files: test.tar.gz, devel.tar.gz, train.tar.gz, doc.tar.gz, src.tar.gz and unpack then in the corresponding folders,&#13;
+4)download aux.tar.gz and unpack it directly to ROOT folder.&#13;
+&#13;
+More information can be found in doc/README.pdf.&#13;
+&#13;
+If you find this dataset useful, please make reference in your related papers to the paper: "&#13;
+Acoustic Data Building Toolset for Easy Experimentation with Neural Network-based Speech Recognition in Polish and English" (https://ieeexplore.ieee.org/document/8431366/)&#13;
+&#13;
+&#13;
+&#13;
+Bibtex:&#13;
+@INPROCEEDINGS{8431366, &#13;
+author={J. Sas}, &#13;
+booktitle={2018 11th International Conference on Human System Interaction (HSI)}, &#13;
+title={Acoustic Data Building Toolset for Easy Experimentation with Neural Network-based Speech Recognition in Polish and English}, &#13;
+year={2018}, &#13;
+volume={}, &#13;
+number={}, &#13;
+pages={93-99}, &#13;
+doi={10.1109/HSI.2018.8431366}, &#13;
+ISSN={}, &#13;
+month={July},}</dc:description>
+      <dc:date>2018-04-03</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/466</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 13</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Science and Technology</dc:publisher>
+      <dc:source>https://github.com/ASR-K2-WrUT/nn asr</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

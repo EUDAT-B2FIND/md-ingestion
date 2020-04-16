@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000-152</identifier>
+    <datestamp>2019-04-16T00:21:33Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:identifier>10.22000/152</dc:identifier>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:creator>Schughart, Klaus</dc:creator>
+      <dc:identifier>0000-0002-6824-7523</dc:identifier>
+      <dc:title>data and codes for publication Tang et al 2019</dc:title>
+      <dc:publisher>Klaus Schughart</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:subject>Medicine</dc:subject>
+      <dc:type>Data and R codes</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:rights>CC BY 4.0 Attribution</dc:rights>
+      <dc:rights>Klaus Schughart</dc:rights>
+      <dc:language/>
+      <dc:format>application/zip</dc:format>
+    </oai_dc:dc>
+  </metadata>
+</record>

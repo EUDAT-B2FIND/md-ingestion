@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2377</identifier>
+    <datestamp>2018-07-02T22:05:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ParaDi 2.0</dc:title>
+      <dc:creator>Baran&#269;&#237;kov&#225;, Petra</dc:creator>
+      <dc:creator>Kettnerov&#225;, V&#225;clava</dc:creator>
+      <dc:subject>multiword expressions</dc:subject>
+      <dc:subject>light verb construction</dc:subject>
+      <dc:subject>paraphrases</dc:subject>
+      <dc:subject>idioms</dc:subject>
+      <dc:description>ParaDi 2.0. is a dictionary of single verb paraphrases of Czech verbal multiword expressions - light verb constructions and idiomatic verb constructions.  Moreover, it provides an elaborated set of morphological, syntactic and semantic features, including information on aspectual counterparts of verbs or paraphrasability conditions of given verbs.&#13;
+&#13;
+The format of ParaDi has been designed with respect to both human and machine readability - the dictionary is  represented as a plain table in  TSV format, as it is a flexible and language-independent data format.</dc:description>
+      <dc:date>2017-08-28</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2377</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11234/1-2605</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

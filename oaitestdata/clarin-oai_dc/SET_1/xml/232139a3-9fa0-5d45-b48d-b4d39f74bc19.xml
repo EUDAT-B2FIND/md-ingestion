@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>d2fb3020059811e7a2aa782bcb074135753d376d9bf34dbf88cb4a6e416a2322</identifier>
+    <datestamp>2018-11-15T16:40:32Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>English to Dutch Machine translation module</dc:title>
+      <dc:description>Technical Description:
+
+http://qtleap.eu/wp-content/uploads/2015/05/Pilot1_technical_description.pdf
+
+http://qtleap.eu/wp-content/uploads/2015/05/TechnicalDescriptionPilot2_D2.7.pdf
+
+http://qtleap.eu/wp-content/uploads/2016/11/TechnicalDescriptionPilot3_D2.10.pdf</dc:description>
+      <dc:date>2017-03-10</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

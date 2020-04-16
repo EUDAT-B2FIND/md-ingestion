@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1127</identifier>
+    <datestamp>2017-07-01T10:51:30Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Words of the 16th-Century Slovenian Literary Language</dc:title>
+      <dc:creator>Aha&#269;i&#269;, Kozma</dc:creator>
+      <dc:creator>Legan Ravnikar, Andreja</dc:creator>
+      <dc:creator>Mer&#353;e, Majda</dc:creator>
+      <dc:creator>Narat, Jo&#382;ica</dc:creator>
+      <dc:creator>Novak, France</dc:creator>
+      <dc:subject>dictionary</dc:subject>
+      <dc:subject>historical language</dc:subject>
+      <dc:subject>lexicography</dc:subject>
+      <dc:description>This dictionary provides comprehensive information on the vocabulary used in the Slovenian literary language during the period of the Reformation. It was written based on complete concordance from all editions of Slovenian texts from the period 1550-1603. The word entries are accompanied by grammatical information, such as the part of speech used and other grammatical data. The extent of their use is shown by the attributed sources. The features of the linguistic system of that period are also shown by numerous notices regarding written, phonological and morphological variations.&#13;
+&#13;
+This dictionary was published as a printed book:&#13;
+Aha&#269;i&#269;, Kozma, Legan Ravnikar, Andreja, Mer&#353;e, Majda, Narat, Jo&#382;ica, Novak, France. Besedje slovenskega knji&#382;nega jezika 16. stoletja. Ljubljana : Zalo&#382;ba ZRC, ZRC SAZU, 2011. ISBN 978-961-254-252-8.</dc:description>
+      <dc:date>2011</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1127</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://www.fran.si/140/besedje-slovenskega-knjiznega-jezika-16-stoletja/datoteke/Besedje16_Uvod.pdf</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>ZRC SAZU</dc:publisher>
+      <dc:source>http://www.fran.si/iskanje?FilteredDictionaryIds=140&amp;View=1&amp;Query=%2A</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

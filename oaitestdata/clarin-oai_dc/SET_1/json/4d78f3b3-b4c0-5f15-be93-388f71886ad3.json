@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4234",
+    "MetadataAccess": [
+        "oai:ota:oucs:4234"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "More, Hannah, 1745-1833."
+    ],
+    "fulltext": "oai:ota:oucs:4234;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4234.xml;Turn the carpet; or, the two weavers: a new song in a dialogue between Dick and John.;More, Hannah, 1745-1833.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4d78f3b3-b4c0-5f15-be93-388f71886ad3",
+    "oai_identifier": [
+        "oai:ota:oucs:4234"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Turn the carpet; or, the two weavers: a new song in a dialogue between Dick and John."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4234.xml"
+}

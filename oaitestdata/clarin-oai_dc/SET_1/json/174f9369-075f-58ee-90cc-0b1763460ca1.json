@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "British Academy and the University of Wales, Bangor"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3021",
+    "MetadataAccess": [
+        "oai:ota:oucs:3021"
+    ],
+    "PublicationTimestamp": "1645-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1645"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Milton, John, 1608-1674"
+    ],
+    "fulltext": "oai:ota:oucs:3021;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3021.xml;Poems of Mr. John Milton, both English and\n\tLatin, and, A maske of the same author [1645];Milton, John, 1608-1674;not after: 1645;text_and_corpus_linguistics;English poetry -- 17th century;eng;Oxford Text Archive, University of Oxford;British Academy and the University of Wales, Bangor;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "174f9369-075f-58ee-90cc-0b1763460ca1",
+    "oai_identifier": [
+        "oai:ota:oucs:3021"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English poetry -- th century"
+        }
+    ],
+    "title": [
+        "Poems of Mr. John Milton, both English and\n\tLatin, and, A maske of the same author [1645]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3021.xml"
+}

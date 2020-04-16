@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Michael More"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.oasis.opendocument.text",
+        "downloadable_files_count: 14",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/474",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/474"
+    ],
+    "PID": "http://hdl.handle.net/11321/474",
+    "PublicationTimestamp": "2018-05-19T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Michael More"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "plWordNet",
+        "http://clarin-pl.eu/en/licenses/plwordnet-2/",
+        "PUB"
+    ],
+    "author": [
+        "More, Michael"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/474;2018-05-19T08:43:00Z;hdl_11321_3;hdl_11321_4;Sanda\u0142y sanda\u0142y;More, Michael;warsztaty;lingwistylka;korpus warsztatowy;2018-05-19;corpus;http://hdl.handle.net/11321/474;pol;plWordNet;http://clarin-pl.eu/en/licenses/plwordnet-2/;PUB;text/plain; charset=utf-8;text/plain;text/plain;text/plain;text/plain;application/vnd.oasis.opendocument.text;text/plain;application/msword;application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.oasis.opendocument.text;text/plain;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;text/plain;downloadable_files_count: 14;Michael More",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1c3bd563-a7fb-5be6-8da8-818c01aa9d6f",
+    "notes": [
+        "korpus warsztatowy"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/474"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "warsztaty"
+        },
+        {
+            "name": "lingwistylka"
+        }
+    ],
+    "title": [
+        "Sanda\u0142y sanda\u0142y"
+    ],
+    "url": ""
+}

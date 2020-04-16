@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2587</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Amharic Web Corpus</dc:title>
+      <dc:creator>Suchomel, V&#237;t</dc:creator>
+      <dc:creator>Rychl&#253;, Pavel</dc:creator>
+      <dc:subject>Amharic</dc:subject>
+      <dc:subject>text corpus</dc:subject>
+      <dc:subject>web corpus</dc:subject>
+      <dc:subject>under-resourced language</dc:subject>
+      <dc:subject>corpus annotation</dc:subject>
+      <dc:subject>morphological tagger</dc:subject>
+      <dc:description>Amharic web corpus. Crawled by SpiderLing in August 2013 and October 2015 and January 2016. Encoded in UTF-8, cleaned, deduplicated. Tagged by TreeTagger trained on Amharic WIC corpus.</dc:description>
+      <dc:date>2016</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2587</dc:identifier>
+      <dc:language>amh</dc:language>
+      <dc:relation>https://link.springer.com/chapter/10.1007/978-3-319-45510-5_34</dc:relation>
+      <dc:relation>https://www.sketchengine.co.uk/wp-content/uploads/2015/05/Corpus_Factory_2010.pdf</dc:relation>
+      <dc:relation>http://habit-project.eu/wiki/AmharicCorpus</dc:relation>
+      <dc:rights>NLP Centre Web Corpus License</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/license-NLPC-WeC</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Masaryk University, NLP Centre</dc:publisher>
+      <dc:source>http://habit-project.eu/wiki/HabitSystemFinal</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

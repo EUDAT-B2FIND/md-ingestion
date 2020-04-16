@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3771",
+    "MetadataAccess": [
+        "oai:ota:oucs:3771"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gilpin, William, 1724-1804."
+    ],
+    "fulltext": "oai:ota:oucs:3771;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3771.xml;An explanation of the duties of religion, for the use of Boldre School, in New Forest. N.B. The small paper prefixed, which is the ground-work of this explanation, is distributed in little books among the children of the parish,;Gilpin, William, 1724-1804.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8062789b-6058-52b1-8627-424b50918ef2",
+    "oai_identifier": [
+        "oai:ota:oucs:3771"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An explanation of the duties of religion, for the use of Boldre School, in New Forest. N.B. The small paper prefixed, which is the ground-work of this explanation, is distributed in little books among the children of the parish,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3771.xml"
+}

@@ -1,0 +1,65 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-120120588",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:16451698",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:16451698"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63672433199,
+    "TempCoverageEnd": 63672433199,
+    "TemporalCoverage": " point in time : 2018-09-13T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-09-13T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-09-13T11:59:59Z",
+    "author": [
+        "Joseph BROCK",
+        "Dirk FAHRENKAMP",
+        "Tatyana SANDALOVA",
+        "Gunter SCHNEIDER",
+        "Renhua SUN"
+    ],
+    "fulltext": "oai:oai.datacite.org:16451698;2018-09-13T08:28:21Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-120120588;Gunter SCHNEIDER;Joseph BROCK;Dirk FAHRENKAMP;Renhua SUN;Tatyana SANDALOVA;Stockholm BAG;Macromolecular Crystallography;MX-2074;id30a3;European Synchrotron Radiation Facility;2018-09-13;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "0abc61f8-d85f-5d96-b49b-13c4b7ba749c",
+    "oai_identifier": [
+        "oai:oai.datacite.org:16451698"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Macromolecular Crystallography"
+        },
+        {
+            "name": "MX-"
+        },
+        {
+            "name": "ida"
+        }
+    ],
+    "title": [
+        "Stockholm BAG"
+    ],
+    "url": ""
+}

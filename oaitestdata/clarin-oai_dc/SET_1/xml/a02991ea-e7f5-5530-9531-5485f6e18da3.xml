@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/25</identifier>
+    <datestamp>2014-09-26T13:20:24Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>WCRFT - Wroc&#322;aw CRF Tagger</dc:title>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:description>WCRFT is a morphosyntactic tagger for Polish. The tagger brings together Conditional Random Fields (CRF) and tiered tagging. The code is written in C++ and uses following components: CRF++ classifier, WCCL: formalism for morphosyntactic feature generation (and its implementation), corpus2: a library for rapid NLP application development, supporting positional tagsets.</dc:description>
+      <dc:date>2011</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/25</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroclaw University of Technology</dc:publisher>
+      <dc:source>http://w01.clarin-pl.eu:8080/weblichtWCRFT-1.0/annotate/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

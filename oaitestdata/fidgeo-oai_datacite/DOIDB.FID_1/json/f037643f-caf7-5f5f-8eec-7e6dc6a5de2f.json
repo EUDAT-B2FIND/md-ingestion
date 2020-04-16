@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6314",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6314"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6314;2018-10-25T08:07:33Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2017.007;Brizzi, Silvia;0000-0002-5258-0495;University of Roma Tre, Rome, Italy;Funiciello, Francesca;0000-0001-7900-8272;University of Roma Tre, Rome, Italy;Corbi, Fabio;0000-0003-2662-3065;University of Roma Tre, Rome, Italy;Di Giuseppe, Erika;MINES ParisTech, Paris, France;Mojoli, Giorgio;0000-0002-9370-5952;Penati Strumenti srl, Cetara (SA), Italy;Rheometric measurements of salted type A gelatins;GFZ Data Services;2017;EPOS;multi-scale laboratories;analogue models of geologic processes;property data of analogue modelling materials;Brizzi, Silvia;0000-0002-5258-0495;University of Roma Tre, Rome, Italy;Brizzi, Silvia;0000-0002-5258-0495;University of Roma Tre, Rome, Italy;Funiciello, Francesca;0000-0001-7900-8272;University of Roma Tre, Rome, Italy;Funiciello, Francesca;0000-0001-7900-8272;University of Roma Tre, Rome, Italy;Corbi, Fabio;0000-0003-2662-3065;University of Roma Tre, Rome, Italy;Corbi, Fabio;0000-0003-2662-3065;University of Roma Tre, Rome, Italy;Di Giuseppe, Erika;MINES ParisTech, Paris, France;Di Giuseppe, Erika;MINES ParisTech, Paris, France;Mojoli, Giorgio;0000-0002-9370-5952;Penati Strumenti srl, Cetara (SA), Italy;Mojoli, Giorgio;0000-0002-9370-5952;Penati Strumenti srl, Cetara (SA), Italy;Laboratory of Experimental Tectonics (University of Roma TRE, Italy);University of Roma TRE, Rome, Italy;2017-06-12;en;10.1016/j.tecto.2016.04.021;10.1016/j.tecto.2009.03.012;10.1007/s00397-011-0611-9;10.1016/j.tecto.2014.12.005;366772 Bytes;12 Files;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel;application/pdf;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel;application/pdf;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel;CC BY 4.0;Gelatin is a versatile material commonly used in analogue modelling because of its complex rheology, which allows simulating a wide range of tectonic processes requiring either elastic (e.g., dyke intrusions models) and viscoelastic behavior (e.g., analog earthquakes models). Salt (NaCl) is generally added to gelatin to improve the scaling of the models by increasing the density of the material. The addition of salt results also in a weakening of the gelatin structure, which in turn can dramatically affect its rheological properties. Here, we provide raw data of rheometric measurements performed to test the rheological properties of type A (pig-skin) 2.5 wt% gelatin at T=10\u00b0C as a function of salt concentration and ageing time. Each sample was analyzed using dynamical oscillation tests (i.e., amplitude, frequency and time sweep tests) in shear strain controlled mode. All details about sample preparation procedure, measuring protocol, as well as results and data interpretation can be found in Brizzi et al. (2016).",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "f037643f-caf7-5f5f-8eec-7e6dc6a5de2f",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6314"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

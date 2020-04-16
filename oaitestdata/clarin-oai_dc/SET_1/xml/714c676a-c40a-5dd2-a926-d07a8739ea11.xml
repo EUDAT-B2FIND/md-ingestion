@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1133</identifier>
+    <datestamp>2016-04-06T16:39:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Digitales Mittelhochdeutsches Textarchiv</dc:title>
+      <dc:contributor>Plate, Dr. Ralf</dc:contributor>
+      <dc:contributor>M.a., Ute Recker-Hamm</dc:contributor>
+      <dc:subject>Germanistik</dc:subject>
+      <dc:description>Collection of (philologically reliable) Middle High German texts; Sammlung von (philologisch zuverl&#228;ssigen) mittelhochdeutschen Texten</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1133</dc:identifier>
+      <dc:language>deu</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:publisher>Universit&#228;t Trier</dc:publisher>
+      <dc:source>http://mhgta.uni-trier.de/katalogsuche.php?ses_id=265c6722bde5cf2bb294c4c7f59d0c1f&amp;suchwort=*&amp;gesendet=suchen</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

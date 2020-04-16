@@ -1,0 +1,100 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 3",
+        "text/plain",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English",
+        "Spanish",
+        "Polish",
+        "Russian",
+        "Hungarian",
+        "German",
+        "Swedish",
+        "Slovak",
+        "Slovenian",
+        "Portuguese",
+        "Bulgarian",
+        "Albanian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1048",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1048"
+    ],
+    "PID": "http://hdl.handle.net/11356/1048",
+    "PublicationTimestamp": "2015-09-14T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/610704",
+        "info:eu-repo/grantAgreement/EC/FP7/317532",
+        "info:eu-repo/grantAgreement/EC/H2020/640772",
+        "https://doi.org/10.1371/journal.pone.0144296"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Sluban, Borut",
+        "Mozeti\u010d, Igor",
+        "Smailovi\u0107, Jasmina",
+        "Kralj Novak, Petra"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1048;2018-10-16T10:39:49Z;hdl_11356_1023;hdl_11356_1024;Emoji Sentiment Ranking 1.0;Kralj Novak, Petra;Smailovi\u0107, Jasmina;Sluban, Borut;Mozeti\u010d, Igor;sentiment classification;emojis;Unicode;multilingual;A lexicon of 751 emoji characters with automatically assigned sentiment.\r\nThe sentiment is computed from 70,000 tweets, labeled by 83 human annotators\r\nin 13 European languages.\r\nThe process and analysis of emoji sentiment ranking is described in the\r\npaper:  Kralj Novak P, Smailovi\u0107 J, Sluban B, Mozeti\u010d I (2015) Sentiment of Emojis. PLoS ONE 10(12): e0144296. doi:10.1371/journal.pone.0144296;2015-09-14;lexicalConceptualResource;http://hdl.handle.net/11356/1048;eng;spa;pol;rus;hun;deu;swe;hbs;slk;slv;por;bul;sqi;info:eu-repo/grantAgreement/EC/FP7/610704;info:eu-repo/grantAgreement/EC/FP7/317532;info:eu-repo/grantAgreement/EC/H2020/640772;https://doi.org/10.1371/journal.pone.0144296;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;text/plain; charset=utf-8;text/plain;application/octet-stream;application/octet-stream;downloadable_files_count: 3;Jo\u017eef Stefan Institute",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5a4e5745-79cd-51dc-a351-1f9f664aa455",
+    "notes": [
+        "A lexicon of 751 emoji characters with automatically assigned sentiment.\r\nThe sentiment is computed from 70,000 tweets, labeled by 83 human annotators\r\nin 13 European languages.\r\nThe process and analysis of emoji sentiment ranking is described in the\r\npaper:  Kralj Novak P, Smailovi\u0107 J, Sluban B, Mozeti\u010d I (2015) Sentiment of Emojis. PLoS ONE 10(12): e0144296. doi:10.1371/journal.pone.0144296"
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1048"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "sentiment classification"
+        },
+        {
+            "name": "emojis"
+        },
+        {
+            "name": "Unicode"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Emoji Sentiment Ranking 1.0"
+    ],
+    "url": ""
+}

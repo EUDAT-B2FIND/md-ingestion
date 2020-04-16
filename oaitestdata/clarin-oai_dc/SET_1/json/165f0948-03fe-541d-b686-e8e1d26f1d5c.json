@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovak"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADA-9",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADA-9"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0006-AADA-9",
+    "PublicationTimestamp": "2012-05-15T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/231720"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Galu\u0161\u010d\u00e1kov\u00e1, Petra",
+        "Bojar, Ond\u0159ej"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADA-9;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;WMT 2011 Testing Set;Galu\u0161\u010d\u00e1kov\u00e1, Petra;Bojar, Ond\u0159ej;WMT;test data;Slovak;Testing set from WMT 2011 [1] competition, manually translated from Czech and English into Slovak. Test set contains 3003 sentences in Czech, Slovak and English. Test set is described in [2].\r\n\r\nReferences: \r\n[1] http://www.statmt.org/wmt11/evaluation-task.html\r\n[2] Petra Galu\u0161\u010d\u00e1kov\u00e1 and Ond\u0159ej Bojar. Improving SMT by Using Parallel Data of a Closely Related Language. In Human Language Technologies - The Baltic Perspective - Proceedings of the Fifth International Conference Baltic HLT 2012, volume 247 of Frontiers in AI and Applications, pages 58-65, Amsterdam, Netherlands, October 2012. IOS Press.;2012-05-15;lexicalConceptualResource;http://hdl.handle.net/11858/00-097C-0000-0006-AADA-9;slk;info:eu-repo/grantAgreement/EC/FP7/231720;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "165f0948-03fe-541d-b686-e8e1d26f1d5c",
+    "notes": [
+        "Testing set from WMT 2011 [1] competition, manually translated from Czech and English into Slovak. Test set contains 3003 sentences in Czech, Slovak and English. Test set is described in [2].\r\n\r\nReferences: \r\n[1] http://www.statmt.org/wmt11/evaluation-task.html\r\n[2] Petra Galu\u0161\u010d\u00e1kov\u00e1 and Ond\u0159ej Bojar. Improving SMT by Using Parallel Data of a Closely Related Language. In Human Language Technologies - The Baltic Perspective - Proceedings of the Fifth International Conference Baltic HLT 2012, volume 247 of Frontiers in AI and Applications, pages 58-65, Amsterdam, Netherlands, October 2012. IOS Press."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADA-9"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "WMT"
+        },
+        {
+            "name": "test data"
+        },
+        {
+            "name": "Slovak"
+        }
+    ],
+    "title": [
+        "WMT 2011 Testing Set"
+    ],
+    "url": ""
+}

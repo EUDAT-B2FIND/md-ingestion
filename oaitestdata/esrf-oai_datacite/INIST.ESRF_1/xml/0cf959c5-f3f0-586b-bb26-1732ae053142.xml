@@ -1,0 +1,135 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:14660922</identifier>
+    <datestamp>2018-04-12T06:57:11Z</datestamp>
+    <setSpec>INIST</setSpec>
+    <setSpec>INIST.ESRF</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.1/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.1/ http://schema.datacite.org/oai/oai-1.1/oai.xsd">
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>INIST.ESRF</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.15151/ESRF-ES-95600596</identifier>
+          <creators>
+            <creator>
+              <creatorName>Oded LIVNAH</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Yael DOMOVICH</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Nathan NELSON</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Reuven WIENER</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Ron DISKIN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Deborah FASS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Moshe DESSAU</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Meytal LANDAU</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Tami KHAZMA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Hadas COHEN-DVASHI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Maayan SUISSA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Nimrod GOLAN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Daniel KLAIMAN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Orly AVRAHAM</creatorName>
+            </creator>
+            <creator>
+              <creatorName>PRASANTH PADALA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Alexander ROUVINSKI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Shalev GIHAZ</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Batel DERI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>ARIEL BEN BASSAT</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Adi DAYAN FRENKEL</creatorName>
+            </creator>
+            <creator>
+              <creatorName>juana BANA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>HUSEIN BOUZ</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Guy LEBEL</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Michael SPORNY</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Shira COHEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Fadi GABARA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Yizhaq ENGELBERG</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Stefan ILIC</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Sigal Yoli NETZER-EL</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Barak AKABAYOV</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Dvir HARRIS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Gabriel JAVITT</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Einav TAYEB-FLIGELMAN</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>THE ISRAELI BAG</title>
+          </titles>
+          <subjects>
+            <subject subjectScheme="Proposal Type Description">Macromolecular Crystallography</subject>
+            <subject subjectScheme="Proposal">MX-1997</subject>
+            <subject subjectScheme="instrument">id30b</subject>
+          </subjects>
+          <publisher>European Synchrotron Radiation Facility</publisher>
+          <dates>
+            <date dateType="Collected">2018-04-12</date>
+          </dates>
+          <publicationYear>2021</publicationYear>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Experiment Session</resourceType>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

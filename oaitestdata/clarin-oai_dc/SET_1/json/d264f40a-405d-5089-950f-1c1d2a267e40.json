@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 435 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1848",
+    "MetadataAccess": [
+        "oai:ota:oucs:1848"
+    ],
+    "PublicationTimestamp": "1880-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1880"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Trollope, Anthony, 1815-1882"
+    ],
+    "fulltext": "oai:ota:oucs:1848;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/1848.xml;Dr. Wortle's school / by Anthony Trollope;Trollope, Anthony, 1815-1882;1880;text_and_corpus_linguistics;Novels -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 435 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d264f40a-405d-5089-950f-1c1d2a267e40",
+    "oai_identifier": [
+        "oai:ota:oucs:1848"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Dr. Wortle's school / by Anthony Trollope"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1848.xml"
+}

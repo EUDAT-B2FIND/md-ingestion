@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "M. Gr\u00f6ll"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149591",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149591"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CE1-9",
+    "PublicationTimestamp": "1791-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1791"
+    ],
+    "Publisher": [
+        "M. Gr\u00f6ll"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/4505"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Jezierski, Franciszek Salezy"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149591;2019-02-28T18:33:35Z;Niektore wyrazy porz\u0105dkiem abecad\u0142a zebrane y stosowanemi do rzeczy uwagami obia\u015bnione [...] Dzie\u0142o pogrobowe przez [...] napisane [...].;Jezierski, Franciszek Salezy;ilo\u015b\u0107 skan\u00f3w: 157 ; sygn. St-120;M. Gr\u00f6ll;1791;starodruk;application/xml;clarind-uds:poldilemma-149591;hdl:11858/00-246C-0000-0023-8CE1-9;pol;http://pbc.biaman.pl/Content/4505;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dc967bac-85f4-57d6-8094-db4132e12622",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 157 ; sygn. St-120"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-149591"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        "Niektore wyrazy porz\u0105dkiem abecad\u0142a zebrane y stosowanemi do rzeczy uwagami obia\u015bnione [...] Dzie\u0142o pogrobowe przez [...] napisane [...]."
+    ],
+    "url": ""
+}

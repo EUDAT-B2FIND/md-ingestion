@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(7 files : total of ca. 1.6 MB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2093",
+    "MetadataAccess": [
+        "oai:ota:oucs:2093"
+    ],
+    "PublicationTimestamp": "1777-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1777"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Newpapers",
+        "Anthologies",
+        "Linguistic corpora"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:2093;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2093.xml;New York newspaper advertisements and news items : 1777-1779;1777-1779;text_and_corpus_linguistics;News Papers -- United States -- 18th century;Linguistic analysis (Linguistics);Anthologies -- United States -- 20th century;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;text/sgml;(7 files : total of ca. 1.6 MB);Text;Newpapers;Anthologies;Linguistic corpora;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "646d383f-73f5-5a90-8fab-6fe531aa2e6c",
+    "oai_identifier": [
+        "oai:ota:oucs:2093"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "News Papers -- United States -- th century"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        },
+        {
+            "name": "Anthologies -- United States -- th century"
+        }
+    ],
+    "title": [
+        "New York newspaper advertisements and news items : 1777-1779"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2093.xml"
+}

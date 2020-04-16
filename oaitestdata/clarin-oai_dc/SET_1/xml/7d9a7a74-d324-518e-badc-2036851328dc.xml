@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1511</identifier>
+    <datestamp>2016-04-06T16:39:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Teaching Dutch in primary and secondary education: a video collection</dc:title>
+      <dc:creator>Dutch Language Union</dc:creator>
+      <dc:subject>lessons</dc:subject>
+      <dc:description>"Teaching Dutch in primary and secondary education: a video collection" is a collection of approx. 80 hours of filmed lessons in Dutch and Flemish primary and secondary schools. The lessons were collected in a searchable database and they were enriched with metadata and annotations.</dc:description>
+      <dc:date>2014</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1511</dc:identifier>
+      <dc:language>nld</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Dutch-Flemish HLT Agency</dc:publisher>
+      <dc:source>http://tst-centrale.org/nl/producten/corpora/onderwijs-nederlands-in-beeld-onib/6-91</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

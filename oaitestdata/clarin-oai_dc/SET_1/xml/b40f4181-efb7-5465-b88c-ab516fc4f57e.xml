@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/46</identifier>
+    <datestamp>2014-10-24T10:04:15Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>WCRFT Webservice (2014-10-24)</dc:title>
+      <dc:creator>Walkowiak, Tomasz</dc:creator>
+      <dc:subject>tagger</dc:subject>
+      <dc:subject>weblicht</dc:subject>
+      <dc:description>Webservice for Weblicht</dc:description>
+      <dc:date>2014-10-24</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/46</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroclaw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/redmine/projects/wcrft/wiki</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

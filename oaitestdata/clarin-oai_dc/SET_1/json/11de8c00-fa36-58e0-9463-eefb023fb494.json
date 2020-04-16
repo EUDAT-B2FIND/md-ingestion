@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "University of Oxford Text Archive",
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3115",
+    "MetadataAccess": [
+        "oai:ota:oucs:3115"
+    ],
+    "PublicationTimestamp": "1584-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1584"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hakluyt, Richard, 1552?-1616"
+    ],
+    "fulltext": "oai:ota:oucs:3115;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3115.xml;Discourse of Western Planting;A particuler discourse concerning the greate necessitie and manifolde commodyties that are like to growe to this realme of Englande by the westerne discoueries lately attempted, written in the yere 1584 : known as discourse of western planting;Hakluyt, Richard, 1552?-1616;not after: 1584;text_and_corpus_linguistics;America -- Discovery and exploration -- English;eng;Oxford Text Archive, University of Oxford;University of Oxford Text Archive;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "11de8c00-fa36-58e0-9463-eefb023fb494",
+    "oai_identifier": [
+        "oai:ota:oucs:3115"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "America -- Discovery exploration -- English"
+        }
+    ],
+    "title": [
+        "Discourse of Western Planting",
+        "A particuler discourse concerning the greate necessitie and manifolde commodyties that are like to growe to this realme of Englande by the westerne discoueries lately attempted, written in the yere 1584 : known as discourse of western planting"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3115.xml"
+}

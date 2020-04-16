@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1d9fe90acb7811e1a404080027e73ea241d3e2b7fb3c411481d3c23b787f8072",
+    "MetadataAccess": [
+        "1d9fe90acb7811e1a404080027e73ea241d3e2b7fb3c411481d3c23b787f8072"
+    ],
+    "PublicationTimestamp": "2012-11-28T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "1d9fe90acb7811e1a404080027e73ea241d3e2b7fb3c411481d3c23b787f8072;2018-11-15T16:39:29Z;lexicalConceptualResource;lexicalConceptualResource:ontology;Geo-Net-PT 02;Geo-Net-PT 02 is a public Geospatial Ontology of Portugal (see Chaves et al., 2007), a computational resource (see Rodrigues et al., 2006 and Rodrigues, 2009) for applications demanding geographic information about Portugal, and contains 701,209 concepts stored in a GKB system, most of them administrative features and place names. Some of these concepts have additional types to ease the reuse in the Web of Data: 390,664 administrative and physical features and footprints are classified as geo:SpatialThing and 23,666 network features are classified as sioc:Space. Geo-Net-PT 02 identifies 22,980 owners of domains, which are classified as sioc:User instances. The administrative and physical features are classified by 81 feature types. Postal code, street layout and settlement are the most common feature types found in the geo-administrative domain. Hydrography and touristic resources, such as museums and hotels, are the most common feature types found in the geo-physical domain.\nThe Geo-Net-PT 02 is an extension to the Geo-Net-PT 01 ontology presented in Chaves et al. (2005). It respects the recommended international standards for publishing ontologies (for more about the resource, see http://dmir.inesc-id.pt/project/Geo-Net-PT_02_in_English and Lopez-Pellicer et al. (2010).\nThis resource was created by the XLDB Team of the University of Lisbon, Faculty of Sciences, under the GREASE (Geographic Reasoning for Search Engines)1 project (see Lopez-Pellicer et al., 2009), and contains all the geographic administrative data of Portugal (distritos, concelhos and ruas, among others), and domains of websites of the Portuguese Web and their geographic scopes. Currently, it is maintained by the REACTION project (http://dmir.inesc-id.pt/project/Reaction).\nThe resource also provides an alignment with Yahoo! GeoPlanet (TM) (see Ferreira et al., 2010), between features in the Administrative with \"Where On Earth Identifiers (WOEID) from GeoPlanet (TM), and 195 Portuguese news articles with each identified toponym mapped with geographic concepts. ;2012-11-28",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c18b46a4-08d6-5712-8666-e645c67d64ec",
+    "notes": [
+        "Geo-Net-PT 02 is a public Geospatial Ontology of Portugal (see Chaves et al., 2007), a computational resource (see Rodrigues et al., 2006 and Rodrigues, 2009) for applications demanding geographic information about Portugal, and contains 701,209 concepts stored in a GKB system, most of them administrative features and place names. Some of these concepts have additional types to ease the reuse in the Web of Data: 390,664 administrative and physical features and footprints are classified as geo:SpatialThing and 23,666 network features are classified as sioc:Space. Geo-Net-PT 02 identifies 22,980 owners of domains, which are classified as sioc:User instances. The administrative and physical features are classified by 81 feature types. Postal code, street layout and settlement are the most common feature types found in the geo-administrative domain. Hydrography and touristic resources, such as museums and hotels, are the most common feature types found in the geo-physical domain.\nThe Geo-Net-PT 02 is an extension to the Geo-Net-PT 01 ontology presented in Chaves et al. (2005). It respects the recommended international standards for publishing ontologies (for more about the resource, see http://dmir.inesc-id.pt/project/Geo-Net-PT_02_in_English and Lopez-Pellicer et al. (2010).\nThis resource was created by the XLDB Team of the University of Lisbon, Faculty of Sciences, under the GREASE (Geographic Reasoning for Search Engines)1 project (see Lopez-Pellicer et al., 2009), and contains all the geographic administrative data of Portugal (distritos, concelhos and ruas, among others), and domains of websites of the Portuguese Web and their geographic scopes. Currently, it is maintained by the REACTION project (http://dmir.inesc-id.pt/project/Reaction).\nThe resource also provides an alignment with Yahoo! GeoPlanet (TM) (see Ferreira et al., 2010), between features in the Administrative with \"Where On Earth Identifiers (WOEID) from GeoPlanet (TM), and 195 Portuguese news articles with each identified toponym mapped with geographic concepts. "
+    ],
+    "oai_identifier": [
+        "1d9fe90acb7811e1a404080027e73ea241d3e2b7fb3c411481d3c23b787f8072"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:ontology"
+    ],
+    "state": "active",
+    "title": [
+        "Geo-Net-PT 02"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Drukarnia J.K.Mci i Rzeczyplitey u XX. Scholarum Piarum"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-400",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-400"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D1A-3",
+    "PublicationTimestamp": "1768-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1768"
+    ],
+    "Publisher": [
+        "Drukarnia J.K.Mci i Rzeczyplitey u XX. Scholarum Piarum"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/400"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-400;2019-03-01T15:27:36Z;Konstytucye Seymu Extraordynaryinego w Warszawie, Roku MDCCLXVII. Dnia pi\u0105tego pa\u017adziernika z\u0142o\u017conego y zacz\u0119tego, a z Limitacyi y prorogacyi roku MDCCLXVIII. Dnia pi\u0105tego Marca, przy rozwi\u0105zaniu Konfederacyi Generalnych Koronney y Wielkiego Xi\u0119stwa Litewskiego zako\u0144czonego [...] ustanowione.;Konstytucja 1768 r.;Drukarnia J.K.Mci i Rzeczyplitey u XX. Scholarum Piarum;1768;starodruk;application/xml;clarind-uds:poldilemma-400;hdl:11858/00-246C-0000-0023-8D1A-3;pol;lat;http://pbc.biaman.pl/Content/400;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "03de6f64-dc62-58d6-82f3-1e1073f8e7d2",
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-400"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Konstytucja r."
+        }
+    ],
+    "title": [
+        "Konstytucye Seymu Extraordynaryinego w Warszawie, Roku MDCCLXVII. Dnia pi\u0105tego pa\u017adziernika z\u0142o\u017conego y zacz\u0119tego, a z Limitacyi y prorogacyi roku MDCCLXVIII. Dnia pi\u0105tego Marca, przy rozwi\u0105zaniu Konfederacyi Generalnych Koronney y Wielkiego Xi\u0119stwa Litewskiego zako\u0144czonego [...] ustanowione."
+    ],
+    "url": ""
+}

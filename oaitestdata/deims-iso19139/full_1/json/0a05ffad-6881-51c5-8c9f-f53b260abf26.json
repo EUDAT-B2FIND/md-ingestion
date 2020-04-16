@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "isabella.bertani@nemo.unipr.it"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0a05ffad-6881-51c5-8c9f-f53b260abf26",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Co-authorship on publications resulting from use of the dataset"
+    ],
+    "SpatialCoverage": "(44N-44N,10E-10E)",
+    "author": [
+        "Isabella Bertani"
+    ],
+    "fulltext": "6d7efd44-81cb-11e2-b534-005056ab003f;English;utf8;dataset;Isabella Bertani;LTER Europe;isabella.bertani@nemo.unipr.it;pointOfContact;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;IT_SI001230_Lake Scuro_SRP_20130228;2018-09-24;publication;urn:ltereurope:inspire::9101:10278;Lago Scuro Parmense - Italy;Giampaolo Rossetti;LTER Europe;Viale G.P. Usberti 11A;Parma;PR;43100;IT;giampaolo.rossetti@unipr.it;pointOfContact;documentDigital;Dataset provides soluble reactive phosphorus (SRP) concentrations measured in Lake Scuro Parmense in 2012. Water samples were collected by means of a Ruttner bottle at different depths over the whole water column at the point of maximum depth of the lake. Samples were analysed spectrophotometrically according to Valderrama (1981).;completed;Giampaolo Rossetti;LTER Europe;Viale G.P. Usberti 11A;Parma;PR;43100;IT;giampaolo.rossetti@unipr.it;pointOfContact;Isabella Bertani;LTER Europe;isabella.bertani@nemo.unipr.it;pointOfContact;continual;Sampling frequency - sampling time span: monthly Sampling frequency - minimum sampling unit: bi-weekly;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;soluble reactive phosphorus;Permanent oligotrophic lakes, ponds and pools;LTER Controlled Vocabulary;Co-authorship on publications resulting from use of the dataset;The principal: Research has granted the access and use permission: Free for access and use upon request;The principal: Public has granted the access and use permission: Other restrictions according to rules defined in intellectual rights;The principal: has granted the access and use permission: Research;eng;environment;10.047000000000;10.044590000000;44.381290000000;44.382520000000;1527.00;1527;urn:ogc:def:crs:EPSG;MSL height;Not specific to any location or epoch.;Hydrography.;ground condition;1986-05-21;2009-10-20;http://www.dsa.unipr.it/rossetti/metadata.htm;WWW:LINK-1.0-http--link;Northern Apennine Lakes DatasetLake Scuro Reactive phosphorus;http://www.dsa.unipr.it/rossetti/metadata.htm;WWW:LINK-1.0-http--link;Northern Apennine Lakes DatasetLake Scuro Reactive phosphorus;http://sk.ise.cnr.it/observations/sos/kvp?service=SOS&version=2.0.0&request=GetObservation&offering=offering:http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/procedure/noManufacturerDeclared/noModelDeclared/noSerialNumberDeclared/20150209122000001/observations&observedProperty=http://vocab.nerc.ac.uk/collection/P02/current/TPHS/&procedure=http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/procedure/noManufacturerDeclared/noModelDeclared/noSerialNumberDeclared/20150209122000001&featureOfInterest=http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/foi/SSF/SP/EPSG:4326/44.381805559999997/10.045638889999999&MergeObservationsIntoDataArray=true;WWW:DOWNLOAD-1.0-http--download;Northern Apennine Lakes DatasetLake Scuro Reactive phosphorus;http://sk.ise.cnr.it/observations/sos/kvp?service=SOS&version=2.0.0&request=GetObservation&offering=offering:http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/procedure/noManufacturerDeclared/noModelDeclared/noSerialNumberDeclared/20150209122000001/observations&observedProperty=http://vocab.nerc.ac.uk/collection/P02/current/TPHS/&procedure=http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/procedure/noManufacturerDeclared/noModelDeclared/noSerialNumberDeclared/20150209122000001&featureOfInterest=http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/foi/SSF/SP/EPSG:4326/44.381805559999997/10.045638889999999&MergeObservationsIntoDataArray=true;WWW:DOWNLOAD-1.0-http--download;Northern Apennine Lakes DatasetLake Scuro Reactive phosphorus;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;Method description: Valderrama J.C., 1981. The simultaneous analysis of total nitrogen and total phosphorus in natural waters. Mar. Chem. 10: 109-122.. Method URL: . Instrumentation: Ruttner bottle;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0a05ffad-6881-51c5-8c9f-f53b260abf26",
+    "notes": [
+        "Dataset provides soluble reactive phosphorus (SRP) concentrations measured in Lake Scuro Parmense in 2012. Water samples were collected by means of a Ruttner bottle at different depths over the whole water column at the point of maximum depth of the lake. Samples were analysed spectrophotometrically according to Valderrama (1981)."
+    ],
+    "oai_identifier": [
+        "0a05ffad-6881-51c5-8c9f-f53b260abf26"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[10.047000000000,44.381290000000],[10.047000000000,44.382520000000],[10.044590000000,44.382520000000],[10.044590000000,44.381290000000],[10.047000000000,44.381290000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "soluble reactive phosphorus"
+        },
+        {
+            "name": "Permanent oligotrophic lakes"
+        },
+        {
+            "name": "ponds pools"
+        }
+    ],
+    "title": [
+        "IT_SI001230_Lake Scuro_SRP_20130228"
+    ],
+    "url": "http://sk.ise.cnr.it/observations/sos/kvp?service=SOS&version=2.0.0&request=GetObservation&offering=offering:http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/procedure/noManufacturerDeclared/noModelDeclared/noSerialNumberDeclared/20150209122000001/observations&observedProperty=http://vocab.nerc.ac.uk/collection/P02/current/TPHS/&procedure=http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/procedure/noManufacturerDeclared/noModelDeclared/noSerialNumberDeclared/20150209122000001&featureOfInterest=http://sp7.irea.cnr.it/sensors/sk.ise.cnr.it/foi/SSF/SP/EPSG:4326/44.381805559999997/10.045638889999999&MergeObservationsIntoDataArray=true"
+}

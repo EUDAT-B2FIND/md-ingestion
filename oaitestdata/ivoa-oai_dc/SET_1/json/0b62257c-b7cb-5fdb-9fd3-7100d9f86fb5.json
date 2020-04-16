@@ -1,0 +1,44 @@
+{
+    "Contact": [
+        "The GAVO DC team"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://edu.euro-vo.org/extern/asterics_herbigstars",
+    "PublicationTimestamp": "2018-12-21T17:01:26Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "The GAVO DC team"
+    ],
+    "RelatedIdentifier": [
+        "ivo://edu.euro-vo.org/extern/asterics_herbigstars"
+    ],
+    "author": [
+        "Baines, D."
+    ],
+    "fulltext": "ivo://edu.euro-vo.org/extern/asterics_herbigstars;2018-12-21T17:01:26Z;Classifying the SEDs of Herbig Ae/Be stars;ivo://edu.euro-vo.org/extern/asterics_herbigstars;Baines, D.; The overall goal of this tutorial is to become familiar with VOSpec.\n        For that, we are going to build the Spectral Energy Distribution (SED)\n        of two Herbig Ae/Be stars, compare them and categorise them as group 1\n        or group 2 Herbig Ae/Be stars.;The GAVO DC team",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0b62257c-b7cb-5fdb-9fd3-7100d9f86fb5",
+    "notes": [
+        " The overall goal of this tutorial is to become familiar with VOSpec.\n        For that, we are going to build the Spectral Energy Distribution (SED)\n        of two Herbig Ae/Be stars, compare them and categorise them as group 1\n        or group 2 Herbig Ae/Be stars."
+    ],
+    "oai_identifier": [
+        "ivo://edu.euro-vo.org/extern/asterics_herbigstars"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        " The overall goal of this tutorial is to become familiar with VOSpec.\n        For that, we are going to build the Spectral Energy Distribution (SED)\n        of two Herbig Ae/Be stars, compare them and categorise them as group 1\n        or group 2 Herbig Ae/Be stars."
+    ]
+}

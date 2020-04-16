@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=9047a214568c11e2a2aa782bcb074135b50e3cb8f86b4a2ba5dc7d4c54eb0600",
+    "MetadataAccess": [
+        "9047a214568c11e2a2aa782bcb074135b50e3cb8f86b4a2ba5dc7d4c54eb0600"
+    ],
+    "PublicationTimestamp": "2015-12-07T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "9047a214568c11e2a2aa782bcb074135b50e3cb8f86b4a2ba5dc7d4c54eb0600;2018-11-15T16:40:00Z;toolService;toolService:tool;SenseClusters;SenseClusters is a package of (mostly) Perl programs that allows a user to cluster similar contexts together using unsupervised knowledge-lean methods.;2015-12-07",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "016e31db-0e31-5266-99b9-c0e36468b441",
+    "notes": [
+        "SenseClusters is a package of (mostly) Perl programs that allows a user to cluster similar contexts together using unsupervised knowledge-lean methods."
+    ],
+    "oai_identifier": [
+        "9047a214568c11e2a2aa782bcb074135b50e3cb8f86b4a2ba5dc7d4c54eb0600"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "SenseClusters"
+    ]
+}

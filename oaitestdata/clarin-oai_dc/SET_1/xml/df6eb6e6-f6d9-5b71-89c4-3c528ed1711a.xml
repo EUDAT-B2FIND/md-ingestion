@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4914-D</identifier>
+    <datestamp>2017-11-09T14:20:35Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Prague Dependency Treebank of Spoken Language (PDTSL) 0.5</dc:title>
+      <dc:creator>Haji&#269;, Jan</dc:creator>
+      <dc:creator>Pajas, Petr</dc:creator>
+      <dc:creator>Mare&#269;ek, David</dc:creator>
+      <dc:creator>Mikulov&#225;, Marie</dc:creator>
+      <dc:creator>Ure&#353;ov&#225;, Zde&#328;ka</dc:creator>
+      <dc:creator>Podvesk&#253;, Petr</dc:creator>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>spoken language</dc:subject>
+      <dc:description>The first edition of a speech corpus with a speech reconstruction layer (edited transcript).&#13;
+&#13;
+The project of speech reconstruction of Czech and English has been started at UFAL together with the PIRE project in 2005, and has gradually grown from ideas to (first) annotation specification, annotation software and actual annotation. It is part of the Prague Dependency Treebank family of annotated corpus resources and tools, to which it adds the spoken language layer(s).</dc:description>
+      <dc:date>2009-11-02T10:40:55Z</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-4914-D</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>PDTSL</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-pdtsl</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/pdtsl</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(1 file : ca. 97.4 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0665",
+    "MetadataAccess": [
+        "oai:ota:oucs:0665"
+    ],
+    "PublicationTimestamp": "1590-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1590"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Tarlton, Richard, d. 1588"
+    ],
+    "fulltext": "oai:ota:oucs:0665;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0665.xml; Tarlton's Newes out of Purgatorie;Tarlton, Richard, d. 1588;1590;text_and_corpus_linguistics;Satires -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 97.4 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e7552752-c1f4-5ffe-98b8-843e4695576e",
+    "oai_identifier": [
+        "oai:ota:oucs:0665"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Satires -- England -- th century"
+        }
+    ],
+    "title": [
+        " Tarlton's Newes out of Purgatorie"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0665.xml"
+}

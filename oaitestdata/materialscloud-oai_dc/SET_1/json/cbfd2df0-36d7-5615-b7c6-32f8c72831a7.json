@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0014/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0014/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0014/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-04-23T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Unal, Gozde",
+        "Horvacanin,  Izabela",
+        "Ozcelik,  Furkan",
+        "Mareska,  Vaclav",
+        "Spiwok, Vojtech",
+        "Trapl, Dalibor"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0014/v1;2019-06-12Z;DOI;Dataset;Trapl, Dalibor;Horvacanin,  Izabela;Mareska,  Vaclav;Ozcelik,  Furkan;Unal, Gozde;Spiwok, Vojtech;Approximation of Collective Variables by anncolvar;Materials Cloud;2019-04-23;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;metadynamics;artificial neural networks;collective variable;doi:10.24435/materialscloud:2019.0014/v1;https://archive.materialscloud.org/2019.0014/v1;en;Biomolecular simulations are computationally expensive. This limits their application in drug or protein design and related fields. Several methods have been developed to address this problem. These methods often use an artificial force or potential acting on selected degrees of freedom known as collective variables. This requires explicit calculation of a collective variable (and its derivatives) from molecular structure. For collective variables that cannot be calculated explicitly or such calculations is slow we developed anncolvar package (https://github.com/spiwokv/anncolvar). This package approximates collective variables using artificial neural networks. It was tested on Isomap low dimensional representation of cyclooctane derivative or solvent-accessible surface area of Trp-cage miniprotein.\n<br/>\n",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "cbfd2df0-36d7-5615-b7c6-32f8c72831a7",
+    "notes": [
+        "Biomolecular simulations are computationally expensive. This limits their application in drug or protein design and related fields. Several methods have been developed to address this problem. These methods often use an artificial force or potential acting on selected degrees of freedom known as collective variables. This requires explicit calculation of a collective variable (and its derivatives) from molecular structure. For collective variables that cannot be calculated explicitly or such calculations is slow we developed anncolvar package (https://github.com/spiwokv/anncolvar). This package approximates collective variables using artificial neural networks. It was tested on Isomap low dimensional representation of cyclooctane derivative or solvent-accessible surface area of Trp-cage miniprotein.\n<br/>\n"
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0014/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "metadynamics"
+        },
+        {
+            "name": "artificial neural networks"
+        },
+        {
+            "name": "collective variable"
+        }
+    ],
+    "title": [
+        "Approximation of Collective Variables by anncolvar"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0014/v1"
+}

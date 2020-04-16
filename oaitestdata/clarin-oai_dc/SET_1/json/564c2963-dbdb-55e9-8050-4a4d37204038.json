@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/16",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/16"
+    ],
+    "PID": "http://hdl.handle.net/11321/16",
+    "PublicationTimestamp": "2014-01-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Marci\u0144czuk, Micha\u0142",
+        "Maziarz, Marek",
+        "Radziszewski, Adam",
+        "Broda, Bartosz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/16;2017-11-08T09:25:02Z;hdl_11321_3;hdl_11321_4;Polish Corpus of Wroc\u0142aw University of Technology 1.1;Korpus J\u0119zyka Polskiego Politechniki Wroc\u0142awskiej (KPWr) 1.1;Maziarz, Marek;Broda, Bartosz;Marci\u0144czuk, Micha\u0142;Radziszewski, Adam;KPWr (Polish Corpus of Wroc\u0142aw University of Technology, pl. Korpus J\u0119zyka Polskiego Politechniki Wroc\u0142awskiej) is a corpus of written and spoken documents available on the Creative Common license. The texts are divided into 14 categories (blogs, science, stenographic recordings, etc.). The documents are annotated on the level of chunks and selected predicate-argument relations, named entities, relations between named entities, anaphora relations and word senses.;2014-01-01;corpus;http://hdl.handle.net/11321/16;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/narzedzia-i-zasoby/zasoby/kpwr",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "564c2963-dbdb-55e9-8050-4a4d37204038",
+    "notes": [
+        "KPWr (Polish Corpus of Wroc\u0142aw University of Technology, pl. Korpus J\u0119zyka Polskiego Politechniki Wroc\u0142awskiej) is a corpus of written and spoken documents available on the Creative Common license. The texts are divided into 14 categories (blogs, science, stenographic recordings, etc.). The documents are annotated on the level of chunks and selected predicate-argument relations, named entities, relations between named entities, anaphora relations and word senses."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/16"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Polish Corpus of Wroc\u0142aw University of Technology 1.1",
+        "Korpus J\u0119zyka Polskiego Politechniki Wroc\u0142awskiej (KPWr) 1.1"
+    ],
+    "url": ""
+}

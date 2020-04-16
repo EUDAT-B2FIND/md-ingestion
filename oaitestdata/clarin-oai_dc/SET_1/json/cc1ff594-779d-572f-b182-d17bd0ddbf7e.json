@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=3694294cfb6311e1a2aa782bcb074135dffcbbcce20a41e4b23652e08e0bab65",
+    "MetadataAccess": [
+        "3694294cfb6311e1a2aa782bcb074135dffcbbcce20a41e4b23652e08e0bab65"
+    ],
+    "PublicationTimestamp": "2015-12-14T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "3694294cfb6311e1a2aa782bcb074135dffcbbcce20a41e4b23652e08e0bab65;2018-11-15T16:39:19Z;toolService;toolService:tool;LX-Chunker;The present tool, that was built to deal with specific issues concerning orthographic conventions adopted for Portuguese, marks sentence boundaries with <s>\u00e2\u0080\u00a6</s>, and paragraph boundaries with <p>\u00e2\u0080\u00a6</p>. Unwraps sentences split over different lines.\nA f-score of 99.94% was obtained when testing on a 12,000 sentence corpus accurately hand tagged with respect to sentence and paragraph boundaries.\nLX-Chunker was developed and is maintained at University of Lisbon by the NLX-Natural Language and Speech Group of the Department of Informatics.\n;2015-12-14",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cc1ff594-779d-572f-b182-d17bd0ddbf7e",
+    "notes": [
+        "The present tool, that was built to deal with specific issues concerning orthographic conventions adopted for Portuguese, marks sentence boundaries with <s>\u00e2\u0080\u00a6</s>, and paragraph boundaries with <p>\u00e2\u0080\u00a6</p>. Unwraps sentences split over different lines.\nA f-score of 99.94% was obtained when testing on a 12,000 sentence corpus accurately hand tagged with respect to sentence and paragraph boundaries.\nLX-Chunker was developed and is maintained at University of Lisbon by the NLX-Natural Language and Speech Group of the Department of Informatics.\n"
+    ],
+    "oai_identifier": [
+        "3694294cfb6311e1a2aa782bcb074135dffcbbcce20a41e4b23652e08e0bab65"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "LX-Chunker"
+    ]
+}

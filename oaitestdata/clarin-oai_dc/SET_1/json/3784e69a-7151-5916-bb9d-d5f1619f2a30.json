@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "[S. n.]"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-38",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-38"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D19-5",
+    "PublicationTimestamp": "1754-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1754"
+    ],
+    "Publisher": [
+        "[S. n.]"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/38"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-38;2019-03-01T15:25:34Z;Akta publiczne do interessu ordynacyi Ostrogskiey nale\u017c\u0105ce;Ostrogscy;Polska 18 w.;ilo\u015b\u0107 skan\u00f3w: 196 ; sygn. St-303;[S. n.];1754;starodruk;application/xml;clarind-uds:poldilemma-38;hdl:11858/00-246C-0000-0023-8D19-5;pol;lat;http://pbc.biaman.pl/Content/38;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3784e69a-7151-5916-bb9d-d5f1619f2a30",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 196 ; sygn. St-303"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-38"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Ostrogscy"
+        },
+        {
+            "name": "Polska w."
+        }
+    ],
+    "title": [
+        "Akta publiczne do interessu ordynacyi Ostrogskiey nale\u017c\u0105ce"
+    ],
+    "url": ""
+}

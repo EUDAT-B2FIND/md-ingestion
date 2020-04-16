@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00197L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17979318",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17979318"
+    ],
+    "PublicationTimestamp": "2019-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Laur, Sven"
+    ],
+    "fulltext": "oai:oai.datacite.org:17979318;2019-01-23T22:00:57Z;ESTDOI;ESTDOI.KEEL;Mallip\u00f5hine faktituletaja;Laur, Sven;Center of Estonian Language Resources;2019;Issued: 2019-01-10;Updated: 2019-01-10;doi:10.15155/1-00-0000-0000-0000-00197L;Abstract;Tarkvarakomponent suudab vabatekstidest \u00f5ppida erinevaid seoseid ning nende abil eraldada struktureeritud infot. Seosed v\u00f5ivad olla lihtsad nagu isikunimed ja organisatsioonid v\u00f5i keerulisemad nagu firmade peakontorite asukohad.\n\nMeetod vajab sisendiks korpust, milles on meid huvitav seos m\u00e4rgendatud. Seej\u00e4rel leitakse automaatselt sobivad mallid ja koostatakse mudel, mis antud seost v\u00f5imalikult h\u00e4sti tuvastaksid. Tulemusena saame m\u00e4rgendamata vabatekstidest leida uusi seosele vastavaid n\u00e4iteid.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "054f10e9-915c-523b-b04d-4fe1d8fb9238",
+    "notes": [
+        "Abstract",
+        "Tarkvarakomponent suudab vabatekstidest \u00f5ppida erinevaid seoseid ning nende abil eraldada struktureeritud infot. Seosed v\u00f5ivad olla lihtsad nagu isikunimed ja organisatsioonid v\u00f5i keerulisemad nagu firmade peakontorite asukohad.\n\nMeetod vajab sisendiks korpust, milles on meid huvitav seos m\u00e4rgendatud. Seej\u00e4rel leitakse automaatselt sobivad mallid ja koostatakse mudel, mis antud seost v\u00f5imalikult h\u00e4sti tuvastaksid. Tulemusena saame m\u00e4rgendamata vabatekstidest leida uusi seosele vastavaid n\u00e4iteid."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17979318"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Mallip\u00f5hine faktituletaja"
+    ],
+    "url": ""
+}

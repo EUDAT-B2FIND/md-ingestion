@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "PWR Test",
+        "Wro"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/239",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/239"
+    ],
+    "PID": "http://hdl.handle.net/11321/239",
+    "PublicationTimestamp": "2015-10-22T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "PWR Test",
+        "Wro"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Tomasz, Naskr\u0119t",
+        "t"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/239;2016-01-25T11:07:40Z;hdl_11321_3;hdl_11321_4;Test cmdi;Tomasz, Naskr\u0119t;t;test;test;2015-10-22;corpus;http://hdl.handle.net/11321/239;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;text/plain;downloadable_files_count: 1;PWR Test;Wro",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c356f87d-a592-537e-8f89-12f84573d95c",
+    "notes": [
+        "test"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/239"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "test"
+        }
+    ],
+    "title": [
+        "Test cmdi"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "NASA/IPAC Infrared Science Archive"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://irsa.ipac/Spitzer/Catalog/GLIMPSE/GLM3DEp1Archive",
+    "PublicationTimestamp": "2016-02-05T15:15:06Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "NASA/IPAC Infrared Science Archive"
+    ],
+    "RelatedIdentifier": [
+        "ivo://irsa.ipac/Spitzer/Catalog/GLIMPSE/GLM3DEp1Archive"
+    ],
+    "ResourceType": [
+        "Catalog"
+    ],
+    "author": [
+        "GLIMPSE team"
+    ],
+    "fulltext": "ivo://irsa.ipac/Spitzer/Catalog/GLIMPSE/GLM3DEp1Archive;2016-02-05T15:15:06Z;GLIMPSE 3D Epoch 1 Archive;ivo://irsa.ipac/Spitzer/Catalog/GLIMPSE/GLM3DEp1Archive;NASA/IPAC Infrared Science Archive;GLIMPSE team;Milky Way disk;GLIMPSE3D is the third in a series of large area projects to map selected regions of the Galactic plane using the Spitzer Space Telescope Infrared Array Camera (IRAC). GLIMPSEI1 covered the Galactic plane from |l| = 10\u00e2\u0097\u00a6 to 65\u00e2\u0097\u00a6 and |b| < 1\u00e2\u0097\u00a6; GLIMPSEII filled in the inner 20 degrees of the Galactic plane, |l| < 10\u00e2\u0097\u00a6, with vertical extensions up to \u00c2\u00b11.5\u00e2\u0097\u00a6 for |l| =5\u00e2\u0097\u00a6to 2\u00e2\u0097\u00a6, and up to \u00c2\u00b12\u00e2\u0097\u00a6 from |l| =2\u00e2\u0097\u00a6to 0\u00e2\u0097\u00a6. GLIMPSE3D adds vertical extensions, generally up to |b| < 3\u00e2\u0097\u00a6, but up to |b| < 4.2\u00e2\u0097\u00a6 in the center of the Galaxy. The goal of this coverage is to provide data to study the vertical stellar and interstellar\n\n        The GLIMPSE3D Archive (GLM3DA or the \u00e2\u0080\u009cArchive\u00e2\u0080\u009d) consists of point sources with a signal- to-noise > 5 in at least one band and less stringent selection critera than the Catalog. The photometric uncertainty is typically < 0.3 mag. The GLIMPSE3D Catalog is a subset of the Archive, but note that the entries for a particular source might not be the same due to additional nulling of magnitudes in the Catalog because of the more stringent requirements.;Catalog",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0acbe0cf-205e-5838-a05a-8ec32631eafa",
+    "notes": [
+        "GLIMPSE3D is the third in a series of large area projects to map selected regions of the Galactic plane using the Spitzer Space Telescope Infrared Array Camera (IRAC). GLIMPSEI1 covered the Galactic plane from |l| = 10\u00e2\u0097\u00a6 to 65\u00e2\u0097\u00a6 and |b| < 1\u00e2\u0097\u00a6; GLIMPSEII filled in the inner 20 degrees of the Galactic plane, |l| < 10\u00e2\u0097\u00a6, with vertical extensions up to \u00c2\u00b11.5\u00e2\u0097\u00a6 for |l| =5\u00e2\u0097\u00a6to 2\u00e2\u0097\u00a6, and up to \u00c2\u00b12\u00e2\u0097\u00a6 from |l| =2\u00e2\u0097\u00a6to 0\u00e2\u0097\u00a6. GLIMPSE3D adds vertical extensions, generally up to |b| < 3\u00e2\u0097\u00a6, but up to |b| < 4.2\u00e2\u0097\u00a6 in the center of the Galaxy. The goal of this coverage is to provide data to study the vertical stellar and interstellar\n\n        The GLIMPSE3D Archive (GLM3DA or the \u00e2\u0080\u009cArchive\u00e2\u0080\u009d) consists of point sources with a signal- to-noise > 5 in at least one band and less stringent selection critera than the Catalog. The photometric uncertainty is typically < 0.3 mag. The GLIMPSE3D Catalog is a subset of the Archive, but note that the entries for a particular source might not be the same due to additional nulling of magnitudes in the Catalog because of the more stringent requirements."
+    ],
+    "oai_identifier": [
+        "ivo://irsa.ipac/Spitzer/Catalog/GLIMPSE/GLM3DEp1Archive"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Milky Way disk"
+        }
+    ],
+    "title": [
+        "GLIMPSE3D is the third in a series of large area projects to map selected regions of the Galactic plane using the Spitzer Space Telescope Infrared Array Camera (IRAC). GLIMPSEI1 covered the Galactic plane from |l| = 10\u00e2\u0097\u00a6 to 65\u00e2\u0097\u00a6 and |b| < 1\u00e2\u0097\u00a6; GLIMPSEII filled in the inner 20 degrees of the Galactic plane, |l| < 10\u00e2\u0097\u00a6, with vertical extensions up to \u00c2\u00b11.5\u00e2\u0097\u00a6 for |l| =5\u00e2\u0097\u00a6to 2\u00e2\u0097\u00a6, and up to \u00c2\u00b12\u00e2\u0097\u00a6 from |l| =2\u00e2\u0097\u00a6to 0\u00e2\u0097\u00a6. GLIMPSE3D adds vertical extensions, generally up to |b| < 3\u00e2\u0097\u00a6, but up to |b| < 4.2\u00e2\u0097\u00a6 in the center of the Galaxy. The goal of this coverage is to provide data to study the vertical stellar and interstellar\n\n        The GLIMPSE3D Archive (GLM3DA or the \u00e2\u0080\u009cArchive\u00e2\u0080\u009d) consists of point sources with a signal- to-noise > 5 in at least one band and less stringent selection critera than the Catalog. The photometric uncertainty is typically < 0.3 mag. The GLIMPSE3D Catalog is a subset of the Archive, but note that the entries for a particular source might not be the same due to additional nulling of magnitudes in the Catalog because of the more stringent requirements."
+    ]
+}

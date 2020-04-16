@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00141L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:13445136",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:13445136"
+    ],
+    "PublicationTimestamp": "2017-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Laur, Sven"
+    ],
+    "fulltext": "oai:oai.datacite.org:13445136;2018-10-27T12:49:39Z;ESTDOI;ESTDOI.KEEL;EstNLTK morphological analysis;Laur, Sven;Center of Estonian Language Resources;2017;Issued: 2017-12-11;Updated: 2017-12-11;doi:10.15155/1-00-0000-0000-0000-00141L;Abstract;Estonian NLTK toolkit - morphological analysis for Estonian. Uses Vabamorf tagset. Takes unannotated text as input.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ab82086b-91d4-5357-82d2-217a9f77537d",
+    "notes": [
+        "Abstract",
+        "Estonian NLTK toolkit - morphological analysis for Estonian. Uses Vabamorf tagset. Takes unannotated text as input."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:13445136"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "EstNLTK morphological analysis"
+    ],
+    "url": ""
+}

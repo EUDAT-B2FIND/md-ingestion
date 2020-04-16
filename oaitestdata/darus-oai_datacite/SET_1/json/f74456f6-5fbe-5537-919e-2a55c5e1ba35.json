@@ -1,0 +1,24 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-506",
+    "MetadataAccess": [
+        "doi:10.18419/darus-506"
+    ],
+    "fulltext": "doi:10.18419/darus-506;2019-12-21T01:00:01Z;all;10.18419/darus-506;Iglezakis, Dorothea;Dorothea;Iglezakis;0000-0002-8524-0569;Universit\u00e4t Stuttgart;Reanalysis of FDM-Communities Data for Engineering;DaRUS;2019;Engineering;Social Sciences;Survey;Research Data Management;Engineering;FoKUS Team;Universit\u00e4t Stuttgart;2019-12-09;2019-12-20;10.5282/o-bib/2018H3S46-60;359704;292239;424426;213929;373361;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;text/tab-separated-values;application/pdf;application/pdf;application/vnd.ms-excel.sheet.macroEnabled.12;1.0;CC BY Waiver;Reanalysis (Content-analysis) of the user stories from the <a href=\"https://bwfdm.scc.kit.edu/cgi-bin/daten/\">FDMCommunities-Survey</a> originated from engineering researchers.;bwFDM-Communities - User Stories, filtered by subject.;BMBF;16FDM008",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "f74456f6-5fbe-5537-919e-2a55c5e1ba35",
+    "oai_identifier": [
+        "doi:10.18419/darus-506"
+    ],
+    "oai_set": [
+        "all"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

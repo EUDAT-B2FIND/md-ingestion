@@ -1,0 +1,40 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=30d4a088a35a11e1a404080027e73ea2ca727b99f24940f89f64d0fab8994f4d",
+    "MetadataAccess": [
+        "30d4a088a35a11e1a404080027e73ea2ca727b99f24940f89f64d0fab8994f4d"
+    ],
+    "PublicationTimestamp": "2015-12-10T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "30d4a088a35a11e1a404080027e73ea2ca727b99f24940f89f64d0fab8994f4d;2019-02-27T12:08:45Z;corpus;corpus:text;corpus:audio;corpus:text:audio;GREC;GREC is a semantically annotated corpus of 240 MEDLINE abstracts (167 on the subject of E. coli species and 73 on the subject of the Human species) which is intended for training IE systems and/or resources which are used to extract events from biomedical literature. ;2015-12-10",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "425af52a-ebbf-5c3a-a089-6d7912c3744e",
+    "notes": [
+        "GREC is a semantically annotated corpus of 240 MEDLINE abstracts (167 on the subject of E. coli species and 73 on the subject of the Human species) which is intended for training IE systems and/or resources which are used to extract events from biomedical literature. "
+    ],
+    "oai_identifier": [
+        "30d4a088a35a11e1a404080027e73ea2ca727b99f24940f89f64d0fab8994f4d"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text",
+        "corpus:audio",
+        "corpus:text:audio"
+    ],
+    "state": "active",
+    "title": [
+        "GREC"
+    ]
+}

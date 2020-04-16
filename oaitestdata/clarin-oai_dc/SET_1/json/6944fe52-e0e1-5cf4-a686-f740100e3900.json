@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "Centre for English Corpus Linguistics, Universit\u00e9 catholique de Louvain"
+    ],
+    "Contributor": [
+        "Granger, Sylviane"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-859",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-859"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-859",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Centre for English Corpus Linguistics, Universit\u00e9 catholique de Louvain"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-859;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;ICLE International Corpus of Learner English;Granger, Sylviane;over 3 million words of writing by learners of English from 14 different mother tongue backgrounds;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-859;eng;downloadable_files_count: 0;Centre for English Corpus Linguistics, Universit\u00e9 catholique de Louvain;http://cecl.fltr.ucl.ac.be/Cecl-Projects/Icle/icle.htm",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6944fe52-e0e1-5cf4-a686-f740100e3900",
+    "notes": [
+        "over 3 million words of writing by learners of English from 14 different mother tongue backgrounds"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-859"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "ICLE International Corpus of Learner English"
+    ],
+    "url": ""
+}

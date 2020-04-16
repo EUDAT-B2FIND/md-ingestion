@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Jan Wieczorek"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/richtext",
+        "downloadable_files_count: 50"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/628",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/628"
+    ],
+    "PID": "http://hdl.handle.net/11321/628",
+    "PublicationTimestamp": "2019-02-28T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Jan Wieczorek"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Lewandowski, Robert"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/628;2019-02-28T21:23:45Z;hdl_11321_3;hdl_11321_4;Potchefstroom demo;Lewandowski, Robert;literature;evolution;mickiewicz;Test Corpus (North-West University, Potchefstroom, South Africa);2019-02-28;corpus;http://hdl.handle.net/11321/628;eng;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;downloadable_files_count: 50;Jan Wieczorek",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8471d32e-9754-58cd-8d02-c0eee8a88a72",
+    "notes": [
+        "Test Corpus (North-West University, Potchefstroom, South Africa)"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/628"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "literature"
+        },
+        {
+            "name": "evolution"
+        },
+        {
+            "name": "mickiewicz"
+        }
+    ],
+    "title": [
+        "Potchefstroom demo"
+    ],
+    "url": ""
+}

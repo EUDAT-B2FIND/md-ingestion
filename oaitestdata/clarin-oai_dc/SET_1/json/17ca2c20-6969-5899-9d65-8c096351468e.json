@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Staatsbibliothek zu Berlin (Musikabteilung)",
+        "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    ],
+    "Contributor": [
+        "Allroggen, Prof. Dr. Gerhard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1141",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1141"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1141",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Staatsbibliothek zu Berlin (Musikabteilung)",
+        "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1141;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Carl-Maria-von-Weber-Gesamtausgabe (WeGA);Allroggen, Prof. Dr. Gerhard;Germanistik;Weber's diary entries, letters, writings, and opera; Tageb\u00fccher, Briefe, Schriften und Werke Webers;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1141;deu;downloadable_files_count: 0;Germany;Musikwissenschaftliches Seminar Detmold/Paderborn;Staatsbibliothek zu Berlin (Musikabteilung);http://www.weber-gesamtausgabe.de/de/Index",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "17ca2c20-6969-5899-9d65-8c096351468e",
+    "notes": [
+        "Weber's diary entries, letters, writings, and opera; Tageb\u00fccher, Briefe, Schriften und Werke Webers"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1141"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Carl-Maria-von-Weber-Gesamtausgabe (WeGA)"
+    ],
+    "url": ""
+}

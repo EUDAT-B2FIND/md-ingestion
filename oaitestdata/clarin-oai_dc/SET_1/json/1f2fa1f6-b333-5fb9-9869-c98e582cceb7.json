@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Paddy Bullard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2753",
+    "MetadataAccess": [
+        "oai:ota:oucs:2753"
+    ],
+    "PublicationTimestamp": "1712-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1712"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Jonathan Swift Archive"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Swift, Jonathan, 1667-1745"
+    ],
+    "fulltext": "oai:ota:oucs:2753;2018-08-02T14:11:37Z;http://ota.ox.ac.uk/headers/2753.xml;Some reasons to prove, that no person is obliged by his principles, as a Whig, to oppose Her Majesty or her present ministry. In a letter to a Whig-lord;Swift, Jonathan, 1667-1745;1712;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Paddy Bullard;Text;Jonathan Swift Archive;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1f2fa1f6-b333-5fb9-9869-c98e582cceb7",
+    "oai_identifier": [
+        "oai:ota:oucs:2753"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Some reasons to prove, that no person is obliged by his principles, as a Whig, to oppose Her Majesty or her present ministry. In a letter to a Whig-lord"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2753.xml"
+}

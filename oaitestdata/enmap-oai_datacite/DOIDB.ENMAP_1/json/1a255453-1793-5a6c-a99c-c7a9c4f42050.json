@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "Hank, Tobias Benedikt"
+    ],
+    "Contributor": [
+        "BMBF"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5880/enmap.2015.002",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6149",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6149"
+    ],
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "GFZ Data Services"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "CC BY-SA 4.0"
+    ],
+    "SpatialCoverage": [
+        "48.616260 12.835615 48.743966 12.905975",
+        "48.500825 12.703778 48.637529 12.783497"
+    ],
+    "TemporalCoverage": [
+        "2010-03-11",
+        "2009-07-27T08:00:00/2009-07-27T10:00:00",
+        "2009-07-27T08:00:00/2009-07-27T10:00:00"
+    ],
+    "author": [
+        "Richter, Katja",
+        "Hank, Tobias Benedikt",
+        "Mauser, Wolfram"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6149;2016-11-25T13:57:59Z;DOIDB;DOIDB.ENMAP;false;3;DOIDB.ENMAP;10.5880/enmap.2015.002;Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Richter, Katja;F-6957-2010;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Mauser, Wolfram;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Neusling (Landau a.d. Isar) 2009 - An Agricultural EnMAP Preparatory Flight Campaign Using the HyMap Instrument (Datasets);GFZ Data Services;2015;Hyperspectral Imagery;Field Spectroscopy;Agriculture;Biomass;Canopy Water Content;LAI;Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Hank, Tobias Benedikt;K-5087-2012;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Richter, Katja;F-6957-2010;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Richter, Katja;F-6957-2010;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Richter, Katja;F-6957-2010;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Richter, Katja;F-6957-2010;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);Mauser, Wolfram;Dept. of Geography, Ludwig-Maximilian University Munich (Germany);BMBF;DLR;Bachmann, Martin;Bachmann, Martin;Weide, Sebastian;Weide, Sebastian;Marzahn, Philip;Brandlhuber, Theresa;Scholtes, Jochen;Rittger, Annamaria;Schlenz, Florian;Fischer, Georg;Schavoir, Philipp;Dong, Lu;Friese, Malin;Seidel, Moritz;Heidbach, Katja;Eschenlohr, Inga;Leichtle, Tobias;Abdullahi, Sarah;M\u00fcller, Andreas;Foerster, Saskia;GFZ German Research Center for Geosciences;Brosinsky, Arlena;GFZ German Research Center for Geosciences;Elger, Kirsten;0000-0001-5140-8602;GFZ German Research Center for Geosciences;2010-03-11;2009-07-27T08:00:00/2009-07-27T10:00:00;2009-07-27T08:00:00/2009-07-27T10:00:00;eng;Dataset;978-92-9221-247-6;10.2312/enmap.2015.002;10.3390/rs70708830;http://www.enmap.org/?q=flights;CC BY-SA 4.0;This data collection contains airborne hyperspectral data as well as accompanying in-situ data acquired in autumn 2009 in the Neusling test area near Landau a.d. Isar in Southern Germany. The dataset is composed of a) two airborne hyperspectral image strips acquired during an overflight on July 27th, 2009 with the HyMap instrument over two areas; \u201cNeusling\u201d and \u201cSteinbeissen\u201d. The airborne data consists of 125 spectral bands, ranging from VIS to SWIR (455 - 2478 nm); b) spectral reference measurements acquired with a portable ASD FieldSpec 3 JR spectroradiometer in 2150 spectral bands (350 - 2500nm) taken parallel to the overflight; c) spatially comprehensive land use/land cover maps for both flight strips generated from in-situ observations during the days next to the overflight; d) Flight-parallel in-situ point-measurements consisting of: i) destructively measured aboveground dry biomass and canopy water content of maize, sugar beet and winter wheat (58 measurements), ii) non-destructive measurements of LAI of sugar beet and maize (52 measurements), iii) TDR soil moisture measurements covering the main land cover types in the area (250 measurements), iv) 249 measurements of canopy height, v) 199 observations of plant phenology. The dataset was intended to be used in an educational context and was collected with an agricultural focus.;The Environmental Mapping and Analysis Program (EnMAP) is a German hyperspectral satellite mission that aims at monitoring and characterizing the Earth\u2019s environment on a global scale. EnMAP serves to measure and model key dynamic processes of the Earth\u2019s ecosystems by extracting geochemical, biochemical and biophysical parameters, which provide information on the status and evolution of various terrestrial and aquatic ecosystems. In the frame of the EnMAP preparatory phase, pre-flight campaigns including airborne and in-situ measurements in different environments and for several application fields are being conducted. The main purpose of these campaigns is to support the development of scientific applications for EnMAP. In addition, the acquired data are input in the EnMAP end-to-end simulation tool (EeteS) and are employed to test data pre-processing and calibration-validation methods. The campaign data are made freely available to the scientific community under a Creative Commons Attribution-ShareAlike 4.0 International License. An overview of all available data is provided in in the EnMAP Flight Campaigns Metadata Portal http://www.enmap.org/?q=flights.;48.616260 12.835615 48.743966 12.905975;HyMap Imaging Flight Strip Neusling;48.500825 12.703778 48.637529 12.783497;HyMap Imaging Flight Strip Steinbeissen",
+    "group": "enmap",
+    "groups": [
+        {
+            "name": "enmap"
+        }
+    ],
+    "name": "1a255453-1793-5a6c-a99c-c7a9c4f42050",
+    "notes": [
+        "This data collection contains airborne hyperspectral data as well as accompanying in-situ data acquired in autumn 2009 in the Neusling test area near Landau a.d. Isar in Southern Germany. The dataset is composed of a) two airborne hyperspectral image strips acquired during an overflight on July 27th, 2009 with the HyMap instrument over two areas; \u201cNeusling\u201d and \u201cSteinbeissen\u201d. The airborne data consists of 125 spectral bands, ranging from VIS to SWIR (455 - 2478 nm); b) spectral reference measurements acquired with a portable ASD FieldSpec 3 JR spectroradiometer in 2150 spectral bands (350 - 2500nm) taken parallel to the overflight; c) spatially comprehensive land use/land cover maps for both flight strips generated from in-situ observations during the days next to the overflight; d) Flight-parallel in-situ point-measurements consisting of: i) destructively measured aboveground dry biomass and canopy water content of maize, sugar beet and winter wheat (58 measurements), ii) non-destructive measurements of LAI of sugar beet and maize (52 measurements), iii) TDR soil moisture measurements covering the main land cover types in the area (250 measurements), iv) 249 measurements of canopy height, v) 199 observations of plant phenology. The dataset was intended to be used in an educational context and was collected with an agricultural focus.",
+        "The Environmental Mapping and Analysis Program (EnMAP) is a German hyperspectral satellite mission that aims at monitoring and characterizing the Earth\u2019s environment on a global scale. EnMAP serves to measure and model key dynamic processes of the Earth\u2019s ecosystems by extracting geochemical, biochemical and biophysical parameters, which provide information on the status and evolution of various terrestrial and aquatic ecosystems. In the frame of the EnMAP preparatory phase, pre-flight campaigns including airborne and in-situ measurements in different environments and for several application fields are being conducted. The main purpose of these campaigns is to support the development of scientific applications for EnMAP. In addition, the acquired data are input in the EnMAP end-to-end simulation tool (EeteS) and are employed to test data pre-processing and calibration-validation methods. The campaign data are made freely available to the scientific community under a Creative Commons Attribution-ShareAlike 4.0 International License. An overview of all available data is provided in in the EnMAP Flight Campaigns Metadata Portal http://www.enmap.org/?q=flights."
+    ],
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6149"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.ENMAP"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Hyperspectral Imagery"
+        },
+        {
+            "name": "Field Spectroscopy"
+        },
+        {
+            "name": "Agriculture"
+        },
+        {
+            "name": "Biomass"
+        },
+        {
+            "name": "Canopy Water Content"
+        },
+        {
+            "name": "LAI"
+        }
+    ],
+    "title": [
+        "Neusling (Landau a.d. Isar) 2009 - An Agricultural EnMAP Preparatory Flight Campaign Using the HyMap Instrument (Datasets)"
+    ],
+    "url": ""
+}

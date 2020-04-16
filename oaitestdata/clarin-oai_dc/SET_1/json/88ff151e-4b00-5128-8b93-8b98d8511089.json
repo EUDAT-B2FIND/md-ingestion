@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Bolz, Norbert W."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 33 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0681",
+    "MetadataAccess": [
+        "oai:ota:oucs:0681"
+    ],
+    "PublicationTimestamp": "1592-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1592"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Greene, Robert, 1558?-1592"
+    ],
+    "fulltext": "oai:ota:oucs:0681;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0681.xml;A quip for an upstart courtier / by Robert Greene;Greene, Robert, 1558?-1592;1592;text_and_corpus_linguistics;English drama -- Early modern and Elizabethan, 1500-1600;eng;Oxford Text Archive, University of Oxford;Bolz, Norbert W.;(1 file : ca. 33 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "88ff151e-4b00-5128-8b93-8b98d8511089",
+    "oai_identifier": [
+        "oai:ota:oucs:0681"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- Early modern Elizabethan"
+        }
+    ],
+    "title": [
+        "A quip for an upstart courtier / by Robert Greene"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0681.xml"
+}

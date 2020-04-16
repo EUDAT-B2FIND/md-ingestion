@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5516",
+    "MetadataAccess": [
+        "oai:ota:oucs:5516"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Alderson, John, 1757-1829."
+    ],
+    "fulltext": "oai:ota:oucs:5516;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5516.xml;An essay on the rhus toxicodendron: pubescent poison oak, or sumach, with cases shewing it's efficacy in the cure of paralysis, ... By John Alderson, ...;Alderson, John, 1757-1829.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1f477677-139f-51d7-b26c-ad2491c3f26d",
+    "oai_identifier": [
+        "oai:ota:oucs:5516"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An essay on the rhus toxicodendron: pubescent poison oak, or sumach, with cases shewing it's efficacy in the cure of paralysis, ... By John Alderson, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5516.xml"
+}

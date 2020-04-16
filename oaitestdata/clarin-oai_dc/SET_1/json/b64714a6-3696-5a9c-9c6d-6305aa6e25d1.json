@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 185 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2185",
+    "MetadataAccess": [
+        "oai:ota:oucs:2185"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Melville, Herman, 1819-1891"
+    ],
+    "fulltext": "oai:ota:oucs:2185;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2185.xml;Billy Buddy, foretopman / by Herman Melville;Melville, Herman, 1819-1891;default: 1976-01-01;text_and_corpus_linguistics;Fiction -- United States -- 20th century;Novellas -- United States -- 20th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 185 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b64714a6-3696-5a9c-9c6d-6305aa6e25d1",
+    "oai_identifier": [
+        "oai:ota:oucs:2185"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- United States -- th century"
+        },
+        {
+            "name": "Novellas -- United States -- th century"
+        }
+    ],
+    "title": [
+        "Billy Buddy, foretopman / by Herman Melville"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2185.xml"
+}

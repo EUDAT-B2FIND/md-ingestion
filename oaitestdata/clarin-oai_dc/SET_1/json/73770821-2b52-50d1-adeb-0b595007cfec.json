@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "between 1 and 2 MB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1224",
+    "MetadataAccess": [
+        "oai:ota:oucs:1224"
+    ],
+    "PublicationTimestamp": "1811-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1811"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Austen, Jane,  1775-1817"
+    ],
+    "fulltext": "oai:ota:oucs:1224;2018-02-21T11:28:16Z;http://ota.ox.ac.uk/headers/1224.xml; Sense and sensibility  : (tagged version) / compiled by J.F. Burrows;Austen, Jane,  1775-1817;1811;text_and_corpus_linguistics;Novels -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;between 1 and 2 MB;Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "73770821-2b52-50d1-adeb-0b595007cfec",
+    "oai_identifier": [
+        "oai:ota:oucs:1224"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        " Sense and sensibility  : (tagged version) / compiled by J.F. Burrows"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1224.xml"
+}

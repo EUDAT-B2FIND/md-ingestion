@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Grebl Ignacy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-558",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-558"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D23-D",
+    "PublicationTimestamp": "1785-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1785"
+    ],
+    "Publisher": [
+        "Grebl Ignacy"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/558"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "[Heineccius, Jan Christian (1718-1791)]"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-558;2019-03-01T15:41:49Z;Ustanowienia prawa cywilnego w sposobie \u0142atwym zebrane [...].T. 1.;[Heineccius, Jan Christian (1718-1791)];Prawo cywilne- historia;ilo\u015b\u0107 skan\u00f3w: 197 ; sygn. S-635;Grebl Ignacy;1785;starodruk;application/xml;clarind-uds:poldilemma-558;hdl:11858/00-246C-0000-0023-8D23-D;pol;lat;http://pbc.biaman.pl/Content/558;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c98c0b60-5314-5884-8fbd-f4b5454e226a",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 197 ; sygn. S-635"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-558"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Prawo cywilne- historia"
+        }
+    ],
+    "title": [
+        "Ustanowienia prawa cywilnego w sposobie \u0142atwym zebrane [...].T. 1."
+    ],
+    "url": ""
+}

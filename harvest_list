@@ -150,6 +150,9 @@ seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
 ## SLKS with dc
 slks https://www.archaeo.dk/ff/oai-pmh/ ListRecords oai_dc
 
+## STARS4ALL
+starsforall https://eudat-b2share-test.csc.fi/api/oai2d ListRecords oai_dc
+
 ## TOAR
 #toar https://b2share-testing.fz-juelich.de/api/ records json
 #toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  8cb65167-71d4-4845-a454-5d56624568d2

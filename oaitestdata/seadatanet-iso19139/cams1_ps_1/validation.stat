@@ -1,0 +1,155 @@
+
+ Statistics of
+	community	seadatanet
+	subset		cams1_ps_1
+	# of records	23
+  see as well oaidata/seadatanet-iso19139/cams1_ps_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 1     : North Sea - Temperature and salinity observation collection V1.1      |
+      |- 1     : Black Sea - Temperature and salinity observation collection V2      |
+      |- 1     : North Atlantic Ocean - Temperature and Salinity Climatology V1.1      |
+      |- 1     : Arctic Ocean - Temperature and salinity Historical Data Collection SeaDataCloud  [...(2 chars follow)...] |
+      |- 1     : Black Sea - Temperature and salinity Historical Data Collection SeaDataCloud V1      |
+      |- 1     : Arctic Ocean - Temperature and salinity observation collection V2      |
+      |- 1     : Arctic Ocean - Temperature and salinity observation collection V1.1      |
+      |- 1     : Arctic Ocean - Temperature and Salinity Climatology V1.1      |
+      |- 1     : North Sea - Temperature and salinity Historical Data Collection SeaDataCloud V1      |
+      |- 1     : Mediterranean Sea - Temperature and salinity observation collection V2      |
+
+ |-> Description      <--       //gmd:abstract/gco:CharacterString/text()
+
+  |--    23 |  100 |    20 |   87
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection contains all open [...(601 chars follow)...] |
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection v2, including rev [...(111 chars follow)...] |
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection for the North Sea [...(656 chars follow)...] |
+      |- 1     : SeaDataNet Temperature and Salinity historical data collection for the North Arc [...(299 chars follow)...] |
+      |- 1     : SDC_MED_DATA_TS_V1 SeaDataCloud Temperature  and Salinity data collection for th [...(657 chars follow)...] |
+
+ |-> Tags             <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 23    : Oceanographic geographical features      |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> RelatedIdentifier <--       //gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> MetaDataAccess   <--                     
+  |--    23 |  100 |    23 |  100
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+      |- 1     : http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metad [...(66 chars follow)...] |
+
+ |-> Creator          <--       //gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Publisher        <--       //gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 9     : SEADATANET                          |
+      |- 4     : Marine Systems Institute at Tallinn University of Technology      |
+      |- 3     : Alfred-Wegener-Institute for Polar- and Marine Research      |
+      |- 3     : IFREMER / IDM/SISMER                |
+      |- 2     : Royal Belgian Institute of Natural Sciences, Operational Directorate Natural Env [...(36 chars follow)...] |
+      |- 1     : IFREMER                             |
+      |- 1     : Institute of Marine Sciences, Middle East Technical University      |
+
+ |-> Contributor      <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 13    : 2015                                |
+      |- 6     : 2018                                |
+      |- 3     : 2014                                |
+      |- 1     : 2012                                |
+
+ |-> Rights           <--     //gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 22    : No limitations on public access.  For data access please register at http://www. [...(13 chars follow)...] |
+      |- 1     : No limitations on public access.  For data access please register at http://www. [...(14 chars follow)...] |
+
+ |-> OpenAccess       <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 23    : sdn-userdesk@seadatanet.org         |
+
+ |-> Language         <--       //gmd:identificationInfo/MD_DataIdentification/gmd:language/gco:CharacterString/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> ResourceType     <--       <string>dataset</string>
+
+  |--    23 |  100 |    23 |  100
+      |- 23    : dataset                             |
+
+ |-> Format           <--       //gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string>MarineSciences</string>
+
+  |--    23 |  100 |    23 |  100
+      |- 23    : Not stated                          |
+
+ |-> SpatialCoverage  <--       //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 4     : (30N-46N,9 W-37E)                   |
+      |- 3     : (40N-48N,28E-42E)                   |
+      |- 3     : (49N-62N,4 W-10E)                   |
+      |- 2     : (10N-65N,90W-10E)                   |
+      |- 2     : (10N-62N,90W-10E)                   |
+      |- 2     : (53N-66N,10E-30E)                   |
+      |- 2     : (65N-82N,40W-65E)                   |
+      |- 2     : (62N-83N,43W-93E)                   |
+      |- 1     : (53N-66N,9 E-30E)                   |
+      |- 1     : (40N-48N,27E-42E)                   |
+
+ |-> TemporalCoverage <--       //gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text(),//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition/text()
+
+  |--    23 |  100 |    23 |  100
+      |- 6     :  period : ( 1900-01-01T11:59:59Z - 2013-12-31T11:59:59Z )       |
+      |- 4     :  period : ( 1900-01-01T11:59:59Z - 2014-12-31T11:59:59Z )       |
+      |- 2     :  period : ( 1900-01-01T11:59:59Z - 2017-11-01T11:59:59Z )       |
+      |- 2     :  period : ( 1900-01-01T11:59:59Z - 2012-12-31T11:59:59Z )       |
+      |- 1     :  period : ( 1900-01-01T11:59:59Z - 2015-03-31T11:59:59Z )       |
+      |- 1     :  period : ( 1868-06-17T11:59:59Z - 2013-10-28T11:59:59Z )       |
+      |- 1     :  period : ( 1900-01-01T11:59:59Z - 2017-10-31T11:59:59Z )       |
+      |- 1     :  period : ( 1900-01-02T11:59:59Z - 2013-06-06T11:59:59Z )       |
+      |- 1     :  period : ( 1868-06-17T11:59:59Z - 2014-10-27T11:59:59Z )       |
+      |- 1     :  period : ( 1903-08-19T11:59:59Z - 2017-09-04T11:59:59Z )       |
+

@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Drukarnia Franciszka Cezarego"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229077",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229077"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D03-6",
+    "PublicationTimestamp": "1645-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1645"
+    ],
+    "Publisher": [
+        "Drukarnia Franciszka Cezarego"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/229077",
+        "oai:jbc.bj.uj.edu.pl:publication:240720"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Przetocki, Jacek (ca 1599-ca 1655)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229077;2019-03-01T12:44:29Z;Brzeg nieprze\u017cytey Wieczno\u015bci, Do ktorego Staro\u017cytny \u0141ab\u0119\u0107, ostatniego prawie Dvnina z Modlyszowic, [...] P. Stanis\u0142awa Modliszowskiego, Hrabie Skrzynskiego. I. K. M. Dworzanina, P\u0142ywai\u0105c fortunnie po \u00dferokim morzu Krolestwa Polskiego przez lat 521 [...] Szcz\u0119\u015bliwie Roku 1645. 21. Aprilis dop\u0142yn\u0105\u0142, y wy\u00dfed\u0142 30. Maij. Roku tego\u017c, na l\u0105d Grobowy, w Konieckim Ko\u015bciele Farnym;Przetocki, Jacek (ca 1599-ca 1655);starodruki 17\u00a0w.;Szczawi\u0144ski, Jan Szymon (16..-16..). Adr. ded.;Drukarnia Franciszka Cezarego;1645;starodruk;application/xml;clarind-uds:poldilemma-229077;hdl:11858/00-246C-0000-0023-8D03-6;Biblioteka Jagiello\u0144ska, BJ St. Dr. 311352 I;pol;http://jbc.bj.uj.edu.pl/Content/229077;oai:jbc.bj.uj.edu.pl:publication:240720;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0d996050-64b3-5246-aa8f-e2509c1ab4af",
+    "notes": [
+        "Szczawi\u0144ski, Jan Szymon (16..-16..). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229077"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Brzeg nieprze\u017cytey Wieczno\u015bci, Do ktorego Staro\u017cytny \u0141ab\u0119\u0107, ostatniego prawie Dvnina z Modlyszowic, [...] P. Stanis\u0142awa Modliszowskiego, Hrabie Skrzynskiego. I. K. M. Dworzanina, P\u0142ywai\u0105c fortunnie po \u00dferokim morzu Krolestwa Polskiego przez lat 521 [...] Szcz\u0119\u015bliwie Roku 1645. 21. Aprilis dop\u0142yn\u0105\u0142, y wy\u00dfed\u0142 30. Maij. Roku tego\u017c, na l\u0105d Grobowy, w Konieckim Ko\u015bciele Farnym"
+    ],
+    "url": ""
+}

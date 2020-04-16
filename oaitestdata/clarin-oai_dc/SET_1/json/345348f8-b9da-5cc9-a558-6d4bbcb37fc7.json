@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Faculty of Information Studies Novo mesto"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "text/plain; charset=utf-8",
+        "application/pdf",
+        "text/plain"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1110",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1110"
+    ],
+    "PID": "http://hdl.handle.net/11356/1110",
+    "PublicationTimestamp": "2017-04-29T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Faculty of Information Studies Novo mesto"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1007/s10579-018-9413-3"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bu\u010dar, Jo\u017ee"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1110;2018-12-02T19:42:20Z;hdl_11356_1023;hdl_11356_1024;Manually sentiment annotated Slovenian news corpus SentiNews 1.0;Bu\u010dar, Jo\u017ee;news corpus;sentiment classification;opinion mining;manual annotation;Between 2 and 6 annotators independently sentiment annotated a stratified random sample of 10,427 documents from the Slovenian news portals 24ur, Dnevnik, Finance, Rtvslo, and \u017durnal24. These portals contain political, business, economic and financial content. The texts were annotated using the five-level Lickert scale (1 \u2013 very negative, 2 \u2013 negative, 3 \u2013 neutral, 4 \u2013 positive, and 5 \u2013 very positive) on three levels of granularity, i.e. on the document, paragraph, and sentence level.;2017-04-29;corpus;http://hdl.handle.net/11356/1110;slv;https://doi.org/10.1007/s10579-018-9413-3;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;text/plain;text/plain;text/plain;text/plain;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 5;Faculty of Information Studies Novo mesto;https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "345348f8-b9da-5cc9-a558-6d4bbcb37fc7",
+    "notes": [
+        "Between 2 and 6 annotators independently sentiment annotated a stratified random sample of 10,427 documents from the Slovenian news portals 24ur, Dnevnik, Finance, Rtvslo, and \u017durnal24. These portals contain political, business, economic and financial content. The texts were annotated using the five-level Lickert scale (1 \u2013 very negative, 2 \u2013 negative, 3 \u2013 neutral, 4 \u2013 positive, and 5 \u2013 very positive) on three levels of granularity, i.e. on the document, paragraph, and sentence level."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1110"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "news corpus"
+        },
+        {
+            "name": "sentiment classification"
+        },
+        {
+            "name": "opinion mining"
+        },
+        {
+            "name": "manual annotation"
+        }
+    ],
+    "title": [
+        "Manually sentiment annotated Slovenian news corpus SentiNews 1.0"
+    ],
+    "url": ""
+}

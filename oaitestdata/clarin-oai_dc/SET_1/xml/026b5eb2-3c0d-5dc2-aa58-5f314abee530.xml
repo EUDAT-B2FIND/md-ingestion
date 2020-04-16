@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/107</identifier>
+    <datestamp>2016-09-06T13:05:44Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Lule Saami lemma frequency list</dc:title>
+      <dc:creator>Giellatekno - Saami Language Technology, UiT The Arctic University of Norway</dc:creator>
+      <dc:creator>The Divvun group at UiT The Arctic University of Norway</dc:creator>
+      <dc:subject>Lemma Frequencies</dc:subject>
+      <dc:subject>Lule Saami</dc:subject>
+      <dc:description>The Lule Saami lemma frequency list is work done by the Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language community. In particular, Ciprian-Virgil Gerstenberger compiled the list from the entire SIKOR Lule Saami corpus version 2015-10-10. The data is in an one-lemma-per-line format with the following values: &lt;ABS_FREQ&gt; &lt;LEMMA&gt; &lt;POS&gt;. Since the list has been derived automatically, it may contain wrong values. In case you find any errors the creators would appreciate your feedback sent to giellatekno@uit.no and feedback@divvun.no. Please note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata).</dc:description>
+      <dc:date>2015-10-10</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/107</dc:identifier>
+      <dc:language>smj</dc:language>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/xml</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Giellatekno - Saami Language Technology</dc:publisher>
+      <dc:source>http://giellatekno.uit.no/index.eng.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

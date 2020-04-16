@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6335",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6335"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6335;2018-09-05T10:39:14Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2017.014;Hunfeld, Luuk;Luuk;Hunfeld;0000-0001-9250-414X;HPT Laboratory, Department of Earth Sciences, Utrecht University, The Netherlands.;Niemeijer, Andr\u00e9;Andr\u00e9;Niemeijer;0000-0003-3983-9308;HPT Laboratory, Department of Earth Sciences, Utrecht University, The Netherlands.;Spiers, Christopher;Christopher;Spiers;0000-0002-3436-8941;HPT Laboratory, Department of Earth Sciences, Utrecht University, The Netherlands.;Friction data of simulated fault gouges derived from the Groningen gas field;GFZ Data Services;2017;Frictional properties;Simulated fault gouge;Groningen gas field;EPOS;Multi-scale laboratories;rock and melt physical properties;Hunfeld, Luuk;Luuk;Hunfeld;0000-0001-9250-414X;HPT Laboratory, Department of Earth Sciences, Utrecht University, The Netherlands.;Experimental rock deformation/HPT-Lab (Utrecht University, The Netherlands);Utrecht University, The Netherlands;eng;10.1002/2017JB014876;69191878 Bytes;2 Files;application/x-zip-compressed;application/pdf;CC BY 4.0;We investigated the frictional properties of simulated fault gouges derived from the main lithologies present in the seismogenic Groningen gas field (NE Netherlands), employing in-situ P-T conditions and varying pore fluid salinity. Direct shear experiments were performed on gouges prepared from the Carboniferous Shale/Siltstone underburden, the Upper Rotliegend Slochteren Sandstone reservoir, the overlying Ten Boer Claystone, and the Basal Zechstein anhydrite-carbonate caprock, at 100 \u00baC, 40 MPa effective normal stress, and sliding velocities of 0.1-10 \u00b5m/s. As pore fluids, we used pure water, 0.5-6.2 M NaCl solutions, and a 6.9 M mixed chloride brine mimicking the formation water. Our results show a mechanical stratigraphy, with a maximum friction coefficient (\u00b5) of ~0.65 for the Basal Zechstein, a minimum of ~0.37 for the Ten Boer claystone, ~0.6 for the reservoir sandstone, ~0.5 for the Carboniferous, and \u00b5-values between the end-members for mixed gouges. Pore fluid salinity had no effect on frictional strength. Most gouges showed velocity-strengthening behavior, with little effect of pore fluid salinity on (a-b). However, Basal Zechstein gouge showed velocity-weakening at low salinities and/or sliding velocities, as did 50:50 mixtures with sandstone gouges, tested with the 6.9 M reservoir brine. From a Rate-and-State-Friction viewpoint, our results imply that faults incorporating Basal Zechstein anhydrite-carbonate material at the top of the reservoir are the most prone to accelerating slip, i.e. have the highest seismogenic potential. The results are equally relevant to other Dutch Rotliegend fields and to similar sequences globally. ;Nederlandse Aardolie Maatschappij B.V. ",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "e9d05dc7-9f05-56b5-87f2-796161acd189",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6335"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

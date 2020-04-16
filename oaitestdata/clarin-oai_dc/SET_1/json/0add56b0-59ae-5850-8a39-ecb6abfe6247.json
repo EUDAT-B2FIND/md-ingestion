@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "NHH Norwegian School of Economics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "application/octet-stream",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian Bokm\u00e5l"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/121",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/121"
+    ],
+    "PID": "http://hdl.handle.net/11509/121",
+    "PublicationTimestamp": "2017-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "NHH Norwegian School of Economics"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "CLARIN_RES-PLAN-INF",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEula?RES=1&PLAN=1&INF=1",
+        "RES"
+    ],
+    "author": [
+        "Bergen municipality"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/121;2017-01-18T09:25:04Z;hdl_11509_1;hdl_11509_2;Bergen municipality's interpreter's termbase;Bergen municipality;Interpreting;Terminology;Terminological;Termbase;The resource Tolking is a termbase consisting of terms, definitions and other conceptual information relating to a wide range of domains, developed for and by the interpreting services offered by Bergen municipality (Bergen kommune).;2017-01-10;lexicalConceptualResource;http://hdl.handle.net/11509/121;nob;CLARIN_RES-PLAN-INF;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEula?RES=1&PLAN=1&INF=1;RES;application/zip;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;NHH Norwegian School of Economics;http://www.terminologi.no",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0add56b0-59ae-5850-8a39-ecb6abfe6247",
+    "notes": [
+        "The resource Tolking is a termbase consisting of terms, definitions and other conceptual information relating to a wide range of domains, developed for and by the interpreting services offered by Bergen municipality (Bergen kommune)."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/121"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Interpreting"
+        },
+        {
+            "name": "Terminology"
+        },
+        {
+            "name": "Terminological"
+        },
+        {
+            "name": "Termbase"
+        }
+    ],
+    "title": [
+        "Bergen municipality's interpreter's termbase"
+    ],
+    "url": ""
+}

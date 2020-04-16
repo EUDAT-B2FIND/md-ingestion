@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4095",
+    "MetadataAccess": [
+        "oai:ota:oucs:4095"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dennis, John, 1657-1734."
+    ],
+    "fulltext": "oai:ota:oucs:4095;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4095.xml;A poem upon the death of her late sacred majesty Queen Anne, and the most happy and most auspicious accession of his sacred majesty King George. To the imperial crowns of Great Britain, France and Ireland. ... By Mr. Dennis;Dennis, John, 1657-1734.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9d6fb695-680c-5089-bf3b-16b1ad2b25f2",
+    "oai_identifier": [
+        "oai:ota:oucs:4095"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A poem upon the death of her late sacred majesty Queen Anne, and the most happy and most auspicious accession of his sacred majesty King George. To the imperial crowns of Great Britain, France and Ireland. ... By Mr. Dennis"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4095.xml"
+}

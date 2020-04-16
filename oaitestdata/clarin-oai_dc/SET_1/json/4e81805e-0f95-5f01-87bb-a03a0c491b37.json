@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Research Institute for Artificial Intelligence, Romanian Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English",
+        "Romanian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1299",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1299"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1299",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Research Institute for Artificial Intelligence, Romanian Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Romania"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Tufi\u015f, Dan",
+        "Ceau\u015fu, Alexandru"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1299;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;MEBA word aligner;Tufi\u015f, Dan;Ceau\u015fu, Alexandru;word aligner;MEBA is a lexical aligner, implemented in C#, based on an iterative algorithm that uses pre-processing steps: sentence alignment ([[http://www.clarin.eu/tools/sal-sentence-aligner|SAL]]), tokenization, POS-tagging and lemmatization (through [[http://www.clarin.eu/tools/ttl-tokenizing-tagging-and-lemmatizing-free-running-texts|TTL]], sentence chunking. Similar to YAWA aligner, MEBA generates the links step by step, beginning with the most probable (anchor links). The links to be\r\nadded at any later step are supported or restricted by the links created in the previous iterations. The aligner has different weights and different significance thresholds on each feature and iteration. Each of the iterations can be configured to align different categories of tokens (named entities, dates and numbers, content words, functional words, punctuation) in decreasing order of statistical evidence.\r\nMEBA has an individual F-measure of 81.71% and it is currently integrated in the platform [[http://www.clarin.eu/tools/cowal-combined-word-aligner|COWAL]].\r\nMore detailed descriptions are available in [[http://www.racai.ro/~tufis/papers|the following papers]]: \r\n  -- Dan Tufi\u015f (2007). Exploiting Aligned Parallel Corpora in Multilingual Studies and Applications. In Toru Ishida, Susan R. Fussell, and Piek T.J.M. Vossen (eds.), Intercultural Collaboration. First International Workshop (IWIC 2007), volume 4568 of Lecture Notes in Computer Science, pp. 103-117. Springer-Verlag, August 2007. ISBN 978-3-540-73999-9. \r\n  -- -- Dan Tufi\u015f, Radu Ion, Alexandru Ceau\u015fu, and Dan \u015etef\u0103nescu (2006). Improved Lexical Alignment by Combining Multiple Reified Alignments. In Toru Ishida, Susan R. Fussell, and Piek T.J.M. Vossen (eds.), Proceedings of the 11th Conference EACL2006, pp. 153-160, Trento, Italy, April 2006. Association for Computational Linguistics. ISBN 1-9324-32-61-2.\r\n  -- Dan  Tufi\u015f, Radu Ion, Alexandru Ceau\u015fu, and Dan \u015etef\u0103nescu (2005). Combined Aligners. In Proceedings of the ACL Workshop on Building and Using Parallel Texts: Data-Driven Machine Translation and Beyond, pp. 107-110, Ann Arbor, USA, June 2005. Association for Computational Linguistics. ISBN 978-973-703-208-9.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1299;eng;ron;downloadable_files_count: 0;Romania;Research Institute for Artificial Intelligence, Romanian Academy of Sciences",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4e81805e-0f95-5f01-87bb-a03a0c491b37",
+    "notes": [
+        "MEBA is a lexical aligner, implemented in C#, based on an iterative algorithm that uses pre-processing steps: sentence alignment ([[http://www.clarin.eu/tools/sal-sentence-aligner|SAL]]), tokenization, POS-tagging and lemmatization (through [[http://www.clarin.eu/tools/ttl-tokenizing-tagging-and-lemmatizing-free-running-texts|TTL]], sentence chunking. Similar to YAWA aligner, MEBA generates the links step by step, beginning with the most probable (anchor links). The links to be\r\nadded at any later step are supported or restricted by the links created in the previous iterations. The aligner has different weights and different significance thresholds on each feature and iteration. Each of the iterations can be configured to align different categories of tokens (named entities, dates and numbers, content words, functional words, punctuation) in decreasing order of statistical evidence.\r\nMEBA has an individual F-measure of 81.71% and it is currently integrated in the platform [[http://www.clarin.eu/tools/cowal-combined-word-aligner|COWAL]].\r\nMore detailed descriptions are available in [[http://www.racai.ro/~tufis/papers|the following papers]]: \r\n  -- Dan Tufi\u015f (2007). Exploiting Aligned Parallel Corpora in Multilingual Studies and Applications. In Toru Ishida, Susan R. Fussell, and Piek T.J.M. Vossen (eds.), Intercultural Collaboration. First International Workshop (IWIC 2007), volume 4568 of Lecture Notes in Computer Science, pp. 103-117. Springer-Verlag, August 2007. ISBN 978-3-540-73999-9. \r\n  -- -- Dan Tufi\u015f, Radu Ion, Alexandru Ceau\u015fu, and Dan \u015etef\u0103nescu (2006). Improved Lexical Alignment by Combining Multiple Reified Alignments. In Toru Ishida, Susan R. Fussell, and Piek T.J.M. Vossen (eds.), Proceedings of the 11th Conference EACL2006, pp. 153-160, Trento, Italy, April 2006. Association for Computational Linguistics. ISBN 1-9324-32-61-2.\r\n  -- Dan  Tufi\u015f, Radu Ion, Alexandru Ceau\u015fu, and Dan \u015etef\u0103nescu (2005). Combined Aligners. In Proceedings of the ACL Workshop on Building and Using Parallel Texts: Data-Driven Machine Translation and Beyond, pp. 107-110, Ann Arbor, USA, June 2005. Association for Computational Linguistics. ISBN 978-973-703-208-9."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1299"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "word aligner"
+        }
+    ],
+    "title": [
+        "MEBA word aligner"
+    ],
+    "url": ""
+}

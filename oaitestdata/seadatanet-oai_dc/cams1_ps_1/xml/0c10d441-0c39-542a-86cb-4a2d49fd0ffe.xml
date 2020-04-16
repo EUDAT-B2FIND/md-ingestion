@@ -1,0 +1,33 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>2287615d-1977-479f-8d5b-439960bcb21a</dc:identifier>
+      <dc:date>2018-09-27T07:47:25</dc:date>
+      <dc:title>Black Sea - Temperature and salinity Historical Data Collection SeaDataCloud V1</dc:title>
+      <dct:alternative>SDC_BLS_DATA_TS_V1</dct:alternative>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Salinity of the water column</dc:subject>
+      <dc:subject>Temperature of the water column</dc:subject>
+      <dc:subject>Water body salinity</dc:subject>
+      <dc:subject>ITS-90 water temperature</dc:subject>
+      <dc:subject>Sea of Azov</dc:subject>
+      <dc:subject>Black Sea</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>ODV binary collection</dc:format>
+      <dct:abstract>The SeaDataCloud Temperature and Salinity Historical Data Collection for the Black Sea includes open access in situ data on temperature and salinity of water column in the Black Sea (and a little in the Sea of Azov) for period 1868 &#8211; 2017. The data were retrieved from the SeaDataNet infrastructure at the end of 2017. The dataset format is Ocean Data View (ODV - http://odv.awi.de/) binary collection. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised and set up using the elaborated by SeaDataNet2 project QC procedures in conjunction with the visual expert check. Data duplicates have been identified and excluded from the dataset. The final number of the Temperature and Salinity profiles (stations) in the collection is 137723.
+
+For data access please register at http://www.marine-id.org/.</dct:abstract>
+      <dc:description>The SeaDataCloud Temperature and Salinity Historical Data Collection for the Black Sea includes open access in situ data on temperature and salinity of water column in the Black Sea (and a little in the Sea of Azov) for period 1868 &#8211; 2017. The data were retrieved from the SeaDataNet infrastructure at the end of 2017. The dataset format is Ocean Data View (ODV - http://odv.awi.de/) binary collection. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised and set up using the elaborated by SeaDataNet2 project QC procedures in conjunction with the visual expert check. Data duplicates have been identified and excluded from the dataset. The final number of the Temperature and Salinity profiles (stations) in the collection is 137723.
+
+For data access please register at http://www.marine-id.org/.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI</dc:source>
+      <dc:format>ODV binary collection</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG 4326)">
+        <ows:LowerCorner>42 40.5</ows:LowerCorner>
+        <ows:UpperCorner>27.5 47.5</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--metadata-URL" description="DOI of the product">http://dx.doi.org/10.12770/2287615d-1977-479f-8d5b-439960bcb21a</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/fre//resources.get?uuid=2287615d-1977-479f-8d5b-439960bcb21a&amp;fname=BLACK_SDC_V1.png</dc:URI>
+    </csw:Record>

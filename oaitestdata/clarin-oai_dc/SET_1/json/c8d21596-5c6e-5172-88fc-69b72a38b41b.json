@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Lancaster University"
+    ],
+    "Contributor": [
+        "Rayson, Paul"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-334",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-334"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-334",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Lancaster University"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-334;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Wmatrix;Rayson, Paul;Wmatrix is a corpus comparison and annotation tool. It is web based and incorporates the CLAWS POS tagger and the USAS semantic tagger for English. It also generates frequency lists, concordances, key words and key semantic domains by comparative frequency profiling.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-334;eng;downloadable_files_count: 0;United Kingdom;Lancaster University;http://ucrel.lancs.ac.uk/wmatrix/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c8d21596-5c6e-5172-88fc-69b72a38b41b",
+    "notes": [
+        "Wmatrix is a corpus comparison and annotation tool. It is web based and incorporates the CLAWS POS tagger and the USAS semantic tagger for English. It also generates frequency lists, concordances, key words and key semantic domains by comparative frequency profiling."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-334"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Wmatrix"
+    ],
+    "url": ""
+}

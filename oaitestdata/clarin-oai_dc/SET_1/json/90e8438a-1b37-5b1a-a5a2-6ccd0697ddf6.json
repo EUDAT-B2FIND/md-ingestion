@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=ffc1c2b0357f11e2a2aa782bcb074135a0708b33105c49d4b11cab77c30d5c75",
+    "MetadataAccess": [
+        "ffc1c2b0357f11e2a2aa782bcb074135a0708b33105c49d4b11cab77c30d5c75"
+    ],
+    "PublicationTimestamp": "2012-11-23T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "ffc1c2b0357f11e2a2aa782bcb074135a0708b33105c49d4b11cab77c30d5c75;2018-11-15T16:39:53Z;toolService;toolService:tool;LX-Tokenizer;The present tool, that was built to deal with Portuguese-specific issues concerning a few non-trivial cases that involve tokenization-ambigous strings, segments text into lexically relevant tokens, using whitespace as the separator. Note that, in these examples, the | (vertical bar) symbol is used to mark the token boundaries clearier:\n\t\n\tum exemplo \u00e2\u0086\u0092 |um|exemplo|\n\nExpands contractions. Note that the first element of an expanded contraction is marked with an _ (underscore) symbol:\n\n\tdo \u00e2\u0086\u0092 |de_|o|\n\nMarks spacing around punctuation or symbols. The \\* and the */ symbols indicate a space to the left and a space to the right, respectively:\n\num, dois e tr\u00c3\u00aas \u00e2\u0086\u0092 |um|,*/|dois|e|tr\u00c3\u00aas|\n 5.3 \u00e2\u0086\u0092 |5|.|3|\n 1. 2 \u00e2\u0086\u0092 |1|.*/|2|\n 8 . 6 \u00e2\u0086\u0092 |8|\\*.*/|6|\n\nDetaches clitic pronouns from the verb. The detached pronoun is marked with a - (hyphen) symbol. When in mesoclisis, a -CL- mark is used to signal the original position of the detached clitic. Additionally, possible vocalic alterations of the verb form are marked with a # (hash) symbol:\n\n\td\u00c3\u00a1-se-lho \u00e2\u0086\u0092 |d\u00c3\u00a1|-se|-lhe|-o|\n\tafirmar-se-ia \u00e2\u0086\u0092 |afirmar-CL-ia|-se|\n\tv\u00c3\u00aa-las \u00e2\u0086\u0092 |v\u00c3\u00aa#|-las|\n\nThis tool also handles ambiguous strings. These are words that, depending on their particular occurrence, can be tokenized in different ways. For instance:\n\ndeste \u00e2\u0086\u0092 |deste| when occurring as a Verb\ndeste \u00e2\u0086\u0092 |de|este| when occurring as a contraction (Preposition + Demonstrative)\nThis tool achieves a f-score of 99.72%.\n\nLX-Tokenizer was developed and is maintained at University of Lisbon by the NLX-Natural Language and Speech Group of the Department of Informatics.\n;2012-11-23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "90e8438a-1b37-5b1a-a5a2-6ccd0697ddf6",
+    "notes": [
+        "The present tool, that was built to deal with Portuguese-specific issues concerning a few non-trivial cases that involve tokenization-ambigous strings, segments text into lexically relevant tokens, using whitespace as the separator. Note that, in these examples, the | (vertical bar) symbol is used to mark the token boundaries clearier:\n\t\n\tum exemplo \u00e2\u0086\u0092 |um|exemplo|\n\nExpands contractions. Note that the first element of an expanded contraction is marked with an _ (underscore) symbol:\n\n\tdo \u00e2\u0086\u0092 |de_|o|\n\nMarks spacing around punctuation or symbols. The \\* and the */ symbols indicate a space to the left and a space to the right, respectively:\n\num, dois e tr\u00c3\u00aas \u00e2\u0086\u0092 |um|,*/|dois|e|tr\u00c3\u00aas|\n 5.3 \u00e2\u0086\u0092 |5|.|3|\n 1. 2 \u00e2\u0086\u0092 |1|.*/|2|\n 8 . 6 \u00e2\u0086\u0092 |8|\\*.*/|6|\n\nDetaches clitic pronouns from the verb. The detached pronoun is marked with a - (hyphen) symbol. When in mesoclisis, a -CL- mark is used to signal the original position of the detached clitic. Additionally, possible vocalic alterations of the verb form are marked with a # (hash) symbol:\n\n\td\u00c3\u00a1-se-lho \u00e2\u0086\u0092 |d\u00c3\u00a1|-se|-lhe|-o|\n\tafirmar-se-ia \u00e2\u0086\u0092 |afirmar-CL-ia|-se|\n\tv\u00c3\u00aa-las \u00e2\u0086\u0092 |v\u00c3\u00aa#|-las|\n\nThis tool also handles ambiguous strings. These are words that, depending on their particular occurrence, can be tokenized in different ways. For instance:\n\ndeste \u00e2\u0086\u0092 |deste| when occurring as a Verb\ndeste \u00e2\u0086\u0092 |de|este| when occurring as a contraction (Preposition + Demonstrative)\nThis tool achieves a f-score of 99.72%.\n\nLX-Tokenizer was developed and is maintained at University of Lisbon by the NLX-Natural Language and Speech Group of the Department of Informatics.\n"
+    ],
+    "oai_identifier": [
+        "ffc1c2b0357f11e2a2aa782bcb074135a0708b33105c49d4b11cab77c30d5c75"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "LX-Tokenizer"
+    ]
+}

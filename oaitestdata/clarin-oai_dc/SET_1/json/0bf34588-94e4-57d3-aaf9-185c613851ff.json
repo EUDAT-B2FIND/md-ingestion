@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Delbecque, Nicole"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 54 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0465",
+    "MetadataAccess": [
+        "oai:ota:oucs:0465"
+    ],
+    "PublicationTimestamp": "1969-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1969"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Wymark, Olwen"
+    ],
+    "fulltext": "oai:ota:oucs:0465;2018-07-27T14:11:30Z;http://ota.ox.ac.uk/headers/0465.xml;Stay where you are / Olwen Wymark;Wymark, Olwen;1969;text_and_corpus_linguistics;English drama -- 20th century;eng;Oxford Text Archive, University of Oxford;Delbecque, Nicole;(1 file : ca. 54 KB);Text;Plays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0bf34588-94e4-57d3-aaf9-185c613851ff",
+    "oai_identifier": [
+        "oai:ota:oucs:0465"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "Stay where you are / Olwen Wymark"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0465.xml"
+}

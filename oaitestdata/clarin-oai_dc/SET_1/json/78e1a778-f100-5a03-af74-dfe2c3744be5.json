@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1390982c3aec11e2a2aa782bcb0741350903f12d7d514e119f8386683e41b6f3",
+    "MetadataAccess": [
+        "1390982c3aec11e2a2aa782bcb0741350903f12d7d514e119f8386683e41b6f3"
+    ],
+    "PublicationTimestamp": "2012-11-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "1390982c3aec11e2a2aa782bcb0741350903f12d7d514e119f8386683e41b6f3;2018-11-15T16:39:54Z;lexicalConceptualResource;lexicalConceptualResource:thesaurus;Maltese automatically produced distributional thesaurus;This is an automatically produced distributional thesaurus, which finds words that tend to occur in similar contexts as the target word. It is not a manually constructed thesaurus of synonyms. It was produced by Lexical Computing Ltd on the basis of the MLRS corpus. \nThe file contains lines with the lemma_freq and lemma in first two columns and the rest of the line is a list of up to 20 best matches pairs (lemma+score) that have score at least 0.2.;2012-11-30",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "78e1a778-f100-5a03-af74-dfe2c3744be5",
+    "notes": [
+        "This is an automatically produced distributional thesaurus, which finds words that tend to occur in similar contexts as the target word. It is not a manually constructed thesaurus of synonyms. It was produced by Lexical Computing Ltd on the basis of the MLRS corpus. \nThe file contains lines with the lemma_freq and lemma in first two columns and the rest of the line is a list of up to 20 best matches pairs (lemma+score) that have score at least 0.2."
+    ],
+    "oai_identifier": [
+        "1390982c3aec11e2a2aa782bcb0741350903f12d7d514e119f8386683e41b6f3"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:thesaurus"
+    ],
+    "state": "active",
+    "title": [
+        "Maltese automatically produced distributional thesaurus"
+    ]
+}

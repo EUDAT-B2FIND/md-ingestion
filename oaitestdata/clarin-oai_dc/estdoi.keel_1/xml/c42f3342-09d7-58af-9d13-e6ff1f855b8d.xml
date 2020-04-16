@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:11264659</identifier>
+    <datestamp>2019-05-18T17:26:18Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Vanema eestikeelse algup&#228;rase ilukirjanduse kogu</dc:title>
+      <dc:title xml:lang="en">Collection of older original Estonian-language works of fiction</dc:title>
+      <dc:creator>Laak, Marin</dc:creator>
+      <dc:creator>Asmer, Vilve</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-06-01</dc:date>
+      <dc:date>Updated: 2018-02-07</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-00088L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Eesti vanema ilukirjanduse tekstide kogu veebikeskkonnas "Kreutzwaldi sajand. Eesti kultuurilooline veeb." Kollektsioonis elektrooniliselt taasavaldatud raamatud p&#245;hinevad olulisemate Eesti autorite aastatel 1854-1944 ilmunud esmatr&#252;kkidel. Tekstid on esitatud keeleparandusteta, kuid tehniliselt redigeeritud. "Kreutzwaldi sajand. Eesti kultuurilooline veeb" esitab raamatud kolmes versioonis: 1) skaneeritud pildina originaalesmatr&#252;kist, 2) html-versioonina, mille lehek&#252;ljed
+vastavad tr&#252;kitud raamatu lehek&#252;lgedele, 3) allalaetava e-pubina.
+Kui kontakteerute ressursi haldajatega, siis v&#245;ite teadusotstarveteks kasutamiseks saada tekstikorpuse. See sisaldab valikut veebikeskkonnas saadaval olevatest raamatutest, mis on teisendatud tekstifailideks. Tekstifailidele on igaks juhuks lisatud ka originaalfailid. HTML-failidest teisendatud tekstifailid sisaldavad HTML-vormingust tingitud reavahetusi, mida algsetes tekstides ei olnud.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Web collection of older Estonian literary texts "Kreutzwald's Century: the Estonian Cultural History Web". The electronically republished books, included in the collection, are based on the first editions of works by more important Estonian authors, published in 1854-1944. The language of the texts has not been edited, but technical corrections have been made. "Kreutzwald's Century: the Estonian Cultural History Web" presents books in three versions: 1) scanned images of the original first edition; 2) a html-version; 3) a downloadable e-pub. 
+The text corpus contains a selection of books accessible on the web, which have been converted into text files. Original files have also been added to the text files. The text files which were converted from the html-files contain, due to the html-formatting, additional line breaks which were not present in the original texts. The html/text versions correspond to the original printed book page layout and the page numbers are also included. Please contact us to gain access to the text corpus.
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

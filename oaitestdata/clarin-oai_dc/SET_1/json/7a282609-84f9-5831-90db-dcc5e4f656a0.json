@@ -1,0 +1,96 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/542",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/542"
+    ],
+    "PID": "http://hdl.handle.net/11321/542",
+    "PublicationTimestamp": "2018-07-23T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Janicki, Maciej",
+        "Koco\u0144, Jan",
+        "Marci\u0144czuk, Micha\u0142",
+        "Piasecki, Dominik",
+        "Kaczmarek, Adam",
+        "Krautforst, Micha\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/542;2018-07-23T10:47:12Z;hdl_11321_3;hdl_11321_4;Liner2.5;Marci\u0144czuk, Micha\u0142;Koco\u0144, Jan;Kaczmarek, Adam;Krautforst, Micha\u0142;Piasecki, Dominik;Janicki, Maciej;Liner2;NER;information extraction;named entites;temporal expressions;spatial expressions;events;relation extraction;Generic framework for information extraction tasks, including recognition of named entities, temporal expressions, spatial expressions and events.;2018-07-23;toolService;http://hdl.handle.net/11321/542;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Wroc\u0142aw University of Science and Technology;http://nlp.pwr.wroc.pl/liner2",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7a282609-84f9-5831-90db-dcc5e4f656a0",
+    "notes": [
+        "Generic framework for information extraction tasks, including recognition of named entities, temporal expressions, spatial expressions and events."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/542"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Liner"
+        },
+        {
+            "name": "NER"
+        },
+        {
+            "name": "information extraction"
+        },
+        {
+            "name": "named entites"
+        },
+        {
+            "name": "temporal expressions"
+        },
+        {
+            "name": "spatial expressions"
+        },
+        {
+            "name": "events"
+        },
+        {
+            "name": "relation extraction"
+        }
+    ],
+    "title": [
+        "Liner2.5"
+    ],
+    "url": ""
+}

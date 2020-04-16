@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 255 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0215",
+    "MetadataAccess": [
+        "oai:ota:oucs:0215"
+    ],
+    "PublicationTimestamp": "1888-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1888"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Maupassant, Guy de, 1850-1893"
+    ],
+    "fulltext": "oai:ota:oucs:0215;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0215.xml;Pierre et Jean;Maupassant, Guy de, 1850-1893;1888;text_and_corpus_linguistics;Novels -- France -- 19th century;fra;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 255 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "37034e63-0090-5c72-8570-990d63bb306a",
+    "oai_identifier": [
+        "oai:ota:oucs:0215"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- France -- th century"
+        }
+    ],
+    "title": [
+        "Pierre et Jean"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0215.xml"
+}

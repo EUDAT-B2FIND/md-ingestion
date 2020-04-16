@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "NASA/IPAC Infrared Science Archive"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://irsa.ipac/Bolocam_GPS/Catalog/BGPSv2.1",
+    "PublicationTimestamp": "2016-07-23T23:21:14Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "NASA/IPAC Infrared Science Archive"
+    ],
+    "RelatedIdentifier": [
+        "ivo://irsa.ipac/Bolocam_GPS/Catalog/BGPSv2.1"
+    ],
+    "ResourceType": [
+        "Catalog"
+    ],
+    "author": [
+        "Bolocam GPS team"
+    ],
+    "fulltext": "ivo://irsa.ipac/Bolocam_GPS/Catalog/BGPSv2.1;2016-07-23T23:21:14Z;Bolocam Galactic Plane Survey Catalog v2.1;ivo://irsa.ipac/Bolocam_GPS/Catalog/BGPSv2.1;NASA/IPAC Infrared Science Archive;Bolocam GPS team;galactic plane survey;The Version 2 release (hereafter v2) of the BGPS data includes images and a catalog. It is described in Ginsburg et al (2013).\n\n        The new images have improved fidelity and more uniform noise. The fields include all those in the original v1 release and some new data. There are new fields included in the BGPS v2 release, primarily in the outer galaxy but including some expansions in the inner galaxy. These include M17, IRAS 22172, a significant expansion in l and b around the l=110 region, Mon R2, NGC 2264, parts of the Orion A and B clouds, Sharpless 235, and scattered IRAS+CO selected fields at longitude 119, 123, 126, 129, 154, 169, 181, 182, 195, 201, and 217. IRSA provides a coverage map.\n\n        There is a new catalog associated with the v2 images. The sources were extracted using Bolocat with parameters set in the same way as for the v1 catalog. There are many sources in v1 that are not in v2 and vice-versa. These discrepancies occur primarily for faint sources with low signal-to-noise. Objects in both catalogs are likely to be real since catalog parameters were selected to minimize false positives. Changing the quality of the images and the structure of the noise highlights some new objects and obscures others. The v2 catalog has about a 75% overlap with the v1 catalog. The differences are explored in more detail in the Ginsburg et al (2013).\n\n        The flux calibration offset identified in the version 1 data is now understood. The version 2 data are brighter, on average, by approximately a factor 1.5, but the factor varies from source to source. The v2 catalog should be used instead of the v1 catalog. The source of the error was the incorrect application of a flux calibration solution.\n\n        Contreras et al (2013) noted a 4.7 arcsecond offset between the BGPS v1 catalog and the ATLASGAL catalog. We believe this is caused by an offset of that magnitude (~3-4 arcseconds) in a few fields that have an inordinate number of sources extracted; the pointing accuracy in the vast majority of the BGPS fields, based on a comparison to Herschel Hi-Gal images, is better than 4 arcseconds, but the mean offset is within 2 arcseconds of zero.;Catalog",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0bdc9ea1-e701-5f6d-908b-2113cd9fa6bd",
+    "notes": [
+        "The Version 2 release (hereafter v2) of the BGPS data includes images and a catalog. It is described in Ginsburg et al (2013).\n\n        The new images have improved fidelity and more uniform noise. The fields include all those in the original v1 release and some new data. There are new fields included in the BGPS v2 release, primarily in the outer galaxy but including some expansions in the inner galaxy. These include M17, IRAS 22172, a significant expansion in l and b around the l=110 region, Mon R2, NGC 2264, parts of the Orion A and B clouds, Sharpless 235, and scattered IRAS+CO selected fields at longitude 119, 123, 126, 129, 154, 169, 181, 182, 195, 201, and 217. IRSA provides a coverage map.\n\n        There is a new catalog associated with the v2 images. The sources were extracted using Bolocat with parameters set in the same way as for the v1 catalog. There are many sources in v1 that are not in v2 and vice-versa. These discrepancies occur primarily for faint sources with low signal-to-noise. Objects in both catalogs are likely to be real since catalog parameters were selected to minimize false positives. Changing the quality of the images and the structure of the noise highlights some new objects and obscures others. The v2 catalog has about a 75% overlap with the v1 catalog. The differences are explored in more detail in the Ginsburg et al (2013).\n\n        The flux calibration offset identified in the version 1 data is now understood. The version 2 data are brighter, on average, by approximately a factor 1.5, but the factor varies from source to source. The v2 catalog should be used instead of the v1 catalog. The source of the error was the incorrect application of a flux calibration solution.\n\n        Contreras et al (2013) noted a 4.7 arcsecond offset between the BGPS v1 catalog and the ATLASGAL catalog. We believe this is caused by an offset of that magnitude (~3-4 arcseconds) in a few fields that have an inordinate number of sources extracted; the pointing accuracy in the vast majority of the BGPS fields, based on a comparison to Herschel Hi-Gal images, is better than 4 arcseconds, but the mean offset is within 2 arcseconds of zero."
+    ],
+    "oai_identifier": [
+        "ivo://irsa.ipac/Bolocam_GPS/Catalog/BGPSv2.1"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "galactic plane survey"
+        }
+    ],
+    "title": [
+        "The Version 2 release (hereafter v2) of the BGPS data includes images and a catalog. It is described in Ginsburg et al (2013).\n\n        The new images have improved fidelity and more uniform noise. The fields include all those in the original v1 release and some new data. There are new fields included in the BGPS v2 release, primarily in the outer galaxy but including some expansions in the inner galaxy. These include M17, IRAS 22172, a significant expansion in l and b around the l=110 region, Mon R2, NGC 2264, parts of the Orion A and B clouds, Sharpless 235, and scattered IRAS+CO selected fields at longitude 119, 123, 126, 129, 154, 169, 181, 182, 195, 201, and 217. IRSA provides a coverage map.\n\n        There is a new catalog associated with the v2 images. The sources were extracted using Bolocat with parameters set in the same way as for the v1 catalog. There are many sources in v1 that are not in v2 and vice-versa. These discrepancies occur primarily for faint sources with low signal-to-noise. Objects in both catalogs are likely to be real since catalog parameters were selected to minimize false positives. Changing the quality of the images and the structure of the noise highlights some new objects and obscures others. The v2 catalog has about a 75% overlap with the v1 catalog. The differences are explored in more detail in the Ginsburg et al (2013).\n\n        The flux calibration offset identified in the version 1 data is now understood. The version 2 data are brighter, on average, by approximately a factor 1.5, but the factor varies from source to source. The v2 catalog should be used instead of the v1 catalog. The source of the error was the incorrect application of a flux calibration solution.\n\n        Contreras et al (2013) noted a 4.7 arcsecond offset between the BGPS v1 catalog and the ATLASGAL catalog. We believe this is caused by an offset of that magnitude (~3-4 arcseconds) in a few fields that have an inordinate number of sources extracted; the pointing accuracy in the vast majority of the BGPS fields, based on a comparison to Herschel Hi-Gal images, is better than 4 arcseconds, but the mean offset is within 2 arcseconds of zero."
+    ]
+}

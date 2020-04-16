@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:ota:oucs:2470</identifier>
+    <datestamp>2018-02-16T10:42:05Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cld="http://purl.org/cld/terms/">
+      <dc:identifier>http://ota.ox.ac.uk/headers/2470.xml</dc:identifier>
+      <dc:title>The Brooklyn Corpus of Old English : TEI XML conformant edition</dc:title>
+      <dc:date>2002-08</dc:date>
+      <dc:subject>text_and_corpus_linguistics</dc:subject>
+      <dc:subject>English language--Old English, ca. 450-1100</dc:subject>
+      <dc:subject>Linguistic analysis (Linguistics)</dc:subject>
+      <dc:subject>English prose literature Old English, ca. 450-1100</dc:subject>
+      <dc:language>ang</dc:language>
+      <dc:description>The Brooklyn Corpus is an annotated version of prose texts from the Old English Section of the Helsinki Corpus, representing a range of dates of composition, authors, and genres. It contains more than 106 000 words of Old English; the samples from the the longer texts are 5000 to 10 000 words in length. The texts are syntactically and morphologically annotated, and each Old English word is glossed. Besides the syntactic annotation, the TEI.2 [XML conformant] edition of the Brooklyn Corpus contains all the annotations from the original edition, i.e. part-of-speech tags, complete morphology, lemmata, and Modern English glosses. </dc:description>
+      <dc:publisher>Oxford Text Archive, University of Oxford</dc:publisher>
+      <dc:contributor>Ruef, Beni</dc:contributor>
+      <dc:contributor>Ruef, Beni</dc:contributor>
+      <dc:format>text/xml</dc:format>
+      <dc:format>(24 files : ca. 8.82 MB)</dc:format>
+      <dc:type>Text</dc:type>
+      <dc:type>Linguistic corpora</dc:type>
+      <dc:rights>Although this resource has been deposited with us, it is not currently available for re-use by others.</dc:rights>
+      <dc:rights>http://www.ota.ox.ac.uk/documents/user_agreement.xml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

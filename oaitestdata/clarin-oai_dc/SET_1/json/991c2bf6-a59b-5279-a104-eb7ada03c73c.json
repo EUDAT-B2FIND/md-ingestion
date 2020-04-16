@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/339",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/339"
+    ],
+    "PID": "http://hdl.handle.net/11321/339",
+    "PublicationTimestamp": "2017-03-03T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "K\u0119dzia, Pawe\u0142",
+        "Ry\u015bnik, B\u0142a\u017cej",
+        "Koco\u0144, Jan",
+        "Marci\u0144czuk, Micha\u0142",
+        "Maciejewski, Henryk",
+        "Kali\u0144ski, Micha\u0142",
+        "Oleksy, Marcin",
+        "Piasecki, Maciej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/339;2017-03-03T13:29:51Z;hdl_11321_3;hdl_11321_4;Keyword Extractor;Kali\u0144ski, Micha\u0142;Piasecki, Maciej;Oleksy, Marcin;Marci\u0144czuk, Micha\u0142;Koco\u0144, Jan;K\u0119dzia, Pawe\u0142;Ry\u015bnik, B\u0142a\u017cej;Maciejewski, Henryk;keywords;text analysis;textrank;Tool for extracting key phrases for text, using TextRank algorithm.;2017-03-03;toolService;http://hdl.handle.net/11321/339;pol;application/gzip;downloadable_files_count: 1;Wroc\u0142aw University of Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "991c2bf6-a59b-5279-a104-eb7ada03c73c",
+    "notes": [
+        "Tool for extracting key phrases for text, using TextRank algorithm."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/339"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "keywords"
+        },
+        {
+            "name": "text analysis"
+        },
+        {
+            "name": "textrank"
+        }
+    ],
+    "title": [
+        "Keyword Extractor"
+    ],
+    "url": ""
+}

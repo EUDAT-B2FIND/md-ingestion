@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "A"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1461",
+    "MetadataAccess": [
+        "oai:ota:oucs:1461"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Day, John"
+    ],
+    "fulltext": "oai:ota:oucs:1461;2018-04-16T15:30:51Z;http://ota.ox.ac.uk/headers/1461.xml;Humour out of breath (contractions expanded);Day, John;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;A;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f2c903bb-d9db-5386-afd0-c59277a03fb6",
+    "oai_identifier": [
+        "oai:ota:oucs:1461"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Humour out of breath (contractions expanded)"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1461.xml"
+}

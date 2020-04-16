@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0013/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Spiwok, Vojtech</dc:creator>
+      <dc:creator>&#352;u&#263;ur, Zoran</dc:creator>
+      <dc:creator>K&#345;&#237;&#382;, Pavel</dc:creator>
+      <dc:title>Free-Energy Surface Prediction by Flying Gaussian Method: Numerical Proof</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-04-17</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>metadynamics</dc:subject>
+      <dc:subject>flying Gaussian method</dc:subject>
+      <dc:subject>molecular dynamics simulation</dc:subject>
+      <dc:subject>sampling</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0013/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0013/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Biomolecular simulations have a great potential in protein engineering, drug discovery and many other fields. Unfortunately, this method is computationally expensive, so many interesting processes cannot be routinely studied. In order to address this problem we developed Flying Gaussian method [Journal of Chemical Theory and Computation 12, 4644-4650 (2016)]. This method simultaneously simulates multiple replicas of the studied system and disfavor replicas with similar structures by artificial bias potential. The question arises how to calculate an unbiased free energy surface from a biased simulation. This dataset demonstrates together with mathematical arguments supports application of Umbrella Sampling reweighing method, despite the fact that this method is designed for methods with a time-independent bias potential.
+&lt;br/&gt;
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

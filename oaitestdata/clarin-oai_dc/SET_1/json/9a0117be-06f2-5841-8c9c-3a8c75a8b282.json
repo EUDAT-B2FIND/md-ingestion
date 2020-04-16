@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-90",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-90"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-90",
+    "PublicationTimestamp": "2012-12-10T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/248064",
+        "http://www.lrec-conf.org/proceedings/lrec2012/summaries/390.html"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Rubino, Francesco",
+        "Quochi, Valeria",
+        "Caselli, Tommaso",
+        "Frontini, Francesca"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-90;2018-09-28T07:47:48Z;hdl_000-c0-111_38;hdl_000-c0-111_49;SCF Extractor (language indipendent);Rubino, Francesco;Caselli, Tommaso;Frontini, Francesca;Quochi, Valeria;Subcategorisation frames extraction;Automatic lexical acquisition;CoNLL-X input format;The 'SCF Extractor (language independent)' is a service that performs inductive subcategorisation extraction from dependency parsed texts, formatted according to the CoNLL-X format. The SCF Extractor tool was developed at CNR-ILC and deployed as a soap web service within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu). This version of the tool/service was not optimized for any language.; it requires 2 input data: 1) a dependency parsed text corpus the CONLL-X format; 2) a list of verb lemmas for which the subcategorization frames will be extracted.;2012-12-10;toolService;http://hdl.handle.net/20.500.11752/ILC-90;info:eu-repo/grantAgreement/EC/FP7/248064;http://www.lrec-conf.org/proceedings/lrec2012/summaries/390.html;downloadable_files_count: 0;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.panacea-lr.eu/system/deliverables/PANACEA_D6.2.pdf",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9a0117be-06f2-5841-8c9c-3a8c75a8b282",
+    "notes": [
+        "The 'SCF Extractor (language independent)' is a service that performs inductive subcategorisation extraction from dependency parsed texts, formatted according to the CoNLL-X format. The SCF Extractor tool was developed at CNR-ILC and deployed as a soap web service within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu). This version of the tool/service was not optimized for any language.; it requires 2 input data: 1) a dependency parsed text corpus the CONLL-X format; 2) a list of verb lemmas for which the subcategorization frames will be extracted."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-90"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Subcategorisation frames extraction"
+        },
+        {
+            "name": "Automatic lexical acquisition"
+        },
+        {
+            "name": "CoNLL-X input format"
+        }
+    ],
+    "title": [
+        "SCF Extractor (language indipendent)"
+    ],
+    "url": ""
+}

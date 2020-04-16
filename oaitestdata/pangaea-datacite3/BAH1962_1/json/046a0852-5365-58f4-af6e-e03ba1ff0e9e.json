@@ -1,0 +1,86 @@
+{
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.56713"
+    ],
+    "PublicationTimestamp": "2000-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "SpatialCoverage": "(54N-54N,8 E-8 E)",
+    "TempCoverageBegin": 61889313599,
+    "TempCoverageEnd": 61889313599,
+    "TemporalCoverage": " point in time : 1962-03-13T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1962-03-13T11:59:59Z",
+    "TemporalCoverage:EndDate": "1962-03-13T11:59:59Z",
+    "author": [
+        "Gillbricht, Max"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.56713;2018-04-19T08:41:44Z;BAH1962;https://doi.pangaea.de/10.1594/PANGAEA.56713;Gillbricht, Max;Helgoland transects 1962;PANGAEA - Data Publisher for Earth & Environmental Science;2000;DATE/TIME;LATITUDE;LONGITUDE;DEPTH, water;Temperature, water;Salinity;Phosphate;Nitrate;Nitrite;Ammonium;Nitrogen, inorganic, dissolved;Reversing thermometer;Titration, chloride (Grasshoff et al., 1983, Verlag Chemie GmbH Weinheim);Photometer, molybdene blue, reduct SnCl;Reduction by hydrazin;Photometer, azo-dye (Bendschneider & Robinson, 1952, J Mar Res, 11:87-96);Bordeaux red, improved by Gillbricht, 1961;Calculated (sum of Nitrate, Nitrite, Ammonium);HelgolandTransects;Uth\u00f6rn;Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland) (BAH);Long-term Ecological Research at AWI (LTER);Alfred Wegener Institute - Biological Institute Helgoland;1962-03-13T12:00:00/1962-12-13T12:00:00;eng;Dataset;2093 data points;text/tab-separated-values;53.5667 7.8 54.25 8.4833",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.56713"
+    ],
+    "oai_set": [
+        "BAH1962"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[7.8,53.5667],[7.8,54.25],[8.4833,54.25],[8.4833,53.5667],[7.8,53.5667]]]}",
+    "tags": [
+        {
+            "name": "Reversing thermometer"
+        },
+        {
+            "name": "Titration"
+        },
+        {
+            "name": "chloride Grasshoff et al."
+        },
+        {
+            "name": "Verlag Chemie GmbH Weinheim"
+        },
+        {
+            "name": "Photometer"
+        },
+        {
+            "name": "molybdene blue"
+        },
+        {
+            "name": "reduct SnCl"
+        },
+        {
+            "name": "Reduction hydrazin"
+        },
+        {
+            "name": "Photometer"
+        },
+        {
+            "name": "azo-dye Bendschneider"
+        },
+        {
+            "name": "Robinson"
+        },
+        {
+            "name": "J Mar Res"
+        }
+    ],
+    "title": [
+        "Helgoland transects 1962"
+    ],
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.56713"
+}

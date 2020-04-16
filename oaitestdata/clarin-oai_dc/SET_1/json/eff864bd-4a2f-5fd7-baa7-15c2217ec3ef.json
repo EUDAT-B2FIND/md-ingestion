@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Akademicka"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-121734",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-121734"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CD9-E",
+    "PublicationTimestamp": "1637-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1637"
+    ],
+    "Publisher": [
+        "Drukarnia Akademicka"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/121734",
+        "oai:jbc.bj.uj.edu.pl:publication:129465"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Gi\u017cycki, Stefan ( -1644)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-121734;2019-02-28T18:05:14Z;Alchimia W Raiv Przesadzona Z Zyw\u0105 Y Vmar\u0142\u0105 Smierci\u0105 Przed Bramami Pierwszego Y Ostatniego Dni, Jego Mo\u015bci P. Stephana Jacynicza S\u0142onimskiego Powiatv Marsza\u0142ka. : Na pogrzebie Roku 1637. Dnia 3. Februarij [...] wyprawiona;Gi\u017cycki, Stefan ( -1644);starodruki 17\u00a0w.;Piasecki, Piotr (15..-16..). Adr. ded.;Drukarnia Akademicka;1637;starodruk;application/xml;clarind-uds:poldilemma-121734;hdl:11858/00-246C-0000-0023-8CD9-E;Biblioteka Jagiello\u0144ska, BJ St. Dr. 25499 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/121734;oai:jbc.bj.uj.edu.pl:publication:129465;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "eff864bd-4a2f-5fd7-baa7-15c2217ec3ef",
+    "notes": [
+        "Piasecki, Piotr (15..-16..). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-121734"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Alchimia W Raiv Przesadzona Z Zyw\u0105 Y Vmar\u0142\u0105 Smierci\u0105 Przed Bramami Pierwszego Y Ostatniego Dni, Jego Mo\u015bci P. Stephana Jacynicza S\u0142onimskiego Powiatv Marsza\u0142ka. : Na pogrzebie Roku 1637. Dnia 3. Februarij [...] wyprawiona"
+    ],
+    "url": ""
+}

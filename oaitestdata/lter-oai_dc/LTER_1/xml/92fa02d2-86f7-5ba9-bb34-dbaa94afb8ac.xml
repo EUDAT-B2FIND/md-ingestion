@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.fz-juelich.de:b2rec/45e0d33b77f5406db83429cf82cbb82d</identifier>
+    <datestamp>2018-01-17T07:57:11Z</datestamp>
+    <setSpec>d952913c-451e-4b5c-817e-d578dc8a4469</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Environment Agency Austria</dc:creator>
+      <dc:date>2017-08-01T13:06:09.923666+00:00</dc:date>
+      <dc:description>Description of terms used in the columns SUBPROG, MEDIUM, TLEVEL, SUBST, UNIT, FLAGQUA and FLAGSTA in the respective data set</dc:description>
+      <dc:identifier>http://hdl.handle.net/11097/7bb7b76e-c295-4b43-a14f-aed36121d668</dc:identifier>
+      <dc:identifier>https://b2share.fz-juelich.de/api/records/45e0d33b77f5406db83429cf82cbb82d</dc:identifier>
+      <dc:identifier>oai:b2share.fz-juelich.de:b2rec/45e0d33b77f5406db83429cf82cbb82d</dc:identifier>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:title>LTER Z&#246;belboden, Austria, Reference documentation</dc:title>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/30",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/30"
+    ],
+    "PID": "http://hdl.handle.net/11321/30",
+    "PublicationTimestamp": "2010-08-09T11:59:59Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Zawadzki, Maciej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/30;2016-01-19T13:52:47Z;hdl_11321_3;hdl_11321_4;Tagger WS;Zawadzki, Maciej;Tagger-WS is a web service that reads Polish text and outputs sentences divided into tokens where each token is labelled with a morphosyntactic tag and a lemma. The tagger uses NKJP tagset and Morfeusz SGJP analyser. The service is based on WCRFT.;2010-08-09;toolService;http://hdl.handle.net/11321/30;pol;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://clarin-pl.eu/synat/ws/tagger/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fff2c7f1-6178-560e-be36-bd97ed5520fd",
+    "notes": [
+        "Tagger-WS is a web service that reads Polish text and outputs sentences divided into tokens where each token is labelled with a morphosyntactic tag and a lemma. The tagger uses NKJP tagset and Morfeusz SGJP analyser. The service is based on WCRFT."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/30"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Tagger WS"
+    ],
+    "url": ""
+}

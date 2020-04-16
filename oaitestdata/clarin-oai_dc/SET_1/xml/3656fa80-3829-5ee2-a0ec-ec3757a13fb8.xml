@@ -1,0 +1,173 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2842</identifier>
+    <datestamp>2018-08-16T11:45:05Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Annotated corpora and tools of the PARSEME Shared Task on Automatic Identification of Verbal Multiword Expressions (edition 1.1)</dc:title>
+      <dc:creator>Ramisch, Carlos</dc:creator>
+      <dc:creator>Cordeiro, Silvio Ricardo</dc:creator>
+      <dc:creator>Savary, Agata</dc:creator>
+      <dc:creator>Vincze, Veronika</dc:creator>
+      <dc:creator>Barbu Mititelu, Verginica</dc:creator>
+      <dc:creator>Bhatia, Archna</dc:creator>
+      <dc:creator>Buljan, Maja</dc:creator>
+      <dc:creator>Candito, Marie</dc:creator>
+      <dc:creator>Gantar, Polona</dc:creator>
+      <dc:creator>Giouli, Voula</dc:creator>
+      <dc:creator>G&#252;ng&#246;r, Tunga</dc:creator>
+      <dc:creator>Hawwari, Abdelati</dc:creator>
+      <dc:creator>I&#241;urrieta, Uxoa</dc:creator>
+      <dc:creator>Kovalevskait&#279;, Jolanta</dc:creator>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Lichte, Timm</dc:creator>
+      <dc:creator>Liebeskind, Chaya</dc:creator>
+      <dc:creator>Monti, Johanna</dc:creator>
+      <dc:creator>Parra Escart&#237;n, Carla</dc:creator>
+      <dc:creator>QasemiZadeh, Behrang</dc:creator>
+      <dc:creator>Ramisch, Renata</dc:creator>
+      <dc:creator>Schneider, Nathan</dc:creator>
+      <dc:creator>Stoyanova, Ivelina</dc:creator>
+      <dc:creator>Vaidya, Ashwini</dc:creator>
+      <dc:creator>Walsh, Abigail</dc:creator>
+      <dc:creator>Aceta, Cristina</dc:creator>
+      <dc:creator>Aduriz, Itziar</dc:creator>
+      <dc:creator>Antoine, Jean-Yves</dc:creator>
+      <dc:creator>Arhar Holdt, &#352;pela</dc:creator>
+      <dc:creator>Berk, G&#246;zde</dc:creator>
+      <dc:creator>Bielinskien&#279;, Agn&#279;</dc:creator>
+      <dc:creator>Blagus, Goranka</dc:creator>
+      <dc:creator>Boizou, Loic</dc:creator>
+      <dc:creator>Bonial, Claire</dc:creator>
+      <dc:creator>Caruso, Valeria</dc:creator>
+      <dc:creator>&#268;ibej, Jaka</dc:creator>
+      <dc:creator>Constant, Matthieu</dc:creator>
+      <dc:creator>Cook, Paul</dc:creator>
+      <dc:creator>Diab, Mona</dc:creator>
+      <dc:creator>Dimitrova, Tsvetana</dc:creator>
+      <dc:creator>Ehren, Rafael</dc:creator>
+      <dc:creator>Elbadrashiny, Mohamed</dc:creator>
+      <dc:creator>Elyovich, Hevi</dc:creator>
+      <dc:creator>Erden, Berna</dc:creator>
+      <dc:creator>Estarrona, Ainara</dc:creator>
+      <dc:creator>Fotopoulou, Aggeliki</dc:creator>
+      <dc:creator>Foufi, Vassiliki</dc:creator>
+      <dc:creator>Geeraert, Kristina</dc:creator>
+      <dc:creator>van Gompel, Maarten</dc:creator>
+      <dc:creator>Gonzalez, Itziar</dc:creator>
+      <dc:creator>Gurrutxaga, Antton</dc:creator>
+      <dc:creator>Ha-Cohen Kerner, Yaakov</dc:creator>
+      <dc:creator>Ibrahim, Rehab</dc:creator>
+      <dc:creator>Ionescu, Mihaela</dc:creator>
+      <dc:creator>Jain, Kanishka</dc:creator>
+      <dc:creator>Jazbec, Ivo-Pavao</dc:creator>
+      <dc:creator>Kav&#269;i&#269;, Teja</dc:creator>
+      <dc:creator>Klyueva, Natalia</dc:creator>
+      <dc:creator>Kocijan, Kristina</dc:creator>
+      <dc:creator>Kov&#225;cs, Vikt&#243;ria</dc:creator>
+      <dc:creator>Kuzman, Taja</dc:creator>
+      <dc:creator>Leseva, Svetlozara</dc:creator>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Malka, Ruth</dc:creator>
+      <dc:creator>Markantonatou, Stella</dc:creator>
+      <dc:creator>Mart&#237;nez Alonso, H&#233;ctor</dc:creator>
+      <dc:creator>Matas, Ivana</dc:creator>
+      <dc:creator>McCrae, John</dc:creator>
+      <dc:creator>de Medeiros Caseli, Helena</dc:creator>
+      <dc:creator>Onofrei, Mihaela</dc:creator>
+      <dc:creator>Palka-Binkiewicz, Emilia</dc:creator>
+      <dc:creator>Papadelli, Stella</dc:creator>
+      <dc:creator>Parmentier, Yannick</dc:creator>
+      <dc:creator>Pascucci, Antonio</dc:creator>
+      <dc:creator>Pasquer, Caroline</dc:creator>
+      <dc:creator>Pia di Buono, Maria</dc:creator>
+      <dc:creator>Puri, Vandana</dc:creator>
+      <dc:creator>Raffone, Annalisa</dc:creator>
+      <dc:creator>Ratori, Shraddha</dc:creator>
+      <dc:creator>Riccio, Anna</dc:creator>
+      <dc:creator>Sangati, Federico</dc:creator>
+      <dc:creator>Shukla, Vishakha</dc:creator>
+      <dc:creator>Simk&#243;, Katalin</dc:creator>
+      <dc:creator>&#352;najder, Jan</dc:creator>
+      <dc:creator>Somers, Clarissa</dc:creator>
+      <dc:creator>Srivastava, Shubham</dc:creator>
+      <dc:creator>Stefanova, Valentina</dc:creator>
+      <dc:creator>Taslimipoor, Shiva</dc:creator>
+      <dc:creator>Theoxari, Natasa</dc:creator>
+      <dc:creator>Todorova, Maria</dc:creator>
+      <dc:creator>Urizar, Ruben</dc:creator>
+      <dc:creator>Villavicencio, Aline</dc:creator>
+      <dc:creator>Zilio, Leonardo</dc:creator>
+      <dc:subject>Multiword expressions</dc:subject>
+      <dc:subject>verbal multiword expressions</dc:subject>
+      <dc:subject>light-verb constructions</dc:subject>
+      <dc:subject>verb-particle constructions</dc:subject>
+      <dc:subject>inherently reflexive verbs</dc:subject>
+      <dc:subject>verbal idioms</dc:subject>
+      <dc:subject>multi-verb constructions</dc:subject>
+      <dc:description>This multilingual resource contains corpora in which verbal MWEs have been manually annotated. VMWEs include idioms (let the cat out of the bag), light-verb constructions (make a decision), verb-particle constructions (give up), inherently reflexive verbs (help oneself), and multi-verb constructions (make do). VMWEs were annotated according to the universal guidelines in 19 languages. The corpora are provided in the cupt format, inspired by the CONLL-U format. The corpora were used in the 1.1 edition of the PARSEME Shared Task (2018).&#13;
+ &#13;
+For most languages, morphological and syntactic information &#173;&#173;&#173;&#173;&#8211; not necessarily using UD tagsets &#8211; including parts of speech, lemmas, morphological features and/or syntactic dependencies are also provided. Depending on the language, the information comes from treebanks (e.g., Universal Dependencies) or from automatic parsers trained on treebanks (e.g., UDPipe).&#13;
+ &#13;
+This item contains training, development and test data, as well as the evaluation tools used in the PARSEME Shared Task 1.1 (2018).&#13;
+&#13;
+The annotation guidelines are available online: http://parsemefr.lif.univ-mrs.fr/parseme-st-guidelines/1.1</dc:description>
+      <dc:date>2018-04-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2842</dc:identifier>
+      <dc:language>bul</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>fas</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>heb</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>lit</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>tur</dc:language>
+      <dc:language>hin</dc:language>
+      <dc:language>eus</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:relation>http://aclweb.org/anthology/W18-4925</dc:relation>
+      <dc:relation>http://hdl.handle.net/11372/LRT-2282</dc:relation>
+      <dc:rights>PARSEME Shared Task Data (v. 1.1) Agreement</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-mwe-1.1</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 22</dc:format>
+      <dc:publisher>PARSEME</dc:publisher>
+      <dc:source>http://multiword.sf.net/sharedtask2018</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

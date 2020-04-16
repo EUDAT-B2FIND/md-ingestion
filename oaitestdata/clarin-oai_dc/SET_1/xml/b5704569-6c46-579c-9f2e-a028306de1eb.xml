@@ -1,0 +1,104 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2209</identifier>
+    <datestamp>2019-01-02T14:28:01Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>C4Corpus (publicdomain part)</dc:title>
+      <dc:creator>Gurevych, Iryna</dc:creator>
+      <dc:creator>Habernal, Ivan</dc:creator>
+      <dc:creator>Zayed, Omnia</dc:creator>
+      <dc:subject>CommonCrawl</dc:subject>
+      <dc:subject>Creative Commons</dc:subject>
+      <dc:subject>Web corpus</dc:subject>
+      <dc:subject>Amazon Web Services</dc:subject>
+      <dc:description>A large web corpus (over 10 billion tokens) licensed under CreativeCommons license family in 50+ languages that has been extracted from CommonCrawl, the largest publicly available general Web crawl to date with about 2 billion crawled URLs.</dc:description>
+      <dc:date>2016-04-14</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2209</dc:identifier>
+      <dc:language>afr</dc:language>
+      <dc:language>ara</dc:language>
+      <dc:language>bul</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>dan</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>fas</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>ind</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>jpn</dc:language>
+      <dc:language>kor</dc:language>
+      <dc:language>lav</dc:language>
+      <dc:language>lit</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>nor</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>som</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>swa</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:language>tgl</dc:language>
+      <dc:language>tha</dc:language>
+      <dc:language>tur</dc:language>
+      <dc:language>ukr</dc:language>
+      <dc:language>und</dc:language>
+      <dc:language>vie</dc:language>
+      <dc:relation>http://www.lrec-conf.org/proceedings/lrec2016/pdf/388_Paper.pdf</dc:relation>
+      <dc:rights>Public Domain Mark (PD)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>http://creativecommons.org/publicdomain/mark/1.0/</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>downloadable_files_count: 36</dc:format>
+      <dc:publisher>Technische Universit&#228;t Darmstadt</dc:publisher>
+      <dc:source>https://dkpro.github.io/dkpro-c4corpus/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

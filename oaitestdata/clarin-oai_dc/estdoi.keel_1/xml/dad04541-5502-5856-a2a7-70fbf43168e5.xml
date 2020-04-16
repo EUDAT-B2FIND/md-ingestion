@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9352886</identifier>
+    <datestamp>2019-05-19T17:37:13Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Vene-eesti s&#245;naraamat</dc:title>
+      <dc:title xml:lang="en">The Russian-Estonian Dictionary</dc:title>
+      <dc:title xml:lang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1086;-&#1101;&#1089;&#1090;&#1086;&#1085;&#1089;&#1082;&#1080;&#1081; &#1089;&#1083;&#1086;&#1074;&#1072;&#1088;&#1100;</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:creator>Kallas, Jelena</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-10-19</dc:date>
+      <dc:date>Updated: 2017-05-09</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05B5BL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">1984&#8211;1994 ilmunud 4-k&#246;itelise &#8222;Vene-eesti s&#245;naraamatu&#8220; parandatud versioon. Sisaldab &#252;ldkeele k&#245;rval hulganisti oskuss&#245;navara ja fraseoloogiat.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The entry list of the dictionary contains ca 74,000 words. Most of the entries include a number of typical word combinations for the entry word, which illustrate its semantic nuances and present the user with the most widespread uses of the word in a ready-made form.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

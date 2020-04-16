@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=41eced9cabc711e1a404080027e73ea2fd1949c0f7104c8a984017468f75157a",
+    "MetadataAccess": [
+        "41eced9cabc711e1a404080027e73ea2fd1949c0f7104c8a984017468f75157a"
+    ],
+    "PublicationTimestamp": "2013-01-31T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "41eced9cabc711e1a404080027e73ea2fd1949c0f7104c8a984017468f75157a;2018-11-15T16:39:31Z;corpus;corpus:text;Maltese Wikipedia;This corpus is part of the collection of the Wikipedia Dumps which was retrieved from  wikipedia.org on April 8, 2010.  It comes with two individual XML files, one containing the Wikipedia articles and another containing the metadata about it.\n;2013-01-31",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "385a50e7-ffa8-5780-9313-341797cb8d35",
+    "notes": [
+        "This corpus is part of the collection of the Wikipedia Dumps which was retrieved from  wikipedia.org on April 8, 2010.  It comes with two individual XML files, one containing the Wikipedia articles and another containing the metadata about it.\n"
+    ],
+    "oai_identifier": [
+        "41eced9cabc711e1a404080027e73ea2fd1949c0f7104c8a984017468f75157a"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Maltese Wikipedia"
+    ]
+}

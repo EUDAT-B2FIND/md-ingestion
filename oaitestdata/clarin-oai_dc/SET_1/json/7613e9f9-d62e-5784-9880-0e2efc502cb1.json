@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=97afe362bc8c11e1a404080027e73ea2f06e1efdb7704ba6a6382afe4ae3e127",
+    "MetadataAccess": [
+        "97afe362bc8c11e1a404080027e73ea2f06e1efdb7704ba6a6382afe4ae3e127"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "97afe362bc8c11e1a404080027e73ea2f06e1efdb7704ba6a6382afe4ae3e127;2018-11-15T16:39:29Z;toolService;toolService:tool;UIMA/U-Compare GENIA Sentence Detector;The purpose of the tool is to detect sentence boundaries in English text. It is trained on the GENIA corpus of biomedical abstracts and so is particularly suitable for splitting sentences in biomedical texts. The tool is provided as a UIMA component, which forms part of the in-built library of components provided with the U-Compare platform for building and evaluating text mining workflows. The U-Compare Workbench, which provides a graphical drag-and drop interface for the rapid creation of workflows. \n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7613e9f9-d62e-5784-9880-0e2efc502cb1",
+    "notes": [
+        "The purpose of the tool is to detect sentence boundaries in English text. It is trained on the GENIA corpus of biomedical abstracts and so is particularly suitable for splitting sentences in biomedical texts. The tool is provided as a UIMA component, which forms part of the in-built library of components provided with the U-Compare platform for building and evaluating text mining workflows. The U-Compare Workbench, which provides a graphical drag-and drop interface for the rapid creation of workflows. \n"
+    ],
+    "oai_identifier": [
+        "97afe362bc8c11e1a404080027e73ea2f06e1efdb7704ba6a6382afe4ae3e127"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "UIMA/U-Compare GENIA Sentence Detector"
+    ]
+}

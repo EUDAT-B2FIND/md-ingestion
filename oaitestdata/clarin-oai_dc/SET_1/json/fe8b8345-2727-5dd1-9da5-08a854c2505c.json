@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=6999c3ca328011e2a2aa782bcb07413549c1bda35a744cecabaf17f115501fb1",
+    "MetadataAccess": [
+        "6999c3ca328011e2a2aa782bcb07413549c1bda35a744cecabaf17f115501fb1"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "6999c3ca328011e2a2aa782bcb07413549c1bda35a744cecabaf17f115501fb1;2018-11-15T16:39:50Z;toolService;toolService:tool;UIMA/U-Compare STEPP Tagger;Part-of-speech tagger tuned to biomedical text.\n\nThe tool is provided as a UIMA component, which forms part of the in-built library of components provided with the U-Compare platform (see separate META-SHARE record)  for building and evaluating text mining workflows. The U-Compare Workbench (see separate META-SHARE record) provides a graphical drag-and drop interface for the rapid creation of workflows. \n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fe8b8345-2727-5dd1-9da5-08a854c2505c",
+    "notes": [
+        "Part-of-speech tagger tuned to biomedical text.\n\nThe tool is provided as a UIMA component, which forms part of the in-built library of components provided with the U-Compare platform (see separate META-SHARE record)  for building and evaluating text mining workflows. The U-Compare Workbench (see separate META-SHARE record) provides a graphical drag-and drop interface for the rapid creation of workflows. \n"
+    ],
+    "oai_identifier": [
+        "6999c3ca328011e2a2aa782bcb07413549c1bda35a744cecabaf17f115501fb1"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "UIMA/U-Compare STEPP Tagger"
+    ]
+}

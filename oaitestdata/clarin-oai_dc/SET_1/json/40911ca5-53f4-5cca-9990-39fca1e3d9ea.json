@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Leona Mamonicza"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84357",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84357"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D39-C",
+    "PublicationTimestamp": "1622-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1622"
+    ],
+    "Publisher": [
+        "Drukarnia Leona Mamonicza"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/84357",
+        "oai:jbc.bj.uj.edu.pl:publication:90966"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Rochowicz, Stanis\u0142aw ( -1636)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84357;2019-03-01T17:40:47Z;Kazanie Na Rocznicy \u015b. pami\u0119ci Jasnie Wielmo\u017cnego Pana [...] Iana Karola Chodkiewicza [...] Woiewody Wile\u0144skiego, Hetmana Wielkiego X. Lith: [...];Rochowicz, Stanis\u0142aw ( -1636);starodruki 17\u00a0w.;Chodkiewiczowa, Anna Alojza (1600-1654). Adr. ded.;Drukarnia Leona Mamonicza;[1622];starodruk;application/xml;clarind-uds:poldilemma-84357;hdl:11858/00-246C-0000-0023-8D39-C;Biblioteka Jagiello\u0144ska, BJ St. Dr. 25517 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/84357;oai:jbc.bj.uj.edu.pl:publication:90966;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "40911ca5-53f4-5cca-9990-39fca1e3d9ea",
+    "notes": [
+        "Chodkiewiczowa, Anna Alojza (1600-1654). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84357"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Kazanie Na Rocznicy \u015b. pami\u0119ci Jasnie Wielmo\u017cnego Pana [...] Iana Karola Chodkiewicza [...] Woiewody Wile\u0144skiego, Hetmana Wielkiego X. Lith: [...]"
+    ],
+    "url": ""
+}

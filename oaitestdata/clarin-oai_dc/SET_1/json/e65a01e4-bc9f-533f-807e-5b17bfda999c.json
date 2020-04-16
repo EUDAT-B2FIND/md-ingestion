@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-72",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-72"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-72",
+    "PublicationTimestamp": "2017-03-17T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/327146"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Rubino, Francesco"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-72;2018-09-06T13:37:17Z;hdl_000-c0-111_38;hdl_000-c0-111_49;Freeling IT;Rubino, Francesco;Wsdl;Soap webservice;Text analysis;Sentence splitting;Tokenization;POS tagging;Morphological analysis;Freeling IT is a web service that performs sentence splitting, tokenization, part-of-speech tagging, morphological analysis and lemmatization on Italian texts only. It was originally deployed within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu) and implements the Freeling 2.1 libraries with no modification of the original code (which is available at http://devel.cpl.upc.edu/freeling/downloads?order=time&desc=1).\r\nFor a description of the Freeling tool see Llu\u00eds Padr\u00f3 and Miquel Collado and Samuel Reese and Marina Lloberes and Irene Castell\u00f3n. FreeLing 2.1: Five Years of Open-Source Language Processing Tools Proceedings of 7th Language Resources and Evaluation Conference (LREC 2010), ELRA La Valletta, Malta. May, 2010.;2017-03-17;toolService;http://hdl.handle.net/20.500.11752/ILC-72;ita;info:eu-repo/grantAgreement/EC/FP7/327146;downloadable_files_count: 0;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.panacea-lr.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e65a01e4-bc9f-533f-807e-5b17bfda999c",
+    "notes": [
+        "Freeling IT is a web service that performs sentence splitting, tokenization, part-of-speech tagging, morphological analysis and lemmatization on Italian texts only. It was originally deployed within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu) and implements the Freeling 2.1 libraries with no modification of the original code (which is available at http://devel.cpl.upc.edu/freeling/downloads?order=time&desc=1).\r\nFor a description of the Freeling tool see Llu\u00eds Padr\u00f3 and Miquel Collado and Samuel Reese and Marina Lloberes and Irene Castell\u00f3n. FreeLing 2.1: Five Years of Open-Source Language Processing Tools Proceedings of 7th Language Resources and Evaluation Conference (LREC 2010), ELRA La Valletta, Malta. May, 2010."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-72"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Wsdl"
+        },
+        {
+            "name": "Soap webservice"
+        },
+        {
+            "name": "Text analysis"
+        },
+        {
+            "name": "Sentence splitting"
+        },
+        {
+            "name": "Tokenization"
+        },
+        {
+            "name": "POS tagging"
+        },
+        {
+            "name": "Morphological analysis"
+        }
+    ],
+    "title": [
+        "Freeling IT"
+    ],
+    "url": ""
+}

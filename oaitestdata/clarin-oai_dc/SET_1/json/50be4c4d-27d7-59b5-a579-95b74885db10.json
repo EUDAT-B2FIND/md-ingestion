@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Lancashire, Ian"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 44 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1033",
+    "MetadataAccess": [
+        "oai:ota:oucs:1033"
+    ],
+    "PublicationTimestamp": "1565-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1565"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Wager, W. (William)"
+    ],
+    "fulltext": "oai:ota:oucs:1033;2018-03-05T10:37:10Z;http://ota.ox.ac.uk/headers/1033.xml;Enough is as good as a feast / W. Wager;A comedy or enterlude intitled : Inough is as good as a feast;Wager, W. (William);1565;text_and_corpus_linguistics;English drama -- Early modern and Elizabethan, 1500-1600;eng;Oxford Text Archive, University of Oxford;Lancashire, Ian;(1 file : ca. 44 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "50be4c4d-27d7-59b5-a579-95b74885db10",
+    "oai_identifier": [
+        "oai:ota:oucs:1033"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- Early modern Elizabethan"
+        }
+    ],
+    "title": [
+        "Enough is as good as a feast / W. Wager",
+        "A comedy or enterlude intitled : Inough is as good as a feast"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1033.xml"
+}

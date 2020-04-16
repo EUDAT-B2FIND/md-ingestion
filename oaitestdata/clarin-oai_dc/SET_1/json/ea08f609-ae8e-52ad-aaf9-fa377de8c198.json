@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "IFIS PAN"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "downloadable_files_count: 10",
+        "application/vnd.oasis.opendocument.text",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/409",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/409"
+    ],
+    "PID": "http://hdl.handle.net/11321/409",
+    "PublicationTimestamp": "2017-06-29T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "IFIS PAN"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Szulc, B.J",
+        "Kowallski, Jan, Jr"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/409;2017-06-29T07:52:35Z;hdl_11321_3;hdl_11321_4;Korpus testowy;Kowallski, Jan, Jr;Szulc, B.J;literatura pi\u0119kna,;literatura polska;korpus testowy na warsztaty clarin-pl;2017-06-29;corpus;http://hdl.handle.net/11321/409;pol;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;text/plain;application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.oasis.opendocument.text;text/plain;text/plain;application/vnd.oasis.opendocument.text;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;downloadable_files_count: 10;IFIS PAN",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ea08f609-ae8e-52ad-aaf9-fa377de8c198",
+    "notes": [
+        "korpus testowy na warsztaty clarin-pl"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/409"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "literatura pi\u0119kna"
+        },
+        {
+            "name": "literatura polska"
+        }
+    ],
+    "title": [
+        "Korpus testowy"
+    ],
+    "url": ""
+}

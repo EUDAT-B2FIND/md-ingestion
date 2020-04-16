@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Ingham, Patricia"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 799 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0539",
+    "MetadataAccess": [
+        "oai:ota:oucs:0539"
+    ],
+    "PublicationTimestamp": "1895-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1895"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hardy, Thomas, 1840-1928"
+    ],
+    "fulltext": "oai:ota:oucs:0539;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0539.xml;Jude the obscure / Thomas Hardy;Hardy, Thomas, 1840-1928;1895;text_and_corpus_linguistics;English fiction -- 19th century;eng;Oxford Text Archive, University of Oxford;Ingham, Patricia;Ingham, Patricia;(1 file : ca. 799 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "da064b0e-67d8-56ab-96da-6c3ad9ab1bea",
+    "oai_identifier": [
+        "oai:ota:oucs:0539"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English fiction -- th century"
+        }
+    ],
+    "title": [
+        "Jude the obscure / Thomas Hardy"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0539.xml"
+}

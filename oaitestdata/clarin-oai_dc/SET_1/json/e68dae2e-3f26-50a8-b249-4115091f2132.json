@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2377",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2377"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2377",
+    "PublicationTimestamp": "2017-08-28T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11234/1-2605"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Baran\u010d\u00edkov\u00e1, Petra",
+        "Kettnerov\u00e1, V\u00e1clava"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2377;2018-07-02T22:05:54Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;ParaDi 2.0;Baran\u010d\u00edkov\u00e1, Petra;Kettnerov\u00e1, V\u00e1clava;multiword expressions;light verb construction;paraphrases;idioms;ParaDi 2.0. is a dictionary of single verb paraphrases of Czech verbal multiword expressions - light verb constructions and idiomatic verb constructions.  Moreover, it provides an elaborated set of morphological, syntactic and semantic features, including information on aspectual counterparts of verbs or paraphrasability conditions of given verbs.\r\n\r\nThe format of ParaDi has been designed with respect to both human and machine readability - the dictionary is  represented as a plain table in  TSV format, as it is a flexible and language-independent data format.;2017-08-28;lexicalConceptualResource;http://hdl.handle.net/11234/1-2377;ces;http://hdl.handle.net/11234/1-2605;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e68dae2e-3f26-50a8-b249-4115091f2132",
+    "notes": [
+        "ParaDi 2.0. is a dictionary of single verb paraphrases of Czech verbal multiword expressions - light verb constructions and idiomatic verb constructions.  Moreover, it provides an elaborated set of morphological, syntactic and semantic features, including information on aspectual counterparts of verbs or paraphrasability conditions of given verbs.\r\n\r\nThe format of ParaDi has been designed with respect to both human and machine readability - the dictionary is  represented as a plain table in  TSV format, as it is a flexible and language-independent data format."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2377"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "multiword expressions"
+        },
+        {
+            "name": "light verb construction"
+        },
+        {
+            "name": "paraphrases"
+        },
+        {
+            "name": "idioms"
+        }
+    ],
+    "title": [
+        "ParaDi 2.0"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4393",
+    "MetadataAccess": [
+        "oai:ota:oucs:4393"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "MacNally, Leonard, 1752-1820."
+    ],
+    "fulltext": "oai:ota:oucs:4393;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4393.xml;Richard Coeur de Lion: A comic opera, as performed at the Theatre Royal Covent Garden. Taken from a French comedy of the same name, written by Monsieur Sedaine; by Leonard Macnally, Esq.;MacNally, Leonard, 1752-1820.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "926cd0fc-9c81-5d1a-9fc6-fc6a92494594",
+    "oai_identifier": [
+        "oai:ota:oucs:4393"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Richard Coeur de Lion: A comic opera, as performed at the Theatre Royal Covent Garden. Taken from a French comedy of the same name, written by Monsieur Sedaine; by Leonard Macnally, Esq."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4393.xml"
+}

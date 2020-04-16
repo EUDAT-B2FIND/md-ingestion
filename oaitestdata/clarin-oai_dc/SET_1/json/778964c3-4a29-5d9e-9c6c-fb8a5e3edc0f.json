@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(1 file : ca. 31.4 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0584",
+    "MetadataAccess": [
+        "oai:ota:oucs:0584"
+    ],
+    "PublicationTimestamp": "1609-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1609"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Middleton, Thomas, d. 1627"
+    ],
+    "fulltext": "oai:ota:oucs:0584;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0584.xml;Sir Robert Sherley : sent ambassadour in the name of the King of Persia, to Sigismond the Third, King of Poland and Swecia, and to other princes of Europe : his royall entertainement into Cracovia, the cheife citie of Poland, with his pretended comming into England : also, the honourable praise of the same Sir Robert Sherley, given unto him in that kingdome, and here likewise inserted;Middleton, Thomas, d. 1627;1609;text_and_corpus_linguistics;Eulogies -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 31.4 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "778964c3-4a29-5d9e-9c6c-fb8a5e3edc0f",
+    "oai_identifier": [
+        "oai:ota:oucs:0584"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Eulogies -- England -- th century"
+        }
+    ],
+    "title": [
+        "Sir Robert Sherley : sent ambassadour in the name of the King of Persia, to Sigismond the Third, King of Poland and Swecia, and to other princes of Europe : his royall entertainement into Cracovia, the cheife citie of Poland, with his pretended comming into England : also, the honourable praise of the same Sir Robert Sherley, given unto him in that kingdome, and here likewise inserted"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0584.xml"
+}

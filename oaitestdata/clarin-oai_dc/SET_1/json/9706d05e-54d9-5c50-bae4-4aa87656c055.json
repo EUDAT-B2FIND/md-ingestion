@@ -1,0 +1,55 @@
+{
+    "Contact": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "Contributor": [
+        "Withers, Peter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1213",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1213"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1213",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1213;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;KinOath Kinship Archiver;Withers, Peter;KinOath Kinship Archiver is a kinship application with the primary goal of connecting kinship data with archived data, such as audio, video or written resources while also being closely integrated with the archive software such as Arbil. Beyond this primary goal it is designed to be flexible and culturally nonspecific, such that culturally different social structures can equally be represented. Kin type strings are used throughout the application for constructing and searching data sets. The representation of kin terms is also integrated into the application allowing comparative diagrams of kin terms. Graphical representation of the data is an important part of the application and the diagrams produced are intended to very flexible and of publishable quality.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1213;downloadable_files_count: 0;Max Planck Institute for Psycholinguistics;http://tla.mpi.nl/tools/tla-tools/kinoath/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9706d05e-54d9-5c50-bae4-4aa87656c055",
+    "notes": [
+        "KinOath Kinship Archiver is a kinship application with the primary goal of connecting kinship data with archived data, such as audio, video or written resources while also being closely integrated with the archive software such as Arbil. Beyond this primary goal it is designed to be flexible and culturally nonspecific, such that culturally different social structures can equally be represented. Kin type strings are used throughout the application for constructing and searching data sets. The representation of kin terms is also integrated into the application allowing comparative diagrams of kin terms. Graphical representation of the data is an important part of the application and the diagrams produced are intended to very flexible and of publishable quality."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1213"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "KinOath Kinship Archiver"
+    ],
+    "url": ""
+}

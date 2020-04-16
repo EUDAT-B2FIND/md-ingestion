@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/42",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/42"
+    ],
+    "PID": "http://hdl.handle.net/10794/42",
+    "PublicationTimestamp": "2012-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/42;2017-10-27T11:19:58Z;hdl_10794_1;hdl_10794_2;Swedberg's Swensk Ordabok (2017-10-16);Swedbergs Swensk ordabok (2017-10-16);n/a, n/a;Swedish;Dictionary;Swedberg's Swensk Ordabok. 18th century.;Swedbergs Swensk ordabok.;2012-05-30;lexicalConceptualResource;http://hdl.handle.net/10794/42;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/swedberg",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "54b17c2f-4f3a-53ab-939c-30025c233201",
+    "notes": [
+        "Swedberg's Swensk Ordabok. 18th century.",
+        "Swedbergs Swensk ordabok."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/42"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Dictionary"
+        }
+    ],
+    "title": [
+        "Swedberg's Swensk Ordabok (2017-10-16)",
+        "Swedbergs Swensk ordabok (2017-10-16)"
+    ],
+    "url": ""
+}

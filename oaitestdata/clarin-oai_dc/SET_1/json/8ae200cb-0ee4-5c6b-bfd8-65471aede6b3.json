@@ -1,0 +1,58 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1142",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1142"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1142",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1142;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;DWDS-W\u00f6rterbuch;Germanistik;setzt sich zusammen aus dem Deutschen W\u00f6rterbuch, dem W\u00f6rterbuch der Deutschen Gegenwartssprache (WDG) sowie dem Etymologischen W\u00f6rterbuch des Deutschen (EtymWb);2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1142;deu;downloadable_files_count: 0;Germany;http://www.dwds.de/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8ae200cb-0ee4-5c6b-bfd8-65471aede6b3",
+    "notes": [
+        "setzt sich zusammen aus dem Deutschen W\u00f6rterbuch, dem W\u00f6rterbuch der Deutschen Gegenwartssprache (WDG) sowie dem Etymologischen W\u00f6rterbuch des Deutschen (EtymWb)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1142"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "DWDS-W\u00f6rterbuch"
+    ],
+    "url": ""
+}

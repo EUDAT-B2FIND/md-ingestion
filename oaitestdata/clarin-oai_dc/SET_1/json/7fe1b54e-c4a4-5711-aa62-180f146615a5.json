@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Maciej Duklewski"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 86",
+        "text/plain; charset=utf-8",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/509",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/509"
+    ],
+    "PID": "http://hdl.handle.net/11321/509",
+    "PublicationTimestamp": "2018-07-13T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Maciej Duklewski"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Duklewski, Maciej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/509;2018-07-13T13:48:51Z;hdl_11321_3;hdl_11321_4;Korpus testowy;Duklewski, Maciej;test;Du\u017cy Pok\u00f3j;2018-07-13;corpus;http://hdl.handle.net/11321/509;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;downloadable_files_count: 86;Maciej Duklewski",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7fe1b54e-c4a4-5711-aa62-180f146615a5",
+    "notes": [
+        "Du\u017cy Pok\u00f3j"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/509"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "test"
+        }
+    ],
+    "title": [
+        "Korpus testowy"
+    ],
+    "url": ""
+}

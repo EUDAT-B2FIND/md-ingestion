@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technolgy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/15",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/15"
+    ],
+    "PID": "http://hdl.handle.net/11321/15",
+    "PublicationTimestamp": "2012-04-18T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technolgy"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Radziszewski, Adam"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/15;2014-09-30T13:07:50Z;hdl_11321_3;hdl_11321_4;IOBBER;Radziszewski, Adam;IOBBER is a chunker for Polish. Its job is to recognise syntactic phrases (chunks) in Polish text.\r\nThe name comes from IOB tags that are assigned to tokens to represent chunks (strictly speaking, we use IOB2 representation).\r\nHere is an example sentence annotated with NP and VP chunks:;2012-04-18;toolService;http://hdl.handle.net/11321/15;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;downloadable_files_count: 0;Wroc\u0142aw University of Technolgy;Wroc\u0142aw University of Technolgy;http://nlp.pwr.wroc.pl/redmine/projects/iobber/wiki",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3ca473ac-6c0d-5bad-9634-ffddfcd4e954",
+    "notes": [
+        "IOBBER is a chunker for Polish. Its job is to recognise syntactic phrases (chunks) in Polish text.\r\nThe name comes from IOB tags that are assigned to tokens to represent chunks (strictly speaking, we use IOB2 representation).\r\nHere is an example sentence annotated with NP and VP chunks:"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/15"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "IOBBER"
+    ],
+    "url": ""
+}

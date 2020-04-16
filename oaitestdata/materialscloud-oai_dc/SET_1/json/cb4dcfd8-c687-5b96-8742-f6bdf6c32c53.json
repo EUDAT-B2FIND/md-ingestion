@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0020/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0020/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0020/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-12-04T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Cheng, Bingqing",
+        "Engel, Edgar",
+        "Behler, J\u00f6rg",
+        "Dellago, Christoph",
+        "Ceriotti, Michele"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0020/v1;2019-06-12Z;DOI;Dataset;Cheng, Bingqing;Engel, Edgar;Behler, J\u00f6rg;Dellago, Christoph;Ceriotti, Michele;Ab initio thermodynamics of liquid and solid water: supplemental materials;Materials Cloud;2018-12-04;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;Machine learning potential;Machine learning potential training set;Free energy calculation input files;doi:10.24435/materialscloud:2018.0020/v1;https://archive.materialscloud.org/2018.0020/v1;en;Thermodynamic properties of liquid water as well as hexagonal (Ih) and cubic (Ic) ice are predicted based on density functional theory at the hybrid-functional level, rigorously taking into account quantum nuclear motion, anharmonic fluctuations and proton disorder. This is made possible by combining advanced free energy methods and state-of-the-art machine learning techniques. The ab initio description leads to structural properties in excellent agreement with experiments, and reliable estimates of the melting points of light and heavy water. We observe that nuclear quantum effects contribute a crucial 0.2 meV/H2O to the stability of ice Ih, making it more stable than ice Ic. Our computational approach is general and transferable, providing a comprehensive framework for quantitative predictions of ab initio thermodynamic properties using machine learning potentials as an intermediate step.\n<br/>\n\n<br/>\nIn this set of supplemental materials, we have included the neural network potential for bulk water, including its training set in two different formats. We have also included the input files for running free energy calculations.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "cb4dcfd8-c687-5b96-8742-f6bdf6c32c53",
+    "notes": [
+        "Thermodynamic properties of liquid water as well as hexagonal (Ih) and cubic (Ic) ice are predicted based on density functional theory at the hybrid-functional level, rigorously taking into account quantum nuclear motion, anharmonic fluctuations and proton disorder. This is made possible by combining advanced free energy methods and state-of-the-art machine learning techniques. The ab initio description leads to structural properties in excellent agreement with experiments, and reliable estimates of the melting points of light and heavy water. We observe that nuclear quantum effects contribute a crucial 0.2 meV/H2O to the stability of ice Ih, making it more stable than ice Ic. Our computational approach is general and transferable, providing a comprehensive framework for quantitative predictions of ab initio thermodynamic properties using machine learning potentials as an intermediate step.\n<br/>\n\n<br/>\nIn this set of supplemental materials, we have included the neural network potential for bulk water, including its training set in two different formats. We have also included the input files for running free energy calculations."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0020/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Machine learning potential"
+        },
+        {
+            "name": "Machine learning potential training set"
+        },
+        {
+            "name": "Free energy calculation input files"
+        }
+    ],
+    "title": [
+        "Ab initio thermodynamics of liquid and solid water: supplemental materials"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0020/v1"
+}

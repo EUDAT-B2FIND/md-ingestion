@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "Drukarnia J.K.M. Societatis Jesu"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-553",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-553"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D22-F",
+    "PublicationTimestamp": "1740-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1740"
+    ],
+    "Publisher": [
+        "Drukarnia J.K.M. Societatis Jesu"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/553"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Pu\u0142aski, Franciszek (-1738)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-553;2019-03-01T15:39:47Z;Kr\u00f3tka Annotacya Seym\u00f3w Warszawskich, Grodzie\u0144skich, takze Elekcyi y Koronacyi Nayiasniejszych Kr\u00f3l\u00f3w Ichmo\u015bci\u00f3w Polskich y Jana Kazimierza, Micha\u0142a, Jana III y Augusta II, tudzie\u017c za Panowania ich Kampaniy corocznie odprawionych, publicznieyszych Dziei\u00f3w y Rewolucyi ab Anno 1648 ad Annum 1733;Pu\u0142aski, Franciszek (-1738);Denhoff Stanis\u0142aw (- 1728);Jan III Sobieski (kr\u00f3l Polski ; 1629-1696);Lubomirski Hieronim (ca 1647 - 1706);Po\u0142tawa;Powstanie Chmielnickiego 1648 r.;Sieniawska Zofia;Sieniawski Adam Miko\u0142aj (1666 - 1726);Sobieski Jakub (1667 - 1737);Zwi\u0105zek Baranowskiego;ilo\u015b\u0107 skan\u00f3w: 86 ; sygn. St- 354;Drukarnia J.K.M. Societatis Jesu;1740;starodruk;application/xml;clarind-uds:poldilemma-553;hdl:11858/00-246C-0000-0023-8D22-F;pol;lat;http://pbc.biaman.pl/Content/553;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b8027978-9c46-5b48-953e-3e5d2a5ba2a6",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 86 ; sygn. St- 354"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-553"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Jan III Sobieski kr\u00f3l Polski"
+        },
+        {
+            "name": "Lubomirski Hieronim ca -"
+        },
+        {
+            "name": "Lubomirski Hieronim ca -"
+        },
+        {
+            "name": "Powstanie Chmielnickiego r."
+        },
+        {
+            "name": "Sieniawska Zofia"
+        },
+        {
+            "name": "Sieniawska Zofia"
+        },
+        {
+            "name": "Sobieski Jakub -"
+        },
+        {
+            "name": "Sobieski Jakub -"
+        }
+    ],
+    "title": [
+        "Kr\u00f3tka Annotacya Seym\u00f3w Warszawskich, Grodzie\u0144skich, takze Elekcyi y Koronacyi Nayiasniejszych Kr\u00f3l\u00f3w Ichmo\u015bci\u00f3w Polskich y Jana Kazimierza, Micha\u0142a, Jana III y Augusta II, tudzie\u017c za Panowania ich Kampaniy corocznie odprawionych, publicznieyszych Dziei\u00f3w y Rewolucyi ab Anno 1648 ad Annum 1733"
+    ],
+    "url": ""
+}

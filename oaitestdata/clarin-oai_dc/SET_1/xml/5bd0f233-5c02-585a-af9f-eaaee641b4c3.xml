@@ -1,0 +1,64 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/61</identifier>
+    <datestamp>2015-04-07T15:18:32Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Sample20</dc:title>
+      <dc:creator>Pisarze, Pisarze</dc:creator>
+      <dc:description>prus_faraon_1897.txt&#13;
+balucki_przebudzeni_1864.txt&#13;
+reymont_komediantka_1896.txt&#13;
+zeromski_syzyfowe_1897.txt&#13;
+zapolska_kaska_1888.txt&#13;
+kraszewski_piast_1888.txt&#13;
+deotyma_panienka_1893.txt&#13;
+swietochowski_prawdy_1888.txt&#13;
+godlewska_kwiat_1897.txt&#13;
+marrene_bozek_1871.txt&#13;
+balucki_murzyn_1875.txt&#13;
+sygietynski_calvados_1884.txt&#13;
+korzeniowski_krewni_1856.txt&#13;
+deotyma_rozdrozu_1877.txt&#13;
+zeromski_bezdomni_1899.txt&#13;
+korzeniowski_emeryt_1851.txt&#13;
+kaczkowski_grob_1857.txt&#13;
+sienkiewicz_ogniem_1884.txt&#13;
+sienkiewicz_rodzina_1894.txt&#13;
+deotyma_zagadka_1879.txt</dc:description>
+      <dc:date>2015-04-07</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/61</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 20</dc:format>
+      <dc:publisher>ClarinPL</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Max Planck Institute for Psycholinguistics",
+        "University of Stockholm",
+        "Radboud University Nijmegen",
+        "City University London"
+    ],
+    "Contributor": [
+        "Crasborn, Onno"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "video/mpeg",
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-570",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-570"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-570",
+    "PublicationTimestamp": "2004-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2004"
+    ],
+    "Publisher": [
+        "Max Planck Institute for Psycholinguistics",
+        "University of Stockholm",
+        "Radboud University Nijmegen",
+        "City University London"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons BY-NC-SA 3.0 NL license",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/nl/"
+    ],
+    "SpatialCoverage": [
+        "Netherlands (the)||Sweden||United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-570;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;ECHO corpus;Crasborn, Onno;This is a corpus of four European sign languages. It contains richly annotated video files of Sign Language of the Netherlands (Nederlandse Gebarentaal), British Sign Language, and Swedish Sign Language; data include narratives, dialogues, small lexicons, and poetry. In addition, parts of a corpus of German Sign Language (Deutsche Geb\u00e4rdensprache) is included that was already published on paper before.;2004;corpus;http://hdl.handle.net/11372/LRT-570;Creative Commons BY-NC-SA 3.0 NL license;http://creativecommons.org/licenses/by-nc-sa/3.0/nl/;video/mpeg;downloadable_files_count: 0;Netherlands (the)||Sweden||United Kingdom;Radboud University Nijmegen;Max Planck Institute for Psycholinguistics;University of Stockholm;City University London;http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI84302%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "60edab01-9662-5bdf-8da6-93f799cd6d2d",
+    "notes": [
+        "This is a corpus of four European sign languages. It contains richly annotated video files of Sign Language of the Netherlands (Nederlandse Gebarentaal), British Sign Language, and Swedish Sign Language; data include narratives, dialogues, small lexicons, and poetry. In addition, parts of a corpus of German Sign Language (Deutsche Geb\u00e4rdensprache) is included that was already published on paper before."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-570"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "ECHO corpus"
+    ],
+    "url": ""
+}

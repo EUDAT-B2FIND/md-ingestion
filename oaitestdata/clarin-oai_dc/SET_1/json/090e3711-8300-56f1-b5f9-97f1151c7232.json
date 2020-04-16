@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "ZRC SAZU"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1038",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1038"
+    ],
+    "PID": "http://hdl.handle.net/11356/1038",
+    "PublicationTimestamp": "2006-08-31T11:59:59Z",
+    "PublicationYear": [
+        "2006"
+    ],
+    "Publisher": [
+        "ZRC SAZU"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+        "https://creativecommons.org/licenses/by-nc/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jakopin, Primo\u017e"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1038;2017-04-25T08:23:16Z;hdl_11356_1023;hdl_11356_1024;List of Slovenian headwords 1.1;Jakopin, Primo\u017e;headwords;A list of headwords from the collection \"Besede slovenskega jezika\" (Words of Slovenian Language).;2006-08-31;lexicalConceptualResource;http://hdl.handle.net/11356/1038;slv;Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0);https://creativecommons.org/licenses/by-nc/4.0/;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;ZRC SAZU;http://bos.zrc-sazu.si/besede_en.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "090e3711-8300-56f1-b5f9-97f1151c7232",
+    "notes": [
+        "A list of headwords from the collection \"Besede slovenskega jezika\" (Words of Slovenian Language)."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1038"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "headwords"
+        }
+    ],
+    "title": [
+        "List of Slovenian headwords 1.1"
+    ],
+    "url": ""
+}

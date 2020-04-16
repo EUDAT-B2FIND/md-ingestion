@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:6334552</identifier>
+    <datestamp>2019-05-18T09:01:05Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele puudepank</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2015</dc:date>
+      <dc:date>Issued: 2015-06-18</dc:date>
+      <dc:date>Updated: 2015-06-18</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00088L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Morfoloogiliselt ja s&#245;ltuvuss&#252;ntaktiliselt anal&#252;&#252;situd eestikeelsed tekstid, kokku umbes 400 000 s&#245;na 30 000 lauses. Tekstid on p&#228;rit eesti keele Tasakaalus korpusest http://www.cl.ut.ee/korpused/grammatikakorpus/ ja Koondkorpusest http://www.cl.ut.ee/korpused/segakorpus/ ning jagunevad ilukirjanduse, ajakirjanduse, teaduse ja populaarteaduse tekstiklasside vahel. Tekstid on esmalt anal&#252;&#252;situd reeglip&#245;hise, kitsenduste grammatikal p&#245;hineva s&#245;ltuvuss&#252;ntaktilise anal&#252;saatoriga; automaatselt anal&#252;&#252;situd faile on parandatud k&#228;sitsi.
+Publikatsioon: Muischnek, Kadri; M&#252;&#252;risep, Kaili; Puolakainen Tiina (2014). Dependency Parsing of Estonian : Statistical and Rule - based Approaches Human Language Technologies - The Baltic Perspective. Frontiers in Artificial Intelligence and Applications Vol 268. IOS Press, Amsterdam, pp. 111-118. "</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

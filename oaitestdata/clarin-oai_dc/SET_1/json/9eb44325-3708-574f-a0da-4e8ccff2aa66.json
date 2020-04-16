@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English",
+        "Tamil"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1454",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1454"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1454",
+    "PublicationTimestamp": "2014-10-31T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u017dabokrtsk\u00fd, Zden\u011bk",
+        "Bojar, Ond\u0159ej",
+        "Ramasamy, Loganathan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1454;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;EnTam: An English-Tamil Parallel Corpus (EnTam v2.0);Ramasamy, Loganathan;Bojar, Ond\u0159ej;\u017dabokrtsk\u00fd, Zden\u011bk;parallel corpus;EnTam is a sentence aligned English-Tamil bilingual corpus from some of the publicly available websites that we have collected for NLP research involving Tamil. The standard set of processing has been applied on the the raw web data before the data became available in sentence aligned English-Tamil parallel corpus suitable for various NLP tasks. The parallel corpus includes texts from bible, cinema and news domains.;2014-10-31;corpus;http://hdl.handle.net/11234/1-1454;eng;tam;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/~ramasamy/parallel/html/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9eb44325-3708-574f-a0da-4e8ccff2aa66",
+    "notes": [
+        "EnTam is a sentence aligned English-Tamil bilingual corpus from some of the publicly available websites that we have collected for NLP research involving Tamil. The standard set of processing has been applied on the the raw web data before the data became available in sentence aligned English-Tamil parallel corpus suitable for various NLP tasks. The parallel corpus includes texts from bible, cinema and news domains."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1454"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        }
+    ],
+    "title": [
+        "EnTam: An English-Tamil Parallel Corpus (EnTam v2.0)"
+    ],
+    "url": ""
+}

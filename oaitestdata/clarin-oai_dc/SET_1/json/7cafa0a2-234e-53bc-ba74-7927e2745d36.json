@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/x-tar",
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 2"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-EE02-C",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-EE02-C"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0022-EE02-C",
+    "PublicationTimestamp": "2013-11-07T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bojar, Ond\u0159ej",
+        "Tamchyna, Ale\u0161"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-EE02-C;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Plain-Moses-Chimera;Bojar, Ond\u0159ej;Tamchyna, Ale\u0161;moses;machine translation;Statistical component of Chimera, a state-of-the-art MT system.;2013-11-07;toolService;http://hdl.handle.net/11858/00-097C-0000-0022-EE02-C;eng;ces;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/x-gzip;application/x-tar;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7cafa0a2-234e-53bc-ba74-7927e2745d36",
+    "notes": [
+        "Statistical component of Chimera, a state-of-the-art MT system."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-EE02-C"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "moses"
+        },
+        {
+            "name": "machine translation"
+        }
+    ],
+    "title": [
+        "Plain-Moses-Chimera"
+    ],
+    "url": ""
+}

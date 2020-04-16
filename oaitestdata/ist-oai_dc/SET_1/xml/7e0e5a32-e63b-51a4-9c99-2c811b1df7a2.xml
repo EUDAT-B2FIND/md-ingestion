@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:75</identifier>
+    <datestamp>2017-10-04T15:32:49Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Forward migration indexes</dc:title>
+      <dc:creator>Hauschild, Robert</dc:creator>
+      <dc:subject>570 Life sciences; biology</dc:subject>
+      <dc:description>Matlab script to calculate the forward migration indexes (&lt;d_y&gt;/&lt;L&gt;) from TrackMate spot-statistics files.</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>text</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/75/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/75/1/FMI.m</dc:identifier>
+      <dc:identifier>  Hauschild, Robert   Forward migration indexes.  [Data Collection]    (Unpublished)  </dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:75</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

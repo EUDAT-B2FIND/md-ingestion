@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 55.8 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0583",
+    "MetadataAccess": [
+        "oai:ota:oucs:0583"
+    ],
+    "PublicationTimestamp": "1604-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1604"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Middleton, Thomas, d. 1627"
+    ],
+    "fulltext": "oai:ota:oucs:0583;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0583.xml;The blacke booke;Middleton, Thomas, d. 1627;1604;text_and_corpus_linguistics;Fiction -- England -- 17th century;Picaresque fiction -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 55.8 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4d043519-3927-5676-8d05-510a1de479d7",
+    "oai_identifier": [
+        "oai:ota:oucs:0583"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- England -- th century"
+        },
+        {
+            "name": "Picaresque fiction -- England -- th century"
+        }
+    ],
+    "title": [
+        "The blacke booke"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0583.xml"
+}

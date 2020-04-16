@@ -1,0 +1,74 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://ivoa.net/std/ivoadm</oai:identifier>
+    <oai:datestamp>2018-06-16T23:35:21Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:vodm="http://www.ivoa.net/xml/DataModel/v1" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2017-07-24T09:00:00" status="active" updated="2018-05-19T09:00:00" xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.0   http://www.ivoa.net/xml/VOResource/v1.0  http://www.ivoa.net/xml/DataModel/v1   http://www.ivoa.net/xml/DataModel/v1  http://www.ivoa.net/xml/VOResource/v1.0   http://www.ivoa.net/xml/VOResource/v1.0" xsi:type="vodm:DataModel">
+      <title>The ivoa data model</title>
+      <identifier>ivo://ivoa.net/std/ivoadm</identifier>
+      <curation>
+        <publisher>IVOA</publisher>
+        <creator>
+          <name>Lemson, G.</name>
+        </creator>
+        <creator>
+          <name>Laurino, O.</name>
+        </creator>
+        <creator>
+          <name>Bourges, L.</name>
+        </creator>
+        <creator>
+          <name>Cresitello-Dittmar, M.</name>
+        </creator>
+        <creator>
+          <name>Demleitner, M.</name>
+        </creator>
+        <creator>
+          <name>Donaldson, T.</name>
+        </creator>
+        <creator>
+          <name>Dowler, P.</name>
+        </creator>
+        <creator>
+          <name>Graham, M.</name>
+        </creator>
+        <creator>
+          <name>Gray, N.</name>
+        </creator>
+        <creator>
+          <name>Michel, L.</name>
+        </creator>
+        <creator>
+          <name>Salgado, J.</name>
+        </creator>
+        <!-- this should be the date of the last recommendation -->
+        <date role="update">2018-05-19</date>
+        <version>1.0</version>
+        <contact>
+          <name>IVOA Data Models WG</name>
+          <email>dm@ivoa.net</email>
+        </contact>
+      </curation>
+      <content>
+        <subject>Virtual observatory</subject>
+        <description>
+        			Ultimately all types in a VO-DML model are defined as hierarchies 
+        			of primitive types. This Model defines a special, predefined model 
+        			that contains a set of the most common of such types: integer, 
+        			real, string etc. This
+            </description>
+        <referenceURL>http://ivoa.net/documents/VODML/</referenceURL>
+        <type>Other</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>isSupplementTo</relationshipType>
+          <relatedResource ivo-id="ivo://ivoa.net/std/VODML">VO-DML: a consistent modeling language for IVOA data 
+          			models</relatedResource>
+        </relationship>
+      </content>
+      <dm-prefix>ivoa</dm-prefix>
+      <dm-uri>http://www.ivoa.net/dm/ivoa.vo-dml.xml</dm-uri>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

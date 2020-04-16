@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 186 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "Old Proven\u00e7al (to 1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0379",
+    "MetadataAccess": [
+        "oai:ota:oucs:0379"
+    ],
+    "PublicationTimestamp": "1295-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1295"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Jofre de Foix\u00c3\u00a0, 13th cent."
+    ],
+    "fulltext": "oai:ota:oucs:0379;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0379.xml;The Regles de Trobar of Jofre de Foixa;Jofre de Foix\u00c3\u00a0, 13th cent.;1295;text_and_corpus_linguistics;Poems -- France -- 13th century;pro;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 186 KB);Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "de13283a-9e7c-56a6-8e94-f01211a08655",
+    "oai_identifier": [
+        "oai:ota:oucs:0379"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- France -- th century"
+        }
+    ],
+    "title": [
+        "The Regles de Trobar of Jofre de Foixa"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0379.xml"
+}

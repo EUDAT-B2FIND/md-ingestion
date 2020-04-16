@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>9729e1dabc8811e1a404080027e73ea2bfa28a7f771f4cb6a5fb901e346734a2</identifier>
+    <datestamp>2018-11-15T16:39:40Z</datestamp>
+    <setSpec>languageDescription</setSpec>
+    <setSpec>languageDescription:other</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare Type system</dc:title>
+      <dc:description>The resource constitues of a hierarchically-structured system of data types, which is intended to be suitable for describing the inputs and output annotation types of a wide range of natural language processing applications which operate within the UIMA Framework. It is being developed in conjunction with the U-Compare Workbench, but can be used as the base type system for other UIMA components and workflows, to help to ensure greater interoperability. </dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

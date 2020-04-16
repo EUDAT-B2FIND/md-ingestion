@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Wojciech Jaworski"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/337",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/337"
+    ],
+    "PID": "http://hdl.handle.net/11321/337",
+    "PublicationTimestamp": "2016-10-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wojciech Jaworski"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Jaworski, Wojciech"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/337;2017-02-21T08:32:53Z;hdl_11321_3;hdl_11321_4;ENIAMtoolkit;Jaworski, Wojciech;lemmatization;part of speech tagging;tokenization;MWE detection;sentence boundaries detection;ENIAMtoolkit is a collection of libraries that:\r\n- perform tokenization, lemmatization, part of speech tagging;\r\n- detect MWE and abbreviations;\r\n- split text into sentences.;2016-10-01;toolService;http://hdl.handle.net/11321/337;N/A;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 1;Wojciech Jaworski;http://zil.ipipan.waw.pl/ENIAM",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "409c0053-245d-5d1f-8abb-5495f72943e1",
+    "notes": [
+        "ENIAMtoolkit is a collection of libraries that:\r\n- perform tokenization, lemmatization, part of speech tagging;\r\n- detect MWE and abbreviations;\r\n- split text into sentences."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/337"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "lemmatization"
+        },
+        {
+            "name": "part speech tagging"
+        },
+        {
+            "name": "tokenization"
+        },
+        {
+            "name": "MWE detection"
+        },
+        {
+            "name": "sentence boundaries detection"
+        }
+    ],
+    "title": [
+        "ENIAMtoolkit"
+    ],
+    "url": ""
+}

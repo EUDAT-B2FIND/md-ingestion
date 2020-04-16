@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "J. K. Mci v Rzeczypospolitey XX. Scholarum Piarum"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6368",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6368"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D30-D",
+    "PublicationTimestamp": "1782-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1782"
+    ],
+    "Publisher": [
+        "J. K. Mci v Rzeczypospolitey XX. Scholarum Piarum"
+    ],
+    "RelatedIdentifier": [
+        "http://dlibra.bibliotekaelblaska.pl/Content/6368",
+        "oai:dlibra.bibliotekaelblaska.pl:publication:6264"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Ostrowski Teodor"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6368;2019-03-01T17:26:33Z;Inwentarz praw, traktatow y konstytucyi koronnych y W. X. Lit. Od Sejmu Konwokacyinego w R. 1764\u2026.;Ostrowski Teodor;s\u0105downictwo;prawo karne;Towarzystwo Prawnicze;Ostrowski, Teodor;Teodor Ostrowski, historyk i prawnik polski (1750 \u20141802), pijar, profesor Collegium Nobilium i Korpusu kadet\u00f3w. Powo\u0142any przez Sejm Czteroletni do deputacji, kt\u00f3ra mia\u0142a u\u0142o\u017cy\u0107 kodeks cywilny i karny. Tw\u00f3rca prawa s\u0105dowego (proces, prawo prywatne i karne). Przedstawiciel my\u015bli humanitarnej epoki stanis\u0142awowskiej. Czynny uczestnik Towarzystwa Prawniczego. Jego dzie\u0142o \u201eInwentarz praw\u2026\u201d to synteza prawa polskiego. Druk wydany w drukarni J. K. Mci v Rzeczypospolitey XX. Scholarum Piarum w Warszawie. Format 2\u00b0.;J. K. Mci v Rzeczypospolitey XX. Scholarum Piarum;1782;starodruk;application/xml;clarind-uds:poldilemma-6368;hdl:11858/00-246C-0000-0023-8D30-D;XVIII. 3;pol;lat;http://dlibra.bibliotekaelblaska.pl/Content/6368;oai:dlibra.bibliotekaelblaska.pl:publication:6264;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "17739076-5e49-559c-81f1-f37ac6ed9aaa",
+    "notes": [
+        "Teodor Ostrowski, historyk i prawnik polski (1750 \u20141802), pijar, profesor Collegium Nobilium i Korpusu kadet\u00f3w. Powo\u0142any przez Sejm Czteroletni do deputacji, kt\u00f3ra mia\u0142a u\u0142o\u017cy\u0107 kodeks cywilny i karny. Tw\u00f3rca prawa s\u0105dowego (proces, prawo prywatne i karne). Przedstawiciel my\u015bli humanitarnej epoki stanis\u0142awowskiej. Czynny uczestnik Towarzystwa Prawniczego. Jego dzie\u0142o \u201eInwentarz praw\u2026\u201d to synteza prawa polskiego. Druk wydany w drukarni J. K. Mci v Rzeczypospolitey XX. Scholarum Piarum w Warszawie. Format 2\u00b0."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6368"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "prawo karne"
+        },
+        {
+            "name": "Towarzystwo Prawnicze"
+        },
+        {
+            "name": "Ostrowski"
+        },
+        {
+            "name": "Teodor"
+        }
+    ],
+    "title": [
+        "Inwentarz praw, traktatow y konstytucyi koronnych y W. X. Lit. Od Sejmu Konwokacyinego w R. 1764\u2026."
+    ],
+    "url": ""
+}

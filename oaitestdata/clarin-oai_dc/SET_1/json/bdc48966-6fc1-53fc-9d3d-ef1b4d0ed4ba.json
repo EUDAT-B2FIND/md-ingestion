@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F3-0",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F3-0"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-48F3-0",
+    "PublicationTimestamp": "2009-11-02T09:51:39Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Artistic License (Perl) 1.0",
+        "http://opensource.org/licenses/Artistic-Perl-1.0"
+    ],
+    "author": [
+        "Pajas, Petr"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F3-0;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;XSH;Pajas, Petr;XML processing;command-line;XSH is a powerfull command-line tool for querying, processing and editing XML documents. It features a shell-like interface with auto-completion for comfortable interactive work, but can be as well used for off-line (batch) processing of XML data.;2009-11-02T09:51:39Z;toolService;http://hdl.handle.net/11858/00-097C-0000-0001-48F3-0;Artistic License (Perl) 1.0;http://opensource.org/licenses/Artistic-Perl-1.0;text/plain; charset=utf-8;downloadable_files_count: 0;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://xsh.sourceforge.net",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bdc48966-6fc1-53fc-9d3d-ef1b4d0ed4ba",
+    "notes": [
+        "XSH is a powerfull command-line tool for querying, processing and editing XML documents. It features a shell-like interface with auto-completion for comfortable interactive work, but can be as well used for off-line (batch) processing of XML data."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F3-0"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "XML processing"
+        },
+        {
+            "name": "command-line"
+        }
+    ],
+    "title": [
+        "XSH"
+    ],
+    "url": ""
+}

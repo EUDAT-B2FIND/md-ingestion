@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3821",
+    "MetadataAccess": [
+        "oai:ota:oucs:3821"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Richardson, Samuel, 1689-1761."
+    ],
+    "fulltext": "oai:ota:oucs:3821;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3821.xml;An address to the public, on the treatment which the editor of the History of Sir Charles Grandison has met with from certain booksellers and printers in Dublin. Including observations on Mr. Faulkner's defence of himself, published in his Irish news-paper of Nov. 3. 1753;Richardson, Samuel, 1689-1761.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2ec64985-d4b0-5219-9bbe-642916bb16e6",
+    "oai_identifier": [
+        "oai:ota:oucs:3821"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An address to the public, on the treatment which the editor of the History of Sir Charles Grandison has met with from certain booksellers and printers in Dublin. Including observations on Mr. Faulkner's defence of himself, published in his Irish news-paper of Nov. 3. 1753"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3821.xml"
+}

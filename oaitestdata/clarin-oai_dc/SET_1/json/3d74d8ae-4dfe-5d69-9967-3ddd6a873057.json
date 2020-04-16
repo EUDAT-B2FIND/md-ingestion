@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Monaco, James, 1943-"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 767 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0705",
+    "MetadataAccess": [
+        "oai:ota:oucs:0705"
+    ],
+    "PublicationTimestamp": "1985-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1985"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Essays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Monaco, James, 1943-"
+    ],
+    "fulltext": "oai:ota:oucs:0705;2018-02-28T13:57:21Z;http://ota.ox.ac.uk/headers/0705.xml;The connoisseur\u00e2\u0080\u0099s guide to the movies / James Monaco;Monaco, James, 1943-;1985;text_and_corpus_linguistics;Motion pictures -- Reviews;eng;Oxford Text Archive, University of Oxford;Monaco, James, 1943-;(1 file : ca. 767 KB);Text;Essays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3d74d8ae-4dfe-5d69-9967-3ddd6a873057",
+    "oai_identifier": [
+        "oai:ota:oucs:0705"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Motion pictures -- Reviews"
+        }
+    ],
+    "title": [
+        "The connoisseur\u00e2\u0080\u0099s guide to the movies / James Monaco"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0705.xml"
+}

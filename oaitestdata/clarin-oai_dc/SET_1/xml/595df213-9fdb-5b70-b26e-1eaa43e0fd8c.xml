@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1664</identifier>
+    <datestamp>2018-07-02T22:05:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Prague Czech-English Dependency Treebank 2.0 Coref</dc:title>
+      <dc:creator>Nedoluzhko, Anna</dc:creator>
+      <dc:creator>Nov&#225;k, Michal</dc:creator>
+      <dc:creator>Cinkov&#225;, Silvie</dc:creator>
+      <dc:creator>Mikulov&#225;, Marie</dc:creator>
+      <dc:creator>M&#237;rovsk&#253;, Ji&#345;&#237;</dc:creator>
+      <dc:subject>multilingual</dc:subject>
+      <dc:subject>coreference</dc:subject>
+      <dc:description>The Prague Czech-English Dependency Treebank 2.0 Coref (PCEDT 2.0 Coref) is a parallel treebank building upon the original PCEDT 2.0 release and enriching it with the extended manual annotation of coreference, as well as with an improved automatic annotation of the coreferential expression alignment.</dc:description>
+      <dc:date>2016-03-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1664</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/610516</dc:relation>
+      <dc:rights>CC-BY-NC-SA + LDC99T42</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/license-pcedt2</dc:rights>
+      <dc:rights>RES</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/pcedt2.0-coref</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

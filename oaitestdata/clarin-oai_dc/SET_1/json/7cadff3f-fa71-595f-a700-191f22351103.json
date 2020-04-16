@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "Department of Informatics, University of Oslo"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian Nynorsk",
+        "Norwegian Bokm\u00e5l",
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/124",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/124"
+    ],
+    "PID": "http://hdl.handle.net/11509/124",
+    "PublicationTimestamp": "2017-10-23T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Department of Informatics, University of Oslo"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)",
+        "CC",
+        "http://creativecommons.org/licenses/by-nc/3.0/"
+    ],
+    "author": [
+        "Velldal, Erik",
+        "\u00d8vrelid, Lilja",
+        "Stadsnes, Cathrine",
+        "J\u00f8rgensen, Fredrik",
+        "Bergem, Eivind Alexander",
+        "Touileb, Samia"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/124;2017-10-25T08:45:41Z;hdl_11509_1;hdl_11509_2;NoReC: The Norwegian Review Corpus;Velldal, Erik;\u00d8vrelid, Lilja;Bergem, Eivind Alexander;Stadsnes, Cathrine;Touileb, Samia;J\u00f8rgensen, Fredrik;sentiment analysis;opinion mining;reviews;news;norwegian;While the NoReC dataset was primarily created for training and evaluating models for document-level sentiment analysis, many other use cases are of course possible. The corpus comprises more than 35,000 full-text reviews extracted from eight different major Norwegian news sources: Dagbladet, VG, Aftenposten, Bergens Tidende, F\u00e6drelandsvennen, Stavanger Aftenblad, DinSide.no and P3.no. The reviews cover a range of different domains, including literature, movies, video games, restaurants, music and theater, in addition to product reviews across a range of categories. Each review is labeled with a manually assigned score of 1\u20136, as provided by the rating of the original author. The texts have been pre-processed using UDPipe and are distributed in the CoNLL-U format. However, we also provide HTML files with the raw texts. Documentation and an accompanying Python package are  provided through the following git repository: https://github.com/ltgoslo/norec;2017-10-23;corpus;http://hdl.handle.net/11509/124;nno;nob;nor;Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0);CC;http://creativecommons.org/licenses/by-nc/3.0/;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Department of Informatics, University of Oslo;https://github.com/ltgoslo/norec",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7cadff3f-fa71-595f-a700-191f22351103",
+    "notes": [
+        "While the NoReC dataset was primarily created for training and evaluating models for document-level sentiment analysis, many other use cases are of course possible. The corpus comprises more than 35,000 full-text reviews extracted from eight different major Norwegian news sources: Dagbladet, VG, Aftenposten, Bergens Tidende, F\u00e6drelandsvennen, Stavanger Aftenblad, DinSide.no and P3.no. The reviews cover a range of different domains, including literature, movies, video games, restaurants, music and theater, in addition to product reviews across a range of categories. Each review is labeled with a manually assigned score of 1\u20136, as provided by the rating of the original author. The texts have been pre-processed using UDPipe and are distributed in the CoNLL-U format. However, we also provide HTML files with the raw texts. Documentation and an accompanying Python package are  provided through the following git repository: https://github.com/ltgoslo/norec"
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/124"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "sentiment analysis"
+        },
+        {
+            "name": "opinion mining"
+        },
+        {
+            "name": "reviews"
+        },
+        {
+            "name": "news"
+        },
+        {
+            "name": "norwegian"
+        }
+    ],
+    "title": [
+        "NoReC: The Norwegian Review Corpus"
+    ],
+    "url": ""
+}

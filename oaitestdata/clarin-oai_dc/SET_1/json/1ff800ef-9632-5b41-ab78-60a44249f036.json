@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "The Peter Skautrup Centre, Aarhus University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "text/xml",
+        "application/zip"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/27",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/27"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/27",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "The Peter Skautrup Centre, Aarhus University"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "S\u00f8rensen, Viggo"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/27;2018-06-28T13:28:09Z;hdl_20.500.12115_1;hdl_20.500.12115_3;Jysk Ordbog (a-h), 17. April, 2011, xml-edition;S\u00f8rensen, Viggo;dialectology;Jysk Ordbog covers the dialects of Jutland c. 1700-1920. When finished the dictionary will contain c. 55.000 lemmas (often including sublemmas). The current version contains app. 16,00 entries. The word information comprises (1) pronunciation (in a simple, slightly extended Dania), (2) inflection, (3) meaning(s), (4) range, and (5) origin. Usage is shown by quotations.;2011;lexicalConceptualResource;http://hdl.handle.net/20.500.12115/27;dan;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;text/plain; charset=utf-8;application/zip;text/xml;downloadable_files_count: 2;The Peter Skautrup Centre, Aarhus University;http://jysk.au.dk/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1ff800ef-9632-5b41-ab78-60a44249f036",
+    "notes": [
+        "Jysk Ordbog covers the dialects of Jutland c. 1700-1920. When finished the dictionary will contain c. 55.000 lemmas (often including sublemmas). The current version contains app. 16,00 entries. The word information comprises (1) pronunciation (in a simple, slightly extended Dania), (2) inflection, (3) meaning(s), (4) range, and (5) origin. Usage is shown by quotations."
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/27"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dialectology"
+        }
+    ],
+    "title": [
+        "Jysk Ordbog (a-h), 17. April, 2011, xml-edition"
+    ],
+    "url": ""
+}

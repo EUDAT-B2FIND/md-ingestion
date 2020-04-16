@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4379",
+    "MetadataAccess": [
+        "oai:ota:oucs:4379"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Homer."
+    ],
+    "fulltext": "oai:ota:oucs:4379;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4379.xml;The Iliad: of Homer. Translated by Mr. Pope. [pt.6];Iliad. English;Homer.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c04714ea-754c-5210-95b4-503470b92e70",
+    "oai_identifier": [
+        "oai:ota:oucs:4379"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The Iliad: of Homer. Translated by Mr. Pope. [pt.6]",
+        "Iliad. English"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4379.xml"
+}

@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 110 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2235",
+    "MetadataAccess": [
+        "oai:ota:oucs:2235"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Ovid, 43 B.C.-17 or 18 A.D."
+    ],
+    "fulltext": "oai:ota:oucs:2235;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/2235.xml;Amores. English;All Ovid's Elegies : 3 books / [translated] by Christopher Marlowe;Poetae Ovidii Nasonis Amorum;Ovid, 43 B.C.-17 or 18 A.D.;default: 1976-01-01;text_and_corpus_linguistics;Poems;Lyric poems;Elegies;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 110 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e2595776-1006-5365-869c-ba13dcc6d73b",
+    "oai_identifier": [
+        "oai:ota:oucs:2235"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems"
+        },
+        {
+            "name": "Lyric poems"
+        },
+        {
+            "name": "Elegies"
+        }
+    ],
+    "title": [
+        "Amores. English",
+        "All Ovid's Elegies : 3 books / [translated] by Christopher Marlowe",
+        "Poetae Ovidii Nasonis Amorum"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2235.xml"
+}

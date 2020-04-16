@@ -1,0 +1,49 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5597",
+    "MetadataAccess": [
+        "oai:ota:oucs:5597"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:5597;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5597.xml;An essay pointing out the cause, effects and method of treating the present epidemic fever: In a letter to a young physician.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2b294f2b-c9c1-5ba9-8e0f-a10068c25851",
+    "oai_identifier": [
+        "oai:ota:oucs:5597"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An essay pointing out the cause, effects and method of treating the present epidemic fever: In a letter to a young physician."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5597.xml"
+}

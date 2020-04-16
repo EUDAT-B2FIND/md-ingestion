@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-466F-C",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-466F-C"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-466F-C",
+    "PublicationTimestamp": "2014-02-21T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Apache License 2.0",
+        "http://opensource.org/licenses/Apache-2.0",
+        "PUB"
+    ],
+    "author": [
+        "\u017dilka, Luk\u00e1\u0161",
+        "Jur\u010d\u00ed\u010dek, Filip",
+        "Du\u0161ek, Ond\u0159ej",
+        "Pl\u00e1tek, Ond\u0159ej",
+        "Korvas, Mat\u011bj"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-466F-C;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Vystadial 2013 \u2013 scripts;Korvas, Mat\u011bj;Pl\u00e1tek, Ond\u0159ej;Du\u0161ek, Ond\u0159ej;\u017dilka, Luk\u00e1\u0161;Jur\u010d\u00ed\u010dek, Filip;ASR;HTK;Kaldi;acoustic model;Vystadial 2013 is a dataset of telephone conversations in English and Czech, developed for training acoustic models for automatic speech recognition in spoken dialogue systems. It ships in three parts: Czech data, English data, and scripts.\r\n\r\nThe data comprise over 41 hours of speech in English and over 15 hours in Czech, plus orthographic transcriptions. The scripts implement data pre-processing and building acoustic models using the HTK and Kaldi toolkits.\r\n\r\nThis is the scripts part of the dataset.;2014-02-21;toolService;http://hdl.handle.net/11858/00-097C-0000-0023-466F-C;eng;ces;Apache License 2.0;http://opensource.org/licenses/Apache-2.0;PUB;text/plain; charset=utf-8;application/x-gzip;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics;https://ufal.mff.cuni.cz/grants/vystadial",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d88473f4-af96-5939-95ce-e8b116a4adc0",
+    "notes": [
+        "Vystadial 2013 is a dataset of telephone conversations in English and Czech, developed for training acoustic models for automatic speech recognition in spoken dialogue systems. It ships in three parts: Czech data, English data, and scripts.\r\n\r\nThe data comprise over 41 hours of speech in English and over 15 hours in Czech, plus orthographic transcriptions. The scripts implement data pre-processing and building acoustic models using the HTK and Kaldi toolkits.\r\n\r\nThis is the scripts part of the dataset."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-466F-C"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "ASR"
+        },
+        {
+            "name": "HTK"
+        },
+        {
+            "name": "Kaldi"
+        },
+        {
+            "name": "acoustic model"
+        }
+    ],
+    "title": [
+        "Vystadial 2013 \u2013 scripts"
+    ],
+    "url": ""
+}

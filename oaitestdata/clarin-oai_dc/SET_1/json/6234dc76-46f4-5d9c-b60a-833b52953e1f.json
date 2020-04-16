@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(2 files : ca. 78.1, 77.2 KB)"
+    ],
+    "Language": [
+        "Middle English (1100-1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1684",
+    "MetadataAccess": [
+        "oai:ota:oucs:1684"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1684;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1684.xml;Owl and the nightingale (Middle English poem);The owl and the nightingale;default: 1976-01-01;text_and_corpus_linguistics;Poems -- England -- 13th century;enm;Oxford Text Archive, University of Oxford;text/sgml;(2 files : ca. 78.1, 77.2 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6234dc76-46f4-5d9c-b60a-833b52953e1f",
+    "oai_identifier": [
+        "oai:ota:oucs:1684"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- England -- th century"
+        }
+    ],
+    "title": [
+        "Owl and the nightingale (Middle English poem)",
+        "The owl and the nightingale"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1684.xml"
+}

@@ -1,0 +1,149 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10483_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:17Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Daniel Fortier</origin>
+            <origin>Etienne Godin</origin>
+            <origin>Alexandre Guertin Pasquier</origin>
+            <origin>Audrey Veillette</origin>
+            <origin>Gabrielle L&#233;tourneau</origin>
+            <origin>Michel Allard</origin>
+            <origin>Na&#239;m Perreault</origin>
+            <origin>St&#233;phanie Coulombe</origin>
+            <pubdate>20141008</pubdate>
+            <title>Thermo-erosion gully GIS in Valley of glacier C-79 on Bylot Island, Nunavut</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Godin Etienne and Fortier Daniel, 2014. Thermo-erosion gully GIS in Valley of glacier C-79 on Bylot Island, NU, Canada. Geocryolab, Department of Geography, Universit&#233; de Montr&#233;al, Qu&#233;bec, Canada.</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=10483</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Digitalisation of the thermo-erosion gullies was accomplished using a Trimble differential GPS (model Pathfinder Pro XRS with a TSC1 data collector). Differential correction was applied on surveyed data using GPS Pathfinder Office v3.10 against Thule (Greenland) base station with 99% of data with an error less than 1 m. A Trimble R8 GNSS system replaced the DGPS in 2013. Geomorphological and erosion forms found in the gullies as well as the gullies contours were mapped and entered into the DGPS spatial database during 2009 and 2010 surveys. Overall, 44 gullies were mapped. Data was exported to ESRI's ArcGIS v10. Superposition of the spatial data with historical air photos (1958. 1961, 1972, 1982) and an IKONOS 2007, GeoEYE 2010 high resolution satellite imagery provide background layers to quantify the surveyed geodata. Visual representation of the gullies GIS provides quantitative and qualitative data about permafrost erosion resulting in thermo-erosion at large and small scale.</abstract>
+          <purpose>A detailed observation of a thermo-erosion gully was initiated on Bylot Island (Fortier, Allard et al. 2007) in 1999. Gully monitoring is a joint project with biologists (Gilles Gauthier - Laval University, Esther L&#233;vesque - UQTR) working on arctic ecosystems where effects of gullying on the permafrost, available water, and the landscape were required to be known. Mapping of the gullies and the geomorphological forms found in these gullies contributed to the understanding of how thermo-erosion affect the permafrost, the speed of gullying growth and the distribution of thermo-erosion gullies.&amp;#x0d;
+&amp;#x0d;
+For more information: Fortier, D., M. Allard, et al. (2007). "Observation of rapid drainage system development by thermal erosion of ice wedges on Bylot island, Canadian Arctic Archipelago." Permafrost and Periglacial Processes 18(3): 229-243.</purpose>
+          <supplinf>Summary: Le projet d'observer &#224; fine &#233;chelle les ravins de thermo-&#233;rosion sur l'Ile Bylot (Nunavut) a commenc&#233; en 1999, conjointement avec une &#233;quipe de de biologistes (Gilles Gauthier - Laval University, Esther L&#233;vesque - UQTR). Un ravin observ&#233; depuis son initiation en 1999 &#233;volue sur son axe principal &#224; une vitesse moyenne de 60 m par ann&#233;e. 44 ravins semblables ont &#233;t&#233; cartographi&#233;s &#224; l'aide d'un GPS diff&#233;rentiel dans la vall&#233;e du glacier C-79 durant des visites sur le terrain en 2009 et 2010. La g&#233;omorphologie et les contours des ravins ont ainsi &#233;t&#233; num&#233;ris&#233;s. L'utilisation d'images a&#233;riennes et satellitaires permettent de localiser les ravins &#224; visiter sur le terrain; ces images permettent de plus &#224; estimer le taux d'&#233;volution de plusieurs ravins. L'ensemble des donn&#233;es spatiales qui ont &#233;t&#233; accumul&#233;es durant les travaux de terrain fournissent des donn&#233;es quantitatives et qualitatives sur la distribution des ravins de thermo-&#233;rosion, &#224; petite et grande &#233;chelle. Research Program(s): ArcticNet,IPY,CEN,ADAPT. For further information: daniel.fortier@umontreal.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>19990601</begdate>
+              <enddate>20130803</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>Annually</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-80.15</westbc>
+            <eastbc>-79.75</eastbc>
+            <northbc>73.2</northbc>
+            <southbc>73.1</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Bylot Island</themekey>
+            <themekey>Canadian High Arctic</themekey>
+            <themekey>Geomorphology</themekey>
+            <themekey>Geospatial data</themekey>
+            <themekey>Permafrost</themekey>
+            <themekey>Thermo-erosion gullies</themekey>
+          </theme>
+          <place>
+            <placekt>Bylot Island, Nunavut, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>University of Montreal</cntorg>
+              <cntper>Daniel Fortier</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>520, ch. C&#244;te-Ste-Catherine</address>
+              <city>Montreal</city>
+              <state>Quebec</state>
+              <postal>H2V 2B8</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>514-343-6111 #26872</cntvoice>
+            <cntfax>514-343-8008</cntfax>
+            <cntemail>daniel.fortier@umontreal.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>10483</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20141008</metd>
+        <metrd>20141008</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Daniel Fortier</cntper>
+              <cntorg>University of Montreal</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>520, ch. C&#244;te-Ste-Catherine</address>
+              <city>Montreal</city>
+              <state>Quebec</state>
+              <postal>H2V 2B8</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>514-343-6111 #26872</cntvoice>
+            <cntfax>514-343-8008</cntfax>
+            <cntemail>daniel.fortier@umontreal.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

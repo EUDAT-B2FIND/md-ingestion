@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "sommer@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "TXT",
+        "LINK"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/envidat.30",
+    "PublicationTimestamp": "2018-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Christian Sommer"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/envidat.30;2018-05-05T08:24:33Z;doi:10.16904/envidat.30;Eng;MD_CharacterSetCode_utf8;Christian Sommer;sommer@slf.ch;2018-02-22T14:01:16;ISO 19115:2003/19139;1.0;EPSG:4326;Expedition to Princess Elisabeth Antarctica Station, 2016/2017;2018-12-31;This dataset contains the data acquired during the expedition to Princess Elisabeth Antarctica Station in December 2016 and January 2017. The dataset consits of meterorological data, drifting snow mass flux data, SnowMicroPen data and Terrestrial Laser Scanning data.    Please refer to the README for more information about the data.    This dataset is the basis of the following publication:    Sommer, C. G., Wever, N., Fierz, C., and Lehning, M.: Wind-packing of snow in Antarctica, The Cryosphere Discuss., https://doi.org/10.5194/tc-2018-36, in review, 2018.;Christian Sommer;sommer@slf.ch;ANTARCTICA;DRIFTING SNOW;MASS FLUX;METEOROLOGICAL DATA;SNOWMICROPEN;TERRESTRIAL LASER SCANNING;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;23.35 -71.95;LINK;TXT;https://www.envidat.ch/dataset/10-16904-envidat-30;HTTPS;DATASET METADATA;information;http://montblanc.slf.ch/owncloud/index.php/s/SUhtGSpVdgBnFrE;HTTP;DATASET;download;https://www.envidat.ch/dataset/b5c9438a-83c3-4afb-8f37-b3ec18d3db6e/resource/f5b4224d-6a68-4090-b0d6-24234f698bb5/download/readme.txt;HTTPS;README;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "df23ae2a-9502-52ad-8de0-579ad401a122",
+    "notes": [
+        "This dataset contains the data acquired during the expedition to Princess Elisabeth Antarctica Station in December 2016 and January 2017. The dataset consits of meterorological data, drifting snow mass flux data, SnowMicroPen data and Terrestrial Laser Scanning data.    Please refer to the README for more information about the data.    This dataset is the basis of the following publication:    Sommer, C. G., Wever, N., Fierz, C., and Lehning, M.: Wind-packing of snow in Antarctica, The Cryosphere Discuss., https://doi.org/10.5194/tc-2018-36, in review, 2018."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/envidat.30",
+        "oai:envidat.ch:10.16904/envidat.30"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "ANTARCTICA"
+        },
+        {
+            "name": "DRIFTING SNOW"
+        },
+        {
+            "name": "MASS FLUX"
+        },
+        {
+            "name": "METEOROLOGICAL DATA"
+        },
+        {
+            "name": "SNOWMICROPEN"
+        },
+        {
+            "name": "TERRESTRIAL LASER SCANNING"
+        }
+    ],
+    "title": [
+        "Expedition to Princess Elisabeth Antarctica Station, 2016/2017"
+    ],
+    "url": "https://www.envidat.ch/dataset/b5c9438a-83c3-4afb-8f37-b3ec18d3db6e/resource/f5b4224d-6a68-4090-b0d6-24234f698bb5/download/readme.txt"
+}

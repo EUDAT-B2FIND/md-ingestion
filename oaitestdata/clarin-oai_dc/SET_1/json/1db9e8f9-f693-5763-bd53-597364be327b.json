@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Finnish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1060",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1060"
+    ],
+    "PID": "http://hdl.handle.net/11356/1060",
+    "PublicationTimestamp": "2016-03-09T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/324414"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN.SI User Licence for Internet Corpora",
+        "ACA",
+        "http://www.clarin.si/info/wp-content/uploads/2016/01/CLARIN.SI-WAC-2016-01.pdf"
+    ],
+    "author": [
+        "Espl\u00e0-Gomis, Miquel",
+        "Klubi\u010dka, Filip",
+        "Ortiz Rojas, Sergio",
+        "Ljube\u0161i\u0107, Nikola",
+        "Toral, Antonio"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1060;2019-02-23T17:12:42Z;hdl_11356_1023;hdl_11356_1024;Finnish-English parallel corpus fienWaC 1.0;Ljube\u0161i\u0107, Nikola;Espl\u00e0-Gomis, Miquel;Ortiz Rojas, Sergio;Klubi\u010dka, Filip;Toral, Antonio;parallel corpus;web corpus;multilingual;The fienWaC corpus version 1.0 consists of parallel Finnish-English texts crawled from the .fi top-level domain for Finland. The corpus was built with Spidextor (https://github.com/abumatran/spidextor), a tool that glues together the output of SpiderLing used for crawling and Bitextor used for bitext extraction. The accuracy of the extracted bitext, given the evaluation results on other languages, can be estimated at 74% on the segment level and 76% on the word level.;2016-03-09;corpus;http://hdl.handle.net/11356/1060;fin;eng;info:eu-repo/grantAgreement/EC/FP7/324414;CLARIN.SI User Licence for Internet Corpora;ACA;http://www.clarin.si/info/wp-content/uploads/2016/01/CLARIN.SI-WAC-2016-01.pdf;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Jo\u017eef Stefan Institute",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1db9e8f9-f693-5763-bd53-597364be327b",
+    "notes": [
+        "The fienWaC corpus version 1.0 consists of parallel Finnish-English texts crawled from the .fi top-level domain for Finland. The corpus was built with Spidextor (https://github.com/abumatran/spidextor), a tool that glues together the output of SpiderLing used for crawling and Bitextor used for bitext extraction. The accuracy of the extracted bitext, given the evaluation results on other languages, can be estimated at 74% on the segment level and 76% on the word level."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1060"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "web corpus"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Finnish-English parallel corpus fienWaC 1.0"
+    ],
+    "url": ""
+}

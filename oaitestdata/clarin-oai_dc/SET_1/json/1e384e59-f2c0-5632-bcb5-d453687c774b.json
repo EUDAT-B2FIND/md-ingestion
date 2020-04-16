@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=403030c4cb7d11e1a404080027e73ea231c8cb2c48f64d778a4e08ab322c7399",
+    "MetadataAccess": [
+        "403030c4cb7d11e1a404080027e73ea231c8cb2c48f64d778a4e08ab322c7399"
+    ],
+    "PublicationTimestamp": "2012-11-27T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "403030c4cb7d11e1a404080027e73ea231c8cb2c48f64d778a4e08ab322c7399;2018-11-15T16:39:39Z;toolService;toolService:tool;FORMA;FORMA is a probabilistic tool for morphological tagging and lemmatization of text. The purpose of this tool is to obtain annotated text to be processed by other NLP tools (see Gonzalez et al., 2006).;2012-11-27",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1e384e59-f2c0-5632-bcb5-d453687c774b",
+    "notes": [
+        "FORMA is a probabilistic tool for morphological tagging and lemmatization of text. The purpose of this tool is to obtain annotated text to be processed by other NLP tools (see Gonzalez et al., 2006)."
+    ],
+    "oai_identifier": [
+        "403030c4cb7d11e1a404080027e73ea231c8cb2c48f64d778a4e08ab322c7399"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "FORMA"
+    ]
+}

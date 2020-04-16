@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Wilson, David"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(2 files : total of ca. 392 KB)",
+        "text/plain"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1720",
+    "MetadataAccess": [
+        "oai:ota:oucs:1720"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Short stories"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Joyce, James, 1882-1941"
+    ],
+    "fulltext": "oai:ota:oucs:1720;2018-02-16T10:42:06Z;http://ota.ox.ac.uk/headers/1720.xml;Dubliners / James Joyce;Joyce, James, 1882-1941;text_and_corpus_linguistics;Short stories, Irish -- 20th century;This resource includes the following stories: \"The Sisters\", \"An Encounter\", \"Araby\", \"Eveline\", \"After the Race\", \"Two Gallants\", \"The Boarding House\", \"A Little Cloud\", \"Counterparts\", \"Clay\", \"A Painful Case\", \"Ivy Day in the Committee Room\", \"A Mother\", \"Grace\" and \"The Dead\". ;Oxford Text Archive, University of Oxford;Wilson, David;text/plain;(2 files : total of ca. 392 KB);Text;Short stories;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bb6cfbbf-517d-53c4-85d6-1f040676d066",
+    "notes": [
+        "This resource includes the following stories: \"The Sisters\", \"An Encounter\", \"Araby\", \"Eveline\", \"After the Race\", \"Two Gallants\", \"The Boarding House\", \"A Little Cloud\", \"Counterparts\", \"Clay\", \"A Painful Case\", \"Ivy Day in the Committee Room\", \"A Mother\", \"Grace\" and \"The Dead\". "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:1720"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Short stories"
+        },
+        {
+            "name": "Irish -- th century"
+        }
+    ],
+    "title": [
+        "Dubliners / James Joyce"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1720.xml"
+}

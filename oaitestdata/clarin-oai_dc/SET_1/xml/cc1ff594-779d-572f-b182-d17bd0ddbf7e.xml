@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>3694294cfb6311e1a2aa782bcb074135dffcbbcce20a41e4b23652e08e0bab65</identifier>
+    <datestamp>2018-11-15T16:39:19Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LX-Chunker</dc:title>
+      <dc:description>The present tool, that was built to deal with specific issues concerning orthographic conventions adopted for Portuguese, marks sentence boundaries with &lt;s&gt;&#226;&#128;&#166;&lt;/s&gt;, and paragraph boundaries with &lt;p&gt;&#226;&#128;&#166;&lt;/p&gt;. Unwraps sentences split over different lines.
+A f-score of 99.94% was obtained when testing on a 12,000 sentence corpus accurately hand tagged with respect to sentence and paragraph boundaries.
+LX-Chunker was developed and is maintained at University of Lisbon by the NLX-Natural Language and Speech Group of the Department of Informatics.
+</dc:description>
+      <dc:date>2015-12-14</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

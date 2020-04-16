@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5634",
+    "MetadataAccess": [
+        "oai:ota:oucs:5634"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Okell, Benjamin."
+    ],
+    "fulltext": "oai:ota:oucs:5634;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5634.xml;A short treatise of the virtues of Dr. Bateman's pectoral drops: the nature of the distempers they cure, and the manner of their operation. Publish'd by the King's letters patents under the Great Seal of Great Britain.;Okell, Benjamin.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c7dbf563-96b3-5e56-be01-5e1c7fd1ba6f",
+    "oai_identifier": [
+        "oai:ota:oucs:5634"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A short treatise of the virtues of Dr. Bateman's pectoral drops: the nature of the distempers they cure, and the manner of their operation. Publish'd by the King's letters patents under the Great Seal of Great Britain."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5634.xml"
+}

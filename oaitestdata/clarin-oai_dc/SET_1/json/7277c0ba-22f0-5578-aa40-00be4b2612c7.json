@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "application/zip",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1039",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1039"
+    ],
+    "PID": "http://hdl.handle.net/11356/1039",
+    "PublicationTimestamp": "2015-06-14T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "RelatedIdentifier": [
+        "https://e-knjige.ff.uni-lj.si/znanstvena-zalozba/catalog/download/2/1/47-1?inline=1",
+        "http://hdl.handle.net/11356/1033"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Krek, Simon",
+        "Holozan, Peter",
+        "Erjavec, Toma\u017e",
+        "Romih, Miro",
+        "Dobrovoljc, Kaja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1039;2019-01-26T18:54:42Z;hdl_11356_1023;hdl_11356_1024;Morphological lexicon Sloleks 1.2;Dobrovoljc, Kaja;Krek, Simon;Holozan, Peter;Erjavec, Toma\u017e;Romih, Miro;morphology;inflection;word forms;derivation;LMF;lemmatisation;Sloleks is the reference morphological lexicon for Slovenian language, developed to be used in NLP applications and language manuals. Encoded in LMF XML, the lexicon contains approx. 100.000 most frequent Slovenian lemmas, their inflected or derivative word forms and the corresponding grammatical description. Lemmatization rules, part-of-speech categorization and the set of feature-value pairs follow the JOS morphosyntactic specifications. In addition to grammatical information, each word form is also given the information on its absolute corpus frequency and its compliance with the reference language standard.\r\n\r\nNote that this entry updates Sloleks 1.0 by fixing various encoding and content errors.\r\n\r\nThe resource is further described in:\r\n\r\nKaja Dobrovoljc, Simon Krek and Toma\u017e Erjavec, 2017:  The Sloleks Morphological Lexicon and its Future Development. In (Vojko Gorjanc, Polona Gantar, Iztok Kosem and Simon Krek, eds.): Dictionary of Modern Slovene: Problems and Solutions. Ljubljana University Press, Faculty of Arts. https://e-knjige.ff.uni-lj.si/znanstvena-zalozba/catalog/download/2/1/47-1;2015-06-14;lexicalConceptualResource;http://hdl.handle.net/11356/1039;slv;https://e-knjige.ff.uni-lj.si/znanstvena-zalozba/catalog/download/2/1/47-1?inline=1;http://hdl.handle.net/11356/1033;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);https://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 5;Centre for Language Resources and Technologies, University of Ljubljana;http://eng.slovenscina.eu/sloleks/opis",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7277c0ba-22f0-5578-aa40-00be4b2612c7",
+    "notes": [
+        "Sloleks is the reference morphological lexicon for Slovenian language, developed to be used in NLP applications and language manuals. Encoded in LMF XML, the lexicon contains approx. 100.000 most frequent Slovenian lemmas, their inflected or derivative word forms and the corresponding grammatical description. Lemmatization rules, part-of-speech categorization and the set of feature-value pairs follow the JOS morphosyntactic specifications. In addition to grammatical information, each word form is also given the information on its absolute corpus frequency and its compliance with the reference language standard.\r\n\r\nNote that this entry updates Sloleks 1.0 by fixing various encoding and content errors.\r\n\r\nThe resource is further described in:\r\n\r\nKaja Dobrovoljc, Simon Krek and Toma\u017e Erjavec, 2017:  The Sloleks Morphological Lexicon and its Future Development. In (Vojko Gorjanc, Polona Gantar, Iztok Kosem and Simon Krek, eds.): Dictionary of Modern Slovene: Problems and Solutions. Ljubljana University Press, Faculty of Arts. https://e-knjige.ff.uni-lj.si/znanstvena-zalozba/catalog/download/2/1/47-1"
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1039"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "inflection"
+        },
+        {
+            "name": "word forms"
+        },
+        {
+            "name": "derivation"
+        },
+        {
+            "name": "LMF"
+        },
+        {
+            "name": "lemmatisation"
+        }
+    ],
+    "title": [
+        "Morphological lexicon Sloleks 1.2"
+    ],
+    "url": ""
+}

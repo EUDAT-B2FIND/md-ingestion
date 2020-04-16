@@ -1,0 +1,41 @@
+{
+    "Contact": [
+        "Paris Astronomical Data Centre - LESIA"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://vopdc.obspm/lesia/hfc1ar/epn",
+    "PublicationTimestamp": "2018-12-21T19:59:55Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Paris Astronomical Data Centre - LESIA"
+    ],
+    "RelatedIdentifier": [
+        "ivo://vopdc.obspm/lesia/hfc1ar/epn"
+    ],
+    "fulltext": "ivo://vopdc.obspm/lesia/hfc1ar/epn;2018-12-21T19:59:55Z;Heliophysics Feature Catalog active regions;ivo://vopdc.obspm/lesia/hfc1ar/epn;2017-01-10T00:00:00Z;Paris Astronomical Data Centre - LESIA;Solar active regions extracted from Heliophysics Feature Catalog.",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0b73bf55-92c2-563e-8929-e9098a5da80b",
+    "notes": [
+        "Solar active regions extracted from Heliophysics Feature Catalog."
+    ],
+    "oai_identifier": [
+        "ivo://vopdc.obspm/lesia/hfc1ar/epn"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        "Solar active regions extracted from Heliophysics Feature Catalog."
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=9dfd3aa056a411e2a2aa782bcb07413577c28fa1ac15497aaf1cb44bcd326db6",
+    "MetadataAccess": [
+        "9dfd3aa056a411e2a2aa782bcb07413577c28fa1ac15497aaf1cb44bcd326db6"
+    ],
+    "PublicationTimestamp": "2013-01-04T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "9dfd3aa056a411e2a2aa782bcb07413577c28fa1ac15497aaf1cb44bcd326db6;2018-11-15T16:40:00Z;corpus;corpus:text;NPChunks;The NPChunks training corpus contains approximately 1,000 sentences, in a total of 24,243 tokens, selected randomly from the written part of the CINTIL corpus (Barreto et al, 2006). The CINTIL corpus is a linguistically interpreted corpus of Portuguese composed of 1 Million annotated tokens from both written (689,124 tokens) and spoken (502,622 tokens) registers (http://cintil.ul.pt/pt/).;2013-01-04",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "aaa7491e-45f8-5495-8b31-497270e923e0",
+    "notes": [
+        "The NPChunks training corpus contains approximately 1,000 sentences, in a total of 24,243 tokens, selected randomly from the written part of the CINTIL corpus (Barreto et al, 2006). The CINTIL corpus is a linguistically interpreted corpus of Portuguese composed of 1 Million annotated tokens from both written (689,124 tokens) and spoken (502,622 tokens) registers (http://cintil.ul.pt/pt/)."
+    ],
+    "oai_identifier": [
+        "9dfd3aa056a411e2a2aa782bcb07413577c28fa1ac15497aaf1cb44bcd326db6"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "NPChunks"
+    ]
+}

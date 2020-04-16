@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Divvun - Saami Language Technology",
+        "Giellatekno - Saami Language Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "application/octet-stream",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Northern Sami",
+        "Norwegian Bokm\u00e5l"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/88",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/88"
+    ],
+    "PID": "http://hdl.handle.net/11509/88",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Divvun - Saami Language Technology",
+        "Giellatekno - Saami Language Technology"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Gerstenberger, Ciprian-Virgil"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/88;2015-10-28T10:02:47Z;hdl_11509_1;hdl_11509_2;North Saami-Norwegian Bokm\u00e5l dictionary;Gerstenberger, Ciprian-Virgil;North Saami-Norwegian Bokm\u00e5l dictionary;Bilingual Lexicon;The Saami-Norwegian Bokm\u00e5l dictionary is the work by Nils Jernsletten, Giellatekno at UiT, Divvun at the Norwegian Saami Parliament, and members of the language communities. It contains 33440 entries in Giellatekno's dictionary xml format. It may contain entries with objectionable translations, etc. If you find any errors or want to add more words, download the file, edit it, and send it back to giellatekno@uit.no and feedback@divvun.no.;2015;lexicalConceptualResource;http://hdl.handle.net/11509/88;sme;nob;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;application/zip;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Giellatekno - Saami Language Technology;Divvun - Saami Language Technology;http://giellatekno.uit.no/index.eng.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "939e7d76-533e-560c-ba01-2f31c7cf10f1",
+    "notes": [
+        "The Saami-Norwegian Bokm\u00e5l dictionary is the work by Nils Jernsletten, Giellatekno at UiT, Divvun at the Norwegian Saami Parliament, and members of the language communities. It contains 33440 entries in Giellatekno's dictionary xml format. It may contain entries with objectionable translations, etc. If you find any errors or want to add more words, download the file, edit it, and send it back to giellatekno@uit.no and feedback@divvun.no."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/88"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Bilingual Lexicon"
+        }
+    ],
+    "title": [
+        "North Saami-Norwegian Bokm\u00e5l dictionary"
+    ],
+    "url": ""
+}

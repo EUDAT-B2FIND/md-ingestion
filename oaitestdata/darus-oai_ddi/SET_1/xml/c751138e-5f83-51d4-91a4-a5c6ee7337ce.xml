@@ -1,0 +1,106 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-482</identifier>
+    <datestamp>2020-02-11T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>Supplemental Material for Case Study about Challenges in Soft Tissue Manipulation</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-482</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2020-02-10</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2020-02-10" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>Wnuk, Markus-Christian; Jaensch, Florian; Tomzik, David Adrian; Chen, Zixiao; Terfurth, Jonathan; Kandasamy, Sivakumar; Shahabi, Jalil; Garrett, Amy; Mahmoudinezhad, Masoumeh H.; Csiszar, Akos; Xu, Weiliang; R&#246;hrle, Oliver; Verl, Alexander, 2020, "Supplemental Material for Case Study about Challenges in Soft Tissue Manipulation", https://doi.org/10.18419/darus-482, DaRUS, V1</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>Supplemental Material for Case Study about Challenges in Soft Tissue Manipulation</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-482</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Wnuk, Markus-Christian</AuthEnty>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Jaensch, Florian</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Tomzik, David Adrian</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Chen, Zixiao</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Terfurth, Jonathan</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Kandasamy, Sivakumar</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Shahabi, Jalil</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Garrett, Amy</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Mahmoudinezhad, Masoumeh H.</AuthEnty>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Csiszar, Akos</AuthEnty>
+            <AuthEnty affiliation="University of Auckland">Xu, Weiliang</AuthEnty>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">R&#246;hrle, Oliver</AuthEnty>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Verl, Alexander</AuthEnty>
+          </rspStmt>
+          <prodStmt>
+            <prodDate>2019-03-26</prodDate>
+            <prodPlac>University of Auckland</prodPlac>
+            <grantNo agency="Deutsche Forschungsgemeinschaft">GRK 2198/1</grantNo>
+            <grantNo agency="University of Auckland">Vice-Chancellor&#8217;s Strategic Development Fund</grantNo>
+            <grantNo agency="Auckland Bioengineering Institute of the University of Auckland">Faculty Research Development Fund</grantNo>
+          </prodStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2020-02-10</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Computer and Information Science</keyword>
+            <keyword>Engineering</keyword>
+          </subject>
+          <abstract>Supplemental image and video material for the paper "Challenges in robotic soft tissue manipulation - Problem identification based on an interdisciplinary case study of a teleoperated drawing robot in practice"  presented at the 2019 conference M2VIP.&#13;
+The presented results are the outcome of the 2019 summer school project within the International Research Training Group (IRTG) "Soft Tissue Robotics".&#13;
+Please refer to the project homepage for further information on the IRTG : https://www.str.uni-stuttgart.de/.&#13;
+The setup was used for the analysis and identification of challenges in soft tissue manipulation with rigid robots. It was built by a team of PhD students within one week of interdisciplinary work during the 2019 summer school at the University of Auckland.&#13;
+The setup consists of a 6-axis robot (UR5 of Universal Robots), which has a flexible pen with integrated flex sensors as end effector. A balloon is attached to a fixture in front of the robot which is equipped with a load cell for z-axis force measurement. For the human-machine interface, a haptic device is used. The control for these components is implemented as a distributed control architecture using several PCs and microcontrollers.&#13;
+The robot control is controlled by teleoperation. The forces measured at the end effector are feed back to the operator through the haptic decive. For more information on the utilized teleoperation framework refer to the paper of Gorjup et al. which is listed as related publication.</abstract>
+          <sumDscr>
+            <dataKind>image data</dataKind>
+            <dataKind>video data</dataKind>
+          </sumDscr>
+          <relPubl>Gal Gorjup, Anany Dwivedi, Nathan Elangovan, and Minas Liarokapis, "An Intuitive, Affordances Oriented Telemanipulation Framework for a Dual Robot Arm Hand System: On the Execution of Bimanual Tasks," IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Macau, China, 2019, https://www.researchgate.net/publication/335234550_An_Intuitive_Affordances_Oriented_Telemanipulation_Framework_for_a_Dual_Robot_Arm_Hand_System_On_the_Execution_of_Bimanual_Tasks</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">Wnuk, Markus-Christian</contact>
+          <depositr>Wnuk, Markus-Christian</depositr>
+          <depDate>2019-10-28</depDate>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f603" URI="https://doi.org/10.18419/darus-482/1" level="datafile">
+        <labl>Drawing_Result.jpg</labl>
+        <txt>Close-up view of the end effector of the case study&#8217;s setup during a drawing process of the letters &#8220;IRTG&#8221;.</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">image/jpeg</notes>
+      </otherMat>
+      <otherMat ID="f604" URI="https://doi.org/10.18419/darus-482/2" level="datafile">
+        <labl>Overall_Setup.jpg</labl>
+        <txt>Overview of the setup during teleoperated drawing.</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">image/jpeg</notes>
+      </otherMat>
+      <otherMat ID="f606" URI="https://doi.org/10.18419/darus-482/4" level="datafile">
+        <labl>Setup_Schematic.png</labl>
+        <txt>Schematic depiction of the setup of the practical case study.</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">image/png</notes>
+      </otherMat>
+      <otherMat ID="f605" URI="https://doi.org/10.18419/darus-482/3" level="datafile">
+        <labl>Supplemental_Video_Challenges_in_Soft_Tissue_Manipulation.mp4</labl>
+        <txt>Video of the setup used for the identification of challenges in soft tissue manipulation. The setup was built during the 2019 summer school at the University of Auckland (New Zealand) within the IRTG "Soft Tissue Robotics".</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">video/mp4</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

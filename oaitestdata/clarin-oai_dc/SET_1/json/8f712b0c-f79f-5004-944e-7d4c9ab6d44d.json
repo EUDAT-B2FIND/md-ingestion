@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=2a17d622abcd11e1a404080027e73ea242399e2114844f63896f2f92dd31233e",
+    "MetadataAccess": [
+        "2a17d622abcd11e1a404080027e73ea242399e2114844f63896f2f92dd31233e"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "2a17d622abcd11e1a404080027e73ea242399e2114844f63896f2f92dd31233e;2019-02-27T12:08:46Z;corpus;corpus:text;CINTIL-TreeBank;The CINTIL-TreeBank (Branco et al., 2011) is a corpus of syntactic constituency trees of Portuguese texts composed of 10,039 sentences and 110,166 tokens taken from different sources and domains: news (8,861 sentences; 101,430 tokens), novels (399 sentences; 3,082 tokens). In addition, there are 779 sentences (5,654 tokens) that are used for regression testing of the computational grammar that supported the annotation of the corpus.\nFor the creation of this TreeBank we adopted a semi-automatic analysis with a double-blind annotation followed by adjudication. The resulting dataset contains one information level: phrase constituency.\nThe main motivation behind the creation of this resource was to build a high quality data set with syntactic information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8f712b0c-f79f-5004-944e-7d4c9ab6d44d",
+    "notes": [
+        "The CINTIL-TreeBank (Branco et al., 2011) is a corpus of syntactic constituency trees of Portuguese texts composed of 10,039 sentences and 110,166 tokens taken from different sources and domains: news (8,861 sentences; 101,430 tokens), novels (399 sentences; 3,082 tokens). In addition, there are 779 sentences (5,654 tokens) that are used for regression testing of the computational grammar that supported the annotation of the corpus.\nFor the creation of this TreeBank we adopted a semi-automatic analysis with a double-blind annotation followed by adjudication. The resulting dataset contains one information level: phrase constituency.\nThe main motivation behind the creation of this resource was to build a high quality data set with syntactic information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies."
+    ],
+    "oai_identifier": [
+        "2a17d622abcd11e1a404080027e73ea242399e2114844f63896f2f92dd31233e"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "CINTIL-TreeBank"
+    ]
+}

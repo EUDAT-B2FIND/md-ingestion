@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>6ca376ae63ec11e2a2aa782bcb0741351880c46daa1a4165869725de33498c23</identifier>
+    <datestamp>2018-11-15T16:40:06Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DeepBankPT </dc:title>
+      <dc:description>The DeepBankPT (Branco et. al. 2010) is a corpus of semantic dependencies of translated texts composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal.
+
+The DeepBankPT is composed of MRS and AVM representations, derivation tree, and syntactic tree with grammatical and semantic labels of each sentence&#226;&#128;&#153;s. This is the result of a previous semi-automatic analysis with a double-blind annotation followed by adjudication (see Branco and Costa, 2008, with a full description of the process). The resulting dataset contains one information level: semantic relations.
+
+The main motivation behind the creation of this resource was to build a high quality data set with syntactic information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies.
+
+The development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. 
+</dc:description>
+      <dc:date>2013-01-21</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

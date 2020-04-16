@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4522",
+    "MetadataAccess": [
+        "oai:ota:oucs:4522"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Trusler, John, 1735-1820."
+    ],
+    "fulltext": "oai:ota:oucs:4522;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4522.xml;Life; or, the adventures of William Ramble, Esq. With three frontispieces, designed by Ibbetson, ... and two new and beautiful songs, with the music by Pleyel and Sterkel. By the author of Modern times; or, the adventures of Gabriel Outcast. In three volumes.: [pt.3];Trusler, John, 1735-1820.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e6410de8-b5c8-57fc-aa01-42eae1854b75",
+    "oai_identifier": [
+        "oai:ota:oucs:4522"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Life; or, the adventures of William Ramble, Esq. With three frontispieces, designed by Ibbetson, ... and two new and beautiful songs, with the music by Pleyel and Sterkel. By the author of Modern times; or, the adventures of Gabriel Outcast. In three volumes.: [pt.3]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4522.xml"
+}

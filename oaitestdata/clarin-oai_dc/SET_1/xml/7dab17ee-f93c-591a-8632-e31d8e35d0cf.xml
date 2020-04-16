@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.spraakbanken.gu.se:10794/5</identifier>
+    <datestamp>2017-10-27T16:28:55Z</datestamp>
+    <setSpec>hdl_10794_1</setSpec>
+    <setSpec>hdl_10794_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Saldo (2017-10-16)</dc:title>
+      <dc:title xml:lang="sv">Saldo (2017-10-16)</dc:title>
+      <dc:creator>Borin, Lars</dc:creator>
+      <dc:creator>L&#246;nngren, Lennart</dc:creator>
+      <dc:creator>Forsberg, Markus</dc:creator>
+      <dc:subject>Swedish</dc:subject>
+      <dc:subject>Associative</dc:subject>
+      <dc:subject>Thesaurus</dc:subject>
+      <dc:description xml:lang="en">SALDO (Swedish Associative Thesaurus version 2) is an extensive lexicon resource for modern Swedish written language.</dc:description>
+      <dc:description xml:lang="sv">SALDO (Svenskt Associationslexikon version 2) &#228;r ett semantiskt och morfologiskt lexikon f&#246;r moderns svenskt skriftspr&#229;k f&#246;r spr&#229;kteknologi.</dc:description>
+      <dc:date>2017-04-28</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/10794/5</dc:identifier>
+      <dc:language>swe</dc:language>
+      <dc:relation>http://hdl.handle.net/10794/4</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Spr&#229;kbanken, University of Gothenburg</dc:publisher>
+      <dc:source>https://spraakbanken.gu.se/swe/resurs/saldo</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

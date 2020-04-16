@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1114</identifier>
+    <datestamp>2017-07-01T10:47:43Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Slovenian-German Dictionary of Maks Pleter&#353;nik (1894-1895)</dc:title>
+      <dc:creator>Pleter&#353;nik, Maks</dc:creator>
+      <dc:creator>Furlan, Metka</dc:creator>
+      <dc:creator>Dobrovoljc, Helena</dc:creator>
+      <dc:creator>Jazbec, Helena</dc:creator>
+      <dc:subject>dictionary</dc:subject>
+      <dc:subject>lexicography</dc:subject>
+      <dc:subject>historical language</dc:subject>
+      <dc:description>The Slovenian-German Dictionary of Maks Pleter&#353;nik was first published in 1894-1895. It contains 103,185 dictionary entries. Beside standard and dialect lexis of the 19th century Slovenian language it includes also an important part of lexis from 16th onwards. The dictionary is based on lexical material collected by Oroslav Caf, Fran Miklo&#353;i&#269;, Fran Levstik, Fran Erjavec etc., and is enriched with the lexis of literature, newspapers, specialized literature and dictionaries. The dictionary was re-published by ZRC SAZU in 2006 and this publication is the source of the XML encoded version of this repository entry.&#13;
+&#13;
+This dictionary was published as a printed book:&#13;
+&#8226; Original edition: Pleter&#353;nik, Maks. Slovensko-nem&#353;ki slovar. V Ljubljani : Knezo&#353;kofijstvo, 1894.&#13;
+&#8226; Re-published edition: Pleter&#353;nik, Maks. Slovensko-nem&#353;ki slovar. Transliterirana izd. Ljubljana : Zalo&#382;ba ZRC, ZRC SAZU, 2006. ISBN 961-6568-31-0.</dc:description>
+      <dc:date>2006</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1114</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:relation>http://www.fran.si/136/maks-pletersnik-slovensko-nemski-slovar/datoteke/Pletersnik_Uvod.pdf</dc:relation>
+      <dc:relation>http://www.srl.si/sql_pdf/SRL_2006_4_29.pdf</dc:relation>
+      <dc:relation>http://www.ff.um.si/dotCMS/detailProduct?categoryInode=8426&amp;inode=8810</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>ZRC SAZU</dc:publisher>
+      <dc:source>http://www.fran.si/136/maks-pletersnik-slovensko-nemski-slovar</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

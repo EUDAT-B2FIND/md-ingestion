@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4439",
+    "MetadataAccess": [
+        "oai:ota:oucs:4439"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Oldys, William, 1696-1761."
+    ],
+    "fulltext": "oai:ota:oucs:4439;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4439.xml;The life of Dr. George Abbot, Lord Archbishop of Canterbury, reprinted with some additions and corrections from the Biographia Britannica; with his character, ... a description of the hospital, which he erected and endowed ... To which are added the lives of his two brothers, Dr. Robert Abbot, ... and Sir Morris Abbot,;Oldys, William, 1696-1761.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9b94eb62-d26d-5d68-9f7e-f5434cae2630",
+    "oai_identifier": [
+        "oai:ota:oucs:4439"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The life of Dr. George Abbot, Lord Archbishop of Canterbury, reprinted with some additions and corrections from the Biographia Britannica; with his character, ... a description of the hospital, which he erected and endowed ... To which are added the lives of his two brothers, Dr. Robert Abbot, ... and Sir Morris Abbot,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4439.xml"
+}

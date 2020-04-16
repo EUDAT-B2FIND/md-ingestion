@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6384",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6384"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6384;2018-10-04T11:10:50Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fid.2018.006;Niemeijer, Andre;Andre;Niemeijer;0000-0003-3983-9308;Utrecht University - Department of Earth Sciences;Velocity-dependent slip weakening by the combined operation of pressure solution and foliation development;GFZ Data Services;2018;Friction;Hydrotherrmal;Foliation;Pressure solution;Quartz-muscovite;EPOS;European Plate Observing System;multi-scale laboratories;rock and melt physical properties;Niemeijer, Andre;Andre;Niemeijer;0000-0003-3983-9308;Utrecht University - Department of Earth Sciences;Niemeijer, Andre;Andre;Niemeijer;0000-0003-3983-9308;Utrecht University - Department of Earth Sciences;Niemeijer, Andre;Andre;Niemeijer;0000-0003-3983-9308;Utrecht University - Department of Earth Sciences;Experimental rock deformation/HPT-Lab (Utrecht University, The Netherlands);Utrecht University, The Netherlands;2018-03-01;eng;10.1038/s41598-018-22889-3;1 Files;application/zip;CC BY 4.0;Phyllosilicate-bearing faults are characterized by an anastomosing foliation with intervening hard clasts and are believed to be long-term weak structures. Here, I present results of sliding experiments on gouges of 80 wt% quartz and 20 wt% muscovite, sheared under hydrothermal conditions at constant velocity. The results show that significant strengthening occurs over a narrow range of sliding velocities (0.03-1* m-6/s). At the lowest velocity investigated, weakness is achieved after a considerable sliding distance of over 20 mm with friction reaching a value of 0.3. Microstructural observations and the application of existing models point to the operation of frictional-viscous flow (FVF), through the serial operation of frictional sliding over a weak foliation and pressure solution of intervening clasts, resulting in low frictional strength and pronounced velocity-strengthening. At higher velocities, grain size reduction becomes dominant in a localized zone, which results in disruption of the foliation and the cessation of the FVF mechanism. In natural settings, earthquakes originating elsewhere on the fault would be rapidly arrested when encountering a foliated part of the fault deforming via FVF. Furthermore, pulses of elevated slip velocity would lead to grain size reduction which would destroy the foliation and cause a long-term strengthening of the fault.;FP7 Ideas: European Research Council;http://doi.org/10.13039/100011199;335915;Seismic;Netherlands Organization for Scientific Research;854.12.011;Vidi",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "bbbc1858-4efe-5dba-a85d-168f0db3badb",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6384"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

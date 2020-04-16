@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f843c67a492311e2a2aa782bcb07413511cf382137004b7f8961efc791d9586a",
+    "MetadataAccess": [
+        "f843c67a492311e2a2aa782bcb07413511cf382137004b7f8961efc791d9586a"
+    ],
+    "PublicationTimestamp": "2013-01-21T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "f843c67a492311e2a2aa782bcb07413511cf382137004b7f8961efc791d9586a;2018-11-15T16:39:59Z;corpus;corpus:text;Spoken Corpus Mozambique ;The Spoken Corpus Mozambique contains approximately 121,958 running words of spoken Portuguese from Mozambique. It includes 40 transcriptions of spoken recordings (in a total of 40 hours of recordings) that were recorded between 1986 and 1987.;2013-01-21",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "22eb629a-98b1-58d1-8a8f-76a1f249da4d",
+    "notes": [
+        "The Spoken Corpus Mozambique contains approximately 121,958 running words of spoken Portuguese from Mozambique. It includes 40 transcriptions of spoken recordings (in a total of 40 hours of recordings) that were recorded between 1986 and 1987."
+    ],
+    "oai_identifier": [
+        "f843c67a492311e2a2aa782bcb07413511cf382137004b7f8961efc791d9586a"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Spoken Corpus Mozambique "
+    ]
+}

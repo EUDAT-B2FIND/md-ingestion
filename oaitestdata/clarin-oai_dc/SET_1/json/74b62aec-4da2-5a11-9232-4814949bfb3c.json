@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1214",
+    "MetadataAccess": [
+        "oai:ota:oucs:1214"
+    ],
+    "PublicationYear": [
+        "500 BCE-443 BCE"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Pindar"
+    ],
+    "fulltext": "oai:ota:oucs:1214;2018-03-05T13:55:23Z;http://ota.ox.ac.uk/headers/1214.xml; Collected works / compiled by Thesaurus Linguae Graecae;Pindar;500 BCE-443 BCE;text_and_corpus_linguistics;Poems -- Greece -- 5th century;grc;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Poems;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "74b62aec-4da2-5a11-9232-4814949bfb3c",
+    "oai_identifier": [
+        "oai:ota:oucs:1214"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Greece -- th century"
+        }
+    ],
+    "title": [
+        " Collected works / compiled by Thesaurus Linguae Graecae"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1214.xml"
+}

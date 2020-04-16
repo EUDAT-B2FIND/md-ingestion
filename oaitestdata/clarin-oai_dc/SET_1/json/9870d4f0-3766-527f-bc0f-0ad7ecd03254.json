@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "MENOTA - Medieval Nordic Text Archive"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Old Norse"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/113",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/113"
+    ],
+    "PID": "http://hdl.handle.net/11509/113",
+    "PublicationTimestamp": "2016-09-06T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "MENOTA - Medieval Nordic Text Archive"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "CC",
+        "http://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "author": [
+        "Horn, Anna C"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/113;2016-09-07T08:54:41Z;hdl_11509_1;hdl_11509_2;AM 305 fol (Magn\u00fass Lagab\u01fftis landsl\u01ebg and other law texts): a digital edition;Horn, Anna C;Law;Medieval;Manuscript;The text \"AM 305 fol (Magn\u00fass Lagab\u01fftis landsl\u01ebg and other law texts): a digital edition\" is part of the Medieval Nordic Text Archive (www.menota.org). The Menota catalogue has been built in the Corpuscle application at Uni Research Computing in Bergen. The texts are searchable through the Corpuscle search engine and are also downloadable from there. In the Catalogue you can also find more detailed information about each text, such as the level of analysis and linguistic annotation. All texts in the archive are listed in the first column of the Catalogue. By clicking the file names in the second column of this catalogue you will be able to read texts at up to three levels, facsimile (facs), diplomatic (dipl) and normalised (norm). The archive uses web fonts (WOFF), so no special fonts need to be installed. There is also a wide array of search facilities, especially for the texts that have been morphologically annotated.;2016-09-06;corpus;http://hdl.handle.net/11509/113;non;Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0);CC;http://creativecommons.org/licenses/by-sa/3.0/;text/xml;downloadable_files_count: 0;MENOTA - Medieval Nordic Text Archive;http://clarino.uib.no/menota/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9870d4f0-3766-527f-bc0f-0ad7ecd03254",
+    "notes": [
+        "The text \"AM 305 fol (Magn\u00fass Lagab\u01fftis landsl\u01ebg and other law texts): a digital edition\" is part of the Medieval Nordic Text Archive (www.menota.org). The Menota catalogue has been built in the Corpuscle application at Uni Research Computing in Bergen. The texts are searchable through the Corpuscle search engine and are also downloadable from there. In the Catalogue you can also find more detailed information about each text, such as the level of analysis and linguistic annotation. All texts in the archive are listed in the first column of the Catalogue. By clicking the file names in the second column of this catalogue you will be able to read texts at up to three levels, facsimile (facs), diplomatic (dipl) and normalised (norm). The archive uses web fonts (WOFF), so no special fonts need to be installed. There is also a wide array of search facilities, especially for the texts that have been morphologically annotated."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/113"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Law"
+        },
+        {
+            "name": "Medieval"
+        },
+        {
+            "name": "Manuscript"
+        }
+    ],
+    "title": [
+        "AM 305 fol (Magn\u00fass Lagab\u01fftis landsl\u01ebg and other law texts): a digital edition"
+    ],
+    "url": ""
+}

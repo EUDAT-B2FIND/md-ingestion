@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:8922996</identifier>
+    <datestamp>2019-06-14T12:30:40Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Anton&#252;&#252;mis&#245;nastik</dc:title>
+      <dc:title xml:lang="en">The Dictionary of Estonian Antonyms</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2015</dc:date>
+      <dc:date>Issued: 2015-05-08</dc:date>
+      <dc:date>Updated: 2017-03-03</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05929L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">S&#245;nastikus on ligi 2000 anton&#252;&#252;mipaari, neist enamik kuulub &#252;ldkeele s&#245;navarasse. M&#228;rks&#245;na on esitatud koos oma vastandiga (nt suur : v&#228;ike v&#245;i vabastama : vangistama). </dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The dictionary contains nearly 2000 antonym pairs most of which belong to general language. Each entry word is presented together with its antonym (e.g., suur : v&#228;ike &#180;big : small&#180; or vabastama : vangistama &#180;set free : arrest&#180;).</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

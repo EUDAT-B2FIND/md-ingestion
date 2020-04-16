@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "ZRC SAZU"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1155",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1155"
+    ],
+    "PID": "http://hdl.handle.net/11356/1155",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "ZRC SAZU"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jakopin, Primo\u017e"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1155;2017-09-25T08:53:32Z;hdl_11356_1023;hdl_11356_1024;Nova Beseda Frequency Lexicon;Jakopin, Primo\u017e;word forms;lexicon;Nova beseda Frequency Lexicon was compiled from the Nova beseda text corpus at the Fran Ramov\u0161 Institute of Slovenian Language with hyphen characters unified and with leading and trailing non-breaking spaces deleted.\r\n\r\nUnlike most other Slovenian corpora Nova beseda texts were pre-processed before inclusion. Typos and words with supefluous hyphens, originating from false line joinings were corrected and parts of texts in foreign, non-Slovenian language were marked-up and excluded from the lexicon.\r\n\r\nThe corpus contains 318 million tokens, mostly wordforms. It is available for search through the web page http://bos.zrc-sazu.si/a_beseda.html, where wordform search is reached by selecting \"word seach\" in the right hand side \"What to do?\" column. On the mentioned web page the corpus structure is also explained.\r\n\r\nThe lexicon is UTF-8 coded, has 2,251,151 lines, each containing the following 2 data fields, tab separated:\r\n\r\n1. token, Slovenian: pojavnica.\r\n      The vast majority of tokens are wordforms, also included are numbers and selected multiword units such as URLs, e-mail addresses, place names like New York, car plates, ID numbers.\r\n\r\n2. frequency, Slovenian: pogostnost.\r\n      The sum of all frequencies is 318,170,212.;2017;lexicalConceptualResource;http://hdl.handle.net/11356/1155;slv;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;ZRC SAZU;http://bos.zrc-sazu.si/a_beseda.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b622d762-074a-5254-97ca-baebc1ba2079",
+    "notes": [
+        "Nova beseda Frequency Lexicon was compiled from the Nova beseda text corpus at the Fran Ramov\u0161 Institute of Slovenian Language with hyphen characters unified and with leading and trailing non-breaking spaces deleted.\r\n\r\nUnlike most other Slovenian corpora Nova beseda texts were pre-processed before inclusion. Typos and words with supefluous hyphens, originating from false line joinings were corrected and parts of texts in foreign, non-Slovenian language were marked-up and excluded from the lexicon.\r\n\r\nThe corpus contains 318 million tokens, mostly wordforms. It is available for search through the web page http://bos.zrc-sazu.si/a_beseda.html, where wordform search is reached by selecting \"word seach\" in the right hand side \"What to do?\" column. On the mentioned web page the corpus structure is also explained.\r\n\r\nThe lexicon is UTF-8 coded, has 2,251,151 lines, each containing the following 2 data fields, tab separated:\r\n\r\n1. token, Slovenian: pojavnica.\r\n      The vast majority of tokens are wordforms, also included are numbers and selected multiword units such as URLs, e-mail addresses, place names like New York, car plates, ID numbers.\r\n\r\n2. frequency, Slovenian: pogostnost.\r\n      The sum of all frequencies is 318,170,212."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1155"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "word forms"
+        },
+        {
+            "name": "lexicon"
+        }
+    ],
+    "title": [
+        "Nova Beseda Frequency Lexicon"
+    ],
+    "url": ""
+}

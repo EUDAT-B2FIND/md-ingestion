@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/34277/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/34277/</dc:identifier>
+    <dc:title>130511-10 Thors&#248;</dc:title>
+    <dc:creator>Moesg&#229;rd Museum</dc:creator>
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+1929      : Overpl&#248;jet rund H&#248;j paa Top af h&#248;j, bred Banke; 2 x 18 m. St&#230;rkt uregelm&#230;ssig Overflade, neddybet i Midten. Der fandtes i denne H&#248;j for et Par Aar siden en Sten&#248;xe med Skafthul og et Flintspyd; nylig er en M&#230;ngde store Sten opgravet..1892      : I de senere Aar er denne H&#248;j overpl&#248;jet, saa det kan nu ikke sees, om den er brudt eller ej. Fodsteen eller andre Steen sees ikke. Den er bygt af Muld og har en meget smuk Form.1929      : Overpl&#248;jet rund H&#248;j paa Top af h&#248;j, bred Banke; 2 x 18 m. St&#230;rkt uregelm&#230;ssig Overflade, neddybet i Midten. Der fandtes i denne H&#248;j for et Par Aar siden en Sten&#248;xe med Skafthul og et Flintspyd; nylig er en M&#230;ngde store Sten opgravet..1892      : I de senere Aar er denne H&#248;j overpl&#248;jet, saa det kan nu ikke sees, om den er brudt eller ej. Fodsteen eller andre Steen sees ikke. Den er bygt af Muld og har en meget smuk Form.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>Dataset</dc:type>
+    <dcterms:alternative>130511-10</dcterms:alternative>
+    <dc:language>dan</dc:language>
+    <dcterms:spatial>Thors&#248;</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">9.811246,56.302585</dcterms:spatial>
+    <dc:subject xml:lang="da">Rundh&#248;j</dc:subject>
+    <dc:subject xml:lang="en">Round barrow, burial mound, Funerary</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>-2800,-2351</dcterms:temporal>
+    <dcterms:temporal>AYEX</dcterms:temporal>
+    <dc:rights>Public</dc:rights>
+  </metadata>
+</record>

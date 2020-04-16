@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5307",
+    "MetadataAccess": [
+        "oai:ota:oucs:5307"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Beilby, Ralph, 1743-1817."
+    ],
+    "fulltext": "oai:ota:oucs:5307;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5307.xml;History of British birds: The figures engraved on wood by T. Bewick. Vol. I. Containing the history and description of land birds. [pt.1];Beilby, Ralph, 1743-1817.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9013a359-5317-5687-ab16-3f2b2a78000a",
+    "oai_identifier": [
+        "oai:ota:oucs:5307"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "History of British birds: The figures engraved on wood by T. Bewick. Vol. I. Containing the history and description of land birds. [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5307.xml"
+}

@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3175",
+    "MetadataAccess": [
+        "oai:ota:oucs:3175"
+    ],
+    "PublicationTimestamp": "1869-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1869"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Mill, John Stuart, 1806-1873"
+    ],
+    "fulltext": "oai:ota:oucs:3175;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3175.xml;The subjection of women;Mill, John Stuart, 1806-1873;not after: 1869;text_and_corpus_linguistics;Essays -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8302ee4b-5bc4-511c-88d0-bceaea727795",
+    "oai_identifier": [
+        "oai:ota:oucs:3175"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Essays -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The subjection of women"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3175.xml"
+}

@@ -1,0 +1,170 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6333</identifier>
+    <datestamp>2018-09-05T10:05:15Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2017.013</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Del Bello, Elisabetta</default:creatorName>
+              <default:givenName>Elisabetta</default:givenName>
+              <default:familyName>Del Bello</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0001-8043-7410</default:nameIdentifier>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Taddeucci, Jacopo</default:creatorName>
+              <default:givenName>Jacopo</default:givenName>
+              <default:familyName>Taddeucci</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0002-0516-3699</default:nameIdentifier>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Scarlato, Piergiorgio</default:creatorName>
+              <default:givenName>Piergiorgio</default:givenName>
+              <default:familyName>Scarlato</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0003-1933-0192</default:nameIdentifier>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Giacalone, Emanuele</default:creatorName>
+              <default:givenName>Emanuele</default:givenName>
+              <default:familyName>Giacalone</default:familyName>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="en">Particle size distribution analyses of volcanic ash from Campi Flegrei (Italy) and Sakurajima (Japan) volcanoes </default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2017</default:publicationYear>
+          <default:subjects>
+            <default:subject>multi-wavelength separation analyser</default:subject>
+            <default:subject>grain size distribution</default:subject>
+            <default:subject>phonolite</default:subject>
+            <default:subject>andesite</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>Multi-scale laboratories</default:subject>
+            <default:subject>rock and melt physical properties</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="Researcher">
+              <default:contributorName>Del Bello, Elisabetta</default:contributorName>
+              <default:givenName>Elisabetta</default:givenName>
+              <default:familyName>Del Bello</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0001-8043-7410</default:nameIdentifier>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Del Bello, Elisabetta</default:contributorName>
+              <default:givenName>Elisabetta</default:givenName>
+              <default:familyName>Del Bello</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0001-8043-7410</default:nameIdentifier>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Researcher">
+              <default:contributorName>Taddeucci, Jacopo</default:contributorName>
+              <default:givenName>Jacopo</default:givenName>
+              <default:familyName>Taddeucci</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0002-0516-3699</default:nameIdentifier>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Taddeucci, Jacopo</default:contributorName>
+              <default:givenName>Jacopo</default:givenName>
+              <default:familyName>Taddeucci</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0002-0516-3699</default:nameIdentifier>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Researcher">
+              <default:contributorName>Scarlato, Piergiorgio</default:contributorName>
+              <default:givenName>Piergiorgio</default:givenName>
+              <default:familyName>Scarlato</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0003-1933-0192</default:nameIdentifier>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Scarlato, Piergiorgio</default:contributorName>
+              <default:givenName>Piergiorgio</default:givenName>
+              <default:familyName>Scarlato</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0003-1933-0192</default:nameIdentifier>
+            </default:contributor>
+            <default:contributor contributorType="DataManager">
+              <default:contributorName>Scarlato, Piergiorgio</default:contributorName>
+              <default:givenName>Piergiorgio</default:givenName>
+              <default:familyName>Scarlato</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">orcid.org/0000-0003-1933-0192</default:nameIdentifier>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Giacalone, Emanuele</default:contributorName>
+              <default:givenName>Emanuele</default:givenName>
+              <default:familyName>Giacalone</default:familyName>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>HP-HT Laboratory of Experimental Volcanolgy and Geophysics (INGV, Italy)</default:contributorName>
+              <default:affiliation>INGV, Italy</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:language>en</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1002/2014GL062292</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1002/ppsc.200601028</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/S0377-0273(99)00037-2</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>19273360 Bytes</default:size>
+            <default:size>3 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/pdf</default:format>
+            <default:format>application/pdf</default:format>
+            <default:format>application/x-zip-compressed</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">This data publication includes particle size distribution data of natural volcanic ash samples used as starting material for laboratory experiments simulating the aggregation/disaggregation of colliding volcanic ash particles. Full details of the experimental method can be found in Del Bello et. al. (2015) and in the data description file provided here.<default:br/>
+         <default:br/>Here we report raw particle size distribution data obtained through separation analysis. Two types of volcanic ash were analysed: i) andesitic ash from the Sakurajima volcano (Japan), collected from July 2013 deposits (named Sak sample); ii) phonolitic ash collected from the basal fallout layer of the ~10 ka old Pomici Principali eruptive unit [Di Vito et al., 1999]) of the Campi Flegrei (named Ppa).  For both compositions, 3 different starting materials were obtained by hand sieving the natural samples into three main particle size classes: (i) &lt;32 &#956;m, (ii) 32&#8211;63 &#956;m, and (iii) 63&#8211;90 &#956;m. For the phonolitic composition Ppa two additional starting materials were obtained by mixing the &lt;32 &#956;m and the 32&#8211;63 &#956;m classes in known proportions. <default:br/>
+         <default:br/>For each starting material, the grain size distribution of the sample was measured by a multiwavelength separation analyzer (LUMIReader&#174;, https://www.lum-gmbh.com/lumireader_en.html). This device measures space and time resolved profiles of the transmitted light across the water-diluted sample (5% solid content) during sedimentation of particles.  The cumulative volume-weighted particle size distribution is obtained from the extinction profiles using the multi-wavelength Particle size Analyser modulus (PSA). Details on the sample preparation procedure can be found in Detloff et al. (2006). <default:br/>
+         <default:br/>For each measurement performed (see Table 1), a pdf file and a excel file are provided. The pdf file lists the analysis summary, including a description of the analysis settings and conditions, materials used, and distribution model adopted for the fit.  It also provides graphs of the obtained volume weighted cumulative grain size distribution, and of the measured transmission profiles for each wavelength (870 nm, 630 nm and 470 nm, respectively). The Excel (*.xlsx format) file include 4 datasheets, listing the results (sheet name ending *_R) and the fit data (sheet names ending *_F01,*_F02, *_F03) obtained for the different instrument wavelength. In each datasheet the following data are listed in the columns: particle grain size (x3 in &#181;m), volume weighted distribution (Q3(x) in %), Martin diameter (x3m in &#181;m), volume weighted density distribution (q3(x) in 1/&#181;m). The fit datasheets also include information on the fit such as distribution model used and  distribution parameters (quantiles, median, standard deviation, span, etc..).<default:br/>
+         <default:br/>A full list of the files included is given in List_of_files_DelBello et al 2017.pdf.<default:br/>
+         <default:br/>
+      </default:description>
+            <default:description descriptionType="TableOfContents"><default:br/>
+Measurement name 	Sample type	Size class (&#181;m)* <default:br/>Ppamag32_01	Phonolite (Ppa)	32-63 <default:br/>Ppamag32_03	Phonolite (Ppa)	32-63 <default:br/>Ppamag32_61	Phonolite (Ppa)	32-63<default:br/>Ppamag64_01	Phonolite (Ppa)	63-90<default:br/>Ppamin32_00	Phonolite (Ppa)	&lt;32 <default:br/>Ppamin32_02	Phonolite (Ppa)	&lt;32 <default:br/>Ppamin32_35	Phonolite (Ppa)	&lt;32 <default:br/>Ppamix32_02	Phonolite (Ppa)	&lt;32 + 32-63 (1:1) <default:br/>Ppamix32_03	Phonolite (Ppa)	&lt;32 + 32-63 (1:10)<default:br/>Ppamix32_04	Phonolite (Ppa)	&lt;32 + 32-63 (1:5) <default:br/>Ppamix32_05	Phonolite (Ppa)	&lt;32 + 32-63 (1:2) <default:br/>Ppamix32_06	Phonolite (Ppa)	&lt;32 + 32-63 (1:1) <default:br/>Ppamix32_70	Phonolite (Ppa)	&lt;32 + 32-63 (1:10) <default:br/>Ppamix32_71	Phonolite (Ppa)	&lt;32 + 32-63 (1:5) <default:br/>Ppamix32_72	Phonolite (Ppa)	&lt;32 + 32-63 (1:2) <default:br/>Ppamix32_73	Phonolite (Ppa)	&lt;32 + 32-63 (1:1) <default:br/>Ppamix63_02	Phonolite (Ppa)	&lt;32 + 63-90 (1:1) <default:br/>Ppatotal_01	Phonolite (Ppa)	total <default:br/>Sakmag32_02	Andesite (Sak)	32-63 <default:br/>Sakmag63_01	Andesite (Sak)	32-63 <default:br/>Sakmag90_01	Andesite (Sak)	63-90 <default:br/>Sakmin32_01	Andesite (Sak)	&lt;32 <default:br/>Sakmin32_02	Andesite (Sak)	&lt;32 <default:br/>Saktotal_01	Andesite (Sak)	total<default:br/>
+         <default:br/>Table 1. List of particle size characterization measurements included in this dataset. *When mixed sample are used, the respective weight proportion of the component classes used are reported in brackets.
+</default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationBox>
+                <default:westBoundLongitude>130.64838409423828</default:westBoundLongitude>
+                <default:eastBoundLongitude>130.67516326904297</default:eastBoundLongitude>
+                <default:southBoundLatitude>31.568590419282316</default:southBoundLatitude>
+                <default:northBoundLatitude>31.58964917898045</default:northBoundLatitude>
+              </default:geoLocationBox>
+              <default:geoLocationPlace>Sakurajima volcano, Japan</default:geoLocationPlace>
+            </default:geoLocation>
+            <default:geoLocation>
+              <default:geoLocationBox>
+                <default:westBoundLongitude>14.034347534179688</default:westBoundLongitude>
+                <default:eastBoundLongitude>14.308319091796875</default:eastBoundLongitude>
+                <default:southBoundLatitude>40.769101775774935</default:southBoundLatitude>
+                <default:northBoundLatitude>40.9145503626772</default:northBoundLatitude>
+              </default:geoLocationBox>
+              <default:geoLocationPlace>Campi Flegrei Volcano, Italy</default:geoLocationPlace>
+            </default:geoLocation>
+          </default:geoLocations>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

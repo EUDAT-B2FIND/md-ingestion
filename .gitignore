@@ -15,3 +15,4 @@ community_list
 oaidata_old/*
 results*.txt
 *.crt
+__pycache__/

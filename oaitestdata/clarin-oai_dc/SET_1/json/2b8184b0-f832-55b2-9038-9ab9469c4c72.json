@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Center for Information and Language Processing, University of Munich"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 4",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/LRT-1484",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/LRT-1484"
+    ],
+    "PID": "http://hdl.handle.net/11234/LRT-1484",
+    "PublicationTimestamp": "2015-03-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Center for Information and Language Processing, University of Munich"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "M\u00fcller, Thomas",
+        "Sch\u00fctze, Hinrich",
+        "Caratti, Francesca",
+        "Recknagel, Arne"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/LRT-1484;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;A morphological layer for the German part of the SMULTRON corpus;M\u00fcller, Thomas;Sch\u00fctze, Hinrich;Caratti, Francesca;Recknagel, Arne;morphology;morphological tagging;PoS tagging;A morphological layer for the German part of the SMULTRON corpus. Layer was annotated according to the STTS tagset and the annotation guidelines of the Tiger corpus.\r\n\r\nCoordinator: Thomas M\u00fcller\r\nAnnotators: Francesca Caratti, Arne Recknagel\r\n\r\nThis distribution contains a morphological layer for the SMULTRON corpus [0].\r\nThe annotation process is described in :\r\n\r\n@InProceedings{mueller2015,\r\n  author = {M\\\"uller, Thomas and Sch\\\"utze, Hinrich},\r\n  title = {Robust Morphological Tagging with Word Representations},\r\n  booktitle = {Proceedings of NAACL},\r\n  year = {2015},\r\n}\r\n\r\n[0] http://www.cl.uzh.ch/research/parallelcorpora/paralleltreebanks/smultron_en.html;2015-03-01;corpus;http://hdl.handle.net/11234/LRT-1484;deu;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;PUB;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 4;Center for Information and Language Processing, University of Munich;http://cistern.cis.lmu.de/marmot/naacl2015/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2b8184b0-f832-55b2-9038-9ab9469c4c72",
+    "notes": [
+        "A morphological layer for the German part of the SMULTRON corpus. Layer was annotated according to the STTS tagset and the annotation guidelines of the Tiger corpus.\r\n\r\nCoordinator: Thomas M\u00fcller\r\nAnnotators: Francesca Caratti, Arne Recknagel\r\n\r\nThis distribution contains a morphological layer for the SMULTRON corpus [0].\r\nThe annotation process is described in :\r\n\r\n@InProceedings{mueller2015,\r\n  author = {M\\\"uller, Thomas and Sch\\\"utze, Hinrich},\r\n  title = {Robust Morphological Tagging with Word Representations},\r\n  booktitle = {Proceedings of NAACL},\r\n  year = {2015},\r\n}\r\n\r\n[0] http://www.cl.uzh.ch/research/parallelcorpora/paralleltreebanks/smultron_en.html"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/LRT-1484"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "morphological tagging"
+        },
+        {
+            "name": "PoS tagging"
+        }
+    ],
+    "title": [
+        "A morphological layer for the German part of the SMULTRON corpus"
+    ],
+    "url": ""
+}

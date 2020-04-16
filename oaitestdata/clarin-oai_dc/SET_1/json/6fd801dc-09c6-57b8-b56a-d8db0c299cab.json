@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 13",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech",
+        "Vietnamese",
+        "Romanian",
+        "Polish",
+        "Slovak",
+        "Spanish",
+        "Croatian",
+        "Irish",
+        "Latvian",
+        "Hungarian",
+        "French",
+        "Turkish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2607",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2607"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2607",
+    "PublicationTimestamp": "2018-01-31T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "N\u00e1plava, Jakub",
+        "Straka, Milan",
+        "Stra\u0148\u00e1k, Pavel",
+        "Haji\u010d, Jan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2607;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Corpus for training and evaluating diacritics restoration systems;N\u00e1plava, Jakub;Straka, Milan;Haji\u010d, Jan;Stra\u0148\u00e1k, Pavel;diacritical marks generation;natural language correction;Corpus of texts in 12 languages. For each language, we provide one training, one development and one testing set acquired from Wikipedia articles. Moreover, each language dataset contains (substantially larger) training set collected from (general) Web texts. All sets, except for Wikipedia and Web training sets that can contain similar sentences, are disjoint. Data are segmented into sentences which are further word tokenized.\r\n\r\nAll data in the corpus contain diacritics. To strip diacritics from them, use Python script diacritization_stripping.py contained within attached stripping_diacritics.zip. This script has two modes. We generally recommend using method called uninames, which for some languages behaves better. \r\n\r\nThe code for training recurrent neural-network based model for diacritics restoration is located at https://github.com/arahusky/diacritics_restoration.;2018-01-31;corpus;http://hdl.handle.net/11234/1-2607;ces;vie;ron;pol;slk;spa;hrv;gle;lav;hun;fra;tur;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 13;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6fd801dc-09c6-57b8-b56a-d8db0c299cab",
+    "notes": [
+        "Corpus of texts in 12 languages. For each language, we provide one training, one development and one testing set acquired from Wikipedia articles. Moreover, each language dataset contains (substantially larger) training set collected from (general) Web texts. All sets, except for Wikipedia and Web training sets that can contain similar sentences, are disjoint. Data are segmented into sentences which are further word tokenized.\r\n\r\nAll data in the corpus contain diacritics. To strip diacritics from them, use Python script diacritization_stripping.py contained within attached stripping_diacritics.zip. This script has two modes. We generally recommend using method called uninames, which for some languages behaves better. \r\n\r\nThe code for training recurrent neural-network based model for diacritics restoration is located at https://github.com/arahusky/diacritics_restoration."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2607"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "diacritical marks generation"
+        },
+        {
+            "name": "natural language correction"
+        }
+    ],
+    "title": [
+        "Corpus for training and evaluating diacritics restoration systems"
+    ],
+    "url": ""
+}

@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2018.0016/v2</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Boyd, Peter George</dc:creator>
+      <dc:creator>Chidambaram, Arunraj</dc:creator>
+      <dc:creator>Daff, Thomas D.</dc:creator>
+      <dc:creator>Bounds, Richard</dc:creator>
+      <dc:creator>G&#322;adysiak, Andrzej</dc:creator>
+      <dc:creator>Schouwink, Pascal</dc:creator>
+      <dc:creator>Moosavi, Seyed Mohamad</dc:creator>
+      <dc:creator>Reimer, Jeffrey A.</dc:creator>
+      <dc:creator>Navarro, Jorge A. R.</dc:creator>
+      <dc:creator>Woo, Tom K.</dc:creator>
+      <dc:creator>Smit, Berend</dc:creator>
+      <dc:creator>Stylianou, Kyriakos C.</dc:creator>
+      <dc:title>Data-driven design and synthesis of metal-organic frameworks for wet flue gas CO2 capture</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2018-11-25</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>nanoporous materials</dc:subject>
+      <dc:subject>high throughput screening</dc:subject>
+      <dc:subject>gas adsorption</dc:subject>
+      <dc:subject>co2 capture</dc:subject>
+      <dc:subject>adsorbaphore</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2018.0016/v2</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2018.0016/v2</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>In this entry is a database of 324,426 hypothetical Metal-Organic Frameworks (MOFs) that were used in a study to screen potential carbon dioxide scrubbers.  Using a method to assemble these materials with topological blueprints, we only selected materials that could be accurately represented with the MEPO-QEq charge generation method. By ensuring that the electrostatic potential is accurately represented in these materials, screening for CO2 adsorption properties would result very few false positives/negatives. The atom-centered charges reported in the CIF file for each MOF were derived from the MEPO-QEq method, which can be found under the &amp;#39;_atom_type_partial_charge&amp;#39; column in each CIF file.
+&lt;br/&gt;
+
+&lt;br/&gt;
+The relevant data for each MOF is reported in accompanying .csv files. Post-combustion flue gas was simulated at a temperature of both 298K and 0.15 bar CO2, and 313K and 0.15 bar CO2. Mixture adsorption was simulated with the conditions 298K and 0.15:0.85 CO2/N2 with a total pressure of 1 bar. The data file reports working capacities, which is the difference of adsorption of CO2 between two thermodynamic state points. The adsorption state point(s) are mentioned above, and two desorption values were simulated; 0.1 bar CO2 at 363K (vacuum swing adsorption) and 0.7 bar CO2 at 413K (temperature swing adsorption). The data presented in the main manuscript correspond to vacuum swing conditions.
+&lt;br/&gt;
+
+&lt;br/&gt;
+Over 8,000 materials were selected for more refined simulations, including re-defining partial atomic charges with the REPEAT method, and more detailed simulations to obtain common chemical patterns surrounding CO2 binding sites (adsorbaphores). There is an additional .csv file with these refined calculations that accompany this entry titled &amp;#39;top_MOFs_screening_data.csv&amp;#39;.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

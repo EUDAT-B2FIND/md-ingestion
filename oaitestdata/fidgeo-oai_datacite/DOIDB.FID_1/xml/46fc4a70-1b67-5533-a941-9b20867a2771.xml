@@ -1,0 +1,209 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6554</identifier>
+    <datestamp>2018-10-25T08:10:48Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.007</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Kelder, Nick A.</default:creatorName>
+              <default:givenName>Nick A.</default:givenName>
+              <default:familyName>Kelder</default:familyName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Sant, Karin</default:creatorName>
+              <default:givenName>Karin</default:givenName>
+              <default:familyName>Sant</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">https://orcid.org/0000-0002-1508-3959</default:nameIdentifier>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>van Dijk, Gijs A.</default:creatorName>
+              <default:givenName>Gijs A.</default:givenName>
+              <default:familyName>van Dijk</default:familyName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Lathouwers, Ymke Z.</default:creatorName>
+              <default:givenName>Ymke Z.</default:givenName>
+              <default:familyName>Lathouwers</default:familyName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Dekkers, Mark J.</default:creatorName>
+              <default:givenName>Mark J.</default:givenName>
+              <default:familyName>Dekkers</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">http://orcid.org/0000-0002-4156-3841</default:nameIdentifier>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Krijgsman, Wout</default:creatorName>
+              <default:givenName>Wout</default:givenName>
+              <default:familyName>Krijgsman</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">7003956416</default:nameIdentifier>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Magyar, Imre</default:creatorName>
+              <default:givenName>Imre</default:givenName>
+              <default:familyName>Magyar</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">7005270225</default:nameIdentifier>
+              <default:affiliation>MTA-MTM-ELTE Research Group for Paleontology, Hungary</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Sztan&#243;, Orsolya</default:creatorName>
+              <default:givenName>Orsolya</default:givenName>
+              <default:familyName>Sztan&#243;</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">http://orcid.org/0000-0003-0786-3653</default:nameIdentifier>
+              <default:affiliation>E&#246;tv&#246;s Lor&#225;nd University, Hungary</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="eng">Supplementary paleomagnetic data to: &#8220;Paleomagnetism in the Pannonian; Problems, Pitfalls, and Progress in using iron sulphides for magnetostratigraphy&#8221;</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>magnetostratigraphy</default:subject>
+            <default:subject>Lake Pannon</default:subject>
+            <default:subject>Hungary</default:subject>
+            <default:subject>iron sulfide</default:subject>
+            <default:subject>greigite</default:subject>
+            <default:subject>endemic</default:subject>
+            <default:subject>delta progradation</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>Multi-scale laboratories</default:subject>
+            <default:subject>Paleomagnetic and magnetic data</default:subject>
+            <default:subject>paleomagnetic data</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ProjectLeader">
+              <default:contributorName>Kelder, Nick A.</default:contributorName>
+              <default:givenName>Nick A.</default:givenName>
+              <default:familyName>Kelder</default:familyName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectManager">
+              <default:contributorName>Sant, Karin</default:contributorName>
+              <default:givenName>Karin</default:givenName>
+              <default:familyName>Sant</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">https://orcid.org/0000-0002-1508-3959</default:nameIdentifier>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Sant, Karin</default:contributorName>
+              <default:givenName>Karin</default:givenName>
+              <default:familyName>Sant</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">https://orcid.org/0000-0002-1508-3959</default:nameIdentifier>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Researcher">
+              <default:contributorName>van Dijk, Gijs A.</default:contributorName>
+              <default:givenName>Gijs A.</default:givenName>
+              <default:familyName>van Dijk</default:familyName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Researcher">
+              <default:contributorName>Lathouwers, Ymke Z.</default:contributorName>
+              <default:givenName>Ymke Z.</default:givenName>
+              <default:familyName>Lathouwers</default:familyName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Supervisor">
+              <default:contributorName>Dekkers, Mark J.</default:contributorName>
+              <default:givenName>Mark J.</default:givenName>
+              <default:familyName>Dekkers</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">http://orcid.org/0000-0002-4156-3841</default:nameIdentifier>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Supervisor">
+              <default:contributorName>Krijgsman, Wout</default:contributorName>
+              <default:givenName>Wout</default:givenName>
+              <default:familyName>Krijgsman</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">7003956416</default:nameIdentifier>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectMember">
+              <default:contributorName>Magyar, Imre</default:contributorName>
+              <default:givenName>Imre</default:givenName>
+              <default:familyName>Magyar</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ScopusID">7005270225</default:nameIdentifier>
+              <default:affiliation>MTA-MTM-ELTE Research Group for Paleontology, Hungary</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectMember">
+              <default:contributorName>Sztan&#243;, Orsolya</default:contributorName>
+              <default:givenName>Orsolya</default:givenName>
+              <default:familyName>Sztan&#243;</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">http://orcid.org/0000-0003-0786-3653</default:nameIdentifier>
+              <default:affiliation>E&#246;tv&#246;s Lor&#225;nd University, Hungary</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Paleomagnetic Laboratory Fort Hoofddijk (Utrecht University, The Netherlands)</default:contributorName>
+              <default:affiliation>Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Other">
+              <default:contributorName>Mecsekerc Ltd.</default:contributorName>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Available">2018-07-01/2</default:date>
+            <default:date dateType="Created">2018-04-17</default:date>
+          </default:dates>
+          <default:language>eng</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1029/2018GC007673</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.cageo.2016.05.007</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>1763452 Bytes</default:size>
+            <default:size>2 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/x-zip-compressed</default:format>
+            <default:format>application/pdf</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">This dataset contains the paleomagnetic supplementary material to the article Kelder et al. (subm.), which presents a magnetostratigraphic correlation of Late Miocene lacustrine sediments based on multi-polarity greigite. The multi-polarity is visible in most thermal paleomagnetic results (Zijderveld diagrams) by antipodal high and medium temperature components, while only one magnetic component was visible in the alternating field demagnetization diagrams. Based on this complex behavior, a tailored demagnetization approach was developed to allow for reliable magnetostratigraphic dating of lacustrine sediments.<default:br/>
+         <default:br/>The dataset includes demagnetization data from four drill cores located nearby Paks, Hungary. They were not oriented, meaning that only the inclination could be used for paleomagnetism. The measurements took place at the Paleomagnetic Laboratory Fort Hoofddijk in Utrecht University, The Netherlands. For details about the methodology the reader is referred to the methodology in Kelder et al. (subm).<default:br/>
+         <default:br/>Three types of data are distinguished:<default:br/>&#8226; Thermal demagnetization results (.th files)<default:br/>&#8226; Alternating field demagnetization results (.af files).<default:br/>&#8226; Interpreted magnetic vectors for demagnetization files (.dir files)<default:br/>
+         <default:br/>The .th, .af. and .dir files can be viewed with Notepad or similar programs, and analyzed via the Open Source platform Paleomagnetism.org (Koymans et al., 2016). The .dir files only exist for the cores PAET-30 and PAET-34, because these were interpreted in detail, while the material of the other cores (PAET-26, 27) were mainly used for rock magnetic purposes.<default:br/>
+         <default:br/>Finally, an overview of the data files, abbreviations and sample codes is provided in the data description file.</default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationBox>
+                <default:westBoundLongitude>18.63555908203125</default:westBoundLongitude>
+                <default:eastBoundLongitude>19.12994384765625</default:eastBoundLongitude>
+                <default:southBoundLatitude>46.47002468938531</default:southBoundLatitude>
+                <default:northBoundLatitude>46.758679967095574</default:northBoundLatitude>
+              </default:geoLocationBox>
+              <default:geoLocationPlace>Data derive from four cores taken in the period 2015-2017</default:geoLocationPlace>
+            </default:geoLocation>
+          </default:geoLocations>
+          <default:fundingReferences>
+            <default:fundingReference>
+              <default:funderName>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</default:funderName>
+              <default:funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/501100003246</default:funderIdentifier>
+              <default:awardNumber>865.10.011</default:awardNumber>
+              <default:awardTitle>VICI</default:awardTitle>
+            </default:fundingReference>
+          </default:fundingReferences>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

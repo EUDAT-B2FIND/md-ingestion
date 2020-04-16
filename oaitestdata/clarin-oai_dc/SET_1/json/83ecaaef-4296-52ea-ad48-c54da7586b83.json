@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Sargent, Valerie M."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(10 files : total of ca. 1.3 MB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0081",
+    "MetadataAccess": [
+        "oai:ota:oucs:0081"
+    ],
+    "PublicationTimestamp": "1817-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1817"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Keats, John, 1795-1821"
+    ],
+    "fulltext": "oai:ota:oucs:0081;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0081.xml;The poems of John Keats / John Keats;Keats, John, 1795-1821;1817;text_and_corpus_linguistics;English poetry -- 19th century;eng;Oxford Text Archive, University of Oxford;Sargent, Valerie M.;(10 files : total of ca. 1.3 MB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "83ecaaef-4296-52ea-ad48-c54da7586b83",
+    "oai_identifier": [
+        "oai:ota:oucs:0081"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English poetry -- th century"
+        }
+    ],
+    "title": [
+        "The poems of John Keats / John Keats"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0081.xml"
+}

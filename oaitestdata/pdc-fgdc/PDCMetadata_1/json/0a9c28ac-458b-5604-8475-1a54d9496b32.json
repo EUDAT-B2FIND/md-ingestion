@@ -1,0 +1,98 @@
+{
+    "Contact": [
+        "steve.ferguson@dfo-mpo.gc.ca"
+    ],
+    "Contributor": [
+        "Fisheries and Oceans Canada"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Concerns have arisen over possible declines in ringed seal numbers in nearby western Hudson Bay as indicated by reduced pregnancy rate, pup survival and abundance, and older age structure. Ringed seals are numerically, nutritionally, and economically one of the most important marine mammal species to Inuit communities of Hudson Bay, so knowledge of where and how seals use the bay is needed. As part of a larger project to assess ringed seal population dynamics and diet with climate change, this study focuses on ringed seal movements and haul-out behaviour, assess critical habitat, and investigate characteristics of foraging behaviour. We will further examine how similar metrics of behavior and habitat use for polar bears in the same region overlap. This project describes the collection and analysis of these data for ringed seals."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=9951_fgdc",
+    "PublicationTimestamp": "2011-10-17T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Limited"
+    ],
+    "SpatialCoverage": "(57N-69N,82W-79W)",
+    "TempCoverageBegin": 63383079599,
+    "TempCoverageEnd": 63385585199,
+    "TemporalCoverage": " period : ( 2009-07-13T11:59:59Z - 2009-08-11T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2009-07-13T11:59:59Z",
+    "TemporalCoverage:EndDate": "2009-08-11T11:59:59Z",
+    "author": [
+        "Brent Young",
+        "Elizabeth Peacock",
+        "Steven H. Ferguson",
+        "Tara Bortoluzzi"
+    ],
+    "fulltext": "9951_fgdc;2017-04-09T22:02:15Z;PDCMetadata;Steven H. Ferguson;Steven H. Ferguson;Brent Young;Elizabeth Peacock;Tara Bortoluzzi;20111017;Polar Bears and Seals : Movement of ringed seals in the greater Hudson Bay region, Nunavut, 2009;Computer file;unknown;Please contact Dr. Steven Ferguson for information on how to cite this data.;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=9951;The aim of the project is to provide management information and advice for the Hudson Bay ringed seal stock by: (1) delineating movements that may bring juveniles and possibly adults into areas hunted by other communities; (2) assessing sex- and age-specific site fidelity of individual seals during the breeding season; (3) defining critical foraging habitat, movement and diving behaviour; (4) defining spatio-temporal variation in these aspects of ringed seal foraging ecology to complement ongoing diet studies to address a purported shift in prey of top predators associated with climate change. In total satellite telemetry project has deployed satellite tags (Wildlife Computers Splash instruments relaying location and diving behaviour data via the ARGOS satellite system) on a total of 34 live ringed seals (10 in September 2006, 8 in September 2007, 9 in September 2008, and 8 in August 2009); 2 bearded seals (2 in September 2008) captured at the Belcher Islands, Nunavut, from 2006 to 2008; and 7 ringed seals captured near Igloolik, Nunavut in July 2009. Community-based monitoring and fieldwork for the satellite telemetry project took place in Foxe Basin, near the community of Igloolik 13 to 24 July, 2009; and in south-eastern Hudson Bay, near the community of Sanikiluaq 27 July to 11 August, 2009.;Concerns have arisen over possible declines in ringed seal numbers in nearby western Hudson Bay as indicated by reduced pregnancy rate, pup survival and abundance, and older age structure. Ringed seals are numerically, nutritionally, and economically one of the most important marine mammal species to Inuit communities of Hudson Bay, so knowledge of where and how seals use the bay is needed. As part of a larger project to assess ringed seal population dynamics and diet with climate change, this study focuses on ringed seal movements and haul-out behaviour, assess critical habitat, and investigate characteristics of foraging behaviour. We will further examine how similar metrics of behavior and habitat use for polar bears in the same region overlap. This project describes the collection and analysis of these data for ringed seals.;Summary: Not Applicable Research Program(s): CBMP/CAFF - Marine,IPY. For further information: Steve.Ferguson@dfo-mpo.gc.ca;20090713;20090811;NULL;In work;As needed;-82.3;-79.3;69.4;56.6;NULL;Climate change;Community-based monitoring;Fitness;Genetic analysis;Hudson Bay;Igloolik;Monitoring;Ringed seal;Sanikiluaq;Seals;Foxe Basin (Iglooik, NU) & Hudson Bay (near Sanikiluaq);NULL;Limited;NULL;Fisheries and Oceans Canada;Steven Ferguson;NULL;mailing;501 University Crescent;Winnipeg;MB;R3T2N6;Canada;204-983-5057;204-984-2403;steve.ferguson@dfo-mpo.gc.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;9951;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20111017;20111017;Steven Ferguson;Fisheries and Oceans Canada;mailing;501 University Crescent;Winnipeg;MB;R3T2N6;Canada;204-983-5057;204-984-2403;steve.ferguson@dfo-mpo.gc.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0a9c28ac-458b-5604-8475-1a54d9496b32",
+    "notes": [
+        "The aim of the project is to provide management information and advice for the Hudson Bay ringed seal stock by: (1) delineating movements that may bring juveniles and possibly adults into areas hunted by other communities; (2) assessing sex- and age-specific site fidelity of individual seals during the breeding season; (3) defining critical foraging habitat, movement and diving behaviour; (4) defining spatio-temporal variation in these aspects of ringed seal foraging ecology to complement ongoing diet studies to address a purported shift in prey of top predators associated with climate change. In total satellite telemetry project has deployed satellite tags (Wildlife Computers Splash instruments relaying location and diving behaviour data via the ARGOS satellite system) on a total of 34 live ringed seals (10 in September 2006, 8 in September 2007, 9 in September 2008, and 8 in August 2009); 2 bearded seals (2 in September 2008) captured at the Belcher Islands, Nunavut, from 2006 to 2008; and 7 ringed seals captured near Igloolik, Nunavut in July 2009. Community-based monitoring and fieldwork for the satellite telemetry project took place in Foxe Basin, near the community of Igloolik 13 to 24 July, 2009; and in south-eastern Hudson Bay, near the community of Sanikiluaq 27 July to 11 August, 2009."
+    ],
+    "oai_identifier": [
+        "9951_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-82.3,56.6],[-82.3,69.4],[-79.3,69.4],[-79.3,56.6],[-82.3,56.6]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Climate change"
+        },
+        {
+            "name": "Community-based monitoring"
+        },
+        {
+            "name": "Fitness"
+        },
+        {
+            "name": "Genetic analysis"
+        },
+        {
+            "name": "Hudson Bay"
+        },
+        {
+            "name": "Igloolik"
+        },
+        {
+            "name": "Monitoring"
+        },
+        {
+            "name": "Ringed seal"
+        },
+        {
+            "name": "Sanikiluaq"
+        },
+        {
+            "name": "Seals"
+        }
+    ],
+    "title": [
+        "Polar Bears and Seals : Movement of ringed seals in the greater Hudson Bay region, Nunavut, 2009"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=9951"
+}

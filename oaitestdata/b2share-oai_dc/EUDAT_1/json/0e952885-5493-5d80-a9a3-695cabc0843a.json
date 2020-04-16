@@ -1,0 +1,45 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.23728/b2share.51405d517d1947f894ef70f965e728fc",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/51405d517d1947f894ef70f965e728fc",
+    "PID": "http://hdl.handle.net/11304/c4fc6f0b-1a4e-4b3a-b55e-f71928f85a2e",
+    "PublicationTimestamp": "2017-11-24T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/c4fc6f0b-1a4e-4b3a-b55e-f71928f85a2e",
+        "10.23728/b2share.51405d517d1947f894ef70f965e728fc",
+        "https://b2share.eudat.eu/api/records/51405d517d1947f894ef70f965e728fc",
+        "oai:b2share.eudat.eu:b2rec/51405d517d1947f894ef70f965e728fc"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Micha\u0142 Jankowski"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/51405d517d1947f894ef70f965e728fc;2018-01-11T13:51:04Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;Micha\u0142 Jankowski;2017-11-24T15:21:46.357477+00:00;Presentation from AARC2 meeting.;http://hdl.handle.net/11304/c4fc6f0b-1a4e-4b3a-b55e-f71928f85a2e;10.23728/b2share.51405d517d1947f894ef70f965e728fc;https://b2share.eudat.eu/api/records/51405d517d1947f894ef70f965e728fc;oai:b2share.eudat.eu:b2rec/51405d517d1947f894ef70f965e728fc;info:eu-repo/semantics/openAccess;EUDAT-PRACE AAI integration status",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "0e952885-5493-5d80-a9a3-695cabc0843a",
+    "notes": [
+        "Presentation from AARC2 meeting."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/51405d517d1947f894ef70f965e728fc"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "title": [
+        "EUDAT-PRACE AAI integration status"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/51405d517d1947f894ef70f965e728fc"
+}

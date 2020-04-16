@@ -1,0 +1,92 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2823",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2823"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2823",
+    "PublicationTimestamp": "2018-06-07T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Haji\u010dov\u00e1, Eva",
+        "Haji\u010d, Jan",
+        "Ure\u0161ov\u00e1, Zde\u0148ka",
+        "Fu\u010d\u00edkov\u00e1, Eva"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2823;2018-07-02T22:05:54Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;CzEngClass 0.1;Ure\u0161ov\u00e1, Zde\u0148ka;Fu\u010d\u00edkov\u00e1, Eva;Haji\u010dov\u00e1, Eva;Haji\u010d, Jan;verbal valency;predicate argument structure;semantic roles;bilingual corpus annotation;translational equivalence;comparative syntax;comparative semantics;The CzEngClass synonym verb lexicon is a result of a project investigating semantic \u2018equivalence\u2019 of verb senses and their valency behavior in parallel Czech-English language resources, i.e., relating verb meanings with respect to contextually-based verb synonymy. The lexicon entries are linked to PDT-Vallex (http://hdl.handle.net/11858/00-097C-0000-0023-4338-F), EngVallex (http://hdl.handle.net/11858/00-097C-0000-0023-4337-2), CzEngVallex (http://hdl.handle.net/11234/1-1512), FrameNet (https://framenet.icsi.berkeley.edu/fndrupal/), VerbNet (http://verbs.colorado.edu/verbnet/index.html), PropBank (http://verbs.colorado.edu/%7Empalmer/projects/ace.html),  Ontonotes (http://verbs.colorado.edu/html_groupings/), and Czech (http://hdl.handle.net/11858/00-097C-0000-0001-4880-3) and English Wordnets (https://wordnet.princeton.edu/). Part of the dataset is a file reflecting annotators choices for assignment of verbs to classes.;2018-06-07;lexicalConceptualResource;http://hdl.handle.net/11234/1-2823;eng;ces;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/czengclass",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "747dd598-c60d-55a6-9ab7-197f96a05812",
+    "notes": [
+        "The CzEngClass synonym verb lexicon is a result of a project investigating semantic \u2018equivalence\u2019 of verb senses and their valency behavior in parallel Czech-English language resources, i.e., relating verb meanings with respect to contextually-based verb synonymy. The lexicon entries are linked to PDT-Vallex (http://hdl.handle.net/11858/00-097C-0000-0023-4338-F), EngVallex (http://hdl.handle.net/11858/00-097C-0000-0023-4337-2), CzEngVallex (http://hdl.handle.net/11234/1-1512), FrameNet (https://framenet.icsi.berkeley.edu/fndrupal/), VerbNet (http://verbs.colorado.edu/verbnet/index.html), PropBank (http://verbs.colorado.edu/%7Empalmer/projects/ace.html),  Ontonotes (http://verbs.colorado.edu/html_groupings/), and Czech (http://hdl.handle.net/11858/00-097C-0000-0001-4880-3) and English Wordnets (https://wordnet.princeton.edu/). Part of the dataset is a file reflecting annotators choices for assignment of verbs to classes."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2823"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "verbal valency"
+        },
+        {
+            "name": "predicate argument structure"
+        },
+        {
+            "name": "semantic roles"
+        },
+        {
+            "name": "bilingual corpus annotation"
+        },
+        {
+            "name": "translational equivalence"
+        },
+        {
+            "name": "comparative syntax"
+        },
+        {
+            "name": "comparative semantics"
+        }
+    ],
+    "title": [
+        "CzEngClass 0.1"
+    ],
+    "url": ""
+}

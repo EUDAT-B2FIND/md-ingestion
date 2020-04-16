@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>19bd5872a35a11e1a404080027e73ea2389997a9e3ac4aeab1c1e5a698951c82</identifier>
+    <datestamp>2019-02-27T12:09:01Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>GENIA Event Corpus with meta-knowledge annotation</dc:title>
+      <dc:description>The corpus consists of 1000 MEDLINE abstracts. It is a subset of the original GENIA POS &amp; term corpus, which was selected using the three MeSH terms human, blood cells and transcription factors. In each sentence, three types of information are annotated 1) biomedical terms are identified and assigned categories from the GENIA term ontology. 2) event structures are identified and assigned categories from the GENIA event ontology. 3) Thirdly, detailed information is annotated about how the event should be interpreted, according to its textual context. We call this information meta-knowledge. </dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

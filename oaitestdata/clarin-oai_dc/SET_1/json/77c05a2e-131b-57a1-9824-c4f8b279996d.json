@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Ibtikarat team"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/xml",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Arabic"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1943",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1943"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1943",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Ibtikarat team"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+        "http://creativecommons.org/licenses/by-nc/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Loukili, Taoufik"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1943;2017-02-06T11:05:25Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Arabic Enclitics Lexicon;Loukili, Taoufik;Enclitics;An XML-based file containing all Arabic enclitics;2014;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1943;ara;Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0);http://creativecommons.org/licenses/by-nc/4.0/;PUB;text/xml;text/plain; charset=utf-8;downloadable_files_count: 1;Ibtikarat team;http://arabic.emi.ac.ma/ibtikarat/?q=Resources",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "77c05a2e-131b-57a1-9824-c4f8b279996d",
+    "notes": [
+        "An XML-based file containing all Arabic enclitics"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1943"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Enclitics"
+        }
+    ],
+    "title": [
+        "Arabic Enclitics Lexicon"
+    ],
+    "url": ""
+}

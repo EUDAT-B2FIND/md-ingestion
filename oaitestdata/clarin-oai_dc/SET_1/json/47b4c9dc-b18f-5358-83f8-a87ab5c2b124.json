@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Czech",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1731",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1731"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1731",
+    "PublicationTimestamp": "2016-06-12T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Rosa, Rudolf"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1731;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech and English abstracts of \u00daFAL papers;Rosa, Rudolf;parallel corpus;scientific texts;abstracts;This is a document-aligned parallel corpus of English and Czech abstracts of scientific papers published by authors from the Institute of Formal and Applied Linguistics, Charles University in Prague, as reported in the institute's system Biblio. For each publication, the authors are obliged to provide both the original abstract in Czech or English, and its translation into English or Czech, respectively. No filtering was performed, except for removing entries missing the Czech or English abstract, and replacing newline and tabulator characters by spaces.;2016-06-12;corpus;http://hdl.handle.net/11234/1-1731;ces;eng;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/biblio/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "47b4c9dc-b18f-5358-83f8-a87ab5c2b124",
+    "notes": [
+        "This is a document-aligned parallel corpus of English and Czech abstracts of scientific papers published by authors from the Institute of Formal and Applied Linguistics, Charles University in Prague, as reported in the institute's system Biblio. For each publication, the authors are obliged to provide both the original abstract in Czech or English, and its translation into English or Czech, respectively. No filtering was performed, except for removing entries missing the Czech or English abstract, and replacing newline and tabulator characters by spaces."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1731"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "scientific texts"
+        },
+        {
+            "name": "abstracts"
+        }
+    ],
+    "title": [
+        "Czech and English abstracts of \u00daFAL papers"
+    ],
+    "url": ""
+}

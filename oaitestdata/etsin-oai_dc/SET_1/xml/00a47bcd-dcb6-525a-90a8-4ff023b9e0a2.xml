@@ -1,0 +1,48 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>urn:nbn:fi:csc-kata20141222155931417387</identifier>
+    <datestamp>2016-03-10T09:13:12Z</datestamp>
+    <setSpec>01905-2571-tampereen-yliopisto-yhteiskuntatieteellinen-tietoarkisto</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Turvallisuuspolitiikka- ja maanpuolustustutkimus 2004</dc:title>
+      <dc:title>Finnish Opinions on Security Policy and National Defence 2004</dc:title>
+      <dc:creator>Maanpuolustustiedotuksen suunnittelukunta (MTS)</dc:creator>
+      <dc:subject>asevelvollisuus</dc:subject>
+      <dc:subject>konfliktit</dc:subject>
+      <dc:subject>kriisinhallinta</dc:subject>
+      <dc:subject>liittoutuminen</dc:subject>
+      <dc:subject>maanpuolustus</dc:subject>
+      <dc:subject>miinat</dc:subject>
+      <dc:subject>poliittinen k&#228;ytt&#228;ytyminen</dc:subject>
+      <dc:subject>poliittiset asenteet ja mielipiteet</dc:subject>
+      <dc:subject>puolustuspolitiikka</dc:subject>
+      <dc:subject>rauhankumppanuus</dc:subject>
+      <dc:subject>rauhanturvaaminen</dc:subject>
+      <dc:subject>terrorismi</dc:subject>
+      <dc:subject>turvallisuus</dc:subject>
+      <dc:subject>turvallisuus ja rauha</dc:subject>
+      <dc:subject>turvallisuuspolitiikka</dc:subject>
+      <dc:subject>ulkopolitiikka</dc:subject>
+      <dc:subject>yhteiskuntatieteet</dc:subject>
+      <dc:description>Tutkimuksessa kartoitettiin vastaajien n&#228;kemyksi&#228; ulko- ja turvallisuuspolitiikan sek&#228; kansainv&#228;listen suhteiden hoidosta, sotilaallisesta liittoutumisesta ja sen eri vaihtoehdoista. Turvallisuuteen liittyen kysyttiin esimerkiksi, miten EU:n laajentuminen Baltiaan ja it&#228;iseen Keski-Eurooppaan, Viron, Latvian ja Liettuan Nato-j&#228;senyys, Ven&#228;j&#228;n julistama sota terrorismia vastaan sek&#228; Suomen sotilaallinen liittoutumattomuus vaikuttavat Suomen ja suomalaisten turvallisuuteen. Vastaajilta tiedusteltiin, luulevatko he Suomen olevan sitoutumassa Naton j&#228;senyyteen.&#13;
+&#13;
+Haastateltujen suhtautumista Suomen ja Naton yhteisty&#246;h&#246;n (rauhankumppanuus, kriisinhallintaoperaatiot sek&#228; aseistuksen ja johtoj&#228;rjestelmien yhteensovittaminen) kartoitettiin. Edelleen selvitettiin mielipiteit&#228; puolustusvoimille my&#246;nnett&#228;vist&#228; varoista, puolustusvoimien sotilaallisista teht&#228;vist&#228;, Suomen puolustusj&#228;rjestelm&#228;st&#228;, Euroopan unionin yhteisen puolustuksen j&#228;rjest&#228;misest&#228; sek&#228; terrorismin syist&#228;.&#13;
+&#13;
+Vastaajat kertoivat, kuinka huolissaan he ovat nykyisest&#228; maailmanpoliittisesta tilanteesta. Tulevaisuuteen liittyvi&#228; huolenaiheita (esim. Israelin ja palestiinalaisten v&#228;linen konflikti, ilmastonmuutos, kansainv&#228;linen terrorismi, j&#228;rjest&#228;ytynyt kansainv&#228;linen rikollisuus ja sotilaalliset selkkaukset) selvitettiin. Vastaajat arvioivat my&#246;s, pit&#228;isik&#246; Suomen liitty&#228; henkil&#246;miinat kielt&#228;v&#228;&#228;n niin sanottuun Ottawan sopimukseen. Taustamuuttujina olivat muun muassa vastaajan sukupuoli, ik&#228;, ty&#246;markkina- ja ammattiasema, koulutus, asuinl&#228;&#228;ni sek&#228; talouden tuloluokka.</dc:description>
+      <dc:publisher>Yhteiskuntatieteellinen tietoarkisto</dc:publisher>
+      <dc:publisher>Yhteiskuntatieteellinen tietoarkisto</dc:publisher>
+      <dc:date>2016-03-10</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>FSD2045</dc:identifier>
+      <dc:identifier>urn:nbn:fi:fsd:T-FSD2045</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-kata20141222155931417387</dc:identifier>
+      <dc:identifier>http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20141222155931417387</dc:identifier>
+      <dc:language/>
+      <dc:coverage>Suomi</dc:coverage>
+      <dc:coverage>2004/2004</dc:coverage>
+      <dc:rights>Other (Not Open)</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

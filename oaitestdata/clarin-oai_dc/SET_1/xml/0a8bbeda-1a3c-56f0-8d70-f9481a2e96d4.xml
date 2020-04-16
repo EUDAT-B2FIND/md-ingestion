@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2673</identifier>
+    <datestamp>2018-07-02T22:05:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Engineering job ads corpus</dc:title>
+      <dc:creator>Cardenas Acosta, Ronald</dc:creator>
+      <dc:creator>Bello Medina, Kevin</dc:creator>
+      <dc:creator>Coronado, Alberto</dc:creator>
+      <dc:creator>Villota, Elizabeth</dc:creator>
+      <dc:subject>job-advertisement</dc:subject>
+      <dc:subject>PoS tagging</dc:subject>
+      <dc:subject>text corpora</dc:subject>
+      <dc:description>The corpus presented consists of job ads in Spanish related to Engineering positions in Peru.&#13;
+The documents were preprocessed and annotated for POS tagging, NER, and topic modeling tasks.&#13;
+&#13;
+The corpus is divided in two components:&#13;
+- POS tagging/ NER training data: Consisting of 800 job ads, each one tokenized and manually annotated with POS tag information (EAGLE format) and Entity Label in BIO format. &#13;
+- Topic modeling training data: containing 9000 documents stripped from stopwords. Comes in two formats:&#13;
+  * Whole text documents: containing all the information originally posted in the ad.&#13;
+  * Extracted chunks documents: containing chunks extracted by custom NER models (expected skills, tasks to perform, and preferred major), as described in Improving Topic Coherence Using Entity Extraction Denoising (to appear)</dc:description>
+      <dc:date>2016</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2673</dc:identifier>
+      <dc:language>spa</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>National University of Engineering, Peru</dc:publisher>
+      <dc:source>https://github.com/ronaldahmed/labor-market-demand-analysis</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3733",
+    "MetadataAccess": [
+        "oai:ota:oucs:3733"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Kenrick, W. (William), 1725?-1779."
+    ],
+    "fulltext": "oai:ota:oucs:3733;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3733.xml;Introduction to the school of Shakespeare; held, on Wednesday evenings, in the Apollo, at the Devil Tavern, Temple Bar. To which is added a retort courteous on the criticks, as delivered at the second and third lectures;Kenrick, W. (William), 1725?-1779.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fb8e8530-1163-52f8-a271-ae75c20ecc1f",
+    "oai_identifier": [
+        "oai:ota:oucs:3733"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Introduction to the school of Shakespeare; held, on Wednesday evenings, in the Apollo, at the Devil Tavern, Temple Bar. To which is added a retort courteous on the criticks, as delivered at the second and third lectures"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3733.xml"
+}

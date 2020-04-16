@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1966",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1966"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1966",
+    "PublicationTimestamp": "2017-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/645452"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "AGREEMENT ON THE USE OF DATA IN QT21 APE Task",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21",
+        "PUB"
+    ],
+    "author": [
+        "Turchi, Marco",
+        "Chatterjee, Rajen",
+        "Negri, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1966;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;WMT17 En-De APE Shared Task Data;Turchi, Marco;Chatterjee, Rajen;Negri, Matteo;machine translation;shared task;post-editing;automatic post-editing;Training data for the WMT 2017 Automatic post-editing task (the same used for the Sentence-level Quality Estimation task). They consist in 11,000 English-German triplets (source, target and post-edit) belonging to the IT domain and already tokenized. All data is provided by the EU project QT21 (http://www.qt21.eu/).;2017-02-15;corpus;http://hdl.handle.net/11234/1-1966;eng;deu;info:eu-repo/grantAgreement/EC/H2020/645452;AGREEMENT ON THE USE OF DATA IN QT21 APE Task;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Fondazione Bruno Kessler, Trento, Italy;http://www.statmt.org/wmt17/ape-task.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fe565f34-44af-5e21-99af-d9737a713da1",
+    "notes": [
+        "Training data for the WMT 2017 Automatic post-editing task (the same used for the Sentence-level Quality Estimation task). They consist in 11,000 English-German triplets (source, target and post-edit) belonging to the IT domain and already tokenized. All data is provided by the EU project QT21 (http://www.qt21.eu/)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1966"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "shared task"
+        },
+        {
+            "name": "post-editing"
+        },
+        {
+            "name": "automatic post-editing"
+        }
+    ],
+    "title": [
+        "WMT17 En-De APE Shared Task Data"
+    ],
+    "url": ""
+}

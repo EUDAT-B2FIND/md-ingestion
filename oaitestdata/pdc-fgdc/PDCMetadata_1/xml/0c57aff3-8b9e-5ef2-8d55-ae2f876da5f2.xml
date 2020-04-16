@@ -1,0 +1,138 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10061_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:15Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Greenland Institute of Natural Resources (GINR)</origin>
+            <origin>National Environmental Research Institute (NERI)</origin>
+            <pubdate>20100907</pubdate>
+            <title>Monitoring of polar bears in east Greenland</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Unpublished data</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=10061</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Telemetry and satellite images are used to estimate the abundance of polar bears in eastern Greenland. Tagging of bears occurred in 2007 and 2008. The hypothesis to be tested is that sea ice reduction reduces reproduction and survival of polar bears. A report will be published in 2011. The project is funded in connection with oil impact assessment, the Kalaallit Nunaat Marine Seismic (KANUMAS) project.</abstract>
+          <purpose>To monitor the abundance of polar bears along the east coast of Greenland.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): CBMP/CAFF - Marine. For further information: feug@natur.gl</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20070101</begdate>
+              <enddate>20101031</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-43</westbc>
+            <eastbc>-20</eastbc>
+            <northbc>84</northbc>
+            <southbc>59</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Abundance</themekey>
+            <themekey>Biodiversity</themekey>
+            <themekey>Greenland</themekey>
+            <themekey>Polar bear</themekey>
+            <themekey>Satellite imagery</themekey>
+          </theme>
+          <place>
+            <placekt>Greenland</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Circumpolar Biodiversity Monitoring Program - CAFF</cntorg>
+              <cntper>CBMP Marine - CAFF</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>Borgir, Nordurslod</address>
+              <city>Akureyri</city>
+              <state>N/A</state>
+              <postal>600</postal>
+              <country>Iceland</country>
+            </cntaddr>
+            <cntvoice>+ 354 462 3350</cntvoice>
+            <cntemail>cbmp_marine@caff.is</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>10061</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20100907</metd>
+        <metrd>20100907</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>CBMP Marine - CAFF</cntper>
+              <cntorg>Circumpolar Biodiversity Monitoring Program - CAFF</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>Borgir, Nordurslod</address>
+              <city>Akureyri</city>
+              <state>N/A</state>
+              <postal>600</postal>
+              <country>Iceland</country>
+            </cntaddr>
+            <cntvoice>+ 354 462 3350</cntvoice>
+            <cntemail>cbmp_marine@caff.is</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-93</identifier>
+    <datestamp>2018-12-05T08:54:15Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LMF Merger</dc:title>
+      <dc:creator>Del Gratta, Riccardo</dc:creator>
+      <dc:creator>Frontini, Francesca</dc:creator>
+      <dc:creator>Monachini, Monica</dc:creator>
+      <dc:creator>Quochi, Valeria</dc:creator>
+      <dc:creator>Rubino, Francesco</dc:creator>
+      <dc:creator>Abrate, Matteo</dc:creator>
+      <dc:creator>Lo Duca, Angelica</dc:creator>
+      <dc:subject>LFM Standard</dc:subject>
+      <dc:subject>(semi-)automatic Lexicon Merging</dc:subject>
+      <dc:subject>Similarity Score</dc:subject>
+      <dc:description>This is an LMF Lexical Merger web-service for the automatic merging of Lexical Entries from two distinct LMF lexicons. The web-service takes two LMF lexicons, A and B, and a set of directives in input and outputs one or more LMF merged lexicon(s) according to different merging scenarios. Further details can be found in: Riccardo Del Gratta &amp; Francesca Frontini &amp; Monica Monachini &amp;Valeria Quochi &amp; Francesco Rubino&amp; Matteo Abrate &amp; Angelica Lo Duca. 2012. L-LEME: an Automatic Lexical Merger based on the LMF Standard. In Proceedings of the Workshop on&#13;
+Language Resource Merging (Colocated wiyh LREC 2012), May, 22 2012, Istanbul, Turkey</dc:description>
+      <dc:date>2012-05-22</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-93</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/248064</dc:relation>
+      <dc:relation>http://www.lrec-conf.org/proceedings/lrec2012/workshops/06.LREC%202012%20Merging%20Proceedings.pdf</dc:relation>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+      <dc:source>http://www.panacea-lr.eu</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

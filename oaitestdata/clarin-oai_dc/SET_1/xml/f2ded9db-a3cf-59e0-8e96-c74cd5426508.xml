@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>dd3d5a0849dc11e2a2aa782bcb074135d9cb4fe73e884aa3b771fd0a7a11a2b7</identifier>
+    <datestamp>2018-11-15T16:39:59Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:wordList</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Maltese Fiction Wordlist</dc:title>
+      <dc:description>This is a wordlist which was created from 32 Maltese fiction books. These texts were originally in PDF file format and were converted to txt format. In the next step, the text file was tokenized and a frequency count was performed on the separate tokens. The resulting list (with about 50,000 entries) was cleaned up semi-automatically. 
+
+The original list contained 46,828 tokens. After the clean-up, the list contains 41,251 tokens. The tokens were either deleted or updated (with regards to their frequencies).
+
+Given the conversion from PDF to txt format, the list will most likely contain spelling errors that were not detected in the semi-automatic clean-up process.
+
+The file is in txt format, with each line containing a token, followed by frequency (separated by comma or, in case of entries ending in hyphen or apostrophe, by six tab stops).
+
+Generally the lexicon covers the literal register. The orate register appears where speech is reproduced. All in all, the books contained:
+   - correctly written Maltese (standard literate register)
+   - badly written Maltese (e.g. to mimic chat conversations)
+   - dialact Maltese
+   - English words
+   - Italian words
+   - French words
+
+The word list is not (yet) very reliable, since it was converted from PDF to txt format and cleaned up only semi-automatically. It is, however, a first version, and more refine updates should be done in the future.
+
+</dc:description>
+      <dc:date>2013-02-05</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,49 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4984",
+    "MetadataAccess": [
+        "oai:ota:oucs:4984"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:4984;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4984.xml;A collection of poems in four volumes. By several hands: [pt.1];text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1de063dd-3b12-5cb9-babb-22112db7dbd9",
+    "oai_identifier": [
+        "oai:ota:oucs:4984"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A collection of poems in four volumes. By several hands: [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4984.xml"
+}

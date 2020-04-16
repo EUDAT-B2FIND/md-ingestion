@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "IJP PAN"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "downloadable_files_count: 10",
+        "application/vnd.oasis.opendocument.text",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/408",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/408"
+    ],
+    "PID": "http://hdl.handle.net/11321/408",
+    "PublicationTimestamp": "2017-06-29T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "IJP PAN"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Bugajska, Maria"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/408;2017-06-29T07:52:34Z;hdl_11321_3;hdl_11321_4;korpus testowy;Bugajska, Maria;korpus testowy;korpus testowy na warsztaty z DSpace;2017-06-29;corpus;http://hdl.handle.net/11321/408;pol;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;text/plain;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;text/plain;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;text/plain;downloadable_files_count: 10;IJP PAN",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a6e20d7f-dad0-554d-8abe-7867058c9ed6",
+    "notes": [
+        "korpus testowy na warsztaty z DSpace"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/408"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "korpus testowy"
+        }
+    ],
+    "title": [
+        "korpus testowy"
+    ],
+    "url": ""
+}

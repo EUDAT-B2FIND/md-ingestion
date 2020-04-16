@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 889 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1576",
+    "MetadataAccess": [
+        "oai:ota:oucs:1576"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Franklin, Benjamin, 1706-1790"
+    ],
+    "fulltext": "oai:ota:oucs:1576;2018-02-16T10:42:06Z;http://ota.ox.ac.uk/headers/1576.xml;London 1757-1775;Franklin, Benjamin, 1706-1790;default: 1976-01-01;text_and_corpus_linguistics;Letters -- United States -- 18th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 889 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "efb1c3cd-3033-5d07-bf42-3fde93b5ed19",
+    "oai_identifier": [
+        "oai:ota:oucs:1576"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Letters -- United States -- th century"
+        }
+    ],
+    "title": [
+        "London 1757-1775"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1576.xml"
+}

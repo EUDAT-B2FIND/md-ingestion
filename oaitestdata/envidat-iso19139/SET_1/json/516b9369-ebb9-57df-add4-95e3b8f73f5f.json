@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "manfred.staehli@wsl.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "XLSX",
+        "XLSM"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/5",
+    "PublicationTimestamp": "2015-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "WSL"
+    ],
+    "Rights": [
+        "Other (Attribution)"
+    ],
+    "author": [
+        "Manfred St\u00e4hli"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/5;2018-07-07T00:12:51Z;doi:10.16904/5;Eng;MD_CharacterSetCode_utf8;Manfred St\u00e4hli;WSL;manfred.staehli@wsl.ch;2016-10-17T10:09:14;ISO 19115:2003/19139;1.0;EPSG:4326;TRAMM project - experimental hydrological and hydrogeological dataset of a landslide prone hillslope. Rufiberg, Switzerland;2015-12-31;Rufiberg is a pre-alpine meadow site in Switzerland where shallow landslides have been observed after past intense rain storms. In order to assess the triggering mechanisms of these landslides, a comprehensive investigation was conducted within the project TRAMM from Nov 2009 to Oct 2012. It included meteorological observations, soil moisture measurements, bedrock groundwater measurements. The Rufiberg is located at the NW side of the Gnipen to the north of the village Arth-Goldau in the Canton of Schwyz. In the summer months, the site is used for pasturing. Usually, from December to March a snow cover is present at the Rufiberg. The site is at an altitude between 1080 \u2013 1180 m asl, is ENE oriented, and has an average slope of 30 -35\u00b0. The Subalpine Molasse in the region is inclined with 30 - 35\u00b0 to SE. In the area of the field site, beds of conglomerate with several m of thickness alter with beds of sandstone and marlstone. A ca. 2 \u2013 5 m thick eluvium/colluvium layer composed of silty and sandy clay covers the bedrock. This site has been chosen because on one hand, during heavy rainfall events, e.g. autumn 2005, numerous landslides occur in the region of the Gnipen and the Rufiberg. On the other hand, the Rufiberg is very appropriate for experiments due its location away from infrastructures and due to its accessibility. The goal of the investigation was to understand the hydrology and hydrogeology of the slope with regard to shallow landslides.     More information: Br\u00f6nnimann, C., St\u00e4hli, M., Schneider, P., Seward, L. and Springman, S.M. 2013. Bedrock exfiltration as a triggering mechanism for shallow landslides. Water Resources Research, 49 (9): 5155\u20135167. DOI: 10.1002/wrcr.20386.;Manfred St\u00e4hli;WSL;manfred.staehli@wsl.ch;LANDSLIDES;SOIL MOISTURE WATER CONTENT;WATER TABLE;Other (Attribution);Eng;MD_CharacterSetCode_utf8;8.5544251 47.0889606;XLSM;XLSX;https://www.envidat.ch/dataset/10-16904-5;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/5333838f-5da6-4574-8d28-ce1794c19631/resource/fd31a45e-e5d0-476e-9a45-611f4d572d93/download/data-soil-water-content-tdr.xlsm;HTTPS;DATA SOIL WATER CONTENT TDR.XLSM;download;https://www.envidat.ch/dataset/5333838f-5da6-4574-8d28-ce1794c19631/resource/251578d0-3df2-44ed-9090-613a678bdbf8/download/data-lateral-subsurface-water-flow.xlsm;HTTPS;DATA LATERAL SUBSURFACE WATER FLOW.XLSM;download;https://www.envidat.ch/dataset/5333838f-5da6-4574-8d28-ce1794c19631/resource/720b044d-3ee5-4104-ba45-4b5b8ee7bf3e/download/data-groundwater-level-in-soil.xlsx;HTTPS;DATA GROUNDWATER LEVEL IN SOIL.XLSX;download;https://www.envidat.ch/dataset/5333838f-5da6-4574-8d28-ce1794c19631/resource/0e09242b-0222-4b90-b247-4fa2c34bb8ca/download/data-groundwater-level-in-bedrock.xlsx;HTTPS;DATA GROUNDWATER LEVEL IN BEDROCK.XLSX;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "516b9369-ebb9-57df-add4-95e3b8f73f5f",
+    "notes": [
+        "Rufiberg is a pre-alpine meadow site in Switzerland where shallow landslides have been observed after past intense rain storms. In order to assess the triggering mechanisms of these landslides, a comprehensive investigation was conducted within the project TRAMM from Nov 2009 to Oct 2012. It included meteorological observations, soil moisture measurements, bedrock groundwater measurements. The Rufiberg is located at the NW side of the Gnipen to the north of the village Arth-Goldau in the Canton of Schwyz. In the summer months, the site is used for pasturing. Usually, from December to March a snow cover is present at the Rufiberg. The site is at an altitude between 1080 \u2013 1180 m asl, is ENE oriented, and has an average slope of 30 -35\u00b0. The Subalpine Molasse in the region is inclined with 30 - 35\u00b0 to SE. In the area of the field site, beds of conglomerate with several m of thickness alter with beds of sandstone and marlstone. A ca. 2 \u2013 5 m thick eluvium/colluvium layer composed of silty and sandy clay covers the bedrock. This site has been chosen because on one hand, during heavy rainfall events, e.g. autumn 2005, numerous landslides occur in the region of the Gnipen and the Rufiberg. On the other hand, the Rufiberg is very appropriate for experiments due its location away from infrastructures and due to its accessibility. The goal of the investigation was to understand the hydrology and hydrogeology of the slope with regard to shallow landslides.     More information: Br\u00f6nnimann, C., St\u00e4hli, M., Schneider, P., Seward, L. and Springman, S.M. 2013. Bedrock exfiltration as a triggering mechanism for shallow landslides. Water Resources Research, 49 (9): 5155\u20135167. DOI: 10.1002/wrcr.20386."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/5",
+        "oai:envidat.ch:10.16904/5"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "LANDSLIDES"
+        },
+        {
+            "name": "SOIL MOISTURE WATER CONTENT"
+        },
+        {
+            "name": "WATER TABLE"
+        }
+    ],
+    "title": [
+        "TRAMM project - experimental hydrological and hydrogeological dataset of a landslide prone hillslope. Rufiberg, Switzerland"
+    ],
+    "url": "https://www.envidat.ch/dataset/5333838f-5da6-4574-8d28-ce1794c19631/resource/0e09242b-0222-4b90-b247-4fa2c34bb8ca/download/data-groundwater-level-in-bedrock.xlsx"
+}

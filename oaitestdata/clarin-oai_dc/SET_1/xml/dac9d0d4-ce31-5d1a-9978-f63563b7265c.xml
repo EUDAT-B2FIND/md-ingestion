@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>8554d648190111e6a2aa782bcb074135d45d9a07bd204b76aa655a58c2b0e22e</identifier>
+    <datestamp>2018-11-15T16:40:21Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Radio Bulgaria WSD/NED corpus</dc:title>
+      <dc:description>Radio Bulgaria WSD/NED corpus is composed of texts from Bulgarian and English articles from the website of Radio Bulgaria.</dc:description>
+      <dc:date>2016-05-13</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

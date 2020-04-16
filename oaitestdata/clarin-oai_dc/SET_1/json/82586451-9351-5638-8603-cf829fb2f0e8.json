@@ -1,0 +1,92 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 6",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2839",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2839"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2839",
+    "PublicationTimestamp": "2018-07-13T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://ceur-ws.org/Vol-2203/138.pdf"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Popel, Martin",
+        "Libovick\u00fd, Jind\u0159ich",
+        "Helcl, Jind\u0159ich",
+        "Rosa, Rudolf"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2839;2018-09-21T08:39:11Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech image captioning, machine translation, and sentiment analysis (Neural Monkey models);Libovick\u00fd, Jind\u0159ich;Rosa, Rudolf;Helcl, Jind\u0159ich;Popel, Martin;sentiment analysis;machine translation;image captioning;neural networks;transformer;Neural Monkey;This submission contains trained end-to-end models for the Neural Monkey toolkit for Czech and English, solving three NLP tasks: machine translation, image captioning, and sentiment analysis.\r\nThe models are trained on standard datasets and achieve state-of-the-art or near state-of-the-art performance in the tasks.\r\nThe models are described in the accompanying paper.\r\nThe same models can also be invoked via the online demo: https://ufal.mff.cuni.cz/grants/lsd\r\n\r\nThere are several separate ZIP archives here, each containing one model solving one of the tasks for one language.\r\n\r\nTo use a model, you first need to install Neural Monkey: https://github.com/ufal/neuralmonkey\r\nTo ensure correct functioning of the model, please use the exact version of Neural Monkey specified by the commit hash stored in the 'git_commit' file in the model directory.\r\n\r\nEach model directory contains a 'run.ini' Neural Monkey configuration file, to be used to run the model. See the Neural Monkey documentation to learn how to do that (you may need to update some paths to correspond to your filesystem organization).\r\nThe 'experiment.ini' file, which was used to train the model, is also included.\r\nThen there are files containing the model itself, files containing the input and output vocabularies, etc.\r\n\r\nFor the sentiment analyzers, you should tokenize your input data using the Moses tokenizer: https://pypi.org/project/mosestokenizer/\r\n\r\nFor the machine translation, you do not need to tokenize the data, as this is done by the model.\r\n\r\nFor image captioning, you need to:\r\n- download a trained ResNet: http://download.tensorflow.org/models/resnet_v2_50_2017_04_14.tar.gz\r\n- clone the git repository with TensorFlow models: https://github.com/tensorflow/models\r\n- preprocess the input images with the Neural Monkey 'scripts/imagenet_features.py' script (https://github.com/ufal/neuralmonkey/blob/master/scripts/imagenet_features.py) -- you need to specify the path to ResNet and to the TensorFlow models to this script\r\n\r\nFeel free to contact the authors of this submission in case you run into problems!;2018-07-13;toolService;http://hdl.handle.net/11234/1-2839;ces;eng;http://ceur-ws.org/Vol-2203/138.pdf;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 6;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://ufal.mff.cuni.cz/grants/lsd",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "82586451-9351-5638-8603-cf829fb2f0e8",
+    "notes": [
+        "This submission contains trained end-to-end models for the Neural Monkey toolkit for Czech and English, solving three NLP tasks: machine translation, image captioning, and sentiment analysis.\r\nThe models are trained on standard datasets and achieve state-of-the-art or near state-of-the-art performance in the tasks.\r\nThe models are described in the accompanying paper.\r\nThe same models can also be invoked via the online demo: https://ufal.mff.cuni.cz/grants/lsd\r\n\r\nThere are several separate ZIP archives here, each containing one model solving one of the tasks for one language.\r\n\r\nTo use a model, you first need to install Neural Monkey: https://github.com/ufal/neuralmonkey\r\nTo ensure correct functioning of the model, please use the exact version of Neural Monkey specified by the commit hash stored in the 'git_commit' file in the model directory.\r\n\r\nEach model directory contains a 'run.ini' Neural Monkey configuration file, to be used to run the model. See the Neural Monkey documentation to learn how to do that (you may need to update some paths to correspond to your filesystem organization).\r\nThe 'experiment.ini' file, which was used to train the model, is also included.\r\nThen there are files containing the model itself, files containing the input and output vocabularies, etc.\r\n\r\nFor the sentiment analyzers, you should tokenize your input data using the Moses tokenizer: https://pypi.org/project/mosestokenizer/\r\n\r\nFor the machine translation, you do not need to tokenize the data, as this is done by the model.\r\n\r\nFor image captioning, you need to:\r\n- download a trained ResNet: http://download.tensorflow.org/models/resnet_v2_50_2017_04_14.tar.gz\r\n- clone the git repository with TensorFlow models: https://github.com/tensorflow/models\r\n- preprocess the input images with the Neural Monkey 'scripts/imagenet_features.py' script (https://github.com/ufal/neuralmonkey/blob/master/scripts/imagenet_features.py) -- you need to specify the path to ResNet and to the TensorFlow models to this script\r\n\r\nFeel free to contact the authors of this submission in case you run into problems!"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2839"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "sentiment analysis"
+        },
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "image captioning"
+        },
+        {
+            "name": "neural networks"
+        },
+        {
+            "name": "transformer"
+        },
+        {
+            "name": "Neural Monkey"
+        }
+    ],
+    "title": [
+        "Czech image captioning, machine translation, and sentiment analysis (Neural Monkey models)"
+    ],
+    "url": ""
+}

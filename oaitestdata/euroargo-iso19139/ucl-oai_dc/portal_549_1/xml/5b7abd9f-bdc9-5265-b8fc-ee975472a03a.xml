@@ -1,0 +1,47 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/10303694</identifier>
+    <datestamp>2019-12-16T09:33:38Z</datestamp>
+    <setSpec>category_7</setSpec>
+    <setSpec>category_13</setSpec>
+    <setSpec>category_125</setSpec>
+    <setSpec>category_135</setSpec>
+    <setSpec>category_139</setSpec>
+    <setSpec>category_658</setSpec>
+    <setSpec>category_663</setSpec>
+    <setSpec>category_695</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_3</setSpec>
+    <setSpec>month_year_12_2019</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Proposed pathways and protein-protein interaction networks in age-related macular degeneration: published in npj Aging and Mechanisms of Disease.</dc:title>
+      <dc:creator>Christina Kiel (7863750)</dc:creator>
+      <dc:creator>Fran Pool (6561155)</dc:creator>
+      <dc:creator>Luis Serrano (7863771)</dc:creator>
+      <dc:creator>Philip Luthert (6588281)</dc:creator>
+      <dc:subject>Medicine</dc:subject>
+      <dc:subject>Genetics</dc:subject>
+      <dc:subject>Bioinformatics</dc:subject>
+      <dc:subject>Computational  Biology</dc:subject>
+      <dc:subject>Pathology</dc:subject>
+      <dc:subject>Cell Metabolism</dc:subject>
+      <dc:subject>Proteomics and Intermolecular Interactions (excl. Medical Proteomics)</dc:subject>
+      <dc:subject>Gene Expression (incl. Microarray and other genome-wide approaches)</dc:subject>
+      <dc:subject>age-related macular degeneration</dc:subject>
+      <dc:subject>networks</dc:subject>
+      <dc:subject>Protein-protein interaction data</dc:subject>
+      <dc:subject>Pathogenesis Research</dc:subject>
+      <dc:subject>Systems Biology Graphical Notation</dc:subject>
+      <dc:subject>genetic risk</dc:subject>
+      <dc:description>CellDesigner files describing pathogenesis pathways and Cytoscape files describing protein-protein interactions of potential relevance in age-related macular degeneration.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;By Fran Pool, Christina Kiel, Luis Serrano and Phil Luthert. &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Files can be edited and extended using CellDesigner (http://celldesigner.org) or Cytoscape (https://cytoscape.org) respectively.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;</dc:description>
+      <dc:date>2019-12-16T09:33:38Z</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:identifier>10.5522/04/10303694.v1</dc:identifier>
+      <dc:relation>https://figshare.com/articles/Proposed_pathways_and_protein-protein_interaction_networks_in_age-related_macular_degeneration_published_in_npj_Aging_and_Mechanisms_of_Disease_/10303694</dc:relation>
+      <dc:rights>CC BY 4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

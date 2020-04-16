@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Hochschule Augsburg"
+    ],
+    "Contributor": [
+        "Harsch, Prof. em. Ulrich"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1126",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1126"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1126",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Hochschule Augsburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1126;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Bibliotheca Augustana / Bibliotheca Germanica;Harsch, Prof. em. Ulrich;Germanistik;Chronology of German literature (Old High German literature, Middle High German literature, Early New High German literature, New High German literature); Chronologie der deutschen Literatur (alt-, mittel-, fr\u00fchneu-, neuhochdeutsche Literatur);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1126;deu;downloadable_files_count: 0;Germany;Hochschule Augsburg;http://www.hs-augsburg.de/~harsch/germanica/Chronologie/d_chrono.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2578e0d8-9440-5234-b910-61c4fa30411f",
+    "notes": [
+        "Chronology of German literature (Old High German literature, Middle High German literature, Early New High German literature, New High German literature); Chronologie der deutschen Literatur (alt-, mittel-, fr\u00fchneu-, neuhochdeutsche Literatur)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1126"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Bibliotheca Augustana / Bibliotheca Germanica"
+    ],
+    "url": ""
+}

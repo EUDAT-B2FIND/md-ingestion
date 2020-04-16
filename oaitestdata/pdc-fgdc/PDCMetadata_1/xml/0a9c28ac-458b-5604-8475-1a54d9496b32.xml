@@ -1,0 +1,148 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>9951_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:15Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Steven H. Ferguson</origin>
+            <origin>Steven H. Ferguson</origin>
+            <origin>Brent Young</origin>
+            <origin>Elizabeth Peacock</origin>
+            <origin>Tara Bortoluzzi</origin>
+            <pubdate>20111017</pubdate>
+            <title>Polar Bears and Seals : Movement of ringed seals in the greater Hudson Bay region, Nunavut, 2009</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Please contact Dr. Steven Ferguson for information on how to cite this data.</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=9951</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>The aim of the project is to provide management information and advice for the Hudson Bay ringed seal stock by: (1) delineating movements that may bring juveniles and possibly adults into areas hunted by other communities; (2) assessing sex- and age-specific site fidelity of individual seals during the breeding season; (3) defining critical foraging habitat, movement and diving behaviour; (4) defining spatio-temporal variation in these aspects of ringed seal foraging ecology to complement ongoing diet studies to address a purported shift in prey of top predators associated with climate change. In total satellite telemetry project has deployed satellite tags (Wildlife Computers Splash instruments relaying location and diving behaviour data via the ARGOS satellite system) on a total of 34 live ringed seals (10 in September 2006, 8 in September 2007, 9 in September 2008, and 8 in August 2009); 2 bearded seals (2 in September 2008) captured at the Belcher Islands, Nunavut, from 2006 to 2008; and 7 ringed seals captured near Igloolik, Nunavut in July 2009. Community-based monitoring and fieldwork for the satellite telemetry project took place in Foxe Basin, near the community of Igloolik 13 to 24 July, 2009; and in south-eastern Hudson Bay, near the community of Sanikiluaq 27 July to 11 August, 2009.</abstract>
+          <purpose>Concerns have arisen over possible declines in ringed seal numbers in nearby western Hudson Bay as indicated by reduced pregnancy rate, pup survival and abundance, and older age structure. Ringed seals are numerically, nutritionally, and economically one of the most important marine mammal species to Inuit communities of Hudson Bay, so knowledge of where and how seals use the bay is needed. As part of a larger project to assess ringed seal population dynamics and diet with climate change, this study focuses on ringed seal movements and haul-out behaviour, assess critical habitat, and investigate characteristics of foraging behaviour. We will further examine how similar metrics of behavior and habitat use for polar bears in the same region overlap. This project describes the collection and analysis of these data for ringed seals.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): CBMP/CAFF - Marine,IPY. For further information: Steve.Ferguson@dfo-mpo.gc.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20090713</begdate>
+              <enddate>20090811</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-82.3</westbc>
+            <eastbc>-79.3</eastbc>
+            <northbc>69.4</northbc>
+            <southbc>56.6</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Climate change</themekey>
+            <themekey>Community-based monitoring</themekey>
+            <themekey>Fitness</themekey>
+            <themekey>Genetic analysis</themekey>
+            <themekey>Hudson Bay</themekey>
+            <themekey>Igloolik</themekey>
+            <themekey>Monitoring</themekey>
+            <themekey>Ringed seal</themekey>
+            <themekey>Sanikiluaq</themekey>
+            <themekey>Seals</themekey>
+          </theme>
+          <place>
+            <placekt>Foxe Basin (Iglooik, NU) &amp; Hudson Bay (near Sanikiluaq)</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Fisheries and Oceans Canada</cntorg>
+              <cntper>Steven Ferguson</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>501 University Crescent</address>
+              <city>Winnipeg</city>
+              <state>MB</state>
+              <postal>R3T2N6</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>204-983-5057</cntvoice>
+            <cntfax>204-984-2403</cntfax>
+            <cntemail>steve.ferguson@dfo-mpo.gc.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>9951</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20111017</metd>
+        <metrd>20111017</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Steven Ferguson</cntper>
+              <cntorg>Fisheries and Oceans Canada</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>501 University Crescent</address>
+              <city>Winnipeg</city>
+              <state>MB</state>
+              <postal>R3T2N6</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>204-983-5057</cntvoice>
+            <cntfax>204-984-2403</cntfax>
+            <cntemail>steve.ferguson@dfo-mpo.gc.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

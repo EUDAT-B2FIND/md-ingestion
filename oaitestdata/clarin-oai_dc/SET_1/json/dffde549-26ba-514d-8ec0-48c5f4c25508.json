@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5129",
+    "MetadataAccess": [
+        "oai:ota:oucs:5129"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sterne, Laurence, 1713-1768."
+    ],
+    "fulltext": "oai:ota:oucs:5129;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5129.xml;Yorick's meditations: upon various interesting and important subjects. Viz. Upon nothing. Upon something. Upon the thing. ...;Sterne, Laurence, 1713-1768.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dffde549-26ba-514d-8ec0-48c5f4c25508",
+    "oai_identifier": [
+        "oai:ota:oucs:5129"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Yorick's meditations: upon various interesting and important subjects. Viz. Upon nothing. Upon something. Upon the thing. ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5129.xml"
+}

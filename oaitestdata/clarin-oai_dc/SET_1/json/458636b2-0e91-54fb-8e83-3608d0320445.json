@@ -1,0 +1,156 @@
+{
+    "Contact": [
+        "Faculty of Humanities and Social Sciences, University of Zagreb",
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Afrikaans",
+        "Arabic",
+        "Azerbaijani",
+        "Belarusian",
+        "Bulgarian",
+        "Bengali",
+        "Bosnian",
+        "Catalan",
+        "Cebuano",
+        "Czech",
+        "Welsh",
+        "Danish",
+        "German",
+        "Modern Greek (1453-)",
+        "English",
+        "Esperanto",
+        "Spanish",
+        "Estonian",
+        "Basque",
+        "Persian",
+        "Finnish",
+        "French",
+        "Western Frisian",
+        "Galician",
+        "Gujarati",
+        "Hebrew",
+        "Hindi",
+        "Croatian",
+        "Hungarian",
+        "Armenian",
+        "Indonesian",
+        "Icelandic",
+        "Italian",
+        "Japanese",
+        "Georgian",
+        "Kazakh",
+        "Central Khmer",
+        "Kannada",
+        "Korean",
+        "Kirghiz",
+        "Latin",
+        "Luxembourgish",
+        "Lithuanian",
+        "Latvian",
+        "Malagasy",
+        "Macedonian",
+        "Malayalam",
+        "Mongolian",
+        "Marathi",
+        "Malay (macrolanguage)",
+        "Burmese",
+        "Nepali (macrolanguage)",
+        "Dutch",
+        "Norwegian",
+        "Panjabi",
+        "Polish",
+        "Portuguese",
+        "Romanian",
+        "Russian",
+        "Sinhala",
+        "Slovak",
+        "Slovenian",
+        "Albanian",
+        "Serbian",
+        "Swedish",
+        "Tamil",
+        "Telugu",
+        "Tajik",
+        "Thai",
+        "Tagalog",
+        "Turkish",
+        "Ukrainian",
+        "Urdu",
+        "Uzbek",
+        "Vietnamese",
+        "Chinese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1187",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1187"
+    ],
+    "PID": "http://hdl.handle.net/11356/1187",
+    "PublicationTimestamp": "2018-05-28T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Faculty of Humanities and Social Sciences, University of Zagreb",
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "https://arxiv.org/abs/1807.02903"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1187;2018-09-18T08:34:05Z;hdl_11356_1023;hdl_11356_1024;Concreteness and imageability lexicon MEGA.HR-Crossling;Ljube\u0161i\u0107, Nikola;concreteness;imageability;multilingual;The lexicon contains concreteness and imageability predictions of words in 77 languages. The resource is built via supervised machine learning, using average human responses obtained for Croatian lexemes inside the MEGAHR project (http://megahr.ffzg.unizg.hr) as the response variable, and the Facebook cross-lingual word embeddings (https://github.com/Babylonpartners/fastText_multilingual) as explanatory variables. The Spearman correlation of human responses and automatic annotations on the Croatian-English language pair is ~0.8 for concreteness and ~0.7 for imageability.;2018-05-28;lexicalConceptualResource;http://hdl.handle.net/11356/1187;afr;ara;aze;bel;bul;ben;bos;cat;ceb;ces;cym;dan;deu;ell;eng;epo;spa;est;eus;fas;fin;fra;fry;glg;guj;heb;hin;hrv;hun;hye;ind;isl;ita;jpn;kat;kaz;khm;kan;kor;kir;lat;ltz;lit;lav;mlg;mkd;mal;mon;mar;msa;mya;nep;nld;nor;pan;pol;por;ron;rus;hbs;sin;slk;slv;sqi;srp;swe;tam;tel;tgk;tha;tgl;tur;ukr;urd;uzb;vie;zho;https://arxiv.org/abs/1807.02903;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Jo\u017eef Stefan Institute;Faculty of Humanities and Social Sciences, University of Zagreb;https://github.com/clarinsi/megahr-crossling",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "458636b2-0e91-54fb-8e83-3608d0320445",
+    "notes": [
+        "The lexicon contains concreteness and imageability predictions of words in 77 languages. The resource is built via supervised machine learning, using average human responses obtained for Croatian lexemes inside the MEGAHR project (http://megahr.ffzg.unizg.hr) as the response variable, and the Facebook cross-lingual word embeddings (https://github.com/Babylonpartners/fastText_multilingual) as explanatory variables. The Spearman correlation of human responses and automatic annotations on the Croatian-English language pair is ~0.8 for concreteness and ~0.7 for imageability."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1187"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "concreteness"
+        },
+        {
+            "name": "imageability"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Concreteness and imageability lexicon MEGA.HR-Crossling"
+    ],
+    "url": ""
+}

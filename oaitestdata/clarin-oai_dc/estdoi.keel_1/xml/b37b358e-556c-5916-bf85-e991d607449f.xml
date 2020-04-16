@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10303969</identifier>
+    <datestamp>2019-05-04T05:02:55Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti murrete s&#245;naraamat (24.&#8212;28. vihik; l&#245;petis&#8212;nina&#245;rs)</dc:title>
+      <dc:creator>Laansalu, Tiina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2017-01-31</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-06337L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Eesti murrete s&#245;naraamat haarab v&#245;imalikult kogu murdes&#245;navara. S&#245;nu saadab h&#228;&#228;likuline ja grammatiline iseloomustus, levik ning selgub s&#245;nade t&#228;hendus. N&#228;itelaused toovad esile murdes&#245;nadega seotud t&#228;henduslikke ja grammatilisi n&#228;htusi.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

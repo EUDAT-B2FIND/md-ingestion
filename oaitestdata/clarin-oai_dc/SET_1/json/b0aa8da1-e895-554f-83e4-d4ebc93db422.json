@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/xml",
+        "downloadable_files_count: 3",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/580",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/580"
+    ],
+    "PID": "http://hdl.handle.net/11321/580",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Ogrodniczuk, Maciej",
+        "Nito\u0144, Bart\u0142omiej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/580;2018-07-26T15:03:44Z;hdl_11321_3;hdl_11321_4;Knowledge base of Polish conventionalized periphrastic nominal expressions;Nito\u0144, Bart\u0142omiej;Ogrodniczuk, Maciej;knowledge base;periphrastic nominal expressions;The resource includes free Periphraser export with a knowledge base of Polish conventionalized periphrastic nominal expressions (i.e. phrases headed by a noun) together with their textually attested realizations. For instance, the database entry for the phrase ,,Robert Lewandowski'' in the referred resource will include the phrase ,,the Polish international'' while ,,pediatrics'' will be featured as ,,medical care for children''. \r\n\r\nExport is available in two formats provided by Periphraser - XML and CSV. Associated files include a free version of data (available on the CC BY-SA 4.0 License). In case you are interested in full (authenticated) export of Polish periphrastic data please contact resource contact person.;2018;lexicalConceptualResource;http://hdl.handle.net/11321/580;pol;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;text/xml;downloadable_files_count: 3;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/Periphraser",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b0aa8da1-e895-554f-83e4-d4ebc93db422",
+    "notes": [
+        "The resource includes free Periphraser export with a knowledge base of Polish conventionalized periphrastic nominal expressions (i.e. phrases headed by a noun) together with their textually attested realizations. For instance, the database entry for the phrase ,,Robert Lewandowski'' in the referred resource will include the phrase ,,the Polish international'' while ,,pediatrics'' will be featured as ,,medical care for children''. \r\n\r\nExport is available in two formats provided by Periphraser - XML and CSV. Associated files include a free version of data (available on the CC BY-SA 4.0 License). In case you are interested in full (authenticated) export of Polish periphrastic data please contact resource contact person."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/580"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "knowledge base"
+        },
+        {
+            "name": "periphrastic nominal expressions"
+        }
+    ],
+    "title": [
+        "Knowledge base of Polish conventionalized periphrastic nominal expressions"
+    ],
+    "url": ""
+}

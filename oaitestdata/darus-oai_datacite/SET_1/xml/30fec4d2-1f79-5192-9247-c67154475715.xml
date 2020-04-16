@@ -1,0 +1,151 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-470</identifier>
+    <datestamp>2019-11-13T10:39:56Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-470</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Braun, Thorsten</creatorName>
+          <givenName>Thorsten</givenName>
+          <familyName>Braun</familyName>
+          <nameIdentifier nameIdentifierScheme="GND">132697335</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Evaluation Research for Study Success Requirements ITT 2014/15</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Social Sciences</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Braun, Thorsten</contributorName>
+          <givenName>Thorsten</givenName>
+          <familyName>Braun</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-09-23</date>
+        <date dateType="Updated">2019-10-02</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset"/>
+      <sizes>
+        <size>72154</size>
+        <size>4220</size>
+        <size>50050</size>
+        <size>4332</size>
+        <size>69716</size>
+        <size>9574</size>
+        <size>152729</size>
+        <size>5572</size>
+        <size>98349</size>
+        <size>5058</size>
+        <size>15277</size>
+        <size>2990</size>
+        <size>13932</size>
+        <size>5881</size>
+        <size>20758</size>
+        <size>4781</size>
+        <size>16935</size>
+        <size>3182</size>
+        <size>12405</size>
+        <size>2565</size>
+        <size>9071</size>
+        <size>1068</size>
+        <size>1530</size>
+        <size>5389</size>
+        <size>30175</size>
+        <size>7715</size>
+        <size>45454</size>
+        <size>3491</size>
+        <size>6156</size>
+        <size>2324</size>
+        <size>10520</size>
+        <size>5165</size>
+        <size>14783</size>
+        <size>40891</size>
+        <size>140903</size>
+        <size>4816</size>
+        <size>10961</size>
+        <size>29903</size>
+        <size>86923</size>
+        <size>14777</size>
+        <size>50258</size>
+        <size>2000</size>
+        <size>3822</size>
+        <size>24401</size>
+        <size>88401</size>
+        <size>17927</size>
+        <size>47780</size>
+        <size>925934</size>
+      </sizes>
+      <formats>
+        <format>text/plain</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/gzip</format>
+        <format>text/tab-separated-values</format>
+        <format>application/pdf</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/restrictedAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">This dataset contains raw data variables gathered during an educational research project for the Institute of Thermodynamics and Thermal Process Engineering (ITT) at the University of Stuttgart, 2014 until 2015. The project focused on requirements of study success and collected a variety of data on the student cohort in winter 2014 and summer 2015. This includes  quantitative and qualitative data from interviews as well as non-responsive  data from exams and the administrative departments. A major data analyis and interpretation as well as a thorough description of the research project and  its data is scheduled for publication as a PhD paper in 2020 at the University of Stuttgart. The dataset also includes the surveys and a codebook.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

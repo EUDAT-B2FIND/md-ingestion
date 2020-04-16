@@ -1,0 +1,67 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/114</identifier>
+    <datestamp>2016-12-05T13:37:31Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PROIEL collection</dc:title>
+      <dc:creator>Haug, Dag</dc:creator>
+      <dc:creator>J&#248;hndal, Marius L.</dc:creator>
+      <dc:subject>Treebank</dc:subject>
+      <dc:subject>Morphosyntactic Annotation</dc:subject>
+      <dc:description>The _PROIEL Treebank_ is a dependency treebank with morphosyntactic and information-structure annotation. It includes texts in several ancient Indo-European languages and is freely available under a Creative Commons CC BY-NC-SA 4.0 license.&#13;
+&#13;
+Please cite as:&#13;
+Dag T. T. Haug and Marius L. J&#248;hndal. 2008. 'Creating a Parallel Treebank of the Old Indo-European Bible Translations'. In Caroline Sporleder and Kiril Ribarov (eds.). Proceedings of the Second Workshop on Language Technology for Cultural Heritage Data (LaTeCH 2008) (2008), pp. 27-34.&#13;
+&#13;
+Releases of the PROIEL Treebank are hosted on[Github](https://github.com/proiel/proiel-treebank).&#13;
+&#13;
+The following texts are included in this release of the treebank:&#13;
+&#13;
+Text       |         Language         |         Filename        |        Size&#13;
+&#13;
+The Greek New Testament (ed. Tischendorf 1869) | Ancient Greek | greek-nt | 140,676 tokens&#13;
+The Armenian New Testament (ed. K&#252;nzle 1984) | Classical Armenian | armenian-nt | 23,513 tokens&#13;
+The Gothic Bible (ed. Streitberg 1919) | Gothic | gothic-nt | 57,211 tokens&#13;
+Codex Marianus (ed. Jagi&#263; 1883) | Old Church Slavonic | marianus | 58,269 tokens&#13;
+Jerome's Vulgate | Latin | latin-nt | 81,441 tokens&#13;
+Caesar, Commentarii belli Gallici (ed. Holmes 1914) | Latin | caes-gal | 28,608 tokens&#13;
+Cicero, Epistulae ad Atticum (ed. Purser 1901) | Latin | cic-att | 41,901 tokens&#13;
+Peregrinatio Aetheriae (ed. Heraeus 1908) | Latin | per-aeth | 18,356 tokens&#13;
+Herodotus, Histories (ed. Godley 1920) | Ancient Greek | hdt | 81,495 tokens&#13;
+Sphrantzes, Chronicles (post-1453) (ed. Grecu 1966) | Ancient Greek | chron | 24,612 tokens&#13;
+&#13;
+(The 'size' column in the table above shows the number of annotated tokens ina text. The number of tokens will be slightly larger than the number of words in the original printed edition as some words have been split into multiple tokens and some tokens have been inserted during annotation.)&#13;
+&#13;
+Please see the XML files for detailed metadata and a full list of contributors.&#13;
+&#13;
+Data formats: &#13;
+&#13;
+The texts are available on two formats:&#13;
+&#13;
+1. PROIEL XML: These files are the authoritative source files and the only ones that contain all available annotation. They contain the complete morphological, syntactic and information-structure annotation, as well as the complete text, including punctuation, section headers etc. The schema is defined in [`proiel.xsd`](https://github.com/proiel/proiel-treebank/blob/master/proiel.xsd).&#13;
+&#13;
+2. [CoNLL-X format](http://nextens.uvt.nl/depparse-wiki/DataFormat)</dc:description>
+      <dc:date>2016-11-29</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/114</dc:identifier>
+      <dc:language>got</dc:language>
+      <dc:language>grc</dc:language>
+      <dc:language>chu</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>xcl</dc:language>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>The PROIEL Treebank</dc:publisher>
+      <dc:source>http://proiel.github.io/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

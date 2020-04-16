@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/17</identifier>
+    <datestamp>2016-01-21T14:34:52Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>KPWr-lemma</dc:title>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:description>KPWr (Polish Corpus of Wroc&#322;aw University of Technology, pl. Korpus J&#281;zyka Polskiego Politechniki Wroc&#322;awskiej) is a corpus of written and spoken documents available on the Creative Common license. The texts are divided into 14 categories (blogs, science, stenographic recordings, etc.). The documents are annotated on the level of chunks and selected predicate-argument relations, named entities, relations between named entities, anaphora relations and word senses.</dc:description>
+      <dc:date>2014-01-01</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/17</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/kpwr</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

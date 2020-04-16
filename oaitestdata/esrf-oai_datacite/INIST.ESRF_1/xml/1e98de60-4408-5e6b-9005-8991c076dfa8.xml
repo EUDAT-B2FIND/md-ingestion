@@ -1,0 +1,60 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:15023034</identifier>
+    <datestamp>2018-10-19T07:02:56Z</datestamp>
+    <setSpec>INIST</setSpec>
+    <setSpec>INIST.ESRF</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.1/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.1/ http://schema.datacite.org/oai/oai-1.1/oai.xsd">
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>INIST.ESRF</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.15151/ESRF-ES-100444815</identifier>
+          <creators>
+            <creator>
+              <creatorName>Roger WILLIAMS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Marc FIEDLER</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Minmin YU</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Jonathan PRUNEDA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Christina GLADKOVA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Claire DICKSON</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Malte GERSCH</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Madhanagopal ANANDAPADAMANABAN</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>Cambridge MRC Block allocation</title>
+          </titles>
+          <subjects>
+            <subject subjectScheme="Proposal Type Description">Macromolecular Crystallography</subject>
+            <subject subjectScheme="Proposal">MX-1936</subject>
+            <subject subjectScheme="instrument">id23-1</subject>
+          </subjects>
+          <publisher>European Synchrotron Radiation Facility</publisher>
+          <dates>
+            <date dateType="Collected">2018-05-11</date>
+          </dates>
+          <publicationYear>2021</publicationYear>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Experiment Session</resourceType>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

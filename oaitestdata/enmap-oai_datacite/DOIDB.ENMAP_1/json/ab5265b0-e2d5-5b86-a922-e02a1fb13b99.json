@@ -1,0 +1,29 @@
+{
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6173",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6173"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6173;2018-06-26T08:34:55Z;DOIDB;DOIDB.ENMAP;false;4;DOIDB.ENMAP;10.5880/enmap.2016.002;Okujeni, Akpona;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;van der Linden, Sebastian;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;Hostert, Patrick;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;Berlin-Urban-Gradient dataset 2009 - An EnMAP Preparatory Flight Campaign (Datasets);GFZ Data Services;2016;imaging spectrometry;hyperspectral;EnMAP;HyMap;urban land cover;unmixing;classification;regression;support vector machines;multi-scale;Okujeni, Akpona;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;Okujeni, Akpona;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;van der Linden, Sebastian;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;van der Linden, Sebastian;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;Hostert, Patrick;Humboldt-Universit\u00e4t zu Berlin, Geography Department, Berlin, Germany;German Aerospace Center (DLR);German Aerospace Center (DLR);GFZ German Research Center for Geosciences;GFZ German Research Centre for Geosciences, Potsdam, Germany;Foerster, Saskia;0000-0001-7752-7394;GFZ German Research Centre for Geosciences, Potsdam, Germany;Elger, Kirsten;0000-0001-5140-8602;GFZ German Research Centre for Geosciences, Potsdam, Germany;2016-03-10;2009-08-20T09:44:29/2009-08-20T09:49:53;2009-08-20T10:07:14/2009-08-20T10:12:07;2009-08-20;eng;Dataset;10.1016/j.rse.2014.11.009;10.3390/rs6076324;10.1016/j.rse.2013.06.007;10.3390/rs70708830;10.1109/JSTARS.2012.2188994;10.2312/enmap.2016.002;http://www.enmap.org/?q=flights;10.5880/enmap.2016.008;CC BY-SA 4.0;Berlin-Urban-Gradient is a ready-to-use imaging spectrometry dataset for multi-scale unmixing and hard classification analyses in urban environments. The dataset comprises two airborne HyMap scenes at 3.6 and 9 m resolution, a simulated spaceborne EnMAP scene at 30 m resolution, an im-age endmember spectral library and detailed land cover reference information. All images are pro-vided as geocoded reflectance products and cover the same subset along Berlin\u2019s urban-rural gra-dient. The variety of land cover and land use patterns captured make the dataset an ideal play-ground for testing the transfer of methods and research approaches at multiple spatial scales.;The Environmental Mapping and Analysis Program (EnMAP) is a German hyperspectral satellite mission that aims at monitoring and characterizing the Earth\u2019s environment on a global scale. EnMAP serves to measure and model key dynamic processes of the Earth\u2019s ecosystems by extracting geochemical, biochemical and biophysical parameters, which provide information on the status and evolution of various terrestrial and aquatic ecosystems. In the frame of the EnMAP preparatory phase, pre-flight campaigns including airborne and in-situ measurements in different environments and for several application fields are being conducted. The main purpose of these campaigns is to support the development of scientific applications for EnMAP. In addition, the acquired data are input in the EnMAP end-to-end simulation tool (EeteS) and are employed to test data pre-processing and calibration-validation methods. The campaign data are made freely available to the scientific community under a Creative Commons Attribution-ShareAlike 4.0 International License. An overview of all available data is provided in in the EnMAP Flight Campaigns Metadata Portal http://www.enmap.org/?q=flights.;13.2800;13.3142;52.3140;52.5183;HyMap01 Berlin-Urban-Gradient (3,6 m spatial resolution);13.2561;13.3384;52.3193;52.5243;HyMap02 Berlin-Urban-Gradient (9 m spatial resolution);13.2561;13.3384;52.3193;52.5243;EnMAP Berlin-Urban-Gradient (30 m spatial resolution);Bundesministerium f\u00fcr Bildung und Forschung;http://doi.org/10.13039/501100002347;Bundesministerium f\u00fcr Wirtschaft und Technologie;http://doi.org/10.13039/501100002765;Deutsche Forschungsgemeinschaft;http://doi.org/10.13039/501100001659",
+    "group": "enmap",
+    "groups": [
+        {
+            "name": "enmap"
+        }
+    ],
+    "name": "ab5265b0-e2d5-5b86-a922-e02a1fb13b99",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6173"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.ENMAP"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

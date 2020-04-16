@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/119",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/119"
+    ],
+    "PID": "http://hdl.handle.net/10794/119",
+    "PublicationTimestamp": "2018-09-10T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "Olsson, Leif-J\u00f6ran",
+        "Dann\u00e9lls, Dana"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/119;2018-09-12T16:57:42Z;hdl_10794_1;hdl_10794_2;Swedish Blackletter OCR Evaluation Material 2018;Svensk frakturtext f\u00f6r OCR-utv\u00e4rdering 2018;Dann\u00e9lls, Dana;Olsson, Leif-J\u00f6ran;Swedish;OCR;Blackletter;transcription;Swedish Blackletter OCR Evaluation Material 2018. Images by GUB, transcriptions by authors.;Svensk frakturtext f\u00f6r OCR-utv\u00e4rdering 2018. Bilder fr\u00e5n GUB, transkription av f\u00f6rfattarna.;2018-09-10;corpus;http://hdl.handle.net/10794/119;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;http://creativecommons.org/licenses/by/4.0/;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Spr\u00e5kbanken, University of Gothenburg",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f52918b5-df09-5a30-8489-dd0d41c219b1",
+    "notes": [
+        "Swedish Blackletter OCR Evaluation Material 2018. Images by GUB, transcriptions by authors.",
+        "Svensk frakturtext f\u00f6r OCR-utv\u00e4rdering 2018. Bilder fr\u00e5n GUB, transkription av f\u00f6rfattarna."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/119"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "OCR"
+        },
+        {
+            "name": "Blackletter"
+        },
+        {
+            "name": "transcription"
+        }
+    ],
+    "title": [
+        "Swedish Blackletter OCR Evaluation Material 2018",
+        "Svensk frakturtext f\u00f6r OCR-utv\u00e4rdering 2018"
+    ],
+    "url": ""
+}

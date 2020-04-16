@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3780",
+    "MetadataAccess": [
+        "oai:ota:oucs:3780"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Macklin, Charles, 1697?-1797."
+    ],
+    "fulltext": "oai:ota:oucs:3780;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3780.xml;Proposals for publishing by subscription The man of the world, a comedy, in five acts; and, Love a la mode, a comedy, in two acts, written by Mr. Charles Macklin.;Man of the world.;Macklin, Charles, 1697?-1797.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "de010b14-125e-5ace-b86a-e87b4333cde9",
+    "oai_identifier": [
+        "oai:ota:oucs:3780"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Proposals for publishing by subscription The man of the world, a comedy, in five acts; and, Love a la mode, a comedy, in two acts, written by Mr. Charles Macklin.",
+        "Man of the world."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3780.xml"
+}

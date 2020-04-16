@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>573aeb080b6511e5a2aa782bcb074135ace9ac8fc0274514a993f523b313f3ae</identifier>
+    <datestamp>2018-11-15T16:40:16Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ixa-pipe-ned-ukb</dc:title>
+      <dc:description>ixa-pipe-ned-ukb is a multilingual Named Entity Disambiguation tool.
+
+It is based on UKB (http://ixa2.si.ehu.es/ukb/), a graph-based Word Sense Disambiguation tool. The Wikipedia graph built from the hyperlinks between Wikipedia articles is used for the processing. 
+
+The input of the tool is text where named entity mentions have been recognized and represented using the Natural Language Processing Annotation Format (NAF) (http://wordpress.let.vupr.nl/naf/. In the output it returns the corresponding Wikipedia articles for the entities in NAF format.
+
+This tool is partly funded by the European Commission project QTLeap FP7-ICT-2013.4.1-610516 (http://qtleap.eu). This tool is distributed under the license GPL v3.0.</dc:description>
+      <dc:date>2015-06-05</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

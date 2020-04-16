@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Faculty of Computer and Information Science, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/pdf",
+        "text/plain",
+        "downloadable_files_count: 8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1097",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1097"
+    ],
+    "PID": "http://hdl.handle.net/11356/1097",
+    "PublicationTimestamp": "2017-04-14T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Faculty of Computer and Information Science, University of Ljubljana"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Robnik-\u0160ikonja, Marko",
+        "Kadunc, Klemen"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1097;2017-05-28T08:38:58Z;hdl_11356_1023;hdl_11356_1024;Slovene sentiment lexicon KSS 1.1;Kadunc, Klemen;Robnik-\u0160ikonja, Marko;opinion lexicon;sentiment lexicon;Slovene opinion lexicon KSS is based on the manually translated opinion lexicon of Hu & Liu (2004). The lexicon is updated with some positive and negative words typical for Slovenian language. There are three versions of the lexicon.\r\n\r\n1.  Lexicon containing all word forms extended with Sloleks, a lexicon of Slovene word forms. It contains 90,620 entries, 62,941 negative word forms and 27,679 positive word forms.\r\n2. Lexicon containing only lemmas, containing 5,125 negative words and 1,911 positive words.\r\n3. The original version used in (Kadunc & Robnik-\u0160ikonja, 2016), containing 6,687 negative entries and  2,645 positive entries.\r\n\r\nEach version of the lexicon contains two files, one for negative and one for positive words in a text format, one word per line. The lexicon also contains some multi-word units where the individual words are joined with an underscore, e.g. \"bolezenska_znamenja\".\r\n\r\nThe KSS lexicon was developed as part of BSc Thesis (Kadunc, 2016) and empirically evaluated on a corpus of web commentaries about different topics (business, politics, sport and other topics) from 4 Slovene web portals (RtvSlo, 24ur, Finance, Reporter). That corpus is available from http://hdl.handle.net/11356/1115\r\n\r\n\r\nReferences:\r\n1. Minqing Hu in Bing Liu (2004). Mining opinion features in customer reviews. In Proceedings of AAAI Conference on Artificial Intelligence, vol. 4, pp. 755\u2013760 http://www.aaai.org/Papers/AAAI/2004/AAAI04-119.pdf \r\n2. Klemen Kadunc (2016). Dolo\u010danje sentimenta slovenskim spletnim komentarjem s pomo\u010djo strojnega u\u010denja. Diplomsko delo. Univerza v Ljubljani, Fakulteta za ra\u010dunalni\u0161tvo in informatiko (in Slovene). http://eprints.fri.uni-lj.si/3317/\r\n3. Klemen Kadunc, Marko Robnik-\u0160ikonja (2016). Analiza mnenj s pomo\u010djo strojnega u\u010denja in slovenskega leksikona sentimenta. Conference on Language Technologies & Digital Humanities, Ljubljana (in Slovene), http://www.sdjt.si/wp/wp-content/uploads/2016/09/JTDH-2016_Kadunc-et-al_Analiza-mnenj-s-pomocjo-strojnega-ucenja.pdf;2017-04-14;lexicalConceptualResource;http://hdl.handle.net/11356/1097;slv;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;application/pdf;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 8;Faculty of Computer and Information Science, University of Ljubljana;http://lkm.fri.uni-lj.si/rmarko/repozitorij/opinionLexicon",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2cd0e782-dd6f-52bd-b377-8d1342f89823",
+    "notes": [
+        "Slovene opinion lexicon KSS is based on the manually translated opinion lexicon of Hu & Liu (2004). The lexicon is updated with some positive and negative words typical for Slovenian language. There are three versions of the lexicon.\r\n\r\n1.  Lexicon containing all word forms extended with Sloleks, a lexicon of Slovene word forms. It contains 90,620 entries, 62,941 negative word forms and 27,679 positive word forms.\r\n2. Lexicon containing only lemmas, containing 5,125 negative words and 1,911 positive words.\r\n3. The original version used in (Kadunc & Robnik-\u0160ikonja, 2016), containing 6,687 negative entries and  2,645 positive entries.\r\n\r\nEach version of the lexicon contains two files, one for negative and one for positive words in a text format, one word per line. The lexicon also contains some multi-word units where the individual words are joined with an underscore, e.g. \"bolezenska_znamenja\".\r\n\r\nThe KSS lexicon was developed as part of BSc Thesis (Kadunc, 2016) and empirically evaluated on a corpus of web commentaries about different topics (business, politics, sport and other topics) from 4 Slovene web portals (RtvSlo, 24ur, Finance, Reporter). That corpus is available from http://hdl.handle.net/11356/1115\r\n\r\n\r\nReferences:\r\n1. Minqing Hu in Bing Liu (2004). Mining opinion features in customer reviews. In Proceedings of AAAI Conference on Artificial Intelligence, vol. 4, pp. 755\u2013760 http://www.aaai.org/Papers/AAAI/2004/AAAI04-119.pdf \r\n2. Klemen Kadunc (2016). Dolo\u010danje sentimenta slovenskim spletnim komentarjem s pomo\u010djo strojnega u\u010denja. Diplomsko delo. Univerza v Ljubljani, Fakulteta za ra\u010dunalni\u0161tvo in informatiko (in Slovene). http://eprints.fri.uni-lj.si/3317/\r\n3. Klemen Kadunc, Marko Robnik-\u0160ikonja (2016). Analiza mnenj s pomo\u010djo strojnega u\u010denja in slovenskega leksikona sentimenta. Conference on Language Technologies & Digital Humanities, Ljubljana (in Slovene), http://www.sdjt.si/wp/wp-content/uploads/2016/09/JTDH-2016_Kadunc-et-al_Analiza-mnenj-s-pomocjo-strojnega-ucenja.pdf"
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1097"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "opinion lexicon"
+        },
+        {
+            "name": "sentiment lexicon"
+        }
+    ],
+    "title": [
+        "Slovene sentiment lexicon KSS 1.1"
+    ],
+    "url": ""
+}

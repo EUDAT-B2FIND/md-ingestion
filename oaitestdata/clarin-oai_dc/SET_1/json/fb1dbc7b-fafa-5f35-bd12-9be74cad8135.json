@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Jan Wieczorek"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/629",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/629"
+    ],
+    "PID": "http://hdl.handle.net/11321/629",
+    "PublicationTimestamp": "2019-02-28T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Jan Wieczorek"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Lewandowski, Robert"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/629;2019-02-28T21:35:10Z;hdl_11321_3;hdl_11321_4;Potchefstroom demo 2.0;Lewandowski, Robert;literature;Potchefstroom (North-West University);2019-02-28;corpus;http://hdl.handle.net/11321/629;eng;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Jan Wieczorek",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fb1dbc7b-fafa-5f35-bd12-9be74cad8135",
+    "notes": [
+        "Potchefstroom (North-West University)"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/629"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "literature"
+        }
+    ],
+    "title": [
+        "Potchefstroom demo 2.0"
+    ],
+    "url": ""
+}

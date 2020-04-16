@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2630</identifier>
+    <datestamp>2018-11-14T15:34:46Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Italian Content Words v2</dc:title>
+      <dc:creator>Grella, Matteo</dc:creator>
+      <dc:subject>morphological dictionary</dc:subject>
+      <dc:description>This resource is the second version of an Italian morphological dictionary for content words, encoded in a JSON Lines format text file. It contains correspondences between surface form and lexical forms of words followed by standard grammatical properties. Compared to the first release, this version has a better JSON structure. The surface word forms have been generated algorithmically by using stable phonological and morphological rules of the Italian language. Particular attention has been given to the generation of verbs for which rules have been extracted from A.L e G. Lepschy, La Lingua Italiana. The dictionary with its remarkable coverage is particularly useful used together with the Italian Function Words v2 (http://hdl.handle.net/11372/LRT-2629) for tasks such as pos-tagging or syntactic parsing.</dc:description>
+      <dc:date>2018</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2630</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:relation>http://hdl.handle.net/11372/LRT-2476</dc:relation>
+      <dc:relation>http://hdl.handle.net/11372/LRT-2894</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-tar</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Matteo Grella</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

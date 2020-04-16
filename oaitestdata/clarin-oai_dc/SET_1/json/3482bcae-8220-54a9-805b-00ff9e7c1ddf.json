@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=14c21c7827f811e6a2aa782bcb0741350dcd9beb0baa4857839bd854d616ea8d",
+    "MetadataAccess": [
+        "14c21c7827f811e6a2aa782bcb0741350dcd9beb0baa4857839bd854d616ea8d"
+    ],
+    "PublicationTimestamp": "2016-06-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "fulltext": "14c21c7827f811e6a2aa782bcb0741350dcd9beb0baa4857839bd854d616ea8d;2018-11-15T16:40:22Z;corpus;corpus:text;QTLeap LRT-M31-WP4;Treebanks and semantic lexicons for Basque, Bulgarian, Dutch, German and Portuguese. Created within European project QTLeap.;2016-06-01",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3482bcae-8220-54a9-805b-00ff9e7c1ddf",
+    "notes": [
+        "Treebanks and semantic lexicons for Basque, Bulgarian, Dutch, German and Portuguese. Created within European project QTLeap."
+    ],
+    "oai_identifier": [
+        "14c21c7827f811e6a2aa782bcb0741350dcd9beb0baa4857839bd854d616ea8d"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "QTLeap LRT-M31-WP4"
+    ]
+}

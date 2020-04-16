@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 3",
+        "application/pdf"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4900-A",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4900-A"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-4900-A",
+    "PublicationTimestamp": "2009-11-02T09:37:56Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "PDT 2.0 License",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-pdt2",
+        "ACA"
+    ],
+    "author": [
+        "Kolovratn\u00edk, David"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4900-A;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;MORFO;Kolovratn\u00edk, David;morphological analysis;The MORFO system for morphological analysis of Czech consists of four units: the analyzer, the generator, the dictionary editor, and the library with the shared source code for handling dictionary objects.;2009-11-02T09:37:56Z;toolService;http://hdl.handle.net/11858/00-097C-0000-0001-4900-A;ces;PDT 2.0 License;https://lindat.mff.cuni.cz/repository/xmlui/page/license-pdt2;ACA;application/x-gzip;application/pdf;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 3;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/morfo",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "011e844e-7d78-5f94-858d-1ebd37ceba1f",
+    "notes": [
+        "The MORFO system for morphological analysis of Czech consists of four units: the analyzer, the generator, the dictionary editor, and the library with the shared source code for handling dictionary objects."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4900-A"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphological analysis"
+        }
+    ],
+    "title": [
+        "MORFO"
+    ],
+    "url": ""
+}

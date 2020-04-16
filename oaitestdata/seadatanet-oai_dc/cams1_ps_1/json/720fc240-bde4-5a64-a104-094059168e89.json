@@ -1,0 +1,63 @@
+{
+    "DOI": "http://dx.doi.org/10.12770/2a5c1396-f832-4500-8faa-8cfeeded1ebb",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=oai_dc&identifier=720fc240-bde4-5a64-a104-094059168e89",
+    "Rights": [
+        "otherRestrictions"
+    ],
+    "SpatialCoverage": [
+        "10 10",
+        "-90 65"
+    ],
+    "fulltext": "2a5c1396-f832-4500-8faa-8cfeeded1ebb;2018-07-24T09:47:30;North Atlantic Ocean - Temperature and salinity observation collection V1.1;seadatanet-north_atlantic_ocean-temperature_salinity_aggregated_public-v1_1;series;Oceanographic geographical features;Temperature of the water column;Salinity of the water column;ITS-90 water temperature;Water body salinity;North Atlantic Ocean;oceans;SeaDataNet Temperature and Salinity historical data collection, including revised quality flags after quality control with ODV.\n\nFor data access please register at http://www.marine-id.org\n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/;SeaDataNet Temperature and Salinity historical data collection, including revised quality flags after quality control with ODV.\n\nFor data access please register at http://www.marine-id.org\n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/;otherRestrictions;eng;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI;10 10;-90 65;http://dx.doi.org/10.12770/2a5c1396-f832-4500-8faa-8cfeeded1ebb;ftp://vftp2.ifremer.fr/public/seadatanet-north_atlantic_ocean-temperaturesalinity_aggregated/SDN_2014-03_TS_Atlantic_QC_done_v1.1.zip;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_Atlantic_QC_done_v1.1;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_Atlantic_QC_done_v1.1;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_Atlantic_QC_done_v1.1;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_Atlantic_QC_done_v1.1;https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=2a5c1396-f832-4500-8faa-8cfeeded1ebb&fname=NorthAtlanticTransp.png",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "720fc240-bde4-5a64-a104-094059168e89",
+    "notes": [
+        "SeaDataNet Temperature and Salinity historical data collection, including revised quality flags after quality control with ODV.\n\nFor data access please register at http://www.marine-id.org\n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/"
+    ],
+    "oai_identifier": [
+        "720fc240-bde4-5a64-a104-094059168e89"
+    ],
+    "oai_set": "cams1_ps",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "North Atlantic Ocean"
+        },
+        {
+            "name": "oceans"
+        }
+    ],
+    "title": [
+        "North Atlantic Ocean - Temperature and salinity observation collection V1.1"
+    ],
+    "url": "https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=2a5c1396-f832-4500-8faa-8cfeeded1ebb&fname=NorthAtlanticTransp.png"
+}

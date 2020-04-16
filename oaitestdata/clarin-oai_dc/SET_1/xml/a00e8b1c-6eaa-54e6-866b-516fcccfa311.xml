@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>0b1d3fb6ee8511e4a2aa782bcb0741356f1c360cc2f949fab24226b691d2b6b8</identifier>
+    <datestamp>2018-11-15T16:40:15Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Europarl QTLeap WSD/NED corpus</dc:title>
+      <dc:description>Europarl QTLeap WSD/NED corpus
+
+This corpora is part of Deliverable 5.5 of the European Commission project QTLeap FP7-ICT-2013.4.1-610516 (http://qtleap.eu). 
+
+The texts are sentences from the Europarl parallel corpus (Koehn, 2005). We selected the monolingual sentences from parallel corpora for the following pairs: Bulgarian-English, Czech-English, Portuguese-English and Spanish-English. The English corpus is comprised by the English side of the Spanish-English corpus. 
+
+Basque is not in Europarl. In addition, it contains the Basque and English sides of the GNOME corpus.
+
+The texts have been automatically annotated with NLP tools, including Word Sense Disambiguation, Named Entity Disambiguation and Coreference resolution. Please check deliverable D5.6 in http://qtleap.eu/deliverables for more information.
+
+Institutions involved in the annotation:
+  University of the Basque Country (UPV/EHU)
+  Faculty of Science, Univeristy of Lisbon (FCUL)
+  Charles University in Prague (CUNI)
+  Bulgarian Academy of Sciences (IICT-BAS)
+</dc:description>
+      <dc:date>2015-04-29</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

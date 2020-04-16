@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "researchgate.net"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/pdf"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/477",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/477"
+    ],
+    "PID": "http://hdl.handle.net/11321/477",
+    "PublicationTimestamp": "2018-06-02T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "researchgate.net"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Ryznar, Zygmunt"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/477;2018-06-07T20:10:59Z;hdl_11321_3;hdl_11321_4;Linguistic presentation of object structure and relations in OSL language;Ryznar, Zygmunt;object structure and relations;business it human specification language;object geometric mapping;OSL is a markup universal  language for linguistic description of  any object  in terms of structure  and behavior. The kernel is presented and subsets for IT system,  business  and  human-being.   Special atention is given to geometrical structures suggested as  new data types.;2018-06-02;languageDescription;http://hdl.handle.net/11321/477;eng;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;application/pdf;downloadable_files_count: 1;researchgate.net;http://ryznar-zygmunt.eu/ipedia/OSL-D.pdf",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4a3d6c4b-555b-5200-a461-f144cc6d25f4",
+    "notes": [
+        "OSL is a markup universal  language for linguistic description of  any object  in terms of structure  and behavior. The kernel is presented and subsets for IT system,  business  and  human-being.   Special atention is given to geometrical structures suggested as  new data types."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/477"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "object structure relations"
+        },
+        {
+            "name": "business human specification language"
+        },
+        {
+            "name": "object geometric mapping"
+        }
+    ],
+    "title": [
+        "Linguistic presentation of object structure and relations in OSL language"
+    ],
+    "url": ""
+}

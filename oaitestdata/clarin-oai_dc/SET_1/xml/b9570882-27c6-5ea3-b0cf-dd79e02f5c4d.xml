@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>168f79aaa35a11e1a404080027e73ea2b09be1971aff49cbaeabfec8cc3cab7e</identifier>
+    <datestamp>2019-02-27T12:09:03Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+    <setSpec>corpus:audio</setSpec>
+    <setSpec>corpus:text:audio</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Fundamental Portuguese</dc:title>
+      <dc:description>This resource includes a spoken Portuguese corpus - with aligned sound and orthographic transcription -, collected among sociolinguistically diverse speakers. It consists of recordings from informal conversations.</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

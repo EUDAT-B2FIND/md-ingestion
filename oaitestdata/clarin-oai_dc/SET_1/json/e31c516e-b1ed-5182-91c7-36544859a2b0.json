@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3172",
+    "MetadataAccess": [
+        "oai:ota:oucs:3172"
+    ],
+    "PublicationTimestamp": "1534-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1534"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:3172;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3172.xml;Bible. German. trans. Luther.;Die Bibel ;not after: 1534;text_and_corpus_linguistics;Bible. German;deu;Oxford Text Archive, University of Oxford;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e31c516e-b1ed-5182-91c7-36544859a2b0",
+    "oai_identifier": [
+        "oai:ota:oucs:3172"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Bible. German"
+        }
+    ],
+    "title": [
+        "Bible. German. trans. Luther.",
+        "Die Bibel "
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3172.xml"
+}

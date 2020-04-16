@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Hecht, Lutz",
+        "Siegert, Susann"
+    ],
+    "Contributor": [
+        "Hecht, Lutz",
+        "Siegert, Susann"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5880/fidgeo.2017.002",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/vnd.ms-excel",
+        "application/pdf"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6294",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6294"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "GFZ Data Services"
+    ],
+    "Rights": [
+        "CC BY 4.0"
+    ],
+    "SpatialCoverage": "(49N,11E)",
+    "author": [
+        "Hecht, Lutz",
+        "Schmitt, Ralf-Thomas",
+        "Siegert, Susann"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6294;2017-09-15T09:22:41Z;DOIDB;DOIDB.FID;false;3;DOIDB.FID;10.5880/fidgeo.2017.002;Siegert, Susann;0000-0002-4157-863X;Museum f\u00fcr Naturkunde, Leibniz Institute for Evolution and Biodiversity Science;Hecht, Lutz;Museum f\u00fcr Naturkunde, Leibniz Institute for Evolution and Biodiversity Science;Schmitt, Ralf-Thomas;Museum f\u00fcr Naturkunde, Leibniz Institute for Evolution and Biodiversity Science;Geochemical data of melt-bearing impact breccia (suevite) from the research drill core FBN 73 of the Ries impact crater, Germany;GFZ Data Services;2017;geochemistry;Ries impact crater;melt-bearing impact breccia;suevite ;X-ray fluorescence;Siegert, Susann;0000-0002-4157-863X;Museum f\u00fcr Naturkunde, Leibniz Institute for Evolution and Biodiversity Science;Hecht, Lutz;Museum f\u00fcr Naturkunde, Leibniz Institute for Evolution and Biodiversity Science;en;10.1046/j.1365-2494.1998.53202081.x-i1;10.1111/maps.12087;10.1111/maps.12086;https://www.bestellen.bayern.de/application/applstarter?APPL=eshop&DIR=eshop&ACTIONxSETVAL(artdtl_geo.htm,APGxNODENR:273903,AARTxNR:91072,AARTxNODENR:274870,USERxBODYURL:artdtl.htm,KATALOG:StMUG,AKATxNAME:StMUG,ALLE:x)=X;10.1130/G39198.1;10.5880/fidgeo.2017.001;213251 Bytes;3 Files;application/vnd.ms-excel;application/vnd.ms-excel;application/pdf;CC BY 4.0;This data set comprises XRF (89 samples) and ICP-AES/ICP-MS (12 samples) major and trace element geochemistry of melt-bearing impact breccia (suevite) samples of the research drill core FBN 73 of the Ries impact crater in Southern Germany. The 1,206 m deep drilling in the central part of the Ries impact crater, carried out in 1973 (Bayerisches Geologisches Landesamt 1974), provided insights into the origin and distribution of suevite and into the development of the post-impact Ries lake with redeposited suevitic sediments at its base (St\u00f6ffler et al. 2013). The suevite is divided into five sequences, (1) dike suevite 1186-602 m, (2) melt-rich suevite 602-525 m, (3) melt-rich suevite 525-331 m, (4) graded suevite 331-314 m, and (5) reworked suevite 314-257 m (St\u00f6ffler et al., 2013 and references therein).\n      ;48.88277959345126 10.54962158203125;FBN 73 borehole, Ries Impact Crater, Germany",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "1b3079de-39e9-5b73-a9e1-f70b0feda6f6",
+    "notes": [
+        "This data set comprises XRF (89 samples) and ICP-AES/ICP-MS (12 samples) major and trace element geochemistry of melt-bearing impact breccia (suevite) samples of the research drill core FBN 73 of the Ries impact crater in Southern Germany. The 1,206 m deep drilling in the central part of the Ries impact crater, carried out in 1973 (Bayerisches Geologisches Landesamt 1974), provided insights into the origin and distribution of suevite and into the development of the post-impact Ries lake with redeposited suevitic sediments at its base (St\u00f6ffler et al. 2013). The suevite is divided into five sequences, (1) dike suevite 1186-602 m, (2) melt-rich suevite 602-525 m, (3) melt-rich suevite 525-331 m, (4) graded suevite 331-314 m, and (5) reworked suevite 314-257 m (St\u00f6ffler et al., 2013 and references therein).\n      "
+    ],
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6294"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[10.54962158203125,48.88277959345126],[10.54962158203125,48.88277959345126],[10.54962158203125,48.88277959345126],[10.54962158203125,48.88277959345126],[10.54962158203125,48.88277959345126]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "geochemistry"
+        },
+        {
+            "name": "Ries impact crater"
+        },
+        {
+            "name": "melt-bearing impact breccia"
+        },
+        {
+            "name": "suevite"
+        },
+        {
+            "name": "X-ray fluorescence"
+        }
+    ],
+    "title": [
+        "Geochemical data of melt-bearing impact breccia (suevite) from the research drill core FBN 73 of the Ries impact crater, Germany"
+    ],
+    "url": ""
+}

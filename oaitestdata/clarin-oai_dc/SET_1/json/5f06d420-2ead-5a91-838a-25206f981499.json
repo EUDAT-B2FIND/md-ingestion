@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4111",
+    "MetadataAccess": [
+        "oai:ota:oucs:4111"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Churchill, Charles, 1731-1764."
+    ],
+    "fulltext": "oai:ota:oucs:4111;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4111.xml;Night: An epistle to Robert Lloyd. By the author.;Churchill, Charles, 1731-1764.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5f06d420-2ead-5a91-838a-25206f981499",
+    "oai_identifier": [
+        "oai:ota:oucs:4111"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Night: An epistle to Robert Lloyd. By the author."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4111.xml"
+}

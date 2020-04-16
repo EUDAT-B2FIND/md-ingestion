@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Universit\u00e4t des Saarlandes"
+    ],
+    "Contributor": [
+        "Knappen, J\u00f6rg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Catalan",
+        "Dutch",
+        "English",
+        "French",
+        "German",
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-344",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-344"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-344",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Universit\u00e4t des Saarlandes"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-344;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;TeLeMaCo;Knappen, J\u00f6rg;documentation;A collection of pointers to teaching and learning materials on linguistics and linguistic tools, including quick starts, how-tos, technical documentation, short teaching modules (2h), and full courses. This resource is collaboratively built by its users.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-344;cat;nld;eng;fra;deu;ita;downloadable_files_count: 0;Germany;Universit\u00e4t des Saarlandes;https://fedora.clarin-d.uni-saarland.de/hub/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "944f5b05-a81e-53d0-9d9b-77bed1eb4ff4",
+    "notes": [
+        "A collection of pointers to teaching and learning materials on linguistics and linguistic tools, including quick starts, how-tos, technical documentation, short teaching modules (2h), and full courses. This resource is collaboratively built by its users."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-344"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "documentation"
+        }
+    ],
+    "title": [
+        "TeLeMaCo"
+    ],
+    "url": ""
+}

@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "sdn-userdesk@seadatanet.org"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=iso19139&identifier=ea37a79b-9ffd-53dd-8d9c-893579fa67b4",
+    "PublicationTimestamp": "2015-11-30T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "IFREMER / IDM/SISMER",
+        "SEADATANET",
+        "Istituto Nazionale di Geofisica e Vulcanologia \u2013 INGV, Sede di Bologna"
+    ],
+    "ResourceType": "dataset",
+    "Rights": [
+        "No limitations on public access.  For data access please register at http://www.marine-id.org"
+    ],
+    "SpatialCoverage": "(30N-46N,9 W-37E)",
+    "TempCoverageBegin": 59926651199,
+    "TempCoverageEnd": 63524087999,
+    "TemporalCoverage": " period : ( 1900-01-01T11:59:59Z - 2013-12-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1900-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2013-12-31T11:59:59Z",
+    "fulltext": "90ae7a06-8b08-4afe-83dd-ca92bc99f5c0;SEADATANET;sdn-userdesk@seadatanet.org;http://www.seadatanet.org/;2018-07-24T09:47:39;ISO 19115:2003/19139 - EMODNET - SDN;0.1;4;33;1;false;WGS 84 (EPSG 4326);EPSG;Mediterranean Sea - Temperature and Salinity Climatology V1.1;SEADATANET_MedSea_climatology_V1.1_public;2015-11-30;1.1;2015-11-30;90ae7a06-8b08-4afe-83dd-ca92bc99f5c0;Mediterranean Sea Climatology computed from the SeaDataNet V1.1 aggregated dataset . The version used for the DIVA software is the 4.6.9. The period covers 1900-2013.\n\n For data access please register at http://www.marine-id.org;SeaDataNet;Istituto Nazionale di Geofisica e Vulcanologia \u2013 INGV, Sede di Bologna;+39 051 4151412;+39 0514151499;Via Donato Creti n\u00b012;Bologna;40128;Italy;simona.simoncelli@ingv.it;http://www.ingv.it;web site;IFREMER / IDM/SISMER;+33 (0)2 98.22.49.16;+33 (0)2 98.22.46.44;Centre IFREMER de Brest\nBP 70;PLOUZANE;29280;France;sismer@ifremer.fr;http://www.ifremer.fr/sismer/;web site;https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=90ae7a06-8b08-4afe-83dd-ca92bc99f5c0&fname=med_sea.png;Oceanographic geographical features;GEMET - INSPIRE themes, version 1.0;2009-09-22T07:57:15;Temperature of the water column;Salinity of the water column;Parameter Discovery Vocabulary (P02);2014-12-11;geonetwork.thesaurus.external.parameter.NVS.P02;ITS-90 water temperature;Water body salinity;EMODNET chemistry lot aggregated parameter names;2014-12-11;geonetwork.thesaurus.external.parameter.NVS.P35;Mediterranean Region;Mediterranean Sea;SeaVoX salt and fresh water body gazetteer;2014-12-11;geonetwork.thesaurus.external.reference-geographical-area.NVS.C19;Th\u00e8mes Sextant;2017-01-23;geonetwork.thesaurus.local.theme.sextant-theme;SeaDataNet licence;SeaDataNet Usage Agreement: If you use SeaDataNet data in your publications please include the following in the Acknowledgements: Data were provided through SeaDataNet Pan-European infrastructure for ocean and marine data management (https://www.seadatanet.org);No limitations on public access.  For data access please register at http://www.marine-id.org;0.125;oceans;bounding box;-9.250;36.625;30.000;46.125;1900-01-01;2013-12-31;-5500.0;0.0;http://dx.doi.org/10.12770/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0;WWW:LINK-1.0-http--metadata-URL;DOI of the product;http://gher-diva.phys.ulg.ac.be/web-vis/Python/web/wms;OGC:WMS:getCapabilities;full dataset;full dataset;http://gher-diva.phys.ulg.ac.be/web-vis/Python/web/wms;OGC:WMS;Mediterranean Sea/Salinity.19002013.4Danl.nc*Salinity_L1;Salinity masked using relative error threshold 0.3;http://gher-diva.phys.ulg.ac.be/web-vis/Python/web/wms;OGC:WMS;Mediterranean Sea/Salinity.19002013.4Danl.nc*Salinity_L2;Salinity masked using relative error threshold 0.5;http://gher-diva.phys.ulg.ac.be/web-vis/Python/web/wms;OGC:WMS;Mediterranean Sea/Temperature.19002013.4Danl.nc*Temperature_L1;Temperature masked using relative error threshold 0.3;http://gher-diva.phys.ulg.ac.be/web-vis/Python/web/wms;OGC:WMS;Mediterranean Sea/Temperature.19002013.4Danl.nc*Temperature_L2;Temperature masked using relative error threshold 0.5;ftp://ftp2.ifremer.fr/public/seadatanet-med_sea-temperaturesalinity_climatologie/SDN_2015-11_TS_Med_Sea_Climatology_v1.1.zip;WWW:DOWNLOAD-1.0-link--download;full dataset;full dataset;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;See the referenced specification;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "ea37a79b-9ffd-53dd-8d9c-893579fa67b4",
+    "notes": [
+        "Mediterranean Sea Climatology computed from the SeaDataNet V1.1 aggregated dataset . The version used for the DIVA software is the 4.6.9. The period covers 1900-2013.\n\n For data access please register at http://www.marine-id.org"
+    ],
+    "oai_identifier": [
+        "ea37a79b-9ffd-53dd-8d9c-893579fa67b4"
+    ],
+    "oai_set": "cams1_ps",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-9.250,30.000],[-9.250,46.125],[36.625,46.125],[36.625,30.000],[-9.250,30.000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "Mediterranean Region"
+        },
+        {
+            "name": "Mediterranean Sea"
+        }
+    ],
+    "title": [
+        "Mediterranean Sea - Temperature and Salinity Climatology V1.1"
+    ]
+}

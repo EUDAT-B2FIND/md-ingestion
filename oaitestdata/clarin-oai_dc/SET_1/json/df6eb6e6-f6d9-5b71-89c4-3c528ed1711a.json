@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4914-D",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4914-D"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-4914-D",
+    "PublicationTimestamp": "2009-11-02T10:40:55Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "PDTSL",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-pdtsl",
+        "ACA"
+    ],
+    "author": [
+        "Mikulov\u00e1, Marie",
+        "Haji\u010d, Jan",
+        "Ure\u0161ov\u00e1, Zde\u0148ka",
+        "Podvesk\u00fd, Petr",
+        "Pajas, Petr",
+        "Mare\u010dek, David"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4914-D;2017-11-09T14:20:35Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Prague Dependency Treebank of Spoken Language (PDTSL) 0.5;Haji\u010d, Jan;Pajas, Petr;Mare\u010dek, David;Mikulov\u00e1, Marie;Ure\u0161ov\u00e1, Zde\u0148ka;Podvesk\u00fd, Petr;corpus;spoken language;The first edition of a speech corpus with a speech reconstruction layer (edited transcript).\r\n\r\nThe project of speech reconstruction of Czech and English has been started at UFAL together with the PIRE project in 2005, and has gradually grown from ideas to (first) annotation specification, annotation software and actual annotation. It is part of the Prague Dependency Treebank family of annotated corpus resources and tools, to which it adds the spoken language layer(s).;2009-11-02T10:40:55Z;corpus;http://hdl.handle.net/11858/00-097C-0000-0001-4914-D;ces;eng;PDTSL;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-pdtsl;ACA;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/pdtsl",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "df6eb6e6-f6d9-5b71-89c4-3c528ed1711a",
+    "notes": [
+        "The first edition of a speech corpus with a speech reconstruction layer (edited transcript).\r\n\r\nThe project of speech reconstruction of Czech and English has been started at UFAL together with the PIRE project in 2005, and has gradually grown from ideas to (first) annotation specification, annotation software and actual annotation. It is part of the Prague Dependency Treebank family of annotated corpus resources and tools, to which it adds the spoken language layer(s)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4914-D"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "spoken language"
+        }
+    ],
+    "title": [
+        "Prague Dependency Treebank of Spoken Language (PDTSL) 0.5"
+    ],
+    "url": ""
+}

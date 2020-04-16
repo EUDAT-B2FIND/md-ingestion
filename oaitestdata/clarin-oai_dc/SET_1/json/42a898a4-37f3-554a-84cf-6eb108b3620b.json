@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, Dept. of Swedish Language, G\u00f6teborg University"
+    ],
+    "Contributor": [
+        "Olsson, Leif-J\u00f6ran"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1195",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1195"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1195",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, Dept. of Swedish Language, G\u00f6teborg University"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Sweden"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1195;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;eXist;Olsson, Leif-J\u00f6ran;eXist-db is an open source database management system entirely built on XML technology. It stores XML data according to the XML data model and features efficient, index-based XQuery processing.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1195;downloadable_files_count: 0;Sweden;Spr\u00e5kbanken, Dept. of Swedish Language, G\u00f6teborg University;http://exist-db.org/exist/apps/homepage/index.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "42a898a4-37f3-554a-84cf-6eb108b3620b",
+    "notes": [
+        "eXist-db is an open source database management system entirely built on XML technology. It stores XML data according to the XML data model and features efficient, index-based XQuery processing."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1195"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "eXist"
+    ],
+    "url": ""
+}

@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Faculty of Arts, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Japanese",
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1050",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1050"
+    ],
+    "PID": "http://hdl.handle.net/11356/1050",
+    "PublicationTimestamp": "2016-01-30T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Faculty of Arts, University of Ljubljana"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Srdanovi\u0107, Irena",
+        "Erjavec, Toma\u017e",
+        "Hmeljak, Kristina"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1050;2018-05-28T11:30:55Z;hdl_11356_1023;hdl_11356_1024;Japanese-Slovene learner's dictionary jaSlo 3.1;Hmeljak, Kristina;Erjavec, Toma\u017e;Srdanovi\u0107, Irena;dictionary;difficulty level;TEI;multilingual;The jaSlo dictionary is primarily intended for Slovene students learning Japanese. For each entry, it contains the Japanese headword (kanji, hiragana or katakana, and romaji), its part-of-speech and difficulty level, Slovene language gloss, Slovene translation equivalents, and translated examples of use.;2016-01-30;lexicalConceptualResource;http://hdl.handle.net/11356/1050;jpn;slv;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Faculty of Arts, University of Ljubljana;http://nl.ijs.si/jaslo/index-en.html#jaslo",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c433c950-0d51-5507-bd1d-84a171fdd1a7",
+    "notes": [
+        "The jaSlo dictionary is primarily intended for Slovene students learning Japanese. For each entry, it contains the Japanese headword (kanji, hiragana or katakana, and romaji), its part-of-speech and difficulty level, Slovene language gloss, Slovene translation equivalents, and translated examples of use."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1050"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dictionary"
+        },
+        {
+            "name": "difficulty level"
+        },
+        {
+            "name": "TEI"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Japanese-Slovene learner's dictionary jaSlo 3.1"
+    ],
+    "url": ""
+}

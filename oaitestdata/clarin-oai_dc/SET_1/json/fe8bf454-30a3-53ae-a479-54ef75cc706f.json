@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "University of Stuttgart"
+    ],
+    "Contributor": [
+        "Uszkoreit, Prof. Dr. Hans"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1129",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1129"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1129",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Stuttgart"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1129;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;TIGER-Korpus;Uszkoreit, Prof. Dr. Hans;Germanistik;Treebank of German newspaper texts (taken from \"Frankfurter Rundschau\"); Grundlage: Zeitungstexte aus der \"Frankfurter Rundschau\";2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1129;deu;downloadable_files_count: 0;Germany;University of Stuttgart;http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/tiger.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fe8bf454-30a3-53ae-a479-54ef75cc706f",
+    "notes": [
+        "Treebank of German newspaper texts (taken from \"Frankfurter Rundschau\"); Grundlage: Zeitungstexte aus der \"Frankfurter Rundschau\""
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1129"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "TIGER-Korpus"
+    ],
+    "url": ""
+}

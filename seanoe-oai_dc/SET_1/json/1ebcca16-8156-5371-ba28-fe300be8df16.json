@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/57450",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=1ebcca16-8156-5371-ba28-fe300be8df16",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/262552/EU//MARINET"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-NC"
+    ],
+    "SpatialCoverage": [
+        "50.729627 1.597578 50.729627 1.597578",
+        "55.862869 -4.242457 55.862869 -4.242457",
+        "41.818443 12.457076 41.818443 12.457076"
+    ],
+    "TemporalCoverage": [
+        "North 50.729627, South 50.729627, East 1.597578, West 1.597578",
+        "North 55.862869, South 55.862869, East -4.242457, West -4.242457",
+        "North 41.818443, South 41.818443, East 12.457076, West 12.457076"
+    ],
+    "author": [
+        "Germain, Gregory",
+        "Gaurier, Benoit",
+        "Facq, Jean-valery",
+        "Di Felice, Fabio",
+        "Johnstone, Cameron",
+        "Day, Sandy",
+        "Costanzo, Marcello"
+    ],
+    "fulltext": "oai:seanoe.org:57450;2018-11-14;Towing and circulating tanks tidal energy converter test results;Gaurier, Benoit;Germain, Gregory;Facq, Jean-valery;Day, Sandy;Johnstone, Cameron;Di Felice, Fabio;Costanzo, Marcello;A comparative \"Round Robin\" testing program has been conducted as part of the EC FP VII MaRINET program in order to evaluate the impact of different experimental facilities on the test results. The aim of the trials was to test the same model tidal turbine in four different test facilities to explore the sensitivity of the results to the choice of facility. The facilities used in the testing program include two towing tanks, at CNR-INSEAN (Rome, 220 m long) and at Strathclyde University (Glasgow, 76 m long), and two recirculating tanks at CNR-INSEAN (Rome) and at IFREMER (Boulogne sur mer).\nThe model consists of a three-bladed horizontal axis turbine, which is D=0.7m in diameter. The rotor is connected to a motor-gearbox assembly consisting of a gearbox, a DC motor, a ballast load and a motor speed control unit, providing an active rotor speed control. The turbine blades are designed from a NACA 63-418 profile. A torque meter is placed between the rotor and the gearbox for torque measurements.\nThe forces and moments acting on the structure are obtained by means of a six-component load cell, which measures the three force components and the three moment components and the torque by a torque sensor directly fixed between the rotor and the motor. All signals coming from the load-cell, the torque-meter and the motor are recorded synchronously at a sample frequency of 100Hz.\nIn each tank, the turbine depth is kept constant at 1 m under the free surface. The turbine is fixed on a moving carriage in the towing tanks and on a customised mounting in the flume tanks. The flow velocity or carriage velocity is chosen and fixed for each set of tests; the turbine rotation speed is then varied to adjust the tip speed ratio. The rotational speed is measured and controlled for each measurement point, but is adjusted manually.\n;SEANOE;2018-10;dataset;DOI:10.17882/57450;http://dx.doi.org/10.17882/57450;info:eu-repo/grantAgreement/EC/FP7/262552/EU//MARINET;North 50.729627, South 50.729627, East 1.597578, West 1.597578;North 55.862869, South 55.862869, East -4.242457, West -4.242457;North 41.818443, South 41.818443, East 12.457076, West 12.457076;https://www.seanoe.org/data/00463/57450/illustration.gif;50.729627 1.597578 50.729627 1.597578;55.862869 -4.242457 55.862869 -4.242457;41.818443 12.457076 41.818443 12.457076;CC-BY-NC",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "1ebcca16-8156-5371-ba28-fe300be8df16",
+    "notes": [
+        "A comparative \"Round Robin\" testing program has been conducted as part of the EC FP VII MaRINET program in order to evaluate the impact of different experimental facilities on the test results. The aim of the trials was to test the same model tidal turbine in four different test facilities to explore the sensitivity of the results to the choice of facility. The facilities used in the testing program include two towing tanks, at CNR-INSEAN (Rome, 220 m long) and at Strathclyde University (Glasgow, 76 m long), and two recirculating tanks at CNR-INSEAN (Rome) and at IFREMER (Boulogne sur mer).\nThe model consists of a three-bladed horizontal axis turbine, which is D=0.7m in diameter. The rotor is connected to a motor-gearbox assembly consisting of a gearbox, a DC motor, a ballast load and a motor speed control unit, providing an active rotor speed control. The turbine blades are designed from a NACA 63-418 profile. A torque meter is placed between the rotor and the gearbox for torque measurements.\nThe forces and moments acting on the structure are obtained by means of a six-component load cell, which measures the three force components and the three moment components and the torque by a torque sensor directly fixed between the rotor and the motor. All signals coming from the load-cell, the torque-meter and the motor are recorded synchronously at a sample frequency of 100Hz.\nIn each tank, the turbine depth is kept constant at 1 m under the free surface. The turbine is fixed on a moving carriage in the towing tanks and on a customised mounting in the flume tanks. The flow velocity or carriage velocity is chosen and fixed for each set of tests; the turbine rotation speed is then varied to adjust the tip speed ratio. The rotational speed is measured and controlled for each measurement point, but is adjusted manually.\n"
+    ],
+    "oai_identifier": [
+        "1ebcca16-8156-5371-ba28-fe300be8df16"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        "Towing and circulating tanks tidal energy converter test results"
+    ],
+    "url": ""
+}

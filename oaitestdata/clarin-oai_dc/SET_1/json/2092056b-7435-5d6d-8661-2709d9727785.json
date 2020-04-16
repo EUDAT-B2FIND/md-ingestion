@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Rahtz, S.P.Q."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 186 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1223",
+    "MetadataAccess": [
+        "oai:ota:oucs:1223"
+    ],
+    "PublicationTimestamp": "1975-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1975"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hinton, S.E."
+    ],
+    "fulltext": "oai:ota:oucs:1223;2018-03-05T15:14:52Z;http://ota.ox.ac.uk/headers/1223.xml;That was then, this is now / S.E. Hinton;Hinton, S.E.;1975;text_and_corpus_linguistics;American fiction -- 20th century;eng;Oxford Text Archive, University of Oxford;Rahtz, S.P.Q.;(1 file : ca. 186 KB);Text;Novels;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2092056b-7435-5d6d-8661-2709d9727785",
+    "oai_identifier": [
+        "oai:ota:oucs:1223"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American fiction -- th century"
+        }
+    ],
+    "title": [
+        "That was then, this is now / S.E. Hinton"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1223.xml"
+}

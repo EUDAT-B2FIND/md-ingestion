@@ -1,0 +1,57 @@
+{
+    "Contributor": [
+        "Tropf, Herbert"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Czech",
+        "Hungarian",
+        "Polish",
+        "Russian",
+        "Slovak"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-599",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-599"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-599",
+    "PublicationTimestamp": "2000-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-599;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;SpeechDat-East databases;Tropf, Herbert;These databases serve as an important resource for the performance of voice driven teleservice systems in practical implementations;5 telephone databases recorded over the PSTN. Contains interesting phonetically rich material. All orthographically transcribed. Speaker information included for gender, age, accent. Including pronunciation lexicon.;2000;corpus;http://hdl.handle.net/11372/LRT-599;ces;hun;pol;rus;slk;downloadable_files_count: 0;http://www.fee.vutbr.cz/SPEECHDAT-E/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "24d5d24d-c718-5b22-a967-a25a964cca56",
+    "notes": [
+        "5 telephone databases recorded over the PSTN. Contains interesting phonetically rich material. All orthographically transcribed. Speaker information included for gender, age, accent. Including pronunciation lexicon."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-599"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [],
+    "title": [
+        "SpeechDat-East databases"
+    ],
+    "url": ""
+}

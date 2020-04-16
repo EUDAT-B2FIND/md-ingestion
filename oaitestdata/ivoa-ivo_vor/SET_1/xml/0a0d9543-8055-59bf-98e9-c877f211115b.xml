@@ -1,0 +1,85 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-LHISOSha</oai:identifier>
+    <oai:datestamp>2018-12-21T17:14:56Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0" xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0" xmlns:ssa="http://www.ivoa.net/xml/SSA/v1.0" xmlns:vg="http://www.ivoa.net/xml/VORegistry/v1.0" xmlns:sia="http://www.ivoa.net/xml/SIA/v1.0" xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0" xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.1" xmlns:tr="http://www.ivoa.net/xml/TAPRegExt/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2015-01-14T02:45:00Z" status="active" updated="2018-10-01T20:27:19Z" xsi:type="vs:CatalogService">
+      <validationLevel validatedBy="ivo://archive.stsci.edu/nvoregistry">2</validationLevel>
+      <title>Spitzer Wide-area InfraRed Extragalactic Survey Lockman Hole ISOCAM Shallow Field MIPS 24 micron Catalog</title>
+      <shortName>SWIRE-LHISOSha</shortName>
+      <identifier>ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-LHISOSha</identifier>
+      <curation>
+        <publisher ivo-id="ivo://irsa.ipac/IRSA">NASA/IPAC Infrared Science Archive</publisher>
+        <creator>
+          <name>SWIRE team</name>
+        </creator>
+        <date role="update">2006-03-06</date>
+        <contact>
+          <name>IRSA Support Team</name>
+          <address/>
+          <email>irsasupport@ipac.caltech.edu</email>
+          <telephone/>
+        </contact>
+      </curation>
+      <content>
+        <subject>extragalactic survey</subject>
+        <description>The Spitzer Wide-area InfraRed Extragalactic survey (SWIRE), the largest Spitzer Legacy program, is a wide-area, imaging survey to trace the evolution of dusty, star-forming galaxies, evolved stellar populations, and AGN as a function of environment, from redshifts z~3 to the current epoch. SWIRE surveys 6 high-latitude fields, totaling ~50 sq. deg. in all 7 Spitzer bands: 3.6, 4.5, 5.8, and 8 microns with IRAC and 24, 70, and 160 microns with MIPS (Lonsdale et al. 2003). The SWIRE Legacy Extragalactic Source Catalogs will eventually contain in excess of 2 million IR-selected galaxies, from those dominated by the light of stellar populations detected primarily by IRAC, to starbursts, ultra-luminous infrared galaxies and AGN detected also by MIPS.
+
+        The SWIRE Lockman Hole ISOCAM Deep Field Catalog presents MIPS 24 micron measurements of the sources detected at 14.3 micron in the Lockman Hole Shallow Survey by ISO. For more details on the Lockman Hole ISOCAM Shallow Survey, see Fadda et al. (2004).</description>
+        <referenceURL>https://irsa.ipac.caltech.edu/data/SPITZER/SWIRE/docs/swire_lh_isocam_shallow_colDescriptions.html</referenceURL>
+        <type>Catalog</type>
+        <contentLevel>Research</contentLevel>
+        <relationship>
+          <relationshipType>derived-from</relationshipType>
+          <relatedResource ivo-id="ivo://irsa.ipac/Spitzer/Images/SWIRE">The Spitzer Wide-area InfraRed Extragalactic Survey</relatedResource>
+        </relationship>
+        <relationship>
+          <relationshipType>served-by</relationshipType>
+          <relatedResource ivo-id="ivo://irsa.ipac/TAP">IRSA TAP service</relatedResource>
+        </relationship>
+      </content>
+      <capability standardID="ivo://ivoa.net/std/ConeSearch" xsi:type="cs:ConeSearch">
+        <validationLevel validatedBy="ivo://archive.stsci.edu/nvoregistry">2</validationLevel>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">https://irsa.ipac.caltech.edu/SCS?table=swire_lhisos&amp;</accessURL>
+        </interface>
+        <maxSR>180</maxSR>
+        <maxRecords>2147483647</maxRecords>
+        <verbosity>false</verbosity>
+        <testQuery>
+          <ra>162.84171</ra>
+          <dec>57.40399</dec>
+          <sr>0.0028</sr>
+        </testQuery>
+      </capability>
+      <capability standardID="ivo://ivoa.net/std/TAP#aux">
+        <validationLevel validatedBy="ivo://archive.stsci.edu/nvoregistry">2</validationLevel>
+        <description>To access this resource via TAP, issue ADQL queries on the table named swire_lhisos.</description>
+        <interface role="std" xsi:type="vs:ParamHTTP">
+          <accessURL use="base">https://irsa.ipac.caltech.edu/TAP</accessURL>
+        </interface>
+      </capability>
+      <capability>
+        <validationLevel validatedBy="ivo://archive.stsci.edu/nvoregistry">2</validationLevel>
+        <interface xsi:type="vr:WebBrowser">
+          <accessURL>https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-dd?catalog=swire_lhisos</accessURL>
+        </interface>
+      </capability>
+      <coverage>
+        <waveband>Infrared</waveband>
+      </coverage>
+      <tableset>
+        <schema>
+          <name>public</name>
+          <title>SPITZER</title>
+          <description>Spitzer Wide-area InfraRed Extragalactic Survey (SWIRE)</description>
+          <table>
+            <name>swire_lhisos</name>
+            <description>Spitzer Wide-area InfraRed Extragalactic Survey Lockman Hole ISOCAM Shallow Field MIPS 24 micron Catalog</description>
+          </table>
+        </schema>
+      </tableset>
+    </ri:Resource>
+  </oai:metadata>
+</oai:record>

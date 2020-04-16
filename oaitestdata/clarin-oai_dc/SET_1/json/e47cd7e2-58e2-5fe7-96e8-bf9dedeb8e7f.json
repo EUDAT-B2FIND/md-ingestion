@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163686",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163686"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CE9-A",
+    "PublicationTimestamp": "1721-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1721"
+    ],
+    "Publisher": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/163686",
+        "oai:jbc.bj.uj.edu.pl:publication:172065"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Kowalicki, Franciszek (1668-1730)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163686;2019-02-28T18:47:48Z;Kaznodzieia Odswi\u0119tny Abo Kazania Doroczne Na Dni Swi\u0119tych Bozych Uroczyste Krolowy Wszystkich Swi\u0119tych Posw\u0119cone. Roku Panskiego 1721. Od X. Franciszka Kowalickiego Soc: Jesu.;Kowalicki, Franciszek (1668-1730);starodruki 18\u00a0w.;Sulimirski, Piotr (16..-17..). [Adr. ded.];Drukarnia Jezuit\u00f3w;[1721];starodruk;application/xml;clarind-uds:poldilemma-163686;hdl:11858/00-246C-0000-0023-8CE9-A;Biblioteka Jagiello\u0144ska, BJ St. Dr. 586841 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/163686;oai:jbc.bj.uj.edu.pl:publication:172065;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e47cd7e2-58e2-5fe7-96e8-bf9dedeb8e7f",
+    "notes": [
+        "Sulimirski, Piotr (16..-17..). [Adr. ded.]"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163686"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Kaznodzieia Odswi\u0119tny Abo Kazania Doroczne Na Dni Swi\u0119tych Bozych Uroczyste Krolowy Wszystkich Swi\u0119tych Posw\u0119cone. Roku Panskiego 1721. Od X. Franciszka Kowalickiego Soc: Jesu."
+    ],
+    "url": ""
+}

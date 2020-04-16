@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/tei+xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1011",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1011"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1011",
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Berlin-Brandenburg Academy of Sciences and Humanities"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1011;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Deutsches W\u00f6rterbuch (1DWB, by Jacob and Wilhelm Grimm);retro-digitized version of the first edition of the Deutsches W\u00f6rterbuch by Jacob and Wilhelm Grimm, originally published from 1854 to 1960;2012;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1011;deu;application/tei+xml;downloadable_files_count: 0;Germany;Berlin-Brandenburg Academy of Sciences and Humanities;http://www.dwds.de/ressourcen/woerterbuecher/#part_24",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bc3f2396-d5af-5b7c-be5c-97ca7618178d",
+    "notes": [
+        "retro-digitized version of the first edition of the Deutsches W\u00f6rterbuch by Jacob and Wilhelm Grimm, originally published from 1854 to 1960"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1011"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Deutsches W\u00f6rterbuch (1DWB, by Jacob and Wilhelm Grimm)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:14560062</identifier>
+    <datestamp>2019-06-15T14:31:51Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele A1-C1 &#245;pikute korpus 2018</dc:title>
+      <dc:title xml:lang="en">Estonian Coursebook Corpus 2018</dc:title>
+      <dc:creator>Kallas, Jelena</dc:creator>
+      <dc:creator>Koppel, Kristina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-03-26</dc:date>
+      <dc:date>Updated: 2019-04-24</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-071E9L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Korpus sisaldab A1, A2, B1, B2 ja C1 keeleoskustasemega eesti keele &#245;ppijatele suunatud &#245;pikute tekstidest eraldatud t&#228;islauseid. Korpuses on m&#228;rgendatud tekstistruktuuri &#252;ksused lause &lt;sentence&gt; ja osalause &lt;clause&gt;. K&#245;ik korpuse laused on keeletaseme piirides unikaalsed.
+Korpuse aluseks on Eesti keele A1-C1 &#245;pikute korpus 2017, mis koosnes ca 200 000 s&#245;nest ja ca 24 000 lausest. Eesti keele A1-C1 &#245;pikute korpuse 2017 sisust ekstraheeritud t&#228;islausetest loodigi Eesti keele A1-C1 &#245;pikute korpus 2018, millega kaasnes k&#228;sitsi kontroll (sisse j&#228;eti semantiliselt terviklikud laused, kontekstisidusad ja valesti tuvastatud laused j&#228;eti v&#228;lja). 
+Korpuses on kaheksa &#245;pikut:
+Pesti, M., Ahi, H. (2015). E nagu Eesti: eesti keele &#245;pik algajatele. Tallinn: Kiri-Mari Kirjastus.
+Kitsnik, M., Kingisepp, L. (2002). Avatud uksed: eesti keele &#245;ppekomplekt kesk- ja k&#245;rgtasemele: &#245;pperaamat. Tallinn: TEA Kirjastus.
+Kitsnik, M. (2012). Eesti keele &#245;pik: B1, B2. Tallinn: M. Kitsnik.
+Pesti, M., Ahi, H. (2015). Eesti keele &#245;pik A1. Tallinn: Justiitsministeerium.
+Pesti, M., Ahi, H. (2012). Eesti keele &#245;pik A2. Tallinn: M. Pesti.
+Pesti, M., Ahi, H. (2015). Eesti keele &#245;pik B1. Tallinn: Justiitsministeerium.
+Sooneste, M. (2007). Eesti keele &#245;pik: vene &#245;ppekeelega g&#252;mnaasium: kesk- ja k&#245;rgtase. Tallinn: Varrak.
+Rammo, S., Teral, M., Klaas-Lang, B., Allik, M. (2012). Keel selgeks!: eesti keele &#245;pik t&#228;iskasvanutele. Tallinn: Avita.
+Seitse esimest &#245;pikut digitaliseeriti Eesti Rahvusraamatkogu digitaliseerimiskeskus. Sirje Rammo jt (2012) &#245;pikust on kasutatud k&#228;sikirja doc-faile. 
+Korpus on UTF-8 kodeeringus. Korpus on lemmatiseeritud, m&#228;rgendatud ja &#252;hestatud anal&#252;saatori EstNLTK abil.
+Korpus loodi Eesti Keele Instituudi ja Lexical Computing Ltd. koost&#246;&#246;s.
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

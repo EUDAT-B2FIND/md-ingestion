@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5295",
+    "MetadataAccess": [
+        "oai:ota:oucs:5295"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Congreve, William, 1670-1729."
+    ],
+    "fulltext": "oai:ota:oucs:5295;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5295.xml;A letter from Mr. Congreve to the Right Honourable the Lord Viscount Cobham;Congreve, William, 1670-1729.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "24fe3490-17ad-591e-baa0-bba9456b4767",
+    "oai_identifier": [
+        "oai:ota:oucs:5295"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A letter from Mr. Congreve to the Right Honourable the Lord Viscount Cobham"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5295.xml"
+}

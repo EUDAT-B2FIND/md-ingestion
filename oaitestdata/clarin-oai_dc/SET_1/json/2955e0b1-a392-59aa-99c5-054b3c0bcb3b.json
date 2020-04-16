@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Williams, Graham"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "58 files: c. 578 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2545",
+    "MetadataAccess": [
+        "oai:ota:oucs:2545"
+    ],
+    "PublicationTimestamp": "1575-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1575"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Correspondence"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Williams, Graham"
+    ],
+    "fulltext": "oai:ota:oucs:2545;2018-03-01T11:09:46Z;http://ota.ox.ac.uk/headers/2545.xml;The Letters of Joan and Maria Thynne, 1575-1611;Williams, Graham;1575-1611;text_and_corpus_linguistics;eng;This resource is comprised of 52 diplomatic XML transcriptions of familiar letters, transcribed directly from their manuscript sources at Longleat Library, Wiltshire. The letters were written by two early modern women, Joan and Maria Thynne, between 1575-1611. Many of these were written by the women themselves, however, there are also scribal examples from Joan (an aspect of meta-data recorded in the XML). All the letters are written to family members (mostly husbands) and provide a rich source of information to do with language, social history and the composition of everyday women's letters in late Elizabethan/early Jacobean England. ;Oxford Text Archive, University of Oxford;Williams, Graham;text/xml;58 files: c. 578 KB;Text;Correspondence;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2955e0b1-a392-59aa-99c5-054b3c0bcb3b",
+    "notes": [
+        "This resource is comprised of 52 diplomatic XML transcriptions of familiar letters, transcribed directly from their manuscript sources at Longleat Library, Wiltshire. The letters were written by two early modern women, Joan and Maria Thynne, between 1575-1611. Many of these were written by the women themselves, however, there are also scribal examples from Joan (an aspect of meta-data recorded in the XML). All the letters are written to family members (mostly husbands) and provide a rich source of information to do with language, social history and the composition of everyday women's letters in late Elizabethan/early Jacobean England. "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2545"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The Letters of Joan and Maria Thynne, 1575-1611"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2545.xml"
+}

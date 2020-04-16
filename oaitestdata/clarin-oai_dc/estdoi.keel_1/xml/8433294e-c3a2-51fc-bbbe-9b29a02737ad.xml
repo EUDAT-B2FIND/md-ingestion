@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757342</identifier>
+    <datestamp>2019-04-23T18:02:00Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti emotsionaalse k&#245;ne korpus</dc:title>
+      <dc:title xml:lang="en">Estonian Emotional Speech Corpus</dc:title>
+      <dc:creator>Pajupuu, Hille</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2012</dc:date>
+      <dc:date>Issued: 2012-06-12</dc:date>
+      <dc:date>Updated: 2017-02-15</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-0001AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Korpus sisaldab 1234 eestikeelset  viha-, r&#245;&#245;mu- ja kurbuse emotsiooniga lauset ning neutraalset lauset.
+        Naish&#228;&#228;l,  44.1 KHz, 16Bit, Mono;
+        wav, textgrid: h&#228;&#228;likud, s&#245;nad, laused.
+        Lausete heli ja teksti saab alla laadida ja salvestada. </dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The corpus contains 1,234 Estonian sentences that
+        express anger, joy and sadness, or are neutral.
+        Female voice,  44.1 KHz, 16Bit, Mono;
+        wav, textgrid: phonemes, words, sentences.
+        The audio-recordings and text of sentences can be downloaded and saved.
+      </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

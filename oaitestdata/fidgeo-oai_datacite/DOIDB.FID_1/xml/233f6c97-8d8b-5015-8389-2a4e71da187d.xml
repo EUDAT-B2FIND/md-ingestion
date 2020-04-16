@@ -1,0 +1,120 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6319</identifier>
+    <datestamp>2017-10-07T16:47:47Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2017.004</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Starke, Jessica</default:creatorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2619-0880</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Ehlers, Todd</default:creatorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-9436-0303</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Schaller, Mirjam</default:creatorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-4638-0873</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="en"> Supplement to: Plate tectonic and climatic controls on the spatial distribution of denudation rates in northern Chile (18&#176;S to 23&#176;S) determined from cosmogenic nuclides</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2017</default:publicationYear>
+          <default:subjects>
+            <default:subject>Cosmogenic nuclide- derived denudation rates</default:subject>
+            <default:subject>10Be</default:subject>
+            <default:subject>factor analysis</default:subject>
+            <default:subject>Northern Chile</default:subject>
+            <default:subject>tectonic and climate controls</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Starke, Jessica</default:contributorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2619-0880</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Researcher">
+              <default:contributorName>Starke, Jessica</default:contributorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2619-0880</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Starke, Jessica</default:contributorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2619-0880</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Researcher">
+              <default:contributorName>Starke, Jessica</default:contributorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2619-0880</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectLeader">
+              <default:contributorName>Ehlers, Todd</default:contributorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-9436-0303</default:nameIdentifier>
+              <default:affiliation>Eberhard Karls University Tuebingen; Germany</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Created">2016-06-01</default:date>
+            <default:date dateType="Available">/2</default:date>
+          </default:dates>
+          <default:language>en</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1002/2016JF004153</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.quageo.2013.02.002</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.nimb.2009.09.012</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/BF02289233</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.nimb.2009.09.020</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/S0012-821X(02)00951-2</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/BF02291170</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/BF02291170</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1130/2006.2398(04)</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>243954 Bytes</default:size>
+            <default:size>4 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</default:format>
+            <default:format>application/pdf</default:format>
+            <default:format>application/x-zip-compressed</default:format>
+            <default:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">In the arid and largely abiotic region of northern Chile the environmental conditions are favorable for measurement of the tectonic and climate influence on catchment denudation rates. Previous studies of denudation rates from cosmogenic 10Be and 26Al concentrations are limited to single drainages. In this study, we present 34 new 10Be and eight 26Al derived catchment-averaged denudation rates from 33 catchments to analyze variations of denudation rates between 18&#176;S to 23&#176;S in the Coastal and Western Cordilleras of northern Chile. Cosmogenic nuclide-derived denudation rates range from 0.4&#177;0.5 to 20.6&#177;1.5 m/Myr in the Coastal Cordillera and from 1.4&#177;0.7 to 168.0&#177;19.8 m/Myr in the Western Cordillera. The controls on the denudation rates are evaluated using a statistical factor analysis of ten selected catchment parameters. Denudation rates indicate a strong linear relationship with channel steepness indices but insignificant correlations and covariation with mean annual precipitation rates, drainage area, stream order, mean elevation, mean local relief, mean basin slope and analyzed grain size. Thus, denudation rates are better correlated with tectonic controls at catchment scale than orogen-scale plate tectonics in the Western Cordillera and Coastal Cordillera. <default:br/>
+         <default:br/>
+These data are supplementary material to Starke et al. (2017). For further information about methods used and parameters provided, please also see the README.<default:br/>
+         <default:br/>(1)	as Microsoft Excel file: Starke-et-al-2017-JGR-Supplementary-Tables.xlsx
+(2)	as comma separated text files (.csv) in a zip folder: Starke-et-al-2017-JGR-Supplementary-Tables.zip)
+(3)	as printable pdf: Starke-et-al-2017-JGR-Supplementary-Tables.pdf.
+</default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationBox>-23.885837699861995 -70.48828125 -18.35452552912664 -67.9833984375</default:geoLocationBox>
+            </default:geoLocation>
+          </default:geoLocations>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

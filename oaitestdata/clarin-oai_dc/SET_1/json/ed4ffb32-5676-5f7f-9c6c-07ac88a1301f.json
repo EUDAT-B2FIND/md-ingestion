@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Arts, Institute of Theoretical and Computational Linguistics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2517",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2517"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2517",
+    "PublicationTimestamp": "2017-11-15T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Arts, Institute of Theoretical and Computational Linguistics"
+    ],
+    "RelatedIdentifier": [
+        "http://ceur-ws.org/Vol-1885/181.pdf"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jel\u00ednek, Tom\u00e1\u0161",
+        "Hn\u00e1tkov\u00e1, Milena",
+        "Skoumalov\u00e1, Hana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2517;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;FicTree 1.0;Jel\u00ednek, Tom\u00e1\u0161;Hn\u00e1tkov\u00e1, Milena;Skoumalov\u00e1, Hana;treebank;FicTree is a dependency treebank of Czech fiction manually annotated in the format of the analytical layer of the Prague Dependency Trebank. The treebank consists of 12,760 sentences (166,432 tokens). The texts come from eight literary works published in the Czech Republic between 1991 and 2007. The syntactic annotation of the treebank was first performed by two distinct parsers (MSTParser and MaltParser) trained on the PDT training data, then manually corrected. Any differences between the two versions were resolved manually (by another annotator).\r\n\r\nThe corpus is provided in a vertical format, where sentence boundaries are marked with a blank line. Every word form is written on a separate line, followed by five tab-separated attributes: lemma, tag, ID (word index in the sentence), head and deprel (analytical function, afun in the PDT formalism). The texts are shuffled in random chunks of maximum 100 words (respecting sentence boundaries). Each chunk is provided as a separate file, with the suggested division into train, dev and test sets written as file prefix.;2017-11-15;corpus;http://hdl.handle.net/11234/1-2517;ces;http://ceur-ws.org/Vol-1885/181.pdf;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Arts, Institute of Theoretical and Computational Linguistics;https://wiki.korpus.cz/doku.php/cnk:fictree",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ed4ffb32-5676-5f7f-9c6c-07ac88a1301f",
+    "notes": [
+        "FicTree is a dependency treebank of Czech fiction manually annotated in the format of the analytical layer of the Prague Dependency Trebank. The treebank consists of 12,760 sentences (166,432 tokens). The texts come from eight literary works published in the Czech Republic between 1991 and 2007. The syntactic annotation of the treebank was first performed by two distinct parsers (MSTParser and MaltParser) trained on the PDT training data, then manually corrected. Any differences between the two versions were resolved manually (by another annotator).\r\n\r\nThe corpus is provided in a vertical format, where sentence boundaries are marked with a blank line. Every word form is written on a separate line, followed by five tab-separated attributes: lemma, tag, ID (word index in the sentence), head and deprel (analytical function, afun in the PDT formalism). The texts are shuffled in random chunks of maximum 100 words (respecting sentence boundaries). Each chunk is provided as a separate file, with the suggested division into train, dev and test sets written as file prefix."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2517"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "treebank"
+        }
+    ],
+    "title": [
+        "FicTree 1.0"
+    ],
+    "url": ""
+}

@@ -1,0 +1,69 @@
+{
+    "Contributor": [
+        "CINES"
+    ],
+    "DiscHierarchy": [
+        "3.1.2",
+        "Live Sciences",
+        "Plant Sciences "
+    ],
+    "Discipline": "Plant_Sciences",
+    "Format": [
+        "image/jpeg"
+    ],
+    "MetaDataAccess": "https://opendata.cines.fr/herbadrop-api/rest/data/search/dataset/0d9e8478-3d92-5a5f-92cb-eb678e8e48dd",
+    "MetaDataAcess": [
+        "P03945291"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "PublicationTimestamp": "2019-06-18T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "MNHN"
+    ],
+    "ResourceType": [
+        "StillImage|PRESERVED_SPECIMEN"
+    ],
+    "Rights": [
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "TempCoverageBegin": 62089588799,
+    "TempCoverageEnd": 62089588799,
+    "TemporalCoverage": " period : ( 1968-07-17T11:59:59Z - 1968-07-17T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1968-07-17T11:59:59Z",
+    "TemporalCoverage:EndDate": "1968-07-17T11:59:59Z",
+    "author": [
+        "Raynal, J."
+    ],
+    "group": "herbadrop",
+    "groups": [
+        {
+            "name": "herbadrop"
+        }
+    ],
+    "name": "0d9e8478-3d92-5a5f-92cb-eb678e8e48dd",
+    "namespaces": [
+        ":"
+    ],
+    "notes": [
+        "Digitized_herbarium_sheet",
+        "unavailable"
+    ],
+    "oai_identifier": [
+        "0d9e8478-3d92-5a5f-92cb-eb678e8e48dd"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Gentianaceae"
+        }
+    ],
+    "title": [
+        "Gentiana \u00d7marcailhouana Rouy"
+    ],
+    "url": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03945291"
+}

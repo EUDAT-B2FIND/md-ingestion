@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-06334L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:10303931",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:10303931"
+    ],
+    "PublicationTimestamp": "2019-01-08T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Mihkla, Meelis"
+    ],
+    "fulltext": "oai:oai.datacite.org:10303931;2019-04-17T17:26:41Z;ESTDOI;ESTDOI.KEEL;Tekstide helindaja ja heliraamatute genereerija;Audio Interface for Texts and Ebook Generator;Mihkla, Meelis;Center of Estonian Language Resources;2017;Issued: 2017-01-31;Updated: 2019-01-08;doi:10.15155/3-00-0000-0000-0000-06334L;Abstract;Teisendab txt- ja html-formaadis tekstid helifailideks ja lisab ePub3 formaadis e-raamatule s\u00fcnteesk\u00f5nes kuulatavad audiofailid. Helindaja ja genereerija Vox Populi koosneb kahest komponendist \u2013 tekstide helindajast ja h\u00e4\u00e4lduss\u00f5nastikust. Nende kahe koost\u00f6\u00f6s ja Eest Keele Instituudi k\u00f5nes\u00fcnteesi kaasates saab kasutaja saadetud tekstifailist s\u00fcnteesh\u00e4\u00e4lega audiofail.\n\n\n;Abstract;Converts texts in txt or html format to audio files and provides ebooks in ePub3 format with audio files to be listened to in synthetic speech. The audio interface and ebook generator Vox Populi consists of two components \u2013 an audio interface for texts and a pronunciation glossary. A joint application of those two and the system of speech synthesis of the Institute of the Estonian Language will convert a user\u00b4s text file into a synthetic audio file.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0425c334-e5d5-5d80-9260-d96b669ef855",
+    "notes": [
+        "Abstract",
+        "Teisendab txt- ja html-formaadis tekstid helifailideks ja lisab ePub3 formaadis e-raamatule s\u00fcnteesk\u00f5nes kuulatavad audiofailid. Helindaja ja genereerija Vox Populi koosneb kahest komponendist \u2013 tekstide helindajast ja h\u00e4\u00e4lduss\u00f5nastikust. Nende kahe koost\u00f6\u00f6s ja Eest Keele Instituudi k\u00f5nes\u00fcnteesi kaasates saab kasutaja saadetud tekstifailist s\u00fcnteesh\u00e4\u00e4lega audiofail.\n\n\n",
+        "Abstract",
+        "Converts texts in txt or html format to audio files and provides ebooks in ePub3 format with audio files to be listened to in synthetic speech. The audio interface and ebook generator Vox Populi consists of two components \u2013 an audio interface for texts and a pronunciation glossary. A joint application of those two and the system of speech synthesis of the Institute of the Estonian Language will convert a user\u00b4s text file into a synthetic audio file."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:10303931"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Tekstide helindaja ja heliraamatute genereerija",
+        "Audio Interface for Texts and Ebook Generator"
+    ],
+    "url": ""
+}

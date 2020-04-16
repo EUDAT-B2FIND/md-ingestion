@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Academy of Sciences"
+    ],
+    "Contributor": [
+        "Szab\u00f3, P\u00e9ter Tam\u00e1s"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/xml"
+    ],
+    "Language": [
+        "Hungarian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1017",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1017"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1017",
+    "PublicationTimestamp": "2005-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2005"
+    ],
+    "Publisher": [
+        "Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Hungary"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1017;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Hungarian Historical Corpus;Szab\u00f3, P\u00e9ter Tam\u00e1s;Containing 27 million running words the Hungarian Historical Corpus provides a valuable basis for research on the history of words of Hungarian between the second half of the 18th century and 2000.;2005;corpus;http://hdl.handle.net/11372/LRT-1017;hun;application/xml;downloadable_files_count: 0;Hungary;Academy of Sciences;http://www.nytud.hu/hhc/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "47a9b194-1687-55c2-8957-493a3d9c8f7b",
+    "notes": [
+        "Containing 27 million running words the Hungarian Historical Corpus provides a valuable basis for research on the history of words of Hungarian between the second half of the 18th century and 2000."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1017"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Hungarian Historical Corpus"
+    ],
+    "url": ""
+}

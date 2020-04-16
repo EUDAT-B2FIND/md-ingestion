@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6363",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6363"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6363;2018-10-25T09:08:06Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.001;Corti, Giacomo;Giacomo;Corti;Consiglio Nazionale delle Ricerche, Istituto di Geoscienze e Georisorse, Florence, Italy;Sordi, Riccardo;Riccardo;Sordi;Universit\u00e0 degli Studi di Firenze, Dipartimento di Scienze della Terra, Florence, Italy;Cucci, Federica;Federica;Cucci;Universit\u00e0 degli Studi di Firenze, Dipartimento di Scienze della Terra, Florence, Italy;Centrifuge models investigating the influence of transverse pre-existing weaknesses on continental rifting;GFZ Data Services;2018;analogue modelling;continental rifting;pre-existing structures;normal faulting;analogue models of geologic processes;multi-scale laboratories;EPOS;analogue modelling results;Tectonics Modelling Laboratory (IGG-CNR, Italy);IGG-CNR, Florence, Italy;eng;Dataset;10.1130/GES00863.1;10.1016/j.tecto.2011.06.010;10.3390/ma10060635;10.1016/j.tecto.2018.02.011;1511988 Bytes;1 Files;application/x-zip-compressed;CC BY 4.0;We present the results of centrifuge experiments investigating the role of preexisting crustal discontinuity on continental rifting. Specifically, we reproduce inherited weaknesses, orthogonal to the rift trend and parallel to the extension direction, and analyze their influence on the evolution and architecture of extensional deformation in the inner part and at the margins of continental rift valleys. Four different models, with variable width of the pre-existing weakness are illustrated.",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "7551b9d4-a063-5255-bf92-56d4f8b0c47b",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6363"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Meertens Institute KNAW The Netherlands"
+    ],
+    "Contributor": [
+        "Bloothooft, Gerrit"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-738",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-738"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-738",
+    "PublicationTimestamp": "2010-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "Meertens Institute KNAW The Netherlands"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Meertens Institute KNAW The Netherlands"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-738;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Nederlandse Familienamen Databank (Dutch Database of Family Names);Bloothooft, Gerrit;Enriched database of  (mainly) Dutch family names, based on 1947 census (in progress; currently 90.000 entries from 140.000 max);2010;toolService;http://hdl.handle.net/11372/LRT-738;nld;Meertens Institute KNAW The Netherlands;application/octet-stream;downloadable_files_count: 0;Meertens Institute KNAW The Netherlands;http://www.meertens.knaw.nl/nfd/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f3cba932-fc24-5030-b7c4-86bbf1f16b8f",
+    "notes": [
+        "Enriched database of  (mainly) Dutch family names, based on 1947 census (in progress; currently 90.000 entries from 140.000 max)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-738"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Nederlandse Familienamen Databank (Dutch Database of Family Names)"
+    ],
+    "url": ""
+}

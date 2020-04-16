@@ -1,0 +1,146 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.56309</identifier>
+    <datestamp>2018-04-03T09:01:56Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.56309</identifier>
+      <creators>
+        <creator>
+          <creatorName>Wiltshire, Karen Helen</creatorName>
+          <nameIdentifier schemeURI="http://orcid.org" nameIdentifierScheme="ORCID">0000-0002-7148-0529</nameIdentifier>
+        </creator>
+      </creators>
+      <titles>
+        <title>Abundance of bacillariophyceae at time series station Helgoland Roads, North Sea, in 1962</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2007</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">DATE/TIME</subject>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Asterionellopsis glacialis, fractionated</subject>
+        <subject subjectScheme="Parameter">Asteroplanus karianus</subject>
+        <subject subjectScheme="Parameter">Bacillaria paxillifera, fractionated</subject>
+        <subject subjectScheme="Parameter">Cylindrotheca closterium, fractionated</subject>
+        <subject subjectScheme="Parameter">Fragilaria sp.</subject>
+        <subject subjectScheme="Parameter">Gyrosigma sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Gyrosigma sp.</subject>
+        <subject subjectScheme="Parameter">Meuniera membranacea</subject>
+        <subject subjectScheme="Parameter">Navicula sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Navicula sp.</subject>
+        <subject subjectScheme="Parameter">Nitzschia longissima</subject>
+        <subject subjectScheme="Parameter">Pleurosigma sp.</subject>
+        <subject subjectScheme="Parameter">Pseudo-nitzschia delicatissima</subject>
+        <subject subjectScheme="Parameter">Pseudo-nitzschia seriata, fractionated</subject>
+        <subject subjectScheme="Parameter">Pseudo-nitzschia seriata</subject>
+        <subject subjectScheme="Parameter">Rhaphoneis amphiceros</subject>
+        <subject subjectScheme="Parameter">Thalassionema nitzschioides</subject>
+        <subject subjectScheme="Parameter">Bacillariales indeterminata, fractionated</subject>
+        <subject subjectScheme="Parameter">Bacillariales indeterminata</subject>
+        <subject subjectScheme="Parameter">Actinoptychus senarius</subject>
+        <subject subjectScheme="Parameter">Bacteriastrum hyalinum, fractionated</subject>
+        <subject subjectScheme="Parameter">Bellerochea malleus, fractionated</subject>
+        <subject subjectScheme="Parameter">Brockmanniella brockmannii</subject>
+        <subject subjectScheme="Parameter">Cerataulina pelagica, fractionated</subject>
+        <subject subjectScheme="Parameter">Cerataulina pelagica</subject>
+        <subject subjectScheme="Parameter">Chaetoceros debilis</subject>
+        <subject subjectScheme="Parameter">Chaetoceros decipiens, fractionated</subject>
+        <subject subjectScheme="Parameter">Chaetoceros decipiens</subject>
+        <subject subjectScheme="Parameter">Chaetoceros densus</subject>
+        <subject subjectScheme="Parameter">Chaetoceros didymus</subject>
+        <subject subjectScheme="Parameter">Chaetoceros socialis</subject>
+        <subject subjectScheme="Parameter">Chaetoceros sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Chaetoceros sp.</subject>
+        <subject subjectScheme="Parameter">Coscinodiscus concinnus, fractionated</subject>
+        <subject subjectScheme="Parameter">Coscinodiscus concinnus</subject>
+        <subject subjectScheme="Parameter">Coscinodiscus granii, fractionated</subject>
+        <subject subjectScheme="Parameter">Coscinodiscus granii</subject>
+        <subject subjectScheme="Parameter">Coscinodiscus radiatus</subject>
+        <subject subjectScheme="Parameter">Coscinodiscus sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Coscinodiscus sp.</subject>
+        <subject subjectScheme="Parameter">Dactyliosolen fragilissimus</subject>
+        <subject subjectScheme="Parameter">Detonula confervacea</subject>
+        <subject subjectScheme="Parameter">Detonula pumila, fractionated</subject>
+        <subject subjectScheme="Parameter">Ditylum brightwellii, fractionated</subject>
+        <subject subjectScheme="Parameter">Ditylum brightwellii</subject>
+        <subject subjectScheme="Parameter">Eucampia zodiacus</subject>
+        <subject subjectScheme="Parameter">Guinardia delicatula</subject>
+        <subject subjectScheme="Parameter">Guinardia flaccida, fractionated</subject>
+        <subject subjectScheme="Parameter">Guinardia flaccida</subject>
+        <subject subjectScheme="Parameter">Guinardia striata, fractionated</subject>
+        <subject subjectScheme="Parameter">Guinardia striata</subject>
+        <subject subjectScheme="Parameter">Helicotheca tamesis, fractionated</subject>
+        <subject subjectScheme="Parameter">Lauderia annulata</subject>
+        <subject subjectScheme="Parameter">Leptocylindrus danicus</subject>
+        <subject subjectScheme="Parameter">Leptocylindrus minimus, fractionated</subject>
+        <subject subjectScheme="Parameter">Lithodesmium undulatum, fractionated</subject>
+        <subject subjectScheme="Parameter">Melosira sp.</subject>
+        <subject subjectScheme="Parameter">Odontella aurita, fractionated</subject>
+        <subject subjectScheme="Parameter">Odontella aurita</subject>
+        <subject subjectScheme="Parameter">Odontella mobiliensis</subject>
+        <subject subjectScheme="Parameter">Odontella regia, fractionated</subject>
+        <subject subjectScheme="Parameter">Odontella regia</subject>
+        <subject subjectScheme="Parameter">Odontella rhombus, fractionated</subject>
+        <subject subjectScheme="Parameter">Odontella sinensis, fractionated</subject>
+        <subject subjectScheme="Parameter">Odontella sinensis</subject>
+        <subject subjectScheme="Parameter">Paralia sulcata</subject>
+        <subject subjectScheme="Parameter">Podosira stelliger</subject>
+        <subject subjectScheme="Parameter">Porosira glacialis</subject>
+        <subject subjectScheme="Parameter">Proboscia alata</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia hebetata</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia imbricata, fractionated</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia imbricata</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia pungens</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia robusta</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia setigera, fractionated</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia setigera</subject>
+        <subject subjectScheme="Parameter">Rhizosolenia styliformis</subject>
+        <subject subjectScheme="Parameter">Skeletonema costatum, fractionated</subject>
+        <subject subjectScheme="Parameter">Skeletonema costatum</subject>
+        <subject subjectScheme="Parameter">Stephanopyxis turris, fractionated</subject>
+        <subject subjectScheme="Parameter">Thalassiosira minima</subject>
+        <subject subjectScheme="Parameter">Thalassiosira nordenskioeldii</subject>
+        <subject subjectScheme="Parameter">Thalassiosira punctigera</subject>
+        <subject subjectScheme="Parameter">Thalassiosira rotula</subject>
+        <subject subjectScheme="Parameter">Thalassiosira sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Thalassiosira sp.</subject>
+        <subject subjectScheme="Parameter">Triceratium favus</subject>
+        <subject subjectScheme="Parameter">Trigonium alternans</subject>
+        <subject subjectScheme="Parameter">Biddulphiales indeterminata, fractionated</subject>
+        <subject subjectScheme="Parameter">Biddulphiales indeterminata</subject>
+        <subject subjectScheme="Method">Quantitative phytoplankton method (Uterm&#246;hl, 1958)</subject>
+        <subject subjectScheme="Campaign">HelgolandRoadsTimeseries</subject>
+        <subject subjectScheme="Basis">Meeresstation Helgoland</subject>
+        <subject subjectScheme="Project">Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland) (BAH)</subject>
+        <subject subjectScheme="Project">Long-term Ecological Research at AWI (LTER)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Collected">1962-01-15T10:30:00/1962-12-28T09:40:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="Handle" relationType="IsDocumentedBy">10013/epic.28563.d001</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>15500 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPoint>54.18833 7.9</geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

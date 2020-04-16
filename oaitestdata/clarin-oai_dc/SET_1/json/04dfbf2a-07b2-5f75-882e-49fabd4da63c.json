@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "A"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1563",
+    "MetadataAccess": [
+        "oai:ota:oucs:1563"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "While this resource was freely available for non-commercial use provided that this header is included in its entirety with any copy distributed, it has been removed from our catalogue for one reason or another.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Faulkner, William"
+    ],
+    "fulltext": "oai:ota:oucs:1563;2018-04-16T15:30:51Z;http://ota.ox.ac.uk/headers/1563.xml;Sanctuary;Faulkner, William;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;A;Text;While this resource was freely available for non-commercial use provided that this header is included in its entirety with any copy distributed, it has been removed from our catalogue for one reason or another.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "04dfbf2a-07b2-5f75-882e-49fabd4da63c",
+    "oai_identifier": [
+        "oai:ota:oucs:1563"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Sanctuary"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1563.xml"
+}

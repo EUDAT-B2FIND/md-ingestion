@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "University of Zagreb, Faculty of Humanities and Social Sciences"
+    ],
+    "Contributor": [
+        "Tadi\u0107, Marko"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-233",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-233"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-233",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Zagreb, Faculty of Humanities and Social Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Croatia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-233;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Croatian National Corpus;Tadi\u0107, Marko;written; reference corpus; general; synchornic; monolingual; 101,215,912 tokens;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-233;hrv;downloadable_files_count: 0;Croatia;University of Zagreb, Faculty of Humanities and Social Sciences;http://hnk.ffzg.hr",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8635535b-1f8e-599f-97c7-dcca08903d48",
+    "notes": [
+        "written; reference corpus; general; synchornic; monolingual; 101,215,912 tokens"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-233"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Croatian National Corpus"
+    ],
+    "url": ""
+}

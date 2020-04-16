@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Royster, Paul"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 1.5 MB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1654",
+    "MetadataAccess": [
+        "oai:ota:oucs:1654"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Essays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Whitman, Walt, 1819-1892"
+    ],
+    "fulltext": "oai:ota:oucs:1654;2018-02-16T10:42:06Z;http://ota.ox.ac.uk/headers/1654.xml;Complete prose works : [1892] / Walt Whitman;[Prose];Whitman, Walt, 1819-1892;text_and_corpus_linguistics;American literature -- 19th century;Oxford Text Archive, University of Oxford;Royster, Paul;text/sgml;(1 file : ca. 1.5 MB);Text;Essays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d30c3968-00c1-5f55-a722-ef494ee9ed88",
+    "oai_identifier": [
+        "oai:ota:oucs:1654"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American literature -- th century"
+        }
+    ],
+    "title": [
+        "Complete prose works : [1892] / Walt Whitman",
+        "[Prose]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1654.xml"
+}

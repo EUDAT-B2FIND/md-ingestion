@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3897",
+    "MetadataAccess": [
+        "oai:ota:oucs:3897"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Murphy, Arthur, 1727-1805."
+    ],
+    "fulltext": "oai:ota:oucs:3897;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3897.xml;The citizen. A farce: As it is performed at the Theatre Royal in Covent Garden. By Arthur Murphy, Esq;.;Murphy, Arthur, 1727-1805.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7369954c-b1e7-54e6-ae6a-39db952aa992",
+    "oai_identifier": [
+        "oai:ota:oucs:3897"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The citizen. A farce: As it is performed at the Theatre Royal in Covent Garden. By Arthur Murphy, Esq;."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3897.xml"
+}

@@ -1,0 +1,54 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-0011CL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:7802324",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:7802324"
+    ],
+    "PublicationTimestamp": "2016-03-10T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Vare, Kadri",
+        "Orav, Heili"
+    ],
+    "fulltext": "oai:oai.datacite.org:7802324;2019-02-14T11:32:07Z;ESTDOI;ESTDOI.KEEL;Eesti Wordnet (kb73-VIIMANE);Estonian Wordnet (kb73-LAST);Orav, Heili;Vare, Kadri;Center of Estonian Language Resources;2014;Issued: 2014-03-21;Updated: 2016-03-10;doi:10.15155/1-00-0000-0000-0000-0011CL;Abstract; Eesti Wordnetis (versioon 73) on praeguse seisuga (m\u00e4rts 2016) 77 878 m\u00f5istet, milles s\u00f5nu 106 202, semantilisi suhteid 248 996 ja seoseid Princetoni Wordnetiga (1.5) 112 283.  K\u00f5ik m\u00f5isted on varustatud v\u00e4hemalt \u00fche keelesisese suhtega ja v\u00e4hemalt \u00fche ILI-suhtega.;Abstract;The atom of a wordnet-type thesaurus is a synonym set (also called a synset), which is a set containing all the synonymous words or multi-word units that express the same concept. All words in a synset belong into the same part of speech.\n\nTHIS IS THE NEWEST VERSION",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "35c6d313-3a6b-5601-a98f-5c00c551abbc",
+    "notes": [
+        "Abstract",
+        " Eesti Wordnetis (versioon 73) on praeguse seisuga (m\u00e4rts 2016) 77 878 m\u00f5istet, milles s\u00f5nu 106 202, semantilisi suhteid 248 996 ja seoseid Princetoni Wordnetiga (1.5) 112 283.  K\u00f5ik m\u00f5isted on varustatud v\u00e4hemalt \u00fche keelesisese suhtega ja v\u00e4hemalt \u00fche ILI-suhtega.",
+        "Abstract",
+        "The atom of a wordnet-type thesaurus is a synonym set (also called a synset), which is a set containing all the synonymous words or multi-word units that express the same concept. All words in a synset belong into the same part of speech.\n\nTHIS IS THE NEWEST VERSION"
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:7802324"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti Wordnet (kb73-VIIMANE)",
+        "Estonian Wordnet (kb73-LAST)"
+    ],
+    "url": ""
+}

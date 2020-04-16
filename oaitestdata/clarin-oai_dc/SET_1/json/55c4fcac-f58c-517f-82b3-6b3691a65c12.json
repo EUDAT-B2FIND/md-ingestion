@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3214",
+    "MetadataAccess": [
+        "oai:ota:oucs:3214"
+    ],
+    "PublicationTimestamp": "1889-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1889"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Twain, Mark, 1835-1910"
+    ],
+    "fulltext": "oai:ota:oucs:3214;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3214.xml;A Connecticut yankee in King Arthur's court;Twain, Mark, 1835-1910;not after: 1889;text_and_corpus_linguistics;Fiction -- United States -- 19th century;Fantasy literature -- United States -- 19th century;Novels -- United States -- 19th century;Satires -- United States -- 19th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "55c4fcac-f58c-517f-82b3-6b3691a65c12",
+    "oai_identifier": [
+        "oai:ota:oucs:3214"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- United States -- th century"
+        },
+        {
+            "name": "Fantasy literature -- United States -- th century"
+        },
+        {
+            "name": "Novels -- United States -- th century"
+        },
+        {
+            "name": "Satires -- United States -- th century"
+        }
+    ],
+    "title": [
+        "A Connecticut yankee in King Arthur's court"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3214.xml"
+}

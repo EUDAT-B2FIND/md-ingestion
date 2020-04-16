@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Budapest University of Technology and Economics Media Research (BME MOKK)"
+    ],
+    "Contributor": [
+        "Halacsy, Peter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Hungarian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-467",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-467"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-467",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Budapest University of Technology and Economics Media Research (BME MOKK)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Hungary"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-467;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Morphdb.hu;Halacsy, Peter;100,000 lemmas;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-467;hun;downloadable_files_count: 0;Hungary;Budapest University of Technology and Economics Media Research (BME MOKK);http://mokk.bme.hu/resources/morphdb.hu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f5c32124-ae88-52d8-82d9-8acec7e15c59",
+    "notes": [
+        "100,000 lemmas"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-467"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Morphdb.hu"
+    ],
+    "url": ""
+}

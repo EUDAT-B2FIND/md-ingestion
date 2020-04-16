@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757520</identifier>
+    <datestamp>2019-05-08T23:00:53Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">The database of Estonian multi-word expressions</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2011</dc:date>
+      <dc:date>Issued: 2011-11-18</dc:date>
+      <dc:date>Updated: 2015-05-22</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00083L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">This database contains a subtype of multi-word expressions, namely those consisting of a verb and a particle or a verb and its complements.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

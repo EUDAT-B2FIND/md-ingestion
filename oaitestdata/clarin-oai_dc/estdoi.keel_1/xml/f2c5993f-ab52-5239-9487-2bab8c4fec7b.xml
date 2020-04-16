@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9822137</identifier>
+    <datestamp>2019-05-27T13:00:49Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">NER-tagger corpus</dc:title>
+      <dc:creator>Tkachenko, Alexander</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-11-29</dc:date>
+      <dc:date>Updated: 2016-11-30</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00123L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">NER-tagger corpus represents a collection of sentences with manually labelled named entities. The labelling is partial -- only a selected word from each sentence is labelled. As a result, the labelled entity may be only a part of a named entity and the sentence may potentially contain other named entities.  We distinguish the following types on named entities: PER: person, LOC: location, ORG: organization, FAC: facility, PRD: product, O: other. For each labelled word the label is determined by the largest named entity containing it. For instance, Eesti in the following sentence: "Eesti &#220;hispanga Tartu kontor oli inimesi t&#228;is" is facility although "Eesti" is location and "Eesti &#220;hispank" is and organisation.     
+
+The corpus has been created using nertagger web tool: https://github.com/estnltk/ner-tagger. Two human annotators have been involved in the annotation process. 
+
+The data file contains one sentence per line with the following columns:
+name           named entity token
+sentence      sentence
+start            entity start offset in the sentence
+end             entity end position in the sentence
+label            assigned label
+annotator     human annotator id
+time            number of milliseconds it took annotator to tag a word.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

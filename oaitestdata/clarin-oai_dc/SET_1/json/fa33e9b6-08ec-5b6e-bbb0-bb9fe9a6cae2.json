@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=8c1eb5e05e5e11e2a2aa782bcb0741354078b3f879454f1995c6c93c8897b00f",
+    "MetadataAccess": [
+        "8c1eb5e05e5e11e2a2aa782bcb0741354078b3f879454f1995c6c93c8897b00f"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "8c1eb5e05e5e11e2a2aa782bcb0741354078b3f879454f1995c6c93c8897b00f;2018-11-15T16:40:01Z;toolService;toolService:tool;MLSS Chunker;The MLSS (Maltese Language Software Services) Chunker is an online tool which looks for sequences of part-of-speech tags in a tagged text, using one or more patterns that capture the typical members of, say, a noun phrase, and returning a list of chunks from the text that match the searched patterns. \n\nThe download for this resource only contains the narrative description in a Word file. The tool itself is delivered as a GUI, which features:\n- a panel of buttons representing the POS tags, showing the corresponding description on mouse over.\n- a text box which allows the user to enter the pattern of the chunks, and\n- a text area where the user inputs the text\n\nThe user types or pastes text into the large text box on the bottom of the page and then enters a search pattern into the smaller text box above:\n\nThe user can specify patterns of:\n- POS; these being preceded by '_'. Example, _DDC _NN\n- words; string containing no '_'. Example, 'il- ?' (where the '?' represents anything which follows that word)\n- tagged words; being the most specific. Example, 'il-_DDC ?'\n\nInstead of typing in the search patterns, the user can also click on the buttons in the panel on the left-hand side of the page.\n\nAfterwards, the user clicks on \u00e2\u0080\u009cProcess\u00e2\u0080\u009d to start the chunking process. The user is then directed to a page \u00e2\u0080\u009cChunker Result\u00e2\u0080\u009d, which shows the tagged and extracted chunks in a text box. \n\nThe input data format is text string typed or copied into an input text box, and search patterns typed or copied into a search box.\nThe output data format consists of text sub-strings (i.e. tagged text chunks) of the input string, with one chunk per line. \n\nThis is the first version of the chunker. Therefore, there may be bugs and room for improvement.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fa33e9b6-08ec-5b6e-bbb0-bb9fe9a6cae2",
+    "notes": [
+        "The MLSS (Maltese Language Software Services) Chunker is an online tool which looks for sequences of part-of-speech tags in a tagged text, using one or more patterns that capture the typical members of, say, a noun phrase, and returning a list of chunks from the text that match the searched patterns. \n\nThe download for this resource only contains the narrative description in a Word file. The tool itself is delivered as a GUI, which features:\n- a panel of buttons representing the POS tags, showing the corresponding description on mouse over.\n- a text box which allows the user to enter the pattern of the chunks, and\n- a text area where the user inputs the text\n\nThe user types or pastes text into the large text box on the bottom of the page and then enters a search pattern into the smaller text box above:\n\nThe user can specify patterns of:\n- POS; these being preceded by '_'. Example, _DDC _NN\n- words; string containing no '_'. Example, 'il- ?' (where the '?' represents anything which follows that word)\n- tagged words; being the most specific. Example, 'il-_DDC ?'\n\nInstead of typing in the search patterns, the user can also click on the buttons in the panel on the left-hand side of the page.\n\nAfterwards, the user clicks on \u00e2\u0080\u009cProcess\u00e2\u0080\u009d to start the chunking process. The user is then directed to a page \u00e2\u0080\u009cChunker Result\u00e2\u0080\u009d, which shows the tagged and extracted chunks in a text box. \n\nThe input data format is text string typed or copied into an input text box, and search patterns typed or copied into a search box.\nThe output data format consists of text sub-strings (i.e. tagged text chunks) of the input string, with one chunk per line. \n\nThis is the first version of the chunker. Therefore, there may be bugs and room for improvement."
+    ],
+    "oai_identifier": [
+        "8c1eb5e05e5e11e2a2aa782bcb0741354078b3f879454f1995c6c93c8897b00f"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "MLSS Chunker"
+    ]
+}

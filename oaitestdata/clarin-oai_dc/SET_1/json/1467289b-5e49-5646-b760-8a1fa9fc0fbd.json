@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/20",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/20"
+    ],
+    "PID": "http://hdl.handle.net/11321/20",
+    "PublicationTimestamp": "2011-04-05T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "\u015aniatowski, Tomasz",
+        "Radziszewski, Adam"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/20;2016-01-21T14:25:21Z;hdl_11321_3;hdl_11321_4;MACA;Radziszewski, Adam;\u015aniatowski, Tomasz;Utilities are simple programs referencing the corresponding API functions, hence similar functionality may be easily obtained by using the libraries.;2011-04-05;toolService;http://hdl.handle.net/11321/20;pol;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki/User_guide",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1467289b-5e49-5646-b760-8a1fa9fc0fbd",
+    "notes": [
+        "Utilities are simple programs referencing the corresponding API functions, hence similar functionality may be easily obtained by using the libraries."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/20"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MACA"
+    ],
+    "url": ""
+}

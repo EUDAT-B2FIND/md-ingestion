@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f28ca110617011e2a2aa782bcb074135f64c19719cc74120858255b6b81c3a17",
+    "MetadataAccess": [
+        "f28ca110617011e2a2aa782bcb074135f64c19719cc74120858255b6b81c3a17"
+    ],
+    "PublicationTimestamp": "2012-11-23T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "f28ca110617011e2a2aa782bcb074135f64c19719cc74120858255b6b81c3a17;2019-02-27T12:09:32Z;corpus;corpus:text;LogicalFormBankPT;The LogicalFormBankPT (Branco, 2009, and Branco et al., 2011) is a corpus of semantic dependencies of translated texts composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal.\n\nThe LogicalFormBankPT is composed of MRS representations of each sentence\u00e2\u0080\u0099s semantic relations resulting from a previous semi-automatic analysis with a double-blind annotation followed by adjudication (see Branco and Costa, 2008, with a full description of the process). The resulting dataset contains one information level: semantic relations.\n\nThe main motivation behind the creation of this resource was to build a high quality data set with syntactic information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies.\n\nThe development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. \n;2012-11-23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8e47115b-f33d-5165-87a5-9dd1d6e88e23",
+    "notes": [
+        "The LogicalFormBankPT (Branco, 2009, and Branco et al., 2011) is a corpus of semantic dependencies of translated texts composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal.\n\nThe LogicalFormBankPT is composed of MRS representations of each sentence\u00e2\u0080\u0099s semantic relations resulting from a previous semi-automatic analysis with a double-blind annotation followed by adjudication (see Branco and Costa, 2008, with a full description of the process). The resulting dataset contains one information level: semantic relations.\n\nThe main motivation behind the creation of this resource was to build a high quality data set with syntactic information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies.\n\nThe development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. \n"
+    ],
+    "oai_identifier": [
+        "f28ca110617011e2a2aa782bcb074135f64c19719cc74120858255b6b81c3a17"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "LogicalFormBankPT"
+    ]
+}

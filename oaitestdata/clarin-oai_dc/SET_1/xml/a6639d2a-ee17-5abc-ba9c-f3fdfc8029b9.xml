@@ -1,0 +1,45 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1071</identifier>
+    <datestamp>2018-05-28T11:29:05Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Dataset of European Parliament roll-call votes and Twitter activities MEP 1.0</dc:title>
+      <dc:creator>Cherepnalkoski, Darko</dc:creator>
+      <dc:creator>Karpf, Andreas</dc:creator>
+      <dc:creator>Mozeti&#269;, Igor</dc:creator>
+      <dc:creator>Gr&#269;ar, Miha</dc:creator>
+      <dc:subject>European parliament</dc:subject>
+      <dc:subject>roll-call votes</dc:subject>
+      <dc:subject>Twitter</dc:subject>
+      <dc:subject>multilingual</dc:subject>
+      <dc:description>The resource consists of two datasets related to Members of the 8th European Parliament (MEPs). The first one is a dataset of 2,535 roll-call votes of MEPs until 2016-03-01. The second one is a dataset of 26,133 retweets between MEPs in the period between 2014-10-01 and 2016-03-01. The data can be used to examine the patterns of covoting and retweeting of MEPs and analyze the extent to which they are similar.&#13;
+The resource is presented and used in the paper:&#13;
+&#13;
+Darko Cherepnalkoski, Andreas Karpf, Igor Mozeti&#269;, Miha Gr&#269;ar "Cohesion and coalition formation in the European Parliament: Roll-call votes and Twitter activities". PLoS ONE 11(11): e0166586, 2016. http://dx.doi.org/10.1371/journal.pone.0166586&#13;
+&#13;
+The dataset contains 5 files, of which 3 contain metadata and 2 data.&#13;
+The metadata comprises information about the Members of 8th European Parliament (MEPs) until 2016-03-01, about roll-call votes (RCV) and possible actions during a RCV. The first data file contains a matrix with the votes of all MEPs during all RCVs while the second contains the retweets between the MEPs.</dc:description>
+      <dc:date>2016-08-05</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1071</dc:identifier>
+      <dc:language>mul</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/H2020/640772</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/csv</dc:format>
+      <dc:format>text/csv</dc:format>
+      <dc:format>text/csv</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 6</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

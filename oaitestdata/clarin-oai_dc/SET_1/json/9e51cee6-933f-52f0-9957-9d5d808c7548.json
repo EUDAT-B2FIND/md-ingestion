@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2613",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2613"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2613",
+    "PublicationTimestamp": "2018-02-12T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/645452"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "AGREEMENT ON THE USE OF DATA IN QT21 APE Task",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21",
+        "PUB"
+    ],
+    "author": [
+        "Turchi, Marco",
+        "Chatterjee, Rajen",
+        "Negri, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2613;2018-02-12T15:27:42Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;WMT18  APE Shared Task: En-DE NMT Train and Dev Data;Turchi, Marco;Negri, Matteo;Chatterjee, Rajen;machine translation;shared task;post-editing;automatic post-editing;Training and development data for the WMT 2018 Automatic post-editing task. They consist in English-German triplets (source, target and post-edit) belonging to the information technology domain and already tokenized. Training and development respectively contain 13,442 and 1,000 triplets. A neural machine translation system has been used to generate the target segments. All data is provided by the EU project QT21 (http://www.qt21.eu/).;2018-02-12;corpus;http://hdl.handle.net/11372/LRT-2613;eng;deu;info:eu-repo/grantAgreement/EC/H2020/645452;AGREEMENT ON THE USE OF DATA IN QT21 APE Task;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21;PUB;text/plain; charset=utf-8;application/x-gzip;downloadable_files_count: 1;Fondazione Bruno Kessler, Trento, Italy;http://www.statmt.org/wmt18/ape-task.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9e51cee6-933f-52f0-9957-9d5d808c7548",
+    "notes": [
+        "Training and development data for the WMT 2018 Automatic post-editing task. They consist in English-German triplets (source, target and post-edit) belonging to the information technology domain and already tokenized. Training and development respectively contain 13,442 and 1,000 triplets. A neural machine translation system has been used to generate the target segments. All data is provided by the EU project QT21 (http://www.qt21.eu/)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2613"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "shared task"
+        },
+        {
+            "name": "post-editing"
+        },
+        {
+            "name": "automatic post-editing"
+        }
+    ],
+    "title": [
+        "WMT18  APE Shared Task: En-DE NMT Train and Dev Data"
+    ],
+    "url": ""
+}

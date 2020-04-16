@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1364</identifier>
+    <datestamp>2017-11-09T14:21:28Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>TrEdVoice</dc:title>
+      <dc:description>The TrEdVoice module is designed to be TrEd annotation editor accessories enabling the voice control of its functions.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1364</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Czech Republic</dc:coverage>
+      <dc:publisher>University of Western Bohemia, Pilsen</dc:publisher>
+      <dc:publisher>Charles University</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/rest/CAC/cac_20.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,65 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.826996",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.826996"
+    ],
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(10N-22N,57E-69E)",
+    "TempCoverageBegin": 62925163199,
+    "TempCoverageEnd": 62925163199,
+    "TemporalCoverage": " point in time : 1995-01-08T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1995-01-08T11:59:59Z",
+    "TemporalCoverage:EndDate": "1995-01-08T11:59:59Z",
+    "author": [
+        "Gardner, Wilford",
+        "Morrison, John M"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.826996;2017-08-05T09:40:09Z;ASPS;JGOFSUS;10.1594/PANGAEA.826996;Morrison, John M;Gardner, Wilford;Physical oceanography during Thomas G. Thompson cruise TT043;PANGAEA - Data Publisher for Earth & Environmental Science;2014;Event label;Date/Time of event;Latitude of event;Longitude of event;DEPTH, water;Pressure, water;Temperature, water;Salinity;Conductivity;Temperature, water, potential;Density, sigma-theta (0);Optical beam attenuation coefficient, particle in water column;PAR lightmeter voltage from downward irradiance;Fluorescence, chlorophyll;TT043;Thomas G. Thompson;Joint Global Ocean Flux Study (JGOFS);1995-01-08T15:34:00/1995-02-01T14:35:00;eng;Dataset;http://store.pangaea.de/Projects/JGOFS/US/ArabianSea/Morrison-tt043.htm;400902 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);9.9826 57.2999 22.483 68.75",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.826996"
+    ],
+    "oai_set": [
+        "ASPS",
+        "JGOFSUS"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[57.2999,9.9826],[57.2999,22.483],[68.75,22.483],[68.75,9.9826],[57.2999,9.9826]]]}",
+    "tags": [
+        {
+            "name": "TT"
+        },
+        {
+            "name": "Thomas G. Thompson"
+        },
+        {
+            "name": "Joint Global Ocean Flux Study JGOFS"
+        }
+    ],
+    "title": [
+        "Physical oceanography during Thomas G. Thompson cruise TT043"
+    ],
+    "url": ""
+}

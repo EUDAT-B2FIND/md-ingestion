@@ -1,0 +1,91 @@
+{
+    "Contact": [
+        "antoine.rabatel@univ-grenoble-alpes.fr"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "Research site"
+    ],
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0bdb6453-e5de-5bef-82ff-507b1a1aab3b",
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(0 S,78W)",
+    "author": [
+        "GDPR 5e58bf7c-65cb-4d9f-897f-15511d650067",
+        "GDPR 4a1e0bbf-bc83-4aac-8a1b-92b3d6ff52cb",
+        "Antoine Rabatel"
+    ],
+    "fulltext": "a4a80312-9bfd-42fc-8101-4e222c1a90ca;English;utf8;dataset;Research site;GDPR 5e58bf7c-65cb-4d9f-897f-15511d650067;LTER Europe;GDPR 4a1e0bbf-bc83-4aac-8a1b-92b3d6ff52cb;LTER Europe;Antoine Rabatel;LTER Europe;antoine.rabatel@univ-grenoble-alpes.fr;2018-09-24;http://www.opengis.net/def/crs/EPSG/0/4326;Antizana glacier;https://deims.org/site/a4a80312-9bfd-42fc-8101-4e222c1a90ca;Antizana 15 alpha Glacier is one of the 17 tongues of the Antizana volcanoe in Ecuador, from 4820 to 5760 m a.s.l..;The original metadata record was created using DEIMS-SDR, the Dynamic Ecological Information Management System - Site and dataset registry;GDPR 5e58bf7c-65cb-4d9f-897f-15511d650067;LTER Europe;GDPR 4a1e0bbf-bc83-4aac-8a1b-92b3d6ff52cb;LTER Europe;Antoine Rabatel;LTER Europe;antoine.rabatel@univ-grenoble-alpes.fr;site;emf2iso_pointer_record;atmospheric parameter;air temperature;air humidity;precipitation intensity;snow depth;global radiation irradiance;incoming radiation intensity;long wave radiation;net far infrared radiation irradiance;solar radiation;net solar radiation irradiance;reflected radiation intensity;total radiation irradiance;wind direction;wind speed;landscape parameter;Terrestrial;continuousDataCollection;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;English;environment;-78.140000000000;-78.140000000000;-0.480000000000;-0.480000000000;1994-01-01;https://deims.org/a4a80312-9bfd-42fc-8101-4e222c1a90ca;http://glacioclim.osug.fr;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='a4a80312-9bfd-42fc-8101-4e222c1a90ca'&outputFormat=SHAPE-ZIP;WFS GetFeature request for downloading the data set in SHP format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='a4a80312-9bfd-42fc-8101-4e222c1a90ca'&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2;WFS GetFeature request for downloading the data set in GML 3.2 format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='a4a80312-9bfd-42fc-8101-4e222c1a90ca'&outputFormat=application%2Fjson;WFS GetFeature request for downloading the data set in GeoJSON format;https://deims.org/node/250;France (LTER-France);COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;This data set is conformant with the INSPIRE Implementing Rules for the interoperability of spatial data sets and services;false;Dataset has been created by data transformation from the original record collected by the site managers using DEIMS site metadata editing form.",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0bdb6453-e5de-5bef-82ff-507b1a1aab3b",
+    "notes": [
+        "Antizana 15 alpha Glacier is one of the 17 tongues of the Antizana volcanoe in Ecuador, from 4820 to 5760 m a.s.l.."
+    ],
+    "oai_identifier": [
+        "0bdb6453-e5de-5bef-82ff-507b1a1aab3b"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-78.140000000000,-0.480000000000],[-78.140000000000,-0.480000000000],[-78.140000000000,-0.480000000000],[-78.140000000000,-0.480000000000],[-78.140000000000,-0.480000000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "site"
+        },
+        {
+            "name": "emfiso_pointer_record"
+        },
+        {
+            "name": "atmospheric parameter"
+        },
+        {
+            "name": "air temperature"
+        },
+        {
+            "name": "air humidity"
+        },
+        {
+            "name": "precipitation intensity"
+        },
+        {
+            "name": "snow depth"
+        },
+        {
+            "name": "global radiation irradiance"
+        },
+        {
+            "name": "incoming radiation intensity"
+        },
+        {
+            "name": "long wave radiation"
+        },
+        {
+            "name": "net far infrared radiation irradiance"
+        },
+        {
+            "name": "solar radiation"
+        }
+    ],
+    "title": [
+        "Antizana glacier"
+    ],
+    "url": "https://deims.org/node/250"
+}

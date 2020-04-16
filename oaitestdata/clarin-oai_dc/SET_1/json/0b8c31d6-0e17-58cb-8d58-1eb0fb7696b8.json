@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 9",
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1587",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1587"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1587",
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Tihelka, Daniel",
+        "Matou\u0161ek, Jind\u0159ich"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1587;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;English TTS speech corpus of air traffic (pilot) messages - Czech accent;Matou\u0161ek, Jind\u0159ich;Tihelka, Daniel;speech corpus;text-to-speech (TTS);pitch-marks;The corpus contains recordings of male speaker, native in Czech, talking in English. The sentences that were read by the speaker originate in the domain of air traffic control (ATC), specifically the messages used by plane pilots during routine flight. The text in the corpus originates from the transcripts of the real recordings, part of which has been released in LINDAT/CLARIN (http://hdl.handle.net/11858/00-097C-0000-0001-CCA1-0), and individual phrases were selected by special algorithm described in J\u016fzov\u00e1, M. and Tihelka, D.: Minimum Text Corpus Selection for Limited Domain Speech Synthesis (DOI 10.1007/978-3-319-10816-2_48). The corpus was used to create a limited domain speech synthesis system capable of simulating a pilot communication with an ATC officer.;2015-12-11;corpus;http://hdl.handle.net/11234/1-1587;eng;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;application/zip;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/vnd.openxmlformats-officedocument.wordprocessingml.document;text/plain; charset=utf-8;downloadable_files_count: 9;University of West Bohemia, Department of Cybernetics;http://itblp.zcu.cz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0b8c31d6-0e17-58cb-8d58-1eb0fb7696b8",
+    "notes": [
+        "The corpus contains recordings of male speaker, native in Czech, talking in English. The sentences that were read by the speaker originate in the domain of air traffic control (ATC), specifically the messages used by plane pilots during routine flight. The text in the corpus originates from the transcripts of the real recordings, part of which has been released in LINDAT/CLARIN (http://hdl.handle.net/11858/00-097C-0000-0001-CCA1-0), and individual phrases were selected by special algorithm described in J\u016fzov\u00e1, M. and Tihelka, D.: Minimum Text Corpus Selection for Limited Domain Speech Synthesis (DOI 10.1007/978-3-319-10816-2_48). The corpus was used to create a limited domain speech synthesis system capable of simulating a pilot communication with an ATC officer."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1587"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "text-to-speech TTS"
+        },
+        {
+            "name": "pitch-marks"
+        }
+    ],
+    "title": [
+        "English TTS speech corpus of air traffic (pilot) messages - Czech accent"
+    ],
+    "url": ""
+}

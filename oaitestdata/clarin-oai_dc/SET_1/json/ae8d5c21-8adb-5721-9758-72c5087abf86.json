@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 134 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2072",
+    "MetadataAccess": [
+        "oai:ota:oucs:2072"
+    ],
+    "PublicationTimestamp": "1776-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1776"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Paine, Thomas, 1737-1809"
+    ],
+    "fulltext": "oai:ota:oucs:2072;2018-05-17T09:29:11Z;http://ota.ox.ac.uk/headers/2072.xml;Common sense / by Thomas Paine;Paine, Thomas, 1737-1809;1776;text_and_corpus_linguistics;Essays -- United States -- 18th century;Protest literature -- United States -- 18th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 134 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ae8d5c21-8adb-5721-9758-72c5087abf86",
+    "oai_identifier": [
+        "oai:ota:oucs:2072"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Essays -- United States -- th century"
+        },
+        {
+            "name": "Protest literature -- United States -- th century"
+        }
+    ],
+    "title": [
+        "Common sense / by Thomas Paine"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2072.xml"
+}

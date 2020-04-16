@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/31</identifier>
+    <datestamp>2016-01-21T14:37:02Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>TaKIPI</dc:title>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:creator>Godlewski, Grzegorz</dc:creator>
+      <dc:creator>Broda, Bartosz</dc:creator>
+      <dc:creator>Wardy&#324;ski, Adam</dc:creator>
+      <dc:description>TaKIPI is a tagger of Polish language that is a tool which assigns morpho-syntactic markers to words in the text.&#13;
+&#13;
+The tagger assumes a morpho-syntactic description of IPI PAN corpus tagset. Contextual disambiguation is carried out via a small set of hand-written rules and via a bigger number of rules automatically extracted by means of the algorithm of the induction of decision trees C4.5. During the process of tagger's learning and functioning, the context of each word's occurence in the text is represented as a feature vector of a constant length. Such vector is obtained by means of hand-written functional expressions of JOSKIPI formalism, which refer to morpho-syntactic properties of the context.</dc:description>
+      <dc:date>2014</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/31</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/takipi/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

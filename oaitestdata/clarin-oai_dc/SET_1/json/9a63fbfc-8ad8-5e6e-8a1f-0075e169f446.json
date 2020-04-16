@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Royster, Paul"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 264 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1652",
+    "MetadataAccess": [
+        "oai:ota:oucs:1652"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Whitman, Walt, 1819-1892"
+    ],
+    "fulltext": "oai:ota:oucs:1652;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1652.xml;Leaves of grass : [1855] / Walt Whitman;Whitman, Walt, 1819-1892;text_and_corpus_linguistics;American poetry -- 19th century;Oxford Text Archive, University of Oxford;Royster, Paul;text/sgml;(1 file : ca. 264 KB);Text;Poems;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9a63fbfc-8ad8-5e6e-8a1f-0075e169f446",
+    "oai_identifier": [
+        "oai:ota:oucs:1652"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American poetry -- th century"
+        }
+    ],
+    "title": [
+        "Leaves of grass : [1855] / Walt Whitman"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1652.xml"
+}

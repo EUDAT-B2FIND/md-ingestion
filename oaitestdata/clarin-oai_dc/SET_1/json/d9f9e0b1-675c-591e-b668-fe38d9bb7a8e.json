@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4868",
+    "MetadataAccess": [
+        "oai:ota:oucs:4868"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Burney, Fanny, 1752-1840."
+    ],
+    "fulltext": "oai:ota:oucs:4868;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4868.xml;Cecilia: or memoirs of an heiress. By the author of Evelina. In five volumes. ... [pt.3];Burney, Fanny, 1752-1840.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d9f9e0b1-675c-591e-b668-fe38d9bb7a8e",
+    "oai_identifier": [
+        "oai:ota:oucs:4868"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Cecilia: or memoirs of an heiress. By the author of Evelina. In five volumes. ... [pt.3]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4868.xml"
+}

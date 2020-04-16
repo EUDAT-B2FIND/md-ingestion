@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-10B2-F</identifier>
+    <datestamp>2018-07-02T22:05:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Many Czech References for 50 Sentences Selected from WMT11 Data</dc:title>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:creator>Mach&#225;&#269;ek, Matou&#353;</dc:creator>
+      <dc:creator>Tamchyna, Ale&#353;</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:subject>machine translation</dc:subject>
+      <dc:subject>automatic machine translation evaluation</dc:subject>
+      <dc:subject>reference translation</dc:subject>
+      <dc:description>This dataset contains the whole set of very many Czech translations for 50 English source sentences coming from WMT11 test set (http://www.statmt.org/wmt11).&#13;
+&#13;
+In total, there are 15431447 Czech sentences, i.e. 300k reference translations per source English sentence on average, but the exact number greatly varies across sentences.&#13;
+&#13;
+You can find more details in included README file.&#13;
+&#13;
+If you use this dataset, please cite the following paper which describes the technique used to construct the Czech translations:&#13;
+&#13;
+Bojar Ond&#345;ej, Mach&#225;&#269;ek Matou&#353;, Tamchyna Ale&#353;, Zeman Daniel:&#13;
+Scratching the Surface of Possible Translations.&#13;
+Lecture Notes in Computer Science, Vol. 8082, Text, Speech and Dialogue: 16th&#13;
+International Conference, TSD 2013. Proceedings, Copyright &#169; Springer Verlag,&#13;
+Berlin / Heidelberg, ISBN 978-3-642-40584-6, ISSN 0302-9743, pp. 465-474, 2013, DOI: 10.1007/978-3-642-40585-3_59</dc:description>
+      <dc:date>2013-09-01</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0023-10B2-F</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/288487</dc:relation>
+      <dc:rights>Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

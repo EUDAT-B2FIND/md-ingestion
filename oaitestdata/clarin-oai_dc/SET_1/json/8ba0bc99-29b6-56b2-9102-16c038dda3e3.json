@@ -1,0 +1,95 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/x-tar",
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 9"
+    ],
+    "Language": [
+        "Czech",
+        "English",
+        "French",
+        "German",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1912",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1912"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1912",
+    "PublicationTimestamp": "2017-01-05T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Ircing, Pavel",
+        "Haji\u010d, Jan",
+        "\u0160vec, Jan",
+        "Galu\u0161\u010d\u00e1kov\u00e1, Petra",
+        "Pecina, Pavel",
+        "Hoffmannov\u00e1, Petra"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1912;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Malach Cross-lingual Speech Retrieval Test Collection;Galu\u0161\u010d\u00e1kov\u00e1, Petra;Pecina, Pavel;Hoffmannov\u00e1, Petra;Haji\u010d, Jan;Ircing, Pavel;\u0160vec, Jan;annotated corpus;corpus;speech corpus;annotation;audio;multilingual;The package contains Czech recordings of the Visual History Archive which consists of the interviews with the Holocaust survivors. The archive consists of audio recordings, four types of automatic transcripts, manual annotations of selected topics and interviews' metadata. The archive totally contains 353 recordings and 592 hours of interviews.;2017-01-05;corpus;http://hdl.handle.net/11234/1-1912;ces;eng;fra;deu;spa;Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0);http://creativecommons.org/licenses/by-nc-nd/4.0/;PUB;application/x-gzip;application/x-tar;application/x-tar;application/x-tar;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 9;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/malach-test-collection",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8ba0bc99-29b6-56b2-9102-16c038dda3e3",
+    "notes": [
+        "The package contains Czech recordings of the Visual History Archive which consists of the interviews with the Holocaust survivors. The archive consists of audio recordings, four types of automatic transcripts, manual annotations of selected topics and interviews' metadata. The archive totally contains 353 recordings and 592 hours of interviews."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1912"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "annotated corpus"
+        },
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "annotation"
+        },
+        {
+            "name": "audio"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Czech Malach Cross-lingual Speech Retrieval Test Collection"
+    ],
+    "url": ""
+}

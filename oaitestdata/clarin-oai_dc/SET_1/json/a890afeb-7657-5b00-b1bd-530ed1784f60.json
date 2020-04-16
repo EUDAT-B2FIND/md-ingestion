@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Oriya (macrolanguage)",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2879",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2879"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2879",
+    "PublicationTimestamp": "2018-11-26T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bojar, Ond\u0159ej",
+        "Parida, Shantipriya"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2879;2018-11-26T14:54:22Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;OdiEnCorp 1.0;Parida, Shantipriya;Bojar, Ond\u0159ej;Odia English Parallel Corpus;Odia Monolingual Corpus;English-Odia Machine Translation;Data\r\n----\r\nWe have collected English-Odia parallel and monolingual data from the\r\navailable public websites for NLP research in Odia.\r\n\r\nThe parallel corpus consists of English-Odia parallel Bible, Odia\r\ndigital library, and Odisha Goverment websites. It covers bible,\r\nliterature, goverment of Odisha and its policies. We have processed the\r\nraw data collected from the websites, performed alignments (a mix of\r\nmanual and automatic alignments) and release the corpus in a form ready\r\nfor various NLP tasks.\r\n\r\nThe Odia monolingual data consists of Odia-Wikipedia and Odia e-magazine\r\nwebsites. Because the major portion of data is extracted from\r\nOdia-Wikipedia, it covers all kinds of domains. The e-magazines data\r\nmostly cover the literature domain. We have preprocessed the monolingual\r\ndata including de-duplication, text normalization, and sentence\r\nsegmentation to make it ready for various NLP tasks.\r\n\r\nCorpus Formats\r\n--------------\r\nBoth corpora are in simple tab-delimited plain text files.\r\n\r\nThe parallel corpus files have three columns:\r\n- the original book/source of the sentence pair\r\n- the English sentence\r\n- the corresponding Odia sentence\r\n\r\nThe monolingual corpus has a varying number of columns:\r\n- each line corresponds to one *paragraph* (or related unit) of the\r\n  original source\r\n- each tab-delimited unit corresponds to one *sentence* in the paragraph\r\n\r\n\r\nData Statistics\r\n----------------\r\nThe statistics of the current release is given below.\r\n\r\nParallel Corpus Statistics\r\n---------------------------\r\n\r\nDataset\tSentences\t#English tokens \t#Odia tokens\r\n-------\t---------\t----------------\t-------------\r\nTrain  \t    27136\t          706567\t       604147\r\nDev    \t      948\t           21912\t        19513\r\nTest   \t     1262\t           28488\t        24365\r\n-------\t---------\t----------------\t-------------\r\nTotal  \t    29346\t          756967\t       648025\r\n\r\nDomain Level Statistics\r\n------------------------\r\n\r\nDomain            \tSentences\t#English tokens \t#Odia tokens\r\n------------------\t---------\t----------------\t-------------\r\nBible             \t    29069\t          756861\t       640157\r\nLiterature        \t      424\t            7977\t         6611\r\nGoverment policies\t      204\t            1411\t         1257\r\n------------------\t---------\t----------------\t-------------\r\nTotal             \t    29697\t          766249\t       648025\r\n\r\nMonolingual Corpus Statistics\r\n-----------------------------\r\n\r\nParagraphs\tSentences\t#Odia tokens\r\n----------\t---------\t------------\r\n     71698\t   221546\t     2641308\r\n\r\nDomain Level Statistics\r\n-----------------------\r\n\r\nDomain        \tParagraphs    \tSentences\t#Odia tokens\r\n--------------\t--------------\t---------\t-------------\r\nGeneral (wiki)\t30468 (42.49%)\t   102085\t      1320367\r\nLiterature    \t41230 (57.50%)\t   119461\t      1320941\r\n--------------\t--------------\t---------\t-------------\r\nTotal         \t         71698\t   221546\t      2641308\r\n\r\n\r\nCitation\r\n--------\r\n\r\nIf you use this corpus, please cite it directly (see above), but please cite also the following paper:\r\n\r\nTitle: OdiEnCorp: Odia-English and Odia-Only Corpus for Machine Translation\r\nAuthor: Shantipriya Parida, Ondrej Bojar, and Satya Ranjan Dash\r\nProceedings of the Third International Conference on Smart Computing & Informatics (SCI) 2018\r\nSeries: Smart Innovation, Systems and Technologies (SIST)\r\nPublisher: Springer Singapore;2018-11-26;corpus;http://hdl.handle.net/11234/1-2879;ori;eng;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a890afeb-7657-5b00-b1bd-530ed1784f60",
+    "notes": [
+        "Data\r\n----\r\nWe have collected English-Odia parallel and monolingual data from the\r\navailable public websites for NLP research in Odia.\r\n\r\nThe parallel corpus consists of English-Odia parallel Bible, Odia\r\ndigital library, and Odisha Goverment websites. It covers bible,\r\nliterature, goverment of Odisha and its policies. We have processed the\r\nraw data collected from the websites, performed alignments (a mix of\r\nmanual and automatic alignments) and release the corpus in a form ready\r\nfor various NLP tasks.\r\n\r\nThe Odia monolingual data consists of Odia-Wikipedia and Odia e-magazine\r\nwebsites. Because the major portion of data is extracted from\r\nOdia-Wikipedia, it covers all kinds of domains. The e-magazines data\r\nmostly cover the literature domain. We have preprocessed the monolingual\r\ndata including de-duplication, text normalization, and sentence\r\nsegmentation to make it ready for various NLP tasks.\r\n\r\nCorpus Formats\r\n--------------\r\nBoth corpora are in simple tab-delimited plain text files.\r\n\r\nThe parallel corpus files have three columns:\r\n- the original book/source of the sentence pair\r\n- the English sentence\r\n- the corresponding Odia sentence\r\n\r\nThe monolingual corpus has a varying number of columns:\r\n- each line corresponds to one *paragraph* (or related unit) of the\r\n  original source\r\n- each tab-delimited unit corresponds to one *sentence* in the paragraph\r\n\r\n\r\nData Statistics\r\n----------------\r\nThe statistics of the current release is given below.\r\n\r\nParallel Corpus Statistics\r\n---------------------------\r\n\r\nDataset\tSentences\t#English tokens \t#Odia tokens\r\n-------\t---------\t----------------\t-------------\r\nTrain  \t    27136\t          706567\t       604147\r\nDev    \t      948\t           21912\t        19513\r\nTest   \t     1262\t           28488\t        24365\r\n-------\t---------\t----------------\t-------------\r\nTotal  \t    29346\t          756967\t       648025\r\n\r\nDomain Level Statistics\r\n------------------------\r\n\r\nDomain            \tSentences\t#English tokens \t#Odia tokens\r\n------------------\t---------\t----------------\t-------------\r\nBible             \t    29069\t          756861\t       640157\r\nLiterature        \t      424\t            7977\t         6611\r\nGoverment policies\t      204\t            1411\t         1257\r\n------------------\t---------\t----------------\t-------------\r\nTotal             \t    29697\t          766249\t       648025\r\n\r\nMonolingual Corpus Statistics\r\n-----------------------------\r\n\r\nParagraphs\tSentences\t#Odia tokens\r\n----------\t---------\t------------\r\n     71698\t   221546\t     2641308\r\n\r\nDomain Level Statistics\r\n-----------------------\r\n\r\nDomain        \tParagraphs    \tSentences\t#Odia tokens\r\n--------------\t--------------\t---------\t-------------\r\nGeneral (wiki)\t30468 (42.49%)\t   102085\t      1320367\r\nLiterature    \t41230 (57.50%)\t   119461\t      1320941\r\n--------------\t--------------\t---------\t-------------\r\nTotal         \t         71698\t   221546\t      2641308\r\n\r\n\r\nCitation\r\n--------\r\n\r\nIf you use this corpus, please cite it directly (see above), but please cite also the following paper:\r\n\r\nTitle: OdiEnCorp: Odia-English and Odia-Only Corpus for Machine Translation\r\nAuthor: Shantipriya Parida, Ondrej Bojar, and Satya Ranjan Dash\r\nProceedings of the Third International Conference on Smart Computing & Informatics (SCI) 2018\r\nSeries: Smart Innovation, Systems and Technologies (SIST)\r\nPublisher: Springer Singapore"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2879"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Odia English Parallel Corpus"
+        },
+        {
+            "name": "Odia Monolingual Corpus"
+        },
+        {
+            "name": "English-Odia Machine Translation"
+        }
+    ],
+    "title": [
+        "OdiEnCorp 1.0"
+    ],
+    "url": ""
+}

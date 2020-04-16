@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "ClarinPL"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 35",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/323",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/323"
+    ],
+    "PID": "http://hdl.handle.net/11321/323",
+    "PublicationTimestamp": "2016-10-18T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "ClarinPL"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "author": [
+        "Paw\u0142owski, Adam"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/323;2016-10-18T13:32:38Z;hdl_11321_3;hdl_11321_322;Clarin PL 2 M3 Milestone;Paw\u0142owski, Adam;M3;Clarin 2.0 - M3 Milestone files;2016-10-18;corpus;http://hdl.handle.net/11321/323;pol;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/octet-stream;downloadable_files_count: 35;ClarinPL",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a933aa45-9b4c-5f4d-81f6-59a6480b6e35",
+    "notes": [
+        "Clarin 2.0 - M3 Milestone files"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/323"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_322"
+    ],
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Clarin PL 2 M3 Milestone"
+    ],
+    "url": ""
+}

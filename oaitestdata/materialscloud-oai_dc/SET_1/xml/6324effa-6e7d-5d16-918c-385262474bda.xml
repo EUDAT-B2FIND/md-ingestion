@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0007/v3</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Sawatlon, Boodsarin</dc:creator>
+      <dc:creator>Fabrizio, Alberto</dc:creator>
+      <dc:creator>Meyer, Benjamin</dc:creator>
+      <dc:creator>Wodrich, Matthew D.</dc:creator>
+      <dc:creator>Corminboeuf, Cl&#233;mence</dc:creator>
+      <dc:title>Mining the C-C Cross-Coupling Genome using Machine Learning</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-02-23</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>machine learning</dc:subject>
+      <dc:subject>homogeneous catalysis</dc:subject>
+      <dc:subject>volcano plot</dc:subject>
+      <dc:subject>transition metal complexes</dc:subject>
+      <dc:subject>sketch-map</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0007/v3</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0007/v3</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:relation>https://www.materialscloud.org/discover/ccg</dc:relation>
+      <dc:description>Applications of machine-learning (ML) techniques to the study of catalytic processes have begun to appear in the literature with increasing frequency. The computational speed up provided by ML allows the properties and energetics of thousands of prospective catalysts to be rapidly assessed. These results, once compiled into a database containing different properties, can be mined with the goal of establishing relationships between the intrinsic chemical properties of different catalysts and their overall catalytic performance. Previously, we applied ML models to predict the performance of 18,000 prospective catalysts for a Suzuki coupling reaction using molecular volcano plots. Here, we expand on our earlier work by examining a larger section of the C-C cross-coupling genome by using a dimensionality-reducing data-clustering algorithms (i.e., sketch-map) to, first, identify the compatibility of each catalyst with different C-C cross-coupling variants (e.g., Suzuki, Kumada, Negishi, Stille, and/or Hiyama) and, second, to uncover links between the chemical property of a catalyst and its catalytic activity. Our findings, based on the analysis of 18,000 catalysts, reveal strong correlations between a catalyst&#8217;s HOMO energy and the suitability of its thermodynamic profile. These values can, subsequently, be tuned in order to maximize the thermodynamics of the catalytic cycle through the judicious choice of metal centers and the &#960;-accepting/&#963;-donating nature of the flanking ligands. Overall, group 10 metals (Ni, Pd, Pt) are best coupled with the strong &#960;-acceptor ligands and group 11 metals (Cu, Ag, Au) with weak &#960;-acceptors, which maximize the thermodynamic drive of the catalytic cycle.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

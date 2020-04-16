@@ -1,0 +1,95 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4338-F",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4338-F"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-4338-F",
+    "PublicationTimestamp": "2014-02-13T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0015-8DAF-4"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Haji\u010d, Jan",
+        "Panevova, Jarmila",
+        "\u0160t\u011bp\u00e1nek, Jan",
+        "Ure\u0161ov\u00e1, Zde\u0148ka",
+        "Mikulov\u00e1, Marie"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4338-F;2018-05-24T09:54:21Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;PDT-Vallex: Czech Valency lexicon linked to treebanks;Ure\u0161ov\u00e1, Zde\u0148ka;\u0160t\u011bp\u00e1nek, Jan;Haji\u010d, Jan;Panevova, Jarmila;Mikulov\u00e1, Marie;annotation;corpora;data;lexicon;semantics;valency;PDT;The valency lexicon PDT-Vallex has been built in close connection with the annotation of the Prague Dependency Treebank project (PDT) and its successors (mainly the Prague Czech-English Dependency Treebank project, PCEDT). It contains over 11000 valency frames for more than 7000 verbs which occurred in the PDT or PCEDT. It is available in electronically processable format (XML) together with the aforementioned treebanks (to be viewed and edited by TrEd, the PDT/PCEDT main annotation tool), and also in more human readable form including corpus examples (see the WEBSITE link below). The main feature of the lexicon is its linking to the annotated corpora - each occurrence of each verb is linked to the appropriate valency frame with additional (generalized) information about its usage and surface morphosyntactic form alternatives.;2014-02-13;lexicalConceptualResource;http://hdl.handle.net/11858/00-097C-0000-0023-4338-F;ces;http://hdl.handle.net/11858/00-097C-0000-0015-8DAF-4;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://lindat.mff.cuni.cz/services/PDT-Vallex/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "732aa772-a42d-57b7-8da5-692d333b5f2a",
+    "notes": [
+        "The valency lexicon PDT-Vallex has been built in close connection with the annotation of the Prague Dependency Treebank project (PDT) and its successors (mainly the Prague Czech-English Dependency Treebank project, PCEDT). It contains over 11000 valency frames for more than 7000 verbs which occurred in the PDT or PCEDT. It is available in electronically processable format (XML) together with the aforementioned treebanks (to be viewed and edited by TrEd, the PDT/PCEDT main annotation tool), and also in more human readable form including corpus examples (see the WEBSITE link below). The main feature of the lexicon is its linking to the annotated corpora - each occurrence of each verb is linked to the appropriate valency frame with additional (generalized) information about its usage and surface morphosyntactic form alternatives."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-4338-F"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "annotation"
+        },
+        {
+            "name": "corpora"
+        },
+        {
+            "name": "data"
+        },
+        {
+            "name": "lexicon"
+        },
+        {
+            "name": "semantics"
+        },
+        {
+            "name": "valency"
+        },
+        {
+            "name": "PDT"
+        }
+    ],
+    "title": [
+        "PDT-Vallex: Czech Valency lexicon linked to treebanks"
+    ],
+    "url": ""
+}

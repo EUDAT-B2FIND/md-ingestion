@@ -1,0 +1,78 @@
+{
+    "DOI": "http://dx.doi.org/10.12770/993571fa-cdaf-4b5f-be7e-db9a88ca6d8c",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=oai_dc&identifier=27c4e287-a115-5da6-9ee2-b8d35e156af3",
+    "Rights": [
+        "otherRestrictions"
+    ],
+    "SpatialCoverage": [
+        "30 53",
+        "9 66"
+    ],
+    "fulltext": "993571fa-cdaf-4b5f-be7e-db9a88ca6d8c;2018-07-24T09:47:33;Baltic Sea - Temperature and salinity observation collection V1.1;seadatanet-baltic_sea-temperature_salinity_aggregated_public-v1_1;series;Oceanographic geographical features;Temperature of the water column;Salinity of the water column;ITS-90 water temperature;Water body salinity;Baltic Sea;Bay of Bothnia;Central Baltic Sea;Gulf of Bothnia;Gulf of Finland;Kattegat;Lillebaelt;Skagerrak;Storebaelt;oceans;Seadatanet temperature and salinity historical data collection, including revised quality flags after quality control.\n\nFor data access please register at http://www.marine-id.org\n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/;Seadatanet temperature and salinity historical data collection, including revised quality flags after quality control.\n\nFor data access please register at http://www.marine-id.org\n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/;otherRestrictions;eng;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI;30 53;9 66;http://dx.doi.org/10.12770/993571fa-cdaf-4b5f-be7e-db9a88ca6d8c;ftp://vftp2.ifremer.fr/public/seadatanet-baltic_sea-temperaturesalinity_aggregated/SDN_2014-03_TS_BalticSea_QC_done_v1.1.zip;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_BalticSea_QC_done_v1.1;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_BalticSea_QC_done_v1.1;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_BalticSea_QC_done_v1.1;http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_BalticSea_QC_done_v1.1;https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=993571fa-cdaf-4b5f-be7e-db9a88ca6d8c&fname=BalticSeaTransp.png",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "27c4e287-a115-5da6-9ee2-b8d35e156af3",
+    "notes": [
+        "Seadatanet temperature and salinity historical data collection, including revised quality flags after quality control.\n\nFor data access please register at http://www.marine-id.org\n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/"
+    ],
+    "oai_identifier": [
+        "27c4e287-a115-5da6-9ee2-b8d35e156af3"
+    ],
+    "oai_set": "cams1_ps",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "Baltic Sea"
+        },
+        {
+            "name": "Bay Bothnia"
+        },
+        {
+            "name": "Central Baltic Sea"
+        },
+        {
+            "name": "Gulf Bothnia"
+        },
+        {
+            "name": "Gulf Finland"
+        },
+        {
+            "name": "Kattegat"
+        },
+        {
+            "name": "Lillebaelt"
+        }
+    ],
+    "title": [
+        "Baltic Sea - Temperature and salinity observation collection V1.1"
+    ],
+    "url": "https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=993571fa-cdaf-4b5f-be7e-db9a88ca6d8c&fname=BalticSeaTransp.png"
+}

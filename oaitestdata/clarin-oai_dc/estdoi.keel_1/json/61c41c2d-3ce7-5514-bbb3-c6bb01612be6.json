@@ -1,0 +1,51 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00080L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:5757477",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:5757477"
+    ],
+    "PublicationTimestamp": "2015-05-22T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "M\u00fc\u00fcrisep, Kaili"
+    ],
+    "fulltext": "oai:oai.datacite.org:5757477;2019-04-18T17:36:31Z;ESTDOI;ESTDOI.KEEL;Eesti puudepanga korpus;Estonian Treebank;M\u00fc\u00fcrisep, Kaili;Center of Estonian Language Resources;2011;Issued: 2011-12-31;Updated: 2015-05-22;doi:10.15155/1-00-0000-0000-0000-00080L;Abstract;Estonian Treebank is available both in the VISL and TigerXML format. Esttre consists of ca 1400 manually annotated sentences (10600 tokens), the text classes represented in the Corpus are fiction, both translated and original, newspaper texts and 20 sentences of transcribed spoken language.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "61c41c2d-3ce7-5514-bbb3-c6bb01612be6",
+    "notes": [
+        "Abstract",
+        "Estonian Treebank is available both in the VISL and TigerXML format. Esttre consists of ca 1400 manually annotated sentences (10600 tokens), the text classes represented in the Corpus are fiction, both translated and original, newspaper texts and 20 sentences of transcribed spoken language."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:5757477"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti puudepanga korpus",
+        "Estonian Treebank"
+    ],
+    "url": ""
+}

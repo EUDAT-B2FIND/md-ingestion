@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Smith, Taylor",
+        "Bodo Bookhagen"
+    ],
+    "Contributor": [
+        "Smith, Taylor",
+        "Bodo Bookhagen"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5880/fidgeo.2017.006",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/x-zip-compressed"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6322",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6322"
+    ],
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "GFZ German Research Center for Geosciences"
+    ],
+    "Rights": [
+        "CC BY 4.0"
+    ],
+    "SpatialCoverage": "(25N-45N,68E-95E)",
+    "TemporalCoverage": [
+        "/2",
+        "2017-06-29",
+        "1987-10-01/2016-10-01"
+    ],
+    "author": [
+        "Smith, Taylor",
+        "Bodo Bookhagen"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6322;2017-10-15T08:53:35Z;DOIDB;DOIDB.FID;false;3;DOIDB.FID;10.5880/fidgeo.2017.006;Smith, Taylor;0000-0002-6763-7204;Universitat Potsdam;Bodo Bookhagen;0000-0003-1323-6453;Universitat Potsdam;Snowmelt Paramaters, 1987-2016, High Mountain Asia;GFZ German Research Center for Geosciences;2017;Snow;SWE;Snowmelt;Cryosphere;High Mountain Asia;Smith, Taylor;0000-0002-6763-7204;Universitat Potsdam;Bodo Bookhagen;0000-0003-1323-6453;Universitat Potsdam;/2;2017-06-29;1987-10-01/2016-10-01;en;10.5194/tc-11-2329-2017;794638 Bytes;1 Files;application/x-zip-compressed;1.0;CC BY 4.0;This data resource contains 9 files, created as part of the work \"Spatio-temporal Patterns of High Mountain Asia's Snowmelt Season Identified with an Automated Snowmelt Detection Algorithm, 1987-2016\" by T. Smith, B. Bookhagen, and A. Rheinwalt (http://doi.org/10.5194/tc-2017-67). Full description of the methods can be found in the published paper. Data tracks the onset, end, and length of the snowmelt period in High Mountain Asia over the period 1987-2016. ;25 67.5 45 95;High Mountain Asia, 1987-2016",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "90029ec9-dd10-5e6a-b067-7583054a77e6",
+    "notes": [
+        "This data resource contains 9 files, created as part of the work \"Spatio-temporal Patterns of High Mountain Asia's Snowmelt Season Identified with an Automated Snowmelt Detection Algorithm, 1987-2016\" by T. Smith, B. Bookhagen, and A. Rheinwalt (http://doi.org/10.5194/tc-2017-67). Full description of the methods can be found in the published paper. Data tracks the onset, end, and length of the snowmelt period in High Mountain Asia over the period 1987-2016. "
+    ],
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6322"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[67.5,25],[67.5,45],[95,45],[95,25],[67.5,25]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Snow"
+        },
+        {
+            "name": "SWE"
+        },
+        {
+            "name": "Snowmelt"
+        },
+        {
+            "name": "Cryosphere"
+        },
+        {
+            "name": "High Mountain Asia"
+        }
+    ],
+    "title": [
+        "Snowmelt Paramaters, 1987-2016, High Mountain Asia"
+    ],
+    "url": ""
+}

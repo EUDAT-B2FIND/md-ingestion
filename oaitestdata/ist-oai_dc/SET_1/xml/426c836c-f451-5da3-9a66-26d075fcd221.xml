@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:53</identifier>
+    <datestamp>2017-04-12T08:05:52Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Biased partitioning of the multi-drug efflux pump AcrAB-TolC underlies long-lived phenotypic heterogeneity</dc:title>
+      <dc:creator>Bergmiller, Tobias</dc:creator>
+      <dc:creator>Andersson, Anna MC</dc:creator>
+      <dc:creator>Tomasek, Kathrin</dc:creator>
+      <dc:creator>Balleza, Enrique</dc:creator>
+      <dc:creator>Kiviet, Daniel J</dc:creator>
+      <dc:creator>Hauschild, Robert</dc:creator>
+      <dc:creator>Tkacik, Gasper</dc:creator>
+      <dc:creator>Guet, Calin C</dc:creator>
+      <dc:subject>571 Physiology</dc:subject>
+      <dc:subject>579 Microorganisms, fungi, algae</dc:subject>
+      <dc:description>This repository contains the data collected for the manuscript "Biased partitioning of the multi-drug efflux pump AcrAB-TolC underlies long-lived phenotypic heterogeneity".&#13;
+The data is compressed into a single archive. Within the archive, different folders correspond to figures of the main text and the SI of the related publication.&#13;
+Data is saved as plain text, with each folder containing a separate readme file describing the format. Typically, the data is from fluorescence microscopy measurements of single cells growing in a microfluidic "mother machine" device, and consists of relevant values (primarily arbitrary unit or normalized fluorescence measurements, and division times / growth rates) after raw microscopy images have been processed, segmented, and their features extracted, as described in the methods section of the related publication.</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>archive</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/53/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/53/1/Data_MDE.zip</dc:identifier>
+      <dc:identifier>  Bergmiller, Tobias and Andersson, Anna MC and Tomasek, Kathrin and Balleza, Enrique and Kiviet, Daniel J and Hauschild, Robert and Tkacik, Gasper and Guet, Calin C   Biased partitioning of the multi-drug efflux pump AcrAB-TolC underlies long-lived phenotypic heterogeneity.  [Data Collection]    (In Press)  </dc:identifier>
+      <dc:identifier>doi:10.15479/AT:ISTA:53</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

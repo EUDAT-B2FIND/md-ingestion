@@ -1,0 +1,58 @@
+{
+    "Contributor": [
+        "Piperidis, Stelios"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English",
+        "French",
+        "Modern Greek (1453-)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-326",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-326"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-326",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Greece"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-326;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;MUSA Multilingual Multimodal Corpus;Piperidis, Stelios;Multilingual (EN, EL, FR); multimodal (Video, Text); parallel (EN, EL, FR subtitles); comparable (transcripts, subtitles); 120 hours;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-326;eng;fra;ell;downloadable_files_count: 0;Greece;http://sifnos.ilsp.gr/musa",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "471e9d2d-79f0-5880-84e2-ed59b4ca11a9",
+    "notes": [
+        "Multilingual (EN, EL, FR); multimodal (Video, Text); parallel (EN, EL, FR subtitles); comparable (transcripts, subtitles); 120 hours"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-326"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "MUSA Multilingual Multimodal Corpus"
+    ],
+    "url": ""
+}

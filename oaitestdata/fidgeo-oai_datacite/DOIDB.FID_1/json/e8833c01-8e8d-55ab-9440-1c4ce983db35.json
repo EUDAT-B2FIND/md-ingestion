@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6342",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6342"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6342;2018-09-05T10:07:06Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2017.018;van den Ende, Martijn;Martijn;van den Ende;0000-0002-0634-7078;Utrecht University;Experimental and model data of aggregate compaction by pressure solution;GFZ Data Services;2017;Compaction;Pressure solution;Discrete Element Method;Halite;Granular mechanics;EPOS;multi-scale laboratories;rock and melt physical properties;van den Ende, Martijn;Martijn;van den Ende;0000-0002-0634-7078;Utrecht University;Experimental rock deformation/HPT-Lab (Utrecht University, The Netherlands);Utrecht University, The Netherlands;2017-11-24;eng;10.1002/2017JB014440;370524799 Bytes;2 Files;application/pdf;application/zip;CC BY 4.0;Intergranular pressure solution creep is an important deformation mechanism in the Earth\u2019s crust. The phenomenon has been frequently studied and several analytical models have been proposed that describe its constitutive behavior. These models require assumptions regarding the geometry of the aggregate and the grain size distribution in order to solve for the contact stresses, and often neglect shear tractions. Furthermore, analytical models tend to overestimate experimental compaction rates at low porosities, an observation for which the underlying mechanisms remain to be elucidated. ;Nederlandse Organisatie voor Wetenschappelijk Onderzoek;http://doi.org/10.13039/501100003246;854.12.001",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "e8833c01-8e8d-55ab-9440-1c4ce983db35",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6342"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

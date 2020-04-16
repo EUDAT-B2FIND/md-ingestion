@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=e69034fa616e11e2a2aa782bcb07413563a2d5c389e04e779bf58a3b09dc588e",
+    "MetadataAccess": [
+        "e69034fa616e11e2a2aa782bcb07413563a2d5c389e04e779bf58a3b09dc588e"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "e69034fa616e11e2a2aa782bcb07413563a2d5c389e04e779bf58a3b09dc588e;2019-02-27T12:09:30Z;corpus;corpus:text;PropBankPT;The PropBankPT (Branco et al., 2012) is a set of sentences annotated with their constituency structure and semantic role tags, composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal translated. \nFor the creation of this PropBank we adopted a semi-automatic analysis with a double-blind annotation followed by adjudication. The resulting dataset contains three information levels: phrase constituency, grammatical functions, and phrase semantic roles.\nThe main motivation behind the creation of this resource was to build a high quality data set with semantic information that could support the development of automatic semantic role labelers for Portuguese.\nThe development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. \n;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "958e8c64-9e19-5c9e-a730-0407b5146347",
+    "notes": [
+        "The PropBankPT (Branco et al., 2012) is a set of sentences annotated with their constituency structure and semantic role tags, composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal translated. \nFor the creation of this PropBank we adopted a semi-automatic analysis with a double-blind annotation followed by adjudication. The resulting dataset contains three information levels: phrase constituency, grammatical functions, and phrase semantic roles.\nThe main motivation behind the creation of this resource was to build a high quality data set with semantic information that could support the development of automatic semantic role labelers for Portuguese.\nThe development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. \n"
+    ],
+    "oai_identifier": [
+        "e69034fa616e11e2a2aa782bcb07413563a2d5c389e04e779bf58a3b09dc588e"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "PropBankPT"
+    ]
+}

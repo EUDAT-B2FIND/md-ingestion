@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>ca81fa08d36211e2a2aa782bcb074135b21158a773424785864b1242809f912b</identifier>
+    <datestamp>2018-11-15T16:40:13Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CW Corpus</dc:title>
+      <dc:description>The Complex Word (CW) Corpus contains 731 sentences each with one annotated CW.  These simplifications were mined from Simple Wikipedia edit histories.  Each entry gives an example of a sentence requiring simplification by means of a single lexical edit.  This resource is primarily designed for the evaluation of CW identification systems.</dc:description>
+      <dc:date>2013-06-12</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

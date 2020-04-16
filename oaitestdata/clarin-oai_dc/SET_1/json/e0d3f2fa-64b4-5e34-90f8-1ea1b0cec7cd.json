@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3899",
+    "MetadataAccess": [
+        "oai:ota:oucs:3899"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hoole, John, 1727-1803."
+    ],
+    "fulltext": "oai:ota:oucs:3899;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3899.xml;Cleonice, Princess of Bithynia: a tragedy. As it is performed at the Theatre Royal in Covent-Garden. By John Hoole.;Hoole, John, 1727-1803.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e0d3f2fa-64b4-5e34-90f8-1ea1b0cec7cd",
+    "oai_identifier": [
+        "oai:ota:oucs:3899"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Cleonice, Princess of Bithynia: a tragedy. As it is performed at the Theatre Royal in Covent-Garden. By John Hoole."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3899.xml"
+}

@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>73b84c28fd1a11e6a2aa782bcb074135a9fd1289fd654abeb973c65280441a6d</identifier>
+    <datestamp>2018-11-15T16:40:29Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:terminologicalResource</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>A Terminological Inventory for Biodiversity</dc:title>
+      <dc:description>In order to construct the inventory, we firstly compiled a species name dictionary by combining all of the names available in Catalogue of Life (CoL), Encyclopedia of Life (EoL) and Global Biodiversity Information Facility (GBIF). 
+The terms contained in this dictionary were then located within the text of English BHL documents (about 24 million pages of text) using a string matching method. 
+We then learned vector representations of the identified terms using three different approaches, namely count-based, prediction-based and compositional distributional semantic models (DSMs). 
+These approaches compute vector representations for both single and multi-word terms. 
+The cosine similarity between two vectors serves as an indicator of the corresponding terms' semantic relatedness: the higher the cosine similarity, the more related the two terms are. 
+We finally selected the top-k candidates as the terms that are most semantically related to a given term.
+
+The inventory contains 288,562 names of species whose frequency in BHL documents is at least five. 
+For each term in the inventory, the 20 topmost semantically similar terms are provided, together with their corresponding similarity scores. 
+For further digital biodiversity processes, each term is also linked to its URI, UUID and LSID indexed by Global Names.
+
+A search interface that uses the inventory as metadata for query expansion is available at http://nactem.ac.uk/BHLQueryExpansion/.</dc:description>
+      <dc:date>2017-02-27</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

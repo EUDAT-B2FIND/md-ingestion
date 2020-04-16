@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>isis_24090014</identifier>
+    <datestamp>2016-04-08T15:22:47Z</datestamp>
+  </header>
+  <metadata>
+    <oai_qdc:qdc xmlns:oai_qdc="http://pandata.org/pmh/oai_qdc/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pandata.org/pmh/oai_qdc/ http://pandata.org/pmh/oai_qdc.xsd">
+      <dc:identifier>10.5286/ISIS.E.24090014</dc:identifier>
+      <dc:title>CaCO3-FeO(x) Tell-Bazi 4 1103 (no spacer)</dc:title>
+      <dc:description>None</dc:description>
+      <dc:relation>[GEM];RB1290066;run_number_range;bcat_inv_str</dc:relation>
+      <dcterms:references>http://dx.doi.org/10.5286/ISIS.E.24090014</dcterms:references>
+      <dc:creator>Dr Dirk Visser</dc:creator>
+      <dc:contributor>Science and Technology Facilities Council, ISIS</dc:contributor>
+      <dc:subject>Clean energy and the environment, pharmaceuticals and health care, nanotechnology and materials engineering, catalysis and polymers, fundamental studies of materials</dc:subject>
+      <dcterms:issued>2015-12-07 03:39:13</dcterms:issued>
+      <dc:language>en</dc:language>
+      <dc:publisher>ISIS;ISIS Pulsed Neutron &amp; Muon Source;http://www.isis.stfc.ac.uk;[GEM]</dc:publisher>
+      <dc:format>isis neutron raw;binary;2;None</dc:format>
+      <dc:relation>ISIS, Harwell, United Kingdom</dc:relation>
+      <dc:rights>ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html</dc:rights>
+      <dc:relation/>
+      <dc:relation xsi:type="dcterms:ISO3166">GB</dc:relation>
+      <dcterms:temporal>2012-12-06 02:32:46;2012-12-06 03:39:13</dcterms:temporal>
+    </oai_qdc:qdc>
+  </metadata>
+</record>

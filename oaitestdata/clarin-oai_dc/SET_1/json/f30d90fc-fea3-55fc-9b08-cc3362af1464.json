@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F2-1",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F2-1"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-48F2-1",
+    "PublicationTimestamp": "2010-01-13T15:06:26Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0023-4087-6"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" license",
+        "http://opensource.org/licenses/BSD-2-Clause",
+        "PUB"
+    ],
+    "author": [
+        "Pajas, Petr"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F2-1;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Dspace modifications for use of EPIC handles;Pajas, Petr;DSpace;handle;EPIC;Modifications to DSpace made by Petr Pajas in order to support pidconsortium.eu PID handle system instead of the default handle.com system used by DSpace.;2010-01-13T15:06:26Z;toolService;http://hdl.handle.net/11858/00-097C-0000-0001-48F2-1;http://hdl.handle.net/11858/00-097C-0000-0023-4087-6;BSD 2-Clause \"Simplified\" or \"FreeBSD\" license;http://opensource.org/licenses/BSD-2-Clause;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://svn.ms.mff.cuni.cz/redmine/projects/dspace-modifications",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f30d90fc-fea3-55fc-9b08-cc3362af1464",
+    "notes": [
+        "Modifications to DSpace made by Petr Pajas in order to support pidconsortium.eu PID handle system instead of the default handle.com system used by DSpace."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F2-1"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "DSpace"
+        },
+        {
+            "name": "handle"
+        },
+        {
+            "name": "EPIC"
+        }
+    ],
+    "title": [
+        "Dspace modifications for use of EPIC handles"
+    ],
+    "url": ""
+}

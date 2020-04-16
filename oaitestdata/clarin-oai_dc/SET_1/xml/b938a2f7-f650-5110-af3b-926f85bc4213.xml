@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1463</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SQAD</dc:title>
+      <dc:creator>Medve&#271;, Marek</dc:creator>
+      <dc:creator>Hor&#225;k, Ale&#353;</dc:creator>
+      <dc:subject>question answering</dc:subject>
+      <dc:subject>Simple Question Answering Database</dc:subject>
+      <dc:subject>SQAD</dc:subject>
+      <dc:description>The SQAD database consists of 3301 records obtained from Czech Wikipedia articles. The record structure is following:&#13;
+- the original sentence(s) from Wikipedia&#13;
+-  a question that is directly answered in the text&#13;
+- the expected answer to the question as it appears in the original text&#13;
+- the URL of the Wikipedia web page from which the original text was extracted&#13;
+- name of the author of this SQAD record</dc:description>
+      <dc:date>2014-12-06</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1463</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>GNU General Public Licence, version 3</dc:rights>
+      <dc:rights>http://opensource.org/licenses/GPL-3.0</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-rar-compressed</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Masaryk University, NLP Centre</dc:publisher>
+      <dc:source>http://nlp.fi.muni.cz/projects/sqad/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0004/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0004/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0004/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-04-17T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Boyd, Peter G.",
+        "Moosavi, Seyed Mohamad",
+        "Sarkisov, Lev",
+        "Smit, Berend"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0004/v1;2019-06-12Z;DOI;Dataset;Moosavi, Seyed Mohamad;Boyd, Peter G.;Sarkisov, Lev;Smit, Berend;Improving the Mechanical Stability of Metal-Organic Frameworks Using Chemical Caryatids;Materials Cloud;2018-04-17;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;Nanoporous materials;Mechanical properties;Stability;MARVEL;doi:10.24435/materialscloud:2018.0004/v1;https://archive.materialscloud.org/2018.0004/v1;en;Metal-organic frameworks (MOFs) have emerged as versatile materials for applications ranging from gas separation and storage, catalysis, and sensing. The attractive feature of MOFs is that by changing the ligand and/or metal, they can be chemically tuned to perform optimally for a given application. In most, if not all, of these applications one also needs a material that has a sufficient mechanical stability, but our understanding of how changes in the chemical structure influence mechanical stability is limited. In this work, we rationalize how the mechanical properties of MOFs are related to framework bonding topology and ligand structure. We illustrate that the functional groups on the organic ligands can either enhance the mechanical stability through formation of a secondary network of non-bonded interactions, or soften the material by destabilizing the bonded network of a MOF. In addition, we show that synergistic effect of the bonding network of the material and the secondary network is required to achieve optimal mechanical stability of a MOF. The developed molecular insights in this work can be used for systematic improvement of the mechanical stability of the materials by careful selection of the functional groups.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "e5e51d77-b5b5-570a-b32c-7b048612251b",
+    "notes": [
+        "Metal-organic frameworks (MOFs) have emerged as versatile materials for applications ranging from gas separation and storage, catalysis, and sensing. The attractive feature of MOFs is that by changing the ligand and/or metal, they can be chemically tuned to perform optimally for a given application. In most, if not all, of these applications one also needs a material that has a sufficient mechanical stability, but our understanding of how changes in the chemical structure influence mechanical stability is limited. In this work, we rationalize how the mechanical properties of MOFs are related to framework bonding topology and ligand structure. We illustrate that the functional groups on the organic ligands can either enhance the mechanical stability through formation of a secondary network of non-bonded interactions, or soften the material by destabilizing the bonded network of a MOF. In addition, we show that synergistic effect of the bonding network of the material and the secondary network is required to achieve optimal mechanical stability of a MOF. The developed molecular insights in this work can be used for systematic improvement of the mechanical stability of the materials by careful selection of the functional groups."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0004/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Nanoporous materials"
+        },
+        {
+            "name": "Mechanical properties"
+        },
+        {
+            "name": "Stability"
+        },
+        {
+            "name": "MARVEL"
+        }
+    ],
+    "title": [
+        "Improving the Mechanical Stability of Metal-Organic Frameworks Using Chemical Caryatids"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0004/v1"
+}

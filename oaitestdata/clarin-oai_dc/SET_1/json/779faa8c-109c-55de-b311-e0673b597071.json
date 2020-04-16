@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "Welsh"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1400",
+    "MetadataAccess": [
+        "oai:ota:oucs:1400"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Romances"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1400;2018-05-25T13:48:34Z;http://ota.ox.ac.uk/headers/1400.xml; Kulhwch : [from] Llyfr Gwyn Rhydderch / compiled by Nancy H. Rose;Date unknown;text_and_corpus_linguistics;Myths and legends -- Wales;Romances -- Wales;cym;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Romances;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "779faa8c-109c-55de-b311-e0673b597071",
+    "oai_identifier": [
+        "oai:ota:oucs:1400"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Myths legends -- Wales"
+        },
+        {
+            "name": "Romances -- Wales"
+        }
+    ],
+    "title": [
+        " Kulhwch : [from] Llyfr Gwyn Rhydderch / compiled by Nancy H. Rose"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1400.xml"
+}

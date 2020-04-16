@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 9.46 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2113",
+    "MetadataAccess": [
+        "oai:ota:oucs:2113"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Blake, William, 1757-1827"
+    ],
+    "fulltext": "oai:ota:oucs:2113;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2113.xml;Poems. Selections;The book of Thel / by William Blake;Blake, William, 1757-1827;text_and_corpus_linguistics;Poems -- Great Britain -- 18th century;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 9.46 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "79b7afb7-e5a4-57a4-9208-aaa1e1509875",
+    "oai_identifier": [
+        "oai:ota:oucs:2113"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Poems. Selections",
+        "The book of Thel / by William Blake"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2113.xml"
+}

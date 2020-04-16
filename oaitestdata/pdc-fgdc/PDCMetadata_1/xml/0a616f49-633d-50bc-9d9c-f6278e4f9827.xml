@@ -1,0 +1,140 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>12005_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:34Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Nunatsiavut Government, Department of Lands and Natural Resources</origin>
+            <origin>Nunatsiavut Government, Department of Lands and Natural Resources</origin>
+            <pubdate>20150317</pubdate>
+            <title>Assessing the Roles of Community Values and Cultural Identity in Shaping Responses to Climate Change in Labrador</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Unpublished; TBD</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12005</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Firstly, semi-structured interviews were conducted with key stakeholders and decision makers to explore what values underpin ideas to which best adapt to climate change. A preliminary list of participants was drawn up based on a preliminary consultation with communities. Interview questions were developed following the consultation visit, and the questionnaire guide used a semi-structured format with open ended questions that explore people`s culture, identity, and values they hold. Analysis of the interviews was completed by qualitative coding of text passages in order to identify overarching themes. Finally, focus group workshops were also held to facilitate discussions on how values and cultural identity shape adaptation and visions of the future.</abstract>
+          <purpose>Communities in coastal Labrador are now and will continue to be affected by climate variability and change. The effects of the changing climate compound other pressures and stresses that communities in which they will need to adapt. The purpose of the project was to: (1) examine what roles and values and cultural identity play in shaping responses to climate change in Labrador and; (2) provide in-depth knowledge of how values and culture are likely elements that will impact adaptation measures in Labrador communities.</purpose>
+          <supplinf>Summary: N/A Research Program(s): APAN-AANDC - Adaptation Program for Aboriginals and Northerners. For further information: tom_sheldon@nunatsiavut.com</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20100401</begdate>
+              <enddate>20110331</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-61.78</westbc>
+            <eastbc>-61.72</eastbc>
+            <northbc>56.55</northbc>
+            <southbc>56.53</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Adaptation</themekey>
+            <themekey>Climate change</themekey>
+            <themekey>Community vulnerability</themekey>
+            <themekey>Cultural values</themekey>
+            <themekey>Labrador</themekey>
+          </theme>
+          <place>
+            <placekt>Labrador, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Aboriginal Affairs and Northern Development Canada</cntorg>
+              <cntper>Martin Tremblay - PDC</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>25, Eddy</address>
+              <city>Gatineau</city>
+              <state>QC</state>
+              <postal>K1A 0H4</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(819) 934-9210</cntvoice>
+            <cntfax>(819) 953-2590</cntfax>
+            <cntemail>adaptation@aadnc-aandc.gc.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>12005</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20150317</metd>
+        <metrd>20150317</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Martin Tremblay - PDC</cntper>
+              <cntorg>Aboriginal Affairs and Northern Development Canada</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>25, Eddy</address>
+              <city>Gatineau</city>
+              <state>QC</state>
+              <postal>K1A 0H4</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(819) 934-9210</cntvoice>
+            <cntfax>(819) 953-2590</cntfax>
+            <cntemail>adaptation@aadnc-aandc.gc.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

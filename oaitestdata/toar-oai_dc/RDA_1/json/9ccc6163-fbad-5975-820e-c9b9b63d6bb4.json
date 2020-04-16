@@ -1,0 +1,62 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://b2share-testing.fz-juelich.de/api/oai2d?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/d6454861a8bb463382121e28b71ab770",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/d6454861a8bb463382121e28b71ab770"
+    ],
+    "PublicationTimestamp": "2019-07-25T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "Creative Commons Attribution (CC-BY)"
+    ],
+    "author": [
+        "RDA2",
+        "Research Data Alliance Council"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/d6454861a8bb463382121e28b71ab770;2019-07-25T11:01:59Z;8d963a29-5e19-492b-8cfe-97da4f54fad2;Research Data Alliance Council;RDA2;2019-07-25T11:01:59.598779+00:00;A document describing the high-level structures of the Research Data Alliance Foundation. This document is separate from the regular governance document, which describes procedures and processes.;https://b2share-testing.fz-juelich.de/api/records/d6454861a8bb463382121e28b71ab770;oai:b2share.eudat.eu:b2rec/d6454861a8bb463382121e28b71ab770;info:eu-repo/semantics/openAccess;Creative Commons Attribution (CC-BY);Research Data Alliance;RDA;Governance;Foundation;RDA Policy;RDA Foundation Governance Document;Text",
+    "group": "toar",
+    "groups": [
+        {
+            "name": "toar"
+        }
+    ],
+    "name": "9ccc6163-fbad-5975-820e-c9b9b63d6bb4",
+    "notes": [
+        "A document describing the high-level structures of the Research Data Alliance Foundation. This document is separate from the regular governance document, which describes procedures and processes."
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/d6454861a8bb463382121e28b71ab770"
+    ],
+    "oai_set": [
+        "8d963a29-5e19-492b-8cfe-97da4f54fad2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Research Data Alliance"
+        },
+        {
+            "name": "RDA"
+        },
+        {
+            "name": "Governance"
+        },
+        {
+            "name": "Foundation"
+        },
+        {
+            "name": "RDA Policy"
+        }
+    ],
+    "title": [
+        "RDA Foundation Governance Document"
+    ],
+    "url": "https://b2share-testing.fz-juelich.de/api/records/d6454861a8bb463382121e28b71ab770"
+}

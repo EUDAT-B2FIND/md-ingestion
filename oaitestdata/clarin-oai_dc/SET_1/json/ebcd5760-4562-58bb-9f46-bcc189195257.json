@@ -1,0 +1,91 @@
+{
+    "Contributor": [
+        "Jukka Tyrkk\u00f6",
+        "Hendrik De Smet",
+        "Susanne Flach",
+        "Hans-J\u00fcrgen Diller"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:clmet-31",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:clmet-31"
+    ],
+    "PID": "http://hdl.handle.net/21.11119/0000-0002-43F3-0",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "RelatedIdentifier": [
+        "Diller, H., De Smet, H., Tyrkk\u00f6, J. (2011). A European database of descriptors of English electronic texts. The European English Messenger 19, 21-35."
+    ],
+    "ResourceType": [
+        "Collection",
+        "Written Corpus",
+        "Diachronic Corpus"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "Great Britain",
+        "Ireland",
+        "1710/1920"
+    ],
+    "TemporalCoverage": [
+        "Great Britain",
+        "Ireland",
+        "1710/1920"
+    ],
+    "author": [
+        "KU Leuven"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:clmet-31;2018-10-25T13:28:05Z;The Corpus of Late Modern English Texts, version 3.1;KU Leuven;Late Modern English;corpus linguistics;language change;written language;genre classification;CLMET3.1 is a principled collection of public domain texts drawn from various online archiving projects. In total, the corpus contains some 34 million words of running text. It incorporates CLMET, CLMETEV, and CLMET3.0, and has been compiled following roughly the same principles, that is:\n\n    The corpus covers the period 1710-1920, divided into three 70-year sub-periods.\n    The texts making up the corpus have all been written by British and Irish authors who are native speakers of English.\n    The corpus never contains more than three texts by the same author.\n    The texts within each sub-period have been written by authors born within a correspondingly restricted sub-period. \n\nHowever, compared to the earlier versions, it comes with a number of important improvements (in addition to being substantially bigger):\n\n    CLMET3.1 comes with an explicit genre classification.\n    It is approximately genre-balanced.\n    It is part-of-speech tagged.\n    The corpus files have standardized text headers containing descriptive meta-data.\n    For each text, explicit information is provided on text provenance.\n    The corpus architecture allows subsequent expansions. \n    The corpus is CWB compatible.;Hendrik De Smet;Susanne Flach;Hans-J\u00fcrgen Diller;Jukka Tyrkk\u00f6;2018;Collection;Written Corpus;Diachronic Corpus;application/zip;clarind-uds:clmet-31;hdl:21.11119/0000-0002-43F3-0;See corpus files;eng;Diller, H., De Smet, H., Tyrkk\u00f6, J. (2011). A European database of descriptors of English electronic texts. The European English Messenger 19, 21-35.;Great Britain;Ireland;1710/1920;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ebcd5760-4562-58bb-9f46-bcc189195257",
+    "notes": [
+        "CLMET3.1 is a principled collection of public domain texts drawn from various online archiving projects. In total, the corpus contains some 34 million words of running text. It incorporates CLMET, CLMETEV, and CLMET3.0, and has been compiled following roughly the same principles, that is:\n\n    The corpus covers the period 1710-1920, divided into three 70-year sub-periods.\n    The texts making up the corpus have all been written by British and Irish authors who are native speakers of English.\n    The corpus never contains more than three texts by the same author.\n    The texts within each sub-period have been written by authors born within a correspondingly restricted sub-period. \n\nHowever, compared to the earlier versions, it comes with a number of important improvements (in addition to being substantially bigger):\n\n    CLMET3.1 comes with an explicit genre classification.\n    It is approximately genre-balanced.\n    It is part-of-speech tagged.\n    The corpus files have standardized text headers containing descriptive meta-data.\n    For each text, explicit information is provided on text provenance.\n    The corpus architecture allows subsequent expansions. \n    The corpus is CWB compatible."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:clmet-31"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Late Modern English"
+        },
+        {
+            "name": "corpus linguistics"
+        },
+        {
+            "name": "language change"
+        },
+        {
+            "name": "written language"
+        },
+        {
+            "name": "genre classification"
+        }
+    ],
+    "title": [
+        "The Corpus of Late Modern English Texts, version 3.1"
+    ],
+    "url": ""
+}

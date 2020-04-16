@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17602313</identifier>
+    <datestamp>2019-06-13T17:25:44Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti &#245;igekeelsuss&#245;naraamatu &#213;S 2018 veebiversioon</dc:title>
+      <dc:title xml:lang="en">Online Dictionary of Standard Estonian &#213;S 2018 </dc:title>
+      <dc:creator>Raadik, Maire</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-11-23</dc:date>
+      <dc:date>Updated: 2018-11-23</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-079CEL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Kajastab eesti kirjakeele normi.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">&#213;S 2018 is a normative dictionary of modern standard Estonian. It shows the standardized spelling, pronunciation and inflection of words and gives recommendations on semantics and syntax. The dictionary has annexes on  abbreviations, geographical names and pronunciation of foreign names.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

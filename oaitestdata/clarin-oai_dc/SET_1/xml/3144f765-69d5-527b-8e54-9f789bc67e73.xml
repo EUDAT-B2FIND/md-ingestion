@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1167</identifier>
+    <datestamp>2016-04-06T16:39:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ANNIS</dc:title>
+      <dc:description>ANNIS2 is an open source, versatile web browser-based search and visualization architecture for complex multilevel linguistic corpora with diverse types of annotation. ANNIS, which stands for ANNotation of Information Structure, has been designed to provide access to the data of the SFB 632 - "Information Structure: The Linguistic Means for Structuring Utterances, Sentences and Texts". Since information structure interacts with linguistic phenomena on many levels, ANNIS2 addresses the SFB's need to concurrently annotate, query and visualize data from such varied areas as syntax, semantics, morphology, prosody, referentiality, lexis and more. For project working with spoken language, support for audio / video annotations is also required.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1167</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:publisher>University of Potsdam, Dept. of Linguistics</dc:publisher>
+      <dc:publisher>Humboldt-University Berlin, Institut f&#252;r deutsche Sprache und Linguistik</dc:publisher>
+      <dc:source>http://annis2.sfb632.uni-potsdam.de/Annis/search.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

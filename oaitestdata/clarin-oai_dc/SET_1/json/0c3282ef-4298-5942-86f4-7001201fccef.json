@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3512",
+    "MetadataAccess": [
+        "oai:ota:oucs:3512"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dudley, H. Bate, Sir (Henry Bate), 1745-1824."
+    ],
+    "fulltext": "oai:ota:oucs:3512;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3512.xml;Cursory remarks on Mr. Gilbert's last bill: for the better relief, and employment of the poor, &c. and his considerations thereon: in a letter to that gentleman. By H. Bate Dudley, ...;Dudley, H. Bate, Sir (Henry Bate), 1745-1824.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0c3282ef-4298-5942-86f4-7001201fccef",
+    "oai_identifier": [
+        "oai:ota:oucs:3512"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Cursory remarks on Mr. Gilbert's last bill: for the better relief, and employment of the poor, &c. and his considerations thereon: in a letter to that gentleman. By H. Bate Dudley, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3512.xml"
+}

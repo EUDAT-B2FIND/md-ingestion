@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "cev@ceh.ac.uk"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "Research site"
+    ],
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0c18db7d-78b0-53fe-ba2a-fafbb27e923b",
+    "Publisher": [
+        "Centre for Ecology & Hydrology"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(53N-53N,4 W-4 W)",
+    "author": [
+        "Chris Evans"
+    ],
+    "fulltext": "2eac4a5e-c339-47cf-9371-8f2b0cd8f175;English;utf8;dataset;Research site;Chris Evans;Centre for Ecology & Hydrology;cev@ceh.ac.uk;CEH Bangor, Environment Centre Wales, Deiniol Road Bangor LL57 2UW GB;Chris Evans;Centre for Ecology & Hydrology;cev@ceh.ac.uk;CEH Bangor, Environment Centre Wales, Deiniol Road Bangor LL57 2UW GB;Chris Evans;Centre for Ecology & Hydrology;cev@ceh.ac.uk;CEH Bangor, Environment Centre Wales, Deiniol Road Bangor LL57 2UW GB;2018-09-24;http://www.opengis.net/def/crs/EPSG/0/4326;Conwy;https://deims.org/site/2eac4a5e-c339-47cf-9371-8f2b0cd8f175;Mixed lowland and upland catchment established as a major UK research platform for ecological research, including long-term monitoring of greenhouse has fluxes and water quality, ecosystem-scale experiments, ecological and biogeochemical process studies and modelling. The Conwy catchment incorporates a range of habitats broadly representative of Wales, comprising upland bog and heath, mountain grassland, lowland improved grassland, conifer and broadleaf woodland.;The original metadata record was created using DEIMS-SDR, the Dynamic Ecological Information Management System - Site and dataset registry;Chris Evans;Centre for Ecology & Hydrology;cev@ceh.ac.uk;CEH Bangor, Environment Centre Wales, Deiniol Road Bangor LL57 2UW GB;Chris Evans;Centre for Ecology & Hydrology;cev@ceh.ac.uk;CEH Bangor, Environment Centre Wales, Deiniol Road Bangor LL57 2UW GB;Chris Evans;Centre for Ecology & Hydrology;cev@ceh.ac.uk;CEH Bangor, Environment Centre Wales, Deiniol Road Bangor LL57 2UW GB;site;emf2iso_pointer_record;agricultural parameter;amount of nitrate leaching;dissolved organic carbon in soil;nutrient concentration;nutrient content;soil fertility;atmospheric parameter;carbon dioxide concentration;air humidity;air temperature;heat flux;maximum temperature;mean annual air temperature;mean annual precipitation;mean annual temperature;minimum temperature;methane concentration;plant carbon concentration;solar radiation;wind direction;wind speed;biological parameter;above ground biomass;annual net primary production;leaf area;leaf area index;leaf nutrient;nitrogen content;plant carbon concentration;plant nitrogen concentration;chemical parameter;acid neutralizing capacity;air methane concentration;ammonium content;amount of nitrate leaching;available phosphorus;carbon to nitrogen ratio;chemical composition of water;dissolved organic nitrogen;inorganic nutrient content;insoluble organic carbon content;pH value of water;carbon dioxide concentration;dissolved nutrient;percent organic carbon;leaf nutrient;soil acidity;nitrogen content;soil carbon storage;soil nitrogen;soil nutrient;soil organic carbon;methane concentration;plant carbon concentration;soil solution pH;dissolved organic carbon in water;plant nitrogen concentration;dissolved organic carbon in soil;percent carbon;soil PH;soil solution concentration;suspended solids;nutrient concentration;nutrient content;total organic carbon;water acidity;water alkalinity;water turbidity;ecosystem parameter;above ground biomass;above ground net primary production;ammonium content;leaf area;carbon dioxide concentration;dissolved nutrient;percent organic carbon;leaf nutrient;percent carbon;soil microbial diversity;microbial diversity;total carbon;landscape parameter;land cover;land use;land use intensity;landscape composition;landscape metrics;heat flux;solar radiation;soil parameter;acid neutralizing capacity;ammonium content;available phosphorus;carbon dioxide concentration;percent organic carbon;carbon-to-nitrogen ratio;soil volumetric water content;soil moisture field capacity;soil temperature;soil texture;thickness of soil horizon;total organic carbon in soil;dissolved organic carbon in soil;percent carbon;soil PH;soil solution concentration;total organic carbon;water parameter;ammonium content;carbon dioxide concentration;nitrogen content;water acidity;conductivity;runoff;ammonium nitrogen content;dissolved organic phosphorus;water level;stage height;water quality;suspended solids;water table;water temperature;lake temperature;water volume;dissolved organic carbon in water;percent carbon;total organic carbon;continuousDataCollection;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;English;environment;-4.1748;-3.62549;53.0544;53.4292;2006-01-01;https://deims.org/2eac4a5e-c339-47cf-9371-8f2b0cd8f175;https://www.ceh.ac.uk/our-science/monitoring-site/conwy-source-sea-catchment-research-platform;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='2eac4a5e-c339-47cf-9371-8f2b0cd8f175'&outputFormat=SHAPE-ZIP;WFS GetFeature request for downloading the data set in SHP format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='2eac4a5e-c339-47cf-9371-8f2b0cd8f175'&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2;WFS GetFeature request for downloading the data set in GML 3.2 format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='2eac4a5e-c339-47cf-9371-8f2b0cd8f175'&outputFormat=application%2Fjson;WFS GetFeature request for downloading the data set in GeoJSON format;https://deims.org/node/240;United Kingdom (ECN);COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;This data set is conformant with the INSPIRE Implementing Rules for the interoperability of spatial data sets and services;false;Dataset has been created by data transformation from the original record collected by the site managers using DEIMS site metadata editing form.",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0c18db7d-78b0-53fe-ba2a-fafbb27e923b",
+    "notes": [
+        "Mixed lowland and upland catchment established as a major UK research platform for ecological research, including long-term monitoring of greenhouse has fluxes and water quality, ecosystem-scale experiments, ecological and biogeochemical process studies and modelling. The Conwy catchment incorporates a range of habitats broadly representative of Wales, comprising upland bog and heath, mountain grassland, lowland improved grassland, conifer and broadleaf woodland."
+    ],
+    "oai_identifier": [
+        "0c18db7d-78b0-53fe-ba2a-fafbb27e923b"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-4.1748,53.0544],[-4.1748,53.4292],[-3.62549,53.4292],[-3.62549,53.0544],[-4.1748,53.0544]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "site"
+        },
+        {
+            "name": "emfiso_pointer_record"
+        },
+        {
+            "name": "agricultural parameter"
+        },
+        {
+            "name": "amount nitrate leaching"
+        },
+        {
+            "name": "dissolved organic carbon soil"
+        },
+        {
+            "name": "nutrient concentration"
+        },
+        {
+            "name": "nutrient content"
+        },
+        {
+            "name": "soil fertility"
+        },
+        {
+            "name": "atmospheric parameter"
+        },
+        {
+            "name": "carbon dioxide concentration"
+        },
+        {
+            "name": "air humidity"
+        },
+        {
+            "name": "air temperature"
+        }
+    ],
+    "title": [
+        "Conwy"
+    ],
+    "url": "https://deims.org/node/240"
+}

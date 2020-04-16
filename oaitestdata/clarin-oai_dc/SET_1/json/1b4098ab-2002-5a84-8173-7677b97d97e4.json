@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=3986375c568611e2a2aa782bcb074135a5a6e077fbba41fea04b83c43bc70e1a",
+    "MetadataAccess": [
+        "3986375c568611e2a2aa782bcb074135a5a6e077fbba41fea04b83c43bc70e1a"
+    ],
+    "PublicationTimestamp": "2013-01-04T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "3986375c568611e2a2aa782bcb074135a5a6e077fbba41fea04b83c43bc70e1a;2018-11-15T16:39:59Z;toolService;toolService:suiteOfTools;ComLinToo: The Computational Linguistics Toolset;The Computational Linguistics Toolset is a set of tools for computational linguistics. It contains re-usable code for cleaning, splitting, refining, and taking samples from corpora (ICE, Penn, and a native one), for tagging them using the TnT-tagger, for doing permutation statistics on N-grams (useful for finding statistically significant syntactical differences between any two sets of tagged texts), and various examination-tools. The tools themselves are well documented;2013-01-04",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1b4098ab-2002-5a84-8173-7677b97d97e4",
+    "notes": [
+        "The Computational Linguistics Toolset is a set of tools for computational linguistics. It contains re-usable code for cleaning, splitting, refining, and taking samples from corpora (ICE, Penn, and a native one), for tagging them using the TnT-tagger, for doing permutation statistics on N-grams (useful for finding statistically significant syntactical differences between any two sets of tagged texts), and various examination-tools. The tools themselves are well documented"
+    ],
+    "oai_identifier": [
+        "3986375c568611e2a2aa782bcb074135a5a6e077fbba41fea04b83c43bc70e1a"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:suiteOfTools"
+    ],
+    "state": "active",
+    "title": [
+        "ComLinToo: The Computational Linguistics Toolset"
+    ]
+}

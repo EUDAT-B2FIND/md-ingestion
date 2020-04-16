@@ -1,0 +1,64 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.822361",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.822361"
+    ],
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(24N-25N,58E-59E)",
+    "TempCoverageBegin": 62964385199,
+    "TempCoverageEnd": 62964385199,
+    "TemporalCoverage": " point in time : 1996-04-06T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1996-04-06T11:59:59Z",
+    "TemporalCoverage:EndDate": "1996-04-06T11:59:59Z",
+    "author": [
+        "GTSPP"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.822361;2017-08-05T09:31:55Z;ASPS;JGOFSCountryUnknown;10.1594/PANGAEA.822361;GTSPP;Physical oceanography during cruise NV96;PANGAEA - Data Publisher for Earth & Environmental Science;2013;Event label;Date/Time of event;Latitude of event;Longitude of event;DEPTH, water;Pressure, water;Temperature, water;Salinity;Temperature, water, potential;Density, sigma-theta (0);NV96;Global Temperature-Salinity Profile Program (GTSPP);Joint Global Ocean Flux Study (JGOFS);1996-04-06T02:58:00/1996-04-10T06:56:00;eng;Dataset;10013/epic.40681.d001;435 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);24.5 57.5167 24.8667 58.67",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.822361"
+    ],
+    "oai_set": [
+        "ASPS",
+        "JGOFSCountryUnknown"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[57.5167,24.5],[57.5167,24.8667],[58.67,24.8667],[58.67,24.5],[57.5167,24.5]]]}",
+    "tags": [
+        {
+            "name": "NV"
+        },
+        {
+            "name": "Global Temperature-Salinity Profile Program GTSPP"
+        },
+        {
+            "name": "Joint Global Ocean Flux Study JGOFS"
+        }
+    ],
+    "title": [
+        "Physical oceanography during cruise NV96"
+    ],
+    "url": ""
+}

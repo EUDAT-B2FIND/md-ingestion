@@ -1,0 +1,102 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/52149",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=0d05b91e-7713-51ea-96a4-99f727c41e06",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/312463/EU//FIXO3"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY"
+    ],
+    "SpatialCoverage": "(37N-37N,32W-32W)",
+    "TempCoverageBegin": 95065185599,
+    "TempCoverageEnd": 95065185599,
+    "TemporalCoverage": " point in time : 3013-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "3013-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "3013-07-01T11:59:59Z",
+    "author": [
+        "Rodier, Philippe",
+        "Sarrazin, Jozee",
+        "Sarradin, Pierre-marie",
+        "Brulport, Jean-pierre",
+        "Matabos, Marjolaine",
+        "Cannat, Mathilde"
+    ],
+    "fulltext": "oai:seanoe.org:52149;2017-11-22;GROUP:EMSO;Autonomous ibuttons temperature data from the EMSO-Azores observatory, 2015-2016;Matabos, Marjolaine;Brulport, Jean-pierre;Rodier, Philippe;Sarrazin, Jozee;Sarradin, Pierre-marie;Cannat, Mathilde;Mid-Atlantic Ridge;EMSO-A\u00e7ores;Hydrothermal Vents;Lucky Strike;Eiffel Tower;Temperature;TEMPO;Time-series;MoMAR;MoMARSAT2015;Bathymodiolus azoricus assemblage;Environment;This dataset contains temperature data acquired between April 2015 and September 2016 using16 thermocrons i-buttons \u00a9 installed along chains in the field of view of the SMOOVE camera connected the SeaMoN East frame. Data was acquired every 2 hours. The array is not connected to an energy node. They are associated with the SMOOVE camera which is part of the SeaMoN East ecological monitoring node.\n;SEANOE;2017;dataset;DOI:10.17882/52149;http://dx.doi.org/10.17882/52149;info:eu-repo/grantAgreement/EC/FP7/312463/EU//FIXO3;North 37.30134, South 37.2888, East -32.275618, West -32.27982;https://www.seanoe.org/data/00410/52149/illustration.gif;37.2888 -32.27982 37.30134 -32.275618;CC-BY",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "0d05b91e-7713-51ea-96a4-99f727c41e06",
+    "notes": [
+        "This dataset contains temperature data acquired between April 2015 and September 2016 using16 thermocrons i-buttons \u00a9 installed along chains in the field of view of the SMOOVE camera connected the SeaMoN East frame. Data was acquired every 2 hours. The array is not connected to an energy node. They are associated with the SMOOVE camera which is part of the SeaMoN East ecological monitoring node.\n"
+    ],
+    "oai_identifier": [
+        "0d05b91e-7713-51ea-96a4-99f727c41e06"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-32.27982,37.2888],[-32.27982,37.30134],[-32.275618,37.30134],[-32.275618,37.2888],[-32.27982,37.2888]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Mid-Atlantic Ridge"
+        },
+        {
+            "name": "Mid-Atlantic Ridge"
+        },
+        {
+            "name": "Hydrothermal Vents"
+        },
+        {
+            "name": "Lucky Strike"
+        },
+        {
+            "name": "Eiffel Tower"
+        },
+        {
+            "name": "Temperature"
+        },
+        {
+            "name": "TEMPO"
+        },
+        {
+            "name": "Time-series"
+        },
+        {
+            "name": "MoMAR"
+        },
+        {
+            "name": "MoMARSAT"
+        },
+        {
+            "name": "Bathymodiolus azoricus assemblage"
+        },
+        {
+            "name": "Environment"
+        }
+    ],
+    "title": [
+        "Autonomous ibuttons temperature data from the EMSO-Azores observatory, 2015-2016"
+    ],
+    "url": ""
+}

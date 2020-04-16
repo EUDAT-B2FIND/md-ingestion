@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 4",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1213",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1213"
+    ],
+    "PID": "http://hdl.handle.net/11356/1213",
+    "PublicationTimestamp": "2019-02-13T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://www.lrec-conf.org/proceedings/lrec2010/summaries/139.html",
+        "http://hdl.handle.net/11356/1037"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+        "https://creativecommons.org/licenses/by-nc/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Krek, Simon",
+        "Erjavec, Toma\u017e",
+        "Dobrovoljc, Kaja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1213;2019-02-13T17:15:30Z;hdl_11356_1023;hdl_11356_1024;Training corpus jos1M 1.2;Erjavec, Toma\u017e;Krek, Simon;Dobrovoljc, Kaja;tagging;lemmatisation;manual annotation;TEI;CONLL-U;The jos1M corpus contains 1 million words of sampled paragraphs from the Gigafida corpus. It is meant to serve as a training corpus for word-level tagging of Slovene. This silver-standard corpus is annotated for morphosyntactic descriptions and lemmas with about one fourth of the more problematic annotations hand-validated.\r\n\r\nThe morphosyntactic descriptions are given in both the JOS/MULTEXT-East framework (http://nl.ijs.si/ME/V6/msd/), as well as in the framework of Universal Dependencies for Slovene (https://universaldependencies.org/treebanks/sl_ssj/index.html).\r\n\r\nThe corpus is available in source TEI XML with the MSDs in English or Slovene and in the derived vertical format, used by CQP and (no)Sketch Engine concordancers and in CONLL-U, used by Universal Dependencies. Note that the corpus does not contain syntactic dependencies. \r\n\r\nThe texts or paragraphs of the jos1M corpus overlap with this of the ssj500k annotated corpus (http://hdl.handle.net/11356/1210), but the latter has been fully manually annotated, as well as having its tokenisation and sentence segmentation corrected. The texts and paragraphs in the jos1M corpus are marked if they are also included in ssj500k, while the CONLL-U is also split into the part that is included in ssj500k and that which is not. The latter can serve as an additional training set for morphosyntactic tagging and lemmatisation to ssj500k.;2019-02-13;corpus;http://hdl.handle.net/11356/1213;slv;http://www.lrec-conf.org/proceedings/lrec2010/summaries/139.html;http://hdl.handle.net/11356/1037;Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0);https://creativecommons.org/licenses/by-nc/4.0/;PUB;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 4;Jo\u017eef Stefan Institute;http://nl.ijs.si/jos/jos1M-en.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "19bb64c4-89f9-5c25-a3a1-5eb4e0fc74cb",
+    "notes": [
+        "The jos1M corpus contains 1 million words of sampled paragraphs from the Gigafida corpus. It is meant to serve as a training corpus for word-level tagging of Slovene. This silver-standard corpus is annotated for morphosyntactic descriptions and lemmas with about one fourth of the more problematic annotations hand-validated.\r\n\r\nThe morphosyntactic descriptions are given in both the JOS/MULTEXT-East framework (http://nl.ijs.si/ME/V6/msd/), as well as in the framework of Universal Dependencies for Slovene (https://universaldependencies.org/treebanks/sl_ssj/index.html).\r\n\r\nThe corpus is available in source TEI XML with the MSDs in English or Slovene and in the derived vertical format, used by CQP and (no)Sketch Engine concordancers and in CONLL-U, used by Universal Dependencies. Note that the corpus does not contain syntactic dependencies. \r\n\r\nThe texts or paragraphs of the jos1M corpus overlap with this of the ssj500k annotated corpus (http://hdl.handle.net/11356/1210), but the latter has been fully manually annotated, as well as having its tokenisation and sentence segmentation corrected. The texts and paragraphs in the jos1M corpus are marked if they are also included in ssj500k, while the CONLL-U is also split into the part that is included in ssj500k and that which is not. The latter can serve as an additional training set for morphosyntactic tagging and lemmatisation to ssj500k."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1213"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "lemmatisation"
+        },
+        {
+            "name": "manual annotation"
+        },
+        {
+            "name": "TEI"
+        },
+        {
+            "name": "CONLL-U"
+        }
+    ],
+    "title": [
+        "Training corpus jos1M 1.2"
+    ],
+    "url": ""
+}

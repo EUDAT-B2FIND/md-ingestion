@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9310574</identifier>
+    <datestamp>2019-06-12T07:02:38Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">S&#252;non&#252;&#252;mis&#245;nastik</dc:title>
+      <dc:title xml:lang="en">The Dictionary of Estonian Synonyms</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:creator>&#213;im, Asta</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-10-19</dc:date>
+      <dc:date>Updated: 2017-03-03</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05AF3L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Pakub kirjas ja k&#245;nes kasutatavaid s&#252;non&#252;&#252;me, sealhulgas valiku vanemaid, murdelisi ning k&#245;nekeelseid s&#245;nu v&#245;i v&#228;ljendeid, samuti termineid ning kantselei- ja stampkeelendeid.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">This is a comprehensive dictionary of Estonian synonyms, offering words used in writing and/or speech, including a selection of older, dialectal and colloquial words or expressions, plus some special terms as well as red-tape and stereotyped expressions. </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

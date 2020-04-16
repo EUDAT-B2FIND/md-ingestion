@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5671",
+    "MetadataAccess": [
+        "oai:ota:oucs:5671"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Amory, Thomas, 1691?-1788?"
+    ],
+    "fulltext": "oai:ota:oucs:5671;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5671.xml;The life of John Buncle: Esq; containing various observations and reflections, made in several parts of the world, and many extraordinary relations. [pt.2];Amory, Thomas, 1691?-1788?;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3e0dcb34-8b9c-5eb6-96d3-71e5392da0db",
+    "oai_identifier": [
+        "oai:ota:oucs:5671"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The life of John Buncle: Esq; containing various observations and reflections, made in several parts of the world, and many extraordinary relations. [pt.2]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5671.xml"
+}

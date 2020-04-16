@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4656",
+    "MetadataAccess": [
+        "oai:ota:oucs:4656"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Delap, J. (John), 1725-1812."
+    ],
+    "fulltext": "oai:ota:oucs:4656;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4656.xml;Elegy on the death of His Grace the Duke of Rutland. By Dr. Delap;Delap, J. (John), 1725-1812.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5a878450-a248-5282-8ac4-afcf42b873e6",
+    "oai_identifier": [
+        "oai:ota:oucs:4656"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Elegy on the death of His Grace the Duke of Rutland. By Dr. Delap"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4656.xml"
+}

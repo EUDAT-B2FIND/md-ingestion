@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2427</identifier>
+    <datestamp>2018-07-02T22:05:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Czech Multiword Expressions</dc:title>
+      <dc:creator>Nev&#283;&#345;ilov&#225;, Zuzana</dc:creator>
+      <dc:subject>multiword expressions</dc:subject>
+      <dc:description>The dataset contains 4731 frozen continuous Czech multiword expressions. Inflectional word forms are generated for those MWEs where applicable. In total, the dataset contains 24,807 MWE forms.</dc:description>
+      <dc:date>2017-09-30</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2427</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Public Domain Mark (PD)</dc:rights>
+      <dc:rights>http://creativecommons.org/publicdomain/mark/1.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Faculty of Informatics, Masaryk University</dc:publisher>
+      <dc:source>https://nlp.fi.muni.cz/projekty/mwes/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

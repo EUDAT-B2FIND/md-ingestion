@@ -1,0 +1,63 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-154128138",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:17555631",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17555631"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63678225599,
+    "TempCoverageEnd": 63678225599,
+    "TemporalCoverage": " point in time : 2018-11-19T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-11-19T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-11-19T11:59:59Z",
+    "author": [
+        "Marie SKEPO",
+        "Sandeep CHAKANE",
+        "Stephanie JEPHTHAH"
+    ],
+    "fulltext": "oai:oai.datacite.org:17555631;2018-11-19T08:20:58Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-154128138;Marie SKEPO;Stephanie JEPHTHAH;Sandeep CHAKANE;To understand the antimicrobial activity of the salivary protein Histatin 5;Macromolecular Crystallography;MX-2141;bm29;European Synchrotron Radiation Facility;2018-11-19;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "1ec57af4-3930-56d7-b8d5-b1d7a80b3ece",
+    "oai_identifier": [
+        "oai:oai.datacite.org:17555631"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Macromolecular Crystallography"
+        },
+        {
+            "name": "MX-"
+        },
+        {
+            "name": "bm"
+        }
+    ],
+    "title": [
+        "To understand the antimicrobial activity of the salivary protein Histatin 5"
+    ],
+    "url": ""
+}

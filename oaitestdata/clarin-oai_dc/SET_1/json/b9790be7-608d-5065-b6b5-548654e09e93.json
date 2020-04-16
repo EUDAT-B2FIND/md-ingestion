@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Paddy Bullard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2620",
+    "MetadataAccess": [
+        "oai:ota:oucs:2620"
+    ],
+    "PublicationTimestamp": "1710-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1710"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Jonathan Swift Archive"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Swift, Jonathan, 1667-1745"
+    ],
+    "fulltext": "oai:ota:oucs:2620;2018-08-02T14:11:37Z;http://ota.ox.ac.uk/headers/2620.xml;Curll's Complete key to The tale of a tub;Swift, Jonathan, 1667-1745;1710;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Paddy Bullard;Text;Jonathan Swift Archive;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b9790be7-608d-5065-b6b5-548654e09e93",
+    "oai_identifier": [
+        "oai:ota:oucs:2620"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Curll's Complete key to The tale of a tub"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2620.xml"
+}

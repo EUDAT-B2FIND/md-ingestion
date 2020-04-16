@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 4",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1204",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1204"
+    ],
+    "PID": "http://hdl.handle.net/11356/1204",
+    "PublicationTimestamp": "2018-11-26T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1204;2018-11-26T18:25:22Z;hdl_11356_1023;hdl_11356_1024;Word embeddings CLARIN.SI-embed.sl 1.0;Ljube\u0161i\u0107, Nikola;Erjavec, Toma\u017e;word embeddings;lemmatisation;tagging;CLARIN.SI-embed.sl contains word embeddings induced from a large collection of Slovene texts composed of existing corpora of Slovene, e.g GigaFida, Janes, KAS, slWaC etc. The embeddings are based on the skip-gram model of fastText trained on 3,557,125,771 tokens of running text for (1) 2,466,596 lowercased surface forms (e.g., \"slovenije\") and (2) 2,093,848 lowercased lemmas with added part-of-speech information (e.g., \"slovenija#Np\").;2018-11-26;lexicalConceptualResource;http://hdl.handle.net/11356/1204;slv;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/zip;application/octet-stream;application/zip;text/plain; charset=utf-8;downloadable_files_count: 4;Jo\u017eef Stefan Institute",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8b6b85b6-75dd-56ac-a84b-4a5c3f9563c5",
+    "notes": [
+        "CLARIN.SI-embed.sl contains word embeddings induced from a large collection of Slovene texts composed of existing corpora of Slovene, e.g GigaFida, Janes, KAS, slWaC etc. The embeddings are based on the skip-gram model of fastText trained on 3,557,125,771 tokens of running text for (1) 2,466,596 lowercased surface forms (e.g., \"slovenije\") and (2) 2,093,848 lowercased lemmas with added part-of-speech information (e.g., \"slovenija#Np\")."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1204"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "word embeddings"
+        },
+        {
+            "name": "lemmatisation"
+        },
+        {
+            "name": "tagging"
+        }
+    ],
+    "title": [
+        "Word embeddings CLARIN.SI-embed.sl 1.0"
+    ],
+    "url": ""
+}

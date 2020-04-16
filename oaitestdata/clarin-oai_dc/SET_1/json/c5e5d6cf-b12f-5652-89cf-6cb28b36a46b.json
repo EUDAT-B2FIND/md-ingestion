@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Dabrowska"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 6",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/69",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/69"
+    ],
+    "PID": "http://hdl.handle.net/11321/69",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Dabrowska"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Dabrowska, Dabrowska"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/69;2015-05-19T13:34:59Z;hdl_11321_3;hdl_11321_4;MWE Dabrowska;Dabrowska, Dabrowska;Dabrowska;2015-04-08;corpus;http://hdl.handle.net/11321/69;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain;text/plain;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 6;Dabrowska",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c5e5d6cf-b12f-5652-89cf-6cb28b36a46b",
+    "notes": [
+        "Dabrowska"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/69"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE Dabrowska"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4370",
+    "MetadataAccess": [
+        "oai:ota:oucs:4370"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Janeway, James, 1636?-1674."
+    ],
+    "fulltext": "oai:ota:oucs:4370;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4370.xml;Invisibles, realities: demonstrated in the holy life and triumphant death of Mr. John Janeway, ... By James Janeway, ...;Janeway, James, 1636?-1674.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f27ad80c-5c33-5bdd-b80a-329249166d40",
+    "oai_identifier": [
+        "oai:ota:oucs:4370"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Invisibles, realities: demonstrated in the holy life and triumphant death of Mr. John Janeway, ... By James Janeway, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4370.xml"
+}

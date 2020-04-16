@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17979318</identifier>
+    <datestamp>2019-05-08T02:02:38Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Mallip&#245;hine faktituletaja</dc:title>
+      <dc:creator>Laur, Sven</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-10</dc:date>
+      <dc:date>Updated: 2019-01-10</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00197L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Tarkvarakomponent suudab vabatekstidest &#245;ppida erinevaid seoseid ning nende abil eraldada struktureeritud infot. Seosed v&#245;ivad olla lihtsad nagu isikunimed ja organisatsioonid v&#245;i keerulisemad nagu firmade peakontorite asukohad.
+
+Meetod vajab sisendiks korpust, milles on meid huvitav seos m&#228;rgendatud. Seej&#228;rel leitakse automaatselt sobivad mallid ja koostatakse mudel, mis antud seost v&#245;imalikult h&#228;sti tuvastaksid. Tulemusena saame m&#228;rgendamata vabatekstidest leida uusi seosele vastavaid n&#228;iteid.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

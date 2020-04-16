@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/52943",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=1af3b1e0-e7ef-5a85-b619-b7cdc140f3c4",
+    "PublicationTimestamp": "2018-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-NC"
+    ],
+    "SpatialCoverage": "(44N-44N,7 E-7 E)",
+    "TempCoverageBegin": 222870830399,
+    "TempCoverageEnd": 222870830399,
+    "TemporalCoverage": " point in time : 7063-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "7063-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "7063-07-01T11:59:59Z",
+    "author": [
+        "De Li\u00e8ge, Guillaume",
+        "Petit, Franck",
+        "Irisson, Jean-olivier",
+        "Faillettaz, Robin"
+    ],
+    "fulltext": "oai:seanoe.org:52943;2018-01-26;RadeICHTHYO : Abundance of settlement-stage fish larvae (ichthyoplankton) in the bay of Villefranche-sur-mer;Irisson, Jean-olivier;Faillettaz, Robin;Petit, Franck;De Li\u00e8ge, Guillaume;fish;larvae;ichthyoplankton;recruitment;settlement;light-trap;CARE;Most coastal fishes display a bipartite life history, whereby adults live on the coast and are quite sedentery but produce larvae that are pelagic for a few days to a few weeks. The outcome of this pelagic episode influences future stocks of adults as well as the connectity among coastal populations.\nWe monitor the supply of larvae to the bay of Villefranche-sur-Mer (43.69\u00b0N,\u00a07.315\u00b0E) by capturing settling larvae using CARE light-traps. Traps are set in the evening and collected the next morning, usually every week (with some variations: more intense effort during some periods and some missing dates due to weather constraints).\nHere we report:\n\t- the date of collection of the traps (`date`)\n\t- the identification of organisms (`family`, `genus`, `species`; when individuals can only be identified to family or genus, the subsequent fields are left blank)\n\t- the number of individuals\u00a0caught (`n`)\n\t- the number of traps set (`sampling_effort`)\n\t- the Catch Per Unit Effort (`cpue`=`n`/`sampling_effort`)\n\t- the location of sampling (`lat` and `lon` of the bay of Villefranche-sur-Mer).\nAll coastal fish species caught are reported so if a species is not reported on a given date, it can be considered absent (even though it is not explicitely set to 0 in the file). Nights over which no coastal fish larvae were caught are reported with empty identification and 0 for `n` and `cpue`.\nThis dataset can be dynamically explored at http://www.obs-vlfr.fr/data/view/fish/rade/.\n;SEANOE;2018-01-10;dataset;DOI:10.17882/52943;http://dx.doi.org/10.17882/52943;North 43.706359, South 43.679549, East 7.330284, West 7.302818;https://www.seanoe.org/data/00418/52943/illustration.gif;43.679549 7.302818 43.706359 7.330284;CC-BY-NC",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "1af3b1e0-e7ef-5a85-b619-b7cdc140f3c4",
+    "notes": [
+        "Most coastal fishes display a bipartite life history, whereby adults live on the coast and are quite sedentery but produce larvae that are pelagic for a few days to a few weeks. The outcome of this pelagic episode influences future stocks of adults as well as the connectity among coastal populations.\nWe monitor the supply of larvae to the bay of Villefranche-sur-Mer (43.69\u00b0N,\u00a07.315\u00b0E) by capturing settling larvae using CARE light-traps. Traps are set in the evening and collected the next morning, usually every week (with some variations: more intense effort during some periods and some missing dates due to weather constraints).\nHere we report:\n\t- the date of collection of the traps (`date`)\n\t- the identification of organisms (`family`, `genus`, `species`; when individuals can only be identified to family or genus, the subsequent fields are left blank)\n\t- the number of individuals\u00a0caught (`n`)\n\t- the number of traps set (`sampling_effort`)\n\t- the Catch Per Unit Effort (`cpue`=`n`/`sampling_effort`)\n\t- the location of sampling (`lat` and `lon` of the bay of Villefranche-sur-Mer).\nAll coastal fish species caught are reported so if a species is not reported on a given date, it can be considered absent (even though it is not explicitely set to 0 in the file). Nights over which no coastal fish larvae were caught are reported with empty identification and 0 for `n` and `cpue`.\nThis dataset can be dynamically explored at http://www.obs-vlfr.fr/data/view/fish/rade/.\n"
+    ],
+    "oai_identifier": [
+        "1af3b1e0-e7ef-5a85-b619-b7cdc140f3c4"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[7.302818,43.679549],[7.302818,43.706359],[7.330284,43.706359],[7.330284,43.679549],[7.302818,43.679549]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "fish"
+        },
+        {
+            "name": "larvae"
+        },
+        {
+            "name": "ichthyoplankton"
+        },
+        {
+            "name": "recruitment"
+        },
+        {
+            "name": "settlement"
+        },
+        {
+            "name": "light-trap"
+        },
+        {
+            "name": "CARE"
+        }
+    ],
+    "title": [
+        "RadeICHTHYO : Abundance of settlement-stage fish larvae (ichthyoplankton) in the bay of Villefranche-sur-mer"
+    ],
+    "url": ""
+}

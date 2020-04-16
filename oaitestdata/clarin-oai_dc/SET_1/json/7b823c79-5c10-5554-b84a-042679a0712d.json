@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Kaluzi\u0144ska"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "text/plain; charset=utf-8",
+        "text/plain",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/243",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/243"
+    ],
+    "PID": "http://hdl.handle.net/11321/243",
+    "PublicationTimestamp": "2016-01-27T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Kaluzi\u0144ska"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Ka, Emilia"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/243;2017-04-04T10:15:15Z;hdl_11321_3;hdl_11321_4;Tekst reklam TVP ABC ver.2;Ka, Emilia;reklama;tekst reklam emitowanych na tvp abc;2016-01-27;corpus;http://hdl.handle.net/11321/243;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;text/plain;application/zip;application/zip;application/zip;application/zip;downloadable_files_count: 5;Kaluzi\u0144ska",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7b823c79-5c10-5554-b84a-042679a0712d",
+    "notes": [
+        "tekst reklam emitowanych na tvp abc"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/243"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "reklama"
+        }
+    ],
+    "title": [
+        "Tekst reklam TVP ABC ver.2"
+    ],
+    "url": ""
+}

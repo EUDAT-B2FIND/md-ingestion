@@ -1,0 +1,27 @@
+{
+    "dataLevel": {
+        "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+        "type": "literal",
+        "value": "0"
+    },
+    "dobj": {
+        "type": "uri",
+        "value": "https://meta.icos-cp.eu/objects/81_hBMxk-NctP7mUZQD4eHJ2"
+    },
+    "fileName": {
+        "type": "literal",
+        "value": "OPE_563_3_20171008.zip"
+    },
+    "spec": {
+        "type": "literal",
+        "value": "ICOS ATC Meteorological data csv time series"
+    },
+    "submitterName": {
+        "type": "literal",
+        "value": "Atmosphere thematic center"
+    },
+    "time": {
+        "type": "literal",
+        "value": "2018-06-19T09:41:46.515Z"
+    }
+}

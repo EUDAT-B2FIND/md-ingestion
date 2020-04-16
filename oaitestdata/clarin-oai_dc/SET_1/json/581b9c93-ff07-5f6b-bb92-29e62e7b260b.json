@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5346",
+    "MetadataAccess": [
+        "oai:ota:oucs:5346"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Goldsmith, Oliver, 1730?-1774."
+    ],
+    "fulltext": "oai:ota:oucs:5346;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5346.xml;The miscellaneous works of Oliver Goldsmith, M.B. Containing all his essays and poems;Goldsmith, Oliver, 1730?-1774.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "581b9c93-ff07-5f6b-bb92-29e62e7b260b",
+    "oai_identifier": [
+        "oai:ota:oucs:5346"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The miscellaneous works of Oliver Goldsmith, M.B. Containing all his essays and poems"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5346.xml"
+}

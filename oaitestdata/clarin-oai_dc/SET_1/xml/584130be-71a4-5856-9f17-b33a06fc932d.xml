@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>1080f78c18e511e6a2aa782bcb074135cc49b387f62540ec8422441f375c1f65</identifier>
+    <datestamp>2018-11-15T16:40:20Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>News-QTLeap WSD/NED corpus</dc:title>
+      <dc:description>The texts are sentences from the News parallel corpus. The texts contain monolingual sentences from parallel corpora for the following pairs: Basque-English, Bulgarian-English, Czech-English, Portuguese-English and Spanish-English. The English corpus is comprised by the English side of the Spanish-English corpus.
+The texts have been automatically annotated with NLP tools, including Word
+Sense Disambiguation, Named Entity Disambiguation and Coreference
+resolution.</dc:description>
+      <dc:date>2016-05-13</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

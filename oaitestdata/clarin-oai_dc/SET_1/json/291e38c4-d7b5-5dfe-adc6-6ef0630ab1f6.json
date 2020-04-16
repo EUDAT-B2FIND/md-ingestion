@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=951aa0106c0411e2a2aa782bcb0741355b8c1b8dc35844d08dc1d9ff804c482a",
+    "MetadataAccess": [
+        "951aa0106c0411e2a2aa782bcb0741355b8c1b8dc35844d08dc1d9ff804c482a"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "951aa0106c0411e2a2aa782bcb0741355b8c1b8dc35844d08dc1d9ff804c482a;2018-11-15T16:40:09Z;toolService;toolService:service;U-Compare Syntactic Parsing Service;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Carries out syntactic parsing on plain text\nTools in workflow: Cafetiere Sentence Splitter (University of Manchester), OpenNLP Tokenizer (Apache), STEPP Tagger (University of Manchester), Enju Parser (University of Manchester)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "291e38c4-d7b5-5dfe-adc6-6ef0630ab1f6",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Carries out syntactic parsing on plain text\nTools in workflow: Cafetiere Sentence Splitter (University of Manchester), OpenNLP Tokenizer (Apache), STEPP Tagger (University of Manchester), Enju Parser (University of Manchester)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n"
+    ],
+    "oai_identifier": [
+        "951aa0106c0411e2a2aa782bcb0741355b8c1b8dc35844d08dc1d9ff804c482a"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Syntactic Parsing Service"
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 1.19 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2018",
+    "MetadataAccess": [
+        "oai:ota:oucs:2018"
+    ],
+    "PublicationTimestamp": "1881-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1881"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "James, Henry, 1843-1916"
+    ],
+    "fulltext": "oai:ota:oucs:2018;2018-03-01T12:11:48Z;http://ota.ox.ac.uk/headers/2018.xml;The portrait of a lady / by Henry James;James, Henry, 1843-1916;1881;text_and_corpus_linguistics;Fiction -- Great Britain -- 19th century;Novels -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 1.19 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c84cc5f0-98d8-5e6b-a5e1-2d3fe39ab8de",
+    "oai_identifier": [
+        "oai:ota:oucs:2018"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Great Britain -- th century"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The portrait of a lady / by Henry James"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2018.xml"
+}

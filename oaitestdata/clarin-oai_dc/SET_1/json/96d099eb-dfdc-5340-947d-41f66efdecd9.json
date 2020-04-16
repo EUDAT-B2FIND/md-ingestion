@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Akademicka"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189308",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189308"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CF6-C",
+    "PublicationTimestamp": "1746-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1746"
+    ],
+    "Publisher": [
+        "Drukarnia Akademicka"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/189308",
+        "oai:jbc.bj.uj.edu.pl:publication:200432"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Wr\u00f3blewski, Roman ( -1769)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189308;2019-03-01T11:09:55Z;Chrystus Bolei\u0105cy od grzesznikow w Morzu Krwi Jego w\u0142asney Pogr\u0105zony : Na Herbowney Lod\u017ai [...] Miko\u0142aia Stefana z Chrz\u0105stowa Chrz\u0105stowskiego [...] Opata Koronowskiego Prze\u015bwietnego Zakonu Cystercye\u0144skiego J. K. M. Sekretarza &c. do po\u017c\u0105danego portu Wyniesiony W Postnych X. Romana Wroblewskiego Prowincyi Wielko- Polskiey Obserwanta, Kazaniach [...] Roku [...] 1746;Wr\u00f3blewski, Roman ( -1769);starodruki 18\u00a0w.;Chrz\u0105stowski, Miko\u0142aj Stefan (17..-17..). Adr. ded.;Drukarnia Akademicka;[1746];starodruk;application/xml;clarind-uds:poldilemma-189308;hdl:11858/00-246C-0000-0023-8CF6-C;Biblioteka Jagiello\u0144ska, BJ St. Dr. 38176 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/189308;oai:jbc.bj.uj.edu.pl:publication:200432;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "96d099eb-dfdc-5340-947d-41f66efdecd9",
+    "notes": [
+        "Chrz\u0105stowski, Miko\u0142aj Stefan (17..-17..). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189308"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Chrystus Bolei\u0105cy od grzesznikow w Morzu Krwi Jego w\u0142asney Pogr\u0105zony : Na Herbowney Lod\u017ai [...] Miko\u0142aia Stefana z Chrz\u0105stowa Chrz\u0105stowskiego [...] Opata Koronowskiego Prze\u015bwietnego Zakonu Cystercye\u0144skiego J. K. M. Sekretarza &c. do po\u017c\u0105danego portu Wyniesiony W Postnych X. Romana Wroblewskiego Prowincyi Wielko- Polskiey Obserwanta, Kazaniach [...] Roku [...] 1746"
+    ],
+    "url": ""
+}

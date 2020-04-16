@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5124",
+    "MetadataAccess": [
+        "oai:ota:oucs:5124"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hayley, William, 1745-1820."
+    ],
+    "fulltext": "oai:ota:oucs:5124;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5124.xml;The young widow; or the history of Cornelia Sedley: in a series of letters. ... [pt.2];Hayley, William, 1745-1820.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ad34299a-1788-5179-9cca-b7faef1d8f8f",
+    "oai_identifier": [
+        "oai:ota:oucs:5124"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The young widow; or the history of Cornelia Sedley: in a series of letters. ... [pt.2]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5124.xml"
+}

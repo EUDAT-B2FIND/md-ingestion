@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:19520865</identifier>
+    <datestamp>2019-05-11T09:02:12Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti-ersa s&#245;naraamat</dc:title>
+      <dc:title xml:lang="en">Estonian-Erzya dictionary</dc:title>
+      <dc:creator>Soosaar, Sven-Erik</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-04-05</dc:date>
+      <dc:date>Updated: 2019-04-05</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-07BD7L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Eesti-ersa s&#245;naraamat umbes 6000 m&#228;rks&#245;naga ning n&#228;itefraaside ja -lausetega</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Estonian-Erzya Mordvin dictionary with example phrases and sentences containing ca 6000 headwords</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

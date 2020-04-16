@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Glasscoe, Marion"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(1 file : ca. 281 KB)"
+    ],
+    "Language": [
+        "Middle English (1100-1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0700",
+    "MetadataAccess": [
+        "oai:ota:oucs:0700"
+    ],
+    "PublicationTimestamp": "1395-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1395"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Devotional literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Julian, of Norwich, b. 1343"
+    ],
+    "fulltext": "oai:ota:oucs:0700;2018-02-28T12:41:01Z;http://ota.ox.ac.uk/headers/0700.xml;A revelation of divine love / Julian of Norwich;Revelations to one who could not read a letter, Anno Domini 1373;Julian, of Norwich, b. 1343;1395;text_and_corpus_linguistics;Devotional literature, English (Middle);enm;Oxford Text Archive, University of Oxford;Glasscoe, Marion;text/plain;(1 file : ca. 281 KB);Text;Devotional literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "97360cd1-f354-579e-9e23-1ff249dfd467",
+    "oai_identifier": [
+        "oai:ota:oucs:0700"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Devotional literature"
+        },
+        {
+            "name": "English Middle"
+        }
+    ],
+    "title": [
+        "A revelation of divine love / Julian of Norwich",
+        "Revelations to one who could not read a letter, Anno Domini 1373"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0700.xml"
+}

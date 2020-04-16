@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-570</identifier>
+    <datestamp>2016-04-06T16:39:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ECHO corpus</dc:title>
+      <dc:contributor>Crasborn, Onno</dc:contributor>
+      <dc:description>This is a corpus of four European sign languages. It contains richly annotated video files of Sign Language of the Netherlands (Nederlandse Gebarentaal), British Sign Language, and Swedish Sign Language; data include narratives, dialogues, small lexicons, and poetry. In addition, parts of a corpus of German Sign Language (Deutsche Geb&#228;rdensprache) is included that was already published on paper before.</dc:description>
+      <dc:date>2004</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-570</dc:identifier>
+      <dc:rights>Creative Commons BY-NC-SA 3.0 NL license</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/nl/</dc:rights>
+      <dc:format>video/mpeg</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Netherlands (the)||Sweden||United Kingdom</dc:coverage>
+      <dc:publisher>Radboud University Nijmegen</dc:publisher>
+      <dc:publisher>Max Planck Institute for Psycholinguistics</dc:publisher>
+      <dc:publisher>University of Stockholm</dc:publisher>
+      <dc:publisher>City University London</dc:publisher>
+      <dc:source>http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI84302%23</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

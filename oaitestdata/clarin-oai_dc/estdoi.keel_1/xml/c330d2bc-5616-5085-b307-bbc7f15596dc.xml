@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:13082155</identifier>
+    <datestamp>2019-05-31T21:30:51Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti kaasaegsed anekdoodid</dc:title>
+      <dc:title xml:lang="en">Estonian contemporary jokes.</dc:title>
+      <dc:creator>K&#245;iva, Mare</dc:creator>
+      <dc:creator>Laineste, Liisi</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-11-25</dc:date>
+      <dc:date>Updated: 2018-07-16</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-0008DL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Anekdoodikogu on koostatud Eesti kaasaegse huumori uurimise eesm&#228;rgil Liisi Laineste poolt 2004. aastal. See sisaldab u. 37 000 eesti netinalja perioodist 1996 - 2004.  Kogu koostamise eesm&#228;rgiks oli kaasaegsete anekdootide arhiveerimine suurematelt internetilehek&#252;lgedelt, p&#228;evalehtedest ja tr&#252;kis ilmunud anekdoodikogudest.
+Nii anekdoodiotsing kui ka andmebaas on alles konstrueerimisj&#228;rgus, sellest tulenevalt tuleks arvestada, et:
+- Detailselt on kategoriseeritud esialgu vaid etniliste anekdootide kategooria. Teised naljad on kas kategoriseerimata (nt Jokebooki e Meie Naljaraamatu materjal, erakogud) v&#245;i on liigitatud portaalitegijate poolt (Delfi Naljaleht). 
+- Samamoodi on ka sarnased anekdoodid leitud vaid etniliste naljade puhul. Link "Sarnased naljad" viib sarnaste anekdootideni vaid siis, kui kategooriaks on m&#228;rgitud "Erinevad rahvused". Muudel juhtudel saab tulemuseks lihtsalt sama anekdoodi.
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

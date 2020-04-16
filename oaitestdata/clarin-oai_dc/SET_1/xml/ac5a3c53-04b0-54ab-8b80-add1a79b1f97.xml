@@ -1,0 +1,198 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1699</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Universal Dependencies 1.3</dc:title>
+      <dc:creator>Nivre, Joakim</dc:creator>
+      <dc:creator>Agi&#263;, &#381;eljko</dc:creator>
+      <dc:creator>Ahrenberg, Lars</dc:creator>
+      <dc:creator>Aranzabe, Maria Jesus</dc:creator>
+      <dc:creator>Asahara, Masayuki</dc:creator>
+      <dc:creator>Atutxa, Aitziber</dc:creator>
+      <dc:creator>Ballesteros, Miguel</dc:creator>
+      <dc:creator>Bauer, John</dc:creator>
+      <dc:creator>Bengoetxea, Kepa</dc:creator>
+      <dc:creator>Berzak, Yevgeni</dc:creator>
+      <dc:creator>Bhat, Riyaz Ahmad</dc:creator>
+      <dc:creator>Bosco, Cristina</dc:creator>
+      <dc:creator>Bouma, Gosse</dc:creator>
+      <dc:creator>Bowman, Sam</dc:creator>
+      <dc:creator>Cebiro&#287;lu Eryi&#287;it, G&#252;l&#351;en</dc:creator>
+      <dc:creator>Celano, Giuseppe G. A.</dc:creator>
+      <dc:creator>&#199;&#246;ltekin, &#199;a&#287;r&#305;</dc:creator>
+      <dc:creator>Connor, Miriam</dc:creator>
+      <dc:creator>de Marneffe, Marie-Catherine</dc:creator>
+      <dc:creator>Diaz de Ilarraza, Arantza</dc:creator>
+      <dc:creator>Dobrovoljc, Kaja</dc:creator>
+      <dc:creator>Dozat, Timothy</dc:creator>
+      <dc:creator>Droganova, Kira</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Farkas, Rich&#225;rd</dc:creator>
+      <dc:creator>Foster, Jennifer</dc:creator>
+      <dc:creator>Galbraith, Daniel</dc:creator>
+      <dc:creator>Garza, Sebastian</dc:creator>
+      <dc:creator>Ginter, Filip</dc:creator>
+      <dc:creator>Goenaga, Iakes</dc:creator>
+      <dc:creator>Gojenola, Koldo</dc:creator>
+      <dc:creator>Gokirmak, Memduh</dc:creator>
+      <dc:creator>Goldberg, Yoav</dc:creator>
+      <dc:creator>G&#243;mez Guinovart, Xavier</dc:creator>
+      <dc:creator>Gonz&#225;les Saavedra, Berta</dc:creator>
+      <dc:creator>Gr&#363;z&#299;tis, Normunds</dc:creator>
+      <dc:creator>Guillaume, Bruno</dc:creator>
+      <dc:creator>Haji&#269;, Jan</dc:creator>
+      <dc:creator>Haug, Dag</dc:creator>
+      <dc:creator>Hladk&#225;, Barbora</dc:creator>
+      <dc:creator>Ion, Radu</dc:creator>
+      <dc:creator>Irimia, Elena</dc:creator>
+      <dc:creator>Johannsen, Anders</dc:creator>
+      <dc:creator>Ka&#351;&#305;kara, H&#252;ner</dc:creator>
+      <dc:creator>Kanayama, Hiroshi</dc:creator>
+      <dc:creator>Kanerva, Jenna</dc:creator>
+      <dc:creator>Katz, Boris</dc:creator>
+      <dc:creator>Kenney, Jessica</dc:creator>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Laippala, Veronika</dc:creator>
+      <dc:creator>Lam, Lucia</dc:creator>
+      <dc:creator>Lenci, Alessandro</dc:creator>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Lyashevskaya, Olga</dc:creator>
+      <dc:creator>Lynn, Teresa</dc:creator>
+      <dc:creator>Makazhanov, Aibek</dc:creator>
+      <dc:creator>Manning, Christopher</dc:creator>
+      <dc:creator>M&#259;r&#259;nduc, C&#259;t&#259;lina</dc:creator>
+      <dc:creator>Mare&#269;ek, David</dc:creator>
+      <dc:creator>Mart&#237;nez Alonso, H&#233;ctor</dc:creator>
+      <dc:creator>Ma&#353;ek, Jan</dc:creator>
+      <dc:creator>Matsumoto, Yuji</dc:creator>
+      <dc:creator>McDonald, Ryan</dc:creator>
+      <dc:creator>Missil&#228;, Anna</dc:creator>
+      <dc:creator>Mititelu, Verginica</dc:creator>
+      <dc:creator>Miyao, Yusuke</dc:creator>
+      <dc:creator>Montemagni, Simonetta</dc:creator>
+      <dc:creator>Mori, Keiko Sophie</dc:creator>
+      <dc:creator>Mori, Shunsuke</dc:creator>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:creator>Mustafina, Nina</dc:creator>
+      <dc:creator>M&#252;&#252;risep, Kaili</dc:creator>
+      <dc:creator>Nikolaev, Vitaly</dc:creator>
+      <dc:creator>Nurmi, Hanna</dc:creator>
+      <dc:creator>Osenova, Petya</dc:creator>
+      <dc:creator>&#216;vrelid, Lilja</dc:creator>
+      <dc:creator>Pascual, Elena</dc:creator>
+      <dc:creator>Passarotti, Marco</dc:creator>
+      <dc:creator>Perez, Cenel-Augusto</dc:creator>
+      <dc:creator>Petrov, Slav</dc:creator>
+      <dc:creator>Piitulainen, Jussi</dc:creator>
+      <dc:creator>Plank, Barbara</dc:creator>
+      <dc:creator>Popel, Martin</dc:creator>
+      <dc:creator>Pretkalni&#326;a, Lauma</dc:creator>
+      <dc:creator>Prokopidis, Prokopis</dc:creator>
+      <dc:creator>Puolakainen, Tiina</dc:creator>
+      <dc:creator>Pyysalo, Sampo</dc:creator>
+      <dc:creator>Ramasamy, Loganathan</dc:creator>
+      <dc:creator>Rituma, Laura</dc:creator>
+      <dc:creator>Rosa, Rudolf</dc:creator>
+      <dc:creator>Saleh, Shadi</dc:creator>
+      <dc:creator>Saul&#299;te, Baiba</dc:creator>
+      <dc:creator>Schuster, Sebastian</dc:creator>
+      <dc:creator>Seeker, Wolfgang</dc:creator>
+      <dc:creator>Seraji, Mojgan</dc:creator>
+      <dc:creator>Shakurova, Lena</dc:creator>
+      <dc:creator>Shen, Mo</dc:creator>
+      <dc:creator>Silveira, Natalia</dc:creator>
+      <dc:creator>Simi, Maria</dc:creator>
+      <dc:creator>Simionescu, Radu</dc:creator>
+      <dc:creator>Simk&#243;, Katalin</dc:creator>
+      <dc:creator>Simov, Kiril</dc:creator>
+      <dc:creator>Smith, Aaron</dc:creator>
+      <dc:creator>Spadine, Carolyn</dc:creator>
+      <dc:creator>Suhr, Alane</dc:creator>
+      <dc:creator>Sulubacak, Umut</dc:creator>
+      <dc:creator>Sz&#225;nt&#243;, Zsolt</dc:creator>
+      <dc:creator>Tanaka, Takaaki</dc:creator>
+      <dc:creator>Tsarfaty, Reut</dc:creator>
+      <dc:creator>Tyers, Francis</dc:creator>
+      <dc:creator>Uematsu, Sumire</dc:creator>
+      <dc:creator>Uria, Larraitz</dc:creator>
+      <dc:creator>van Noord, Gertjan</dc:creator>
+      <dc:creator>Varga, Viktor</dc:creator>
+      <dc:creator>Vincze, Veronika</dc:creator>
+      <dc:creator>Wang, Jing Xian</dc:creator>
+      <dc:creator>Washington, Jonathan North</dc:creator>
+      <dc:creator>&#381;abokrtsk&#253;, Zden&#283;k</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Zhu, Hanzhi</dc:creator>
+      <dc:subject>treebank</dc:subject>
+      <dc:subject>dependency</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>harmonized annotation</dc:subject>
+      <dc:subject>interset</dc:subject>
+      <dc:subject>universal tagset</dc:subject>
+      <dc:subject>stanford dependencies</dc:subject>
+      <dc:description>Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).</dc:description>
+      <dc:date>2016-05-15</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1699</dc:identifier>
+      <dc:language>grc</dc:language>
+      <dc:language>ara</dc:language>
+      <dc:language>eus</dc:language>
+      <dc:language>bul</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>dan</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>got</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>heb</dc:language>
+      <dc:language>hin</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>ind</dc:language>
+      <dc:language>gle</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>jpn</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>nor</dc:language>
+      <dc:language>chu</dc:language>
+      <dc:language>fas</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:language>tam</dc:language>
+      <dc:language>cat</dc:language>
+      <dc:language>zho</dc:language>
+      <dc:language>glg</dc:language>
+      <dc:language>kaz</dc:language>
+      <dc:language>lav</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>tur</dc:language>
+      <dc:relation>http://hdl.handle.net/11234/1-1548</dc:relation>
+      <dc:relation>http://hdl.handle.net/11234/1-1827</dc:relation>
+      <dc:rights>Licence Universal Dependencies v1.3</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-1.3</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Universal Dependencies Consortium</dc:publisher>
+      <dc:source>http://universaldependencies.org/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

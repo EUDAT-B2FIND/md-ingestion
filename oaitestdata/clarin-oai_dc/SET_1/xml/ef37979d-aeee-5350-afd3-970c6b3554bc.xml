@@ -1,0 +1,54 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-77</identifier>
+    <datestamp>2018-04-06T07:31:29Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Digital Language Diversity Project Survey Data</dc:title>
+      <dc:creator>Soria, Claudia</dc:creator>
+      <dc:creator>Quochi, Valeria</dc:creator>
+      <dc:creator>Russo, Irene</dc:creator>
+      <dc:creator>Sarhimaa, Anneli</dc:creator>
+      <dc:creator>Kruse, Eleonore</dc:creator>
+      <dc:creator>Hicks, Davyth</dc:creator>
+      <dc:creator>Salonen, Tuomo</dc:creator>
+      <dc:creator>Gurrutxaga Hernaiz, Antton</dc:creator>
+      <dc:creator>Ceberio Berger, Klara</dc:creator>
+      <dc:subject>Linguistic diversity</dc:subject>
+      <dc:subject>Minority languages</dc:subject>
+      <dc:subject>Digital language diversity</dc:subject>
+      <dc:subject>Language vitality</dc:subject>
+      <dc:subject>Regional languages</dc:subject>
+      <dc:subject>Survey data</dc:subject>
+      <dc:subject>Sociolinguistics</dc:subject>
+      <dc:description>This dataset contains the original responses to a questionaire run in 2016 within the DLDP project about the use and usability of 4 European regional and minority languages on digital media and devices: namely Basque, Breton, Karelian and Sardinian (See http://www.dldp.eu/content/survey-digital-fitness). &#13;
+&#13;
+The majority of questions were closed questions where respondents had to tick a box, occasionally multiple choice was allowed.  A few questions required free text provision. &#13;
+The questionnaire was designed using 'Google Forms' and was run on the same platform in the summer 2016.&#13;
+&#13;
+The results of the survey are brielfly presented in the DLDP reports available here: http://www.dldp.eu/content/reports-digital-language-diversity-europe</dc:description>
+      <dc:date>2017-09-04</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-77</dc:identifier>
+      <dc:language>eus</dc:language>
+      <dc:language>krl</dc:language>
+      <dc:language>bre</dc:language>
+      <dc:language>srd</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 5</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+      <dc:source>http://www.dldp.eu</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

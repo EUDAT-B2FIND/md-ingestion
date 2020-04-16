@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3699",
+    "MetadataAccess": [
+        "oai:ota:oucs:3699"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Pope, Alexander, 1688-1744."
+    ],
+    "fulltext": "oai:ota:oucs:3699;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3699.xml;Sober advice from Horace: to the young gentlemen about town. As deliver'd in his second sermon. Imitated in the manner of Mr. Pope. Together with the original text, as restored by the Rev'd. R. Bentley ... And some remarks on the version.;Pope, Alexander, 1688-1744.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a5acb03b-8d92-5194-957c-4bfb593d3ab9",
+    "oai_identifier": [
+        "oai:ota:oucs:3699"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Sober advice from Horace: to the young gentlemen about town. As deliver'd in his second sermon. Imitated in the manner of Mr. Pope. Together with the original text, as restored by the Rev'd. R. Bentley ... And some remarks on the version."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3699.xml"
+}

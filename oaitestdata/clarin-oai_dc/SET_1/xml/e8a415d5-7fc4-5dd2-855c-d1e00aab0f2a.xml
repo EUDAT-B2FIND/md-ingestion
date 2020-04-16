@@ -1,0 +1,45 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repository.clarin.dk:20.500.12115/11</identifier>
+    <datestamp>2018-06-28T13:24:42Z</datestamp>
+    <setSpec>hdl_20.500.12115_1</setSpec>
+    <setSpec>hdl_20.500.12115_3</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DK-CLARIN LSP Corpus - Economics domain</dc:title>
+      <dc:creator>Olsen, Sussi</dc:creator>
+      <dc:creator>Braasch, Anna</dc:creator>
+      <dc:creator>Hansen, Dorte Haltrup</dc:creator>
+      <dc:creator>Jakob, Halskov</dc:creator>
+      <dc:subject>Economics</dc:subject>
+      <dc:description>Texts in the Economics domain come from SKAT, Finanstilsynet and Erhvervs- og Selskabsstyrelsen and have been collected in the DK-CLARIN project, WP2.2, 2008 - 2011. &#13;
+The corpus consists of 979,881 words in 64 files. &#13;
+Communicative setting/Number of files: expert-&gt;expert (11) expert-&gt;advanced (1) expert-&gt;basic (52).&#13;
+All texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation placed in separate text external spangroups. &#13;
+"DK-CLARIN LSP Corpus - Economics domain" is a part of the Danish DK-CLARIN LSP corpus consisting of seven sub-corpora from following subject domains: Agriculture, Construction, Economics, Environment, Health, IT and Nanotechnology.</dc:description>
+      <dc:date>2011</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.12115/11</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:rights>CLARIN-ACA-NC</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&amp;AFFIL=EDU&amp;BY=1&amp;NC=1&amp;NORED=1</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>downloadable_files_count: 11</dc:format>
+      <dc:publisher>Centre for Language Technology, NorS, University of Copenhagen</dc:publisher>
+      <dc:publisher>The Danish Language Council</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

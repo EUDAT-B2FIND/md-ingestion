@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00187L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17960604",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17960604"
+    ],
+    "PublicationTimestamp": "2019-01-07T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "M\u00fc\u00fcrisep, Kaili"
+    ],
+    "fulltext": "oai:oai.datacite.org:17960604;2019-01-07T16:15:14Z;ESTDOI;ESTDOI.KEEL;Maltparseri treenitud mudel (UD);MaltParser model for Estonian UD format;M\u00fc\u00fcrisep, Kaili;Center of Estonian Language Resources;2019;Issued: 2019-01-07;Updated: 2019-01-07;doi:10.15155/1-00-0000-0000-0000-00187L;Abstract;Eesti keele s\u00fcntaksianal\u00fc\u00fcsi mudel MaltParserile (http://www.maltparser.org/), treenitud EstUD v2.2 puudepangal.;Abstract;Syntax parsing model for Estonian, trained on the Estonian Universal Dependencies treebank v2.2. To be used with MaltParser (http://www.maltparser.org/).",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "58d7b2bf-b0ac-5a2d-98e1-8b9db25ca59f",
+    "notes": [
+        "Abstract",
+        "Eesti keele s\u00fcntaksianal\u00fc\u00fcsi mudel MaltParserile (http://www.maltparser.org/), treenitud EstUD v2.2 puudepangal.",
+        "Abstract",
+        "Syntax parsing model for Estonian, trained on the Estonian Universal Dependencies treebank v2.2. To be used with MaltParser (http://www.maltparser.org/)."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17960604"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Maltparseri treenitud mudel (UD)",
+        "MaltParser model for Estonian UD format"
+    ],
+    "url": ""
+}

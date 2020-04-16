@@ -1,0 +1,99 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Spanish",
+        "Italian",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1078",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1078"
+    ],
+    "PID": "http://hdl.handle.net/11356/1078",
+    "PublicationTimestamp": "2016-11-28T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/611346"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "The MIT License (MIT)",
+        "http://opensource.org/licenses/mit-license.php",
+        "PUB"
+    ],
+    "author": [
+        "Rei, Luis",
+        "Krek, Simon",
+        "Mladeni\u0107, Dunja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1078;2018-12-02T19:40:11Z;hdl_11356_1023;hdl_11356_1024;xLiMe Twitter Corpus XTC 1.0.1;Rei, Luis;Krek, Simon;Mladeni\u0107, Dunja;social media;computer-mediated communication;Twitter;tagging;named entities;sentiment classification;multilingual;manual annotation;The xLiMe Twitter Corpus contains tweets in German, Italian and Spanish manually annotated with part-of-speech, named entities, and message-level sentiment polarity. In total, the corpus contains almost 20K annotated messages and 350K tokens.\r\nThe corpus is described in \r\nLuis Rei, Dunja Mladeni\u0107, Simon Krek. A Multilingual Social Media Linguistic Corpus. Proceedings of the 4th Conference on CMC and Social Media Corpora for the Humanities. 27\u201328 September 2016, Ljubljana, Slovenia. http://nl.ijs.si/janes/cmc-corpora2016/proceedings/;2016-11-28;corpus;http://hdl.handle.net/11356/1078;spa;ita;deu;info:eu-repo/grantAgreement/EC/FP7/611346;The MIT License (MIT);http://opensource.org/licenses/mit-license.php;PUB;application/zip;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 2;Jo\u017eef Stefan Institute;http://github.com/lrei/xlime_twitter_corpus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cd3f977c-4f30-5339-adcb-0dc51c068ce9",
+    "notes": [
+        "The xLiMe Twitter Corpus contains tweets in German, Italian and Spanish manually annotated with part-of-speech, named entities, and message-level sentiment polarity. In total, the corpus contains almost 20K annotated messages and 350K tokens.\r\nThe corpus is described in \r\nLuis Rei, Dunja Mladeni\u0107, Simon Krek. A Multilingual Social Media Linguistic Corpus. Proceedings of the 4th Conference on CMC and Social Media Corpora for the Humanities. 27\u201328 September 2016, Ljubljana, Slovenia. http://nl.ijs.si/janes/cmc-corpora2016/proceedings/"
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1078"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "social media"
+        },
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "Twitter"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "named entities"
+        },
+        {
+            "name": "sentiment classification"
+        },
+        {
+            "name": "multilingual"
+        },
+        {
+            "name": "manual annotation"
+        }
+    ],
+    "title": [
+        "xLiMe Twitter Corpus XTC 1.0.1"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3438",
+    "MetadataAccess": [
+        "oai:ota:oucs:3438"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Goldsmith, Oliver, 1730?-1774."
+    ],
+    "fulltext": "oai:ota:oucs:3438;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3438.xml;Retaliation: a poem: By Doctor Goldsmith. Including epitaphs on the most distinguished wits of this metropolis.;Goldsmith, Oliver, 1730?-1774.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a594414f-c5b5-5748-9af7-d7648c00786f",
+    "oai_identifier": [
+        "oai:ota:oucs:3438"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Retaliation: a poem: By Doctor Goldsmith. Including epitaphs on the most distinguished wits of this metropolis."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3438.xml"
+}

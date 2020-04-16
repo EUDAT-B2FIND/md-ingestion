@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/589</identifier>
+    <datestamp>2018-07-27T09:23:29Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>KPWr annotation guidelines - keywords (1.0)</dc:title>
+      <dc:creator>Oleksy, Marcin</dc:creator>
+      <dc:creator>Wieczorek, Jan</dc:creator>
+      <dc:creator>Turek, Agnieszka</dc:creator>
+      <dc:creator>K&#281;dzia, Pawe&#322;</dc:creator>
+      <dc:subject>keywords</dc:subject>
+      <dc:subject>KPWr</dc:subject>
+      <dc:subject>annotated corpus</dc:subject>
+      <dc:subject>metadata</dc:subject>
+      <dc:description>Annotation guidelines (first version) for keywords in KPWr (Polish Corpus of Wroc&#322;aw University of Technology (https://clarin-pl.eu/dspace/handle/11321/270).</dc:description>
+      <dc:date>2018-07-27</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/589</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Science and Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

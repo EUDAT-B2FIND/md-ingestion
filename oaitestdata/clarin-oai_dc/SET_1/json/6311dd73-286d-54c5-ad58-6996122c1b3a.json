@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 115 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0624",
+    "MetadataAccess": [
+        "oai:ota:oucs:0624"
+    ],
+    "PublicationTimestamp": "1613-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1613"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Chapman, George, 1559?-1634"
+    ],
+    "fulltext": "oai:ota:oucs:0624;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0624.xml;The revenge of Bussy d'Ambois;Chapman, George, 1559?-1634;1613;text_and_corpus_linguistics;Plays -- England -- 17th century;Tragedies -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;(1 file : ca. 115 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6311dd73-286d-54c5-ad58-6996122c1b3a",
+    "oai_identifier": [
+        "oai:ota:oucs:0624"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        },
+        {
+            "name": "Tragedies -- England -- th century"
+        }
+    ],
+    "title": [
+        "The revenge of Bussy d'Ambois"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0624.xml"
+}

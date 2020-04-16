@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Drukarnia J.K.M. XX Trynitarzy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-230786",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-230786"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D0D-1",
+    "PublicationTimestamp": "1784-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1784"
+    ],
+    "Publisher": [
+        "Drukarnia J.K.M. XX Trynitarzy"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/230786",
+        "oai:jbc.bj.uj.edu.pl:publication:242450"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-230786;2019-03-01T13:08:46Z;List w materyi religii niegdys do jednego p. dyssydenta pisany, a dzi\u015b wszystkim tym\u017ce ichmo\u015bciom, zacnym Korony Polskiey, i W. X. Litew. obywatelom, naymilszym bli\u017anim i braci zbawienie duszy kochai\u0105cym na uwag\u0119 podany;starodruki 18\u00a0w.;Drukarnia J.K.M. XX Trynitarzy;1784;starodruk;application/xml;application/xml;clarind-uds:poldilemma-230786;hdl:11858/00-246C-0000-0023-8D0D-1;Biblioteka Jagiello\u0144ska, BJ St. Dr. 35724;http://jbc.bj.uj.edu.pl/Content/230786;oai:jbc.bj.uj.edu.pl:publication:242450;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f8987834-3186-5818-8624-171538bdc21d",
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-230786"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "List w materyi religii niegdys do jednego p. dyssydenta pisany, a dzi\u015b wszystkim tym\u017ce ichmo\u015bciom, zacnym Korony Polskiey, i W. X. Litew. obywatelom, naymilszym bli\u017anim i braci zbawienie duszy kochai\u0105cym na uwag\u0119 podany"
+    ],
+    "url": ""
+}

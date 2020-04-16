@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "ZRC SAZU"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1130",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1130"
+    ],
+    "PID": "http://hdl.handle.net/11356/1130",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "ZRC SAZU"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Humar, Marjeta",
+        "Hajn\u0161ek-Holz, Milena",
+        "Praznik, Zvonka",
+        "Ko\u0161mrlj-Leva\u010di\u010d, Borislava",
+        "Jakopin, Franc",
+        "Keber, Janez",
+        "Nartnik, Vlado",
+        "\u0160ircelj \u017dnidar\u0161i\u010d, Ivanka",
+        "Kostanjevec, Polona",
+        "Bokal, Milka",
+        "\u017dele, Andreja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1130;2017-08-30T08:47:18Z;hdl_11356_1023;hdl_11356_1024;Dictionary of Lesser Used Slovenian Words;Bokal, Milka;Hajn\u0161ek-Holz, Milena;Humar, Marjeta;Jakopin, Franc;Praznik, Zvonka;\u0160ircelj \u017dnidar\u0161i\u010d, Ivanka;Kostanjevec, Polona;\u017dele, Andreja;Nartnik, Vlado;Keber, Janez;Ko\u0161mrlj-Leva\u010di\u010d, Borislava;dictionary;lexicography;Dictionary of Lesser Used Slovenian Words contains 178457 headwords not included in the Dictionary of the Slovenian Standard Language. Information on inflection, part of speech and source is included in the entries.\r\n\r\nThis dictionary was published as a printed book:\r\nBokal, Ljudmila, Hajn\u0161ek-Holz, Milena, Humar, Marjeta, Jakopin, Franc, Praznik, Zvonka. Besedi\u0161\u010de slovenskega jezika : po kartoteki za slovar sodobnega knji\u017enega jezika zbrane besede, ki niso bile sprejete v Slovar slovenskega knji\u017enega jezika. 1: A-N, 2: O-\u017d. Ljubljana: ZRC SAZU, 1987. Internal edition.\r\n\r\n\u0160ircelj-\u017dnidar\u0161i\u010d, Ivanka, Hajn\u0161ek-Holz, Milena, Kostanjevec, Polona, \u017dele, Andreja, Humar, Marjeta, Nartnik, Vlado, Keber, Janez, Ko\u0161mrlj-Leva\u010di\u010d, Borislava, Jakopin, Primo\u017e. Besedi\u0161\u010de slovenskega jezika z oblikoslovnimi podatki : A - \u017d : po gradivu za slovar sodobnega knji\u017enega jezika zbrane besede, ki niso bile sprejete v Slovar slovenskega knji\u017enega jezika. Ljubljana: ZRC SAZU, Zalo\u017eba ZRC SAZU, 1998. ISBN 961-6182-62-5.;2017;lexicalConceptualResource;http://hdl.handle.net/11356/1130;slv;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;ZRC SAZU;http://bos.zrc-sazu.si/besedisc.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b5724834-c4fb-5ef7-b612-36945c20378c",
+    "notes": [
+        "Dictionary of Lesser Used Slovenian Words contains 178457 headwords not included in the Dictionary of the Slovenian Standard Language. Information on inflection, part of speech and source is included in the entries.\r\n\r\nThis dictionary was published as a printed book:\r\nBokal, Ljudmila, Hajn\u0161ek-Holz, Milena, Humar, Marjeta, Jakopin, Franc, Praznik, Zvonka. Besedi\u0161\u010de slovenskega jezika : po kartoteki za slovar sodobnega knji\u017enega jezika zbrane besede, ki niso bile sprejete v Slovar slovenskega knji\u017enega jezika. 1: A-N, 2: O-\u017d. Ljubljana: ZRC SAZU, 1987. Internal edition.\r\n\r\n\u0160ircelj-\u017dnidar\u0161i\u010d, Ivanka, Hajn\u0161ek-Holz, Milena, Kostanjevec, Polona, \u017dele, Andreja, Humar, Marjeta, Nartnik, Vlado, Keber, Janez, Ko\u0161mrlj-Leva\u010di\u010d, Borislava, Jakopin, Primo\u017e. Besedi\u0161\u010de slovenskega jezika z oblikoslovnimi podatki : A - \u017d : po gradivu za slovar sodobnega knji\u017enega jezika zbrane besede, ki niso bile sprejete v Slovar slovenskega knji\u017enega jezika. Ljubljana: ZRC SAZU, Zalo\u017eba ZRC SAZU, 1998. ISBN 961-6182-62-5."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1130"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dictionary"
+        },
+        {
+            "name": "lexicography"
+        }
+    ],
+    "title": [
+        "Dictionary of Lesser Used Slovenian Words"
+    ],
+    "url": ""
+}

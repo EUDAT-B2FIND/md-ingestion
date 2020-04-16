@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "McKinnon, Alastair"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 243 KB)"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0564",
+    "MetadataAccess": [
+        "oai:ota:oucs:0564"
+    ],
+    "PublicationTimestamp": "1950-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1950"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Academic dissertations"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Wittgenstein, Ludwig, 1889-1951"
+    ],
+    "fulltext": "oai:ota:oucs:0564;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0564.xml;Letze Schriften \u00c3\u00bcber die Philosophie de Psychologie / Ludwig Wittgenstein;Last writings on the philosophy of psychology;Wittgenstein, Ludwig, 1889-1951;1950-1951;text_and_corpus_linguistics;Psychology -- Philosophy -- 20th century;deu;Oxford Text Archive, University of Oxford;McKinnon, Alastair;(1 file : ca. 243 KB);Text;Academic dissertations;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9659e6e5-0de7-56e5-b77c-d3051e855eb7",
+    "oai_identifier": [
+        "oai:ota:oucs:0564"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Psychology -- Philosophy -- th century"
+        }
+    ],
+    "title": [
+        "Letze Schriften \u00c3\u00bcber die Philosophie de Psychologie / Ludwig Wittgenstein",
+        "Last writings on the philosophy of psychology"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0564.xml"
+}

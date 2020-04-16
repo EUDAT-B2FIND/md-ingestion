@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "agrita.briede@lu.lv"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DOI": "http://dx.doi.org/10.23728/b2share.4bb6bc9e5f894d8ea97912ab0639e5ca",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0b0ff12a-b5d6-510a-abf3-b3c6f02cd2d4",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Formal acknowledgement of the dataset providers"
+    ],
+    "SpatialCoverage": "(57N-57N,24E-24E)",
+    "author": [
+        "Agrita Briede"
+    ],
+    "fulltext": "84ca47b8-2aeb-4b60-9ffd-8936b9a46796;English;utf8;dataset;Agrita Briede;LTER Europe;agrita.briede@lu.lv;pointOfContact;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;Precipitation data Riga Hydro Power Station Reservoir on the Daugava River 1976-2015;2018-09-24;publication;urn:ltereurope:inspire::11011:27629;Reservoir of Riga Hydropower Station on the River Daugava - Latvia;Institute of Biology, University of Latvia;documentDigital;Precipitation data for aquatic LTER site Riga Hydro Power Station Reservoir on the Daugava River 1976-2015;completed;Agrita Briede;LTER Europe;agrita.briede@lu.lv;pointOfContact;continual;Representative area of sampling: single point Sampling frequency - sampling time span: daily Sampling frequency - minimum sampling unit: daily;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;Bulk precipitation;climate change;Latvia;river;eLTER VA;LTER Controlled Vocabulary;Formal acknowledgement of the dataset providers;The principal: Administration has granted the access and use permission: Free for access and use upon request;The principal: Research has granted the access and use permission: Free for access and use upon request;The principal: Public has granted the access and use permission: Free for access and use upon request;eng;environment;Reservoir of Riga Hydropower station (Riga Hydroelectric Power Plant). The Riga Hydroelectric Power Plant was put into operation in 1974. In order to build Riga HES, a dam was constructed across the Daugava River through the middle of Doles Sala, half of which has since been flooded to make room for Riga Reservoir. Along with Doles Sala, there have been several other smaller islands drowned in order to fill the reservoir. The dam was built in the late 1970s.;24.410247802734;24.266052246094;56.821350720626;56.863413067939;16.00;18;urn:ogc:def:crs:EPSG;MSL height;Not specific to any location or epoch.;Hydrography.;Representative area of sampling: single point;ground condition;1976-01-01;2015-12-31;http://doi.org/10.23728/b2share.4bb6bc9e5f894d8ea97912ab0639e5ca;WWW:LINK-1.0-http--link;DOI;UKST;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;Method description: precipitation gauge, since 2002 Milos-500 weather station. Method URL: https://data.lter-europe.net/deims/site/32370e5d-9da5-4f8c-9198-875f61b9c695. Instrumentation: Tretyakov non-recording precipitation gauge, since 2002 Milos-500 weather station from Vaisala.;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0b0ff12a-b5d6-510a-abf3-b3c6f02cd2d4",
+    "notes": [
+        "Precipitation data for aquatic LTER site Riga Hydro Power Station Reservoir on the Daugava River 1976-2015"
+    ],
+    "oai_identifier": [
+        "0b0ff12a-b5d6-510a-abf3-b3c6f02cd2d4"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[24.410247802734,56.821350720626],[24.410247802734,56.863413067939],[24.266052246094,56.863413067939],[24.266052246094,56.821350720626],[24.410247802734,56.821350720626]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Bulk precipitation"
+        },
+        {
+            "name": "climate change"
+        },
+        {
+            "name": "Latvia"
+        },
+        {
+            "name": "river"
+        },
+        {
+            "name": "eLTER VA"
+        }
+    ],
+    "title": [
+        "Precipitation data Riga Hydro Power Station Reservoir on the Daugava River 1976-2015"
+    ],
+    "url": ""
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=3bb941bc1c5811e2a2aa782bcb074135e44516c278e14d6ab091e2f8a36ffffc",
+    "MetadataAccess": [
+        "3bb941bc1c5811e2a2aa782bcb074135e44516c278e14d6ab091e2f8a36ffffc"
+    ],
+    "PublicationTimestamp": "2012-10-22T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "3bb941bc1c5811e2a2aa782bcb074135e44516c278e14d6ab091e2f8a36ffffc;2018-11-15T16:39:44Z;toolService;toolService:tool;Lemmatizer for Portuguese;Based on the MXPOST part of speech tagger and UNITEX dictionaries for Portuguese, this tool produces the lemmas of the words of a text stored in a plain text file. The source code is also provided. ;2012-10-22",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8a3415b9-45ef-5117-99d9-dd36af32266c",
+    "notes": [
+        "Based on the MXPOST part of speech tagger and UNITEX dictionaries for Portuguese, this tool produces the lemmas of the words of a text stored in a plain text file. The source code is also provided. "
+    ],
+    "oai_identifier": [
+        "3bb941bc1c5811e2a2aa782bcb074135e44516c278e14d6ab091e2f8a36ffffc"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "Lemmatizer for Portuguese"
+    ]
+}

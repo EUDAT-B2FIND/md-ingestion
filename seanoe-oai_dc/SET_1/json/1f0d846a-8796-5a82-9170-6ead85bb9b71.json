@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/41825",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=1f0d846a-8796-5a82-9170-6ead85bb9b71",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY"
+    ],
+    "SpatialCoverage": "(30N-46N,6 W-36E)",
+    "TempCoverageBegin": 109896955199,
+    "TempCoverageEnd": 109896955199,
+    "TemporalCoverage": " point in time : 3483-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "3483-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "3483-07-01T11:59:59Z",
+    "author": [
+        "Jadaud, Angelique",
+        "Follesa, Maria",
+        "Maiorano, Porzia",
+        "Rabiller, Manuella",
+        "Denis, Axelle",
+        "Ordines, Francesc",
+        "Di Santo, Carla",
+        "Theil, Andr\u00e9a",
+        "Cavaill\u00e9, Thomas",
+        "Brind'Amour, Anik",
+        "Spedicato, Maria Teresa",
+        "M\u00e9rigot, Bastien",
+        "Carbonara, Pierluigi"
+    ],
+    "fulltext": "oai:seanoe.org:41825;2016-10-04;Morphological traits measured for 89 fish species sampled in the Mediterranean Sea during MEDITS scientific surveys;Brind'Amour, Anik;M\u00e9rigot, Bastien;Ordines, Francesc;Carbonara, Pierluigi;Follesa, Maria;Jadaud, Angelique;Maiorano, Porzia;Rabiller, Manuella;Denis, Axelle;Di Santo, Carla;Cavaill\u00e9, Thomas;Theil, Andr\u00e9a;Spedicato, Maria Teresa;The data come from organisms and pictures collected during the MEDITS annual bottom trawl surveys conducted between 2011 and 2013 (Bertrand et al. 2002). MEDITS surveys cover the continental shelf (10 m to 200 m depth) and the upper part of the continental slope (200 m to 800 m) on the Mediterranean. A total of 1511 individuals from 85 fish species were collected from seven Mediterranean areas (South Adriatic Sea, Sardinia, Gulf of Lions, around Cyprus, Mallorca, Tyrrhenian Sea, and North West Ionian Sea). A set of 14 morphological traits related to the habitat and the diet of the species were measured in the field and on pictures using the ImageJ software (version 1.47, http://imagej.nih.gov/ij/) (see Granger et al. 2015 and Brind'Amour et al. submitted for details) (Figure 1). Replicats of measures vary between 1 (e.g. Scorpaena loppei) to 53 (e.g. Serranus hepatus) according to fish species. Twelve of the chosen traits consist in continuous biological characteristics measured on each individual (measured in cm). The two remaining traits are categorical and determined at the species level.\n;SEANOE;2016-01;dataset;DOI:10.17882/41825;http://dx.doi.org/10.17882/41825;North 46.3483, South 30.108837, East 36.474609, West -5.888672;https://www.seanoe.org/data/00307/41825/illustration.gif;30.108837 -5.888672 46.3483 36.474609;CC-BY",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "1f0d846a-8796-5a82-9170-6ead85bb9b71",
+    "notes": [
+        "The data come from organisms and pictures collected during the MEDITS annual bottom trawl surveys conducted between 2011 and 2013 (Bertrand et al. 2002). MEDITS surveys cover the continental shelf (10 m to 200 m depth) and the upper part of the continental slope (200 m to 800 m) on the Mediterranean. A total of 1511 individuals from 85 fish species were collected from seven Mediterranean areas (South Adriatic Sea, Sardinia, Gulf of Lions, around Cyprus, Mallorca, Tyrrhenian Sea, and North West Ionian Sea). A set of 14 morphological traits related to the habitat and the diet of the species were measured in the field and on pictures using the ImageJ software (version 1.47, http://imagej.nih.gov/ij/) (see Granger et al. 2015 and Brind'Amour et al. submitted for details) (Figure 1). Replicats of measures vary between 1 (e.g. Scorpaena loppei) to 53 (e.g. Serranus hepatus) according to fish species. Twelve of the chosen traits consist in continuous biological characteristics measured on each individual (measured in cm). The two remaining traits are categorical and determined at the species level.\n"
+    ],
+    "oai_identifier": [
+        "1f0d846a-8796-5a82-9170-6ead85bb9b71"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-5.888672,30.108837],[-5.888672,46.3483],[36.474609,46.3483],[36.474609,30.108837],[-5.888672,30.108837]]]}",
+    "state": "active",
+    "title": [
+        "Morphological traits measured for 89 fish species sampled in the Mediterranean Sea during MEDITS scientific surveys"
+    ],
+    "url": ""
+}

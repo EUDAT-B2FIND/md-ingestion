@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0014/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0014/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0014/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-08-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Corminboeuf, Cl\u00e9mence",
+        "Meyer, Benjamin",
+        "von Lilienfeld, O. Anatole",
+        "Heinen, Stefan Niklaus",
+        "Sawatlon, Boodsarin"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0014/v1;2019-06-12Z;DOI;Dataset;Meyer, Benjamin;Sawatlon, Boodsarin;Heinen, Stefan Niklaus;von Lilienfeld, O. Anatole;Corminboeuf, Cl\u00e9mence;Machine learning meets volcano plots: Computational discovery of cross-coupling catalysts;Materials Cloud;2018-08-01;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;machine learning;homogeneous catalysis;volcano plot;transition metal complexes;doi:10.24435/materialscloud:2018.0014/v1;https://archive.materialscloud.org/2018.0014/v1;en;The application of modern machine learning to challenges in atomistic simulation is gaining attraction. We present new machine learning models that can predict the energy of the oxidative addition process between a transition metal complex and a substrate for C-C cross-coupling reaction. In turn, this quantity can be used as a descriptor to estimate the activity of homogeneous catalysts using molecular volcano plots. The versatility of this approach is illustrated for vast libraries of organometallic catalysts based on Pt, Pd, Ni, Cu, Ag, and Au combined with 91 ligands. Out-of-sample machine learning predictions were made on a total of 18,062 compounds leading to 557 catalyst candidates falling into the ideal thermodynamic window. This number was further refined by searching for candidates with an estimated price lower than 10 US$/mmol. The 37 catalyst finalists are dominated by palladium phosphine ligand combinations but also include earth abundant (Cu) transition metal with less common ligands. Our results indicate that modern statistical learning techniques can be applied to the computational discovery of readily available and promising catalyst candidates.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "ed7ee35c-7c00-5cfd-894e-b229e6442ac9",
+    "notes": [
+        "The application of modern machine learning to challenges in atomistic simulation is gaining attraction. We present new machine learning models that can predict the energy of the oxidative addition process between a transition metal complex and a substrate for C-C cross-coupling reaction. In turn, this quantity can be used as a descriptor to estimate the activity of homogeneous catalysts using molecular volcano plots. The versatility of this approach is illustrated for vast libraries of organometallic catalysts based on Pt, Pd, Ni, Cu, Ag, and Au combined with 91 ligands. Out-of-sample machine learning predictions were made on a total of 18,062 compounds leading to 557 catalyst candidates falling into the ideal thermodynamic window. This number was further refined by searching for candidates with an estimated price lower than 10 US$/mmol. The 37 catalyst finalists are dominated by palladium phosphine ligand combinations but also include earth abundant (Cu) transition metal with less common ligands. Our results indicate that modern statistical learning techniques can be applied to the computational discovery of readily available and promising catalyst candidates."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0014/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine learning"
+        },
+        {
+            "name": "homogeneous catalysis"
+        },
+        {
+            "name": "volcano plot"
+        },
+        {
+            "name": "transition metal complexes"
+        }
+    ],
+    "title": [
+        "Machine learning meets volcano plots: Computational discovery of cross-coupling catalysts"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0014/v1"
+}

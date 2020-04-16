@@ -1,0 +1,79 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/601",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/601"
+    ],
+    "PID": "http://hdl.handle.net/11321/601",
+    "PublicationTimestamp": "2018-09-18T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "plWordNet",
+        "http://clarin-pl.eu/en/licenses/plwordnet-2/",
+        "PUB",
+        "various"
+    ],
+    "author": [
+        "Koz\u0142owska, Zuzanna"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/601;2018-09-18T02:27:04Z;hdl_11321_3;hdl_11321_4;POE;Koz\u0142owska, Zuzanna;poetry;Polish poetry;poezja;poezja polska;XX wiek;20th century;Microcorpus of 20th century Polish poetry;2018-09-18;corpus;http://hdl.handle.net/11321/601;pol;plWordNet;http://clarin-pl.eu/en/licenses/plwordnet-2/;PUB;various;application/octet-stream;downloadable_files_count: 1",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6233b7ee-b214-5a01-b242-04b74d18fe5a",
+    "notes": [
+        "Microcorpus of 20th century Polish poetry"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/601"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "poetry"
+        },
+        {
+            "name": "Polish poetry"
+        },
+        {
+            "name": "poezja"
+        },
+        {
+            "name": "poezja polska"
+        },
+        {
+            "name": "XX wiek"
+        },
+        {
+            "name": "th century"
+        }
+    ],
+    "title": [
+        "POE"
+    ],
+    "url": ""
+}

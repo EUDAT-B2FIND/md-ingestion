@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3087",
+    "MetadataAccess": [
+        "oai:ota:oucs:3087"
+    ],
+    "PublicationTimestamp": "1858-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1858"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Eliot, George, 1819-1880"
+    ],
+    "fulltext": "oai:ota:oucs:3087;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3087.xml;The sad fortunes of the Reverend Amos Barton;Eliot, George, 1819-1880;not after: 1858;text_and_corpus_linguistics;Fiction -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "223d8362-445a-5e05-ad37-03b93acab903",
+    "oai_identifier": [
+        "oai:ota:oucs:3087"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The sad fortunes of the Reverend Amos Barton"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3087.xml"
+}

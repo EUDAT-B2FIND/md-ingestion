@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Zilles, Karl",
+        "Hoemke, L.",
+        "Eickhoff, Simon B.",
+        "Schleicher, Axel",
+        "Hermann, K.",
+        "Scheperjans, Filip",
+        "Mohlberg, Hartmut",
+        "Amunts, Katrin"
+    ],
+    "DOI": "http://dx.doi.org/10.25493/7HX2-AJH",
+    "DiscHierarchy": [
+        "3.2",
+        "Life Sciences",
+        "Medicine"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "NIFTI"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_7HX2-AJH",
+    "MetadataAccess": [
+        "10.25493_7HX2-AJH"
+    ],
+    "PublicationTimestamp": "2019-06-04T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1093/cercor/bhm241",
+        "https://doi.org/10.1093/cercor/bhm116"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Amunts, Katrin"
+    ],
+    "fulltext": "10.25493_7HX2-AJH;2019-12-10T12:41:53Z;https://doi.org/10.25493/7HX2-AJH;Probabilistic cytoarchitectonic map of Area 7A (SPL) (v8.4);2019-06-04T16:34:57.543Z;This dataset contains the distinct architectonic Area 7A (SPL) in the individual, single subject template of the MNI Colin 27 as well as the MNI ICBM 152 2009c nonlinear asymmetric reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to both reference spaces, where each voxel was assigned the probability to belong to Area 7A (SPL). The probability map of Area 7A (SPL) are provided in the NifTi format for each brain reference space and hemisphere. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and integration of new brain structures may lead to small deviations in earlier released datasets.;neuroscience;histology;imaging;brain mapping;english;dataset;The Human Brain Project;Scheperjans, Filip;Hermann, K.;Eickhoff, Simon B.;Amunts, Katrin;Schleicher, Axel;Hoemke, L.;Mohlberg, Hartmut;Zilles, Karl;Amunts, Katrin;NIFTI;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.1093/cercor/bhm241;https://doi.org/10.1093/cercor/bhm116",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "2abd1419-f3eb-5dfc-887b-24d539ebad3c",
+    "notes": [
+        "This dataset contains the distinct architectonic Area 7A (SPL) in the individual, single subject template of the MNI Colin 27 as well as the MNI ICBM 152 2009c nonlinear asymmetric reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to both reference spaces, where each voxel was assigned the probability to belong to Area 7A (SPL). The probability map of Area 7A (SPL) are provided in the NifTi format for each brain reference space and hemisphere. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and integration of new brain structures may lead to small deviations in earlier released datasets."
+    ],
+    "oai_identifier": [
+        "10.25493_7HX2-AJH"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "histology"
+        },
+        {
+            "name": "imaging"
+        },
+        {
+            "name": "brain mapping"
+        }
+    ],
+    "title": [
+        "Probabilistic cytoarchitectonic map of Area 7A (SPL) (v8.4)"
+    ],
+    "url": ""
+}

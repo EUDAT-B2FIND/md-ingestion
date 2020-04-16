@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4086",
+    "MetadataAccess": [
+        "oai:ota:oucs:4086"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Pennant, Thomas, 1726-1798."
+    ],
+    "fulltext": "oai:ota:oucs:4086;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4086.xml;Of the Patagonians. Formed from the relation of Father Falkener a Jesuit who had resided among them thirty eight years. And from the different voyagers who had met with this tall race;Pennant, Thomas, 1726-1798.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "aa0ffe3f-1721-52c8-b3d3-36e69601cd1c",
+    "oai_identifier": [
+        "oai:ota:oucs:4086"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Of the Patagonians. Formed from the relation of Father Falkener a Jesuit who had resided among them thirty eight years. And from the different voyagers who had met with this tall race"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4086.xml"
+}

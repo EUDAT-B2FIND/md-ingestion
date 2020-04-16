@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1069</identifier>
+    <datestamp>2018-10-18T22:25:12Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Spoken corpus Gos VideoLectures 1.0 (transcription)</dc:title>
+      <dc:creator>Verdonik, Darinka</dc:creator>
+      <dc:creator>Poto&#269;nik, Toma&#382;</dc:creator>
+      <dc:creator>Sepesy Mau&#269;ec, Mirjam</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:subject>speech database</dc:subject>
+      <dc:subject>spoken corpus</dc:subject>
+      <dc:subject>academic speech</dc:subject>
+      <dc:subject>speech transcription</dc:subject>
+      <dc:subject>speech recognition</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>Gos Videolectures is an add-on to the Gos reference speech corpus of Slovene (http://hdl.handle.net/11356/1040), and covers public academic speech. The Gos Videolectures recordings are a  selection of public lectures available through web-portal Videolectures.net provided by the Jo&#382;ef Stefan Institute, and covers in its first release 4.5 hours of speech. &#13;
+&#13;
+This resource contains only the transcriptions of the corpus - the audio recordings are avaiable at CLARIN.SI handle http://hdl.handle.net/11356/1070.&#13;
+&#13;
+All transcriptions for Gos Videolectures were done manually and carefully checked. The main guidelines for transcription were those of the Gos corpus (http://www.korpus-gos.net/Support/About). The transcription tool Transcriber 1.5.1 (http://trans.sourceforge.net/en/presentation.php) was used for making transcriptions. It can be also used for reading or exporting transcriptions (.trs files) to different formats. &#13;
+&#13;
+The transcriptions comprise the TRS files with tabular metadata, their conversion to TEI and to the CWB vertical file format. Each recording has two TRS files, one with the phonetic and the other with the normalised transcription. The TEI and CWB encodings join these two transcriptions at the token level, with the normalised words being also automatically PoS tagged and lemmatised. &#13;
+&#13;
+The corpus can be used for training continuous speech recognition for Slovene language, for phonetic research or any other research of Slovene academic speech.</dc:description>
+      <dc:date>2016-08-01</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1069</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://hdl.handle.net/11356/1158</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-nc/4.0/</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Faculty of Electrical Engineering and Computer Science, University of Maribor</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,59 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:salsa</identifier>
+    <datestamp>2014-06-03T12:59:07Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SALSA - The SAarbr&#252;cken Lexical Semantics Annotation and Analysis Project</dc:title>
+      <dc:creator>Manfred Pinkal
+Universit&#228;t des Saarlandes
+Fachrichtung 4.7 Allgemeine Linguistik
+Postfach 15 11 50
+66041 Saarbr&#252;cken, Germany</dc:creator>
+      <dc:subject xml:lang="en">treebank</dc:subject>
+      <dc:subject xml:lang="en">newspaper</dc:subject>
+      <dc:subject xml:lang="en">written corpus</dc:subject>
+      <dc:subject xml:lang="en">frame semantics</dc:subject>
+      <dc:description xml:lang="en">The SALSA corpus is based on the TIGER corpus. The TIGER corpus (Version 2.1) consists of app. 900,000 tokens (50,000 sentences) of German newspaper text, taken from the Frankfurter Rundschau. The corpus was semi-automatically POS-tagged and annotated with syntactic structure. Moreover, it contains morphological and lemma information for terminal nodes. (cf. TIGER corpus website) SALSA provides an additional annotation layer to the TIGER corpus: FrameNet semantic roles.</dc:description>
+      <dc:description xml:lang="de">Das SALSA-Korpus basiert auf dem Tiger-Korpus. Letzteres besteht aus ca. 900.000 Token (50.000 S&#228;tzen) deutschen Zeitungstextes aus der Frankfurter Rundschau. Das Korpus wurde semi-automatisch syntaktisch annotiert und enth&#228;lt au&#223;erdem POS, Lemma und morphologische Information. (s.a. TIGER-Korpus-Webseite) SALSA f&#252;gt der TIGER-Annotation eine weitere Annotationsebene mit semantischen Rollen (FrameNet) hinzu.</dc:description>
+      <dc:contributor>Manfred Pinkal</dc:contributor>
+      <dc:contributor>Hagen F&#252;rstenau</dc:contributor>
+      <dc:contributor>Ines Rehbein</dc:contributor>
+      <dc:contributor>Josef Ruppenhofer</dc:contributor>
+      <dc:contributor>Caroline Sporleder</dc:contributor>
+      <dc:contributor>Gemma Boleda</dc:contributor>
+      <dc:contributor>Aljoscha Burchardt</dc:contributor>
+      <dc:contributor>Katrin Erk</dc:contributor>
+      <dc:contributor>Anette Frank</dc:contributor>
+      <dc:contributor>Andrea Kowalski</dc:contributor>
+      <dc:contributor>Sebastian Pad&#243;</dc:contributor>
+      <dc:contributor>Marco Pennacchiotti</dc:contributor>
+      <dc:contributor>Jiri Semecky</dc:contributor>
+      <dc:contributor>Dennis Spohr</dc:contributor>
+      <dc:date>2006</dc:date>
+      <dc:type>Collection</dc:type>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>hdl:11858/00-246C-0000-0005-BD13-1</dc:identifier>
+      <dc:identifier>clarind-uds:salsa</dc:identifier>
+      <dc:source>TIGER</dc:source>
+      <dc:source>http://www.ims.uni-stuttgart.de/projekte/TIGER/</dc:source>
+      <dc:source>FrameNet</dc:source>
+      <dc:source>https://framenet.icsi.berkeley.edu/fndrupal/</dc:source>
+      <dc:language>deu</dc:language>
+      <dc:relation>A. Burchardt, K. Erk, A. Frank, A. Kowalski, S. Pad&#243; and M. Pinkal:
+The SALSA Corpus: a German Corpus Resource for Lexical Semantics.
+Proceedings of LREC 2006, Genoa, Italy. http://www.dfki.de/lt/publication_show.php?id=3611</dc:relation>
+      <dc:relation>List of publications of the SALSA project: http://www.coli.uni-saarland.de/projects/salsa/page.php?id=publications</dc:relation>
+      <dc:relation>Text-SALSA XML format: http://www.nlpado.de/~sebastian/pub/papers/lrec04_erk.pdf</dc:relation>
+      <dc:relation>Framenet: https://framenet.icsi.berkeley.edu/fndrupal/</dc:relation>
+      <dc:relation>FrameNet Transformer: http://www.coli.uni-saarland.de/projects/salsa/fnt/</dc:relation>
+      <dc:relation>WordNet Detour to FrameNet: http://www.coli.uni-saarland.de/~albu/cgi-bin/FN-Detour-short.html</dc:relation>
+      <dc:relation>Shalmaneser: A Shallow Semantic Parser: http://www.coli.uni-saarland.de/projects/salsa/shal/</dc:relation>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:rights>Copyrighted, Agreement needed</dc:rights>
+      <dc:rights>SALSA license agreement: http://www.coli.uni-saarland.de/projects/salsa/corpus/doc/license.html</dc:rights>
+      <dc:rights>Precondition to use SALSA is to sign TIGER's license agreement: http://www.ims.uni-stuttgart.de/projekte/TIGER/TIGERCorpus/license/htmllicense.shtml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

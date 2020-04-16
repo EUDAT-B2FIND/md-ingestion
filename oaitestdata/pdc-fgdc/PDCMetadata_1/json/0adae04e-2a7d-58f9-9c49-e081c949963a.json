@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "pdc@uwaterloo.ca"
+    ],
+    "Contributor": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "The RADARSAT satellite image collections in the Polar Data Catalogue include imagery from both RADARSAT-1 and RADARSAT-2.   &gt;&gt;During its operation (1995-2013), the RADARSAT-1 satellite and sensors collected Synthetic Aperture Radar (SAR) imagery, including a significant portion which is attributable to the systematic data collection effort of the Background Mission. The archive of imagery developed during the Background Mission has emphasized, among other things, the RADARSAT imaging capabilities during times of inclement weather and low illumination conditions.  Practical experience by operational users has demonstrated that RADARSAT imagery is an excellent and reliable source for mapping and monitoring sea ice and other cryospheric features in northern latitudes during different times of the year. RADARSAT-1 has collected an incredible wealth of SAR imagery over polar regions, including northern Canada. A large portion of this archive is available on the Polar Data Catalogue as the RADARSAT Polar Science Dataset.     &gt;&gt;The RADARSAT-2 Antarctic Mapping Initiative was undertaken to produce a continental mosaic consistent with the 1997 RADARSAT-1 Antarctic Mapping Mission. The resulting mosaics and individual tiles, produced in collaboration with the Byrd Polar Research Center, cover all the way to the South Pole, permitted by the left-looking capabilities of the RADARSAT-2. This is only the second time pole-to-coast mosaic SAR (Synthetic Aperture Radar) coverage has been achieved, the first time having been the RADARSAT-1 Antarctic Mapping Mission in 1997. In addition to enhancing the achievements of previous RADARSAT-1 Antarctic missions, the intent of this mission was to facilitate change analysis through space-borne observation of ice sheets. Such data are important for generation of global climate products, including models. The mission was the result of international collaboration associated with the International Polar Year (IPY), incorporating input from the scientific community, with the goal of making science products available for free. This dataset is a Canadian Space Agency contribution to IPY."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=11532_fgdc",
+    "PublicationTimestamp": "2016-04-26T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(90S-84N,180W-180E)",
+    "TempCoverageBegin": 62956094399,
+    "TempCoverageEnd": 63366321599,
+    "TemporalCoverage": " period : ( 1996-01-01T11:59:59Z - 2008-12-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1996-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2008-12-31T11:59:59Z",
+    "author": [
+        "CCIN/PDC Director",
+        "Canadian Space Agency",
+        "PDC Data Manager",
+        "Canadian Ice Service, Environment and Climate Change Canada",
+        "MacDonald, Dettwiler and Associates Ltd."
+    ],
+    "fulltext": "11532_fgdc;2017-04-09T22:02:26Z;PDCMetadata;MacDonald, Dettwiler and Associates Ltd.;MacDonald, Dettwiler and Associates Ltd.;Canadian Ice Service, Environment and Climate Change Canada;Canadian Space Agency;CCIN/PDC Director;PDC Data Manager;20160426;RADARSAT Satellite Imagery in the Polar Data Catalogue;Computer file;unknown;For Arctic RADARSAT-1 images:  RADARSAT-1 Polar Science Dataset - Canadian Space Agency Arctic Imagery 1996-2007/Canadian Ice Service Image Archive 1997-2006. Waterloo, Canada: Canadian Cryospheric Information Network (CCIN).  >>For Antarctic RADARSAT-2 images:  MacDonald, Dettwiler and Associates Ltd., 2014. RADARSAT-2 Antarctica Mosaics and Tiles, 2008. Waterloo, Canada: Canadian Cryospheric Information Network (CCIN).;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11532;The RADARSAT-1 imagery collection of northern Canada (the RADARSAT Polar Science Dataset), containing over 27,000 images, is composed of the following elements:  &gt;Blanket coverage in Fine Beam Mode of the Canadian polar region and the Arctic Archipelago (collected during the Canadian Interferometric Mission, 2000-2001).  &gt;Maximum and minimum ice extent Arctic snapshots from 2003 to 2006 - the ScanSAR Seasonal Circum-Polar snapshots.  &gt;Thematically-relevant imagery acquired over specific areas of interest (Supersites) identified by the cryospheric and remote sensing research communities.  &gt;The Canadian Ice Service imagery dataset acquired since 1996.  &gt;Canadian Arctic land mass mosaics - summer and winter 1998-1999.  &gt;&gt;The 2008 RADARSAT-2 full continental mosaics of Antarctica are available in 8-bit, 16-bit, and 32-bit modes; 100 m, 200 m, 400 m, and 800 m resolutions;  and in HH and HV polarizations.  Eighty-nine individual tile products covering a grid of the entire continent at higher resolution (25 m) are available in 16-bit and HH or HV polarizations.;The RADARSAT satellite image collections in the Polar Data Catalogue include imagery from both RADARSAT-1 and RADARSAT-2.   &gt;&gt;During its operation (1995-2013), the RADARSAT-1 satellite and sensors collected Synthetic Aperture Radar (SAR) imagery, including a significant portion which is attributable to the systematic data collection effort of the Background Mission. The archive of imagery developed during the Background Mission has emphasized, among other things, the RADARSAT imaging capabilities during times of inclement weather and low illumination conditions.  Practical experience by operational users has demonstrated that RADARSAT imagery is an excellent and reliable source for mapping and monitoring sea ice and other cryospheric features in northern latitudes during different times of the year. RADARSAT-1 has collected an incredible wealth of SAR imagery over polar regions, including northern Canada. A large portion of this archive is available on the Polar Data Catalogue as the RADARSAT Polar Science Dataset.     &gt;&gt;The RADARSAT-2 Antarctic Mapping Initiative was undertaken to produce a continental mosaic consistent with the 1997 RADARSAT-1 Antarctic Mapping Mission. The resulting mosaics and individual tiles, produced in collaboration with the Byrd Polar Research Center, cover all the way to the South Pole, permitted by the left-looking capabilities of the RADARSAT-2. This is only the second time pole-to-coast mosaic SAR (Synthetic Aperture Radar) coverage has been achieved, the first time having been the RADARSAT-1 Antarctic Mapping Mission in 1997. In addition to enhancing the achievements of previous RADARSAT-1 Antarctic missions, the intent of this mission was to facilitate change analysis through space-borne observation of ice sheets. Such data are important for generation of global climate products, including models. The mission was the result of international collaboration associated with the International Polar Year (IPY), incorporating input from the scientific community, with the goal of making science products available for free. This dataset is a Canadian Space Agency contribution to IPY.;Summary: Not Applicable Research Program(s): CCIN. For further information: www.polardata.ca/pdcsearch;19960101;20081231;NULL;In work;Irregular;-180;180;84;-90;NULL;Antarctic;Archive;Arctic;Glaciers;Ice shelf;RADARSAT;Satellite imagery;Sea ice;North and South polar regions;NULL;Public;NULL;Canadian Cryospheric Information Network;Polar Data Catalogue;NULL;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;11532;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20160426;20160426;Polar Data Catalogue;Canadian Cryospheric Information Network;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0adae04e-2a7d-58f9-9c49-e081c949963a",
+    "notes": [
+        "The RADARSAT-1 imagery collection of northern Canada (the RADARSAT Polar Science Dataset), containing over 27,000 images, is composed of the following elements:  &gt;Blanket coverage in Fine Beam Mode of the Canadian polar region and the Arctic Archipelago (collected during the Canadian Interferometric Mission, 2000-2001).  &gt;Maximum and minimum ice extent Arctic snapshots from 2003 to 2006 - the ScanSAR Seasonal Circum-Polar snapshots.  &gt;Thematically-relevant imagery acquired over specific areas of interest (Supersites) identified by the cryospheric and remote sensing research communities.  &gt;The Canadian Ice Service imagery dataset acquired since 1996.  &gt;Canadian Arctic land mass mosaics - summer and winter 1998-1999.  &gt;&gt;The 2008 RADARSAT-2 full continental mosaics of Antarctica are available in 8-bit, 16-bit, and 32-bit modes; 100 m, 200 m, 400 m, and 800 m resolutions;  and in HH and HV polarizations.  Eighty-nine individual tile products covering a grid of the entire continent at higher resolution (25 m) are available in 16-bit and HH or HV polarizations."
+    ],
+    "oai_identifier": [
+        "11532_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-180,-90],[-180,84],[180,84],[180,-90],[-180,-90]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Antarctic"
+        },
+        {
+            "name": "Archive"
+        },
+        {
+            "name": "Arctic"
+        },
+        {
+            "name": "Glaciers"
+        },
+        {
+            "name": "Ice shelf"
+        },
+        {
+            "name": "RADARSAT"
+        },
+        {
+            "name": "Satellite imagery"
+        },
+        {
+            "name": "Sea ice"
+        }
+    ],
+    "title": [
+        "RADARSAT Satellite Imagery in the Polar Data Catalogue"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11532"
+}

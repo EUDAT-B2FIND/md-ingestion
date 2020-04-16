@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/631</identifier>
+    <datestamp>2019-03-17T11:30:53Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_478</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>probka lista poznan</dc:title>
+      <dc:creator>Wieczorek, Jan</dc:creator>
+      <dc:subject>pr&#243;ba test</dc:subject>
+      <dc:description>pr&#243;ba test pozna&#324;</dc:description>
+      <dc:date>2019-03-17</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/631</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nd/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>PWR Test</dc:publisher>
+      <dc:publisher>Jan Wieczorek</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

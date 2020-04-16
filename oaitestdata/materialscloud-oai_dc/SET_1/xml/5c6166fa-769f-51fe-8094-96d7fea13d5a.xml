@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0018/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Wu, QuanSheng</dc:creator>
+      <dc:creator>Piveteau, Christophe</dc:creator>
+      <dc:creator>Song, Zhida</dc:creator>
+      <dc:creator>Yazyev, Oleg V.</dc:creator>
+      <dc:title>MgTa2N3: A reference Dirac semimetal</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-05-13</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>MARVEL</dc:subject>
+      <dc:subject>MgTa2N3</dc:subject>
+      <dc:subject> Dirac semimetal</dc:subject>
+      <dc:subject>VASP</dc:subject>
+      <dc:subject>WannierTools</dc:subject>
+      <dc:subject>MARVEL/DD6</dc:subject>
+      <dc:subject>Topological materials</dc:subject>
+      <dc:subject>Topological semimetal</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0018/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0018/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>MgTa2N3 is predicted to host the topological Dirac semimetal phase. This archive includes input data necessary for reproducing first-principles calculation described in the publication.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

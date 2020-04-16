@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5624",
+    "MetadataAccess": [
+        "oai:ota:oucs:5624"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Brooke, Henry, 1703?-1783."
+    ],
+    "fulltext": "oai:ota:oucs:5624;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5624.xml;The fool of quality: or, the history of Henry Earl of Moreland. In four volumes. By Mr. Brooke. [pt.4];Brooke, Henry, 1703?-1783.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8ec7165a-1485-51bf-bfce-612f535cb1d0",
+    "oai_identifier": [
+        "oai:ota:oucs:5624"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The fool of quality: or, the history of Henry Earl of Moreland. In four volumes. By Mr. Brooke. [pt.4]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5624.xml"
+}

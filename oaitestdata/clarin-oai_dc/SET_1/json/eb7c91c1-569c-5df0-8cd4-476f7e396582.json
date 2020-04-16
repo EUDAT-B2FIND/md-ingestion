@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "The Norwegian Association of Higher Education Institutions",
+        "Universitets- og h\u00f8gskoler\u00e5det"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 2",
+        "text/xml",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English",
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/4",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/4"
+    ],
+    "PID": "http://hdl.handle.net/11509/4",
+    "PublicationTimestamp": "2012-06-13T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "The Norwegian Association of Higher Education Institutions",
+        "Universitets- og h\u00f8gskoler\u00e5det"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11509/122"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "CC"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/4;2017-01-10T15:54:41Z;hdl_11509_1;hdl_11509_2;UHR's Termbase for Norwegian higher education institutions;UHRs termbase for universitets- og h\u00f8gskolesektoren;Lexical Conceptual Resource;Text;Terminological Resource;English;Norwegian;This is a collection of 2000 administrative terms with English - Norwegian bokm\u00e5l/Norwegian bokm\u00e5l - English and English - Norwegian nynorsk/Norwegian nynorsk - English translations, from the Norwegian Institutions of Higher Education (UHR).\r\n        The termbase translates from Norwegian bokm\u00e5l/Norwegian nynorsk to British English and the other way around.\r\n        \r\n        The term base is owned by the Norwegian Association of Higher Education Institutions (UHR) in Oslo (cf. web page: http://www.uhr.no/ressurser/temasider/terminologi).\r\n        The term base has been made downloadable in TBX format by the META-NORD group at University of Bergen, with the kind permission of UHR.\r\n        META-NORD has also assisted UHR in providing a license for the downloadable version as well as for the online, browsable version.;2012-06-13;lexicalConceptualResource;http://hdl.handle.net/11509/4;eng;nor;http://hdl.handle.net/11509/122;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;CC;application/octet-stream;application/octet-stream;text/xml;downloadable_files_count: 2;The Norwegian Association of Higher Education Institutions;Universitets- og h\u00f8gskoler\u00e5det;http://github.com/clarino/uhrtermlists/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "eb7c91c1-569c-5df0-8cd4-476f7e396582",
+    "notes": [
+        "This is a collection of 2000 administrative terms with English - Norwegian bokm\u00e5l/Norwegian bokm\u00e5l - English and English - Norwegian nynorsk/Norwegian nynorsk - English translations, from the Norwegian Institutions of Higher Education (UHR).\r\n        The termbase translates from Norwegian bokm\u00e5l/Norwegian nynorsk to British English and the other way around.\r\n        \r\n        The term base is owned by the Norwegian Association of Higher Education Institutions (UHR) in Oslo (cf. web page: http://www.uhr.no/ressurser/temasider/terminologi).\r\n        The term base has been made downloadable in TBX format by the META-NORD group at University of Bergen, with the kind permission of UHR.\r\n        META-NORD has also assisted UHR in providing a license for the downloadable version as well as for the online, browsable version."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/4"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Lexical Conceptual Resource"
+        },
+        {
+            "name": "Text"
+        },
+        {
+            "name": "Terminological Resource"
+        },
+        {
+            "name": "English"
+        },
+        {
+            "name": "Norwegian"
+        }
+    ],
+    "title": [
+        "UHR's Termbase for Norwegian higher education institutions",
+        "UHRs termbase for universitets- og h\u00f8gskolesektoren"
+    ],
+    "url": ""
+}

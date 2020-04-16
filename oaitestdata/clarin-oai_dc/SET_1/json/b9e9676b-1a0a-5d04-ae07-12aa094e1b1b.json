@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "1393",
+        "Gross, Maurice, 1934-"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(33 files : total of ca. 296 KB)"
+    ],
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1393",
+    "MetadataAccess": [
+        "oai:ota:oucs:1393"
+    ],
+    "PublicationTimestamp": "1990-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1990"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Academic dissertations"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gross, Maurice, 1934-"
+    ],
+    "fulltext": "oai:ota:oucs:1393;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1393.xml;Materials for construction of lexicon grammar / compiled by Maurice Gross;Gross, Maurice, 1934-;[1990];text_and_corpus_linguistics;French language -- Lexicology -- Data;fra;Oxford Text Archive, University of Oxford;1393;Gross, Maurice, 1934-;(33 files : total of ca. 296 KB);Text;Academic dissertations;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b9e9676b-1a0a-5d04-ae07-12aa094e1b1b",
+    "oai_identifier": [
+        "oai:ota:oucs:1393"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "French language -- Lexicology -- Data"
+        }
+    ],
+    "title": [
+        "Materials for construction of lexicon grammar / compiled by Maurice Gross"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1393.xml"
+}

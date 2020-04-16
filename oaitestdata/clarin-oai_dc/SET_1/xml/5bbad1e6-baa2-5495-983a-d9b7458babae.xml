@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>acae1ab62f3e11e2a2aa782bcb074135cbaf365868fe4aecb947bcf617c8395b</identifier>
+    <datestamp>2018-11-15T16:39:49Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:suiteOfTools</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ACOPOST - A Collection of POS Taggers</dc:title>
+      <dc:description>ACOPOST is a free and open source collection of four part-of-speech taggers (t3, met, tbt, and et). In corpus linguistics, part-of-speech tagging (POS tagging or POST), also called grammatical tagging or word-category disambiguation, is the process of marking up the words in a text (corpus) as corresponding to a particular part of speech, based on both its definition, as well as its context &#226;&#128;&#148; i.e. relationship with adjacent and related words in a phrase, sentence, or paragraph. A simplified form of this is commonly taught to school-age children, in the identification of words as nouns, verbs, adjectives, adverbs, etc. Once performed by hand, POS tagging is now done in the context of computational linguistics, using algorithms which associate discrete terms, as well as hidden parts of speech, in accordance with a set of descriptive tags.
+
+</dc:description>
+      <dc:date>2012-11-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

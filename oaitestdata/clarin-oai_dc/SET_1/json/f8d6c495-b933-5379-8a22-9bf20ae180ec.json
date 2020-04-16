@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4963",
+    "MetadataAccess": [
+        "oai:ota:oucs:4963"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Berkeley, George Monck, 1763-1793."
+    ],
+    "fulltext": "oai:ota:oucs:4963;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4963.xml;Spanish memoirs: in a series of original letters. Containing the history of Donna Isabella della Villarea, ... Published by the author of Maria, or the generous rustic. In two volumes. ... [pt.2];Berkeley, George Monck, 1763-1793.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f8d6c495-b933-5379-8a22-9bf20ae180ec",
+    "oai_identifier": [
+        "oai:ota:oucs:4963"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Spanish memoirs: in a series of original letters. Containing the history of Donna Isabella della Villarea, ... Published by the author of Maria, or the generous rustic. In two volumes. ... [pt.2]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4963.xml"
+}

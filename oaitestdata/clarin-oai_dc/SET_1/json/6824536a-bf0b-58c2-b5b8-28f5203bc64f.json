@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "McMahon, Kenneth"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(1 file : ca. 53 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1711",
+    "MetadataAccess": [
+        "oai:ota:oucs:1711"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Van Dyke, Henry, 1852-1933"
+    ],
+    "fulltext": "oai:ota:oucs:1711;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1711.xml;The story of the other wise man / by Henry Van Dyke;Van Dyke, Henry, 1852-1933;text_and_corpus_linguistics;American fiction -- 20th century;Oxford Text Archive, University of Oxford;McMahon, Kenneth;text/plain;(1 file : ca. 53 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6824536a-bf0b-58c2-b5b8-28f5203bc64f",
+    "oai_identifier": [
+        "oai:ota:oucs:1711"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American fiction -- th century"
+        }
+    ],
+    "title": [
+        "The story of the other wise man / by Henry Van Dyke"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1711.xml"
+}

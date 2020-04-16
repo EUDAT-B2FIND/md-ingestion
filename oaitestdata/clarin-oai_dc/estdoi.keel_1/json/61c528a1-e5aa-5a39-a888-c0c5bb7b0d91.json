@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-00016L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:5757504",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:5757504"
+    ],
+    "PublicationTimestamp": "2017-03-03T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Mihkla, Meelis"
+    ],
+    "fulltext": "oai:oai.datacite.org:5757504;2019-04-22T13:02:04Z;ESTDOI;ESTDOI.KEEL;Eestikeelne k\u00f5nes\u00fcntees;Text-to-Speech Synthesis for Estonian;Mihkla, Meelis;Center of Estonian Language Resources;2013;Issued: 2013-01-07;Updated: 2017-03-03;doi:10.15155/3-00-0000-0000-0000-00016L;Abstract;K\u00f5nes\u00fcnteesikeskkond koondab endas eesti keele tekst-k\u00f5ne s\u00fcnteesi erinevaid variante, rakendusi, liideseid ja muid materjale, mis s\u00fcnteesimiseks on loodud. Kuulata saab erinevaid eestikeelseid s\u00fcnteesh\u00e4\u00e4li ning neid ka alla laadida. Samuti saab alla laadida s\u00fcnteesi kasutavaid rakendusi nii nutitelefonidele kui ka arvutitele.;Abstract;TTS for Estonian is corpus based system that uses diphones, formants, unit selection and statistical parametres for various speech models.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "61c528a1-e5aa-5a39-a888-c0c5bb7b0d91",
+    "notes": [
+        "Abstract",
+        "K\u00f5nes\u00fcnteesikeskkond koondab endas eesti keele tekst-k\u00f5ne s\u00fcnteesi erinevaid variante, rakendusi, liideseid ja muid materjale, mis s\u00fcnteesimiseks on loodud. Kuulata saab erinevaid eestikeelseid s\u00fcnteesh\u00e4\u00e4li ning neid ka alla laadida. Samuti saab alla laadida s\u00fcnteesi kasutavaid rakendusi nii nutitelefonidele kui ka arvutitele.",
+        "Abstract",
+        "TTS for Estonian is corpus based system that uses diphones, formants, unit selection and statistical parametres for various speech models."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:5757504"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eestikeelne k\u00f5nes\u00fcntees",
+        "Text-to-Speech Synthesis for Estonian"
+    ],
+    "url": ""
+}

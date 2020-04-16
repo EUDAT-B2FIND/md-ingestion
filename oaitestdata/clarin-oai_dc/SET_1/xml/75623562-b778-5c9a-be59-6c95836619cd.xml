@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>63649c5218f311e6a2aa782bcb074135d2f0147396bf431691513c6c0db2adea</identifier>
+    <datestamp>2018-11-15T16:40:20Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Europarl-QTLeap WSD/NED corpus</dc:title>
+      <dc:description>The texts are sentences from the Europarl parallel corpus (Koehn, 2005). The textscontain the monolingual sentences from parallel corpora for the following
+pairs: Bulgarian-English, Czech-English, Portuguese-English and Spanish-
+English. The English corpus is comprised by the English side of the Spanish-
+English corpus.
+Basque is not in Europarl. In addition, it contains the Basque and English
+sides of the GNOME corpus (Tiedemann, 2012).
+The texts have been automatically annotated with NLP tools, including Word
+Sense Disambiguation, Named Entity Disambiguation and Coreference
+resolution.</dc:description>
+      <dc:date>2016-05-13</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

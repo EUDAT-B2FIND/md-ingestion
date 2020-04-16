@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 3"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1466",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1466"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1466",
+    "PublicationTimestamp": "2015-01-29T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/610516"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU General Public License, version 2",
+        "http://www.gnu.org/licenses/gpl-2.0.html",
+        "PUB"
+    ],
+    "author": [
+        "Rosa, Rudolf"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1466;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Depfix: Automatic Post-editing of SMT;Rosa, Rudolf;machine translation;post-editing;Treex;morphology;parsing;Depfix, a tool for Automatic Post-editing of SMT.\r\nSee the project website for more information.;2015-01-29;toolService;http://hdl.handle.net/11234/1-1466;eng;ces;info:eu-repo/grantAgreement/EC/FP7/610516;GNU General Public License, version 2;http://www.gnu.org/licenses/gpl-2.0.html;PUB;application/x-gzip;application/x-gzip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 3;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/depfix",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0d830808-5ecc-5e56-88eb-069ce6649f12",
+    "notes": [
+        "Depfix, a tool for Automatic Post-editing of SMT.\r\nSee the project website for more information."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1466"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "post-editing"
+        },
+        {
+            "name": "Treex"
+        },
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "parsing"
+        }
+    ],
+    "title": [
+        "Depfix: Automatic Post-editing of SMT"
+    ],
+    "url": ""
+}

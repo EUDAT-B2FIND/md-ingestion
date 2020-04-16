@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "ZRC SAZU"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1124",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1124"
+    ],
+    "PID": "http://hdl.handle.net/11356/1124",
+    "PublicationTimestamp": "2018-01-27T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "ZRC SAZU"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jakopin, Primo\u017e",
+        "Aha\u010di\u010d, Kozma"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1124;2018-01-27T12:15:54Z;hdl_11356_1023;hdl_11356_1024;Concordances of Primo\u017e Trubar's \"Ta evangeli sv. Matev\u017ea\" (1555);Jakopin, Primo\u017e;Aha\u010di\u010d, Kozma;16th century Slovenian language;historical language;concordances;The 23603 concordances represent a transcription of the book \"Ta evangeli sv. Matev\u017ea\" (1555)  by Primo\u017e Trubar.;2018-01-27;corpus;http://hdl.handle.net/11356/1124;slv;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;ZRC SAZU",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cf721842-a927-556c-9ada-e1cea8b800ae",
+    "notes": [
+        "The 23603 concordances represent a transcription of the book \"Ta evangeli sv. Matev\u017ea\" (1555)  by Primo\u017e Trubar."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1124"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "th century Slovenian language"
+        },
+        {
+            "name": "historical language"
+        },
+        {
+            "name": "concordances"
+        }
+    ],
+    "title": [
+        "Concordances of Primo\u017e Trubar's \"Ta evangeli sv. Matev\u017ea\" (1555)"
+    ],
+    "url": ""
+}

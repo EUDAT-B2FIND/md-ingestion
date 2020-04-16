@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Howard-Hill, T.H. (Trevor Howard)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 98 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0098",
+    "MetadataAccess": [
+        "oai:ota:oucs:0098"
+    ],
+    "PublicationTimestamp": "1613-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1613"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Middleton, Thomas, d. 1627"
+    ],
+    "fulltext": "oai:ota:oucs:0098;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0098.xml;The witch / Thomas Middleton;Middleton, Thomas, d. 1627;1613-1316;text_and_corpus_linguistics;English drama -- 17th century;eng;Oxford Text Archive, University of Oxford;Howard-Hill, T.H. (Trevor Howard);(1 file : ca. 98 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4d8db6f3-de02-55ef-b391-941b53c39a46",
+    "oai_identifier": [
+        "oai:ota:oucs:0098"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "The witch / Thomas Middleton"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0098.xml"
+}

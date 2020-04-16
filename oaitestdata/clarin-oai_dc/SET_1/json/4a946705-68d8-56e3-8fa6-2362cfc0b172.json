@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "Official Aramaic (700-300 BCE)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0140",
+    "MetadataAccess": [
+        "oai:ota:oucs:0140"
+    ],
+    "PublicationYear": [
+        "500 BCE-1 BCE"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Devotional literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Unknown"
+    ],
+    "fulltext": "oai:ota:oucs:0140;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0140.xml; Psalms  : (Targum text) / compiled by Richard T. White;Unknown;500 BCE-1 BCE;text_and_corpus_linguistics;Devotional literature -- Israel;arc;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Devotional literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4a946705-68d8-56e3-8fa6-2362cfc0b172",
+    "oai_identifier": [
+        "oai:ota:oucs:0140"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Devotional literature -- Israel"
+        }
+    ],
+    "title": [
+        " Psalms  : (Targum text) / compiled by Richard T. White"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0140.xml"
+}

@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Formal Linguistics Department of Warsaw University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "image/png",
+        "downloadable_files_count: 2",
+        "application/octet-stream"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/469",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/469"
+    ],
+    "PID": "http://hdl.handle.net/11321/469",
+    "PublicationTimestamp": "2015-04-15T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Formal Linguistics Department of Warsaw University"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Bie\u0144, Janusz S."
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/469;2018-05-21T08:06:08Z;hdl_11321_3;hdl_11321_4;Djview for Shapes - a demonstration (Open Virtual Appliance);Bie\u0144, Janusz S.;scans DjVu;A shape browser for DjVu documents;2015-04-15;toolService;http://hdl.handle.net/11321/469;N/A;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;image/png;application/octet-stream;downloadable_files_count: 2;Formal Linguistics Department of Warsaw University;https://bitbucket.org/jsbien/ndt",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a3c8c2cc-02d6-5780-8854-1ca5a5a19b7d",
+    "notes": [
+        "A shape browser for DjVu documents"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/469"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "scans DjVu"
+        }
+    ],
+    "title": [
+        "Djview for Shapes - a demonstration (Open Virtual Appliance)"
+    ],
+    "url": ""
+}

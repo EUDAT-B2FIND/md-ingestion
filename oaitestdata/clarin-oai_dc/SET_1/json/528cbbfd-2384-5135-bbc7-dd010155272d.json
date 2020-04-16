@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4338",
+    "MetadataAccess": [
+        "oai:ota:oucs:4338"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Defoe, Daniel, 1661?-1731."
+    ],
+    "fulltext": "oai:ota:oucs:4338;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4338.xml;What if the Swedes should come?: With some thoughts about keeping the army on foot, whether they come or not.;Defoe, Daniel, 1661?-1731.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "528cbbfd-2384-5135-bbc7-dd010155272d",
+    "oai_identifier": [
+        "oai:ota:oucs:4338"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "What if the Swedes should come?: With some thoughts about keeping the army on foot, whether they come or not."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4338.xml"
+}

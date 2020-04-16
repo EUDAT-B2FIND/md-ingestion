@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "University of Western Bohemia, Pilsen",
+        "Charles University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1364",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1364"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1364",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Western Bohemia, Pilsen",
+        "Charles University"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Czech Republic"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1364;2017-11-09T14:21:28Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;TrEdVoice;The TrEdVoice module is designed to be TrEd annotation editor accessories enabling the voice control of its functions.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1364;downloadable_files_count: 0;Czech Republic;University of Western Bohemia, Pilsen;Charles University;http://ufal.mff.cuni.cz/rest/CAC/cac_20.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c2aef578-416c-55f3-95c6-1ea57a791e16",
+    "notes": [
+        "The TrEdVoice module is designed to be TrEd annotation editor accessories enabling the voice control of its functions."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1364"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "TrEdVoice"
+    ],
+    "url": ""
+}

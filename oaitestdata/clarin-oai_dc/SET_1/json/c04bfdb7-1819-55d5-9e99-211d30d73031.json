@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "University of Tartu"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Estonian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-645",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-645"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-645",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Tartu"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Estonia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-645;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Corpus with Disambiguated Word Senses;100000 words, word senses based on TEKsaurus (Estonian Wordnet);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-645;est;downloadable_files_count: 0;Estonia;University of Tartu;http://www.cl.ut.ee/korpused/semkorpus/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c04bfdb7-1819-55d5-9e99-211d30d73031",
+    "notes": [
+        "100000 words, word senses based on TEKsaurus (Estonian Wordnet)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-645"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Corpus with Disambiguated Word Senses"
+    ],
+    "url": ""
+}

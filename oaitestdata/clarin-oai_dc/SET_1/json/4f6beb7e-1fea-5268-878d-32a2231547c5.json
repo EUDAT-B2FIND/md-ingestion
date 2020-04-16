@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Dziedzic\u00f3w Jakuba Siebeneichera"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-162762",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-162762"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CE7-E",
+    "PublicationTimestamp": "1615-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1615"
+    ],
+    "Publisher": [
+        "Drukarnia Dziedzic\u00f3w Jakuba Siebeneichera"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/162762",
+        "oai:jbc.bj.uj.edu.pl:publication:171125"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Kunicki, Wac\u0142aw (1580-1653)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-162762;2019-02-28T18:43:44Z;Obraz Szlachcica Polskiego;Kunicki, Wac\u0142aw (1580-1653);starodruki 17\u00a0w.;\u0141ahodowski, Jan (15..-1622). [Adr. ded.];Drukarnia Dziedzic\u00f3w Jakuba Siebeneichera;1615;starodruk;application/xml;clarind-uds:poldilemma-162762;hdl:11858/00-246C-0000-0023-8CE7-E;Biblioteka Jagiello\u0144ska, BJ St. Dr. 10796 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/162762;oai:jbc.bj.uj.edu.pl:publication:171125;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4f6beb7e-1fea-5268-878d-32a2231547c5",
+    "notes": [
+        "\u0141ahodowski, Jan (15..-1622). [Adr. ded.]"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-162762"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Obraz Szlachcica Polskiego"
+    ],
+    "url": ""
+}

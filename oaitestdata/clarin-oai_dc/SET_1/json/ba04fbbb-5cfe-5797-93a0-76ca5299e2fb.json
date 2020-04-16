@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1c665572104111e5a2aa782bcb074135247c22693c2e4320891b8feca50751e7",
+    "MetadataAccess": [
+        "1c665572104111e5a2aa782bcb074135247c22693c2e4320891b8feca50751e7"
+    ],
+    "PublicationTimestamp": "2015-06-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "1c665572104111e5a2aa782bcb074135247c22693c2e4320891b8feca50751e7;2018-11-15T16:40:17Z;corpus;corpus:text;Basque-English ParDeepBank;This resource is part of Deliverable 4.6 of the QTLeap FP7 project (Contract number 610516). In its current development (15% of the intended goal of the project), it is composed of 150 sentences (1,416 English tokens and 1,275 Basque tokens). The sentences are excerpts from journalistic text from the Wall Street Journal that have been manually translated into Basque to generate a parallel corpus.\n\nIt includes several levels of linguisic information for each sentence, including lemmatization and mophological analysis as well as dependency parsing trees. This is the result of a semi-automatic annotation process by means of automatic analysis followed by a human correction phase.\n\nThe main motivation behind the creation of this resource was to build a high quality data set with rich grammatical information that could support the development of linguistically-informed translation tools.;2015-06-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ba04fbbb-5cfe-5797-93a0-76ca5299e2fb",
+    "notes": [
+        "This resource is part of Deliverable 4.6 of the QTLeap FP7 project (Contract number 610516). In its current development (15% of the intended goal of the project), it is composed of 150 sentences (1,416 English tokens and 1,275 Basque tokens). The sentences are excerpts from journalistic text from the Wall Street Journal that have been manually translated into Basque to generate a parallel corpus.\n\nIt includes several levels of linguisic information for each sentence, including lemmatization and mophological analysis as well as dependency parsing trees. This is the result of a semi-automatic annotation process by means of automatic analysis followed by a human correction phase.\n\nThe main motivation behind the creation of this resource was to build a high quality data set with rich grammatical information that could support the development of linguistically-informed translation tools."
+    ],
+    "oai_identifier": [
+        "1c665572104111e5a2aa782bcb074135247c22693c2e4320891b8feca50751e7"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Basque-English ParDeepBank"
+    ]
+}

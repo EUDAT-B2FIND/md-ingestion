@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "Contributor": [
+        "Yzaguirre, Llu\u00eds de"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Catalan",
+        "French",
+        "Portuguese",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-283",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-283"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-283",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Spain"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-283;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;PALIC;Yzaguirre, Llu\u00eds de;A package of tools for the processing of the Corpus T\u00e8cnic in Catalan and Spanish. It includes a preprocessor, a PoSTagger and a linguistic disambiguator.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-283;cat;fra;por;spa;downloadable_files_count: 0;Spain;Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra;http://terminotica.upf.edu/CREL/LIC01.htm",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c5e1b8f5-b6e8-53e7-a0f8-a4726b78b310",
+    "notes": [
+        "A package of tools for the processing of the Corpus T\u00e8cnic in Catalan and Spanish. It includes a preprocessor, a PoSTagger and a linguistic disambiguator."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-283"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "PALIC"
+    ],
+    "url": ""
+}

@@ -1,0 +1,67 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.822364",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.822364"
+    ],
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(4 N-8 N,59E-78E)",
+    "TempCoverageBegin": 62933626799,
+    "TempCoverageEnd": 62933626799,
+    "TemporalCoverage": " point in time : 1995-04-16T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1995-04-16T11:59:59Z",
+    "TemporalCoverage:EndDate": "1995-04-16T11:59:59Z",
+    "author": [
+        "GTSPP"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.822364;2017-08-05T09:31:55Z;ASPS;JGOFSCountryUnknown;10.1594/PANGAEA.822364;GTSPP;Physical oceanography during RESEARCHER cruise WT95;PANGAEA - Data Publisher for Earth & Environmental Science;2013;Event label;Date/Time of event;Latitude of event;Longitude of event;DEPTH, water;Pressure, water;Temperature, water;Salinity;Temperature, water, potential;Density, sigma-theta (0);WT95;Researcher;Global Temperature-Salinity Profile Program (GTSPP);Joint Global Ocean Flux Study (JGOFS);1995-04-16T02:51:00/1995-06-18T03:45:00;eng;Dataset;10013/epic.40681.d001;1835 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);4.18 59.33 7.6 78.06",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.822364"
+    ],
+    "oai_set": [
+        "ASPS",
+        "JGOFSCountryUnknown"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[59.33,4.18],[59.33,7.6],[78.06,7.6],[78.06,4.18],[59.33,4.18]]]}",
+    "tags": [
+        {
+            "name": "WT"
+        },
+        {
+            "name": "Researcher"
+        },
+        {
+            "name": "Global Temperature-Salinity Profile Program GTSPP"
+        },
+        {
+            "name": "Joint Global Ocean Flux Study JGOFS"
+        }
+    ],
+    "title": [
+        "Physical oceanography during RESEARCHER cruise WT95"
+    ],
+    "url": ""
+}

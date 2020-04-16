@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-0018DL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17962500",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17962500"
+    ],
+    "PublicationTimestamp": "2019-01-07T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Sirel, Raul"
+    ],
+    "fulltext": "oai:oai.datacite.org:17962500;2019-04-04T19:02:22Z;ESTDOI;ESTDOI.KEEL;TEXTA Toolkit;Sirel, Raul;Center of Estonian Language Resources;2019;Issued: 2019-01-07;Updated: 2019-01-07;doi:10.15155/1-00-0000-0000-0000-0018DL;Abstract;TEXTA Toolkit on eraldiseisev tarkvara, mis v\u00f5imaldab tekstikorpustest ekstraheerida korpuses esindatud valdkonnale omast oskuss\u00f5navara, koostada selle alusel m\u00f5istep\u00f5hiseid terminoloogilisi ressursse, tuvastada tekstidokumentidest m\u00f5istetele viitavaid tekstifragmente ning visualiseerida tulemusi andmestikus leiduvate andmev\u00e4ljade l\u00f5ikes. Valdkondliku terminikasutuse kirjeldamiseks kasutatakse tarkvara koosseisus erinevaid juhendamata masin\u00f5ppe meetodeid, sh tehisneurov\u00f5rkudel p\u00f5hinevaid loomuliku keele vektormudeleid.;Abstract;Terminology EXtraction and Text Analytics (TEXTA) Toolkit is a program that provides resources for analysing free text datasets. It includes the tools, which are necessary for the text analytics or solutions based on the latter. TEXTA enables fast searches and analyses from texts, to classify documents and extract information from them. The content of toolkit can be configured according to the needs of the customer and is accessible as a cloud service or installed to the customer\u2019s infrastructure. The toolkit contains the following applications: searcher, multiword expression miner, base lexicon miner, conceptualizer, grammar miner, classifier.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a12f499d-6d7d-5c12-9078-fe83f1d51c7b",
+    "notes": [
+        "Abstract",
+        "TEXTA Toolkit on eraldiseisev tarkvara, mis v\u00f5imaldab tekstikorpustest ekstraheerida korpuses esindatud valdkonnale omast oskuss\u00f5navara, koostada selle alusel m\u00f5istep\u00f5hiseid terminoloogilisi ressursse, tuvastada tekstidokumentidest m\u00f5istetele viitavaid tekstifragmente ning visualiseerida tulemusi andmestikus leiduvate andmev\u00e4ljade l\u00f5ikes. Valdkondliku terminikasutuse kirjeldamiseks kasutatakse tarkvara koosseisus erinevaid juhendamata masin\u00f5ppe meetodeid, sh tehisneurov\u00f5rkudel p\u00f5hinevaid loomuliku keele vektormudeleid.",
+        "Abstract",
+        "Terminology EXtraction and Text Analytics (TEXTA) Toolkit is a program that provides resources for analysing free text datasets. It includes the tools, which are necessary for the text analytics or solutions based on the latter. TEXTA enables fast searches and analyses from texts, to classify documents and extract information from them. The content of toolkit can be configured according to the needs of the customer and is accessible as a cloud service or installed to the customer\u2019s infrastructure. The toolkit contains the following applications: searcher, multiword expression miner, base lexicon miner, conceptualizer, grammar miner, classifier."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17962500"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "TEXTA Toolkit"
+    ],
+    "url": ""
+}

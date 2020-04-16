@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "Contributor": [
+        "Woli\u0144ski, Marcin",
+        "Badowski, Tomasz",
+        "Pawlik, Dominika",
+        "Achinger, Piotr",
+        "So\u0142tys, Karolina"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1184",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1184"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1184",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Poland"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1184;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Dendrarium;Woli\u0144ski, Marcin;Pawlik, Dominika;So\u0142tys, Karolina;Achinger, Piotr;Badowski, Tomasz;Coordinates work of a group of linguists selecting appropriate parse trees from many generated ones. Assigns parts of the task, signalling differences in annotation and allowing them to be corrected by a supervisor.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1184;downloadable_files_count: 0;Poland;Institute of Computer Science, Polish Academy of Sciences;http://sourceforge.net/projects/dendrarium/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "efe915bc-029a-5c45-9819-11b47f83001d",
+    "notes": [
+        "Coordinates work of a group of linguists selecting appropriate parse trees from many generated ones. Assigns parts of the task, signalling differences in annotation and allowing them to be corrected by a supervisor."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1184"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Dendrarium"
+    ],
+    "url": ""
+}

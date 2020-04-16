@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:28</identifier>
+    <datestamp>2016-02-19T08:57:23Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Experimental part of CAV 2015 publication: Counterexample Explanation by Learning Small Strategies in Markov Decision Processes</dc:title>
+      <dc:creator>Fellner, Andreas</dc:creator>
+      <dc:subject>004 Data processing &amp; computer science</dc:subject>
+      <dc:subject>005 Computer programming, programs &amp; data</dc:subject>
+      <dc:description>This repository contains the experimental part of the CAV 2015 publication Counterexample Explanation by Learning Small Strategies in Markov Decision Processes.&#13;
+We extended the probabilistic model checker PRISM to represent strategies of Markov Decision Processes as Decision Trees.&#13;
+The archive contains a java executable version of the extended tool (prism_dectree.jar) together with a few examples of the PRISM benchmark library.&#13;
+To execute the program, please have a look at the README.txt, which provides instructions and further information on the archive.&#13;
+The archive contains scripts that (if run often enough) reproduces the data presented in the publication.</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>archive</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/28/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/28/2/Fellner_DataRep.zip</dc:identifier>
+      <dc:identifier>  Fellner, Andreas   Experimental part of CAV 2015 publication: Counterexample Explanation by Learning Small Strategies in Markov Decision Processes.  [Data Collection]     </dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:28</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

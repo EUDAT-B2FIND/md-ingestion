@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 5 MB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1061",
+    "MetadataAccess": [
+        "oai:ota:oucs:1061"
+    ],
+    "PublicationYear": [
+        "600 BCE-70"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Sacred texts"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1061;2018-03-02T10:10:30Z;http://ota.ox.ac.uk/headers/1061.xml;Bible. English. Revised standard;Bible : RSV;600 BCE-70;text_and_corpus_linguistics;Bible;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 5 MB);Text;Sacred texts;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c5d93058-52ee-5756-b914-779731e9e959",
+    "oai_identifier": [
+        "oai:ota:oucs:1061"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Bible"
+        }
+    ],
+    "title": [
+        "Bible. English. Revised standard",
+        "Bible : RSV"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1061.xml"
+}

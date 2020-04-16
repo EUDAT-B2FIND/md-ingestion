@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "frido.reinstorf@hs-magdeburg.de"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DOI": "http://dx.doi.org/10.23728/b2share.5776373ffab843218ac096303fef080b",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0a052e5a-bf67-577e-af26-c806289d3f11",
+    "PID": "http://hdl.handle.net/11304/ae923aeb-b017-485d-8c66-66220a330be1",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "The data provider must be offered co-authorship for publications using this dataset at least within the metadata description",
+        "Formal acknowledgement of the dataset providers"
+    ],
+    "SpatialCoverage": "(52N-52N,11E-11E)",
+    "author": [
+        "Frido Reinstorf"
+    ],
+    "fulltext": "c73acf5e-c603-48d6-ba10-f4b396dbc3bc;English;utf8;dataset;Frido Reinstorf;Magdeburg-Stendal University of Applied Sciences;Breitscheidstra\u00dfe 2;Magdeburg;39114;DE;frido.reinstorf@hs-magdeburg.de;pointOfContact;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;Meteorological data Siptenfelde, TERENO Harz / Central German Lowlands (1996-2005)19);2018-09-24;publication;urn:ltereurope:inspire::11839:26909;TERENO - Siptenfelde - Germany;Magdeburg-Stendal University of Applied Sciences;documentDigital;Air temperature (daily mean, min, max), precipitation (cumulative per day);completed;Frido Reinstorf;Magdeburg-Stendal University of Applied Sciences;Breitscheidstra\u00dfe 2;Magdeburg;39114;DE;frido.reinstorf@hs-magdeburg.de;pointOfContact;continual;Representative area of sampling: single point Sampling frequency - sampling time span: minutes Sampling frequency - minimum sampling unit: minutes;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;air temperature;precipitation;eLTER VA;LTER Controlled Vocabulary;The data provider must be offered co-authorship for publications using this dataset at least within the metadata description;Formal acknowledgement of the dataset providers;The principal: Administration has granted the access and use permission: Free access and use;The principal: Research has granted the access and use permission: Free for access;The principal: Public has granted the access and use permission: Free for access;eng;environment;extended weather station close to Siptenfelde at the Schaefertal;11.049887090921;11.049425750971;51.654490845951;51.654657250475;394.00;394;urn:ogc:def:crs:EPSG;MSL height;Not specific to any location or epoch.;Hydrography.;Representative area of sampling: single point;ground condition;1996-04-16;2005-12-31;http://doi.org/10.23728/b2share.5776373ffab843218ac096303fef080b;WWW:LINK-1.0-http--link;DOI;http://hdl.handle.net/11304/ae923aeb-b017-485d-8c66-66220a330be1;WWW:LINK-1.0-http--link;B2Share Landing Page;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;Method description: Air temperature at 200 cm, precipitation 100 cm above ground. Method URL: . Instrumentation:;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0a052e5a-bf67-577e-af26-c806289d3f11",
+    "notes": [
+        "Air temperature (daily mean, min, max), precipitation (cumulative per day)"
+    ],
+    "oai_identifier": [
+        "0a052e5a-bf67-577e-af26-c806289d3f11"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[11.049887090921,51.654490845951],[11.049887090921,51.654657250475],[11.049425750971,51.654657250475],[11.049425750971,51.654490845951],[11.049887090921,51.654490845951]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "air temperature"
+        },
+        {
+            "name": "precipitation"
+        },
+        {
+            "name": "eLTER VA"
+        }
+    ],
+    "title": [
+        "Meteorological data Siptenfelde, TERENO Harz / Central German Lowlands (1996-2005)19)"
+    ],
+    "url": ""
+}

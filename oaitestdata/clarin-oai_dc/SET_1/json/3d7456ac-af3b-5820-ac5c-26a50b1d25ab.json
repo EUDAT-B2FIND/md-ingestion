@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5590",
+    "MetadataAccess": [
+        "oai:ota:oucs:5590"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Browne, Joseph, fl. 1700-1721."
+    ],
+    "fulltext": "oai:ota:oucs:5590;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5590.xml;Antidotaria; or, a collection of antidotes against the plague, and other malignant diseases. Together, with some decent and useful remarks, on the late Pharmacopeia Londinensis, ... By Joseph Browne, L.L.M.D;Browne, Joseph, fl. 1700-1721.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3d7456ac-af3b-5820-ac5c-26a50b1d25ab",
+    "oai_identifier": [
+        "oai:ota:oucs:5590"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Antidotaria; or, a collection of antidotes against the plague, and other malignant diseases. Together, with some decent and useful remarks, on the late Pharmacopeia Londinensis, ... By Joseph Browne, L.L.M.D"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5590.xml"
+}

@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17944559</identifier>
+    <datestamp>2019-06-03T23:02:43Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Osalausestaja</dc:title>
+      <dc:title xml:lang="en">Clause Segmenter for Estonian</dc:title>
+      <dc:creator>Orasmaa, Siim</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-03</dc:date>
+      <dc:date>Updated: 2019-01-03</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00175L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Osalausepiiride tuvastaja</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Clause Segmenter is a program that splits long and complex natural 
+ language sentences into smaller segments (clauses). For example, the 
+ sentence "Mees, keda seal kohtasime, oli tuttav ja teretas meid." 
+ will be split into following clauses:
+
+     "[Mees, [keda seal kohtasime,] oli tuttav ja] [teretas meid.]"
+     (in the example, clauses are surrounded by brackets)
+
+   The algorithm mainly relies on punctuation, conjunction words, and
+  finite verb forms on identifying the clause boundaries.
+  For linguistic details/motivations behind the algorithm, see (Kaalep, 
+  Muischnek 2012).</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

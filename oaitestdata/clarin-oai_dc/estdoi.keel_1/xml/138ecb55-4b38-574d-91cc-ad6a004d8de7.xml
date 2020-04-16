@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9474550</identifier>
+    <datestamp>2019-04-25T20:01:15Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Valentsikorpus</dc:title>
+      <dc:creator>Pajupuu, Hille</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-11-09</dc:date>
+      <dc:date>Updated: 2016-11-09</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05BE4L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Valentsikorpus koosneb "Postimehe" artiklite ortograafilistest l&#245;ikudest, mille emotsionaalsuse (positiivne, negatiivne, vastuoluline, neutraalne) on m&#228;&#228;ranud lugejad. Kasutatud on domineeriva arvamuse meetodit (Pennebaker jt 1997).
+Valentsikorpus on m&#245;eldud eesk&#228;tt statistiliste mudelite treenimiseks, kuid seda saab kasutada ka muudel eesm&#228;rkidel. P&#228;ringuid on v&#245;imalik teha nii rubriike (Arvamus, Eesti, Kultuur, Sport, V&#228;lismaa, Krimi) kui ka emotsionaalsust (positiivne, negatiivne, vastuoluline, neutraalne) arvesse v&#245;ttes.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

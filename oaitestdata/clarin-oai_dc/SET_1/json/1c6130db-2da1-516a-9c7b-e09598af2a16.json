@@ -1,0 +1,95 @@
+{
+    "Contact": [
+        "Lehrstuhl Englische Sprach- und \u00dcbersetzungswissenschaft, Fakult\u00e4t P, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit\u00e4t des Saarlandes, Campus A2.2, 66123 Saarbr\u00fccken, Germany"
+    ],
+    "Contributor": [
+        "J\u00f6rg Knappen",
+        "Stefan Fischer",
+        "Stefania Degaetano-Ortlieb",
+        "Elke Teich",
+        "Hannah Kermes",
+        "Katrin Menzel"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:rsc-v4",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:rsc-v4"
+    ],
+    "PID": "http://hdl.handle.net/21.11119/0000-0001-7E8B-6",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Lehrstuhl Englische Sprach- und \u00dcbersetzungswissenschaft, Fakult\u00e4t P, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit\u00e4t des Saarlandes, Campus A2.2, 66123 Saarbr\u00fccken, Germany"
+    ],
+    "RelatedIdentifier": [
+        "Kermes, Hannah, Stefania Degaetano, Ashraf Khamis, J\u00f6rg Knappen, and Elke Teich. 2016. \u201cThe Royal Society Corpus: From Uncharted Data to Corpus.\u201d In Proceedings of the LREC 2016. Portoroz, Slovenia. http://www.lrec-conf.org/proceedings/lrec2016/summaries/792.html",
+        "Teich, Elke, Stefania Degaetano-Ortlieb, Stefan Fischer, Hannah Kermes, Ashraf Khamis, and J\u00f6rg Knappen, \"The Royal Society Corpus\", hdl:11858/00-246C-0000-0023-8D26-7, 2016",
+        "Knappen, J\u00f6rg, Fischer, Stefan, Kermes, Hannah, Teich, Elke, and Fankhauser, Peter. 2017. \"The Making of the Royal Society Corpus.\" In Proceedings of the NoDaLiDa 2017 Workshop on Processing Historical Language. G\u00f6teborg, Sweden. Link\u00f6ping University Electronic Press. http://www.ep.liu.se/ecp/article.asp?issue=133%26article=003"
+    ],
+    "ResourceType": [
+        "Collection",
+        "Written Corpus",
+        "Diachronic Corpus"
+    ],
+    "Rights": [
+        "CC-BY-SA-NC-4.0"
+    ],
+    "SpatialCoverage": [
+        "1665/1869",
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " period : ( 1665-07-01T11:59:59Z - None ) ",
+    "author": [
+        "Elke Teich, Lehrstuhl Englische Sprach- und \u00dcbersetzungswissenschaft, Fakult\u00e4t P, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit\u00e4t des Saarlandes, Campus A2.2, 66123 Saarbr\u00fccken, Germany"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:rsc-v4;2018-06-27T13:53:53Z;The Royal Society Corpus Version 4.0;Elke Teich, Lehrstuhl Englische Sprach- und \u00dcbersetzungswissenschaft, Fakult\u00e4t P, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit\u00e4t des Saarlandes, Campus A2.2, 66123 Saarbr\u00fccken, Germany;Early Modern English;Late Modern English;Science;Scientific English;Language change;The Royal Society Corpus (RSC) is based on the first two centuries of the Philosophical Transactions of the Royal Society of London from its beginning in 1665 to 1869. It includes all publications of the journal written mainly in English and containing running text. The Philosophical Transactions was the first periodical of scientific writing in England.\n\nThe RSC Version 4 consists of approximately 32 million tokens and is encoded for text type (abstracts, articles), author, year of publication. Information about decade and 50-year periods are also available allowing for a diachronic analysis of different granularity. We also annotate the two most important topics of each text according to a topic model consisting of 24 topics. The full topic model is also available for download.\n\nThe corpus is tokenized and linguistically annotated for lemma and part-of-speech using TreeTagger (Schmid 1994, Schmid 1995). For spelling normalization we use a trained model of VARD (Baron and Rayson 2008). As a special feature, we encode with each unit (word token) its average surprisal, i.e. the average amount of information it encodes in number of bits, with words as units and trigram as contexts [cf. Genzel and Charniak 2002).\n\nThe release 4.0 of the corpus includes an improved OCR correction and removal of non-text tokens like formul\u00e6 and tables.;Lehrstuhl Englische Sprach- und \u00dcbersetzungswissenschaft, Fakult\u00e4t P, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit\u00e4t des Saarlandes, Campus A2.2, 66123 Saarbr\u00fccken, Germany;Elke Teich;Stefania Degaetano-Ortlieb;Stefan Fischer;Hannah Kermes;J\u00f6rg Knappen;Katrin Menzel;2018;Collection;Written Corpus;Diachronic Corpus;text/xml;clarind-uds:rsc-v4;hdl:21.11119/0000-0001-7E8B-6;eng;Kermes, Hannah, Stefania Degaetano, Ashraf Khamis, J\u00f6rg Knappen, and Elke Teich. 2016. \u201cThe Royal Society Corpus: From Uncharted Data to Corpus.\u201d In Proceedings of the LREC 2016. Portoroz, Slovenia. http://www.lrec-conf.org/proceedings/lrec2016/summaries/792.html;Teich, Elke, Stefania Degaetano-Ortlieb, Stefan Fischer, Hannah Kermes, Ashraf Khamis, and J\u00f6rg Knappen, \"The Royal Society Corpus\", hdl:11858/00-246C-0000-0023-8D26-7, 2016;Knappen, J\u00f6rg, Fischer, Stefan, Kermes, Hannah, Teich, Elke, and Fankhauser, Peter. 2017. \"The Making of the Royal Society Corpus.\" In Proceedings of the NoDaLiDa 2017 Workshop on Processing Historical Language. G\u00f6teborg, Sweden. Link\u00f6ping University Electronic Press. http://www.ep.liu.se/ecp/article.asp?issue=133%26article=003;1665/1869;United Kingdom;CC-BY-SA-NC-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1c6130db-2da1-516a-9c7b-e09598af2a16",
+    "notes": [
+        "The Royal Society Corpus (RSC) is based on the first two centuries of the Philosophical Transactions of the Royal Society of London from its beginning in 1665 to 1869. It includes all publications of the journal written mainly in English and containing running text. The Philosophical Transactions was the first periodical of scientific writing in England.\n\nThe RSC Version 4 consists of approximately 32 million tokens and is encoded for text type (abstracts, articles), author, year of publication. Information about decade and 50-year periods are also available allowing for a diachronic analysis of different granularity. We also annotate the two most important topics of each text according to a topic model consisting of 24 topics. The full topic model is also available for download.\n\nThe corpus is tokenized and linguistically annotated for lemma and part-of-speech using TreeTagger (Schmid 1994, Schmid 1995). For spelling normalization we use a trained model of VARD (Baron and Rayson 2008). As a special feature, we encode with each unit (word token) its average surprisal, i.e. the average amount of information it encodes in number of bits, with words as units and trigram as contexts [cf. Genzel and Charniak 2002).\n\nThe release 4.0 of the corpus includes an improved OCR correction and removal of non-text tokens like formul\u00e6 and tables."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:rsc-v4"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Early Modern English"
+        },
+        {
+            "name": "Late Modern English"
+        },
+        {
+            "name": "Science"
+        },
+        {
+            "name": "Scientific English"
+        },
+        {
+            "name": "Language change"
+        }
+    ],
+    "title": [
+        "The Royal Society Corpus Version 4.0"
+    ],
+    "url": ""
+}

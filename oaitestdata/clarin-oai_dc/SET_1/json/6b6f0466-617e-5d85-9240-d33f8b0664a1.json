@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3524",
+    "MetadataAccess": [
+        "oai:ota:oucs:3524"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Richardson, Samuel, 1689-1761."
+    ],
+    "fulltext": "oai:ota:oucs:3524;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3524.xml;The history of Sir Charles Grandison: In a series of letters published from the originals, by the editor of Pamela and Clarissa. In seven volumes. ... [pt.3];Sir Charles Grandison;Richardson, Samuel, 1689-1761.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6b6f0466-617e-5d85-9240-d33f8b0664a1",
+    "oai_identifier": [
+        "oai:ota:oucs:3524"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The history of Sir Charles Grandison: In a series of letters published from the originals, by the editor of Pamela and Clarissa. In seven volumes. ... [pt.3]",
+        "Sir Charles Grandison"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3524.xml"
+}

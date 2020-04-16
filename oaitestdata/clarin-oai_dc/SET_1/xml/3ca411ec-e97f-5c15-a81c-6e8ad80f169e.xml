@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2394</identifier>
+    <datestamp>2017-09-22T09:21:10Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DiscoMT 2016 Shared Task on Cross-lingual Pronoun Prediction</dc:title>
+      <dc:creator>Guillou, Liane</dc:creator>
+      <dc:creator>Hardmeier, Christian</dc:creator>
+      <dc:creator>Nakov, Preslav</dc:creator>
+      <dc:creator>Stymne, Sara</dc:creator>
+      <dc:creator>Tiedemann, J&#246;rg</dc:creator>
+      <dc:creator>Versley, Yannick</dc:creator>
+      <dc:creator>Cettolo, Mauro</dc:creator>
+      <dc:creator>Webber, Bonnie</dc:creator>
+      <dc:creator>Popescu-Belis, Andrei</dc:creator>
+      <dc:subject>machine translation</dc:subject>
+      <dc:subject>coreference</dc:subject>
+      <dc:subject>discourse</dc:subject>
+      <dc:subject>pronouns</dc:subject>
+      <dc:description>Files for the DiscoMT 2016 shared task on cross-lingual pronoun prediction</dc:description>
+      <dc:date>2017-09-20</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2394</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:relation>http://aclweb.org/anthology/W/W16/W16-2345.pdf</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 5</dc:format>
+      <dc:publisher>Uppsala University</dc:publisher>
+      <dc:source>http://www.statmt.org/wmt16/pronoun-task.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,161 @@
+
+ Statistics of
+	community	pandata
+	subset		SET_1
+	# of records	11
+  see as well oaidata/pandata-oai_dc/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dc:title/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 1     : Electronic state of Co3+ in LaCoO3      |
+      |- 1     : Structures of Gel Precursors of Nanoporous Materials      |
+      |- 1     : Inter-phase load partitioning in a directionally-solidified Cr-Cr3Si eutectic      |
+      |- 1     : CaCO3-FeO(x) Tell-Bazi 4 1103 (no spacer)      |
+      |- 1     : Development of Creep Cavitation in Stainless Steel      |
+      |- 1     : Interaction between superconductivity and magnetism in iron-lead thin films      |
+      |- 1     : The partial dynamical structure factors and vibrational density of states in net [...(12 chars follow)...] |
+      |- 1     : DINS scattering in supercritical water      |
+      |- 1     : The partial vibrational density of states for As2Se3 glass      |
+      |- 1     : Structural evolution - hydrotrope to surfactant      |
+
+ |-> Description      <--       //dc:description/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 1     : None                                |
+      |- 1     : The proposed experiment aims to explore in detail these two effects in a thermod [...(815 chars follow)...] |
+      |- 1     : We wish to measure the partial dynamical structure factors and the partial vibra [...(810 chars follow)...] |
+      |- 1     : In situ composite materials based upon refractory metal - silicide eutectics are [...(698 chars follow)...] |
+      |- 1     : The incorporation of lipid-PEG-ligand molecules into liposome membrane imparts t [...(581 chars follow)...] |
+      |- 1     : The aim is to improve understanding about combinations of normal surfactants and [...(816 chars follow)...] |
+      |- 1     : Reheat cracking is a creep failure mode that has been observed in welded structu [...(796 chars follow)...] |
+      |- 1     : A previous CRISP measurement allows us to show for the first time using PNR a ch [...(812 chars follow)...] |
+      |- 1     : The method of Se isotope substitution with inelastic neutron scattering will be  [...(741 chars follow)...] |
+      |- 1     : We will search for spin-orbit transitions of the Co3+ ions in LaCoO3. The ground [...(581 chars follow)...] |
+
+ |-> Tags             <--       //dc:subject/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 11    : Clean energy environment            |
+
+ |-> Source           <--       //dcterms:references/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> DOI              <--                     
+  |--    11 |  100 |    11 |  100
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24088567      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24079418      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24090603      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24088312      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24088944      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24079768      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24086022      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24079624      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24078918      |
+      |- 1     : http://dx.doi.org/doi:10.5286/ISIS.E.24090014      |
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Checksum         <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Rights           <--       //dc:rights/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 11    : ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11 [...(8 chars follow)...] |
+
+ |-> Discipline       <--       //dc:subject/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 11    : Not stated                          |
+
+ |-> Creator          <--       //dc:creator/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 2     : Dr Anita Zeidler                    |
+      |- 1     : Dr Peter Dunne                      |
+      |- 1     : Mr Abdullah al Mamun                |
+      |- 1     : Dr Howard Stone                     |
+      |- 1     : Miss Chiara Pasquini                |
+      |- 1     : Professor Christopher Marrows       |
+      |- 1     : Dr Martin Rotter                    |
+      |- 1     : Dr Dirk Visser                      |
+      |- 1     : Mr Paul Brown                       |
+      |- 1     : Dr Jeroen Plomp                     |
+
+ |-> Publisher        <--       <xpath>//dc:publisher/text()/xpath>
+
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //dcterms:issued/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 4     : 2015                                |
+      |- 4     : 2013                                |
+      |- 2     : 2014                                |
+      |- 1     : 2016                                |
+
+ |-> Language         <--       //dc:language/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 11    : English                             |
+
+ |-> SpatialCoverage  <--       //dc:coverage/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //dcterms:temporal/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 1     :  point in time : 2011-05-16T11:59:59Z      |
+      |- 1     :  point in time : 2012-03-29T11:59:59Z      |
+      |- 1     :  point in time : 2012-12-06T11:59:59Z      |
+      |- 1     :  point in time : 2010-03-18T11:59:59Z      |
+      |- 1     :  point in time : 2012-02-23T11:59:59Z      |
+      |- 1     :  point in time : 2010-05-01T11:59:59Z      |
+      |- 1     :  point in time : 2012-12-11T11:59:59Z      |
+      |- 1     :  point in time : 2013-05-15T11:59:59Z      |
+      |- 1     :  point in time : 2009-12-03T11:59:59Z      |
+      |- 1     :  point in time : 2010-07-20T11:59:59Z      |
+
+ |-> ResourceType     <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Format           <--       //dc:format/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 11    : isis neutron raw;binary;2;None      |
+
+ |-> Contact          <--       //dc:contributor/text()
+
+  |--    11 |  100 |    11 |  100
+      |- 11    : Science and Technology Facilities Council, ISIS      |
+
+ |-> MetaDataAccess   <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationTimestamp <--                     
+  |--    11 |  100 |    11 |  100
+      |- 1     : 2014-11-29T11:59:59Z                |
+      |- 1     : 2015-03-13T11:59:59Z                |
+      |- 1     : 2015-12-07T11:59:59Z                |
+      |- 1     : 2015-12-19T11:59:59Z                |
+      |- 1     : 2015-05-26T11:59:59Z                |
+      |- 1     : 2013-07-21T11:59:59Z                |
+      |- 1     : 2013-07-19T11:59:59Z                |
+      |- 1     : 2016-05-17T11:59:59Z                |
+      |- 1     : 2014-05-25T11:59:59Z                |
+      |- 1     : 2013-05-04T11:59:59Z                |
+
+ |-> Community        <--                     
+  |--     0 |    0 |     0 |    0
+

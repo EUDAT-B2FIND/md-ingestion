@@ -1,0 +1,70 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.55682</identifier>
+    <datestamp>2018-04-19T08:43:01Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.55682</identifier>
+      <creators>
+        <creator>
+          <creatorName>Gillbricht, Max</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Hydrochemistry and phytoplankton abundance at time series station Helgoland Roads, North Sea, in 1962</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>1999</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">DATE/TIME</subject>
+        <subject subjectScheme="Parameter">Temperature, water</subject>
+        <subject subjectScheme="Parameter">Salinity</subject>
+        <subject subjectScheme="Parameter">Nitrate</subject>
+        <subject subjectScheme="Parameter">Nitrite</subject>
+        <subject subjectScheme="Parameter">Ammonium</subject>
+        <subject subjectScheme="Parameter">Nitrogen, inorganic, dissolved</subject>
+        <subject subjectScheme="Parameter">Phosphate</subject>
+        <subject subjectScheme="Parameter">Phytoplankton</subject>
+        <subject subjectScheme="Parameter">Diatoms</subject>
+        <subject subjectScheme="Parameter">Flagellates</subject>
+        <subject subjectScheme="Parameter">Phytoplankton, biomass as carbon</subject>
+        <subject subjectScheme="Parameter">Diatoms, biomass as carbon</subject>
+        <subject subjectScheme="Parameter">Flagellates, biomass as carbon</subject>
+        <subject subjectScheme="Parameter">Analyst</subject>
+        <subject subjectScheme="Method">Mercury thermometer, in situ</subject>
+        <subject subjectScheme="Method">Titration, chloride (Grasshoff et al., 1983, Verlag Chemie GmbH Weinheim)</subject>
+        <subject subjectScheme="Method">Reduction by hydrazin</subject>
+        <subject subjectScheme="Method">Photometer, azo-dye (Bendschneider &amp; Robinson, 1952, J Mar Res, 11:87-96)</subject>
+        <subject subjectScheme="Method">Bordeaux red, improved by Gillbricht, 1961</subject>
+        <subject subjectScheme="Method">Calculated (sum of Nitrate, Nitrite, Ammonium)</subject>
+        <subject subjectScheme="Method">Photometer, molybdene blue, reduct SnCl</subject>
+        <subject subjectScheme="Method">Quantitative phytoplankton method (Uterm&#246;hl, 1958)</subject>
+        <subject subjectScheme="Campaign">HelgolandRoadsTimeseries</subject>
+        <subject subjectScheme="Basis">Meeresstation Helgoland</subject>
+        <subject subjectScheme="Project">Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland) (BAH)</subject>
+        <subject subjectScheme="Project">Long-term Ecological Research at AWI (LTER)</subject>
+      </subjects>
+      <dates>
+        <date dateType="Collected">1962-01-02T09:00:00/1962-12-28T09:40:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <sizes>
+        <size>1887 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported (CC-BY)</rights>
+      </rightsList>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPoint>54.18833 7.9</geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

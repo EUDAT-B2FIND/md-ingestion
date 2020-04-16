@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/33",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/33"
+    ],
+    "PID": "http://hdl.handle.net/11321/33",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Piasecki, Maciej",
+        "Wndelberger, Micha\u0142",
+        "Zawadzki, Maciej",
+        "Broda, Bartosz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/33;2016-01-19T13:34:22Z;hdl_11321_3;hdl_11321_4;Vector Extractor;Piasecki, Maciej;Broda, Bartosz;Wndelberger, Micha\u0142;Zawadzki, Maciej;Collocations presented are based on co-occurrences of a selected noun with several features describing it and linked with it by syntactic dependencies. The recognised features are: modification by an adjective (AdjMod), modification by a noun in genitive (NGenMod), coordination with a noun (NCoord) and linking to a verb as its subject (VSubj).;2014;toolService;http://hdl.handle.net/11321/33;pol;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://www.clarin-pl.eu/vector-extractor/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4865936b-01b2-5e31-997c-eda85f7aa1f3",
+    "notes": [
+        "Collocations presented are based on co-occurrences of a selected noun with several features describing it and linked with it by syntactic dependencies. The recognised features are: modification by an adjective (AdjMod), modification by a noun in genitive (NGenMod), coordination with a noun (NCoord) and linking to a verb as its subject (VSubj)."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/33"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Vector Extractor"
+    ],
+    "url": ""
+}

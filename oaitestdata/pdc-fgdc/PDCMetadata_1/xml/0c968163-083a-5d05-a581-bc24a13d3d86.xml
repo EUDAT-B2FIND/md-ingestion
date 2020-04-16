@@ -1,0 +1,143 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>11687_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:27Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Roulet, Nigel</origin>
+            <origin>Wang, Zheng</origin>
+            <pubdate>20150317</pubdate>
+            <title>Decomposition of peat and plant material from a thawing palsa</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Zheng Wang and Nigel Roulet, Department of Geography, McGill University, Montreal, QC Canada, Unpublished data</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11687</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Vegetation samples of shrub, sedges and moss were collected from permafrost peatland in the eastern shore of Hudson Bay, near the hamlet of Kuujjuarapik-Whapmagoostui in subarctic Quebec in summer 2012. Each litter type was incubated under two moist conditions (Anoxic and oxic treatments), and adjusted to 2 different temperatures (~4&#186;C and ~22&#186;C). I have set several time interval (caused different mass remaining, i.e. different decomposition degrees) to repeat this measurement three to five times along the incubation for each peatland litter type. At each time interval, the samples were drained, rewashed with distilled water, and the water was replaced in order to remove the DOC produced by previous degradation status organic matter. DOC concentration plus CO2 and CH4 concentrations at each time interval were measured, as well as DOC biodegradability (determined by its spectroscopic properties by UV radiation absorbance). The DOC, CH4 and CO2 concentration were expressed as g-1 oven-dry plant tissue.</abstract>
+          <purpose>Ample evidence shows that dissolved organic carbon (DOC) would be the major or even the only direct contributor to the respired carbon fluxes in temperate forest, peatland, even permafrost peatland. And DOC pool is composed by different DOC fractions with a continuum of biodegradability ranging from labile fractions to recalcitrant fractions. The goal of this research was to provide the litter continuous-recalcitrance (decomposition status) DOC production/mineralization functions for each litter type in permafrost peatland for my model to simulate DOC production /mineralization along peat profile. This study will also provide a constant anaerobic moisture modifier for DOC production/mineralization, test and modify the unsaturated moisture modifier that is used in the Holocene Peat Model (HPM), and modify decomposition temperature dependency that is used in the McGill Wetland Model.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): ADAPT. For further information: nigel.roulet@mcgill.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20110825</begdate>
+              <enddate>99991231</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>Annually</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-77.31</westbc>
+            <eastbc>-77.3</eastbc>
+            <northbc>55.21</northbc>
+            <southbc>55.2</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Active layer</themekey>
+            <themekey>Biogeochemistry</themekey>
+            <themekey>Biological productivity</themekey>
+            <themekey>Carbon fluxes</themekey>
+            <themekey>Dissolved organic carbon (DOC)</themekey>
+            <themekey>Flora</themekey>
+            <themekey>Kuujjuaraapik</themekey>
+            <themekey>Palsa</themekey>
+            <themekey>Peat</themekey>
+            <themekey>Plants</themekey>
+          </theme>
+          <place>
+            <placekt>Kuujjuarapik-Whapmagoostui, Quebec, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Geography, McGill University</cntorg>
+              <cntper>Nigel Roulet</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>805 Sherbrooke St. O.</address>
+              <city>Montereal</city>
+              <state>QC</state>
+              <postal>H3A 0B9</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>1-514-398-4945</cntvoice>
+            <cntemail>nigel.roulet@mcgill.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>11687</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20150317</metd>
+        <metrd>20150317</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Nigel Roulet</cntper>
+              <cntorg>Geography, McGill University</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>805 Sherbrooke St. O.</address>
+              <city>Montereal</city>
+              <state>QC</state>
+              <postal>H3A 0B9</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>1-514-398-4945</cntvoice>
+            <cntemail>nigel.roulet@mcgill.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4030",
+    "MetadataAccess": [
+        "oai:ota:oucs:4030"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Bickerstaff, Isaac, 1735-1812."
+    ],
+    "fulltext": "oai:ota:oucs:4030;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4030.xml;The maid of the mill. A comic opera: As it is performed at the Theatre Royal in Covent Garden. The music compiled, and the words written by the author of Love in a village.;Bickerstaff, Isaac, 1735-1812.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a3497554-b6dd-5829-bae9-4c475064da46",
+    "oai_identifier": [
+        "oai:ota:oucs:4030"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The maid of the mill. A comic opera: As it is performed at the Theatre Royal in Covent Garden. The music compiled, and the words written by the author of Love in a village."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4030.xml"
+}

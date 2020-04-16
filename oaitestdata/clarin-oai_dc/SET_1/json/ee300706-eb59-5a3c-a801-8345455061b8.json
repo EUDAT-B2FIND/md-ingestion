@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "wolnelektury.pl"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/465",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/465"
+    ],
+    "PID": "http://hdl.handle.net/11321/465",
+    "PublicationTimestamp": "2018-04-13T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "wolnelektury.pl"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "http://creativecommons.org/licenses/by-sa/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Verne, Jules"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/465;2018-04-13T08:41:01Z;hdl_11321_3;hdl_11321_4;Tajemnicza Wyspa;Verne, Jules;websty;Wolnelektury tajemnicza wyspa - cz\u0119\u015b\u0107 1;2018-04-13;corpus;http://hdl.handle.net/11321/465;pol;Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0);http://creativecommons.org/licenses/by-sa/3.0/;CC;text/plain; charset=utf-8;text/plain;downloadable_files_count: 1;wolnelektury.pl;https://wolnelektury.pl",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ee300706-eb59-5a3c-a801-8345455061b8",
+    "notes": [
+        "Wolnelektury tajemnicza wyspa - cz\u0119\u015b\u0107 1"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/465"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "websty"
+        }
+    ],
+    "title": [
+        "Tajemnicza Wyspa"
+    ],
+    "url": ""
+}

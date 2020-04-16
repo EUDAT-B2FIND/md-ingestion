@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Arts, Institute of the Czech National Corpus"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/x-xz"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1846",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1846"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1846",
+    "PublicationTimestamp": "2016-12-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Arts, Institute of the Czech National Corpus"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Czech National Corpus (Shuffled Corpus Data)",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc",
+        "ACA"
+    ],
+    "author": [
+        "Hn\u00e1tkov\u00e1, Milena",
+        "Trune\u010dek, Petr",
+        "Petkevi\u010d, Vladim\u00edr",
+        "Chlumsk\u00e1, Lucie",
+        "\u010capka, Tom\u00e1\u0161",
+        "Vond\u0159i\u010dka, Pavel",
+        "Proch\u00e1zka, Pavel",
+        "\u010cerm\u00e1kov\u00e1, Anna",
+        "Kov\u00e1\u0159\u00edkov\u00e1, Dominika",
+        "K\u0159en, Michal",
+        "Jel\u00ednek, Tom\u00e1\u0161",
+        "Skoumalov\u00e1, Hana",
+        "Cvr\u010dek, V\u00e1clav",
+        "\u0160krabal, Michal",
+        "Zasina, Adrian"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1846;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;SYN v4: large corpus of written Czech;K\u0159en, Michal;Cvr\u010dek, V\u00e1clav;\u010capka, Tom\u00e1\u0161;\u010cerm\u00e1kov\u00e1, Anna;Hn\u00e1tkov\u00e1, Milena;Chlumsk\u00e1, Lucie;Jel\u00ednek, Tom\u00e1\u0161;Kov\u00e1\u0159\u00edkov\u00e1, Dominika;Petkevi\u010d, Vladim\u00edr;Proch\u00e1zka, Pavel;Skoumalov\u00e1, Hana;\u0160krabal, Michal;Trune\u010dek, Petr;Vond\u0159i\u010dka, Pavel;Zasina, Adrian;corpus;written language;Corpus of contemporary written (printed) Czech sized 3.6 GW (i.e. 4.3 billion tokens). It covers mostly the period of 1990\u20132014 and it is a traditional corpus (as opposed to the web-crawled corpora) with rich metadata containing bibliographical information etc. Although it contains a wide range of text types (fiction, non-fiction, newspapers), the newspapers prevail noticeably. The corpus is lemmatized and morphologically annotated by a combination of stochastic and rule-based methods.\r\n\r\nThe corpus is provided in a (semi-XML) vertical format used as an input to the Manatee query engine. The data thus correspond to the corpus available via the KonText query interface to registered users of the CNC at http://www.korpus.cz with one important exception: the corpus are shuffled, i.e. divided into blocks sized max. 100 words (respecting the sentence boundaries) with ordering randomized within the given document.;2016-12-01;corpus;http://hdl.handle.net/11234/1-1846;ces;Czech National Corpus (Shuffled Corpus Data);https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc;ACA;application/x-xz;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Arts, Institute of the Czech National Corpus;https://wiki.korpus.cz/doku.php/cnk:syn:verze4",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a603ae5d-bf34-5a16-b096-05999065a958",
+    "notes": [
+        "Corpus of contemporary written (printed) Czech sized 3.6 GW (i.e. 4.3 billion tokens). It covers mostly the period of 1990\u20132014 and it is a traditional corpus (as opposed to the web-crawled corpora) with rich metadata containing bibliographical information etc. Although it contains a wide range of text types (fiction, non-fiction, newspapers), the newspapers prevail noticeably. The corpus is lemmatized and morphologically annotated by a combination of stochastic and rule-based methods.\r\n\r\nThe corpus is provided in a (semi-XML) vertical format used as an input to the Manatee query engine. The data thus correspond to the corpus available via the KonText query interface to registered users of the CNC at http://www.korpus.cz with one important exception: the corpus are shuffled, i.e. divided into blocks sized max. 100 words (respecting the sentence boundaries) with ordering randomized within the given document."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1846"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "written language"
+        }
+    ],
+    "title": [
+        "SYN v4: large corpus of written Czech"
+    ],
+    "url": ""
+}

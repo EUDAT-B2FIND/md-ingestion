@@ -1,0 +1,54 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1160",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1160"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1160",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1160;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Meyers Gro\u00dfes Konversations-Lexikon;Germanistik;6. Aufl. 1905-1909; Fokus auf technische, naturwissenschaftliche und soziale Entwicklungen im 19. Jahrhundert;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1160;deu;downloadable_files_count: 0;http://www.zeno.org/Meyers-1905",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f707547d-8f89-580a-b3f1-9a1403f3144a",
+    "notes": [
+        "6. Aufl. 1905-1909; Fokus auf technische, naturwissenschaftliche und soziale Entwicklungen im 19. Jahrhundert"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1160"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Meyers Gro\u00dfes Konversations-Lexikon"
+    ],
+    "url": ""
+}

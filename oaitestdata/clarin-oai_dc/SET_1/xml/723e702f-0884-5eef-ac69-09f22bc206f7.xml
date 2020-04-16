@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:genie</identifier>
+    <datestamp>2014-06-03T12:59:07Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>GENIE &#8211; GEsprochenes NIEdersorbisch/Wendisch</dc:title>
+      <dc:creator>Roland Marti
+FR 4.4 Slavistik
+Universit&#228;t des Saarlandes
+Postfach 15 11 50
+D&#8211;66041 Saarbr&#252;cken</dc:creator>
+      <dc:subject xml:lang="en">Lausitz</dc:subject>
+      <dc:subject xml:lang="en">Spoken Language</dc:subject>
+      <dc:subject xml:lang="en">Dialect</dc:subject>
+      <dc:description xml:lang="en">The corpus GENIE - spoken Niedersorbisch/Wendisch gives acces to the spoken Variants of these languages via a databases.  It presents one of the two only autochthone slavic minority languages in Germany, which is spoken in the Lausitz by less than 10,000 people in a native way, in acustic form. The language is endangered. It shows the development and changes due to the regional and temporal aspects of the language during the last decade. It provides spoken language material for scientific research especially in the area of phonetics. It includes 350 audio files with over 62 hours of selected niedersorbische speech recordings from different sources and eras. It provides detailed information for each recording, which makes it possible to search for recordings with specific characteristics The audio files are available uncompressed as .wav files and compressed as .mp3 files.</dc:description>
+      <dc:description xml:lang="de">Das Korpus GENIE &#8211; GEsprochenes NIEdersorbisch/Wendisch macht das Niedersorbische/Wendische in seinen gesprochenen Variet&#228;ten durch eine Datenbank mit Webanwendung im Netz zug&#228;nglich.  Es pr&#228;sentiert in akustischer Form eine der beiden einzigen autochthonen slawischen Minderheitssprachen in Deutschland, die in der Lausitz von weniger als 10.000 Personen auf muttersprachlichem Niveau gesprochen wird und in ihrer Existenz bedroht ist. Es zeigt die Entwicklung und die regional und zeitlich bedingten Ver&#228;nderungen in dieser Sprache im letzten Jahrhundert auf. Es stellt sprachliches Material f&#252;r wissenschaftliche Untersuchungen, insbesondere auf dem Gebiet der Phonetik, zur Verf&#252;gung. Es enth&#228;lt &#252;ber 62 Stunden ausgew&#228;hlte niedersorbische Sprachaufnahmen aus verschiedenen Quellen und Epochen in knapp 350 Audiodateien. Es liefert zu allen Aufnahmen ausf&#252;hrliche Informationen, &#252;ber die gezielt nach Aufnahmen mit bestimmten Eigenschaften gesucht werden kann. Es h&#228;lt alle Audiodateien sowohl unkompromiert als .wav-Dateien wie auch als komprimierte .mp3-Dateien zum Download bereit.</dc:description>
+      <dc:publisher>Lehrstuhl Phonetik (Fachrichtung 4.7) und Lehrstuhl Slavistik (Fachrichtung 4.4) der Philosophischen Fakult&#228;t II der Universit&#228;t des Saarlandes</dc:publisher>
+      <dc:contributor>Roland Marti</dc:contributor>
+      <dc:contributor>Holger von Rauch</dc:contributor>
+      <dc:contributor>Juro Frahnow</dc:contributor>
+      <dc:contributor>Jutta Kaiser</dc:contributor>
+      <dc:contributor>Helena Pallmann</dc:contributor>
+      <dc:contributor>Marko Pallmann</dc:contributor>
+      <dc:contributor>Olga Trifsik</dc:contributor>
+      <dc:contributor>Bistra Andreeva</dc:contributor>
+      <dc:contributor>William Barry</dc:contributor>
+      <dc:date>2006-11-06</dc:date>
+      <dc:type>Collection</dc:type>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>audio/mpeg</dc:format>
+      <dc:identifier>clarind-uds:genie</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0005-BD10-7</dc:identifier>
+      <dc:source>Archiv des Sorbischen Rundfunks: http://www.rbb-online.de/radio/sorbisches_programm/sorbisches_programm.html</dc:source>
+      <dc:source>Best&#228;nde des Sorbischen Kulturarchivs im Serbski institut z.t.: http://www.serbski-institut.de/</dc:source>
+      <dc:language>dsb</dc:language>
+      <dc:coverage>1951/2006</dc:coverage>
+      <dc:coverage>Lausitz</dc:coverage>
+      <dc:rights>Copyrighted, Registration necessary</dc:rights>
+      <dc:rights>License: http://genie.coli.uni-saarland.de/cgi-bin/benutzer.html</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

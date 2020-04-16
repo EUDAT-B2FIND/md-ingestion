@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10304100</identifier>
+    <datestamp>2019-04-06T23:33:07Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Maailma maade nimed
+</dc:title>
+      <dc:creator>Laansalu, Tiina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2017-01-31</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-0633DL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Loendi aluseks on Emakeele Seltsi keeletoimkonna poolt 1996. aastal l&#228;bi arutatud v&#228;liskohanimede (sh riiginimede) kirjapilt keelekorralduss&#245;naraamatu kohanimelisas. Loendit on hiljem pidevalt t&#228;psustatud ja ajakohastatud. Loend on &#252;htlustatud standardis ISO 3166-1 antud valikuga.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

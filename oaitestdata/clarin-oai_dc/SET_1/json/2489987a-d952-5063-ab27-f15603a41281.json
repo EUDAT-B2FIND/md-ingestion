@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(3 files : ca. 4.75, 467, 576 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0650",
+    "MetadataAccess": [
+        "oai:ota:oucs:0650"
+    ],
+    "PublicationTimestamp": "1722-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1722"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Scores"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Bach, Johann Sebastian, 1685-1750"
+    ],
+    "fulltext": "oai:ota:oucs:0650;2018-02-28T11:54:31Z;http://ota.ox.ac.uk/headers/0650.xml;Wohltemperierte Klavier, 1. T. English. Selections;Wohltemperierte Klavier, 2. T. English. Selections;Well-tempered clavier preludes and fugues : volume I and volume II [excerpts];Bach, Johann Sebastian, 1685-1750;1722-1742;text_and_corpus_linguistics;Musical works -- Germany -- 18th century;Scores -- Germany -- 18th century;eng;Oxford Text Archive, University of Oxford;text/plain;(3 files : ca. 4.75, 467, 576 KB);Text;Scores;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2489987a-d952-5063-ab27-f15603a41281",
+    "oai_identifier": [
+        "oai:ota:oucs:0650"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Musical works -- Germany -- th century"
+        },
+        {
+            "name": "Scores -- Germany -- th century"
+        }
+    ],
+    "title": [
+        "Wohltemperierte Klavier, 1. T. English. Selections",
+        "Wohltemperierte Klavier, 2. T. English. Selections",
+        "Well-tempered clavier preludes and fugues : volume I and volume II [excerpts]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0650.xml"
+}

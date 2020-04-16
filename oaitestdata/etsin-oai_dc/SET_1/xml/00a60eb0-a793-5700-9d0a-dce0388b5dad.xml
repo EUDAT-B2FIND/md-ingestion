@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>urn:nbn:fi:csc-kata20160308084856246387</identifier>
+    <datestamp>2016-03-08T06:48:56Z</datestamp>
+    <setSpec>university-of-helsinki-department-of-physics-division-of-atmospheric-sciences</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>V&#228;rri&#246; SMEAR I tree gas exchange and diameter change - Pine shoot 2 transpiration - 2012</dc:title>
+      <dc:creator>Pasi Kolari</dc:creator>
+      <dc:subject>http://www.yso.fi/onto/yso/p16571</dc:subject>
+      <dc:description>Title: Pine shoot 2 transpiration 
+
+Description: Water vapour flux of pine shoot 2 per unit all-sided leaf area, positive sign = emission, data questionable at RH&gt;75% 
+
+Variable: F_H2O_tree2 
+
+Unit: mg m&#8315;&#178; s&#8315;&#185; 
+
+Source: Automated chamber &amp; Li-Cor Li-840 gas analyser 
+
+Category: Tree 
+
+</dc:description>
+      <dc:publisher>atm-data@helsinki.fi</dc:publisher>
+      <dc:contributor>Pasi Kolari</dc:contributor>
+      <dc:date>2016-03-08</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>urn:nbn:fi:csc-ida2014011604685s</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-ida-10x201703282015017315478v</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-ida2014011604685v</dc:identifier>
+      <dc:identifier>urn:nbn:fi:csc-kata20160308084856246387</dc:identifier>
+      <dc:identifier>http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308084856246387</dc:identifier>
+      <dc:language/>
+      <dc:coverage>DCMI-point: name=V&#228;rri&#246;; east=29.610137; north=67.755044; elevation=390;</dc:coverage>
+      <dc:coverage>2012-01-01T00:00:00Z/2012-12-31T23:59:59Z</dc:coverage>
+      <dc:rights>Creative Commons Attribution 4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

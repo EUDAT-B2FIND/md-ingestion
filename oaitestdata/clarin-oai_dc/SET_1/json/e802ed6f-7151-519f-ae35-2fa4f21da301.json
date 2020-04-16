@@ -1,0 +1,57 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Dutch",
+        "English",
+        "French",
+        "German",
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-426",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-426"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-426",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "France||Germany||Netherlands (the)||Sweden||United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-426;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;MPI ESF Corpus;Corpus of the ESF Foreign Language Speakers project; almost perfect structurefor IEI; completely metadata described; lots of annotated audio recordings containing multimodal interaction;;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-426;nld;eng;fra;deu;swe;downloadable_files_count: 0;France||Germany||Netherlands (the)||Sweden||United Kingdom;http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI556280%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e802ed6f-7151-519f-ae35-2fa4f21da301",
+    "notes": [
+        "Corpus of the ESF Foreign Language Speakers project; almost perfect structurefor IEI; completely metadata described; lots of annotated audio recordings containing multimodal interaction;"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-426"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "MPI ESF Corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Drukarnia Andrzeja Piotrkowczyka"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105794",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105794"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CD6-3",
+    "PublicationTimestamp": "1623-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1623"
+    ],
+    "Publisher": [
+        "Drukarnia Andrzeja Piotrkowczyka"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/105794",
+        "oai:jbc.bj.uj.edu.pl:publication:113146"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Piekarski, Adam (15..-1625)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105794;2019-02-28T17:59:10Z;Sm\u0119tny Wyiazd Z Po\u0142onnego Ja\u015bnie Wielmo\u017cney Iey M\u015bci Paniey Zofiey Z Ostroga Lvbomierzkiey; Podczaszyney Koronney, S\u0119domierskiey, Spiskiey [...] Staro\u015b\u0107iney : Ktor\u0105 Ludzi zacnych wielki Orszak dnia 16. Stycznia z Ukrainy wyiachawszy a\u017c do Wi\u015bnicza nie bez serdecznego \u017calu prowadzi\u0142;Piekarski, Adam (15..-1625);starodruki 17\u00a0w.;Lubomirska, Anna ( -1639). Adr. ded.;Drukarnia Andrzeja Piotrkowczyka;1623;starodruk;application/xml;clarind-uds:poldilemma-105794;hdl:11858/00-246C-0000-0023-8CD6-3;Biblioteka Jagiello\u0144ska, BJ St. Dr. 53545 I;pol;http://jbc.bj.uj.edu.pl/Content/105794;oai:jbc.bj.uj.edu.pl:publication:113146;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9242d0f6-4aa0-5373-9f3e-ddb2d5b5a481",
+    "notes": [
+        "Lubomirska, Anna ( -1639). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105794"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Sm\u0119tny Wyiazd Z Po\u0142onnego Ja\u015bnie Wielmo\u017cney Iey M\u015bci Paniey Zofiey Z Ostroga Lvbomierzkiey; Podczaszyney Koronney, S\u0119domierskiey, Spiskiey [...] Staro\u015b\u0107iney : Ktor\u0105 Ludzi zacnych wielki Orszak dnia 16. Stycznia z Ukrainy wyiachawszy a\u017c do Wi\u015bnicza nie bez serdecznego \u017calu prowadzi\u0142"
+    ],
+    "url": ""
+}
