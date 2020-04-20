@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17926653</identifier>
+    <datestamp>2019-05-08T09:01:38Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Valence</dc:title>
+      <dc:creator>Pajupuu, Hille</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-12-22</dc:date>
+      <dc:date>Updated: 2018-12-27</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-079D3L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">This is a program classifying an Estonian text as positive, neutral or negative. It is running on server http://peeter.eki.ee:5000/valence
+
+This code is optimized for server environment but can be run also as a standalone program:
+
+python valencecolor.py textfile.txt
+This will produce a file textfile.txt.html where all emotionally relevant word are marked with CSS style. The limitation is that it does not print out the summary information. As a prerequisite the NLTK must be installed on the computer.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

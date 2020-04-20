@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Arts, Institute of the Czech National Corpus"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2579",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2579"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2579",
+    "PublicationTimestamp": "2017-12-28T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Arts, Institute of the Czech National Corpus"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "License Agreement for Czech National Corpus Data",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc-data",
+        "ACA"
+    ],
+    "author": [
+        "Kop\u0159ivov\u00e1, Marie",
+        "Luke\u0161, David",
+        "Poukarov\u00e1, Petra",
+        "\u0160karpov\u00e1, Marie",
+        "Komrskov\u00e1, Zuzana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2579;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;ORTOFON v1: balanced corpus of informal spoken Czech with multi-tier transcription (transcriptions & audio);Kop\u0159ivov\u00e1, Marie;Komrskov\u00e1, Zuzana;Luke\u0161, David;Poukarov\u00e1, Petra;\u0160karpov\u00e1, Marie;balanced corpus;spoken language;informal language;Czech;ORTOFON v1 is designed as a representation of authentic spoken Czech used in informal situations (private environment, spontaneity, unpreparedness etc.) in the area of the whole Czech Republic. The corpus is composed of 332 recordings from 2012\u20132017 and contains 1 014 786 orthographic words (i.e. a total of 1 236 508 tokens including punctuation); a total of 624 different speakers appear in the probes. ORTOFON v1 is fully balanced regarding the basic sociolinguistic speaker categories (gender, age group, level of education and region of childhood residence).\r\n\r\nThe transcription is linked to the corresponding audio track. Unlike the ORAL-series corpora, the transcription was carried out on two main tiers, orthographic and phonetic, supplemented by an additional metalanguage tier. ORTOFON v1 is lemmatized and morphologically tagged. The (anonymized) transcriptions are provided in the XML Elan Annotation format, audio (with corresponding anonymization beeps) is in uncompressed 16-bit PCM WAV, mono, 16 kHz format.\r\n\r\nAnother format option of the transcriptions is also available under less restrictive CC BY-NC-SA license at http://hdl.handle.net/11234/1-2580;2017-12-28;corpus;http://hdl.handle.net/11234/1-2579;ces;License Agreement for Czech National Corpus Data;https://lindat.mff.cuni.cz/repository/xmlui/page/license-cnc-data;ACA;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Arts, Institute of the Czech National Corpus;http://wiki.korpus.cz/doku.php/en:cnk:ortofon",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a3bc11cc-ba18-52bd-9c6e-8dbb7a190b47",
+    "notes": [
+        "ORTOFON v1 is designed as a representation of authentic spoken Czech used in informal situations (private environment, spontaneity, unpreparedness etc.) in the area of the whole Czech Republic. The corpus is composed of 332 recordings from 2012\u20132017 and contains 1 014 786 orthographic words (i.e. a total of 1 236 508 tokens including punctuation); a total of 624 different speakers appear in the probes. ORTOFON v1 is fully balanced regarding the basic sociolinguistic speaker categories (gender, age group, level of education and region of childhood residence).\r\n\r\nThe transcription is linked to the corresponding audio track. Unlike the ORAL-series corpora, the transcription was carried out on two main tiers, orthographic and phonetic, supplemented by an additional metalanguage tier. ORTOFON v1 is lemmatized and morphologically tagged. The (anonymized) transcriptions are provided in the XML Elan Annotation format, audio (with corresponding anonymization beeps) is in uncompressed 16-bit PCM WAV, mono, 16 kHz format.\r\n\r\nAnother format option of the transcriptions is also available under less restrictive CC BY-NC-SA license at http://hdl.handle.net/11234/1-2580"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2579"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "balanced corpus"
+        },
+        {
+            "name": "spoken language"
+        },
+        {
+            "name": "informal language"
+        },
+        {
+            "name": "Czech"
+        }
+    ],
+    "title": [
+        "ORTOFON v1: balanced corpus of informal spoken Czech with multi-tier transcription (transcriptions & audio)"
+    ],
+    "url": ""
+}

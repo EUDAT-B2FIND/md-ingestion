@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "[S. n.]"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-517",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-517"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D1F-A",
+    "PublicationTimestamp": "1674-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1674"
+    ],
+    "Publisher": [
+        "[S. n.]"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/517"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-517;2019-03-01T15:33:42Z;Porz\u0105dek Na Seymie Walnym Elekcyey Mi\u0119dzy Warszaw\u0105 a Wol\u0105, przez opisane Artyku\u0142y do samego tylko Aktu Elekcyey nale\u017c\u0105ce, uchwalony y postanowiony, Roku Pa\u0144skiego Tysi\u0105c Szesc Set Siedmdziesiat Czwartego, dnia Dwudziestego Miesiaca Kwietnia.;Parlamenty;Polska 17 w.;ilo\u015b\u0107 skan\u00f3w: 34 ; sygn: St - 352;[S. n.];1674;starodruk;application/xml;clarind-uds:poldilemma-517;hdl:11858/00-246C-0000-0023-8D1F-A;pol;lat;http://pbc.biaman.pl/Content/517;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "abd3d971-93a1-5525-a666-7c10bc4a2150",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 34 ; sygn: St - 352"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-517"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Parlamenty"
+        },
+        {
+            "name": "Polska w."
+        }
+    ],
+    "title": [
+        "Porz\u0105dek Na Seymie Walnym Elekcyey Mi\u0119dzy Warszaw\u0105 a Wol\u0105, przez opisane Artyku\u0142y do samego tylko Aktu Elekcyey nale\u017c\u0105ce, uchwalony y postanowiony, Roku Pa\u0144skiego Tysi\u0105c Szesc Set Siedmdziesiat Czwartego, dnia Dwudziestego Miesiaca Kwietnia."
+    ],
+    "url": ""
+}

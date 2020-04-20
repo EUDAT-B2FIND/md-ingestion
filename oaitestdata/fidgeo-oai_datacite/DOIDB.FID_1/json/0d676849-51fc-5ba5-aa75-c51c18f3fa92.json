@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6584",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6584"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6584;2018-12-10T15:08:13Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.016;Siegert, Susann;Susann;Siegert;0000-0002-4157-863X;Museum f\u00fcr Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany;Hecht, Lutz;Lutz;Hecht;0000-0001-8904-0217;Museum f\u00fcr Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany;Geochemical data of impactites of the Ries impact structure, Germany;GFZ Data Services;2018;Ries impact crater;geochemistry;melt-brearing impact breccia;suevite;impact melt breccia;impact melt bomb;electron microprobe analysis;laser ablation ICP-MS;X-ray fluorescence;ICP-MS;ICP-AES;Siegert, Susann;Susann;Siegert;0000-0002-4157-863X;Museum f\u00fcr Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany;Hecht, Lutz;Lutz;Hecht;0000-0001-8904-0217;Museum f\u00fcr Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany;en;10.1111/maps.13210;10.1046/j.1365-2494.1998.53202081.x-i1;10.1111/j.1751-908X.1980.tb00273.x;10.1111/j.1751-908X.2011.00120.x;10.1111/maps.12087;10.1111/maps.12086;6313516 Bytes;3 Files;application/x-zip-compressed;application/pdf;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;CC BY 4.0;The Ries impact structure in Southern Germany is one of the best-preserved impact structures on Earth. Melt-bearing impact breccia appears in a variety of well accessible exposures around the inner ring up to 10 km beyond the crater rim (so-called outer suevite) overlying a ballistically ejected lithic breccia (so-called \u2018Bunte Breccia\u2019). Occasionally individual melt bombs occur in the \u2018Bunte Breccia\u2019. Coherent impact melt rock outside the inner crater is located in the eastern megablock zone (St\u00f6ffler et al., 2013 and references therein).;10.557469238760063;48.88667960100579",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "0d676849-51fc-5ba5-aa75-c51c18f3fa92",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6584"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

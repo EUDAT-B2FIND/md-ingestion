@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Jan Wieczorek"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/476",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/476"
+    ],
+    "PID": "http://hdl.handle.net/11321/476",
+    "PublicationTimestamp": "2018-06-06T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Jan Wieczorek"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Wieczorek, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/476;2018-06-13T13:01:48Z;hdl_11321_3;hdl_11321_478;Siemiradzki test;Wieczorek, Jan;Siemiradzki;historia sztuki;history of art;test;Test korpusu Siemiradzki;2018-06-06;corpus;http://hdl.handle.net/11321/476;pol;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;CC;text/plain; charset=utf-8;application/msword;application/msword;downloadable_files_count: 2;Jan Wieczorek",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "05797735-d6f6-568f-bdc0-39836315a44c",
+    "notes": [
+        "Test korpusu Siemiradzki"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/476"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_478"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Siemiradzki"
+        },
+        {
+            "name": "historia sztuki"
+        },
+        {
+            "name": "history art"
+        },
+        {
+            "name": "test"
+        }
+    ],
+    "title": [
+        "Siemiradzki test"
+    ],
+    "url": ""
+}

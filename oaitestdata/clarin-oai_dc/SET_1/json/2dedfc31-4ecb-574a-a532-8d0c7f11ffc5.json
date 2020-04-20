@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=7095d3ac1c4c11e2a2aa782bcb07413529180c96d3904812b3a8eaf6ec88ad9d",
+    "MetadataAccess": [
+        "7095d3ac1c4c11e2a2aa782bcb07413529180c96d3904812b3a8eaf6ec88ad9d"
+    ],
+    "PublicationTimestamp": "2012-10-22T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "7095d3ac1c4c11e2a2aa782bcb07413529180c96d3904812b3a8eaf6ec88ad9d;2018-11-15T16:39:43Z;toolService;toolService:tool;SENTER;SENTER is a SENtence splitTER for Portuguese.;2012-10-22",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2dedfc31-4ecb-574a-a532-8d0c7f11ffc5",
+    "notes": [
+        "SENTER is a SENtence splitTER for Portuguese."
+    ],
+    "oai_identifier": [
+        "7095d3ac1c4c11e2a2aa782bcb07413529180c96d3904812b3a8eaf6ec88ad9d"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "SENTER"
+    ]
+}

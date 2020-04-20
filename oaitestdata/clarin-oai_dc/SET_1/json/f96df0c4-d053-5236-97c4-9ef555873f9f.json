@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/html",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2906",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2906"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2906",
+    "PublicationTimestamp": "2018-12-20T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "M\u00edrovsk\u00fd, Ji\u0159\u00ed",
+        "Zik\u00e1nov\u00e1, \u0160\u00e1rka",
+        "Synkov\u00e1, Pavl\u00edna"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2906;2018-12-19T11:19:55Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Enriched Discourse Annotation of PDiT Subset 1.0 (PDiT-EDA 1.0);Zik\u00e1nov\u00e1, \u0160\u00e1rka;Synkov\u00e1, Pavl\u00edna;M\u00edrovsk\u00fd, Ji\u0159\u00ed;discourse annotation;implicit discourse relations;Enriched discourse annotation of a subset of the Prague Discourse Treebank, adding implicit relations, entity based relations, question-answer relations and other discourse structuring phenomena.;2018-12-20;corpus;http://hdl.handle.net/11234/1-2906;ces;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;text/html;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://ufal.mff.cuni.cz/pdit-eda1.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f96df0c4-d053-5236-97c4-9ef555873f9f",
+    "notes": [
+        "Enriched discourse annotation of a subset of the Prague Discourse Treebank, adding implicit relations, entity based relations, question-answer relations and other discourse structuring phenomena."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2906"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "discourse annotation"
+        },
+        {
+            "name": "implicit discourse relations"
+        }
+    ],
+    "title": [
+        "Enriched Discourse Annotation of PDiT Subset 1.0 (PDiT-EDA 1.0)"
+    ],
+    "url": ""
+}

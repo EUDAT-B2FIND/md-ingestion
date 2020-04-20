@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00164L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17725900",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17725900"
+    ],
+    "PublicationTimestamp": "2018-12-07T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:17725900;2019-04-17T17:27:06Z;ESTDOI;ESTDOI.KEEL;Segakorpus: Riigikogu ver.2.0;Corpus of the Proceedings of Estonian Parliament ver.2.0;Muischnek, Kadri;Center of Estonian Language Resources;2013;Issued: 2013-01-07;Updated: 2018-12-07;doi:10.15155/1-00-0000-0000-0000-00164L;Abstract;Riigikogu korpus. TEI P5 XML m\u00e4rgendus, UTF8 kodeering. Morfoloogiline anal\u00fc\u00fcs ja \u00fchestamine, automaatselt tehtud.;Abstract;Corpus of the Proceedings of Estonian Parliament. Contains edited version of the Proceedings of Estonian Parliament from the years 1995-2001; Morphologically analysed and disambiguated, automatically.\nMarkup: TEI P5 XML\nEncoding: UTF8",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e4ddf7a7-8871-5ab0-af91-9d345c0e88b5",
+    "notes": [
+        "Abstract",
+        "Riigikogu korpus. TEI P5 XML m\u00e4rgendus, UTF8 kodeering. Morfoloogiline anal\u00fc\u00fcs ja \u00fchestamine, automaatselt tehtud.",
+        "Abstract",
+        "Corpus of the Proceedings of Estonian Parliament. Contains edited version of the Proceedings of Estonian Parliament from the years 1995-2001; Morphologically analysed and disambiguated, automatically.\nMarkup: TEI P5 XML\nEncoding: UTF8"
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17725900"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Segakorpus: Riigikogu ver.2.0",
+        "Corpus of the Proceedings of Estonian Parliament ver.2.0"
+    ],
+    "url": ""
+}

@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "A"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1784",
+    "MetadataAccess": [
+        "oai:ota:oucs:1784"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Douglass, Frederick"
+    ],
+    "fulltext": "oai:ota:oucs:1784;2018-05-17T09:29:11Z;http://ota.ox.ac.uk/headers/1784.xml;Autobiography;Douglass, Frederick;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;A;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "48f09096-4a58-5474-9980-7f262f47ec7d",
+    "oai_identifier": [
+        "oai:ota:oucs:1784"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Autobiography"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1784.xml"
+}

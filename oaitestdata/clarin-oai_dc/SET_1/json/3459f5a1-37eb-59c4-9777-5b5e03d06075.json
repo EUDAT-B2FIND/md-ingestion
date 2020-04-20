@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "420 KB"
+    ],
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1104",
+    "MetadataAccess": [
+        "oai:ota:oucs:1104"
+    ],
+    "PublicationTimestamp": "1742-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1742"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Fiction"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Cr\u00c3\u00a9billon,  Monsieur de (Claude-Prosper Jolyot), 1707-1777"
+    ],
+    "fulltext": "oai:ota:oucs:1104;2018-03-05T12:05:10Z;http://ota.ox.ac.uk/headers/1104.xml;Le sopha / compiled by Jennifer Darzentas;Cr\u00c3\u00a9billon,  Monsieur de (Claude-Prosper Jolyot), 1707-1777;1742;text_and_corpus_linguistics;Fiction -- France -- 18th century;fra;Oxford Text Archive, University of Oxford;420 KB;Text;Fiction;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3459f5a1-37eb-59c4-9777-5b5e03d06075",
+    "oai_identifier": [
+        "oai:ota:oucs:1104"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- France -- th century"
+        }
+    ],
+    "title": [
+        "Le sopha / compiled by Jennifer Darzentas"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1104.xml"
+}

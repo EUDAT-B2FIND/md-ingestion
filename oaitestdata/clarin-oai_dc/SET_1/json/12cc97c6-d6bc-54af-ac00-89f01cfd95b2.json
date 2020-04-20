@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5139",
+    "MetadataAccess": [
+        "oai:ota:oucs:5139"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Murphy, Arthur, 1727-1805."
+    ],
+    "fulltext": "oai:ota:oucs:5139;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5139.xml;The upholsterer: or what news? A farce, in two acts. As it is performed at the Theatre Royal, in Drury-Lane. By the author of The apprentice.;Murphy, Arthur, 1727-1805.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "12cc97c6-d6bc-54af-ac00-89f01cfd95b2",
+    "oai_identifier": [
+        "oai:ota:oucs:5139"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The upholsterer: or what news? A farce, in two acts. As it is performed at the Theatre Royal, in Drury-Lane. By the author of The apprentice."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5139.xml"
+}

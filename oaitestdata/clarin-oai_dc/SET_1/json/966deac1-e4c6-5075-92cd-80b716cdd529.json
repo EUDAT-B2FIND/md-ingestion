@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3607",
+    "MetadataAccess": [
+        "oai:ota:oucs:3607"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "MacNally, Leonard, 1752-1820."
+    ],
+    "fulltext": "oai:ota:oucs:3607;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3607.xml;Retaliation, a farce, in two acts: as it is performed, with universal applause, at the Theatre Royal, Covent Garden. By Leonard MacNally, Esq.;MacNally, Leonard, 1752-1820.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "966deac1-e4c6-5075-92cd-80b716cdd529",
+    "oai_identifier": [
+        "oai:ota:oucs:3607"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Retaliation, a farce, in two acts: as it is performed, with universal applause, at the Theatre Royal, Covent Garden. By Leonard MacNally, Esq."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3607.xml"
+}

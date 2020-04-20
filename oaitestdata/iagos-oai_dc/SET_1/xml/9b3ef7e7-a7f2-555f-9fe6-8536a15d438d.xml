@@ -1,0 +1,40 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>4d3be8dd-c41a-4f35-8ba6-722cf12e2de3</dc:identifier>
+      <dc:date>2018-09-06T18:17:38.497+02:00</dc:date>
+      <dc:title>IAGOS ancillary data (L4) - CO contributions to the aircraft measurements</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>IAGOS</dc:subject>
+      <dc:subject>SEDOO</dc:subject>
+      <dc:subject>AERIS</dc:subject>
+      <dc:subject>climatologyMeteorologyAtmosphere</dc:subject>
+      <dc:format>NetCDF</dc:format>
+      <dct:abstract>In order to help analyzing the IAGOS carbon monoxide (CO) observations and understanding the processes driving their evolutions, we provide ancillary parameters calculated with SOFT-IO (Sauvage et al., 2017; http://dx.doi.org/10.25326/2) along aircraft observations.
+
+CO contribution is defined as follow. CO mixing ratio is calculated for each IAGOS observations (every 0.5&#176; in latitude or longitude at cruising altitude; every 10hPa during ascent or descent of the plane) and sorted by source origin (biomass burning and anthropogenic origin, and for 14 geographical origins, see Fig.1). CO total contribution is then the sum of each CO source origin or the sum of each CO geographical origin and can be used to interpret IAGOS CO measurements. Some examples are highlighted in Sauvage et al., 2017 for individual flights (their Fig.5 to Fig.8).
+
+CO is calculated so far for different up-to-date emissions inventories (ECCAD and MACCity for anthropogenic emissions; GFED4 and GFAS v1.2 for biomass burning emissions) available in the ECCAD project (http://eccad.aeris-data.fr/) and since the beginning of CO measurements in IAGOS (end of 2001) up to now.
+
+L4 IAGOS CO contributions are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data (http://iagos-data.fr/#L4Place:).They are subject to the IAGOS data protocol (http://iagos-data.fr/#RegisterPlace:)</dct:abstract>
+      <dc:description>In order to help analyzing the IAGOS carbon monoxide (CO) observations and understanding the processes driving their evolutions, we provide ancillary parameters calculated with SOFT-IO (Sauvage et al., 2017; http://dx.doi.org/10.25326/2) along aircraft observations.
+
+CO contribution is defined as follow. CO mixing ratio is calculated for each IAGOS observations (every 0.5&#176; in latitude or longitude at cruising altitude; every 10hPa during ascent or descent of the plane) and sorted by source origin (biomass burning and anthropogenic origin, and for 14 geographical origins, see Fig.1). CO total contribution is then the sum of each CO source origin or the sum of each CO geographical origin and can be used to interpret IAGOS CO measurements. Some examples are highlighted in Sauvage et al., 2017 for individual flights (their Fig.5 to Fig.8).
+
+CO is calculated so far for different up-to-date emissions inventories (ECCAD and MACCity for anthropogenic emissions; GFED4 and GFAS v1.2 for biomass burning emissions) available in the ECCAD project (http://eccad.aeris-data.fr/) and since the beginning of CO measurements in IAGOS (end of 2001) up to now.
+
+L4 IAGOS CO contributions are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data (http://iagos-data.fr/#L4Place:).They are subject to the IAGOS data protocol (http://iagos-data.fr/#RegisterPlace:)</dc:description>
+      <dc:rights>restricted</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Data produced by the European Research Infrastructure IAGOS.</dc:source>
+      <dc:format>NetCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:::EPSG:4326">
+        <ows:LowerCorner>180.0 -90.0</ows:LowerCorner>
+        <ows:UpperCorner>-180.0 90.0</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" description="IAGOS central website">http://www.iagos.org</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-http--download" description="IAGOS Ancillary Data">http://iagos-data.fr/#CMSConsultPlace:ANCILLARY_DATA</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="DOI of the dataset">http://dx.doi.org/10.25326/3</dc:URI>
+      <dc:URI protocol="image/png" name="Logo">http://iagos-data.fr/images/logo_blue.png</dc:URI>
+      <dc:URI name="Map of flights">http://iagos-data.fr/portal/rest/images/map:global:thumb</dc:URI>
+      <dc:URI name="Figure 1: Geographical regions used to quantify CO origin (Figure from&#160;: http://www.globalfiredata.org/data.html)">http://iagos-data.fr/portal/rest/image/storedById/6871350981954295755</dc:URI>
+    </csw:Record>

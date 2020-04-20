@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Drukarnia Andrzeja Piotrkowczyka"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105641",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105641"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CD3-9",
+    "PublicationTimestamp": "1625-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1625"
+    ],
+    "Publisher": [
+        "Drukarnia Andrzeja Piotrkowczyka"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/105641",
+        "oai:jbc.bj.uj.edu.pl:publication:112986"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Radawiecki, Andrzej ( -1634)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105641;2019-02-28T17:51:03Z;Prawy Szlachcic, w Kazaniu Na Pogrzebie [...] Andrzeia ze Zmigroda Stadnickiego w osobie iego vkazany we Zmigrodzie dnia 23 Wrze\u015bnia Roku [...] 1614;Radawiecki, Andrzej ( -1634);starodruki 17\u00a0w.;Stadnicki, Adam (ca 1563-1615). Adr. ded.;Drukarnia Andrzeja Piotrkowczyka;1625;starodruk;application/xml;clarind-uds:poldilemma-105641;hdl:11858/00-246C-0000-0023-8CD3-9;Biblioteka Jagiello\u0144ska, BJ St. Dr.\u00a027071 I;pol;http://jbc.bj.uj.edu.pl/Content/105641;oai:jbc.bj.uj.edu.pl:publication:112986;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8af1a524-cd78-5796-b2ad-465e6a2d661d",
+    "notes": [
+        "Stadnicki, Adam (ca 1563-1615). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-105641"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Prawy Szlachcic, w Kazaniu Na Pogrzebie [...] Andrzeia ze Zmigroda Stadnickiego w osobie iego vkazany we Zmigrodzie dnia 23 Wrze\u015bnia Roku [...] 1614"
+    ],
+    "url": ""
+}

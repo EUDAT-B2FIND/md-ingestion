@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/387</identifier>
+    <datestamp>2017-05-30T11:54:55Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Novels_Dabrowska_Dzikie_ziele</dc:title>
+      <dc:creator>Cyrklaff, Magdalena</dc:creator>
+      <dc:subject>Maria D&#261;browska</dc:subject>
+      <dc:subject>Wild herb</dc:subject>
+      <dc:subject>stories</dc:subject>
+      <dc:description>Body of Maria D&#261;browska "Wild herb" from the collection of the Scriptures selected. Stories, passages, dramas, songs for children.</dc:description>
+      <dc:date>2017-05-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/387</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>IPIPAN</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

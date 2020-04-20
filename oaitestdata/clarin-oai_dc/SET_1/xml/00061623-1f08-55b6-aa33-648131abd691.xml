@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/244</identifier>
+    <datestamp>2016-01-31T17:44:28Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Teksty reklam TVP ABC ver.3</dc:title>
+      <dc:creator>Ka, Emilia</dc:creator>
+      <dc:subject>reklama</dc:subject>
+      <dc:description>kompletny korpus</dc:description>
+      <dc:date>2016-01-31</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/244</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Emilia</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/47748",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=1a939a46-01a2-5cc2-ac90-b27184a4bb10",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/312463/EU//FIXO3"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY"
+    ],
+    "SpatialCoverage": "(37N-37N,32W-32W)",
+    "TempCoverageBegin": 95065185599,
+    "TempCoverageEnd": 95065185599,
+    "TemporalCoverage": " point in time : 3013-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "3013-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "3013-07-01T11:59:59Z",
+    "author": [
+        "Legrand, Julien",
+        "Sarradin, Pierre-marie",
+        "Cannat, Mathilde"
+    ],
+    "fulltext": "oai:seanoe.org:47748;2019-01-22;GROUP:EMSO;Buoy management unit 1 data from the EMSO-Azores observatory, 2015-2016;Legrand, Julien;Sarradin, Pierre-marie;Cannat, Mathilde;Mid-Atlantic Ridge;EMSO;Lucky Strike;buoy;Time-series;Transmission;MoMAR;BOREL;This dataset contains technical parameters (Voltage in V, internal pressure in mbar, water intrusion detection, tilt in \u00b0) acquired between April 2015 and September 2016\u00a0by the buoy management unit 1, which is the Electronic core of BOREL, the transmission buoy of the EMSO-Azores observatory (data acquired every 6 hours).\n;SEANOE;2016;dataset;DOI:10.17882/47748;http://dx.doi.org/10.17882/47748;info:eu-repo/grantAgreement/EC/FP7/312463/EU//FIXO3;North 37.30134, South 37.2888, East -32.275618, West -32.27982;https://www.seanoe.org/data/00366/47748/illustration.gif;37.2888 -32.27982 37.30134 -32.275618;CC-BY",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "1a939a46-01a2-5cc2-ac90-b27184a4bb10",
+    "notes": [
+        "This dataset contains technical parameters (Voltage in V, internal pressure in mbar, water intrusion detection, tilt in \u00b0) acquired between April 2015 and September 2016\u00a0by the buoy management unit 1, which is the Electronic core of BOREL, the transmission buoy of the EMSO-Azores observatory (data acquired every 6 hours).\n"
+    ],
+    "oai_identifier": [
+        "1a939a46-01a2-5cc2-ac90-b27184a4bb10"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-32.27982,37.2888],[-32.27982,37.30134],[-32.275618,37.30134],[-32.275618,37.2888],[-32.27982,37.2888]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Mid-Atlantic Ridge"
+        },
+        {
+            "name": "EMSO"
+        },
+        {
+            "name": "Lucky Strike"
+        },
+        {
+            "name": "buoy"
+        },
+        {
+            "name": "Time-series"
+        },
+        {
+            "name": "Transmission"
+        },
+        {
+            "name": "MoMAR"
+        },
+        {
+            "name": "BOREL"
+        }
+    ],
+    "title": [
+        "Buoy management unit 1 data from the EMSO-Azores observatory, 2015-2016"
+    ],
+    "url": ""
+}

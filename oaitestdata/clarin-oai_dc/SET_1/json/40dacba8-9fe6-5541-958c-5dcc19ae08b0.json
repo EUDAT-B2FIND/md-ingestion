@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Lyne, Anthony A."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 585 KB)"
+    ],
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0569",
+    "MetadataAccess": [
+        "oai:ota:oucs:0569"
+    ],
+    "PublicationTimestamp": "1970-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1970"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Letters"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lyne, Anthony A."
+    ],
+    "fulltext": "oai:ota:oucs:0569;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0569.xml;Modern business correspondence / Anthony A. Lyne;Lyne, Anthony A.;1970-1979;text_and_corpus_linguistics;Business communication -- France -- 20th century;fra;Oxford Text Archive, University of Oxford;Lyne, Anthony A.;(1 file : ca. 585 KB);Text;Letters;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "40dacba8-9fe6-5541-958c-5dcc19ae08b0",
+    "oai_identifier": [
+        "oai:ota:oucs:0569"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Business communication -- France -- th century"
+        }
+    ],
+    "title": [
+        "Modern business correspondence / Anthony A. Lyne"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0569.xml"
+}

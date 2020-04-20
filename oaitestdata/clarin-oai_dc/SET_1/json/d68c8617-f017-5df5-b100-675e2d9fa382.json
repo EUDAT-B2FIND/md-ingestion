@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Kerstin Dahlb\u00e4ck"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/78",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/78"
+    ],
+    "PID": "http://hdl.handle.net/10794/78",
+    "PublicationTimestamp": "2012-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Kerstin Dahlb\u00e4ck"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Dahlb\u00e4ck, Kerstin"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/78;2017-11-01T07:59:02Z;hdl_10794_1;hdl_10794_2;August Strindberg's letters (2017-10-16);August Strindbergs brev (2017-10-16);Dahlb\u00e4ck, Kerstin;Swedish;Letters;Part of the collected works of August Strindberg.\r\n\r\nAugust Strindberg's letters were compiled by Kerstin Dahlb\u00e4ck. They include all published and unpublished letters available on 1 August 1991. The material should be considered a working material, as it has not yet been satisfactorily proof-read. Additionally, the letters from the last years have preliminary designations and need to be renumbered in accordance with parts XVII-XX of the published letters of August Strindberg. \r\n\r\nThe material is sentence scrambled.;Del av August Strindbergs samlade verk.\r\n\r\nAugust Strindbergs brev sammanst\u00e4lldes av Kerstin Dahlb\u00e4ck. De omfattar samtliga tryckta och otryckta brev som var tillg\u00e4ngliga 1 augusti 1991. Materialet \u00e4r att betrakta som ett arbetsmaterial, d\u00e5 det \u00e4nnu inte \u00e4r tillfredsst\u00e4llande kontrollerat (korrekturfel kan inte uteslutas, de brev som kodats in direkt fr\u00e5n handskrivet manuskript kan rymma feltolkningar och b\u00f6r korrigeras, felaktigheter hos Eklund har visserligen r\u00e4ttats men en systematisk genomg\u00e5ng har inte f\u00f6retagits). Vidare har breven fr\u00e5n de sista \u00e5ren prelimin\u00e4ra beteckningar och skall omnumreras i \u00f6verensst\u00e4mmelse med delarna XVII-XX i utg\u00e5van av Augusts Strindbergs brev. \r\n\r\nMaterialet \u00e4r meningsomkastat.;2012-05-30;corpus;http://hdl.handle.net/10794/78;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Kerstin Dahlb\u00e4ck;https://spraakbanken.gu.se/swe/resurs/strindbergbrev",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d68c8617-f017-5df5-b100-675e2d9fa382",
+    "notes": [
+        "Part of the collected works of August Strindberg.\r\n\r\nAugust Strindberg's letters were compiled by Kerstin Dahlb\u00e4ck. They include all published and unpublished letters available on 1 August 1991. The material should be considered a working material, as it has not yet been satisfactorily proof-read. Additionally, the letters from the last years have preliminary designations and need to be renumbered in accordance with parts XVII-XX of the published letters of August Strindberg. \r\n\r\nThe material is sentence scrambled.",
+        "Del av August Strindbergs samlade verk.\r\n\r\nAugust Strindbergs brev sammanst\u00e4lldes av Kerstin Dahlb\u00e4ck. De omfattar samtliga tryckta och otryckta brev som var tillg\u00e4ngliga 1 augusti 1991. Materialet \u00e4r att betrakta som ett arbetsmaterial, d\u00e5 det \u00e4nnu inte \u00e4r tillfredsst\u00e4llande kontrollerat (korrekturfel kan inte uteslutas, de brev som kodats in direkt fr\u00e5n handskrivet manuskript kan rymma feltolkningar och b\u00f6r korrigeras, felaktigheter hos Eklund har visserligen r\u00e4ttats men en systematisk genomg\u00e5ng har inte f\u00f6retagits). Vidare har breven fr\u00e5n de sista \u00e5ren prelimin\u00e4ra beteckningar och skall omnumreras i \u00f6verensst\u00e4mmelse med delarna XVII-XX i utg\u00e5van av Augusts Strindbergs brev. \r\n\r\nMaterialet \u00e4r meningsomkastat."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/78"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Letters"
+        }
+    ],
+    "title": [
+        "August Strindberg's letters (2017-10-16)",
+        "August Strindbergs brev (2017-10-16)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Jan Wieczorek"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/632",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/632"
+    ],
+    "PID": "http://hdl.handle.net/11321/632",
+    "PublicationTimestamp": "2019-03-18T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Jan Wieczorek"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Wieczorek, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/632;2019-03-18T11:18:18Z;hdl_11321_3;hdl_11321_478;poznan lista 2;Wieczorek, Jan;pr\u00f3bka;pr\u00f3ba 2;2019-03-18;corpus;http://hdl.handle.net/11321/632;pol;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/vnd.openxmlformats-officedocument.wordprocessingml.document;downloadable_files_count: 1;Jan Wieczorek",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0e248e3a-b9b9-5987-882a-b0ffb0fec148",
+    "notes": [
+        "pr\u00f3ba 2"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/632"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_478"
+    ],
+    "state": "active",
+    "tags": [],
+    "title": [
+        "poznan lista 2"
+    ],
+    "url": ""
+}

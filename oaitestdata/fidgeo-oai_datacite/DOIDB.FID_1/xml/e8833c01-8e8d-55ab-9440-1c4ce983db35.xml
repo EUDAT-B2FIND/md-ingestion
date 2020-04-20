@@ -1,0 +1,89 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6342</identifier>
+    <datestamp>2018-09-05T10:07:06Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2017.018</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>van den Ende, Martijn</default:creatorName>
+              <default:givenName>Martijn</default:givenName>
+              <default:familyName>van den Ende</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0634-7078</default:nameIdentifier>
+              <default:affiliation>Utrecht University</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="eng">Experimental and model data of aggregate compaction by pressure solution</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2017</default:publicationYear>
+          <default:subjects>
+            <default:subject>Compaction</default:subject>
+            <default:subject>Pressure solution</default:subject>
+            <default:subject>Discrete Element Method</default:subject>
+            <default:subject>Halite</default:subject>
+            <default:subject>Granular mechanics</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>multi-scale laboratories</default:subject>
+            <default:subject>rock and melt physical properties</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>van den Ende, Martijn</default:contributorName>
+              <default:givenName>Martijn</default:givenName>
+              <default:familyName>van den Ende</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0634-7078</default:nameIdentifier>
+              <default:affiliation>Utrecht University</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Experimental rock deformation/HPT-Lab (Utrecht University, The Netherlands)</default:contributorName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Created">2017-11-24</default:date>
+          </default:dates>
+          <default:language>eng</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1002/2017JB014440</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>370524799 Bytes</default:size>
+            <default:size>2 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/pdf</default:format>
+            <default:format>application/zip</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">Intergranular pressure solution creep is an important deformation mechanism in the Earth&#8217;s crust. The phenomenon has been frequently studied and several analytical models have been proposed that describe its constitutive behavior. These models require assumptions regarding the geometry of the aggregate and the grain size distribution in order to solve for the contact stresses, and often neglect shear tractions. Furthermore, analytical models tend to overestimate experimental compaction rates at low porosities, an observation for which the underlying mechanisms remain to be elucidated. <default:br/>
+         <default:br/>Here we present a conceptually simple, 3D Discrete Element Method (DEM) approach for simulating intergranular pressure solution creep that explicitly models individual grains, relaxing many of the assumptions that are required by analytical models. The DEM model is validated against experiments by direct comparison of macroscopic sample compaction rates. Furthermore, the sensitivity of the overall DEM compaction rate to the grain size and applied stress is tested. The effects of the interparticle friction and of a distributed grain size on macroscopic strain rates are subsequently investigated. <default:br/>
+         <default:br/>Overall, we find that the DEM model is capable of reproducing realistic compaction behavior, and that the strain rates produced by the model are in good agreement with uniaxial compaction experiments. Characteristic features, such as the dependence of the strain rate on grain size and applied stress, as predicted by analytical models, are also observed in the simulations. DEM results show that interparticle friction and a distributed grain size affect the compaction rates by less than half an order of magnitude.<default:br/>
+The zip-&#64257;le Van-den-Ende_2017.018.zip contains several folders with raw data from the laboratory experiments, output data from Discrete Element Method simulations, and Python 2.7 script &#64257;les that read and process these data. All data are stored in ASCII format. </default:description>
+          </default:descriptions>
+          <default:fundingReferences>
+            <default:fundingReference>
+              <default:funderName>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</default:funderName>
+              <default:funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/501100003246</default:funderIdentifier>
+              <default:awardNumber>854.12.001</default:awardNumber>
+            </default:fundingReference>
+          </default:fundingReferences>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

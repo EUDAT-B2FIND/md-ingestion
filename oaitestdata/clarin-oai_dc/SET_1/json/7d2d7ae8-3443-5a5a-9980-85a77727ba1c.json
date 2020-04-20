@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "University of Glasgow"
+    ],
+    "Contributor": [
+        "Adams, Alison",
+        "Spangler, Jonathan"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-876",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-876"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-876",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Glasgow"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-876;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;French emblems at Glasgow;Adams, Alison;Spangler, Jonathan;French emblem books (27 in total) of the 16th century, together with Latin versions where appropriate. Transcribed and facsimile versions, and extensive search functionality.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-876;fra;downloadable_files_count: 0;United Kingdom;University of Glasgow;http://www.emblems.arts.gla.ac.uk/french/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7d2d7ae8-3443-5a5a-9980-85a77727ba1c",
+    "notes": [
+        "French emblem books (27 in total) of the 16th century, together with Latin versions where appropriate. Transcribed and facsimile versions, and extensive search functionality."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-876"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "French emblems at Glasgow"
+    ],
+    "url": ""
+}

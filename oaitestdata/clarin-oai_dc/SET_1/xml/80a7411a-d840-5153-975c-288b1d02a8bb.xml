@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4902-6</identifier>
+    <datestamp>2018-07-02T22:05:53Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LAW</dc:title>
+      <dc:creator>Hana, Ji&#345;&#237;</dc:creator>
+      <dc:subject>language annotation</dc:subject>
+      <dc:description>Lexical Annotation Workbench (LAW) is an integrated environment for morphological annotation. It supports simple morphological annotation (assigning a lemma and tag to a word), integration and comparison of different annotations of the same text, searching for particular word, tag etc.</dc:description>
+      <dc:date>2009-11-02T09:27:18Z</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-4902-6</dc:identifier>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/html</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://purl.org/net/jh/law</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

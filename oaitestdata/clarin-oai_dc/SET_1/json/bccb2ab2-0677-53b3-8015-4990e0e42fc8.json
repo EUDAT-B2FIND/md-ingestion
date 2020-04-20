@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "University of Colorado"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-680",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-680"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-680",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Colorado"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Code of conduct"
+    ],
+    "SpatialCoverage": [
+        "United States"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-680;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Wichita corpus;Documentation of the Wichita project (DoBeS project);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-680;Code of conduct;downloadable_files_count: 0;United States;University of Colorado;http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI84029%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bccb2ab2-0677-53b3-8015-4990e0e42fc8",
+    "notes": [
+        "Documentation of the Wichita project (DoBeS project)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-680"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Wichita corpus"
+    ],
+    "url": ""
+}

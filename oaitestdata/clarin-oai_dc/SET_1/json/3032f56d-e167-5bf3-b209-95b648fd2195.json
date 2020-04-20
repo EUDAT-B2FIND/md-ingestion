@@ -1,0 +1,136 @@
+{
+    "Contact": [
+        "Technische Universit\u00e4t Darmstadt"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/x-gzip",
+        "downloadable_files_count: 62",
+        "text/plain"
+    ],
+    "Language": [
+        "Afrikaans",
+        "Arabic",
+        "Bengali",
+        "Bulgarian",
+        "Czech",
+        "Danish",
+        "German",
+        "Modern Greek (1453-)",
+        "English",
+        "Estonian",
+        "Persian",
+        "Finnish",
+        "French",
+        "Gujarati",
+        "Hebrew",
+        "Hindi",
+        "Croatian",
+        "Hungarian",
+        "Indonesian",
+        "Italian",
+        "Japanese",
+        "Kannada",
+        "Korean",
+        "Latvian",
+        "Lithuanian",
+        "Malayalam",
+        "Marathi",
+        "Macedonian",
+        "Nepali (macrolanguage)",
+        "Dutch",
+        "Norwegian",
+        "Panjabi",
+        "Polish",
+        "Portuguese",
+        "Romanian",
+        "Russian",
+        "Slovak",
+        "Slovenian",
+        "Somali",
+        "Spanish",
+        "Albanian",
+        "Swahili (macrolanguage)",
+        "Swedish",
+        "Tamil",
+        "Telugu",
+        "Tagalog",
+        "Thai",
+        "Turkish",
+        "Ukrainian",
+        "Undetermined",
+        "Urdu",
+        "Vietnamese",
+        "Chinese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2208",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2208"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2208",
+    "PublicationTimestamp": "2016-04-14T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Technische Universit\u00e4t Darmstadt"
+    ],
+    "RelatedIdentifier": [
+        "http://www.lrec-conf.org/proceedings/lrec2016/pdf/388_Paper.pdf"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "http://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Habernal, Ivan",
+        "Gurevych, Iryna",
+        "Zayed, Omnia"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2208;2019-01-02T14:28:24Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;C4Corpus (CC BY-SA part);Gurevych, Iryna;Habernal, Ivan;Zayed, Omnia;CommonCrawl;Creative Commons;Web corpus;Amazon Web Services;A large web corpus (over 10 billion tokens) licensed under CreativeCommons license family in 50+ languages that has been extracted from CommonCrawl, the largest publicly available general Web crawl to date with about 2 billion crawled URLs.;2016-04-14;corpus;http://hdl.handle.net/11372/LRT-2208;afr;ara;ben;bul;ces;dan;deu;ell;eng;est;fas;fin;fra;guj;heb;hin;hrv;hun;ind;ita;jpn;kan;kor;lav;lit;mal;mar;mkd;nep;nld;nor;pan;pol;por;ron;rus;slk;slv;som;spa;sqi;swa;swe;tam;tel;tgl;tha;tur;ukr;und;urd;vie;zho;http://www.lrec-conf.org/proceedings/lrec2016/pdf/388_Paper.pdf;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;http://creativecommons.org/licenses/by-sa/4.0/;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;text/plain;downloadable_files_count: 62;Technische Universit\u00e4t Darmstadt;https://dkpro.github.io/dkpro-c4corpus/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3032f56d-e167-5bf3-b209-95b648fd2195",
+    "notes": [
+        "A large web corpus (over 10 billion tokens) licensed under CreativeCommons license family in 50+ languages that has been extracted from CommonCrawl, the largest publicly available general Web crawl to date with about 2 billion crawled URLs."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2208"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "CommonCrawl"
+        },
+        {
+            "name": "Creative Commons"
+        },
+        {
+            "name": "Web corpus"
+        },
+        {
+            "name": "Amazon Web Services"
+        }
+    ],
+    "title": [
+        "C4Corpus (CC BY-SA part)"
+    ],
+    "url": ""
+}

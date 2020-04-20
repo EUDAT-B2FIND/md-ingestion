@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5239",
+    "MetadataAccess": [
+        "oai:ota:oucs:5239"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lennox, Charlotte, ca. 1729-1804."
+    ],
+    "fulltext": "oai:ota:oucs:5239;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5239.xml;Shakespear illustrated: or the novels and histories, on which the plays of Shakespear are founded, collected and translated from the original authors. With critical remarks. The third and last volume. By the author of The female Quixote. [pt.3];Lennox, Charlotte, ca. 1729-1804.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d5af7e3a-0576-5580-9467-699f04f2fda9",
+    "oai_identifier": [
+        "oai:ota:oucs:5239"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Shakespear illustrated: or the novels and histories, on which the plays of Shakespear are founded, collected and translated from the original authors. With critical remarks. The third and last volume. By the author of The female Quixote. [pt.3]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5239.xml"
+}

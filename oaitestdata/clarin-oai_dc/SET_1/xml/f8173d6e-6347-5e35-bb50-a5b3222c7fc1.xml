@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/373</identifier>
+    <datestamp>2017-05-30T07:54:35Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>korpus-materia&#322;y-CLARIN</dc:title>
+      <dc:creator>Opali&#324;ski, Krzysztof</dc:creator>
+      <dc:subject>teksty</dc:subject>
+      <dc:description>korpus</dc:description>
+      <dc:date>2017-05-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/373</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>application/vnd.oasis.opendocument.text</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/vnd.oasis.opendocument.text</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>downloadable_files_count: 10</dc:format>
+      <dc:publisher>IPI PAN</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

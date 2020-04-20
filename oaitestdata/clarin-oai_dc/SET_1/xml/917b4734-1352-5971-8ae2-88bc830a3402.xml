@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>1092896e5f0f11e6a2aa782bcb074135086ed39db4bc44fe84f544af288d6aed</identifier>
+    <datestamp>2018-11-15T16:40:23Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PhenoCHF Corpus</dc:title>
+      <dc:description>PhenoCHF is an annotated corpus consisting of documents belonging to two different text types (i.e., narrative reports from electronic health records (EHRs) and literature articles). It is manually annotated by medical doctors with detailed information relating to mentions of phenotype concepts and disease-phenotype relations. 
+
+The documents in PhenoCHF focus on a specific medical condition, i.e., congestive heart failure (CHF). This focus is motivated by CHF's current standing as the world's most deadly disease. However, our experiments using the corpus have demonstrated that it can be used to develop systems that can recognise information relating to a wider range of diseases in a broader variety of text types than those included in PhenoCHF. </dc:description>
+      <dc:date>2016-08-10</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

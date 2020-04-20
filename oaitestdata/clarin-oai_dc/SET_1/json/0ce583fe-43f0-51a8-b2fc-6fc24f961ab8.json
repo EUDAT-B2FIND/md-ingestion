@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Hart, Michael"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 189 KB)",
+        "text/plain"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1499",
+    "MetadataAccess": [
+        "oai:ota:oucs:1499"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Longfellow, Henry Wadsworth, 1807-1882"
+    ],
+    "fulltext": "oai:ota:oucs:1499;2018-02-16T10:42:06Z;http://ota.ox.ac.uk/headers/1499.xml;The song of Hiawatha / Henry W. Longfellow;Longfellow, Henry Wadsworth, 1807-1882;text_and_corpus_linguistics;American poetry -- 19th century;Oxford Text Archive, University of Oxford;Hart, Michael;text/plain;(1 file : ca. 189 KB);Text;Poems;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0ce583fe-43f0-51a8-b2fc-6fc24f961ab8",
+    "oai_identifier": [
+        "oai:ota:oucs:1499"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American poetry -- th century"
+        }
+    ],
+    "title": [
+        "The song of Hiawatha / Henry W. Longfellow"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1499.xml"
+}

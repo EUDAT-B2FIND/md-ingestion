@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-BF85-F</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>IDENTICv1.0</dc:title>
+      <dc:creator>Larasati, Septina Dian</dc:creator>
+      <dc:subject>Indonesian-English parallel corpus</dc:subject>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:description>IDENTIC is an Indonesian-English parallel corpus for research purposes. The corpus is a bilingual corpus paired with English. The aim of this work is to build and provide researchers a proper Indonesian-English textual data set and also to promote research in this language pair. The corpus contains texts coming from different sources with different genres.</dc:description>
+      <dc:date>2012-03-13</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0005-BF85-F</dc:identifier>
+      <dc:language>ind</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/238405</dc:relation>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-363</identifier>
+    <datestamp>2016-04-06T16:39:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Corpus of the Contemporary Lithuanian Language</dc:title>
+      <dc:contributor>Utka, dr. Andrius</dc:contributor>
+      <dc:description>140 million words; Corpus of the Contemporary Lithuanian Language which comprises 160 million words is a collection of texts designed to represent current Lithuanian. The corpus is compiled  from printed material during Lithuania's independence period (since 1990). The corpus is designed to represent as wide a range of contemporary written Lithuanian as possible. The largest part of the corpus is comprised of General Press (texts from regional and national newspapers), Popular Press, and Special Press (specialized newspapers and magazines). These texts have been intended for general readers, as well as specialists. The rest of the corpus consists of Fiction, Memoirs, other literature (scientific and popular), and various official texts. The larger part of the corpus is freely accessible for online search at http://donelaitis.vdu.lt.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-363</dc:identifier>
+      <dc:language>lit</dc:language>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Lithuania</dc:coverage>
+      <dc:publisher>Center of Computational Linguistics, Vytautas Magnus University</dc:publisher>
+      <dc:source>http://tekstynas.vdu.lt/tekstynas/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

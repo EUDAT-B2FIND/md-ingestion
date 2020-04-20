@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10304200</identifier>
+    <datestamp>2019-06-14T20:01:28Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Veebip&#245;hine s&#245;nastikus&#252;steem EELex </dc:title>
+      <dc:creator>Viks, &#220;lle</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2019-01-08</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-06346L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Leksikograafi t&#246;&#246;keskkond EELex on veebip&#245;histe t&#246;&#246;vahendite kompleks, mis &#252;hendab s&#245;nastike koostajatele ja toimetajatele vajaliku tarkvara ja keeleressursid, toetab r&#252;hmat&#246;&#246;d ja pakub eesti keele tuge. EELexi tarkvara on s&#245;nastike halduss&#252;steem, mis v&#245;imaldab s&#245;nastikke koostada, toimetada ja k&#252;ljendada, teha lihtsaid ja keerulisi struktuurip&#245;hiseid p&#228;ringuid ning p&#228;ringutulemusi sortida. Toimetaja t&#246;&#246; h&#245;lbustamiseks on loodud mitmeid t&#246;&#246;riistu, nt ristviidete kontroll, hulgiparandused kogu s&#245;nastikus, eesti morfoloogia andmete genereerimine, k&#252;ljendusvaate kujundus, s&#245;nastikuteksti eksport Wordi jms.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

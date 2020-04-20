@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/551",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/551"
+    ],
+    "PID": "http://hdl.handle.net/11321/551",
+    "PublicationTimestamp": "2018-07-23T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "author": [
+        "Wr\u00f3blewska, Alina"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/551;2018-07-23T20:16:10Z;hdl_11321_3;hdl_11321_4;Polish Dependency Bank;Wr\u00f3blewska, Alina;Polish Dependency Bank;PDB;dependency grammar;Polish Dependency Bank (PDB) is the largest set of manually annotated dependency trees. PDB consists of more than 22K trees with 15.8 tokens per sentence on the average.;2018-07-23;lexicalConceptualResource;http://hdl.handle.net/11321/551;pol;downloadable_files_count: 0;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/PDB",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "56781a79-acaf-5cb8-af65-d736636a9e69",
+    "notes": [
+        "Polish Dependency Bank (PDB) is the largest set of manually annotated dependency trees. PDB consists of more than 22K trees with 15.8 tokens per sentence on the average."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/551"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Polish Dependency Bank"
+        },
+        {
+            "name": "PDB"
+        },
+        {
+            "name": "dependency grammar"
+        }
+    ],
+    "title": [
+        "Polish Dependency Bank"
+    ],
+    "url": ""
+}

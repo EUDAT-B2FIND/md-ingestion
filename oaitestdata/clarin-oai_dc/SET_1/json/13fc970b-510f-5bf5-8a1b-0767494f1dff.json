@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4392",
+    "MetadataAccess": [
+        "oai:ota:oucs:4392"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Marat, Jean Paul, 1743-1793."
+    ],
+    "fulltext": "oai:ota:oucs:4392;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4392.xml;Chains of slavery: A work wherein the clandestine and villianous attempts of princes to ruin liberty are pointed out, ...;Chains of slavery. French.;Marat, Jean Paul, 1743-1793.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "13fc970b-510f-5bf5-8a1b-0767494f1dff",
+    "oai_identifier": [
+        "oai:ota:oucs:4392"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Chains of slavery: A work wherein the clandestine and villianous attempts of princes to ruin liberty are pointed out, ...",
+        "Chains of slavery. French."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4392.xml"
+}

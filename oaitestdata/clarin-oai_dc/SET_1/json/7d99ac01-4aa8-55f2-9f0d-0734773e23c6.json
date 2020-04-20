@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4908-9",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4908-9"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-4908-9",
+    "PublicationTimestamp": "2009-11-02T11:59:59Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11234/1-2307"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u017dabokrtsk\u00fd, Zden\u011bk",
+        "Kettnerov\u00e1, V\u00e1clava",
+        "Lopatkov\u00e1, Mark\u00e9ta"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4908-9;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;VALLEX 2.5;Lopatkov\u00e1, Mark\u00e9ta;\u017dabokrtsk\u00fd, Zden\u011bk;Kettnerov\u00e1, V\u00e1clava;valency;Czech;The Valency Lexicon of Czech Verbs, Version 2.5 (VALLEX 2.5), is a collection of linguistically annotated data and documentation, resulting from an attempt at formal description of valency frames of Czech verbs. VALLEX 2.5 has been developed at the Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University, Prague.\r\nVALLEX 2.5 provides information on the valency structure (combinatorial potential) of verbs in their particular senses - there are roughly 2,730 lexeme entries containing together around 6,460 lexical units (\"senses\").;2009-11-02;lexicalConceptualResource;http://hdl.handle.net/11858/00-097C-0000-0001-4908-9;ces;http://hdl.handle.net/11234/1-2307;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/vallex/2.5/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7d99ac01-4aa8-55f2-9f0d-0734773e23c6",
+    "notes": [
+        "The Valency Lexicon of Czech Verbs, Version 2.5 (VALLEX 2.5), is a collection of linguistically annotated data and documentation, resulting from an attempt at formal description of valency frames of Czech verbs. VALLEX 2.5 has been developed at the Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University, Prague.\r\nVALLEX 2.5 provides information on the valency structure (combinatorial potential) of verbs in their particular senses - there are roughly 2,730 lexeme entries containing together around 6,460 lexical units (\"senses\")."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4908-9"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "valency"
+        },
+        {
+            "name": "Czech"
+        }
+    ],
+    "title": [
+        "VALLEX 2.5"
+    ],
+    "url": ""
+}

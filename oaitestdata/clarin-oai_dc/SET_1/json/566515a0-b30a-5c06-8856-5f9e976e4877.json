@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "The Norwegian Association of Higher Education Institutions"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "application/octet-stream",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian Bokm\u00e5l",
+        "English",
+        "Norwegian Nynorsk"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/122",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/122"
+    ],
+    "PID": "http://hdl.handle.net/11509/122",
+    "PublicationTimestamp": "2017-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "The Norwegian Association of Higher Education Institutions"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11509/4"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "CLARIN_PUB-BY",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaPub?BY=1",
+        "PUB"
+    ],
+    "author": [
+        "The Norwegian Association of Higher Education Institutions"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/122;2017-01-18T09:26:35Z;hdl_11509_1;hdl_11509_2;UHR's Termbase for Norwegian higher education institutions;The Norwegian Association of Higher Education Institutions;Administration;Higher education;Termbase;Terminological;Terminology;The resource UHR-basen is a terminological database containing terms, definitions and other conceptual information in Norwegian and English within administrative domains in higher education. \r\nThe termbase translates between British English and Norwegian bokm\u00e5l and Norwegian nynorsk, respectively.\r\nThe term base is owned by the Norwegian Association of Higher Education Institutions (UHR).\r\nThe term base has been made downloadable in TBX format by the META-NORD group at University of Bergen, with the kind permission of UHR.;2017-01-10;lexicalConceptualResource;http://hdl.handle.net/11509/122;nob;eng;nno;http://hdl.handle.net/11509/4;CLARIN_PUB-BY;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaPub?BY=1;PUB;application/zip;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;The Norwegian Association of Higher Education Institutions;http://www.terminologi.no",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "566515a0-b30a-5c06-8856-5f9e976e4877",
+    "notes": [
+        "The resource UHR-basen is a terminological database containing terms, definitions and other conceptual information in Norwegian and English within administrative domains in higher education. \r\nThe termbase translates between British English and Norwegian bokm\u00e5l and Norwegian nynorsk, respectively.\r\nThe term base is owned by the Norwegian Association of Higher Education Institutions (UHR).\r\nThe term base has been made downloadable in TBX format by the META-NORD group at University of Bergen, with the kind permission of UHR."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/122"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Administration"
+        },
+        {
+            "name": "Higher education"
+        },
+        {
+            "name": "Termbase"
+        },
+        {
+            "name": "Terminological"
+        },
+        {
+            "name": "Terminology"
+        }
+    ],
+    "title": [
+        "UHR's Termbase for Norwegian higher education institutions"
+    ],
+    "url": ""
+}

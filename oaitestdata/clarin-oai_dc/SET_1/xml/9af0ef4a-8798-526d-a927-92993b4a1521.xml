@@ -1,0 +1,113 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2899</identifier>
+    <datestamp>2018-11-28T13:44:33Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CoNLL 2017 and 2018 Shared Task Blind and Preprocessed Test Data</dc:title>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:subject>tokenization</dc:subject>
+      <dc:subject>word segmentation</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>parsing</dc:subject>
+      <dc:subject>universal dependencies</dc:subject>
+      <dc:description>CoNLL 2017 and 2018 shared tasks:&#13;
+Multilingual Parsing from Raw Text to Universal Dependencies&#13;
+&#13;
+This package contains the test data in the form in which they ware presented&#13;
+to the participating systems: raw text files and files preprocessed by UDPipe.&#13;
+The metadata.json files contain lists of files to process and to output;&#13;
+README files in the respective folders describe the syntax of metadata.json.&#13;
+&#13;
+For full training, development and gold standard test data, see&#13;
+Universal Dependencies 2.0 (CoNLL 2017)&#13;
+Universal Dependencies 2.2 (CoNLL 2018)&#13;
+See the download links at http://universaldependencies.org/.&#13;
+&#13;
+For more information on the shared tasks, see&#13;
+http://universaldependencies.org/conll17/&#13;
+http://universaldependencies.org/conll18/&#13;
+&#13;
+Contents:&#13;
+&#13;
+conll17-ud-test-2017-05-09 ... CoNLL 2017 test data&#13;
+conll18-ud-test-2018-05-06 ... CoNLL 2018 test data&#13;
+conll18-ud-test-2018-05-06-for-conll17 ... CoNLL 2018 test data with metadata&#13;
+    and filenames modified so that it is digestible by the 2017 systems.</dc:description>
+      <dc:date>2018-11-28</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2899</dc:identifier>
+      <dc:language>afr</dc:language>
+      <dc:language>ara</dc:language>
+      <dc:language>bre</dc:language>
+      <dc:language>bul</dc:language>
+      <dc:language>bxr</dc:language>
+      <dc:language>cat</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>chu</dc:language>
+      <dc:language>dan</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>eus</dc:language>
+      <dc:language>fao</dc:language>
+      <dc:language>fas</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>fro</dc:language>
+      <dc:language>gle</dc:language>
+      <dc:language>glg</dc:language>
+      <dc:language>got</dc:language>
+      <dc:language>grc</dc:language>
+      <dc:language>heb</dc:language>
+      <dc:language>hin</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:language>hsb</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>hye</dc:language>
+      <dc:language>ind</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>jpn</dc:language>
+      <dc:language>kaz</dc:language>
+      <dc:language>kmr</dc:language>
+      <dc:language>kor</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>lav</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>nor</dc:language>
+      <dc:language>pcm</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>slk</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>sme</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>srp</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:language>tha</dc:language>
+      <dc:language>tur</dc:language>
+      <dc:language>uig</dc:language>
+      <dc:language>ukr</dc:language>
+      <dc:language>urd</dc:language>
+      <dc:language>vie</dc:language>
+      <dc:language>zho</dc:language>
+      <dc:rights>Licence Universal Dependencies v2.2</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.2</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://universaldependencies.org/conll18/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

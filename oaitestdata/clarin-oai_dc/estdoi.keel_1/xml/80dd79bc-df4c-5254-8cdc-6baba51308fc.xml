@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17979314</identifier>
+    <datestamp>2019-05-11T08:00:50Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Faktituletaja visualiseerimisliides</dc:title>
+      <dc:creator>Laur, Sven</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-10</dc:date>
+      <dc:date>Updated: 2019-01-10</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00193L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Faktituletaja visualiseerimisiidese kasutamiseks k&#228;ivatada fail "startserver.sh" ning avada brauseriga "index.html" fail. Lisaks tuleb seadistada pakendi tee "settings.py" failis, mis on kataloog, kuhu liides lahti pakkida. Pakendis on kaasas ka m&#245;ned demomudelid, mida saab visualiseerijaga uurida. </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "Humboldt-Universit\u00e4t zu Berlin, Institut f\u00fcr Slawistik, Prof. Dr. Roland Meyer"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "German",
+        "Latin",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8C44-B",
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Humboldt-Universit\u00e4t zu Berlin, Institut f\u00fcr Slawistik, Prof. Dr. Roland Meyer"
+    ],
+    "RelatedIdentifier": [
+        "http://fbc.pionier.net.pl/owoc (Federacja Bibliotek Cyfrowych)"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1600/1800",
+        "Poland"
+    ],
+    "TemporalCoverage": " period : ( 1600-07-01T11:59:59Z - None ) ",
+    "author": [
+        "Humboldt-Universit\u00e4t zu Berlin, Institut f\u00fcr Slawistik, Prof. Dr. Roland Meyer"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma;2019-02-22T17:30:46Z;\"PolDiLemma\" Middle Polish Diachrone Lemmatised Corpus;Humboldt-Universit\u00e4t zu Berlin, Institut f\u00fcr Slawistik, Prof. Dr. Roland Meyer;corpus linguistics;historical linguistics;Middle Polish period;political texts;religious texts;historical texts;scientific texts;The PolDiLemma corpus is a diachronic corpus made of political, religious, scientific and historical texts from different authors of the Middle Polish period (16th-18th century). It contains in total ca. 7 million tokens.\nCharacteristic for this period is the slow development of a supra-regional standard language, a process of standardisation on the basis of the variety of the Polish nobility, under the influence of Latin and other foreign languages as well as different social or regional varieties. \nAll texts (free licenses) are gathered from Federacja Bibliotek Cyfrowych (Digital Library Federation). The Middle Polish texts illustrate the history of the language and give the opportunity to explore some first-hand evidence of the development of Polish in its historical context. \nStudying the history of the language is a way to familiarize oneself with aspects of the history of Poland in general. It also helps to build up valuable methodological knowledge in diachronic linguistics and philology.;Humboldt-Universit\u00e4t zu Berlin, Institut f\u00fcr Slawistik, Prof. Dr. Roland Meyer;2013/2014;Dataset;application/xml;clarind-uds:poldilemma;hdl:11858/00-246C-0000-0023-8C44-B;Federacja Bibliotek Cyfrowych;pol;deu;lat;ces;http://fbc.pionier.net.pl/owoc (Federacja Bibliotek Cyfrowych);1600/1800;Poland;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "45235093-17fd-5d5b-a714-4318084c641d",
+    "notes": [
+        "The PolDiLemma corpus is a diachronic corpus made of political, religious, scientific and historical texts from different authors of the Middle Polish period (16th-18th century). It contains in total ca. 7 million tokens.\nCharacteristic for this period is the slow development of a supra-regional standard language, a process of standardisation on the basis of the variety of the Polish nobility, under the influence of Latin and other foreign languages as well as different social or regional varieties. \nAll texts (free licenses) are gathered from Federacja Bibliotek Cyfrowych (Digital Library Federation). The Middle Polish texts illustrate the history of the language and give the opportunity to explore some first-hand evidence of the development of Polish in its historical context. \nStudying the history of the language is a way to familiarize oneself with aspects of the history of Poland in general. It also helps to build up valuable methodological knowledge in diachronic linguistics and philology."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus linguistics"
+        },
+        {
+            "name": "historical linguistics"
+        },
+        {
+            "name": "Middle Polish period"
+        },
+        {
+            "name": "political texts"
+        },
+        {
+            "name": "religious texts"
+        },
+        {
+            "name": "historical texts"
+        },
+        {
+            "name": "scientific texts"
+        }
+    ],
+    "title": [
+        "\"PolDiLemma\" Middle Polish Diachrone Lemmatised Corpus"
+    ],
+    "url": ""
+}

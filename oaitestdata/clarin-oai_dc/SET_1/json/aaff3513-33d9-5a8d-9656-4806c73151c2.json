@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4673",
+    "MetadataAccess": [
+        "oai:ota:oucs:4673"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hume, David, 1711-1776."
+    ],
+    "fulltext": "oai:ota:oucs:4673;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4673.xml;The history of England: from the invasion of Julius C\u00c3\u00a6sar to the accession of Henry VII. ... By David Hume, Esq. [pt.1];Hume, David, 1711-1776.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "aaff3513-33d9-5a8d-9656-4806c73151c2",
+    "oai_identifier": [
+        "oai:ota:oucs:4673"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The history of England: from the invasion of Julius C\u00c3\u00a6sar to the accession of Henry VII. ... By David Hume, Esq. [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4673.xml"
+}

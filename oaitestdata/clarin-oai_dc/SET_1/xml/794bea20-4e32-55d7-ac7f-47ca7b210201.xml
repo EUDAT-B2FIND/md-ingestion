@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/7</identifier>
+    <datestamp>2016-01-19T14:04:26Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Chunker WS</dc:title>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:description>Chunker-WS provides shallow parsing of Polish. The parser may be run against plain text (input format: text, then it runs WCRFT for tagging) or already tagged input (other input formats). Service output will contain tokenisation and tagging, but also boundaries of syntactic phrases as well as phrases' syntactic heads. The service is based on IOBBER, a chunker for Polish. The configuration used here operates on chunk definitions from the KPWr corpus.</dc:description>
+      <dc:date>2012-04-18</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/7</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://clarin-pl.eu/synat/ws/chunker/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

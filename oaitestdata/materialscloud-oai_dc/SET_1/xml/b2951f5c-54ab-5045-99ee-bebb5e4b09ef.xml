@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0027/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Guo, Zhendong</dc:creator>
+      <dc:creator>Ambrosio, Francesco</dc:creator>
+      <dc:creator>Pasquarello, Alfredo</dc:creator>
+      <dc:title>Extrinsic Defects in Amorphous Oxides: Hydrogen, Carbon, and Nitrogen Impurities in Alumina</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-05-30</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>extrinsic defects</dc:subject>
+      <dc:subject>Carbon</dc:subject>
+      <dc:subject>total charge</dc:subject>
+      <dc:subject>alumina</dc:subject>
+      <dc:subject>hydrogen</dc:subject>
+      <dc:subject>carbon</dc:subject>
+      <dc:subject>nitrogen</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0027/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0027/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>This entry provides the most stable defect configurations of hydrogen, carbon, and nitrogen impurities in alumina, which are identified through ab initio molecular dynamics in various charge states and structural relaxations with the PBE functional. The structural configurations related to carbon and nitrogen impurities are found to depend on the total charge set in the simulation cell.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

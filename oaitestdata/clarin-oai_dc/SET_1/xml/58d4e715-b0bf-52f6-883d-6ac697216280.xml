@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>dce1279e1c5d11e2a2aa782bcb074135fa867e60fcaa4d918f097c19a238d82b</identifier>
+    <datestamp>2018-11-15T16:39:44Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>GistSumm</dc:title>
+      <dc:description>GistSumm (GIST SUMMarizer) is a summarization tool for Portuguese. It uses the gist as a guideline to identify and select text segments to include in the final extract. Automatically produced extracts have been evaluated under the light of gist preservation and textuality.</dc:description>
+      <dc:date>2012-10-22</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

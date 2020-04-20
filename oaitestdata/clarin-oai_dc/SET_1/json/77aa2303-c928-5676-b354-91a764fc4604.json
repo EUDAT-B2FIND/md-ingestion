@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "ZRC SAZU"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1129",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1129"
+    ],
+    "PID": "http://hdl.handle.net/11356/1129",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "ZRC SAZU"
+    ],
+    "RelatedIdentifier": [
+        "http://www.dlib.si/v2/StreamFile.aspx?URN=URN:NBN:SI:doc-5POMCIZX&id=7b7d09a8-f0aa-4451-b292-960bac96b3da&type=PDF"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+        "https://creativecommons.org/licenses/by-nc/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Keber, Janez"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1129;2017-07-01T10:43:50Z;hdl_11356_1023;hdl_11356_1024;Dictionary of Slovenian Phrasemes;Keber, Janez;dictionary;phraseology;lexicography;The 3,002 entries of this dictionary cover the description and explanation of 13,125 Slovenian phrasemes. The use of phrasemes is represented by citations from lexical files built for the Dictionary of the Slovenian Standard Language as well as from the Nova beseda corpus and other resources. The entries also contain etymological information and equivalents in other languages.\r\n\r\nThis dictionary was published as a printed book:\r\nKeber, Janez. Slovar slovenskih frazemov. Ljubljana : Zalo\u017eba ZRC, ZRC SAZU, 2011. ISBN 978-961-254-329-7.;2011;lexicalConceptualResource;http://hdl.handle.net/11356/1129;slv;http://www.dlib.si/v2/StreamFile.aspx?URN=URN:NBN:SI:doc-5POMCIZX&id=7b7d09a8-f0aa-4451-b292-960bac96b3da&type=PDF;Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0);https://creativecommons.org/licenses/by-nc/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;ZRC SAZU;http://www.fran.si/192/janez-keber-frazeoloski-slovar-slovenskega-jezika",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "77aa2303-c928-5676-b354-91a764fc4604",
+    "notes": [
+        "The 3,002 entries of this dictionary cover the description and explanation of 13,125 Slovenian phrasemes. The use of phrasemes is represented by citations from lexical files built for the Dictionary of the Slovenian Standard Language as well as from the Nova beseda corpus and other resources. The entries also contain etymological information and equivalents in other languages.\r\n\r\nThis dictionary was published as a printed book:\r\nKeber, Janez. Slovar slovenskih frazemov. Ljubljana : Zalo\u017eba ZRC, ZRC SAZU, 2011. ISBN 978-961-254-329-7."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1129"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dictionary"
+        },
+        {
+            "name": "phraseology"
+        },
+        {
+            "name": "lexicography"
+        }
+    ],
+    "title": [
+        "Dictionary of Slovenian Phrasemes"
+    ],
+    "url": ""
+}

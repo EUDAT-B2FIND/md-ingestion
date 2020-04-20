@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Adam Mickiewicz University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 22",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/464",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/464"
+    ],
+    "PID": "http://hdl.handle.net/11321/464",
+    "PublicationTimestamp": "2018-04-13T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Adam Mickiewicz University"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "plWordNet",
+        "http://clarin-pl.eu/en/licenses/plwordnet-2/",
+        "PUB"
+    ],
+    "author": [
+        "Kasperek, Hanna"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/464;2018-04-13T07:56:05Z;hdl_11321_3;hdl_11321_4;Polish politics with linguistic background;Kasperek, Hanna;politician;MP;speech;Speeches by MPs with language background.;2018-04-13;corpus;http://hdl.handle.net/11321/464;Polish;plWordNet;http://clarin-pl.eu/en/licenses/plwordnet-2/;PUB;text/plain; charset=utf-8;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;downloadable_files_count: 22;Adam Mickiewicz University",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "10c8b771-350e-56bb-aa34-e77a7bc0f0b8",
+    "notes": [
+        "Speeches by MPs with language background."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/464"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "politician"
+        },
+        {
+            "name": "MP"
+        },
+        {
+            "name": "speech"
+        }
+    ],
+    "title": [
+        "Polish politics with linguistic background"
+    ],
+    "url": ""
+}

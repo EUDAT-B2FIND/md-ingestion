@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Dabrowska, Kaczkowski, Prus, Reymont, Sienkiewicz, Mniszek"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/plain",
+        "downloadable_files_count: 10"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/99",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/99"
+    ],
+    "PID": "http://hdl.handle.net/11321/99",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Dabrowska, Kaczkowski, Prus, Reymont, Sienkiewicz, Mniszek"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Dabrowska, Dabrowska, Kaczkowski, Prus, Reymont, Sienkiewicz, Mniszek Kaczkowski, Prus, Reymont, Sienkiewicz, Mniszek"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/99;2015-04-08T13:51:22Z;hdl_11321_3;hdl_11321_4;MWE 10 Najwi\u0119kszych;Dabrowska, Dabrowska, Kaczkowski, Prus, Reymont, Sienkiewicz, Mniszek Kaczkowski, Prus, Reymont, Sienkiewicz, Mniszek;dabrowska_nocednie3_1933.txt     \r\nprus_emancypantki_1894.txt  \r\nsienkiewicz_ogniem_1884.txt\r\nkaczkowski_grob_1857.txt         \r\nprus_faraon_1897.txt        \r\nsienkiewicz_rodzina_1894.txt\r\nkaczkowski_olbrachtowi_1889.txt  \r\nprus_lalka_1890.txt\r\nmniszek_gehenna_1914.txt        \r\nreymont_chlopi_1908.txt;2015-04-08;corpus;http://hdl.handle.net/11321/99;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain; charset=utf-8;downloadable_files_count: 10;Dabrowska, Kaczkowski, Prus, Reymont, Sienkiewicz, Mniszek",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "12b1b81a-eef1-57dc-a2cc-e6bc95f0c7a9",
+    "notes": [
+        "dabrowska_nocednie3_1933.txt     \r\nprus_emancypantki_1894.txt  \r\nsienkiewicz_ogniem_1884.txt\r\nkaczkowski_grob_1857.txt         \r\nprus_faraon_1897.txt        \r\nsienkiewicz_rodzina_1894.txt\r\nkaczkowski_olbrachtowi_1889.txt  \r\nprus_lalka_1890.txt\r\nmniszek_gehenna_1914.txt        \r\nreymont_chlopi_1908.txt"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/99"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE 10 Najwi\u0119kszych"
+    ],
+    "url": ""
+}

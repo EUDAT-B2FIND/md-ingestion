@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-75",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-75"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-75",
+    "PublicationTimestamp": "2012-09-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/248064"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Francesco Rubino"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-75;2018-12-05T08:39:50Z;hdl_000-c0-111_38;hdl_000-c0-111_49;Desr web service;Francesco Rubino;Dependency parser;Italian Language;Written language;Syntactic analysis;Desr is a web service that performs dependency parsing on Italian tokenised, part-of-speech tagged, morphologically analysed texts. The web service was originally deployed by CNR-ILC within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu) and implements the 2007 DeSR Parser [r4] code developed at the University of Pisa by Prof. Attardi and his group, and available at https://sourceforge.net/p/desr/code/HEAD/tree/branches. \r\nFor details on the tool and code please see http://desr.sourceforge.net and the scientific references therein.;2012-09-01;toolService;http://hdl.handle.net/20.500.11752/ILC-75;ita;info:eu-repo/grantAgreement/EC/FP7/248064;downloadable_files_count: 0;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.panacea-lr.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "58333b11-502e-5a0d-962d-237c6a4bec7c",
+    "notes": [
+        "Desr is a web service that performs dependency parsing on Italian tokenised, part-of-speech tagged, morphologically analysed texts. The web service was originally deployed by CNR-ILC within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu) and implements the 2007 DeSR Parser [r4] code developed at the University of Pisa by Prof. Attardi and his group, and available at https://sourceforge.net/p/desr/code/HEAD/tree/branches. \r\nFor details on the tool and code please see http://desr.sourceforge.net and the scientific references therein."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-75"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Dependency parser"
+        },
+        {
+            "name": "Italian Language"
+        },
+        {
+            "name": "Written language"
+        },
+        {
+            "name": "Syntactic analysis"
+        }
+    ],
+    "title": [
+        "Desr web service"
+    ],
+    "url": ""
+}

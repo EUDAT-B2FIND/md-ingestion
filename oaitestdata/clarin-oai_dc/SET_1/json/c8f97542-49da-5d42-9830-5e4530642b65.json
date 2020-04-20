@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "319 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1300",
+    "MetadataAccess": [
+        "oai:ota:oucs:1300"
+    ],
+    "PublicationTimestamp": "1760-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1760"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Letters"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Burney, Fanny,  1752-1840"
+    ],
+    "fulltext": "oai:ota:oucs:1300;2018-03-07T11:07:13Z;http://ota.ox.ac.uk/headers/1300.xml;Letters (selected) / compiled by Nigel Wood;Burney, Fanny,  1752-1840;1760-1784;text_and_corpus_linguistics;Letters -- Great Britain -- 18th century;eng;Oxford Text Archive, University of Oxford;319 KB;Text;Letters;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c8f97542-49da-5d42-9830-5e4530642b65",
+    "oai_identifier": [
+        "oai:ota:oucs:1300"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Letters -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Letters (selected) / compiled by Nigel Wood"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1300.xml"
+}

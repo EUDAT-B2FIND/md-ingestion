@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>34e4d1d6cf5e11e1a404080027e73ea2296e3e6e58204292a7dbc1b0aae74f85</identifier>
+    <datestamp>2019-02-27T12:09:06Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:lexicon</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Ontology for the area of Nanoscience and Nanotechnology</dc:title>
+      <dc:description>The Ontology for the area of Nanoscience and Nanotechnology (Ontologia para a &#195;&#161;rea de Nanoci&#195;&#170;ncia e Nanotecnologia) is constituted by 511 terms of this field of knowledge. It was extracted from a corpus collected from the Web, with a total of 2.570.792 words</dc:description>
+      <dc:date>2012-07-16</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

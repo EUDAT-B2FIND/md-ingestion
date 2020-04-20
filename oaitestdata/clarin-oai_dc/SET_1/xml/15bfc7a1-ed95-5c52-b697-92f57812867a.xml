@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/503</identifier>
+    <datestamp>2018-06-19T12:49:04Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Komentarze do filmu YT "b&#243;jka w s&#261;dzie okr&#281;gowym" testowe</dc:title>
+      <dc:creator>Jastrz&#281;bski, Wojciech</dc:creator>
+      <dc:subject>komentarze internetowe</dc:subject>
+      <dc:description>Testowe komentarze do filmu "b&#243;jka w s&#261;dzie okr&#281;gowym" https://www.youtube.com/watch?v=PjToTi5S6Do&#13;
+komentarze 1 "like" i wi&#281;cej, d&#322;u&#380;sze ni&#380; 100 znak&#243;w</dc:description>
+      <dc:date>2016</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/503</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Super Cool License</dc:rights>
+      <dc:rights>http://www.google.com</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Wojciech Jastrz&#281;bski</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

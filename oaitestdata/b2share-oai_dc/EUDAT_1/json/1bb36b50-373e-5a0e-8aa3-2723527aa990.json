@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "https://b2share.eudat.eu"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/25b1dbfff95d411ca325e4de6a9e7867",
+    "PID": "http://hdl.handle.net/11304/135eb282-ad16-11e4-ac7e-860aa0063d1f",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "https://b2share.eudat.eu"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/135eb282-ad16-11e4-ac7e-860aa0063d1f",
+        "https://b2share.eudat.eu/api/records/25b1dbfff95d411ca325e4de6a9e7867",
+        "oai:b2share.eudat.eu:b2rec/25b1dbfff95d411ca325e4de6a9e7867"
+    ],
+    "ResourceType": [
+        "Other"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "GNU General Public License 3 (GPL-3.0)"
+    ],
+    "author": [
+        "St\u00e9phane COUTIN"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/25b1dbfff95d411ca325e4de6a9e7867;2018-01-11T13:48:12Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;St\u00e9phane COUTIN;2016-12-22T10:11:18.594471+00:00;B2SAFE repository package is a set of software application and components. It provides an easy to deploy interface for a data repository to replicate its data objects into EUDAT B2SAFE.\nIn the zip file, you will find the runnable jar program and the product documentation.\nSome further information and the source files are available on github at http://eudat-b2safe.github.io/B2SAFE-repository-package/;http://hdl.handle.net/11304/135eb282-ad16-11e4-ac7e-860aa0063d1f;https://b2share.eudat.eu/api/records/25b1dbfff95d411ca325e4de6a9e7867;oai:b2share.eudat.eu:b2rec/25b1dbfff95d411ca325e4de6a9e7867;en;https://b2share.eudat.eu;info:eu-repo/semantics/openAccess;GNU General Public License 3 (GPL-3.0);B2SAFE;software;interface;repository package;B2SAFE repository package client application;Other",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "1bb36b50-373e-5a0e-8aa3-2723527aa990",
+    "notes": [
+        "B2SAFE repository package is a set of software application and components. It provides an easy to deploy interface for a data repository to replicate its data objects into EUDAT B2SAFE.\nIn the zip file, you will find the runnable jar program and the product documentation.\nSome further information and the source files are available on github at http://eudat-b2safe.github.io/B2SAFE-repository-package/"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/25b1dbfff95d411ca325e4de6a9e7867"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "BSAFE"
+        },
+        {
+            "name": "software"
+        },
+        {
+            "name": "interface"
+        },
+        {
+            "name": "repository package"
+        }
+    ],
+    "title": [
+        "B2SAFE repository package client application"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/25b1dbfff95d411ca325e4de6a9e7867"
+}

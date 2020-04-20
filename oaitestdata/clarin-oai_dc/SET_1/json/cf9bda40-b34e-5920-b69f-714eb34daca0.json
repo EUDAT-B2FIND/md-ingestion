@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Dabrowska"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/102",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/102"
+    ],
+    "PID": "http://hdl.handle.net/11321/102",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Dabrowska"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Dabrowska, Dabrowska"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/102;2015-04-08T14:04:43Z;hdl_11321_3;hdl_11321_4;MWE Dabrowska, Noce i dnie, Tom 3;Dabrowska, Dabrowska;Dabrowska;2015-04-08;corpus;http://hdl.handle.net/11321/102;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain; charset=utf-8;downloadable_files_count: 1;Dabrowska",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cf9bda40-b34e-5920-b69f-714eb34daca0",
+    "notes": [
+        "Dabrowska"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/102"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE Dabrowska, Noce i dnie, Tom 3"
+    ],
+    "url": ""
+}

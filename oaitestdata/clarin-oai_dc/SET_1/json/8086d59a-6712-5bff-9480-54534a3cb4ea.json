@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3584",
+    "MetadataAccess": [
+        "oai:ota:oucs:3584"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Brown, John, 1715-1766."
+    ],
+    "fulltext": "oai:ota:oucs:3584;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3584.xml;An additional dialogue of the dead, between Pericles and Aristides: being a sequel to the dialogue between Pericles and Cosmo;Brown, John, 1715-1766.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8086d59a-6712-5bff-9480-54534a3cb4ea",
+    "oai_identifier": [
+        "oai:ota:oucs:3584"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An additional dialogue of the dead, between Pericles and Aristides: being a sequel to the dialogue between Pericles and Cosmo"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3584.xml"
+}

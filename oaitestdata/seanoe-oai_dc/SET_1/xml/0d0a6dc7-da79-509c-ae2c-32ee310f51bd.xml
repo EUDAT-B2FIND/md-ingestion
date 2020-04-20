@@ -1,0 +1,43 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:seanoe.org:47157</identifier>
+    <datestamp>2019-03-29</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>REMI dataset : the French microbiological monitoring program of mollusc harvesting areas</dc:title>
+      <dc:creator>Piquet, Jean-come</dc:creator>
+      <dc:creator>Boulben, Sylviane</dc:creator>
+      <dc:creator>Cheve, Julien</dc:creator>
+      <dc:creator>Derrien, Annick</dc:creator>
+      <dc:creator>Lamort, Laure</dc:creator>
+      <dc:creator>Marco-miralles, Francoise</dc:creator>
+      <dc:creator>Marzin, Anahita</dc:creator>
+      <dc:creator>Meteigner, Claire</dc:creator>
+      <dc:creator>Morin, Dimitri</dc:creator>
+      <dc:creator>Orsoni, Valerie</dc:creator>
+      <dc:creator>Treguier, Cathy</dc:creator>
+      <dc:creator>Verin, Francoise</dc:creator>
+      <dc:creator>Amouroux, Isabelle</dc:creator>
+      <dc:creator>Catherine, Martial</dc:creator>
+      <dc:creator>Miossec, Laurence</dc:creator>
+      <dc:description>Long-term time series of coliform bacteria concentration (fecal coliform or Escherichia coli) in shellfish in four submarine areas (North Sea/Channel, Britany, Atlantic, Mediterranean).
+</dc:description>
+      <dc:publisher>SEANOE</dc:publisher>
+      <dc:date>2019-03</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>DOI:10.17882/47157</dc:identifier>
+      <dc:identifier>http://dx.doi.org/10.17882/47157</dc:identifier>
+      <dc:coverage>North 44.62949, South 41.97574, East 8.139423, West 1.855243</dc:coverage>
+      <dc:coverage>North 49.286306, South 47.47698, East -2.460937, West -5.800781</dc:coverage>
+      <dc:coverage>North 47.238826, South 43.185804, East -0.527344, West -2.636719</dc:coverage>
+      <dc:coverage>North 51.086834, South 48.477155, East 2.592773, West -2.241211</dc:coverage>
+      <dct:references>https://www.seanoe.org/data/00360/47157/illustration.gif</dct:references>
+      <dcterms:spatial xsi:type="DCTERMS:Box">41.97574 1.855243 44.62949 8.139423</dcterms:spatial>
+      <dcterms:spatial xsi:type="DCTERMS:Box">47.47698 -5.800781 49.286306 -2.460937</dcterms:spatial>
+      <dcterms:spatial xsi:type="DCTERMS:Box">43.185804 -2.636719 47.238826 -0.527344</dcterms:spatial>
+      <dcterms:spatial xsi:type="DCTERMS:Box">48.477155 -2.241211 51.086834 2.592773</dcterms:spatial>
+      <dc:rights>CC-BY</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

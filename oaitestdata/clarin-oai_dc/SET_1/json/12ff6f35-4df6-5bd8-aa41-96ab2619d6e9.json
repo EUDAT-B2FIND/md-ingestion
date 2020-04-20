@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-C7FD-6",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-C7FD-6"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0022-C7FD-6",
+    "PublicationTimestamp": "2013-09-10T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Artistic License (Perl) 1.0",
+        "http://opensource.org/licenses/Artistic-Perl-1.0",
+        "PUB"
+    ],
+    "author": [
+        "Sedl\u00e1k, Michal"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-C7FD-6;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;PMLTQ::Web;Sedl\u00e1k, Michal;Perl;PML-TQ;PML;Simple web build on the top of the PML Tree Query service.;2013-09-10;toolService;http://hdl.handle.net/11858/00-097C-0000-0022-C7FD-6;Artistic License (Perl) 1.0;http://opensource.org/licenses/Artistic-Perl-1.0;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://redmine.ms.mff.cuni.cz/projects/pmltq-web",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "12ff6f35-4df6-5bd8-aa41-96ab2619d6e9",
+    "notes": [
+        "Simple web build on the top of the PML Tree Query service."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-C7FD-6"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Perl"
+        },
+        {
+            "name": "PML-TQ"
+        },
+        {
+            "name": "PML"
+        }
+    ],
+    "title": [
+        "PMLTQ::Web"
+    ],
+    "url": ""
+}

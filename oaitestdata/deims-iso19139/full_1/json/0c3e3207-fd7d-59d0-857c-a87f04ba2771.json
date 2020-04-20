@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "wipf@slf.ch"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "Research site"
+    ],
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0c3e3207-fd7d-59d0-857c-a87f04ba2771",
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(47N,10E)",
+    "author": [
+        "Sonja Wipf"
+    ],
+    "fulltext": "782a17c9-d0fd-4540-b86a-8149bcd5f54e;English;utf8;dataset;Research site;Sonja Wipf;LTER Europe;wipf@slf.ch;WSL Institute for Snow and Avalanche Research SLF Davos Dorf 7260 CH;Sonja Wipf;LTER Europe;wipf@slf.ch;WSL Institute for Snow and Avalanche Research SLF Davos Dorf 7260 CH;Sonja Wipf;LTER Europe;wipf@slf.ch;WSL Institute for Snow and Avalanche Research SLF Davos Dorf 7260 CH;2018-09-24;http://www.opengis.net/def/crs/EPSG/0/4326;CH-SN2-MCS;https://deims.org/site/782a17c9-d0fd-4540-b86a-8149bcd5f54e;Lowest monitoring summit of the CH-SN2 target region near the Swiss National Park.;The original metadata record was created using DEIMS-SDR, the Dynamic Ecological Information Management System - Site and dataset registry;Sonja Wipf;LTER Europe;wipf@slf.ch;WSL Institute for Snow and Avalanche Research SLF Davos Dorf 7260 CH;Sonja Wipf;LTER Europe;wipf@slf.ch;WSL Institute for Snow and Avalanche Research SLF Davos Dorf 7260 CH;Sonja Wipf;LTER Europe;wipf@slf.ch;WSL Institute for Snow and Avalanche Research SLF Davos Dorf 7260 CH;site;emf2iso_pointer_record;continuousDataCollection;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;English;environment;10.428530000000;10.428530000000;46.735490000000;46.735490000000;2003-01-01;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='782a17c9-d0fd-4540-b86a-8149bcd5f54e'&outputFormat=SHAPE-ZIP;WFS GetFeature request for downloading the data set in SHP format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='782a17c9-d0fd-4540-b86a-8149bcd5f54e'&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2;WFS GetFeature request for downloading the data set in GML 3.2 format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='782a17c9-d0fd-4540-b86a-8149bcd5f54e'&outputFormat=application%2Fjson;WFS GetFeature request for downloading the data set in GeoJSON format;https://deims.org/node/248;Switzerland (LTER-Switzerland);COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;This data set is conformant with the INSPIRE Implementing Rules for the interoperability of spatial data sets and services;false;Dataset has been created by data transformation from the original record collected by the site managers using DEIMS site metadata editing form.",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0c3e3207-fd7d-59d0-857c-a87f04ba2771",
+    "notes": [
+        "Lowest monitoring summit of the CH-SN2 target region near the Swiss National Park."
+    ],
+    "oai_identifier": [
+        "0c3e3207-fd7d-59d0-857c-a87f04ba2771"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[10.428530000000,46.735490000000],[10.428530000000,46.735490000000],[10.428530000000,46.735490000000],[10.428530000000,46.735490000000],[10.428530000000,46.735490000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "site"
+        },
+        {
+            "name": "emfiso_pointer_record"
+        },
+        {
+            "name": "Environmental monitoring facilities"
+        }
+    ],
+    "title": [
+        "CH-SN2-MCS"
+    ],
+    "url": "https://deims.org/node/248"
+}

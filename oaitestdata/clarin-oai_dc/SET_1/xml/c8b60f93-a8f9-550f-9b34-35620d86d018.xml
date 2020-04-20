@@ -1,0 +1,73 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/LRT-1483</identifier>
+    <datestamp>2016-04-06T16:39:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Word representations for multiple languages</dc:title>
+      <dc:creator>M&#252;ller, Thomas</dc:creator>
+      <dc:creator>Sch&#252;tze, Hinrich</dc:creator>
+      <dc:subject>morphological dictionary</dc:subject>
+      <dc:subject>morphological analysis</dc:subject>
+      <dc:subject>PoS tagging</dc:subject>
+      <dc:description>Dictionaries with different representations for various languages. Representations include brown clusters of different sizes and morphological dictionaries extracted using different morphological analyzers. All representations cover the most frequent 250,000 word types on the Wikipedia version of the respective language.&#13;
+&#13;
+Analzers used: MAGYARLANC (Hungarian, Zsibrita et al. (2013)), FREELING (English and Spanish, Padro and Stanilovsky (2012)), SMOR (German, Schmid et al. (2004)), an MA from Charles University (Czech, Hajic (2001)) and LATMOR (Latin, Springmann et al. (2014)).</dc:description>
+      <dc:date>2015-03-01</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/LRT-1483</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 36</dc:format>
+      <dc:publisher>Center for Information and Language Processing, University of Munich</dc:publisher>
+      <dc:source>http://cistern.cis.lmu.de/marmot/naacl2015/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3883",
+    "MetadataAccess": [
+        "oai:ota:oucs:3883"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Jephson, Robert, 1736-1803."
+    ],
+    "fulltext": "oai:ota:oucs:3883;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3883.xml;Conspiracy, a tragedy. By R. Jephson, Esq;Jephson, Robert, 1736-1803.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6ac05cd9-aa10-5ff9-bc44-8fb63bd55f2c",
+    "oai_identifier": [
+        "oai:ota:oucs:3883"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Conspiracy, a tragedy. By R. Jephson, Esq"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3883.xml"
+}

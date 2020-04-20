@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Survey of English Usage, University College London"
+    ],
+    "Contributor": [
+        "Aarts, Gas"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-900",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-900"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-900",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Survey of English Usage, University College London"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-900;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Diachronic Corpus of Present-Day Spoken English (DCPSE);Aarts, Gas;A parsed corpus of spoken English. Ca 400,000 words from ICE-GB (early 1990s) and 400,000 words from the London-Lund Corpus (late 1960s-early 1980s). The orthographic transcriptions have been normalised and annotated.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-900;eng;downloadable_files_count: 0;United Kingdom;Survey of English Usage, University College London;http://www.ucl.ac.uk/english-usage/projects/dcpse/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2081fa58-b80a-598c-a874-29f131b4984a",
+    "notes": [
+        "A parsed corpus of spoken English. Ca 400,000 words from ICE-GB (early 1990s) and 400,000 words from the London-Lund Corpus (late 1960s-early 1980s). The orthographic transcriptions have been normalised and annotated."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-900"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Diachronic Corpus of Present-Day Spoken English (DCPSE)"
+    ],
+    "url": ""
+}

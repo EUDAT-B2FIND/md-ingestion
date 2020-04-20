@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 99 KB)"
+    ],
+    "Language": [
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0369",
+    "MetadataAccess": [
+        "oai:ota:oucs:0369"
+    ],
+    "PublicationYear": [
+        "384-385"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Addresses"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Symmachus, Quintus Aurelius, d. 405"
+    ],
+    "fulltext": "oai:ota:oucs:0369;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0369.xml;Relationes / Symmachus;Relations;Symmachus, Quintus Aurelius, d. 405;384-385;text_and_corpus_linguistics;Speeches, addresses, etc., Latin -- 4th century;lat;Oxford Text Archive, University of Oxford;(1 file : ca. 99 KB);Text;Addresses;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "142565e3-d8d0-5600-aa9f-31f0fb409fe8",
+    "oai_identifier": [
+        "oai:ota:oucs:0369"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Speeches"
+        },
+        {
+            "name": "addresses"
+        },
+        {
+            "name": "etc."
+        },
+        {
+            "name": "Latin -- th century"
+        }
+    ],
+    "title": [
+        "Relationes / Symmachus",
+        "Relations"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0369.xml"
+}

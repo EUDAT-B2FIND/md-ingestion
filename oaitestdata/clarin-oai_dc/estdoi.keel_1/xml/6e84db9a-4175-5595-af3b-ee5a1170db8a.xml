@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17968157</identifier>
+    <datestamp>2019-04-12T17:25:51Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Statistilise masint&#245;lke mudelid</dc:title>
+      <dc:creator>Fi&#353;el, Mark</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-08</dc:date>
+      <dc:date>Updated: 2019-01-08</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00192L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The models represented here are statistical phrase-based translation models. In parallel we are testing the various neural MT approaches, but for now the most usable baseline in terms of industrial collaborations is statistical.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

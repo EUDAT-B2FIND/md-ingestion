@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00170L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17940281",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17940281"
+    ],
+    "PublicationTimestamp": "2019-01-02T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:17940281;2019-04-11T17:37:07Z;ESTDOI;ESTDOI.KEEL;Eesti keele Kitsenduste Grammatika reeglid 1.0;Muischnek, Kadri;Center of Estonian Language Resources;2019;Issued: 2019-01-02;Updated: 2019-01-02;doi:10.15155/1-00-0000-0000-0000-00170L;Abstract;S\u00fcntaktilise anal\u00fc\u00fcsi jaoks on vajalik\n\n eesti keele morfoloogiline anal\u00fcsaator, nt Vabamorf: https://github.com/Filosoft/vabamorf/blob/master/doc/readme.html Et Vabamorfi automaatselt kasutada, on vaja failis test.sh paika panna installeeritud Vabamorfi programmi ja s\u00f5nastiku teed.\nVISL CG3 Kitsenduste Grammatika anal\u00fcsaator: http://beta.visl.sdu.dk/constraint_grammar.html. Grammatikad \u00fchilduvad VISL CG3 versiooniga 0.9.9.10379.\nReeglite failid ja skriptid moodulite \u00fchendamiseks.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7f5add65-2c4a-518e-99d4-d18f1a3e817a",
+    "notes": [
+        "Abstract",
+        "S\u00fcntaktilise anal\u00fc\u00fcsi jaoks on vajalik\n\n eesti keele morfoloogiline anal\u00fcsaator, nt Vabamorf: https://github.com/Filosoft/vabamorf/blob/master/doc/readme.html Et Vabamorfi automaatselt kasutada, on vaja failis test.sh paika panna installeeritud Vabamorfi programmi ja s\u00f5nastiku teed.\nVISL CG3 Kitsenduste Grammatika anal\u00fcsaator: http://beta.visl.sdu.dk/constraint_grammar.html. Grammatikad \u00fchilduvad VISL CG3 versiooniga 0.9.9.10379.\nReeglite failid ja skriptid moodulite \u00fchendamiseks."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17940281"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti keele Kitsenduste Grammatika reeglid 1.0"
+    ],
+    "url": ""
+}

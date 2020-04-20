@@ -1,4 +1,13 @@
 ## CHANGES 
+###Current (2020-03-26)
+* updated README.md (#10)
+* added old, but working slks-ff-mapfile (#13)
+* added slks-dc mapfile and updated harvest_list. Added "Archaeology" to B2FIND disciplines.json. (#12) 
+
+###1.2.0 (2020-02-27)
+* Converted B2FIND code from Python 2.7 to Python 3.6 (#9)
+* updated harvest_list with ESS, DaRUS and Uni Maribor
+* new mapfile for Uni Maribor
 
 ###1.1.0 (2020-02-26)
 Integration work for (#7)

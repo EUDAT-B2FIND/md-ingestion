@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2603",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2603"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2603",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://ceur-ws.org/Vol-1779/02bejeck.pdf"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bej\u010dek, Eduard"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2603;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Verbal MWEs;Bej\u010dek, Eduard;lexicon;verbs;multiword expressions;forms;lemmatization;Lexicon of Czech verbal multiword expressions (VMWEs) used in Parseme Shared Task 2017. https://typo.uni-konstanz.de/parseme/index.php/2-general/142-parseme-shared-task-on-automatic-detection-of-verbal-mwes\r\n\r\nLexicon consists of 4785 VMWEs, categorized into four categories according to Parseme Shared Task (PST) typology: IReflV (inherently reflexive verbs), LVC (light verb constructions), ID (idiomatic expressions) and OTH (other VMWEs with other than verbal syntactic head).\r\n\r\nVerbal multiword expressions as well as deverbative variants of VMWEs were annotated during the preparation phase of PST. These data were published as http://hdl.handle.net/11372/LRT-2282. Czech part includes 14,536 VMWE occurences:\r\n   1611 ID\r\n  10000 IReflV\r\n   2923 LVC\r\n      2 OTH\r\n This lexicon was created out of Czech data. Each lexicon entry is represented by one line in the form:\r\n\r\ntype     lemmas     frequency     PoS    [used form 1; used form 2; ... ]\r\n\r\n(columns are separated by tabs) where:\r\n type ... is the type of VMWE in PST typology\r\n lemmas ... are space separated lemmatized forms of all words that constitutes the VMWE\r\n frequency ... is the absolute frequency of this item in PST data\r\n PoS ... is a space separated list of parts of speech of individual words (in the same order as in \"lemmas\")\r\n final field contains a list of all (1 to 18) used forms found in the data (since Czech is a flective language).;2017;lexicalConceptualResource;http://hdl.handle.net/11234/1-2603;ces;http://ceur-ws.org/Vol-1779/02bejeck.pdf;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3225dd69-04b0-50f8-a892-b7380c312d36",
+    "notes": [
+        "Lexicon of Czech verbal multiword expressions (VMWEs) used in Parseme Shared Task 2017. https://typo.uni-konstanz.de/parseme/index.php/2-general/142-parseme-shared-task-on-automatic-detection-of-verbal-mwes\r\n\r\nLexicon consists of 4785 VMWEs, categorized into four categories according to Parseme Shared Task (PST) typology: IReflV (inherently reflexive verbs), LVC (light verb constructions), ID (idiomatic expressions) and OTH (other VMWEs with other than verbal syntactic head).\r\n\r\nVerbal multiword expressions as well as deverbative variants of VMWEs were annotated during the preparation phase of PST. These data were published as http://hdl.handle.net/11372/LRT-2282. Czech part includes 14,536 VMWE occurences:\r\n   1611 ID\r\n  10000 IReflV\r\n   2923 LVC\r\n      2 OTH\r\n This lexicon was created out of Czech data. Each lexicon entry is represented by one line in the form:\r\n\r\ntype     lemmas     frequency     PoS    [used form 1; used form 2; ... ]\r\n\r\n(columns are separated by tabs) where:\r\n type ... is the type of VMWE in PST typology\r\n lemmas ... are space separated lemmatized forms of all words that constitutes the VMWE\r\n frequency ... is the absolute frequency of this item in PST data\r\n PoS ... is a space separated list of parts of speech of individual words (in the same order as in \"lemmas\")\r\n final field contains a list of all (1 to 18) used forms found in the data (since Czech is a flective language)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2603"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "lexicon"
+        },
+        {
+            "name": "verbs"
+        },
+        {
+            "name": "multiword expressions"
+        },
+        {
+            "name": "forms"
+        },
+        {
+            "name": "lemmatization"
+        }
+    ],
+    "title": [
+        "Czech Verbal MWEs"
+    ],
+    "url": ""
+}

@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5388",
+    "MetadataAccess": [
+        "oai:ota:oucs:5388"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "More, Hannah, 1745-1833."
+    ],
+    "fulltext": "oai:ota:oucs:5388;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5388.xml;John the shopkeeper turned sailor; Part III;Shopkeeper turned sailor.;More, Hannah, 1745-1833.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "947fa908-2675-5ebc-a04b-4dc7109d0ff5",
+    "oai_identifier": [
+        "oai:ota:oucs:5388"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "John the shopkeeper turned sailor; Part III",
+        "Shopkeeper turned sailor."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5388.xml"
+}

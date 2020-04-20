@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6341",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6341"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6341;2018-09-05T10:38:51Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2017.019;Trippetta, Fabio;Fabio;Trippetta;0000-0001-8336-2194;Dipartimento di Scienze della Terra, Sapienza Universit\u00e0 di Roma;Carpenter, Brett M;Brett M;Carpenter;0000-0002-3451-2528;School of Geology and Geophysics, University of Oklahoma, Norman, OK, USA;Mollo, Silvio;Silvio;Mollo;0000-0002-1448-0282;Istituto Nazionale di Geofisica e Vulcanologia, Roma, Italy;Scuderi, Marco M.;Marco M.;Scuderi;0000-0001-5232-0792;Dipartimento di Scienze della Terra, Sapienza Universit\u00e0 di Roma;Scarlato, Piergiorgio;Piergiorgio;Scarlato;0000-0003-1933-0192;Istituto Nazionale di Geofisica e Vulcanologia, Roma, Italy;Collettini, Cristiano;Cristiano;Collettini;0000-0002-4828-2516;Dipartimento di Scienze della Terra, Sapienza Universit\u00e0 di Roma;Dataset of Physical and Transport Property Variations Within the Carbonate-Bearing Fault Zones of the Monte Maggio Fault (Central Italy);GFZ Data Services;2017;Sesmic Waves;Carbonates;Permeability;Physical properties;Elastic properties;Borehole sonic logs;Vp;Vs;Vp/Vs Ratio;Critical Rupture Length;EPOS;Multi-scale laboratories;rock and melt physical properties;Trippetta, Fabio;Fabio;Trippetta;0000-0001-8336-2194;Dipartimento di Scienze della Terra, Sapienza Universit\u00e0 di Roma;Trippetta, Fabio;Fabio;Trippetta;0000-0001-8336-2194;Dipartimento di Scienze della Terra, Sapienza Universit\u00e0 di Roma;Trippetta, Fabio;Fabio;Trippetta;0000-0001-8336-2194;Dipartimento di Scienze della Terra, Sapienza Universit\u00e0 di Roma;Trippetta, Fabio;Fabio;Trippetta;0000-0001-8336-2194;Dipartimento di Scienze della Terra, Sapienza Universit\u00e0 di Roma;HP-HT Laboratory of Experimental Volcanolgy and Geophysics (INGV, Italy);INGV, Italy;2017-11-03;en;10.1002/2017GC007097;10.1029/2011JB008352;19556 Bytes;1 Files;application/x-zip-compressed;CC BY 4.0;Here we report the raw data of the physical properties of carbonate samples collected along the Monte Maggio normal Fault (MMF), a regional structure (length ~10 km and displacement ~500 m) located within the active system of the Apennines (Italy). In particular, we report results coming from large cores (100 mm in diameter and up to 20 cm long) drilled perpendicular to the fault plane made of Calcare Massiccio (massive limestone) and Bugarone fm (limestone with 8.3 % of clay). ;12.927989959716797;12.952194213867188;42.75823057701311;42.781543233362996;Sapienza Universit\u00e0 di Roma;http://doi.org/10.13039/501100004271;From small to large, to very large: a multiscale study of the influence of fractures on physical properties of carbonate rocks",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "8eefde9f-e2fd-5eeb-8747-1cfff9a569f7",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6341"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

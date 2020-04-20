@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Dell, Thomas"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 428 KB)",
+        "text/plain"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1948",
+    "MetadataAccess": [
+        "oai:ota:oucs:1948"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lewis, Sinclair, 1885-1951"
+    ],
+    "fulltext": "oai:ota:oucs:1948;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1948.xml;Our Mr. Wrenn : the romantic adventures of a gentle man / Sinclair Lewis;Lewis, Sinclair, 1885-1951;text_and_corpus_linguistics;American fiction -- 20th century;Oxford Text Archive, University of Oxford;Dell, Thomas;text/plain;(1 file : ca. 428 KB);Text;Novels;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6b2621a9-93db-514e-896f-2f076da10abd",
+    "oai_identifier": [
+        "oai:ota:oucs:1948"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American fiction -- th century"
+        }
+    ],
+    "title": [
+        "Our Mr. Wrenn : the romantic adventures of a gentle man / Sinclair Lewis"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1948.xml"
+}

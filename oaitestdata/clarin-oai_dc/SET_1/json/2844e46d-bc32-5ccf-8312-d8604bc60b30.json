@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "National Library of Latvia"
+    ],
+    "Contributor": [
+        "Gr\u012bnfelde, Inga"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German",
+        "Latvian",
+        "Russian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-856",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-856"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-856",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "National Library of Latvia"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Latvia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-856;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Latvian National Digital Library \u201cLetonica\u201d;Gr\u012bnfelde, Inga;Its aim is to ensure digitising the collections of the National Library of Latvia and other similar organisations, by making them accessible on the Internet. The creation of the digital library lays the foundation for uniform principles of processing, storing the digitised materials and ensuring access to them.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-856;deu;lav;rus;downloadable_files_count: 0;Latvia;National Library of Latvia;http://www.lnb.lv/lv/digitala-biblioteka",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2844e46d-bc32-5ccf-8312-d8604bc60b30",
+    "notes": [
+        "Its aim is to ensure digitising the collections of the National Library of Latvia and other similar organisations, by making them accessible on the Internet. The creation of the digital library lays the foundation for uniform principles of processing, storing the digitised materials and ensuring access to them."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-856"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Latvian National Digital Library \u201cLetonica\u201d"
+    ],
+    "url": ""
+}

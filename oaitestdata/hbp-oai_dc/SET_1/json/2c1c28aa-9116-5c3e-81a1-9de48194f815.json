@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Calabrese, Evan",
+        "Leergaard, Trygve B.",
+        "Johnson, G. Allan",
+        "Papp, Eszter A.",
+        "Bjaalie, Jan G."
+    ],
+    "DOI": "http://dx.doi.org/10.25493/DTSG-ZBS",
+    "DiscHierarchy": [
+        "3.2.1.5",
+        "Microbiology, Virology and Immunology",
+        "Immunology"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "NIFTI"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_DTSG-ZBS",
+    "MetadataAccess": [
+        "10.25493_DTSG-ZBS"
+    ],
+    "PublicationTimestamp": "2019-09-20T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1016/j.neuroimage.2014.10.017",
+        "https://doi.org/10.1016/j.neuroimage.2014.04.001"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Johnson, G. Allan"
+    ],
+    "fulltext": "10.25493_DTSG-ZBS;2019-12-10T12:41:57Z;https://doi.org/10.25493/DTSG-ZBS;Microscopic resolution diffusion magnetic resonance images of a normal adult Sprague Dawley rat brain;2019-09-20T08:19:41.837Z;Anatomical reference volume of a normal adult male Sprague Dawley rat brain, consisting of high resolution, contrast enhanced, structural magnetic resonance images (sMRI; 39 \u03bcm isotropic voxels) and diffusion tensor images (DTI, 78 \u03bcm isotropic voxels). Version 1.01 features a standardized orientation of the volumetric datasets according to NIfTI-1 format defaults, allowing users to read Waxholm Space coordinates directly from the data volume using publicly available software (e.g. ITK-SNAP and MBAT). For details, see \u201cRelease notes v1.01\u201d.\n\nThe dataset is hosted on [NITRC.org](https://www.nitrc.org/frs/?group_id=1081) and includes: \n* [ T<sub>2</sub><sup>*</sup>-weighted gradient echo image](https://www.nitrc.org/frs/download.php/9423/WHS_SD_rat_T2star_v1.01.nii.gz \"Download T2*-weighted gradient echo image from NITRC\") at 39 \u03bcm original resolution (1024x512x512 voxels)\n* [Apparent Diffusion Coefficient (ADC) map](https://www.nitrc.org/frs/download.php/9430/WHS_SD_rat_ADC_v1.01.nii.gz \"Download Apparent Diffusion Coefficient (ADC) map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [DTI b0 image](https://www.nitrc.org/frs/download.php/9431/WHS_SD_rat_DTI_512_v1.01.zip \"Download DTI b0 image from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [Diffusion weighted image map](https://www.nitrc.org/frs/download.php/9429/WHS_SD_rat_DWI_v1.01.nii.gz \"Download Diffusion weighted image map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [Fractional Anisotropy (FA) map](https://www.nitrc.org/frs/download.php/9428/WHS_SD_rat_FA_v1.01.nii.gz \"Download Fractional Anisotropy (FA) map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [Color FA map](https://www.nitrc.org/frs/download.php/9424/WHS_SD_rat_FA_color_v1.01.nii.gz \"Download Color FA map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels), combining the FA and primary eigenvector to 24-bit color RGB where intensity is given by relative FA value and color is assigned to directions (RGB to xyz respectively)\n;neuroscience;Structural brain imaging;english;dataset;The Human Brain Project;Papp, Eszter A.;Leergaard, Trygve B.;Calabrese, Evan;Johnson, G. Allan;Bjaalie, Jan G.;Johnson, G. Allan;NIFTI;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.1016/j.neuroimage.2014.10.017;https://doi.org/10.1016/j.neuroimage.2014.04.001",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "2c1c28aa-9116-5c3e-81a1-9de48194f815",
+    "notes": [
+        "Anatomical reference volume of a normal adult male Sprague Dawley rat brain, consisting of high resolution, contrast enhanced, structural magnetic resonance images (sMRI; 39 \u03bcm isotropic voxels) and diffusion tensor images (DTI, 78 \u03bcm isotropic voxels). Version 1.01 features a standardized orientation of the volumetric datasets according to NIfTI-1 format defaults, allowing users to read Waxholm Space coordinates directly from the data volume using publicly available software (e.g. ITK-SNAP and MBAT). For details, see \u201cRelease notes v1.01\u201d.\n\nThe dataset is hosted on [NITRC.org](https://www.nitrc.org/frs/?group_id=1081) and includes: \n* [ T<sub>2</sub><sup>*</sup>-weighted gradient echo image](https://www.nitrc.org/frs/download.php/9423/WHS_SD_rat_T2star_v1.01.nii.gz \"Download T2*-weighted gradient echo image from NITRC\") at 39 \u03bcm original resolution (1024x512x512 voxels)\n* [Apparent Diffusion Coefficient (ADC) map](https://www.nitrc.org/frs/download.php/9430/WHS_SD_rat_ADC_v1.01.nii.gz \"Download Apparent Diffusion Coefficient (ADC) map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [DTI b0 image](https://www.nitrc.org/frs/download.php/9431/WHS_SD_rat_DTI_512_v1.01.zip \"Download DTI b0 image from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [Diffusion weighted image map](https://www.nitrc.org/frs/download.php/9429/WHS_SD_rat_DWI_v1.01.nii.gz \"Download Diffusion weighted image map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [Fractional Anisotropy (FA) map](https://www.nitrc.org/frs/download.php/9428/WHS_SD_rat_FA_v1.01.nii.gz \"Download Fractional Anisotropy (FA) map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels)\n* [Color FA map](https://www.nitrc.org/frs/download.php/9424/WHS_SD_rat_FA_color_v1.01.nii.gz \"Download Color FA map from NITRC\") resampled to 39 \u03bcm resolution (1024x512x512 voxels), combining the FA and primary eigenvector to 24-bit color RGB where intensity is given by relative FA value and color is assigned to directions (RGB to xyz respectively)\n"
+    ],
+    "oai_identifier": [
+        "10.25493_DTSG-ZBS"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "Structural brain imaging"
+        }
+    ],
+    "title": [
+        "Microscopic resolution diffusion magnetic resonance images of a normal adult Sprague Dawley rat brain"
+    ],
+    "url": ""
+}

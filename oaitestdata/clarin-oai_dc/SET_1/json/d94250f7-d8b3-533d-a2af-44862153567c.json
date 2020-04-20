@@ -1,0 +1,54 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "Filesize uncompressed: 1928 KBytes. "
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2127",
+    "MetadataAccess": [
+        "oai:ota:oucs:2127"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dickens, Charles, 1812-1870"
+    ],
+    "fulltext": "oai:ota:oucs:2127;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2127.xml;Martin Chuzzlewit;A machine-readable transcription;Dickens, Charles, 1812-1870;text_and_corpus_linguistics;Oxford Text Archive, University of Oxford;Filesize uncompressed: 1928 KBytes. ;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d94250f7-d8b3-533d-a2af-44862153567c",
+    "oai_identifier": [
+        "oai:ota:oucs:2127"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Martin Chuzzlewit",
+        "A machine-readable transcription"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2127.xml"
+}

@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6582",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6582"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6582;2018-12-21T07:37:25Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.014;Sant, Karin;Karin;Sant;0000-0002-1508-3959;Utrecht University, Utrecht, The Netherlands;Mandic, Oleg;Oleg;Mandic;6602229581;Natural History Museum Vienna, Vienna, Austria;de Leeuw, Arjan;Arjan;de Leeuw;0000-0002-8878-2785;Universit\u00e9 Grenoble Alpes, Grenoble, France;Krijgsman, Wout;Wout;Krijgsman;7003956416;Utrecht University, Utrecht, The Netherlands;Paleomagnetic dataset of the marine Badenian reference section Ugljevik in Bosnia-Herzegovina (Middle Miocene, Pannonian basin, Central Paratethys);GFZ Data Services;2018;Badenian;Sarmatian;magnetostratigraphy;integrated stratigraphy;Central Paratethys;Pannonian Basin;EPOS;Multi-scale laboratories;paleomagnetic and magnetic data;paleomagnetic data;Sant, Karin;Karin;Sant;0000-0002-1508-3959;Utrecht University, Utrecht, The Netherlands;Sant, Karin;Karin;Sant;0000-0002-1508-3959;Utrecht University, Utrecht, The Netherlands;Sant, Karin;Karin;Sant;0000-0002-1508-3959;Utrecht University, Utrecht, The Netherlands;Mandic, Oleg;Oleg;Mandic;6602229581;Natural History Museum Vienna, Vienna, Austria;Mandic, Oleg;Oleg;Mandic;6602229581;Natural History Museum Vienna, Vienna, Austria;de Leeuw, Arjan;Arjan;de Leeuw;0000-0002-8878-2785;Universit\u00e9 Grenoble Alpes, Grenoble, France;Krijgsman, Wout;Wout;Krijgsman;7003956416;Utrecht University, Utrecht, The Netherlands;Renovica, Svetlana;Svetlana;Renovica;RiTE Ugljevik (Rudnik i Termoelektrana Ugljevik\"; mining company), Ugljevik RS, Bosnia-Herzegovina;Paleomagnetic Laboratory Fort Hoofddijk (Utrecht University, The Netherlands);Utrecht University, The Netherlands;/2;2018-05-31;en;10.2478/geoca-2013-0006;10.1016/j.cageo.2016.05.007;10.1016/j.gloplacha.2018.10.010;570848 Bytes;2 Files;application/octet-stream;application/pdf;CC BY 4.0;This dataset contains paleomagnetic data used to create the magnetostratigraphy of the Ugljevik section in Bosnia and Herzegovina (thesis by Karin Sant, 2018). It is the only outcrop known with the early, middle and upper Badenian sediments exposed in a continuous section.;18.982309498631707;44.667445151876294;Location of open pit mine;Nederlandse Organisatie voor Wetenschappelijk Onderzoek;http://doi.org/10.13039/501100003246;865.10.011",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "f3b7cc68-c5d0-5d89-b25f-4cc5a0005c00",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6582"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

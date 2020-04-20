@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5182",
+    "MetadataAccess": [
+        "oai:ota:oucs:5182"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Craven, Elizabeth Craven, Baroness, 1750-1828."
+    ],
+    "fulltext": "oai:ota:oucs:5182;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5182.xml;Airs and chorusses in The Princess of Georgia: an opera: written by Her Serene Highness the Margravine of Anspach, and performed at Brandenburgh-House Theatre, 1798.;Princess of Georgia;Craven, Elizabeth Craven, Baroness, 1750-1828.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "40bd9b84-e91f-5ba8-9d86-8d3e48b29d10",
+    "oai_identifier": [
+        "oai:ota:oucs:5182"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Airs and chorusses in The Princess of Georgia: an opera: written by Her Serene Highness the Margravine of Anspach, and performed at Brandenburgh-House Theatre, 1798.",
+        "Princess of Georgia"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5182.xml"
+}

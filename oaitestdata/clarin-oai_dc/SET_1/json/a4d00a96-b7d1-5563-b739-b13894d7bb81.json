@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "audio/x-wav",
+        "text/xml",
+        "downloadable_files_count: 37",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-CF9C-4",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-CF9C-4"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0005-CF9C-4",
+    "PublicationTimestamp": "2012-03-28T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Pra\u017e\u00e1k, Ale\u0161",
+        "\u0160m\u00eddl, Lubo\u0161"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-CF9C-4;2018-10-29T12:50:32Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Parliament Meetings;Pra\u017e\u00e1k, Ale\u0161;\u0160m\u00eddl, Lubo\u0161;speech corpus;acoustic model;speaker identification;speaker verification;The corpus consists of recordings from the Chamber of Deputies of the Parliament of the Czech Republic. It currently consists of 88 hours of speech data, which corresponds roughly to 0.5 million tokens. The annotation process is semi-automatic, as we are able to perform the speech recognition on the data with high accuracy (over 90%) and consequently align the resulting automatic transcripts with the speech. The annotator\u2019s task is then to check the transcripts, correct errors, add proper punctuation and label speech sections with information about the speaker. The resulting corpus is therefore suitable for both acoustic model training for ASR purposes and training of speaker identification and/or verification systems. The archive contains 18 sound files (WAV PCM, 16-bit, 44.1 kHz, mono) and corresponding transcriptions in XML-based standard Transcriber format (http://trans.sourceforge.net)\r\n\r\nThe date of airing of a particular recording is encoded in the filename in the form SOUND_YYMMDD_*. Note that the recordings are usually aired in the early morning on the day following the actual Parliament session. If the recording is too long to fit in the broadcasting scheme, it is divided into several parts and aired on the consecutive days.;2012-03-28;corpus;ZCU_CZ_Parliament;http://hdl.handle.net/11858/00-097C-0000-0005-CF9C-4;ces;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;PUB;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;text/xml;audio/x-wav;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 37;University of West Bohemia, Department of Cybernetics",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a4d00a96-b7d1-5563-b739-b13894d7bb81",
+    "notes": [
+        "The corpus consists of recordings from the Chamber of Deputies of the Parliament of the Czech Republic. It currently consists of 88 hours of speech data, which corresponds roughly to 0.5 million tokens. The annotation process is semi-automatic, as we are able to perform the speech recognition on the data with high accuracy (over 90%) and consequently align the resulting automatic transcripts with the speech. The annotator\u2019s task is then to check the transcripts, correct errors, add proper punctuation and label speech sections with information about the speaker. The resulting corpus is therefore suitable for both acoustic model training for ASR purposes and training of speaker identification and/or verification systems. The archive contains 18 sound files (WAV PCM, 16-bit, 44.1 kHz, mono) and corresponding transcriptions in XML-based standard Transcriber format (http://trans.sourceforge.net)\r\n\r\nThe date of airing of a particular recording is encoded in the filename in the form SOUND_YYMMDD_*. Note that the recordings are usually aired in the early morning on the day following the actual Parliament session. If the recording is too long to fit in the broadcasting scheme, it is divided into several parts and aired on the consecutive days."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0005-CF9C-4"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "acoustic model"
+        },
+        {
+            "name": "speaker identification"
+        },
+        {
+            "name": "speaker verification"
+        }
+    ],
+    "title": [
+        "Czech Parliament Meetings"
+    ],
+    "url": ""
+}

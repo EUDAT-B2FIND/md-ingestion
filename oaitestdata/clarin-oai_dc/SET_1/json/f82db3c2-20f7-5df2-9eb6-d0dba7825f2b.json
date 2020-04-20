@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 3.06 MB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2026",
+    "MetadataAccess": [
+        "oai:ota:oucs:2026"
+    ],
+    "PublicationTimestamp": "1867-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1867"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Tolstoy, Leo, graf, 1828-1910"
+    ],
+    "fulltext": "oai:ota:oucs:2026;2018-03-01T12:27:15Z;http://ota.ox.ac.uk/headers/2026.xml;Voina i mir. English;War and peace / by Leo Tolstoy;Tolstoy, Leo, graf, 1828-1910;1867;text_and_corpus_linguistics;Fiction;Novels;Translations;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 3.06 MB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f82db3c2-20f7-5df2-9eb6-d0dba7825f2b",
+    "oai_identifier": [
+        "oai:ota:oucs:2026"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction"
+        },
+        {
+            "name": "Novels"
+        },
+        {
+            "name": "Translations"
+        }
+    ],
+    "title": [
+        "Voina i mir. English",
+        "War and peace / by Leo Tolstoy"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2026.xml"
+}

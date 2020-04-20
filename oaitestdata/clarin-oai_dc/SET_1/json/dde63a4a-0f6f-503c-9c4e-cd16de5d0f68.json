@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Drukarnia Prymasowska"
+    ],
+    "Contributor": [
+        "Perzyna, Ludwik (1742-1800). T\u0142."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229190",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229190"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D08-B",
+    "PublicationTimestamp": "1796-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1796"
+    ],
+    "Publisher": [
+        "Drukarnia Prymasowska"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/229190",
+        "oai:jbc.bj.uj.edu.pl:publication:240830"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Tissot, Samuel Auguste Andr\u00e9 David (1728-1797)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229190;2019-03-01T13:00:39Z;Porzadek Zycia w Czerstwosci Zdrowia W D\u0142ugie Prowadz\u0105cy Lata;Tissot, Samuel Auguste Andr\u00e9 David (1728-1797);starodruki 18\u00a0w.;Drukarnia Prymasowska;Perzyna, Ludwik (1742-1800). T\u0142.;[1796];starodruk;application/xml;clarind-uds:poldilemma-229190;hdl:11858/00-246C-0000-0023-8D08-B;Biblioteka Jagiello\u0144ska, BJ St. Dr. 42675 I;pol;http://jbc.bj.uj.edu.pl/Content/229190;oai:jbc.bj.uj.edu.pl:publication:240830;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dde63a4a-0f6f-503c-9c4e-cd16de5d0f68",
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229190"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Porzadek Zycia w Czerstwosci Zdrowia W D\u0142ugie Prowadz\u0105cy Lata"
+    ],
+    "url": ""
+}

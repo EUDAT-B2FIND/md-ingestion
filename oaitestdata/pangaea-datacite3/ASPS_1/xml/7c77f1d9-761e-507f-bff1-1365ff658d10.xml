@@ -1,0 +1,66 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.826369</identifier>
+    <datestamp>2017-08-05T09:39:38Z</datestamp>
+    <setSpec>ASPS</setSpec>
+    <setSpec>JGOFSUS</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.826369</identifier>
+      <creators>
+        <creator>
+          <creatorName>Morrison, John M</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Gardner, Wilford</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Physical oceanography during Thomas G. Thompson cruise TT050</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2014</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">Event label</subject>
+        <subject subjectScheme="Parameter">Latitude of event</subject>
+        <subject subjectScheme="Parameter">Longitude of event</subject>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Pressure, water</subject>
+        <subject subjectScheme="Parameter">Temperature, water</subject>
+        <subject subjectScheme="Parameter">Salinity</subject>
+        <subject subjectScheme="Parameter">Conductivity</subject>
+        <subject subjectScheme="Parameter">Temperature, water, potential</subject>
+        <subject subjectScheme="Parameter">Density, sigma-theta (0)</subject>
+        <subject subjectScheme="Parameter">Optical beam attenuation coefficient, particle in water column</subject>
+        <subject subjectScheme="Parameter">PAR lightmeter voltage from downward irradiance</subject>
+        <subject subjectScheme="Parameter">Fluorescence, chlorophyll</subject>
+        <subject subjectScheme="Campaign">TT050</subject>
+        <subject subjectScheme="Basis">Thomas G. Thompson</subject>
+        <subject subjectScheme="Project">Joint Global Ocean Flux Study (JGOFS)</subject>
+      </subjects>
+      <dates>
+        <date dateType="Collected">1995-08-18T14:20:00/1995-09-13T17:22:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="IsDocumentedBy">http://store.pangaea.de/Projects/JGOFS/US/ArabianSea/Morrison-tt050.htm</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>437711 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported (CC-BY)</rights>
+      </rightsList>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>9.9125 57.3004 22.4998 68.7527</geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

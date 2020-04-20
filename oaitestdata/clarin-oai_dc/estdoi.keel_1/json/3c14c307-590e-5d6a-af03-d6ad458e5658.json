@@ -1,0 +1,51 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00073L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:5757468",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:5757468"
+    ],
+    "PublicationTimestamp": "2015-05-22T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Laur, Sven"
+    ],
+    "fulltext": "oai:oai.datacite.org:5757468;2019-04-17T17:27:44Z;ESTDOI;ESTDOI.KEEL;Nime\u00fcksuste korpus;Estonian NER corpus;Laur, Sven;Center of Estonian Language Resources;2013;Issued: 2013-04-24;Updated: 2015-05-22;doi:10.15155/1-00-0000-0000-0000-00073L;Abstract;Corpus containing morphologically analyzed articles with named entity annotations (persons, organizations, locations) in BOI format.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3c14c307-590e-5d6a-af03-d6ad458e5658",
+    "notes": [
+        "Abstract",
+        "Corpus containing morphologically analyzed articles with named entity annotations (persons, organizations, locations) in BOI format."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:5757468"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Nime\u00fcksuste korpus",
+        "Estonian NER corpus"
+    ],
+    "url": ""
+}

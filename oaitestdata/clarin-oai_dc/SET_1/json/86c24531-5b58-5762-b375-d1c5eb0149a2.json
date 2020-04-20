@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4894",
+    "MetadataAccess": [
+        "oai:ota:oucs:4894"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dibdin, Charles, 1745-1814."
+    ],
+    "fulltext": "oai:ota:oucs:4894;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4894.xml;Hannah Hewit: or, the female Crusoe. Being the history of a woman of uncommon, mental, and personal accomplishments; who, ... was cast away in the Grosvenor East-Indiaman: and became for three years the sole inhabitant of an island, in the South Seas. Supposed to be written by herself. [pt.3];Dibdin, Charles, 1745-1814.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "86c24531-5b58-5762-b375-d1c5eb0149a2",
+    "oai_identifier": [
+        "oai:ota:oucs:4894"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Hannah Hewit: or, the female Crusoe. Being the history of a woman of uncommon, mental, and personal accomplishments; who, ... was cast away in the Grosvenor East-Indiaman: and became for three years the sole inhabitant of an island, in the South Seas. Supposed to be written by herself. [pt.3]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4894.xml"
+}

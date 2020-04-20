@@ -1,0 +1,20 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.fz-juelich.de:b2rec/b34bf0efbf574e53bb94034e8e037564</identifier>
+    <datestamp>2018-01-17T07:57:10Z</datestamp>
+    <setSpec>d952913c-451e-4b5c-817e-d578dc8a4469</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Rusina, Solvita</dc:creator>
+      <dc:date>2017-05-14T16:58:37.343092+00:00</dc:date>
+      <dc:description>Air temperature data for Engure LTSER 1995-2008</dc:description>
+      <dc:identifier>http://hdl.handle.net/11097/3c8c86c7-cf1b-4944-9353-6fc6b9b5827c</dc:identifier>
+      <dc:identifier>https://b2share.fz-juelich.de/api/records/b34bf0efbf574e53bb94034e8e037564</dc:identifier>
+      <dc:identifier>oai:b2share.fz-juelich.de:b2rec/b34bf0efbf574e53bb94034e8e037564</dc:identifier>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>air temperature, climate change</dc:subject>
+      <dc:title>Air temperature data for Engure LTSER 1995-2008</dc:title>
+    </oai_dc:dc>
+  </metadata>
+</record>

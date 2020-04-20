@@ -1,0 +1,82 @@
+{
+    "Checksum": null,
+    "Contact": [
+        "N/A"
+    ],
+    "Discipline": "Physics",
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": "N/A",
+    "PublicationTimestamp": "2000-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "author": [
+        "Marcello Maggi"
+    ],
+    "fulltext": [
+        "\n    ",
+        "oai:www.openaccessrepository.it:7277",
+        "2016-06-29T14:35:14Z",
+        "dataset:aleph",
+        "openaire",
+        "irods://data.repo.cineca.it:1247/CINECA01/home/DRES_EUDalep/dati/ZD4001.9.AL,11100/e27f4e8c-cbe9-11e3-a29c-e41f13eb41b2eng",
+        "00000coc  2200000uu 4500",
+        "7277",
+        "20160629143514.0",
+        "Handle",
+        "irods://data.repo.cineca.it:1247/CINECA01/home/DRES_EUDalep/dati/ZD4001.9.AL,11100/e27f4e8c-cbe9-11e3-a29c-e41f13eb41b2",
+        "HEP CERN LEP ALEPH MINI RealData 2000",
+        "DATASETREALDATA",
+        "Marcello Maggi",
+        "544400955",
+        "310595760",
+        "Search for neutral Higgs bosons decaying into four taus at LEP2",
+        "10.1007/JHEP05(2010)049",
+        "2010",
+        "[1]",
+        "PUBLICATIONINFN-2014-001",
+        "[1]",
+        "10.5072/oar.it/1411041136.04 ",
+        "ALEPH SCL5 Virtual Machine for Research Environment",
+        "SOFTWAREALEPH-2014-001",
+        "[2]",
+        "ALEPH Collaboration",
+        "irods://data.repo.cineca.it:1247/CINECA01/home/DRES_EUDalep/dati/ZD4001.9.AL",
+        "ALEPH",
+        "oai:www.openaccessrepository.it:7277",
+        "openaire",
+        "dataset:aleph",
+        "ALEPH",
+        "LEP Data from The ALEPH Collaboration year 2000 datafile ZD4001.9.AL",
+        "2014-09-01",
+        "ALEPH",
+        "Run contents for this data file <table border=\"1\"> <tr> <th>Run #</th><th>Nevents</th><th>Length (Mb)</th><th>LEP energy</th><th>Nb of Z0s</th></tr> <tr> <td>55749</td><td>282</td><td>0.756</td><td>205.939</td><td>-1</td></tr> <tr> <td>55750</td><td>275</td><td>0.499</td><td>208.456</td><td>-1</td></tr> <tr> <td>55752</td><td>2604</td><td>6.244</td><td>205.282</td><td>5</td></tr> <tr> <td>55753</td><td>6227</td><td>10.565</td><td>207.846</td><td>6</td></tr> <tr> <td>55755</td><td>1323</td><td>2.987</td><td>205.169</td><td>-1</td></tr> <tr> <td>55757</td><td>2081</td><td>5.066</td><td>205.248</td><td>3</td></tr> <tr> <td>55758</td><td>6572</td><td>12.945</td><td>207.835</td><td>5</td></tr> <tr> <td>55761</td><td>542</td><td>1.141</td><td>205.325</td><td>-1</td></tr> <tr> <td>55762</td><td>69</td><td>0.187</td><td>205.325</td><td>-1</td></tr> <tr> <td>55765</td><td>2719</td><td>6.388</td><td>205.102</td><td>3</td></tr> <tr> <td>55766</td><td>2221</td><td>4.080</td><td>206.938</td><td>1</td></tr> <tr> <td>55772</td><td>4878</td><td>10.377</td><td>205.151</td><td>2</td></tr> <tr> <td>55773</td><td>6128</td><td>12.630</td><td>208.022</td><td>4</td></tr> <tr> <td>55776</td><td>4536</td><td>11.095</td><td>205.126</td><td>5</td></tr> <tr> <td>55777</td><td>6745</td><td>14.753</td><td>208.036</td><td>5</td></tr> <tr> <td>55779</td><td>1910</td><td>4.551</td><td>205.085</td><td>-1</td></tr> <tr> <td>55781</td><td>2892</td><td>7.260</td><td>205.116</td><td>6</td></tr> <tr> <td>55782</td><td>6141</td><td>13.095</td><td>207.557</td><td>3</td></tr> <tr> <td>55784</td><td>3880</td><td>9.532</td><td>205.143</td><td>7</td></tr> <tr> <td>55785</td><td>3816</td><td>8.313</td><td>208.016</td><td>4</td></tr> <tr> <td>55787</td><td>596</td><td>1.452</td><td>205.097</td><td>1</td></tr> <tr> <td>55790</td><td>3721</td><td>7.512</td><td>208.036</td><td>7</td></tr> <tr> <td>55793</td><td>3719</td><td>9.192</td><td>205.135</td><td>3</td></tr> <tr> <td>55794</td><td>8870</td><td>20.263</td><td>207.691</td><td>9</td></tr> <tr> <td>55796</td><td>4477</td><td>11.074</td><td>205.146</td><td>4</td></tr> <tr> <td>55797</td><td>8835</td><td>19.166</td><td>208.043</td><td>9</td></tr> <tr> <td>55799</td><td>4194</td><td>10.210</td><td>205.142</td><td>3</td></tr> <tr> <td>55800</td><td>2464</td><td>5.056</td><td>206.871</td><td>3</td></tr> <tr> <td>55802</td><td>4726</td><td>11.568</td><td>205.175</td><td>5</td></tr> <tr> <td>55803</td><td>3716</td><td>7.440</td><td>207.223</td><td>1</td></tr> <tr> <td>55806</td><td>8154</td><td>20.107</td><td>205.158</td><td>10</td></tr> <tr> <td>55807</td><td>2683</td><td>5.596</td><td>208.004</td><td>4</td></tr> <tr> <td>55809</td><td>5861</td><td>13.639</td><td>205.120</td><td>7</td></tr> <tr> <td>55810</td><td>5209</td><td>11.147</td><td>207.654</td><td>4</td></tr> <tr> <td>55812</td><td>5281</td><td>12.619</td><td>205.118</td><td>8</td></tr> <tr></table> Total file length :   305.594 Mbytes",
+        "ALEPH - INFN",
+        "High Energy Physics",
+        "2000",
+        "eng",
+        "Researchers",
+        "info:eu-repo/semantics/other",
+        "Marcello Maggi"
+    ],
+    "notes": [
+        "Run contents for this data file <table border=\"1\"> <tr> <th>Run #</th><th>Nevents</th><th>Length (Mb)</th><th>LEP energy</th><th>Nb of Z0s</th></tr> <tr> <td>55749</td><td>282</td><td>0.756</td><td>205.939</td><td>-1</td></tr> <tr> <td>55750</td><td>275</td><td>0.499</td><td>208.456</td><td>-1</td></tr> <tr> <td>55752</td><td>2604</td><td>6.244</td><td>205.282</td><td>5</td></tr> <tr> <td>55753</td><td>6227</td><td>10.565</td><td>207.846</td><td>6</td></tr> <tr> <td>55755</td><td>1323</td><td>2.987</td><td>205.169</td><td>-1</td></tr> <tr> <td>55757</td><td>2081</td><td>5.066</td><td>205.248</td><td>3</td></tr> <tr> <td>55758</td><td>6572</td><td>12.945</td><td>207.835</td><td>5</td></tr> <tr> <td>55761</td><td>542</td><td>1.141</td><td>205.325</td><td>-1</td></tr> <tr> <td>55762</td><td>69</td><td>0.187</td><td>205.325</td><td>-1</td></tr> <tr> <td>55765</td><td>2719</td><td>6.388</td><td>205.102</td><td>3</td></tr> <tr> <td>55766</td><td>2221</td><td>4.080</td><td>206.938</td><td>1</td></tr> <tr> <td>55772</td><td>4878</td><td>10.377</td><td>205.151</td><td>2</td></tr> <tr> <td>55773</td><td>6128</td><td>12.630</td><td>208.022</td><td>4</td></tr> <tr> <td>55776</td><td>4536</td><td>11.095</td><td>205.126</td><td>5</td></tr> <tr> <td>55777</td><td>6745</td><td>14.753</td><td>208.036</td><td>5</td></tr> <tr> <td>55779</td><td>1910</td><td>4.551</td><td>205.085</td><td>-1</td></tr> <tr> <td>55781</td><td>2892</td><td>7.260</td><td>205.116</td><td>6</td></tr> <tr> <td>55782</td><td>6141</td><td>13.095</td><td>207.557</td><td>3</td></tr> <tr> <td>55784</td><td>3880</td><td>9.532</td><td>205.143</td><td>7</td></tr> <tr> <td>55785</td><td>3816</td><td>8.313</td><td>208.016</td><td>4</td></tr> <tr> <td>55787</td><td>596</td><td>1.452</td><td>205.097</td><td>1</td></tr> <tr> <td>55790</td><td>3721</td><td>7.512</td><td>208.036</td><td>7</td></tr> <tr> <td>55793</td><td>3719</td><td>9.192</td><td>205.135</td><td>3</td></tr> <tr> <td>55794</td><td>8870</td><td>20.263</td><td>207.691</td><td>9</td></tr> <tr> <td>55796</td><td>4477</td><td>11.074</td><td>205.146</td><td>4</td></tr> <tr> <td>55797</td><td>8835</td><td>19.166</td><td>208.043</td><td>9</td></tr> <tr> <td>55799</td><td>4194</td><td>10.210</td><td>205.142</td><td>3</td></tr> <tr> <td>55800</td><td>2464</td><td>5.056</td><td>206.871</td><td>3</td></tr> <tr> <td>55802</td><td>4726</td><td>11.568</td><td>205.175</td><td>5</td></tr> <tr> <td>55803</td><td>3716</td><td>7.440</td><td>207.223</td><td>1</td></tr> <tr> <td>55806</td><td>8154</td><td>20.107</td><td>205.158</td><td>10</td></tr> <tr> <td>55807</td><td>2683</td><td>5.596</td><td>208.004</td><td>4</td></tr> <tr> <td>55809</td><td>5861</td><td>13.639</td><td>205.120</td><td>7</td></tr> <tr> <td>55810</td><td>5209</td><td>11.147</td><td>207.654</td><td>4</td></tr> <tr> <td>55812</td><td>5281</td><td>12.619</td><td>205.118</td><td>8</td></tr> <tr></table> Total file length :   305.594 Mbytes"
+    ],
+    "oai_identifier": [
+        "oai:www.openaccessrepository.it:7277"
+    ],
+    "oai_set": [
+        "dataset:aleph",
+        "openaire"
+    ],
+    "tags": [
+        {
+            "name": "HEP CERN LEP ALEPH MINI RealData"
+        }
+    ],
+    "title": [
+        "LEP Data from The ALEPH Collaboration year 2000 datafile ZD4001.9.AL"
+    ]
+}

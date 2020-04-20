@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2017.0005/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2017.0005/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2017.0005/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2017-05-18T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Ongari, Daniele",
+        "Barthel, Senja",
+        "Smit, Berend",
+        "Witman, Matthew",
+        "Boyd, Peter G.",
+        "Haranczyk, Maciej"
+    ],
+    "fulltext": "oai:materialscloud.org:2017.0005/v1;2019-06-12Z;DOI;Dataset;Ongari, Daniele;Boyd, Peter G.;Barthel, Senja;Witman, Matthew;Haranczyk, Maciej;Smit, Berend;Accurate Characterization of the Pore Volume in Microporous Crystalline Materials (Data Download);Materials Cloud;2017-05-18;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;Nanoporous materials;Pore volume;Void fraction;MARVEL;doi:10.24435/materialscloud:2017.0005/v1;https://archive.materialscloud.org/2017.0005/v1;en;Project Abstract: Pore volume is one of the main properties for the characterization of microporous crystals. It is experimentally measurable and it can also be obtained from the refined unit cell by a number of computational techniques. In this work we assess the accuracy and the discrepancies between the different computational methods which are commonly used for this purpose, i.e, geometric, helium and probe center pore volume, by studying a database of more than 5000 frameworks. We developed a new technique to fully characterize the internal void of a microporous material and to compute the probe accessible and occupiable pore volume. We show that unlike the other definitions of pore volume, the occupiable pore volume can be directly related to the experimentally measured pore volumes from nitrogen isotherms.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "2e1dccb6-3da1-5b7f-98e9-30f5b2de6ae4",
+    "notes": [
+        "Project Abstract: Pore volume is one of the main properties for the characterization of microporous crystals. It is experimentally measurable and it can also be obtained from the refined unit cell by a number of computational techniques. In this work we assess the accuracy and the discrepancies between the different computational methods which are commonly used for this purpose, i.e, geometric, helium and probe center pore volume, by studying a database of more than 5000 frameworks. We developed a new technique to fully characterize the internal void of a microporous material and to compute the probe accessible and occupiable pore volume. We show that unlike the other definitions of pore volume, the occupiable pore volume can be directly related to the experimentally measured pore volumes from nitrogen isotherms."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2017.0005/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Nanoporous materials"
+        },
+        {
+            "name": "Pore volume"
+        },
+        {
+            "name": "Void fraction"
+        },
+        {
+            "name": "MARVEL"
+        }
+    ],
+    "title": [
+        "Accurate Characterization of the Pore Volume in Microporous Crystalline Materials (Data Download)"
+    ],
+    "url": "https://archive.materialscloud.org/2017.0005/v1"
+}

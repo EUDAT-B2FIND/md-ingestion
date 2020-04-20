@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163690</identifier>
+    <datestamp>2019-02-28T18:49:50Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Pocz&#261;tki Chemii : Stosownie Do Teraznieyszego Tey Umiei&#281;tnosci Stanu Dla Pozytku Uczniow I S&#322;uchaczow U&#322;ozone Y Za Wzor Lekcyi Akademickich S&#322;uzyc Mai&#261;ce. T. 2 Przez J&#281;drzeia Sniadeckiego Filozofii i Medycyny Doctora [...]</dc:title>
+      <dc:creator xml:lang="pl">&#346;niadecki, J&#281;drzej (1768-1838)</dc:creator>
+      <dc:subject xml:lang="pl">starodruki 18&#160;w.</dc:subject>
+      <dc:publisher xml:lang="pl">Drukarnia Akademicka</dc:publisher>
+      <dc:date>1800</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-163690</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CEA-8</dc:identifier>
+      <dc:source xml:lang="pl">Biblioteka Jagiello&#324;ska, BJ St. Dr. 50975 I/1</dc:source>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://jbc.bj.uj.edu.pl/Content/163690</dc:relation>
+      <dc:relation>oai:jbc.bj.uj.edu.pl:publication:172070</dc:relation>
+      <dc:coverage>1701/1800</dc:coverage>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

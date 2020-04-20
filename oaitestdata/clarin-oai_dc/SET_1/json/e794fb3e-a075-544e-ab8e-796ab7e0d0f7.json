@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology",
+        "University of Lodz"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/pdf"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/546",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/546"
+    ],
+    "PID": "http://hdl.handle.net/11321/546",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology",
+        "University of Lodz"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "P\u0119zik, Piotr"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/546;2018-07-23T11:53:24Z;hdl_11321_3;hdl_11321_4;PELCRA LUZ corpus;P\u0119zik, Piotr;spoken data;semi-scripted interviews;everyday topics;mixed register;The corpus comprises 25 semi-scripted interviews (15 hours, ca. 165000 word tokens) with speakers of Polish on a range of topics.;2018;corpus;http://hdl.handle.net/11321/546;Polish;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;application/pdf;downloadable_files_count: 1;University of Lodz;Wroc\u0142aw University of Technology;http://spokes.clarin-pl.eu/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e794fb3e-a075-544e-ab8e-796ab7e0d0f7",
+    "notes": [
+        "The corpus comprises 25 semi-scripted interviews (15 hours, ca. 165000 word tokens) with speakers of Polish on a range of topics."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/546"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "spoken data"
+        },
+        {
+            "name": "semi-scripted interviews"
+        },
+        {
+            "name": "everyday topics"
+        },
+        {
+            "name": "mixed register"
+        }
+    ],
+    "title": [
+        "PELCRA LUZ corpus"
+    ],
+    "url": ""
+}

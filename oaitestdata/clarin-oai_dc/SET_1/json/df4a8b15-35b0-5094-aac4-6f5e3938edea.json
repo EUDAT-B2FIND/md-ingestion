@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Lake, Kirsopp, 1872-1946"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(15 files : ca. 97, 29, 17, 10, 9, 10, 10, 11, 8, 15, 22, 60, 252, 25, 26 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0222",
+    "MetadataAccess": [
+        "oai:ota:oucs:0222"
+    ],
+    "PublicationYear": [
+        "1-199"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Patristic texts -- 1st-5th century period"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:0222;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0222.xml;Apostolic Fathers (Early Christian collection);The Apostolic Fathers;1-199;text_and_corpus_linguistics;grc;Oxford Text Archive, University of Oxford;Lake, Kirsopp, 1872-1946;text/plain;(15 files : ca. 97, 29, 17, 10, 9, 10, 10, 11, 8, 15, 22, 60, 252, 25, 26 KB);Text;Patristic texts -- 1st-5th century period;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "df4a8b15-35b0-5094-aac4-6f5e3938edea",
+    "oai_identifier": [
+        "oai:ota:oucs:0222"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Apostolic Fathers (Early Christian collection)",
+        "The Apostolic Fathers"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0222.xml"
+}

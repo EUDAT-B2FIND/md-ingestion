@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "King's College London"
+    ],
+    "Contributor": [
+        "Nelson, Prof. Janet L.",
+        "director, project"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/tei+xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-862",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-862"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-862",
+    "PublicationTimestamp": "2005-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2005"
+    ],
+    "Publisher": [
+        "King's College London"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-862;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Anglos-Saxon charters;Nelson, Prof. Janet L.;director, project;Charters written in Anglo-Saxon England before A.D. 900, marked-up in TEI XML. Browsable online.;2005;corpus;http://hdl.handle.net/11372/LRT-862;eng;application/tei+xml;downloadable_files_count: 0;United Kingdom;King's College London;http://www.aschart.kcl.ac.uk/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0b1ac959-93fc-5d58-9df5-0754a1d9c890",
+    "notes": [
+        "Charters written in Anglo-Saxon England before A.D. 900, marked-up in TEI XML. Browsable online."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-862"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Anglos-Saxon charters"
+    ],
+    "url": ""
+}

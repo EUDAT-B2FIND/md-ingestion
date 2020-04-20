@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0001/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0001/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0001/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-01-08T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution Non Commercial 4.0 International https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Marzari, Nicola",
+        "Mauri, Francesco",
+        "Simoncelli, Michele"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0001/v1;2019-06-12Z;DOI;Dataset;Simoncelli, Michele;Marzari, Nicola;Mauri, Francesco;Unified theory of thermal transport in crystals and disordered solids;Materials Cloud;2019-01-08;Creative Commons Attribution Non Commercial 4.0 International https://creativecommons.org/licenses/by-nc/4.0/legalcode;info:eu-repo/semantics/openAccess;Thermal conductivity;CsPbBr3;Phonon linewidths;doi:10.24435/materialscloud:2019.0001/v1;https://archive.materialscloud.org/2019.0001/v1;en;Crystals and glasses exhibit fundamentally different heat conduction mechanisms: the periodicity of crystals allows for the excitation of propagating vibrational waves that carry heat, as first discussed by Peierls; in glasses, the lack of periodicity breaks Peierls&#39; picture and heat is mainly carried by the coupling of vibrational modes, often described by a harmonic theory introduced by Allen and Feldman. Anharmonicity or disorder are thus the limiting factors for thermal conductivity in crystals or glasses; hitherto, no transport equation has been able to account for both. In the paper https://arxiv.org/abs/1901.01964, we derive such equation, resulting in a thermal conductivity that reduces to the Peierls and Allen-Feldman limits, respectively, in anharmonic-and-ordered or harmonic-and-disordered solids, while also covering the intermediate regimes where both effects are relevant. This approach also solves the long-standing problem of accurately predicting the thermal properties of crystals with ultralow or glass-like thermal conductivity, as we show with an application to a thermoelectric material representative of this class. This database contains the raw data related to the images reported in the paper  https://arxiv.org/abs/1901.01964.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "bfc9e0d6-bb0d-52e7-8074-332a2521cb0a",
+    "notes": [
+        "Crystals and glasses exhibit fundamentally different heat conduction mechanisms: the periodicity of crystals allows for the excitation of propagating vibrational waves that carry heat, as first discussed by Peierls; in glasses, the lack of periodicity breaks Peierls&#39; picture and heat is mainly carried by the coupling of vibrational modes, often described by a harmonic theory introduced by Allen and Feldman. Anharmonicity or disorder are thus the limiting factors for thermal conductivity in crystals or glasses; hitherto, no transport equation has been able to account for both. In the paper https://arxiv.org/abs/1901.01964, we derive such equation, resulting in a thermal conductivity that reduces to the Peierls and Allen-Feldman limits, respectively, in anharmonic-and-ordered or harmonic-and-disordered solids, while also covering the intermediate regimes where both effects are relevant. This approach also solves the long-standing problem of accurately predicting the thermal properties of crystals with ultralow or glass-like thermal conductivity, as we show with an application to a thermoelectric material representative of this class. This database contains the raw data related to the images reported in the paper  https://arxiv.org/abs/1901.01964."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0001/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Thermal conductivity"
+        },
+        {
+            "name": "CsPbBr"
+        },
+        {
+            "name": "Phonon linewidths"
+        }
+    ],
+    "title": [
+        "Unified theory of thermal transport in crystals and disordered solids"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0001/v1"
+}

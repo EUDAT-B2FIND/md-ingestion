@@ -1,0 +1,95 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1137",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1137"
+    ],
+    "PID": "http://hdl.handle.net/11356/1137",
+    "PublicationTimestamp": "2017-08-28T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://slovenscina2.0.trojina.si/arhiv/2016-2/2016-2-04/",
+        "http://nl.ijs.si/janes/viri/avtomatsko-oznaceni-korpusi/#Janes-Wiki",
+        "https://doi.org/10.1007/s10579-018-9425-z"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Ljube\u0161i\u0107, Nikola",
+        "Fi\u0161er, Darja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1137;2018-10-29T10:42:44Z;hdl_11356_1023;hdl_11356_1024;Wikipedia talk corpus Janes-Wiki 1.0;Ljube\u0161i\u0107, Nikola;Erjavec, Toma\u017e;Fi\u0161er, Darja;computer-mediated communication;Wikipedia;word normalisation;tagging;lemmatisation;named entities;TEI;Janes-Wiki is an annotated corpus of discussion pages from the Slovene Wikipedia from the period 2003-08 to 2017-06. The corpus contains page and user talks and is structured into individual pages and their comments, together with their metadata. The texts in the corpus are tokenised, sentence segmented, word normalised, morphosyntactically tagged, lemmatised and annotated with named entities.;2017-08-28;corpus;http://hdl.handle.net/11356/1137;slv;http://slovenscina2.0.trojina.si/arhiv/2016-2/2016-2-04/;http://nl.ijs.si/janes/viri/avtomatsko-oznaceni-korpusi/#Janes-Wiki;https://doi.org/10.1007/s10579-018-9425-z;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Jo\u017eef Stefan Institute;http://nl.ijs.si/janes/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "93a4bf13-875f-50fb-a3ce-34a1bb765572",
+    "notes": [
+        "Janes-Wiki is an annotated corpus of discussion pages from the Slovene Wikipedia from the period 2003-08 to 2017-06. The corpus contains page and user talks and is structured into individual pages and their comments, together with their metadata. The texts in the corpus are tokenised, sentence segmented, word normalised, morphosyntactically tagged, lemmatised and annotated with named entities."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1137"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "Wikipedia"
+        },
+        {
+            "name": "word normalisation"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "lemmatisation"
+        },
+        {
+            "name": "named entities"
+        },
+        {
+            "name": "TEI"
+        }
+    ],
+    "title": [
+        "Wikipedia talk corpus Janes-Wiki 1.0"
+    ],
+    "url": ""
+}

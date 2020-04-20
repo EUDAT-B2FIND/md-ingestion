@@ -1,0 +1,58 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-655",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-655"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-655",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Code of conduct"
+    ],
+    "SpatialCoverage": [
+        "Papua New Guinea"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-655;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Teop;corpus browser;Documentation of the Teop project (DoBeS project);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-655;Code of conduct;downloadable_files_count: 0;Papua New Guinea;https://corpus1.mpi.nl/ds/asv/?1&openpath=node:318963",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c33cf55c-2036-5896-9ac3-f12aeec91733",
+    "notes": [
+        "Documentation of the Teop project (DoBeS project)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-655"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus browser"
+        }
+    ],
+    "title": [
+        "Teop"
+    ],
+    "url": ""
+}

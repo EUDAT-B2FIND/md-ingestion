@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1139</identifier>
+    <datestamp>2018-10-29T10:41:03Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Forum corpus Janes-Forum 1.0</dc:title>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Fi&#353;er, Darja</dc:creator>
+      <dc:subject>computer-mediated communication</dc:subject>
+      <dc:subject>forums</dc:subject>
+      <dc:subject>word normalisation</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>lemmatisation</dc:subject>
+      <dc:subject>named entities</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>Janes-Forum is an annotated corpus of Slovene forums from websites med.over.net, avtomobilizem.com, and kvarkadabra.net from the period 2001-02 to 2015-01. The corpus is structured into forums, threads and posts, together with their metadata. The texts in the corpus are tokenised, sentence segmented, word normalised, morphosyntactically tagged, lemmatised and annotated with named entities. Due to protection of privacy and compliance with wishes of platform owners, usernames are not included in the metadata, and 'person', 'person derivative' and 'company name' named entities have been removed from the texts.</dc:description>
+      <dc:date>2017-08-17</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1139</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://slovenscina2.0.trojina.si/arhiv/2016-2/2016-2-04/</dc:relation>
+      <dc:relation>http://nl.ijs.si/janes/viri/avtomatsko-oznaceni-korpusi/#Janes-Forum</dc:relation>
+      <dc:relation>https://doi.org/10.1007/s10579-018-9425-z</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>http://nl.ijs.si/janes/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

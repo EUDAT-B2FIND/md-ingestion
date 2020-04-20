@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "s.n."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229191",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229191"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D09-9",
+    "PublicationTimestamp": "1791-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1791"
+    ],
+    "Publisher": [
+        "s.n."
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/229191",
+        "oai:jbc.bj.uj.edu.pl:publication:240831"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Perzyna, Ludwik (1742-1800)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229191;2019-03-01T13:02:40Z;Mysli y Uwagi nad Farmazonami;Perzyna, Ludwik (1742-1800);starodruki 18\u00a0w.;s.n.;[1791];starodruk;application/xml;clarind-uds:poldilemma-229191;hdl:11858/00-246C-0000-0023-8D09-9;Biblioteka Jagiello\u0144ska, BJ St. Dr. 35833 I;pol;http://jbc.bj.uj.edu.pl/Content/229191;oai:jbc.bj.uj.edu.pl:publication:240831;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dbcae301-70f7-5b86-bbf5-1c6ca002a4a8",
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229191"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Mysli y Uwagi nad Farmazonami"
+    ],
+    "url": ""
+}

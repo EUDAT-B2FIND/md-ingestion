@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-71</identifier>
+    <datestamp>2018-07-23T09:13:43Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Lre Map</dc:title>
+      <dc:creator>Del Gratta, Riccardo</dc:creator>
+      <dc:subject>Language Resource</dc:subject>
+      <dc:subject>Lre Map</dc:subject>
+      <dc:description>Initiated by ELRA and FlaReNet and introduced at LREC 2010, the LRE Map is a new mechanism intended to monitor the use and creation of language resources by collecting information on both existing and newly-created resources during the submission process. It is a collective enterprise of the LREC community, as a first step towards the creation of a very broad, community-built, Open Resource Infrastructure. It is meant to become an essential instrument to monitor the field and to identify shifts in shifts in the production, use, and evaluation of LRs and LTs over the years.&#13;
+&#13;
+At LREC 2010, nearly 2,000 language resource forms have been filled in. Apart from providing a portrait of the resources behind the community, of their uses and usability, the LRE Map intends to be a measuring instrument for monitoring the field of language resources.&#13;
+&#13;
+The feature has been so successful that it has been implemented also at COLING 2010 and EMNLP 2010, while other major conferences are in the pipeline, in addition to the LRE Journal.&#13;
+The demo url contains only a part of the data.</dc:description>
+      <dc:date>2017-06-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-71</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1836",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1836"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1836",
+    "PublicationTimestamp": "2016-11-15T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11234/1-1674"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Straka, Milan",
+        "Strakov\u00e1, Jana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1836;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Models (MorfFlex CZ 161115 + PDT 3.0) for MorphoDiTa 161115;Straka, Milan;Strakov\u00e1, Jana;MorphoDiTa;Czech;morphological analysis;morphological generation;PoS tagging;Czech models for MorphoDiTa, providing morphological analysis, morphological generation and part-of-speech tagging.\r\n\r\nThe morphological dictionary is created from MorfFlex CZ 161115 and DeriNet 1.2 and the PoS tagger is trained on Prague Dependency Treebank 3.0 (PDT).;2016-11-15;languageDescription;http://hdl.handle.net/11234/1-1836;ces;http://hdl.handle.net/11234/1-1674;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/morphodita/users-manual#czech-morfflex-pdt",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e9f8e7c7-a286-500b-913b-785b454587de",
+    "notes": [
+        "Czech models for MorphoDiTa, providing morphological analysis, morphological generation and part-of-speech tagging.\r\n\r\nThe morphological dictionary is created from MorfFlex CZ 161115 and DeriNet 1.2 and the PoS tagger is trained on Prague Dependency Treebank 3.0 (PDT)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1836"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "MorphoDiTa"
+        },
+        {
+            "name": "Czech"
+        },
+        {
+            "name": "morphological analysis"
+        },
+        {
+            "name": "morphological generation"
+        },
+        {
+            "name": "PoS tagging"
+        }
+    ],
+    "title": [
+        "Czech Models (MorfFlex CZ 161115 + PDT 3.0) for MorphoDiTa 161115"
+    ],
+    "url": ""
+}

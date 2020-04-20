@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1119</identifier>
+    <datestamp>2017-05-05T16:33:24Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ccGigafida ARPA language model 1.0</dc:title>
+      <dc:creator>Kadivec, Jo&#382;e</dc:creator>
+      <dc:creator>Robnik-&#352;ikonja, Marko</dc:creator>
+      <dc:creator>Vintar, &#352;pela</dc:creator>
+      <dc:subject>Moses language model</dc:subject>
+      <dc:subject>probability language model</dc:subject>
+      <dc:description>The ccGigafida ARPA language model was created from the ccGigafida written corpus of Slovenian (https://www.clarin.si/repository/xmlui/handle/11356/1035) using the KenLM algorithm in the Moses machine translation framework. It is a general language model of contemporary standard Slovenian language that can be used as a language model in statistical machine translation systems.&#13;
+&#13;
+The language model was created as a part of the master thesis:&#13;
+Kadivec, Jo&#382;e. 2016. Prilagoditev statisti&#269;nega strojnega prevajalnika za specifi&#269;no domeno v slovenskem jeziku (Domain specific adaptation of a statistical machine translation engine in Slovene language). Master's thesis, Faculty of computer and information science, University of Ljubljana. https://repozitorij.uni-lj.si/IzpisGradiva.php?id=84815</dc:description>
+      <dc:date>2017-05-05</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1119</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Faculty of Computer and Information Science, University of Ljubljana</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,54 @@
+{
+    "Contact": [
+        "wever@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "TEXT/X-SH",
+        "ZIP"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/16",
+    "PublicationTimestamp": "2017-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "WSL Institute for Snow and Avalanche Research SLF"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Nander Wever"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/16;2018-07-07T00:20:29Z;doi:10.16904/16;Eng;MD_CharacterSetCode_utf8;Nander Wever;WSL Institute for Snow and Avalanche Research SLF;wever@slf.ch;2017-03-21T13:59:10;ISO 19115:2003/19139;1.0;EPSG:4326;Weissfluhjoch dataset for ESM-SnowMIP;2017-12-31;This Weissfluhjoch dataset is a processed version  of the Weissfluhjoch dataset version 6 from http://www.envidat.ch/dataset/10-16904-1. This dataset was specially created for the ESM-SnowMIP project. Here it is documented how this dataset has been created.;Nander Wever;WSL Institute for Snow and Avalanche Research SLF;wever@slf.ch;SNOW MODELS;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;9.809568 46.829598;TEXT/X-SH;ZIP;https://www.envidat.ch/dataset/snowmip;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/a9264e9f-ea9b-4c89-b471-464efb891826/resource/a5918c50-6716-4dcf-b462-e1970ae1e072/download/wfj.smet;HTTPS;DATASET WEISSFLUHJOCH FOR ESM-SNOWMIP;download;https://www.envidat.ch/dataset/a9264e9f-ea9b-4c89-b471-464efb891826/resource/aa8942dc-5fe5-4792-bf4b-1b950d9c6204/download/createwfjdataset.sh;HTTPS;CONVERSION SCRIPT;download;https://www.envidat.ch/dataset/a9264e9f-ea9b-4c89-b471-464efb891826/resource/c7f7533e-03f2-42c2-ad82-36d3c6ab8fd2/download/io.ini;HTTPS;INI FILE;download;https://www.envidat.ch/dataset/a9264e9f-ea9b-4c89-b471-464efb891826/resource/b834a645-c5e0-4bf1-bceb-17a2eb62b61a/download/wfjairpressuredata.zip;HTTPS;WFJ_AIRPRESSURE_DATA.ZIP;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "f0c65311-0256-5242-8996-5f4182c3ac6e",
+    "notes": [
+        "This Weissfluhjoch dataset is a processed version  of the Weissfluhjoch dataset version 6 from http://www.envidat.ch/dataset/10-16904-1. This dataset was specially created for the ESM-SnowMIP project. Here it is documented how this dataset has been created."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/16",
+        "oai:envidat.ch:10.16904/16"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "SNOW MODELS"
+        }
+    ],
+    "title": [
+        "Weissfluhjoch dataset for ESM-SnowMIP"
+    ],
+    "url": "https://www.envidat.ch/dataset/a9264e9f-ea9b-4c89-b471-464efb891826/resource/b834a645-c5e0-4bf1-bceb-17a2eb62b61a/download/wfjairpressuredata.zip"
+}

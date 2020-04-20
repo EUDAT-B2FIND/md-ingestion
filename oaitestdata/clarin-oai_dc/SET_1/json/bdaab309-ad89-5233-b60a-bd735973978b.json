@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Fryske Akademy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/pdf"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1958",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1958"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1958",
+    "PublicationTimestamp": "2017-02-03T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Fryske Akademy"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU General Public License 2 or later (GPL-2.0)",
+        "http://opensource.org/licenses/GPL-2.0",
+        "PUB"
+    ],
+    "author": [
+        "van de Velde, Hans",
+        "Heeringa, Wilbert"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1958;2017-04-10T09:19:08Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Visible Vowels;van de Velde, Hans;Heeringa, Wilbert;Phonetics;language variation;dialect variation;This program enables the user to plot vowels in the F1/F2 space for multiple points in the vowel interval, e.g. at 20%, 50% and 80%.;2017-02-03;toolService;http://hdl.handle.net/11372/LRT-1958;GNU General Public License 2 or later (GPL-2.0);http://opensource.org/licenses/GPL-2.0;PUB;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 1;Fryske Akademy;https://fryske-akademy.shinyapps.io/visvow1/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bdaab309-ad89-5233-b60a-bd735973978b",
+    "notes": [
+        "This program enables the user to plot vowels in the F1/F2 space for multiple points in the vowel interval, e.g. at 20%, 50% and 80%."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1958"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Phonetics"
+        },
+        {
+            "name": "language variation"
+        },
+        {
+            "name": "dialect variation"
+        }
+    ],
+    "title": [
+        "Visible Vowels"
+    ],
+    "url": ""
+}

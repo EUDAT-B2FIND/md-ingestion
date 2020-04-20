@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Somali"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/11",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/11"
+    ],
+    "PID": "http://hdl.handle.net/10794/11",
+    "PublicationTimestamp": "2015-11-20T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/11;2017-10-27T16:40:22Z;hdl_10794_1;hdl_10794_2;Af-Soomaali 2001 (2017-10-16);Af-Soomaali 2001 (2017-10-16);n/a, n/a;Somali;Corpus;Af-Soomaali 2001. The material is sentence scrambled.;Af-Soomaali 2001. Materialet \u00e4r meningsomkastat.;2015-11-20;corpus;http://hdl.handle.net/10794/11;som;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/somali-2001",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "41c6020f-3b6a-5a1b-b666-a3bd264f984e",
+    "notes": [
+        "Af-Soomaali 2001. The material is sentence scrambled.",
+        "Af-Soomaali 2001. Materialet \u00e4r meningsomkastat."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/11"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Somali"
+        },
+        {
+            "name": "Corpus"
+        }
+    ],
+    "title": [
+        "Af-Soomaali 2001 (2017-10-16)",
+        "Af-Soomaali 2001 (2017-10-16)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,64 @@
+{
+    "Contributor": [
+        "CINES"
+    ],
+    "DiscHierarchy": [
+        "3.1.2",
+        "Live Sciences",
+        "Plant Sciences "
+    ],
+    "Discipline": "Plant_Sciences",
+    "Format": [
+        "image/jpeg"
+    ],
+    "MetaDataAccess": "https://opendata.cines.fr/herbadrop-api/rest/data/search/dataset/1b4e01c9-a1c7-5be6-8da6-f53b328b3cc1",
+    "MetaDataAcess": [
+        "P03612066"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "PublicationTimestamp": "2018-12-08T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "MNHN"
+    ],
+    "ResourceType": [
+        "StillImage|PRESERVED_SPECIMEN"
+    ],
+    "Rights": [
+        "cc-by"
+    ],
+    "author": [
+        "unavailable"
+    ],
+    "group": "herbadrop",
+    "groups": [
+        {
+            "name": "herbadrop"
+        }
+    ],
+    "name": "1b4e01c9-a1c7-5be6-8da6-f53b328b3cc1",
+    "namespaces": [
+        ":"
+    ],
+    "notes": [
+        "Digitized_herbarium_sheet",
+        "unavailable"
+    ],
+    "oai_identifier": [
+        "1b4e01c9-a1c7-5be6-8da6-f53b328b3cc1"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Fabaceae"
+        }
+    ],
+    "title": [
+        "Vicia peregrina L."
+    ],
+    "url": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03612066"
+}

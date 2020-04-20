@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Bludau, Sebastian",
+        "Eickhoff, Simon B.",
+        "Caspers, Svenja",
+        "Amunts, Katrin",
+        "Seitz, R\u00fcdiger J.  ",
+        "Mohlberg, Hartmut",
+        "Ruan, Jianghai",
+        "Palomero-Gallagher, Nicola"
+    ],
+    "DOI": "http://dx.doi.org/10.25493/WVNR-SPT",
+    "DiscHierarchy": [
+        "3.2",
+        "Life Sciences",
+        "Medicine"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "NIFTI"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_WVNR-SPT",
+    "MetadataAccess": [
+        "10.25493_WVNR-SPT"
+    ],
+    "PublicationTimestamp": "2019-06-04T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1007/s00429-018-1738-6"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Amunts, Katrin"
+    ],
+    "fulltext": "10.25493_WVNR-SPT;2019-12-10T12:41:56Z;https://doi.org/10.25493/WVNR-SPT;Probabilistic cytoarchitectonic map of Area 6ma (preSMA, mesial SFG) (v9.1);2019-06-04T16:38:35.773Z;This dataset contains the distinct architectonic Area 6ma (preSMA, mesial SFG) in the MNI Colin 27 and MNI ICBM 152 reference spaces. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. Subsequently, the results of the cytoarchitectonic analysis are mapped to the MNI Colin 27 and MNI ICBM 152 reference spaces where each voxel is assigned with the probability to belong to Area 6ma (preSMA, mesial SFG). The probability map of Area 6ma (preSMA, mesial SFG) is provided in the NifTi format for each brain reference space and hemisphere. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and integration of new brain structures may lead to small deviations in earlier released datasets.;neuroscience;histology;imaging;brain mapping;english;dataset;The Human Brain Project;Ruan, Jianghai;Bludau, Sebastian;Palomero-Gallagher, Nicola;Caspers, Svenja;Mohlberg, Hartmut;Eickhoff, Simon B.;Seitz, R\u00fcdiger J.  ;Amunts, Katrin;Amunts, Katrin;NIFTI;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.1007/s00429-018-1738-6",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "0ded9e4b-9cb7-5308-8ab5-fcf5c9519db6",
+    "notes": [
+        "This dataset contains the distinct architectonic Area 6ma (preSMA, mesial SFG) in the MNI Colin 27 and MNI ICBM 152 reference spaces. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. Subsequently, the results of the cytoarchitectonic analysis are mapped to the MNI Colin 27 and MNI ICBM 152 reference spaces where each voxel is assigned with the probability to belong to Area 6ma (preSMA, mesial SFG). The probability map of Area 6ma (preSMA, mesial SFG) is provided in the NifTi format for each brain reference space and hemisphere. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and integration of new brain structures may lead to small deviations in earlier released datasets."
+    ],
+    "oai_identifier": [
+        "10.25493_WVNR-SPT"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "histology"
+        },
+        {
+            "name": "imaging"
+        },
+        {
+            "name": "brain mapping"
+        }
+    ],
+    "title": [
+        "Probabilistic cytoarchitectonic map of Area 6ma (preSMA, mesial SFG) (v9.1)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "University of Ja\u00e9n (Spain)",
+        "European Organization for Nuclear Research (CERN)"
+    ],
+    "Contributor": [
+        "Montejo-R\u00e1ez, Arturo"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1312",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1312"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1312",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Ja\u00e9n (Spain)",
+        "European Organization for Nuclear Research (CERN)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Spain||Switzerland"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Montejo-R\u00e1ez, Arturo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1312;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Text Categorization Toolkit;Montejo-R\u00e1ez, Arturo;Montejo-R\u00e1ez, Arturo;text categorization;TECAT is a command-line tool for multi-label text categorization and evaluation. It is capable of combining multiple bases binary classifiers (built-in and external ones).;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1312;downloadable_files_count: 0;Spain||Switzerland;European Organization for Nuclear Research (CERN);University of Ja\u00e9n (Spain);http://sinai.ujaen.es/wiki/index.php/TeCat",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f8c03c29-a3b5-52af-8b0c-7860b793cb1b",
+    "notes": [
+        "TECAT is a command-line tool for multi-label text categorization and evaluation. It is capable of combining multiple bases binary classifiers (built-in and external ones)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1312"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "text categorization"
+        }
+    ],
+    "title": [
+        "Text Categorization Toolkit"
+    ],
+    "url": ""
+}

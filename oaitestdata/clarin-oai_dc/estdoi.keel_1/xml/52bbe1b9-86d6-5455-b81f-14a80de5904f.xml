@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:12540148</identifier>
+    <datestamp>2019-05-18T17:26:28Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti m&#245;istatuste andmebaas</dc:title>
+      <dc:title xml:lang="en">Estonian Riddles Database</dc:title>
+      <dc:creator>K&#245;iva, Mare</dc:creator>
+      <dc:creator>Krikmann, Jaak</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-10-10</dc:date>
+      <dc:date>Updated: 2017-10-10</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-0008BL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Andmebaas on rajatud Eesti Kirjandusmuuseumi folkloristika osakonnas. Baasi aluseks oli 2800 Word 7.0 formaadis andmetabelit, mille p&#245;hjal toodeti akadeemilise v&#228;ljaande "Eesti m&#245;istatused" (EM) p&#245;hik&#246;idete I (2001) ja II (2002) k&#228;sikiri. Andmebaas on kasutatav kolmes variandis, siinne versioon on xml-kujule teisendatud "baas-lugemik", mis esitab 95 751 eesti m&#245;istatusteksti kirjed 20 000 kirje kaupa EM I&#8211;II t&#252;&#252;pide ja tekstide j&#228;rjekorras (erinevalt andmebaasi kasutajaliidesest, kus on kirjed esitatud 1000 kaupa). Andmebaasi juurde kuuluvad abimaterjalid (millest k&#245;iki pole siinses versioonis): 1) kogu EM I&#8211;II tr&#252;kiversioonis leiduv teave 2) lahendite temaatiline register 3) Eesti kihelkondade kontuurkaart kihelkonnal&#252;henditega 4) m&#245;istatuste andmebaasi suhtes autonoomne &#252;ldotstarbeline kartografeerimismasin.
+
+Andmebaas kasutab &#252;hist allikmaterjali eesti m&#245;istatuste akadeemiliste v&#228;ljaannetega:
+
+Eesti m&#245;istatused. I, [m&#245;istatust&#252;&#252;bid] 1-1350 = Aenigmata Estonica. I, 1-1350 / Eesti Keele Instituut, Eesti Kirjandusmuuseum, Tartu &#220;likool; koostanud Anne Hussar, Arvo Krikmann, Rein Saukas, Piret Voolaid; toimetanud Arvo Krikmann ja Rein Saukas, Tartu: Eesti Keele Sihtasutus, 2001 (Tallinn: Pakett), 891 lk.
+
+Eesti m&#245;istatused. II, [m&#245;istatust&#252;&#252;bid] 1351-2800 = Aenigmata Estonica II, 1351-2800 / Eesti Keele Instituut, Eesti Kirjandusmuuseum, Tartu &#220;likool; koostanud Anne Hussar, Arvo Krikmann, Rein Saukas, Piret Voolaid; toimetanud Arvo Krikmann ja Rein Saukas, Tartu: Eesti Keele Sihtasutus, 2002 (Tallinn: Pakett), 877 lk. 
+Elektroonilise andmebaasi koostajad: Jaak Krikmann (php), Arvo Krikmann (autor, konsultatsioon).
+</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The database was created at the Department of Folkloristics of the Estonian Literary Museum. The foundation for the database was 2,800 Word 7.0 format data tables, on the basis of which the manuscripts of the main volumes I (2001) and II (2002) of the academic publication "Estonian Riddles" (ER) were compiled. The database is available in three variants; this version is converted into an xml-formatted "base reader", which provides 95,751 entries of the texts of Estonian riddles by groups of 20,000 entries in the order of the types and texts of EM I-II (unlike the online interface of the database, in which entries are given by groups of 1000). Auxiliary materials for the database (not all included here) are: 1) all the information contained in the ER I-II paper editions; 2) thematic register of solutions; 3) a contour map of Estonian parishes with parish abbreviations; 4) an autonomous general purpose mapping machine.
+
+The database uses source material common with academic editions of Estonian riddles:
+Estonian Riddles [Eesti m&#245;istatused] I, [riddle types] 1&#8211;1350 = Aenigmata Estonica I, 1&#8211;1350 / Institute of the Estonian Language, Estonian Literary Museum, University of Tartu; compiled by Anne Hussar, Arvo Krikmann, Rein Saukas, Piret Voolaid; edited by Arvo Krikmann and Rein Saukas. Tartu: Estonian Language Foundation, 2001 (Tallinn: Pakett), 891 pages.
+Estonian Riddles [Eesti m&#245;istatused] II, [riddle types] 1351&#8211;2800 = Aenigmata Estonica II, 1351&#8211;2800 / Institute of the Estonian Language, Estonian Literary Museum, University of Tartu; compiled by Anne Hussar, Arvo Krikmann, Rein Saukas, Piret Voolaid; edited by Arvo Krikmann and Rein Saukas. Tartu: Estonian Language Foundation, 2002 (Tallinn: Pakett), 877 pages.
+Compilers of the electronic database: Jaak Krikmann (php), Arvo Krikmann (author, consultant).
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Faculty of Information Studies Novo mesto"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 6",
+        "text/plain",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1105",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1105"
+    ],
+    "PID": "http://hdl.handle.net/11356/1105",
+    "PublicationTimestamp": "2017-04-23T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Faculty of Information Studies Novo mesto"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1007/s10579-018-9413-3"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bu\u010dar, Jo\u017ee"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1105;2018-03-12T16:18:38Z;hdl_11356_1023;hdl_11356_1024;R crawlers for five Slovenian web media 1.0;Bu\u010dar, Jo\u017ee;web crawling;R;Five web-crawlers written in the R language for retrieving Slovenian texts from the news portals 24ur, Dnevnik, Finance, Rtvslo, and \u017durnal24. These portals contain political, business, economic and financial content.;2017-04-23;toolService;http://hdl.handle.net/11356/1105;slv;https://doi.org/10.1007/s10579-018-9413-3;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;text/plain;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 6;Faculty of Information Studies Novo mesto;https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c13eec16-d1cb-5014-95cb-13994113727c",
+    "notes": [
+        "Five web-crawlers written in the R language for retrieving Slovenian texts from the news portals 24ur, Dnevnik, Finance, Rtvslo, and \u017durnal24. These portals contain political, business, economic and financial content."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1105"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "web crawling"
+        }
+    ],
+    "title": [
+        "R crawlers for five Slovenian web media 1.0"
+    ],
+    "url": ""
+}

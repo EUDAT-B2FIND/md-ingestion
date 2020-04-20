@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:74</identifier>
+    <datestamp>2018-02-07T07:56:24Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Time-lapse microscopy data</dc:title>
+      <dc:creator>Bergmiller, Tobias</dc:creator>
+      <dc:creator>Nikolic, Nela</dc:creator>
+      <dc:subject>579 Microorganisms, fungi, algae</dc:subject>
+      <dc:description>Nela Nikolic, Tobias Bergmiller, Alexandra Vandervelde, Tanino G. Albanese, Lendert Gelens, and Isabella Moll (2018)&#13;
+&#8220;Autoregulation of mazEF expression underlies growth heterogeneity in bacterial populations&#8221; Nucleic Acids Research, doi: 10.1093/nar/gky079;&#13;
+microscopy experiments by Tobias Bergmiller; image and data analysis by Nela Nikolic.</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>video</dc:format>
+      <dc:format>video</dc:format>
+      <dc:format>image</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/74/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/74/2/15-11-05.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/74/3/15-07-31.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/74/4/Images_for_analysis.zip</dc:identifier>
+      <dc:identifier>  Bergmiller, Tobias and Nikolic, Nela   Time-lapse microscopy data.  [Data Collection]    (In Press)  </dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:74</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:74</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:74</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

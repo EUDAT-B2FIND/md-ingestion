@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1702</identifier>
+    <datestamp>2018-07-02T22:05:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UDPipe</dc:title>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:creator>Strakov&#225;, Jana</dc:creator>
+      <dc:subject>tokenizer</dc:subject>
+      <dc:subject>POS tagger</dc:subject>
+      <dc:subject>tagger</dc:subject>
+      <dc:subject>lemmatization</dc:subject>
+      <dc:subject>parser</dc:subject>
+      <dc:subject>dependency parser</dc:subject>
+      <dc:subject>CoNLL-U</dc:subject>
+      <dc:description>UDPipe is an trainable pipeline for tokenization, tagging, lemmatization and dependency parsing of CoNLL-U files. UDPipe is language-agnostic and can be trained given only annotated data in CoNLL-U format. Trained models are provided for nearly all UD treebanks. UDPipe is available as a binary, as a library for C++, Python, Perl, Java, C#, and as a web service.&#13;
+&#13;
+UDPipe is a free software under Mozilla Public License 2.0 (http://www.mozilla.org/MPL/2.0/) and the linguistic models are free for non-commercial use and distributed under CC BY-NC-SA (http://creativecommons.org/licenses/by-nc-sa/4.0/) license, although for some models the original data used to create the model may impose additional licensing conditions. UDPipe is versioned using Semantic Versioning (http://semver.org/).&#13;
+&#13;
+UDPipe website http://ufal.mff.cuni.cz/udpipe contains download links of both the released packages and trained models, hosts documentation and offers online demo.&#13;
+&#13;
+UDPipe development repository http://github.com/ufal/udpipe is hosted on GitHub.</dc:description>
+      <dc:date>2016-05-23</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1702</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:rights>Mozilla Public License 2.0</dc:rights>
+      <dc:rights>http://opensource.org/licenses/MPL-2.0</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/udpipe</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

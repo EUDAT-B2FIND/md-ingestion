@@ -1,0 +1,146 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>1842_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:12Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Patricia Matrai</origin>
+            <origin>Stoyka Netcheva</origin>
+            <origin>Don Perovich</origin>
+            <origin>Francisco Chavez</origin>
+            <origin>Jan Bottenheim</origin>
+            <origin>Paul Shepson</origin>
+            <origin>William Simpson</origin>
+            <pubdate>20130404</pubdate>
+            <title>OASIS-CANADA-O-buoys: Development of an autonomous ice tethered platform (buoy) to determine the surface atmospheric composition year round over selected locations of the Arctic Ocean</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>T. N. Knepp, J. Bottenheim, M. Carlsen, D. Carlson, D. Donohoue, G. Friederich, P.M. Matrai, S. Netcheva, D.K. Perovich, R. Santini, P.B. Shepson, W. Simpson, T. Valentic, C. Williams, and P.J. Wyss, Development of an Autonomous Sea Ice Tethered Buoy for the Study of Ocean- Atmosphere-Sea Ice-Snow Pack Interactions: the O-buoy, Atmospheric Measurement Techniques, 3, 249-261, 2010.</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1842</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>A buoy based instrument platform (the O-buoy) was designed, constructed, and field tested for year-round measurement of ozone (O3), bromine monoxide (BrO), carbon dioxide (CO2), and meteorological variables over Arctic sea ice. The O-buoy operated in an autonomous manner with daily, bi-directional data transmissions using Iridium satellite communication. The O-buoy was equipped with three power sources: primary lithium-ion battery packs, rechargeable lead acid packs, and solar panels that recharge the lead acid packs, and can fully power the O-buoy during summer operation. This system was designed to operate under the harsh conditions present in the Arctic, with minimal direct human interaction, to aid in our understanding of the atmospheric chemistry that occurs in this remote region of the world. The current design requires approximately yearly maintenance limited by the lifetime of the primary power supply. The O-buoy system was field tested in Elson Lagoon, Barrow, Alaska from February to May 2009 and deployed in the Beaufort Sea in October 2009, 2010, 2011; in the Arctic Ocean near Borden Island in April 2010; in the North Pole area September 2011; and in Hudson Bay February 2010 and February 2011. Ozone: one-minute averaged were collected by a modified 2B-technology ozone monitor for periods of time dependant on available power. Hourly measurements of CO2 were collected with specially-constructed instrument based on Licor technology. BrO data were collected employing the MAXDOAS technique developed by the University of Alaska Fairbanks during hours of available daylight. Meteorological variables: temperature, atmospheric pressure, humidity, and wind speed and direction were obtained with Campbell Scientific instrumentation at five-minute intervals. Position and heading came from Hemisphere differential GPS. Data transfer was accomplished by daily upload via Iridium satellite to SRI and open to the public on display. All chemical sensors include the capability for zero and span checks.&amp;#x0d;
+Data usage requires permission of P. Matrai at pmatrai@bigelow.org.</abstract>
+          <purpose>O-buoys enable remote and long-term chemical measurements in hostile polar environments, generating important knowledge and understanding for decision makers and Northerners who are adapting to their changing environment. The O-buoy network will provide the long-term observations required not only to improve understanding of the fundamental chemical and physical processes but to better understand how atmosphere-surface interactive processes respond to the changes across the Arctic. The overall project goal is to advance knowledge of the present state of the global atmospheric CO2 level and future behaviour of the global carbon cycle.</purpose>
+          <supplinf>Summary: O-buoys were deployed in the frozen Arctic Ocean to obtain long term concentration data for O3, CO2 and BrO.  A prototype O-buoy was operating in the Elson Lagoon near Barrow Alaska to determine performance characteristics.  The prototype was deployed in the frozen Beaufort Sea in 2009 and 2 more units in 2010 and 2011. One unit under name O-buoy 3 collected information over the ice of the Hudson Bay (near Churchill, MB) in February and March 2010 and 2011. O-buoy 4 recorded data over the ice of the Arctic Ocean south of Borden Island in April 2010 and was redeployed in the North Pole area in 2011. More units will be deployed in the future in various parts of the Arctic and sub-Arctic. Research Program(s): IPY. For further information: http://transport.sri.com/obuoy/monitor; http://www.aoncadis.org/dataset/o-buoy3_deployment.html; http://www.aoncadis.org/dataset/o-buoy4_deployment.html; www.o-buoy.org/.</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20090203</begdate>
+              <enddate>99991231</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-171.71</westbc>
+            <eastbc>-52.01</eastbc>
+            <northbc>89.52</northbc>
+            <southbc>58.76</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Alaska</themekey>
+            <themekey>Arctic</themekey>
+            <themekey>Atmospheric composition</themekey>
+            <themekey>Bromine oxide</themekey>
+            <themekey>Carbon dioxide</themekey>
+            <themekey>Ice</themekey>
+            <themekey>Ozone</themekey>
+          </theme>
+          <place>
+            <placekt>Elson lagoon near Barrow, Alaska; Beaufort Gyre; Arctic Ocean south of Borden Island, Canada; Hudson Bay; Arctic Ocean around the North Pole</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Environment Canada</cntorg>
+              <cntper>Stoyka Netcheva</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>4905 Dufferin Street</address>
+              <city>Toronto</city>
+              <state>ON</state>
+              <postal>M3H5T4</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>417 7394856</cntvoice>
+            <cntemail>stoyka.netcheva@canada.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>1842</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20130404</metd>
+        <metrd>20130404</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Stoyka Netcheva</cntper>
+              <cntorg>Environment Canada</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>4905 Dufferin Street</address>
+              <city>Toronto</city>
+              <state>ON</state>
+              <postal>M3H5T4</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>417 7394856</cntvoice>
+            <cntemail>stoyka.netcheva@canada.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

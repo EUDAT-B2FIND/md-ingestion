@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17945050</identifier>
+    <datestamp>2019-03-14T03:02:20Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Kollokatsioonide tuvastaja</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-03</dc:date>
+      <dc:date>Updated: 2019-01-03</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0017AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Kollokatsioonid on sellised s&#245;napaarid, mille liikmed esinevad &#252;ksteise naabruses sagedamini kui v&#245;iks eeldada nende &#252;ksikult esinemise sageduste p&#245;hjal. T&#252;&#252;pilised kollokatsioonid on p&#252;si&#252;hendid - n&#228;iteks &#252;hendverbid v&#245;i idiomaatilised v&#228;ljendid. P&#252;si&#252;hendid v&#245;ivad muidugi koosneda ka rohkem kui kahest s&#245;nast, kuid meie kollokatsioonide otsija suudab tuvastada ainult kahes&#245;nalisi &#252;hendeid.
+
+Kollokatsioonide otsimisel arvestatakse v&#245;imalike kollokaatide kandidaatidena samas osalauses esinevaid s&#245;navorme v&#245;i lemmasid.
+
+Kollokatsioone saab otsida kolmel viisil:
+
+1) teatud lemma olulisi kollokaate s&#245;navormidena
+2) teatud lemma olulisi kollokaate lemmadena
+3) teatud s&#245;navormi olulisi kollokaate s&#245;navormidena
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

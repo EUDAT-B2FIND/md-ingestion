@@ -1,0 +1,60 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-122238319",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:16637401",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:16637401"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63673210799,
+    "TempCoverageEnd": 63673210799,
+    "TemporalCoverage": " point in time : 2018-09-22T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-09-22T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-09-22T11:59:59Z",
+    "author": [
+        "Peter CLOETENS",
+        "Alexandra JOITA PACUREANU",
+        "Julio Cesar da Silva"
+    ],
+    "fulltext": "oai:oai.datacite.org:16637401;2018-09-22T09:03:18Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-122238319;Peter CLOETENS;Alexandra JOITA PACUREANU;Julio Cesar da Silva;Holotomography of Al/Si alloys;IH-MA-52;id16a;European Synchrotron Radiation Facility;2018-09-22;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "0b3646b0-ede6-5381-936f-e836680857cc",
+    "oai_identifier": [
+        "oai:oai.datacite.org:16637401"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "IH-MA-"
+        },
+        {
+            "name": "ida"
+        }
+    ],
+    "title": [
+        "Holotomography of Al/Si alloys"
+    ],
+    "url": ""
+}

@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Institute of Slavic Studies, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 84",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish",
+        "Ukrainian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/535",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/535"
+    ],
+    "PID": "http://hdl.handle.net/11321/535",
+    "PublicationTimestamp": "2018-07-21T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Slavic Studies, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "IS PAS corpora license",
+        "http://clarin-pl.eu/en/licenses/is-pas-corpora-license/",
+        "CC"
+    ],
+    "author": [
+        "Tymoshuk, Roman",
+        "Duszkin, Maksim",
+        "Roszko, Roman",
+        "Sosnowski, Wojciech"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/535;2018-07-21T20:51:36Z;hdl_11321_3;hdl_11321_4;Polish-Ukrainian Parallel Corpus;Roszko, Roman;Tymoshuk, Roman;Duszkin, Maksim;Sosnowski, Wojciech;Polish;Ukrainian;Parallel Corpora;Polish-Ukrainian Parallel Corpus;2018-07-21;corpus;http://hdl.handle.net/11321/535;pol;ukr;IS PAS corpora license;http://clarin-pl.eu/en/licenses/is-pas-corpora-license/;CC;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 84;Institute of Slavic Studies, Polish Academy of Sciences",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "66cc8cd9-3996-55ed-ad47-4c7b678b8ce8",
+    "notes": [
+        "Polish-Ukrainian Parallel Corpus"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/535"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Polish"
+        },
+        {
+            "name": "Ukrainian"
+        },
+        {
+            "name": "Parallel Corpora"
+        }
+    ],
+    "title": [
+        "Polish-Ukrainian Parallel Corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,97 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/11690835.v1",
+    "DiscHierarchy": [
+        "1.6.2",
+        "Social and Cultural Anthropology",
+        "Asian Studies"
+    ],
+    "Discipline": "History",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/11690835",
+    "MetadataAccess": [
+        "oai:figshare.com:article/11690835"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2020-01-23T16:48:49Z",
+    "PublicationYear": [
+        "2020"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Otrar_archaeological_site_digital_geospatial_dataset_2016/11690835"
+    ],
+    "ResourceType": [
+        "Dataset",
+        "Dataset"
+    ],
+    "Rights": [
+        "CC BY-NC-ND 4.0"
+    ],
+    "author": [
+        "Gai Jorayev (6780824)"
+    ],
+    "fulltext": "oai:figshare.com:article/11690835;2020-01-23T16:48:49Z;category_583;category_1597;category_1598;category_1695;portal_549;item_type_3;month_year_01_2020;Otrar archaeological site; digital geospatial dataset 2016;Gai Jorayev (6780824);Photogrammetry and Remote Sensing;Archaeological Science;Archaeology of Asia, Africa and the Americas;Asian History;Otrar;Central Asian Archaeological Landscapes;CAAL;Silk Roads;The archaeological site of Otrar (also known as <i>\u041e\u0442\u044b\u0440\u0430\u0440, Farab, Otrartobe</i>) is one of the most famous monuments of Central Asia. It is located in Southern Kazakhstan (coordinates: decimal degrees: 42.852822\u00b0 68.302987\u00b0. UTM: 42 T, 443052.13 m E, 4744706.74 m N), near to the Syr Darya river. The city of Otrar was occupied from at least the 5th century AD until its final abandonment in the 18th century, and sits at the centre of the 200 sq km Otrar oasis, which is associated with agriculture, trade, culture and different empire systems in the past. Archaeological study of the site takes its beginnings from early 20th century, with later, more systematic works under the Otrar Comprehensive Archaeological Expedition starting in 1969.  The monument is protected by the state archaeological museum of Otrar which is located in the nearby town of Shaulder, and the museum also acts as a research centre for study of the oasis, with many finds from excavations at Otrar on display.<br><br>Aerial photography data used for this dataset was collected by Gai Jorayev (UCL) and Denis Sorokin (Archaeological Expertise, Kazakhstan)  in May, 2016. Data processed and published by Gai Jorayev. <br><br>The dataset published here include:<br><br>- 5 aerial images taken in May, 2016;<br><br>- Processing report in PDF format;<br><br>- Digital orthomosaic, digital spatial model and digital terrain model in TIFF format; all to be viewed and analysed in GIS software;<br><br>- KML tiles in ZIP archive format, to be downloaded and viewed with viewers such as Google Earth;<br><br>- 3D mesh in OBJ format and texture in 7z archive format, to be downloaded and viewed with 3D software such as MeshLab. The same 3D mesh is made available on Sketchfab platform with link provided below.<br>;2020-01-23T16:48:49Z;Dataset;Dataset;10.5522/04/11690835.v1;https://figshare.com/articles/Otrar_archaeological_site_digital_geospatial_dataset_2016/11690835;CC BY-NC-ND 4.0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "7f18faa4-7eab-5b4a-97db-79486d58add2",
+    "notes": [
+        "The archaeological site of Otrar (also known as <i>\u041e\u0442\u044b\u0440\u0430\u0440, Farab, Otrartobe</i>) is one of the most famous monuments of Central Asia. It is located in Southern Kazakhstan (coordinates: decimal degrees: 42.852822\u00b0 68.302987\u00b0. UTM: 42 T, 443052.13 m E, 4744706.74 m N), near to the Syr Darya river. The city of Otrar was occupied from at least the 5th century AD until its final abandonment in the 18th century, and sits at the centre of the 200 sq km Otrar oasis, which is associated with agriculture, trade, culture and different empire systems in the past. Archaeological study of the site takes its beginnings from early 20th century, with later, more systematic works under the Otrar Comprehensive Archaeological Expedition starting in 1969.  The monument is protected by the state archaeological museum of Otrar which is located in the nearby town of Shaulder, and the museum also acts as a research centre for study of the oasis, with many finds from excavations at Otrar on display.<br><br>Aerial photography data used for this dataset was collected by Gai Jorayev (UCL) and Denis Sorokin (Archaeological Expertise, Kazakhstan)  in May, 2016. Data processed and published by Gai Jorayev. <br><br>The dataset published here include:<br><br>- 5 aerial images taken in May, 2016;<br><br>- Processing report in PDF format;<br><br>- Digital orthomosaic, digital spatial model and digital terrain model in TIFF format; all to be viewed and analysed in GIS software;<br><br>- KML tiles in ZIP archive format, to be downloaded and viewed with viewers such as Google Earth;<br><br>- 3D mesh in OBJ format and texture in 7z archive format, to be downloaded and viewed with 3D software such as MeshLab. The same 3D mesh is made available on Sketchfab platform with link provided below.<br>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/11690835"
+    ],
+    "oai_set": [
+        "category_583",
+        "category_1597",
+        "category_1598",
+        "category_1695",
+        "portal_549",
+        "item_type_3",
+        "month_year_01_2020"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Photogrammetry Remote Sensing"
+        },
+        {
+            "name": "Archaeological Science"
+        },
+        {
+            "name": "Archaeology Asia"
+        },
+        {
+            "name": "Africa Americas"
+        },
+        {
+            "name": "Asian History"
+        },
+        {
+            "name": "Otrar"
+        },
+        {
+            "name": "Central Asian Archaeological Landscapes"
+        },
+        {
+            "name": "CAAL"
+        },
+        {
+            "name": "Silk Roads"
+        }
+    ],
+    "title": [
+        "Otrar archaeological site; digital geospatial dataset 2016"
+    ],
+    "url": ""
+}

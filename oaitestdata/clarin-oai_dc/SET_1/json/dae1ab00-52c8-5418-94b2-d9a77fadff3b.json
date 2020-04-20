@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=9e991cd0190211e6a2aa782bcb0741350bdadc6cae0a4c4587f0543810ec0865",
+    "MetadataAccess": [
+        "9e991cd0190211e6a2aa782bcb0741350bdadc6cae0a4c4587f0543810ec0865"
+    ],
+    "PublicationTimestamp": "2016-05-13T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "fulltext": "9e991cd0190211e6a2aa782bcb0741350bdadc6cae0a4c4587f0543810ec0865;2018-11-15T16:40:22Z;corpus;corpus:text;Bulgarian-English Wikipedia WSD/NED corpus;Bulgarian-English Wikipedia WSD/NED corpus is composed of articles from the Bulgarian version of Wikipedia and their English counterparts.;2016-05-13",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dae1ab00-52c8-5418-94b2-d9a77fadff3b",
+    "notes": [
+        "Bulgarian-English Wikipedia WSD/NED corpus is composed of articles from the Bulgarian version of Wikipedia and their English counterparts."
+    ],
+    "oai_identifier": [
+        "9e991cd0190211e6a2aa782bcb0741350bdadc6cae0a4c4587f0543810ec0865"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Bulgarian-English Wikipedia WSD/NED corpus"
+    ]
+}

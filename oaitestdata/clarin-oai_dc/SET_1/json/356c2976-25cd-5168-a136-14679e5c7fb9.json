@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "application/pdf",
+        "application/octet-stream"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/291",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/291"
+    ],
+    "PID": "http://hdl.handle.net/11321/291",
+    "PublicationTimestamp": "2016-04-25T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Marci\u0144czuk, Micha\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/291;2016-06-07T04:49:47Z;hdl_11321_3;hdl_11321_4;SpatialPL;Marci\u0144czuk, Micha\u0142;spatial expression recognition;information extraction;patial role labelling;SpatialPl is a tool for automatic recognition of spatial expressions in Polish texts;2016-04-25;toolService;http://hdl.handle.net/11321/291;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;application/pdf;downloadable_files_count: 2;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/narzedzia-i-zasoby/narzedzia/spatialpl",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "356c2976-25cd-5168-a136-14679e5c7fb9",
+    "notes": [
+        "SpatialPl is a tool for automatic recognition of spatial expressions in Polish texts"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/291"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "spatial expression recognition"
+        },
+        {
+            "name": "information extraction"
+        },
+        {
+            "name": "patial role labelling"
+        }
+    ],
+    "title": [
+        "SpatialPL"
+    ],
+    "url": ""
+}

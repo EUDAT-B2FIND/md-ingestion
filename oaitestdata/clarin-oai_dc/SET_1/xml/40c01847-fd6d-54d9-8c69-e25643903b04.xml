@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AAE0-A</identifier>
+    <datestamp>2018-07-02T22:05:53Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>English-Slovak Parallel Corpus</dc:title>
+      <dc:creator>Galu&#353;&#269;&#225;kov&#225;, Petra</dc:creator>
+      <dc:creator>Garab&#237;k, Radovan</dc:creator>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>English-Slovak corpus</dc:subject>
+      <dc:description>English-Slovak parallel corpus consisting of several freely available corpora (Acquis [1], Europarl [2], Official Journal of the European Union [3] and part of OPUS corpus [4] &#8211; EMEA,  EUConst, KDE4 and PHP) and downloaded website of European Commission [5]. Corpus is published in both in plaintext format and with an automatic morphological annotation. &#13;
+&#13;
+References:&#13;
+[1] http://langtech.jrc.it/JRC-Acquis.html/&#13;
+[2] http://www.statmt.org/europarl/&#13;
+[3] http://apertium.eu/data&#13;
+[4] http://opus.lingfil.uu.se/&#13;
+[5] http://ec.europa.eu/</dc:description>
+      <dc:date>2012-05-15</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0006-AAE0-A</dc:identifier>
+      <dc:language>slk</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

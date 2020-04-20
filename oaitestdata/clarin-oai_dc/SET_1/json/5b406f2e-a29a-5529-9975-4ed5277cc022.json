@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "between 1 and 2 MB"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0397",
+    "MetadataAccess": [
+        "oai:ota:oucs:0397"
+    ],
+    "PublicationYear": [
+        "50-150"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Devotional literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Unknown"
+    ],
+    "fulltext": "oai:ota:oucs:0397;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0397.xml; The Greek New Testament  / compiled by Thesaurus Linguae Graecae;Unknown;50-150;text_and_corpus_linguistics;Devotional literature;grc;Oxford Text Archive, University of Oxford;between 1 and 2 MB;Text;Devotional literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5b406f2e-a29a-5529-9975-4ed5277cc022",
+    "oai_identifier": [
+        "oai:ota:oucs:0397"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Devotional literature"
+        }
+    ],
+    "title": [
+        " The Greek New Testament  / compiled by Thesaurus Linguae Graecae"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0397.xml"
+}

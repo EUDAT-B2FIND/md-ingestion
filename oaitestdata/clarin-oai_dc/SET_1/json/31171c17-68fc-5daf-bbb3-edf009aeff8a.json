@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5116",
+    "MetadataAccess": [
+        "oai:ota:oucs:5116"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sharp, Granville, 1735-1813."
+    ],
+    "fulltext": "oai:ota:oucs:5116;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5116.xml;Tracts, concerning the ancient and only true legal means of national defence, by a free militia: ...;Sharp, Granville, 1735-1813.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "31171c17-68fc-5daf-bbb3-edf009aeff8a",
+    "oai_identifier": [
+        "oai:ota:oucs:5116"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Tracts, concerning the ancient and only true legal means of national defence, by a free militia: ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5116.xml"
+}

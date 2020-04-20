@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:seanoe.org:59750</identifier>
+    <datestamp>2019-03-28</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Seafloor acoustic ranging data across the North-Anatolian Fault, Marmara Sea, Turkey</dc:title>
+      <dc:creator>Royer, Jean-yves</dc:creator>
+      <dc:creator>Pi&#233;t&#233;, Helen</dc:creator>
+      <dc:creator>Ballu, Val&#233;rie</dc:creator>
+      <dc:creator>Sakic, Pierre</dc:creator>
+      <dc:description>In October 2014, a ranging network of 10 acoustic transponders was installed across an active segment of the North-Anatolian Fault, in the Marmara Sea at a depth of about 800 m, for up to 5 years (Figure 1).&#160; This active fault segment is lacking any major seismic activity since the 18th century.&#160; The purpose of this acoustic ranging experiment was to determine whether this fault is continuously and aseismically creeping (i.e. slipping) or is locked and thus accumulating stress that could cause a large magnitude earthquake, few ten kilometers away from Istanbul.
+The acoustic network comprised 4 transponders from the University of Brest, France, and 6 transponders from the Geomar Institute, Germany. The data available through this web site corresponds to the data collected by the 4 French stations only. They include sets of acoustic ranging between pairs of stations (i.e. two-way-travel times), in addition to sound-speed, temperature and pressure measurements at each station. The sampling rate varies with the data type, but is generally hourly (one or several samples every hour). These are the raw, unprocessed data. For instance, distances must be inferred from the two-way-travel times and sound-speeds.
+The experiment lasted until January 2018.
+Data collection:
+	- In April 2015, the first set of acoustic ranging data, spanning a period of 6 months, was downloaded from the seafloor transponders using a modem from the sea surface (cruise POS484).
+	- In April 2016, a second set of acoustic ranging data, spanning one more year, was downloaded from the seafloor transponders, but only 3 of the transponders responded (cruise POS497).
+	- In May 2017, a third set of acoustic ranging data was downloaded from the seafloor transponders, but only 3 of the transponders responded (cruise YUNUS17).
+	- In January 2018, a last set was downloaded, but only 3 of the transponders responded (cruise YUNUS17). Since the batteries were almost exhausted, two of the French transponders were retrieved from the seafloor (2002 and 2003, for which all the data had already been downloaded from the surface). The last two will be recovered in 2020 (2001 and 2004).
+More information about the acoustic network can be found in the paper by Sakic et al. (2016; see reference below).
+</dc:description>
+      <dc:publisher>SEANOE</dc:publisher>
+      <dc:date>2019-03-28</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>DOI:10.17882/59750</dc:identifier>
+      <dc:identifier>http://dx.doi.org/10.17882/59750</dc:identifier>
+      <dc:coverage>North 41.5, South 40.0, East 30.0, West 26.5</dc:coverage>
+      <dct:references>https://www.seanoe.org/data/00486/59750/illustration.gif</dct:references>
+      <dcterms:spatial xsi:type="DCTERMS:Box">40.0 26.5 41.5 30.0</dcterms:spatial>
+      <dc:rights>CC-BY-NC</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

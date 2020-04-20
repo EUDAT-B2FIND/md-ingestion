@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-071EDL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:14560213",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:14560213"
+    ],
+    "PublicationTimestamp": "2018-04-23T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Koppel, Kristina",
+        "Kallas, Jelena"
+    ],
+    "fulltext": "oai:oai.datacite.org:14560213;2019-04-17T17:27:01Z;ESTDOI;ESTDOI.KEEL;Eesti keele \u00f5ppekorpus 2018 (etSkELL)  2018-01;Estonian Corpus for Learners 2018 (etSkELL)  2018-01;Kallas, Jelena;Koppel, Kristina;Center of Estonian Language Resources;2018;Issued: 2018-03-26;Updated: 2018-04-23;doi:10.15155/3-00-0000-0000-0000-071EDL;Abstract;Eesti keele \u00f5ppekorpus 2018 (etSkELL) on spetsiaalne tekstikorpus, mis sisaldab ainult keele\u00f5ppijale sobivaid lauseid. Laused p\u00e4rinevad Eesti keele \u00fchendkorpusest 2017 ja Eesti keele A1-C1 \u00f5pikute korpusest 2018. Keele\u00f5ppijale sobivate lausete tuvastamiseks kasutati Kristina Koppeli v\u00e4lja t\u00f6\u00f6tatud eesti keele GDEXi  (Good Dictionary Example) moodulit, mis v\u00f5imaldab lausete filtreerimist vastavalt etteantud parameetritele (nt lause pikkus, kirjavahem\u00e4rkide arv \u00fche lause piires jmt).\nEesti keele \u00f5ppekorpuse 2018 (etSkELL) suurus on u 250 000 s\u00f5na ja u 25 miljonit lauset. \nKorpus on lemmatiseeritud, m\u00e4rgendatud ja \u00fchestatud anal\u00fcsaatori EstNLTK abil.\nKorpus on loodud Eesti Keele Instituudi ja Lexical Computing Ltd. koost\u00f6\u00f6 raames. \n",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0bce5a0d-c2f2-563e-aafe-c4c4488429b1",
+    "notes": [
+        "Abstract",
+        "Eesti keele \u00f5ppekorpus 2018 (etSkELL) on spetsiaalne tekstikorpus, mis sisaldab ainult keele\u00f5ppijale sobivaid lauseid. Laused p\u00e4rinevad Eesti keele \u00fchendkorpusest 2017 ja Eesti keele A1-C1 \u00f5pikute korpusest 2018. Keele\u00f5ppijale sobivate lausete tuvastamiseks kasutati Kristina Koppeli v\u00e4lja t\u00f6\u00f6tatud eesti keele GDEXi  (Good Dictionary Example) moodulit, mis v\u00f5imaldab lausete filtreerimist vastavalt etteantud parameetritele (nt lause pikkus, kirjavahem\u00e4rkide arv \u00fche lause piires jmt).\nEesti keele \u00f5ppekorpuse 2018 (etSkELL) suurus on u 250 000 s\u00f5na ja u 25 miljonit lauset. \nKorpus on lemmatiseeritud, m\u00e4rgendatud ja \u00fchestatud anal\u00fcsaatori EstNLTK abil.\nKorpus on loodud Eesti Keele Instituudi ja Lexical Computing Ltd. koost\u00f6\u00f6 raames. \n"
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:14560213"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Eesti keele \u00f5ppekorpus 2018 (etSkELL)  2018-01",
+        "Estonian Corpus for Learners 2018 (etSkELL)  2018-01"
+    ],
+    "url": ""
+}

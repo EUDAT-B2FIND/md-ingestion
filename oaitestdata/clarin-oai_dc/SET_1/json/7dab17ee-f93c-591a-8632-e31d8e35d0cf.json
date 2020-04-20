@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/5",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/5"
+    ],
+    "PID": "http://hdl.handle.net/10794/5",
+    "PublicationTimestamp": "2017-04-28T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/10794/4"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Forsberg, Markus",
+        "Borin, Lars",
+        "L\u00f6nngren, Lennart"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/5;2017-10-27T16:28:55Z;hdl_10794_1;hdl_10794_2;Saldo (2017-10-16);Saldo (2017-10-16);Borin, Lars;L\u00f6nngren, Lennart;Forsberg, Markus;Swedish;Associative;Thesaurus;SALDO (Swedish Associative Thesaurus version 2) is an extensive lexicon resource for modern Swedish written language.;SALDO (Svenskt Associationslexikon version 2) \u00e4r ett semantiskt och morfologiskt lexikon f\u00f6r moderns svenskt skriftspr\u00e5k f\u00f6r spr\u00e5kteknologi.;2017-04-28;lexicalConceptualResource;http://hdl.handle.net/10794/5;swe;http://hdl.handle.net/10794/4;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/saldo",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7dab17ee-f93c-591a-8632-e31d8e35d0cf",
+    "notes": [
+        "SALDO (Swedish Associative Thesaurus version 2) is an extensive lexicon resource for modern Swedish written language.",
+        "SALDO (Svenskt Associationslexikon version 2) \u00e4r ett semantiskt och morfologiskt lexikon f\u00f6r moderns svenskt skriftspr\u00e5k f\u00f6r spr\u00e5kteknologi."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/5"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Associative"
+        },
+        {
+            "name": "Thesaurus"
+        }
+    ],
+    "title": [
+        "Saldo (2017-10-16)",
+        "Saldo (2017-10-16)"
+    ],
+    "url": ""
+}

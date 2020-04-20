@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Faculty of Humanities and Social Sciences, University of Zagreb"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Serbian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1057",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1057"
+    ],
+    "PID": "http://hdl.handle.net/11356/1057",
+    "PublicationTimestamp": "2016-03-05T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Faculty of Humanities and Social Sciences, University of Zagreb"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/324414",
+        "http://hdl.handle.net/11356/1066"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "GNU General Public Licence, version 3",
+        "http://opensource.org/licenses/GPL-3.0",
+        "PUB"
+    ],
+    "author": [
+        "Klubi\u010dka, Filip",
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1057;2017-06-27T18:07:31Z;hdl_11356_1023;hdl_11356_1024;Inflectional lexicon srLex 1.0;Ljube\u0161i\u0107, Nikola;Klubi\u010dka, Filip;lexicon;morphology;inflection;hrLex is an large inflectional lexicon of Serbian language where each entry consists of a (wordform, lemma, MSD) triple. The MSD tagset follows the revised MULTEXT-East V4 tagset for Croatian and Serbian, available at\r\nhttps://github.com/ffnlp/sethr/blob/master/mte4r-upos.mapping.;2016-03-05;lexicalConceptualResource;http://hdl.handle.net/11356/1057;srp;info:eu-repo/grantAgreement/EC/FP7/324414;http://hdl.handle.net/11356/1066;GNU General Public Licence, version 3;http://opensource.org/licenses/GPL-3.0;PUB;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Faculty of Humanities and Social Sciences, University of Zagreb;http://nlp.ffzg.hr/resources/lexicons/srlex/ \u200e",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cc9cfce0-141c-53f8-a010-785d3683f35a",
+    "notes": [
+        "hrLex is an large inflectional lexicon of Serbian language where each entry consists of a (wordform, lemma, MSD) triple. The MSD tagset follows the revised MULTEXT-East V4 tagset for Croatian and Serbian, available at\r\nhttps://github.com/ffnlp/sethr/blob/master/mte4r-upos.mapping."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1057"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "lexicon"
+        },
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "inflection"
+        }
+    ],
+    "title": [
+        "Inflectional lexicon srLex 1.0"
+    ],
+    "url": ""
+}

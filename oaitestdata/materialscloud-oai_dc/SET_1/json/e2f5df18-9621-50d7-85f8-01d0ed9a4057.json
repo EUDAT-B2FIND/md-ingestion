@@ -1,0 +1,100 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0019/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0019/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0019/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-05-15T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "RelatedIdentifier": [
+        "https://www.materialscloud.org/discover/topomat"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution Non Commercial 4.0 International https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Mounet, Nicolas",
+        "Wu, QuanSheng",
+        "Yazyev, Oleg V.",
+        "Aut\u00e8s, Gabriel"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0019/v1;2019-06-12Z;DOI;Dataset;Wu, QuanSheng;Aut\u00e8s, Gabriel;Mounet, Nicolas;Yazyev, Oleg V.;TopoMat: a database of high-throughput first-principles calculations of topological materials;Materials Cloud;2019-05-15;Creative Commons Attribution Non Commercial 4.0 International https://creativecommons.org/licenses/by-nc/4.0/legalcode;info:eu-repo/semantics/openAccess;MARVEL;MARVEL/DD6;Topological materials;Database;TopoMat;QUANTUM ESPRESSO;Z2 topological number;spin-orbit coupling;topological insulators;topological semimetals;high-throughput screening;doi:10.24435/materialscloud:2019.0019/v1;https://archive.materialscloud.org/2019.0019/v1;en;https://www.materialscloud.org/discover/topomat;We present a database of topological materials predicted from high-throughput first-principles calculations. The database contains electronic band structures and topological indices of 13628 materials calculated on experimental crystal structures taken from the Inorganic Crystal Structure Database (ICSD) and the Crystallography Open Database (COD). The calculations have been performed on non-magnetic phases taking into account the spin-orbit interactions using the Quantum ESPRESSO package. The Fu-Kane method and the Wannier charge center method implemented in the Z2pack code have been utilized to calculate the Z2 topological numbers of centrosymmetric and non-centrosymmetric materials, respectively. Over 4000 topologically non-trivial materials have been identified.\n<br/>\n",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "e2f5df18-9621-50d7-85f8-01d0ed9a4057",
+    "notes": [
+        "We present a database of topological materials predicted from high-throughput first-principles calculations. The database contains electronic band structures and topological indices of 13628 materials calculated on experimental crystal structures taken from the Inorganic Crystal Structure Database (ICSD) and the Crystallography Open Database (COD). The calculations have been performed on non-magnetic phases taking into account the spin-orbit interactions using the Quantum ESPRESSO package. The Fu-Kane method and the Wannier charge center method implemented in the Z2pack code have been utilized to calculate the Z2 topological numbers of centrosymmetric and non-centrosymmetric materials, respectively. Over 4000 topologically non-trivial materials have been identified.\n<br/>\n"
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0019/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "MARVEL"
+        },
+        {
+            "name": "MARVEL DD"
+        },
+        {
+            "name": "Topological materials"
+        },
+        {
+            "name": "Database"
+        },
+        {
+            "name": "TopoMat"
+        },
+        {
+            "name": "QUANTUM ESPRESSO"
+        },
+        {
+            "name": "Z topological number"
+        },
+        {
+            "name": "spin-orbit coupling"
+        },
+        {
+            "name": "topological insulators"
+        },
+        {
+            "name": "topological semimetals"
+        },
+        {
+            "name": "high-throughput screening"
+        }
+    ],
+    "title": [
+        "TopoMat: a database of high-throughput first-principles calculations of topological materials"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0019/v1"
+}

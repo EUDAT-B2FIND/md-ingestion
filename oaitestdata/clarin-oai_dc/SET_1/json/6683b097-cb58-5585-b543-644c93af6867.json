@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "Filesize uncompressed: 274 KBytes. "
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1896",
+    "MetadataAccess": [
+        "oai:ota:oucs:1896"
+    ],
+    "PublicationTimestamp": "1895-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1895"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Fiction -- Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Crane, Stephen, 1871-1900"
+    ],
+    "fulltext": "oai:ota:oucs:1896;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/1896.xml;The Red Badge of Courage;A machine-readable transcription;Crane, Stephen, 1871-1900;1895;text_and_corpus_linguistics;Novels -- United States -- 19th century;eng;Oxford Text Archive, University of Oxford;Filesize uncompressed: 274 KBytes. ;Text;Fiction -- Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6683b097-cb58-5585-b543-644c93af6867",
+    "oai_identifier": [
+        "oai:ota:oucs:1896"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- United States -- th century"
+        }
+    ],
+    "title": [
+        "The Red Badge of Courage",
+        "A machine-readable transcription"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1896.xml"
+}

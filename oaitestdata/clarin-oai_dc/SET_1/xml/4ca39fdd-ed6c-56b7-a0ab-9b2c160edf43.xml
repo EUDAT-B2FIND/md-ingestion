@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1032</identifier>
+    <datestamp>2017-10-02T13:15:47Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Lexicon of historical Slovene imp25k 1.1</dc:title>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:subject>historical language</dc:subject>
+      <dc:subject>modernisation</dc:subject>
+      <dc:subject>lemmatisation</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>The imp25k lexicon of historical Slovene was created automatically from the goo300k and foo3M annotated corpora and contains attested and manually verified word forms and their annotations with examples of use. A lexicon entry contains the modern lemma with its part-of-speech and, for archaic words, its gloss (closest modern equivalent(s) or short explanation of their meaning). The lemma is followed by its modern word forms from the corpus (i.e. the complete paradigm of the lemma is not given), and each of these has all its attested historical word forms with examples of usage.&#13;
+&#13;
+The lexicon is available in source TEI P5 XML and in the much smaller and simpler derived tabular format, which does not contain usage examples. In the latter, multi-word units are joined with the underscore. The 1st column is the word form, the 2nd its modern equivalent, the 3rd its modern lemma, 4th its PoS tag from the IMP morphosyntactic specification, and 5th (where present) the gloss, e.g.:&#13;
+ako_ravno&lt;TAB&gt;akoravno&lt;TAB&gt;akoravno&lt;TAB&gt;C&lt;TAB&gt;&#269;eprav&lt;LF&gt; &#13;
+or &#13;
+ak-li&lt;TAB&gt;ako_li&lt;TAB&gt;ako_li&lt;TAB&gt;C_Q&lt;TAB&gt;&lt;LF&gt;</dc:description>
+      <dc:date>2014-09-13</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1032</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/215064</dc:relation>
+      <dc:relation>https://doi.org/10.1007/s10579-015-9294-7</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>http://nl.ijs.si/imp/index-en.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

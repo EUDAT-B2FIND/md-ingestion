@@ -1,0 +1,19 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://irsa.ipac/Spitzer/Catalog/GLIMPSE/GLM3DEp1Archive</oai:identifier>
+    <oai:datestamp>2016-02-05T15:15:06Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oaidc:dc xmlns:oaidc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:vor="http://www.ivoa.net/xml/VOResource/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/                                http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>GLIMPSE 3D Epoch 1 Archive</dc:title>
+      <dc:identifier>ivo://irsa.ipac/Spitzer/Catalog/GLIMPSE/GLM3DEp1Archive</dc:identifier>
+      <dc:publisher>NASA/IPAC Infrared Science Archive</dc:publisher>
+      <dc:creator>GLIMPSE team</dc:creator>
+      <dc:subject>Milky Way disk</dc:subject>
+      <dc:description>GLIMPSE3D is the third in a series of large area projects to map selected regions of the Galactic plane using the Spitzer Space Telescope Infrared Array Camera (IRAC). GLIMPSEI1 covered the Galactic plane from |l| = 10&#226;&#151;&#166; to 65&#226;&#151;&#166; and |b| &lt; 1&#226;&#151;&#166;; GLIMPSEII filled in the inner 20 degrees of the Galactic plane, |l| &lt; 10&#226;&#151;&#166;, with vertical extensions up to &#194;&#177;1.5&#226;&#151;&#166; for |l| =5&#226;&#151;&#166;to 2&#226;&#151;&#166;, and up to &#194;&#177;2&#226;&#151;&#166; from |l| =2&#226;&#151;&#166;to 0&#226;&#151;&#166;. GLIMPSE3D adds vertical extensions, generally up to |b| &lt; 3&#226;&#151;&#166;, but up to |b| &lt; 4.2&#226;&#151;&#166; in the center of the Galaxy. The goal of this coverage is to provide data to study the vertical stellar and interstellar
+
+        The GLIMPSE3D Archive (GLM3DA or the &#226;&#128;&#156;Archive&#226;&#128;&#157;) consists of point sources with a signal- to-noise &gt; 5 in at least one band and less stringent selection critera than the Catalog. The photometric uncertainty is typically &lt; 0.3 mag. The GLIMPSE3D Catalog is a subset of the Archive, but note that the entries for a particular source might not be the same due to additional nulling of magnitudes in the Catalog because of the more stringent requirements.</dc:description>
+      <dc:type>Catalog</dc:type>
+    </oaidc:dc>
+  </oai:metadata>
+</oai:record>

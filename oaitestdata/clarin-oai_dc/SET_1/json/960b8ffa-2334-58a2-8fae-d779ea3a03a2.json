@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Catalan",
+        "English",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-420",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-420"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-420",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Spain"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-420;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Corpus T\u00e8cnic de l'IULA;domain specific corpus (Law, Economy, Computing, Medicine and Environment as well as a contrastive corpus from the press); EN 3.3 M tokens, SP 33 M tokens, CAT 19 M tokens; EAGLEs pos tagset;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-420;cat;eng;spa;downloadable_files_count: 0;Spain;Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra;http://bwananet.iula.upf.edu/indexes.htm",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "960b8ffa-2334-58a2-8fae-d779ea3a03a2",
+    "notes": [
+        "domain specific corpus (Law, Economy, Computing, Medicine and Environment as well as a contrastive corpus from the press); EN 3.3 M tokens, SP 33 M tokens, CAT 19 M tokens; EAGLEs pos tagset"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-420"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Corpus T\u00e8cnic de l'IULA"
+    ],
+    "url": ""
+}

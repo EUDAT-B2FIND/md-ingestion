@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Gabler, Hans Walter, 1938-"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 373 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1605",
+    "MetadataAccess": [
+        "oai:ota:oucs:1605"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Short stories"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Joyce, James, 1882-1941"
+    ],
+    "fulltext": "oai:ota:oucs:1605;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1605.xml;Dubliners / James Joyce;Joyce, James, 1882-1941;text_and_corpus_linguistics;Short stories, Irish -- 20th century;Oxford Text Archive, University of Oxford;Gabler, Hans Walter, 1938-;text/sgml;(1 file : ca. 373 KB);Text;Short stories;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "279d2ed8-c1c1-5d91-b4df-ef4155c5aa51",
+    "oai_identifier": [
+        "oai:ota:oucs:1605"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Short stories"
+        },
+        {
+            "name": "Irish -- th century"
+        }
+    ],
+    "title": [
+        "Dubliners / James Joyce"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1605.xml"
+}

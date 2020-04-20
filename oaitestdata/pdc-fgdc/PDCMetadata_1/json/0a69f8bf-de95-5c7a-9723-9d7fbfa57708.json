@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "colin.laroque@usask.ca"
+    ],
+    "Contributor": [
+        "Mistik Askiwin Dendrochronology Laboratory"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Research objectives:  Dendrochronological analysis to isolate climatic factor(s) influencing each tree species' growth.  Tree ring analysis to determine the species' suitability as a proxy for establishing an historical record of insect outbreak in the region."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=1530_fgdc",
+    "PublicationTimestamp": "2012-10-09T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Limited"
+    ],
+    "SpatialCoverage": "(55N,60W)",
+    "TempCoverageBegin": 63322426799,
+    "TempCoverageEnd": 63322426799,
+    "TemporalCoverage": " period : ( 2007-08-11T11:59:59Z - 2007-08-11T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2007-08-11T11:59:59Z",
+    "TemporalCoverage:EndDate": "2007-08-11T11:59:59Z",
+    "author": [
+        "Colin Laroque",
+        "Karen Harper"
+    ],
+    "fulltext": "1530_fgdc;2017-04-09T22:02:04Z;PDCMetadata;Karen Harper;Colin Laroque;20121009;Dendrochronological analysis at Bush Pond, Central Labrador, Canada;Computer file;unknown;Unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1530;Using increment boring tools, the two most dominant tree species were sampled for subsequent dendrochronological analysis.  Twenty trees of each species were sampled, with two cores extracted from each tree (80 cores total from each site).  Samples will be measured and cross-dated in the lab, and master chronologies will be created for each species using standard dendrochronological procedures.  Statistical procedures will isolate the climatic factor(s) influencing each tree-species growth, and this information will be used to evaluate each species and its individual radial growth-climate relationship.  Dataset variables, with brief description of each variable:  Sample #: Black spruce: 07CJL101 to 07CJL120. Balsam fir: 07CJL301 to 07CJL320.  Grid zone: 21 U.  GPS UTM: Easting 0312218, Northing 6096595.  Elevation (m asl): 28 m.  Notes: Two dominant species were black spruce (Picea mariana) and balsam fir (Abies balsamea).  A set was bored for these two species on a flat mossy floor. The black spruce chronology dates from 2007 to 1666 and the fir from 2007 to 1807.;Research objectives:  Dendrochronological analysis to isolate climatic factor(s) influencing each tree species' growth.  Tree ring analysis to determine the species' suitability as a proxy for establishing an historical record of insect outbreak in the region.;Summary: Not Applicable Research Program(s): IPY. For further information: claroque@mta.ca;20070811;20070811;NULL;Complete;As needed;-59.9;-59.9;54.8;54.8;NULL;Climate;Dendrochronology;Forest-tundra;Growth rate;Spatial data;Bush Pond, Central Labrador, Canada;NULL;Limited;NULL;Mistik Askiwin Dendrochronology Laboratory;Colin Laroque;NULL;mailing;51 Campus Drive;Saskatoon;SK;S7N 5A8;Canada;(306) 966-2493;(306) 966-6881;colin.laroque@usask.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;1530;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20121009;20121009;Colin Laroque;Mistik Askiwin Dendrochronology Laboratory;mailing;51 Campus Drive;Saskatoon;SK;S7N 5A8;Canada;(306) 966-2493;(306) 966-6881;colin.laroque@usask.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0a69f8bf-de95-5c7a-9723-9d7fbfa57708",
+    "notes": [
+        "Using increment boring tools, the two most dominant tree species were sampled for subsequent dendrochronological analysis.  Twenty trees of each species were sampled, with two cores extracted from each tree (80 cores total from each site).  Samples will be measured and cross-dated in the lab, and master chronologies will be created for each species using standard dendrochronological procedures.  Statistical procedures will isolate the climatic factor(s) influencing each tree-species growth, and this information will be used to evaluate each species and its individual radial growth-climate relationship.  Dataset variables, with brief description of each variable:  Sample #: Black spruce: 07CJL101 to 07CJL120. Balsam fir: 07CJL301 to 07CJL320.  Grid zone: 21 U.  GPS UTM: Easting 0312218, Northing 6096595.  Elevation (m asl): 28 m.  Notes: Two dominant species were black spruce (Picea mariana) and balsam fir (Abies balsamea).  A set was bored for these two species on a flat mossy floor. The black spruce chronology dates from 2007 to 1666 and the fir from 2007 to 1807."
+    ],
+    "oai_identifier": [
+        "1530_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-59.9,54.8],[-59.9,54.8],[-59.9,54.8],[-59.9,54.8],[-59.9,54.8]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Climate"
+        },
+        {
+            "name": "Dendrochronology"
+        },
+        {
+            "name": "Forest-tundra"
+        },
+        {
+            "name": "Growth rate"
+        },
+        {
+            "name": "Spatial data"
+        }
+    ],
+    "title": [
+        "Dendrochronological analysis at Bush Pond, Central Labrador, Canada"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1530"
+}

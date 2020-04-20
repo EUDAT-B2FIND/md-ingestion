@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Fundacja nowoczesna Polska"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/pdf"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/341",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/341"
+    ],
+    "PID": "http://hdl.handle.net/11321/341",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Fundacja nowoczesna Polska"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "plWordNet",
+        "http://clarin-pl.eu/en/licenses/plwordnet-2/",
+        "PUB"
+    ],
+    "author": [
+        "Prus, Boles\u0142aw"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/341;2017-04-01T11:09:19Z;hdl_11321_3;hdl_11321_4;Lalka;Prus, Boles\u0142aw;lalka;prus;novel;a book in Polish by Boles\u0142aw Prus;2014;corpus;http://hdl.handle.net/11321/341;pol;plWordNet;http://clarin-pl.eu/en/licenses/plwordnet-2/;PUB;text/plain; charset=utf-8;application/pdf;downloadable_files_count: 1;Fundacja nowoczesna Polska",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d8a65678-b781-5400-bdc6-5b3a63ff1778",
+    "notes": [
+        "a book in Polish by Boles\u0142aw Prus"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/341"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "lalka"
+        },
+        {
+            "name": "prus"
+        },
+        {
+            "name": "novel"
+        }
+    ],
+    "title": [
+        "Lalka"
+    ],
+    "url": ""
+}

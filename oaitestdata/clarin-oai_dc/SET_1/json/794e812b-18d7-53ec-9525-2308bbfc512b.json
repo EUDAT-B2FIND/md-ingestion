@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 3"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4904-2",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4904-2"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-4904-2",
+    "PublicationTimestamp": "2009-11-02T09:22:59Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "PDT 2.0 License",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-pdt2",
+        "ACA"
+    ],
+    "author": [
+        "Haji\u010d, Jan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4904-2;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Feature-based tagger;Haji\u010d, Jan;morphology;tagger;The Feature-based (exponential model) Tagger is a fast implementation of the Czech tagger developed at UFAL and described in the PDT 1.0 documentation (Czech Language Tagging page). In order to get the best possible results, the tagger requires preprocessing by a Czech morphological module with a very high coverage. This module covers a superset of the Czech \"FM\" morphology. Both the morphological module and the tagger are supplied as binary executables, together with all necessary precompiled Czech data. Input must be in the ISO Latin 2 (iso-8859-2) code and follow the csts.dtd definition, and output is produced in the same way (ISO Latin 2 code, csts.dtd). (As is the case with many of the tools provided with PDT 1.0, both executables also accept - and then produce - a \"simplified SGML\", which is not a real, valid SGML, but simply contains at least the tags for words, punctuation, and sentence breaks, one item per line.);2009-11-02T09:22:59Z;toolService;http://hdl.handle.net/11858/00-097C-0000-0001-4904-2;PDT 2.0 License;https://lindat.mff.cuni.cz/repository/xmlui/page/license-pdt2;ACA;application/x-gzip;application/x-gzip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 3;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/pdt2.0/doc/tools/machine-annotation/index.html#a-ma-tagging",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "794e812b-18d7-53ec-9525-2308bbfc512b",
+    "notes": [
+        "The Feature-based (exponential model) Tagger is a fast implementation of the Czech tagger developed at UFAL and described in the PDT 1.0 documentation (Czech Language Tagging page). In order to get the best possible results, the tagger requires preprocessing by a Czech morphological module with a very high coverage. This module covers a superset of the Czech \"FM\" morphology. Both the morphological module and the tagger are supplied as binary executables, together with all necessary precompiled Czech data. Input must be in the ISO Latin 2 (iso-8859-2) code and follow the csts.dtd definition, and output is produced in the same way (ISO Latin 2 code, csts.dtd). (As is the case with many of the tools provided with PDT 1.0, both executables also accept - and then produce - a \"simplified SGML\", which is not a real, valid SGML, but simply contains at least the tags for words, punctuation, and sentence breaks, one item per line.)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4904-2"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "tagger"
+        }
+    ],
+    "title": [
+        "Feature-based tagger"
+    ],
+    "url": ""
+}

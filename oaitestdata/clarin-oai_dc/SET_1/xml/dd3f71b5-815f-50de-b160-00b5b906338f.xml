@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1520</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DeriNet 1.0</dc:title>
+      <dc:creator>Vidra, Jon&#225;&#353;</dc:creator>
+      <dc:creator>&#381;abokrtsk&#253;, Zden&#283;k</dc:creator>
+      <dc:creator>&#352;ev&#269;&#237;kov&#225;, Magda</dc:creator>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:subject>derivation</dc:subject>
+      <dc:subject>DeriNet</dc:subject>
+      <dc:subject>lexical network</dc:subject>
+      <dc:subject>MorfFlex</dc:subject>
+      <dc:description>DeriNet is a lexical network which contains derivational relations in Czech modeled as an oriented graph. Nodes correspond to Czech lexemes (a lexeme is a single lemma, possibly with only a subset of its senses &#8211; homonyms may have different derivations and are thus represented by several lexemes) and edges represent derivations between them. DeriNet 1.0 contains 968,967 lexemes with 965,535 unique lemmas; connected by 715,729 derivational links. Lexemes in DeriNet 1.0 are sampled from the MorfFlex dictionary.</dc:description>
+      <dc:date>2015-07-31</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1520</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11234/1-1807</dc:relation>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://ufal.mff.cuni.cz/derinet</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

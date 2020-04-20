@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-73",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-73"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-73",
+    "PublicationTimestamp": "2016-10-18T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/296451"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0",
+        "PUB"
+    ],
+    "author": [
+        "Russo, Irene",
+        "Quochi, Valeria",
+        "Frontini, Francesca"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-73;2018-07-23T09:13:44Z;hdl_000-c0-111_38;hdl_000-c0-111_49;OpeNER Sentiment Lexicon Italian - LMF;Russo, Irene;Frontini, Francesca;Quochi, Valeria;Sentiment analysis;Polarity;Computational lexicon;Il Lessico Italiano dei Sentimenti \u00e8 stato sviluppato in modo semi-automatico da ItalWordNet v.2 partendo da una lista di 1.000 parole-chiave controllate manualmente. Contiene 24.293 entrate lessicali annotate con polarit\u00e0 positiva/negativa/neutra. E' distribuito in formato LMF.\r\n\r\nThe Italian Sentiment Lexicon was semi-automatically developed from ItalWordNet v.2 starting from a list of seed key-words classified manually. It contains 24.293 lexical entries annotated for positive/negative/neutral polarity. It is distributed in XML-LMF format.;2016-10-18;lexicalConceptualResource;http://hdl.handle.net/20.500.11752/ILC-73;ita;info:eu-repo/grantAgreement/EC/FP7/296451;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.opener-project.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2aca1429-b2a6-5fc1-9085-26f579f74d77",
+    "notes": [
+        "Il Lessico Italiano dei Sentimenti \u00e8 stato sviluppato in modo semi-automatico da ItalWordNet v.2 partendo da una lista di 1.000 parole-chiave controllate manualmente. Contiene 24.293 entrate lessicali annotate con polarit\u00e0 positiva/negativa/neutra. E' distribuito in formato LMF.\r\n\r\nThe Italian Sentiment Lexicon was semi-automatically developed from ItalWordNet v.2 starting from a list of seed key-words classified manually. It contains 24.293 lexical entries annotated for positive/negative/neutral polarity. It is distributed in XML-LMF format."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-73"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Sentiment analysis"
+        },
+        {
+            "name": "Polarity"
+        },
+        {
+            "name": "Computational lexicon"
+        }
+    ],
+    "title": [
+        "OpeNER Sentiment Lexicon Italian - LMF"
+    ],
+    "url": ""
+}

@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 7",
+        "text/plain",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1670",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1670"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1670",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jur\u010d\u00ed\u010dek, Filip",
+        "Vodol\u00e1n, Miroslav"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1670;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Question Dialogs Dataset;Vodol\u00e1n, Miroslav;Jur\u010d\u00ed\u010dek, Filip;question dialogs;interactive learning;Dataset collected from natural dialogs which enables to test the ability of dialog systems to interactively learn new facts from user utterances throughout the dialog. The dataset, consisting of 1900 dialogs, allows simulation of an interactive gaining of denotations and questions explanations from users which can be used for the interactive learning.;2016;lexicalConceptualResource;http://hdl.handle.net/11234/1-1670;eng;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/octet-stream;application/octet-stream;application/octet-stream;text/plain;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 7;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "15fa73b2-5a45-538e-8259-91b37d6502a2",
+    "notes": [
+        "Dataset collected from natural dialogs which enables to test the ability of dialog systems to interactively learn new facts from user utterances throughout the dialog. The dataset, consisting of 1900 dialogs, allows simulation of an interactive gaining of denotations and questions explanations from users which can be used for the interactive learning."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1670"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "question dialogs"
+        },
+        {
+            "name": "interactive learning"
+        }
+    ],
+    "title": [
+        "Question Dialogs Dataset"
+    ],
+    "url": ""
+}

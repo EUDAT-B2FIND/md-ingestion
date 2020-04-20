@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Poupon, Cyril",
+        "Mangin, Jean-Fran\u00e7ois",
+        "Duclap, Delphine",
+        "Leboyer, Marion ",
+        "Fillard, Pierre",
+        "Houenou, Josselin",
+        "Guevara, Pamela",
+        "Le Bihan, Denis J.",
+        "Marrakchi-Kacem, Linda "
+    ],
+    "DOI": "http://dx.doi.org/10.25493/7HFQ-98Y",
+    "DiscHierarchy": [
+        "3.2.1.5",
+        "Microbiology, Virology and Immunology",
+        "Immunology"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "NIFTI"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_7HFQ-98Y",
+    "MetadataAccess": [
+        "10.25493_7HFQ-98Y"
+    ],
+    "PublicationTimestamp": "2019-06-14T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1016/j.neuroimage.2012.02.071"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Mangin, Jean-Fran\u00e7ois"
+    ],
+    "fulltext": "10.25493_7HFQ-98Y;2019-12-10T12:41:55Z;https://doi.org/10.25493/7HFQ-98Y;Probabilistic map of the left temporal cingulate fibres (atlas of deep white matter fibre bundles, version 2018);2019-06-14T13:27:00.491Z;This data contains the probability map of the left temporal cingulate fibres (atlas of deep white matter fibre bundles, version 2018), in the MNI ICBM152 reference brain. This bundle was identified by fibre clustering, from the tractography datasets of 78 subjects in Neurospin\u2019s ARCHI database. The map shows the probability of finding a fibre belonging to the bundle in each voxel of the reference brain. The maximum probability corresponds to the voxels with the highest number of putative fibres going through.;neuroscience;brain mapping;imaging;english;dataset;The Human Brain Project;Guevara, Pamela;Duclap, Delphine;Poupon, Cyril;Marrakchi-Kacem, Linda ;Fillard, Pierre;Le Bihan, Denis J.;Leboyer, Marion ;Houenou, Josselin;Mangin, Jean-Fran\u00e7ois;Mangin, Jean-Fran\u00e7ois;NIFTI;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.1016/j.neuroimage.2012.02.071",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "1ed15215-c9bc-5b89-9b9b-28cf63f76628",
+    "notes": [
+        "This data contains the probability map of the left temporal cingulate fibres (atlas of deep white matter fibre bundles, version 2018), in the MNI ICBM152 reference brain. This bundle was identified by fibre clustering, from the tractography datasets of 78 subjects in Neurospin\u2019s ARCHI database. The map shows the probability of finding a fibre belonging to the bundle in each voxel of the reference brain. The maximum probability corresponds to the voxels with the highest number of putative fibres going through."
+    ],
+    "oai_identifier": [
+        "10.25493_7HFQ-98Y"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "brain mapping"
+        },
+        {
+            "name": "imaging"
+        }
+    ],
+    "title": [
+        "Probabilistic map of the left temporal cingulate fibres (atlas of deep white matter fibre bundles, version 2018)"
+    ],
+    "url": ""
+}

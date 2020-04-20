@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000-88</identifier>
+    <datestamp>2019-01-25T01:08:39Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:identifier>10.22000/88</dc:identifier>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:creator>Meng, Jilun</dc:creator>
+      <dc:creator>Langhammer, Martina</dc:creator>
+      <dc:creator>Mayer, Manfred</dc:creator>
+      <dc:creator>Reinsch, Norbert</dc:creator>
+      <dc:identifier>0000000174354088</dc:identifier>
+      <dc:title>Mouse High Fecundity Advanced Intercross Data I: Phenotypes, Pedigree and Founder Genotypes </dc:title>
+      <dc:publisher>Leibniz-Institut f&#252;r Nutztierbiologie (FBN), Wilhelm-Stahl-Allee 2, 18196 Dummerstorf, Germany</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:subject>Biology</dc:subject>
+      <dc:subject>Agriculture</dc:subject>
+      <dc:subject>Life Science</dc:subject>
+      <dc:type>Two lines are involved in the mouse high fecundity advanced intercross. The first is the long-term selected high fecundity line FL1, which was developed in the mouse facility of the Institute of Genetics and Biometry at the Leibniz-Institute for Farm Animal Biology (FBN). This line was selected for high litter size and high litter weight. A randomly selected control line was later inbred by repeated full-sib mating and the resulting highly inbred line was named DUKsi. Pedigree data, phenotypes and SNP-genotypes of founders are provided from all 29 generations of the AIL. More detailed information ids included in the redme-file of the data collection. </dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:rights>CC BY 4.0 Attribution</dc:rights>
+      <dc:rights>Leibniz-Institut f&#252;r Nutztierbiologie (FBN), Wilhelm-Stahl-Allee 2, 18196 Dummerstorf, Germany</dc:rights>
+      <dc:language/>
+      <dc:format>application/zip</dc:format>
+    </oai_dc:dc>
+  </metadata>
+</record>

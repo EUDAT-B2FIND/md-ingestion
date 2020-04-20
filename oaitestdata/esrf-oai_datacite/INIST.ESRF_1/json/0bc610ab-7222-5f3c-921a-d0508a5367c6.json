@@ -1,0 +1,66 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-109967489",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:15520433",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:15520433"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63666903599,
+    "TempCoverageEnd": 63666903599,
+    "TemporalCoverage": " point in time : 2018-07-11T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-07-11T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-07-11T11:59:59Z",
+    "author": [
+        "Murielle SALOME",
+        "Peter CLOETENS",
+        "Sylvain BOHIC",
+        "Alexandra JOITA PACUREANU",
+        "Julio Cesar da Silva",
+        "Yang Yang"
+    ],
+    "fulltext": "oai:oai.datacite.org:15520433;2018-07-11T07:08:00Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-109967489;Sylvain BOHIC;Yang Yang;Murielle SALOME;Peter CLOETENS;Alexandra JOITA PACUREANU;Julio Cesar da Silva;Zinc distribution in cortical neurons;In-house Life Science;IH-LS-3123;id16a;European Synchrotron Radiation Facility;2018-07-11;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "0bc610ab-7222-5f3c-921a-d0508a5367c6",
+    "oai_identifier": [
+        "oai:oai.datacite.org:15520433"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "In-house Life Science"
+        },
+        {
+            "name": "IH-LS-"
+        },
+        {
+            "name": "ida"
+        }
+    ],
+    "title": [
+        "Zinc distribution in cortical neurons"
+    ],
+    "url": ""
+}

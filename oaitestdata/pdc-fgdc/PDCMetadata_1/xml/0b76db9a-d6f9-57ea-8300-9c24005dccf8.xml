@@ -1,0 +1,141 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>11955_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:34Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Ford, James</origin>
+            <origin>Lardeau, Marie-Pierre</origin>
+            <origin>Chatwood, Susan</origin>
+            <pubdate>20150316</pubdate>
+            <title>Community food programs (CFPs) in Inuvik, Northwest Territories</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Ford, J., Lardeau, M., Blackett, H., Chatwood, D., and Kurzewski, D. (2013). Community food program use in Inuvik, Northwest Territories. BMC Public Health 13:970.</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11955</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>The method used for this study were Photovoice workshops (n=7), a modified USDA food security survey and open ended interviews with CFP users (n=54) in Inuvik. The results show that users of CFPs in Inuvik are more likely to be housing insecure, female, middle aged (35-64), unemployed, Aboriginal, and lack a high school education. Participants are primarily chronic users, and depend on CFPs for regular food access. In conclusion, this work indicates the presence of chronically food insecure groups who have not benefited from the economic development and job opportunities offered in larger regional centers of the Canadian Arctic, and for whom traditional kinship-based food sharing networks have been unable to fully meet their dietary needs. While CFPs do not address the underlying causes of food insecurity, they provide an important service for communities undergoing rapid change, and need greater focus in food policy herein.</abstract>
+          <purpose>Community food programs (CFPs) provide an important safety-net for highly food insecure community members in the larger settlements of the Canadian Arctic. This study identifies who is using CFPs and why, drawing upon a case study from Inuvik, Northwest Territories. This work is compared with a similar study from Iqaluit, Nunavut, allowing the development of an Arctic-wide understanding of CFPs use : a neglected topic in the northern food security literature.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): ArcticNet. For further information: james.ford@mcgill.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20111015</begdate>
+              <enddate>20111220</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>None planned</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-133</westbc>
+            <eastbc>-43</eastbc>
+            <northbc>68</northbc>
+            <southbc>68</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Community vulnerability</themekey>
+            <themekey>Food security</themekey>
+            <themekey>Homelessness</themekey>
+            <themekey>Inuvik</themekey>
+            <themekey>Northwest Territories</themekey>
+            <themekey>Poverty</themekey>
+            <themekey>Social change</themekey>
+          </theme>
+          <place>
+            <placekt>Inuvik, Northwest Territories, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>McGill University</cntorg>
+              <cntper>James Ford</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>805 Sherbrooke St</address>
+              <city>Montreal</city>
+              <state>QC</state>
+              <postal>H3A0B9</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>514-398-4960</cntvoice>
+            <cntemail>james.ford@mcgill.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>11955</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20150316</metd>
+        <metrd>20150316</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>James Ford</cntper>
+              <cntorg>McGill University</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>805 Sherbrooke St</address>
+              <city>Montreal</city>
+              <state>QC</state>
+              <postal>H3A0B9</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>514-398-4960</cntvoice>
+            <cntemail>james.ford@mcgill.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

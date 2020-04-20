@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Drukarnia Akademicka"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-100676",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-100676"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CD0-F",
+    "PublicationTimestamp": "1683-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1683"
+    ],
+    "Publisher": [
+        "Drukarnia Akademicka"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/100676",
+        "oai:jbc.bj.uj.edu.pl:publication:107762"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "\u017bochowski, Cyprian (1635-1693)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-100676;2019-02-28T17:47:01Z;Swi\u0119to\u0142dycz, Albo Starozytny Ia\u015bnie Wielmo\u017cnego Domu [...] Kisielow Herbowny Kleynot : Namiot Rozbity Na Gorze Witebskiey Od [...] Adama Franciszka Dorohinickiego na Brusilowie Kisiela [...] Przez Pobo\u017cn\u0105 erekcy\u0105 y Fundacy\u0105 Monastyra dla OO. Bazylianow Unitow, przy Cerkwi Kathedralney Episkopskiey;\u017bochowski, Cyprian (1635-1693);starodruki 17\u00a0w.;Kisiel, Adam Franciszek ( -1719). [Adr. ded.];Drukarnia Akademicka;1683;starodruk;application/xml;clarind-uds:poldilemma-100676;hdl:11858/00-246C-0000-0023-8CD0-F;Biblioteka Jagiello\u0144ska, BJ St. Dr. 33914;pol;http://jbc.bj.uj.edu.pl/Content/100676;oai:jbc.bj.uj.edu.pl:publication:107762;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d9751dbf-d8d2-57cb-bd88-4e0cdf1029dc",
+    "notes": [
+        "Kisiel, Adam Franciszek ( -1719). [Adr. ded.]"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-100676"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Swi\u0119to\u0142dycz, Albo Starozytny Ia\u015bnie Wielmo\u017cnego Domu [...] Kisielow Herbowny Kleynot : Namiot Rozbity Na Gorze Witebskiey Od [...] Adama Franciszka Dorohinickiego na Brusilowie Kisiela [...] Przez Pobo\u017cn\u0105 erekcy\u0105 y Fundacy\u0105 Monastyra dla OO. Bazylianow Unitow, przy Cerkwi Kathedralney Episkopskiey"
+    ],
+    "url": ""
+}

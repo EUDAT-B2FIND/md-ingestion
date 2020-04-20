@@ -10,13 +10,13 @@
   <mappings>
     <!-- General information -->
     <field name="title">
-      <xpath>//ff:placeNames/ff:placeName/ff:name</xpath>
+      <xpath>//ff:placeName/ff:name</xpath>
     </field>
     <field name="notes">
       <string>This record describes ancient sites and monuments as well as archaeological excavations undertaken by Danish museums.</string>
     </field>
     <field name="tags">
-      <xpath>//ff:site/ff:placeNames/ff:placeName/ff:placeNameType/ff:term,//ff:site/ff:objects/primaryObject/objectType/term,//ff:site/ff:objects/object/objectType/term</xpath>
+      <xpath>//ff:placeNameType/ff:term,//ff:objectType/ff:term</xpath>
     </field>
     <!-- more tags: ,//ff:site/ff:objects/primaryObject/objectType/term,//ff:site/ff:objects/object/objectType/term -->
     <!-- Identifier -->
@@ -31,7 +31,7 @@
     </field>
    <!-- Provenance Information -->
     <field name="author">
-      <xpath>//ff:site/ff:adminArea/ff:supervision/ff:term</xpath>
+      <xpath>//ff:supervision/ff:term</xpath>
     </field>
     <field name="Publisher">
       <string>Slots- og Kulturstyrelsen</string>
@@ -66,11 +66,14 @@
       <string>Classical Archaeology</string>
     </field>
     <field name="SpatialCoverage">
-      <xpath>//ff:site/ff:geodata/gml:Point/gml:pos</xpath>
+      <xpath>//gml:pos</xpath>
     </field>
-    <field name="TemporalCoverage">
-      <xpath>//ff:site/ff:objects/ff:primaryObject/ff:date/ff:fromYear,//ff:site/ff:objects/ff:primaryObject/ff:date/ff:toYear</xpath>
-    </field>    
+    <field name="TemporalCoverage:BeginDate">
+      <xpath>//ff:primaryObject/ff:date/ff:fromYear</xpath>
+    </field> 
+    <field name="TemporalCoverage:EndDate">
+      <xpath>//ff:primaryObject/ff:date/ff:toYear</xpath> 
+    </field> 
    <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>

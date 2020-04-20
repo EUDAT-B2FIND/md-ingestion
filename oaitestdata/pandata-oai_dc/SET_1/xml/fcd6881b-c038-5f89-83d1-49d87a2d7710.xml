@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>isis_24090603</identifier>
+    <datestamp>2016-05-17T15:36:21Z</datestamp>
+  </header>
+  <metadata>
+    <oai_qdc:qdc xmlns:oai_qdc="http://pandata.org/pmh/oai_qdc/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pandata.org/pmh/oai_qdc/ http://pandata.org/pmh/oai_qdc.xsd">
+      <dc:identifier>10.5286/ISIS.E.24090603</dc:identifier>
+      <dc:title>Development of Creep Cavitation in Stainless Steel</dc:title>
+      <dc:description>Reheat cracking is a creep failure mode that has been observed in welded structures operating at high temperatures in the power generation industry. The failure results from the initiation and growth of voids mainly at grain boundaries. A trial experiment has been performed using the D11 instrument and the size distribution of creep cavities size of 1-600 nm characterised. The present experiment will use the SANS2d to measure cavities in interrupted uniaxial creep test specimens which allow us to characterise the cavity size distribution development as a function of life fraction and uniaxial accumulated creep strain. Also it will be used to measure the distribution of creep cavitation damage along the length of a ruptured creep test specimen and a cross weld test specimen to capture the expected rapid spatial variation in creep damage approaching the weld line.  </dc:description>
+      <dc:relation>[SANS2D];RB1310349;run_number_range</dc:relation>
+      <dcterms:references>http://dx.doi.org/10.5286/ISIS.E.24090603</dcterms:references>
+      <dc:creator>Professor Mike Hutchings</dc:creator>
+      <dc:creator>Professor John Bouchard</dc:creator>
+      <dc:creator>Mr Abdullah al Mamun</dc:creator>
+      <dc:creator>Dr Hedieh Jazaeri</dc:creator>
+      <dc:contributor>Science and Technology Facilities Council, ISIS</dc:contributor>
+      <dc:subject>Clean energy and the environment, pharmaceuticals and health care, nanotechnology and materials engineering, catalysis and polymers, fundamental studies of materials</dc:subject>
+      <dcterms:issued>2016-05-17 09:18:17</dcterms:issued>
+      <dc:language>en</dc:language>
+      <dc:publisher>ISIS;ISIS Pulsed Neutron &amp; Muon Source;http://www.isis.stfc.ac.uk;[SANS2D]</dc:publisher>
+      <dc:format>isis neutron raw;binary;2;None</dc:format>
+      <dc:relation>ISIS, Harwell, United Kingdom</dc:relation>
+      <dc:rights>ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html</dc:rights>
+      <dc:relation/>
+      <dc:relation xsi:type="dcterms:ISO3166">GB</dc:relation>
+      <dcterms:temporal>2013-05-15 10:27:43;2013-05-17 09:18:17</dcterms:temporal>
+    </oai_qdc:qdc>
+  </metadata>
+</record>

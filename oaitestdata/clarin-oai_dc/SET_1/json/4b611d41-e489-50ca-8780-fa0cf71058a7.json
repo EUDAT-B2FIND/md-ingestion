@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "University of Bergen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "application/octet-stream",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian Bokm\u00e5l",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/117",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/117"
+    ],
+    "PID": "http://hdl.handle.net/11509/117",
+    "PublicationTimestamp": "2017-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "University of Bergen"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "CLARIN_PUB-BY",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaPub?BY=1",
+        "PUB"
+    ],
+    "author": [
+        "H\u00f8is\u00e6ter, Tore"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/117;2017-01-18T09:17:59Z;hdl_11509_1;hdl_11509_2;Marine evertebrates;H\u00f8is\u00e6ter, Tore;Marine fauna;Terminology;Terminological;Termbase;The resource Marine Evertebrater is a terminological database containing terms in Norwegian Bokm\u00e5l and Latin designating family/genus/species of marine evertebrates in the Norwegian marine fauna.;2017-01-10;lexicalConceptualResource;http://hdl.handle.net/11509/117;nob;lat;CLARIN_PUB-BY;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaPub?BY=1;PUB;application/zip;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;University of Bergen;https://www.terminologi.no",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4b611d41-e489-50ca-8780-fa0cf71058a7",
+    "notes": [
+        "The resource Marine Evertebrater is a terminological database containing terms in Norwegian Bokm\u00e5l and Latin designating family/genus/species of marine evertebrates in the Norwegian marine fauna."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/117"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Marine fauna"
+        },
+        {
+            "name": "Terminology"
+        },
+        {
+            "name": "Terminological"
+        },
+        {
+            "name": "Termbase"
+        }
+    ],
+    "title": [
+        "Marine evertebrates"
+    ],
+    "url": ""
+}

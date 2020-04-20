@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Suomen ymp\u00e4rist\u00f6keskus",
+        "CSC, Tieteen tietotekniikan keskus"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "Finnish"
+    ],
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a073923-ab07-5ab4-b11f-0e7c8eb82825",
+    "PublicationTimestamp": "2016-10-11T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Suomen ymp\u00e4rist\u00f6keskus",
+        "CSC, Tieteen tietotekniikan keskus"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "Suomi",
+        "2006/2012"
+    ],
+    "TemporalCoverage": " period : ( None - 2006-07-01T11:59:59Z ) ",
+    "author": [
+        "Suomen ymp\u00e4rist\u00f6keskus, Finnish environment institute"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata00001000000000000733;2016-10-11T07:41:01Z;7020017-suomen-ymparistokeskus;CORINE maanpeitemuutokset, 5ha 2006-2012;CORINE land cover changes, 5ha, 2006-2012;Suomen ymp\u00e4rist\u00f6keskus, Finnish environment institute;Paituli;http://www.yso.fi/onto/koko/p36412;CORINE Land Cover 2012 kuvaa koko Suomen maank\u00e4ytt\u00f6\u00e4 ja maanpeitett\u00e4 vuonna 2012. SYKEss\u00e4 EU:n Copernicus Gioland-hankkeessa tuotettiin Suomen alueelta maanpeiteaineistot sek\u00e4 laadittiin maanpeitteen muutoksia v\u00e4lill\u00e4 2006-2012 kuvaavat aineistot. Aineistot luotiin kahdella tarkkuustasolla: EU-vaatimusten mukaisesti ja kansalliseen k\u00e4ytt\u00f6\u00f6n. Aineisto koostuu rasterimuotoisesta paikkatietokannasta (erotuskyky 20 * 20 m) ja vektorimuotoisesta paikkatietokannasta, jossa pienin maastossa erottuva alue on v\u00e4hint\u00e4\u00e4n 25 ha ja kapeimmillaan 100 metri\u00e4.\r\n\r\nKansallisen muutosaineiston 2006-2012 pienin kuvio on 0,5 ha ja eurooppalaisen 5 ha.\r\n  Suoria pikselien vertailuja vuoteen 2006 ei suositella tekem\u00e4\u00e4n vaan muutokset kannattaa hakea muutosaineistosta.   \r\n\r\nAineisto on tuotettu SYKEss\u00e4 olemassa oleviin paikkatietoaineistoihin sek\u00e4 satelliittikuvatulkintaan perustuen. Vektoriaineisto tuotettiin yleist\u00e4m\u00e4ll\u00e4 rasteriaineistoa EEA:n CORINE-s\u00e4\u00e4nt\u00f6jen mukaan.\r\n\r\nVektoriaineistoissa maank\u00e4ytt\u00f6\u00e4/maanpeitett\u00e4 kuvataan kolmitasoisella hierarkisella luokittelulla.\r\n\r\n Koordinaattij\u00e4rjestelm\u00e4: ETRS89 / ETRS-TM35FIN (EPSG:3067) ;CORINE Land Cover 2012 dataset provides information on Finnish land cover and land use on 2012, and its changes from 2006 to 2012. The data was produced as a part of the European Gioland 2012 project. \r\n\r\nDataset includes several spatial layers: \r\n\r\n* CLC raster (resolution of 20x20 m) \r\n* CLC vector (minimum mapping unit 25 hectares and minimum width 100 m). \r\n* Source raster (resolution of 20x20 m) on the source data used in the interpretation \r\n* Age raster (resolution of 20x20 m) on the year of the source information \r\n* Change vector (minimum mapping unit 5 hectares) \r\n* Change raster (minimum mapping unit 0,5 hectares)\r\n \r\nThe dataset has been produced in Finnish Environment Institute (SYKE), based on automated interpretation of satellite images and data integration with existing digital map data. The vector dataset was produced from raster data by generalization according to the CORINE 2012 project class definitions.\r\n\r\nThe nomenclature of the vector data has 3 hierarchy levels. The first level classes are: artificial surfaces, agricultural areas, forests and seminatural areas, wetlands and water. The second level has 15 classes and the third level 44 sub-classes. The raster dataset has an additional fourth, national class in some of the sub-classes.\r\n\r\nCoordinate Reference System: ETRS89 / ETRS-TM35FIN (EPSG:3067) ;CSC, Tieteen tietotekniikan keskus;Suomen ymp\u00e4rist\u00f6keskus;2016-10-11;dataset;urn:nbn:fi:csc-kata00001000000000000732;urn:nbn:fi:csc-kata00001000000000000733;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata00001000000000000733;fin;Suomi;2006/2012;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0a073923-ab07-5ab4-b11f-0e7c8eb82825",
+    "notes": [
+        "CORINE Land Cover 2012 kuvaa koko Suomen maank\u00e4ytt\u00f6\u00e4 ja maanpeitett\u00e4 vuonna 2012. SYKEss\u00e4 EU:n Copernicus Gioland-hankkeessa tuotettiin Suomen alueelta maanpeiteaineistot sek\u00e4 laadittiin maanpeitteen muutoksia v\u00e4lill\u00e4 2006-2012 kuvaavat aineistot. Aineistot luotiin kahdella tarkkuustasolla: EU-vaatimusten mukaisesti ja kansalliseen k\u00e4ytt\u00f6\u00f6n. Aineisto koostuu rasterimuotoisesta paikkatietokannasta (erotuskyky 20 * 20 m) ja vektorimuotoisesta paikkatietokannasta, jossa pienin maastossa erottuva alue on v\u00e4hint\u00e4\u00e4n 25 ha ja kapeimmillaan 100 metri\u00e4.\r\n\r\nKansallisen muutosaineiston 2006-2012 pienin kuvio on 0,5 ha ja eurooppalaisen 5 ha.\r\n  Suoria pikselien vertailuja vuoteen 2006 ei suositella tekem\u00e4\u00e4n vaan muutokset kannattaa hakea muutosaineistosta.   \r\n\r\nAineisto on tuotettu SYKEss\u00e4 olemassa oleviin paikkatietoaineistoihin sek\u00e4 satelliittikuvatulkintaan perustuen. Vektoriaineisto tuotettiin yleist\u00e4m\u00e4ll\u00e4 rasteriaineistoa EEA:n CORINE-s\u00e4\u00e4nt\u00f6jen mukaan.\r\n\r\nVektoriaineistoissa maank\u00e4ytt\u00f6\u00e4/maanpeitett\u00e4 kuvataan kolmitasoisella hierarkisella luokittelulla.\r\n\r\n Koordinaattij\u00e4rjestelm\u00e4: ETRS89 / ETRS-TM35FIN (EPSG:3067) ",
+        "CORINE Land Cover 2012 dataset provides information on Finnish land cover and land use on 2012, and its changes from 2006 to 2012. The data was produced as a part of the European Gioland 2012 project. \r\n\r\nDataset includes several spatial layers: \r\n\r\n* CLC raster (resolution of 20x20 m) \r\n* CLC vector (minimum mapping unit 25 hectares and minimum width 100 m). \r\n* Source raster (resolution of 20x20 m) on the source data used in the interpretation \r\n* Age raster (resolution of 20x20 m) on the year of the source information \r\n* Change vector (minimum mapping unit 5 hectares) \r\n* Change raster (minimum mapping unit 0,5 hectares)\r\n \r\nThe dataset has been produced in Finnish Environment Institute (SYKE), based on automated interpretation of satellite images and data integration with existing digital map data. The vector dataset was produced from raster data by generalization according to the CORINE 2012 project class definitions.\r\n\r\nThe nomenclature of the vector data has 3 hierarchy levels. The first level classes are: artificial surfaces, agricultural areas, forests and seminatural areas, wetlands and water. The second level has 15 classes and the third level 44 sub-classes. The raster dataset has an additional fourth, national class in some of the sub-classes.\r\n\r\nCoordinate Reference System: ETRS89 / ETRS-TM35FIN (EPSG:3067) "
+    ],
+    "oai_identifier": [
+        "0a073923-ab07-5ab4-b11f-0e7c8eb82825"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Paituli"
+        },
+        {
+            "name": "http www.yso.fi onto koko p"
+        }
+    ],
+    "title": [
+        "CORINE maanpeitemuutokset, 5ha 2006-2012",
+        "CORINE land cover changes, 5ha, 2006-2012"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata00001000000000000733"
+}

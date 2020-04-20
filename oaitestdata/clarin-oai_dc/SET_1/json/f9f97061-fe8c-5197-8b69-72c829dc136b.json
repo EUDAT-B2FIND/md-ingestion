@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=64a9ea62ab2a11e1a404080027e73ea20629cdaa8f7f48bc9b6bd79589d1c250",
+    "MetadataAccess": [
+        "64a9ea62ab2a11e1a404080027e73ea20629cdaa8f7f48bc9b6bd79589d1c250"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "64a9ea62ab2a11e1a404080027e73ea20629cdaa8f7f48bc9b6bd79589d1c250;2018-11-15T16:39:42Z;corpus;corpus:audio;F_Mona_1/ Spoken Newspaper;108 WAV files of spoken Maltese newspaper texts, subdivided into 12 directories with a variable number of sentences (sometimes: clauses) each. They come together with transcriptions and tables of phoneme durations.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f9f97061-fe8c-5197-8b69-72c829dc136b",
+    "notes": [
+        "108 WAV files of spoken Maltese newspaper texts, subdivided into 12 directories with a variable number of sentences (sometimes: clauses) each. They come together with transcriptions and tables of phoneme durations."
+    ],
+    "oai_identifier": [
+        "64a9ea62ab2a11e1a404080027e73ea20629cdaa8f7f48bc9b6bd79589d1c250"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:audio"
+    ],
+    "state": "active",
+    "title": [
+        "F_Mona_1/ Spoken Newspaper"
+    ]
+}

@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>a83c9d04cb7a11e1a404080027e73ea2359e10ea62b940109aabe03684aa5ea4</identifier>
+    <datestamp>2018-11-15T16:39:39Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:ontology</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Hontology</dc:title>
+      <dc:description>Hontology (H stands for hotel, hostal and hostel) (available at http://ontolp.inf.pucrs.br/Recursos/downloads-Hontology.php) is a new multilingual ontology for the accommodation sector freely available, containing 282 concepts categorized into 16 top-level concepts. 
+
+The concepts of other vocabularies such as Dbpedia.org and Schema.org. were reused and new concepts and properties from online reviews (e.g. booking.com or realtravel.com) with examples of multilingual texts provided by products and services consumers were integrated and manually annotated with different labels, throught terms correlation, rules (lexical patterns) and synonyms, in four languages by experts, English, Portuguese, Spanish and French. For more informations about the Hontology development, the process is described in Chaves and Trojahn (2010), and Chaves et al. (to appear).
+
+Hontology is useful for a wide range of applications within the accommodation sector, including ontology-based information extraction, text annotation and information visualisation.</dc:description>
+      <dc:date>2012-11-28</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

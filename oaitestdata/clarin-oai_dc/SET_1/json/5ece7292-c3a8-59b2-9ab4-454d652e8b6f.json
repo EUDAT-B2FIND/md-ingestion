@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4189",
+    "MetadataAccess": [
+        "oai:ota:oucs:4189"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Bickerstaff, Isaac, 1735-1812."
+    ],
+    "fulltext": "oai:ota:oucs:4189;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4189.xml;The sultan, or a peep into the seraglio: A farce, in two acts. By Isaac Bickerstaffe. Acted at the Theatres Royal in Drury-Lane and Covent-Garden.;Bickerstaff, Isaac, 1735-1812.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5ece7292-c3a8-59b2-9ab4-454d652e8b6f",
+    "oai_identifier": [
+        "oai:ota:oucs:4189"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The sultan, or a peep into the seraglio: A farce, in two acts. By Isaac Bickerstaffe. Acted at the Theatres Royal in Drury-Lane and Covent-Garden."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4189.xml"
+}

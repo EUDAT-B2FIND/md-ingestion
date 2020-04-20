@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "atm-data@helsinki.fi"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a76bc05-f8a2-524a-addc-7148ee84f897",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "atm-data@helsinki.fi"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "DCMI-point: name=Torni; east=24.9387; north=60.1678; elevation=15;",
+        "2010-01-01T00:00:00Z/2010-12-31T23:59:59Z"
+    ],
+    "TempCoverageBegin": 296209223999,
+    "TempCoverageEnd": 63397900800,
+    "TemporalCoverage": " period : ( 9387-07-01T11:59:59Z - 2010-01-01T00:00:00Z ) ",
+    "TemporalCoverage:BeginDate": "9387-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2010-01-01T00:00:00Z",
+    "author": [
+        "Pasi Aalto"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata20160308104406983690;2016-03-08T08:44:07Z;university-of-helsinki-department-of-physics-division-of-atmospheric-sciences;Helsinki Hotel Torni eddy - Air temperature - 2010;Pasi Aalto;http://www.yso.fi/onto/yso/p2100;http://www.yso.fi/onto/yso/p26208;l\u00e4mp\u00f6tila;Title: Air temperature \n\nDescription: 30 min average of air temperature \n\nVariable: av_t \n\nUnit: \u00b0C \n\nSource: Metek USA-1 anemometer/thermometer \n\nCategory: Flux ancillary data \n\n;atm-data@helsinki.fi;2016-03-08;dataset;urn:nbn:fi:csc-ida2014011537120s;urn:nbn:fi:csc-ida-10x201704032015017317926v;urn:nbn:fi:csc-ida2014011537120v;urn:nbn:fi:csc-kata20160308104406983690;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308104406983690;DCMI-point: name=Torni; east=24.9387; north=60.1678; elevation=15;;2010-01-01T00:00:00Z/2010-12-31T23:59:59Z;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0a76bc05-f8a2-524a-addc-7148ee84f897",
+    "notes": [
+        "Title: Air temperature \n\nDescription: 30 min average of air temperature \n\nVariable: av_t \n\nUnit: \u00b0C \n\nSource: Metek USA-1 anemometer/thermometer \n\nCategory: Flux ancillary data \n\n"
+    ],
+    "oai_identifier": [
+        "0a76bc05-f8a2-524a-addc-7148ee84f897"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "http www.yso.fi onto yso p"
+        },
+        {
+            "name": "http www.yso.fi onto yso p"
+        },
+        {
+            "name": "http www.yso.fi onto yso p"
+        }
+    ],
+    "title": [
+        "Helsinki Hotel Torni eddy - Air temperature - 2010"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308104406983690"
+}

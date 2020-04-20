@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Crane, Gregory, 1957-"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 378 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0069",
+    "MetadataAccess": [
+        "oai:ota:oucs:0069"
+    ],
+    "PublicationTimestamp": "1828-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1828"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Fiction"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sherry, Charles",
+        "Hawthorne, Nathaniel, 1804-1864",
+        "Mitford, Mary Russell, 1787-1855"
+    ],
+    "fulltext": "oai:ota:oucs:0069;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0069.xml;Selections / Nathaniel Hawthorne, Charles Sherry and Mary Russell Mitford;Hawthorne, Nathaniel, 1804-1864;Sherry, Charles;Mitford, Mary Russell, 1787-1855;1828-64;text_and_corpus_linguistics;American fiction -- 19th century;eng;Oxford Text Archive, University of Oxford;Crane, Gregory, 1957-;text/plain;(1 file : ca. 378 KB);Text;Fiction;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2a4b46b2-8ea7-517d-a753-ce9b8b2a6a23",
+    "oai_identifier": [
+        "oai:ota:oucs:0069"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American fiction -- th century"
+        }
+    ],
+    "title": [
+        "Selections / Nathaniel Hawthorne, Charles Sherry and Mary Russell Mitford"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0069.xml"
+}

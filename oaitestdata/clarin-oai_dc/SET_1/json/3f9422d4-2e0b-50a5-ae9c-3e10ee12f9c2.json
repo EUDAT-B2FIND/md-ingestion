@@ -1,0 +1,106 @@
+{
+    "Contact": [
+        "University of Bergen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 6",
+        "text/plain; charset=utf-8",
+        "text/plain",
+        "application/vnd.ms-excel"
+    ],
+    "Language": [
+        "Spanish",
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/73",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/73"
+    ],
+    "PID": "http://hdl.handle.net/11509/73",
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "University of Bergen"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN_ACA",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Hareide, Lidun"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/73;2016-06-01T11:43:35Z;hdl_11509_1;hdl_11509_2;The Norwegian-Spanish Parallel Corpus;Hareide, Lidun;Annotation;Bilingual Lexicon Induction;Document Classification;Intra - Document Coreference Resolution;Language Identification;Language Modelling;Lexicon Access;Lexicon Acquisition From Corpora;Lexicon Enhancement;Lexicon Extraction From Lexica;Linguistic Research;Machine Translation;Named Entity Recognition;Natural Language Generation;Natural Language Understanding;Parsing;The Norwegian Spanish Parallel Corpus (NSPC) was created at the University of Bergen, Norway. The corpus is primarily constructed for research in Translation Studies, and is built to be roughly comparable to the Spanish-English P-ACTRES corpus. The NSPC is a parallel, unidirectional translation corpus of contemporary Norwegian written texts translated into Spanish, published between 2000 and 2009. It contains fiction and non-fiction, and each text is classified according to genre, the author's gender and the gender and mother tongue of the translator.;2013;corpus;http://hdl.handle.net/11509/73;spa;nor;CLARIN_ACA;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NORED=1;ACA;application/gzip;application/vnd.ms-excel;application/vnd.ms-excel;application/gzip;application/gzip;text/plain;text/plain; charset=utf-8;downloadable_files_count: 6;University of Bergen",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3f9422d4-2e0b-50a5-ae9c-3e10ee12f9c2",
+    "notes": [
+        "The Norwegian Spanish Parallel Corpus (NSPC) was created at the University of Bergen, Norway. The corpus is primarily constructed for research in Translation Studies, and is built to be roughly comparable to the Spanish-English P-ACTRES corpus. The NSPC is a parallel, unidirectional translation corpus of contemporary Norwegian written texts translated into Spanish, published between 2000 and 2009. It contains fiction and non-fiction, and each text is classified according to genre, the author's gender and the gender and mother tongue of the translator."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/73"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Annotation"
+        },
+        {
+            "name": "Bilingual Lexicon Induction"
+        },
+        {
+            "name": "Document Classification"
+        },
+        {
+            "name": "Intra - Document Coreference Resolution"
+        },
+        {
+            "name": "Language Identification"
+        },
+        {
+            "name": "Language Modelling"
+        },
+        {
+            "name": "Lexicon Access"
+        },
+        {
+            "name": "Lexicon Acquisition Corpora"
+        },
+        {
+            "name": "Lexicon Enhancement"
+        },
+        {
+            "name": "Lexicon Extraction Lexica"
+        },
+        {
+            "name": "Linguistic Research"
+        },
+        {
+            "name": "Machine Translation"
+        }
+    ],
+    "title": [
+        "The Norwegian-Spanish Parallel Corpus"
+    ],
+    "url": ""
+}

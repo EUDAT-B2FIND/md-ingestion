@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Drukarnia \u0141azarzowa"
+    ],
+    "Contributor": [
+        "Trzecieski, Andrzej (ca 1525-ca 1584)",
+        "Rej, Miko\u0142aj (1505-1569)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-166119",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-166119"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CEF-D",
+    "PublicationTimestamp": "1567-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1567"
+    ],
+    "Publisher": [
+        "Drukarnia \u0141azarzowa"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/166119",
+        "oai:jbc.bj.uj.edu.pl:publication:174576"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1501/1600"
+    ],
+    "TempCoverageBegin": 47351044799,
+    "TempCoverageEnd": 47351044799,
+    "TemporalCoverage": " point in time : 1501-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1501-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1501-07-01T11:59:59Z",
+    "author": [
+        "Groicki, Bart\u0142omiej (ca 1534-1605)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-166119;2019-03-01T10:55:42Z;Tytu\u0142y Prawa Maydeburskiego, do Porz\u0105dku y do Artyku\u0142\u00f3w pierwey po Polsku wydanych : W sprawach tego czasu nawi\u0119cey k\u0142opotnych s tego\u017c Prawa Maydebur[skiego] przydane [...];Groicki, Bart\u0142omiej (ca 1534-1605);starodruki 16\u00a0w.;Sp\u0142awski, Stanis\u0142aw (15..?-1569). [Adr. ded.];http://www.bj.uj.edu.pl/uj/katalog?search=KEYWORD&function=CARDSCR&u1=12&t1=xx002006352 Wsp\u00f3\u0142opr. z: BJ St. Dr. Cim. 4437;Drukarnia \u0141azarzowa;Trzecieski, Andrzej (ca 1525-ca 1584);Rej, Miko\u0142aj (1505-1569);1567;starodruk;application/xml;clarind-uds:poldilemma-166119;hdl:11858/00-246C-0000-0023-8CEF-D;Biblioteka Jagiello\u0144ska, BJ St. Dr. Cim. Qu 5015;pol;lat;http://jbc.bj.uj.edu.pl/Content/166119;oai:jbc.bj.uj.edu.pl:publication:174576;1501/1600;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1fb4159f-430e-5501-9f38-1497ee8230e4",
+    "notes": [
+        "Sp\u0142awski, Stanis\u0142aw (15..?-1569). [Adr. ded.]",
+        "http://www.bj.uj.edu.pl/uj/katalog?search=KEYWORD&function=CARDSCR&u1=12&t1=xx002006352 Wsp\u00f3\u0142opr. z: BJ St. Dr. Cim. 4437"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-166119"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Tytu\u0142y Prawa Maydeburskiego, do Porz\u0105dku y do Artyku\u0142\u00f3w pierwey po Polsku wydanych : W sprawach tego czasu nawi\u0119cey k\u0142opotnych s tego\u017c Prawa Maydebur[skiego] przydane [...]"
+    ],
+    "url": ""
+}

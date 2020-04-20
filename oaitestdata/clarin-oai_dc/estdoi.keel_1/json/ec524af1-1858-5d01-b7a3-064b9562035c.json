@@ -1,0 +1,51 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-0015EL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:14977740",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:14977740"
+    ],
+    "PublicationTimestamp": "2018-05-04T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Laur, Sven"
+    ],
+    "fulltext": "oai:oai.datacite.org:14977740;2019-04-17T17:27:11Z;ESTDOI;ESTDOI.KEEL;EstNLTK teek Pythoni jaoks (ver.1.6.2b);EstNLTK library for Python (ver.1.6.2b);Laur, Sven;Center of Estonian Language Resources;2018;Issued: 2018-05-04;Updated: 2018-05-04;doi:10.15155/1-00-0000-0000-0000-0015EL;Abstract;EstNLTK teegis on kergesti kohandatav ning robustne lingvistilise anal\u00fc\u00fcsi t\u00f6\u00f6voog, mis toimib ka\nkirjakeelest oluliselt erinevatel tekstidel. S\u00f5ltuvalt tekstide erip\u00e4rast on v\u00f5imalik kohandada s\u00f5nestamist,\nlausestamist ja morfoloogilist anal\u00fc\u00fcsi. Vaikimisi kasutatakse EKT67 projektis ja Koondkorpuse anal\u00fc\u00fcsi\nabil leitud lihtsustus- ja normaliseerimisreegleid. T\u00f6\u00f6 tulemust valideeriti l\u00e4bi Koondkorpuse ja etTenTen-\ni t\u00e4ieliku anal\u00fc\u00fcsi.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ec524af1-1858-5d01-b7a3-064b9562035c",
+    "notes": [
+        "Abstract",
+        "EstNLTK teegis on kergesti kohandatav ning robustne lingvistilise anal\u00fc\u00fcsi t\u00f6\u00f6voog, mis toimib ka\nkirjakeelest oluliselt erinevatel tekstidel. S\u00f5ltuvalt tekstide erip\u00e4rast on v\u00f5imalik kohandada s\u00f5nestamist,\nlausestamist ja morfoloogilist anal\u00fc\u00fcsi. Vaikimisi kasutatakse EKT67 projektis ja Koondkorpuse anal\u00fc\u00fcsi\nabil leitud lihtsustus- ja normaliseerimisreegleid. T\u00f6\u00f6 tulemust valideeriti l\u00e4bi Koondkorpuse ja etTenTen-\ni t\u00e4ieliku anal\u00fc\u00fcsi."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:14977740"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "EstNLTK teek Pythoni jaoks (ver.1.6.2b)",
+        "EstNLTK library for Python (ver.1.6.2b)"
+    ],
+    "url": ""
+}

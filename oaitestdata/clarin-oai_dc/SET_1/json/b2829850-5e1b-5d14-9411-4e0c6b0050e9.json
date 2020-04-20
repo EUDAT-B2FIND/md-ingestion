@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3045",
+    "MetadataAccess": [
+        "oai:ota:oucs:3045"
+    ],
+    "PublicationTimestamp": "1904-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1904"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "London, Jack, 1876-1916"
+    ],
+    "fulltext": "oai:ota:oucs:3045;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3045.xml;The sea wolf;London, Jack, 1876-1916;not after: 1904;text_and_corpus_linguistics;American fiction -- 20th century;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b2829850-5e1b-5d14-9411-4e0c6b0050e9",
+    "oai_identifier": [
+        "oai:ota:oucs:3045"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American fiction -- th century"
+        }
+    ],
+    "title": [
+        "The sea wolf"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3045.xml"
+}

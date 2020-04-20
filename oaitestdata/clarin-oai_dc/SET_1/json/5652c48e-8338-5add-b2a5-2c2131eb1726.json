@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-76",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-76"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-76",
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/248064"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Rubino, Francesco"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-76;2018-04-06T07:34:58Z;hdl_000-c0-111_38;hdl_000-c0-111_49;SCF Extractor (IT);Rubino, Francesco;Subcategorisation frames extraction;Automatic lexical acquisition;Italian;SCF Extractor (IT) is a service that performs inductive subcategorisation extraction from dependency parsed texts, formatted according to the CoNLL-X format. This tool/service was optimized for Italian. The SCF Extractor tool was developed at CNR-ILC and deployed as a soap web service within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu). The service requires 2 input data: 1) a dependency parsed text corpus the CONLL-X format; 2) a list of verb lemmas for which the subcategorization frames will be extracted. For details on the tool design please see: \r\n- Rimell, Laura, N\u00faria Bel, Muntsa Padr\u00f3, Francesca Frontini, Monica Monachini and \r\nValeria Quochi. 2012. D6.2 Integrated Final Version of the Components\r\nfor Lexical Acquisition. Final Project Report. EC/FP7/248064. PANACEA project.\r\n- Caselli, Tommaso; Frontini, Francesca; Quochi, Valeria; Rubino, Francesco and Russo, Irene. (2012). Customizable SCF Acquisition in Italian.In Proceedings of LREC 2012, Istanbul, Turkey.;2012;toolService;http://hdl.handle.net/20.500.11752/ILC-76;ita;info:eu-repo/grantAgreement/EC/FP7/248064;downloadable_files_count: 0;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.panacea-lr.eu/system/deliverables/PANACEA_D6.2.pdf",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5652c48e-8338-5add-b2a5-2c2131eb1726",
+    "notes": [
+        "SCF Extractor (IT) is a service that performs inductive subcategorisation extraction from dependency parsed texts, formatted according to the CoNLL-X format. This tool/service was optimized for Italian. The SCF Extractor tool was developed at CNR-ILC and deployed as a soap web service within the EU-FP7-STREP PANACEA project (www.panacea-lr.eu). The service requires 2 input data: 1) a dependency parsed text corpus the CONLL-X format; 2) a list of verb lemmas for which the subcategorization frames will be extracted. For details on the tool design please see: \r\n- Rimell, Laura, N\u00faria Bel, Muntsa Padr\u00f3, Francesca Frontini, Monica Monachini and \r\nValeria Quochi. 2012. D6.2 Integrated Final Version of the Components\r\nfor Lexical Acquisition. Final Project Report. EC/FP7/248064. PANACEA project.\r\n- Caselli, Tommaso; Frontini, Francesca; Quochi, Valeria; Rubino, Francesco and Russo, Irene. (2012). Customizable SCF Acquisition in Italian.In Proceedings of LREC 2012, Istanbul, Turkey."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-76"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Subcategorisation frames extraction"
+        },
+        {
+            "name": "Automatic lexical acquisition"
+        },
+        {
+            "name": "Italian"
+        }
+    ],
+    "title": [
+        "SCF Extractor (IT)"
+    ],
+    "url": ""
+}

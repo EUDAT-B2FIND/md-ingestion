@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5582",
+    "MetadataAccess": [
+        "oai:ota:oucs:5582"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Buchan, William, 1729-1805."
+    ],
+    "fulltext": "oai:ota:oucs:5582;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5582.xml;A letter to the patentee, concerning the medical properties of the fleecy hosiery: By William Buchan,...;Buchan, William, 1729-1805.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2f089c04-ca1f-5621-9819-e8dd2ede2504",
+    "oai_identifier": [
+        "oai:ota:oucs:5582"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A letter to the patentee, concerning the medical properties of the fleecy hosiery: By William Buchan,..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5582.xml"
+}

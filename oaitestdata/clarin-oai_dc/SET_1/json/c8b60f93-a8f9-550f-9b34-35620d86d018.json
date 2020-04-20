@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Center for Information and Language Processing, University of Munich"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 36",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English",
+        "German",
+        "Latin",
+        "Hungarian",
+        "Spanish",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/LRT-1483",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/LRT-1483"
+    ],
+    "PID": "http://hdl.handle.net/11234/LRT-1483",
+    "PublicationTimestamp": "2015-03-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Center for Information and Language Processing, University of Munich"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "M\u00fcller, Thomas",
+        "Sch\u00fctze, Hinrich"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/LRT-1483;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Word representations for multiple languages;M\u00fcller, Thomas;Sch\u00fctze, Hinrich;morphological dictionary;morphological analysis;PoS tagging;Dictionaries with different representations for various languages. Representations include brown clusters of different sizes and morphological dictionaries extracted using different morphological analyzers. All representations cover the most frequent 250,000 word types on the Wikipedia version of the respective language.\r\n\r\nAnalzers used: MAGYARLANC (Hungarian, Zsibrita et al. (2013)), FREELING (English and Spanish, Padro and Stanilovsky (2012)), SMOR (German, Schmid et al. (2004)), an MA from Charles University (Czech, Hajic (2001)) and LATMOR (Latin, Springmann et al. (2014)).;2015-03-01;corpus;http://hdl.handle.net/11234/LRT-1483;eng;deu;lat;hun;spa;ces;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;PUB;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 36;Center for Information and Language Processing, University of Munich;http://cistern.cis.lmu.de/marmot/naacl2015/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c8b60f93-a8f9-550f-9b34-35620d86d018",
+    "notes": [
+        "Dictionaries with different representations for various languages. Representations include brown clusters of different sizes and morphological dictionaries extracted using different morphological analyzers. All representations cover the most frequent 250,000 word types on the Wikipedia version of the respective language.\r\n\r\nAnalzers used: MAGYARLANC (Hungarian, Zsibrita et al. (2013)), FREELING (English and Spanish, Padro and Stanilovsky (2012)), SMOR (German, Schmid et al. (2004)), an MA from Charles University (Czech, Hajic (2001)) and LATMOR (Latin, Springmann et al. (2014))."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/LRT-1483"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphological dictionary"
+        },
+        {
+            "name": "morphological analysis"
+        },
+        {
+            "name": "PoS tagging"
+        }
+    ],
+    "title": [
+        "Word representations for multiple languages"
+    ],
+    "url": ""
+}

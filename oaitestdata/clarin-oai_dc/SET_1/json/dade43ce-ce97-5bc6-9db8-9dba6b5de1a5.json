@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "The PROIEL Treebank"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "text/xml",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Gothic",
+        "Ancient Greek (to 1453)",
+        "Church Slavic",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/114",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/114"
+    ],
+    "PID": "http://hdl.handle.net/11509/114",
+    "PublicationTimestamp": "2016-11-29T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "The PROIEL Treebank"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "CC",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    ],
+    "author": [
+        "Haug, Dag",
+        "J\u00f8hndal, Marius L."
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/114;2016-12-05T13:37:31Z;hdl_11509_1;hdl_11509_2;PROIEL collection;Haug, Dag;J\u00f8hndal, Marius L.;Treebank;Morphosyntactic Annotation;The _PROIEL Treebank_ is a dependency treebank with morphosyntactic and information-structure annotation. It includes texts in several ancient Indo-European languages and is freely available under a Creative Commons CC BY-NC-SA 4.0 license.\r\n\r\nPlease cite as:\r\nDag T. T. Haug and Marius L. J\u00f8hndal. 2008. 'Creating a Parallel Treebank of the Old Indo-European Bible Translations'. In Caroline Sporleder and Kiril Ribarov (eds.). Proceedings of the Second Workshop on Language Technology for Cultural Heritage Data (LaTeCH 2008) (2008), pp. 27-34.\r\n\r\nReleases of the PROIEL Treebank are hosted on[Github](https://github.com/proiel/proiel-treebank).\r\n\r\nThe following texts are included in this release of the treebank:\r\n\r\nText       |         Language         |         Filename        |        Size\r\n\r\nThe Greek New Testament (ed. Tischendorf 1869) | Ancient Greek | greek-nt | 140,676 tokens\r\nThe Armenian New Testament (ed. K\u00fcnzle 1984) | Classical Armenian | armenian-nt | 23,513 tokens\r\nThe Gothic Bible (ed. Streitberg 1919) | Gothic | gothic-nt | 57,211 tokens\r\nCodex Marianus (ed. Jagi\u0107 1883) | Old Church Slavonic | marianus | 58,269 tokens\r\nJerome's Vulgate | Latin | latin-nt | 81,441 tokens\r\nCaesar, Commentarii belli Gallici (ed. Holmes 1914) | Latin | caes-gal | 28,608 tokens\r\nCicero, Epistulae ad Atticum (ed. Purser 1901) | Latin | cic-att | 41,901 tokens\r\nPeregrinatio Aetheriae (ed. Heraeus 1908) | Latin | per-aeth | 18,356 tokens\r\nHerodotus, Histories (ed. Godley 1920) | Ancient Greek | hdt | 81,495 tokens\r\nSphrantzes, Chronicles (post-1453) (ed. Grecu 1966) | Ancient Greek | chron | 24,612 tokens\r\n\r\n(The 'size' column in the table above shows the number of annotated tokens ina text. The number of tokens will be slightly larger than the number of words in the original printed edition as some words have been split into multiple tokens and some tokens have been inserted during annotation.)\r\n\r\nPlease see the XML files for detailed metadata and a full list of contributors.\r\n\r\nData formats: \r\n\r\nThe texts are available on two formats:\r\n\r\n1. PROIEL XML: These files are the authoritative source files and the only ones that contain all available annotation. They contain the complete morphological, syntactic and information-structure annotation, as well as the complete text, including punctuation, section headers etc. The schema is defined in [`proiel.xsd`](https://github.com/proiel/proiel-treebank/blob/master/proiel.xsd).\r\n\r\n2. [CoNLL-X format](http://nextens.uvt.nl/depparse-wiki/DataFormat);2016-11-29;corpus;http://hdl.handle.net/11509/114;got;grc;chu;lat;xcl;Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);CC;https://creativecommons.org/licenses/by-nc-sa/4.0/;application/gzip;text/plain; charset=utf-8;text/xml;downloadable_files_count: 1;The PROIEL Treebank;http://proiel.github.io/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dade43ce-ce97-5bc6-9db8-9dba6b5de1a5",
+    "notes": [
+        "The _PROIEL Treebank_ is a dependency treebank with morphosyntactic and information-structure annotation. It includes texts in several ancient Indo-European languages and is freely available under a Creative Commons CC BY-NC-SA 4.0 license.\r\n\r\nPlease cite as:\r\nDag T. T. Haug and Marius L. J\u00f8hndal. 2008. 'Creating a Parallel Treebank of the Old Indo-European Bible Translations'. In Caroline Sporleder and Kiril Ribarov (eds.). Proceedings of the Second Workshop on Language Technology for Cultural Heritage Data (LaTeCH 2008) (2008), pp. 27-34.\r\n\r\nReleases of the PROIEL Treebank are hosted on[Github](https://github.com/proiel/proiel-treebank).\r\n\r\nThe following texts are included in this release of the treebank:\r\n\r\nText       |         Language         |         Filename        |        Size\r\n\r\nThe Greek New Testament (ed. Tischendorf 1869) | Ancient Greek | greek-nt | 140,676 tokens\r\nThe Armenian New Testament (ed. K\u00fcnzle 1984) | Classical Armenian | armenian-nt | 23,513 tokens\r\nThe Gothic Bible (ed. Streitberg 1919) | Gothic | gothic-nt | 57,211 tokens\r\nCodex Marianus (ed. Jagi\u0107 1883) | Old Church Slavonic | marianus | 58,269 tokens\r\nJerome's Vulgate | Latin | latin-nt | 81,441 tokens\r\nCaesar, Commentarii belli Gallici (ed. Holmes 1914) | Latin | caes-gal | 28,608 tokens\r\nCicero, Epistulae ad Atticum (ed. Purser 1901) | Latin | cic-att | 41,901 tokens\r\nPeregrinatio Aetheriae (ed. Heraeus 1908) | Latin | per-aeth | 18,356 tokens\r\nHerodotus, Histories (ed. Godley 1920) | Ancient Greek | hdt | 81,495 tokens\r\nSphrantzes, Chronicles (post-1453) (ed. Grecu 1966) | Ancient Greek | chron | 24,612 tokens\r\n\r\n(The 'size' column in the table above shows the number of annotated tokens ina text. The number of tokens will be slightly larger than the number of words in the original printed edition as some words have been split into multiple tokens and some tokens have been inserted during annotation.)\r\n\r\nPlease see the XML files for detailed metadata and a full list of contributors.\r\n\r\nData formats: \r\n\r\nThe texts are available on two formats:\r\n\r\n1. PROIEL XML: These files are the authoritative source files and the only ones that contain all available annotation. They contain the complete morphological, syntactic and information-structure annotation, as well as the complete text, including punctuation, section headers etc. The schema is defined in [`proiel.xsd`](https://github.com/proiel/proiel-treebank/blob/master/proiel.xsd).\r\n\r\n2. [CoNLL-X format](http://nextens.uvt.nl/depparse-wiki/DataFormat)"
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/114"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Treebank"
+        },
+        {
+            "name": "Morphosyntactic Annotation"
+        }
+    ],
+    "title": [
+        "PROIEL collection"
+    ],
+    "url": ""
+}

@@ -1,0 +1,244 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-482</identifier>
+    <datestamp>2020-02-11T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-482</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Wnuk, Markus-Christian</creatorName>
+          <givenName>Markus-Christian</givenName>
+          <familyName>Wnuk</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-3022-3195</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Jaensch, Florian</creatorName>
+          <givenName>Florian</givenName>
+          <familyName>Jaensch</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-5704-2397</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Tomzik, David Adrian</creatorName>
+          <givenName>David Adrian</givenName>
+          <familyName>Tomzik</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-6206-120X</nameIdentifier>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName>Chen, Zixiao</creatorName>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Terfurth, Jonathan</creatorName>
+          <givenName>Jonathan</givenName>
+          <familyName>Terfurth</familyName>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Kandasamy, Sivakumar</creatorName>
+          <givenName>Sivakumar</givenName>
+          <familyName>Kandasamy</familyName>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Shahabi, Jalil</creatorName>
+          <givenName>Jalil</givenName>
+          <familyName>Shahabi</familyName>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Garrett, Amy</creatorName>
+          <givenName>Amy</givenName>
+          <familyName>Garrett</familyName>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Mahmoudinezhad, Masoumeh H.</creatorName>
+          <givenName>Masoumeh H.</givenName>
+          <familyName>Mahmoudinezhad</familyName>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName>Csiszar, Akos</creatorName>
+          <nameIdentifier nameIdentifierScheme="GND">1144965179</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName>Xu, Weiliang</creatorName>
+          <affiliation>University of Auckland</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">R&#246;hrle, Oliver</creatorName>
+          <givenName>Oliver</givenName>
+          <familyName>R&#246;hrle</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-1934-6525</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Verl, Alexander</creatorName>
+          <givenName>Alexander</givenName>
+          <familyName>Verl</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2548-6620</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Supplemental Material for Case Study about Challenges in Soft Tissue Manipulation</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Computer and Information Science</subject>
+        <subject>Engineering</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Organizational">Wnuk, Markus-Christian</contributorName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Jaensch, Florian</contributorName>
+          <givenName>Florian</givenName>
+          <familyName>Jaensch</familyName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName>Wnuk, Markus-Christian</contributorName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Tomzik, David Adrian</contributorName>
+          <givenName>David Adrian</givenName>
+          <familyName>Tomzik</familyName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName>Chen, Zixiao</contributorName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Terfurth, Jonathan</contributorName>
+          <givenName>Jonathan</givenName>
+          <familyName>Terfurth</familyName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Kandasamy, Sivakumar</contributorName>
+          <givenName>Sivakumar</givenName>
+          <familyName>Kandasamy</familyName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Shahabi, Jalil</contributorName>
+          <givenName>Jalil</givenName>
+          <familyName>Shahabi</familyName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Garrett, Amy</contributorName>
+          <givenName>Amy</givenName>
+          <familyName>Garrett</familyName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Mahmoudinezhad, Masoumeh H.</contributorName>
+          <givenName>Masoumeh H.</givenName>
+          <familyName>Mahmoudinezhad</familyName>
+        </contributor>
+        <contributor contributorType="ProjectManager">
+          <contributorName>Csiszar, Akos</contributorName>
+        </contributor>
+        <contributor contributorType="ProjectManager">
+          <contributorName nameType="Personal">Galliani, Simona</contributorName>
+          <givenName>Simona</givenName>
+          <familyName>Galliani</familyName>
+        </contributor>
+        <contributor contributorType="Supervisor">
+          <contributorName>Xu, Weiliang</contributorName>
+        </contributor>
+        <contributor contributorType="Supervisor">
+          <contributorName nameType="Personal">R&#246;hrle, Oliver</contributorName>
+          <givenName>Oliver</givenName>
+          <familyName>R&#246;hrle</familyName>
+        </contributor>
+        <contributor contributorType="Supervisor">
+          <contributorName nameType="Personal">Verl, Alexander</contributorName>
+          <givenName>Alexander</givenName>
+          <familyName>Verl</familyName>
+        </contributor>
+        <contributor contributorType="Supervisor">
+          <contributorName nameType="Personal">Cheng, Leo</contributorName>
+          <givenName>Leo</givenName>
+          <familyName>Cheng</familyName>
+        </contributor>
+        <contributor contributorType="RelatedPerson">
+          <contributorName nameType="Personal">Paskaranandavadivel, Nira</contributorName>
+          <givenName>Nira</givenName>
+          <familyName>Paskaranandavadivel</familyName>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName nameType="Personal">Gorjup, Gal</contributorName>
+          <givenName>Gal</givenName>
+          <familyName>Gorjup</familyName>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName nameType="Personal">Liarokapis, Minas</contributorName>
+          <givenName>Minas</givenName>
+          <familyName>Liarokapis</familyName>
+        </contributor>
+        <contributor contributorType="RelatedPerson">
+          <contributorName nameType="Personal">Deines, Inga</contributorName>
+          <givenName>Inga</givenName>
+          <familyName>Deines</familyName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">2019-03-26</date>
+        <date dateType="Submitted">2019-10-28</date>
+        <date dateType="Updated">2020-02-10</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">image data</resourceType>
+      <sizes>
+        <size>195268</size>
+        <size>157548</size>
+        <size>66678</size>
+        <size>321842771</size>
+      </sizes>
+      <formats>
+        <format>image/jpeg</format>
+        <format>image/jpeg</format>
+        <format>image/png</format>
+        <format>video/mp4</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Supplemental image and video material for the paper "Challenges in robotic soft tissue manipulation - Problem identification based on an interdisciplinary case study of a teleoperated drawing robot in practice"  presented at the 2019 conference M2VIP.&#13;
+The presented results are the outcome of the 2019 summer school project within the International Research Training Group (IRTG) "Soft Tissue Robotics".&#13;
+Please refer to the project homepage for further information on the IRTG : https://www.str.uni-stuttgart.de/.&#13;
+The setup was used for the analysis and identification of challenges in soft tissue manipulation with rigid robots. It was built by a team of PhD students within one week of interdisciplinary work during the 2019 summer school at the University of Auckland.&#13;
+The setup consists of a 6-axis robot (UR5 of Universal Robots), which has a flexible pen with integrated flex sensors as end effector. A balloon is attached to a fixture in front of the robot which is equipped with a load cell for z-axis force measurement. For the human-machine interface, a haptic device is used. The control for these components is implemented as a distributed control architecture using several PCs and microcontrollers.&#13;
+The robot control is controlled by teleoperation. The forces measured at the end effector are feed back to the operator through the haptic decive. For more information on the utilized teleoperation framework refer to the paper of Gorjup et al. which is listed as related publication.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>University of Auckland</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft</funderName>
+          <awardNumber>GRK 2198/1</awardNumber>
+        </fundingReference>
+        <fundingReference>
+          <funderName>University of Auckland</funderName>
+          <awardNumber>Vice-Chancellor&#8217;s Strategic Development Fund</awardNumber>
+        </fundingReference>
+        <fundingReference>
+          <funderName>Auckland Bioengineering Institute of the University of Auckland</funderName>
+          <awardNumber>Faculty Research Development Fund</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

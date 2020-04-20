@@ -1,0 +1,56 @@
+{
+    "Contributor": [
+        "Prokopidis, Prokopis"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Modern Greek (1453-)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-199",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-199"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-199",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Greece"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-199;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Greek Dependency Treebank (GDT);Prokopidis, Prokopis;70K words, Non-validated sentence segmentation. Non-validated POS tagging, Manual annotation of syntactic dependencies and dependency labels, Manual annotation of semantic roles, Manual annotation of events based on a shallow domain specific ontology (only for a 31K words  subset of GDT);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-199;ell;downloadable_files_count: 0;Greece;http://www.ilsp.gr/homepages/prokopidis/documents/gdt_tlt2005.pdf",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cedfc6d0-a076-557d-a46f-56b2d1f82e22",
+    "notes": [
+        "70K words, Non-validated sentence segmentation. Non-validated POS tagging, Manual annotation of syntactic dependencies and dependency labels, Manual annotation of semantic roles, Manual annotation of events based on a shallow domain specific ontology (only for a 31K words  subset of GDT)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-199"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Greek Dependency Treebank (GDT)"
+    ],
+    "url": ""
+}

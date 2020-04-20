@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 3",
+        "application/octet-stream"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F7-8",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F7-8"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-48F7-8",
+    "PublicationTimestamp": "2009-10-13T13:11:11Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU General Public License, version 2",
+        "http://www.gnu.org/licenses/gpl-2.0.html",
+        "PUB"
+    ],
+    "author": [
+        "Pajas, Petr"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F7-8;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;TrEd;Pajas, Petr;annotation;tree;editor;XML;PML;Tree Editor\r\n\r\nTrEd is a fully customizable and programmable graphical editor and viewer for tree-like structures. Among other projects, it was used as the main annotation tool for syntactical and tectogrammatical annotations in The Prague Dependency Treebank, as well as for decision-tree based morphological annotation of The Prague Arabic Dependency Treebank.;2009-10-13T13:11:11Z;toolService;http://hdl.handle.net/11858/00-097C-0000-0001-48F7-8;GNU General Public License, version 2;http://www.gnu.org/licenses/gpl-2.0.html;PUB;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 3;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/tred/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c4bbec83-36fc-578a-b485-86ec4b573253",
+    "notes": [
+        "Tree Editor\r\n\r\nTrEd is a fully customizable and programmable graphical editor and viewer for tree-like structures. Among other projects, it was used as the main annotation tool for syntactical and tectogrammatical annotations in The Prague Dependency Treebank, as well as for decision-tree based morphological annotation of The Prague Arabic Dependency Treebank."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48F7-8"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "annotation"
+        },
+        {
+            "name": "tree"
+        },
+        {
+            "name": "editor"
+        },
+        {
+            "name": "XML"
+        },
+        {
+            "name": "PML"
+        }
+    ],
+    "title": [
+        "TrEd"
+    ],
+    "url": ""
+}

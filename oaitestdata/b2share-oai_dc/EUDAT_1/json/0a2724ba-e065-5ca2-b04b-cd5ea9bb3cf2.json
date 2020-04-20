@@ -1,0 +1,56 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.23728/b2share.d2e4b65310ed43fb91251c1ab2c47d86",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/d2e4b65310ed43fb91251c1ab2c47d86",
+    "PID": "http://hdl.handle.net/11304/1c2f7424-47bb-48ac-82b1-b7431fab2891",
+    "PublicationTimestamp": "2017-06-18T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/1c2f7424-47bb-48ac-82b1-b7431fab2891",
+        "10.23728/b2share.d2e4b65310ed43fb91251c1ab2c47d86",
+        "https://b2share.eudat.eu/api/records/d2e4b65310ed43fb91251c1ab2c47d86",
+        "oai:b2share.eudat.eu:b2rec/d2e4b65310ed43fb91251c1ab2c47d86"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "CC-BY-SA"
+    ],
+    "author": [
+        "Kuchinke, Wolfgang",
+        "Iozzi, Francesca",
+        "Broeder, Daan"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/d2e4b65310ed43fb91251c1ab2c47d86;2018-01-11T13:50:33Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;Kuchinke, Wolfgang;Iozzi, Francesca;Broeder, Daan;2017-06-18T19:53:44.042408+00:00;Results of the first f2f EUDAT Sensitive Data Working Group Meeting in Krakow Sept 27, 2016;http://hdl.handle.net/11304/1c2f7424-47bb-48ac-82b1-b7431fab2891;10.23728/b2share.d2e4b65310ed43fb91251c1ab2c47d86;https://b2share.eudat.eu/api/records/d2e4b65310ed43fb91251c1ab2c47d86;oai:b2share.eudat.eu:b2rec/d2e4b65310ed43fb91251c1ab2c47d86;info:eu-repo/semantics/openAccess;CC-BY-SA;Sensitive Data, eInfrastructure, ;How can e-infrastructures deal with the sensitive data challenge? Results of the EUDAT Sensitive Data Group workshop",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "0a2724ba-e065-5ca2-b04b-cd5ea9bb3cf2",
+    "notes": [
+        "Results of the first f2f EUDAT Sensitive Data Working Group Meeting in Krakow Sept 27, 2016"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/d2e4b65310ed43fb91251c1ab2c47d86"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Sensitive Data"
+        },
+        {
+            "name": "eInfrastructure"
+        }
+    ],
+    "title": [
+        "How can e-infrastructures deal with the sensitive data challenge? Results of the EUDAT Sensitive Data Group workshop"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/d2e4b65310ed43fb91251c1ab2c47d86"
+}

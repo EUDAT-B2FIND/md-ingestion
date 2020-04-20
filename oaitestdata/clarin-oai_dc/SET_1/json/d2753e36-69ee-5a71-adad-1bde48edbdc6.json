@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/9",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/9"
+    ],
+    "PID": "http://hdl.handle.net/10794/9",
+    "PublicationTimestamp": "2015-03-04T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Borin, Lars"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/9;2017-10-27T16:12:08Z;hdl_10794_1;hdl_10794_2;Blingbring (2017-10-16);Blingbring (2017-10-16);Borin, Lars;Swedish;Thesaurus;Blingbring, an enhanced and modernized version of Bring's thesaurus (1930).;Blingbring, en SALDO-l\u00e4nkad och moderniserad version av Brings \"Svenskt ordf\u00f6rr\u00e5d ordnat i begreppsklasser\" (1930).;2015-03-04;lexicalConceptualResource;http://hdl.handle.net/10794/9;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/blingbring",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d2753e36-69ee-5a71-adad-1bde48edbdc6",
+    "notes": [
+        "Blingbring, an enhanced and modernized version of Bring's thesaurus (1930).",
+        "Blingbring, en SALDO-l\u00e4nkad och moderniserad version av Brings \"Svenskt ordf\u00f6rr\u00e5d ordnat i begreppsklasser\" (1930)."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/9"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Thesaurus"
+        }
+    ],
+    "title": [
+        "Blingbring (2017-10-16)",
+        "Blingbring (2017-10-16)"
+    ],
+    "url": ""
+}

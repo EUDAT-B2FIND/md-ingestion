@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1597</identifier>
+    <datestamp>2016-12-16T09:50:16Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Speech databases of typical children and children with SLI</dc:title>
+      <dc:creator>Tu&#269;kov&#225;, Jana</dc:creator>
+      <dc:creator>Grill, Pavel</dc:creator>
+      <dc:creator>Vav&#345;ina, Josef</dc:creator>
+      <dc:creator>B&#225;rt&#367;, Marek</dc:creator>
+      <dc:subject>Specific Language Impairments</dc:subject>
+      <dc:subject>Developmental Dysphasia</dc:subject>
+      <dc:subject>Children Pathological Speech</dc:subject>
+      <dc:description>Our Laboratory of Artificial Neural Network Applications (LANNA) in the Czech Technical University in Prague (head of the laboratory is professor Jana Tu&#269;kov&#225;) collaborates on a project with the Department of Paediatric Neurology, 2nd Faculty of Medicine of Charles University in Prague and with the Motol University Hospital (head of clinic is professor Vladim&#237;r Kom&#225;rek), which focuses on the study of children with SLI.&#13;
+&#13;
+The speech database contains two subgroups of recordings of children's speech from different types of speakers. The first subgroup (healthy) consists of recordings of children without speech disorders; the second subgroup (patients) consists of recordings of children with SLI. These children have different degrees of severity (1 &#8211; mild, 2 &#8211; moderate, and 3 &#8211; severe). The speech therapists and specialists from Motol Hospital decided upon this classification. The children&#8217;s speech was recorded in the period 2003-2013. These databases were commonly created in a schoolroom or a speech therapist&#8217;s consulting room, in the presence of surrounding background noise. This situation simulates the natural environment in which the children live, and is important for capturing the normal behavior of children. The database of healthy children&#8217;s speech was created as a referential database for the computer processing of children&#8217;s speech. It was recorded on the SONY digital Dictaphone (sampling frequency, fs = 16 kHz, 16-bit resolution in stereo mode in the standardized wav format) and on the MD SONY MZ-N710 (sampling frequency, fs = 44.1 kHz, 16-bit resolution in stereo mode in the standardized wav format). The corpus was recorded in the natural environment of a schoolroom and in a clinic. This subgroup contains a total of 44 native Czech participants (15 boys, 29 girls) aged 4 to 12 years, and was recorded during the period 2003&#8211;2005. The database of children with SLI was recorded in a private speech therapist&#8217;s office. The children&#8217;s speech is captured by means of a SHURE lapel microphone using the solution by the company AVID (MBox &#8211; USB AD/DA converter and ProTools LE software) on an Apple laptop (iBook G4). The sound recordings are saved in the standardized wav format. The sampling frequency is set to 44.1 kHz with 16-bit resolution in mono mode. This subgroup contains a total of 54 native Czech participants (35 boys, 19 girls) aged 6 to 12 years, and was recorded during the period 2009&#8211;2013. This package contains wav data sets for development and testing methods for detection children with SLI.&#13;
+&#13;
+Software pack:&#13;
+FORANA - was developed the original software FORANA for formants analysis. It is based on the MATLAB programming environment. The development of this software was mainly driven by the need to have the ability to complete formant analysis correctly and full automation of the process of extracting formants from the recorded speech signals. Development of this application is still running. Software was developed in the LANNA at CTU FEE in Prague.&#13;
+&#13;
+LABELING - the program LABELING is used for segmentation of the speech signal. It is a part of SOMLab program system. Software was developed in the LANNA at CTU FEE in Prague.&#13;
+&#13;
+PRAAT - is an acoustic analysis software. The Praat program was created by Paul Boersma and David Weenink of the Institute of Phonetics Sciences of the University of Amsterdam. Home page: http://www.praat.org or http://www.fon.hum.uva.nl/praat/.</dc:description>
+      <dc:date>2013</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1597</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Department of Circuit Theory, Czech Technical University in Prague, Faculty of Electrical Engineering</dc:publisher>
+      <dc:source>http://ajatubar.feld.cvut.cz/lanna/en/index.php?page=vyzkum</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

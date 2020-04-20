@@ -1,0 +1,45 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1088</identifier>
+    <datestamp>2018-12-04T16:12:01Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Tweet comma corpus Janes-Vejica 1.0</dc:title>
+      <dc:creator>Popi&#269;, Damjan</dc:creator>
+      <dc:creator>Zupan, Katja</dc:creator>
+      <dc:creator>Logar, Polona</dc:creator>
+      <dc:creator>Kav&#269;i&#269;, Teja</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Fi&#353;er, Darja</dc:creator>
+      <dc:subject>computer-mediated communication</dc:subject>
+      <dc:subject>Twitter</dc:subject>
+      <dc:subject>comma placement</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:subject>manual annotation</dc:subject>
+      <dc:description>Janes-Vejica is a corpus of Slovene tweets where commas are annotated with the reason for their (in)correct use, according to the supplied typology. The corpus was sampled from the Janes-Norm corpus (http://hdl.handle.net/11356/1084), which was manually annotated for tokenisation, sentence segmentation, and word normalisation, and automatically for morphosyntactic descriptions and lemmas.&#13;
+&#13;
+The corpus is further described in:&#13;
+ POPI&#268;, Damjan, FI&#352;ER, Darja, ZUPAN, Katja, LOGAR, Polona. Raba vejice v uporabni&#353;kih spletnih vsebinah. Proceedings of the Conference on Language Technologies &amp; Digital Humanities, Ljubljana, Slovenia. 2016, pp. 149-153. http://www.sdjt.si/wp/dogodki/konference/jtdh-2016/zbornik/</dc:description>
+      <dc:date>2017-02-16</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1088</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://nl.ijs.si/janes/viri/rocno-oznaceni-korpusi/#Janes-Vejica</dc:relation>
+      <dc:relation>https://doi.org/10.1007/s10579-018-9425-z</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>http://nl.ijs.si/janes/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

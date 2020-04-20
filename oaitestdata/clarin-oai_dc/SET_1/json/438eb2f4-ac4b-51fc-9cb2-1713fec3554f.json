@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Sven Sellmer"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Sanskrit"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/457",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/457"
+    ],
+    "PID": "http://hdl.handle.net/11321/457",
+    "PublicationTimestamp": "2018-04-11T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Sven Sellmer"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Sellmer, Sven"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/457;2018-04-11T09:50:08Z;hdl_11321_3;hdl_11321_4;Mahabharata_sample;Sellmer, Sven;Sanskrit epics;lemmatised Sanskrit text with lemma IDs, white-space delimited;2018-04-11;corpus;http://hdl.handle.net/11321/457;Sanskrit;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Sven Sellmer",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "438eb2f4-ac4b-51fc-9cb2-1713fec3554f",
+    "notes": [
+        "lemmatised Sanskrit text with lemma IDs, white-space delimited"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/457"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Sanskrit epics"
+        }
+    ],
+    "title": [
+        "Mahabharata_sample"
+    ],
+    "url": ""
+}

@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 745 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1829",
+    "MetadataAccess": [
+        "oai:ota:oucs:1829"
+    ],
+    "PublicationTimestamp": "1721-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1721"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Defoe, Daniel, 1661?-1731"
+    ],
+    "fulltext": "oai:ota:oucs:1829;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/1829.xml;The history and misfortunes of the famous Moll Flanders, etc. / by Daniel Defoe;Defoe, Daniel, 1661?-1731;1721;text_and_corpus_linguistics;Fiction -- England -- 18th century;Picaresque fiction -- England -- 18th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 745 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "399045b1-5576-53ea-954e-724202cb73ed",
+    "oai_identifier": [
+        "oai:ota:oucs:1829"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- England -- th century"
+        },
+        {
+            "name": "Picaresque fiction -- England -- th century"
+        }
+    ],
+    "title": [
+        "The history and misfortunes of the famous Moll Flanders, etc. / by Daniel Defoe"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1829.xml"
+}

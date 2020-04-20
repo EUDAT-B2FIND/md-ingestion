@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Masaryk University, NLP Centre"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2822",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2822"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2822",
+    "PublicationTimestamp": "2018-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Masaryk University, NLP Centre"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Nev\u011b\u0159ilov\u00e1, Zuzana",
+        "Pelik\u00e1nov\u00e1, Zuzana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2822;2018-10-04T11:50:46Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;czTenTen12 v9 subcorpus of problematic phenomena;Pelik\u00e1nov\u00e1, Zuzana;Nev\u011b\u0159ilov\u00e1, Zuzana;Non-standard language;Interlingual homographs;Text corpus;czTenTen12 v9 subcorpus containing problematic features (interlingual homographs, foreign proper names, named entities);2018-05-30;corpus;http://hdl.handle.net/11234/1-2822;ces;Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0);http://creativecommons.org/licenses/by-nc-nd/4.0/;PUB;text/plain;text/plain; charset=utf-8;downloadable_files_count: 1;Masaryk University, NLP Centre",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9870878b-3898-52de-8b53-5e6debe90add",
+    "notes": [
+        "czTenTen12 v9 subcorpus containing problematic features (interlingual homographs, foreign proper names, named entities)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2822"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Non-standard language"
+        },
+        {
+            "name": "Interlingual homographs"
+        },
+        {
+            "name": "Text corpus"
+        }
+    ],
+    "title": [
+        "czTenTen12 v9 subcorpus of problematic phenomena"
+    ],
+    "url": ""
+}

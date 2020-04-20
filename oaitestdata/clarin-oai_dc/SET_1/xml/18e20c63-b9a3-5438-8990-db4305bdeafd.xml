@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229204</identifier>
+    <datestamp>2019-03-01T13:04:42Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Opisanie Naturalne, Historyczne y Polityczne roznych kraiow swiata to jest Ich po&#322;o&#380;enie, Klima, Historya, Rewolucye [...]</dc:title>
+      <dc:creator xml:lang="en">Contant d'Orville, Andr&#233;-Guillaume (1730?-1800?)</dc:creator>
+      <dc:subject xml:lang="en">geographical descriptions</dc:subject>
+      <dc:subject xml:lang="en">history</dc:subject>
+      <dc:subject xml:lang="en">politics</dc:subject>
+      <dc:subject xml:lang="en">East Asia</dc:subject>
+      <dc:description xml:lang="en">[2], 353, [6] pp. ; 8&#703;</dc:description>
+      <dc:description xml:lang="en">Ded. aut., t&#322;. Joachim Karwowski S.P.: "Do Jasnie Wielmoznego Jmci Pana Jerzego Potockiego [...]"</dc:description>
+      <dc:description xml:lang="en">Data na s. tyt.: MDCCLXXIV</dc:description>
+      <dc:description xml:lang="en">Estr. XV-XVIII t. 3 p. 388</dc:description>
+      <dc:publisher xml:lang="en">w Drukarni J. K. Mci y Rzeczypospolitey u XX. Scholarum Piarum</dc:publisher>
+      <dc:contributor xml:lang="en">Karwowski, Joachim (1736-1821). T&#322;.</dc:contributor>
+      <dc:contributor xml:lang="en">Drukarnia Pijar&#243;w (Warszawa)</dc:contributor>
+      <dc:date xml:lang="en">1774</dc:date>
+      <dc:type xml:lang="en">Text</dc:type>
+      <dc:type xml:lang="en">Early printed book (1501-1800)</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-229204</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8D0B-5</dc:identifier>
+      <dc:source xml:lang="en">CBGiO&#346;. IGiPZ PAN, call no. 782</dc:source>
+      <dc:source xml:lang="en">http://katalog.pan.pl/webpac-bin/210bgiosEN/wgbroker.exe?new+-access+top+search+open+NR+xx002552431</dc:source>
+      <dc:language>pol</dc:language>
+      <dc:relation>http://rcin.org.pl/Content/30364</dc:relation>
+      <dc:relation>oai:rcin.org.pl:publication:23040</dc:relation>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

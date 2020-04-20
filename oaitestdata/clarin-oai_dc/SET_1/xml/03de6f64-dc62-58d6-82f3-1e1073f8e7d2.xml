@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-400</identifier>
+    <datestamp>2019-03-01T15:27:36Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Konstytucye Seymu Extraordynaryinego w Warszawie, Roku MDCCLXVII. Dnia pi&#261;tego pa&#378;dziernika z&#322;o&#380;onego y zacz&#281;tego, a z Limitacyi y prorogacyi roku MDCCLXVIII. Dnia pi&#261;tego Marca, przy rozwi&#261;zaniu Konfederacyi Generalnych Koronney y Wielkiego Xi&#281;stwa Litewskiego zako&#324;czonego [...] ustanowione.</dc:title>
+      <dc:subject xml:lang="pl">Konstytucja 1768 r.</dc:subject>
+      <dc:publisher xml:lang="pl">Drukarnia J.K.Mci i Rzeczyplitey u XX. Scholarum Piarum</dc:publisher>
+      <dc:date>1768</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-400</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8D1A-3</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://pbc.biaman.pl/Content/400</dc:relation>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

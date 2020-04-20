@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10303928</identifier>
+    <datestamp>2019-06-11T22:30:47Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Tekstide helindaja ja heliraamatute genereerija</dc:title>
+      <dc:creator>Mihkla, Meelis</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2017-01-31</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-06333L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Teisendab txt- ja html-formaadis tekstid helifailideks ja lisab ePub3 formaadis e-raamatule s&#252;nteesk&#245;nes kuulatavad audiofailid. Helindaja ja genereerija Vox Populi koosneb kahest komponendist &#8211; tekstide helindajast ja h&#228;&#228;lduss&#245;nastikust. Nende kahe koost&#246;&#246;s ja Eest Keele Instituudi k&#245;nes&#252;nteesi kaasates saab kasutaja saadetud tekstifailist s&#252;nteesh&#228;&#228;lega audiofail.
+
+
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

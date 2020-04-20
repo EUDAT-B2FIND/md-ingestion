@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=8c13600ccd0711e1a404080027e73ea2f9cfd28f51d5437b8f5827c516c348fe",
+    "MetadataAccess": [
+        "8c13600ccd0711e1a404080027e73ea2f9cfd28f51d5437b8f5827c516c348fe"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "8c13600ccd0711e1a404080027e73ea2f9cfd28f51d5437b8f5827c516c348fe;2019-02-27T12:08:48Z;lexicalConceptualResource;lexicalConceptualResource:lexicon;LEX-MWE-PT: Word Combination in Portuguese Language;This lexicon includes multiword expressions (MWE) of European Portuguese extracted from a balanced 50,8M word written corpus \u00e2\u0080\u0093 a subcorpus of the Reference Corpus of Contemporary Portuguese (CRPC). This corpus covers different genres, being mainly constituted by journalistic texts (59%), but it also includes texts from literature (21%), magazines (15%), miscellaneous, supreme court verdicts, parliament sessions and leaflets (5%). The MWE lexicon covers 1.198 lemmas (composed of single words from different POS categories: nouns, adjectives, verbs and adverbs) and a total of 12.753 MWE lemmas (which include inflectional variants of the MWE lemmas) and 242.233 concordances of those MWE expressions manually verified.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1441daca-436c-58e1-b9b5-768a90eb4780",
+    "notes": [
+        "This lexicon includes multiword expressions (MWE) of European Portuguese extracted from a balanced 50,8M word written corpus \u00e2\u0080\u0093 a subcorpus of the Reference Corpus of Contemporary Portuguese (CRPC). This corpus covers different genres, being mainly constituted by journalistic texts (59%), but it also includes texts from literature (21%), magazines (15%), miscellaneous, supreme court verdicts, parliament sessions and leaflets (5%). The MWE lexicon covers 1.198 lemmas (composed of single words from different POS categories: nouns, adjectives, verbs and adverbs) and a total of 12.753 MWE lemmas (which include inflectional variants of the MWE lemmas) and 242.233 concordances of those MWE expressions manually verified."
+    ],
+    "oai_identifier": [
+        "8c13600ccd0711e1a404080027e73ea2f9cfd28f51d5437b8f5827c516c348fe"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:lexicon"
+    ],
+    "state": "active",
+    "title": [
+        "LEX-MWE-PT: Word Combination in Portuguese Language"
+    ]
+}

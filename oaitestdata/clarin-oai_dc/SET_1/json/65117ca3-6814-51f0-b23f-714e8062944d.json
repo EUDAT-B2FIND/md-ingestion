@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "Contributor": [
+        "Schmidt, Thomas",
+        "Sch\u00fctte, Wilfried"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1198",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1198"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1198",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1198;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;FOLKER;Schmidt, Thomas;Sch\u00fctte, Wilfried;Audio transcription editor used for the construction of the FOLK corpus;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1198;downloadable_files_count: 0;Institut f\u00fcr Deutsche Sprache;http://agd.ids-mannheim.de/folker_en.shtml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "65117ca3-6814-51f0-b23f-714e8062944d",
+    "notes": [
+        "Audio transcription editor used for the construction of the FOLK corpus"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1198"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "FOLKER"
+    ],
+    "url": ""
+}

@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0694",
+    "MetadataAccess": [
+        "oai:ota:oucs:0694"
+    ],
+    "PublicationTimestamp": "1320-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1320"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dante Alighieri,  1265-1321"
+    ],
+    "fulltext": "oai:ota:oucs:0694;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0694.xml;Purgatorio  / compiled by Antonio Zampolli for the Istituto di linguistica computazionale, Universit\u00c3\u00a0 di Pisa.;Dante Alighieri,  1265-1321;1320;text_and_corpus_linguistics;Poems -- Italy -- 14th century;ita;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d3687ae9-450f-5fad-8b61-6d6c6390b1cc",
+    "oai_identifier": [
+        "oai:ota:oucs:0694"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Italy -- th century"
+        }
+    ],
+    "title": [
+        "Purgatorio  / compiled by Antonio Zampolli for the Istituto di linguistica computazionale, Universit\u00c3\u00a0 di Pisa."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0694.xml"
+}

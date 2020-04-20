@@ -1,0 +1,106 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6540</identifier>
+    <datestamp>2018-10-25T08:09:54Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.004</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>De Matteo, Ada</default:creatorName>
+              <default:givenName>Ada</default:givenName>
+              <default:familyName>De Matteo</default:familyName>
+              <default:affiliation>Universit&#224; degli Studi del Sannio, Dipartimento di Scienze e Tecnologie, Benevento, Italy</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Corti, Giacomo</default:creatorName>
+              <default:givenName>Giacomo</default:givenName>
+              <default:familyName>Corti</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7399-4438</default:nameIdentifier>
+              <default:affiliation>Consiglio Nazionale delle Ricerche (CNR), Istituto di Geoscienze e Georisorse (IGG), Sede Secondaria di Firenze, Italy</default:affiliation>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia, Sezione di Pisa, Italy</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>van Wyk de Vries, Benjamin</default:creatorName>
+              <default:givenName>Benjamin</default:givenName>
+              <default:familyName>van Wyk de Vries</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7232-0693</default:nameIdentifier>
+              <default:affiliation>Universit&#233; Clermont Auvergne, Observatoire du Physique du Globe de Clermont, Laboratoire Magmas et Volcans, UMR6524-CNRS, Clermont-Ferrand, France</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Massa, Bruno</default:creatorName>
+              <default:givenName>Bruno</default:givenName>
+              <default:familyName>Massa</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-7358-1841</default:nameIdentifier>
+              <default:affiliation>Universit&#224; degli Studi del Sannio, Dipartimento di Scienze e Tecnologie, Benevento, Italy</default:affiliation>
+              <default:affiliation>Istituto Nazionale di Geofisica e Vulcanologia, sezione di Napoli Osservatorio Vesuviano, Napoli, Italy</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Mussetti, Giulio</default:creatorName>
+              <default:givenName>Giulio</default:givenName>
+              <default:familyName>Mussetti</default:familyName>
+              <default:affiliation>Dipartimento di Scienze della terra, Universit&#224; degli Studi di Firenze, Italy</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="en">Brittle models of fault-volcano interactions during extension</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>analogue modelling</default:subject>
+            <default:subject>extensional tectonics</default:subject>
+            <default:subject>normal fault pattern</default:subject>
+            <default:subject>volcano deformation</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>multi-scale laboratories</default:subject>
+            <default:subject>analogue models of geologic processes</default:subject>
+            <default:subject>analogue modelling results</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Tectonics Modelling Laboratory (IGG-CNR, Italy)</default:contributorName>
+              <default:affiliation>IGG-CNR, University of Florence, Florence Italy</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Created">2018-02-19</default:date>
+          </default:dates>
+          <default:language>en</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1016/j.jvolgeores.2018.08.008</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="Cites">10.1016/j.jsg.2005.05.011</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>3164166 Bytes</default:size>
+            <default:size>3 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/pdf</default:format>
+            <default:format>application/pdf</default:format>
+            <default:format>application/x-zip-compressed</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">This dataset contains 11 top view photographs of fault pattern in sand surfaces from a series of analogue tectonic experiments run to investigate the interaction between faults and volcanic features in areas characterized by pure extension, such as in rift areas (de-Matteo_2018-004_datasets.zip: Fig 02 &#8211; Fig 12). Additionally, a figure with a sketch of the experimental setup is provided (Fig 01), a file describing experimental settings for analogue experiments (Table 1.pdf) and a file with figure captions (Figure captions.pdf). This dataset is supplementary to De Matteo et al. (2018), discussing if and how the presence of a volcanic edifice and/or of an intrusive body (i.e. a magmatic chamber) perturbs the local stress field, influencing the magnitude and the attitude of a fault pattern, in a rift zone.<default:br/>
+         <default:br/>Models had dimensions of 40 x 30 x 5 cm. They were built on a metal table confined by two border walls normal to the extension direction: one of them (fixed wall) was fastened to the table and the other one (mobile wall) was connected to an electrical stepped motor (Fig 01). Models had a common set up consisting of a uniform 3 cm-thick brittle layer, made up of sand settled on a basal ~1.5 cm-thick rubber sheet, made of nitrile rubber, fixed to both walls. The sand was a mixture of dry quartz-sand mixed with K-Feldspar powder (70/30% in weight). The mixture had a grain size &lt;250 &#181;m, an angle of internal friction of ~39&#176;, a cohesion of ~65 Pa and a density of ~1550 kg/m3. In some experiments a small cylindrical pocket of fluid material (1 cm thick and with variable diameter) was introduced in the brittle layer, 1 cm above the surface, to simulate an intrusive body. The fluid material was composed by a different Polydimethylsiloxane (PDMS), with density of ~1100 kg/m3 and viscosity of ~ 700 Pa s (Corti et al., 2005). In some experiments volcanic edifices were introduced, modeled with the sand mixture also used for the brittle layer.<default:br/>
+         <default:br/>The model parameters that have been changed were the presence or not of a volcanic edifice and/or of an intrusive body, the diameters of both the volcano and the intrusive body, the height of the volcano and the depth of the intrusive body. For details of experimental setups see table 1.<default:br/>
+         <default:br/>The stretching of the basal rubber sheet, imposed by using a pure and simple shear deformation apparatus, allowed inducing a progressive, diffuse extension to models.<default:br/>
+         <default:br/>The displacement velocity has been varied from 2 to 10 cm/h since -being purely brittle models- the scaling velocity in not relevant. Experiments were performed at the Laboratorie Magmas et Volcans, Universit&#233; Blaise Pascal (Clermont-Ferrand, France) and at the Tectonic Modeling Laboratory of the CNR-IGG hosted at the Earth Science Department of the University of Florence (Italy).</default:description>
+          </default:descriptions>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

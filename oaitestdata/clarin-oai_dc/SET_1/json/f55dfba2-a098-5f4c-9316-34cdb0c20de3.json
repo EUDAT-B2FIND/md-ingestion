@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Department of Trade and Industry"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "185 files: ca. 62.1 MB",
+        "text/xml"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2551",
+    "MetadataAccess": [
+        "oai:ota:oucs:2551"
+    ],
+    "PublicationTimestamp": "1991-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1991"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Linguistic corpora"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under the BNC User Licence. Clicking to download implies acceptance of the licence conditions.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "BNC Consortium"
+    ],
+    "fulltext": "oai:ota:oucs:2551;2018-12-04T13:04:33Z;http://ota.ox.ac.uk/headers/2551.xml;British National Corpus Sampler;BNC Sampler;BNC Consortium;1991-1994;text_and_corpus_linguistics;Linguistics;Linguistics analysis (Linguistics);eng; The BNC Sampler is a subset of the full BNC. It comprises two samples of written and spoken material of one million words each, compiled to mirror the composition of the full BNC as far as possible. The word-class annotation of the BNC Sampler texts has been carefully checked and manually corrected. The Sampler was first created at Lancaster University during the creation of the BNC. More information about the Sampler can be found in the users reference guide for the BNC Sampler: XML Edition [.pdf file]  British National Corpus is a snapshot of British English in the early 1990s. The British National Corpus is: a sample corpus: composed of text samples generally no longer than 45,000 words.a synchronic corpus: the corpus includes imaginative texts from 1960, informative texts from 1975.a general corpus: not specifically restricted to any particular subject field, register or genre.a monolingual British English corpus: it comprises text samples which are substantially the product of speakers of British English.a mixed corpus: it contains examples of both spoken and written language.  The corpus is described in full in the Users Reference Guide at BNC User Reference Guide.  ;Oxford Text Archive, University of Oxford;Department of Trade and Industry;text/xml;185 files: ca. 62.1 MB;Text;Linguistic corpora;Distributed by the University of Oxford under the BNC User Licence. Clicking to download implies acceptance of the licence conditions.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f55dfba2-a098-5f4c-9316-34cdb0c20de3",
+    "notes": [
+        " The BNC Sampler is a subset of the full BNC. It comprises two samples of written and spoken material of one million words each, compiled to mirror the composition of the full BNC as far as possible. The word-class annotation of the BNC Sampler texts has been carefully checked and manually corrected. The Sampler was first created at Lancaster University during the creation of the BNC. More information about the Sampler can be found in the users reference guide for the BNC Sampler: XML Edition [.pdf file]  British National Corpus is a snapshot of British English in the early 1990s. The British National Corpus is: a sample corpus: composed of text samples generally no longer than 45,000 words.a synchronic corpus: the corpus includes imaginative texts from 1960, informative texts from 1975.a general corpus: not specifically restricted to any particular subject field, register or genre.a monolingual British English corpus: it comprises text samples which are substantially the product of speakers of British English.a mixed corpus: it contains examples of both spoken and written language.  The corpus is described in full in the Users Reference Guide at BNC User Reference Guide.  "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2551"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Linguistics"
+        },
+        {
+            "name": "Linguistics analysis Linguistics"
+        }
+    ],
+    "title": [
+        "British National Corpus Sampler",
+        "BNC Sampler"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2551.xml"
+}

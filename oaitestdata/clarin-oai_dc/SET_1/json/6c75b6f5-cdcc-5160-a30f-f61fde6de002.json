@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences"
+    ],
+    "Contributor": [
+        "Simov, Alex",
+        "Kouylekov, Milen",
+        "Simov, Kiril"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1173",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1173"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1173",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Bulgaria"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1173;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;CLaRK System - an XML-based system for Corpora Development;Simov, Kiril;Simov, Alex;Kouylekov, Milen;corpus development;The CLaRK System incorporates several technologies:  - XML technology - Unicode - Cascaded Regular Grammars; - Constraints over XML Documents  On the basis of these technologies the following tools are implemented: XML Editor, Unicode Tokeniser, Sorting tool, Removing and Extracting tool, Concordancer, XSLT tool, Cascaded Regular Grammar tool, etc.  1 Unicode tokenization  In order to provide possibility for imposing constraints over the textual node and to segment them in meaningful way, the CLaRK System supports a user-defined hierarchy of tokenisers. At the very basic level the user can define a tokeniser in terms of a set of token types. In this basic tokeniser each token type is defined by a set of UNICODE symbols. Above this basic level tokenisers, the user can define other tokenisers, for which the token types are defined as regular expressions over the tokens of some other tokeniser, the so called parent tokeniser.  2 Regular Grammars  The regular grammars are the basic mechanism for linguistic processing of the content of an XML document within the system. The regular grammar processor applies a set of rules over the content of some elements in the document and incorporates the categories of the rules back in the document as XML mark-up. The content is processed before the application of the grammar rules in the following way: textual nodes are tokenized with respect to some appropriate tokeniser, the element nodes are textualized on the basis of XPath expressions that determine the important information about the element. The recognized word is substituted by a new XML mark-up, which can or can not contain the word.  3 Constraints  The constraints that we implemented in the CLaRK System are generally based on the XPath language. We use XPath expressions to determine some data within one or several XML documents and thus we evaluate some predicates over the data. There are two modes of using a constraint. In the first mode the constraint is used for validity check, similar to the validity check, which is based on DTD or XML schema. In the second mode, the constraint is used to support the change of the document in order it to satisfy the constraint. There are three types of constraints, implemented in the system: regular expression constraints, number restriction constraints, value restriction constraints.  4 Macro Language  In the CLaRK System the tools support a mechanism for describing their settings. On the basis of these descriptions (called queries) a tool can be applied only by pointing to a certain description record. Each query contains the states of all settings and options which the corresponding tool has. Once having this kind of queries there is a special tool for combining and applying them in groups (macros). During application the queries are executed successively and the result from an application is an input for the next one.  For a better control on the process of applying several queries in one we introduce several conditional operators. These operators can determine the next query for application depending on certain conditions. When a condition for such an operator is satisfied, the execution continues from a location defined in the operator. The mechanism for addressing queries is based on user defined labels. When a condition is not satisfied the operator is ignored and the process continues from the position following the operator. In this way constructions like IF-THEN-ELSE and WHILE-DO easily can be expressed.  The system supports five types of control operators:  IF (XPath): the condition is an XPath expression which is evaluated on the current working document. If the result is a non-empty node-set, non-empty string, positive number or true boolean value the condition is satisfied;  IF NOT (XPath): the same kind of condition as the previous one but the approving result is negated;  IF CHANGED: the condition is satisfied if the preceding operation has changed the current working document or has produced a non-empty result document (depending on the operation);  IF NOT CHANGED: the condition is satisfied if either the previous operation did not change the working document or did not produce a non-empty result.  GOTO: unconditional changing the execution position.  Each macro defined in the system can have its own query and can be incorporated in another macro. In this way some limited form of subroutine can be implemented.  The new version of CLaRK will support server applications, calls to/from external programs.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1173;downloadable_files_count: 0;Bulgaria;Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences;http://www.bultreebank.org/clark/index.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6c75b6f5-cdcc-5160-a30f-f61fde6de002",
+    "notes": [
+        "The CLaRK System incorporates several technologies:  - XML technology - Unicode - Cascaded Regular Grammars; - Constraints over XML Documents  On the basis of these technologies the following tools are implemented: XML Editor, Unicode Tokeniser, Sorting tool, Removing and Extracting tool, Concordancer, XSLT tool, Cascaded Regular Grammar tool, etc.  1 Unicode tokenization  In order to provide possibility for imposing constraints over the textual node and to segment them in meaningful way, the CLaRK System supports a user-defined hierarchy of tokenisers. At the very basic level the user can define a tokeniser in terms of a set of token types. In this basic tokeniser each token type is defined by a set of UNICODE symbols. Above this basic level tokenisers, the user can define other tokenisers, for which the token types are defined as regular expressions over the tokens of some other tokeniser, the so called parent tokeniser.  2 Regular Grammars  The regular grammars are the basic mechanism for linguistic processing of the content of an XML document within the system. The regular grammar processor applies a set of rules over the content of some elements in the document and incorporates the categories of the rules back in the document as XML mark-up. The content is processed before the application of the grammar rules in the following way: textual nodes are tokenized with respect to some appropriate tokeniser, the element nodes are textualized on the basis of XPath expressions that determine the important information about the element. The recognized word is substituted by a new XML mark-up, which can or can not contain the word.  3 Constraints  The constraints that we implemented in the CLaRK System are generally based on the XPath language. We use XPath expressions to determine some data within one or several XML documents and thus we evaluate some predicates over the data. There are two modes of using a constraint. In the first mode the constraint is used for validity check, similar to the validity check, which is based on DTD or XML schema. In the second mode, the constraint is used to support the change of the document in order it to satisfy the constraint. There are three types of constraints, implemented in the system: regular expression constraints, number restriction constraints, value restriction constraints.  4 Macro Language  In the CLaRK System the tools support a mechanism for describing their settings. On the basis of these descriptions (called queries) a tool can be applied only by pointing to a certain description record. Each query contains the states of all settings and options which the corresponding tool has. Once having this kind of queries there is a special tool for combining and applying them in groups (macros). During application the queries are executed successively and the result from an application is an input for the next one.  For a better control on the process of applying several queries in one we introduce several conditional operators. These operators can determine the next query for application depending on certain conditions. When a condition for such an operator is satisfied, the execution continues from a location defined in the operator. The mechanism for addressing queries is based on user defined labels. When a condition is not satisfied the operator is ignored and the process continues from the position following the operator. In this way constructions like IF-THEN-ELSE and WHILE-DO easily can be expressed.  The system supports five types of control operators:  IF (XPath): the condition is an XPath expression which is evaluated on the current working document. If the result is a non-empty node-set, non-empty string, positive number or true boolean value the condition is satisfied;  IF NOT (XPath): the same kind of condition as the previous one but the approving result is negated;  IF CHANGED: the condition is satisfied if the preceding operation has changed the current working document or has produced a non-empty result document (depending on the operation);  IF NOT CHANGED: the condition is satisfied if either the previous operation did not change the working document or did not produce a non-empty result.  GOTO: unconditional changing the execution position.  Each macro defined in the system can have its own query and can be incorporated in another macro. In this way some limited form of subroutine can be implemented.  The new version of CLaRK will support server applications, calls to/from external programs."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1173"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus development"
+        }
+    ],
+    "title": [
+        "CLaRK System - an XML-based system for Corpora Development"
+    ],
+    "url": ""
+}

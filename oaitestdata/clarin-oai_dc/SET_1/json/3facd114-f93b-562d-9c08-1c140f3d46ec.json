@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5649",
+    "MetadataAccess": [
+        "oai:ota:oucs:5649"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Bromehead, Joseph, b. 1747 or 8."
+    ],
+    "fulltext": "oai:ota:oucs:5649;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5649.xml;An oration on the utility of public infirmaries: Occasioned by the opening of the Radcliffe Infirmary at Oxford. By Joseph Bromehead, ...;Bromehead, Joseph, b. 1747 or 8.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3facd114-f93b-562d-9c08-1c140f3d46ec",
+    "oai_identifier": [
+        "oai:ota:oucs:5649"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An oration on the utility of public infirmaries: Occasioned by the opening of the Radcliffe Infirmary at Oxford. By Joseph Bromehead, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5649.xml"
+}

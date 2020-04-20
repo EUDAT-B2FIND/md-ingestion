@@ -1,0 +1,53 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Portuguese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-396",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-396"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-396",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Italy"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-396;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;The JRC-Acquis Multilingual Parallel Corpus;Law;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-396;por;downloadable_files_count: 0;Italy;http://langtech.jrc.it/JRC-Acquis.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5df1aaaf-f50d-52be-a60d-e79381828f89",
+    "notes": [
+        "Law"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-396"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "The JRC-Acquis Multilingual Parallel Corpus"
+    ],
+    "url": ""
+}

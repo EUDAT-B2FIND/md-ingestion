@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/588",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/588"
+    ],
+    "PID": "http://hdl.handle.net/11321/588",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Woli\u0144ski, Marcin"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/588;2018-07-27T08:58:36Z;hdl_11321_3;hdl_11321_4;\u015awigra \u2014 a parser of Polish;Woli\u0144ski, Marcin;parser;Polish;constituency parsing;syntax;\u015awigra is a parser of Polish generating constituency trees using a DCG style grammar stemming from Marek \u015awidzi\u0144ski\u2019s grammar \u201cGramatyka formalna j\u0119zyka polskiego\u201d (1992). The grammar was heavily rewritten for the purpose of annotating the Sk\u0142adnica treebank. The structure of trees was simplified with respect to \u015awidzi\u0144ski\u2019s version, many new types of constructions were included (in particular various forms of coordinated structures), a statistical disambiguating component was added. Moreover, the Clarin version of \u015awigra uses the valency dictionary Walenty developed within Clarin.;2018-07;languageDescription;http://hdl.handle.net/11321/588;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/%C5%9Awigra",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3c87962f-482a-5a09-b689-c60e8c19accc",
+    "notes": [
+        "\u015awigra is a parser of Polish generating constituency trees using a DCG style grammar stemming from Marek \u015awidzi\u0144ski\u2019s grammar \u201cGramatyka formalna j\u0119zyka polskiego\u201d (1992). The grammar was heavily rewritten for the purpose of annotating the Sk\u0142adnica treebank. The structure of trees was simplified with respect to \u015awidzi\u0144ski\u2019s version, many new types of constructions were included (in particular various forms of coordinated structures), a statistical disambiguating component was added. Moreover, the Clarin version of \u015awigra uses the valency dictionary Walenty developed within Clarin."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/588"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parser"
+        },
+        {
+            "name": "Polish"
+        },
+        {
+            "name": "constituency parsing"
+        },
+        {
+            "name": "syntax"
+        }
+    ],
+    "title": [
+        "\u015awigra \u2014 a parser of Polish"
+    ],
+    "url": ""
+}

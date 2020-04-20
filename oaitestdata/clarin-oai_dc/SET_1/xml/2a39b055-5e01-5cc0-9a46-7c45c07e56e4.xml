@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.spraakbanken.gu.se:10794/115</identifier>
+    <datestamp>2017-11-01T16:36:23Z</datestamp>
+    <setSpec>hdl_10794_1</setSpec>
+    <setSpec>hdl_10794_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Bonnier novels I (1976/77) (2017-10-04)</dc:title>
+      <dc:title xml:lang="sv">Bonniersromaner I (1976/77) (2017-10-04)</dc:title>
+      <dc:creator>n/a, n/a</dc:creator>
+      <dc:subject>Swedish</dc:subject>
+      <dc:subject>Novels</dc:subject>
+      <dc:description xml:lang="en">A corpus of 69 Bonnier novels from 1976-77.&#13;
+&#13;
+The material is sentence scrambled.</dc:description>
+      <dc:description xml:lang="sv">En korpus av 69 Bonniersromaner fr&#229;n 1976-77. Materialet &#228;r meningsomkastat.</dc:description>
+      <dc:date>2012-05-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/10794/115</dc:identifier>
+      <dc:language>swe</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Spr&#229;kbanken, University of Gothenburg</dc:publisher>
+      <dc:source>https://spraakbanken.gu.se/swe/resurs/romi</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

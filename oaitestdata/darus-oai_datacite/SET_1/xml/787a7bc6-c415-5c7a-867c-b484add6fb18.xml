@@ -1,0 +1,111 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-627</identifier>
+    <datestamp>2020-01-31T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-627</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Jeltsch, Albert</creatorName>
+          <givenName>Albert</givenName>
+          <familyName>Jeltsch</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-6113-9290</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Deep enzymology data related to Gao et al.: Comprehensive structure-function characterization of DNMT3B and DNMT3A reveals distinctive de novo DNA methylation mechanisms.</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Medicine, Health and Life Sciences</subject>
+        <subject>DNA Methylation</subject>
+        <subject>DNA Methyltransferase</subject>
+        <subject>NGS Bisulfite Sequencing</subject>
+        <subject>Enzyme assay</subject>
+        <subject>DNMT3A</subject>
+        <subject>DNMT3B</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Jeltsch, Albert</contributorName>
+          <givenName>Albert</givenName>
+          <familyName>Jeltsch</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2020-01-29</date>
+        <date dateType="Updated">2020-01-30</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Raw DNA sequences extracted from Fastq NGS files; Bisulfite-seq DNA methylation analysis</resourceType>
+      <sizes>
+        <size>5493918</size>
+        <size>25233327</size>
+        <size>18161073</size>
+        <size>12720290</size>
+        <size>13870340</size>
+        <size>12425459</size>
+        <size>13429878</size>
+        <size>16511889</size>
+        <size>14752742</size>
+        <size>9246278</size>
+        <size>3735264</size>
+        <size>27326540</size>
+        <size>5712612</size>
+        <size>20952435</size>
+        <size>16909917</size>
+        <size>12233211</size>
+        <size>14343891</size>
+        <size>19419855</size>
+        <size>18374724</size>
+        <size>226490</size>
+      </sizes>
+      <formats>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>application/pdf</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Experimental procedures: Libraries of double stranded DNA substrates with CpG, CpH or CpN sites in randomized sequence context were methlyated by DNMT3A or DNMT3B. Reactions were stopped by shock freezing in liquid nitrogen, then treated with proteinase K for 2 hours. Afterwards, the DNA was digested with the BsaI-HFv2 enzyme and a hairpin was ligated using T4 DNA ligase (NEB). The DNA was bisulfite converted using EZ DNA Methylation-Lightning kit (ZYMO RESEARCH) according to the manufacturer protocol, purified and eluted with 10 &#181;L ddH2O. Libraries for Illumina Next Generation Sequencing (NGS) were produced with the two-step PCR approach. In the first PCR, 2 &#181;L of bisulfite-converted DNA were amplified with the HotStartTaq DNA Polymerase (QIAGEN) and primers containing internal barcodes using following conditions: 15 min at 95 &#176;C, 10 cycles of 30 sec at 94 &#176;C, 30 sec at 50 &#176;C, 1 min and 30 sec at 72 &#176;C, and final 5 min at 72 &#176;C; using a mixture containing 1x PCR Buffer, 1x Q-Solution, 0.2 mM dNTPs, 0.05 U/&#181;L HotStartTaq DNA Polymerase, 0.4 &#181;M forward and 0.4 &#181;M reverse primers in a total volume of 20 &#181;L. In the second PCR, 1 &#181;L of obtained products were amplified by Phusion Polymerase (Thermo) with another set of primers to introduce adapters and indices needed for NGS (30 sec at 98 &#176;C, 10 cycles - 10 sec at 98 &#176;C, 40 sec at 72 &#176;C, and 5 min at 72 &#176;C). PCRII was carried out in 1x Phusion HF Buffer, 0.2 mM dNTPs, 0.02 U/&#181;L Phusion HF DNA Polymerase, 0.4 &#181;M forward and 0.4 &#181;M reverse primers in a total volume of 20 &#181;L. Obtained libraries were pooled in equimolar amounts and purified using NucleoSpin&#174; Gel and PCR Clean-up kit (Macherey-Nagel), followed by a second purification step of gel extraction and size exclusion with AMPure XP magnetic beads (Beckman Coulter). Sequencing was performed at the Max Planck Genome Centre Cologne.</description>
+      </descriptions>
+      <geoLocations/>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft</funderName>
+          <awardNumber>JE 252/36</awardNumber>
+        </fundingReference>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft</funderName>
+          <awardNumber>JE 252/10</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

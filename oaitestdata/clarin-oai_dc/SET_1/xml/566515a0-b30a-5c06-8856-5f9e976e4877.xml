@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/122</identifier>
+    <datestamp>2017-01-18T09:26:35Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UHR's Termbase for Norwegian higher education institutions</dc:title>
+      <dc:creator>The Norwegian Association of Higher Education Institutions</dc:creator>
+      <dc:subject>Administration</dc:subject>
+      <dc:subject>Higher education</dc:subject>
+      <dc:subject>Termbase</dc:subject>
+      <dc:subject>Terminological</dc:subject>
+      <dc:subject>Terminology</dc:subject>
+      <dc:description>The resource UHR-basen is a terminological database containing terms, definitions and other conceptual information in Norwegian and English within administrative domains in higher education. &#13;
+The termbase translates between British English and Norwegian bokm&#229;l and Norwegian nynorsk, respectively.&#13;
+The term base is owned by the Norwegian Association of Higher Education Institutions (UHR).&#13;
+The term base has been made downloadable in TBX format by the META-NORD group at University of Bergen, with the kind permission of UHR.</dc:description>
+      <dc:date>2017-01-10</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/122</dc:identifier>
+      <dc:language>nob</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>nno</dc:language>
+      <dc:relation>http://hdl.handle.net/11509/4</dc:relation>
+      <dc:rights>CLARIN_PUB-BY</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaPub?BY=1</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>The Norwegian Association of Higher Education Institutions</dc:publisher>
+      <dc:source>http://www.terminologi.no</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

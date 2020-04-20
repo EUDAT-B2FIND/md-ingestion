@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "nander.wever@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "DAT",
+        "TXT"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/2",
+    "PublicationTimestamp": "2015-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "SLF"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Nander Wever"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/2;2018-07-07T00:12:53Z;doi:10.16904/2;Eng;MD_CharacterSetCode_utf8;Nander Wever;SLF;nander.wever@slf.ch;2016-10-16T21:39:20;ISO 19115:2003/19139;1.0;EPSG:4326;Manual bi-weekly snow profiles from Weissfluhjoch, Davos, Switzerland;2015-12-31;Dataset of manual bi-weekly snow profiles from Weissfluhjoch, Davos, Switzerland. Typical snow profile measurements and observations are included (temperature, density, grain size, grain type, hardness, wetness), following the guidelines of the The International Classification for Seasonal Snow on the Ground (ICSSG) [Fierz, C., Armstrong, R.L., Durand, Y., Etchevers, P., Greene, E., McClung, D.M., Nishimura, K., Satyawali, P.K. and Sokratov, S.A. 2009. The International Classification for Seasonal Snow on the Ground. IHP-VII Technical Documents in Hydrology N\u00b083, IACS Contribution N\u00b01, UNESCO-IHP, Paris].;Nander Wever;SLF;nander.wever@slf.ch;SNOW DENSITY;SNOW ICE TEMPERATURE;SNOW STRATIGRAPHY;SNOW WATER EQUIVALENT;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;9.809568 46.829598;DAT;TXT;https://www.envidat.ch/dataset/10-16904-2;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/0b294122-015c-46bf-b5c5-cc6d0a6f67c1/resource/f64d8a9f-36ea-40f6-9874-bc9071050d0a/download/wfjsnowprofiles19992014.zip;HTTPS;WFJ SNOW PROFILES 1999-2014;download;ftp://ftp.wsl.ch/pub/smm/readme.txt;FTP;README;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "7d1c728e-c7b3-5149-b290-0175a190a90c",
+    "notes": [
+        "Dataset of manual bi-weekly snow profiles from Weissfluhjoch, Davos, Switzerland. Typical snow profile measurements and observations are included (temperature, density, grain size, grain type, hardness, wetness), following the guidelines of the The International Classification for Seasonal Snow on the Ground (ICSSG) [Fierz, C., Armstrong, R.L., Durand, Y., Etchevers, P., Greene, E., McClung, D.M., Nishimura, K., Satyawali, P.K. and Sokratov, S.A. 2009. The International Classification for Seasonal Snow on the Ground. IHP-VII Technical Documents in Hydrology N\u00b083, IACS Contribution N\u00b01, UNESCO-IHP, Paris]."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/2",
+        "oai:envidat.ch:10.16904/2"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "SNOW DENSITY"
+        },
+        {
+            "name": "SNOW ICE TEMPERATURE"
+        },
+        {
+            "name": "SNOW STRATIGRAPHY"
+        },
+        {
+            "name": "SNOW WATER EQUIVALENT"
+        }
+    ],
+    "title": [
+        "Manual bi-weekly snow profiles from Weissfluhjoch, Davos, Switzerland"
+    ],
+    "url": "https://www.envidat.ch/dataset/0b294122-015c-46bf-b5c5-cc6d0a6f67c1/resource/f64d8a9f-36ea-40f6-9874-bc9071050d0a/download/wfjsnowprofiles19992014.zip"
+}

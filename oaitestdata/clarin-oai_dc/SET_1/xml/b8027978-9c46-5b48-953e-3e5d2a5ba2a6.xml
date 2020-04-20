@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-553</identifier>
+    <datestamp>2019-03-01T15:39:47Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Kr&#243;tka Annotacya Seym&#243;w Warszawskich, Grodzie&#324;skich, takze Elekcyi y Koronacyi Nayiasniejszych Kr&#243;l&#243;w Ichmo&#347;ci&#243;w Polskich y Jana Kazimierza, Micha&#322;a, Jana III y Augusta II, tudzie&#380; za Panowania ich Kampaniy corocznie odprawionych, publicznieyszych Dziei&#243;w y Rewolucyi ab Anno 1648 ad Annum 1733</dc:title>
+      <dc:creator xml:lang="pl">Pu&#322;aski, Franciszek (-1738)</dc:creator>
+      <dc:subject xml:lang="pl">Denhoff Stanis&#322;aw (- 1728)</dc:subject>
+      <dc:subject xml:lang="pl">Jan III Sobieski (kr&#243;l Polski ; 1629-1696)</dc:subject>
+      <dc:subject xml:lang="pl">Lubomirski Hieronim (ca 1647 - 1706)</dc:subject>
+      <dc:subject xml:lang="pl">Po&#322;tawa</dc:subject>
+      <dc:subject xml:lang="pl">Powstanie Chmielnickiego 1648 r.</dc:subject>
+      <dc:subject xml:lang="pl">Sieniawska Zofia</dc:subject>
+      <dc:subject xml:lang="pl">Sieniawski Adam Miko&#322;aj (1666 - 1726)</dc:subject>
+      <dc:subject xml:lang="pl">Sobieski Jakub (1667 - 1737)</dc:subject>
+      <dc:subject xml:lang="pl">Zwi&#261;zek Baranowskiego</dc:subject>
+      <dc:description xml:lang="pl">ilo&#347;&#263; skan&#243;w: 86 ; sygn. St- 354</dc:description>
+      <dc:publisher xml:lang="pl">Drukarnia J.K.M. Societatis Jesu</dc:publisher>
+      <dc:date>1740</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-553</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8D22-F</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://pbc.biaman.pl/Content/553</dc:relation>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

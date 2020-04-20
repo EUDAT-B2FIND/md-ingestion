@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1510</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>STAZKA &#8211; Speech recordings from vehicles</dc:title>
+      <dc:creator>&#352;m&#237;dl, Lubo&#353;</dc:creator>
+      <dc:creator>Stanislav, Petr</dc:creator>
+      <dc:creator>Radov&#225;, Vlasta</dc:creator>
+      <dc:subject>speech corpus</dc:subject>
+      <dc:subject>noisy speech</dc:subject>
+      <dc:subject>voice activity detector</dc:subject>
+      <dc:subject>speech recognition</dc:subject>
+      <dc:description>The database actually contains two sets of recordings, both recorded in the moving or stationary vehicles (passenger cars or trucks). All data were recorded within the project &#8220;Intelligent Electronic Record of the Operation and Vehicle Performance&#8221; whose aim is to develop a voice-operated software for registering the vehicle operation data. &#13;
+The first part (full_noises.zip) consists of relatively long recordings from the vehicle cabin, containing spontaneous speech from the vehicle crew. The recordings are accompanied with detailed transcripts in the Transcriber XML-based format (.trs). Due to the recording settings, the audio contains many different noises, only sparsely interspersed with speech. As such, the set is suitable for robust estimation of the voice activity detector parameters.&#13;
+The second set (prompts.zip) consists of short prompts that were recorded in the controlled setting &#8211; the speakers either answered simple questions or they repeated commands and short phrases. The prompts were recorded by 26 different speakers. Each speaker recorded at least two sessions (with identical set of prompts) &#8211; first in stationary vehicle, with low level of noise (those recordings are marked by &#8211;A_ in the file name) and second while actually driving the car (marked by &#8211;B_ or, since several speakers recorded 3 sessions, by &#8211;C_). The recordings from this set are suitable mostly for training of the robust domain-specific speech recognizer and also ASR test purposes.</dc:description>
+      <dc:date>2015-08-31</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1510</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>University of West Bohemia, Department of Cybernetics</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

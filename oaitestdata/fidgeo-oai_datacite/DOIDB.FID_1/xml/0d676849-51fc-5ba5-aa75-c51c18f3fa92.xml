@@ -1,0 +1,104 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6584</identifier>
+    <datestamp>2018-12-10T15:08:13Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.016</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Siegert, Susann</default:creatorName>
+              <default:givenName>Susann</default:givenName>
+              <default:familyName>Siegert</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-4157-863X</default:nameIdentifier>
+              <default:affiliation>Museum f&#252;r Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Hecht, Lutz</default:creatorName>
+              <default:givenName>Lutz</default:givenName>
+              <default:familyName>Hecht</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-8904-0217</default:nameIdentifier>
+              <default:affiliation>Museum f&#252;r Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="en">Geochemical data of impactites of the Ries impact structure, Germany</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>Ries impact crater</default:subject>
+            <default:subject>geochemistry</default:subject>
+            <default:subject>melt-brearing impact breccia</default:subject>
+            <default:subject>suevite</default:subject>
+            <default:subject>impact melt breccia</default:subject>
+            <default:subject>impact melt bomb</default:subject>
+            <default:subject>electron microprobe analysis</default:subject>
+            <default:subject>laser ablation ICP-MS</default:subject>
+            <default:subject>X-ray fluorescence</default:subject>
+            <default:subject>ICP-MS</default:subject>
+            <default:subject>ICP-AES</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Siegert, Susann</default:contributorName>
+              <default:givenName>Susann</default:givenName>
+              <default:familyName>Siegert</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-4157-863X</default:nameIdentifier>
+              <default:affiliation>Museum f&#252;r Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Hecht, Lutz</default:contributorName>
+              <default:givenName>Lutz</default:givenName>
+              <default:familyName>Hecht</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-8904-0217</default:nameIdentifier>
+              <default:affiliation>Museum f&#252;r Naturkunde - Leibniz Institute for Evolution and Biodiversity Science, Berlin, Germany</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:language>en</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1111/maps.13210</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1046/j.1365-2494.1998.53202081.x-i1</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1111/j.1751-908X.1980.tb00273.x</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1111/j.1751-908X.2011.00120.x</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1111/maps.12087</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1111/maps.12086</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>6313516 Bytes</default:size>
+            <default:size>3 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/x-zip-compressed</default:format>
+            <default:format>application/pdf</default:format>
+            <default:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">The Ries impact structure in Southern Germany is one of the best-preserved impact structures on Earth. Melt-bearing impact breccia appears in a variety of well accessible exposures around the inner ring up to 10 km beyond the crater rim (so-called outer suevite) overlying a ballistically ejected lithic breccia (so-called &#8216;Bunte Breccia&#8217;). Occasionally individual melt bombs occur in the &#8216;Bunte Breccia&#8217;. Coherent impact melt rock outside the inner crater is located in the eastern megablock zone (St&#246;ffler et al., 2013 and references therein).<default:br/>
+         <default:br/>This data set comprises major and trace element geochemistry of samples from eight outer suevite exposures, one impact melt rock exposure, and one melt bomb of the Ries impact crater. Two analytical method approaches were performed: i) in-situ analysis using electron microprobe (EMP) and laser ablation inductively coupled plasma mass spectrometry (LA-ICP-MS), and ii) analysis of whole-rock, melt separates, and suevite matrix separates using X-ray fluorescence (XRF), and inductively coupled plasma atomic emission spectroscopy (ICP-AES)/ inductively coupled plasma mass spectrometry (ICP-MS).</default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationPoint>
+                <default:pointLongitude>10.557469238760063</default:pointLongitude>
+                <default:pointLatitude>48.88667960100579</default:pointLatitude>
+              </default:geoLocationPoint>
+            </default:geoLocation>
+          </default:geoLocations>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

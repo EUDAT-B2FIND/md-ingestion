@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "IPI PAN"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 4",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/390",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/390"
+    ],
+    "PID": "http://hdl.handle.net/11321/390",
+    "PublicationTimestamp": "2017-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "IPI PAN"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Domis, Julia"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/390;2017-05-30T11:54:58Z;hdl_11321_3;hdl_11321_4;Corpus_Sienkiewicz_Novels;Domis, Julia;Corpus;Sienkiewicz;novels;Sienkiewicz Novels;2017-05-30;corpus;http://hdl.handle.net/11321/390;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/zip;downloadable_files_count: 4;IPI PAN",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "02f74897-7eb7-53f0-91a9-d5006053a8ec",
+    "notes": [
+        "Sienkiewicz Novels"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/390"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Corpus"
+        },
+        {
+            "name": "Sienkiewicz"
+        },
+        {
+            "name": "novels"
+        }
+    ],
+    "title": [
+        "Corpus_Sienkiewicz_Novels"
+    ],
+    "url": ""
+}

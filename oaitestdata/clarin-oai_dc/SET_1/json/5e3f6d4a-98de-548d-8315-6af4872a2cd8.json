@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/html",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2538",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2538"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2538",
+    "PublicationTimestamp": "2017-12-24T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "M\u00edrovsk\u00fd, Ji\u0159\u00ed",
+        "Pol\u00e1kov\u00e1, Lucie",
+        "Rysov\u00e1, Magdal\u00e9na",
+        "Synkov\u00e1, Pavl\u00edna"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2538;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;CzeDLex 0.5;M\u00edrovsk\u00fd, Ji\u0159\u00ed;Synkov\u00e1, Pavl\u00edna;Rysov\u00e1, Magdal\u00e9na;Pol\u00e1kov\u00e1, Lucie;lexicon;discourse annotation;CzeDLex 0.5 is a pilot version of a lexicon of Czech discourse connectives. The lexicon contains connectives partially automatically extracted from the Prague Discourse Treebank 2.0 (PDiT 2.0), a large corpus annotated manually with discourse relations. The most frequent entries in the lexicon (covering more than 2/3 of the discourse relations annotated in the PDiT 2.0) have been manually checked, translated to English and supplemented with additional linguistic information.;2017-12-24;lexicalConceptualResource;http://hdl.handle.net/11234/1-2538;ces;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/html;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://ufal.mff.cuni.cz/textlink-cz/czedlex0.5",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5e3f6d4a-98de-548d-8315-6af4872a2cd8",
+    "notes": [
+        "CzeDLex 0.5 is a pilot version of a lexicon of Czech discourse connectives. The lexicon contains connectives partially automatically extracted from the Prague Discourse Treebank 2.0 (PDiT 2.0), a large corpus annotated manually with discourse relations. The most frequent entries in the lexicon (covering more than 2/3 of the discourse relations annotated in the PDiT 2.0) have been manually checked, translated to English and supplemented with additional linguistic information."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2538"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "lexicon"
+        },
+        {
+            "name": "discourse annotation"
+        }
+    ],
+    "title": [
+        "CzeDLex 0.5"
+    ],
+    "url": ""
+}

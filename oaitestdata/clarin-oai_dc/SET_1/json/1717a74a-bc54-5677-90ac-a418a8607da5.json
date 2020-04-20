@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Baumann, Walter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 576 KB)"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1663",
+    "MetadataAccess": [
+        "oai:ota:oucs:1663"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Goethe, Johann Wolfgang von, 1749-1832"
+    ],
+    "fulltext": "oai:ota:oucs:1663;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1663.xml;Faust;Faust / Johann Wolfgang von Goethe;Goethe, Johann Wolfgang von, 1749-1832;text_and_corpus_linguistics;German drama (Tragedy) -- 18th century;deu;Oxford Text Archive, University of Oxford;Baumann, Walter;text/sgml;(1 file : ca. 576 KB);Text;Plays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1717a74a-bc54-5677-90ac-a418a8607da5",
+    "oai_identifier": [
+        "oai:ota:oucs:1663"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "German drama Tragedy -- th century"
+        }
+    ],
+    "title": [
+        "Faust",
+        "Faust / Johann Wolfgang von Goethe"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1663.xml"
+}

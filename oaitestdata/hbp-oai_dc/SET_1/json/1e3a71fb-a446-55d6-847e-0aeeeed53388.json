@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Zilles, Karl",
+        "Schleicher, Axel",
+        "Bacha-Trams, Maraike",
+        "Amunts, Katrin",
+        "Friederici, Angela D.",
+        "Palomero-Gallagher, Nicola",
+        "Caspers, S."
+    ],
+    "DOI": "http://dx.doi.org/10.25493/VSFY-EYF",
+    "DiscHierarchy": [
+        "1.2",
+        "Humanities",
+        "History"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "xlsx, tif, txt"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_VSFY-EYF",
+    "MetadataAccess": [
+        "10.25493_VSFY-EYF"
+    ],
+    "PublicationTimestamp": "2019-06-12T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1093/cercor/bhs048",
+        "https://doi.org/10.1016/j.cortex.2014.07.007"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Zilles, Karl",
+        "Palomero-Gallagher, Nicola"
+    ],
+    "fulltext": "10.25493_VSFY-EYF;2019-12-10T12:41:57Z;https://doi.org/10.25493/VSFY-EYF;Density measurements of different receptors for Area PF;2019-06-12T08:46:18.120Z;This dataset contains the densities (in fmol/mg protein) of 16 receptors for classical neurotransmitters in Area PF using quantitative in vitro autoradiography. The receptor density measurements can be provided in three ways: (fp) as density fingerprints (average across samples; mean density and standard deviation for each of the 16 receptors), (pr) as laminar density profiles (exemplary data from one sample; average course of the density from the pial surface to the border between layer VI and the white matter for each receptor), and (ar) as color-coded autoradiographs (exemplary data from one sample; laminar density distribution patterns for each receptor labeling). \nThis dataset contains the following receptor density measurements based on the labeling of these receptor binding sites: \n\nAMPA (glutamate; labelled with [\u00b3H]AMPA): fp\n\nkainate (glutamate; [\u00b3H]kainate): fp\n\nNMDA (glutamate; [\u00b3H]MK-801): fp\n\nmGluR2/3 (glutamate; [\u00b3H] LY 341 495): fp\n\nGABA<sub>A</sub> (GABA; [\u00b3H]muscimol): fp\n\nGABA<sub>B</sub> (GABA; [\u00b3H] CGP54626): fp\n\nGABA<sub>A</sub> associated benzodiazepine binding sites (BZ; [\u00b3H]flumazenil): fp\n\nmuscarinic M\u2081 (acetylcholine; [\u00b3H]pirenzepine): fp\n\nmuscarinic M\u2082 (acetylcholine; [\u00b3H]oxotremorine-M): fp\n\nmuscarinic M\u2083 (acetylcholine; [\u00b3H]4-DAMP): fp\n\nnicotinic \u03b1\u2084\u03b2\u2082 (acetylcholine; [\u00b3H]epibatidine): fp\n\n\u03b1\u2081 (noradrenalin; [\u00b3H]prazosin): fp\n\n\u03b1\u2082 (noradrenalin; [\u00b3H]UK-14,304): fp\n\n5-HT\u2081<sub>A</sub> (serotonin; [\u00b3H]8-OH-DPAT): fp\n\n5-HT\u2082 (serotonin; [\u00b3H]ketanserin): fp\n\nD\u2081 (dopamine; [\u00b3H]SCH23390): fp\n\nWhich sample was used for which receptor density measurement is stated in metadata files accompanying the main data repository. For methodological details, see Zilles et al. (2002), and in Palomero-Gallagher and Zilles (2018).\n\nZilles, K. et al. (2002). Quantitative analysis of cyto- and receptorarchitecture of the human brain, pp. 573-602. In: Brain Mapping: The Methods, 2nd edition (A.W. Toga and J.C. Mazziotta, eds.). San Diego, Academic Press.\n\nPalomero-Gallagher N, Zilles K. (2018) Cyto- and receptorarchitectonic mapping of the human brain. In: Handbook of Clinical Neurology 150: 355-387;neuroscience;brain mapping;histology;english;dataset;The Human Brain Project;Zilles, Karl;Bacha-Trams, Maraike;Palomero-Gallagher, Nicola;Amunts, Katrin;Friederici, Angela D.;Caspers, S.;Schleicher, Axel;Palomero-Gallagher, Nicola;Zilles, Karl;xlsx, tif, txt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.1093/cercor/bhs048;https://doi.org/10.1016/j.cortex.2014.07.007",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "1e3a71fb-a446-55d6-847e-0aeeeed53388",
+    "notes": [
+        "This dataset contains the densities (in fmol/mg protein) of 16 receptors for classical neurotransmitters in Area PF using quantitative in vitro autoradiography. The receptor density measurements can be provided in three ways: (fp) as density fingerprints (average across samples; mean density and standard deviation for each of the 16 receptors), (pr) as laminar density profiles (exemplary data from one sample; average course of the density from the pial surface to the border between layer VI and the white matter for each receptor), and (ar) as color-coded autoradiographs (exemplary data from one sample; laminar density distribution patterns for each receptor labeling). \nThis dataset contains the following receptor density measurements based on the labeling of these receptor binding sites: \n\nAMPA (glutamate; labelled with [\u00b3H]AMPA): fp\n\nkainate (glutamate; [\u00b3H]kainate): fp\n\nNMDA (glutamate; [\u00b3H]MK-801): fp\n\nmGluR2/3 (glutamate; [\u00b3H] LY 341 495): fp\n\nGABA<sub>A</sub> (GABA; [\u00b3H]muscimol): fp\n\nGABA<sub>B</sub> (GABA; [\u00b3H] CGP54626): fp\n\nGABA<sub>A</sub> associated benzodiazepine binding sites (BZ; [\u00b3H]flumazenil): fp\n\nmuscarinic M\u2081 (acetylcholine; [\u00b3H]pirenzepine): fp\n\nmuscarinic M\u2082 (acetylcholine; [\u00b3H]oxotremorine-M): fp\n\nmuscarinic M\u2083 (acetylcholine; [\u00b3H]4-DAMP): fp\n\nnicotinic \u03b1\u2084\u03b2\u2082 (acetylcholine; [\u00b3H]epibatidine): fp\n\n\u03b1\u2081 (noradrenalin; [\u00b3H]prazosin): fp\n\n\u03b1\u2082 (noradrenalin; [\u00b3H]UK-14,304): fp\n\n5-HT\u2081<sub>A</sub> (serotonin; [\u00b3H]8-OH-DPAT): fp\n\n5-HT\u2082 (serotonin; [\u00b3H]ketanserin): fp\n\nD\u2081 (dopamine; [\u00b3H]SCH23390): fp\n\nWhich sample was used for which receptor density measurement is stated in metadata files accompanying the main data repository. For methodological details, see Zilles et al. (2002), and in Palomero-Gallagher and Zilles (2018).\n\nZilles, K. et al. (2002). Quantitative analysis of cyto- and receptorarchitecture of the human brain, pp. 573-602. In: Brain Mapping: The Methods, 2nd edition (A.W. Toga and J.C. Mazziotta, eds.). San Diego, Academic Press.\n\nPalomero-Gallagher N, Zilles K. (2018) Cyto- and receptorarchitectonic mapping of the human brain. In: Handbook of Clinical Neurology 150: 355-387"
+    ],
+    "oai_identifier": [
+        "10.25493_VSFY-EYF"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "brain mapping"
+        },
+        {
+            "name": "histology"
+        }
+    ],
+    "title": [
+        "Density measurements of different receptors for Area PF"
+    ],
+    "url": ""
+}

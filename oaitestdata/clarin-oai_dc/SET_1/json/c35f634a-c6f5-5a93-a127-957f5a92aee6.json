@@ -1,0 +1,54 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "Filesize uncompressed: 130 KBytes. "
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2124",
+    "MetadataAccess": [
+        "oai:ota:oucs:2124"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Crane, Stephen, 1871-1900"
+    ],
+    "fulltext": "oai:ota:oucs:2124;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2124.xml;Maggie: A Girl of the Streets;A machine-readable transcription;Crane, Stephen, 1871-1900;text_and_corpus_linguistics;Oxford Text Archive, University of Oxford;Filesize uncompressed: 130 KBytes. ;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c35f634a-c6f5-5a93-a127-957f5a92aee6",
+    "oai_identifier": [
+        "oai:ota:oucs:2124"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Maggie: A Girl of the Streets",
+        "A machine-readable transcription"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2124.xml"
+}

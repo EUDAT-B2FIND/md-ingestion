@@ -19,22 +19,22 @@
 ## B2SHARE
 b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
 ## CLARIN
-clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
-clarin https://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
-clarin http://dspace-clarin-it.ilc.cnr.it/repository/oai/request ListRecords oai_dc
-clarin http://lindat.mff.cuni.cz/repository/oai/request ListRecords oai_dc
-clarin https://repo.spraakbanken.gu.se/oai/request ListRecords oai_dc
-clarin http://fedora.clarin-d.uni-saarland.de/oaiprovider/ ListRecords oai_dc
-clarin https://repo.clarino.uib.no/oai/request ListRecords oai_dc
-clarin http://repository.clarin.dk/repository/oai/request ListRecords oai_dc
-clarin https://portulanclarin.net/repository/oaipmh/ ListRecords oai_dc
-clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_3
-clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_4
-clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_1
-clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_2
-clarin https://metashare.ut.ee/oai_pmh/ ListIdentifiers oai_dc
-#gehtnicht!#clarin https://clarin.vdu.lt/oai/request ListRecords oai_dc
-#gehtnicht!#clarin http://www.ota.ox.ac.uk/cgi-bin/oai.pl ListIdentifiers oai_dc
+#clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
+#clarin https://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
+#clarin http://dspace-clarin-it.ilc.cnr.it/repository/oai/request ListRecords oai_dc
+#clarin http://lindat.mff.cuni.cz/repository/oai/request ListRecords oai_dc
+#clarin https://repo.spraakbanken.gu.se/oai/request ListRecords oai_dc
+#clarin http://fedora.clarin-d.uni-saarland.de/oaiprovider/ ListRecords oai_dc
+#clarin https://repo.clarino.uib.no/oai/request ListRecords oai_dc
+#clarin http://repository.clarin.dk/repository/oai/request ListRecords oai_dc
+#clarin https://portulanclarin.net/repository/oaipmh/ ListRecords oai_dc
+#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_3
+#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_4
+#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_1
+#clarin https://clarin-pl.eu/oai/request ListIdentifiers oai_dc hdl_11321_2
+#clarin https://metashare.ut.ee/oai_pmh/ ListIdentifiers oai_dc
+#clarin http://www.ota.ox.ac.uk/cgi-bin/oai.pl ListIdentifiers oai_dc
+clarin https://clarin.vdu.lt/oai/request ListRecords oai_dc
 ##CLARIN from B2SHARE
 #clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
 ## DANS-EASY
@@ -43,5 +43,17 @@ danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite
 deims https://deims.org/pycsw/catalogue/csw csw iso19139 full
 ## ENVIDAT
 envidat https://www.envidat.ch/oai ListRecords datacite
+## Materials Cloud
+materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc
+## IAGOS
+iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos csw iso19139
+## IVOA
+ivoa http://dc.g-vo.org/rr/q/pmh/pubreg.xml ListRecords oai_datacite
+## SEANOE
+seanoe http://www.seanoe.org/oai/OAIHandler ListRecords oai_dc
+## IST
+ist http://datarep.app.ist.ac.at/cgi/oai2 ListRecords oai_dc
 ## RADAR
 radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
+## UCL
+ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549

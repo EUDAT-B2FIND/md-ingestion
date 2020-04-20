@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Institute of Slavic Studies, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 136",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish",
+        "Lithuanian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/309",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/309"
+    ],
+    "PID": "http://hdl.handle.net/11321/309",
+    "PublicationTimestamp": "2016-06-07T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Institute of Slavic Studies, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "IS PAS corpora license",
+        "http://clarin-pl.eu/en/licenses/is-pas-corpora-license/",
+        "CC"
+    ],
+    "author": [
+        "Roszko, Danuta",
+        "Roszko, Roman"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/309;2016-06-07T14:35:06Z;hdl_11321_3;hdl_11321_4;Polish-Lithuanian Parallel Corpus;Roszko, Danuta;Roszko, Roman;Polish;Lithuanian;corpora;Database;2016-06-07;corpus;http://hdl.handle.net/11321/309;pol;lit;IS PAS corpora license;http://clarin-pl.eu/en/licenses/is-pas-corpora-license/;CC;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 136;Institute of Slavic Studies, Polish Academy of Sciences",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "df6ac73b-e3f2-5207-9356-14dc9500901c",
+    "notes": [
+        "Database"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/309"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Polish"
+        },
+        {
+            "name": "Lithuanian"
+        },
+        {
+            "name": "corpora"
+        }
+    ],
+    "title": [
+        "Polish-Lithuanian Parallel Corpus"
+    ],
+    "url": ""
+}

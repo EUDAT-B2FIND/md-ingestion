@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1092</identifier>
+    <datestamp>2017-05-15T09:47:34Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Dictionary of the Slovenian Language in the Works of Janez Svetokri&#353;ki</dc:title>
+      <dc:creator>Snoj, Marko</dc:creator>
+      <dc:subject>dictionary</dc:subject>
+      <dc:subject>historical language</dc:subject>
+      <dc:subject>lexicography</dc:subject>
+      <dc:description>The Dictionary of the Slovenian Language in the Works of Janez Svetokri&#353;ki (Slovar jezika Janeza Svetokri&#353;kega) presents and explains the lexis, including proper nouns, from 233 sermons published by Janez Svetokri&#353;ki in five volumes under the common title Sacrum promptuarium between 1691 and 1707. The dictionary contains 8,540 dictionary entries, which display and treat the entire Slovenian lexis, including proper nouns, used in the above-mentioned work. Each dictionary entry consists of 1. the headword, 2. the presentation of morphological characteristics, 3. the description of meaning and 4. examples of use. Entries containing loanwords additionally include etymologies. Some entries may here provide other philological or linguistic comments. Each entry describing a proper noun ends with the most basic encyclopaedic information. The Dictionary of the Slovenian Language in the Works of Janez Svetokri&#353;ki is the first dictionary to treat the lexis of a Slovenian author from a period before the introduction of Gaj's Latin alphabet. The dictionary is distinguished by a modern, but not too complex display of material, by comprehensive citations of all attested variants and by the inclusion of encyclopaedic information about proper nouns, all of which in many respects facilitates the reading of the original baroque text or makes it possible in the first place.&#13;
+&#13;
+This dictionary was published as a printed book:&#13;
+Snoj, Marko. Slovar jezika Janeza Svetokri&#353;kega. Ljubljana : Zalo&#382;ba ZRC, 2006. ISBN 961-6568-45-0.</dc:description>
+      <dc:date>2006</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1092</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Slovenian Academy of Sciences and Arts</dc:publisher>
+      <dc:publisher>dr. Bruno Breschi Foundation</dc:publisher>
+      <dc:publisher>ZRC SAZU</dc:publisher>
+      <dc:source>http://www.fran.si/139/slovar-jezika-janeza-svetokriskega</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

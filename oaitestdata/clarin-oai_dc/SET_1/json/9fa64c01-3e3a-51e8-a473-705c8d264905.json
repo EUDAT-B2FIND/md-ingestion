@@ -1,0 +1,57 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 583 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2141",
+    "MetadataAccess": [
+        "oai:ota:oucs:2141"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Elyot, Thomas, Sir, 1490?-1546"
+    ],
+    "fulltext": "oai:ota:oucs:2141;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2141.xml;The boke named The gouernour / by Thomas Elyot;Elyot, Thomas, Sir, 1490?-1546;text_and_corpus_linguistics;Academic dissertations -- England -- 16th century;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 583 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9fa64c01-3e3a-51e8-a473-705c8d264905",
+    "oai_identifier": [
+        "oai:ota:oucs:2141"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Academic dissertations -- England -- th century"
+        }
+    ],
+    "title": [
+        "The boke named The gouernour / by Thomas Elyot"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2141.xml"
+}

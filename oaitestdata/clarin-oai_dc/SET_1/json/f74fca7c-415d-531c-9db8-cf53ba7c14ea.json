@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3416",
+    "MetadataAccess": [
+        "oai:ota:oucs:3416"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Shenstone, William, 1714-1763."
+    ],
+    "fulltext": "oai:ota:oucs:3416;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3416.xml;Poems upon various occasions: Written for the entertainment of the author, and printed for the amusement of a few friends, prejudic'd in his favour. By William Shenstone, gent.;Shenstone, William, 1714-1763.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f74fca7c-415d-531c-9db8-cf53ba7c14ea",
+    "oai_identifier": [
+        "oai:ota:oucs:3416"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Poems upon various occasions: Written for the entertainment of the author, and printed for the amusement of a few friends, prejudic'd in his favour. By William Shenstone, gent."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3416.xml"
+}

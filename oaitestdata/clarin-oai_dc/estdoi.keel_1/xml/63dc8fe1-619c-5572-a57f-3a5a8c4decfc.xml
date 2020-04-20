@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17940191</identifier>
+    <datestamp>2019-05-15T17:36:43Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Maltparseri anal&#252;&#252;situd koondkorpus 1.0</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-02</dc:date>
+      <dc:date>Updated: 2019-01-02</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0016EL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">MaltParser, treenitud kasutades eesti keele s&#245;ltuvuspuude panga allosa (14 114 lauset, 197 508 s&#245;na ja kirjavahem&#228;rki, 164 637 s&#245;na (ilma kirjavahem&#228;rkideta); 4/5 kasutatud korpusest), testitud (1764 lauset, 24208 tekstis&#245;na koos kirjavahem&#228;rkidega (1/10)), MaltParseri treenitud mudel.
+
+Tulemused morfoloogiliselt &#252;hese testkorpuse korral:
+LA (s&#252;ntaktilise m&#228;rgendi korrektsus) 90.2%,
+LAS (s&#245;ltuvusseose ja s&#252;ntaktilise m&#228;rgendi korrektsus) 83.8%,
+UAS (s&#245;ltuvusseose m&#228;&#228;ramise korrektsus) 86.5%
+
+MaltParseri tulemused, kasutades automaatselt morfoloogiliselt &#252;hestatud sisendit:
+
+LA (s&#252;ntaktilise m&#228;rgendi korrektsus) 84.6%,
+LAS (s&#245;ltuvusseose ja s&#252;ntaktilise m&#228;rgendi korrektsus) 76.6%,
+UAS (s&#245;ltuvusseose m&#228;&#228;ramise korrektsus) 81.0%.
+
+Anal&#252;&#252;sides m&#245;lema parseri tugevaid k&#252;lgi ja kombineerides neid omavahel, paranes LAS veel u &#252;he protsendi v&#245;rra.
+
+MaltParseri anal&#252;&#252;situd koondkorpus (ajakirjandus, ilukirjandus, teaduskirjandus).</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

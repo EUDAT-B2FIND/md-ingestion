@@ -1,0 +1,73 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.817139",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.817139"
+    ],
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(22N-25N,62E-65E)",
+    "author": [
+        "van Bennekom, Johan A",
+        "van der Linden, W J M",
+        "van der Weijden, Cornelis H"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.817139;2017-08-05T09:10:02Z;ASPS;JGOFSNetherlands;10.1594/PANGAEA.817139;van der Weijden, Cornelis H;van der Linden, W J M;van Bennekom, Johan A;Physical oceanography during TYRO cruise NIOP-D2;PANGAEA - Data Publisher for Earth & Environmental Science;2013;Event label;Latitude of event;Longitude of event;DEPTH, water;Pressure, water;Temperature, water;Salinity;Oxygen;Temperature, water, potential;Density, sigma-theta (0);Fluorescence;Transmission of light;Calculated;Fluorometer, Chelsea Instruments;NIOP-D2;Tyro;Joint Global Ocean Flux Study (JGOFS);Netherlands Indian Ocean Programme (NIOP);eng;Dataset;http://store.pangaea.de/Projects/JGOFS/Netherlands/NIOP-D2_CTD.pdf;172832 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);21.7067 62.3483 24.8567 65.0033",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.817139"
+    ],
+    "oai_set": [
+        "ASPS",
+        "JGOFSNetherlands"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[62.3483,21.7067],[62.3483,24.8567],[65.0033,24.8567],[65.0033,21.7067],[62.3483,21.7067]]]}",
+    "tags": [
+        {
+            "name": "Calculated"
+        },
+        {
+            "name": "Fluorometer"
+        },
+        {
+            "name": "Chelsea Instruments"
+        },
+        {
+            "name": "NIOP-D"
+        },
+        {
+            "name": "Tyro"
+        },
+        {
+            "name": "Joint Global Ocean Flux Study JGOFS"
+        },
+        {
+            "name": "Netherlands Indian Ocean Programme NIOP"
+        }
+    ],
+    "title": [
+        "Physical oceanography during TYRO cruise NIOP-D2"
+    ],
+    "url": ""
+}

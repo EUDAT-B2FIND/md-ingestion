@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 4",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Czech",
+        "English",
+        "Vietnamese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1595",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1595"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1595",
+    "PublicationTimestamp": "2015-11-10T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/645452"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bojar, Ond\u0159ej",
+        "Hoang, Duc Tam"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1595;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;CsEnVi Pairwise Parallel Corpora;Hoang, Duc Tam;Bojar, Ond\u0159ej;corpus;Vietnamese;parallel corpus;Czech-Vietnamese corpus;English-Vietnamese corpus;CsEnVi Pairwise Parallel Corpora consist of Vietnamese-Czech parallel corpus and Vietnamese-English parallel corpus. The corpora were assembled from the following sources:\r\n\r\n- OPUS, the open parallel corpus is a growing multilingual corpus of translated open source documents.\r\nThe majority of Vi-En and Vi-Cs bitexts are subtitles from movies and television series. \r\nThe nature of the bitexts are paraphrasing of each other's meaning, rather than translations. \r\n\r\n- TED talks, a collection of short talks on various topics, given primarily in English, transcribed and with transcripts translated to other languages. In our corpus, we use 1198 talks which had English and Vietnamese transcripts available and 784 talks which had Czech and Vietnamese transcripts available in January 2015.\r\n\r\nThe size of the original corpora collected from OPUS and TED talks is as follows:\r\n\r\n                  \tCS/VI                       \tEN/VI\r\nSentence   \t1337199/1337199   \t2035624/2035624\r\nWord          \t9128897/12073975  \t16638364/17565580\t\t\r\nUnique word\t224416/68237         \t91905/78333\r\n\r\nWe improve the quality of the corpora in two steps: normalizing and filtering.\r\n\r\nIn the normalizing step, the corpora are cleaned based on the general format of subtitles and transcripts. For instance, sequences of dots indicate explicit continuation of subtitles across multiple time frames. The sequences of dots are distributed differently in the source and the target side. Removing the sequence of dots, along with a number of other normalization rules, improves the quality of the alignment significantly.\r\nIn the filtering step, we adapt the CzEng filtering tool [1] to filter out bad sentence pairs.\r\n\r\nThe size of cleaned corpora as published is as follows:\r\n\r\n                   \tCS/VI                       \tEN/VI\r\nSentence  \t1091058/1091058    \t1113177/1091058\r\nWord         \t6718184/7646701   \t8518711/8140876\r\nUnique word\t195446/59737         \t69513/58286\r\n\r\nThe corpora are used as training data in [2].\r\n\r\nReferences:\r\n[1] Ond\u0159ej Bojar, Zden\u011bk \u017dabokrtsk\u00fd, et al. 2012. The Joy of Parallelism with CzEng 1.0. Proceedings of LREC2012. ELRA. Istanbul, Turkey.\r\n[2] Duc Tam Hoang and Ond\u0159ej Bojar, The Prague Bulletin of Mathematical Linguistics. Volume 104, Issue 1, Pages 75\u201386, ISSN 1804-0462. 9/2015;2015-11-10;corpus;http://hdl.handle.net/11234/1-1595;ces;eng;vie;info:eu-repo/grantAgreement/EC/H2020/645452;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 4;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8d2b1d76-469d-5de7-8446-c2d4f9af5eda",
+    "notes": [
+        "CsEnVi Pairwise Parallel Corpora consist of Vietnamese-Czech parallel corpus and Vietnamese-English parallel corpus. The corpora were assembled from the following sources:\r\n\r\n- OPUS, the open parallel corpus is a growing multilingual corpus of translated open source documents.\r\nThe majority of Vi-En and Vi-Cs bitexts are subtitles from movies and television series. \r\nThe nature of the bitexts are paraphrasing of each other's meaning, rather than translations. \r\n\r\n- TED talks, a collection of short talks on various topics, given primarily in English, transcribed and with transcripts translated to other languages. In our corpus, we use 1198 talks which had English and Vietnamese transcripts available and 784 talks which had Czech and Vietnamese transcripts available in January 2015.\r\n\r\nThe size of the original corpora collected from OPUS and TED talks is as follows:\r\n\r\n                  \tCS/VI                       \tEN/VI\r\nSentence   \t1337199/1337199   \t2035624/2035624\r\nWord          \t9128897/12073975  \t16638364/17565580\t\t\r\nUnique word\t224416/68237         \t91905/78333\r\n\r\nWe improve the quality of the corpora in two steps: normalizing and filtering.\r\n\r\nIn the normalizing step, the corpora are cleaned based on the general format of subtitles and transcripts. For instance, sequences of dots indicate explicit continuation of subtitles across multiple time frames. The sequences of dots are distributed differently in the source and the target side. Removing the sequence of dots, along with a number of other normalization rules, improves the quality of the alignment significantly.\r\nIn the filtering step, we adapt the CzEng filtering tool [1] to filter out bad sentence pairs.\r\n\r\nThe size of cleaned corpora as published is as follows:\r\n\r\n                   \tCS/VI                       \tEN/VI\r\nSentence  \t1091058/1091058    \t1113177/1091058\r\nWord         \t6718184/7646701   \t8518711/8140876\r\nUnique word\t195446/59737         \t69513/58286\r\n\r\nThe corpora are used as training data in [2].\r\n\r\nReferences:\r\n[1] Ond\u0159ej Bojar, Zden\u011bk \u017dabokrtsk\u00fd, et al. 2012. The Joy of Parallelism with CzEng 1.0. Proceedings of LREC2012. ELRA. Istanbul, Turkey.\r\n[2] Duc Tam Hoang and Ond\u0159ej Bojar, The Prague Bulletin of Mathematical Linguistics. Volume 104, Issue 1, Pages 75\u201386, ISSN 1804-0462. 9/2015"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1595"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "Vietnamese"
+        },
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "Czech-Vietnamese corpus"
+        },
+        {
+            "name": "English-Vietnamese corpus"
+        }
+    ],
+    "title": [
+        "CsEnVi Pairwise Parallel Corpora"
+    ],
+    "url": ""
+}

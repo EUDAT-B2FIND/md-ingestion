@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3291",
+    "MetadataAccess": [
+        "oai:ota:oucs:3291"
+    ],
+    "PublicationTimestamp": "1888-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1888"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Kipling, Rudyard, 1865-1936"
+    ],
+    "fulltext": "oai:ota:oucs:3291;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3291.xml;Plain Tales from the Hills;Kipling, Rudyard, 1865-1936;not after: 1888;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "edfbd449-118c-5244-a7de-cb9dfda0aa79",
+    "oai_identifier": [
+        "oai:ota:oucs:3291"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Plain Tales from the Hills"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3291.xml"
+}

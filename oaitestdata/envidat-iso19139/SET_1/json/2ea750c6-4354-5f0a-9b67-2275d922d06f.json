@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "accidents@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "CSV"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/14",
+    "PublicationTimestamp": "2018-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "WSL Institute for Snow and Avalanche Research SLF"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "SpatialCoverage": "(46N-48N,6 E-10E)",
+    "author": [
+        "Avalanche Warning Service SLF"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/14;2018-11-12T09:04:19Z;doi:10.16904/14;Eng;MD_CharacterSetCode_utf8;Avalanche Warning Service SLF;WSL Institute for Snow and Avalanche Research SLF;accidents@slf.ch;2017-03-01T11:54:28;ISO 19115:2003/19139;1.0;EPSG:4326;Number of avalanche fatalities per hydrological year in Switzerland since 1936-1937;2018-12-31;This dataset contains the statistics on the number of avalanche fatalities per  hydrological year in Switzerland. The data set commences with the beginning of the hydrological year 1936/37 on 01/10/1936. After the completion of a hydrological year, the new data is appended to the existing dataset.     The following information is contained (by column and column title):     - hydrological year     - number of fatalities in the backcountry (=tour)     - number of fatalities in terrain close to ski areas (=offpiste)     - number of fatalities on transportation corridors including ski runs, roads, railway lines (=transportation.corridors)     - number of fatalities in or around buildings or in settlements (= buildings)     - sum (of all four categories)      The definition for these four categories as described in the guidelines to the avalanche accident database:           **tour**:       activities include back-country ski, snowboard or snow-shoe touring      **offpiste**:    access from ski area, generally from the top of a skilift with short hiking distances      **transportation.corridors** ([Techel et al., 2016](http://www.geogr-helv.net/71/147/2016/ )):     people travelling or recreating on open or temporarily closed  transportation corridors (e.g. a road user or a skier on a ski run) and people working on open or closed transportation corridors (e.g. maintenance crews on roads, professional rescue teams)       **buildings** ([Techel et al., 2016](http://www.geogr-helv.net/71/147/2016/ )):    people inside or just outside buildings, and workers on high alpine building  sites;Avalanche Warning Service SLF;WSL Institute for Snow and Avalanche Research SLF;accidents@slf.ch;AVALANCHE ACCIDENT STATISTICS;AVALANCHE ACCIDENTS;AVALANCHE FATALITIES;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;5.95587;10.49203;45.81802;47.80838;CSV;https://www.envidat.ch/dataset/avalanche-fatalities-switzerland-1936;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/09817bad-b6bf-424a-82a2-f233a1037a42/resource/419fadba-a176-4058-bdc6-94879f56ef29/download/avalanche_fatalities_switzerland_since_1936.csv;HTTPS;AVALANCHE FATALITIES PER YEAR IN SWITZERLAND SINCE 1936/1937;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "2ea750c6-4354-5f0a-9b67-2275d922d06f",
+    "notes": [
+        "This dataset contains the statistics on the number of avalanche fatalities per  hydrological year in Switzerland. The data set commences with the beginning of the hydrological year 1936/37 on 01/10/1936. After the completion of a hydrological year, the new data is appended to the existing dataset.     The following information is contained (by column and column title):     - hydrological year     - number of fatalities in the backcountry (=tour)     - number of fatalities in terrain close to ski areas (=offpiste)     - number of fatalities on transportation corridors including ski runs, roads, railway lines (=transportation.corridors)     - number of fatalities in or around buildings or in settlements (= buildings)     - sum (of all four categories)      The definition for these four categories as described in the guidelines to the avalanche accident database:           **tour**:       activities include back-country ski, snowboard or snow-shoe touring      **offpiste**:    access from ski area, generally from the top of a skilift with short hiking distances      **transportation.corridors** ([Techel et al., 2016](http://www.geogr-helv.net/71/147/2016/ )):     people travelling or recreating on open or temporarily closed  transportation corridors (e.g. a road user or a skier on a ski run) and people working on open or closed transportation corridors (e.g. maintenance crews on roads, professional rescue teams)       **buildings** ([Techel et al., 2016](http://www.geogr-helv.net/71/147/2016/ )):    people inside or just outside buildings, and workers on high alpine building  sites"
+    ],
+    "oai_identifier": [
+        "doi:10.16904/14",
+        "oai:envidat.ch:10.16904/14"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[5.95587,45.81802],[5.95587,47.80838],[10.49203,47.80838],[10.49203,45.81802],[5.95587,45.81802]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "AVALANCHE ACCIDENT STATISTICS"
+        },
+        {
+            "name": "AVALANCHE ACCIDENTS"
+        },
+        {
+            "name": "AVALANCHE FATALITIES"
+        }
+    ],
+    "title": [
+        "Number of avalanche fatalities per hydrological year in Switzerland since 1936-1937"
+    ],
+    "url": "https://www.envidat.ch/dataset/09817bad-b6bf-424a-82a2-f233a1037a42/resource/419fadba-a176-4058-bdc6-94879f56ef29/download/avalanche_fatalities_switzerland_since_1936.csv"
+}

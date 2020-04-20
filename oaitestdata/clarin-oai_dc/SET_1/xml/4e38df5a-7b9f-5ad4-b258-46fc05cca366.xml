@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/24</identifier>
+    <datestamp>2016-01-21T14:33:43Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>RL-Button</dc:title>
+      <dc:creator>K&#281;dzia, Pawe&#322;</dc:creator>
+      <dc:description>W kontek&#347;cie rzutowania leksykalnych sieci semantycznych, idea algorytmu Relaxation Labeling (RL) zaproponowanego przez autor&#243;w w [1], polega na okre&#347;laniu wag potencjalnych powi&#261;za&#324; pomi&#281;dzy par&#261; synset&#243;w, uwzgl&#281;dniaj&#261;c zadane wcze&#347;niej ograniczenia. Waga takiego powi&#261;zania jest odpowiednio modyfikowana: mo&#380;e by&#263; zwi&#281;kszana b&#261;d&#378; zmniejszana, jednak suma wag dla potencjalnych odpowiednik&#243;w danego sysnetu zawsze musi wynosi&#263; 1. Podstawowa wersja agorytmu zosta&#322;a rozszerzona o dodatkowe &#378;r&#243;d&#322;o informacji, nazwane niepodwa&#380;alnymi powi&#261;zaniami. Algorytm uwzgl&#281;dnia wprowadzone r&#281;cznie powi&#261;zania, traktuj&#261;c je jako powi&#261;zania, kt&#243;re nie mog&#261; by&#263; zmodyfikowane.</dc:description>
+      <dc:date>2014</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/24</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technolgy</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/pl/narzedzia-i-zasoby/rl-button</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

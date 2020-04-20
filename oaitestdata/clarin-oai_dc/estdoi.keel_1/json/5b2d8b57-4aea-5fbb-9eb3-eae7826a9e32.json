@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-0576CL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:8512252",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:8512252"
+    ],
+    "PublicationTimestamp": "2016-05-23T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Pajupuu, Hille"
+    ],
+    "fulltext": "oai:oai.datacite.org:8512252;2019-04-05T15:01:07Z;ESTDOI;ESTDOI.KEEL;Emotsioonidetektor;Emotion detector;Pajupuu, Hille;Center of Estonian Language Resources;2015;Issued: 2015-05-18;Updated: 2016-05-23;doi:10.15155/3-00-0000-0000-0000-0576CL;Abstract;Vahend kirjaliku teksti l\u00f5ikude positiivsuse, negatiivsuse ja neutraalsuse tuvastamiseks.;Abstract;The Emotion Detector allows to identify the positivity, negativity and neutrality in paragraphs of written text.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5b2d8b57-4aea-5fbb-9eb3-eae7826a9e32",
+    "notes": [
+        "Abstract",
+        "Vahend kirjaliku teksti l\u00f5ikude positiivsuse, negatiivsuse ja neutraalsuse tuvastamiseks.",
+        "Abstract",
+        "The Emotion Detector allows to identify the positivity, negativity and neutrality in paragraphs of written text."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:8512252"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Emotsioonidetektor",
+        "Emotion detector"
+    ],
+    "url": ""
+}

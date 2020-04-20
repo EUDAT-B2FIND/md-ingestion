@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "alexander.haumann@usys.ethz.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "URL",
+        "PDF",
+        "NETCDF4 CF-1.6"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/8",
+    "PublicationTimestamp": "2016-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Rights": [
+        "Other (Non-Commercial)"
+    ],
+    "SpatialCoverage": "(90S-37S,180W-180E)",
+    "author": [
+        "F. Alexander Haumann"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/8;2018-07-10T09:48:38Z;doi:10.16904/8;Eng;MD_CharacterSetCode_utf8;F. Alexander Haumann;alexander.haumann@usys.ethz.ch;2016-10-17T12:19:28;ISO 19115:2003/19139;1.0;EPSG:4326;Antarctic sea-ice freshwater fluxes associated with freezing, transport, and melting;2016-12-31;This data set provides estimates of annual fresh water fluxes related to sea-ice formation from ocean freezing and snow-ice formation, sea-ice melting, lateral transport of sea ice in the Southern Ocean over the period 1982 to 2008.It is derived from a mass balance calculation of local sea-ice volume change and divergence from satellite data and sea-ice reconstructions. The mass balance is calculated on a daily basis and fluxes are then integrated over the entire year, where a year is defined from March to February of the next year (i.e. from March 1982 to February 2009). This approach combines multiple products of sea-ice concentration (Cavalieri & Parkinson, 2008;Comiso, 1986; Meier et al., 2013), sea-ice thickness (Kurtz & Markus, 2012; Massonnet et al., 2013; Worby et al., 2008), and sea-ice drift (Fowler et al., 2013; Kwok 2005; Schwegmann et al., 2011). For a detailed description of the method see Haumann et al. (2016). The data set is derived to estimate large-scale (regional to basin-scale) fluxes on an annual basis. Our confidence is reduced on a grid cell basis, such as for single coastal polynyas, where the method and underlying data induce large, unknown uncertainties.    _Disclaimer: This data set is free to use for any non-commercial purpose at the risk of the user and the authors do not take any liability on the use of the data set. The authors assembled the data set carefully and assessed accuracy, errors, and uncertainties. Please contact the authors if you find any issues._    __Related publication__: http://www.nature.com/nature/journal/v537/n7618/full/nature19101.html (doi:10.1038/nature19101);F. Alexander Haumann;alexander.haumann@usys.ethz.ch;ANTARTIC;CLIMATE CHANGE;CRYOSPHERIC SCIENCE;FORCING;FREEZING;FRESHWATER FLUX;MASS BALANCE;MELTING;PHYSICAL OCEANOGRAPHY;POLAR;SALINITY;SALT;SATELLITE;SEA ICE;SEA ICE DIVERGENCE;SEA ICE VOLUME;SOUTHERN OCEAN;TRANSPORT;Other (Non-Commercial);Eng;MD_CharacterSetCode_utf8;-180;180;-89.7;-37;PDF;NETCDF4 CF-1.6;URL;https://www.envidat.ch/dataset/10-16904-8;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/b16a0901-3abe-4da0-b61e-cdb80c59ba63/resource/a2d8430f-dc92-4a03-b3d6-6661b553bdd1/download/aniceflux_v01.pdf;HTTPS;EXPLANATORY DOCUMENT;download;https://www.envidat.ch/dataset/b16a0901-3abe-4da0-b61e-cdb80c59ba63/resource/5de37dd3-e6a7-41b4-b97a-21b14734b861/download/aniceflux_v01_annual_1982-2008.nc;HTTPS;ANICEFLUX_V01_ANNUAL_1982-2008.NC;download;https://www.envidat.ch/dataset/b16a0901-3abe-4da0-b61e-cdb80c59ba63/resource/6a315e6d-4c92-4f85-b131-92fd87853b65/download/aniceflux_v01_clim_mean_1982-2008.nc;HTTPS;ANICEFLUX_V01_CLIM_MEAN_1982-2008.NC;download;http://www.nature.com/articles/nature19101.epdf?author_access_token=dtLqMQ3Ss6p16tymoagae9RgN0jAjWel9jnR3ZoTv0PH2BR1NrVw3zxcEnl7ViU5pKp8iHAlc_ntQx82EiRMqFRuGOR0VueOUVoGWzy8lSzML6YUBUMMZ5f4LYCdK8Ca;HTTP;LINK TO RELATED PUBLICATION;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "303bdc67-fdc9-5b04-9fdb-30d582d9da32",
+    "notes": [
+        "This data set provides estimates of annual fresh water fluxes related to sea-ice formation from ocean freezing and snow-ice formation, sea-ice melting, lateral transport of sea ice in the Southern Ocean over the period 1982 to 2008.It is derived from a mass balance calculation of local sea-ice volume change and divergence from satellite data and sea-ice reconstructions. The mass balance is calculated on a daily basis and fluxes are then integrated over the entire year, where a year is defined from March to February of the next year (i.e. from March 1982 to February 2009). This approach combines multiple products of sea-ice concentration (Cavalieri & Parkinson, 2008;Comiso, 1986; Meier et al., 2013), sea-ice thickness (Kurtz & Markus, 2012; Massonnet et al., 2013; Worby et al., 2008), and sea-ice drift (Fowler et al., 2013; Kwok 2005; Schwegmann et al., 2011). For a detailed description of the method see Haumann et al. (2016). The data set is derived to estimate large-scale (regional to basin-scale) fluxes on an annual basis. Our confidence is reduced on a grid cell basis, such as for single coastal polynyas, where the method and underlying data induce large, unknown uncertainties.    _Disclaimer: This data set is free to use for any non-commercial purpose at the risk of the user and the authors do not take any liability on the use of the data set. The authors assembled the data set carefully and assessed accuracy, errors, and uncertainties. Please contact the authors if you find any issues._    __Related publication__: http://www.nature.com/nature/journal/v537/n7618/full/nature19101.html (doi:10.1038/nature19101)"
+    ],
+    "oai_identifier": [
+        "doi:10.16904/8",
+        "oai:envidat.ch:10.16904/8"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-180,-89.7],[-180,-37],[180,-37],[180,-89.7],[-180,-89.7]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "ANTARTIC"
+        },
+        {
+            "name": "CLIMATE CHANGE"
+        },
+        {
+            "name": "CRYOSPHERIC SCIENCE"
+        },
+        {
+            "name": "FORCING"
+        },
+        {
+            "name": "FREEZING"
+        },
+        {
+            "name": "FRESHWATER FLUX"
+        },
+        {
+            "name": "MASS BALANCE"
+        },
+        {
+            "name": "MELTING"
+        },
+        {
+            "name": "PHYSICAL OCEANOGRAPHY"
+        },
+        {
+            "name": "POLAR"
+        },
+        {
+            "name": "SALINITY"
+        },
+        {
+            "name": "SALT"
+        }
+    ],
+    "title": [
+        "Antarctic sea-ice freshwater fluxes associated with freezing, transport, and melting"
+    ],
+    "url": "http://www.nature.com/articles/nature19101.epdf?author_access_token=dtLqMQ3Ss6p16tymoagae9RgN0jAjWel9jnR3ZoTv0PH2BR1NrVw3zxcEnl7ViU5pKp8iHAlc_ntQx82EiRMqFRuGOR0VueOUVoGWzy8lSzML6YUBUMMZ5f4LYCdK8Ca"
+}

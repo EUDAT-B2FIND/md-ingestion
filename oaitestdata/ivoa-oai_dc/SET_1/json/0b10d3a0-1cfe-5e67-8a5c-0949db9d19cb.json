@@ -1,0 +1,55 @@
+{
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://wfau.roe.ac.uk/vhsDR6-dsa/ceaApplication",
+    "PublicationTimestamp": "2019-03-23T04:08:10Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "RelatedIdentifier": [
+        "ivo://wfau.roe.ac.uk/vhsDR6-dsa/ceaApplication"
+    ],
+    "author": [
+        "WFAU, Institute for Astronomy, University of Edinburgh"
+    ],
+    "fulltext": "ivo://wfau.roe.ac.uk/vhsDR6-dsa/ceaApplication;2019-03-23T04:08:10Z;VHS DR6 - VISTA Hemisphere Survey Data Release 6;WFAU, Institute for Astronomy, University of Edinburgh;WFAU, Institute for Astronomy, University of Edinburgh;The VHS will image the entire ~20 000 square degrees of the Southern Sky, with the exception of the areas already covered by the VIKING and VVV surveys, in J and Ks. The resulting data will be about 4 magnitudes deeper than 2MASS and DENIS. The 5000 square degrees covered by the Dark Energy Survey (DES), another imaging survey scheduled to begin in 2010 at the CTIO 4 metre Blanco telescope, will also be observed in H-band. The area around both of the Galactic Caps will be observed in Y- and H- band as well to be combined with the data from the VST ATLAS survey. The main science drivers of the VHS include: examining low mass and nearby stars, studying the merger history of the Galaxy, measuring the properties of Dark Energy through the examination of large-scale structure to a redshift of ~1, and searches for high redshift quasars.;Stars,Survey,Galaxy, low mass stars, dark energy;2019-03-20T15:27:39;ivo://wfau.roe.ac.uk/vhsDR6-dsa/ceaApplication",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0b10d3a0-1cfe-5e67-8a5c-0949db9d19cb",
+    "notes": [
+        "The VHS will image the entire ~20 000 square degrees of the Southern Sky, with the exception of the areas already covered by the VIKING and VVV surveys, in J and Ks. The resulting data will be about 4 magnitudes deeper than 2MASS and DENIS. The 5000 square degrees covered by the Dark Energy Survey (DES), another imaging survey scheduled to begin in 2010 at the CTIO 4 metre Blanco telescope, will also be observed in H-band. The area around both of the Galactic Caps will be observed in Y- and H- band as well to be combined with the data from the VST ATLAS survey. The main science drivers of the VHS include: examining low mass and nearby stars, studying the merger history of the Galaxy, measuring the properties of Dark Energy through the examination of large-scale structure to a redshift of ~1, and searches for high redshift quasars."
+    ],
+    "oai_identifier": [
+        "ivo://wfau.roe.ac.uk/vhsDR6-dsa/ceaApplication"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Stars"
+        },
+        {
+            "name": "Survey"
+        },
+        {
+            "name": "Galaxy"
+        },
+        {
+            "name": "low mass stars"
+        },
+        {
+            "name": "dark energy"
+        }
+    ],
+    "title": [
+        "The VHS will image the entire ~20 000 square degrees of the Southern Sky, with the exception of the areas already covered by the VIKING and VVV surveys, in J and Ks. The resulting data will be about 4 magnitudes deeper than 2MASS and DENIS. The 5000 square degrees covered by the Dark Energy Survey (DES), another imaging survey scheduled to begin in 2010 at the CTIO 4 metre Blanco telescope, will also be observed in H-band. The area around both of the Galactic Caps will be observed in Y- and H- band as well to be combined with the data from the VST ATLAS survey. The main science drivers of the VHS include: examining low mass and nearby stars, studying the merger history of the Galaxy, measuring the properties of Dark Energy through the examination of large-scale structure to a redshift of ~1, and searches for high redshift quasars."
+    ]
+}

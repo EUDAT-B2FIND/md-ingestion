@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Masaryk University, Brno"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "application/octet-stream",
+        "application/zip"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2647",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2647"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2647",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Masaryk University, Brno"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Loutock\u00fd, Pavel",
+        "\u0160ejnov\u00e1, Tamara",
+        "Kotkov\u00e1, Ad\u00e9la",
+        "Zibner, Jan",
+        "\u0160avelka, Jarom\u00edr",
+        "Pullmannov\u00e1, Helena",
+        "\u0160imkov\u00e1, Nikola",
+        "Hara\u0161ta, Jakub",
+        "Proch\u00e1zkov\u00e1, Daniela",
+        "Vosinek, Michal",
+        "Zavadilov\u00e1, Lucie",
+        "Kasl, Franti\u0161ek",
+        "M\u00ed\u0161ek, Jakub",
+        "Semeni\u0161\u00edn, Petr"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2647;2018-07-02T22:05:54Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Annotated Corpus of Czech Case Law for Reference Recognition Tasks;Hara\u0161ta, Jakub;\u0160avelka, Jarom\u00edr;Kasl, Franti\u0161ek;Kotkov\u00e1, Ad\u00e9la;Loutock\u00fd, Pavel;M\u00ed\u0161ek, Jakub;Proch\u00e1zkov\u00e1, Daniela;Pullmannov\u00e1, Helena;Semeni\u0161\u00edn, Petr;\u0160ejnov\u00e1, Tamara;\u0160imkov\u00e1, Nikola;Vosinek, Michal;Zavadilov\u00e1, Lucie;Zibner, Jan;reference recognition;legal texts;Annotated corpus of 350 decision of Czech top-tier courts (Supreme Court, Supreme Administrative Court, Constitutional Court).\r\n\r\nEvery decision is annotated by two trained annotators and then manually adjudicated by one trained curator to solve possible disagreements between annotators. Adjudication was conducted non-destructively, therefore dataset contains all original annotations.\r\n\r\nCorpus was developed as training and testing material for reference recognition tasks. Dataset contains references to other court decisions and literature. All references consist of basic units (identifier of court decision, identification of court issuing referred decision, author of book or article, title of book or article, point of interest in referred document etc.), values (polarity, depth of discussion etc.).;2018;corpus;http://hdl.handle.net/11234/1-2647;ces;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;text/plain; charset=utf-8;application/zip;application/octet-stream;downloadable_files_count: 2;Masaryk University, Brno;https://www.muni.cz/vyzkum/projekty/36467",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ec2b001e-280c-54d0-8c59-a91c36c00e11",
+    "notes": [
+        "Annotated corpus of 350 decision of Czech top-tier courts (Supreme Court, Supreme Administrative Court, Constitutional Court).\r\n\r\nEvery decision is annotated by two trained annotators and then manually adjudicated by one trained curator to solve possible disagreements between annotators. Adjudication was conducted non-destructively, therefore dataset contains all original annotations.\r\n\r\nCorpus was developed as training and testing material for reference recognition tasks. Dataset contains references to other court decisions and literature. All references consist of basic units (identifier of court decision, identification of court issuing referred decision, author of book or article, title of book or article, point of interest in referred document etc.), values (polarity, depth of discussion etc.)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2647"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "reference recognition"
+        },
+        {
+            "name": "legal texts"
+        }
+    ],
+    "title": [
+        "Annotated Corpus of Czech Case Law for Reference Recognition Tasks"
+    ],
+    "url": ""
+}

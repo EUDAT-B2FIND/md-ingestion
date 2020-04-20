@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1452",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1452"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1452",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU General Public License, version 2",
+        "http://www.gnu.org/licenses/gpl-2.0.html",
+        "PUB"
+    ],
+    "author": [
+        "Jos\u00edfko, Michal"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1452;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;KonText Web Demo;Jos\u00edfko, Michal;web service;corpus;parallel corpus;demo;An interactive web demo for querying selected \u00daFAL and LINDAT corpora. LINDAT/CLARIN KonText is a fork of \u00da\u010cNK KonText (https://github.com/czcorpus/kontext, maintained by Tom\u00e1\u0161 Mach\u00e1lek) that contains some modifications and additional features. Kontext, in turn, is a fork of the Bonito 2.68 python web interface to the corpus management tool Manatee (http://nlp.fi.muni.cz/trac/noske, created by Pavel Rychl\u00fd).;2014;toolService;http://hdl.handle.net/11234/1-1452;ces;eng;GNU General Public License, version 2;http://www.gnu.org/licenses/gpl-2.0.html;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://github.com/czcorpus/kontext",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8e88c916-dfff-58b6-aeca-f3ebee4b7da4",
+    "notes": [
+        "An interactive web demo for querying selected \u00daFAL and LINDAT corpora. LINDAT/CLARIN KonText is a fork of \u00da\u010cNK KonText (https://github.com/czcorpus/kontext, maintained by Tom\u00e1\u0161 Mach\u00e1lek) that contains some modifications and additional features. Kontext, in turn, is a fork of the Bonito 2.68 python web interface to the corpus management tool Manatee (http://nlp.fi.muni.cz/trac/noske, created by Pavel Rychl\u00fd)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1452"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "web service"
+        },
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "demo"
+        }
+    ],
+    "title": [
+        "KonText Web Demo"
+    ],
+    "url": ""
+}

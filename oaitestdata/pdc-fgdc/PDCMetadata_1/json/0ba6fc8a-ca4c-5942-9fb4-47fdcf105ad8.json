@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "dbarber@cc.umanitoba.ca"
+    ],
+    "Contributor": [
+        "University of Manitoba"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "To monitor the surface meteorological variables and motion of first and multi-year ice floes in the Southern Beaufort Sea from August 2015 onward."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=12581_fgdc",
+    "PublicationTimestamp": "2016-01-25T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Limited"
+    ],
+    "SpatialCoverage": "(70N-75N,180W-120W)",
+    "TempCoverageBegin": 63577393199,
+    "TempCoverageEnd": 63618782399,
+    "TemporalCoverage": " period : ( 2015-09-09T11:59:59Z - 2016-12-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2015-09-09T11:59:59Z",
+    "TemporalCoverage:EndDate": "2016-12-31T11:59:59Z",
+    "author": [
+        "Barber, David G.",
+        "Candlish, Lauren"
+    ],
+    "fulltext": "12581_fgdc;2017-04-09T22:02:44Z;PDCMetadata;Barber, David G.;Candlish, Lauren;20160125;Surface Meteorological Stations deployed on sea ice, Beaufort Sea - ArcticNet 2015;Computer file;unknown;Unpublished,\r\nArcticNet 2015,\r\nCentre for Earth Observation Science,\r\nUniversity of Manitoba.;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12581;Surface meteorological stations for temperature, humidity, wind speed and wind direction were deployed on different types of sea ice. Hourly location, and meteorological data was transmitted using Iridium data burst modems. The data were received at the University of Manitoba. The towers were left on the ice, and assumed to have sunk when data transmission ceased. Ice floes sampled included thick first-year, and some large multi-year ice floes.;To monitor the surface meteorological variables and motion of first and multi-year ice floes in the Southern Beaufort Sea from August 2015 onward.;Summary: Not Applicable Research Program(s): ArcticNet. For further information: david.barber@umanitoba.ca;20150909;20161231;NULL;Complete;As needed;-180;-120;75;70;NULL;Beaufort Sea;Buoys;GPS;Motion;Relative humidity;Sea ice;Temperature;Wind direction;Wind speed;Beaufort Sea, Canadian Arctic;NULL;Limited;NULL;University of Manitoba;David  Barber;NULL;mailing;476 Wallace Building, University of Manitoba;Winnipeg;MB;R3T2N2;Canada;204-474-6981;204-272-1532;dbarber@cc.umanitoba.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;12581;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20160125;20160125;David  Barber;University of Manitoba;mailing;476 Wallace Building, University of Manitoba;Winnipeg;MB;R3T2N2;Canada;204-474-6981;204-272-1532;dbarber@cc.umanitoba.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0ba6fc8a-ca4c-5942-9fb4-47fdcf105ad8",
+    "notes": [
+        "Surface meteorological stations for temperature, humidity, wind speed and wind direction were deployed on different types of sea ice. Hourly location, and meteorological data was transmitted using Iridium data burst modems. The data were received at the University of Manitoba. The towers were left on the ice, and assumed to have sunk when data transmission ceased. Ice floes sampled included thick first-year, and some large multi-year ice floes."
+    ],
+    "oai_identifier": [
+        "12581_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-180,70],[-180,75],[-120,75],[-120,70],[-180,70]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Beaufort Sea"
+        },
+        {
+            "name": "Buoys"
+        },
+        {
+            "name": "GPS"
+        },
+        {
+            "name": "Motion"
+        },
+        {
+            "name": "Relative humidity"
+        },
+        {
+            "name": "Sea ice"
+        },
+        {
+            "name": "Temperature"
+        },
+        {
+            "name": "Wind direction"
+        },
+        {
+            "name": "Wind speed"
+        }
+    ],
+    "title": [
+        "Surface Meteorological Stations deployed on sea ice, Beaufort Sea - ArcticNet 2015"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12581"
+}

@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10344234</identifier>
+    <datestamp>2019-02-23T06:31:27Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele s&#245;napered - indeks</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:creator>Vare, Silvi</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-02-07</dc:date>
+      <dc:date>Updated: 2017-02-07</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-064DEL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Indeks v&#245;imaldab teada saada, kas otsitav s&#245;na esineb s&#245;naperede raamatus ning millis(t)es s&#245;napere(de)s ja millises plokis ta t&#228;psemalt asub. Otsida on v&#245;imalik nii elektroonilise indeksi kaudu p&#228;ringuaknas kui ka pereliikmete loenditest pdf-formaadis. Vajadusel on v&#245;imalik s&#245;na olemasolu kontrollida ka perepeade pdf-loendist.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

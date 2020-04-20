@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "University of Potsdam, Dept. of Linguistics",
+        "Humboldt-University Berlin, Institut f\u00fcr deutsche Sprache und Linguistik"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1167",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1167"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1167",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Potsdam, Dept. of Linguistics",
+        "Humboldt-University Berlin, Institut f\u00fcr deutsche Sprache und Linguistik"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1167;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;ANNIS;ANNIS2 is an open source, versatile web browser-based search and visualization architecture for complex multilevel linguistic corpora with diverse types of annotation. ANNIS, which stands for ANNotation of Information Structure, has been designed to provide access to the data of the SFB 632 - \"Information Structure: The Linguistic Means for Structuring Utterances, Sentences and Texts\". Since information structure interacts with linguistic phenomena on many levels, ANNIS2 addresses the SFB's need to concurrently annotate, query and visualize data from such varied areas as syntax, semantics, morphology, prosody, referentiality, lexis and more. For project working with spoken language, support for audio / video annotations is also required.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1167;downloadable_files_count: 0;Germany;University of Potsdam, Dept. of Linguistics;Humboldt-University Berlin, Institut f\u00fcr deutsche Sprache und Linguistik;http://annis2.sfb632.uni-potsdam.de/Annis/search.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3144f765-69d5-527b-8e54-9f789bc67e73",
+    "notes": [
+        "ANNIS2 is an open source, versatile web browser-based search and visualization architecture for complex multilevel linguistic corpora with diverse types of annotation. ANNIS, which stands for ANNotation of Information Structure, has been designed to provide access to the data of the SFB 632 - \"Information Structure: The Linguistic Means for Structuring Utterances, Sentences and Texts\". Since information structure interacts with linguistic phenomena on many levels, ANNIS2 addresses the SFB's need to concurrently annotate, query and visualize data from such varied areas as syntax, semantics, morphology, prosody, referentiality, lexis and more. For project working with spoken language, support for audio / video annotations is also required."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1167"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "ANNIS"
+    ],
+    "url": ""
+}

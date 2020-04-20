@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "e.kahlmeyer@gmail.com"
+    ],
+    "Contributor": [
+        "Memorial University of Newfoundland"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "The purpose was to determine the amount of Pb-210 coming from the atmosphere."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=1457_fgdc",
+    "PublicationTimestamp": "2014-10-27T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(59N,63W)",
+    "TempCoverageBegin": 63353357999,
+    "TempCoverageEnd": 63353357999,
+    "TemporalCoverage": " period : ( 2008-08-03T11:59:59Z - 2008-08-03T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2008-08-03T11:59:59Z",
+    "TemporalCoverage:EndDate": "2008-08-03T11:59:59Z",
+    "author": [
+        "Elisabeth Kahlmeyer",
+        "Sam Bentley"
+    ],
+    "fulltext": "1457_fgdc;2017-04-09T22:02:03Z;PDCMetadata;Sam Bentley;Elisabeth Kahlmeyer;20141027;Soil sample analysis of Pb-210 in the McCornick River area, Nunatsiavut;Computer file;unknown;Corename: WH0808-2; unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1457;The soil samples were studied for Pb-210 produced in the atmosphere and stored in the soil through radioisotope analysis.;The purpose was to determine the amount of Pb-210 coming from the atmosphere.;Summary: Not Applicable Research Program(s): ArcticNet. For further information: e.kahlmeyer@gmail.com;20080803;20080803;NULL;In work;Annually;-63.45;-63.45;59.01;59.01;NULL;210-Pb;Atmosphere;Earth Sciences;Nachvak Fiord;Soil chemistry;Soils;Close to McCornick River, Nunatsiavut, Canada;NULL;Public;NULL;Memorial University of Newfoundland;Elisabeth Kahlmeyer;NULL;mailing;240 Prince Phillip Drive;St. John's;NL;A1B3X5;Canada;7096992755;e.kahlmeyer@gmail.com;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;1457;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20141027;20141027;Elisabeth Kahlmeyer;Memorial University of Newfoundland;mailing;240 Prince Phillip Drive;St. John's;NL;A1B3X5;Canada;7096992755;e.kahlmeyer@gmail.com;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0c8b06b4-9d35-52c7-b01f-a35e06da7fba",
+    "notes": [
+        "The soil samples were studied for Pb-210 produced in the atmosphere and stored in the soil through radioisotope analysis."
+    ],
+    "oai_identifier": [
+        "1457_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-63.45,59.01],[-63.45,59.01],[-63.45,59.01],[-63.45,59.01],[-63.45,59.01]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "-Pb"
+        },
+        {
+            "name": "Atmosphere"
+        },
+        {
+            "name": "Earth Sciences"
+        },
+        {
+            "name": "Nachvak Fiord"
+        },
+        {
+            "name": "Soil chemistry"
+        },
+        {
+            "name": "Soils"
+        }
+    ],
+    "title": [
+        "Soil sample analysis of Pb-210 in the McCornick River area, Nunatsiavut"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1457"
+}

@@ -1,0 +1,216 @@
+{
+    "created": "2020-01-21T13:32:13.907415+00:00", 
+    "files": [], 
+    "id": "0720da0fc44a491395acbfb1cf1e0420", 
+    "links": {
+        "self": "https://b2share-testing.fz-juelich.de/api/records/0720da0fc44a491395acbfb1cf1e0420", 
+        "versions": "https://b2share-testing.fz-juelich.de/api/records/8f7db46f17e949099c1e673cd38fc833/versions"
+    }, 
+    "metadata": {
+        "$schema": "https://b2share-testing.fz-juelich.de/api/communities/8cb65167-71d4-4845-a454-5d56624568d2/schemas/0#/json_schema", 
+        "community": "8cb65167-71d4-4845-a454-5d56624568d2", 
+        "community_specific": {
+            "96fb29dc-02e5-49d9-adea-366c3e1b1594": {
+                "toar_collection_type": "TOARDataCollection", 
+                "toar_data_collection_meta": {
+                    "PIDs": [], 
+                    "bounding_box": [
+                        -90, 
+                        -180, 
+                        90, 
+                        180
+                    ], 
+                    "data_end_date": "2018-12-01T00:00:00.000Z", 
+                    "data_start_date": "1971-02-01T00:00:00.000Z", 
+                    "publication_authors": [
+                        "Cooper, Owen R.", 
+                        "Schultz, Martin G.", 
+                        "Schr\u00f6der, Sabine", 
+                        "Chang, Kai-Lan", 
+                        "Gaudel, Audrey", 
+                        "Carbajal Ben\u00edtez, Gerardo", 
+                        "Cuevas, Emilio", 
+                        "Fr\u00f6hlich, Marina", 
+                        "Galbally, Ian E.", 
+                        "Kubistin, Dagmar", 
+                        "Lu, Xiao", 
+                        "McClure-Begley, Audra", 
+                        "Molloy, Suzie", 
+                        "N\u00e9d\u00e9lec, Philippe", 
+                        "O\u2019Brien, Jason", 
+                        "Oltmans, Samuel J.", 
+                        "Petropavlovskikh, Irina", 
+                        "Ries, Ludwig", 
+                        "Senik, Irina", 
+                        "Sj\u00f6berg, Karin", 
+                        "Solberg, Sverre", 
+                        "Spain, T. Gerard", 
+                        "Spangl, Wolfgang", 
+                        "Steinbacher, Martin", 
+                        "Tarasick, David", 
+                        "Thouret, Valerie", 
+                        "Xu, Xiaobin"
+                    ], 
+                    "publication_journal": "ELEMENTA: Science of the Anthropocene", 
+                    "publication_reference": "to be filled in when DOI of ELEMENTA paper is available", 
+                    "publication_title": "Multi-decadal surface ozone trends at globally distributed remote locations", 
+                    "publication_year": 2020
+                }
+            }
+        }, 
+        "contact_email": "owen.r.cooper@noaa.gov", 
+        "contributors": [
+            {
+                "contributor_name": "Schr\u00f6der, Sabine", 
+                "contributor_type": "DataCurator"
+            }, 
+            {
+                "contributor_name": "Cooper, Owen R.", 
+                "contributor_type": "ProjectLeader"
+            }, 
+            {
+                "contributor_name": "Cooper, Owen R.", 
+                "contributor_type": "ContactPerson"
+            }, 
+            {
+                "contributor_name": "Schultz, Martin G.", 
+                "contributor_type": "Researcher"
+            }, 
+            {
+                "contributor_name": "Schr\u00f6der, Sabine", 
+                "contributor_type": "Researcher"
+            }, 
+            {
+                "contributor_name": "Chang, Kai-Lan", 
+                "contributor_type": "Researcher"
+            }, 
+            {
+                "contributor_name": "Gaudel, Audrey", 
+                "contributor_type": "Researcher"
+            }
+        ], 
+        "creators": [
+            {
+                "creator_name": "Cooper, Owen R."
+            }, 
+            {
+                "creator_name": "Schultz, Martin G."
+            }, 
+            {
+                "creator_name": "Schr\u00f6der, Sabine"
+            }, 
+            {
+                "creator_name": "Chang, Kai-Lan"
+            }, 
+            {
+                "creator_name": "Gaudel, Audrey"
+            }, 
+            {
+                "creator_name": "Carbajal Ben\u00edtez, Gerardo"
+            }, 
+            {
+                "creator_name": "Cuevas-Agullo, Emilio"
+            }, 
+            {
+                "creator_name": "Fr\u00f6hlich, Marina"
+            }, 
+            {
+                "creator_name": "Galbally, Ian E."
+            }, 
+            {
+                "creator_name": "Kubistin, Dagmar"
+            }, 
+            {
+                "creator_name": "Lu, Xiao"
+            }, 
+            {
+                "creator_name": "McClure-Begley, Audra"
+            }, 
+            {
+                "creator_name": "Molloy, Suzie"
+            }, 
+            {
+                "creator_name": "N\u00e9d\u00e9lec, Philippe"
+            }, 
+            {
+                "creator_name": "O\u2019Brien, Jason"
+            }, 
+            {
+                "creator_name": "Oltmans, Samuel J."
+            }, 
+            {
+                "creator_name": "Petropavlovskikh, Irina"
+            }, 
+            {
+                "creator_name": "Ries, Ludwig"
+            }, 
+            {
+                "creator_name": "Senik, Irina"
+            }, 
+            {
+                "creator_name": "Sj\u00f6berg, Karin"
+            }, 
+            {
+                "creator_name": "Solberg, Sverre"
+            }, 
+            {
+                "creator_name": "Spain, T. Gerard"
+            }, 
+            {
+                "creator_name": "Spangl, Wolfgang"
+            }, 
+            {
+                "creator_name": "Steinbacher, Martin"
+            }, 
+            {
+                "creator_name": "Tarasick, David"
+            }, 
+            {
+                "creator_name": "Thouret, Valerie"
+            }, 
+            {
+                "creator_name": "Xu, Xiaobin"
+            }
+        ], 
+        "descriptions": [
+            {
+                "description": "Extracting globally representative trend information from lower tropospheric ozone observations is extremely difficult due to the highly variable distribution and interannual variability of ozone, and the ongoing shift of ozone precursor emissions from high latitudes to low latitudes.  Here we report surface ozone trends at 27 globally distributed remote locations (20 in the Northern Hemisphere, 7 in the Southern Hemisphere), focusing on continuous time series that extend from the present back to at least 1995.  While these sites are only representative of less than 25% of the global surface area, this analysis provides a range of regional long-term ozone trends for the evaluation of global chemistry-climate models. Trends are based on monthly mean ozone anomalies, and all sites have at least 20 years of data, which improves the likelihood that a robust trend value is due to changes in ozone precursor emissions and/or forced climate change rather than naturally occurring climate variability.  Since 1995, the Northern Hemisphere sites are nearly evenly split between positive and negative ozone trends, while 5 of 7 Southern Hemisphere sites have positive trends.  Positive trends are in the range of 0.5-2 ppbv decade-1, with ozone increasing at Mauna Loa by roughly 50% since the late 1950s.  Two high elevation Alpine sites, discussed by previous assessments, exhibit decreasing ozone trends in contrast to the positive trend observed by IAGOS commercial aircraft in the European lower free-troposphere.  The Alpine sites frequently sample polluted European boundary layer air, especially in summer, and can only be representative of lower free tropospheric ozone if the data are carefully filtered to avoid boundary layer air.  The highly variable positive and negative ozone trends at these 27 surface sites are not necessarily indicative of free tropospheric trends, which have been overwhelmingly positive since the mid-1990s, as shown by recent studies.", 
+                "description_type": "Abstract"
+            }, 
+            {
+                "description": "The data are formatted as csv files with variable header information. Each header line begins with # and contains key: value metadata elements. These data files were extracted from the TOAR database. A detailed description of the file format and the metadata elements can be found at: https://toar-data-portal.fz-juelich.de/docs/surfacedata/TOAR_file_format_v2.pdf (not yet implemented). Software tools for working with these data are available at https://jugit.fz-juelich.de/m.schultz/toar-public-utilities.", 
+                "description_type": "TechnicalInfo"
+            }
+        ], 
+        "disciplines": [
+            "3.2.4 \u2192 Chemistry \u2192 Atmospheric chemistry"
+        ], 
+        "keywords": [
+            "surface ozone; long-term trends; TOAR"
+        ], 
+        "language": "eng", 
+        "license": {
+            "license": "Creative Commons Attribution (CC-BY)", 
+            "license_uri": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "open_access": true, 
+        "owners": [
+            2
+        ], 
+        "publication_state": "published", 
+        "publisher": "The Tropospheric Ozone Assessment Report (TOAR) Data Centre, Research Centre J\u00fclich, J\u00fclich, Germany", 
+        "resource_types": [
+            {
+                "resource_type": "Data collection in supplement to research article", 
+                "resource_type_general": "Collection"
+            }
+        ], 
+        "titles": [
+            {
+                "title": "TOAR data collection of \"Multi-decadal surface ozone trends at globally distributed remote locations\""
+            }
+        ], 
+        "version": "v1.0"
+    }, 
+    "updated": "2020-01-24T13:22:04.312214+00:00"
+}

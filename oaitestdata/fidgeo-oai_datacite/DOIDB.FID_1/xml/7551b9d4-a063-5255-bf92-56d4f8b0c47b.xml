@@ -1,0 +1,83 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6363</identifier>
+    <datestamp>2018-10-25T09:08:06Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.001</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Corti, Giacomo</default:creatorName>
+              <default:givenName>Giacomo</default:givenName>
+              <default:familyName>Corti</default:familyName>
+              <default:affiliation>Consiglio Nazionale delle Ricerche, Istituto di Geoscienze e Georisorse, Florence, Italy</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Sordi, Riccardo</default:creatorName>
+              <default:givenName>Riccardo</default:givenName>
+              <default:familyName>Sordi</default:familyName>
+              <default:affiliation>Universit&#224; degli Studi di Firenze, Dipartimento di Scienze della Terra, Florence, Italy</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Cucci, Federica</default:creatorName>
+              <default:givenName>Federica</default:givenName>
+              <default:familyName>Cucci</default:familyName>
+              <default:affiliation>Universit&#224; degli Studi di Firenze, Dipartimento di Scienze della Terra, Florence, Italy</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="eng">Centrifuge models investigating the influence of transverse pre-existing weaknesses on continental rifting</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>analogue modelling</default:subject>
+            <default:subject>continental rifting</default:subject>
+            <default:subject>pre-existing structures</default:subject>
+            <default:subject>normal faulting</default:subject>
+            <default:subject>analogue models of geologic processes</default:subject>
+            <default:subject>multi-scale laboratories</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>analogue modelling results</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Tectonics Modelling Laboratory (IGG-CNR, Italy)</default:contributorName>
+              <default:affiliation>IGG-CNR, Florence, Italy</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:language>eng</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset">Dataset</default:resourceType>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1130/GES00863.1</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.tecto.2011.06.010</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.3390/ma10060635</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsDocumentedBy">10.1016/j.tecto.2018.02.011</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>1511988 Bytes</default:size>
+            <default:size>1 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/x-zip-compressed</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">We present the results of centrifuge experiments investigating the role of preexisting crustal discontinuity on continental rifting. Specifically, we reproduce inherited weaknesses, orthogonal to the rift trend and parallel to the extension direction, and analyze their influence on the evolution and architecture of extensional deformation in the inner part and at the margins of continental rift valleys. Four different models, with variable width of the pre-existing weakness are illustrated.<default:br/>
+         <default:br/>The models show a significant influence exerted by the pre-existing anisotropy on rifting: specifically, the inherited weakness inhibits the development of large boundary faults at rift margins, which are instead replaced by gentle monoclines dipping toward the rift axis. Axial faults are &#8220;captured&#8221; by the inherited anisotropy and rotate towards the pre-existing weakness, which therefore produces an unusual structural pattern also in the axial zone. This influence is dependent on the initial width of the pre-rift anisotropy and becomes negligible when its scaled width is 20 km or less.</default:description>
+          </default:descriptions>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

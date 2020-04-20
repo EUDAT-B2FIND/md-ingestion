@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2853",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2853"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2853",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "https://link.springer.com/chapter/10.1007/978-3-319-13647-9_6"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Kr\u00ed\u017e, Vincent",
+        "Hladk\u00e1, Barbora"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2853;2018-09-03T20:20:38Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Court Decisions Dataset;Kr\u00ed\u017e, Vincent;Hladk\u00e1, Barbora;named entities;annotation;corpus;We present the Czech Court Decisions Dataset (CCDD) -- a dataset of 300 manually annotated court decisions published by The Supreme Court of the Czech Republic and the Constitutional Court of the Czech Republic.;2014;corpus;http://hdl.handle.net/11234/1-2853;ces;https://link.springer.com/chapter/10.1007/978-3-319-13647-9_6;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://ufal.mff.cuni.cz/ccdd",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "facd916f-0e99-5462-ba0d-220003861c2c",
+    "notes": [
+        "We present the Czech Court Decisions Dataset (CCDD) -- a dataset of 300 manually annotated court decisions published by The Supreme Court of the Czech Republic and the Constitutional Court of the Czech Republic."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2853"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "named entities"
+        },
+        {
+            "name": "annotation"
+        },
+        {
+            "name": "corpus"
+        }
+    ],
+    "title": [
+        "Czech Court Decisions Dataset"
+    ],
+    "url": ""
+}

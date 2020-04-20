@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Franziska.Poepperl@kalkalpen.at"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0c163b83-26a9-50e6-913e-c2da188175a8",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(48N-48N,15E-14E)",
+    "author": [
+        "Franziska P\u00f6pperl"
+    ],
+    "fulltext": "33ea62e4-a7b1-435d-98e7-49d2e31cb3da;English;utf8;dataset;Franziska P\u00f6pperl;LTER Europe;Franziska.Poepperl@kalkalpen.at;pointOfContact;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;Kalkalpen National Park - Road network;2018-09-24;publication;urn:ltereurope:inspire::10334:18139;Kalkalpen National Park - Austria;Nationalpark Kalkalpen;documentDigital;GIS-layer of road network within the Kalkalpen National Park;completed;Franziska P\u00f6pperl;LTER Europe;Franziska.Poepperl@kalkalpen.at;pointOfContact;continual;Representative area of sampling: landscape scale Sampling frequency - sampling time span: single measurement Sampling frequency - minimum sampling unit: single measurement;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;infrastructure;LTER Controlled Vocabulary;The principal: Administration has granted the access and use permission: Free for access and use upon request;The principal: Research has granted the access and use permission: Free for access and use upon request;The principal: Public has granted the access and use permission: Free for access and use upon request;eng;environment;Area of nationl Park Kalkalpen, Austria;14.641664028168;14.099214076996;47.652177592975;47.874648383174;Representative area of sampling: landscape scale;UKST;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;None;2000-01-01;publication;See the referenced specification;Method description: test. Method URL: . Instrumentation:;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0c163b83-26a9-50e6-913e-c2da188175a8",
+    "notes": [
+        "GIS-layer of road network within the Kalkalpen National Park"
+    ],
+    "oai_identifier": [
+        "0c163b83-26a9-50e6-913e-c2da188175a8"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[14.641664028168,47.652177592975],[14.641664028168,47.874648383174],[14.099214076996,47.874648383174],[14.099214076996,47.652177592975],[14.641664028168,47.652177592975]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "infrastructure"
+        }
+    ],
+    "title": [
+        "Kalkalpen National Park - Road network"
+    ]
+}

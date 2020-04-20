@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Pigman, G.W."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 206 KB)",
+        "text/plain"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1714",
+    "MetadataAccess": [
+        "oai:ota:oucs:1714"
+    ],
+    "PublicationTimestamp": "1530-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1530"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Surrey, Henry Howard, Earl of, 1517?-1547"
+    ],
+    "fulltext": "oai:ota:oucs:1714;2018-05-08T14:08:14Z;http://ota.ox.ac.uk/headers/1714.xml;Poems / Henry Howard, Earl of Surrey;Surrey, Henry Howard, Earl of, 1517?-1547;1530-1547;text_and_corpus_linguistics;Love poetry, English -- 16th century;Oxford Text Archive, University of Oxford;Pigman, G.W.;text/plain;(1 file : ca. 206 KB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1e70f3aa-82fc-581d-b29d-6de13f4058aa",
+    "oai_identifier": [
+        "oai:ota:oucs:1714"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Love poetry"
+        },
+        {
+            "name": "English -- th century"
+        }
+    ],
+    "title": [
+        "Poems / Henry Howard, Earl of Surrey"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1714.xml"
+}

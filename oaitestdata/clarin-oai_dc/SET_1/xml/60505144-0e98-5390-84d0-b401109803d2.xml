@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/301</identifier>
+    <datestamp>2016-06-07T05:19:43Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Liner2.5 model Events</dc:title>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:subject>information extraction</dc:subject>
+      <dc:subject>events</dc:subject>
+      <dc:subject>event mentions</dc:subject>
+      <dc:description>A model for Liner2 to recognize event mentions.</dc:description>
+      <dc:date>2016-04-25</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/301</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

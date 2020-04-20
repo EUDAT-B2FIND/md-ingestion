@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f30f4d04486111e2a2aa782bcb07413522a84532f1d443ffb62c5fcf3c59545a",
+    "MetadataAccess": [
+        "f30f4d04486111e2a2aa782bcb07413522a84532f1d443ffb62c5fcf3c59545a"
+    ],
+    "PublicationTimestamp": "2013-01-21T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "f30f4d04486111e2a2aa782bcb07413522a84532f1d443ffb62c5fcf3c59545a;2019-02-27T12:09:25Z;corpus;corpus:text;EUROPARL Corpus\nParallel Corpora: Portuguese-English\n;The EUROPARL Corpus (subpart Portuguese-English of the parallel corpora), available at http://www.statmt.org/europarl/, was extracted from the proceedings of the European Parliament (Koehn, 2005). It contains transcriptions of sessions dating back from 1996 to 2011, in a total of approximately 58,324,562 tokens words of European Portuguese (L1) and 49,216,896 tokens of English (translation).;2013-01-21",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5df845df-5d00-541b-8422-02e139a349f5",
+    "notes": [
+        "The EUROPARL Corpus (subpart Portuguese-English of the parallel corpora), available at http://www.statmt.org/europarl/, was extracted from the proceedings of the European Parliament (Koehn, 2005). It contains transcriptions of sessions dating back from 1996 to 2011, in a total of approximately 58,324,562 tokens words of European Portuguese (L1) and 49,216,896 tokens of English (translation)."
+    ],
+    "oai_identifier": [
+        "f30f4d04486111e2a2aa782bcb07413522a84532f1d443ffb62c5fcf3c59545a"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "EUROPARL Corpus\nParallel Corpora: Portuguese-English\n"
+    ]
+}

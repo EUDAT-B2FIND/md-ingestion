@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "Abu-MaTran project"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/xml",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English",
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1049",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1049"
+    ],
+    "PID": "http://hdl.handle.net/11356/1049",
+    "PublicationTimestamp": "2016-01-28T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Abu-MaTran project"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/324414"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN.SI User Licence for Internet Corpora",
+        "ACA",
+        "http://www.clarin.si/info/wp-content/uploads/2016/01/CLARIN.SI-WAC-2016-01.pdf"
+    ],
+    "author": [
+        "Espl\u00e0-Gomis, Miquel",
+        "Papavassiliou, Vassilis",
+        "Way, Andy",
+        "Ljube\u0161i\u0107, Nikola",
+        "Toral, Antonio",
+        "Prokopidis, Prokopis",
+        "Klubi\u010dka, Filip",
+        "Rubino, Raphael"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1049;2018-10-29T12:15:54Z;hdl_11356_1023;hdl_11356_1024;Tourism English-Croatian Parallel Corpus 2.0;Toral, Antonio;Espl\u00e0-Gomis, Miquel;Klubi\u010dka, Filip;Ljube\u0161i\u0107, Nikola;Papavassiliou, Vassilis;Prokopidis, Prokopis;Rubino, Raphael;Way, Andy;parallel corpus;tourism;multilingual;Sentence aligned parallel corpus built by automatically crawling 25 websites from the tourism domain.;2016-01-28;corpus;http://hdl.handle.net/11356/1049;eng;hrv;info:eu-repo/grantAgreement/EC/FP7/324414;CLARIN.SI User Licence for Internet Corpora;ACA;http://www.clarin.si/info/wp-content/uploads/2016/01/CLARIN.SI-WAC-2016-01.pdf;text/xml;text/plain; charset=utf-8;downloadable_files_count: 1;Abu-MaTran project;http://www.abumatran.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8ad034ff-3af5-56a4-bf8e-212c8a405d14",
+    "notes": [
+        "Sentence aligned parallel corpus built by automatically crawling 25 websites from the tourism domain."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1049"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "tourism"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Tourism English-Croatian Parallel Corpus 2.0"
+    ],
+    "url": ""
+}

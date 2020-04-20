@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0024/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0024/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0024/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-05-29T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Jablonka, Kevin Maik",
+        "Ongari, Daniele ",
+        "Smit, Berend"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0024/v1;2019-06-12Z;DOI;Dataset;Smit, Berend;Jablonka, Kevin Maik;Ongari, Daniele ;Applicability of tail-corrections in the molecular simulations of porous materials;Materials Cloud;2019-05-29;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;MARVEL;zeolites;GCMC;Metal-Organic frameworks;tail-corrections;Covalent-Organic frameworks;doi:10.24435/materialscloud:2019.0024/v1;https://archive.materialscloud.org/2019.0024/v1;en;Molecular simulations with periodic boundary conditions require to define a certain cutoff distance   beyond which pairwise dispersion interactions are neglected. For the simulation of homogeneous phases it is well-established to use tail-corrections, that can remedy this truncation of the potential. These corrections are built under the assumption that beyond  the cutoff the radial distribution function is equal to one. In this work we shed some light on the discussion whether or not tail corrections should be used in the  modelling of heterogeneous systems. We show that for the adsorption of gasses in a diverse set  nanoporous crystalline materials (zeolites, Covalent Organic Frameworks (COFs), and Metal Organic Frameworks (MOFs)), tail-corrections are an appropriate choice with which the results are much less sensitive to the details of the truncation. ",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "b2c72591-4587-5bef-998e-30c14be9337f",
+    "notes": [
+        "Molecular simulations with periodic boundary conditions require to define a certain cutoff distance   beyond which pairwise dispersion interactions are neglected. For the simulation of homogeneous phases it is well-established to use tail-corrections, that can remedy this truncation of the potential. These corrections are built under the assumption that beyond  the cutoff the radial distribution function is equal to one. In this work we shed some light on the discussion whether or not tail corrections should be used in the  modelling of heterogeneous systems. We show that for the adsorption of gasses in a diverse set  nanoporous crystalline materials (zeolites, Covalent Organic Frameworks (COFs), and Metal Organic Frameworks (MOFs)), tail-corrections are an appropriate choice with which the results are much less sensitive to the details of the truncation. "
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0024/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "MARVEL"
+        },
+        {
+            "name": "zeolites"
+        },
+        {
+            "name": "GCMC"
+        },
+        {
+            "name": "Metal-Organic frameworks"
+        },
+        {
+            "name": "tail-corrections"
+        },
+        {
+            "name": "Covalent-Organic frameworks"
+        }
+    ],
+    "title": [
+        "Applicability of tail-corrections in the molecular simulations of porous materials"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0024/v1"
+}

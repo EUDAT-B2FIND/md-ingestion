@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5198",
+    "MetadataAccess": [
+        "oai:ota:oucs:5198"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Boreman, Thomas, fl. 1730-1743."
+    ],
+    "fulltext": "oai:ota:oucs:5198;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5198.xml;A description of a great variety of animals and vegetables: viz. beasts, birds, fishes, insects, plants, fruits, and flowers. Extracted from the most considerable writers of natural history; ... Being a supplement to A description of three hundred animals. Illustrated with above ninety copper plates, ...;Boreman, Thomas, fl. 1730-1743.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ebe9a007-7b95-53e9-9ee0-ba119525d86b",
+    "oai_identifier": [
+        "oai:ota:oucs:5198"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A description of a great variety of animals and vegetables: viz. beasts, birds, fishes, insects, plants, fruits, and flowers. Extracted from the most considerable writers of natural history; ... Being a supplement to A description of three hundred animals. Illustrated with above ninety copper plates, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5198.xml"
+}

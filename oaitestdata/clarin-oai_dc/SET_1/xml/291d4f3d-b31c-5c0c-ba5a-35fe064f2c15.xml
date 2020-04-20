@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.spraakbanken.gu.se:10794/71</identifier>
+    <datestamp>2017-10-31T15:42:22Z</datestamp>
+    <setSpec>hdl_10794_1</setSpec>
+    <setSpec>hdl_10794_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">ASPAC &#8211; Swedish-Slovene (2017-10-16)</dc:title>
+      <dc:title xml:lang="sv">ASPAC &#8211; svenska-slovenska (2017-10-16)</dc:title>
+      <dc:creator>n/a, n/a</dc:creator>
+      <dc:subject>ASPAC</dc:subject>
+      <dc:subject>Parallel</dc:subject>
+      <dc:description xml:lang="en">Part of The Amsterdam Slavic Parallel Aligned Corpus. The material is sentence scrambled.</dc:description>
+      <dc:description xml:lang="sv">Del av The Amsterdam Slavic Parallel Aligned Corpus. Materialet &#228;r meningsomkastat.</dc:description>
+      <dc:date>2015-04-16</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/10794/71</dc:identifier>
+      <dc:language>swe</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Spr&#229;kbanken, University of Gothenburg</dc:publisher>
+      <dc:source>https://spraakbanken.gu.se/swe/resurs/aspacsvsl</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

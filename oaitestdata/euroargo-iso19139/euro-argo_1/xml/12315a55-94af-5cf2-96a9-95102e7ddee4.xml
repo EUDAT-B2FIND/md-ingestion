@@ -1,0 +1,1393 @@
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://www.isotc211.org/2005/gmx/gmx.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>3df904de-e47d-4bf9-85a0-7c0942aff8b6</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode"/>
+      </gmd:characterSet>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="series"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString/>
+          </gmd:individualName>
+          <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Ifremer</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Ifremer</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Ifremer</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:organisationName>
+          <gmd:positionName gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString/>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:voice>
+                  <gmd:facsimile gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString/>
+                  </gmd:deliveryPoint>
+                  <gmd:city gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:city>
+                  <gmd:administrativeArea gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:postalCode>
+                  <gmd:country gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString/>
+                  </gmd:country>
+                  <gmd:electronicMailAddress xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>codac@ifremer.fr</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">codac@ifremer.fr</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR">codac@ifremer.fr</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode"/>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:DateTime>2018-06-06T10:07:28</gco:DateTime>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName>
+        <gco:CharacterString>ISO 19115:2003/19139 - SEXTANT</gco:CharacterString>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion>
+        <gco:CharacterString>1.0</gco:CharacterString>
+      </gmd:metadataStandardVersion>
+      <gmd:locale xmlns:gn="http://www.fao.org/geonetwork" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <gmd:PT_Locale id="FR">
+          <gmd:languageCode>
+            <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre"/>
+          </gmd:languageCode>
+          <gmd:characterEncoding>
+            <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+          </gmd:characterEncoding>
+        </gmd:PT_Locale>
+      </gmd:locale>
+      <gmd:locale>
+        <gmd:PT_Locale id="EN">
+          <gmd:languageCode>
+            <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+          </gmd:languageCode>
+          <gmd:characterEncoding>
+            <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+          </gmd:characterEncoding>
+        </gmd:PT_Locale>
+      </gmd:locale>
+      <gmd:spatialRepresentationInfo>
+        <gmd:MD_VectorSpatialRepresentation>
+          <gmd:topologyLevel>
+            <gmd:MD_TopologyLevelCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly"/>
+          </gmd:topologyLevel>
+          <gmd:geometricObjects>
+            <gmd:MD_GeometricObjects>
+              <gmd:geometricObjectType>
+                <gmd:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="point"/>
+              </gmd:geometricObjectType>
+              <gmd:geometricObjectCount>
+                <gco:Integer>1000000000</gco:Integer>
+              </gmd:geometricObjectCount>
+            </gmd:MD_GeometricObjects>
+          </gmd:geometricObjects>
+        </gmd:MD_VectorSpatialRepresentation>
+      </gmd:spatialRepresentationInfo>
+      <gmd:referenceSystemInfo>
+        <gmd:MD_ReferenceSystem>
+          <gmd:referenceSystemIdentifier>
+            <gmd:RS_Identifier>
+              <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>WGS 84 (EPSG:4326)</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">WGS 84 (EPSG:4326)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:code>
+              <gmd:codeSpace>
+                <gco:CharacterString>EPSG</gco:CharacterString>
+              </gmd:codeSpace>
+              <gmd:version>
+                <gco:CharacterString>7.9</gco:CharacterString>
+              </gmd:version>
+            </gmd:RS_Identifier>
+          </gmd:referenceSystemIdentifier>
+        </gmd:MD_ReferenceSystem>
+      </gmd:referenceSystemInfo>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Argo : Donn&#233;es et m&#233;tadonn&#233;es du Global Data Assembly Centre (Argo GDAC)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2000-09-12</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeListValue="publication" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>1282383d-9b35-4eaa-a9d6-4b0c24c0cfc9</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.
+
+The array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. Some floats provide additional bio-geo parameters such as oxygen or chlorophyll.
+
+All data collected by Argo floats are publically available in near real-time via the Global Data Assembly Centers (GDACs) in Brest (France) and Monterey (California) after an automated quality control (QC), and in scientifically quality controlled form, delayed mode data, via the GDACs within six months of collection.</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.
+
+The array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. Some floats provide additional bio-geo parameters such as oxygen or chlorophyll.
+
+All data collected by Argo floats are publically available in near real-time via the Global Data Assembly Centers (GDACs) in Brest (France) and Monterey (California) after an automated quality control (QC), and in scientifically quality controlled form, delayed mode data, via the GDACs within six months of collection.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Argo est un ensemble mondial de 3 000 flotteurs &#224; profil d&#233;rivant libre qui mesurent la temp&#233;rature et la salinit&#233; des 2000 premier m de la colonne d'eau. Cela permet, pour la premi&#232;re fois, une surveillance continue de la temp&#233;rature, de la salinit&#233; et de la vitesse des eaux sup&#233;rieures, toutes les donn&#233;es &#233;tant relay&#233;es et rendues publiques dans les heures qui suivent la collecte.
+
+Le tableau fournit 100 000 profils de temp&#233;rature / salinit&#233; et des mesures de vitesse par an r&#233;parties sur les oc&#233;ans globaux &#224; un espacement moyen de 3 degr&#233;s. Certains flotteurs fournissent des param&#232;tres bio-g&#233;ochimiques suppl&#233;mentaires tels que l'oxyg&#232;ne ou la chlorophylle. 
+
+Toutes les donn&#233;es recueillies par les flotteurs Argo sont publiquement disponibles en temps quasi r&#233;el via Global Data Assembly Centers (GDAC) &#224; Brest (France) et &#224; Monterey (Californie) apr&#232;s un contr&#244;le de qualit&#233; automatis&#233; (QC) et sous une forme scientifiquement de contr&#244;le qualit&#233;, temps diff&#233;r&#233;e, via les GDAC dans les six mois suivant la collecte.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:abstract>
+          <gmd:purpose gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString/>
+          </gmd:purpose>
+          <gmd:credit xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Ifremer</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Ifremer</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Ifremer</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:credit>
+          <gmd:status>
+            <gmd:MD_ProgressCode codeListValue="onGoing" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode"/>
+          </gmd:status>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString/>
+              </gmd:individualName>
+              <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Argo</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Argo</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Argo</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:organisationName>
+              <gmd:positionName gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString/>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:voice>
+                      <gmd:facsimile gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString/>
+                      </gmd:deliveryPoint>
+                      <gmd:city gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:city>
+                      <gmd:administrativeArea gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:postalCode>
+                      <gmd:country gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString/>
+                      </gmd:country>
+                      <gmd:electronicMailAddress xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString>codac@ifremer.fr</gco:CharacterString>
+                        <gmd:PT_FreeText>
+                          <gmd:textGroup>
+                            <gmd:LocalisedCharacterString locale="#EN">codac@ifremer.fr</gmd:LocalisedCharacterString>
+                          </gmd:textGroup>
+                          <gmd:textGroup>
+                            <gmd:LocalisedCharacterString locale="#FR">codac@ifremer.fr</gmd:LocalisedCharacterString>
+                          </gmd:textGroup>
+                        </gmd:PT_FreeText>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString/>
+              </gmd:individualName>
+              <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Ifremer</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Ifremer</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Ifremer</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:organisationName>
+              <gmd:positionName gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString/>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:voice>
+                      <gmd:facsimile gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString/>
+                      </gmd:deliveryPoint>
+                      <gmd:city gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:city>
+                      <gmd:administrativeArea gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:postalCode>
+                      <gmd:country gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString/>
+                      </gmd:country>
+                      <gmd:electronicMailAddress xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString>codac@ifremer.fr</gco:CharacterString>
+                        <gmd:PT_FreeText>
+                          <gmd:textGroup>
+                            <gmd:LocalisedCharacterString locale="#EN">codac@ifremer.fr</gmd:LocalisedCharacterString>
+                          </gmd:textGroup>
+                          <gmd:textGroup>
+                            <gmd:LocalisedCharacterString locale="#FR">codac@ifremer.fr</gmd:LocalisedCharacterString>
+                          </gmd:textGroup>
+                        </gmd:PT_FreeText>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="publisher"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:resourceMaintenance>
+            <gmd:MD_MaintenanceInformation>
+              <gmd:maintenanceAndUpdateFrequency>
+                <gmd:MD_MaintenanceFrequencyCode codeListValue="asNeeded" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"/>
+              </gmd:maintenanceAndUpdateFrequency>
+            </gmd:MD_MaintenanceInformation>
+          </gmd:resourceMaintenance>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>https://sextant.ifremer.fr/geonetwork/srv/api/records/3df904de-e47d-4bf9-85a0-7c0942aff8b6/attachments/argo-float.jpg</gco:CharacterString>
+              </gmd:fileName>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>float</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">float</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Argo</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Argo</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>global ocean observing system</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">global ocean observing system</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>ocean circulation</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">ocean circulation</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>in-situ</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">in-situ</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>ocean pressure</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">ocean pressure</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>sea water salinity</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">sea water salinity</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>sea water temperature</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">sea water temperature</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>multi-year</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">multi-year</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>weather climate and seasonal observation</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">weather climate and seasonal observation</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>global-ocean</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">global-ocean</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Environmental monitoring facilities</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Installations de suivi environnemental</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Environmental monitoring facilities</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">GEMET - INSPIRE themes, version 1.0</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2009-09-22</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://sextant.ifremer.fr/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>CDS-IS-CORIOLIS</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">CDS-IS-CORIOLIS</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">CDS-IS-CORIOLIS</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Centre de donn&#233;es - ODATIS</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Centre de donn&#233;es - ODATIS</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-10-04</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://sextant.ifremer.fr/geonetwork/srv/eng/thesaurus.download?ref=local.theme.odatis_centre_donnees">geonetwork.thesaurus.local.theme.odatis_centre_donnees</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Marine Biogeochemistry/Nutrients</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Biog&#233;ochimie marine/Nutriments (sels nutritifs)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Marine Biogeochemistry/Nutrients</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Marine Biogeochemistry/Dissolved oxygen</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Biog&#233;ochimie marine/Oxyg&#232;ne dissous</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Marine Biogeochemistry/Dissolved oxygen</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Marine Biology/Fluorescence - Chlorophyll a</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Biologie marine/Fluorescence - Chlorophylle</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Marine Biology/Fluorescence - Chlorophyll a</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Physical Oceanography/Optical parameters</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Physique de l'Oc&#233;an/Param&#232;tres optiques</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Physical Oceanography/Optical parameters</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Physical Oceanography/Salinity</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Physique de l'Oc&#233;an/Salinit&#233;</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Physical Oceanography/Salinity</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Marine Biogeochemistry/CDOM</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Biog&#233;ochimie marine/CDOM</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Marine Biogeochemistry/CDOM</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Physical Oceanography/Temperature</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Physique de l'Oc&#233;an/Temp&#233;rature</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Physical Oceanography/Temperature</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>/Physical Oceanography/Turbidity</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">/Physique de l'Oc&#233;an/Turbidit&#233;</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">/Physical Oceanography/Turbidity</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Variables Odatis</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Variables Odatis</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-10-17</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://sextant.ifremer.fr/geonetwork/srv/eng/thesaurus.download?ref=local.theme.odatis_variables">geonetwork.thesaurus.local.theme.odatis_variables</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString/>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Type de jeux de donn&#233;e - ODATIS</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Type de jeux de donn&#233;e - ODATIS</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-09-07</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://sextant.ifremer.fr/geonetwork/srv/eng/thesaurus.download?ref=local.theme.type_jeux_donnee">geonetwork.thesaurus.local.theme.type_jeux_donnee</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Operational oceanography</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Oc&#233;anographie op&#233;rationnelle</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Operational oceanography</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Observation system for research</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Dispositifs d&#8217;observation pour la recherche</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Observation system for research</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Th&#232;matiques - ODATIS</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Th&#232;matiques - ODATIS</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-10-02</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://sextant.ifremer.fr/geonetwork/srv/eng/thesaurus.download?ref=local.theme.odatis_thematiques">geonetwork.thesaurus.local.theme.odatis_thematiques</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Networks</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Networks</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Networks</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>AtlantOS Element</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">AtlantOS Element</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-11-08</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://sextant.ifremer.fr/geonetwork/srv/eng/thesaurus.download?ref=local.theme.atlantos_element">geonetwork.thesaurus.local.theme.atlantos_element</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Nutrients</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR"/>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Nutrients</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Currents</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR"/>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Currents</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Chlorophyll-a and fluorescence</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR"/>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Chlorophyll-a and fluorescence</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Salinity</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR"/>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Salinity</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Temperature</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR"/>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Temperature</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Oxygen</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR"/>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Oxygen</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Bottom depth</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR"/>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Bottom depth</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="parameter"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>AtlantOS Essential Variables</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">AtlantOS Essential Variables</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-02-16</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://sextant.ifremer.fr/geonetwork/srv/eng/thesaurus.download?ref=external.parameter.NVS.A05">geonetwork.thesaurus.external.parameter.NVS.A05</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints>
+            <gmd:MD_LegalConstraints>
+              <gmd:useLimitation xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>A user should acknowledge use of Argo data in all publications and products where such data are used, preferably with the following standard sentence:"These data were collected and made freely available by the international Argo project and the national programs that contribute to it."</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">A user should acknowledge use of Argo data in all publications and products where such data are used, preferably with the following standard sentence:"These data were collected and made freely available by the international Argo project and the national programs that contribute to it."</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">A user should acknowledge use of Argo data in all publications and products where such data are used, preferably with the following standard sentence:"These data were collected and made freely available by the international Argo project and the national programs that contribute to it."</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:useLimitation>
+              <gmd:accessConstraints>
+                <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions"/>
+              </gmd:accessConstraints>
+              <gmd:useConstraints>
+                <gmd:MD_RestrictionCode codeListValue="" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode"/>
+              </gmd:useConstraints>
+              <gmd:otherConstraints xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>No limitations on public access</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">No limitations on public access</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">No limitations on public access</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:otherConstraints>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:resourceConstraints>
+            <gmd:MD_Constraints>
+              <gmd:useLimitation xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>A user of Argo data is expected to read and understand this manual and the documentation about the data contained in the "attributes" of the NetCDF data files, as these contain essential information about data quality and accuracy.</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">A user of Argo data is expected to read and understand this manual and the documentation about the data contained in the "attributes" of the NetCDF data files, as these contain essential information about data quality and accuracy.</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:useLimitation>
+            </gmd:MD_Constraints>
+          </gmd:resourceConstraints>
+          <gmd:spatialRepresentationType>
+            <gmd:MD_SpatialRepresentationTypeCode codeListValue="vector" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode"/>
+          </gmd:spatialRepresentationType>
+          <gmd:spatialResolution>
+            <gmd:MD_Resolution>
+              <gmd:equivalentScale>
+                <gmd:MD_RepresentativeFraction>
+                  <gmd:denominator>
+                    <gco:Integer>1000000</gco:Integer>
+                  </gmd:denominator>
+                </gmd:MD_RepresentativeFraction>
+              </gmd:equivalentScale>
+            </gmd:MD_Resolution>
+          </gmd:spatialResolution>
+          <gmd:language>
+            <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+          </gmd:language>
+          <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode"/>
+          </gmd:characterSet>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>oceans</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent/>
+          </gmd:extent>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal>-180</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal>180</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal>-90</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal>90</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+              <gmd:temporalElement xmlns:gn="http://www.fao.org/geonetwork" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="d152532026e1245a1052958">
+                      <gml:beginPosition>1995</gml:beginPosition>
+                      <gml:endPosition indeterminatePosition="now"/>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+          <gmd:supplementalInformation gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString/>
+          </gmd:supplementalInformation>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:distributionInfo xmlns:che="http://www.geocat.ch/2008/che">
+        <gmd:MD_Distribution>
+          <gmd:distributionFormat>
+            <gmd:MD_Format>
+              <gmd:name gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString/>
+              </gmd:name>
+              <gmd:version gco:nilReason="missing">
+                <gco:CharacterString/>
+              </gmd:version>
+            </gmd:MD_Format>
+          </gmd:distributionFormat>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.coriolis.eu.org/</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Coriolis Web Site</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Coriolis Web Site</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString/>
+                  </gmd:description>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue=""/>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://doi.org/10.17882/42182</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--metadata-URL</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Argo GDAC snapshots access</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Argo GDAC snapshots access</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Argo GDAC snapshots access</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Argo GDAC snapshots access</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.jcommops.org/board?t=Argo&amp;modules=%5B%7B"id":48%7D%5D</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Web app avec carte interactive Flotteurs Argo op&#233;rationnels</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Web app avec carte interactive Flotteurs Argo op&#233;rationnels</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>JCOMMOPS: Web app tous les flotteurs op&#233;rationnels</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">JCOMMOPS: Web app tous les flotteurs op&#233;rationnels</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.jcommops.org/board?t=Argo&amp;qparams=%7B"lastLocOnly"%3A"on"%2C"allNotGdacs"%3A"1"%2C"networks"%3A"1"%2C"status"%3A"6"%7D&amp;modules=%5B%7B"id":48%7D%5D</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Web app avec carte interactive Flotteurs BGC-Argo op&#233;rationnels</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Web app avec carte interactive Flotteurs BGC-Argo op&#233;rationnels</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>JCOMMOPS: Web app tous les flotteurs BGC-Argo op&#233;rationnels</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">JCOMMOPS: Web app tous les flotteurs BGC-Argo op&#233;rationnels</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.jcommops.org/maps/interactive_new/?theme=Argo</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString/>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>JCOMMOPS: Argo Op&#233;rationnel</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">JCOMMOPS: Argo Op&#233;rationnel</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.jcommops.org/maps/interactive_new/?theme=Argo&amp;ptfStatuses=%5B6%5D&amp;ptfNetworks=%5B%22Argo%20BioGeoChemical%22%5D</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Carte interactive seule (tout BGC-Argo op&#233;rationnel)</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Carte interactive seule (tout BGC-Argo op&#233;rationnel)</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>JCOMMOPS: BGC-Argo op&#233;rationnel</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">JCOMMOPS: BGC-Argo op&#233;rationnel</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://map.argo-france.fr/</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Carte Argo France</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Carte Argo France</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#FR"/>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString/>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>ftp://ftp.ifremer.fr/ifremer/argo/</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:DOWNLOAD-1.0-link--download</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>FTP ARGO</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">FTP ARGO</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>FTP ARGO</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">FTP ARGO</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://gis.jcommops.org/arcgis/services/Argo/ARGOLocations/MapServer/WFSServer?</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Argo_ARGOLocations:Latest_Locations</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Argo_ARGOLocations:Latest_Locations</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:name>
+                  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Argo Latest Locations</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Argo Latest Locations</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+      <gmd:dataQualityInfo>
+        <gmd:DQ_DataQuality>
+          <gmd:scope>
+            <gmd:DQ_Scope>
+              <gmd:level>
+                <gmd:MD_ScopeCode codeListValue="dataset" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode"/>
+              </gmd:level>
+            </gmd:DQ_Scope>
+          </gmd:scope>
+          <gmd:report>
+            <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+              <gmd:result>
+                <gmd:DQ_ConformanceResult>
+                  <gmd:specification>
+                    <gmd:CI_Citation>
+                      <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString>Inspire specifications</gco:CharacterString>
+                        <gmd:PT_FreeText>
+                          <gmd:textGroup>
+                            <gmd:LocalisedCharacterString locale="#EN">Inspire specifications</gmd:LocalisedCharacterString>
+                          </gmd:textGroup>
+                        </gmd:PT_FreeText>
+                      </gmd:title>
+                      <gmd:date>
+                        <gmd:CI_Date>
+                          <gmd:date>
+                            <gco:Date>2012-01-16</gco:Date>
+                          </gmd:date>
+                          <gmd:dateType>
+                            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
+                          </gmd:dateType>
+                        </gmd:CI_Date>
+                      </gmd:date>
+                    </gmd:CI_Citation>
+                  </gmd:specification>
+                  <gmd:explanation xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Non &#233;valu&#233;</gco:CharacterString>
+                    <gmd:PT_FreeText>
+                      <gmd:textGroup>
+                        <gmd:LocalisedCharacterString locale="#EN">Non &#233;valu&#233;</gmd:LocalisedCharacterString>
+                      </gmd:textGroup>
+                    </gmd:PT_FreeText>
+                  </gmd:explanation>
+                  <gmd:pass>
+                    <gco:Boolean>false</gco:Boolean>
+                  </gmd:pass>
+                </gmd:DQ_ConformanceResult>
+              </gmd:result>
+            </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          </gmd:report>
+          <gmd:lineage>
+            <gmd:LI_Lineage>
+              <gmd:statement xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>http://www.argodatamgt.org/Documentation</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">http://www.argodatamgt.org/Documentation</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">http://www.argodatamgt.org/Documentation</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:statement>
+            </gmd:LI_Lineage>
+          </gmd:lineage>
+        </gmd:DQ_DataQuality>
+      </gmd:dataQualityInfo>
+    </gmd:MD_Metadata>

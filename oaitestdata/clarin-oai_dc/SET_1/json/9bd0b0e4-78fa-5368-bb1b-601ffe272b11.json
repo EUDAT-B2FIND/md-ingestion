@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84752",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84752"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D3B-8",
+    "PublicationTimestamp": "1652-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1652"
+    ],
+    "Publisher": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/84752",
+        "oai:jbc.bj.uj.edu.pl:publication:91361"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Borkowski, Modest (16..-post 1657)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84752;2019-03-01T17:46:52Z;Complement ozdoby Starozytney Pilawie Przez [...] Mikolaia Z Potoka Potockiego Kasztelana Krakowskiego Y Hetmana Wielkiego Koronnego [...];Borkowski, Modest (16..-post 1657);starodruki 17\u00a0w.;Potocki, Piotr (-1657). Adr. ded.;Drukarnia Jezuit\u00f3w;[1652];starodruk;application/xml;clarind-uds:poldilemma-84752;hdl:11858/00-246C-0000-0023-8D3B-8;Biblioteka Jagiello\u0144ska, BJ St. Dr. 18385 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/84752;oai:jbc.bj.uj.edu.pl:publication:91361;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9bd0b0e4-78fa-5368-bb1b-601ffe272b11",
+    "notes": [
+        "Potocki, Piotr (-1657). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-84752"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Complement ozdoby Starozytney Pilawie Przez [...] Mikolaia Z Potoka Potockiego Kasztelana Krakowskiego Y Hetmana Wielkiego Koronnego [...]"
+    ],
+    "url": ""
+}

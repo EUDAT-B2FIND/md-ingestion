@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/10283540</identifier>
+    <datestamp>2020-01-21T15:46:56Z</datestamp>
+    <setSpec>category_185</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_3</setSpec>
+    <setSpec>month_year_01_2020</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>RDARI International Survey of Institutional Research Data Services 2019</dc:title>
+      <dc:creator>James A J Wilson (6498191)</dc:creator>
+      <dc:creator>Ville Tenhunen (8297033)</dc:creator>
+      <dc:creator>Keith Russell (8297037)</dc:creator>
+      <dc:subject>Library and Information Studies</dc:subject>
+      <dc:subject>research data management</dc:subject>
+      <dc:subject>survey data</dc:subject>
+      <dc:subject>Research Data Alliance (RDA)</dc:subject>
+      <dc:description>&lt;div&gt;This is the complete set of results from the survey of institutional research data management services conducted by the Research Data Architectures for Research Institutions (RDARI) Interest Group of the Research Data Alliance (RDA). The survey was conducted between July and November 2019. The dataset consists of 82 responses, deduplicated and with email addresses redacted where explicit consent to publish was not granted.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The survey results are provided in two formats: as an Excel file, and as comma-separated values. The survey questions and answer formats are provided both in the Excel file and the accompanying readme.txt file.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The RDARI International Survey of Institutional Research Data Services (2019) was intended to capture the contemporary state of research data management service provision in research institutions and in so doing establish grounds for benchmarking between institutions. In addition, it was intended to facilitate and encourage the exchange of useful information between institutions to help RDM service providers learn from each other's experiences. Besides questions relating to the scale and nature of each institution, the survey gathered data relating to technologies, governance, resourcing, costs models, uptake, and the perceived success (or otherwise) of a range of research data management services.&lt;/div&gt;</dc:description>
+      <dc:date>2020-01-21T15:46:56Z</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:identifier>10.5522/04/10283540.v1</dc:identifier>
+      <dc:relation>https://figshare.com/articles/RDARI_International_Survey_of_Institutional_Research_Data_Services_2019/10283540</dc:relation>
+      <dc:rights>CC0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

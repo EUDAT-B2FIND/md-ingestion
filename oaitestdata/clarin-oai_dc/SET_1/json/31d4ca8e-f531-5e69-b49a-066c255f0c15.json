@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Flannagan, Roy",
+        "Burnard, Lou",
+        "Corns, Thomas N."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 219 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2228",
+    "MetadataAccess": [
+        "oai:ota:oucs:2228"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Milton, John, 1608-1674"
+    ],
+    "fulltext": "oai:ota:oucs:2228;2018-10-16T09:05:04Z;http://ota.ox.ac.uk/headers/2228.xml;Paradise regained, and, Samson Agonistes [1671] / John Milton;Milton, John, 1608-1674;text_and_corpus_linguistics;Epic poetry, English -- 17th century;eng;Oxford Text Archive, University of Oxford;Corns, Thomas N.;Flannagan, Roy;Burnard, Lou;text/sgml;(1 file : ca. 219 KB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "31d4ca8e-f531-5e69-b49a-066c255f0c15",
+    "oai_identifier": [
+        "oai:ota:oucs:2228"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Epic poetry"
+        },
+        {
+            "name": "English -- th century"
+        }
+    ],
+    "title": [
+        "Paradise regained, and, Samson Agonistes [1671] / John Milton"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2228.xml"
+}

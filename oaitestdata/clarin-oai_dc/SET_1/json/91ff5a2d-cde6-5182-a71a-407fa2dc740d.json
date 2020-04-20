@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/86",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/86"
+    ],
+    "PID": "http://hdl.handle.net/10794/86",
+    "PublicationTimestamp": "2015-04-28T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/86;2017-10-25T14:51:16Z;hdl_10794_1;hdl_10794_2;Swedish Bible 1917 (2015-05-19);Bibeln 1917 (2015-05-19);n/a, n/a;Swedish;Bible;Swedish Bible 1917.;Svenska bibeln 1917.;2015-04-28;corpus;http://hdl.handle.net/10794/86;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/bibel1917",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "91ff5a2d-cde6-5182-a71a-407fa2dc740d",
+    "notes": [
+        "Swedish Bible 1917.",
+        "Svenska bibeln 1917."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/86"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Bible"
+        }
+    ],
+    "title": [
+        "Swedish Bible 1917 (2015-05-19)",
+        "Bibeln 1917 (2015-05-19)"
+    ],
+    "url": ""
+}

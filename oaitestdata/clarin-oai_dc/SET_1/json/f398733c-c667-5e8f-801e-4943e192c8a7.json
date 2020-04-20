@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/540",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/540"
+    ],
+    "PID": "http://hdl.handle.net/11321/540",
+    "PublicationTimestamp": "2018-07-23T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "K\u0119dzia, Pawe\u0142",
+        "Janz, Arkadiusz",
+        "Kaszewski, Dominik"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/540;2018-07-23T10:12:34Z;hdl_11321_3;hdl_11321_4;Word Sense Disambiguation tool WoSeDon;Janz, Arkadiusz;K\u0119dzia, Pawe\u0142;Kaszewski, Dominik;wsd;WoSeDon;plWordNet;Word sense disambiguation tool using rich, semantic resources.;2018-07-23;toolService;http://hdl.handle.net/11321/540;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Science and Technology",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f398733c-c667-5e8f-801e-4943e192c8a7",
+    "notes": [
+        "Word sense disambiguation tool using rich, semantic resources."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/540"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "wsd"
+        },
+        {
+            "name": "WoSeDon"
+        },
+        {
+            "name": "plWordNet"
+        }
+    ],
+    "title": [
+        "Word Sense Disambiguation tool WoSeDon"
+    ],
+    "url": ""
+}

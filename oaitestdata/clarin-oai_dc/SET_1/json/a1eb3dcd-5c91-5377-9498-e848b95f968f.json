@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Universit\u00e9 Paris 4 Sorbonne / CELTA"
+    ],
+    "Contributor": [
+        "Sauvet, Georges",
+        "Wlodarczyk, Andr\u00e9"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-297",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-297"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-297",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Universit\u00e9 Paris 4 Sorbonne / CELTA"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "France"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-297;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;SEMANA - Software for symbolic and statistical data mining;Wlodarczyk, Andr\u00e9;Sauvet, Georges;Dynamic database builder and three kinds of tools for visualizing and verifiying data with correction facilities;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-297;downloadable_files_count: 0;France;Universit\u00e9 Paris 4 Sorbonne / CELTA;http://www.celta.paris-sorbonne.fr/anasem/Semana-Corner/index.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a1eb3dcd-5c91-5377-9498-e848b95f968f",
+    "notes": [
+        "Dynamic database builder and three kinds of tools for visualizing and verifiying data with correction facilities"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-297"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "SEMANA - Software for symbolic and statistical data mining"
+    ],
+    "url": ""
+}

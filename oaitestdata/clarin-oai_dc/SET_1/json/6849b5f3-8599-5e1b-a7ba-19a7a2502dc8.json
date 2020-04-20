@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "European Commission",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 6",
+        "text/xml",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Danish",
+        "English",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/28",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/28"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/28",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "European Commission",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN-ACA-NC",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Hansen, Dorte Haltrup",
+        "Offersgaard, Lene"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/28;2018-06-28T13:28:19Z;hdl_20.500.12115_1;hdl_20.500.12115_3;DK-CLARIN Rapid Parallel Corpus 1993-2003 (da-en-de);Hansen, Dorte Haltrup;Offersgaard, Lene;press relase;politics;EU;The corpus consists of press releases from the European Commission Press Relase Database (Rapid) harvested in 2009 (http://europa.eu/rapid/search.htm).\r\nEach of the 5330 press releases (files) exist in Danish, English and German with app. 3,000,000 words for each language.\r\nAll texts are in XML TEIP5 format (TEIP5DKCLARIN-format), the Danish and English texts with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation, and the German texts  with tokenisation sentence and paragraph segmentation.\r\nThe annotations are placed in separate text external spangroups.\r\nThe corpus was collected and processed in the work package 2.6 of the Danish CLARIN project (see http://dkclarin.ku.dk/english) by University of Copenhagen, Centre for Language Technology.\r\nThe aim of the Danish CLARIN consortium was to construct a Danish research infrastructure for the humanities integrating written, spoken, and visual records into a coherent and systematic digital repository. \r\nThe project ran from January 2008 until the end of 2010.;2011;corpus;http://hdl.handle.net/20.500.12115/28;dan;eng;deu;CLARIN-ACA-NC;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1;ACA;application/zip;application/zip;application/zip;text/xml;application/pdf;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 6;Centre for Language Technology, NorS, University of Copenhagen;European Commission",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6849b5f3-8599-5e1b-a7ba-19a7a2502dc8",
+    "notes": [
+        "The corpus consists of press releases from the European Commission Press Relase Database (Rapid) harvested in 2009 (http://europa.eu/rapid/search.htm).\r\nEach of the 5330 press releases (files) exist in Danish, English and German with app. 3,000,000 words for each language.\r\nAll texts are in XML TEIP5 format (TEIP5DKCLARIN-format), the Danish and English texts with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation, and the German texts  with tokenisation sentence and paragraph segmentation.\r\nThe annotations are placed in separate text external spangroups.\r\nThe corpus was collected and processed in the work package 2.6 of the Danish CLARIN project (see http://dkclarin.ku.dk/english) by University of Copenhagen, Centre for Language Technology.\r\nThe aim of the Danish CLARIN consortium was to construct a Danish research infrastructure for the humanities integrating written, spoken, and visual records into a coherent and systematic digital repository. \r\nThe project ran from January 2008 until the end of 2010."
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/28"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "press relase"
+        },
+        {
+            "name": "politics"
+        },
+        {
+            "name": "EU"
+        }
+    ],
+    "title": [
+        "DK-CLARIN Rapid Parallel Corpus 1993-2003 (da-en-de)"
+    ],
+    "url": ""
+}

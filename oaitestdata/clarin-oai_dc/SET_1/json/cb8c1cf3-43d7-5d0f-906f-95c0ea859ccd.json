@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5594",
+    "MetadataAccess": [
+        "oai:ota:oucs:5594"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Pringle, John, Sir, 1707-1782."
+    ],
+    "fulltext": "oai:ota:oucs:5594;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5594.xml;A discourse upon some late improvements of the means for preserving the health of mariners. Delivered at the anniversary meeting of the Royal Society, November 30, 1776. By Sir John Pringle, Baronet, President. Published by their order;Pringle, John, Sir, 1707-1782.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cb8c1cf3-43d7-5d0f-906f-95c0ea859ccd",
+    "oai_identifier": [
+        "oai:ota:oucs:5594"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A discourse upon some late improvements of the means for preserving the health of mariners. Delivered at the anniversary meeting of the Royal Society, November 30, 1776. By Sir John Pringle, Baronet, President. Published by their order"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5594.xml"
+}

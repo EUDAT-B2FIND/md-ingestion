@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "enrico.paterna@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "ZIP"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/6",
+    "PublicationTimestamp": "2016-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "SLF"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Enrico Paterna"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/6;2018-07-07T00:12:49Z;doi:10.16904/6;Eng;MD_CharacterSetCode_utf8;Enrico Paterna;SLF;enrico.paterna@slf.ch;2016-10-17T10:30:40;ISO 19115:2003/19139;1.0;EPSG:4326;Wind tunnel measurement data of drifting snow and turbulent wind fluctuations;2016-12-31;The data correspond to the experiments presented and discussed in a paper regarding the interaction between turbulent wind fluctuations and snow saltation mass-fluxes (Paterna, 2016). Each of the nine data files corresponds to a different experiment presented in the paper and conducted in the winter 2014/2015 in the WSL/SLF cold wind tunnel in Davos. For each file the five columns indicate the time from the beginning of the experiment, the streamwise (u\u2019) and the vertical (w\u2019) wind velocity fluctuations, the streamwise (qx) and the vertical (qz) snow mass-flux components. From these time-series the scales of the snow saltation and of the turbulent flow are obtained with respect to the eddy-cycles and snow saltation cycles. From spectral analysis of the time-series a decoupling of the snow saltation from the turbulence forcing reveals two regimes of interaction: a turbulence-dependent regime occurring with weak saltation, and a turbulence-independent regime with strong saltation. Further details can be found at the link below.     __Publication__ http://onlinelibrary.wiley.com/doi/10.1002/2016GL068171/abstract;Enrico Paterna;SLF;enrico.paterna@slf.ch;BOUNDARY LAYER WINDS;SALTATION;SNOW COVER;SNOW DEPTH;VERTICAL WIND MOTION;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;9.84726 46.81204;ZIP;https://www.envidat.ch/dataset/10-16904-6;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/78af269e-4d9d-4fc3-9039-9814a4872a07/resource/8030cd31-90dd-4d18-a1f7-fdfd7030540d/download/paterna2016.zip;HTTPS;DATA COMPILATION;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "bcc437b4-ab48-565e-84c4-ad1fac665baf",
+    "notes": [
+        "The data correspond to the experiments presented and discussed in a paper regarding the interaction between turbulent wind fluctuations and snow saltation mass-fluxes (Paterna, 2016). Each of the nine data files corresponds to a different experiment presented in the paper and conducted in the winter 2014/2015 in the WSL/SLF cold wind tunnel in Davos. For each file the five columns indicate the time from the beginning of the experiment, the streamwise (u\u2019) and the vertical (w\u2019) wind velocity fluctuations, the streamwise (qx) and the vertical (qz) snow mass-flux components. From these time-series the scales of the snow saltation and of the turbulent flow are obtained with respect to the eddy-cycles and snow saltation cycles. From spectral analysis of the time-series a decoupling of the snow saltation from the turbulence forcing reveals two regimes of interaction: a turbulence-dependent regime occurring with weak saltation, and a turbulence-independent regime with strong saltation. Further details can be found at the link below.     __Publication__ http://onlinelibrary.wiley.com/doi/10.1002/2016GL068171/abstract"
+    ],
+    "oai_identifier": [
+        "doi:10.16904/6",
+        "oai:envidat.ch:10.16904/6"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "BOUNDARY LAYER WINDS"
+        },
+        {
+            "name": "SALTATION"
+        },
+        {
+            "name": "SNOW COVER"
+        },
+        {
+            "name": "SNOW DEPTH"
+        },
+        {
+            "name": "VERTICAL WIND MOTION"
+        }
+    ],
+    "title": [
+        "Wind tunnel measurement data of drifting snow and turbulent wind fluctuations"
+    ],
+    "url": "https://www.envidat.ch/dataset/78af269e-4d9d-4fc3-9039-9814a4872a07/resource/8030cd31-90dd-4d18-a1f7-fdfd7030540d/download/paterna2016.zip"
+}

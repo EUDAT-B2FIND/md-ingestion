@@ -1,0 +1,509 @@
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:fra="http://www.cnig.gouv.fr/2005/fra" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://www.isotc211.org/2005/gmx/gmx.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>a9b2506a-c606-49c7-b387-1d722c69fa03</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gmd:LanguageCode codeListValue="eng" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/ML_gmxCodelists.xml#LanguageCode">English</gmd:LanguageCode>
+      </gmd:language>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeSpace="eng" codeListValue="dataset" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#MD_ScopeCode">Dataset</gmd:MD_ScopeCode>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:organisationName>
+            <gco:CharacterString>AERIS</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:country>
+                    <gco:CharacterString>France</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>contact@aeris-data.fr</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeListValue="publisher" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode">Publisher</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:DateTime>2018-09-06T18:17:39.700+02:00</gco:DateTime>
+      </gmd:dateStamp>
+      <gmd:spatialRepresentationInfo>
+        <gmd:MD_VectorSpatialRepresentation/>
+      </gmd:spatialRepresentationInfo>
+      <gmd:referenceSystemInfo>
+        <gmd:MD_ReferenceSystem>
+          <gmd:referenceSystemIdentifier>
+            <gmd:RS_Identifier>
+              <gmd:code>
+                <gco:CharacterString>EPSG:4326</gco:CharacterString>
+              </gmd:code>
+            </gmd:RS_Identifier>
+          </gmd:referenceSystemIdentifier>
+        </gmd:MD_ReferenceSystem>
+      </gmd:referenceSystemInfo>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>IAGOS PBL-referenced profiles of O3 and CO</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>1994-08-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeSpace="eng" codeListValue="creation" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">Creation</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:DateTime>2018-09-06T18:17:39.700+02:00</gco:DateTime>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeSpace="eng" codeListValue="publication" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">Publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>10.25326/4</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString>The climatological vertical stratification of ozone (O3) and carbon monoxide (CO) within the planetary boundary layer (PBL) and at the interface with free troposphere (FT) was derived using all IAGOS (In-service Aircraft for a Global Observing System) and WOUDC (World Ozone and Ultraviolet Radiation Data Centre) vertical profiles available at northern mid-latitudes (25&#176;N-60&#176;N) between August 1994 and December 2016 (Petetin et al., 2018).
+
+The methodology is the following :
+1) All profiles with a surface-based temperature inversion (i.e. increase of temperature with altitude starting from the surface) are discarded. 
+2) All remaining profiles are then interpolated on a fixed vertical grid of 50 m vertical resolution between 0 and 4 km above ground level (i.e. 80 altitude levels). For each of these profiles, the PBL height is estimated as the base altitude of the first elevated temperature inversion (i.e. the altitude level above which temperature starts to increase with altitude). An upper limit of 4 km is fixed for the PBL height. In order to reduce uncertainties associated with data gaps, we discarded (i) all profiles with more than 25% of missing temperature data between 0 and 4 km (i.e. cumulated data gaps larger than 0.25x4000=2000 m), and/or (ii) all profiles with more than 4 missing data between the surface and the estimated PBL height (i.e. cumulated data gaps larger than 4x50=200 m). 
+3) The profiles are expressed in the z/h vertical coordinate system where z is the altitude and h the PBL height estimate. O3 and CO mixing ratios are interpolated along z/h values ranging between 0 (the surface) and 2 (two times the PBL height) with a vertical resolution of of 0.05 (i.e. 40 altitude levels). All profiles with missing O3 or CO data are discarded. Then all the remaining profiles are averaged, which gives the so-called PBL-referenced profiles. This is done for the different seasons (DJF : December-January-February, MAM : March-April-May, JJA : June-July-August, SON : September-October-November, ANN : annual) and times of day (night&#160;: sunset to sunrise, morning&#160;: sunrise to solar noon, midday&#160;: solar noon to 3 h past solar noon, afternoon&#160;: 3 h past solar noon to sunset, daytime&#160;: sunrise to sunset, all&#160;: the whole day).
+
+A more complete description of the methodology as well as an analysis of the results is available in the reference paper of Petetin et al. (2018).
+
+L4 IAGOS PBL-referenced profiles are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data. They are subject to the IAGOS data protocol.</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>SEDOO</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>14 avenue Edouard Belin</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Toulouse</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>31400</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>France</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>aeris@sedoo.fr</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeListValue="distributor" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode">Distributor</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Herve Petetin</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>Laboratoire d'Aerologie</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>herve.petetin@aero.obs-mip.fr</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:contactInstructions>
+                    <gco:CharacterString>Principal Investigator of IAGOS PBL Profiles</gco:CharacterString>
+                  </gmd:contactInstructions>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode">Point of contact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Bastien Sauvage</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>Laboratoire d'Aerologie</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>bastien.sauvage@aero.obs-mip.fr</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:contactInstructions>
+                    <gco:CharacterString>Principal Investigator of IAGOS Ancillary data; Principal Investigator of SOFT-IO</gco:CharacterString>
+                  </gmd:contactInstructions>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeListValue="principalInvestigator" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode">Principal investigator</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Philippe Nedelec</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>Laboratoire d'Aerologie</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>nedp@aero.obs-mip.fr</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:contactInstructions>
+                    <gco:CharacterString>Ozone, Carbon monoxyde</gco:CharacterString>
+                  </gmd:contactInstructions>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeListValue="principalInvestigator" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode">Principal investigator</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Damien Boulanger</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>Observatoire Midi-Pyrenees</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>damien.boulanger@obs-mip.fr</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:contactInstructions>
+                    <gco:CharacterString>Database manager</gco:CharacterString>
+                  </gmd:contactInstructions>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeListValue="originator" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode">Originator</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>http://iagos-data.fr/images/logo_blue.png</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString>Logo</gco:CharacterString>
+              </gmd:fileDescription>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>http://iagos-data.fr/portal/rest/images/map:global:thumb</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString>Map of flights</gco:CharacterString>
+              </gmd:fileDescription>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>http://iagos-data.fr/portal/rest/image/storedById/6990116025497246148</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString>Figure 1 : Vertical profiles of O3 mixing ratio (in ppbv; left panels), normalized by the O3 mixing ratio at z/h=1 (middle panels), and vertical gradient (in ppbv hm-1; right panels), for different times of the day (from top to bottom : all day along, daytime, night, morning, midday, afternoon). The shaded area represents the uncertainties (at a 95% confidence level) on the mean. For each season and time of the day, we indicate the number (N) of profiles used for calculating the PBL-referenced profile (i.e. profiles without any missing data), the mean PBL height calculated based on this subset of profiles, and the mean PBL height considering all profiles (in brackets).</gco:CharacterString>
+              </gmd:fileDescription>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>http://iagos-data.fr/portal/rest/image/storedById/4641718511330911523</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString>Figure 2 : Vertical profiles of CO mixing ratio (in ppbv; left panels), normalized by the CO mixing ratio at z/h=1 (middle panels), and vertical gradient (in ppbv hm-1; right panels), for different times of the day (from top to bottom : all day along, daytime, night, morning, midday, afternoon). The shaded area represents the uncertainties (at a 95% confidence level) on the mean. For each season and time of the day, we indicate the number (N) of profiles used for calculating the PBL-referenced profile (i.e. profiles without any missing data), the mean PBL height calculated based on this subset of profiles, and the mean PBL height considering all profiles (in brackets).</gco:CharacterString>
+              </gmd:fileDescription>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/ac">Atmospheric conditions</gmx:Anchor>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeListValue="theme" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">Theme</gmd:MD_KeywordTypeCode>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/inspire_themes">GEMET - INSPIRE themes, version 1.0</gmx:Anchor>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2008-06-01</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeSpace="eng" codeListValue="publication" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">Publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>IAGOS</gco:CharacterString>
+              </gmd:keyword>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>SEDOO</gco:CharacterString>
+              </gmd:keyword>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>AERIS</gco:CharacterString>
+              </gmd:keyword>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints>
+            <gmd:MD_LegalConstraints>
+              <gmd:useLimitation>
+                <gco:CharacterString>http://iagos-data.fr/#CMSConsultPlace:DATA_POLICY</gco:CharacterString>
+              </gmd:useLimitation>
+              <gmd:accessConstraints>
+                <gmd:MD_RestrictionCode codeListValue="restricted" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode">Restricted</gmd:MD_RestrictionCode>
+              </gmd:accessConstraints>
+              <gmd:otherConstraints>
+                <gco:CharacterString>NA</gco:CharacterString>
+              </gmd:otherConstraints>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:language>
+            <gmd:LanguageCode codeListValue="eng" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/ML_gmxCodelists.xml#LanguageCode">English</gmd:LanguageCode>
+          </gmd:language>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:extentTypeCode>
+                    <gco:Boolean>true</gco:Boolean>
+                  </gmd:extentTypeCode>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal>-180.0</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal>180.0</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal>-90.0</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal>90.0</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="RXTDZG">
+                      <gml:beginPosition>1994-08-01</gml:beginPosition>
+                      <gml:endPosition>2016-12-31</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:distributionInfo>
+        <gmd:MD_Distribution>
+          <gmd:distributionFormat>
+            <gmd:MD_Format>
+              <gmd:name>
+                <gco:CharacterString>CSV</gco:CharacterString>
+              </gmd:name>
+            </gmd:MD_Format>
+          </gmd:distributionFormat>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.iagos.org</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:description>
+                    <gco:CharacterString>IAGOS central website</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://iagos-data.fr/#CMSConsultPlace:PBL_PROFILES</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:description>
+                    <gco:CharacterString>IAGOS PBL Profiles</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://dx.doi.org/10.25326/4</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>DOI of the dataset</gco:CharacterString>
+                  </gmd:name>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+      <gmd:dataQualityInfo>
+        <gmd:DQ_DataQuality>
+          <gmd:scope>
+            <gmd:DQ_Scope>
+              <gmd:level>
+                <gmd:MD_ScopeCode codeSpace="eng" codeListValue="dataset" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#MD_ScopeCode">Dataset</gmd:MD_ScopeCode>
+              </gmd:level>
+            </gmd:DQ_Scope>
+          </gmd:scope>
+          <gmd:report>
+            <gmd:DQ_DomainConsistency>
+              <gmd:result>
+                <gmd:DQ_ConformanceResult>
+                  <gmd:specification>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date>
+                        <gmd:CI_Date>
+                          <gmd:date>
+                            <gco:Date>2010-12-08</gco:Date>
+                          </gmd:date>
+                          <gmd:dateType>
+                            <gmd:CI_DateTypeCode codeSpace="eng" codeListValue="publication" codeList="http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">Publication</gmd:CI_DateTypeCode>
+                          </gmd:dateType>
+                        </gmd:CI_Date>
+                      </gmd:date>
+                    </gmd:CI_Citation>
+                  </gmd:specification>
+                  <gmd:explanation>
+                    <gco:CharacterString>NA</gco:CharacterString>
+                  </gmd:explanation>
+                  <gmd:pass>
+                    <gco:Boolean>true</gco:Boolean>
+                  </gmd:pass>
+                </gmd:DQ_ConformanceResult>
+              </gmd:result>
+            </gmd:DQ_DomainConsistency>
+          </gmd:report>
+          <gmd:lineage>
+            <gmd:LI_Lineage>
+              <gmd:statement>
+                <gco:CharacterString>Data produced by the European Research Infrastructure IAGOS.</gco:CharacterString>
+              </gmd:statement>
+            </gmd:LI_Lineage>
+          </gmd:lineage>
+        </gmd:DQ_DataQuality>
+      </gmd:dataQualityInfo>
+      <gmi:acquisitionInformation>
+        <gmi:MI_AcquisitionInformation>
+          <gmi:platform>
+            <gmi:MI_Platform>
+              <gmi:citation>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>Models/Analyses</gco:CharacterString>
+                  </gmd:title>
+                </gmd:CI_Citation>
+              </gmi:citation>
+            </gmi:MI_Platform>
+          </gmi:platform>
+        </gmi:MI_AcquisitionInformation>
+      </gmi:acquisitionInformation>
+    </gmd:MD_Metadata>

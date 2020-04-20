@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=4dc94c44bc7c11e1a404080027e73ea26de48b275c064ef79134fc7632d15394",
+    "MetadataAccess": [
+        "4dc94c44bc7c11e1a404080027e73ea26de48b275c064ef79134fc7632d15394"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "4dc94c44bc7c11e1a404080027e73ea26de48b275c064ef79134fc7632d15394;2018-11-15T16:39:36Z;toolService;toolService:platform;U-Compare Platform;The purpose of the U-Compare platform is to facilitate easy and rapid development and evaluation of NLP and text mining systems. It includes utilities (including a graphical user interface, the U-Compare workbench, see separate record in META-SHARE) to create workflows from individual, interoperable NLP tools and resources, a customisable system to create and evaluate different workflows, and different utilities to visualise different types of annotations produced by workflows.  U-Compare is packaged with the world\u00e2\u0080\u0099s largest repository of UIMA components. This repository, which originally consisted largely of tools for processing English biomedical text, in being considerably enlarged as ongoing work, to include tools that can operate on a number of European languages and multilingual tools.;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5e150ae7-caf2-57d5-b158-e95fa4f2205e",
+    "notes": [
+        "The purpose of the U-Compare platform is to facilitate easy and rapid development and evaluation of NLP and text mining systems. It includes utilities (including a graphical user interface, the U-Compare workbench, see separate record in META-SHARE) to create workflows from individual, interoperable NLP tools and resources, a customisable system to create and evaluate different workflows, and different utilities to visualise different types of annotations produced by workflows.  U-Compare is packaged with the world\u00e2\u0080\u0099s largest repository of UIMA components. This repository, which originally consisted largely of tools for processing English biomedical text, in being considerably enlarged as ongoing work, to include tools that can operate on a number of European languages and multilingual tools."
+    ],
+    "oai_identifier": [
+        "4dc94c44bc7c11e1a404080027e73ea26de48b275c064ef79134fc7632d15394"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:platform"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Platform"
+    ]
+}

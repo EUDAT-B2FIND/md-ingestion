@@ -1,0 +1,27 @@
+{
+    "created": "2020-01-15T15:49:22.961101+00:00", 
+    "files": [], 
+    "id": "78e8c312175c4af3a80b28cfe407b741", 
+    "links": {
+        "self": "https://b2share-testing.fz-juelich.de/api/records/78e8c312175c4af3a80b28cfe407b741", 
+        "versions": "https://b2share-testing.fz-juelich.de/api/records/06f5e83a5bd54516b71ec4e2a81d4f59/versions"
+    }, 
+    "metadata": {
+        "$schema": "https://b2share-testing.fz-juelich.de/api/communities/8cb65167-71d4-4845-a454-5d56624568d2/schemas/0#/json_schema", 
+        "community": "8cb65167-71d4-4845-a454-5d56624568d2", 
+        "community_specific": {
+            "96fb29dc-02e5-49d9-adea-366c3e1b1594": {}
+        }, 
+        "open_access": true, 
+        "owners": [
+            2
+        ], 
+        "publication_state": "published", 
+        "titles": [
+            {
+                "title": "This is the version of the TOAR metadata schema"
+            }
+        ]
+    }, 
+    "updated": "2020-01-15T15:49:22.961112+00:00"
+}

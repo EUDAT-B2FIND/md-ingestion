@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>524f2f40cf3211e1a404080027e73ea25d2805d840414a7f914ac3ccfc93f364</identifier>
+    <datestamp>2019-02-27T12:09:05Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PAROLE Portuguese Annotated Corpus</dc:title>
+      <dc:description>The PAROLE Portuguese Corpus &#226;&#128;&#147; tagged subset contains 250.000 tokens and is a subset of the PAROLE Portuguese Corpus of 3 million running words of European Portuguese. The corpus was classified and encoded according to the common core parole encoding standard. 
+The tagged subset reproduces approximately the whole Corpus distribution by Medium (Newspaper: about 65%, Book: ab. 20%, Periodical: ab. 5%, Miscellaneous: ab. 10%). It has been morpho-syntactically tagged accordingly to the parole common tagset and morpho-syntactic annotation standards. Disambiguation was manually checked.
+The corpus was tagged under a collaboration of two Portuguese institutions: the Centre of Linguistics of the University of Lisbon and INESC-ID.</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

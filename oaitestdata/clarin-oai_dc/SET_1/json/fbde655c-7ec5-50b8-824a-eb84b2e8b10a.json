@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Burnard, Lou",
+        "Corns, Thomas N."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 582 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2225",
+    "MetadataAccess": [
+        "oai:ota:oucs:2225"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Milton, John, 1608-1674"
+    ],
+    "fulltext": "oai:ota:oucs:2225;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2225.xml;Paradise lost : a poem in twelve books [1674] / John Milton;Milton, John, 1608-1674;text_and_corpus_linguistics;Epic poetry, English -- 17th century;eng;Oxford Text Archive, University of Oxford;Corns, Thomas N.;Burnard, Lou;Burnard, Lou;text/sgml;(1 file : ca. 582 KB);Text;Poems;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fbde655c-7ec5-50b8-824a-eb84b2e8b10a",
+    "oai_identifier": [
+        "oai:ota:oucs:2225"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Epic poetry"
+        },
+        {
+            "name": "English -- th century"
+        }
+    ],
+    "title": [
+        "Paradise lost : a poem in twelve books [1674] / John Milton"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2225.xml"
+}

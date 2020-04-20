@@ -1,0 +1,12 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datahub.egi.eu:6f3757f390db5c1af2b73a18a9a70c30</identifier>
+    <datestamp>2019-12-02T14:34:35Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:identifier>http://hdl.handle.net/21.T15999/6uiWjLU</dc:identifier>
+      <dc:identifier>https://datahub.egi.eu/share/33798796391866ed7661f602be0e203e</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

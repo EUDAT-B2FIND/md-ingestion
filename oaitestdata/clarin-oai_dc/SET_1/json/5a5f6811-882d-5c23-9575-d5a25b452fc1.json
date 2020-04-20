@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "[s.n.]"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-27478",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-27478"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D13-2",
+    "PublicationTimestamp": "1767-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1767"
+    ],
+    "Publisher": [
+        "[s.n.]"
+    ],
+    "RelatedIdentifier": [
+        "http://rcin.org.pl/Content/27478",
+        "oai:rcin.org.pl:publication:45560"
+    ],
+    "ResourceType": [
+        "Text",
+        "Early printed book (1501-1800)"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Tetsch, Christoph Ludwig (1735-1793)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-27478;2019-03-01T13:27:00Z;Krotki Wywod Ktorym Dowodzi Si\u0119, Iz Miastom Y Mieszczanom Xi\u0119sw [!] Kurlandyi Y Semigallyi Prawo Wzgl\u0119dem Appellacyi Do S\u0105dow J.K.Mci Relacyinych Sprawiedliwie S\u0142uzy;Tetsch, Christoph Ludwig (1735-1793);Law - Poland - 18th c.;Kurlandia (\u0141otwa);Aut. i data wyd. wg Estr.;[9] k., sygn. A-B4, C1 ; 4\u00b0;Estr. XV-XVIII, 31, 118;Liczne cytaty w j\u0119z. \u0142ac.;[s.n.];[1767];Text;Early printed book (1501-1800);application/xml;clarind-uds:poldilemma-27478;hdl:11858/00-246C-0000-0023-8D13-2;IBL PAN, call no. XVIII.2.686;http://katalog.pan.pl/webpac-bin/233biblitEN/wgbroker.exe?new+-access+top+search+open+NR+xx002792892;pol;lat;http://rcin.org.pl/Content/27478;oai:rcin.org.pl:publication:45560;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5a5f6811-882d-5c23-9575-d5a25b452fc1",
+    "notes": [
+        "Aut. i data wyd. wg Estr.",
+        "[9] k., sygn. A-B4, C1 ; 4\u00b0",
+        "Estr. XV-XVIII, 31, 118",
+        "Liczne cytaty w j\u0119z. \u0142ac."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-27478"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Law - Poland - th c."
+        },
+        {
+            "name": "Law - Poland - th c."
+        }
+    ],
+    "title": [
+        "Krotki Wywod Ktorym Dowodzi Si\u0119, Iz Miastom Y Mieszczanom Xi\u0119sw [!] Kurlandyi Y Semigallyi Prawo Wzgl\u0119dem Appellacyi Do S\u0105dow J.K.Mci Relacyinych Sprawiedliwie S\u0142uzy"
+    ],
+    "url": ""
+}

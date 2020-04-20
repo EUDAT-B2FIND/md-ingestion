@@ -1,0 +1,94 @@
+{
+    "Contact": [
+        "DFG Collaborative Research Centre 991, University of Duesseldorf",
+        "Department of Applied Linguistics, Translation and Interpreting, Saarland University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1661",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1661"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1661",
+    "PublicationTimestamp": "2016-03-07T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "DFG Collaborative Research Centre 991, University of Duesseldorf",
+        "Department of Applied Linguistics, Translation and Interpreting, Saarland University"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "QasemiZadeh, Behrang",
+        "Schumann, Anne-Kathrin"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1661;2017-08-11T13:52:21Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;The ACL RD-TEC 2.0;QasemiZadeh, Behrang;Schumann, Anne-Kathrin;Terminology;Term Extraction;Term Classification;Entity Recognition;Evaluation Corpus;Language Resource;Gold Dataset;Evaluation of Automatic Terminology Construction Methods;The ACL RD-TEC 2.0 has been developed with the aim of providing a benchmark for the evaluation of methods for terminology  extraction and classification as well as entity recognition tasks based on specialised text from the computational linguistics domain.  This release of the corpus consists of 300 abstracts from articles in the ACL Anthology Reference Corpus, published between 1978--2006. In these abstracts, terms (i.e., single or multi-word lexical units with a specialised meaning)  are manually annotated. In addition to their boundaries in running text, annotated terms are classified into one of the seven categories method, tool, language resource (LR), LR product,  model, measures and measurements, and other.  To assess the quality of the annotations and to determine the difficulty of this task, more than 171 of the abstracts are annotated twice, independently, by each of the two annotators. In total, 6,818 terms are identified and annotated, resulting in a specialised vocabulary made of 3,318 lexical forms, mapped to 3,471 concepts.;2016-03-07;corpus;http://hdl.handle.net/11372/LRT-1661;eng;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;DFG Collaborative Research Centre 991, University of Duesseldorf;Department of Applied Linguistics, Translation and Interpreting, Saarland University;http://pars.ie/lr/acl_rd-tec",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9d95c42f-a6dd-59c2-b10b-0e799186287b",
+    "notes": [
+        "The ACL RD-TEC 2.0 has been developed with the aim of providing a benchmark for the evaluation of methods for terminology  extraction and classification as well as entity recognition tasks based on specialised text from the computational linguistics domain.  This release of the corpus consists of 300 abstracts from articles in the ACL Anthology Reference Corpus, published between 1978--2006. In these abstracts, terms (i.e., single or multi-word lexical units with a specialised meaning)  are manually annotated. In addition to their boundaries in running text, annotated terms are classified into one of the seven categories method, tool, language resource (LR), LR product,  model, measures and measurements, and other.  To assess the quality of the annotations and to determine the difficulty of this task, more than 171 of the abstracts are annotated twice, independently, by each of the two annotators. In total, 6,818 terms are identified and annotated, resulting in a specialised vocabulary made of 3,318 lexical forms, mapped to 3,471 concepts."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1661"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Terminology"
+        },
+        {
+            "name": "Term Extraction"
+        },
+        {
+            "name": "Term Classification"
+        },
+        {
+            "name": "Entity Recognition"
+        },
+        {
+            "name": "Evaluation Corpus"
+        },
+        {
+            "name": "Language Resource"
+        },
+        {
+            "name": "Gold Dataset"
+        },
+        {
+            "name": "Evaluation Automatic Terminology Construction Methods"
+        }
+    ],
+    "title": [
+        "The ACL RD-TEC 2.0"
+    ],
+    "url": ""
+}

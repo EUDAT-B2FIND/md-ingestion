@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Hidley, Gregory Ray, 1950-"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(2 files : ca. 7.71, 1120 KB)"
+    ],
+    "Language": [
+        "Old English (ca. 450-1100)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1936",
+    "MetadataAccess": [
+        "oai:ota:oucs:1936"
+    ],
+    "PublicationTimestamp": "1100-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1100"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1936;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/1936.xml;Anglo-Saxon poetic records;450-1100;text_and_corpus_linguistics;Poems;ang;Oxford Text Archive, University of Oxford;Hidley, Gregory Ray, 1950-;text/plain;(2 files : ca. 7.71, 1120 KB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d5f69700-f2f8-5d44-aeab-f1cbdcaa42e5",
+    "oai_identifier": [
+        "oai:ota:oucs:1936"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems"
+        }
+    ],
+    "title": [
+        "Anglo-Saxon poetic records"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1936.xml"
+}

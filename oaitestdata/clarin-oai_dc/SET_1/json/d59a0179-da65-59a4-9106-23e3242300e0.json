@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "659 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1507",
+    "MetadataAccess": [
+        "oai:ota:oucs:1507"
+    ],
+    "PublicationTimestamp": "1847-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1847"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Bronte, Emily"
+    ],
+    "fulltext": "oai:ota:oucs:1507;2018-07-27T10:38:27Z;http://ota.ox.ac.uk/headers/1507.xml;Wuthering heights;Bronte, Emily;1847;text_and_corpus_linguistics;Novels -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;659 KB;Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d59a0179-da65-59a4-9106-23e3242300e0",
+    "oai_identifier": [
+        "oai:ota:oucs:1507"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Wuthering heights"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1507.xml"
+}

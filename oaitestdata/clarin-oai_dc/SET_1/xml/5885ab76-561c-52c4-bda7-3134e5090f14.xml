@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-612</identifier>
+    <datestamp>2016-04-06T16:39:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Code-switching conversation corpus</dc:title>
+      <dc:contributor>Gullberg, Marianne</dc:contributor>
+      <dc:description>The code-switching corpus consists of 5x30-minute conversations between four speakers (i.e. a total of 20 speakers). The speakers are bilingual speakers of Papiamento (a creole langauge spoken in the Dutch Antilles) and Dutch. In the course of their free conversations, they engage in code-switching, that is, they use both languages within the same utterance in systematic ways. The corpus is fully transcribed and glossed, coded for language and word class, in ELAN.</dc:description>
+      <dc:date>2007</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-612</dc:identifier>
+      <dc:language>nld</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Netherlands (the)</dc:coverage>
+      <dc:publisher>Max Planck Institute for Psycholinguistics</dc:publisher>
+      <dc:source>http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI75934%23</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Research Institute for Artificial Intelligence, Romanian Academy of Sciences"
+    ],
+    "Contributor": [
+        "Piasecki, Maciej"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-486",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-486"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-486",
+    "PublicationTimestamp": "2008-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "Research Institute for Artificial Intelligence, Romanian Academy of Sciences"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Free for non-commercial use"
+    ],
+    "SpatialCoverage": [
+        "Poland"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-486;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;plWordNet (S\u0142owosie\u0107);Piasecki, Maciej;currently: about 18 600 lexical units,  about 11 000 synsets, planned (by the end of 2008): 25-30 thousands of lexical units;2008;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-486;pol;Free for non-commercial use;application/xml;downloadable_files_count: 0;Poland;Research Institute for Artificial Intelligence, Romanian Academy of Sciences;http://www.plwordnet.pwr.wroc.pl/browser/?lang=en",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7cd35a27-eaf4-50f2-b36e-fb6efe5499d6",
+    "notes": [
+        "currently: about 18 600 lexical units,  about 11 000 synsets, planned (by the end of 2008): 25-30 thousands of lexical units"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-486"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "plWordNet (S\u0142owosie\u0107)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/8</identifier>
+    <datestamp>2018-08-27T08:01:51Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ChunkRel WS</dc:title>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:description>ChunkRel-WS is a prototype service for recognition of three syntactic relations between chunks. The service may be run against plain text (input format: text), then the necessary processing steps will be run automatically (tagger and chunker). You can also process already tagged and chunked input (input format: ccl). The output will be enriched with inter-chunk relations. The service is based on a prototype implementation, hence it works slowly. The configuration used here operates on shallow syntactic annotation scheme from the KPWr corpus.</dc:description>
+      <dc:date>2011-12-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/8</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://ws.clarin-pl.eu/chunker.shtml</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

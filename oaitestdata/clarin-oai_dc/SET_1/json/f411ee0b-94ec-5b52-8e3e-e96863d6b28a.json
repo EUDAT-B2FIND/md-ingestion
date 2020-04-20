@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 71 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2155",
+    "MetadataAccess": [
+        "oai:ota:oucs:2155"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gaskell, Elizabeth Cleghorn, 1810-1865"
+    ],
+    "fulltext": "oai:ota:oucs:2155;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2155.xml;Lizzie Leigh / Elizabeth Gaskell;Gaskell, Elizabeth Cleghorn, 1810-1865;text_and_corpus_linguistics;English fiction -- 19th century;Oxford Text Archive, University of Oxford;Triggs, Jeffery;text/sgml;(1 file : ca. 71 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f411ee0b-94ec-5b52-8e3e-e96863d6b28a",
+    "oai_identifier": [
+        "oai:ota:oucs:2155"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English fiction -- th century"
+        }
+    ],
+    "title": [
+        "Lizzie Leigh / Elizabeth Gaskell"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2155.xml"
+}

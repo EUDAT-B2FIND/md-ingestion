@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1449</identifier>
+    <datestamp>2018-07-02T22:05:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Fairytale child (2014-09-26)</dc:title>
+      <dc:creator>Rosa, Rudolf</dc:creator>
+      <dc:subject>dialogue system</dc:subject>
+      <dc:subject>morphological generation</dc:subject>
+      <dc:subject>Treex</dc:subject>
+      <dc:subject>morphological analysis</dc:subject>
+      <dc:subject>interactive</dc:subject>
+      <dc:description>Fairytale Child is a simple chatbot trying to simulate a curious child. It asks the user to tell a fairy tale, often interrupting to ask for details and clarifications. However, it remembers what it was told and tries to show it if possible.&#13;
+&#13;
+The chatbot can communicate in Czech and in English. It analyzes the morphology of each sentence produced by the user with natural language processing tools, tries to identify potential questions to ask, and then asks one. A morphological generator is employed to generate correctly inflected sentences in Czech, so that the resulting sentences sound as natural as possible.&#13;
+&#13;
+Poh&#225;dkov&#233; d&#237;t&#283; je jednoduch&#253; chatbot, simuluj&#237;c&#237; zv&#237;dav&#233; d&#237;t&#283;. Po&#382;&#225;d&#225; u&#382;ivatele, aby mu vypr&#225;v&#283;l poh&#225;dku, ale &#269;asto ho p&#345;eru&#353;uje, aby se zeptal na detaily a vysv&#283;tlen&#237;. Pamatuje si ale, co mu u&#382;ivatel &#345;ekl, a sna&#382;&#237; se to pokud mo&#382;no d&#225;t najevo.&#13;
+&#13;
+Chatbot um&#237; komunikovat &#269;esky a anglicky. Analyzuje tvaroslov&#237; ka&#382;d&#233; u&#382;ivatelovy v&#283;ty pomoc&#237; NLP n&#225;stroj&#367;, pokus&#237; se nal&#233;zt chodnou ot&#225;zku, a tu pak polo&#382;&#237;. Aby tvo&#345;en&#233; &#269;esk&#233; v&#283;ty zn&#283;ly co nejp&#345;irozen&#283;ji, vyu&#382;&#237;v&#225; se pro sklo&#328;ov&#225;n&#237; tvaroslovn&#253; gener&#225;tor.</dc:description>
+      <dc:date>2014-09-26</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1449</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11234/1-161</dc:relation>
+      <dc:relation>http://hdl.handle.net/11234/1-1450</dc:relation>
+      <dc:rights>GNU General Public License, version 2</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/gpl-2.0.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://ufal.mff.cuni.cz/dite</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

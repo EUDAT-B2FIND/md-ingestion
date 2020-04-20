@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 117 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0642",
+    "MetadataAccess": [
+        "oai:ota:oucs:0642"
+    ],
+    "PublicationTimestamp": "1607-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1607"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Tourneur, Cyril, 1575?-1626"
+    ],
+    "fulltext": "oai:ota:oucs:0642;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0642.xml;Revenger's tragedy;The reuengers tragaedie;Tourneur, Cyril, 1575?-1626;1607;text_and_corpus_linguistics;Plays -- England -- 17th century;Tragedies -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;(1 file : ca. 117 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5b379282-5959-5ec8-8076-a93444861438",
+    "oai_identifier": [
+        "oai:ota:oucs:0642"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        },
+        {
+            "name": "Tragedies -- England -- th century"
+        }
+    ],
+    "title": [
+        "Revenger's tragedy",
+        "The reuengers tragaedie"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0642.xml"
+}

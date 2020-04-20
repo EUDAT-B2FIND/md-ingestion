@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=c251fb3ad00c11e1a404080027e73ea2948a7fff88164e4ab581ea35197bb8c4",
+    "MetadataAccess": [
+        "c251fb3ad00c11e1a404080027e73ea2948a7fff88164e4ab581ea35197bb8c4"
+    ],
+    "PublicationTimestamp": "2012-07-17T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "c251fb3ad00c11e1a404080027e73ea2948a7fff88164e4ab581ea35197bb8c4;2018-11-15T16:39:41Z;toolService;toolService:tool;MBT \u00e2\u0080\u0093 Memory-Based Tagger-Generator and Tagger;MBT is a memory-based tagger-generator and tagger in one. The tagger-generator part can generate a sequence tagger on the basis of a training set of tagged sequences; the tagger part can tag new sequences. MBT can, for instance, be used to generate part-of-speech taggers or chunkers for natural language processing. It has also been used for named-entity recognition, information extraction in domain-specific texts, and disfluency chunking in transcribed speech.;2012-07-17",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "aa15b056-be30-58e1-b137-c1e2a040f3af",
+    "notes": [
+        "MBT is a memory-based tagger-generator and tagger in one. The tagger-generator part can generate a sequence tagger on the basis of a training set of tagged sequences; the tagger part can tag new sequences. MBT can, for instance, be used to generate part-of-speech taggers or chunkers for natural language processing. It has also been used for named-entity recognition, information extraction in domain-specific texts, and disfluency chunking in transcribed speech."
+    ],
+    "oai_identifier": [
+        "c251fb3ad00c11e1a404080027e73ea2948a7fff88164e4ab581ea35197bb8c4"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "MBT \u00e2\u0080\u0093 Memory-Based Tagger-Generator and Tagger"
+    ]
+}

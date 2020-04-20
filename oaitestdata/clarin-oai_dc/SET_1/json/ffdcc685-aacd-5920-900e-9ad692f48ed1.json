@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=d6786e9a191511e6a2aa782bcb07413522f6924729e44b1aa307157a31a13ff9",
+    "MetadataAccess": [
+        "d6786e9a191511e6a2aa782bcb07413522f6924729e44b1aa307157a31a13ff9"
+    ],
+    "PublicationTimestamp": "2016-05-13T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "fulltext": "d6786e9a191511e6a2aa782bcb07413522f6924729e44b1aa307157a31a13ff9;2018-11-15T16:40:22Z;lexicalConceptualResource;lexicalConceptualResource:lexicon;QTLeap Specialized lexicons;This resource comprises multilingual lexicon entries used for the translation of specific IT domain expressions. This gazetteer has been collected from four different sources: VLC,\n LibreOffice and KDE localization projects and IT domain Wikipedia articles.;2016-05-13",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ffdcc685-aacd-5920-900e-9ad692f48ed1",
+    "notes": [
+        "This resource comprises multilingual lexicon entries used for the translation of specific IT domain expressions. This gazetteer has been collected from four different sources: VLC,\n LibreOffice and KDE localization projects and IT domain Wikipedia articles."
+    ],
+    "oai_identifier": [
+        "d6786e9a191511e6a2aa782bcb07413522f6924729e44b1aa307157a31a13ff9"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:lexicon"
+    ],
+    "state": "active",
+    "title": [
+        "QTLeap Specialized lexicons"
+    ]
+}

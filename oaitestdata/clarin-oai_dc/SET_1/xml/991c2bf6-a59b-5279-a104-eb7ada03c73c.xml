@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/339</identifier>
+    <datestamp>2017-03-03T13:29:51Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Keyword Extractor</dc:title>
+      <dc:creator>Kali&#324;ski, Micha&#322;</dc:creator>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:creator>Oleksy, Marcin</dc:creator>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:creator>K&#281;dzia, Pawe&#322;</dc:creator>
+      <dc:creator>Ry&#347;nik, B&#322;a&#380;ej</dc:creator>
+      <dc:creator>Maciejewski, Henryk</dc:creator>
+      <dc:subject>keywords</dc:subject>
+      <dc:subject>text analysis</dc:subject>
+      <dc:subject>textrank</dc:subject>
+      <dc:description>Tool for extracting key phrases for text, using TextRank algorithm.</dc:description>
+      <dc:date>2017-03-03</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/339</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

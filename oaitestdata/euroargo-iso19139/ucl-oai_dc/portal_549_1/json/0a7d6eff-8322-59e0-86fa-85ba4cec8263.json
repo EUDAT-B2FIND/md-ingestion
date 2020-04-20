@@ -1,0 +1,87 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/9939611.v1",
+    "DiscHierarchy": [
+        "1.3.4",
+        "Fine Arts, Music, Theatre and Media Studies",
+        "Theater"
+    ],
+    "Discipline": "Photographs",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/9939611",
+    "MetadataAccess": [
+        "oai:figshare.com:article/9939611"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-10-21T10:35:29Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Composite_full_focus_images_used_for_focus-stacked_SfM_3D_model_generation_/9939611"
+    ],
+    "ResourceType": [
+        "Image",
+        "Figure"
+    ],
+    "Rights": [
+        "CC BY-NC-SA 4.0"
+    ],
+    "author": [
+        "Christopher Silvester (7090259)",
+        "Simon Hillson (6777521)"
+    ],
+    "fulltext": "oai:figshare.com:article/9939611;2019-10-21T10:35:29Z;category_25;category_127;portal_549;item_type_1;month_year_10_2019;Composite full focus images used for focus-stacked SfM 3D model generation.;Christopher Silvester (7090259);Simon Hillson (6777521);Anthropology;Archaeology;Photographs;Focus Stacking;photogrammetric studies;Teeth;Full focus composite images generated using Helicon Focus software. Between 20-40 images taken at different focal depths were used to create each full focus image. These composite images were imported into Agisoft Metashape for 3D model generation. Individuals were from the St. Michael's Litten, Chichester assemblage (dated AD1550-1900) held at University College London. Sets of photographs are numbered according to specimen number. Specimen numbers were 79, 183, 599, 889, 1361, 1629, 1892, 1968, 4293.<div>The specimen numbers correspond to the skeleton numbers of each individual. The site code for St. Michael's Litten is ESC11. The structure-from-motion 3D dental models generated using these photographs were assessed alongside 3D models generated using a structured light scanner to determine their fidelity. The results of this research are presented the article \"A critical assessment of the potential for Structure-from-Motion photogrammetry to produce high fidelity 3D Dental Models\" under review in the American Journal of Physical Anthropology. The paper aimed to determine whether dental models generated using photogrammetry could be used to perform dental macrowear analysis. All 3D models assessed, and the photographs used to generate the models, are available from the UCL research data repository.<p></p></div><div><br></div>;2019-10-21T10:35:29Z;Image;Figure;10.5522/04/9939611.v1;https://figshare.com/articles/Composite_full_focus_images_used_for_focus-stacked_SfM_3D_model_generation_/9939611;CC BY-NC-SA 4.0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "0a7d6eff-8322-59e0-86fa-85ba4cec8263",
+    "notes": [
+        "Full focus composite images generated using Helicon Focus software. Between 20-40 images taken at different focal depths were used to create each full focus image. These composite images were imported into Agisoft Metashape for 3D model generation. Individuals were from the St. Michael's Litten, Chichester assemblage (dated AD1550-1900) held at University College London. Sets of photographs are numbered according to specimen number. Specimen numbers were 79, 183, 599, 889, 1361, 1629, 1892, 1968, 4293.<div>The specimen numbers correspond to the skeleton numbers of each individual. The site code for St. Michael's Litten is ESC11. The structure-from-motion 3D dental models generated using these photographs were assessed alongside 3D models generated using a structured light scanner to determine their fidelity. The results of this research are presented the article \"A critical assessment of the potential for Structure-from-Motion photogrammetry to produce high fidelity 3D Dental Models\" under review in the American Journal of Physical Anthropology. The paper aimed to determine whether dental models generated using photogrammetry could be used to perform dental macrowear analysis. All 3D models assessed, and the photographs used to generate the models, are available from the UCL research data repository.<p></p></div><div><br></div>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/9939611"
+    ],
+    "oai_set": [
+        "category_25",
+        "category_127",
+        "portal_549",
+        "item_type_1",
+        "month_year_10_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Anthropology"
+        },
+        {
+            "name": "Archaeology"
+        },
+        {
+            "name": "Photographs"
+        },
+        {
+            "name": "Focus Stacking"
+        },
+        {
+            "name": "photogrammetric studies"
+        },
+        {
+            "name": "Teeth"
+        }
+    ],
+    "title": [
+        "Composite full focus images used for focus-stacked SfM 3D model generation."
+    ],
+    "url": ""
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=151585066c0911e2a2aa782bcb074135f1f91526aee34f52b62e56c1164326e3",
+    "MetadataAccess": [
+        "151585066c0911e2a2aa782bcb074135f1f91526aee34f52b62e56c1164326e3"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "151585066c0911e2a2aa782bcb074135f1f91526aee34f52b62e56c1164326e3;2018-11-15T16:40:10Z;toolService;toolService:service;U-Compare Co-reference Identification service;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies co-reference chains in plain text. Also identifies sentences, tokens with parts-of-speech and lemmas, and NP chunks\nTools in workflow: TTL-Tokenizer (RACAI, Romania), TTL-Tagger (RACAI, Romania), TTL-Lemmatizer (RACAI, Romania), UAIC-NPChunker (UAIC, Romania), UAIC-RARE (UAIC, Romania)  \nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "00cd211c-151a-5584-92e8-80f6a42c0984",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies co-reference chains in plain text. Also identifies sentences, tokens with parts-of-speech and lemmas, and NP chunks\nTools in workflow: TTL-Tokenizer (RACAI, Romania), TTL-Tagger (RACAI, Romania), TTL-Lemmatizer (RACAI, Romania), UAIC-NPChunker (UAIC, Romania), UAIC-RARE (UAIC, Romania)  \nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n"
+    ],
+    "oai_identifier": [
+        "151585066c0911e2a2aa782bcb074135f1f91526aee34f52b62e56c1164326e3"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Co-reference Identification service"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=fe32ebf2485511e2a2aa782bcb074135aa0fdcd287ac45e7b67de9c36d8d2890",
+    "MetadataAccess": [
+        "fe32ebf2485511e2a2aa782bcb074135aa0fdcd287ac45e7b67de9c36d8d2890"
+    ],
+    "PublicationTimestamp": "2018-05-02T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "fulltext": "fe32ebf2485511e2a2aa782bcb074135aa0fdcd287ac45e7b67de9c36d8d2890;2018-11-15T16:39:56Z;corpus;corpus:text;CINTIL-Corpus Internacional do Portugu\u00c3\u00aas;CINTIL-Corpus Internacional do Portugu\u00c3\u00aas is a linguistically interpreted corpus of Portuguese. At present it is composed of 1 Million annotated tokens, verified by human expert annotators. The annotation comprises information on part-of-speech, open classes lemma and inflection, multi-word expressions pertaining to the class of adverbs and to the closed POS classes, and multi-word proper names (for named entity recognition). The corpus has been developed at the University of Lisbon by the NLX group at the Faculty of Sciences and the Anagrama group at the Cenro de Lingu\u00c3\u00adstica da Universidade de Lisboa.;2018-05-02",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b1f182f8-8037-5d82-9981-3fb539ae6b23",
+    "notes": [
+        "CINTIL-Corpus Internacional do Portugu\u00c3\u00aas is a linguistically interpreted corpus of Portuguese. At present it is composed of 1 Million annotated tokens, verified by human expert annotators. The annotation comprises information on part-of-speech, open classes lemma and inflection, multi-word expressions pertaining to the class of adverbs and to the closed POS classes, and multi-word proper names (for named entity recognition). The corpus has been developed at the University of Lisbon by the NLX group at the Faculty of Sciences and the Anagrama group at the Cenro de Lingu\u00c3\u00adstica da Universidade de Lisboa."
+    ],
+    "oai_identifier": [
+        "fe32ebf2485511e2a2aa782bcb074135aa0fdcd287ac45e7b67de9c36d8d2890"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "CINTIL-Corpus Internacional do Portugu\u00c3\u00aas"
+    ]
+}

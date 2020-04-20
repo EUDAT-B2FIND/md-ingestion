@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "E"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2223",
+    "MetadataAccess": [
+        "oai:ota:oucs:2223"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Collections, corpora etc"
+    ],
+    "fulltext": "oai:ota:oucs:2223;2018-04-16T15:30:51Z;http://ota.ox.ac.uk/headers/2223.xml;Summer Institute of Linguistics language material;Collections, corpora etc;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;E;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9325f73e-b5e8-5a1b-ad80-10070db5b90a",
+    "oai_identifier": [
+        "oai:ota:oucs:2223"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Summer Institute of Linguistics language material"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2223.xml"
+}

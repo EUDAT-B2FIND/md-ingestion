@@ -1,0 +1,56 @@
+{
+    "Contributor": [
+        "Asmussen, J\u00f6rg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-244",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-244"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-244",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Denmark"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-244;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Korpus 90;Asmussen, J\u00f6rg;written, general language; 22 million tokens;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-244;dan;downloadable_files_count: 0;Denmark;http://ordnet.dk/korpusdk",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cb975324-b823-516b-8d91-20777678b848",
+    "notes": [
+        "written, general language; 22 million tokens"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-244"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Korpus 90"
+    ],
+    "url": ""
+}

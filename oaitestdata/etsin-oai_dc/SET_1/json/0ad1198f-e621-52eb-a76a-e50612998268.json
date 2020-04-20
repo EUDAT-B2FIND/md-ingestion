@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "atm-data@helsinki.fi"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0ad1198f-e621-52eb-a76a-e50612998268",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "atm-data@helsinki.fi"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;",
+        "1995-01-01T00:00:00Z/1995-12-31T23:59:59Z"
+    ],
+    "TempCoverageBegin": 192513067199,
+    "TempCoverageEnd": 62924515200,
+    "TemporalCoverage": " period : ( 6101-07-01T11:59:59Z - 1995-01-01T00:00:00Z ) ",
+    "TemporalCoverage:BeginDate": "6101-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1995-01-01T00:00:00Z",
+    "author": [
+        "Pasi Aalto"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata20160308090945812097;2016-03-08T07:09:45Z;university-of-helsinki-department-of-physics-division-of-atmospheric-sciences;V\u00e4rri\u00f6 SMEAR I meteorology, gases and soil - Air temperature 15 m - 1995;Pasi Aalto;http://www.yso.fi/onto/yso/p5394;Title: Air temperature 15 m \n\nDescription: Air temperature 15 m \n\nVariable: TDRY0 \n\nUnit: \u00b0C \n\nSource: Ventilated and shielded Pt100 temperature sensor \n\nCategory: Meteorology \n\n;atm-data@helsinki.fi;2016-03-08;dataset;urn:nbn:fi:csc-ida2014011532168v;urn:nbn:fi:csc-ida2014011532168s;urn:nbn:fi:csc-ida-10x201703282015017315111v;urn:nbn:fi:csc-kata20160308090945812097;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308090945812097;DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;;1995-01-01T00:00:00Z/1995-12-31T23:59:59Z;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0ad1198f-e621-52eb-a76a-e50612998268",
+    "notes": [
+        "Title: Air temperature 15 m \n\nDescription: Air temperature 15 m \n\nVariable: TDRY0 \n\nUnit: \u00b0C \n\nSource: Ventilated and shielded Pt100 temperature sensor \n\nCategory: Meteorology \n\n"
+    ],
+    "oai_identifier": [
+        "0ad1198f-e621-52eb-a76a-e50612998268"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "http www.yso.fi onto yso p"
+        }
+    ],
+    "title": [
+        "V\u00e4rri\u00f6 SMEAR I meteorology, gases and soil - Air temperature 15 m - 1995"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308090945812097"
+}

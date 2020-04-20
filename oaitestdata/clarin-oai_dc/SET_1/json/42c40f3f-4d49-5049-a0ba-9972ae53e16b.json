@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Delbecque, Nicole"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(1 file : ca. 119 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0439",
+    "MetadataAccess": [
+        "oai:ota:oucs:0439"
+    ],
+    "PublicationTimestamp": "1970-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1970"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Laffan, K.B. (Kevin Barry)"
+    ],
+    "fulltext": "oai:ota:oucs:0439;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0439.xml;It's a two-foot-six-inches-above-the-ground world : a comedy / by Kevin Laffan;Laffan, K.B. (Kevin Barry);1970;text_and_corpus_linguistics;English drama -- 20th century;eng;Oxford Text Archive, University of Oxford;Delbecque, Nicole;text/plain;(1 file : ca. 119 KB);Text;Plays;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "42c40f3f-4d49-5049-a0ba-9972ae53e16b",
+    "oai_identifier": [
+        "oai:ota:oucs:0439"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "It's a two-foot-six-inches-above-the-ground world : a comedy / by Kevin Laffan"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0439.xml"
+}

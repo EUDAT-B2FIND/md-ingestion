@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2906</identifier>
+    <datestamp>2018-12-19T11:19:55Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Enriched Discourse Annotation of PDiT Subset 1.0 (PDiT-EDA 1.0)</dc:title>
+      <dc:creator>Zik&#225;nov&#225;, &#352;&#225;rka</dc:creator>
+      <dc:creator>Synkov&#225;, Pavl&#237;na</dc:creator>
+      <dc:creator>M&#237;rovsk&#253;, Ji&#345;&#237;</dc:creator>
+      <dc:subject>discourse annotation</dc:subject>
+      <dc:subject>implicit discourse relations</dc:subject>
+      <dc:description>Enriched discourse annotation of a subset of the Prague Discourse Treebank, adding implicit relations, entity based relations, question-answer relations and other discourse structuring phenomena.</dc:description>
+      <dc:date>2018-12-20</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2906</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/html</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://ufal.mff.cuni.cz/pdit-eda1.0</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

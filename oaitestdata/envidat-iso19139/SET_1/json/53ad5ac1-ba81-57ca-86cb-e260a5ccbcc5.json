@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "mott@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "PDF",
+        "ZIP"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/envidat.25",
+    "PublicationTimestamp": "2017-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "E\u0300cole Polytechnique Fe\u0300de\u0300rale de Lausanne, Lausanne, Switzerland School of Architecture, Civil and Environmental Engineering, Laboratory of Cryospheric Sciences (CRYOS) and WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland,"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Rebecca Mott"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/envidat.25;2018-10-26T13:07:13Z;doi:10.16904/envidat.25;Eng;MD_CharacterSetCode_utf8;Rebecca Mott;E\u0300cole Polytechnique Fe\u0300de\u0300rale de Lausanne, Lausanne, Switzerland School of Architecture, Civil and Environmental Engineering, Laboratory of Cryospheric Sciences (CRYOS) and WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland,;mott@slf.ch;2017-07-19T13:16:40;ISO 19115:2003/19139;1.0;EPSG:4326;DISCHMEX - High-resolution daily snow ablation rates in an Alpine environment;2017-12-31;We recorded snow ablation maps with a terrestrial laser scanner (TLS, Riegl-VZ6000) at the Gletschboden area. The TLS position is located approximately 30 vertical meters above the Gletschboden area at a northerly exposed slope. In total 44 TLS measurement sets have been conducted in three consecutive years 2014-2016 (2014: 13 measurements; 2015: 17 measurements; 2016: 14 measurements). The TLS system has a single-point measurement frequency of 300 kHz and a beam divergence of 0.007\u00b0. This set-up allows a horizontal resolution of approximately 0.01 m in 100 m distance to the TLS position. One scan of the Gletschboden area lasts approximately 15 minutes. The travel time from the laser scanner towards the surface is recorded and afterwards converted into a point cloud of distances. 5 reflectors located at the Gletschboden area and in the closer surroundings were additionally scanned during each measurement to transform the point cloud from the scanner own coordinate system into Swiss coordinates. Additionally, orthophotos have been created by using pictures recorded from the TLS in order to provide snow mask maps. Snow and bare ground can be distinguished by the RGB color information of the orthophoto. Cells with blue band information greater than 175 were categorized as snow and all cells with values smaller or equal 175 were categorized as bare ground.;Rebecca Mott;E\u0300cole Polytechnique Fe\u0300de\u0300rale de Lausanne, Lausanne, Switzerland School of Architecture, Civil and Environmental Engineering, Laboratory of Cryospheric Sciences (CRYOS) and WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland,;mott@slf.ch;PATCHY SNOW COVERS;SNOW ABLATION RATES;TERRESTRIAL LASER SCANNING;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;9.92665 46.71291;ZIP;PDF;https://www.envidat.ch/dataset/10-16904-envidat-25;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/299a98ef-94e5-4bdd-912f-24b347d20da6/download/2014dem.zip;HTTPS;DEM 2014;download;https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/5a5b22eb-a0ae-4552-a7b3-34631c3ae998/download/2014snowmask.zip;HTTPS;SNOWMASK 2014;download;https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/9d19c582-76ca-45df-b032-46d8346f45be/download/2015dem.zip;HTTPS;DEM 2015;download;https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/89c08602-142c-4fdb-9c76-3993a9d0dbfc/download/2015snowmask.zip;HTTPS;SNOWMASK 2015;download;https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/787f969b-71db-4ec9-967b-7e0198dd9d71/download/2016dem.zip;HTTPS;DEM 2016;download;https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/2b54670d-74e9-4ea5-8fcd-4ea98ad26ed6/download/2016snowmask.zip;HTTPS;SNOWMASK 2016;download;https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/645e45ec-fc90-432c-a29e-d1d79781d5b2/download/dischma_neu.pdf;HTTPS;GLETSCHBODEN TEST SITE;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "53ad5ac1-ba81-57ca-86cb-e260a5ccbcc5",
+    "notes": [
+        "We recorded snow ablation maps with a terrestrial laser scanner (TLS, Riegl-VZ6000) at the Gletschboden area. The TLS position is located approximately 30 vertical meters above the Gletschboden area at a northerly exposed slope. In total 44 TLS measurement sets have been conducted in three consecutive years 2014-2016 (2014: 13 measurements; 2015: 17 measurements; 2016: 14 measurements). The TLS system has a single-point measurement frequency of 300 kHz and a beam divergence of 0.007\u00b0. This set-up allows a horizontal resolution of approximately 0.01 m in 100 m distance to the TLS position. One scan of the Gletschboden area lasts approximately 15 minutes. The travel time from the laser scanner towards the surface is recorded and afterwards converted into a point cloud of distances. 5 reflectors located at the Gletschboden area and in the closer surroundings were additionally scanned during each measurement to transform the point cloud from the scanner own coordinate system into Swiss coordinates. Additionally, orthophotos have been created by using pictures recorded from the TLS in order to provide snow mask maps. Snow and bare ground can be distinguished by the RGB color information of the orthophoto. Cells with blue band information greater than 175 were categorized as snow and all cells with values smaller or equal 175 were categorized as bare ground."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/envidat.25",
+        "oai:envidat.ch:10.16904/envidat.25"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "PATCHY SNOW COVERS"
+        },
+        {
+            "name": "SNOW ABLATION RATES"
+        },
+        {
+            "name": "TERRESTRIAL LASER SCANNING"
+        }
+    ],
+    "title": [
+        "DISCHMEX - High-resolution daily snow ablation rates in an Alpine environment"
+    ],
+    "url": "https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/645e45ec-fc90-432c-a29e-d1d79781d5b2/download/dischma_neu.pdf"
+}

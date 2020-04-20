@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Technische Informationsbibliothek (TIB)"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.22000/54",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/zip"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://www.radar-service.eu/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=b8f13f39-102c-5f9e-a598-2d68ae45d64c",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Technische Informationsbibliothek (TIB)"
+    ],
+    "ResourceType": [
+        "Umfrage / Survey",
+        "Dataset"
+    ],
+    "Rights": [
+        "CC BY 4.0 Attribution",
+        "Technische Informationsbibliothek (TIB)"
+    ],
+    "author": [
+        "Technische Informationsbibliothek (TIB) (conducted by engage AG)"
+    ],
+    "fulltext": "10.22000-54;2017-09-25T11:56:48Z;10.22000/54;DOI;Technische Informationsbibliothek (TIB) (conducted by engage AG);Questionnaire and Dataset of the TIB Survey 2017 on information procurment and pubishing behaviour of researchers in the natural sciences and engineering;Technische Informationsbibliothek (TIB);2017;Social Sciences;Other;Bibliothekswesen;Other;Library Science;Umfrage / Survey;Dataset;CC BY 4.0 Attribution;Technische Informationsbibliothek (TIB);Dreyer, Britta;0000-0002-0687-5460;Einbock, Joanna;Heller, Lambert;0000-0003-0232-7085;Kraft, Angelina;0000-0002-6454-335X;Plank, Margret;0000-0001-8941-7563;Schrenk, Philip;Sens, Irina;0000-0001-9190-8628;Tullney, Marco;0000-0002-5111-2788;Bernhofer, Carolin;H\u00e4fner, Peter;This data set contains the questionnaire and anonymized excerpts from the raw data of the quantitative online survey carried out from the end of 2016 till the beginning of 2017 among the researchers in the natural sciences and engineering on the subject of their information procurment and publishing behavior. Researchers from German universities and non-university research institutes were questioned. For the statistical evaluation 1,464 questionnaires were included.  The survey was carried out by engage - Key Technology Ventures AG, Karlsruhe, on behalf of the Technische Informationsbibliothek (TIB), and was funded by the Federal Ministry of Education and Research (BMBF) within the project \"Professionalisation and continuation of the concept for exploitation of research results at the German National Library of Science and Technology, Hannover (TIB)\" (funding ID: 03IO1441) dealing with the knowledge and technology transfer at the TIB. Please note, that the data set is available only in German.;survey, information procurment, publishing, scientific publications, repositories, Open Access;Dreyer, Britta;Einbock, Joanna;Heller, Lambert;Kraft, Angelina;Plank, Margret;Schrenk, Philip;Sens, Irina;Tullney, Marco;Bernhofer, Carolin;H\u00e4fner, Peter;deu;501100002347;application/zip",
+    "group": "radar",
+    "groups": [
+        {
+            "name": "radar"
+        }
+    ],
+    "name": "b8f13f39-102c-5f9e-a598-2d68ae45d64c",
+    "notes": [
+        "This data set contains the questionnaire and anonymized excerpts from the raw data of the quantitative online survey carried out from the end of 2016 till the beginning of 2017 among the researchers in the natural sciences and engineering on the subject of their information procurment and publishing behavior. Researchers from German universities and non-university research institutes were questioned. For the statistical evaluation 1,464 questionnaires were included.  The survey was carried out by engage - Key Technology Ventures AG, Karlsruhe, on behalf of the Technische Informationsbibliothek (TIB), and was funded by the Federal Ministry of Education and Research (BMBF) within the project \"Professionalisation and continuation of the concept for exploitation of research results at the German National Library of Science and Technology, Hannover (TIB)\" (funding ID: 03IO1441) dealing with the knowledge and technology transfer at the TIB. Please note, that the data set is available only in German.",
+        "survey, information procurment, publishing, scientific publications, repositories, Open Access"
+    ],
+    "oai_identifier": [
+        "b8f13f39-102c-5f9e-a598-2d68ae45d64c"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Social"
+        },
+        {
+            "name": "Sciences"
+        },
+        {
+            "name": "Bibliothekswesen"
+        },
+        {
+            "name": "Library"
+        },
+        {
+            "name": "Science"
+        }
+    ],
+    "title": [
+        "Questionnaire and Dataset of the TIB Survey 2017 on information procurment and pubishing behaviour of researchers in the natural sciences and engineering"
+    ],
+    "url": ""
+}

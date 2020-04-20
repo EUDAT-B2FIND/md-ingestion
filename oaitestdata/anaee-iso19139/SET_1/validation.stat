@@ -1,0 +1,131 @@
+
+ Statistics of
+	community	anaee
+	subset		SET_1
+	# of records	4
+  see as well oaidata/anaee-iso19139/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 1     : Datasets from experimentations using the AnaEE services      |
+      |- 1     : AnaEE-France modeling platforms and data management services      |
+      |- 1     : Projects of experimentation on ecosystems using the AnaEE services      |
+      |- 1     : AnaEE-France services for experimentation on continental ecosytems      |
+
+ |-> Description      <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 1     : AnaEE-France is the French national infrastructure devoted to the study of conti [...(1780 chars follow)...] |
+      |- 1     : AnaEE-France is the French national infrastructure devoted to the study of conti [...(787 chars follow)...] |
+      |- 1     : AnaEE-France is the French national infrastructure devoted to the study of conti [...(430 chars follow)...] |
+      |- 1     : AnaEE France has brought together in an integrated network a unique collection o [...(1122 chars follow)...] |
+
+ |-> Tags             <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 2     : Environmental monitoring facilities      |
+      |- 1     : Guyane                              |
+      |- 1     : France                              |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL
+
+  |--     8 |  200 |     8 |  200
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/c106 [...(32 chars follow)...] |
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/1ff6 [...(32 chars follow)...] |
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/20b9 [...(32 chars follow)...] |
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/09d4 [...(32 chars follow)...] |
+
+ |-> RelatedIdentifier <--       //gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL
+
+  |--     8 |  200 |     8 |  200
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/c106 [...(32 chars follow)...] |
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/1ff6 [...(32 chars follow)...] |
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/20b9 [...(32 chars follow)...] |
+      |- 2     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/09d4 [...(32 chars follow)...] |
+
+ |-> MetaDataAccess   <--                     
+  |--     4 |  100 |     4 |  100
+      |- 1     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus?verb=GetRecord& [...(71 chars follow)...] |
+      |- 1     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus?verb=GetRecord& [...(71 chars follow)...] |
+      |- 1     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus?verb=GetRecord& [...(71 chars follow)...] |
+      |- 1     : http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus?verb=GetRecord& [...(71 chars follow)...] |
+
+ |-> Creator          <--       //gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : Philippe Clastre                    |
+
+ |-> Publisher        <--       //gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : INRA                                |
+
+ |-> Contributor      <--       <string>AnaEE</string>
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : AnaEE                               |
+
+ |-> PublicationYear  <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : 2018                                |
+
+ |-> Rights           <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useLimitation/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : See AnaEE-France charters           |
+
+ |-> OpenAccess       <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : christian.pichot@avignon.inra.fr      |
+
+ |-> Language         <--       <string>eng</string>
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : English                             |
+
+ |-> ResourceType     <--       <string>dataset</string>
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : dataset                             |
+
+ |-> Format           <--       //gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : inapplicable                        |
+
+ |-> Discipline       <--       <string>Environmental Monitoring</string>
+
+  |--     4 |  100 |     4 |  100
+      |- 4     : Environmental Monitoring            |
+
+ |-> SpatialCoverage  <--       //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()
+
+  |--     2 |   50 |     2 |   50
+      |- 1     : 47.22                               |
+      |- 1     : (41N-51N,6 W-10E)                   |
+
+ |-> TemporalCoverage <--       //gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text()
+
+  |--     4 |  100 |     4 |  100
+      |- 4     :  point in time : 2012-01-01T11:59:59Z      |
+

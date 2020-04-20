@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "803 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0013",
+    "MetadataAccess": [
+        "oai:ota:oucs:0013"
+    ],
+    "PublicationTimestamp": "1796-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1796"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Letters"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Austen, Jane,  1775-1817"
+    ],
+    "fulltext": "oai:ota:oucs:0013;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0013.xml; Letters  / compiled by P. Barrow;Austen, Jane,  1775-1817;1796-1817;text_and_corpus_linguistics;Letters -- England -- 19th century;eng;Oxford Text Archive, University of Oxford;803 KB;Text;Letters;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cf2d4702-05d7-58d4-826d-f77e26674163",
+    "oai_identifier": [
+        "oai:ota:oucs:0013"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Letters -- England -- th century"
+        }
+    ],
+    "title": [
+        " Letters  / compiled by P. Barrow"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0013.xml"
+}

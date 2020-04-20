@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1455</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Spoken corpus of Karel Mako&#328;</dc:title>
+      <dc:creator>Kr&#367;za, Old&#345;ich</dc:creator>
+      <dc:subject>single speaker</dc:subject>
+      <dc:subject>spoken corpus</dc:subject>
+      <dc:subject>christianity</dc:subject>
+      <dc:subject>mystic</dc:subject>
+      <dc:description>Talks of Karel Mako&#328; given to his friends in the course of late sixties through early nineties of the 20th century. The topic is mostly christian mysticism.</dc:description>
+      <dc:date>2012</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1455</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 7</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://www.makon.fm/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

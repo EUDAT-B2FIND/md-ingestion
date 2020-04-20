@@ -1,0 +1,57 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.23728/b2share.933d3d24060d4b528c2f6c523ac3844d",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/933d3d24060d4b528c2f6c523ac3844d",
+    "PID": "http://hdl.handle.net/11304/b096f60a-7232-4bc5-97d0-5297d8d85c04",
+    "PublicationTimestamp": "2019-04-12T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/b096f60a-7232-4bc5-97d0-5297d8d85c04",
+        "10.23728/b2share.933d3d24060d4b528c2f6c523ac3844d",
+        "https://b2share.eudat.eu/api/records/933d3d24060d4b528c2f6c523ac3844d",
+        "oai:b2share.eudat.eu:b2rec/933d3d24060d4b528c2f6c523ac3844d"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "Creative Commons Attribution-NonCommercial-NoDerivs (CC-BY-NC-ND)"
+    ],
+    "author": [
+        "Franco Vazza"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/933d3d24060d4b528c2f6c523ac3844d;2019-04-12T15:07:50Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;Franco Vazza;2019-04-12T15:07:50.961654+00:00;Initial conditions for ENZO (enzo-project.org) AMR simulations of a pair of massive clusters in an early merger stage. Nested initial conditions are needed to produce 2 sets of 256^3 nested grids, using ENZO's \"inits\" sub-program. The full AMR simulation can then run with enzo.exe -d param_amr.dat A simulation with 8 levels of AMR within the innermost 0.1^3 region, and Dedner-MHD (see param_amr.dat)  took ~80,000 core hours on 512 cores in JURECA (now dismissed) @ Julich FZ. More info can be found here http://adsabs.harvard.edu/abs/2018MNRAS.474.1672V and here https://cosmosimfrazza.myfreesites.net/amr_clusters ;http://hdl.handle.net/11304/b096f60a-7232-4bc5-97d0-5297d8d85c04;10.23728/b2share.933d3d24060d4b528c2f6c523ac3844d;https://b2share.eudat.eu/api/records/933d3d24060d4b528c2f6c523ac3844d;oai:b2share.eudat.eu:b2rec/933d3d24060d4b528c2f6c523ac3844d;info:eu-repo/semantics/openAccess;Creative Commons Attribution-NonCommercial-NoDerivs (CC-BY-NC-ND);enzo;numerical simulations;MHD;Initial conditions for pre-merger cluster simulation with ENZO",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "0a04573e-7cf3-5846-924a-a5e0c89063c7",
+    "notes": [
+        "Initial conditions for ENZO (enzo-project.org) AMR simulations of a pair of massive clusters in an early merger stage. Nested initial conditions are needed to produce 2 sets of 256^3 nested grids, using ENZO's \"inits\" sub-program. The full AMR simulation can then run with enzo.exe -d param_amr.dat A simulation with 8 levels of AMR within the innermost 0.1^3 region, and Dedner-MHD (see param_amr.dat)  took ~80,000 core hours on 512 cores in JURECA (now dismissed) @ Julich FZ. More info can be found here http://adsabs.harvard.edu/abs/2018MNRAS.474.1672V and here https://cosmosimfrazza.myfreesites.net/amr_clusters "
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/933d3d24060d4b528c2f6c523ac3844d"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "enzo"
+        },
+        {
+            "name": "numerical simulations"
+        },
+        {
+            "name": "MHD"
+        }
+    ],
+    "title": [
+        "Initial conditions for pre-merger cluster simulation with ENZO"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/933d3d24060d4b528c2f6c523ac3844d"
+}

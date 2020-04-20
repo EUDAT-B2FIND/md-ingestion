@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Sejm RP, MSZ RP"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 6",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/159",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/159"
+    ],
+    "PID": "http://hdl.handle.net/11321/159",
+    "PublicationTimestamp": "1990-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1990"
+    ],
+    "Publisher": [
+        "Sejm RP, MSZ RP"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Skubiszewski, Krzysztof"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/159;2015-04-20T12:25:49Z;hdl_11321_3;hdl_11321_4;1990_Skubiszewski;Skubiszewski, Krzysztof;pierwsze expose MSZ III RP;1990;corpus;http://hdl.handle.net/11321/159;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 6;Sejm RP, MSZ RP;C:\\Users\\media\\Dropbox\\Dropbox\\Dropbox\\!WAD\\Expose MSZ 1955-2014\\expose msz 1990-2014\\expose msz 1990-2014 txt\\1990",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a2126bca-6206-56df-8aa8-0f95b95cb38c",
+    "notes": [
+        "pierwsze expose MSZ III RP"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/159"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "1990_Skubiszewski"
+    ],
+    "url": ""
+}

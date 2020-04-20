@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0027",
+    "MetadataAccess": [
+        "oai:ota:oucs:0027"
+    ],
+    "PublicationTimestamp": "1865-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1865"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Juvenile literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Carroll, Lewis,  1832-1898"
+    ],
+    "fulltext": "oai:ota:oucs:0027;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0027.xml; Alice in wonderland  / compiled by Lou Burnard;Carroll, Lewis,  1832-1898;1865;text_and_corpus_linguistics;Juvenile literature -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Juvenile literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d73e1c9e-0caf-5e09-a87a-83d7bcf3a3d3",
+    "oai_identifier": [
+        "oai:ota:oucs:0027"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Juvenile literature -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        " Alice in wonderland  / compiled by Lou Burnard"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0027.xml"
+}

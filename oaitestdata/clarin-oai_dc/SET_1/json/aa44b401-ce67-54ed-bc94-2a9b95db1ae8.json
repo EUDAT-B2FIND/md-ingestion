@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=824f76bcbc8d11e1a404080027e73ea2dcf6c3290e944b38a24abab77a1d53e1",
+    "MetadataAccess": [
+        "824f76bcbc8d11e1a404080027e73ea2dcf6c3290e944b38a24abab77a1d53e1"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "824f76bcbc8d11e1a404080027e73ea2dcf6c3290e944b38a24abab77a1d53e1;2018-11-15T16:39:19Z;toolService;toolService:tool;UIMA/U-Compare OpenNLP Tokenizer;This is a UIMA wrapper for the OpenNLP Tokenizer tool. It splits English sentences into individual tokens. The tool forms part of the in-built library of components provided with the U-Compare platform (see separate META-SHARE record)  for building and evaluating text mining workflows. The U-Compare Workbench (see separate META-SHARE record), provides a graphical drag-and drop interface for the rapid creation of workflows. \n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "aa44b401-ce67-54ed-bc94-2a9b95db1ae8",
+    "notes": [
+        "This is a UIMA wrapper for the OpenNLP Tokenizer tool. It splits English sentences into individual tokens. The tool forms part of the in-built library of components provided with the U-Compare platform (see separate META-SHARE record)  for building and evaluating text mining workflows. The U-Compare Workbench (see separate META-SHARE record), provides a graphical drag-and drop interface for the rapid creation of workflows. \n"
+    ],
+    "oai_identifier": [
+        "824f76bcbc8d11e1a404080027e73ea2dcf6c3290e944b38a24abab77a1d53e1"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "UIMA/U-Compare OpenNLP Tokenizer"
+    ]
+}

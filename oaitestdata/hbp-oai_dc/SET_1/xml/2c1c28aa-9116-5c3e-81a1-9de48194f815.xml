@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.25493_DTSG-ZBS</identifier>
+    <datestamp>2019-12-10T12:41:57Z</datestamp>
+  </header>
+  <metadata>
+    <metadata xmlns="http://example.org/myapp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+      <dc:identifier>https://doi.org/10.25493/DTSG-ZBS</dc:identifier>
+      <dc:title>Microscopic resolution diffusion magnetic resonance images of a normal adult Sprague Dawley rat brain</dc:title>
+      <dc:created>2019-09-20T08:19:41.837Z</dc:created>
+      <dc:description>Anatomical reference volume of a normal adult male Sprague Dawley rat brain, consisting of high resolution, contrast enhanced, structural magnetic resonance images (sMRI; 39 &#956;m isotropic voxels) and diffusion tensor images (DTI, 78 &#956;m isotropic voxels). Version 1.01 features a standardized orientation of the volumetric datasets according to NIfTI-1 format defaults, allowing users to read Waxholm Space coordinates directly from the data volume using publicly available software (e.g. ITK-SNAP and MBAT). For details, see &#8220;Release notes v1.01&#8221;.
+
+The dataset is hosted on [NITRC.org](https://www.nitrc.org/frs/?group_id=1081) and includes: 
+* [ T&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;*&lt;/sup&gt;-weighted gradient echo image](https://www.nitrc.org/frs/download.php/9423/WHS_SD_rat_T2star_v1.01.nii.gz "Download T2*-weighted gradient echo image from NITRC") at 39 &#956;m original resolution (1024x512x512 voxels)
+* [Apparent Diffusion Coefficient (ADC) map](https://www.nitrc.org/frs/download.php/9430/WHS_SD_rat_ADC_v1.01.nii.gz "Download Apparent Diffusion Coefficient (ADC) map from NITRC") resampled to 39 &#956;m resolution (1024x512x512 voxels)
+* [DTI b0 image](https://www.nitrc.org/frs/download.php/9431/WHS_SD_rat_DTI_512_v1.01.zip "Download DTI b0 image from NITRC") resampled to 39 &#956;m resolution (1024x512x512 voxels)
+* [Diffusion weighted image map](https://www.nitrc.org/frs/download.php/9429/WHS_SD_rat_DWI_v1.01.nii.gz "Download Diffusion weighted image map from NITRC") resampled to 39 &#956;m resolution (1024x512x512 voxels)
+* [Fractional Anisotropy (FA) map](https://www.nitrc.org/frs/download.php/9428/WHS_SD_rat_FA_v1.01.nii.gz "Download Fractional Anisotropy (FA) map from NITRC") resampled to 39 &#956;m resolution (1024x512x512 voxels)
+* [Color FA map](https://www.nitrc.org/frs/download.php/9424/WHS_SD_rat_FA_color_v1.01.nii.gz "Download Color FA map from NITRC") resampled to 39 &#956;m resolution (1024x512x512 voxels), combining the FA and primary eigenvector to 24-bit color RGB where intensity is given by relative FA value and color is assigned to directions (RGB to xyz respectively)
+</dc:description>
+      <dc:subject>neuroscience</dc:subject>
+      <dc:subject>Structural brain imaging</dc:subject>
+      <dc:language>english</dc:language>
+      <dc:type>dataset</dc:type>
+      <dc:publisher>The Human Brain Project</dc:publisher>
+      <dc:contributor>Papp, Eszter A.</dc:contributor>
+      <dc:contributor>Leergaard, Trygve B.</dc:contributor>
+      <dc:contributor>Calabrese, Evan</dc:contributor>
+      <dc:contributor>Johnson, G. Allan</dc:contributor>
+      <dc:contributor>Bjaalie, Jan G.</dc:contributor>
+      <dc:creator>Johnson, G. Allan</dc:creator>
+      <dc:format>NIFTI</dc:format>
+      <dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</dc:rights>
+      <dc:relation>https://doi.org/10.1016/j.neuroimage.2014.10.017</dc:relation>
+      <dc:relation>https://doi.org/10.1016/j.neuroimage.2014.04.001</dc:relation>
+    </metadata>
+  </metadata>
+</record>

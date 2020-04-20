@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5150",
+    "MetadataAccess": [
+        "oai:ota:oucs:5150"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lennox, Charlotte, ca. 1729-1804."
+    ],
+    "fulltext": "oai:ota:oucs:5150;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5150.xml;The memoirs of the Countess of Berci. Taken from the French by the author of the Female Quixote. In two volumes.: [pt.1];Histoire trage-comique de nostre temps, sous les noms de Lysandre et de Caliste. English;Lennox, Charlotte, ca. 1729-1804.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fe5988ee-e2f2-5be1-b7fa-43b2a9d0686c",
+    "oai_identifier": [
+        "oai:ota:oucs:5150"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The memoirs of the Countess of Berci. Taken from the French by the author of the Female Quixote. In two volumes.: [pt.1]",
+        "Histoire trage-comique de nostre temps, sous les noms de Lysandre et de Caliste. English"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5150.xml"
+}

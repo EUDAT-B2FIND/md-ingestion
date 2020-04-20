@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/8798597</identifier>
+    <datestamp>2019-07-08T14:21:46Z</datestamp>
+    <setSpec>category_125</setSpec>
+    <setSpec>category_747</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_9</setSpec>
+    <setSpec>month_year_07_2019</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Gap Analysis - spatial description of network spaces</dc:title>
+      <dc:creator>Sophie Acton (6782690)</dc:creator>
+      <dc:subject>Bioinformatics</dc:subject>
+      <dc:subject>Computational Biology</dc:subject>
+      <dc:subject>MATLAB</dc:subject>
+      <dc:subject>FRC</dc:subject>
+      <dc:subject>lymph node</dc:subject>
+      <dc:subject>image analysis</dc:subject>
+      <dc:subject>Gap analysis</dc:subject>
+      <dc:description>&lt;div&gt;MATLAB&lt;br&gt;&lt;/div&gt;https://www.actonlab.co.uk/gap-analysis-matlab/&lt;div&gt;Instructions to carry out gap analysis on network images.&lt;/div&gt;&lt;div&gt;Previously used in https://www.nature.com/articles/nature13814&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;</dc:description>
+      <dc:date>2019-07-08T14:21:46Z</dc:date>
+      <dc:type>Software</dc:type>
+      <dc:type>Software</dc:type>
+      <dc:identifier>10.5522/04/8798597.v1</dc:identifier>
+      <dc:relation>https://figshare.com/articles/Gap_Analysis_-_spatial_description_of_network_spaces/8798597</dc:relation>
+      <dc:rights>CC BY 4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

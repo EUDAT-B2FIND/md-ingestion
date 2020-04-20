@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4432",
+    "MetadataAccess": [
+        "oai:ota:oucs:4432"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Mendez, Moses, d. 1758."
+    ],
+    "fulltext": "oai:ota:oucs:4432;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4432.xml;The shepherds lottery. A musical entertainment: As it is perform'd by His Majesty's Company of comedians at the Theatre-Royal in Drury-Lane. The music compos'd by Dr. Boyce.;Mendez, Moses, d. 1758.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "16c704c2-1eb0-5ffb-8d95-8d5746be83d3",
+    "oai_identifier": [
+        "oai:ota:oucs:4432"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The shepherds lottery. A musical entertainment: As it is perform'd by His Majesty's Company of comedians at the Theatre-Royal in Drury-Lane. The music compos'd by Dr. Boyce."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4432.xml"
+}

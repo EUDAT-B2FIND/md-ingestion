@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-05BE5L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:9474551",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:9474551"
+    ],
+    "PublicationTimestamp": "2016-11-09T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Pajupuu, Hille"
+    ],
+    "fulltext": "oai:oai.datacite.org:9474551;2019-01-22T05:01:42Z;ESTDOI;ESTDOI.KEEL;Valentsikorpus;Pajupuu, Hille;Center of Estonian Language Resources;2016;Issued: 2016-11-09;Updated: 2016-11-09;doi:10.15155/3-00-0000-0000-0000-05BE5L;Abstract;Valentsikorpus koosneb \"Postimehe\" artiklite ortograafilistest l\u00f5ikudest, mille emotsionaalsuse (positiivne, negatiivne, vastuoluline, neutraalne) on m\u00e4\u00e4ranud lugejad. Kasutatud on domineeriva arvamuse meetodit (Pennebaker jt 1997).\nValentsikorpus on m\u00f5eldud eesk\u00e4tt statistiliste mudelite treenimiseks, kuid seda saab kasutada ka muudel eesm\u00e4rkidel. P\u00e4ringuid on v\u00f5imalik teha nii rubriike (Arvamus, Eesti, Kultuur, Sport, V\u00e4lismaa, Krimi) kui ka emotsionaalsust (positiivne, negatiivne, vastuoluline, neutraalne) arvesse v\u00f5ttes.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "edba948e-5d88-50e7-9733-d345bf502b66",
+    "notes": [
+        "Abstract",
+        "Valentsikorpus koosneb \"Postimehe\" artiklite ortograafilistest l\u00f5ikudest, mille emotsionaalsuse (positiivne, negatiivne, vastuoluline, neutraalne) on m\u00e4\u00e4ranud lugejad. Kasutatud on domineeriva arvamuse meetodit (Pennebaker jt 1997).\nValentsikorpus on m\u00f5eldud eesk\u00e4tt statistiliste mudelite treenimiseks, kuid seda saab kasutada ka muudel eesm\u00e4rkidel. P\u00e4ringuid on v\u00f5imalik teha nii rubriike (Arvamus, Eesti, Kultuur, Sport, V\u00e4lismaa, Krimi) kui ka emotsionaalsust (positiivne, negatiivne, vastuoluline, neutraalne) arvesse v\u00f5ttes."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:9474551"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Valentsikorpus"
+    ],
+    "url": ""
+}

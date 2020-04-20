@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "text/plain",
+        "downloadable_files_count: 2"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1581",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1581"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1581",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bojar, Ond\u0159ej",
+        "Tamchyna, Ale\u0161"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1581;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;TMODS:ENG-CZE -- query translation;Tamchyna, Ale\u0161;Bojar, Ond\u0159ej;machine translation;query translationn;AMALACH project component TMODS:ENG-CZE; machine translation of queries from Czech to English. This archive contains models for the Moses decoder (binarized, pruned to allow for real-time translation) and configuration files for the MTMonkey toolkit. The aim of this package is to provide a full service for Czech->English translation which can be easily utilized as a component in a larger software solution. (The required tools are freely available and an installation guide is included in the package.)\r\n\r\nThe translation models were trained on CzEng 1.0 corpus and Europarl. Monolingual data for LM estimation additionally contains WMT news crawls until 2013.;2015;toolService;http://hdl.handle.net/11234/1-1581;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/x-gzip;text/plain;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/grants/amalach",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6b016f28-96e8-525d-b568-e66bd807bb87",
+    "notes": [
+        "AMALACH project component TMODS:ENG-CZE; machine translation of queries from Czech to English. This archive contains models for the Moses decoder (binarized, pruned to allow for real-time translation) and configuration files for the MTMonkey toolkit. The aim of this package is to provide a full service for Czech->English translation which can be easily utilized as a component in a larger software solution. (The required tools are freely available and an installation guide is included in the package.)\r\n\r\nThe translation models were trained on CzEng 1.0 corpus and Europarl. Monolingual data for LM estimation additionally contains WMT news crawls until 2013."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1581"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "query translationn"
+        }
+    ],
+    "title": [
+        "TMODS:ENG-CZE -- query translation"
+    ],
+    "url": ""
+}

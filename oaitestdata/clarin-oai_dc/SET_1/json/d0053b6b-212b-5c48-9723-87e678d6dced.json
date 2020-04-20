@@ -1,0 +1,70 @@
+{
+    "Contributor": [
+        "Quan Nguyen",
+        "Michael Kipp",
+        "Gabriel Manolache"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:anvil",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:anvil"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0005-BD0D-2",
+    "RelatedIdentifier": [
+        "Kipp, M. (to appear) Multimedia Annotation, Querying and Analysis in ANVIL. In: M. Maybury (ed.) Multimedia Information Extraction, Chapter 19, IEEE Computer Society Press.",
+        "Kipp, M. (to appear) ANVIL: A Universal Video Research Tool. In: J. Durand, U. Gut, G. Kristofferson (Hrsg.) Handbook of Corpus Phonology, Oxford University Press.",
+        "Heloir, A., Neff, M. and Kipp, M. (2010) Exploiting Motion Capture for Virtual Human Animation: Data Collection and Annotation Visualization. In: Proc. of the LREC Workshop on \"Multimodal Corpora: Advances in Capturing, Coding and Analyzing Multimodality\", ELDA.",
+        "Kipp, M. (2008) Spatiotemporal Coding in ANVIL. Proceedings of the 6th international conference on Language Resources and Evaluation (LREC-08).",
+        "Kipp, M. (2004), Gesture Generation by Imitation - From Human Behavior to Computer Character Animation, Boca Raton, Florida: Dissertation.com. (My published PhD thesis.)",
+        "Kipp, M. (2001) Anvil - A Generic Annotation Tool for Multimodal Dialogue. Proceedings of the 7th European Conference on Speech Communication and Technology (Eurospeech), pp. 1367-1370."
+    ],
+    "ResourceType": [
+        "Software"
+    ],
+    "author": [
+        "Michael Kipp\nHochschule Augsburg\nAn der Hochschule 1\n86161 Augsburg\nmichael.kipp@hs-augsburg.de"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:anvil;2014-06-03T12:53:03Z;Anvil The video annotation research tool;Michael Kipp\nHochschule Augsburg\nAn der Hochschule 1\n86161 Augsburg\nmichael.kipp@hs-augsburg.de;gesture research;video annotation;time-alignment;multimodal corpora;phonology;ANVIL is a free video annotation tool. It offers multi-layered annotation based on a user-defined coding scheme. During coding the user can see color-coded elements on multiple tracks in time-alignment. Some special features are cross-level links, non-temporal objects, timepoint tracks, coding agreement analysis and a project tool for managing whole corpora of annotation files.;ANVIL ist ein frei erh\u00e4ltiches Annotationstool. Es bietet die M\u00f6glichkeit zur mehrdimensionalen Annotation basierend auf einem benutzerdefinierten Kodierungsschema. W\u00e4hrend des Kodierens sieht der Benutzer farbkodierte Elemente zeitlich alineiert auf mehreren Spuren. Spezielle Features des Werkzeugs sind ebenen\u00fcbergreifende Links, nicht-temporale Objekte, Zeitspuren, Analyse der \u00dcbereinstimmung der Kodierung und ein Projektwerkzeug f\u00fcr die Verwaltung von Annotationsdateien ganzer Korpora.;Michael Kipp;Quan Nguyen;Gabriel Manolache;Software;clarind-uds:anvil;hdl:11858/00-246C-0000-0005-BD0D-2;Kipp, M. (to appear) Multimedia Annotation, Querying and Analysis in ANVIL. In: M. Maybury (ed.) Multimedia Information Extraction, Chapter 19, IEEE Computer Society Press.;Kipp, M. (to appear) ANVIL: A Universal Video Research Tool. In: J. Durand, U. Gut, G. Kristofferson (Hrsg.) Handbook of Corpus Phonology, Oxford University Press.;Heloir, A., Neff, M. and Kipp, M. (2010) Exploiting Motion Capture for Virtual Human Animation: Data Collection and Annotation Visualization. In: Proc. of the LREC Workshop on \"Multimodal Corpora: Advances in Capturing, Coding and Analyzing Multimodality\", ELDA.;Kipp, M. (2008) Spatiotemporal Coding in ANVIL. Proceedings of the 6th international conference on Language Resources and Evaluation (LREC-08).;Kipp, M. (2004), Gesture Generation by Imitation - From Human Behavior to Computer Character Animation, Boca Raton, Florida: Dissertation.com. (My published PhD thesis.);Kipp, M. (2001) Anvil - A Generic Annotation Tool for Multimodal Dialogue. Proceedings of the 7th European Conference on Speech Communication and Technology (Eurospeech), pp. 1367-1370.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d0053b6b-212b-5c48-9723-87e678d6dced",
+    "notes": [
+        "ANVIL is a free video annotation tool. It offers multi-layered annotation based on a user-defined coding scheme. During coding the user can see color-coded elements on multiple tracks in time-alignment. Some special features are cross-level links, non-temporal objects, timepoint tracks, coding agreement analysis and a project tool for managing whole corpora of annotation files.",
+        "ANVIL ist ein frei erh\u00e4ltiches Annotationstool. Es bietet die M\u00f6glichkeit zur mehrdimensionalen Annotation basierend auf einem benutzerdefinierten Kodierungsschema. W\u00e4hrend des Kodierens sieht der Benutzer farbkodierte Elemente zeitlich alineiert auf mehreren Spuren. Spezielle Features des Werkzeugs sind ebenen\u00fcbergreifende Links, nicht-temporale Objekte, Zeitspuren, Analyse der \u00dcbereinstimmung der Kodierung und ein Projektwerkzeug f\u00fcr die Verwaltung von Annotationsdateien ganzer Korpora."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:anvil"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "gesture research"
+        },
+        {
+            "name": "video annotation"
+        },
+        {
+            "name": "time-alignment"
+        },
+        {
+            "name": "multimodal corpora"
+        },
+        {
+            "name": "phonology"
+        }
+    ],
+    "title": [
+        "Anvil The video annotation research tool"
+    ],
+    "url": ""
+}

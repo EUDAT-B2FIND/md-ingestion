@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "ILSP/R.C. \"Athena\""
+    ],
+    "Contributor": [
+        "Prokopidis, Prokopis"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1308",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1308"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1308",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "ILSP/R.C. \"Athena\""
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Greece"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Papageorgiou, Haris",
+        "Prokopidis, Prokopis"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1308;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;ILSP Feature-based multi-tiered POS Tagger;Papageorgiou, Haris;Prokopidis, Prokopis;Prokopidis, Prokopis;POS tagger;ILSP FBT Tagger is an adaptation of the Brill tagger trained on Greek text. It uses a PAROLE compatible tagset of 584 different tags which capture the morphosyntactic particularities of the Greek language. Working on the output of a sentence detection and tokenisation tool, the tagger assigns initial tags, looking up in a lexicon created from a manually annotated corpus during training. A suffix lexicon is used for initially tagging unknown words. 799 contextual rules are then applied to improve the initial phase output.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1308;downloadable_files_count: 0;Greece;ILSP/R.C. \"Athena\"",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a639e798-232c-52c2-9c6d-e365b4724c93",
+    "notes": [
+        "ILSP FBT Tagger is an adaptation of the Brill tagger trained on Greek text. It uses a PAROLE compatible tagset of 584 different tags which capture the morphosyntactic particularities of the Greek language. Working on the output of a sentence detection and tokenisation tool, the tagger assigns initial tags, looking up in a lexicon created from a manually annotated corpus during training. A suffix lexicon is used for initially tagging unknown words. 799 contextual rules are then applied to improve the initial phase output."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1308"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "POS tagger"
+        }
+    ],
+    "title": [
+        "ILSP Feature-based multi-tiered POS Tagger"
+    ],
+    "url": ""
+}

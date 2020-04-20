@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1034</identifier>
+    <datestamp>2017-09-29T13:48:01Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Written corpus ccKres 1.0</dc:title>
+      <dc:creator>Logar, Nata&#353;a</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Gr&#269;ar, Miha</dc:creator>
+      <dc:creator>Holozan, Peter</dc:creator>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>Corpus ccKres consists of 9,376 documents, each containing information about the source (e.g. newspapers, magazines), year of publication, text type (fiction, newspaper), the title and author if they are known. The corpus is POS-tagged and lemmatised, and encoded in XML TEI format (Text Encoding Initiative P5). The ccKres corpus contains approximately 9% of the Kres corpus, a balanced corpus of Slovene: http://eng.slovenscina.eu/korpusi/kres.</dc:description>
+      <dc:date>2013-09-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1034</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Centre for Language Resources and Technologies, University of Ljubljana</dc:publisher>
+      <dc:source>http://eng.slovenscina.eu/korpusi/proste-zbirke</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

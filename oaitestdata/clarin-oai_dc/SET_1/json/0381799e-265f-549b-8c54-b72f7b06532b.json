@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4652",
+    "MetadataAccess": [
+        "oai:ota:oucs:4652"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gibbon, Edward, 1737-1794."
+    ],
+    "fulltext": "oai:ota:oucs:4652;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4652.xml;Miscellaneous works: of Edward Gibbon, Esquire. With memoirs of his life and writings, composed by himself: illustrated from his letters, with occasional notes and narrative, by John Lord Sheffield. In two volumes. ... [pt.1];Gibbon, Edward, 1737-1794.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0381799e-265f-549b-8c54-b72f7b06532b",
+    "oai_identifier": [
+        "oai:ota:oucs:4652"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Miscellaneous works: of Edward Gibbon, Esquire. With memoirs of his life and writings, composed by himself: illustrated from his letters, with occasional notes and narrative, by John Lord Sheffield. In two volumes. ... [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4652.xml"
+}

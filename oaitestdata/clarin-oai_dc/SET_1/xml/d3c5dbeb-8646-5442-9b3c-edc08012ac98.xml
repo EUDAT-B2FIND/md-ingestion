@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/103</identifier>
+    <datestamp>2015-04-08T14:05:57Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MWE Kaczkowski, Gr&#243;b Nieczui, Tom 1</dc:title>
+      <dc:creator>Kaczkowski, Kaczkowski</dc:creator>
+      <dc:description>Kaczkowski</dc:description>
+      <dc:date>2015-04-08</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/103</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Kaczkowski</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

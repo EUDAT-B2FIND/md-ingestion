@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00175L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17944559",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17944559"
+    ],
+    "PublicationTimestamp": "2019-01-03T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Orasmaa, Siim"
+    ],
+    "fulltext": "oai:oai.datacite.org:17944559;2019-01-03T11:49:43Z;ESTDOI;ESTDOI.KEEL;Osalausestaja;Clause Segmenter for Estonian;Orasmaa, Siim;Center of Estonian Language Resources;2019;Issued: 2019-01-03;Updated: 2019-01-03;doi:10.15155/1-00-0000-0000-0000-00175L;Abstract;Osalausepiiride tuvastaja;Abstract;Clause Segmenter is a program that splits long and complex natural \n language sentences into smaller segments (clauses). For example, the \n sentence \"Mees, keda seal kohtasime, oli tuttav ja teretas meid.\" \n will be split into following clauses:\n\n     \"[Mees, [keda seal kohtasime,] oli tuttav ja] [teretas meid.]\"\n     (in the example, clauses are surrounded by brackets)\n\n   The algorithm mainly relies on punctuation, conjunction words, and\n  finite verb forms on identifying the clause boundaries.\n  For linguistic details/motivations behind the algorithm, see (Kaalep, \n  Muischnek 2012).",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "56ea7b3b-7641-559c-95da-4a208ebab8a2",
+    "notes": [
+        "Abstract",
+        "Osalausepiiride tuvastaja",
+        "Abstract",
+        "Clause Segmenter is a program that splits long and complex natural \n language sentences into smaller segments (clauses). For example, the \n sentence \"Mees, keda seal kohtasime, oli tuttav ja teretas meid.\" \n will be split into following clauses:\n\n     \"[Mees, [keda seal kohtasime,] oli tuttav ja] [teretas meid.]\"\n     (in the example, clauses are surrounded by brackets)\n\n   The algorithm mainly relies on punctuation, conjunction words, and\n  finite verb forms on identifying the clause boundaries.\n  For linguistic details/motivations behind the algorithm, see (Kaalep, \n  Muischnek 2012)."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17944559"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Osalausestaja",
+        "Clause Segmenter for Estonian"
+    ],
+    "url": ""
+}

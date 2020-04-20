@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Italian",
+        "Ancient Greek (to 1453)",
+        "Arabic",
+        "Latin",
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-55",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-55"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-55",
+    "PublicationTimestamp": "2014-05-26T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Del Gratta, Riccardo",
+        "Boschetti, Federico"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-55;2018-07-23T09:13:44Z;hdl_000-c0-111_38;hdl_000-c0-111_49;CophiWordNet Search Interface 1.0;Boschetti, Federico;Del Gratta, Riccardo;Wordnets;Search Interface;Gui;This interface allows you to browse several wordnets in different languages.\r\nItalian, Ancient Greek, Latin, Croatian, Arabic\r\nEach wordnet is mapped on PWN 3.0 and the interface may be extended with other wordnets (please ask contact person).;2014-05-26;toolService;http://hdl.handle.net/20.500.11752/ILC-55;ita;grc;ara;lat;hrv;downloadable_files_count: 0;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.cophilab.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "48db4cf2-1413-5ad1-984f-fcf403c26a02",
+    "notes": [
+        "This interface allows you to browse several wordnets in different languages.\r\nItalian, Ancient Greek, Latin, Croatian, Arabic\r\nEach wordnet is mapped on PWN 3.0 and the interface may be extended with other wordnets (please ask contact person)."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-55"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Wordnets"
+        },
+        {
+            "name": "Search Interface"
+        },
+        {
+            "name": "Gui"
+        }
+    ],
+    "title": [
+        "CophiWordNet Search Interface 1.0"
+    ],
+    "url": ""
+}

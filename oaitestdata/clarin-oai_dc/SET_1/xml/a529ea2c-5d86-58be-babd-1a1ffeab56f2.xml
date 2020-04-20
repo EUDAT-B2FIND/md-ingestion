@@ -1,0 +1,47 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1091</identifier>
+    <datestamp>2017-05-15T09:49:35Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Dictionary of New Slovenian Words</dc:title>
+      <dc:creator>Bizjak Kon&#269;ar, Aleksandra</dc:creator>
+      <dc:creator>Glo&#382;an&#269;ev, Alenka</dc:creator>
+      <dc:creator>Kern, Boris</dc:creator>
+      <dc:creator>Kostanjevec, Polona</dc:creator>
+      <dc:creator>Krvina, Domen</dc:creator>
+      <dc:creator>Ledinek, Nina</dc:creator>
+      <dc:creator>Michelizza, Mija</dc:creator>
+      <dc:creator>Perdih, Andrej</dc:creator>
+      <dc:creator>Petric, &#352;pela</dc:creator>
+      <dc:creator>Snoj, Marko</dc:creator>
+      <dc:creator>&#352;ircelj &#381;nidar&#353;i&#269;, Ivanka</dc:creator>
+      <dc:creator>&#381;ele, Andreja</dc:creator>
+      <dc:creator>Mirti&#269;, Tanja</dc:creator>
+      <dc:creator>Gliha Komac, Nata&#353;a</dc:creator>
+      <dc:creator>Klemen&#269;i&#269;, Simona</dc:creator>
+      <dc:subject>dictionary</dc:subject>
+      <dc:subject>neologism</dc:subject>
+      <dc:subject>lexicography</dc:subject>
+      <dc:description>Slovar novej&#353;ega besedja slovenskega jezika (Dictionary of New Slovenian Words) represents a basic new lexical supplement to the Slovar slovenskega knji&#382;nega jezika (Dictionary of the Slovenian Standard Language). It contains 6399 new words and phrases that appeared in Slovenian or gained ground after 1991 as well as new meanings of previously standardised lexis. Two important new features of the dictionary are a corpus-driven analysis of new words that are in actual language use and etymological explanations of the included words.&#13;
+&#13;
+This dictionary was published as a printed book:&#13;
+Bizjak Kon&#269;ar, Aleksandra, Snoj, Marko, Glo&#382;an&#269;ev, Alenka, Kern, Boris, Kostanjevec, Polona, Krvina, Domen, Ledinek, Nina, Michelizza, Mija, Perdih, Andrej, Petric, &#352;pela, &#352;ircelj-&#381;nidar&#353;i&#269;, Ivanka, &#381;ele, Andreja, Mirti&#269;, Tanja, Gliha Komac, Nata&#353;a, Klemen&#269;i&#269;, Simona. Slovar novej&#353;ega besedja slovenskega jezika. Ljubljana : Zalo&#382;ba ZRC, ZRC SAZU, 2012. ISBN 978-961-254-413-3.</dc:description>
+      <dc:date>2012</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1091</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>ZRC SAZU</dc:publisher>
+      <dc:source>http://www.fran.si/131/snb-slovar-novejsega-besedja</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

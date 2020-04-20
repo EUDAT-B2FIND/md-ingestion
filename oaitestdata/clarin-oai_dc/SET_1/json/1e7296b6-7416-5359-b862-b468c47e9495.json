@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4629",
+    "MetadataAccess": [
+        "oai:ota:oucs:4629"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Woolston, Thomas, 1670-1733."
+    ],
+    "fulltext": "oai:ota:oucs:4629;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4629.xml;A sixth discourse on the miracles of our Saviour: in view of the present controversy between infidels and apostates. By Tho. Woolston, ...;Woolston, Thomas, 1670-1733.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1e7296b6-7416-5359-b862-b468c47e9495",
+    "oai_identifier": [
+        "oai:ota:oucs:4629"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A sixth discourse on the miracles of our Saviour: in view of the present controversy between infidels and apostates. By Tho. Woolston, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4629.xml"
+}

@@ -612,7 +612,7 @@ class Mapper(object):
             retval=list(OrderedDict.fromkeys(retval)) ## this elemenates real duplicates
             return (';'.join(retval),rethier)
         else:
-            return ('Not stated',list()) 
+            return ('Various',list()) 
    
     def cut(self,invalue,pattern,nfield=None):
         """
@@ -1150,8 +1150,10 @@ class Mapper(object):
             m = re.match(r'(\s+)<field name="(.*?)">', line)
             if m:
                 field=m.group(2)
-                if field in ['Discipline','oai_set','Source']: ## set default for mandatory fields !!
+                if field in ['oai_set','Source']: ## set default for mandatory fields !!
                     retval=['Not stated']
+                elif field in ['Discipline']: ## set default for mandatory fields !!
+                    retval=['Various']    
                 self.logger.info("|- Next field entry {line:%<20s}".format(line=line))
             else:
                 xpath=''
@@ -1159,7 +1161,10 @@ class Mapper(object):
                 m3 = re.compile('(\s+)(<string>)(.*?)(</string>)').search(line)
                 if m3:
                     xpath=m3.group(3)
-                    retval=xpath
+                    if xpath in ("true", "false"):
+                        retval=xpath
+                    else:   
+                        retval=[xpath]
                 elif m2:
                     xpath=m2.group(3)
                     retval=self.evalxpath(xmldata, xpath, namespaces)
@@ -1172,8 +1177,10 @@ class Mapper(object):
                 if retval and len(retval) > 0 :
                     jsondata[field]=retval ### .extend(retval)
                     self.logger.info(' | %-10s | %10s | %20s | \n' % (field,xpath,retval[:20]))
-                elif field in ['Discipline','oai_set']:
+                elif field in ['oai_set']:
                     jsondata[field]=['Not stated']
+                elif field in ['Discipline']:
+                    jsondata[field]=['Various']
           except Exception as e:
               logging.error('    | [ERROR] : %s in xpathmdmapper processing\n\tfield\t%s\n\txpath\t%s\n\tretvalue\t%s' % (e,field,xpath,retval))
               continue

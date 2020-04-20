@@ -1,0 +1,57 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 279 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2195",
+    "MetadataAccess": [
+        "oai:ota:oucs:2195"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Rutledge, Sarah, 1782-1855"
+    ],
+    "fulltext": "oai:ota:oucs:2195;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2195.xml;The Carolina housewife [Electronic resource], or, House and home : by a lady of Charleston / by Sarah Rutledge;Rutledge, Sarah, 1782-1855;text_and_corpus_linguistics;Cookbooks -- United States -- 19th century;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 279 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cbb2f140-b910-53a0-a1d9-e1f1931b98a5",
+    "oai_identifier": [
+        "oai:ota:oucs:2195"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Cookbooks -- United States -- th century"
+        }
+    ],
+    "title": [
+        "The Carolina housewife [Electronic resource], or, House and home : by a lady of Charleston / by Sarah Rutledge"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2195.xml"
+}

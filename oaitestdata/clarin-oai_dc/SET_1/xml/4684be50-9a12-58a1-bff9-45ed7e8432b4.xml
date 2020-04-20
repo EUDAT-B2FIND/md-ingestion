@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-F67C-5</identifier>
+    <datestamp>2018-07-02T22:05:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Korektor</dc:title>
+      <dc:creator>Richter, Michal</dc:creator>
+      <dc:subject>grammar checker</dc:subject>
+      <dc:subject>spellchecker</dc:subject>
+      <dc:description>Statistical spell- and (occasional) grammar-checker. There are three versions: a unix command line utility and an OS X SpellServer with a System Service, that integrates with native OS X GUI applications, and a web service run by Lindat-Clarin, that can be used either through a web form in a browser, or by web applications using API.</dc:description>
+      <dc:date>2013-02-02</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-000D-F67C-5</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11234/1-1469</dc:relation>
+      <dc:rights>BSD 2-Clause "Simplified" or "FreeBSD" license</dc:rights>
+      <dc:rights>http://opensource.org/licenses/BSD-2-Clause</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/x-bzip2</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://redmine.ms.mff.cuni.cz/projects/korektor</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

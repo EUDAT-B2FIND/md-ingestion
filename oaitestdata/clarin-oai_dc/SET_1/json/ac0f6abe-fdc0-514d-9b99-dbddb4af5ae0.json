@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "UK Economic and Social Research Council (ESRC)",
+        "McEnery, A.M.",
+        "Xiao, Richard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "30 files : ca. 42.8 MB"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2474",
+    "MetadataAccess": [
+        "oai:ota:oucs:2474"
+    ],
+    "PublicationTimestamp": "2004-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2004"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Linguistic corpora"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:2474;2018-02-21T11:45:11Z;http://ota.ox.ac.uk/headers/2474.xml;The Lancaster Corpus of Mandarin Chinese;2004;text_and_corpus_linguistics;Componential analysis (Linguistics);Linguistic analysis (Linguistics);Chinese language--Modern Chinese, 1919-;cmn;The Lancaster Corpus of Mandarin Chinese (LCMC) is designed as a Chinese match for the FLOB and FROWN corpora for modern British and American English. The corpus is suitable for use in both monolingual research into modern Mandarin Chinese and cross-linguistic contrast of Chinese and British/American English. The corpus sampled 15 written text categories including news, literary texts, academic prose and official documents etc published in P.R.China in the early 1990s. The same sampling frame and period as FLOB/FROWN were used in LCMC. The corpus is encoded in Unicode (UTF-8) and marked up in XML. ;Oxford Text Archive, University of Oxford;McEnery, A.M.;Xiao, Richard;UK Economic and Social Research Council (ESRC);McEnery, A.M.;text/xml;30 files : ca. 42.8 MB;Text;Linguistic corpora;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ac0f6abe-fdc0-514d-9b99-dbddb4af5ae0",
+    "notes": [
+        "The Lancaster Corpus of Mandarin Chinese (LCMC) is designed as a Chinese match for the FLOB and FROWN corpora for modern British and American English. The corpus is suitable for use in both monolingual research into modern Mandarin Chinese and cross-linguistic contrast of Chinese and British/American English. The corpus sampled 15 written text categories including news, literary texts, academic prose and official documents etc published in P.R.China in the early 1990s. The same sampling frame and period as FLOB/FROWN were used in LCMC. The corpus is encoded in Unicode (UTF-8) and marked up in XML. "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2474"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Componential analysis Linguistics"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        },
+        {
+            "name": "Chinese language--Modern Chinese"
+        }
+    ],
+    "title": [
+        "The Lancaster Corpus of Mandarin Chinese"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2474.xml"
+}

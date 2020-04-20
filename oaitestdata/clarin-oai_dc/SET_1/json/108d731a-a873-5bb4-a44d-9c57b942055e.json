@@ -1,0 +1,60 @@
+{
+    "Contributor": [
+        "Comeyne, Robrecht"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Danish",
+        "Dutch",
+        "English",
+        "Finnish",
+        "French",
+        "German",
+        "Modern Greek (1453-)",
+        "Italian",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-174",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-174"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-174",
+    "PublicationTimestamp": "2001-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2001"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-174;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;SpeechDat-Car databases;Comeyne, Robrecht;9 speech databases for training and testing multilingual speech recognition applications in the car environment. Contains parallel 4 channel in-car recordings and a GSM channel. Contains interesting phonetically rich material. All orthographically transcribed. Speaker information included for gender, age, accent. Including pronunciation lexicon.;2001;corpus;http://hdl.handle.net/11372/LRT-174;dan;nld;eng;fin;fra;deu;ell;ita;spa;downloadable_files_count: 0;http://www.speechdat.org/SP-CAR/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "108d731a-a873-5bb4-a44d-9c57b942055e",
+    "notes": [
+        "9 speech databases for training and testing multilingual speech recognition applications in the car environment. Contains parallel 4 channel in-car recordings and a GSM channel. Contains interesting phonetically rich material. All orthographically transcribed. Speaker information included for gender, age, accent. Including pronunciation lexicon."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-174"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "SpeechDat-Car databases"
+    ],
+    "url": ""
+}

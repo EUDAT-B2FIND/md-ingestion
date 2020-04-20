@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-738</identifier>
+    <datestamp>2016-04-06T16:39:55Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Nederlandse Familienamen Databank (Dutch Database of Family Names)</dc:title>
+      <dc:contributor>Bloothooft, Gerrit</dc:contributor>
+      <dc:description>Enriched database of  (mainly) Dutch family names, based on 1947 census (in progress; currently 90.000 entries from 140.000 max)</dc:description>
+      <dc:date>2010</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-738</dc:identifier>
+      <dc:language>nld</dc:language>
+      <dc:rights>Meertens Institute KNAW The Netherlands</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Meertens Institute KNAW The Netherlands</dc:publisher>
+      <dc:source>http://www.meertens.knaw.nl/nfd/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

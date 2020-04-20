@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1300</identifier>
+    <datestamp>2016-04-06T16:39:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>YAWA - Yet Another Word Aligner</dc:title>
+      <dc:contributor>Tufi&#351;, Dan</dc:contributor>
+      <dc:contributor>Ion, Radu</dc:contributor>
+      <dc:subject>word aligner</dc:subject>
+      <dc:description>YAWA is a four stage lexical aligner that uses bilingual translation lexicons produced by [[http://www.clarin.eu/tools/translation-equivalents-extractor|TREQ]] and phrase boundaries detection to align words of a given bitext. Using this alignment, in stage 2 a language dependent module takes over and produces alignments of the remaining lexical tokens within aligned chunks. Stage 3 is specialized in aligning blocks of consecutive unaligned tokens and stage 4 deletes alignments that are likely to be wrong.&#13;
+Developed in PERL, YAWA is language independent, except for the modules that realise alignments specific to the pairs of aligned languages. So far, it works just for Ro-En pair of languages. It requires a parallel corpus in [[http://www.xces.org|XCES]] format, morpho-syntactically annotated and lemmatized (using [[http://www.clarin.eu/tools/ttl-tokenizing-tagging-and-lemmatizing-free-running-texts|TTL]]), and translation dictionaries produced by [[http://www.clarin.eu/tools/translation-equivalents-extractor|TREQ]].&#13;
+YAWA&#8217;s individual F-measure is 81.22%. Currently YAWA is a part of the [[http://www.clarin.eu/tools/cowal-combined-word-aligner|COWAL]] combined lexical alignment platform.&#13;
+More detailed descriptions are available in [[http://www.racai.ro/~tufis/papers|the following papers]]: &#13;
+  -- Radu Ion (2007). Word Sense Disambiguation Methods Applied to English and Romanian. (in Romanian). PhD thesis. Romanian Academy, Bucharest&#13;
+  -- Dan Tufi&#351; (2007). Exploiting Aligned Parallel Corpora in Multilingual Studies and Applications. In Toru Ishida, Susan R. Fussell, and Piek T.J.M. Vossen (eds.), Intercultural Collaboration. First International Workshop (IWIC 2007), volume 4568 of Lecture Notes in Computer Science, pp. 103-117. Springer-Verlag, August 2007. ISBN 978-3-540-73999-9. &#13;
+  -- Dan Tufi&#351;, Radu Ion, Alexandru Ceau&#351;u, and Dan &#350;tef&#259;nescu (2006). Improved Lexical Alignment by Combining Multiple Reified Alignments. In Toru Ishida, Susan R. Fussell, and Piek T.J.M. Vossen (eds.), Proceedings of the 11th Conference EACL2006, pp. 153-160, Trento, Italy, April 2006. Association for Computational Linguistics. ISBN 1-9324-32-61-2.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1300</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Research Institute for Artificial Intelligence, Romanian Academy of Sciences</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

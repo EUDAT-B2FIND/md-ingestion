@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1014</identifier>
+    <datestamp>2016-04-06T16:39:53Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Digitale Sammlungen der Universit&#228;ts- und Landesbibliothek M&#252;nster</dc:title>
+      <dc:subject>Germanistik</dc:subject>
+      <dc:description>Digital copies of historical books and journals from the ULB M&#252;nster; collections from the region of Westphalia; Bilddigitalisate von B&#252;chern und Zeitschriften aus dem historischen Bestand der ULB M&#252;nster sowie Sammlungen aus der Region Westfalen</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1014</dc:identifier>
+      <dc:language>fra</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:publisher>Westf&#228;lische Wilhelms-Universit&#228;t M&#252;nster</dc:publisher>
+      <dc:source>http://sammlungen.uni-muenster.de/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

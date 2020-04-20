@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6429",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6429"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6429;2018-09-05T10:16:52Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.013;Giacomel, Piercarlo;Piercarlo;Giacomel;0000-0002-1553-7842;Sapienza University of Rome, Rome, Italy;Spagnuolo, Elena;Elena;Spagnuolo;0000-0002-1377-5812;Istituto Nazionale di Geofisica e Vulcanologia (INGV), Rome, Italy;Nazzari, Manuela;Manuela;Nazzari;Istituto Nazionale di Geofisica e Vulcanologia (INGV), Rome, Italy;Marzoli, Andrea;Andrea;Marzoli;University of Padua, Padua, Italy;Passelegue, Fran\u00e7ois;Fran\u00e7ois;Passelegue;\u00c9cole polytechnique f\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland;Youbi, Nasrrddine;Nasrrddine;Youbi;0000-0003-3466-2400;Cadi Ayyad University, Marrakech, Marocco;Di Toro, Giulio;Giulio;Di Toro;0000-0002-6618-3474;University of Padua, Padua, Italy;Frictional and microanalytical data of basalts sheared with pressurized H2O- and CO2- rich fluids;GFZ Data Services;2018;CO2 storage in basalts;Induced seismicity;Role of fluid pressure on fault reactivation;Basalt carbonation;EPOS;Multi-scale laboratories;rock and melt physical properties;Giacomel, Piercarlo;Piercarlo;Giacomel;0000-0002-1553-7842;Sapienza University of Rome, Rome, Italy;Spagnuolo, Elena;Elena;Spagnuolo;0000-0002-1377-5812;Istituto Nazionale di Geofisica e Vulcanologia (INGV), Rome, Italy;Nazzari, Manuela;Manuela;Nazzari;Istituto Nazionale di Geofisica e Vulcanologia (INGV), Rome, Italy;Marzoli, Andrea;Andrea;Marzoli;University of Padua, Padua, Italy;Passelegue, Fran\u00e7ois;Fran\u00e7ois;Passelegue;\u00c9cole polytechnique f\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland;Youbi, Nasrrddine;Nasrrddine;Youbi;0000-0003-3466-2400;Cadi Ayyad University, Marrakech, Marocco;Di Toro, Giulio;Giulio;Di Toro;0000-0002-6618-3474;University of Padua, Padua, Italy;HP-HT Laboratory of Experimental Volcanolgy and Geophysics (INGV, Italy);INGV,  Italy;en;10.1029/2018GL078082;75446831 Bytes;3 Files;text/plain;text/plain;application/octet-stream;CC BY 4.0;Here we report the raw data of the friction experiments performed on basalt-built faults pressurized with de-ionized H2O, pure CO2, pure Ar, and H2O+CO2 mixtures, respectively (Dataset_friction_basalts.zip). The experiments were designed to assess the effects of the fluid chemistry on fault reactivation in faults juxtaposing basalts with different state of hydrothermal alteration. The experiments setup and data are further described in Giacomel et al (2018) to which these data are supplementary material.",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "75010a70-1c9a-5896-8f39-34e088a27dfa",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6429"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

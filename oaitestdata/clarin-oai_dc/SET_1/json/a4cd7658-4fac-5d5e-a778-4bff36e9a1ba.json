@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5223",
+    "MetadataAccess": [
+        "oai:ota:oucs:5223"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dibdin, Charles, 1745-1814."
+    ],
+    "fulltext": "oai:ota:oucs:5223;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5223.xml;A complete history of the English stage: ... by Mr. Dibdin. ... [pt.3];Dibdin, Charles, 1745-1814.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a4cd7658-4fac-5d5e-a778-4bff36e9a1ba",
+    "oai_identifier": [
+        "oai:ota:oucs:5223"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A complete history of the English stage: ... by Mr. Dibdin. ... [pt.3]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5223.xml"
+}

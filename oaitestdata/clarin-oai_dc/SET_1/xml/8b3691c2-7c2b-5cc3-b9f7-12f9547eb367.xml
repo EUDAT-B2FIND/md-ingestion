@@ -1,0 +1,55 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-625F-0</identifier>
+    <datestamp>2018-10-29T14:26:27Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>HindEnCorp 0.5</dc:title>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:creator>Diatka, Vojt&#283;ch</dc:creator>
+      <dc:creator>Stra&#328;&#225;k, Pavel</dc:creator>
+      <dc:creator>Tamchyna, Ale&#353;</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>English-Hindi parallel corpus</dc:subject>
+      <dc:subject>sentence-parallel</dc:subject>
+      <dc:description>HindEnCorp parallel texts (sentence-aligned) come from the following sources:&#13;
+Tides, which contains 50K sentence pairs taken mainly from news articles. This dataset was originally col- lected for the DARPA-TIDES surprise-language con- test in 2002, later refined at IIIT Hyderabad and provided for the NLP Tools Contest at ICON 2008 (Venkatapathy, 2008).&#13;
+&#13;
+Commentaries by Daniel Pipes contain 322 articles in English written by a journalist Daniel Pipes and translated into Hindi.&#13;
+&#13;
+EMILLE. This corpus (Baker et al., 2002) consists of three components: monolingual, parallel and annotated corpora. There are fourteen monolingual sub- corpora, including both written and (for some lan- guages) spoken data for fourteen South Asian lan- guages. The EMILLE monolingual corpora contain in total 92,799,000 words (including 2,627,000 words of transcribed spoken data for Bengali, Gujarati, Hindi, Punjabi and Urdu). The parallel corpus consists of 200,000 words of text in English and its accompanying translations into Hindi and other languages.&#13;
+&#13;
+Smaller datasets as collected by Bojar et al. (2010) include the corpus used at ACL 2005 (a subcorpus of EMILLE), a corpus of named entities from Wikipedia (crawled in 2009), and Agriculture domain parallel corpus.&#13;
+&#65532;&#13;
+For the current release, we are extending the parallel corpus using these sources:&#13;
+Intercorp (&#268;erm&#225;k and Rosen,2012) is a large multilingual parallel corpus of 32 languages including Hindi. The central language used for alignment is Czech. Intercorp&#8217;s core texts amount to 202 million words. These core texts are most suitable for us because their sentence alignment is manually checked and therefore very reliable. They cover predominately short sto- ries and novels. There are seven Hindi texts in Inter- corp. Unfortunately, only for three of them the English translation is available; the other four are aligned only with Czech texts. The Hindi subcorpus of Intercorp contains 118,000 words in Hindi.&#13;
+&#13;
+TED talks 3 held in various languages, primarily English, are equipped with transcripts and these are translated into 102 languages. There are 179 talks for which Hindi translation is available.&#13;
+&#13;
+The Indic multi-parallel corpus (Birch et al., 2011; Post et al., 2012) is a corpus of texts from Wikipedia translated from the respective Indian language into English by non-expert translators hired over Mechanical Turk. The quality is thus somewhat mixed in many respects starting from typesetting and punctuation over capi- talization, spelling, word choice to sentence structure. A little bit of control could be in principle obtained from the fact that every input sentence was translated 4 times. We used the 2012 release of the corpus.&#13;
+&#13;
+Launchpad.net is a software collaboration platform that hosts many open-source projects and facilitates also collaborative localization of the tools. We downloaded all revisions of all the hosted projects and extracted the localization (.po) files.&#13;
+&#13;
+Other smaller datasets. This time, we added Wikipedia entities as crawled in 2013 (including any morphological variants of the named entitity that appears on the Hindi variant of the Wikipedia page) and words, word examples and quotes from the Shabdkosh online dictionary.</dc:description>
+      <dc:date>2014-03-21</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0023-625F-0</dc:identifier>
+      <dc:language>hin</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0001-BD17-1</dc:relation>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

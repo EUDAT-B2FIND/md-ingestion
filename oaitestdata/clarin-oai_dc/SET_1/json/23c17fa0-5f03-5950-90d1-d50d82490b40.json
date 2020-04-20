@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=b1c1a89a0b6611e5a2aa782bcb074135dca9d493ea3845a488aec73eb281e73b",
+    "MetadataAccess": [
+        "b1c1a89a0b6611e5a2aa782bcb074135dca9d493ea3845a488aec73eb281e73b"
+    ],
+    "PublicationTimestamp": "2015-06-05T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "b1c1a89a0b6611e5a2aa782bcb074135dca9d493ea3845a488aec73eb281e73b;2018-11-15T16:40:16Z;toolService;toolService:tool;ixa-pipe-coref-eu;ixa-pipe-coref-eu is a Basque coreference resolution tool, which is an adaptation of Stanford Deterministic Coreference Resolution (http://www-nlp.stanford.edu/downloads/dcoref.shtml).\n\nThis tool reads a text document annotated with lemmas, named entities and constituents formated in Natural Language Processing Annotation Format (NAF) (http://wordpress.let.vupr.nl/naf/) and outputs a new NAF document.\n\nThis tool is partly funded by the European Commission project QTLeap FP7-ICT-2013.4.1-610516 (http://qtleap.eu). This tool is distributed under the license GPL v3.0.;2015-06-05",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "23c17fa0-5f03-5950-90d1-d50d82490b40",
+    "notes": [
+        "ixa-pipe-coref-eu is a Basque coreference resolution tool, which is an adaptation of Stanford Deterministic Coreference Resolution (http://www-nlp.stanford.edu/downloads/dcoref.shtml).\n\nThis tool reads a text document annotated with lemmas, named entities and constituents formated in Natural Language Processing Annotation Format (NAF) (http://wordpress.let.vupr.nl/naf/) and outputs a new NAF document.\n\nThis tool is partly funded by the European Commission project QTLeap FP7-ICT-2013.4.1-610516 (http://qtleap.eu). This tool is distributed under the license GPL v3.0."
+    ],
+    "oai_identifier": [
+        "b1c1a89a0b6611e5a2aa782bcb074135dca9d493ea3845a488aec73eb281e73b"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "ixa-pipe-coref-eu"
+    ]
+}

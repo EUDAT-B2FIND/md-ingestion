@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/gzip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/590",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/590"
+    ],
+    "PID": "http://hdl.handle.net/11321/590",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Woli\u0144ski, Marcin"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/590;2018-07-27T09:25:12Z;hdl_11321_3;hdl_11321_4;Sk\u0142adnica frazowa \u2014 a constituency treebank of Polish;Woli\u0144ski, Marcin;treebank;constituency parsing;Sk\u0142adnica frazowa is a constituency treebank of Polish. The treebank is a result of parsing Polish sentences with the syntactic parser \u015awigra. For every sentence, the parser generates all possible syntactic parse trees predicted by the rules of its grammar. Within the Dendrarium system, a single correct parse tree has been selected for each sentence by linguists (termed \"dendrologists\"). Dendrologists have established parse trees for 13,035 sentences to be correct. Other sentences under consideration have undergone classification on the basis of their (un)grammaticality and reasons for their rejection by the parser.;2018-07;corpus;http://hdl.handle.net/11321/590;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/gzip;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/Sk%C5%82adnica",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a0eb90a1-9391-57c1-bb4d-b63d667a5d79",
+    "notes": [
+        "Sk\u0142adnica frazowa is a constituency treebank of Polish. The treebank is a result of parsing Polish sentences with the syntactic parser \u015awigra. For every sentence, the parser generates all possible syntactic parse trees predicted by the rules of its grammar. Within the Dendrarium system, a single correct parse tree has been selected for each sentence by linguists (termed \"dendrologists\"). Dendrologists have established parse trees for 13,035 sentences to be correct. Other sentences under consideration have undergone classification on the basis of their (un)grammaticality and reasons for their rejection by the parser."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/590"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "treebank"
+        },
+        {
+            "name": "constituency parsing"
+        }
+    ],
+    "title": [
+        "Sk\u0142adnica frazowa \u2014 a constituency treebank of Polish"
+    ],
+    "url": ""
+}

@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "C"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1459",
+    "MetadataAccess": [
+        "oai:ota:oucs:1459"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dictionaries, etc."
+    ],
+    "fulltext": "oai:ota:oucs:1459;2018-04-16T15:30:51Z;http://ota.ox.ac.uk/headers/1459.xml;Roget\"s Thesaurus;Dictionaries, etc.;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;C;Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "df136b4a-fc8b-5d9f-b1b0-ef5a95e424d3",
+    "oai_identifier": [
+        "oai:ota:oucs:1459"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Roget\"s Thesaurus"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1459.xml"
+}

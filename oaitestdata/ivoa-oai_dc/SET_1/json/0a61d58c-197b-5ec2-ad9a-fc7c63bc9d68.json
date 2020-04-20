@@ -1,0 +1,43 @@
+{
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://au.csiro/atoavo/TAP",
+    "PublicationTimestamp": "2018-12-21T20:10:25Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "RelatedIdentifier": [
+        "ivo://au.csiro/atoavo/TAP"
+    ],
+    "author": [
+        "CSIRO"
+    ],
+    "fulltext": "ivo://au.csiro/atoavo/TAP;2018-12-21T20:10:25Z;CSIRO Australia Telescope Online Archive TAP Service;CSIRO;CSIRO;Table Access Protocol service for accessing Australia Telescope Online Archive;ATNF Observations;2016-08-24T12:39:30;ivo://au.csiro/atoavo/TAP",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0a61d58c-197b-5ec2-ad9a-fc7c63bc9d68",
+    "notes": [
+        "Table Access Protocol service for accessing Australia Telescope Online Archive"
+    ],
+    "oai_identifier": [
+        "ivo://au.csiro/atoavo/TAP"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "ATNF Observations"
+        }
+    ],
+    "title": [
+        "Table Access Protocol service for accessing Australia Telescope Online Archive"
+    ]
+}

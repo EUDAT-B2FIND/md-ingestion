@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Center for Dutch Language and Speech, University of Antwerp"
+    ],
+    "Contributor": [
+        "Daelemans, Walter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-560",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-560"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-560",
+    "PublicationTimestamp": "2006-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2006"
+    ],
+    "Publisher": [
+        "Center for Dutch Language and Speech, University of Antwerp"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Belgium"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-560;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;English-Luganda Parallel Corpus;Daelemans, Walter;Bible. Word-alligned corpus;2006;corpus;http://hdl.handle.net/11372/LRT-560;eng;downloadable_files_count: 0;Belgium;Center for Dutch Language and Speech, University of Antwerp;http://aflat.org/?q=node/86",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fb2d0f92-292b-50d6-a04c-32652637e3ca",
+    "notes": [
+        "Bible. Word-alligned corpus"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-560"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "English-Luganda Parallel Corpus"
+    ],
+    "url": ""
+}

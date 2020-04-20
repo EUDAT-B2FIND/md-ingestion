@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1213</identifier>
+    <datestamp>2016-04-06T16:39:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>KinOath Kinship Archiver</dc:title>
+      <dc:contributor>Withers, Peter</dc:contributor>
+      <dc:description>KinOath Kinship Archiver is a kinship application with the primary goal of connecting kinship data with archived data, such as audio, video or written resources while also being closely integrated with the archive software such as Arbil. Beyond this primary goal it is designed to be flexible and culturally nonspecific, such that culturally different social structures can equally be represented. Kin type strings are used throughout the application for constructing and searching data sets. The representation of kin terms is also integrated into the application allowing comparative diagrams of kin terms. Graphical representation of the data is an important part of the application and the diagrams produced are intended to very flexible and of publishable quality.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1213</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Max Planck Institute for Psycholinguistics</dc:publisher>
+      <dc:source>http://tla.mpi.nl/tools/tla-tools/kinoath/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

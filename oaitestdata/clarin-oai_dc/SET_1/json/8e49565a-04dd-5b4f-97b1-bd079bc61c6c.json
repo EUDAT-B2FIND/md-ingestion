@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Drukarnia J.K.Mci XX. Bazylian\u00f3w"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-578",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-578"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D28-3",
+    "PublicationTimestamp": "1793-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1793"
+    ],
+    "Publisher": [
+        "Drukarnia J.K.Mci XX. Bazylian\u00f3w"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/578"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Lachowski, Sebastian (1731-1794)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-578;2019-03-01T15:49:57Z;Kazania niedzielne. T. 1.;Lachowski, Sebastian (1731-1794);Kazania polskie 18 w.;ilo\u015b\u0107 skan\u00f3w: 377 ; sygn. St- 18;Drukarnia J.K.Mci XX. Bazylian\u00f3w;1793;starodruk;application/xml;clarind-uds:poldilemma-578;hdl:11858/00-246C-0000-0023-8D28-3;pol;lat;http://pbc.biaman.pl/Content/578;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8e49565a-04dd-5b4f-97b1-bd079bc61c6c",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 377 ; sygn. St- 18"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-578"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Kazania polskie w."
+        }
+    ],
+    "title": [
+        "Kazania niedzielne. T. 1."
+    ],
+    "url": ""
+}

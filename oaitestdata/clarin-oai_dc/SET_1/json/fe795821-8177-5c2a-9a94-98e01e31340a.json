@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3094",
+    "MetadataAccess": [
+        "oai:ota:oucs:3094"
+    ],
+    "PublicationTimestamp": "1857-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1857"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gaskell, Elizabeth Cleghorn, 1810-1865"
+    ],
+    "fulltext": "oai:ota:oucs:3094;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3094.xml;The Life of Charlotte Bront\u00c3\u00ab;Gaskell, Elizabeth Cleghorn, 1810-1865;not after: 1857;text_and_corpus_linguistics;English fiction -- 19th century;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fe795821-8177-5c2a-9a94-98e01e31340a",
+    "oai_identifier": [
+        "oai:ota:oucs:3094"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English fiction -- th century"
+        }
+    ],
+    "title": [
+        "The Life of Charlotte Bront\u00c3\u00ab"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3094.xml"
+}

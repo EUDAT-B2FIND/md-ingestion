@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-327</identifier>
+    <datestamp>2016-04-06T16:39:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Typological Database System</dc:title>
+      <dc:contributor>Dimitriadis, Alexis</dc:contributor>
+      <dc:contributor>Windhouwer, Menzo</dc:contributor>
+      <dc:contributor>Kemps-Snijders, Marc</dc:contributor>
+      <dc:contributor>Zeeman, Rob</dc:contributor>
+      <dc:contributor>Akerman, Vesa</dc:contributor>
+      <dc:contributor>Grootveld, Marjan</dc:contributor>
+      <dc:subject>typological database</dc:subject>
+      <dc:description>The Typological Database System (TDS) is a web-based service that provides integrated access to a collection of independently created typological databases. It was developed with support from NWO grant 380-30-004 / INV-03-12 and from participating universities, and provides continued availability and extended documentation for its component databases, through a uniform structure and search interface. Web technologies evolve rapidly, and the system had begun to show its age even before the end of the project in 2009, motivating migration of the data collection to an archival platform. Through its Project Call 1, CLARIN-NL granted funding for migrating the resource to a durable, archival environment and converting it to a true web service architecture.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-327</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Netherlands (the)</dc:coverage>
+      <dc:publisher>Max Planck Institute for Psycholinguistics</dc:publisher>
+      <dc:publisher>University of Utrecht/Netherlands Graduate School of Linguistics</dc:publisher>
+      <dc:publisher>Data Archiving and Networked Services</dc:publisher>
+      <dc:publisher>Meertens Institute KNAW The Netherlands</dc:publisher>
+      <dc:source>http://www.persistent-identifier.nl/?identifier=urn:nbn:nl:ui:13-6oz8-ik</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

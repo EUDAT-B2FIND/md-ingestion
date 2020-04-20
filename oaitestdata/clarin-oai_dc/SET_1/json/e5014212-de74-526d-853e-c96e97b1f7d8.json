@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "text/plain",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/324",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/324"
+    ],
+    "PID": "http://hdl.handle.net/11321/324",
+    "PublicationTimestamp": "2014-02-26T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "http://creativecommons.org/licenses/by-sa/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Jakubaszek, Maja",
+        "Piasecki, Dominik",
+        "Pilarska, Aleksandra",
+        "Radziszewski, Adam",
+        "Marci\u0144czuk, Micha\u0142",
+        "Tokarczyk, Barbara",
+        "Rychlikowski, Pawe\u0142",
+        "Burdka, \u0141ukasz",
+        "Juros, Agata",
+        "Zi\u0119ba, Tomasz",
+        "Piasecki, Maciej",
+        "Hry\u0144czak, Justyna",
+        "Ptak, Marcin"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/324;2016-10-20T10:13:13Z;hdl_11321_3;hdl_11321_4;Pytania i odpowiedzi z serwisu wikipedyjnego \"Czy wiesz\", wersja 2.0;Burdka, \u0141ukasz;Hry\u0144czak, Justyna;Jakubaszek, Maja;Juros, Agata;Marci\u0144czuk, Micha\u0142;Piasecki, Dominik;Piasecki, Maciej;Pilarska, Aleksandra;Ptak, Marcin;Radziszewski, Adam;Rychlikowski, Pawe\u0142;Tokarczyk, Barbara;Zi\u0119ba, Tomasz;question answering;QA;Zbi\u00f3r wzbogacono o oznaczenie konkretnych fragment\u00f3w zawieraj\u0105cych odpowied\u017a na wskazane pytania.\r\nWszystkie wskazane fragmenty zosta\u0142y zweryfikowane przez cz\u0142owieka. Niekt\u00f3rym pytaniom przypisano wiele fragment\u00f3w.\r\n\r\nCelem zbioru jest testowanie i rozw\u00f3j system\u00f3w typu Question Answering dla j\u0119zyka polskiego.\r\nLiczymy na to, \u017ce dzi\u0119ki udost\u0119pnieniu zar\u00f3wno pyta\u0144, jak i ca\u0142ej kolekcji testowej (ca\u0142ej Wikipedii z wybranego zrzutu), mo\u017cliwe b\u0119dzie przeprowadzenie r\u00f3\u017cnych eksperyment\u00f3w w tych samych warunkach, dzi\u0119ki czemu wyniki b\u0119d\u0105 ze sob\u0105 bezpo\u015brednio por\u00f3wnywalne.\r\n\r\nZbi\u00f3r udost\u0119pniany jest na licencji Creative Commons Uznanie Autorstwa, na tych samych warunkach 3.0 (CC-BY-SA 3.0).;2014-02-26;corpus;http://hdl.handle.net/11321/324;pol;Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0);http://creativecommons.org/licenses/by-sa/3.0/;CC;text/plain; charset=utf-8;application/zip;text/plain;downloadable_files_count: 2;Wroc\u0142aw University of Science and Technology;http://nlp.pwr.wroc.pl/narzedzia-i-zasoby/zasoby/zbior-pytan-i-odpowiedzi-czy-wiesz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e5014212-de74-526d-853e-c96e97b1f7d8",
+    "notes": [
+        "Zbi\u00f3r wzbogacono o oznaczenie konkretnych fragment\u00f3w zawieraj\u0105cych odpowied\u017a na wskazane pytania.\r\nWszystkie wskazane fragmenty zosta\u0142y zweryfikowane przez cz\u0142owieka. Niekt\u00f3rym pytaniom przypisano wiele fragment\u00f3w.\r\n\r\nCelem zbioru jest testowanie i rozw\u00f3j system\u00f3w typu Question Answering dla j\u0119zyka polskiego.\r\nLiczymy na to, \u017ce dzi\u0119ki udost\u0119pnieniu zar\u00f3wno pyta\u0144, jak i ca\u0142ej kolekcji testowej (ca\u0142ej Wikipedii z wybranego zrzutu), mo\u017cliwe b\u0119dzie przeprowadzenie r\u00f3\u017cnych eksperyment\u00f3w w tych samych warunkach, dzi\u0119ki czemu wyniki b\u0119d\u0105 ze sob\u0105 bezpo\u015brednio por\u00f3wnywalne.\r\n\r\nZbi\u00f3r udost\u0119pniany jest na licencji Creative Commons Uznanie Autorstwa, na tych samych warunkach 3.0 (CC-BY-SA 3.0)."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/324"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "question answering"
+        },
+        {
+            "name": "QA"
+        }
+    ],
+    "title": [
+        "Pytania i odpowiedzi z serwisu wikipedyjnego \"Czy wiesz\", wersja 2.0"
+    ],
+    "url": ""
+}

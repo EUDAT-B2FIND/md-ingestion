@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/47157",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=0d0a6dc7-da79-509c-ae2c-32ee310f51bd",
+    "PublicationTimestamp": "2019-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY"
+    ],
+    "SpatialCoverage": [
+        "41.97574 1.855243 44.62949 8.139423",
+        "47.47698 -5.800781 49.286306 -2.460937",
+        "43.185804 -2.636719 47.238826 -0.527344",
+        "48.477155 -2.241211 51.086834 2.592773"
+    ],
+    "TemporalCoverage": [
+        "North 44.62949, South 41.97574, East 8.139423, West 1.855243",
+        "North 49.286306, South 47.47698, East -2.460937, West -5.800781",
+        "North 47.238826, South 43.185804, East -0.527344, West -2.636719",
+        "North 51.086834, South 48.477155, East 2.592773, West -2.241211"
+    ],
+    "author": [
+        "Orsoni, Valerie",
+        "Marzin, Anahita",
+        "Lamort, Laure",
+        "Catherine, Martial",
+        "Meteigner, Claire",
+        "Morin, Dimitri",
+        "Piquet, Jean-come",
+        "Boulben, Sylviane",
+        "Derrien, Annick",
+        "Amouroux, Isabelle",
+        "Verin, Francoise",
+        "Marco-miralles, Francoise",
+        "Treguier, Cathy",
+        "Cheve, Julien",
+        "Miossec, Laurence"
+    ],
+    "fulltext": "oai:seanoe.org:47157;2019-03-29;REMI dataset : the French microbiological monitoring program of mollusc harvesting areas;Piquet, Jean-come;Boulben, Sylviane;Cheve, Julien;Derrien, Annick;Lamort, Laure;Marco-miralles, Francoise;Marzin, Anahita;Meteigner, Claire;Morin, Dimitri;Orsoni, Valerie;Treguier, Cathy;Verin, Francoise;Amouroux, Isabelle;Catherine, Martial;Miossec, Laurence;Long-term time series of coliform bacteria concentration (fecal coliform or Escherichia coli) in shellfish in four submarine areas (North Sea/Channel, Britany, Atlantic, Mediterranean).\n;SEANOE;2019-03;dataset;DOI:10.17882/47157;http://dx.doi.org/10.17882/47157;North 44.62949, South 41.97574, East 8.139423, West 1.855243;North 49.286306, South 47.47698, East -2.460937, West -5.800781;North 47.238826, South 43.185804, East -0.527344, West -2.636719;North 51.086834, South 48.477155, East 2.592773, West -2.241211;https://www.seanoe.org/data/00360/47157/illustration.gif;41.97574 1.855243 44.62949 8.139423;47.47698 -5.800781 49.286306 -2.460937;43.185804 -2.636719 47.238826 -0.527344;48.477155 -2.241211 51.086834 2.592773;CC-BY",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "0d0a6dc7-da79-509c-ae2c-32ee310f51bd",
+    "notes": [
+        "Long-term time series of coliform bacteria concentration (fecal coliform or Escherichia coli) in shellfish in four submarine areas (North Sea/Channel, Britany, Atlantic, Mediterranean).\n"
+    ],
+    "oai_identifier": [
+        "0d0a6dc7-da79-509c-ae2c-32ee310f51bd"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        "REMI dataset : the French microbiological monitoring program of mollusc harvesting areas"
+    ],
+    "url": ""
+}

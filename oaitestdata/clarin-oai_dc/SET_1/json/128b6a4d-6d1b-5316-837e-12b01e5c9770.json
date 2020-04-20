@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Rodziewicz"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 17",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/91",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/91"
+    ],
+    "PID": "http://hdl.handle.net/11321/91",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Rodziewicz"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Rodziewicz, Rodziewicz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/91;2017-05-30T14:20:59Z;hdl_11321_3;hdl_11321_4;MWE Rodziewicz;Rodziewicz, Rodziewicz;Rodziewicz;2015-04-08;corpus;http://hdl.handle.net/11321/91;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain;text/plain;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 17;Rodziewicz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "128b6a4d-6d1b-5316-837e-12b01e5c9770",
+    "notes": [
+        "Rodziewicz"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/91"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE Rodziewicz"
+    ],
+    "url": ""
+}

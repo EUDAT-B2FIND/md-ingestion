@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "sdn-userdesk@seadatanet.org"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=iso19139&identifier=6d5b80c0-f9ea-5594-922c-b580bf5cae07",
+    "PublicationTimestamp": "2015-07-31T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Royal Belgian Institute of Natural Sciences, Operational Directorate Natural Environment, Belgian Marine Data Centre",
+        "IFREMER / IDM/SISMER",
+        "SEADATANET"
+    ],
+    "ResourceType": "dataset",
+    "Rights": [
+        "No limitations on public access.  For data access please register at http://www.marine-id.org"
+    ],
+    "SpatialCoverage": "(49N-62N,4 W-10E)",
+    "TempCoverageBegin": 59926651199,
+    "TempCoverageEnd": 63555623999,
+    "TemporalCoverage": " period : ( 1900-01-01T11:59:59Z - 2014-12-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1900-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2014-12-31T11:59:59Z",
+    "fulltext": "8a51f275-6a8a-4ac2-ba7e-fe491e63a17d;SEADATANET;sdn-userdesk@seadatanet.org;http://www.seadatanet.org/;2018-07-24T09:47:44;ISO 19115:2003/19139 - EMODNET - SDN;0.1;4;999;1;false;WGS 84 (EPSG 4326);EPSG;North Sea - Temperature and salinity observation collection V2;seadatanet-north_sea-temperature_salinity_aggregated_public-v2;2015-07-31;2;2015-07-31;8a51f275-6a8a-4ac2-ba7e-fe491e63a17d;SeaDataNet Temperature and Salinity historical data collection for the North Sea contains all open access temperature and salinity in situ data retrieved from SeaDataNet infrastructure at the end of 2014. The data span between -4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1900-2014. Data have been quality checked using ODV software. Quality Flags of anomalous data have been revised using basic QC procedures.\n\nThe dataset is available on authenticated FTP as zip files. You can get access codes from : http://www.marine-id.org. The dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/;SeaDataNet;Royal Belgian Institute of Natural Sciences, Operational Directorate Natural Environment, Belgian Marine Data Centre;+32 (0)2 773 2111;+32 (0)2 770 6972;Gulledelle 100;Brussels;1200;Belgium;bmdc@mumm.ac.be;http://www.mumm.ac.be/datacentre/;web site;Royal Belgian Institute of Natural Sciences, Operational Directorate Natural Environment, Belgian Marine Data Centre;+32 (0)2 773 2111;+32 (0)2 770 6972;Gulledelle 100;Brussels;1200;Belgium;bmdc@mumm.ac.be;http://www.mumm.ac.be/datacentre/;web site;Royal Belgian Institute of Natural Sciences, Operational Directorate Natural Environment, Belgian Marine Data Centre;+32 (0)2 773 2111;+32 (0)2 770 6972;Gulledelle 100;Brussels;1200;Belgium;bmdc@mumm.ac.be;http://www.mumm.ac.be/datacentre/;web site;IFREMER / IDM/SISMER;+33 (0)2 98.22.49.16;+33 (0)2 98.22.46.44;Centre IFREMER de BrestBP 70;PLOUZANE;29280;France;sismer@ifremer.fr;http://www.mumm.ac.be/datacentre/;web site;Royal Belgian Institute of Natural Sciences, Operational Directorate Natural Environment, Belgian Marine Data Centre;+32 (0)2 773 2111;+32 (0)2 770 6972;Gulledelle 100;Brussels;1200;Belgium;bmdc@mumm.ac.be;http://www.mumm.ac.be/datacentre/;web site;Royal Belgian Institute of Natural Sciences, Operational Directorate Natural Environment, Belgian Marine Data Centre;+32 (0)2 773 2111;+32 (0)2 770 6972;Gulledelle 100;Brussels;1200;Belgium;bmdc@mumm.ac.be;http://www.mumm.ac.be/datacentre/;web site;IFREMER / IDM/SISMER;+33 (0)2 98.22.49.16;+33 (0)2 98.22.46.44;Centre IFREMER de Brest\nBP 70;PLOUZANE;29280;France;sismer@ifremer.fr;http://www.ifremer.fr/sismer/;web site;https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=8a51f275-6a8a-4ac2-ba7e-fe491e63a17d&fname=DefaultView_0.png;Oceanographic geographical features;GEMET - INSPIRE themes, version 1.0;2009-09-22T07:57:15;Temperature of the water column;Salinity of the water column;Parameter Discovery Vocabulary (P02);2014-12-11;geonetwork.thesaurus.external.parameter.NVS.P02;ITS-90 water temperature;Water body salinity;EMODNET chemistry lot aggregated parameter names;2014-12-11;geonetwork.thesaurus.external.parameter.NVS.P35;North Sea;SeaVoX salt and fresh water body gazetteer;2014-12-11;geonetwork.thesaurus.external.reference-geographical-area.NVS.C19;Th\u00e8mes Sextant;2017-01-23;geonetwork.thesaurus.local.theme.sextant-theme;SeaDataNet licence;SeaDataNet Usage Agreement: If you use SeaDataNet data in your publications please include the following in the Acknowledgements: Data were provided through SeaDataNet Pan-European infrastructure for ocean and marine data management (https://www.seadatanet.org);No limitations on public access.  For data access please register at http://www.marine-id.org;oceans;bounding box;-4;10;49;62;1900-01-01;2014-12-31;-1200;0.0;http://dx.doi.org/10.12770/8a51f275-6a8a-4ac2-ba7e-fe491e63a17d;WWW:LINK-1.0-http--metadata-URL;DOI of the product;ftp://ftp2.ifremer.fr/public/seadatanet-north_sea-temperaturesalinity_aggregated/SDN_2015-09_TS_North_Sea_QC_done_v2.zip;WWW:DOWNLOAD-1.0-link--download;full collection dataset;zipped ODV binary collection;http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0&DATASET=SDN_2015-09_TS_North_Sea_QC_done_v2;OGC:WMS:getCapabilities;full collection dataset;full collection dataset;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;See the referenced specification;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "6d5b80c0-f9ea-5594-922c-b580bf5cae07",
+    "notes": [
+        "SeaDataNet Temperature and Salinity historical data collection for the North Sea contains all open access temperature and salinity in situ data retrieved from SeaDataNet infrastructure at the end of 2014. The data span between -4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1900-2014. Data have been quality checked using ODV software. Quality Flags of anomalous data have been revised using basic QC procedures.\n\nThe dataset is available on authenticated FTP as zip files. You can get access codes from : http://www.marine-id.org. The dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/"
+    ],
+    "oai_identifier": [
+        "6d5b80c0-f9ea-5594-922c-b580bf5cae07"
+    ],
+    "oai_set": "cams1_ps",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-4,49],[-4,62],[10,62],[10,49],[-4,49]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "North Sea"
+        }
+    ],
+    "title": [
+        "North Sea - Temperature and salinity observation collection V2"
+    ]
+}

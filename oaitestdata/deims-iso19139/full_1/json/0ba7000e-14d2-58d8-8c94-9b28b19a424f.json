@@ -1,0 +1,89 @@
+{
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0ba7000e-14d2-58d8-8c94-9b28b19a424f",
+    "PublicationTimestamp": "2018-09-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "The data provider must be offered co-authorship for publications using this dataset at least within the metadata description",
+        "Formal acknowledgement of the dataset providers",
+        "The opportunity to review the results based on the dataset",
+        "Reprints of articles using the dataset must be provided to the data provider",
+        "The dataset provider is given a complete list of all products that make use of the dataset",
+        "Mutual agreement on reciprocal sharing of data"
+    ],
+    "SpatialCoverage": "(47N-47N,11E-11E)",
+    "fulltext": "d72d2d32-f7f4-11e4-870c-005056ab003f;English;utf8;dataset;2018-09-24;ISO19115;2003/Cor.1:2006;EPSG:4326;http://www.opengis.net/def/crs/EPSG/0/4326;http://www.opengis.net/def/crs/EPSG/0/4258;Obergurgl, AT, vegetation skislope, 2008;2018-09-24;publication;urn:ltereurope:inspire::9050:17670;Obergurgl - Austria;Brigitta Erschbamer;LTER Europe;brigitta.erschbamer@uibk.ac.at;pointOfContact;documentDigital;Vegetation data of the Festkogel-skislope in Obergurgl compared to outside of slope-vegetation is presented. Within the project &quot;Footprints; integrative research in the Oetztal valley&quot; (2005-2009), the development of the village Obergurgl and Vent was studied. This was tied on the project Man-and-Biosphere, the model-study in the 70ies and 80ies. The project was structured in three phases. Within the last phase, the vegetation of ski slopes in Obergurgl was recorded to compare the skislope-vegetation with the surrounding, natural vegetation. Therefore, three transects were established along an altitudinal gradient from skislope-bottom (1930 m a.s.l.) to skislope-top (2893 m a.s.l.). Locality: Festkogel skislope in Obergurgl, Tyrol, Austria Vegetation-records were made from 07.08.2008 to 26.08.2008 In sum, 118 vegetation records were made (one record=one plot). Those records are distributed in 40 parallel record-points.;completed;Nikolaus Schallhart;University of Innsbruck, Alpine Research Centre Obergurgl;Sternwartestra\u00dfe 15;Innsbruck;6020;AT;klaus.schallhart@uibk.ac.at;https://www.uibk.ac.at/afo/team/;pointOfContact;continual;Representative area of sampling: plot scale Sampling frequency - sampling time span: seasonally Sampling frequency - minimum sampling unit: seasonally;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;publication;Achillea millefolium;Achillea moschata;Agrostis agrostiflora;Agrostis capillaris;Agrostis rupestris;Ajuga pyramidalis;Alchemilla fissa;Alchemilla nitida;Alchemilla vulgaris agg.;Alectoria ochroleuca;Alnus alnobetula;Androsace obtusifolia;Antennaria dioica;Anthoxanthum alpinum;Anthoxanthum odoratum;Arabis alpina;Arenaria biflora;Avenella flexuosa;Avenula versicolor;Bartsia alpina;Botrychium lunaria;Calamagrostis villosa;Calluna vulgaris;Campanula barbata;Campanula cochleariifolia;Campanula scheuchzeri;Cardamine alpina;Cardamine resedifolia;Carex brunnescens ssp. brunnescens;Carex curvula;Carex nigra;Carex pilulifera;Carex sempervirens;Carum carvi;Cerastium cerastoides;Cerastium fontanum;Cerastium pedunculatum;Cerastium uniflorum;Cetraria islandica;Cetraria nivalis;Chaerophyllum hirsutum;Chenopodium bonus-henricus;Cirsium spinosissimum;Cladonia arbuscula;Coeloglossum viride;Comastoma tenellum;Crepis aurea;Dactylis glomerata;Deschampsia cespitosa;Diphasiastrum alpinum;Doronicum clusii;Dryopteris expansa;Elymus repens;Empetrum hermaphroditum;Epilobium angustifolium;Erigeron uniflorus;Euphrasia minima agg.;Euphrasia officinalis ssp. rostkoviana;Festuca halleri;Festuca pulchella;Festuca pumila;Festuca rubra agg.;Festuca varia;Fragaria vesca;Galium anisophyllon;Galium mollugo agg.;Gentiana acaulis;Gentiana orbicularis;Gentiana punctata;Gentianella anisodonta;Geranium sylvaticum;Geum montanum;Geum reptans;Gnaphalium supinum;Gymnocarpium dryopteris;Helianthemum ovatum;Hieracium alpinum;Hieracium hoppeanum;Hieracium lachenalii;Hieracium lactucella;Hieracium pilosum;Homogyne alpina;Hypochaeris uniflora;Juncus filiformis;Juncus jacquinii;Juniperus communis ssp. nana;Kobresia myosuroides;Larix decidua;Leontodon autumnalis;Leontodon helveticus;Leontodon hispidus;Leucanthemopsis alpina;Leucanthemum vulgare agg.;Ligusticum mutellina;Linaria alpina;Loiseleuria procumbens;Lolium perenne;Lotus corniculatus;Luzula alpinopilosa;Luzula lutea;Luzula luzuloides;Luzula spicata;Luzula sylvatica;Melampyrum sylvaticum;Minuartia gerardii;Moss sp.;Myosotis alpestris;Nardus stricta;Nostoc sp.;Oreochloa disticha;Oxyria digyna;Parnassia palustris;Pedicularis kerneri;Pedicularis tuberosa;Persicaria vivipara;Petasites paradoxus;Peucedanum ostruthium;Phleum commutatum;Phleum hirsutum;Phleum pratense;Phleum rhaeticum;Phyteuma betonicifolium;Phyteuma hemisphaericum;Phyteuma orbiculare;Picea abies;Pinus cembra;Plantago major;Poa alpina;Poa laxa;Poa molinerii;Poa sp.;Polytrichum sp.;Potentilla aurea;Potentilla frigida;Potentilla pusilla;Primula glutinosa;Pseudorchis albida;Pulmonaria sp.;Pulsatilla vernalis;Pyrola minor;Ranunculus acris;Ranunculus glacialis;Ranunculus montanus;Rhododendron ferrugineum;Rhododendron x intermedium;Rubus sp.;Ruderalia;Rumex acetosa;Rumex acetosella s.lat.;Rumex alpestris;Sagina saginoides;Salix hastata;Salix helvetica;Salix herbacea;Salix retusa;Salix serpillifolia;Salix sp.;Salix waldsteiniana;Saxifraga bryoides;Saxifraga exarata;Saxifraga paniculata;Sedum acre;Sedum alpestre;Sedum atratum;Selaginella selaginoides;Sempervivum montanum;Senecio carniolicus;Sesleria albicans;Sibbaldia procumbens;Silene acaulis s.lat.;Silene nutans ssp. nutans;Silene rupestris;Silene vulgaris ssp. vulgaris;Soldanella pusilla;Solidago virgaurea;Trifolium pratense ssp nivale;Stellaria graminea;Stereocaulon alpinum;Taraxacum alpestre s.str.;Taraxacum sect.;Thamnolia vermicularis;Thesium alpinum;Thymus praecox ssp. polytrichus;Thymus praecox ssp. praecox;Trifolium badium;Trifolium hybridum;Trifolium montanum;Trifolium pallescens;Trifolium pratense;Trifolium repens;Trollius europaeus;Urtica dioica;Vaccinium gaultherioides;Vaccinium myrtillus;Vaccinium vitis-idaea;Veronica alpina;Veronica bellidioides;Veronica serpyllifolia ssp. humifusa;Vicia cracca;Viola arvensis;Viola biflora;Viola sp.;Biological Classification;Constructed, industrial and other artificial habitats;biodiversity;alpine;Line transects;hillslopes;LTER Controlled Vocabulary;The data provider must be offered co-authorship for publications using this dataset at least within the metadata description;Formal acknowledgement of the dataset providers;The opportunity to review the results based on the dataset;Reprints of articles using the dataset must be provided to the data provider;The dataset provider is given a complete list of all products that make use of the dataset;Mutual agreement on reciprocal sharing of data;The principal: Research has granted the access and use permission: Free for access and use upon request;The principal: Public has granted the access and use permission: Free for access and use upon request;eng;environment;11.048430000000;11.029380000000;46.830080000000;46.874790000000;1930.00;2823;urn:ogc:def:crs:EPSG;MSL height;Not specific to any location or epoch.;Hydrography.;Representative area of sampling: plot scale;ground condition;2008-08-06;2008-08-25;http://www.uibk.ac.at/afo/publikationen/projektberichte.html;WWW:LINK-1.0-http--link;Projektberichte;dataset;Conformity_001;INSPIRE;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;See the referenced specification;Method description: Vegetation-records were made from 07.08.2008 to 26.08.2008 In sum, 118 vegetation records were made (one record=one plot). Those records are distributed in 40 parallel record-points. Plot size was taken according to Braun-Blanquet (1964). Also standheight and ecological indicator-values were recorded. Indicator values were evaluated along coverage-values and given as mean value per plot. Indicator values were taken from University of Boku in Vienna (http://statedv.boku.ac.at/zeigerwerte/) and follow Ellenberg et al. (1992). vegetation coverage of species per plot (relev\u00e9-no) according to the scale of Braun-Blanquet (1964) and Wilmanns(1993) r rare, 1 individual within the plot, very small coverage ratio 50 individuals) with small coverage ratio 5-15% 2b individual-numbers optional, coverage ratio > 15-25% 3 individual-numbers optional, coverage ratio > 25-50% 4 individual-numbers optional, coverage ratio > 50-75% 5 individual-numbers optional, coverage ratio > 75%. Method URL: . Instrumentation: metal frame with 1 m\u00b2;Metadata Access Constraints: none Metadata Use Constraints: none;annually",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0ba7000e-14d2-58d8-8c94-9b28b19a424f",
+    "notes": [
+        "Vegetation data of the Festkogel-skislope in Obergurgl compared to outside of slope-vegetation is presented. Within the project &quot;Footprints; integrative research in the Oetztal valley&quot; (2005-2009), the development of the village Obergurgl and Vent was studied. This was tied on the project Man-and-Biosphere, the model-study in the 70ies and 80ies. The project was structured in three phases. Within the last phase, the vegetation of ski slopes in Obergurgl was recorded to compare the skislope-vegetation with the surrounding, natural vegetation. Therefore, three transects were established along an altitudinal gradient from skislope-bottom (1930 m a.s.l.) to skislope-top (2893 m a.s.l.). Locality: Festkogel skislope in Obergurgl, Tyrol, Austria Vegetation-records were made from 07.08.2008 to 26.08.2008 In sum, 118 vegetation records were made (one record=one plot). Those records are distributed in 40 parallel record-points."
+    ],
+    "oai_identifier": [
+        "0ba7000e-14d2-58d8-8c94-9b28b19a424f"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[11.048430000000,46.830080000000],[11.048430000000,46.874790000000],[11.029380000000,46.874790000000],[11.029380000000,46.830080000000],[11.048430000000,46.830080000000]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Achillea millefolium"
+        },
+        {
+            "name": "Achillea moschata"
+        },
+        {
+            "name": "Agrostis agrostiflora"
+        },
+        {
+            "name": "Agrostis capillaris"
+        },
+        {
+            "name": "Agrostis rupestris"
+        },
+        {
+            "name": "Ajuga pyramidalis"
+        },
+        {
+            "name": "Alchemilla fissa"
+        },
+        {
+            "name": "Alchemilla nitida"
+        },
+        {
+            "name": "Alchemilla vulgaris agg."
+        },
+        {
+            "name": "Alectoria ochroleuca"
+        },
+        {
+            "name": "Alnus alnobetula"
+        },
+        {
+            "name": "Androsace obtusifolia"
+        }
+    ],
+    "title": [
+        "Obergurgl, AT, vegetation skislope, 2008"
+    ],
+    "url": "http://www.uibk.ac.at/afo/publikationen/projektberichte.html"
+}

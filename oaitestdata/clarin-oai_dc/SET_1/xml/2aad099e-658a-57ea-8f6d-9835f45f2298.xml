@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-392</identifier>
+    <datestamp>2016-04-06T16:39:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PAROLE Portuguese Corpus</dc:title>
+      <dc:contributor>Mendes, Am&#225;lia</dc:contributor>
+      <dc:description>News</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-392</dc:identifier>
+      <dc:language>por</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Portugal</dc:coverage>
+      <dc:publisher>University of Lisbon, CLUL-Centro de Lingu&#237;stica da Universidade de Lisboa</dc:publisher>
+      <dc:source>http://www.elda.org/catalogue/en/text/W0024.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10303604</identifier>
+    <datestamp>2019-06-15T05:33:00Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti Keele Instituudi m&#245;isteline s&#245;navarakartoteek</dc:title>
+      <dc:title xml:lang="en">The Conceptual File of Estonian Lexis of the Institute of the Estonian Language</dc:title>
+      <dc:creator>Laansalu, Tiina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2017-02-15</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-0632AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">M&#245;istelise s&#245;navarakartoteegi idee p&#228;rineb Andrus Saarestelt. Kogumist&#246;&#246; algas 1920ndatel ja kestis 1930ndate keskpaigani. M&#245;istelises kogus on s&#245;navara jaotatud mitte kihelkondade, vaid m&#245;istete j&#228;rgi. Materjali on kogutud j&#228;rgmiste valdkondade kohta: abielu, aeg, aiandus, armuelu, ehitused, heinategu, ilmastik, inimene, kalandus, karjandus, keha, kehakatted, k&#228;sit&#246;&#246;, liiklus, linat&#246;&#246;, loomastik, maap&#245;uevarad, maastik, merelinnud, merendus, mesindus, metsandus, m&#245;&#245;dud, m&#228;ngimine, m&#228;rk, n&#245;idus, n&#245;ud, puut&#246;&#246;, p&#245;llundus, suguv&#245;sa, s&#245;idukid, taevalaotus, tahtmine, taimestik, tervis, toitlus, tuli, tundeelu, tunnetamine, t&#246;&#246;, usund, veekogud, vees&#245;idukid, viin, vill, v&#228;rv, &#245;igus ja &#252;hiskond.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The idea comes from Andrus Saareste. Collection started in the 1920s and went on until mid-1930s. Unlike the geographic division typical of dialect collections, here the vocabulary is divided by conceptual affinity. Material has been collected from the following domains: Marriage, Time, Gardening, Love life, Buildings, Haymaking, Weather, Humans, Fishing, Cattle breeding, Body, Clothing, Handicrafts, Traffic, Flax works, Animals, Mineral resources, Landscapes, Seabirds, Maritime affairs, Apiculture, Forestry, Measurement, Playing, Sign, Magic, Dishes, Woodwork, Agriculture, Family, Vehicles, Firmament, Volition, Plants, Health, Nourishment, Fire, Emotional life, Cognition, Work, Religion, Waterbodies, Water vehicles, Vodka, Wool, Colour, and Justice and Society.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

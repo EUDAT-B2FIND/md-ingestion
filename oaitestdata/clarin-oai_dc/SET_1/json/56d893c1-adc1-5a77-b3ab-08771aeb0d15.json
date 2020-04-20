@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/84",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/84"
+    ],
+    "PID": "http://hdl.handle.net/10794/84",
+    "PublicationTimestamp": "2015-12-10T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/84;2017-10-26T07:52:34Z;hdl_10794_1;hdl_10794_2;Bet\u00e4nkande ang\u00e5ende likformig uppst\u00e4llning av grammatiska l\u00e4rob\u00f6cker (2015-12-11);Bet\u00e4nkande ang\u00e5ende likformig uppst\u00e4llning av grammatiska l\u00e4rob\u00f6cker (2015-12-11);n/a, n/a;Swedish;Deliberation report;Deliberation report on conformity of coursebooks in grammar 1882.;Bet\u00e4nkande ang\u00e5ende likformig uppst\u00e4llning av grammatiska l\u00e4rob\u00f6cker 1882.;2015-12-10;corpus;http://hdl.handle.net/10794/84;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;http://creativecommons.org/licenses/by/4.0/;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/betankande",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "56d893c1-adc1-5a77-b3ab-08771aeb0d15",
+    "notes": [
+        "Deliberation report on conformity of coursebooks in grammar 1882.",
+        "Bet\u00e4nkande ang\u00e5ende likformig uppst\u00e4llning av grammatiska l\u00e4rob\u00f6cker 1882."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/84"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Deliberation report"
+        }
+    ],
+    "title": [
+        "Bet\u00e4nkande ang\u00e5ende likformig uppst\u00e4llning av grammatiska l\u00e4rob\u00f6cker (2015-12-11)",
+        "Bet\u00e4nkande ang\u00e5ende likformig uppst\u00e4llning av grammatiska l\u00e4rob\u00f6cker (2015-12-11)"
+    ],
+    "url": ""
+}

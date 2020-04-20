@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Woolley, James D."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(2 files : ca. 214, 2 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1386",
+    "MetadataAccess": [
+        "oai:ota:oucs:1386"
+    ],
+    "PublicationYear": [
+        "[198?]"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Periodicals"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Swift, Jonathan, 1667-1745",
+        "Sheridan, Thomas, 1687-1738"
+    ],
+    "fulltext": "oai:ota:oucs:1386;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1386.xml;The Intelligencer / Jonathan Swift and Thomas Sheridan;Swift, Jonathan, 1667-1745;Sheridan, Thomas, 1687-1738;[198?];text_and_corpus_linguistics;Irish periodicals -- 18th century;eng;lat;Oxford Text Archive, University of Oxford;Woolley, James D.;text/plain;(2 files : ca. 214, 2 KB);Text;Periodicals;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "97112e50-bce9-551a-b305-52f4092f8af5",
+    "oai_identifier": [
+        "oai:ota:oucs:1386"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Irish periodicals -- th century"
+        }
+    ],
+    "title": [
+        "The Intelligencer / Jonathan Swift and Thomas Sheridan"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1386.xml"
+}

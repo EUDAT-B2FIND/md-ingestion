@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "john.huck@ualberta.ca"
+    ],
+    "Contributor": [
+        "University of Alberta Libraries"
+    ],
+    "DOI": "http://dx.doi.org/10.5443/11278",
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Trace elements are chemicals that occur at very low concentrations, but play a role in the carbon cycle, marine ecosystems, and contaminant and climate processes of the oceans. This project is looking at the distribution and processes relating to trace elements in the Arctic Ocean. Specifically, how trace elements interact with changes in temperature, sea-ice cover, fresh water discharge, marine ecosystem structure and carbon sequestration capacity of the Arctic Ocean are being studied."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=11278_fgdc",
+    "PublicationTimestamp": "2012-10-11T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(69N-76N,144W-132W)",
+    "TempCoverageBegin": 63386967599,
+    "TempCoverageEnd": 63388349999,
+    "TemporalCoverage": " period : ( 2009-08-27T11:59:59Z - 2009-09-12T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2009-08-27T11:59:59Z",
+    "TemporalCoverage:EndDate": "2009-09-12T11:59:59Z",
+    "author": [
+        "Jean-Eric Tremblay",
+        "Jonathan Gagnon",
+        "Roger Francois"
+    ],
+    "fulltext": "11278_fgdc;2017-04-09T22:02:23Z;PDCMetadata;Roger Francois;Jean-Eric Tremblay;Jonathan Gagnon;Roger Francois;20121011;Nitrate, nitrite, phosphate, dissolved silica concentrations (micromol/L) measured in the Beaufort Sea  on multiple casts at 8 stations in 2009;Computer file;unknown;Tremblay, Jean-Eric, Roger Francois, and Jonathan Gagnon, 2012, Nitrate, nitrite, phosphate, dissolved silica concentrations (micromol/L) measured in the Beaufort Sea  on multiple casts at 8 stations in 2009. Canadian Cryospheric Information Network / International Polar Year Data Assembly Centre Network. http://dx.doi.org/10.5443/11278;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11278;The concentrations of dissolved nutrients (nitrate, nitrate, phosphate, and dissolved silica) were measured on board ship with a nutrient autoanalyzer to complement the hydrographic data. They were measured on samples collected with the Trace Metal Clean Rosette at Station L1 (71\u00b006'N, 139\u00b010'W), L1.5 (73\u00b019'N, 139\u00b023'W), L2 (74\u00b030'N, 137\u00b000'W, L3 (75\u00b017'N, 137\u00b030'W), L1.1 (72\u00b031'N, 136\u00b041'), and S4 (71\u00b011'N, 132\u00b057'W) and on samples collected with the regular ArcticNet rosette at station S1 (69\u00b030'N, 137\u00b059'W), S2 (70\u00b000'N, 138\u00b030'W), L1, L2, L3, and L1.1;Trace elements are chemicals that occur at very low concentrations, but play a role in the carbon cycle, marine ecosystems, and contaminant and climate processes of the oceans. This project is looking at the distribution and processes relating to trace elements in the Arctic Ocean. Specifically, how trace elements interact with changes in temperature, sea-ice cover, fresh water discharge, marine ecosystem structure and carbon sequestration capacity of the Arctic Ocean are being studied.;Summary: Not Applicable Research Program(s): IPY. For further information: rfrancoi@eos.ubc.ca;20090827;20090912;NULL;In work;Unknown;-144;-132;76;69;NULL;Arctic Ocean;Beaufort Sea;Nitrates;Nutrients;Phosphorus;Silica;Water column;Beaufort Sea;NULL;Public;NULL;University of Alberta Libraries;Metadata Librarian;NULL;mailing;Cameron Library;Edmonton;Alberta;T6G 2J8;Canada;(780) 248-1337;john.huck@ualberta.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;11278;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20121011;20121011;Metadata Librarian;University of Alberta Libraries;mailing;Cameron Library;Edmonton;Alberta;T6G 2J8;Canada;(780) 248-1337;john.huck@ualberta.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0a1fe09a-30fe-5f0f-af38-fbc4611c6249",
+    "notes": [
+        "The concentrations of dissolved nutrients (nitrate, nitrate, phosphate, and dissolved silica) were measured on board ship with a nutrient autoanalyzer to complement the hydrographic data. They were measured on samples collected with the Trace Metal Clean Rosette at Station L1 (71\u00b006'N, 139\u00b010'W), L1.5 (73\u00b019'N, 139\u00b023'W), L2 (74\u00b030'N, 137\u00b000'W, L3 (75\u00b017'N, 137\u00b030'W), L1.1 (72\u00b031'N, 136\u00b041'), and S4 (71\u00b011'N, 132\u00b057'W) and on samples collected with the regular ArcticNet rosette at station S1 (69\u00b030'N, 137\u00b059'W), S2 (70\u00b000'N, 138\u00b030'W), L1, L2, L3, and L1.1"
+    ],
+    "oai_identifier": [
+        "11278_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-144,69],[-144,76],[-132,76],[-132,69],[-144,69]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Arctic Ocean"
+        },
+        {
+            "name": "Beaufort Sea"
+        },
+        {
+            "name": "Nitrates"
+        },
+        {
+            "name": "Nutrients"
+        },
+        {
+            "name": "Phosphorus"
+        },
+        {
+            "name": "Silica"
+        },
+        {
+            "name": "Water column"
+        }
+    ],
+    "title": [
+        "Nitrate, nitrite, phosphate, dissolved silica concentrations (micromol/L) measured in the Beaufort Sea  on multiple casts at 8 stations in 2009"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11278"
+}

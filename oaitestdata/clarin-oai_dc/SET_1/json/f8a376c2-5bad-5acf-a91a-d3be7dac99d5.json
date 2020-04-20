@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=8ca121046bf811e2a2aa782bcb0741353301ccfceaa743e5b5ebccec22daf26a",
+    "MetadataAccess": [
+        "8ca121046bf811e2a2aa782bcb0741353301ccfceaa743e5b5ebccec22daf26a"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "8ca121046bf811e2a2aa782bcb0741353301ccfceaa743e5b5ebccec22daf26a;2018-11-15T16:40:07Z;toolService;toolService:service;U-Compare Paragraph-Breaking Service;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies paragraphs in plain text\nTools in workflow: MLRS Paragraph Splitter (University of Malta)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f8a376c2-5bad-5acf-a91a-d3be7dac99d5",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies paragraphs in plain text\nTools in workflow: MLRS Paragraph Splitter (University of Malta)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences"
+    ],
+    "oai_identifier": [
+        "8ca121046bf811e2a2aa782bcb0741353301ccfceaa743e5b5ebccec22daf26a"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Paragraph-Breaking Service"
+    ]
+}

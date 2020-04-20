@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/110",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/110"
+    ],
+    "PID": "http://hdl.handle.net/10794/110",
+    "PublicationTimestamp": "2013-03-06T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/110;2017-10-24T14:03:01Z;hdl_10794_1;hdl_10794_2;Blog mix unknown date (2017-02-24);Bloggmix ok\u00e4nt datum (2017-02-24);n/a, n/a;Swedish;Blog;The blogs in the blogmix are selected through the lists Most visited private blogs, Most visited professional blogs, and the local lists for different regions, at bloggportalen.se.\r\n\r\nMore information, such as the location and age of the blogger is also retrieved from Bloggportalen. The material has not been manually checked, which means that spam may occur. Some English blogs have been removed when discovered, and some blogs have not been added for technical reasons.\r\n\r\nThe time of the blogs ranges from the first to the latest entries of the selected blogs, and the corpus is continually updated.\r\n\r\nThe material is sentence scrambled.;Urvalet av bloggar f\u00f6r bloggmixen g\u00f6rs med hj\u00e4lp av topplistorna p\u00e5 bloggportalen.se, b\u00e5de Mest bes\u00f6kta privata bloggar, Mest bes\u00f6kta proffsbloggar och de lokala topplistorna f\u00f6r olika regioner.\r\n\r\nN\u00e4rmare information, som bloggarens ort och \u00e5lder, h\u00e4mtas ocks\u00e5 fr\u00e5n Bloggportalen. Materialet har inte kontrollerats manuellt, vilket betyder att det kan f\u00f6rekomma spam. N\u00e5gra engelskspr\u00e5kiga bloggar har plockats bort d\u00e5 de uppt\u00e4ckts, och vissa bloggar har inte kunnat l\u00e4sas in av tekniska sk\u00e4l.\r\n\r\nTidsperioden str\u00e4cker sig fr\u00e5n de f\u00f6rsta inl\u00e4ggen i de utvalda bloggarna till de senaste inl\u00e4ggen. Korpusen uppdateras regelbundet.\r\n\r\nMaterialet \u00e4r meningsomkastat.;2013-03-06;corpus;http://hdl.handle.net/10794/110;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/bloggmixodat",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4135464e-b92b-56fa-ad9e-954fc3faf232",
+    "notes": [
+        "The blogs in the blogmix are selected through the lists Most visited private blogs, Most visited professional blogs, and the local lists for different regions, at bloggportalen.se.\r\n\r\nMore information, such as the location and age of the blogger is also retrieved from Bloggportalen. The material has not been manually checked, which means that spam may occur. Some English blogs have been removed when discovered, and some blogs have not been added for technical reasons.\r\n\r\nThe time of the blogs ranges from the first to the latest entries of the selected blogs, and the corpus is continually updated.\r\n\r\nThe material is sentence scrambled.",
+        "Urvalet av bloggar f\u00f6r bloggmixen g\u00f6rs med hj\u00e4lp av topplistorna p\u00e5 bloggportalen.se, b\u00e5de Mest bes\u00f6kta privata bloggar, Mest bes\u00f6kta proffsbloggar och de lokala topplistorna f\u00f6r olika regioner.\r\n\r\nN\u00e4rmare information, som bloggarens ort och \u00e5lder, h\u00e4mtas ocks\u00e5 fr\u00e5n Bloggportalen. Materialet har inte kontrollerats manuellt, vilket betyder att det kan f\u00f6rekomma spam. N\u00e5gra engelskspr\u00e5kiga bloggar har plockats bort d\u00e5 de uppt\u00e4ckts, och vissa bloggar har inte kunnat l\u00e4sas in av tekniska sk\u00e4l.\r\n\r\nTidsperioden str\u00e4cker sig fr\u00e5n de f\u00f6rsta inl\u00e4ggen i de utvalda bloggarna till de senaste inl\u00e4ggen. Korpusen uppdateras regelbundet.\r\n\r\nMaterialet \u00e4r meningsomkastat."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/110"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Blog"
+        }
+    ],
+    "title": [
+        "Blog mix unknown date (2017-02-24)",
+        "Bloggmix ok\u00e4nt datum (2017-02-24)"
+    ],
+    "url": ""
+}

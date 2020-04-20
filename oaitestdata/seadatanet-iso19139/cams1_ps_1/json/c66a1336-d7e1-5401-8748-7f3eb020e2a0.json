@@ -1,0 +1,95 @@
+{
+    "Contact": [
+        "sdn-userdesk@seadatanet.org"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=iso19139&identifier=c66a1336-d7e1-5401-8748-7f3eb020e2a0",
+    "PublicationTimestamp": "2015-05-28T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "SEADATANET",
+        "Marine Hydrophysical Institute",
+        "Department of Navigation and Hydrography and Oceanography, Turkish Navy",
+        "National Institute for Marine Research and Development \"Grigore Antipa\"",
+        "Ukrainian scientific center of Ecology of Sea (UkrSCES)",
+        "Ukrainian Hydrometeorological Institute - Marine Branch",
+        "Sinop University, Fisheries Faculty",
+        "Southern Scientific Research Institute of Marine Fisheries and Oceanography",
+        "Iv.Javakhishvili Tbilisi State University, Centre of Relations with UNESCO Oceanological Research Centre and GeoDNA (UNESCO)",
+        "IFREMER",
+        "Danube Hydro-meteorological Observatory",
+        "State Oceanographic Institute (SOI)",
+        "Odessa Branch of SOI (State Oceanographic Institute)",
+        "IFREMER / IDM/SISMER",
+        "Institute of Biology of the Southern Seas, NAS of Ukraine",
+        "Institute of Marine Sciences, Middle East Technical University",
+        "Zoological Institute of the Russian Academy of Sciences",
+        "Taurida V.I. Vernadsky National University",
+        "Karadeniz Technical University, Faculty of Marine Sciences",
+        "P.P.Shirshov Institute of Oceanology, RAS",
+        "Odessa branch of IBSS (Institute of Biology of Southern Seas)",
+        "IFREMER / GM-MARINE GEOSCIENCES",
+        "Scientific - Research Firm \"GAMMA\"",
+        "Bulgarian National Oceanographic Data Centre(BGODC), Institute of Oceanology",
+        "Ankara University",
+        "Far Eastern Regional Hydrometeorological Research Institute",
+        "Institute of Fishery Resources (IFR)",
+        "Shom"
+    ],
+    "ResourceType": "dataset",
+    "Rights": [
+        "No limitations on public access.  For data access please register at http://www.marine-id.org"
+    ],
+    "SpatialCoverage": "(40N-48N,28E-42E)",
+    "TempCoverageBegin": 58931323199,
+    "TempCoverageEnd": 63518558399,
+    "TemporalCoverage": " period : ( 1868-06-17T11:59:59Z - 2013-10-28T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1868-06-17T11:59:59Z",
+    "TemporalCoverage:EndDate": "2013-10-28T11:59:59Z",
+    "fulltext": "117f66f9-22fc-4609-9be8-b58f9dd6d2b9;SEADATANET;sdn-userdesk@seadatanet.org;http://www.seadatanet.org/;2018-07-24T09:47:24;ISO 19115:2003/19139 - EMODNET - SDN;0.1;4;0;0;false;WGS 84 (EPSG 4326);EPSG;Black Sea - Temperature and salinity observation collection V1.1;seadatanet-black_sea-temperature_salinity_aggregated_public-v1_1;2015-05-28;1.1;2015-05-28;117f66f9-22fc-4609-9be8-b58f9dd6d2b9;The Black Sea historical dataset includes all open access temperature and salinity in situ data from the Black Sea and Sea of Azov for period 1868-2013. The data were retrieved from the SeaDataNet infrastructure at the beginning of 2014. Data quality has been analysed and checked using ODV software. Quality Flags of anomalous data have been revised using different QC procedures in conjunction with the visual expert check. Duplicates have been identified and excluded from the dataset.\n\nData Providers:\n- Institute of Fishery Resources (IFR)\n- Institute of Biodiversity and Ecosystem Research, Bulgarian Academy of Sciences\n- IFREMER / IDM / SISMER - Scientific Information Systems for the SEA\n- SHOM (SERVICE HYDROGRAPHIQUE ET OCEANOGRAPHIQUE DE LA MARINE)\n- All-Russia Research Institute of Hydrometeorological Information - World Data Centre (RIHMI-WDC) National Oceanographic Data Centre (NODC)\n- P.P.Shirshov Institute of Oceanology, RAS\n- Southern Scientific Research Institute of Marine Fisheries and Oceanography\n- Bulgarian National Oceanographic Data Centre(BGODC), Institute of Oceanology\n- Iv.Javakhishvili Tbilisi State University, Centre of Relations with UNESCO Oceanological Research Centre and GeoDNA (UNESCO)\n- Institute of Marine Sciences, Middle East Technical University\n- National Institute for Marine Research and Development \"Grigore Antipa\"\n- Marine Hydrophysical Institute\n- Department of Navigation and Hydrography and Oceanography, Turkish Navy\n- Karadeniz Technical University, Faculty of Marine Sciences\n- Sinop University, Fisheries Faculty\n- Institute of Biology of the Southern Seas\n- Marine branch of Ukrainian Hydrometeorological Institute\n- Ukrainian scientific center of Ecology of Sea (UkrSCES)\n- Scientific - Research Firm \"GAMMA\"\n- Georgian Institute of Hydrometeorology of Georgian Technical University (GIH)\n- Georgian Institute of Water Management of Georgian Technical University (GWMI)\n- Ankara University\n- Danube Hydro-meteorological Observatory\n\nFor data access please register at http://www.marine-id.org\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/;SeaDataNet;Institute of Marine Sciences, Middle East Technical University;+90 (324) 5212406;+90 (324) 5212327;P.O.Box 28;Erdemli;33731;Turkey;volodymyr@ims.metu.edu.tr; devrim@ims.metu.edu.tr;http://www.ims.metu.edu.tr;web site;IFREMER / IDM/SISMER;+33 (0)2 98.22.49.16;+33 (0)2 98.22.46.44;Centre IFREMER de BrestBP 70;PLOUZANE;29280;France;sismer@ifremer.fr;http://www.ifremer.fr/sismer/;web site;IFREMER;+33(0)1 46.48.21.00;+33(0)1 46.48.22.24;Technopolis 40,155 rue J.J. Rousseau;ISSY-LES-MOULINEAUX;92138;France;communication@ifremer.fr;http://wwz.ifremer.fr;web site;Ukrainian scientific center of Ecology of Sea (UkrSCES);+38 0482 636622;+380 482  636873;89 Frantsuzsky Blvd.;Odessa;65009;Ukraine;accem@te.net.ua;http://www.sea.gov.ua;web site;Scientific - Research Firm \"GAMMA\";+995 32 260 10 24;+995 32 260 44 33;17A , Guramishvili av. 0192, Tbilisi, Georgia;Tbilisi;0192;Georgia;v.gvakharia@gamma.ge;http://gamma.ge/;web site;Institute of Fishery Resources (IFR);+359 52 632066;+359 52 632066;4 Primorski Blvd\nP.O. Box 72;Varna;9000;Bulgaria;vvmihneva@yahoo.com;http://www.ifrvarna.com;web site;Ankara University;0312 596 10 00;0312 317 67 24;None;Ankara;06110;Turkey;agricul@agri.ankara.edu.tr;http://www.agri.ankara.edu.tr/;web site;Zoological Institute of the Russian Academy of Sciences;+7 812 3280711;+7\u00a0(812)\u00a0328-29-41;Universitetskaya emb., 1;St. Petersburg;199034;Russian Federation;office@zin.ru;http://www.zin.ru;web site;Taurida V.I. Vernadsky National University;+380 (652) 51 64 98;None;Prospekt Vernadskogo 4;Simferopol;95007;Ukraine;None;http://www.ccssu.crimea.ua/;web site;Danube Hydro-meteorological Observatory;None;None;None;Izmail;None;Ukraine;None;None;web site;IFREMER / GM-MARINE GEOSCIENCES;+33(0)2 98.22.42.70;+33(0)2 98.22.45.70;IFREMER Centre de Bretagne\nZI Pointe du diable\nCS 10070;PLOUZANE;29280;France;geosciences.marines@ifremer.fr;http://www.ifremer.fr/drogm/;web site;Shom;+33 (0)2 56.31.23.12;+33 (0)2 56.31.25.80;13, rue du Chatellier\nCS92803;BREST CEDEX 2;29228;France;seadatanet-admin@shom.fr;http://www.shom.fr/;web site;P.P.Shirshov Institute of Oceanology, RAS;+7(499)124-59-96;+7(499)124-59-83;36 Nakhimovsky prospect;Moscow;117997;Russian Federation;office@ocean.ru;http://www.ocean.ru;web site;Southern Scientific Research Institute of Marine Fisheries and Oceanography;+380 6561 21012;+380 6561 61627;YugNIRO, 2 Sverdlova str.;Kerch;98300;Ukraine;fish@kerch.com.ua, yugniro@kerch.com.ua;http://yugniro.crimea.com/;web site;Bulgarian National Oceanographic Data Centre(BGODC), Institute of Oceanology;+359 52 370 486;+359 52 370 483;40 Parvi may str.\nPO BOX 152;Varna;9000;Bulgaria;bgodc@io-bas.bg;http://www.bgodc.io-bas.bg;web site;Iv.Javakhishvili Tbilisi State University, Centre of Relations with UNESCO Oceanological Research Centre and GeoDNA (UNESCO);+995 32 253222;  +99532 222372;+99532 253222;1 I. Chavchavadze Ave., 0128,Tbilisi, Georgia\nIv.Javakhishvili Tbilisi State University;Tbilisi;None;Georgia;wocean@telenet.ge;http://www.oceandna.ge;web site;Institute of Marine Sciences, Middle East Technical University;+90 (324) 5212406;+90 (324) 5212327;P.O.Box 28;Erdemli;33731;Turkey;None;http://www.ims.metu.edu.tr;web site;National Institute for Marine Research and Development \"Grigore Antipa\";40 241 543288;40 241 831274;300 Mamaia Blvd.;Constanta;900581;Romania;rmri@rmri.ro;http://www.rmri.ro;web site;State Oceanographic Institute (SOI);+7 (499) 246-7288;+7 (499) 246-72-88;Kropotkinsky Lane 6;Moscow;119034;Russian Federation;adm@oceanography.ru, korshenko@mail.ru;http://www.oceanography.ru;web site;Marine Hydrophysical Institute;+380 692 54 02 52;+380 692 55 42 53;2, Kapitanskaya str.;Sevastopol;99011;Ukraine;khaliulin.alexey@nodc.org.ua;http://WWW.MHI.IUF.NET;web site;Department of Navigation and Hydrography and Oceanography, Turkish Navy;None;None;\u00c7ubuklu;Istanbul;81647;Turkey;None;None;web site;Karadeniz Technical University, Faculty of Marine Sciences;+90 462 7522805;+90 462 752 2158;\u00c7amburnu, Trabzon;Turkey;61530;Turkey;www.ktu.edu.tr;None;web site;Sinop University, Fisheries Faculty;None;None;None;Sinop;57000;Turkey;None;None;web site;Far Eastern Regional Hydrometeorological Research Institute;+7 (4232) 26-97-88;+7 (4232) 22-77-54;Fontannaya St., 24;Vladivostok;690600;Russian Federation;hydromet@online.ru;http://www.hydromet.com;web site;Institute of Biology of the Southern Seas, NAS of Ukraine;+380 692  544110;+380 692  557813;2, Nakhimov ave.;Sevastopol;99011;Ukraine;director@ibss.iuf.net;http://ibss.nas.gov.ua;web site;Ukrainian Hydrometeorological Institute - Marine Branch;+38044 525 12 50;+38044 525 53 63;37, Prospekt Nauki;Kiev;03028;Ukraine;uhmi@uhmi.org.ua;None;web site;Odessa branch of IBSS (Institute of Biology of Southern Seas);+380 482  25 13 13;+380 482  25 09 18;37, Pushkinskaya str., Odessa, 65011, UKRAINE;Odessa;65011;Ukraine;Alexandrov@paco.net;http://obibss.narod.ru;web site;Odessa Branch of SOI (State Oceanographic Institute);None;None;None;Odessa;None;Ukraine;None;None;web site;https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=117f66f9-22fc-4609-9be8-b58f9dd6d2b9&fname=BlackSeaTransp.png;Oceanographic geographical features;GEMET - INSPIRE themes, version 1.0;2009-09-22T07:57:15;Temperature of the water column;Salinity of the water column;Parameter Discovery Vocabulary (P02);2015-05-12T14:18:27;geonetwork.thesaurus.external.parameter.NVS.P02;ITS-90 water temperature;Water body salinity;EMODNET chemistry lot aggregated parameter names;2014-12-11;geonetwork.thesaurus.external.parameter.NVS.P35;Black Sea;Sea of Azov;SeaVoX salt and fresh water body gazetteer;2015-05-12T14:18:28;geonetwork.thesaurus.external.reference-geographical-area.NVS.C19;Th\u00e8mes Sextant;2017-01-23;geonetwork.thesaurus.local.theme.sextant-theme;SeaDataNet licence;SeaDataNet Usage Agreement: If you use SeaDataNet data in your publications please include the following in the Acknowledgements: Data were provided through SeaDataNet Pan-European infrastructure for ocean and marine data management (https://www.seadatanet.org);No limitations on public access.  For data access please register at http://www.marine-id.org;oceans;bounding box;27.5;42;40.5;47.5;1868-06-17;2013-10-28;-2200.0;0.0;http://dx.doi.org/10.12770/117f66f9-22fc-4609-9be8-b58f9dd6d2b9;WWW:LINK-1.0-http--metadata-URL;DOI of the product;ftp://vftp2.ifremer.fr/public/seadatanet-black_sea-temperaturesalinity_aggregated/SDN_2014-03_TS_Black_Sea_QC_done_v1.1.zip;WWW:DOWNLOAD-1.0-link--download;SDN_2014-03_TS_Black_Sea_QC_done_v1.1;zipped ODV binary collection;http://www.ifremer.fr/oceanotron/wms?DATASET=SDN_2014-03_TS_Black_Sea_QC_done_v1.1;OGC:WMS:getCapabilities;full collection dataset;http://www.ifremer.fr/oceanotron/wms?DATASET=SDN_2014-03_TS_Black_Sea_QC_done_v1.1;OGC:WMS;SDN_2014-03_TS_Black_Sea_QC_done_v1.1/Pressure;Pressure;http://www.ifremer.fr/oceanotron/wms?DATASET=SDN_2014-03_TS_Black_Sea_QC_done_v1.1;OGC:WMS;SDN_2014-03_TS_Black_Sea_QC_done_v1.1/Temperature;Temperature;http://www.ifremer.fr/oceanotron/wms?DATASET=SDN_2014-03_TS_Black_Sea_QC_done_v1.1;OGC:WMS;SDN_2014-03_TS_Black_Sea_QC_done_v1.1/Salinity;Salinity;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;See the referenced specification;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "c66a1336-d7e1-5401-8748-7f3eb020e2a0",
+    "notes": [
+        "The Black Sea historical dataset includes all open access temperature and salinity in situ data from the Black Sea and Sea of Azov for period 1868-2013. The data were retrieved from the SeaDataNet infrastructure at the beginning of 2014. Data quality has been analysed and checked using ODV software. Quality Flags of anomalous data have been revised using different QC procedures in conjunction with the visual expert check. Duplicates have been identified and excluded from the dataset.\n\nData Providers:\n- Institute of Fishery Resources (IFR)\n- Institute of Biodiversity and Ecosystem Research, Bulgarian Academy of Sciences\n- IFREMER / IDM / SISMER - Scientific Information Systems for the SEA\n- SHOM (SERVICE HYDROGRAPHIQUE ET OCEANOGRAPHIQUE DE LA MARINE)\n- All-Russia Research Institute of Hydrometeorological Information - World Data Centre (RIHMI-WDC) National Oceanographic Data Centre (NODC)\n- P.P.Shirshov Institute of Oceanology, RAS\n- Southern Scientific Research Institute of Marine Fisheries and Oceanography\n- Bulgarian National Oceanographic Data Centre(BGODC), Institute of Oceanology\n- Iv.Javakhishvili Tbilisi State University, Centre of Relations with UNESCO Oceanological Research Centre and GeoDNA (UNESCO)\n- Institute of Marine Sciences, Middle East Technical University\n- National Institute for Marine Research and Development \"Grigore Antipa\"\n- Marine Hydrophysical Institute\n- Department of Navigation and Hydrography and Oceanography, Turkish Navy\n- Karadeniz Technical University, Faculty of Marine Sciences\n- Sinop University, Fisheries Faculty\n- Institute of Biology of the Southern Seas\n- Marine branch of Ukrainian Hydrometeorological Institute\n- Ukrainian scientific center of Ecology of Sea (UkrSCES)\n- Scientific - Research Firm \"GAMMA\"\n- Georgian Institute of Hydrometeorology of Georgian Technical University (GIH)\n- Georgian Institute of Water Management of Georgian Technical University (GWMI)\n- Ankara University\n- Danube Hydro-meteorological Observatory\n\nFor data access please register at http://www.marine-id.org\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/"
+    ],
+    "oai_identifier": [
+        "c66a1336-d7e1-5401-8748-7f3eb020e2a0"
+    ],
+    "oai_set": "cams1_ps",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[27.5,40.5],[27.5,47.5],[42,47.5],[42,40.5],[27.5,40.5]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "Black Sea"
+        },
+        {
+            "name": "Sea Azov"
+        }
+    ],
+    "title": [
+        "Black Sea - Temperature and salinity observation collection V1.1"
+    ]
+}

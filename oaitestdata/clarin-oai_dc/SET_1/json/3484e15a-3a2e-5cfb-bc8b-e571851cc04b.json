@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=8488fe0ae6de11e6a2aa782bcb0741351cffdfbc76c44c978fda58d3bfefbd56",
+    "MetadataAccess": [
+        "8488fe0ae6de11e6a2aa782bcb0741351cffdfbc76c44c978fda58d3bfefbd56"
+    ],
+    "PublicationTimestamp": "2017-01-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "fulltext": "8488fe0ae6de11e6a2aa782bcb0741351cffdfbc76c44c978fda58d3bfefbd56;2018-11-15T16:40:26Z;corpus;corpus:text;LX-ESSLLI 2008;The LX-ESSLLI 2008 data set was created from the ESSLLI 2008 Distributional Semantic Workshop shared-task set, made of 44 concrete nouns grouped in 6 semantic categories (4 animate and 2 inanimate). The grouping is done in an hierarchical way following the top 10 properties from the McRae (2005) norms: bird-animal-natural; ground animal-animal-natural; fruit tree-vegetable-natural; green-vegetable-natural; tool-artifact-artifact; vehicle-artifact-artifact.\nWe kept the organization into the same categories, resulting in a list with the same size as the original data set. ;2017-01-30",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3484e15a-3a2e-5cfb-bc8b-e571851cc04b",
+    "notes": [
+        "The LX-ESSLLI 2008 data set was created from the ESSLLI 2008 Distributional Semantic Workshop shared-task set, made of 44 concrete nouns grouped in 6 semantic categories (4 animate and 2 inanimate). The grouping is done in an hierarchical way following the top 10 properties from the McRae (2005) norms: bird-animal-natural; ground animal-animal-natural; fruit tree-vegetable-natural; green-vegetable-natural; tool-artifact-artifact; vehicle-artifact-artifact.\nWe kept the organization into the same categories, resulting in a list with the same size as the original data set. "
+    ],
+    "oai_identifier": [
+        "8488fe0ae6de11e6a2aa782bcb0741351cffdfbc76c44c978fda58d3bfefbd56"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "LX-ESSLLI 2008"
+    ]
+}

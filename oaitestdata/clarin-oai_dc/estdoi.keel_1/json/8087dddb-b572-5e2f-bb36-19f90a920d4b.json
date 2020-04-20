@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00194L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17979315",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17979315"
+    ],
+    "PublicationTimestamp": "2019-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Laur, Sven"
+    ],
+    "fulltext": "oai:oai.datacite.org:17979315;2019-04-17T17:27:32Z;ESTDOI;ESTDOI.KEEL;Faktituletaja visualiseerimisliides;Laur, Sven;Center of Estonian Language Resources;2019;Issued: 2019-01-10;Updated: 2019-01-10;doi:10.15155/1-00-0000-0000-0000-00194L;Abstract;Faktituletaja visualiseerimisiidese kasutamiseks k\u00e4ivatada fail \"startserver.sh\" ning avada brauseriga \"index.html\" fail. Lisaks tuleb seadistada pakendi tee \"settings.py\" failis, mis on kataloog, kuhu liides lahti pakkida. Pakendis on kaasas ka m\u00f5ned demomudelid, mida saab visualiseerijaga uurida. ",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8087dddb-b572-5e2f-bb36-19f90a920d4b",
+    "notes": [
+        "Abstract",
+        "Faktituletaja visualiseerimisiidese kasutamiseks k\u00e4ivatada fail \"startserver.sh\" ning avada brauseriga \"index.html\" fail. Lisaks tuleb seadistada pakendi tee \"settings.py\" failis, mis on kataloog, kuhu liides lahti pakkida. Pakendis on kaasas ka m\u00f5ned demomudelid, mida saab visualiseerijaga uurida. "
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17979315"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Faktituletaja visualiseerimisliides"
+    ],
+    "url": ""
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=c68fe73834da11e2a2aa782bcb074135136b7883f83142e5b3925eebef708c0e",
+    "MetadataAccess": [
+        "c68fe73834da11e2a2aa782bcb074135136b7883f83142e5b3925eebef708c0e"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "c68fe73834da11e2a2aa782bcb074135136b7883f83142e5b3925eebef708c0e;2018-11-15T16:39:52Z;toolService;toolService:tool;UIMA/U-Compare Stanford Parser ;Syntactic parser for English. Outputs dependency relations. Also outputs parts-of-speech for each token.\n\nThe tool is provided as a UIMA  component, specifically as Java archive (jar) file, which can be incorporated within any UIMA workflow. However, it is particularly designed use in the U-Compare text mining platform (see separate META-SHARE record), since the types of annotations it produces are compliant with the U-Compare type system.;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "90718076-b86b-5430-a3e3-085945811a0b",
+    "notes": [
+        "Syntactic parser for English. Outputs dependency relations. Also outputs parts-of-speech for each token.\n\nThe tool is provided as a UIMA  component, specifically as Java archive (jar) file, which can be incorporated within any UIMA workflow. However, it is particularly designed use in the U-Compare text mining platform (see separate META-SHARE record), since the types of annotations it produces are compliant with the U-Compare type system."
+    ],
+    "oai_identifier": [
+        "c68fe73834da11e2a2aa782bcb074135136b7883f83142e5b3925eebef708c0e"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "UIMA/U-Compare Stanford Parser "
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15479/AT:ISTA:61",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "archive",
+        "dataset"
+    ],
+    "MetaDataAccess": "http://datarep.app.ist.ac.at/cgi/oai2?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datarep.app.ist.ac.at:61",
+    "RelatedIdentifier": [
+        "https://datarep.app.ist.ac.at/61/"
+    ],
+    "ResourceType": [
+        "Data Collection"
+    ],
+    "author": [
+        "Berry, Michael J, II",
+        "Schneidman, Elad",
+        "Amodei, Dario",
+        "Bialek, William",
+        "Tkacik, Gasper",
+        "Marre, Olivier"
+    ],
+    "fulltext": "oai:datarep.app.ist.ac.at:61;2017-04-12T08:05:53Z;Multi-electrode array recording from salamander retinal ganglion cells;Marre, Olivier;Tkacik, Gasper;Amodei, Dario;Schneidman, Elad;Bialek, William;Berry, Michael J, II;570 Life sciences; biology;This data was collected as part of the study [1]. It consists of preprocessed multi-electrode array recording from 160 salamander retinal ganglion cells responding to 297 repeats of a 19 s natural movie. The data is available in two formats: (1) a .mat file containing an array with dimensions \u201cnumber of repeats\u201d x \u201cnumber of neurons\u201d x \u201ctime in a repeat\u201d; (2) a zipped .txt file containing the same data represented as an array with dimensions \u201cnumber of neurons\u201d x \u201cnumber of samples\u201d, where the number of samples is equal to the product of the number of repeats and timebins within a repeat. The time dimension is divided into 20 ms time windows, and the array is binary indicating whether a given cell elicited at least one spike in a given time window during a particular repeat. See the reference below for details regarding collection and preprocessing:\r\n\r\n[1] Tka\u010dik G, Marre O, Amodei D, Schneidman E, Bialek W, Berry MJ II. Searching for Collective Behavior in a Large Network of Sensory Neurons. PLoS Comput Biol. 2014;10(1):e1003408.;Data Collection;NonPeerReviewed;dataset;archive;https://datarep.app.ist.ac.at/61/;https://datarep.app.ist.ac.at/61/1/bint_fishmovie32_100.mat;https://datarep.app.ist.ac.at/61/2/bint_fishmovie32_100.zip;  Marre, Olivier and Tkacik, Gasper and Amodei, Dario and Schneidman, Elad and Bialek, William and Berry, Michael J, II   Multi-electrode array recording from salamander retinal ganglion cells.  [Data Collection]     ;10.15479/AT:ISTA:61;10.15479/AT:ISTA:61",
+    "group": "ist",
+    "groups": [
+        {
+            "name": "ist"
+        }
+    ],
+    "name": "e8725ed3-2627-5d88-924d-a588907d5558",
+    "notes": [
+        "This data was collected as part of the study [1]. It consists of preprocessed multi-electrode array recording from 160 salamander retinal ganglion cells responding to 297 repeats of a 19 s natural movie. The data is available in two formats: (1) a .mat file containing an array with dimensions \u201cnumber of repeats\u201d x \u201cnumber of neurons\u201d x \u201ctime in a repeat\u201d; (2) a zipped .txt file containing the same data represented as an array with dimensions \u201cnumber of neurons\u201d x \u201cnumber of samples\u201d, where the number of samples is equal to the product of the number of repeats and timebins within a repeat. The time dimension is divided into 20 ms time windows, and the array is binary indicating whether a given cell elicited at least one spike in a given time window during a particular repeat. See the reference below for details regarding collection and preprocessing:\r\n\r\n[1] Tka\u010dik G, Marre O, Amodei D, Schneidman E, Bialek W, Berry MJ II. Searching for Collective Behavior in a Large Network of Sensory Neurons. PLoS Comput Biol. 2014;10(1):e1003408."
+    ],
+    "oai_identifier": [
+        "oai:datarep.app.ist.ac.at:61"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Life sciences"
+        },
+        {
+            "name": "biology"
+        }
+    ],
+    "title": [
+        "Multi-electrode array recording from salamander retinal ganglion cells"
+    ],
+    "url": "https://datarep.app.ist.ac.at/61/2/bint_fishmovie32_100.zip"
+}

@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1230</identifier>
+    <datestamp>2016-04-06T16:39:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LX-Tokenizer</dc:title>
+      <dc:contributor>Branco, Ant&#243;nio</dc:contributor>
+      <dc:contributor>Silva, Jo&#227;o</dc:contributor>
+      <dc:description>Automatic segmenter of lexemes of Portuguese. Segments text into lexically relevant tokens, using whitespace as the separator. Note that, in these examples, the | (vertical bar) symbol is used to mark the token boundaries more cleary. um exemplo &#8594; |um|exemplo| Expands contractions. Note that the first element of an expanded contraction is marked with an _ (underscore) symbol: do &#8594; |de_|o| Marks spacing around punctuation or symbols. The \* and the */ symbols indicate a space to the left and a space to the right, respectively: um, dois e tr&#234;s &#8594; |um|,*/|dois|e|tr&#234;s| 5.3 &#8594; |5|.|3| 1. 2 &#8594; |1|.*/|2| 8 . 6 &#8594; |8|\*.*/|6| Detaches clitic pronouns from the verb. The detached pronoun is marked with a - (hyphen) symbol. When in mesoclisis, a -CL- mark is used to signal the original position of the detached clitic. Additionally, possible vocalic alterations of the verb form are marked with a # (hash) symbol: d&#225;-se-lho &#8594; |d&#225;|-se|-lhe|-o| afirmar-se-ia &#8594; |afirmar-CL-ia|-se| v&#234;-las &#8594; |v&#234;#|-las| This tool also handles ambiguous strings. These are words that, depending on their particular occurrence, can be tokenized in different ways. For instance: deste &#8594; |deste| when occurring as a Verb deste &#8594; |de|este| when occurring as a contraction (Preposition + Demonstrative) This tool achieves a f-score of 99.72%.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1230</dc:identifier>
+      <dc:language>por</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Portugal</dc:coverage>
+      <dc:publisher>NLX-Natural Language and Speech Group, University of Lisbon</dc:publisher>
+      <dc:source>http://lxsuite.di.fc.ul.pt</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

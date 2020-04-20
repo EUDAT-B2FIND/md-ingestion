@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0029/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Guo, Zhendong</dc:creator>
+      <dc:creator>Ambrosio, Francesco</dc:creator>
+      <dc:creator>Chen, Wei</dc:creator>
+      <dc:creator>Gono, Patrick</dc:creator>
+      <dc:creator>Pasquarello, Alfredo</dc:creator>
+      <dc:title>MD trajectories of semiconductor-water interfaces and relaxed atomic structures of semiconductor surfaces</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-06-02</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>MD trajectory</dc:subject>
+      <dc:subject>semiconductor-water interface</dc:subject>
+      <dc:subject>rVV10 functional</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0029/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0029/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>This entry includes the MD trajectories of several semiconductor-water interfaces generated with ab initio molecular dynamics using the rVV10 density functional at the temperature of 350 K. Eight semiconductor surfaces are considered, namely GaAs(110), GaP(110), GaN(10-10), CdS(10-10), ZnO(10-10), SnO2(110), rutile TiO2(110) and anatase TiO2(101). For GaAs, GaP and anatase TiO2, the trajectories for the interfaces with both the molecular and the dissociative adsorption mode of water are provided. In addition, the relaxed atomic structures of the semiconductor surfaces used to calculate the ionization potential (IP) reported in [Chem. Mater. 2018, 30, 94&#8722;111] are added.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

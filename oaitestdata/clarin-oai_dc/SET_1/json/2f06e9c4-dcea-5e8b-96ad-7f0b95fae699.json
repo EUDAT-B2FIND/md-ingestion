@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 848 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1802",
+    "MetadataAccess": [
+        "oai:ota:oucs:1802"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hardy, Thomas, 1840-1928"
+    ],
+    "fulltext": "oai:ota:oucs:1802;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/1802.xml;Far from the madding crowd / Thomas Hardy;Hardy, Thomas, 1840-1928;text_and_corpus_linguistics;English fiction -- 19th century;Oxford Text Archive, University of Oxford;Triggs, Jeffery;text/sgml;(1 file : ca. 848 KB);Text;Novels;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2f06e9c4-dcea-5e8b-96ad-7f0b95fae699",
+    "oai_identifier": [
+        "oai:ota:oucs:1802"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English fiction -- th century"
+        }
+    ],
+    "title": [
+        "Far from the madding crowd / Thomas Hardy"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1802.xml"
+}

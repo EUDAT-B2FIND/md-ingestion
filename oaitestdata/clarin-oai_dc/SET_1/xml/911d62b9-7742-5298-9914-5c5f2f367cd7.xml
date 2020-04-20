@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/327</identifier>
+    <datestamp>2017-04-26T10:55:04Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Vector representations of polish words (Word2Vec method)</dc:title>
+      <dc:creator>K&#281;dzia, Pawe&#322;</dc:creator>
+      <dc:creator>Czachor, Gabriela</dc:creator>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:subject>Vector space</dc:subject>
+      <dc:subject>Word2Vec</dc:subject>
+      <dc:description>Model skip gram with vectors of length 100. Trained on kgr 10, a corpora with over 4 billion tokens. Data preprocessing involved segmentation, lemmatization and mophosyntactic disambiguation with MWE annotation.</dc:description>
+      <dc:date>2016-11-07</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/327</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

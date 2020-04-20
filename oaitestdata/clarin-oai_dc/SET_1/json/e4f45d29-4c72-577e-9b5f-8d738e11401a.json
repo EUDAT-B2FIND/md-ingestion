@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4909-7",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4909-7"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-4909-7",
+    "PublicationTimestamp": "2008-10-02T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Klyueva, Natalia",
+        "Bojar, Ond\u0159ej"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4909-7;2017-11-09T14:20:27Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;UMC 0.1: Czech-Russian-English Multilingual Corpus;Klyueva, Natalia;Bojar, Ond\u0159ej;multi-language corpus;UMC 0.1 Czech-English-Russian is a multilingual parallel corpus of texts in Czech, Russian and English languages with automatic pairwise sentence alignments. The primary aim of UMC is to extend the set of languages covered by the corpus CzEng mainly for the purposes of machine translation.\r\n\r\nAll the texts were downloaded from a single source \u2014 The Project Syndicate (Copyright: Project Syndicate 1995-2008), which contains a huge collection of high-quality news articles and commentaries. We were given the permission to use the texts for research and non-commercial purposes.;2008-10-02;corpus;http://hdl.handle.net/11858/00-097C-0000-0001-4909-7;ces;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/umc/cer",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e4f45d29-4c72-577e-9b5f-8d738e11401a",
+    "notes": [
+        "UMC 0.1 Czech-English-Russian is a multilingual parallel corpus of texts in Czech, Russian and English languages with automatic pairwise sentence alignments. The primary aim of UMC is to extend the set of languages covered by the corpus CzEng mainly for the purposes of machine translation.\r\n\r\nAll the texts were downloaded from a single source \u2014 The Project Syndicate (Copyright: Project Syndicate 1995-2008), which contains a huge collection of high-quality news articles and commentaries. We were given the permission to use the texts for research and non-commercial purposes."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4909-7"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "multi-language corpus"
+        }
+    ],
+    "title": [
+        "UMC 0.1: Czech-Russian-English Multilingual Corpus"
+    ],
+    "url": ""
+}

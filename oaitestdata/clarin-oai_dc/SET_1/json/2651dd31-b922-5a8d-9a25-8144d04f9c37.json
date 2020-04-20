@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 1.47 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1627",
+    "MetadataAccess": [
+        "oai:ota:oucs:1627"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Marlowe, Christopher, 1564-1593"
+    ],
+    "fulltext": "oai:ota:oucs:1627;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1627.xml;Rare;Marlowe, Christopher, 1564-1593;default: 1976-01-01;text_and_corpus_linguistics;Poems -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 1.47 KB);Text;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2651dd31-b922-5a8d-9a25-8144d04f9c37",
+    "oai_identifier": [
+        "oai:ota:oucs:1627"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- England -- th century"
+        }
+    ],
+    "title": [
+        "Rare"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1627.xml"
+}

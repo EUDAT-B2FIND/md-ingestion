@@ -1,0 +1,91 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0009/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0009/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0009/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-05-19T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Grisafi, Andrea",
+        "Cs\u00e1nyi, Gabor",
+        "Ceriotti, Michele",
+        "Wilkins, David M."
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0009/v1;2019-06-12Z;DOI;Dataset;Grisafi, Andrea;Wilkins, David M.;Cs\u00e1nyi, Gabor;Ceriotti, Michele;Symmetry-Adapted Machine Learning for Tensorial Properties of Atomistic Systems;Materials Cloud;2018-05-19;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;water;molecular;bulk;dipole moment;polarizability;hyperpolarizability;dielectric tensor;symmetry-adapted gaussian process regression;machine learning;doi:10.24435/materialscloud:2018.0009/v1;https://archive.materialscloud.org/2018.0009/v1;en;Here we present 1,000 structures each of a water monomer, water dimer, Zundel cation and bulk water used to train tensorial machine-learning models in Phys. Rev. Lett. 120, 036002 (2018). The archive entry contains files in extended-XYZ format including the structures and several tensorial properties: for the monomer, dimer and Zundel cation, the dipole moment, polarizability and first hyperpolarizability are included, and for bulk water the dipole moment, polarizability and dielectric tensor are given.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "1e033182-b94e-5537-9870-9e18266bd70f",
+    "notes": [
+        "Here we present 1,000 structures each of a water monomer, water dimer, Zundel cation and bulk water used to train tensorial machine-learning models in Phys. Rev. Lett. 120, 036002 (2018). The archive entry contains files in extended-XYZ format including the structures and several tensorial properties: for the monomer, dimer and Zundel cation, the dipole moment, polarizability and first hyperpolarizability are included, and for bulk water the dipole moment, polarizability and dielectric tensor are given."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0009/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "water"
+        },
+        {
+            "name": "molecular"
+        },
+        {
+            "name": "bulk"
+        },
+        {
+            "name": "dipole moment"
+        },
+        {
+            "name": "polarizability"
+        },
+        {
+            "name": "hyperpolarizability"
+        },
+        {
+            "name": "dielectric tensor"
+        },
+        {
+            "name": "symmetry-adapted gaussian process regression"
+        },
+        {
+            "name": "machine learning"
+        }
+    ],
+    "title": [
+        "Symmetry-Adapted Machine Learning for Tensorial Properties of Atomistic Systems"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0009/v1"
+}

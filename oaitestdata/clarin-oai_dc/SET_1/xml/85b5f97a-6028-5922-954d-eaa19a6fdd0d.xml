@@ -1,0 +1,48 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1671</identifier>
+    <datestamp>2017-11-09T14:20:30Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>WMT16 Tuning Shared Task Models (Czech-to-English)</dc:title>
+      <dc:creator>Kamran, Amir</dc:creator>
+      <dc:creator>Jawaid, Bushra</dc:creator>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:creator>Stanojevic, Milos</dc:creator>
+      <dc:subject>WMT16</dc:subject>
+      <dc:subject>machine translation</dc:subject>
+      <dc:subject>tuning</dc:subject>
+      <dc:subject>baseline models</dc:subject>
+      <dc:subject>shared task</dc:subject>
+      <dc:description>The item contains models to tune for the WMT16 Tuning shared task for Czech-to-English.&#13;
+&#13;
+CzEng 1.6pre (http://ufal.mff.cuni.cz/czeng/czeng16pre) corpus is used for the training of the translation models. The data is tokenized (using Moses tokenizer), lowercased and sentences longer than 60 words and shorter than 4 words are removed before training. Alignment is done using fast_align (https://github.com/clab/fast_align) and the standard Moses pipeline is used for training.&#13;
+&#13;
+Two 5-gram language models are trained using KenLM: one only using the CzEng English data and the other is trained using all available English mono data for WMT except Common Crawl.&#13;
+&#13;
+Also included are two lexicalized bidirectional reordering models, word based and hierarchical, with msd conditioned on both source and target of processed CzEng.</dc:description>
+      <dc:date>2016-03-21</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1671</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/H2020/645452</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 5</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:publisher>University of Amsterdam, ILLC</dc:publisher>
+      <dc:source>http://www.statmt.org/wmt16/tuning-task/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/116</identifier>
+    <datestamp>2017-01-18T09:16:21Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>English for business</dc:title>
+      <dc:creator>Kristiansen, Marita</dc:creator>
+      <dc:creator>Olstad, Vemund</dc:creator>
+      <dc:creator>Andersen, Gisle</dc:creator>
+      <dc:subject>Business administration</dc:subject>
+      <dc:subject>Economics</dc:subject>
+      <dc:subject>Termbase</dc:subject>
+      <dc:subject>Terminological</dc:subject>
+      <dc:subject>Terminology</dc:subject>
+      <dc:description>The resource "English for business" is a terminological database containing terms, definitions and other conceptual information in Norwegian and English within economics and business administration and some related domains.&#13;
+&#13;
+When using the resource for research purposes, please refer to NHH Norwegian School of Economics.</dc:description>
+      <dc:date>2017-01-10</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/116</dc:identifier>
+      <dc:language>nob</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>CLARIN_ACA</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&amp;AFFIL=EDU&amp;BY=1&amp;NORED=1</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>NHH Norwegian School of Economics</dc:publisher>
+      <dc:source>http://www.terminologi.no</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

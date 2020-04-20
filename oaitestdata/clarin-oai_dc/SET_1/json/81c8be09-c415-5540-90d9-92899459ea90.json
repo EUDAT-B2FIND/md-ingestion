@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3091",
+    "MetadataAccess": [
+        "oai:ota:oucs:3091"
+    ],
+    "PublicationTimestamp": "1531-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1531"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Elyot, Thomas, Sir, 1490?-1546"
+    ],
+    "fulltext": "oai:ota:oucs:3091;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3091.xml;The boke named The gouernour;Elyot, Thomas, Sir, 1490?-1546;not after: 1531;text_and_corpus_linguistics;Academic dissertations -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "81c8be09-c415-5540-90d9-92899459ea90",
+    "oai_identifier": [
+        "oai:ota:oucs:3091"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Academic dissertations -- England -- th century"
+        }
+    ],
+    "title": [
+        "The boke named The gouernour"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3091.xml"
+}

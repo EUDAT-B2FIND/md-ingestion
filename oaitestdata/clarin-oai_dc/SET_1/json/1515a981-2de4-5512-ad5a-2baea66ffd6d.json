@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Department of Languages and Literatures, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/81",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/81"
+    ],
+    "PID": "http://hdl.handle.net/10794/81",
+    "PublicationTimestamp": "2012-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Department of Languages and Literatures, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/81;2017-10-26T08:12:18Z;hdl_10794_1;hdl_10794_2;Banco de Datos de Prensa Espa\u00f1ola 1977 (SOL) (2014-09-30);Banco de Datos de Prensa Espa\u00f1ola 1977 (SOL) (2014-09-30);n/a, n/a;SOL;Part of SOL - Spanish Online. Sentence scrambled.;Del av SOL - Spanska Online. Materialet \u00e4r meningsomkastat.;2012-05-30;corpus;http://hdl.handle.net/10794/81;spa;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Department of Languages and Literatures, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/pe77",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1515a981-2de4-5512-ad5a-2baea66ffd6d",
+    "notes": [
+        "Part of SOL - Spanish Online. Sentence scrambled.",
+        "Del av SOL - Spanska Online. Materialet \u00e4r meningsomkastat."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/81"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "SOL"
+        }
+    ],
+    "title": [
+        "Banco de Datos de Prensa Espa\u00f1ola 1977 (SOL) (2014-09-30)",
+        "Banco de Datos de Prensa Espa\u00f1ola 1977 (SOL) (2014-09-30)"
+    ],
+    "url": ""
+}

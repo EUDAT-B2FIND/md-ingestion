@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5454",
+    "MetadataAccess": [
+        "oai:ota:oucs:5454"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Watts, Isaac, 1674-1748."
+    ],
+    "fulltext": "oai:ota:oucs:5454;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5454.xml;Divine songs: attempted in easy language for the use of children. By I. Watts, D.D.;Watts, Isaac, 1674-1748.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a62ab911-7219-55a9-99c7-808aaff84945",
+    "oai_identifier": [
+        "oai:ota:oucs:5454"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Divine songs: attempted in easy language for the use of children. By I. Watts, D.D."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5454.xml"
+}

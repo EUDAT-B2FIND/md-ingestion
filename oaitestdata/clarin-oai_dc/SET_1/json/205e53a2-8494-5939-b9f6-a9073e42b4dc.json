@@ -1,0 +1,54 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1153",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1153"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1153",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1153;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Wanders Deutsches Sprichw\u00f6rter-Lexikon;Germanistik;entstanden zwischen 1830 und 1880; erarbeitet von Karl Friedrich Wilhelm Wander; Angabe von Sprichw\u00f6rtern, in denen der jeweilige Suchbegriff vorkommt; neben deutschen Sprichw\u00f6rtern auch Hinweis auf \u00e4hnliche (au\u00dfer-)europ\u00e4ische Wendungen; enth\u00e4lt 250.000 Sprichw\u00f6rter;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-1153;deu;downloadable_files_count: 0;http://www.zeno.org/Wander-1867",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "205e53a2-8494-5939-b9f6-a9073e42b4dc",
+    "notes": [
+        "entstanden zwischen 1830 und 1880; erarbeitet von Karl Friedrich Wilhelm Wander; Angabe von Sprichw\u00f6rtern, in denen der jeweilige Suchbegriff vorkommt; neben deutschen Sprichw\u00f6rtern auch Hinweis auf \u00e4hnliche (au\u00dfer-)europ\u00e4ische Wendungen; enth\u00e4lt 250.000 Sprichw\u00f6rter"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1153"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Germanistik"
+        }
+    ],
+    "title": [
+        "Wanders Deutsches Sprichw\u00f6rter-Lexikon"
+    ],
+    "url": ""
+}

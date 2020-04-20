@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Paddy Bullard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2724",
+    "MetadataAccess": [
+        "oai:ota:oucs:2724"
+    ],
+    "PublicationTimestamp": "1766-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1766"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Jonathan Swift Archive"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Swift, Jonathan, 1667-1745"
+    ],
+    "fulltext": "oai:ota:oucs:2724;2018-08-02T14:11:37Z;http://ota.ox.ac.uk/headers/2724.xml;Journal to Stella [letters I, XLI-LXV];Swift, Jonathan, 1667-1745;1766;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Paddy Bullard;Text;Jonathan Swift Archive;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "263deac1-6503-5521-8dd9-dded0206e2e9",
+    "oai_identifier": [
+        "oai:ota:oucs:2724"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Journal to Stella [letters I, XLI-LXV]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2724.xml"
+}

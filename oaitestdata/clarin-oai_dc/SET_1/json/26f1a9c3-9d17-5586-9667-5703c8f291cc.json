@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Bear, Richard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(3 files : ca. 35, 176, 18 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1796",
+    "MetadataAccess": [
+        "oai:ota:oucs:1796"
+    ],
+    "PublicationTimestamp": "1765-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1765"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Ballad operas"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gay, John, 1685-1732"
+    ],
+    "fulltext": "oai:ota:oucs:1796;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/1796.xml;Beggar's opera. Libretto.;The beggar's opera / [text] by John Gay ; transcribed with an introduction, notes and bibliography by Richard Bear; John Gay's The beggar's opera;Gay, John, 1685-1732;1765;text_and_corpus_linguistics;Ballad operas;Oxford Text Archive, University of Oxford;Bear, Richard;Bear, Richard;text/sgml;(3 files : ca. 35, 176, 18 KB);Text;Ballad operas;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "26f1a9c3-9d17-5586-9667-5703c8f291cc",
+    "oai_identifier": [
+        "oai:ota:oucs:1796"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Ballad operas"
+        }
+    ],
+    "title": [
+        "Beggar's opera. Libretto.",
+        "The beggar's opera / [text] by John Gay ; transcribed with an introduction, notes and bibliography by Richard Bear",
+        " John Gay's The beggar's opera"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1796.xml"
+}

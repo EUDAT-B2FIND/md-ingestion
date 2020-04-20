@@ -1,0 +1,117 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-501</identifier>
+    <datestamp>2019-12-21T01:00:01Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>Relevance of Different Metadata Fields for the Description of Research Data from the Engineering Sciences</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-501</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-20</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-12-20" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>Iglezakis, Dorothea, 2019, "Relevance of Different Metadata Fields for the Description of Research Data from the Engineering Sciences", https://doi.org/10.18419/darus-501, DaRUS, V1, UNF:6:Xb7oAZD3mz0pCx0Zxh4dJg== [fileUNF]</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>Relevance of Different Metadata Fields for the Description of Research Data from the Engineering Sciences</titl>
+            <subTitl>Data from Survey at the University of Stuttgart</subTitl>
+            <IDNo agency="DOI">doi:10.18419/darus-501</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Iglezakis, Dorothea</AuthEnty>
+          </rspStmt>
+          <prodStmt>
+            <grantNo agency="Federal Ministry of Education and Research (BMBF)">16FDM008</grantNo>
+          </prodStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-20</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Computer and Information Science</keyword>
+            <keyword>Engineering</keyword>
+            <keyword>Social Sciences</keyword>
+            <keyword>metadata</keyword>
+            <keyword>survey</keyword>
+            <keyword>Engineering</keyword>
+          </subject>
+          <abstract>Data from a Survey at the University of Stuttgart about the relevance of different metadata fields for describing data from the engineering sciences.</abstract>
+          <sumDscr>
+            <collDate cycle="P1" event="start" date="2019-05-24">2019-05-24</collDate>
+            <collDate cycle="P1" event="end" date="2019-06-06">2019-06-06</collDate>
+            <dataKind>Survey</dataKind>
+          </sumDscr>
+          <relPubl>Schembera, B. and Iglezakis., D. (in Review). EngMeta - Metadata for Computational Engineering. International Journal of Metadata, Semantics and Ontologies.</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">Iglezakis, Dorothea</contact>
+          <depositr>Iglezakis, Dorothea</depositr>
+          <depDate>2019-11-26</depDate>
+          <relStdy>Iglezakis, Dorothea; Schembera, Bj&#246;rn, 2019, "EngMeta - a Metadata Scheme for the Engineering Sciences", &lt;a href="https://doi.org/10.18419/darus-500"&gt;https://doi.org/10.18419/darus-500&lt;/a&gt;, DaRUS.</relStdy>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f996" URI="https://doi.org/10.18419/darus-501/8" level="datafile">
+        <labl>EngMeta-DataWithAnalysisWithoutMacros.xlsx</labl>
+        <txt>All data and analysis results without Code</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</notes>
+      </otherMat>
+      <otherMat ID="f888" URI="https://doi.org/10.18419/darus-501/4" level="datafile">
+        <labl>EngMeta-DataWithAnalysis.xlsm</labl>
+        <txt>Excel-File including Data, Post-Processing and Analysis</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.ms-excel.sheet.macroEnabled.12</notes>
+      </otherMat>
+      <otherMat ID="f994" URI="https://doi.org/10.18419/darus-501/7" level="datafile">
+        <labl>EngMeta-rawData.xlsx</labl>
+        <txt>RawData with CodeBook and Questions</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</notes>
+      </otherMat>
+      <otherMat ID="f885" URI="https://doi.org/10.18419/darus-501/1" level="datafile">
+        <labl>EngMetaRelevanz_Vis.png</labl>
+        <txt>Visualization of the relevance of different metadata categories</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">image/png</notes>
+      </otherMat>
+      <otherMat ID="f886" URI="https://doi.org/10.18419/darus-501/2" level="datafile">
+        <labl>EngMeta-Survey-CodebookEN.pdf</labl>
+        <txt>Codebook</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/pdf</notes>
+      </otherMat>
+      <otherMat ID="f887" URI="https://doi.org/10.18419/darus-501/3" level="datafile">
+        <labl>EngMeta-Survey-Questions.pdf</labl>
+        <txt>Questions</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/pdf</notes>
+      </otherMat>
+      <otherMat ID="f999" URI="https://doi.org/10.18419/darus-501/9" level="datafile">
+        <labl>EngMeta-Survey-rawData_commas.tab</labl>
+        <txt>Raw data from EvaSys, comma separated</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/tab-separated-values</notes>
+      </otherMat>
+      <otherMat ID="f969" URI="https://doi.org/10.18419/darus-501/6" level="datafile">
+        <labl>EvaluationEngMeta_DescriptiveAnalysis.pdf</labl>
+        <txt>Report from EvaSys with descriptive analysis</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/pdf</notes>
+      </otherMat>
+      <otherMat ID="f968" URI="https://doi.org/10.18419/darus-501/5" level="datafile">
+        <labl>EvaluationEngMeta_Questionnaire_DE.pdf</labl>
+        <txt>Questionnaire in german</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/pdf</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

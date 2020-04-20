@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f6648890616e11e2a2aa782bcb0741352f715f1d899d4a769d1729f097c1b215",
+    "MetadataAccess": [
+        "f6648890616e11e2a2aa782bcb0741352f715f1d899d4a769d1729f097c1b215"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "f6648890616e11e2a2aa782bcb0741352f715f1d899d4a769d1729f097c1b215;2018-11-15T16:40:04Z;corpus;corpus:text;DependencyBankPT;The DepBankPT (Branco et al., 2011a) is a corpus of grammatical dependencies of the translated news composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal.\nThe DepBankPT is aligned to a constituency bank, the TreeBankPT (see Branco et al., 2011b). The key bridging elements are the grammatical function tags decoring the nodes, in the treebank, and the arcs, in the dependencybank (see http://lxcenter.di.fc.ul.pt/services/en/LXServicesSearcher.html). This means that the DepBankPT was extended from the PropBank PT so that besides the tags for the different dependency relations, the arcs are further decorated with tags indicating the semantic relation at stake.\nThe main motivation behind the creation of this resource was to build a high quality data set with dependency information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies.\nThe development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. \n;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "243dc2c4-a212-5719-9d92-36c5f80d4bbc",
+    "notes": [
+        "The DepBankPT (Branco et al., 2011a) is a corpus of grammatical dependencies of the translated news composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal.\nThe DepBankPT is aligned to a constituency bank, the TreeBankPT (see Branco et al., 2011b). The key bridging elements are the grammatical function tags decoring the nodes, in the treebank, and the arcs, in the dependencybank (see http://lxcenter.di.fc.ul.pt/services/en/LXServicesSearcher.html). This means that the DepBankPT was extended from the PropBank PT so that besides the tags for the different dependency relations, the arcs are further decorated with tags indicating the semantic relation at stake.\nThe main motivation behind the creation of this resource was to build a high quality data set with dependency information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies.\nThe development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. \n"
+    ],
+    "oai_identifier": [
+        "f6648890616e11e2a2aa782bcb0741352f715f1d899d4a769d1729f097c1b215"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "DependencyBankPT"
+    ]
+}

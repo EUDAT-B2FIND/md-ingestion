@@ -1,0 +1,42 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0008-D259-7</identifier>
+    <datestamp>2018-07-02T22:05:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Additional German-Czech reference translations of the WMT'11 test set</dc:title>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Du&#353;ek, Ond&#345;ej</dc:creator>
+      <dc:creator>B&#345;e&#269;kov&#225;, Jana</dc:creator>
+      <dc:creator>Farka&#269;ov&#225;, Hana</dc:creator>
+      <dc:creator>Gro&#353;pic, Pavel</dc:creator>
+      <dc:creator>Ka&#269;enov&#225;, Krist&#253;na</dc:creator>
+      <dc:creator>Knechtov&#225;, Eva</dc:creator>
+      <dc:creator>Koubov&#225;, Anna</dc:creator>
+      <dc:creator>Lukavsk&#225;, Jana</dc:creator>
+      <dc:creator>Nov&#225;kov&#225;, Petra</dc:creator>
+      <dc:creator>Petrdl&#237;kov&#225;, Jana</dc:creator>
+      <dc:subject>reference translation</dc:subject>
+      <dc:subject>German-Czech</dc:subject>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:description>Additional three Czech reference translations of the whole WMT 2011 data set (http://www.statmt.org/wmt11/test.tgz), translated from the German originals. Original segmentation of the WMT 2011 data is preserved.</dc:description>
+      <dc:date>2012-11-13</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0008-D259-7</dc:identifier>
+      <dc:language>deu</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/231720</dc:relation>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

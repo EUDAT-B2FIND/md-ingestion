@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1460",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1460"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1460",
+    "PublicationTimestamp": "2013-02-02T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Richter, Michal"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1460;2018-07-02T22:05:53Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Models for Korektor 2;Richter, Michal;Korektor;Czech;spellchecker;spellchecking;diacritical marks generation;The Czech models for Korektor 2 created by Michal Richter, 02 Feb 2013. The models can either perform spellchecking and grammarchecking, or only generate diacritical marks.;2013-02-02;languageDescription;http://hdl.handle.net/11234/1-1460;ces;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/korektor",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "747fb6c8-7877-5ea7-9dd0-d6787f15abff",
+    "notes": [
+        "The Czech models for Korektor 2 created by Michal Richter, 02 Feb 2013. The models can either perform spellchecking and grammarchecking, or only generate diacritical marks."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1460"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Korektor"
+        },
+        {
+            "name": "Czech"
+        },
+        {
+            "name": "spellchecker"
+        },
+        {
+            "name": "spellchecking"
+        },
+        {
+            "name": "diacritical marks generation"
+        }
+    ],
+    "title": [
+        "Czech Models for Korektor 2"
+    ],
+    "url": ""
+}

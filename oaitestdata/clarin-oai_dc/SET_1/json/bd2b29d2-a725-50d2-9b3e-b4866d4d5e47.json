@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Faculty of Informatics, Masaryk University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2427",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2427"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2427",
+    "PublicationTimestamp": "2017-09-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Faculty of Informatics, Masaryk University"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Public Domain Mark (PD)",
+        "http://creativecommons.org/publicdomain/mark/1.0/",
+        "PUB"
+    ],
+    "author": [
+        "Nev\u011b\u0159ilov\u00e1, Zuzana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2427;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Multiword Expressions;Nev\u011b\u0159ilov\u00e1, Zuzana;multiword expressions;The dataset contains 4731 frozen continuous Czech multiword expressions. Inflectional word forms are generated for those MWEs where applicable. In total, the dataset contains 24,807 MWE forms.;2017-09-30;lexicalConceptualResource;http://hdl.handle.net/11234/1-2427;ces;Public Domain Mark (PD);http://creativecommons.org/publicdomain/mark/1.0/;PUB;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 1;Faculty of Informatics, Masaryk University;https://nlp.fi.muni.cz/projekty/mwes/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bd2b29d2-a725-50d2-9b3e-b4866d4d5e47",
+    "notes": [
+        "The dataset contains 4731 frozen continuous Czech multiword expressions. Inflectional word forms are generated for those MWEs where applicable. In total, the dataset contains 24,807 MWE forms."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2427"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "multiword expressions"
+        }
+    ],
+    "title": [
+        "Czech Multiword Expressions"
+    ],
+    "url": ""
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=86b7544ab17011e1a404080027e73ea273a3a3cec91b403e9cb74350770942a1",
+    "MetadataAccess": [
+        "86b7544ab17011e1a404080027e73ea273a3a3cec91b403e9cb74350770942a1"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "86b7544ab17011e1a404080027e73ea273a3a3cec91b403e9cb74350770942a1;2019-02-27T12:08:47Z;corpus;corpus:text;CINTIL-PropBank;The CINTIL-PropBank (Branco et al., 2012) is a set of sentences annotated with their constituency structure and semantic role tags, composed of 10,039 sentences and 110,166 tokens taken from different sources and domains: news (8,861 sentences; 101,430 tokens), and novels (399 sentences; 3,082 tokens). In addition, there are 779 sentences (5,654 tokens) used for regression testing of the computational grammar that supported the annotation of the corpus.\nFor the creation of this PropBank we adopted a semi-automatic analysis with a double-blind annotation followed by adjudication. The resulting dataset contains three information levels: phrase constituency, grammatical functions, and phrase semantic roles.\nThe main motivation behind the creation of this resource was to build a high quality data set with semantic information that could support the development of automatic semantic role labelers for Portuguese.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d2d4f46e-6c23-5543-ac00-f94b0d72a8db",
+    "notes": [
+        "The CINTIL-PropBank (Branco et al., 2012) is a set of sentences annotated with their constituency structure and semantic role tags, composed of 10,039 sentences and 110,166 tokens taken from different sources and domains: news (8,861 sentences; 101,430 tokens), and novels (399 sentences; 3,082 tokens). In addition, there are 779 sentences (5,654 tokens) used for regression testing of the computational grammar that supported the annotation of the corpus.\nFor the creation of this PropBank we adopted a semi-automatic analysis with a double-blind annotation followed by adjudication. The resulting dataset contains three information levels: phrase constituency, grammatical functions, and phrase semantic roles.\nThe main motivation behind the creation of this resource was to build a high quality data set with semantic information that could support the development of automatic semantic role labelers for Portuguese."
+    ],
+    "oai_identifier": [
+        "86b7544ab17011e1a404080027e73ea273a3a3cec91b403e9cb74350770942a1"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "CINTIL-PropBank"
+    ]
+}

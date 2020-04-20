@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>834dfa6ca12a11e6a2aa782bcb074135a731473a10da4b04b0523d389854400d</identifier>
+    <datestamp>2018-11-15T16:40:24Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>QTLeap News Corpus</dc:title>
+      <dc:description>This corpus is a sample extracted from the corpus made available by the annual workshops/conferences on Statistical Machine Translation (WMT, see \url{http://www.statmt.org/}) from the News domain. To this end, 1104 English sentences and their corresponding human translations into Czech, German and Spanish from WMT 2012 and WMT 2013 translation tasks were taken as basis. 
+As not all project languages are represented at WMT, the missing translations have been produced by professional translators. These 1104 English sentences were then professionally translated to Bulgarian, Dutch, Portuguese and Basque via a subcontract from QTLeap.
+The sentences were chosen such that their original source language was English, i.e., &#226;&#128;&#156;reversed translations&#226;&#128;&#157; originating from languages other than English that exist in the WMT datasets have been ignored. 
+</dc:description>
+      <dc:date>2016-11-03</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

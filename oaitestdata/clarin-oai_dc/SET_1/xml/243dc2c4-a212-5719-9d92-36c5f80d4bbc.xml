@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>f6648890616e11e2a2aa782bcb0741352f715f1d899d4a769d1729f097c1b215</identifier>
+    <datestamp>2018-11-15T16:40:04Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DependencyBankPT</dc:title>
+      <dc:description>The DepBankPT (Branco et al., 2011a) is a corpus of grammatical dependencies of the translated news composed of 3,406 sentences and 44,598 tokens taken from the Wall Street Journal.
+The DepBankPT is aligned to a constituency bank, the TreeBankPT (see Branco et al., 2011b). The key bridging elements are the grammatical function tags decoring the nodes, in the treebank, and the arcs, in the dependencybank (see http://lxcenter.di.fc.ul.pt/services/en/LXServicesSearcher.html). This means that the DepBankPT was extended from the PropBank PT so that besides the tags for the different dependency relations, the arcs are further decorated with tags indicating the semantic relation at stake.
+The main motivation behind the creation of this resource was to build a high quality data set with dependency information that could support the development of a large set of automatic resources and tools for Portuguese for NLP studies.
+The development of this resource started under the METANET4U project (at: http://metanet4u.eu/) whose main goal is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them. 
+</dc:description>
+      <dc:date>2015-12-11</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

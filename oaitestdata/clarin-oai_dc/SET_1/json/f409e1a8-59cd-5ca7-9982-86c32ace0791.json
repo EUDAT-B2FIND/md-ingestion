@@ -1,0 +1,92 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1142",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1142"
+    ],
+    "PID": "http://hdl.handle.net/11356/1142",
+    "PublicationTimestamp": "2017-09-05T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://slovenscina2.0.trojina.si/arhiv/2016-2/2016-2-04/",
+        "http://nl.ijs.si/janes/viri/avtomatsko-oznaceni-korpusi/#Janes-Tweet",
+        "https://doi.org/10.1007/s10579-018-9425-z"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-nc/4.0/"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Ljube\u0161i\u0107, Nikola",
+        "Fi\u0161er, Darja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1142;2018-10-24T20:53:07Z;hdl_11356_1023;hdl_11356_1024;Twitter corpus Janes-Tweet 1.0;Ljube\u0161i\u0107, Nikola;Erjavec, Toma\u017e;Fi\u0161er, Darja;computer-mediated communication;Twitter;word normalisation;tagging;lemmatisation;named entities;Janes-Tweet is an annotated corpus of almost 10 million tweets posted from 2013-06 to 2017-06 by approx. 9,000 users that tweet mostly in Slovene. The corpus is structured into individual tweets, together with their metadata. The tweets in the corpus are tokenised, sentence segmented, word normalised, morphosyntactically tagged, lemmatised and annotated with named entities. \r\nDue to Twitter terms-of-service, the corpus is distributed in an encoded version. The included tweetpub program (also available and documented on https://github.com/clarinsi/tweetpub) should be used to decode it, which it does by fetching the original tweets and applying a diff operation on the distributed corpus. Note that the retrieved corpus can have fewer tweets than the distributed version if some have been removed from Twitter by their authors in the meantime.;2017-09-05;corpus;http://hdl.handle.net/11356/1142;slv;http://slovenscina2.0.trojina.si/arhiv/2016-2/2016-2-04/;http://nl.ijs.si/janes/viri/avtomatsko-oznaceni-korpusi/#Janes-Tweet;https://doi.org/10.1007/s10579-018-9425-z;Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0);PUB;https://creativecommons.org/licenses/by-nc/4.0/;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Jo\u017eef Stefan Institute;http://nl.ijs.si/janes/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f409e1a8-59cd-5ca7-9982-86c32ace0791",
+    "notes": [
+        "Janes-Tweet is an annotated corpus of almost 10 million tweets posted from 2013-06 to 2017-06 by approx. 9,000 users that tweet mostly in Slovene. The corpus is structured into individual tweets, together with their metadata. The tweets in the corpus are tokenised, sentence segmented, word normalised, morphosyntactically tagged, lemmatised and annotated with named entities. \r\nDue to Twitter terms-of-service, the corpus is distributed in an encoded version. The included tweetpub program (also available and documented on https://github.com/clarinsi/tweetpub) should be used to decode it, which it does by fetching the original tweets and applying a diff operation on the distributed corpus. Note that the retrieved corpus can have fewer tweets than the distributed version if some have been removed from Twitter by their authors in the meantime."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1142"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "Twitter"
+        },
+        {
+            "name": "word normalisation"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "lemmatisation"
+        },
+        {
+            "name": "named entities"
+        }
+    ],
+    "title": [
+        "Twitter corpus Janes-Tweet 1.0"
+    ],
+    "url": ""
+}

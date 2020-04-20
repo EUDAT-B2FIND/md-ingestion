@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Craig, Hugh"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 192 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2032",
+    "MetadataAccess": [
+        "oai:ota:oucs:2032"
+    ],
+    "PublicationTimestamp": "1607-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1607"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Jonson, Ben, 1573?-1637"
+    ],
+    "fulltext": "oai:ota:oucs:2032;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2032.xml;Volpone;Volpone [1607] / Ben Jonson;The foxe;Jonson, Ben, 1573?-1637;1607;text_and_corpus_linguistics;English drama -- 17th century;eng;Oxford Text Archive, University of Oxford;Craig, Hugh;text/sgml;(1 file : ca. 192 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "70f5bb54-8660-5a80-abad-cedcc69a4cc8",
+    "oai_identifier": [
+        "oai:ota:oucs:2032"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- th century"
+        }
+    ],
+    "title": [
+        "Volpone",
+        "Volpone [1607] / Ben Jonson",
+        "The foxe"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2032.xml"
+}

@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/447a906972b84c7a810a45636cbb778d</identifier>
+    <datestamp>2018-01-11T13:49:18Z</datestamp>
+    <setSpec>e9b9792e-79fb-4b07-b6b4-b9c2bd06d095</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Daniel Figat</dc:creator>
+      <dc:date>2016-12-22T10:32:38.247093+00:00</dc:date>
+      <dc:description>pulsefile with 10 slices</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/b79aae29-abcd-4b1b-bb38-3943649a430a</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/447a906972b84c7a810a45636cbb778d</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/447a906972b84c7a810a45636cbb778d</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:publisher>http://b2share.eudat.eu</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>pulsefile</dc:subject>
+      <dc:subject>fusion</dc:subject>
+      <dc:title>euitm_10050</dc:title>
+      <dc:type>Other</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

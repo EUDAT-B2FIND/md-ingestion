@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9352872</identifier>
+    <datestamp>2019-05-14T07:03:13Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Seto s&#245;nastik</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-10-31</dc:date>
+      <dc:date>Updated: 2016-10-31</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05B4EL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Esimene seto veebis&#245;nastik sisaldab &#252;le 6000 m&#228;rks&#245;na, mida saab otsida nii murdekeelse kirjapildi kui ka lihtsustatud ja ilma diakriitiliste m&#228;rkideta variandi j&#228;rgi.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

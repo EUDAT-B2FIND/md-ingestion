@@ -1,0 +1,140 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>1524_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:04Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Karen Harper</origin>
+            <origin>Colin Laroque</origin>
+            <pubdate>20121009</pubdate>
+            <title>Dendrochronological analysis at Ritchie Lake, Western Labrador, Canada</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Unpublished data</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=1524</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Using increment boring tools, the two most dominant tree species were sampled for subsequent dendrochronological analysis.  Twenty trees of each species were sampled, with two cores extracted from each tree (80 cores total from each site).  Samples will be measured and cross-dated in the lab, and master chronologies will be created for each species using standard dendrochronological procedures.  Statistical procedures will isolate the climatic factor(s) influencing each tree-species growth, and this information will be used to evaluate each species and its individual radial growth-climate relationship.  Dataset variables, with brief description of each variable:  Sample #: Black Spruce: 08ABL101 to 08ABL120. Eastern Larch: 08ABL701 to 08ABL720.  Grid zone: 20 U.  GPS UTM: Easting 298779	, Northing 5877148.  Elevation (m asl): 566m.  Notes: Two dominant species were black spruce (Picea mariana) and eastern larch (Larix laricina).</abstract>
+          <purpose>Research objectives:  Dendrochronological analysis to isolate climatic factor(s) influencing each tree species' growth.  Tree ring analysis to determine the species' suitability as a proxy for establishing an historical record of insect outbreak in the region.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): IPY. For further information: claroque@mta.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20080717</begdate>
+              <enddate>20080717</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-66</westbc>
+            <eastbc>-66</eastbc>
+            <northbc>53</northbc>
+            <southbc>53</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Climate</themekey>
+            <themekey>Dendrochronology</themekey>
+            <themekey>Forest-tundra</themekey>
+            <themekey>Growth rate</themekey>
+            <themekey>Spatial data</themekey>
+          </theme>
+          <place>
+            <placekt>Ritchie Lake, Western Labrador, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Mistik Askiwin Dendrochronology Laboratory</cntorg>
+              <cntper>Colin Laroque</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>51 Campus Drive</address>
+              <city>Saskatoon</city>
+              <state>SK</state>
+              <postal>S7N 5A8</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(306) 966-2493</cntvoice>
+            <cntfax>(306) 966-6881</cntfax>
+            <cntemail>colin.laroque@usask.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>1524</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20121009</metd>
+        <metrd>20121009</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Colin Laroque</cntper>
+              <cntorg>Mistik Askiwin Dendrochronology Laboratory</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>51 Campus Drive</address>
+              <city>Saskatoon</city>
+              <state>SK</state>
+              <postal>S7N 5A8</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(306) 966-2493</cntvoice>
+            <cntfax>(306) 966-6881</cntfax>
+            <cntemail>colin.laroque@usask.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

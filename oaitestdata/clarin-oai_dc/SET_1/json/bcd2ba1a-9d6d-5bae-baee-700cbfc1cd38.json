@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4337",
+    "MetadataAccess": [
+        "oai:ota:oucs:4337"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Defoe, Daniel, 1661?-1731."
+    ],
+    "fulltext": "oai:ota:oucs:4337;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4337.xml;The validity of the renunciations of former powers, enquired into, and the present renuncniation of the Duke of Anjou, impartially considered. With a preface, relating to the guarantee for the Protestant succession;Defoe, Daniel, 1661?-1731.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bcd2ba1a-9d6d-5bae-baee-700cbfc1cd38",
+    "oai_identifier": [
+        "oai:ota:oucs:4337"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The validity of the renunciations of former powers, enquired into, and the present renuncniation of the Duke of Anjou, impartially considered. With a preface, relating to the guarantee for the Protestant succession"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4337.xml"
+}

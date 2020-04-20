@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "Humboldt-Universit\u00e4t zu Berlin; Institut f\u00fcr Slawistik; Prof. Dr. Roland Meyer, Paul Burzlaff"
+    ],
+    "Contributor": [
+        "Simon Ederer",
+        "Prof. Dr. Roland Meyer",
+        "Paul Burzlaff"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemmatool",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemmatool"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CD2-B",
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Humboldt-Universit\u00e4t zu Berlin; Institut f\u00fcr Slawistik; Prof. Dr. Roland Meyer, Paul Burzlaff"
+    ],
+    "RelatedIdentifier": [
+        "www.fsmbook.com",
+        "http://morfologik.blogspot.de/",
+        "Python"
+    ],
+    "ResourceType": [
+        "Software"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Humboldt-Universit\u00e4t zu Berlin; Institut f\u00fcr Slawistik; Prof. Dr. Roland Meyer, Paul Burzlaff"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemmatool;2019-02-22T17:38:52Z;PolDiLemma-Tool;Humboldt-Universit\u00e4t zu Berlin; Institut f\u00fcr Slawistik; Prof. Dr. Roland Meyer, Paul Burzlaff;corpus linguistics;historical linguistics;middle Polish;finite state automata;XFST;stemmer;morphology;Historical word forms may differ in orthography and/or grammatical categories. It is a linguistic challenge to make these old forms accessible. \nThe PolDiLemma-Tool is a Python tool for generating possible middle Polish inflected word forms including the part of speech tags from a given (new) Polish word. It contains a middle Polish morphology in XFST-format (compiled and plain text) and a stemmer (Morfologik: full form lexicon and finite state based stemmer).\n\nShould run on Linux and Windows machines (tested on Ubuntu 12.04, Ubuntu 14.04, and Win 8).\n\nNote: The XFST-Tool needs to be downloaded separately from: www.fsmbook.com\nMorfologik requires JAVA.;Humboldt-Universit\u00e4t zu Berlin; Institut f\u00fcr Slawistik; Prof. Dr. Roland Meyer, Paul Burzlaff;Prof. Dr. Roland Meyer;Paul Burzlaff;Simon Ederer;2013-2014;Software;clarind-uds:poldilemmatool;hdl:11858/00-246C-0000-0023-8CD2-B;pol;www.fsmbook.com;http://morfologik.blogspot.de/;Python;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "77091205-2eaa-5ac4-b864-e9c34ad25d56",
+    "notes": [
+        "Historical word forms may differ in orthography and/or grammatical categories. It is a linguistic challenge to make these old forms accessible. \nThe PolDiLemma-Tool is a Python tool for generating possible middle Polish inflected word forms including the part of speech tags from a given (new) Polish word. It contains a middle Polish morphology in XFST-format (compiled and plain text) and a stemmer (Morfologik: full form lexicon and finite state based stemmer).\n\nShould run on Linux and Windows machines (tested on Ubuntu 12.04, Ubuntu 14.04, and Win 8).\n\nNote: The XFST-Tool needs to be downloaded separately from: www.fsmbook.com\nMorfologik requires JAVA."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemmatool"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus linguistics"
+        },
+        {
+            "name": "historical linguistics"
+        },
+        {
+            "name": "middle Polish"
+        },
+        {
+            "name": "finite state automata"
+        },
+        {
+            "name": "XFST"
+        },
+        {
+            "name": "stemmer"
+        },
+        {
+            "name": "morphology"
+        }
+    ],
+    "title": [
+        "PolDiLemma-Tool"
+    ],
+    "url": ""
+}

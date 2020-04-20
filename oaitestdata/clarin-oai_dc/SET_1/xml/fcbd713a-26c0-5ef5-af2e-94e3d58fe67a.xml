@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/485</identifier>
+    <datestamp>2018-06-19T11:18:09Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Cz&#281;&#347;&#263; komentarzy internetowych d&#322;u&#380;szych ni&#380; 500 znak&#243;w do filmu YT: Mazurek Kapeli - Polacy witaj&#261; uchod&#378;c&#243;w</dc:title>
+      <dc:creator>Jastrz&#281;bski, Wojciech</dc:creator>
+      <dc:subject>komentarze internetowe</dc:subject>
+      <dc:description>Testowy, pr&#243;bny korpus komentarzy internetowych opublikowanych do filmu "Mazurek Kapeli - Polacy witaj&#261; uchod&#378;c&#243;w! - YouTube"&#13;
+https://www.youtube.com/watch?v=dAX4vJiO9Aw&#13;
+&#13;
+komentarze d&#322;u&#380;sze ni&#380; 500 znak&#243;w</dc:description>
+      <dc:date>2016-02-16</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/485</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Wojciech Jastrz&#281;bski</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

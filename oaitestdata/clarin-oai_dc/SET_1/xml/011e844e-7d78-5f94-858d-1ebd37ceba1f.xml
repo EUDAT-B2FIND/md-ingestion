@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4900-A</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MORFO</dc:title>
+      <dc:creator>Kolovratn&#237;k, David</dc:creator>
+      <dc:subject>morphological analysis</dc:subject>
+      <dc:description>The MORFO system for morphological analysis of Czech consists of four units: the analyzer, the generator, the dictionary editor, and the library with the shared source code for handling dictionary objects.</dc:description>
+      <dc:date>2009-11-02T09:37:56Z</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-4900-A</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>PDT 2.0 License</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/license-pdt2</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/morfo</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

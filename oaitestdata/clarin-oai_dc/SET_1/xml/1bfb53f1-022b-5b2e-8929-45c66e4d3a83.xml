@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/34</identifier>
+    <datestamp>2016-01-21T14:35:40Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>WCCL</dc:title>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:creator>Wardy&#324;ski, Adam</dc:creator>
+      <dc:creator>&#346;niatowski, Tomasz</dc:creator>
+      <dc:description>WCCL (Wroc&#322;aw Corpus Constraint Language) is a formalism for writing functional expressions evaluated on morpho-syntactically annotated text. These expressions may be used directly as features for Machine Learning classification.&#13;
+&#13;
+Implementation-wise, WCCL is a set of simple command-line utils, as well as the underlying C++ library with Python wrappers, suitable for rapid development of taggers, chunkers, etc.&#13;
+&#13;
+WCCL is targeted at Polish, although the only obstacle to processing other inflectional languages is probably the assumed string representation of tags and corpus I/O formats.</dc:description>
+      <dc:date>2011-06-14</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/34</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/redmine/projects/joskipi/wiki/Install</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

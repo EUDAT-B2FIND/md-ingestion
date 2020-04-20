@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5561",
+    "MetadataAccess": [
+        "oai:ota:oucs:5561"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Leny, R."
+    ],
+    "fulltext": "oai:ota:oucs:5561;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5561.xml;Remarkable case of a boy, who lost a considerable portion of brain: and is recovered, without detriment to any faculty, mental or corporeal. By R. Leny.;Leny, R.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3efea76c-2d17-5997-aeed-474c829982d8",
+    "oai_identifier": [
+        "oai:ota:oucs:5561"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Remarkable case of a boy, who lost a considerable portion of brain: and is recovered, without detriment to any faculty, mental or corporeal. By R. Leny."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5561.xml"
+}

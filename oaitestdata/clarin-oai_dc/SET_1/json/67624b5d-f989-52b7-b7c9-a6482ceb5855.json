@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "University of York"
+    ],
+    "Contributor": [
+        "Pintzuk, Susan",
+        "Taylor, Ann",
+        "Beths, Frank",
+        "Warner, Anthony"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-901",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-901"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-901",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of York"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-901;2016-04-06T16:39:56Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;York-Toronto-Helsinki Parsed Corpus of Old English Prose (YCOE);Taylor, Ann;Warner, Anthony;Pintzuk, Susan;Beths, Frank;1.5 million word syntactically-annotated corpus of Old English prose texts;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-901;eng;downloadable_files_count: 0;United Kingdom;University of York;http://www-users.york.ac.uk/~lang22/YcoeHome1.htm",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "67624b5d-f989-52b7-b7c9-a6482ceb5855",
+    "notes": [
+        "1.5 million word syntactically-annotated corpus of Old English prose texts"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-901"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "York-Toronto-Helsinki Parsed Corpus of Old English Prose (YCOE)"
+    ],
+    "url": ""
+}

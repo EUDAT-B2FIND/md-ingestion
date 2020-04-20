@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/600</identifier>
+    <datestamp>2018-09-14T13:43:42Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Word embeddings for Polish (KGR10, Fasttext binary) kgr10_fasttext_bin_v1</dc:title>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:subject>word embeddings</dc:subject>
+      <dc:subject>fasttext</dc:subject>
+      <dc:subject>binary</dc:subject>
+      <dc:subject>Polish</dc:subject>
+      <dc:subject>KGR10</dc:subject>
+      <dc:description>Distributional language model (binary) for Polish trained on KGR10 using Fasttext (vector dimension: 100).</dc:description>
+      <dc:date>2018-09-14</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/600</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Science and Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

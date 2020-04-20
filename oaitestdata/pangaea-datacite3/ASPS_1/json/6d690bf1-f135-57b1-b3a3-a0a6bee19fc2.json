@@ -1,0 +1,73 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.112969",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.112969"
+    ],
+    "PublicationTimestamp": "2003-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2003"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(18N,68E)",
+    "TempCoverageBegin": 62916609599,
+    "TempCoverageEnd": 62916609599,
+    "TemporalCoverage": " point in time : 1994-10-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1994-10-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1994-10-01T11:59:59Z",
+    "author": [
+        "Codispoti, Louis A"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.112969;2017-12-21T11:55:27Z;ASPS;JGOFSUS;10.1594/PANGAEA.112969;Codispoti, Louis A;Physical oceanography and nutrients measured on water bottle samples at station TT039_17-1;PANGAEA - Data Publisher for Earth & Environmental Science;2003;DEPTH, water;Pressure, water;Temperature, water;Salinity;Oxygen;Nitrate;Phosphate;Silicate;Nitrite;Ammonium;Bottle number;Oxygen, Winkler (Culberson, 1991, WOCE Report 68/91);TT039;Thomas G. Thompson;Joint Global Ocean Flux Study (JGOFS);1994-10-01T09:08:00;eng;Dataset;http://store.pangaea.de/Projects/JGOFS/US/ArabianSea/Codispoti-tt039.htm;240 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);18.2658 67.5665",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.112969"
+    ],
+    "oai_set": [
+        "ASPS",
+        "JGOFSUS"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[67.5665,18.2658],[67.5665,18.2658],[67.5665,18.2658],[67.5665,18.2658],[67.5665,18.2658]]]}",
+    "tags": [
+        {
+            "name": "Oxygen"
+        },
+        {
+            "name": "Winkler Culberson"
+        },
+        {
+            "name": "WOCE Report"
+        },
+        {
+            "name": "TT"
+        },
+        {
+            "name": "Thomas G. Thompson"
+        },
+        {
+            "name": "Joint Global Ocean Flux Study JGOFS"
+        }
+    ],
+    "title": [
+        "Physical oceanography and nutrients measured on water bottle samples at station TT039_17-1"
+    ],
+    "url": ""
+}

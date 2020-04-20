@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 63.3 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2156",
+    "MetadataAccess": [
+        "oai:ota:oucs:2156"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gaskell, Elizabeth Cleghorn, 1810-1865"
+    ],
+    "fulltext": "oai:ota:oucs:2156;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2156.xml;The Manchester marriage / by Elizabeth Gaskell;Gaskell, Elizabeth Cleghorn, 1810-1865;text_and_corpus_linguistics;Fiction -- Great Britain -- 19th century;Short stories -- Great Britain -- 19th century;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 63.3 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3acb782d-1f44-5ca0-a1b0-27bdbaeb82e5",
+    "oai_identifier": [
+        "oai:ota:oucs:2156"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Great Britain -- th century"
+        },
+        {
+            "name": "Short stories -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The Manchester marriage / by Elizabeth Gaskell"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2156.xml"
+}

@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Marrene"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "application/zip",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/84",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/84"
+    ],
+    "PID": "http://hdl.handle.net/11321/84",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Marrene"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Marrene, Marrene"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/84;2015-05-21T12:03:38Z;hdl_11321_3;hdl_11321_4;MWE Marrene;Marrene, Marrene;Marrene;2015-04-08;corpus;http://hdl.handle.net/11321/84;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain;text/plain;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 5;Marrene",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7c955883-31f9-5d32-b62a-57be9c2da114",
+    "notes": [
+        "Marrene"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/84"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE Marrene"
+    ],
+    "url": ""
+}

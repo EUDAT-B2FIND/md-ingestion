@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "University of Luxembourg"
+    ],
+    "Contributor": [
+        "Gilles, Peter"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Luxembourgish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1125",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1125"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1125",
+    "PublicationTimestamp": "2010-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "University of Luxembourg"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "SpatialCoverage": [
+        "Luxembourg"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1125;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Luxogramm - Grammatisches Informationssystem zum Luxemburgischen;Gilles, Peter;Luxogramm provides grammatical information (paradigms, rules, categories) for all Luxembourgish verbs;2010;languageDescription;http://hdl.handle.net/11372/LRT-1125;ltz;application/octet-stream;downloadable_files_count: 0;Luxembourg;University of Luxembourg;http://luxogramm.uni.lu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fb8d2063-2862-5d1c-97c0-8e363c2061a0",
+    "notes": [
+        "Luxogramm provides grammatical information (paradigms, rules, categories) for all Luxembourgish verbs"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1125"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Luxogramm - Grammatisches Informationssystem zum Luxemburgischen"
+    ],
+    "url": ""
+}

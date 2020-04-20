@@ -1,0 +1,202 @@
+
+ Statistics of
+	community	envidat
+	subset		SET_1
+	# of records	30
+  see as well oaidata/envidat-iso19139/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()
+
+  |--    30 |  100 |    30 |  100
+      |- 1     : Antarctic sea-ice freshwater fluxes associated with freezing, transport, and mel [...(4 chars follow)...] |
+      |- 1     : Wind tunnel measurement data of drifting snow and turbulent wind fluctuations      |
+      |- 1     : Influence of slope-scale snowmelt on catchment response simulated with the Alpin [...(9 chars follow)...] |
+      |- 1     : Automatic detection of avalanches      |
+      |- 1     : Potentials of domestic biomass resources for the energy transition in Switzerlan [...(1 chars follow)...] |
+      |- 1     : WFJ_MOD: Meteorological and snowpack measurements from Weissfluhjoch, Davos, Swi [...(8 chars follow)...] |
+      |- 1     : High resolution sea ice surface topography from the SIPEX-2 expedition, East Ant [...(13 chars follow)...] |
+      |- 1     : IRKIS Soil moisture measurements Davos      |
+      |- 1     : DISCHMEX - Observations and simulations of the close-ridge small-scale atmospher [...(86 chars follow)...] |
+      |- 1     : Weissfluhjoch dataset for ESM-SnowMIP      |
+
+ |-> Description      <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString/text()
+
+  |--    30 |  100 |    21 |   70
+      |- 1     : This data set provides estimates of annual fresh water fluxes related to sea-ice [...(1560 chars follow)...] |
+      |- 1     : This dataset contains the results obtained by an automatic classification using  [...(386 chars follow)...] |
+      |- 1     : The data presented here corresponds to the publication "A Close-Ridge Small-Scal [...(1255 chars follow)...] |
+
+ |-> Tags             <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString
+
+  |--    30 |  100 |    30 |  100
+      |- 2     : LANDSLIDES                          |
+      |- 2     : AVALANCHE ACCIDENT STATISTICS       |
+      |- 2     : AIR TEMPERATURE                     |
+      |- 1     : EMPIRICAL MORTALITY MODELS          |
+      |- 1     : POLAR                               |
+      |- 1     : SMP                                 |
+      |- 1     : ANTARCTICA                          |
+      |- 1     : ADVECTION                           |
+      |- 1     : CROWN CONDITION                     |
+      |- 1     : AVAILABILITY                        |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL[1]/text()
+
+  |--    60 |  200 |    60 |  200
+      |- 2     : https://www.envidat.ch/dataset/65ecae0a-e309-40f2-9e44-f0ad45f3339d/resource/c11 [...(66 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/5333838f-5da6-4574-8d28-ce1794c19631/resource/0e0 [...(81 chars follow)...] |
+      |- 2     : https://www.dora.lib4ri.ch/wsl/islandora/object/wsl:5563      |
+      |- 2     : http://www.nature.com/articles/nature19101.epdf?author_access_token=dtLqMQ3Ss6p1 [...(116 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/78af269e-4d9d-4fc3-9039-9814a4872a07/resource/803 [...(58 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/d57b3332-804d-463b-bbf8-0ed38593e180/resource/28b [...(64 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/645 [...(58 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/9918d77c-3176-453f-b34c-062ba979144a/resource/f4d [...(64 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/c54a616a-4419-4ba8-840e-82f6ec5c05ff/resource/c40 [...(85 chars follow)...] |
+      |- 2     : http://montblanc.slf.ch/owncloud/index.php/s/9COZ0CRW8r255OL      |
+
+ |-> RelatedIdentifier <--       //gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL[1]/text()
+
+  |--    60 |  200 |    60 |  200
+      |- 2     : https://www.envidat.ch/dataset/65ecae0a-e309-40f2-9e44-f0ad45f3339d/resource/c11 [...(66 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/5333838f-5da6-4574-8d28-ce1794c19631/resource/0e0 [...(81 chars follow)...] |
+      |- 2     : https://www.dora.lib4ri.ch/wsl/islandora/object/wsl:5563      |
+      |- 2     : http://www.nature.com/articles/nature19101.epdf?author_access_token=dtLqMQ3Ss6p1 [...(116 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/78af269e-4d9d-4fc3-9039-9814a4872a07/resource/803 [...(58 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/d57b3332-804d-463b-bbf8-0ed38593e180/resource/28b [...(64 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/6b961ebc-1c86-45ec-8b6d-8efdd2e8babe/resource/645 [...(58 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/9918d77c-3176-453f-b34c-062ba979144a/resource/f4d [...(64 chars follow)...] |
+      |- 2     : https://www.envidat.ch/dataset/c54a616a-4419-4ba8-840e-82f6ec5c05ff/resource/c40 [...(85 chars follow)...] |
+      |- 2     : http://montblanc.slf.ch/owncloud/index.php/s/9COZ0CRW8r255OL      |
+
+ |-> MetaDataAccess   <--                     
+  |--    30 |  100 |    30 |  100
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(11 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi [...(20 chars follow)...] |
+
+ |-> Creator          <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString
+
+  |--    30 |  100 |    30 |  100
+      |- 4     : Nander Wever                        |
+      |- 3     : Christian Sommer                    |
+      |- 2     : Avalanche Warning Service SLF       |
+      |- 2     : Michael Lehning                     |
+      |- 2     : Christoph Marty                     |
+      |- 2     : Rebecca Mott                        |
+      |- 1     : Enrico Paterna                      |
+      |- 1     : Sarah M. Springman                  |
+      |- 1     : Frank Techel                        |
+      |- 1     : Marcus Schaub                       |
+
+ |-> Publisher        <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString
+
+  |--    28 |   93 |    27 |   90
+      |- 6     : SLF                                 |
+      |- 5     : WSL                                 |
+      |- 4     : WSL Institute for Snow and Avalanche Research SLF      |
+      |- 2     : WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland and CRYOS, [...(110 chars follow)...] |
+      |- 1     : EPFL, SLF                           |
+      |- 1     : Laboratory of Cryospheric Sciences, School of Architecture and Civil Engineering [...(139 chars follow)...] |
+      |- 1     : ETHZ                                |
+      |- 1     : WSL Institute for Snow and Avanche Research SLF      |
+      |- 1     : University of Regensburg            |
+      |- 1     : Swiss Federal Research Institute WSL      |
+
+ |-> Contributor      <--       <string>EnviDat</string>
+
+  |--    30 |  100 |    30 |  100
+      |- 30    : EnviDat                             |
+
+ |-> PublicationYear  <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date
+
+  |--    30 |  100 |    30 |  100
+      |- 12    : 2017                                |
+      |- 8     : 2016                                |
+      |- 5     : 2018                                |
+      |- 4     : 2015                                |
+      |- 1     : 2014                                |
+
+ |-> Rights           <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString
+
+  |--    30 |  100 |    30 |  100
+      |- 24    : Open Data Commons Open Database License (ODbL)      |
+      |- 2     : License not specified               |
+      |- 2     : Other (Non-Commercial)              |
+      |- 1     : Other (Open)                        |
+      |- 1     : Other (Attribution)                 |
+
+ |-> OpenAccess       <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useLimitation/gco:CharacterString
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString/text()
+
+  |--    30 |  100 |    30 |  100
+      |- 3     : sommer@slf.ch                       |
+      |- 3     : wever@slf.ch                        |
+      |- 2     : accidents@slf.ch                    |
+      |- 2     : marty@slf.ch                        |
+      |- 2     : manfred.staehli@wsl.ch              |
+      |- 2     : lehning@slf.ch                      |
+      |- 2     : mott@slf.ch                         |
+      |- 1     : techel@slf.ch                       |
+      |- 1     : enrico.paterna@slf.ch               |
+      |- 1     : nander.wever@slf.ch                 |
+
+ |-> Language         <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:language/gco:CharacterString()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> ResourceType     <--       >//gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:presentationForm/gmd:CI_PresentationFormCode[@CodeListValue]
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Format           <--       //gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name/gco:CharacterString
+
+  |--    28 |   93 |    28 |   93
+      |- 7     : ZIP                                 |
+      |- 6     : TXT                                 |
+      |- 3     : XLSX                                |
+      |- 3     : CSV                                 |
+      |- 3     : URL                                 |
+      |- 2     : DAT                                 |
+      |- 2     : PDF                                 |
+      |- 1     : SNO                                 |
+      |- 1     : TEXT/X-SH                           |
+
+ |-> Discipline       <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString
+
+  |--    30 |  100 |    30 |  100
+      |- 30    : Not stated                          |
+
+ |-> SpatialCoverage  <--       //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()
+
+  |--     6 |   20 |     6 |   20
+      |- 4     : (46N-48N,6 E-10E)                   |
+      |- 1     : (90S-37S,180W-180E)                 |
+      |- 1     : (47N-47N,10E-10E)                   |
+
+ |-> TemporalCoverage <--       //gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text(),//gmd:temporalElement[1]/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition/text()
+
+  |--     0 |    0 |     0 |    0
+

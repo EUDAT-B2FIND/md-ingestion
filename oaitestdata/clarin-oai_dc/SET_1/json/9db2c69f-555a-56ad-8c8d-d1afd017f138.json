@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "Middle English (1100-1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3202",
+    "MetadataAccess": [
+        "oai:ota:oucs:3202"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Chaucer, Geoffrey, d. 1400"
+    ],
+    "fulltext": "oai:ota:oucs:3202;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3202.xml;Troilus & Criseyde;Chaucer, Geoffrey, d. 1400;default: 1976-01-01;text_and_corpus_linguistics;Poems -- England -- 14th century;enm;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9db2c69f-555a-56ad-8c8d-d1afd017f138",
+    "oai_identifier": [
+        "oai:ota:oucs:3202"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- England -- th century"
+        }
+    ],
+    "title": [
+        "Troilus & Criseyde"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3202.xml"
+}

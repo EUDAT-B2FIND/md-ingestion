@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Royster, Paul"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 443 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1644",
+    "MetadataAccess": [
+        "oai:ota:oucs:1644"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Travel literature"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Thoreau, Henry David, 1817-1862"
+    ],
+    "fulltext": "oai:ota:oucs:1644;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1644.xml;Cape Cod / Henry David Thoreau;Thoreau, Henry David, 1817-1862;text_and_corpus_linguistics;Philosophy, American -- 19th century;Oxford Text Archive, University of Oxford;Royster, Paul;text/sgml;(1 file : ca. 443 KB);Text;Travel literature;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "eaa6c2ab-4db2-5657-985f-ede7333dcfff",
+    "oai_identifier": [
+        "oai:ota:oucs:1644"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Philosophy"
+        },
+        {
+            "name": "American -- th century"
+        }
+    ],
+    "title": [
+        "Cape Cod / Henry David Thoreau"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1644.xml"
+}

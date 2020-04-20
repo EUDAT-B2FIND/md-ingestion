@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "text/plain; charset=utf-8",
+        "text/plain",
+        "application/zip",
+        "downloadable_files_count: 7",
+        "application/pdf"
+    ],
+    "Language": [
+        "Danish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/18",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/18"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/18",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN-ACA-NC",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Hansen, Dorte Haltrup",
+        "Offersgaard, Lene"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/18;2018-06-28T13:26:20Z;hdl_20.500.12115_1;hdl_20.500.12115_3;DK-CLARIN Parallel Financial Corpus (da-en);Hansen, Dorte Haltrup;Offersgaard, Lene;Economics;The DK-CLARIN Parallel Financial Corpus comprises 4.3 M Danish and 4.8 M English tokens from translated (parallel) documents, mainly annual reports, of the period 2002-2010 from 12 of the biggest Danish companies.\r\nAll texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation placed in separate text external spangroups.\r\nThe corpus was collected and processed in the work package 2.6 of the Danish CLARIN project (see http://dkclarin.ku.dk/english) by University of Copenhagen, Centre for Language Technology.\r\nThe aim of the Danish CLARIN consortium was to construct a Danish research infrastructure for the humanities integrating written, spoken, and visual records into a coherent and systematic digital repository. The project ran from January 2008 until the end of 2010.;2011;corpus;http://hdl.handle.net/20.500.12115/18;dan;eng;CLARIN-ACA-NC;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1;ACA;application/zip;application/zip;text/plain;application/pdf;application/pdf;text/xml;text/xml;text/plain; charset=utf-8;downloadable_files_count: 7;Centre for Language Technology, NorS, University of Copenhagen",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "77f0133a-4ed9-5826-970e-c1aeade56472",
+    "notes": [
+        "The DK-CLARIN Parallel Financial Corpus comprises 4.3 M Danish and 4.8 M English tokens from translated (parallel) documents, mainly annual reports, of the period 2002-2010 from 12 of the biggest Danish companies.\r\nAll texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation placed in separate text external spangroups.\r\nThe corpus was collected and processed in the work package 2.6 of the Danish CLARIN project (see http://dkclarin.ku.dk/english) by University of Copenhagen, Centre for Language Technology.\r\nThe aim of the Danish CLARIN consortium was to construct a Danish research infrastructure for the humanities integrating written, spoken, and visual records into a coherent and systematic digital repository. The project ran from January 2008 until the end of 2010."
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/18"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Economics"
+        }
+    ],
+    "title": [
+        "DK-CLARIN Parallel Financial Corpus (da-en)"
+    ],
+    "url": ""
+}

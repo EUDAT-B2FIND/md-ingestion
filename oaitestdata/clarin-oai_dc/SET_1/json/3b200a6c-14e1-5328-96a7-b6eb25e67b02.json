@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4017",
+    "MetadataAccess": [
+        "oai:ota:oucs:4017"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Burke, Edmund, 1729-1797."
+    ],
+    "fulltext": "oai:ota:oucs:4017;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4017.xml;A letter from the Right Hon. Edmund Burke, M.P. in the kingdom of Great Britain, to Sir Hercules Langrishe: Bart. M.P. on the subject of Roman Catholics of Ireland, and the propriety of admitting them to the elective franchise, consistently with the principles of the constitution as established at the Revolution.;Burke, Edmund, 1729-1797.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3b200a6c-14e1-5328-96a7-b6eb25e67b02",
+    "oai_identifier": [
+        "oai:ota:oucs:4017"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A letter from the Right Hon. Edmund Burke, M.P. in the kingdom of Great Britain, to Sir Hercules Langrishe: Bart. M.P. on the subject of Roman Catholics of Ireland, and the propriety of admitting them to the elective franchise, consistently with the principles of the constitution as established at the Revolution."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4017.xml"
+}

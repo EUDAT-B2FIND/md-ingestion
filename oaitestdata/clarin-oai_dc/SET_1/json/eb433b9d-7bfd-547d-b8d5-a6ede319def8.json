@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3476",
+    "MetadataAccess": [
+        "oai:ota:oucs:3476"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "More, Hannah, 1745-1833."
+    ],
+    "fulltext": "oai:ota:oucs:3476;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3476.xml;Sacred dramas: chiefly intended for young persons: the subjects taken from the Bible. To which is added, Sensibility, a poem.;More, Hannah, 1745-1833.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "eb433b9d-7bfd-547d-b8d5-a6ede319def8",
+    "oai_identifier": [
+        "oai:ota:oucs:3476"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Sacred dramas: chiefly intended for young persons: the subjects taken from the Bible. To which is added, Sensibility, a poem."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3476.xml"
+}

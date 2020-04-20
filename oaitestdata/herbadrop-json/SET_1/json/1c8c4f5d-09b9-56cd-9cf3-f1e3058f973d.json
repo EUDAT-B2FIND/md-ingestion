@@ -1,0 +1,64 @@
+{
+    "Contributor": [
+        "CINES"
+    ],
+    "DiscHierarchy": [
+        "3.1.2",
+        "Live Sciences",
+        "Plant Sciences "
+    ],
+    "Discipline": "Plant_Sciences",
+    "Format": [
+        "image/jpeg"
+    ],
+    "MetaDataAccess": "https://opendata.cines.fr/herbadrop-api/rest/data/search/dataset/1c8c4f5d-09b9-56cd-9cf3-f1e3058f973d",
+    "MetaDataAcess": [
+        "P03094617"
+    ],
+    "OpenAccess": [
+        "true"
+    ],
+    "PublicationTimestamp": "2019-04-12T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "MNHN"
+    ],
+    "ResourceType": [
+        "StillImage|PRESERVED_SPECIMEN"
+    ],
+    "Rights": [
+        "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "unavailable"
+    ],
+    "group": "herbadrop",
+    "groups": [
+        {
+            "name": "herbadrop"
+        }
+    ],
+    "name": "1c8c4f5d-09b9-56cd-9cf3-f1e3058f973d",
+    "namespaces": [
+        ":"
+    ],
+    "notes": [
+        "Digitized_herbarium_sheet",
+        "unavailable"
+    ],
+    "oai_identifier": [
+        "1c8c4f5d-09b9-56cd-9cf3-f1e3058f973d"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Fabaceae"
+        }
+    ],
+    "title": [
+        "Argyrolobium candicans Eckl. & Zeyh."
+    ],
+    "url": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03094617"
+}

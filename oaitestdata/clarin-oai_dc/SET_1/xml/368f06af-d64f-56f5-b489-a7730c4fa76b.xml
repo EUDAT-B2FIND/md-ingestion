@@ -1,0 +1,58 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:gecco</identifier>
+    <datestamp>2015-02-27T14:39:45Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>GECCo</dc:title>
+      <dc:creator>GECCo Team, LS Steiner</dc:creator>
+      <dc:subject xml:lang="en">corpus linguistics</dc:subject>
+      <dc:subject xml:lang="en">linguistics</dc:subject>
+      <dc:subject xml:lang="en">translation</dc:subject>
+      <dc:subject xml:lang="en">spoken language</dc:subject>
+      <dc:subject xml:lang="en">cohesion</dc:subject>
+      <dc:subject xml:lang="en">language contrasts</dc:subject>
+      <dc:subject xml:lang="en">discourse phenomena</dc:subject>
+      <dc:description xml:lang="en">offers a continuum of different text types (registers) from written to spoken discourse. More precisely, it includes English and German texts of 14 registers, eight of which represent written discourse and include fictional texts (FICTION), political essays (ESSAY), instruction manuals (INSTR), popular-scientific texts (POPSCI), letters to shareholders (SHARE), prepared political speeches (SPEECH), tourism leaflets (TOU) and corporate websites (WEB). This part was imported from the existing corpus CroCo described in (Hansen-Schirra et al., 2013). The written texts are saved in two subcorpora according to the language: English written texts (EO), German written texts
+(GO). The further registers are of spoken discourse and include recorded and transcribed interviews and academic speeches, see (Lapshinova-Koltunski et al., 2012).
+The spoken texts are also stored in two further subcorpora classified according to the language of origin: English spoken texts (EO-SPOKEN) and German spoken texts (GO-SPOKEN).
+The whole number of words contained in the corpus comprise ca. 1,4 Mio. The corpus is pre-annotated on several levels, which include information on tokens, lemmas, morpho-syntactic features (e.g. case, number, etc.), parts-of-speech, pharse chunks and their grammatical functions, as well as and sentence boundaries. The annotation of the written part was partly imported from CroCo, whereas for the spoken part, we use Stanford POS Tagger (Toutanova et al., 2003) and the Stanford Parser (Klein and Manning, 2003). 
+This corpus is also annotated for the information on cohesion (devices and relations), including coreference, conjunctive relations, substitution, ellipsis and lexical cohesion. The semi-automatic procedures were described in lapshinova and Kunz (2014). The annotation of ellipsis is manual and the scheme is described in Menzel (2014). The corpus is encoded in the CWB format (CWB, 2010) and can be queried with Corpus Query Processor (CQP) (Evert, 2005).</dc:description>
+      <dc:description xml:lang="de">GECCo ist ein bilinguales Korpus (der Name ist vom Projekttitel 'German-English Contrasts in Cohesion' abgeleitet), das insgesamt ca. 1,44 Millionen Tokens enth&#228;lt und sowohl parallele als auch vergleichbare Subkorpora f&#252;r Englisch und Deutsch umfasst. GECCo beinhaltet gegenw&#228;rtig 12 Register, zu denen sowohl gesprochensprachliche als auch geschriebene Textsorten geh&#246;ren: ESSAY, FICTION, INSTR, POPSCI, SHARE, SPEECH, TOU, WEB, ACADEMIC, FORUM, INTERVIEW, TALKSHOW, MEDCONSULT, SERMON (je ca. 30.000 Tokens pro Register im jeweiligen Subkorpus). Die Texte der geschriebenen Register sind aus dem CroCo-Korpus &#252;bernommen worden, vgl. Hansen-Schirra et al. (2012). Register gesprochener Sprache wurden im Rahmen des GECCo-Projekts gesammelt und annotiert. Probleme der Korpuskompilierung, Zusammenstellung und Annotation dieser Register wurden in Lapshinova et al. (2012) beschrieben. Beschaffung des gesprochensprachlichen Materials ist kompliziert, weil es viel manuellen Aufwand (Transkription) mit sich bringt. Zu beachten ist dabei, dass das Sprachmaterial in beiden Sprachen gesammelt wird und vergleichbar sein soll. Aus diesem Grund ist der geschriebene Teil von GECCo bisher gr&#246;&#223;er als
+der gesprochene. Das Korpus ist auf verschiedenen Ebenen annotiert und enth&#228;lt Informationen &#252;ber Tokens, Lemmata, morpho-syntaktische Eigenschaften (z.B. Genus, Numerus, Kasus usw.) und Wortarten. Syntaktische Annotationen schlie&#223;en Phrasen-(chunks) und Satzgrenzen ein. Phrasen sind zus&#228;tzlich mit ihren grammatischen Funktionen markiert. Diese Annotationen der geschriebenen Korpusregister wurden aus CroCo importiert. F&#252;r das gesprochene englische Subkorpus verwenden wir den Stanford POS Tagger (Toutanova et al., 2003) und den Stanford Parser (Klein and Manning, 2003). F&#252;r das gesprochene Deutsch wurde MATE (Bohnet, 2010) verwendet. Das Korpus ist auch mit Informationen &#252;ber Koh&#228;sionsmitteln annotiert: Koreferenz, Konjunktionen, Ellipsen, Substitution und lexikalische Koh&#228;sion. Das semi-automatische Annotationsverfahren f&#252;r Koreferenz, Konnektoren und Substitution ist in Lapshinova und Kunz (2014) detailliert beschrieben. Die Annotation von Ellipsen erfolgt zurzeit ausschlie&#223;lich manuell. Das Schema und die Kategorien sind in detaillierten projektinternen Richtlinien dokumentiert (Menzel 2014). Das Gesamtkorpus ist im CWB-Format gespeichert (CWB, 2010), welches Abfragen mit dem Corpus Query Processor (CQP; Evert, 2005) erm&#246;glicht. Es gibt auch MMAX-Dateien.</dc:description>
+      <dc:publisher>Universit&#228;t des Saarlandes</dc:publisher>
+      <dc:contributor>Ekaterina Lapshinova-Koltunski</dc:contributor>
+      <dc:contributor>Katrin Menzel</dc:contributor>
+      <dc:contributor>Kerstin Kunz</dc:contributor>
+      <dc:contributor>Marilisa Amoia</dc:contributor>
+      <dc:contributor>Prof. Erich Steiner</dc:contributor>
+      <dc:contributor>Jose Manuel Martinez Martinez</dc:contributor>
+      <dc:date>2013</dc:date>
+      <dc:type>Collection</dc:type>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>clarind-uds:gecco</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CF7-A</dc:identifier>
+      <dc:source xml:lang="en">EO/GO/ETRANS/GTRANS-ESSAY/FICTION/INSTR/POPSCI/SHARE/SPEECH/TOU/WEB from CroCo (clarind-uds:croco)</dc:source>
+      <dc:source xml:lang="en">EO-INTERVIEW: from the BACKBONE project and ELISA corpus files, compiled at Englisches Seminar, Universit&#228;t T&#252;bingen, interviews about hobbies, work etc.</dc:source>
+      <dc:source xml:lang="en">GO-INTERVIEW: from the BACKBONE project, compiled at Englisches Seminar, Universit&#228;t T&#252;bingen, interviews about hobbies, work etc.</dc:source>
+      <dc:source xml:lang="en">EO-ACADEMIC: lectures from Michigan Corpus of Academic Spoken English</dc:source>
+      <dc:source xml:lang="en">GO-ACADEMIC: lectures at UdS collected by within the Visual University project and transcribed by student assistants of GECCo team</dc:source>
+      <dc:source xml:lang="en">EO/GO-FORUM: discussions in internet forums (travel, skin disorders, European politics, coffee, giving up smoking, roses, emotions and singing, depressions, crafting/DIY) collected by student assistants of GECCo team</dc:source>
+      <dc:source xml:lang="en">EO-TALKSHOW: collected transcriptions of TV talkshows from the web (by GECCO team)</dc:source>
+      <dc:source xml:lang="en">GO-TALKSHOW: TV talkshows collected and transcribed by student assistants of GECCo team</dc:source>
+      <dc:source xml:lang="en">EO-MEDONCULT:  medical consultations from BNC</dc:source>
+      <dc:source xml:lang="en">GO-MEDONCULT:  medical consultation, Anamnese oder Aufkl&#228;rungsgespr&#228;chfrom the Dolmetschen im Krankenhaus Korpus</dc:source>
+      <dc:source xml:lang="en">EO-SERMON: sermons from BNC</dc:source>
+      <dc:source xml:lang="en">GO-SERMON: sermons from the Predigtarchiv Oberpfarr- und Domkirche zu Berlin</dc:source>
+      <dc:language>deu</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, E., K. Kunz and M. Amoia (2012). Compiling a Multilingual Corpus. In Heliana Mello, Massimo Pettorino and Tommaso Raso (eds). Proceedings of the VIIth GSCP-2012 International Conference: Speech and Corpora. Firenze: Firenze University Press. pp. 29-34.</dc:relation>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, E. and K. Kunz (2014). Annotating Cohesion for Multillingual Analysis. In Proceedings of the 10th Joint ACL - ISO Workshop on Interoperable Semantic Annotation, Reykjavik, May 26, 2014</dc:relation>
+      <dc:relation xml:lang="en">Menzel, Katrin (2014): Guidelines for the manual annotation of ellipses, DFG-Projektbericht.</dc:relation>
+      <dc:relation xml:lang="en">Further publications: http://www.gecco.uni-saarland.de/GECCo/Publikationen.html</dc:relation>
+      <dc:coverage xml:lang="en">Germany</dc:coverage>
+      <dc:rights xml:lang="en">Copyrighted</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

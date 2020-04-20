@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Black, Jeremy A.",
+        "Cunningham, Graham"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(2373 files : total of ca. 16.1 MB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2424",
+    "MetadataAccess": [
+        "oai:ota:oucs:2424"
+    ],
+    "PublicationTimestamp": "2000-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Anthologies"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:2424;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2424.xml;The Electronic Text Corpus of Sumerian Literature. First edition. / Jeremy Black et al.;ETCSL;2000 BCE-1600 BCE;text_and_corpus_linguistics;Linguistic analysis (Linguistics);Oxford Text Archive, University of Oxford;Black, Jeremy A.;Cunningham, Graham;Black, Jeremy A.;text/sgml;(2373 files : total of ca. 16.1 MB);Text;Anthologies;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f24e1dd4-2c6f-5e91-a73b-0c5a9ad1377b",
+    "oai_identifier": [
+        "oai:ota:oucs:2424"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        }
+    ],
+    "title": [
+        "The Electronic Text Corpus of Sumerian Literature. First edition. / Jeremy Black et al.",
+        "ETCSL"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2424.xml"
+}

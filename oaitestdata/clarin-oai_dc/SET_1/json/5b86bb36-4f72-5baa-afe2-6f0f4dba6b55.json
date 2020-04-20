@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 391 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "Middle English (1100-1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1362",
+    "MetadataAccess": [
+        "oai:ota:oucs:1362"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Chaucer, Geoffrey, d. 1400"
+    ],
+    "fulltext": "oai:ota:oucs:1362;2018-02-16T10:42:06Z;http://ota.ox.ac.uk/headers/1362.xml;Troilus & Criseyde;Chaucer, Geoffrey, d. 1400;default: 1976-01-01;text_and_corpus_linguistics;Poems -- England -- 14th century;enm;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 391 KB);Text;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5b86bb36-4f72-5baa-afe2-6f0f4dba6b55",
+    "oai_identifier": [
+        "oai:ota:oucs:1362"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- England -- th century"
+        }
+    ],
+    "title": [
+        "Troilus & Criseyde"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1362.xml"
+}

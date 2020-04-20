@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=ff612a7070e311e5a2aa782bcb0741355868b1a6d9e44c7aa222d1fc8dbcd098",
+    "MetadataAccess": [
+        "ff612a7070e311e5a2aa782bcb0741355868b1a6d9e44c7aa222d1fc8dbcd098"
+    ],
+    "PublicationTimestamp": "2015-10-21T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "ff612a7070e311e5a2aa782bcb0741355868b1a6d9e44c7aa222d1fc8dbcd098;2018-11-15T16:40:17Z;corpus;corpus:text;CINTIL DependencyBank PREMIUM;CINTIL DependencyBank PREMIUM is a corpus of Portuguese utterances manually annotated with the representation of grammatical dependency relations and the information of part-of-speech, inflection and lemmas. It is being developed and maintained at the University of Lisbon. The current version is composed by 3,000 sentences (79,378 tokens) taken from portuguese newspaper articles.\n\nThe approach we follow is to build on top of an existing resource by adding a new annotation layer. We take the existing CINTIL corpus (Barreto et al., 2006), a 1 million token corpus already annotated with manually verified information on part-of-speech, morphology and named entities, and add syntactic function tags by automatically analysing it with a state-of-the-art dependency parser (LX-DepParser1). This tentative automatic annotation is then manually corrected.The manual correction is done by two annotators under a double-blind scheme, that is followed by adjudication by a third annotator. This process is supported by a general purpose annotation tool, WebAnno (https://code.google.com/p/webanno/).\nThe main motivation behind the creation of this resource was to create a corpus with a large variety of annotated phenomena that can be used for training statistical dependency parsers that are to be used in applications that deal with unrestricted text. Besides that, it enables linguistic studies that need to search the corpus for specific dependency structures.\n\nThis work was partly funded by the Portuguese Foundation for Science and Technology through the Portuguese project DP4LT (PTDC/EEI-SII/1940/2012) and by the European Commision through project QTLeap (EC/FP7/610516).;2015-10-21",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "26597244-09b0-5017-9a6b-801794cb7145",
+    "notes": [
+        "CINTIL DependencyBank PREMIUM is a corpus of Portuguese utterances manually annotated with the representation of grammatical dependency relations and the information of part-of-speech, inflection and lemmas. It is being developed and maintained at the University of Lisbon. The current version is composed by 3,000 sentences (79,378 tokens) taken from portuguese newspaper articles.\n\nThe approach we follow is to build on top of an existing resource by adding a new annotation layer. We take the existing CINTIL corpus (Barreto et al., 2006), a 1 million token corpus already annotated with manually verified information on part-of-speech, morphology and named entities, and add syntactic function tags by automatically analysing it with a state-of-the-art dependency parser (LX-DepParser1). This tentative automatic annotation is then manually corrected.The manual correction is done by two annotators under a double-blind scheme, that is followed by adjudication by a third annotator. This process is supported by a general purpose annotation tool, WebAnno (https://code.google.com/p/webanno/).\nThe main motivation behind the creation of this resource was to create a corpus with a large variety of annotated phenomena that can be used for training statistical dependency parsers that are to be used in applications that deal with unrestricted text. Besides that, it enables linguistic studies that need to search the corpus for specific dependency structures.\n\nThis work was partly funded by the Portuguese Foundation for Science and Technology through the Portuguese project DP4LT (PTDC/EEI-SII/1940/2012) and by the European Commision through project QTLeap (EC/FP7/610516)."
+    ],
+    "oai_identifier": [
+        "ff612a7070e311e5a2aa782bcb0741355868b1a6d9e44c7aa222d1fc8dbcd098"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "CINTIL DependencyBank PREMIUM"
+    ]
+}

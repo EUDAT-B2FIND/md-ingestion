@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3741",
+    "MetadataAccess": [
+        "oai:ota:oucs:3741"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Francklin, Thomas, 1721-1784."
+    ],
+    "fulltext": "oai:ota:oucs:3741;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3741.xml;A sermon preach'd at the parish church of St. Peter's Cornhill; on the Sunday after the late dreadful fire in that neighbourhood. By Thomas Francklin,;Francklin, Thomas, 1721-1784.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3ce471af-6dae-57b4-bc57-bfe72b047735",
+    "oai_identifier": [
+        "oai:ota:oucs:3741"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A sermon preach'd at the parish church of St. Peter's Cornhill; on the Sunday after the late dreadful fire in that neighbourhood. By Thomas Francklin,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3741.xml"
+}

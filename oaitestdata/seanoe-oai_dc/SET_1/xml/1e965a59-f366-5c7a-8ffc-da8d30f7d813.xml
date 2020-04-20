@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:seanoe.org:51473</identifier>
+    <datestamp>2018-12-17</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>taiga deployment (EGO glider&#160;: tintin) (Greenland sea)</dc:title>
+      <dc:creator>Houssais, Marie-noelle</dc:creator>
+      <dc:creator>Herbaut, Christophe</dc:creator>
+      <dc:creator>Testor, Pierre</dc:creator>
+      <dc:creator>Mortier, Laurent</dc:creator>
+      <dc:subject>sea water temperature</dc:subject>
+      <dc:subject>sea water electrical conductivity</dc:subject>
+      <dc:subject>sea water pressure</dc:subject>
+      <dc:subject>mole concentration of dissolved molecular oxygen in sea water</dc:subject>
+      <dc:subject>temperature of sensor for oxygen in sea water</dc:subject>
+      <dc:subject>uncalibrated phase shift reported by oxygen sensor</dc:subject>
+      <dc:subject>calibrated phase shift reported by oxygen sensor</dc:subject>
+      <dc:subject>mass concentration of chlorophyll a in sea water</dc:subject>
+      <dc:subject>volume absorption coefficient of radiative flux in sea water due to dissolved organic matter</dc:subject>
+      <dc:subject>volume scattering function of radiative flux in sea water 700</dc:subject>
+      <dc:description>The observations of tintin glider on taiga (Greenland sea) :
+	- EGO NetCDF time-series (data, metadata, derived sea water current)
+	- NetCDF profiles extracted from the above time-series
+	- Raw data
+	- JSON metadata used by the decoder
+The following parameters are provided :&#160;
+	- Practical salinity
+	- Sea temperature in-situ ITS-90 scale
+	- Electrical conductivity
+	- Sea water pressure, equals 0 at sea-level
+</dc:description>
+      <dc:publisher>SEANOE</dc:publisher>
+      <dc:date>2017-09</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>DOI:10.17882/51473</dc:identifier>
+      <dc:identifier>http://dx.doi.org/10.17882/51473</dc:identifier>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/727890/EU//INTAROS</dc:relation>
+      <dc:coverage>North 78.2252, South 78.029, East 15.6414, West 8.8952</dc:coverage>
+      <dct:references>https://www.seanoe.org/data/00403/51473/illustration.gif</dct:references>
+      <dcterms:spatial xsi:type="DCTERMS:Box">78.029 8.8952 78.2252 15.6414</dcterms:spatial>
+      <dc:rights>CC-BY-NC</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

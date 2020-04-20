@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 21.3 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "Old English (ca. 450-1100)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0815",
+    "MetadataAccess": [
+        "oai:ota:oucs:0815"
+    ],
+    "PublicationYear": [
+        "880-899"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Orosius, Paulus"
+    ],
+    "fulltext": "oai:ota:oucs:0815;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0815.xml;Historiarum adversus paganos libri VII. English (Old English);Alfred's Orosius;Orosius, Paulus;880-899;text_and_corpus_linguistics;Local histories;ang;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 21.3 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7732a4af-4b77-5dd0-8517-60629040c6bf",
+    "oai_identifier": [
+        "oai:ota:oucs:0815"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Local histories"
+        }
+    ],
+    "title": [
+        "Historiarum adversus paganos libri VII. English (Old English)",
+        "Alfred's Orosius"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0815.xml"
+}

@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/254",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/254"
+    ],
+    "PID": "http://hdl.handle.net/11321/254",
+    "PublicationTimestamp": "2016-04-30T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Patejuk, Agnieszka"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/254;2016-05-05T12:20:51Z;hdl_11321_3;hdl_11321_4;POLFIE-OT: an LFG grammar of Polish with OT marks;Patejuk, Agnieszka;syntax;LFG;Polish;grammar;POLFIE-OT is a version of POLFIE, an LFG grammar of Polish implemented in the XLE system (Xerox Linguistic Environment), enriched with OT (Optimality Theory) constraints for the purpose of automatic disambiguation of resulting parses \u2013 according to defined criteria, certain parses are considered optimal, while the remaining ones are considered unoptimal (it is possible, however, to view the unoptimal parses).\r\n\r\nPOLFIE has been developed at the Institute of Computer Science, Polish Academy of Sciences (IPI PAN) within two projects: NEKST and CLARIN-PL. It provides a two-layer representation: constituent structure (c-structure, tree representation) and functional structure (f-structure, AVM representation). It is based on two previous implemented grammars of Polish: its c-structure is based on GFJP2, a DCG grammar used by the parser \u015awigra, while its f-structure is inspired by FOJP, an HPSG grammar of Polish. Lexical entries used by the grammar are created with the help of two state-of-the-art resources for Polish: Morfeusz2, a morphological analyser, and Walenty, a valence dictionary.\r\n\r\nPOLFIE-OT is available via XLE-Web (a part of INESS; it does not require a local installation of XLE):\r\n\u2022 go to http://iness.mozart.ipipan.waw.pl/iness/xle-web or http://clarino.uib.no/iness/xle-web\r\n\u2022 choose \"POLFIE-OT\" grammar from the \"Grammar\" menu\r\n\u2022 write a sentence in the relevant field\r\n\u2022 click the \"Parse sentence\" button \u2013 only optimal solutions will be presented\r\n\u2022 however, if you want to see unoptimal solutions, check the \"Show unoptimal\" checkbox and click \"Parse sentence\" button;2016-04-30;languageDescription;http://hdl.handle.net/11321/254;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;application/octet-stream;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/LFG",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d003d8ce-4ee8-53c7-8cc5-69de2ed77050",
+    "notes": [
+        "POLFIE-OT is a version of POLFIE, an LFG grammar of Polish implemented in the XLE system (Xerox Linguistic Environment), enriched with OT (Optimality Theory) constraints for the purpose of automatic disambiguation of resulting parses \u2013 according to defined criteria, certain parses are considered optimal, while the remaining ones are considered unoptimal (it is possible, however, to view the unoptimal parses).\r\n\r\nPOLFIE has been developed at the Institute of Computer Science, Polish Academy of Sciences (IPI PAN) within two projects: NEKST and CLARIN-PL. It provides a two-layer representation: constituent structure (c-structure, tree representation) and functional structure (f-structure, AVM representation). It is based on two previous implemented grammars of Polish: its c-structure is based on GFJP2, a DCG grammar used by the parser \u015awigra, while its f-structure is inspired by FOJP, an HPSG grammar of Polish. Lexical entries used by the grammar are created with the help of two state-of-the-art resources for Polish: Morfeusz2, a morphological analyser, and Walenty, a valence dictionary.\r\n\r\nPOLFIE-OT is available via XLE-Web (a part of INESS; it does not require a local installation of XLE):\r\n\u2022 go to http://iness.mozart.ipipan.waw.pl/iness/xle-web or http://clarino.uib.no/iness/xle-web\r\n\u2022 choose \"POLFIE-OT\" grammar from the \"Grammar\" menu\r\n\u2022 write a sentence in the relevant field\r\n\u2022 click the \"Parse sentence\" button \u2013 only optimal solutions will be presented\r\n\u2022 however, if you want to see unoptimal solutions, check the \"Show unoptimal\" checkbox and click \"Parse sentence\" button"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/254"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "syntax"
+        },
+        {
+            "name": "LFG"
+        },
+        {
+            "name": "Polish"
+        },
+        {
+            "name": "grammar"
+        }
+    ],
+    "title": [
+        "POLFIE-OT: an LFG grammar of Polish with OT marks"
+    ],
+    "url": ""
+}

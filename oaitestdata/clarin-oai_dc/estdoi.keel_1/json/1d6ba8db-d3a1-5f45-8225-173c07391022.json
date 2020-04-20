@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/4-00-0000-0000-0000-0000EL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:5757484",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:5757484"
+    ],
+    "PublicationTimestamp": "2015-05-22T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Kaalep, Heiki-Jaan"
+    ],
+    "fulltext": "oai:oai.datacite.org:5757484;2018-10-19T23:32:11Z;ESTDOI;ESTDOI.KEEL;Morphological analyzer for Estonian ESTMORF;Kaalep, Heiki-Jaan;Center of Estonian Language Resources;2013;Issued: 2013-01-09;Updated: 2015-05-22;doi:10.15155/4-00-0000-0000-0000-0000EL;Abstract;ESTMORF is a computer program for analysing unrestricted Estonian text. ESTMORF is implemented in a most straightforward way: it compares word forms of the running text with combinations of lexemes from its lexicon.\nESTMORF determines, for every input word form, the structure of the word (e.g. stem, derivational suffix, inflectional affix), the word class and inflectional categories (e.g. number and case). ",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1d6ba8db-d3a1-5f45-8225-173c07391022",
+    "notes": [
+        "Abstract",
+        "ESTMORF is a computer program for analysing unrestricted Estonian text. ESTMORF is implemented in a most straightforward way: it compares word forms of the running text with combinations of lexemes from its lexicon.\nESTMORF determines, for every input word form, the structure of the word (e.g. stem, derivational suffix, inflectional affix), the word class and inflectional categories (e.g. number and case). "
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:5757484"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Morphological analyzer for Estonian ESTMORF"
+    ],
+    "url": ""
+}

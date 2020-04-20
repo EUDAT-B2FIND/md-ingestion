@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Imperial College London",
+        "Iliffe, Rob",
+        "European Commission",
+        "Royal Society",
+        "AHRB"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "1725 files: ca. 331 MB",
+        "text/xml"
+    ],
+    "Language": [
+        "English",
+        "Latin",
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2479",
+    "MetadataAccess": [
+        "oai:ota:oucs:2479"
+    ],
+    "PublicationTimestamp": "2004-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2004"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Biographies"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Young, John",
+        "Hawkins, Michael",
+        "Iliffe, Rob"
+    ],
+    "fulltext": "oai:ota:oucs:2479;2018-02-16T10:42:06Z;http://ota.ox.ac.uk/headers/2479.xml;The Newton Project;The Newton Manuscript Project;Iliffe, Rob;Young, John;Hawkins, Michael;2004;text_and_corpus_linguistics;Physics--Religious aspects;Physics--Bibliography;Physics literature;eng;lat;grc;The resource consists of a number of different pages or files giving information on Newton's life and work and also on the development of the Newton Project. There is also detailed information relating to editorial principles and technical issues relating to the web site. The central focus of the resource is the series of XML encoded transcriptions of Newton's theological works, personal notebooks, all draft biographical information about Newton dating from the eighteenth century, and also many of his early scientific papers. ;Oxford Text Archive, University of Oxford;AHRB;Royal Society;European Commission;Imperial College London;Iliffe, Rob;text/xml;1725 files: ca. 331 MB;Text;Biographies;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "21181c4e-c5fb-5b5c-9ec2-8951ba17e34d",
+    "notes": [
+        "The resource consists of a number of different pages or files giving information on Newton's life and work and also on the development of the Newton Project. There is also detailed information relating to editorial principles and technical issues relating to the web site. The central focus of the resource is the series of XML encoded transcriptions of Newton's theological works, personal notebooks, all draft biographical information about Newton dating from the eighteenth century, and also many of his early scientific papers. "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2479"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Physics--Religious aspects"
+        },
+        {
+            "name": "Physics--Bibliography"
+        },
+        {
+            "name": "Physics literature"
+        }
+    ],
+    "title": [
+        "The Newton Project",
+        "The Newton Manuscript Project"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2479.xml"
+}

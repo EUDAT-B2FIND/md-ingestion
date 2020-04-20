@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/113</identifier>
+    <datestamp>2016-09-07T08:54:41Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>AM 305 fol (Magn&#250;ss Lagab&#511;tis landsl&#491;g and other law texts): a digital edition</dc:title>
+      <dc:creator>Horn, Anna C</dc:creator>
+      <dc:subject>Law</dc:subject>
+      <dc:subject>Medieval</dc:subject>
+      <dc:subject>Manuscript</dc:subject>
+      <dc:description>The text "AM 305 fol (Magn&#250;ss Lagab&#511;tis landsl&#491;g and other law texts): a digital edition" is part of the Medieval Nordic Text Archive (www.menota.org). The Menota catalogue has been built in the Corpuscle application at Uni Research Computing in Bergen. The texts are searchable through the Corpuscle search engine and are also downloadable from there. In the Catalogue you can also find more detailed information about each text, such as the level of analysis and linguistic annotation. All texts in the archive are listed in the first column of the Catalogue. By clicking the file names in the second column of this catalogue you will be able to read texts at up to three levels, facsimile (facs), diplomatic (dipl) and normalised (norm). The archive uses web fonts (WOFF), so no special fonts need to be installed. There is also a wide array of search facilities, especially for the texts that have been morphologically annotated.</dc:description>
+      <dc:date>2016-09-06</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/113</dc:identifier>
+      <dc:language>non</dc:language>
+      <dc:rights>Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/3.0/</dc:rights>
+      <dc:format>text/xml</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>MENOTA - Medieval Nordic Text Archive</dc:publisher>
+      <dc:source>http://clarino.uib.no/menota/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,47 @@
+{
+    "Contact": [
+        "The GAVO DC team"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://org.gavo.dc/bgds/q/sia",
+    "PublicationTimestamp": "2018-12-21T17:01:29Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "The GAVO DC team"
+    ],
+    "RelatedIdentifier": [
+        "ivo://org.gavo.dc/bgds/q/sia"
+    ],
+    "author": [
+        "Chini, R.",
+        "Hackstein, M.",
+        "Haas, M.",
+        "Fein, C."
+    ],
+    "fulltext": "ivo://org.gavo.dc/bgds/q/sia;2018-12-21T17:01:29Z;Bochum Galactic Disk Survey (BGDS) SIAP service;ivo://org.gavo.dc/bgds/q/sia;Hackstein, M.;Haas, M.;Fein, C.;Chini, R.; The Bochum Galactic Disk Survey is an ongoing project to monitor the\n        stellar content of the Galactic disk in a 6 degree wide stripe\n        centered on the Galactic plane. The data has been recorded since\n        mid-2010 in Sloan r and i simultaneously with the RoBoTT Telecsope at\n        the Universitaetssternwarte Bochum near Cerro Armazones in the Chilean\n        Atacama desert. It contains measurements of about 2x10^7 stars over\n        more than seven years. Additionally, intermittent measurements in\n        Johnson UVB and Sloan z have been recorded as well.;The GAVO DC team",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0bd28dee-50e3-5fd2-9001-024f160d7799",
+    "notes": [
+        " The Bochum Galactic Disk Survey is an ongoing project to monitor the\n        stellar content of the Galactic disk in a 6 degree wide stripe\n        centered on the Galactic plane. The data has been recorded since\n        mid-2010 in Sloan r and i simultaneously with the RoBoTT Telecsope at\n        the Universitaetssternwarte Bochum near Cerro Armazones in the Chilean\n        Atacama desert. It contains measurements of about 2x10^7 stars over\n        more than seven years. Additionally, intermittent measurements in\n        Johnson UVB and Sloan z have been recorded as well."
+    ],
+    "oai_identifier": [
+        "ivo://org.gavo.dc/bgds/q/sia"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        " The Bochum Galactic Disk Survey is an ongoing project to monitor the\n        stellar content of the Galactic disk in a 6 degree wide stripe\n        centered on the Galactic plane. The data has been recorded since\n        mid-2010 in Sloan r and i simultaneously with the RoBoTT Telecsope at\n        the Universitaetssternwarte Bochum near Cerro Armazones in the Chilean\n        Atacama desert. It contains measurements of about 2x10^7 stars over\n        more than seven years. Additionally, intermittent measurements in\n        Johnson UVB and Sloan z have been recorded as well."
+    ]
+}

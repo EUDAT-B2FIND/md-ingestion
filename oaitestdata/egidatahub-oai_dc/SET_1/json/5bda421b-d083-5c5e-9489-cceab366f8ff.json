@@ -1,0 +1,46 @@
+{
+    "Contributor": [
+        "EGI-DataHub"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "text/plain"
+    ],
+    "MetaDataAccess": "http://datahub.egi.eu/oai_pmh?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datahub.egi.eu:ea11b0c59a31f959128f65d73bff9e22",
+    "MetadataAccess": [
+        "oai:datahub.egi.eu:ea11b0c59a31f959128f65d73bff9e22"
+    ],
+    "PID": "http://hdl.handle.net/21.T15999/hzXuEO4",
+    "PublicationTimestamp": "2018-01-22T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "author": [
+        "Baptiste Grenier"
+    ],
+    "fulltext": "oai:datahub.egi.eu:ea11b0c59a31f959128f65d73bff9e22;2019-01-22T15:12:55Z;CS3 input files;Baptiste Grenier;CS3 input files;CS3 input files to be used for the CS3 demontration;2018-01-22;Text;text/plain;http://hdl.handle.net/21.T15999/hzXuEO4;https://datahub.egi.eu/share/49519f17a052509694e4ae8bec328d52",
+    "group": "egidatahub",
+    "groups": [
+        {
+            "name": "egidatahub"
+        }
+    ],
+    "name": "5bda421b-d083-5c5e-9489-cceab366f8ff",
+    "notes": [
+        "CS3 input files to be used for the CS3 demontration"
+    ],
+    "oai_identifier": [
+        "oai:datahub.egi.eu:ea11b0c59a31f959128f65d73bff9e22"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "CS3 input files to be used for the CS3 demontration"
+    ],
+    "url": "https://datahub.egi.eu/share/49519f17a052509694e4ae8bec328d52"
+}

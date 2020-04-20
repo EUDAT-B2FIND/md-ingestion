@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "between 2 and 5 MB"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0292",
+    "MetadataAccess": [
+        "oai:ota:oucs:0292"
+    ],
+    "PublicationYear": [
+        "364 BCE-322 BCE"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Addresses"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Demosthenes"
+    ],
+    "fulltext": "oai:ota:oucs:0292;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0292.xml;Orationes / compiled by Thesaurus Linguae Graecae;Demosthenes;364 BCE-322 BCE;text_and_corpus_linguistics;Addresses -- Greece -- 4th century B.C.;grc;Oxford Text Archive, University of Oxford;between 2 and 5 MB;Text;Addresses;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "98078199-78a4-5cca-9518-5c0677144201",
+    "oai_identifier": [
+        "oai:ota:oucs:0292"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Addresses -- Greece -- th century B.C."
+        }
+    ],
+    "title": [
+        "Orationes / compiled by Thesaurus Linguae Graecae"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0292.xml"
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5580",
+    "MetadataAccess": [
+        "oai:ota:oucs:5580"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Warren, Martin, 1696-1735."
+    ],
+    "fulltext": "oai:ota:oucs:5580;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5580.xml;I have perused a pamphlet entitled, Some reasons why the practice of inoculation ought to be introduced into the town of Bury at present, and have been surprized to find this elaborate piece so little in substance,;Warren, Martin, 1696-1735.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0ec87ed4-48b1-51c0-a5ed-53c27a1c5eff",
+    "oai_identifier": [
+        "oai:ota:oucs:5580"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "I have perused a pamphlet entitled, Some reasons why the practice of inoculation ought to be introduced into the town of Bury at present, and have been surprized to find this elaborate piece so little in substance,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5580.xml"
+}

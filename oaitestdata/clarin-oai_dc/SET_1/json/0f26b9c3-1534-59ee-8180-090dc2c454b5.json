@@ -1,0 +1,56 @@
+{
+    "Contributor": [
+        "Simov, Kiril"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Bulgarian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-193",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-193"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-193",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Bulgaria"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-193;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;BulTreeBank;Simov, Kiril;HPSG-based annotation including: constituent structure, dependency relations, named entities (classified as person, organisation, location or other names), coreferential relations. Annotation in XML;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-193;bul;downloadable_files_count: 0;Bulgaria;http://www.bultreebank.org/dpbtb/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0f26b9c3-1534-59ee-8180-090dc2c454b5",
+    "notes": [
+        "HPSG-based annotation including: constituent structure, dependency relations, named entities (classified as person, organisation, location or other names), coreferential relations. Annotation in XML"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-193"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "BulTreeBank"
+    ],
+    "url": ""
+}

@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>7c508aa8bea911e1a404080027e73ea2abb5e2fadb4143b2ae4c15c250af7c78</identifier>
+    <datestamp>2018-11-15T16:39:23Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UIMA/U-Compare Apertium POS Tagger </dc:title>
+      <dc:description>This tool assigns a part-of-speech tag and base form to each token in a text. It operates on text that has previously been tokenised and morphologically analysed. The POS tagger is a module of Apertium machine translation system. The provided tool can currently operate on a subset of the languages that are supported by the Apertium system, namely:  English, Spanish, Calatan, Galician, Portuguese, Romanian and Basque. 
+NOTE: The morphological analysis required prior to running the POS tagger MUST be carried out by running the Apertium morphological analyser (which also performs tokeniaation). 
+
+The tool is provided as a UIMA component, specifically as Java archive (jar) file, which can be incorporated within any UIMA workflow. However, it is particularly designed use in the U-Compare text mining plaform (Kano et al., 2009; Kano et al., 2011; see separate META-SHARE record), since the types of annotations it produces are compliant with the U-Compare. 
+</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

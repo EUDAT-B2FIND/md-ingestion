@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=dcb9fd566c9211e2a2aa782bcb07413586a54ee5131340e9af937b576f71c5b0",
+    "MetadataAccess": [
+        "dcb9fd566c9211e2a2aa782bcb07413586a54ee5131340e9af937b576f71c5b0"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "dcb9fd566c9211e2a2aa782bcb07413586a54ee5131340e9af937b576f71c5b0;2018-11-15T16:40:11Z;toolService;toolService:service;U-Compare Species Disambiguation Service ;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies biological named entities and disambiguates them according to\nspecies, by assigning a species ID from the NCBI taxonomy. Also identifies sentences and tokens.\nTools in workflow: GENIA Sentence Splitter, GENIA Tagger (with tokenisation), Species Word Detector, ExtractAbbrev, Species Disambiguator (all from the University of Manchester) \nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "10eb3ac4-dbd0-5d3f-828c-e9f6f96110d2",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies biological named entities and disambiguates them according to\nspecies, by assigning a species ID from the NCBI taxonomy. Also identifies sentences and tokens.\nTools in workflow: GENIA Sentence Splitter, GENIA Tagger (with tokenisation), Species Word Detector, ExtractAbbrev, Species Disambiguator (all from the University of Manchester) \nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences"
+    ],
+    "oai_identifier": [
+        "dcb9fd566c9211e2a2aa782bcb07413586a54ee5131340e9af937b576f71c5b0"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Species Disambiguation Service "
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "Contact": [
+        "Uppsala University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "application/zip",
+        "application/x-gzip",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English",
+        "French",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2394",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2394"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2394",
+    "PublicationTimestamp": "2017-09-20T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Uppsala University"
+    ],
+    "RelatedIdentifier": [
+        "http://aclweb.org/anthology/W/W16/W16-2345.pdf"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Hardmeier, Christian",
+        "Cettolo, Mauro",
+        "Stymne, Sara",
+        "Nakov, Preslav",
+        "Tiedemann, J\u00f6rg",
+        "Webber, Bonnie",
+        "Guillou, Liane",
+        "Versley, Yannick",
+        "Popescu-Belis, Andrei"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2394;2017-09-22T09:21:10Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;DiscoMT 2016 Shared Task on Cross-lingual Pronoun Prediction;Guillou, Liane;Hardmeier, Christian;Nakov, Preslav;Stymne, Sara;Tiedemann, J\u00f6rg;Versley, Yannick;Cettolo, Mauro;Webber, Bonnie;Popescu-Belis, Andrei;machine translation;coreference;discourse;pronouns;Files for the DiscoMT 2016 shared task on cross-lingual pronoun prediction;2017-09-20;corpus;http://hdl.handle.net/11372/LRT-2394;eng;fra;deu;http://aclweb.org/anthology/W/W16/W16-2345.pdf;Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0);http://creativecommons.org/licenses/by-nc-nd/4.0/;PUB;application/octet-stream;application/x-gzip;application/x-gzip;application/zip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 5;Uppsala University;http://www.statmt.org/wmt16/pronoun-task.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3ca411ec-e97f-5c15-a81c-6e8ad80f169e",
+    "notes": [
+        "Files for the DiscoMT 2016 shared task on cross-lingual pronoun prediction"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2394"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "coreference"
+        },
+        {
+            "name": "discourse"
+        },
+        {
+            "name": "pronouns"
+        }
+    ],
+    "title": [
+        "DiscoMT 2016 Shared Task on Cross-lingual Pronoun Prediction"
+    ],
+    "url": ""
+}

@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/10765385.v1",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/10765385",
+    "MetadataAccess": [
+        "oai:figshare.com:article/10765385"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-11-27T12:54:15Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Ab_initio_calculations_and_high_P-T_experiments_on_iron_iron_alloys_and_other_materials_hcp-Fe-Si-S-C_elasticity_4000_K/10765385"
+    ],
+    "ResourceType": [
+        "Dataset",
+        "Dataset"
+    ],
+    "Rights": [
+        "CC0"
+    ],
+    "author": [
+        "Yunguo Li (6781688)",
+        "John Brodholt (6770627)",
+        "Lidunka Vocadlo (6781634)"
+    ],
+    "fulltext": "oai:figshare.com:article/10765385;2019-11-27T12:54:15Z;category_79;portal_549;item_type_3;month_year_11_2019;Ab initio calculations and high P-T experiments on iron, iron alloys and other materials: hcp-Fe-Si-S-C elasticity 4000 K;Yunguo Li (6781688);Lidunka Vocadlo (6781634);John Brodholt (6770627);Geophysics;hcp-Fe;elasticity;The folder includes the relaxation calculations for the hcp-Fe-Si-C alloy under NPT ensemble at 360 GPa and 4000 K. Ab initio molecular dynamics were performed by using the Vienna Ab initio Simulation Package. <br>;2019-11-27T12:54:15Z;Dataset;Dataset;10.5522/04/10765385.v1;https://figshare.com/articles/Ab_initio_calculations_and_high_P-T_experiments_on_iron_iron_alloys_and_other_materials_hcp-Fe-Si-S-C_elasticity_4000_K/10765385;CC0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "4e7a8736-b71b-58c6-b962-7a9d6744b739",
+    "notes": [
+        "The folder includes the relaxation calculations for the hcp-Fe-Si-C alloy under NPT ensemble at 360 GPa and 4000 K. Ab initio molecular dynamics were performed by using the Vienna Ab initio Simulation Package. <br>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/10765385"
+    ],
+    "oai_set": [
+        "category_79",
+        "portal_549",
+        "item_type_3",
+        "month_year_11_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Geophysics"
+        },
+        {
+            "name": "hcp-Fe"
+        },
+        {
+            "name": "elasticity"
+        }
+    ],
+    "title": [
+        "Ab initio calculations and high P-T experiments on iron, iron alloys and other materials: hcp-Fe-Si-S-C elasticity 4000 K"
+    ],
+    "url": ""
+}

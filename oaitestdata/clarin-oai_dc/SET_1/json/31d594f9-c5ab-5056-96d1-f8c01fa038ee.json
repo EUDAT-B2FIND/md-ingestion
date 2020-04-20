@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Masaryk University, NLP Centre"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1932",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1932"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1932",
+    "PublicationTimestamp": "2016-12-02T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Masaryk University, NLP Centre"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Blahu\u0161, Marek",
+        "Baisa, V\u00edt",
+        "\u0160tromajerov\u00e1, Ad\u00e9la"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1932;2018-10-29T14:08:59Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;English-Czech Corpus from Wikipedia;\u0160tromajerov\u00e1, Ad\u00e9la;Baisa, V\u00edt;Blahu\u0161, Marek;Wikipedia;Sentence-parallel corpus made from English and Czech Wikipedias based on translated articles from English into Czech.\r\n\r\nThe work done is described in the paper: \u0160TROMAJEROV\u00c1, Ad\u00e9la, V\u00edt BAISA a Marek BLAHU\u0160. Between Comparable and Parallel: English-Czech Corpus from Wikipedia. In RASLAN 2016 Recent Advances in Slavonic Natural Language Processing. Brno: Tribun EU, 2016. s. 3-8, 6 s. ISBN 978-80-263-1095-2.;2016-12-02;corpus;http://hdl.handle.net/11234/1-1932;eng;ces;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;text/plain;text/plain; charset=utf-8;downloadable_files_count: 1;Masaryk University, NLP Centre;https://www.muni.cz/vyzkum/publikace/1362553",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "31d594f9-c5ab-5056-96d1-f8c01fa038ee",
+    "notes": [
+        "Sentence-parallel corpus made from English and Czech Wikipedias based on translated articles from English into Czech.\r\n\r\nThe work done is described in the paper: \u0160TROMAJEROV\u00c1, Ad\u00e9la, V\u00edt BAISA a Marek BLAHU\u0160. Between Comparable and Parallel: English-Czech Corpus from Wikipedia. In RASLAN 2016 Recent Advances in Slavonic Natural Language Processing. Brno: Tribun EU, 2016. s. 3-8, 6 s. ISBN 978-80-263-1095-2."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1932"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Wikipedia"
+        }
+    ],
+    "title": [
+        "English-Czech Corpus from Wikipedia"
+    ],
+    "url": ""
+}

@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "atm-data@helsinki.fi"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a135963-f673-505a-bdce-12d6001245ca",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "atm-data@helsinki.fi"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;",
+        "2002-01-01T00:00:00Z/2002-12-31T23:59:59Z"
+    ],
+    "TempCoverageBegin": 192513067199,
+    "TempCoverageEnd": 63145440000,
+    "TemporalCoverage": " period : ( 6101-07-01T11:59:59Z - 2002-01-01T00:00:00Z ) ",
+    "TemporalCoverage:BeginDate": "6101-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2002-01-01T00:00:00Z",
+    "author": [
+        "Pasi Aalto"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata20160308092807560912;2016-03-08T07:28:07Z;university-of-helsinki-department-of-physics-division-of-atmospheric-sciences;V\u00e4rri\u00f6 SMEAR I meteorology, gases and soil - Wind speed 4.4 m - 2002;Pasi Aalto;http://www.yso.fi/onto/yso/p5394;Title: Wind speed 4.4 m \n\nDescription: Wind speed 4.4 m \n\nVariable: WS3 \n\nUnit: m s\u207b\u00b9 \n\nSource: Vector A100R anemometer \n\nCategory: Meteorology \n\n;atm-data@helsinki.fi;2016-03-08;dataset;urn:nbn:fi:csc-ida2014011535518s;urn:nbn:fi:csc-ida2014011535518v;urn:nbn:fi:csc-ida-10x201703282015017315667v;urn:nbn:fi:csc-kata20160308092807560912;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308092807560912;DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;;2002-01-01T00:00:00Z/2002-12-31T23:59:59Z;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0a135963-f673-505a-bdce-12d6001245ca",
+    "notes": [
+        "Title: Wind speed 4.4 m \n\nDescription: Wind speed 4.4 m \n\nVariable: WS3 \n\nUnit: m s\u207b\u00b9 \n\nSource: Vector A100R anemometer \n\nCategory: Meteorology \n\n"
+    ],
+    "oai_identifier": [
+        "0a135963-f673-505a-bdce-12d6001245ca"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "http www.yso.fi onto yso p"
+        }
+    ],
+    "title": [
+        "V\u00e4rri\u00f6 SMEAR I meteorology, gases and soil - Wind speed 4.4 m - 2002"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308092807560912"
+}

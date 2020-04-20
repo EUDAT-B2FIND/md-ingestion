@@ -1,0 +1,20 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.fz-juelich.de:b2rec/ccf40b110df74aa88ffc3c4d600bc98a</identifier>
+    <datestamp>2018-04-10T16:39:48Z</datestamp>
+    <setSpec>d952913c-451e-4b5c-817e-d578dc8a4469</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Diaz-Delgado, Ricardo</dc:creator>
+      <dc:creator>Rodriguez, Carlos</dc:creator>
+      <dc:date>2018-04-10T16:39:48.229827+00:00</dc:date>
+      <dc:description>Basic climate at Do&#241;ana LTSER platform: annual mean temperature, annual precipitation, monthly average temperature, monthly minimum and maximum temperature and precipitation from permanent meteorological station sited at Palacio de Do&#241;ana.</dc:description>
+      <dc:identifier>http://hdl.handle.net/11097/64269d4d-463d-4369-be0d-84e30d0ad02b</dc:identifier>
+      <dc:identifier>https://b2share.fz-juelich.de/api/records/ccf40b110df74aa88ffc3c4d600bc98a</dc:identifier>
+      <dc:identifier>oai:b2share.fz-juelich.de:b2rec/ccf40b110df74aa88ffc3c4d600bc98a</dc:identifier>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:title>Basic climate at Do&#241;ana LTSER Platform (2014-2016)</dc:title>
+    </oai_dc:dc>
+  </metadata>
+</record>

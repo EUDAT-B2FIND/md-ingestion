@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Masaryk University, NLP Centre"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1933",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1933"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1933",
+    "PublicationTimestamp": "2016-12-02T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Masaryk University, NLP Centre"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Baisa, V\u00edt"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1933;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Grammar Agreement Dataset for Evaluation of Language Models;Baisa, V\u00edt;agreement;past tense verb suffix;language model;training data;AGREE is a dataset and task for evaluation of language models based on grammar agreement in Czech. The dataset consists of sentences with marked suffixes of past tense verbs. The task is to choose the right verb suffix which depends on gender, number and animacy of subject. It is challenging for language models because 1) Czech is morphologically rich, 2) it has relatively free word order, 3) high out-of-vocabulary (OOV) ratio, 4) predicate and subject can be far from each other, 5) subjects can be unexpressed and 6) various semantic rules may apply. The task provides a straightforward and easily reproducible way of evaluating language models on a morphologically rich language.;2016-12-02;corpus;http://hdl.handle.net/11234/1-1933;ces;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Masaryk University, NLP Centre;https://www.muni.cz/vyzkum/publikace/1362555",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b71e4cb9-55a6-58c3-86a9-aa4e079d0be6",
+    "notes": [
+        "AGREE is a dataset and task for evaluation of language models based on grammar agreement in Czech. The dataset consists of sentences with marked suffixes of past tense verbs. The task is to choose the right verb suffix which depends on gender, number and animacy of subject. It is challenging for language models because 1) Czech is morphologically rich, 2) it has relatively free word order, 3) high out-of-vocabulary (OOV) ratio, 4) predicate and subject can be far from each other, 5) subjects can be unexpressed and 6) various semantic rules may apply. The task provides a straightforward and easily reproducible way of evaluating language models on a morphologically rich language."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1933"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "agreement"
+        },
+        {
+            "name": "past tense verb suffix"
+        },
+        {
+            "name": "language model"
+        },
+        {
+            "name": "training data"
+        }
+    ],
+    "title": [
+        "Czech Grammar Agreement Dataset for Evaluation of Language Models"
+    ],
+    "url": ""
+}

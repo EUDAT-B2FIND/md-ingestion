@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "video/mp4",
+        "downloadable_files_count: 17",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2545",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2545"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2545",
+    "PublicationTimestamp": "2017-12-14T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Hr\u00faz, Marek"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2545;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czech Television News Broadcasting Faces;Hr\u00faz, Marek;video;czech news broadcasting;faces;face tracking;The corpus contains video files of Czech Television News Broadcasts and JSON files with annotations of faces that appear in the broadcasts. The annotations are composed of frames in which a face is seen, name of the person whose face is seen, gender of the person (male/female), and the image region containing the face. The intended use of the corpus is to train models of faces for face detection, face identification, face verification, and face tracking. For convinience two different JSON files are provided. They contain the same data, but in different arrangements. One file has the identity of the person on the top, the other has the object ID on the top, where the object is a facetrack. A demo python skript is available for showing how to access the data.;2017-12-14;corpus;http://hdl.handle.net/11234/1-2545;ces;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/zip;application/octet-stream;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;video/mp4;text/plain; charset=utf-8;downloadable_files_count: 17;University of West Bohemia, Department of Cybernetics",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bdda72cb-d506-5bb9-96ec-941c81ba2945",
+    "notes": [
+        "The corpus contains video files of Czech Television News Broadcasts and JSON files with annotations of faces that appear in the broadcasts. The annotations are composed of frames in which a face is seen, name of the person whose face is seen, gender of the person (male/female), and the image region containing the face. The intended use of the corpus is to train models of faces for face detection, face identification, face verification, and face tracking. For convinience two different JSON files are provided. They contain the same data, but in different arrangements. One file has the identity of the person on the top, the other has the object ID on the top, where the object is a facetrack. A demo python skript is available for showing how to access the data."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2545"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "video"
+        },
+        {
+            "name": "czech news broadcasting"
+        },
+        {
+            "name": "faces"
+        },
+        {
+            "name": "face tracking"
+        }
+    ],
+    "title": [
+        "Czech Television News Broadcasting Faces"
+    ],
+    "url": ""
+}

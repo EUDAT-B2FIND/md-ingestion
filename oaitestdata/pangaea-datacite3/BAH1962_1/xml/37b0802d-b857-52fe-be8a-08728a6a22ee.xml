@@ -1,0 +1,106 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.56380</identifier>
+    <datestamp>2018-04-03T09:02:53Z</datestamp>
+    <setSpec>BAH1962</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.56380</identifier>
+      <creators>
+        <creator>
+          <creatorName>Wiltshire, Karen Helen</creatorName>
+          <nameIdentifier schemeURI="http://orcid.org" nameIdentifierScheme="ORCID">0000-0002-7148-0529</nameIdentifier>
+        </creator>
+      </creators>
+      <titles>
+        <title>Abundance of dinoflagellates, dictyochophyceae, and prymnesiophyceae at time series station Helgoland Roads, North Sea, in 1962</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2000</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">DATE/TIME</subject>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Amphidinium sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Amphidinium sp.</subject>
+        <subject subjectScheme="Parameter">Ceratium furca, fractionated</subject>
+        <subject subjectScheme="Parameter">Ceratium fusus, fractionated</subject>
+        <subject subjectScheme="Parameter">Ceratium horridum, fractionated</subject>
+        <subject subjectScheme="Parameter">Ceratium lineatum, fractionated</subject>
+        <subject subjectScheme="Parameter">Ceratium longipes, fractionated</subject>
+        <subject subjectScheme="Parameter">Ceratium macroceros, fractionated</subject>
+        <subject subjectScheme="Parameter">Ceratium tripos, fractionated</subject>
+        <subject subjectScheme="Parameter">Dinophysis acuminata, fractionated</subject>
+        <subject subjectScheme="Parameter">Dinophysis acuta, fractionated</subject>
+        <subject subjectScheme="Parameter">Dinophysis norvegica, fractionated</subject>
+        <subject subjectScheme="Parameter">Dinophysis sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Gonyaulax sp.</subject>
+        <subject subjectScheme="Parameter">Gymnodinium mikimotoi</subject>
+        <subject subjectScheme="Parameter">Gymnodinium sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Gymnodinium sp.</subject>
+        <subject subjectScheme="Parameter">Gyrodinium sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Gyrodinium sp.</subject>
+        <subject subjectScheme="Parameter">Noctiluca scintillans, fractionated</subject>
+        <subject subjectScheme="Parameter">Phalacroma rotundatum, fractionated</subject>
+        <subject subjectScheme="Parameter">Polykrikos sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Prorocentrum balticum, fractionated</subject>
+        <subject subjectScheme="Parameter">Prorocentrum micans, fractionated</subject>
+        <subject subjectScheme="Parameter">Prorocentrum micans</subject>
+        <subject subjectScheme="Parameter">Protoperidinium brevipes</subject>
+        <subject subjectScheme="Parameter">Protoperidinium claudicans</subject>
+        <subject subjectScheme="Parameter">Protoperidinium conicum</subject>
+        <subject subjectScheme="Parameter">Protoperidinium depressum, fractionated</subject>
+        <subject subjectScheme="Parameter">Protoperidinium divergens, fractionated</subject>
+        <subject subjectScheme="Parameter">Protoperidinium ovatum, fractionated</subject>
+        <subject subjectScheme="Parameter">Protoperidinium pellucidum, fractionated</subject>
+        <subject subjectScheme="Parameter">Protoperidinium punctulatum</subject>
+        <subject subjectScheme="Parameter">Protoperidinium sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Protoperidinium sp.</subject>
+        <subject subjectScheme="Parameter">Pyrocystis noctiluca, fractionated</subject>
+        <subject subjectScheme="Parameter">Pyrophacus sp.</subject>
+        <subject subjectScheme="Parameter">Scrippsiella trochoidea</subject>
+        <subject subjectScheme="Parameter">Torodinium robustum, fractionated</subject>
+        <subject subjectScheme="Parameter">Dinophyceae indeterminata round, fractionated</subject>
+        <subject subjectScheme="Parameter">Dinophyceae indeterminata round</subject>
+        <subject subjectScheme="Parameter">Dinophyceae indeterminata flat, fractionated</subject>
+        <subject subjectScheme="Parameter">Dinophyceae indeterminata flat</subject>
+        <subject subjectScheme="Parameter">Dinophyceae indeterminata</subject>
+        <subject subjectScheme="Parameter">Dictyocha speculum, fractionated</subject>
+        <subject subjectScheme="Parameter">Coccolithophoridae indeterminata, fractionated</subject>
+        <subject subjectScheme="Parameter">Coccolithophoridae indeterminata</subject>
+        <subject subjectScheme="Parameter">Phaeocystis sp., fractionated</subject>
+        <subject subjectScheme="Parameter">Flagellates indeterminata, fractionated</subject>
+        <subject subjectScheme="Parameter">Flagellates indeterminata</subject>
+        <subject subjectScheme="Method">Quantitative phytoplankton method (Uterm&#246;hl, 1958)</subject>
+        <subject subjectScheme="Campaign">HelgolandRoadsTimeseries</subject>
+        <subject subjectScheme="Basis">Meeresstation Helgoland</subject>
+        <subject subjectScheme="Project">Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland) (BAH)</subject>
+        <subject subjectScheme="Project">Long-term Ecological Research at AWI (LTER)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Collected">1962-01-15T10:30:00/1962-12-28T09:40:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="Handle" relationType="IsDocumentedBy">10013/epic.28563.d001</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>10416 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPoint>54.18833 7.9</geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3760",
+    "MetadataAccess": [
+        "oai:ota:oucs:3760"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Kelly, Hugh, 1739-1777."
+    ],
+    "fulltext": "oai:ota:oucs:3760;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3760.xml;False delicacy: a comedy; as it is performed at the Theatre-Royal in Drury-Lane. By His Majesty's servants. By Hugh Kelly.;Kelly, Hugh, 1739-1777.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3059209c-f682-50d5-9219-06abc28b5186",
+    "oai_identifier": [
+        "oai:ota:oucs:3760"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "False delicacy: a comedy; as it is performed at the Theatre-Royal in Drury-Lane. By His Majesty's servants. By Hugh Kelly."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3760.xml"
+}

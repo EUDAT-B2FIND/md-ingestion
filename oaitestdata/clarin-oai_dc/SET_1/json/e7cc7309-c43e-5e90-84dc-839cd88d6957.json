@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1029",
+    "MetadataAccess": [
+        "oai:ota:oucs:1029"
+    ],
+    "PublicationTimestamp": "1611-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1611"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Donne, John,  1572-1631"
+    ],
+    "fulltext": "oai:ota:oucs:1029;2018-08-01T15:50:45Z;http://ota.ox.ac.uk/headers/1029.xml;The anatomie of the world  : the first anniversary / compiled by Ian Lancashire;Donne, John,  1572-1631;1611;text_and_corpus_linguistics;Poems -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e7cc7309-c43e-5e90-84dc-839cd88d6957",
+    "oai_identifier": [
+        "oai:ota:oucs:1029"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- England -- th century"
+        }
+    ],
+    "title": [
+        "The anatomie of the world  : the first anniversary / compiled by Ian Lancashire"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1029.xml"
+}

@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "wever@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/17",
+    "PublicationTimestamp": "2017-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "SLF"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Nander Wever"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/17;2017-09-18T10:49:01Z;doi:10.16904/17;Eng;MD_CharacterSetCode_utf8;Nander Wever;SLF;wever@slf.ch;2017-03-23T14:25:26;ISO 19115:2003/19139;1.0;EPSG:4326;IRKIS Soil moisture measurements Davos;2017-12-31;Meteorological and soil moisture measurements from soil moisture stations installed from October 2010 - October 2013 in the area surrounding Davos, in particular in the Dischma catchment.    There are in total 7 stations: 1202, 1203, 1204, 1205, 222, 333 and SLF2. For each of the stations, there is a:    * vwc_[stn].smet: containing the soil moisture measurements    * station_[stn].smet: in-situ measured meteorlogical parameters. Note, the quality of these measurements for stations 1202, 1203, 1204 and 1205 is very low, with data gaps. Use this data with care. For stations 222, 333 and SLF2, data quality is high and only the default cautiousness should be applied.    * interpolatedmeteo_[stn].smet contains per stations a dataset derived by interpolating from several stations in the Davos area to the stations location. This dataset was generated from the output of the Alpine3D model, of which simulations are presented in the Wever et al. (2017) manuscript.    At the soil moisture measurement sites, Decagon 10HS sensors were installed, at 10, 30, 50, 80 and 120 cm depth. Per depth 2 sensors were installed, labelled A and B in the datafiles. Note that at stations 1203, 1204 and 1205, sensors were only installed at 10, 30 and 50 cm depth.    The files follow the SMET format: https://models.slf.ch/docserver/meteoio/SMET_specifications.pdf and metadata for the stations can be found in the header of the smet files.    Please cite the Wever et al. (2017) reference when using this data in publications.    For a more detailed description, please refer to: Wever, N., Comola, F., Bavay, M., and Lehning, M.: Simulating the influence of snow surface processes on soil moisture dynamics and streamflow generation in an alpine catchment, Hydrol. Earth Syst. Sci., 21, 4053-4071, https://doi.org/10.5194/hess-21-4053-2017, 2017.;Nander Wever;SLF;wever@slf.ch;METEO STATION;SOIL MOISTURE;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;9.8297824141 46.7968286797;9.8940537806 46.8038436988;9.8666676384 46.7717421009;9.9034282695 46.8084926987;9.914150411 46.7315544045;9.8645693083 46.7897142035;9.847212 46.812365;https://www.envidat.ch/dataset/soil-moisture-measurements-davos;HTTPS;DATASET METADATA;information;http://montblanc.slf.ch/owncloud/index.php/s/THiY4GlFBL3o4rC;HTTP;IRKIS SOIL MOISTURE DATA (ZIP FILE);download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "fa19fb75-c103-5ff4-b67b-0ee58eda23ce",
+    "notes": [
+        "Meteorological and soil moisture measurements from soil moisture stations installed from October 2010 - October 2013 in the area surrounding Davos, in particular in the Dischma catchment.    There are in total 7 stations: 1202, 1203, 1204, 1205, 222, 333 and SLF2. For each of the stations, there is a:    * vwc_[stn].smet: containing the soil moisture measurements    * station_[stn].smet: in-situ measured meteorlogical parameters. Note, the quality of these measurements for stations 1202, 1203, 1204 and 1205 is very low, with data gaps. Use this data with care. For stations 222, 333 and SLF2, data quality is high and only the default cautiousness should be applied.    * interpolatedmeteo_[stn].smet contains per stations a dataset derived by interpolating from several stations in the Davos area to the stations location. This dataset was generated from the output of the Alpine3D model, of which simulations are presented in the Wever et al. (2017) manuscript.    At the soil moisture measurement sites, Decagon 10HS sensors were installed, at 10, 30, 50, 80 and 120 cm depth. Per depth 2 sensors were installed, labelled A and B in the datafiles. Note that at stations 1203, 1204 and 1205, sensors were only installed at 10, 30 and 50 cm depth.    The files follow the SMET format: https://models.slf.ch/docserver/meteoio/SMET_specifications.pdf and metadata for the stations can be found in the header of the smet files.    Please cite the Wever et al. (2017) reference when using this data in publications.    For a more detailed description, please refer to: Wever, N., Comola, F., Bavay, M., and Lehning, M.: Simulating the influence of snow surface processes on soil moisture dynamics and streamflow generation in an alpine catchment, Hydrol. Earth Syst. Sci., 21, 4053-4071, https://doi.org/10.5194/hess-21-4053-2017, 2017."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/17",
+        "oai:envidat.ch:10.16904/17"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "METEO STATION"
+        },
+        {
+            "name": "SOIL MOISTURE"
+        }
+    ],
+    "title": [
+        "IRKIS Soil moisture measurements Davos"
+    ],
+    "url": "http://montblanc.slf.ch/owncloud/index.php/s/THiY4GlFBL3o4rC"
+}

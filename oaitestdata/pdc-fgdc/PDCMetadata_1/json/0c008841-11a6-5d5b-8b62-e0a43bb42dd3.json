@@ -1,0 +1,100 @@
+{
+    "Contact": [
+        "gs.arcticnet.md@hotmail.com"
+    ],
+    "Contributor": [
+        "University of Manitoba"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Samples collected to understand the impact of permafrost degradation and riverine export on the organic carbon cycle of the Hudson Bay using lignin biomarkers and 14C of carbon as source identifiers."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=11688_fgdc",
+    "PublicationTimestamp": "2015-01-23T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(55N-63N,95W-76W)",
+    "TempCoverageBegin": 63414356399,
+    "TempCoverageEnd": 63415911599,
+    "TemporalCoverage": " period : ( 2010-07-10T11:59:59Z - 2010-07-28T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2010-07-10T11:59:59Z",
+    "TemporalCoverage:EndDate": "2010-07-28T11:59:59Z",
+    "author": [
+        "Robie Macdonald",
+        "Zou Zou Kuzyk",
+        "Miguel Goni",
+        "Gary Stern",
+        "Joanne DeLaronde",
+        "Pamela Godin",
+        "Joscelyn Bailey",
+        "Peter Outridge",
+        "Allison MacHutchon"
+    ],
+    "fulltext": "11688_fgdc;2017-04-09T22:02:27Z;PDCMetadata;Gary Stern;Pamela Godin;Allison MacHutchon;Joanne DeLaronde;Joscelyn Bailey;Miguel Goni;Peter Outridge;Robie Macdonald;Zou Zou Kuzyk;20150123;Using lignin biomarkers and 14C, of both river DOC and POC, and permafrost soils, to characterize the impacts of climate warming and permafrost degradation on the organic carbon budget of the Hudson Bay, Canada;Computer file;unknown;Unpublished;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11688;This study looks at characterizing the terrigenous OC sources, like permafrost degradation, of POC and DOC through 17 rivers and six soils of the Hudson Bay (HB) using lignin biomarkers, and &amp;#916;14C. Our findings show the dominance of the OC flux (89%) from the southwest Hudson Bay Rivers, especially from DOC (93%), shedding light on the sources and fate of OC in HB sediments. With warming, organic cryosols, with high OC content in the Cz horizon, have the potential to release as much as 1.5 gOC/m2 for every cm increase in active layer depth. The [Ad/Al] ratios, when combined with 14C ages of DOM, show that older SOC is being released in some rivers and is fresher than expected due to its preservation within permafrost. S/V and C/V ratios, are well correlated to latitude in DOM, reflecting the vegetation in their drainage basins and can be used to indicate OC sources.;Samples collected to understand the impact of permafrost degradation and riverine export on the organic carbon cycle of the Hudson Bay using lignin biomarkers and 14C of carbon as source identifiers.;Summary: Not Applicable Research Program(s): ArcticNet. For further information: gary.stern@dfo-mpo.gc.ca;20100710;20100728;NULL;Complete;As needed;-95;-76;63;55;NULL;Biomarkers;Dissolved organic carbon (DOC);Hudson Bay;Lignin;Organic carbon;Particulate organic carbon;Permafrost;Rivers;Soils;Hudson Bay & Watershed, Canada;NULL;Public;NULL;University of Manitoba;Ashley Gaden;NULL;mailing;586 Wallace Building;Winnipeg;MB;R3T2N6;Canada;204.474.9084;gs.arcticnet.md@hotmail.com;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;11688;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20150123;20150123;Ashley Gaden;University of Manitoba;mailing;586 Wallace Building;Winnipeg;MB;R3T2N6;Canada;204.474.9084;gs.arcticnet.md@hotmail.com;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0c008841-11a6-5d5b-8b62-e0a43bb42dd3",
+    "notes": [
+        "This study looks at characterizing the terrigenous OC sources, like permafrost degradation, of POC and DOC through 17 rivers and six soils of the Hudson Bay (HB) using lignin biomarkers, and &amp;#916;14C. Our findings show the dominance of the OC flux (89%) from the southwest Hudson Bay Rivers, especially from DOC (93%), shedding light on the sources and fate of OC in HB sediments. With warming, organic cryosols, with high OC content in the Cz horizon, have the potential to release as much as 1.5 gOC/m2 for every cm increase in active layer depth. The [Ad/Al] ratios, when combined with 14C ages of DOM, show that older SOC is being released in some rivers and is fresher than expected due to its preservation within permafrost. S/V and C/V ratios, are well correlated to latitude in DOM, reflecting the vegetation in their drainage basins and can be used to indicate OC sources."
+    ],
+    "oai_identifier": [
+        "11688_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-95,55],[-95,63],[-76,63],[-76,55],[-95,55]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Biomarkers"
+        },
+        {
+            "name": "Dissolved organic carbon DOC"
+        },
+        {
+            "name": "Hudson Bay"
+        },
+        {
+            "name": "Lignin"
+        },
+        {
+            "name": "Organic carbon"
+        },
+        {
+            "name": "Particulate organic carbon"
+        },
+        {
+            "name": "Permafrost"
+        },
+        {
+            "name": "Rivers"
+        },
+        {
+            "name": "Soils"
+        }
+    ],
+    "title": [
+        "Using lignin biomarkers and 14C, of both river DOC and POC, and permafrost soils, to characterize the impacts of climate warming and permafrost degradation on the organic carbon budget of the Hudson Bay, Canada"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11688"
+}

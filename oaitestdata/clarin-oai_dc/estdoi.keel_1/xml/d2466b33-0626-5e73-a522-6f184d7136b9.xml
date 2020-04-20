@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5755419</identifier>
+    <datestamp>2019-06-07T11:02:40Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Raadiointervjuude korpus</dc:title>
+      <dc:title xml:lang="en">Corpus of Radio Interviews</dc:title>
+      <dc:creator>Meister, Einar</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2014</dc:date>
+      <dc:date>Issued: 2014-12-30</dc:date>
+      <dc:date>Updated: 2019-01-08</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-00022L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">This corpus includes telepone interviews from different radio programmes.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

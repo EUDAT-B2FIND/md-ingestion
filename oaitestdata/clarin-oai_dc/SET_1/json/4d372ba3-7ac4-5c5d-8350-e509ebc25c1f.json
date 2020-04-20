@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=fafce15ccf3011e1a404080027e73ea2bbc3f718cfbf452989472b8f2bd5f392",
+    "MetadataAccess": [
+        "fafce15ccf3011e1a404080027e73ea2bbc3f718cfbf452989472b8f2bd5f392"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "fafce15ccf3011e1a404080027e73ea2bbc3f718cfbf452989472b8f2bd5f392;2019-02-27T12:08:58Z;lexicalConceptualResource;lexicalConceptualResource:lexicon;Simple Portuguese Lexicon;The SIMPLE Portuguese Lexicon is constituted by 10.438 entries semantically encoded, accordingly to the parole common encoding standards. ;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4d372ba3-7ac4-5c5d-8350-e509ebc25c1f",
+    "notes": [
+        "The SIMPLE Portuguese Lexicon is constituted by 10.438 entries semantically encoded, accordingly to the parole common encoding standards. "
+    ],
+    "oai_identifier": [
+        "fafce15ccf3011e1a404080027e73ea2bbc3f718cfbf452989472b8f2bd5f392"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:lexicon"
+    ],
+    "state": "active",
+    "title": [
+        "Simple Portuguese Lexicon"
+    ]
+}

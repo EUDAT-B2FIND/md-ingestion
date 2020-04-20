@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189302",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189302"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CF5-E",
+    "PublicationTimestamp": "1756-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1756"
+    ],
+    "Publisher": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/189302",
+        "oai:jbc.bj.uj.edu.pl:publication:200426"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Urbanowski, Paulin ( -1770)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189302;2019-03-01T11:05:51Z;Apellacya Z Korony Polskiey Do W. X. L. Trybuna\u0142u G\u0142. Largicyi [...] Jerzego Detlofa [...] Fleminga Szerewskiego [...] Starosty, Genera\u0142a-Leutenanta Infanteryi, Podskarbiego Wielkiego [...] y Marsza\u0142ka Trybuna\u0142u W. X. L. Y Jego Godnych Kollegow [...] PP. Deputat\u00f3w Zaniesiona. : Na Expens Kanonizacyi B. Jana z Dukli Polaka Zakonu S. O. Franciszka [...] \u0141aski \u017cebrz\u0105ca. Kazaniem Koronacyi N. Panny Bole\u015bney Jaros\u0142awskiey zaszczycona, mianym przez X. P. Urbanowskiego Ruskiey Prowincyi Bernardy\u0144skiey Kanonizacyi B. Jana z Dukli Prokuratora;Urbanowski, Paulin ( -1770);starodruki 18\u00a0w.;Flemming, Jan Jerzy Detlov (1699-1771). Adr. ded.;Drukarnia Jezuit\u00f3w;1756;starodruk;application/xml;clarind-uds:poldilemma-189302;hdl:11858/00-246C-0000-0023-8CF5-E;Biblioteka Jagiello\u0144ska, BJ St. Dr. 22678 III;pol;lat;http://jbc.bj.uj.edu.pl/Content/189302;oai:jbc.bj.uj.edu.pl:publication:200426;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4573f5fb-883a-5140-8f5b-34b530a0db83",
+    "notes": [
+        "Flemming, Jan Jerzy Detlov (1699-1771). Adr. ded."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-189302"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Apellacya Z Korony Polskiey Do W. X. L. Trybuna\u0142u G\u0142. Largicyi [...] Jerzego Detlofa [...] Fleminga Szerewskiego [...] Starosty, Genera\u0142a-Leutenanta Infanteryi, Podskarbiego Wielkiego [...] y Marsza\u0142ka Trybuna\u0142u W. X. L. Y Jego Godnych Kollegow [...] PP. Deputat\u00f3w Zaniesiona. : Na Expens Kanonizacyi B. Jana z Dukli Polaka Zakonu S. O. Franciszka [...] \u0141aski \u017cebrz\u0105ca. Kazaniem Koronacyi N. Panny Bole\u015bney Jaros\u0142awskiey zaszczycona, mianym przez X. P. Urbanowskiego Ruskiey Prowincyi Bernardy\u0144skiey Kanonizacyi B. Jana z Dukli Prokuratora"
+    ],
+    "url": ""
+}

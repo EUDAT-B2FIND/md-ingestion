@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5641",
+    "MetadataAccess": [
+        "oai:ota:oucs:5641"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Musgrave, Samuel, 1732-1780."
+    ],
+    "fulltext": "oai:ota:oucs:5641;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5641.xml;Remarks on Dr. Boerhaave's Theory of the attrition of the blood in the lungs. By Samuel Musgrave,;Musgrave, Samuel, 1732-1780.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2fc4f2f3-6d78-5526-9b6e-fd97edbc292a",
+    "oai_identifier": [
+        "oai:ota:oucs:5641"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Remarks on Dr. Boerhaave's Theory of the attrition of the blood in the lungs. By Samuel Musgrave,"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5641.xml"
+}

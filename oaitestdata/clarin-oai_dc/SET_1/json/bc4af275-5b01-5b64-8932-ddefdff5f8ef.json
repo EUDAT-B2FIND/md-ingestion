@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Amebis, d. o. o., Kamnik"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1055",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1055"
+    ],
+    "PID": "http://hdl.handle.net/11356/1055",
+    "PublicationTimestamp": "2016-03-03T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Amebis, d. o. o., Kamnik"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11356/1185"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Holozan, Peter"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1055;2018-04-15T08:14:01Z;hdl_11356_1023;hdl_11356_1024;Corpus of comma placement Vejica 1.0;Holozan, Peter;comma placement;error annotation;manual annotation;A collection of sentences demonstrating and correcting comma usage.\r\nThe sentences come from four sources:\r\n- KUST: a Slovene learner corpus, http://nl.ijs.si/isjt06/proc/26_Stritar.pdf\r\n- \u0160olar: a corpus of student writing, http://www.slovenscina.eu/korpusi/solar\r\n- Lektor: a corpus of proof-reading corrections, http://www.slovenscina.eu/korpusi/lektor\r\n- Wikipedija: https://sl.wikipedia.org/wiki/Glavna_stran\r\nFor Lektor, the comma corrections of proof-readers were used. For other texts, the comma errors were manually marked by Peter Holozan.;2016-03-03;corpus;http://hdl.handle.net/11356/1055;slv;http://hdl.handle.net/11356/1185;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);https://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;text/plain;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Amebis, d. o. o., Kamnik;http://peter.amebis.si/vejica.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bc4af275-5b01-5b64-8932-ddefdff5f8ef",
+    "notes": [
+        "A collection of sentences demonstrating and correcting comma usage.\r\nThe sentences come from four sources:\r\n- KUST: a Slovene learner corpus, http://nl.ijs.si/isjt06/proc/26_Stritar.pdf\r\n- \u0160olar: a corpus of student writing, http://www.slovenscina.eu/korpusi/solar\r\n- Lektor: a corpus of proof-reading corrections, http://www.slovenscina.eu/korpusi/lektor\r\n- Wikipedija: https://sl.wikipedia.org/wiki/Glavna_stran\r\nFor Lektor, the comma corrections of proof-readers were used. For other texts, the comma errors were manually marked by Peter Holozan."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1055"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "comma placement"
+        },
+        {
+            "name": "error annotation"
+        },
+        {
+            "name": "manual annotation"
+        }
+    ],
+    "title": [
+        "Corpus of comma placement Vejica 1.0"
+    ],
+    "url": ""
+}

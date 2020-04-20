@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-229188</identifier>
+    <datestamp>2019-03-01T12:58:36Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Nauka Po&#322;o&#380;na Krotko Zebrana Cyrulikom po&#322;o&#380;nym, iako te&#380; i Babom, czyli Kobietom przy rozwi&#261;zaniu rodz&#261;cych Po&#322;o&#380;nic s&#322;u&#380;&#261;cym dla wiadomo&#347;ci bardzo potrzebna : Na pytania i odpowiedzi roz&#322;o&#380;ona [...]</dc:title>
+      <dc:creator xml:lang="pl">Perzyna, Ludwik (1742-1800)</dc:creator>
+      <dc:subject xml:lang="pl">starodruki 18&#160;w.</dc:subject>
+      <dc:publisher xml:lang="pl">Drukarnia Prymasowska</dc:publisher>
+      <dc:date>1790</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-229188</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8D07-D</dc:identifier>
+      <dc:source xml:lang="pl">Biblioteka Jagiello&#324;ska, BJ St. Dr. 375986 I</dc:source>
+      <dc:language>pol</dc:language>
+      <dc:relation>http://jbc.bj.uj.edu.pl/Content/229188</dc:relation>
+      <dc:relation>oai:jbc.bj.uj.edu.pl:publication:240828</dc:relation>
+      <dc:coverage>1701/1800</dc:coverage>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

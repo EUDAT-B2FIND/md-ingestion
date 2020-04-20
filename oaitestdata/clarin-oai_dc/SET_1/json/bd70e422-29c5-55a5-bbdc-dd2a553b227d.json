@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Freie Universit\u00e4t Berlin"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-627",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-627"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-627",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Freie Universit\u00e4t Berlin"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Code of conduct"
+    ],
+    "SpatialCoverage": [
+        "Brazil"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-627;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Awet\u00ed corpus;Documentation of the Awet\u00ed project (DoBeS project);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-627;Code of conduct;downloadable_files_count: 0;Brazil;Freie Universit\u00e4t Berlin;http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI77916%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bd70e422-29c5-55a5-bbdc-dd2a553b227d",
+    "notes": [
+        "Documentation of the Awet\u00ed project (DoBeS project)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-627"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Awet\u00ed corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/4</identifier>
+    <datestamp>2017-01-10T15:54:41Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UHR's Termbase for Norwegian higher education institutions</dc:title>
+      <dc:title>UHRs termbase for universitets- og h&#248;gskolesektoren</dc:title>
+      <dc:subject>Lexical Conceptual Resource</dc:subject>
+      <dc:subject>Text</dc:subject>
+      <dc:subject>Terminological Resource</dc:subject>
+      <dc:subject>English</dc:subject>
+      <dc:subject>Norwegian</dc:subject>
+      <dc:description>This is a collection of 2000 administrative terms with English - Norwegian bokm&#229;l/Norwegian bokm&#229;l - English and English - Norwegian nynorsk/Norwegian nynorsk - English translations, from the Norwegian Institutions of Higher Education (UHR).&#13;
+        The termbase translates from Norwegian bokm&#229;l/Norwegian nynorsk to British English and the other way around.&#13;
+        &#13;
+        The term base is owned by the Norwegian Association of Higher Education Institutions (UHR) in Oslo (cf. web page: http://www.uhr.no/ressurser/temasider/terminologi).&#13;
+        The term base has been made downloadable in TBX format by the META-NORD group at University of Bergen, with the kind permission of UHR.&#13;
+        META-NORD has also assisted UHR in providing a license for the downloadable version as well as for the online, browsable version.</dc:description>
+      <dc:date>2012-06-13</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/4</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>nor</dc:language>
+      <dc:relation>http://hdl.handle.net/11509/122</dc:relation>
+      <dc:rights>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>The Norwegian Association of Higher Education Institutions</dc:publisher>
+      <dc:publisher>Universitets- og h&#248;gskoler&#229;det</dc:publisher>
+      <dc:source>http://github.com/clarino/uhrtermlists/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

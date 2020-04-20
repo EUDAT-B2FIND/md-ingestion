@@ -1,0 +1,42 @@
+{
+    "Contact": [
+        "Cyfronet"
+    ],
+    "Contributor": [
+        "EGI-DataHub"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://datahub.egi.eu/oai_pmh?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datahub.egi.eu:943383795cfc46e420a0205018440be5",
+    "MetadataAccess": [
+        "oai:datahub.egi.eu:943383795cfc46e420a0205018440be5"
+    ],
+    "PID": "http://hdl.handle.net/21.T15999/QBFl7Pw",
+    "Publisher": [
+        "Cyfronet"
+    ],
+    "author": [
+        "Lukasz Dutka"
+    ],
+    "fulltext": "oai:datahub.egi.eu:943383795cfc46e420a0205018440be5;2019-04-11T21:03:29Z;Test dataset;Lukasz Dutka;Demonstration;This is to show publication of PIDs.;Cyfronet;http://hdl.handle.net/21.T15999/QBFl7Pw;https://datahub.egi.eu/share/dec6359cdf03b3a7405ac75b70a4cecb",
+    "group": "egidatahub",
+    "groups": [
+        {
+            "name": "egidatahub"
+        }
+    ],
+    "name": "74452e30-2038-52a6-a277-57d24e0722a3",
+    "notes": [
+        "This is to show publication of PIDs."
+    ],
+    "oai_identifier": [
+        "oai:datahub.egi.eu:943383795cfc46e420a0205018440be5"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "This is to show publication of PIDs."
+    ],
+    "url": "https://datahub.egi.eu/share/dec6359cdf03b3a7405ac75b70a4cecb"
+}

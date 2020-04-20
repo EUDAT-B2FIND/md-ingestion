@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=ca81fa08d36211e2a2aa782bcb074135b21158a773424785864b1242809f912b",
+    "MetadataAccess": [
+        "ca81fa08d36211e2a2aa782bcb074135b21158a773424785864b1242809f912b"
+    ],
+    "PublicationTimestamp": "2013-06-12T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "ca81fa08d36211e2a2aa782bcb074135b21158a773424785864b1242809f912b;2018-11-15T16:40:13Z;corpus;corpus:text;CW Corpus;The Complex Word (CW) Corpus contains 731 sentences each with one annotated CW.  These simplifications were mined from Simple Wikipedia edit histories.  Each entry gives an example of a sentence requiring simplification by means of a single lexical edit.  This resource is primarily designed for the evaluation of CW identification systems.;2013-06-12",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "99805ef1-bcc6-5be1-aa0b-44be5487d492",
+    "notes": [
+        "The Complex Word (CW) Corpus contains 731 sentences each with one annotated CW.  These simplifications were mined from Simple Wikipedia edit histories.  Each entry gives an example of a sentence requiring simplification by means of a single lexical edit.  This resource is primarily designed for the evaluation of CW identification systems."
+    ],
+    "oai_identifier": [
+        "ca81fa08d36211e2a2aa782bcb074135b21158a773424785864b1242809f912b"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "CW Corpus"
+    ]
+}

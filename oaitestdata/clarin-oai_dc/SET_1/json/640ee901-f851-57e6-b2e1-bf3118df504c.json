@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1040",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1040"
+    ],
+    "PID": "http://hdl.handle.net/11356/1040",
+    "PublicationTimestamp": "2013-09-30T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Krek, Simon",
+        "Zwitter Vitez, Ana",
+        "Erjavec, Toma\u017e",
+        "Stabej, Marko",
+        "Zemljari\u010d Miklav\u010di\u010d, Jana"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1040;2017-09-29T13:48:00Z;hdl_11356_1023;hdl_11356_1024;Spoken corpus Gos 1.0;Zwitter Vitez, Ana;Zemljari\u010d Miklav\u010di\u010d, Jana;Krek, Simon;Stabej, Marko;Erjavec, Toma\u017e;speech transcription;spoken corpus;TEI;GOS is a corpus of spoken Slovene that includes the transcripts of approximately 120 hours of speech recorded in various situations: radio and TV shows, school lessons and lectures, private conversations between friends or within the family, work meetings, consultations, conversations in buying and selling situations, etc. All speech is transcribed in two versions \u2013 with pronunciation-based spelling and with standardized spelling \u2013 and it comprises over one million words. The corpus can be searched by means of the web concordancer where it is also possible to listen to the corresponding recordings: http://www.korpus-gos.net.;2013-09-30;corpus;http://hdl.handle.net/11356/1040;slv;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);https://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Centre for Language Resources and Technologies, University of Ljubljana;http://eng.slovenscina.eu/korpusi/gos",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "640ee901-f851-57e6-b2e1-bf3118df504c",
+    "notes": [
+        "GOS is a corpus of spoken Slovene that includes the transcripts of approximately 120 hours of speech recorded in various situations: radio and TV shows, school lessons and lectures, private conversations between friends or within the family, work meetings, consultations, conversations in buying and selling situations, etc. All speech is transcribed in two versions \u2013 with pronunciation-based spelling and with standardized spelling \u2013 and it comprises over one million words. The corpus can be searched by means of the web concordancer where it is also possible to listen to the corresponding recordings: http://www.korpus-gos.net."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1040"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech transcription"
+        },
+        {
+            "name": "spoken corpus"
+        },
+        {
+            "name": "TEI"
+        }
+    ],
+    "title": [
+        "Spoken corpus Gos 1.0"
+    ],
+    "url": ""
+}

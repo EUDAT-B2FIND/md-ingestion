@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-894</identifier>
+    <datestamp>2016-04-06T16:39:55Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Newcastle electronic corpus of Tyneside English (NECTE)</dc:title>
+      <dc:contributor>Corrigan, Karen</dc:contributor>
+      <dc:description>A corpus of dialect speech from Tyneside in North-East England. digitized audio, standard orthographic transcription, phonetic transcription, and part-of-speech tagged</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-894</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:format>application/tei+xml</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>United Kingdom</dc:coverage>
+      <dc:publisher>Newcastle University</dc:publisher>
+      <dc:source>http://www.ncl.ac.uk/necte/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

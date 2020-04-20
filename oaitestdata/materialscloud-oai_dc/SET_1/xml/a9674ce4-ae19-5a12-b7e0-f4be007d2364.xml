@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2017.0004/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Liu, Yifei Michelle</dc:creator>
+      <dc:creator>Smit, Berend</dc:creator>
+      <dc:title>Predicting Product Distribution of Propene Dimerization in Nanoporous Materials (Data Download)</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2017-05-05</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>propene dimerization</dc:subject>
+      <dc:subject>metal&#8722;organic frameworks</dc:subject>
+      <dc:subject>zeolites</dc:subject>
+      <dc:subject>product distribution</dc:subject>
+      <dc:subject>Monte Carlo</dc:subject>
+      <dc:subject>molecular simulation</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2017.0004/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2017.0004/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Project abstract: In this work, a theoretical framework is developed to explain and predict changes in the product distribution of the propene dimerization reaction, which yields a mixture of C&lt;sub&gt;6&lt;/sub&gt; olefin isomers, resulting from the use of different porous materials as catalysts. The MOF-74 class of materials has shown promise in catalyzing the dimerization of propene with high selectivity for valuable linear olefin products. We show that experimentally observed changes in the product distribution can be explained in terms of the contribution of the pores to the free energy of formation, which are directly computed using molecular simulation. Our model is used to screen a library of 118 existing and hypothetical MOF and zeolite structures to study how product distribution can be tuned by changing pore size, shape, and composition of porous materials. Using these molecular descriptors, catalyst properties are identified that increase the selective reaction of linear olefin isomers, which are valued as industrial feedstocks. A pore size commensurate with the size of the desired linear products enhances linear conversion by sterically hindering the branched isomers. Another promising feature is the presence of open metal sites, which interact with the olefin &#960;-bond to provide favorable binding sites for the linear isomers.&lt;br/&gt;
+&lt;br/&gt;
+About this entry: We provide the geometrical framework descriptors, linear conversions, and thermodynamic data for the 118 frameworks screened in this study, as well as thermodynamics of adsorption properties computed for 12 C&lt;sub&gt;6&lt;/sub&gt; olefin isomers in each framework. For details about the methods used to obtain these data, please see the corresponding paper (DOI: 10.1021/acscatal.7b00712). The data provided here was used to create the scatter plots in the original paper and can be used to find the product distribution and adsorption properties for all of the materials considered in the study.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

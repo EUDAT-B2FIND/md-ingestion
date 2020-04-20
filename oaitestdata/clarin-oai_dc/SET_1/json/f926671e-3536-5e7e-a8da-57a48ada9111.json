@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/300",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/300"
+    ],
+    "PID": "http://hdl.handle.net/11321/300",
+    "PublicationTimestamp": "2016-02-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Science and Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Eder, Maciej",
+        "Piasecki, Maciej",
+        "Walkowiak, Tomasz"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/300;2016-06-06T15:17:09Z;hdl_11321_3;hdl_11321_4;WebStylo;Piasecki, Maciej;Eder, Maciej;Walkowiak, Tomasz;stylometry;text clustering;NLP;Web based, open stylometry system based on Multilevel Text Analysis. Runs cluto and stylo (R system) clusterisation  methods. Based on Natural Language Processing Workflow engine (included in the distribution).;2016-02-01;toolService;http://hdl.handle.net/11321/300;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Wroc\u0142aw University of Science and Technology;http://clarin-pl.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f926671e-3536-5e7e-a8da-57a48ada9111",
+    "notes": [
+        "Web based, open stylometry system based on Multilevel Text Analysis. Runs cluto and stylo (R system) clusterisation  methods. Based on Natural Language Processing Workflow engine (included in the distribution)."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/300"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "stylometry"
+        },
+        {
+            "name": "text clustering"
+        },
+        {
+            "name": "NLP"
+        }
+    ],
+    "title": [
+        "WebStylo"
+    ],
+    "url": ""
+}
