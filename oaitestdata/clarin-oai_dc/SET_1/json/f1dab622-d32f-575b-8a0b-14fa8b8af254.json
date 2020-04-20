@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Preston, M.J., (Michael James), 1943-"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(7 files : total of ca. 611 KB)"
+    ],
+    "Language": [
+        "Middle English (1100-1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1392",
+    "MetadataAccess": [
+        "oai:ota:oucs:1392"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Anthologies"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1392;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1392.xml;York miracle play cycle;text_and_corpus_linguistics;Mysteries and miracle-plays, English;English drama -- To 1500;Plays -- England -- 14th century;Plays -- England -- 15th century;Linguistic analysis (Linguistics);enm;Oxford Text Archive, University of Oxford;Preston, M.J., (Michael James), 1943-;(7 files : total of ca. 611 KB);Text;Anthologies;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f1dab622-d32f-575b-8a0b-14fa8b8af254",
+    "oai_identifier": [
+        "oai:ota:oucs:1392"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Mysteries miracle-plays"
+        },
+        {
+            "name": "English"
+        },
+        {
+            "name": "English drama --"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        }
+    ],
+    "title": [
+        "York miracle play cycle"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1392.xml"
+}

@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/10283540.v1",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/10283540",
+    "MetadataAccess": [
+        "oai:figshare.com:article/10283540"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2020-01-21T15:46:56Z",
+    "PublicationYear": [
+        "2020"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/RDARI_International_Survey_of_Institutional_Research_Data_Services_2019/10283540"
+    ],
+    "ResourceType": [
+        "Dataset",
+        "Dataset"
+    ],
+    "Rights": [
+        "CC0"
+    ],
+    "author": [
+        "Ville Tenhunen (8297033)",
+        "James A J Wilson (6498191)",
+        "Keith Russell (8297037)"
+    ],
+    "fulltext": "oai:figshare.com:article/10283540;2020-01-21T15:46:56Z;category_185;portal_549;item_type_3;month_year_01_2020;RDARI International Survey of Institutional Research Data Services 2019;James A J Wilson (6498191);Ville Tenhunen (8297033);Keith Russell (8297037);Library and Information Studies;research data management;survey data;Research Data Alliance (RDA);<div>This is the complete set of results from the survey of institutional research data management services conducted by the Research Data Architectures for Research Institutions (RDARI) Interest Group of the Research Data Alliance (RDA). The survey was conducted between July and November 2019. The dataset consists of 82 responses, deduplicated and with email addresses redacted where explicit consent to publish was not granted.</div><div><br></div><div>The survey results are provided in two formats: as an Excel file, and as comma-separated values. The survey questions and answer formats are provided both in the Excel file and the accompanying readme.txt file.<br></div><div><br></div><div>The RDARI International Survey of Institutional Research Data Services (2019) was intended to capture the contemporary state of research data management service provision in research institutions and in so doing establish grounds for benchmarking between institutions. In addition, it was intended to facilitate and encourage the exchange of useful information between institutions to help RDM service providers learn from each other's experiences. Besides questions relating to the scale and nature of each institution, the survey gathered data relating to technologies, governance, resourcing, costs models, uptake, and the perceived success (or otherwise) of a range of research data management services.</div>;2020-01-21T15:46:56Z;Dataset;Dataset;10.5522/04/10283540.v1;https://figshare.com/articles/RDARI_International_Survey_of_Institutional_Research_Data_Services_2019/10283540;CC0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "5ee26872-e442-5a11-919c-7335246d9275",
+    "notes": [
+        "<div>This is the complete set of results from the survey of institutional research data management services conducted by the Research Data Architectures for Research Institutions (RDARI) Interest Group of the Research Data Alliance (RDA). The survey was conducted between July and November 2019. The dataset consists of 82 responses, deduplicated and with email addresses redacted where explicit consent to publish was not granted.</div><div><br></div><div>The survey results are provided in two formats: as an Excel file, and as comma-separated values. The survey questions and answer formats are provided both in the Excel file and the accompanying readme.txt file.<br></div><div><br></div><div>The RDARI International Survey of Institutional Research Data Services (2019) was intended to capture the contemporary state of research data management service provision in research institutions and in so doing establish grounds for benchmarking between institutions. In addition, it was intended to facilitate and encourage the exchange of useful information between institutions to help RDM service providers learn from each other's experiences. Besides questions relating to the scale and nature of each institution, the survey gathered data relating to technologies, governance, resourcing, costs models, uptake, and the perceived success (or otherwise) of a range of research data management services.</div>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/10283540"
+    ],
+    "oai_set": [
+        "category_185",
+        "portal_549",
+        "item_type_3",
+        "month_year_01_2020"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Library Information Studies"
+        },
+        {
+            "name": "research data management"
+        },
+        {
+            "name": "survey data"
+        },
+        {
+            "name": "Research Data Alliance RDA"
+        }
+    ],
+    "title": [
+        "RDARI International Survey of Institutional Research Data Services 2019"
+    ],
+    "url": ""
+}

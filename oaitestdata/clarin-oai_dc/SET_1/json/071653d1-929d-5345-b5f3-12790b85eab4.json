@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/6",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/6"
+    ],
+    "PID": "http://hdl.handle.net/10794/6",
+    "PublicationTimestamp": "2015-04-28T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/6;2017-10-27T16:24:22Z;hdl_10794_1;hdl_10794_2;Laws of 1734 (2017-10-16);1734 \u00e5rs lag (2017-10-16);n/a, n/a;Swedish;Corpus;Laws;The Swedish Laws of 1734.;1734 \u00e5rs lag.;2015-04-28;corpus;http://hdl.handle.net/10794/6;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/lag1734",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "071653d1-929d-5345-b5f3-12790b85eab4",
+    "notes": [
+        "The Swedish Laws of 1734.",
+        "1734 \u00e5rs lag."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/6"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Corpus"
+        },
+        {
+            "name": "Laws"
+        }
+    ],
+    "title": [
+        "Laws of 1734 (2017-10-16)",
+        "1734 \u00e5rs lag (2017-10-16)"
+    ],
+    "url": ""
+}

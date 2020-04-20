@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6428",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6428"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6428;2018-09-05T10:15:34Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.005;Pijnenburg, Ronald;Ronald;Pijnenburg;0000-0003-0653-7565;Utrecht University, Utrecht, The Netherlands;Verberne, Berend;Berend;Verberne;0000-0002-1208-6193;Utrecht University, Utrecht, The Netherlands;Hangx, Suzanne;Suzanne;Hangx;0000-0003-2253-3273;Utrecht University, Utrecht, The Netherlands;Spiers, Christopher;Christopher;Spiers;0000-0002-3436-8941;Utrecht University, Utrecht, The Netherlands;Mechanical and microstructural data used in the article Pijnenburg et al., Deformation behaviour of sandstones from the seismogenic Groningen gas field: Role of inelastic versus elastic mechanisms;GFZ Data Services;2018;Groningen gas field;reservoir;sandstone;compressibility;microstructure;strength;crack;creep;EPOS;multi-scale laboratories;rock and melt physical properties;Pijnenburg, Ronald;Ronald;Pijnenburg;0000-0003-0653-7565;Utrecht University, Utrecht, The Netherlands;Pijnenburg, Ronald;Ronald;Pijnenburg;0000-0003-0653-7565;Utrecht University, Utrecht, The Netherlands;Experimental rock deformation/HPT-Lab (Utrecht University, The Netherlands);Utrecht University, The Netherlands;2015-05-01;eng;doi of paper when available;405651 Bytes;2 Files;application/octet-stream;application/pdf;CC BY 4.0;Hydrocarbon or groundwater production from sandstone reservoirs can result in surface subsidence and induced seismicity. Subsidence results from combined elastic and inelastic compaction of the reservoir due to a change in the effective stress state upon fluid extraction. The magnitude of elastic compaction can be accurately described using poroelasticity theory. However inelastic or time-dependent compaction is poorly constrained. We use sandstones recovered by the field operator (NAM) from the Slochteren gas reservoir (Groningen, NE Netherlands) to study the importance of elastic versus inelastic deformation processes upon simulated pore pressure depletion. We conducted conventional triaxial tests under true in-situ conditions of pressure and temperature. To investigate the effect of applied differential stress (\u03c31 \u2013 \u03c33 = 0 - 50 MPa) and initial sample porosity (\u03c6i = 12 \u2013 25%) on instantaneous and time-dependent inelastic deformation, we imposed multiple stages of axial loading and relaxation.;6.6913604736328125;53.32349126597425;Nederlandse Aardolie Maatschappij",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "691b68d1-e098-53b3-b1f3-0f77dd1d0c18",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6428"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5120",
+    "MetadataAccess": [
+        "oai:ota:oucs:5120"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lloyd, Robert, 1733-1764."
+    ],
+    "fulltext": "oai:ota:oucs:5120;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5120.xml;The tears and triump[hs] of Parnassus: an ode for musick, as it is perform'd at the Theatre-Royal in Drury-Lane.;Lloyd, Robert, 1733-1764.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "696f74d8-d935-50b2-89e7-a18ceba6e35e",
+    "oai_identifier": [
+        "oai:ota:oucs:5120"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The tears and triump[hs] of Parnassus: an ode for musick, as it is perform'd at the Theatre-Royal in Drury-Lane."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5120.xml"
+}

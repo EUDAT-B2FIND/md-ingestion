@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Instytut Neofilologii UP"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/zip",
+        "application/vnd.oasis.opendocument.text",
+        "downloadable_files_count: 13",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/407",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/407"
+    ],
+    "PID": "http://hdl.handle.net/11321/407",
+    "PublicationTimestamp": "2017-06-29T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Instytut Neofilologii UP"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Gajewska, Anna"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/407;2019-01-31T10:43:39Z;hdl_11321_3;hdl_11321_4;korpus testowy;Gajewska, Anna;korpus;Polish;novel;korpus testowy warsztat\u00f3w Dspace;2017-06-29;corpus;http://hdl.handle.net/11321/407;pol;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;CC;text/plain; charset=utf-8;text/plain;application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text;application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;text/plain;text/plain;application/zip;application/zip;application/zip;downloadable_files_count: 13;Instytut Neofilologii UP",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7f50b236-aaa9-5575-b8e9-3ed7f740d62b",
+    "notes": [
+        "korpus testowy warsztat\u00f3w Dspace"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/407"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "korpus"
+        },
+        {
+            "name": "Polish"
+        },
+        {
+            "name": "novel"
+        }
+    ],
+    "title": [
+        "korpus testowy"
+    ],
+    "url": ""
+}

@@ -1,0 +1,60 @@
+{
+    "Contributor": [
+        "Monachini, Monica"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Bulgarian",
+        "English",
+        "Modern Greek (1453-)",
+        "Serbian",
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-474",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-474"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-474",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Italy"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-474;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;INTERA Terminological Lexicon;Monachini, Monica;17357 terms, XML;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-474;bul;eng;ell;srp;slv;downloadable_files_count: 0;Italy;http://www.ilc.cnr.it/intera_prg/papers/INTERA_D5.1.zip",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "03b622e4-9dbb-5aa1-828f-45abd535acca",
+    "notes": [
+        "17357 terms, XML"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-474"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "INTERA Terminological Lexicon"
+    ],
+    "url": ""
+}

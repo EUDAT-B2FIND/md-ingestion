@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "nicht angegeben",
+        "b.w."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6073",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6073"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D2E-8",
+    "PublicationTimestamp": "1784-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1784"
+    ],
+    "Publisher": [
+        "nicht angegeben",
+        "b.w."
+    ],
+    "RelatedIdentifier": [
+        "http://dlibra.bibliotekaelblaska.pl/Content/6073",
+        "oai:dlibra.bibliotekaelblaska.pl:publication:6296"
+    ],
+    "ResourceType": [
+        "starodruk",
+        "alter Druck"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6073;2019-03-01T17:22:30Z;Publicandum : jakim sposobem karani bydz maj\u0105 pasterze, owczarze albo parobcy y pa\u0144stwo ich, kiedy si\u0119 odwa\u017c\u0105 pasa\u0107...;Publicandum : jakim sposobem karani bydz maj\u0105 pasterze, owczarze albo parobcy y pa\u0144stwo ich, kiedy si\u0119 odwa\u017c\u0105 pasa\u0107...;Prusy - administracja kr\u00f3lewska - 18 w.;rozporz\u0105dzenia - wypas byd\u0142a;Verordnungen - Tierweiden;Rozporz\u0105dzenie skierowane do pasterzy, owczarzy i parobk\u00f3w, m\u00f3wi\u0105ce o zakazie wypasu zwierz\u0105t w lasach kr\u00f3lewskich, pod gro\u017ab\u0105 wysokich grzywien i kar. Rozporz\u0105dzenie podpisane przez barona Schulenburga. Dwukartkowy, dwukolumnowy druk urz\u0119dowy w j\u0119zyku polskim i niemieckim wydany w formacie 2\u00b0. Pochodzi z kolekcji S. Gierszewskiego.;Die an die Hirten, Sch\u00e4fer und andere Dienstleute gerichtete Verordnung betreffend das Verbot des Tierweidens in den k\u00f6niglichen W\u00e4ldern. Die Verletzung des Verbots war mit hohen Strafen belegt. Die Verordnung wurde vom Freiherr von Schulenburg unterschrieben. Zweispaltige Amtsurkunde, in polnischer und deutscher Sprache. Format 2\u00b0. Stammt aus der Sammlung von S. Gierszewski.;b.w.;nicht angegeben;1784;1784;starodruk;alter Druck;application/xml;clarind-uds:poldilemma-6073;hdl:11858/00-246C-0000-0023-8D2E-8;XVIII. 266;XVIII. 266;pol;ger;http://dlibra.bibliotekaelblaska.pl/Content/6073;oai:dlibra.bibliotekaelblaska.pl:publication:6296;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4674b576-d3f3-5d2e-9df2-8165aa3ae548",
+    "notes": [
+        "Rozporz\u0105dzenie skierowane do pasterzy, owczarzy i parobk\u00f3w, m\u00f3wi\u0105ce o zakazie wypasu zwierz\u0105t w lasach kr\u00f3lewskich, pod gro\u017ab\u0105 wysokich grzywien i kar. Rozporz\u0105dzenie podpisane przez barona Schulenburga. Dwukartkowy, dwukolumnowy druk urz\u0119dowy w j\u0119zyku polskim i niemieckim wydany w formacie 2\u00b0. Pochodzi z kolekcji S. Gierszewskiego.",
+        "Die an die Hirten, Sch\u00e4fer und andere Dienstleute gerichtete Verordnung betreffend das Verbot des Tierweidens in den k\u00f6niglichen W\u00e4ldern. Die Verletzung des Verbots war mit hohen Strafen belegt. Die Verordnung wurde vom Freiherr von Schulenburg unterschrieben. Zweispaltige Amtsurkunde, in polnischer und deutscher Sprache. Format 2\u00b0. Stammt aus der Sammlung von S. Gierszewski."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-6073"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Verordnungen - Tierweiden"
+        }
+    ],
+    "title": [
+        "Publicandum : jakim sposobem karani bydz maj\u0105 pasterze, owczarze albo parobcy y pa\u0144stwo ich, kiedy si\u0119 odwa\u017c\u0105 pasa\u0107...",
+        "Publicandum : jakim sposobem karani bydz maj\u0105 pasterze, owczarze albo parobcy y pa\u0144stwo ich, kiedy si\u0119 odwa\u017c\u0105 pasa\u0107..."
+    ],
+    "url": ""
+}

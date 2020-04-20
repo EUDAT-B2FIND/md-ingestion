@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1025",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1025"
+    ],
+    "PID": "http://hdl.handle.net/11356/1025",
+    "PublicationTimestamp": "2015-05-05T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/215064",
+        "https://doi.org/10.1007/s10579-015-9294-7"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1025;2018-10-24T20:47:48Z;hdl_11356_1023;hdl_11356_1024;Reference corpus of historical Slovene goo300k 1.2;Erjavec, Toma\u017e;historical language;word modernisation;lemmatisation;tagging;manual annotation;TEI;goo300k is a manually annotated reference corpus of historical Slovene. It contains 1,100 pages (about 300,000 tokens) sampled from 89 texts from the period 1584-1899.\r\n\r\nEach text contains extensive meta-data and  per-page links to facsimiles, while the word tokens in the texts are annotated with their modernised word-form, lemma, part-of-speech, and, for archaic words, their nearest modern synonyms or short explanation. \r\n\r\nThe corpus is available in source TEI P5 XML and in the simpler and smaller vertical format, used by various concordancers. Note that the vertical format does not contain all the information from the source TEI.;2015-05-05;corpus;http://hdl.handle.net/11356/1025;slv;info:eu-repo/grantAgreement/EC/FP7/215064;https://doi.org/10.1007/s10579-015-9294-7;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;https://creativecommons.org/licenses/by/4.0/;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Jo\u017eef Stefan Institute;http://nl.ijs.si/imp/index-en.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "662b6357-b773-54df-8bc8-74db009ae8be",
+    "notes": [
+        "goo300k is a manually annotated reference corpus of historical Slovene. It contains 1,100 pages (about 300,000 tokens) sampled from 89 texts from the period 1584-1899.\r\n\r\nEach text contains extensive meta-data and  per-page links to facsimiles, while the word tokens in the texts are annotated with their modernised word-form, lemma, part-of-speech, and, for archaic words, their nearest modern synonyms or short explanation. \r\n\r\nThe corpus is available in source TEI P5 XML and in the simpler and smaller vertical format, used by various concordancers. Note that the vertical format does not contain all the information from the source TEI."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1025"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "historical language"
+        },
+        {
+            "name": "word modernisation"
+        },
+        {
+            "name": "lemmatisation"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "manual annotation"
+        },
+        {
+            "name": "TEI"
+        }
+    ],
+    "title": [
+        "Reference corpus of historical Slovene goo300k 1.2"
+    ],
+    "url": ""
+}

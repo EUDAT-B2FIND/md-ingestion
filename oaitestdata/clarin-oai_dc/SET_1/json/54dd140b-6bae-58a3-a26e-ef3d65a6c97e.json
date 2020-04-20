@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4602",
+    "MetadataAccess": [
+        "oai:ota:oucs:4602"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Addison, Joseph, 1672-1719."
+    ],
+    "fulltext": "oai:ota:oucs:4602;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4602.xml;Two poems: viz. I. On the deluge, paradise, the burning of the world, and of the new heavens and new earth. An ode to. Dr. Burnett. II. In praise of physic and poetry. An ode to Dr. Hannes. Written by Mr. Addison.;Addison, Joseph, 1672-1719.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "54dd140b-6bae-58a3-a26e-ef3d65a6c97e",
+    "oai_identifier": [
+        "oai:ota:oucs:4602"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Two poems: viz. I. On the deluge, paradise, the burning of the world, and of the new heavens and new earth. An ode to. Dr. Burnett. II. In praise of physic and poetry. An ode to Dr. Hannes. Written by Mr. Addison."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4602.xml"
+}

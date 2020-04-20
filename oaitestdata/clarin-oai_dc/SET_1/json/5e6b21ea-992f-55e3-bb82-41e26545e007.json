@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5677",
+    "MetadataAccess": [
+        "oai:ota:oucs:5677"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Maiden Hospital (Edinburgh, Scotland)"
+    ],
+    "fulltext": "oai:ota:oucs:5677;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5677.xml;Statutes of the Maiden Hospital: founded by the company of merchants of Edinburgh, and Mary Erskine.;Maiden Hospital (Edinburgh, Scotland);text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5e6b21ea-992f-55e3-bb82-41e26545e007",
+    "oai_identifier": [
+        "oai:ota:oucs:5677"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Statutes of the Maiden Hospital: founded by the company of merchants of Edinburgh, and Mary Erskine."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5677.xml"
+}

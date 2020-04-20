@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3161",
+    "MetadataAccess": [
+        "oai:ota:oucs:3161"
+    ],
+    "PublicationTimestamp": "1690-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1690"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Browne, Thomas, Sir, 1605-1682"
+    ],
+    "fulltext": "oai:ota:oucs:3161;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3161.xml;Letter to a friend;Browne, Thomas, Sir, 1605-1682;not after: 1690;text_and_corpus_linguistics;Letters -- England -- 17th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0ac9bcf4-10cb-53f1-8e0b-c7dded0e7711",
+    "oai_identifier": [
+        "oai:ota:oucs:3161"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Letters -- England -- th century"
+        }
+    ],
+    "title": [
+        "Letter to a friend"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3161.xml"
+}

@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "IBL PAN"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.oasis.opendocument.text",
+        "downloadable_files_count: 10",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/372",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/372"
+    ],
+    "PID": "http://hdl.handle.net/11321/372",
+    "PublicationTimestamp": "2017-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "IBL PAN"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Kaja, Damian"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/372;2017-05-30T07:54:35Z;hdl_11321_3;hdl_11321_4;warsztaty_2017_dk;Kaja, Damian;literature;varia;2017-05-30;corpus;http://hdl.handle.net/11321/372;pol;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.oasis.opendocument.text;text/plain;application/msword;text/plain;text/plain;application/vnd.oasis.opendocument.text;downloadable_files_count: 10;IBL PAN",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "77dbce44-9228-5b67-85aa-9963ca16642f",
+    "notes": [
+        "varia"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/372"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "literature"
+        }
+    ],
+    "title": [
+        "warsztaty_2017_dk"
+    ],
+    "url": ""
+}

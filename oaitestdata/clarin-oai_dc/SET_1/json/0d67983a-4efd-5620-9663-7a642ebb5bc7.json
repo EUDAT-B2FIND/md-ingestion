@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Tilde"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-319",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-319"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-319",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Tilde"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Latvia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-319;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Tilde English-Latvian SMT system;English-Latvian factored SMT system trained on different parallel texts;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-319;eng;downloadable_files_count: 0;Latvia;Tilde;http://translate.tilde.com",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0d67983a-4efd-5620-9663-7a642ebb5bc7",
+    "notes": [
+        "English-Latvian factored SMT system trained on different parallel texts"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-319"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Tilde English-Latvian SMT system"
+    ],
+    "url": ""
+}

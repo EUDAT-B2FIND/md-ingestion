@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "daniel.fortier@umontreal.ca"
+    ],
+    "Contributor": [
+        "University of Montreal"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "A detailed observation of a thermo-erosion gully was initiated on Bylot Island (Fortier, Allard et al. 2007) in 1999. Gully monitoring is a joint project with biologists (Gilles Gauthier - Laval University, Esther L\u00e9vesque - UQTR) working on arctic ecosystems where effects of gullying on the permafrost, available water, and the landscape were required to be known. Mapping of the gullies and the geomorphological forms found in these gullies contributed to the understanding of how thermo-erosion affect the permafrost, the speed of gullying growth and the distribution of thermo-erosion gullies.&#x0d;\n&#x0d;\nFor more information: Fortier, D., M. Allard, et al. (2007). \"Observation of rapid drainage system development by thermal erosion of ice wedges on Bylot island, Canadian Arctic Archipelago.\" Permafrost and Periglacial Processes 18(3): 229-243."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=10483_fgdc",
+    "PublicationTimestamp": "2014-10-08T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(73N-73N,80W-80W)",
+    "TempCoverageBegin": 63063831599,
+    "TempCoverageEnd": 63511124399,
+    "TemporalCoverage": " period : ( 1999-06-01T11:59:59Z - 2013-08-03T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1999-06-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2013-08-03T11:59:59Z",
+    "author": [
+        "Audrey Veillette",
+        "Na\u00efm Perreault",
+        "Alexandre Guertin Pasquier",
+        "Gabrielle L\u00e9tourneau",
+        "St\u00e9phanie Coulombe",
+        "Michel Allard",
+        "Etienne Godin",
+        "Daniel Fortier"
+    ],
+    "fulltext": "10483_fgdc;2017-04-09T22:02:17Z;PDCMetadata;Daniel Fortier;Etienne Godin;Alexandre Guertin Pasquier;Audrey Veillette;Gabrielle L\u00e9tourneau;Michel Allard;Na\u00efm Perreault;St\u00e9phanie Coulombe;20141008;Thermo-erosion gully GIS in Valley of glacier C-79 on Bylot Island, Nunavut;Computer file;unknown;Godin Etienne and Fortier Daniel, 2014. Thermo-erosion gully GIS in Valley of glacier C-79 on Bylot Island, NU, Canada. Geocryolab, Department of Geography, Universit\u00e9 de Montr\u00e9al, Qu\u00e9bec, Canada.;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=10483;Digitalisation of the thermo-erosion gullies was accomplished using a Trimble differential GPS (model Pathfinder Pro XRS with a TSC1 data collector). Differential correction was applied on surveyed data using GPS Pathfinder Office v3.10 against Thule (Greenland) base station with 99% of data with an error less than 1 m. A Trimble R8 GNSS system replaced the DGPS in 2013. Geomorphological and erosion forms found in the gullies as well as the gullies contours were mapped and entered into the DGPS spatial database during 2009 and 2010 surveys. Overall, 44 gullies were mapped. Data was exported to ESRI's ArcGIS v10. Superposition of the spatial data with historical air photos (1958. 1961, 1972, 1982) and an IKONOS 2007, GeoEYE 2010 high resolution satellite imagery provide background layers to quantify the surveyed geodata. Visual representation of the gullies GIS provides quantitative and qualitative data about permafrost erosion resulting in thermo-erosion at large and small scale.;A detailed observation of a thermo-erosion gully was initiated on Bylot Island (Fortier, Allard et al. 2007) in 1999. Gully monitoring is a joint project with biologists (Gilles Gauthier - Laval University, Esther L\u00e9vesque - UQTR) working on arctic ecosystems where effects of gullying on the permafrost, available water, and the landscape were required to be known. Mapping of the gullies and the geomorphological forms found in these gullies contributed to the understanding of how thermo-erosion affect the permafrost, the speed of gullying growth and the distribution of thermo-erosion gullies.&#x0d;\n&#x0d;\nFor more information: Fortier, D., M. Allard, et al. (2007). \"Observation of rapid drainage system development by thermal erosion of ice wedges on Bylot island, Canadian Arctic Archipelago.\" Permafrost and Periglacial Processes 18(3): 229-243.;Summary: Le projet d'observer \u00e0 fine \u00e9chelle les ravins de thermo-\u00e9rosion sur l'Ile Bylot (Nunavut) a commenc\u00e9 en 1999, conjointement avec une \u00e9quipe de de biologistes (Gilles Gauthier - Laval University, Esther L\u00e9vesque - UQTR). Un ravin observ\u00e9 depuis son initiation en 1999 \u00e9volue sur son axe principal \u00e0 une vitesse moyenne de 60 m par ann\u00e9e. 44 ravins semblables ont \u00e9t\u00e9 cartographi\u00e9s \u00e0 l'aide d'un GPS diff\u00e9rentiel dans la vall\u00e9e du glacier C-79 durant des visites sur le terrain en 2009 et 2010. La g\u00e9omorphologie et les contours des ravins ont ainsi \u00e9t\u00e9 num\u00e9ris\u00e9s. L'utilisation d'images a\u00e9riennes et satellitaires permettent de localiser les ravins \u00e0 visiter sur le terrain; ces images permettent de plus \u00e0 estimer le taux d'\u00e9volution de plusieurs ravins. L'ensemble des donn\u00e9es spatiales qui ont \u00e9t\u00e9 accumul\u00e9es durant les travaux de terrain fournissent des donn\u00e9es quantitatives et qualitatives sur la distribution des ravins de thermo-\u00e9rosion, \u00e0 petite et grande \u00e9chelle. Research Program(s): ArcticNet,IPY,CEN,ADAPT. For further information: daniel.fortier@umontreal.ca;19990601;20130803;NULL;In work;Annually;-80.15;-79.75;73.2;73.1;NULL;Bylot Island;Canadian High Arctic;Geomorphology;Geospatial data;Permafrost;Thermo-erosion gullies;Bylot Island, Nunavut, Canada;NULL;Public;NULL;University of Montreal;Daniel Fortier;NULL;mailing;520, ch. C\u00f4te-Ste-Catherine;Montreal;Quebec;H2V 2B8;Canada;514-343-6111 #26872;514-343-8008;daniel.fortier@umontreal.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;10483;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20141008;20141008;Daniel Fortier;University of Montreal;mailing;520, ch. C\u00f4te-Ste-Catherine;Montreal;Quebec;H2V 2B8;Canada;514-343-6111 #26872;514-343-8008;daniel.fortier@umontreal.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "00c17456-f4cd-5aed-bd97-d8b420f14009",
+    "notes": [
+        "Digitalisation of the thermo-erosion gullies was accomplished using a Trimble differential GPS (model Pathfinder Pro XRS with a TSC1 data collector). Differential correction was applied on surveyed data using GPS Pathfinder Office v3.10 against Thule (Greenland) base station with 99% of data with an error less than 1 m. A Trimble R8 GNSS system replaced the DGPS in 2013. Geomorphological and erosion forms found in the gullies as well as the gullies contours were mapped and entered into the DGPS spatial database during 2009 and 2010 surveys. Overall, 44 gullies were mapped. Data was exported to ESRI's ArcGIS v10. Superposition of the spatial data with historical air photos (1958. 1961, 1972, 1982) and an IKONOS 2007, GeoEYE 2010 high resolution satellite imagery provide background layers to quantify the surveyed geodata. Visual representation of the gullies GIS provides quantitative and qualitative data about permafrost erosion resulting in thermo-erosion at large and small scale."
+    ],
+    "oai_identifier": [
+        "10483_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-80.15,73.1],[-80.15,73.2],[-79.75,73.2],[-79.75,73.1],[-80.15,73.1]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Bylot Island"
+        },
+        {
+            "name": "Canadian High Arctic"
+        },
+        {
+            "name": "Geomorphology"
+        },
+        {
+            "name": "Geospatial data"
+        },
+        {
+            "name": "Permafrost"
+        },
+        {
+            "name": "Thermo-erosion gullies"
+        }
+    ],
+    "title": [
+        "Thermo-erosion gully GIS in Valley of glacier C-79 on Bylot Island, Nunavut"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=10483"
+}

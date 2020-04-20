@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5577",
+    "MetadataAccess": [
+        "oai:ota:oucs:5577"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Merande, D."
+    ],
+    "fulltext": "oai:ota:oucs:5577;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5577.xml;A succinct account of a machine, newly invented for the cure of pr\u00c3\u00a6ternatural curvatures of the spine: together with a detail of several cases, in which this machine has been tried with great success. By D. Merande, M.D;Merande, D.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cd5d5928-9cac-5eb4-a06c-d4e6419e9479",
+    "oai_identifier": [
+        "oai:ota:oucs:5577"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A succinct account of a machine, newly invented for the cure of pr\u00c3\u00a6ternatural curvatures of the spine: together with a detail of several cases, in which this machine has been tried with great success. By D. Merande, M.D"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5577.xml"
+}

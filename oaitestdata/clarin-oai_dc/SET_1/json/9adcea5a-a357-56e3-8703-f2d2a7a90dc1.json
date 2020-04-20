@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=a61934366bfe11e2a2aa782bcb07413527499a2c68084f5b8ed8c0c5f849eef3",
+    "MetadataAccess": [
+        "a61934366bfe11e2a2aa782bcb07413527499a2c68084f5b8ed8c0c5f849eef3"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "a61934366bfe11e2a2aa782bcb07413527499a2c68084f5b8ed8c0c5f849eef3;2018-11-15T16:40:08Z;toolService;toolService:platform;U-Compare Part-of-Speech Tagging service;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies tokens in plain text and assigns parts-of-speech\nTools in workflow: MLRS POS Tagger web service (University of Malta)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9adcea5a-a357-56e3-8703-f2d2a7a90dc1",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies tokens in plain text and assigns parts-of-speech\nTools in workflow: MLRS POS Tagger web service (University of Malta)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n"
+    ],
+    "oai_identifier": [
+        "a61934366bfe11e2a2aa782bcb07413527499a2c68084f5b8ed8c0c5f849eef3"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:platform"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Part-of-Speech Tagging service"
+    ]
+}

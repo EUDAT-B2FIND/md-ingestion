@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/530</identifier>
+    <datestamp>2018-07-23T12:53:17Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>KPWr EVENTS (Attributes and Relations)</dc:title>
+      <dc:creator>Oleksy, Marcin</dc:creator>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:subject>KPWr</dc:subject>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>events recognition</dc:subject>
+      <dc:subject>events</dc:subject>
+      <dc:subject>Attributes for EVENT</dc:subject>
+      <dc:description>Documents from Polish Corpus of Wroc&#322;aw University of Technology manually annotated with Attributes for EVENT instances and relations between EVENTS instances</dc:description>
+      <dc:date>2018-07-19</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/530</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Science and Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

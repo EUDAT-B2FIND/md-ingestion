@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17955057</identifier>
+    <datestamp>2019-05-21T16:02:59Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Inimesed</dc:title>
+      <dc:creator>Alum&#228;e, Tanel</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-05</dc:date>
+      <dc:date>Updated: 2019-01-05</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-00098L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Androidi rakendus, mis v&#245;imaldab kiiresti ja mugavalt otsida aadressiraamatus sisalduvaid kontaktandmeid, samas ka n&#228;ide reeglip&#245;hise keelemudeliga eestikeelsest k&#245;netuvastusest.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

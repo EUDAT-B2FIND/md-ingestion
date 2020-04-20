@@ -61,6 +61,14 @@ Run the installation:
 pip install -r requirements.txt
 ```
 
+#### Configure harvest_list
+add symbolic link to your local used harvest_list: 
+
+```
+ln -s etc/harvest_list_cm harvest_list
+```
+
+
 ### Usage 
 
 **TODO**: update of section

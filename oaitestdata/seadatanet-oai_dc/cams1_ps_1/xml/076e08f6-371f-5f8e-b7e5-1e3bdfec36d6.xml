@@ -1,0 +1,35 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>6aeb76a1-cc67-4071-a3a0-3be3b050fe21</dc:identifier>
+      <dc:date>2018-07-24T09:47:48</dc:date>
+      <dc:title>North Sea - Temperature and salinity observation collection V1.1</dc:title>
+      <dct:alternative>seadatanet-north_sea-temperature_salinity_aggregated_public-v1_1</dct:alternative>
+      <dc:type>series</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Temperature of the water column</dc:subject>
+      <dc:subject>Salinity of the water column</dc:subject>
+      <dc:subject>ITS-90 water temperature</dc:subject>
+      <dc:subject>Water body salinity</dc:subject>
+      <dc:subject>North Sea</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dct:abstract>The North Sea historical dataset includes all open access temperature and salinity in situ data from the North Sea for the period 1900 &#8211; 2013. The data were retrieved from the SeaDataNet infrastructure at the beginning of 2014. Data quality has been analysed and checked using ODV software. Quality Flags of anomalous data have been revised using different QC procedures in conjunction with the visual expert check. Duplicates have been identified and excluded from the dataset.
+
+For data access please register at http://www.marine-id.org</dct:abstract>
+      <dc:description>The North Sea historical dataset includes all open access temperature and salinity in situ data from the North Sea for the period 1900 &#8211; 2013. The data were retrieved from the SeaDataNet infrastructure at the beginning of 2014. Data quality has been analysed and checked using ODV software. Quality Flags of anomalous data have been revised using different QC procedures in conjunction with the visual expert check. Duplicates have been identified and excluded from the dataset.
+
+For data access please register at http://www.marine-id.org</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI</dc:source>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG 4326)">
+        <ows:LowerCorner>9.96 48.6</ows:LowerCorner>
+        <ows:UpperCorner>-4.25 62</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--metadata-URL" description="DOI of the product">http://dx.doi.org/10.12770/6aeb76a1-cc67-4071-a3a0-3be3b050fe21</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="full collection dataset" description="zipped ODV binary collection">ftp://ftp2.ifremer.fr/public/seadatanet-north_sea-temperaturesalinity_aggregated/SDN_2014-03_TS_North_Sea_QC_done_v1.1.zip</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="full collection dataset" description="full collection dataset">http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_North_Sea_QC_done_v1.1</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2014-03_TS_North_Sea_QC_done_v1.1/Salinity" description="Salinity">http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_North_Sea_QC_done_v1.1</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2014-03_TS_North_Sea_QC_done_v1.1/Temperature" description="Temperature">http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_North_Sea_QC_done_v1.1</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2014-03_TS_North_Sea_QC_done_v1.1/*" description="Observation locations">http://www.ifremer.fr/oceanotron/WMS/wms?DATASET=SDN_2014-03_TS_North_Sea_QC_done_v1.1</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=6aeb76a1-cc67-4071-a3a0-3be3b050fe21&amp;fname=NorthSeaTransp.png</dc:URI>
+    </csw:Record>

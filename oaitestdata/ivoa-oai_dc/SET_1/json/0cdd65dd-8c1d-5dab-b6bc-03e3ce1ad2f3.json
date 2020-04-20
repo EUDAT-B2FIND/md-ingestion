@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "NASA/IPAC Infrared Science Archive"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-EN2M70",
+    "PublicationTimestamp": "2016-02-05T15:15:05Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "NASA/IPAC Infrared Science Archive"
+    ],
+    "RelatedIdentifier": [
+        "ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-EN2M70"
+    ],
+    "ResourceType": [
+        "Catalog"
+    ],
+    "author": [
+        "SWIRE team"
+    ],
+    "fulltext": "ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-EN2M70;2016-02-05T15:15:05Z;Spitzer Wide-area InfraRed Extragalactic Survey ELAIS-N2 MIPS 70 micron Catalog;ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-EN2M70;NASA/IPAC Infrared Science Archive;SWIRE team;extragalactic survey;The Spitzer Wide-area InfraRed Extragalactic survey (SWIRE), the largest Spitzer Legacy program, is a wide-area, imaging survey to trace the evolution of dusty, star-forming galaxies, evolved stellar populations, and AGN as a function of environment, from redshifts z~3 to the current epoch. SWIRE surveys 6 high-latitude fields, totaling ~50 sq. deg. in all 7 Spitzer bands: 3.6, 4.5, 5.8, and 8 microns with IRAC and 24, 70, and 160 microns with MIPS (Lonsdale et al. 2003). The SWIRE Legacy Extragalactic Source Catalogs will eventually contain in excess of 2 million IR-selected galaxies, from those dominated by the light of stellar populations detected primarily by IRAC, to starbursts, ultra-luminous infrared galaxies and AGN detected also by MIPS.;Catalog",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0cdd65dd-8c1d-5dab-b6bc-03e3ce1ad2f3",
+    "notes": [
+        "The Spitzer Wide-area InfraRed Extragalactic survey (SWIRE), the largest Spitzer Legacy program, is a wide-area, imaging survey to trace the evolution of dusty, star-forming galaxies, evolved stellar populations, and AGN as a function of environment, from redshifts z~3 to the current epoch. SWIRE surveys 6 high-latitude fields, totaling ~50 sq. deg. in all 7 Spitzer bands: 3.6, 4.5, 5.8, and 8 microns with IRAC and 24, 70, and 160 microns with MIPS (Lonsdale et al. 2003). The SWIRE Legacy Extragalactic Source Catalogs will eventually contain in excess of 2 million IR-selected galaxies, from those dominated by the light of stellar populations detected primarily by IRAC, to starbursts, ultra-luminous infrared galaxies and AGN detected also by MIPS."
+    ],
+    "oai_identifier": [
+        "ivo://irsa.ipac/Spitzer/Catalog/SWIRE/SWIRE-EN2M70"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "extragalactic survey"
+        }
+    ],
+    "title": [
+        "The Spitzer Wide-area InfraRed Extragalactic survey (SWIRE), the largest Spitzer Legacy program, is a wide-area, imaging survey to trace the evolution of dusty, star-forming galaxies, evolved stellar populations, and AGN as a function of environment, from redshifts z~3 to the current epoch. SWIRE surveys 6 high-latitude fields, totaling ~50 sq. deg. in all 7 Spitzer bands: 3.6, 4.5, 5.8, and 8 microns with IRAC and 24, 70, and 160 microns with MIPS (Lonsdale et al. 2003). The SWIRE Legacy Extragalactic Source Catalogs will eventually contain in excess of 2 million IR-selected galaxies, from those dominated by the light of stellar populations detected primarily by IRAC, to starbursts, ultra-luminous infrared galaxies and AGN detected also by MIPS."
+    ]
+}

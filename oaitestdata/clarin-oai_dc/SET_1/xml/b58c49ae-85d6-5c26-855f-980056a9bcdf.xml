@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1135</identifier>
+    <datestamp>2017-08-23T15:49:02Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Brexit stance annotated tweets</dc:title>
+      <dc:creator>Gr&#269;ar, Miha</dc:creator>
+      <dc:creator>Cherepnalkoski, Darko</dc:creator>
+      <dc:creator>Mozeti&#269;, Igor</dc:creator>
+      <dc:creator>Kralj Novak, Petra</dc:creator>
+      <dc:subject>Twitter</dc:subject>
+      <dc:subject>Brexit</dc:subject>
+      <dc:subject>stance</dc:subject>
+      <dc:subject>computer-mediated communication</dc:subject>
+      <dc:description>The corpus contains over 4.5 million tweets (tweet IDs) automatically labeled by a machine learning program with stance regarding Brexit: Positive (supporting Brexit), Negative (opposing Brexit), or Neutral (uncommitted).&#13;
+&#13;
+The Brexit referendum was held on June 23, 2016, to decide whether the UK should leave or remain in the EU. In the weeks before the referendum, starting on May 12, the UK geo-located Brexit-related tweets were continuously collected resulting in a dataset of around 4.5 million (4,508,440) tweets from almost one million (998,054) users. A large sample of the collected tweets (35,000) was manually labeled for the stance of their authors regarding Brexit: Positive (supporting Brexit), Negative (opposing Brexit), or Neutral (uncommitted). The labeled tweets were used to train a classifier which then automatically labeled all the remaining tweets.&#13;
+&#13;
+The corpus contains tweet ids and stance labels. The tweets are grouped into files one hour per file. In each file, one row represents one entry (twitter_id, sentiment_label). Lines are ordered by the tweet time.&#13;
+&#13;
+The data collection, annotation, model training and performance estimation  is described in detail in:&#13;
+Miha Gr&#269;ar, Darko Cherepnalkoski, Igor Mozeti&#269;, Petra Kralj Novak:&#13;
+Stance and influence of Twitter users regarding the Brexit referendum.&#13;
+Computational Social Networks 4/6. 2017. http://dx.doi.org/10.1186/s40649-017-0042-6</dc:description>
+      <dc:date>2016</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1135</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/H2020/640772</dc:relation>
+      <dc:relation>http://dx.doi.org/10.1186/s40649-017-0042-6</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

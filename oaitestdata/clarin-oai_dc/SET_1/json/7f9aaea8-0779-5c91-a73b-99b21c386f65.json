@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "267 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1240",
+    "MetadataAccess": [
+        "oai:ota:oucs:1240"
+    ],
+    "PublicationTimestamp": "1513-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1513"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Barclay, Alexander,  1475?-1552"
+    ],
+    "fulltext": "oai:ota:oucs:1240;2018-03-05T17:31:43Z;http://ota.ox.ac.uk/headers/1240.xml;The eclogues of Alexander Barclay / compiled by Greg Waite;Barclay, Alexander,  1475?-1552;1513;text_and_corpus_linguistics;Poems -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;267 KB;Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7f9aaea8-0779-5c91-a73b-99b21c386f65",
+    "oai_identifier": [
+        "oai:ota:oucs:1240"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- England -- th century"
+        }
+    ],
+    "title": [
+        "The eclogues of Alexander Barclay / compiled by Greg Waite"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1240.xml"
+}

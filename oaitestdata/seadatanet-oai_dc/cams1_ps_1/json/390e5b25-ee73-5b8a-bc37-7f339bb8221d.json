@@ -1,0 +1,63 @@
+{
+    "DOI": "http://dx.doi.org/10.12770/970bb3ba-aaf6-4066-9656-87c85da41dbb",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=oai_dc&identifier=390e5b25-ee73-5b8a-bc37-7f339bb8221d",
+    "Rights": [
+        "otherRestrictions"
+    ],
+    "SpatialCoverage": [
+        "10 10",
+        "-90 62"
+    ],
+    "fulltext": "970bb3ba-aaf6-4066-9656-87c85da41dbb;2018-09-27T10:27:14;North Atlantic Ocean - Temperature and Salinity Historical Data Collection SeaDataCloud V1;SDC_NAT_DATA_TS_V1;dataset;Oceanographic geographical features;Temperature of the water column;Salinity of the water column;Water body salinity;ITS-90 water temperature;Atlantic Ocean;oceans;ODV binary collection;The SeaDataCloud TS historical data collection v1 for the North Atlantic Ocean, includes open access in situ data on temperature and salinity of water column in the North Atlantic Ocean from 10\u00b0N  to 62\u00b0N, including the Labrador Sea, The data were retrieved from the SeaDataNet infrastructure at the end of November 2017. The dataset format is Ocean Data View (ODV - http://odv.awi.de/) binary collection. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised and set up using the elaborated by SeaDataNet2 project QC procedures in conjunction with the visual expert check. The final number of the Temperature and Salinity profiles (stations) in the collection is 9091773.\n\nFor data access please register at http://www.marine-id.org/.;The SeaDataCloud TS historical data collection v1 for the North Atlantic Ocean, includes open access in situ data on temperature and salinity of water column in the North Atlantic Ocean from 10\u00b0N  to 62\u00b0N, including the Labrador Sea, The data were retrieved from the SeaDataNet infrastructure at the end of November 2017. The dataset format is Ocean Data View (ODV - http://odv.awi.de/) binary collection. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised and set up using the elaborated by SeaDataNet2 project QC procedures in conjunction with the visual expert check. The final number of the Temperature and Salinity profiles (stations) in the collection is 9091773.\n\nFor data access please register at http://www.marine-id.org/.;otherRestrictions;eng;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI;ODV binary collection;10 10;-90 62;http://dx.doi.org/10.12770/970bb3ba-aaf6-4066-9656-87c85da41dbb;ftp://vftp2.ifremer.fr/public/seadatanet-north_atlantic_ocean-temperaturesalinity_aggregated/SDC_NAT_DATA_TS_V1/;https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=970bb3ba-aaf6-4066-9656-87c85da41dbb&fname=Map_Final_NAT_WITHOUTONLAND.png",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "390e5b25-ee73-5b8a-bc37-7f339bb8221d",
+    "notes": [
+        "The SeaDataCloud TS historical data collection v1 for the North Atlantic Ocean, includes open access in situ data on temperature and salinity of water column in the North Atlantic Ocean from 10\u00b0N  to 62\u00b0N, including the Labrador Sea, The data were retrieved from the SeaDataNet infrastructure at the end of November 2017. The dataset format is Ocean Data View (ODV - http://odv.awi.de/) binary collection. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised and set up using the elaborated by SeaDataNet2 project QC procedures in conjunction with the visual expert check. The final number of the Temperature and Salinity profiles (stations) in the collection is 9091773.\n\nFor data access please register at http://www.marine-id.org/."
+    ],
+    "oai_identifier": [
+        "390e5b25-ee73-5b8a-bc37-7f339bb8221d"
+    ],
+    "oai_set": "cams1_ps",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "Atlantic Ocean"
+        },
+        {
+            "name": "oceans"
+        }
+    ],
+    "title": [
+        "North Atlantic Ocean - Temperature and Salinity Historical Data Collection SeaDataCloud V1"
+    ],
+    "url": "https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=970bb3ba-aaf6-4066-9656-87c85da41dbb&fname=Map_Final_NAT_WITHOUTONLAND.png"
+}

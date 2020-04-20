@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1137</identifier>
+    <datestamp>2016-04-06T16:39:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Project Gutenberg</dc:title>
+      <dc:description>Possibility to download or to browse free electronic books; Angebot: Download von und Online-Zugang zu frei verf&#252;gbaren E-Books; deutschsprachige Literatur stellt nur einen Teilbereich der verf&#252;gbaren E-Books dar</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1137</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:language>tel</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>United States</dc:coverage>
+      <dc:source>http://www.gutenberg.org/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

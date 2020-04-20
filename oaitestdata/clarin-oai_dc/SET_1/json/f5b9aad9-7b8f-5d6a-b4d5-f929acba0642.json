@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=e43e1e786c0011e2a2aa782bcb0741354f6d3f05c0974effa8d92ddf1f26f25d",
+    "MetadataAccess": [
+        "e43e1e786c0011e2a2aa782bcb0741354f6d3f05c0974effa8d92ddf1f26f25d"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "e43e1e786c0011e2a2aa782bcb0741354f6d3f05c0974effa8d92ddf1f26f25d;2018-11-15T16:40:08Z;toolService;toolService:service;U-Compare Lemmatisation service;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies sentences and tokens in plain text. Parts of speech and lemmas are assigned to tokens. Language is automatically identified amongst the supported languages and language-specific processing is carried out. \nTools in workflow: Language Identifier, TTL-Tokenizer, TTL-Tagger, TTL-Lemmmatizer (all provided by the Research Institute for Artificial Intelligence (RACAI), Romania)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f5b9aad9-7b8f-5d6a-b4d5-f929acba0642",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Identifies sentences and tokens in plain text. Parts of speech and lemmas are assigned to tokens. Language is automatically identified amongst the supported languages and language-specific processing is carried out. \nTools in workflow: Language Identifier, TTL-Tokenizer, TTL-Tagger, TTL-Lemmmatizer (all provided by the Research Institute for Artificial Intelligence (RACAI), Romania)\nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n"
+    ],
+    "oai_identifier": [
+        "e43e1e786c0011e2a2aa782bcb0741354f6d3f05c0974effa8d92ddf1f26f25d"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Lemmatisation service"
+    ]
+}

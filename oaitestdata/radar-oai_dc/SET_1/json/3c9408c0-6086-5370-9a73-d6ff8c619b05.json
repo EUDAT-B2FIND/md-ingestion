@@ -1,0 +1,91 @@
+{
+    "Contact": [
+        "M\u00fcller, Eric"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.22000/44",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://www.radar-service.eu/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=3c9408c0-6086-5370-9a73-d6ff8c619b05",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "M\u00fcller, Eric"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "CC BY 4.0 Attribution",
+        "M\u00fcller, Eric",
+        "Springstein, Matthias",
+        "Ewerth, Ralph"
+    ],
+    "author": [
+        "Ewerth, Ralph",
+        "Springstein, Matthias",
+        "M\u00fcller, Eric"
+    ],
+    "fulltext": "10.22000-43;2017-06-06T12:25:05Z;10.22000/43;DOI;M\u00fcller, Eric;0000-0002-6802-1241;Springstein, Matthias;0000-0002-6509-8534;Ewerth, Ralph;0000-0003-0918-6297;Date Estimation in the Wild Dataset;M\u00fcller, Eric;2017;Computer Science;Other;Machine Learning;Other;Deep Learning;Other;Information Retrieval;Other;Image Retrieval;Other;Date Estimation;Dataset;CC BY 4.0 Attribution;M\u00fcller, Eric;Springstein, Matthias;Ewerth, Ralph;eng;10.22000/44;10.22000/44;DOI;DOI;application/zip",
+    "group": "radar",
+    "groups": [
+        {
+            "name": "radar"
+        }
+    ],
+    "name": "3c9408c0-6086-5370-9a73-d6ff8c619b05",
+    "oai_identifier": [
+        "3c9408c0-6086-5370-9a73-d6ff8c619b05"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Computer"
+        },
+        {
+            "name": "Science"
+        },
+        {
+            "name": "Machine"
+        },
+        {
+            "name": "Learning"
+        },
+        {
+            "name": "Deep"
+        },
+        {
+            "name": "Learning"
+        },
+        {
+            "name": "Information"
+        },
+        {
+            "name": "Retrieval"
+        },
+        {
+            "name": "Image"
+        },
+        {
+            "name": "Retrieval"
+        },
+        {
+            "name": "Date"
+        },
+        {
+            "name": "Estimation"
+        }
+    ],
+    "title": [
+        "Date Estimation in the Wild Dataset"
+    ],
+    "url": ""
+}

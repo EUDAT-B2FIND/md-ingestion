@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4581",
+    "MetadataAccess": [
+        "oai:ota:oucs:4581"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Baratier, Fran\u00c3\u00a7ois, 1682-1751."
+    ],
+    "fulltext": "oai:ota:oucs:4581;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4581.xml;An account of the life of John Philip Barretier: who was master of five languages at the age of nine years. Compiled from his father's letters, &c.;Baratier, Fran\u00c3\u00a7ois, 1682-1751.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "77142eab-0fc1-5ed4-b0bc-a7d2c0c6765f",
+    "oai_identifier": [
+        "oai:ota:oucs:4581"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An account of the life of John Philip Barretier: who was master of five languages at the age of nine years. Compiled from his father's letters, &c."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4581.xml"
+}

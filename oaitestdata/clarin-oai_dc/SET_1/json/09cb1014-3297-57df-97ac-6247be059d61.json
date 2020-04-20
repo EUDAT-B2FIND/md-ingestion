@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4418",
+    "MetadataAccess": [
+        "oai:ota:oucs:4418"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Brooke, Frances, 1724?-1789."
+    ],
+    "fulltext": "oai:ota:oucs:4418;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4418.xml;The history of Lady Julia Mandeville: In two volumes. By the translator of Lady Catesby's letters. [pt.1];Brooke, Frances, 1724?-1789.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "09cb1014-3297-57df-97ac-6247be059d61",
+    "oai_identifier": [
+        "oai:ota:oucs:4418"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The history of Lady Julia Mandeville: In two volumes. By the translator of Lady Catesby's letters. [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4418.xml"
+}

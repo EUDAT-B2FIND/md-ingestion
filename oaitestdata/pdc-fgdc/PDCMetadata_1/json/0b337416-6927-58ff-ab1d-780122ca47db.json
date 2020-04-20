@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "scott.lamoureux@queensu.ca"
+    ],
+    "Contributor": [
+        "Queen's University"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "To characterize plant nutrient availability during two 2-week time periods (early and late season) at 12 plots representing three different vegetation communities and within four experimental watersheds."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=9857_fgdc",
+    "PublicationTimestamp": "2013-03-28T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Limited"
+    ],
+    "SpatialCoverage": "(75N,110W)",
+    "TempCoverageBegin": 63350074799,
+    "TempCoverageEnd": 63353789999,
+    "TemporalCoverage": " period : ( 2008-06-26T11:59:59Z - 2008-08-08T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2008-06-26T11:59:59Z",
+    "TemporalCoverage:EndDate": "2008-08-08T11:59:59Z",
+    "author": [
+        "Neal Scott",
+        "Fiona Gregory"
+    ],
+    "fulltext": "9857_fgdc;2017-04-09T22:02:14Z;PDCMetadata;Neal Scott;Fiona Gregory;20130328;2008 Soil Nutrient Availability, Cape Bounty;Computer file;unknown;Scott, N., and F. Gregory, unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=9857;The PRS probes, manufactured by Western Ag Innovations Inc, are cation- or anion-exchange membranes encased in a plastic holding device. 4 cation probes  and 4 anion probes were inserted into the soil along a transect across each plot. In polar desert sites an extra set of probes was deployed in a vegetated area. Each pair of probes was 10 cm apart. The twelve plots represent four examples each of wet sedge meadow, mesic heath, and polar desert vegetation communities. The first burial was made on the 26th to 27th of June and the probes retrieved on the 17th to 18th of July. The second burial took place on the 17th and 18th of July and these probes were retrieved on the 7th to 8th of August. After retrieval the probes were rinsed and sent to Western Ag Innovations for analysis. The nutrients measured are Total N, NO3-N, NH4-N, Ca, Mg, K, P, Fe, Mn, Cu, Zn, B, S, Pb, Al, and Cd. Most of the Cape Bounty sites were below the detection limit for Cd and Pb.;To characterize plant nutrient availability during two 2-week time periods (early and late season) at 12 plots representing three different vegetation communities and within four experimental watersheds.;Summary: Not Applicable Research Program(s): ArcticNet,IPY. For further information: neal.scott@queensu.ca;20080626;20080808;NULL;Complete;As needed;-109.5;-109.5;74.9;74.9;NULL;Cape Bounty;Melville Island;Nutrients;Plants;Soil chemistry;Soils;Cape Bounty, Melville Island, Nunavut;NULL;Limited;NULL;Queen's University;Scott Lamoureux;NULL;mailing;Department of Geography;Kingston;ON;K7L3N6;Canada;613-533-6033;scott.lamoureux@queensu.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;9857;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20130328;20130328;Scott Lamoureux;Queen's University;mailing;Department of Geography;Kingston;ON;K7L3N6;Canada;613-533-6033;scott.lamoureux@queensu.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0b337416-6927-58ff-ab1d-780122ca47db",
+    "notes": [
+        "The PRS probes, manufactured by Western Ag Innovations Inc, are cation- or anion-exchange membranes encased in a plastic holding device. 4 cation probes  and 4 anion probes were inserted into the soil along a transect across each plot. In polar desert sites an extra set of probes was deployed in a vegetated area. Each pair of probes was 10 cm apart. The twelve plots represent four examples each of wet sedge meadow, mesic heath, and polar desert vegetation communities. The first burial was made on the 26th to 27th of June and the probes retrieved on the 17th to 18th of July. The second burial took place on the 17th and 18th of July and these probes were retrieved on the 7th to 8th of August. After retrieval the probes were rinsed and sent to Western Ag Innovations for analysis. The nutrients measured are Total N, NO3-N, NH4-N, Ca, Mg, K, P, Fe, Mn, Cu, Zn, B, S, Pb, Al, and Cd. Most of the Cape Bounty sites were below the detection limit for Cd and Pb."
+    ],
+    "oai_identifier": [
+        "9857_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-109.5,74.9],[-109.5,74.9],[-109.5,74.9],[-109.5,74.9],[-109.5,74.9]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Cape Bounty"
+        },
+        {
+            "name": "Melville Island"
+        },
+        {
+            "name": "Nutrients"
+        },
+        {
+            "name": "Plants"
+        },
+        {
+            "name": "Soil chemistry"
+        },
+        {
+            "name": "Soils"
+        }
+    ],
+    "title": [
+        "2008 Soil Nutrient Availability, Cape Bounty"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=9857"
+}

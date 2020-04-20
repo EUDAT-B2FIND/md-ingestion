@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-62",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-62"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-62",
+    "PublicationTimestamp": "2016-12-02T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Bertagna, Francesca",
+        "Marinelli, Rita",
+        "Roventini, Adriana"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-62;2018-01-26T10:58:30Z;hdl_000-c0-111_38;hdl_000-c0-111_49;ItalWordNet v.2;Roventini, Adriana;Marinelli, Rita;Bertagna, Francesca;Italian Language;WordNet;Lexical Semantics;Language Resource;ItalWordNet (IWN) is a lexical-semantic database developed in the framework of two different research projects: EuroWordNet (EWN) and Sistema Integrato per il Trattamento Automatico del Linguaggio (SI-TAL).\r\n\r\nIWN is structured in the same way as the Princeton WordNet, namely around the notion of synset. Following the model designed in EWN, IWN encodes a rich set of semantic relations. In addition to the internal language relations, equivalence relations were also encoded between Italian synsets and the closest concepts in an Inter-Lingual Index (ILI), a separate language-independent module containing all WN1.5 synsets but not the relations among them.\r\nIWN now contains information about Italian Nouns, Verbs, Adjectives and Adverbs. \r\n\r\nThis SQL version of IWN v2.0 contains a corrected and revised version of the original IWN:\r\n49350 Synsets (of which: 3459 proper nouns, 32073 nominal, 8903 verbal, 4374 adjectival, 541 adverbial)\r\n48416 Lemmas (of which: 3918 proper nouns, 29527 nouns, 8015 verbs, 5808 adjectives, 1090 adverbs)\r\n68478 Senses;2016-12-02;lexicalConceptualResource;http://hdl.handle.net/20.500.11752/ILC-62;ita;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain;text/plain; charset=utf-8;downloadable_files_count: 2;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.ilc.cnr.it/it/content/italwordnet",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "588a08ba-1591-5e98-bc33-5d093c3b2800",
+    "notes": [
+        "ItalWordNet (IWN) is a lexical-semantic database developed in the framework of two different research projects: EuroWordNet (EWN) and Sistema Integrato per il Trattamento Automatico del Linguaggio (SI-TAL).\r\n\r\nIWN is structured in the same way as the Princeton WordNet, namely around the notion of synset. Following the model designed in EWN, IWN encodes a rich set of semantic relations. In addition to the internal language relations, equivalence relations were also encoded between Italian synsets and the closest concepts in an Inter-Lingual Index (ILI), a separate language-independent module containing all WN1.5 synsets but not the relations among them.\r\nIWN now contains information about Italian Nouns, Verbs, Adjectives and Adverbs. \r\n\r\nThis SQL version of IWN v2.0 contains a corrected and revised version of the original IWN:\r\n49350 Synsets (of which: 3459 proper nouns, 32073 nominal, 8903 verbal, 4374 adjectival, 541 adverbial)\r\n48416 Lemmas (of which: 3918 proper nouns, 29527 nouns, 8015 verbs, 5808 adjectives, 1090 adverbs)\r\n68478 Senses"
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-62"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Italian Language"
+        },
+        {
+            "name": "WordNet"
+        },
+        {
+            "name": "Lexical Semantics"
+        },
+        {
+            "name": "Language Resource"
+        }
+    ],
+    "title": [
+        "ItalWordNet v.2"
+    ],
+    "url": ""
+}

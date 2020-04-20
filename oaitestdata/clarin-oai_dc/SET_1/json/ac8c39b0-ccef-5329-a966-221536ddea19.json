@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Coventry University, University of Reading, University of Warwick"
+    ],
+    "Contributor": [
+        "Nesi, Hilary"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/tei+xml",
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-858",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-858"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-858",
+    "PublicationTimestamp": "2005-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2005"
+    ],
+    "Publisher": [
+        "Coventry University, University of Reading, University of Warwick"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-858;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;British academic spoken English (BASE) corpus;Nesi, Hilary;Transcribed recordings of 160 lectures and 39 seminars held in university departments. Four broad disciplinary groups, 1,644,942 tokens in total.;2005;corpus;http://hdl.handle.net/11372/LRT-858;eng;application/tei+xml;downloadable_files_count: 0;United Kingdom;Coventry University, University of Reading, University of Warwick;http://www.coventry.ac.uk/researchnet/d/503",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ac8c39b0-ccef-5329-a966-221536ddea19",
+    "notes": [
+        "Transcribed recordings of 160 lectures and 39 seminars held in university departments. Four broad disciplinary groups, 1,644,942 tokens in total."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-858"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "British academic spoken English (BASE) corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "atm-data@helsinki.fi"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0aac2f97-5aa3-5dc2-b888-3684cf45893c",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "atm-data@helsinki.fi"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "DCMI-point: name=Hyyti\u00e4l\u00e4; east=24.294795; north=61.847463 elevation=179",
+        "1999-01-01T00:00:00Z/1999-12-31T23:59:59Z"
+    ],
+    "TempCoverageBegin": 92982427199,
+    "TempCoverageEnd": 63050745600,
+    "TemporalCoverage": " period : ( 2947-07-01T11:59:59Z - 1999-01-01T00:00:00Z ) ",
+    "TemporalCoverage:BeginDate": "2947-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1999-01-01T00:00:00Z",
+    "author": [
+        "Pasi Aalto"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata20160308105313295230;2016-03-08T08:53:13Z;university-of-helsinki-department-of-physics-division-of-atmospheric-sciences;Hyyti\u00e4l\u00e4 SMEAR II meteorology, gases and soil - NOx concentration 33.6 m - 1999;Pasi Aalto;http://www.yso.fi/onto/yso/p26207;Title: NOx concentration 33.6 m \n\nDescription: Nitrogen oxide concentration in dry air at 33.6 m height \n\nVariable: NOx336 \n\nUnit: ppb \n\nSource: TEI 42 CTL chemiluminescence analyzer; heated metal (Mb) converter -> 28.02.2007 \n\nCategory: Gas \n\n;atm-data@helsinki.fi;2016-03-08;dataset;urn:nbn:fi:csc-ida2014010801766v;urn:nbn:fi:csc-ida2014010801766s;urn:nbn:fi:csc-ida-10x201703282015017312389v;urn:nbn:fi:csc-kata20160308105313295230;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308105313295230;DCMI-point: name=Hyyti\u00e4l\u00e4; east=24.294795; north=61.847463 elevation=179;1999-01-01T00:00:00Z/1999-12-31T23:59:59Z;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0aac2f97-5aa3-5dc2-b888-3684cf45893c",
+    "notes": [
+        "Title: NOx concentration 33.6 m \n\nDescription: Nitrogen oxide concentration in dry air at 33.6 m height \n\nVariable: NOx336 \n\nUnit: ppb \n\nSource: TEI 42 CTL chemiluminescence analyzer; heated metal (Mb) converter -> 28.02.2007 \n\nCategory: Gas \n\n"
+    ],
+    "oai_identifier": [
+        "0aac2f97-5aa3-5dc2-b888-3684cf45893c"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "http www.yso.fi onto yso p"
+        }
+    ],
+    "title": [
+        "Hyyti\u00e4l\u00e4 SMEAR II meteorology, gases and soil - NOx concentration 33.6 m - 1999"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308105313295230"
+}

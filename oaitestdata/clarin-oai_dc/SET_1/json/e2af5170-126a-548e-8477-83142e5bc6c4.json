@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 38",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Finnish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1074",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1074"
+    ],
+    "PID": "http://hdl.handle.net/11356/1074",
+    "PublicationTimestamp": "2016-09-20T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/324414"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Ljube\u0161i\u0107, Nikola",
+        "Toral, Antonio",
+        "Pirinen, Tommi"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1074;2017-06-27T18:12:39Z;hdl_11356_1023;hdl_11356_1024;Finnish web corpus fiWaC 1.0;Ljube\u0161i\u0107, Nikola;Pirinen, Tommi;Toral, Antonio;web corpus;The Finnish web corpus fiWaC was built by crawling the .fi top-level domain in 2015 for both Finnish and English documents. The corpus was naively tokenised (via spaces), near-deduplicated on paragraph level and paragraph-shuffled. Each paragraph contains metadata on the URL and language identification. The Finnish (~1.7B tokens) and English (~2B tokens) parts of the corpus are organised in separate files.;2016-09-20;corpus;http://hdl.handle.net/11356/1074;fin;eng;info:eu-repo/grantAgreement/EC/FP7/324414;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 38;Jo\u017eef Stefan Institute;http://www.abumatran.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e2af5170-126a-548e-8477-83142e5bc6c4",
+    "notes": [
+        "The Finnish web corpus fiWaC was built by crawling the .fi top-level domain in 2015 for both Finnish and English documents. The corpus was naively tokenised (via spaces), near-deduplicated on paragraph level and paragraph-shuffled. Each paragraph contains metadata on the URL and language identification. The Finnish (~1.7B tokens) and English (~2B tokens) parts of the corpus are organised in separate files."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1074"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "web corpus"
+        }
+    ],
+    "title": [
+        "Finnish web corpus fiWaC 1.0"
+    ],
+    "url": ""
+}

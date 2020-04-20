@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "15 files ; 1.5 MB"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1038",
+    "MetadataAccess": [
+        "oai:ota:oucs:1038"
+    ],
+    "PublicationTimestamp": "1987-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1987"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Music"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Corpora, Corpus"
+    ],
+    "fulltext": "oai:ota:oucs:1038;2018-03-05T10:37:10Z;http://ota.ox.ac.uk/headers/1038.xml;Essen corpus of German folksong melodies  / compiled by Helmut Schaffrath;Corpora, Corpus;1987;text_and_corpus_linguistics;Music -- Germany;deu;Oxford Text Archive, University of Oxford;15 files ; 1.5 MB;Text;Music;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "77fa2758-1dda-5a05-8523-3c917ac163e6",
+    "oai_identifier": [
+        "oai:ota:oucs:1038"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Music -- Germany"
+        }
+    ],
+    "title": [
+        "Essen corpus of German folksong melodies  / compiled by Helmut Schaffrath"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1038.xml"
+}

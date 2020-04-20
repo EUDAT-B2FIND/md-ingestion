@@ -1,0 +1,133 @@
+{
+    "Contact": [
+        "Charles University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/x-tar",
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Arabic",
+        "Basque",
+        "Bengali",
+        "Bulgarian",
+        "Catalan",
+        "Croatian",
+        "Czech",
+        "Danish",
+        "Dutch",
+        "English",
+        "Estonian",
+        "Finnish",
+        "French",
+        "German",
+        "Modern Greek (1453-)",
+        "Ancient Greek (to 1453)",
+        "Hebrew",
+        "Hindi",
+        "Hungarian",
+        "Indonesian",
+        "Irish",
+        "Italian",
+        "Japanese",
+        "Latin",
+        "Persian",
+        "Polish",
+        "Portuguese",
+        "Romanian",
+        "Russian",
+        "Slovak",
+        "Slovenian",
+        "Spanish",
+        "Swedish",
+        "Tamil",
+        "Telugu",
+        "Turkish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1508",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1508"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1508",
+    "PublicationTimestamp": "2015-08-18T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Charles University"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0023-9551-4"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "HamleDT 3.0 License Terms",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-hamledt-3.0",
+        "PUB"
+    ],
+    "author": [
+        "\u017dabokrtsk\u00fd, Zden\u011bk",
+        "Popel, Martin",
+        "Ramasamy, Loganathan",
+        "\u0160t\u011bp\u00e1nek, Jan",
+        "Ma\u0161ek, Jan",
+        "Zeman, Daniel",
+        "Rosa, Rudolf",
+        "Mare\u010dek, David"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1508;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;HamleDT 3.0;Zeman, Daniel;Mare\u010dek, David;Ma\u0161ek, Jan;Popel, Martin;Ramasamy, Loganathan;Rosa, Rudolf;\u0160t\u011bp\u00e1nek, Jan;\u017dabokrtsk\u00fd, Zden\u011bk;annotated corpus;morphology;syntax;dependency;treebank;harmonized annotation;common annotation style;HamleDT (HArmonized Multi-LanguagE Dependency Treebank) is a compilation of existing dependency treebanks (or dependency conversions of other treebanks), transformed so that they all conform to the same annotation style. This version uses Universal Dependencies as the common annotation style.\r\n\r\nUpdate (November 1017): for a current collection of harmonized dependency  treebanks, we recommend using the Universal Dependencies (UD). All of the corpora that are distributed in HamleDT in full are also part of the UD project; only some corpora from the Patch group (where HamleDT provides only the harmonizing scripts but not the full corpus data) are available in HamleDT but not in UD.;2015-08-18;corpus;http://hdl.handle.net/11234/1-1508;ara;eus;ben;bul;cat;hrv;ces;dan;nld;eng;est;fin;fra;deu;ell;grc;heb;hin;hun;ind;gle;ita;jpn;lat;fas;pol;por;ron;rus;slk;slv;spa;swe;tam;tel;tur;http://hdl.handle.net/11858/00-097C-0000-0023-9551-4;HamleDT 3.0 License Terms;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-hamledt-3.0;PUB;text/plain; charset=utf-8;application/x-tar;downloadable_files_count: 1;Charles University;http://ufal.mff.cuni.cz/hamledt",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3054db29-4ded-54c7-9304-9bb703c63ce7",
+    "notes": [
+        "HamleDT (HArmonized Multi-LanguagE Dependency Treebank) is a compilation of existing dependency treebanks (or dependency conversions of other treebanks), transformed so that they all conform to the same annotation style. This version uses Universal Dependencies as the common annotation style.\r\n\r\nUpdate (November 1017): for a current collection of harmonized dependency  treebanks, we recommend using the Universal Dependencies (UD). All of the corpora that are distributed in HamleDT in full are also part of the UD project; only some corpora from the Patch group (where HamleDT provides only the harmonizing scripts but not the full corpus data) are available in HamleDT but not in UD."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1508"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "annotated corpus"
+        },
+        {
+            "name": "morphology"
+        },
+        {
+            "name": "syntax"
+        },
+        {
+            "name": "dependency"
+        },
+        {
+            "name": "treebank"
+        },
+        {
+            "name": "harmonized annotation"
+        },
+        {
+            "name": "common annotation style"
+        }
+    ],
+    "title": [
+        "HamleDT 3.0"
+    ],
+    "url": ""
+}

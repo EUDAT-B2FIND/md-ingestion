@@ -1,0 +1,64 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-133417381",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:17029860",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17029860"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63675889199,
+    "TempCoverageEnd": 63675889199,
+    "TemporalCoverage": " point in time : 2018-10-23T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-10-23T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-10-23T11:59:59Z",
+    "author": [
+        "Peter CLOETENS",
+        "Yang Yang",
+        "Sylvain BOHIC",
+        "Murielle SALOME"
+    ],
+    "fulltext": "oai:oai.datacite.org:17029860;2018-11-18T04:02:34Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-133417381;Peter CLOETENS;Yang Yang;Murielle SALOME;Sylvain BOHIC;Zernike phase contrast projection imaging;In-house Method and Instrumentation;IH-MI-1424;id16a;European Synchrotron Radiation Facility;2018-10-23;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "1f7d0109-08aa-5f0a-871d-9306c8f5eb54",
+    "oai_identifier": [
+        "oai:oai.datacite.org:17029860"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "In-house Method Instrumentation"
+        },
+        {
+            "name": "IH-MI-"
+        },
+        {
+            "name": "ida"
+        }
+    ],
+    "title": [
+        "Zernike phase contrast projection imaging"
+    ],
+    "url": ""
+}

@@ -1,0 +1,55 @@
+{
+    "Contact": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Hindi"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-987",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-987"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-987",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-987;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;LAC Hindi Corpus;Language and Cognition corpus;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-987;hin;downloadable_files_count: 0;Max Planck Institute for Psycholinguistics;http://corpus1.mpi.nl/ds/imdi_browser?openpath=MPI30273%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "869bd016-8406-51b4-96a4-22fd706aaf88",
+    "notes": [
+        "Language and Cognition corpus"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-987"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "LAC Hindi Corpus"
+    ],
+    "url": ""
+}

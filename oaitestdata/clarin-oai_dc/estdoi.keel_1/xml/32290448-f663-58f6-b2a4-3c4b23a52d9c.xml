@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:8922495</identifier>
+    <datestamp>2019-03-26T13:32:00Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele p&#245;his&#245;navara s&#245;nastik</dc:title>
+      <dc:title xml:lang="en">Basic Estonian Dictionary</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:creator>Kallas, Jelena</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-08-23</dc:date>
+      <dc:date>Updated: 2016-08-23</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05924L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Sisaldab u 5000 eesti keele sagedasemat s&#245;na koos kasutusn&#228;idetega. Lisaks illustreerivad pildid, m&#228;rks&#245;nade h&#228;&#228;ldus (audiofailid). M&#245;eldud eesk&#228;tt A2- ja B1-keeleoskustasemega eesti keele &#245;ppijatele.  Eraldi rakendus on eesti viipekeele - eesti &#252;ldkeele e-s&#245;nastiku kasutajaliides (sisaldab videofaile). </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

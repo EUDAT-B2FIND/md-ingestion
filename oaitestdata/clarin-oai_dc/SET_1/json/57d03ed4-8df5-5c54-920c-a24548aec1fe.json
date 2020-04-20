@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4369",
+    "MetadataAccess": [
+        "oai:ota:oucs:4369"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Sheridan, Richard Brinsley, 1751-1816."
+    ],
+    "fulltext": "oai:ota:oucs:4369;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4369.xml;The duenna: a comic opera. In three acts. As performed at the Theatre Royal, Covent Garden: with universal applause. By R. B. Sheridan, Esq;Sheridan, Richard Brinsley, 1751-1816.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "57d03ed4-8df5-5c54-920c-a24548aec1fe",
+    "oai_identifier": [
+        "oai:ota:oucs:4369"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The duenna: a comic opera. In three acts. As performed at the Theatre Royal, Covent Garden: with universal applause. By R. B. Sheridan, Esq"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4369.xml"
+}

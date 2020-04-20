@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Grid and High Performance Computing Group,  ITACA, Universidad Polit\u00e9cnica de Valencia",
+        "Universidad de Alicante"
+    ],
+    "Contributor": [
+        "Soriano, Jos\u00e9 Manuel G\u00f3mez"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Arabic",
+        "English",
+        "French",
+        "Italian",
+        "Oromo",
+        "Urdu"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1212",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1212"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1212",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Grid and High Performance Computing Group,  ITACA, Universidad Polit\u00e9cnica de Valencia",
+        "Universidad de Alicante"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Spain"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1212;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;JIRS;Soriano, Jos\u00e9 Manuel G\u00f3mez;JIRS is a Passage Retrieval system specially suited for Question Answering. It could be adapted to others languages very easily. ask (Written Language): Information Retrieval Applications Question/Answering Environment: OS-independent Access: GPLv3;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1212;ara;eng;fra;ita;orm;urd;downloadable_files_count: 0;Spain;Grid and High Performance Computing Group,  ITACA, Universidad Polit\u00e9cnica de Valencia;Universidad de Alicante;https://sourceforge.net/projects/jirs/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7bd30851-56a6-5dc5-aecb-3c1c09c74f19",
+    "notes": [
+        "JIRS is a Passage Retrieval system specially suited for Question Answering. It could be adapted to others languages very easily. ask (Written Language): Information Retrieval Applications Question/Answering Environment: OS-independent Access: GPLv3"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1212"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "JIRS"
+    ],
+    "url": ""
+}

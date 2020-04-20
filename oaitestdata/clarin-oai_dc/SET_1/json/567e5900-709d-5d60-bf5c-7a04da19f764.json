@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "UAM"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/richtext",
+        "application/pdf",
+        "downloadable_files_count: 2"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/245",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/245"
+    ],
+    "PID": "http://hdl.handle.net/11321/245",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "UAM"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Adamczyk, El\u017cbieta",
+        "Kopaczyk, Joanna",
+        "W\u0142odarczyk, Matylda"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/245;2016-02-10T07:37:16Z;hdl_11321_3;hdl_11321_4;ROThA_Vol. 2;W\u0142odarczyk, Matylda;Kopaczyk, Joanna;Adamczyk, El\u017cbieta;multilingualism;code-switching;medieval court oaths;Old Polish;Medieval Latin;Greater Poland;trial;2016;corpus;http://hdl.handle.net/11321/245;Old Polish, Latin, Polish;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;application/pdf;text/richtext;downloadable_files_count: 2;UAM;http//:wa.amu.edu.pl",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "567e5900-709d-5d60-bf5c-7a04da19f764",
+    "notes": [
+        "trial"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/245"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "multilingualism"
+        },
+        {
+            "name": "code-switching"
+        },
+        {
+            "name": "medieval court oaths"
+        },
+        {
+            "name": "Old Polish"
+        },
+        {
+            "name": "Medieval Latin"
+        },
+        {
+            "name": "Greater Poland"
+        }
+    ],
+    "title": [
+        "ROThA_Vol. 2"
+    ],
+    "url": ""
+}

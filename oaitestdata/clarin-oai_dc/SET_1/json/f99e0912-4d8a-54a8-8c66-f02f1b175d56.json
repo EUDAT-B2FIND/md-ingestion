@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Norges Handelsh\u00f8yskole"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian Bokm\u00e5l",
+        "Norwegian Nynorsk",
+        "English",
+        "German",
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/75",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/75"
+    ],
+    "PID": "http://hdl.handle.net/11509/75",
+    "PublicationTimestamp": "2013-09-20T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Norges Handelsh\u00f8yskole"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "CLARIN-ACA-NC",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Olstad, Vemund"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/75;2016-04-15T05:59:20Z;hdl_11509_1;hdl_11509_2;NOT-basen;Olstad, Vemund;Termbase;Nhh;Not;Norsk Termbank;NOT-basen is a TBX-export of a terminology database developed by Norsk termbank. This termbase is to be considered an historical resource, and has not been updated for a while.;2013-09-20;lexicalConceptualResource;http://hdl.handle.net/11509/75;nob;nno;eng;deu;fra;CLARIN-ACA-NC;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1;ACA;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Norges Handelsh\u00f8yskole;http://www.terminologi.no",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f99e0912-4d8a-54a8-8c66-f02f1b175d56",
+    "notes": [
+        "NOT-basen is a TBX-export of a terminology database developed by Norsk termbank. This termbase is to be considered an historical resource, and has not been updated for a while."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/75"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Termbase"
+        },
+        {
+            "name": "Nhh"
+        },
+        {
+            "name": "Norsk Termbank"
+        }
+    ],
+    "title": [
+        "NOT-basen"
+    ],
+    "url": ""
+}

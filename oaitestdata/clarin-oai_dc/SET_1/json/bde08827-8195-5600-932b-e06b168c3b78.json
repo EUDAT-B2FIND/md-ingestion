@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences"
+    ],
+    "Contributor": [
+        "Simov, Kiril"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1242",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1242"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1242",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Bulgaria"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Simov, Alex",
+        "Simov, Kiril",
+        "Osenova, Petya"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1242;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;BulTreeBank Morphosyntactic Disambiguator;Simov, Kiril;Osenova, Petya;Simov, Alex;Simov, Kiril;This is a hybrid system: rules, neural network, rules. First \nrules for the sure cases are applied, then a neural network \ndisambiguator is applied, then rules for repairing of the most \nfrequent errors of the neural network. The rules are implemented \nas constraints in CLaRK System. The neural network is additional \nmodule implemented in Java. It is called CLaRK. It requires the \nmorphologically annotated input.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1242;downloadable_files_count: 0;Bulgaria;Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bde08827-8195-5600-932b-e06b168c3b78",
+    "notes": [
+        "This is a hybrid system: rules, neural network, rules. First \nrules for the sure cases are applied, then a neural network \ndisambiguator is applied, then rules for repairing of the most \nfrequent errors of the neural network. The rules are implemented \nas constraints in CLaRK System. The neural network is additional \nmodule implemented in Java. It is called CLaRK. It requires the \nmorphologically annotated input."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1242"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "BulTreeBank Morphosyntactic Disambiguator"
+    ],
+    "url": ""
+}

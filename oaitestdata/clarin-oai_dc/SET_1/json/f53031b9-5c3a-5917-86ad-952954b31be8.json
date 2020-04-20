@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Center of Computational Linguistics, Vytautas Magnus University"
+    ],
+    "Contributor": [
+        "Utka, dr. Andrius"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/xml"
+    ],
+    "Language": [
+        "Czech",
+        "English",
+        "Lithuanian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-624",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-624"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-624",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Center of Computational Linguistics, Vytautas Magnus University"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Lithuania"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-624;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Bilingual English-Lithuanian, Lithuanian-English, Czech-Lithuanian, Lithuanian-Czech corpora;Utka, dr. Andrius;A collection of parallel corpora: English-Lithuanian (2m words), Lithuanian-English (0,06m words), Czech-Lithuanian (0,8m words), Lithuanian-Czech (0,02m words). All the corpora are online-searcheable via one interface at http://donelaitis.vdu.lt/main_en.php?id=4&nr=1_2. The corpus is still being updated with new texts.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-624;ces;eng;lit;application/xml;downloadable_files_count: 0;Lithuania;Center of Computational Linguistics, Vytautas Magnus University;http://tekstynas.vdu.lt/page.xhtml;?id=parallelCorpus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f53031b9-5c3a-5917-86ad-952954b31be8",
+    "notes": [
+        "A collection of parallel corpora: English-Lithuanian (2m words), Lithuanian-English (0,06m words), Czech-Lithuanian (0,8m words), Lithuanian-Czech (0,02m words). All the corpora are online-searcheable via one interface at http://donelaitis.vdu.lt/main_en.php?id=4&nr=1_2. The corpus is still being updated with new texts."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-624"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Bilingual English-Lithuanian, Lithuanian-English, Czech-Lithuanian, Lithuanian-Czech corpora"
+    ],
+    "url": ""
+}

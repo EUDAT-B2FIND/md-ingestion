@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "The GAVO DC team"
+    ],
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://org.gavo.dc/cars/q/cutout",
+    "PublicationTimestamp": "2018-12-21T17:01:27Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "The GAVO DC team"
+    ],
+    "RelatedIdentifier": [
+        "ivo://org.gavo.dc/cars/q/cutout"
+    ],
+    "author": [
+        "Dietrich, J. P.",
+        "Schirmer, M.",
+        "Brimioulle, F.",
+        "Lerchster, M.",
+        "Hildebrandt, H.",
+        "Erben, T.",
+        "Hudelot, P.",
+        "Schneider, P.",
+        "van Waerbeke, L.",
+        "Benjamin, J.",
+        "Holhjem, K.",
+        "Schrabback, T.",
+        "Cordes, O."
+    ],
+    "fulltext": "ivo://org.gavo.dc/cars/q/cutout;2018-12-21T17:01:27Z;CARS image cutouts;ivo://org.gavo.dc/cars/q/cutout;Erben, T.;Hildebrandt, H.;Lerchster, M.;Hudelot, P.;Benjamin, J.;van Waerbeke, L.;Schrabback, T.;Brimioulle, F.;Cordes, O.;Dietrich, J. P.;Holhjem, K.;Schirmer, M.;Schneider, P.;Images and data from from the CFHTLS archive research survey, a\n        multi-band dataset spanning 37 square degrees of sky in high galactic\n        latitudes.;The GAVO DC team",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0a039405-b85b-574a-b5e1-4290da95bb21",
+    "notes": [
+        "Images and data from from the CFHTLS archive research survey, a\n        multi-band dataset spanning 37 square degrees of sky in high galactic\n        latitudes."
+    ],
+    "oai_identifier": [
+        "ivo://org.gavo.dc/cars/q/cutout"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        "Images and data from from the CFHTLS archive research survey, a\n        multi-band dataset spanning 37 square degrees of sky in high galactic\n        latitudes."
+    ]
+}

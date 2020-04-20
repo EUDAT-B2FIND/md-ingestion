@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 118 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1860",
+    "MetadataAccess": [
+        "oai:ota:oucs:1860"
+    ],
+    "PublicationTimestamp": "1896-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1896"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Twain, Mark, 1835-1910"
+    ],
+    "fulltext": "oai:ota:oucs:1860;2018-04-11T16:03:39Z;http://ota.ox.ac.uk/headers/1860.xml;Tom Sawyer, detective / by Mark Twain;Twain, Mark, 1835-1910;1896;text_and_corpus_linguistics;Fiction -- United States -- 19th century;Short stories -- United States -- 19th century;Juvenile literature -- United States -- 19th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 118 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c5dc33ac-2877-5793-8ad1-d9721ab73b60",
+    "oai_identifier": [
+        "oai:ota:oucs:1860"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- United States -- th century"
+        },
+        {
+            "name": "Short stories -- United States -- th century"
+        },
+        {
+            "name": "Juvenile literature -- United States -- th century"
+        }
+    ],
+    "title": [
+        "Tom Sawyer, detective / by Mark Twain"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1860.xml"
+}

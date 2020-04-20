@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "http://clarino.uib.no/iness/"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/90",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/90"
+    ],
+    "PID": "http://hdl.handle.net/11509/90",
+    "PublicationTimestamp": "2015-08-17T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "http://clarino.uib.no/iness/"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "author": [
+        "Ros\u00e9n, Victoria"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/90;2016-04-15T05:59:21Z;hdl_11509_1;hdl_11509_2;INESS list of lexical units unknown to the NorGram lexicon;Ros\u00e9n, Victoria;Lexical Conceptual Resource;In the INESS project, Norwegian texts in Norwegian Bokm\u00e5l and Nynorsk are parsed with the NorGram grammar and lexicon. When text is parsed, there will always be words that are unknown to the morphological analyzer and/or the lexicon. INESS has therefore developed an intelligent browser-based preprocessing interface which facilitates, among other things, the efficient treatment of unknown word forms. The list of word forms that have not been automatically recognized are manually inspected.\r\nWhile some of these result from OCR errors and others are simply typos, most unrecognized word forms are productive compounds, words only occurring in MWEs, names, foreign words, neologisms, interjections, dialect words, and systematic, or intended, misspellings. To read more about the types of lexical units registered, please refer to the documentation at http://clarino.uib.no/iness/page?page-id=Text_preprocessing.;2015-08-17;lexicalConceptualResource;http://hdl.handle.net/11509/90;nor;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;http://clarino.uib.no/iness/;http://clarino.uib.no/iness/page",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "67aae7c3-51a0-5aca-a37a-ac4296599135",
+    "notes": [
+        "In the INESS project, Norwegian texts in Norwegian Bokm\u00e5l and Nynorsk are parsed with the NorGram grammar and lexicon. When text is parsed, there will always be words that are unknown to the morphological analyzer and/or the lexicon. INESS has therefore developed an intelligent browser-based preprocessing interface which facilitates, among other things, the efficient treatment of unknown word forms. The list of word forms that have not been automatically recognized are manually inspected.\r\nWhile some of these result from OCR errors and others are simply typos, most unrecognized word forms are productive compounds, words only occurring in MWEs, names, foreign words, neologisms, interjections, dialect words, and systematic, or intended, misspellings. To read more about the types of lexical units registered, please refer to the documentation at http://clarino.uib.no/iness/page?page-id=Text_preprocessing."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/90"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Lexical Conceptual Resource"
+        }
+    ],
+    "title": [
+        "INESS list of lexical units unknown to the NorGram lexicon"
+    ],
+    "url": ""
+}

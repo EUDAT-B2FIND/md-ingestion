@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Paddy Bullard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2703",
+    "MetadataAccess": [
+        "oai:ota:oucs:2703"
+    ],
+    "PublicationTimestamp": "1727-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1727"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Jonathan Swift Archive"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Swift, Jonathan, 1667-1745"
+    ],
+    "fulltext": "oai:ota:oucs:2703;2018-08-02T14:11:37Z;http://ota.ox.ac.uk/headers/2703.xml;A proposal for correcting, improving and ascertaining the English tongue;Swift, Jonathan, 1667-1745;1727;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Paddy Bullard;Text;Jonathan Swift Archive;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "101b9217-6355-5229-93f0-cfef245ac941",
+    "oai_identifier": [
+        "oai:ota:oucs:2703"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A proposal for correcting, improving and ascertaining the English tongue"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2703.xml"
+}

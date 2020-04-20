@@ -1,0 +1,116 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/221</identifier>
+    <datestamp>2015-06-24T11:21:50Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Mining blogs</dc:title>
+      <dc:creator>Konieczna, Dorota</dc:creator>
+      <dc:subject>blog</dc:subject>
+      <dc:subject>mining</dc:subject>
+      <dc:description>Blogi dotycz&#261;ce g&#243;rnictwa. Zakres: 01.01.2015 - 20.06.2015. Wpisy wraz z komentarzami.</dc:description>
+      <dc:date>2015-06-22</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/221</dc:identifier>
+      <dc:language>Polish</dc:language>
+      <dc:rights>Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>text/richtext</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 88</dc:format>
+      <dc:publisher>UE w Katoiwcach</dc:publisher>
+      <dc:source>http://www.ue.katowice.pl/no_cache.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

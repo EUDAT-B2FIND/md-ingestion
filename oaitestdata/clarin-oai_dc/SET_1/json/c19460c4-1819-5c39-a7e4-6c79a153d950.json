@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=7c508aa8bea911e1a404080027e73ea2abb5e2fadb4143b2ae4c15c250af7c78",
+    "MetadataAccess": [
+        "7c508aa8bea911e1a404080027e73ea2abb5e2fadb4143b2ae4c15c250af7c78"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "7c508aa8bea911e1a404080027e73ea2abb5e2fadb4143b2ae4c15c250af7c78;2018-11-15T16:39:23Z;toolService;toolService:tool;UIMA/U-Compare Apertium POS Tagger ;This tool assigns a part-of-speech tag and base form to each token in a text. It operates on text that has previously been tokenised and morphologically analysed. The POS tagger is a module of Apertium machine translation system. The provided tool can currently operate on a subset of the languages that are supported by the Apertium system, namely:  English, Spanish, Calatan, Galician, Portuguese, Romanian and Basque. \nNOTE: The morphological analysis required prior to running the POS tagger MUST be carried out by running the Apertium morphological analyser (which also performs tokeniaation). \n\nThe tool is provided as a UIMA component, specifically as Java archive (jar) file, which can be incorporated within any UIMA workflow. However, it is particularly designed use in the U-Compare text mining plaform (Kano et al., 2009; Kano et al., 2011; see separate META-SHARE record), since the types of annotations it produces are compliant with the U-Compare. \n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c19460c4-1819-5c39-a7e4-6c79a153d950",
+    "notes": [
+        "This tool assigns a part-of-speech tag and base form to each token in a text. It operates on text that has previously been tokenised and morphologically analysed. The POS tagger is a module of Apertium machine translation system. The provided tool can currently operate on a subset of the languages that are supported by the Apertium system, namely:  English, Spanish, Calatan, Galician, Portuguese, Romanian and Basque. \nNOTE: The morphological analysis required prior to running the POS tagger MUST be carried out by running the Apertium morphological analyser (which also performs tokeniaation). \n\nThe tool is provided as a UIMA component, specifically as Java archive (jar) file, which can be incorporated within any UIMA workflow. However, it is particularly designed use in the U-Compare text mining plaform (Kano et al., 2009; Kano et al., 2011; see separate META-SHARE record), since the types of annotations it produces are compliant with the U-Compare. \n"
+    ],
+    "oai_identifier": [
+        "7c508aa8bea911e1a404080027e73ea2abb5e2fadb4143b2ae4c15c250af7c78"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "UIMA/U-Compare Apertium POS Tagger "
+    ]
+}

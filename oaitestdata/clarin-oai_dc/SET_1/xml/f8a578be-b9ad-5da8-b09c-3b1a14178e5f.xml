@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/275</identifier>
+    <datestamp>2018-07-25T12:26:57Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>WordnetLoom 1.68.2</dc:title>
+      <dc:creator>Wroclaw University of Technology</dc:creator>
+      <dc:subject>wordnet</dc:subject>
+      <dc:subject>lexical units</dc:subject>
+      <dc:subject>lexico-semantic relations</dc:subject>
+      <dc:subject>mapping</dc:subject>
+      <dc:subject>Princeton WordNet</dc:subject>
+      <dc:subject>bilingual</dc:subject>
+      <dc:description>WordnetLoom &#8211; is an wordnet editor application built for the needs of the construction of a the largest Polish wordnet called plWordNet. WordnetLoom provides two means of interaction: a form-based, implemented initially, and a visual, graph-based introduced recently. The visual, graph-based interactive presentation of the wordnet structure enables browsing and its direct editing on the structure of lexico-semantic relations and synsets. WordnetLooms works in a distributed environment, i.e. several linguists can work simulanuously from different sites on the same central database.</dc:description>
+      <dc:date>2016-06-02</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/275</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>plWordNet</dc:rights>
+      <dc:rights>http://clarin-pl.eu/en/licenses/plwordnet-2/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Wroclaw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/en/tools-and-resources/tools/wordnetloom</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

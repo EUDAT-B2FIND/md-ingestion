@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/x-bzip2",
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 3",
+        "application/zip"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-F67C-5",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-F67C-5"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-000D-F67C-5",
+    "PublicationTimestamp": "2013-02-02T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11234/1-1469"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" license",
+        "http://opensource.org/licenses/BSD-2-Clause",
+        "PUB"
+    ],
+    "author": [
+        "Richter, Michal"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-F67C-5;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Korektor;Richter, Michal;grammar checker;spellchecker;Statistical spell- and (occasional) grammar-checker. There are three versions: a unix command line utility and an OS X SpellServer with a System Service, that integrates with native OS X GUI applications, and a web service run by Lindat-Clarin, that can be used either through a web form in a browser, or by web applications using API.;2013-02-02;toolService;http://hdl.handle.net/11858/00-097C-0000-000D-F67C-5;ces;http://hdl.handle.net/11234/1-1469;BSD 2-Clause \"Simplified\" or \"FreeBSD\" license;http://opensource.org/licenses/BSD-2-Clause;PUB;text/plain; charset=utf-8;application/zip;application/zip;application/x-bzip2;downloadable_files_count: 3;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://redmine.ms.mff.cuni.cz/projects/korektor",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4684be50-9a12-58a1-bff9-45ed7e8432b4",
+    "notes": [
+        "Statistical spell- and (occasional) grammar-checker. There are three versions: a unix command line utility and an OS X SpellServer with a System Service, that integrates with native OS X GUI applications, and a web service run by Lindat-Clarin, that can be used either through a web form in a browser, or by web applications using API."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-F67C-5"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "grammar checker"
+        },
+        {
+            "name": "spellchecker"
+        }
+    ],
+    "title": [
+        "Korektor"
+    ],
+    "url": ""
+}

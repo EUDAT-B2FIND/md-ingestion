@@ -1,0 +1,54 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "text/html"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-927",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-927"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-927",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "http://titus.uni-frankfurt.de/texte/texte2.htm#Estart"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-927;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;TITUS Tokharian B (West);ca. 200.000 tokens; linked with relational database; XML-encoding in progress;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-927;http://titus.uni-frankfurt.de/texte/texte2.htm#Estart;text/html;downloadable_files_count: 0;Germany;http://titus.uni-frankfurt.de/texte/texte2.htm#TochB",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1183b862-1bb9-57fa-be01-817ce659b2ee",
+    "notes": [
+        "ca. 200.000 tokens; linked with relational database; XML-encoding in progress"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-927"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "TITUS Tokharian B (West)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3143",
+    "MetadataAccess": [
+        "oai:ota:oucs:3143"
+    ],
+    "PublicationTimestamp": "1879-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1879"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "James, Henry, 1843-1916"
+    ],
+    "fulltext": "oai:ota:oucs:3143;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3143.xml;Confidence;Confidence;James, Henry, 1843-1916;not after: 1879;text_and_corpus_linguistics;American literature -- 19th century;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6171b0ce-f89e-5525-a34b-c9dbeaefcc04",
+    "oai_identifier": [
+        "oai:ota:oucs:3143"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American literature -- th century"
+        }
+    ],
+    "title": [
+        "Confidence",
+        "Confidence"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3143.xml"
+}

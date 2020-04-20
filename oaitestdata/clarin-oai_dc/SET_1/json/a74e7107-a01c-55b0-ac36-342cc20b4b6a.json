@@ -1,0 +1,77 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Norwegian",
+        "Vietnamese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/22",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/22"
+    ],
+    "PID": "http://hdl.handle.net/11509/22",
+    "PublicationTimestamp": "2012-12-19T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Sk\u00e5nland, Marianne Haslev"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/22;2016-06-01T11:51:52Z;hdl_11509_1;hdl_11509_2;Norwegian-Vietnamese Dictionary;Norsk-vietnamesisk ordbok;Sk\u00e5nland, Marianne Haslev;Lexical Conceptual Resource;Text;Computational Lexicon;Norwegian;Vietnamese;The Resource Norsk-vietnamesisk ordbok (resource short name: NVO) [Norwegian-Vietnamese dictionary] results from research in the project Norsk-vietnamesisk ordbok at University of Bergen, Norway.  Each entry in the dictionary contains information about: pronunciation (phonetic), word class, conjugation forms and meanings, along with the corresponding translation into Vietnamese and Norwegian example sentences for each intended meaning. The IPR holder kindly permits the distribution of the LMF version as a downloadable resource.;2012-12-19;lexicalConceptualResource;NOT_DEFINED_FOR_V2;http://hdl.handle.net/11509/22;nor;vie;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;CC;text/xml;text/xml;downloadable_files_count: 1;https://github.com/clarino/nvo",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a74e7107-a01c-55b0-ac36-342cc20b4b6a",
+    "notes": [
+        "The Resource Norsk-vietnamesisk ordbok (resource short name: NVO) [Norwegian-Vietnamese dictionary] results from research in the project Norsk-vietnamesisk ordbok at University of Bergen, Norway.  Each entry in the dictionary contains information about: pronunciation (phonetic), word class, conjugation forms and meanings, along with the corresponding translation into Vietnamese and Norwegian example sentences for each intended meaning. The IPR holder kindly permits the distribution of the LMF version as a downloadable resource."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/22"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Lexical Conceptual Resource"
+        },
+        {
+            "name": "Text"
+        },
+        {
+            "name": "Computational Lexicon"
+        },
+        {
+            "name": "Norwegian"
+        },
+        {
+            "name": "Vietnamese"
+        }
+    ],
+    "title": [
+        "Norwegian-Vietnamese Dictionary",
+        "Norsk-vietnamesisk ordbok"
+    ],
+    "url": ""
+}

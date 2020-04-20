@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Drukarnia J.K.M. XX Trynitarzy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-232107",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-232107"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D0F-E",
+    "PublicationTimestamp": "1792-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1792"
+    ],
+    "Publisher": [
+        "Drukarnia J.K.M. XX Trynitarzy"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/232107",
+        "oai:jbc.bj.uj.edu.pl:publication:243786"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "M\u0119ci\u0144ski, J\u00f3zef (1748-1814)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-232107;2019-03-01T13:12:50Z;Kazanie na pogrzebie Jasnie Wielmozney Heleny z Trejerow Skarszewski, podstoliny urz\u0119dowskiey [...] miane przez J\u00f3zefa M\u0119ci\u0144skiego [...] w kosciele bychawieckim dnia 7. listopada roku 1792;M\u0119ci\u0144ski, J\u00f3zef (1748-1814);starodruki 18\u00a0w.;Drukarnia J.K.M. XX Trynitarzy;1792;starodruk;application/xml;clarind-uds:poldilemma-232107;hdl:11858/00-246C-0000-0023-8D0F-E;Biblioteka Jagiello\u0144ska, BJ St. Dr. 25715 I;pol;http://jbc.bj.uj.edu.pl/Content/232107;oai:jbc.bj.uj.edu.pl:publication:243786;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "45f222bf-3e90-5106-a146-b7b9695b037d",
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-232107"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Kazanie na pogrzebie Jasnie Wielmozney Heleny z Trejerow Skarszewski, podstoliny urz\u0119dowskiey [...] miane przez J\u00f3zefa M\u0119ci\u0144skiego [...] w kosciele bychawieckim dnia 7. listopada roku 1792"
+    ],
+    "url": ""
+}

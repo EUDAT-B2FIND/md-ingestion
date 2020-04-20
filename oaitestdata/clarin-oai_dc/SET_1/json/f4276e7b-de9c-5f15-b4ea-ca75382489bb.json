@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "text/xml",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Southern Sami",
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/96",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/96"
+    ],
+    "PID": "http://hdl.handle.net/11509/96",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Giellatekno - Saami Language Technology"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "The Divvun group at UiT The Arctic University of Norway",
+        "Giellatekno - Saami Language Technology, UiT The Arctic University of Norway"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/96;2016-09-06T13:01:21Z;hdl_11509_1;hdl_11509_2;South Saami-Swedish dictionary;Giellatekno - Saami Language Technology, UiT The Arctic University of Norway;The Divvun group at UiT The Arctic University of Norway;Bilingual Lexicon;Swedish;South Saami;Machine-readable Dictionary;The South Saami-Swedish dictionary is the work done by Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language communities. The dictionary contains 7133 entries in Giellatekno's dictionary xml format. In spite of the extensive quality control, it may contain entries with objectionable translations. If you find any errors or want to add more words, download the file, edit it, and send it back to giellatekno@uit.no and feedback@divvun.no.\r\nPlease note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata).;2015;lexicalConceptualResource;http://hdl.handle.net/11509/96;sma;swe;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/xml;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Giellatekno - Saami Language Technology;http://giellatekno.uit.no/index.eng.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f4276e7b-de9c-5f15-b4ea-ca75382489bb",
+    "notes": [
+        "The South Saami-Swedish dictionary is the work done by Giellatekno and Divvun research groups, Department of Linguistics, UiT The Arctic University of Norway, as well as by members of the language communities. The dictionary contains 7133 entries in Giellatekno's dictionary xml format. In spite of the extensive quality control, it may contain entries with objectionable translations. If you find any errors or want to add more words, download the file, edit it, and send it back to giellatekno@uit.no and feedback@divvun.no.\r\nPlease note that the Giellatekno resources are dynamic in nature. To ensure that you have a completely updated version, please contact Giellatekno (see Contact Info in metadata)."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/96"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Bilingual Lexicon"
+        },
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "South Saami"
+        },
+        {
+            "name": "Machine-readable Dictionary"
+        }
+    ],
+    "title": [
+        "South Saami-Swedish dictionary"
+    ],
+    "url": ""
+}

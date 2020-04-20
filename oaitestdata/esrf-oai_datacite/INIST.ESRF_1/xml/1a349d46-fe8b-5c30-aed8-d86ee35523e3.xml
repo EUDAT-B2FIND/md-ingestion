@@ -1,0 +1,102 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:15254064</identifier>
+    <datestamp>2018-11-02T04:02:53Z</datestamp>
+    <setSpec>INIST</setSpec>
+    <setSpec>INIST.ESRF</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.1/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.1/ http://schema.datacite.org/oai/oai-1.1/oai.xsd">
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>INIST.ESRF</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.15151/ESRF-ES-105564349</identifier>
+          <creators>
+            <creator>
+              <creatorName>Andy-Mark THUNNISSEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Sergei STRELKOV</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Bert JANSSEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Ramon VAN DEN BOS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Stephen WEEKS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Anamika GAUR</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Matthieu ZERONIAN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Wouter BEUGELINK</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Tatjana HEIDEBRECHT-LINNEMANN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Koen VERSCHUEREN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Kenneth VERSTRAETE</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Nikolas CAPRA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Viviana NEVIANI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Steff DE GRAEF</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Fredj BEN BDIRA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Maru&#353;a PROLIC KALINSEK</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Gopinath MURUGANANDAM</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Sergio MARTINEZ</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Luping PANG</creatorName>
+            </creator>
+            <creator>
+              <creatorName>GABRIELA GARCIA RODRIGUEZ</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Evgenii OSIPOV</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Lucas CHATAIGNER</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>Holland-Belgium BAG</title>
+          </titles>
+          <subjects>
+            <subject subjectScheme="Proposal Type Description">Macromolecular Crystallography</subject>
+            <subject subjectScheme="Proposal">MX-1993</subject>
+            <subject subjectScheme="instrument">id23-2</subject>
+          </subjects>
+          <publisher>European Synchrotron Radiation Facility</publisher>
+          <dates>
+            <date dateType="Collected">2018-06-15</date>
+          </dates>
+          <publicationYear>2021</publicationYear>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Experiment Session</resourceType>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

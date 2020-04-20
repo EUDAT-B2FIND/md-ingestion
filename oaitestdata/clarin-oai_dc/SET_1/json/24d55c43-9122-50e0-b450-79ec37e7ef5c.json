@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5086",
+    "MetadataAccess": [
+        "oai:ota:oucs:5086"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Pratt, Mr. (Samuel Jackson), 1749-1814."
+    ],
+    "fulltext": "oai:ota:oucs:5086;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5086.xml;The pupil of pleasure: or, the new system illustrated. Inscribed to Mrs. Eugenia Stanhope, editor of Lord Chesterfield's letters. By Courtney Melmoth. ... [pt.2];Pratt, Mr. (Samuel Jackson), 1749-1814.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "24d55c43-9122-50e0-b450-79ec37e7ef5c",
+    "oai_identifier": [
+        "oai:ota:oucs:5086"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The pupil of pleasure: or, the new system illustrated. Inscribed to Mrs. Eugenia Stanhope, editor of Lord Chesterfield's letters. By Courtney Melmoth. ... [pt.2]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5086.xml"
+}

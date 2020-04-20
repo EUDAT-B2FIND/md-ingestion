@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repository.clarin.dk:20.500.12115/36</identifier>
+    <datestamp>2018-12-19T12:20:07Z</datestamp>
+    <setSpec>hdl_20.500.12115_1</setSpec>
+    <setSpec>hdl_20.500.12115_3</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DK-CLARIN Reference Corpus of General Danish</dc:title>
+      <dc:creator>Asmussen, J&#248;rg</dc:creator>
+      <dc:creator>Halskov, Jakob</dc:creator>
+      <dc:subject>LGP - Language for General Purposes</dc:subject>
+      <dc:description>DK-CLARIN Reference Corpus of General Danish has been collected as part of DK-CLARIN project, WP2.1, 2008 - 2011. All texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, ePOS-tagging, sentence and paragraph segmentation, and lemmatisation. The corpus comprises 45,113,245 words.</dc:description>
+      <dc:date>2011</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.12115/36</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:rights>CLARIN-ACA-NC</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&amp;AFFIL=EDU&amp;BY=1&amp;NC=1&amp;NORED=1</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 11</dc:format>
+      <dc:publisher>Society for Danish Language and Literature, DSL</dc:publisher>
+      <dc:source>https://korpus.dsl.dk/clarin/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

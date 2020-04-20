@@ -1,0 +1,64 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.826272",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.826272"
+    ],
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(6 N-22N,60E-88E)",
+    "TempCoverageBegin": 62915741999,
+    "TempCoverageEnd": 62915741999,
+    "TemporalCoverage": " point in time : 1994-09-21T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1994-09-21T11:59:59Z",
+    "TemporalCoverage:EndDate": "1994-09-21T11:59:59Z",
+    "author": [
+        "Morrison, John M"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.826272;2017-08-05T09:39:23Z;ASPS;JGOFSUS;10.1594/PANGAEA.826272;Morrison, John M;Physical oceanography during Thomas G. Thompson cruise TT039;PANGAEA - Data Publisher for Earth & Environmental Science;2014;Event label;Date/Time of event;Latitude of event;Longitude of event;DEPTH, water;Pressure, water;Temperature, water;Salinity;Conductivity;Temperature, water, potential;Density, sigma-theta (0);TT039;Thomas G. Thompson;Joint Global Ocean Flux Study (JGOFS);1994-09-21T10:32:00/1994-10-06T06:04:00;eng;Dataset;http://store.pangaea.de/Projects/JGOFS/US/ArabianSea/Morrison-tt039.htm;329837 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);5.6776 59.8507 22.4827 87.9673",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.826272"
+    ],
+    "oai_set": [
+        "ASPS",
+        "JGOFSUS"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[59.8507,5.6776],[59.8507,22.4827],[87.9673,22.4827],[87.9673,5.6776],[59.8507,5.6776]]]}",
+    "tags": [
+        {
+            "name": "TT"
+        },
+        {
+            "name": "Thomas G. Thompson"
+        },
+        {
+            "name": "Joint Global Ocean Flux Study JGOFS"
+        }
+    ],
+    "title": [
+        "Physical oceanography during Thomas G. Thompson cruise TT039"
+    ],
+    "url": ""
+}

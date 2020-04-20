@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/247</identifier>
+    <datestamp>2016-02-23T11:54:32Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>NELexicon2</dc:title>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:subject>dictionary</dc:subject>
+      <dc:subject>proper names</dc:subject>
+      <dc:description>NELexicon2 to rozszerzona wersj&#261; gazetteera nazw w&#322;asnych, kt&#243;ra zawiera ponad 2,3 miliona unikalnych napis&#243;w. NELexicon zosta&#322; wzmogacony o nast&#281;puj&#261;ce zasoby:&#13;
+&#13;
+- zdrobnienia imion,&#13;
+- obcoj&#281;zyczne formy polskich imion,&#13;
+- nazwy wyci&#261;gni&#281;te z infobox&#243;w polskiej Wikipedii,&#13;
+- formy odmiany nazw z infobox&#243;w polskiej Wikipedii wyci&#261;gni&#281;te z link&#243;w wewn&#281;trznych Wikipedii,&#13;
+- lista nazw rozpoznanych przez Liner2 z modelem 56 nam o liczbie wyst&#261;pie&#324; r&#243;wnej lub wi&#281;kszej ni&#380; 5. Jako, &#380;e nazwy zosta&#322;y rozpoznane automatycznie, to lista mo&#380;e zawiera&#263; b&#322;&#281;dnie rozpoznane nazwy.&#13;
+- formy odmiany nazw wyci&#261;gni&#281;te z polskiego Wikis&#322;ownika.</dc:description>
+      <dc:date>2014-05-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/247</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://clarin-pl.eu</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,53 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Estonian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-249",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-249"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-249",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Estonia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-249;2016-04-06T16:39:54Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Corpus of Written Estonian;4.4 mio words; TEI/SGML;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-249;est;downloadable_files_count: 0;Estonia;http://www.cl.ut.ee/korpused/baaskorpus/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "01e41c8f-b327-5aa8-9a64-073f5fae5214",
+    "notes": [
+        "4.4 mio words; TEI/SGML"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-249"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Corpus of Written Estonian"
+    ],
+    "url": ""
+}

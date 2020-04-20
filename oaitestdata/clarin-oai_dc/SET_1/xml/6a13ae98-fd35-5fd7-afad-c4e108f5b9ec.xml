@@ -1,0 +1,79 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2621</identifier>
+    <datestamp>2018-02-20T01:15:58Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Prague Dependency Treebank 3.5</dc:title>
+      <dc:creator>Haji&#269;, Jan</dc:creator>
+      <dc:creator>Bej&#269;ek, Eduard</dc:creator>
+      <dc:creator>B&#233;mov&#225;, Alevtina</dc:creator>
+      <dc:creator>Bur&#225;&#328;ov&#225;, Eva</dc:creator>
+      <dc:creator>Haji&#269;ov&#225;, Eva</dc:creator>
+      <dc:creator>Havelka, Ji&#345;&#237;</dc:creator>
+      <dc:creator>Homola, Petr</dc:creator>
+      <dc:creator>K&#225;rn&#237;k, Ji&#345;&#237;</dc:creator>
+      <dc:creator>Kettnerov&#225;, V&#225;clava</dc:creator>
+      <dc:creator>Klyueva, Natalia</dc:creator>
+      <dc:creator>Kol&#225;&#345;ov&#225;, Veronika</dc:creator>
+      <dc:creator>Ku&#269;ov&#225;, Lucie</dc:creator>
+      <dc:creator>Lopatkov&#225;, Mark&#233;ta</dc:creator>
+      <dc:creator>Mikulov&#225;, Marie</dc:creator>
+      <dc:creator>M&#237;rovsk&#253;, Ji&#345;&#237;</dc:creator>
+      <dc:creator>Nedoluzhko, Anna</dc:creator>
+      <dc:creator>Pajas, Petr</dc:creator>
+      <dc:creator>Panevov&#225;, Jarmila</dc:creator>
+      <dc:creator>Pol&#225;kov&#225;, Lucie</dc:creator>
+      <dc:creator>Rysov&#225;, Magdal&#233;na</dc:creator>
+      <dc:creator>Sgall, Petr</dc:creator>
+      <dc:creator>Spoustov&#225;, Johanka</dc:creator>
+      <dc:creator>Stra&#328;&#225;k, Pavel</dc:creator>
+      <dc:creator>Synkov&#225;, Pavl&#237;na</dc:creator>
+      <dc:creator>&#352;ev&#269;&#237;kov&#225;, Magda</dc:creator>
+      <dc:creator>&#352;t&#283;p&#225;nek, Jan</dc:creator>
+      <dc:creator>Ure&#353;ov&#225;, Zde&#328;ka</dc:creator>
+      <dc:creator>Vidov&#225; Hladk&#225;, Barbora</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Zik&#225;nov&#225;, &#352;&#225;rka</dc:creator>
+      <dc:creator>&#381;abokrtsk&#253;, Zden&#283;k</dc:creator>
+      <dc:subject>treebank</dc:subject>
+      <dc:subject>dependency</dc:subject>
+      <dc:subject>tectogrammatics</dc:subject>
+      <dc:subject>topic-focus articulation</dc:subject>
+      <dc:subject>multiword expressions</dc:subject>
+      <dc:subject>coreference</dc:subject>
+      <dc:subject>bridging relations</dc:subject>
+      <dc:subject>discourse</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>tokenization</dc:subject>
+      <dc:subject>lemmatization</dc:subject>
+      <dc:subject>clauses</dc:subject>
+      <dc:subject>semantics</dc:subject>
+      <dc:subject>semantic relations</dc:subject>
+      <dc:subject>lexical semantics</dc:subject>
+      <dc:subject>lexicon</dc:subject>
+      <dc:description>The Prague Dependency Treebank 3.5 is the 2018 edition of the core Prague Dependency Treebank (PDT). It contains all PDT annotation made at the Institute of Formal and Applied Linguistics under various projects between 1996 and 2018 on the original texts, i.e., all annotation from PDT 1.0, PDT 2.0, PDT 2.5, PDT 3.0, PDiT 1.0 and PDiT 2.0, plus corrections, new structure of basic documentation and new list of authors covering all previous editions. The Prague Dependency Treebank 3.5 (PDT 3.5) contains the same texts as the previous versions since 2.0; there are 49,431 annotated sentences (over 800 thousand nodes) on all layers, from tectogrammatical to words, and additional sentences on the analytical (surface dependency syntax) and morphological layers of annotation (approx. 2 million words in total). Closely linked to the tectogarammtical layer is the annotation of sentence information structure, multiword expressions, coreference, bridging relations and discourse relations.</dc:description>
+      <dc:date>2018-02-19</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2621</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/249119</dc:relation>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/247762</dc:relation>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/610516</dc:relation>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0023-1AAF-3</dc:relation>
+      <dc:relation>http://hdl.handle.net/11234/1-1905</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/pdt3.5</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

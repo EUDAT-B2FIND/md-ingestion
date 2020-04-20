@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Joint Research Centre of the EU"
+    ],
+    "Contributor": [
+        "Steinberger, Ralf"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Bulgarian",
+        "Czech",
+        "Danish",
+        "Dutch",
+        "English",
+        "Estonian",
+        "Finnish",
+        "French",
+        "German",
+        "Modern Greek (1453-)",
+        "Hungarian",
+        "Italian",
+        "Latvian",
+        "Maltese",
+        "Norwegian",
+        "Polish",
+        "Portuguese",
+        "Romanian",
+        "Slovak",
+        "Slovenian",
+        "Spanish",
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-404",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-404"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-404",
+    "PublicationTimestamp": "2008-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "Joint Research Centre of the EU"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Italy"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-404;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;JRC-Acquis;Steinberger, Ralf;The largest parallel corpus, contains EU law, the Acquis Communautaire in 22 languages.;2008;corpus;http://hdl.handle.net/11372/LRT-404;bul;ces;dan;nld;eng;est;fin;fra;deu;ell;hun;ita;lav;mlt;nor;pol;por;ron;slk;slv;spa;swe;downloadable_files_count: 0;Italy;Joint Research Centre of the EU;http://langtech.jrc.it/JRC-Acquis.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "69c8d101-e43e-5391-b658-0fd5dc2d33b7",
+    "notes": [
+        "The largest parallel corpus, contains EU law, the Acquis Communautaire in 22 languages."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-404"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "JRC-Acquis"
+    ],
+    "url": ""
+}

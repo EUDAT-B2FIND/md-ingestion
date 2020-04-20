@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1cec28f2a35a11e1a404080027e73ea272c3895430344e23b2034d271b27b6a9",
+    "MetadataAccess": [
+        "1cec28f2a35a11e1a404080027e73ea272c3895430344e23b2034d271b27b6a9"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "1cec28f2a35a11e1a404080027e73ea272c3895430344e23b2034d271b27b6a9;2019-02-27T12:09:00Z;corpus;corpus:text;Laws of Malta - English;The corpus contains the Laws of Malta in English from the official government website. The unannotated raw text files were extracted from the pdf files that can be found on the website.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "79459790-e402-5f7e-b27f-c20d71bcf3c7",
+    "notes": [
+        "The corpus contains the Laws of Malta in English from the official government website. The unannotated raw text files were extracted from the pdf files that can be found on the website."
+    ],
+    "oai_identifier": [
+        "1cec28f2a35a11e1a404080027e73ea272c3895430344e23b2034d271b27b6a9"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Laws of Malta - English"
+    ]
+}

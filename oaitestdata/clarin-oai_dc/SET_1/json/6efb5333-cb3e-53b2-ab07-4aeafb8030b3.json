@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=bf2ccab65e6911e2a2aa782bcb0741354e5fd3c2b7424178bfdb8521ff85c7ce",
+    "MetadataAccess": [
+        "bf2ccab65e6911e2a2aa782bcb0741354e5fd3c2b7424178bfdb8521ff85c7ce"
+    ],
+    "PublicationTimestamp": "2013-01-31T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "bf2ccab65e6911e2a2aa782bcb0741354e5fd3c2b7424178bfdb8521ff85c7ce;2018-11-15T16:40:02Z;toolService;toolService:service;MLSS Tagger Web Service;The part of speech tagger for Maltese is based on TnT, the statistical part of speech tagger by Thorsten Brants (http://www.coli.uni-saarland.de/~thorsten/tnt/). It was modified for  the Maltese Language Resource Server (MLRS) by Albert Gatt (Linguistics Department, University of Malta). The model for Maltese was trained on manually tagged texts and has reached an accuracy of 96%. Below is a list of the tags which are used, along with a description. The web service for the Maltese Language Software Services (MLSS) was provided by Andrew Attard.\n\nThe tagset list can be found here:\nhttp://metanet4u.research.um.edu.mt/POS.jsp\n\nThe service has two methods which can be invoked:\n\u00e2\u0080\u00a2\tString tagOneWordReturn(String text)\n\u00e2\u0080\u00a2\tString tagParagraphReturn(String text)\n\nBoth methods take a string as input, i.e., the text to be tagged, and return another string, i.e., the tagged text. The difference between the two is tagOneWordReturn returns the output as one word per line, while the other returns it as tagged paragraphs (if any paragraphs occur in the input string).\n\nThe format of the output is:\nword_TAG\n;2013-01-31",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6efb5333-cb3e-53b2-ab07-4aeafb8030b3",
+    "notes": [
+        "The part of speech tagger for Maltese is based on TnT, the statistical part of speech tagger by Thorsten Brants (http://www.coli.uni-saarland.de/~thorsten/tnt/). It was modified for  the Maltese Language Resource Server (MLRS) by Albert Gatt (Linguistics Department, University of Malta). The model for Maltese was trained on manually tagged texts and has reached an accuracy of 96%. Below is a list of the tags which are used, along with a description. The web service for the Maltese Language Software Services (MLSS) was provided by Andrew Attard.\n\nThe tagset list can be found here:\nhttp://metanet4u.research.um.edu.mt/POS.jsp\n\nThe service has two methods which can be invoked:\n\u00e2\u0080\u00a2\tString tagOneWordReturn(String text)\n\u00e2\u0080\u00a2\tString tagParagraphReturn(String text)\n\nBoth methods take a string as input, i.e., the text to be tagged, and return another string, i.e., the tagged text. The difference between the two is tagOneWordReturn returns the output as one word per line, while the other returns it as tagged paragraphs (if any paragraphs occur in the input string).\n\nThe format of the output is:\nword_TAG\n"
+    ],
+    "oai_identifier": [
+        "bf2ccab65e6911e2a2aa782bcb0741354e5fd3c2b7424178bfdb8521ff85c7ce"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "MLSS Tagger Web Service"
+    ]
+}

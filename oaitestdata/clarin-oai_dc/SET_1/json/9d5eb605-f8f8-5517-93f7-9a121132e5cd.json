@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Hart, Michael"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 23 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1505",
+    "MetadataAccess": [
+        "oai:ota:oucs:1505"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Manuals (Handbooks)"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Vatsyayana"
+    ],
+    "fulltext": "oai:ota:oucs:1505;2018-07-27T10:31:43Z;http://ota.ox.ac.uk/headers/1505.xml;Kamasutra. English;The love secrets of the Kama Sutra / Vatsyayana;Vatsyayana;Date unknown;text_and_corpus_linguistics;Sex instruction;eng;Oxford Text Archive, University of Oxford;Hart, Michael;text/plain;(1 file : ca. 23 KB);Text;Manuals (Handbooks);Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9d5eb605-f8f8-5517-93f7-9a121132e5cd",
+    "oai_identifier": [
+        "oai:ota:oucs:1505"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Sex instruction"
+        }
+    ],
+    "title": [
+        "Kamasutra. English",
+        "The love secrets of the Kama Sutra / Vatsyayana"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1505.xml"
+}

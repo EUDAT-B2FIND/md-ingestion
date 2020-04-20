@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3953",
+    "MetadataAccess": [
+        "oai:ota:oucs:3953"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Jephson, Robert, 1736-1803."
+    ],
+    "fulltext": "oai:ota:oucs:3953;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3953.xml;The Count of Narbonne: a tragedy. As it is acted at the Theatre Royal in Covent Garden. By Robert Jephson, Esq;.;Jephson, Robert, 1736-1803.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "977136af-4234-5af1-888d-ac432ac12f24",
+    "oai_identifier": [
+        "oai:ota:oucs:3953"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The Count of Narbonne: a tragedy. As it is acted at the Theatre Royal in Covent Garden. By Robert Jephson, Esq;."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3953.xml"
+}

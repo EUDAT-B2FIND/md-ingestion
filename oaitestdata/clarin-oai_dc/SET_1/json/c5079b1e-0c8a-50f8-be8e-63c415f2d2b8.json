@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/x-rar-compressed"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CCA1-0",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CCA1-0"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-CCA1-0",
+    "PublicationTimestamp": "2011-12-15T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u0160m\u00eddl, Lubo\u0161"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CCA1-0;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Air Traffic Control Communication;\u0160m\u00eddl, Lubo\u0161;speech corpus;acoustic model;Corpus contains recordings of communication between air traffic controllers and pilots. The speech is manually transcribed and labeled with the information about the speaker (pilot/controller, not the full identity of the person). The corpus is currently small (20 hours) but we plan to search for additional data next year. The audio data format is: 8kHz, 16bit PCM, mono.;2011-12-15;corpus;ZCU_CZ_ATC;http://hdl.handle.net/11858/00-097C-0000-0001-CCA1-0;eng;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;PUB;application/x-rar-compressed;text/plain; charset=utf-8;downloadable_files_count: 1;University of West Bohemia, Department of Cybernetics",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c5079b1e-0c8a-50f8-be8e-63c415f2d2b8",
+    "notes": [
+        "Corpus contains recordings of communication between air traffic controllers and pilots. The speech is manually transcribed and labeled with the information about the speaker (pilot/controller, not the full identity of the person). The corpus is currently small (20 hours) but we plan to search for additional data next year. The audio data format is: 8kHz, 16bit PCM, mono."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CCA1-0"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "acoustic model"
+        }
+    ],
+    "title": [
+        "Air Traffic Control Communication"
+    ],
+    "url": ""
+}

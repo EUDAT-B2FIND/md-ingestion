@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "The National Library of Sweden"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/20",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/20"
+    ],
+    "PID": "http://hdl.handle.net/10794/20",
+    "PublicationTimestamp": "2015-04-23T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "The National Library of Sweden"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/20;2017-10-27T16:49:48Z;hdl_10794_1;hdl_10794_2;Aftonbladet 1860's (2017-10-16);Aftonbladet 1860-talet (2017-10-16);n/a, n/a;Swedish;News;A corpus with texts from Aftonbladet in the 1860's. Only 1860\u20131862 due to copyright restrictions.;En korpus med texter fr\u00e5n Aftonbladet p\u00e5 1860-talet. Endast 1860\u20131862 p\u00e5 grund av copyright-sk\u00e4l.;2015-04-23;corpus;http://hdl.handle.net/10794/20;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;The National Library of Sweden;https://spraakbanken.gu.se/swe/resurs/kubhist-aftonbladet-1860",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b6efdf87-96f1-5b86-8c03-28b551c79365",
+    "notes": [
+        "A corpus with texts from Aftonbladet in the 1860's. Only 1860\u20131862 due to copyright restrictions.",
+        "En korpus med texter fr\u00e5n Aftonbladet p\u00e5 1860-talet. Endast 1860\u20131862 p\u00e5 grund av copyright-sk\u00e4l."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/20"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "News"
+        }
+    ],
+    "title": [
+        "Aftonbladet 1860's (2017-10-16)",
+        "Aftonbladet 1860-talet (2017-10-16)"
+    ],
+    "url": ""
+}

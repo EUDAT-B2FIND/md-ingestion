@@ -1,0 +1,63 @@
+{
+    "DOI": "http://dx.doi.org/10.12770/d9310aa6-c6b3-4657-a3c9-b0a4dd0f016c",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://sextant.ifremer.fr/geonetwork/srv/fre/csw-SEADATANET?verb=GetRecord&metadataPrefix=oai_dc&identifier=d3c6327d-c751-5725-81ad-1129aef86f69",
+    "Rights": [
+        "otherRestrictions"
+    ],
+    "SpatialCoverage": [
+        "9.96 48.6",
+        "-4.25 62"
+    ],
+    "fulltext": "d9310aa6-c6b3-4657-a3c9-b0a4dd0f016c;2018-09-26T16:27:14;North Sea - Temperature and salinity Historical Data Collection SeaDataCloud V1;SDC_NS_DATA_TS_V1;dataset;Oceanographic geographical features;Salinity of the water column;Temperature of the water column;Water body salinity;ITS-90 water temperature;North Sea;oceans;ODV binary collection;The data collection of the North Sea is divided in two datasets : the discrete collection and the trajectories collection.\n\nThe Discrete SeaDataCloud Temperature and Salinity Historical Data Collection for the North Sea includes open access in situ data on temperature and salinity measured with \u201cdiscrete\u201d instruments (CTD, XBT, discrete water samplers\u2026). The data span between 4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1893 \u2013 2017. The data were retrieved from the SeaDataNet infrastructure in November 2017. \nThe \u201cTrajectories\u201d SeaDataCloud Temperature and Salinity Historical Data Collection for the North Sea includes open access in situ data on temperature and salinity measured by continuously recording sensors (e.g. Ferryboxes). The data span between 4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1989 \u2013 2017. \n\nThe data were retrieved from the SeaDataNet infrastructure in November 2017. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised following common recommended procedures defined under SeaDataNet 2 project in conjunction with visual expert check. \n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/.\n\nFor data access please register at http://www.marine-id.org/.;The data collection of the North Sea is divided in two datasets : the discrete collection and the trajectories collection.\n\nThe Discrete SeaDataCloud Temperature and Salinity Historical Data Collection for the North Sea includes open access in situ data on temperature and salinity measured with \u201cdiscrete\u201d instruments (CTD, XBT, discrete water samplers\u2026). The data span between 4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1893 \u2013 2017. The data were retrieved from the SeaDataNet infrastructure in November 2017. \nThe \u201cTrajectories\u201d SeaDataCloud Temperature and Salinity Historical Data Collection for the North Sea includes open access in situ data on temperature and salinity measured by continuously recording sensors (e.g. Ferryboxes). The data span between 4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1989 \u2013 2017. \n\nThe data were retrieved from the SeaDataNet infrastructure in November 2017. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised following common recommended procedures defined under SeaDataNet 2 project in conjunction with visual expert check. \n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/.\n\nFor data access please register at http://www.marine-id.org/.;otherRestrictions;eng;The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI;ODV binary collection;9.96 48.6;-4.25 62;http://dx.doi.org/10.12770/d9310aa6-c6b3-4657-a3c9-b0a4dd0f016c;ftp://vftp2.ifremer.fr/public/seadatanet-north_sea-temperaturesalinity_aggregated/SDC_NS_DATA_V1/;https://sextant.ifremer.fr/geonetwork/srv/fre//resources.get?uuid=d9310aa6-c6b3-4657-a3c9-b0a4dd0f016c&fname=NORTH_SEA_SDC_V1.png",
+    "group": "seadatanet",
+    "groups": [
+        {
+            "name": "seadatanet"
+        }
+    ],
+    "name": "d3c6327d-c751-5725-81ad-1129aef86f69",
+    "notes": [
+        "The data collection of the North Sea is divided in two datasets : the discrete collection and the trajectories collection.\n\nThe Discrete SeaDataCloud Temperature and Salinity Historical Data Collection for the North Sea includes open access in situ data on temperature and salinity measured with \u201cdiscrete\u201d instruments (CTD, XBT, discrete water samplers\u2026). The data span between 4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1893 \u2013 2017. The data were retrieved from the SeaDataNet infrastructure in November 2017. \nThe \u201cTrajectories\u201d SeaDataCloud Temperature and Salinity Historical Data Collection for the North Sea includes open access in situ data on temperature and salinity measured by continuously recording sensors (e.g. Ferryboxes). The data span between 4\u00b0W and 10\u00b0E in longitude, and from 49\u00b0N to 62\u00b0N in latitude. It covers the time period 1989 \u2013 2017. \n\nThe data were retrieved from the SeaDataNet infrastructure in November 2017. The quality control of the data has been performed with the help of ODV software. Data Quality Flags have been revised following common recommended procedures defined under SeaDataNet 2 project in conjunction with visual expert check. \n\nThe dataset format is ODV binary collections. You can read, analyse and export from the ODV application provided by Alfred Wegener institute at http://odv.awi.de/.\n\nFor data access please register at http://www.marine-id.org/."
+    ],
+    "oai_identifier": [
+        "d3c6327d-c751-5725-81ad-1129aef86f69"
+    ],
+    "oai_set": "cams1_ps",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Oceanographic geographical features"
+        },
+        {
+            "name": "Salinity water column"
+        },
+        {
+            "name": "Temperature water column"
+        },
+        {
+            "name": "Water body salinity"
+        },
+        {
+            "name": "ITS- water temperature"
+        },
+        {
+            "name": "North Sea"
+        },
+        {
+            "name": "oceans"
+        }
+    ],
+    "title": [
+        "North Sea - Temperature and salinity Historical Data Collection SeaDataCloud V1"
+    ],
+    "url": "https://sextant.ifremer.fr/geonetwork/srv/fre//resources.get?uuid=d9310aa6-c6b3-4657-a3c9-b0a4dd0f016c&fname=NORTH_SEA_SDC_V1.png"
+}

@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "text/plain; charset=utf-8",
+        "application/pdf",
+        "application/x-xz"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2889",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2889"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2889",
+    "PublicationTimestamp": "2018-11-13T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "BSD 3-Clause \"New\" or \"Revised\" license",
+        "http://opensource.org/licenses/BSD-3-Clause",
+        "PUB"
+    ],
+    "author": [
+        "Haji\u010d, Jan",
+        "B\u00f6hm, Stanislav"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2889;2018-11-13T12:23:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;VIADAT-SEARCH;B\u00f6hm, Stanislav;Haji\u010d, Jan;oral history;speech;search;VIADAT-SEARCH in connection with VIADAT-REPO enables searching transcripts of oral history recordings. Language analysis has been used to preprocess the recordings, which makes it possible to search the fulltext using multiple criteria, including names, different forms of the same word etc.\r\n\r\nDeveloped in cooperation with \u00daSD AV \u010cR and NFA.;2018-11-13;toolService;http://hdl.handle.net/11234/1-2889;BSD 3-Clause \"New\" or \"Revised\" license;http://opensource.org/licenses/BSD-3-Clause;PUB;application/x-xz;application/pdf;application/pdf;application/pdf;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 5;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);https://ufal.mff.cuni.cz/grants/viadat",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5feb3fa6-6b0c-5b2c-9937-5c78ddccbb78",
+    "notes": [
+        "VIADAT-SEARCH in connection with VIADAT-REPO enables searching transcripts of oral history recordings. Language analysis has been used to preprocess the recordings, which makes it possible to search the fulltext using multiple criteria, including names, different forms of the same word etc.\r\n\r\nDeveloped in cooperation with \u00daSD AV \u010cR and NFA."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2889"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "oral history"
+        },
+        {
+            "name": "speech"
+        },
+        {
+            "name": "search"
+        }
+    ],
+    "title": [
+        "VIADAT-SEARCH"
+    ],
+    "url": ""
+}

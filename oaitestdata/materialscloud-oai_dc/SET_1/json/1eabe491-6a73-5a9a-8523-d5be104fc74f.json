@@ -1,0 +1,105 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0001/v3",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0001/v3",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0001/v3"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-11-08T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "RelatedIdentifier": [
+        "https://www.materialscloud.org/discover/sssp",
+        "https://www.materialscloud.org/explore/sssp"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Castelli, Ivano E.",
+        "Mounet, Nicolas",
+        "Marzari, Nicola",
+        "Marrazzo, Antimo",
+        "Prandini, Gianluca"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0001/v3;2019-06-12Z;DOI;Dataset;Prandini, Gianluca;Marrazzo, Antimo;Castelli, Ivano E.;Mounet, Nicolas;Marzari, Nicola;A Standard Solid State Pseudopotentials (SSSP) library optimized for precision and efficiency (Version 1.1, data download);Materials Cloud;2018-11-08;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;SSSP;pseudopotentials;database;high-throughput;library;standard;DFT;calculations;vibrational properties;phonons;electronic properties;electronic bands;cohesive energy;chessboards;elemental solids;verification;precision;efficiency;MARVEL;doi:10.24435/materialscloud:2018.0001/v3;https://archive.materialscloud.org/2018.0001/v3;en;https://www.materialscloud.org/discover/sssp;https://www.materialscloud.org/explore/sssp;Despite the enormous success and popularity of density functional theory, systematic verification and validation studies are still very limited both in number and scope. Here, we propose a universal standard protocol to verify publicly available pseudopotential libraries, based on several independent criteria including verification against all-electron equations of state and plane-wave convergence tests for phonon frequencies, band structure, cohesive energy and pressure. Adopting these criteria we obtain two optimal pseudopotential sets, namely the Standard Solid State Pseudopotential (SSSP) efficiency and precision libraries, tailored for high-throughput materials screening and high-precision materials modelling. As of today, the SSSP precision library is the most accurate open-source pseudopotential library available. This archive entry contains the database of calculations (phonons, cohesive energy, equation of state, band structure, pressure, etc.) together with the provenance of all data and calculations as stored by AiiDA.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "1eabe491-6a73-5a9a-8523-d5be104fc74f",
+    "notes": [
+        "Despite the enormous success and popularity of density functional theory, systematic verification and validation studies are still very limited both in number and scope. Here, we propose a universal standard protocol to verify publicly available pseudopotential libraries, based on several independent criteria including verification against all-electron equations of state and plane-wave convergence tests for phonon frequencies, band structure, cohesive energy and pressure. Adopting these criteria we obtain two optimal pseudopotential sets, namely the Standard Solid State Pseudopotential (SSSP) efficiency and precision libraries, tailored for high-throughput materials screening and high-precision materials modelling. As of today, the SSSP precision library is the most accurate open-source pseudopotential library available. This archive entry contains the database of calculations (phonons, cohesive energy, equation of state, band structure, pressure, etc.) together with the provenance of all data and calculations as stored by AiiDA."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0001/v3"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "SSSP"
+        },
+        {
+            "name": "pseudopotentials"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "high-throughput"
+        },
+        {
+            "name": "library"
+        },
+        {
+            "name": "standard"
+        },
+        {
+            "name": "DFT"
+        },
+        {
+            "name": "calculations"
+        },
+        {
+            "name": "vibrational properties"
+        },
+        {
+            "name": "phonons"
+        },
+        {
+            "name": "electronic properties"
+        },
+        {
+            "name": "electronic bands"
+        }
+    ],
+    "title": [
+        "A Standard Solid State Pseudopotentials (SSSP) library optimized for precision and efficiency (Version 1.1, data download)"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0001/v3"
+}

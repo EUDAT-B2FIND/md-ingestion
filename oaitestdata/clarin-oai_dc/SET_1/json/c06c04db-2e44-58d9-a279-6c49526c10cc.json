@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=73b84c28fd1a11e6a2aa782bcb074135a9fd1289fd654abeb973c65280441a6d",
+    "MetadataAccess": [
+        "73b84c28fd1a11e6a2aa782bcb074135a9fd1289fd654abeb973c65280441a6d"
+    ],
+    "PublicationTimestamp": "2017-02-27T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "fulltext": "73b84c28fd1a11e6a2aa782bcb074135a9fd1289fd654abeb973c65280441a6d;2018-11-15T16:40:29Z;lexicalConceptualResource;lexicalConceptualResource:terminologicalResource;A Terminological Inventory for Biodiversity;In order to construct the inventory, we firstly compiled a species name dictionary by combining all of the names available in Catalogue of Life (CoL), Encyclopedia of Life (EoL) and Global Biodiversity Information Facility (GBIF). \nThe terms contained in this dictionary were then located within the text of English BHL documents (about 24 million pages of text) using a string matching method. \nWe then learned vector representations of the identified terms using three different approaches, namely count-based, prediction-based and compositional distributional semantic models (DSMs). \nThese approaches compute vector representations for both single and multi-word terms. \nThe cosine similarity between two vectors serves as an indicator of the corresponding terms' semantic relatedness: the higher the cosine similarity, the more related the two terms are. \nWe finally selected the top-k candidates as the terms that are most semantically related to a given term.\n\nThe inventory contains 288,562 names of species whose frequency in BHL documents is at least five. \nFor each term in the inventory, the 20 topmost semantically similar terms are provided, together with their corresponding similarity scores. \nFor further digital biodiversity processes, each term is also linked to its URI, UUID and LSID indexed by Global Names.\n\nA search interface that uses the inventory as metadata for query expansion is available at http://nactem.ac.uk/BHLQueryExpansion/.;2017-02-27",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c06c04db-2e44-58d9-a279-6c49526c10cc",
+    "notes": [
+        "In order to construct the inventory, we firstly compiled a species name dictionary by combining all of the names available in Catalogue of Life (CoL), Encyclopedia of Life (EoL) and Global Biodiversity Information Facility (GBIF). \nThe terms contained in this dictionary were then located within the text of English BHL documents (about 24 million pages of text) using a string matching method. \nWe then learned vector representations of the identified terms using three different approaches, namely count-based, prediction-based and compositional distributional semantic models (DSMs). \nThese approaches compute vector representations for both single and multi-word terms. \nThe cosine similarity between two vectors serves as an indicator of the corresponding terms' semantic relatedness: the higher the cosine similarity, the more related the two terms are. \nWe finally selected the top-k candidates as the terms that are most semantically related to a given term.\n\nThe inventory contains 288,562 names of species whose frequency in BHL documents is at least five. \nFor each term in the inventory, the 20 topmost semantically similar terms are provided, together with their corresponding similarity scores. \nFor further digital biodiversity processes, each term is also linked to its URI, UUID and LSID indexed by Global Names.\n\nA search interface that uses the inventory as metadata for query expansion is available at http://nactem.ac.uk/BHLQueryExpansion/."
+    ],
+    "oai_identifier": [
+        "73b84c28fd1a11e6a2aa782bcb074135a9fd1289fd654abeb973c65280441a6d"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:terminologicalResource"
+    ],
+    "state": "active",
+    "title": [
+        "A Terminological Inventory for Biodiversity"
+    ]
+}

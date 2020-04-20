@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:14431628</identifier>
+    <datestamp>2019-06-04T01:01:44Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Esterm v20180302</dc:title>
+      <dc:title xml:lang="en">Esterm v20180302</dc:title>
+      <dc:creator>Soon, Tiina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-03-14</dc:date>
+      <dc:date>Updated: 2018-03-14</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-07021L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Esterm on Eesti Keele Instituudi mitmekeelne terminibaas, mis sisaldab peamiselt Euroopa Liidu ja Eesti Vabariigi &#245;igusaktide termineid. Terminibaas koondab &#252;le 50 valdkonna terminoloogiat.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Esterm is a multilingual termbase which includes terms mainly from the legal acts of the Republic of Estonia and the European Union. The termbase contains terminology from more than 50 domains.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

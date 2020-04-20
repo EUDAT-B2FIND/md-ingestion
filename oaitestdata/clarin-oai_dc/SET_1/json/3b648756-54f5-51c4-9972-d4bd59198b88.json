@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3050",
+    "MetadataAccess": [
+        "oai:ota:oucs:3050"
+    ],
+    "PublicationTimestamp": "1909-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1909"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Montgomery, Lucy Maud, 1874-1942"
+    ],
+    "fulltext": "oai:ota:oucs:3050;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3050.xml;Anne of Avonlea;Montgomery, Lucy Maud, 1874-1942;not after: 1909;text_and_corpus_linguistics;Children's literature, Canadian -- 20th century;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3b648756-54f5-51c4-9972-d4bd59198b88",
+    "oai_identifier": [
+        "oai:ota:oucs:3050"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Childrens literature"
+        },
+        {
+            "name": "Canadian -- th century"
+        }
+    ],
+    "title": [
+        "Anne of Avonlea"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3050.xml"
+}

@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "[Franciszek Cezary]"
+    ],
+    "Contributor": [
+        "Bia\u0142ecki, Piotr Jan (ca 1640-post 1686). Aut. ded.",
+        "Cezary, Franciszek (ca 1660-1724). Druk."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-107563",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-107563"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CD7-1",
+    "PublicationTimestamp": "1678-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1678"
+    ],
+    "Publisher": [
+        "[Franciszek Cezary]"
+    ],
+    "RelatedIdentifier": [
+        "http://ebuw.uw.edu.pl/Content/107563",
+        "oai:ebuw.uw.edu.pl:publication:104552"
+    ],
+    "ResourceType": [
+        "early book"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Klonowic, Sebastian Fabian (1545-1602)."
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-107563;2019-02-28T18:01:12Z;Pami\u0119tnik Xi\u0105z\u0105t Y Krolow Polskich Sebastiana Fabiana Klonowica.;Klonowic, Sebastian Fabian (1545-1602).;Poland -- Kings and rulers -- Early works to 1800.;Inscription: \"Przewielebnemv I. Mci. Xiedzv Woyciechowi Szczerskiemv Zakonu Pr\u00e6monstrate\u0144skiego S. Norberta Proboszczowi P\u0142ockiemu [...] / Piotr Ian z Bia\u0142ocina Bia\u0142ecki, Pisarz Grodzki Siewierski\".;Place of Publication: Cracow - Poland.;Adresat dedykacji: Szczerski, Wojciech ( -post 1685).;Dedykacja: \"Przewielebnemv I. Mci. Xiedzv Woyciechowi Szczerskiemv Zakonu Pr\u00e6monstrate\u0144skiego S. Norberta Proboszczowi P\u0142ockiemu [...] / Piotr Ian z Bia\u0142ocina Bia\u0142ecki, Pisarz Grodzki Siewierski\".;Na drugiej karcie nieliczbowanej drzeworytowy herb Ogo\u0144czyk Szczerskiego oraz wiersz na herb.;Na stronie tytu\u0142owej data wydania w chronogramie: \"Anno QVo poLonI De tVrCis fVgatIs triVMphant, Sev Posteriori post eum QVo aD HoCIM poLonI eos fortIter fVgaVerVnt.\" [i.e. 1678].;Wsp\u00f3\u0142czesna nazwa miejsca wydania: Krak\u00f3w - Polska.;[Wydanie:] Znowu z Przydatkiem y wyliczeniem Monosticorvm Piotra Iana z Bia\u0142ocina Bia\u0142eckiego [...] Do Druku podany [...].;Zapowied\u017a wsp\u00f3\u0142wydanego \"Monostica\" z tytu\u0142em nag\u0142\u00f3wka (karta B3).;[Franciszek Cezary];Bia\u0142ecki, Piotr Jan (ca 1640-post 1686). Aut. ded.;Cezary, Franciszek (ca 1660-1724). Druk.;1678;early book;application/xml;clarind-uds:poldilemma-107563;hdl:11858/00-246C-0000-0023-8CD7-1;Sd.713.2653;pol;lat;http://ebuw.uw.edu.pl/Content/107563;oai:ebuw.uw.edu.pl:publication:104552;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e9be345f-837b-5834-bcac-e6033f04a494",
+    "notes": [
+        "Inscription: \"Przewielebnemv I. Mci. Xiedzv Woyciechowi Szczerskiemv Zakonu Pr\u00e6monstrate\u0144skiego S. Norberta Proboszczowi P\u0142ockiemu [...] / Piotr Ian z Bia\u0142ocina Bia\u0142ecki, Pisarz Grodzki Siewierski\".",
+        "Place of Publication: Cracow - Poland.",
+        "Adresat dedykacji: Szczerski, Wojciech ( -post 1685).",
+        "Dedykacja: \"Przewielebnemv I. Mci. Xiedzv Woyciechowi Szczerskiemv Zakonu Pr\u00e6monstrate\u0144skiego S. Norberta Proboszczowi P\u0142ockiemu [...] / Piotr Ian z Bia\u0142ocina Bia\u0142ecki, Pisarz Grodzki Siewierski\".",
+        "Na drugiej karcie nieliczbowanej drzeworytowy herb Ogo\u0144czyk Szczerskiego oraz wiersz na herb.",
+        "Na stronie tytu\u0142owej data wydania w chronogramie: \"Anno QVo poLonI De tVrCis fVgatIs triVMphant, Sev Posteriori post eum QVo aD HoCIM poLonI eos fortIter fVgaVerVnt.\" [i.e. 1678].",
+        "Wsp\u00f3\u0142czesna nazwa miejsca wydania: Krak\u00f3w - Polska.",
+        "[Wydanie:] Znowu z Przydatkiem y wyliczeniem Monosticorvm Piotra Iana z Bia\u0142ocina Bia\u0142eckiego [...] Do Druku podany [...].",
+        "Zapowied\u017a wsp\u00f3\u0142wydanego \"Monostica\" z tytu\u0142em nag\u0142\u00f3wka (karta B3)."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-107563"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Pami\u0119tnik Xi\u0105z\u0105t Y Krolow Polskich Sebastiana Fabiana Klonowica."
+    ],
+    "url": ""
+}

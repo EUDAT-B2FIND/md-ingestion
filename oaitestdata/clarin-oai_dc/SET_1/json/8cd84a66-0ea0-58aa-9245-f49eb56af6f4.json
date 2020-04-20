@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-998",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-998"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-998",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-998;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;LAC Lavukaleve Corpus;Language and Cognition corpus;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-998;downloadable_files_count: 0;Max Planck Institute for Psycholinguistics;http://corpus1.mpi.nl/ds/imdi_browser?openpath=MPI553462%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8cd84a66-0ea0-58aa-9245-f49eb56af6f4",
+    "notes": [
+        "Language and Cognition corpus"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-998"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "LAC Lavukaleve Corpus"
+    ],
+    "url": ""
+}

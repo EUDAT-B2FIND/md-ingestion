@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 7",
+        "text/plain",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC92-F",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC92-F"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-000D-EC92-F",
+    "PublicationTimestamp": "2013-01-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "University of West Bohemia, Department of Cybernetics"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)",
+        "http://creativecommons.org/licenses/by-nc/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u0160m\u00eddl, Lubo\u0161"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC92-F;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;ATCC: Pronunciation lexicon and n-gram counts for ASR module;\u0160m\u00eddl, Lubo\u0161;pronunciation lexicon;n-gram counts;language model;The corpus contains pronunciation lexicon and n-gram counts (unigrams, bigrams and trigrams) that can be used for constructing the language model for air traffic control communication domain. It could be used together with the Air Traffic Control Communication corpus (http://hdl.handle.net/11858/00-097C-0000-0001-CCA1-0).;2013-01-01;lexicalConceptualResource;ZCU_CZ_ ATCC-LM4ASR;http://hdl.handle.net/11858/00-097C-0000-000D-EC92-F;eng;Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0);http://creativecommons.org/licenses/by-nc/3.0/;PUB;text/plain;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 7;University of West Bohemia, Department of Cybernetics",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a07ffff3-282f-58d5-ae7a-ffe74a6413d6",
+    "notes": [
+        "The corpus contains pronunciation lexicon and n-gram counts (unigrams, bigrams and trigrams) that can be used for constructing the language model for air traffic control communication domain. It could be used together with the Air Traffic Control Communication corpus (http://hdl.handle.net/11858/00-097C-0000-0001-CCA1-0)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC92-F"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "pronunciation lexicon"
+        },
+        {
+            "name": "n-gram counts"
+        },
+        {
+            "name": "language model"
+        }
+    ],
+    "title": [
+        "ATCC: Pronunciation lexicon and n-gram counts for ASR module"
+    ],
+    "url": ""
+}

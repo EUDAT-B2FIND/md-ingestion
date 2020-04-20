@@ -1,0 +1,24 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-477",
+    "MetadataAccess": [
+        "doi:10.18419/darus-477"
+    ],
+    "fulltext": "doi:10.18419/darus-477;2019-12-05T01:00:01Z;all;10.18419/darus-477;Kraus, Hamzeh;Hamzeh;Kraus;0000-0001-9643-4839;Universit\u00e4t Stuttgart;Rybka, Julia;Julia;Rybka;1195464398;Philipps-Universit\u00e4t Marburg;Supplementary material for 'Olefin metathesis in confined geometries: a biomimetic approach towards selective macrocyclization';DaRUS;2019;Chemistry;Kraus, Hamzeh;Hamzeh;Kraus;Universit\u00e4t Stuttgart;2019-10-15;2019-12-04;Input files for molecular dynamics simulations with GROMACS.;10.1021/jacs.9b08776;605;5221;4480405;4320475;33302;32615;6656;6054;3620;37235;4016;4013;2433350;2297096;985;1862;3350;35822;1825;6570;6026;523;465;application/octet-stream;application/vnd.shana.informed.formtemplate;application/octet-stream;application/octet-stream;application/vnd.shana.informed.formtemplate;application/vnd.shana.informed.formtemplate;application/vnd.shana.informed.formtemplate;application/vnd.shana.informed.formtemplate;application/octet-stream;application/vnd.shana.informed.formtemplate;application/vnd.shana.informed.formtemplate;application/vnd.shana.informed.formtemplate;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/vnd.shana.informed.formtemplate;application/octet-stream;application/vnd.shana.informed.formtemplate;application/vnd.shana.informed.formtemplate;application/octet-stream;application/octet-stream;1.0;CC BY Waiver;This dataset contains simulation input files in GROMACS format accompanying the mentioned publication.\r\nStructure, topology and simulation parameter-files are provided for two simulations - an unmodified pore with a silanol surface and a modified pore with an unpolar DMDMS surface. Furthermore each pore has two catalytic centers placed point-symmetrical towards each other.\r\nThe simulation is divided in three steps, an energy-minimization, an NVT equilibration and finally the NVT production simulation run.;Deutsche Forschungsgemeinschaft;358283783 - SFB 1333;Deutsche Forschungsgemeinschaft;TA 268/11-1;Ministerium f\u00fcr Wissenschaft, Forschung und Kunst Baden-W\u00fcrttemberg",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "91150b8f-9e05-511f-b70a-cb92b87f8aa3",
+    "oai_identifier": [
+        "doi:10.18419/darus-477"
+    ],
+    "oai_set": [
+        "all"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

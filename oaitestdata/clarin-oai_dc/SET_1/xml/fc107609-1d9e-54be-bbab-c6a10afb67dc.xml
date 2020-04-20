@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2382</identifier>
+    <datestamp>2017-09-11T13:58:37Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>TXM</dc:title>
+      <dc:creator>Heiden, Serge</dc:creator>
+      <dc:subject>textometry</dc:subject>
+      <dc:subject>xml</dc:subject>
+      <dc:subject>tei</dc:subject>
+      <dc:subject>nlp</dc:subject>
+      <dc:subject>cqp</dc:subject>
+      <dc:subject>r</dc:subject>
+      <dc:subject>textual data analysis</dc:subject>
+      <dc:subject>statistical text analysis</dc:subject>
+      <dc:subject>text mining</dc:subject>
+      <dc:subject>concordance</dc:subject>
+      <dc:description>TXM is a free and open-source cross-platform Unicode &amp; XML based text/corpus analysis environment and graphical client, supporting Windows, Linux and Mac OS X. It can also be used online as a J2EE standard compliant web portal (GWT based) with access control built in.</dc:description>
+      <dc:date>2016-06-21</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2382</dc:identifier>
+      <dc:relation>https://halshs.archives-ouvertes.fr/halshs-00549764/en</dc:relation>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>ENS de Lyon - CNRS, ICAR Laboratory</dc:publisher>
+      <dc:publisher>Universit&#233; de Franche-Compt&#233;, laboratoire ELLIADD (Edition, Litt&#233;ratures, Langages, Informatique, Arts, Didactique, Discours)</dc:publisher>
+      <dc:source>http://textometrie.ens-lyon.fr/?lang=en</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

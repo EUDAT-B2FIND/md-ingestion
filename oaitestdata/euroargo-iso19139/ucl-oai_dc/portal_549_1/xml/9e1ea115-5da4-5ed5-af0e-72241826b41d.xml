@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/9879614</identifier>
+    <datestamp>2019-10-02T15:49:10Z</datestamp>
+    <setSpec>category_671</setSpec>
+    <setSpec>category_673</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_3</setSpec>
+    <setSpec>month_year_10_2019</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Lake Tanganyika eDNA Metabarcoding Study: Visual Survey Data</dc:title>
+      <dc:creator>Chris Doble (7090616)</dc:creator>
+      <dc:creator>Julia Day (6781712)</dc:creator>
+      <dc:creator>David Murrell (6764669)</dc:creator>
+      <dc:creator>Helen Hipperson (2797600)</dc:creator>
+      <dc:creator>Gavin Horsburgh (2749129)</dc:creator>
+      <dc:creator>Chacha Mwita (7438639)</dc:creator>
+      <dc:creator>Walter Salzburger (15544)</dc:creator>
+      <dc:subject>Community Ecology (excl. Invasive Species Ecology)</dc:subject>
+      <dc:subject>Freshwater Ecology</dc:subject>
+      <dc:subject>Lake Tanganyika</dc:subject>
+      <dc:subject>Cichlids</dc:subject>
+      <dc:description>&lt;p&gt;Visual survey community data for Lake Tanganyika's littoral fish species. Surveys represent underwater visual surveys undertaken at depths of 5 and 10 metres within the littoral habitat. Surveys were undertaken across 21 sites with ten surveys undertaken at each site. Surveys were undertaken within 2016 and 2017. For further information including survey design and site GPS locations see:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Doble C. J, Hipperson H, Salzburger W, Horsburgh G, Mwita C, Murrell D. J and Day J. J. (Accepted) Testing the performance of environmental DNA metabarcoding for surveying highly diverse tropical fish communities: A case study from Lake Tanganyika. Environmental DNA&lt;/p&gt;</dc:description>
+      <dc:date>2019-10-02T15:49:10Z</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:identifier>10.5522/04/9879614.v1</dc:identifier>
+      <dc:relation>https://figshare.com/articles/Lake_Tanganyika_eDNA_Metabarcoding_Study_Visual_Survey_Data/9879614</dc:relation>
+      <dc:rights>CC0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

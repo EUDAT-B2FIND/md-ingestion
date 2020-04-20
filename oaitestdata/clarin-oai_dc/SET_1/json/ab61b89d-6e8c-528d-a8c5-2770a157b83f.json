@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 6",
+        "application/gzip"
+    ],
+    "Language": [
+        "Japanese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1047",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1047"
+    ],
+    "PID": "http://hdl.handle.net/11356/1047",
+    "PublicationTimestamp": "2008-11-14T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Hmeljak Sangawa, Kristina",
+        "Erjavec, Toma\u017e",
+        "Kawamura, Yoshiko"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1047;2018-10-24T20:49:06Z;hdl_11356_1023;hdl_11356_1024;Japanese web corpus with difficulty levels jpWaC-L 1.0;Erjavec, Toma\u017e;Hmeljak Sangawa, Kristina;Kawamura, Yoshiko;difficulty level;teaching corpus;TEI;The corpus contains over 300 million words, with annotations of words and sentences describing their difficulty levels. Words are assigned levels of difficulty according to the Japanese Language Proficiency Test Content Specifications (2004). The difficulty level of the sentences is computed using various heuristics, based on the (difficulty level of) words, sentence length, etc. The corpus was collected from the Web using WaCkY tools, part-of-speech tagged and lemmatised with Chasen. The Japanese Chasen tags have also been converted to English language based tags.\r\n\r\nThe corpora are made available in vertical format. Structural attributes are <text> and <s> (sentence). Each text gives its @url and @domain. Sentences have the @level attribute, which describes their difficulty level. The positional attributes are: \r\n1. token, as it appears in the text\r\n2. lemma of the word\r\n3. Chasen tag, translated to English\r\n4. original Chasen tag in Japanese\r\n5. difficulty level of the word.\r\n\r\nThe complete corpus is also split into sub-corpora of sentences with the same difficulty level.;2008-11-14;corpus;http://hdl.handle.net/11356/1047;jpn;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;text/plain; charset=utf-8;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;downloadable_files_count: 6;Jo\u017eef Stefan Institute;http://nl.ijs.si/jaslo/index-en.html#jpwac",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ab61b89d-6e8c-528d-a8c5-2770a157b83f",
+    "notes": [
+        "The corpus contains over 300 million words, with annotations of words and sentences describing their difficulty levels. Words are assigned levels of difficulty according to the Japanese Language Proficiency Test Content Specifications (2004). The difficulty level of the sentences is computed using various heuristics, based on the (difficulty level of) words, sentence length, etc. The corpus was collected from the Web using WaCkY tools, part-of-speech tagged and lemmatised with Chasen. The Japanese Chasen tags have also been converted to English language based tags.\r\n\r\nThe corpora are made available in vertical format. Structural attributes are <text> and <s> (sentence). Each text gives its @url and @domain. Sentences have the @level attribute, which describes their difficulty level. The positional attributes are: \r\n1. token, as it appears in the text\r\n2. lemma of the word\r\n3. Chasen tag, translated to English\r\n4. original Chasen tag in Japanese\r\n5. difficulty level of the word.\r\n\r\nThe complete corpus is also split into sub-corpora of sentences with the same difficulty level."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1047"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "difficulty level"
+        },
+        {
+            "name": "teaching corpus"
+        },
+        {
+            "name": "TEI"
+        }
+    ],
+    "title": [
+        "Japanese web corpus with difficulty levels jpWaC-L 1.0"
+    ],
+    "url": ""
+}

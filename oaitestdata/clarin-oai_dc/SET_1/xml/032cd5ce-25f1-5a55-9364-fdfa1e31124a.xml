@@ -1,0 +1,74 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1041</identifier>
+    <datestamp>2018-05-28T11:25:35Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MULTEXT-East free lexicons  4.0</dc:title>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Bruda, &#350;tefan</dc:creator>
+      <dc:creator>Derzhanski, Ivan</dc:creator>
+      <dc:creator>Dimitrova, Ludmila</dc:creator>
+      <dc:creator>Garab&#237;k, Radovan</dc:creator>
+      <dc:creator>Holozan, Peter</dc:creator>
+      <dc:creator>Ide, Nancy</dc:creator>
+      <dc:creator>Kaalep, Heiki-Jaan</dc:creator>
+      <dc:creator>Kotsyba, Natalia</dc:creator>
+      <dc:creator>Oravecz, Csaba</dc:creator>
+      <dc:creator>Petkevi&#269;, Vladim&#237;r</dc:creator>
+      <dc:creator>Priest-Dorman, Greg</dc:creator>
+      <dc:creator>Shevchenko, Igor</dc:creator>
+      <dc:creator>Simov, Kiril</dc:creator>
+      <dc:creator>Sinapova, Lydia</dc:creator>
+      <dc:creator>Steenwijk, Han</dc:creator>
+      <dc:creator>Tihanyi, Laszlo</dc:creator>
+      <dc:creator>Tufi&#351;, Dan</dc:creator>
+      <dc:creator>V&#233;ronis, Jean</dc:creator>
+      <dc:subject>lemmatisation</dc:subject>
+      <dc:subject>inflection</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>multilingual</dc:subject>
+      <dc:description>The MULTEXT-East morphosyntactic lexicons have a simple structure, where each line is a lexical entry with three tab-separated fields: (1) the word-form, the inflected form of the word; (2) the lemma, the base-form of the word; (3) the MSD, the morphosyntactic description of the word-form, i.e., its fine-grained PoS tag, as defined in the MULTEXT-East morphosyntactic specifications.&#13;
+&#13;
+This submission contains the freely available MULTEXT-East lexicons, while a separate submission (http://hdl.handle.net/11356/1042) gives those that are available only for non-commercial use.</dc:description>
+      <dc:date>2010-05-14</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1041</dc:identifier>
+      <dc:language>bul</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>slk</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>ukr</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/211938</dc:relation>
+      <dc:relation>https://doi.org/10.1007/s10579-011-9174-8</dc:relation>
+      <dc:relation>http://hdl.handle.net/11372/LRT-675</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 12</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>http://nl.ijs.si/ME/V4/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

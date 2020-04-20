@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "NBG/DBNL/INL; Nicoline van der Sijs"
+    ],
+    "Contributor": [
+        "Agency, Dutch HLT"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Dutch"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-577",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-577"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-577",
+    "PublicationTimestamp": "2008-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "NBG/DBNL/INL; Nicoline van der Sijs"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Netherlands (the)"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-577;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Statenvertaling 1637;Agency, Dutch HLT;A digitised version of the Statenvertaling (Bible) of 1637;2008;corpus;http://hdl.handle.net/11372/LRT-577;nld;downloadable_files_count: 0;Netherlands (the);NBG/DBNL/INL; Nicoline van der Sijs;http://tst.inl.nl/producten/SV1637",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c5993e6a-318d-55da-b70c-5c8010da7830",
+    "notes": [
+        "A digitised version of the Statenvertaling (Bible) of 1637"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-577"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Statenvertaling 1637"
+    ],
+    "url": ""
+}

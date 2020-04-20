@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Forskning.no"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Norwegian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/80",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/80"
+    ],
+    "PID": "http://hdl.handle.net/11509/80",
+    "PublicationTimestamp": "2013-05-20T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Forskning.no"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN_RES-DEP-*",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaRes?ID=1&PERM=1&PLAN=1&BY=1&NORED=1&DEP=1",
+        "RES"
+    ],
+    "author": [
+        "Kristiansen, Nina"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/80;2016-06-01T12:04:16Z;hdl_11509_1;hdl_11509_2;Forskning.no;Kristiansen, Nina;Science;Data set containing texts from the popular science website Forskning.no.\r\n The text material is constituted by articles published by Forskning.no (CLARINO's agreement also includes the permission to use future articles to be published by Forskning.no) belonging to the following three categories:\r\n1) Articles written by journalists employed at Forskning.no\r\n2) Articles written by member institutions of Forskning.no (76 universities, colleges, research\r\ncenters, research departments in government agencies and more). These articles are written by staff journalists, information officers and other non-academic staff. Each article has been edited by Forskning.no.\r\n3) Articles from the newsdesk NRK Viten, with whom Forskning.no cooperates. These articles are written by NRK journalists. A full list of partner/cooperation institutions may be presented on demand.;2013-05-20;corpus;http://hdl.handle.net/11509/80;nor;CLARIN_RES-DEP-*;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaRes?ID=1&PERM=1&PLAN=1&BY=1&NORED=1&DEP=1;RES;application/gzip;text/plain;downloadable_files_count: 1;Forskning.no",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "80e5141e-7325-5e27-91d2-21672d41762a",
+    "notes": [
+        "Data set containing texts from the popular science website Forskning.no.\r\n The text material is constituted by articles published by Forskning.no (CLARINO's agreement also includes the permission to use future articles to be published by Forskning.no) belonging to the following three categories:\r\n1) Articles written by journalists employed at Forskning.no\r\n2) Articles written by member institutions of Forskning.no (76 universities, colleges, research\r\ncenters, research departments in government agencies and more). These articles are written by staff journalists, information officers and other non-academic staff. Each article has been edited by Forskning.no.\r\n3) Articles from the newsdesk NRK Viten, with whom Forskning.no cooperates. These articles are written by NRK journalists. A full list of partner/cooperation institutions may be presented on demand."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/80"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Science"
+        }
+    ],
+    "title": [
+        "Forskning.no"
+    ],
+    "url": ""
+}

@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6320",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6320"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6320;2018-10-25T08:06:20Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2017.005;Souloumiac, Pauline;D\u00e9partement G\u00e9osciences et Environnement Universit\u00e9 de Cergy-Pontoise, Cergy-Pontoise, France;Maillot, Bertrand;0000-0002-0495-8799;D\u00e9partement G\u00e9osciences et Environnement Universit\u00e9 de Cergy-Pontoise, Cergy-Pontoise, France;Herbert, Justin W.;Department of Geosciences University of Massachusetts Amherst Amherst, MA, United States;McBeck, Jessica A.;0000-0002-4465-5522;Physics of Geological Processes Department of Geosciences University of Oslo, Oslo, Norway;Cooke, Michele L.;0000-0002-4407-9676;Department of Geosciences University of Massachusetts Amherst Amherst, MA, United States;Supplement to \"Work optimization predicts accretionary faulting: An integration of physical and numerical experiments\";GFZ Data Services;2017;analogue modeling;accretionary wedge;digital image correlation;EPOS;multi-scale laboratories;analogue models of geologic processes;analogue modelling results;software tools;Physical Modeling Laboratory (GEC) at the Universit\u00e9 de Cergy-Pontoise;CNRS-Cergy-Pontoise University, Cergy-Pontoise, France;GECmodel - Laboratoire de mod\u00e9lisation analogique G\u00e9osciences et Environnement (CNRS-Cergy-Pontoise University, France);CNRS-Cergy-Pontoise University, Cergy-Pontoise, France;eng;Dataset;10.1002/2017JB013931;10.1016/j.jsg.2004.08.008;10.2312/GFZ.b103-06069;10.1016/j.tecto.2013.02.028;10.1016/j.jsg.2011.11.002;445003605 Bytes;2 Files;application/x-zip-compressed;application/pdf;CC BY 4.0;The data set includes photos, force measurements, and incremental displacement fields captured in experiment E240 run at the physical modeling laboratory (GEC) at the Universit\u00e9 de Cergy-Pontoise. We built the accretionary wedge using a novel sedimentation device [Maillot, 2013] that distributes sand in planar layers and creates homogeneous sandpacks. We include photos of the side of the accretionary wedge in a zipped folder (E240_sideviews). Throughout the experiment, we took a photo every 5 seconds.",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "8f43244b-3d33-59ac-9684-f5b4a90e5c31",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6320"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

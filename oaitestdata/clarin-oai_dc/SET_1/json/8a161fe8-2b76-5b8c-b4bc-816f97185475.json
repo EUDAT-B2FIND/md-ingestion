@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(2 files : ca. 46.8, 45.4 KB)"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2256",
+    "MetadataAccess": [
+        "oai:ota:oucs:2256"
+    ],
+    "PublicationTimestamp": "1978-04-27T11:59:59Z",
+    "PublicationYear": [
+        "1978"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Aeschylus"
+    ],
+    "fulltext": "oai:ota:oucs:2256;2018-07-27T14:11:30Z;http://ota.ox.ac.uk/headers/2256.xml;The Choeforoi of Aeschylus;Aeschylus;1978-04-27;text_and_corpus_linguistics;Plays -- Greece -- B.C.;Tragedies -- Greece -- B.C.;grc;Oxford Text Archive, University of Oxford;(2 files : ca. 46.8, 45.4 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8a161fe8-2b76-5b8c-b4bc-816f97185475",
+    "oai_identifier": [
+        "oai:ota:oucs:2256"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- Greece -- B.C."
+        },
+        {
+            "name": "Tragedies -- Greece -- B.C."
+        }
+    ],
+    "title": [
+        "The Choeforoi of Aeschylus"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2256.xml"
+}

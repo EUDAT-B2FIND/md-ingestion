@@ -1,0 +1,49 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3399",
+    "MetadataAccess": [
+        "oai:ota:oucs:3399"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:3399;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3399.xml;Pigs' meat; or, lessons for the swinish multitude: Published in weekly penny numbers, collected by the poor man's advocate (an old veteran in the cause of freedom) in the course of his reading for more than twenty years. Intended to promote among the labouring part of mankind proper ideas of their situation, of their importance, and of their rights. And to convince them that their forlorn condition has not been entirely overlooked and forgotten, nor their just cause unpleaded, neither by their maker not by the best and most enlightened of men in all ages. [pt.2];text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "51adaef6-d1a2-5775-bbe0-f1b825663758",
+    "oai_identifier": [
+        "oai:ota:oucs:3399"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Pigs' meat; or, lessons for the swinish multitude: Published in weekly penny numbers, collected by the poor man's advocate (an old veteran in the cause of freedom) in the course of his reading for more than twenty years. Intended to promote among the labouring part of mankind proper ideas of their situation, of their importance, and of their rights. And to convince them that their forlorn condition has not been entirely overlooked and forgotten, nor their just cause unpleaded, neither by their maker not by the best and most enlightened of men in all ages. [pt.2]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3399.xml"
+}

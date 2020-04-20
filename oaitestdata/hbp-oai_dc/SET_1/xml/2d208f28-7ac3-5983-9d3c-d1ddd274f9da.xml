@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.25493_THB5-B64</identifier>
+    <datestamp>2019-12-10T12:41:53Z</datestamp>
+  </header>
+  <metadata>
+    <metadata xmlns="http://example.org/myapp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+      <dc:identifier>https://doi.org/10.25493/THB5-B64</dc:identifier>
+      <dc:title>Probabilistic cytoarchitectonic map of Area 1 (PostCG) (v8.4)</dc:title>
+      <dc:created>2019-06-04T16:28:25.516Z</dc:created>
+      <dc:description>This dataset contains the distinct architectonic Area 1 (PostCG) in the individual, single subject template of the MNI Colin 27 as well as the MNI ICBM 152 2009c nonlinear asymmetric reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D&#252;sseldorf. The results of the cytoarchitectonic analysis were then mapped to both reference spaces, where each voxel was assigned the probability to belong to Area 1 (PostCG). The probability map of Area 1 (PostCG) is provided in the NifTi format for each brain reference space and hemisphere. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and integration of new brain structures may lead to small deviations in earlier released datasets.</dc:description>
+      <dc:subject>neuroscience</dc:subject>
+      <dc:subject>histology</dc:subject>
+      <dc:subject>imaging</dc:subject>
+      <dc:subject>brain mapping</dc:subject>
+      <dc:language>english</dc:language>
+      <dc:type>dataset</dc:type>
+      <dc:publisher>The Human Brain Project</dc:publisher>
+      <dc:contributor>Geyer, Stefan</dc:contributor>
+      <dc:contributor>Schleicher, Axel</dc:contributor>
+      <dc:contributor>Schormann, Thorsten</dc:contributor>
+      <dc:contributor>Mohlberg, Hartmut</dc:contributor>
+      <dc:contributor>Zilles, Karl</dc:contributor>
+      <dc:creator>Amunts, Katrin</dc:creator>
+      <dc:format>NIFTI</dc:format>
+      <dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</dc:rights>
+      <dc:relation>https://doi.org/10.1006/nimg.2000.0548</dc:relation>
+      <dc:relation>https://doi.org/10.1006/nimg.1999.0440</dc:relation>
+    </metadata>
+  </metadata>
+</record>

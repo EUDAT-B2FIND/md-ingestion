@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "University of Stuttgart"
+    ],
+    "Contributor": [
+        "Schmid, Helmut"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-330",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-330"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-330",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Stuttgart"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-330;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;VPF parse forest browser;Schmid, Helmut;VPF is a graphical parse forest browser.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-330;downloadable_files_count: 0;Germany;University of Stuttgart;http://www.ims.uni-stuttgart.de/projekte/gramotron/SOFTWARE/VPF.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "92b3f764-aa34-5962-a5bc-859a80fd53ff",
+    "notes": [
+        "VPF is a graphical parse forest browser."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-330"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "VPF parse forest browser"
+    ],
+    "url": ""
+}

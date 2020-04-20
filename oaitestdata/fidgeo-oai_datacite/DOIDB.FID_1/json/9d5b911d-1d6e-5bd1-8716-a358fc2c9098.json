@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6573",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6573"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6573;2018-12-10T14:54:15Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.028;Zwaan, Frank;Frank;Zwaan;0000-0001-8226-2132;Institute of Geological Sciences, University of Bern;Schreurs, Guido;Guido;Schreurs;0000-0002-4544-7514;Institute of Geological Sciences, University of Bern;Gentzmann, Robert;Robert;Gentzmann;GFZ German Research Centre for Geosciences, Potsdam, Germany;Warsitzka, Michael;Michael;Warsitzka;0000-0003-1774-5888;GFZ German Research Centre for Geosciences, Potsdam, Germany;Rosenau, Matthias;Matthias;Rosenau;0000-0003-1134-5381;GFZ German Research Centre for Geosciences, Potsdam, Germany;Ring-shear test data of quartz sand from the Tectonic Modelling Lab of the University of Bern (CH);GFZ Data Services;2018;analogue models of geologic processes;EPOS;Multi-scale Laboratories;property data of analogue modelling materials;software tools;Zwaan, Frank;Frank;Zwaan;0000-0001-8226-2132;Institute of Geological Sciences, University of Bern;Schreurs, Guido;Guido;Schreurs;0000-0002-4544-7514;Institute of Geological Sciences, University of Bern;Gentzmann, Robert;Robert;Gentzmann;GFZ German Research Centre for Geosciences, Potsdam, Germany;Warsitzka, Michael;Michael;Warsitzka;0000-0003-1774-5888;GFZ German Research Centre for Geosciences, Potsdam, Germany;Rosenau, Matthias;Matthias;Rosenau;0000-0003-1134-5381;GFZ German Research Centre for Geosciences, Potsdam, Germany;Tectonic Modelling Laboratory at the Institute for Geological Sciences (TecLab Bern, Switzerland);Institute of Geological Sciences of the University of Bern, Switzerland;HelTec - Helmholtz Laboratory for Tectonic Modelling (GFZ German Research Centre for Geosciences, Germany);GFZ German Research Centre for Geosciences, Potsdam, Germany;en;10.1016/j.tecto.2016.02.036;10.1190/INT-2016-0063.1;10.1016/j.gloplacha.2017.11.002;10.1016/j.tecto.2016.01.017;10.1002/2016JB012915;10.1016/j.jsg.2015.03.008;10.1002/ceat.200303112;https://www.springer.com/de/book/9783540737674;2237044 Bytes;3 Files;application/octet-stream;application/pdf;application/pdf;1;CC BY 4.0;This dataset provides internal and basal (wall) friction data from ring-shear tests (RST) on a quartz sand material that has been used in tectonic experiments in Zwaan et al. (2016, 2017), Zwaan and Scheurs (2017) and in the Tectonic Modelling Lab of the University of Bern (CH) as an analogue for brittle layers in the crust or lithosphere. The material has been characterized by means of internal and basal friction coefficients \u03bc and cohesions C as a remote service by the Helmholtz Laboratory for Tectonic Modelling (HelTec) at the GFZ German Research Centre for Geosciences in Potsdam for the Tectonic Modelling Lab of the University of Bern (UB).",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "9d5b911d-1d6e-5bd1-8716-a358fc2c9098",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6573"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

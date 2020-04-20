@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/292",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/292"
+    ],
+    "PID": "http://hdl.handle.net/11321/292",
+    "PublicationTimestamp": "2016-04-25T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Marci\u0144czuk, Micha\u0142",
+        "Kaczmarek, Adam"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/292;2016-06-06T11:02:23Z;hdl_11321_3;hdl_11321_4;Liner2.5 model Minos;Kaczmarek, Adam;Marci\u0144czuk, Micha\u0142;information extraction;null subject;coreference;A model for Liner2.5 to recognize verbs without an explicit subject.;2016-04-25;lexicalConceptualResource;http://hdl.handle.net/11321/292;pol;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/narzedzia-i-zasoby/narzedzia/liner2",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "21761edd-d495-583a-92a2-f2079ca00a4c",
+    "notes": [
+        "A model for Liner2.5 to recognize verbs without an explicit subject."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/292"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "information extraction"
+        },
+        {
+            "name": "null subject"
+        },
+        {
+            "name": "coreference"
+        }
+    ],
+    "title": [
+        "Liner2.5 model Minos"
+    ],
+    "url": ""
+}

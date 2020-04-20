@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1314",
+    "MetadataAccess": [
+        "oai:ota:oucs:1314"
+    ],
+    "PublicationTimestamp": "1475-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1475"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Devotional material"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1314;2018-03-07T11:46:23Z;http://ota.ox.ac.uk/headers/1314.xml;The mirour of mans saluacioune / compiled by Ivan Dixon ; revised by Avril Henry;1475;text_and_corpus_linguistics;Devotional material -- Europe -- 15th Century;eng;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Devotional material;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0563579f-b309-506e-8f9b-f7411b5f82e4",
+    "oai_identifier": [
+        "oai:ota:oucs:1314"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Devotional material -- Europe -- th Century"
+        }
+    ],
+    "title": [
+        "The mirour of mans saluacioune / compiled by Ivan Dixon ; revised by Avril Henry"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1314.xml"
+}

@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 110 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2217",
+    "MetadataAccess": [
+        "oai:ota:oucs:2217"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Protest literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "L'Estrange, Roger, Sir, 1616-1704"
+    ],
+    "fulltext": "oai:ota:oucs:2217;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2217.xml;The Observator : [Selections] / Sir Roger L'Estrange;L'Estrange, Roger, Sir, 1616-1704;text_and_corpus_linguistics;Great Britain -- Politics and government -- 1660-1688;Oxford Text Archive, University of Oxford;Triggs, Jeffery;text/sgml;(1 file : ca. 110 KB);Text;Protest literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8b232a7f-b149-554d-a064-739895143555",
+    "oai_identifier": [
+        "oai:ota:oucs:2217"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Great Britain -- Politics government -- -"
+        }
+    ],
+    "title": [
+        "The Observator : [Selections] / Sir Roger L'Estrange"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2217.xml"
+}

@@ -1,0 +1,55 @@
+{
+    "Contact": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Chinese"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1034",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1034"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1034",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Max Planck Institute for Psycholinguistics"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1034;2016-04-06T16:39:56Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;L1 Acquisition Chen Jidong;Language Acquisition corpus;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1034;zho;downloadable_files_count: 0;Max Planck Institute for Psycholinguistics;http://corpus1.mpi.nl/ds/imdi_browser?openpath=MPI11699%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9b372e78-db5b-51de-9a00-af8cfe6e9ec9",
+    "notes": [
+        "Language Acquisition corpus"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1034"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "L1 Acquisition Chen Jidong"
+    ],
+    "url": ""
+}

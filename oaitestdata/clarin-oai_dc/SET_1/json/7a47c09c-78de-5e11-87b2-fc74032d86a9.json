@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Charles University in Prague, \u00da\u010cJTK"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1741",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1741"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1741",
+    "PublicationTimestamp": "2016-06-09T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University in Prague, \u00da\u010cJTK"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Letafkov\u00e1, Jana",
+        "Jel\u00ednkov\u00e1, Blanka",
+        "Gol\u00e1\u0148ov\u00e1, Hana",
+        "\u0160ebesta, Karel"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1741;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;AKCES 1;\u0160ebesta, Karel;Gol\u00e1\u0148ov\u00e1, Hana;Letafkov\u00e1, Jana;Jel\u00ednkov\u00e1, Blanka;youth language;written language;Corpus AKCES 1 includes texts written in czech by youth (native speakers); it is the same data as the corpus SKRIPT 2012;2016-06-09;corpus;http://hdl.handle.net/11234/1-1741;ces;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University in Prague, \u00da\u010cJTK;http://akces.ff.cuni.cz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7a47c09c-78de-5e11-87b2-fc74032d86a9",
+    "notes": [
+        "Corpus AKCES 1 includes texts written in czech by youth (native speakers); it is the same data as the corpus SKRIPT 2012"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1741"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "youth language"
+        },
+        {
+            "name": "written language"
+        }
+    ],
+    "title": [
+        "AKCES 1"
+    ],
+    "url": ""
+}

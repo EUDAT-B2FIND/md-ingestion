@@ -1,0 +1,204 @@
+
+ Statistics of
+	community	envidat
+	subset		SET_1
+	# of records	141
+  see as well oaidata/envidat-datacite/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //datacite:titles/datacite:title
+
+  |--   141 |  100 |   140 |   99
+      |- 1     : Salvage logging due to insects*      |
+      |- 1     : Biomass of standing dead trees      |
+      |- 1     : Selected wet snow avalanche activity data Davos, Switzerland (2011-2014)      |
+      |- 1     : Salvage logging due to wind*        |
+      |- 1     : Fatal avalanche accidents in Switzerland since 1995-1996      |
+      |- 1     : Soil respiration - exclosure experiment      |
+      |- 1     : Influence of slope-scale snowmelt on catchment response simulated with the Alpin [...(9 chars follow)...] |
+      |- 1     : FACE: Stillberg CO2 enrichment and soil warming study      |
+      |- 1     : Potentials of domestic biomass resources for the energy transition in Switzerlan [...(1 chars follow)...] |
+      |- 1     : Salvage logging due to insects      |
+
+ |-> Description      <--       //datacite:descriptions/datacite:description
+
+  |--   141 |  100 |   113 |   80
+      |- 1     : Volume of stemwood with bark of all trees and shrubs  starting at 12 cm dbh remo [...(1026 chars follow)...] |
+      |- 1     : This dataset contains the statistics on the number of avalanche fatalities per * [...(1682 chars follow)...] |
+      |- 1     : Number of forest edges according to the NFI definition.
+
+__Citation:__
+ > _Abegg [...(457 chars follow)...] |
+      |- 1     : testing the new schema in production      |
+      |- 1     : This dataset contains the data used in the publication by Techel et al., 2018 _S [...(322 chars follow)...] |
+
+ |-> Tags             <--       //datacite:subjects/datacite:subject
+
+  |--   141 |  100 |   141 |  100
+      |- 28    : ACCESSIBLE FOREST WITHOUT SHRUB FOREST      |
+      |- 26    : X KM GRID                           |
+      |- 4     : LONGWAVE RADIATION                  |
+      |- 4     : CLASSES                             |
+      |- 3     : FOREST                              |
+      |- 3     : BOREHOLE                            |
+      |- 3     : AVALANCHE ACCIDENT STATISTICS       |
+      |- 3     : AIR TEMPERATURE                     |
+      |- 3     : ACCESSIBLE FOREST WITHOUT SHRUB FOREST YOUNG FOREST      |
+      |- 2     : LANDSLIDES                          |
+
+ |-> DOI              <--                     
+  |--   127 |   90 |   127 |   90
+      |- 65    : http://dx.doi.org/doi:10.21258/1057112      |
+      |- 2     : http://dx.doi.org/doi:10.13093/permos-2016-01      |
+      |- 1     : http://dx.doi.org/doi:10.16904/envidat.53      |
+      |- 1     : http://dx.doi.org/doi:10.16904/19      |
+      |- 1     : http://dx.doi.org/doi:10.5061/dryad.h4s6t      |
+      |- 1     : http://dx.doi.org/doi:10.16904/1000001.3      |
+      |- 1     : http://dx.doi.org/doi:10.16904/14      |
+      |- 1     : http://dx.doi.org/doi:10.16904/17      |
+      |- 1     : http://dx.doi.org/doi:10.16904/16      |
+      |- 1     : http://dx.doi.org/doi:10.16904/11      |
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //datacite:resource/datacite:identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> RelatedIdentifier <--       //datacite:resource/datacite:identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> MetaDataAccess   <--                     
+  |--   141 |  100 |   141 |  100
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+      |- 1     : https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=datacite&identifier=oai [...(48 chars follow)...] |
+
+ |-> Creator          <--       //datacite:creators/datacite:creator/datacite:creatorName
+
+  |--   141 |  100 |   138 |   98
+      |- 1     : Huber M.                            |
+
+ |-> Publisher        <--       //datacite:publisher
+
+  |--   137 |   97 |   137 |   97
+      |- 69    : Swiss Federal Research Institute WSL      |
+      |- 20    : WSL Institute for Snow and Avalanche Research SLF      |
+      |- 5     : WSL                                 |
+      |- 5     : EnviDat                             |
+      |- 3     : PERMOS                              |
+      |- 3     : National Forest Inventory (NFI)      |
+      |- 3     : WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland      |
+      |- 2     : Laboratory of Cryospheric Sciences, School of Architecture and Civil Engineering [...(65 chars follow)...] |
+      |- 2     : Swiss Federal Institute for Forest, Snow and Landscape Research WSL      |
+      |- 1     : WSL Institute for snow and avalanche research SLF      |
+
+ |-> Contributor      <--       <string>EnviDat</string>
+
+  |--   141 |  100 |   141 |  100
+      |- 141   : EnviDat                             |
+
+ |-> PublicationYear  <--       //datacite:publicationYear
+
+  |--   141 |  100 |   141 |  100
+      |- 66    : 2014                                |
+      |- 34    : 2018                                |
+      |- 19    : 2016                                |
+      |- 18    : 2017                                |
+      |- 4     : 2015                                |
+
+ |-> Rights           <--       //datacite:rightsList//datacite:rights
+
+  |--   141 |  100 |   141 |  100
+      |- 68    : Other (Open)                        |
+      |- 63    : Open Data Commons Open Database License (ODbL)      |
+      |- 3     : License not specified               |
+      |- 3     : Other (Not Open)                    |
+      |- 3     : Other (Non-Commercial)              |
+      |- 1     : Other (Attribution)                 |
+
+ |-> OpenAccess       <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //datacite:contributors/datacite:contributor/datacite:contributorName
+
+  |--   141 |  100 |   141 |  100
+
+ |-> Language         <--       //datacite:language
+
+  |--   141 |  100 |   141 |  100
+      |- 138   : English                             |
+      |- 3     : German                              |
+
+ |-> ResourceType     <--       //datacite:resourceType
+
+  |--   128 |   91 |   128 |   91
+      |- 124   : Dataset                             |
+      |- 1     : Snow Profile Measurements           |
+      |- 1     : Post-processed laser scans          |
+      |- 1     : Measurements                        |
+      |- 1     : tif raster                          |
+
+ |-> Format           <--       //datacite:formats/datacite:format
+
+  |--   138 |   98 |   138 |   98
+      |- 72    : URL                                 |
+      |- 14    : PDF                                 |
+      |- 11    : ZIP                                 |
+      |- 9     : TXT                                 |
+      |- 8     : XLSX                                |
+      |- 7     : CSV                                 |
+      |- 3     : SHP                                 |
+      |- 2     : DAT                                 |
+      |- 1     : XML                                 |
+      |- 1     : PNG                                 |
+
+ |-> Discipline       <--       <string>Environmental Research</string>
+
+  |--   141 |  100 |   141 |  100
+      |- 141   : Environmental Research              |
+
+ |-> SpatialCoverage  <--       //datacite:geoLocations/datacite:geoLocation/datacite:geoLocationPoint,//datacite:geoLocations/datacite:geoLocation/datacite:geoLocationBox
+
+  |--   141 |  100 |   141 |  100
+      |- 78    : (46N-48N,6 E-10E)                   |
+      |- 20    : (47N,10E)                           |
+      |- 9     : (47N-47N,10E-10E)                   |
+      |- 6     : (47N,9 E)                           |
+      |- 2     : (46N,8 E)                           |
+      |- 2     : (51N,7 E)                           |
+      |- 2     : (46N-48N,6 E-11E)                   |
+      |- 2     : (90S-90N,180W-180E)                 |
+      |- 1     : (45N-43N,5 E-6 E)                   |
+      |- 1     : 46.808 9.868                        |
+
+ |-> TemporalCoverage <--       //datacite:dates/datacite:date
+
+  |--   141 |  100 |   141 |  100
+      |- 79    :  point in time : 2018-12-06T11:59:59Z      |
+      |- 5     :  point in time : 2018-07-06T11:59:59Z      |
+      |- 3     :  point in time : 1996-01-01T11:59:59Z      |
+      |- 2     :  point in time : 1975-01-01T11:59:59Z      |
+      |- 2     :  point in time : 1996-09-01T11:59:59Z      |
+      |- 2     :  point in time : 2018-06-06T11:59:59Z      |
+      |- 2     :  point in time : 2010-01-01T11:59:59Z      |
+      |- 2     :  point in time : 2017-11-15T11:59:59Z      |
+      |- 2     :  point in time : 2010-10-01T11:59:59Z      |
+      |- 1     :  point in time : 2017-01-20T11:59:59Z      |
+

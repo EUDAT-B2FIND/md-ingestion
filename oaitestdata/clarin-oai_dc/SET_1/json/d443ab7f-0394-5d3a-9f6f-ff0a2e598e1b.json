@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Matteo Grella"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2625",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2625"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2625",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Matteo Grella"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Grella, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2625;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;English Dictionary;Grella, Matteo;morphological dictionary;This resource is an alpha version of an English morphological dictionary which includes content and function words, encoded in a JSON Lines format text file. It contains correspondences between surface form and lexical forms of words followed by some standard grammatical features.;2014;corpus;http://hdl.handle.net/11234/1-2625;eng;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Matteo Grella",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d443ab7f-0394-5d3a-9f6f-ff0a2e598e1b",
+    "notes": [
+        "This resource is an alpha version of an English morphological dictionary which includes content and function words, encoded in a JSON Lines format text file. It contains correspondences between surface form and lexical forms of words followed by some standard grammatical features."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2625"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphological dictionary"
+        }
+    ],
+    "title": [
+        "English Dictionary"
+    ],
+    "url": ""
+}

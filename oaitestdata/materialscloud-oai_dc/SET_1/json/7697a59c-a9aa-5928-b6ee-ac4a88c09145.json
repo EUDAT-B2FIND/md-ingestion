@@ -1,0 +1,105 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0003/v3",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0003/v3",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0003/v3"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-10-05T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "RelatedIdentifier": [
+        "https://www.materialscloud.org/discover/cofs"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Talirz, Leopold",
+        "Smit, Berend",
+        "Fu, Rueih-Sheng",
+        "Mercado, Rocio",
+        "Haranczyk, Maciej",
+        "Yakutovich, Aliaksandr V."
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0003/v3;2019-06-12Z;DOI;Dataset;Mercado, Rocio;Fu, Rueih-Sheng;Yakutovich, Aliaksandr V.;Talirz, Leopold;Haranczyk, Maciej;Smit, Berend;In Silico Design of 2D and 3D Covalent Organic Frameworks for Methane Storage Applications;Materials Cloud;2018-10-05;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;2D;two-dimensional;layered;3D;three-dimensional;database;high-throughput;covalent organic frameworks;COF;nanoporous;methane storage;deliverable capacities;DC;grand canonical Monte Carlo;GCMC;MARVEL;doi:10.24435/materialscloud:2018.0003/v3;https://archive.materialscloud.org/2018.0003/v3;en;https://www.materialscloud.org/discover/cofs;Here we present 69,840 covalent organic frameworks (COFs) assembled in silico from a set of 666 distinct organic linkers into 2D-layered and 3D configurations. We investigate the feasibility of using these frameworks for methane storage by using grand-canonical Monte Carlo (GCMC) simulations to calculate their deliverable capacities (DCs). From these calculations, we predict that the best structure in the database is linker91_C_linker91_C_tbd, a structure composed of carbon-carbon bonded triazine linkers in the tbd topology. This structure has a predicted 65-bar DC of 216 v STP/v, greater than that of the best current methane storage material. We also predict other top performing materials, with 305 structures having DCs of over 190 v STP/v, and 34 of these having DCs of over 200 v STP/v. <br/>\nThis archive entry contains the database of assembled COF structures (in CIF file format) together with all of their properties, which can be explored using interactive figures. Among the calculated properties for each structure are the framework density, the methane heats of desorption at the storage and depletion pressures, the methane uptakes at the storage and deplation pressures, the supercell volume, and the geometric surface area. Structures are also labeled according to their bond types (amide, amine, imine, carbon-carbon, or mixed) and their dimensionalities (2D or 3D).",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "7697a59c-a9aa-5928-b6ee-ac4a88c09145",
+    "notes": [
+        "Here we present 69,840 covalent organic frameworks (COFs) assembled in silico from a set of 666 distinct organic linkers into 2D-layered and 3D configurations. We investigate the feasibility of using these frameworks for methane storage by using grand-canonical Monte Carlo (GCMC) simulations to calculate their deliverable capacities (DCs). From these calculations, we predict that the best structure in the database is linker91_C_linker91_C_tbd, a structure composed of carbon-carbon bonded triazine linkers in the tbd topology. This structure has a predicted 65-bar DC of 216 v STP/v, greater than that of the best current methane storage material. We also predict other top performing materials, with 305 structures having DCs of over 190 v STP/v, and 34 of these having DCs of over 200 v STP/v. <br/>\nThis archive entry contains the database of assembled COF structures (in CIF file format) together with all of their properties, which can be explored using interactive figures. Among the calculated properties for each structure are the framework density, the methane heats of desorption at the storage and depletion pressures, the methane uptakes at the storage and deplation pressures, the supercell volume, and the geometric surface area. Structures are also labeled according to their bond types (amide, amine, imine, carbon-carbon, or mixed) and their dimensionalities (2D or 3D)."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0003/v3"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "two-dimensional"
+        },
+        {
+            "name": "layered"
+        },
+        {
+            "name": "three-dimensional"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "high-throughput"
+        },
+        {
+            "name": "covalent organic frameworks"
+        },
+        {
+            "name": "COF"
+        },
+        {
+            "name": "nanoporous"
+        },
+        {
+            "name": "methane storage"
+        },
+        {
+            "name": "deliverable capacities"
+        },
+        {
+            "name": "DC"
+        },
+        {
+            "name": "grand canonical Monte Carlo"
+        }
+    ],
+    "title": [
+        "In Silico Design of 2D and 3D Covalent Organic Frameworks for Methane Storage Applications"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0003/v3"
+}

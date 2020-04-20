@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.25493_DW5A-YMD</identifier>
+    <datestamp>2019-12-10T12:41:50Z</datestamp>
+  </header>
+  <metadata>
+    <metadata xmlns="http://example.org/myapp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+      <dc:identifier>https://doi.org/10.25493/DW5A-YMD</dc:identifier>
+      <dc:title>Reference delineations of area HATA (Hippocampus) in individual sections of the BigBrain</dc:title>
+      <dc:created>2019-08-28T10:41:13.497Z</dc:created>
+      <dc:description>This dataset contains cytoarchitectonic delineations of area HATA (Hippocampus) in the BigBrain dataset [Amunts et al. 2013]. The delineations were created after identification of the area in the histological, cell-stained sections based on the cytoarchitectonic criteria. Mappings are available on every 15th to 60th section of the HATA in both hemispheres. They were then transformed to the sections of the 3D reconstructed BigBrain space using the transformations used in Amunts et al. 2013, which were provided by Claude Lepage (McGill).</dc:description>
+      <dc:subject>neuroscience</dc:subject>
+      <dc:subject>imaging</dc:subject>
+      <dc:subject>histology</dc:subject>
+      <dc:subject>brain mapping</dc:subject>
+      <dc:language>english</dc:language>
+      <dc:type>dataset</dc:type>
+      <dc:publisher>The Human Brain Project</dc:publisher>
+      <dc:contributor>Kedo, O.</dc:contributor>
+      <dc:contributor>Zilles, Karl</dc:contributor>
+      <dc:contributor>Palomero-Gallagher, Nicola</dc:contributor>
+      <dc:contributor>Bludau, Sebastian</dc:contributor>
+      <dc:contributor>Amunts, Katrin</dc:contributor>
+      <dc:creator>Amunts, Katrin</dc:creator>
+      <dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</dc:rights>
+    </metadata>
+  </metadata>
+</record>

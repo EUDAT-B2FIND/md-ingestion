@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "Contributor": [
+        "Schwinn, Horst"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-543",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-543"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-543",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "ResourceType": [
+        "languageDescription"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-543;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Prop\u00e4deutische Grammatik (ProGr@mm);Schwinn, Horst;Web Information &Learning System, contains reusable e-learning resources, XML format;2014-07-30;languageDescription;http://hdl.handle.net/11372/LRT-543;deu;downloadable_files_count: 0;Germany;Institut f\u00fcr Deutsche Sprache;http://www.ids-mannheim.de/progr@mm/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ad0cda21-77ae-5505-a042-3aaa44836b9f",
+    "notes": [
+        "Web Information &Learning System, contains reusable e-learning resources, XML format"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-543"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Prop\u00e4deutische Grammatik (ProGr@mm)"
+    ],
+    "url": ""
+}

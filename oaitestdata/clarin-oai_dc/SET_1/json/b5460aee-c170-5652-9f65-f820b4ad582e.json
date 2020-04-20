@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-8F1B-4",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-8F1B-4"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-8F1B-4",
+    "PublicationTimestamp": "2014-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Peterek, Nino"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-8F1B-4;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Dialogy.Org;Peterek, Nino;multimedia corpora search service;The Dialogy.Org system allows users to search in transcribed audio-visual corpora. The Dialogy.Org works on the principle of web-based interface, so installation of additional programs on your computer is not necessary. You must have Flash Player for playing audio or video recordings.;2014;toolService;http://hdl.handle.net/11858/00-097C-0000-0023-8F1B-4;downloadable_files_count: 0;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://dialogy.org",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b5460aee-c170-5652-9f65-f820b4ad582e",
+    "notes": [
+        "The Dialogy.Org system allows users to search in transcribed audio-visual corpora. The Dialogy.Org works on the principle of web-based interface, so installation of additional programs on your computer is not necessary. You must have Flash Player for playing audio or video recordings."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-8F1B-4"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "multimedia corpora search service"
+        }
+    ],
+    "title": [
+        "Dialogy.Org"
+    ],
+    "url": ""
+}

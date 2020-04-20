@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=3ba530bc3adc11e2a2aa782bcb074135f9b02c06dbbd4244a0d9e029f4a62129",
+    "MetadataAccess": [
+        "3ba530bc3adc11e2a2aa782bcb074135f9b02c06dbbd4244a0d9e029f4a62129"
+    ],
+    "PublicationTimestamp": "2012-11-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "3ba530bc3adc11e2a2aa782bcb074135f9b02c06dbbd4244a0d9e029f4a62129;2018-11-15T16:39:54Z;lexicalConceptualResource;lexicalConceptualResource:other;MALTESE AUTOMATIC COLLOCATIONS DICTIONARY;Maltese Automatic Collocations Dictionary\n===========================================\n\nLexical Computing Limited, October 2012\n\nThis is an Automatic Collocations Dictionary produced by Lexical Computing Limited, for delivery to the EU CESAR project.\nThe method is\n  \u00e2\u0080\u00a2 Take a corpus of the language in question\n  \u00e2\u0080\u00a2 Lemmatise and part-of-speech-tag it\n  \u00e2\u0080\u00a2 Load it into the Sketch Engine     \n    (http://www.sketchengine.co.uk)\n  \u00e2\u0080\u00a2 Apply a \u00e2\u0080\u0098sketch grammar\u00e2\u0080\u0099 (of regular expressions over part-of-speech tags). A sketch grammar, when applied to a corpus, identifies a set of collocations, eg <headword, grammatical relation, collocate> triples.\n  \u00e2\u0080\u00a2 For all lexical words of sufficient frequency, list all collocations they participate in\n\nIn this case,\n\u00e2\u0080\u00a2 The Maltese MLRS Corpus was developed at the University of Malta by Claudia Borg, Albert Gatt, et al. It is contains about 111 milion words and it was processed by their lemmatizator and tagger for Maltese.\n\u00e2\u0080\u00a2 The sketch grammar was also as prepared by Jan Joachimsen\n\u00e2\u0080\u00a2 The dictionary has entries for 12,553 headwords, with an average of 5.7 collocations per headword.\n\u00e2\u0080\u00a2 The entry for each collocation includes pointers to its corpus examples on the Sketch Engine website.;2012-11-30",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "045e8379-74dc-5838-8118-9d488c64b254",
+    "notes": [
+        "Maltese Automatic Collocations Dictionary\n===========================================\n\nLexical Computing Limited, October 2012\n\nThis is an Automatic Collocations Dictionary produced by Lexical Computing Limited, for delivery to the EU CESAR project.\nThe method is\n  \u00e2\u0080\u00a2 Take a corpus of the language in question\n  \u00e2\u0080\u00a2 Lemmatise and part-of-speech-tag it\n  \u00e2\u0080\u00a2 Load it into the Sketch Engine     \n    (http://www.sketchengine.co.uk)\n  \u00e2\u0080\u00a2 Apply a \u00e2\u0080\u0098sketch grammar\u00e2\u0080\u0099 (of regular expressions over part-of-speech tags). A sketch grammar, when applied to a corpus, identifies a set of collocations, eg <headword, grammatical relation, collocate> triples.\n  \u00e2\u0080\u00a2 For all lexical words of sufficient frequency, list all collocations they participate in\n\nIn this case,\n\u00e2\u0080\u00a2 The Maltese MLRS Corpus was developed at the University of Malta by Claudia Borg, Albert Gatt, et al. It is contains about 111 milion words and it was processed by their lemmatizator and tagger for Maltese.\n\u00e2\u0080\u00a2 The sketch grammar was also as prepared by Jan Joachimsen\n\u00e2\u0080\u00a2 The dictionary has entries for 12,553 headwords, with an average of 5.7 collocations per headword.\n\u00e2\u0080\u00a2 The entry for each collocation includes pointers to its corpus examples on the Sketch Engine website."
+    ],
+    "oai_identifier": [
+        "3ba530bc3adc11e2a2aa782bcb074135f9b02c06dbbd4244a0d9e029f4a62129"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:other"
+    ],
+    "state": "active",
+    "title": [
+        "MALTESE AUTOMATIC COLLOCATIONS DICTIONARY"
+    ]
+}

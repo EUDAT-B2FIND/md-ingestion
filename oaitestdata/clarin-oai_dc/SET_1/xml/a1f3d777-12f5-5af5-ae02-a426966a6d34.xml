@@ -1,0 +1,68 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2610</identifier>
+    <datestamp>2018-02-12T07:41:48Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ParaCrawl Corpus version 1.0</dc:title>
+      <dc:creator>Koehn, Philipp</dc:creator>
+      <dc:creator>Heafield, Kenneth</dc:creator>
+      <dc:creator>Forcada, Mikel L.</dc:creator>
+      <dc:creator>Espl&#224;-Gomis, Miquel</dc:creator>
+      <dc:creator>Ortiz-Rojas, Sergio</dc:creator>
+      <dc:creator>S&#225;nchez, Gema Ram&#237;rez</dc:creator>
+      <dc:creator>Cartagena, V&#237;ctor M. S&#225;nchez</dc:creator>
+      <dc:creator>Haddow, Barry</dc:creator>
+      <dc:creator>Ba&#241;&#243;n, Marta</dc:creator>
+      <dc:creator>St&#345;elec, Marek</dc:creator>
+      <dc:creator>Samiotou, Anna</dc:creator>
+      <dc:creator>Kamran, Amir</dc:creator>
+      <dc:subject>ParaCrawl</dc:subject>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>CommonCrawl</dc:subject>
+      <dc:subject>machine translation</dc:subject>
+      <dc:subject>text corpora</dc:subject>
+      <dc:description>The January 2018 release of the ParaCrawl is the first version of the corpus. It contains parallel corpora for 11 languages paired with English, crawled from a large number of web sites. The selection of websites is based on CommonCrawl, but ParaCrawl is extracted from a brand new crawl which has much higher coverage of these selected websites than CommonCrawl. Since the data is fairly raw, it is released with two quality metrics that can be used for corpus filtering. An official "clean" version of each corpus uses one of the metrics. For more details and raw data download please visit: http://paracrawl.eu/releases.html</dc:description>
+      <dc:date>2018-01-14</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2610</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>lav</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>est</dc:language>
+      <dc:rights>Public Domain Dedication (CC Zero)</dc:rights>
+      <dc:rights>http://creativecommons.org/publicdomain/zero/1.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 13</dc:format>
+      <dc:publisher>ParaCrawl</dc:publisher>
+      <dc:source>http://paracrawl.eu</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

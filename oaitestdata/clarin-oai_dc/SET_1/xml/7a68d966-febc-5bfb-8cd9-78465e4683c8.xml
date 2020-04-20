@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2586</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Indonesian web corpus (idWac)</dc:title>
+      <dc:creator>Medve&#271;, Marek</dc:creator>
+      <dc:creator>Suchomel, V&#237;t</dc:creator>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>lemmatization</dc:subject>
+      <dc:subject>PoS tagging</dc:subject>
+      <dc:description>Indonesian text corpus from web. Crawling done by SpiderLing in 2017. Filtering by JusText and Onion (see http://corpus.tools/ for details). Tagged and lemmatized by MorphInd (http://septinalarasati.com/morphind/).</dc:description>
+      <dc:date>2017-12-18</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2586</dc:identifier>
+      <dc:language>ind</dc:language>
+      <dc:rights>NLP Centre Web Corpus License</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/license-NLPC-WeC</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/x-xz</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Natural Language Processing Centre, Faculty of Informatics, Masaryk University</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

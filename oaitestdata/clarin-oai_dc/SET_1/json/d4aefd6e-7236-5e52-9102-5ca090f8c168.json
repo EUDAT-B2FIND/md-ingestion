@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 42.3 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0065",
+    "MetadataAccess": [
+        "oai:ota:oucs:0065"
+    ],
+    "PublicationTimestamp": "1747-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1747"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gray, Thomas, 1716-1771"
+    ],
+    "fulltext": "oai:ota:oucs:0065;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0065.xml;Poems. Selections;Ode on the spring ; Ode on the death of a favourite cat ; Ode on a distant prospect of Eton College ...;Gray, Thomas, 1716-1771;1747-1777;text_and_corpus_linguistics;Poems -- Great Britain -- 18th century;eng;Oxford Text Archive, University of Oxford;(1 file : ca. 42.3 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d4aefd6e-7236-5e52-9102-5ca090f8c168",
+    "oai_identifier": [
+        "oai:ota:oucs:0065"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Poems. Selections",
+        "Ode on the spring ; Ode on the death of a favourite cat ; Ode on a distant prospect of Eton College ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0065.xml"
+}

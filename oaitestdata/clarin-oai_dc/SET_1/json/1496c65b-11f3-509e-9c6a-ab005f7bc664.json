@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "McCarty, Willard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(34 files : ca. 2.95 MB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1324",
+    "MetadataAccess": [
+        "oai:ota:oucs:1324"
+    ],
+    "PublicationTimestamp": "1987-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1987"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Anthologies"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1324;2018-03-07T12:37:09Z;http://ota.ox.ac.uk/headers/1324.xml;The complete Humanist electronic discussion group : 1987-1989;1987-1989;text_and_corpus_linguistics;Linguistic analysis (Linguistics);Computer bulletin boards;Anthologies -- 20th century;eng;Oxford Text Archive, University of Oxford;McCarty, Willard;text/plain;(34 files : ca. 2.95 MB);Text;Anthologies;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1496c65b-11f3-509e-9c6a-ab005f7bc664",
+    "oai_identifier": [
+        "oai:ota:oucs:1324"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        },
+        {
+            "name": "Computer bulletin boards"
+        },
+        {
+            "name": "Anthologies -- th century"
+        }
+    ],
+    "title": [
+        "The complete Humanist electronic discussion group : 1987-1989"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1324.xml"
+}

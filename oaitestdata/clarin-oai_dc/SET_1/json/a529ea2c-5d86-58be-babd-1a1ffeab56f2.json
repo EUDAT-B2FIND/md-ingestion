@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "ZRC SAZU"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1091",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1091"
+    ],
+    "PID": "http://hdl.handle.net/11356/1091",
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "ZRC SAZU"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Mirti\u010d, Tanja",
+        "Perdih, Andrej",
+        "Krvina, Domen",
+        "Bizjak Kon\u010dar, Aleksandra",
+        "Michelizza, Mija",
+        "Gliha Komac, Nata\u0161a",
+        "\u0160ircelj \u017dnidar\u0161i\u010d, Ivanka",
+        "Klemen\u010di\u010d, Simona",
+        "Snoj, Marko",
+        "Ledinek, Nina",
+        "Petric, \u0160pela",
+        "Kostanjevec, Polona",
+        "Glo\u017ean\u010dev, Alenka",
+        "Kern, Boris",
+        "\u017dele, Andreja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1091;2017-05-15T09:49:35Z;hdl_11356_1023;hdl_11356_1024;Dictionary of New Slovenian Words;Bizjak Kon\u010dar, Aleksandra;Glo\u017ean\u010dev, Alenka;Kern, Boris;Kostanjevec, Polona;Krvina, Domen;Ledinek, Nina;Michelizza, Mija;Perdih, Andrej;Petric, \u0160pela;Snoj, Marko;\u0160ircelj \u017dnidar\u0161i\u010d, Ivanka;\u017dele, Andreja;Mirti\u010d, Tanja;Gliha Komac, Nata\u0161a;Klemen\u010di\u010d, Simona;dictionary;neologism;lexicography;Slovar novej\u0161ega besedja slovenskega jezika (Dictionary of New Slovenian Words) represents a basic new lexical supplement to the Slovar slovenskega knji\u017enega jezika (Dictionary of the Slovenian Standard Language). It contains 6399 new words and phrases that appeared in Slovenian or gained ground after 1991 as well as new meanings of previously standardised lexis. Two important new features of the dictionary are a corpus-driven analysis of new words that are in actual language use and etymological explanations of the included words.\r\n\r\nThis dictionary was published as a printed book:\r\nBizjak Kon\u010dar, Aleksandra, Snoj, Marko, Glo\u017ean\u010dev, Alenka, Kern, Boris, Kostanjevec, Polona, Krvina, Domen, Ledinek, Nina, Michelizza, Mija, Perdih, Andrej, Petric, \u0160pela, \u0160ircelj-\u017dnidar\u0161i\u010d, Ivanka, \u017dele, Andreja, Mirti\u010d, Tanja, Gliha Komac, Nata\u0161a, Klemen\u010di\u010d, Simona. Slovar novej\u0161ega besedja slovenskega jezika. Ljubljana : Zalo\u017eba ZRC, ZRC SAZU, 2012. ISBN 978-961-254-413-3.;2012;lexicalConceptualResource;http://hdl.handle.net/11356/1091;slv;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;ZRC SAZU;http://www.fran.si/131/snb-slovar-novejsega-besedja",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a529ea2c-5d86-58be-babd-1a1ffeab56f2",
+    "notes": [
+        "Slovar novej\u0161ega besedja slovenskega jezika (Dictionary of New Slovenian Words) represents a basic new lexical supplement to the Slovar slovenskega knji\u017enega jezika (Dictionary of the Slovenian Standard Language). It contains 6399 new words and phrases that appeared in Slovenian or gained ground after 1991 as well as new meanings of previously standardised lexis. Two important new features of the dictionary are a corpus-driven analysis of new words that are in actual language use and etymological explanations of the included words.\r\n\r\nThis dictionary was published as a printed book:\r\nBizjak Kon\u010dar, Aleksandra, Snoj, Marko, Glo\u017ean\u010dev, Alenka, Kern, Boris, Kostanjevec, Polona, Krvina, Domen, Ledinek, Nina, Michelizza, Mija, Perdih, Andrej, Petric, \u0160pela, \u0160ircelj-\u017dnidar\u0161i\u010d, Ivanka, \u017dele, Andreja, Mirti\u010d, Tanja, Gliha Komac, Nata\u0161a, Klemen\u010di\u010d, Simona. Slovar novej\u0161ega besedja slovenskega jezika. Ljubljana : Zalo\u017eba ZRC, ZRC SAZU, 2012. ISBN 978-961-254-413-3."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1091"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dictionary"
+        },
+        {
+            "name": "neologism"
+        },
+        {
+            "name": "lexicography"
+        }
+    ],
+    "title": [
+        "Dictionary of New Slovenian Words"
+    ],
+    "url": ""
+}

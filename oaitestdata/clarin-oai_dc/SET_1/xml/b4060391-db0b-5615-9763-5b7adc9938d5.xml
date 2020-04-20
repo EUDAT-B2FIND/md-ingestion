@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-886</identifier>
+    <datestamp>2016-04-06T16:39:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>International Corpus of English: East Africa (ICE-EA)</dc:title>
+      <dc:contributor>Schmied, Josef</dc:contributor>
+      <dc:contributor>Hudson-Ettle, Diana</dc:contributor>
+      <dc:subject>corpus</dc:subject>
+      <dc:description>One million words of spoken and written English from Kenya and Tanzania. Part of the ICE project</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-886</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:publisher>Technische Universit&#228;t, Chemnitz , Universit&#228;t Bayreuth</dc:publisher>
+      <dc:source>http://www.ucl.ac.uk/english-usage/ice/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

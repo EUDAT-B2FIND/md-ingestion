@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1166</identifier>
+    <datestamp>2018-03-25T12:07:28Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Thesaurus of Modern Slovene 1.0</dc:title>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Laskowski, Cyprian</dc:creator>
+      <dc:creator>Robnik-&#352;ikonja, Marko</dc:creator>
+      <dc:creator>Kosem, Iztok</dc:creator>
+      <dc:creator>Arhar Holdt, &#352;pela</dc:creator>
+      <dc:creator>Gantar, Polona</dc:creator>
+      <dc:creator>&#268;ibej, Jaka</dc:creator>
+      <dc:creator>Gorjanc, Vojko</dc:creator>
+      <dc:creator>Klemenc, Bojan</dc:creator>
+      <dc:creator>Dobrovoljc, Kaja</dc:creator>
+      <dc:subject>thesaurus</dc:subject>
+      <dc:description>This is an automatically created Slovene thesaurus from Slovene data available in a comprehensive English&#8211;Slovenian dictionary, a monolingual dictionary, and a corpus. A network analysis on the bilingual dictionary word co-occurrence graph was used, together with additional information from the distributional thesaurus data available as part of the Sketch Engine tool and extracted from the 1.2 billion word Gigafida corpus and the monolingual dictionary.</dc:description>
+      <dc:date>2018-03-25</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1166</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>https://elex.link/elex2017/wp-content/uploads/2017/09/paper05.pdf</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Centre for Language Resources and Technologies, University of Ljubljana</dc:publisher>
+      <dc:source>https://www.cjvt.si/en/sopomenke/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

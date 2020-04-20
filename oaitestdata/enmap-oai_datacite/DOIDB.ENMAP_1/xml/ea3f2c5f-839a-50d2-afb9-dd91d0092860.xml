@@ -1,0 +1,174 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6150</identifier>
+    <datestamp>2016-11-25T13:58:04Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.ENMAP</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>DOIDB.ENMAP</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.5880/enmap.2015.007</identifier>
+          <creators>
+            <creator>
+              <creatorName>Foerster, Saskia</creatorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7752-7394</nameIdentifier>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </creator>
+            <creator>
+              <creatorName>Brosinsky, Arlena</creatorName>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </creator>
+            <creator>
+              <creatorName>Wilczok, Charlotte</creatorName>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </creator>
+            <creator>
+              <creatorName>Bauer, Marcus</creatorName>
+              <affiliation>University of Potsdam</affiliation>
+            </creator>
+          </creators>
+          <titles>
+            <title xml:lang="eng">Is&#225;bena 2011 - An EnMAP Preparatory Flight Campaign (Datasets)</title>
+          </titles>
+          <publisher>GFZ Data Services</publisher>
+          <publicationYear>2015</publicationYear>
+          <subjects>
+            <subject>Imaging Spectroscopy</subject>
+            <subject>Airborne Laserscanning</subject>
+            <subject>Mediterranean drylands</subject>
+            <subject>Ground fractional cover</subject>
+          </subjects>
+          <contributors>
+            <contributor contributorType="ProjectLeader">
+              <contributorName>Foerster, Saskia</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7752-7394</nameIdentifier>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="ContactPerson">
+              <contributorName>Foerster, Saskia</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7752-7394</nameIdentifier>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCurator">
+              <contributorName>Foerster, Saskia</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7752-7394</nameIdentifier>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Brosinsky, Arlena</contributorName>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="Producer">
+              <contributorName>Brosinsky, Arlena</contributorName>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Wilczok, Charlotte</contributorName>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="Producer">
+              <contributorName>Wilczok, Charlotte</contributorName>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Bauer, Marcus</contributorName>
+              <affiliation>University of Potsdam</affiliation>
+            </contributor>
+            <contributor contributorType="Producer">
+              <contributorName>Bauer, Marcus</contributorName>
+              <affiliation>University of Potsdam</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Bauer, Marcus</contributorName>
+              <affiliation>University of Potsdam</affiliation>
+            </contributor>
+            <contributor contributorType="Producer">
+              <contributorName>Bauer, Marcus</contributorName>
+              <affiliation>University of Potsdam</affiliation>
+            </contributor>
+            <contributor contributorType="Funder">
+              <contributorName>BMWi</contributorName>
+              <affiliation>Federal Ministry of Economics and Technology</affiliation>
+            </contributor>
+            <contributor contributorType="Funder">
+              <contributorName>EUFAR Transnational Access</contributorName>
+              <affiliation>EUFAR Transnational Access</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Klinke, Randolf</contributorName>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>H&#246;rhold, Simon</contributorName>
+              <affiliation>University of Potsdam</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Lindenthal, Elfrun</contributorName>
+              <affiliation>University of Potsdam</affiliation>
+            </contributor>
+            <contributor contributorType="DataCurator">
+              <contributorName>Elger, Kirsten</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-5140-8602</nameIdentifier>
+              <affiliation>GFZ German Research Centre for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Brauer, Arne</contributorName>
+              <affiliation>University of Potsdam</affiliation>
+            </contributor>
+          </contributors>
+          <dates>
+            <date dateType="Created">2015-04</date>
+            <date dateType="Collected">2011-04-02</date>
+            <date dateType="Collected">2011-08-09</date>
+            <date dateType="Collected">2011-08-09</date>
+            <date dateType="Collected">2011-04</date>
+            <date dateType="Collected">2011-08</date>
+          </dates>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+          <relatedIdentifiers>
+            <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">10.3390/rs70708830</relatedIdentifier>
+            <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDocumentedBy">10.2312/enmap.2015.007</relatedIdentifier>
+            <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">10.1007/s11368-014-0992-3</relatedIdentifier>
+            <relatedIdentifier relatedIdentifierType="URL" relationType="IsReferencedBy">http://www.enmap.org/?q=flights</relatedIdentifier>
+          </relatedIdentifiers>
+          <rightsList>
+            <rights rightsURI="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</rights>
+          </rightsList>
+          <descriptions>
+            <description descriptionType="Abstract">The dataset is composed of a) hyperspectral imagery acquired with AISA Eagle and Hawk imaging spectrometer data in the range 400 to 2500 nm on April 2 and August 9, 2011, with a ground sampling distance of 4 m in 12 and 15 flight lines, respectively; b) airborne LiDAR data acquired in single-pulse mode in August 2011 concurrent with hyperspectral data acquisition with an avarage point density of 0.7 hits per meter squared; c) spectral reference measurements acquired with a portable ASD field spectroradiometer around the days of image acquisitions d) fractional cover of green vegetation, dry vegetation, bare soil and rock were visually estimated for 60 (April) and 53 (August) transects of 20-m length. The overall goal of the study was to investigate the potential of hyperspectral and LiDAR data for assessing sediment connectivity at the hillslope to subcatchment scale. For that the fractional cover of green vegetation, dry vegetation, bare soil and rock was derived
+by applying a multiple endmember spectral mixture analysis approach to the hyperspectral image data. The LiDAR point clouds were pre-processed to generate a digital elevation map as well as a vegetation height map, both with 4-m spatial resolution.</description>
+            <description descriptionType="Other">The Environmental Mapping and Analysis Program (EnMAP) is a German hyperspectral satellite mission that aims at monitoring and characterizing the Earth&#8217;s environment on a global scale. EnMAP serves to measure and model key dynamic processes of the Earth&#8217;s ecosystems by extracting geochemical, biochemical and biophysical parameters, which provide information on the status and evolution of various terrestrial and aquatic ecosystems. In the frame of the EnMAP preparatory phase, pre-flight campaigns including airborne and in-situ measurements in different environments and for several application fields are being conducted. The main purpose of these campaigns is to support the development of scientific applications for EnMAP. In addition, the acquired data are input in the EnMAP end-to-end simulation tool (EeteS) and are employed to test data pre-processing and calibration-validation methods. The campaign data are made freely available to the scientific community under a Creative Commons Attribution-ShareAlike 4.0 International License. An overview of all available data is provided in in the EnMAP Flight Campaigns Metadata Portal http://www.enmap.org/?q=flights.</description>
+          </descriptions>
+          <geoLocations>
+            <geoLocation>
+              <geoLocationBox>42.4379 0.4789 42.2710 0.5800</geoLocationBox>
+              <geoLocationPlace>AISA Eagle and Hawk, Isabena, Spain</geoLocationPlace>
+            </geoLocation>
+            <geoLocation>
+              <geoLocationBox>42.4361 0.4719 42.2716 0.5737</geoLocationBox>
+              <geoLocationPlace>AISA Eagle and Hawk, Isabena, Spain</geoLocationPlace>
+            </geoLocation>
+            <geoLocation>
+              <geoLocationBox>42.4361 0.4719 42.2716 0.5737</geoLocationBox>
+              <geoLocationPlace>Airborne LiDAR, Isabena, Spain</geoLocationPlace>
+            </geoLocation>
+            <geoLocation>
+              <geoLocationBox>42.4379 0.4789 42.2710 0.5800</geoLocationBox>
+              <geoLocationPlace>Ground fractional cover in-situ estimation April, Isabena, Spain</geoLocationPlace>
+            </geoLocation>
+            <geoLocation>
+              <geoLocationBox>42.4361 0.4719 42.2716 0.5737</geoLocationBox>
+              <geoLocationPlace>Ground fractional cover in-situ estimation August, Isabena, Spain</geoLocationPlace>
+            </geoLocation>
+          </geoLocations>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

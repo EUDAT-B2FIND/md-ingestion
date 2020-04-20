@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1932</identifier>
+    <datestamp>2018-10-29T14:08:59Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>English-Czech Corpus from Wikipedia</dc:title>
+      <dc:creator>&#352;tromajerov&#225;, Ad&#233;la</dc:creator>
+      <dc:creator>Baisa, V&#237;t</dc:creator>
+      <dc:creator>Blahu&#353;, Marek</dc:creator>
+      <dc:subject>Wikipedia</dc:subject>
+      <dc:description>Sentence-parallel corpus made from English and Czech Wikipedias based on translated articles from English into Czech.&#13;
+&#13;
+The work done is described in the paper: &#352;TROMAJEROV&#193;, Ad&#233;la, V&#237;t BAISA a Marek BLAHU&#352;. Between Comparable and Parallel: English-Czech Corpus from Wikipedia. In RASLAN 2016 Recent Advances in Slavonic Natural Language Processing. Brno: Tribun EU, 2016. s. 3-8, 6 s. ISBN 978-80-263-1095-2.</dc:description>
+      <dc:date>2016-12-02</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1932</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Masaryk University, NLP Centre</dc:publisher>
+      <dc:source>https://www.muni.cz/vyzkum/publikace/1362553</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

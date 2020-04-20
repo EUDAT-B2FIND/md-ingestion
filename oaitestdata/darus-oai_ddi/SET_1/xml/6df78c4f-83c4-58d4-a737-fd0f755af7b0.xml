@@ -1,0 +1,86 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-475</identifier>
+    <datestamp>2019-12-03T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>RePlay-DH Client</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-475</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-02</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-12-02" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>G&#228;rtner, Markus; Kushnarenko, Volodymyr; Florian Fritze, 2019, "RePlay-DH Client", https://doi.org/10.18419/darus-475, DaRUS, V1</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>RePlay-DH Client</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-475</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">G&#228;rtner, Markus</AuthEnty>
+            <AuthEnty affiliation="Universit&#228;t Ulm">Kushnarenko, Volodymyr</AuthEnty>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Florian Fritze</AuthEnty>
+          </rspStmt>
+          <prodStmt/>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-02</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Arts and Humanities</keyword>
+            <keyword>Computer and Information Science</keyword>
+            <keyword>workflow tracking</keyword>
+            <keyword>process metadata</keyword>
+            <keyword>digital humanities</keyword>
+          </subject>
+          <abstract>Integrated Tool for tracking, versioning and publishing workflows.&#13;
+&lt;ul&gt;&#13;
+    &lt;li&gt;Document your workflows on the fly while working&lt;/li&gt;&#13;
+    &lt;li&gt;Have all your workflow data backed up in a local Git repository&lt;/li&gt;&#13;
+    &lt;li&gt;Export metadata or data from your workflow in various formats&lt;/li&gt;&#13;
+    &lt;li&gt;Publish directly to institutional repositories such as DSpace from within the client&lt;/li&gt;&#13;
+&lt;/ul&gt;</abstract>
+          <sumDscr>
+            <dataKind>program source code</dataKind>
+            <dataKind>executable program</dataKind>
+          </sumDscr>
+          <relPubl>M. G&#228;rtner, U. Hahn, and S. Hermann, &#8220;Preserving Workflow Reproducibility: The RePlay-DH Client as a Tool for Process Documentation,&#8221; in Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018), Miyazaki, Japan, 7-12., url, http://www.lrec-conf.org/proceedings/lrec2018/pdf/707.pdf</relPubl>
+          <relPubl>url, http://www.lrec-conf.org/proceedings/lrec2018/summaries/707.html</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">G&#228;rtner, Markus</contact>
+          <depositr>G&#228;rtner, Markus</depositr>
+          <depDate>2019-09-27</depDate>
+          <relStdy>G&#228;rtner, Markus, 2019, "RePlay-DH Process Metadata Schema", &lt;a href="https://doi.org/10.18419/darus-474"&gt;https://doi.org/10.18419/darus-474&lt;/a&gt;, DaRUS</relStdy>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>Code and deployable from this project are licensed under the MIT license:  https://opensource.org/licenses/MIT</useStmt>
+      </stdyDscr>
+      <otherMat ID="f402" URI="https://doi.org/10.18419/darus-475/1" level="datafile">
+        <labl>license-client.txt</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/plain</notes>
+      </otherMat>
+      <otherMat ID="f403" URI="https://doi.org/10.18419/darus-475/2" level="datafile">
+        <labl>replay-dh-client-1.3.0.tar</labl>
+        <txt/>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/x-tar</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

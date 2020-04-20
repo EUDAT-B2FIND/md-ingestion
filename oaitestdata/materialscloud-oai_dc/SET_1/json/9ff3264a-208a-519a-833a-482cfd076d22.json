@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0002/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0002/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0002/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-02-11T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Nguyen, Ngoc Linh",
+        "Marzari, Nicola",
+        "Baletto, Francesca"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0002/v1;2019-06-12Z;DOI;Dataset;Nguyen, Ngoc Linh;Baletto, Francesca;Marzari, Nicola;Adatom-Induced Local Melting;Materials Cloud;2018-02-11;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;First-principles molecular dynamics;Aluminum;Surface melting;Defects;MARVEL;doi:10.24435/materialscloud:2018.0002/v1;https://archive.materialscloud.org/2018.0002/v1;en;We introduce and discuss the phenomenon of adatom-induced surface local melting, using extensive first-principles molecular dynamics simulations of Al(100) taken as a paradigmatic case of a non-premelting surface that nevertheless displays facile adatom diffusion with single and multiple exchange pathways. Here, a single adatom deposited on the surface is sufficient to nucleate a localized and diffusing liquid-like region that remains confined to the surface layer, but with an area that increases with temperature; in the absence of the adatom, the surface instead remains crystalline until reaching the bulk melting temperature.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "9ff3264a-208a-519a-833a-482cfd076d22",
+    "notes": [
+        "We introduce and discuss the phenomenon of adatom-induced surface local melting, using extensive first-principles molecular dynamics simulations of Al(100) taken as a paradigmatic case of a non-premelting surface that nevertheless displays facile adatom diffusion with single and multiple exchange pathways. Here, a single adatom deposited on the surface is sufficient to nucleate a localized and diffusing liquid-like region that remains confined to the surface layer, but with an area that increases with temperature; in the absence of the adatom, the surface instead remains crystalline until reaching the bulk melting temperature."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0002/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "First-principles molecular dynamics"
+        },
+        {
+            "name": "Aluminum"
+        },
+        {
+            "name": "Surface melting"
+        },
+        {
+            "name": "Defects"
+        },
+        {
+            "name": "MARVEL"
+        }
+    ],
+    "title": [
+        "Adatom-Induced Local Melting"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0002/v1"
+}

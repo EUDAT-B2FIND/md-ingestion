@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "95 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1940",
+    "MetadataAccess": [
+        "oai:ota:oucs:1940"
+    ],
+    "PublicationTimestamp": "1626-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1626"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Fiction"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Campanella, Tommaso"
+    ],
+    "fulltext": "oai:ota:oucs:1940;2018-04-16T11:42:32Z;http://ota.ox.ac.uk/headers/1940.xml;The city of the sun;Campanella, Tommaso;1626;text_and_corpus_linguistics;Fiction -- Italy -- 17th century;Fantasy literature -- Italy -- 17th century;Utopian literature -- Italy -- 17th century;Essays -- Italy -- 17th century;eng;Oxford Text Archive, University of Oxford;95 KB;Text;Fiction;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "185e8c1c-e286-5fe3-af91-efb622c99606",
+    "oai_identifier": [
+        "oai:ota:oucs:1940"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- Italy -- th century"
+        },
+        {
+            "name": "Fantasy literature -- Italy -- th century"
+        },
+        {
+            "name": "Utopian literature -- Italy -- th century"
+        },
+        {
+            "name": "Essays -- Italy -- th century"
+        }
+    ],
+    "title": [
+        "The city of the sun"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1940.xml"
+}

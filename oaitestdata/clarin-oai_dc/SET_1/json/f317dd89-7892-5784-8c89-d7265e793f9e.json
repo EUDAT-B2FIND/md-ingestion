@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Italian",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-68",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-68"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-68",
+    "PublicationTimestamp": "2016-10-18T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0",
+        "PUB"
+    ],
+    "author": [
+        "Del Gratta, Riccardo",
+        "Frontini, Francesca",
+        "Monachini, Monica"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-68;2018-07-23T09:13:44Z;hdl_000-c0-111_38;hdl_000-c0-111_49;Geodomain WordNet ITA ENG V 1.0;Frontini, Francesca;Del Gratta, Riccardo;Monachini, Monica;Geographical Names;Named Entity;Concepts;Wordnet Structure;Two domain wordnets containing a manual mapping  between the concepts of the Geonames ontology (version 3.0) and two existing wordnets.\r\nGeodomain WordNet ENG V 1.0 maps the Geonames concepts onto Princeton WordNet 3.0\r\nGeodomain WordNet ITA V 1.0 maps the Geonames concepts onto ItalWordnet; moreover the Geonames concept glosses are translated into Italian.;2016-10-18;lexicalConceptualResource;http://hdl.handle.net/20.500.11752/ILC-68;ita;eng;Creative Commons - Attribution 4.0 International (CC BY 4.0);https://creativecommons.org/licenses/by/4.0;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR);http://www.ilc.cnr.it/en/content/resources",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f317dd89-7892-5784-8c89-d7265e793f9e",
+    "notes": [
+        "Two domain wordnets containing a manual mapping  between the concepts of the Geonames ontology (version 3.0) and two existing wordnets.\r\nGeodomain WordNet ENG V 1.0 maps the Geonames concepts onto Princeton WordNet 3.0\r\nGeodomain WordNet ITA V 1.0 maps the Geonames concepts onto ItalWordnet; moreover the Geonames concept glosses are translated into Italian."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-68"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Geographical Names"
+        },
+        {
+            "name": "Named Entity"
+        },
+        {
+            "name": "Concepts"
+        },
+        {
+            "name": "Wordnet Structure"
+        }
+    ],
+    "title": [
+        "Geodomain WordNet ITA ENG V 1.0"
+    ],
+    "url": ""
+}

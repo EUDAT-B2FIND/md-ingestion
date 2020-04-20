@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "The Royal Library",
+        "University of Bergen",
+        "Spr\u00e5kbanken, Dept. of Swedish Language, G\u00f6teborg University",
+        "Department of Linguistics and Nordic Studies, University of Oslo",
+        "The National Library of Norway"
+    ],
+    "Contributor": [
+        "lle.uib.no, odd.haugen",
+        "Haugen, Odd Einar"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Old Norse"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-187",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-187"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-187",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "The Royal Library",
+        "University of Bergen",
+        "Spr\u00e5kbanken, Dept. of Swedish Language, G\u00f6teborg University",
+        "Department of Linguistics and Nordic Studies, University of Oslo",
+        "The National Library of Norway"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Norway"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-187;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Menota \u2013 Medieval Nordic Text Archive;Haugen, Odd Einar;lle.uib.no, odd.haugen;Facsimiles and richly TEI-encoded texts, diplomatic and normalised transcriptions;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-187;non;downloadable_files_count: 0;Norway;Department of Linguistics and Nordic Studies, University of Oslo;University of Bergen;The National Library of Norway;The Royal Library;Spr\u00e5kbanken, Dept. of Swedish Language, G\u00f6teborg University;http://www.menota.org",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ee3cf720-040a-57cd-afba-2e40f3ec9146",
+    "notes": [
+        "Facsimiles and richly TEI-encoded texts, diplomatic and normalised transcriptions"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-187"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Menota \u2013 Medieval Nordic Text Archive"
+    ],
+    "url": ""
+}

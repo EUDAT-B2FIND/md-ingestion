@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Centro de Tecnolog\u00edas y Aplicaciones del Lenguaje y del Habla (TALP)"
+    ],
+    "Contributor": [
+        "Boleda, Gemma"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Catalan",
+        "English",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1105",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1105"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1105",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Centro de Tecnolog\u00edas y Aplicaciones del Lenguaje y del Habla (TALP)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Spain"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1105;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Wikicorpus;Boleda, Gemma;trilingual corpus;Trilingual corpus (Catalan, Spanish, English) that contains large portions of the Wikipedia (based on a 2006 dump) and has been automatically enriched with linguistic information. In its present version, it contains over 750 million words.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1105;cat;eng;spa;downloadable_files_count: 0;Spain;Centro de Tecnolog\u00edas y Aplicaciones del Lenguaje y del Habla (TALP);http://www.lsi.upc.edu/~nlp/wikicorpus/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c8ddaa05-72f3-5a91-b511-9782edb194e6",
+    "notes": [
+        "Trilingual corpus (Catalan, Spanish, English) that contains large portions of the Wikipedia (based on a 2006 dump) and has been automatically enriched with linguistic information. In its present version, it contains over 750 million words."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1105"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "trilingual corpus"
+        }
+    ],
+    "title": [
+        "Wikicorpus"
+    ],
+    "url": ""
+}

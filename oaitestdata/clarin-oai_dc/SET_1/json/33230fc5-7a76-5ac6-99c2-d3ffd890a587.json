@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Institute of Mathematics and Computer Science, University of Latvia"
+    ],
+    "Contributor": [
+        "Gr\u016bz\u012btis, Normunds"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/xml"
+    ],
+    "Language": [
+        "Latvian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-476",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-476"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-476",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institute of Mathematics and Computer Science, University of Latvia"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Latvia"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-476;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Concise dictionary of Latvian;Gr\u016bz\u012btis, Normunds;> 25 000 entries;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-476;lav;application/xml;downloadable_files_count: 0;Latvia;Institute of Mathematics and Computer Science, University of Latvia;http://www.tezaurs.lv/lvv/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "33230fc5-7a76-5ac6-99c2-d3ffd890a587",
+    "notes": [
+        "> 25 000 entries"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-476"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Concise dictionary of Latvian"
+    ],
+    "url": ""
+}

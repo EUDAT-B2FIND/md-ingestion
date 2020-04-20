@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/252</identifier>
+    <datestamp>2016-04-29T15:58:07Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Slowal</dc:title>
+      <dc:creator>Nito&#324;, Bart&#322;omiej</dc:creator>
+      <dc:creator>Bartosiak, Tomasz</dc:creator>
+      <dc:subject>valence dictionary editor</dc:subject>
+      <dc:subject>syntactic schema</dc:subject>
+      <dc:subject>semantic frame</dc:subject>
+      <dc:subject>valence dictionary browser</dc:subject>
+      <dc:description>Slowal is a web tool designed for creating, editing and browsing valence dictionaries. So far, it has mainly been used for creating The Polish Valence Dictionary (Walenty).&#13;
+&#13;
+Slowal supports the process of creating the dictionary; it also facilitates access by making it possible to browse the dictionary using an advanced built-in filtering system, covering both syntactic and semantic phenomena. Slowal also gives control over the work of lexicographers involved in creating dictionary, for instance by using predefined lists of values, which prevents spelling errors and enforces consistency, as well as by imposing strict validation rules.&#13;
+&#13;
+Last but not least, the created dictionary can be exported from Slowal in various formats: plain text, TeX, PDF, and TEI XML.</dc:description>
+      <dc:date>2016</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/252</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>BSD 2 Clause</dc:rights>
+      <dc:rights>https://opensource.org/licenses/BSD-2-Clause</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+      <dc:source>http://zil.ipipan.waw.pl/Slowal</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

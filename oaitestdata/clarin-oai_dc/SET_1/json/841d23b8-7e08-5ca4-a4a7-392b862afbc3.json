@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 7",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1455",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1455"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1455",
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "http://creativecommons.org/licenses/by-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Kr\u016fza, Old\u0159ich"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1455;2018-07-02T22:05:50Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Spoken corpus of Karel Mako\u0148;Kr\u016fza, Old\u0159ich;single speaker;spoken corpus;christianity;mystic;Talks of Karel Mako\u0148 given to his friends in the course of late sixties through early nineties of the 20th century. The topic is mostly christian mysticism.;2012;corpus;http://hdl.handle.net/11372/LRT-1455;ces;Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0);http://creativecommons.org/licenses/by-sa/3.0/;PUB;application/zip;text/plain;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 7;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://www.makon.fm/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "841d23b8-7e08-5ca4-a4a7-392b862afbc3",
+    "notes": [
+        "Talks of Karel Mako\u0148 given to his friends in the course of late sixties through early nineties of the 20th century. The topic is mostly christian mysticism."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1455"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "single speaker"
+        },
+        {
+            "name": "spoken corpus"
+        },
+        {
+            "name": "christianity"
+        },
+        {
+            "name": "mystic"
+        }
+    ],
+    "title": [
+        "Spoken corpus of Karel Mako\u0148"
+    ],
+    "url": ""
+}

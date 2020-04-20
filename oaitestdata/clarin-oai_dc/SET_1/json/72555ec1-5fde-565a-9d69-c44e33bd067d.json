@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Carrer, Luisa"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "(10 files : ca. 55.8 MB)"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2454",
+    "MetadataAccess": [
+        "oai:ota:oucs:2454"
+    ],
+    "PublicationTimestamp": "1836-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1836"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Periodicals"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:2454;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/2454.xml;La Favilla, A Triestine Journal (1836-1846);1836-1846;text_and_corpus_linguistics;Italian literature -- 19th century;ces;Oxford Text Archive, University of Oxford;Carrer, Luisa;text/xml;(10 files : ca. 55.8 MB);Text;Periodicals;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "72555ec1-5fde-565a-9d69-c44e33bd067d",
+    "oai_identifier": [
+        "oai:ota:oucs:2454"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Italian literature -- th century"
+        }
+    ],
+    "title": [
+        "La Favilla, A Triestine Journal (1836-1846)"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2454.xml"
+}

@@ -1,0 +1,99 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-508</identifier>
+    <datestamp>2020-01-22T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-508</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Seeland, Anett</creatorName>
+          <givenName>Anett</givenName>
+          <familyName>Seeland</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>EngMeta Metadata Block Configuration for Dataverse</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Computer and Information Science</subject>
+        <subject>Engineering</subject>
+        <subject>metadata</subject>
+        <subject>configuration</subject>
+        <subject>Dataverse</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Organizational">FoKUS Team</contributorName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Iglezakis, Dorothea</contributorName>
+          <givenName>Dorothea</givenName>
+          <familyName>Iglezakis</familyName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-12-12</date>
+        <date dateType="Updated">2020-01-21</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Configuration Files</resourceType>
+      <sizes>
+        <size>12078</size>
+        <size>6533</size>
+      </sizes>
+      <formats>
+        <format>text/tsv</format>
+        <format>text/tsv</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">This dataset containts TSV-Files for the configuration of two metadata blocks for data repositories basing on &lt;a href="https://dataverse.org/" target="_blank"&gt;Dataverse&lt;/a&gt;. The two blocks help to describe datasets with the concepts of the &lt;a target = "_blank" href="https://www.izus.uni-stuttgart.de/fokus/engmeta/"&gt;metadata scheme EngMeta&lt;/a&gt;.&#13;
+&#13;
+To add a metadata block to a Dataverse installation use the &lt;a href="http://guides.dataverse.org/en/latest/admin/metadatacustomization.html#loading-tsv-files-into-dataverse"&gt;instructions in the Dataverse Admin Guide&lt;/a&gt;.&#13;
+&#13;
+EngMetaDataverse.tsv represents the engineering specific part of EngMeta containing the fields:&#13;
+&lt;ul&gt;&#13;
+ &lt;li&gt;Type of Data Generation&lt;/li&gt;&#13;
+&lt;li&gt;Measured Variables&lt;/li&gt;&#13;
+&lt;li&gt;Controlled Variables&lt;/li&gt;&#13;
+&lt;li&gt;System Phases&lt;/li&gt;&#13;
+&lt;li&gt;System or Phase Components&lt;/li&gt;&#13;
+&lt;li&gt;System Parameters&lt;/li&gt;&#13;
+&lt;li&gt;Force Field&lt;/li&gt;&#13;
+&lt;li&gt;Force Field Parameters&lt;/li&gt;&#13;
+&lt;li&gt;Spatial Resolution&lt;/li&gt;&#13;
+&lt;li&gt;Temporal Resolution&lt;/li&gt;&#13;
+&lt;li&gt;Flows&lt;/li&gt;&#13;
+&lt;li&gt;Boundary Parameters&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&#13;
+process.tsv represents the process describing part of EngMeta containing the fields:&#13;
+&lt;ul&gt;&#13;
+&lt;li&gt;Processing Methods&lt;/li&gt;&#13;
+&lt;li&gt;Method Parameters&lt;/li&gt;&#13;
+&lt;li&gt;Software&lt;/li&gt;&#13;
+&lt;li&gt;Instruments&lt;/li&gt;&#13;
+&lt;li&gt;Environments&lt;/li&gt;&#13;
+&lt;li&gt;Processing Steps&lt;/li&gt;&#13;
+&lt;/ul&gt;</description>
+      </descriptions>
+      <geoLocations/>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Federal Ministry of Education and Research (BMBF)</funderName>
+          <awardNumber>16FDM008</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

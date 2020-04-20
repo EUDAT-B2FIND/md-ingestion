@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "University of Glasgow"
+    ],
+    "Contributor": [
+        "Corbett, John"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-897",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-897"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-897",
+    "PublicationTimestamp": "2007-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2007"
+    ],
+    "Publisher": [
+        "University of Glasgow"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-897;2016-04-06T16:39:56Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Scottish corpus of texts and speech (SCOTS);Corbett, John;Written and spoken (20%) texts for the languages of Scotland. Ca 4 mwd. Orthographic transcriptions are synchronised with the source audio or video.;2007;corpus;http://hdl.handle.net/11372/LRT-897;eng;downloadable_files_count: 0;United Kingdom;University of Glasgow;http://www.scottishcorpus.ac.uk/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4a0732d6-10b2-5186-bc57-b4d0bbe88bda",
+    "notes": [
+        "Written and spoken (20%) texts for the languages of Scotland. Ca 4 mwd. Orthographic transcriptions are synchronised with the source audio or video."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-897"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Scottish corpus of texts and speech (SCOTS)"
+    ],
+    "url": ""
+}

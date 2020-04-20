@@ -1,0 +1,35 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.7970/3985d2e30c1f4163830c18655df67675",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://b2share-testing.fz-juelich.de/api/oai2d?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:b2share.eudat.eu:b2rec/3985d2e30c1f4163830c18655df67675",
+    "MetadataAccess": [
+        "oai:b2share.eudat.eu:b2rec/3985d2e30c1f4163830c18655df67675"
+    ],
+    "PublicationTimestamp": "2019-09-26T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/3985d2e30c1f4163830c18655df67675;2019-09-26T10:29:19Z;578593c4-4cac-4890-be16-37e5619ff043;2019-09-26T10:29:19.169090+00:00;10.7970/3985d2e30c1f4163830c18655df67675;https://b2share-testing.fz-juelich.de/api/records/3985d2e30c1f4163830c18655df67675;oai:b2share.eudat.eu:b2rec/3985d2e30c1f4163830c18655df67675;info:eu-repo/semantics/openAccess;toar test",
+    "group": "toar",
+    "groups": [
+        {
+            "name": "toar"
+        }
+    ],
+    "name": "0426746d-a140-5e75-8d18-3dbb8303bec4",
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/3985d2e30c1f4163830c18655df67675"
+    ],
+    "oai_set": [
+        "578593c4-4cac-4890-be16-37e5619ff043"
+    ],
+    "state": "active",
+    "title": [
+        "toar test"
+    ],
+    "url": "https://b2share-testing.fz-juelich.de/api/records/3985d2e30c1f4163830c18655df67675"
+}

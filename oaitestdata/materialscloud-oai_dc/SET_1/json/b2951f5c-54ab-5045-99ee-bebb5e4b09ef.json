@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0027/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0027/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0027/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Pasquarello, Alfredo",
+        "Guo, Zhendong",
+        "Ambrosio, Francesco"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0027/v1;2019-06-12Z;DOI;Dataset;Guo, Zhendong;Ambrosio, Francesco;Pasquarello, Alfredo;Extrinsic Defects in Amorphous Oxides: Hydrogen, Carbon, and Nitrogen Impurities in Alumina;Materials Cloud;2019-05-30;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;extrinsic defects;Carbon;total charge;alumina;hydrogen;carbon;nitrogen;doi:10.24435/materialscloud:2019.0027/v1;https://archive.materialscloud.org/2019.0027/v1;en;This entry provides the most stable defect configurations of hydrogen, carbon, and nitrogen impurities in alumina, which are identified through ab initio molecular dynamics in various charge states and structural relaxations with the PBE functional. The structural configurations related to carbon and nitrogen impurities are found to depend on the total charge set in the simulation cell.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "b2951f5c-54ab-5045-99ee-bebb5e4b09ef",
+    "notes": [
+        "This entry provides the most stable defect configurations of hydrogen, carbon, and nitrogen impurities in alumina, which are identified through ab initio molecular dynamics in various charge states and structural relaxations with the PBE functional. The structural configurations related to carbon and nitrogen impurities are found to depend on the total charge set in the simulation cell."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0027/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "extrinsic defects"
+        },
+        {
+            "name": "Carbon"
+        },
+        {
+            "name": "total charge"
+        },
+        {
+            "name": "alumina"
+        },
+        {
+            "name": "hydrogen"
+        },
+        {
+            "name": "carbon"
+        },
+        {
+            "name": "nitrogen"
+        }
+    ],
+    "title": [
+        "Extrinsic Defects in Amorphous Oxides: Hydrogen, Carbon, and Nitrogen Impurities in Alumina"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0027/v1"
+}

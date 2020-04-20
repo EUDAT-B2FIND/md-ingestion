@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Dorota"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "application/pdf",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/366",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/366"
+    ],
+    "PID": "http://hdl.handle.net/11321/366",
+    "PublicationTimestamp": "2015-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Dorota"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN-EULA-ACA-v1.0",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEULA#aca",
+        "ACA"
+    ],
+    "author": [
+        "TVN, Duda Komorowski"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/366;2017-05-26T11:38:26Z;hdl_11321_3;hdl_11321_4;Polish Presidential Debate - 2015;TVN, Duda Komorowski;debate;Transcription of the debate;2015;corpus;http://hdl.handle.net/11321/366;pol;CLARIN-EULA-ACA-v1.0;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEULA#aca;ACA;text/plain; charset=utf-8;application/pdf;application/zip;downloadable_files_count: 2;Dorota;https://redir.atmcdn.pl/https/o2/tvn/web-content/m/p1/f/253f7b5d921338af34da817c00f42753/dc453e08-b4ea-4ffb-b4f4-7c55b4766fae.pdf",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7c1ac8d4-c974-5aa5-932a-bf7bcf47b4af",
+    "notes": [
+        "Transcription of the debate"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/366"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "debate"
+        }
+    ],
+    "title": [
+        "Polish Presidential Debate - 2015"
+    ],
+    "url": ""
+}

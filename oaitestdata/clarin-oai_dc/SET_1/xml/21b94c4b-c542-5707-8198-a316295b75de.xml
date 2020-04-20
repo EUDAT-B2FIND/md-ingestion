@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-58</identifier>
+    <datestamp>2018-07-23T09:13:43Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Corpus delle Opere di S.Teresa de &#193;vila</dc:title>
+      <dc:creator>D'&#193;vila, Teresa di Ges&#249;</dc:creator>
+      <dc:subject>Fede</dc:subject>
+      <dc:subject>Teologia</dc:subject>
+      <dc:subject>Religione</dc:subject>
+      <dc:description>Il corpus &#232; costituito dalla raccolta delle seguenti opere, fra parentesi la sigla del testo usata nel riferimento: &#13;
+LIBRO DE LA VIDA (VIDA), &#13;
+CAMINO DE PERFECCION (CAM), &#13;
+LAS FUNDACIONES (FUN), &#13;
+CARTAS (CAR), &#13;
+EL CASTILLO INTERIOR (MOR), &#13;
+CONCEPTOS (CONC), &#13;
+RELACIONES (RELA), &#13;
+EXCLAMACIONES (EXCL), &#13;
+CONSTITUCIONES (CONS), &#13;
+MODO DE VISITAR LOS CONVENTOS (MODO), &#13;
+POESIAS (POES), &#13;
+APUNTES (APUN).&#13;
+&#13;
+L&#8217;archivio testuale (con le relative annotazioni linguistiche) &#232; stato prodotto negli anni &#8217;80-'90. Questo progetto di ricerca, promosso dal prof. Guido Mancini con i fondi del 40%-60%, &#232; frutto della collaborazione tra l'Universit&#224; di Pisa, di Torino con il prof. Ruffinatto e l'ILC-CNR di Pisa. &#13;
+Per quanto riguarda le fonti, si precisa che nel caso delle Cartas, l'edizione di riferimento si basa sul testo curato da Tom&#225;s Alvarez e Simeon de la S. Familia, ed. Monte Carmelo, Burgos, 1981; il riferimento al testo viene indicato con il numero della lettera, seguito dal paragrafo e dalla riga. Per le altre opere &#232; stato utilizzato il testo curato da Tom&#225;s de la Cruz, Teresa de Jes&#250;s, Obras Completas, ed. Monte Carmelo, Burgos, 1977. Nel riferimento viene posta la sigla del titolo dell'opera, seguita dall'eventuale numero del capitolo, del paragrafo e della riga all'interno del paragrafo.</dc:description>
+      <dc:date>2016-09-26</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-58</dc:identifier>
+      <dc:language>spa</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 1.82 MB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1495",
+    "MetadataAccess": [
+        "oai:ota:oucs:1495"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "United States. Central Intelligence Agency"
+    ],
+    "fulltext": "oai:ota:oucs:1495;2018-05-17T09:29:11Z;http://ota.ox.ac.uk/headers/1495.xml;The World factbook 1990 : electronic version;United States. Central Intelligence Agency;default: 1976-01-01;text_and_corpus_linguistics;Periodicals -- United States -- 20th century;Official gazettes -- United States -- 20th century;Yearbooks -- United States -- 20th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 1.82 MB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "29a63d0e-c273-5cdd-b9ff-bc1bfe04ff88",
+    "oai_identifier": [
+        "oai:ota:oucs:1495"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Periodicals -- United States -- th century"
+        },
+        {
+            "name": "Official gazettes -- United States -- th century"
+        },
+        {
+            "name": "Yearbooks -- United States -- th century"
+        }
+    ],
+    "title": [
+        "The World factbook 1990 : electronic version"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1495.xml"
+}

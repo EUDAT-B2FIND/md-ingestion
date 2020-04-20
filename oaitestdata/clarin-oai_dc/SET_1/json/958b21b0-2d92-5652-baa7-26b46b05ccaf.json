@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1202",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1202"
+    ],
+    "PID": "http://hdl.handle.net/11356/1202",
+    "PublicationTimestamp": "2018-10-27T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "https://drive.google.com/file/d/13m7PFn49_tnEfFjcbqk8cugG4ZTy2A5I/view"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Ljube\u0161i\u0107, Nikola",
+        "Fi\u0161er, Darja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1202;2018-10-27T13:53:27Z;hdl_11356_1023;hdl_11356_1024;Dataset and baseline model of moderated content FRENK-STYRIA-24sata 1.0;Ljube\u0161i\u0107, Nikola;Erjavec, Toma\u017e;Fi\u0161er, Darja;computer-mediated communication;news comments;content moderation;FRENK-STYRIA-24sata is a dataset of moderated newspaper comments from the website 24sata.hr with metadata on the time of publishing, user identifier, thread identifier and whether the comment was deleted by the moderators or not. The full text of each comment is encrypted via a character-replacement method so that the comments are not readable by humans. Basic punctuation is not encrypted in order to enable tokenization. The main use of this dataset are experiments on automating comment moderation. For real-world usage, a fastText classification model trained on non-encrypted data is made available as well.;2018-10-27;corpus;http://hdl.handle.net/11356/1202;hrv;https://drive.google.com/file/d/13m7PFn49_tnEfFjcbqk8cugG4ZTy2A5I/view;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 2;Jo\u017eef Stefan Institute;http://nl.ijs.si/frenk/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "958b21b0-2d92-5652-baa7-26b46b05ccaf",
+    "notes": [
+        "FRENK-STYRIA-24sata is a dataset of moderated newspaper comments from the website 24sata.hr with metadata on the time of publishing, user identifier, thread identifier and whether the comment was deleted by the moderators or not. The full text of each comment is encrypted via a character-replacement method so that the comments are not readable by humans. Basic punctuation is not encrypted in order to enable tokenization. The main use of this dataset are experiments on automating comment moderation. For real-world usage, a fastText classification model trained on non-encrypted data is made available as well."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1202"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "news comments"
+        },
+        {
+            "name": "content moderation"
+        }
+    ],
+    "title": [
+        "Dataset and baseline model of moderated content FRENK-STYRIA-24sata 1.0"
+    ],
+    "url": ""
+}

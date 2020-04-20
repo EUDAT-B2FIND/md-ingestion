@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/270</identifier>
+    <datestamp>2019-02-20T11:58:21Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Polish Corpus of Wroc&#322;aw University of Technology 1.2</dc:title>
+      <dc:title>Korpus J&#281;zyka Polskiego Politechniki Wroc&#322;awskiej (KPWr) 1.2</dc:title>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:creator>Oleksy, Marcin</dc:creator>
+      <dc:creator>Maziarz, Marek</dc:creator>
+      <dc:creator>Wieczorek, Jan</dc:creator>
+      <dc:creator>Fikus, Dominika</dc:creator>
+      <dc:creator>Turek, Agnieszka</dc:creator>
+      <dc:creator>Wolski, Micha&#322;</dc:creator>
+      <dc:creator>Berna&#347;, Tomasz</dc:creator>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:creator>K&#281;dzia, Pawe&#322;</dc:creator>
+      <dc:subject>corpora</dc:subject>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>KPWr</dc:subject>
+      <dc:subject>text corpus</dc:subject>
+      <dc:subject>manually annotated corpus</dc:subject>
+      <dc:description>KPWr (Polish Corpus of Wroc&#322;aw University of Technology, pol. Korpus J&#281;zyka Polskiego Politechniki Wroc&#322;awskiej) is a corpus of written and spoken documents available on the Creative Common license. The texts are divided into 15 subcorpuses (blogs, science, stenographic recordings, etc.). The documents are annotated on the level of chunks and selected predicate-argument relations, named entities, relations between named entities, anaphora relations, word senses, events, temporal expressions, spatial relations between entities, keywords and semantic roles within nominal and adjective phrases</dc:description>
+      <dc:date>2016-04-25</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/270</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/en/tools-and-resources/resources/kpwr</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=b325bb8495e611e6a2aa782bcb0741356b5403f31a544dfa8a7a114182a14964",
+    "MetadataAccess": [
+        "b325bb8495e611e6a2aa782bcb0741356b5403f31a544dfa8a7a114182a14964"
+    ],
+    "PublicationTimestamp": "2016-10-19T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "fulltext": "b325bb8495e611e6a2aa782bcb0741356b5403f31a544dfa8a7a114182a14964;2018-11-15T16:40:24Z;lexicalConceptualResource;lexicalConceptualResource:computationalLexicon;LX-DSemVectors;Distributional semantic representation of Portuguese words (aka word embeddings).;2016-10-19",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b4f2c530-5df8-50b6-b839-ded02f6f4fdc",
+    "notes": [
+        "Distributional semantic representation of Portuguese words (aka word embeddings)."
+    ],
+    "oai_identifier": [
+        "b325bb8495e611e6a2aa782bcb0741356b5403f31a544dfa8a7a114182a14964"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:computationalLexicon"
+    ],
+    "state": "active",
+    "title": [
+        "LX-DSemVectors"
+    ]
+}

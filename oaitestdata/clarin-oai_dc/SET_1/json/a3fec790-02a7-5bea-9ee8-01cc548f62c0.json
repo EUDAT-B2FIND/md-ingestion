@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/8",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/8"
+    ],
+    "PID": "http://hdl.handle.net/11321/8",
+    "PublicationTimestamp": "2011-12-30T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Piasecki, Maciej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/8;2018-08-27T08:01:51Z;hdl_11321_3;hdl_11321_4;ChunkRel WS;Piasecki, Maciej;ChunkRel-WS is a prototype service for recognition of three syntactic relations between chunks. The service may be run against plain text (input format: text), then the necessary processing steps will be run automatically (tagger and chunker). You can also process already tagged and chunked input (input format: ccl). The output will be enriched with inter-chunk relations. The service is based on a prototype implementation, hence it works slowly. The configuration used here operates on shallow syntactic annotation scheme from the KPWr corpus.;2011-12-30;toolService;http://hdl.handle.net/11321/8;pol;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 1;Wroc\u0142aw University of Technology;http://ws.clarin-pl.eu/chunker.shtml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a3fec790-02a7-5bea-9ee8-01cc548f62c0",
+    "notes": [
+        "ChunkRel-WS is a prototype service for recognition of three syntactic relations between chunks. The service may be run against plain text (input format: text), then the necessary processing steps will be run automatically (tagger and chunker). You can also process already tagged and chunked input (input format: ccl). The output will be enriched with inter-chunk relations. The service is based on a prototype implementation, hence it works slowly. The configuration used here operates on shallow syntactic annotation scheme from the KPWr corpus."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/8"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "ChunkRel WS"
+    ],
+    "url": ""
+}

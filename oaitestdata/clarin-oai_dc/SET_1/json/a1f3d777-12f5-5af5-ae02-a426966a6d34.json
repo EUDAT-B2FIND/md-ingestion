@@ -1,0 +1,106 @@
+{
+    "Contact": [
+        "ParaCrawl"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 13"
+    ],
+    "Language": [
+        "English",
+        "German",
+        "French",
+        "Spanish",
+        "Italian",
+        "Portuguese",
+        "Dutch",
+        "Polish",
+        "Czech",
+        "Romanian",
+        "Finnish",
+        "Latvian",
+        "Russian",
+        "Estonian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2610",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2610"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2610",
+    "PublicationTimestamp": "2018-01-14T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "ParaCrawl"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Public Domain Dedication (CC Zero)",
+        "http://creativecommons.org/publicdomain/zero/1.0/",
+        "PUB"
+    ],
+    "author": [
+        "Espl\u00e0-Gomis, Miquel",
+        "Cartagena, V\u00edctor M. S\u00e1nchez",
+        "Samiotou, Anna",
+        "Forcada, Mikel L.",
+        "Heafield, Kenneth",
+        "Kamran, Amir",
+        "Ortiz-Rojas, Sergio",
+        "Haddow, Barry",
+        "S\u00e1nchez, Gema Ram\u00edrez",
+        "St\u0159elec, Marek",
+        "Ba\u00f1\u00f3n, Marta",
+        "Koehn, Philipp"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2610;2018-02-12T07:41:48Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;ParaCrawl Corpus version 1.0;Koehn, Philipp;Heafield, Kenneth;Forcada, Mikel L.;Espl\u00e0-Gomis, Miquel;Ortiz-Rojas, Sergio;S\u00e1nchez, Gema Ram\u00edrez;Cartagena, V\u00edctor M. S\u00e1nchez;Haddow, Barry;Ba\u00f1\u00f3n, Marta;St\u0159elec, Marek;Samiotou, Anna;Kamran, Amir;ParaCrawl;parallel corpus;CommonCrawl;machine translation;text corpora;The January 2018 release of the ParaCrawl is the first version of the corpus. It contains parallel corpora for 11 languages paired with English, crawled from a large number of web sites. The selection of websites is based on CommonCrawl, but ParaCrawl is extracted from a brand new crawl which has much higher coverage of these selected websites than CommonCrawl. Since the data is fairly raw, it is released with two quality metrics that can be used for corpus filtering. An official \"clean\" version of each corpus uses one of the metrics. For more details and raw data download please visit: http://paracrawl.eu/releases.html;2018-01-14;corpus;http://hdl.handle.net/11372/LRT-2610;eng;deu;fra;spa;ita;por;nld;pol;ces;ron;fin;lav;rus;est;Public Domain Dedication (CC Zero);http://creativecommons.org/publicdomain/zero/1.0/;PUB;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 13;ParaCrawl;http://paracrawl.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a1f3d777-12f5-5af5-ae02-a426966a6d34",
+    "notes": [
+        "The January 2018 release of the ParaCrawl is the first version of the corpus. It contains parallel corpora for 11 languages paired with English, crawled from a large number of web sites. The selection of websites is based on CommonCrawl, but ParaCrawl is extracted from a brand new crawl which has much higher coverage of these selected websites than CommonCrawl. Since the data is fairly raw, it is released with two quality metrics that can be used for corpus filtering. An official \"clean\" version of each corpus uses one of the metrics. For more details and raw data download please visit: http://paracrawl.eu/releases.html"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2610"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "ParaCrawl"
+        },
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "CommonCrawl"
+        },
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "text corpora"
+        }
+    ],
+    "title": [
+        "ParaCrawl Corpus version 1.0"
+    ],
+    "url": ""
+}

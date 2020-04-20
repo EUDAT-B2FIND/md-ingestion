@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6540",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6540"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6540;2018-10-25T08:09:54Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.004;De Matteo, Ada;Ada;De Matteo;Universit\u00e0 degli Studi del Sannio, Dipartimento di Scienze e Tecnologie, Benevento, Italy;Corti, Giacomo;Giacomo;Corti;0000-0001-7399-4438;Consiglio Nazionale delle Ricerche (CNR), Istituto di Geoscienze e Georisorse (IGG), Sede Secondaria di Firenze, Italy;Istituto Nazionale di Geofisica e Vulcanologia, Sezione di Pisa, Italy;van Wyk de Vries, Benjamin;Benjamin;van Wyk de Vries;0000-0001-7232-0693;Universit\u00e9 Clermont Auvergne, Observatoire du Physique du Globe de Clermont, Laboratoire Magmas et Volcans, UMR6524-CNRS, Clermont-Ferrand, France;Massa, Bruno;Bruno;Massa;0000-0002-7358-1841;Universit\u00e0 degli Studi del Sannio, Dipartimento di Scienze e Tecnologie, Benevento, Italy;Istituto Nazionale di Geofisica e Vulcanologia, sezione di Napoli Osservatorio Vesuviano, Napoli, Italy;Mussetti, Giulio;Giulio;Mussetti;Dipartimento di Scienze della terra, Universit\u00e0 degli Studi di Firenze, Italy;Brittle models of fault-volcano interactions during extension;GFZ Data Services;2018;analogue modelling;extensional tectonics;normal fault pattern;volcano deformation;EPOS;multi-scale laboratories;analogue models of geologic processes;analogue modelling results;Tectonics Modelling Laboratory (IGG-CNR, Italy);IGG-CNR, University of Florence, Florence Italy;2018-02-19;en;10.1016/j.jvolgeores.2018.08.008;10.1016/j.jsg.2005.05.011;3164166 Bytes;3 Files;application/pdf;application/pdf;application/x-zip-compressed;CC BY 4.0;This dataset contains 11 top view photographs of fault pattern in sand surfaces from a series of analogue tectonic experiments run to investigate the interaction between faults and volcanic features in areas characterized by pure extension, such as in rift areas (de-Matteo_2018-004_datasets.zip: Fig 02 \u2013 Fig 12). Additionally, a figure with a sketch of the experimental setup is provided (Fig 01), a file describing experimental settings for analogue experiments (Table 1.pdf) and a file with figure captions (Figure captions.pdf). This dataset is supplementary to De Matteo et al. (2018), discussing if and how the presence of a volcanic edifice and/or of an intrusive body (i.e. a magmatic chamber) perturbs the local stress field, influencing the magnitude and the attitude of a fault pattern, in a rift zone.",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "9083bd9f-75e3-5773-b763-277a8b8022fe",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6540"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

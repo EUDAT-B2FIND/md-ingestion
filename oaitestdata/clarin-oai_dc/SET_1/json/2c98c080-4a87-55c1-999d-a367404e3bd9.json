@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Waite, Stephen V.F."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 218 KB)"
+    ],
+    "Language": [
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0347",
+    "MetadataAccess": [
+        "oai:ota:oucs:0347"
+    ],
+    "PublicationYear": [
+        "8"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Ovid, 43 B.C.-17 or 18 A.D."
+    ],
+    "fulltext": "oai:ota:oucs:0347;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0347.xml;Fasti / Ovid;Festivals;Fastorum libri VI : fragmenta;Ovid, 43 B.C.-17 or 18 A.D.;8;text_and_corpus_linguistics;Elegiac poetry, Latin -- 1st century;lat;Oxford Text Archive, University of Oxford;Waite, Stephen V.F.;(1 file : ca. 218 KB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2c98c080-4a87-55c1-999d-a367404e3bd9",
+    "oai_identifier": [
+        "oai:ota:oucs:0347"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Elegiac poetry"
+        },
+        {
+            "name": "Latin -- st century"
+        }
+    ],
+    "title": [
+        "Fasti / Ovid",
+        "Festivals",
+        "Fastorum libri VI : fragmenta"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0347.xml"
+}

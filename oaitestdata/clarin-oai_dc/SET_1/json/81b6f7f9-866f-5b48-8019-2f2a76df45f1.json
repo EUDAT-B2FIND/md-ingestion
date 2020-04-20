@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3056",
+    "MetadataAccess": [
+        "oai:ota:oucs:3056"
+    ],
+    "PublicationTimestamp": "1898-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1898"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Wells, H.G. (Herbert George), 1866-1946"
+    ],
+    "fulltext": "oai:ota:oucs:3056;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3056.xml;The time machine;Wells, H.G. (Herbert George), 1866-1946;not after: 1898;text_and_corpus_linguistics;English fiction -- 19th century;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "81b6f7f9-866f-5b48-8019-2f2a76df45f1",
+    "oai_identifier": [
+        "oai:ota:oucs:3056"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English fiction -- th century"
+        }
+    ],
+    "title": [
+        "The time machine"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3056.xml"
+}

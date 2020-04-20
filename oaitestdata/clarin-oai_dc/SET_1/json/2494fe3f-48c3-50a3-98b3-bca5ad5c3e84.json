@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/50",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/50"
+    ],
+    "PID": "http://hdl.handle.net/10794/50",
+    "PublicationTimestamp": "2013-02-08T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/50;2017-10-27T16:54:41Z;hdl_10794_1;hdl_10794_2;Academic texts \u2013 Social science 1997\u20132012 (2017-10-16);Academic texts \u2013 Samh\u00e4llsvetenskap 1997\u20132012 (2017-10-16);n/a, n/a;Swedish;Academic texts;Social sciences;A corpus with academic texts in Social sciences from 1997\u20132012. The material is sentence scrambled.;En korpus med akademiska texter fr\u00e5n samh\u00e4llsvetenskap 1997\u20132012. Materialet \u00e4r meningsomkastat.;2013-02-08;corpus;http://hdl.handle.net/10794/50;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/sweacsam",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2494fe3f-48c3-50a3-98b3-bca5ad5c3e84",
+    "notes": [
+        "A corpus with academic texts in Social sciences from 1997\u20132012. The material is sentence scrambled.",
+        "En korpus med akademiska texter fr\u00e5n samh\u00e4llsvetenskap 1997\u20132012. Materialet \u00e4r meningsomkastat."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/50"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Academic texts"
+        },
+        {
+            "name": "Social sciences"
+        }
+    ],
+    "title": [
+        "Academic texts \u2013 Social science 1997\u20132012 (2017-10-16)",
+        "Academic texts \u2013 Samh\u00e4llsvetenskap 1997\u20132012 (2017-10-16)"
+    ],
+    "url": ""
+}

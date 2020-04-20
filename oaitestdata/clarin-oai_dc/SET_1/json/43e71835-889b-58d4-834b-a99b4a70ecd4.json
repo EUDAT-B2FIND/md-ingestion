@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-57",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-57"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/ILC-57",
+    "PublicationTimestamp": "2016-05-18T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Rosmini - Serbati, Antonio"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-57;2018-07-23T09:13:44Z;hdl_000-c0-111_38;hdl_000-c0-111_49;Corpus Antonio Rosmini - Serbati;Rosmini - Serbati, Antonio;Lessico Rosminiano;Filosofia;Religione;Philosophy;Religion;Rosminian Lexicon;Corpus Rosmini\r\nRaccolta di opere per il Lessico Rosminiano realizzata in collaborazione con il Centro di Studi per i Problemi Filosofici e Religiosi dell'800 italiano e francese negli anni '70 - '80 (oggi ISPF-CNR).\r\n\r\n----\r\n\r\nNel 1969 il C.N.R. istituisce, sotto la direzione di Michele Federico Sciacca, presso l\u2019Istituto\r\ndi Filosofia della Facolt\u00e0 di Magistero dell\u2019Universit\u00e0 degli Studi di Genova, il\r\nCentro di studio dei problemi filosofici e religiosi dell\u2019Ottocento italiano e francese. Nel\r\n1971 a Sciacca succede Maria Adelaide Raschini, ordinario di Storia della Filosofia.\r\nNel 1981 viene nominato direttore Evandro Agazzi, ordinario di filosofia della scienza.\r\nQuesti nel 1982, interrompendo l\u2019attivit\u00e0 pi\u00f9 caratterizzante del Centro, ovvero\r\nl\u2019elaborazione del Lessico Rosminiano, in accordo con il Consiglio scientifico, amplia\r\ngli ambiti di ricerca del Centro, estendendoli ai temi e problemi della filosofia\r\ncontemporanea in generale, avvia nuove collaborazioni con l\u2019Istituto di Filosofia della\r\nFacolt\u00e0 di Lettere e Filosofia, muta il nome del Centro in Centro di studio sulla filosofia\r\ncontemporanea (C.S.F.C.)\r\nNell\u2019ottobre del 1999, viene nominato direttore pro tempore Franco Ottonello, Primo\r\nRicercatore del Centro stesso.\r\nIl 30 aprile 2002 il C.S.F.C. viene soppresso, mentre il personale ancora in servizio al\r\ndicembre 2001 confluisce nell\u2019Istituto per la storia del pensiero filosofico e scientifico\r\nmoderno di Napoli, diretto da Enrico Isacco Rambaldi Feldmann, ordinario di Storia\r\ndella Filosofia dell\u2019Universit\u00e0 di Milano.\r\n\r\nFonte: \r\nSilvia Caianiello \u2013 Manuela Sanna (Napoli, ISPF, 2011)\r\n\u201cIstituto per la storia del pensiero filosofico e scientifico moderno\u201d del Consiglio Nazionale delle Ricerche;2016-05-18;corpus;http://hdl.handle.net/20.500.11752/ILC-57;ita;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Istituto di Linguistica Computazionale \u201cA. Zampolli\u201d - Consiglio Nazionale delle Ricerche (ILC-CNR)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "43e71835-889b-58d4-834b-a99b4a70ecd4",
+    "notes": [
+        "Corpus Rosmini\r\nRaccolta di opere per il Lessico Rosminiano realizzata in collaborazione con il Centro di Studi per i Problemi Filosofici e Religiosi dell'800 italiano e francese negli anni '70 - '80 (oggi ISPF-CNR).\r\n\r\n----\r\n\r\nNel 1969 il C.N.R. istituisce, sotto la direzione di Michele Federico Sciacca, presso l\u2019Istituto\r\ndi Filosofia della Facolt\u00e0 di Magistero dell\u2019Universit\u00e0 degli Studi di Genova, il\r\nCentro di studio dei problemi filosofici e religiosi dell\u2019Ottocento italiano e francese. Nel\r\n1971 a Sciacca succede Maria Adelaide Raschini, ordinario di Storia della Filosofia.\r\nNel 1981 viene nominato direttore Evandro Agazzi, ordinario di filosofia della scienza.\r\nQuesti nel 1982, interrompendo l\u2019attivit\u00e0 pi\u00f9 caratterizzante del Centro, ovvero\r\nl\u2019elaborazione del Lessico Rosminiano, in accordo con il Consiglio scientifico, amplia\r\ngli ambiti di ricerca del Centro, estendendoli ai temi e problemi della filosofia\r\ncontemporanea in generale, avvia nuove collaborazioni con l\u2019Istituto di Filosofia della\r\nFacolt\u00e0 di Lettere e Filosofia, muta il nome del Centro in Centro di studio sulla filosofia\r\ncontemporanea (C.S.F.C.)\r\nNell\u2019ottobre del 1999, viene nominato direttore pro tempore Franco Ottonello, Primo\r\nRicercatore del Centro stesso.\r\nIl 30 aprile 2002 il C.S.F.C. viene soppresso, mentre il personale ancora in servizio al\r\ndicembre 2001 confluisce nell\u2019Istituto per la storia del pensiero filosofico e scientifico\r\nmoderno di Napoli, diretto da Enrico Isacco Rambaldi Feldmann, ordinario di Storia\r\ndella Filosofia dell\u2019Universit\u00e0 di Milano.\r\n\r\nFonte: \r\nSilvia Caianiello \u2013 Manuela Sanna (Napoli, ISPF, 2011)\r\n\u201cIstituto per la storia del pensiero filosofico e scientifico moderno\u201d del Consiglio Nazionale delle Ricerche"
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-57"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_38",
+        "hdl_000-c0-111_49"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Lessico Rosminiano"
+        },
+        {
+            "name": "Filosofia"
+        },
+        {
+            "name": "Religione"
+        },
+        {
+            "name": "Philosophy"
+        },
+        {
+            "name": "Religion"
+        },
+        {
+            "name": "Rosminian Lexicon"
+        }
+    ],
+    "title": [
+        "Corpus Antonio Rosmini - Serbati"
+    ],
+    "url": ""
+}

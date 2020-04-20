@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Ruef, Beni"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml",
+        "(24 files : ca. 8.82 MB)"
+    ],
+    "Language": [
+        "Old English (ca. 450-1100)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2470",
+    "MetadataAccess": [
+        "oai:ota:oucs:2470"
+    ],
+    "PublicationTimestamp": "2002-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2002"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Linguistic corpora"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:2470;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/2470.xml;The Brooklyn Corpus of Old English : TEI XML conformant edition;2002-08;text_and_corpus_linguistics;English language--Old English, ca. 450-1100;Linguistic analysis (Linguistics);English prose literature Old English, ca. 450-1100;ang;The Brooklyn Corpus is an annotated version of prose texts from the Old English Section of the Helsinki Corpus, representing a range of dates of composition, authors, and genres. It contains more than 106 000 words of Old English; the samples from the the longer texts are 5000 to 10 000 words in length. The texts are syntactically and morphologically annotated, and each Old English word is glossed. Besides the syntactic annotation, the TEI.2 [XML conformant] edition of the Brooklyn Corpus contains all the annotations from the original edition, i.e. part-of-speech tags, complete morphology, lemmata, and Modern English glosses. ;Oxford Text Archive, University of Oxford;Ruef, Beni;Ruef, Beni;text/xml;(24 files : ca. 8.82 MB);Text;Linguistic corpora;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "65ad5902-7fcb-57e1-9ee1-c767ec5bd8e5",
+    "notes": [
+        "The Brooklyn Corpus is an annotated version of prose texts from the Old English Section of the Helsinki Corpus, representing a range of dates of composition, authors, and genres. It contains more than 106 000 words of Old English; the samples from the the longer texts are 5000 to 10 000 words in length. The texts are syntactically and morphologically annotated, and each Old English word is glossed. Besides the syntactic annotation, the TEI.2 [XML conformant] edition of the Brooklyn Corpus contains all the annotations from the original edition, i.e. part-of-speech tags, complete morphology, lemmata, and Modern English glosses. "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2470"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English language--Old English"
+        },
+        {
+            "name": "ca. -"
+        },
+        {
+            "name": "Linguistic analysis Linguistics"
+        },
+        {
+            "name": "English prose literature Old English"
+        },
+        {
+            "name": "ca. -"
+        }
+    ],
+    "title": [
+        "The Brooklyn Corpus of Old English : TEI XML conformant edition"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2470.xml"
+}

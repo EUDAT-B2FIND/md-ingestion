@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Universiteit van Amsterdam"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-688",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-688"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-688",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Universiteit van Amsterdam"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Code of conduct"
+    ],
+    "SpatialCoverage": [
+        "Sri Lanka"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-688;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Sri Lanka Malay corpus;Documentation of the Sri Lanka Malay project (DoBeS project);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-688;Code of conduct;downloadable_files_count: 0;Sri Lanka;Universiteit van Amsterdam;http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI515582%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "43e3b680-640f-5a3c-a87d-92b647bd75f9",
+    "notes": [
+        "Documentation of the Sri Lanka Malay project (DoBeS project)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-688"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Sri Lanka Malay corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-86</identifier>
+    <datestamp>2018-07-23T09:13:44Z</datestamp>
+    <setSpec>hdl_000-c0-111_39</setSpec>
+    <setSpec>hdl_000-c0-111_43</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Survey Data: Current practice of digital resources and tools for studies on Digital Classics</dc:title>
+      <dc:creator>Nicolosi, Anika</dc:creator>
+      <dc:creator>Monachini, Monica</dc:creator>
+      <dc:creator>Stefanini, Alberto</dc:creator>
+      <dc:subject>Survey data</dc:subject>
+      <dc:subject>Digital classics</dc:subject>
+      <dc:subject>Users' needs</dc:subject>
+      <dc:description>This dataset contains the original responses to a questionnaire run from May to September 2016 on a sample of Italian digital humanists with focus of interest on ancient Greek philology about Current practice of digital resources and tools for studies on Digital Classics: namely Ancient Greek. The survey is now available on-line at &#13;
+http://www.clarin-it.it/it/content/sondaggio-current-practice-digital-classics-tools.&#13;
+&#13;
+The majority of questions were closed questions where respondents had to tick a box, occasionally multiple choice was allowed. A few questions required free text provision. The questionnaire was designed using 'Google Forms' and was run on the same platform in the autumn 2016. &#13;
+&#13;
+The results of the survey are briefly presented to the CLARIN Annual Conference 2017 (18-21 September 2017, Budapest). Abstracts available here: &#13;
+https://www.clarin.eu/sites/default/files/Monachini-Nicolosi-Stefanini-CLARIN2017_paper_3.pdf.</dc:description>
+      <dc:date>2017-10-31</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/OPEN-86</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:language>grc</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Universit&#224; di Parma</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

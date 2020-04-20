@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Universit\u00e0 di Parma"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    ],
+    "Language": [
+        "Italian",
+        "Ancient Greek (to 1453)",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-86",
+    "MetadataAccess": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-86"
+    ],
+    "PID": "http://hdl.handle.net/20.500.11752/OPEN-86",
+    "PublicationTimestamp": "2017-10-31T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Universit\u00e0 di Parma"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Stefanini, Alberto",
+        "Monachini, Monica",
+        "Nicolosi, Anika"
+    ],
+    "fulltext": "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-86;2018-07-23T09:13:44Z;hdl_000-c0-111_39;hdl_000-c0-111_43;Survey Data: Current practice of digital resources and tools for studies on Digital Classics;Nicolosi, Anika;Monachini, Monica;Stefanini, Alberto;Survey data;Digital classics;Users' needs;This dataset contains the original responses to a questionnaire run from May to September 2016 on a sample of Italian digital humanists with focus of interest on ancient Greek philology about Current practice of digital resources and tools for studies on Digital Classics: namely Ancient Greek. The survey is now available on-line at \r\nhttp://www.clarin-it.it/it/content/sondaggio-current-practice-digital-classics-tools.\r\n\r\nThe majority of questions were closed questions where respondents had to tick a box, occasionally multiple choice was allowed. A few questions required free text provision. The questionnaire was designed using 'Google Forms' and was run on the same platform in the autumn 2016. \r\n\r\nThe results of the survey are briefly presented to the CLARIN Annual Conference 2017 (18-21 September 2017, Budapest). Abstracts available here: \r\nhttps://www.clarin.eu/sites/default/files/Monachini-Nicolosi-Stefanini-CLARIN2017_paper_3.pdf.;2017-10-31;corpus;http://hdl.handle.net/20.500.11752/OPEN-86;ita;grc;eng;Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0);http://creativecommons.org/licenses/by-nc-nd/4.0/;PUB;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;text/plain; charset=utf-8;downloadable_files_count: 1;Universit\u00e0 di Parma",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2ad11a46-af43-5019-8e50-9ae6c10079db",
+    "notes": [
+        "This dataset contains the original responses to a questionnaire run from May to September 2016 on a sample of Italian digital humanists with focus of interest on ancient Greek philology about Current practice of digital resources and tools for studies on Digital Classics: namely Ancient Greek. The survey is now available on-line at \r\nhttp://www.clarin-it.it/it/content/sondaggio-current-practice-digital-classics-tools.\r\n\r\nThe majority of questions were closed questions where respondents had to tick a box, occasionally multiple choice was allowed. A few questions required free text provision. The questionnaire was designed using 'Google Forms' and was run on the same platform in the autumn 2016. \r\n\r\nThe results of the survey are briefly presented to the CLARIN Annual Conference 2017 (18-21 September 2017, Budapest). Abstracts available here: \r\nhttps://www.clarin.eu/sites/default/files/Monachini-Nicolosi-Stefanini-CLARIN2017_paper_3.pdf."
+    ],
+    "oai_identifier": [
+        "oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-86"
+    ],
+    "oai_set": [
+        "hdl_000-c0-111_39",
+        "hdl_000-c0-111_43"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Survey data"
+        },
+        {
+            "name": "Digital classics"
+        },
+        {
+            "name": "Users needs"
+        }
+    ],
+    "title": [
+        "Survey Data: Current practice of digital resources and tools for studies on Digital Classics"
+    ],
+    "url": ""
+}

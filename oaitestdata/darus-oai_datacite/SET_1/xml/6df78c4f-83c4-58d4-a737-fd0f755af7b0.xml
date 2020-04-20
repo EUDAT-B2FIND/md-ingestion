@@ -1,0 +1,88 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-475</identifier>
+    <datestamp>2019-12-03T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-475</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">G&#228;rtner, Markus</creatorName>
+          <givenName>Markus</givenName>
+          <familyName>G&#228;rtner</familyName>
+          <nameIdentifier SchemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-2687-4350</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Kushnarenko, Volodymyr</creatorName>
+          <givenName>Volodymyr</givenName>
+          <familyName>Kushnarenko</familyName>
+          <nameIdentifier SchemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-7427-2410</nameIdentifier>
+          <affiliation>Universit&#228;t Ulm</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Florian Fritze</creatorName>
+          <givenName>Florian</givenName>
+          <familyName>Fritze</familyName>
+          <nameIdentifier SchemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-9949-3815</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>RePlay-DH Client</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Arts and Humanities</subject>
+        <subject>Computer and Information Science</subject>
+        <subject>workflow tracking</subject>
+        <subject>process metadata</subject>
+        <subject>digital humanities</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">G&#228;rtner, Markus</contributorName>
+          <givenName>Markus</givenName>
+          <familyName>G&#228;rtner</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Issued">2019-06-25</date>
+        <date dateType="Submitted">2019-09-27</date>
+        <date dateType="Updated">2019-12-02</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">program source code</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="URL">http://www.lrec-conf.org/proceedings/lrec2018/pdf/707.pdf</relatedIdentifier>
+        <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="URL">http://www.lrec-conf.org/proceedings/lrec2018/summaries/707.html</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>75658</size>
+        <size>46748160</size>
+      </sizes>
+      <formats>
+        <format>text/plain</format>
+        <format>application/x-tar</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights>Code and deployable from this project are licensed under the MIT license:  https://opensource.org/licenses/MIT</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Integrated Tool for tracking, versioning and publishing workflows.&#13;
+&lt;ul&gt;&#13;
+    &lt;li&gt;Document your workflows on the fly while working&lt;/li&gt;&#13;
+    &lt;li&gt;Have all your workflow data backed up in a local Git repository&lt;/li&gt;&#13;
+    &lt;li&gt;Export metadata or data from your workflow in various formats&lt;/li&gt;&#13;
+    &lt;li&gt;Publish directly to institutional repositories such as DSpace from within the client&lt;/li&gt;&#13;
+&lt;/ul&gt;</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

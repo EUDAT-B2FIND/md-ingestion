@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:tacl-2016</identifier>
+    <datestamp>2018-02-27T17:32:43Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Modeling Semantic Expectations</dc:title>
+      <dc:creator>Ashutosh Modi, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit&#228;t des Saarlandes, Campus C7.4, 66123 Saarbr&#252;cken</dc:creator>
+      <dc:subject>Scripts</dc:subject>
+      <dc:subject>Script Knowledge</dc:subject>
+      <dc:subject>Narrative Texts</dc:subject>
+      <dc:subject>Referent Prediction</dc:subject>
+      <dc:subject>Referring Expression</dc:subject>
+      <dc:description xml:lang="en">This resource contains the DR predictions (by humans) on the InScript corpus. These were collected using Amazon Mechanical Turk. For details please refer to the paper mentioned below.</dc:description>
+      <dc:contributor>Ashutosh Modi</dc:contributor>
+      <dc:contributor>Ivan Titov</dc:contributor>
+      <dc:contributor>Vera Demberg</dc:contributor>
+      <dc:contributor>Asad Sayeed</dc:contributor>
+      <dc:contributor>Manfred Pinkal</dc:contributor>
+      <dc:date>2017</dc:date>
+      <dc:type>Collection</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Text</dc:type>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>clarind-uds:tacl-2016</dc:identifier>
+      <dc:identifier>hdl:21.11119/0000-0000-5DD9-4</dc:identifier>
+      <dc:identifier/>
+      <dc:language>eng</dc:language>
+      <dc:relation>Ashutosh Modi, Ivan Titov, Vera Demberg, Asad Sayeed and Manfred Pinkal. 2016. "Modeling Semantic Expectation: Using Script Knowledge for Referent Prediction". In Transactions of Association for Computational Linguistics (TACL). http://www.aclweb.org/anthology/Q17-1003</dc:relation>
+      <dc:rights>CC-BY-SA-NC-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

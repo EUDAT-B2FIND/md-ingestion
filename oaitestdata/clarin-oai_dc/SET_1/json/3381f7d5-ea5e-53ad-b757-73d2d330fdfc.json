@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 3",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1194",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1194"
+    ],
+    "PID": "http://hdl.handle.net/11356/1194",
+    "PublicationTimestamp": "2018-08-03T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11356/1053"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Dobrovoljc, Kaja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1194;2018-08-03T18:45:16Z;hdl_11356_1023;hdl_11356_1024;IMP corpus n-grams 2.0;Dobrovoljc, Kaja;n-grams;wordlist;multiword expressions;A collection of n-grams extracted from the IMP corpus of historical Slovene (cf. http://nl.ijs.si/imp/). Three sets of n-gram lists are provided for lowercased word n-grams of length 1 to 5:\r\n- extensive frequency lists of all extracted n-grams\r\n- filtered frequency lists of n-grams with minimum frequency 10/mil.\r\n- adjusted frequency list of all n-grams with minimum frequency 10/mil.\r\n\r\nOnly n-grams within sentences have been counted, ignoring punctuation. For the filtered and adjusted list, only n-grams occurring in at least 2 different texts have been extracted.\r\n\r\nKey references:\r\n- K. Dobrovoljc, 2018. N-gram frequency lists for reference corpora of Slovenian language. Proceedings of the Language Technologies & Digital Humanities Conference 2018.\r\n- T. Erjavec. 2015. The IMP historical Slovene language resources. Language resources and evaluation 49/3, 753-775. doi: 10.1007/s10579-015-9294-7.\r\n- M. B. O\u2019Donnell, 2010. The adjusted frequency list: A method to produce cluster-sensitive frequency lists. ICAME Journal 35, 135\u2013169.;2018-08-03;lexicalConceptualResource;http://hdl.handle.net/11356/1194;slv;http://hdl.handle.net/11356/1053;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 3;Centre for Language Resources and Technologies, University of Ljubljana",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3381f7d5-ea5e-53ad-b757-73d2d330fdfc",
+    "notes": [
+        "A collection of n-grams extracted from the IMP corpus of historical Slovene (cf. http://nl.ijs.si/imp/). Three sets of n-gram lists are provided for lowercased word n-grams of length 1 to 5:\r\n- extensive frequency lists of all extracted n-grams\r\n- filtered frequency lists of n-grams with minimum frequency 10/mil.\r\n- adjusted frequency list of all n-grams with minimum frequency 10/mil.\r\n\r\nOnly n-grams within sentences have been counted, ignoring punctuation. For the filtered and adjusted list, only n-grams occurring in at least 2 different texts have been extracted.\r\n\r\nKey references:\r\n- K. Dobrovoljc, 2018. N-gram frequency lists for reference corpora of Slovenian language. Proceedings of the Language Technologies & Digital Humanities Conference 2018.\r\n- T. Erjavec. 2015. The IMP historical Slovene language resources. Language resources and evaluation 49/3, 753-775. doi: 10.1007/s10579-015-9294-7.\r\n- M. B. O\u2019Donnell, 2010. The adjusted frequency list: A method to produce cluster-sensitive frequency lists. ICAME Journal 35, 135\u2013169."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1194"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "n-grams"
+        },
+        {
+            "name": "wordlist"
+        },
+        {
+            "name": "multiword expressions"
+        }
+    ],
+    "title": [
+        "IMP corpus n-grams 2.0"
+    ],
+    "url": ""
+}

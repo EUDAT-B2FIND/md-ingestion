@@ -1,0 +1,42 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1200</identifier>
+    <datestamp>2018-10-24T20:57:49Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Training corpus SETimes.SR 1.0</dc:title>
+      <dc:creator>Batanovi&#263;, Vuk</dc:creator>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Samard&#382;i&#263;, Tanja</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>dependency treebank</dc:subject>
+      <dc:subject>parsing</dc:subject>
+      <dc:subject>named entities</dc:subject>
+      <dc:subject>tokenisation</dc:subject>
+      <dc:subject>manual annotation</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>The SETimes.SR training corpus contains 86 726 tokens manually annotated on the levels of tokenisation, sentence segmentation, morphosyntactic tagging, lemmatisation, syntactic dependencies, and named entities.&#13;
+&#13;
+The annotations (and other aspects) of the corpus are documented in the teiHeader and back element of the TEI encoded corpus. In short, they follow (1) the MULTEXT-East V5 morphosyntactic specifications, http://nl.ijs.si/ME/V5/msd/, (2) the UDv2 Guidelines, http://universaldependencies.org/guidelines.html, and (3) the Janes annotation guidelines for named entities, http://nl.ijs.si/janes/wp-content/uploads/2017/09/SlovenianNER-eng-v1.1.pdf.</dc:description>
+      <dc:date>2018-08-20</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1200</dc:identifier>
+      <dc:language>srp</dc:language>
+      <dc:relation>http://www.aclweb.org/anthology/W17-1407</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Regional Linguistic Data Initiative Centre ReLDI</dc:publisher>
+      <dc:source>https://github.com/vukbatanovic/SETimes.SR</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

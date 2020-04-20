@@ -1,0 +1,16 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>41eced9cabc711e1a404080027e73ea2fd1949c0f7104c8a984017468f75157a</identifier>
+    <datestamp>2018-11-15T16:39:31Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Maltese Wikipedia</dc:title>
+      <dc:description>This corpus is part of the collection of the Wikipedia Dumps which was retrieved from  wikipedia.org on April 8, 2010.  It comes with two individual XML files, one containing the Wikipedia articles and another containing the metadata about it.
+</dc:description>
+      <dc:date>2013-01-31</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

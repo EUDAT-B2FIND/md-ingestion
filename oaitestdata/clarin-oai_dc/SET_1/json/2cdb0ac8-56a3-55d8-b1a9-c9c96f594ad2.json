@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 73.1 KB)"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0236",
+    "MetadataAccess": [
+        "oai:ota:oucs:0236"
+    ],
+    "PublicationYear": [
+        "392 BCE"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Aristophanes"
+    ],
+    "fulltext": "oai:ota:oucs:0236;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0236.xml;Ecclesiazusae;The Ecclesiazousae of Aristophanes;The Assemblywomen;Aristophanes;392 BCE;text_and_corpus_linguistics;Plays -- Greece -- B.C.;grc;Oxford Text Archive, University of Oxford;(1 file : ca. 73.1 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2cdb0ac8-56a3-55d8-b1a9-c9c96f594ad2",
+    "oai_identifier": [
+        "oai:ota:oucs:0236"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- Greece -- B.C."
+        }
+    ],
+    "title": [
+        "Ecclesiazusae",
+        "The Ecclesiazousae of Aristophanes",
+        "The Assemblywomen"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0236.xml"
+}

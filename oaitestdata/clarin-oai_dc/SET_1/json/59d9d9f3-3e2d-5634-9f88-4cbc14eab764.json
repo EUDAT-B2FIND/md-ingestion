@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Institute for Applied Linguistics, Eurac Research"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 4",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin.eurac.edu:20.500.12124/3",
+    "MetadataAccess": [
+        "oai:clarin.eurac.edu:20.500.12124/3"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12124/3",
+    "PublicationTimestamp": "2013-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Institute for Applied Linguistics, Eurac Research"
+    ],
+    "RelatedIdentifier": [
+        "http://aclweb.org/anthology/W14-0406"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Stemle, Egon",
+        "Pirrelli, Vito",
+        "Dell\u2019Orletta, Felice",
+        "Lyding, Verena",
+        "Lenci, Alessandro",
+        "Castagnoli, Sara",
+        "Borghetti, Claudia",
+        "Brunello, Marco",
+        "Dittmann, Henrik"
+    ],
+    "fulltext": "oai:clarin.eurac.edu:20.500.12124/3;2018-09-10T12:15:59Z;hdl_20.500.12124_1;hdl_20.500.12124_2;PAIS\u00c0 Corpus of Italian Web Text;Lyding, Verena;Stemle, Egon;Borghetti, Claudia;Brunello, Marco;Castagnoli, Sara;Dell\u2019Orletta, Felice;Dittmann, Henrik;Lenci, Alessandro;Pirrelli, Vito;web corpus;language learning;The Pais\u00e0 corpus is a large collection of Italian web texts, licensed under Creative Commons (Attribution-ShareAlike and Attribution-Noncommercial-ShareAlike). It has been created in the context of the project PAIS\u00c0.\r\n\r\nAll documents were selected in two different ways. A part of the corpus was constructed using a method inspired by the WaCky project. We created 50,000 word pairs by randomly combining terms from an Italian basic vocabulary list, and used the pairs as queries to the Yahoo! search engine in order to retrieve candidate pages. We limited hits to pages in Italian with a Creative Commons license of type: CC-Attribution, CC-Attribution-Sharealike, CC-Attribution-Sharealike-Non-commercial, and CC-Attribution-Non-commercial. Pages that were wrongly tagged as CC-licensed were eliminated using a black-list that was populated by manual inspection of earlier versions of the corpus. The retrieved pages were automatically cleaned using the KrdWrd system.\r\n\r\nThe remaining pages in the PAIS\u00c0 corpus come from the Italian versions of various Wikimedia Foundation projects, namely: Wikipedia, Wikinews, Wikisource, Wikibooks, Wikiversity, Wikivoyage. The official Wikimedia Foundation dumps were used, extracting text with Wikipedia Extractor.\r\n\r\nOnce all materials were downloaded, the collection was filtered discarding empty documents or documents containing less than 150 words.\r\n\r\nThe corpus contains approximately 380,000 documents coming from about 1,000 different websites, for a total of about 250 million words. Approximately 260,000 documents are from Wikipedia, approx. 5,600 from other Wikimedia Foundation projects. About 9,300 documents come from Indymedia, and we estimate that about 65,000 documents come from blog services.;2013-01;corpus;http://hdl.handle.net/20.500.12124/3;ita;http://aclweb.org/anthology/W14-0406;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/gzip;application/gzip;application/gzip;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 4;Institute for Applied Linguistics, Eurac Research;http://www.corpusitaliano.it",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "59d9d9f3-3e2d-5634-9f88-4cbc14eab764",
+    "notes": [
+        "The Pais\u00e0 corpus is a large collection of Italian web texts, licensed under Creative Commons (Attribution-ShareAlike and Attribution-Noncommercial-ShareAlike). It has been created in the context of the project PAIS\u00c0.\r\n\r\nAll documents were selected in two different ways. A part of the corpus was constructed using a method inspired by the WaCky project. We created 50,000 word pairs by randomly combining terms from an Italian basic vocabulary list, and used the pairs as queries to the Yahoo! search engine in order to retrieve candidate pages. We limited hits to pages in Italian with a Creative Commons license of type: CC-Attribution, CC-Attribution-Sharealike, CC-Attribution-Sharealike-Non-commercial, and CC-Attribution-Non-commercial. Pages that were wrongly tagged as CC-licensed were eliminated using a black-list that was populated by manual inspection of earlier versions of the corpus. The retrieved pages were automatically cleaned using the KrdWrd system.\r\n\r\nThe remaining pages in the PAIS\u00c0 corpus come from the Italian versions of various Wikimedia Foundation projects, namely: Wikipedia, Wikinews, Wikisource, Wikibooks, Wikiversity, Wikivoyage. The official Wikimedia Foundation dumps were used, extracting text with Wikipedia Extractor.\r\n\r\nOnce all materials were downloaded, the collection was filtered discarding empty documents or documents containing less than 150 words.\r\n\r\nThe corpus contains approximately 380,000 documents coming from about 1,000 different websites, for a total of about 250 million words. Approximately 260,000 documents are from Wikipedia, approx. 5,600 from other Wikimedia Foundation projects. About 9,300 documents come from Indymedia, and we estimate that about 65,000 documents come from blog services."
+    ],
+    "oai_identifier": [
+        "oai:clarin.eurac.edu:20.500.12124/3"
+    ],
+    "oai_set": [
+        "hdl_20.500.12124_1",
+        "hdl_20.500.12124_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "web corpus"
+        },
+        {
+            "name": "language learning"
+        }
+    ],
+    "title": [
+        "PAIS\u00c0 Corpus of Italian Web Text"
+    ],
+    "url": ""
+}

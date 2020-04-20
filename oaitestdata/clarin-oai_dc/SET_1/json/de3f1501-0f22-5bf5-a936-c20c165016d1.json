@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5500",
+    "MetadataAccess": [
+        "oai:ota:oucs:5500"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Glover, Richard, 1712-1785."
+    ],
+    "fulltext": "oai:ota:oucs:5500;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5500.xml;The substance of the evidence on the petition presented by the West-India planters and merchants, to the Hon. House of Commons: as it was introduced at the bar, and summ'd up by Mr. Glover, on Thursday the 16th of March, 1775.;Glover, Richard, 1712-1785.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "de3f1501-0f22-5bf5-a936-c20c165016d1",
+    "oai_identifier": [
+        "oai:ota:oucs:5500"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The substance of the evidence on the petition presented by the West-India planters and merchants, to the Hon. House of Commons: as it was introduced at the bar, and summ'd up by Mr. Glover, on Thursday the 16th of March, 1775."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5500.xml"
+}

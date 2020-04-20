@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1702",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1702"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1702",
+    "PublicationTimestamp": "2016-05-23T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Mozilla Public License 2.0",
+        "http://opensource.org/licenses/MPL-2.0",
+        "PUB"
+    ],
+    "author": [
+        "Straka, Milan",
+        "Strakov\u00e1, Jana"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1702;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;UDPipe;Straka, Milan;Strakov\u00e1, Jana;tokenizer;POS tagger;tagger;lemmatization;parser;dependency parser;CoNLL-U;UDPipe is an trainable pipeline for tokenization, tagging, lemmatization and dependency parsing of CoNLL-U files. UDPipe is language-agnostic and can be trained given only annotated data in CoNLL-U format. Trained models are provided for nearly all UD treebanks. UDPipe is available as a binary, as a library for C++, Python, Perl, Java, C#, and as a web service.\r\n\r\nUDPipe is a free software under Mozilla Public License 2.0 (http://www.mozilla.org/MPL/2.0/) and the linguistic models are free for non-commercial use and distributed under CC BY-NC-SA (http://creativecommons.org/licenses/by-nc-sa/4.0/) license, although for some models the original data used to create the model may impose additional licensing conditions. UDPipe is versioned using Semantic Versioning (http://semver.org/).\r\n\r\nUDPipe website http://ufal.mff.cuni.cz/udpipe contains download links of both the released packages and trained models, hosts documentation and offers online demo.\r\n\r\nUDPipe development repository http://github.com/ufal/udpipe is hosted on GitHub.;2016-05-23;toolService;http://hdl.handle.net/11234/1-1702;eng;Mozilla Public License 2.0;http://opensource.org/licenses/MPL-2.0;PUB;application/zip;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/udpipe",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "02f8c282-227d-5efb-8bdb-2a2437631b4c",
+    "notes": [
+        "UDPipe is an trainable pipeline for tokenization, tagging, lemmatization and dependency parsing of CoNLL-U files. UDPipe is language-agnostic and can be trained given only annotated data in CoNLL-U format. Trained models are provided for nearly all UD treebanks. UDPipe is available as a binary, as a library for C++, Python, Perl, Java, C#, and as a web service.\r\n\r\nUDPipe is a free software under Mozilla Public License 2.0 (http://www.mozilla.org/MPL/2.0/) and the linguistic models are free for non-commercial use and distributed under CC BY-NC-SA (http://creativecommons.org/licenses/by-nc-sa/4.0/) license, although for some models the original data used to create the model may impose additional licensing conditions. UDPipe is versioned using Semantic Versioning (http://semver.org/).\r\n\r\nUDPipe website http://ufal.mff.cuni.cz/udpipe contains download links of both the released packages and trained models, hosts documentation and offers online demo.\r\n\r\nUDPipe development repository http://github.com/ufal/udpipe is hosted on GitHub."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1702"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "tokenizer"
+        },
+        {
+            "name": "POS tagger"
+        },
+        {
+            "name": "tagger"
+        },
+        {
+            "name": "lemmatization"
+        },
+        {
+            "name": "parser"
+        },
+        {
+            "name": "dependency parser"
+        },
+        {
+            "name": "CoNLL-U"
+        }
+    ],
+    "title": [
+        "UDPipe"
+    ],
+    "url": ""
+}

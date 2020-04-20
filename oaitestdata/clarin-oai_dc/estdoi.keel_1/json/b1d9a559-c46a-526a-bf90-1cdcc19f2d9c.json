@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-00191L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:17968156",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:17968156"
+    ],
+    "PublicationTimestamp": "2019-01-08T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Fi\u0161el, Mark"
+    ],
+    "fulltext": "oai:oai.datacite.org:17968156;2019-02-01T06:32:29Z;ESTDOI;ESTDOI.KEEL;Statistilise masint\u00f5lke mudelid;Fi\u0161el, Mark;Center of Estonian Language Resources;2019;Issued: 2019-01-08;Updated: 2019-01-08;doi:10.15155/1-00-0000-0000-0000-00191L;Abstract;The models represented here are statistical phrase-based translation models. In parallel we are testing the various neural MT approaches, but for now the most usable baseline in terms of industrial collaborations is statistical.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b1d9a559-c46a-526a-bf90-1cdcc19f2d9c",
+    "notes": [
+        "Abstract",
+        "The models represented here are statistical phrase-based translation models. In parallel we are testing the various neural MT approaches, but for now the most usable baseline in terms of industrial collaborations is statistical."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:17968156"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Statistilise masint\u00f5lke mudelid"
+    ],
+    "url": ""
+}

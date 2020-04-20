@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0010/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0010/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0010/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-02-28T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Invernizzi, Michele",
+        "Debnath, Jayashrita ",
+        "Parrinello, Michele "
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0010/v1;2019-06-12Z;DOI;Dataset;Debnath, Jayashrita ;Parrinello, Michele ;Invernizzi, Michele;Enhanced sampling of transition states;Materials Cloud;2019-02-28;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;Transition States;Nucleation;Critical Clusters;Enhanced Sampling;Molecular Modelling;doi:10.24435/materialscloud:2019.0010/v1;https://archive.materialscloud.org/2019.0010/v1;en;The free energy landscapes of several fundamental processes are characterized by high barriers separating long-lived metastable states. In order to explore these type of landscapes enhanced sampling methods are used. While many such methods are able to obtain sufficient sampling in order to draw the free energy, the transition states are often sparsely sampled. We propose an approach based on the Variationally Enhanced Sampling Method to enhance sampling in the transition region. To this effect, we introduce a dynamic target distribution which uses the derivative of the instantaneous free energy surface to locate the transition regions on the fly and modulate the probability of sampling different regions. Finally, we exemplify  the effectiveness of this approach in enriching the number of configurations in the transition state region in the cases of a chemical reaction and of a nucleation process.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "8219014e-8922-5de6-81fc-d5e15a71e340",
+    "notes": [
+        "The free energy landscapes of several fundamental processes are characterized by high barriers separating long-lived metastable states. In order to explore these type of landscapes enhanced sampling methods are used. While many such methods are able to obtain sufficient sampling in order to draw the free energy, the transition states are often sparsely sampled. We propose an approach based on the Variationally Enhanced Sampling Method to enhance sampling in the transition region. To this effect, we introduce a dynamic target distribution which uses the derivative of the instantaneous free energy surface to locate the transition regions on the fly and modulate the probability of sampling different regions. Finally, we exemplify  the effectiveness of this approach in enriching the number of configurations in the transition state region in the cases of a chemical reaction and of a nucleation process."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0010/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Transition States"
+        },
+        {
+            "name": "Nucleation"
+        },
+        {
+            "name": "Critical Clusters"
+        },
+        {
+            "name": "Enhanced Sampling"
+        },
+        {
+            "name": "Molecular Modelling"
+        }
+    ],
+    "title": [
+        "Enhanced sampling of transition states"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0010/v1"
+}

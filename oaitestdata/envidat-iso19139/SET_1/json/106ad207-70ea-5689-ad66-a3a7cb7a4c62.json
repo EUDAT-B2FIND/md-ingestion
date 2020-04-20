@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "manfred.staehli@wsl.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "ZIP"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/7",
+    "PublicationTimestamp": "2016-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "WSL"
+    ],
+    "Rights": [
+        "Other (Open)"
+    ],
+    "author": [
+        "Dr. Manfred Staehli"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/7;2018-07-07T00:09:39Z;doi:10.16904/7;Eng;MD_CharacterSetCode_utf8;Dr. Manfred Staehli;WSL;manfred.staehli@wsl.ch;2016-10-16T22:18:02;ISO 19115:2003/19139;1.0;EPSG:4326;More than one century of hydrological monitoring in two small catchments with different forest coverage, Sperbelgraben and Rappengraben (Switzerland);2016-12-31;Long-term data on precipitation and runoff are essential to draw firm conclusions about the behavior and trends of hydrological catchments that may be influenced by land-use and climate change. Here the longest continuous runoff records (1903 - 2015) from small catchments (less than 1 km2) in Switzerland (and possibly worldwide) are provided as a data set. The history of the hydrological monitoring in the Sperbel- and Rappengraben (Emmental) is summarized in St\u00e4hli et al., Environ Monit Assess (2011). The runoff stations operated safely for more than 90% of the summer months when most of the major flood events occurred. Nevertheless, the absolute values of peak runoff during the largest flood events are subject to considerable uncertainty (also discussed in St\u00e4hli et al., 2011). This treasure trove of data can be used in various ways, eg. for analysis of the generalized extreme value distributions of the two catchments, of the mechanisms governing the runoff behavior of small catchments, as well as for testing stochastic and deterministic models.;Dr. Manfred Staehli;WSL;manfred.staehli@wsl.ch;AIR TEMPERATURE;PRECIPITATION;RUNOFF;SNOW DEPTH;WATERSHED DRAINAGE BASINS;Other (Open);Eng;MD_CharacterSetCode_utf8;7.84273 47.01576;7.8903 47.0163;7.88684 47.01555;7.84487 47.02267;7.84105 47.01343;7.88851 47.01867;7.88764 47.01745;7.88702 47.01353;7.85199 47.03105;ZIP;https://www.envidat.ch/dataset/10-16904-7;HTTPS;DATASET METADATA;information;https://www.envidat.ch/dataset/c54a616a-4419-4ba8-840e-82f6ec5c05ff/resource/c40b6688-86b1-4c42-9ece-2ad23e19b977/download/daten-sperbel-rappengraben-for-envidat.zip;HTTPS;DATEN SPERBEL-RAPPENGRABEN;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "106ad207-70ea-5689-ad66-a3a7cb7a4c62",
+    "notes": [
+        "Long-term data on precipitation and runoff are essential to draw firm conclusions about the behavior and trends of hydrological catchments that may be influenced by land-use and climate change. Here the longest continuous runoff records (1903 - 2015) from small catchments (less than 1 km2) in Switzerland (and possibly worldwide) are provided as a data set. The history of the hydrological monitoring in the Sperbel- and Rappengraben (Emmental) is summarized in St\u00e4hli et al., Environ Monit Assess (2011). The runoff stations operated safely for more than 90% of the summer months when most of the major flood events occurred. Nevertheless, the absolute values of peak runoff during the largest flood events are subject to considerable uncertainty (also discussed in St\u00e4hli et al., 2011). This treasure trove of data can be used in various ways, eg. for analysis of the generalized extreme value distributions of the two catchments, of the mechanisms governing the runoff behavior of small catchments, as well as for testing stochastic and deterministic models."
+    ],
+    "oai_identifier": [
+        "doi:10.16904/7",
+        "oai:envidat.ch:10.16904/7"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "AIR TEMPERATURE"
+        },
+        {
+            "name": "PRECIPITATION"
+        },
+        {
+            "name": "RUNOFF"
+        },
+        {
+            "name": "SNOW DEPTH"
+        },
+        {
+            "name": "WATERSHED DRAINAGE BASINS"
+        }
+    ],
+    "title": [
+        "More than one century of hydrological monitoring in two small catchments with different forest coverage, Sperbelgraben and Rappengraben (Switzerland)"
+    ],
+    "url": "https://www.envidat.ch/dataset/c54a616a-4419-4ba8-840e-82f6ec5c05ff/resource/c40b6688-86b1-4c42-9ece-2ad23e19b977/download/daten-sperbel-rappengraben-for-envidat.zip"
+}

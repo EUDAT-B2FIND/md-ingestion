@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Mackenzie, D.N. (David Neil)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(2 files : ca. 384, 2 KB)"
+    ],
+    "Language": [
+        "Kurdish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0249",
+    "MetadataAccess": [
+        "oai:ota:oucs:0249"
+    ],
+    "PublicationTimestamp": "1918-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1918"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Anthologies"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hark\u00c4\u00ab, Mull\u00c4\u0081 Sa\u00d8\u00b9\u00c4\u00abd"
+    ],
+    "fulltext": "oai:ota:oucs:0249;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0249.xml;Shamd\u00c4\u00abn\u00c4\u0081n\u00c4\u00ab Kurdish texts / Mull\u00c4\u0081 Sa\u00d8\u00b9\u00c4\u00abd Hark\u00c4\u00ab;Hark\u00c4\u00ab, Mull\u00c4\u0081 Sa\u00d8\u00b9\u00c4\u00abd;1918;text_and_corpus_linguistics;Languages, Modern -- Iran -- Study and teaching ;kur;Oxford Text Archive, University of Oxford;Mackenzie, D.N. (David Neil);Mackenzie, D.N. (David Neil);(2 files : ca. 384, 2 KB);Text;Anthologies;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "65673ff0-c91a-5e91-988e-25c29d6cdd7b",
+    "oai_identifier": [
+        "oai:ota:oucs:0249"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Languages"
+        },
+        {
+            "name": "Modern -- Iran -- Study teaching"
+        }
+    ],
+    "title": [
+        "Shamd\u00c4\u00abn\u00c4\u0081n\u00c4\u00ab Kurdish texts / Mull\u00c4\u0081 Sa\u00d8\u00b9\u00c4\u00abd Hark\u00c4\u00ab"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0249.xml"
+}

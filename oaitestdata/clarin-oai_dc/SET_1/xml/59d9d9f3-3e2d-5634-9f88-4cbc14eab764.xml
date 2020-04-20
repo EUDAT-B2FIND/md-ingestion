@@ -1,0 +1,49 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin.eurac.edu:20.500.12124/3</identifier>
+    <datestamp>2018-09-10T12:15:59Z</datestamp>
+    <setSpec>hdl_20.500.12124_1</setSpec>
+    <setSpec>hdl_20.500.12124_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>PAIS&#192; Corpus of Italian Web Text</dc:title>
+      <dc:creator>Lyding, Verena</dc:creator>
+      <dc:creator>Stemle, Egon</dc:creator>
+      <dc:creator>Borghetti, Claudia</dc:creator>
+      <dc:creator>Brunello, Marco</dc:creator>
+      <dc:creator>Castagnoli, Sara</dc:creator>
+      <dc:creator>Dell&#8217;Orletta, Felice</dc:creator>
+      <dc:creator>Dittmann, Henrik</dc:creator>
+      <dc:creator>Lenci, Alessandro</dc:creator>
+      <dc:creator>Pirrelli, Vito</dc:creator>
+      <dc:subject>web corpus</dc:subject>
+      <dc:subject>language learning</dc:subject>
+      <dc:description>The Pais&#224; corpus is a large collection of Italian web texts, licensed under Creative Commons (Attribution-ShareAlike and Attribution-Noncommercial-ShareAlike). It has been created in the context of the project PAIS&#192;.&#13;
+&#13;
+All documents were selected in two different ways. A part of the corpus was constructed using a method inspired by the WaCky project. We created 50,000 word pairs by randomly combining terms from an Italian basic vocabulary list, and used the pairs as queries to the Yahoo! search engine in order to retrieve candidate pages. We limited hits to pages in Italian with a Creative Commons license of type: CC-Attribution, CC-Attribution-Sharealike, CC-Attribution-Sharealike-Non-commercial, and CC-Attribution-Non-commercial. Pages that were wrongly tagged as CC-licensed were eliminated using a black-list that was populated by manual inspection of earlier versions of the corpus. The retrieved pages were automatically cleaned using the KrdWrd system.&#13;
+&#13;
+The remaining pages in the PAIS&#192; corpus come from the Italian versions of various Wikimedia Foundation projects, namely: Wikipedia, Wikinews, Wikisource, Wikibooks, Wikiversity, Wikivoyage. The official Wikimedia Foundation dumps were used, extracting text with Wikipedia Extractor.&#13;
+&#13;
+Once all materials were downloaded, the collection was filtered discarding empty documents or documents containing less than 150 words.&#13;
+&#13;
+The corpus contains approximately 380,000 documents coming from about 1,000 different websites, for a total of about 250 million words. Approximately 260,000 documents are from Wikipedia, approx. 5,600 from other Wikimedia Foundation projects. About 9,300 documents come from Indymedia, and we estimate that about 65,000 documents come from blog services.</dc:description>
+      <dc:date>2013-01</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.12124/3</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:relation>http://aclweb.org/anthology/W14-0406</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Institute for Applied Linguistics, Eurac Research</dc:publisher>
+      <dc:source>http://www.corpusitaliano.it</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

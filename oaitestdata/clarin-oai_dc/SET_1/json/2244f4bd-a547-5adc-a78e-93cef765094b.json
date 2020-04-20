@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3413",
+    "MetadataAccess": [
+        "oai:ota:oucs:3413"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dibdin, Charles, 1745-1814."
+    ],
+    "fulltext": "oai:ota:oucs:3413;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3413.xml;Proposals for publishing by subscription, dedicated, with permission, to the most noble the Marquis of Salisbury, A complete history of the English stage ... The whole written, with the asistance of interesting documents, collected in the course of five and thirty years, by Mr. Dibdin;Complete history of the English stage.;Dibdin, Charles, 1745-1814.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2244f4bd-a547-5adc-a78e-93cef765094b",
+    "oai_identifier": [
+        "oai:ota:oucs:3413"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Proposals for publishing by subscription, dedicated, with permission, to the most noble the Marquis of Salisbury, A complete history of the English stage ... The whole written, with the asistance of interesting documents, collected in the course of five and thirty years, by Mr. Dibdin",
+        "Complete history of the English stage."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3413.xml"
+}

@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "221 KB"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1200",
+    "MetadataAccess": [
+        "oai:ota:oucs:1200"
+    ],
+    "PublicationTimestamp": "1859-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1859"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Memoirs"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Kierkegaard, S\u00c3\u00b8ren, 1813-1855"
+    ],
+    "fulltext": "oai:ota:oucs:1200;2018-03-05T14:20:38Z;http://ota.ox.ac.uk/headers/1200.xml;Synspunktet for min forfatter-virksomhed  / compiled by Alistair McKinnon;Kierkegaard, S\u00c3\u00b8ren, 1813-1855;1859;text_and_corpus_linguistics;Memoirs -- Denmark -- 19th century;dan;Oxford Text Archive, University of Oxford;221 KB;Text;Memoirs;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "be091582-9837-591c-8e62-cbc5949517de",
+    "oai_identifier": [
+        "oai:ota:oucs:1200"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Memoirs -- Denmark -- th century"
+        }
+    ],
+    "title": [
+        "Synspunktet for min forfatter-virksomhed  / compiled by Alistair McKinnon"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1200.xml"
+}

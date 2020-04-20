@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "s.n."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-165752",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-165752"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CED-2",
+    "PublicationTimestamp": "1790-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1790"
+    ],
+    "Publisher": [
+        "s.n."
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/165752",
+        "oai:jbc.bj.uj.edu.pl:publication:174208"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1701/1800"
+    ],
+    "TempCoverageBegin": 53662478399,
+    "TempCoverageEnd": 53662478399,
+    "TemporalCoverage": " point in time : 1701-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1701-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1701-07-01T11:59:59Z",
+    "author": [
+        "Jezierski, Franciszek Salezy (1740-1791)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-165752;2019-03-01T10:51:38Z;O Bez-Krolewiach W Polszcze Y O Wybieraniu Krolow pocz\u0105wszy od \u015bmierci Zygmunta Augusta Jagie\u0142\u0142y a\u017c do Naszych czas\u00f3w : Dzie\u0142o w tera\u017anieyszych okoliczno\u015bciach do wiadomo\u015bci przydatne;Jezierski, Franciszek Salezy (1740-1791);starodruki 18\u00a0w.;http://www.bj.uj.edu.pl/uj/katalog?search=KEYWORD&function=CARDSCR&u1=12&t1=xx001935361 Wsp\u00f3\u0142opr. z: BJ St. Dr. 390536 I;s.n.;1790;starodruk;application/xml;clarind-uds:poldilemma-165752;hdl:11858/00-246C-0000-0023-8CED-2;Biblioteka Jagiello\u0144ska, BJ St. Dr. 11095 I;pol;http://jbc.bj.uj.edu.pl/Content/165752;oai:jbc.bj.uj.edu.pl:publication:174208;1701/1800;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "53a7ce20-bd87-54f6-aef6-ef009b8316be",
+    "notes": [
+        "http://www.bj.uj.edu.pl/uj/katalog?search=KEYWORD&function=CARDSCR&u1=12&t1=xx001935361 Wsp\u00f3\u0142opr. z: BJ St. Dr. 390536 I"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-165752"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "O Bez-Krolewiach W Polszcze Y O Wybieraniu Krolow pocz\u0105wszy od \u015bmierci Zygmunta Augusta Jagie\u0142\u0142y a\u017c do Naszych czas\u00f3w : Dzie\u0142o w tera\u017anieyszych okoliczno\u015bciach do wiadomo\u015bci przydatne"
+    ],
+    "url": ""
+}

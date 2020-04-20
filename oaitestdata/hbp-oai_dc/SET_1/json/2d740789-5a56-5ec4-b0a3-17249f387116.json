@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Bludau, Sebastian",
+        "Eickhoff, Simon B.",
+        "Caspers, Svenja",
+        "Sigl, Benjamin",
+        "Mohlberg, Hartmut",
+        "Amunts, Katrin"
+    ],
+    "DOI": "http://dx.doi.org/10.25493/40J8-TAK",
+    "DiscHierarchy": [
+        "3.2",
+        "Life Sciences",
+        "Medicine"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "NIFTI"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_40J8-TAK",
+    "MetadataAccess": [
+        "10.25493_40J8-TAK"
+    ],
+    "PublicationTimestamp": "2019-06-04T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Amunts, Katrin"
+    ],
+    "fulltext": "10.25493_40J8-TAK;2019-12-10T12:41:55Z;https://doi.org/10.25493/40J8-TAK;Probabilistic cytoarchitectonic map of Area 6d3 (SFS) (v4.0);2019-06-04T09:38:06.258Z;This dataset contains the distinct probabilistic cytoarchitectonic map of Area 6d3 (SFS) in the individual, single subject template of the MNI Colin 27 reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to the reference space, where each voxel was assigned the probability to belong to Area 6d3 (SFS). The probability map of Area 6d3 (SFS) is provided in NifTi format for each hemisphere in the reference space. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and updated probability estimates for new brain structures may in some cases lead to measurable but negligible deviations of existing probability maps, as compared to earlier released datasets.  \n\nOther available data versions of Area 6d3 (SFS):\nSigl et al. (2019) [Data set, v4.1] [DOI: 10.25493/NVJ5-JJ](https://doi.org/10.25493%2FNVJ5-JJ)\n\nThe most probable delineation of Area 6d3 (SFS) derived from the calculation of a maximum probability map of all currently released JuBrain brain structures can be found here:\nAmunts et al. (2019) [Data set, v18] [DOI: 10.25493/8EGG-ZAR](https://doi.org/10.25493%2F8EGG-ZAR)\n;neuroscience;histology;imaging;brain mapping;english;dataset;The Human Brain Project;Sigl, Benjamin;Caspers, Svenja;Bludau, Sebastian;Mohlberg, Hartmut;Eickhoff, Simon B.;Amunts, Katrin;Amunts, Katrin;NIFTI;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "2d740789-5a56-5ec4-b0a3-17249f387116",
+    "notes": [
+        "This dataset contains the distinct probabilistic cytoarchitectonic map of Area 6d3 (SFS) in the individual, single subject template of the MNI Colin 27 reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to the reference space, where each voxel was assigned the probability to belong to Area 6d3 (SFS). The probability map of Area 6d3 (SFS) is provided in NifTi format for each hemisphere in the reference space. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and updated probability estimates for new brain structures may in some cases lead to measurable but negligible deviations of existing probability maps, as compared to earlier released datasets.  \n\nOther available data versions of Area 6d3 (SFS):\nSigl et al. (2019) [Data set, v4.1] [DOI: 10.25493/NVJ5-JJ](https://doi.org/10.25493%2FNVJ5-JJ)\n\nThe most probable delineation of Area 6d3 (SFS) derived from the calculation of a maximum probability map of all currently released JuBrain brain structures can be found here:\nAmunts et al. (2019) [Data set, v18] [DOI: 10.25493/8EGG-ZAR](https://doi.org/10.25493%2F8EGG-ZAR)\n"
+    ],
+    "oai_identifier": [
+        "10.25493_40J8-TAK"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "histology"
+        },
+        {
+            "name": "imaging"
+        },
+        {
+            "name": "brain mapping"
+        }
+    ],
+    "title": [
+        "Probabilistic cytoarchitectonic map of Area 6d3 (SFS) (v4.0)"
+    ],
+    "url": ""
+}

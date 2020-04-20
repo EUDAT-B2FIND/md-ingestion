@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Department of Linguistics and Nordic Studies, University of Oslo"
+    ],
+    "Contributor": [
+        "N\u00f8klestad, Anders"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1448",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1448"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1448",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Department of Linguistics and Nordic Studies, University of Oslo"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Norway"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "N\u00f8klestad, Anders"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1448;2016-04-06T16:39:51Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Glossa corpus search system;N\u00f8klestad, Anders;N\u00f8klestad, Anders;Glossa is a web-based system for corpus search and results management. It comes with built-in support for CLARIN federated content search as well as corpora encoded with the IMS Corpus Workbench. It also has a plugin architecture that enables other search engines to be used once a wrapper has been created.Glossa can be freely downloaded and installed on the user's server. It currently supports only monolignual written corpora, but support for multilingual corpora is under development, as well as support for  spoken corpora with audio, video and maps.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1448;downloadable_files_count: 0;Norway;Department of Linguistics and Nordic Studies, University of Oslo;https://github.com/textlab/rglossa",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9170eb09-5707-5364-90c2-cf062db00b3f",
+    "notes": [
+        "Glossa is a web-based system for corpus search and results management. It comes with built-in support for CLARIN federated content search as well as corpora encoded with the IMS Corpus Workbench. It also has a plugin architecture that enables other search engines to be used once a wrapper has been created.Glossa can be freely downloaded and installed on the user's server. It currently supports only monolignual written corpora, but support for multilingual corpora is under development, as well as support for  spoken corpora with audio, video and maps."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1448"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Glossa corpus search system"
+    ],
+    "url": ""
+}

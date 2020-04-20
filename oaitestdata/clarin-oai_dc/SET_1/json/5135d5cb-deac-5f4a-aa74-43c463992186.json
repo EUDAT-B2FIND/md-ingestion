@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "University of Tampere"
+    ],
+    "Contributor": [
+        "Mikhailov, Mikhail",
+        "Isolahti, Nina"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Finnish",
+        "Russian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1077",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1077"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1077",
+    "PublicationTimestamp": "2008-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2008"
+    ],
+    "Publisher": [
+        "University of Tampere"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Finland"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1077;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Comparable Russian-Finnish corpus of juridical texts;Mikhailov, Mikhail;Isolahti, Nina;Juridical texts in Russian and Finnish arranged as a comparable text corpus;2008;corpus;http://hdl.handle.net/11372/LRT-1077;fin;rus;application/octet-stream;downloadable_files_count: 0;Finland;University of Tampere;https://mustikka.uta.fi/corpora",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5135d5cb-deac-5f4a-aa74-43c463992186",
+    "notes": [
+        "Juridical texts in Russian and Finnish arranged as a comparable text corpus"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1077"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Comparable Russian-Finnish corpus of juridical texts"
+    ],
+    "url": ""
+}

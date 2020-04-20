@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=fba0b4cc324411e2a2aa782bcb0741356c4ffec5a08e4251aeb1850b91bdf8ad",
+    "MetadataAccess": [
+        "fba0b4cc324411e2a2aa782bcb0741356c4ffec5a08e4251aeb1850b91bdf8ad"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "fba0b4cc324411e2a2aa782bcb0741356c4ffec5a08e4251aeb1850b91bdf8ad;2018-11-15T16:39:49Z;toolService;toolService:tool;UIMA/U-Compare NEMine;The purpose of the tool is to identify gene and protein names in biomedical text. \n\nThe tool is provided as a UIMA component, which forms part of the in-built library of components provided with the U-Compare platform for building and evaluating text mining workflows. The U-Compare Workbench provides a graphical drag-and drop interface for the rapid creation of workflows. \n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "546fa785-61b8-51dd-a22e-64c50a94f32e",
+    "notes": [
+        "The purpose of the tool is to identify gene and protein names in biomedical text. \n\nThe tool is provided as a UIMA component, which forms part of the in-built library of components provided with the U-Compare platform for building and evaluating text mining workflows. The U-Compare Workbench provides a graphical drag-and drop interface for the rapid creation of workflows. \n"
+    ],
+    "oai_identifier": [
+        "fba0b4cc324411e2a2aa782bcb0741356c4ffec5a08e4251aeb1850b91bdf8ad"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "UIMA/U-Compare NEMine"
+    ]
+}

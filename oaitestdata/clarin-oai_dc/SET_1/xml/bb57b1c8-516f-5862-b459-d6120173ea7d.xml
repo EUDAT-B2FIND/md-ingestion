@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/125</identifier>
+    <datestamp>2018-02-27T09:16:53Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DISPRA - Discourse and practice in the foreign language classroom in cross cultural perspective</dc:title>
+      <dc:creator>Trebbi, Turid</dc:creator>
+      <dc:subject>Spoken Language</dc:subject>
+      <dc:subject>Second Language</dc:subject>
+      <dc:subject>Discourse</dc:subject>
+      <dc:description>Sound files recorded in foreign language classrooms:&#13;
+&#13;
+1 Enregistrement PARTIE I P1_STE-001.wav&#13;
+&#13;
+&#13;
+Due to protection of informant privacy the dissemination of the recordings is restricted to the DISPRA research group, who can request a download by contacting Clarino Bergen Repository.&#13;
+&#13;
+Publicly available datasets resulting from DISPRA will be added to this repository item.</dc:description>
+      <dc:date>2018-02-19</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/125</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:rights>CLARIN_RES-NC-PRIV</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaRes?ID=1&amp;PERM=1&amp;PLAN=1&amp;BY=1&amp;NC=1&amp;PRIV=1&amp;NORED=1</dc:rights>
+      <dc:rights>RES</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>University of Bergen</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

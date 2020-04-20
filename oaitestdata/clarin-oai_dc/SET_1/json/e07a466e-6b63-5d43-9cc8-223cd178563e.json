@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3441",
+    "MetadataAccess": [
+        "oai:ota:oucs:3441"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Late Member of the Continental Congress."
+    ],
+    "fulltext": "oai:ota:oucs:3441;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3441.xml;The true merits of a late treatise, printed in America, intitled, Common sense: clearly pointed out. Addressed to the inhabitants of America. By a late member of the Continental Congress, a native of a republican state.;Late Member of the Continental Congress.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e07a466e-6b63-5d43-9cc8-223cd178563e",
+    "oai_identifier": [
+        "oai:ota:oucs:3441"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The true merits of a late treatise, printed in America, intitled, Common sense: clearly pointed out. Addressed to the inhabitants of America. By a late member of the Continental Congress, a native of a republican state."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3441.xml"
+}

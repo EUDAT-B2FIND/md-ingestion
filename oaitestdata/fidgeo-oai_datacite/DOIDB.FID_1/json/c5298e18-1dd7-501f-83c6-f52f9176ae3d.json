@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6343",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6343"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6343;2017-12-07T17:29:11Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2017.015;Vogel, Kristin;Kristin;Vogel;0000-0002-3692-6492;University of Potsdam;Laudan, Jonas;Jonas;Laudan;0000-0003-2899-461X;University of Potsdam;Sieg, Tobias;Tobias;Sieg;0000-0003-3859-9082;University of Potsdam, GFZ German Research Centre for Geosciences;R\u00f6zer, Viktor;Viktor;R\u00f6zer;0000-0002-2883-5347;GFZ German Research Centre for Geosciences;Winter, Benjamin;Benjamin;Winter;0000-0001-9859-7105;University of Innsbruck, alps GmbH Innsbruck;Thieken, Annegret H.;Annegret H.;Thieken;0000-0001-7068-2615;University of Potsdam;Data collection for a damage assessment after the flash flood in Braunsbach (Germany) in May 2016;GFZ Data Services;2017;Flash Flood;Braunsbach;Vogel, Kristin;Kristin;Vogel;0000-0002-3692-6492;University of Potsdam;Vogel, Kristin;Kristin;Vogel;0000-0002-3692-6492;University of Potsdam;Vogel, Kristin;Kristin;Vogel;0000-0002-3692-6492;University of Potsdam;Laudan, Jonas;Jonas;Laudan;0000-0003-2899-461X;University of Potsdam;Laudan, Jonas;Jonas;Laudan;0000-0003-2899-461X;University of Potsdam;Laudan, Jonas;Jonas;Laudan;0000-0003-2899-461X;University of Potsdam;Sieg, Tobias;Tobias;Sieg;0000-0003-3859-9082;University of Potsdam, GFZ German Research Centre for Geosciences;Sieg, Tobias;Tobias;Sieg;0000-0003-3859-9082;University of Potsdam, GFZ German Research Centre for Geosciences;Sieg, Tobias;Tobias;Sieg;0000-0003-3859-9082;University of Potsdam, GFZ German Research Centre for Geosciences;R\u00f6zer, Viktor;Viktor;R\u00f6zer;0000-0002-2883-5347;GFZ German Research Centre for Geosciences;R\u00f6zer, Viktor;Viktor;R\u00f6zer;0000-0002-2883-5347;GFZ German Research Centre for Geosciences;R\u00f6zer, Viktor;Viktor;R\u00f6zer;0000-0002-2883-5347;GFZ German Research Centre for Geosciences;Winter, Benjamin;Benjamin;Winter;0000-0001-9859-7105;University of Innsbruck, alps GmbH Innsbruck;Thieken, Annegret H.;Annegret H.;Thieken;0000-0001-7068-2615;University of Potsdam;Eckle, Melanie;Melanie;Eckle;University of Heidelberg;Herfort, Benjamin;Benjamin;Herfort;University of Heidelberg;Klonner, Carolin;Carolin;Klonner;University of Heidelberg;Kuo, Chiao-Ling;Chiao-Ling;Kuo;University of Heidelberg;2016-06-07T14:00:00/2016-06-08T18:00:00;en;10.5194/nhess-17-2163-2017;10.5675/HyWa_2017,3_2;nbn:de:kobv:517-opus4-394881;10.5194/nhess-14-901-2014;10.1002/bate.200710039;10.1029/2005WR004177;266005 Bytes;2 Files;application/vnd.ms-excel;application/pdf;CC BY-SA 4.0;A severe flash flood event hit the town of Braunsbach (Baden-W\u00fcrttemberg, Germany) on the evening of May 29, 2016, heavily damaging and destroying several dozens of buildings. It was only one of several disastrous events in Central Europe caused by the low-pressure system \u201cElvira\u201d. The DFG Research Training Group \u201cNatural hazards and risks in a changing world\u201d (NatRiskChange, GRK 2043/1) at the University of Potsdam investigated the Braunsbach flash flood. In this context damage data for 94 affected buildings, describing building characteristics, the degree of impact and the caused damage, were collected ten days after the flood event and provide the basis for damage assessment studies (Agarwal et al., 2017; Laudan et al., 2017, Vogel et al., 2017).;9.788351655006409;9.79606568813324;49.19718925349636;49.201283415152794;Deutsche Forschungsgemeinschaft;http://doi.org/10.13039/501100001659;GRK 2043/1",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "c5298e18-1dd7-501f-83c6-f52f9176ae3d",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6343"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

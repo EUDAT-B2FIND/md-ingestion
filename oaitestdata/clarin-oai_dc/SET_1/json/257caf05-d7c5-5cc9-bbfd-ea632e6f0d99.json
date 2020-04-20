@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=dcdd306c18fd11e6a2aa782bcb0741351c96c57f9ce945b28dd5f347470c5a4d",
+    "MetadataAccess": [
+        "dcdd306c18fd11e6a2aa782bcb0741351c96c57f9ce945b28dd5f347470c5a4d"
+    ],
+    "PublicationTimestamp": "2016-05-13T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "fulltext": "dcdd306c18fd11e6a2aa782bcb0741351c96c57f9ce945b28dd5f347470c5a4d;2018-11-15T16:40:21Z;corpus;corpus:text;Elhuyar-QTLeap WSD/NED corpus;This corpus is created from documents from translation memorios of Elhuyar Fundation (obtained via Eleka, member of the Advisory Board of Potential Users).;2016-05-13",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "257caf05-d7c5-5cc9-bbfd-ea632e6f0d99",
+    "notes": [
+        "This corpus is created from documents from translation memorios of Elhuyar Fundation (obtained via Eleka, member of the Advisory Board of Potential Users)."
+    ],
+    "oai_identifier": [
+        "dcdd306c18fd11e6a2aa782bcb0741351c96c57f9ce945b28dd5f347470c5a4d"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Elhuyar-QTLeap WSD/NED corpus"
+    ]
+}

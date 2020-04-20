@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Charles University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1367",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1367"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1367",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Charles University"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Czech Republic"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "\u017dabokrtsk\u00fd, Zden\u011bk"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1367;2017-11-09T14:21:28Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;TectoMT;\u017dabokrtsk\u00fd, Zden\u011bk;TectoMT is a highly modular NLP (Natural Language Processing) software system implemented in Perl programming language under Linux. It is primarily aimed at Machine Translation, making use of the ideas and technology created during the Prague Dependency Treebank project. At the same time, it is also hoped to significantly facilitate and accelerate development of software solutions of many other NLP tasks, especially due to re-usability of the numerous integrated processing modules (called blocks), which are equipped with uniform object-oriented interfaces.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1367;downloadable_files_count: 0;Czech Republic;Charles University;http://ufal.mff.cuni.cz/tectomt/index.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "db1735c2-3d92-5943-b4f0-7c547cdfb74c",
+    "notes": [
+        "TectoMT is a highly modular NLP (Natural Language Processing) software system implemented in Perl programming language under Linux. It is primarily aimed at Machine Translation, making use of the ideas and technology created during the Prague Dependency Treebank project. At the same time, it is also hoped to significantly facilitate and accelerate development of software solutions of many other NLP tasks, especially due to re-usability of the numerous integrated processing modules (called blocks), which are equipped with uniform object-oriented interfaces."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1367"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "TectoMT"
+    ],
+    "url": ""
+}

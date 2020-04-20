@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/8851658</identifier>
+    <datestamp>2019-07-10T14:43:03Z</datestamp>
+    <setSpec>category_179</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_3</setSpec>
+    <setSpec>month_year_07_2019</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SynthCity Dataset - Complete</dc:title>
+      <dc:creator>David Griffiths (6925508)</dc:creator>
+      <dc:creator>Jan Boehm (6782060)</dc:creator>
+      <dc:subject>Artificial Intelligence and Image Processing</dc:subject>
+      <dc:subject>lidar</dc:subject>
+      <dc:subject>point cloud</dc:subject>
+      <dc:subject>dataset</dc:subject>
+      <dc:subject>synthetic</dc:subject>
+      <dc:description>With deep learning becoming a more prominent approach for automatic classification of three-dimensional point cloud data, a key bottleneck is the amount of high quality training data, especially when compared to that available for two-dimensional images. One potential solution is the use of synthetic data for pre-training networks, however the ability for models to generalise from synthetic data to real world data has been poorly studied for point clouds. Despite this, a huge wealth of 3D virtual environments exist, which if proved effective can be exploited. We therefore argue that research in this domain would be hugely useful. In this paper we present SynthCity an open dataset to help aid research. SynthCity is a 367.9M point synthetic full colour Mobile Laser Scanning point cloud. Every point is labelled from one of nine categories. We generate our point cloud in a typical Urban/Suburban environment using the Blensor plugin for Blender. See our project website http://www.synthcity.xyz or paper https://arxiv.org/abs/1907.04758 for more information.</dc:description>
+      <dc:date>2019-07-10T14:43:03Z</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:identifier>10.5522/04/8851658.v2</dc:identifier>
+      <dc:relation>https://figshare.com/articles/SynthCity_Dataset_-_Complete/8851658</dc:relation>
+      <dc:rights>CC BY 4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "https://www.humanbrainproject.eu/"
+    ],
+    "Contributor": [
+        "Zilles, Karl",
+        "Bludau, Sebastian",
+        "Eickhoff, Simon B.",
+        "Caspers, Svenja",
+        "Richter, Monika",
+        "Mohlberg, Hartmut",
+        "Amunts, Katrin"
+    ],
+    "DOI": "http://dx.doi.org/10.25493/WZNZ-DPQ",
+    "DiscHierarchy": [
+        "3.2",
+        "Life Sciences",
+        "Medicine"
+    ],
+    "Discipline": "Neuroscience",
+    "Format": [
+        "NIFTI"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://148.187.98.42:8443/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=10.25493_WZNZ-DPQ",
+    "MetadataAccess": [
+        "10.25493_WZNZ-DPQ"
+    ],
+    "PublicationTimestamp": "2019-06-04T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "The Human Brain Project"
+    ],
+    "RelatedIdentifier": [
+        "https://doi.org/10.1093/cercor/bhy245 "
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    ],
+    "author": [
+        "Amunts, Katrin"
+    ],
+    "fulltext": "10.25493_WZNZ-DPQ;2019-12-10T12:41:52Z;https://doi.org/10.25493/WZNZ-DPQ;Probabilistic cytoarchitectonic map of Area hIP5 (IPS) (v7.0);2019-06-04T11:26:53.067Z;This dataset contains the distinct probabilistic cytoarchitectonic map of Area hIP5 (IPS) in the individual, single subject template of the MNI Colin 27 reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to the reference space, where each voxel was assigned the probability to belong to Area hIP5 (IPS). The probability map of Area hIP5 (IPS) is provided in NifTi format for each hemisphere in the reference space. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and updated probability estimates for new brain structures may in some cases lead to measurable but negligible deviations of existing probability maps, as compared to earlier released datasets.  .\n\nOther available data versions of Area hIP5 (IPS):\nRichter et al. (2019) [Data set, v7.1] [DOI: 10.25493/RNSM-Y4Y](https://doi.org/10.25493%2FRNSM-Y4Y)\n\nThe most probable delineation of Area hIP5 (IPS) derived from the calculation of a maximum probability map of all currently released JuBrain brain structures can be found here:\nAmunts et al. (2019) [Data set, v18] [DOI: 10.25493/8EGG-ZAR](https://doi.org/10.25493%2F8EGG-ZAR)\n;neuroscience;histology;imaging;brain mapping;english;dataset;The Human Brain Project;Richter, Monika;Amunts, Katrin;Mohlberg, Hartmut;Bludau, Sebastian;Eickhoff, Simon B.;Zilles, Karl;Caspers, Svenja;Amunts, Katrin;NIFTI;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International;https://doi.org/10.1093/cercor/bhy245 ",
+    "group": "hbp",
+    "groups": [
+        {
+            "name": "hbp"
+        }
+    ],
+    "name": "0ec6787b-02c0-57fb-9690-24d062aff47b",
+    "notes": [
+        "This dataset contains the distinct probabilistic cytoarchitectonic map of Area hIP5 (IPS) in the individual, single subject template of the MNI Colin 27 reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D\u00fcsseldorf. The results of the cytoarchitectonic analysis were then mapped to the reference space, where each voxel was assigned the probability to belong to Area hIP5 (IPS). The probability map of Area hIP5 (IPS) is provided in NifTi format for each hemisphere in the reference space. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and updated probability estimates for new brain structures may in some cases lead to measurable but negligible deviations of existing probability maps, as compared to earlier released datasets.  .\n\nOther available data versions of Area hIP5 (IPS):\nRichter et al. (2019) [Data set, v7.1] [DOI: 10.25493/RNSM-Y4Y](https://doi.org/10.25493%2FRNSM-Y4Y)\n\nThe most probable delineation of Area hIP5 (IPS) derived from the calculation of a maximum probability map of all currently released JuBrain brain structures can be found here:\nAmunts et al. (2019) [Data set, v18] [DOI: 10.25493/8EGG-ZAR](https://doi.org/10.25493%2F8EGG-ZAR)\n"
+    ],
+    "oai_identifier": [
+        "10.25493_WZNZ-DPQ"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "neuroscience"
+        },
+        {
+            "name": "histology"
+        },
+        {
+            "name": "imaging"
+        },
+        {
+            "name": "brain mapping"
+        }
+    ],
+    "title": [
+        "Probabilistic cytoarchitectonic map of Area hIP5 (IPS) (v7.0)"
+    ],
+    "url": ""
+}

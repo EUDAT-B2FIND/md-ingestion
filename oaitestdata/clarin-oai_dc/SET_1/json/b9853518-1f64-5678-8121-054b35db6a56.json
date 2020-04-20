@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Stanis\u0142aw Piotrkowczyk"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-5699",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-5699"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D25-9",
+    "PublicationTimestamp": "1667-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1667"
+    ],
+    "Publisher": [
+        "Stanis\u0142aw Piotrkowczyk"
+    ],
+    "RelatedIdentifier": [
+        "http://pbc.biaman.pl/Content/5699"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "author": [
+        "Rych\u0142owski, Franciszek"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-5699;2019-03-01T15:45:53Z;Kazania na swi\u0119ta ca\u0142ego roku. Z ro\u017cnych doktorow [...] zebrane y napisane przez [...];Rych\u0142owski, Franciszek;Kazania polskie 17 w.;ilo\u015b\u0107 skan\u00f3w: 725 ; sygn. St-11;Stanis\u0142aw Piotrkowczyk;1667;starodruk;application/xml;clarind-uds:poldilemma-5699;hdl:11858/00-246C-0000-0023-8D25-9;pol;lat;http://pbc.biaman.pl/Content/5699;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b9853518-1f64-5678-8121-054b35db6a56",
+    "notes": [
+        "ilo\u015b\u0107 skan\u00f3w: 725 ; sygn. St-11"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-5699"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Kazania polskie w."
+        }
+    ],
+    "title": [
+        "Kazania na swi\u0119ta ca\u0142ego roku. Z ro\u017cnych doktorow [...] zebrane y napisane przez [...]"
+    ],
+    "url": ""
+}

@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:6557",
+    "MetadataAccess": [
+        "oai:doidb.wdc-terra.org:6557"
+    ],
+    "fulltext": "oai:doidb.wdc-terra.org:6557;2018-10-25T08:12:41Z;DOIDB;DOIDB.FID;false;4;DOIDB.FID;10.5880/fidgeo.2018.015;Peral, Mireia;Mireia;Peral;0000-0001-8026-2753;Group of Dynamics of the Lithosphere, Institut de Ci\u00e8ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain.;Kir\u00e1ly, \u00c1gnes;\u00c1gnes;Kir\u00e1ly;The Centre for Earth Evolution and Dynamics, University of Oslo, Norway;Zlotnik, Sergio;Sergio;Zlotnik;Department of Civil and Environmental Engineering, Universitat Polit\u00e8cnica de Catalunya, Barcelona, Spain.;Funiciello, Francesca;Francesca;Funiciello;0000-0001-7900-8272;Laboratory of Experimental Tectonics, Department of Sciences, Universit\u00e0 degli Studi Roma Tre, Roma, Italy.;Fern\u00e0ndez, Manel;Manel;Fern\u00e0ndez;Group of Dynamics of the Lithosphere, Institut de Ci\u00e8ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain;Faccenna, Claudio;Claudio;Faccenna;Laboratory of Experimental Tectonics, Department of Sciences, Universit\u00e0 degli Studi Roma Tre, Roma, Italy.;Verg\u00e9s, Jaume;Jaume;Verg\u00e9s;Group of Dynamics of the Lithosphere, Institut de Ci\u00e8ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain.;Supplement to \"Opposite subduction polarity in adjacent plate segments\";GFZ Data Services;2018;Subduction analog models;ananlogue models;double subduction system;trench curvature;EPOS;Multi-scale laboratories;analogue models of geologic processes;analogue modelling results;Peral, Mireia;Mireia;Peral;0000-0001-8026-2753;Group of Dynamics of the Lithosphere, Institut de Ci\u00e8ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain.;Laboratory of Experimental Tectonics (Universit\u00e0 di Roma TRE, Italy);Universit\u00e0 di Roma TRE, Italy;eng;10.1029/2017TC004896;949939 Bytes;2 Files;application/pdf;video/mp4;CC BY 4.0;This dataset contains ten movies corresponding to five analog experiments of double subduction systems with opposite polarity in adjacent plate segments. The laboratory model consists of two viscous layers of silicone putty representing the lithospheric plates, on top of a tank of syrup representing the mantle. Different setups have been designed to test the influence of the width of the plates and the initial separation between them on the resulting trench retreat velocities, deformation of plates and mantle flow.",
+    "group": "fidgeo",
+    "groups": [
+        {
+            "name": "fidgeo"
+        }
+    ],
+    "name": "6a28c570-0253-5a3c-8a82-ddd11c13a8dc",
+    "oai_identifier": [
+        "oai:doidb.wdc-terra.org:6557"
+    ],
+    "oai_set": [
+        "DOIDB",
+        "DOIDB.FID"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

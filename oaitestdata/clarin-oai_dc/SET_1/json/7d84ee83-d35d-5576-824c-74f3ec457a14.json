@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "IPI PAN"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/584",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/584"
+    ],
+    "PID": "http://hdl.handle.net/11321/584",
+    "PublicationTimestamp": "2018-07-27T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "IPI PAN"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "BSD 2 Clause",
+        "https://opensource.org/licenses/BSD-2-Clause",
+        "PUB"
+    ],
+    "author": [
+        "\u017bak, Paulina",
+        "Skuczy\u0144ska, Beata"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/584;2018-07-26T15:29:36Z;hdl_11321_3;hdl_11321_4;OptaHopper: phrase-level sentiment with opinion targets;\u017bak, Paulina;Skuczy\u0144ska, Beata;sentiment;A phrase- and sentence-level sentiment analysis tool (deep-learning TreeLSTM, TreeHopper) integrated with opinion finding. Any sentiment dictionary may be used as an input feature, including lemma-level and plWordNet emo dictionaries. In the case of plWordNet emo, provided integration with the WSD module. The OPFI (Opinion Finder) app used for opinion target extraction.;2018-07-27;toolService;http://hdl.handle.net/11321/584;pol;BSD 2 Clause;https://opensource.org/licenses/BSD-2-Clause;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;IPI PAN",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7d84ee83-d35d-5576-824c-74f3ec457a14",
+    "notes": [
+        "A phrase- and sentence-level sentiment analysis tool (deep-learning TreeLSTM, TreeHopper) integrated with opinion finding. Any sentiment dictionary may be used as an input feature, including lemma-level and plWordNet emo dictionaries. In the case of plWordNet emo, provided integration with the WSD module. The OPFI (Opinion Finder) app used for opinion target extraction."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/584"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "sentiment"
+        }
+    ],
+    "title": [
+        "OptaHopper: phrase-level sentiment with opinion targets"
+    ],
+    "url": ""
+}

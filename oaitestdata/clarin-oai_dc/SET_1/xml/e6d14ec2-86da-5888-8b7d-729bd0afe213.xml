@@ -1,0 +1,43 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-B43E-6</identifier>
+    <datestamp>2018-07-02T22:05:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Prague Dependency Treebank 2.0 - sample data</dc:title>
+      <dc:creator>Haji&#269;, Jan</dc:creator>
+      <dc:creator>Panevov&#225;, Jarmila</dc:creator>
+      <dc:creator>Sgall, Petr</dc:creator>
+      <dc:creator>Pajas, Petr</dc:creator>
+      <dc:creator>&#352;t&#283;p&#225;nek, Jan</dc:creator>
+      <dc:creator>Havelka, Ji&#345;&#237;</dc:creator>
+      <dc:creator>Mikulov&#225;, Marie</dc:creator>
+      <dc:creator>&#381;abokrtsk&#253;, Zden&#283;k</dc:creator>
+      <dc:creator>&#352;ev&#269;&#237;kov&#225;-Raz&#237;mov&#225;, Magda</dc:creator>
+      <dc:subject>treebank</dc:subject>
+      <dc:subject>dependency</dc:subject>
+      <dc:subject>PDT</dc:subject>
+      <dc:description>A small subset of PDT 2.0 made available under a permissive license.&#13;
+&#13;
+Prague Dependency Treebank 2.0 (PDT 2.0) contains a large amount of Czech texts with complex and interlinked morphological (2 million words), syntactic (1.5 MW) and complex semantic annotation (0.8 MW); in addition, certain properties of sentence information structure and coreference relations are annotated at the semantic level.&#13;
+&#13;
+PDT 2.0 is based on the long-standing Praguian linguistic tradition, adapted for the current Computational Linguistics research needs. The corpus itself uses the latest annotation technology. Software tools for corpus search, annotation and language analysis are included. Extensive documentation (in English) is provided as well.</dc:description>
+      <dc:date>2006-06-21</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-B43E-6</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0001-B098-5</dc:relation>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/pdt2.0/doc/pdt-guide/en/html/ch03.html#a-data-sample</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

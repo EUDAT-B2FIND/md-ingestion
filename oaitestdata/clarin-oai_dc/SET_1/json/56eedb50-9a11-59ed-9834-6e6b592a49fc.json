@@ -1,0 +1,99 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 3",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Croatian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1170",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1170"
+    ],
+    "PID": "http://hdl.handle.net/11356/1170",
+    "PublicationTimestamp": "2017-12-16T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://dx.doi.org/10.4312/slo2.0.2016.2.156-188",
+        "http://hdl.handle.net/11356/1121"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Samard\u017ei\u0107, Tanja",
+        "Ljube\u0161i\u0107, Nikola",
+        "Mili\u010devi\u0107, Maja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1170;2018-10-24T20:18:20Z;hdl_11356_1023;hdl_11356_1024;Croatian Twitter training corpus ReLDI-NormTagNER-hr 2.0;Ljube\u0161i\u0107, Nikola;Erjavec, Toma\u017e;Mili\u010devi\u0107, Maja;Samard\u017ei\u0107, Tanja;computer-mediated communication;tokenisation;word normalisation;tagging;lemmatisation;named entities;manual annotation;TEI;ReLDI-NormTagNER-hr 2.0 is a manually annotated corpus of Croatian tweets. It is meant as a gold-standard training and testing dataset for tokenisation, sentence segmentation, word normalisation, morphosyntactic tagging, lemmatisation and named entity recognition of non-standard Croatian. Each tweet is also annotated for its automatically assigned standardness levels (T = technical standardness, L = linguistic standardness). As an update to version 1.1, 2.0 adds annotations for named entities.;2017-12-16;corpus;http://hdl.handle.net/11356/1170;hrv;http://dx.doi.org/10.4312/slo2.0.2016.2.156-188;http://hdl.handle.net/11356/1121;Creative Commons - Attribution 4.0 International (CC BY 4.0);PUB;https://creativecommons.org/licenses/by/4.0/;application/zip;application/zip;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 3;Jo\u017eef Stefan Institute;https://reldi.spur.uzh.ch/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "56eedb50-9a11-59ed-9834-6e6b592a49fc",
+    "notes": [
+        "ReLDI-NormTagNER-hr 2.0 is a manually annotated corpus of Croatian tweets. It is meant as a gold-standard training and testing dataset for tokenisation, sentence segmentation, word normalisation, morphosyntactic tagging, lemmatisation and named entity recognition of non-standard Croatian. Each tweet is also annotated for its automatically assigned standardness levels (T = technical standardness, L = linguistic standardness). As an update to version 1.1, 2.0 adds annotations for named entities."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1170"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "tokenisation"
+        },
+        {
+            "name": "word normalisation"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "lemmatisation"
+        },
+        {
+            "name": "named entities"
+        },
+        {
+            "name": "manual annotation"
+        },
+        {
+            "name": "TEI"
+        }
+    ],
+    "title": [
+        "Croatian Twitter training corpus ReLDI-NormTagNER-hr 2.0"
+    ],
+    "url": ""
+}

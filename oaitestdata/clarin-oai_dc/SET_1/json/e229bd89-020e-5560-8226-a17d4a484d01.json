@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Ewa Dulna-Rak"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/richtext",
+        "downloadable_files_count: 50",
+        "application/zip"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/246",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/246"
+    ],
+    "PID": "http://hdl.handle.net/11321/246",
+    "PublicationTimestamp": "2016-02-11T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Ewa Dulna-Rak"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Dulna-Rak, Ewa"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/246;2017-04-04T10:15:07Z;hdl_11321_3;hdl_11321_4;Iwo Gall -teksty teatralne;Dulna-Rak, Ewa;teatr;Teksty teatralne Iwona Galla;2016-02-11;corpus;http://hdl.handle.net/11321/246;POLSKI;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;text/plain; charset=utf-8;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;text/richtext;application/zip;application/zip;downloadable_files_count: 50;Ewa Dulna-Rak",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e229bd89-020e-5560-8226-a17d4a484d01",
+    "notes": [
+        "Teksty teatralne Iwona Galla"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/246"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "teatr"
+        }
+    ],
+    "title": [
+        "Iwo Gall -teksty teatralne"
+    ],
+    "url": ""
+}

@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2144",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2144"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2144",
+    "PublicationTimestamp": "2017-04-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Haji\u010d, Jan",
+        "N\u00e1plava, Jakub",
+        "Straka, Milan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2144;2018-07-02T22:05:52Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Automatically generated spelling correction corpus for Czech (Czech-SEC-AG);Haji\u010d, Jan;N\u00e1plava, Jakub;Straka, Milan;spelling correction;natural language correction;Automatically generated spelling correction corpus for Czech (Czesl-SEC-AG) is a corpus containg text with automatically generated spelling errors. To create spelling errors, a character error model containing probabilities of character substitution, insertion, deletion and probabilities of swaping two adjacent characters is used. Besides these probabilities, also the probabilities of changing character casing are considered. The original clean text on which the spelling errors were generated is PDT3.0 (http://hdl.handle.net/11858/00-097C-0000-0023-1AAF-3). The original train/dev/test sentence split of PDT3.0 corpus is preserved in this dataset.\r\n\r\nBesides the data with artificial spelling errors, we also publish texts from which the character error model was created. These are the original manual transcript of an audiobook \u0160vejk and its corrected version performed by authors of Korektor (http://ufal.mff.cuni.cz/korektor). These data are similarly to CzeSL Grammatical Error Correction Dataset (CzeSL-GEC: http://hdl.handle.net/11234/1-2143) processed into four sets based on error difficulty present.;2017-04-30;corpus;http://hdl.handle.net/11234/1-2144;ces;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "500f2378-d927-5a96-8661-fbb8e829e3f1",
+    "notes": [
+        "Automatically generated spelling correction corpus for Czech (Czesl-SEC-AG) is a corpus containg text with automatically generated spelling errors. To create spelling errors, a character error model containing probabilities of character substitution, insertion, deletion and probabilities of swaping two adjacent characters is used. Besides these probabilities, also the probabilities of changing character casing are considered. The original clean text on which the spelling errors were generated is PDT3.0 (http://hdl.handle.net/11858/00-097C-0000-0023-1AAF-3). The original train/dev/test sentence split of PDT3.0 corpus is preserved in this dataset.\r\n\r\nBesides the data with artificial spelling errors, we also publish texts from which the character error model was created. These are the original manual transcript of an audiobook \u0160vejk and its corrected version performed by authors of Korektor (http://ufal.mff.cuni.cz/korektor). These data are similarly to CzeSL Grammatical Error Correction Dataset (CzeSL-GEC: http://hdl.handle.net/11234/1-2143) processed into four sets based on error difficulty present."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2144"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "spelling correction"
+        },
+        {
+            "name": "natural language correction"
+        }
+    ],
+    "title": [
+        "Automatically generated spelling correction corpus for Czech (Czech-SEC-AG)"
+    ],
+    "url": ""
+}

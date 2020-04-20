@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4430",
+    "MetadataAccess": [
+        "oai:ota:oucs:4430"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Defoe, Daniel, 1661?-1731."
+    ],
+    "fulltext": "oai:ota:oucs:4430;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4430.xml;Advice to the people of Great Britain: with respect to two important points of their future conduct. I. What they ought to expect from the King. II. How they ought to behave to him.;Defoe, Daniel, 1661?-1731.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6c69b23a-c4c0-5c0c-9de5-d241af1fcd9b",
+    "oai_identifier": [
+        "oai:ota:oucs:4430"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Advice to the people of Great Britain: with respect to two important points of their future conduct. I. What they ought to expect from the King. II. How they ought to behave to him."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4430.xml"
+}

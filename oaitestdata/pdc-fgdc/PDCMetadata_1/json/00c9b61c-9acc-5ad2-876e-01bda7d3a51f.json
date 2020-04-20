@@ -1,0 +1,99 @@
+{
+    "Contact": [
+        "polardata@polar.gc.ca"
+    ],
+    "Contributor": [
+        "Polar Knowledge Canada (POLAR)"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "The dataset focuses on vascular plants collected in support of an Ecology and Biodiversity of Cambridge Bay, Victoria Island, Nunavut project.The field work was confined to southeast Victoria Island, mostly within walking distance of the road network along the southeast island. Most field sessions were brief with the objective of gaining some initial observations. Collections were made for verification and in support of a core vascular plant reference collection for the Canadian High Arctic Research Station (CHARS) at Cambridge Bay, Nunavut."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=12438_fgdc",
+    "PublicationTimestamp": "2015-04-10T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(69N-69N,105W-104W)",
+    "TempCoverageBegin": 63509223599,
+    "TempCoverageEnd": 63509914799,
+    "TemporalCoverage": " period : ( 2013-07-12T11:59:59Z - 2013-07-20T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2013-07-12T11:59:59Z",
+    "TemporalCoverage:EndDate": "2013-07-20T11:59:59Z",
+    "author": [
+        "Wagner, Ioan",
+        "Meidinger, Del",
+        "Sullivan, Josh",
+        "Bennett, Bruce A.",
+        "MacKenzie, Will",
+        "Turner, Derek",
+        "McLennen, Donald",
+        "Kutz, Susan"
+    ],
+    "fulltext": "12438_fgdc;2017-04-09T22:02:43Z;PDCMetadata;Bennett, Bruce A.;McLennen, Donald;Kutz, Susan;MacKenzie, Will;Meidinger, Del;Sullivan, Josh;Turner, Derek;Wagner, Ioan;20150410;Ecology and Biodiversity of Cambridge Bay, Victoria Island, Nunavut - Results of Field Studies, Summer 2013;Computer file;unknown;Bennett, B.A. 2013. Vascular Plant Collections, B.A. Bennett Herbarium (BABY). unpublished.;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12438;The dataset identifies vascular plant collections to subspecies or variety. Collection information includes collectors, location of collection, coordinates, collection date, associated species and habitat, herbaria where collections are house, identification and confirmation information, and additional notes.;The dataset focuses on vascular plants collected in support of an Ecology and Biodiversity of Cambridge Bay, Victoria Island, Nunavut project.The field work was confined to southeast Victoria Island, mostly within walking distance of the road network along the southeast island. Most field sessions were brief with the objective of gaining some initial observations. Collections were made for verification and in support of a core vascular plant reference collection for the Canadian High Arctic Research Station (CHARS) at Cambridge Bay, Nunavut.;Summary: Not applicable Research Program(s): POLAR/CHARS. For further information: brbennett@klondiker.com;20130712;20130720;NULL;In work;As needed;-105;-104;69;69;NULL;Abundance;Cambridge Bay;Conservation;Flora;Flowering plants;Taxonomy;Terrestrial ecosystem;Vascular plants;Victoria Island;Cambridge Bay and vicinity, se Victoria Island, Nunavut, Canada;NULL;Public;NULL;Polar Knowledge Canada (POLAR);Polar Knowledge Canada;NULL;mailing;360 Albert St., Suite 1710;Ottawa;Ontario;K1R 7X7;Canada;1-800-622-6232;polardata@polar.gc.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;12438;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20150410;20150410;Polar Knowledge Canada;Polar Knowledge Canada (POLAR);mailing;360 Albert St., Suite 1710;Ottawa;Ontario;K1R 7X7;Canada;1-800-622-6232;polardata@polar.gc.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "00c9b61c-9acc-5ad2-876e-01bda7d3a51f",
+    "notes": [
+        "The dataset identifies vascular plant collections to subspecies or variety. Collection information includes collectors, location of collection, coordinates, collection date, associated species and habitat, herbaria where collections are house, identification and confirmation information, and additional notes."
+    ],
+    "oai_identifier": [
+        "12438_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-105,69],[-105,69],[-104,69],[-104,69],[-105,69]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Abundance"
+        },
+        {
+            "name": "Cambridge Bay"
+        },
+        {
+            "name": "Conservation"
+        },
+        {
+            "name": "Flora"
+        },
+        {
+            "name": "Flowering plants"
+        },
+        {
+            "name": "Taxonomy"
+        },
+        {
+            "name": "Terrestrial ecosystem"
+        },
+        {
+            "name": "Vascular plants"
+        },
+        {
+            "name": "Victoria Island"
+        }
+    ],
+    "title": [
+        "Ecology and Biodiversity of Cambridge Bay, Victoria Island, Nunavut - Results of Field Studies, Summer 2013"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12438"
+}

@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3179",
+    "MetadataAccess": [
+        "oai:ota:oucs:3179"
+    ],
+    "PublicationTimestamp": "1917-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1917"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Phillips, David Graham, 1867-1911"
+    ],
+    "fulltext": "oai:ota:oucs:3179;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3179.xml;Susan Lenox: her rise and fall [sic] ;Phillips, David Graham, 1867-1911;not after: 1917;text_and_corpus_linguistics;Fiction -- United States -- 20th century;Novels -- United States -- 20th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6b75336f-3814-59f2-8c76-1229b3a2c000",
+    "oai_identifier": [
+        "oai:ota:oucs:3179"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- United States -- th century"
+        },
+        {
+            "name": "Novels -- United States -- th century"
+        }
+    ],
+    "title": [
+        "Susan Lenox: her rise and fall [sic] "
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3179.xml"
+}

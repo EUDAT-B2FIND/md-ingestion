@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3820",
+    "MetadataAccess": [
+        "oai:ota:oucs:3820"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Kenrick, W. (William), 1725?-1779."
+    ],
+    "fulltext": "oai:ota:oucs:3820;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3820.xml;An address to the artists and manufacturers of Great Britain; respecting an application to Parliament for the farther encouragement of new discoveries and inventions in the useful arts; ... By W. Kenrick, LL.D;Kenrick, W. (William), 1725?-1779.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f525d7f2-ce04-5b40-b49b-514547369253",
+    "oai_identifier": [
+        "oai:ota:oucs:3820"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "An address to the artists and manufacturers of Great Britain; respecting an application to Parliament for the farther encouragement of new discoveries and inventions in the useful arts; ... By W. Kenrick, LL.D"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3820.xml"
+}

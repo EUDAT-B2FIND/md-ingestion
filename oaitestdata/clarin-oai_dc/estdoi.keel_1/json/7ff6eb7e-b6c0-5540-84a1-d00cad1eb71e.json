@@ -1,0 +1,50 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/9-00-0000-0000-0000-00163L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:18304740",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:18304740"
+    ],
+    "PublicationTimestamp": "2013-01-07T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:18304740;2019-03-03T18:37:37Z;ESTDOI;ESTDOI.KEEL;Corpus of Estonian scientific texts D;Muischnek, Kadri;Center of Estonian Language Resources;2013;Issued: 2013-01-07;Updated: 2013-01-07;doi:10.15155/9-00-0000-0000-0000-00163L;Abstract;A text corpus containing 5 million words of Estonian scientific texts: \nPhD dissertations (2,3 million words) and scientific articles.\nMarkup: TEI P5 XML\nencoding: UTF8",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7ff6eb7e-b6c0-5540-84a1-d00cad1eb71e",
+    "notes": [
+        "Abstract",
+        "A text corpus containing 5 million words of Estonian scientific texts: \nPhD dissertations (2,3 million words) and scientific articles.\nMarkup: TEI P5 XML\nencoding: UTF8"
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:18304740"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Corpus of Estonian scientific texts D"
+    ],
+    "url": ""
+}

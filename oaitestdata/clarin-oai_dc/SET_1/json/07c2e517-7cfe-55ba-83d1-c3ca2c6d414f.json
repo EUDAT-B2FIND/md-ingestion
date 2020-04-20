@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Johannes V. Jensen-centret, Aarhus Universitet"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "text/xml",
+        "downloadable_files_count: 4",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/20",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/20"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/20",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Johannes V. Jensen-centret, Aarhus Universitet"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Iversen, Stefan",
+        "Johannes V. Jensen"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/20;2018-06-28T13:26:44Z;hdl_20.500.12115_1;hdl_20.500.12115_3;Johannes V. Jensen Corpus;Iversen, Stefan;Johannes V. Jensen;literature;I regi af CLARIN-projektet og i samarbejde med rettighedshaverne, gjorde  Jensen Forum i 2011  hovedparten af Jensens udgivelser tilg\u00e6ngelige i s\u00f8gbare fuldtekstversioner, som man nu finder p\u00e5 dette websted.\r\nAlle v\u00e6rker er publiceret digitalt i XML-formatet (TEIP5DKCLARIN-format) af Johannes V. Jensen-Centret, Aarhus Universitet.\r\nDer er tale om de samme udgivelser som ligger p\u00e5 \"Jensen online\": http://johannesvjensen.dk/jensenonline/liste-over-vaerker/ (undtagen Br\u00e6en, Daduse og Kornmarken), nemlig: \r\nAandens Stadier\r\n\u00c6stetik og Udvikling\r\nChristofer Columbus\r\nCimbrernes Tog\r\nDen ny Verden\r\nDet Blivende\r\nDet tabte Land\r\nDr. Renaults Fristelser\r\nDyrenes Forvandling\r\nEvolution og Moral\r\nG\u00e6st kommer til Verden\r\nGudrun\r\nHamlet\r\nHjulet\r\nJ\u00f8rgine\r\nKvinden i Sagatiden\r\nMadame DOra\r\nMarieh\u00f8nen\r\nMindets Tavle\r\nM\u00f8llen\r\nMyter ny samling\r\nMyter og Jagter\r\nMyter\r\nNordisk Aand\r\nNordvejen\r\nNye Myter\r\nOm Sproget og Undervisningen\r\nPisangen\r\nRetninger i Tiden\r\nRudyard Kipling\r\nS\u00e6lernes \u00d8\r\nSangerinden\r\nSingaporenoveller\r\nSkibet\r\nSwift og Oehlenschl\u00e4ger\r\nTilblivelsen\r\nUdvikling og Form\r\nUngt er endnu Ordet\r\nVed Livets Bred og andre Myter\r\nVerdens Lys\r\nVor Oprindelse\r\nVor Tidsalder;2011;corpus;http://hdl.handle.net/20.500.12115/20;dan;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/zip;application/pdf;application/pdf;text/xml;text/plain; charset=utf-8;downloadable_files_count: 4;Johannes V. Jensen-centret, Aarhus Universitet;http://johannesvjensen.dk/jensenonline/liste-over-vaerker/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "07c2e517-7cfe-55ba-83d1-c3ca2c6d414f",
+    "notes": [
+        "I regi af CLARIN-projektet og i samarbejde med rettighedshaverne, gjorde  Jensen Forum i 2011  hovedparten af Jensens udgivelser tilg\u00e6ngelige i s\u00f8gbare fuldtekstversioner, som man nu finder p\u00e5 dette websted.\r\nAlle v\u00e6rker er publiceret digitalt i XML-formatet (TEIP5DKCLARIN-format) af Johannes V. Jensen-Centret, Aarhus Universitet.\r\nDer er tale om de samme udgivelser som ligger p\u00e5 \"Jensen online\": http://johannesvjensen.dk/jensenonline/liste-over-vaerker/ (undtagen Br\u00e6en, Daduse og Kornmarken), nemlig: \r\nAandens Stadier\r\n\u00c6stetik og Udvikling\r\nChristofer Columbus\r\nCimbrernes Tog\r\nDen ny Verden\r\nDet Blivende\r\nDet tabte Land\r\nDr. Renaults Fristelser\r\nDyrenes Forvandling\r\nEvolution og Moral\r\nG\u00e6st kommer til Verden\r\nGudrun\r\nHamlet\r\nHjulet\r\nJ\u00f8rgine\r\nKvinden i Sagatiden\r\nMadame DOra\r\nMarieh\u00f8nen\r\nMindets Tavle\r\nM\u00f8llen\r\nMyter ny samling\r\nMyter og Jagter\r\nMyter\r\nNordisk Aand\r\nNordvejen\r\nNye Myter\r\nOm Sproget og Undervisningen\r\nPisangen\r\nRetninger i Tiden\r\nRudyard Kipling\r\nS\u00e6lernes \u00d8\r\nSangerinden\r\nSingaporenoveller\r\nSkibet\r\nSwift og Oehlenschl\u00e4ger\r\nTilblivelsen\r\nUdvikling og Form\r\nUngt er endnu Ordet\r\nVed Livets Bred og andre Myter\r\nVerdens Lys\r\nVor Oprindelse\r\nVor Tidsalder"
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/20"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "literature"
+        }
+    ],
+    "title": [
+        "Johannes V. Jensen Corpus"
+    ],
+    "url": ""
+}

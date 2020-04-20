@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=b8c860b66c6711e2a2aa782bcb0741357d0bd8c8d04a4101affa80b298309fa4",
+    "MetadataAccess": [
+        "b8c860b66c6711e2a2aa782bcb0741357d0bd8c8d04a4101affa80b298309fa4"
+    ],
+    "PublicationTimestamp": "2013-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "fulltext": "b8c860b66c6711e2a2aa782bcb0741357d0bd8c8d04a4101affa80b298309fa4;2018-11-15T16:40:10Z;toolService;toolService:service;U-Compare Discourse Parsing Service;Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Performs discourse parsing on plain text. Also identifies sentences, tokens, parts of speech, lemmas, clauses and coreference chains \nTools in workflow: UAIC-POSTagger, UAIC-NPChunker, UAIC-RARE, UAIC-Splitter, UAIC-DP  (all tools of the Alexandru Ioan Cuza University, Romania) \nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n;2013-02-15",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a63207af-c2f0-5b64-a59c-c8487841777c",
+    "notes": [
+        "Web service created by exporting UIMA-based workflow from the U-Compare text mining system.\nFunctionality: Performs discourse parsing on plain text. Also identifies sentences, tokens, parts of speech, lemmas, clauses and coreference chains \nTools in workflow: UAIC-POSTagger, UAIC-NPChunker, UAIC-RARE, UAIC-Splitter, UAIC-DP  (all tools of the Alexandru Ioan Cuza University, Romania) \nNOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences\n"
+    ],
+    "oai_identifier": [
+        "b8c860b66c6711e2a2aa782bcb0741357d0bd8c8d04a4101affa80b298309fa4"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:service"
+    ],
+    "state": "active",
+    "title": [
+        "U-Compare Discourse Parsing Service"
+    ]
+}

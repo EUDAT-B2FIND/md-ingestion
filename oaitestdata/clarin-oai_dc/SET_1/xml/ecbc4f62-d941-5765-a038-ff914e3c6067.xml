@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/274</identifier>
+    <datestamp>2016-06-02T11:08:21Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MWELexicon</dc:title>
+      <dc:creator>Dziob, Agnieszka</dc:creator>
+      <dc:creator>Kali&#324;ski, Micha&#322;</dc:creator>
+      <dc:creator>Maziarz, Marek</dc:creator>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:creator>Szpakowicz, Stan</dc:creator>
+      <dc:creator>Wendelberger, Micha&#322;</dc:creator>
+      <dc:subject>multi-word lexical units</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>inflection</dc:subject>
+      <dc:subject>collocations</dc:subject>
+      <dc:subject>plWordNet</dc:subject>
+      <dc:description>Lexicon of 55k multi-word lexical units linked to plWordNet, together with description of their syntactic bahaviour obtained in constraint language (WCCL).</dc:description>
+      <dc:date>2016-04-26</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/274</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>plWordNet</dc:rights>
+      <dc:rights>http://clarin-pl.eu/en/licenses/plwordnet-2/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://clarin-pl.eu/pl/o-projekcie/clarin-pl/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

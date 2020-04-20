@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-561</identifier>
+    <datestamp>2019-03-01T15:43:51Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Monitor na Rok Pa&#324;ski 1772: Nro. I - CV</dc:title>
+      <dc:subject xml:lang="pl">Czasopisma polskie 18 w.</dc:subject>
+      <dc:description xml:lang="pl">ilo&#347;&#263; skan&#243;w: 417 ; Sygn. St - 367</dc:description>
+      <dc:publisher xml:lang="pl">Drukarnia Mitzlerowska</dc:publisher>
+      <dc:date>1772</dc:date>
+      <dc:type xml:lang="pl">gazeta</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-561</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8D24-B</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://pbc.biaman.pl/Content/561</dc:relation>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Arts and Humanities Research Board (AHRB)",
+        "Simmons, R. C. (Richard C.), 1937-",
+        "Bibliographical Society (Great Britain)",
+        "Simmons, Richard C."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(65 files : total of ca. 1.18 MB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2418",
+    "MetadataAccess": [
+        "oai:ota:oucs:2418"
+    ],
+    "PublicationTimestamp": "2000-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dicey, Cluer",
+        "Marshall, Richard, printer"
+    ],
+    "fulltext": "oai:ota:oucs:2418;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/2418.xml;The Dicey and Marshall catalogue / edited by R. C. Simmons;Dicey, Cluer;Marshall, Richard, printer;2000-11;text_and_corpus_linguistics;Ephemera -- Great Britain -- 18th century;Catalogues -- Great Britain -- 18th century;Sales catalogues -- Great Britain -- 18th century;Publishers' catalogues -- Great Britain -- 18th century;Advertisements -- Great Britain -- 18th century;eng;This catalogue of 1764 was probably larger than any catalogue categorising and listing cheap maps, images and texts that had up to then appeared in the British Isles. It is an important source for the study of the lower end of the eighteenth-century book and publishing trade ;Oxford Text Archive, University of Oxford;Simmons, R. C. (Richard C.), 1937-;Arts and Humanities Research Board (AHRB);Bibliographical Society (Great Britain);Simmons, Richard C.;(65 files : total of ca. 1.18 MB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "9b3770b9-a84e-5a26-ad1d-2cfe42625ac3",
+    "notes": [
+        "This catalogue of 1764 was probably larger than any catalogue categorising and listing cheap maps, images and texts that had up to then appeared in the British Isles. It is an important source for the study of the lower end of the eighteenth-century book and publishing trade "
+    ],
+    "oai_identifier": [
+        "oai:ota:oucs:2418"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Ephemera -- Great Britain -- th century"
+        },
+        {
+            "name": "Catalogues -- Great Britain -- th century"
+        },
+        {
+            "name": "Sales catalogues -- Great Britain -- th century"
+        },
+        {
+            "name": "Publishers catalogues -- Great Britain -- th century"
+        },
+        {
+            "name": "Advertisements -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The Dicey and Marshall catalogue / edited by R. C. Simmons"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2418.xml"
+}

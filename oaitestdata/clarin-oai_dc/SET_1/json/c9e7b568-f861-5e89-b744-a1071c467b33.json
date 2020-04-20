@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "University of \u0141\u00f3d\u017a"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/288",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/288"
+    ],
+    "PID": "http://hdl.handle.net/11321/288",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "University of \u0141\u00f3d\u017a"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Dr\u00f3\u017cd\u017c, \u0141ukasz",
+        "Kowalczyk, Pawe\u0142",
+        "P\u0119zik, Piotr",
+        "Wilk, Pawe\u0142"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/288;2016-06-03T14:42:11Z;hdl_11321_3;hdl_11321_4;SlopeQ for BNC Search Engine;P\u0119zik, Piotr;Kowalczyk, Pawe\u0142;Wilk, Pawe\u0142;Dr\u00f3\u017cd\u017c, \u0141ukasz;British National Corpus;corpus search engine;SlopeQ;The SlopeQ for BNC Search Engine provides access to the British National Corpus dataset. \r\nIn addition to linguistically motivated corpus queries, it supports a number of data exploration and \r\nvisualisation features. Most of the functionality of the search engine is available through a \r\nREST web service.;2016-03-08;toolService;http://hdl.handle.net/11321/288;eng;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;CC;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;University of \u0141\u00f3d\u017a;http://pelcra.clarin-pl.eu/SlopeqBNC",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c9e7b568-f861-5e89-b744-a1071c467b33",
+    "notes": [
+        "The SlopeQ for BNC Search Engine provides access to the British National Corpus dataset. \r\nIn addition to linguistically motivated corpus queries, it supports a number of data exploration and \r\nvisualisation features. Most of the functionality of the search engine is available through a \r\nREST web service."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/288"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "British National Corpus"
+        },
+        {
+            "name": "corpus search engine"
+        },
+        {
+            "name": "SlopeQ"
+        }
+    ],
+    "title": [
+        "SlopeQ for BNC Search Engine"
+    ],
+    "url": ""
+}

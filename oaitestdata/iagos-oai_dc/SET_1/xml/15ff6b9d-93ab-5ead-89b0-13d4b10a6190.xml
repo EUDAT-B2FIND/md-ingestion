@@ -1,0 +1,59 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>61e54760-86ba-4b69-804b-06a7793f9104</dc:identifier>
+      <dc:date>2018-09-06T18:17:35.974+02:00</dc:date>
+      <dc:title>IAGOS vertical profiles</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Atmospheric chemistry &gt; Nitrogen compounds &gt; Nitrogen oxides</dc:subject>
+      <dc:subject>Atmospheric chemistry &gt; Oxygen compounds &gt; Ozone</dc:subject>
+      <dc:subject>Atmospheric winds</dc:subject>
+      <dc:subject>Atmospheric temperature</dc:subject>
+      <dc:subject>Atmospheric chemistry &gt; Carbon and hydrocarbon compounds &gt; Carbon dioxide</dc:subject>
+      <dc:subject>Atmospheric winds &gt; Wind dynamics &gt; Vorticity &gt; Potential vorticity</dc:subject>
+      <dc:subject>Altitude &gt; Planetary boundary layer height</dc:subject>
+      <dc:subject>Atmospheric temperature</dc:subject>
+      <dc:subject>Atmospheric chemistry &gt; Nitrogen compounds &gt; Nitrogen oxides</dc:subject>
+      <dc:subject>Atmospheric winds</dc:subject>
+      <dc:subject>Altitude &gt; Barometric altitude</dc:subject>
+      <dc:subject>Atmospheric winds</dc:subject>
+      <dc:subject>Atmospheric temperature</dc:subject>
+      <dc:subject>Atmospheric chemistry &gt; Nitrogen compounds &gt; Nitrogen oxides</dc:subject>
+      <dc:subject>Atmospheric water vapor &gt; Water vapor indicators &gt; Humidity &gt; Relative humidity</dc:subject>
+      <dc:subject>Atmospheric chemistry &gt; Nitrogen compounds &gt; Nitrogen oxides</dc:subject>
+      <dc:subject>Altitude &gt; Geopotential height</dc:subject>
+      <dc:subject>Atmospheric winds &gt; Wind dynamics &gt; Vorticity &gt; Potential vorticity</dc:subject>
+      <dc:subject>Atmospheric pressure &gt; Static pressure</dc:subject>
+      <dc:subject>Platform characteristics &gt; Airspeed/ground speed</dc:subject>
+      <dc:subject>Altitude &gt; Planetary boundary layer height</dc:subject>
+      <dc:subject>Atmospheric water vapor &gt; Water vapor indicators &gt; Water vapor</dc:subject>
+      <dc:subject>Atmospheric temperature &gt; Surface temperature &gt; Potential temperature</dc:subject>
+      <dc:subject>Atmospheric chemistry &gt; Carbon and hydrocarbon compounds &gt; Carbon monoxide</dc:subject>
+      <dc:subject>Atmospheric chemistry &gt; Carbon and hydrocarbon compounds &gt; Methane</dc:subject>
+      <dc:subject>Atmospheric winds</dc:subject>
+      <dc:subject>Atmospheric winds &gt; Wind dynamics &gt; Vertical wind velocity/speed</dc:subject>
+      <dc:subject>Atmospheric pressure &gt; Surface pressure</dc:subject>
+      <dc:subject>Atmospheric temperature</dc:subject>
+      <dc:subject>Platform characteristics &gt; Airspeed/ground speed</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>IAGOS</dc:subject>
+      <dc:subject>SEDOO</dc:subject>
+      <dc:subject>AERIS</dc:subject>
+      <dc:subject>climatologyMeteorologyAtmosphere</dc:subject>
+      <dc:format>Nasa Ames</dc:format>
+      <dc:format>NetCDF</dc:format>
+      <dct:abstract>This dataset provides all vertical profiles over the airports visited by the IAGOS fleet. The profiles match the take-off and landing phases of the flights. The dataset includes values of all species measured by IAGOS instrumentation with a time acquisition resolution of 4 seconds as well as meteorological fields provided by the aircraft or the ECMWF.</dct:abstract>
+      <dc:description>This dataset provides all vertical profiles over the airports visited by the IAGOS fleet. The profiles match the take-off and landing phases of the flights. The dataset includes values of all species measured by IAGOS instrumentation with a time acquisition resolution of 4 seconds as well as meteorological fields provided by the aircraft or the ECMWF.</dc:description>
+      <dc:rights>restricted</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Data produced by the European Research Infrastructure IAGOS.</dc:source>
+      <dc:format>Nasa Ames</dc:format>
+      <dc:format>NetCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:::EPSG:4326">
+        <ows:LowerCorner>180.0 -90.0</ows:LowerCorner>
+        <ows:UpperCorner>-180.0 90.0</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" description="IAGOS central website">http://www.iagos.org</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-http--download" description="IAGOS Data Portal">http://iagos-data.fr/#TimeseriesPlace:</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="DOI of the dataset">http://dx.doi.org/10.25326/07</dc:URI>
+      <dc:URI protocol="image/png" name="Logo">http://iagos-data.fr/images/logo_blue.png</dc:URI>
+      <dc:URI name="Map of flights">http://iagos-data.fr/portal/rest/images/map:global:thumb</dc:URI>
+    </csw:Record>

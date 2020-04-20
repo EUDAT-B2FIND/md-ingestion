@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "TALG Research Group (University of Vigo)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Galician"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-615",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-615"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-615",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "TALG Research Group (University of Vigo)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Spain"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-615;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Corpus T\u00e9cnico do Galego;Domain-specific corpus (Law, Computing, Medicine, Economy, Sociology and Environment), 22 million words;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-615;glg;downloadable_files_count: 0;Spain;TALG Research Group (University of Vigo);http://sli.uvigo.es/CTG",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4ff11677-eca6-5af8-b01a-631d4fc2b620",
+    "notes": [
+        "Domain-specific corpus (Law, Computing, Medicine, Economy, Sociology and Environment), 22 million words"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-615"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Corpus T\u00e9cnico do Galego"
+    ],
+    "url": ""
+}

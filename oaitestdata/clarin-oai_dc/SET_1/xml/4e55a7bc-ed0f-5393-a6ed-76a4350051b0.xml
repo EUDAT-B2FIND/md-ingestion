@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0022-60D6-1</identifier>
+    <datestamp>2018-07-02T22:05:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>W2C &#8211; Web to Corpus &#8211; tool</dc:title>
+      <dc:creator>Majli&#353;, Martin</dc:creator>
+      <dc:subject>web data</dc:subject>
+      <dc:subject>wikipedia</dc:subject>
+      <dc:subject>corpus creation</dc:subject>
+      <dc:description>A tool used to build multilingual corpora from wikipedia. Download the web pages, convert them to plain text, identify language, etc.&#13;
+&#13;
+A set of 120 corpora collected using this tool is available at https://ufal-point.mff.cuni.cz/xmlui/handle/11858/00-097C-0000-0022-6133-9</dc:description>
+      <dc:date>2011-12-20</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0022-60D6-1</dc:identifier>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0022-6133-9</dc:relation>
+      <dc:rights>Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

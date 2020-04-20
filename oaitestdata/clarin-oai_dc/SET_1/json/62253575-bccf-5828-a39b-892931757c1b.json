@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "text/plain"
+    ],
+    "Language": [
+        "Slovak"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADC-5",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADC-5"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0006-AADC-5",
+    "PublicationTimestamp": "2012-05-15T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/231720"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "Galu\u0161\u010d\u00e1kov\u00e1, Petra",
+        "Bojar, Ond\u0159ej"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADC-5;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Manually Classified Errors in En->Sk Translation;Galu\u0161\u010d\u00e1kov\u00e1, Petra;Bojar, Ond\u0159ej;machine translation;errors classification;EN-SK translation;Manual classification of errors of English-Slovak translation according to the classification introduced by Vilar et al. [1]. 50 sentences randomly selected from WMT 2011 test set [2] were translated by 3 MT systems described in [3] and MT errors were manually marked and classified. Reference translation is included.\r\n\r\nReferences:\r\n[1] David Vilar, Jia Xu, Luis Fernando D\u2019Haro and Hermann Ney. Error Analysis of Machine Translation Output. In International Conference on Language Resources and Evaluation, pages 697-702. Genoa, Italy, May 2006.\r\n[2] http://www.statmt.org/wmt11/evaluation-task.html\r\n[3] Petra Galu\u0161\u010d\u00e1kov\u00e1 and Ond\u0159ej Bojar. Improving SMT by Using Parallel Data of a Closely Related Language. In Human Language Technologies - The Baltic Perspective - Proceedings of the Fifth International Conference Baltic HLT 2012, volume 247 of Frontiers in AI and Applications, pages 58-65, Amsterdam, Netherlands, October 2012. IOS Press.;2012-05-15;lexicalConceptualResource;http://hdl.handle.net/11858/00-097C-0000-0006-AADC-5;slk;info:eu-repo/grantAgreement/EC/FP7/231720;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);http://creativecommons.org/licenses/by-nc-sa/3.0/;PUB;text/plain;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "62253575-bccf-5828-a39b-892931757c1b",
+    "notes": [
+        "Manual classification of errors of English-Slovak translation according to the classification introduced by Vilar et al. [1]. 50 sentences randomly selected from WMT 2011 test set [2] were translated by 3 MT systems described in [3] and MT errors were manually marked and classified. Reference translation is included.\r\n\r\nReferences:\r\n[1] David Vilar, Jia Xu, Luis Fernando D\u2019Haro and Hermann Ney. Error Analysis of Machine Translation Output. In International Conference on Language Resources and Evaluation, pages 697-702. Genoa, Italy, May 2006.\r\n[2] http://www.statmt.org/wmt11/evaluation-task.html\r\n[3] Petra Galu\u0161\u010d\u00e1kov\u00e1 and Ond\u0159ej Bojar. Improving SMT by Using Parallel Data of a Closely Related Language. In Human Language Technologies - The Baltic Perspective - Proceedings of the Fifth International Conference Baltic HLT 2012, volume 247 of Frontiers in AI and Applications, pages 58-65, Amsterdam, Netherlands, October 2012. IOS Press."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0006-AADC-5"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "errors classification"
+        },
+        {
+            "name": "EN-SK translation"
+        }
+    ],
+    "title": [
+        "Manually Classified Errors in En->Sk Translation"
+    ],
+    "url": ""
+}

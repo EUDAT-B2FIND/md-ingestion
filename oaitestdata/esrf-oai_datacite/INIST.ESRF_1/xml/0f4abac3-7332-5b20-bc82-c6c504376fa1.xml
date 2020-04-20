@@ -1,0 +1,93 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:14419362</identifier>
+    <datestamp>2018-03-13T09:35:40Z</datestamp>
+    <setSpec>INIST</setSpec>
+    <setSpec>INIST.ESRF</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.1/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.1/ http://schema.datacite.org/oai/oai-1.1/oai.xsd">
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>INIST.ESRF</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.15151/ESRF-ES-91846265</identifier>
+          <creators>
+            <creator>
+              <creatorName>Tommi KAJANDER</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Veli-Matti LEPPANEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Mikko METSA-KETELA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Ulla PENTIKAINEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Mahesh Kumar TELI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Kornelia MIKULA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Kristian KOSKI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Leena PENTTINEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>POOJA POOJA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Johan PAAKKONEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Abris BENDES</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Sven SOWA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Tarja PARKKINEN</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Hannes BEYER</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Subhadra DALWANI</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Chandan THAPA</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Deborah HARRUS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Yashwanth ASOK</creatorName>
+            </creator>
+            <creator>
+              <creatorName>EZEOGO OBAJI</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>Finnish National Protein Crystallography Consortium (FinnProCC)</title>
+          </titles>
+          <subjects>
+            <subject subjectScheme="Proposal Type Description">Macromolecular Crystallography</subject>
+            <subject subjectScheme="Proposal">MX-1933</subject>
+            <subject subjectScheme="instrument">id29</subject>
+          </subjects>
+          <publisher>European Synchrotron Radiation Facility</publisher>
+          <dates>
+            <date dateType="Collected">2018-03-13</date>
+          </dates>
+          <publicationYear>2021</publicationYear>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Experiment Session</resourceType>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

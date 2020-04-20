@@ -1,0 +1,65 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/9137798</identifier>
+    <datestamp>2019-07-31T14:59:21Z</datestamp>
+    <setSpec>category_585</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_3</setSpec>
+    <setSpec>month_year_07_2019</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>FireNet</dc:title>
+      <dc:creator>Jan Boehm (6782060)</dc:creator>
+      <dc:creator>Fabio Panella (7084535)</dc:creator>
+      <dc:creator>Victor Melatti (7078694)</dc:creator>
+      <dc:subject>Geomatic Engineering not elsewhere classified</dc:subject>
+      <dc:subject>Fire Safety Equipment</dc:subject>
+      <dc:subject>Training Images</dc:subject>
+      <dc:subject>Machine Learning</dc:subject>
+      <dc:description>&lt;p&gt;FireNet &lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;FireNet is an open ML training dataset for visual recognition of fire
+safety equipment. Our dataset directly links the objects to their
+respective Uniclass, the construction sector&#8217;s classification scheme to name
+objects. &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;FireNet has been designed as a ML training dataset for experimentation
+and therefore fulfills multiple machine learning scenarios (classification,
+object detection, semantic segmentation). It is intended as a domain specific
+dataset to refine pre-trained standard architectures. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Uniclass               &amp; Description                        &lt;/p&gt;
+
+&lt;p&gt;Pr_40_50_28_64              Portable
+fire extinguishers&lt;/p&gt;
+
+&lt;p&gt;Pr_75_75_30_50              Manual
+call points &lt;/p&gt;
+
+&lt;p&gt;Pr_40_50_28_29              Fire
+protective blankets   &lt;/p&gt;
+
+&lt;p&gt;Pr_40_10_77_32              Fire
+escape route signs    &lt;/p&gt;
+
+&lt;p&gt;Pr_40_10_77_31              Fire
+equipment signs    &lt;/p&gt;
+
+&lt;p&gt;Pr_75_75_30_97              Visual
+alarm signal devices  Pr_75_75_30_30              Fire
+alarm sounders &lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Pr_75_75_30_65              Point
+smoke detectors  &lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</dc:description>
+      <dc:date>2019-07-31T14:59:21Z</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:identifier>10.5522/04/9137798.v1</dc:identifier>
+      <dc:relation>https://figshare.com/articles/FireNet/9137798</dc:relation>
+      <dc:rights>CC BY-NC 4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

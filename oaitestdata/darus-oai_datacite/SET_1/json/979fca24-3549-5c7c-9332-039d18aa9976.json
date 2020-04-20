@@ -1,0 +1,25 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-621",
+    "MetadataAccess": [
+        "doi:10.18419/darus-621"
+    ],
+    "fulltext": "doi:10.18419/darus-621;2020-02-12T01:00:00Z;all;openaire_data;10.18419/darus-621;Lemmer, Frank;Frank;Lemmer;0000-0003-2395-9954;Universit\u00e4t Stuttgart;M\u00fcller, Kolja;Kolja;M\u00fcller;independent;Yu, Wei;Wei;Yu;0000-0002-6396-9391;Universit\u00e4t Stuttgart;Cheng, Po Wen;Po Wen;Cheng;0000-0002-3764-3363;Universit\u00e4t Stuttgart;FAST model of the SWE-CPP semi-submersible floating wind turbine platform for the DTU 10MW reference wind turbine;DaRUS;2020;Engineering;Wind energy;Floating wind turbine;Lemmer, Frank;Frank;Lemmer;Universit\u00e4t Stuttgart;2020-01-27;2020-01-24;2020-02-11;https://orbit.dtu.dk/en/publications/the-dtu-10-mw-reference-wind-turbine;https://rwt.windenergy.dtu.dk/dtu10mw/dtu-10mw-rwt/tree/master/aeroelastic_models/fast/DTU10MWRWT_FAST_v1.00/ReferenceModal/10MWRWT;24755;5711;19693;5642;24757;5711;19691;5640;24758;5711;19694;5642;24757;5711;19694;5642;9295;19532;11242;638;24760;5711;19694;5642;24757;5708;19691;5641;24757;5708;19693;5641;5019;2354;12431;5541;10941;393728;4119;1472;5718;5718;5718;5718;5718;5897;19688;202802504;5889;19676;202724204;5889;19678;202675604;5897;19688;202643204;5895;19688;202624304;5894;19686;203121104;5896;19686;202937504;text/x-fixed-field;image/vnd.fst;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;image/vnd.fst;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;image/vnd.fst;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;image/vnd.fst;text/x-fixed-field;text/x-fixed-field;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;text/x-fixed-field;image/vnd.fst;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;image/vnd.fst;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;image/vnd.fst;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;text/plain;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;application/x-msdownload;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;text/x-fixed-field;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;application/octet-stream;1.0;CC BY Waiver;This dataset includes all files necessary to build an OpenFAST v1.0.0 platform model. The wind turbine definition files for OpenFAST of the present repository are taken from [2] <a href=https://rwt.windenergy.dtu.dk/dtu10mw/dtu-10mw-rwt/tree/master/aeroelastic_models/fast/DTU10MWRWT_FAST_v1.00/ReferenceModal/10MWRWT>DTU 10MW Reference Wind Turbine git repository</a>. The openFAST program to run the simulation can be downloaded from <a href=\"https://nwtc.nrel.gov/OpenFAST\">NREL-OpenFAST</a>. The version of openFAST used is v.1.0.0.<br>\r\nTo run, please take the following steps: \r\n<ol> \r\n<li> Download openFAST from the above URL, if problems occur get v1.0.0</li> \r\n<li>Download the files of this dataset to the same directory. Make sure the .fst files are in the same directory as the OpenFAST.exe file. I will call this the \"working directory\"</li> \r\n<li>Open a command line and type the drive letter followed by a colon of the working directory (i.e. D:) and press enter</li> \r\n<li>Use cd to move to the working directory, i.e. cd documents/TripleSpar/</li> \r\n<li>Run FAST simulation by typing: OpenFAST.exe BruteForce_17d9v0_24d0d_4d5h_hp.fst</li> </ol>\r\nThe OpenFAST input files of this dataset are written with initial conditions equal to the equilibrium states of the system at different wind speeds, in order to reduce the transient time at the beginning of a time-domain simulation. The convention for the filenames is [xxdxx][VarName], where the value xxdxx preceeds the corresponding variable name VarName and the decimal point is replaced by \"d\". The variable names are\r\n<ul>\r\n<li> v0: mean wind speed at hub height [m/s]</li>\r\n<li> d: floater column spacing from centerline [m], see [3,4]</li>\r\n<li> h_hp: floater heave plate thickness [m], see [3,4]</li>\r\n</ul>;Stuttgart, Germany;European Commission;info:eu-repo/grantAgreement/EC/H2020/640741",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "979fca24-3549-5c7c-9332-039d18aa9976",
+    "oai_identifier": [
+        "doi:10.18419/darus-621"
+    ],
+    "oai_set": [
+        "all",
+        "openaire_data"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

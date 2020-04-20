@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3987",
+    "MetadataAccess": [
+        "oai:ota:oucs:3987"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dibdin, Charles, 1745-1814."
+    ],
+    "fulltext": "oai:ota:oucs:3987;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3987.xml;Harvest-home: A comic opera, in two acts. As performed, with universal applause, at the Theatre-Royal, in the Hay-Market. By Mr. Dibdin.;Dibdin, Charles, 1745-1814.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4eef48a4-6928-5a1e-85f0-3de68d6c3f70",
+    "oai_identifier": [
+        "oai:ota:oucs:3987"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Harvest-home: A comic opera, in two acts. As performed, with universal applause, at the Theatre-Royal, in the Hay-Market. By Mr. Dibdin."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3987.xml"
+}

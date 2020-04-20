@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5119",
+    "MetadataAccess": [
+        "oai:ota:oucs:5119"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Griffith, Mrs. (Elizabeth), 1720?-1793."
+    ],
+    "fulltext": "oai:ota:oucs:5119;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5119.xml;The morality of Shakespeare's drama illustrated: By Mrs. Griffith.;Griffith, Mrs. (Elizabeth), 1720?-1793.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "484313fe-41bd-5e43-bf7b-34a464429d50",
+    "oai_identifier": [
+        "oai:ota:oucs:5119"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The morality of Shakespeare's drama illustrated: By Mrs. Griffith."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5119.xml"
+}

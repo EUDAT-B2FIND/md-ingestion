@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Wytw\u00f3rnia Film\u00f3w Dokumentalnych i Fabularnych",
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "text/plain",
+        "downloadable_files_count: 2"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/426",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/426"
+    ],
+    "PID": "http://hdl.handle.net/11321/426",
+    "PublicationTimestamp": "2017-10-06T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Wytw\u00f3rnia Film\u00f3w Dokumentalnych i Fabularnych",
+        "Polish-Japanese Academy of Information Technology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)",
+        "http://creativecommons.org/licenses/by-nc/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Kor\u017einek, Danijel"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/426;2017-10-06T20:11:06Z;hdl_11321_3;hdl_11321_4;Transkrypcja fonetyczna Kronik RP;Kor\u017einek, Danijel;phonetics;This is a phonetic transcription of the \"Kroniki RP\" data set using the G2P tool available at mowa.clarin-pl.eu.;2017-10-06;corpus;http://hdl.handle.net/11321/426;pol;Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0);http://creativecommons.org/licenses/by-nc/3.0/;CC;text/plain; charset=utf-8;text/plain;text/plain;downloadable_files_count: 2;Polish-Japanese Academy of Information Technology;Wytw\u00f3rnia Film\u00f3w Dokumentalnych i Fabularnych",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3bdffa2b-027a-5c53-8279-14766ba9c85f",
+    "notes": [
+        "This is a phonetic transcription of the \"Kroniki RP\" data set using the G2P tool available at mowa.clarin-pl.eu."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/426"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "phonetics"
+        }
+    ],
+    "title": [
+        "Transkrypcja fonetyczna Kronik RP"
+    ],
+    "url": ""
+}

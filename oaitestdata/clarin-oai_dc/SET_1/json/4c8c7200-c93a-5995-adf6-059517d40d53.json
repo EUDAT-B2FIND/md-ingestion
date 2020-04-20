@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "438 KB"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1177",
+    "MetadataAccess": [
+        "oai:ota:oucs:1177"
+    ],
+    "PublicationTimestamp": "1945-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1945"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Short stories"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "M\u00c3\u00a1ire"
+    ],
+    "fulltext": "oai:ota:oucs:1177;2018-03-05T14:20:38Z;http://ota.ox.ac.uk/headers/1177.xml;Sc\u00c3\u00a9al \u00c3\u00bar agus sean-sc\u00c3\u00a9al / compiled by Kieran Devine;M\u00c3\u00a1ire;1945;text_and_corpus_linguistics;Short stories -- Ireland -- 20th century;iri;Oxford Text Archive, University of Oxford;438 KB;Text;Short stories;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4c8c7200-c93a-5995-adf6-059517d40d53",
+    "oai_identifier": [
+        "oai:ota:oucs:1177"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Short stories -- Ireland -- th century"
+        }
+    ],
+    "title": [
+        "Sc\u00c3\u00a9al \u00c3\u00bar agus sean-sc\u00c3\u00a9al / compiled by Kieran Devine"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1177.xml"
+}

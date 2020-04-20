@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1eb37910a35a11e1a404080027e73ea2dbdb15cf3d18412b943f9db788f20d5c",
+    "MetadataAccess": [
+        "1eb37910a35a11e1a404080027e73ea2dbdb15cf3d18412b943f9db788f20d5c"
+    ],
+    "PublicationTimestamp": "2015-12-14T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "1eb37910a35a11e1a404080027e73ea2dbdb15cf3d18412b943f9db788f20d5c;2019-02-27T12:08:53Z;lexicalConceptualResource;lexicalConceptualResource:wordList;Maltese Wordlist;Wordlist for spell-checking;2015-12-14",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fbb4a813-c72b-5b0a-bd16-262b22f8e3e8",
+    "notes": [
+        "Wordlist for spell-checking"
+    ],
+    "oai_identifier": [
+        "1eb37910a35a11e1a404080027e73ea2dbdb15cf3d18412b943f9db788f20d5c"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:wordList"
+    ],
+    "state": "active",
+    "title": [
+        "Maltese Wordlist"
+    ]
+}

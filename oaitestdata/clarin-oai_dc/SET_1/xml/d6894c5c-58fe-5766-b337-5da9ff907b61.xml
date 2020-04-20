@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1128</identifier>
+    <datestamp>2017-08-04T17:21:28Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Dictionary of Slovenian Particles</dc:title>
+      <dc:creator>&#381;ele, Andreja</dc:creator>
+      <dc:subject>dictionary</dc:subject>
+      <dc:subject>lexicography</dc:subject>
+      <dc:subject>particles</dc:subject>
+      <dc:description>The dictionary describes the particles in the Slovenian language. It contains 429 entries with information on variants, dynamic and tonal accent, particle type, the meaning and etymology.&#13;
+&#13;
+The relation to what is being said and the circumstances of the spoken situation are expressed particularly through particles, which is why they are functionally very lively language components of everyday communication. With their semantic-contextual role they actualise what is worded and at the same time condense the message. The particle is one of those non-parts-of-speech that fulfils the textual role of the connector and is, more particularly, ranked among inter-predicate connectors or the connectors in supra-predicate texts. Since particles play primarily a textual role, they are also particularly meaningful words, which can be reasonably used in a text, especially in one&#8217;s first language; they maintain a strong communicative (connective) role, and with this a well-marked role of influence. From the communicative-pragmatic perspective, particles are divided into two main categories, namely the connecting (text) particles resulting from pragmatic circumstances, and mood (interpersonal) particles resulting from communicative relationships. Mood particles focus either on the participants, the circumstances, the verbal process or the quantity, e.g. bogvaruj, kon&#269;no, dejansko, baje, nikar, while the connecting particles highlight textual coherence and cohesion, e.g. celo, kaj &#353;ele, druga&#269;e, sicer pa, torej, etc. The most comprehensive and functional semantic-circumstantial evaluation of particles can be found in lexical representation.&#13;
+&#13;
+This dictionary was published as a printed book:&#13;
+&#381;ele, Andreja. Slovar slovenskih &#269;lenkov. Ljubljana : Zalo&#382;ba ZRC, ZRC SAZU, 2014. ISBN 978-961-254-718-9.</dc:description>
+      <dc:date>2015</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1128</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>https://kuscholarworks.ku.edu/bitstream/handle/1808/18716/02_SCN_1_2015_Zele.pdf</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>ZRC SAZU</dc:publisher>
+      <dc:source>http://www.termania.net/slovarji/127/slovar-slovenskih-clenkov</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

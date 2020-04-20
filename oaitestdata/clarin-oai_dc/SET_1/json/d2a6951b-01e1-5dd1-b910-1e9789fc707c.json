@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 105 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2107",
+    "MetadataAccess": [
+        "oai:ota:oucs:2107"
+    ],
+    "PublicationTimestamp": "1809-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1809"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Austen, Jane, 1775-1817"
+    ],
+    "fulltext": "oai:ota:oucs:2107;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2107.xml;The Watsons / by Jane Austen;Austen, Jane, 1775-1817;1809;text_and_corpus_linguistics;Novels -- Great Britain -- 19th century;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 105 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d2a6951b-01e1-5dd1-b910-1e9789fc707c",
+    "oai_identifier": [
+        "oai:ota:oucs:2107"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The Watsons / by Jane Austen"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2107.xml"
+}

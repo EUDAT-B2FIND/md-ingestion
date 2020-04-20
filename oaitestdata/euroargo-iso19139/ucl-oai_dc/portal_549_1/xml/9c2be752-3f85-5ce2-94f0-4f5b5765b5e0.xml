@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:figshare.com:article/8224085</identifier>
+    <datestamp>2019-06-05T10:38:41Z</datestamp>
+    <setSpec>category_160</setSpec>
+    <setSpec>category_320</setSpec>
+    <setSpec>category_1531</setSpec>
+    <setSpec>category_1532</setSpec>
+    <setSpec>category_1657</setSpec>
+    <setSpec>portal_549</setSpec>
+    <setSpec>item_type_2</setSpec>
+    <setSpec>month_year_06_2019</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Laparoscopy movie of pop-up flaps of de humanis corporis fabrica libri septem by Vesalius</dc:title>
+      <dc:creator>Adam Gibson (6779222)</dc:creator>
+      <dc:creator>Tabitha Tuckett (6796102)</dc:creator>
+      <dc:subject>Digital Humanities</dc:subject>
+      <dc:subject>Radiology and Organ Imaging</dc:subject>
+      <dc:subject>History and Philosophy of Medicine</dc:subject>
+      <dc:subject>History and Philosophy of Science (incl. Non-historical Philosophy of Science)</dc:subject>
+      <dc:subject>Heritage and Cultural Conservation</dc:subject>
+      <dc:subject>Vesalius</dc:subject>
+      <dc:subject>Laparoscopy</dc:subject>
+      <dc:subject>Heritage Science</dc:subject>
+      <dc:subject>Heritage Imaging</dc:subject>
+      <dc:subject>Digital Humanities</dc:subject>
+      <dc:subject>UCL Special Collections</dc:subject>
+      <dc:description>Imaging under pop-up flaps of De humanis corporis fabrica libri septem by Andreas Vesalius using laparoscopy on 8 Feb 2018. Movie shows a view through the laparoscope, showing the complexity of the pop-up features.</dc:description>
+      <dc:date>2019-06-05T10:38:41Z</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Media</dc:type>
+      <dc:identifier>10.5522/04/8224085.v1</dc:identifier>
+      <dc:relation>https://figshare.com/articles/Laparoscopy_movie_of_pop-up_flaps_of_de_humanis_corporis_fabrica_libri_septem_by_Vesalius/8224085</dc:relation>
+      <dc:rights>CC BY 4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

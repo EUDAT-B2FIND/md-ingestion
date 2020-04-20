@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 2",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/7",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/7"
+    ],
+    "PID": "http://hdl.handle.net/10794/7",
+    "PublicationTimestamp": "2012-07-04T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/7;2017-10-27T16:36:05Z;hdl_10794_1;hdl_10794_2;8 SIDOR (2017-10-16);8 SIDOR (2017-10-16);n/a, n/a;Swedish;Corpus;News;News articles from 8 SIDOR. The material is sentence scrambled.;Nyhetsartiklar fr\u00e5n 8 SIDOR. Materialet \u00e4r meningsomkastat.;2012-07-04;corpus;http://hdl.handle.net/10794/7;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/octet-stream;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 2;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/attasidor",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0079bb6c-fbf3-5221-a41e-43c2744d5127",
+    "notes": [
+        "News articles from 8 SIDOR. The material is sentence scrambled.",
+        "Nyhetsartiklar fr\u00e5n 8 SIDOR. Materialet \u00e4r meningsomkastat."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/7"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Corpus"
+        },
+        {
+            "name": "News"
+        }
+    ],
+    "title": [
+        "8 SIDOR (2017-10-16)",
+        "8 SIDOR (2017-10-16)"
+    ],
+    "url": ""
+}

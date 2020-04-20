@@ -1,0 +1,90 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.55682",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.55682"
+    ],
+    "PublicationTimestamp": "1999-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1999"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(54N,8 E)",
+    "TempCoverageBegin": 61883265599,
+    "TempCoverageEnd": 61883265599,
+    "TemporalCoverage": " point in time : 1962-01-02T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1962-01-02T11:59:59Z",
+    "TemporalCoverage:EndDate": "1962-01-02T11:59:59Z",
+    "author": [
+        "Gillbricht, Max"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.55682;2018-04-19T08:43:01Z;BAH1962;10.1594/PANGAEA.55682;Gillbricht, Max;Hydrochemistry and phytoplankton abundance at time series station Helgoland Roads, North Sea, in 1962;PANGAEA - Data Publisher for Earth & Environmental Science;1999;DATE/TIME;Temperature, water;Salinity;Nitrate;Nitrite;Ammonium;Nitrogen, inorganic, dissolved;Phosphate;Phytoplankton;Diatoms;Flagellates;Phytoplankton, biomass as carbon;Diatoms, biomass as carbon;Flagellates, biomass as carbon;Analyst;Mercury thermometer, in situ;Titration, chloride (Grasshoff et al., 1983, Verlag Chemie GmbH Weinheim);Reduction by hydrazin;Photometer, azo-dye (Bendschneider & Robinson, 1952, J Mar Res, 11:87-96);Bordeaux red, improved by Gillbricht, 1961;Calculated (sum of Nitrate, Nitrite, Ammonium);Photometer, molybdene blue, reduct SnCl;Quantitative phytoplankton method (Uterm\u00f6hl, 1958);HelgolandRoadsTimeseries;Meeresstation Helgoland;Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland) (BAH);Long-term Ecological Research at AWI (LTER);1962-01-02T09:00:00/1962-12-28T09:40:00;eng;Dataset;1887 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);54.18833 7.9",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.55682"
+    ],
+    "oai_set": [
+        "BAH1962"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[7.9,54.18833],[7.9,54.18833],[7.9,54.18833],[7.9,54.18833],[7.9,54.18833]]]}",
+    "tags": [
+        {
+            "name": "Mercury thermometer"
+        },
+        {
+            "name": "situ"
+        },
+        {
+            "name": "Titration"
+        },
+        {
+            "name": "chloride Grasshoff et al."
+        },
+        {
+            "name": "Verlag Chemie GmbH Weinheim"
+        },
+        {
+            "name": "Reduction hydrazin"
+        },
+        {
+            "name": "Photometer"
+        },
+        {
+            "name": "azo-dye Bendschneider"
+        },
+        {
+            "name": "Robinson"
+        },
+        {
+            "name": "J Mar Res"
+        },
+        {
+            "name": "Bordeaux red"
+        },
+        {
+            "name": "improved Gillbricht"
+        }
+    ],
+    "title": [
+        "Hydrochemistry and phytoplankton abundance at time series station Helgoland Roads, North Sea, in 1962"
+    ],
+    "url": ""
+}

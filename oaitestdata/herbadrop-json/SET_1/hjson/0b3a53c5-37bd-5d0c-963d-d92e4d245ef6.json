@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-2846352", 
+        "ARKID": "2846352"
+    }, 
+    "depositIdentifier": "P03078664", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P03078664.jpg", 
+            "ocr": {
+                "deu": "p. MABILLE HERBARIUM CORSICLM\n1868\nHERBARIUM MUSEI PAR/SIENSIS\n\\\\\\ii\\1ii1\ufb01\u00a7ii\u00a7f\\}iiii\\|\\\\\n", 
+                "eng": "p. MABILLE HERBARIUM CORSICLM\n1868\nHERBARIUM MUSEI PARIS/ENSIS\n\\\\\\ii\\1ii1\ufb01\u00a7ii\u00a7f\\}iiii\\|\\\\\n", 
+                "fra": "p. MABILLE HERBARIUM CORSICLM\n1868\nHERBARIUM MUSE! PARISIENSIS\nm i\u2018i\ufb01iii\ufb01iii\ufb02 m1 \\\\\\\n", 
+                "lat": "p. MABILLE HERBARIUM CORSICLM\n1868\nHERBARIUM MUSEI PARISIENSIS\nm \u00efi\u00fci\u00ef\u00ef\u00fc\u00fci\u00ef\u00efx\u00fc\u00fcm\n", 
+                "spa": "p. MABILLE HERBARIUM CORSICLM\n1868\nHERBARIUM MUSE! PARIS/ENSIS\n\\\\\\ii\\1ii1\ufb01\u00a7ii\u00a7f\\}iiii\\|\\\\\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-2846352", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "Fabaceae"
+        }, 
+        "aip.dc.title": {
+            "lat": "Hippocrepis multisiliquosa L."
+        }, 
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "3358516f752c554742ca21a91c4eb7bd7d2e4f997f563d9107ee2069a057d367", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-2846352/2", 
+                "name": "DESC/P03078664.txt", 
+                "originalChecksum": "d01516811004b38b22b8f6d913f190e5", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 2628
+            }, 
+            {
+                "checksum": "f6e146091106f6fa45ce51c90af2d4ce2a4d51bad316671b207125b9f4041175", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-2846352/1", 
+                "name": "P03078664.jpg", 
+                "originalChecksum": "5996fd46de4414c27c72ec8802d34eb7", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 5608026
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-04-11T09:58:15+0200", 
+        "aip.meta.depositIdentifier": "P03078664", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 2846352, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03078664", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 16.550077, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

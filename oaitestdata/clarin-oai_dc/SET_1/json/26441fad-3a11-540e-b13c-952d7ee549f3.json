@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1036",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1036"
+    ],
+    "PID": "http://hdl.handle.net/11356/1036",
+    "PublicationTimestamp": "2013-09-30T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Krek, Simon",
+        "Kosem, Iztok",
+        "Stritar Ku\u010duk, Mojca",
+        "Rozman, Tadeja",
+        "Arhar Holdt, \u0160pela",
+        "Stabej, Marko",
+        "Krap\u0161 Vodopivec, Irena"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1036;2018-10-29T17:06:34Z;hdl_11356_1023;hdl_11356_1024;Learners' corpus \u0160olar 1.0;Rozman, Tadeja;Stritar Ku\u010duk, Mojca;Kosem, Iztok;Krek, Simon;Krap\u0161 Vodopivec, Irena;Arhar Holdt, \u0160pela;Stabej, Marko;developmental corpus;error annotation;student writing;\u0160olar consists of 2,703 texts written by students in Slovene secondary schools (age 15-19) and pupils in the 7th-9th grade of primary school (13-15), with a small percentage also from the 6th grade. School essays form the majority of the corpus (64.2%) while other material includes texts created during lessons, such as text recapitulations or descriptions, examples of formal applications etc. Part of the corpus is annotated with teachers' corrections using a  custom system of labels.;2013-09-30;corpus;http://hdl.handle.net/11356/1036;slv;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);https://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Centre for Language Resources and Technologies, University of Ljubljana;http://eng.slovenscina.eu/korpusi/solar",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "26441fad-3a11-540e-b13c-952d7ee549f3",
+    "notes": [
+        "\u0160olar consists of 2,703 texts written by students in Slovene secondary schools (age 15-19) and pupils in the 7th-9th grade of primary school (13-15), with a small percentage also from the 6th grade. School essays form the majority of the corpus (64.2%) while other material includes texts created during lessons, such as text recapitulations or descriptions, examples of formal applications etc. Part of the corpus is annotated with teachers' corrections using a  custom system of labels."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1036"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "developmental corpus"
+        },
+        {
+            "name": "error annotation"
+        },
+        {
+            "name": "student writing"
+        }
+    ],
+    "title": [
+        "Learners' corpus \u0160olar 1.0"
+    ],
+    "url": ""
+}

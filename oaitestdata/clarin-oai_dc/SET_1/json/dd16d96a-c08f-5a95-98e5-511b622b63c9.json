@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=06cd0a6acab411e1a404080027e73ea2a136f2f220ad4ec89ac5e485765b73c8",
+    "MetadataAccess": [
+        "06cd0a6acab411e1a404080027e73ea2a136f2f220ad4ec89ac5e485765b73c8"
+    ],
+    "PublicationTimestamp": "2012-11-28T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "06cd0a6acab411e1a404080027e73ea2a136f2f220ad4ec89ac5e485765b73c8;2018-11-15T16:39:34Z;corpus;corpus:text;Summ-it;The corpus was developed as a linguistic resource for Automatic Summarization research and his relation with different issues to engage studies on the discourse treatment. \nSumm-it consists of fifty texts from Science domain extracted from Science section of Brazilian daily newspaper Folha de S\u00c3\u00a3o Paulo (FSP), compose by:\nI. Human summaries produced by experts in summarization (Coelho, 2007), rewriting the original texts in a compressed format.\nII. Automatic summaries, obtained by GistSumm (Pardo et al., 2002, and Pardo et al., 2003) and SuPor-2 (Leite and Rino, 2006a, Leite and Rino, 2006c, and Leite and Rino, 2006b). All summaries were generated with a 70% compression rate, which means that the summaries correspond to roughly 30% of the original texts.\nIII. Manual underline sentences which contain relevant informations from the original texts (see 3.2). \nIV. Texts semi-automatically annotated with morpho-syntactic informations, assisted by the syntactic parser PALAVRAS (available at: http://visl.sdu.dk/visl/pt/) and Xtractor converter (available at: http://abc.di.uevora.pt/xtractor/).\nV. Texts semi-automatically annotated with co-reference informations (MMAX) and with rhetorical relations (RST) (cf. Carbonel et al., 2007, Fuchs, 2008, and Collovini et al., 2007) of noun phrases. The first process intents the identification of the entities in the discourse (e.g. noun phrases) referred or recovered in the text and, the second one, permits to structure a text by relating their discursive units through RST relations. ;2012-11-28",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "dd16d96a-c08f-5a95-98e5-511b622b63c9",
+    "notes": [
+        "The corpus was developed as a linguistic resource for Automatic Summarization research and his relation with different issues to engage studies on the discourse treatment. \nSumm-it consists of fifty texts from Science domain extracted from Science section of Brazilian daily newspaper Folha de S\u00c3\u00a3o Paulo (FSP), compose by:\nI. Human summaries produced by experts in summarization (Coelho, 2007), rewriting the original texts in a compressed format.\nII. Automatic summaries, obtained by GistSumm (Pardo et al., 2002, and Pardo et al., 2003) and SuPor-2 (Leite and Rino, 2006a, Leite and Rino, 2006c, and Leite and Rino, 2006b). All summaries were generated with a 70% compression rate, which means that the summaries correspond to roughly 30% of the original texts.\nIII. Manual underline sentences which contain relevant informations from the original texts (see 3.2). \nIV. Texts semi-automatically annotated with morpho-syntactic informations, assisted by the syntactic parser PALAVRAS (available at: http://visl.sdu.dk/visl/pt/) and Xtractor converter (available at: http://abc.di.uevora.pt/xtractor/).\nV. Texts semi-automatically annotated with co-reference informations (MMAX) and with rhetorical relations (RST) (cf. Carbonel et al., 2007, Fuchs, 2008, and Collovini et al., 2007) of noun phrases. The first process intents the identification of the entities in the discourse (e.g. noun phrases) referred or recovered in the text and, the second one, permits to structure a text by relating their discursive units through RST relations. "
+    ],
+    "oai_identifier": [
+        "06cd0a6acab411e1a404080027e73ea2a136f2f220ad4ec89ac5e485765b73c8"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Summ-it"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=f8fc859a059211e7a2aa782bcb0741350d3bf50c37a84b72aba78027323c781c",
+    "MetadataAccess": [
+        "f8fc859a059211e7a2aa782bcb0741350d3bf50c37a84b72aba78027323c781c"
+    ],
+    "PublicationTimestamp": "2017-03-10T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "fulltext": "f8fc859a059211e7a2aa782bcb0741350d3bf50c37a84b72aba78027323c781c;2018-11-15T16:40:29Z;toolService;toolService:tool;Portuguese to English Machine translation module;Technical Description:\n\nhttp://qtleap.eu/wp-content/uploads/2015/05/Pilot1_technical_description.pdf\n\nhttp://qtleap.eu/wp-content/uploads/2015/05/TechnicalDescriptionPilot2_D2.7.pdf\n\nhttp://qtleap.eu/wp-content/uploads/2016/11/TechnicalDescriptionPilot3_D2.10.pdf;2017-03-10",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "703b232d-79a2-52d1-9a3b-7a49ac6cf8ba",
+    "notes": [
+        "Technical Description:\n\nhttp://qtleap.eu/wp-content/uploads/2015/05/Pilot1_technical_description.pdf\n\nhttp://qtleap.eu/wp-content/uploads/2015/05/TechnicalDescriptionPilot2_D2.7.pdf\n\nhttp://qtleap.eu/wp-content/uploads/2016/11/TechnicalDescriptionPilot3_D2.10.pdf"
+    ],
+    "oai_identifier": [
+        "f8fc859a059211e7a2aa782bcb0741350d3bf50c37a84b72aba78027323c781c"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "Portuguese to English Machine translation module"
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Michelle Lindlar, Yvonne Tunnat"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.22000/53",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://www.radar-service.eu/oai/provider?verb=GetRecord&metadataPrefix=oai_dc&identifier=f98d075f-69da-57c0-991b-f86f8a1547bf",
+    "PublicationTimestamp": "2017-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Michelle Lindlar, Yvonne Tunnat"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "CC BY-SA 4.0 Attribution-ShareAlike",
+        "Michelle Lindlar"
+    ],
+    "author": [
+        "Lindlar, Michelle",
+        "Tunnat, Yvonne",
+        "Carl, Wilson"
+    ],
+    "fulltext": "10.22000-53;2017-11-05T19:56:48Z;10.22000/53;DOI;Lindlar, Michelle;0000-0003-3709-5608 ;Tunnat, Yvonne;Carl, Wilson;Synthetic PDF Testset for File Format Validation;Michelle Lindlar, Yvonne Tunnat;2017;Software Technology;Text;CC BY-SA 4.0 Attribution-ShareAlike;Michelle Lindlar;This data set presents a corpus of light-weight files designed to test the validation criteria of JHOVE's PDF module against \"well-formedness\". Test cases are based on structural requirements for PDF files as per ISO 32000-1:2008 standard. The basis for all test files is a single page, one line document with no special features such as linearization. While such a light-weight document only allows to check against a fragment of standard requirements, the focus was put on basic structure violations at the header, trailer, document catalog, page tree node and cross-reference levels. The test set also checks for basic violations at the page node, page resource and stream object level.   The accompanying spreadsheet briefly categorizes and describes the test set and includes the outcome when running the test set against JHOVE 1.16, PDF-hul 1.8 as well as Adobe Acrobat Professional XI Pro (11.0.15). The spreadsheet also includes a codecov coverage statistic for the test set in relation to the JHOVE 1.16, PDF-hul 1.8 module. Further information can be found in the paper \"A PDF Test-Set for Well-Formedness Validation in JHOVE - The Good, the Bad and the Ugly\", published in the proceedings of the 14th International Conference on Digital Preservation (Kyoto, Japan, September 25-29 2017). While the spreadsheet only contains results of running the test set against JHOVE, it can be used as a ground truth for any file format validation process.;PDF, file format validation, digital preservation, ISO 32000-1:2008;eng;application/zip",
+    "group": "radar",
+    "groups": [
+        {
+            "name": "radar"
+        }
+    ],
+    "name": "f98d075f-69da-57c0-991b-f86f8a1547bf",
+    "notes": [
+        "This data set presents a corpus of light-weight files designed to test the validation criteria of JHOVE's PDF module against \"well-formedness\". Test cases are based on structural requirements for PDF files as per ISO 32000-1:2008 standard. The basis for all test files is a single page, one line document with no special features such as linearization. While such a light-weight document only allows to check against a fragment of standard requirements, the focus was put on basic structure violations at the header, trailer, document catalog, page tree node and cross-reference levels. The test set also checks for basic violations at the page node, page resource and stream object level.   The accompanying spreadsheet briefly categorizes and describes the test set and includes the outcome when running the test set against JHOVE 1.16, PDF-hul 1.8 as well as Adobe Acrobat Professional XI Pro (11.0.15). The spreadsheet also includes a codecov coverage statistic for the test set in relation to the JHOVE 1.16, PDF-hul 1.8 module. Further information can be found in the paper \"A PDF Test-Set for Well-Formedness Validation in JHOVE - The Good, the Bad and the Ugly\", published in the proceedings of the 14th International Conference on Digital Preservation (Kyoto, Japan, September 25-29 2017). While the spreadsheet only contains results of running the test set against JHOVE, it can be used as a ground truth for any file format validation process.",
+        "PDF, file format validation, digital preservation, ISO 32000-1:2008"
+    ],
+    "oai_identifier": [
+        "f98d075f-69da-57c0-991b-f86f8a1547bf"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Software"
+        },
+        {
+            "name": "Technology"
+        }
+    ],
+    "title": [
+        "Synthetic PDF Testset for File Format Validation"
+    ],
+    "url": ""
+}

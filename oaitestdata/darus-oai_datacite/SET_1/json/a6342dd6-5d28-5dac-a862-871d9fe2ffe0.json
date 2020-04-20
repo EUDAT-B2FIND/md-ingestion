@@ -1,0 +1,24 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-625",
+    "MetadataAccess": [
+        "doi:10.18419/darus-625"
+    ],
+    "fulltext": "doi:10.18419/darus-625;2020-01-31T01:00:00Z;all;10.18419/darus-625;Lohoff, Caroline;Caroline;Lohoff;Universit\u00e4t Stuttgart;Expansin domains in CBM63 sequences;DaRUS;2020;Medicine, Health and Life Sciences;protein domain;Pleiss, J\u00fcrgen;J\u00fcrgen;Pleiss;Universit\u00e4t Stuttgart;2020-01-28;2020-01-30;8270;text/tab-separated-values;1.0;CC BY Waiver;The occurrence of N- and C-terminal expansin domains in CBM63 sequences from the CAZy database. Protein sequences are represented by NCBI accessions.;Sequences were downloaded from the Carbohydrate-Active enZYmes Database (CAZy) on June 3, 2019.",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "a6342dd6-5d28-5dac-a862-871d9fe2ffe0",
+    "oai_identifier": [
+        "doi:10.18419/darus-625"
+    ],
+    "oai_set": [
+        "all"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

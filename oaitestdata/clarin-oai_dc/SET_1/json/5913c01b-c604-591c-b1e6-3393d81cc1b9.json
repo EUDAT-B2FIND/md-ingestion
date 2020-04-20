@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Smith, John B."
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 374 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0149",
+    "MetadataAccess": [
+        "oai:ota:oucs:0149"
+    ],
+    "PublicationTimestamp": "1925-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1925"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Woolf, Virginia, 1882-1941"
+    ],
+    "fulltext": "oai:ota:oucs:0149;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0149.xml;Mrs. Dalloway / Virginia Woolf;Woolf, Virginia, 1882-1941;1925;text_and_corpus_linguistics;English fiction -- 20th century;eng;Oxford Text Archive, University of Oxford;Smith, John B.;(1 file : ca. 374 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5913c01b-c604-591c-b1e6-3393d81cc1b9",
+    "oai_identifier": [
+        "oai:ota:oucs:0149"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English fiction -- th century"
+        }
+    ],
+    "title": [
+        "Mrs. Dalloway / Virginia Woolf"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0149.xml"
+}

@@ -1,0 +1,152 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>11589_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:26Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Melissa Lafreniere</origin>
+            <origin>Melissa Lafreniere</origin>
+            <pubdate>20130123</pubdate>
+            <title>2012 River Dissolved organic carbon (DOC) and total dissolved nitrogen (TDN) concentrations, Cape Bounty</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Lafreni&#232;re, MJ Unpublished data</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11589</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Sites NAD 27 UTM 12x:&amp;#x0d;
+West River (WR): 0540627, 8313002&amp;#x0d;
+East River (WR): 0543077, 8312306&amp;#x0d;
+Ptarmigan (PT): 0540596, 8314704&amp;#x0d;
+Goose (G):	0540900, 8314197&amp;#x0d;
+ALD05(AD05): 0540679,8134265&amp;#x0d;
+Cariboo (CR): 0540280, 8315140&amp;#x0d;
+&amp;#x0d;
+&amp;#x0d;
+Samples named by site abreviation, date (MMDD) and time: PT0714 1300 = Ptarmigan July 14th at 1 pm. &amp;#x0d;
+&amp;#x0d;
+Samples were vaccum filtered using a glass filtration apparatus and precombusted 0.7 &amp;amp;#956;m GF/F glass fibre filters.  The filtration apparatus was soaked overnight with 30% hydrogen peroxide, and triple rinsed with deionised water and sample for each use.  The samples were stored cool in the dark (refrigerated) in amber glass EPA vials, and acidified to a pH of 2 upon return to the laboratory. DOC concentrations were measured as non-purgeable organic carbon via high temperature combustion (720&#176;C) with a Shimadzu TOC-VCPH analyser using a high sensitivity platinum catalyst in line with a total nitrogen module (TNM-1 unit).  TDN concentrations were measured as nitrogen monoxide via thermal decomposition</abstract>
+          <purpose>Data was collected in order to determine seasonal and diurnal variations in DOC and TN in stream waters from the watersheds at Cape Bounty.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): ArcticNet. For further information: melissa.lafreniere@queensu.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20120607</begdate>
+              <enddate>20120722</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-109.5</westbc>
+            <eastbc>-109.5</eastbc>
+            <northbc>74.9</northbc>
+            <southbc>74.9</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Canadian High Arctic</themekey>
+            <themekey>Cape Bounty</themekey>
+            <themekey>Dissolved organic carbon (DOC)</themekey>
+            <themekey>Hydrochemistry</themekey>
+            <themekey>Nitrogen</themekey>
+            <themekey>Nutrients</themekey>
+          </theme>
+          <place>
+            <placekt>Cape Bounty, Melville Island, Nunavut</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Queens University</cntorg>
+              <cntper>Melissa Lafreniere</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>Department of Geography, Mackintosh-Corry Hall Rm</address>
+              <city>Kingston</city>
+              <state>ON</state>
+              <postal>K7P 3N6</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(613) 533-6000 x78720</cntvoice>
+            <cntfax>(613) 533-6000 x78720</cntfax>
+            <cntemail>melissa.lafreniere@queensu.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>11589</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20130123</metd>
+        <metrd>20130123</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Melissa Lafreniere</cntper>
+              <cntorg>Queens University</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>Department of Geography, Mackintosh-Corry Hall Rm</address>
+              <city>Kingston</city>
+              <state>ON</state>
+              <postal>K7P 3N6</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(613) 533-6000 x78720</cntvoice>
+            <cntfax>(613) 533-6000 x78720</cntfax>
+            <cntemail>melissa.lafreniere@queensu.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

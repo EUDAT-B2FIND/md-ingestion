@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 3"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48FE-9",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48FE-9"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-48FE-9",
+    "PublicationTimestamp": "2009-11-02T09:36:29Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0023-43CD-0"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU General Public License, version 2",
+        "http://www.gnu.org/licenses/gpl-2.0.html",
+        "PUB"
+    ],
+    "author": [
+        "Raab, Jan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48FE-9;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Mor\u010de;Raab, Jan;tagger;morphology;The MOR\u010cE tagger is a software for morphological disambiguation (part-of-speech tagging) of Czech text. The algorithm is statistical, based on an idea of so-called \"Averaged Perceptron\" published by Michael Collins in 2002.;2009-11-02T09:36:29Z;toolService;http://hdl.handle.net/11858/00-097C-0000-0001-48FE-9;ces;http://hdl.handle.net/11858/00-097C-0000-0023-43CD-0;GNU General Public License, version 2;http://www.gnu.org/licenses/gpl-2.0.html;PUB;application/x-gzip;application/x-gzip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 3;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f3a535df-8033-506c-9b99-23e388ca9e55",
+    "notes": [
+        "The MOR\u010cE tagger is a software for morphological disambiguation (part-of-speech tagging) of Czech text. The algorithm is statistical, based on an idea of so-called \"Averaged Perceptron\" published by Michael Collins in 2002."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-48FE-9"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "tagger"
+        },
+        {
+            "name": "morphology"
+        }
+    ],
+    "title": [
+        "Mor\u010de"
+    ],
+    "url": ""
+}

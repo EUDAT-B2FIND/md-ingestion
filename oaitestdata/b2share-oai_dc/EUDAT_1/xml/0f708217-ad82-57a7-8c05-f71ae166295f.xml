@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/c5dbf769a2aa4fcc84ad3ba511669a6e</identifier>
+    <datestamp>2019-04-30T15:35:17Z</datestamp>
+    <setSpec>e9b9792e-79fb-4b07-b6b4-b9c2bd06d095</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:date>2019-04-30T15:32:57.431779+00:00</dc:date>
+      <dc:description>test 2</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/2a56b2d8-d69f-43be-ad55-8edf39335b2e</dc:identifier>
+      <dc:identifier>10.23728/b2share.c5dbf769a2aa4fcc84ad3ba511669a6e</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/c5dbf769a2aa4fcc84ad3ba511669a6e</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/c5dbf769a2aa4fcc84ad3ba511669a6e</dc:identifier>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:title>Test ec-ecarth 3.3.1</dc:title>
+    </oai_dc:dc>
+  </metadata>
+</record>

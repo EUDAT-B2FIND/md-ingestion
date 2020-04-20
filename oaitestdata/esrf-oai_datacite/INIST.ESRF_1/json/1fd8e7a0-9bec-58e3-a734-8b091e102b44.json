@@ -1,0 +1,65 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15151/ESRF-ES-92162610",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:oai.datacite.org:14561119",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:14561119"
+    ],
+    "PublicationTimestamp": "2021-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2021"
+    ],
+    "Publisher": [
+        "European Synchrotron Radiation Facility"
+    ],
+    "ResourceType": [
+        "Experiment Session"
+    ],
+    "TempCoverageBegin": 63657658799,
+    "TempCoverageEnd": 63657658799,
+    "TemporalCoverage": " point in time : 2018-03-26T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2018-03-26T11:59:59Z",
+    "TemporalCoverage:EndDate": "2018-03-26T11:59:59Z",
+    "author": [
+        "Henri GLEYZOLLE",
+        "Carlotta GIACOBBE",
+        "Jonathan Wright",
+        "Wolfgang LUDWIG",
+        "Marta MAJKUT"
+    ],
+    "fulltext": "oai:oai.datacite.org:14561119;2018-03-26T12:25:44Z;INIST;INIST.ESRF;3;INIST.ESRF;10.15151/ESRF-ES-92162610;Jonathan Wright;Henri GLEYZOLLE;Marta MAJKUT;Carlotta GIACOBBE;Wolfgang LUDWIG;Align, radiation test and texture measurements on test samples;In-house Method and Instrumentation;IH-MI-1382;id11;European Synchrotron Radiation Facility;2018-03-26;2021;eng;Experiment Session",
+    "group": "esrf",
+    "groups": [
+        {
+            "name": "esrf"
+        }
+    ],
+    "name": "1fd8e7a0-9bec-58e3-a734-8b091e102b44",
+    "oai_identifier": [
+        "oai:oai.datacite.org:14561119"
+    ],
+    "oai_set": [
+        "INIST",
+        "INIST.ESRF"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "In-house Method Instrumentation"
+        },
+        {
+            "name": "IH-MI-"
+        },
+        {
+            "name": "id"
+        }
+    ],
+    "title": [
+        "Align, radiation test and texture measurements on test samples"
+    ],
+    "url": ""
+}

@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>0ec6596a6c9e11e2a2aa782bcb074135c53f8f4bd0f4434ba9d574e58f19ce7f</identifier>
+    <datestamp>2018-11-15T16:40:12Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare Apertium Part-of-Speech Tagging Workflow</dc:title>
+      <dc:description>This is a workflow that is designed especially for use in the UIMA-based U-Compare workbench (see separate META-SHARE record).  The workflow is in "ucz" format (specific to U-Compare) and can be imported via the "Import Workflow" item in the "Workflows" menu of the U-Compare interface. It includes the "Apertium Mopho" and "Apertium POS" UIMA components, that are not part of U-Compare's component library. These two components are part the the Apertium Machine Translation system.  
+
+The purpose of the workflow is to perform tokenisation, morphological analysis and part of speech tagging on plain text. 
+
+The provided workflow can currently operate on a subset of the languages that are supported by the Apertium system, namely:  English, Spanish, Calatan, Galician, Portuguese and Basque.  </dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

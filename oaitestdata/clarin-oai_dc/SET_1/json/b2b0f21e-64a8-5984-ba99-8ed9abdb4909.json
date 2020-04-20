@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "522 KB"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1099",
+    "MetadataAccess": [
+        "oai:ota:oucs:1099"
+    ],
+    "PublicationTimestamp": "1340-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1340"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Boccaccio, Giovani,  1313-1375"
+    ],
+    "fulltext": "oai:ota:oucs:1099;2018-03-05T11:21:29Z;http://ota.ox.ac.uk/headers/1099.xml;Il Teseide / compiled by Antonio Zampolli;Teseida;Boccaccio, Giovani,  1313-1375;1340-1341;text_and_corpus_linguistics;Poems -- Italy -- 14th century;ita;Oxford Text Archive, University of Oxford;522 KB;Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b2b0f21e-64a8-5984-ba99-8ed9abdb4909",
+    "oai_identifier": [
+        "oai:ota:oucs:1099"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Italy -- th century"
+        }
+    ],
+    "title": [
+        "Il Teseide / compiled by Antonio Zampolli",
+        "Teseida"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1099.xml"
+}

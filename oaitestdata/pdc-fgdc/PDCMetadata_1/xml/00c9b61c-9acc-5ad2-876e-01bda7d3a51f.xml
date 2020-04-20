@@ -1,0 +1,148 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>12438_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:43Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Bennett, Bruce A.</origin>
+            <origin>McLennen, Donald</origin>
+            <origin>Kutz, Susan</origin>
+            <origin>MacKenzie, Will</origin>
+            <origin>Meidinger, Del</origin>
+            <origin>Sullivan, Josh</origin>
+            <origin>Turner, Derek</origin>
+            <origin>Wagner, Ioan</origin>
+            <pubdate>20150410</pubdate>
+            <title>Ecology and Biodiversity of Cambridge Bay, Victoria Island, Nunavut - Results of Field Studies, Summer 2013</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Bennett, B.A. 2013. Vascular Plant Collections, B.A. Bennett Herbarium (BABY). unpublished.</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12438</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>The dataset identifies vascular plant collections to subspecies or variety. Collection information includes collectors, location of collection, coordinates, collection date, associated species and habitat, herbaria where collections are house, identification and confirmation information, and additional notes.</abstract>
+          <purpose>The dataset focuses on vascular plants collected in support of an Ecology and Biodiversity of Cambridge Bay, Victoria Island, Nunavut project.The field work was confined to southeast Victoria Island, mostly within walking distance of the road network along the southeast island. Most field sessions were brief with the objective of gaining some initial observations. Collections were made for verification and in support of a core vascular plant reference collection for the Canadian High Arctic Research Station (CHARS) at Cambridge Bay, Nunavut.</purpose>
+          <supplinf>Summary: Not applicable Research Program(s): POLAR/CHARS. For further information: brbennett@klondiker.com</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20130712</begdate>
+              <enddate>20130720</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-105</westbc>
+            <eastbc>-104</eastbc>
+            <northbc>69</northbc>
+            <southbc>69</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Abundance</themekey>
+            <themekey>Cambridge Bay</themekey>
+            <themekey>Conservation</themekey>
+            <themekey>Flora</themekey>
+            <themekey>Flowering plants</themekey>
+            <themekey>Taxonomy</themekey>
+            <themekey>Terrestrial ecosystem</themekey>
+            <themekey>Vascular plants</themekey>
+            <themekey>Victoria Island</themekey>
+          </theme>
+          <place>
+            <placekt>Cambridge Bay and vicinity, se Victoria Island, Nunavut, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Polar Knowledge Canada (POLAR)</cntorg>
+              <cntper>Polar Knowledge Canada</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>360 Albert St., Suite 1710</address>
+              <city>Ottawa</city>
+              <state>Ontario</state>
+              <postal>K1R 7X7</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>1-800-622-6232</cntvoice>
+            <cntemail>polardata@polar.gc.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>12438</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20150410</metd>
+        <metrd>20150410</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Knowledge Canada</cntper>
+              <cntorg>Polar Knowledge Canada (POLAR)</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>360 Albert St., Suite 1710</address>
+              <city>Ottawa</city>
+              <state>Ontario</state>
+              <postal>K1R 7X7</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>1-800-622-6232</cntvoice>
+            <cntemail>polardata@polar.gc.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

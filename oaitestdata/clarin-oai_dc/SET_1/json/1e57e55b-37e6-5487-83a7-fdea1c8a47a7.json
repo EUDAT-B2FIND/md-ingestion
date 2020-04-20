@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 81 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0630",
+    "MetadataAccess": [
+        "oai:ota:oucs:0630"
+    ],
+    "PublicationTimestamp": "1590-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1590"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Munday, Anthony, 1553-1633"
+    ],
+    "fulltext": "oai:ota:oucs:0630;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0630.xml;The book of John a Kent & John a Cumber;Munday, Anthony, 1553-1633;1590;text_and_corpus_linguistics;Plays -- England -- 16th century;eng;Oxford Text Archive, University of Oxford;(1 file : ca. 81 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1e57e55b-37e6-5487-83a7-fdea1c8a47a7",
+    "oai_identifier": [
+        "oai:ota:oucs:0630"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Plays -- England -- th century"
+        }
+    ],
+    "title": [
+        "The book of John a Kent & John a Cumber"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0630.xml"
+}

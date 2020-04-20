@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=8537f484718f11e5a2aa782bcb074135c257a23d06734556abb980015264985d",
+    "MetadataAccess": [
+        "8537f484718f11e5a2aa782bcb074135c257a23d06734556abb980015264985d"
+    ],
+    "PublicationTimestamp": "2015-10-13T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "8537f484718f11e5a2aa782bcb074135c257a23d06734556abb980015264985d;2019-02-27T12:09:46Z;corpus;corpus:text;HIMERA Corpus;The HIMERA annotated corpus contains a set of published historical medical documents that have been manually annotated with semantic information that is relevant to the study of medical history and public health. Specifically, annotations correspond to seven different entity types and two different event types (which encode relationships amongst entities), chosen based on extensive discussions with medical historians.;2015-10-13",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d9c49d7d-5f02-5e02-853b-a8a7037ec14c",
+    "notes": [
+        "The HIMERA annotated corpus contains a set of published historical medical documents that have been manually annotated with semantic information that is relevant to the study of medical history and public health. Specifically, annotations correspond to seven different entity types and two different event types (which encode relationships amongst entities), chosen based on extensive discussions with medical historians."
+    ],
+    "oai_identifier": [
+        "8537f484718f11e5a2aa782bcb074135c257a23d06734556abb980015264985d"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "HIMERA Corpus"
+    ]
+}

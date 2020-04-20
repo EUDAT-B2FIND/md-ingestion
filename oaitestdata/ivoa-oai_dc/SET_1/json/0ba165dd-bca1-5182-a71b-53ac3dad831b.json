@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "4.2.5",
+        "Physics",
+        "Astrophysics and Astronomy"
+    ],
+    "Discipline": "Astrophysics And Astronomy",
+    "MetaDataAccess": "http://registry.euro-vo.org/oai.jsp?verb=GetRecord&metadataPrefix=oai_dc&identifier=ivo://cadc.nrc.ca/siap/jcmt",
+    "PublicationTimestamp": "2016-02-05T16:34:28Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "RelatedIdentifier": [
+        "ivo://cadc.nrc.ca/siap/jcmt"
+    ],
+    "author": [
+        "                     Canadian Astronomy Data Centre            "
+    ],
+    "fulltext": "ivo://cadc.nrc.ca/siap/jcmt;2016-02-05T16:34:28Z;CADC/JCMT Image Search;                     Canadian Astronomy Data Centre            ;Image search and retrieval of JCMT images. The collection e currently       contains SCUBA products at 450 and 850um.;2014-02-04T15:57:45;ivo://cadc.nrc.ca/siap/jcmt",
+    "group": "ivoa",
+    "groups": [
+        {
+            "name": "ivoa"
+        }
+    ],
+    "name": "0ba165dd-bca1-5182-a71b-53ac3dad831b",
+    "notes": [
+        "Image search and retrieval of JCMT images. The collection e currently       contains SCUBA products at 450 and 850um."
+    ],
+    "oai_identifier": [
+        "ivo://cadc.nrc.ca/siap/jcmt"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "title": [
+        "Image search and retrieval of JCMT images. The collection e currently       contains SCUBA products at 450 and 850um."
+    ]
+}

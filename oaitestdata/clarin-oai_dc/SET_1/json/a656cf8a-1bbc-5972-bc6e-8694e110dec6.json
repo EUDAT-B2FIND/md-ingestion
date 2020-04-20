@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Society for Danish Language and Literature (DSL)",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 6",
+        "application/pdf",
+        "text/plain",
+        "application/zip"
+    ],
+    "Language": [
+        "Danish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/25",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/25"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/25",
+    "PublicationTimestamp": "2013-01-03T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Society for Danish Language and Literature (DSL)",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "RelatedIdentifier": [
+        "https://pdfs.semanticscholar.org/6891/69de00c63d58bd68229cb0b3469a617f5ab3.pdf"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "DanNet 1.0 License",
+        "https://cst.ku.dk/projekter/dannet/license.txt",
+        "PUB"
+    ],
+    "author": [
+        "S\u00f8rensen, Nicolai Hartvig",
+        "Nimb, Sanni",
+        "Lorentzen, Henrik",
+        "Asmussen, J\u00f8rg",
+        "Trap-Jensen, Lars",
+        "Pedersen, Bolette Sandford"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/25;2018-11-19T13:44:11Z;hdl_20.500.12115_1;hdl_20.500.12115_3;DanNet, Danish Wordnet (v 2.2) - owl format;Pedersen, Bolette Sandford;Nimb, Sanni;S\u00f8rensen, Nicolai Hartvig;Trap-Jensen, Lars;Lorentzen, Henrik;Asmussen, J\u00f8rg;wordnet;DanNet is a Danish lexical semantic wordnet; i.e. a language resource where the semantic relations between words are expressed in a formal language and thereby made usable for IT systems dealing with intelligent information handling. The DanNet database contains at present 65,000 concepts described in form of so-called synsets (sets of synonyms) related to one another by hyperonyms and hypernyms and for about 50 % of the concepts by other types of relations, e.g. used_for. All concepts are furthermore related to an ontological type (e.g. Human, Artifact or Activity). About 5,000 Danish synsets are linked to the equivalent English synsets of Princeton WordNet. Through the multilingual wordnet initiative Wordties (wordties.cst.dk), DanNet is linked to the Finnish, Swedish, Estonian and Polish wordnet.;2013-01-03;lexicalConceptualResource;http://hdl.handle.net/20.500.12115/25;dan;eng;https://pdfs.semanticscholar.org/6891/69de00c63d58bd68229cb0b3469a617f5ab3.pdf;DanNet 1.0 License;https://cst.ku.dk/projekter/dannet/license.txt;PUB;text/plain; charset=utf-8;application/zip;text/plain;text/plain;text/plain;application/pdf;application/pdf;downloadable_files_count: 6;Centre for Language Technology, NorS, University of Copenhagen;Society for Danish Language and Literature (DSL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a656cf8a-1bbc-5972-bc6e-8694e110dec6",
+    "notes": [
+        "DanNet is a Danish lexical semantic wordnet; i.e. a language resource where the semantic relations between words are expressed in a formal language and thereby made usable for IT systems dealing with intelligent information handling. The DanNet database contains at present 65,000 concepts described in form of so-called synsets (sets of synonyms) related to one another by hyperonyms and hypernyms and for about 50 % of the concepts by other types of relations, e.g. used_for. All concepts are furthermore related to an ontological type (e.g. Human, Artifact or Activity). About 5,000 Danish synsets are linked to the equivalent English synsets of Princeton WordNet. Through the multilingual wordnet initiative Wordties (wordties.cst.dk), DanNet is linked to the Finnish, Swedish, Estonian and Polish wordnet."
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/25"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "wordnet"
+        }
+    ],
+    "title": [
+        "DanNet, Danish Wordnet (v 2.2) - owl format"
+    ],
+    "url": ""
+}

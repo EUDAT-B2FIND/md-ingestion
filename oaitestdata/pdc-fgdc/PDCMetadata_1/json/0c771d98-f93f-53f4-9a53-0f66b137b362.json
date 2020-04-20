@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "cbmp_terrestrial@caff.is"
+    ],
+    "Contributor": [
+        "Circumpolar Biodiversity Monitoring Program - CAFF"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "The Lesser Snow Goose (Chen caerulescens caerulescens) colony on Howe Island, near Prudhoe Bay, Alaska, is the only established nesting colony of this species in the United States. A study was initiated to follow the dynamics of this small population in 1980 when it became clear that oil development would proceed near the nesting colony and in nearby brood-rearing areas."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=12378_fgdc",
+    "PublicationTimestamp": "2015-04-30T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Limited"
+    ],
+    "SpatialCoverage": "(70N,148W)",
+    "TempCoverageBegin": 62482795199,
+    "TempCoverageEnd": 63366321599,
+    "TemporalCoverage": " period : ( 1981-01-01T11:59:59Z - 2008-12-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1981-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2008-12-31T11:59:59Z",
+    "author": [
+        "Sanzone, Diane"
+    ],
+    "fulltext": "12378_fgdc;2017-04-09T22:02:42Z;PDCMetadata;Sanzone, Diane;Sanzone, Diane;20150430;Post Nesting Snow Goose Survey on Howe Island, Alaska;Computer file;unknown;Unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12378;Conduct a post-hatching nest census on Howe island: a complete search of the island and examination of nests for fate determination.;The Lesser Snow Goose (Chen caerulescens caerulescens) colony on Howe Island, near Prudhoe Bay, Alaska, is the only established nesting colony of this species in the United States. A study was initiated to follow the dynamics of this small population in 1980 when it became clear that oil development would proceed near the nesting colony and in nearby brood-rearing areas.;Summary: Not Applicable Research Program(s): CBMP/CAFF - Terrestrial. For further information: http://catalog.northslope.org/catalogs/518;19810101;20081231;NULL;Complete;As needed;-147.99;-147.99;70.32;70.32;NULL;Abundance;Alaska;Birds;Distribution;Geese;Population dynamics;Reproductive success;Snow geese;Howe Island, Prudhoe Bay, Alaska, USA;NULL;Limited;NULL;Circumpolar Biodiversity Monitoring Program - CAFF;CBMP Terrestrial - CAFF;NULL;mailing;Borgir, Nordurslod;Akureyri;N/A;600;Iceland;+ 354 462 3350;cbmp_terrestrial@caff.is;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;12378;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20150430;20150430;CBMP Terrestrial - CAFF;Circumpolar Biodiversity Monitoring Program - CAFF;mailing;Borgir, Nordurslod;Akureyri;N/A;600;Iceland;+ 354 462 3350;cbmp_terrestrial@caff.is;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0c771d98-f93f-53f4-9a53-0f66b137b362",
+    "notes": [
+        "Conduct a post-hatching nest census on Howe island: a complete search of the island and examination of nests for fate determination."
+    ],
+    "oai_identifier": [
+        "12378_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-147.99,70.32],[-147.99,70.32],[-147.99,70.32],[-147.99,70.32],[-147.99,70.32]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Abundance"
+        },
+        {
+            "name": "Alaska"
+        },
+        {
+            "name": "Birds"
+        },
+        {
+            "name": "Distribution"
+        },
+        {
+            "name": "Geese"
+        },
+        {
+            "name": "Population dynamics"
+        },
+        {
+            "name": "Reproductive success"
+        },
+        {
+            "name": "Snow geese"
+        }
+    ],
+    "title": [
+        "Post Nesting Snow Goose Survey on Howe Island, Alaska"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12378"
+}

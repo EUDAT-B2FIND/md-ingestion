@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "University of Sheffield"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 7"
+    ],
+    "Language": [
+        "English",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2135",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2135"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2135",
+    "PublicationTimestamp": "2017-04-13T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "University of Sheffield"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/645452",
+        "http://hdl.handle.net/11372/LRT-2805"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "AGREEMENT ON THE USE OF DATA IN QT21",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21",
+        "PUB"
+    ],
+    "author": [
+        "Logacheva, Varvara",
+        "Specia, Lucia"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2135;2018-05-21T15:23:41Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;WMT17 Quality Estimation Shared Test Data;Specia, Lucia;Logacheva, Varvara;machine translation;quality estimation;machine learning;Test data for the WMT17 QE task. Train data can be downloaded from http://hdl.handle.net/11372/LRT-1974\r\n\r\nThis shared task will build on its previous five editions to further examine automatic methods for estimating the quality of machine translation output at run-time, without relying on reference translations. We include word-level, phrase-level and sentence-level estimation. All tasks will make use of a large dataset produced from post-editions by professional translators. The data will be domain-specific (IT and Pharmaceutical domains) and substantially larger than in previous years. In addition to advancing the state of the art at all prediction levels, our goals include:\r\n\r\n- To test the effectiveness of larger (domain-specific and professionally annotated) datasets. We will do so by increasing the size of one of last year's training sets.\r\n- To study the effect of language direction and domain. We will do so by providing two datasets created in similar ways, but for different domains and language directions.\r\n- To investigate the utility of detailed information logged during post-editing. We will do so by providing post-editing time, keystrokes, and actual edits.\r\n\r\nThis year's shared task provides new training and test datasets for all tasks, and allows participants to explore any additional data and resources deemed relevant. A in-house MT system was used to produce translations for all tasks. MT system-dependent information can be made available under request. The data is publicly available but since it has been provided by our industry partners it is subject to specific terms and conditions. However, these have no practical implications on the use of this data for research purposes.;2017-04-13;corpus;http://hdl.handle.net/11372/LRT-2135;eng;deu;info:eu-repo/grantAgreement/EC/H2020/645452;http://hdl.handle.net/11372/LRT-2805;AGREEMENT ON THE USE OF DATA IN QT21;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21;PUB;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 7;University of Sheffield;http://www.statmt.org/wmt17/quality-estimation-task.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8c74aaf0-218b-5eb3-a31e-3af48933619f",
+    "notes": [
+        "Test data for the WMT17 QE task. Train data can be downloaded from http://hdl.handle.net/11372/LRT-1974\r\n\r\nThis shared task will build on its previous five editions to further examine automatic methods for estimating the quality of machine translation output at run-time, without relying on reference translations. We include word-level, phrase-level and sentence-level estimation. All tasks will make use of a large dataset produced from post-editions by professional translators. The data will be domain-specific (IT and Pharmaceutical domains) and substantially larger than in previous years. In addition to advancing the state of the art at all prediction levels, our goals include:\r\n\r\n- To test the effectiveness of larger (domain-specific and professionally annotated) datasets. We will do so by increasing the size of one of last year's training sets.\r\n- To study the effect of language direction and domain. We will do so by providing two datasets created in similar ways, but for different domains and language directions.\r\n- To investigate the utility of detailed information logged during post-editing. We will do so by providing post-editing time, keystrokes, and actual edits.\r\n\r\nThis year's shared task provides new training and test datasets for all tasks, and allows participants to explore any additional data and resources deemed relevant. A in-house MT system was used to produce translations for all tasks. MT system-dependent information can be made available under request. The data is publicly available but since it has been provided by our industry partners it is subject to specific terms and conditions. However, these have no practical implications on the use of this data for research purposes."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2135"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "quality estimation"
+        },
+        {
+            "name": "machine learning"
+        }
+    ],
+    "title": [
+        "WMT17 Quality Estimation Shared Test Data"
+    ],
+    "url": ""
+}

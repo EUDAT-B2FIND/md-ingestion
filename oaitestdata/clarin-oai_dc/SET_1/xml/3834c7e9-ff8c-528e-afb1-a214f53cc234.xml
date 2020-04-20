@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2616</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Artificial Treebank with Ellipsis</dc:title>
+      <dc:creator>Droganova, Kira</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Kanerva, Jenna</dc:creator>
+      <dc:creator>Ginter, Filip</dc:creator>
+      <dc:subject>universal dependencies</dc:subject>
+      <dc:subject>ellipsis</dc:subject>
+      <dc:subject>gapping</dc:subject>
+      <dc:description>Artificially created treebank of elliptical constructions (gapping), in the annotation style of Universal Dependencies. Data taken from UD 2.1 release, and from large web corpora parsed by two parsers. Input data are filtered, sentences are identified where gapping could be applied, then those sentences are transformed, one or more words are omitted, resulting in a sentence with gapping. Details in Droganova et al.: Parse Me if You Can: Artificial Treebanks for Parsing Experiments on Elliptical Constructions, LREC 2018, Miyazaki, Japan.</dc:description>
+      <dc:date>2018-02-15</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2616</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>slk</dc:language>
+      <dc:rights>Licence Universal Dependencies v2.1</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.1</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

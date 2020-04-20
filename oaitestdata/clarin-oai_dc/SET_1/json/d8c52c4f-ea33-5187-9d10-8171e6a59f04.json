@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "1 file, 105 MB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0009",
+    "MetadataAccess": [
+        "oai:ota:oucs:0009"
+    ],
+    "PublicationTimestamp": "1605-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1605"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Unknown"
+    ],
+    "fulltext": "oai:ota:oucs:0009;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0009.xml;The True Chronicle History of King Leir and his three daughters, Gonorill, Ragan and Cordella;Unknown;1605;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;1 file, 105 MB;Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d8c52c4f-ea33-5187-9d10-8171e6a59f04",
+    "oai_identifier": [
+        "oai:ota:oucs:0009"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The True Chronicle History of King Leir and his three daughters, Gonorill, Ragan and Cordella"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0009.xml"
+}

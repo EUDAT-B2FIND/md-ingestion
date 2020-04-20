@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Piotr Elert"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Latin",
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-237950",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-237950"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8D11-6",
+    "PublicationTimestamp": "1633-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1633"
+    ],
+    "Publisher": [
+        "Piotr Elert"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/237950",
+        "oai:jbc.bj.uj.edu.pl:publication:249751"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-237950;2019-03-01T13:20:54Z;Sczesne stad\u0142o Iego Msci p. Samuela z Hvsiatyna Kalinowskiego, czernichowskiego [...] starosty, z Iey Mci\u0105 Pann\u0105 Vrszvl\u0105 Brigitt\u0105 z T\u0119czyna Ossolinsk\u0105 [...] oyczyst\u0105 muz\u0105 ws\u0142awione;starodruki 17\u00a0w.;Kalinowski, Samuel Jerzy ( -1652). [Adr. ded.];Ossoli\u0144ska, Urszula Brygida (16..-16..). [Adr. ded.];Piotr Elert;[1633];starodruk;application/xml;clarind-uds:poldilemma-237950;hdl:11858/00-246C-0000-0023-8D11-6;Biblioteka Jagiello\u0144ska, BJ St. Dr. 3627 III;lat;pol;http://jbc.bj.uj.edu.pl/Content/237950;oai:jbc.bj.uj.edu.pl:publication:249751;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "724f8b5a-e5c0-5e3a-afc1-010db7f3eef6",
+    "notes": [
+        "Kalinowski, Samuel Jerzy ( -1652). [Adr. ded.]",
+        "Ossoli\u0144ska, Urszula Brygida (16..-16..). [Adr. ded.]"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-237950"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Sczesne stad\u0142o Iego Msci p. Samuela z Hvsiatyna Kalinowskiego, czernichowskiego [...] starosty, z Iey Mci\u0105 Pann\u0105 Vrszvl\u0105 Brigitt\u0105 z T\u0119czyna Ossolinsk\u0105 [...] oyczyst\u0105 muz\u0105 ws\u0142awione"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4787",
+    "MetadataAccess": [
+        "oai:ota:oucs:4787"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gentleman, Francis, 1728-1784."
+    ],
+    "fulltext": "oai:ota:oucs:4787;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4787.xml;Royal fables. By Francis Gentleman;Gentleman, Francis, 1728-1784.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "40bac448-8f29-511f-b068-099267c639de",
+    "oai_identifier": [
+        "oai:ota:oucs:4787"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Royal fables. By Francis Gentleman"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4787.xml"
+}

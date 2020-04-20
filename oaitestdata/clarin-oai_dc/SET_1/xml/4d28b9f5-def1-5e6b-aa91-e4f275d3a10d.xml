@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1115</identifier>
+    <datestamp>2017-05-28T08:41:46Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Opinion corpus of Slovene web commentaries KKS 1.001</dc:title>
+      <dc:creator>Kadunc, Klemen</dc:creator>
+      <dc:creator>Robnik-&#352;ikonja, Marko</dc:creator>
+      <dc:subject>web commentaries</dc:subject>
+      <dc:subject>opinion corpus</dc:subject>
+      <dc:subject>sentiment analysis</dc:subject>
+      <dc:description>The corpus of web commentaries with sentiment categorizations was developed as a part of BSc Thesis (Kadunc, 2016) and served for evaluation of the Slovene Sentiment Lexicon KSS &#13;
+http://hdl.handle.net/11356/1097. It contains web commentaries about different topics (business, politics, sport, and other) from 4 Slovene web portals (RtvSlo, 24ur, Finance, Reporter). The corpus is in XML format and available in two forms:&#13;
+- original corpus, containing 4,777 commentaries, 898 positive, 3,291 negative and 588 neutral commentaries.&#13;
+- balanced corpus, a subset of the original corpus, containing 1,740 commentaries, 580 of each type of sentiment (positive, negative and neutral).&#13;
+&#13;
+References:&#13;
+Klemen Kadunc (2016). Dolo&#269;anje sentimenta slovenskim spletnim komentarjem s pomo&#269;jo strojnega u&#269;enja. Diplomsko delo. Univerza v Ljubljani, Fakulteta za ra&#269;unalni&#353;tvo in informatiko (in Slovene). http://eprints.fri.uni-lj.si/3317/&#13;
+Klemen Kadunc, Marko Robnik-&#352;ikonja (2016). Analiza mnenj s pomo&#269;jo strojnega u&#269;enja in slovenskega leksikona sentimenta. Conference on Language Technologies &amp; Digital Humanities, Ljubljana (in Slovene). http://www.sdjt.si/wp/dogodki/konference/jtdh-2016/zbornik/</dc:description>
+      <dc:date>2017-05-28</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1115</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Faculty of Computer and Information Science, University of Ljubljana</dc:publisher>
+      <dc:source>http://lkm.fri.uni-lj.si/rmarko/repozitorij/opinionCorpus</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

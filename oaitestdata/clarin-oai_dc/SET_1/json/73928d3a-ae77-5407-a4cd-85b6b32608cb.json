@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5534",
+    "MetadataAccess": [
+        "oai:ota:oucs:5534"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Governor, of Addenbrooke's Hospital."
+    ],
+    "fulltext": "oai:ota:oucs:5534;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5534.xml;Explanatory remarks on the great utility of hospitals for the sick and poor: By a governor of Addenbrooke's Hospital.;Governor, of Addenbrooke's Hospital.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "73928d3a-ae77-5407-a4cd-85b6b32608cb",
+    "oai_identifier": [
+        "oai:ota:oucs:5534"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Explanatory remarks on the great utility of hospitals for the sick and poor: By a governor of Addenbrooke's Hospital."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5534.xml"
+}

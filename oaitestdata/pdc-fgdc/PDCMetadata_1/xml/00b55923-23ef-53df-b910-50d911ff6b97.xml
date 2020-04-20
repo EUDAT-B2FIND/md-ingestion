@@ -1,0 +1,146 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10527_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:17Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>David Barber</origin>
+            <origin>David Barber</origin>
+            <origin>Lauren Candlish</origin>
+            <origin>Matthew Asplin</origin>
+            <pubdate>20130415</pubdate>
+            <title>Rawinsonde atmospheric profiles in the southern Beaufort Sea during the IPY Circumpolar Flaw Lead (CFL) study 2007-2008</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>D. Barber et al., Unpublished data</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=10527</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Data are transmitted at a rate of one message per second via VHF radio (~400.00MHz).  Each data message reports a value for pressure, temperature and humidity data (raw PTU data).  GPS strings are also transmitted and are used to calculate upper-level wind speed and direction.  All radiosonde data files are exported as a raw time series which will require quality assurance and post-processing.  Furthermore, an ongoing problem with the paired humidity sensors will need to be checked and rectified if necessary.    &amp;#x0d;
+Before launch, the radiosonde's temperature, pressure and humidity sensors are calibrated using the Vaisala ground station calibration unit.  Surface meteorological observations are also noted and recorded for each launch.  Starting meteorological conditions are input into the sounding including: sea level pressure, air temperature, relative humidity, and wind speed and direction.  If a large closed low pressure system is affecting the region, the sampling interval is increased to 6-hourly, otherwise launches are typically limited to one per day, or less.</abstract>
+          <purpose>Balloon launches carrying the rawinsonde instrumentation were made at least once per day to provide continuous physical sampling of the troposphere.  Balloon launches were also used to profile low-pressure systems, cyclones, and periods of significant warm or cold-air advection aloft.  Radiosonde data provides a high-frequency sample of atmospheric temperature, humidity, wind speed and direction, and geopotential height.  These data are also used to validate the performance of our ship-based MicroWave atmospheric Radiometer Profiler (MWRP).</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): IPY. For further information: dbarber@cc.umanitoba.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20071201</begdate>
+              <enddate>20080808</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-135</westbc>
+            <eastbc>-120</eastbc>
+            <northbc>74</northbc>
+            <southbc>70</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Atmosphere</themekey>
+            <themekey>Beaufort Sea</themekey>
+            <themekey>Humidity</themekey>
+            <themekey>Pressure</themekey>
+            <themekey>Radio telemetry</themekey>
+            <themekey>Temperature</themekey>
+            <themekey>Weather</themekey>
+            <themekey>Wind speed</themekey>
+          </theme>
+          <place>
+            <placekt>Southern Beaufort Sea, Canadian Arctic</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>University of Manitoba</cntorg>
+              <cntper>David  Barber</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>476 Wallace Building, University of Manitoba</address>
+              <city>Winnipeg</city>
+              <state>MB</state>
+              <postal>R3T2N2</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>204-474-6981</cntvoice>
+            <cntfax>204-272-1532</cntfax>
+            <cntemail>dbarber@cc.umanitoba.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>10527</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20130415</metd>
+        <metrd>20130415</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>David  Barber</cntper>
+              <cntorg>University of Manitoba</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>476 Wallace Building, University of Manitoba</address>
+              <city>Winnipeg</city>
+              <state>MB</state>
+              <postal>R3T2N2</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>204-474-6981</cntvoice>
+            <cntfax>204-272-1532</cntfax>
+            <cntemail>dbarber@cc.umanitoba.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

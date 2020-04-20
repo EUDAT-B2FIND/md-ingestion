@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Triggs, Jeffery"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 4.06 MB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2097",
+    "MetadataAccess": [
+        "oai:ota:oucs:2097"
+    ],
+    "PublicationYear": [
+        "69-120"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Biographies"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Plutarch"
+    ],
+    "fulltext": "oai:ota:oucs:2097;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2097.xml;Lives. English;The lives of the noble Grecians and Romans / by several hands;Plutarch;69-120;text_and_corpus_linguistics;Biographies;eng;Oxford Text Archive, University of Oxford;Triggs, Jeffery;text/sgml;(1 file : ca. 4.06 MB);Text;Biographies;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d82fb72b-efb0-57f8-97c9-e0860fabd0e9",
+    "oai_identifier": [
+        "oai:ota:oucs:2097"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Biographies"
+        }
+    ],
+    "title": [
+        "Lives. English",
+        "The lives of the noble Grecians and Romans / by several hands"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2097.xml"
+}

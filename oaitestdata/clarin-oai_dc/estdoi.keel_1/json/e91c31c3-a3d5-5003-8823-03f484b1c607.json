@@ -1,0 +1,51 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-0015FL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:15015401",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:15015401"
+    ],
+    "PublicationTimestamp": "2018-05-10T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Laur, Sven"
+    ],
+    "fulltext": "oai:oai.datacite.org:15015401;2018-10-22T22:31:43Z;ESTDOI;ESTDOI.KEEL;EstNLTK teek Pythoni jaoks (ver.1.4);EstNLTK library for Python (ver.1.4);Laur, Sven;Center of Estonian Language Resources;2018;Issued: 2018-05-04;Updated: 2018-05-10;doi:10.15155/1-00-0000-0000-0000-0015FL;Abstract;EstNLTK provides common natural language processing functionality such as paragraph, sentence and word tokenization, morphological analysis, named entity recognition, etc. for the Estonian language.",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e91c31c3-a3d5-5003-8823-03f484b1c607",
+    "notes": [
+        "Abstract",
+        "EstNLTK provides common natural language processing functionality such as paragraph, sentence and word tokenization, morphological analysis, named entity recognition, etc. for the Estonian language."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:15015401"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "EstNLTK teek Pythoni jaoks (ver.1.4)",
+        "EstNLTK library for Python (ver.1.4)"
+    ],
+    "url": ""
+}

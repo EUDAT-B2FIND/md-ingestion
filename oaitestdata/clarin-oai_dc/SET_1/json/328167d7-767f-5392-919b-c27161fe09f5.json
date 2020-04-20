@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Jan Koco\u0144"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/zip",
+        "downloadable_files_count: 3",
+        "application/octet-stream"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/453",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/453"
+    ],
+    "PID": "http://hdl.handle.net/11321/453",
+    "PublicationTimestamp": "2018-01-15T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Jan Koco\u0144"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Koco\u0144, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/453;2018-01-15T17:25:00Z;hdl_11321_3;hdl_11321_4;CorpoGrabber-Desktop: The Toolchain to Automatic Acquiring and Extraction of the Website Content;Koco\u0144, Jan;CorpoGrabber;Desktop version of CorpoGrabber CLI;2018-01-15;toolService;http://hdl.handle.net/11321/453;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/zip;application/octet-stream;downloadable_files_count: 3;Jan Koco\u0144",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "328167d7-767f-5392-919b-c27161fe09f5",
+    "notes": [
+        "Desktop version of CorpoGrabber CLI"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/453"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "CorpoGrabber"
+        }
+    ],
+    "title": [
+        "CorpoGrabber-Desktop: The Toolchain to Automatic Acquiring and Extraction of the Website Content"
+    ],
+    "url": ""
+}

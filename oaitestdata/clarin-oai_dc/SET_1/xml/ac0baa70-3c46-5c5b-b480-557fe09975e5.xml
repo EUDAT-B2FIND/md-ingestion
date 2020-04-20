@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/10</identifier>
+    <datestamp>2016-01-21T14:24:10Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Corpus2</dc:title>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:creator>&#346;niatowski, Tomasz</dc:creator>
+      <dc:description>Biblioteka programistyczna w j&#281;zyku C++ z opakowaniami pythonowymi. Czytanie i pisanie korpus&#243;w, struktury danych. Manipulacja tagsetami i tagami. U&#322;atwia szybkie pisanie tager&#243;w i innych aplikacji NLP.</dc:description>
+      <dc:date>2012-02-21</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/10</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://nlp.pwr.wroc.pl/redmine/projects/corpus2/wiki</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

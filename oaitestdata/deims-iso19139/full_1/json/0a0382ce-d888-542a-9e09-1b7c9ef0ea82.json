@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "jose.antonio.fernandez.bouzas@xunta.es"
+    ],
+    "Contributor": "DEIMS-SDR | Site and Dataset registry deims.org",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "Research site"
+    ],
+    "Language": [
+        "English",
+        "English"
+    ],
+    "MetaDataAccess": "https://deims.org/pycsw/catalogue/csw?verb=GetRecord&metadataPrefix=iso19139&identifier=0a0382ce-d888-542a-9e09-1b7c9ef0ea82",
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "SpatialCoverage": "(42N-43N,9 W-9 W)",
+    "author": [
+        "Jose Antonio Fernandez Bouzas"
+    ],
+    "fulltext": "4240428e-0c36-47b7-bf49-666b99a4a183;English;utf8;dataset;Research site;Jose Antonio Fernandez Bouzas;LTER Europe;jose.antonio.fernandez.bouzas@xunta.es;Jose Antonio Fernandez Bouzas;LTER Europe;jose.antonio.fernandez.bouzas@xunta.es;2018-09-24;http://www.opengis.net/def/crs/EPSG/0/4326;Illas Atlanticas / Pontevedra (ES-SNE);https://deims.org/site/4240428e-0c36-47b7-bf49-666b99a4a183;The Atlantic Islands of Galicia were declared a national park in 2002 in order to protect one of the best examples of Atlantic Ocean-associated ecosystems.Although on land there are highly valuable and exceptional ecosystems relating to cliffs, dunes and scrub, it is the marine setting that hosts the greatest Situated off the R\u00edas Baixas (Lower Estuaries), the archipelagos CIES, ONS, SALVORA AND CORTEGADA, create a natural barrier to the ocean, thereby accentuating the r\u00edas\u2019 estuary influence. The terrain features dune systems, cliffs with gorse and heather scrub, while the marine environment hosts a rocky seabed with large communities of brown algae (Sacorhiza polyschides and Laminaria spp), which are home to a great variety of living things. The marine currents deposit sand in the most sheltered parts, and together with the important M\u00e4erl beds consisting of the remains of calcareous algae, create a shifting substrate to which living things must adapt. Besides being the only national park in the autonomous region, the Atlantic Islands of Galicia National Park has earned other forms of recognition. The C\u00edes Islands were declared a natural park in 1980. The other protection categories are as follows: \u2013 Special Protection Area for Birds (SPA). Directive 79/409/CEE of the Council of 2 April 1979 relating to the conservation of wild birds. C\u00edes Islands (1988) Ons Islands (2001) \u2013 Site of Community Importance (SCI). Council Directive 92/43/EEC of 21 May 1992 on the conservation of natural habitats and of wild fauna and flora. C\u00edes Islands (2004) Ons Island (within the Ons-O Grove Complex) (2004) S\u00e1lvora Island (within the Corrubedo Wetland Complex) (2004) \u2013 Special Protection Areas for Natural Values (Decree 72/2004 of 2 April). C\u00edes Islands Ons Island (within the Ons-O Grove Complex) S\u00e1lvora Island (within the Corrubedo Wetland Complex);The original metadata record was created using DEIMS-SDR, the Dynamic Ecological Information Management System - Site and dataset registry;Jose Antonio Fernandez Bouzas;LTER Europe;jose.antonio.fernandez.bouzas@xunta.es;Jose Antonio Fernandez Bouzas;LTER Europe;jose.antonio.fernandez.bouzas@xunta.es;site;emf2iso_pointer_record;atmospheric parameter;atmospheric pressure;precipitation intensity;water parameter;water level;continuousDataCollection;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2008-06-01;English;environment;-9.07;-8.75;42.14;42.63;2002-01-01;https://deims.org/4240428e-0c36-47b7-bf49-666b99a4a183;http://www.iatlanticas.es/;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='4240428e-0c36-47b7-bf49-666b99a4a183'&outputFormat=SHAPE-ZIP;WFS GetFeature request for downloading the data set in SHP format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='4240428e-0c36-47b7-bf49-666b99a4a183'&outputFormat=application%2Fgml%2Bxml%3B+version%3D3.2;WFS GetFeature request for downloading the data set in GML 3.2 format;https://data.lter-europe.net/geoserver/deims/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=deims:lter_all_formal&CQL_FILTER=uuid='4240428e-0c36-47b7-bf49-666b99a4a183'&outputFormat=application%2Fjson;WFS GetFeature request for downloading the data set in GeoJSON format;https://data.lter-europe.net/pycsw?service=CSW&version=3.0.0&request=GetRecordById&ElementSetName=full&outputSchema=http://www.isotc211.org/2005/gmd&outputFormat=application/json&id=cfed0679-0894-41df-86ca-82e2847d6ef3;HTTP;Catalogue Service for the Web (CSW);https://deims.org/node/227;Spain (LTER-Spain);COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;publication;This data set is conformant with the INSPIRE Implementing Rules for the interoperability of spatial data sets and services;false;Dataset has been created by data transformation from the original record collected by the site managers using DEIMS site metadata editing form.",
+    "group": "deims",
+    "groups": [
+        {
+            "name": "deims"
+        }
+    ],
+    "name": "0a0382ce-d888-542a-9e09-1b7c9ef0ea82",
+    "notes": [
+        "The Atlantic Islands of Galicia were declared a national park in 2002 in order to protect one of the best examples of Atlantic Ocean-associated ecosystems.Although on land there are highly valuable and exceptional ecosystems relating to cliffs, dunes and scrub, it is the marine setting that hosts the greatest Situated off the R\u00edas Baixas (Lower Estuaries), the archipelagos CIES, ONS, SALVORA AND CORTEGADA, create a natural barrier to the ocean, thereby accentuating the r\u00edas\u2019 estuary influence. The terrain features dune systems, cliffs with gorse and heather scrub, while the marine environment hosts a rocky seabed with large communities of brown algae (Sacorhiza polyschides and Laminaria spp), which are home to a great variety of living things. The marine currents deposit sand in the most sheltered parts, and together with the important M\u00e4erl beds consisting of the remains of calcareous algae, create a shifting substrate to which living things must adapt. Besides being the only national park in the autonomous region, the Atlantic Islands of Galicia National Park has earned other forms of recognition. The C\u00edes Islands were declared a natural park in 1980. The other protection categories are as follows: \u2013 Special Protection Area for Birds (SPA). Directive 79/409/CEE of the Council of 2 April 1979 relating to the conservation of wild birds. C\u00edes Islands (1988) Ons Islands (2001) \u2013 Site of Community Importance (SCI). Council Directive 92/43/EEC of 21 May 1992 on the conservation of natural habitats and of wild fauna and flora. C\u00edes Islands (2004) Ons Island (within the Ons-O Grove Complex) (2004) S\u00e1lvora Island (within the Corrubedo Wetland Complex) (2004) \u2013 Special Protection Areas for Natural Values (Decree 72/2004 of 2 April). C\u00edes Islands Ons Island (within the Ons-O Grove Complex) S\u00e1lvora Island (within the Corrubedo Wetland Complex)"
+    ],
+    "oai_identifier": [
+        "0a0382ce-d888-542a-9e09-1b7c9ef0ea82"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-9.07,42.14],[-9.07,42.63],[-8.75,42.63],[-8.75,42.14],[-9.07,42.14]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "site"
+        },
+        {
+            "name": "emfiso_pointer_record"
+        },
+        {
+            "name": "atmospheric parameter"
+        },
+        {
+            "name": "atmospheric pressure"
+        },
+        {
+            "name": "precipitation intensity"
+        },
+        {
+            "name": "water parameter"
+        },
+        {
+            "name": "water level"
+        },
+        {
+            "name": "Environmental monitoring facilities"
+        }
+    ],
+    "title": [
+        "Illas Atlanticas / Pontevedra (ES-SNE)"
+    ],
+    "url": "https://deims.org/node/227"
+}

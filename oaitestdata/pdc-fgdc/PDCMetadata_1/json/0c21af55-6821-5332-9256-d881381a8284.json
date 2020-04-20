@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "melissa.lafreniere@queensu.ca"
+    ],
+    "Contributor": [
+        "Queens University"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Data was collected in order to determine seasonal and diurnal variations in DOC and TN in stream waters from the watersheds at Cape Bounty."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=11589_fgdc",
+    "PublicationTimestamp": "2013-01-23T11:59:59Z",
+    "PublicationYear": [
+        "2013"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Limited"
+    ],
+    "SpatialCoverage": "(75N,110W)",
+    "TempCoverageBegin": 63474663599,
+    "TempCoverageEnd": 63478551599,
+    "TemporalCoverage": " period : ( 2012-06-07T11:59:59Z - 2012-07-22T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2012-06-07T11:59:59Z",
+    "TemporalCoverage:EndDate": "2012-07-22T11:59:59Z",
+    "author": [
+        "Melissa Lafreniere"
+    ],
+    "fulltext": "11589_fgdc;2017-04-09T22:02:26Z;PDCMetadata;Melissa Lafreniere;Melissa Lafreniere;20130123;2012 River Dissolved organic carbon (DOC) and total dissolved nitrogen (TDN) concentrations, Cape Bounty;Computer file;unknown;Lafreni\u00e8re, MJ Unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11589;Sites NAD 27 UTM 12x:&#x0d;\nWest River (WR): 0540627, 8313002&#x0d;\nEast River (WR): 0543077, 8312306&#x0d;\nPtarmigan (PT): 0540596, 8314704&#x0d;\nGoose (G):\t0540900, 8314197&#x0d;\nALD05(AD05): 0540679,8134265&#x0d;\nCariboo (CR): 0540280, 8315140&#x0d;\n&#x0d;\n&#x0d;\nSamples named by site abreviation, date (MMDD) and time: PT0714 1300 = Ptarmigan July 14th at 1 pm. &#x0d;\n&#x0d;\nSamples were vaccum filtered using a glass filtration apparatus and precombusted 0.7 &amp;#956;m GF/F glass fibre filters.  The filtration apparatus was soaked overnight with 30% hydrogen peroxide, and triple rinsed with deionised water and sample for each use.  The samples were stored cool in the dark (refrigerated) in amber glass EPA vials, and acidified to a pH of 2 upon return to the laboratory. DOC concentrations were measured as non-purgeable organic carbon via high temperature combustion (720\u00b0C) with a Shimadzu TOC-VCPH analyser using a high sensitivity platinum catalyst in line with a total nitrogen module (TNM-1 unit).  TDN concentrations were measured as nitrogen monoxide via thermal decomposition;Data was collected in order to determine seasonal and diurnal variations in DOC and TN in stream waters from the watersheds at Cape Bounty.;Summary: Not Applicable Research Program(s): ArcticNet. For further information: melissa.lafreniere@queensu.ca;20120607;20120722;NULL;In work;As needed;-109.5;-109.5;74.9;74.9;NULL;Canadian High Arctic;Cape Bounty;Dissolved organic carbon (DOC);Hydrochemistry;Nitrogen;Nutrients;Cape Bounty, Melville Island, Nunavut;NULL;Limited;NULL;Queens University;Melissa Lafreniere;NULL;mailing;Department of Geography, Mackintosh-Corry Hall Rm;Kingston;ON;K7P 3N6;Canada;(613) 533-6000 x78720;(613) 533-6000 x78720;melissa.lafreniere@queensu.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;11589;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20130123;20130123;Melissa Lafreniere;Queens University;mailing;Department of Geography, Mackintosh-Corry Hall Rm;Kingston;ON;K7P 3N6;Canada;(613) 533-6000 x78720;(613) 533-6000 x78720;melissa.lafreniere@queensu.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0c21af55-6821-5332-9256-d881381a8284",
+    "notes": [
+        "Sites NAD 27 UTM 12x:&#x0d;\nWest River (WR): 0540627, 8313002&#x0d;\nEast River (WR): 0543077, 8312306&#x0d;\nPtarmigan (PT): 0540596, 8314704&#x0d;\nGoose (G):\t0540900, 8314197&#x0d;\nALD05(AD05): 0540679,8134265&#x0d;\nCariboo (CR): 0540280, 8315140&#x0d;\n&#x0d;\n&#x0d;\nSamples named by site abreviation, date (MMDD) and time: PT0714 1300 = Ptarmigan July 14th at 1 pm. &#x0d;\n&#x0d;\nSamples were vaccum filtered using a glass filtration apparatus and precombusted 0.7 &amp;#956;m GF/F glass fibre filters.  The filtration apparatus was soaked overnight with 30% hydrogen peroxide, and triple rinsed with deionised water and sample for each use.  The samples were stored cool in the dark (refrigerated) in amber glass EPA vials, and acidified to a pH of 2 upon return to the laboratory. DOC concentrations were measured as non-purgeable organic carbon via high temperature combustion (720\u00b0C) with a Shimadzu TOC-VCPH analyser using a high sensitivity platinum catalyst in line with a total nitrogen module (TNM-1 unit).  TDN concentrations were measured as nitrogen monoxide via thermal decomposition"
+    ],
+    "oai_identifier": [
+        "11589_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-109.5,74.9],[-109.5,74.9],[-109.5,74.9],[-109.5,74.9],[-109.5,74.9]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Canadian High Arctic"
+        },
+        {
+            "name": "Cape Bounty"
+        },
+        {
+            "name": "Dissolved organic carbon DOC"
+        },
+        {
+            "name": "Hydrochemistry"
+        },
+        {
+            "name": "Nitrogen"
+        },
+        {
+            "name": "Nutrients"
+        }
+    ],
+    "title": [
+        "2012 River Dissolved organic carbon (DOC) and total dissolved nitrogen (TDN) concentrations, Cape Bounty"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11589"
+}

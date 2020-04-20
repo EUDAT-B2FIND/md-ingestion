@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1937</identifier>
+    <datestamp>2017-02-06T11:04:55Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>NAFIS Arabic Stemming Gold Standard Corpus</dc:title>
+      <dc:creator>Namly, Driss</dc:creator>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>stemming;</dc:subject>
+      <dc:subject>Gold Standard Corpus</dc:subject>
+      <dc:description>Normalized Arabic Fragments for Inestimable Stemming (NAFIS) is an Arabic stemming gold standard corpus composed by a collection of texts, selected to be representative of Arabic stemming tasks and manually annotated.</dc:description>
+      <dc:date>2016</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1937</dc:identifier>
+      <dc:language>ara</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/xml</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Ibtikarat team</dc:publisher>
+      <dc:source>http://arabic.emi.ac.ma/ibtikarat/?q=Resources</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,96 @@
+{
+    "Contact": [
+        "nigel.roulet@mcgill.ca"
+    ],
+    "Contributor": [
+        "Geography, McGill University"
+    ],
+    "DiscHierarchy": [
+        "4.4.7",
+        "Geosciences",
+        "Environmental Research"
+    ],
+    "Discipline": "Environmental Research",
+    "Language": [
+        "English"
+    ],
+    "MapperVersion": [
+        "Ample evidence shows that dissolved organic carbon (DOC) would be the major or even the only direct contributor to the respired carbon fluxes in temperate forest, peatland, even permafrost peatland. And DOC pool is composed by different DOC fractions with a continuum of biodegradability ranging from labile fractions to recalcitrant fractions. The goal of this research was to provide the litter continuous-recalcitrance (decomposition status) DOC production/mineralization functions for each litter type in permafrost peatland for my model to simulate DOC production /mineralization along peat profile. This study will also provide a constant anaerobic moisture modifier for DOC production/mineralization, test and modify the unsaturated moisture modifier that is used in the Holocene Peat Model (HPM), and modify decomposition temperature dependency that is used in the McGill Wetland Model."
+    ],
+    "MetaDataAccess": "http://www.polardata.ca/oai/provider?verb=GetRecord&metadataPrefix=fgdc&identifier=11687_fgdc",
+    "PublicationTimestamp": "2015-03-17T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Canadian Cryospheric Information Network"
+    ],
+    "Rights": [
+        "Public"
+    ],
+    "SpatialCoverage": "(55N-55N,77W-77W)",
+    "TempCoverageBegin": 63449866799,
+    "TempCoverageEnd": 315537854399,
+    "TemporalCoverage": " period : ( 2011-08-25T11:59:59Z - 9999-12-31T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "2011-08-25T11:59:59Z",
+    "TemporalCoverage:EndDate": "9999-12-31T11:59:59Z",
+    "author": [
+        "Roulet, Nigel",
+        "Wang, Zheng"
+    ],
+    "fulltext": "11687_fgdc;2017-04-09T22:02:27Z;PDCMetadata;Roulet, Nigel;Wang, Zheng;20150317;Decomposition of peat and plant material from a thawing palsa;Computer file;unknown;Zheng Wang and Nigel Roulet, Department of Geography, McGill University, Montreal, QC Canada, Unpublished data;unavailable;https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11687;Vegetation samples of shrub, sedges and moss were collected from permafrost peatland in the eastern shore of Hudson Bay, near the hamlet of Kuujjuarapik-Whapmagoostui in subarctic Quebec in summer 2012. Each litter type was incubated under two moist conditions (Anoxic and oxic treatments), and adjusted to 2 different temperatures (~4\u00baC and ~22\u00baC). I have set several time interval (caused different mass remaining, i.e. different decomposition degrees) to repeat this measurement three to five times along the incubation for each peatland litter type. At each time interval, the samples were drained, rewashed with distilled water, and the water was replaced in order to remove the DOC produced by previous degradation status organic matter. DOC concentration plus CO2 and CH4 concentrations at each time interval were measured, as well as DOC biodegradability (determined by its spectroscopic properties by UV radiation absorbance). The DOC, CH4 and CO2 concentration were expressed as g-1 oven-dry plant tissue.;Ample evidence shows that dissolved organic carbon (DOC) would be the major or even the only direct contributor to the respired carbon fluxes in temperate forest, peatland, even permafrost peatland. And DOC pool is composed by different DOC fractions with a continuum of biodegradability ranging from labile fractions to recalcitrant fractions. The goal of this research was to provide the litter continuous-recalcitrance (decomposition status) DOC production/mineralization functions for each litter type in permafrost peatland for my model to simulate DOC production /mineralization along peat profile. This study will also provide a constant anaerobic moisture modifier for DOC production/mineralization, test and modify the unsaturated moisture modifier that is used in the Holocene Peat Model (HPM), and modify decomposition temperature dependency that is used in the McGill Wetland Model.;Summary: Not Applicable Research Program(s): ADAPT. For further information: nigel.roulet@mcgill.ca;20110825;99991231;NULL;In work;Annually;-77.31;-77.3;55.21;55.2;NULL;Active layer;Biogeochemistry;Biological productivity;Carbon fluxes;Dissolved organic carbon (DOC);Flora;Kuujjuaraapik;Palsa;Peat;Plants;Kuujjuarapik-Whapmagoostui, Quebec, Canada;NULL;Public;NULL;Geography, McGill University;Nigel Roulet;NULL;mailing;805 Sherbrooke St. O.;Montereal;QC;H3A 0B9;Canada;1-514-398-4945;nigel.roulet@mcgill.ca;NULL;Polar Data Catalogue;Canadian Cryospheric Information Network;Director;mailing;200 University Avenue West, University of Waterloo;Waterloo;Ontario;N2L 3G1;Canada;(519) 888-4567 x32689;(519) 888-6768;pdc@uwaterloo.ca;11687;Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data;20150317;20150317;Nigel Roulet;Geography, McGill University;mailing;805 Sherbrooke St. O.;Montereal;QC;H3A 0B9;Canada;1-514-398-4945;nigel.roulet@mcgill.ca;FGDC Content Standards for Digital Geospatial Metadata;FGDC-STD-001-1998",
+    "group": "pdc",
+    "groups": [
+        {
+            "name": "pdc"
+        }
+    ],
+    "name": "0c968163-083a-5d05-a581-bc24a13d3d86",
+    "notes": [
+        "Vegetation samples of shrub, sedges and moss were collected from permafrost peatland in the eastern shore of Hudson Bay, near the hamlet of Kuujjuarapik-Whapmagoostui in subarctic Quebec in summer 2012. Each litter type was incubated under two moist conditions (Anoxic and oxic treatments), and adjusted to 2 different temperatures (~4\u00baC and ~22\u00baC). I have set several time interval (caused different mass remaining, i.e. different decomposition degrees) to repeat this measurement three to five times along the incubation for each peatland litter type. At each time interval, the samples were drained, rewashed with distilled water, and the water was replaced in order to remove the DOC produced by previous degradation status organic matter. DOC concentration plus CO2 and CH4 concentrations at each time interval were measured, as well as DOC biodegradability (determined by its spectroscopic properties by UV radiation absorbance). The DOC, CH4 and CO2 concentration were expressed as g-1 oven-dry plant tissue."
+    ],
+    "oai_identifier": [
+        "11687_fgdc"
+    ],
+    "oai_set": [
+        "PDCMetadata"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-77.31,55.2],[-77.31,55.21],[-77.3,55.21],[-77.3,55.2],[-77.31,55.2]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Active layer"
+        },
+        {
+            "name": "Biogeochemistry"
+        },
+        {
+            "name": "Biological productivity"
+        },
+        {
+            "name": "Carbon fluxes"
+        },
+        {
+            "name": "Dissolved organic carbon DOC"
+        },
+        {
+            "name": "Flora"
+        },
+        {
+            "name": "Kuujjuaraapik"
+        },
+        {
+            "name": "Palsa"
+        },
+        {
+            "name": "Peat"
+        },
+        {
+            "name": "Plants"
+        }
+    ],
+    "title": [
+        "Decomposition of peat and plant material from a thawing palsa"
+    ],
+    "url": "https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11687"
+}

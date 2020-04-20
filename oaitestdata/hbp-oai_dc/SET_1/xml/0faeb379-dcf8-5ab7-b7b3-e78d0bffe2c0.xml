@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.25493_A4QS-825</identifier>
+    <datestamp>2019-12-10T12:41:51Z</datestamp>
+  </header>
+  <metadata>
+    <metadata xmlns="http://example.org/myapp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+      <dc:identifier>https://doi.org/10.25493/A4QS-825</dc:identifier>
+      <dc:title>Probability map of bundle rh_IP-MT_0 (atlas of superficial white matter fibre bundles, version 2018)</dc:title>
+      <dc:created>2019-05-23T14:34:48.295Z</dc:created>
+      <dc:description>This data contains the probability map of a short fibre bundle connecting the right hemisphere Inferior Parietal and Middle Temporal regions of the Desikan-Killiany atlas, in the MNI ICBM152 reference brain. This bundle was identified using a hybrid approach, incorporating anatomical information (from cortical regions of interest) and fibre shape (fibre clustering), from the tractography datasets of 78 subjects in the Neurospin&#8217;s ARCHI database. The map shows the probability of finding a fibre belonging to the bundle in each voxel of the reference brain. The maximum probability corresponds to the voxels with the highest number of putative fibres going through.</dc:description>
+      <dc:subject>neuroscience</dc:subject>
+      <dc:subject>brain mapping</dc:subject>
+      <dc:subject>imaging</dc:subject>
+      <dc:language>english</dc:language>
+      <dc:type>dataset</dc:type>
+      <dc:publisher>The Human Brain Project</dc:publisher>
+      <dc:contributor>Guevara, Miguel</dc:contributor>
+      <dc:contributor>Rom&#225;n, Claudio</dc:contributor>
+      <dc:contributor>Houenou, Josselin</dc:contributor>
+      <dc:contributor>Duclap, Delphine</dc:contributor>
+      <dc:contributor>Poupon, Cyril</dc:contributor>
+      <dc:contributor>Mangin, Jean-Fran&#231;ois</dc:contributor>
+      <dc:contributor>Guevara, Pamela</dc:contributor>
+      <dc:creator>Mangin, Jean-Fran&#231;ois</dc:creator>
+      <dc:format>NIFTI</dc:format>
+      <dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</dc:rights>
+      <dc:relation>https://doi.org/10.1016/j.neuroimage.2016.11.066</dc:relation>
+    </metadata>
+  </metadata>
+</record>

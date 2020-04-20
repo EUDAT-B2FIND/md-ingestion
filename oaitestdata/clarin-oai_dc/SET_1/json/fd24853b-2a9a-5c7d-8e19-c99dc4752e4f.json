@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3019",
+    "MetadataAccess": [
+        "oai:ota:oucs:3019"
+    ],
+    "PublicationTimestamp": "1903-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1903"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Yeats, W.B. (William Butler), 1865-1939"
+    ],
+    "fulltext": "oai:ota:oucs:3019;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3019.xml;The Collected Poems;Yeats, W.B. (William Butler), 1865-1939;1903;text_and_corpus_linguistics;Irish poetry -- 20th century;eng;Oxford Text Archive, University of Oxford;Text;Poems;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "fd24853b-2a9a-5c7d-8e19-c99dc4752e4f",
+    "oai_identifier": [
+        "oai:ota:oucs:3019"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Irish poetry -- th century"
+        }
+    ],
+    "title": [
+        "The Collected Poems"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3019.xml"
+}

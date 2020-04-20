@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4653",
+    "MetadataAccess": [
+        "oai:ota:oucs:4653"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Gibbon, Edward, 1737-1794."
+    ],
+    "fulltext": "oai:ota:oucs:4653;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4653.xml;M\u00c3\u00a9moire justificatif pour servir de r\u00c3\u00a9ponse \u00c3\u00a0 l'expos\u00c3\u00a9, &c de la cour de France;Gibbon, Edward, 1737-1794.;text_and_corpus_linguistics;fra;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0a439ab3-1d94-5856-b51a-e7f1b6e7a33f",
+    "oai_identifier": [
+        "oai:ota:oucs:4653"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "M\u00c3\u00a9moire justificatif pour servir de r\u00c3\u00a9ponse \u00c3\u00a0 l'expos\u00c3\u00a9, &c de la cour de France"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4653.xml"
+}

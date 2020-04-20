@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/7",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/7"
+    ],
+    "PID": "http://hdl.handle.net/11321/7",
+    "PublicationTimestamp": "2012-04-18T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Piasecki, Maciej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/7;2016-01-19T14:04:26Z;hdl_11321_3;hdl_11321_4;Chunker WS;Piasecki, Maciej;Chunker-WS provides shallow parsing of Polish. The parser may be run against plain text (input format: text, then it runs WCRFT for tagging) or already tagged input (other input formats). Service output will contain tokenisation and tagging, but also boundaries of syntactic phrases as well as phrases' syntactic heads. The service is based on IOBBER, a chunker for Polish. The configuration used here operates on chunk definitions from the KPWr corpus.;2012-04-18;toolService;http://hdl.handle.net/11321/7;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 1;Wroc\u0142aw University of Technology;http://clarin-pl.eu/synat/ws/chunker/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "794bea20-4e32-55d7-ac7f-47ca7b210201",
+    "notes": [
+        "Chunker-WS provides shallow parsing of Polish. The parser may be run against plain text (input format: text, then it runs WCRFT for tagging) or already tagged input (other input formats). Service output will contain tokenisation and tagging, but also boundaries of syntactic phrases as well as phrases' syntactic heads. The service is based on IOBBER, a chunker for Polish. The configuration used here operates on chunk definitions from the KPWr corpus."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/7"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Chunker WS"
+    ],
+    "url": ""
+}

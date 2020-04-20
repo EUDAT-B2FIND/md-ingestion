@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Catalan",
+        "Spanish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1200",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1200"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1200",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1200;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Gestor de diccionaris;Tool for terminology management;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1200;cat;spa;downloadable_files_count: 0;Institut Universitari de Ling\u00fc\u00edstica Aplicada, Universitat Pompeu Fabra;http://obneo.iula.upf.edu/gesdic/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ae0da70d-5674-55f1-8f57-144b89d9e68c",
+    "notes": [
+        "Tool for terminology management"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1200"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Gestor de diccionaris"
+    ],
+    "url": ""
+}

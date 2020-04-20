@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 63.9 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2176",
+    "MetadataAccess": [
+        "oai:ota:oucs:2176"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "James, William, 1842-1910"
+    ],
+    "fulltext": "oai:ota:oucs:2176;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2176.xml;Great men and their environment / by William James;James, William, 1842-1910;text_and_corpus_linguistics;Periodicals -- United States -- 19th century;Essays -- United States -- 19th century;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 63.9 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ea1ddad4-f4e9-5172-8b79-6b1538fb2225",
+    "oai_identifier": [
+        "oai:ota:oucs:2176"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Periodicals -- United States -- th century"
+        },
+        {
+            "name": "Essays -- United States -- th century"
+        }
+    ],
+    "title": [
+        "Great men and their environment / by William James"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2176.xml"
+}

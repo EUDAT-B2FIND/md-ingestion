@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Science and Technology Facilities Council, ISIS"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5286/ISIS.E.24089950",
+    "Discipline": "Not stated",
+    "Format": [
+        "isis neutron raw;binary;2;None"
+    ],
+    "Language": [
+        "English"
+    ],
+    "PublicationTimestamp": "2015-12-19T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Rights": [
+        "ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html"
+    ],
+    "TempCoverageBegin": 63490823999,
+    "TempCoverageEnd": 63490823999,
+    "TemporalCoverage": " point in time : 2012-12-11T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2012-12-11T11:59:59Z",
+    "TemporalCoverage:EndDate": "2012-12-11T11:59:59Z",
+    "author": [
+        "Dr Anita Zeidler",
+        "Professor Phil Salmon",
+        "Mr Keiron Pizzey",
+        "Miss Ruth Rowlands"
+    ],
+    "fulltext": [
+        "\n    ",
+        "isis_24089950",
+        "2016-04-08T15:23:11Z",
+        "\n    ",
+        "\n      ",
+        "10.5286/ISIS.E.24089950",
+        "The partial vibrational density of states for As2Se3 glass",
+        "The method of Se isotope substitution with inelastic neutron scattering will be used to measure the partial VDOS for As2Se3 glass. This is a prototypical network forming material, part of a family that provide the basis of glasses with important infrared transmitting and other optical properties. The predominant structural motif in this glass is the pyramidal AsSe3 unit, in contrast with many other network forming materials (e.g. GeSe2, GeO2, SiO2) which are constructed from corner and/or edge sharing tetrahedra. The results will therefore provide insight into the dynamics of networks with contrasting connectivities. They will also be used in the development of realistic first principles molecular dynamics models for As2Se3 glass. The experiments will make full use of the attributes of the MERLIN spectrometer.",
+        "[MERLIN];RB1220171;run_number_range",
+        "http://dx.doi.org/10.5286/ISIS.E.24089950",
+        "Professor Phil Salmon",
+        "Dr Anita Zeidler",
+        "Mr Keiron Pizzey",
+        "Miss Ruth Rowlands",
+        "Science and Technology Facilities Council, ISIS",
+        "Clean energy and the environment, pharmaceuticals and health care, nanotechnology and materials engineering, catalysis and polymers, fundamental studies of materials",
+        "2015-12-19 15:36:26",
+        "en",
+        "ISIS;ISIS Pulsed Neutron & Muon Source;http://www.isis.stfc.ac.uk;[MERLIN]",
+        "isis neutron raw;binary;2;None",
+        "ISIS, Harwell, United Kingdom",
+        "ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html",
+        "GB",
+        "2012-12-11 10:33:37;2012-12-18 15:36:26"
+    ],
+    "notes": [
+        "The method of Se isotope substitution with inelastic neutron scattering will be used to measure the partial VDOS for As2Se3 glass. This is a prototypical network forming material, part of a family that provide the basis of glasses with important infrared transmitting and other optical properties. The predominant structural motif in this glass is the pyramidal AsSe3 unit, in contrast with many other network forming materials (e.g. GeSe2, GeO2, SiO2) which are constructed from corner and/or edge sharing tetrahedra. The results will therefore provide insight into the dynamics of networks with contrasting connectivities. They will also be used in the development of realistic first principles molecular dynamics models for As2Se3 glass. The experiments will make full use of the attributes of the MERLIN spectrometer."
+    ],
+    "oai_identifier": [
+        "isis_24089950"
+    ],
+    "oai_set": null,
+    "tags": [
+        {
+            "name": "Clean energy environment"
+        },
+        {
+            "name": "pharmaceuticals health care"
+        },
+        {
+            "name": "nanotechnology materials engineering"
+        },
+        {
+            "name": "catalysis polymers"
+        },
+        {
+            "name": "fundamental studies materials"
+        }
+    ],
+    "title": [
+        "The partial vibrational density of states for As2Se3 glass"
+    ],
+    "url": ""
+}

@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "ILSP/R.C. \"Athena\""
+    ],
+    "Contributor": [
+        "Prokopidis, Prokopis"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1311",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1311"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1311",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "ILSP/R.C. \"Athena\""
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Greece"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Prokopidis, Prokopis"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1311;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;ILSP Dependency Parser;Prokopidis, Prokopis;Prokopidis, Prokopis;dependency parser;ILSP Dependency Parser is a tool trained on the Greek Dependency Treebank, a resource which comprises data annotated at several linguistic levels. Training data at the level of syntax consisted of ~70 KWords annotated using a dependency-based syntactic scheme that includes 25 main relations.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1311;downloadable_files_count: 0;Greece;ILSP/R.C. \"Athena\"",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cbe8e243-1aa9-5029-8c75-4e31da58a303",
+    "notes": [
+        "ILSP Dependency Parser is a tool trained on the Greek Dependency Treebank, a resource which comprises data annotated at several linguistic levels. Training data at the level of syntax consisted of ~70 KWords annotated using a dependency-based syntactic scheme that includes 25 main relations."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1311"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "dependency parser"
+        }
+    ],
+    "title": [
+        "ILSP Dependency Parser"
+    ],
+    "url": ""
+}

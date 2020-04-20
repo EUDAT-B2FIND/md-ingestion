@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain",
+        "(1 file : ca. 72.7 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2044",
+    "MetadataAccess": [
+        "oai:ota:oucs:2044"
+    ],
+    "PublicationTimestamp": "1916-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1916"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Service, Robert W. (Robert William), 1874-1958"
+    ],
+    "fulltext": "oai:ota:oucs:2044;2018-03-02T09:53:42Z;http://ota.ox.ac.uk/headers/2044.xml;The spell of the Yukon and other verses / by Robert W. Service;Service, Robert W. (Robert William), 1874-1958;1916;text_and_corpus_linguistics;Poems -- Canada -- 20th century;Musical works -- Canada -- 20th century;Songs -- Canada -- 20th century;Ballads -- Canada -- 20th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 72.7 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "615e9b72-1118-577a-8658-d89d1197fa19",
+    "oai_identifier": [
+        "oai:ota:oucs:2044"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Canada -- th century"
+        },
+        {
+            "name": "Musical works -- Canada -- th century"
+        },
+        {
+            "name": "Songs -- Canada -- th century"
+        },
+        {
+            "name": "Ballads -- Canada -- th century"
+        }
+    ],
+    "title": [
+        "The spell of the Yukon and other verses / by Robert W. Service"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2044.xml"
+}

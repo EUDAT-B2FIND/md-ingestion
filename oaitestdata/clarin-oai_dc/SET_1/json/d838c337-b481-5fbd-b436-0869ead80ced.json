@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Masaryk University, NLP Centre"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1B2E-0",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1B2E-0"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0023-1B2E-0",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Masaryk University, NLP Centre"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)",
+        "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "PUB"
+    ],
+    "author": [
+        "\u010capek, Tom\u00e1\u0161",
+        "Gr\u00e1c, Marek"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1B2E-0;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;sholva-0.6;Gr\u00e1c, Marek;\u010capek, Tom\u00e1\u0161;Semantic net `sholva' contains more than 150 000 records for which there was sufficient agreement among annotators. Indvidual words are labeled in the following categories:\r\nperson, person / individual, event and substance.;2011;lexicalConceptualResource;http://hdl.handle.net/11858/00-097C-0000-0023-1B2E-0;ces;Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0);http://creativecommons.org/licenses/by-nc-nd/3.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Masaryk University, NLP Centre;https://nlp.fi.muni.cz/projekty/sholva/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d838c337-b481-5fbd-b436-0869ead80ced",
+    "notes": [
+        "Semantic net `sholva' contains more than 150 000 records for which there was sufficient agreement among annotators. Indvidual words are labeled in the following categories:\r\nperson, person / individual, event and substance."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-1B2E-0"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "title": [
+        "sholva-0.6"
+    ],
+    "url": ""
+}

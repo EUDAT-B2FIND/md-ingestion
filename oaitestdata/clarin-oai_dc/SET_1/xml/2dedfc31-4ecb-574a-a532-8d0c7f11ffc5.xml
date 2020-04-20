@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>7095d3ac1c4c11e2a2aa782bcb07413529180c96d3904812b3a8eaf6ec88ad9d</identifier>
+    <datestamp>2018-11-15T16:39:43Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SENTER</dc:title>
+      <dc:description>SENTER is a SENtence splitTER for Portuguese.</dc:description>
+      <dc:date>2012-10-22</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/12",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/12"
+    ],
+    "PID": "http://hdl.handle.net/11321/12",
+    "PublicationTimestamp": "2012-10-09T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Wroc\u0142aw University of Technology"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Piasecki, Maciej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/12;2016-01-21T14:33:12Z;hdl_11321_3;hdl_11321_4;Fextor;Piasecki, Maciej;Fextor is a tool for extracting features from the collections of texts. It is characterized by high flexibility, while maintaining the performance and simplicity.\r\n\r\nFeatures are extracted from  text snippets, defined according to the type of pointer (token, annotation or pair annotations).  This allows the simultaneous generation of multiple features for a single document.\r\n\r\nDefining new types of features can be done by implementing in python or using a description in wccl language.\r\n\r\nFextor supports two formats of corpora - Poliqarp and CCL. The extracted features are saved in CSV format, with the possibility of converting to a matrix format, for use in LexCSD package.;2012-10-09;toolService;http://hdl.handle.net/11321/12;pol;downloadable_files_count: 0;Wroc\u0142aw University of Technology;http://nlp.pwr.wroc.pl/pl/narzedzia-i-zasoby/fextor",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5be344cb-49e0-5e4a-9185-66b89fff9a95",
+    "notes": [
+        "Fextor is a tool for extracting features from the collections of texts. It is characterized by high flexibility, while maintaining the performance and simplicity.\r\n\r\nFeatures are extracted from  text snippets, defined according to the type of pointer (token, annotation or pair annotations).  This allows the simultaneous generation of multiple features for a single document.\r\n\r\nDefining new types of features can be done by implementing in python or using a description in wccl language.\r\n\r\nFextor supports two formats of corpora - Poliqarp and CCL. The extracted features are saved in CSV format, with the possibility of converting to a matrix format, for use in LexCSD package."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/12"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Fextor"
+    ],
+    "url": ""
+}

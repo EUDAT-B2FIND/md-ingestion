@@ -1,0 +1,69 @@
+{
+    "Contact": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163378",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163378"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CE8-C",
+    "PublicationTimestamp": "1644-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1644"
+    ],
+    "Publisher": [
+        "Drukarnia Jezuit\u00f3w"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/163378",
+        "oai:jbc.bj.uj.edu.pl:publication:171752"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Okolski, Szymon (1580-1653)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163378;2019-02-28T18:45:46Z;Chor\u0105giew Tryumphalna troiaka, Szlachecka, Chrzescianska, Swieta. : Na Pogrzebie Zacnie Vrodzonego Iego Mo\u015bci Pana, Pana Miko\u0142aia z Czertwic Cetnera. W Kosciele Podkamienieckim Naswi\u0119tszey Panny Rozanca S. Przez W. O. Symona Okolskiego [...] og\u0142oszona: a do Druku [...] Roku 1644. Martij 12. podana;Okolski, Szymon (1580-1653);starodruki 17\u00a0w.;Drukarnia Jezuit\u00f3w;[1644];starodruk;application/xml;clarind-uds:poldilemma-163378;hdl:11858/00-246C-0000-0023-8CE8-C;Biblioteka Jagiello\u0144ska, BJ St. Dr. 25280 I;pol;http://jbc.bj.uj.edu.pl/Content/163378;oai:jbc.bj.uj.edu.pl:publication:171752;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d2882a63-8362-5d98-bb00-6c2cb4e40cc1",
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-163378"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Chor\u0105giew Tryumphalna troiaka, Szlachecka, Chrzescianska, Swieta. : Na Pogrzebie Zacnie Vrodzonego Iego Mo\u015bci Pana, Pana Miko\u0142aia z Czertwic Cetnera. W Kosciele Podkamienieckim Naswi\u0119tszey Panny Rozanca S. Przez W. O. Symona Okolskiego [...] og\u0142oszona: a do Druku [...] Roku 1644. Martij 12. podana"
+    ],
+    "url": ""
+}

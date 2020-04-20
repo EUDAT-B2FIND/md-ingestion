@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Matteo Grella"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/x-rar-compressed"
+    ],
+    "Language": [
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2476",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2476"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2476",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Matteo Grella"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11372/LRT-2630"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Grella, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2476;2018-03-02T08:51:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Italian Content Words;Grella, Matteo;morphological dictionary;This resource is an Italian morphological dictionary for content words, encoded in a JSON Lines format text file. It contains correspondences between surface form and lexical forms of words followed by grammatical features. The surface word forms have been generated algorithmically by using stable phonological and morphological rules of the Italian language. Particular attention has been given to the generation of verbs for which rules have been extracted from the famous A.L e G. Lepschy, La lingua italiana. The dictionary with its remarkable coverage is particularly useful used together with the Italian Function Words (http://hdl.handle.net/11372/LRT-2288) for tasks such as POS-Tagging or Syntactic Parsing.;2011;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-2476;ita;http://hdl.handle.net/11372/LRT-2630;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/x-rar-compressed;text/plain; charset=utf-8;downloadable_files_count: 1;Matteo Grella",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "00b3142b-10ed-5196-8cc6-0ac428dcefdd",
+    "notes": [
+        "This resource is an Italian morphological dictionary for content words, encoded in a JSON Lines format text file. It contains correspondences between surface form and lexical forms of words followed by grammatical features. The surface word forms have been generated algorithmically by using stable phonological and morphological rules of the Italian language. Particular attention has been given to the generation of verbs for which rules have been extracted from the famous A.L e G. Lepschy, La lingua italiana. The dictionary with its remarkable coverage is particularly useful used together with the Italian Function Words (http://hdl.handle.net/11372/LRT-2288) for tasks such as POS-Tagging or Syntactic Parsing."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2476"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "morphological dictionary"
+        }
+    ],
+    "title": [
+        "Italian Content Words"
+    ],
+    "url": ""
+}

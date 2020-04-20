@@ -1,0 +1,43 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1078</identifier>
+    <datestamp>2018-12-02T19:40:11Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>xLiMe Twitter Corpus XTC 1.0.1</dc:title>
+      <dc:creator>Rei, Luis</dc:creator>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Mladeni&#263;, Dunja</dc:creator>
+      <dc:subject>social media</dc:subject>
+      <dc:subject>computer-mediated communication</dc:subject>
+      <dc:subject>Twitter</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>named entities</dc:subject>
+      <dc:subject>sentiment classification</dc:subject>
+      <dc:subject>multilingual</dc:subject>
+      <dc:subject>manual annotation</dc:subject>
+      <dc:description>The xLiMe Twitter Corpus contains tweets in German, Italian and Spanish manually annotated with part-of-speech, named entities, and message-level sentiment polarity. In total, the corpus contains almost 20K annotated messages and 350K tokens.&#13;
+The corpus is described in &#13;
+Luis Rei, Dunja Mladeni&#263;, Simon Krek. A Multilingual Social Media Linguistic Corpus. Proceedings of the 4th Conference on CMC and Social Media Corpora for the Humanities. 27&#8211;28 September 2016, Ljubljana, Slovenia. http://nl.ijs.si/janes/cmc-corpora2016/proceedings/</dc:description>
+      <dc:date>2016-11-28</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1078</dc:identifier>
+      <dc:language>spa</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/611346</dc:relation>
+      <dc:rights>The MIT License (MIT)</dc:rights>
+      <dc:rights>http://opensource.org/licenses/mit-license.php</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>http://github.com/lrei/xlime_twitter_corpus</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

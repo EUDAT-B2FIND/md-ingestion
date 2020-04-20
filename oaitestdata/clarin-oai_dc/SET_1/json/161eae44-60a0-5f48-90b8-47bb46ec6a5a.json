@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 412 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1651",
+    "MetadataAccess": [
+        "oai:ota:oucs:1651"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Twain, Mark, 1835-1910"
+    ],
+    "fulltext": "oai:ota:oucs:1651;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1651.xml;The adventures of Tom Sawyer;Twain, Mark, 1835-1910;default: 1976-01-01;text_and_corpus_linguistics;Fiction -- United States -- 19th century;Novels -- United States -- 19th century;eng;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 412 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "161eae44-60a0-5f48-90b8-47bb46ec6a5a",
+    "oai_identifier": [
+        "oai:ota:oucs:1651"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Fiction -- United States -- th century"
+        },
+        {
+            "name": "Novels -- United States -- th century"
+        }
+    ],
+    "title": [
+        "The adventures of Tom Sawyer"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1651.xml"
+}

@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Drukarnia Krzysztofa Schedla"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/xml"
+    ],
+    "Language": [
+        "Polish",
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-159981",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-159981"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0023-8CE6-0",
+    "PublicationTimestamp": "1674-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1674"
+    ],
+    "Publisher": [
+        "Drukarnia Krzysztofa Schedla"
+    ],
+    "RelatedIdentifier": [
+        "http://jbc.bj.uj.edu.pl/Content/159981",
+        "oai:jbc.bj.uj.edu.pl:publication:168324"
+    ],
+    "ResourceType": [
+        "starodruk"
+    ],
+    "Rights": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "CC-BY-NC-SA-4.0"
+    ],
+    "SpatialCoverage": [
+        "1601/1700"
+    ],
+    "TempCoverageBegin": 50506804799,
+    "TempCoverageEnd": 50506804799,
+    "TemporalCoverage": " point in time : 1601-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1601-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1601-07-01T11:59:59Z",
+    "author": [
+        "Leszczy\u0144ski, Samuel (1637-1676)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-159981;2019-02-28T18:41:43Z;Classicvm Niesmiertelney S\u0142awy, Jasnie Wielmoznych Wodzow Koronnych, Y Wielkiego Xi\u0119st: Litewskiego [...] : Po \u00dfcz\u0119\u015bliwey y nies\u0142ychaney Victoriey Pod Hocimiem [sic!], Dnia XI. Nouembra, Roku Pa\u0144skiego 1673. otrzymaney; Stylo Panegyrico, a Oyczystym Rytme[m] Opisane, Roku Pa\u0144skiego. 1674. Dnia 20. Marca.;Leszczy\u0144ski, Samuel (1637-1676);starodruki 17\u00a0w.;Jan III Sobieski (kr\u00f3l Polski ; 1629-1696). [Adr. ded.];Drukarnia Krzysztofa Schedla;1674;starodruk;application/xml;clarind-uds:poldilemma-159981;hdl:11858/00-246C-0000-0023-8CE6-0;Biblioteka Jagiello\u0144ska, BJ St. Dr. 923 I;pol;lat;http://jbc.bj.uj.edu.pl/Content/159981;oai:jbc.bj.uj.edu.pl:publication:168324;1601/1700;https://creativecommons.org/licenses/by-nc-sa/4.0/;CC-BY-NC-SA-4.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "22752b6a-b76e-51f0-9124-082d770c1101",
+    "notes": [
+        "Jan III Sobieski (kr\u00f3l Polski ; 1629-1696). [Adr. ded.]"
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-159981"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [],
+    "title": [
+        "Classicvm Niesmiertelney S\u0142awy, Jasnie Wielmoznych Wodzow Koronnych, Y Wielkiego Xi\u0119st: Litewskiego [...] : Po \u00dfcz\u0119\u015bliwey y nies\u0142ychaney Victoriey Pod Hocimiem [sic!], Dnia XI. Nouembra, Roku Pa\u0144skiego 1673. otrzymaney; Stylo Panegyrico, a Oyczystym Rytme[m] Opisane, Roku Pa\u0144skiego. 1674. Dnia 20. Marca."
+    ],
+    "url": ""
+}

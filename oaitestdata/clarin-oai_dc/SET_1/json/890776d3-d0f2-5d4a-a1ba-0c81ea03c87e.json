@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Lancaster University"
+    ],
+    "Contributor": [
+        "Short, Mick",
+        "Culpeper, Jonathan",
+        "Wynne, Martin",
+        "Semino, Elena"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-903",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-903"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-903",
+    "PublicationTimestamp": "1997-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1997"
+    ],
+    "Publisher": [
+        "Lancaster University"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-903;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Speech, Thought and Writing Presentation Corpus;Culpeper, Jonathan;Semino, Elena;Short, Mick;Wynne, Martin;A corpus of approximately 260,000 words of modern British narrative texts representing three text types (fiction, newpapers, biography) with detailed annotation for all forms of speech, thought and writing presentation which occur in the corpus. Available via OTA.;1997;corpus;http://hdl.handle.net/11372/LRT-903;eng;text/plain;downloadable_files_count: 0;United Kingdom;Lancaster University;http://www.ota.ox.ac.uk/headers/2540.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "890776d3-d0f2-5d4a-a1ba-0c81ea03c87e",
+    "notes": [
+        "A corpus of approximately 260,000 words of modern British narrative texts representing three text types (fiction, newpapers, biography) with detailed annotation for all forms of speech, thought and writing presentation which occur in the corpus. Available via OTA."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-903"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Speech, Thought and Writing Presentation Corpus"
+    ],
+    "url": ""
+}

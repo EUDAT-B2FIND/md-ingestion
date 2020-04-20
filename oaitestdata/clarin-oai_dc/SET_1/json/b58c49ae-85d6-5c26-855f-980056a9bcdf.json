@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1135",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1135"
+    ],
+    "PID": "http://hdl.handle.net/11356/1135",
+    "PublicationTimestamp": "2016-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/640772",
+        "http://dx.doi.org/10.1186/s40649-017-0042-6"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Cherepnalkoski, Darko",
+        "Kralj Novak, Petra",
+        "Gr\u010dar, Miha",
+        "Mozeti\u010d, Igor"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1135;2017-08-23T15:49:02Z;hdl_11356_1023;hdl_11356_1024;Brexit stance annotated tweets;Gr\u010dar, Miha;Cherepnalkoski, Darko;Mozeti\u010d, Igor;Kralj Novak, Petra;Twitter;Brexit;stance;computer-mediated communication;The corpus contains over 4.5 million tweets (tweet IDs) automatically labeled by a machine learning program with stance regarding Brexit: Positive (supporting Brexit), Negative (opposing Brexit), or Neutral (uncommitted).\r\n\r\nThe Brexit referendum was held on June 23, 2016, to decide whether the UK should leave or remain in the EU. In the weeks before the referendum, starting on May 12, the UK geo-located Brexit-related tweets were continuously collected resulting in a dataset of around 4.5 million (4,508,440) tweets from almost one million (998,054) users. A large sample of the collected tweets (35,000) was manually labeled for the stance of their authors regarding Brexit: Positive (supporting Brexit), Negative (opposing Brexit), or Neutral (uncommitted). The labeled tweets were used to train a classifier which then automatically labeled all the remaining tweets.\r\n\r\nThe corpus contains tweet ids and stance labels. The tweets are grouped into files one hour per file. In each file, one row represents one entry (twitter_id, sentiment_label). Lines are ordered by the tweet time.\r\n\r\nThe data collection, annotation, model training and performance estimation  is described in detail in:\r\nMiha Gr\u010dar, Darko Cherepnalkoski, Igor Mozeti\u010d, Petra Kralj Novak:\r\nStance and influence of Twitter users regarding the Brexit referendum.\r\nComputational Social Networks 4/6. 2017. http://dx.doi.org/10.1186/s40649-017-0042-6;2016;corpus;http://hdl.handle.net/11356/1135;eng;info:eu-repo/grantAgreement/EC/H2020/640772;http://dx.doi.org/10.1186/s40649-017-0042-6;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Jo\u017eef Stefan Institute",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b58c49ae-85d6-5c26-855f-980056a9bcdf",
+    "notes": [
+        "The corpus contains over 4.5 million tweets (tweet IDs) automatically labeled by a machine learning program with stance regarding Brexit: Positive (supporting Brexit), Negative (opposing Brexit), or Neutral (uncommitted).\r\n\r\nThe Brexit referendum was held on June 23, 2016, to decide whether the UK should leave or remain in the EU. In the weeks before the referendum, starting on May 12, the UK geo-located Brexit-related tweets were continuously collected resulting in a dataset of around 4.5 million (4,508,440) tweets from almost one million (998,054) users. A large sample of the collected tweets (35,000) was manually labeled for the stance of their authors regarding Brexit: Positive (supporting Brexit), Negative (opposing Brexit), or Neutral (uncommitted). The labeled tweets were used to train a classifier which then automatically labeled all the remaining tweets.\r\n\r\nThe corpus contains tweet ids and stance labels. The tweets are grouped into files one hour per file. In each file, one row represents one entry (twitter_id, sentiment_label). Lines are ordered by the tweet time.\r\n\r\nThe data collection, annotation, model training and performance estimation  is described in detail in:\r\nMiha Gr\u010dar, Darko Cherepnalkoski, Igor Mozeti\u010d, Petra Kralj Novak:\r\nStance and influence of Twitter users regarding the Brexit referendum.\r\nComputational Social Networks 4/6. 2017. http://dx.doi.org/10.1186/s40649-017-0042-6"
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1135"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Twitter"
+        },
+        {
+            "name": "Brexit"
+        },
+        {
+            "name": "stance"
+        },
+        {
+            "name": "computer-mediated communication"
+        }
+    ],
+    "title": [
+        "Brexit stance annotated tweets"
+    ],
+    "url": ""
+}

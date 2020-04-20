@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=d4bb9c061c5e11e2a2aa782bcb0741354c05ee5991654a169d17a55e01aba9d2",
+    "MetadataAccess": [
+        "d4bb9c061c5e11e2a2aa782bcb0741354c05ee5991654a169d17a55e01aba9d2"
+    ],
+    "PublicationTimestamp": "2012-10-22T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "d4bb9c061c5e11e2a2aa782bcb0741354c05ee5991654a169d17a55e01aba9d2;2018-11-15T16:39:44Z;toolService;toolService:tool;CSTParser;CSTParser is a multi-document discourse parser. Based on machine learning techniques and hand-crafted rules, the system \nidentifies a set of relations predicted by CST (Cross-document Structure Theory) among sentences of different texts on the same topic.;2012-10-22",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c763bdde-a35f-5c97-abbf-dbd7b71d6b89",
+    "notes": [
+        "CSTParser is a multi-document discourse parser. Based on machine learning techniques and hand-crafted rules, the system \nidentifies a set of relations predicted by CST (Cross-document Structure Theory) among sentences of different texts on the same topic."
+    ],
+    "oai_identifier": [
+        "d4bb9c061c5e11e2a2aa782bcb0741354c05ee5991654a169d17a55e01aba9d2"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "CSTParser"
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.1594/PANGAEA.56309",
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.56309"
+    ],
+    "PublicationTimestamp": "2007-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2007"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "SpatialCoverage": "(54N,8 E)",
+    "TempCoverageBegin": 61884388799,
+    "TempCoverageEnd": 61884388799,
+    "TemporalCoverage": " point in time : 1962-01-15T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1962-01-15T11:59:59Z",
+    "TemporalCoverage:EndDate": "1962-01-15T11:59:59Z",
+    "author": [
+        "Wiltshire, Karen Helen"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.56309;2018-04-03T09:01:56Z;BAH1962;10.1594/PANGAEA.56309;Wiltshire, Karen Helen;0000-0002-7148-0529;Abundance of bacillariophyceae at time series station Helgoland Roads, North Sea, in 1962;PANGAEA - Data Publisher for Earth & Environmental Science;2007;DATE/TIME;DEPTH, water;Asterionellopsis glacialis, fractionated;Asteroplanus karianus;Bacillaria paxillifera, fractionated;Cylindrotheca closterium, fractionated;Fragilaria sp.;Gyrosigma sp., fractionated;Gyrosigma sp.;Meuniera membranacea;Navicula sp., fractionated;Navicula sp.;Nitzschia longissima;Pleurosigma sp.;Pseudo-nitzschia delicatissima;Pseudo-nitzschia seriata, fractionated;Pseudo-nitzschia seriata;Rhaphoneis amphiceros;Thalassionema nitzschioides;Bacillariales indeterminata, fractionated;Bacillariales indeterminata;Actinoptychus senarius;Bacteriastrum hyalinum, fractionated;Bellerochea malleus, fractionated;Brockmanniella brockmannii;Cerataulina pelagica, fractionated;Cerataulina pelagica;Chaetoceros debilis;Chaetoceros decipiens, fractionated;Chaetoceros decipiens;Chaetoceros densus;Chaetoceros didymus;Chaetoceros socialis;Chaetoceros sp., fractionated;Chaetoceros sp.;Coscinodiscus concinnus, fractionated;Coscinodiscus concinnus;Coscinodiscus granii, fractionated;Coscinodiscus granii;Coscinodiscus radiatus;Coscinodiscus sp., fractionated;Coscinodiscus sp.;Dactyliosolen fragilissimus;Detonula confervacea;Detonula pumila, fractionated;Ditylum brightwellii, fractionated;Ditylum brightwellii;Eucampia zodiacus;Guinardia delicatula;Guinardia flaccida, fractionated;Guinardia flaccida;Guinardia striata, fractionated;Guinardia striata;Helicotheca tamesis, fractionated;Lauderia annulata;Leptocylindrus danicus;Leptocylindrus minimus, fractionated;Lithodesmium undulatum, fractionated;Melosira sp.;Odontella aurita, fractionated;Odontella aurita;Odontella mobiliensis;Odontella regia, fractionated;Odontella regia;Odontella rhombus, fractionated;Odontella sinensis, fractionated;Odontella sinensis;Paralia sulcata;Podosira stelliger;Porosira glacialis;Proboscia alata;Rhizosolenia hebetata;Rhizosolenia imbricata, fractionated;Rhizosolenia imbricata;Rhizosolenia pungens;Rhizosolenia robusta;Rhizosolenia setigera, fractionated;Rhizosolenia setigera;Rhizosolenia styliformis;Skeletonema costatum, fractionated;Skeletonema costatum;Stephanopyxis turris, fractionated;Thalassiosira minima;Thalassiosira nordenskioeldii;Thalassiosira punctigera;Thalassiosira rotula;Thalassiosira sp., fractionated;Thalassiosira sp.;Triceratium favus;Trigonium alternans;Biddulphiales indeterminata, fractionated;Biddulphiales indeterminata;Quantitative phytoplankton method (Uterm\u00f6hl, 1958);HelgolandRoadsTimeseries;Meeresstation Helgoland;Shelf Seas Systems Ecology @ AWI (former Biologische Anstalt Helgoland) (BAH);Long-term Ecological Research at AWI (LTER);Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven;1962-01-15T10:30:00/1962-12-28T09:40:00;eng;Dataset;10013/epic.28563.d001;15500 data points;text/tab-separated-values;54.18833 7.9",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.56309"
+    ],
+    "oai_set": [
+        "BAH1962"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[7.9,54.18833],[7.9,54.18833],[7.9,54.18833],[7.9,54.18833],[7.9,54.18833]]]}",
+    "tags": [
+        {
+            "name": "Quantitative phytoplankton method Utermhl"
+        },
+        {
+            "name": "HelgolandRoadsTimeseries"
+        },
+        {
+            "name": "Meeresstation Helgoland"
+        },
+        {
+            "name": "Long-term Ecological Research AWI LTER"
+        }
+    ],
+    "title": [
+        "Abundance of bacillariophyceae at time series station Helgoland Roads, North Sea, in 1962"
+    ],
+    "url": ""
+}

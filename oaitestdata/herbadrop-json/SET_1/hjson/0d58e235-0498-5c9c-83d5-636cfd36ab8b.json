@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-1473098", 
+        "ARKID": "1473098"
+    }, 
+    "depositIdentifier": "P04337750", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P04337750.jpg", 
+            "ocr": {
+                "deu": "\u00e4\n1\n\\szasmaa\nl\nAMwMM&\n$\nCamacho\n' O7\nmmmmFMww>\u00ae\u00ae\ufb02\u00b0\nHERBARIUM R E G PICHI SERMOLLI\nTanganyika Kilimanjaro.\nKibo\nP ana petrosa desertica a valle della\n1\nHut\n4600 4700 ca\n5 VII 1956\nleg R E G Pichi Sermolli\nHERBARIUM MUSE] PAR/SIENSIS\nHerbier Mus\u00e9um a\nm mmuuuumiuiim\nP04337750\n", 
+                "eng": "@\n1\n\\szasmaa\nl\nAMwMM&\n\u00a7\nCamacho\n' O7\nmmmmFme>W@\ufb02Q\nHERBARIUM R E G PICHI SERMOLLI\nTanganyika Kilimanjaro.\nKibo\nP ana petrosa desertica a valle della\n1\nHut\n4600 4700 ca\n5 VII 1956\nleg R E G Pichi Sermolli\nHERBARIUM MUSE] PARIS/ENSIS\nHerbier Mus\u00e9um a\nm mmuuuumiuiim\nP04337750\n", 
+                "fra": "\ufb01\n1\n\\szasmaa\nl\nAwwawa\n?\nCamacho\n' O7\nM\u2026\u2026mFmea\u0153\u00e6\u0153o\nHERBARIUM R E G PICHI SERMOLLI\nTanganyika Kilimanjaro.\nKibo\nP ana petrosa desertica a valle della\n1\nHut\n4600 4700 ca\n5 VII 1956\nleg R E G Pichi Sermolli\nHERBARIUM MUSE] PARIS/ENSIS\nHerbier Mus\u00e9um a\nm mmuuuumiuiim\nP04337750\n", 
+                "lat": "\u00e4\n1\n\\szasmaa\nl\nAwwama\n?\nCeu/Quo\n' O7\nmmmmFme>W@\ufb02Q\nHERBARIUM R E G PICHI SERMOLLI\nTanganyika Kilimanjaro.\nKibo\nP ana petrosa desertica a valle della\n1\nHut\n4600 4700 ca\n5 VII 1956\nleg R E G Pichi Sermolli\nHERBARIUM MUSE] PARIS/ENSIS\nHerbier Mus\u00e9um a\nm mmuuuumiuiim\nP04337750\n", 
+                "spa": "\u00f1\n1\n\\szasmaa\nl\nAMwMM&\n;\nCel/\u00bfzac\n' 07\nmmmmFme>W@\ufb02Q\nHERBARIUM R E G PICHI SERMOLLI\nTanganyika Kilimanjaro.\nKibo\nP ana petrosa desertica a valle della\n1\nHut\n4600 4700 ca\n5 VII 1956\nleg R E G Pichi Sermolli\nHERBARIUM MUSE] PAR/SIENSIS\nHerb\u00eder Mus\u00e9um a\nm mmuuuumiuiim\nP04337750\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-1473098", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "Asteraceae"
+        }, 
+        "aip.dc.title": {
+            "lat": "Senecio Herbarium Practice & Following Welman."
+        }, 
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "bde8adc07dd519c63fb50f5739ac69bbb05f7fbc2e7a0553040bc6a836f71b85", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-1473098/2", 
+                "name": "DESC/P04337750.txt", 
+                "originalChecksum": "792111135ea3ccd6dcf625517c10d60b", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 2521
+            }, 
+            {
+                "checksum": "73793059f77a45b4e0f8af4fea482e0d4032b0975ce7c4aa1271989250d77c7e", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-1473098/1", 
+                "name": "P04337750.jpg", 
+                "originalChecksum": "ff2b10c622b753561a142d877536cc33", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 5765808
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-01-31T12:04:50+0100", 
+        "aip.meta.depositIdentifier": "P04337750", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 1473098, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04337750", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 19.376417, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

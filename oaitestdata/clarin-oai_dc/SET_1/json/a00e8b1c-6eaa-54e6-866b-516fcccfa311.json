@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=0b1d3fb6ee8511e4a2aa782bcb0741356f1c360cc2f949fab24226b691d2b6b8",
+    "MetadataAccess": [
+        "0b1d3fb6ee8511e4a2aa782bcb0741356f1c360cc2f949fab24226b691d2b6b8"
+    ],
+    "PublicationTimestamp": "2015-04-29T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "0b1d3fb6ee8511e4a2aa782bcb0741356f1c360cc2f949fab24226b691d2b6b8;2018-11-15T16:40:15Z;corpus;corpus:text;Europarl QTLeap WSD/NED corpus;Europarl QTLeap WSD/NED corpus\n\nThis corpora is part of Deliverable 5.5 of the European Commission project QTLeap FP7-ICT-2013.4.1-610516 (http://qtleap.eu). \n\nThe texts are sentences from the Europarl parallel corpus (Koehn, 2005). We selected the monolingual sentences from parallel corpora for the following pairs: Bulgarian-English, Czech-English, Portuguese-English and Spanish-English. The English corpus is comprised by the English side of the Spanish-English corpus. \n\nBasque is not in Europarl. In addition, it contains the Basque and English sides of the GNOME corpus.\n\nThe texts have been automatically annotated with NLP tools, including Word Sense Disambiguation, Named Entity Disambiguation and Coreference resolution. Please check deliverable D5.6 in http://qtleap.eu/deliverables for more information.\n\nInstitutions involved in the annotation:\n  University of the Basque Country (UPV/EHU)\n  Faculty of Science, Univeristy of Lisbon (FCUL)\n  Charles University in Prague (CUNI)\n  Bulgarian Academy of Sciences (IICT-BAS)\n;2015-04-29",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a00e8b1c-6eaa-54e6-866b-516fcccfa311",
+    "notes": [
+        "Europarl QTLeap WSD/NED corpus\n\nThis corpora is part of Deliverable 5.5 of the European Commission project QTLeap FP7-ICT-2013.4.1-610516 (http://qtleap.eu). \n\nThe texts are sentences from the Europarl parallel corpus (Koehn, 2005). We selected the monolingual sentences from parallel corpora for the following pairs: Bulgarian-English, Czech-English, Portuguese-English and Spanish-English. The English corpus is comprised by the English side of the Spanish-English corpus. \n\nBasque is not in Europarl. In addition, it contains the Basque and English sides of the GNOME corpus.\n\nThe texts have been automatically annotated with NLP tools, including Word Sense Disambiguation, Named Entity Disambiguation and Coreference resolution. Please check deliverable D5.6 in http://qtleap.eu/deliverables for more information.\n\nInstitutions involved in the annotation:\n  University of the Basque Country (UPV/EHU)\n  Faculty of Science, Univeristy of Lisbon (FCUL)\n  Charles University in Prague (CUNI)\n  Bulgarian Academy of Sciences (IICT-BAS)\n"
+    ],
+    "oai_identifier": [
+        "0b1d3fb6ee8511e4a2aa782bcb0741356f1c360cc2f949fab24226b691d2b6b8"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text"
+    ],
+    "state": "active",
+    "title": [
+        "Europarl QTLeap WSD/NED corpus"
+    ]
+}

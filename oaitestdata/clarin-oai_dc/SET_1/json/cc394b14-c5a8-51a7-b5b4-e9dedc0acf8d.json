@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3231",
+    "MetadataAccess": [
+        "oai:ota:oucs:3231"
+    ],
+    "PublicationTimestamp": "1900-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1900"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Baum, L. Frank (Lyman Frank), 1856-1919"
+    ],
+    "fulltext": "oai:ota:oucs:3231;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3231.xml;The wonderful wizard of Oz;Baum, L. Frank (Lyman Frank), 1856-1919;not after: 1900;text_and_corpus_linguistics;Juvenile literature -- United States -- 20th century;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cc394b14-c5a8-51a7-b5b4-e9dedc0acf8d",
+    "oai_identifier": [
+        "oai:ota:oucs:3231"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Juvenile literature -- United States -- th century"
+        }
+    ],
+    "title": [
+        "The wonderful wizard of Oz"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3231.xml"
+}

@@ -1,0 +1,107 @@
+{
+    "Contact": [
+        "Universit\u00e4t des Saarlandes"
+    ],
+    "Contributor": [
+        "Christine Foeldesi",
+        "Kerstin Kl\u00f6ckner",
+        "Wojciech Skut",
+        "Oliver Plaehn",
+        "Sabine Brants",
+        "Olaf Holz",
+        "Bernd-Paul Simon",
+        "Holger Stenzhorn",
+        "Brigitte Krenn",
+        "Marcus Pussel",
+        "Hans Uszkoreit",
+        "Thorsten Brants",
+        "Meike van Hoorn",
+        "Anne Schwartz",
+        "Roland Hendriks"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/xml"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:fedora.clarin-d.uni-saarland.de:clarind-uds:negra",
+    "MetadataAccess": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:negra"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-246C-0000-0005-BD11-5",
+    "PublicationTimestamp": "2006-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2006"
+    ],
+    "Publisher": [
+        "Universit\u00e4t des Saarlandes"
+    ],
+    "RelatedIdentifier": [
+        "Part-of-Speech Tags. Stuttgart-T\u00fcbingen-Tagset (STTS): http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/stts.asc",
+        "Morphological analysis (only for the first 60,000 tokens). These are the tags of the expanded STTS. The link is broken, but it could be used instead the info in ISOCAT: http://www.isocat.org/rest/dcs/376",
+        "The grammatical function in the directly dominating phrase. List of the grammatical funktions: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/kanten.html",
+        "The category of nonterminal nodes (phrases). List of the phrasal categories: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/knoten.html",
+        "In the project the annotation tool Annotate was used as a graphical user interface for an efficient structural annotation. It works together with parsers supporting the manual annotation and running in the background via a defined interface: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/annotate.html"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Academics: free",
+        "Commercial: with licence: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/corpus-license.html",
+        "Pre-condition: User must have a valid licence fo the CD \u201cMultilingual Corpus 1\u201d reselased by the European Corpus Initiative"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "NEGRA (DFG Sonderforschungsbereich 378, Projekt C3)",
+        "LINC (Universit\u00e4t des Saarlandes)"
+    ],
+    "fulltext": "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:negra;2014-06-03T12:55:04Z;NEGRA;NEGRA (DFG Sonderforschungsbereich 378, Projekt C3);LINC (Universit\u00e4t des Saarlandes);corpus linguistics;linguistics;computational linguistics;treebank;syntactic annotation;The NEGRA corpus version 2 consists of 355,096 tokens (20,602 sentences) of German newspaper text, taken from the Frankfurter Rundschau as contained in the CD \u201cMultilingual Corpus 1\u201d of the European Corpus Initiative. It is based on approx. 60,000 tokens that were tagged for part-of speech at the Institut f\u00fcr maschinelle Sprachverarbeitung, Stuttgart. This corpus was extended, tagged with part-of-speech and completely annotated with syntactic structures. The corpus was created in the projects NEGRA (DFG Sonderforschungsbereich 378, Projekt C3) and LINC (Universit\u00e4t des Saarlandes) in Saarbr\u00fccken.;Das NEGRA Korpus Version 2 besteht aus 355.096 Tokens (20.602 S\u00e4tzen) deutschen Zeitungstextes aus der Frankfurter Rundschau. Die Texte sind der CD \u201cMultilingual Corpus 1\u201d der European Corpus Initiative entnommen. Es basiert auf ca. 60.000 Tokens, die am Institut f\u00fcr maschinelle Sprachverarbeitung, Stuttgart, mit Parts-of-Speech annotiert wurden. Dieses Korpus wurde erweitert, ebenfalls mit Parts-of-Speech versehen und vollst\u00e4ndig mit syntaktischen Strukturen annotiert. Der Aufbau des Korpus wurde in den Projekten NEGRA (DFG Sonderforschungsbereich 378, Projekt C3) und LINC (Universit\u00e4t des Saarlandes) in Saarbr\u00fccken durchgef\u00fchrt.;Universit\u00e4t des Saarlandes;Hans Uszkoreit;Thorsten Brants;Sabine Brants;Christine Foeldesi;Roland Hendriks;Olaf Holz;Meike van Hoorn;Kerstin Kl\u00f6ckner;Brigitte Krenn;Oliver Plaehn;Marcus Pussel;Anne Schwartz;Bernd-Paul Simon;Wojciech Skut;Holger Stenzhorn;2006;Dataset;text/xml;clarind-uds:negra;clarind-uds:NEGRA;hdl:11858/00-246C-0000-0005-BD11-5;German newspaper text, taken from the Frankfurter Rundschau as contained in the CD \"Multilingual Corpus 1\" of the European Corpus Initiative: http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC94T5;deu;Part-of-Speech Tags. Stuttgart-T\u00fcbingen-Tagset (STTS): http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/stts.asc;Morphological analysis (only for the first 60,000 tokens). These are the tags of the expanded STTS. The link is broken, but it could be used instead the info in ISOCAT: http://www.isocat.org/rest/dcs/376;The grammatical function in the directly dominating phrase. List of the grammatical funktions: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/kanten.html;The category of nonterminal nodes (phrases). List of the phrasal categories: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/knoten.html;In the project the annotation tool Annotate was used as a graphical user interface for an efficient structural annotation. It works together with parsers supporting the manual annotation and running in the background via a defined interface: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/annotate.html;Germany;Academics: free;Commercial: with licence: http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/corpus-license.html;Pre-condition: User must have a valid licence fo the CD \u201cMultilingual Corpus 1\u201d reselased by the European Corpus Initiative",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c0ca1e1d-20e0-59ae-9d16-89ba250b5ff2",
+    "notes": [
+        "The NEGRA corpus version 2 consists of 355,096 tokens (20,602 sentences) of German newspaper text, taken from the Frankfurter Rundschau as contained in the CD \u201cMultilingual Corpus 1\u201d of the European Corpus Initiative. It is based on approx. 60,000 tokens that were tagged for part-of speech at the Institut f\u00fcr maschinelle Sprachverarbeitung, Stuttgart. This corpus was extended, tagged with part-of-speech and completely annotated with syntactic structures. The corpus was created in the projects NEGRA (DFG Sonderforschungsbereich 378, Projekt C3) and LINC (Universit\u00e4t des Saarlandes) in Saarbr\u00fccken.",
+        "Das NEGRA Korpus Version 2 besteht aus 355.096 Tokens (20.602 S\u00e4tzen) deutschen Zeitungstextes aus der Frankfurter Rundschau. Die Texte sind der CD \u201cMultilingual Corpus 1\u201d der European Corpus Initiative entnommen. Es basiert auf ca. 60.000 Tokens, die am Institut f\u00fcr maschinelle Sprachverarbeitung, Stuttgart, mit Parts-of-Speech annotiert wurden. Dieses Korpus wurde erweitert, ebenfalls mit Parts-of-Speech versehen und vollst\u00e4ndig mit syntaktischen Strukturen annotiert. Der Aufbau des Korpus wurde in den Projekten NEGRA (DFG Sonderforschungsbereich 378, Projekt C3) und LINC (Universit\u00e4t des Saarlandes) in Saarbr\u00fccken durchgef\u00fchrt."
+    ],
+    "oai_identifier": [
+        "oai:fedora.clarin-d.uni-saarland.de:clarind-uds:negra"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus linguistics"
+        },
+        {
+            "name": "linguistics"
+        },
+        {
+            "name": "computational linguistics"
+        },
+        {
+            "name": "treebank"
+        },
+        {
+            "name": "syntactic annotation"
+        }
+    ],
+    "title": [
+        "NEGRA"
+    ],
+    "url": ""
+}

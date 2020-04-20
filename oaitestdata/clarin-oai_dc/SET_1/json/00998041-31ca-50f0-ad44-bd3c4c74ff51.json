@@ -1,0 +1,76 @@
+{
+    "Contact": [
+        "UJ"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "downloadable_files_count: 10",
+        "application/vnd.oasis.opendocument.text",
+        "text/plain",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/369",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/369"
+    ],
+    "PID": "http://hdl.handle.net/11321/369",
+    "PublicationTimestamp": "2017-05-30T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "UJ"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "CC"
+    ],
+    "author": [
+        "Byszuk, Joanna"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/369;2017-05-30T07:54:12Z;hdl_11321_3;hdl_11321_4;PracticeTextCorpus;Byszuk, Joanna;literature;polish literature;This is a corpus of texts.;2017-05-30;corpus;http://hdl.handle.net/11321/369;pol;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;CC;text/plain; charset=utf-8;text/plain;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;application/msword;text/plain;application/vnd.oasis.opendocument.text;text/plain;application/vnd.oasis.opendocument.text;downloadable_files_count: 10;UJ",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "00998041-31ca-50f0-ad44-bd3c4c74ff51",
+    "notes": [
+        "This is a corpus of texts."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/369"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "literature"
+        },
+        {
+            "name": "polish literature"
+        }
+    ],
+    "title": [
+        "PracticeTextCorpus"
+    ],
+    "url": ""
+}

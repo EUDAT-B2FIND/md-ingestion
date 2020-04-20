@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5756896</identifier>
+    <datestamp>2019-05-31T22:32:06Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele segakorpus: Seadused</dc:title>
+      <dc:title xml:lang="en">Corpus of Estonian law texts</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2013</dc:date>
+      <dc:date>Issued: 2013-01-07</dc:date>
+      <dc:date>Updated: 2015-03-02</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0007AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Eesti ja Euroopa seadusetekstide korpus. TEI P5 XML m&#228;rgendus, UTF8 kodeering.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Corpus of law texts in Estonian, contains Estonian legislation and European legislation in Estonian. 11 million words. 
+Markup: TEI P5 XML
+Encoding: UTF8</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "ClarinPL"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 20",
+        "text/plain; charset=utf-8",
+        "text/plain"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/61",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/61"
+    ],
+    "PID": "http://hdl.handle.net/11321/61",
+    "PublicationTimestamp": "2015-04-07T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "ClarinPL"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Pisarze, Pisarze"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/61;2015-04-07T15:18:32Z;hdl_11321_3;hdl_11321_4;Sample20;Pisarze, Pisarze;prus_faraon_1897.txt\r\nbalucki_przebudzeni_1864.txt\r\nreymont_komediantka_1896.txt\r\nzeromski_syzyfowe_1897.txt\r\nzapolska_kaska_1888.txt\r\nkraszewski_piast_1888.txt\r\ndeotyma_panienka_1893.txt\r\nswietochowski_prawdy_1888.txt\r\ngodlewska_kwiat_1897.txt\r\nmarrene_bozek_1871.txt\r\nbalucki_murzyn_1875.txt\r\nsygietynski_calvados_1884.txt\r\nkorzeniowski_krewni_1856.txt\r\ndeotyma_rozdrozu_1877.txt\r\nzeromski_bezdomni_1899.txt\r\nkorzeniowski_emeryt_1851.txt\r\nkaczkowski_grob_1857.txt\r\nsienkiewicz_ogniem_1884.txt\r\nsienkiewicz_rodzina_1894.txt\r\ndeotyma_zagadka_1879.txt;2015-04-07;corpus;http://hdl.handle.net/11321/61;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain; charset=utf-8;downloadable_files_count: 20;ClarinPL",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5bd0f233-5c02-585a-af9f-eaaee641b4c3",
+    "notes": [
+        "prus_faraon_1897.txt\r\nbalucki_przebudzeni_1864.txt\r\nreymont_komediantka_1896.txt\r\nzeromski_syzyfowe_1897.txt\r\nzapolska_kaska_1888.txt\r\nkraszewski_piast_1888.txt\r\ndeotyma_panienka_1893.txt\r\nswietochowski_prawdy_1888.txt\r\ngodlewska_kwiat_1897.txt\r\nmarrene_bozek_1871.txt\r\nbalucki_murzyn_1875.txt\r\nsygietynski_calvados_1884.txt\r\nkorzeniowski_krewni_1856.txt\r\ndeotyma_rozdrozu_1877.txt\r\nzeromski_bezdomni_1899.txt\r\nkorzeniowski_emeryt_1851.txt\r\nkaczkowski_grob_1857.txt\r\nsienkiewicz_ogniem_1884.txt\r\nsienkiewicz_rodzina_1894.txt\r\ndeotyma_zagadka_1879.txt"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/61"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "Sample20"
+    ],
+    "url": ""
+}

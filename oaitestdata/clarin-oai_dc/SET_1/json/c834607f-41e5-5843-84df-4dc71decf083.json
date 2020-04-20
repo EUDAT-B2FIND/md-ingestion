@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4878",
+    "MetadataAccess": [
+        "oai:ota:oucs:4878"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Francklin, Thomas, 1721-1784."
+    ],
+    "fulltext": "oai:ota:oucs:4878;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4878.xml;Sermons on the relative duties: Preached at Queen-Street Chapel, and St. Paul's Covent-Garden. By the Revd. Tho. Francklin, ...;Francklin, Thomas, 1721-1784.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c834607f-41e5-5843-84df-4dc71decf083",
+    "oai_identifier": [
+        "oai:ota:oucs:4878"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Sermons on the relative duties: Preached at Queen-Street Chapel, and St. Paul's Covent-Garden. By the Revd. Tho. Francklin, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4878.xml"
+}

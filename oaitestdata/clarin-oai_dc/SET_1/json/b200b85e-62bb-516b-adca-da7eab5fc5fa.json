@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 385 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0046",
+    "MetadataAccess": [
+        "oai:ota:oucs:0046"
+    ],
+    "PublicationTimestamp": "1861-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1861"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Eliot, George, 1819-1880"
+    ],
+    "fulltext": "oai:ota:oucs:0046;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0046.xml;Silas Marner;Eliot, George, 1819-1880;1861;text_and_corpus_linguistics;Novels -- Great Britain -- 19th century;eng;Oxford Text Archive, University of Oxford;text/plain;(1 file : ca. 385 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b200b85e-62bb-516b-adca-da7eab5fc5fa",
+    "oai_identifier": [
+        "oai:ota:oucs:0046"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Silas Marner"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0046.xml"
+}

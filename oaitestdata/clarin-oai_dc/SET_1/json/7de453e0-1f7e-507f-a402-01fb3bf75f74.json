@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=a83c9d04cb7a11e1a404080027e73ea2359e10ea62b940109aabe03684aa5ea4",
+    "MetadataAccess": [
+        "a83c9d04cb7a11e1a404080027e73ea2359e10ea62b940109aabe03684aa5ea4"
+    ],
+    "PublicationTimestamp": "2012-11-28T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "a83c9d04cb7a11e1a404080027e73ea2359e10ea62b940109aabe03684aa5ea4;2018-11-15T16:39:39Z;lexicalConceptualResource;lexicalConceptualResource:ontology;Hontology;Hontology (H stands for hotel, hostal and hostel) (available at http://ontolp.inf.pucrs.br/Recursos/downloads-Hontology.php) is a new multilingual ontology for the accommodation sector freely available, containing 282 concepts categorized into 16 top-level concepts. \n\nThe concepts of other vocabularies such as Dbpedia.org and Schema.org. were reused and new concepts and properties from online reviews (e.g. booking.com or realtravel.com) with examples of multilingual texts provided by products and services consumers were integrated and manually annotated with different labels, throught terms correlation, rules (lexical patterns) and synonyms, in four languages by experts, English, Portuguese, Spanish and French. For more informations about the Hontology development, the process is described in Chaves and Trojahn (2010), and Chaves et al. (to appear).\n\nHontology is useful for a wide range of applications within the accommodation sector, including ontology-based information extraction, text annotation and information visualisation.;2012-11-28",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7de453e0-1f7e-507f-a402-01fb3bf75f74",
+    "notes": [
+        "Hontology (H stands for hotel, hostal and hostel) (available at http://ontolp.inf.pucrs.br/Recursos/downloads-Hontology.php) is a new multilingual ontology for the accommodation sector freely available, containing 282 concepts categorized into 16 top-level concepts. \n\nThe concepts of other vocabularies such as Dbpedia.org and Schema.org. were reused and new concepts and properties from online reviews (e.g. booking.com or realtravel.com) with examples of multilingual texts provided by products and services consumers were integrated and manually annotated with different labels, throught terms correlation, rules (lexical patterns) and synonyms, in four languages by experts, English, Portuguese, Spanish and French. For more informations about the Hontology development, the process is described in Chaves and Trojahn (2010), and Chaves et al. (to appear).\n\nHontology is useful for a wide range of applications within the accommodation sector, including ontology-based information extraction, text annotation and information visualisation."
+    ],
+    "oai_identifier": [
+        "a83c9d04cb7a11e1a404080027e73ea2359e10ea62b940109aabe03684aa5ea4"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:ontology"
+    ],
+    "state": "active",
+    "title": [
+        "Hontology"
+    ]
+}

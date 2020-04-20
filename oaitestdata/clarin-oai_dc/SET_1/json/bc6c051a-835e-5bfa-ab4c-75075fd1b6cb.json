@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5091",
+    "MetadataAccess": [
+        "oai:ota:oucs:5091"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Carey, Henry, 1687?-1743."
+    ],
+    "fulltext": "oai:ota:oucs:5091;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/5091.xml;Cupid and Hymen: or, a voyage to the isles of love and matrimony. ... Translated from the French original. To which is added, The batchelor's estimate of the expences attending a married life. The married man's answer to it : ... By John Single, ...;Carey, Henry, 1687?-1743.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bc6c051a-835e-5bfa-ab4c-75075fd1b6cb",
+    "oai_identifier": [
+        "oai:ota:oucs:5091"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Cupid and Hymen: or, a voyage to the isles of love and matrimony. ... Translated from the French original. To which is added, The batchelor's estimate of the expences attending a married life. The married man's answer to it : ... By John Single, ..."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5091.xml"
+}

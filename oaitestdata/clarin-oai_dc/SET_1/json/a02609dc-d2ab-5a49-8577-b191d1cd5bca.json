@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "greater than 5 MB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0288",
+    "MetadataAccess": [
+        "oai:ota:oucs:0288"
+    ],
+    "PublicationTimestamp": "1983-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1983"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Dictionaries"
+    ],
+    "Rights": [
+        "Although this resource has been deposited with us, it is not currently available for re-use by others.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:0288;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0288.xml; Oxford dictionary of idiomatic English  / compiled by J.K. Cordy;1983;text_and_corpus_linguistics;Dictionaries -- 20th century;eng;Oxford Text Archive, University of Oxford;greater than 5 MB;Text;Dictionaries;Although this resource has been deposited with us, it is not currently available for re-use by others.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a02609dc-d2ab-5a49-8577-b191d1cd5bca",
+    "oai_identifier": [
+        "oai:ota:oucs:0288"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Dictionaries -- th century"
+        }
+    ],
+    "title": [
+        " Oxford dictionary of idiomatic English  / compiled by J.K. Cordy"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0288.xml"
+}

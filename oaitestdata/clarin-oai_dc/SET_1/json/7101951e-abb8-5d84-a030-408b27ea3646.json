@@ -1,0 +1,110 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 3",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0015-8DAF-4",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0015-8DAF-4"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0015-8DAF-4",
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/231720",
+        "info:eu-repo/grantAgreement/EC/FP7/247762"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CC-BY-NC-SA + LDC99T42",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-pcedt2",
+        "RES"
+    ],
+    "author": [
+        "\u017dabokrtsk\u00fd, Zden\u011bk",
+        "Panevov\u00e1, Jarmila",
+        "Ure\u0161ov\u00e1, Zde\u0148ka",
+        "Haji\u010d, Jan",
+        "\u0160t\u011bp\u00e1nek, Jan",
+        "Mikulov\u00e1, Marie",
+        "Popelka, Jan",
+        "Toman, Josef",
+        "Fu\u010d\u00edkov\u00e1, Eva",
+        "Haji\u010dov\u00e1, Eva",
+        "Cinkov\u00e1, Silvie",
+        "Sgall, Petr",
+        "Pajas, Petr",
+        "\u0160indlerov\u00e1, Jana",
+        "Semeck\u00fd, Ji\u0159\u00ed"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0015-8DAF-4;2017-11-09T14:20:27Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Prague Czech-English Dependency Treebank 2.0;Haji\u010d, Jan;Haji\u010dov\u00e1, Eva;Panevov\u00e1, Jarmila;Sgall, Petr;Cinkov\u00e1, Silvie;Fu\u010d\u00edkov\u00e1, Eva;Mikulov\u00e1, Marie;Pajas, Petr;Popelka, Jan;Semeck\u00fd, Ji\u0159\u00ed;\u0160indlerov\u00e1, Jana;\u0160t\u011bp\u00e1nek, Jan;Toman, Josef;Ure\u0161ov\u00e1, Zde\u0148ka;\u017dabokrtsk\u00fd, Zden\u011bk;parallel treebank;PCEDT;parallel corpus;Wall Street Journal;WSJ;Penn Treebank;dependency annotation;PDT;Texts\r\n\r\nThe Prague Czech-English Dependency Treebank 2.0 (PCEDT 2.0) is a major update of the Prague Czech-English Dependency Treebank 1.0 (LDC2004T25). It is a manually parsed Czech-English parallel corpus sized over 1.2 million running words in almost 50,000 sentences for each part.\r\n\r\nData\r\n\r\nThe English part contains the entire Penn Treebank - Wall Street Journal Section (LDC99T42). The Czech part consists of Czech translations of all of the Penn Treebank-WSJ texts. The corpus is 1:1 sentence-aligned. An additional automatic alignment on the node level (different for each annotation layer) is part of this release, too. The original Penn Treebank-like file structure (25 sections, each containing up to one hundred files) has been preserved. Only those PTB documents which have both POS and structural annotation (total of 2312 documents) have been translated to Czech and made part of this release.\r\n\r\nEach language part is enhanced with a comprehensive manual linguistic annotation in the PDT 2.0 style (LDC2006T01, Prague Dependency Treebank 2.0). The main features of this annotation style are:\r\ndependency structure of the content words and coordinating and similar structures (function words are attached as their attribute values)\r\nsemantic labeling of content words and types of coordinating structures\r\nargument structure, including an argument structure (\"valency\") lexicon for both languages\r\nellipsis and anaphora resolution.\r\nThis annotation style is called tectogrammatical annotation and it constitutes the tectogrammatical layer in the corpus. For more details see below and documentation.\r\n\r\nAnnotation of the Czech part\r\n\r\nSentences of the Czech translation were automatically morphologically annotated and parsed into surface-syntax dependency trees in the PDT 2.0 annotation style. This annotation style is sometimes called analytical annotation; it constitutes the analytical layer of the corpus. The manual tectogrammatical (deep-syntax) annotation was built as a separate layer above the automatic analytical (surface-syntax) parse. A sample of 2,000 sentences was manually annotated on the analytical layer.\r\n\r\nAnnotation of the English part\r\n\r\nThe resulting manual tectogrammatical annotation was built above an automatic transformation of the original phrase-structure annotation of the Penn Treebank into surface dependency (analytical) representations, using the following additional linguistic information from other sources:\r\nPropBank (LDC2004T14)\r\nVerbNet\r\nNomBank (LDC2008T23)\r\nflat noun phrase structures (by courtesy of D. Vadas and J.R. Curran)\r\nFor each sentence, the original Penn Treebank phrase structure trees are preserved in this corpus together with their links to the analytical and tectogrammatical annotation.;2012;corpus;http://hdl.handle.net/11858/00-097C-0000-0015-8DAF-4;ces;eng;info:eu-repo/grantAgreement/EC/FP7/231720;info:eu-repo/grantAgreement/EC/FP7/247762;CC-BY-NC-SA + LDC99T42;https://lindat.mff.cuni.cz/repository/xmlui/page/license-pcedt2;RES;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 3;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/pcedt2.0",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7101951e-abb8-5d84-a030-408b27ea3646",
+    "notes": [
+        "Texts\r\n\r\nThe Prague Czech-English Dependency Treebank 2.0 (PCEDT 2.0) is a major update of the Prague Czech-English Dependency Treebank 1.0 (LDC2004T25). It is a manually parsed Czech-English parallel corpus sized over 1.2 million running words in almost 50,000 sentences for each part.\r\n\r\nData\r\n\r\nThe English part contains the entire Penn Treebank - Wall Street Journal Section (LDC99T42). The Czech part consists of Czech translations of all of the Penn Treebank-WSJ texts. The corpus is 1:1 sentence-aligned. An additional automatic alignment on the node level (different for each annotation layer) is part of this release, too. The original Penn Treebank-like file structure (25 sections, each containing up to one hundred files) has been preserved. Only those PTB documents which have both POS and structural annotation (total of 2312 documents) have been translated to Czech and made part of this release.\r\n\r\nEach language part is enhanced with a comprehensive manual linguistic annotation in the PDT 2.0 style (LDC2006T01, Prague Dependency Treebank 2.0). The main features of this annotation style are:\r\ndependency structure of the content words and coordinating and similar structures (function words are attached as their attribute values)\r\nsemantic labeling of content words and types of coordinating structures\r\nargument structure, including an argument structure (\"valency\") lexicon for both languages\r\nellipsis and anaphora resolution.\r\nThis annotation style is called tectogrammatical annotation and it constitutes the tectogrammatical layer in the corpus. For more details see below and documentation.\r\n\r\nAnnotation of the Czech part\r\n\r\nSentences of the Czech translation were automatically morphologically annotated and parsed into surface-syntax dependency trees in the PDT 2.0 annotation style. This annotation style is sometimes called analytical annotation; it constitutes the analytical layer of the corpus. The manual tectogrammatical (deep-syntax) annotation was built as a separate layer above the automatic analytical (surface-syntax) parse. A sample of 2,000 sentences was manually annotated on the analytical layer.\r\n\r\nAnnotation of the English part\r\n\r\nThe resulting manual tectogrammatical annotation was built above an automatic transformation of the original phrase-structure annotation of the Penn Treebank into surface dependency (analytical) representations, using the following additional linguistic information from other sources:\r\nPropBank (LDC2004T14)\r\nVerbNet\r\nNomBank (LDC2008T23)\r\nflat noun phrase structures (by courtesy of D. Vadas and J.R. Curran)\r\nFor each sentence, the original Penn Treebank phrase structure trees are preserved in this corpus together with their links to the analytical and tectogrammatical annotation."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0015-8DAF-4"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel treebank"
+        },
+        {
+            "name": "PCEDT"
+        },
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "Wall Street Journal"
+        },
+        {
+            "name": "WSJ"
+        },
+        {
+            "name": "Penn Treebank"
+        },
+        {
+            "name": "dependency annotation"
+        },
+        {
+            "name": "PDT"
+        }
+    ],
+    "title": [
+        "Prague Czech-English Dependency Treebank 2.0"
+    ],
+    "url": ""
+}

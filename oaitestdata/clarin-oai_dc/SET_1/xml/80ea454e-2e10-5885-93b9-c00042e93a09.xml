@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-67</identifier>
+    <datestamp>2018-07-23T09:13:43Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Dialoghi Italiani di Giordano Bruno</dc:title>
+      <dc:creator>AA. VV., AA. VV.</dc:creator>
+      <dc:subject>Philosophy</dc:subject>
+      <dc:subject>Religion</dc:subject>
+      <dc:subject>Science</dc:subject>
+      <dc:description>This collection of the works of Giordano Bruno was packaged in the 70s - 80s in cooperation with the Insitute for the European Intellectual Lexicon, then called Study Centre of the CNR, ILIESI today.&#13;
+&#13;
+The first works in this collection were originally encoded on mechanographic punched cards around 1969, at the beginning of the humanities computing era.</dc:description>
+      <dc:date>2016-11-16</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-67</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

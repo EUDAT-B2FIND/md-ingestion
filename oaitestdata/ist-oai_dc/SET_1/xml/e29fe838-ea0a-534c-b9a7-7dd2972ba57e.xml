@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:109</identifier>
+    <datestamp>2018-07-24T11:51:46Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Input files and scripts from "Evolution of gene dosage on the Z-chromosome of schistosome parasites" by Picard M.A.L., et al (2018)</dc:title>
+      <dc:creator>Vicoso, Beatriz</dc:creator>
+      <dc:subject>570 Life sciences; biology</dc:subject>
+      <dc:subject>576 Genetics and evolution</dc:subject>
+      <dc:description>Input files and scripts from "Evolution of gene dosage on the Z-chromosome of schistosome parasites" by Picard M.A.L., et al (2018).</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>archive</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/109/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/109/1/SupplementaryMethods.zip</dc:identifier>
+      <dc:identifier>  Vicoso, Beatriz   Input files and scripts from "Evolution of gene dosage on the Z-chromosome of schistosome parasites" by Picard M.A.L., et al (2018).  [Data Collection]    (In Press)  </dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:109</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/561",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/561"
+    ],
+    "PID": "http://hdl.handle.net/11321/561",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "BSD 2 Clause",
+        "https://opensource.org/licenses/BSD-2-Clause",
+        "PUB"
+    ],
+    "author": [
+        "Nito\u0144, Bart\u0142omiej"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/561;2018-07-26T12:00:31Z;hdl_11321_3;hdl_11321_4;Periphraser;Nito\u0144, Bart\u0142omiej;nominal phrases;semantic base;semantic knowledge base browser;automatic semantic and syntactic normalization;REST API;automatic error detection;Periphraser is a tool for storing and presenting knowledge base of conventionalized periphrastic nominal expressions (i.e. phrases headed by a noun) together with their textually attested realizations. For instance, the database entry for the phrase ,,Robert Lewandowski'' in the demo for Polish will include the phrase ,,the Polish international'' while ,,pediatrics'' will be featured as ,,medical care for children''. It allows contacting with database using REST API as well as exporting it to XML or CSV format. For Polish language, it also provides some more complex mechanisms like: automatic semantic and syntactic normalization, errors autodetection (also based on NKJP frequency and amount of results returned by the web browser), and simple interface for commenting and marking possibly wrong entries or ones needing improvement.;2018;toolService;http://hdl.handle.net/11321/561;pol;BSD 2 Clause;https://opensource.org/licenses/BSD-2-Clause;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/Periphraser",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "25aec374-0fe7-56d5-802e-01602e073954",
+    "notes": [
+        "Periphraser is a tool for storing and presenting knowledge base of conventionalized periphrastic nominal expressions (i.e. phrases headed by a noun) together with their textually attested realizations. For instance, the database entry for the phrase ,,Robert Lewandowski'' in the demo for Polish will include the phrase ,,the Polish international'' while ,,pediatrics'' will be featured as ,,medical care for children''. It allows contacting with database using REST API as well as exporting it to XML or CSV format. For Polish language, it also provides some more complex mechanisms like: automatic semantic and syntactic normalization, errors autodetection (also based on NKJP frequency and amount of results returned by the web browser), and simple interface for commenting and marking possibly wrong entries or ones needing improvement."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/561"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "nominal phrases"
+        },
+        {
+            "name": "semantic base"
+        },
+        {
+            "name": "semantic knowledge base browser"
+        },
+        {
+            "name": "automatic semantic syntactic normalization"
+        },
+        {
+            "name": "REST API"
+        },
+        {
+            "name": "automatic error detection"
+        }
+    ],
+    "title": [
+        "Periphraser"
+    ],
+    "url": ""
+}

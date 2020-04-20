@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3589",
+    "MetadataAccess": [
+        "oai:ota:oucs:3589"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Churchill, Charles, 1731-1764."
+    ],
+    "fulltext": "oai:ota:oucs:3589;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3589.xml;Gotham. A poem. Book II. By C. Churchill;Churchill, Charles, 1731-1764.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2f1d3912-d1cc-5051-845e-9935309a1b7b",
+    "oai_identifier": [
+        "oai:ota:oucs:3589"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Gotham. A poem. Book II. By C. Churchill"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3589.xml"
+}

@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/273</identifier>
+    <datestamp>2016-09-20T12:48:40Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>plWordNet 3.0</dc:title>
+      <dc:title>S&#322;owosie&#263; 3.0</dc:title>
+      <dc:creator>Wroclaw University of Technology</dc:creator>
+      <dc:subject>lexical unit</dc:subject>
+      <dc:subject>lexico-semantic relations</dc:subject>
+      <dc:subject>mapping</dc:subject>
+      <dc:subject>Princeton WordNet</dc:subject>
+      <dc:subject>bilingual</dc:subject>
+      <dc:subject>plWordNet</dc:subject>
+      <dc:description>plWordNet is a lexico-semantic network which reflects the lexical system of the Polish language. plWN currently contains 178 000 nouns, verbs, adjectives, and adverbs, 259 000 word senses, and over 600 000 relations and 240 000 inter-lingual relations between lexical units. It is now the largest wordnet in the world and is still growing.&#13;
+&#13;
+Senses in plWordNet are interconnected by relations. In the resulting network, each word is defined implicitly in reference to other words. For example, samoch&#243;d 'car' is a kind of pojazd drogowy 'road vehicle'; it is a whole consisting of silnik 'engine', spryskiwacz 'windscreen washer', podwozie 'chassis' and so on; its close counterpart is the colloquial fura 'wheels'.&#13;
+&#13;
+Among plWordNet's numerous applications there is its use as a Polish-English and English-Polish dictionary -- the effect of mapping onto Princeton WordNet (the first and for many years the largest wordnet in the world). plWordNet is also an important resource in natural language processing and in artificial intelligence research. For example, it is used by Google Translate for the purpose of machine translation.&#13;
+&#13;
+The University has made plWordNet available free of charge for all applications, including commercial ones, on a licence modelled on the Princeton WordNet licence. Users may browse plWordNet via mobile version and via WordNetLoom-Viewer (application enabling display of plWN entries), as well as download source files. Programmers may access plWordNet via Web service.&#13;
+&#13;
+We provide (currently only in download version) 31 000 lexical units marked with their sentiment values: positive, negative, ambiguous or neutral.</dc:description>
+      <dc:date>2016-04-26</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/273</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>plWordNet</dc:rights>
+      <dc:rights>http://clarin-pl.eu/en/licenses/plwordnet-2/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Wroclaw University of Technology</dc:publisher>
+      <dc:source>http://plwordnet.pwr.wroc.pl/wordnet/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

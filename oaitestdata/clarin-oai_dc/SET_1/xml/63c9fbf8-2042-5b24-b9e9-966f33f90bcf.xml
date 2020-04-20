@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1121</identifier>
+    <datestamp>2016-04-06T16:39:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Bonner Fr&#252;hneuhochdeutschkorpus (FnhdC)</dc:title>
+      <dc:contributor>Schr&#246;der, Prof. Dr. Bernhard</dc:contributor>
+      <dc:contributor>Wegera, Prof. Dr. Klaus-Peter</dc:contributor>
+      <dc:contributor>Solms, Prof. Dr. Hans-Joachim</dc:contributor>
+      <dc:contributor>Schmitz, Dr. Hans-Christian</dc:contributor>
+      <dc:contributor>Fisseni, Bernhard</dc:contributor>
+      <dc:subject>Germanistik</dc:subject>
+      <dc:description>Digital, morphologically annotated (N, V, A) part of the Bonn Corpus of Early New High German; used to create the Grammatik des Fr&#252;hneuhochdeutschen (III. Nouns; IV. Verbs; VI. Adjectives); morphologisch annotiert; Materialgrundlage f&#252;r die Erarbeitung der B&#228;nde 3, 4 und 6 der "Grammatik des Fr&#252;hneuhochdeutschen"</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1121</dc:identifier>
+      <dc:language>deu</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:publisher>Korpora.org</dc:publisher>
+      <dc:publisher>Fakult&#228;t Geisteswissenschaften, Universit&#228;t Duisburg-Essen</dc:publisher>
+      <dc:source>http://www.korpora.org/Fnhd</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

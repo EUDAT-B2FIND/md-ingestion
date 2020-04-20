@@ -1,0 +1,166 @@
+
+ Statistics of
+	community	materialscloud
+	subset		SET_1
+	# of records	83
+  see as well oaidata/materialscloud-oai_dc/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //dc:title
+   
+  |--    83 |  100 |    81 |   98
+
+ |-> Description      <--       //dc:description
+
+  |--    83 |  100 |    61 |   73
+
+ |-> Tags             <--       //dc:subject
+ 
+  |--    83 |  100 |    83 |  100
+      |- 8     : MARVEL                              |
+      |- 6     : two-dimensional                     |
+      |- 6     : three-dimensional                   |
+      |- 6     : machine learning                    |
+      |- 5     : enhanced sampling                   |
+      |- 4     : Nanoporous materials                |
+      |- 4     : Machine learning                    |
+      |- 3     : DFT                                 |
+      |- 3     : SSSP                                |
+      |- 3     : metadynamics                        |
+
+ |-> DOI              <--                     
+  |--    83 |  100 |    83 |  100
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2019.0015/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2017.0007/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2017.0001/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2018.0020/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2019.0023/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2018.0014/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2019.0024/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2019.0009/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2019.0029/v1      |
+      |- 1     : http://dx.doi.org/doi:10.24435/materialscloud:2019.0007/v2      |
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //dc:identifier
+
+  |--   166 |  200 |   166 |  200
+      |- 2     : https://archive.materialscloud.org/2018.0011/v1      |
+      |- 2     : https://archive.materialscloud.org/2018.0011/v2      |
+      |- 2     : https://archive.materialscloud.org/2018.0022/v1      |
+      |- 2     : https://archive.materialscloud.org/2018.0011/v4      |
+      |- 2     : https://archive.materialscloud.org/2018.0015/v1      |
+      |- 2     : https://archive.materialscloud.org/2019.0009/v1      |
+      |- 2     : https://archive.materialscloud.org/2019.0014/v1      |
+      |- 2     : https://archive.materialscloud.org/2017.0003/v1      |
+      |- 2     : https://archive.materialscloud.org/2019.0027/v1      |
+      |- 2     : https://archive.materialscloud.org/2017.0003/v2      |
+
+ |-> RelatedIdentifier <--       //dc:identifier
+
+  |--   166 |  200 |   166 |  200
+      |- 2     : https://archive.materialscloud.org/2018.0011/v1      |
+      |- 2     : https://archive.materialscloud.org/2018.0011/v2      |
+      |- 2     : https://archive.materialscloud.org/2018.0022/v1      |
+      |- 2     : https://archive.materialscloud.org/2018.0011/v4      |
+      |- 2     : https://archive.materialscloud.org/2018.0015/v1      |
+      |- 2     : https://archive.materialscloud.org/2019.0009/v1      |
+      |- 2     : https://archive.materialscloud.org/2019.0014/v1      |
+      |- 2     : https://archive.materialscloud.org/2017.0003/v1      |
+      |- 2     : https://archive.materialscloud.org/2019.0027/v1      |
+      |- 2     : https://archive.materialscloud.org/2017.0003/v2      |
+
+ |-> MetaDataAccess   <--                     
+  |--    83 |  100 |    83 |  100
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+      |- 1     : https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&iden [...(42 chars follow)...] |
+
+ |-> Creator          <--       //dc:creator
+ 
+  |--    83 |  100 |    82 |   99
+      |- 3     : Talirz, Leopold                     |
+      |- 2     : Steinrück, Hans-Peter               |
+      |- 2     : Pasquarello, Alfredo                |
+      |- 2     : Chen, Wei                           |
+      |- 2     : Boyd, Peter G.                      |
+      |- 1     : Hozzova, Jana                       |
+      |- 1     : Grossman, Jeffrey                   |
+      |- 1     : Grisafi, Andrea                     |
+      |- 1     : MacManus-Driscoll, Judith L.        |
+      |- 1     : Mace, Amber                         |
+
+ |-> Publisher        <--       //dc:publisher
+
+  |--    83 |  100 |    83 |  100
+      |- 83    : Materials Cloud                     |
+
+ |-> Contributor      <--       //dc:contributor
+
+  |--     0 |    0 |     0 |    0
+
+ |-> PublicationYear  <--       //dc:date
+    
+  |--    83 |  100 |    83 |  100
+      |- 42    : 2019                                |
+      |- 33    : 2018                                |
+      |- 8     : 2017                                |
+
+ |-> Rights           <--       //dc:rights
+  
+  |--    83 |  100 |    83 |  100
+      |- 78    : Creative Commons Attribution 4.0 International https://creativecommons.org/licen [...(20 chars follow)...] |
+      |- 5     : Creative Commons Attribution Non Commercial 4.0 International https://creativeco [...(38 chars follow)...] |
+
+ |-> OpenAccess       <--       <string>true</string>
+
+  |--    83 |  100 |    83 |  100
+      |- 83    : true                                |
+
+ |-> Contact          <--       //dc:publisher
+
+  |--    83 |  100 |    83 |  100
+      |- 83    : Materials Cloud                     |
+
+ |-> Language         <--       //dc:language
+
+  |--    83 |  100 |    83 |  100
+      |- 83    : English                             |
+
+ |-> ResourceType     <--       //dc:type
+    
+  |--    83 |  100 |    83 |  100
+      |- 83    : Dataset                             |
+
+ |-> Format           <--       //dc:format
+  
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       <string>Materials Science and Engineering</string>
+
+  |--    83 |  100 |    83 |  100
+      |- 83    : Materials Science And Engineering      |
+
+ |-> SpatialCoverage  <--       //dc:coverage,//dc:spatial
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //dc:coverage,//dc:temporal
+
+  |--     0 |    0 |     0 |    0
+

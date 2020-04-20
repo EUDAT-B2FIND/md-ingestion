@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3909",
+    "MetadataAccess": [
+        "oai:ota:oucs:3909"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Kenrick, W. (William), 1725?-1779."
+    ],
+    "fulltext": "oai:ota:oucs:3909;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3909.xml;A defence of Mr. Kenrick's review of Dr. Johnson's Shakespeare: containing a number of curious and ludicrous anecdotes of literary biography. By a friend.;Kenrick, W. (William), 1725?-1779.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d2b15274-80cd-566c-8b3d-c2976ee53e6f",
+    "oai_identifier": [
+        "oai:ota:oucs:3909"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "A defence of Mr. Kenrick's review of Dr. Johnson's Shakespeare: containing a number of curious and ludicrous anecdotes of literary biography. By a friend."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3909.xml"
+}

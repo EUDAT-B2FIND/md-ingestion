@@ -1,0 +1,92 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 4",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1088",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1088"
+    ],
+    "PID": "http://hdl.handle.net/11356/1088",
+    "PublicationTimestamp": "2017-02-16T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://nl.ijs.si/janes/viri/rocno-oznaceni-korpusi/#Janes-Vejica",
+        "https://doi.org/10.1007/s10579-018-9425-z"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Logar, Polona",
+        "Erjavec, Toma\u017e",
+        "Popi\u010d, Damjan",
+        "Fi\u0161er, Darja",
+        "Zupan, Katja",
+        "Kav\u010di\u010d, Teja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1088;2018-12-04T16:12:01Z;hdl_11356_1023;hdl_11356_1024;Tweet comma corpus Janes-Vejica 1.0;Popi\u010d, Damjan;Zupan, Katja;Logar, Polona;Kav\u010di\u010d, Teja;Erjavec, Toma\u017e;Fi\u0161er, Darja;computer-mediated communication;Twitter;comma placement;TEI;manual annotation;Janes-Vejica is a corpus of Slovene tweets where commas are annotated with the reason for their (in)correct use, according to the supplied typology. The corpus was sampled from the Janes-Norm corpus (http://hdl.handle.net/11356/1084), which was manually annotated for tokenisation, sentence segmentation, and word normalisation, and automatically for morphosyntactic descriptions and lemmas.\r\n\r\nThe corpus is further described in:\r\n POPI\u010c, Damjan, FI\u0160ER, Darja, ZUPAN, Katja, LOGAR, Polona. Raba vejice v uporabni\u0161kih spletnih vsebinah. Proceedings of the Conference on Language Technologies & Digital Humanities, Ljubljana, Slovenia. 2016, pp. 149-153. http://www.sdjt.si/wp/dogodki/konference/jtdh-2016/zbornik/;2017-02-16;corpus;http://hdl.handle.net/11356/1088;slv;http://nl.ijs.si/janes/viri/rocno-oznaceni-korpusi/#Janes-Vejica;https://doi.org/10.1007/s10579-018-9425-z;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/pdf;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 4;Jo\u017eef Stefan Institute;http://nl.ijs.si/janes/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "06de2527-bb78-59bd-b9a6-ad53b9c8fa4f",
+    "notes": [
+        "Janes-Vejica is a corpus of Slovene tweets where commas are annotated with the reason for their (in)correct use, according to the supplied typology. The corpus was sampled from the Janes-Norm corpus (http://hdl.handle.net/11356/1084), which was manually annotated for tokenisation, sentence segmentation, and word normalisation, and automatically for morphosyntactic descriptions and lemmas.\r\n\r\nThe corpus is further described in:\r\n POPI\u010c, Damjan, FI\u0160ER, Darja, ZUPAN, Katja, LOGAR, Polona. Raba vejice v uporabni\u0161kih spletnih vsebinah. Proceedings of the Conference on Language Technologies & Digital Humanities, Ljubljana, Slovenia. 2016, pp. 149-153. http://www.sdjt.si/wp/dogodki/konference/jtdh-2016/zbornik/"
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1088"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "Twitter"
+        },
+        {
+            "name": "comma placement"
+        },
+        {
+            "name": "TEI"
+        },
+        {
+            "name": "manual annotation"
+        }
+    ],
+    "title": [
+        "Tweet comma corpus Janes-Vejica 1.0"
+    ],
+    "url": ""
+}

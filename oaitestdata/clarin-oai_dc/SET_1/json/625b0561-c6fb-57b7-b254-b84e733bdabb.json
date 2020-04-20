@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4534",
+    "MetadataAccess": [
+        "oai:ota:oucs:4534"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Griffith, Mrs. (Elizabeth), 1720?-1793."
+    ],
+    "fulltext": "oai:ota:oucs:4534;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4534.xml;The history of Lady Barton: a novel, in letters, by Mrs. Griffith. In three volumes. ... [pt.1];Griffith, Mrs. (Elizabeth), 1720?-1793.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "625b0561-c6fb-57b7-b254-b84e733bdabb",
+    "oai_identifier": [
+        "oai:ota:oucs:4534"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The history of Lady Barton: a novel, in letters, by Mrs. Griffith. In three volumes. ... [pt.1]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4534.xml"
+}

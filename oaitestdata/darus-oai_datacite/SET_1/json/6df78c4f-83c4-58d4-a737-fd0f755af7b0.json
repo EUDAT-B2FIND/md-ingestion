@@ -1,0 +1,24 @@
+{
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-475",
+    "MetadataAccess": [
+        "doi:10.18419/darus-475"
+    ],
+    "fulltext": "doi:10.18419/darus-475;2019-12-03T01:00:00Z;all;10.18419/darus-475;G\u00e4rtner, Markus;Markus;G\u00e4rtner;0000-0002-2687-4350;Universit\u00e4t Stuttgart;Kushnarenko, Volodymyr;Volodymyr;Kushnarenko;0000-0001-7427-2410;Universit\u00e4t Ulm;Florian Fritze;Florian;Fritze;0000-0002-9949-3815;Universit\u00e4t Stuttgart;RePlay-DH Client;DaRUS;2019;Arts and Humanities;Computer and Information Science;workflow tracking;process metadata;digital humanities;G\u00e4rtner, Markus;Markus;G\u00e4rtner;Universit\u00e4t Stuttgart;2019-06-25;2019-09-27;2019-12-02;program source code;http://www.lrec-conf.org/proceedings/lrec2018/pdf/707.pdf;http://www.lrec-conf.org/proceedings/lrec2018/summaries/707.html;75658;46748160;text/plain;application/x-tar;1.0;Code and deployable from this project are licensed under the MIT license:  https://opensource.org/licenses/MIT;Integrated Tool for tracking, versioning and publishing workflows.\r\n<ul>\r\n    <li>Document your workflows on the fly while working</li>\r\n    <li>Have all your workflow data backed up in a local Git repository</li>\r\n    <li>Export metadata or data from your workflow in various formats</li>\r\n    <li>Publish directly to institutional repositories such as DSpace from within the client</li>\r\n</ul>",
+    "group": "darus",
+    "groups": [
+        {
+            "name": "darus"
+        }
+    ],
+    "name": "6df78c4f-83c4-58d4-a737-fd0f755af7b0",
+    "oai_identifier": [
+        "doi:10.18419/darus-475"
+    ],
+    "oai_set": [
+        "all"
+    ],
+    "state": "active",
+    "title": "Not stated"
+}

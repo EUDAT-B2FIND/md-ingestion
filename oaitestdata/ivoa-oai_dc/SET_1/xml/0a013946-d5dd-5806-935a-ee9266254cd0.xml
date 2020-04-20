@@ -1,0 +1,29 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://org.gavo.dc/hppunion/q/im</oai:identifier>
+    <oai:datestamp>2018-12-21T17:01:27Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:title>Historical Photographic Plate Image Archive</dc:title>
+      <dc:identifier>ivo://org.gavo.dc/hppunion/q/im</dc:identifier>
+      <dc:creator>GAVO Data Center</dc:creator>
+      <dc:description>
+        GAVO's historical photographic plate archive (GHHPA) is a
+        collection of various digitized historical photographic
+        plates.  It currently exposes:
+
+        * the scans of plates of selected Kapteyn special fields obtained
+          at Potsdam
+        * the Palomar-Leiden Trojan surveys, 1960-1977,
+        * a collection of plates obtained at Boyden Station, South Africa, 
+          kept at various German observatories.
+
+        Other plate collections kept by GAVO include the Heidelberg
+        Digitized Astronomical Plates HDAP,
+        ivo://org.gavo.dc/lswscans/res/positions/siap, and the APPLAUSE
+        database from Potsdam.</dc:description>
+      <dc:publisher>The GAVO DC team</dc:publisher>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

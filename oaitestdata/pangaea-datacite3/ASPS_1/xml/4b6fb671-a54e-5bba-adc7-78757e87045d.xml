@@ -1,0 +1,62 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.112961</identifier>
+    <datestamp>2017-12-21T11:55:11Z</datestamp>
+    <setSpec>ASPS</setSpec>
+    <setSpec>JGOFSUS</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.112961</identifier>
+      <creators>
+        <creator>
+          <creatorName>Codispoti, Louis A</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Physical oceanography and nutrients measured on water bottle samples at station TT039_1-1</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2003</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Pressure, water</subject>
+        <subject subjectScheme="Parameter">Temperature, water</subject>
+        <subject subjectScheme="Parameter">Salinity</subject>
+        <subject subjectScheme="Parameter">Oxygen</subject>
+        <subject subjectScheme="Parameter">Nitrate</subject>
+        <subject subjectScheme="Parameter">Phosphate</subject>
+        <subject subjectScheme="Parameter">Silicate</subject>
+        <subject subjectScheme="Parameter">Nitrite</subject>
+        <subject subjectScheme="Parameter">Ammonium</subject>
+        <subject subjectScheme="Parameter">Bottle number</subject>
+        <subject subjectScheme="Method">Oxygen, Winkler (Culberson, 1991, WOCE Report 68/91)</subject>
+        <subject subjectScheme="Campaign">TT039</subject>
+        <subject subjectScheme="Basis">Thomas G. Thompson</subject>
+        <subject subjectScheme="Project">Joint Global Ocean Flux Study (JGOFS)</subject>
+      </subjects>
+      <dates>
+        <date dateType="Collected">1994-09-21T10:32:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="IsDocumentedBy">http://store.pangaea.de/Projects/JGOFS/US/ArabianSea/Codispoti-tt039.htm</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>240 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported (CC-BY)</rights>
+      </rightsList>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPoint>5.6776 87.9673</geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

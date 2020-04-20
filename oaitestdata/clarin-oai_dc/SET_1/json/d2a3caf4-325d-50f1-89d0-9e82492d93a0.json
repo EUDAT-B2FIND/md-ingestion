@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4132",
+    "MetadataAccess": [
+        "oai:ota:oucs:4132"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dibdin, Charles, 1745-1814."
+    ],
+    "fulltext": "oai:ota:oucs:4132;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4132.xml;Royal Circus epitomized;Dibdin, Charles, 1745-1814.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d2a3caf4-325d-50f1-89d0-9e82492d93a0",
+    "oai_identifier": [
+        "oai:ota:oucs:4132"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Royal Circus epitomized"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4132.xml"
+}

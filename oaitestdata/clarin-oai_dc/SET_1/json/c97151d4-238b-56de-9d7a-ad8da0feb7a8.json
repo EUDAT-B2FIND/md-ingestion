@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3450",
+    "MetadataAccess": [
+        "oai:ota:oucs:3450"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "More, Hannah, 1745-1833."
+    ],
+    "fulltext": "oai:ota:oucs:3450;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/3450.xml;Black Giles the poacher: with some account of a family who had rather live by their wits than their work. Part I.;Black Giles the poacher.;More, Hannah, 1745-1833.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c97151d4-238b-56de-9d7a-ad8da0feb7a8",
+    "oai_identifier": [
+        "oai:ota:oucs:3450"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Black Giles the poacher: with some account of a family who had rather live by their wits than their work. Part I.",
+        "Black Giles the poacher."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3450.xml"
+}

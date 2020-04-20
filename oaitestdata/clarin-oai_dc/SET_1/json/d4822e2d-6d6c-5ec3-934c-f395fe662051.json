@@ -1,0 +1,85 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/zip"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1068",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1068"
+    ],
+    "PID": "http://hdl.handle.net/11356/1068",
+    "PublicationTimestamp": "2016-09-19T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Zupan, Katja",
+        "Ljube\u0161i\u0107, Nikola",
+        "Erjavec, Toma\u017e",
+        "Fi\u0161er, Darja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1068;2017-01-20T13:58:56Z;hdl_11356_1023;hdl_11356_1024;Dataset of normalised Slovene text KonvNormSl 1.0;Ljube\u0161i\u0107, Nikola;Zupan, Katja;Fi\u0161er, Darja;Erjavec, Toma\u017e;word normalisation;historical language;computer-mediated communication;experimental data;manual annotation;Data used in the experiments described in:\r\n\r\nNikola Ljube\u0161i\u0107, Katja Zupan, Darja Fi\u0161er and Toma\u017e Erjavec: Normalising Slovene data: historical texts vs. user-generated content. Proceedings of KONVENS 2016, September 19\u201321, 2016, Bochum, Germany.\r\nhttps://www.linguistics.rub.de/konvens16/pub/19_konvensproc.pdf\r\n(https://www.linguistics.rub.de/konvens16/)\r\n\r\nData are split into the \"token\" folder (experiment on normalising individual tokens) and \"segment\" folder (experiment on normalising whole segments of text, i.e. sentences or tweets). Each experiment folder contains the \"train\", \"dev\" and \"test\" subfolders. Each subfolder contains two files for each sample, the original data (*.orig.txt) and the data with hand-normalised words (*.norm.txt). The files are aligned by lines.\r\n\r\nThere are four datasets:\r\n- goo300k-bohoric: historical Slovene, hard case (<1850)\r\n- goo300k-gaj: historical Slovene, easy case (1850 - 1900)\r\n- tweet-L3: Slovene tweets, hard case (non-standard language)\r\n- tweet-L1: Slovene tweets, easy case (mostly standard language)\r\n\r\nThe goo300k data come from http://hdl.handle.net/11356/1025, while the tweet data originate from the JANES project (http://nl.ijs.si/janes/english/).\r\n\r\nThe text in the files has been split by inserting spaces between characters, with underscore (_) substituting the space character. Tokens not relevant for normalisation (e.g. URLs, hashtags) have been substituted by the inverted question mark '\u00bf' character.;2016-09-19;corpus;http://hdl.handle.net/11356/1068;slv;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;text/plain; charset=utf-8;application/zip;downloadable_files_count: 1;Jo\u017eef Stefan Institute",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d4822e2d-6d6c-5ec3-934c-f395fe662051",
+    "notes": [
+        "Data used in the experiments described in:\r\n\r\nNikola Ljube\u0161i\u0107, Katja Zupan, Darja Fi\u0161er and Toma\u017e Erjavec: Normalising Slovene data: historical texts vs. user-generated content. Proceedings of KONVENS 2016, September 19\u201321, 2016, Bochum, Germany.\r\nhttps://www.linguistics.rub.de/konvens16/pub/19_konvensproc.pdf\r\n(https://www.linguistics.rub.de/konvens16/)\r\n\r\nData are split into the \"token\" folder (experiment on normalising individual tokens) and \"segment\" folder (experiment on normalising whole segments of text, i.e. sentences or tweets). Each experiment folder contains the \"train\", \"dev\" and \"test\" subfolders. Each subfolder contains two files for each sample, the original data (*.orig.txt) and the data with hand-normalised words (*.norm.txt). The files are aligned by lines.\r\n\r\nThere are four datasets:\r\n- goo300k-bohoric: historical Slovene, hard case (<1850)\r\n- goo300k-gaj: historical Slovene, easy case (1850 - 1900)\r\n- tweet-L3: Slovene tweets, hard case (non-standard language)\r\n- tweet-L1: Slovene tweets, easy case (mostly standard language)\r\n\r\nThe goo300k data come from http://hdl.handle.net/11356/1025, while the tweet data originate from the JANES project (http://nl.ijs.si/janes/english/).\r\n\r\nThe text in the files has been split by inserting spaces between characters, with underscore (_) substituting the space character. Tokens not relevant for normalisation (e.g. URLs, hashtags) have been substituted by the inverted question mark '\u00bf' character."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1068"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "word normalisation"
+        },
+        {
+            "name": "historical language"
+        },
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "experimental data"
+        },
+        {
+            "name": "manual annotation"
+        }
+    ],
+    "title": [
+        "Dataset of normalised Slovene text KonvNormSl 1.0"
+    ],
+    "url": ""
+}

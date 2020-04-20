@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Katholieke Universiteit Leuven Campus Kortrijk, Hogeschool Gent"
+    ],
+    "Contributor": [
+        "Paulussen, Hans"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Dutch",
+        "English",
+        "French"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-631",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-631"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-631",
+    "PublicationTimestamp": "2009-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Katholieke Universiteit Leuven Campus Kortrijk, Hogeschool Gent"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Belgium"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-631;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;DPC (Dutch Parallel Corpus);Paulussen, Hans;Parallel corpus, with Dutch as first language, 10 M words (under construction).  DPC is a STEVIN-project.;2009;corpus;http://hdl.handle.net/11372/LRT-631;nld;eng;fra;downloadable_files_count: 0;Belgium;Katholieke Universiteit Leuven Campus Kortrijk, Hogeschool Gent;http://www.kuleuven-kortrijk.be/DPC",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "984cfc5d-00de-5d41-aaa2-98421a769973",
+    "notes": [
+        "Parallel corpus, with Dutch as first language, 10 M words (under construction).  DPC is a STEVIN-project."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-631"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "DPC (Dutch Parallel Corpus)"
+    ],
+    "url": ""
+}

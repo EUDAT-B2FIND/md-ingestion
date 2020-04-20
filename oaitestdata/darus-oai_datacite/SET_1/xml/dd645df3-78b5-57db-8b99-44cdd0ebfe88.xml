@@ -1,0 +1,454 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-513</identifier>
+    <datestamp>2020-02-15T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+    <setSpec>openaire_data</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-513</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Lemmer, Frank</creatorName>
+          <givenName>Frank</givenName>
+          <familyName>Lemmer</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-2395-9954</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Azcona, Jos&#233;</creatorName>
+          <givenName>Jos&#233;</givenName>
+          <familyName>Azcona</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-0895-1049</nameIdentifier>
+          <affiliation>CENER</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Bredmose, Henrik</creatorName>
+          <givenName>Henrik</givenName>
+          <familyName>Bredmose</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-6961-0753</nameIdentifier>
+          <affiliation>DTU</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Borisade, Friedemann</creatorName>
+          <givenName>Friedemann</givenName>
+          <familyName>Borisade</familyName>
+          <affiliation>Ramboll</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Campagnolo, Filippo</creatorName>
+          <givenName>Filippo</givenName>
+          <familyName>Campagnolo</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-3511-7981</nameIdentifier>
+          <affiliation>TUM</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Heilskov, Nicolai Francis</creatorName>
+          <givenName>Nicolai Francis</givenName>
+          <familyName>Heilskov</familyName>
+          <affiliation>DHI</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Kaufer, Daniel</creatorName>
+          <givenName>Daniel</givenName>
+          <familyName>Kaufer</familyName>
+          <affiliation>Ramboll</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Kim, Yusik</creatorName>
+          <givenName>Yusik</givenName>
+          <familyName>Kim</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-5366-9459</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Organizational">Klein, Levin</creatorName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-0134-9952</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Koch, Christian</creatorName>
+          <givenName>Christian</givenName>
+          <familyName>Koch</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Lutz, Thorsten</creatorName>
+          <givenName>Thorsten</givenName>
+          <familyName>Lutz</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Manjock, Andreas</creatorName>
+          <givenName>Andreas</givenName>
+          <familyName>Manjock</familyName>
+          <affiliation>DNVGL</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Manolas, Dimitris</creatorName>
+          <givenName>Dimitris</givenName>
+          <familyName>Manolas</familyName>
+          <affiliation>NTUA</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Robertson, Amy</creatorName>
+          <givenName>Amy</givenName>
+          <familyName>Robertson</familyName>
+          <affiliation>NREL</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Jonkman, Jason</creatorName>
+          <givenName>Jason</givenName>
+          <familyName>Jonkman</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-2990-7362</nameIdentifier>
+          <affiliation>NREL</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Wendt, Fabian</creatorName>
+          <givenName>Fabian</givenName>
+          <familyName>Wendt</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-0219-8703</nameIdentifier>
+          <affiliation>Ramboll</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Vittori, Felipe</creatorName>
+          <givenName>Felipe</givenName>
+          <familyName>Vittori</familyName>
+          <affiliation>CENER</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Voutsinas, Spyros</creatorName>
+          <givenName>Spyros</givenName>
+          <familyName>Voutsinas</familyName>
+          <affiliation>NTUA</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>INNWIND.EU scaled experiments of the OC4-DeepCwind semi-submersible</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Engineering</subject>
+        <subject>Wind energy</subject>
+        <subject>Floating wind turbine</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Lemmer, Frank</contributorName>
+          <givenName>Frank</givenName>
+          <familyName>Lemmer</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName nameType="Personal">Lemmer, Frank</contributorName>
+          <givenName>Frank</givenName>
+          <familyName>Lemmer</familyName>
+          <affiliation>Universit&#228;t of Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">2020-01-14</date>
+        <date dateType="Submitted">2020-01-14</date>
+        <date dateType="Updated">2020-02-14</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">experimental data</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="URL">http://www.innwind.eu/-/media/Sites/innwind/Publications/Deliverables/230117/D4-24_Final_V2.ashx</relatedIdentifier>
+        <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="URL">http://www.innwind.eu/-/media/Sites/innwind/Publications/Deliverables/D425_FINAL-V-1-3.ashx</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>42044</size>
+        <size>66879210</size>
+        <size>67402821</size>
+        <size>68416783</size>
+        <size>68222507</size>
+        <size>8415905</size>
+        <size>68209489</size>
+        <size>9689200</size>
+        <size>79646772</size>
+        <size>79774756</size>
+        <size>79522051</size>
+        <size>80130067</size>
+        <size>80065749</size>
+        <size>75625697</size>
+        <size>80201791</size>
+        <size>80115121</size>
+        <size>81245959</size>
+        <size>15439990</size>
+        <size>8350477</size>
+        <size>8289259</size>
+        <size>11735533</size>
+        <size>11717180</size>
+        <size>11704904</size>
+        <size>16277101</size>
+        <size>931784</size>
+        <size>6856212</size>
+        <size>6894338</size>
+        <size>6832911</size>
+        <size>6855783</size>
+        <size>13541714</size>
+        <size>13158643</size>
+        <size>1520903</size>
+        <size>13771509</size>
+        <size>13336490</size>
+        <size>1597828</size>
+        <size>14148703</size>
+        <size>19132925</size>
+        <size>3176209</size>
+        <size>19011717</size>
+        <size>1161737</size>
+        <size>705027</size>
+        <size>3318196</size>
+        <size>3203965</size>
+        <size>20313208</size>
+        <size>21365520</size>
+        <size>10773930</size>
+        <size>16378292</size>
+        <size>16282960</size>
+        <size>16269133</size>
+        <size>16361361</size>
+        <size>16399153</size>
+        <size>16409115</size>
+        <size>16663313</size>
+        <size>2124763</size>
+        <size>2180750</size>
+        <size>2339278</size>
+        <size>3161524</size>
+        <size>1730054</size>
+        <size>4955887</size>
+        <size>19415377</size>
+        <size>19445992</size>
+        <size>19627367</size>
+        <size>19703792</size>
+        <size>19949487</size>
+        <size>2553445</size>
+        <size>843611</size>
+        <size>855203</size>
+        <size>838770</size>
+        <size>16133529</size>
+        <size>16180922</size>
+        <size>15954430</size>
+        <size>16177811</size>
+        <size>16088924</size>
+        <size>16247100</size>
+        <size>16227789</size>
+        <size>16238001</size>
+        <size>16215816</size>
+        <size>3376434</size>
+        <size>1956333</size>
+        <size>79946941</size>
+        <size>80451765</size>
+        <size>1497155</size>
+        <size>186775</size>
+        <size>324984</size>
+        <size>576729</size>
+        <size>6883332</size>
+        <size>6783180</size>
+        <size>6912749</size>
+        <size>6172259</size>
+        <size>24326069</size>
+        <size>24473072</size>
+        <size>23213164</size>
+        <size>24741377</size>
+        <size>24854893</size>
+        <size>80198714</size>
+        <size>24205907</size>
+        <size>24240909</size>
+        <size>24421021</size>
+        <size>24450050</size>
+        <size>40150112</size>
+        <size>40233445</size>
+        <size>40527781</size>
+        <size>40565268</size>
+        <size>79587603</size>
+        <size>80127170</size>
+        <size>80776700</size>
+        <size>76453912</size>
+        <size>39621412</size>
+        <size>24178496</size>
+        <size>24143230</size>
+        <size>24398865</size>
+        <size>24432044</size>
+        <size>24214904</size>
+        <size>24289096</size>
+        <size>24540485</size>
+        <size>24717675</size>
+        <size>24231207</size>
+        <size>24332815</size>
+        <size>24533973</size>
+        <size>3082486</size>
+        <size>80225283</size>
+        <size>80253798</size>
+        <size>80494333</size>
+        <size>68893385</size>
+        <size>68969052</size>
+        <size>79700358</size>
+        <size>79826944</size>
+        <size>80732741</size>
+        <size>81179151</size>
+        <size>2517</size>
+        <size>8447</size>
+      </sizes>
+      <formats>
+        <format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>application/matlab-mat</format>
+        <format>text/csv</format>
+        <format>text/csv</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">A floating wind test campaign was conducted within INNWIND.EU at LHEEA Nantes/France in 2014. The tested model is the OC4-DeepCwind semi-submersible in a scale of 1:45. &#13;
+The scaled 5MW rotor has re-designed blades with large chord to yield the Froude-scaled thrust force. In order to test also a 10MW system, wind/wave conditions of a scaling ratio of 1:60 were tested, with an adjusted rotor speed and blade pitch angle. &#13;
+The scaled model was modified in order to compensate the excess nacelle mass (due to actuators) by placing ballast underneath the original keel depth.</description>
+        <description descriptionType="Other">An overview of the experimentally measured test cases and information about the model parameters deployed in the simulations can be found in the Excel-file "000_DataIndex_INNWIND_ECN1409_shortened.xlsx".&#13;
+The corresponding data files (Matlab binary format) can be found in the directory "ECN1409".&#13;
+Information on the sensors can be found in &lt;a href="http://www.innwind.eu/-/media/Sites/innwind/Publications/Deliverables/230117/D4-24_Final_V2.ashx"&gt;INNWIND.EU D4.24, Section 2.10&lt;/a&gt;. The filenames follow the convention to contain parameter names and their values with the decimal point replaced by "d". &#13;
+A reference set of input parameters for the USTUTT low-order simulation model SLOW is also given in the excel file. All parameters can be found in &lt;a href="http://www.innwind.eu/-/media/Sites/innwind/Publications/Deliverables/230117/D4-24_Final_V2.ashx"&gt;D4.24&lt;/a&gt;. The SLOW input data is without further explanation and included as a complementary reference.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Nantes, France</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>European Commission</funderName>
+          <awardNumber>info:eu-repo/grantAgreement/EC/FP7/308974</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

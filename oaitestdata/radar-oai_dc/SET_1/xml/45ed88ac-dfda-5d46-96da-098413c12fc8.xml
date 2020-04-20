@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000-155</identifier>
+    <datestamp>2019-04-12T16:21:33Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:identifier>10.22000/155</dc:identifier>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:creator>Meng, Jilun</dc:creator>
+      <dc:identifier>0000-0003-0665-7655</dc:identifier>
+      <dc:creator>Mayer, Manfred</dc:creator>
+      <dc:identifier>0000-0002-6382-2533</dc:identifier>
+      <dc:creator>Reinsch, Norbert</dc:creator>
+      <dc:identifier>0000-0001-7435-4088</dc:identifier>
+      <dc:title>Turning observed founder alleles into expected relationships - example programs</dc:title>
+      <dc:publisher>Leibniz Institute for Farm Animal Biology (FBN)</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:subject>Agriculture</dc:subject>
+      <dc:subject>Life Science</dc:subject>
+      <dc:type>example program, input and output examples</dc:type>
+      <dc:type>Software</dc:type>
+      <dc:rights>CC BY 4.0 Attribution</dc:rights>
+      <dc:rights>Leibniz Institute for Farm Animal Biology (FBN)</dc:rights>
+      <dc:description>Example programs are presented that can be used to compute expected relationships in a two-way cross where the founders have been genotyped. Theory is described in very detail in the article of Meng et al. "Turning Observed Founder Alleles into Expected Relationships in an Intercross Population", published in G3: Genes, Genomes, Genetics (2019 vol. 9 no. 3 889-899) and accessible under  https://doi.org/10.1534/g3.118.200752 . Together with the programs example data are provided. A further detailed description is given in the readme-file that is included.</dc:description>
+      <dc:description>relationship matrix, expected relationships, founder relationships</dc:description>
+      <dc:language>eng</dc:language>
+      <dc:format>application/zip</dc:format>
+    </oai_dc:dc>
+  </metadata>
+</record>

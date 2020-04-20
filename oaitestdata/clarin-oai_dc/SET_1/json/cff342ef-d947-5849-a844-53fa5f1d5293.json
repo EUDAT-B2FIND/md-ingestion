@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Royster, Paul"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 0 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1810",
+    "MetadataAccess": [
+        "oai:ota:oucs:1810"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "James, Henry, 1843-1916"
+    ],
+    "fulltext": "oai:ota:oucs:1810;2018-02-16T10:42:05Z;http://ota.ox.ac.uk/headers/1810.xml;Watch and ward / James, Henry;James, Henry, 1843-1916;text_and_corpus_linguistics;American literature -- 19th century;Oxford Text Archive, University of Oxford;Royster, Paul;text/sgml;(1 file : ca. 0 KB);Text;Novels;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cff342ef-d947-5849-a844-53fa5f1d5293",
+    "oai_identifier": [
+        "oai:ota:oucs:1810"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American literature -- th century"
+        }
+    ],
+    "title": [
+        "Watch and ward / James, Henry"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1810.xml"
+}

@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/5-UDPIPE-TAGGER",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/5-UDPIPE-TAGGER"
+    ],
+    "PID": "http://hdl.handle.net/11234/5-UDPIPE-TAGGER",
+    "PublicationTimestamp": "2016-02-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Straka, Milan"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/5-UDPIPE-TAGGER;2019-01-02T13:45:47Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0023-8C33-2;UDPipe tagger Web Service for Weblicht;Straka, Milan;udpipe;UDPipe is a trainable pipeline for tokenizing, tagging, lemmatizing and parsing Universal Treebanks and other CoNLL-U files (https://lindat.mff.cuni.cz/services/udpipe/);2016-02-08;toolService;http://hdl.handle.net/11234/5-UDPIPE-TAGGER;application/octet-stream;downloadable_files_count: 0;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://hdl.handle.net/11234/5-UDPIPE-TAGGER",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e364d89a-8971-57c3-a661-2cb7c3e0d21d",
+    "notes": [
+        "UDPipe is a trainable pipeline for tokenizing, tagging, lemmatizing and parsing Universal Treebanks and other CoNLL-U files (https://lindat.mff.cuni.cz/services/udpipe/)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/5-UDPIPE-TAGGER"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0023-8C33-2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "udpipe"
+        }
+    ],
+    "title": [
+        "UDPipe tagger Web Service for Weblicht"
+    ],
+    "url": ""
+}

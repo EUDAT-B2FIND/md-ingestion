@@ -1,0 +1,86 @@
+{
+    "Contact": [
+        "NHH Norwegian School of Economics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "application/octet-stream",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Norwegian Bokm\u00e5l",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.clarino.uib.no:11509/116",
+    "MetadataAccess": [
+        "oai:repo.clarino.uib.no:11509/116"
+    ],
+    "PID": "http://hdl.handle.net/11509/116",
+    "PublicationTimestamp": "2017-01-10T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "NHH Norwegian School of Economics"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "CLARIN_ACA",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Andersen, Gisle",
+        "Kristiansen, Marita",
+        "Olstad, Vemund"
+    ],
+    "fulltext": "oai:repo.clarino.uib.no:11509/116;2017-01-18T09:16:21Z;hdl_11509_1;hdl_11509_2;English for business;Kristiansen, Marita;Olstad, Vemund;Andersen, Gisle;Business administration;Economics;Termbase;Terminological;Terminology;The resource \"English for business\" is a terminological database containing terms, definitions and other conceptual information in Norwegian and English within economics and business administration and some related domains.\r\n\r\nWhen using the resource for research purposes, please refer to NHH Norwegian School of Economics.;2017-01-10;lexicalConceptualResource;http://hdl.handle.net/11509/116;nob;eng;CLARIN_ACA;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NORED=1;ACA;application/zip;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;NHH Norwegian School of Economics;http://www.terminologi.no",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "73bb199b-28cd-5eba-b91b-625207984742",
+    "notes": [
+        "The resource \"English for business\" is a terminological database containing terms, definitions and other conceptual information in Norwegian and English within economics and business administration and some related domains.\r\n\r\nWhen using the resource for research purposes, please refer to NHH Norwegian School of Economics."
+    ],
+    "oai_identifier": [
+        "oai:repo.clarino.uib.no:11509/116"
+    ],
+    "oai_set": [
+        "hdl_11509_1",
+        "hdl_11509_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Business administration"
+        },
+        {
+            "name": "Economics"
+        },
+        {
+            "name": "Termbase"
+        },
+        {
+            "name": "Terminological"
+        },
+        {
+            "name": "Terminology"
+        }
+    ],
+    "title": [
+        "English for business"
+    ],
+    "url": ""
+}

@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>isis_24079624</identifier>
+    <datestamp>2016-04-08T15:22:30Z</datestamp>
+  </header>
+  <metadata>
+    <oai_qdc:qdc xmlns:oai_qdc="http://pandata.org/pmh/oai_qdc/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pandata.org/pmh/oai_qdc/ http://pandata.org/pmh/oai_qdc.xsd">
+      <dc:identifier>10.5286/ISIS.E.24079624</dc:identifier>
+      <dc:title>Interaction between superconductivity and magnetism in iron-lead thin films</dc:title>
+      <dc:description>A previous CRISP measurement allows us to show for the first time using PNR a change in the response due to superconductivity in an Fe/Pb/Fe tri-layer sample. This type of system is of particular interest owing to the possibility of novel forms of superconductivity appearing on mesoscopic length scales. One manifestation of this could be a so-called &#191;inverse-proximity&#191; effect, in which a magnetisation is induced in the superconducting layer by coupling to the ferromagnetic layers. With more detailed measurements, particularly of the field dependence, we hope to distinguish this effect from Meisner screening. In addition, a low-energy muon study found evidence for a spin-density wave state, with a particular modification of the magnetisation in the Pb layer near the interfaces below TC. Observing this with PNR would contribute significantly to a fuller understanding of the effect.</dc:description>
+      <dc:relation>[CRISP];RB920463;run_number_range</dc:relation>
+      <dcterms:references>http://dx.doi.org/10.5286/ISIS.E.24079624</dcterms:references>
+      <dc:creator>Dr Steve Lister</dc:creator>
+      <dc:creator>Professor Christopher Marrows</dc:creator>
+      <dc:contributor>Science and Technology Facilities Council, ISIS</dc:contributor>
+      <dc:subject>Clean energy and the environment, pharmaceuticals and health care, nanotechnology and materials engineering, catalysis and polymers, fundamental studies of materials</dc:subject>
+      <dcterms:issued>2013-07-19 08:31:29</dcterms:issued>
+      <dc:language>en</dc:language>
+      <dc:publisher>ISIS;ISIS Pulsed Neutron &amp; Muon Source;http://www.isis.stfc.ac.uk;[CRISP]</dc:publisher>
+      <dc:format>isis neutron raw;binary;2;None</dc:format>
+      <dc:relation>ISIS, Harwell, United Kingdom</dc:relation>
+      <dc:rights>ISIS Data Management Policy http://www.isis.stfc.ac.uk/user-office/data-policy11204.html</dc:rights>
+      <dc:relation/>
+      <dc:relation xsi:type="dcterms:ISO3166">GB</dc:relation>
+      <dcterms:temporal>2010-03-18 08:53:37;2010-07-19 08:31:29</dcterms:temporal>
+    </oai_qdc:qdc>
+  </metadata>
+</record>

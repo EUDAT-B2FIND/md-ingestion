@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "University of Sheffield"
+    ],
+    "Contributor": [
+        "Funk, Adam",
+        "Peters, Wim"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1395",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1395"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1395",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "University of Sheffield"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "United Kingdom"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1395;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;GATE-ANNIE-RDF;Funk, Adam;Peters, Wim;ANNIE-RDF developed by the GATE group at the University of Sheffield (http;//www.gate.ac.uk; Cunningham et al., 2002) is an Information Extraction (IE) web service for English. It consists of the following main language processing tools: tokeniser, sentence splitter, POS tagger, coreference resolver and named entity recogniser. \r\nThe named entity recogniser identifies and categorizes entity names (such as persons, organizations, and location names), temporal expressions (dates and times), and certain types of numerical expressions (monetary values and percentages). \r\nThe text spans and annotations are exported into an RDF-XML ontology, in which the recognized named entities are instances according to the PROTON ontology (http://proton.semanticweb.org/).\r\n\r\n\r\n\r\nH. Cunningham, D. Maynard, K. Bontcheva, and V. Tablan. 2002. GATE: A Framework and Graphical Development Environment for Robust NLP Tools and Applications. In Proceedings of the 40th Anniversary Meeting of the Association for Computational Linguistics (ACL-02).;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1395;downloadable_files_count: 0;United Kingdom;University of Sheffield",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "0a778371-7663-55b4-8201-7f6cd953a62c",
+    "notes": [
+        "ANNIE-RDF developed by the GATE group at the University of Sheffield (http;//www.gate.ac.uk; Cunningham et al., 2002) is an Information Extraction (IE) web service for English. It consists of the following main language processing tools: tokeniser, sentence splitter, POS tagger, coreference resolver and named entity recogniser. \r\nThe named entity recogniser identifies and categorizes entity names (such as persons, organizations, and location names), temporal expressions (dates and times), and certain types of numerical expressions (monetary values and percentages). \r\nThe text spans and annotations are exported into an RDF-XML ontology, in which the recognized named entities are instances according to the PROTON ontology (http://proton.semanticweb.org/).\r\n\r\n\r\n\r\nH. Cunningham, D. Maynard, K. Bontcheva, and V. Tablan. 2002. GATE: A Framework and Graphical Development Environment for Robust NLP Tools and Applications. In Proceedings of the 40th Anniversary Meeting of the Association for Computational Linguistics (ACL-02)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1395"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "GATE-ANNIE-RDF"
+    ],
+    "url": ""
+}

@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2812</identifier>
+    <datestamp>2018-07-02T22:05:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>&#268;es&#237;lko 2.0 Shallow Transfer RBMT framework (opensource version)</dc:title>
+      <dc:creator>Vi&#269;i&#269;, Jernej</dc:creator>
+      <dc:creator>Kubo&#328;, Vladislav</dc:creator>
+      <dc:creator>Homola, Petr</dc:creator>
+      <dc:subject>Shallow Parse</dc:subject>
+      <dc:subject>Shallow Transfer Rule-Based Machine Translation</dc:subject>
+      <dc:subject>stochastic ranker</dc:subject>
+      <dc:subject>related languages</dc:subject>
+      <dc:subject>toolbox</dc:subject>
+      <dc:description>The system &#268;es&#237;lko (language data and software tools) was first developed as an answer to a growing need of translation and localisation from one source language to many target languages. The starting system belonged to the Shallow Parse, Shallow Transfer Rule-Based Machine Translation &#8211; (RBMT) paradigm and it was designed primarily for translation of related languages. The latest implementation of the system uses a stochastic ranker; so technically it belongs to the hybrid machine translation paradigm, using stochastic methods combined with the traditional Shallow Transfer RBMT methods. The system has been stripped of the accompanying language resources due to copyright restrictions. The data that is available is just for demonstrative purposes.</dc:description>
+      <dc:date>2016</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2812</dc:identifier>
+      <dc:relation>https://ufal.mff.cuni.cz/pbml/107/art-vicic-kubon-homola.pdf</dc:relation>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://github.com/cesilko/cesilko</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "Contributor": [
+        "Hartung, Martin"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-545",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-545"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-545",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-545;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Gespr\u00e4chanalytisches Informationssystem (GAIS);Hartung, Martin;web-based information system on scientific community (news, events, persons, job market, mailing list, database on research projects and corpora, bibliography, glossary and links) and recording equipment/software; disciplinary scope: research on conversation and discourse analysis and spoken language;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-545;deu;downloadable_files_count: 0;Germany;Institut f\u00fcr Deutsche Sprache;http://gais.ids-mannheim.de/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8992f6e6-230b-5009-8170-90ace82beeea",
+    "notes": [
+        "web-based information system on scientific community (news, events, persons, job market, mailing list, database on research projects and corpora, bibliography, glossary and links) and recording equipment/software; disciplinary scope: research on conversation and discourse analysis and spoken language"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-545"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Gespr\u00e4chanalytisches Informationssystem (GAIS)"
+    ],
+    "url": ""
+}

@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "Charles University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2927",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2927"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2927",
+    "PublicationTimestamp": "2019-01-25T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Charles University"
+    ],
+    "RelatedIdentifier": [
+        "http://ufal.mff.cuni.cz/~hana/bib/hana-hladka-2018-oslo.pdf"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Hana, Ji\u0159\u00ed",
+        "Hladk\u00e1, Barbora"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2927;2019-01-25T17:19:41Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Czesl - Universal Dependencies Release 0.5;Hana, Ji\u0159\u00ed;Hladk\u00e1, Barbora;learner corpus;syntactic annotation;universal dependencies;Syntactic annotation of 1600 sentences from the Czesl-MAN corpus using the framework of Universal Dependencies 2.3;2019-01-25;corpus;http://hdl.handle.net/11234/1-2927;ces;http://ufal.mff.cuni.cz/~hana/bib/hana-hladka-2018-oslo.pdf;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/octet-stream;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University;https://bitbucket.org/czesl/czesl-ud",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1ff7b1c1-27f2-5df6-8c79-2af5e2e0147d",
+    "notes": [
+        "Syntactic annotation of 1600 sentences from the Czesl-MAN corpus using the framework of Universal Dependencies 2.3"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2927"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "learner corpus"
+        },
+        {
+            "name": "syntactic annotation"
+        },
+        {
+            "name": "universal dependencies"
+        }
+    ],
+    "title": [
+        "Czesl - Universal Dependencies Release 0.5"
+    ],
+    "url": ""
+}

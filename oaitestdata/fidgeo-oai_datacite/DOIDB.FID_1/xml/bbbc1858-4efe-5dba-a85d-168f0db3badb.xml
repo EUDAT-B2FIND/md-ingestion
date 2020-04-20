@@ -1,0 +1,106 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6384</identifier>
+    <datestamp>2018-10-04T11:10:50Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fid.2018.006</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Niemeijer, Andre</default:creatorName>
+              <default:givenName>Andre</default:givenName>
+              <default:familyName>Niemeijer</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-3983-9308</default:nameIdentifier>
+              <default:affiliation>Utrecht University - Department of Earth Sciences</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="eng">Velocity-dependent slip weakening by the combined operation of pressure solution and foliation development</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>Friction</default:subject>
+            <default:subject>Hydrotherrmal</default:subject>
+            <default:subject>Foliation</default:subject>
+            <default:subject>Pressure solution</default:subject>
+            <default:subject>Quartz-muscovite</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>European Plate Observing System</default:subject>
+            <default:subject>multi-scale laboratories</default:subject>
+            <default:subject>rock and melt physical properties</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Niemeijer, Andre</default:contributorName>
+              <default:givenName>Andre</default:givenName>
+              <default:familyName>Niemeijer</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-3983-9308</default:nameIdentifier>
+              <default:affiliation>Utrecht University - Department of Earth Sciences</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Niemeijer, Andre</default:contributorName>
+              <default:givenName>Andre</default:givenName>
+              <default:familyName>Niemeijer</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-3983-9308</default:nameIdentifier>
+              <default:affiliation>Utrecht University - Department of Earth Sciences</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectLeader">
+              <default:contributorName>Niemeijer, Andre</default:contributorName>
+              <default:givenName>Andre</default:givenName>
+              <default:familyName>Niemeijer</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-3983-9308</default:nameIdentifier>
+              <default:affiliation>Utrecht University - Department of Earth Sciences</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Experimental rock deformation/HPT-Lab (Utrecht University, The Netherlands)</default:contributorName>
+              <default:affiliation>Utrecht University, The Netherlands</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Created">2018-03-01</default:date>
+          </default:dates>
+          <default:language>eng</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1038/s41598-018-22889-3</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>1 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/zip</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">Phyllosilicate-bearing faults are characterized by an anastomosing foliation with intervening hard clasts and are believed to be long-term weak structures. Here, I present results of sliding experiments on gouges of 80 wt% quartz and 20 wt% muscovite, sheared under hydrothermal conditions at constant velocity. The results show that significant strengthening occurs over a narrow range of sliding velocities (0.03-1* m-6/s). At the lowest velocity investigated, weakness is achieved after a considerable sliding distance of over 20 mm with friction reaching a value of 0.3. Microstructural observations and the application of existing models point to the operation of frictional-viscous flow (FVF), through the serial operation of frictional sliding over a weak foliation and pressure solution of intervening clasts, resulting in low frictional strength and pronounced velocity-strengthening. At higher velocities, grain size reduction becomes dominant in a localized zone, which results in disruption of the foliation and the cessation of the FVF mechanism. In natural settings, earthquakes originating elsewhere on the fault would be rapidly arrested when encountering a foliated part of the fault deforming via FVF. Furthermore, pulses of elevated slip velocity would lead to grain size reduction which would destroy the foliation and cause a long-term strengthening of the fault.</default:description>
+          </default:descriptions>
+          <default:fundingReferences>
+            <default:fundingReference>
+              <default:funderName>FP7 Ideas: European Research Council</default:funderName>
+              <default:funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/100011199</default:funderIdentifier>
+              <default:awardNumber>335915</default:awardNumber>
+              <default:awardTitle>Seismic</default:awardTitle>
+            </default:fundingReference>
+            <default:fundingReference>
+              <default:funderName>Netherlands Organization for Scientific Research</default:funderName>
+              <default:funderIdentifier funderIdentifierType="Crossref Funder ID"/>
+              <default:awardNumber>854.12.011</default:awardNumber>
+              <default:awardTitle>Vidi</default:awardTitle>
+            </default:fundingReference>
+          </default:fundingReferences>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

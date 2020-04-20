@@ -1,0 +1,52 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.15479/AT:ISTA:98",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "text",
+        "image",
+        "other"
+    ],
+    "MetaDataAccess": "http://datarep.app.ist.ac.at/cgi/oai2?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:datarep.app.ist.ac.at:98",
+    "RelatedIdentifier": [
+        "https://datarep.app.ist.ac.at/98/"
+    ],
+    "ResourceType": [
+        "Data Collection"
+    ],
+    "author": [
+        "Deny, Stephane",
+        "Martius, Georg",
+        "Marre, Olivier",
+        "Tkacik, Gasper",
+        "Botella-Soler, Vicente"
+    ],
+    "fulltext": "oai:datarep.app.ist.ac.at:98;2018-08-09T07:30:27Z;Nonlinear decoding of a complex movie from the mammalian retina;Deny, Stephane;Marre, Olivier;Botella-Soler, Vicente;Martius, Georg;Tkacik, Gasper;570 Life sciences; biology;This package contains data for the publication \"Nonlinear decoding of a complex movie from the mammalian retina\" by Deny S. et al, PLOS Comput Biol (2018). \r\n\r\nThe data consists of\r\n(i) 91 spike sorted, isolated rat retinal ganglion cells that pass stability and quality criteria, recorded on the multi-electrode array, in response to the presentation of the complex movie with many randomly moving dark discs. The responses are represented as 648000 x 91 binary matrix, where the first index indicates the timebin of duration 12.5 ms, and the second index the neural identity. The matrix entry is 0/1 if the neuron didn't/did spike in the particular time bin.\r\n(ii) README file and a graphical illustration of the structure of the experiment, specifying how the 648000 timebins are split into epochs where 1, 2, 4, or 10 discs  were displayed, and which stimulus segments are exact repeats or unique ball trajectories.\r\n(iii) a 648000 x 400 matrix of luminance traces for each of the 20 x 20 positions (\"sites\") in the movie frame, with time that is locked to the recorded raster. The luminance traces are produced as described in the manuscript by filtering the raw disc movie with a small gaussian spatial kernel. ;Data Collection;NonPeerReviewed;other;image;other;text;https://datarep.app.ist.ac.at/98/;https://datarep.app.ist.ac.at/98/1/BBalls_area2_tile2_20x20.mat;https://datarep.app.ist.ac.at/98/2/ExperimentStructure.pdf;https://datarep.app.ist.ac.at/98/3/GoodLocations_area2_20x20.mat;https://datarep.app.ist.ac.at/98/4/README.txt;  Deny, Stephane and Marre, Olivier and Botella-Soler, Vicente and Martius, Georg and Tkacik, Gasper   Nonlinear decoding of a complex movie from the mammalian retina.  [Data Collection]     ;10.15479/AT:ISTA:98;10.15479/AT:ISTA:98;10.15479/AT:ISTA:98;10.15479/AT:ISTA:98",
+    "group": "ist",
+    "groups": [
+        {
+            "name": "ist"
+        }
+    ],
+    "name": "0b4731e3-399b-54c7-90c1-4d710519e696",
+    "notes": [
+        "This package contains data for the publication \"Nonlinear decoding of a complex movie from the mammalian retina\" by Deny S. et al, PLOS Comput Biol (2018). \r\n\r\nThe data consists of\r\n(i) 91 spike sorted, isolated rat retinal ganglion cells that pass stability and quality criteria, recorded on the multi-electrode array, in response to the presentation of the complex movie with many randomly moving dark discs. The responses are represented as 648000 x 91 binary matrix, where the first index indicates the timebin of duration 12.5 ms, and the second index the neural identity. The matrix entry is 0/1 if the neuron didn't/did spike in the particular time bin.\r\n(ii) README file and a graphical illustration of the structure of the experiment, specifying how the 648000 timebins are split into epochs where 1, 2, 4, or 10 discs  were displayed, and which stimulus segments are exact repeats or unique ball trajectories.\r\n(iii) a 648000 x 400 matrix of luminance traces for each of the 20 x 20 positions (\"sites\") in the movie frame, with time that is locked to the recorded raster. The luminance traces are produced as described in the manuscript by filtering the raw disc movie with a small gaussian spatial kernel. "
+    ],
+    "oai_identifier": [
+        "oai:datarep.app.ist.ac.at:98"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Life sciences"
+        },
+        {
+            "name": "biology"
+        }
+    ],
+    "title": [
+        "Nonlinear decoding of a complex movie from the mammalian retina"
+    ],
+    "url": "https://datarep.app.ist.ac.at/98/4/README.txt"
+}

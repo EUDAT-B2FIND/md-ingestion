@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.25493_DGEZ-Q93</identifier>
+    <datestamp>2019-12-10T12:41:53Z</datestamp>
+  </header>
+  <metadata>
+    <metadata xmlns="http://example.org/myapp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+      <dc:identifier>https://doi.org/10.25493/DGEZ-Q93</dc:identifier>
+      <dc:title>Ultrahigh resolution 3D cytoarchitectonic map of Area hOc1 (V1, 17, CalcS) created by a Deep-Learning assisted workflow</dc:title>
+      <dc:created>2019-05-23T12:53:24.494Z</dc:created>
+      <dc:description>This dataset contains automatically created cytoarchitectonic maps of Area hOc1 (V1, 17, CalcS) in the BigBrain dataset [Amunts et al. 2013]. The mappings were created using Deep Convolutional Neural networks based on the idea presented in Spitzer et al. 2017 and Spitzer et al. 2018, which were trained on delineations on every 120th section created using the semi-automatic method presented in Schleicher et al. 1999. Mappings are available on every section. Their quality was observed by a trained neuroscientist to exclude sections with low quality results from further processing. Automatic mappings were then transformed to the 3D reconstructed BigBrain space using transformations used in Amunts et al. 2013, which were provided by Claude Lepage (McGill). Individual sections were used to assemble a 3D volume of the area, low quality results were replaced by interpolations between nearest neighboring sections. The volume was then smoothed using an 11&#179; median filter and largest connected components were identified to remove false positive results of the classification algorithm.
+The dataset consists of a single HDF5 file containing the volume in RAS dimension ordering and 20 micron isotropic resolution in the dataset &#8220;volume&#8221; and affine transformation matrix in the dataset &#8220;affine&#8221;. An additional dataset &#8220;interpolation_info&#8221; contains a vector with an integer value for each section which indicates if a section was interpolated due to low quality results (value 2) or not (value 1).
+Due to the large size of the volume, it&#8217;s recommended to view the data online using the provided viewer link.
+</dc:description>
+      <dc:subject>neuroscience</dc:subject>
+      <dc:subject>imaging</dc:subject>
+      <dc:subject>histology</dc:subject>
+      <dc:subject>brain mapping</dc:subject>
+      <dc:subject>analysis technique</dc:subject>
+      <dc:language>english</dc:language>
+      <dc:type>dataset</dc:type>
+      <dc:publisher>The Human Brain Project</dc:publisher>
+      <dc:contributor>Schiffer, Christian </dc:contributor>
+      <dc:contributor>Kiwitz, Kai</dc:contributor>
+      <dc:contributor>Amunts, Katrin</dc:contributor>
+      <dc:contributor>Dickscheid, Timo</dc:contributor>
+      <dc:creator>Amunts, Katrin</dc:creator>
+      <dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</dc:rights>
+      <dc:relation>https://doi.org/10.1006/nimg.1998.0385</dc:relation>
+      <dc:relation>https://doi.org/10.1007/978-3-030-00931-1_76</dc:relation>
+      <dc:relation>https://doi.org/10.1109/ISBI.2017.7950666</dc:relation>
+      <dc:relation>https://doi.org/10.1126/science.1235381</dc:relation>
+    </metadata>
+  </metadata>
+</record>

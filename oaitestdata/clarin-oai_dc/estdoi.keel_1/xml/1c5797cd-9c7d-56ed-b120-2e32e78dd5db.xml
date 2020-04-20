@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17960239</identifier>
+    <datestamp>2019-05-16T17:25:39Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">H&#228;&#228;ldusbaas</dc:title>
+      <dc:title xml:lang="en">Pronunciation database</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:creator>Mihkla, Meelis</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-07</dc:date>
+      <dc:date>Updated: 2019-01-07</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-079DAL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">V&#245;&#245;rnimede ja l&#252;hendite h&#228;&#228;lduse andmebaas</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Database of Estonian pronunciation for foreign names and abbreviations</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

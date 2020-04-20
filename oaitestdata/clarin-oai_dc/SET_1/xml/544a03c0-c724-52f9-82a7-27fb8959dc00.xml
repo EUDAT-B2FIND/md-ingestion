@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>7e264d6aa3e611e5a2aa782bcb0741350bec1f4ff348475eab24a1a571916566</identifier>
+    <datestamp>2018-11-15T16:40:19Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CINTIL-WordSenses </dc:title>
+      <dc:description>The CINTIL-WordSenses corpus, built upon the CINTIL International Corpus of Portuguese (Barreto et al., 2006), is composed of 23,825 sentences of written Portuguese with open-class terms manually disambiguated and annotated with synset identifiers from the Portuguese MultiWordNet (MWNPT) (Pianti et al., 2002). From a total of 508,717 tokens of which 193,443 are open-class (potentially ambiguous) terms, 45,502 have been annotated with synset identifiers.
+
+The development of the CINTIL-WordSenses corpus has been funded by the EU project QTLeap (EC/FP7/610516) and the Portuguese project DP4LT (PTDC/EEI-
+SII/1940/2012).</dc:description>
+      <dc:date>2015-12-16</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

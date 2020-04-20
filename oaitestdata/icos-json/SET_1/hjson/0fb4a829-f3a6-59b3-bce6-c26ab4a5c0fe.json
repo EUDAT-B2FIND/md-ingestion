@@ -1,0 +1,27 @@
+{
+    "dataLevel": {
+        "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+        "type": "literal",
+        "value": "1"
+    },
+    "dobj": {
+        "type": "uri",
+        "value": "https://meta.icos-cp.eu/objects/KFxyGNr8Psrc89z5svuPltyp"
+    },
+    "fileName": {
+        "type": "literal",
+        "value": "ICOS_ATC_NRT_SVB_2018-06-18T00:00:00_2018-06-18T23:59:00_85.0_464_CH4.zip"
+    },
+    "spec": {
+        "type": "literal",
+        "value": "ICOS ATC NRT CH4 data csv time series"
+    },
+    "submitterName": {
+        "type": "literal",
+        "value": "Atmosphere thematic center"
+    },
+    "time": {
+        "type": "literal",
+        "value": "2018-06-19T05:11:27.801Z"
+    }
+}

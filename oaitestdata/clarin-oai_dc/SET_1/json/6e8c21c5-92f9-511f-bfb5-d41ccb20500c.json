@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5163",
+    "MetadataAccess": [
+        "oai:ota:oucs:5163"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dampier, William, 1652-1715."
+    ],
+    "fulltext": "oai:ota:oucs:5163;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5163.xml;Voyages and descriptions: vol.II. In three parts, viz. I. A supplement of the voyage round the world, ... 2. Two voyages to Campeachy; ... 3. A discourse of trade-winds, breezes, storms, ... By Capt. William Dampier. Illustrated with particular maps and draughts. To which is added, a general index to both volumes. The third edition.;New voyage round the world.;Dampier, William, 1652-1715.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6e8c21c5-92f9-511f-bfb5-d41ccb20500c",
+    "oai_identifier": [
+        "oai:ota:oucs:5163"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Voyages and descriptions: vol.II. In three parts, viz. I. A supplement of the voyage round the world, ... 2. Two voyages to Campeachy; ... 3. A discourse of trade-winds, breezes, storms, ... By Capt. William Dampier. Illustrated with particular maps and draughts. To which is added, a general index to both volumes. The third edition.",
+        "New voyage round the world."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5163.xml"
+}

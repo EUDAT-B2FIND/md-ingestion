@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Lexical Computing"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/x-xz"
+    ],
+    "Language": [
+        "Latin"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2506",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2506"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2506",
+    "PublicationTimestamp": "2012-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "Publisher": [
+        "Lexical Computing"
+    ],
+    "RelatedIdentifier": [
+        "https://www.sketchengine.co.uk/wp-content/uploads/2015/05/Latin_historical_corpus_2013.pdf"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "McGillivray, Barbara"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2506;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;LatinISE corpus;McGillivray, Barbara;latin corpus;The LatinISE corpus is a text corpus collected from the LacusCurtius, Intratext and Musisque Deoque websites. Corpus texts have rich metadata containing information as genre, title, century or specific date.\r\n\r\nThis Latin corpus was built by Barbara McGillivray.;2012;corpus;http://hdl.handle.net/11234/1-2506;lat;https://www.sketchengine.co.uk/wp-content/uploads/2015/05/Latin_historical_corpus_2013.pdf;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/x-xz;text/plain; charset=utf-8;downloadable_files_count: 1;Lexical Computing;https://www.sketchengine.co.uk/latin-corpus/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "44fe5826-cbcd-5e6f-a901-67dabd5ac904",
+    "notes": [
+        "The LatinISE corpus is a text corpus collected from the LacusCurtius, Intratext and Musisque Deoque websites. Corpus texts have rich metadata containing information as genre, title, century or specific date.\r\n\r\nThis Latin corpus was built by Barbara McGillivray."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2506"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "latin corpus"
+        }
+    ],
+    "title": [
+        "LatinISE corpus"
+    ],
+    "url": ""
+}

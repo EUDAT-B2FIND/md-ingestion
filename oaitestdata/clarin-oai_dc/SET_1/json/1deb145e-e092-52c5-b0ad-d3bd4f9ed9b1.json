@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=27b9084aa35a11e1a404080027e73ea2cbbed158889c419d80bae3f160cba3e5",
+    "MetadataAccess": [
+        "27b9084aa35a11e1a404080027e73ea2cbbed158889c419d80bae3f160cba3e5"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "27b9084aa35a11e1a404080027e73ea2cbbed158889c419d80bae3f160cba3e5;2018-11-15T16:39:22Z;lexicalConceptualResource;lexicalConceptualResource:wordList;LX-Abbreviations;LX-Abbreviations resource is a collection of abbreviations of different types from European Portuguese composed by 208 words. Each type of abbreviation is mannually divided and annotated with grammatical categories, gender and number, and, finally, with the respective abbreviations.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "1deb145e-e092-52c5-b0ad-d3bd4f9ed9b1",
+    "notes": [
+        "LX-Abbreviations resource is a collection of abbreviations of different types from European Portuguese composed by 208 words. Each type of abbreviation is mannually divided and annotated with grammatical categories, gender and number, and, finally, with the respective abbreviations."
+    ],
+    "oai_identifier": [
+        "27b9084aa35a11e1a404080027e73ea2cbbed158889c419d80bae3f160cba3e5"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:wordList"
+    ],
+    "state": "active",
+    "title": [
+        "LX-Abbreviations"
+    ]
+}

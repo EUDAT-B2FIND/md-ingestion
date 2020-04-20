@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "FBC"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "text/plain",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/224",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/224"
+    ],
+    "PID": "http://hdl.handle.net/11321/224",
+    "PublicationTimestamp": "2015-08-10T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "FBC"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 3.0 Unported (CC BY 3.0)",
+        "http://creativecommons.org/licenses/by/3.0/",
+        "CC"
+    ],
+    "author": [
+        "Osinska, Veslava"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/224;2015-08-10T14:37:02Z;hdl_11321_3;hdl_11321_4;Klasyfikacje reczne artyku\u0142\u00f3w;Osinska, Veslava;humanity categories;HS1 _ teo|rel 373\r\nHS1_fil|et 238\r\nHS2 _ jez 1812\r\nHS2_ art|arc 32\r\nHS2_bib_inf 1773\r\nHS2_kul 449\r\nHS2_lit 264\r\nHS3 _etn|antro 18\r\nHS3_ arche 284\r\nHS3_ his 211\r\nHS3_archi|dok 68\r\nHS6_ped 466\r\nHS6_psy 362\r\nHS6_soc 433\r\nLicznik ca\u0142kowity\t6783;2015-08-10;corpus;http://hdl.handle.net/11321/224;Polish;Creative Commons - Attribution 3.0 Unported (CC BY 3.0);http://creativecommons.org/licenses/by/3.0/;CC;application/octet-stream;text/plain;text/plain; charset=utf-8;downloadable_files_count: 2;FBC;wizualizacjainformacji.pl/projekt",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b9843f40-ff3f-5e2e-a2dc-cbb9c9e92e6f",
+    "notes": [
+        "HS1 _ teo|rel 373\r\nHS1_fil|et 238\r\nHS2 _ jez 1812\r\nHS2_ art|arc 32\r\nHS2_bib_inf 1773\r\nHS2_kul 449\r\nHS2_lit 264\r\nHS3 _etn|antro 18\r\nHS3_ arche 284\r\nHS3_ his 211\r\nHS3_archi|dok 68\r\nHS6_ped 466\r\nHS6_psy 362\r\nHS6_soc 433\r\nLicznik ca\u0142kowity\t6783"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/224"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "humanity categories"
+        }
+    ],
+    "title": [
+        "Klasyfikacje reczne artyku\u0142\u00f3w"
+    ],
+    "url": ""
+}

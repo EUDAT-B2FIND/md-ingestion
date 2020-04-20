@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4274",
+    "MetadataAccess": [
+        "oai:ota:oucs:4274"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dudley, H. Bate, Sir (Henry Bate), 1745-1824."
+    ],
+    "fulltext": "oai:ota:oucs:4274;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4274.xml;The rival candidates: a comic opera in two acts; as it is now performing at the Theatre Royal in Drury-Lane. By the Rev. Henry Bate.;Dudley, H. Bate, Sir (Henry Bate), 1745-1824.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bd6b6a26-50ff-5485-bf08-6355139d5b99",
+    "oai_identifier": [
+        "oai:ota:oucs:4274"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The rival candidates: a comic opera in two acts; as it is now performing at the Theatre Royal in Drury-Lane. By the Rev. Henry Bate."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4274.xml"
+}

@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0018/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0018/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0018/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-11-23T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Pignedoli, Carlo A.",
+        "Tkatchenko, Alexandre",
+        "Yakutovich, Aliaksandr V.",
+        "Passerone, Daniele",
+        "Hoja, Johannes"
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0018/v1;2019-06-12Z;DOI;Dataset;Yakutovich, Aliaksandr V.;Hoja, Johannes;Passerone, Daniele;Tkatchenko, Alexandre;Pignedoli, Carlo A.;Hidden Beneath the Surface: Origin of the Observed Enantioselective Adsorption on PdGa(111);Materials Cloud;2018-11-23;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;DFT;MARVEL  ; van der Waals interactions   many-body dispersion ;PdGa;chirality;many-body dispersion;doi:10.24435/materialscloud:2018.0018/v1;https://archive.materialscloud.org/2018.0018/v1;en;We provide the input files to reproduce the data presented in the work:\n<br/>\nHidden Beneath the Surface: Origin of the Observed Enantioselective Adsorption on PdGa(111)\n<br/>\nThe files are subdivided in directories named after the figures/table of the manuscript\n<br/>\nA. V. Yakutovich, J. Hoja, D. Passerone, Alexandre Tkatchenko, C. A. Pignedoli\n<br/>\nJ. Am. Chem. Soc., 140, 1401-1408 (2018) DOI: 10.1021/jacs.7b10980\n<br/>\nIn the work, we unravel the origin of the recently observed striking enantioselectivity of the PdGa(111) surface with respect to the adsorption of a small organic molecule, 9-ethynylphenanthrene, using first-principles calculations. It turns out that the key ingredient to understand the experimental evidence is the appropriate description of van der Waals interactions beyond the widely employed atomic pairwise approximation. A recently developed van der Waals-inclusive density functional method, which encompasses dielectric screening effects, reveals the origin of the experimentally observed enantioselectivity and provides conclusive evidence of chiral recognition on a bimetallic surface driven by dispersion interactions. ",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "ad2fb810-7a23-5af4-b221-0e0ed558782c",
+    "notes": [
+        "We provide the input files to reproduce the data presented in the work:\n<br/>\nHidden Beneath the Surface: Origin of the Observed Enantioselective Adsorption on PdGa(111)\n<br/>\nThe files are subdivided in directories named after the figures/table of the manuscript\n<br/>\nA. V. Yakutovich, J. Hoja, D. Passerone, Alexandre Tkatchenko, C. A. Pignedoli\n<br/>\nJ. Am. Chem. Soc., 140, 1401-1408 (2018) DOI: 10.1021/jacs.7b10980\n<br/>\nIn the work, we unravel the origin of the recently observed striking enantioselectivity of the PdGa(111) surface with respect to the adsorption of a small organic molecule, 9-ethynylphenanthrene, using first-principles calculations. It turns out that the key ingredient to understand the experimental evidence is the appropriate description of van der Waals interactions beyond the widely employed atomic pairwise approximation. A recently developed van der Waals-inclusive density functional method, which encompasses dielectric screening effects, reveals the origin of the experimentally observed enantioselectivity and provides conclusive evidence of chiral recognition on a bimetallic surface driven by dispersion interactions. "
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0018/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "DFT"
+        },
+        {
+            "name": "MARVEL"
+        },
+        {
+            "name": "van der Waals interactions many-body dispersion"
+        },
+        {
+            "name": "PdGa"
+        },
+        {
+            "name": "chirality"
+        },
+        {
+            "name": "many-body dispersion"
+        }
+    ],
+    "title": [
+        "Hidden Beneath the Surface: Origin of the Observed Enantioselective Adsorption on PdGa(111)"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0018/v1"
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4273",
+    "MetadataAccess": [
+        "oai:ota:oucs:4273"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Dudley, H. Bate, Sir (Henry Bate), 1745-1824."
+    ],
+    "fulltext": "oai:ota:oucs:4273;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4273.xml;The flitch of bacon; a comic opera: in two acts: as it is performed at the Theatre-Royal in the Hay-Market. By the Rev. Hen. Bate.;Dudley, H. Bate, Sir (Henry Bate), 1745-1824.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bd7ede8b-a19e-540a-8ef6-b348199a2cb3",
+    "oai_identifier": [
+        "oai:ota:oucs:4273"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The flitch of bacon; a comic opera: in two acts: as it is performed at the Theatre-Royal in the Hay-Market. By the Rev. Hen. Bate."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4273.xml"
+}

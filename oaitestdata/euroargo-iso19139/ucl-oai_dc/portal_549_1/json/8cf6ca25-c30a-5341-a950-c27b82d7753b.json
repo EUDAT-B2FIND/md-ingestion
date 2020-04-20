@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/10247612.v1",
+    "DiscHierarchy": [
+        "3.3.1.2",
+        "Agriculture, Forestry, Horticulture",
+        "Plant Cultivation"
+    ],
+    "Discipline": "Neuroscience",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/10247612",
+    "MetadataAccess": [
+        "oai:figshare.com:article/10247612"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-11-07T10:14:44Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Pupillometry_as_an_Objective_Measure_of_Sustained_Attention_in_Young_and_Older_Listeners_Trends_in_Hearing_Dataset_/10247612"
+    ],
+    "ResourceType": [
+        "Dataset",
+        "Dataset"
+    ],
+    "Rights": [
+        "CC0"
+    ],
+    "author": [
+        "Maria Chait (6765644)",
+        "Alice Milne (6764129)",
+        "Gabriela Bury (6780164)",
+        "Sijia Zhao (6769613)"
+    ],
+    "fulltext": "oai:figshare.com:article/10247612;2019-11-07T10:14:44Z;category_15;portal_549;item_type_3;month_year_11_2019;Pupillometry as an Objective Measure of Sustained Attention in Young and Older Listeners, Trends in Hearing [Dataset];Sijia Zhao (6769613);Gabriela Bury (6780164);Alice Milne (6764129);Maria Chait (6765644);Neuroscience;Pupillometry;Cognitive effort;ageing populations;Data files corresponding to paper of the same title. A Read Me guide to the data files is provided. For further questions please contact the corresponding authors.;2019-11-07T10:14:44Z;Dataset;Dataset;10.5522/04/10247612.v1;https://figshare.com/articles/Pupillometry_as_an_Objective_Measure_of_Sustained_Attention_in_Young_and_Older_Listeners_Trends_in_Hearing_Dataset_/10247612;CC0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "8cf6ca25-c30a-5341-a950-c27b82d7753b",
+    "notes": [
+        "Data files corresponding to paper of the same title. A Read Me guide to the data files is provided. For further questions please contact the corresponding authors."
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/10247612"
+    ],
+    "oai_set": [
+        "category_15",
+        "portal_549",
+        "item_type_3",
+        "month_year_11_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Neuroscience"
+        },
+        {
+            "name": "Pupillometry"
+        },
+        {
+            "name": "Cognitive effort"
+        },
+        {
+            "name": "ageing populations"
+        }
+    ],
+    "title": [
+        "Pupillometry as an Objective Measure of Sustained Attention in Young and Older Listeners, Trends in Hearing [Dataset]"
+    ],
+    "url": ""
+}

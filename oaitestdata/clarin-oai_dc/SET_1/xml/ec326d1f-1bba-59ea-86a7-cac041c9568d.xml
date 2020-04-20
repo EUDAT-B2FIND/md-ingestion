@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:dascitex</identifier>
+    <datestamp>2018-02-02T14:45:08Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DaSciTex</dc:title>
+      <dc:creator>Institut f&#252;r Sprach- und Literaturwissenschaft, TU Darmstadt</dc:creator>
+      <dc:creator>LingPro DFG-Projekt</dc:creator>
+      <dc:subject xml:lang="en">corpus linguistics</dc:subject>
+      <dc:subject xml:lang="en">linguistics</dc:subject>
+      <dc:subject xml:lang="en">register</dc:subject>
+      <dc:subject xml:lang="en">scientific discourse</dc:subject>
+      <dc:subject xml:lang="en">computer science</dc:subject>
+      <dc:subject xml:lang="en">computational linguistics</dc:subject>
+      <dc:subject xml:lang="en">biology</dc:subject>
+      <dc:subject xml:lang="en">bioinformatics</dc:subject>
+      <dc:subject xml:lang="en">electrical engineering</dc:subject>
+      <dc:subject xml:lang="en">micro-electronics</dc:subject>
+      <dc:subject xml:lang="en">mechanical engineering</dc:subject>
+      <dc:subject xml:lang="en">computer-aided design</dc:subject>
+      <dc:subject xml:lang="en">functional variation</dc:subject>
+      <dc:description xml:lang="en">Synchronic corpus of scientific texts from 9 different disciplines.</dc:description>
+      <dc:description xml:lang="en">The Darmstadt Corpus of Scientific Texts (DaSciTex) contains full English scientific journal articles compiled from 23 sources covering nine scientific domains. The corpus has a three-way partition: a center discipline (computer science) four 'pure' contact disciplines (linguistics, biology, mechanical engineering, electrical engineering) and four corresponding 'mixed' disciplines (computational linguistics, bio-informatics, computer-aided design, micro-electronics). The corpus comes in two versions  a small manually checked corpus (approx. one million words) a large corpus (17 million words.)</dc:description>
+      <dc:description xml:lang="de">Das Darmstadt Corpus of Scientific Texts (DaSciTex) besteht aus Vollversionen Englischer wissenschaftlicher Zeitschriftenartikel aus 23 Quellen und umfa&#223;t 9 verschiedene wissenschaftliche Dom&#228;nen. Der Aufbau des Korpus ist dreigliedrig: eine zentrale Disziplin (Informatik),vier 'reine' Kontaktdisziplinen (Linguistik, Biologie, Maschinen Bau, Elektrotechnik), vier dazugeh&#246;rige Mischdisziplinen (Computerlinguistik, Bio-Informatik, CAD, Mikroelektronik). Es gibt zwei Versionen des Korpus: ein kleines manuell korrigiertes Korpus (ca. eine Million W&#246;rter), ein gro&#223;es Korpus (17 Millionen W&#246;rter).</dc:description>
+      <dc:publisher>Universit&#228;t des Saarlandes</dc:publisher>
+      <dc:contributor>Prof. Elke Teich</dc:contributor>
+      <dc:date>2006-10/2009-09</dc:date>
+      <dc:type>Collection</dc:type>
+      <dc:type>Corpus</dc:type>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>clarind-uds:dascitex</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0005-BD0F-D</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:relation>Publications: http://www.linglit.tu-darmstadt.de/index.php?id=lingpro_pubs</dc:relation>
+      <dc:relation>RegiCo, the follow up: https://www.uni-saarland.de/lehrstuhl/teich/projekte/abgeschlossene-projekte/register-im-kontakt.html</dc:relation>
+      <dc:relation>DaSciTex Tools and Deliverables: http://www.linglit.tu-darmstadt.de/index.php?id=lingpro_deliverable</dc:relation>
+      <dc:coverage>Germany</dc:coverage>
+      <dc:coverage>2003/2007</dc:coverage>
+      <dc:rights>Copyrighted</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

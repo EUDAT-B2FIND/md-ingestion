@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1059</identifier>
+    <datestamp>2018-10-29T12:10:36Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Serbian-English parallel corpus srenWaC 1.0</dc:title>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Espl&#224;-Gomis, Miquel</dc:creator>
+      <dc:creator>Ortiz Rojas, Sergio</dc:creator>
+      <dc:creator>Klubi&#269;ka, Filip</dc:creator>
+      <dc:creator>Toral, Antonio</dc:creator>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>web corpus</dc:subject>
+      <dc:subject>multilingual</dc:subject>
+      <dc:description>The srenWaC corpus consists of sentence aligned parallel Serbian-English texts crawled from the .rs top-level domain for Serbia. The corpus was built with Spidextor (https://github.com/abumatran/spidextor), a tool that glues together the output of SpiderLing used for crawling and Bitextor used for bitext extraction. The accuracy of the extracted bitext, given the evaluation results on other languages, can be estimated at 74% on the sentence level and 76% on the word level.</dc:description>
+      <dc:date>2016-03-09</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1059</dc:identifier>
+      <dc:language>srp</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/324414</dc:relation>
+      <dc:rights>CLARIN.SI User Licence for Internet Corpora</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:rights>http://www.clarin.si/info/wp-content/uploads/2016/01/CLARIN.SI-WAC-2016-01.pdf</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

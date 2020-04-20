@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Fern\u00c3\u00a1ndez-Corugedo, S. G. (Santiago Gonz\u00c3\u00a1lez)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "3 files, c. 102 KB"
+    ],
+    "Language": [
+        "Middle English (1100-1500)",
+        "English",
+        "Hebrew"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1398",
+    "MetadataAccess": [
+        "oai:ota:oucs:1398"
+    ],
+    "PublicationTimestamp": "1100-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1100"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Anthologies",
+        "Linguistic corpora"
+    ],
+    "Rights": [
+        "Available for non-commercial use on condition that the terms of the BNC Licence are observed and that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1398;2018-05-08T14:08:14Z;http://ota.ox.ac.uk/headers/1398.xml;Anthology of Middle English texts / Santiago Gonzalez y Fernandez-Corugedo;1100-1400;text_and_corpus_linguistics;English literature -- Middle English, 1100-1500;enm;eng;heb;Oxford Text Archive, University of Oxford;Fern\u00c3\u00a1ndez-Corugedo, S. G. (Santiago Gonz\u00c3\u00a1lez);Fern\u00c3\u00a1ndez-Corugedo, S. G. (Santiago Gonz\u00c3\u00a1lez);3 files, c. 102 KB;Text;Anthologies;Linguistic corpora;Available for non-commercial use on condition that the terms of the BNC Licence are observed and that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "22b1c36f-5f59-555b-b0ec-e24c6d470152",
+    "oai_identifier": [
+        "oai:ota:oucs:1398"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English literature -- Middle English"
+        }
+    ],
+    "title": [
+        "Anthology of Middle English texts / Santiago Gonzalez y Fernandez-Corugedo"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1398.xml"
+}

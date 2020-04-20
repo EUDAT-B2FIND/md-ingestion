@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-575</identifier>
+    <datestamp>2016-04-06T16:39:52Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>IFA speech corpus</dc:title>
+      <dc:contributor>Son, R.J.J.H. van</dc:contributor>
+      <dc:description>Spoken corpus containing speech of 4 male and 4 female speakers. 50,000 words segmented at phoneme level</dc:description>
+      <dc:date>2006</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-575</dc:identifier>
+      <dc:language>nld</dc:language>
+      <dc:rights>GNU GPL</dc:rights>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Netherlands (the)</dc:coverage>
+      <dc:publisher>Instituut Fonetische Wetenschappen (IFA-groep) UvA</dc:publisher>
+      <dc:source>http://www.fon.hum.uva.nl/Service/IFAcorpus/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

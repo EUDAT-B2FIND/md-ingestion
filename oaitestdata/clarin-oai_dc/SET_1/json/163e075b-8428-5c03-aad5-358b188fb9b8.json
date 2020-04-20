@@ -1,0 +1,113 @@
+{
+    "Contact": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 3",
+        "application/zip"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1181",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1181"
+    ],
+    "PID": "http://hdl.handle.net/11356/1181",
+    "PublicationTimestamp": "2018-03-16T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Centre for Language Resources and Technologies, University of Ljubljana"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11356/1210",
+        "http://hdl.handle.net/11356/1165"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    ],
+    "author": [
+        "Krek, Simon",
+        "\u0160krjanec, Iza",
+        "Zupan, Katja",
+        "Arhar Holdt, \u0160pela",
+        "Dobrovoljc, Kaja",
+        "Zajc, Anja",
+        "Erjavec, Toma\u017e",
+        "Kuzman, Taja",
+        "Gantar, Polona",
+        "Ledinek, Nina",
+        "\u010cibej, Jaka",
+        "Jezer\u0161ek, Lucija",
+        "Kav\u010di\u010d, Teja",
+        "Marko, Dafne",
+        "Holz, Nanika",
+        "Mo\u017ee, Sara"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1181;2019-01-26T20:42:21Z;hdl_11356_1023;hdl_11356_1024;Training corpus ssj500k 2.1;Krek, Simon;Dobrovoljc, Kaja;Erjavec, Toma\u017e;Mo\u017ee, Sara;Ledinek, Nina;Holz, Nanika;Zupan, Katja;Gantar, Polona;Kuzman, Taja;\u010cibej, Jaka;Arhar Holdt, \u0160pela;Kav\u010di\u010d, Teja;\u0160krjanec, Iza;Marko, Dafne;Jezer\u0161ek, Lucija;Zajc, Anja;tagging;dependency treebank;parsing;named entities;tokenisation;manual annotation;TEI;verbal multiword expressions;semantic role labelling;The ssj500k training corpus contains about 500,000 tokens manually annotated on the levels of tokenisation, sentence segmentation, morphosyntactic tagging, and lemmatisation. About half of the corpus is also manually annotated with syntactic dependencies, named entities, and verbal multiword expressions. About a quarter of the corpus is annotated with semantic role labels.\r\n\r\nThe annotations of the ssj500k corpus follow (1) the MULTEXT-East V5 morphosyntactic specifications for Slovene, http://nl.ijs.si/ME/V5/msd/, (2) the JOS dependency schema, http://nl.ijs.si/jos/bib/jos-skladnja-navodila.pdf, (3) the Janes annotation guidelines for Slovenian named entities, http://nl.ijs.si/janes/wp-content/uploads/2017/09/SlovenianNER-eng-v1.1.pdf, and (4) the Guidelines of the PARSEME shared task on verbal multiword expressions, http://parsemefr.lif.univ-mrs.fr/parseme-st-guidelines/1.1/\r\nThe vocabulary of (1) and (2) is provided in the back element and (3) and (4) in the teiHeader of the TEI encoded corpus. The semantic role labels are also documented in the teiHeader.;2018-03-16;corpus;http://hdl.handle.net/11356/1181;slv;http://hdl.handle.net/11356/1210;http://hdl.handle.net/11356/1165;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);PUB;https://creativecommons.org/licenses/by-nc-sa/4.0/;text/plain; charset=utf-8;application/zip;application/zip;application/zip;downloadable_files_count: 3;Centre for Language Resources and Technologies, University of Ljubljana;http://eng.slovenscina.eu/tehnologije/ucni-korpus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "163e075b-8428-5c03-aad5-358b188fb9b8",
+    "notes": [
+        "The ssj500k training corpus contains about 500,000 tokens manually annotated on the levels of tokenisation, sentence segmentation, morphosyntactic tagging, and lemmatisation. About half of the corpus is also manually annotated with syntactic dependencies, named entities, and verbal multiword expressions. About a quarter of the corpus is annotated with semantic role labels.\r\n\r\nThe annotations of the ssj500k corpus follow (1) the MULTEXT-East V5 morphosyntactic specifications for Slovene, http://nl.ijs.si/ME/V5/msd/, (2) the JOS dependency schema, http://nl.ijs.si/jos/bib/jos-skladnja-navodila.pdf, (3) the Janes annotation guidelines for Slovenian named entities, http://nl.ijs.si/janes/wp-content/uploads/2017/09/SlovenianNER-eng-v1.1.pdf, and (4) the Guidelines of the PARSEME shared task on verbal multiword expressions, http://parsemefr.lif.univ-mrs.fr/parseme-st-guidelines/1.1/\r\nThe vocabulary of (1) and (2) is provided in the back element and (3) and (4) in the teiHeader of the TEI encoded corpus. The semantic role labels are also documented in the teiHeader."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1181"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "dependency treebank"
+        },
+        {
+            "name": "parsing"
+        },
+        {
+            "name": "named entities"
+        },
+        {
+            "name": "tokenisation"
+        },
+        {
+            "name": "manual annotation"
+        },
+        {
+            "name": "TEI"
+        },
+        {
+            "name": "verbal multiword expressions"
+        },
+        {
+            "name": "semantic role labelling"
+        }
+    ],
+    "title": [
+        "Training corpus ssj500k 2.1"
+    ],
+    "url": ""
+}

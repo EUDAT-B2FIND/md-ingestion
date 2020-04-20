@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/3-00-0000-0000-0000-05BE6L",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:9474552",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:9474552"
+    ],
+    "PublicationTimestamp": "2017-02-15T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Pajupuu, Hille"
+    ],
+    "fulltext": "oai:oai.datacite.org:9474552;2019-04-17T17:26:26Z;ESTDOI;ESTDOI.KEEL;Valentsikorpus;Valency corpus ;Pajupuu, Hille;Center of Estonian Language Resources;2016;Issued: 2016-11-09;Updated: 2017-02-15;doi:10.15155/3-00-0000-0000-0000-05BE6L;Abstract;Valentsikorpus koosneb \"Postimehe\" artiklite ortograafilistest l\u00f5ikudest, mille emotsionaalsuse (positiivne, negatiivne, vastuoluline, neutraalne) on m\u00e4\u00e4ranud lugejad. Kasutatud on domineeriva arvamuse meetodit (Pennebaker jt 1997).\nValentsikorpus on m\u00f5eldud eesk\u00e4tt statistiliste mudelite treenimiseks, kuid seda saab kasutada ka muudel eesm\u00e4rkidel. P\u00e4ringuid on v\u00f5imalik teha nii rubriike (Arvamus, Eesti, Kultuur, Sport, V\u00e4lismaa, Krimi) kui ka emotsionaalsust (positiivne, negatiivne, vastuoluline, neutraalne) arvesse v\u00f5ttes.;Abstract;The Valency Corpus consists of orthographic passages from the Postimees daily, whose emotional tone (positive, negative, ambiguous, neutral) has been identified by readers. The identification was done using the method of dominant opinion (Pennebaker et al. 1997). The corpus is mainly intended to train statistical models, but it can also be used for other purposes. Queries can be done by rubrics (\u201cOpinion\u201c, \u201cEstonia\u201c, \u201cCulture\u201c, \u201cSports\u201c, \u201cAbroad\u201c, \u201cCriminal\u201c) as well as by the emotional tone (positive, negative, ambiguous, neutral).",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "567dabb6-e270-5e18-859e-bca0114f759e",
+    "notes": [
+        "Abstract",
+        "Valentsikorpus koosneb \"Postimehe\" artiklite ortograafilistest l\u00f5ikudest, mille emotsionaalsuse (positiivne, negatiivne, vastuoluline, neutraalne) on m\u00e4\u00e4ranud lugejad. Kasutatud on domineeriva arvamuse meetodit (Pennebaker jt 1997).\nValentsikorpus on m\u00f5eldud eesk\u00e4tt statistiliste mudelite treenimiseks, kuid seda saab kasutada ka muudel eesm\u00e4rkidel. P\u00e4ringuid on v\u00f5imalik teha nii rubriike (Arvamus, Eesti, Kultuur, Sport, V\u00e4lismaa, Krimi) kui ka emotsionaalsust (positiivne, negatiivne, vastuoluline, neutraalne) arvesse v\u00f5ttes.",
+        "Abstract",
+        "The Valency Corpus consists of orthographic passages from the Postimees daily, whose emotional tone (positive, negative, ambiguous, neutral) has been identified by readers. The identification was done using the method of dominant opinion (Pennebaker et al. 1997). The corpus is mainly intended to train statistical models, but it can also be used for other purposes. Queries can be done by rubrics (\u201cOpinion\u201c, \u201cEstonia\u201c, \u201cCulture\u201c, \u201cSports\u201c, \u201cAbroad\u201c, \u201cCriminal\u201c) as well as by the emotional tone (positive, negative, ambiguous, neutral)."
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:9474552"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "Valentsikorpus",
+        "Valency corpus "
+    ],
+    "url": ""
+}

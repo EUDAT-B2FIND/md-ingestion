@@ -1,0 +1,79 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2019.0006/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2019.0006/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2019.0006/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-02-06T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Mace, Amber",
+        "Barthel, Senja",
+        "Corminboeuf, Cl\u00e9mence",
+        "Smit, Berend",
+        "Meyer, Benjamin",
+        "Guillot, Benoit ",
+        "Vannay, Laurent"
+    ],
+    "fulltext": "oai:materialscloud.org:2019.0006/v1;2019-06-12Z;DOI;Dataset;Meyer, Benjamin;Barthel, Senja;Mace, Amber;Vannay, Laurent;Guillot, Benoit ;Smit, Berend;Corminboeuf, Cl\u00e9mence;DORI reveals the influence of non-covalent interactions on covalent bonding patterns in molecular crystals under pressure;Materials Cloud;2019-02-06;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;Molecular scalar fields;Organic crystals;Topology;High pressure;doi:10.24435/materialscloud:2019.0006/v1;https://archive.materialscloud.org/2019.0006/v1;en;The study of organic molecular crystals under high pressure provides fundamental insight into crystal packing distortions and reveals mechanisms of phase transitions and the crystallization of polymorphs. These solid state transformations can be monitored directly by analyzing electron charge densities that are experimentally obtained at high pressure. However, restricting the analysis to the featureless electron density does not reveal the chemical bonding nature and the existence of intermolecular interactions. This shortcoming can be resolved by the use of the DORI (Density Overlap Region Indicator) descriptor, which is capable of detecting simultaneously both covalent patterns and non-covalent interactions from electron density and its derivatives. Using the biscarbonyl[14]annulene crystal under pressure as an example, we demonstrate how DORI can be exploited on experimental electron densities to reveal and monitor changes in electronic structure patterns resulting from molecular compression. A novel approach based on a flood fill type algorithm is proposed for analyzing the topology of the DORI isosurface. This approach avoids the arbitrarily selection of DORI isovalues and provides an intuitive way to assess how compression packing affects covalent bonding in organic solids.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "f482a7fe-d3bf-5201-b7bf-53f618f8bd8d",
+    "notes": [
+        "The study of organic molecular crystals under high pressure provides fundamental insight into crystal packing distortions and reveals mechanisms of phase transitions and the crystallization of polymorphs. These solid state transformations can be monitored directly by analyzing electron charge densities that are experimentally obtained at high pressure. However, restricting the analysis to the featureless electron density does not reveal the chemical bonding nature and the existence of intermolecular interactions. This shortcoming can be resolved by the use of the DORI (Density Overlap Region Indicator) descriptor, which is capable of detecting simultaneously both covalent patterns and non-covalent interactions from electron density and its derivatives. Using the biscarbonyl[14]annulene crystal under pressure as an example, we demonstrate how DORI can be exploited on experimental electron densities to reveal and monitor changes in electronic structure patterns resulting from molecular compression. A novel approach based on a flood fill type algorithm is proposed for analyzing the topology of the DORI isosurface. This approach avoids the arbitrarily selection of DORI isovalues and provides an intuitive way to assess how compression packing affects covalent bonding in organic solids."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2019.0006/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Molecular scalar fields"
+        },
+        {
+            "name": "Organic crystals"
+        },
+        {
+            "name": "Topology"
+        },
+        {
+            "name": "High pressure"
+        }
+    ],
+    "title": [
+        "DORI reveals the influence of non-covalent interactions on covalent bonding patterns in molecular crystals under pressure"
+    ],
+    "url": "https://archive.materialscloud.org/2019.0006/v1"
+}

@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Max Planck Institute for Evolutionary Anthropology"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-654",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-654"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-654",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Max Planck Institute for Evolutionary Anthropology"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Code of conduct"
+    ],
+    "SpatialCoverage": [
+        "Botswana"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-654;2016-04-06T16:39:52Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Taa corpus;Documentation of the Taa project (DoBeS project);2014-07-30;corpus;http://hdl.handle.net/11372/LRT-654;Code of conduct;downloadable_files_count: 0;Botswana;Max Planck Institute for Evolutionary Anthropology;http://corpus1.mpi.nl/ds/imdi_browser/?openpath=MPI318963%23",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "810677d2-7f39-58c2-b075-cfa3ccac01c8",
+    "notes": [
+        "Documentation of the Taa project (DoBeS project)"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-654"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Taa corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repository.clarin.dk:20.500.12115/18</identifier>
+    <datestamp>2018-06-28T13:26:20Z</datestamp>
+    <setSpec>hdl_20.500.12115_1</setSpec>
+    <setSpec>hdl_20.500.12115_3</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DK-CLARIN Parallel Financial Corpus (da-en)</dc:title>
+      <dc:creator>Hansen, Dorte Haltrup</dc:creator>
+      <dc:creator>Offersgaard, Lene</dc:creator>
+      <dc:subject>Economics</dc:subject>
+      <dc:description>The DK-CLARIN Parallel Financial Corpus comprises 4.3 M Danish and 4.8 M English tokens from translated (parallel) documents, mainly annual reports, of the period 2002-2010 from 12 of the biggest Danish companies.&#13;
+All texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and termhood annotation placed in separate text external spangroups.&#13;
+The corpus was collected and processed in the work package 2.6 of the Danish CLARIN project (see http://dkclarin.ku.dk/english) by University of Copenhagen, Centre for Language Technology.&#13;
+The aim of the Danish CLARIN consortium was to construct a Danish research infrastructure for the humanities integrating written, spoken, and visual records into a coherent and systematic digital repository. The project ran from January 2008 until the end of 2010.</dc:description>
+      <dc:date>2011</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.12115/18</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>CLARIN-ACA-NC</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&amp;AFFIL=EDU&amp;BY=1&amp;NC=1&amp;NORED=1</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 7</dc:format>
+      <dc:publisher>Centre for Language Technology, NorS, University of Copenhagen</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

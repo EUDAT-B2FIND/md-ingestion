@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Lancashire, Ian"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 159 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1331",
+    "MetadataAccess": [
+        "oai:ota:oucs:1331"
+    ],
+    "PublicationTimestamp": "1486-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1486"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Plays"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Medwall, Henry, active 1486"
+    ],
+    "fulltext": "oai:ota:oucs:1331;2018-03-07T16:12:07Z;http://ota.ox.ac.uk/headers/1331.xml;Nature / Henry Medwall;Medwall, Henry, active 1486;1486;text_and_corpus_linguistics;English drama -- Early modern and Elizabethan, 1500-1600;Oxford Text Archive, University of Oxford;Lancashire, Ian;(1 file : ca. 159 KB);Text;Plays;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "eeff4281-7823-5972-ac09-5d3b7f8416a1",
+    "oai_identifier": [
+        "oai:ota:oucs:1331"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English drama -- Early modern Elizabethan"
+        }
+    ],
+    "title": [
+        "Nature / Henry Medwall"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1331.xml"
+}

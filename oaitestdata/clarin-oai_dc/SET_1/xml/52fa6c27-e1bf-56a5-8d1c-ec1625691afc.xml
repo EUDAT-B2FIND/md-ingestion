@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1953</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LiStr: Linguistic Structure Induction Tookit</dc:title>
+      <dc:creator>Mare&#269;ek, David</dc:creator>
+      <dc:creator>Straka, Milan</dc:creator>
+      <dc:subject>parsing</dc:subject>
+      <dc:subject>unsupervised machine learning</dc:subject>
+      <dc:subject>machine translation</dc:subject>
+      <dc:subject>grammar induction</dc:subject>
+      <dc:description>This toolkit comprises the tools and supporting scripts for unsupervised induction of dependency trees from raw texts or texts with already assigned part-of-speech tags. There are also scripts for simple machine translation based on unsupervised parsing and scripts for minimally supervised parsing into Universal-Dependencies style.</dc:description>
+      <dc:date>2016-12-22</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1953</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:rights>GNU General Public Licence, version 3</dc:rights>
+      <dc:rights>http://opensource.org/licenses/GPL-3.0</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/listr</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

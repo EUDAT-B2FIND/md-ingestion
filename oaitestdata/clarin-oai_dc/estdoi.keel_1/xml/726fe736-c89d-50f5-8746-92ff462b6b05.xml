@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9845162</identifier>
+    <datestamp>2019-06-09T04:32:37Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele spontaanse k&#245;ne foneetiline korpus v.1.0.3</dc:title>
+      <dc:title xml:lang="en">Phonetic Corpus of Estonian Spontaneous Speech v.1.0.3</dc:title>
+      <dc:creator>Lippus, P&#228;rtel</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2013</dc:date>
+      <dc:date>Issued: 2013-01-09</dc:date>
+      <dc:date>Updated: 2016-12-02</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0012AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The aim of the corpus is to compile a large amount of quality recordings of spontaneous Estonian and segment it phonetically on different levels. The project started in autumn 2006.
+
+The total size of the corpus is approximately 80 hours of speech from 120 speakers with different dialectological and social background. Speakers are from different age groups. They are asked to participate with face-to-face invitation and they are aware of the purpose of the recordings.
+
+Most of the recordings are made in a recording studio, some also on fieldwork. The signal of each speaker is recorded in a separate channel. The distance between the speakers is about 3 meters to minimize the effect of overlaps. For the field-work recordings head-set microphones are used. Recordings are saved in PCM wav-format and are not compressed. Background information about the recordings is collected in a text-file.
+    Segmentation and annotation files are saved as Praat TextGrid files and get same filenames as recordings segmented.
+
+Segmentation and annotation
+Segmentation and annotation is done with the Praat program (www.praat.org). Recordings are segmented manually on different levels (automatic segmentation program is also elaborated and tested).
+Following tiers are used:
+    -Words (in orthographic spelling), 
+    -Phonemes (SAMPA adjusted for Estonian is used for transcription), 
+    -Syllables (short &#8211; long, open &#8211; closed), 
+    -Prosodic feet,
+    -Intonation phrases or inter-pausal units;
+    -Changes in voice quality (e.g. creaky voice);</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

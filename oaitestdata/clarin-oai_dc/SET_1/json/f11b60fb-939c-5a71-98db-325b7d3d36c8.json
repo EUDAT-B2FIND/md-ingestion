@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 4",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1154",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1154"
+    ],
+    "PID": "http://hdl.handle.net/11356/1154",
+    "PublicationTimestamp": "2017-10-13T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://nl.ijs.si/janes/wp-content/uploads/2017/09/Magistrsko-delo_%C5%A0pela-Reher_final.pdf",
+        "http://nl.ijs.si/janes/viri/rocno-oznaceni-korpusi/#Janes-Preklop",
+        "https://doi.org/10.1007/s10579-018-9425-z"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Reher, \u0160pela",
+        "Erjavec, Toma\u017e",
+        "Fi\u0161er, Darja"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1154;2018-12-04T16:11:02Z;hdl_11356_1023;hdl_11356_1024;Tweet code-switching corpus Janes-Preklop 1.0;Reher, \u0160pela;Erjavec, Toma\u017e;Fi\u0161er, Darja;computer-mediated communication;Twitter;code-switching;TEI;manual annotation;Janes-Preklop is a corpus of Slovene tweets that is manually annotated for code-switching (the use of words from two or more languages within one sentence or utterance), according to the supplied typology. Words in the corpus are also automatically tagged with MSDs and lemmas.;2017-10-13;corpus;http://hdl.handle.net/11356/1154;slv;http://nl.ijs.si/janes/wp-content/uploads/2017/09/Magistrsko-delo_%C5%A0pela-Reher_final.pdf;http://nl.ijs.si/janes/viri/rocno-oznaceni-korpusi/#Janes-Preklop;https://doi.org/10.1007/s10579-018-9425-z;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;application/pdf;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 4;Jo\u017eef Stefan Institute;http://nl.ijs.si/janes/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f11b60fb-939c-5a71-98db-325b7d3d36c8",
+    "notes": [
+        "Janes-Preklop is a corpus of Slovene tweets that is manually annotated for code-switching (the use of words from two or more languages within one sentence or utterance), according to the supplied typology. Words in the corpus are also automatically tagged with MSDs and lemmas."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1154"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "computer-mediated communication"
+        },
+        {
+            "name": "Twitter"
+        },
+        {
+            "name": "code-switching"
+        },
+        {
+            "name": "TEI"
+        },
+        {
+            "name": "manual annotation"
+        }
+    ],
+    "title": [
+        "Tweet code-switching corpus Janes-Preklop 1.0"
+    ],
+    "url": ""
+}

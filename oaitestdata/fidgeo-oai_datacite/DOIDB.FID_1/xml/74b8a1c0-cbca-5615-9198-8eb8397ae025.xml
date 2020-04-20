@@ -1,0 +1,128 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6406</identifier>
+    <datestamp>2018-10-25T08:11:40Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.012</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Urbani, Stefano</default:creatorName>
+              <default:givenName>Stefano</default:givenName>
+              <default:familyName>Urbani</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0421-022X</default:nameIdentifier>
+              <default:affiliation>University of Roma Tre, Rome, Italy</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Acocella, Valerio</default:creatorName>
+              <default:givenName>Valerio</default:givenName>
+              <default:familyName>Acocella</default:familyName>
+              <default:affiliation>University of Roma Tre, Rome, Italy</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Rivalta, Eleonora</default:creatorName>
+              <default:givenName>Eleonora</default:givenName>
+              <default:familyName>Rivalta</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-8245-0504</default:nameIdentifier>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="eng">Supplementary Material for Analogue Experiments on Lateral versus Vertical Dike Propagation</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject xml:lang="en">crustal layering</default:subject>
+            <default:subject xml:lang="en">rigidity</default:subject>
+            <default:subject>Bardarbunga</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>multi-scale laboratories</default:subject>
+            <default:subject>analogue models of geologic processes</default:subject>
+            <default:subject>analogue modelling results</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Urbani, Stefano</default:contributorName>
+              <default:givenName>Stefano</default:givenName>
+              <default:familyName>Urbani</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0421-022X</default:nameIdentifier>
+              <default:affiliation>University of Roma Tre, Rome, Italy</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Urbani, Stefano</default:contributorName>
+              <default:givenName>Stefano</default:givenName>
+              <default:familyName>Urbani</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0421-022X</default:nameIdentifier>
+              <default:affiliation>University of Roma Tre, Rome, Italy</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Supervisor">
+              <default:contributorName>Acocella, Valerio</default:contributorName>
+              <default:givenName>Valerio</default:givenName>
+              <default:familyName>Acocella</default:familyName>
+              <default:affiliation>University of Roma Tre, Rome, Italy</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Supervisor">
+              <default:contributorName>Rivalta, Eleonora</default:contributorName>
+              <default:givenName>Eleonora</default:givenName>
+              <default:familyName>Rivalta</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-8245-0504</default:nameIdentifier>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Laboratory of Experimental Tectonics (University of Roma TRE, Italy)</default:contributorName>
+              <default:affiliation>University of Roma Tre, Rome, Italy</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Created">2018-05-02</default:date>
+          </default:dates>
+          <default:language>eng</default:language>
+          <default:resourceType resourceTypeGeneral="Audiovisual"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1029/2017JB015376</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>97651 Bytes</default:size>
+            <default:size>2 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>video/x-msvideo</default:format>
+            <default:format>application/pdf</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">The dataset includes movies of 29 analogue experiments performed to investigate the effects on dike propagation by the following imposed parameters: density ratio between host-rock and magma analogues, rigidity layering and density layering of the host medium, flow rate and topography. The purpose of the experiments is to define a hierarchy of all the parameters considered, by varying systematically each of them, comparing semi-quantitatively the variations on dike geometry and velocity.<default:br/>
+         <default:br/>Experimental setup<default:br/>
+         <default:br/>The experimental set-up consists of a 33 &#215; 58 &#215; 38.5 cm3 Plexiglas box and a peristaltic pump that injects water (magma analogue) into pig-skin gelatin (crustal analogue) alternatively from the bottom (Set 1) and the side of the box (Set 2).<default:br/>
+         <default:br/>The gelatin rheological properties are varied by mixing different concentrations of gelatin powder and NaCl. We refer to &#8220;rigidity layering&#8221; when the rigidity ratio (i.e. Young&#8217;s Modulus) between the upper and lower layer (Eu/El) is &lt; or &gt; 1, and to &#8220;density layering&#8221; when Eu/El ~ 1, but the two layers show different densities (i.e. the ratio between the density of the upper and lower layer, &#961;U/&#961;L). The experiments with topography are prepared by imposing a mold with gently inward dipping flanks (2.4&#176; and 3.7&#176;) on the opposite sides of the box separated by a 8 cm wide horizontal plain on the gelatin surface.<default:br/>
+         <default:br/>This configuration simulates the 2-D along-strike topography of the 2014 Bardarbunga intrusion (Iceland) and allows investigating the role of two opposite slopes on dike propagation. The topography profile dips parallel to the long side of the Plexiglas box (x axis in Figure 1 of Urbani et al. 2018). The flow rate has been changed between 0.079 and 0.435 ml/s. For the details about the model set-up, experimental results and interpretation refer to Urbani et al. (2018).<default:br/>
+         <default:br/>The time-lapse movies show the time evolution of the dike shape, in side and map view, of 29 out of 33 models presented in Urbani et al. (2018). It is recommended to open the films with the VLC media player. The time-lapse of each experiment is indicated in the bottom left corner.<default:br/>
+         <default:br/>A full list of files is given in &#8220;Experiments_Summary_2018-012.pdf&#8221; in which Set 1 (bottom injection) and Set 2 (lateral injection) experiments are indicated in red and blue color respectively. The same file also provides a summary of the boundary conditions imposed in each experiment. Tu and Tl indicate the thickness of the upper and lower layer respectively.</default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationBox>
+                <default:westBoundLongitude>-17.77313232421875</default:westBoundLongitude>
+                <default:eastBoundLongitude>-16.556396484375</default:eastBoundLongitude>
+                <default:southBoundLatitude>64.55906111505632</default:southBoundLatitude>
+                <default:northBoundLatitude>64.9072397186371</default:northBoundLatitude>
+              </default:geoLocationBox>
+              <default:geoLocationPlace>Along strike topography along-strike topography of the 2014 Bardarbunga intrusion</default:geoLocationPlace>
+            </default:geoLocation>
+          </default:geoLocations>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

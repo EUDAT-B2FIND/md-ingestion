@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Adams, Jon-K"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(2 files : ca. 110, 2 KB)",
+        "text/plain"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1198",
+    "MetadataAccess": [
+        "oai:ota:oucs:1198"
+    ],
+    "PublicationTimestamp": "1776-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1776"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Politics"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Paine, Thomas, 1737-1809"
+    ],
+    "fulltext": "oai:ota:oucs:1198;2018-03-05T12:19:01Z;http://ota.ox.ac.uk/headers/1198.xml;Common sense / Thomas Paine;Paine, Thomas, 1737-1809;1776;text_and_corpus_linguistics;United States -- Politics and government -- Revolution, 1775-1783;eng;Oxford Text Archive, University of Oxford;Adams, Jon-K;text/plain;(2 files : ca. 110, 2 KB);Text;Politics;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "868e183b-3640-5746-83d8-67f76f7004f1",
+    "oai_identifier": [
+        "oai:ota:oucs:1198"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "United States -- Politics government -- Revolution"
+        }
+    ],
+    "title": [
+        "Common sense / Thomas Paine"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1198.xml"
+}

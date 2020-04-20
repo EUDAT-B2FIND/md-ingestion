@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 2",
+        "text/html",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Arabic"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4872-3",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4872-3"
+    ],
+    "PID": "http://hdl.handle.net/11858/00-097C-0000-0001-4872-3",
+    "PublicationTimestamp": "2009-11-02T10:34:20Z",
+    "PublicationYear": [
+        "2009"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)",
+        "PUB",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/"
+    ],
+    "author": [
+        "\u0160naidauf, Jan",
+        "Hassanov\u00e1, Kamila",
+        "Be\u0161ka, Emanuel",
+        "Haji\u010d, Jan",
+        "Kracmar, Jakub",
+        "Smr\u017e, Otakar",
+        "Pajas, Petr",
+        "Zem\u00e1nek, Petr"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4872-3;2019-01-23T19:09:35Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Prague Arabic Dependency Treebank 1.0;Haji\u010d, Jan;Smr\u017e, Otakar;Zem\u00e1nek, Petr;Pajas, Petr;\u0160naidauf, Jan;Be\u0161ka, Emanuel;Kracmar, Jakub;Hassanov\u00e1, Kamila;corpus;Arabic;The PADT project might be summarized as an open-ended activity of the Center for Computational Linguistics, the Institute of Formal and Applied Linguistics, and the Institute of Comparative Linguistics, Charles University in Prague, resting in multi-level annotation of Arabic language resources in the light of the theory of Functional Generative Description (Sgall et al., 1986; Haji\u010dov\u00e1 and Sgall, 2003).;2009-11-02T10:34:20Z;corpus;http://hdl.handle.net/11858/00-097C-0000-0001-4872-3;ara;Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0);PUB;http://creativecommons.org/licenses/by-nc-sa/3.0/;application/zip;text/html;text/plain; charset=utf-8;downloadable_files_count: 2;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/padt",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "20774048-8598-5cc7-8300-79969adf3bd1",
+    "notes": [
+        "The PADT project might be summarized as an open-ended activity of the Center for Computational Linguistics, the Institute of Formal and Applied Linguistics, and the Institute of Comparative Linguistics, Charles University in Prague, resting in multi-level annotation of Arabic language resources in the light of the theory of Functional Generative Description (Sgall et al., 1986; Haji\u010dov\u00e1 and Sgall, 2003)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4872-3"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "Arabic"
+        }
+    ],
+    "title": [
+        "Prague Arabic Dependency Treebank 1.0"
+    ],
+    "url": ""
+}

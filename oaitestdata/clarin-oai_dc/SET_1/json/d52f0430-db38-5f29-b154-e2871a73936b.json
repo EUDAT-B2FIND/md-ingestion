@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Slovenian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1169",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1169"
+    ],
+    "PID": "http://hdl.handle.net/11356/1169",
+    "PublicationTimestamp": "2017-11-27T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "author": [
+        "Erjavec, Toma\u017e",
+        "Perov\u0161ek, Matic",
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1169;2018-01-22T08:51:26Z;hdl_11356_1023;hdl_11356_1077;cSMTiser: word standardisation;Ljube\u0161i\u0107, Nikola;Perov\u0161ek, Matic;Erjavec, Toma\u017e;word normalisation;Word standardisation of non-standard language as found in user-generated content, using cSMTiser (https://github.com/clarinsi/csmtiser), a tool for text normalisation via character-level machine translation. The tool has been trained on the Janes-Norm dataset (http://hdl.handle.net/11356/1084) and background resources.;2017-11-27;toolService;http://hdl.handle.net/11356/1169;slv;application/octet-stream;downloadable_files_count: 0;Jo\u017eef Stefan Institute;https://github.com/clarinsi/csmtiser",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d52f0430-db38-5f29-b154-e2871a73936b",
+    "notes": [
+        "Word standardisation of non-standard language as found in user-generated content, using cSMTiser (https://github.com/clarinsi/csmtiser), a tool for text normalisation via character-level machine translation. The tool has been trained on the Janes-Norm dataset (http://hdl.handle.net/11356/1084) and background resources."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1169"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1077"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "word normalisation"
+        }
+    ],
+    "title": [
+        "cSMTiser: word standardisation"
+    ],
+    "url": ""
+}

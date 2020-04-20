@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "A"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1426",
+    "MetadataAccess": [
+        "oai:ota:oucs:1426"
+    ],
+    "PublicationYear": [
+        "Date unknown"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "While this resource was freely available for non-commercial use provided that this header is included in its entirety with any copy distributed, it has been removed from our catalogue for one reason or another.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Beckett, Samuel"
+    ],
+    "fulltext": "oai:ota:oucs:1426;2018-04-16T15:30:51Z;http://ota.ox.ac.uk/headers/1426.xml;Murphy;Beckett, Samuel;Date unknown;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;A;Text;While this resource was freely available for non-commercial use provided that this header is included in its entirety with any copy distributed, it has been removed from our catalogue for one reason or another.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c15493ee-09e3-5fb0-86aa-274fa21673e3",
+    "oai_identifier": [
+        "oai:ota:oucs:1426"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Murphy"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1426.xml"
+}

@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "Dept. Speech, Music and Hearing, CSC, KTH"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-331",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-331"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-331",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Dept. Speech, Music and Hearing, CSC, KTH"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Sweden"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-331;2016-04-06T16:39:50Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;WaveSurfer;WaveSurfer is an Open Source tool for sound visualization and manipulation. It has been designed to suit both novice and advanced users. WaveSurfer has a simple and logical user interface that provides functionality in an intuitive way and which can be adapted to different tasks. It can be used as a stand-alone tool for a wide range of tasks in speech research and education. Typical applications are speech/sound analysis and sound annotation/transcription. WaveSurfer can also serve as a platform for more advanced/specialized applications. This is accomplished either through extending the WaveSurfer application with new custom plug-ins or by embedding WaveSurfer visualization components in other applications.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-331;downloadable_files_count: 0;Sweden;Dept. Speech, Music and Hearing, CSC, KTH;http://www.speech.kth.se/wavesurfer/index.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4ff492ee-bc30-5762-92dd-47095ad4e963",
+    "notes": [
+        "WaveSurfer is an Open Source tool for sound visualization and manipulation. It has been designed to suit both novice and advanced users. WaveSurfer has a simple and logical user interface that provides functionality in an intuitive way and which can be adapted to different tasks. It can be used as a stand-alone tool for a wide range of tasks in speech research and education. Typical applications are speech/sound analysis and sound annotation/transcription. WaveSurfer can also serve as a platform for more advanced/specialized applications. This is accomplished either through extending the WaveSurfer application with new custom plug-ins or by embedding WaveSurfer visualization components in other applications."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-331"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "WaveSurfer"
+    ],
+    "url": ""
+}

@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:5443",
+    "MetadataAccess": [
+        "oai:ota:oucs:5443"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "King, Thomas, 1730-1805."
+    ],
+    "fulltext": "oai:ota:oucs:5443;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/5443.xml;Like master, like man: A comedy of two acts. Alter'd from Sir John Vanbrugh. As perform'd at the Theatre, in Smock-Alley.;King, Thomas, 1730-1805.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "87e35cc5-ba2c-5280-aec9-6854ca116c89",
+    "oai_identifier": [
+        "oai:ota:oucs:5443"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Like master, like man: A comedy of two acts. Alter'd from Sir John Vanbrugh. As perform'd at the Theatre, in Smock-Alley."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/5443.xml"
+}

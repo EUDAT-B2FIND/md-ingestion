@@ -1,0 +1,62 @@
+{
+    "Contact": [
+        "Academy of Sciences"
+    ],
+    "Contributor": [
+        "Kontra, Mikl\u00f3s"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "Hungarian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1019",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1019"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1019",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Academy of Sciences"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Hungary"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1019;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Budapest Sociolinguistic Interview (BSI);Kontra, Mikl\u00f3s;BSI is a large-scale survey which provides reliable data on and analyses of the varieties of Hungarian spoken in Budapest.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-1019;hun;downloadable_files_count: 0;Hungary;Academy of Sciences;http://www.nytud.hu/buszi/bsi.htm",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "31a95874-f3c5-58fa-872b-0bf340631cbc",
+    "notes": [
+        "BSI is a large-scale survey which provides reliable data on and analyses of the varieties of Hungarian spoken in Budapest."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1019"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Budapest Sociolinguistic Interview (BSI)"
+    ],
+    "url": ""
+}

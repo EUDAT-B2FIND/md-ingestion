@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Paddy Bullard"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2855",
+    "MetadataAccess": [
+        "oai:ota:oucs:2855"
+    ],
+    "PublicationTimestamp": "1735-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1735"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Jonathan Swift Archive"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Swift, Jonathan, 1667-1745"
+    ],
+    "fulltext": "oai:ota:oucs:2855;2018-08-02T14:11:37Z;http://ota.ox.ac.uk/headers/2855.xml;City cries, instrumental and vocal: or, an examination of certain abuses, corruptions, and enormities, in London and Dublin;Swift, Jonathan, 1667-1745;1735;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Paddy Bullard;Text;Jonathan Swift Archive;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "4ef19786-9d33-500c-93e8-573bfc5557db",
+    "oai_identifier": [
+        "oai:ota:oucs:2855"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "City cries, instrumental and vocal: or, an examination of certain abuses, corruptions, and enormities, in London and Dublin"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2855.xml"
+}

@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "application/x-gzip",
+        "downloadable_files_count: 1"
+    ],
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1740",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1740"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1740",
+    "PublicationTimestamp": "2016-06-16T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11858/00-097C-0000-0023-4670-6"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jur\u010d\u00ed\u010dek, Filip",
+        "Du\u0161ek, Ond\u0159ej",
+        "Pl\u00e1tek, Ond\u0159ej"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1740;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Vystadial 2016 \u2013 Czech data;Pl\u00e1tek, Ond\u0159ej;Du\u0161ek, Ond\u0159ej;Jur\u010d\u00ed\u010dek, Filip;acoustic data;speech corpus;spoken corpus;telephone speech;voip;dialogue system;This is the Czech data collected during the `VYSTADIAL` project. It is an extension of the 'Vystadial 2013' Czech part data release. The dataset comprises of telephone conversations in Czech, developed for training acoustic models for automatic speech recognition in spoken dialogue systems.;2016-06-16;corpus;http://hdl.handle.net/11234/1-1740;ces;http://hdl.handle.net/11858/00-097C-0000-0023-4670-6;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/x-gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics;https://ufal.mff.cuni.cz/grants/vystadial",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "947e0c28-69a5-598f-93b8-8ffb5d5afe2e",
+    "notes": [
+        "This is the Czech data collected during the `VYSTADIAL` project. It is an extension of the 'Vystadial 2013' Czech part data release. The dataset comprises of telephone conversations in Czech, developed for training acoustic models for automatic speech recognition in spoken dialogue systems."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1740"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "acoustic data"
+        },
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "spoken corpus"
+        },
+        {
+            "name": "telephone speech"
+        },
+        {
+            "name": "voip"
+        },
+        {
+            "name": "dialogue system"
+        }
+    ],
+    "title": [
+        "Vystadial 2016 \u2013 Czech data"
+    ],
+    "url": ""
+}

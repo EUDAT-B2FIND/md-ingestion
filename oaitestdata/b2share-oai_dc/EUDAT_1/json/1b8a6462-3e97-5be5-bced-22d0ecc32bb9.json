@@ -1,0 +1,70 @@
+{
+    "Contact": [
+        "http://b2share.eudat.eu"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/8913da0e5c934eb8b924e7b33bb4ec7f",
+    "PID": "http://hdl.handle.net/11304/1aab3df4-f3ce-11e4-ac7e-860aa0063d1f",
+    "PublicationTimestamp": "2016-12-22T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "http://b2share.eudat.eu"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/1aab3df4-f3ce-11e4-ac7e-860aa0063d1f",
+        "https://b2share.eudat.eu/api/records/8913da0e5c934eb8b924e7b33bb4ec7f",
+        "oai:b2share.eudat.eu:b2rec/8913da0e5c934eb8b924e7b33bb4ec7f"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "Creative Commons Attribution (CC-BY)"
+    ],
+    "author": [
+        "Herman Stehouwer, Peter Wittenburg"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/8913da0e5c934eb8b924e7b33bb4ec7f;2018-01-11T13:48:18Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;Herman Stehouwer, Peter Wittenburg;2016-12-22T10:14:24.598038+00:00;Various initiatives and organisations formulated principles for how to deal with data to improve data sharing and re-use. This document compared a number of such principles and found that we all share the same core principles. ;http://hdl.handle.net/11304/1aab3df4-f3ce-11e4-ac7e-860aa0063d1f;https://b2share.eudat.eu/api/records/8913da0e5c934eb8b924e7b33bb4ec7f;oai:b2share.eudat.eu:b2rec/8913da0e5c934eb8b924e7b33bb4ec7f;en;http://b2share.eudat.eu;info:eu-repo/semantics/openAccess;Creative Commons Attribution (CC-BY);Data Principles;Data SHaring;Data Re-Use;Data Science;Principles for Data Sharing and Re-use: are they all the same?;Text",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "1b8a6462-3e97-5be5-bced-22d0ecc32bb9",
+    "notes": [
+        "Various initiatives and organisations formulated principles for how to deal with data to improve data sharing and re-use. This document compared a number of such principles and found that we all share the same core principles. "
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/8913da0e5c934eb8b924e7b33bb4ec7f"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Data Principles"
+        },
+        {
+            "name": "Data SHaring"
+        },
+        {
+            "name": "Data Re-Use"
+        },
+        {
+            "name": "Data Science"
+        }
+    ],
+    "title": [
+        "Principles for Data Sharing and Re-use: are they all the same?"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/8913da0e5c934eb8b924e7b33bb4ec7f"
+}

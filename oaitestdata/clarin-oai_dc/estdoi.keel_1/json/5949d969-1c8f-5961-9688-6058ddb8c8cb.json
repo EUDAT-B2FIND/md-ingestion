@@ -1,0 +1,51 @@
+{
+    "Contact": [
+        "Center of Estonian Language Resources"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.15155/1-00-0000-0000-0000-0011FL",
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://oai.datacite.org/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:oai.datacite.org:8623654",
+    "MetadataAccess": [
+        "oai:oai.datacite.org:8623654"
+    ],
+    "PublicationTimestamp": "2018-02-14T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Center of Estonian Language Resources"
+    ],
+    "author": [
+        "Muischnek, Kadri"
+    ],
+    "fulltext": "oai:oai.datacite.org:8623654;2019-04-12T23:31:50Z;ESTDOI;ESTDOI.KEEL;etTenTen korpus, toortekst;Web13 corpus (etTenTen), unannotated;Muischnek, Kadri;Center of Estonian Language Resources;2016;Issued: 2016-04-29;Updated: 2018-02-14;doi:10.15155/1-00-0000-0000-0000-0011FL;Abstract;etTenTen korpus (ehk Veebikorpus13) on internetist alla laetud eestikeelsete veebilehtede korpus.\nKorpuses on 270 miljonit s\u00f5na 686 000 veebilehelt.\nvt veel http://www2.keeleveeb.ee/dict/corpus/ettenten/about.html\n\nAlgmaterjal\n\nKorpuse tekstid korjas internetist ja teisendas utf-8 kodeeringus teksti kujule Vit Suchomel.\nVeebirobotiga laeti alla 1 173 702 veebilehte, kusjuures juba olemas olevate lehtede koopiad j\u00e4eti k\u00f5rvale; k\u00f5rvale j\u00e4eti ka lehed, mis on esindatud Eesti kirjakeele koondkorpuses. (http://www.cl.ut.ee/korpused/segakorpus/). Kasutati Jan Pomikaleki doktorit\u00f6\u00f6 k\u00e4igus loodud programme  jusText ja onion (code.google.com/p/justext, code.google.com/p/onion)\n",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5949d969-1c8f-5961-9688-6058ddb8c8cb",
+    "notes": [
+        "Abstract",
+        "etTenTen korpus (ehk Veebikorpus13) on internetist alla laetud eestikeelsete veebilehtede korpus.\nKorpuses on 270 miljonit s\u00f5na 686 000 veebilehelt.\nvt veel http://www2.keeleveeb.ee/dict/corpus/ettenten/about.html\n\nAlgmaterjal\n\nKorpuse tekstid korjas internetist ja teisendas utf-8 kodeeringus teksti kujule Vit Suchomel.\nVeebirobotiga laeti alla 1 173 702 veebilehte, kusjuures juba olemas olevate lehtede koopiad j\u00e4eti k\u00f5rvale; k\u00f5rvale j\u00e4eti ka lehed, mis on esindatud Eesti kirjakeele koondkorpuses. (http://www.cl.ut.ee/korpused/segakorpus/). Kasutati Jan Pomikaleki doktorit\u00f6\u00f6 k\u00e4igus loodud programme  jusText ja onion (code.google.com/p/justext, code.google.com/p/onion)\n"
+    ],
+    "oai_identifier": [
+        "oai:oai.datacite.org:8623654"
+    ],
+    "oai_set": [
+        "ESTDOI",
+        "ESTDOI.KEEL"
+    ],
+    "state": "active",
+    "title": [
+        "etTenTen korpus, toortekst",
+        "Web13 corpus (etTenTen), unannotated"
+    ],
+    "url": ""
+}

@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0005/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Madsen, Louis </dc:creator>
+      <dc:creator>Wang, Ying</dc:creator>
+      <dc:creator>He, Yadong</dc:creator>
+      <dc:creator>Yu, Zhou</dc:creator>
+      <dc:creator>Gao, Jianwei</dc:creator>
+      <dc:creator>Brinck, Stephanie</dc:creator>
+      <dc:creator>Slebodnick, Carla</dc:creator>
+      <dc:creator>Fahs, Gregory</dc:creator>
+      <dc:creator>Zanelotti, Curt</dc:creator>
+      <dc:creator>Hegde, Maruti</dc:creator>
+      <dc:creator>Moore, Robert</dc:creator>
+      <dc:creator>Ensing, Bernd </dc:creator>
+      <dc:creator>Dingemans, Theo</dc:creator>
+      <dc:creator>Qiao, Rui</dc:creator>
+      <dc:title>Double helix PBDT polymer - Submitted manuscript, simulations and other source data</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-02-03</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>ionic</dc:subject>
+      <dc:subject>polymer</dc:subject>
+      <dc:subject>nematic</dc:subject>
+      <dc:subject>X-ray</dc:subject>
+      <dc:subject>simulations</dc:subject>
+      <dc:subject>NMR</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0005/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0005/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>We describe a double helical conformation in the densely charged aromatic polyamide poly(2,2&#8217;- disulfonyl-4,4&#8217;-benzidine terephthalamide) or PBDT. This double helix macromolecule represents one of the most rigid simple molecular structures known, exhibiting an extremely high axial persistence length (~ 1 micrometer). </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

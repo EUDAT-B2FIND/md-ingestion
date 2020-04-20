@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "text/plain",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/269",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/269"
+    ],
+    "PID": "http://hdl.handle.net/11321/269",
+    "PublicationTimestamp": "2016-05-29T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Institute of Computer Science, Polish Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "Rights": [
+        "GNU GPL3",
+        "http://www.gnu.org/licenses/gpl-3.0.en.html",
+        "PUB"
+    ],
+    "author": [
+        "Sikora, Piotr"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/269;2016-05-31T07:53:56Z;hdl_11321_3;hdl_11321_4;Topos\u0142aw 2 (2016-05-31);Sikora, Piotr;inflection;multi-word units;Topos\u0142aw 2 is an editor of multi-world unit inflection lexicons.;2016-05-29;toolService;http://hdl.handle.net/11321/269;pol;GNU GPL3;http://www.gnu.org/licenses/gpl-3.0.en.html;PUB;text/plain; charset=utf-8;application/octet-stream;application/octet-stream;text/plain;application/octet-stream;downloadable_files_count: 2;Institute of Computer Science, Polish Academy of Sciences;http://zil.ipipan.waw.pl/Toposlaw",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "2ff13a2d-a312-58c2-937e-f2876bbd9a21",
+    "notes": [
+        "Topos\u0142aw 2 is an editor of multi-world unit inflection lexicons."
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/269"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "inflection"
+        },
+        {
+            "name": "multi-word units"
+        }
+    ],
+    "title": [
+        "Topos\u0142aw 2 (2016-05-31)"
+    ],
+    "url": ""
+}

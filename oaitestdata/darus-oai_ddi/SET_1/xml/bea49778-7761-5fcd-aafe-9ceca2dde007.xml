@@ -1,0 +1,85 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-500</identifier>
+    <datestamp>2019-12-21T01:00:01Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>EngMeta - a Metadata Scheme for the Engineering Sciences</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-500</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-20</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2019-12-20" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>Iglezakis, Dorothea; Schembera, Bj&#246;rn, 2019, "EngMeta - a Metadata Scheme for the Engineering Sciences", https://doi.org/10.18419/darus-500, DaRUS, V1</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>EngMeta - a Metadata Scheme for the Engineering Sciences</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-500</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Iglezakis, Dorothea</AuthEnty>
+            <AuthEnty affiliation="High Performance Computing Center Stuttgart (HLRS)">Schembera, Bj&#246;rn</AuthEnty>
+          </rspStmt>
+          <prodStmt>
+            <grantNo agency="Federal Ministry of Education and Research (BMBF)">16FDM008</grantNo>
+          </prodStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2019-12-20</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Computer and Information Science</keyword>
+            <keyword>Engineering</keyword>
+            <keyword>metadata</keyword>
+          </subject>
+          <abstract>EngMeta offers a scheme for describing data from the engineering sciences.</abstract>
+          <sumDscr>
+            <dataKind>XSD-Scheme</dataKind>
+          </sumDscr>
+          <relPubl>Schembera, B. &amp; Iglezakis, D. (2019). The Genesis of EngMeta - A Metadata Model for Research Data in Computational Engineering. In E. Garoufallou, F. Sartori, R. Siatri &amp; M. Zervas (eds.), Metadata and Semantic Research (p./pp. 127-132), Cham: Springer International Publishing. ISBN: 978-3-030-14401-2, doi, 10.1007/978-3-030-14401-2_12, https://dx.doi.org/10.1007/978-3-030-14401-2_12</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">FoKUS Team</contact>
+          <depositr>Iglezakis, Dorothea</depositr>
+          <depDate>2019-11-26</depDate>
+          <relMat>&lt;a href="http://doi.org/10.5438/0012"&gt;DataCite Metadata Schema 4.0&lt;/a&gt; DataCite Metadata Working Group. (2016). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.0. DataCite e.V.</relMat>
+          <relMat>&lt;a href="http://exptml.sourceforge.net/"&gt;ExptML&lt;/a&gt; The Experiment Markup Language (ExptML).</relMat>
+          <relMat>&lt;a href="http://www.loc.gov/standards/premis/v3/index.html"&gt;PREMIS&lt;/a&gt; PREMIS Data Dictionary for Preservation Metadata, Version 3.0</relMat>
+          <relStdy>Seeland, Anett, 2019, "EngMeta Metadata Block Configuration for Dataverse", &lt;a href="https://doi.org/10.18419/darus-508"&gt;https://doi.org/10.18419/darus-508&lt;/a&gt;, DaRUS</relStdy>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f913" URI="https://doi.org/10.18419/darus-500/2" level="datafile">
+        <labl>EngMeta-Documentation-v.0.2 EN.pdf</labl>
+        <txt>Documentation for EngMeta</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/pdf</notes>
+      </otherMat>
+      <otherMat ID="f882" URI="https://doi.org/10.18419/darus-500/1" level="datafile">
+        <labl>EngMeta_example_v0.2.xml</labl>
+        <txt>Example</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">text/xml</notes>
+      </otherMat>
+      <otherMat ID="f976" URI="https://doi.org/10.18419/darus-500/3" level="datafile">
+        <labl>EngMeta_v0.2.xsd</labl>
+        <txt>Scheme file</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

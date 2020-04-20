@@ -1,0 +1,94 @@
+{
+    "Contact": [
+        "Insight Centre for Data Analytics, National University of Ireland, Galway"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "Slovenian",
+        "Serbian",
+        "German",
+        "Spanish",
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1065",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1065"
+    ],
+    "PID": "http://hdl.handle.net/11356/1065",
+    "PublicationTimestamp": "2016-05-24T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Insight Centre for Data Analytics, National University of Ireland, Galway"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/644333",
+        "http://www.lrec-conf.org/proceedings/lrec2016/summaries/405.html"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Popovi\u0107, Maja",
+        "Ar\u010dan, Mihael"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1065;2018-02-28T10:30:56Z;hdl_11356_1023;hdl_11356_1024;Post-edited and error annotated machine translation corpus PErr 1.0;Popovi\u0107, Maja;Ar\u010dan, Mihael;parallel corpus;machine translation;post-editing;error annotation;manual annotation;multilingual;The PE\u00b2rr corpus contains source language texts from different domains along with their automatically generated translations into several morphologically rich languages, their post-edited versions, and error annotations of the performed post-edit operations. The main advantage of the corpus is the fusion of post-editing and error classification tasks, which have usually been seen as two independent tasks, although naturally they are not.;2016-05-24;corpus;http://hdl.handle.net/11356/1065;slv;srp;deu;spa;eng;info:eu-repo/grantAgreement/EC/H2020/644333;http://www.lrec-conf.org/proceedings/lrec2016/summaries/405.html;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);https://creativecommons.org/licenses/by-sa/4.0/;PUB;text/plain; charset=utf-8;application/octet-stream;downloadable_files_count: 1;Insight Centre for Data Analytics, National University of Ireland, Galway;http://nlp.insight-centre.org/research/resources/pe2rr/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "67e14818-2b88-59a8-ad6b-7d2ac0b834cd",
+    "notes": [
+        "The PE\u00b2rr corpus contains source language texts from different domains along with their automatically generated translations into several morphologically rich languages, their post-edited versions, and error annotations of the performed post-edit operations. The main advantage of the corpus is the fusion of post-editing and error classification tasks, which have usually been seen as two independent tasks, although naturally they are not."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1065"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "post-editing"
+        },
+        {
+            "name": "error annotation"
+        },
+        {
+            "name": "manual annotation"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "Post-edited and error annotated machine translation corpus PErr 1.0"
+    ],
+    "url": ""
+}

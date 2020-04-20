@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "Materials Cloud"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.24435/materialscloud:2018.0012/v1",
+    "DiscHierarchy": [
+        "5.3",
+        "Engineering Sciences",
+        "Materials Science and Engineeringy"
+    ],
+    "Discipline": "Materials Science And Engineering",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://archive.materialscloud.org/xml?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:2018.0012/v1",
+    "MetadataAccess": [
+        "oai:materialscloud.org:2018.0012/v1"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2018-09-03T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Materials Cloud"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode",
+        "info:eu-repo/semantics/openAccess"
+    ],
+    "author": [
+        "Giustino, Feliciano",
+        "Filip, Marina R."
+    ],
+    "fulltext": "oai:materialscloud.org:2018.0012/v1;2019-06-12Z;DOI;Dataset;Filip, Marina R.;Giustino, Feliciano;The geometric blueprint of perovskites;Materials Cloud;2018-09-03;Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode;info:eu-repo/semantics/openAccess;Perovskites;Structure predictions;Goldschmidt;Data mining;doi:10.24435/materialscloud:2018.0012/v1;https://archive.materialscloud.org/2018.0012/v1;en;Perovskite minerals form an essential component of the Earth\u2019s mantle, and synthetic crystals are ubiquitous in electronics, photonics, and energy technology. The extraordinary chemical diversity of these crystals raises the question of how many and which perovskites are yet to be discovered. Here we show that the \u201cno-rattling\u201d principle postulated by Goldschmidt in 1926, describing the geometric conditions under which a perovskite can form, is much more effective than previously thought and allows us to predict perovskites with a fidelity of 80%. By supplementing this principle with inferential statistics and internet data mining we establish that currently known perovskites are only the tip of the iceberg, and we enumerate 90,000 hitherto-unknown compounds awaiting to be studied. Our results suggest that geometric blueprints may enable the systematic screening of millions of compounds and offer untapped opportunities in structure prediction and materials design.",
+    "group": "materialscloud",
+    "groups": [
+        {
+            "name": "materialscloud"
+        }
+    ],
+    "name": "555a906d-16f7-51c1-ae65-02642bc48e50",
+    "notes": [
+        "Perovskite minerals form an essential component of the Earth\u2019s mantle, and synthetic crystals are ubiquitous in electronics, photonics, and energy technology. The extraordinary chemical diversity of these crystals raises the question of how many and which perovskites are yet to be discovered. Here we show that the \u201cno-rattling\u201d principle postulated by Goldschmidt in 1926, describing the geometric conditions under which a perovskite can form, is much more effective than previously thought and allows us to predict perovskites with a fidelity of 80%. By supplementing this principle with inferential statistics and internet data mining we establish that currently known perovskites are only the tip of the iceberg, and we enumerate 90,000 hitherto-unknown compounds awaiting to be studied. Our results suggest that geometric blueprints may enable the systematic screening of millions of compounds and offer untapped opportunities in structure prediction and materials design."
+    ],
+    "oai_identifier": [
+        "oai:materialscloud.org:2018.0012/v1"
+    ],
+    "oai_set": [
+        "DOI"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Perovskites"
+        },
+        {
+            "name": "Structure predictions"
+        },
+        {
+            "name": "Goldschmidt"
+        },
+        {
+            "name": "Data mining"
+        }
+    ],
+    "title": [
+        "The geometric blueprint of perovskites"
+    ],
+    "url": "https://archive.materialscloud.org/2018.0012/v1"
+}

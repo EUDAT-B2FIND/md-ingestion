@@ -1,0 +1,57 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(1 file : ca. 988 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2116",
+    "MetadataAccess": [
+        "oai:ota:oucs:2116"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Bront\u00c3\u00ab, Anne, 1820-1849"
+    ],
+    "fulltext": "oai:ota:oucs:2116;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2116.xml;The tenant of Wildfell Hall / by Anne Bront\u00c3\u00ab;Bront\u00c3\u00ab, Anne, 1820-1849;text_and_corpus_linguistics;Novels -- Great Britain -- 19th century;Oxford Text Archive, University of Oxford;text/sgml;(1 file : ca. 988 KB);Text;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "8f5935a8-c30d-517a-a479-950c76a47374",
+    "oai_identifier": [
+        "oai:ota:oucs:2116"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "The tenant of Wildfell Hall / by Anne Bront\u00c3\u00ab"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2116.xml"
+}

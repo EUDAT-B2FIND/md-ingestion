@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "Contributor": [
+        "Strecker, Bruno",
+        "Konopka, Marek"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "Language": [
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-542",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-542"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-542",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Institut f\u00fcr Deutsche Sprache"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "SpatialCoverage": [
+        "Germany"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-542;2016-04-06T16:39:55Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Grammatisches Informationssystem (grammis);Strecker, Bruno;Konopka, Marek;Web Information System \u2013 contains e.g. a linked terminological knowledge-base, XML format;2014-07-30;lexicalConceptualResource;http://hdl.handle.net/11372/LRT-542;deu;downloadable_files_count: 0;Germany;Institut f\u00fcr Deutsche Sprache;http://www.ids-mannheim.de/grammis/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3d74daf9-3b34-5324-9f72-815dc80702b7",
+    "notes": [
+        "Web Information System \u2013 contains e.g. a linked terminological knowledge-base, XML format"
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-542"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Grammatisches Informationssystem (grammis)"
+    ],
+    "url": ""
+}

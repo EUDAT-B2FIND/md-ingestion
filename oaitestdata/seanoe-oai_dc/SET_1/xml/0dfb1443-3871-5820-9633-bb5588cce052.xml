@@ -1,0 +1,40 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:seanoe.org:59777</identifier>
+    <datestamp>2019-04-11</datestamp>
+    <setSpec>GROUP:EMSO</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ICHNUSSA 2015</dc:title>
+      <dc:creator>Ribotti, Alberto</dc:creator>
+      <dc:creator>Magni, Paolo</dc:creator>
+      <dc:creator>Vetrano, Anna</dc:creator>
+      <dc:creator>Chiappini, Catia</dc:creator>
+      <dc:creator>Borghini, Mireno</dc:creator>
+      <dc:subject>Mediterranean</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Dissolved Oxygen</dc:subject>
+      <dc:subject>Fluorescence</dc:subject>
+      <dc:subject>hydrological data</dc:subject>
+      <dc:subject>CTD profiles</dc:subject>
+      <dc:description>The sampling plan of the ICHNUSSA2015 proposes the route already covered in previous cruises since 2000 to acquire data for the activities of Cal/Val of oceanographic ecosystem or for the validation of forecasting numerical models at different spatial scales. Then the aim is also to study the inter-annual variability of biogeochemical and physical properties of the water masses in crucial areas for understanding the circulation and exchange between basins, in particular the transport of heat and salt in the western Mediterranean. In particular, we want to study the exchange between western and eastern Mediterranean and the waters recirculating or formed in the Algerian-Proven&#231;al basin (like the new deep water in the Gulf of Lions) and along the transect Sardinia-Balearic islands. Then we want to monitor characteristics and distribution of the new western Mediterranean deep water and its possible effects on the general circulation of the Mediterranean. The ICHNUSSA2015 is designed to approximately replicate the stations of previous cruises like those named medgoos, MedCO or MedOc and the most recent ICHNUSSA2012 and 2013.
+CTD Casts
+At every station, pressure (P), salinity (S), potential temperature (&#952;) dissolved oxygen concentration (DO) and Fluorescence were measured with a CTD-rosette system consisting of a CTD SBE 911 plus, and a General Oceanics rosette with 24 Niskin Bottles (12 liters each). Temperature measurements were performed with a SBE-3/F thermometer, with a resolution of 0.00015 &#176;C/bit at -1 &#176;C or 0.00018&#176;C/bit at 31 &#176;C, and conductivity measurements were performed with a SBE-4C sensor, with a resolution of 3 x 10-4 S/m. Dissolved oxygen was measured with a SBE-43 sensor (resolution 4.3&#956;M). The vertical profiles of all parameters were obtained by sampling the signals at 24 Hz, with the CTD/rosette going down at a speed of 1 m/s. The data were processed on board, and the coarse errors were corrected thanks to the sampling and analyzing on board o f oxygen and salinity of the deepest station. The rosette is equipped with a sonar altimeter which intercept the bottom 70-50 meters before getting to it. The altimeter is used just for safety, to avoid the rosette to touch the bottom, and for more precision in measuring depth.
+Oxygen and Salinity Determination
+Salinity samples were collected, stored and analyzed with a Guildline Portasal Salinometer, standardized with IPSO standard 34.999 PSu Water and at controlled temperature. Also dissolved oxygen samples were collected and analyzed with the Winkler method,using a computer controlled potentiometric end-point titration procedure. Samples were taken from the Niskins bottle with the recommendedprecautions and following the Winkler procedure.
+The dataset is provided as an ODV txt file and has been processed in accordance to the SeaDataNet's Data QC rules; for each station (66 station) the file contains the following parameters: DEPTH, PRESS, TEMP, PSAL, DOXY and FLUOZZ.
+</dc:description>
+      <dc:publisher>SEANOE</dc:publisher>
+      <dc:date>2019-04-11</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>DOI:10.17882/59777</dc:identifier>
+      <dc:identifier>http://dx.doi.org/10.17882/59777</dc:identifier>
+      <dc:coverage>North 43.450166, South 37.226833, East 15.5, West 8.8</dc:coverage>
+      <dct:references>http://www.seanoe.org/data/00486/59777/illustration.gif</dct:references>
+      <dcterms:spatial xsi:type="DCTERMS:Box">37.226833 8.8 43.450166 15.5</dcterms:spatial>
+      <dc:rights>CC-BY-NC-ND</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

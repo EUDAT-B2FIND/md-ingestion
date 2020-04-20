@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "Frisian Academy"
+    ],
+    "Contributor": [
+        "Siebinga, Sjoerd"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-881",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-881"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-881",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Frisian Academy"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "SpatialCoverage": [
+        "Netherlands (the)"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-881;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Old Frisian corpus;Siebinga, Sjoerd;We are presently collecting Old Frisian texts, and we will start on the construction of an Old Frisian corpus in the near future.;2014-07-30;corpus;http://hdl.handle.net/11372/LRT-881;downloadable_files_count: 0;Netherlands (the);Frisian Academy;http://www.fa.knaw.nl/fa/3departments-and-disciplines/department-of-linguistics/taalkorpora_en_/frisian-language-corpus",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "67ee958c-3068-5231-b33d-a0ddc88e256e",
+    "notes": [
+        "We are presently collecting Old Frisian texts, and we will start on the construction of an Old Frisian corpus in the near future."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-881"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "Old Frisian corpus"
+    ],
+    "url": ""
+}

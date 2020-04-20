@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-63</identifier>
+    <datestamp>2018-07-23T09:13:44Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Vittorio Alfieri's tragedies</dc:title>
+      <dc:creator>Maria Maddalena, Lombardi</dc:creator>
+      <dc:subject>Alfieri Lexicon</dc:subject>
+      <dc:subject>Drama</dc:subject>
+      <dc:subject>Philosophy</dc:subject>
+      <dc:subject>Mythology</dc:subject>
+      <dc:description>Texts of Vittorio Alfieri  were provided partly by the Accademia della Crusca and partly of the University of Pavia, Department of Science and Literature of Medieval and Modern Art. The tragedies listed below refer to the edition edited by Giovanna Zuradelli, Torino, UTET, 1978:&#13;
+Agamennone&#13;
+Antigone&#13;
+La Congiura de' pazzi&#13;
+Merope&#13;
+Maria Stuarda&#13;
+Oreste&#13;
+Polinice&#13;
+Virginia&#13;
+Filippo&#13;
+Agide &#13;
+Bruto I&#13;
+Bruto II&#13;
+Don Garzia&#13;
+Mirra&#13;
+Ottavia&#13;
+Rosmunda&#13;
+Saul&#13;
+Sofonisba&#13;
+Timoleone</dc:description>
+      <dc:date>2016-09-21</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-63</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

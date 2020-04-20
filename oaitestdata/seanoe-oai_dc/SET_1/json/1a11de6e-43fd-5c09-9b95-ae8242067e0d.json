@@ -1,0 +1,55 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/59750",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=1a11de6e-43fd-5c09-9b95-ae8242067e0d",
+    "PublicationTimestamp": "2019-03-28T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-NC"
+    ],
+    "SpatialCoverage": "(40N-42N,26E-30E)",
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Pi\u00e9t\u00e9, Helen",
+        "Ballu, Val\u00e9rie",
+        "Sakic, Pierre",
+        "Royer, Jean-yves"
+    ],
+    "fulltext": "oai:seanoe.org:59750;2019-03-28;Seafloor acoustic ranging data across the North-Anatolian Fault, Marmara Sea, Turkey;Royer, Jean-yves;Pi\u00e9t\u00e9, Helen;Ballu, Val\u00e9rie;Sakic, Pierre;In October 2014, a ranging network of 10 acoustic transponders was installed across an active segment of the North-Anatolian Fault, in the Marmara Sea at a depth of about 800 m, for up to 5 years (Figure 1).\u00a0 This active fault segment is lacking any major seismic activity since the 18th century.\u00a0 The purpose of this acoustic ranging experiment was to determine whether this fault is continuously and aseismically creeping (i.e. slipping) or is locked and thus accumulating stress that could cause a large magnitude earthquake, few ten kilometers away from Istanbul.\nThe acoustic network comprised 4 transponders from the University of Brest, France, and 6 transponders from the Geomar Institute, Germany. The data available through this web site corresponds to the data collected by the 4 French stations only. They include sets of acoustic ranging between pairs of stations (i.e. two-way-travel times), in addition to sound-speed, temperature and pressure measurements at each station. The sampling rate varies with the data type, but is generally hourly (one or several samples every hour). These are the raw, unprocessed data. For instance, distances must be inferred from the two-way-travel times and sound-speeds.\nThe experiment lasted until January 2018.\nData collection:\n\t- In April 2015, the first set of acoustic ranging data, spanning a period of 6 months, was downloaded from the seafloor transponders using a modem from the sea surface (cruise POS484).\n\t- In April 2016, a second set of acoustic ranging data, spanning one more year, was downloaded from the seafloor transponders, but only 3 of the transponders responded (cruise POS497).\n\t- In May 2017, a third set of acoustic ranging data was downloaded from the seafloor transponders, but only 3 of the transponders responded (cruise YUNUS17).\n\t- In January 2018, a last set was downloaded, but only 3 of the transponders responded (cruise YUNUS17). Since the batteries were almost exhausted, two of the French transponders were retrieved from the seafloor (2002 and 2003, for which all the data had already been downloaded from the surface). The last two will be recovered in 2020 (2001 and 2004).\nMore information about the acoustic network can be found in the paper by Sakic et al. (2016; see reference below).\n;SEANOE;2019-03-28;dataset;DOI:10.17882/59750;http://dx.doi.org/10.17882/59750;North 41.5, South 40.0, East 30.0, West 26.5;https://www.seanoe.org/data/00486/59750/illustration.gif;40.0 26.5 41.5 30.0;CC-BY-NC",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "1a11de6e-43fd-5c09-9b95-ae8242067e0d",
+    "notes": [
+        "In October 2014, a ranging network of 10 acoustic transponders was installed across an active segment of the North-Anatolian Fault, in the Marmara Sea at a depth of about 800 m, for up to 5 years (Figure 1).\u00a0 This active fault segment is lacking any major seismic activity since the 18th century.\u00a0 The purpose of this acoustic ranging experiment was to determine whether this fault is continuously and aseismically creeping (i.e. slipping) or is locked and thus accumulating stress that could cause a large magnitude earthquake, few ten kilometers away from Istanbul.\nThe acoustic network comprised 4 transponders from the University of Brest, France, and 6 transponders from the Geomar Institute, Germany. The data available through this web site corresponds to the data collected by the 4 French stations only. They include sets of acoustic ranging between pairs of stations (i.e. two-way-travel times), in addition to sound-speed, temperature and pressure measurements at each station. The sampling rate varies with the data type, but is generally hourly (one or several samples every hour). These are the raw, unprocessed data. For instance, distances must be inferred from the two-way-travel times and sound-speeds.\nThe experiment lasted until January 2018.\nData collection:\n\t- In April 2015, the first set of acoustic ranging data, spanning a period of 6 months, was downloaded from the seafloor transponders using a modem from the sea surface (cruise POS484).\n\t- In April 2016, a second set of acoustic ranging data, spanning one more year, was downloaded from the seafloor transponders, but only 3 of the transponders responded (cruise POS497).\n\t- In May 2017, a third set of acoustic ranging data was downloaded from the seafloor transponders, but only 3 of the transponders responded (cruise YUNUS17).\n\t- In January 2018, a last set was downloaded, but only 3 of the transponders responded (cruise YUNUS17). Since the batteries were almost exhausted, two of the French transponders were retrieved from the seafloor (2002 and 2003, for which all the data had already been downloaded from the surface). The last two will be recovered in 2020 (2001 and 2004).\nMore information about the acoustic network can be found in the paper by Sakic et al. (2016; see reference below).\n"
+    ],
+    "oai_identifier": [
+        "1a11de6e-43fd-5c09-9b95-ae8242067e0d"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[26.5,40.0],[26.5,41.5],[30.0,41.5],[30.0,40.0],[26.5,40.0]]]}",
+    "state": "active",
+    "title": [
+        "Seafloor acoustic ranging data across the North-Anatolian Fault, Marmara Sea, Turkey"
+    ],
+    "url": ""
+}

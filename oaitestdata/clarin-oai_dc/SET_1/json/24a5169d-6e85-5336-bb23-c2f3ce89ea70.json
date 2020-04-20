@@ -1,0 +1,40 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=12fdc090a35e11e1a404080027e73ea2c200dc17aff642fe980ba7a2da7f5ca1",
+    "MetadataAccess": [
+        "12fdc090a35e11e1a404080027e73ea2c200dc17aff642fe980ba7a2da7f5ca1"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "12fdc090a35e11e1a404080027e73ea2c200dc17aff642fe980ba7a2da7f5ca1;2019-02-27T12:09:04Z;corpus;corpus:text;corpus:audio;corpus:text:audio;Spoken Portuguese - Geographical and Social Varieties;This resource includes a spoken Portuguese corpus exemplifying the Portuguese spoken in Portugal, Brazil, Angola, Cape Verde, Guinea-Bissau, Mozambique, Sao Tome and Principe, Macao, Goa and East-Timor - with aligned sound and orthographic transcription - collected among sociolinguistically diverse speakers. It consists of recordings from informal conversations, conferences and media.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "24a5169d-6e85-5336-bb23-c2f3ce89ea70",
+    "notes": [
+        "This resource includes a spoken Portuguese corpus exemplifying the Portuguese spoken in Portugal, Brazil, Angola, Cape Verde, Guinea-Bissau, Mozambique, Sao Tome and Principe, Macao, Goa and East-Timor - with aligned sound and orthographic transcription - collected among sociolinguistically diverse speakers. It consists of recordings from informal conversations, conferences and media."
+    ],
+    "oai_identifier": [
+        "12fdc090a35e11e1a404080027e73ea2c200dc17aff642fe980ba7a2da7f5ca1"
+    ],
+    "oai_set": [
+        "corpus",
+        "corpus:text",
+        "corpus:audio",
+        "corpus:text:audio"
+    ],
+    "state": "active",
+    "title": [
+        "Spoken Portuguese - Geographical and Social Varieties"
+    ]
+}

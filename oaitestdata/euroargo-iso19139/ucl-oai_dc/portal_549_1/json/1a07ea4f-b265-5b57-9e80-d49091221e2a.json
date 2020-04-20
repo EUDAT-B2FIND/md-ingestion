@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/9137798.v1",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/9137798",
+    "MetadataAccess": [
+        "oai:figshare.com:article/9137798"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-07-31T14:59:21Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/FireNet/9137798"
+    ],
+    "ResourceType": [
+        "Dataset",
+        "Dataset"
+    ],
+    "Rights": [
+        "CC BY-NC 4.0"
+    ],
+    "author": [
+        "Victor Melatti (7078694)",
+        "Jan Boehm (6782060)",
+        "Fabio Panella (7084535)"
+    ],
+    "fulltext": "oai:figshare.com:article/9137798;2019-07-31T14:59:21Z;category_585;portal_549;item_type_3;month_year_07_2019;FireNet;Jan Boehm (6782060);Fabio Panella (7084535);Victor Melatti (7078694);Geomatic Engineering not elsewhere classified;Fire Safety Equipment;Training Images;Machine Learning;<p>FireNet <br></p>\n\n<p> </p>\n\n<p>FireNet is an open ML training dataset for visual recognition of fire\nsafety equipment. Our dataset directly links the objects to their\nrespective Uniclass, the construction sector\u2019s classification scheme to name\nobjects. </p>\n\n<p> </p>\n\n<p>FireNet has been designed as a ML training dataset for experimentation\nand therefore fulfills multiple machine learning scenarios (classification,\nobject detection, semantic segmentation). It is intended as a domain specific\ndataset to refine pre-trained standard architectures. </p><p><br></p><p></p><p>Uniclass               & Description                        </p>\n\n<p>Pr_40_50_28_64              Portable\nfire extinguishers</p>\n\n<p>Pr_75_75_30_50              Manual\ncall points </p>\n\n<p>Pr_40_50_28_29              Fire\nprotective blankets   </p>\n\n<p>Pr_40_10_77_32              Fire\nescape route signs    </p>\n\n<p>Pr_40_10_77_31              Fire\nequipment signs    </p>\n\n<p>Pr_75_75_30_97              Visual\nalarm signal devices  Pr_75_75_30_30              Fire\nalarm sounders </p><p></p>\n\n<p>Pr_75_75_30_65              Point\nsmoke detectors  </p><br><p></p>;2019-07-31T14:59:21Z;Dataset;Dataset;10.5522/04/9137798.v1;https://figshare.com/articles/FireNet/9137798;CC BY-NC 4.0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "1a07ea4f-b265-5b57-9e80-d49091221e2a",
+    "notes": [
+        "<p>FireNet <br></p>\n\n<p> </p>\n\n<p>FireNet is an open ML training dataset for visual recognition of fire\nsafety equipment. Our dataset directly links the objects to their\nrespective Uniclass, the construction sector\u2019s classification scheme to name\nobjects. </p>\n\n<p> </p>\n\n<p>FireNet has been designed as a ML training dataset for experimentation\nand therefore fulfills multiple machine learning scenarios (classification,\nobject detection, semantic segmentation). It is intended as a domain specific\ndataset to refine pre-trained standard architectures. </p><p><br></p><p></p><p>Uniclass               & Description                        </p>\n\n<p>Pr_40_50_28_64              Portable\nfire extinguishers</p>\n\n<p>Pr_75_75_30_50              Manual\ncall points </p>\n\n<p>Pr_40_50_28_29              Fire\nprotective blankets   </p>\n\n<p>Pr_40_10_77_32              Fire\nescape route signs    </p>\n\n<p>Pr_40_10_77_31              Fire\nequipment signs    </p>\n\n<p>Pr_75_75_30_97              Visual\nalarm signal devices  Pr_75_75_30_30              Fire\nalarm sounders </p><p></p>\n\n<p>Pr_75_75_30_65              Point\nsmoke detectors  </p><br><p></p>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/9137798"
+    ],
+    "oai_set": [
+        "category_585",
+        "portal_549",
+        "item_type_3",
+        "month_year_07_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Geomatic Engineering elsewhere classified"
+        },
+        {
+            "name": "Fire Safety Equipment"
+        },
+        {
+            "name": "Training Images"
+        },
+        {
+            "name": "Machine Learning"
+        }
+    ],
+    "title": [
+        "FireNet"
+    ],
+    "url": ""
+}

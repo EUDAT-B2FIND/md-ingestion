@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0023-3FBB-3</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>AKCES 2 ver. 2</dc:title>
+      <dc:creator>&#352;ebesta, Karel</dc:creator>
+      <dc:creator>Gol&#225;&#328;ov&#225;, Hana</dc:creator>
+      <dc:subject>youth language</dc:subject>
+      <dc:subject>classroom</dc:subject>
+      <dc:subject>language acquisition corpus</dc:subject>
+      <dc:subject>AKCES</dc:subject>
+      <dc:description>Corpus AKCES 2 ver. 2 consists of full, unabridged trancripts of recordings of classes at Czech elementary and secondary schools (AKCES/CLAC - Czech Language Acquisition Corpora). It is the same data as the corpus "Schola 2010" (see the link for search), but all the proper names have been removed in order to protect the privacy of participants.</dc:description>
+      <dc:date>2013-12-18</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0023-3FBB-3</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0019-89A0-9</dc:relation>
+      <dc:rights>Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University in Prague, &#218;&#268;JTK</dc:publisher>
+      <dc:source>http://akces.ff.cuni.cz</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

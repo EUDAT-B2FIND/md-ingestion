@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-180798</identifier>
+    <datestamp>2019-03-01T11:01:48Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Nowe Ateny Albo Akademia Wszelkiey Scyencyi Pe&#322;na : Na Rozne Tytu&#322;y, iak na Classes Podzielona, M&#261;drym dla Memorya&#322;u, Idiotom dla Nauki, Politykom dla praktyki, Melancholikom dla rozrywki Erigowana : Alias O Bogu [...] O Zwierzu [...] O J&#281;zykach [...]. T.1</dc:title>
+      <dc:creator xml:lang="pl">Chmielowski, Benedykt (1700-1763)</dc:creator>
+      <dc:subject xml:lang="pl">starodruki 18&#160;w.</dc:subject>
+      <dc:publisher xml:lang="pl">Drukarnia Paw&#322;a J&#243;zefa Golczewskiego</dc:publisher>
+      <dc:contributor xml:lang="pl">Filipowicz, Jan J&#243;zef (?-ca 1770). [Il.]</dc:contributor>
+      <dc:date>1745</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-180798</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CF1-5</dc:identifier>
+      <dc:source xml:lang="pl">Biblioteka Jagiello&#324;ska, BJ St. Dr. 5232 I</dc:source>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://jbc.bj.uj.edu.pl/Content/180798</dc:relation>
+      <dc:relation>oai:jbc.bj.uj.edu.pl:publication:191657</dc:relation>
+      <dc:coverage>1701/1800</dc:coverage>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,59 @@
+{
+    "Contact": [
+        "atm-data@helsinki.fi"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a1f47dc-eb8b-529c-afa9-80eefba2e9b5",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "atm-data@helsinki.fi"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;",
+        "2007-01-01T00:00:00Z/2007-12-31T23:59:59Z"
+    ],
+    "TempCoverageBegin": 192513067199,
+    "TempCoverageEnd": 63303206400,
+    "TemporalCoverage": " period : ( 6101-07-01T11:59:59Z - 2007-01-01T00:00:00Z ) ",
+    "TemporalCoverage:BeginDate": "6101-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2007-01-01T00:00:00Z",
+    "author": [
+        "Pasi Kolari",
+        "Tapani Hopkins"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata20160308081725975460;2016-03-08T06:17:26Z;university-of-helsinki-department-of-physics-division-of-atmospheric-sciences;V\u00e4rri\u00f6 SMEAR I tree gas exchange and diameter change - Pine shoot 2 transpiration - 2007;Tapani Hopkins;Pasi Kolari;Pasi Kolari;http://www.yso.fi/onto/yso/p16571;Title: Pine shoot 2 transpiration \n\nDescription: Water vapour flux of pine shoot 2 per unit all-sided leaf area, positive sign = emission, data questionable at RH>75% \n\nVariable: F_H2O_tree2 \n\nUnit: mg m\u207b\u00b2 s\u207b\u00b9 \n\nSource: Automated chamber & Li-Cor Li-840 gas analyser \n\nCategory: Tree \n\n;atm-data@helsinki.fi;Ville Vakkari;Pasi Kolari;2016-03-08;dataset;urn:nbn:fi:csc-ida-10x201703282015017315583v;urn:nbn:fi:csc-ida-10x201512212015014127775v;urn:nbn:fi:csc-ida2014011531572s;urn:nbn:fi:csc-kata20160308081725975460;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308081725975460;DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;;2007-01-01T00:00:00Z/2007-12-31T23:59:59Z;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0a1f47dc-eb8b-529c-afa9-80eefba2e9b5",
+    "notes": [
+        "Title: Pine shoot 2 transpiration \n\nDescription: Water vapour flux of pine shoot 2 per unit all-sided leaf area, positive sign = emission, data questionable at RH>75% \n\nVariable: F_H2O_tree2 \n\nUnit: mg m\u207b\u00b2 s\u207b\u00b9 \n\nSource: Automated chamber & Li-Cor Li-840 gas analyser \n\nCategory: Tree \n\n"
+    ],
+    "oai_identifier": [
+        "0a1f47dc-eb8b-529c-afa9-80eefba2e9b5"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "http www.yso.fi onto yso p"
+        }
+    ],
+    "title": [
+        "V\u00e4rri\u00f6 SMEAR I tree gas exchange and diameter change - Pine shoot 2 transpiration - 2007"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308081725975460"
+}

@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-87</identifier>
+    <datestamp>2018-07-23T09:13:44Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Primo Levi Selected Works</dc:title>
+      <dc:creator>AA. VV., AA. VV.</dc:creator>
+      <dc:subject>Nazi extermination camps</dc:subject>
+      <dc:subject>Imprisonment</dc:subject>
+      <dc:subject>Lager</dc:subject>
+      <dc:subject>Drama</dc:subject>
+      <dc:description>This is a collection of some of Primo Levi's works:&#13;
+  Terza pagina (La stampa) (EINAUDI 1986) &#13;
+  Storie naturali (EINAUDI 1966) &#13;
+  Se questo &#232; un uomo (EINAUDI 1958) &#13;
+  Se non ora quando (Vol. II Einaudi 1988 --- da Ediz. EINAUDI 1981) &#13;
+  Lilit (EINUADI 1981) &#13;
+  L'altrui mestiere (EINAUDI 1985) &#13;
+  La tregua (EINAUDI 1981) &#13;
+  La ricerca delle radici La chiave a stella (Vol. II Einaudi 1988) &#13;
+  Il sistema periodico (EINAUDI 1975)&#13;
+  I sommersi e i salvati (Vol. I Einaudi 1987 --- da Ediz. Giulio Einaudi editore S.p.a. Torino Gli struzzi 1986) &#13;
+  Vizio di forma (Einaudi 1971)&#13;
+&#13;
+This corpus was created in the 1990s.</dc:description>
+      <dc:date>2017-11-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-87</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

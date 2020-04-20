@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 6",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Serbian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1063",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1063"
+    ],
+    "PID": "http://hdl.handle.net/11356/1063",
+    "PublicationTimestamp": "2016-05-12T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Klubi\u010dka, Filip",
+        "Ljube\u0161i\u0107, Nikola"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1063;2018-10-24T20:49:24Z;hdl_11356_1023;hdl_11356_1024;Serbian web corpus srWaC 1.1;Ljube\u0161i\u0107, Nikola;Klubi\u010dka, Filip;web corpus;tagging;lemmatisation;The Serbian web corpus srWaC was built by crawling the .rs top-level domain in 2014. The corpus was near-deduplicated on paragraph level, normalised via diacritic restoration, morphosyntactically annotated and lemmatised. The corpus is shuffled by paragraphs. Each paragraph contains metadata on the URL, domain and language identification (Serbian vs. Croatian).\r\n\r\nVersion 1.0 of this corpus is described in http://www.aclweb.org/anthology/W14-0405. Version 1.1 contains newer and better linguistic annotations.;2016-05-12;corpus;http://hdl.handle.net/11356/1063;srp;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 6;Jo\u017eef Stefan Institute;http://nlp.ffzg.hr/resources/corpora/srwac/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5927f8ff-6762-58bc-8a5f-f08a100b7696",
+    "notes": [
+        "The Serbian web corpus srWaC was built by crawling the .rs top-level domain in 2014. The corpus was near-deduplicated on paragraph level, normalised via diacritic restoration, morphosyntactically annotated and lemmatised. The corpus is shuffled by paragraphs. Each paragraph contains metadata on the URL, domain and language identification (Serbian vs. Croatian).\r\n\r\nVersion 1.0 of this corpus is described in http://www.aclweb.org/anthology/W14-0405. Version 1.1 contains newer and better linguistic annotations."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1063"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "web corpus"
+        },
+        {
+            "name": "tagging"
+        },
+        {
+            "name": "lemmatisation"
+        }
+    ],
+    "title": [
+        "Serbian web corpus srWaC 1.1"
+    ],
+    "url": ""
+}

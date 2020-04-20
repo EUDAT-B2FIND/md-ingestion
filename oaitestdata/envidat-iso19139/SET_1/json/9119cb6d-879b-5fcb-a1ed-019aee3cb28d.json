@@ -1,0 +1,67 @@
+{
+    "Contact": [
+        "sommer@slf.ch"
+    ],
+    "Contributor": [
+        "EnviDat"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Format": [
+        "TXT",
+        "LINK",
+        "ZIP"
+    ],
+    "MetaDataAccess": "https://www.envidat.ch/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=doi:10.16904/21",
+    "PublicationTimestamp": "2017-12-31T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland and CRYOS, School of Architecture and Civil Engineering, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne, Lausanne, Switzerland"
+    ],
+    "Rights": [
+        "Open Data Commons Open Database License (ODbL)"
+    ],
+    "author": [
+        "Christian Sommer"
+    ],
+    "fulltext": "oai:envidat.ch:10.16904/21;2018-02-22T14:46:39Z;doi:10.16904/21;Eng;MD_CharacterSetCode_utf8;Christian Sommer;WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland and CRYOS, School of Architecture and Civil Engineering, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne, Lausanne, Switzerland;sommer@slf.ch;2017-06-19T15:09:33;ISO 19115:2003/19139;1.0;EPSG:4326;Wind crust formation: SnowMicroPen data;2017-12-31;This dataset contains the SnowMicroPen (SMP) data from 38 wind tunnel experiments on wind-packing / wind crust formation. These experiments were performed in the winters 2015/16 and 2016/17 and include more than 1000 SMP measurements.     The SMPs are organized per experiment. Each experiment subfolder contains the processed SMP profiles and some additional files.    Please refer to the README for more details on the data. The processing scripts are available for download as well. The scripts are mainly provided as documentation and would need to be adjusted to be used.    This dataset is the basis of the following publication:    Sommer C.G., Lehning M., & Fierz C. (2017). Wind tunnel experiments: Saltation is necessary for wind-packing. Journal of Glaciology, 63(242), 950-958. doi:10.1017/jog.2017.53;Christian Sommer;WSL Institute for Snow and Avalanche Research SLF, Davos, Switzerland and CRYOS, School of Architecture and Civil Engineering, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne, Lausanne, Switzerland;sommer@slf.ch;SMP;SNOW;SNOWMICROPEN;WIND CRUST;WIND-PACKING;Open Data Commons Open Database License (ODbL);Eng;MD_CharacterSetCode_utf8;9.86752 46.80798;LINK;TXT;ZIP;https://www.envidat.ch/dataset/10-16904-21;HTTPS;DATASET METADATA;information;http://montblanc.slf.ch/owncloud/index.php/s/mjiY348fUwdHsPW;HTTP;SMP DATA;download;https://www.envidat.ch/dataset/9918d77c-3176-453f-b34c-062ba979144a/resource/551fe7aa-af53-44a5-8d6f-615b5891a696/download/readme.txt;HTTPS;README;download;https://www.envidat.ch/dataset/9918d77c-3176-453f-b34c-062ba979144a/resource/f4d23fd3-364b-4574-bc54-5fc07aae4d35/download/processingscripts.zip;HTTPS;PROCESSING SCRIPTS;download",
+    "group": "envidat",
+    "groups": [
+        {
+            "name": "envidat"
+        }
+    ],
+    "name": "9119cb6d-879b-5fcb-a1ed-019aee3cb28d",
+    "notes": [
+        "This dataset contains the SnowMicroPen (SMP) data from 38 wind tunnel experiments on wind-packing / wind crust formation. These experiments were performed in the winters 2015/16 and 2016/17 and include more than 1000 SMP measurements.     The SMPs are organized per experiment. Each experiment subfolder contains the processed SMP profiles and some additional files.    Please refer to the README for more details on the data. The processing scripts are available for download as well. The scripts are mainly provided as documentation and would need to be adjusted to be used.    This dataset is the basis of the following publication:    Sommer C.G., Lehning M., & Fierz C. (2017). Wind tunnel experiments: Saltation is necessary for wind-packing. Journal of Glaciology, 63(242), 950-958. doi:10.1017/jog.2017.53"
+    ],
+    "oai_identifier": [
+        "doi:10.16904/21",
+        "oai:envidat.ch:10.16904/21"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "SMP"
+        },
+        {
+            "name": "SNOW"
+        },
+        {
+            "name": "SNOWMICROPEN"
+        },
+        {
+            "name": "WIND CRUST"
+        },
+        {
+            "name": "WIND-PACKING"
+        }
+    ],
+    "title": [
+        "Wind crust formation: SnowMicroPen data"
+    ],
+    "url": "https://www.envidat.ch/dataset/9918d77c-3176-453f-b34c-062ba979144a/resource/f4d23fd3-364b-4574-bc54-5fc07aae4d35/download/processingscripts.zip"
+}

@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English",
+        "Urdu"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2582",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2582"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2582",
+    "PublicationTimestamp": "2010-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2010"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "https://ufal.mff.cuni.cz/pbml/95/art-jawaid-zeman.pdf"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Jawaid, Bushra",
+        "Zeman, Daniel"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2582;2018-10-29T12:39:24Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;English-Urdu Religious Parallel Corpus;Jawaid, Bushra;Zeman, Daniel;parallel corpus;religious text;machine translation;English-Urdu parallel corpus is a collection of religious texts (Quran, Bible) in English and Urdu language with sentence alignments. The corpus can be used for experiments with statistical machine translation. Our modifications of crawled data include but are not limited to the following:\r\n1- Manually corrected sentence alignment of the corpora.\r\n2- Our data split (training-development-test) so that our published experiments can be reproduced.\r\n3- Tokenization (optional, but needed to reproduce our experiments).\r\n4- Normalization (optional) of e.g. European vs. Urdu numerals, European vs. Urdu punctuation, removal of Urdu diacritics.;2010;corpus;http://hdl.handle.net/11234/1-2582;eng;urd;https://ufal.mff.cuni.cz/pbml/95/art-jawaid-zeman.pdf;Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0);http://creativecommons.org/licenses/by-nc-sa/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL);http://ufal.mff.cuni.cz/umc/005-en-ur/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a192fb8e-4422-5d83-ac52-b9d8ac08cfb2",
+    "notes": [
+        "English-Urdu parallel corpus is a collection of religious texts (Quran, Bible) in English and Urdu language with sentence alignments. The corpus can be used for experiments with statistical machine translation. Our modifications of crawled data include but are not limited to the following:\r\n1- Manually corrected sentence alignment of the corpora.\r\n2- Our data split (training-development-test) so that our published experiments can be reproduced.\r\n3- Tokenization (optional, but needed to reproduce our experiments).\r\n4- Normalization (optional) of e.g. European vs. Urdu numerals, European vs. Urdu punctuation, removal of Urdu diacritics."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2582"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "religious text"
+        },
+        {
+            "name": "machine translation"
+        }
+    ],
+    "title": [
+        "English-Urdu Religious Parallel Corpus"
+    ],
+    "url": ""
+}

@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "English",
+        "German"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-2726",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2726"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-2726",
+    "PublicationTimestamp": "2018-05-04T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Fondazione Bruno Kessler, Trento, Italy"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/645452"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "AGREEMENT ON THE USE OF DATA IN QT21 APE Task",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21",
+        "PUB"
+    ],
+    "author": [
+        "Chatterjee, Rajen",
+        "Turchi, Marco",
+        "Negri, Matteo"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-2726;2018-05-03T06:43:57Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;Test Data EN-DE MT_NMT APE Shared Task WMT18;Chatterjee, Rajen;Negri, Matteo;Turchi, Marco;machine translation;shared task;automatic post-editing;post-editing;neural machine translation;Test data for the WMT 2018 Automatic post-editing task. They consist in English-German pairs (source and target) belonging to the information technology domain and already tokenized. Test set contains 1,023 pairs. A neural machine translation system has been used to generate the target segments. All data is provided by the EU project QT21 (http://www.qt21.eu/).;2018-05-04;corpus;http://hdl.handle.net/11372/LRT-2726;eng;deu;info:eu-repo/grantAgreement/EC/H2020/645452;AGREEMENT ON THE USE OF DATA IN QT21 APE Task;https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Fondazione Bruno Kessler, Trento, Italy;http://www.statmt.org/wmt18/ape-task.html",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "c6dcf27d-176c-579d-bfd3-3cc23bd7b0b8",
+    "notes": [
+        "Test data for the WMT 2018 Automatic post-editing task. They consist in English-German pairs (source and target) belonging to the information technology domain and already tokenized. Test set contains 1,023 pairs. A neural machine translation system has been used to generate the target segments. All data is provided by the EU project QT21 (http://www.qt21.eu/)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-2726"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "machine translation"
+        },
+        {
+            "name": "shared task"
+        },
+        {
+            "name": "automatic post-editing"
+        },
+        {
+            "name": "post-editing"
+        },
+        {
+            "name": "neural machine translation"
+        }
+    ],
+    "title": [
+        "Test Data EN-DE MT_NMT APE Shared Task WMT18"
+    ],
+    "url": ""
+}

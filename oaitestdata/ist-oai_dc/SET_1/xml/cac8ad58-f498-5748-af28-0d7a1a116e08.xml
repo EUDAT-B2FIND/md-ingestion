@@ -1,0 +1,47 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datarep.app.ist.ac.at:65</identifier>
+    <datestamp>2017-04-12T08:05:41Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Fastq files for "Complex chromosomal neighborhood effects determine the adaptive potential of a gene under selection"</dc:title>
+      <dc:creator>Steinrueck, Magdalena</dc:creator>
+      <dc:creator>Guet, Calin C</dc:creator>
+      <dc:subject>576 Genetics and evolution</dc:subject>
+      <dc:subject>579 Microorganisms, fungi, algae</dc:subject>
+      <dc:description>Compressed Fastq files with whole-genome sequencing data of IS-wt strain D and clones from four evolved populations (A11, C08, C10, D08). Information on this data collection is available in the Methods Section of the primary publication.</dc:description>
+      <dc:type>Data Collection</dc:type>
+      <dc:type>NonPeerReviewed</dc:type>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:format>archive</dc:format>
+      <dc:relation>https://datarep.app.ist.ac.at/65/</dc:relation>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/2/D_anc_1.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/1/D_anc_2.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/3/D_A11_1.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/4/D_A11_2.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/5/D_C10_1.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/7/D_C08_2.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/6/D_C10_2.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/8/D_C08_1.fastq.zip</dc:identifier>
+      <dc:identifier>https://datarep.app.ist.ac.at/65/9/D_D08_1.fastq.zip</dc:identifier>
+      <dc:identifier>  Steinrueck, Magdalena and Guet, Calin C   Fastq files for "Complex chromosomal neighborhood effects determine the adaptive potential of a gene under selection".  [Data Collection]    (Submitted)  </dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+      <dc:identifier>10.15479/AT:ISTA:65</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

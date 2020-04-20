@@ -1,0 +1,70 @@
+{
+    "DiscHierarchy": [
+        "4.4.6",
+        "Geosciences",
+        "Earth System Research"
+    ],
+    "Discipline": "Earth System Research",
+    "Format": [
+        "text/tab-separated-values"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetadataAccess": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.887846"
+    ],
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "PANGAEA - Data Publisher for Earth & Environmental Science"
+    ],
+    "ResourceType": [
+        "Dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 3.0 Unported (CC-BY)"
+    ],
+    "SpatialCoverage": "(79N-80N,3 W-11E)",
+    "TempCoverageBegin": 63573332399,
+    "TempCoverageEnd": 63573332399,
+    "TemporalCoverage": " point in time : 2015-07-24T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2015-07-24T11:59:59Z",
+    "TemporalCoverage:EndDate": "2015-07-24T11:59:59Z",
+    "author": [
+        "N\u00f6thig, Eva-Maria",
+        "Bonk, Elizabeth",
+        "Kn\u00fcppel, Nadine"
+    ],
+    "fulltext": "oai:pangaea.de:doi:10.1594/PANGAEA.887846;2018-05-31T15:09:53Z;FRAM;https://doi.pangaea.de/10.1594/PANGAEA.887846;N\u00f6thig, Eva-Maria;0000-0002-7527-7827;Kn\u00fcppel, Nadine;Bonk, Elizabeth;Chlorophyll a measured on water bottle samples during POLARSTERN cruise PS93.2 (ARK-XXIX/2.2);PANGAEA - Data Publisher for Earth & Environmental Science;2018;Hausgarten;Event label;Optional event label;Date/Time of event;Latitude of event;Longitude of event;Elevation of event;DEPTH, water;Chlorophyll a;PS93.2;Polarstern;Biological Oceanography @ AWI (AWI_BioOce);FRontiers in Arctic marine Monitoring (FRAM);Long-term Investigation at AWI-Hausgarten off Svalbard (Hausgarten);Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven;2015-07-24T15:59:00/2015-08-12T05:08:00;eng;Dataset;https://doi.pangaea.de/10.1594/PANGAEA.887882;10.3389/fmars.2017.00166;10.1594/PANGAEA.883759;10.1594/PANGAEA.884130;10.2312/BzPM_0693_2015;10.1594/PANGAEA.863807;10.1594/PANGAEA.863808;102 data points;text/tab-separated-values;Creative Commons Attribution 3.0 Unported (CC-BY);78.599 -2.70933 79.93833 11.08783",
+    "oai_identifier": [
+        "oai:pangaea.de:doi:10.1594/PANGAEA.887846"
+    ],
+    "oai_set": [
+        "FRAM"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-2.70933,78.599],[-2.70933,79.93833],[11.08783,79.93833],[11.08783,78.599],[-2.70933,78.599]]]}",
+    "tags": [
+        {
+            "name": "PS."
+        },
+        {
+            "name": "Polarstern"
+        },
+        {
+            "name": "Biological Oceanography AWI AWI_BioOce"
+        },
+        {
+            "name": "FRontiers Arctic marine Monitoring FRAM"
+        },
+        {
+            "name": "Long-term Investigation AWI-Hausgarten Svalbard Hausgarten"
+        }
+    ],
+    "title": [
+        "Chlorophyll a measured on water bottle samples during POLARSTERN cruise PS93.2 (ARK-XXIX/2.2)"
+    ],
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.887846"
+}

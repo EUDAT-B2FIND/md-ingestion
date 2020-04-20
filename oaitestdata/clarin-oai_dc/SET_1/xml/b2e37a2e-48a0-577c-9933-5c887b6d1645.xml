@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:mcscript</identifier>
+    <datestamp>2018-07-10T13:05:37Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>McScript: A Novel Dataset for Assessing Machine Comprehension Using Script Knowledge</dc:title>
+      <dc:creator>Simon Ostermann, Fachrichtung Sprachwissenschaft und Sprachtechnologie, Universit&#228;t des Saarlandes, Campus C7.4, 66123 Saarbr&#252;cken</dc:creator>
+      <dc:subject>Scripts</dc:subject>
+      <dc:subject>Script Knowledge</dc:subject>
+      <dc:subject>Narrative Texts</dc:subject>
+      <dc:subject>Commonsense Knowledge</dc:subject>
+      <dc:subject>Crowdsourcing</dc:subject>
+      <dc:description xml:lang="en">The MCScript corpus is a large dataset of narrative texts and questions about these texts, intended to be used in a machine comprehension task that requires reasoning using 
+commonsense knowledge. Our dataset complements similar datasets in that we focus on 
+stories about everyday activities, such as going to the movies or working in the garden, and 
+that the questions require commonsense knowledge, or more specifically, script knowledge, 
+to be answered. We show that our mode of data collection via crowdsourcing results in a 
+substantial amount of such inference questions. The dataset forms the basis of a shared task 
+on commonsense and script knowledge organized at SemEval 2018 and provides 
+challenging test cases for the broader natural language understanding community.</dc:description>
+      <dc:contributor>Simon Ostermann</dc:contributor>
+      <dc:contributor>Ashutosh Modi</dc:contributor>
+      <dc:contributor>Michael Roth</dc:contributor>
+      <dc:contributor>Stefan Thater</dc:contributor>
+      <dc:contributor>Manfred Pinkal</dc:contributor>
+      <dc:date>2018</dc:date>
+      <dc:type>Collection</dc:type>
+      <dc:type>Dataset</dc:type>
+      <dc:type>Text</dc:type>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>clarind-uds:mcscript</dc:identifier>
+      <dc:identifier>hdl:21.11119/0000-0001-D3A7-4</dc:identifier>
+      <dc:identifier/>
+      <dc:language>eng</dc:language>
+      <dc:relation>Simon Ostermann, Ashutosh Modi, Michael Roth, Stefan Thater and Manfred Pinkal (2018): "MCScript: A Novel Dataset for Assessing Machine Comprehension Using Script Knowledge". In Proceedings of the 11th International Conference on Language Resources and Evaluation, Miyazaki, Japan. http://www.lrec-conf.org/proceedings/lrec2018/pdf/225.pdf</dc:relation>
+      <dc:rights>CC-BY-SA-NC-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

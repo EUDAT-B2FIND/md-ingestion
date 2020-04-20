@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "less than 512 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0626",
+    "MetadataAccess": [
+        "oai:ota:oucs:0626"
+    ],
+    "PublicationTimestamp": "1925-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1925"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Cather, Willa,  1873-1947"
+    ],
+    "fulltext": "oai:ota:oucs:0626;2018-02-28T10:49:17Z;http://ota.ox.ac.uk/headers/0626.xml;The professor's house  / compiled by the Academic Data and Program Services of Princeton University Computing Center;Cather, Willa,  1873-1947;1925;text_and_corpus_linguistics;Novels -- United States -- 20th century;eng;Oxford Text Archive, University of Oxford;less than 512 KB;Text;Novels;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6a35550d-8d68-58c9-83e6-da24ed12d2ab",
+    "oai_identifier": [
+        "oai:ota:oucs:0626"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- United States -- th century"
+        }
+    ],
+    "title": [
+        "The professor's house  / compiled by the Academic Data and Program Services of Princeton University Computing Center"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0626.xml"
+}

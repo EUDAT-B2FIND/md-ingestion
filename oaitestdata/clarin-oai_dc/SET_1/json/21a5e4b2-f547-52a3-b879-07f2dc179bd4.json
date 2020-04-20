@@ -1,0 +1,112 @@
+{
+    "Contact": [
+        "Institute for Applied Linguistics, Eurac Research"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 10",
+        "text/html",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Czech",
+        "German",
+        "Italian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin.eurac.edu:20.500.12124/6",
+    "MetadataAccess": [
+        "oai:clarin.eurac.edu:20.500.12124/6"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12124/6",
+    "PublicationTimestamp": "2018-08-24T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Institute for Applied Linguistics, Eurac Research"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/FP7/200250",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-docs/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-text/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-metadata/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-tasks/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-paula/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-annis/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-exmaralda/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-solr/tags/v1.1",
+        "https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-relannis/tags/v1.1",
+        "http://www.lrec-conf.org/proceedings/lrec2014/summaries/606.html",
+        "http://hdl.handle.net/20.500.12124/5"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Blaschitz, Verena",
+        "Wisniewski, Katrin",
+        "Vodi\u010dkov\u00e1, Kate\u0159ina",
+        "Pe\u010den\u00fd, Pavel",
+        "Klein, Gudrun",
+        "Hana, Jirka",
+        "Krivanek, Julia",
+        "Lyding, Verena",
+        "Abel, Andrea",
+        "Plassmann, Sybille",
+        "Lauppe, Louise",
+        "Vettori, Chiara",
+        "Nicolas, Lionel",
+        "\u0160tindlov\u00e1, Barbora",
+        "Woldt, Claudia",
+        "Bykh, Serhiy",
+        "Meurers, Detmar",
+        "\u010curdov\u00e1, Veronika",
+        "Sch\u00f6ne, Karin",
+        "Boyd, Adriane"
+    ],
+    "fulltext": "oai:clarin.eurac.edu:20.500.12124/6;2018-09-04T09:26:59Z;hdl_20.500.12124_1;hdl_20.500.12124_4;MERLIN Written Learner Corpus for Czech, German, Italian 1.1;Wisniewski, Katrin;Abel, Andrea;Vodi\u010dkov\u00e1, Kate\u0159ina;Plassmann, Sybille;Meurers, Detmar;Woldt, Claudia;Sch\u00f6ne, Karin;Blaschitz, Verena;Lyding, Verena;Nicolas, Lionel;Vettori, Chiara;Pe\u010den\u00fd, Pavel;Hana, Jirka;\u010curdov\u00e1, Veronika;\u0160tindlov\u00e1, Barbora;Klein, Gudrun;Lauppe, Louise;Boyd, Adriane;Bykh, Serhiy;Krivanek, Julia;CEFR;language learning;learner corpus;The MERLIN corpus is a written learner corpus for Czech, German, and Italian that has been designed to illustrate the Common European Framework of Reference for Languages (CEFR) with authentic learner data. The corpus contains learner texts produced in standardized language certifications covering CEFR levels A1-C1. The MERLIN annotation scheme includes a wide range of language characteristics that provide researchers with concrete examples of learner performance and progress across multiple proficiency levels.;2018-08-24;corpus;http://hdl.handle.net/20.500.12124/6;ces;deu;ita;info:eu-repo/grantAgreement/EC/FP7/200250;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-docs/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-text/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-metadata/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-tasks/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-paula/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-annis/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-exmaralda/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-solr/tags/v1.1;https://gitlab.inf.unibz.it/commul/merlin-platform/merlin-relannis/tags/v1.1;http://www.lrec-conf.org/proceedings/lrec2014/summaries/606.html;http://hdl.handle.net/20.500.12124/5;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;text/html;text/html;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 10;Institute for Applied Linguistics, Eurac Research;https://merlin-platform.eu",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "21a5e4b2-f547-52a3-b879-07f2dc179bd4",
+    "notes": [
+        "The MERLIN corpus is a written learner corpus for Czech, German, and Italian that has been designed to illustrate the Common European Framework of Reference for Languages (CEFR) with authentic learner data. The corpus contains learner texts produced in standardized language certifications covering CEFR levels A1-C1. The MERLIN annotation scheme includes a wide range of language characteristics that provide researchers with concrete examples of learner performance and progress across multiple proficiency levels."
+    ],
+    "oai_identifier": [
+        "oai:clarin.eurac.edu:20.500.12124/6"
+    ],
+    "oai_set": [
+        "hdl_20.500.12124_1",
+        "hdl_20.500.12124_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "CEFR"
+        },
+        {
+            "name": "language learning"
+        },
+        {
+            "name": "learner corpus"
+        }
+    ],
+    "title": [
+        "MERLIN Written Learner Corpus for Czech, German, Italian 1.1"
+    ],
+    "url": ""
+}

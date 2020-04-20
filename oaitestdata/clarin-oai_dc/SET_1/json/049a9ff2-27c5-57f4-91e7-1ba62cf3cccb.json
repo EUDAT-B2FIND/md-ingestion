@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "809 KB"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1301",
+    "MetadataAccess": [
+        "oai:ota:oucs:1301"
+    ],
+    "PublicationTimestamp": "1981-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1981"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Mahf\u00c5\u00abz, Naj\u00c4\u00abb,  1912-"
+    ],
+    "fulltext": "oai:ota:oucs:1301;2018-03-07T11:07:13Z;http://ota.ox.ac.uk/headers/1301.xml;Children of Gebelawi / compiled by Philip Stewart;Mahf\u00c5\u00abz, Naj\u00c4\u00abb,  1912-;1981;text_and_corpus_linguistics;Novels -- Egypt -- 20th century;eng;Oxford Text Archive, University of Oxford;809 KB;Text;Novels;Use of this resource is restricted in some manner. Usually this means that it is available for non-commercial use only with prior permission of the depositor and on condition that this header is included in its entirety with any copy distributed.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "049a9ff2-27c5-57f4-91e7-1ba62cf3cccb",
+    "oai_identifier": [
+        "oai:ota:oucs:1301"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Novels -- Egypt -- th century"
+        }
+    ],
+    "title": [
+        "Children of Gebelawi / compiled by Philip Stewart"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1301.xml"
+}

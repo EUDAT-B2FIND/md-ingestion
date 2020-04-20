@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9836561</identifier>
+    <datestamp>2019-05-18T17:25:46Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Gap-tagger corpus</dc:title>
+      <dc:creator>Tkachenko, Alexander</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-12-01</dc:date>
+      <dc:date>Updated: 2016-12-01</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00127L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Gap-tagger corpus contains data for assessing correctness of automatically generated alternatives for filling a gap (missing word). To get clearly interpretable results, we conducted modified version of A/B testing where the user had to choose between the original word and an alternative. The user has an option either to pick one of the two proposed words, or to report both words as appropriate. Since we know the right answer, we can objectively assess the suitability of alternative answers without formally specifying what classifies as a correct answer. Experiments were run using gap-tagger tool https://github.com/estnltk/gap-tagger. 
+
+In the corpus file, each line correspond to one question. The file is in csv format with the following columns:
+sentence: sentence
+gap_start: start position of the gap word in the sentence
+gap_end: end position of the gap word in the sentence
+gap_word: correct gap word
+variant: gap variant word
+correct_selected: indicates if correct word is selected
+both_selected: indicates if user reported both words as appropriate
+annotator: user id
+time: time in milliseconds which took user to answer a question</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Dell, Thomas"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(1 file : ca. 174 KB)",
+        "text/plain"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1869",
+    "MetadataAccess": [
+        "oai:ota:oucs:1869"
+    ],
+    "PublicationTimestamp": "1903-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1903"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "London, Jack, 1876-1916"
+    ],
+    "fulltext": "oai:ota:oucs:1869;2018-04-11T16:03:39Z;http://ota.ox.ac.uk/headers/1869.xml;The call of the wild / Jack London;London, Jack, 1876-1916;1903;text_and_corpus_linguistics;American fiction -- 20th century;Oxford Text Archive, University of Oxford;Dell, Thomas;text/plain;(1 file : ca. 174 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7a6d99ed-afeb-5664-b8ed-04a0b49ccb69",
+    "oai_identifier": [
+        "oai:ota:oucs:1869"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "American fiction -- th century"
+        }
+    ],
+    "title": [
+        "The call of the wild / Jack London"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1869.xml"
+}

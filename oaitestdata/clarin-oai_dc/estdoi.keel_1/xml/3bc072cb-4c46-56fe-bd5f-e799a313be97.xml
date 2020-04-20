@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17940280</identifier>
+    <datestamp>2019-05-23T22:01:17Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Eesti keele Kitsenduste Grammatika reeglid 1.0</dc:title>
+      <dc:creator>Muischnek, Kadri</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-02</dc:date>
+      <dc:date>Updated: 2019-01-02</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0016FL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">S&#252;ntaktilise anal&#252;&#252;si jaoks on vajalik
+
+ eesti keele morfoloogiline anal&#252;saator, nt Vabamorf: https://github.com/Filosoft/vabamorf/blob/master/doc/readme.html Et Vabamorfi automaatselt kasutada, on vaja failis test.sh paika panna installeeritud Vabamorfi programmi ja s&#245;nastiku teed.
+VISL CG3 Kitsenduste Grammatika anal&#252;saator: http://beta.visl.sdu.dk/constraint_grammar.html. Grammatikad &#252;hilduvad VISL CG3 versiooniga 0.9.9.10379.
+Reeglite failid ja skriptid moodulite &#252;hendamiseks.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

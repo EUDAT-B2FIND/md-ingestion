@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "SEANOE"
+    ],
+    "DOI": "http://dx.doi.org/10.17882/59517",
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Oceanography/Marine Science",
+    "MetaDataAccess": "http://www.seanoe.org/oai/OAIHandler?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a476c9c-47ab-51ed-aa7b-8607416cdc0c",
+    "PublicationTimestamp": "2019-03-05T11:59:59Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "SEANOE"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "CC-BY-ND"
+    ],
+    "SpatialCoverage": "(41N-57N,6 W-11E)",
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Vaz, Sandrine",
+        "Jac, Cyrielle",
+        "Llapasset, Margaux",
+        "Guillerme, Chlo\u00e9",
+        "Foveau, Aurelie",
+        "Desroy, Nicolas"
+    ],
+    "fulltext": "oai:seanoe.org:59517;2019-05-21;Updated biological traits' scoring and protection status to calculate sensitivity to trawling on mega-epibenthic fauna;Foveau, Aurelie;Jac, Cyrielle;Llapasset, Margaux;Guillerme, Chlo\u00e9;Desroy, Nicolas;Vaz, Sandrine;benthic fauna;disturbance;sensitivity;indicator;biological traits;Particularly suited to the purpose of measuring the sensitivity of benthic communities to trawling, a trawl disturbance indicator (de Juan and Demestre, 2012, de Juan et al. 2009) was proposed based on benthic species biological traits to evaluate the sensibility of mega- and epifaunal community to fishing pressure known to have a physical impact on the seafloor (such as dredging and bottom trawling). The selected biological traits were chosen as they determine vulnerability to trawling: mobility, fragility, position on substrata, average size and feeding mode that can easily be related to the fragility, recoverability and vulnerability ecological concepts. The five categories retained are functional traits that were selected based on the knowledge of the response of benthic taxa to trawling disturbance (de Juan et al., 2009). They reflect respectively the possibility to avoid direct gear impact, to benefit from trawling for feeding, to escape gear, to get caught by the net and to resist trawling/dredging action, each of these characteristics being either advantageous or sensitive to trawling. To expand this approach to that proposed by Certain et al. (2015), the protection status of certain species was also indicated.\nTo enable quantitative analysis, a score was assigned to each category: from low sensitivity (0) to high sensitivity (3). Biological traits of species have been defined, from the BIOTIC database (MARLIN, 2014) and from information given by Garcia (2010), Le Pape et al. (2007) and Brind\u2019Amour et al. (2009). For missing traits, additional information from literature has been considered.\nThe protection status of each taxa was also scored: Atlantic species listed in OSPAR List of Threatened and/or Declining Species and Habitats (https://www.ospar.org/work-areas/bdc/species-habitats/list-of-threatened-declining-species-habitats) and Mediterranean species listed in Vulnerable Marine Ecosystems (FAO, 2018 and Oceana, 2017) were scored 3 and other species were scored 1.\nThe scores of 819\u00a0taxa commonly found in bottom trawl by-catch in the southern North Sea, English Channel and north-western Mediterranean were described.\n;SEANOE;2019-03-05;dataset;DOI:10.17882/59517;http://dx.doi.org/10.17882/59517;North 57.0, South 41.0, East 11.0, West -6.0;http://www.seanoe.org/data/00483/59517/illustration.gif;41.0 -6.0 57.0 11.0;CC-BY-ND",
+    "group": "seanoe",
+    "groups": [
+        {
+            "name": "seanoe"
+        }
+    ],
+    "name": "0a476c9c-47ab-51ed-aa7b-8607416cdc0c",
+    "notes": [
+        "Particularly suited to the purpose of measuring the sensitivity of benthic communities to trawling, a trawl disturbance indicator (de Juan and Demestre, 2012, de Juan et al. 2009) was proposed based on benthic species biological traits to evaluate the sensibility of mega- and epifaunal community to fishing pressure known to have a physical impact on the seafloor (such as dredging and bottom trawling). The selected biological traits were chosen as they determine vulnerability to trawling: mobility, fragility, position on substrata, average size and feeding mode that can easily be related to the fragility, recoverability and vulnerability ecological concepts. The five categories retained are functional traits that were selected based on the knowledge of the response of benthic taxa to trawling disturbance (de Juan et al., 2009). They reflect respectively the possibility to avoid direct gear impact, to benefit from trawling for feeding, to escape gear, to get caught by the net and to resist trawling/dredging action, each of these characteristics being either advantageous or sensitive to trawling. To expand this approach to that proposed by Certain et al. (2015), the protection status of certain species was also indicated.\nTo enable quantitative analysis, a score was assigned to each category: from low sensitivity (0) to high sensitivity (3). Biological traits of species have been defined, from the BIOTIC database (MARLIN, 2014) and from information given by Garcia (2010), Le Pape et al. (2007) and Brind\u2019Amour et al. (2009). For missing traits, additional information from literature has been considered.\nThe protection status of each taxa was also scored: Atlantic species listed in OSPAR List of Threatened and/or Declining Species and Habitats (https://www.ospar.org/work-areas/bdc/species-habitats/list-of-threatened-declining-species-habitats) and Mediterranean species listed in Vulnerable Marine Ecosystems (FAO, 2018 and Oceana, 2017) were scored 3 and other species were scored 1.\nThe scores of 819\u00a0taxa commonly found in bottom trawl by-catch in the southern North Sea, English Channel and north-western Mediterranean were described.\n"
+    ],
+    "oai_identifier": [
+        "0a476c9c-47ab-51ed-aa7b-8607416cdc0c"
+    ],
+    "oai_set": "",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-6.0,41.0],[-6.0,57.0],[11.0,57.0],[11.0,41.0],[-6.0,41.0]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "benthic fauna"
+        },
+        {
+            "name": "disturbance"
+        },
+        {
+            "name": "sensitivity"
+        },
+        {
+            "name": "indicator"
+        },
+        {
+            "name": "biological traits"
+        }
+    ],
+    "title": [
+        "Updated biological traits' scoring and protection status to calculate sensitivity to trawling on mega-epibenthic fauna"
+    ],
+    "url": ""
+}

@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Jan Koco\u0144"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 20",
+        "text/plain; charset=utf-8",
+        "application/msword"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/344",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/344"
+    ],
+    "PID": "http://hdl.handle.net/11321/344",
+    "PublicationTimestamp": "2017-04-21T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Jan Koco\u0144"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN-EULA-ACA-v1.0",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEULA#aca",
+        "ACA"
+    ],
+    "author": [
+        "Koco\u0144, Jan"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/344;2017-04-25T11:07:10Z;hdl_11321_3;hdl_11321_4;Diachrono;Koco\u0144, Jan;corpus;diachronic;Polish texts from 17th to 19th century;2017-04-21;corpus;http://hdl.handle.net/11321/344;pol;CLARIN-EULA-ACA-v1.0;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEULA#aca;ACA;text/plain; charset=utf-8;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;application/msword;downloadable_files_count: 20;Jan Koco\u0144",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "71fe8731-7ba0-5f36-a2a7-eda8577600d4",
+    "notes": [
+        "Polish texts from 17th to 19th century"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/344"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "diachronic"
+        }
+    ],
+    "title": [
+        "Diachrono"
+    ],
+    "url": ""
+}

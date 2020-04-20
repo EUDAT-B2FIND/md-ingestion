@@ -1,0 +1,64 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Preston, Michael James"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(4 files : ca. 242, 242, 241, 172 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0068",
+    "MetadataAccess": [
+        "oai:ota:oucs:0068"
+    ],
+    "PublicationTimestamp": "1892-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1892"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Novels"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Hardy, Thomas, 1840-1928"
+    ],
+    "fulltext": "oai:ota:oucs:0068;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0068.xml;Tess of the D\"Urbervilles : an authoritative text / by Thomas Hardy;Hardy, Thomas, 1840-1928;1892;text_and_corpus_linguistics;English fiction -- 19th century;Oxford Text Archive, University of Oxford;Preston, Michael James;(4 files : ca. 242, 242, 241, 172 KB);Text;Novels;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "496c2b89-96b4-555c-824e-78ab04adbca6",
+    "oai_identifier": [
+        "oai:ota:oucs:0068"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "English fiction -- th century"
+        }
+    ],
+    "title": [
+        "Tess of the D\"Urbervilles : an authoritative text / by Thomas Hardy"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0068.xml"
+}

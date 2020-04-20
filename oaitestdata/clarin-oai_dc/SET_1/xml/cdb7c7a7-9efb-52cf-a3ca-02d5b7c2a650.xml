@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1517</identifier>
+    <datestamp>2016-04-06T16:39:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>A Gold Standard Word Alignment for English-Swedish (2015-10-12)</dc:title>
+      <dc:creator>Ahrenberg, Lars</dc:creator>
+      <dc:creator>Holmqvist, Maria</dc:creator>
+      <dc:subject>word alignment</dc:subject>
+      <dc:description>A Gold Standard Word Alignment for English-Swedish (GES) is a resource containing 1164 manually word aligned sentences pairs from English and Swedish versions of Europarl v. 2.</dc:description>
+      <dc:date>2015-10-12</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1517</dc:identifier>
+      <dc:language>swe</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:relation>http://hdl.handle.net/11372/LRT-1513</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Link&#246;ping University</dc:publisher>
+      <dc:source>https://www.ida.liu.se/labs/nlplab/ges/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

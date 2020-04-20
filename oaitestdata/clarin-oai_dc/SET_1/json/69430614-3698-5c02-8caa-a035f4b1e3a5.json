@@ -1,0 +1,71 @@
+{
+    "Contact": [
+        "Aneta Kusz"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 4",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.oasis.opendocument.text"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/480",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/480"
+    ],
+    "PID": "http://hdl.handle.net/11321/480",
+    "PublicationTimestamp": "2018-06-19T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Aneta Kusz"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Super Cool License",
+        "http://www.google.com",
+        "ACA"
+    ],
+    "author": [
+        "Kusz, Aneta"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/480;2018-06-19T11:18:02Z;hdl_11321_3;hdl_11321_4;Pragmatheme;Kusz, Aneta;Warsztaty umcs;Korpus testowy w ramach warsztat\u00f3w szkoleniowych;2018-06-19;corpus;http://hdl.handle.net/11321/480;pol;Super Cool License;http://www.google.com;ACA;text/plain; charset=utf-8;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text;downloadable_files_count: 4;Aneta Kusz",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "69430614-3698-5c02-8caa-a035f4b1e3a5",
+    "notes": [
+        "Korpus testowy w ramach warsztat\u00f3w szkoleniowych"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/480"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Warsztaty umcs"
+        }
+    ],
+    "title": [
+        "Pragmatheme"
+    ],
+    "url": ""
+}

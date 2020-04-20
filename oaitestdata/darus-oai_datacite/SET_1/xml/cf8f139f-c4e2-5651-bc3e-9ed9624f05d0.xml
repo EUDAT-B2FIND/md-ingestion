@@ -1,0 +1,83 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-471</identifier>
+    <datestamp>2020-01-29T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-471</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Koch, Timo</creatorName>
+          <givenName>Timo</givenName>
+          <familyName>Koch</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-4776-5222</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Benchmark C1.2 - Numerical results reference solution</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Agricultural Sciences</subject>
+        <subject>Computer and Information Science</subject>
+        <subject>Earth and Environmental Sciences</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Koch, Timo</contributorName>
+          <givenName>Timo</givenName>
+          <familyName>Koch</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+        <contributor contributorType="DataCollector">
+          <contributorName nameType="Personal">Magdalena Landl</contributorName>
+          <givenName>Magdalena</givenName>
+          <familyName>Landl</familyName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-09-23</date>
+        <date dateType="Updated">2020-01-28</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">simulation results, post-processing, data files</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="DOI">10.1101/808972</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>22259562</size>
+        <size>113866</size>
+        <size>42029509</size>
+        <size>20777</size>
+        <size>19057</size>
+        <size>58794</size>
+        <size>87045483</size>
+        <size>4563116365</size>
+        <size>4533451082</size>
+      </sizes>
+      <formats>
+        <format>application/gzip</format>
+        <format>application/gzip</format>
+        <format>application/gzip</format>
+        <format>application/gzip</format>
+        <format>application/gzip</format>
+        <format>application/octet-stream</format>
+        <format>model/mesh</format>
+        <format>application/gzip</format>
+        <format>application/gzip</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Root water uptake simulation with a numerical scheme where the root-soil surface is explicitly resolved by the computational grid. The roots are a one-dimensional network grid embedded in a 3D soil domain. This dataset contains the grid files for root and soil. 8-day-old lupine, segmented from MRI measurements (courtesy of Magdalena Landl, FZ J&#252;lich, Germany). Soil grid generated with CGAL from implicit description.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

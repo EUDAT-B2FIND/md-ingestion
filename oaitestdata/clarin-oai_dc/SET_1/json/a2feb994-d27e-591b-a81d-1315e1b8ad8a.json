@@ -1,0 +1,68 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Nagle, Chris"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/sgml",
+        "(2 files : ca. 1.43, 71 KB)"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:2049",
+    "MetadataAccess": [
+        "oai:ota:oucs:2049"
+    ],
+    "PublicationTimestamp": "1796-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1796"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Poems"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Robinson, Mary, 1758-1800"
+    ],
+    "fulltext": "oai:ota:oucs:2049;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/2049.xml;Sappho and Phaon : in a series of legitimate sonnets, with thoughts on poetical subjects, and anecdotes of the Grecian poetess;Robinson, Mary, 1758-1800;1796;text_and_corpus_linguistics;Poems -- Great Britain -- 18th century;eng;Oxford Text Archive, University of Oxford;Nagle, Chris;text/sgml;(2 files : ca. 1.43, 71 KB);Text;Poems;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a2feb994-d27e-591b-a81d-1315e1b8ad8a",
+    "oai_identifier": [
+        "oai:ota:oucs:2049"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Great Britain -- th century"
+        }
+    ],
+    "title": [
+        "Sappho and Phaon : in a series of legitimate sonnets, with thoughts on poetical subjects, and anecdotes of the Grecian poetess"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/2049.xml"
+}

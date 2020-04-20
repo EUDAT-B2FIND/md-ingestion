@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/622</identifier>
+    <datestamp>2019-01-18T08:23:50Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Speech activity annotation for a subset of the Clarin-PL studio corpus</dc:title>
+      <dc:creator>Brocki, &#321;ukasz</dc:creator>
+      <dc:subject>speech activity</dc:subject>
+      <dc:subject>voice activity</dc:subject>
+      <dc:subject>SAD</dc:subject>
+      <dc:subject>VAD</dc:subject>
+      <dc:description>This is a hand-checked annotation of speech activity within a subset of the Clarin-PL studio corpus, containing 20 session with 619 recordings. This submission does not contain any audio files - these can be found either in the submission http://hdl.handle.net/11321/236, or under URL: http://mowa.clarin-pl.eu/korpusy</dc:description>
+      <dc:date>2019-01-17</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/622</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Polish-Japanese Academy of Information Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

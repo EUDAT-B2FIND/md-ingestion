@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/9939344",
+    "DiscHierarchy": [
+        "1.6.2",
+        "Social and Cultural Anthropology",
+        "Asian Studies"
+    ],
+    "Discipline": "Photographs",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/9939344",
+    "MetadataAccess": [
+        "oai:figshare.com:article/9939344"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-10-21T10:32:56Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Photographs_used_for_Structure_from_Motion_3D_Dental_model_generation_Part_3/9939344"
+    ],
+    "ResourceType": [
+        "Image",
+        "Figure"
+    ],
+    "Rights": [
+        "CC BY-NC-SA 4.0"
+    ],
+    "author": [
+        "Christopher Silvester (7090259)",
+        "Simon Hillson (6777521)"
+    ],
+    "fulltext": "oai:figshare.com:article/9939344;2019-10-21T10:32:56Z;category_25;category_127;portal_549;item_type_1;month_year_10_2019;Photographs used for Structure from Motion 3D Dental model generation Part 3;Christopher Silvester (7090259);Simon Hillson (6777521);Anthropology;Archaeology;Photographs;Teeth;photogrammetric studies;Sets of photographs used to generate 3D models of dental models using Agisoft Metashape for 5 individuals. Individuals were from the St. Michael's Litten, Chichester assemblage (dated AD1550-1900) held at University College London. Sets of photographs are numbered according to specimen number. Specimen numbers are 1892, 2359, 2583, 2729, 4759. The specimen numbers correspond to the skeleton numbers of each individual. The site code for St. Michael's Litten is ESC11. The structure-from-motion 3D dental models generated using these photographs were assessed alongside 3D models generated using a structured light scanner to determine their fidelity. The results of this research are presented the article \"A critical assessment of the potential for Structure-from-Motion photogrammetry to produce high fidelity 3D Dental Models\" under review in the American Journal of Physical Anthropology. The paper aimed to determine whether dental models generated using photogrammetry could be used to perform dental macrowear analysis. All 3D models assessed, and the photographs used to generate the models, are available from the UCL research data repository.<p></p><div><br></div>;2019-10-21T10:32:56Z;Image;Figure;10.5522/04/9939344;https://figshare.com/articles/Photographs_used_for_Structure_from_Motion_3D_Dental_model_generation_Part_3/9939344;CC BY-NC-SA 4.0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "08e80266-2d14-5e09-bca0-a489c153c191",
+    "notes": [
+        "Sets of photographs used to generate 3D models of dental models using Agisoft Metashape for 5 individuals. Individuals were from the St. Michael's Litten, Chichester assemblage (dated AD1550-1900) held at University College London. Sets of photographs are numbered according to specimen number. Specimen numbers are 1892, 2359, 2583, 2729, 4759. The specimen numbers correspond to the skeleton numbers of each individual. The site code for St. Michael's Litten is ESC11. The structure-from-motion 3D dental models generated using these photographs were assessed alongside 3D models generated using a structured light scanner to determine their fidelity. The results of this research are presented the article \"A critical assessment of the potential for Structure-from-Motion photogrammetry to produce high fidelity 3D Dental Models\" under review in the American Journal of Physical Anthropology. The paper aimed to determine whether dental models generated using photogrammetry could be used to perform dental macrowear analysis. All 3D models assessed, and the photographs used to generate the models, are available from the UCL research data repository.<p></p><div><br></div>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/9939344"
+    ],
+    "oai_set": [
+        "category_25",
+        "category_127",
+        "portal_549",
+        "item_type_1",
+        "month_year_10_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Anthropology"
+        },
+        {
+            "name": "Archaeology"
+        },
+        {
+            "name": "Photographs"
+        },
+        {
+            "name": "Teeth"
+        },
+        {
+            "name": "photogrammetric studies"
+        }
+    ],
+    "title": [
+        "Photographs used for Structure from Motion 3D Dental model generation Part 3"
+    ],
+    "url": ""
+}

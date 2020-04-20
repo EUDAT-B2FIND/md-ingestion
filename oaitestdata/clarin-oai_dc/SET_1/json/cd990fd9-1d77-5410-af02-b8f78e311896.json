@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "Society for Danish Language and Literature, DSL"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 11",
+        "application/zip",
+        "application/pdf",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/36",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/36"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/36",
+    "PublicationTimestamp": "2011-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Society for Danish Language and Literature, DSL"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "CLARIN-ACA-NC",
+        "https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1",
+        "ACA"
+    ],
+    "author": [
+        "Asmussen, J\u00f8rg",
+        "Halskov, Jakob"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/36;2018-12-19T12:20:07Z;hdl_20.500.12115_1;hdl_20.500.12115_3;DK-CLARIN Reference Corpus of General Danish;Asmussen, J\u00f8rg;Halskov, Jakob;LGP - Language for General Purposes;DK-CLARIN Reference Corpus of General Danish has been collected as part of DK-CLARIN project, WP2.1, 2008 - 2011. All texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, ePOS-tagging, sentence and paragraph segmentation, and lemmatisation. The corpus comprises 45,113,245 words.;2011;corpus;http://hdl.handle.net/20.500.12115/36;dan;CLARIN-ACA-NC;https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaAca?ID=1&AFFIL=EDU&BY=1&NC=1&NORED=1;ACA;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/zip;application/pdf;application/pdf;application/pdf;text/plain; charset=utf-8;downloadable_files_count: 11;Society for Danish Language and Literature, DSL;https://korpus.dsl.dk/clarin/",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cd990fd9-1d77-5410-af02-b8f78e311896",
+    "notes": [
+        "DK-CLARIN Reference Corpus of General Danish has been collected as part of DK-CLARIN project, WP2.1, 2008 - 2011. All texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, ePOS-tagging, sentence and paragraph segmentation, and lemmatisation. The corpus comprises 45,113,245 words."
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/36"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "LGP - Language General Purposes"
+        }
+    ],
+    "title": [
+        "DK-CLARIN Reference Corpus of General Danish"
+    ],
+    "url": ""
+}

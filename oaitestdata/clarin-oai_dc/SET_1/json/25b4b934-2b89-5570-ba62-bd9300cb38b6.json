@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4996",
+    "MetadataAccess": [
+        "oai:ota:oucs:4996"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Aikin, John, 1747-1822."
+    ],
+    "fulltext": "oai:ota:oucs:4996;2017-06-15T11:47:02Z;http://ota.ox.ac.uk/headers/4996.xml;Evenings at home; or, the juvenile budget opened: Consisting of a variety of miscellaneous pieces, ... [pt.3];Aikin, John, 1747-1822.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "25b4b934-2b89-5570-ba62-bd9300cb38b6",
+    "oai_identifier": [
+        "oai:ota:oucs:4996"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "Evenings at home; or, the juvenile budget opened: Consisting of a variety of miscellaneous pieces, ... [pt.3]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4996.xml"
+}

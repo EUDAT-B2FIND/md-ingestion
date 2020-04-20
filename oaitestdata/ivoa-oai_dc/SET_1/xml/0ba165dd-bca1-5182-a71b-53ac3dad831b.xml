@@ -1,0 +1,17 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://cadc.nrc.ca/siap/jcmt</oai:identifier>
+    <oai:datestamp>2016-02-05T16:34:28Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:title>CADC/JCMT Image Search</dc:title>
+      <dc:creator>                     Canadian Astronomy Data Centre            </dc:creator>
+      <dc:creator/>
+      <dc:description>Image search and retrieval of JCMT images. The collection e currently       contains SCUBA products at 450 and 850um.</dc:description>
+      <dc:subject/>
+      <dc:date>2014-02-04T15:57:45</dc:date>
+      <dc:identifier>ivo://cadc.nrc.ca/siap/jcmt</dc:identifier>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

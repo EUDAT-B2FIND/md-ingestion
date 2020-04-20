@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1242</identifier>
+    <datestamp>2016-04-06T16:39:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>BulTreeBank Morphosyntactic Disambiguator</dc:title>
+      <dc:creator>Simov, Kiril</dc:creator>
+      <dc:creator>Osenova, Petya</dc:creator>
+      <dc:creator>Simov, Alex</dc:creator>
+      <dc:contributor>Simov, Kiril</dc:contributor>
+      <dc:description>This is a hybrid system: rules, neural network, rules. First 
+rules for the sure cases are applied, then a neural network 
+disambiguator is applied, then rules for repairing of the most 
+frequent errors of the neural network. The rules are implemented 
+as constraints in CLaRK System. The neural network is additional 
+module implemented in Java. It is called CLaRK. It requires the 
+morphologically annotated input.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1242</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Bulgaria</dc:coverage>
+      <dc:publisher>Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

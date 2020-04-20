@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-55</identifier>
+    <datestamp>2018-07-23T09:13:44Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CophiWordNet Search Interface 1.0</dc:title>
+      <dc:creator>Boschetti, Federico</dc:creator>
+      <dc:creator>Del Gratta, Riccardo</dc:creator>
+      <dc:subject>Wordnets</dc:subject>
+      <dc:subject>Search Interface</dc:subject>
+      <dc:subject>Gui</dc:subject>
+      <dc:description>This interface allows you to browse several wordnets in different languages.&#13;
+Italian, Ancient Greek, Latin, Croatian, Arabic&#13;
+Each wordnet is mapped on PWN 3.0 and the interface may be extended with other wordnets (please ask contact person).</dc:description>
+      <dc:date>2014-05-26</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-55</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:language>grc</dc:language>
+      <dc:language>ara</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+      <dc:source>http://www.cophilab.eu</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

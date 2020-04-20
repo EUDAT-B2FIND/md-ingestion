@@ -1,0 +1,60 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "(2 files : ca. 82, 176 KB)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:0344",
+    "MetadataAccess": [
+        "oai:ota:oucs:0344"
+    ],
+    "PublicationYear": [
+        "804-810"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Utopian literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "More, Thomas, Sir, Saint, 1478-1535"
+    ],
+    "fulltext": "oai:ota:oucs:0344;2018-07-27T14:11:31Z;http://ota.ox.ac.uk/headers/0344.xml;Utopia : Parts 1 and 2 / Sir Thomas More;More, Thomas, Sir, Saint, 1478-1535;804-810;text_and_corpus_linguistics;Utopias in literature -- 16th century;Oxford Text Archive, University of Oxford;(2 files : ca. 82, 176 KB);Text;Utopian literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "6bfa68b4-6739-5fba-82b0-9da3ef34abf3",
+    "oai_identifier": [
+        "oai:ota:oucs:0344"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Utopias literature -- th century"
+        }
+    ],
+    "title": [
+        "Utopia : Parts 1 and 2 / Sir Thomas More"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/0344.xml"
+}

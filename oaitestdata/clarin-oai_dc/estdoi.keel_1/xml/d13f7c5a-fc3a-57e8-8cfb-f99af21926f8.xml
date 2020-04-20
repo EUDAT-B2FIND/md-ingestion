@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:9352874</identifier>
+    <datestamp>2019-06-16T11:01:03Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Hiiu s&#245;naraamat</dc:title>
+      <dc:creator>Laansalu, Tiina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2016</dc:date>
+      <dc:date>Issued: 2016-10-31</dc:date>
+      <dc:date>Updated: 2016-10-31</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05B50L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">S&#245;nastik kuulub Eesti Keele Instituudi v&#228;ikeste murdes&#245;nastike sarja ja on maailma esimene hiiu keele s&#245;naraamat. See sisaldab 6300 m&#228;rks&#245;na ning esitab hiiu keele p&#245;his&#245;navara ja murdes&#245;nu k&#245;igist Hiiumaa murrakutest. Kuna hiiu keele omap&#228;ra tuleb esile eesk&#228;tt tema h&#228;&#228;likulises k&#252;ljes, siis on s&#245;nastikus n&#228;idatud ka &#252;ldtuntud s&#245;nade puhul nende hiiup&#228;rast h&#228;&#228;ldust. Samuti on m&#228;rks&#245;nade juures n&#228;itelaused koos viitega kihelkonnale, kust n&#228;ide on kirja pandud.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

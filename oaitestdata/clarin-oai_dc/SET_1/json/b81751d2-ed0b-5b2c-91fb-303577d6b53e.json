@@ -1,0 +1,72 @@
+{
+    "Contact": [
+        "The Danish Parliament",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Danish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repository.clarin.dk:20.500.12115/8",
+    "MetadataAccess": [
+        "oai:repository.clarin.dk:20.500.12115/8"
+    ],
+    "PID": "http://hdl.handle.net/20.500.12115/8",
+    "PublicationTimestamp": "2018-07-01T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "The Danish Parliament",
+        "Centre for Language Technology, NorS, University of Copenhagen"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "Hansen, Dorte Haltrup"
+    ],
+    "fulltext": "oai:repository.clarin.dk:20.500.12115/8;2018-06-28T13:21:32Z;hdl_20.500.12115_1;hdl_20.500.12115_3;The Danish Parliament Corpus 2009 - 2017, v1;Hansen, Dorte Haltrup;Parliament records;The Danish Parliament Corpus 2009 \u2013 2017 contains Hansards (transcripts of parliamentary speeches) from the sittings in the Chamber of the Danish Parliament, Folketinget. The corpus consists of xml files, one for each parliamentary year, running from October to the following June. The files are marked for meetings, item title and number, speeches, name and party of speakers, date, time etc.\r\nThe Danish Parliament Corpus 2009-2017 follows the license for Open Data stating the following:\r\n\"The Danish Parliament grants a world-wide, free, non-exclusive and otherwise unrestricted right of use of the data in the Danish Parliament's open data catalogue. The data can be freely: \r\n\uf0a7\tcopied, distributed and published, \r\n\uf0a7\tadapted and combined with other material,\r\n\uf0a7\texploited commercially and non-commercially. \"\r\nFollowing the copyright act, the speeches can be distributed without the consent of the speaker but only in a way where the author/speaker of each text/speech is clearly stated. Furthermore, the Danish Parliament must be acknowledged as the source.\r\nVersion 1 of the corpus includes meetings until May 4th, 2017, and the reports for the latest parliamentary year have not been published as the final edition. The reports of all other meetings are the final editions.;2018;corpus;http://hdl.handle.net/20.500.12115/8;dan;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;The Danish Parliament;Centre for Language Technology, NorS, University of Copenhagen",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "b81751d2-ed0b-5b2c-91fb-303577d6b53e",
+    "notes": [
+        "The Danish Parliament Corpus 2009 \u2013 2017 contains Hansards (transcripts of parliamentary speeches) from the sittings in the Chamber of the Danish Parliament, Folketinget. The corpus consists of xml files, one for each parliamentary year, running from October to the following June. The files are marked for meetings, item title and number, speeches, name and party of speakers, date, time etc.\r\nThe Danish Parliament Corpus 2009-2017 follows the license for Open Data stating the following:\r\n\"The Danish Parliament grants a world-wide, free, non-exclusive and otherwise unrestricted right of use of the data in the Danish Parliament's open data catalogue. The data can be freely: \r\n\uf0a7\tcopied, distributed and published, \r\n\uf0a7\tadapted and combined with other material,\r\n\uf0a7\texploited commercially and non-commercially. \"\r\nFollowing the copyright act, the speeches can be distributed without the consent of the speaker but only in a way where the author/speaker of each text/speech is clearly stated. Furthermore, the Danish Parliament must be acknowledged as the source.\r\nVersion 1 of the corpus includes meetings until May 4th, 2017, and the reports for the latest parliamentary year have not been published as the final edition. The reports of all other meetings are the final editions."
+    ],
+    "oai_identifier": [
+        "oai:repository.clarin.dk:20.500.12115/8"
+    ],
+    "oai_set": [
+        "hdl_20.500.12115_1",
+        "hdl_20.500.12115_3"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Parliament records"
+        }
+    ],
+    "title": [
+        "The Danish Parliament Corpus 2009 - 2017, v1"
+    ],
+    "url": ""
+}

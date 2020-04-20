@@ -1,0 +1,65 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "Middle High German (ca. 1050-1500)"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3226",
+    "MetadataAccess": [
+        "oai:ota:oucs:3226"
+    ],
+    "PublicationTimestamp": "1976-01-01T11:59:59Z",
+    "PublicationYear": [
+        "1976"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "von Aue, Hartmann, 12th cent."
+    ],
+    "fulltext": "oai:ota:oucs:3226;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3226.xml;Der arme Heinrich;von Aue, Hartmann, 12th cent.;default: 1976-01-01;text_and_corpus_linguistics;Poems -- Germany -- 12th century;Epics -- Germany -- 12th century;Devotional literature -- Germany -- 12th century;gmh;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "37c156ad-583d-5467-a81f-553d2a4ce4de",
+    "oai_identifier": [
+        "oai:ota:oucs:3226"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Poems -- Germany -- th century"
+        },
+        {
+            "name": "Epics -- Germany -- th century"
+        },
+        {
+            "name": "Devotional literature -- Germany -- th century"
+        }
+    ],
+    "title": [
+        "Der arme Heinrich"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3226.xml"
+}

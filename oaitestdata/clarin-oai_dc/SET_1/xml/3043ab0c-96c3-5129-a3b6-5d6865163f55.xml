@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>82f8e7aadb1f11e1a404080027e73ea2e2410a9e40dd4dab905cbc5e120a15ed</identifier>
+    <datestamp>2018-11-15T16:39:24Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UIMA Apertium Translator</dc:title>
+      <dc:description>This tool translates text from a source language into a target language. It operates on text that has previously been tokenised and morphologically analysed, and POS-tagged. Target language tokens are assigned POS tags and morphological analyses. The Apertium Translator is a module of Apertium machine translation system  (Armentano-Ollet et al., 2006). The provided tool can currently operate on a subset of the languages that are supported by the Apertium system, namely:  English, Spanish, Calatan, Galician, Portuguese and Basque. 
+
+NOTE: The morphological analysis required and POS tagging prior to running the transfer component  MUST be carried out by running the Apertium morphological analyser (which also performs tokenisation), followed by the Apertium POS tagger.
+The tool is provided as a UIMA  (Ferrucci et al., 2006) component, specifically as Java archive (jar) file, which can be incorporated within any UIMA workflow. It can be run within the U-Compare text mining platform (Kano et al., 2009; Kano et al., 2011; see separate META-SHARE record), since the types of annotations it produces are compliant with the U-Compare. However, U-Compare does not currently support visualization of the output of this tool, since multiple subjects of analysis (sofas) are used. The output of the tool may, however, be visualized using the UIMA annotion viewer. 
+</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

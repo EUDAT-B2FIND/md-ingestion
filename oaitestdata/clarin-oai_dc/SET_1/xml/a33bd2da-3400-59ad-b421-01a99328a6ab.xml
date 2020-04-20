@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-BD17-1</identifier>
+    <datestamp>2018-07-02T22:05:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>English-Hindi Parallel Corpus</dc:title>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:creator>Stra&#328;&#225;k, Pavel</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Jain, Gaurav</dc:creator>
+      <dc:creator>Damani, Om Prakesh</dc:creator>
+      <dc:subject>English-Hindi parallel corpus</dc:subject>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:description>English-Hindi parallel corpus collected from several sources. Tokenized and sentence-aligned. A part of the data is our patch for the Emille parallel corpus.</dc:description>
+      <dc:date>2010-05-11</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>UMC002</dc:identifier>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-BD17-1</dc:identifier>
+      <dc:language>hin</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/231720</dc:relation>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0023-625F-0</dc:relation>
+      <dc:rights>Creative Commons - Attribution 3.0 Unported (CC BY 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

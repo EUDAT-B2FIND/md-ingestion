@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>dcb9fd566c9211e2a2aa782bcb07413586a54ee5131340e9af937b576f71c5b0</identifier>
+    <datestamp>2018-11-15T16:40:11Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:service</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare Species Disambiguation Service </dc:title>
+      <dc:description>Web service created by exporting UIMA-based workflow from the U-Compare text mining system.
+Functionality: Identifies biological named entities and disambiguates them according to
+species, by assigning a species ID from the NCBI taxonomy. Also identifies sentences and tokens.
+Tools in workflow: GENIA Sentence Splitter, GENIA Tagger (with tokenisation), Species Word Detector, ExtractAbbrev, Species Disambiguator (all from the University of Manchester) 
+NOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

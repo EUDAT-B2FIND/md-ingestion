@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10303905</identifier>
+    <datestamp>2019-05-18T17:26:06Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Uudiste lugeja Androidis</dc:title>
+      <dc:title xml:lang="en">Android Newsreader</dc:title>
+      <dc:creator>Mihkla, Meelis</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2019-01-07</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-06332L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Rakendus loeb eesti keeles ette v&#228;rskeid uudiseid. Kasutajal on v&#245;imalik valida kolme s&#252;nteesh&#228;&#228;le ja erinevate lugemiskiiruste vahel.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Reads aloud fresh news in Estonian. User options include three synthetic voices and different speech rates.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

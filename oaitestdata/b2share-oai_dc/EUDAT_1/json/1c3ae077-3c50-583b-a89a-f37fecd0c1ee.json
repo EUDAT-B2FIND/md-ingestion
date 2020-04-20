@@ -1,0 +1,57 @@
+{
+    "DOI": "http://dx.doi.org/doi:10.23728/b2share.8b49a31f0faa4f479f8263db8382d531",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://b2share.eudat.eu/api/oai2d?verb=GetRecord&metadataPrefix=marcxml&identifier=oai:b2share.eudat.eu:b2rec/8b49a31f0faa4f479f8263db8382d531",
+    "PID": "http://hdl.handle.net/11304/7117c31b-ea35-437a-949a-4765c43f149d",
+    "PublicationTimestamp": "2017-02-13T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "RelatedIdentifier": [
+        "http://hdl.handle.net/11304/7117c31b-ea35-437a-949a-4765c43f149d",
+        "10.23728/b2share.8b49a31f0faa4f479f8263db8382d531",
+        "https://b2share.eudat.eu/api/records/8b49a31f0faa4f479f8263db8382d531",
+        "oai:b2share.eudat.eu:b2rec/8b49a31f0faa4f479f8263db8382d531"
+    ],
+    "Rights": [
+        "info:eu-repo/semantics/openAccess",
+        "Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA)"
+    ],
+    "author": [
+        "Kaliontzopoulos Panos"
+    ],
+    "fulltext": "oai:b2share.eudat.eu:b2rec/8b49a31f0faa4f479f8263db8382d531;2018-01-11T13:50:00Z;e9b9792e-79fb-4b07-b6b4-b9c2bd06d095;Kaliontzopoulos Panos;2017-02-13T08:11:12.362766+00:00;Second edition with more than 31.000 terms;http://hdl.handle.net/11304/7117c31b-ea35-437a-949a-4765c43f149d;10.23728/b2share.8b49a31f0faa4f479f8263db8382d531;https://b2share.eudat.eu/api/records/8b49a31f0faa4f479f8263db8382d531;oai:b2share.eudat.eu:b2rec/8b49a31f0faa4f479f8263db8382d531;info:eu-repo/semantics/openAccess;Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA);Lexicon, English-Greek, Dictionary ;English-Greek Lexicon of Electronics",
+    "group": "b2share",
+    "groups": [
+        {
+            "name": "b2share"
+        }
+    ],
+    "name": "1c3ae077-3c50-583b-a89a-f37fecd0c1ee",
+    "notes": [
+        "Second edition with more than 31.000 terms"
+    ],
+    "oai_identifier": [
+        "oai:b2share.eudat.eu:b2rec/8b49a31f0faa4f479f8263db8382d531"
+    ],
+    "oai_set": [
+        "e9b9792e-79fb-4b07-b6b4-b9c2bd06d095"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Lexicon"
+        },
+        {
+            "name": "English-Greek"
+        },
+        {
+            "name": "Dictionary"
+        }
+    ],
+    "title": [
+        "English-Greek Lexicon of Electronics"
+    ],
+    "url": "https://b2share.eudat.eu/api/records/8b49a31f0faa4f479f8263db8382d531"
+}

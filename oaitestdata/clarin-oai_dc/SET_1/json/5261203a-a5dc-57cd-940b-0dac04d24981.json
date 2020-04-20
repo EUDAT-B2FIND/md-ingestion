@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=1a171f22719e11e5a2aa782bcb074135530d6c33185d42539d22846d41ff5ec2",
+    "MetadataAccess": [
+        "1a171f22719e11e5a2aa782bcb074135530d6c33185d42539d22846d41ff5ec2"
+    ],
+    "PublicationTimestamp": "2015-10-13T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "1a171f22719e11e5a2aa782bcb074135530d6c33185d42539d22846d41ff5ec2;2018-11-15T16:40:18Z;lexicalConceptualResource;lexicalConceptualResource:terminologicalResource;Time-sensitive inventory of medical terminology;This inventory contains a set of terms that are relevant to the study of medical history.\n\nThe inventory is organised as a set of \"heading terms\", belonging to one of seven different semantic categories, each of which is accompanied by a set of semantically-related terms. There are around 175,000 heading terms. \n\nThe nature of the semantic relationship holding between the heading term and each related term varies. A pair of related terms may, for example be synonyms of each other, one term may be more or less specific than the other, one may be a part of the other, one may be used in the treatment of the other, etc. \n;2015-10-13",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5261203a-a5dc-57cd-940b-0dac04d24981",
+    "notes": [
+        "This inventory contains a set of terms that are relevant to the study of medical history.\n\nThe inventory is organised as a set of \"heading terms\", belonging to one of seven different semantic categories, each of which is accompanied by a set of semantically-related terms. There are around 175,000 heading terms. \n\nThe nature of the semantic relationship holding between the heading term and each related term varies. A pair of related terms may, for example be synonyms of each other, one term may be more or less specific than the other, one may be a part of the other, one may be used in the treatment of the other, etc. \n"
+    ],
+    "oai_identifier": [
+        "1a171f22719e11e5a2aa782bcb074135530d6c33185d42539d22846d41ff5ec2"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:terminologicalResource"
+    ],
+    "state": "active",
+    "title": [
+        "Time-sensitive inventory of medical terminology"
+    ]
+}

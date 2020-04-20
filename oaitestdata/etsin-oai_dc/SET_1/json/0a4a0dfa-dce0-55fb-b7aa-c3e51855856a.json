@@ -1,0 +1,58 @@
+{
+    "Contact": [
+        "atm-data@helsinki.fi"
+    ],
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "MetaDataAccess": "https://etsin.avointiede.fi/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=0a4a0dfa-dce0-55fb-b7aa-c3e51855856a",
+    "PublicationTimestamp": "2016-03-08T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "atm-data@helsinki.fi"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "Creative Commons Attribution 4.0"
+    ],
+    "SpatialCoverage": [
+        "DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;",
+        "2006-01-01T00:00:00Z/2006-12-31T23:59:59Z"
+    ],
+    "TempCoverageBegin": 192513067199,
+    "TempCoverageEnd": 63271670400,
+    "TemporalCoverage": " period : ( 6101-07-01T11:59:59Z - 2006-01-01T00:00:00Z ) ",
+    "TemporalCoverage:BeginDate": "6101-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2006-01-01T00:00:00Z",
+    "author": [
+        "Pasi Aalto"
+    ],
+    "fulltext": "urn:nbn:fi:csc-kata20160308093442336626;2016-03-08T07:34:42Z;university-of-helsinki-department-of-physics-division-of-atmospheric-sciences;V\u00e4rri\u00f6 SMEAR I meteorology, gases and soil - NO concentration 15 m - 2006;Pasi Aalto;http://www.yso.fi/onto/yso/p26207;Title: NO concentration 15 m \n\nDescription: NO concentration 15 m \n\nVariable: NO_0 \n\nUnit: \u00b5g m\u207b\u00b3 \n\nSource: TEI 42C TL chemiluminescence analyzer \n\nCategory: Gas \n\n;atm-data@helsinki.fi;2016-03-08;dataset;urn:nbn:fi:csc-ida-10x201703282015017316520v;urn:nbn:fi:csc-ida2014011537470v;urn:nbn:fi:csc-ida2014011537470s;urn:nbn:fi:csc-kata20160308093442336626;http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308093442336626;DCMI-point: name=V\u00e4rri\u00f6; east=29.610137; north=67.755044; elevation=390;;2006-01-01T00:00:00Z/2006-12-31T23:59:59Z;Creative Commons Attribution 4.0",
+    "group": "etsin",
+    "groups": [
+        {
+            "name": "etsin"
+        }
+    ],
+    "name": "0a4a0dfa-dce0-55fb-b7aa-c3e51855856a",
+    "notes": [
+        "Title: NO concentration 15 m \n\nDescription: NO concentration 15 m \n\nVariable: NO_0 \n\nUnit: \u00b5g m\u207b\u00b3 \n\nSource: TEI 42C TL chemiluminescence analyzer \n\nCategory: Gas \n\n"
+    ],
+    "oai_identifier": [
+        "0a4a0dfa-dce0-55fb-b7aa-c3e51855856a"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "http www.yso.fi onto yso p"
+        }
+    ],
+    "title": [
+        "V\u00e4rri\u00f6 SMEAR I meteorology, gases and soil - NO concentration 15 m - 2006"
+    ],
+    "url": "http://etsin.avointiede.fi/dataset/urn-nbn-fi-csc-kata20160308093442336626"
+}

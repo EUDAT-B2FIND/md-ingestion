@@ -1,0 +1,66 @@
+{
+    "Contact": [
+        "Dmochowska"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 5",
+        "application/zip",
+        "text/plain",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/71",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/71"
+    ],
+    "PID": "http://hdl.handle.net/11321/71",
+    "PublicationTimestamp": "2015-04-08T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Dmochowska"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Dmochowska, Dmochowska"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/71;2015-04-14T19:36:39Z;hdl_11321_3;hdl_11321_4;MWE Dmochowska;Dmochowska, Dmochowska;Dmochowska;2015-04-08;corpus;http://hdl.handle.net/11321/71;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;text/plain;text/plain;text/plain;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 5;Dmochowska",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "ff227238-5e68-5535-8819-f30418ba0adb",
+    "notes": [
+        "Dmochowska"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/71"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "title": [
+        "MWE Dmochowska"
+    ],
+    "url": ""
+}

@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=ebf64a38d0e111e1a404080027e73ea2229d220cc2034f7989729aae7dfd25dd",
+    "MetadataAccess": [
+        "ebf64a38d0e111e1a404080027e73ea2229d220cc2034f7989729aae7dfd25dd"
+    ],
+    "PublicationTimestamp": "2015-12-11T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "fulltext": "ebf64a38d0e111e1a404080027e73ea2229d220cc2034f7989729aae7dfd25dd;2018-11-15T16:39:22Z;toolService;toolService:tool;YamCha: Yet Another Multipurpose CHunk Annotator ;YamCha is a generic, customizable, and open source text chunker oriented toward a lot of NLP tasks, such as POS tagging, Named Entity Recognition, base NP chunking, and Text Chunking. We used it for NP chunking.;2015-12-11",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "bf682a7d-cf77-5baf-8af7-9fb1b69e358c",
+    "notes": [
+        "YamCha is a generic, customizable, and open source text chunker oriented toward a lot of NLP tasks, such as POS tagging, Named Entity Recognition, base NP chunking, and Text Chunking. We used it for NP chunking."
+    ],
+    "oai_identifier": [
+        "ebf64a38d0e111e1a404080027e73ea2229d220cc2034f7989729aae7dfd25dd"
+    ],
+    "oai_set": [
+        "toolService",
+        "toolService:tool"
+    ],
+    "state": "active",
+    "title": [
+        "YamCha: Yet Another Multipurpose CHunk Annotator "
+    ]
+}

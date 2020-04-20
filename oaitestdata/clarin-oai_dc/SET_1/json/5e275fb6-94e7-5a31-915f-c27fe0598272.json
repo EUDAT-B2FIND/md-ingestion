@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:4175",
+    "MetadataAccess": [
+        "oai:ota:oucs:4175"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Lloyd, Robert."
+    ],
+    "fulltext": "oai:ota:oucs:4175;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/4175.xml;[Shakespeare: an epistle to Mr. Garrick; with an ode to genius.];Lloyd, Robert.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "5e275fb6-94e7-5a31-915f-c27fe0598272",
+    "oai_identifier": [
+        "oai:ota:oucs:4175"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "[Shakespeare: an epistle to Mr. Garrick; with an ode to genius.]"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/4175.xml"
+}

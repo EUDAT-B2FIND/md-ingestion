@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "Contributor": [
+        "Kucera, Karel"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3010",
+    "MetadataAccess": [
+        "oai:ota:oucs:3010"
+    ],
+    "PublicationTimestamp": "1923-07-01T11:59:59Z",
+    "PublicationYear": [
+        "1923"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Ha\u00c5\u00a1ek, Jaroslav, 1883-1923"
+    ],
+    "fulltext": "oai:ota:oucs:3010;2018-07-02T14:44:52Z;http://ota.ox.ac.uk/headers/3010.xml;Osudy dobr\u00c3\u00a9ho voj\u00c3\u00a1ka Svejka za svetov\u00c3\u00a9 v\u00c3\u00a1lky;The Good Soldier Schweik;Ha\u00c5\u00a1ek, Jaroslav, 1883-1923;not after: 1923;text_and_corpus_linguistics;Czech fiction -- 20th century;ces;Oxford Text Archive, University of Oxford;Kucera, Karel;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "65367ce0-95bc-5917-ad60-45bab12d6f5a",
+    "oai_identifier": [
+        "oai:ota:oucs:3010"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Czech fiction -- th century"
+        }
+    ],
+    "title": [
+        "Osudy dobr\u00c3\u00a9ho voj\u00c3\u00a1ka Svejka za svetov\u00c3\u00a9 v\u00c3\u00a1lky",
+        "The Good Soldier Schweik"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3010.xml"
+}

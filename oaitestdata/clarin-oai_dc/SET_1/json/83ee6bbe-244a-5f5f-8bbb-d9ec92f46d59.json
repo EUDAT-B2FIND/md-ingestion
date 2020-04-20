@@ -1,0 +1,73 @@
+{
+    "Contact": [
+        "Clarin PL"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Polish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/226",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/226"
+    ],
+    "PID": "http://hdl.handle.net/11321/226",
+    "PublicationTimestamp": "2015-09-02T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Clarin PL"
+    ],
+    "ResourceType": [
+        "tool"
+    ],
+    "Rights": [
+        "GNU LGPL 3.0",
+        "http://www.gnu.org/licenses/lgpl.html",
+        "PUB"
+    ],
+    "author": [
+        "Tomasz, Naskr\u0119t"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/226;2015-12-31T00:30:04Z;hdl_11321_3;hdl_11321_4;WordnetLoom 2;Tomasz, Naskr\u0119t;wordnetloom;s\u0142owosie\u0107;Aplikacja do edycji i budowy s\u0142owosieci;2015-09-02;tool;http://hdl.handle.net/11321/226;pol;GNU LGPL 3.0;http://www.gnu.org/licenses/lgpl.html;PUB;application/zip;text/plain; charset=utf-8;downloadable_files_count: 1;Clarin PL",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "83ee6bbe-244a-5f5f-8bbb-d9ec92f46d59",
+    "notes": [
+        "Aplikacja do edycji i budowy s\u0142owosieci"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/226"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "wordnetloom"
+        },
+        {
+            "name": "wordnetloom"
+        }
+    ],
+    "title": [
+        "WordnetLoom 2"
+    ],
+    "url": ""
+}

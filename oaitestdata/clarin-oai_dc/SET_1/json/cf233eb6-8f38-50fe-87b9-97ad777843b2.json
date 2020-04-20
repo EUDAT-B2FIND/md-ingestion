@@ -1,0 +1,83 @@
+{
+    "Contact": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 2",
+        "application/zip"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:www.clarin.si:11356/1176",
+    "MetadataAccess": [
+        "oai:www.clarin.si:11356/1176"
+    ],
+    "PID": "http://hdl.handle.net/11356/1176",
+    "PublicationTimestamp": "2018-03-20T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "Jo\u017eef Stefan Institute"
+    ],
+    "RelatedIdentifier": [
+        "http://www.sdjt.si/wp/wp-content/uploads/2018/09/JTDH-2018_Bozovic-et-al_Opus-MontenegrinSubs-1-0-First-electronic-corpus-of-the-Montenegrin-language.pdf"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "PUB",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": [
+        "Bo\u017eovi\u0107, Petar",
+        "Erjavec, Toma\u017e",
+        "Ljube\u0161i\u0107, Nikola",
+        "Gorjanc, Vojko",
+        "Tiedemann, J\u00f6rg"
+    ],
+    "fulltext": "oai:www.clarin.si:11356/1176;2018-10-24T20:57:01Z;hdl_11356_1023;hdl_11356_1024;English-Montenegrin parallel corpus of subtitles Opus-MontenegrinSubs 1.0;Bo\u017eovi\u0107, Petar;Erjavec, Toma\u017e;Tiedemann, J\u00f6rg;Ljube\u0161i\u0107, Nikola;Gorjanc, Vojko;parallel corpus;subtitles;multilingual;This corpus contains parallel English-Montenegrin subtitles collected in the scope of conducting a linguistic and translatological research by Petar Bo\u017eovi\u0107 for his PhD thesis \"Audiovisual Translation and Elements of Culture: A Comparative Analysis of Transfer with Reception Study in Montenegro\". The data and permission to redistribute were obtained from the Radio and Television of Montenegro (http://www.rtcg.me), the public service broadcaster of Montenegro. \r\nThe corpus consists of English and Montenegrin subtitles of three TV series: House of Cards (686 minutes), Damages (2878 minutes), and Tudors (1999 minutes). The corpus covers 10 seasons, 110 episodes, and 5,563 minutes in terms of duration.\r\nSentence alignment and basic encoding were performed inside the OPUS project (http://opus.nlpl.eu/MontenegrinSubs.php), while MSD tagging, lemmatisation, and TEI conversion were performed by the CLARIN.SI infrastructure. The English texts were tagged by TreeTagger (http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) and the Montenegrin texts by ReLDI Tagger (https://github.com/clarinsi/reldi-tagger) using the Serbian language model. The TreeTagger (Penn Treebank) tagset was mapped to the SPOOK MSD tagset for English (http://nl.ijs.si/spook/msd/html-en/msd-en.html).\r\nThe corpus is available in TEI format and derived vertical format used by CQP and Manatee (Sketch Engine). The alignments in the vertical file are given separately as tables linking the alignment elements of the two languages.;2018-03-20;corpus;http://hdl.handle.net/11356/1176;cnr;eng;http://www.sdjt.si/wp/wp-content/uploads/2018/09/JTDH-2018_Bozovic-et-al_Opus-MontenegrinSubs-1-0-First-electronic-corpus-of-the-Montenegrin-language.pdf;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);PUB;https://creativecommons.org/licenses/by-sa/4.0/;text/plain; charset=utf-8;application/zip;application/zip;downloadable_files_count: 2;Jo\u017eef Stefan Institute;http://opus.nlpl.eu/MontenegrinSubs.php",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "cf233eb6-8f38-50fe-87b9-97ad777843b2",
+    "notes": [
+        "This corpus contains parallel English-Montenegrin subtitles collected in the scope of conducting a linguistic and translatological research by Petar Bo\u017eovi\u0107 for his PhD thesis \"Audiovisual Translation and Elements of Culture: A Comparative Analysis of Transfer with Reception Study in Montenegro\". The data and permission to redistribute were obtained from the Radio and Television of Montenegro (http://www.rtcg.me), the public service broadcaster of Montenegro. \r\nThe corpus consists of English and Montenegrin subtitles of three TV series: House of Cards (686 minutes), Damages (2878 minutes), and Tudors (1999 minutes). The corpus covers 10 seasons, 110 episodes, and 5,563 minutes in terms of duration.\r\nSentence alignment and basic encoding were performed inside the OPUS project (http://opus.nlpl.eu/MontenegrinSubs.php), while MSD tagging, lemmatisation, and TEI conversion were performed by the CLARIN.SI infrastructure. The English texts were tagged by TreeTagger (http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) and the Montenegrin texts by ReLDI Tagger (https://github.com/clarinsi/reldi-tagger) using the Serbian language model. The TreeTagger (Penn Treebank) tagset was mapped to the SPOOK MSD tagset for English (http://nl.ijs.si/spook/msd/html-en/msd-en.html).\r\nThe corpus is available in TEI format and derived vertical format used by CQP and Manatee (Sketch Engine). The alignments in the vertical file are given separately as tables linking the alignment elements of the two languages."
+    ],
+    "oai_identifier": [
+        "oai:www.clarin.si:11356/1176"
+    ],
+    "oai_set": [
+        "hdl_11356_1023",
+        "hdl_11356_1024"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "parallel corpus"
+        },
+        {
+            "name": "subtitles"
+        },
+        {
+            "name": "multilingual"
+        }
+    ],
+    "title": [
+        "English-Montenegrin parallel corpus of subtitles Opus-MontenegrinSubs 1.0"
+    ],
+    "url": ""
+}

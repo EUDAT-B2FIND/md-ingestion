@@ -1,0 +1,82 @@
+{
+    "Contact": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/zip",
+        "downloadable_files_count: 4",
+        "text/plain; charset=utf-8",
+        "application/octet-stream"
+    ],
+    "Language": [
+        "English",
+        "Czech"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-1735",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-1735"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-1735",
+    "PublicationTimestamp": "2016-06-10T11:59:59Z",
+    "PublicationYear": [
+        "2016"
+    ],
+    "Publisher": [
+        "Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)"
+    ],
+    "RelatedIdentifier": [
+        "info:eu-repo/grantAgreement/EC/H2020/645452"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "http://creativecommons.org/licenses/by-sa/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "C\u00edfka, Ond\u0159ej",
+        "Bojar, Ond\u0159ej"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-1735;2018-07-02T22:05:51Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;A Small Dataset for English-to-Czech Speech Translation in the Travel Domain;C\u00edfka, Ond\u0159ej;Bojar, Ond\u0159ej;speech corpus;ASR;machine translation;This small dataset contains 3 speech corpora collected using the Alex Translate telephone service (https://ufal.mff.cuni.cz/alex#alex-translate).\r\nThe \"part1\" and \"part2\" corpora contain English speech with transcriptions and Czech translations. These recordings were collected from users of the service. Part 1 contains earlier recordings, filtered to include only clean speech; Part 2 contains later recordings with no filtering applied.\r\nThe \"cstest\" corpus contains recordings of artificially created sentences, each containing one or more Czech names of places in the Czech Republic. These were recorded by a multinational group of students studying in Prague.;2016-06-10;corpus;http://hdl.handle.net/11234/1-1735;eng;ces;info:eu-repo/grantAgreement/EC/H2020/645452;Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0);http://creativecommons.org/licenses/by-sa/4.0/;PUB;application/octet-stream;application/zip;application/zip;application/zip;text/plain; charset=utf-8;downloadable_files_count: 4;Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "a326f167-a9ae-56ce-a318-421cca38c8cb",
+    "notes": [
+        "This small dataset contains 3 speech corpora collected using the Alex Translate telephone service (https://ufal.mff.cuni.cz/alex#alex-translate).\r\nThe \"part1\" and \"part2\" corpora contain English speech with transcriptions and Czech translations. These recordings were collected from users of the service. Part 1 contains earlier recordings, filtered to include only clean speech; Part 2 contains later recordings with no filtering applied.\r\nThe \"cstest\" corpus contains recordings of artificially created sentences, each containing one or more Czech names of places in the Czech Republic. These were recorded by a multinational group of students studying in Prague."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-1735"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "speech corpus"
+        },
+        {
+            "name": "ASR"
+        },
+        {
+            "name": "machine translation"
+        }
+    ],
+    "title": [
+        "A Small Dataset for English-to-Czech Speech Translation in the Travel Domain"
+    ],
+    "url": ""
+}

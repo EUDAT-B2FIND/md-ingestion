@@ -1,0 +1,61 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "greater than 5 MB"
+    ],
+    "Language": [
+        "Ancient Greek (to 1453)",
+        "Hebrew"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:1111",
+    "MetadataAccess": [
+        "oai:ota:oucs:1111"
+    ],
+    "PublicationYear": [
+        "600 BCE-100 BCE"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text",
+        "Devotional literature"
+    ],
+    "Rights": [
+        "Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "fulltext": "oai:ota:oucs:1111;2018-03-05T14:20:38Z;http://ota.ox.ac.uk/headers/1111.xml; Aligned texts of Hebrew and Greek Jewish Scriptures  : (CATSS database : TLG format) / compiled by the Computer Assisted Tools for Septuagint Studies project under Emanuel Tov and Robert A. Kraft;600 BCE-100 BCE;text_and_corpus_linguistics;Devotional literature -- Israel;grc;heb;Oxford Text Archive, University of Oxford;greater than 5 MB;Text;Devotional literature;Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3de59bd7-be9f-5747-b0d5-e78d540b02ce",
+    "oai_identifier": [
+        "oai:ota:oucs:1111"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        },
+        {
+            "name": "Devotional literature -- Israel"
+        }
+    ],
+    "title": [
+        " Aligned texts of Hebrew and Greek Jewish Scriptures  : (CATSS database : TLG format) / compiled by the Computer Assisted Tools for Septuagint Studies project under Emanuel Tov and Robert A. Kraft"
+    ],
+    "url": "http://ota.ox.ac.uk/headers/1111.xml"
+}

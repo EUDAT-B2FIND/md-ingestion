@@ -1,0 +1,38 @@
+{
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=b7e3d0a63af611e2a2aa782bcb07413546f527e1332140b2987cf0d7a49ab3e0",
+    "MetadataAccess": [
+        "b7e3d0a63af611e2a2aa782bcb07413546f527e1332140b2987cf0d7a49ab3e0"
+    ],
+    "PublicationTimestamp": "2012-11-30T11:59:59Z",
+    "PublicationYear": [
+        "2012"
+    ],
+    "fulltext": "b7e3d0a63af611e2a2aa782bcb07413546f527e1332140b2987cf0d7a49ab3e0;2018-11-15T16:39:55Z;lexicalConceptualResource;lexicalConceptualResource:other;Maltese Wiktionary;This lexicon is part of the collection of the Wikimedia Dumps which was retrieved as an XML file from  http://dumps.wikimedia.org/mtwiktionary/20121105/ on November 5, 2012. In the Wikimedia dump, it is accompanied by a text file mtwiktionary-20121105-pages-articles-multistream-index.txt which lists all the wiki pages contained in the XML file. Both files are contained in the zip file downloadable from META-SHARE.\n\nThese files come from an automatically generated dump file of all pages within the Maltese Wiktionary wiki. The pages therein consist of manually constructed pages for articles and (semi-) automatically generated pages for the meta-content. Manual construction of the article pages allows for not sticking strictly to the agreed schema for entries in the Wiktionary. \n\nIn view of this mix of article pages, languages, meta-pages and other information, this resource is rather unreliable.\n;2012-11-30",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "58e18a39-b3d2-5116-86b3-e248c961733a",
+    "notes": [
+        "This lexicon is part of the collection of the Wikimedia Dumps which was retrieved as an XML file from  http://dumps.wikimedia.org/mtwiktionary/20121105/ on November 5, 2012. In the Wikimedia dump, it is accompanied by a text file mtwiktionary-20121105-pages-articles-multistream-index.txt which lists all the wiki pages contained in the XML file. Both files are contained in the zip file downloadable from META-SHARE.\n\nThese files come from an automatically generated dump file of all pages within the Maltese Wiktionary wiki. The pages therein consist of manually constructed pages for articles and (semi-) automatically generated pages for the meta-content. Manual construction of the article pages allows for not sticking strictly to the agreed schema for entries in the Wiktionary. \n\nIn view of this mix of article pages, languages, meta-pages and other information, this resource is rather unreliable.\n"
+    ],
+    "oai_identifier": [
+        "b7e3d0a63af611e2a2aa782bcb07413546f527e1332140b2987cf0d7a49ab3e0"
+    ],
+    "oai_set": [
+        "lexicalConceptualResource",
+        "lexicalConceptualResource:other"
+    ],
+    "state": "active",
+    "title": [
+        "Maltese Wiktionary"
+    ]
+}

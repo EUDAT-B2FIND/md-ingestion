@@ -1,0 +1,89 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/8798597.v1",
+    "DiscHierarchy": [
+        "4.3.2",
+        "Mathematics",
+        "Numerical Analysis"
+    ],
+    "Discipline": "Biology",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/8798597",
+    "MetadataAccess": [
+        "oai:figshare.com:article/8798597"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-07-08T14:21:46Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Gap_Analysis_-_spatial_description_of_network_spaces/8798597"
+    ],
+    "ResourceType": [
+        "Software",
+        "Software"
+    ],
+    "Rights": [
+        "CC BY 4.0"
+    ],
+    "author": [
+        "Sophie Acton (6782690)"
+    ],
+    "fulltext": "oai:figshare.com:article/8798597;2019-07-08T14:21:46Z;category_125;category_747;portal_549;item_type_9;month_year_07_2019;Gap Analysis - spatial description of network spaces;Sophie Acton (6782690);Bioinformatics;Computational Biology;MATLAB;FRC;lymph node;image analysis;Gap analysis;<div>MATLAB<br></div>https://www.actonlab.co.uk/gap-analysis-matlab/<div>Instructions to carry out gap analysis on network images.</div><div>Previously used in https://www.nature.com/articles/nature13814</div><div><br></div>;2019-07-08T14:21:46Z;Software;Software;10.5522/04/8798597.v1;https://figshare.com/articles/Gap_Analysis_-_spatial_description_of_network_spaces/8798597;CC BY 4.0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "5cbf87e9-b32d-5770-a3f5-51799d4b9a26",
+    "notes": [
+        "<div>MATLAB<br></div>https://www.actonlab.co.uk/gap-analysis-matlab/<div>Instructions to carry out gap analysis on network images.</div><div>Previously used in https://www.nature.com/articles/nature13814</div><div><br></div>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/8798597"
+    ],
+    "oai_set": [
+        "category_125",
+        "category_747",
+        "portal_549",
+        "item_type_9",
+        "month_year_07_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Bioinformatics"
+        },
+        {
+            "name": "Computational Biology"
+        },
+        {
+            "name": "MATLAB"
+        },
+        {
+            "name": "FRC"
+        },
+        {
+            "name": "lymph node"
+        },
+        {
+            "name": "image analysis"
+        },
+        {
+            "name": "Gap analysis"
+        }
+    ],
+    "title": [
+        "Gap Analysis - spatial description of network spaces"
+    ],
+    "url": ""
+}

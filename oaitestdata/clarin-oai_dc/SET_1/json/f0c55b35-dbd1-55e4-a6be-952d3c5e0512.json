@@ -1,0 +1,75 @@
+{
+    "Contact": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "application/gzip",
+        "downloadable_files_count: 1",
+        "text/plain; charset=utf-8"
+    ],
+    "Language": [
+        "Swedish"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:repo.spraakbanken.gu.se:10794/12",
+    "MetadataAccess": [
+        "oai:repo.spraakbanken.gu.se:10794/12"
+    ],
+    "PID": "http://hdl.handle.net/10794/12",
+    "PublicationTimestamp": "2015-12-09T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Publisher": [
+        "Spr\u00e5kbanken, University of Gothenburg"
+    ],
+    "ResourceType": [
+        "lexicalConceptualResource"
+    ],
+    "Rights": [
+        "Creative Commons - Attribution 4.0 International (CC BY 4.0)",
+        "http://creativecommons.org/licenses/by/4.0/",
+        "PUB"
+    ],
+    "author": [
+        "n/a, n/a"
+    ],
+    "fulltext": "oai:repo.spraakbanken.gu.se:10794/12;2017-10-27T16:01:40Z;hdl_10794_1;hdl_10794_2;Academic wordlist (2017-10-16);Akademisk ordlista (2017-10-16);n/a, n/a;Swedish;Academic;Academic wordlist.;Akademisk ordlista.;2015-12-09;lexicalConceptualResource;http://hdl.handle.net/10794/12;swe;Creative Commons - Attribution 4.0 International (CC BY 4.0);http://creativecommons.org/licenses/by/4.0/;PUB;application/gzip;text/plain; charset=utf-8;downloadable_files_count: 1;Spr\u00e5kbanken, University of Gothenburg;https://spraakbanken.gu.se/swe/resurs/ao",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "f0c55b35-dbd1-55e4-a6be-952d3c5e0512",
+    "notes": [
+        "Academic wordlist.",
+        "Akademisk ordlista."
+    ],
+    "oai_identifier": [
+        "oai:repo.spraakbanken.gu.se:10794/12"
+    ],
+    "oai_set": [
+        "hdl_10794_1",
+        "hdl_10794_2"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Swedish"
+        },
+        {
+            "name": "Academic"
+        }
+    ],
+    "title": [
+        "Academic wordlist (2017-10-16)",
+        "Akademisk ordlista (2017-10-16)"
+    ],
+    "url": ""
+}

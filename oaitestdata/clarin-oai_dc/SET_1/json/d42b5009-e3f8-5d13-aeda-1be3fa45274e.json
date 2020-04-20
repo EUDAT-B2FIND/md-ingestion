@@ -1,0 +1,52 @@
+{
+    "Contact": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:ota:oucs:3552",
+    "MetadataAccess": [
+        "oai:ota:oucs:3552"
+    ],
+    "Publisher": [
+        "Oxford Text Archive, University of Oxford"
+    ],
+    "ResourceType": [
+        "Text"
+    ],
+    "Rights": [
+        "http://www.ota.ox.ac.uk/documents/user_agreement.xml"
+    ],
+    "author": [
+        "Churchill, Charles, 1731-1764."
+    ],
+    "fulltext": "oai:ota:oucs:3552;2017-06-15T11:47:03Z;http://ota.ox.ac.uk/headers/3552.xml;The ghost: By the author.;Churchill, Charles, 1731-1764.;text_and_corpus_linguistics;eng;Oxford Text Archive, University of Oxford;Text;http://www.ota.ox.ac.uk/documents/user_agreement.xml",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "d42b5009-e3f8-5d13-aeda-1be3fa45274e",
+    "oai_identifier": [
+        "oai:ota:oucs:3552"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "text_and_corpus_linguistics"
+        }
+    ],
+    "title": [
+        "The ghost: By the author."
+    ],
+    "url": "http://ota.ox.ac.uk/headers/3552.xml"
+}

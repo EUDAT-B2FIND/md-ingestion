@@ -1,0 +1,77 @@
+{
+    "Contact": [
+        "Natural Language Processing Centre, Faculty of Informatics, Masaryk University"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "text/plain; charset=utf-8",
+        "downloadable_files_count: 1",
+        "application/x-xz"
+    ],
+    "Language": [
+        "Indonesian"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11234/1-2586",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11234/1-2586"
+    ],
+    "PID": "http://hdl.handle.net/11234/1-2586",
+    "PublicationTimestamp": "2017-12-18T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "Natural Language Processing Centre, Faculty of Informatics, Masaryk University"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "NLP Centre Web Corpus License",
+        "https://lindat.mff.cuni.cz/repository/xmlui/page/license-NLPC-WeC",
+        "ACA"
+    ],
+    "author": [
+        "Suchomel, V\u00edt",
+        "Medve\u010f, Marek"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11234/1-2586;2018-07-02T22:05:49Z;hdl_11858_00-097C-0000-0001-486F-D;hdl_11858_00-097C-0000-0001-4877-A;Indonesian web corpus (idWac);Medve\u010f, Marek;Suchomel, V\u00edt;corpus;lemmatization;PoS tagging;Indonesian text corpus from web. Crawling done by SpiderLing in 2017. Filtering by JusText and Onion (see http://corpus.tools/ for details). Tagged and lemmatized by MorphInd (http://septinalarasati.com/morphind/).;2017-12-18;corpus;http://hdl.handle.net/11234/1-2586;ind;NLP Centre Web Corpus License;https://lindat.mff.cuni.cz/repository/xmlui/page/license-NLPC-WeC;ACA;application/x-xz;text/plain; charset=utf-8;downloadable_files_count: 1;Natural Language Processing Centre, Faculty of Informatics, Masaryk University",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "7a68d966-febc-5bfb-8cd9-78465e4683c8",
+    "notes": [
+        "Indonesian text corpus from web. Crawling done by SpiderLing in 2017. Filtering by JusText and Onion (see http://corpus.tools/ for details). Tagged and lemmatized by MorphInd (http://septinalarasati.com/morphind/)."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11234/1-2586"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0001-486F-D",
+        "hdl_11858_00-097C-0000-0001-4877-A"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "corpus"
+        },
+        {
+            "name": "lemmatization"
+        },
+        {
+            "name": "PoS tagging"
+        }
+    ],
+    "title": [
+        "Indonesian web corpus (idWac)"
+    ],
+    "url": ""
+}

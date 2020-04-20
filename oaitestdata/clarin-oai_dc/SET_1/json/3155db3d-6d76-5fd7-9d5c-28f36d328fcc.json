@@ -1,0 +1,63 @@
+{
+    "Contact": [
+        "Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences"
+    ],
+    "Contributor": [
+        "Simov, Kiril"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 0"
+    ],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:lindat.mff.cuni.cz:11372/LRT-1241",
+    "MetadataAccess": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1241"
+    ],
+    "PID": "http://hdl.handle.net/11372/LRT-1241",
+    "PublicationTimestamp": "2014-07-30T11:59:59Z",
+    "PublicationYear": [
+        "2014"
+    ],
+    "Publisher": [
+        "Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences"
+    ],
+    "ResourceType": [
+        "toolService"
+    ],
+    "SpatialCoverage": [
+        "Bulgaria"
+    ],
+    "TemporalCoverage": " point in time : None",
+    "author": [
+        "Simov, Kiril",
+        "Osenova, Petya"
+    ],
+    "fulltext": "oai:lindat.mff.cuni.cz:11372/LRT-1241;2016-04-06T16:39:53Z;hdl_11858_00-097C-0000-0007-710A-A;hdl_11858_00-097C-0000-0007-710B-8;BulTreeBank Morphological Analyzer;Simov, Kiril;Osenova, Petya;Simov, Kiril;It is used morphological lexicon of Bulgarian (100 000 lemmas) compiled as a finite-state automaton in CLaRK System. It requires the text to be first tokenized and it is applied in each token. Includes also guessers for unknown words and Named Entities gazetteers. If the corresponding resources are available for a different language, then it can be tuned to it.;2014-07-30;toolService;http://hdl.handle.net/11372/LRT-1241;downloadable_files_count: 0;Bulgaria;Linguistic Modeling Department, IPP, Bulgarian Academy of Sciences",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "3155db3d-6d76-5fd7-9d5c-28f36d328fcc",
+    "notes": [
+        "It is used morphological lexicon of Bulgarian (100 000 lemmas) compiled as a finite-state automaton in CLaRK System. It requires the text to be first tokenized and it is applied in each token. Includes also guessers for unknown words and Named Entities gazetteers. If the corresponding resources are available for a different language, then it can be tuned to it."
+    ],
+    "oai_identifier": [
+        "oai:lindat.mff.cuni.cz:11372/LRT-1241"
+    ],
+    "oai_set": [
+        "hdl_11858_00-097C-0000-0007-710A-A",
+        "hdl_11858_00-097C-0000-0007-710B-8"
+    ],
+    "state": "active",
+    "title": [
+        "BulTreeBank Morphological Analyzer"
+    ],
+    "url": ""
+}

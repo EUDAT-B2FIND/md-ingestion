@@ -1,0 +1,74 @@
+{
+    "Contact": [
+        "MPW"
+    ],
+    "DiscHierarchy": [
+        "1.4",
+        "Humanities",
+        "Linguistics"
+    ],
+    "Discipline": "Linguistics",
+    "Format": [
+        "downloadable_files_count: 86",
+        "text/plain; charset=utf-8",
+        "text/plain"
+    ],
+    "Language": [],
+    "MetaDataAccess": "https://clarin-pl.eu/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:clarin-pl.eu:11321/521",
+    "MetadataAccess": [
+        "oai:clarin-pl.eu:11321/521"
+    ],
+    "PID": "http://hdl.handle.net/11321/521",
+    "PublicationTimestamp": "2018-07-07T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "MPW"
+    ],
+    "ResourceType": [
+        "corpus"
+    ],
+    "Rights": [
+        "BSD 2 Clause",
+        "https://opensource.org/licenses/BSD-2-Clause",
+        "PUB"
+    ],
+    "author": [
+        "Modrzejewska, Ewa"
+    ],
+    "fulltext": "oai:clarin-pl.eu:11321/521;2018-07-13T13:52:00Z;hdl_11321_3;hdl_11321_4;Testowy MPW;Modrzejewska, Ewa;political discourse;polityka;europarlament;Wypowiedzi europos\u0142\u00f3w;2018-07-07;corpus;http://hdl.handle.net/11321/521;polski;BSD 2 Clause;https://opensource.org/licenses/BSD-2-Clause;PUB;text/plain; charset=utf-8;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;text/plain;downloadable_files_count: 86;MPW",
+    "group": "clarin",
+    "groups": [
+        {
+            "name": "clarin"
+        }
+    ],
+    "name": "e48886f1-166e-5d7b-b9ce-92e1559de631",
+    "notes": [
+        "Wypowiedzi europos\u0142\u00f3w"
+    ],
+    "oai_identifier": [
+        "oai:clarin-pl.eu:11321/521"
+    ],
+    "oai_set": [
+        "hdl_11321_3",
+        "hdl_11321_4"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "political discourse"
+        },
+        {
+            "name": "polityka"
+        },
+        {
+            "name": "europarlament"
+        }
+    ],
+    "title": [
+        "Testowy MPW"
+    ],
+    "url": ""
+}
