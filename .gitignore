@@ -15,4 +15,8 @@ community_list
 oaidata_old/*
 results*.txt
 *.crt
+
+## python
 __pycache__/
+.eggs
+*.egg-info
