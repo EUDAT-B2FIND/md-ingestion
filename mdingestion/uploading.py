@@ -1,4 +1,4 @@
-"""uploading.py - class for B2FIND uploading : 
+"""uploading.py - class for B2FIND uploading :
   - Uploader    uploads mapped MD JSON records into the B2FIND catalogue (CKAN instance)
 
 Copyright (c) 2015 Heinrich Widmann (DKRZ)
@@ -30,7 +30,7 @@ import traceback
 import re
 
 # needed for UPLOADER and CKAN class:
-import settings
+from mdingestion import settings
 import simplejson as json
 import hashlib
 import collections
@@ -63,7 +63,7 @@ class CKAN_CLIENT(object):
     # Usage:
     # ------
 
-    # create CKAN object                       
+    # create CKAN object
     CKAN = CKAN_CLIENT(iphost,auth)
 
     # call action api:
@@ -74,11 +74,11 @@ class CKAN_CLIENT(object):
 	    self.ip_host = ip_host
 	    self.api_key = api_key
 	    self.logger = logging.getLogger('root')
-	
+
     def validate_actionname(self,action):
         return True
-	
-	
+
+
     def action(self, action, data={}):
         ## action (action, jsondata) - method
 	    # Call the api action <action> with the <jsondata> on the CKAN instance which was defined by iphost
@@ -92,12 +92,12 @@ class CKAN_CLIENT(object):
 	    # Return Values:
 	    # --------------
 	    # (dict)    response dictionary of CKAN
-	    
+
 	    if (not self.validate_actionname(action)):
 		    self.logger.critical('Action name '+ str(action) +' is not defined in CKAN_CLIENT!')
 	    else:
 		    return self.__action_api(action, data)
-		
+
     def __action_api (self, action, data_dict):
         # Make the HTTP request for data set generation.
         response=''
@@ -148,7 +148,7 @@ class CKAN_CLIENT(object):
             member_dict = {
 	            "id": data_dict['group'],
 	            "object": ds_id,
-	            "object_type": "package", 
+	            "object_type": "package",
 	            "capacity" : "public"
             }
 
@@ -157,7 +157,7 @@ class CKAN_CLIENT(object):
         else:
             action_url = 'http://{host}/api/3/action/{action}'.format(host=self.ip_host,action=action)
 
-        self.logger.debug(' CKAN request:\n |- Action\t%s\n |- RequestURL\t%s\n |- Data_dict\t%s' % (action,action_url,data_dict))	
+        self.logger.debug(' CKAN request:\n |- Action\t%s\n |- RequestURL\t%s\n |- Data_dict\t%s' % (action,action_url,data_dict))
 
         # make json data in conformity with URL standards
         encoding='utf-8'
@@ -168,11 +168,11 @@ class CKAN_CLIENT(object):
 
         try:
             request = Request(action_url,data_string)
-            self.logger.debug('request %s' % request)            
+            self.logger.debug('request %s' % request)
             if (self.api_key): request.add_header('Authorization', self.api_key)
             self.logger.debug('api_key %s....' % self.api_key)
             response = urlopen(request)
-            self.logger.debug('response %s' % response)            
+            self.logger.debug('response %s' % response)
         except HTTPError as e:
             self.logger.warning('%s : The server %s couldn\'t fulfill the action %s.' % (e,self.ip_host,action))
             if ( e.code == 403 ):
@@ -216,7 +216,7 @@ class Uploader(object):
     #
     # Public Methods:
     # ---------------
-    # .check_dataset(dsname,checksum)   - Compare the checksum of the dataset <dsname> with <checksum> 
+    # .check_dataset(dsname,checksum)   - Compare the checksum of the dataset <dsname> with <checksum>
     # .check_url(url)           - Checks and validates a url via urllib module
     # .delete(dsname,dsstatus)  - Deletes a dataset from a CKAN portal
     # .get_packages(community)  - Gets the details of all packages from a community in CKAN and store those in <UPLOADER.package_list>
@@ -246,14 +246,14 @@ class Uploader(object):
     else:
         print ('Upload of record failed'
     """
-    
+
     def __init__(self, CKAN, ckan_check, HandleClient,cred, OUT, base_outdir, fromdate, iphost):
         self.CKAN = CKAN
         self.ckan_check = ckan_check
         self.HandleClient = HandleClient
         self.cred = cred
         self.OUT = OUT
-        self.logger = logging.getLogger('root')        
+        self.logger = logging.getLogger('root')
         self.base_outdir = base_outdir
         self.fromdate = fromdate
         self.iphost = iphost
@@ -269,7 +269,7 @@ class Uploader(object):
 
     def purge_group(self,community):
         ## purge_list (UPLOADER object, community) - method
-        # Purges a community (group) from CKAN 
+        # Purges a community (group) from CKAN
         #
         # Parameters:
         # -----------
@@ -277,8 +277,8 @@ class Uploader(object):
         #
         # Return Values:
         # --------------
-        # None   
-    
+        # None
+
         pstart = time.time()
         self.logger.debug(' Remove all packages from and purge list %s ... ' % community)
 
@@ -286,10 +286,10 @@ class Uploader(object):
         print ('result %s' % result)
 
         ptime = time.time() - pstart
-        
+
         # save details:
         self.OUT.save_stats('#PurgeGroup','','time',ptime)
-        
+
     def get_group_list(self,community):
         ## get_group_list (UPLOADER object, community) - method
         # Gets a full detailed list of all packages from a community (group) in CKAN (parameter <UPLOADER.CKAN>)
@@ -300,8 +300,8 @@ class Uploader(object):
         #
         # Return Values:
         # --------------
-        # None   
-    
+        # None
+
         pstart = time.time()
         self.logger.debug(' Get all package names from community %s... ' % community)
 
@@ -312,16 +312,16 @@ class Uploader(object):
         print ('comm_packages %s' % community_packages)
 
         # create a new dictionary of it:
-        package_list = dict() 
+        package_list = dict()
         for ds in community_packages:
             print ('ds %s' % ds)
             package_list[ds['name']] = ds['version']
 
         del community_packages
         self.package_list = package_list
-        
+
         ptime = time.time() - pstart
-        
+
         # save details:
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
@@ -336,8 +336,8 @@ class Uploader(object):
         #
         # Return Values:
         # --------------
-        # None   
-    
+        # None
+
         pstart = time.time()
         self.logger.debug(' Get all package names from community %s... ' % community)
 
@@ -345,15 +345,15 @@ class Uploader(object):
         community_packages = (self.CKAN.action('group_show',{"id":community}))['result']['packages']
 
         # create a new dictionary of it:
-        package_list = dict() 
+        package_list = dict()
         for ds in community_packages:
             package_list[ds['name']] = ds['version']
 
         del community_packages
         self.package_list = package_list
-        
+
         ptime = time.time() - pstart
-        
+
         # save details:
         self.OUT.save_stats('#GetPackages','','time',ptime)
         self.OUT.save_stats('#GetPackages','','count',len(package_list))
@@ -376,7 +376,7 @@ class Uploader(object):
                 #     if jsondata['group'] in ['sdl'] :
                 #         try:
                 #             self.logger.info('Before encoding :\t%s:%s' % (key,jsondata[key]))
-                #             jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly 
+                #             jsondata[key]=jsondata[key].encode("iso-8859-1") ## encode to display e.g. 'Umlauts' correctly
                 #             self.logger.info('After encoding  :\t%s:%s' % (key,jsondata[key]))
                 #         except UnicodeEncodeError as e :
                 #             self.logger.error("%s : ( %s:%s[...] )" % (e,key,jsondata[key]))
@@ -384,7 +384,7 @@ class Uploader(object):
                 #             self.logger.error('%s : ( %s:%s[...] )' % (e,key,jsondata[key[20]]))
                 #         finally:
                 #             pass
-                        
+
         jsondata['extras']=list()
         extrafields=sorted(set(self.b2findfields.keys()) - set(self.b2fckandeffields))
         self.logger.debug(' CKAN extra fields')
@@ -393,8 +393,8 @@ class Uploader(object):
                 if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum', 'Rights','ResourceType','RelatedIdentifier','Contributor']:
                     value=';'.join(jsondata[key])
                 elif key in ['oai_identifier']:
-                    if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) : 
-                        value=jsondata[key][-1]      
+                    if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) :
+                        value=jsondata[key][-1]
                 else:
                     value=jsondata[key]
                 jsondata['extras'].append({
@@ -418,15 +418,15 @@ class Uploader(object):
         #
         # Return Values:
         # --------------
-        # 1. (dict)   
+        # 1. (dict)
         # Raise errors:
         # -------------
         #               0 - critical error occured
         #               1 - non-critical error occured
-        #               2 - no error occured    
-    
+        #               2 - no error occured
+
         errmsg = ''
-        
+
         ## check ds name (must be lowercase, alphanumeric + ['_-']
         if not re.match("^[a-z0-9_-]*$", jsondata['name']):
             self.logger.error("The dataset name '%s' must be lowercase and alphanumeric + ['_-']" % jsondata['name'])
@@ -447,7 +447,7 @@ class Uploader(object):
         if identFlag == False:
             self.logger.critical("At least one identifier from %s is mandatory" % identFields)
             return None
-            
+
         if 'PublicationYear' in jsondata :
             try:
                 datetime.datetime.strptime(jsondata['PublicationYear'][0], '%Y')
@@ -456,7 +456,7 @@ class Uploader(object):
                 ##HEW-D raise Exception("Error %s : Key %s value %s has incorrect data format, should be YYYY" % (e,'PublicationYear',jsondata['PublicationYear']))
                 # delete this field from the jsondata:
                 del jsondata['PublicationYear']
-                
+
         # check Date-Times for consistency with UTC format
         dt_keys=['PublicationTimestamp', 'TemporalCoverage:BeginDate', 'TemporalCoverage:EndDate']
         for key in dt_keys:
@@ -474,7 +474,7 @@ class Uploader(object):
 
     def upload(self, request):
         ## upload(UPLOADER object, request) - method
-        #  uploads a JSON dataset to a B2FIND instance (CKAN). 
+        #  uploads a JSON dataset to a B2FIND instance (CKAN).
 
         results = collections.defaultdict(int)
 
@@ -522,7 +522,7 @@ class Uploader(object):
                         self.logger.warning('\t |- Subdirectory %s with timestamp newer than fromdate %s is processed' % (subdir,self.fromdate))
                 else:
                     self.logger.warning('\t |- Subdirectory %s does not contain a timestamp %%Y-%%m-%%d  - no processing required' % subdir)
-                    continue    
+                    continue
             else:
                 print('\t |- Subdirectory %s is processed' % subdir)
                 self.logger.debug('Processing of subdirectory %s' % subdir)
@@ -532,14 +532,14 @@ class Uploader(object):
             inpath='%s/%s/%s' % (cmpath,subdir,insubdir)
             if not os.path.exists(inpath):
                 self.logger.error('Can not access directory %s' % inpath)
-                continue     
+                continue
 
             files = list([x for x in os.listdir(inpath) if x.endswith(infformat)])
             results['tcount'] += len(list(files))
             oldperc=0
             err = None
             self.logger.debug(' |- Processing of %s files in %s' % (infformat.upper(),inpath))
-       
+
             ## start processing loop
             startsubdir = time.time()
             scount = 0
@@ -583,7 +583,7 @@ class Uploader(object):
                     jsondata["owner_org"]="rda" #### "eudat-b2find"
                 else:
                     jsondata["owner_org"]="eudat-b2find"
-                
+
                 ### CHECK JSON DATA for upload
                 jsondata=self.check(jsondata)
                 if jsondata == None :
@@ -596,7 +596,7 @@ class Uploader(object):
                 # Set the B2FINDVersion:
                 jsondata['extras'].append({
                      "key" : "B2FINDVersion",
-                     "value" : settings.B2FINDVersion 
+                     "value" : settings.B2FINDVersion
                     })
                 datasetRecord["EUDAT/B2FINDVERSION"]=settings.B2FINDVersion
                 ### datasetRecord["B2FINDHOST"]=self.iphost
@@ -613,7 +613,7 @@ class Uploader(object):
                 else:
                     self.logger.debug('Checksum of JSON record %s' % checksum)
                     jsondata['version'] = checksum
-                    datasetRecord["CHECKSUM"]=checksum            
+                    datasetRecord["CHECKSUM"]=checksum
 
                 ### check status of dataset (unknown/new/changed/unchanged)
                 dsstatus="unknown"
@@ -638,7 +638,7 @@ class Uploader(object):
                     pidAttrs=["URL","CHECKSUM","EUDAT/ROR","EUDAT/PPID","EUDAT/REPLICA","EUDAT/METADATATYPE","EUDAT/B2FINDSTATUS","EUDAT/B2FINDVERSION","EUDAT/B2FINDCOMMUNITY","EUDAT/B2FINDSUBSET"]
                     ##HEW-D pidAttrs=["URL","CHECKSUM","JMDVERSION","B2FINDHOST","IS_METADATA","MD_STATUS","MD_SCHEMA","COMMUNITY","SUBSET"]
                     try:
-                        pid = self.cred.get_prefix() + '/eudat-jmd_' + ds_id 
+                        pid = self.cred.get_prefix() + '/eudat-jmd_' + ds_id
                         rec = self.HandleClient.retrieve_handle_record_json(pid)
                     except Exception as err :
                         self.logger.error("%s in self.HandleClient.retrieve_handle_record_json(%s)" % (err,pid))
@@ -647,7 +647,7 @@ class Uploader(object):
 
                     chargs={}
                     if rec : ## Handle exists
-                        for pidAttr in pidAttrs :##HEW-D ["CHECKSUM","JMDVERSION","B2FINDHOST"] : 
+                        for pidAttr in pidAttrs :##HEW-D ["CHECKSUM","JMDVERSION","B2FINDHOST"] :
                             try:
                                 pidRecord[pidAttr] = self.HandleClient.get_value_from_handle(pid,pidAttr,rec)
                             except Exception as err:
@@ -663,7 +663,7 @@ class Uploader(object):
                             else:
                                 chmsg=datasetRecord[pidAttr]
                                 handlestatus="changed"
-                                chargs[pidAttr]=datasetRecord[pidAttr] 
+                                chargs[pidAttr]=datasetRecord[pidAttr]
                                 self.logger.info(" |%-12s\t|%-30s\t|%-30s|" % (pidAttr,pidRecord[pidAttr],chmsg))
                     else:
                         handlestatus="new"
@@ -677,10 +677,10 @@ class Uploader(object):
                         self.logger.warning('Update handle and dataset !')
                     else : # create new handle !
                         self.logger.warning('Create handle and dataset !')
-                        chargs=datasetRecord 
+                        chargs=datasetRecord
 
                 # check against CKAN database
-                ckanstatus = 'unknown'                  
+                ckanstatus = 'unknown'
                 if (self.ckan_check == 'True'):
                     ckanstatus=self.check_dataset(ds_id,checksum)
                     if (dsstatus == 'unknown'):
@@ -691,44 +691,44 @@ class Uploader(object):
                 # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
                 if (dsstatus == 'new' or dsstatus == 'unknown') :
                     self.logger.debug('\t - Try to create dataset %s' % ds_id)
-            
+
                     res = self.CKAN.action('package_create',jsondata)
                     if (res and res['success']):
-                        self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id)) 
+                        self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id))
                         results['count']+=1
                         upload = 1
                     else:
                         self.logger.error('\t - Creation failed. Try to update instead.')
                         res = self.CKAN.action('package_update',jsondata)
                         if (res and res['success']):
-                            self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
+                            self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id))
                             results['count']+=1
                             upload = 1
                         else:
                             self.logger.critical('\t|- Failed dataset update of %s id %s' % (dsstatus,ds_id))
                             results['ecount']+=1
-        
+
                 # if the dsstatus is 'changed' then update it with package_update:
                 elif (dsstatus == 'changed'):
                     self.logger.debug('\t - Try to update dataset %s' % ds_id)
-            
+
                     res = self.CKAN.action('package_update',jsondata)
                     if (res and res['success']):
-                        self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id)) 
+                        self.logger.warning("Successful update of %s dataset %s" % (dsstatus,ds_id))
                         results['count']+=1
                         upload = 1
                     else:
                         self.logger.warning('\t - Update failed. Try to create instead.')
                         res = self.CKAN.action('package_create',jsondata)
                         if (res and res['success']):
-                            self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id)) 
+                            self.logger.warning("Successful creation of %s dataset %s" % (dsstatus,ds_id))
                             results['count']+=1
                             upload = 1
                         else:
                             self.logger.warning('\t|- Failed dataset creation of %s id %s' % (dsstatus,ds_id))
 
 
-                # update PID in handle server                           
+                # update PID in handle server
                 if (self.cred):
                     if (handlestatus == "unchanged"):
                         self.logger.warning("        |-> No action required for %s" % pid)
@@ -748,7 +748,7 @@ class Uploader(object):
                             ## Modify all changed handle attributes
                             if chargs :
                                 try:
-                                    self.HandleClient.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"]) 
+                                    self.HandleClient.modify_handle_value(pid,**chargs) ## ,URL=dataset_dict["URL"])
                                     self.logger.warning("        |-> Update handle %s with changed atrributes %s" % (pid,chargs))
 
                                 except (Exception,HandleAuthenticationError,HandleNotFoundException,HandleSyntaxError) as err :
@@ -758,7 +758,7 @@ class Uploader(object):
                                 else:
                                     self.logger.warning("Successful change of handle %s with checksum %s" % (pid,datasetRecord["CHECKSUM"]))
                                     self.logger.debug(" Attributes %s of handle %s changed sucessfully" % (chargs,pid))
-            
+
         uploadtime=time.time()-start
         results['time'] = uploadtime
         print ('   \n\t|- %-10s |@ %-10s |\n\t| Provided | Uploaded | No action | Failed |\n\t| %8d | %6d |  %8d | %6d |' % ( 'Finished',time.strftime("%H:%M:%S"),
@@ -789,17 +789,17 @@ class Uploader(object):
         #               0 - critical error occured
         #               1 - no error occured, uploaded with 'package_create'
         #               2 - no error occured, uploaded with 'package_update'
-    
+
         # add some CKAN specific fields to dictionary:
         jsondata["name"] = ds
         jsondata["state"]='active'
         jsondata["groups"]=[{ "name" : community }]
         jsondata["owner_org"]="eudat"
-   
+
         # if the dataset checked as 'new' so it is not in ckan package_list then create it with package_create:
         if (dsstatus == 'new' or dsstatus == 'unknown') :
             self.logger.debug('\t - Try to create dataset %s' % ds)
-            
+
             results = self.CKAN.action('package_create',jsondata)
             if (results and results['success']):
                 rvalue = 1
@@ -810,11 +810,11 @@ class Uploader(object):
                     rvalue = 2
                 else:
                     rvalue = 0
-        
+
         # if the dsstatus is 'changed' then update it with package_update:
         elif (dsstatus == 'changed'):
             self.logger.debug('\t - Try to update dataset %s' % ds)
-            
+
             results = self.CKAN.action('package_update',jsondata)
             if (results and results['success']):
                 rvalue = 2
@@ -825,7 +825,7 @@ class Uploader(object):
                     rvalue = 1
                 else:
                     rvalue = 0
-           
+
         return rvalue
 
 
@@ -843,17 +843,17 @@ class Uploader(object):
         # 1. (integer)  deletion result:
         #               0 - error occured, dataset was not deleted
         #               1 - no error occured, dataset is deleted
-    
+
         rvalue = 0
         jsondata = {
             "name" : dsname,
             "state" : 'deleted'
         }
-   
+
         jsondatadel = {
             "id" : dsname
         }
-   
+
         # if the dataset exists set it to status deleted in CKAN:
         if (not dsstatus == 'new'):
             self.logger.debug('\t - Try to set dataset %s on state "deleted"' % dsname)
@@ -873,14 +873,14 @@ class Uploader(object):
                 self.logger.debug('\t - Successful deletion of dataset %s.' % dsname)
             else:
                 self.logger.debug('\t - Failed deletion of dataset %s.' % dsname)
-        
+
         return rvalue
-    
-    
+
+
     def check_dataset(self,dsname,checksum):
         ## check_dataset (UPLOADER object, dsname, checksum) - method
         # Compare the checksum of <dsname> in CKAN portal with the given <checksum>. If they are equal 'unchanged'
-        # will be returned. 
+        # will be returned.
         # Otherwise returns 'new', 'changed' or 'unknown' if check failed.
         #
         # Parameters:
@@ -894,7 +894,7 @@ class Uploader(object):
         #               2. 'new'
         #               3. 'unchanged'
         #               4. 'changed'
-    
+
         ckanstatus='unknown'
         if not (dsname in self.package_list):
             ckanstatus="new"
@@ -904,8 +904,8 @@ class Uploader(object):
             else:
                 ckanstatus="changed"
         return ckanstatus
-    
-    
+
+
     def check_url(self,url):
         ## check_url (UPLOADER object, url) - method
         # Checks and validates a url via urllib module
@@ -917,7 +917,7 @@ class Uploader(object):
         # Return Values:
         # --------------
         # 1. (boolean)  result
-    
+
         try:
             resp = urlopen(url, timeout=10).getcode()###HEW-!! < 501
         except (HTTPError,ValueError) as err:
