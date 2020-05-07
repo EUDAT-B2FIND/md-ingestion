@@ -63,7 +63,7 @@
     </field>
     <!-- Coverage information -->
     <field name="Discipline">
-      <string>//datacite4:subject/datacite4:subject</string>
+      <xpath>//datacite4:subjects/datacite4:subject</xpath>
     </field>
     <field name="SpatialCoverage">
       <xpath>//datacite4:geoLocation/geoLocationPoint,//datacite4:geoLocation/geoLocationBox</xpath>
