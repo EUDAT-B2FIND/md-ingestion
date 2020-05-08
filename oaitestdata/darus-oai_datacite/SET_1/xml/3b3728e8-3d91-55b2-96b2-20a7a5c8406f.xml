@@ -1,7 +1,7 @@
 <record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <header>
     <identifier>doi:10.18419/darus-517</identifier>
-    <datestamp>2020-01-23T01:00:00Z</datestamp>
+    <datestamp>2020-04-07T01:00:00Z</datestamp>
     <setSpec>all</setSpec>
   </header>
   <metadata>
@@ -82,21 +82,23 @@
       </contributors>
       <dates>
         <date dateType="Issued">2020-01-22</date>
-        <date dateType="Created">2020-01-19</date>
+        <date dateType="Created">2020-04-02</date>
         <date dateType="Submitted">2020-01-16</date>
-        <date dateType="Updated">2020-01-22</date>
+        <date dateType="Updated">2020-04-06</date>
       </dates>
       <resourceType resourceTypeGeneral="Dataset">Video</resourceType>
       <relatedIdentifiers>
         <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="DOI">10.3389/fgene.2018.00124</relatedIdentifier>
       </relatedIdentifiers>
       <sizes>
-        <size>243015067</size>
+        <size>160876577</size>
+        <size>92273374</size>
       </sizes>
       <formats>
         <format>video/mp4</format>
+        <format>video/mp4</format>
       </formats>
-      <version>1.0</version>
+      <version>2.0</version>
       <rightsList>
         <rights rightsURI="info:eu-repo/semantics/openAccess"/>
         <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
@@ -107,13 +109,19 @@
 GLASSgo is available at &lt;a href="https://github.com/lotts/GLASSgo_ACC-Version/" target="_blank"&gt;Github&lt;/a&gt; with instructions and application data and is distributed under the MIT license.&#13;
 &#13;
 Furthermore, GLASSgo can applied using the &lt;a href="https://rna.usegalaxy.eu/" target="_blank"&gt;RNA Workbench Server&lt;/a&gt; or the &lt;a href="http://rna.informatik.uni-freiburg.de/GLASSgo/"&gt;GLASSgo Web Server&lt;/a&gt;</description>
-        <description descriptionType="Other">The analyses illustrated in this video were performed using GLASSgo v1.5.2 using Docker v19.03.4 and Galaxy v19.09. Furthermore, the RNA workbench server and the GLASSgo web server were operated on GLASSgo 1.5.2 and accessed on the 19th of January 2020.</description>
+        <description descriptionType="Other">The analyses illustrated in this video were performed using GLASSgo v1.5.2 using Docker v19.03.4 and Galaxy v20.01. Furthermore, the RNA workbench server and the GLASSgo web server were operated on GLASSgo 1.5.2 and accessed on the 28th of March 2020.</description>
       </descriptions>
       <geoLocations>
         <geoLocation>
           <geoLocationPlace>Stuttgart, Germany</geoLocationPlace>
         </geoLocation>
       </geoLocations>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Federal Ministry of Education and Research (BMBF)</funderName>
+          <awardNumber>031A310 and 031L0164A to B.V</awardNumber>
+        </fundingReference>
+      </fundingReferences>
     </resource>
   </metadata>
 </record>

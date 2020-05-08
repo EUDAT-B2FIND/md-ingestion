@@ -1,7 +1,7 @@
 <record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <header>
     <identifier>doi:10.18419/darus-451</identifier>
-    <datestamp>2020-01-28T01:00:00Z</datestamp>
+    <datestamp>2020-04-04T01:00:00Z</datestamp>
     <setSpec>all</setSpec>
   </header>
   <metadata>
@@ -40,8 +40,8 @@
       </contributors>
       <dates>
         <date dateType="Submitted">2019-09-09</date>
-        <date dateType="Updated">2020-01-27</date>
-        <date dateType="Collected">2017-07-14/2019-12-31</date>
+        <date dateType="Updated">2020-04-03</date>
+        <date dateType="Collected">2017-07-14/2020-03-31</date>
       </dates>
       <resourceType resourceTypeGeneral="Dataset">Experimental Data</resourceType>
       <relatedIdentifiers>
@@ -78,7 +78,10 @@
         <size>45338791</size>
         <size>32215183</size>
         <size>44640491</size>
-        <size>19765</size>
+        <size>43962067</size>
+        <size>40281136</size>
+        <size>42820502</size>
+        <size>20872</size>
       </sizes>
       <formats>
         <format>application/x-bzip</format>
@@ -111,9 +114,12 @@
         <format>application/x-bzip</format>
         <format>application/x-bzip</format>
         <format>application/x-bzip</format>
+        <format>application/x-bzip</format>
+        <format>application/x-bzip</format>
+        <format>application/x-bzip</format>
         <format>text/tab-separated-values</format>
       </formats>
-      <version>3.0</version>
+      <version>6.0</version>
       <rightsList>
         <rights rightsURI="info:eu-repo/semantics/openAccess"/>
         <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
