@@ -55,5 +55,7 @@ seanoe http://www.seanoe.org/oai/OAIHandler ListRecords oai_dc
 ist http://datarep.app.ist.ac.at/cgi/oai2 ListRecords oai_dc
 ## RADAR
 radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
+## SLKS
+slks https://www.archaeo.dk/ff/oai-pmh ListRecords oai_dc
 ## UCL
 ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549
