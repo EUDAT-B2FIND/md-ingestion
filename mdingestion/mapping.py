@@ -498,7 +498,9 @@ class Mapper(object):
               if len(invalue) == 1:
                   valarr=invalue[0].split()
               else:
-                  valarr=self.flatten(invalue)
+                  #valarr=self.flatten(invalue)  
+                  #Workaround for geolocation: point cloud (several points per record)
+                  valarr=list(self.flatten(invalue))[0].split()
            else:
               valarr=invalue.split() ##HEW??? [invalue]
            self.logger.info('   | Valarr:\t%s' % valarr)

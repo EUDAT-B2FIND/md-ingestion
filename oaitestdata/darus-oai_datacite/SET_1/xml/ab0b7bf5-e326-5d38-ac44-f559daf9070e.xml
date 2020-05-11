@@ -1,0 +1,101 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-639</identifier>
+    <datestamp>2020-03-13T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-639</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Ruf, Matthias</creatorName>
+          <givenName>Matthias</givenName>
+          <familyName>Ruf</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-0299-5921</nameIdentifier>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE)</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Steeb, Holger</creatorName>
+          <givenName>Holger</givenName>
+          <familyName>Steeb</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7602-4920</nameIdentifier>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE)  &amp; SimTech</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>micro-XRCT data set of open-pored asphalt concrete</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Computer and Information Science</subject>
+        <subject>Earth and Environmental Sciences</subject>
+        <subject>Engineering</subject>
+        <subject>asphalt concrete</subject>
+        <subject>micro X-ray computed tomography</subject>
+        <subject>porous media</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Steeb, Holger</contributorName>
+          <givenName>Holger</givenName>
+          <familyName>Steeb</familyName>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE) &amp; SimTech</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName nameType="Organizational">University of Stuttgart, Institute of Applied Mechanics (CE) - Chair for Continuum-Mechanics</contributorName>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName nameType="Organizational">University of Stuttgart - SimTech Cluster of Excellence</contributorName>
+        </contributor>
+        <contributor contributorType="DataCollector">
+          <contributorName nameType="Personal">Ruf, Matthias</contributorName>
+          <givenName>Matthias</givenName>
+          <familyName>Ruf</familyName>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+          <contributorName nameType="Personal">Steeb, Holger</contributorName>
+          <givenName>Holger</givenName>
+          <familyName>Steeb</familyName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Created">2019-11-28</date>
+        <date dateType="Updated">2020-03-12</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Image data</resourceType>
+      <sizes>
+        <size>4907518542</size>
+        <size>7064563042</size>
+      </sizes>
+      <formats>
+        <format>application/x-rar-compressed</format>
+        <format>application/x-rar-compressed</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">micro-XRCT data set (projection and reconstructed images) resulting from a region of interest scan (diameter 48.41 mm, height 35.46 mm) located in the center of an open-pored asphalt concrete core with 100 mm diameter and 50 mm length.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>University of Stuttgart, Institute of Applied Mechanics (CE), Stuttgart, 70569, Germany</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft (DFG, German Research Foundation)</funderName>
+          <awardNumber>STE 969/13-1</awardNumber>
+        </fundingReference>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy</funderName>
+          <awardNumber>EXC 2075 - 390740016</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

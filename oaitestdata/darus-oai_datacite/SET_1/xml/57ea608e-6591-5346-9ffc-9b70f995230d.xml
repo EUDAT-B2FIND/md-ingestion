@@ -1,0 +1,182 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-680</identifier>
+    <datestamp>2020-03-06T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-680</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Schepp, Laura L.</creatorName>
+          <givenName>Laura L.</givenName>
+          <familyName>Schepp</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-3265-9577</nameIdentifier>
+          <affiliation>Fraunhofer IEG, Institution for Energy Infrastructures and Geothermal Systems</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Ahrens, Benedikt</creatorName>
+          <givenName>Benedikt</givenName>
+          <familyName>Ahrens</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-9804-4014</nameIdentifier>
+          <affiliation>Fraunhofer IEG, Institution for Energy Infrastructures and Geothermal Systems</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Balcewicz, Martin</creatorName>
+          <givenName>Martin</givenName>
+          <familyName>Balcewicz</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-9953-1431</nameIdentifier>
+          <affiliation>Bochum University of Applied Sciences, Bau- und Umweltingenieurwesen</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Duda, Mandy</creatorName>
+          <givenName>Mandy</givenName>
+          <familyName>Duda</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-7396-0796</nameIdentifier>
+          <affiliation>Ruhr-University Bochum, Instistute of Geology, Mineralogy and Geophysics</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Nehler, Mathias</creatorName>
+          <givenName>Mathias</givenName>
+          <familyName>Nehler</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0006-3509</nameIdentifier>
+          <affiliation>Fraunhofer IEG, Institution for Energy Infrastructures and Geothermal Systems</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Osorno, Maria</creatorName>
+          <givenName>Maria</givenName>
+          <familyName>Osorno</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2645-5332</nameIdentifier>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE)</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Uribe, David</creatorName>
+          <givenName>David</givenName>
+          <familyName>Uribe</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-4069-5180</nameIdentifier>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE)</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Steeb, Holger</creatorName>
+          <givenName>Holger</givenName>
+          <familyName>Steeb</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7602-4920</nameIdentifier>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE) &amp; SimTech</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Nigon, Benoit</creatorName>
+          <givenName>Benoit</givenName>
+          <familyName>Nigon</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-3155-8977</nameIdentifier>
+          <affiliation>Bochum University of Applied Sciences, Bau- und Umweltingenieurwesen</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">St&#246;ckhert, Ferdinand</creatorName>
+          <givenName>Ferdinand</givenName>
+          <familyName>St&#246;ckhert</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-3847-3551</nameIdentifier>
+          <affiliation>Ruhr-University Bochum, Instistute of Geology, Mineralogy and Geophysics</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Swanson, Donald A.</creatorName>
+          <givenName>Donald A.</givenName>
+          <familyName>Swanson</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-1680-3591</nameIdentifier>
+          <affiliation>U.S. Geological Survey, Hawaiian Volcano Observatory</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Siegert, Mirko</creatorName>
+          <givenName>Mirko</givenName>
+          <familyName>Siegert</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-6704-4935</nameIdentifier>
+          <affiliation>Bochum University of Applied Sciences, Institute of Mathematics and Informatics</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Gurris, Marcel</creatorName>
+          <givenName>Marcel</givenName>
+          <familyName>Gurris</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-5243-1038</nameIdentifier>
+          <affiliation>Bochum University of Applied Sciences, Institute of Mathematics and Informatics</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Saenger, Erik H.</creatorName>
+          <givenName>Erik H.</givenName>
+          <familyName>Saenger</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-2057-4728</nameIdentifier>
+          <affiliation>Bochum University of Applied Sciences, Bau- und Umweltingenieurwesen; Fraunhofer IEG, Institution for Energy Infrastructures and Geothermal Systems; Ruhr-University Bochum, Institute of Geology, Mineralogy and Geophysics</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Ruf, Matthias</creatorName>
+          <givenName>Matthias</givenName>
+          <familyName>Ruf</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-0299-5921</nameIdentifier>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE)</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Digital rock physics and laboratory considerations on a high-porosity volcanic rock: micro-XRCT data sets</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Computer and Information Science</subject>
+        <subject>Earth and Environmental Sciences</subject>
+        <subject>Engineering</subject>
+        <subject>reticulite</subject>
+        <subject>high porous rock</subject>
+        <subject>cellular material</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Steeb, Holger</contributorName>
+          <givenName>Holger</givenName>
+          <familyName>Steeb</familyName>
+          <affiliation>University of Stuttgart, Institute of Applied Mechanics (CE) &amp; SimTech</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName>International Geothermal Centre</contributorName>
+          <affiliation>Bochum University of Applied Sciences, Bau- und Umweltingenieurwesen</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Updated">2020-03-05</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Image data</resourceType>
+      <sizes>
+        <size>6879527914</size>
+        <size>7167491441</size>
+        <size>7645530441</size>
+        <size>7582900015</size>
+        <size>7556696308</size>
+        <size>2578420</size>
+      </sizes>
+      <formats>
+        <format>application/x-rar-compressed</format>
+        <format>application/x-rar-compressed</format>
+        <format>application/x-rar-compressed</format>
+        <format>application/x-rar-compressed</format>
+        <format>application/x-rar-compressed</format>
+        <format>application/x-rar-compressed</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Reticulite (high-porosity volcanic rock) is a pyroclastic rock formed during intense Hawaiian fountaining events. The honeycombed network of bubbles is supported by glassy threads and forms a structure with a porosity of more than 80 %. It is an end-member for high-porosity materials with a high stiffness and brittleness. For this specific material, hydro-mechanical experiments are very difficult to perform. Therefore, digital rock physics plays an important role. Digital rock physics combines microtomographic imaging with advanced numerical simulations of effective material properties. It is used to complement laboratory investigations with the aim to gain a deeper understanding of relevant physical processes related to transport and effective mechanical properties. &#13;
+&lt;br&gt;&#13;
+Two micro-XRCT data sets of two dry cubic reticulite samples under ambient conditions scanned at two different resolutions are provided ("Reticulite-01_AxMF01.rar" and "Reticulite_03_AxMF01.rar"). Further, for each of this data sets a subvolume with 400 x 400 x 400 voxels was extracted and segmented (binarized) into skeleton and pore space which are also provided ("Segmented_subsamples.rar") and can directly be used for digital rock physics.&#13;
+A third cubic reticulite sample was saturated with distilled water in three steps (500 microliters, 250 microliters and 250 microliters) with help of a pipette which was not removed during the CT scans.  After each injection a scan was performed. The data sets are named according to the complete injected fluid volumes (&#8220;Reticulite-AxHP_wet_500ul.rar&#8221;, &#8220;Reticulite-AxHP_wet_750ul.rar&#8221; and &#8220;Reticulite-AxHP_wet_1ml.rar&#8221;).</description>
+      </descriptions>
+      <geoLocations/>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy</funderName>
+          <awardNumber>EXC 2075 - 390740016</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>
