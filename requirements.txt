@@ -4,7 +4,8 @@ owslib
 lxml
 simplejson
 python-Levenshtein
-git+https://github.com/noumar/iso639.git
+#git+https://github.com/noumar/iso639.git
+iso639
 dublincore
 ckanapi
 b2handle
