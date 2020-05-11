@@ -1,5 +1,14 @@
 ## CHANGES 
-###Current (2020-03-26)
+
+###1.3.0 (2020-05-11)
+* Jsonsraus #21
+* bugfix geopoint-cloud #20
+* Darus comm #19
+* moving seanoe to oaitestdata #18
+* Pointerforhl #17
+* Testdata #16
+* Bugfix mapping #15
+* Update docs #14
 * updated README.md (#10)
 * added old, but working slks-ff-mapfile (#13)
 * added slks-dc mapfile and updated harvest_list. Added "Archaeology" to B2FIND disciplines.json. (#12) 
