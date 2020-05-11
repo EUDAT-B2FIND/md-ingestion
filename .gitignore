@@ -16,3 +16,5 @@ oaidata_old/*
 results*.txt
 *.crt
 __pycache__/
+#ignore generated json-output
+oaitestdata/*/*/json
