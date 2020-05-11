@@ -1,4 +1,4 @@
-"""generating.py - class for Metadata generation : 
+"""generating.py - class for Metadata generation :
   - Generator    generates metadata from samples (e.g. comma separated lists)
 
 Copyright (c) 2018 Heinrich Widmann (DKRZ)
@@ -31,25 +31,25 @@ __author__ = "Heinrich Widmann"
 
 # needed for class Generator:
 import csv
-from DublinCoreTerms import DublinCore
+from mdingestion.DublinCoreTerms import DublinCore
 
 class Generator(object):
-    
+
     """
     ### Generator - class
     # Provides methods to generate metadata from sample text files
     #
-    # create GENERATOR object                       
+    # create GENERATOR object
     HV = Generator(OUT object, outdir)
     """
-    
+
     def __init__ (self, OUT, pstat, base_outdir):
         self.logger = logging.getLogger('root')
         self.pstat = pstat
         self.OUT = OUT
         self.base_outdir = base_outdir
         self.DC_NS = 'http://purl.org/dc/elements/1.1/'
-    
+
     def generate(self, request):
         ## method generate(GENERATOR object, [community, delimiter, mdprefix, mdsubset])
         # Generate XML files in format <mdprefix> and in subdir <mdsubset> from path <source> raw metadata (csv's, tsv's).
@@ -66,9 +66,9 @@ class Generator(object):
         #
         # Return Values:
         # --------------
-        # 1. (integer)  is -1 if something went wrong    
-    
-    
+        # 1. (integer)  is -1 if something went wrong
+
+
         start=time.time()
         ## set parameters
         community=request[0]
@@ -79,7 +79,7 @@ class Generator(object):
             delimiter='\t'
         mdprefix=request[3]
         if len(request)>4 and request[4] != None:
-            mdsubset=request[4]  
+            mdsubset=request[4]
         else:
             mdsubset='SET'
 
@@ -107,7 +107,7 @@ class Generator(object):
                     r = csv.reader(open(mapfile, "r"),delimiter='>')
                     for row in r:
                         fields.append(row[1].strip())
-                else : 
+                else :
                     print(' |- create mapfile\n\t%s and' % mapfile)
                     w = csv.writer(open(mapfile, "w"),delimiter='>')
                     for of in ofields:
@@ -119,7 +119,7 @@ class Generator(object):
                     tsv = csv.DictReader(fp, fieldnames=fields, delimiter='\t')
                 else:
                     tsv = csv.DictReader(fp, fieldnames=fields, delimiter=delimiter)
-                
+
                 print(' |- generate XML files in %s' % outpath)
                 for row in tsv:
                         dc = self.makedc(row)
@@ -128,7 +128,7 @@ class Generator(object):
                             print('  |--> %s' % outfile)
                             self.writefile(outpath+'/'+outfile, dc)
                         else:
-                            print(' ERROR : At least target field dc:identifier must be specified') 
+                            print(' ERROR : At least target field dc:identifier must be specified')
                             sys.exit()
 
         except IOError as strerror :
@@ -159,4 +159,3 @@ class Generator(object):
                 fp = open(name, 'w')
                 fp.write(obj.makeXML(self.DC_NS))
         fp.close()
-

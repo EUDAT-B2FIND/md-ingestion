@@ -4,24 +4,24 @@ from os.path import expanduser
 from urllib import parse
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError,URLError
-from output import Output
+from mdingestion.output import Output
 import json
 import pprint
 import random, string
 
 p = optparse.OptionParser(
-    description = '''Description                                                              
-===========                                                                           
- Management of B2FIND communities within EUDAT-B2FIND, comprising                                      
+    description = '''Description
+===========
+ Management of B2FIND communities within EUDAT-B2FIND, comprising
       - Creating communities, i.e. CKAN groups
       - .....
 ''',
     formatter = optparse.TitledHelpFormatter(),
     prog = 'CreateCommuities.py',
     version = "%prog " + 'v0.1',
-    usage = "%prog [options] COMMUNITY" 
+    usage = "%prog [options] COMMUNITY"
 )
-        
+
 p.add_option('-v', '--verbose', action="count", help="increase output verbosity (e.g., -vv is more than -v)", default=False)
 p.add_option('--iphost', '-i', help="IP adress of B2FIND portal (CKAN instance)", metavar='IP')
 p.add_option('--auth', help="Authentification for CKAN API (API key, by default taken from file $HOME/.netrc)",metavar='STRING')
@@ -46,7 +46,7 @@ with open(conffile, 'r') as f:
 if (not options.iphost):
     logger.critical('The option iphost is mandatory !')
     sys.exit()
-          
+
 if (not options.auth):
     home = os.path.expanduser("~")
     if (not os.path.isfile(home+'/.netrc')):
@@ -101,7 +101,7 @@ if (True):
     ### data_string = urllib.parse.quote(json.dumps(dataset_dict))
     encoding='utf-8'
     data_string = parse.quote(json.dumps(group_dict)).encode(encoding) ## HEW-D 160810 , encoding="latin-1" ))##HEW-D .decode(encoding)
-        
+
     # The action that should be excecuted.
     apiaction='http://%s/api/action/%s' % (options.iphost,action)
     print(('API action excecuted : %s' % apiaction))

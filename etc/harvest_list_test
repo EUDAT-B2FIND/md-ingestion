@@ -1,0 +1,163 @@
+##+++       - the community
+##+++       - the OAI URL (harvest entry point),
+##+++       - the harvest request (verb: ListIdentifiers or ListRecords),
+##+++       - the MD format or metadataPrefix and
+##+++       - (optional) the OAI sub set
+##+++    and that are _NOT_ commented out (by # at beginning of source line or
+##+++                      <# ...\n\n > for multi lines)
+##+++    will be harvested, mapped or/and uploaded by the B2FIND manager
+##+++    depending on the given mode (option --mode [h|c|u] )
+###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## community         OAI URL                                verb           metadataPrefix  set
+## -----------------------------------------------------------------------------------
+
+## ALEPH
+aleph     http://www.openaccessrepository.it/oai2d   ListRecords marcxml dataset:aleph
+
+## Anaee
+#anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw iso-19139
+#anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw csw oai_dc
+anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw iso19139
+
+## B2FIND export
+b2find http://b2find.eudat.eu/api/3/action ckan_api json
+
+## Capsella
+#capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc
+#capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListIdentifiers oai_dc
+capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc
+
+## CLARIN
+## this is only one repo, a full list on eudatmd1/ingestion_list
+#clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
+clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
+
+## Dans Easy
+danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite
+
+## DaRUS
+#darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
+darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite
+
+## DEIMS
+deims https://deims.org/pycsw/catalogue/csw csw iso19139 full
+
+## EARLINET
+#(from Heiner): MD Provider eudat-oai.dkrz.de (directly extracted from CERA)
+earlinet    http://eudat-oai.dkrz.de:8080/oai/provider ListIdentifiers  iso19139
+
+## EGI datahub
+egidatahub http://datahub.egi.eu/oai_pmh ListRecords oai_dc
+
+## EMBRC
+#http://www.vliz.be/imis?module=dataset&show=json
+embrc http://www.vliz.be/imis records json
+
+## EMSO
+emso http://dataportals.pangaea.de/emso/oai pan_md full
+
+## ENES
+#(from Heiner): MD Provider c3grid.dkrz.de (only DOI publ.'s at WDCC)
+enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
+
+## EnviDat
+#envidat https://www.envidat.ch/api/3/action package_list json
+#envidat https://www.envidat.ch/api/3/action ckan_api json
+#envidat https://www.envidat.ch/oai ListRecords iso19139
+envidat https://www.envidat.ch/oai ListRecords datacite
+#envidat https://www.envidat.ch/oai ListRecords oai_dc
+
+## ESS SciCat
+ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
+
+## ETSIN
+etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc
+
+## Euro-Argo
+euroargo  http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 euro-argo
+
+## GET-IT
+#http://getit.lifewatch.unisalento.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities
+getit http://getit.lifewatch.unisalento.it/catalogue/csw csw iso19139 full
+
+## HBP
+#hbp http://148.187.98.42:8081/oai/provider GetRecord oai_dc
+#hbp https://148.187.98.42:8443/oai/provider ListRecords oai_dc
+hbp https://148.187.98.42:8443/oai/provider ListRecords oai_dc
+
+## HDCP2
+## hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  HDCP2:RRZK.ALL_IN_ONE
+hdcp2   http://hdcp2data.rrz.uni-koeln.de:8080/oai/provider  ListIdentifiers  hdcp2  hope
+
+## Herbadrop
+##herbadrop  https://ariane-test.cines.fr POST json
+herbadrop  https://opendata.cines.fr/herbadrop-api/rest/data/search POST json
+
+## IAGOS
+#iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos csw oai_dc
+iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos csw iso19139
+
+## IST
+ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
+
+## IVOA
+#ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc
+ivoa http://dc.g-vo.org/rr/q/pmh/pubreg.xml ListRecords oai_datacite
+
+## Life+Respira
+life+respira https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc LIFE+Respira
+
+## Materials Cloud
+materialscloud https://archive.materialscloud.org/xml ListRecords oai_dc full
+
+## NILU
+#nilu http://ebasoai.nilu.no/oai ListRecords iso19139 full
+nilu http://ebasoai-test.nilu.no/oai ListRecords iso19139 ENVRIplus_flagship
+
+## PaNdata
+pandata http://oai.eudat.stfc.ac.uk/oai/provider ListRecords oai_dc full
+
+## PANGAEA
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 CARBOOCEAN
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 FRAM
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ACD
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 ASPS
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 BAH1962
+#pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3 citable
+#pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable
+#pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md citable
+#pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md BAH1962
+pangaea http://ws.pangaea.de/oai/provider ListRecords datacite3
+
+## PDC
+pdc http://www.polardata.ca/oai/provider    ListRecords  fgdc
+
+## UniMaribor
+##unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_datacite openaire_data
+unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_dc openaire_data
+
+##RADAR
+radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
+
+## Seadatanet
+seadatanet http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 seadatanet
+
+## SEANOE
+seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
+
+## SLKS with ff
+#slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff
+## SLKS with dc
+slks https://www.archaeo.dk/ff/oai-pmh/ ListRecords oai_dc
+
+## STARS4ALL
+starsforall https://eudat-b2share-test.csc.fi/api/oai2d ListRecords oai_dc
+
+## TOAR
+#toar https://b2share-testing.fz-juelich.de/api/ records json
+#toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  8cb65167-71d4-4845-a454-5d56624568d2
+#toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  e153ef6e-20a4-49b2-a307-735f9d587f5c
+
+## UCL
+#ucl https://api.figshare.com/v2/oai ListRecords oai_dc
+ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549
